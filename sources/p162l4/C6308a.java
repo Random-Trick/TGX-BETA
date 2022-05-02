@@ -48,12 +48,12 @@ public final class C6308a implements C4260a.AbstractC4262b {
 
     @Override
     public byte[] getWrappedMetadataBytes() {
-        return C4263b.m28324a(this);
+        return C4263b.m28326a(this);
     }
 
     @Override
     public C6600g1 getWrappedMetadataFormat() {
-        return C4263b.m28323b(this);
+        return C4263b.m28325b(this);
     }
 
     public int hashCode() {
@@ -62,7 +62,7 @@ public final class C6308a implements C4260a.AbstractC4262b {
 
     @Override
     public void populateMediaMetadata(C6693s1.C6695b bVar) {
-        C4263b.m28322c(this, bVar);
+        C4263b.m28324c(this, bVar);
     }
 
     public String toString() {
@@ -86,8 +86,8 @@ public final class C6308a implements C4260a.AbstractC4262b {
     }
 
     public C6308a(Parcel parcel) {
-        this.f19845a = (String) C1216l0.m37968j(parcel.readString());
-        this.f19846b = (byte[]) C1216l0.m37968j(parcel.createByteArray());
+        this.f19845a = (String) C1216l0.m37971j(parcel.readString());
+        this.f19846b = (byte[]) C1216l0.m37971j(parcel.createByteArray());
         this.f19847c = parcel.readInt();
         this.f19844M = parcel.readInt();
     }

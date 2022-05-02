@@ -15,7 +15,7 @@ public final class C4929d extends AbstractC4934g.AbstractC4936b {
         public Set<AbstractC4934g.EnumC4938c> f16812c;
 
         @Override
-        public AbstractC4934g.AbstractC4936b mo24418a() {
+        public AbstractC4934g.AbstractC4936b mo24419a() {
             String str = "";
             if (this.f16810a == null) {
                 str = str + " delta";
@@ -33,37 +33,37 @@ public final class C4929d extends AbstractC4934g.AbstractC4936b {
         }
 
         @Override
-        public AbstractC4934g.AbstractC4936b.AbstractC4937a mo24417b(long j) {
+        public AbstractC4934g.AbstractC4936b.AbstractC4937a mo24418b(long j) {
             this.f16810a = Long.valueOf(j);
             return this;
         }
 
         @Override
-        public AbstractC4934g.AbstractC4936b.AbstractC4937a mo24416c(Set<AbstractC4934g.EnumC4938c> set) {
+        public AbstractC4934g.AbstractC4936b.AbstractC4937a mo24417c(Set<AbstractC4934g.EnumC4938c> set) {
             Objects.requireNonNull(set, "Null flags");
             this.f16812c = set;
             return this;
         }
 
         @Override
-        public AbstractC4934g.AbstractC4936b.AbstractC4937a mo24415d(long j) {
+        public AbstractC4934g.AbstractC4936b.AbstractC4937a mo24416d(long j) {
             this.f16811b = Long.valueOf(j);
             return this;
         }
     }
 
     @Override
-    public long mo24421b() {
+    public long mo24422b() {
         return this.f16807a;
     }
 
     @Override
-    public Set<AbstractC4934g.EnumC4938c> mo24420c() {
+    public Set<AbstractC4934g.EnumC4938c> mo24421c() {
         return this.f16809c;
     }
 
     @Override
-    public long mo24419d() {
+    public long mo24420d() {
         return this.f16808b;
     }
 
@@ -75,7 +75,7 @@ public final class C4929d extends AbstractC4934g.AbstractC4936b {
             return false;
         }
         AbstractC4934g.AbstractC4936b bVar = (AbstractC4934g.AbstractC4936b) obj;
-        return this.f16807a == bVar.mo24421b() && this.f16808b == bVar.mo24419d() && this.f16809c.equals(bVar.mo24420c());
+        return this.f16807a == bVar.mo24422b() && this.f16808b == bVar.mo24420d() && this.f16809c.equals(bVar.mo24421c());
     }
 
     public int hashCode() {

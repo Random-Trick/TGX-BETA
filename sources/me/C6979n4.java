@@ -28,13 +28,13 @@ import p364zd.C11524j;
 import p364zd.C11541z;
 
 public class C6979n4 extends View implements C4336c.AbstractC4337a, AbstractC5911c, AbstractC11508a {
-    public final RectF f22101M = new RectF();
-    public final C4336c f22102N = new C4336c(this);
-    public final C3940f f22103O;
-    public final C3940f f22104P;
-    public AbstractC6980a f22105a;
-    public boolean f22106b;
-    public final Paint f22107c;
+    public final RectF f22104M = new RectF();
+    public final C4336c f22105N = new C4336c(this);
+    public final C3940f f22106O;
+    public final C3940f f22107P;
+    public AbstractC6980a f22108a;
+    public boolean f22109b;
+    public final Paint f22110c;
 
     public interface AbstractC6980a {
         void mo18212a(float f);
@@ -47,7 +47,7 @@ public class C6979n4 extends View implements C4336c.AbstractC4337a, AbstractC591
     public C6979n4(Context context) {
         super(context);
         TextPaint textPaint = new TextPaint(5);
-        this.f22107c = textPaint;
+        this.f22110c = textPaint;
         C3950k.AbstractC3952b k4Var = new C3950k.AbstractC3952b() {
             @Override
             public final void mo45P5(int i, float f, float f2, C3950k kVar) {
@@ -56,11 +56,11 @@ public class C6979n4 extends View implements C4336c.AbstractC4337a, AbstractC591
 
             @Override
             public void mo35Y0(int i, float f, C3950k kVar) {
-                C3953l.m29526a(this, i, f, kVar);
+                C3953l.m29528a(this, i, f, kVar);
             }
         };
         DecelerateInterpolator decelerateInterpolator = C2057b.f7280b;
-        this.f22103O = new C3940f(0, k4Var, decelerateInterpolator, 180L);
+        this.f22106O = new C3940f(0, k4Var, decelerateInterpolator, 180L);
         C3940f fVar = new C3940f(1, new C3950k.AbstractC3952b() {
             @Override
             public final void mo45P5(int i, float f, float f2, C3950k kVar) {
@@ -69,22 +69,22 @@ public class C6979n4 extends View implements C4336c.AbstractC4337a, AbstractC591
 
             @Override
             public void mo35Y0(int i, float f, C3950k kVar) {
-                C3953l.m29526a(this, i, f, kVar);
+                C3953l.m29528a(this, i, f, kVar);
             }
         }, decelerateInterpolator, 180L);
-        this.f22104P = fVar;
+        this.f22107P = fVar;
         textPaint.setColor(C11524j.m217S0());
-        textPaint.setTypeface(C1389o.m37258k());
-        textPaint.setTextSize(C1357a0.m37552C(14.0f));
-        fVar.m29575p(true, false);
+        textPaint.setTypeface(C1389o.m37261k());
+        textPaint.setTextSize(C1357a0.m37555C(14.0f));
+        fVar.m29577p(true, false);
         C11541z.m7t().m26d(this);
         setWillNotDraw(false);
     }
 
     public void m18215h(int i, float f, float f2, C3950k kVar) {
-        AbstractC6980a aVar = this.f22105a;
+        AbstractC6980a aVar = this.f22108a;
         if (aVar != null) {
-            if (this.f22106b) {
+            if (this.f22109b) {
                 f = 1.0f - f;
             }
             aVar.mo18212a(f);
@@ -93,7 +93,7 @@ public class C6979n4 extends View implements C4336c.AbstractC4337a, AbstractC591
     }
 
     public void m18214i(int i, float f, float f2, C3950k kVar) {
-        AbstractC6980a aVar = this.f22105a;
+        AbstractC6980a aVar = this.f22108a;
         if (aVar != null) {
             aVar.mo18210c(f);
         }
@@ -101,14 +101,14 @@ public class C6979n4 extends View implements C4336c.AbstractC4337a, AbstractC591
 
     @Override
     public boolean mo7429B(float f, float f2) {
-        return C4335b.m28258d(this, f, f2);
+        return C4335b.m28260d(this, f, f2);
     }
 
     @Override
     public void mo7428C(View view, float f, float f2) {
-        if (this.f22101M.contains(f, f2)) {
-            this.f22103O.m29573r(true);
-            AbstractC6980a aVar = this.f22105a;
+        if (this.f22104M.contains(f, f2)) {
+            this.f22106O.m29575r(true);
+            AbstractC6980a aVar = this.f22108a;
             if (aVar != null) {
                 aVar.mo18211b(m18216g());
             }
@@ -117,22 +117,22 @@ public class C6979n4 extends View implements C4336c.AbstractC4337a, AbstractC591
 
     @Override
     public void mo7427F(View view, float f, float f2) {
-        C4335b.m28254h(this, view, f, f2);
+        C4335b.m28256h(this, view, f, f2);
     }
 
     @Override
     public boolean mo7426K4() {
-        return C4335b.m28261a(this);
+        return C4335b.m28263a(this);
     }
 
     @Override
     public boolean mo7425W6(float f, float f2) {
-        return C4335b.m28259c(this, f, f2);
+        return C4335b.m28261c(this, f, f2);
     }
 
     @Override
     public void mo7424Z4(View view, float f, float f2) {
-        C4335b.m28256f(this, view, f, f2);
+        C4335b.m28258f(this, view, f, f2);
     }
 
     @Override
@@ -145,11 +145,11 @@ public class C6979n4 extends View implements C4336c.AbstractC4337a, AbstractC591
     }
 
     public final void m18219d(Canvas canvas, int i, int i2, RectF rectF, String str, C3940f fVar) {
-        float measureText = this.f22107c.measureText(str);
+        float measureText = this.f22110c.measureText(str);
         float l = C6918i3.m18456l() * 0.75f;
         float f = (measureText / 2.0f) - l;
-        int i3 = (((i - (((int) l) / 2)) - C1357a0.m37541i(8.0f)) + ((int) (C1357a0.m37541i(2.0f) * 0.75f))) - ((int) f);
-        int i4 = i2 - ((int) (C1357a0.m37541i(2.0f) * 0.75f));
+        int i3 = (((i - (((int) l) / 2)) - C1357a0.m37544i(8.0f)) + ((int) (C1357a0.m37544i(2.0f) * 0.75f))) - ((int) f);
+        int i4 = i2 - ((int) (C1357a0.m37544i(2.0f) * 0.75f));
         float f2 = i4;
         rectF.top = f2 - l;
         rectF.bottom = f2 + l;
@@ -157,68 +157,68 @@ public class C6979n4 extends View implements C4336c.AbstractC4337a, AbstractC591
         rectF.left = f3 - l;
         float f4 = i;
         rectF.right = ((measureText + f4) + ((int) (l / 1.5d))) - f;
-        canvas.drawRoundRect(rectF, C1357a0.m37541i(16.0f), C1357a0.m37541i(16.0f), C1410y.m37039g(C11524j.m228N(R.id.theme_color_previewBackground)));
-        canvas.drawText(str, f4 - f, C1357a0.m37552C(4.0f) + i2, this.f22107c);
+        canvas.drawRoundRect(rectF, C1357a0.m37544i(16.0f), C1357a0.m37544i(16.0f), C1410y.m37042g(C11524j.m228N(R.id.theme_color_previewBackground)));
+        canvas.drawText(str, f4 - f, C1357a0.m37555C(4.0f) + i2, this.f22110c);
         canvas.save();
         canvas.scale(0.75f, 0.75f, f3, i2);
-        canvas.drawCircle(f3, f2, l / 2.0f, C1410y.m37053Y(C11524j.m228N(R.id.theme_color_text), C1357a0.m37541i(2.0f)));
-        C6918i3.m18466b(canvas, i3, i4, fVar.m29584g(), null);
+        canvas.drawCircle(f3, f2, l / 2.0f, C1410y.m37056Y(C11524j.m228N(R.id.theme_color_text), C1357a0.m37544i(2.0f)));
+        C6918i3.m18466b(canvas, i3, i4, fVar.m29586g(), null);
         canvas.restore();
     }
 
     public void m18218e(TdApi.Background background, AbstractC6980a aVar) {
-        this.f22103O.m29575p(((TdApi.BackgroundTypeWallpaper) background.type).isBlurred, false);
-        this.f22106b = this.f22103O.m29583h();
-        this.f22105a = aVar;
+        this.f22106O.m29577p(((TdApi.BackgroundTypeWallpaper) background.type).isBlurred, false);
+        this.f22109b = this.f22106O.m29585h();
+        this.f22108a = aVar;
     }
 
     public void m18217f(C11520h hVar, AbstractC6980a aVar) {
-        this.f22103O.m29575p(hVar != null && hVar.m325L(), false);
-        this.f22106b = this.f22103O.m29583h();
-        this.f22105a = aVar;
+        this.f22106O.m29577p(hVar != null && hVar.m325L(), false);
+        this.f22109b = this.f22106O.m29585h();
+        this.f22108a = aVar;
     }
 
     @Override
     public void mo7419f3(View view, float f, float f2) {
-        C4335b.m28257e(this, view, f, f2);
+        C4335b.m28259e(this, view, f, f2);
     }
 
     public boolean m18216g() {
-        return this.f22103O.m29583h();
+        return this.f22106O.m29585h();
     }
 
     @Override
     public long getLongPressDuration() {
-        return C4335b.m28260b(this);
+        return C4335b.m28262b(this);
     }
 
     public void m18213j(boolean z, boolean z2) {
-        this.f22104P.m29575p(z, z2);
+        this.f22107P.m29577p(z, z2);
     }
 
     @Override
     public boolean mo7418n0(View view, float f, float f2) {
-        return this.f22101M.contains(f, f2);
+        return this.f22104M.contains(f, f2);
     }
 
     @Override
     public void mo7417o2(View view, float f, float f2) {
-        C4335b.m28255g(this, view, f, f2);
+        C4335b.m28257g(this, view, f, f2);
     }
 
     @Override
     public void onDraw(Canvas canvas) {
-        m18219d(canvas, getWidth() / 2, getHeight() / 2, this.f22101M, C4403w.m27869i1(R.string.ChatBackgroundBlur), this.f22103O);
+        m18219d(canvas, getWidth() / 2, getHeight() / 2, this.f22104M, C4403w.m27871i1(R.string.ChatBackgroundBlur), this.f22106O);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent motionEvent) {
-        return this.f22102N.m28246e(this, motionEvent);
+        return this.f22105N.m28248e(this, motionEvent);
     }
 
     @Override
     public void mo7416p(View view, float f, float f2) {
-        C4335b.m28253i(this, view, f, f2);
+        C4335b.m28255i(this, view, f, f2);
     }
 
     @Override
@@ -228,11 +228,11 @@ public class C6979n4 extends View implements C4336c.AbstractC4337a, AbstractC591
 
     @Override
     public boolean mo7415z4(View view, float f, float f2) {
-        return C4335b.m28251k(this, view, f, f2);
+        return C4335b.m28253k(this, view, f, f2);
     }
 
     @Override
     public void mo7414z6(View view, MotionEvent motionEvent, float f, float f2, float f3, float f4) {
-        C4335b.m28252j(this, view, motionEvent, f, f2, f3, f4);
+        C4335b.m28254j(this, view, motionEvent, f, f2, f3, f4);
     }
 }

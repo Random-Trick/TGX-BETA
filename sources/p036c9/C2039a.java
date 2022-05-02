@@ -48,44 +48,44 @@ public class C2039a {
         this.f7243q = 31;
     }
 
-    public void m35781a(ByteBuffer byteBuffer) {
-        C8634g.m11851j(byteBuffer, this.f7227a);
-        C8634g.m11851j(byteBuffer, this.f7228b);
-        C8634g.m11851j(byteBuffer, this.f7229c);
-        C8634g.m11851j(byteBuffer, this.f7230d);
+    public void m35784a(ByteBuffer byteBuffer) {
+        C8634g.m11850j(byteBuffer, this.f7227a);
+        C8634g.m11850j(byteBuffer, this.f7228b);
+        C8634g.m11850j(byteBuffer, this.f7229c);
+        C8634g.m11850j(byteBuffer, this.f7230d);
         C8382d dVar = new C8382d(byteBuffer);
-        dVar.m12630a(this.f7239m, 6);
-        dVar.m12630a(this.f7231e, 2);
-        dVar.m12630a(this.f7240n, 3);
-        dVar.m12630a(this.f7233g.size(), 5);
+        dVar.m12629a(this.f7239m, 6);
+        dVar.m12629a(this.f7231e, 2);
+        dVar.m12629a(this.f7240n, 3);
+        dVar.m12629a(this.f7233g.size(), 5);
         for (byte[] bArr : this.f7232f) {
-            C8634g.m11856e(byteBuffer, bArr.length);
+            C8634g.m11855e(byteBuffer, bArr.length);
             byteBuffer.put(bArr);
         }
-        C8634g.m11851j(byteBuffer, this.f7233g.size());
+        C8634g.m11850j(byteBuffer, this.f7233g.size());
         for (byte[] bArr2 : this.f7233g) {
-            C8634g.m11856e(byteBuffer, bArr2.length);
+            C8634g.m11855e(byteBuffer, bArr2.length);
             byteBuffer.put(bArr2);
         }
         if (this.f7234h) {
             int i = this.f7228b;
             if (i == 100 || i == 110 || i == 122 || i == 144) {
                 C8382d dVar2 = new C8382d(byteBuffer);
-                dVar2.m12630a(this.f7241o, 6);
-                dVar2.m12630a(this.f7235i, 2);
-                dVar2.m12630a(this.f7242p, 5);
-                dVar2.m12630a(this.f7236j, 3);
-                dVar2.m12630a(this.f7243q, 5);
-                dVar2.m12630a(this.f7237k, 3);
+                dVar2.m12629a(this.f7241o, 6);
+                dVar2.m12629a(this.f7235i, 2);
+                dVar2.m12629a(this.f7242p, 5);
+                dVar2.m12629a(this.f7236j, 3);
+                dVar2.m12629a(this.f7243q, 5);
+                dVar2.m12629a(this.f7237k, 3);
                 for (byte[] bArr3 : this.f7238l) {
-                    C8634g.m11856e(byteBuffer, bArr3.length);
+                    C8634g.m11855e(byteBuffer, bArr3.length);
                     byteBuffer.put(bArr3);
                 }
             }
         }
     }
 
-    public long m35780b() {
+    public long m35783b() {
         int i;
         long j = 6;
         for (byte[] bArr : this.f7232f) {
@@ -104,7 +104,7 @@ public class C2039a {
         return j2;
     }
 
-    public String[] m35779c() {
+    public String[] m35782c() {
         ArrayList arrayList = new ArrayList();
         for (byte[] bArr : this.f7233g) {
             try {
@@ -116,15 +116,15 @@ public class C2039a {
         return (String[]) arrayList.toArray(new String[arrayList.size()]);
     }
 
-    public List<String> m35778d() {
+    public List<String> m35781d() {
         ArrayList arrayList = new ArrayList(this.f7233g.size());
         for (byte[] bArr : this.f7233g) {
-            arrayList.add(C8630c.m11880b(bArr));
+            arrayList.add(C8630c.m11879b(bArr));
         }
         return arrayList;
     }
 
-    public String[] m35777e() {
+    public String[] m35780e() {
         String str;
         ArrayList arrayList = new ArrayList();
         for (byte[] bArr : this.f7232f) {
@@ -138,18 +138,18 @@ public class C2039a {
         return (String[]) arrayList.toArray(new String[arrayList.size()]);
     }
 
-    public List<String> m35776f() {
+    public List<String> m35779f() {
         ArrayList arrayList = new ArrayList(this.f7238l.size());
         for (byte[] bArr : this.f7238l) {
-            arrayList.add(C8630c.m11880b(bArr));
+            arrayList.add(C8630c.m11879b(bArr));
         }
         return arrayList;
     }
 
-    public List<String> m35775g() {
+    public List<String> m35778g() {
         ArrayList arrayList = new ArrayList(this.f7232f.size());
         for (byte[] bArr : this.f7232f) {
-            arrayList.add(C8630c.m11880b(bArr));
+            arrayList.add(C8630c.m11879b(bArr));
         }
         return arrayList;
     }
@@ -172,23 +172,23 @@ public class C2039a {
         this.f7241o = 31;
         this.f7242p = 31;
         this.f7243q = 31;
-        this.f7227a = C8632e.m11862n(byteBuffer);
-        this.f7228b = C8632e.m11862n(byteBuffer);
-        this.f7229c = C8632e.m11862n(byteBuffer);
-        this.f7230d = C8632e.m11862n(byteBuffer);
+        this.f7227a = C8632e.m11861n(byteBuffer);
+        this.f7228b = C8632e.m11861n(byteBuffer);
+        this.f7229c = C8632e.m11861n(byteBuffer);
+        this.f7230d = C8632e.m11861n(byteBuffer);
         C8381c cVar = new C8381c(byteBuffer);
-        this.f7239m = cVar.m12633a(6);
-        this.f7231e = cVar.m12633a(2);
-        this.f7240n = cVar.m12633a(3);
-        int a = cVar.m12633a(5);
+        this.f7239m = cVar.m12632a(6);
+        this.f7231e = cVar.m12632a(2);
+        this.f7240n = cVar.m12632a(3);
+        int a = cVar.m12632a(5);
         for (int i2 = 0; i2 < a; i2++) {
-            byte[] bArr = new byte[C8632e.m11867i(byteBuffer)];
+            byte[] bArr = new byte[C8632e.m11866i(byteBuffer)];
             byteBuffer.get(bArr);
             this.f7232f.add(bArr);
         }
-        long n = C8632e.m11862n(byteBuffer);
+        long n = C8632e.m11861n(byteBuffer);
         for (int i3 = 0; i3 < n; i3++) {
-            byte[] bArr2 = new byte[C8632e.m11867i(byteBuffer)];
+            byte[] bArr2 = new byte[C8632e.m11866i(byteBuffer)];
             byteBuffer.get(bArr2);
             this.f7233g.add(bArr2);
         }
@@ -202,15 +202,15 @@ public class C2039a {
             return;
         }
         C8381c cVar2 = new C8381c(byteBuffer);
-        this.f7241o = cVar2.m12633a(6);
-        this.f7235i = cVar2.m12633a(2);
-        this.f7242p = cVar2.m12633a(5);
-        this.f7236j = cVar2.m12633a(3);
-        this.f7243q = cVar2.m12633a(5);
-        this.f7237k = cVar2.m12633a(3);
-        long n2 = C8632e.m11862n(byteBuffer);
+        this.f7241o = cVar2.m12632a(6);
+        this.f7235i = cVar2.m12632a(2);
+        this.f7242p = cVar2.m12632a(5);
+        this.f7236j = cVar2.m12632a(3);
+        this.f7243q = cVar2.m12632a(5);
+        this.f7237k = cVar2.m12632a(3);
+        long n2 = C8632e.m11861n(byteBuffer);
         for (int i4 = 0; i4 < n2; i4++) {
-            byte[] bArr3 = new byte[C8632e.m11867i(byteBuffer)];
+            byte[] bArr3 = new byte[C8632e.m11866i(byteBuffer)];
             byteBuffer.get(bArr3);
             this.f7238l.add(bArr3);
         }

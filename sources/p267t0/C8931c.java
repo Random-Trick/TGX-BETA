@@ -9,27 +9,27 @@ import p039d.C3563j;
 public class C8931c {
 
     public static class C8932a {
-        public int f28792a;
-        public boolean f28793b;
+        public int f28795a;
+        public boolean f28796b;
     }
 
-    public static void m10927a(ArrayList<C8933b> arrayList, char c, float[] fArr) {
+    public static void m10926a(ArrayList<C8933b> arrayList, char c, float[] fArr) {
         arrayList.add(new C8933b(c, fArr));
     }
 
-    public static boolean m10926b(C8933b[] bVarArr, C8933b[] bVarArr2) {
+    public static boolean m10925b(C8933b[] bVarArr, C8933b[] bVarArr2) {
         if (bVarArr == null || bVarArr2 == null || bVarArr.length != bVarArr2.length) {
             return false;
         }
         for (int i = 0; i < bVarArr.length; i++) {
-            if (!(bVarArr[i].f28794a == bVarArr2[i].f28794a && bVarArr[i].f28795b.length == bVarArr2[i].f28795b.length)) {
+            if (!(bVarArr[i].f28797a == bVarArr2[i].f28797a && bVarArr[i].f28798b.length == bVarArr2[i].f28798b.length)) {
                 return false;
             }
         }
         return true;
     }
 
-    public static float[] m10925c(float[] fArr, int i, int i2) {
+    public static float[] m10924c(float[] fArr, int i, int i2) {
         if (i <= i2) {
             int length = fArr.length;
             if (i < 0 || i > length) {
@@ -44,7 +44,7 @@ public class C8931c {
         throw new IllegalArgumentException();
     }
 
-    public static C8933b[] m10924d(String str) {
+    public static C8933b[] m10923d(String str) {
         if (str == null) {
             return null;
         }
@@ -52,35 +52,35 @@ public class C8931c {
         int i = 1;
         int i2 = 0;
         while (i < str.length()) {
-            int i3 = m10919i(str, i);
+            int i3 = m10918i(str, i);
             String trim = str.substring(i2, i3).trim();
             if (trim.length() > 0) {
-                m10927a(arrayList, trim.charAt(0), m10920h(trim));
+                m10926a(arrayList, trim.charAt(0), m10919h(trim));
             }
             i = i3 + 1;
             i2 = i3;
         }
         if (i - i2 == 1 && i2 < str.length()) {
-            m10927a(arrayList, str.charAt(i2), new float[0]);
+            m10926a(arrayList, str.charAt(i2), new float[0]);
         }
         return (C8933b[]) arrayList.toArray(new C8933b[arrayList.size()]);
     }
 
-    public static Path m10923e(String str) {
+    public static Path m10922e(String str) {
         Path path = new Path();
-        C8933b[] d = m10924d(str);
+        C8933b[] d = m10923d(str);
         if (d == null) {
             return null;
         }
         try {
-            C8933b.m10913e(d, path);
+            C8933b.m10912e(d, path);
             return path;
         } catch (RuntimeException e) {
             throw new RuntimeException("Error in parsing " + str, e);
         }
     }
 
-    public static C8933b[] m10922f(C8933b[] bVarArr) {
+    public static C8933b[] m10921f(C8933b[] bVarArr) {
         if (bVarArr == null) {
             return null;
         }
@@ -91,11 +91,11 @@ public class C8931c {
         return bVarArr2;
     }
 
-    public static void m10921g(java.lang.String r8, int r9, p267t0.C8931c.C8932a r10) {
-        throw new UnsupportedOperationException("Method not decompiled: p267t0.C8931c.m10921g(java.lang.String, int, t0.c$a):void");
+    public static void m10920g(java.lang.String r8, int r9, p267t0.C8931c.C8932a r10) {
+        throw new UnsupportedOperationException("Method not decompiled: p267t0.C8931c.m10920g(java.lang.String, int, t0.c$a):void");
     }
 
-    public static float[] m10920h(String str) {
+    public static float[] m10919h(String str) {
         if (str.charAt(0) == 'z' || str.charAt(0) == 'Z') {
             return new float[0];
         }
@@ -106,21 +106,21 @@ public class C8931c {
             int i = 1;
             int i2 = 0;
             while (i < length) {
-                m10921g(str, i, aVar);
-                int i3 = aVar.f28792a;
+                m10920g(str, i, aVar);
+                int i3 = aVar.f28795a;
                 if (i < i3) {
                     i2++;
                     fArr[i2] = Float.parseFloat(str.substring(i, i3));
                 }
-                i = aVar.f28793b ? i3 : i3 + 1;
+                i = aVar.f28796b ? i3 : i3 + 1;
             }
-            return m10925c(fArr, 0, i2);
+            return m10924c(fArr, 0, i2);
         } catch (NumberFormatException e) {
             throw new RuntimeException("error in parsing \"" + str + "\"", e);
         }
     }
 
-    public static int m10919i(String str, int i) {
+    public static int m10918i(String str, int i) {
         while (i < str.length()) {
             char charAt = str.charAt(i);
             if (((charAt - 'A') * (charAt - 'Z') <= 0 || (charAt - 'a') * (charAt - 'z') <= 0) && charAt != 'e' && charAt != 'E') {
@@ -131,25 +131,25 @@ public class C8931c {
         return i;
     }
 
-    public static void m10918j(C8933b[] bVarArr, C8933b[] bVarArr2) {
+    public static void m10917j(C8933b[] bVarArr, C8933b[] bVarArr2) {
         for (int i = 0; i < bVarArr2.length; i++) {
-            bVarArr[i].f28794a = bVarArr2[i].f28794a;
-            for (int i2 = 0; i2 < bVarArr2[i].f28795b.length; i2++) {
-                bVarArr[i].f28795b[i2] = bVarArr2[i].f28795b[i2];
+            bVarArr[i].f28797a = bVarArr2[i].f28797a;
+            for (int i2 = 0; i2 < bVarArr2[i].f28798b.length; i2++) {
+                bVarArr[i].f28798b[i2] = bVarArr2[i].f28798b[i2];
             }
         }
     }
 
     public static class C8933b {
-        public char f28794a;
-        public float[] f28795b;
+        public char f28797a;
+        public float[] f28798b;
 
         public C8933b(char c, float[] fArr) {
-            this.f28794a = c;
-            this.f28795b = fArr;
+            this.f28797a = c;
+            this.f28798b = fArr;
         }
 
-        public static void m10917a(Path path, float[] fArr, char c, char c2, float[] fArr2) {
+        public static void m10916a(Path path, float[] fArr, char c, char c2, float[] fArr2) {
             int i;
             int i2;
             float f;
@@ -399,7 +399,7 @@ public class C8931c {
                         int i44 = i3 + 5;
                         int i45 = i3 + 6;
                         i2 = i3;
-                        m10915c(path, f15, f16, fArr2[i44] + f15, fArr2[i45] + f16, fArr2[i3 + 0], fArr2[i3 + 1], fArr2[i3 + 2], fArr2[i3 + 3] != 0.0f, fArr2[i3 + 4] != 0.0f);
+                        m10914c(path, f15, f16, fArr2[i44] + f15, fArr2[i45] + f16, fArr2[i3 + 0], fArr2[i3 + 1], fArr2[i3 + 2], fArr2[i3 + 3] != 0.0f, fArr2[i3 + 4] != 0.0f);
                         f15 += fArr2[i44];
                         f16 += fArr2[i45];
                     }
@@ -410,7 +410,7 @@ public class C8931c {
                     i2 = i3;
                     int i46 = i2 + 5;
                     int i47 = i2 + 6;
-                    m10915c(path, f15, f16, fArr2[i46], fArr2[i47], fArr2[i2 + 0], fArr2[i2 + 1], fArr2[i2 + 2], fArr2[i2 + 3] != 0.0f, fArr2[i2 + 4] != 0.0f);
+                    m10914c(path, f15, f16, fArr2[i46], fArr2[i47], fArr2[i2 + 0], fArr2[i2 + 1], fArr2[i2 + 2], fArr2[i2 + 3] != 0.0f, fArr2[i2 + 4] != 0.0f);
                     f15 = fArr2[i46];
                     f16 = fArr2[i47];
                 }
@@ -428,7 +428,7 @@ public class C8931c {
             fArr[5] = f18;
         }
 
-        public static void m10916b(Path path, double d, double d2, double d3, double d4, double d5, double d6, double d7, double d8, double d9) {
+        public static void m10915b(Path path, double d, double d2, double d3, double d4, double d5, double d6, double d7, double d8, double d9) {
             double d10 = d3;
             int ceil = (int) Math.ceil(Math.abs((d9 * 4.0d) / 3.141592653589793d));
             double cos = Math.cos(d7);
@@ -475,7 +475,7 @@ public class C8931c {
             }
         }
 
-        public static void m10915c(Path path, float f, float f2, float f3, float f4, float f5, float f6, float f7, boolean z, boolean z2) {
+        public static void m10914c(Path path, float f, float f2, float f3, float f4, float f5, float f6, float f7, boolean z, boolean z2) {
             double d;
             double d2;
             double radians = Math.toRadians(f7);
@@ -504,7 +504,7 @@ public class C8931c {
             if (d18 < 0.0d) {
                 Log.w("PathParser", "Points are too far apart " + d17);
                 float sqrt = (float) (Math.sqrt(d17) / 1.99999d);
-                m10915c(path, f, f2, f3, f4, f5 * sqrt, f6 * sqrt, f7, z, z2);
+                m10914c(path, f, f2, f3, f4, f5 * sqrt, f6 * sqrt, f7, z, z2);
                 return;
             }
             double sqrt2 = Math.sqrt(d18);
@@ -525,25 +525,25 @@ public class C8931c {
             }
             double d21 = d2 * d6;
             double d22 = d * d8;
-            m10916b(path, (d21 * cos) - (d22 * sin), (d21 * sin) + (d22 * cos), d6, d8, d3, d5, radians, atan2, atan22);
+            m10915b(path, (d21 * cos) - (d22 * sin), (d21 * sin) + (d22 * cos), d6, d8, d3, d5, radians, atan2, atan22);
         }
 
-        public static void m10913e(C8933b[] bVarArr, Path path) {
+        public static void m10912e(C8933b[] bVarArr, Path path) {
             float[] fArr = new float[6];
             char c = 'm';
             for (int i = 0; i < bVarArr.length; i++) {
-                m10917a(path, fArr, c, bVarArr[i].f28794a, bVarArr[i].f28795b);
-                c = bVarArr[i].f28794a;
+                m10916a(path, fArr, c, bVarArr[i].f28797a, bVarArr[i].f28798b);
+                c = bVarArr[i].f28797a;
             }
         }
 
-        public void m10914d(C8933b bVar, C8933b bVar2, float f) {
-            this.f28794a = bVar.f28794a;
+        public void m10913d(C8933b bVar, C8933b bVar2, float f) {
+            this.f28797a = bVar.f28797a;
             int i = 0;
             while (true) {
-                float[] fArr = bVar.f28795b;
+                float[] fArr = bVar.f28798b;
                 if (i < fArr.length) {
-                    this.f28795b[i] = (fArr[i] * (1.0f - f)) + (bVar2.f28795b[i] * f);
+                    this.f28798b[i] = (fArr[i] * (1.0f - f)) + (bVar2.f28798b[i] * f);
                     i++;
                 } else {
                     return;
@@ -552,9 +552,9 @@ public class C8931c {
         }
 
         public C8933b(C8933b bVar) {
-            this.f28794a = bVar.f28794a;
-            float[] fArr = bVar.f28795b;
-            this.f28795b = C8931c.m10925c(fArr, 0, fArr.length);
+            this.f28797a = bVar.f28797a;
+            float[] fArr = bVar.f28798b;
+            this.f28798b = C8931c.m10924c(fArr, 0, fArr.length);
         }
     }
 }

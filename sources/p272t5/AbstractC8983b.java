@@ -13,7 +13,7 @@ public interface AbstractC8983b extends IInterface {
         }
 
         @RecentlyNonNull
-        public static AbstractC8983b m10769s(@RecentlyNonNull IBinder iBinder) {
+        public static AbstractC8983b m10768s(@RecentlyNonNull IBinder iBinder) {
             if (iBinder == null) {
                 return null;
             }

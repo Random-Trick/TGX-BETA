@@ -35,28 +35,28 @@ public final class C4120b implements AbstractC4134l {
                 @Override
                 public final Object get() {
                     HandlerThread e;
-                    e = C4120b.C4122b.m28865e(i);
+                    e = C4120b.C4122b.m28867e(i);
                     return e;
                 }
             }, new AbstractC10444n() {
                 @Override
                 public final Object get() {
                     HandlerThread f;
-                    f = C4120b.C4122b.m28864f(i);
+                    f = C4120b.C4122b.m28866f(i);
                     return f;
                 }
             }, z, z2);
         }
 
-        public static HandlerThread m28865e(int i) {
-            return new HandlerThread(C4120b.m28874t(i));
+        public static HandlerThread m28867e(int i) {
+            return new HandlerThread(C4120b.m28876t(i));
         }
 
-        public static HandlerThread m28864f(int i) {
-            return new HandlerThread(C4120b.m28873u(i));
+        public static HandlerThread m28866f(int i) {
+            return new HandlerThread(C4120b.m28875u(i));
         }
 
-        public C4120b mo28647a(AbstractC4134l.C4135a aVar) {
+        public C4120b mo28649a(AbstractC4134l.C4135a aVar) {
             Exception e;
             MediaCodec mediaCodec;
             C4120b bVar;
@@ -64,7 +64,7 @@ public final class C4120b implements AbstractC4134l {
             C4120b bVar2 = null;
             try {
                 String valueOf = String.valueOf(str);
-                C1210j0.m38035a(valueOf.length() != 0 ? "createCodec:".concat(valueOf) : new String("createCodec:"));
+                C1210j0.m38038a(valueOf.length() != 0 ? "createCodec:".concat(valueOf) : new String("createCodec:"));
                 mediaCodec = MediaCodec.createByCodecName(str);
                 try {
                     bVar = new C4120b(mediaCodec, this.f13893a.get(), this.f13894b.get(), this.f13895c, this.f13896d);
@@ -76,14 +76,14 @@ public final class C4120b implements AbstractC4134l {
                 mediaCodec = null;
             }
             try {
-                C1210j0.m38033c();
-                bVar.m28871w(aVar.f13944b, aVar.f13946d, aVar.f13947e, aVar.f13948f, aVar.f13949g);
+                C1210j0.m38036c();
+                bVar.m28873w(aVar.f13944b, aVar.f13946d, aVar.f13947e, aVar.f13948f, aVar.f13949g);
                 return bVar;
             } catch (Exception e4) {
                 e = e4;
                 bVar2 = bVar;
                 if (bVar2 != null) {
-                    bVar2.mo28666a();
+                    bVar2.mo28668a();
                 } else if (mediaCodec != null) {
                     mediaCodec.release();
                 }
@@ -99,15 +99,15 @@ public final class C4120b implements AbstractC4134l {
         }
     }
 
-    public static String m28874t(int i) {
-        return m28872v(i, "ExoPlayer:MediaCodecAsyncAdapter:");
+    public static String m28876t(int i) {
+        return m28874v(i, "ExoPlayer:MediaCodecAsyncAdapter:");
     }
 
-    public static String m28873u(int i) {
-        return m28872v(i, "ExoPlayer:MediaCodecQueueingThread:");
+    public static String m28875u(int i) {
+        return m28874v(i, "ExoPlayer:MediaCodecQueueingThread:");
     }
 
-    public static String m28872v(int i, String str) {
+    public static String m28874v(int i, String str) {
         StringBuilder sb2 = new StringBuilder(str);
         if (i == 1) {
             sb2.append("Audio");
@@ -121,16 +121,16 @@ public final class C4120b implements AbstractC4134l {
         return sb2.toString();
     }
 
-    public void m28870x(AbstractC4134l.AbstractC4137c cVar, MediaCodec mediaCodec, long j, long j2) {
-        cVar.mo28810a(this, j, j2);
+    public void m28872x(AbstractC4134l.AbstractC4137c cVar, MediaCodec mediaCodec, long j, long j2) {
+        cVar.mo28812a(this, j, j2);
     }
 
     @Override
-    public void mo28666a() {
+    public void mo28668a() {
         try {
             if (this.f13891g == 1) {
-                this.f13887c.m28848p();
-                this.f13886b.m28829p();
+                this.f13887c.m28850p();
+                this.f13886b.m28831p();
             }
             this.f13891g = 2;
         } finally {
@@ -146,115 +146,115 @@ public final class C4120b implements AbstractC4134l {
     }
 
     @Override
-    public boolean mo28665b() {
+    public boolean mo28667b() {
         return false;
     }
 
     @Override
-    public MediaFormat mo28664c() {
-        return this.f13886b.m28838g();
+    public MediaFormat mo28666c() {
+        return this.f13886b.m28840g();
     }
 
     @Override
-    public void mo28663d(Bundle bundle) {
-        m28869y();
+    public void mo28665d(Bundle bundle) {
+        m28871y();
         this.f13885a.setParameters(bundle);
     }
 
     @Override
-    public void mo28662e(int i, long j) {
+    public void mo28664e(int i, long j) {
         this.f13885a.releaseOutputBuffer(i, j);
     }
 
     @Override
-    public int mo28661f() {
-        return this.f13886b.m28842c();
+    public int mo28663f() {
+        return this.f13886b.m28844c();
     }
 
     @Override
     public void flush() {
-        this.f13887c.m28855i();
+        this.f13887c.m28857i();
         this.f13885a.flush();
         if (this.f13889e) {
-            this.f13886b.m28840e(null);
+            this.f13886b.m28842e(null);
             this.f13885a.start();
             return;
         }
-        this.f13886b.m28840e(this.f13885a);
+        this.f13886b.m28842e(this.f13885a);
     }
 
     @Override
-    public int mo28660g(MediaCodec.BufferInfo bufferInfo) {
-        return this.f13886b.m28841d(bufferInfo);
+    public int mo28662g(MediaCodec.BufferInfo bufferInfo) {
+        return this.f13886b.m28843d(bufferInfo);
     }
 
     @Override
-    public void mo28659h(int i, boolean z) {
+    public void mo28661h(int i, boolean z) {
         this.f13885a.releaseOutputBuffer(i, z);
     }
 
     @Override
-    public void mo28658i(int i) {
-        m28869y();
+    public void mo28660i(int i) {
+        m28871y();
         this.f13885a.setVideoScalingMode(i);
     }
 
     @Override
-    public void mo28657j(int i, int i2, C8020c cVar, long j, int i3) {
-        this.f13887c.m28850n(i, i2, cVar, j, i3);
+    public void mo28659j(int i, int i2, C8020c cVar, long j, int i3) {
+        this.f13887c.m28852n(i, i2, cVar, j, i3);
     }
 
     @Override
-    public ByteBuffer mo28656k(int i) {
+    public ByteBuffer mo28658k(int i) {
         return this.f13885a.getInputBuffer(i);
     }
 
     @Override
-    public void mo28655l(Surface surface) {
-        m28869y();
+    public void mo28657l(Surface surface) {
+        m28871y();
         this.f13885a.setOutputSurface(surface);
     }
 
     @Override
-    public void mo28654m(int i, int i2, int i3, long j, int i4) {
-        this.f13887c.m28851m(i, i2, i3, j, i4);
+    public void mo28656m(int i, int i2, int i3, long j, int i4) {
+        this.f13887c.m28853m(i, i2, i3, j, i4);
     }
 
     @Override
-    public ByteBuffer mo28653n(int i) {
+    public ByteBuffer mo28655n(int i) {
         return this.f13885a.getOutputBuffer(i);
     }
 
     @Override
-    public void mo28652o(final AbstractC4134l.AbstractC4137c cVar, Handler handler) {
-        m28869y();
+    public void mo28654o(final AbstractC4134l.AbstractC4137c cVar, Handler handler) {
+        m28871y();
         this.f13885a.setOnFrameRenderedListener(new MediaCodec.OnFrameRenderedListener() {
             @Override
             public final void onFrameRendered(MediaCodec mediaCodec, long j, long j2) {
-                C4120b.this.m28870x(cVar, mediaCodec, j, j2);
+                C4120b.this.m28872x(cVar, mediaCodec, j, j2);
             }
         }, handler);
     }
 
-    public final void m28871w(MediaFormat mediaFormat, Surface surface, MediaCrypto mediaCrypto, int i, boolean z) {
-        this.f13886b.m28837h(this.f13885a);
-        C1210j0.m38035a("configureCodec");
+    public final void m28873w(MediaFormat mediaFormat, Surface surface, MediaCrypto mediaCrypto, int i, boolean z) {
+        this.f13886b.m28839h(this.f13885a);
+        C1210j0.m38038a("configureCodec");
         this.f13885a.configure(mediaFormat, surface, mediaCrypto, i);
-        C1210j0.m38033c();
+        C1210j0.m38036c();
         if (z) {
             this.f13892h = this.f13885a.createInputSurface();
         }
-        this.f13887c.m28847q();
-        C1210j0.m38035a("startCodec");
+        this.f13887c.m28849q();
+        C1210j0.m38038a("startCodec");
         this.f13885a.start();
-        C1210j0.m38033c();
+        C1210j0.m38036c();
         this.f13891g = 1;
     }
 
-    public final void m28869y() {
+    public final void m28871y() {
         if (this.f13888d) {
             try {
-                this.f13887c.m28846r();
+                this.f13887c.m28848r();
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
                 throw new IllegalStateException(e);

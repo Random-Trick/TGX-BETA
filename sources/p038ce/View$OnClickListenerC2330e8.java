@@ -39,37 +39,37 @@ public class View$OnClickListenerC2330e8 extends AbstractC2420g6<C2332b> impleme
 
         @Override
         public void mo394V2(C2964ra raVar, C9137c cVar, boolean z) {
-            if (raVar.m32835j() == R.id.btn_sessionLogout) {
+            if (raVar.m32838j() == R.id.btn_sessionLogout) {
                 cVar.setIconColorId(R.id.theme_color_textNegative);
             } else {
                 cVar.setIconColorId(R.id.theme_color_icon);
             }
-            int j = raVar.m32835j();
+            int j = raVar.m32838j();
             int i = R.string.SessionAccept;
             CharSequence charSequence = null;
             switch (j) {
                 case R.id.btn_sessionAcceptCalls:
-                    cVar.getToggler().m10186r(View$OnClickListenerC2330e8.this.f8021z0, z);
+                    cVar.getToggler().m10185r(View$OnClickListenerC2330e8.this.f8021z0, z);
                     if (!View$OnClickListenerC2330e8.this.f8021z0) {
                         i = R.string.SessionReject;
                     }
                     cVar.setData(i);
                     break;
                 case R.id.btn_sessionAcceptSecretChats:
-                    cVar.getToggler().m10186r(View$OnClickListenerC2330e8.this.f8020y0, z);
+                    cVar.getToggler().m10185r(View$OnClickListenerC2330e8.this.f8020y0, z);
                     if (!View$OnClickListenerC2330e8.this.f8020y0) {
                         i = R.string.SessionReject;
                     }
                     cVar.setData(i);
                     break;
                 case R.id.btn_sessionApp:
-                    cVar.setText(new C5459x0(View$OnClickListenerC2330e8.this.f8019x0.applicationName + " " + View$OnClickListenerC2330e8.this.f8019x0.applicationVersion, AbstractC4761s4.m26211D9(), C5428t.AbstractC5441d.f17872C, null));
+                    cVar.setText(new C5459x0(View$OnClickListenerC2330e8.this.f8019x0.applicationName + " " + View$OnClickListenerC2330e8.this.f8019x0.applicationVersion, AbstractC4761s4.m26212D9(), C5428t.AbstractC5441d.f17872C, null));
                     break;
                 case R.id.btn_sessionCountry:
                     cVar.setData(R.string.SessionLocation);
                     break;
                 case R.id.btn_sessionDevice:
-                    cVar.setText(new C5459x0(View$OnClickListenerC2330e8.this.f8019x0.deviceModel, AbstractC4761s4.m26211D9(), C5428t.AbstractC5441d.f17872C, null));
+                    cVar.setText(new C5459x0(View$OnClickListenerC2330e8.this.f8019x0.deviceModel, AbstractC4761s4.m26212D9(), C5428t.AbstractC5441d.f17872C, null));
                     break;
                 case R.id.btn_sessionFirstLogin:
                     cVar.setData(View$OnClickListenerC2330e8.this.f8019x0.isPasswordPending ? R.string.SessionAttempt : R.string.SessionFirstLogin);
@@ -82,7 +82,7 @@ public class View$OnClickListenerC2330e8 extends AbstractC2420g6<C2332b> impleme
                     break;
                 case R.id.btn_sessionLogout:
                     if (!View$OnClickListenerC2330e8.this.f8019x0.isCurrent && !View$OnClickListenerC2330e8.this.f8019x0.isPasswordPending) {
-                        charSequence = C4403w.m27881f1(View$OnClickListenerC2330e8.this.f8019x0.lastActiveDate + TimeUnit.DAYS.toSeconds(View$OnClickListenerC2330e8.this.m9131x9().f8024b), TimeUnit.SECONDS, View$OnClickListenerC2330e8.this.f30167b.m2898D4(), TimeUnit.MILLISECONDS, true, 0, R.string.session_WillTerminate, false);
+                        charSequence = C4403w.m27883f1(View$OnClickListenerC2330e8.this.f8019x0.lastActiveDate + TimeUnit.DAYS.toSeconds(View$OnClickListenerC2330e8.this.m9131x9().f8024b), TimeUnit.SECONDS, View$OnClickListenerC2330e8.this.f30170b.m2898D4(), TimeUnit.MILLISECONDS, true, 0, R.string.session_WillTerminate, false);
                     }
                     cVar.setData(charSequence);
                     break;
@@ -90,7 +90,7 @@ public class View$OnClickListenerC2330e8 extends AbstractC2420g6<C2332b> impleme
                     cVar.setData(R.string.SessionSystem);
                     break;
             }
-            cVar.setTag(raVar.m32824u());
+            cVar.setTag(raVar.m32827u());
         }
     }
 
@@ -112,7 +112,7 @@ public class View$OnClickListenerC2330e8 extends AbstractC2420g6<C2332b> impleme
         super(context, q6Var);
     }
 
-    public boolean m35082uf(View view, int i) {
+    public boolean m35085uf(View view, int i) {
         if (i != R.id.btn_terminateSession) {
             return true;
         }
@@ -121,10 +121,10 @@ public class View$OnClickListenerC2330e8 extends AbstractC2420g6<C2332b> impleme
         return true;
     }
 
-    public static void m35081vf(TdApi.Object object) {
+    public static void m35084vf(TdApi.Object object) {
     }
 
-    public void m35080wf() {
+    public void m35083wf() {
         TdApi.Session session = this.f8019x0;
         session.canAcceptSecretChats = this.f8020y0;
         session.canAcceptCalls = this.f8021z0;
@@ -132,11 +132,11 @@ public class View$OnClickListenerC2330e8 extends AbstractC2420g6<C2332b> impleme
         m9298Zb();
     }
 
-    public void m35079xf() {
+    public void m35082xf() {
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2330e8.this.m35080wf();
+                View$OnClickListenerC2330e8.this.m35083wf();
             }
         });
     }
@@ -152,40 +152,40 @@ public class View$OnClickListenerC2330e8 extends AbstractC2420g6<C2332b> impleme
     }
 
     @Override
-    public int mo31415Re() {
+    public int mo31417Re() {
         return R.id.theme_color_background;
     }
 
     @Override
     public CharSequence mo9313X9() {
-        return C4403w.m27869i1(this.f8019x0.isPasswordPending ? R.string.SessionAttemptDetails : R.string.SessionDetails);
+        return C4403w.m27871i1(this.f8019x0.isPasswordPending ? R.string.SessionAttemptDetails : R.string.SessionDetails);
     }
 
     @Override
-    public void mo30697Ze(Context context, FrameLayoutFix frameLayoutFix, RecyclerView recyclerView) {
+    public void mo30699Ze(Context context, FrameLayoutFix frameLayoutFix, RecyclerView recyclerView) {
         TdApi.Session session = this.f8019x0;
         if (!session.isPasswordPending && !session.isCurrent) {
             C9289s sVar = new C9289s(mo4347s());
             this.f8017v0 = sVar;
             sVar.setThemedTextColor(this);
-            this.f8017v0.m9632D1(C1357a0.m37541i(49.0f), true);
+            this.f8017v0.m9631D1(C1357a0.m37544i(49.0f), true);
             this.f8017v0.setTitle(R.string.SessionDetails);
-            this.f8017v0.setSubtitle(C4403w.m27918X0(this.f8019x0.lastActiveDate, TimeUnit.SECONDS, this.f30167b.m2898D4(), TimeUnit.MILLISECONDS, true, 60, R.string.session_LastActive, false));
+            this.f8017v0.setSubtitle(C4403w.m27920X0(this.f8019x0.lastActiveDate, TimeUnit.SECONDS, this.f30170b.m2898D4(), TimeUnit.MILLISECONDS, true, 60, R.string.session_LastActive, false));
         }
-        m34628df(R.drawable.baseline_check_24);
-        m34623jf(true);
+        m34631df(R.drawable.baseline_check_24);
+        m34626jf(true);
         this.f8018w0 = new C2331a(this);
         ArrayList arrayList = new ArrayList();
         arrayList.add(new C2964ra(37, (int) R.id.btn_sessionApp, (int) R.drawable.baseline_apps_24, (int) R.string.SessionApp, false));
         arrayList.add(new C2964ra(11));
         arrayList.add(new C2964ra(37, (int) R.id.btn_sessionDevice, (int) R.drawable.baseline_devices_other_24, (int) R.string.SessionDevice, false));
         arrayList.add(new C2964ra(11));
-        int a = C4864e.m24930a(this.f8019x0);
+        int a = C4864e.m24931a(this.f8019x0);
         arrayList.add(new C2964ra(89, (int) R.id.btn_sessionPlatform, a, (CharSequence) (this.f8019x0.platform + " " + this.f8019x0.systemVersion).trim(), false));
         arrayList.add(new C2964ra(11));
         arrayList.add(new C2964ra(89, (int) R.id.btn_sessionCountry, (int) R.drawable.baseline_location_on_24, (CharSequence) this.f8019x0.country, false));
         arrayList.add(new C2964ra(11));
-        arrayList.add(new C2964ra(89, (int) R.id.btn_sessionIp, (int) R.drawable.baseline_router_24, (CharSequence) this.f8019x0.f25421ip, false));
+        arrayList.add(new C2964ra(89, (int) R.id.btn_sessionIp, (int) R.drawable.baseline_router_24, (CharSequence) this.f8019x0.f25424ip, false));
         arrayList.add(new C2964ra(3));
         if (!this.f8019x0.isPasswordPending) {
             arrayList.add(new C2964ra(8, 0, 0, R.string.SessionAccepts));
@@ -197,42 +197,42 @@ public class View$OnClickListenerC2330e8 extends AbstractC2420g6<C2332b> impleme
         }
         arrayList.add(new C2964ra(2));
         TimeUnit timeUnit = TimeUnit.SECONDS;
-        arrayList.add(new C2964ra(89, (int) R.id.btn_sessionFirstLogin, (int) R.drawable.baseline_exit_to_app_24, (CharSequence) C4403w.m27805y1(this.f8019x0.logInDate, timeUnit), false));
+        arrayList.add(new C2964ra(89, (int) R.id.btn_sessionFirstLogin, (int) R.drawable.baseline_exit_to_app_24, (CharSequence) C4403w.m27807y1(this.f8019x0.logInDate, timeUnit), false));
         TdApi.Session session2 = this.f8019x0;
         if (!session2.isPasswordPending && !session2.isCurrent) {
             arrayList.add(new C2964ra(11));
-            arrayList.add(new C2964ra(89, (int) R.id.btn_sessionLastLogin, (int) R.drawable.baseline_history_24, (CharSequence) C4403w.m27805y1(this.f8019x0.lastActiveDate, timeUnit), false));
+            arrayList.add(new C2964ra(89, (int) R.id.btn_sessionLastLogin, (int) R.drawable.baseline_history_24, (CharSequence) C4403w.m27807y1(this.f8019x0.lastActiveDate, timeUnit), false));
         }
         arrayList.add(new C2964ra(3));
         arrayList.add(new C2964ra(2));
         TdApi.Session session3 = this.f8019x0;
         boolean z = session3.isPasswordPending;
-        arrayList.add(new C2964ra((z || session3.isCurrent) ? 4 : 89, R.id.btn_sessionLogout, R.drawable.baseline_dangerous_24, session3.isCurrent ? R.string.LogOut : z ? R.string.TerminateIncompleteSession : R.string.TerminateSession).m32843d0(R.id.theme_color_textNegative));
+        arrayList.add(new C2964ra((z || session3.isCurrent) ? 4 : 89, R.id.btn_sessionLogout, R.drawable.baseline_dangerous_24, session3.isCurrent ? R.string.LogOut : z ? R.string.TerminateIncompleteSession : R.string.TerminateSession).m32846d0(R.id.theme_color_textNegative));
         arrayList.add(new C2964ra(3));
-        this.f8018w0.m34116x2(arrayList, false);
+        this.f8018w0.m34119x2(arrayList, false);
         recyclerView.setOverScrollMode(2);
         recyclerView.setAdapter(this.f8018w0);
-        m35084sf();
+        m35087sf();
     }
 
     @Override
-    public boolean mo30696af() {
-        m34626ff(true);
+    public boolean mo30698af() {
+        m34629ff(true);
         ArrayList arrayList = new ArrayList();
         boolean z = this.f8020y0;
         TdApi.Session session = this.f8019x0;
         if (z != session.canAcceptSecretChats) {
-            arrayList.add(new TdApi.ToggleSessionCanAcceptSecretChats(session.f25420id, z));
+            arrayList.add(new TdApi.ToggleSessionCanAcceptSecretChats(session.f25423id, z));
         }
         boolean z2 = this.f8021z0;
         TdApi.Session session2 = this.f8019x0;
         if (z2 != session2.canAcceptCalls) {
-            arrayList.add(new TdApi.ToggleSessionCanAcceptCalls(session2.f25420id, z2));
+            arrayList.add(new TdApi.ToggleSessionCanAcceptCalls(session2.f25423id, z2));
         }
-        this.f30167b.m2311ob((TdApi.Function[]) arrayList.toArray(new TdApi.Function[0]), C2288d8.f7922a, new Runnable() {
+        this.f30170b.m2311ob((TdApi.Function[]) arrayList.toArray(new TdApi.Function[0]), C2288d8.f7922a, new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2330e8.this.m35079xf();
+                View$OnClickListenerC2330e8.this.m35082xf();
             }
         });
         return true;
@@ -240,7 +240,7 @@ public class View$OnClickListenerC2330e8 extends AbstractC2420g6<C2332b> impleme
 
     @Override
     public boolean mo404jc(boolean z) {
-        if (!m35083tf()) {
+        if (!m35086tf()) {
             return false;
         }
         m9179qe(null);
@@ -251,54 +251,54 @@ public class View$OnClickListenerC2330e8 extends AbstractC2420g6<C2332b> impleme
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_sessionAcceptCalls:
-                this.f8021z0 = this.f8018w0.m34201W2(view);
-                this.f8018w0.m34130s3(R.id.btn_sessionAcceptCalls);
-                m35084sf();
+                this.f8021z0 = this.f8018w0.m34204W2(view);
+                this.f8018w0.m34133s3(R.id.btn_sessionAcceptCalls);
+                m35087sf();
                 return;
             case R.id.btn_sessionAcceptSecretChats:
-                this.f8020y0 = this.f8018w0.m34201W2(view);
-                this.f8018w0.m34130s3(R.id.btn_sessionAcceptSecretChats);
-                m35084sf();
+                this.f8020y0 = this.f8018w0.m34204W2(view);
+                this.f8018w0.m34133s3(R.id.btn_sessionAcceptSecretChats);
+                m35087sf();
                 return;
             case R.id.btn_sessionApp:
-                C1379j0.m37325i(this.f8019x0.applicationName + " " + this.f8019x0.applicationVersion, R.string.CopiedText);
+                C1379j0.m37328i(this.f8019x0.applicationName + " " + this.f8019x0.applicationVersion, R.string.CopiedText);
                 return;
             case R.id.btn_sessionCountry:
             case R.id.btn_sessionFirstLogin:
             case R.id.btn_sessionIp:
             case R.id.btn_sessionLastLogin:
             case R.id.btn_sessionPlatform:
-                C1379j0.m37325i((CharSequence) view.getTag(), R.string.CopiedText);
+                C1379j0.m37328i((CharSequence) view.getTag(), R.string.CopiedText);
                 return;
             case R.id.btn_sessionDevice:
-                C1379j0.m37325i(this.f8019x0.deviceModel, R.string.CopiedText);
+                C1379j0.m37328i(this.f8019x0.deviceModel, R.string.CopiedText);
                 return;
             case R.id.btn_sessionLogout:
                 TdApi.Session session = this.f8019x0;
                 if (session.isCurrent) {
-                    m9291ac(new View$OnClickListenerC2639kv(this.f30165a, this.f30167b));
+                    m9291ac(new View$OnClickListenerC2639kv(this.f30168a, this.f30170b));
                     return;
                 }
                 int[] iArr = {R.id.btn_terminateSession, R.id.btn_cancel};
                 String[] strArr = new String[2];
-                strArr[0] = C4403w.m27869i1(session.isPasswordPending ? R.string.TerminateIncompleteSession : R.string.TerminateSession);
-                strArr[1] = C4403w.m27869i1(R.string.Cancel);
+                strArr[0] = C4403w.m27871i1(session.isPasswordPending ? R.string.TerminateIncompleteSession : R.string.TerminateSession);
+                strArr[1] = C4403w.m27871i1(R.string.Cancel);
                 m9261ee(null, iArr, strArr, new int[]{2, 1}, new int[]{R.drawable.baseline_dangerous_24, R.drawable.baseline_cancel_24}, new AbstractC5117h0() {
                     @Override
                     public final boolean mo493A3(View view2, int i) {
                         boolean uf;
-                        uf = View$OnClickListenerC2330e8.this.m35082uf(view2, i);
+                        uf = View$OnClickListenerC2330e8.this.m35085uf(view2, i);
                         return uf;
                     }
 
                     @Override
                     public boolean mo492Q() {
-                        return C5115g0.m23935a(this);
+                        return C5115g0.m23936a(this);
                     }
 
                     @Override
                     public Object mo491b2(int i) {
-                        return C5115g0.m23934b(this, i);
+                        return C5115g0.m23935b(this, i);
                     }
                 });
                 return;
@@ -307,11 +307,11 @@ public class View$OnClickListenerC2330e8 extends AbstractC2420g6<C2332b> impleme
         }
     }
 
-    public final void m35084sf() {
-        mo31397hf(m35083tf());
+    public final void m35087sf() {
+        mo31399hf(m35086tf());
     }
 
-    public final boolean m35083tf() {
+    public final boolean m35086tf() {
         boolean z = this.f8020y0;
         TdApi.Session session = this.f8019x0;
         return (z == session.canAcceptSecretChats && this.f8021z0 == session.canAcceptCalls) ? false : true;
@@ -319,10 +319,10 @@ public class View$OnClickListenerC2330e8 extends AbstractC2420g6<C2332b> impleme
 
     @Override
     public boolean mo9134we() {
-        return !m35083tf();
+        return !m35086tf();
     }
 
-    public void m35078yf(C2332b bVar) {
+    public void m35081yf(C2332b bVar) {
         super.m9476Ad(bVar);
         TdApi.Session session = bVar.f8023a;
         this.f8019x0 = session;

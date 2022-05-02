@@ -20,15 +20,15 @@ import p342y5.C10411s;
 import p342y5.C10418z;
 
 public class C9006c0 implements Closeable {
-    public final URL f28918a;
-    public AbstractC6775l<Bitmap> f28919b;
-    public volatile InputStream f28920c;
+    public final URL f28921a;
+    public AbstractC6775l<Bitmap> f28922b;
+    public volatile InputStream f28923c;
 
     public C9006c0(URL url) {
-        this.f28918a = url;
+        this.f28921a = url;
     }
 
-    public static C9006c0 m10713y0(String str) {
+    public static C9006c0 m10712y0(String str) {
         if (TextUtils.isEmpty(str)) {
             return null;
         }
@@ -41,17 +41,17 @@ public class C9006c0 implements Closeable {
         }
     }
 
-    public void m10716A0(Executor executor) {
-        this.f28919b = C6781o.m19052c(executor, new Callable(this) {
-            public final C9006c0 f28914a;
+    public void m10715A0(Executor executor) {
+        this.f28922b = C6781o.m19053c(executor, new Callable(this) {
+            public final C9006c0 f28917a;
 
             {
-                this.f28914a = this;
+                this.f28917a = this;
             }
 
             @Override
             public Object call() {
-                return this.f28914a.m10715m();
+                return this.f28917a.m10714m();
             }
         });
     }
@@ -59,23 +59,23 @@ public class C9006c0 implements Closeable {
     @Override
     public void close() {
         try {
-            C10411s.m5157a(this.f28920c);
+            C10411s.m5157a(this.f28923c);
         } catch (NullPointerException e) {
             Log.e("FirebaseMessaging", "Failed to close the image download stream.", e);
         }
     }
 
-    public Bitmap m10715m() {
-        String valueOf = String.valueOf(this.f28918a);
+    public Bitmap m10714m() {
+        String valueOf = String.valueOf(this.f28921a);
         StringBuilder sb2 = new StringBuilder(valueOf.length() + 22);
         sb2.append("Starting download of: ");
         sb2.append(valueOf);
         Log.i("FirebaseMessaging", sb2.toString());
-        byte[] t = m10714t();
+        byte[] t = m10713t();
         Bitmap decodeByteArray = BitmapFactory.decodeByteArray(t, 0, t.length);
         if (decodeByteArray != null) {
             if (Log.isLoggable("FirebaseMessaging", 3)) {
-                String valueOf2 = String.valueOf(this.f28918a);
+                String valueOf2 = String.valueOf(this.f28921a);
                 StringBuilder sb3 = new StringBuilder(valueOf2.length() + 31);
                 sb3.append("Successfully downloaded image: ");
                 sb3.append(valueOf2);
@@ -83,25 +83,25 @@ public class C9006c0 implements Closeable {
             }
             return decodeByteArray;
         }
-        String valueOf3 = String.valueOf(this.f28918a);
+        String valueOf3 = String.valueOf(this.f28921a);
         StringBuilder sb4 = new StringBuilder(valueOf3.length() + 24);
         sb4.append("Failed to decode image: ");
         sb4.append(valueOf3);
         throw new IOException(sb4.toString());
     }
 
-    public final byte[] m10714t() {
-        URLConnection openConnection = this.f28918a.openConnection();
+    public final byte[] m10713t() {
+        URLConnection openConnection = this.f28921a.openConnection();
         if (openConnection.getContentLength() <= 1048576) {
             InputStream inputStream = openConnection.getInputStream();
             try {
-                this.f28920c = inputStream;
+                this.f28923c = inputStream;
                 byte[] a = C10410r.m5160a(C10410r.m5159b(inputStream, 1048577L));
                 if (inputStream != null) {
                     inputStream.close();
                 }
                 if (Log.isLoggable("FirebaseMessaging", 2)) {
-                    String valueOf = String.valueOf(this.f28918a);
+                    String valueOf = String.valueOf(this.f28921a);
                     StringBuilder sb2 = new StringBuilder(valueOf.length() + 34);
                     sb2.append("Downloaded ");
                     sb2.append(a.length);
@@ -128,7 +128,7 @@ public class C9006c0 implements Closeable {
         }
     }
 
-    public AbstractC6775l<Bitmap> m10712z0() {
-        return (AbstractC6775l) C6378r.m20506k(this.f28919b);
+    public AbstractC6775l<Bitmap> m10711z0() {
+        return (AbstractC6775l) C6378r.m20507k(this.f28922b);
     }
 }

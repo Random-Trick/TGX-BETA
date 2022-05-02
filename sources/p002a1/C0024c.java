@@ -16,11 +16,11 @@ public class C0024c implements Spannable {
     public final C0025a f57b;
     public final PrecomputedText f58c;
 
-    public C0025a m42572a() {
+    public C0025a m42575a() {
         return this.f57b;
     }
 
-    public PrecomputedText m42571b() {
+    public PrecomputedText m42574b() {
         Spannable spannable = this.f56a;
         if (spannable instanceof PrecomputedText) {
             return (PrecomputedText) spannable;
@@ -128,21 +128,21 @@ public class C0024c implements Spannable {
                 }
             }
 
-            public C0025a m42565a() {
+            public C0025a m42568a() {
                 return new C0025a(this.f64a, this.f65b, this.f66c, this.f67d);
             }
 
-            public C0026a m42564b(int i) {
+            public C0026a m42567b(int i) {
                 this.f66c = i;
                 return this;
             }
 
-            public C0026a m42563c(int i) {
+            public C0026a m42566c(int i) {
                 this.f67d = i;
                 return this;
             }
 
-            public C0026a m42562d(TextDirectionHeuristic textDirectionHeuristic) {
+            public C0026a m42565d(TextDirectionHeuristic textDirectionHeuristic) {
                 this.f65b = textDirectionHeuristic;
                 return this;
             }
@@ -160,37 +160,37 @@ public class C0024c implements Spannable {
             this.f62d = i2;
         }
 
-        public boolean m42570a(C0025a aVar) {
+        public boolean m42573a(C0025a aVar) {
             int i = Build.VERSION.SDK_INT;
-            if ((i >= 23 && (this.f61c != aVar.m42569b() || this.f62d != aVar.m42568c())) || this.f59a.getTextSize() != aVar.m42566e().getTextSize() || this.f59a.getTextScaleX() != aVar.m42566e().getTextScaleX() || this.f59a.getTextSkewX() != aVar.m42566e().getTextSkewX()) {
+            if ((i >= 23 && (this.f61c != aVar.m42572b() || this.f62d != aVar.m42571c())) || this.f59a.getTextSize() != aVar.m42569e().getTextSize() || this.f59a.getTextScaleX() != aVar.m42569e().getTextScaleX() || this.f59a.getTextSkewX() != aVar.m42569e().getTextSkewX()) {
                 return false;
             }
-            if ((i >= 21 && (this.f59a.getLetterSpacing() != aVar.m42566e().getLetterSpacing() || !TextUtils.equals(this.f59a.getFontFeatureSettings(), aVar.m42566e().getFontFeatureSettings()))) || this.f59a.getFlags() != aVar.m42566e().getFlags()) {
+            if ((i >= 21 && (this.f59a.getLetterSpacing() != aVar.m42569e().getLetterSpacing() || !TextUtils.equals(this.f59a.getFontFeatureSettings(), aVar.m42569e().getFontFeatureSettings()))) || this.f59a.getFlags() != aVar.m42569e().getFlags()) {
                 return false;
             }
             if (i >= 24) {
-                if (!this.f59a.getTextLocales().equals(aVar.m42566e().getTextLocales())) {
+                if (!this.f59a.getTextLocales().equals(aVar.m42569e().getTextLocales())) {
                     return false;
                 }
-            } else if (i >= 17 && !this.f59a.getTextLocale().equals(aVar.m42566e().getTextLocale())) {
+            } else if (i >= 17 && !this.f59a.getTextLocale().equals(aVar.m42569e().getTextLocale())) {
                 return false;
             }
-            return this.f59a.getTypeface() == null ? aVar.m42566e().getTypeface() == null : this.f59a.getTypeface().equals(aVar.m42566e().getTypeface());
+            return this.f59a.getTypeface() == null ? aVar.m42569e().getTypeface() == null : this.f59a.getTypeface().equals(aVar.m42569e().getTypeface());
         }
 
-        public int m42569b() {
+        public int m42572b() {
             return this.f61c;
         }
 
-        public int m42568c() {
+        public int m42571c() {
             return this.f62d;
         }
 
-        public TextDirectionHeuristic m42567d() {
+        public TextDirectionHeuristic m42570d() {
             return this.f60b;
         }
 
-        public TextPaint m42566e() {
+        public TextPaint m42569e() {
             return this.f59a;
         }
 
@@ -202,27 +202,27 @@ public class C0024c implements Spannable {
                 return false;
             }
             C0025a aVar = (C0025a) obj;
-            if (!m42570a(aVar)) {
+            if (!m42573a(aVar)) {
                 return false;
             }
-            return Build.VERSION.SDK_INT < 18 || this.f60b == aVar.m42567d();
+            return Build.VERSION.SDK_INT < 18 || this.f60b == aVar.m42570d();
         }
 
         public int hashCode() {
             int i = Build.VERSION.SDK_INT;
             if (i >= 24) {
-                return C1128d.m38332b(Float.valueOf(this.f59a.getTextSize()), Float.valueOf(this.f59a.getTextScaleX()), Float.valueOf(this.f59a.getTextSkewX()), Float.valueOf(this.f59a.getLetterSpacing()), Integer.valueOf(this.f59a.getFlags()), this.f59a.getTextLocales(), this.f59a.getTypeface(), Boolean.valueOf(this.f59a.isElegantTextHeight()), this.f60b, Integer.valueOf(this.f61c), Integer.valueOf(this.f62d));
+                return C1128d.m38335b(Float.valueOf(this.f59a.getTextSize()), Float.valueOf(this.f59a.getTextScaleX()), Float.valueOf(this.f59a.getTextSkewX()), Float.valueOf(this.f59a.getLetterSpacing()), Integer.valueOf(this.f59a.getFlags()), this.f59a.getTextLocales(), this.f59a.getTypeface(), Boolean.valueOf(this.f59a.isElegantTextHeight()), this.f60b, Integer.valueOf(this.f61c), Integer.valueOf(this.f62d));
             }
             if (i >= 21) {
-                return C1128d.m38332b(Float.valueOf(this.f59a.getTextSize()), Float.valueOf(this.f59a.getTextScaleX()), Float.valueOf(this.f59a.getTextSkewX()), Float.valueOf(this.f59a.getLetterSpacing()), Integer.valueOf(this.f59a.getFlags()), this.f59a.getTextLocale(), this.f59a.getTypeface(), Boolean.valueOf(this.f59a.isElegantTextHeight()), this.f60b, Integer.valueOf(this.f61c), Integer.valueOf(this.f62d));
+                return C1128d.m38335b(Float.valueOf(this.f59a.getTextSize()), Float.valueOf(this.f59a.getTextScaleX()), Float.valueOf(this.f59a.getTextSkewX()), Float.valueOf(this.f59a.getLetterSpacing()), Integer.valueOf(this.f59a.getFlags()), this.f59a.getTextLocale(), this.f59a.getTypeface(), Boolean.valueOf(this.f59a.isElegantTextHeight()), this.f60b, Integer.valueOf(this.f61c), Integer.valueOf(this.f62d));
             }
             if (i >= 18) {
-                return C1128d.m38332b(Float.valueOf(this.f59a.getTextSize()), Float.valueOf(this.f59a.getTextScaleX()), Float.valueOf(this.f59a.getTextSkewX()), Integer.valueOf(this.f59a.getFlags()), this.f59a.getTextLocale(), this.f59a.getTypeface(), this.f60b, Integer.valueOf(this.f61c), Integer.valueOf(this.f62d));
+                return C1128d.m38335b(Float.valueOf(this.f59a.getTextSize()), Float.valueOf(this.f59a.getTextScaleX()), Float.valueOf(this.f59a.getTextSkewX()), Integer.valueOf(this.f59a.getFlags()), this.f59a.getTextLocale(), this.f59a.getTypeface(), this.f60b, Integer.valueOf(this.f61c), Integer.valueOf(this.f62d));
             }
             if (i >= 17) {
-                return C1128d.m38332b(Float.valueOf(this.f59a.getTextSize()), Float.valueOf(this.f59a.getTextScaleX()), Float.valueOf(this.f59a.getTextSkewX()), Integer.valueOf(this.f59a.getFlags()), this.f59a.getTextLocale(), this.f59a.getTypeface(), this.f60b, Integer.valueOf(this.f61c), Integer.valueOf(this.f62d));
+                return C1128d.m38335b(Float.valueOf(this.f59a.getTextSize()), Float.valueOf(this.f59a.getTextScaleX()), Float.valueOf(this.f59a.getTextSkewX()), Integer.valueOf(this.f59a.getFlags()), this.f59a.getTextLocale(), this.f59a.getTypeface(), this.f60b, Integer.valueOf(this.f61c), Integer.valueOf(this.f62d));
             }
-            return C1128d.m38332b(Float.valueOf(this.f59a.getTextSize()), Float.valueOf(this.f59a.getTextScaleX()), Float.valueOf(this.f59a.getTextSkewX()), Integer.valueOf(this.f59a.getFlags()), this.f59a.getTypeface(), this.f60b, Integer.valueOf(this.f61c), Integer.valueOf(this.f62d));
+            return C1128d.m38335b(Float.valueOf(this.f59a.getTextSize()), Float.valueOf(this.f59a.getTextScaleX()), Float.valueOf(this.f59a.getTextSkewX()), Integer.valueOf(this.f59a.getFlags()), this.f59a.getTypeface(), this.f60b, Integer.valueOf(this.f61c), Integer.valueOf(this.f62d));
         }
 
         public String toString() {

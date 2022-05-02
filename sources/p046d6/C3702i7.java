@@ -11,9 +11,9 @@ public class C3702i7<E> extends C3813u7<E> {
     public C3702i7(int i) {
     }
 
-    public final C3702i7<E> m29824a(E e) {
+    public final C3702i7<E> m29826a(E e) {
         Objects.requireNonNull(e);
-        m29823b(this.f12590b + 1);
+        m29825b(this.f12590b + 1);
         Object[] objArr = this.f12589a;
         int i = this.f12590b;
         this.f12590b = i + 1;
@@ -21,7 +21,7 @@ public class C3702i7<E> extends C3813u7<E> {
         return this;
     }
 
-    public final void m29823b(int i) {
+    public final void m29825b(int i) {
         Object[] objArr = this.f12589a;
         int length = objArr.length;
         if (length < i) {

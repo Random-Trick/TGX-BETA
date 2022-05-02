@@ -50,26 +50,26 @@ public class C0274o extends View {
     public float f866y0;
     public float f867z0;
     public int f824C0 = -1;
-    public Drawable f841b = C1362c.m37482g(getResources(), R.drawable.baseline_picture_in_picture_24);
-    public Drawable f843c = C1362c.m37482g(getResources(), R.drawable.baseline_fullscreen_24);
-    public Drawable f828M = C1362c.m37482g(getResources(), R.drawable.baseline_fullscreen_exit_24);
-    public Drawable f829N = C1362c.m37482g(getResources(), R.drawable.baseline_play_circle_outline_48);
-    public int f830O = C1357a0.m37541i(62.0f);
-    public int f831P = C1357a0.m37541i(103.0f);
-    public int f832Q = C1357a0.m37541i(19.0f);
-    public int f833R = C1357a0.m37541i(4.0f);
-    public int f836U = C1357a0.m37541i(6.0f);
-    public int f837V = C1357a0.m37541i(3.0f);
-    public int f838W = C1357a0.m37541i(11.0f);
-    public int f840a0 = C1357a0.m37541i(17.0f);
-    public int f842b0 = C1357a0.m37541i(22.0f);
-    public int f844c0 = C1357a0.m37541i(14.0f);
-    public int f845d0 = C1357a0.m37541i(19.0f);
-    public int f849h0 = C1357a0.m37541i(48.0f);
-    public int f846e0 = C1357a0.m37541i(31.0f);
-    public int f847f0 = C1357a0.m37541i(72.0f);
-    public int f848g0 = C1357a0.m37541i(17.0f);
-    public int f850i0 = C1357a0.m37541i(46.0f);
+    public Drawable f841b = C1362c.m37485g(getResources(), R.drawable.baseline_picture_in_picture_24);
+    public Drawable f843c = C1362c.m37485g(getResources(), R.drawable.baseline_fullscreen_24);
+    public Drawable f828M = C1362c.m37485g(getResources(), R.drawable.baseline_fullscreen_exit_24);
+    public Drawable f829N = C1362c.m37485g(getResources(), R.drawable.baseline_play_circle_outline_48);
+    public int f830O = C1357a0.m37544i(62.0f);
+    public int f831P = C1357a0.m37544i(103.0f);
+    public int f832Q = C1357a0.m37544i(19.0f);
+    public int f833R = C1357a0.m37544i(4.0f);
+    public int f836U = C1357a0.m37544i(6.0f);
+    public int f837V = C1357a0.m37544i(3.0f);
+    public int f838W = C1357a0.m37544i(11.0f);
+    public int f840a0 = C1357a0.m37544i(17.0f);
+    public int f842b0 = C1357a0.m37544i(22.0f);
+    public int f844c0 = C1357a0.m37544i(14.0f);
+    public int f845d0 = C1357a0.m37544i(19.0f);
+    public int f849h0 = C1357a0.m37544i(48.0f);
+    public int f846e0 = C1357a0.m37544i(31.0f);
+    public int f847f0 = C1357a0.m37544i(72.0f);
+    public int f848g0 = C1357a0.m37544i(17.0f);
+    public int f850i0 = C1357a0.m37544i(46.0f);
     public float f858q0 = 1.0f;
 
     public class C0275a extends AnimatorListenerAdapter {
@@ -84,36 +84,36 @@ public class C0274o extends View {
             C0274o.this.setCurrentSeek(this.f868a);
             C0274o.this.f824C0 = -1;
             if (C0274o.this.f822A0 != null) {
-                C0274o.this.f822A0.mo41892h(this.f868a);
+                C0274o.this.f822A0.mo41895h(this.f868a);
             }
         }
     }
 
     public interface AbstractC0276b {
-        void mo41914F0();
+        void mo41917F0();
 
-        void mo41911H();
+        void mo41914H();
 
-        void mo41907T(boolean z);
+        void mo41910T(boolean z);
 
-        void mo41899a();
+        void mo41902a();
 
-        void mo41897b0();
+        void mo41900b0();
 
-        void mo41895d1();
+        void mo41898d1();
 
-        void mo41892h(int i);
+        void mo41895h(int i);
 
-        void mo41890i();
+        void mo41893i();
 
-        void mo41889q1(boolean z);
+        void mo41892q1(boolean z);
 
-        boolean mo41888x0();
+        boolean mo41891x0();
     }
 
     public C0274o(Context context) {
         super(context);
-        int i = C1357a0.m37541i(1.5f);
+        int i = C1357a0.m37544i(1.5f);
         this.f834S = i;
         this.f835T = this.f833R - i;
         RectF rectF = new RectF();
@@ -129,50 +129,50 @@ public class C0274o extends View {
         paint2.setShader(linearGradient2);
     }
 
-    public void m41939p(float f, ValueAnimator valueAnimator) {
-        setPause(f - (C2057b.m35735a(valueAnimator) * f));
+    public void m41942p(float f, ValueAnimator valueAnimator) {
+        setPause(f - (C2057b.m35738a(valueAnimator) * f));
     }
 
-    public void m41938q(float f, float f2, ValueAnimator valueAnimator) {
-        setPause(f + (f2 * C2057b.m35735a(valueAnimator)));
+    public void m41941q(float f, float f2, ValueAnimator valueAnimator) {
+        setPause(f + (f2 * C2057b.m35738a(valueAnimator)));
     }
 
-    public void m41937r(float f, ValueAnimator valueAnimator) {
-        setMinimize(f - (C2057b.m35735a(valueAnimator) * f));
+    public void m41940r(float f, ValueAnimator valueAnimator) {
+        setMinimize(f - (C2057b.m35738a(valueAnimator) * f));
     }
 
-    public void m41936s(float f, float f2, ValueAnimator valueAnimator) {
-        setMinimize(f + (f2 * C2057b.m35735a(valueAnimator)));
+    public void m41939s(float f, float f2, ValueAnimator valueAnimator) {
+        setMinimize(f + (f2 * C2057b.m35738a(valueAnimator)));
     }
 
-    public void m41935t(float f, float f2, ValueAnimator valueAnimator) {
-        setSeekFactor(f + (f2 * C2057b.m35735a(valueAnimator)));
+    public void m41938t(float f, float f2, ValueAnimator valueAnimator) {
+        setSeekFactor(f + (f2 * C2057b.m35738a(valueAnimator)));
     }
 
-    public void m41934u(float f, ValueAnimator valueAnimator) {
-        setSeekFactor(f - (C2057b.m35735a(valueAnimator) * f));
+    public void m41937u(float f, ValueAnimator valueAnimator) {
+        setSeekFactor(f - (C2057b.m35738a(valueAnimator) * f));
     }
 
-    public void m41958A(int i, int i2, int i3) {
+    public void m41961A(int i, int i2, int i3) {
         this.f854m0 = i;
         this.f855n0 = i2;
         this.f856o0 = i3;
-        m41940o(true);
+        m41943o(true);
     }
 
-    public void m41957B(boolean z) {
+    public void m41960B(boolean z) {
         if (z) {
             this.f857p0 &= -3;
         } else {
             this.f857p0 |= 2;
         }
         final float minimize = getMinimize();
-        ValueAnimator b = C2057b.m35734b();
+        ValueAnimator b = C2057b.m35737b();
         if (z) {
             b.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                 @Override
                 public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                    C0274o.this.m41937r(minimize, valueAnimator);
+                    C0274o.this.m41940r(minimize, valueAnimator);
                 }
             });
         } else {
@@ -180,7 +180,7 @@ public class C0274o extends View {
             b.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                 @Override
                 public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                    C0274o.this.m41936s(minimize, f, valueAnimator);
+                    C0274o.this.m41939s(minimize, f, valueAnimator);
                 }
             });
         }
@@ -189,18 +189,18 @@ public class C0274o extends View {
         b.start();
         AbstractC0276b bVar = this.f822A0;
         if (bVar != null) {
-            bVar.mo41907T(z);
+            bVar.mo41910T(z);
         }
     }
 
-    public final void m41956C() {
+    public final void m41959C() {
         final float seekFactor = getSeekFactor();
         final float f = 1.0f - seekFactor;
-        ValueAnimator b = C2057b.m35734b();
+        ValueAnimator b = C2057b.m35737b();
         b.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                C0274o.this.m41935t(seekFactor, f, valueAnimator);
+                C0274o.this.m41938t(seekFactor, f, valueAnimator);
             }
         });
         b.setDuration(160L);
@@ -208,16 +208,16 @@ public class C0274o extends View {
         b.start();
     }
 
-    public final void m41955D(boolean z) {
+    public final void m41958D(boolean z) {
         if (z) {
             int i = this.f824C0;
             int i2 = this.f830O;
             final float seekFactor = getSeekFactor();
-            ValueAnimator b = C2057b.m35734b();
+            ValueAnimator b = C2057b.m35737b();
             b.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                 @Override
                 public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                    C0274o.this.m41934u(seekFactor, valueAnimator);
+                    C0274o.this.m41937u(seekFactor, valueAnimator);
                 }
             });
             b.setDuration(160L);
@@ -227,7 +227,7 @@ public class C0274o extends View {
             return;
         }
         this.f824C0 = -1;
-        m41940o(false);
+        m41943o(false);
     }
 
     public float getFactor() {
@@ -246,7 +246,7 @@ public class C0274o extends View {
         return this.f867z0;
     }
 
-    public final void m41946i() {
+    public final void m41949i() {
         String str = this.f865x0;
         int i = 0;
         int length = str == null ? 0 : str.length();
@@ -255,45 +255,45 @@ public class C0274o extends View {
             i = str2.length();
         }
         int i2 = this.f861t0 / 1000;
-        this.f865x0 = C0264f.m41974a(i2);
-        this.f864w0 = C0264f.m41974a((this.f860s0 / 1000) - i2);
+        this.f865x0 = C0264f.m41977a(i2);
+        this.f864w0 = C0264f.m41977a((this.f860s0 / 1000) - i2);
         if (this.f865x0.length() != length) {
-            this.f863v0 = (int) C7389v0.m16680T1(this.f865x0, C1410y.m37048b0(13.0f));
+            this.f863v0 = (int) C7389v0.m16680T1(this.f865x0, C1410y.m37051b0(13.0f));
         }
         if (this.f864w0.length() != i) {
-            this.f862u0 = (int) C7389v0.m16680T1(this.f864w0, C1410y.m37048b0(13.0f));
+            this.f862u0 = (int) C7389v0.m16680T1(this.f864w0, C1410y.m37051b0(13.0f));
         }
     }
 
-    public final int m41945j(float f, float f2) {
+    public final int m41948j(float f, float f2) {
         int max = (int) ((f - this.f825D0) * (((Math.max(Math.min(this.f855n0 - this.f850i0, f2), 0.0f) / (this.f855n0 - this.f850i0)) * 0.75f) + 0.25f));
         this.f825D0 = f;
         return max;
     }
 
-    public final void m41944k(Canvas canvas) {
+    public final void m41947k(Canvas canvas) {
         Drawable drawable = (this.f857p0 & 1) != 0 ? this.f828M : this.f843c;
-        Paint W = C1410y.m37055W(-1);
+        Paint W = C1410y.m37058W(-1);
         float f = this.f859r0;
         if (f == 0.0f) {
             if (this.f839a) {
                 Drawable drawable2 = this.f841b;
-                C1362c.m37487b(canvas, drawable2, (this.f854m0 - this.f840a0) - drawable2.getMinimumWidth(), this.f838W, W);
+                C1362c.m37490b(canvas, drawable2, (this.f854m0 - this.f840a0) - drawable2.getMinimumWidth(), this.f838W, W);
             }
             int i = this.f854m0 - this.f842b0;
             int i2 = this.f845d0;
-            C1362c.m37487b(canvas, drawable, i - i2, (this.f855n0 - this.f844c0) - i2, W);
+            C1362c.m37490b(canvas, drawable, i - i2, (this.f855n0 - this.f844c0) - i2, W);
         } else {
             if (this.f839a) {
                 W.setAlpha((int) ((1.0f - f) * 255.0f));
                 Drawable drawable3 = this.f841b;
-                C1362c.m37487b(canvas, drawable3, (this.f854m0 - this.f840a0) - drawable3.getMinimumWidth(), this.f838W, W);
+                C1362c.m37490b(canvas, drawable3, (this.f854m0 - this.f840a0) - drawable3.getMinimumWidth(), this.f838W, W);
                 W.setAlpha(255);
             }
             int i3 = this.f854m0 - this.f842b0;
             int i4 = this.f845d0;
             float f2 = this.f859r0;
-            C1362c.m37487b(canvas, drawable, (i3 - i4) + ((int) (this.f831P * f2)), ((this.f855n0 - this.f844c0) - i4) + ((int) ((this.f832Q + this.f835T) * f2)), W);
+            C1362c.m37490b(canvas, drawable, (i3 - i4) + ((int) (this.f831P * f2)), ((this.f855n0 - this.f844c0) - i4) + ((int) ((this.f832Q + this.f835T) * f2)), W);
         }
         float f3 = this.f866y0;
         if (f3 != 0.0f) {
@@ -306,7 +306,7 @@ public class C0274o extends View {
                 W.setAlpha((int) (this.f866y0 * 255.0f));
             }
             Drawable drawable4 = this.f829N;
-            C1362c.m37487b(canvas, drawable4, i5 - ((int) (drawable4.getMinimumWidth() * 0.5f)), i6 - ((int) (this.f829N.getMinimumHeight() * 0.5f)), W);
+            C1362c.m37490b(canvas, drawable4, i5 - ((int) (drawable4.getMinimumWidth() * 0.5f)), i6 - ((int) (this.f829N.getMinimumHeight() * 0.5f)), W);
             if (this.f866y0 != 1.0f) {
                 W.setAlpha(255);
                 canvas.restore();
@@ -314,7 +314,7 @@ public class C0274o extends View {
         }
     }
 
-    public final void m41943l(Canvas canvas) {
+    public final void m41946l(Canvas canvas) {
         float f = this.f859r0;
         if (f != 1.0f) {
             if (f != 0.0f) {
@@ -336,7 +336,7 @@ public class C0274o extends View {
         }
     }
 
-    public final void m41942m(Canvas canvas) {
+    public final void m41945m(Canvas canvas) {
         int i = this.f860s0;
         float f = i == 0 ? 0.0f : this.f861t0 / i;
         int i2 = this.f854m0;
@@ -353,18 +353,18 @@ public class C0274o extends View {
         float f4 = i8;
         float f5 = i4 + i10;
         float f6 = i9;
-        canvas.drawRect(f3, f4, f5, f6, C1410y.m37039g(f821H0.m18909a(f2)));
-        canvas.drawRect(i10, f4, f3, f6, C1410y.m37039g(f820G0.m18909a(this.f859r0)));
+        canvas.drawRect(f3, f4, f5, f6, C1410y.m37042g(f821H0.m18910a(f2)));
+        canvas.drawRect(i10, f4, f3, f6, C1410y.m37042g(f820G0.m18910a(this.f859r0)));
         int i11 = this.f836U + ((int) (this.f837V * this.f867z0));
         int i12 = this.f824C0;
         if (i12 != -1) {
             f3 = i12;
         }
-        canvas.drawCircle(f3, i8 + ((int) (i5 * 0.5f)), (int) (i11 * (1.0f - this.f859r0)), C1410y.m37000z0());
+        canvas.drawCircle(f3, i8 + ((int) (i5 * 0.5f)), (int) (i11 * (1.0f - this.f859r0)), C1410y.m37003z0());
     }
 
-    public final void m41941n(Canvas canvas) {
-        TextPaint c0 = C1410y.m37046c0(13.0f, -1);
+    public final void m41944n(Canvas canvas) {
+        TextPaint c0 = C1410y.m37049c0(13.0f, -1);
         float f = this.f859r0;
         if (f == 0.0f) {
             String str = this.f865x0;
@@ -389,7 +389,7 @@ public class C0274o extends View {
         }
     }
 
-    public final void m41940o(boolean z) {
+    public final void m41943o(boolean z) {
         invalidate(0, (-this.f855n0) - this.f856o0, getMeasuredWidth(), getMeasuredHeight());
     }
 
@@ -402,10 +402,10 @@ public class C0274o extends View {
                 canvas.clipRect(0, 0, this.f854m0, this.f855n0);
             }
             if (!(this.f865x0 == null || this.f864w0 == null)) {
-                m41943l(canvas);
-                m41942m(canvas);
-                m41941n(canvas);
-                m41944k(canvas);
+                m41946l(canvas);
+                m41945m(canvas);
+                m41944n(canvas);
+                m41947k(canvas);
             }
             canvas.restore();
         }
@@ -420,7 +420,7 @@ public class C0274o extends View {
     public void setAlpha(float f) {
         if (getAlpha() != f) {
             super.setAlpha(f);
-            m41940o(true);
+            m41943o(true);
         }
     }
 
@@ -435,21 +435,21 @@ public class C0274o extends View {
     public void setCurrentSeek(int i) {
         if (this.f861t0 != i) {
             this.f861t0 = i;
-            m41946i();
-            m41940o(false);
+            m41949i();
+            m41943o(false);
         }
     }
 
     public void setDuration(int i) {
         this.f860s0 = i;
-        m41946i();
-        m41940o(false);
+        m41949i();
+        m41943o(false);
     }
 
     public void setFactor(float f) {
         if (this.f858q0 != f) {
             this.f858q0 = f;
-            m41940o(true);
+            m41943o(true);
         }
     }
 
@@ -469,13 +469,13 @@ public class C0274o extends View {
                 return;
             }
         }
-        m41940o(true);
+        m41943o(true);
     }
 
     public void setMinimize(float f) {
         if (this.f859r0 != f) {
             this.f859r0 = f;
-            m41940o(true);
+            m41943o(true);
         }
     }
 
@@ -487,7 +487,7 @@ public class C0274o extends View {
             this.f857p0 &= -9;
             this.f859r0 = 0.0f;
         }
-        m41940o(true);
+        m41943o(true);
     }
 
     public void setNeedClip(boolean z) {
@@ -501,35 +501,35 @@ public class C0274o extends View {
     public void setPause(float f) {
         if (this.f866y0 != f) {
             this.f866y0 = f;
-            m41940o(true);
+            m41943o(true);
         }
     }
 
     public void setSeekFactor(float f) {
         if (this.f867z0 != f) {
             this.f867z0 = f;
-            m41940o(false);
+            m41943o(false);
         }
     }
 
-    public final void m41933v(float f, float f2) {
-        this.f824C0 = Math.min(Math.max(this.f824C0 + m41945j(f, f2), this.f830O), this.f854m0 - this.f831P);
-        m41940o(false);
+    public final void m41936v(float f, float f2) {
+        this.f824C0 = Math.min(Math.max(this.f824C0 + m41948j(f, f2), this.f830O), this.f854m0 - this.f831P);
+        m41943o(false);
     }
 
-    public void m41932w() {
-        m41931x(false, true);
+    public void m41935w() {
+        m41934x(false, true);
         setCurrentSeek(0);
         setSeekFactor(0.0f);
         AbstractC0276b bVar = this.f822A0;
         if (bVar != null) {
-            bVar.mo41899a();
+            bVar.mo41902a();
         }
     }
 
-    public void m41931x(boolean z, boolean z2) {
+    public void m41934x(boolean z, boolean z2) {
         AbstractC0276b bVar = this.f822A0;
-        if (bVar == null || z2 || !bVar.mo41888x0()) {
+        if (bVar == null || z2 || !bVar.mo41891x0()) {
             if (z) {
                 int i = this.f857p0;
                 if ((i & 4) == 0) {
@@ -546,12 +546,12 @@ public class C0274o extends View {
                 }
             }
             final float pause = getPause();
-            ValueAnimator b = C2057b.m35734b();
+            ValueAnimator b = C2057b.m35737b();
             if (z) {
                 b.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                     @Override
                     public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                        C0274o.this.m41939p(pause, valueAnimator);
+                        C0274o.this.m41942p(pause, valueAnimator);
                     }
                 });
             } else {
@@ -559,7 +559,7 @@ public class C0274o extends View {
                 b.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                     @Override
                     public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                        C0274o.this.m41938q(pause, f, valueAnimator);
+                        C0274o.this.m41941q(pause, f, valueAnimator);
                     }
                 });
             }
@@ -569,14 +569,14 @@ public class C0274o extends View {
         }
     }
 
-    public void m41930y() {
+    public void m41933y() {
         AbstractC0276b bVar = this.f822A0;
         if (bVar != null) {
-            bVar.mo41914F0();
+            bVar.mo41917F0();
         }
     }
 
-    public boolean m41929z(MotionEvent motionEvent) {
+    public boolean m41932z(MotionEvent motionEvent) {
         AbstractC0276b bVar;
         AbstractC0276b bVar2;
         int action = motionEvent.getAction();
@@ -611,7 +611,7 @@ public class C0274o extends View {
                             if (f4 >= i7 - i8 && f4 <= i7 + i8) {
                                 this.f824C0 = i6;
                                 this.f823B0 = 1;
-                                m41956C();
+                                m41959C();
                             }
                         }
                     } else {
@@ -651,26 +651,26 @@ public class C0274o extends View {
             int i12 = this.f823B0;
             if (i12 != 0) {
                 if ((i12 & 1) != 0) {
-                    m41955D(true);
+                    m41958D(true);
                 } else if ((i12 & 4) != 0) {
                     AbstractC0276b bVar3 = this.f822A0;
                     if (bVar3 != null) {
-                        bVar3.mo41889q1((this.f857p0 & 1) == 0);
+                        bVar3.mo41892q1((this.f857p0 & 1) == 0);
                     }
                 } else if (this.f839a && (i12 & 2) != 0) {
                     AbstractC0276b bVar4 = this.f822A0;
                     if (bVar4 != null) {
-                        bVar4.mo41911H();
+                        bVar4.mo41914H();
                     }
                 } else if ((i12 & 16) != 0) {
                     AbstractC0276b bVar5 = this.f822A0;
                     if (bVar5 != null) {
-                        bVar5.mo41897b0();
+                        bVar5.mo41900b0();
                     }
                 } else if ((i12 & 8) != 0) {
-                    m41957B((this.f857p0 & 2) != 0);
+                    m41960B((this.f857p0 & 2) != 0);
                 } else if (!((i12 & 32) == 0 || (bVar = this.f822A0) == null)) {
-                    bVar.mo41890i();
+                    bVar.mo41893i();
                 }
                 this.f823B0 = 0;
             }
@@ -678,15 +678,15 @@ public class C0274o extends View {
             int i13 = this.f823B0;
             if (i13 != 0) {
                 if ((i13 & 1) != 0) {
-                    m41933v(motionEvent.getX(), motionEvent.getY());
+                    m41936v(motionEvent.getX(), motionEvent.getY());
                 } else {
                     float abs = Math.abs(this.f826E0 - motionEvent.getX());
                     float abs2 = Math.abs(this.f827F0 - motionEvent.getY());
-                    if (Math.max(abs, abs2) >= C1357a0.m37532r()) {
+                    if (Math.max(abs, abs2) >= C1357a0.m37535r()) {
                         if ((8 & this.f857p0) != 0) {
                             int i14 = this.f823B0;
                             if (!(((i14 & 32) == 0 && (16 & i14) == 0) || abs <= abs2 || (bVar2 = this.f822A0) == null)) {
-                                bVar2.mo41895d1();
+                                bVar2.mo41898d1();
                             }
                         }
                         this.f823B0 = 0;
@@ -695,7 +695,7 @@ public class C0274o extends View {
             }
         } else if (action == 3) {
             if ((this.f823B0 & 1) != 0) {
-                m41955D(false);
+                m41958D(false);
             }
             this.f823B0 = 0;
         }

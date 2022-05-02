@@ -11,9 +11,9 @@ import org.thunderdog.challegram.Log;
 import p051db.AbstractC3937c;
 
 public class FrameLayoutFix extends FrameLayout implements AbstractC3937c {
-    public final ArrayList<View> f22367a = new ArrayList<>();
-    public boolean f22368b;
-    public Runnable f22369c;
+    public final ArrayList<View> f22370a = new ArrayList<>();
+    public boolean f22371b;
+    public Runnable f22372c;
 
     public FrameLayoutFix(Context context) {
         super(context);
@@ -65,7 +65,7 @@ public class FrameLayoutFix extends FrameLayout implements AbstractC3937c {
     }
 
     public void mo8061R(View view, Runnable runnable) {
-        this.f22369c = runnable;
+        this.f22372c = runnable;
     }
 
     @Override
@@ -75,10 +75,10 @@ public class FrameLayoutFix extends FrameLayout implements AbstractC3937c {
         } catch (NullPointerException e) {
             e.printStackTrace();
         }
-        Runnable runnable = this.f22369c;
+        Runnable runnable = this.f22372c;
         if (runnable != null) {
             runnable.run();
-            this.f22369c = null;
+            this.f22372c = null;
         }
     }
 
@@ -88,20 +88,20 @@ public class FrameLayoutFix extends FrameLayout implements AbstractC3937c {
         int i4;
         int childCount = getChildCount();
         boolean z = (View.MeasureSpec.getMode(i) == 1073741824 && View.MeasureSpec.getMode(i2) == 1073741824) ? false : true;
-        this.f22367a.clear();
+        this.f22370a.clear();
         int i5 = 0;
         int i6 = 0;
         int i7 = 0;
         for (int i8 = 0; i8 < childCount; i8++) {
             View childAt = getChildAt(i8);
-            if (childAt != null && (this.f22368b || childAt.getVisibility() != 8)) {
+            if (childAt != null && (this.f22371b || childAt.getVisibility() != 8)) {
                 measureChildWithMargins(childAt, i, 0, i2, 0);
                 FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) childAt.getLayoutParams();
                 i7 = Math.max(i7, childAt.getMeasuredWidth() + layoutParams.leftMargin + layoutParams.rightMargin);
                 i6 = Math.max(i6, childAt.getMeasuredHeight() + layoutParams.topMargin + layoutParams.bottomMargin);
                 i5 = FrameLayout.combineMeasuredStates(i5, childAt.getMeasuredState());
                 if (z && (layoutParams.width == -1 || layoutParams.height == -1)) {
-                    this.f22367a.add(childAt);
+                    this.f22370a.add(childAt);
                 }
             }
         }
@@ -122,11 +122,11 @@ public class FrameLayoutFix extends FrameLayout implements AbstractC3937c {
             max2 = Math.max(max2, foreground.getMinimumWidth());
         }
         setMeasuredDimension(FrameLayout.resolveSizeAndState(max2, i, i9), FrameLayout.resolveSizeAndState(max, i2, i9 << 16));
-        int size = this.f22367a.size();
+        int size = this.f22370a.size();
         if (size > 1) {
             int i14 = 0;
             while (i14 < size) {
-                View view = this.f22367a.get(i14);
+                View view = this.f22370a.get(i14);
                 ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
                 int i15 = marginLayoutParams.width;
                 if (i15 == i11) {
@@ -150,7 +150,7 @@ public class FrameLayoutFix extends FrameLayout implements AbstractC3937c {
     @Override
     public void setMeasureAllChildren(boolean z) {
         super.setMeasureAllChildren(z);
-        this.f22368b = z;
+        this.f22371b = z;
     }
 
     public FrameLayoutFix(Context context, AttributeSet attributeSet) {

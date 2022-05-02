@@ -20,7 +20,7 @@ public enum EnumC6424h {
         this.f20106b = i;
     }
 
-    public static EnumC6424h m20427a(int i) {
+    public static EnumC6424h m20428a(int i) {
         if (i == 0) {
             return TERMINATOR;
         }
@@ -54,8 +54,8 @@ public enum EnumC6424h {
         throw new IllegalArgumentException();
     }
 
-    public int m20426b(C6426j jVar) {
-        int j = jVar.m20415j();
+    public int m20427b(C6426j jVar) {
+        int j = jVar.m20416j();
         return this.f20105a[j <= 9 ? (char) 0 : j <= 26 ? (char) 1 : (char) 2];
     }
 }

@@ -5,15 +5,15 @@ import java.util.Map;
 import java.util.Set;
 
 public class C10242i2 {
-    public static final C10242i2 f33019b = new C10242i2(new ArrayMap());
-    public final Map<String, Object> f33020a;
+    public static final C10242i2 f33022b = new C10242i2(new ArrayMap());
+    public final Map<String, Object> f33023a;
 
     public C10242i2(Map<String, Object> map) {
-        this.f33020a = map;
+        this.f33023a = map;
     }
 
     public static C10242i2 m5661a() {
-        return f33019b;
+        return f33022b;
     }
 
     public static C10242i2 m5660b(C10242i2 i2Var) {
@@ -25,10 +25,10 @@ public class C10242i2 {
     }
 
     public Object m5659c(String str) {
-        return this.f33020a.get(str);
+        return this.f33023a.get(str);
     }
 
     public Set<String> m5658d() {
-        return this.f33020a.keySet();
+        return this.f33023a.keySet();
     }
 }

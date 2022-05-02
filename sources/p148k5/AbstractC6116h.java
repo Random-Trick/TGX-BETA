@@ -7,13 +7,13 @@ import androidx.annotation.RecentlyNullable;
 import com.google.android.gms.common.api.internal.LifecycleCallback;
 
 public interface AbstractC6116h {
-    void m21274a(@RecentlyNonNull String str, @RecentlyNonNull LifecycleCallback lifecycleCallback);
+    void m21275a(@RecentlyNonNull String str, @RecentlyNonNull LifecycleCallback lifecycleCallback);
 
     @RecentlyNullable
-    <T extends LifecycleCallback> T m21273b(@RecentlyNonNull String str, @RecentlyNonNull Class<T> cls);
+    <T extends LifecycleCallback> T m21274b(@RecentlyNonNull String str, @RecentlyNonNull Class<T> cls);
 
     @RecentlyNonNull
-    Activity m21272c();
+    Activity m21273c();
 
-    void m21271d(@RecentlyNonNull Intent intent, int i);
+    void m21272d(@RecentlyNonNull Intent intent, int i);
 }

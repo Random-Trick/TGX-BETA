@@ -9,11 +9,11 @@ public interface Iterator<E> {
         public static void $default$forEachRemaining(java.util.Iterator it, Consumer consumer) {
             Objects.requireNonNull(consumer);
             while (it.hasNext()) {
-                consumer.mo22128k(it.next());
+                consumer.mo22129k(it.next());
             }
         }
 
-        public static void m22602a() {
+        public static void m22603a() {
             throw new UnsupportedOperationException("remove");
         }
     }

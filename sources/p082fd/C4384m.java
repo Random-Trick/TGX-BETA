@@ -30,7 +30,7 @@ public class C4384m extends Thread {
         start();
     }
 
-    public void m28055a(Runnable runnable) {
+    public void m28057a(Runnable runnable) {
         try {
             this.f14534c.await();
         } catch (InterruptedException e) {
@@ -39,11 +39,11 @@ public class C4384m extends Thread {
         this.f14532a.removeCallbacks(runnable);
     }
 
-    public Handler mo20313b() {
+    public Handler mo20314b() {
         return null;
     }
 
-    public Handler m28054c() {
+    public Handler m28056c() {
         try {
             this.f14534c.await();
         } catch (InterruptedException e) {
@@ -52,7 +52,7 @@ public class C4384m extends Thread {
         return this.f14533b;
     }
 
-    public Handler m28053d() {
+    public Handler m28055d() {
         try {
             this.f14534c.await();
         } catch (InterruptedException e) {
@@ -61,7 +61,7 @@ public class C4384m extends Thread {
         return this.f14532a;
     }
 
-    public void m28052e(Runnable runnable, long j) {
+    public void m28054e(Runnable runnable, long j) {
         try {
             this.f14534c.await();
         } catch (InterruptedException e) {
@@ -77,7 +77,7 @@ public class C4384m extends Thread {
     public void mo3052f(Message message) {
     }
 
-    public void m28051g(boolean z) {
+    public void m28053g(boolean z) {
         Looper myLooper = Looper.myLooper();
         if (myLooper == null) {
             return;
@@ -89,7 +89,7 @@ public class C4384m extends Thread {
         }
     }
 
-    public void m28050h(Message message, long j) {
+    public void m28052h(Message message, long j) {
         try {
             this.f14534c.await();
         } catch (InterruptedException e) {
@@ -106,7 +106,7 @@ public class C4384m extends Thread {
     public void run() {
         Looper.prepare();
         this.f14532a = new HandlerC4385a(this);
-        this.f14533b = mo20313b();
+        this.f14533b = mo20314b();
         this.f14534c.countDown();
         Looper.loop();
     }

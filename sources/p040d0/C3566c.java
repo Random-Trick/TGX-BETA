@@ -20,11 +20,11 @@ public final class C3566c {
         }
     }
 
-    public static ImageWriter m30042a(Surface surface, int i, int i2) {
+    public static ImageWriter m30044a(Surface surface, int i, int i2) {
         Throwable e = null;
         if (Build.VERSION.SDK_INT >= 26) {
             try {
-                return (ImageWriter) C1132h.m38322e(f12162a.invoke(null, surface, Integer.valueOf(i), Integer.valueOf(i2)));
+                return (ImageWriter) C1132h.m38325e(f12162a.invoke(null, surface, Integer.valueOf(i), Integer.valueOf(i2)));
             } catch (IllegalAccessException | InvocationTargetException e2) {
                 e = e2;
             }

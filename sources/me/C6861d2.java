@@ -30,7 +30,7 @@ public class C6861d2 extends View$OnClickListenerC6902i implements AbstractC5911
 
     public C6861d2(Context context, C10930q6 q6Var) {
         super(context, q6Var);
-        C1399s0.m37193a0(this);
+        C1399s0.m37196a0(this);
         C10189d.m5794j(this);
     }
 
@@ -47,7 +47,7 @@ public class C6861d2 extends View$OnClickListenerC6902i implements AbstractC5911
         }
     }
 
-    public void m18742B0(int i) {
+    public void m18743B0(int i) {
         if (this.f21554l0 != i) {
             this.f21554l0 = i;
             if (i == 1) {
@@ -59,42 +59,42 @@ public class C6861d2 extends View$OnClickListenerC6902i implements AbstractC5911
             } else if (i == 3) {
                 this.f21559q0 = new C6238b(this);
             } else if (i == 4) {
-                this.f21556n0 = new C6240c(this, C1357a0.m37541i(40.0f) / 2);
-                this.f21557o0 = new C6257p(this, C1357a0.m37541i(40.0f) / 2);
+                this.f21556n0 = new C6240c(this, C1357a0.m37544i(40.0f) / 2);
+                this.f21557o0 = new C6257p(this, C1357a0.m37544i(40.0f) / 2);
             }
         }
     }
 
-    public void m18741C0(boolean z) {
+    public void m18742C0(boolean z) {
         AbstractC4576a1 a1Var = this.f21553k0;
         if (a1Var != null) {
-            a1Var.mo26324R(this.f21555m0);
+            a1Var.mo26325R(this.f21555m0);
             int i = this.f21554l0;
             if (i != 1) {
                 if (i == 2) {
                     if (!z) {
-                        this.f21553k0.mo26457T(this.f21556n0);
+                        this.f21553k0.mo26458T(this.f21556n0);
                     }
-                    this.f21553k0.mo26707Q(this.f21558p0);
+                    this.f21553k0.mo26708Q(this.f21558p0);
                     return;
                 } else if (i == 3) {
-                    this.f21553k0.mo26708P(this.f21559q0, z);
+                    this.f21553k0.mo26709P(this.f21559q0, z);
                     return;
                 } else if (i != 4) {
                     return;
                 }
             }
             if (i == 1) {
-                this.f21556n0.mo20259D0(this.f21553k0.mo26658t());
-                this.f21557o0.mo20259D0(this.f21553k0.mo26658t());
+                this.f21556n0.mo20260D0(this.f21553k0.mo26659t());
+                this.f21557o0.mo20260D0(this.f21553k0.mo26659t());
             }
             if (!z) {
-                this.f21553k0.mo26457T(this.f21556n0);
+                this.f21553k0.mo26458T(this.f21556n0);
             }
-            this.f21553k0.mo26458S(this.f21557o0);
+            this.f21553k0.mo26459S(this.f21557o0);
             return;
         }
-        this.f21555m0.m20999d();
+        this.f21555m0.m21000d();
         int i2 = this.f21554l0;
         if (i2 != 1) {
             if (i2 == 2) {
@@ -102,7 +102,7 @@ public class C6861d2 extends View$OnClickListenerC6902i implements AbstractC5911
                 this.f21558p0.clear();
                 return;
             } else if (i2 == 3) {
-                this.f21559q0.m20999d();
+                this.f21559q0.m21000d();
                 return;
             } else if (i2 != 4) {
                 return;
@@ -112,7 +112,7 @@ public class C6861d2 extends View$OnClickListenerC6902i implements AbstractC5911
         this.f21557o0.clear();
     }
 
-    public void m18740F0(View.OnClickListener onClickListener, View.OnLongClickListener onLongClickListener) {
+    public void m18741F0(View.OnClickListener onClickListener, View.OnLongClickListener onLongClickListener) {
         this.f21560r0 = onClickListener;
         this.f21561s0 = onLongClickListener;
     }
@@ -123,8 +123,8 @@ public class C6861d2 extends View$OnClickListenerC6902i implements AbstractC5911
         int i = this.f21554l0;
         if (i != 1) {
             if (i == 2) {
-                this.f21556n0.mo20249Z();
-                this.f21558p0.mo20249Z();
+                this.f21556n0.mo20250Z();
+                this.f21558p0.mo20250Z();
                 return;
             } else if (i == 3) {
                 this.f21559q0.mo4501a3();
@@ -133,46 +133,46 @@ public class C6861d2 extends View$OnClickListenerC6902i implements AbstractC5911
                 return;
             }
         }
-        this.f21556n0.mo20249Z();
-        this.f21557o0.mo20249Z();
+        this.f21556n0.mo20250Z();
+        this.f21557o0.mo20250Z();
     }
 
-    public void m18739b() {
-        this.f21555m0.m20994i();
+    public void m18740b() {
+        this.f21555m0.m20995i();
         int i = this.f21554l0;
         if (i != 1) {
             if (i == 2) {
-                this.f21556n0.mo20247b();
-                this.f21558p0.mo20247b();
+                this.f21556n0.mo20248b();
+                this.f21558p0.mo20248b();
                 return;
             } else if (i == 3) {
-                this.f21559q0.m20994i();
+                this.f21559q0.m20995i();
                 return;
             } else if (i != 4) {
                 return;
             }
         }
-        this.f21556n0.mo20247b();
-        this.f21557o0.mo20247b();
+        this.f21556n0.mo20248b();
+        this.f21557o0.mo20248b();
     }
 
-    public void m18738f() {
-        this.f21555m0.m21001b();
+    public void m18739f() {
+        this.f21555m0.m21002b();
         int i = this.f21554l0;
         if (i != 1) {
             if (i == 2) {
-                this.f21556n0.mo20245f();
-                this.f21558p0.mo20245f();
+                this.f21556n0.mo20246f();
+                this.f21558p0.mo20246f();
                 return;
             } else if (i == 3) {
-                this.f21559q0.m21001b();
+                this.f21559q0.m21002b();
                 return;
             } else if (i != 4) {
                 return;
             }
         }
-        this.f21556n0.mo20245f();
-        this.f21557o0.mo20245f();
+        this.f21556n0.mo20246f();
+        this.f21557o0.mo20246f();
     }
 
     public AbstractC4576a1 getBlock() {
@@ -189,7 +189,7 @@ public class C6861d2 extends View$OnClickListenerC6902i implements AbstractC5911
         if (a1Var != null) {
             C6240c cVar = this.f21556n0;
             int i = this.f21554l0;
-            a1Var.m27281h(this, canvas, cVar, i == 3 ? null : i == 2 ? this.f21558p0 : this.f21557o0, this.f21555m0);
+            a1Var.m27283h(this, canvas, cVar, i == 3 ? null : i == 2 ? this.f21558p0 : this.f21557o0, this.f21555m0);
         }
     }
 
@@ -197,36 +197,36 @@ public class C6861d2 extends View$OnClickListenerC6902i implements AbstractC5911
     public void onMeasure(int i, int i2) {
         int defaultSize = View.getDefaultSize(getSuggestedMinimumWidth(), i);
         AbstractC4576a1 a1Var = this.f21553k0;
-        setMeasuredDimension(defaultSize, View.MeasureSpec.makeMeasureSpec(a1Var != null ? a1Var.m27277s(this, defaultSize) : 0, Log.TAG_TDLIB_OPTIONS));
+        setMeasuredDimension(defaultSize, View.MeasureSpec.makeMeasureSpec(a1Var != null ? a1Var.m27279s(this, defaultSize) : 0, Log.TAG_TDLIB_OPTIONS));
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent motionEvent) {
         boolean z = this.f21562t0 && super.onTouchEvent(motionEvent);
         AbstractC4576a1 a1Var = this.f21553k0;
-        return (a1Var != null && a1Var.m27290M(this, motionEvent)) || z;
+        return (a1Var != null && a1Var.m27292M(this, motionEvent)) || z;
     }
 
     public void setBlock(AbstractC4576a1 a1Var) {
         int i;
         AbstractC4576a1 a1Var2 = this.f21553k0;
         if (a1Var2 == a1Var) {
-            m18741C0(false);
+            m18742C0(false);
             return;
         }
         if (a1Var2 != null) {
-            a1Var2.m27282g(this);
+            a1Var2.m27284g(this);
             this.f21553k0 = null;
         }
         this.f21553k0 = a1Var;
-        setNeedClick(a1Var != null && a1Var.mo26460H());
+        setNeedClick(a1Var != null && a1Var.mo26461H());
         int measuredWidth = getMeasuredWidth();
         if (a1Var != null) {
-            a1Var.mo26698e();
-            a1Var.m27283d(this);
+            a1Var.mo26699e();
+            a1Var.m27285d(this);
             if (measuredWidth != 0) {
-                i = a1Var.m27277s(this, measuredWidth);
-                m18741C0(false);
+                i = a1Var.m27279s(this, measuredWidth);
+                m18742C0(false);
                 if (measuredWidth != 0 && getMeasuredHeight() != i) {
                     requestLayout();
                     return;
@@ -234,7 +234,7 @@ public class C6861d2 extends View$OnClickListenerC6902i implements AbstractC5911
             }
         }
         i = 0;
-        m18741C0(false);
+        m18742C0(false);
         if (measuredWidth != 0) {
         }
     }

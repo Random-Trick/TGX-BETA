@@ -12,7 +12,7 @@ public final class C6350i0 implements AbstractC6325c.AbstractC6327b {
     }
 
     @Override
-    public final void mo20573s(C5217a aVar) {
-        this.f19960a.mo11484s(aVar);
+    public final void mo20574s(C5217a aVar) {
+        this.f19960a.mo11483s(aVar);
     }
 }

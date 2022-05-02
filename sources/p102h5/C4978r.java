@@ -8,16 +8,16 @@ public final class C4978r extends AbstractC4981u<Void> {
     }
 
     @Override
-    public final void mo24341a(Bundle bundle) {
+    public final void mo24342a(Bundle bundle) {
         if (bundle.getBoolean("ack", false)) {
-            m24345c(null);
+            m24346c(null);
         } else {
-            m24346b(new C4980t(4, "Invalid response to one way request"));
+            m24347b(new C4980t(4, "Invalid response to one way request"));
         }
     }
 
     @Override
-    public final boolean mo24340d() {
+    public final boolean mo24341d() {
         return true;
     }
 }

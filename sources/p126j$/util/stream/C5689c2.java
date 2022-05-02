@@ -17,52 +17,52 @@ class C5689c2 extends AbstractC5739m2 {
     }
 
     @Override
-    public void mo22131j(long j) {
+    public void mo22132j(long j) {
         switch (this.f18333b) {
             case 1:
-                this.f18428a.mo22131j(-1L);
+                this.f18428a.mo22132j(-1L);
                 return;
             case 6:
-                this.f18428a.mo22131j(-1L);
+                this.f18428a.mo22132j(-1L);
                 return;
             default:
-                this.f18428a.mo22131j(j);
+                this.f18428a.mo22132j(j);
                 return;
         }
     }
 
     @Override
-    public void mo22128k(Object obj) {
+    public void mo22129k(Object obj) {
         switch (this.f18333b) {
             case 0:
-                ((Consumer) ((C5796y) this.f18334c).f18513v).mo22128k(obj);
-                this.f18428a.mo22128k(obj);
+                ((Consumer) ((C5796y) this.f18334c).f18513v).mo22129k(obj);
+                this.f18428a.mo22129k(obj);
                 return;
             case 1:
-                if (((AbstractC5541w) ((C5796y) this.f18334c).f18513v).mo22210n(obj)) {
-                    this.f18428a.mo22128k(obj);
+                if (((AbstractC5541w) ((C5796y) this.f18334c).f18513v).mo22211n(obj)) {
+                    this.f18428a.mo22129k(obj);
                     return;
                 }
                 return;
             case 2:
-                this.f18428a.mo22128k(((C5699e2) this.f18334c).f18346v.mo22502a(obj));
+                this.f18428a.mo22129k(((C5699e2) this.f18334c).f18346v.mo22503a(obj));
                 return;
             case 3:
-                this.f18428a.mo22134d(((ToIntFunction) ((C5801z) this.f18334c).f18521v).mo22326f(obj));
+                this.f18428a.mo22135d(((ToIntFunction) ((C5801z) this.f18334c).f18521v).mo22327f(obj));
                 return;
             case 4:
-                this.f18428a.mo22133e(((ToLongFunction) ((C5556A) this.f18334c).f18092v).mo22232g(obj));
+                this.f18428a.mo22134e(((ToLongFunction) ((C5556A) this.f18334c).f18092v).mo22233g(obj));
                 return;
             case 5:
-                this.f18428a.mo22135c(((ToDoubleFunction) ((C5791x) this.f18334c).f18504v).mo22324v(obj));
+                this.f18428a.mo22136c(((ToDoubleFunction) ((C5791x) this.f18334c).f18504v).mo22325v(obj));
                 return;
             default:
-                AbstractC5690c3 c3Var = (AbstractC5690c3) ((C5699e2) this.f18334c).f18346v.mo22502a(obj);
+                AbstractC5690c3 c3Var = (AbstractC5690c3) ((C5699e2) this.f18334c).f18346v.mo22503a(obj);
                 if (c3Var != null) {
                     try {
                         AbstractC5686c cVar = (AbstractC5686c) c3Var;
-                        cVar.m22309G0();
-                        ((AbstractC5690c3) cVar).mo22244a(this.f18428a);
+                        cVar.m22310G0();
+                        ((AbstractC5690c3) cVar).mo22245a(this.f18428a);
                     } catch (Throwable th) {
                         try {
                             ((AbstractC5686c) c3Var).close();

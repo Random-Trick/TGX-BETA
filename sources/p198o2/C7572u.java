@@ -10,8 +10,8 @@ import p308w1.C9940c;
 import p323x1.AbstractC10074f;
 
 public final class C7572u implements AbstractC7571t {
-    public final AbstractC9421e f24189a;
-    public final AbstractC9418b<C7570s> f24190b;
+    public final AbstractC9421e f24192a;
+    public final AbstractC9418b<C7570s> f24193b;
 
     public class C7573a extends AbstractC9418b<C7570s> {
         public C7573a(AbstractC9421e eVar) {
@@ -24,13 +24,13 @@ public final class C7572u implements AbstractC7571t {
         }
 
         public void mo8741g(AbstractC10074f fVar, C7570s sVar) {
-            String str = sVar.f24187a;
+            String str = sVar.f24190a;
             if (str == null) {
                 fVar.mo5374d0(1);
             } else {
                 fVar.mo5373q(1, str);
             }
-            String str2 = sVar.f24188b;
+            String str2 = sVar.f24191b;
             if (str2 == null) {
                 fVar.mo5374d0(2);
             } else {
@@ -40,8 +40,8 @@ public final class C7572u implements AbstractC7571t {
     }
 
     public C7572u(AbstractC9421e eVar) {
-        this.f24189a = eVar;
-        this.f24190b = new C7573a(eVar);
+        this.f24192a = eVar;
+        this.f24193b = new C7573a(eVar);
     }
 
     @Override
@@ -52,8 +52,8 @@ public final class C7572u implements AbstractC7571t {
         } else {
             y0.mo5373q(1, str);
         }
-        this.f24189a.m8732b();
-        Cursor b = C9940c.m6454b(this.f24189a, y0, false, null);
+        this.f24192a.m8732b();
+        Cursor b = C9940c.m6454b(this.f24192a, y0, false, null);
         try {
             ArrayList arrayList = new ArrayList(b.getCount());
             while (b.moveToNext()) {
@@ -68,13 +68,13 @@ public final class C7572u implements AbstractC7571t {
 
     @Override
     public void mo15665b(C7570s sVar) {
-        this.f24189a.m8732b();
-        this.f24189a.m8731c();
+        this.f24192a.m8732b();
+        this.f24192a.m8731c();
         try {
-            this.f24190b.m8740h(sVar);
-            this.f24189a.m8714t();
+            this.f24193b.m8740h(sVar);
+            this.f24192a.m8714t();
         } finally {
-            this.f24189a.m8727g();
+            this.f24192a.m8727g();
         }
     }
 }

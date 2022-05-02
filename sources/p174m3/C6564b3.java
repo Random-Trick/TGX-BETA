@@ -21,9 +21,9 @@ public final class C6564b3 {
     public boolean f20424h;
 
     public interface AbstractC6566b {
-        void mo19331O(int i, boolean z);
+        void mo19332O(int i, boolean z);
 
-        void mo19327i(int i);
+        void mo19328i(int i);
     }
 
     public final class C6567c extends BroadcastReceiver {
@@ -37,7 +37,7 @@ public final class C6564b3 {
             handler.post(new Runnable() {
                 @Override
                 public final void run() {
-                    C6564b3.m20103b(C6564b3.this);
+                    C6564b3.m20104b(C6564b3.this);
                 }
             });
         }
@@ -48,80 +48,80 @@ public final class C6564b3 {
         this.f20417a = applicationContext;
         this.f20418b = handler;
         this.f20419c = bVar;
-        AudioManager audioManager = (AudioManager) C1186a.m38182h((AudioManager) applicationContext.getSystemService("audio"));
+        AudioManager audioManager = (AudioManager) C1186a.m38185h((AudioManager) applicationContext.getSystemService("audio"));
         this.f20420d = audioManager;
-        this.f20423g = m20099f(audioManager, 3);
-        this.f20424h = m20100e(audioManager, this.f20422f);
+        this.f20423g = m20100f(audioManager, 3);
+        this.f20424h = m20101e(audioManager, this.f20422f);
         C6567c cVar = new C6567c();
         try {
             applicationContext.registerReceiver(cVar, new IntentFilter("android.media.VOLUME_CHANGED_ACTION"));
             this.f20421e = cVar;
         } catch (RuntimeException e) {
-            C1230s.m37880j("StreamVolumeManager", "Error registering stream volume receiver", e);
+            C1230s.m37883j("StreamVolumeManager", "Error registering stream volume receiver", e);
         }
     }
 
-    public static void m20103b(C6564b3 b3Var) {
-        b3Var.m20096i();
+    public static void m20104b(C6564b3 b3Var) {
+        b3Var.m20097i();
     }
 
-    public static boolean m20100e(AudioManager audioManager, int i) {
+    public static boolean m20101e(AudioManager audioManager, int i) {
         if (C1216l0.f4526a >= 23) {
             return audioManager.isStreamMute(i);
         }
-        return m20099f(audioManager, i) == 0;
+        return m20100f(audioManager, i) == 0;
     }
 
-    public static int m20099f(AudioManager audioManager, int i) {
+    public static int m20100f(AudioManager audioManager, int i) {
         try {
             return audioManager.getStreamVolume(i);
         } catch (RuntimeException e) {
             StringBuilder sb2 = new StringBuilder(60);
             sb2.append("Could not retrieve stream volume for stream type ");
             sb2.append(i);
-            C1230s.m37880j("StreamVolumeManager", sb2.toString(), e);
+            C1230s.m37883j("StreamVolumeManager", sb2.toString(), e);
             return audioManager.getStreamMaxVolume(i);
         }
     }
 
-    public int m20102c() {
+    public int m20103c() {
         return this.f20420d.getStreamMaxVolume(this.f20422f);
     }
 
-    public int m20101d() {
+    public int m20102d() {
         if (C1216l0.f4526a >= 28) {
             return this.f20420d.getStreamMinVolume(this.f20422f);
         }
         return 0;
     }
 
-    public void m20098g() {
+    public void m20099g() {
         C6567c cVar = this.f20421e;
         if (cVar != null) {
             try {
                 this.f20417a.unregisterReceiver(cVar);
             } catch (RuntimeException e) {
-                C1230s.m37880j("StreamVolumeManager", "Error unregistering stream volume receiver", e);
+                C1230s.m37883j("StreamVolumeManager", "Error unregistering stream volume receiver", e);
             }
             this.f20421e = null;
         }
     }
 
-    public void m20097h(int i) {
+    public void m20098h(int i) {
         if (this.f20422f != i) {
             this.f20422f = i;
-            m20096i();
-            this.f20419c.mo19327i(i);
+            m20097i();
+            this.f20419c.mo19328i(i);
         }
     }
 
-    public final void m20096i() {
-        int f = m20099f(this.f20420d, this.f20422f);
-        boolean e = m20100e(this.f20420d, this.f20422f);
+    public final void m20097i() {
+        int f = m20100f(this.f20420d, this.f20422f);
+        boolean e = m20101e(this.f20420d, this.f20422f);
         if (this.f20423g != f || this.f20424h != e) {
             this.f20423g = f;
             this.f20424h = e;
-            this.f20419c.mo19331O(f, e);
+            this.f20419c.mo19332O(f, e);
         }
     }
 }

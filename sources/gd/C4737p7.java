@@ -12,23 +12,23 @@ public class C4737p7 {
         throw new UnsupportedOperationException("Method not decompiled: gd.C4737p7.<init>(org.drinkless.td.libcore.telegram.TdApi$Message[], org.drinkless.td.libcore.telegram.TdApi$MessageThreadInfo, boolean):void");
     }
 
-    public static C4737p7 m26289l(Bundle bundle, String str) {
+    public static C4737p7 m26290l(Bundle bundle, String str) {
         return null;
     }
 
-    public boolean m26300a() {
+    public boolean m26301a() {
         return this.f15935a;
     }
 
-    public long m26299b() {
+    public long m26300b() {
         return this.f15936b.chatId;
     }
 
-    public TdApi.DraftMessage m26298c() {
+    public TdApi.DraftMessage m26299c() {
         return this.f15936b.draftMessage;
     }
 
-    public TdApi.InputMessageContent m26297d() {
+    public TdApi.InputMessageContent m26298d() {
         TdApi.DraftMessage draftMessage = this.f15936b.draftMessage;
         if (draftMessage != null) {
             return draftMessage.inputMessageText;
@@ -36,7 +36,7 @@ public class C4737p7 {
         return null;
     }
 
-    public long m26296e() {
+    public long m26297e() {
         return this.f15936b.replyInfo.lastMessageId;
     }
 
@@ -48,7 +48,7 @@ public class C4737p7 {
             return false;
         }
         C4737p7 p7Var = (C4737p7) obj;
-        if (m26300a() == p7Var.m26300a()) {
+        if (m26301a() == p7Var.m26301a()) {
             TdApi.MessageThreadInfo messageThreadInfo = this.f15936b;
             long j = messageThreadInfo.chatId;
             TdApi.MessageThreadInfo messageThreadInfo2 = p7Var.f15936b;
@@ -59,36 +59,36 @@ public class C4737p7 {
         return false;
     }
 
-    public long m26295f() {
+    public long m26296f() {
         return this.f15936b.replyInfo.lastReadInboxMessageId;
     }
 
-    public long m26294g() {
+    public long m26295g() {
         return this.f15936b.messageThreadId;
     }
 
-    public TdApi.Message[] m26293h() {
+    public TdApi.Message[] m26294h() {
         return this.f15936b.messages;
     }
 
     public int hashCode() {
-        return Objects.hash(Boolean.valueOf(m26300a()), Long.valueOf(this.f15936b.chatId), Long.valueOf(this.f15936b.messageThreadId));
+        return Objects.hash(Boolean.valueOf(m26301a()), Long.valueOf(this.f15936b.chatId), Long.valueOf(this.f15936b.messageThreadId));
     }
 
-    public TdApi.MessageReplyInfo m26292i() {
+    public TdApi.MessageReplyInfo m26293i() {
         return this.f15936b.replyInfo;
     }
 
-    public int m26291j() {
+    public int m26292j() {
         return this.f15936b.replyInfo.replyCount;
     }
 
-    public boolean m26290k() {
+    public boolean m26291k() {
         TdApi.MessageReplyInfo messageReplyInfo = this.f15936b.replyInfo;
         long max = Math.max(messageReplyInfo.lastReadInboxMessageId, messageReplyInfo.lastReadOutboxMessageId);
         return max != 0 && this.f15936b.replyInfo.lastMessageId > max;
     }
 
-    public void m26288m(Bundle bundle, String str) {
+    public void m26289m(Bundle bundle, String str) {
     }
 }

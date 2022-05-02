@@ -17,17 +17,17 @@ import qa.C8294g;
 import qa.C8298k;
 
 public abstract class AbstractC9897d {
-    public static final C9898a f32196b = new C9898a(null);
-    public static final C10007i f32195a = new C10007i("TranscodeEngine");
+    public static final C9898a f32199b = new C9898a(null);
+    public static final C10007i f32198a = new C10007i("TranscodeEngine");
 
     public static final class C9898a {
 
         public static final class C9899a extends AbstractC8299l implements AbstractC8088l<Double, C5060q> {
-            public final C9892c f32197b;
+            public final C9892c f32200b;
 
             public C9899a(C9892c cVar) {
                 super(1);
-                this.f32197b = cVar;
+                this.f32200b = cVar;
             }
 
             @Override
@@ -37,7 +37,7 @@ public abstract class AbstractC9897d {
             }
 
             public final void m6670f(double d) {
-                this.f32197b.m6679d(d);
+                this.f32200b.m6679d(d);
             }
         }
 
@@ -49,7 +49,7 @@ public abstract class AbstractC9897d {
             if (th instanceof InterruptedException) {
                 return true;
             }
-            if (!C8298k.m12937b(th, th.getCause()) && (cause = th.getCause()) != null) {
+            if (!C8298k.m12936b(th, th.getCause()) && (cause = th.getCause()) != null) {
                 return m6672a(cause);
             }
             return false;
@@ -59,25 +59,25 @@ public abstract class AbstractC9897d {
             Throwable th;
             Exception e;
             C9885a aVar;
-            C8298k.m12934e(cVar, "options");
-            AbstractC9897d.f32195a.m6267c("transcode(): called...");
+            C8298k.m12933e(cVar, "options");
+            AbstractC9897d.f32198a.m6267c("transcode(): called...");
             C9892c cVar2 = new C9892c(cVar);
             C9885a aVar2 = null;
             try {
                 try {
                     C7802d dVar = new C7802d(cVar);
-                    AbstractC0237a q = cVar.m18968q();
-                    C8298k.m12935d(q, "options.dataSink");
-                    AbstractC10012l c = C10014m.m6221c(cVar.m18961x(), cVar.m18969p());
-                    AbstractC4333b u = cVar.m18964u();
-                    C8298k.m12935d(u, "options.validator");
-                    int w = cVar.m18962w();
-                    AbstractC4177b t = cVar.m18965t();
-                    C8298k.m12935d(t, "options.timeInterpolator");
-                    AbstractC3930a o = cVar.m18970o();
-                    C8298k.m12935d(o, "options.audioStretcher");
-                    AbstractC10456a n = cVar.m18971n();
-                    C8298k.m12935d(n, "options.audioResampler");
+                    AbstractC0237a q = cVar.m18969q();
+                    C8298k.m12934d(q, "options.dataSink");
+                    AbstractC10012l c = C10014m.m6221c(cVar.m18962x(), cVar.m18970p());
+                    AbstractC4333b u = cVar.m18965u();
+                    C8298k.m12934d(u, "options.validator");
+                    int w = cVar.m18963w();
+                    AbstractC4177b t = cVar.m18966t();
+                    C8298k.m12934d(t, "options.timeInterpolator");
+                    AbstractC3930a o = cVar.m18971o();
+                    C8298k.m12934d(o, "options.audioStretcher");
+                    AbstractC10456a n = cVar.m18972n();
+                    C8298k.m12934d(n, "options.audioResampler");
                     aVar = new C9885a(dVar, q, c, u, w, o, n, t);
                 } catch (Exception e2) {
                     e = e2;
@@ -97,7 +97,7 @@ public abstract class AbstractC9897d {
                 e = e3;
                 aVar2 = aVar;
                 if (m6672a(e)) {
-                    AbstractC9897d.f32195a.m6266d("Transcode canceled.", e);
+                    AbstractC9897d.f32198a.m6266d("Transcode canceled.", e);
                     cVar2.m6681b();
                     if (aVar2 != null) {
                         aVar2.mo6676b();
@@ -105,7 +105,7 @@ public abstract class AbstractC9897d {
                     }
                     return;
                 }
-                AbstractC9897d.f32195a.m6268b("Unexpected error while transcoding.", e);
+                AbstractC9897d.f32198a.m6268b("Unexpected error while transcoding.", e);
                 cVar2.m6680c(e);
                 throw e;
             } catch (Throwable th3) {
@@ -124,7 +124,7 @@ public abstract class AbstractC9897d {
     }
 
     public static final void m6675c(C6806c cVar) {
-        f32196b.m6671b(cVar);
+        f32199b.m6671b(cVar);
     }
 
     public abstract void mo6676b();

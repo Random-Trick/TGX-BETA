@@ -46,13 +46,13 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
         public C4379a() {
         }
 
-        public static void m28062b() {
+        public static void m28064b() {
             C10536ab.m4667o1().m4636w2().m7113D0();
         }
 
         @Override
         public void onMarkerReached(AudioTrack audioTrack) {
-            C4356b0.m28201k().m28195q(RunnableC4374i.f14484a);
+            C4356b0.m28203k().m28197q(RunnableC4374i.f14484a);
         }
 
         @Override
@@ -64,7 +64,7 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
         public C4380b() {
         }
 
-        public void m28060h(float f, int i) {
+        public void m28062h(float f, int i) {
             float f2;
             if (C4378j.this.f14502e == null) {
                 return;
@@ -100,9 +100,9 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
                         }
                     }
                     synchronized (C4378j.this.f14513p) {
-                        if (m21856d()) {
+                        if (m21857d()) {
                             C4378j.this.f14501d = i;
-                            C4378j.this.f14502e.m25197i(f2, C4378j.this.f14501d / 1000);
+                            C4378j.this.f14502e.m25198i(f2, C4378j.this.f14501d / 1000);
                         }
                     }
                 } catch (Throwable th) {
@@ -124,15 +124,15 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
                         i = (int) (((float) C4378j.this.f14506i) / 48.0f);
                         f = 0.0f;
                     }
-                    C1379j0.m37334d0(new Runnable() {
+                    C1379j0.m37337d0(new Runnable() {
                         @Override
                         public final void run() {
-                            C4378j.C4380b.this.m28060h(f, i);
+                            C4378j.C4380b.this.m28062h(f, i);
                         }
                     });
                 }
-                if (m21856d()) {
-                    C4356b0.m28201k().m28194r(C4378j.this.f14519v, 40);
+                if (m21857d()) {
+                    C4356b0.m28203k().m28196r(C4378j.this.f14519v, 40);
                 }
             }
         }
@@ -165,16 +165,16 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
         this.f14515r = new C4384m("fileDecodingQueue");
     }
 
-    public static C4378j m28109B() {
+    public static C4378j m28111B() {
         if (f14497x == null) {
             f14497x = new C4378j();
         }
         return f14497x;
     }
 
-    public void m28108C() {
+    public void m28110C() {
         if (this.f14504g) {
-            m28064z();
+            m28066z();
             return;
         }
         boolean z = false;
@@ -216,11 +216,11 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
             z = true;
         }
         if (z) {
-            m28064z();
+            m28066z();
         }
     }
 
-    public void m28107D(long j, int i, int i2) {
+    public void m28109D(long j, int i, int i2) {
         AudioTrack audioTrack;
         this.f14506i = j;
         if (i != -1 && (audioTrack = this.f14500c) != null) {
@@ -232,12 +232,12 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
                 }
             }
             if (i2 == 1) {
-                m28110A();
+                m28112A();
             }
         }
     }
 
-    public void m28106E() {
+    public void m28108E() {
         int i;
         synchronized (this.f14512o) {
             AudioTrack audioTrack = this.f14500c;
@@ -261,19 +261,19 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
                     if (i > 0) {
                         final long j = cVar.f14526e;
                         final int i3 = cVar.f14525d == 1 ? cVar.f14524c : -1;
-                        C1379j0.m37334d0(new Runnable() {
+                        C1379j0.m37337d0(new Runnable() {
                             @Override
                             public final void run() {
-                                C4378j.this.m28107D(j, i3, i2);
+                                C4378j.this.m28109D(j, i3, i2);
                             }
                         });
                     }
                     if (cVar.f14525d != 1) {
-                        m28064z();
+                        m28066z();
                     }
                 }
                 if (cVar == null || cVar.f14525d != 1) {
-                    m28065y();
+                    m28067y();
                 }
                 if (cVar != null) {
                     synchronized (this.f14511n) {
@@ -284,17 +284,17 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
         }
     }
 
-    public static void m28105F() {
-        m28109B().m28110A();
+    public static void m28107F() {
+        m28111B().m28112A();
         C10536ab.m4667o1().m4636w2().m7113D0();
     }
 
-    public static void m28104G(Boolean[] boolArr, File file, Semaphore semaphore) {
+    public static void m28106G(Boolean[] boolArr, File file, Semaphore semaphore) {
         boolArr[0] = Boolean.valueOf(C7888N.openOpusFile(file.getAbsolutePath()) != 0);
         semaphore.release();
     }
 
-    public void m28103H(int i) {
+    public void m28105H(int i) {
         long j = i;
         try {
             if (j > 0) {
@@ -302,9 +302,9 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
                 C7888N.seekOpusFile(((float) j) / ((float) this.f14505h));
             } else {
                 C4812v2 v2Var = this.f14502e;
-                if (!(v2Var == null || v2Var.m25201e() == 0.0f)) {
-                    this.f14506i = ((float) this.f14505h) * this.f14502e.m25201e();
-                    C7888N.seekOpusFile(this.f14502e.m25201e());
+                if (!(v2Var == null || v2Var.m25202e() == 0.0f)) {
+                    this.f14506i = ((float) this.f14505h) * this.f14502e.m25202e();
+                    C7888N.seekOpusFile(this.f14502e.m25202e());
                 }
             }
         } catch (Throwable th) {
@@ -315,10 +315,10 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
             this.f14509l.clear();
         }
         this.f14504g = false;
-        m28064z();
+        m28066z();
     }
 
-    public void m28102I(float f) {
+    public void m28104I(float f) {
         if (!this.f14498a) {
             this.f14507j = 3;
             this.f14506i = ((float) this.f14505h) * f;
@@ -327,25 +327,25 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
                 audioTrack.play();
             }
             this.f14501d = (int) ((((float) this.f14505h) / 48.0f) * f);
-            m28064z();
+            m28066z();
         }
     }
 
-    public void m28101J(final float f) {
+    public void m28103J(final float f) {
         C7888N.seekOpusFile(f);
         synchronized (this.f14511n) {
             this.f14510m.addAll(this.f14509l);
             this.f14509l.clear();
         }
-        C1379j0.m37334d0(new Runnable() {
+        C1379j0.m37337d0(new Runnable() {
             @Override
             public final void run() {
-                C4378j.this.m28102I(f);
+                C4378j.this.m28104I(f);
             }
         });
     }
 
-    public void m28110A() {
+    public void m28112A() {
         MediaPlayer mediaPlayer = this.f14499b;
         if (mediaPlayer != null || this.f14500c != null) {
             if (mediaPlayer != null) {
@@ -370,21 +370,21 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
                     }
                 }
             }
-            m28091T();
+            m28093T();
             this.f14516s = 0;
             this.f14517t = 0;
             this.f14501d = 0;
             this.f14508k = 0;
             this.f14498a = false;
-            this.f14502e.m25198h(false);
-            this.f14502e.m25197i(0.0f, 0);
+            this.f14502e.m25199h(false);
+            this.f14502e.m25198i(0.0f, 0);
             this.f14502e = null;
         }
     }
 
-    public boolean m28100K(C4812v2 v2Var) {
+    public boolean m28102K(C4812v2 v2Var) {
         C4812v2 v2Var2;
-        if (!((this.f14500c == null && this.f14499b == null) || v2Var == null || (v2Var2 = this.f14502e) == null || !v2Var2.m25205a(v2Var))) {
+        if (!((this.f14500c == null && this.f14499b == null) || v2Var == null || (v2Var2 = this.f14502e) == null || !v2Var2.m25206a(v2Var))) {
             try {
                 MediaPlayer mediaPlayer = this.f14499b;
                 if (mediaPlayer != null) {
@@ -396,7 +396,7 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
                     }
                 }
                 this.f14498a = true;
-                m28091T();
+                m28093T();
                 return true;
             } catch (Throwable th) {
                 Log.m14723e(th);
@@ -406,16 +406,16 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
         return false;
     }
 
-    public boolean m28099L(C4812v2 v2Var) {
-        return m28098M(v2Var, 0, false);
+    public boolean m28101L(C4812v2 v2Var) {
+        return m28100M(v2Var, 0, false);
     }
 
-    public boolean m28098M(C4812v2 v2Var, final int i, boolean z) {
+    public boolean m28100M(C4812v2 v2Var, final int i, boolean z) {
         C4812v2 v2Var2;
-        if (v2Var != null && !C5070i.m24061i(v2Var.m25202d())) {
-            if ((this.f14500c == null && this.f14499b == null) || (v2Var2 = this.f14502e) == null || !v2Var.m25205a(v2Var2)) {
-                m28110A();
-                final File file = new File(v2Var.m25202d());
+        if (v2Var != null && !C5070i.m24062i(v2Var.m25203d())) {
+            if ((this.f14500c == null && this.f14499b == null) || (v2Var2 = this.f14502e) == null || !v2Var.m25206a(v2Var2)) {
+                m28112A();
+                final File file = new File(v2Var.m25203d());
                 this.f14518u = false;
                 int i2 = 3;
                 if (C7888N.isOpusFile(file.getAbsolutePath()) == 1) {
@@ -423,10 +423,10 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
                         this.f14507j = 3;
                         final Semaphore semaphore = new Semaphore(0);
                         final Boolean[] boolArr = new Boolean[1];
-                        this.f14515r.m28052e(new Runnable() {
+                        this.f14515r.m28054e(new Runnable() {
                             @Override
                             public final void run() {
-                                C4378j.m28104G(boolArr, file, semaphore);
+                                C4378j.m28106G(boolArr, file, semaphore);
                             }
                         }, 0L);
                         semaphore.acquire();
@@ -439,7 +439,7 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
                         audioTrack.setStereoVolume(1.0f, 1.0f);
                         this.f14500c.setPlaybackPositionUpdateListener(new C4379a());
                         this.f14500c.play();
-                        m28093R();
+                        m28095R();
                     }
                 } else {
                     try {
@@ -453,7 +453,7 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
                         this.f14499b.prepare();
                         this.f14499b.start();
                         this.f14499b.setOnCompletionListener(this);
-                        m28093R();
+                        m28095R();
                     } catch (Throwable th) {
                         Log.m14723e(th);
                         MediaPlayer mediaPlayer2 = this.f14499b;
@@ -474,37 +474,37 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
                     try {
                         if (i > 0) {
                             mediaPlayer3.seekTo(i);
-                        } else if (v2Var.m25201e() != 0.0f) {
-                            this.f14499b.seekTo((int) (this.f14499b.getDuration() * this.f14502e.m25201e()));
+                        } else if (v2Var.m25202e() != 0.0f) {
+                            this.f14499b.seekTo((int) (this.f14499b.getDuration() * this.f14502e.m25202e()));
                         }
                     } catch (Throwable th2) {
-                        this.f14502e.m25197i(0.0f, 0);
+                        this.f14502e.m25198i(0.0f, 0);
                         Log.m14725e("Cannot seek audio", th2, new Object[0]);
                     }
                 } else if (this.f14500c != null) {
-                    if (v2Var.m25201e() == 1.0f) {
-                        this.f14502e.m25197i(0.0f, 0);
+                    if (v2Var.m25202e() == 1.0f) {
+                        this.f14502e.m25198i(0.0f, 0);
                     }
-                    this.f14515r.m28052e(new Runnable() {
+                    this.f14515r.m28054e(new Runnable() {
                         @Override
                         public final void run() {
-                            C4378j.this.m28103H(i);
+                            C4378j.this.m28105H(i);
                         }
                     }, 0L);
                 }
                 return true;
             }
             if (this.f14498a) {
-                m28097N(v2Var);
+                m28099N(v2Var);
             }
             return true;
         }
         return false;
     }
 
-    public boolean m28097N(C4812v2 v2Var) {
+    public boolean m28099N(C4812v2 v2Var) {
         C4812v2 v2Var2;
-        if (!((this.f14500c == null && this.f14499b == null) || v2Var == null || (v2Var2 = this.f14502e) == null || !v2Var2.m25205a(v2Var))) {
+        if (!((this.f14500c == null && this.f14499b == null) || v2Var == null || (v2Var2 = this.f14502e) == null || !v2Var2.m25206a(v2Var))) {
             try {
                 MediaPlayer mediaPlayer = this.f14499b;
                 if (mediaPlayer != null) {
@@ -513,11 +513,11 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
                     AudioTrack audioTrack = this.f14500c;
                     if (audioTrack != null) {
                         audioTrack.play();
-                        m28064z();
+                        m28066z();
                     }
                 }
                 this.f14498a = false;
-                m28093R();
+                m28095R();
                 return true;
             } catch (Throwable th) {
                 Log.m14723e(th);
@@ -526,25 +526,25 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
         return false;
     }
 
-    public final void m28096O(final float f) {
+    public final void m28098O(final float f) {
         long j = this.f14505h;
         if (((float) j) * f != ((float) j)) {
             if (!this.f14498a) {
                 this.f14500c.pause();
             }
             this.f14500c.flush();
-            this.f14515r.m28052e(new Runnable() {
+            this.f14515r.m28054e(new Runnable() {
                 @Override
                 public final void run() {
-                    C4378j.this.m28101J(f);
+                    C4378j.this.m28103J(f);
                 }
             }, 0L);
         }
     }
 
-    public boolean m28095P(C4812v2 v2Var, float f) {
+    public boolean m28097P(C4812v2 v2Var, float f) {
         C4812v2 v2Var2;
-        if (!((this.f14500c == null && this.f14499b == null) || v2Var == null || (v2Var2 = this.f14502e) == null || !v2Var2.m25205a(v2Var))) {
+        if (!((this.f14500c == null && this.f14499b == null) || v2Var == null || (v2Var2 = this.f14502e) == null || !v2Var2.m25206a(v2Var))) {
             try {
                 MediaPlayer mediaPlayer = this.f14499b;
                 if (mediaPlayer != null) {
@@ -552,13 +552,13 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
                     this.f14499b.seekTo(duration);
                     this.f14501d = duration;
                 } else if (this.f14500c != null) {
-                    m28096O(f);
+                    m28098O(f);
                 }
                 if (this.f14498a) {
-                    this.f14502e.m25197i(f, this.f14501d / 1000);
+                    this.f14502e.m25198i(f, this.f14501d / 1000);
                     return true;
                 }
-                m28093R();
+                m28095R();
                 return true;
             } catch (Throwable th) {
                 Log.m14725e("Cannot seek audio player", th, new Object[0]);
@@ -567,28 +567,28 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
         return false;
     }
 
-    public void m28094Q(C4812v2 v2Var, boolean z) {
+    public void m28096Q(C4812v2 v2Var, boolean z) {
         C4812v2 v2Var2;
-        if (this.f14499b != null && (v2Var2 = this.f14502e) != null && v2Var != null && v2Var2.m25205a(v2Var)) {
+        if (this.f14499b != null && (v2Var2 = this.f14502e) != null && v2Var != null && v2Var2.m25206a(v2Var)) {
             this.f14499b.setLooping(z);
         }
     }
 
-    public void m28093R() {
+    public void m28095R() {
         AbstractRunnableC5910b bVar = this.f14519v;
         if (bVar != null) {
-            bVar.m21857c();
+            bVar.m21858c();
             this.f14519v = null;
         }
         this.f14519v = new C4380b();
         synchronized (this.f14513p) {
-            if (this.f14519v.m21856d()) {
-                C4356b0.m28201k().m28194r(this.f14519v, 40);
+            if (this.f14519v.m21857d()) {
+                C4356b0.m28203k().m28196r(this.f14519v, 40);
             }
         }
     }
 
-    public void m28092S() {
+    public void m28094S() {
         AudioTrack audioTrack = this.f14500c;
         if ((audioTrack != null || this.f14499b != null) && this.f14502e != null) {
             try {
@@ -616,12 +616,12 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
             } catch (Throwable th2) {
                 Log.m14723e(th2);
             }
-            m28091T();
+            m28093T();
             C4812v2 v2Var = this.f14502e;
             if (v2Var != null) {
                 try {
-                    v2Var.m25198h(false);
-                    this.f14502e.m25197i(0.0f, 0);
+                    v2Var.m25199h(false);
+                    this.f14502e.m25198i(0.0f, 0);
                 } catch (Throwable th3) {
                     Log.m14723e(th3);
                 }
@@ -631,19 +631,19 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
         }
     }
 
-    public void m28091T() {
+    public void m28093T() {
         synchronized (this.f14513p) {
             AbstractRunnableC5910b bVar = this.f14519v;
             if (bVar != null) {
-                bVar.m21857c();
+                bVar.m21858c();
             }
         }
     }
 
-    public void m28090U() {
+    public void m28092U() {
         C4812v2 v2Var = this.f14502e;
-        if (v2Var != null && v2Var.m25200f() && this.f14502e.m25204b() != 0) {
-            m28092S();
+        if (v2Var != null && v2Var.m25201f() && this.f14502e.m25205b() != 0) {
+            m28094S();
         }
     }
 
@@ -652,11 +652,11 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
         if (mediaPlayer.isLooping()) {
             this.f14516s++;
         } else {
-            C4356b0.m28201k().m28195q(RunnableC4372h.f14482a);
+            C4356b0.m28203k().m28197q(RunnableC4372h.f14482a);
         }
     }
 
-    public void m28066x(boolean z) {
+    public void m28068x(boolean z) {
         C4812v2 v2Var = this.f14502e;
         boolean z2 = this.f14498a;
         if (v2Var == null) {
@@ -667,30 +667,30 @@ public class C4378j implements MediaPlayer.OnCompletionListener {
         }
         if (!this.f14518u) {
             int i = this.f14501d;
-            m28092S();
-            m28098M(v2Var, i, true);
+            m28094S();
+            m28100M(v2Var, i, true);
             if (z2) {
-                m28100K(this.f14502e);
+                m28102K(this.f14502e);
             }
         } else if (z2) {
-            m28099L(v2Var);
+            m28101L(v2Var);
         }
     }
 
-    public final void m28065y() {
-        this.f14515r.m28052e(new Runnable() {
+    public final void m28067y() {
+        this.f14515r.m28054e(new Runnable() {
             @Override
             public final void run() {
-                C4378j.this.m28108C();
+                C4378j.this.m28110C();
             }
         }, 0L);
     }
 
-    public final void m28064z() {
-        this.f14514q.m28052e(new Runnable() {
+    public final void m28066z() {
+        this.f14514q.m28054e(new Runnable() {
             @Override
             public final void run() {
-                C4378j.this.m28106E();
+                C4378j.this.m28108E();
             }
         }, 0L);
     }

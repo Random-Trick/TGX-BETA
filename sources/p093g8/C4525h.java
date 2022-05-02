@@ -9,7 +9,7 @@ public final class C4525h extends AbstractC4527j {
         hVar.setStackTrace(AbstractC4527j.f14928b);
     }
 
-    public static C4525h m27496a() {
+    public static C4525h m27498a() {
         return f14921c;
     }
 }

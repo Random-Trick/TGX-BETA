@@ -81,23 +81,23 @@ public final class C1216l0 {
         f4530e = sb2.toString();
     }
 
-    public static String m38021A(byte[] bArr) {
-        return new String(bArr, C10428d.f33498c);
+    public static String m38024A(byte[] bArr) {
+        return new String(bArr, C10428d.f33501c);
     }
 
-    public static String[] m38020A0(String str, String str2) {
+    public static String[] m38023A0(String str, String str2) {
         return str.split(str2, -1);
     }
 
-    public static String m38019B(byte[] bArr, int i, int i2) {
-        return new String(bArr, i, i2, C10428d.f33498c);
+    public static String m38022B(byte[] bArr, int i, int i2) {
+        return new String(bArr, i, i2, C10428d.f33501c);
     }
 
-    public static String[] m38018B0(String str, String str2) {
+    public static String[] m38021B0(String str, String str2) {
         return str.split(str2, 2);
     }
 
-    public static int m38017C(Context context) {
+    public static int m38020C(Context context) {
         AudioManager audioManager = (AudioManager) context.getSystemService("audio");
         if (audioManager == null) {
             return -1;
@@ -105,12 +105,12 @@ public final class C1216l0 {
         return audioManager.generateAudioSessionId();
     }
 
-    public static long m38016C0(long j, long j2, long j3) {
+    public static long m38019C0(long j, long j2, long j3) {
         long j4 = j - j2;
         return ((j ^ j4) & (j2 ^ j)) < 0 ? j3 : j4;
     }
 
-    public static int m38015D(int i) {
+    public static int m38018D(int i) {
         switch (i) {
             case 1:
                 return 4;
@@ -134,7 +134,7 @@ public final class C1216l0 {
         }
     }
 
-    public static byte[] m38014D0(InputStream inputStream) {
+    public static byte[] m38017D0(InputStream inputStream) {
         byte[] bArr = new byte[Log.TAG_EMOJI];
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         while (true) {
@@ -146,16 +146,16 @@ public final class C1216l0 {
         }
     }
 
-    public static int m38013E(ByteBuffer byteBuffer, int i) {
+    public static int m38016E(ByteBuffer byteBuffer, int i) {
         int i2 = byteBuffer.getInt(i);
         return byteBuffer.order() == ByteOrder.BIG_ENDIAN ? i2 : Integer.reverseBytes(i2);
     }
 
-    public static long m38012E0(int i, int i2) {
-        return m38010F0(i2) | (m38010F0(i) << 32);
+    public static long m38015E0(int i, int i2) {
+        return m38013F0(i2) | (m38013F0(i) << 32);
     }
 
-    public static String m38011F(Object[] objArr) {
+    public static String m38014F(Object[] objArr) {
         StringBuilder sb2 = new StringBuilder();
         for (int i = 0; i < objArr.length; i++) {
             sb2.append(objArr[i].getClass().getSimpleName());
@@ -166,11 +166,11 @@ public final class C1216l0 {
         return sb2.toString();
     }
 
-    public static long m38010F0(int i) {
+    public static long m38013F0(int i) {
         return i & 4294967295L;
     }
 
-    public static String m38009G(Context context) {
+    public static String m38012G(Context context) {
         TelephonyManager telephonyManager;
         if (!(context == null || (telephonyManager = (TelephonyManager) context.getSystemService("phone")) == null)) {
             String networkCountryIso = telephonyManager.getNetworkCountryIso();
@@ -181,34 +181,34 @@ public final class C1216l0 {
         return C10422b.m5148d(Locale.getDefault().getCountry());
     }
 
-    public static CharSequence m38008G0(CharSequence charSequence, int i) {
+    public static CharSequence m38011G0(CharSequence charSequence, int i) {
         return charSequence.length() <= i ? charSequence : charSequence.subSequence(0, i);
     }
 
-    public static Point m38007H(Context context) {
+    public static Point m38010H(Context context) {
         DisplayManager displayManager;
         Display display = (f4526a < 17 || (displayManager = (DisplayManager) context.getSystemService("display")) == null) ? null : displayManager.getDisplay(0);
         if (display == null) {
-            display = ((WindowManager) C1186a.m38185e((WindowManager) context.getSystemService("window"))).getDefaultDisplay();
+            display = ((WindowManager) C1186a.m38188e((WindowManager) context.getSystemService("window"))).getDefaultDisplay();
         }
-        return m38005I(context, display);
+        return m38008I(context, display);
     }
 
-    public static long m38006H0(long j) {
+    public static long m38009H0(long j) {
         return (j == -9223372036854775807L || j == Long.MIN_VALUE) ? j : j / 1000;
     }
 
-    public static Point m38005I(Context context, Display display) {
+    public static Point m38008I(Context context, Display display) {
         String str;
-        if (display.getDisplayId() == 0 && m37963l0(context)) {
+        if (display.getDisplayId() == 0 && m37966l0(context)) {
             if (f4526a < 28) {
-                str = m37981c0("sys.display-size");
+                str = m37984c0("sys.display-size");
             } else {
-                str = m37981c0("vendor.display-size");
+                str = m37984c0("vendor.display-size");
             }
             if (!TextUtils.isEmpty(str)) {
                 try {
-                    String[] A0 = m38020A0(str.trim(), "x");
+                    String[] A0 = m38023A0(str.trim(), "x");
                     if (A0.length == 2) {
                         int parseInt = Integer.parseInt(A0[0]);
                         int parseInt2 = Integer.parseInt(A0[1]);
@@ -219,7 +219,7 @@ public final class C1216l0 {
                 } catch (NumberFormatException unused) {
                 }
                 String valueOf = String.valueOf(str);
-                C1230s.m37887c("Util", valueOf.length() != 0 ? "Invalid display size: ".concat(valueOf) : new String("Invalid display size: "));
+                C1230s.m37890c("Util", valueOf.length() != 0 ? "Invalid display size: ".concat(valueOf) : new String("Invalid display size: "));
             }
             if ("Sony".equals(f4528c) && f4529d.startsWith("BRAVIA") && context.getPackageManager().hasSystemFeature("com.sony.dtv.hardware.panel.qfhd")) {
                 return new Point(3840, 2160);
@@ -228,39 +228,39 @@ public final class C1216l0 {
         Point point = new Point();
         int i = f4526a;
         if (i >= 23) {
-            m38000M(display, point);
+            m38003M(display, point);
         } else if (i >= 17) {
-            m38001L(display, point);
+            m38004L(display, point);
         } else {
-            m38002K(display, point);
+            m38005K(display, point);
         }
         return point;
     }
 
-    public static void m38004I0(Parcel parcel, boolean z) {
+    public static void m38007I0(Parcel parcel, boolean z) {
         parcel.writeInt(z ? 1 : 0);
     }
 
-    public static Looper m38003J() {
+    public static Looper m38006J() {
         Looper myLooper = Looper.myLooper();
         return myLooper != null ? myLooper : Looper.getMainLooper();
     }
 
-    public static void m38002K(Display display, Point point) {
+    public static void m38005K(Display display, Point point) {
         display.getSize(point);
     }
 
-    public static void m38001L(Display display, Point point) {
+    public static void m38004L(Display display, Point point) {
         display.getRealSize(point);
     }
 
-    public static void m38000M(Display display, Point point) {
+    public static void m38003M(Display display, Point point) {
         Display.Mode mode = display.getMode();
         point.x = mode.getPhysicalWidth();
         point.y = mode.getPhysicalHeight();
     }
 
-    public static int m37999N(int i) {
+    public static int m38002N(int i) {
         if (i == 2 || i == 4) {
             return 6005;
         }
@@ -299,23 +299,23 @@ public final class C1216l0 {
         }
     }
 
-    public static int m37998O(String str) {
+    public static int m38001O(String str) {
         String[] A0;
         int length;
-        if (str == null || (length = (A0 = m38020A0(str, "_")).length) < 2) {
+        if (str == null || (length = (A0 = m38023A0(str, "_")).length) < 2) {
             return 0;
         }
         String str2 = A0[length - 1];
         boolean z = length >= 3 && "neg".equals(A0[length - 2]);
         try {
-            int parseInt = Integer.parseInt((String) C1186a.m38185e(str2));
+            int parseInt = Integer.parseInt((String) C1186a.m38188e(str2));
             return z ? -parseInt : parseInt;
         } catch (NumberFormatException unused) {
             return 0;
         }
     }
 
-    public static String m37997P(int i) {
+    public static String m38000P(int i) {
         if (i == 0) {
             return "NO";
         }
@@ -334,26 +334,26 @@ public final class C1216l0 {
         throw new IllegalStateException();
     }
 
-    public static String m37996Q(Locale locale) {
-        return f4526a >= 21 ? m37995R(locale) : locale.toString();
+    public static String m37999Q(Locale locale) {
+        return f4526a >= 21 ? m37998R(locale) : locale.toString();
     }
 
-    public static String m37995R(Locale locale) {
+    public static String m37998R(Locale locale) {
         return locale.toLanguageTag();
     }
 
-    public static long m37994S(long j, float f) {
+    public static long m37997S(long j, float f) {
         return f == 1.0f ? j : Math.round(j * f);
     }
 
-    public static long m37993T(long j) {
+    public static long m37996T(long j) {
         if (j == -9223372036854775807L) {
             return System.currentTimeMillis();
         }
         return j + SystemClock.elapsedRealtime();
     }
 
-    public static int m37992U(int i) {
+    public static int m37995U(int i) {
         if (i == 8) {
             return 3;
         }
@@ -363,11 +363,11 @@ public final class C1216l0 {
         return 2;
     }
 
-    public static C6600g1 m37991V(int i, int i2, int i3) {
-        return new C6600g1.C6602b().m19858e0("audio/raw").m19886H(i2).m19856f0(i3).m19869Y(i).m19889E();
+    public static C6600g1 m37994V(int i, int i2, int i3) {
+        return new C6600g1.C6602b().m19859e0("audio/raw").m19887H(i2).m19857f0(i3).m19870Y(i).m19890E();
     }
 
-    public static int m37990W(int i, int i2) {
+    public static int m37993W(int i, int i2) {
         if (i != 2) {
             if (i == 3) {
                 return i2;
@@ -387,11 +387,11 @@ public final class C1216l0 {
         return i2 * 2;
     }
 
-    public static long m37989X(long j, float f) {
+    public static long m37992X(long j, float f) {
         return f == 1.0f ? j : Math.round(j / f);
     }
 
-    public static int m37988Y(int i) {
+    public static int m37991Y(int i) {
         if (i == 13) {
             return 1;
         }
@@ -415,47 +415,47 @@ public final class C1216l0 {
         }
     }
 
-    public static String[] m37987Z() {
-        String[] a0 = m37985a0();
+    public static String[] m37990Z() {
+        String[] a0 = m37988a0();
         for (int i = 0; i < a0.length; i++) {
-            a0[i] = m37949s0(a0[i]);
+            a0[i] = m37952s0(a0[i]);
         }
         return a0;
     }
 
-    public static String[] m37985a0() {
+    public static String[] m37988a0() {
         Configuration configuration = Resources.getSystem().getConfiguration();
-        return f4526a >= 24 ? m37983b0(configuration) : new String[]{m37996Q(configuration.locale)};
+        return f4526a >= 24 ? m37986b0(configuration) : new String[]{m37999Q(configuration.locale)};
     }
 
-    public static long m37984b(long j, long j2, long j3) {
+    public static long m37987b(long j, long j2, long j3) {
         long j4 = j + j2;
         return ((j ^ j4) & (j2 ^ j4)) < 0 ? j3 : j4;
     }
 
-    public static String[] m37983b0(Configuration configuration) {
-        return m38020A0(configuration.getLocales().toLanguageTags(), ",");
+    public static String[] m37986b0(Configuration configuration) {
+        return m38023A0(configuration.getLocales().toLanguageTags(), ",");
     }
 
-    public static boolean m37982c(Object obj, Object obj2) {
+    public static boolean m37985c(Object obj, Object obj2) {
         if (obj == null) {
             return obj2 == null;
         }
         return obj.equals(obj2);
     }
 
-    public static String m37981c0(String str) {
+    public static String m37984c0(String str) {
         try {
             Class<?> cls = Class.forName("android.os.SystemProperties");
             return (String) cls.getMethod("get", String.class).invoke(cls, str);
         } catch (Exception e) {
             String valueOf = String.valueOf(str);
-            C1230s.m37886d("Util", valueOf.length() != 0 ? "Failed to read system property ".concat(valueOf) : new String("Failed to read system property "), e);
+            C1230s.m37889d("Util", valueOf.length() != 0 ? "Failed to read system property ".concat(valueOf) : new String("Failed to read system property "), e);
             return null;
         }
     }
 
-    public static <T extends Comparable<? super T>> int m37980d(List<? extends Comparable<? super T>> list, T t, boolean z, boolean z2) {
+    public static <T extends Comparable<? super T>> int m37983d(List<? extends Comparable<? super T>> list, T t, boolean z, boolean z2) {
         int i;
         int binarySearch = Collections.binarySearch(list, t);
         if (binarySearch < 0) {
@@ -473,7 +473,7 @@ public final class C1216l0 {
         return z2 ? Math.min(list.size() - 1, i) : i;
     }
 
-    public static String m37979d0(int i) {
+    public static String m37982d0(int i) {
         switch (i) {
             case VoIPController.ERROR_PRIVACY:
                 return "none";
@@ -504,7 +504,7 @@ public final class C1216l0 {
         }
     }
 
-    public static int m37978e(long[] jArr, long j, boolean z, boolean z2) {
+    public static int m37981e(long[] jArr, long j, boolean z, boolean z2) {
         int i;
         int binarySearch = Arrays.binarySearch(jArr, j);
         if (binarySearch < 0) {
@@ -521,23 +521,23 @@ public final class C1216l0 {
         return z2 ? Math.min(jArr.length - 1, i) : i;
     }
 
-    public static byte[] m37977e0(String str) {
-        return str.getBytes(C10428d.f33498c);
+    public static byte[] m37980e0(String str) {
+        return str.getBytes(C10428d.f33501c);
     }
 
-    public static int m37976f(C1231t tVar, long j, boolean z, boolean z2) {
+    public static int m37979f(C1231t tVar, long j, boolean z, boolean z2) {
         int i;
-        int c = tVar.m37877c() - 1;
+        int c = tVar.m37880c() - 1;
         int i2 = 0;
         while (i2 <= c) {
             int i3 = (i2 + c) >>> 1;
-            if (tVar.m37878b(i3) < j) {
+            if (tVar.m37881b(i3) < j) {
                 i2 = i3 + 1;
             } else {
                 c = i3 - 1;
             }
         }
-        if (z && (i = c + 1) < tVar.m37877c() && tVar.m37878b(i) == j) {
+        if (z && (i = c + 1) < tVar.m37880c() && tVar.m37881b(i) == j) {
             return i;
         }
         if (!z2 || c != -1) {
@@ -546,29 +546,29 @@ public final class C1216l0 {
         return 0;
     }
 
-    public static boolean m37975f0(C1189b0 b0Var, C1189b0 b0Var2, Inflater inflater) {
-        if (b0Var.m38142a() <= 0) {
+    public static boolean m37978f0(C1189b0 b0Var, C1189b0 b0Var2, Inflater inflater) {
+        if (b0Var.m38145a() <= 0) {
             return false;
         }
-        if (b0Var2.m38141b() < b0Var.m38142a()) {
-            b0Var2.m38140c(b0Var.m38142a() * 2);
+        if (b0Var2.m38144b() < b0Var.m38145a()) {
+            b0Var2.m38143c(b0Var.m38145a() * 2);
         }
         if (inflater == null) {
             inflater = new Inflater();
         }
-        inflater.setInput(b0Var.m38139d(), b0Var.m38138e(), b0Var.m38142a());
+        inflater.setInput(b0Var.m38142d(), b0Var.m38141e(), b0Var.m38145a());
         int i = 0;
         while (true) {
             try {
-                i += inflater.inflate(b0Var2.m38139d(), i, b0Var2.m38141b() - i);
+                i += inflater.inflate(b0Var2.m38142d(), i, b0Var2.m38144b() - i);
                 if (!inflater.finished()) {
                     if (inflater.needsDictionary() || inflater.needsInput()) {
                         break;
-                    } else if (i == b0Var2.m38141b()) {
-                        b0Var2.m38140c(b0Var2.m38141b() * 2);
+                    } else if (i == b0Var2.m38144b()) {
+                        b0Var2.m38143c(b0Var2.m38144b() * 2);
                     }
                 } else {
-                    b0Var2.m38145O(i);
+                    b0Var2.m38148O(i);
                     return true;
                 }
             } catch (DataFormatException unused) {
@@ -580,7 +580,7 @@ public final class C1216l0 {
         return false;
     }
 
-    public static <T extends Comparable<? super T>> int m37974g(List<? extends Comparable<? super T>> list, T t, boolean z, boolean z2) {
+    public static <T extends Comparable<? super T>> int m37977g(List<? extends Comparable<? super T>> list, T t, boolean z, boolean z2) {
         int i;
         int binarySearch = Collections.binarySearch(list, t);
         if (binarySearch < 0) {
@@ -597,11 +597,11 @@ public final class C1216l0 {
         return z2 ? Math.max(0, i) : i;
     }
 
-    public static boolean m37973g0(Context context) {
+    public static boolean m37976g0(Context context) {
         return f4526a >= 23 && context.getPackageManager().hasSystemFeature("android.hardware.type.automotive");
     }
 
-    public static int m37972h(int[] iArr, int i, boolean z, boolean z2) {
+    public static int m37975h(int[] iArr, int i, boolean z, boolean z2) {
         int i2;
         int binarySearch = Arrays.binarySearch(iArr, i);
         if (binarySearch < 0) {
@@ -618,11 +618,11 @@ public final class C1216l0 {
         return z2 ? Math.max(0, i2) : i2;
     }
 
-    public static boolean m37971h0(int i) {
+    public static boolean m37974h0(int i) {
         return i == 536870912 || i == 805306368 || i == 4;
     }
 
-    public static int m37970i(long[] jArr, long j, boolean z, boolean z2) {
+    public static int m37973i(long[] jArr, long j, boolean z, boolean z2) {
         int i;
         int binarySearch = Arrays.binarySearch(jArr, j);
         if (binarySearch < 0) {
@@ -639,39 +639,39 @@ public final class C1216l0 {
         return z2 ? Math.max(0, i) : i;
     }
 
-    public static boolean m37969i0(int i) {
+    public static boolean m37972i0(int i) {
         return i == 3 || i == 2 || i == 268435456 || i == 536870912 || i == 805306368 || i == 4;
     }
 
     @EnsuresNonNull({"#1"})
-    public static <T> T m37968j(T t) {
+    public static <T> T m37971j(T t) {
         return t;
     }
 
-    public static boolean m37967j0(int i) {
+    public static boolean m37970j0(int i) {
         return i == 10 || i == 13;
     }
 
     @EnsuresNonNull({"#1"})
-    public static <T> T[] m37966k(T[] tArr) {
+    public static <T> T[] m37969k(T[] tArr) {
         return tArr;
     }
 
-    public static boolean m37965k0(Uri uri) {
+    public static boolean m37968k0(Uri uri) {
         String scheme = uri.getScheme();
         return TextUtils.isEmpty(scheme) || "file".equals(scheme);
     }
 
-    public static int m37964l(int i, int i2) {
+    public static int m37967l(int i, int i2) {
         return ((i + i2) - 1) / i2;
     }
 
-    public static boolean m37963l0(Context context) {
+    public static boolean m37966l0(Context context) {
         UiModeManager uiModeManager = (UiModeManager) context.getApplicationContext().getSystemService("uimode");
         return uiModeManager != null && uiModeManager.getCurrentModeType() == 4;
     }
 
-    public static void m37962m(Closeable closeable) {
+    public static void m37965m(Closeable closeable) {
         if (closeable != null) {
             try {
                 closeable.close();
@@ -680,11 +680,11 @@ public final class C1216l0 {
         }
     }
 
-    public static Thread m37961m0(String str, Runnable runnable) {
+    public static Thread m37964m0(String str, Runnable runnable) {
         return new Thread(runnable, str);
     }
 
-    public static int m37960n(long j, long j2) {
+    public static int m37963n(long j, long j2) {
         int i = (j > j2 ? 1 : (j == j2 ? 0 : -1));
         if (i < 0) {
             return -1;
@@ -692,7 +692,7 @@ public final class C1216l0 {
         return i == 0 ? 0 : 1;
     }
 
-    public static int m37959n0(int[] iArr, int i) {
+    public static int m37962n0(int[] iArr, int i) {
         for (int i2 = 0; i2 < iArr.length; i2++) {
             if (iArr[i2] == i) {
                 return i2;
@@ -701,11 +701,11 @@ public final class C1216l0 {
         return -1;
     }
 
-    public static float m37958o(float f, float f2, float f3) {
+    public static float m37961o(float f, float f2, float f3) {
         return Math.max(f2, Math.min(f, f3));
     }
 
-    public static String m37957o0(String str) {
+    public static String m37960o0(String str) {
         int i = 0;
         while (true) {
             String[] strArr = f4538m;
@@ -721,11 +721,11 @@ public final class C1216l0 {
         }
     }
 
-    public static int m37956p(int i, int i2, int i3) {
+    public static int m37959p(int i, int i2, int i3) {
         return Math.max(i2, Math.min(i, i3));
     }
 
-    public static <T> void m37955p0(List<T> list, int i, int i2, int i3) {
+    public static <T> void m37958p0(List<T> list, int i, int i2, int i3) {
         ArrayDeque arrayDeque = new ArrayDeque();
         for (int i4 = (i2 - i) - 1; i4 >= 0; i4--) {
             arrayDeque.addFirst(list.remove(i + i4));
@@ -733,15 +733,15 @@ public final class C1216l0 {
         list.addAll(Math.min(i3, list.size()), arrayDeque);
     }
 
-    public static long m37954q(long j, long j2, long j3) {
+    public static long m37957q(long j, long j2, long j3) {
         return Math.max(j2, Math.min(j, j3));
     }
 
-    public static long m37953q0(long j) {
+    public static long m37956q0(long j) {
         return (j == -9223372036854775807L || j == Long.MIN_VALUE) ? j : j * 1000;
     }
 
-    public static int m37952r(byte[] bArr, int i, int i2, int i3) {
+    public static int m37955r(byte[] bArr, int i, int i2, int i3) {
         while (i < i2) {
             i3 = f4539n[((i3 >>> 24) ^ (bArr[i] & 255)) & 255] ^ (i3 << 8);
             i++;
@@ -749,18 +749,18 @@ public final class C1216l0 {
         return i3;
     }
 
-    public static ExecutorService m37951r0(final String str) {
+    public static ExecutorService m37954r0(final String str) {
         return Executors.newSingleThreadExecutor(new ThreadFactory() {
             @Override
             public final Thread newThread(Runnable runnable) {
                 Thread m0;
-                m0 = C1216l0.m37961m0(str, runnable);
+                m0 = C1216l0.m37964m0(str, runnable);
                 return m0;
             }
         });
     }
 
-    public static int m37950s(byte[] bArr, int i, int i2, int i3) {
+    public static int m37953s(byte[] bArr, int i, int i2, int i3) {
         while (i < i2) {
             i3 = f4540o[i3 ^ (bArr[i] & 255)];
             i++;
@@ -768,7 +768,7 @@ public final class C1216l0 {
         return i3;
     }
 
-    public static String m37949s0(String str) {
+    public static String m37952s0(String str) {
         if (str == null) {
             return null;
         }
@@ -777,9 +777,9 @@ public final class C1216l0 {
             str = replace;
         }
         String c = C10422b.m5149c(str);
-        String str2 = m38018B0(c, "-")[0];
+        String str2 = m38021B0(c, "-")[0];
         if (f4536k == null) {
-            f4536k = m37938y();
+            f4536k = m37941y();
         }
         String str3 = f4536k.get(str2);
         if (str3 != null) {
@@ -787,47 +787,47 @@ public final class C1216l0 {
             c = valueOf.length() != 0 ? str3.concat(valueOf) : new String(str3);
             str2 = str3;
         }
-        return ("no".equals(str2) || "i".equals(str2) || "zh".equals(str2)) ? m37957o0(c) : c;
+        return ("no".equals(str2) || "i".equals(str2) || "zh".equals(str2)) ? m37960o0(c) : c;
     }
 
-    public static Handler m37948t(Looper looper, Handler.Callback callback) {
+    public static Handler m37951t(Looper looper, Handler.Callback callback) {
         return new Handler(looper, callback);
     }
 
-    public static <T> T[] m37947t0(T[] tArr, T[] tArr2) {
+    public static <T> T[] m37950t0(T[] tArr, T[] tArr2) {
         T[] tArr3 = (T[]) Arrays.copyOf(tArr, tArr.length + tArr2.length);
         System.arraycopy(tArr2, 0, tArr3, tArr.length, tArr2.length);
         return tArr3;
     }
 
-    public static Handler m37946u() {
-        return m37944v(null);
+    public static Handler m37949u() {
+        return m37947v(null);
     }
 
-    public static <T> T[] m37945u0(T[] tArr, int i) {
-        C1186a.m38189a(i <= tArr.length);
+    public static <T> T[] m37948u0(T[] tArr, int i) {
+        C1186a.m38192a(i <= tArr.length);
         return (T[]) Arrays.copyOf(tArr, i);
     }
 
-    public static Handler m37944v(Handler.Callback callback) {
-        return m37948t((Looper) C1186a.m38182h(Looper.myLooper()), callback);
+    public static Handler m37947v(Handler.Callback callback) {
+        return m37951t((Looper) C1186a.m38185h(Looper.myLooper()), callback);
     }
 
-    public static <T> T[] m37943v0(T[] tArr, int i, int i2) {
+    public static <T> T[] m37946v0(T[] tArr, int i, int i2) {
         boolean z = true;
-        C1186a.m38189a(i >= 0);
+        C1186a.m38192a(i >= 0);
         if (i2 > tArr.length) {
             z = false;
         }
-        C1186a.m38189a(z);
+        C1186a.m38192a(z);
         return (T[]) Arrays.copyOfRange(tArr, i, i2);
     }
 
-    public static Handler m37942w() {
-        return m37940x(null);
+    public static Handler m37945w() {
+        return m37943x(null);
     }
 
-    public static boolean m37941w0(Handler handler, Runnable runnable) {
+    public static boolean m37944w0(Handler handler, Runnable runnable) {
         if (!handler.getLooper().getThread().isAlive()) {
             return false;
         }
@@ -838,15 +838,15 @@ public final class C1216l0 {
         return true;
     }
 
-    public static Handler m37940x(Handler.Callback callback) {
-        return m37948t(m38003J(), callback);
+    public static Handler m37943x(Handler.Callback callback) {
+        return m37951t(m38006J(), callback);
     }
 
-    public static boolean m37939x0(Parcel parcel) {
+    public static boolean m37942x0(Parcel parcel) {
         return parcel.readInt() != 0;
     }
 
-    public static HashMap<String, String> m37938y() {
+    public static HashMap<String, String> m37941y() {
         String[] iSOLanguages = Locale.getISOLanguages();
         HashMap<String, String> hashMap = new HashMap<>(iSOLanguages.length + f4537l.length);
         int i = 0;
@@ -869,7 +869,7 @@ public final class C1216l0 {
         }
     }
 
-    public static long m37937y0(long j, long j2, long j3) {
+    public static long m37940y0(long j, long j2, long j3) {
         int i = (j3 > j2 ? 1 : (j3 == j2 ? 0 : -1));
         if (i >= 0 && j3 % j2 == 0) {
             return j / (j3 / j2);
@@ -880,11 +880,11 @@ public final class C1216l0 {
         return (long) (j * (j2 / j3));
     }
 
-    public static String m37936z(String str, Object... objArr) {
+    public static String m37939z(String str, Object... objArr) {
         return String.format(Locale.US, str, objArr);
     }
 
-    public static void m37935z0(long[] jArr, long j, long j2) {
+    public static void m37938z0(long[] jArr, long j, long j2) {
         int i = 0;
         int i2 = (j2 > j ? 1 : (j2 == j ? 0 : -1));
         if (i2 >= 0 && j2 % j == 0) {

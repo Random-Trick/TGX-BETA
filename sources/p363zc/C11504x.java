@@ -7,7 +7,7 @@ import sc.View$OnClickListenerC8851y1;
 import td.AbstractC9323v4;
 
 public class C11504x extends View$OnClickListenerC8851y1 {
-    public AbstractC8809o<?> f36521M0;
+    public AbstractC8809o<?> f36523M0;
 
     public interface AbstractC11505a<VC extends AbstractC8809o<?>> {
         VC mo380a(C11504x xVar);
@@ -35,11 +35,11 @@ public class C11504x extends View$OnClickListenerC8851y1 {
         a.m9255fd(new Runnable() {
             @Override
             public final void run() {
-                C11504x.this.m11113t3();
+                C11504x.this.m11112t3();
             }
         });
         xVar.setController(a);
-        xVar.m11104z2();
+        xVar.m11103z2();
     }
 
     public static void m388F3(AbstractC9323v4<?> v4Var, final TdApi.ChatInviteLinkInfo chatInviteLinkInfo, final Runnable runnable) {
@@ -67,8 +67,8 @@ public class C11504x extends View$OnClickListenerC8851y1 {
     public static void m386H3(AbstractC9323v4<?> v4Var, AbstractC11505a<?> aVar) {
         C11504x xVar = new C11504x(v4Var);
         xVar.setController(aVar.mo380a(xVar));
-        xVar.m11104z2();
-        xVar.m11113t3();
+        xVar.m11103z2();
+        xVar.m11112t3();
     }
 
     public static void m385I3(AbstractC9323v4<?> v4Var, final AbstractC4761s4 s4Var, final long[] jArr) {
@@ -84,11 +84,11 @@ public class C11504x extends View$OnClickListenerC8851y1 {
 
     @Override
     public AbstractC8809o<?> mo384m2(int i) {
-        return this.f36521M0;
+        return this.f36523M0;
     }
 
     public void setController(AbstractC8809o<?> oVar) {
         oVar.get();
-        this.f36521M0 = oVar;
+        this.f36523M0 = oVar;
     }
 }

@@ -8,21 +8,21 @@ public class C4801u extends AbstractC4718o<TdApi.InlineQueryResultAnimation> {
     public final C4623e3 f16370a0;
 
     public C4801u(AbstractView$OnTouchListenerC7889a aVar, C10930q6 q6Var, TdApi.InlineQueryResultAnimation inlineQueryResultAnimation) {
-        super(aVar, q6Var, 6, inlineQueryResultAnimation.f25379id, inlineQueryResultAnimation);
+        super(aVar, q6Var, 6, inlineQueryResultAnimation.f25382id, inlineQueryResultAnimation);
         this.f16370a0 = new C4623e3(q6Var, inlineQueryResultAnimation.animation);
     }
 
-    public C4623e3 m25224Z() {
+    public C4623e3 m25225Z() {
         return this.f16370a0;
     }
 
     @Override
-    public int mo25048l() {
-        return this.f16370a0.m26836e();
+    public int mo25049l() {
+        return this.f16370a0.m26838e();
     }
 
     @Override
-    public int mo25047m() {
-        return this.f16370a0.m26835f();
+    public int mo25048m() {
+        return this.f16370a0.m26837f();
     }
 }

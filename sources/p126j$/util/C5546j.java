@@ -16,15 +16,15 @@ public final class C5546j {
         this.f18077a = obj;
     }
 
-    public static C5546j m22477a() {
+    public static C5546j m22478a() {
         return f18076b;
     }
 
-    public static C5546j m22474d(Object obj) {
+    public static C5546j m22475d(Object obj) {
         return new C5546j(obj);
     }
 
-    public Object m22476b() {
+    public Object m22477b() {
         Object obj = this.f18077a;
         if (obj != null) {
             return obj;
@@ -32,7 +32,7 @@ public final class C5546j {
         throw new NoSuchElementException("No value present");
     }
 
-    public boolean m22475c() {
+    public boolean m22476c() {
         return this.f18077a != null;
     }
 
@@ -43,7 +43,7 @@ public final class C5546j {
         if (!(obj instanceof C5546j)) {
             return false;
         }
-        return AbstractC5485a.m22585A(this.f18077a, ((C5546j) obj).f18077a);
+        return AbstractC5485a.m22586A(this.f18077a, ((C5546j) obj).f18077a);
     }
 
     public int hashCode() {

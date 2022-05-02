@@ -168,9 +168,9 @@ public final class C1196f {
         hashMap.put("yellowgreen", -6632142);
     }
 
-    public static int m38087a(String str, boolean z) {
+    public static int m38090a(String str, boolean z) {
         int i;
-        C1186a.m38189a(!TextUtils.isEmpty(str));
+        C1186a.m38192a(!TextUtils.isEmpty(str));
         String replace = str.replace(" ", "");
         if (replace.charAt(0) == '#') {
             int parseLong = (int) Long.parseLong(replace.substring(1), 16);
@@ -186,16 +186,16 @@ public final class C1196f {
             Matcher matcher = (z ? f4494c : f4493b).matcher(replace);
             if (matcher.matches()) {
                 if (z) {
-                    i = (int) (Float.parseFloat((String) C1186a.m38185e(matcher.group(4))) * 255.0f);
+                    i = (int) (Float.parseFloat((String) C1186a.m38188e(matcher.group(4))) * 255.0f);
                 } else {
-                    i = Integer.parseInt((String) C1186a.m38185e(matcher.group(4)), 10);
+                    i = Integer.parseInt((String) C1186a.m38188e(matcher.group(4)), 10);
                 }
-                return Color.argb(i, Integer.parseInt((String) C1186a.m38185e(matcher.group(1)), 10), Integer.parseInt((String) C1186a.m38185e(matcher.group(2)), 10), Integer.parseInt((String) C1186a.m38185e(matcher.group(3)), 10));
+                return Color.argb(i, Integer.parseInt((String) C1186a.m38188e(matcher.group(1)), 10), Integer.parseInt((String) C1186a.m38188e(matcher.group(2)), 10), Integer.parseInt((String) C1186a.m38188e(matcher.group(3)), 10));
             }
         } else if (replace.startsWith("rgb")) {
             Matcher matcher2 = f4492a.matcher(replace);
             if (matcher2.matches()) {
-                return Color.rgb(Integer.parseInt((String) C1186a.m38185e(matcher2.group(1)), 10), Integer.parseInt((String) C1186a.m38185e(matcher2.group(2)), 10), Integer.parseInt((String) C1186a.m38185e(matcher2.group(3)), 10));
+                return Color.rgb(Integer.parseInt((String) C1186a.m38188e(matcher2.group(1)), 10), Integer.parseInt((String) C1186a.m38188e(matcher2.group(2)), 10), Integer.parseInt((String) C1186a.m38188e(matcher2.group(3)), 10));
             }
         } else {
             Integer num = f4495d.get(C10422b.m5149c(replace));
@@ -206,11 +206,11 @@ public final class C1196f {
         throw new IllegalArgumentException();
     }
 
-    public static int m38086b(String str) {
-        return m38087a(str, true);
+    public static int m38089b(String str) {
+        return m38090a(str, true);
     }
 
-    public static int m38085c(String str) {
-        return m38087a(str, false);
+    public static int m38088c(String str) {
+        return m38090a(str, false);
     }
 }

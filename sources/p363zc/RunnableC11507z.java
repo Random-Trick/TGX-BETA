@@ -1,7 +1,7 @@
 package p363zc;
 
 public final class RunnableC11507z implements Runnable {
-    public static final RunnableC11507z f36523a = new RunnableC11507z();
+    public static final RunnableC11507z f36525a = new RunnableC11507z();
 
     @Override
     public final void run() {

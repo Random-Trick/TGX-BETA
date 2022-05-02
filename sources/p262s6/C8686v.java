@@ -9,7 +9,7 @@ import java.io.OutputStream;
 import org.thunderdog.challegram.Log;
 
 public final class C8686v {
-    public static long m11738a(AbstractC8687w wVar, InputStream inputStream, OutputStream outputStream, long j) {
+    public static long m11737a(AbstractC8687w wVar, InputStream inputStream, OutputStream outputStream, long j) {
         byte[] bArr = new byte[Log.TAG_VIDEO];
         DataInputStream dataInputStream = new DataInputStream(new BufferedInputStream(inputStream, Log.TAG_EMOJI));
         int readInt = dataInputStream.readInt();
@@ -32,53 +32,53 @@ public final class C8686v {
                         switch (read2) {
                             case 247:
                                 read2 = dataInputStream.readUnsignedShort();
-                                m11736c(bArr, dataInputStream, outputStream, read2, j3);
+                                m11735c(bArr, dataInputStream, outputStream, read2, j3);
                                 break;
                             case 248:
                                 read2 = dataInputStream.readInt();
-                                m11736c(bArr, dataInputStream, outputStream, read2, j3);
+                                m11735c(bArr, dataInputStream, outputStream, read2, j3);
                                 break;
                             case 249:
                                 long readUnsignedShort = dataInputStream.readUnsignedShort();
                                 read2 = dataInputStream.read();
                                 if (read2 != -1) {
-                                    m11737b(bArr, wVar, outputStream, readUnsignedShort, read2, j3);
+                                    m11736b(bArr, wVar, outputStream, readUnsignedShort, read2, j3);
                                     break;
                                 } else {
                                     throw new IOException("Unexpected end of patch");
                                 }
                             case 250:
                                 read2 = dataInputStream.readUnsignedShort();
-                                m11737b(bArr, wVar, outputStream, dataInputStream.readUnsignedShort(), read2, j3);
+                                m11736b(bArr, wVar, outputStream, dataInputStream.readUnsignedShort(), read2, j3);
                                 break;
                             case 251:
                                 read2 = dataInputStream.readInt();
-                                m11737b(bArr, wVar, outputStream, dataInputStream.readUnsignedShort(), read2, j3);
+                                m11736b(bArr, wVar, outputStream, dataInputStream.readUnsignedShort(), read2, j3);
                                 break;
                             case 252:
                                 long readInt2 = dataInputStream.readInt();
                                 read2 = dataInputStream.read();
                                 if (read2 != -1) {
-                                    m11737b(bArr, wVar, outputStream, readInt2, read2, j3);
+                                    m11736b(bArr, wVar, outputStream, readInt2, read2, j3);
                                     break;
                                 } else {
                                     throw new IOException("Unexpected end of patch");
                                 }
                             case 253:
                                 read2 = dataInputStream.readUnsignedShort();
-                                m11737b(bArr, wVar, outputStream, dataInputStream.readInt(), read2, j3);
+                                m11736b(bArr, wVar, outputStream, dataInputStream.readInt(), read2, j3);
                                 break;
                             case 254:
                                 read2 = dataInputStream.readInt();
-                                m11737b(bArr, wVar, outputStream, dataInputStream.readInt(), read2, j3);
+                                m11736b(bArr, wVar, outputStream, dataInputStream.readInt(), read2, j3);
                                 break;
                             case 255:
                                 long readLong = dataInputStream.readLong();
                                 read2 = dataInputStream.readInt();
-                                m11737b(bArr, wVar, outputStream, readLong, read2, j3);
+                                m11736b(bArr, wVar, outputStream, readLong, read2, j3);
                                 break;
                             default:
-                                m11736c(bArr, dataInputStream, outputStream, read2, j3);
+                                m11735c(bArr, dataInputStream, outputStream, read2, j3);
                                 break;
                         }
                         j2 += read2;
@@ -95,7 +95,7 @@ public final class C8686v {
         }
     }
 
-    public static void m11737b(byte[] bArr, AbstractC8687w wVar, OutputStream outputStream, long j, int i, long j2) {
+    public static void m11736b(byte[] bArr, AbstractC8687w wVar, OutputStream outputStream, long j, int i, long j2) {
         int i2 = i;
         if (i2 < 0) {
             throw new IOException("copyLength negative");
@@ -103,7 +103,7 @@ public final class C8686v {
             long j3 = i2;
             if (j3 <= j2) {
                 try {
-                    InputStream y0 = new C8688x(wVar, j, j3).m11735y0();
+                    InputStream y0 = new C8688x(wVar, j, j3).m11734y0();
                     while (i2 > 0) {
                         int min = Math.min(i2, (int) Log.TAG_VIDEO);
                         int i3 = 0;
@@ -130,7 +130,7 @@ public final class C8686v {
         }
     }
 
-    public static void m11736c(byte[] bArr, DataInputStream dataInputStream, OutputStream outputStream, int i, long j) {
+    public static void m11735c(byte[] bArr, DataInputStream dataInputStream, OutputStream outputStream, int i, long j) {
         if (i < 0) {
             throw new IOException("copyLength negative");
         } else if (i <= j) {

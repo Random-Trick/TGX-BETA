@@ -17,7 +17,7 @@ public final class HandlerC6169t0 extends HandlerC9849i {
     public final void handleMessage(Message message) {
         int i = message.what;
         if (i == 1) {
-            ((AbstractC6165s0) message.obj).m21133b(this.f19548a);
+            ((AbstractC6165s0) message.obj).m21134b(this.f19548a);
         } else if (i != 2) {
             StringBuilder sb2 = new StringBuilder(31);
             sb2.append("Unknown message id: ");

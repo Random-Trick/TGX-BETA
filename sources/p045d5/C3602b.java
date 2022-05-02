@@ -20,76 +20,76 @@ public final class C3602b extends AbstractC6593f {
     }
 
     @Override
-    public void mo13719I() {
-        m29889S();
+    public void mo13718I() {
+        m29891S();
     }
 
     @Override
-    public void mo13718K(long j, boolean z) {
+    public void mo13717K(long j, boolean z) {
         this.f12282Z = Long.MIN_VALUE;
-        m29889S();
+        m29891S();
     }
 
     @Override
-    public void mo13717O(C6600g1[] g1VarArr, long j, long j2) {
+    public void mo13716O(C6600g1[] g1VarArr, long j, long j2) {
         this.f12280X = j2;
     }
 
-    public final float[] m29890R(ByteBuffer byteBuffer) {
+    public final float[] m29892R(ByteBuffer byteBuffer) {
         if (byteBuffer.remaining() != 16) {
             return null;
         }
-        this.f12279W.m38146N(byteBuffer.array(), byteBuffer.limit());
-        this.f12279W.m38144P(byteBuffer.arrayOffset() + 4);
+        this.f12279W.m38149N(byteBuffer.array(), byteBuffer.limit());
+        this.f12279W.m38147P(byteBuffer.arrayOffset() + 4);
         float[] fArr = new float[3];
         for (int i = 0; i < 3; i++) {
-            fArr[i] = Float.intBitsToFloat(this.f12279W.m38126q());
+            fArr[i] = Float.intBitsToFloat(this.f12279W.m38129q());
         }
         return fArr;
     }
 
-    public final void m29889S() {
+    public final void m29891S() {
         AbstractC3601a aVar = this.f12281Y;
         if (aVar != null) {
-            aVar.mo19322d();
+            aVar.mo19323d();
         }
     }
 
     @Override
-    public int mo11839a(C6600g1 g1Var) {
+    public int mo11838a(C6600g1 g1Var) {
         if ("application/x-camera-motion".equals(g1Var.f20575U)) {
-            return C6701t2.m19437a(4);
+            return C6701t2.m19438a(4);
         }
-        return C6701t2.m19437a(0);
+        return C6701t2.m19438a(0);
     }
 
     @Override
-    public String mo11838b() {
+    public String mo11837b() {
         return "CameraMotionRenderer";
     }
 
     @Override
-    public boolean mo13706e() {
-        return mo19477m();
+    public boolean mo13705e() {
+        return mo19478m();
     }
 
     @Override
-    public boolean mo13705f() {
+    public boolean mo13704f() {
         return true;
     }
 
     @Override
-    public void mo13704t(long j, long j2) {
-        while (!mo19477m() && this.f12282Z < 100000 + j) {
+    public void mo13703t(long j, long j2) {
+        while (!mo19478m() && this.f12282Z < 100000 + j) {
             this.f12278V.clear();
-            if (m19917P(m19921E(), this.f12278V, 0) == -4 && !this.f12278V.isEndOfStream()) {
+            if (m19918P(m19922E(), this.f12278V, 0) == -4 && !this.f12278V.isEndOfStream()) {
                 C8026g gVar = this.f12278V;
-                this.f12282Z = gVar.f26126N;
+                this.f12282Z = gVar.f26129N;
                 if (this.f12281Y != null && !gVar.isDecodeOnly()) {
-                    this.f12278V.m13778g();
-                    float[] R = m29890R((ByteBuffer) C1216l0.m37968j(this.f12278V.f26132c));
+                    this.f12278V.m13777g();
+                    float[] R = m29892R((ByteBuffer) C1216l0.m37971j(this.f12278V.f26135c));
                     if (R != null) {
-                        ((AbstractC3601a) C1216l0.m37968j(this.f12281Y)).mo19323a(this.f12282Z - this.f12280X, R);
+                        ((AbstractC3601a) C1216l0.m37971j(this.f12281Y)).mo19324a(this.f12282Z - this.f12280X, R);
                     }
                 }
             } else {

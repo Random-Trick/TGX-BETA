@@ -52,7 +52,7 @@ public class AudioTrackJNI {
                                     AudioTrackJNI.this.audioTrack.write(AudioTrackJNI.this.buffer, 0, 1920);
                                 }
                             } catch (Exception e) {
-                                VLog.m14058e(e);
+                                VLog.m14057e(e);
                             }
                             if (!AudioTrackJNI.this.running) {
                                 AudioTrackJNI.this.audioTrack.stop();
@@ -60,9 +60,9 @@ public class AudioTrackJNI {
                             }
                             continue;
                         }
-                        VLog.m14057i("audiotrack thread exits");
+                        VLog.m14056i("audiotrack thread exits");
                     } catch (Exception e2) {
-                        VLog.m14059e("error starting AudioTrack", e2);
+                        VLog.m14058e("error starting AudioTrack", e2);
                     }
                 }
             });
@@ -80,13 +80,13 @@ public class AudioTrackJNI {
             AudioTrack audioTrack = new AudioTrack(0, 48000, i3 == 1 ? 4 : 12, 2, bufferSize, 1);
             this.audioTrack = audioTrack;
             if (audioTrack.getState() != 1) {
-                VLog.m14055w("Error initializing AudioTrack with 48k, trying 44.1k with resampling");
+                VLog.m14054w("Error initializing AudioTrack with 48k, trying 44.1k with resampling");
                 try {
                     this.audioTrack.release();
                 } catch (Throwable unused) {
                 }
                 int bufferSize2 = getBufferSize(i4 * 6, 44100);
-                VLog.m14061d("buffer size: " + bufferSize2);
+                VLog.m14060d("buffer size: " + bufferSize2);
                 this.audioTrack = new AudioTrack(0, 44100, i3 == 1 ? 4 : 12, 2, bufferSize2, 1);
                 this.needResampling = true;
                 return;
@@ -103,7 +103,7 @@ public class AudioTrackJNI {
             try {
                 thread.join();
             } catch (InterruptedException e) {
-                VLog.m14058e(e);
+                VLog.m14057e(e);
             }
             this.thread = null;
         }

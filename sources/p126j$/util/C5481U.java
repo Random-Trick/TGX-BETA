@@ -20,8 +20,8 @@ public final class C5481U implements AbstractC5464C {
     }
 
     @Override
-    public boolean mo22124a(Consumer consumer) {
-        return AbstractC5485a.m22562s(this, consumer);
+    public boolean mo22125a(Consumer consumer) {
+        return AbstractC5485a.m22563s(this, consumer);
     }
 
     @Override
@@ -45,7 +45,7 @@ public final class C5481U implements AbstractC5464C {
             this.f17964b = i2;
             if (i < i2) {
                 do {
-                    qVar.mo22127e(jArr[i]);
+                    qVar.mo22128e(jArr[i]);
                     i++;
                 } while (i < i2);
             }
@@ -54,7 +54,7 @@ public final class C5481U implements AbstractC5464C {
 
     @Override
     public void forEachRemaining(Consumer consumer) {
-        AbstractC5485a.m22570e(this, consumer);
+        AbstractC5485a.m22571e(this, consumer);
     }
 
     @Override
@@ -66,13 +66,13 @@ public final class C5481U implements AbstractC5464C {
         }
         long[] jArr = this.f17963a;
         this.f17964b = i + 1;
-        qVar.mo22127e(jArr[i]);
+        qVar.mo22128e(jArr[i]);
         return true;
     }
 
     @Override
     public Comparator getComparator() {
-        if (AbstractC5485a.m22568j(this, 4)) {
+        if (AbstractC5485a.m22569j(this, 4)) {
             return null;
         }
         throw new IllegalStateException();
@@ -80,12 +80,12 @@ public final class C5481U implements AbstractC5464C {
 
     @Override
     public long getExactSizeIfKnown() {
-        return AbstractC5485a.m22569h(this);
+        return AbstractC5485a.m22570h(this);
     }
 
     @Override
     public boolean hasCharacteristics(int i) {
-        return AbstractC5485a.m22568j(this, i);
+        return AbstractC5485a.m22569j(this, i);
     }
 
     @Override

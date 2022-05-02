@@ -46,26 +46,26 @@ public final class C5685b3 implements Stream {
         this.f18318a = c3Var;
     }
 
-    public static Stream m22312i(AbstractC5690c3 c3Var) {
+    public static Stream m22313i(AbstractC5690c3 c3Var) {
         return new C5685b3(c3Var);
     }
 
     @Override
     public boolean allMatch(Predicate predicate) {
         AbstractC5690c3 c3Var = this.f18318a;
-        AbstractC5541w v = C5520b.m22486v(predicate);
+        AbstractC5541w v = C5520b.m22487v(predicate);
         AbstractC5719i2 i2Var = (AbstractC5719i2) c3Var;
         Objects.requireNonNull(i2Var);
-        return ((Boolean) i2Var.m22297t0(AbstractC5572D0.m22413m0(v, EnumC5557A0.ALL))).booleanValue();
+        return ((Boolean) i2Var.m22298t0(AbstractC5572D0.m22414m0(v, EnumC5557A0.ALL))).booleanValue();
     }
 
     @Override
     public boolean anyMatch(Predicate predicate) {
         AbstractC5690c3 c3Var = this.f18318a;
-        AbstractC5541w v = C5520b.m22486v(predicate);
+        AbstractC5541w v = C5520b.m22487v(predicate);
         AbstractC5719i2 i2Var = (AbstractC5719i2) c3Var;
         Objects.requireNonNull(i2Var);
-        return ((Boolean) i2Var.m22297t0(AbstractC5572D0.m22413m0(v, EnumC5557A0.ANY))).booleanValue();
+        return ((Boolean) i2Var.m22298t0(AbstractC5572D0.m22414m0(v, EnumC5557A0.ANY))).booleanValue();
     }
 
     @Override
@@ -76,28 +76,28 @@ public final class C5685b3 implements Stream {
     @Override
     public Object collect(Supplier supplier, BiConsumer biConsumer, BiConsumer biConsumer2) {
         AbstractC5690c3 c3Var = this.f18318a;
-        AbstractC5542x B = C5520b.m22501B(supplier);
+        AbstractC5542x B = C5520b.m22502B(supplier);
         p126j$.util.function.BiConsumer convert = BiConsumer.VivifiedWrapper.convert(biConsumer);
         p126j$.util.function.BiConsumer convert2 = BiConsumer.VivifiedWrapper.convert(biConsumer2);
         AbstractC5719i2 i2Var = (AbstractC5719i2) c3Var;
         Objects.requireNonNull(i2Var);
-        return i2Var.m22297t0(AbstractC5572D0.m22411n0(B, convert, convert2));
+        return i2Var.m22298t0(AbstractC5572D0.m22412n0(B, convert, convert2));
     }
 
     @Override
     public long count() {
-        return ((AbstractC5767s0) ((AbstractC5719i2) this.f18318a).m22246N0(C5726k.f18408m)).sum();
+        return ((AbstractC5767s0) ((AbstractC5719i2) this.f18318a).m22247N0(C5726k.f18408m)).sum();
     }
 
     @Override
     public Stream distinct() {
-        return m22312i(((AbstractC5719i2) this.f18318a).m22249K0());
+        return m22313i(((AbstractC5719i2) this.f18318a).m22250K0());
     }
 
     @Override
     public Stream filter(Predicate predicate) {
         AbstractC5690c3 c3Var = this.f18318a;
-        AbstractC5541w v = C5520b.m22486v(predicate);
+        AbstractC5541w v = C5520b.m22487v(predicate);
         AbstractC5719i2 i2Var = (AbstractC5719i2) c3Var;
         Objects.requireNonNull(i2Var);
         Objects.requireNonNull(v);
@@ -108,14 +108,14 @@ public final class C5685b3 implements Stream {
     public Optional findAny() {
         AbstractC5719i2 i2Var = (AbstractC5719i2) this.f18318a;
         Objects.requireNonNull(i2Var);
-        return AbstractC5485a.m22558w((C5546j) i2Var.m22297t0(new C5616M(false, 1, C5546j.m22477a(), C5676a.f18292i, C5611L.f18178a)));
+        return AbstractC5485a.m22559w((C5546j) i2Var.m22298t0(new C5616M(false, 1, C5546j.m22478a(), C5676a.f18292i, C5611L.f18178a)));
     }
 
     @Override
     public Optional findFirst() {
         AbstractC5719i2 i2Var = (AbstractC5719i2) this.f18318a;
         Objects.requireNonNull(i2Var);
-        return AbstractC5485a.m22558w((C5546j) i2Var.m22297t0(new C5616M(true, 1, C5546j.m22477a(), C5676a.f18292i, C5611L.f18178a)));
+        return AbstractC5485a.m22559w((C5546j) i2Var.m22298t0(new C5616M(true, 1, C5546j.m22478a(), C5676a.f18292i, C5611L.f18178a)));
     }
 
     @Override
@@ -135,7 +135,7 @@ public final class C5685b3 implements Stream {
         AbstractC5719i2 i2Var = (AbstractC5719i2) c3Var;
         Objects.requireNonNull(i2Var);
         Objects.requireNonNull(convert);
-        return C5586G.m22387i(new C5791x(i2Var, i2Var, 1, EnumC5705f3.f18366p | EnumC5705f3.f18364n | EnumC5705f3.f18370t, convert, 7));
+        return C5586G.m22388i(new C5791x(i2Var, i2Var, 1, EnumC5705f3.f18366p | EnumC5705f3.f18364n | EnumC5705f3.f18370t, convert, 7));
     }
 
     @Override
@@ -145,7 +145,7 @@ public final class C5685b3 implements Stream {
         AbstractC5719i2 i2Var = (AbstractC5719i2) c3Var;
         Objects.requireNonNull(i2Var);
         Objects.requireNonNull(convert);
-        return C5727k0.m22228i(new C5801z(i2Var, i2Var, 1, EnumC5705f3.f18366p | EnumC5705f3.f18364n | EnumC5705f3.f18370t, convert, 7));
+        return C5727k0.m22229i(new C5801z(i2Var, i2Var, 1, EnumC5705f3.f18366p | EnumC5705f3.f18364n | EnumC5705f3.f18370t, convert, 7));
     }
 
     @Override
@@ -155,17 +155,17 @@ public final class C5685b3 implements Stream {
         AbstractC5719i2 i2Var = (AbstractC5719i2) c3Var;
         Objects.requireNonNull(i2Var);
         Objects.requireNonNull(convert);
-        return C5772t0.m22177i(new C5556A(i2Var, i2Var, 1, EnumC5705f3.f18366p | EnumC5705f3.f18364n | EnumC5705f3.f18370t, convert, 6));
+        return C5772t0.m22178i(new C5556A(i2Var, i2Var, 1, EnumC5705f3.f18366p | EnumC5705f3.f18364n | EnumC5705f3.f18370t, convert, 6));
     }
 
     @Override
     public void forEach(Consumer consumer) {
-        this.f18318a.mo22244a(Consumer.VivifiedWrapper.convert(consumer));
+        this.f18318a.mo22245a(Consumer.VivifiedWrapper.convert(consumer));
     }
 
     @Override
     public void forEachOrdered(java.util.function.Consumer consumer) {
-        this.f18318a.mo22243c(Consumer.VivifiedWrapper.convert(consumer));
+        this.f18318a.mo22244c(Consumer.VivifiedWrapper.convert(consumer));
     }
 
     @Override
@@ -183,7 +183,7 @@ public final class C5685b3 implements Stream {
         AbstractC5719i2 i2Var = (AbstractC5719i2) this.f18318a;
         Objects.requireNonNull(i2Var);
         if (j >= 0) {
-            return m22312i(AbstractC5572D0.m22415l0(i2Var, 0L, j));
+            return m22313i(AbstractC5572D0.m22416l0(i2Var, 0L, j));
         }
         throw new IllegalArgumentException(Long.toString(j));
     }
@@ -200,17 +200,17 @@ public final class C5685b3 implements Stream {
 
     @Override
     public DoubleStream mapToDouble(ToDoubleFunction toDoubleFunction) {
-        return C5586G.m22387i(((AbstractC5719i2) this.f18318a).m22248L0(ToDoubleFunction.VivifiedWrapper.convert(toDoubleFunction)));
+        return C5586G.m22388i(((AbstractC5719i2) this.f18318a).m22249L0(ToDoubleFunction.VivifiedWrapper.convert(toDoubleFunction)));
     }
 
     @Override
     public IntStream mapToInt(ToIntFunction toIntFunction) {
-        return C5727k0.m22228i(((AbstractC5719i2) this.f18318a).m22247M0(ToIntFunction.VivifiedWrapper.convert(toIntFunction)));
+        return C5727k0.m22229i(((AbstractC5719i2) this.f18318a).m22248M0(ToIntFunction.VivifiedWrapper.convert(toIntFunction)));
     }
 
     @Override
     public LongStream mapToLong(ToLongFunction toLongFunction) {
-        return C5772t0.m22177i(((AbstractC5719i2) this.f18318a).m22246N0(ToLongFunction.VivifiedWrapper.convert(toLongFunction)));
+        return C5772t0.m22178i(((AbstractC5719i2) this.f18318a).m22247N0(ToLongFunction.VivifiedWrapper.convert(toLongFunction)));
     }
 
     @Override
@@ -218,7 +218,7 @@ public final class C5685b3 implements Stream {
         AbstractC5719i2 i2Var = (AbstractC5719i2) this.f18318a;
         Objects.requireNonNull(i2Var);
         Objects.requireNonNull(comparator);
-        return AbstractC5485a.m22558w(i2Var.m22245O0(new C5519a(comparator, 0)));
+        return AbstractC5485a.m22559w(i2Var.m22246O0(new C5519a(comparator, 0)));
     }
 
     @Override
@@ -226,30 +226,30 @@ public final class C5685b3 implements Stream {
         AbstractC5719i2 i2Var = (AbstractC5719i2) this.f18318a;
         Objects.requireNonNull(i2Var);
         Objects.requireNonNull(comparator);
-        return AbstractC5485a.m22558w(i2Var.m22245O0(new C5519a(comparator, 1)));
+        return AbstractC5485a.m22559w(i2Var.m22246O0(new C5519a(comparator, 1)));
     }
 
     @Override
     public boolean noneMatch(Predicate predicate) {
         AbstractC5690c3 c3Var = this.f18318a;
-        AbstractC5541w v = C5520b.m22486v(predicate);
+        AbstractC5541w v = C5520b.m22487v(predicate);
         AbstractC5719i2 i2Var = (AbstractC5719i2) c3Var;
         Objects.requireNonNull(i2Var);
-        return ((Boolean) i2Var.m22297t0(AbstractC5572D0.m22413m0(v, EnumC5557A0.NONE))).booleanValue();
+        return ((Boolean) i2Var.m22298t0(AbstractC5572D0.m22414m0(v, EnumC5557A0.NONE))).booleanValue();
     }
 
     @Override
     public BaseStream onClose(Runnable runnable) {
         AbstractC5686c cVar = (AbstractC5686c) this.f18318a;
-        cVar.m22311A0(runnable);
-        return C5706g.m22261i(cVar);
+        cVar.m22312A0(runnable);
+        return C5706g.m22262i(cVar);
     }
 
     @Override
     public BaseStream parallel() {
         AbstractC5686c cVar = (AbstractC5686c) this.f18318a;
-        cVar.m22310F0();
-        return C5706g.m22261i(cVar);
+        cVar.m22311F0();
+        return C5706g.m22262i(cVar);
     }
 
     @Override
@@ -266,22 +266,22 @@ public final class C5685b3 implements Stream {
     public Object reduce(Object obj, BiFunction biFunction, BinaryOperator binaryOperator) {
         AbstractC5690c3 c3Var = this.f18318a;
         p126j$.util.function.BiFunction convert = BiFunction.VivifiedWrapper.convert(biFunction);
-        AbstractC5521c p = C5520b.m22488p(binaryOperator);
+        AbstractC5521c p = C5520b.m22489p(binaryOperator);
         AbstractC5719i2 i2Var = (AbstractC5719i2) c3Var;
         Objects.requireNonNull(i2Var);
-        return i2Var.m22297t0(AbstractC5572D0.m22409o0(obj, convert, p));
+        return i2Var.m22298t0(AbstractC5572D0.m22410o0(obj, convert, p));
     }
 
     @Override
     public Optional reduce(BinaryOperator binaryOperator) {
-        return AbstractC5485a.m22558w(((AbstractC5719i2) this.f18318a).m22245O0(C5520b.m22488p(binaryOperator)));
+        return AbstractC5485a.m22559w(((AbstractC5719i2) this.f18318a).m22246O0(C5520b.m22489p(binaryOperator)));
     }
 
     @Override
     public BaseStream sequential() {
         AbstractC5686c cVar = (AbstractC5686c) this.f18318a;
-        cVar.m22309G0();
-        return C5706g.m22261i(cVar);
+        cVar.m22310G0();
+        return C5706g.m22262i(cVar);
     }
 
     @Override
@@ -292,9 +292,9 @@ public final class C5685b3 implements Stream {
         AbstractC5719i2 i2Var2 = i2Var;
         if (i >= 0) {
             if (i != 0) {
-                i2Var2 = AbstractC5572D0.m22415l0(i2Var, j, -1L);
+                i2Var2 = AbstractC5572D0.m22416l0(i2Var, j, -1L);
             }
-            return m22312i(i2Var2);
+            return m22313i(i2Var2);
         }
         throw new IllegalArgumentException(Long.toString(j));
     }
@@ -303,61 +303,61 @@ public final class C5685b3 implements Stream {
     public Stream sorted() {
         AbstractC5719i2 i2Var = (AbstractC5719i2) this.f18318a;
         Objects.requireNonNull(i2Var);
-        return m22312i(new C5614L2(i2Var));
+        return m22313i(new C5614L2(i2Var));
     }
 
     @Override
     public Spliterator spliterator() {
-        return C5467F.m22604a(((AbstractC5686c) this.f18318a).spliterator());
+        return C5467F.m22605a(((AbstractC5686c) this.f18318a).spliterator());
     }
 
     @Override
     public Object[] toArray() {
         C5596I i = C5596I.f18154c;
-        return AbstractC5572D0.m22433U(((AbstractC5719i2) this.f18318a).m22296u0(i), i).mo22152p(i);
+        return AbstractC5572D0.m22434U(((AbstractC5719i2) this.f18318a).m22297u0(i), i).mo22153p(i);
     }
 
     @Override
     public BaseStream unordered() {
-        return C5706g.m22261i(((AbstractC5719i2) this.f18318a).unordered());
+        return C5706g.m22262i(((AbstractC5719i2) this.f18318a).unordered());
     }
 
     @Override
     public Object collect(Collector collector) {
         Object obj;
         AbstractC5690c3 c3Var = this.f18318a;
-        C5721j b = C5721j.m22241b(collector);
+        C5721j b = C5721j.m22242b(collector);
         AbstractC5719i2 i2Var = (AbstractC5719i2) c3Var;
-        if (!i2Var.isParallel() || !b.m22242a().contains(EnumC5716i.CONCURRENT) || (i2Var.m22295y0() && !b.m22242a().contains(EnumC5716i.UNORDERED))) {
+        if (!i2Var.isParallel() || !b.m22243a().contains(EnumC5716i.CONCURRENT) || (i2Var.m22296y0() && !b.m22243a().contains(EnumC5716i.UNORDERED))) {
             Objects.requireNonNull(b);
-            obj = i2Var.m22297t0(new C5628O1(1, C5520b.m22488p(b.f18392a.combiner()), BiConsumer.VivifiedWrapper.convert(b.f18392a.accumulator()), C5520b.m22501B(b.f18392a.supplier()), b));
+            obj = i2Var.m22298t0(new C5628O1(1, C5520b.m22489p(b.f18392a.combiner()), BiConsumer.VivifiedWrapper.convert(b.f18392a.accumulator()), C5520b.m22502B(b.f18392a.supplier()), b));
         } else {
-            obj = ((C5520b) C5520b.m22501B(b.f18392a.supplier())).get();
-            i2Var.mo22244a(new C5741n(BiConsumer.VivifiedWrapper.convert(b.f18392a.accumulator()), obj, 5));
+            obj = ((C5520b) C5520b.m22502B(b.f18392a.supplier())).get();
+            i2Var.mo22245a(new C5741n(BiConsumer.VivifiedWrapper.convert(b.f18392a.accumulator()), obj, 5));
         }
-        return b.m22242a().contains(EnumC5716i.IDENTITY_FINISH) ? obj : Function.VivifiedWrapper.convert(b.f18392a.finisher()).mo22502a(obj);
+        return b.m22243a().contains(EnumC5716i.IDENTITY_FINISH) ? obj : Function.VivifiedWrapper.convert(b.f18392a.finisher()).mo22503a(obj);
     }
 
     @Override
     public Object reduce(Object obj, BinaryOperator binaryOperator) {
         AbstractC5690c3 c3Var = this.f18318a;
-        AbstractC5521c p = C5520b.m22488p(binaryOperator);
+        AbstractC5521c p = C5520b.m22489p(binaryOperator);
         AbstractC5719i2 i2Var = (AbstractC5719i2) c3Var;
         Objects.requireNonNull(i2Var);
-        return i2Var.m22297t0(AbstractC5572D0.m22409o0(obj, p, p));
+        return i2Var.m22298t0(AbstractC5572D0.m22410o0(obj, p, p));
     }
 
     @Override
     public Stream sorted(Comparator comparator) {
         AbstractC5719i2 i2Var = (AbstractC5719i2) this.f18318a;
         Objects.requireNonNull(i2Var);
-        return m22312i(new C5614L2(i2Var, comparator));
+        return m22313i(new C5614L2(i2Var, comparator));
     }
 
     @Override
     public Object[] toArray(IntFunction intFunction) {
         AbstractC5690c3 c3Var = this.f18318a;
-        AbstractC5531m t = C5520b.m22487t(intFunction);
-        return AbstractC5572D0.m22433U(((AbstractC5719i2) c3Var).m22296u0(t), t).mo22152p(t);
+        AbstractC5531m t = C5520b.m22488t(intFunction);
+        return AbstractC5572D0.m22434U(((AbstractC5719i2) c3Var).m22297u0(t), t).mo22153p(t);
     }
 }

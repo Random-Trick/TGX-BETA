@@ -50,8 +50,8 @@ public final class C0245c {
         linkedList.add(EverythingMeHomeBadger.class);
     }
 
-    public static void m42022a(Context context, int i) {
-        if (f748c != null || m42020c(context)) {
+    public static void m42025a(Context context, int i) {
+        if (f748c != null || m42023c(context)) {
             try {
                 f748c.mo18370b(context, f749d, i);
             } catch (Exception e) {
@@ -62,7 +62,7 @@ public final class C0245c {
         }
     }
 
-    public static void m42021b(Context context, Notification notification, int i) {
+    public static void m42024b(Context context, Notification notification, int i) {
         if (Build.MANUFACTURER.equalsIgnoreCase("Xiaomi")) {
             try {
                 Object obj = notification.getClass().getDeclaredField("extraNotification").get(notification);
@@ -75,7 +75,7 @@ public final class C0245c {
         }
     }
 
-    public static boolean m42020c(Context context) {
+    public static boolean m42023c(Context context) {
         Intent launchIntentForPackage = context.getPackageManager().getLaunchIntentForPackage(context.getPackageName());
         if (launchIntentForPackage == null) {
             Log.e("ShortcutBadger", "Unable to find launch intent for package " + context.getPackageName());

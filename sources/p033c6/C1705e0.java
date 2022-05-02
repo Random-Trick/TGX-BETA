@@ -15,43 +15,43 @@ public final class C1705e0 extends C1675c0 implements ListIterator {
     public final void add(Object obj) {
         int i;
         boolean isEmpty = this.f6234M.isEmpty();
-        m36101a();
+        m36104a();
         ((ListIterator) this.f6146a).add(obj);
         AbstractC1735g0 g0Var = this.f6234M.f6261O;
         i = g0Var.f6289M;
         g0Var.f6289M = i + 1;
         if (isEmpty) {
-            this.f6234M.m36089h();
+            this.f6234M.m36092h();
         }
     }
 
     @Override
     public final boolean hasPrevious() {
-        m36101a();
+        m36104a();
         return ((ListIterator) this.f6146a).hasPrevious();
     }
 
     @Override
     public final int nextIndex() {
-        m36101a();
+        m36104a();
         return ((ListIterator) this.f6146a).nextIndex();
     }
 
     @Override
     public final Object previous() {
-        m36101a();
+        m36104a();
         return ((ListIterator) this.f6146a).previous();
     }
 
     @Override
     public final int previousIndex() {
-        m36101a();
+        m36104a();
         return ((ListIterator) this.f6146a).previousIndex();
     }
 
     @Override
     public final void set(Object obj) {
-        m36101a();
+        m36104a();
         ((ListIterator) this.f6146a).set(obj);
     }
 

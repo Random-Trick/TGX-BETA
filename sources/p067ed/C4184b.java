@@ -26,9 +26,9 @@ public class C4184b {
         boolean z;
         String str;
         String str2;
-        int a = m28613a(Build.MANUFACTURER, Build.BRAND);
+        int a = m28615a(Build.MANUFACTURER, Build.BRAND);
         f14108a = a;
-        int b = m28612b(a, Build.PRODUCT);
+        int b = m28614b(a, Build.PRODUCT);
         f14109b = b;
         boolean z2 = false;
         boolean z3 = a == 1;
@@ -47,13 +47,13 @@ public class C4184b {
         f14120m = a == 20 && Build.VERSION.SDK_INT <= 21;
         if (!z4) {
             String str3 = Build.DEVICE;
-            if (!C5070i.m24067c(str3, "zeroflte") && !C5070i.m24067c(str3, "zenlte")) {
+            if (!C5070i.m24068c(str3, "zeroflte") && !C5070i.m24068c(str3, "zenlte")) {
                 z = false;
                 f14121n = z;
-                f14122o = a != 4 && (b == 20 || ((str2 = Build.MODEL) != null && C5070i.m24067c(str2, "ASUS_Z010DD")));
+                f14122o = a != 4 && (b == 20 || ((str2 = Build.MODEL) != null && C5070i.m24068c(str2, "ASUS_Z010DD")));
                 f14123p = z4;
                 str = Build.DISPLAY;
-                if (!C5070i.m24061i(str) && str.toLowerCase().contains("flyme")) {
+                if (!C5070i.m24062i(str) && str.toLowerCase().contains("flyme")) {
                     z2 = true;
                 }
                 f14124q = z2;
@@ -61,21 +61,21 @@ public class C4184b {
         }
         z = true;
         f14121n = z;
-        f14122o = a != 4 && (b == 20 || ((str2 = Build.MODEL) != null && C5070i.m24067c(str2, "ASUS_Z010DD")));
+        f14122o = a != 4 && (b == 20 || ((str2 = Build.MODEL) != null && C5070i.m24068c(str2, "ASUS_Z010DD")));
         f14123p = z4;
         str = Build.DISPLAY;
-        if (!C5070i.m24061i(str)) {
+        if (!C5070i.m24062i(str)) {
             z2 = true;
         }
         f14124q = z2;
     }
 
-    public static int m28613a(String str, String str2) {
-        if (C5070i.m24061i(str)) {
+    public static int m28615a(String str, String str2) {
+        if (C5070i.m24062i(str)) {
             return 0;
         }
         String lowerCase = str.toLowerCase();
-        String lowerCase2 = C5070i.m24061i(str2) ? null : str2.toLowerCase();
+        String lowerCase2 = C5070i.m24062i(str2) ? null : str2.toLowerCase();
         lowerCase.hashCode();
         char c = 65535;
         switch (lowerCase.hashCode()) {
@@ -205,8 +205,8 @@ public class C4184b {
         }
     }
 
-    public static int m28612b(int i, String str) {
-        if (i == 0 || C5070i.m24061i(str)) {
+    public static int m28614b(int i, String str) {
+        if (i == 0 || C5070i.m24062i(str)) {
             return 0;
         }
         String lowerCase = str.toLowerCase();

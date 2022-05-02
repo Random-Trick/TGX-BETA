@@ -8,7 +8,7 @@ public final class C3200vk implements AbstractC5912d {
     @Override
     public final boolean mo1511a(Object obj) {
         boolean bh;
-        bh = View$OnClickListenerC2192bl.m35406bh((C2964ra) obj);
+        bh = View$OnClickListenerC2192bl.m35409bh((C2964ra) obj);
         return bh;
     }
 }

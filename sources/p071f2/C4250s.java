@@ -22,7 +22,7 @@ public final class C4250s {
         BLOCKED,
         CANCELLED;
 
-        public boolean m28349a() {
+        public boolean m28351a() {
             return this == SUCCEEDED || this == FAILED || this == CANCELLED;
         }
     }
@@ -36,7 +36,7 @@ public final class C4250s {
         this.f14296f = i;
     }
 
-    public EnumC4251a m28350a() {
+    public EnumC4251a m28352a() {
         return this.f14292b;
     }
 

@@ -18,32 +18,32 @@ public final class C10235h0 {
         Integer d;
         if (tVar != null) {
             try {
-                d = tVar.m40667d();
+                d = tVar.m40670d();
                 if (d == null) {
-                    C0662u1.m40643k("CameraValidator", "No lens facing info in the availableCamerasSelector, don't verify the camera lens facing.");
+                    C0662u1.m40646k("CameraValidator", "No lens facing info in the availableCamerasSelector, don't verify the camera lens facing.");
                     return;
                 }
             } catch (IllegalStateException e) {
-                C0662u1.m40650d("CameraValidator", "Cannot get lens facing from the availableCamerasSelector don't verify the camera lens facing.", e);
+                C0662u1.m40653d("CameraValidator", "Cannot get lens facing from the availableCamerasSelector don't verify the camera lens facing.", e);
                 return;
             }
         } else {
             d = null;
         }
-        C0662u1.m40653a("CameraValidator", "Verifying camera lens facing on " + Build.DEVICE + ", lensFacingInteger: " + d);
+        C0662u1.m40656a("CameraValidator", "Verifying camera lens facing on " + Build.DEVICE + ", lensFacingInteger: " + d);
         PackageManager packageManager = context.getPackageManager();
         try {
             if (packageManager.hasSystemFeature("android.hardware.camera") && (tVar == null || d.intValue() == 1)) {
-                C0653t.f2434c.m40666e(d0Var.m5718a());
+                C0653t.f2434c.m40669e(d0Var.m5718a());
             }
             if (!packageManager.hasSystemFeature("android.hardware.camera.front")) {
                 return;
             }
             if (tVar == null || d.intValue() == 0) {
-                C0653t.f2433b.m40666e(d0Var.m5718a());
+                C0653t.f2433b.m40669e(d0Var.m5718a());
             }
         } catch (IllegalArgumentException e2) {
-            C0662u1.m40651c("CameraValidator", "Camera LensFacing verification failed, existing cameras: " + d0Var.m5718a());
+            C0662u1.m40654c("CameraValidator", "Camera LensFacing verification failed, existing cameras: " + d0Var.m5718a());
             throw new C10236a("Expected camera missing from device.", e2);
         }
     }

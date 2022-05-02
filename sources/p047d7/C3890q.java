@@ -6,12 +6,12 @@ public final class C3890q {
     public final int f13167c;
 
     public C3890q(Class<?> cls, int i, int i2) {
-        this.f13165a = (Class) C3864c0.m29711c(cls, "Null dependency anInterface.");
+        this.f13165a = (Class) C3864c0.m29713c(cls, "Null dependency anInterface.");
         this.f13166b = i;
         this.f13167c = i2;
     }
 
-    public static String m29641a(int i) {
+    public static String m29643a(int i) {
         if (i == 0) {
             return "direct";
         }
@@ -25,39 +25,39 @@ public final class C3890q {
     }
 
     @Deprecated
-    public static C3890q m29635g(Class<?> cls) {
+    public static C3890q m29637g(Class<?> cls) {
         return new C3890q(cls, 0, 0);
     }
 
-    public static C3890q m29634h(Class<?> cls) {
+    public static C3890q m29636h(Class<?> cls) {
         return new C3890q(cls, 0, 1);
     }
 
-    public static C3890q m29633i(Class<?> cls) {
+    public static C3890q m29635i(Class<?> cls) {
         return new C3890q(cls, 1, 0);
     }
 
-    public static C3890q m29632j(Class<?> cls) {
+    public static C3890q m29634j(Class<?> cls) {
         return new C3890q(cls, 1, 1);
     }
 
-    public static C3890q m29631k(Class<?> cls) {
+    public static C3890q m29633k(Class<?> cls) {
         return new C3890q(cls, 2, 0);
     }
 
-    public Class<?> m29640b() {
+    public Class<?> m29642b() {
         return this.f13165a;
     }
 
-    public boolean m29639c() {
+    public boolean m29641c() {
         return this.f13167c == 2;
     }
 
-    public boolean m29638d() {
+    public boolean m29640d() {
         return this.f13167c == 0;
     }
 
-    public boolean m29637e() {
+    public boolean m29639e() {
         return this.f13166b == 1;
     }
 
@@ -69,7 +69,7 @@ public final class C3890q {
         return this.f13165a == qVar.f13165a && this.f13166b == qVar.f13166b && this.f13167c == qVar.f13167c;
     }
 
-    public boolean m29636f() {
+    public boolean m29638f() {
         return this.f13166b == 2;
     }
 
@@ -84,7 +84,7 @@ public final class C3890q {
         int i = this.f13166b;
         sb2.append(i == 1 ? "required" : i == 0 ? "optional" : "set");
         sb2.append(", injection=");
-        sb2.append(m29641a(this.f13167c));
+        sb2.append(m29643a(this.f13167c));
         sb2.append("}");
         return sb2.toString();
     }

@@ -15,10 +15,10 @@ import p217p4.AbstractC8041f;
 import p217p4.C8032b;
 
 public final class C9839a extends AbstractC8039e {
-    public static final Pattern f32114q = Pattern.compile("\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d+))?)\\s*-->\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d+))?)\\s*");
-    public static final Pattern f32115r = Pattern.compile("\\{\\\\.*?\\}");
-    public final StringBuilder f32116o = new StringBuilder();
-    public final ArrayList<String> f32117p = new ArrayList<>();
+    public static final Pattern f32117q = Pattern.compile("\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d+))?)\\s*-->\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d+))?)\\s*");
+    public static final Pattern f32118r = Pattern.compile("\\{\\\\.*?\\}");
+    public final StringBuilder f32119o = new StringBuilder();
+    public final ArrayList<String> f32120p = new ArrayList<>();
 
     public C9839a() {
         super("SubripDecoder");
@@ -39,7 +39,7 @@ public final class C9839a extends AbstractC8039e {
 
     public static long m6764F(Matcher matcher, int i) {
         String group = matcher.group(i + 1);
-        long parseLong = (group != null ? Long.parseLong(group) * 60 * 60 * 1000 : 0L) + (Long.parseLong((String) C1186a.m38185e(matcher.group(i + 2))) * 60 * 1000) + (Long.parseLong((String) C1186a.m38185e(matcher.group(i + 3))) * 1000);
+        long parseLong = (group != null ? Long.parseLong(group) * 60 * 60 * 1000 : 0L) + (Long.parseLong((String) C1186a.m38188e(matcher.group(i + 2))) * 60 * 1000) + (Long.parseLong((String) C1186a.m38188e(matcher.group(i + 3))) * 1000);
         String group2 = matcher.group(i + 4);
         if (group2 != null) {
             parseLong += Long.parseLong(group2);
@@ -53,37 +53,37 @@ public final class C9839a extends AbstractC8039e {
         C1231t tVar = new C1231t();
         C1189b0 b0Var = new C1189b0(bArr, i);
         while (true) {
-            String p = b0Var.m38127p();
+            String p = b0Var.m38130p();
             int i2 = 0;
             if (p == null) {
                 break;
             } else if (p.length() != 0) {
                 try {
                     Integer.parseInt(p);
-                    String p2 = b0Var.m38127p();
+                    String p2 = b0Var.m38130p();
                     if (p2 == null) {
-                        C1230s.m37881i("SubripDecoder", "Unexpected end");
+                        C1230s.m37884i("SubripDecoder", "Unexpected end");
                         break;
                     }
-                    Matcher matcher = f32114q.matcher(p2);
+                    Matcher matcher = f32117q.matcher(p2);
                     if (matcher.matches()) {
-                        tVar.m37879a(m6764F(matcher, 1));
-                        tVar.m37879a(m6764F(matcher, 6));
-                        this.f32116o.setLength(0);
-                        this.f32117p.clear();
-                        for (String p3 = b0Var.m38127p(); !TextUtils.isEmpty(p3); p3 = b0Var.m38127p()) {
-                            if (this.f32116o.length() > 0) {
-                                this.f32116o.append("<br>");
+                        tVar.m37882a(m6764F(matcher, 1));
+                        tVar.m37882a(m6764F(matcher, 6));
+                        this.f32119o.setLength(0);
+                        this.f32120p.clear();
+                        for (String p3 = b0Var.m38130p(); !TextUtils.isEmpty(p3); p3 = b0Var.m38130p()) {
+                            if (this.f32119o.length() > 0) {
+                                this.f32119o.append("<br>");
                             }
-                            this.f32116o.append(m6763G(p3, this.f32117p));
+                            this.f32119o.append(m6763G(p3, this.f32120p));
                         }
-                        Spanned fromHtml = Html.fromHtml(this.f32116o.toString());
+                        Spanned fromHtml = Html.fromHtml(this.f32119o.toString());
                         String str = null;
                         while (true) {
-                            if (i2 >= this.f32117p.size()) {
+                            if (i2 >= this.f32120p.size()) {
                                 break;
                             }
-                            String str2 = this.f32117p.get(i2);
+                            String str2 = this.f32120p.get(i2);
                             if (str2.matches("\\{\\\\an[1-9]\\}")) {
                                 str = str2;
                                 break;
@@ -91,24 +91,24 @@ public final class C9839a extends AbstractC8039e {
                             i2++;
                         }
                         arrayList.add(m6766D(fromHtml, str));
-                        arrayList.add(C8032b.f26155a0);
+                        arrayList.add(C8032b.f26158a0);
                     } else {
-                        C1230s.m37881i("SubripDecoder", p2.length() != 0 ? "Skipping invalid timing: ".concat(p2) : new String("Skipping invalid timing: "));
+                        C1230s.m37884i("SubripDecoder", p2.length() != 0 ? "Skipping invalid timing: ".concat(p2) : new String("Skipping invalid timing: "));
                     }
                 } catch (NumberFormatException unused) {
-                    C1230s.m37881i("SubripDecoder", p.length() != 0 ? "Skipping invalid index: ".concat(p) : new String("Skipping invalid index: "));
+                    C1230s.m37884i("SubripDecoder", p.length() != 0 ? "Skipping invalid index: ".concat(p) : new String("Skipping invalid index: "));
                 }
             }
         }
-        return new C9840b((C8032b[]) arrayList.toArray(new C8032b[0]), tVar.m37876d());
+        return new C9840b((C8032b[]) arrayList.toArray(new C8032b[0]), tVar.m37879d());
     }
 
     public final C8032b m6766D(Spanned spanned, String str) {
         char c;
         char c2;
-        C8032b.C8034b o = new C8032b.C8034b().m13743o(spanned);
+        C8032b.C8034b o = new C8032b.C8034b().m13742o(spanned);
         if (str == null) {
-            return o.m13757a();
+            return o.m13756a();
         }
         switch (str.hashCode()) {
             case -685620710:
@@ -179,11 +179,11 @@ public final class C9839a extends AbstractC8039e {
                 break;
         }
         if (c == 0 || c == 1 || c == 2) {
-            o.m13746l(0);
+            o.m13745l(0);
         } else if (c == 3 || c == 4 || c == 5) {
-            o.m13746l(2);
+            o.m13745l(2);
         } else {
-            o.m13746l(1);
+            o.m13745l(1);
         }
         switch (str.hashCode()) {
             case -685620710:
@@ -254,19 +254,19 @@ public final class C9839a extends AbstractC8039e {
                 break;
         }
         if (c2 == 0 || c2 == 1 || c2 == 2) {
-            o.m13749i(2);
+            o.m13748i(2);
         } else if (c2 == 3 || c2 == 4 || c2 == 5) {
-            o.m13749i(0);
+            o.m13748i(0);
         } else {
-            o.m13749i(1);
+            o.m13748i(1);
         }
-        return o.m13747k(m6765E(o.m13754d())).m13750h(m6765E(o.m13755c()), 0).m13757a();
+        return o.m13746k(m6765E(o.m13753d())).m13749h(m6765E(o.m13754c()), 0).m13756a();
     }
 
     public final String m6763G(String str, ArrayList<String> arrayList) {
         String trim = str.trim();
         StringBuilder sb2 = new StringBuilder(trim);
-        Matcher matcher = f32115r.matcher(trim);
+        Matcher matcher = f32118r.matcher(trim);
         int i = 0;
         while (matcher.find()) {
             String group = matcher.group();

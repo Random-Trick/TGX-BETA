@@ -18,33 +18,33 @@ public class C8357a extends AbstractC7579a0<OpusDecoder> {
     }
 
     @Override
-    public String mo11838b() {
+    public String mo11837b() {
         return "LibopusAudioRenderer";
     }
 
     @Override
-    public int mo12677i0(C6600g1 g1Var) {
-        boolean d = OpusLibrary.m30514d(g1Var.f20597n0);
-        if (!OpusLibrary.m30516b() || !"audio/opus".equalsIgnoreCase(g1Var.f20575U)) {
+    public int mo12676i0(C6600g1 g1Var) {
+        boolean d = OpusLibrary.m30516d(g1Var.f20597n0);
+        if (!OpusLibrary.m30518b() || !"audio/opus".equalsIgnoreCase(g1Var.f20575U)) {
             return 0;
         }
-        if (!m15633h0(C1216l0.m37991V(2, g1Var.f20591h0, g1Var.f20592i0))) {
+        if (!m15633h0(C1216l0.m37994V(2, g1Var.f20591h0, g1Var.f20592i0))) {
             return 1;
         }
         return !d ? 2 : 4;
     }
 
-    public OpusDecoder mo12679T(C6600g1 g1Var, CryptoConfig cryptoConfig) {
-        C1210j0.m38035a("createOpusDecoder");
-        boolean z = m15642Y(C1216l0.m37991V(4, g1Var.f20591h0, g1Var.f20592i0)) == 2;
+    public OpusDecoder mo12678T(C6600g1 g1Var, CryptoConfig cryptoConfig) {
+        C1210j0.m38038a("createOpusDecoder");
+        boolean z = m15642Y(C1216l0.m37994V(4, g1Var.f20591h0, g1Var.f20592i0)) == 2;
         int i = g1Var.f20576V;
         OpusDecoder opusDecoder = new OpusDecoder(16, 16, i != -1 ? i : 5760, g1Var.f20577W, cryptoConfig, z);
-        C1210j0.m38033c();
+        C1210j0.m38036c();
         return opusDecoder;
     }
 
-    public C6600g1 mo12678X(OpusDecoder opusDecoder) {
-        return C1216l0.m37991V(opusDecoder.f11409n ? 4 : 2, opusDecoder.f11410o, 48000);
+    public C6600g1 mo12677X(OpusDecoder opusDecoder) {
+        return C1216l0.m37994V(opusDecoder.f11409n ? 4 : 2, opusDecoder.f11410o, 48000);
     }
 
     public C8357a(Handler handler, AbstractC7634s sVar, AbstractC7611g... gVarArr) {

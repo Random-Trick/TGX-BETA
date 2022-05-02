@@ -11,7 +11,7 @@ import p343y6.C10433i;
 import p358z6.AbstractC11384o;
 
 public abstract class AbstractC11396q<E> extends AbstractC11384o<E> implements List<E>, RandomAccess {
-    public static final AbstractC11405s0<Object> f36350b = new C11398b(C11367i0.f36308N, 0);
+    public static final AbstractC11405s0<Object> f36353b = new C11398b(C11367i0.f36311N, 0);
 
     public static final class C11397a<E> extends AbstractC11384o.AbstractC11385a<E> {
         public C11397a() {
@@ -25,8 +25,8 @@ public abstract class AbstractC11396q<E> extends AbstractC11384o<E> implements L
         }
 
         public AbstractC11396q<E> m756e() {
-            this.f36341c = true;
-            return AbstractC11396q.m761w(this.f36339a, this.f36340b);
+            this.f36344c = true;
+            return AbstractC11396q.m761w(this.f36342a, this.f36343b);
         }
 
         public C11397a(int i) {
@@ -35,40 +35,40 @@ public abstract class AbstractC11396q<E> extends AbstractC11384o<E> implements L
     }
 
     public static class C11398b<E> extends AbstractC11324a<E> {
-        public final AbstractC11396q<E> f36351c;
+        public final AbstractC11396q<E> f36354c;
 
         public C11398b(AbstractC11396q<E> qVar, int i) {
             super(qVar.size(), i);
-            this.f36351c = qVar;
+            this.f36354c = qVar;
         }
 
         @Override
         public E mo755a(int i) {
-            return this.f36351c.get(i);
+            return this.f36354c.get(i);
         }
     }
 
     public class C11399c extends AbstractC11396q<E> {
-        public final transient int f36352M;
-        public final transient int f36354c;
+        public final transient int f36355M;
+        public final transient int f36357c;
 
         public C11399c(int i, int i2) {
-            this.f36354c = i;
-            this.f36352M = i2;
+            this.f36357c = i;
+            this.f36355M = i2;
         }
 
         @Override
         public AbstractC11396q<E> subList(int i, int i2) {
-            C10433i.m5125m(i, i2, this.f36352M);
+            C10433i.m5125m(i, i2, this.f36355M);
             AbstractC11396q qVar = AbstractC11396q.this;
-            int i3 = this.f36354c;
+            int i3 = this.f36357c;
             return qVar.subList(i + i3, i2 + i3);
         }
 
         @Override
         public E get(int i) {
-            C10433i.m5131g(i, this.f36352M);
-            return AbstractC11396q.this.get(i + this.f36354c);
+            C10433i.m5131g(i, this.f36355M);
+            return AbstractC11396q.this.get(i + this.f36357c);
         }
 
         @Override
@@ -88,17 +88,17 @@ public abstract class AbstractC11396q<E> extends AbstractC11384o<E> implements L
 
         @Override
         public int mo752r() {
-            return AbstractC11396q.this.mo751s() + this.f36354c + this.f36352M;
+            return AbstractC11396q.this.mo751s() + this.f36357c + this.f36355M;
         }
 
         @Override
         public int mo751s() {
-            return AbstractC11396q.this.mo751s() + this.f36354c;
+            return AbstractC11396q.this.mo751s() + this.f36357c;
         }
 
         @Override
         public int size() {
-            return this.f36352M;
+            return this.f36355M;
         }
 
         @Override
@@ -120,7 +120,7 @@ public abstract class AbstractC11396q<E> extends AbstractC11384o<E> implements L
     }
 
     public static <E> AbstractC11396q<E> m768D() {
-        return (AbstractC11396q<E>) C11367i0.f36308N;
+        return (AbstractC11396q<E>) C11367i0.f36311N;
     }
 
     public static <E> AbstractC11396q<E> m767E(E e) {
@@ -169,7 +169,7 @@ public abstract class AbstractC11396q<E> extends AbstractC11384o<E> implements L
     public AbstractC11405s0<E> listIterator(int i) {
         C10433i.m5127k(i, size());
         if (isEmpty()) {
-            return (AbstractC11405s0<E>) f36350b;
+            return (AbstractC11405s0<E>) f36353b;
         }
         return new C11398b(this, i);
     }

@@ -43,7 +43,7 @@ public final class C1991y implements Iterator, p126j$.util.Iterator {
     @Override
     public final void remove() {
         int i;
-        C1893r.m35932d(this.f7093a != null, "no calls to next() since the last call to remove()");
+        C1893r.m35935d(this.f7093a != null, "no calls to next() since the last call to remove()");
         Collection collection = (Collection) this.f7093a.getValue();
         this.f7094b.remove();
         AbstractC1735g0 g0Var = this.f7095c.f7141b;

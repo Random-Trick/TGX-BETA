@@ -8,12 +8,12 @@ public abstract class AbstractC4178a implements InputFilter {
     public AbstractC4179a f14080a;
 
     public interface AbstractC4179a {
-        void mo28618a(AbstractC4178a aVar, CharSequence charSequence, int i, int i2, int i3, char c);
+        void mo28620a(AbstractC4178a aVar, CharSequence charSequence, int i, int i2, int i3, char c);
     }
 
-    public abstract boolean mo25355a(char c);
+    public abstract boolean mo25356a(char c);
 
-    public AbstractC4178a m28619b(AbstractC4179a aVar) {
+    public AbstractC4178a m28621b(AbstractC4179a aVar) {
         this.f14080a = aVar;
         return this;
     }
@@ -33,13 +33,13 @@ public abstract class AbstractC4178a implements InputFilter {
         int i7 = -1;
         while (i6 < i2) {
             char charAt = charSequence.charAt(i6);
-            if (!mo25355a(charAt)) {
+            if (!mo25356a(charAt)) {
                 AbstractC4179a aVar = this.f14080a;
                 if (aVar != null) {
                     spannableStringBuilder = spannableStringBuilder2;
                     sb3 = sb5;
                     i5 = i6;
-                    aVar.mo28618a(this, charSequence, i, i2, i6, charAt);
+                    aVar.mo28620a(this, charSequence, i, i2, i6, charAt);
                 } else {
                     spannableStringBuilder = spannableStringBuilder2;
                     sb3 = sb5;
@@ -48,7 +48,7 @@ public abstract class AbstractC4178a implements InputFilter {
                 if (z2) {
                     if (z) {
                         spannableStringBuilder2 = new SpannableStringBuilder(charSequence, i, i5);
-                        C4181c.m28617a((Spanned) charSequence, i, i5, null, spannableStringBuilder2, 0);
+                        C4181c.m28619a((Spanned) charSequence, i, i5, null, spannableStringBuilder2, 0);
                         sb5 = sb3;
                     } else {
                         sb5 = new StringBuilder(i2 - i5);
@@ -59,7 +59,7 @@ public abstract class AbstractC4178a implements InputFilter {
                 } else if (i7 != -1) {
                     if (z) {
                         spannableStringBuilder.append(charSequence, i7, i5);
-                        C4181c.m28617a((Spanned) charSequence, i7, i5, null, spannableStringBuilder, 0);
+                        C4181c.m28619a((Spanned) charSequence, i7, i5, null, spannableStringBuilder, 0);
                         sb4 = sb3;
                     } else {
                         sb4 = sb3;
@@ -98,7 +98,7 @@ public abstract class AbstractC4178a implements InputFilter {
         if (i7 != -1) {
             if (z) {
                 spannableStringBuilder3.append(charSequence, i7, i2);
-                C4181c.m28617a((Spanned) charSequence, i7, i2, null, spannableStringBuilder3, 0);
+                C4181c.m28619a((Spanned) charSequence, i7, i2, null, spannableStringBuilder3, 0);
             } else {
                 sb6.append(charSequence, i7, i2);
             }

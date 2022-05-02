@@ -40,71 +40,71 @@ import p350yd.C10651f1;
 import vc.C9903a;
 
 public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C1379j0.AbstractC1380a {
-    public final C6233h.AbstractC6234a<Long, AbstractC11069j> f35494O;
-    public final C6231f<AbstractC11069j> f35495P;
-    public final C10930q6 f35506a;
-    public volatile long f35508b;
-    public boolean f35519k0;
-    public TdApi.HttpUrl f35526r0;
-    public boolean f35527s0;
-    public boolean f35528t0;
-    public boolean f35529u0;
-    public boolean f35531w0;
-    public final HashMap<Long, TdApi.User> f35510c = new HashMap<>();
-    public final HashMap<Long, TdApi.UserFullInfo> f35492M = new HashMap<>();
-    public final C6231f<AbstractC11068i> f35493N = new C6231f<>(true);
-    public final C6231f<AbstractC11069j> f35496Q = new C6231f<>(true, null);
-    public final C6227d<AbstractC11064e> f35497R = new C6227d<>(true);
-    public final HashMap<Long, TdApi.BasicGroup> f35498S = new HashMap<>();
-    public final HashMap<Long, TdApi.BasicGroupFullInfo> f35499T = new HashMap<>();
-    public final C6227d<AbstractC11061b> f35500U = new C6227d<>(true);
-    public final C6231f<AbstractC11061b> f35501V = new C6231f<>(true);
-    public final HashMap<Long, TdApi.Supergroup> f35502W = new HashMap<>();
-    public final HashMap<Long, TdApi.SupergroupFullInfo> f35503X = new HashMap<>();
-    public final C6227d<AbstractC11067h> f35504Y = new C6227d<>();
-    public final C6231f<AbstractC11067h> f35505Z = new C6231f<>();
-    public final HashMap<Integer, TdApi.SecretChat> f35507a0 = new HashMap<>();
-    public final C6227d<AbstractC11066g> f35509b0 = new C6227d<>();
-    public final C6226c<AbstractC11066g> f35511c0 = new C6226c<>();
-    public final C6038h<TdApi.Call> f35512d0 = new C6038h<>();
-    public final C6038h<CallSettings> f35513e0 = new C6038h<>();
-    public final C6227d<AbstractC11062c> f35514f0 = new C6227d<>();
-    public final C6226c<AbstractC11062c> f35515g0 = new C6226c<>();
-    public final C6227d<AbstractC11063d> f35516h0 = new C6227d<>(true);
-    public final C6231f<AbstractC11063d> f35517i0 = new C6231f<>(true);
-    public final ArrayList<TdApi.Message> f35518j0 = new ArrayList<>();
-    public final C5324g f35522n0 = new C5324g();
-    public final Client.AbstractC7865g f35524p0 = new Client.AbstractC7865g() {
+    public final C6233h.AbstractC6234a<Long, AbstractC11069j> f35497O;
+    public final C6231f<AbstractC11069j> f35498P;
+    public final C10930q6 f35509a;
+    public volatile long f35511b;
+    public boolean f35522k0;
+    public TdApi.HttpUrl f35529r0;
+    public boolean f35530s0;
+    public boolean f35531t0;
+    public boolean f35532u0;
+    public boolean f35534w0;
+    public final HashMap<Long, TdApi.User> f35513c = new HashMap<>();
+    public final HashMap<Long, TdApi.UserFullInfo> f35495M = new HashMap<>();
+    public final C6231f<AbstractC11068i> f35496N = new C6231f<>(true);
+    public final C6231f<AbstractC11069j> f35499Q = new C6231f<>(true, null);
+    public final C6227d<AbstractC11064e> f35500R = new C6227d<>(true);
+    public final HashMap<Long, TdApi.BasicGroup> f35501S = new HashMap<>();
+    public final HashMap<Long, TdApi.BasicGroupFullInfo> f35502T = new HashMap<>();
+    public final C6227d<AbstractC11061b> f35503U = new C6227d<>(true);
+    public final C6231f<AbstractC11061b> f35504V = new C6231f<>(true);
+    public final HashMap<Long, TdApi.Supergroup> f35505W = new HashMap<>();
+    public final HashMap<Long, TdApi.SupergroupFullInfo> f35506X = new HashMap<>();
+    public final C6227d<AbstractC11067h> f35507Y = new C6227d<>();
+    public final C6231f<AbstractC11067h> f35508Z = new C6231f<>();
+    public final HashMap<Integer, TdApi.SecretChat> f35510a0 = new HashMap<>();
+    public final C6227d<AbstractC11066g> f35512b0 = new C6227d<>();
+    public final C6226c<AbstractC11066g> f35514c0 = new C6226c<>();
+    public final C6038h<TdApi.Call> f35515d0 = new C6038h<>();
+    public final C6038h<CallSettings> f35516e0 = new C6038h<>();
+    public final C6227d<AbstractC11062c> f35517f0 = new C6227d<>();
+    public final C6226c<AbstractC11062c> f35518g0 = new C6226c<>();
+    public final C6227d<AbstractC11063d> f35519h0 = new C6227d<>(true);
+    public final C6231f<AbstractC11063d> f35520i0 = new C6231f<>(true);
+    public final ArrayList<TdApi.Message> f35521j0 = new ArrayList<>();
+    public final C5324g f35525n0 = new C5324g();
+    public final Client.AbstractC7865g f35527p0 = new Client.AbstractC7865g() {
         @Override
         public final void mo255t2(TdApi.Object object) {
             C11059v7.this.m1585v0(object);
         }
     };
-    public final Object f35525q0 = new Object();
-    public final Object f35530v0 = new Object();
-    public final Client.AbstractC7865g f35520l0 = new Client.AbstractC7865g() {
+    public final Object f35528q0 = new Object();
+    public final Object f35533v0 = new Object();
+    public final Client.AbstractC7865g f35523l0 = new Client.AbstractC7865g() {
         @Override
         public final void mo255t2(TdApi.Object object) {
             C11059v7.this.m1581w0(object);
         }
     };
-    public final Client.AbstractC7865g f35521m0 = C10845m7.f34748a;
-    public final Handler f35523o0 = new HandlerC11065f(this);
+    public final Client.AbstractC7865g f35524m0 = C10845m7.f34751a;
+    public final Handler f35526o0 = new HandlerC11065f(this);
 
     public class C11060a extends AbstractRunnableC5910b {
-        public final AbstractC5918j f35532M;
+        public final AbstractC5918j f35535M;
 
         public C11060a(AbstractC5918j jVar) {
-            this.f35532M = jVar;
+            this.f35535M = jVar;
         }
 
         @Override
         public void mo1364b() {
-            AbstractC5918j jVar = this.f35532M;
+            AbstractC5918j jVar = this.f35535M;
             if (jVar != null) {
                 jVar.mo1330a(new TdApi.HttpUrl("https://telegram.org/dlx"));
             }
-            m21857c();
+            m21858c();
         }
     }
 
@@ -135,17 +135,17 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public static class HandlerC11065f extends Handler {
-        public final C11059v7 f35534a;
+        public final C11059v7 f35537a;
 
         public HandlerC11065f(C11059v7 v7Var) {
             super(Looper.getMainLooper());
-            this.f35534a = v7Var;
+            this.f35537a = v7Var;
         }
 
         @Override
         public void handleMessage(Message message) {
             long longValue = ((Long) message.obj).longValue();
-            this.f35534a.m1584v1(longValue, message.arg1, this.f35534a.m1583v2(longValue));
+            this.f35537a.m1584v1(longValue, message.arg1, this.f35537a.m1583v2(longValue));
         }
     }
 
@@ -179,17 +179,17 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
                 C11059v7.this.m1589u0(hVar, z2);
             }
         };
-        this.f35494O = u7Var;
-        this.f35495P = new C6231f<>(true, u7Var);
-        this.f35528t0 = true;
-        this.f35506a = q6Var;
+        this.f35497O = u7Var;
+        this.f35498P = new C6231f<>(true, u7Var);
+        this.f35531t0 = true;
+        this.f35509a = q6Var;
         q6Var.m2781K9().m1839l(this);
-        C1379j0.m37335d(this);
-        this.f35528t0 = C1379j0.m37364F() == 0 ? false : z;
+        C1379j0.m37338d(this);
+        this.f35531t0 = C1379j0.m37367F() == 0 ? false : z;
     }
 
     public void m1763A0(long j, TdApi.Object object) {
-        this.f35506a.m2270r4().m14783o(new TdApi.GetSupergroupFullInfo(j), this.f35521m0);
+        this.f35509a.m2270r4().m14783o(new TdApi.GetSupergroupFullInfo(j), this.f35524m0);
     }
 
     public void m1759B0(AbstractC5918j jVar, long j) {
@@ -199,15 +199,15 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     public void m1751D0(final AbstractC5918j jVar, final long j, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
-            this.f35506a.m2485dd().post(new Runnable() {
+            C1379j0.m37305t0(object);
+            this.f35509a.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
                     AbstractC5918j.this.mo1330a(null);
                 }
             });
         } else if (constructor == -1035719349) {
-            this.f35506a.m2485dd().post(new Runnable() {
+            this.f35509a.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
                     C11059v7.this.m1759B0(jVar, j);
@@ -219,15 +219,15 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     public void m1743F0(final AbstractC5918j jVar, final long j, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
-            this.f35506a.m2485dd().post(new Runnable() {
+            C1379j0.m37305t0(object);
+            this.f35509a.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
                     AbstractC5918j.this.mo1330a(null);
                 }
             });
         } else if (constructor == 2138747126) {
-            this.f35506a.m2485dd().post(new Runnable() {
+            this.f35509a.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
                     C11059v7.this.m1735H0(jVar, j);
@@ -237,7 +237,7 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public void m1739G0(long j, TdApi.Object object) {
-        this.f35506a.m2270r4().m14783o(new TdApi.GetUserFullInfo(j), this.f35521m0);
+        this.f35509a.m2270r4().m14783o(new TdApi.GetUserFullInfo(j), this.f35524m0);
     }
 
     public void m1735H0(AbstractC5918j jVar, long j) {
@@ -362,15 +362,15 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     public void m1609p0(final AbstractC5918j jVar, final long j, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
-            this.f35506a.m2485dd().post(new Runnable() {
+            C1379j0.m37305t0(object);
+            this.f35509a.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
                     AbstractC5918j.this.mo1330a(null);
                 }
             });
         } else if (constructor == 2022233397) {
-            this.f35506a.m2485dd().post(new Runnable() {
+            this.f35509a.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
                     C11059v7.this.m1617n0(jVar, j);
@@ -380,14 +380,14 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public void m1605q0(long j, TdApi.Object object) {
-        this.f35506a.m2270r4().m14783o(new TdApi.GetBasicGroupFullInfo(j), this.f35521m0);
+        this.f35509a.m2270r4().m14783o(new TdApi.GetBasicGroupFullInfo(j), this.f35524m0);
     }
 
     public void m1601r0(TdApi.HttpUrl httpUrl, AbstractC5918j jVar, AbstractRunnableC5910b bVar) {
-        this.f35526r0 = httpUrl;
-        if (jVar != null && bVar.m21856d()) {
+        this.f35529r0 = httpUrl;
+        if (jVar != null && bVar.m21857d()) {
             jVar.mo1330a(httpUrl);
-            bVar.m21857c();
+            bVar.m21858c();
         }
     }
 
@@ -395,24 +395,24 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
         int constructor = object.getConstructor();
         if (constructor == -2018019930) {
             final TdApi.HttpUrl httpUrl = (TdApi.HttpUrl) object;
-            if (C1363c0.m37457Q(httpUrl.url)) {
-                this.f35506a.m2485dd().post(new Runnable() {
+            if (C1363c0.m37460Q(httpUrl.url)) {
+                this.f35509a.m2485dd().post(new Runnable() {
                     @Override
                     public final void run() {
                         C11059v7.this.m1601r0(httpUrl, jVar, bVar);
                     }
                 });
             } else {
-                this.f35506a.m2485dd().post(bVar);
+                this.f35509a.m2485dd().post(bVar);
             }
         } else if (constructor == -1679978726) {
-            this.f35506a.m2485dd().post(bVar);
+            this.f35509a.m2485dd().post(bVar);
         }
     }
 
     public static void m1593t0(AbstractC5918j jVar, TdApi.HttpUrl httpUrl) {
         if (jVar != null) {
-            jVar.mo1330a(new TdApi.Text(C4403w.m27865j1(R.string.InviteText, "Telegram X", httpUrl.url)));
+            jVar.mo1330a(new TdApi.Text(C4403w.m27867j1(R.string.InviteText, "Telegram X", httpUrl.url)));
         }
     }
 
@@ -423,7 +423,7 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     public void m1585v0(TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            Log.m14719i("Unable to load active live locations: %s", C4779t2.m25378z5(object));
+            Log.m14719i("Unable to load active live locations: %s", C4779t2.m25379z5(object));
         } else if (constructor == -16498159) {
             m1699Q1(((TdApi.Messages) object).messages);
         }
@@ -432,18 +432,18 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     public void m1581w0(TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         } else if (constructor != -537797015) {
             Log.unexpectedTdlibResponse(object, TdApi.GetMe.class, TdApi.User.class, TdApi.Error.class);
         } else {
-            this.f35519k0 = false;
+            this.f35522k0 = false;
         }
     }
 
     public static void m1577x0(TdApi.Object object) {
         switch (object.getConstructor()) {
             case TdApi.Error.CONSTRUCTOR:
-                Log.m14719i("dataHandler error: %s", C4779t2.m25378z5(object));
+                Log.m14719i("dataHandler error: %s", C4779t2.m25379z5(object));
                 return;
             case TdApi.SupergroupFullInfo.CONSTRUCTOR:
                 TdApi.SupergroupFullInfo supergroupFullInfo = (TdApi.SupergroupFullInfo) object;
@@ -472,7 +472,7 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     public void m1573y0(TdApi.Message message, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            Log.m14724e("Error broadcasting location: %s", C4779t2.m25378z5(object));
+            Log.m14724e("Error broadcasting location: %s", C4779t2.m25379z5(object));
         } else if (constructor == 1435961258) {
             TdApi.Message message2 = (TdApi.Message) object;
             message.editDate = message2.editDate;
@@ -490,27 +490,27 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public void m1569z0(TdApi.UpdateUserFullInfo updateUserFullInfo) {
-        m1681V0(this.f35497R.iterator(), updateUserFullInfo.userFullInfo.bio);
+        m1681V0(this.f35500R.iterator(), updateUserFullInfo.userFullInfo.bio);
     }
 
     public final void m1764A(AbstractC11069j jVar) {
         if (jVar.mo1350D3()) {
-            this.f35495P.m21016g(0L, jVar);
+            this.f35498P.m21017g(0L, jVar);
         } else {
-            this.f35496Q.m21016g(0L, jVar);
+            this.f35499Q.m21017g(0L, jVar);
         }
     }
 
     public final void m1762A1(AbstractC11067h hVar) {
-        this.f35504Y.add(hVar);
+        this.f35507Y.add(hVar);
     }
 
     public boolean m1761A2(long j) {
-        return j != 0 && C4779t2.m25630O2(m1583v2(j));
+        return j != 0 && C4779t2.m25631O2(m1583v2(j));
     }
 
     public final void m1760B(AbstractC11068i iVar) {
-        this.f35493N.m21016g(0L, iVar);
+        this.f35496N.m21017g(0L, iVar);
     }
 
     public void m1758B1(AbstractC11068i iVar) {
@@ -518,62 +518,62 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public boolean m1757B2(long j) {
-        return j != 0 && C4779t2.m25671I3(m1583v2(j));
+        return j != 0 && C4779t2.m25672I3(m1583v2(j));
     }
 
     public final void m1756C(long j, AbstractC11068i iVar) {
         if (j != 0) {
-            this.f35493N.m21016g(Long.valueOf(j), iVar);
+            this.f35496N.m21017g(Long.valueOf(j), iVar);
             return;
         }
         throw new IllegalArgumentException("userId == " + j);
     }
 
     public final boolean m1754C1(long j, TdApi.BasicGroupFullInfo basicGroupFullInfo) {
-        this.f35499T.put(Long.valueOf(j), basicGroupFullInfo);
+        this.f35502T.put(Long.valueOf(j), basicGroupFullInfo);
         return true;
     }
 
     public String m1753C2(long j, boolean z, boolean z2) {
-        if (z && this.f35506a.m2379k7(j)) {
-            return C4403w.m27869i1(R.string.SavedMessages);
+        if (z && this.f35509a.m2379k7(j)) {
+            return C4403w.m27871i1(R.string.SavedMessages);
         }
         TdApi.User v2 = m1583v2(j);
-        if (C4779t2.m25671I3(v2)) {
-            return C4403w.m27869i1(R.string.HiddenName);
+        if (C4779t2.m25672I3(v2)) {
+            return C4403w.m27871i1(R.string.HiddenName);
         }
-        if (this.f35506a.m2475e7(C7316a.m17058c(j))) {
-            return C4403w.m27869i1(R.string.RepliesBot);
+        if (this.f35509a.m2475e7(C7316a.m17058c(j))) {
+            return C4403w.m27871i1(R.string.RepliesBot);
         }
         if (z2) {
-            return C4779t2.m25430s2(j, v2);
+            return C4779t2.m25431s2(j, v2);
         }
-        return C4779t2.m25451p2(j, v2);
+        return C4779t2.m25452p2(j, v2);
     }
 
     public final void m1752D(AbstractC11069j jVar) {
         if (jVar.mo1350D3()) {
-            this.f35495P.m21021b(0L, jVar);
+            this.f35498P.m21022b(0L, jVar);
         } else {
-            this.f35496Q.m21021b(0L, jVar);
+            this.f35499Q.m21022b(0L, jVar);
         }
     }
 
     public final void m1750D1(long j, AbstractC11061b bVar) {
-        this.f35501V.m21021b(Long.valueOf(j), bVar);
+        this.f35504V.m21022b(Long.valueOf(j), bVar);
     }
 
     public String m1749D2(long j) {
-        return j != 0 ? C4779t2.m25430s2(j, m1583v2(j)) : "VOID";
+        return j != 0 ? C4779t2.m25431s2(j, m1583v2(j)) : "VOID";
     }
 
     public final void m1748E(AbstractC11068i iVar) {
-        this.f35493N.m21021b(0L, iVar);
+        this.f35496N.m21022b(0L, iVar);
     }
 
     public final boolean m1746E1(TdApi.SecretChat secretChat) {
-        boolean z = this.f35507a0.get(Integer.valueOf(secretChat.f25419id)) != null;
-        this.f35507a0.put(Integer.valueOf(secretChat.f25419id), secretChat);
+        boolean z = this.f35510a0.get(Integer.valueOf(secretChat.f25422id)) != null;
+        this.f35510a0.put(Integer.valueOf(secretChat.f25422id), secretChat);
         return z;
     }
 
@@ -583,26 +583,26 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
 
     public final void m1744F(long j, AbstractC11068i iVar) {
         if (j != 0) {
-            this.f35493N.m21021b(Long.valueOf(j), iVar);
+            this.f35496N.m21022b(Long.valueOf(j), iVar);
             return;
         }
         throw new IllegalArgumentException("userId == " + j);
     }
 
     public final void m1742F1(int i, AbstractC11066g gVar) {
-        this.f35511c0.m21021b(Integer.valueOf(i), gVar);
+        this.f35514c0.m21022b(Integer.valueOf(i), gVar);
     }
 
     public TdApi.UserFullInfo m1741F2(final long j, boolean z) {
         TdApi.UserFullInfo userFullInfo;
-        synchronized (this.f35525q0) {
+        synchronized (this.f35528q0) {
             Long valueOf = Long.valueOf(j);
-            userFullInfo = this.f35492M.get(valueOf);
+            userFullInfo = this.f35495M.get(valueOf);
             if (userFullInfo == null || z) {
-                if (this.f35510c.get(valueOf) != null) {
-                    this.f35506a.m2270r4().m14783o(new TdApi.GetUserFullInfo(j), this.f35521m0);
+                if (this.f35513c.get(valueOf) != null) {
+                    this.f35509a.m2270r4().m14783o(new TdApi.GetUserFullInfo(j), this.f35524m0);
                 } else {
-                    this.f35506a.m2270r4().m14783o(new TdApi.GetUser(j), new Client.AbstractC7865g() {
+                    this.f35509a.m2270r4().m14783o(new TdApi.GetUser(j), new Client.AbstractC7865g() {
                         @Override
                         public final void mo255t2(TdApi.Object object) {
                             C11059v7.this.m1739G0(j, object);
@@ -615,7 +615,7 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public void m1740G(long j, AbstractC11063d dVar) {
-        this.f35517i0.m21021b(Long.valueOf(j), dVar);
+        this.f35520i0.m21022b(Long.valueOf(j), dVar);
     }
 
     public final int m1738G1(org.drinkless.p210td.libcore.telegram.TdApi.Supergroup r6) {
@@ -629,7 +629,7 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
                 if (E2 != null) {
                     jVar.mo1330a(E2);
                 } else {
-                    this.f35506a.m2270r4().m14783o(new TdApi.GetUserFullInfo(j), new Client.AbstractC7865g() {
+                    this.f35509a.m2270r4().m14783o(new TdApi.GetUserFullInfo(j), new Client.AbstractC7865g() {
                         @Override
                         public final void mo255t2(TdApi.Object object) {
                             C11059v7.this.m1743F0(jVar, j, object);
@@ -643,16 +643,16 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public void m1736H(AbstractC11063d dVar) {
-        this.f35516h0.add(dVar);
+        this.f35519h0.add(dVar);
     }
 
     public final boolean m1734H1(long j, TdApi.SupergroupFullInfo supergroupFullInfo) {
-        this.f35503X.put(Long.valueOf(j), supergroupFullInfo);
+        this.f35506X.put(Long.valueOf(j), supergroupFullInfo);
         return true;
     }
 
     public boolean m1733H2(long j) {
-        return j != 0 && C4779t2.m25555a3(m1583v2(j));
+        return j != 0 && C4779t2.m25556a3(m1583v2(j));
     }
 
     public <T extends AbstractC11068i & AbstractC11069j> void m1732I(T t) {
@@ -663,14 +663,14 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     @Deprecated
     public TdApi.User m1731I0() {
         TdApi.User user;
-        synchronized (this.f35525q0) {
-            user = this.f35508b != 0 ? this.f35510c.get(Long.valueOf(this.f35508b)) : null;
+        synchronized (this.f35528q0) {
+            user = this.f35511b != 0 ? this.f35513c.get(Long.valueOf(this.f35511b)) : null;
         }
         return user;
     }
 
     public final void m1730I1(long j, AbstractC11067h hVar) {
-        this.f35505Z.m21021b(Long.valueOf(j), hVar);
+        this.f35508Z.m21022b(Long.valueOf(j), hVar);
     }
 
     public boolean m1729I2(long j) {
@@ -678,8 +678,8 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
         if (j == 0) {
             return false;
         }
-        synchronized (this.f35525q0) {
-            TdApi.User user = this.f35510c.get(Long.valueOf(j));
+        synchronized (this.f35528q0) {
+            TdApi.User user = this.f35513c.get(Long.valueOf(j));
             TdApi.UserStatus userStatus = user != null ? user.status : null;
             if (!(userStatus == null || userStatus.getConstructor() != -759984891 || ((TdApi.UserStatusOffline) userStatus).wasOnline == 0)) {
                 z = true;
@@ -689,42 +689,42 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public void m1728J(AbstractC11064e eVar) {
-        this.f35497R.add(eVar);
+        this.f35500R.add(eVar);
     }
 
     @Deprecated
     public long m1727J0() {
-        return this.f35508b;
+        return this.f35511b;
     }
 
     public final boolean m1726J1(long j, TdApi.UserFullInfo userFullInfo) {
-        this.f35492M.put(Long.valueOf(j), userFullInfo);
+        this.f35495M.put(Long.valueOf(j), userFullInfo);
         return true;
     }
 
     public C5386e m1725J2(TdApi.User user) {
-        return C4779t2.m25701E1(user);
+        return C4779t2.m25702E1(user);
     }
 
     public void m1724K(TdApi.Message message) {
         if (message.sendingState == null && message.canBeEdited && message.isOutgoing && message.content.getConstructor() == 303973492) {
             TdApi.MessageLocation messageLocation = (TdApi.MessageLocation) message.content;
             if (messageLocation.livePeriod != 0 && messageLocation.expiresIn != 0) {
-                synchronized (this.f35518j0) {
-                    this.f35518j0.add(message);
+                synchronized (this.f35521j0) {
+                    this.f35521j0.add(message);
                     m1675X0(1);
-                    this.f35506a.m2503cb(message);
+                    this.f35509a.m2503cb(message);
                 }
             }
         }
     }
 
     public void m1722K1(long j, AbstractC11063d dVar) {
-        this.f35517i0.m21016g(Long.valueOf(j), dVar);
+        this.f35520i0.m21017g(Long.valueOf(j), dVar);
     }
 
     public String m1721K2(long j) {
-        return j != 0 ? C4779t2.m25451p2(j, m1583v2(j)) : "VOID";
+        return j != 0 ? C4779t2.m25452p2(j, m1583v2(j)) : "VOID";
     }
 
     public void m1720L(long j, AbstractC11068i iVar) {
@@ -733,12 +733,12 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
 
     @Override
     public void mo1718L1(TdApi.Location location, int i) {
-        synchronized (this.f35518j0) {
-            Log.m14714v("Updating %d live location messages", Integer.valueOf(this.f35518j0.size()));
-            Iterator<TdApi.Message> it = this.f35518j0.iterator();
+        synchronized (this.f35521j0) {
+            Log.m14714v("Updating %d live location messages", Integer.valueOf(this.f35521j0.size()));
+            Iterator<TdApi.Message> it = this.f35521j0.iterator();
             while (it.hasNext()) {
                 final TdApi.Message next = it.next();
-                this.f35506a.m2270r4().m14783o(new TdApi.EditMessageLiveLocation(next.chatId, next.f25406id, next.replyMarkup, location, i, 0), new Client.AbstractC7865g() {
+                this.f35509a.m2270r4().m14783o(new TdApi.EditMessageLiveLocation(next.chatId, next.f25409id, next.replyMarkup, location, i, 0), new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object) {
                         C11059v7.this.m1573y0(next, object);
@@ -754,14 +754,14 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
 
     public TdApi.BasicGroup m1716M(long j) {
         TdApi.BasicGroup basicGroup;
-        synchronized (this.f35525q0) {
-            basicGroup = this.f35498S.get(Long.valueOf(j));
+        synchronized (this.f35528q0) {
+            basicGroup = this.f35501S.get(Long.valueOf(j));
         }
         return basicGroup;
     }
 
     public void m1714M1(AbstractC11063d dVar) {
-        this.f35516h0.remove(dVar);
+        this.f35519h0.remove(dVar);
     }
 
     public C4587b m1713M2(long j, boolean z, float f, AbstractC5143t tVar) {
@@ -779,7 +779,7 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public C4587b m1709N2(TdApi.User user, boolean z, float f, AbstractC5143t tVar) {
-        return m1717L2(user != null ? user.f25439id : 0L, user, z, f, tVar);
+        return m1717L2(user != null ? user.f25442id : 0L, user, z, f, tVar);
     }
 
     public TdApi.BasicGroupFullInfo m1708O(long j) {
@@ -787,19 +787,19 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public void m1706O1(AbstractC11064e eVar) {
-        this.f35497R.remove(eVar);
+        this.f35500R.remove(eVar);
     }
 
     public C4587b.C4588a m1705O2(long j, TdApi.User user, boolean z) {
         if (user != null || j == 0) {
             return m1701P2(user, z);
         }
-        return new C4587b.C4588a(C4779t2.m25681H0(j, this.f35506a.m2519ba()));
+        return new C4587b.C4588a(C4779t2.m25682H0(j, this.f35509a.m2519ba()));
     }
 
     public TdApi.BasicGroupFullInfo m1704P(long j, boolean z) {
         TdApi.BasicGroupFullInfo R;
-        synchronized (this.f35525q0) {
+        synchronized (this.f35528q0) {
             R = m1697R(j, z);
         }
         return R;
@@ -821,8 +821,8 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
         if (user == null) {
             return null;
         }
-        if (!z || !this.f35506a.m2379k7(user.f25439id)) {
-            if (this.f35506a.m2475e7(C7316a.m17058c(user.f25439id))) {
+        if (!z || !this.f35509a.m2379k7(user.f25442id)) {
+            if (this.f35509a.m2475e7(C7316a.m17058c(user.f25442id))) {
                 i4 = R.id.theme_color_avatarReplies;
                 eVar = null;
                 i5 = R.drawable.baseline_reply_24;
@@ -831,12 +831,12 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
                 i4 = m1571y2(user);
                 i5 = 0;
             }
-            if (this.f35506a.m2379k7(user.f25439id)) {
+            if (this.f35509a.m2379k7(user.f25442id)) {
                 i6 = R.drawable.ic_add_a_photo_black_56;
-            } else if (this.f35506a.m2475e7(C7316a.m17058c(user.f25439id))) {
+            } else if (this.f35509a.m2475e7(C7316a.m17058c(user.f25442id))) {
                 i6 = R.drawable.baseline_reply_56;
             } else {
-                i6 = C4779t2.m25658K2(user) ? R.drawable.deproko_baseline_bots_56 : R.drawable.baseline_person_56;
+                i6 = C4779t2.m25659K2(user) ? R.drawable.deproko_baseline_bots_56 : R.drawable.baseline_person_56;
             }
             i = i5;
             i3 = i6;
@@ -860,7 +860,7 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
                 if (O != null) {
                     jVar.mo1330a(O);
                 } else {
-                    this.f35506a.m2270r4().m14783o(new TdApi.GetBasicGroupFullInfo(j), new Client.AbstractC7865g() {
+                    this.f35509a.m2270r4().m14783o(new TdApi.GetBasicGroupFullInfo(j), new Client.AbstractC7865g() {
                         @Override
                         public final void mo255t2(TdApi.Object object) {
                             C11059v7.this.m1609p0(jVar, j, object);
@@ -874,20 +874,20 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public final void m1699Q1(TdApi.Message[] messageArr) {
-        synchronized (this.f35518j0) {
-            if (!this.f35518j0.isEmpty() || !(messageArr == null || messageArr.length == 0)) {
-                Iterator<TdApi.Message> it = this.f35518j0.iterator();
+        synchronized (this.f35521j0) {
+            if (!this.f35521j0.isEmpty() || !(messageArr == null || messageArr.length == 0)) {
+                Iterator<TdApi.Message> it = this.f35521j0.iterator();
                 while (it.hasNext()) {
-                    this.f35506a.m2692Q2(it.next());
+                    this.f35509a.m2692Q2(it.next());
                 }
-                int size = this.f35518j0.size();
-                this.f35518j0.clear();
+                int size = this.f35521j0.size();
+                this.f35521j0.clear();
                 if (messageArr != null) {
-                    Collections.addAll(this.f35518j0, messageArr);
+                    Collections.addAll(this.f35521j0, messageArr);
                     m1675X0(messageArr.length - size);
-                    Iterator<TdApi.Message> it2 = this.f35518j0.iterator();
+                    Iterator<TdApi.Message> it2 = this.f35521j0.iterator();
                     while (it2.hasNext()) {
-                        this.f35506a.m2503cb(it2.next());
+                        this.f35509a.m2503cb(it2.next());
                     }
                 } else {
                     m1675X0(-size);
@@ -899,8 +899,8 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     public TdApi.User m1698Q2(long j) {
         TdApi.User user;
         if (j != 0) {
-            synchronized (this.f35525q0) {
-                user = this.f35510c.get(Long.valueOf(j));
+            synchronized (this.f35528q0) {
+                user = this.f35513c.get(Long.valueOf(j));
                 if (user == null) {
                     throw new IllegalStateException("id" + j);
                 }
@@ -912,12 +912,12 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
 
     public final TdApi.BasicGroupFullInfo m1697R(final long j, boolean z) {
         Long valueOf = Long.valueOf(j);
-        TdApi.BasicGroupFullInfo basicGroupFullInfo = this.f35499T.get(valueOf);
+        TdApi.BasicGroupFullInfo basicGroupFullInfo = this.f35502T.get(valueOf);
         if (basicGroupFullInfo == null || z) {
-            if (this.f35498S.get(valueOf) != null) {
-                this.f35506a.m2270r4().m14783o(new TdApi.GetBasicGroupFullInfo(j), this.f35521m0);
+            if (this.f35501S.get(valueOf) != null) {
+                this.f35509a.m2270r4().m14783o(new TdApi.GetBasicGroupFullInfo(j), this.f35524m0);
             } else {
-                this.f35506a.m2270r4().m14783o(new TdApi.GetBasicGroup(j), new Client.AbstractC7865g() {
+                this.f35509a.m2270r4().m14783o(new TdApi.GetBasicGroup(j), new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object) {
                         C11059v7.this.m1605q0(j, object);
@@ -930,8 +930,8 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
 
     public TdApi.User m1695R1(String str) {
         TdApi.User user;
-        synchronized (this.f35525q0) {
-            Iterator<Map.Entry<Long, TdApi.User>> it = this.f35510c.entrySet().iterator();
+        synchronized (this.f35528q0) {
+            Iterator<Map.Entry<Long, TdApi.User>> it = this.f35513c.entrySet().iterator();
             while (true) {
                 if (!it.hasNext()) {
                     user = null;
@@ -949,7 +949,7 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
 
     public String m1694R2(long j) {
         TdApi.User v2;
-        if (j == 0 || (v2 = m1583v2(j)) == null || C5070i.m24061i(v2.username)) {
+        if (j == 0 || (v2 = m1583v2(j)) == null || C5070i.m24062i(v2.username)) {
             return null;
         }
         return v2.username;
@@ -958,8 +958,8 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     public TdApi.BasicGroup m1693S(long j) {
         TdApi.BasicGroup basicGroup;
         if (j != 0) {
-            synchronized (this.f35525q0) {
-                basicGroup = this.f35498S.get(Long.valueOf(j));
+            synchronized (this.f35528q0) {
+                basicGroup = this.f35501S.get(Long.valueOf(j));
                 if (basicGroup == null) {
                     throw new IllegalStateException("id:" + j);
                 }
@@ -971,19 +971,19 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
 
     public TdApi.SecretChat m1691S1(int i) {
         TdApi.SecretChat secretChat;
-        synchronized (this.f35525q0) {
-            secretChat = this.f35507a0.get(Integer.valueOf(i));
+        synchronized (this.f35528q0) {
+            secretChat = this.f35510a0.get(Integer.valueOf(i));
         }
         return secretChat;
     }
 
     public int m1690S2(long[] jArr, ArrayList<TdApi.User> arrayList) {
         int i;
-        synchronized (this.f35525q0) {
+        synchronized (this.f35528q0) {
             i = 0;
             for (long j : jArr) {
                 if (j != 0) {
-                    TdApi.User user = this.f35510c.get(Long.valueOf(j));
+                    TdApi.User user = this.f35513c.get(Long.valueOf(j));
                     if (user != null) {
                         arrayList.add(user);
                         i++;
@@ -997,32 +997,32 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public final void m1689T() {
-        boolean z = this.f35527s0 && !this.f35528t0;
-        if (this.f35529u0 != z) {
-            this.f35529u0 = z;
-            Log.m14719i("accountId:%d refreshActive -> %b, size:%d", Integer.valueOf(this.f35506a.m2188w6()), Boolean.valueOf(z), Integer.valueOf(this.f35522n0.m23250i()));
+        boolean z = this.f35530s0 && !this.f35531t0;
+        if (this.f35532u0 != z) {
+            this.f35532u0 = z;
+            Log.m14719i("accountId:%d refreshActive -> %b, size:%d", Integer.valueOf(this.f35509a.m2188w6()), Boolean.valueOf(z), Integer.valueOf(this.f35525n0.m23251i()));
             if (!z) {
-                this.f35523o0.removeCallbacksAndMessages(null);
+                this.f35526o0.removeCallbacksAndMessages(null);
                 return;
             }
             long elapsedRealtime = SystemClock.elapsedRealtime();
-            for (int i = this.f35522n0.m23250i() - 1; i >= 0; i--) {
-                long f = this.f35522n0.m23253f(i);
-                this.f35522n0.m23249j(i);
-                TdApi.User user = this.f35510c.get(Long.valueOf(f));
+            for (int i = this.f35525n0.m23251i() - 1; i >= 0; i--) {
+                long f = this.f35525n0.m23254f(i);
+                this.f35525n0.m23250j(i);
+                TdApi.User user = this.f35513c.get(Long.valueOf(f));
                 if (user != null) {
                     m1685U(user, user.status, true);
                 }
             }
-            Log.m14719i("%d iterations in %dms", Integer.valueOf(this.f35522n0.m23250i()), Long.valueOf(SystemClock.elapsedRealtime() - elapsedRealtime));
+            Log.m14719i("%d iterations in %dms", Integer.valueOf(this.f35525n0.m23251i()), Long.valueOf(SystemClock.elapsedRealtime() - elapsedRealtime));
         }
     }
 
     public TdApi.SecretChat m1687T1(int i) {
         TdApi.SecretChat secretChat;
         if (i != 0) {
-            synchronized (this.f35525q0) {
-                secretChat = this.f35507a0.get(Integer.valueOf(i));
+            synchronized (this.f35528q0) {
+                secretChat = this.f35510a0.get(Integer.valueOf(i));
                 if (secretChat == null) {
                     throw new IllegalStateException("id:" + i);
                 }
@@ -1041,28 +1041,28 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     public final void m1685U(TdApi.User user, TdApi.UserStatus userStatus, boolean z) {
         if (userStatus.getConstructor() == -759984891) {
             int i = ((TdApi.UserStatusOffline) userStatus).wasOnline;
-            int d = this.f35522n0.m23255d(user.f25439id);
+            int d = this.f35525n0.m23256d(user.f25442id);
             if (d != i || z) {
                 if (d != 0) {
-                    this.f35523o0.removeMessages(0, Long.valueOf(user.f25439id));
-                    this.f35522n0.m23256c(user.f25439id);
+                    this.f35526o0.removeMessages(0, Long.valueOf(user.f25442id));
+                    this.f35525n0.m23257c(user.f25442id);
                 }
-                long L0 = C4403w.m27966L0(i, TimeUnit.SECONDS, this.f35506a.m2898D4(), TimeUnit.MILLISECONDS, true, 60);
+                long L0 = C4403w.m27968L0(i, TimeUnit.SECONDS, this.f35509a.m2898D4(), TimeUnit.MILLISECONDS, true, 60);
                 if (L0 != -1) {
-                    this.f35522n0.m23252g(user.f25439id, i);
-                    if (this.f35529u0) {
-                        Message obtain = Message.obtain(this.f35523o0, 0, i, 0, Long.valueOf(user.f25439id));
+                    this.f35525n0.m23253g(user.f25442id, i);
+                    if (this.f35532u0) {
+                        Message obtain = Message.obtain(this.f35526o0, 0, i, 0, Long.valueOf(user.f25442id));
                         if (z) {
-                            this.f35523o0.sendMessage(obtain);
+                            this.f35526o0.sendMessage(obtain);
                         } else {
-                            this.f35523o0.sendMessageDelayed(obtain, L0);
+                            this.f35526o0.sendMessageDelayed(obtain, L0);
                         }
                     }
                 }
             }
-        } else if (this.f35522n0.m23255d(user.f25439id) != 0) {
-            this.f35523o0.removeMessages(0, Long.valueOf(user.f25439id));
-            this.f35522n0.m23256c(user.f25439id);
+        } else if (this.f35525n0.m23256d(user.f25442id) != 0) {
+            this.f35526o0.removeMessages(0, Long.valueOf(user.f25442id));
+            this.f35525n0.m23257c(user.f25442id);
         }
     }
 
@@ -1071,18 +1071,18 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public void m1682V() {
-        this.f35510c.clear();
-        this.f35492M.clear();
-        this.f35498S.clear();
-        this.f35499T.clear();
-        this.f35502W.clear();
-        this.f35503X.clear();
-        this.f35507a0.clear();
-        this.f35512d0.m21474b();
-        this.f35513e0.m21474b();
+        this.f35513c.clear();
+        this.f35495M.clear();
+        this.f35501S.clear();
+        this.f35502T.clear();
+        this.f35505W.clear();
+        this.f35506X.clear();
+        this.f35510a0.clear();
+        this.f35515d0.m21475b();
+        this.f35516e0.m21475b();
         m1699Q1(null);
-        this.f35508b = 0L;
-        this.f35526r0 = null;
+        this.f35511b = 0L;
+        this.f35529r0 = null;
     }
 
     public boolean m1680V1(TdApi.MessageSender messageSender) {
@@ -1090,74 +1090,74 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public final void m1679W(AbstractC11061b bVar) {
-        this.f35500U.remove(bVar);
+        this.f35503U.remove(bVar);
     }
 
     public final void m1677W1(boolean z) {
-        synchronized (this.f35530v0) {
-            if (this.f35528t0 != z) {
-                this.f35528t0 = z;
-                Log.m14719i("accountId:%d refreshUiPaused -> %b", Integer.valueOf(this.f35506a.m2188w6()), Boolean.valueOf(this.f35528t0));
+        synchronized (this.f35533v0) {
+            if (this.f35531t0 != z) {
+                this.f35531t0 = z;
+                Log.m14719i("accountId:%d refreshUiPaused -> %b", Integer.valueOf(this.f35509a.m2188w6()), Boolean.valueOf(this.f35531t0));
                 m1689T();
             }
         }
     }
 
     public final void m1676X(AbstractC11062c cVar) {
-        this.f35514f0.remove(cVar);
+        this.f35517f0.remove(cVar);
     }
 
     public final void m1675X0(int i) {
-        boolean z = !this.f35518j0.isEmpty();
-        if (this.f35531w0 != z) {
+        boolean z = !this.f35521j0.isEmpty();
+        if (this.f35534w0 != z) {
             if (z) {
-                this.f35506a.m2930B4().m4735W1().m4373c(this);
+                this.f35509a.m2930B4().m4735W1().m4373c(this);
             } else {
-                this.f35506a.m2930B4().m4735W1().m4359q(this);
+                this.f35509a.m2930B4().m4735W1().m4359q(this);
             }
-            this.f35531w0 = z;
+            this.f35534w0 = z;
         }
-        this.f35506a.m2930B4().m4735W1().m4363n(this.f35506a, this.f35518j0.isEmpty() ? null : new ArrayList<>(this.f35518j0));
-        this.f35506a.m2647T2(i);
+        this.f35509a.m2930B4().m4735W1().m4363n(this.f35509a, this.f35521j0.isEmpty() ? null : new ArrayList<>(this.f35521j0));
+        this.f35509a.m2647T2(i);
     }
 
     public final void m1674X1(boolean z) {
-        synchronized (this.f35530v0) {
-            if (this.f35527s0 != z) {
-                this.f35527s0 = z;
-                Log.m14719i("accountId:%d refreshNeeded -> %b", Integer.valueOf(this.f35506a.m2188w6()), Boolean.valueOf(z));
+        synchronized (this.f35533v0) {
+            if (this.f35530s0 != z) {
+                this.f35530s0 = z;
+                Log.m14719i("accountId:%d refreshNeeded -> %b", Integer.valueOf(this.f35509a.m2188w6()), Boolean.valueOf(z));
                 m1689T();
             }
         }
     }
 
     public final void m1673Y(AbstractC11066g gVar) {
-        this.f35509b0.remove(gVar);
+        this.f35512b0.remove(gVar);
     }
 
     public final void m1672Y0(long j, TdApi.UserFullInfo userFullInfo) {
-        m1707O0(this.f35493N.m21019d(0L), j, userFullInfo);
-        m1707O0(this.f35493N.m21019d(Long.valueOf(j)), j, userFullInfo);
+        m1707O0(this.f35496N.m21020d(0L), j, userFullInfo);
+        m1707O0(this.f35496N.m21020d(Long.valueOf(j)), j, userFullInfo);
     }
 
     public void m1671Y1(long j) {
-        synchronized (this.f35518j0) {
-            for (int size = this.f35518j0.size() - 1; size >= 0; size--) {
-                TdApi.Message message = this.f35518j0.get(size);
+        synchronized (this.f35521j0) {
+            for (int size = this.f35521j0.size() - 1; size >= 0; size--) {
+                TdApi.Message message = this.f35521j0.get(size);
                 if (j == 0 || message.chatId == j) {
-                    this.f35506a.m2270r4().m14783o(new TdApi.EditMessageLiveLocation(message.chatId, message.f25406id, null, null, 0, 0), this.f35506a.m2214uc());
+                    this.f35509a.m2270r4().m14783o(new TdApi.EditMessageLiveLocation(message.chatId, message.f25409id, null, null, 0, 0), this.f35509a.m2214uc());
                 }
             }
         }
     }
 
     public final void m1670Z(AbstractC11067h hVar) {
-        this.f35504Y.remove(hVar);
+        this.f35507Y.remove(hVar);
     }
 
     public final void m1669Z0(TdApi.User user) {
-        m1684U0(this.f35493N.m21019d(0L), user);
-        m1684U0(this.f35493N.m21019d(Long.valueOf(user.f25439id)), user);
+        m1684U0(this.f35496N.m21020d(0L), user);
+        m1684U0(this.f35496N.m21020d(Long.valueOf(user.f25442id)), user);
     }
 
     public void m1668Z1(Object obj) {
@@ -1191,10 +1191,10 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public final void m1666a1(long j, TdApi.UserStatus userStatus, boolean z) {
-        m1663b1(this.f35495P.m21019d(0L), j, userStatus, z);
-        m1663b1(this.f35495P.m21019d(Long.valueOf(j)), j, userStatus, z);
-        m1663b1(this.f35496Q.m21019d(0L), j, userStatus, z);
-        m1663b1(this.f35496Q.m21019d(Long.valueOf(j)), j, userStatus, z);
+        m1663b1(this.f35498P.m21020d(0L), j, userStatus, z);
+        m1663b1(this.f35498P.m21020d(Long.valueOf(j)), j, userStatus, z);
+        m1663b1(this.f35499Q.m21020d(0L), j, userStatus, z);
+        m1663b1(this.f35499Q.m21020d(Long.valueOf(j)), j, userStatus, z);
     }
 
     public void m1665a2(int i, AbstractC11062c cVar) {
@@ -1203,11 +1203,11 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
 
     @Override
     public void mo1409b(boolean z) {
-        this.f35506a.m2270r4().m14783o(new TdApi.GetActiveLiveLocationMessages(), this.f35524p0);
+        this.f35509a.m2270r4().m14783o(new TdApi.GetActiveLiveLocationMessages(), this.f35527p0);
     }
 
     public final void m1664b0(long j, AbstractC11061b bVar) {
-        this.f35501V.m21016g(Long.valueOf(j), bVar);
+        this.f35504V.m21017g(Long.valueOf(j), bVar);
     }
 
     public void m1662b2(long j, AbstractC11061b bVar) {
@@ -1216,29 +1216,29 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
 
     @Override
     public void mo1661b3(ArrayList<C10930q6> arrayList, ArrayList<ArrayList<TdApi.Message>> arrayList2) {
-        synchronized (this.f35518j0) {
-            if (!this.f35518j0.isEmpty()) {
-                arrayList.add(this.f35506a);
-                arrayList2.add(new ArrayList<>(this.f35518j0));
+        synchronized (this.f35521j0) {
+            if (!this.f35521j0.isEmpty()) {
+                arrayList.add(this.f35509a);
+                arrayList2.add(new ArrayList<>(this.f35521j0));
             }
         }
     }
 
     @Override
     public void mo1407c() {
-        this.f35523o0.removeCallbacksAndMessages(null);
-        this.f35506a.m2270r4().m14783o(new TdApi.GetActiveLiveLocationMessages(), this.f35524p0);
+        this.f35526o0.removeCallbacksAndMessages(null);
+        this.f35509a.m2270r4().m14783o(new TdApi.GetActiveLiveLocationMessages(), this.f35527p0);
     }
 
     public void m1660c0(long j, long[] jArr) {
-        synchronized (this.f35518j0) {
-            if (!this.f35518j0.isEmpty()) {
+        synchronized (this.f35521j0) {
+            if (!this.f35521j0.isEmpty()) {
                 int i = 0;
-                for (int size = this.f35518j0.size() - 1; size >= 0; size--) {
-                    TdApi.Message message = this.f35518j0.get(size);
-                    if (message.chatId == j && C5062b.m24153s(jArr, message.f25406id) != -1) {
-                        this.f35506a.m2692Q2(message);
-                        this.f35518j0.remove(size);
+                for (int size = this.f35521j0.size() - 1; size >= 0; size--) {
+                    TdApi.Message message = this.f35521j0.get(size);
+                    if (message.chatId == j && C5062b.m24154s(jArr, message.f25409id) != -1) {
+                        this.f35509a.m2692Q2(message);
+                        this.f35521j0.remove(size);
                         i++;
                     }
                 }
@@ -1250,8 +1250,8 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public void m1659c1(int i, int i2) {
-        m1723K0(this.f35514f0.iterator(), i, i2, true);
-        m1723K0(this.f35515g0.m21019d(Integer.valueOf(i)), i, i2, true);
+        m1723K0(this.f35517f0.iterator(), i, i2, true);
+        m1723K0(this.f35518g0.m21020d(Integer.valueOf(i)), i, i2, true);
     }
 
     public void m1658c2(int i, AbstractC11066g gVar) {
@@ -1259,13 +1259,13 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public final void m1656d0(int i, AbstractC11066g gVar) {
-        this.f35511c0.m21016g(Integer.valueOf(i), gVar);
+        this.f35514c0.m21017g(Integer.valueOf(i), gVar);
     }
 
     public void m1655d1(int i, int i2) {
         if (i2 == 3) {
-            m1723K0(this.f35514f0.iterator(), i, i2, false);
-            m1723K0(this.f35515g0.m21019d(Integer.valueOf(i)), i, i2, false);
+            m1723K0(this.f35517f0.iterator(), i, i2, false);
+            m1723K0(this.f35518g0.m21020d(Integer.valueOf(i)), i, i2, false);
         }
     }
 
@@ -1274,15 +1274,15 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public final void m1652e0(long j, AbstractC11067h hVar) {
-        this.f35505Z.m21016g(Long.valueOf(j), hVar);
+        this.f35508Z.m21017g(Long.valueOf(j), hVar);
     }
 
     public void m1651e1(long j, TdApi.ChatMember chatMember) {
-        Iterator<AbstractC11063d> it = this.f35516h0.iterator();
+        Iterator<AbstractC11063d> it = this.f35519h0.iterator();
         while (it.hasNext()) {
             it.next().mo1560u2(j, chatMember);
         }
-        Iterator<AbstractC11063d> d = this.f35517i0.m21019d(Long.valueOf(j));
+        Iterator<AbstractC11063d> d = this.f35520i0.m21020d(Long.valueOf(j));
         if (d != null) {
             while (d.hasNext()) {
                 d.next().mo1560u2(j, chatMember);
@@ -1294,15 +1294,15 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
         if (j == 0) {
             throw new IllegalArgumentException("userId == " + j);
         } else if (jVar.mo1350D3()) {
-            this.f35495P.m21021b(Long.valueOf(j), jVar);
+            this.f35498P.m21022b(Long.valueOf(j), jVar);
         } else {
-            this.f35496Q.m21021b(Long.valueOf(j), jVar);
+            this.f35499Q.m21022b(Long.valueOf(j), jVar);
         }
     }
 
     public TdApi.Message m1648f0(long j) {
-        synchronized (this.f35518j0) {
-            Iterator<TdApi.Message> it = this.f35518j0.iterator();
+        synchronized (this.f35521j0) {
+            Iterator<TdApi.Message> it = this.f35521j0.iterator();
             while (it.hasNext()) {
                 TdApi.Message next = it.next();
                 if (next.chatId == j) {
@@ -1314,9 +1314,9 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public final void m1647f1(TdApi.Message message) {
-        synchronized (this.f35518j0) {
-            if (this.f35518j0.indexOf(message) != -1) {
-                this.f35506a.m2930B4().m4735W1().m4361o(this.f35506a, message);
+        synchronized (this.f35521j0) {
+            if (this.f35521j0.indexOf(message) != -1) {
+                this.f35509a.m2930B4().m4735W1().m4361o(this.f35509a, message);
             }
         }
     }
@@ -1328,17 +1328,17 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
 
     public TdApi.Call m1644g0(int i) {
         TdApi.Call e;
-        synchronized (this.f35525q0) {
-            e = this.f35512d0.m21471e(i);
+        synchronized (this.f35528q0) {
+            e = this.f35515d0.m21472e(i);
         }
         return e;
     }
 
     public void m1643g1(TdApi.Message message) {
-        synchronized (this.f35518j0) {
-            int indexOf = this.f35518j0.indexOf(message);
+        synchronized (this.f35521j0) {
+            int indexOf = this.f35521j0.indexOf(message);
             if (indexOf != -1) {
-                this.f35518j0.remove(indexOf);
+                this.f35521j0.remove(indexOf);
                 m1675X0(-1);
             }
         }
@@ -1358,8 +1358,8 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
 
     public CallSettings m1640h0(int i) {
         CallSettings e;
-        synchronized (this.f35525q0) {
-            e = this.f35513e0.m21471e(i);
+        synchronized (this.f35528q0) {
+            e = this.f35516e0.m21472e(i);
         }
         return e;
     }
@@ -1368,18 +1368,18 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
         boolean z;
         boolean z2;
         long j;
-        synchronized (this.f35525q0) {
+        synchronized (this.f35528q0) {
             TdApi.BasicGroup basicGroup = updateBasicGroup.basicGroup;
-            TdApi.BasicGroup basicGroup2 = this.f35498S.get(Long.valueOf(basicGroup.f25363id));
-            this.f35498S.put(Long.valueOf(basicGroup.f25363id), basicGroup);
+            TdApi.BasicGroup basicGroup2 = this.f35501S.get(Long.valueOf(basicGroup.f25366id));
+            this.f35501S.put(Long.valueOf(basicGroup.f25366id), basicGroup);
             z = true;
             z2 = basicGroup2 != null;
             j = (!z2 || basicGroup2.upgradedToSupergroupId != 0) ? 0L : basicGroup.upgradedToSupergroupId;
         }
         if (z2) {
             int i = (j > 0L ? 1 : (j == 0L ? 0 : -1));
-            m1703P0(this.f35500U.iterator(), updateBasicGroup.basicGroup, i != 0);
-            Iterator<AbstractC11061b> d = this.f35501V.m21019d(Long.valueOf(updateBasicGroup.basicGroup.f25363id));
+            m1703P0(this.f35503U.iterator(), updateBasicGroup.basicGroup, i != 0);
+            Iterator<AbstractC11061b> d = this.f35504V.m21020d(Long.valueOf(updateBasicGroup.basicGroup.f25366id));
             TdApi.BasicGroup basicGroup3 = updateBasicGroup.basicGroup;
             if (i == 0) {
                 z = false;
@@ -1390,24 +1390,24 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
 
     public TdApi.Supergroup m1638h2(long j) {
         TdApi.Supergroup supergroup;
-        synchronized (this.f35525q0) {
-            supergroup = this.f35502W.get(Long.valueOf(j));
+        synchronized (this.f35528q0) {
+            supergroup = this.f35505W.get(Long.valueOf(j));
         }
         return supergroup;
     }
 
     public void m1636i0(final AbstractC5918j<TdApi.HttpUrl> jVar) {
-        TdApi.HttpUrl httpUrl = this.f35526r0;
+        TdApi.HttpUrl httpUrl = this.f35529r0;
         if (httpUrl == null) {
             final C11060a aVar = new C11060a(jVar);
-            this.f35506a.m2270r4().m14783o(new TdApi.GetApplicationDownloadLink(), new Client.AbstractC7865g() {
+            this.f35509a.m2270r4().m14783o(new TdApi.GetApplicationDownloadLink(), new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
                     C11059v7.this.m1597s0(jVar, aVar, object);
                 }
             });
-            if (this.f35506a.m2930B4().m4694g3().m28142k()) {
-                C1379j0.m37332e0(aVar, 800L);
+            if (this.f35509a.m2930B4().m4694g3().m28144k()) {
+                C1379j0.m37335e0(aVar, 800L);
             } else {
                 aVar.run();
             }
@@ -1418,12 +1418,12 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
 
     public void m1635i1(TdApi.UpdateBasicGroupFullInfo updateBasicGroupFullInfo) {
         boolean C1;
-        synchronized (this.f35525q0) {
+        synchronized (this.f35528q0) {
             C1 = m1754C1(updateBasicGroupFullInfo.basicGroupId, updateBasicGroupFullInfo.basicGroupFullInfo);
         }
         if (C1) {
-            m1715M0(this.f35500U.iterator(), updateBasicGroupFullInfo.basicGroupId, updateBasicGroupFullInfo.basicGroupFullInfo);
-            m1715M0(this.f35501V.m21019d(Long.valueOf(updateBasicGroupFullInfo.basicGroupId)), updateBasicGroupFullInfo.basicGroupId, updateBasicGroupFullInfo.basicGroupFullInfo);
+            m1715M0(this.f35503U.iterator(), updateBasicGroupFullInfo.basicGroupId, updateBasicGroupFullInfo.basicGroupFullInfo);
+            m1715M0(this.f35504V.m21020d(Long.valueOf(updateBasicGroupFullInfo.basicGroupId)), updateBasicGroupFullInfo.basicGroupId, updateBasicGroupFullInfo.basicGroupFullInfo);
         }
     }
 
@@ -1443,35 +1443,35 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     public void m1631j1(TdApi.UpdateCall updateCall) {
         char c;
         TdApi.Call call = updateCall.call;
-        synchronized (this.f35525q0) {
+        synchronized (this.f35528q0) {
             c = 0;
-            boolean z = !C4779t2.m25562Z2(this.f35512d0.m21471e(call.f25364id));
-            this.f35512d0.m21466j(call.f25364id, call);
-            boolean z2 = !C4779t2.m25562Z2(call);
+            boolean z = !C4779t2.m25563Z2(this.f35515d0.m21472e(call.f25367id));
+            this.f35515d0.m21467j(call.f25367id, call);
+            boolean z2 = !C4779t2.m25563Z2(call);
             if (z != z2) {
                 c = z2 ? (char) 1 : (char) 65535;
             }
         }
-        m1696R0(this.f35514f0.iterator(), call);
-        m1696R0(this.f35515g0.m21019d(Integer.valueOf(call.f25364id)), call);
-        this.f35506a.m2930B4().m4716b1().m1542m(this.f35506a, call);
+        m1696R0(this.f35517f0.iterator(), call);
+        m1696R0(this.f35518g0.m21020d(Integer.valueOf(call.f25367id)), call);
+        this.f35509a.m2930B4().m4716b1().m1542m(this.f35509a, call);
         if (c == 1) {
-            this.f35506a.m2944A6();
+            this.f35509a.m2944A6();
         } else if (c == 65535) {
-            this.f35506a.m2882E4();
+            this.f35509a.m2882E4();
         }
     }
 
     public TdApi.SupergroupFullInfo m1630j2(final long j, boolean z) {
         TdApi.SupergroupFullInfo supergroupFullInfo;
-        synchronized (this.f35525q0) {
+        synchronized (this.f35528q0) {
             Long valueOf = Long.valueOf(j);
-            supergroupFullInfo = this.f35503X.get(valueOf);
+            supergroupFullInfo = this.f35506X.get(valueOf);
             if (supergroupFullInfo == null || z) {
-                if (this.f35502W.get(valueOf) != null) {
-                    this.f35506a.m2270r4().m14783o(new TdApi.GetSupergroupFullInfo(j), this.f35521m0);
+                if (this.f35505W.get(valueOf) != null) {
+                    this.f35509a.m2270r4().m14783o(new TdApi.GetSupergroupFullInfo(j), this.f35524m0);
                 } else {
-                    this.f35506a.m2270r4().m14783o(new TdApi.GetSupergroup(j), new Client.AbstractC7865g() {
+                    this.f35509a.m2270r4().m14783o(new TdApi.GetSupergroup(j), new Client.AbstractC7865g() {
                         @Override
                         public final void mo255t2(TdApi.Object object) {
                             C11059v7.this.m1763A0(j, object);
@@ -1485,8 +1485,8 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
 
     public boolean m1628k0() {
         boolean z;
-        synchronized (this.f35518j0) {
-            z = !this.f35518j0.isEmpty();
+        synchronized (this.f35521j0) {
+            z = !this.f35521j0.isEmpty();
         }
         return z;
     }
@@ -1498,7 +1498,7 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
                 if (i2 != null) {
                     jVar.mo1330a(i2);
                 } else {
-                    this.f35506a.m2270r4().m14783o(new TdApi.GetSupergroupFullInfo(j), new Client.AbstractC7865g() {
+                    this.f35509a.m2270r4().m14783o(new TdApi.GetSupergroupFullInfo(j), new Client.AbstractC7865g() {
                         @Override
                         public final void mo255t2(TdApi.Object object) {
                             C11059v7.this.m1751D0(jVar, j, object);
@@ -1512,11 +1512,11 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public final int m1625l0(long j, long j2) {
-        Iterator<TdApi.Message> it = this.f35518j0.iterator();
+        Iterator<TdApi.Message> it = this.f35521j0.iterator();
         int i = 0;
         while (it.hasNext()) {
             TdApi.Message next = it.next();
-            if (next.chatId == j && next.f25406id == j2) {
+            if (next.chatId == j && next.f25409id == j2) {
                 return i;
             }
             i++;
@@ -1525,19 +1525,19 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public void m1624l1(int i, CallSettings callSettings) {
-        synchronized (this.f35525q0) {
-            this.f35513e0.m21466j(i, callSettings);
+        synchronized (this.f35528q0) {
+            this.f35516e0.m21467j(i, callSettings);
         }
-        m1719L0(this.f35514f0.iterator(), i, callSettings);
-        m1719L0(this.f35515g0.m21019d(Integer.valueOf(i)), i, callSettings);
-        this.f35506a.m2930B4().m4716b1().m1543l(this.f35506a, i, callSettings);
+        m1719L0(this.f35517f0.iterator(), i, callSettings);
+        m1719L0(this.f35518g0.m21020d(Integer.valueOf(i)), i, callSettings);
+        this.f35509a.m2930B4().m4716b1().m1543l(this.f35509a, i, callSettings);
     }
 
     public TdApi.Supergroup m1623l2(long j) {
         TdApi.Supergroup supergroup;
         if (j != 0) {
-            synchronized (this.f35525q0) {
-                supergroup = this.f35502W.get(Long.valueOf(j));
+            synchronized (this.f35528q0) {
+                supergroup = this.f35505W.get(Long.valueOf(j));
                 if (supergroup == null) {
                     throw new IllegalStateException("id:" + j);
                 }
@@ -1552,20 +1552,20 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
             return false;
         }
         boolean z = true;
-        if (j == this.f35508b) {
+        if (j == this.f35511b) {
             return true;
         }
-        synchronized (this.f35525q0) {
-            if (j != this.f35508b) {
-                z = C4779t2.m25443q3(this.f35510c.get(Long.valueOf(j)));
+        synchronized (this.f35528q0) {
+            if (j != this.f35511b) {
+                z = C4779t2.m25444q3(this.f35513c.get(Long.valueOf(j)));
             }
         }
         return z;
     }
 
     public void m1620m1(String str) {
-        if (this.f35508b != 0) {
-            m1681V0(this.f35497R.iterator(), str);
+        if (this.f35511b != 0) {
+            m1681V0(this.f35500R.iterator(), str);
         }
     }
 
@@ -1591,23 +1591,23 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public void m1616n1(long j) {
-        synchronized (this.f35525q0) {
-            if (this.f35508b != j) {
-                this.f35508b = j;
+        synchronized (this.f35528q0) {
+            if (this.f35511b != j) {
+                this.f35511b = j;
                 int i = (j > 0L ? 1 : (j == 0L ? 0 : -1));
-                TdApi.User user = i != 0 ? this.f35510c.get(Long.valueOf(j)) : null;
+                TdApi.User user = i != 0 ? this.f35513c.get(Long.valueOf(j)) : null;
                 if (i == 0) {
-                    m1678W0(this.f35497R.iterator(), null);
-                    this.f35506a.m2585X4(null);
+                    m1678W0(this.f35500R.iterator(), null);
+                    this.f35509a.m2585X4(null);
                 } else if (user != null) {
-                    m1678W0(this.f35497R.iterator(), user);
-                    this.f35506a.m2585X4(user);
-                } else if (!this.f35519k0) {
-                    this.f35519k0 = true;
-                    this.f35506a.m2270r4().m14783o(new TdApi.GetMe(), this.f35520l0);
+                    m1678W0(this.f35500R.iterator(), user);
+                    this.f35509a.m2585X4(user);
+                } else if (!this.f35522k0) {
+                    this.f35522k0 = true;
+                    this.f35509a.m2270r4().m14783o(new TdApi.GetMe(), this.f35523l0);
                 }
                 if (user != null) {
-                    this.f35506a.m2930B4().m4672m2(this.f35506a.m2188w6(), user, true);
+                    this.f35509a.m2930B4().m4672m2(this.f35509a.m2188w6(), user, true);
                 }
             }
         }
@@ -1620,12 +1620,12 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     public void m1612o1(TdApi.UpdateSecretChat updateSecretChat) {
         boolean E1;
         TdApi.SecretChat secretChat = updateSecretChat.secretChat;
-        synchronized (this.f35525q0) {
+        synchronized (this.f35528q0) {
             E1 = m1746E1(secretChat);
         }
         if (E1) {
-            m1692S0(this.f35509b0.iterator(), secretChat);
-            m1692S0(this.f35511c0.m21019d(Integer.valueOf(secretChat.f25419id)), secretChat);
+            m1692S0(this.f35512b0.iterator(), secretChat);
+            m1692S0(this.f35514c0.m21020d(Integer.valueOf(secretChat.f25422id)), secretChat);
         }
     }
 
@@ -1636,15 +1636,15 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     public void m1608p1(TdApi.UpdateSupergroup updateSupergroup, TdApi.Chat chat) {
         int G1;
         TdApi.Supergroup supergroup = updateSupergroup.supergroup;
-        synchronized (this.f35525q0) {
+        synchronized (this.f35528q0) {
             G1 = m1738G1(supergroup);
         }
         if (G1 != 0) {
-            m1688T0(this.f35504Y.iterator(), supergroup);
-            m1688T0(this.f35505Z.m21019d(Long.valueOf(supergroup.f25425id)), supergroup);
+            m1688T0(this.f35507Y.iterator(), supergroup);
+            m1688T0(this.f35508Z.m21020d(Long.valueOf(supergroup.f25428id)), supergroup);
         }
         if (Build.VERSION.SDK_INT >= 26 && G1 == 2 && chat != null) {
-            C10639eb.m4382v(this.f35506a, this.f35508b, chat);
+            C10639eb.m4382v(this.f35509a, this.f35511b, chat);
         }
     }
 
@@ -1656,12 +1656,12 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
         boolean H1;
         long j = updateSupergroupFullInfo.supergroupId;
         TdApi.SupergroupFullInfo supergroupFullInfo = updateSupergroupFullInfo.supergroupFullInfo;
-        synchronized (this.f35525q0) {
+        synchronized (this.f35528q0) {
             H1 = m1734H1(j, supergroupFullInfo);
         }
         if (H1) {
-            m1711N0(this.f35504Y.iterator(), j, supergroupFullInfo);
-            m1711N0(this.f35505Z.m21019d(Long.valueOf(j)), j, supergroupFullInfo);
+            m1711N0(this.f35507Y.iterator(), j, supergroupFullInfo);
+            m1711N0(this.f35508Z.m21020d(Long.valueOf(j)), j, supergroupFullInfo);
         }
     }
 
@@ -1673,32 +1673,32 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
         boolean z;
         boolean z2;
         TdApi.User user = updateUser.user;
-        synchronized (this.f35525q0) {
-            TdApi.User user2 = this.f35510c.get(Long.valueOf(user.f25439id));
+        synchronized (this.f35528q0) {
+            TdApi.User user2 = this.f35513c.get(Long.valueOf(user.f25442id));
             z = user2 != null;
             if (z) {
                 z2 = !C7321e.m16936k0(user2.status, user.status);
                 C7321e.m16910t(user, user2);
-                synchronized (this.f35530v0) {
+                synchronized (this.f35533v0) {
                     user2.status = user.status;
                 }
                 user = user2;
             } else {
-                this.f35510c.put(Long.valueOf(user.f25439id), user);
+                this.f35513c.put(Long.valueOf(user.f25442id), user);
                 z2 = false;
             }
         }
         m1669Z0(user);
-        boolean z3 = user.f25439id == this.f35508b;
+        boolean z3 = user.f25442id == this.f35511b;
         if (z3) {
-            m1678W0(this.f35497R.iterator(), user);
-            this.f35506a.m2585X4(user);
-            this.f35506a.m2440ga().m3226E1(user);
+            m1678W0(this.f35500R.iterator(), user);
+            this.f35509a.m2585X4(user);
+            this.f35509a.m2440ga().m3226E1(user);
         }
         if (z2) {
-            m1592t1(new TdApi.UpdateUserStatus(user.f25439id, user.status));
+            m1592t1(new TdApi.UpdateUserStatus(user.f25442id, user.status));
         } else {
-            synchronized (this.f35530v0) {
+            synchronized (this.f35533v0) {
                 m1685U(user, user.status, false);
             }
         }
@@ -1706,7 +1706,7 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
             if (Build.VERSION.SDK_INT >= 26) {
                 C10639eb.m4381w(user);
             }
-            this.f35506a.m2930B4().m4672m2(this.f35506a.m2188w6(), user, true ^ z);
+            this.f35509a.m2930B4().m4672m2(this.f35509a.m2188w6(), user, true ^ z);
         }
     }
 
@@ -1714,22 +1714,22 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
         if (j == 0) {
             throw new IllegalArgumentException("userId == " + j);
         } else if (jVar.mo1350D3()) {
-            this.f35495P.m21016g(Long.valueOf(j), jVar);
+            this.f35498P.m21017g(Long.valueOf(j), jVar);
         } else {
-            this.f35496Q.m21016g(Long.valueOf(j), jVar);
+            this.f35499Q.m21017g(Long.valueOf(j), jVar);
         }
     }
 
     public void m1596s1(final TdApi.UpdateUserFullInfo updateUserFullInfo) {
         boolean J1;
-        synchronized (this.f35525q0) {
+        synchronized (this.f35528q0) {
             J1 = m1726J1(updateUserFullInfo.userId, updateUserFullInfo.userFullInfo);
         }
         if (J1) {
             m1672Y0(updateUserFullInfo.userId, updateUserFullInfo.userFullInfo);
         }
-        if (this.f35508b != 0 && updateUserFullInfo.userId == this.f35508b) {
-            this.f35506a.m2469ed(new Runnable() {
+        if (this.f35511b != 0 && updateUserFullInfo.userId == this.f35511b) {
+            this.f35509a.m2469ed(new Runnable() {
                 @Override
                 public final void run() {
                     C11059v7.this.m1569z0(updateUserFullInfo);
@@ -1744,13 +1744,13 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public void m1592t1(TdApi.UpdateUserStatus updateUserStatus) {
-        synchronized (this.f35525q0) {
-            TdApi.User user = this.f35510c.get(Long.valueOf(updateUserStatus.userId));
+        synchronized (this.f35528q0) {
+            TdApi.User user = this.f35513c.get(Long.valueOf(updateUserStatus.userId));
             if (user != null) {
-                synchronized (this.f35530v0) {
+                synchronized (this.f35533v0) {
                     user.status = updateUserStatus.status;
                 }
-                this.f35506a.m2645T4(updateUserStatus, false);
+                this.f35509a.m2645T4(updateUserStatus, false);
             }
         }
     }
@@ -1763,11 +1763,11 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public void m1588u1(TdApi.UpdateUserStatus updateUserStatus, boolean z) {
-        synchronized (this.f35525q0) {
-            TdApi.User user = this.f35510c.get(Long.valueOf(updateUserStatus.userId));
+        synchronized (this.f35528q0) {
+            TdApi.User user = this.f35513c.get(Long.valueOf(updateUserStatus.userId));
             if (user != null) {
                 m1666a1(updateUserStatus.userId, user.status, z);
-                synchronized (this.f35530v0) {
+                synchronized (this.f35533v0) {
                     m1685U(user, user.status, false);
                 }
             }
@@ -1776,19 +1776,19 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
 
     public void m1587u2(long j, long j2, TdApi.MessageLocation messageLocation) {
         if (messageLocation.livePeriod != 0) {
-            synchronized (this.f35518j0) {
-                if (!this.f35518j0.isEmpty()) {
+            synchronized (this.f35521j0) {
+                if (!this.f35521j0.isEmpty()) {
                     int l0 = m1625l0(j, j2);
                     if (l0 != -1) {
-                        TdApi.Message message = this.f35518j0.get(l0);
+                        TdApi.Message message = this.f35521j0.get(l0);
                         message.content = messageLocation;
                         boolean z = messageLocation.expiresIn == 0;
-                        this.f35506a.m2692Q2(message);
+                        this.f35509a.m2692Q2(message);
                         if (z) {
-                            this.f35518j0.remove(l0);
+                            this.f35521j0.remove(l0);
                             m1675X0(-1);
                         } else {
-                            this.f35506a.m2503cb(message);
+                            this.f35509a.m2503cb(message);
                         }
                     }
                 }
@@ -1798,14 +1798,14 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
 
     public final void m1584v1(long j, int i, TdApi.User user) {
         if (user != null) {
-            synchronized (this.f35530v0) {
+            synchronized (this.f35533v0) {
                 TdApi.UserStatus userStatus = user.status;
                 if (userStatus != null) {
                     if (userStatus.getConstructor() == -759984891) {
                         if (((TdApi.UserStatusOffline) user.status).wasOnline == i) {
-                            this.f35522n0.m23256c(j);
+                            this.f35525n0.m23257c(j);
                             m1666a1(j, user.status, true);
-                            synchronized (this.f35530v0) {
+                            synchronized (this.f35533v0) {
                                 m1685U(user, user.status, false);
                             }
                         }
@@ -1821,8 +1821,8 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
             Log.bug("getUser for userId=0", new Object[0]);
             return null;
         }
-        synchronized (this.f35525q0) {
-            user = this.f35510c.get(Long.valueOf(j));
+        synchronized (this.f35528q0) {
+            user = this.f35513c.get(Long.valueOf(j));
             if (user == null) {
                 Log.bug("updateUser missing for userId:%d", Long.valueOf(j));
             }
@@ -1831,7 +1831,7 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public final void m1580w1(int i, AbstractC11062c cVar) {
-        this.f35515g0.m21021b(Integer.valueOf(i), cVar);
+        this.f35518g0.m21022b(Integer.valueOf(i), cVar);
     }
 
     public C6246h m1579w2(long j) {
@@ -1848,13 +1848,13 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
         if (profilePhoto == null) {
             return null;
         }
-        C6246h hVar = new C6246h(this.f35506a, profilePhoto.small);
-        hVar.mo20767t0(C9903a.getDefaultAvatarCacheSize());
+        C6246h hVar = new C6246h(this.f35509a, profilePhoto.small);
+        hVar.mo20768t0(C9903a.getDefaultAvatarCacheSize());
         return hVar;
     }
 
     public final void m1576x1(AbstractC11061b bVar) {
-        this.f35500U.add(bVar);
+        this.f35503U.add(bVar);
     }
 
     public int m1575x2(long j) {
@@ -1862,18 +1862,18 @@ public class C11059v7 implements C10651f1.AbstractC10654c, AbstractC10816l0, C13
     }
 
     public final void m1572y1(AbstractC11062c cVar) {
-        this.f35514f0.add(cVar);
+        this.f35517f0.add(cVar);
     }
 
     public int m1571y2(TdApi.User user) {
-        return C4779t2.m25681H0((user == null || C4779t2.m25671I3(user)) ? -1L : user.f25439id, this.f35508b);
+        return C4779t2.m25682H0((user == null || C4779t2.m25672I3(user)) ? -1L : user.f25442id, this.f35511b);
     }
 
     public final void m1568z1(AbstractC11066g gVar) {
-        this.f35509b0.add(gVar);
+        this.f35512b0.add(gVar);
     }
 
     public boolean m1567z2(long j) {
-        return j != 0 && C4779t2.m25658K2(m1583v2(j));
+        return j != 0 && C4779t2.m25659K2(m1583v2(j));
     }
 }

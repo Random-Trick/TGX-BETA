@@ -51,61 +51,61 @@ import p339y2.C10352b;
 import p354z2.C11232d;
 
 public final class C11232d implements AbstractC1549m {
-    public final AbstractC4508a f35953a;
-    public final ConnectivityManager f35954b;
-    public final Context f35955c;
-    public final URL f35956d;
-    public final AbstractC6045a f35957e;
-    public final AbstractC6045a f35958f;
-    public final int f35959g;
+    public final AbstractC4508a f35956a;
+    public final ConnectivityManager f35957b;
+    public final Context f35958c;
+    public final URL f35959d;
+    public final AbstractC6045a f35960e;
+    public final AbstractC6045a f35961f;
+    public final int f35962g;
 
     public static final class C11233a {
-        public final URL f35960a;
-        public final AbstractC0068j f35961b;
-        public final String f35962c;
+        public final URL f35963a;
+        public final AbstractC0068j f35964b;
+        public final String f35965c;
 
         public C11233a(URL url, AbstractC0068j jVar, String str) {
-            this.f35960a = url;
-            this.f35961b = jVar;
-            this.f35962c = str;
+            this.f35963a = url;
+            this.f35964b = jVar;
+            this.f35965c = str;
         }
 
         public C11233a m1163a(URL url) {
-            return new C11233a(url, this.f35961b, this.f35962c);
+            return new C11233a(url, this.f35964b, this.f35965c);
         }
     }
 
     public static final class C11234b {
-        public final int f35963a;
-        public final URL f35964b;
-        public final long f35965c;
+        public final int f35966a;
+        public final URL f35967b;
+        public final long f35968c;
 
         public C11234b(int i, URL url, long j) {
-            this.f35963a = i;
-            this.f35964b = url;
-            this.f35965c = j;
+            this.f35966a = i;
+            this.f35967b = url;
+            this.f35968c = j;
         }
     }
 
     public C11232d(Context context, AbstractC6045a aVar, AbstractC6045a aVar2, int i) {
-        this.f35953a = AbstractC0068j.m42476b();
-        this.f35955c = context;
-        this.f35954b = (ConnectivityManager) context.getSystemService("connectivity");
-        this.f35956d = m1164n(C11229a.f35943c);
-        this.f35957e = aVar2;
-        this.f35958f = aVar;
-        this.f35959g = i;
+        this.f35956a = AbstractC0068j.m42479b();
+        this.f35958c = context;
+        this.f35957b = (ConnectivityManager) context.getSystemService("connectivity");
+        this.f35959d = m1164n(C11229a.f35946c);
+        this.f35960e = aVar2;
+        this.f35961f = aVar;
+        this.f35962g = i;
     }
 
     public static int m1172f(NetworkInfo networkInfo) {
         if (networkInfo == null) {
-            return AbstractC0077o.EnumC0079b.UNKNOWN_MOBILE_SUBTYPE.m42422b();
+            return AbstractC0077o.EnumC0079b.UNKNOWN_MOBILE_SUBTYPE.m42425b();
         }
         int subtype = networkInfo.getSubtype();
         if (subtype == -1) {
-            return AbstractC0077o.EnumC0079b.COMBINED.m42422b();
+            return AbstractC0077o.EnumC0079b.COMBINED.m42425b();
         }
-        if (AbstractC0077o.EnumC0079b.m42423a(subtype) != null) {
+        if (AbstractC0077o.EnumC0079b.m42426a(subtype) != null) {
             return subtype;
         }
         return 0;
@@ -113,7 +113,7 @@ public final class C11232d implements AbstractC1549m {
 
     public static int m1171g(NetworkInfo networkInfo) {
         if (networkInfo == null) {
-            return AbstractC0077o.EnumC0080c.NONE.m42420b();
+            return AbstractC0077o.EnumC0080c.NONE.m42423b();
         }
         return networkInfo.getType();
     }
@@ -122,7 +122,7 @@ public final class C11232d implements AbstractC1549m {
         try {
             return context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
         } catch (PackageManager.NameNotFoundException e) {
-            C4118a.m28882c("CctTransportBackend", "Unable to find version code for package", e);
+            C4118a.m28884c("CctTransportBackend", "Unable to find version code for package", e);
             return -1;
         }
     }
@@ -137,12 +137,12 @@ public final class C11232d implements AbstractC1549m {
     }
 
     public static C11233a m1166l(C11233a aVar, C11234b bVar) {
-        URL url = bVar.f35964b;
+        URL url = bVar.f35967b;
         if (url == null) {
             return null;
         }
-        C4118a.m28884a("CctTransportBackend", "Following redirect to: %s", url);
-        return aVar.m1163a(bVar.f35964b);
+        C4118a.m28886a("CctTransportBackend", "Following redirect to: %s", url);
+        return aVar.m1163a(bVar.f35967b);
     }
 
     public static InputStream m1165m(InputStream inputStream, String str) {
@@ -160,11 +160,11 @@ public final class C11232d implements AbstractC1549m {
     @Override
     public AbstractC1541g mo1177a(AbstractC1539f fVar) {
         AbstractC0068j i = m1169i(fVar);
-        URL url = this.f35956d;
+        URL url = this.f35959d;
         String str = null;
-        if (fVar.mo36509c() != null) {
+        if (fVar.mo36512c() != null) {
             try {
-                C11229a e = C11229a.m1181e(fVar.mo36509c());
+                C11229a e = C11229a.m1181e(fVar.mo36512c());
                 if (e.m1180f() != null) {
                     str = e.m1180f();
                 }
@@ -172,45 +172,45 @@ public final class C11232d implements AbstractC1549m {
                     url = m1164n(e.m1179g());
                 }
             } catch (IllegalArgumentException unused) {
-                return AbstractC1541g.m36505a();
+                return AbstractC1541g.m36508a();
             }
         }
         try {
-            C11234b bVar = (C11234b) C4258b.m28331a(5, new C11233a(url, i, str), new AbstractC4257a() {
+            C11234b bVar = (C11234b) C4258b.m28333a(5, new C11233a(url, i, str), new AbstractC4257a() {
                 @Override
                 public final Object apply(Object obj) {
                     C11232d.C11234b e2;
                     e2 = C11232d.this.m1173e((C11232d.C11233a) obj);
                     return e2;
                 }
-            }, C11231c.f35952a);
-            int i2 = bVar.f35963a;
+            }, C11231c.f35955a);
+            int i2 = bVar.f35966a;
             if (i2 == 200) {
-                return AbstractC1541g.m36502d(bVar.f35965c);
+                return AbstractC1541g.m36505d(bVar.f35968c);
             }
             if (i2 < 500 && i2 != 404) {
-                return AbstractC1541g.m36505a();
+                return AbstractC1541g.m36508a();
             }
-            return AbstractC1541g.m36501e();
+            return AbstractC1541g.m36504e();
         } catch (IOException e2) {
-            C4118a.m28882c("CctTransportBackend", "Could not make request to the backend", e2);
-            return AbstractC1541g.m36501e();
+            C4118a.m28884c("CctTransportBackend", "Could not make request to the backend", e2);
+            return AbstractC1541g.m36504e();
         }
     }
 
     @Override
     public AbstractC1150h mo1176b(AbstractC1150h hVar) {
-        NetworkInfo activeNetworkInfo = this.f35954b.getActiveNetworkInfo();
-        return hVar.m38294l().m38293a("sdk-version", Build.VERSION.SDK_INT).m38291c("model", Build.MODEL).m38291c("hardware", Build.HARDWARE).m38291c("device", Build.DEVICE).m38291c("product", Build.PRODUCT).m38291c("os-uild", Build.ID).m38291c("manufacturer", Build.MANUFACTURER).m38291c("fingerprint", Build.FINGERPRINT).m38292b("tz-offset", m1167k()).m38293a("net-type", m1171g(activeNetworkInfo)).m38293a("mobile-subtype", m1172f(activeNetworkInfo)).m38291c("country", Locale.getDefault().getCountry()).m38291c("locale", Locale.getDefault().getLanguage()).m38291c("mcc_mnc", m1168j(this.f35955c).getSimOperator()).m38291c("application_build", Integer.toString(m1170h(this.f35955c))).mo38290d();
+        NetworkInfo activeNetworkInfo = this.f35957b.getActiveNetworkInfo();
+        return hVar.m38297l().m38296a("sdk-version", Build.VERSION.SDK_INT).m38294c("model", Build.MODEL).m38294c("hardware", Build.HARDWARE).m38294c("device", Build.DEVICE).m38294c("product", Build.PRODUCT).m38294c("os-uild", Build.ID).m38294c("manufacturer", Build.MANUFACTURER).m38294c("fingerprint", Build.FINGERPRINT).m38295b("tz-offset", m1167k()).m38296a("net-type", m1171g(activeNetworkInfo)).m38296a("mobile-subtype", m1172f(activeNetworkInfo)).m38294c("country", Locale.getDefault().getCountry()).m38294c("locale", Locale.getDefault().getLanguage()).m38294c("mcc_mnc", m1168j(this.f35958c).getSimOperator()).m38294c("application_build", Integer.toString(m1170h(this.f35958c))).mo38293d();
     }
 
     public final C11234b m1173e(C11233a aVar) {
         Throwable e;
         Throwable e2;
-        C4118a.m28884a("CctTransportBackend", "Making request to: %s", aVar.f35960a);
-        HttpURLConnection httpURLConnection = (HttpURLConnection) aVar.f35960a.openConnection();
+        C4118a.m28886a("CctTransportBackend", "Making request to: %s", aVar.f35963a);
+        HttpURLConnection httpURLConnection = (HttpURLConnection) aVar.f35963a.openConnection();
         httpURLConnection.setConnectTimeout(30000);
-        httpURLConnection.setReadTimeout(this.f35959g);
+        httpURLConnection.setReadTimeout(this.f35962g);
         httpURLConnection.setDoOutput(true);
         httpURLConnection.setInstanceFollowRedirects(false);
         httpURLConnection.setRequestMethod("POST");
@@ -218,7 +218,7 @@ public final class C11232d implements AbstractC1549m {
         httpURLConnection.setRequestProperty("Content-Encoding", "gzip");
         httpURLConnection.setRequestProperty("Content-Type", "application/json");
         httpURLConnection.setRequestProperty("Accept-Encoding", "gzip");
-        String str = aVar.f35962c;
+        String str = aVar.f35965c;
         if (str != null) {
             httpURLConnection.setRequestProperty("X-Goog-Api-Key", str);
         }
@@ -226,15 +226,15 @@ public final class C11232d implements AbstractC1549m {
             OutputStream outputStream = httpURLConnection.getOutputStream();
             try {
                 GZIPOutputStream gZIPOutputStream = new GZIPOutputStream(outputStream);
-                this.f35953a.mo23512a(aVar.f35961b, new BufferedWriter(new OutputStreamWriter(gZIPOutputStream)));
+                this.f35956a.mo23513a(aVar.f35964b, new BufferedWriter(new OutputStreamWriter(gZIPOutputStream)));
                 gZIPOutputStream.close();
                 if (outputStream != null) {
                     outputStream.close();
                 }
                 int responseCode = httpURLConnection.getResponseCode();
-                C4118a.m28880e("CctTransportBackend", "Status Code: " + responseCode);
-                C4118a.m28880e("CctTransportBackend", "Content-Type: " + httpURLConnection.getHeaderField("Content-Type"));
-                C4118a.m28880e("CctTransportBackend", "Content-Encoding: " + httpURLConnection.getHeaderField("Content-Encoding"));
+                C4118a.m28882e("CctTransportBackend", "Status Code: " + responseCode);
+                C4118a.m28882e("CctTransportBackend", "Content-Type: " + httpURLConnection.getHeaderField("Content-Type"));
+                C4118a.m28882e("CctTransportBackend", "Content-Encoding: " + httpURLConnection.getHeaderField("Content-Encoding"));
                 if (responseCode == 302 || responseCode == 301 || responseCode == 307) {
                     return new C11234b(responseCode, new URL(httpURLConnection.getHeaderField("Location")), 0L);
                 }
@@ -244,7 +244,7 @@ public final class C11232d implements AbstractC1549m {
                 InputStream inputStream = httpURLConnection.getInputStream();
                 try {
                     InputStream m = m1165m(inputStream, httpURLConnection.getHeaderField("Content-Encoding"));
-                    C11234b bVar = new C11234b(responseCode, null, AbstractC0076n.m42431b(new BufferedReader(new InputStreamReader(m))).mo42430c());
+                    C11234b bVar = new C11234b(responseCode, null, AbstractC0076n.m42434b(new BufferedReader(new InputStreamReader(m))).mo42433c());
                     if (m != null) {
                         m.close();
                     }
@@ -274,19 +274,19 @@ public final class C11232d implements AbstractC1549m {
             }
         } catch (C4510c e3) {
             e2 = e3;
-            C4118a.m28882c("CctTransportBackend", "Couldn't encode request, returning with 400", e2);
+            C4118a.m28884c("CctTransportBackend", "Couldn't encode request, returning with 400", e2);
             return new C11234b(400, null, 0L);
         } catch (ConnectException e4) {
             e = e4;
-            C4118a.m28882c("CctTransportBackend", "Couldn't open connection, returning with 500", e);
+            C4118a.m28884c("CctTransportBackend", "Couldn't open connection, returning with 500", e);
             return new C11234b(500, null, 0L);
         } catch (UnknownHostException e5) {
             e = e5;
-            C4118a.m28882c("CctTransportBackend", "Couldn't open connection, returning with 500", e);
+            C4118a.m28884c("CctTransportBackend", "Couldn't open connection, returning with 500", e);
             return new C11234b(500, null, 0L);
         } catch (IOException e6) {
             e2 = e6;
-            C4118a.m28882c("CctTransportBackend", "Couldn't encode request, returning with 400", e2);
+            C4118a.m28884c("CctTransportBackend", "Couldn't encode request, returning with 400", e2);
             return new C11234b(400, null, 0L);
         }
     }
@@ -294,8 +294,8 @@ public final class C11232d implements AbstractC1549m {
     public final AbstractC0068j m1169i(AbstractC1539f fVar) {
         AbstractC0072l.AbstractC0073a j;
         HashMap hashMap = new HashMap();
-        for (AbstractC1150h hVar : fVar.mo36510b()) {
-            String j2 = hVar.mo38296j();
+        for (AbstractC1150h hVar : fVar.mo36513b()) {
+            String j2 = hVar.mo38299j();
             if (!hashMap.containsKey(j2)) {
                 ArrayList arrayList = new ArrayList();
                 arrayList.add(hVar);
@@ -307,33 +307,33 @@ public final class C11232d implements AbstractC1549m {
         ArrayList arrayList2 = new ArrayList();
         for (Map.Entry entry : hashMap.entrySet()) {
             AbstractC1150h hVar2 = (AbstractC1150h) ((List) entry.getValue()).get(0);
-            AbstractC0074m.AbstractC0075a b = AbstractC0074m.m42450a().mo42437f(EnumC0081p.DEFAULT).mo42436g(this.f35958f.mo21442a()).mo42435h(this.f35957e.mo21442a()).mo42441b(AbstractC0069k.m42474a().mo42469c(AbstractC0069k.EnumC0071b.ANDROID_FIREBASE).mo42470b(AbstractC0042a.m42509a().mo42478m(Integer.valueOf(hVar2.m38299g("sdk-version"))).mo42481j(hVar2.m38304b("model")).mo42485f(hVar2.m38304b("hardware")).mo42487d(hVar2.m38304b("device")).mo42479l(hVar2.m38304b("product")).mo42480k(hVar2.m38304b("os-uild")).mo42483h(hVar2.m38304b("manufacturer")).mo42486e(hVar2.m38304b("fingerprint")).mo42488c(hVar2.m38304b("country")).mo42484g(hVar2.m38304b("locale")).mo42482i(hVar2.m38304b("mcc_mnc")).mo42489b(hVar2.m38304b("application_build")).mo42490a()).mo42471a());
+            AbstractC0074m.AbstractC0075a b = AbstractC0074m.m42453a().mo42440f(EnumC0081p.DEFAULT).mo42439g(this.f35961f.mo21443a()).mo42438h(this.f35960e.mo21443a()).mo42444b(AbstractC0069k.m42477a().mo42472c(AbstractC0069k.EnumC0071b.ANDROID_FIREBASE).mo42473b(AbstractC0042a.m42512a().mo42481m(Integer.valueOf(hVar2.m38302g("sdk-version"))).mo42484j(hVar2.m38307b("model")).mo42488f(hVar2.m38307b("hardware")).mo42490d(hVar2.m38307b("device")).mo42482l(hVar2.m38307b("product")).mo42483k(hVar2.m38307b("os-uild")).mo42486h(hVar2.m38307b("manufacturer")).mo42489e(hVar2.m38307b("fingerprint")).mo42491c(hVar2.m38307b("country")).mo42487g(hVar2.m38307b("locale")).mo42485i(hVar2.m38307b("mcc_mnc")).mo42492b(hVar2.m38307b("application_build")).mo42493a()).mo42474a());
             try {
-                b.m42434i(Integer.parseInt((String) entry.getKey()));
+                b.m42437i(Integer.parseInt((String) entry.getKey()));
             } catch (NumberFormatException unused) {
-                b.m42433j((String) entry.getKey());
+                b.m42436j((String) entry.getKey());
             }
             ArrayList arrayList3 = new ArrayList();
             for (AbstractC1150h hVar3 : (List) entry.getValue()) {
-                C1149g e = hVar3.mo38301e();
-                C10352b b2 = e.m38306b();
+                C1149g e = hVar3.mo38304e();
+                C10352b b2 = e.m38309b();
                 if (b2.equals(C10352b.m5368b("proto"))) {
-                    j = AbstractC0072l.m42459j(e.m38307a());
+                    j = AbstractC0072l.m42462j(e.m38310a());
                 } else if (b2.equals(C10352b.m5368b("json"))) {
-                    j = AbstractC0072l.m42460i(new String(e.m38307a(), Charset.forName("UTF-8")));
+                    j = AbstractC0072l.m42463i(new String(e.m38310a(), Charset.forName("UTF-8")));
                 } else {
-                    C4118a.m28879f("CctTransportBackend", "Received event of unsupported encoding %s. Skipping...", b2);
+                    C4118a.m28881f("CctTransportBackend", "Received event of unsupported encoding %s. Skipping...", b2);
                 }
-                j.mo42456c(hVar3.mo38300f()).mo42455d(hVar3.mo38295k()).mo42451h(hVar3.m38298h("tz-offset")).mo42454e(AbstractC0077o.m42429a().mo42424c(AbstractC0077o.EnumC0080c.m42421a(hVar3.m38299g("net-type"))).mo42425b(AbstractC0077o.EnumC0079b.m42423a(hVar3.m38299g("mobile-subtype"))).mo42426a());
-                if (hVar3.mo38302d() != null) {
-                    j.mo42457b(hVar3.mo38302d());
+                j.mo42459c(hVar3.mo38303f()).mo42458d(hVar3.mo38298k()).mo42454h(hVar3.m38301h("tz-offset")).mo42457e(AbstractC0077o.m42432a().mo42427c(AbstractC0077o.EnumC0080c.m42424a(hVar3.m38302g("net-type"))).mo42428b(AbstractC0077o.EnumC0079b.m42426a(hVar3.m38302g("mobile-subtype"))).mo42429a());
+                if (hVar3.mo38305d() != null) {
+                    j.mo42460b(hVar3.mo38305d());
                 }
-                arrayList3.add(j.mo42458a());
+                arrayList3.add(j.mo42461a());
             }
-            b.mo42440c(arrayList3);
-            arrayList2.add(b.mo42442a());
+            b.mo42443c(arrayList3);
+            arrayList2.add(b.mo42445a());
         }
-        return AbstractC0068j.m42477a(arrayList2);
+        return AbstractC0068j.m42480a(arrayList2);
     }
 
     public C11232d(Context context, AbstractC6045a aVar, AbstractC6045a aVar2) {

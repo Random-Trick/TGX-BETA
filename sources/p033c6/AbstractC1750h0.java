@@ -8,7 +8,7 @@ public abstract class AbstractC1750h0<K, V> implements Map.Entry<K, V> {
     public final boolean equals(@NullableDecl Object obj) {
         if (obj instanceof Map.Entry) {
             Map.Entry entry = (Map.Entry) obj;
-            if (C1837n.m35975a(getKey(), entry.getKey()) && C1837n.m35975a(getValue(), entry.getValue())) {
+            if (C1837n.m35978a(getKey(), entry.getKey()) && C1837n.m35978a(getValue(), entry.getValue())) {
                 return true;
             }
         }

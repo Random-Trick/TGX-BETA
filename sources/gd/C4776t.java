@@ -28,54 +28,54 @@ public class C4776t extends AbstractC4718o<C7888N.Suggestion> {
 
     public C4776t(AbstractView$OnTouchListenerC7889a aVar, C10930q6 q6Var, C7888N.Suggestion suggestion, String str) {
         super(aVar, q6Var, 16, null, suggestion);
-        this.f16205b0 = C5078d.m23986z().m24024I(suggestion.emoji);
-        this.f16204a0 = C1363c0.m37465I(suggestion.label, str, 1, f16203g0);
-        this.f16206c0 = C7389v0.m16680T1(suggestion.label, C1410y.m37036h0());
+        this.f16205b0 = C5078d.m23987z().m24025I(suggestion.emoji);
+        this.f16204a0 = C1363c0.m37468I(suggestion.label, str, 1, f16203g0);
+        this.f16206c0 = C7389v0.m16680T1(suggestion.label, C1410y.m37039h0());
     }
 
     @Override
-    public void mo25116E(int r5) {
-        throw new UnsupportedOperationException("Method not decompiled: gd.C4776t.mo25116E(int):void");
+    public void mo25117E(int r5) {
+        throw new UnsupportedOperationException("Method not decompiled: gd.C4776t.mo25117E(int):void");
     }
 
     @Override
-    public void mo25206P(boolean z) {
-        super.mo25206P(z);
-        C1363c0.m37412u(this.f16204a0, z ? 2 : 0);
+    public void mo25207P(boolean z) {
+        super.mo25207P(z);
+        C1363c0.m37415u(this.f16204a0, z ? 2 : 0);
     }
 
-    public String m25732Z() {
+    public String m25733Z() {
         return ((C7888N.Suggestion) this.f15886M).emoji;
     }
 
     @Override
-    public void mo25112k(C10185a aVar, Canvas canvas, C6238b bVar, int i, int i2, int i3) {
-        int i4 = C1357a0.m37541i(55.0f);
-        int i5 = i3 + C1357a0.m37541i(4.0f) + C1357a0.m37541i(14.0f) + C1357a0.m37541i(5.0f);
+    public void mo25113k(C10185a aVar, Canvas canvas, C6238b bVar, int i, int i2, int i3) {
+        int i4 = C1357a0.m37544i(55.0f);
+        int i5 = i3 + C1357a0.m37544i(4.0f) + C1357a0.m37544i(14.0f) + C1357a0.m37544i(5.0f);
         if (this.f16207d0 != null) {
             canvas.save();
-            canvas.translate(i4, i5 - C1357a0.m37541i(13.0f));
+            canvas.translate(i4, i5 - C1357a0.m37544i(13.0f));
             this.f16207d0.draw(canvas);
             canvas.restore();
-            i4 += C1357a0.m37541i(24.0f);
+            i4 += C1357a0.m37544i(24.0f);
         }
         if (this.f16208e0 != null) {
             int O = this.f15890Q ? C11524j.m226O(R.id.theme_color_text, 2) : C11524j.m217S0();
             if (this.f16209f0 != null) {
                 canvas.save();
-                canvas.translate(i4, i5 - C1357a0.m37541i(13.0f));
-                TextPaint i0 = C1410y.m37034i0(O);
+                canvas.translate(i4, i5 - C1357a0.m37544i(13.0f));
+                TextPaint i0 = C1410y.m37037i0(O);
                 this.f16209f0.draw(canvas);
                 i0.setColor(O);
                 canvas.restore();
-            } else if (!C5070i.m24061i(this.f16208e0)) {
-                canvas.drawText((String) this.f16208e0, i4, i5, C1410y.m37034i0(O));
+            } else if (!C5070i.m24062i(this.f16208e0)) {
+                canvas.drawText((String) this.f16208e0, i4, i5, C1410y.m37037i0(O));
             }
         }
     }
 
     @Override
-    public int mo25111n() {
-        return (C1357a0.m37541i(4.0f) * 2) + (C1357a0.m37541i(14.0f) * 2);
+    public int mo25112n() {
+        return (C1357a0.m37544i(4.0f) * 2) + (C1357a0.m37544i(14.0f) * 2);
     }
 }

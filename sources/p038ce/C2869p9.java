@@ -49,26 +49,26 @@ public class C2869p9 extends d40<C2870a> implements AbstractC9201h1, AbstractC92
     public void mo419J(int i, View view) {
         if (i != R.id.menu_btn_forward) {
             if (i == R.id.menu_btn_more) {
-                m9302Yd(new int[]{R.id.btn_openLink}, new String[]{C4403w.m27869i1(R.string.OpenInExternalApp)}, 0);
+                m9302Yd(new int[]{R.id.btn_openLink}, new String[]{C4403w.m27871i1(R.string.OpenInExternalApp)}, 0);
             }
         } else if (m9139w9() != null) {
             C2870a x9 = m9131x9();
-            x00 x00Var = new x00(this.f30165a, this.f30167b);
-            x00Var.m30994Vi(new x00.C3281m(x9.f9630b, x9.f9629a, x9.f9633e, false));
-            x00Var.m30960ej();
+            x00 x00Var = new x00(this.f30168a, this.f30170b);
+            x00Var.m30996Vi(new x00.C3281m(x9.f9630b, x9.f9629a, x9.f9633e, false));
+            x00Var.m30962ej();
         }
     }
 
     @Override
     public void mo8864N0(int i) {
         if (i == R.id.btn_openLink && m9139w9() != null) {
-            C1405v.m37138E(m9139w9().f9632d);
+            C1405v.m37141E(m9139w9().f9632d);
         }
     }
 
     @Override
     @SuppressLint({"AddJavascriptInterface"})
-    public void mo33118Qe(C9289s sVar, WebView webView) {
+    public void mo33121Qe(C9289s sVar, WebView webView) {
         if (m9139w9() != null) {
             sVar.setTitle(m9139w9().f9630b.title);
             sVar.setSubtitle(m9139w9().f9631c);
@@ -83,12 +83,12 @@ public class C2869p9 extends d40<C2870a> implements AbstractC9201h1, AbstractC92
 
     @Override
     public boolean mo8863S8(C9270q1 q1Var, float f, float f2) {
-        return f2 < ((float) C4896n.m24478e()) || f <= ((float) C1357a0.m37541i(15.0f));
+        return f2 < ((float) C4896n.m24479e()) || f <= ((float) C1357a0.m37544i(15.0f));
     }
 
-    public final void m33117Te() {
+    public final void m33120Te() {
         if (m9131x9().f9634f != null) {
-            m9131x9().f9634f.m32651Mp((!m9339Ta() || m9347Sa() || this.f30165a.m14582I0() != 0) ? TdApi.ChatActionCancel.CONSTRUCTOR : TdApi.ChatActionStartPlayingGame.CONSTRUCTOR);
+            m9131x9().f9634f.m32654Mp((!m9339Ta() || m9347Sa() || this.f30168a.m14582I0() != 0) ? TdApi.ChatActionCancel.CONSTRUCTOR : TdApi.ChatActionStartPlayingGame.CONSTRUCTOR);
         }
     }
 
@@ -100,26 +100,26 @@ public class C2869p9 extends d40<C2870a> implements AbstractC9201h1, AbstractC92
     @Override
     public void mo6904d6() {
         super.mo6904d6();
-        m33117Te();
+        m33120Te();
     }
 
     @Override
     public void mo6871o6() {
         super.mo6871o6();
-        m33117Te();
+        m33120Te();
     }
 
     @Override
     public void mo414p0(int i, View$OnClickListenerC9170d1 d1Var, LinearLayout linearLayout) {
         if (i == R.id.menu_game) {
-            d1Var.m10076Y1(linearLayout, this);
-            d1Var.m10069b2(linearLayout, this);
+            d1Var.m10075Y1(linearLayout, this);
+            d1Var.m10068b2(linearLayout, this);
         }
     }
 
     @Override
     public void mo9159tc() {
         super.mo9159tc();
-        m33117Te();
+        m33120Te();
     }
 }

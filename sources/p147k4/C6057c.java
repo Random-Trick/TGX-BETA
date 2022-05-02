@@ -47,7 +47,7 @@ public final class C6057c extends AbstractC6069i {
             return false;
         }
         C6057c cVar = (C6057c) obj;
-        return this.f19270c == cVar.f19270c && this.f19265M == cVar.f19265M && this.f19266N == cVar.f19266N && this.f19267O == cVar.f19267O && C1216l0.m37982c(this.f19269b, cVar.f19269b) && Arrays.equals(this.f19268P, cVar.f19268P);
+        return this.f19270c == cVar.f19270c && this.f19265M == cVar.f19265M && this.f19266N == cVar.f19266N && this.f19267O == cVar.f19267O && C1216l0.m37985c(this.f19269b, cVar.f19269b) && Arrays.equals(this.f19268P, cVar.f19268P);
     }
 
     public int hashCode() {
@@ -71,7 +71,7 @@ public final class C6057c extends AbstractC6069i {
 
     public C6057c(Parcel parcel) {
         super("CHAP");
-        this.f19269b = (String) C1216l0.m37968j(parcel.readString());
+        this.f19269b = (String) C1216l0.m37971j(parcel.readString());
         this.f19270c = parcel.readInt();
         this.f19265M = parcel.readInt();
         this.f19266N = parcel.readLong();

@@ -5,7 +5,7 @@ import android.os.Build;
 import android.view.Gravity;
 
 public final class C1450e {
-    public static void m36890a(int i, int i2, int i3, Rect rect, Rect rect2, int i4) {
+    public static void m36893a(int i, int i2, int i3, Rect rect, Rect rect2, int i4) {
         if (Build.VERSION.SDK_INT >= 17) {
             Gravity.apply(i, i2, i3, rect, rect2, i4);
         } else {
@@ -13,7 +13,7 @@ public final class C1450e {
         }
     }
 
-    public static int m36889b(int i, int i2) {
+    public static int m36892b(int i, int i2) {
         return Build.VERSION.SDK_INT >= 17 ? Gravity.getAbsoluteGravity(i, i2) : i & (-8388609);
     }
 }

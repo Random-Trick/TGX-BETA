@@ -35,30 +35,30 @@ public enum EnumC5705f3 {
 
     static {
         EnumC5700e3 e3Var = EnumC5700e3.SPLITERATOR;
-        C5695d3 f = m22263f(e3Var);
+        C5695d3 f = m22264f(e3Var);
         EnumC5700e3 e3Var2 = EnumC5700e3.STREAM;
-        f.m22283b(e3Var2);
+        f.m22284b(e3Var2);
         EnumC5700e3 e3Var3 = EnumC5700e3.OP;
-        f.m22282c(e3Var3);
-        C5695d3 f2 = m22263f(e3Var);
-        f2.m22283b(e3Var2);
-        f2.m22282c(e3Var3);
-        C5695d3 f3 = m22263f(e3Var);
-        f3.m22283b(e3Var2);
-        f3.m22282c(e3Var3);
+        f.m22283c(e3Var3);
+        C5695d3 f2 = m22264f(e3Var);
+        f2.m22284b(e3Var2);
+        f2.m22283c(e3Var3);
+        C5695d3 f3 = m22264f(e3Var);
+        f3.m22284b(e3Var2);
+        f3.m22283c(e3Var3);
         EnumC5700e3 e3Var4 = EnumC5700e3.TERMINAL_OP;
-        f3.m22284a(e3Var4);
+        f3.m22285a(e3Var4);
         EnumC5700e3 e3Var5 = EnumC5700e3.UPSTREAM_TERMINAL_OP;
-        f3.m22284a(e3Var5);
-        C5695d3 f4 = m22263f(e3Var);
-        f4.m22283b(e3Var2);
-        f4.m22284a(e3Var3);
-        m22263f(e3Var3).m22283b(e3Var4);
-        f18356f = m22267b(e3Var);
-        f18357g = m22267b(e3Var2);
-        f18358h = m22267b(e3Var3);
-        m22267b(e3Var4);
-        m22267b(e3Var5);
+        f3.m22285a(e3Var5);
+        C5695d3 f4 = m22264f(e3Var);
+        f4.m22284b(e3Var2);
+        f4.m22285a(e3Var3);
+        m22264f(e3Var3).m22284b(e3Var4);
+        f18356f = m22268b(e3Var);
+        f18357g = m22268b(e3Var2);
+        f18358h = m22268b(e3Var3);
+        m22268b(e3Var4);
+        m22268b(e3Var5);
         int i = 0;
         for (EnumC5705f3 f3Var : values()) {
             i |= f3Var.f18377e;
@@ -102,11 +102,11 @@ public enum EnumC5705f3 {
         this.f18377e = 3 << i2;
     }
 
-    public static int m22268a(int i, int i2) {
+    public static int m22269a(int i, int i2) {
         return i | (i2 & (i == 0 ? f18359i : ~(((f18360j & i) << 1) | i | ((f18361k & i) >> 1))));
     }
 
-    private static int m22267b(EnumC5700e3 e3Var) {
+    private static int m22268b(EnumC5700e3 e3Var) {
         EnumC5705f3[] values;
         int i = 0;
         for (EnumC5705f3 f3Var : values()) {
@@ -115,27 +115,27 @@ public enum EnumC5705f3 {
         return i;
     }
 
-    public static int m22266c(AbstractC5468G g) {
+    public static int m22267c(AbstractC5468G g) {
         int characteristics = g.characteristics();
         return ((characteristics & 4) == 0 || g.getComparator() == null) ? f18356f & characteristics : f18356f & characteristics & (-5);
     }
 
-    private static C5695d3 m22263f(EnumC5700e3 e3Var) {
+    private static C5695d3 m22264f(EnumC5700e3 e3Var) {
         EnumMap enumMap = new EnumMap(EnumC5700e3.class);
         C5695d3 d3Var = new C5695d3(enumMap);
         enumMap.put((EnumMap) e3Var, (EnumC5700e3) 1);
         return d3Var;
     }
 
-    public static int m22262g(int i) {
+    public static int m22263g(int i) {
         return i & ((~i) >> 1) & f18360j;
     }
 
-    public boolean m22265d(int i) {
+    public boolean m22266d(int i) {
         return (i & this.f18377e) == this.f18375c;
     }
 
-    public boolean m22264e(int i) {
+    public boolean m22265e(int i) {
         int i2 = this.f18377e;
         return (i & i2) == i2;
     }

@@ -9,7 +9,7 @@ import android.view.inputmethod.InputConnection;
 public class C5092m {
 
     public static final class C5093a {
-        public static int m23962a(CharSequence charSequence, int i, int i2) {
+        public static int m23963a(CharSequence charSequence, int i, int i2) {
             int length = charSequence.length();
             if (i < 0 || length < i || i2 < 0) {
                 return -1;
@@ -39,7 +39,7 @@ public class C5092m {
             }
         }
 
-        public static int m23961b(CharSequence charSequence, int i, int i2) {
+        public static int m23962b(CharSequence charSequence, int i, int i2) {
             int length = charSequence.length();
             if (i < 0 || length < i || i2 < 0) {
                 return -1;
@@ -75,18 +75,18 @@ public class C5092m {
         }
     }
 
-    public static boolean m23964a(InputConnection inputConnection, Editable editable, int i, int i2, boolean z) {
+    public static boolean m23965a(InputConnection inputConnection, Editable editable, int i, int i2, boolean z) {
         int i3;
         int i4;
         if (editable != null && inputConnection != null && i >= 0 && i2 >= 0) {
             int selectionStart = Selection.getSelectionStart(editable);
             int selectionEnd = Selection.getSelectionEnd(editable);
-            if (m23963b(selectionStart, selectionEnd)) {
+            if (m23964b(selectionStart, selectionEnd)) {
                 return false;
             }
             if (z) {
-                i4 = C5093a.m23962a(editable, selectionStart, Math.max(i, 0));
-                i3 = C5093a.m23961b(editable, selectionEnd, Math.max(i2, 0));
+                i4 = C5093a.m23963a(editable, selectionStart, Math.max(i, 0));
+                i3 = C5093a.m23962b(editable, selectionEnd, Math.max(i2, 0));
                 if (i4 == -1 || i3 == -1) {
                     return false;
                 }
@@ -113,7 +113,7 @@ public class C5092m {
         return false;
     }
 
-    public static boolean m23963b(int i, int i2) {
+    public static boolean m23964b(int i, int i2) {
         return i == -1 || i2 == -1 || i != i2;
     }
 }

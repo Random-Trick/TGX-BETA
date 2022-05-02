@@ -999,7 +999,7 @@ public class TdApi {
     public static class Background extends Object {
         public static final int CONSTRUCTOR = -429971172;
         public Document document;
-        public long f25362id;
+        public long f25365id;
         public boolean isDark;
         public boolean isDefault;
         public String name;
@@ -1014,7 +1014,7 @@ public class TdApi {
         }
 
         public Background(long j, boolean z, boolean z2, String str, Document document, BackgroundType backgroundType) {
-            this.f25362id = j;
+            this.f25365id = j;
             this.isDefault = z;
             this.isDark = z2;
             this.name = str;
@@ -1237,7 +1237,7 @@ public class TdApi {
 
     public static class BasicGroup extends Object {
         public static final int CONSTRUCTOR = -194767217;
-        public long f25363id;
+        public long f25366id;
         public boolean isActive;
         public int memberCount;
         public ChatMemberStatus status;
@@ -1252,7 +1252,7 @@ public class TdApi {
         }
 
         public BasicGroup(long j, int i, ChatMemberStatus chatMemberStatus, boolean z, long j2) {
-            this.f25363id = j;
+            this.f25366id = j;
             this.memberCount = i;
             this.status = chatMemberStatus;
             this.isActive = z;
@@ -1449,7 +1449,7 @@ public class TdApi {
 
     public static class Call extends Object {
         public static final int CONSTRUCTOR = 920360804;
-        public int f25364id;
+        public int f25367id;
         public boolean isOutgoing;
         public boolean isVideo;
         public CallState state;
@@ -1464,7 +1464,7 @@ public class TdApi {
         }
 
         public Call(int i, long j, boolean z, boolean z2, CallState callState) {
-            this.f25364id = i;
+            this.f25367id = i;
             this.userId = j;
             this.isOutgoing = z;
             this.isVideo = z2;
@@ -1529,7 +1529,7 @@ public class TdApi {
 
     public static class CallId extends Object {
         public static final int CONSTRUCTOR = 65717769;
-        public int f25365id;
+        public int f25368id;
 
         public CallId() {
         }
@@ -1540,7 +1540,7 @@ public class TdApi {
         }
 
         public CallId(int i) {
-            this.f25365id = i;
+            this.f25368id = i;
         }
     }
 
@@ -1662,7 +1662,7 @@ public class TdApi {
 
     public static class CallServer extends Object {
         public static final int CONSTRUCTOR = 1865932695;
-        public long f25366id;
+        public long f25369id;
         public String ipAddress;
         public String ipv6Address;
         public int port;
@@ -1677,7 +1677,7 @@ public class TdApi {
         }
 
         public CallServer(long j, String str, String str2, int i, CallServerType callServerType) {
-            this.f25366id = j;
+            this.f25369id = j;
             this.ipAddress = str;
             this.ipv6Address = str2;
             this.port = i;
@@ -2116,7 +2116,7 @@ public class TdApi {
         public DraftMessage draftMessage;
         public boolean hasProtectedContent;
         public boolean hasScheduledMessages;
-        public long f25367id;
+        public long f25370id;
         public boolean isBlocked;
         public boolean isMarkedAsUnread;
         public Message lastMessage;
@@ -2147,7 +2147,7 @@ public class TdApi {
         }
 
         public Chat(long j, ChatType chatType, String str, ChatPhotoInfo chatPhotoInfo, ChatPermissions chatPermissions, Message message, ChatPosition[] chatPositionArr, MessageSender messageSender, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7, boolean z8, int i, long j2, long j3, int i2, int i3, ChatNotificationSettings chatNotificationSettings, String[] strArr, int i4, String str2, ChatActionBar chatActionBar, VideoChat videoChat, ChatJoinRequestsInfo chatJoinRequestsInfo, long j4, DraftMessage draftMessage, String str3) {
-            this.f25367id = j;
+            this.f25370id = j;
             this.type = chatType;
             this.title = str;
             this.photo = chatPhotoInfo;
@@ -2519,7 +2519,7 @@ public class TdApi {
         public static final int CONSTRUCTOR = -652102704;
         public ChatEventAction action;
         public int date;
-        public long f25368id;
+        public long f25371id;
         public MessageSender memberId;
 
         public ChatEvent() {
@@ -2531,7 +2531,7 @@ public class TdApi {
         }
 
         public ChatEvent(long j, int i, MessageSender messageSender, ChatEventAction chatEventAction) {
-            this.f25368id = j;
+            this.f25371id = j;
             this.date = i;
             this.memberId = messageSender;
             this.action = chatEventAction;
@@ -3269,7 +3269,7 @@ public class TdApi {
     public static class ChatFilterInfo extends Object {
         public static final int CONSTRUCTOR = -943721165;
         public String iconName;
-        public int f25369id;
+        public int f25372id;
         public String title;
 
         public ChatFilterInfo() {
@@ -3281,7 +3281,7 @@ public class TdApi {
         }
 
         public ChatFilterInfo(int i, String str, String str2) {
-            this.f25369id = i;
+            this.f25372id = i;
             this.title = str;
             this.iconName = str2;
         }
@@ -3938,7 +3938,7 @@ public class TdApi {
         public static final int CONSTRUCTOR = -113003577;
         public int addedDate;
         public AnimatedChatPhoto animation;
-        public long f25370id;
+        public long f25373id;
         public Minithumbnail minithumbnail;
         public PhotoSize[] sizes;
 
@@ -3951,7 +3951,7 @@ public class TdApi {
         }
 
         public ChatPhoto(long j, int i, Minithumbnail minithumbnail, PhotoSize[] photoSizeArr, AnimatedChatPhoto animatedChatPhoto) {
-            this.f25370id = j;
+            this.f25373id = j;
             this.addedDate = i;
             this.minithumbnail = minithumbnail;
             this.sizes = photoSizeArr;
@@ -5008,8 +5008,8 @@ public class TdApi {
         public long botUserId;
         public String browser;
         public String domainName;
-        public long f25371id;
-        public String f25372ip;
+        public long f25374id;
+        public String f25375ip;
         public int lastActiveDate;
         public String location;
         public int logInDate;
@@ -5024,14 +5024,14 @@ public class TdApi {
         }
 
         public ConnectedWebsite(long j, String str, long j2, String str2, String str3, int i, int i2, String str4, String str5) {
-            this.f25371id = j;
+            this.f25374id = j;
             this.domainName = str;
             this.botUserId = j2;
             this.browser = str2;
             this.platform = str3;
             this.logInDate = i;
             this.lastActiveDate = i2;
-            this.f25372ip = str4;
+            this.f25375ip = str4;
             this.location = str5;
         }
     }
@@ -6818,7 +6818,7 @@ public class TdApi {
     public static class File extends Object {
         public static final int CONSTRUCTOR = 766337656;
         public int expectedSize;
-        public int f25373id;
+        public int f25376id;
         public LocalFile local;
         public RemoteFile remote;
         public int size;
@@ -6832,7 +6832,7 @@ public class TdApi {
         }
 
         public File(int i, int i2, int i3, LocalFile localFile, RemoteFile remoteFile) {
-            this.f25373id = i;
+            this.f25376id = i;
             this.size = i2;
             this.expectedSize = i3;
             this.local = localFile;
@@ -7162,7 +7162,7 @@ public class TdApi {
         public static final int CONSTRUCTOR = -1565597752;
         public Animation animation;
         public String description;
-        public long f25374id;
+        public long f25377id;
         public Photo photo;
         public String shortName;
         public FormattedText text;
@@ -7177,7 +7177,7 @@ public class TdApi {
         }
 
         public Game(long j, String str, String str2, FormattedText formattedText, String str3, Photo photo, Animation animation) {
-            this.f25374id = j;
+            this.f25377id = j;
             this.shortName = str;
             this.title = str2;
             this.text = formattedText;
@@ -9440,7 +9440,7 @@ public class TdApi {
         public static final int CONSTRUCTOR = 1100975515;
         public long chatId;
         public String token;
-        public long f25375x;
+        public long f25378x;
 
         public GetStatisticalGraph() {
         }
@@ -9453,7 +9453,7 @@ public class TdApi {
         public GetStatisticalGraph(long j, String str, long j2) {
             this.chatId = j;
             this.token = str;
-            this.f25375x = j2;
+            this.f25378x = j2;
         }
     }
 
@@ -9861,7 +9861,7 @@ public class TdApi {
         public int duration;
         public boolean enabledStartNotification;
         public boolean hasHiddenListeners;
-        public int f25376id;
+        public int f25379id;
         public boolean isActive;
         public boolean isJoined;
         public boolean isMyVideoEnabled;
@@ -9886,7 +9886,7 @@ public class TdApi {
         }
 
         public GroupCall(int i, String str, int i2, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, int i3, boolean z7, boolean z8, GroupCallRecentSpeaker[] groupCallRecentSpeakerArr, boolean z9, boolean z10, boolean z11, boolean z12, boolean z13, int i4, boolean z14, int i5) {
-            this.f25376id = i;
+            this.f25379id = i;
             this.title = str;
             this.scheduledStartDate = i2;
             this.enabledStartNotification = z;
@@ -9912,7 +9912,7 @@ public class TdApi {
 
     public static class GroupCallId extends Object {
         public static final int CONSTRUCTOR = 350534469;
-        public int f25377id;
+        public int f25380id;
 
         public GroupCallId() {
         }
@@ -9923,7 +9923,7 @@ public class TdApi {
         }
 
         public GroupCallId(int i) {
-            this.f25377id = i;
+            this.f25380id = i;
         }
     }
 
@@ -10331,7 +10331,7 @@ public class TdApi {
     public static class InlineKeyboardButtonTypeLoginUrl extends InlineKeyboardButtonType {
         public static final int CONSTRUCTOR = -1203413081;
         public String forwardText;
-        public long f25378id;
+        public long f25381id;
         public String url;
 
         public InlineKeyboardButtonTypeLoginUrl() {
@@ -10344,7 +10344,7 @@ public class TdApi {
 
         public InlineKeyboardButtonTypeLoginUrl(String str, long j, String str2) {
             this.url = str;
-            this.f25378id = j;
+            this.f25381id = j;
             this.forwardText = str2;
         }
     }
@@ -10415,7 +10415,7 @@ public class TdApi {
     public static class InlineQueryResultAnimation extends InlineQueryResult {
         public static final int CONSTRUCTOR = 2009984267;
         public Animation animation;
-        public String f25379id;
+        public String f25382id;
         public String title;
 
         public InlineQueryResultAnimation() {
@@ -10427,7 +10427,7 @@ public class TdApi {
         }
 
         public InlineQueryResultAnimation(String str, Animation animation, String str2) {
-            this.f25379id = str;
+            this.f25382id = str;
             this.animation = animation;
             this.title = str2;
         }
@@ -10437,7 +10437,7 @@ public class TdApi {
         public static final int CONSTRUCTOR = 206340825;
         public String description;
         public boolean hideUrl;
-        public String f25380id;
+        public String f25383id;
         public Thumbnail thumbnail;
         public String title;
         public String url;
@@ -10451,7 +10451,7 @@ public class TdApi {
         }
 
         public InlineQueryResultArticle(String str, String str2, boolean z, String str3, String str4, Thumbnail thumbnail) {
-            this.f25380id = str;
+            this.f25383id = str;
             this.url = str2;
             this.hideUrl = z;
             this.title = str3;
@@ -10463,7 +10463,7 @@ public class TdApi {
     public static class InlineQueryResultAudio extends InlineQueryResult {
         public static final int CONSTRUCTOR = 842650360;
         public Audio audio;
-        public String f25381id;
+        public String f25384id;
 
         public InlineQueryResultAudio() {
         }
@@ -10474,7 +10474,7 @@ public class TdApi {
         }
 
         public InlineQueryResultAudio(String str, Audio audio) {
-            this.f25381id = str;
+            this.f25384id = str;
             this.audio = audio;
         }
     }
@@ -10482,7 +10482,7 @@ public class TdApi {
     public static class InlineQueryResultContact extends InlineQueryResult {
         public static final int CONSTRUCTOR = -181960174;
         public Contact contact;
-        public String f25382id;
+        public String f25385id;
         public Thumbnail thumbnail;
 
         public InlineQueryResultContact() {
@@ -10494,7 +10494,7 @@ public class TdApi {
         }
 
         public InlineQueryResultContact(String str, Contact contact, Thumbnail thumbnail) {
-            this.f25382id = str;
+            this.f25385id = str;
             this.contact = contact;
             this.thumbnail = thumbnail;
         }
@@ -10504,7 +10504,7 @@ public class TdApi {
         public static final int CONSTRUCTOR = -1491268539;
         public String description;
         public Document document;
-        public String f25383id;
+        public String f25386id;
         public String title;
 
         public InlineQueryResultDocument() {
@@ -10516,7 +10516,7 @@ public class TdApi {
         }
 
         public InlineQueryResultDocument(String str, Document document, String str2, String str3) {
-            this.f25383id = str;
+            this.f25386id = str;
             this.document = document;
             this.title = str2;
             this.description = str3;
@@ -10526,7 +10526,7 @@ public class TdApi {
     public static class InlineQueryResultGame extends InlineQueryResult {
         public static final int CONSTRUCTOR = 1706916987;
         public Game game;
-        public String f25384id;
+        public String f25387id;
 
         public InlineQueryResultGame() {
         }
@@ -10537,14 +10537,14 @@ public class TdApi {
         }
 
         public InlineQueryResultGame(String str, Game game) {
-            this.f25384id = str;
+            this.f25387id = str;
             this.game = game;
         }
     }
 
     public static class InlineQueryResultLocation extends InlineQueryResult {
         public static final int CONSTRUCTOR = 466004752;
-        public String f25385id;
+        public String f25388id;
         public Location location;
         public Thumbnail thumbnail;
         public String title;
@@ -10558,7 +10558,7 @@ public class TdApi {
         }
 
         public InlineQueryResultLocation(String str, Location location, String str2, Thumbnail thumbnail) {
-            this.f25385id = str;
+            this.f25388id = str;
             this.location = location;
             this.title = str2;
             this.thumbnail = thumbnail;
@@ -10568,7 +10568,7 @@ public class TdApi {
     public static class InlineQueryResultPhoto extends InlineQueryResult {
         public static final int CONSTRUCTOR = 1848319440;
         public String description;
-        public String f25386id;
+        public String f25389id;
         public Photo photo;
         public String title;
 
@@ -10581,7 +10581,7 @@ public class TdApi {
         }
 
         public InlineQueryResultPhoto(String str, Photo photo, String str2, String str3) {
-            this.f25386id = str;
+            this.f25389id = str;
             this.photo = photo;
             this.title = str2;
             this.description = str3;
@@ -10590,7 +10590,7 @@ public class TdApi {
 
     public static class InlineQueryResultSticker extends InlineQueryResult {
         public static final int CONSTRUCTOR = -1848224245;
-        public String f25387id;
+        public String f25390id;
         public Sticker sticker;
 
         public InlineQueryResultSticker() {
@@ -10602,14 +10602,14 @@ public class TdApi {
         }
 
         public InlineQueryResultSticker(String str, Sticker sticker) {
-            this.f25387id = str;
+            this.f25390id = str;
             this.sticker = sticker;
         }
     }
 
     public static class InlineQueryResultVenue extends InlineQueryResult {
         public static final int CONSTRUCTOR = 1281036382;
-        public String f25388id;
+        public String f25391id;
         public Thumbnail thumbnail;
         public Venue venue;
 
@@ -10622,7 +10622,7 @@ public class TdApi {
         }
 
         public InlineQueryResultVenue(String str, Venue venue, Thumbnail thumbnail) {
-            this.f25388id = str;
+            this.f25391id = str;
             this.venue = venue;
             this.thumbnail = thumbnail;
         }
@@ -10631,7 +10631,7 @@ public class TdApi {
     public static class InlineQueryResultVideo extends InlineQueryResult {
         public static final int CONSTRUCTOR = -1373158683;
         public String description;
-        public String f25389id;
+        public String f25392id;
         public String title;
         public Video video;
 
@@ -10644,7 +10644,7 @@ public class TdApi {
         }
 
         public InlineQueryResultVideo(String str, Video video, String str2, String str3) {
-            this.f25389id = str;
+            this.f25392id = str;
             this.video = video;
             this.title = str2;
             this.description = str3;
@@ -10653,7 +10653,7 @@ public class TdApi {
 
     public static class InlineQueryResultVoiceNote extends InlineQueryResult {
         public static final int CONSTRUCTOR = -1897393105;
-        public String f25390id;
+        public String f25393id;
         public String title;
         public VoiceNote voiceNote;
 
@@ -10666,7 +10666,7 @@ public class TdApi {
         }
 
         public InlineQueryResultVoiceNote(String str, VoiceNote voiceNote, String str2) {
-            this.f25390id = str;
+            this.f25393id = str;
             this.voiceNote = voiceNote;
             this.title = str2;
         }
@@ -10917,7 +10917,7 @@ public class TdApi {
 
     public static class InputFileId extends InputFile {
         public static final int CONSTRUCTOR = 1788906253;
-        public int f25391id;
+        public int f25394id;
 
         public InputFileId() {
         }
@@ -10928,7 +10928,7 @@ public class TdApi {
         }
 
         public InputFileId(int i) {
-            this.f25391id = i;
+            this.f25394id = i;
         }
     }
 
@@ -10951,7 +10951,7 @@ public class TdApi {
 
     public static class InputFileRemote extends InputFile {
         public static final int CONSTRUCTOR = -107574466;
-        public String f25392id;
+        public String f25395id;
 
         public InputFileRemote() {
         }
@@ -10962,7 +10962,7 @@ public class TdApi {
         }
 
         public InputFileRemote(String str) {
-            this.f25392id = str;
+            this.f25395id = str;
         }
     }
 
@@ -11005,7 +11005,7 @@ public class TdApi {
 
     public static class InputInlineQueryResultAnimation extends InputInlineQueryResult {
         public static final int CONSTRUCTOR = -1489808874;
-        public String f25393id;
+        public String f25396id;
         public InputMessageContent inputMessageContent;
         public ReplyMarkup replyMarkup;
         public String thumbnailMimeType;
@@ -11026,7 +11026,7 @@ public class TdApi {
         }
 
         public InputInlineQueryResultAnimation(String str, String str2, String str3, String str4, String str5, String str6, int i, int i2, int i3, ReplyMarkup replyMarkup, InputMessageContent inputMessageContent) {
-            this.f25393id = str;
+            this.f25396id = str;
             this.title = str2;
             this.thumbnailUrl = str3;
             this.thumbnailMimeType = str4;
@@ -11044,7 +11044,7 @@ public class TdApi {
         public static final int CONSTRUCTOR = 1973670156;
         public String description;
         public boolean hideUrl;
-        public String f25394id;
+        public String f25397id;
         public InputMessageContent inputMessageContent;
         public ReplyMarkup replyMarkup;
         public int thumbnailHeight;
@@ -11062,7 +11062,7 @@ public class TdApi {
         }
 
         public InputInlineQueryResultArticle(String str, String str2, boolean z, String str3, String str4, String str5, int i, int i2, ReplyMarkup replyMarkup, InputMessageContent inputMessageContent) {
-            this.f25394id = str;
+            this.f25397id = str;
             this.url = str2;
             this.hideUrl = z;
             this.title = str3;
@@ -11079,7 +11079,7 @@ public class TdApi {
         public static final int CONSTRUCTOR = 1260139988;
         public int audioDuration;
         public String audioUrl;
-        public String f25395id;
+        public String f25398id;
         public InputMessageContent inputMessageContent;
         public String performer;
         public ReplyMarkup replyMarkup;
@@ -11094,7 +11094,7 @@ public class TdApi {
         }
 
         public InputInlineQueryResultAudio(String str, String str2, String str3, String str4, int i, ReplyMarkup replyMarkup, InputMessageContent inputMessageContent) {
-            this.f25395id = str;
+            this.f25398id = str;
             this.title = str2;
             this.performer = str3;
             this.audioUrl = str4;
@@ -11107,7 +11107,7 @@ public class TdApi {
     public static class InputInlineQueryResultContact extends InputInlineQueryResult {
         public static final int CONSTRUCTOR = 1846064594;
         public Contact contact;
-        public String f25396id;
+        public String f25399id;
         public InputMessageContent inputMessageContent;
         public ReplyMarkup replyMarkup;
         public int thumbnailHeight;
@@ -11123,7 +11123,7 @@ public class TdApi {
         }
 
         public InputInlineQueryResultContact(String str, Contact contact, String str2, int i, int i2, ReplyMarkup replyMarkup, InputMessageContent inputMessageContent) {
-            this.f25396id = str;
+            this.f25399id = str;
             this.contact = contact;
             this.thumbnailUrl = str2;
             this.thumbnailWidth = i;
@@ -11137,7 +11137,7 @@ public class TdApi {
         public static final int CONSTRUCTOR = 578801869;
         public String description;
         public String documentUrl;
-        public String f25397id;
+        public String f25400id;
         public InputMessageContent inputMessageContent;
         public String mimeType;
         public ReplyMarkup replyMarkup;
@@ -11155,7 +11155,7 @@ public class TdApi {
         }
 
         public InputInlineQueryResultDocument(String str, String str2, String str3, String str4, String str5, String str6, int i, int i2, ReplyMarkup replyMarkup, InputMessageContent inputMessageContent) {
-            this.f25397id = str;
+            this.f25400id = str;
             this.title = str2;
             this.description = str3;
             this.documentUrl = str4;
@@ -11171,7 +11171,7 @@ public class TdApi {
     public static class InputInlineQueryResultGame extends InputInlineQueryResult {
         public static final int CONSTRUCTOR = 966074327;
         public String gameShortName;
-        public String f25398id;
+        public String f25401id;
         public ReplyMarkup replyMarkup;
 
         public InputInlineQueryResultGame() {
@@ -11183,7 +11183,7 @@ public class TdApi {
         }
 
         public InputInlineQueryResultGame(String str, String str2, ReplyMarkup replyMarkup) {
-            this.f25398id = str;
+            this.f25401id = str;
             this.gameShortName = str2;
             this.replyMarkup = replyMarkup;
         }
@@ -11191,7 +11191,7 @@ public class TdApi {
 
     public static class InputInlineQueryResultLocation extends InputInlineQueryResult {
         public static final int CONSTRUCTOR = -1887650218;
-        public String f25399id;
+        public String f25402id;
         public InputMessageContent inputMessageContent;
         public int livePeriod;
         public Location location;
@@ -11210,7 +11210,7 @@ public class TdApi {
         }
 
         public InputInlineQueryResultLocation(String str, Location location, int i, String str2, String str3, int i2, int i3, ReplyMarkup replyMarkup, InputMessageContent inputMessageContent) {
-            this.f25399id = str;
+            this.f25402id = str;
             this.location = location;
             this.livePeriod = i;
             this.title = str2;
@@ -11225,7 +11225,7 @@ public class TdApi {
     public static class InputInlineQueryResultPhoto extends InputInlineQueryResult {
         public static final int CONSTRUCTOR = -1123338721;
         public String description;
-        public String f25400id;
+        public String f25403id;
         public InputMessageContent inputMessageContent;
         public int photoHeight;
         public String photoUrl;
@@ -11243,7 +11243,7 @@ public class TdApi {
         }
 
         public InputInlineQueryResultPhoto(String str, String str2, String str3, String str4, String str5, int i, int i2, ReplyMarkup replyMarkup, InputMessageContent inputMessageContent) {
-            this.f25400id = str;
+            this.f25403id = str;
             this.title = str2;
             this.description = str3;
             this.thumbnailUrl = str4;
@@ -11257,7 +11257,7 @@ public class TdApi {
 
     public static class InputInlineQueryResultSticker extends InputInlineQueryResult {
         public static final int CONSTRUCTOR = 274007129;
-        public String f25401id;
+        public String f25404id;
         public InputMessageContent inputMessageContent;
         public ReplyMarkup replyMarkup;
         public int stickerHeight;
@@ -11274,7 +11274,7 @@ public class TdApi {
         }
 
         public InputInlineQueryResultSticker(String str, String str2, String str3, int i, int i2, ReplyMarkup replyMarkup, InputMessageContent inputMessageContent) {
-            this.f25401id = str;
+            this.f25404id = str;
             this.thumbnailUrl = str2;
             this.stickerUrl = str3;
             this.stickerWidth = i;
@@ -11286,7 +11286,7 @@ public class TdApi {
 
     public static class InputInlineQueryResultVenue extends InputInlineQueryResult {
         public static final int CONSTRUCTOR = 541704509;
-        public String f25402id;
+        public String f25405id;
         public InputMessageContent inputMessageContent;
         public ReplyMarkup replyMarkup;
         public int thumbnailHeight;
@@ -11303,7 +11303,7 @@ public class TdApi {
         }
 
         public InputInlineQueryResultVenue(String str, Venue venue, String str2, int i, int i2, ReplyMarkup replyMarkup, InputMessageContent inputMessageContent) {
-            this.f25402id = str;
+            this.f25405id = str;
             this.venue = venue;
             this.thumbnailUrl = str2;
             this.thumbnailWidth = i;
@@ -11316,7 +11316,7 @@ public class TdApi {
     public static class InputInlineQueryResultVideo extends InputInlineQueryResult {
         public static final int CONSTRUCTOR = 1724073191;
         public String description;
-        public String f25403id;
+        public String f25406id;
         public InputMessageContent inputMessageContent;
         public String mimeType;
         public ReplyMarkup replyMarkup;
@@ -11336,7 +11336,7 @@ public class TdApi {
         }
 
         public InputInlineQueryResultVideo(String str, String str2, String str3, String str4, String str5, String str6, int i, int i2, int i3, ReplyMarkup replyMarkup, InputMessageContent inputMessageContent) {
-            this.f25403id = str;
+            this.f25406id = str;
             this.title = str2;
             this.description = str3;
             this.thumbnailUrl = str4;
@@ -11352,7 +11352,7 @@ public class TdApi {
 
     public static class InputInlineQueryResultVoiceNote extends InputInlineQueryResult {
         public static final int CONSTRUCTOR = -1790072503;
-        public String f25404id;
+        public String f25407id;
         public InputMessageContent inputMessageContent;
         public ReplyMarkup replyMarkup;
         public String title;
@@ -11368,7 +11368,7 @@ public class TdApi {
         }
 
         public InputInlineQueryResultVoiceNote(String str, String str2, String str3, int i, ReplyMarkup replyMarkup, InputMessageContent inputMessageContent) {
-            this.f25404id = str;
+            this.f25407id = str;
             this.title = str2;
             this.voiceNoteUrl = str3;
             this.voiceNoteDuration = i;
@@ -13028,7 +13028,7 @@ public class TdApi {
     public static class LanguagePackInfo extends Object {
         public static final int CONSTRUCTOR = 542199642;
         public String baseLanguagePackId;
-        public String f25405id;
+        public String f25408id;
         public boolean isBeta;
         public boolean isInstalled;
         public boolean isOfficial;
@@ -13050,7 +13050,7 @@ public class TdApi {
         }
 
         public LanguagePackInfo(String str, String str2, String str3, String str4, String str5, boolean z, boolean z2, boolean z3, boolean z4, int i, int i2, int i3, String str6) {
-            this.f25405id = str;
+            this.f25408id = str;
             this.baseLanguagePackId = str2;
             this.name = str3;
             this.nativeName = str4;
@@ -13539,7 +13539,7 @@ public class TdApi {
         public int editDate;
         public MessageForwardInfo forwardInfo;
         public boolean hasTimestampedMedia;
-        public long f25406id;
+        public long f25409id;
         public MessageInteractionInfo interactionInfo;
         public boolean isChannelPost;
         public boolean isOutgoing;
@@ -13567,7 +13567,7 @@ public class TdApi {
         }
 
         public Message(long j, MessageSender messageSender, long j2, MessageSendingState messageSendingState, MessageSchedulingState messageSchedulingState, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7, boolean z8, boolean z9, boolean z10, boolean z11, boolean z12, boolean z13, boolean z14, boolean z15, int i, int i2, MessageForwardInfo messageForwardInfo, MessageInteractionInfo messageInteractionInfo, UnreadReaction[] unreadReactionArr, long j3, long j4, long j5, int i3, double d, long j6, String str, long j7, String str2, MessageContent messageContent, ReplyMarkup replyMarkup) {
-            this.f25406id = j;
+            this.f25409id = j;
             this.senderId = messageSender;
             this.chatId = j2;
             this.sendingState = messageSendingState;
@@ -15263,7 +15263,7 @@ public class TdApi {
     public static class Notification extends Object {
         public static final int CONSTRUCTOR = 788743120;
         public int date;
-        public int f25407id;
+        public int f25410id;
         public boolean isSilent;
         public NotificationType type;
 
@@ -15276,7 +15276,7 @@ public class TdApi {
         }
 
         public Notification(int i, int i2, boolean z, NotificationType notificationType) {
-            this.f25407id = i;
+            this.f25410id = i;
             this.date = i2;
             this.isSilent = z;
             this.type = notificationType;
@@ -15286,7 +15286,7 @@ public class TdApi {
     public static class NotificationGroup extends Object {
         public static final int CONSTRUCTOR = 780691541;
         public long chatId;
-        public int f25408id;
+        public int f25411id;
         public Notification[] notifications;
         public int totalCount;
         public NotificationGroupType type;
@@ -15300,7 +15300,7 @@ public class TdApi {
         }
 
         public NotificationGroup(int i, NotificationGroupType notificationGroupType, long j, int i2, Notification[] notificationArr) {
-            this.f25408id = i;
+            this.f25411id = i;
             this.type = notificationGroupType;
             this.chatId = j;
             this.totalCount = i2;
@@ -16423,7 +16423,7 @@ public class TdApi {
 
     public static class PassportAuthorizationForm extends Object {
         public static final int CONSTRUCTOR = -1070673218;
-        public int f25409id;
+        public int f25412id;
         public String privacyPolicyUrl;
         public PassportRequiredElement[] requiredElements;
 
@@ -16436,7 +16436,7 @@ public class TdApi {
         }
 
         public PassportAuthorizationForm(int i, PassportRequiredElement[] passportRequiredElementArr, String str) {
-            this.f25409id = i;
+            this.f25412id = i;
             this.requiredElements = passportRequiredElementArr;
             this.privacyPolicyUrl = str;
         }
@@ -17042,7 +17042,7 @@ public class TdApi {
     public static class PaymentForm extends Object {
         public static final int CONSTRUCTOR = 1462608358;
         public boolean canSaveCredentials;
-        public long f25410id;
+        public long f25413id;
         public Invoice invoice;
         public boolean needPassword;
         public PaymentsProviderStripe paymentsProvider;
@@ -17061,7 +17061,7 @@ public class TdApi {
         }
 
         public PaymentForm(long j, Invoice invoice, String str, long j2, long j3, PaymentsProviderStripe paymentsProviderStripe, OrderInfo orderInfo, SavedCredentials savedCredentials, boolean z, boolean z2) {
-            this.f25410id = j;
+            this.f25413id = j;
             this.invoice = invoice;
             this.url = str;
             this.sellerBotUserId = j2;
@@ -17368,8 +17368,8 @@ public class TdApi {
 
     public static class Point extends Object {
         public static final int CONSTRUCTOR = 437515705;
-        public double f25411x;
-        public double f25412y;
+        public double f25414x;
+        public double f25415y;
 
         public Point() {
         }
@@ -17380,15 +17380,15 @@ public class TdApi {
         }
 
         public Point(double d, double d2) {
-            this.f25411x = d;
-            this.f25412y = d2;
+            this.f25414x = d;
+            this.f25415y = d2;
         }
     }
 
     public static class Poll extends Object {
         public static final int CONSTRUCTOR = 116940085;
         public int closeDate;
-        public long f25413id;
+        public long f25416id;
         public boolean isAnonymous;
         public boolean isClosed;
         public int openPeriod;
@@ -17407,7 +17407,7 @@ public class TdApi {
         }
 
         public Poll(long j, String str, PollOption[] pollOptionArr, int i, long[] jArr, boolean z, PollType pollType, int i2, int i3, boolean z2) {
-            this.f25413id = j;
+            this.f25416id = j;
             this.question = str;
             this.options = pollOptionArr;
             this.totalVoterCount = i;
@@ -17554,7 +17554,7 @@ public class TdApi {
         public static final int CONSTRUCTOR = -131097523;
         public File big;
         public boolean hasAnimation;
-        public long f25414id;
+        public long f25417id;
         public Minithumbnail minithumbnail;
         public File small;
 
@@ -17567,7 +17567,7 @@ public class TdApi {
         }
 
         public ProfilePhoto(long j, File file, File file2, Minithumbnail minithumbnail, boolean z) {
-            this.f25414id = j;
+            this.f25417id = j;
             this.small = file;
             this.big = file2;
             this.minithumbnail = minithumbnail;
@@ -17594,7 +17594,7 @@ public class TdApi {
 
     public static class Proxy extends Object {
         public static final int CONSTRUCTOR = 196049779;
-        public int f25415id;
+        public int f25418id;
         public boolean isEnabled;
         public int lastUsedDate;
         public int port;
@@ -17610,7 +17610,7 @@ public class TdApi {
         }
 
         public Proxy(int i, String str, int i2, int i3, boolean z, ProxyType proxyType) {
-            this.f25415id = i;
+            this.f25418id = i;
             this.server = str;
             this.port = i2;
             this.lastUsedDate = i3;
@@ -18216,7 +18216,7 @@ public class TdApi {
 
     public static class PushReceiverId extends Object {
         public static final int CONSTRUCTOR = 371056428;
-        public long f25416id;
+        public long f25419id;
 
         public PushReceiverId() {
         }
@@ -18227,7 +18227,7 @@ public class TdApi {
         }
 
         public PushReceiverId(long j) {
-            this.f25416id = j;
+            this.f25419id = j;
         }
     }
 
@@ -18456,7 +18456,7 @@ public class TdApi {
 
     public static class RemoteFile extends Object {
         public static final int CONSTRUCTOR = -1822143022;
-        public String f25417id;
+        public String f25420id;
         public boolean isUploadingActive;
         public boolean isUploadingCompleted;
         public String uniqueId;
@@ -18471,7 +18471,7 @@ public class TdApi {
         }
 
         public RemoteFile(String str, String str2, boolean z, boolean z2, int i) {
-            this.f25417id = str;
+            this.f25420id = str;
             this.uniqueId = str2;
             this.isUploadingActive = z;
             this.isUploadingCompleted = z2;
@@ -19565,7 +19565,7 @@ public class TdApi {
 
     public static class SavedCredentials extends Object {
         public static final int CONSTRUCTOR = -370273060;
-        public String f25418id;
+        public String f25421id;
         public String title;
 
         public SavedCredentials() {
@@ -19577,7 +19577,7 @@ public class TdApi {
         }
 
         public SavedCredentials(String str, String str2) {
-            this.f25418id = str;
+            this.f25421id = str;
             this.title = str2;
         }
     }
@@ -20241,7 +20241,7 @@ public class TdApi {
 
     public static class SecretChat extends Object {
         public static final int CONSTRUCTOR = -676918325;
-        public int f25419id;
+        public int f25422id;
         public boolean isOutbound;
         public byte[] keyHash;
         public int layer;
@@ -20257,7 +20257,7 @@ public class TdApi {
         }
 
         public SecretChat(int i, long j, SecretChatState secretChatState, boolean z, byte[] bArr, int i2) {
-            this.f25419id = i;
+            this.f25422id = i;
             this.userId = j;
             this.state = secretChatState;
             this.isOutbound = z;
@@ -20639,8 +20639,8 @@ public class TdApi {
         public boolean canAcceptSecretChats;
         public String country;
         public String deviceModel;
-        public long f25420id;
-        public String f25421ip;
+        public long f25423id;
+        public String f25424ip;
         public boolean isCurrent;
         public boolean isOfficialApplication;
         public boolean isPasswordPending;
@@ -20659,7 +20659,7 @@ public class TdApi {
         }
 
         public Session(long j, boolean z, boolean z2, boolean z3, boolean z4, int i, String str, String str2, boolean z5, String str3, String str4, String str5, int i2, int i3, String str6, String str7, String str8) {
-            this.f25420id = j;
+            this.f25423id = j;
             this.isCurrent = z;
             this.isPasswordPending = z2;
             this.canAcceptSecretChats = z3;
@@ -20673,7 +20673,7 @@ public class TdApi {
             this.systemVersion = str5;
             this.logInDate = i2;
             this.lastActiveDate = i3;
-            this.f25421ip = str6;
+            this.f25424ip = str6;
             this.country = str7;
             this.region = str8;
         }
@@ -21818,7 +21818,7 @@ public class TdApi {
 
     public static class ShippingOption extends Object {
         public static final int CONSTRUCTOR = 1425690001;
-        public String f25422id;
+        public String f25425id;
         public LabeledPricePart[] priceParts;
         public String title;
 
@@ -21831,7 +21831,7 @@ public class TdApi {
         }
 
         public ShippingOption(String str, String str2, LabeledPricePart[] labeledPricePartArr) {
-            this.f25422id = str;
+            this.f25425id = str;
             this.title = str2;
             this.priceParts = labeledPricePartArr;
         }
@@ -22041,7 +22041,7 @@ public class TdApi {
     public static class StickerSet extends Object {
         public static final int CONSTRUCTOR = -1816236758;
         public Emojis[] emojis;
-        public long f25423id;
+        public long f25426id;
         public boolean isArchived;
         public boolean isInstalled;
         public boolean isOfficial;
@@ -22062,7 +22062,7 @@ public class TdApi {
         }
 
         public StickerSet(long j, String str, String str2, Thumbnail thumbnail, ClosedVectorPath[] closedVectorPathArr, boolean z, boolean z2, boolean z3, StickerType stickerType, boolean z4, Sticker[] stickerArr, Emojis[] emojisArr) {
-            this.f25423id = j;
+            this.f25426id = j;
             this.title = str;
             this.name = str2;
             this.thumbnail = thumbnail;
@@ -22080,7 +22080,7 @@ public class TdApi {
     public static class StickerSetInfo extends Object {
         public static final int CONSTRUCTOR = 1207538697;
         public Sticker[] covers;
-        public long f25424id;
+        public long f25427id;
         public boolean isArchived;
         public boolean isInstalled;
         public boolean isOfficial;
@@ -22101,7 +22101,7 @@ public class TdApi {
         }
 
         public StickerSetInfo(long j, String str, String str2, Thumbnail thumbnail, ClosedVectorPath[] closedVectorPathArr, boolean z, boolean z2, boolean z3, StickerType stickerType, boolean z4, int i, Sticker[] stickerArr) {
-            this.f25424id = j;
+            this.f25427id = j;
             this.title = str;
             this.name = str2;
             this.thumbnail = thumbnail;
@@ -22402,7 +22402,7 @@ public class TdApi {
         public int date;
         public boolean hasLinkedChat;
         public boolean hasLocation;
-        public long f25425id;
+        public long f25428id;
         public boolean isBroadcastGroup;
         public boolean isChannel;
         public boolean isFake;
@@ -22424,7 +22424,7 @@ public class TdApi {
         }
 
         public Supergroup(long j, String str, int i, ChatMemberStatus chatMemberStatus, int i2, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7, String str2, boolean z8, boolean z9) {
-            this.f25425id = j;
+            this.f25428id = j;
             this.username = str;
             this.date = i;
             this.status = chatMemberStatus;
@@ -22884,13 +22884,13 @@ public class TdApi {
 
     public static class TestCallBytes extends Function {
         public static final int CONSTRUCTOR = -736011607;
-        public byte[] f25426x;
+        public byte[] f25429x;
 
         public TestCallBytes() {
         }
 
         public TestCallBytes(byte[] bArr) {
-            this.f25426x = bArr;
+            this.f25429x = bArr;
         }
 
         @Override
@@ -22910,13 +22910,13 @@ public class TdApi {
 
     public static class TestCallString extends Function {
         public static final int CONSTRUCTOR = -1732818385;
-        public String f25427x;
+        public String f25430x;
 
         public TestCallString() {
         }
 
         public TestCallString(String str) {
-            this.f25427x = str;
+            this.f25430x = str;
         }
 
         @Override
@@ -22927,13 +22927,13 @@ public class TdApi {
 
     public static class TestCallVectorInt extends Function {
         public static final int CONSTRUCTOR = -2137277793;
-        public int[] f25428x;
+        public int[] f25431x;
 
         public TestCallVectorInt() {
         }
 
         public TestCallVectorInt(int[] iArr) {
-            this.f25428x = iArr;
+            this.f25431x = iArr;
         }
 
         @Override
@@ -22944,13 +22944,13 @@ public class TdApi {
 
     public static class TestCallVectorIntObject extends Function {
         public static final int CONSTRUCTOR = 1825428218;
-        public TestInt[] f25429x;
+        public TestInt[] f25432x;
 
         public TestCallVectorIntObject() {
         }
 
         public TestCallVectorIntObject(TestInt[] testIntArr) {
-            this.f25429x = testIntArr;
+            this.f25432x = testIntArr;
         }
 
         @Override
@@ -22961,13 +22961,13 @@ public class TdApi {
 
     public static class TestCallVectorString extends Function {
         public static final int CONSTRUCTOR = -408600900;
-        public String[] f25430x;
+        public String[] f25433x;
 
         public TestCallVectorString() {
         }
 
         public TestCallVectorString(String[] strArr) {
-            this.f25430x = strArr;
+            this.f25433x = strArr;
         }
 
         @Override
@@ -22978,13 +22978,13 @@ public class TdApi {
 
     public static class TestCallVectorStringObject extends Function {
         public static final int CONSTRUCTOR = 1527666429;
-        public TestString[] f25431x;
+        public TestString[] f25434x;
 
         public TestCallVectorStringObject() {
         }
 
         public TestCallVectorStringObject(TestString[] testStringArr) {
-            this.f25431x = testStringArr;
+            this.f25434x = testStringArr;
         }
 
         @Override
@@ -23072,13 +23072,13 @@ public class TdApi {
 
     public static class TestSquareInt extends Function {
         public static final int CONSTRUCTOR = -60135024;
-        public int f25432x;
+        public int f25435x;
 
         public TestSquareInt() {
         }
 
         public TestSquareInt(int i) {
-            this.f25432x = i;
+            this.f25435x = i;
         }
 
         @Override
@@ -25403,7 +25403,7 @@ public class TdApi {
         public static final int CONSTRUCTOR = -1989881762;
         public long chatId;
         public long chatInstance;
-        public long f25433id;
+        public long f25436id;
         public long messageId;
         public CallbackQueryPayload payload;
         public long senderUserId;
@@ -25417,7 +25417,7 @@ public class TdApi {
         }
 
         public UpdateNewCallbackQuery(long j, long j2, long j3, long j4, long j5, CallbackQueryPayload callbackQueryPayload) {
-            this.f25433id = j;
+            this.f25436id = j;
             this.senderUserId = j2;
             this.chatId = j3;
             this.messageId = j4;
@@ -25509,7 +25509,7 @@ public class TdApi {
     public static class UpdateNewCustomQuery extends Update {
         public static final int CONSTRUCTOR = -687670874;
         public String data;
-        public long f25434id;
+        public long f25437id;
         public int timeout;
 
         public UpdateNewCustomQuery() {
@@ -25521,7 +25521,7 @@ public class TdApi {
         }
 
         public UpdateNewCustomQuery(long j, String str, int i) {
-            this.f25434id = j;
+            this.f25437id = j;
             this.data = str;
             this.timeout = i;
         }
@@ -25530,7 +25530,7 @@ public class TdApi {
     public static class UpdateNewInlineCallbackQuery extends Update {
         public static final int CONSTRUCTOR = -319212358;
         public long chatInstance;
-        public long f25435id;
+        public long f25438id;
         public String inlineMessageId;
         public CallbackQueryPayload payload;
         public long senderUserId;
@@ -25544,7 +25544,7 @@ public class TdApi {
         }
 
         public UpdateNewInlineCallbackQuery(long j, long j2, String str, long j3, CallbackQueryPayload callbackQueryPayload) {
-            this.f25435id = j;
+            this.f25438id = j;
             this.senderUserId = j2;
             this.inlineMessageId = str;
             this.chatInstance = j3;
@@ -25555,7 +25555,7 @@ public class TdApi {
     public static class UpdateNewInlineQuery extends Update {
         public static final int CONSTRUCTOR = 1903279924;
         public ChatType chatType;
-        public long f25436id;
+        public long f25439id;
         public String offset;
         public String query;
         public long senderUserId;
@@ -25570,7 +25570,7 @@ public class TdApi {
         }
 
         public UpdateNewInlineQuery(long j, long j2, Location location, ChatType chatType, String str, String str2) {
-            this.f25436id = j;
+            this.f25439id = j;
             this.senderUserId = j2;
             this.userLocation = location;
             this.chatType = chatType;
@@ -25599,7 +25599,7 @@ public class TdApi {
     public static class UpdateNewPreCheckoutQuery extends Update {
         public static final int CONSTRUCTOR = 708342217;
         public String currency;
-        public long f25437id;
+        public long f25440id;
         public byte[] invoicePayload;
         public OrderInfo orderInfo;
         public long senderUserId;
@@ -25615,7 +25615,7 @@ public class TdApi {
         }
 
         public UpdateNewPreCheckoutQuery(long j, long j2, String str, long j3, byte[] bArr, String str2, OrderInfo orderInfo) {
-            this.f25437id = j;
+            this.f25440id = j;
             this.senderUserId = j2;
             this.currency = str;
             this.totalAmount = j3;
@@ -25627,7 +25627,7 @@ public class TdApi {
 
     public static class UpdateNewShippingQuery extends Update {
         public static final int CONSTRUCTOR = 693651058;
-        public long f25438id;
+        public long f25441id;
         public String invoicePayload;
         public long senderUserId;
         public Address shippingAddress;
@@ -25641,7 +25641,7 @@ public class TdApi {
         }
 
         public UpdateNewShippingQuery(long j, long j2, String str, Address address) {
-            this.f25438id = j;
+            this.f25441id = j;
             this.senderUserId = j2;
             this.invoicePayload = str;
             this.shippingAddress = address;
@@ -26207,7 +26207,7 @@ public class TdApi {
         public static final int CONSTRUCTOR = -537797015;
         public String firstName;
         public boolean haveAccess;
-        public long f25439id;
+        public long f25442id;
         public boolean isContact;
         public boolean isFake;
         public boolean isMutualContact;
@@ -26232,7 +26232,7 @@ public class TdApi {
         }
 
         public User(long j, String str, String str2, String str3, String str4, UserStatus userStatus, ProfilePhoto profilePhoto, boolean z, boolean z2, boolean z3, boolean z4, String str5, boolean z5, boolean z6, boolean z7, UserType userType, String str6) {
-            this.f25439id = j;
+            this.f25442id = j;
             this.firstName = str;
             this.lastName = str2;
             this.username = str3;
@@ -26758,7 +26758,7 @@ public class TdApi {
     public static class Venue extends Object {
         public static final int CONSTRUCTOR = 1070406393;
         public String address;
-        public String f25440id;
+        public String f25443id;
         public Location location;
         public String provider;
         public String title;
@@ -26777,7 +26777,7 @@ public class TdApi {
             this.title = str;
             this.address = str2;
             this.provider = str3;
-            this.f25440id = str4;
+            this.f25443id = str4;
             this.type = str5;
         }
     }

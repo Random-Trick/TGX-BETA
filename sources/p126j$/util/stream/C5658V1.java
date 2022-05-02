@@ -13,7 +13,7 @@ class C5658V1 extends AbstractC5679a2 {
     }
 
     @Override
-    public AbstractC5670Y1 mo22320b() {
+    public AbstractC5670Y1 mo22321b() {
         return new C5662W1(this.f18256c, this.f18255b);
     }
 }

@@ -4,10 +4,10 @@ import android.content.Context;
 import java.io.File;
 
 public final class C7275w {
-    public final Context f23124a;
+    public final Context f23127a;
 
     public C7275w(Context context) {
-        this.f23124a = context;
+        this.f23127a = context;
     }
 
     public static long m17167b(File file) {
@@ -25,6 +25,6 @@ public final class C7275w {
     }
 
     public final long m17168a() {
-        return m17167b(new File(this.f23124a.getFilesDir(), "assetpacks"));
+        return m17167b(new File(this.f23127a.getFilesDir(), "assetpacks"));
     }
 }

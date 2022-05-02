@@ -15,15 +15,15 @@ public class C5122j0 {
         this.f17184d = z;
     }
 
-    public String m23885a() {
+    public String m23886a() {
         return this.f17182b;
     }
 
-    public Uri m23884b() {
+    public Uri m23885b() {
         return this.f17183c;
     }
 
-    public boolean m23883c() {
+    public boolean m23884c() {
         return this.f17184d;
     }
 }

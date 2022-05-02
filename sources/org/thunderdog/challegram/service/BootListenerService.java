@@ -14,7 +14,7 @@ public class BootListenerService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int i, int i2) {
-        C1379j0.m37356L(getApplicationContext());
+        C1379j0.m37359L(getApplicationContext());
         C10536ab.m4723Z1(getApplicationContext(), -1, 1, 0L, false, 0L);
         return 2;
     }

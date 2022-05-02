@@ -25,59 +25,59 @@ import java.util.StringTokenizer;
 import java.util.zip.ZipFile;
 
 public final class C8128a {
-    public static final Set<File> f26405a = new HashSet();
-    public static final boolean f26406b = m13395n(System.getProperty("java.vm.version"));
+    public static final Set<File> f26408a = new HashSet();
+    public static final boolean f26409b = m13394n(System.getProperty("java.vm.version"));
 
     public static final class C8129a {
-        public static final int f26407b = 4;
-        public final AbstractC8130a f26408a;
+        public static final int f26410b = 4;
+        public final AbstractC8130a f26411a;
 
         public interface AbstractC8130a {
-            Object mo13390a(File file, DexFile dexFile);
+            Object mo13389a(File file, DexFile dexFile);
         }
 
         public static class C8131b implements AbstractC8130a {
-            public final Constructor<?> f26409a;
+            public final Constructor<?> f26412a;
 
             public C8131b(Class<?> cls) {
                 Constructor<?> constructor = cls.getConstructor(File.class, ZipFile.class, DexFile.class);
-                this.f26409a = constructor;
+                this.f26412a = constructor;
                 constructor.setAccessible(true);
             }
 
             @Override
-            public Object mo13390a(File file, DexFile dexFile) {
-                return this.f26409a.newInstance(file, new ZipFile(file), dexFile);
+            public Object mo13389a(File file, DexFile dexFile) {
+                return this.f26412a.newInstance(file, new ZipFile(file), dexFile);
             }
         }
 
         public static class C8132c implements AbstractC8130a {
-            public final Constructor<?> f26410a;
+            public final Constructor<?> f26413a;
 
             public C8132c(Class<?> cls) {
                 Constructor<?> constructor = cls.getConstructor(File.class, File.class, DexFile.class);
-                this.f26410a = constructor;
+                this.f26413a = constructor;
                 constructor.setAccessible(true);
             }
 
             @Override
-            public Object mo13390a(File file, DexFile dexFile) {
-                return this.f26410a.newInstance(file, file, dexFile);
+            public Object mo13389a(File file, DexFile dexFile) {
+                return this.f26413a.newInstance(file, file, dexFile);
             }
         }
 
         public static class C8133d implements AbstractC8130a {
-            public final Constructor<?> f26411a;
+            public final Constructor<?> f26414a;
 
             public C8133d(Class<?> cls) {
                 Constructor<?> constructor = cls.getConstructor(File.class, Boolean.TYPE, File.class, DexFile.class);
-                this.f26411a = constructor;
+                this.f26414a = constructor;
                 constructor.setAccessible(true);
             }
 
             @Override
-            public Object mo13390a(File file, DexFile dexFile) {
-                return this.f26411a.newInstance(file, Boolean.FALSE, file, dexFile);
+            public Object mo13389a(File file, DexFile dexFile) {
+                return this.f26414a.newInstance(file, Boolean.FALSE, file, dexFile);
             }
         }
 
@@ -93,49 +93,49 @@ public final class C8128a {
             } catch (NoSuchMethodException unused2) {
                 aVar = new C8133d(cls);
             }
-            this.f26408a = aVar;
+            this.f26411a = aVar;
         }
 
-        public static void m13393a(ClassLoader classLoader, List<? extends File> list) {
-            Object obj = C8128a.m13402g(classLoader, "pathList").get(classLoader);
-            Object[] b = new C8129a().m13392b(list);
+        public static void m13392a(ClassLoader classLoader, List<? extends File> list) {
+            Object obj = C8128a.m13401g(classLoader, "pathList").get(classLoader);
+            Object[] b = new C8129a().m13391b(list);
             try {
-                C8128a.m13403f(obj, "dexElements", b);
+                C8128a.m13402f(obj, "dexElements", b);
             } catch (NoSuchFieldException e) {
                 Log.w("MultiDex", "Failed find field 'dexElements' attempting 'pathElements'", e);
-                C8128a.m13403f(obj, "pathElements", b);
+                C8128a.m13402f(obj, "pathElements", b);
             }
         }
 
-        public static String m13391c(File file) {
+        public static String m13390c(File file) {
             File parentFile = file.getParentFile();
             String name = file.getName();
-            return new File(parentFile, name.substring(0, name.length() - f26407b) + ".dex").getPath();
+            return new File(parentFile, name.substring(0, name.length() - f26410b) + ".dex").getPath();
         }
 
-        public final Object[] m13392b(List<? extends File> list) {
+        public final Object[] m13391b(List<? extends File> list) {
             int size = list.size();
             Object[] objArr = new Object[size];
             for (int i = 0; i < size; i++) {
                 File file = list.get(i);
-                objArr[i] = this.f26408a.mo13390a(file, DexFile.loadDex(file.getPath(), m13391c(file), 0));
+                objArr[i] = this.f26411a.mo13389a(file, DexFile.loadDex(file.getPath(), m13390c(file), 0));
             }
             return objArr;
         }
     }
 
     public static final class C8134b {
-        public static void m13389a(ClassLoader classLoader, List<? extends File> list, File file) {
+        public static void m13388a(ClassLoader classLoader, List<? extends File> list, File file) {
             IOException[] iOExceptionArr;
-            Object obj = C8128a.m13402g(classLoader, "pathList").get(classLoader);
+            Object obj = C8128a.m13401g(classLoader, "pathList").get(classLoader);
             ArrayList arrayList = new ArrayList();
-            C8128a.m13403f(obj, "dexElements", m13388b(obj, new ArrayList(list), file, arrayList));
+            C8128a.m13402f(obj, "dexElements", m13387b(obj, new ArrayList(list), file, arrayList));
             if (arrayList.size() > 0) {
                 Iterator it = arrayList.iterator();
                 while (it.hasNext()) {
                     Log.w("MultiDex", "Exception in makeDexElement", (IOException) it.next());
                 }
-                Field g = C8128a.m13402g(obj, "dexElementsSuppressedExceptions");
+                Field g = C8128a.m13401g(obj, "dexElementsSuppressedExceptions");
                 IOException[] iOExceptionArr2 = (IOException[]) g.get(obj);
                 if (iOExceptionArr2 == null) {
                     iOExceptionArr = (IOException[]) arrayList.toArray(new IOException[arrayList.size()]);
@@ -152,15 +152,15 @@ public final class C8128a {
             }
         }
 
-        public static Object[] m13388b(Object obj, ArrayList<File> arrayList, File file, ArrayList<IOException> arrayList2) {
-            return (Object[]) C8128a.m13401h(obj, "makeDexElements", ArrayList.class, File.class, ArrayList.class).invoke(obj, arrayList, file, arrayList2);
+        public static Object[] m13387b(Object obj, ArrayList<File> arrayList, File file, ArrayList<IOException> arrayList2) {
+            return (Object[]) C8128a.m13400h(obj, "makeDexElements", ArrayList.class, File.class, ArrayList.class).invoke(obj, arrayList, file, arrayList2);
         }
     }
 
     public static final class C8135c {
-        public static void m13387a(ClassLoader classLoader, List<? extends File> list) {
+        public static void m13386a(ClassLoader classLoader, List<? extends File> list) {
             int size = list.size();
-            Field g = C8128a.m13402g(classLoader, "path");
+            Field g = C8128a.m13401g(classLoader, "path");
             StringBuilder sb2 = new StringBuilder((String) g.get(classLoader));
             String[] strArr = new String[size];
             File[] fileArr = new File[size];
@@ -179,14 +179,14 @@ public final class C8128a {
                 dexFileArr[previousIndex] = DexFile.loadDex(absolutePath, absolutePath + ".dex", 0);
             }
             g.set(classLoader, sb2.toString());
-            C8128a.m13403f(classLoader, "mPaths", strArr);
-            C8128a.m13403f(classLoader, "mFiles", fileArr);
-            C8128a.m13403f(classLoader, "mZips", zipFileArr);
-            C8128a.m13403f(classLoader, "mDexs", dexFileArr);
+            C8128a.m13402f(classLoader, "mPaths", strArr);
+            C8128a.m13402f(classLoader, "mFiles", fileArr);
+            C8128a.m13402f(classLoader, "mZips", zipFileArr);
+            C8128a.m13402f(classLoader, "mDexs", dexFileArr);
         }
     }
 
-    public static void m13405d(Context context) {
+    public static void m13404d(Context context) {
         File file = new File(context.getFilesDir(), "secondary-dexes");
         if (file.isDirectory()) {
             Log.i("MultiDex", "Clearing old secondary dex dir (" + file.getPath() + ").");
@@ -211,8 +211,8 @@ public final class C8128a {
         }
     }
 
-    public static void m13404e(Context context, File file, File file2, String str, String str2, boolean z) {
-        Set<File> set = f26405a;
+    public static void m13403e(Context context, File file, File file2, String str, String str2, boolean z) {
+        Set<File> set = f26408a;
         synchronized (set) {
             if (!set.contains(file)) {
                 set.add(file);
@@ -220,18 +220,18 @@ public final class C8128a {
                 if (i > 20) {
                     Log.w("MultiDex", "MultiDex is not guaranteed to work in SDK version " + i + ": SDK version higher than 20 should be backed by runtime with built-in multidex capabilty but it's not the case here: java.vm.version=\"" + System.getProperty("java.vm.version") + "\"");
                 }
-                ClassLoader j = m13399j(context);
+                ClassLoader j = m13398j(context);
                 if (j != null) {
-                    m13405d(context);
-                    File k = m13398k(context, file2, str);
+                    m13404d(context);
+                    File k = m13397k(context, file2, str);
                     C8137c cVar = new C8137c(file, k);
                     IOException e = null;
                     try {
-                        m13396m(j, k, cVar.m13383D0(context, str2, false));
+                        m13395m(j, k, cVar.m13382D0(context, str2, false));
                     } catch (IOException e2) {
                         if (z) {
                             Log.w("MultiDex", "Failed to install extracted secondary dex files, retrying with forced extraction", e2);
-                            m13396m(j, k, cVar.m13383D0(context, str2, true));
+                            m13395m(j, k, cVar.m13382D0(context, str2, true));
                         } else {
                             throw e2;
                         }
@@ -249,8 +249,8 @@ public final class C8128a {
         }
     }
 
-    public static void m13403f(Object obj, String str, Object[] objArr) {
-        Field g = m13402g(obj, str);
+    public static void m13402f(Object obj, String str, Object[] objArr) {
+        Field g = m13401g(obj, str);
         Object[] objArr2 = (Object[]) g.get(obj);
         Object[] objArr3 = (Object[]) Array.newInstance(objArr2.getClass().getComponentType(), objArr2.length + objArr.length);
         System.arraycopy(objArr2, 0, objArr3, 0, objArr2.length);
@@ -258,7 +258,7 @@ public final class C8128a {
         g.set(obj, objArr3);
     }
 
-    public static Field m13402g(Object obj, String str) {
+    public static Field m13401g(Object obj, String str) {
         for (Class<?> cls = obj.getClass(); cls != null; cls = cls.getSuperclass()) {
             try {
                 Field declaredField = cls.getDeclaredField(str);
@@ -272,7 +272,7 @@ public final class C8128a {
         throw new NoSuchFieldException("Field " + str + " not found in " + obj.getClass());
     }
 
-    public static Method m13401h(Object obj, String str, Class<?>... clsArr) {
+    public static Method m13400h(Object obj, String str, Class<?>... clsArr) {
         for (Class<?> cls = obj.getClass(); cls != null; cls = cls.getSuperclass()) {
             try {
                 Method declaredMethod = cls.getDeclaredMethod(str, clsArr);
@@ -286,7 +286,7 @@ public final class C8128a {
         throw new NoSuchMethodException("Method " + str + " with parameters " + Arrays.asList(clsArr) + " not found in " + obj.getClass());
     }
 
-    public static ApplicationInfo m13400i(Context context) {
+    public static ApplicationInfo m13399i(Context context) {
         try {
             return context.getApplicationInfo();
         } catch (RuntimeException e) {
@@ -295,7 +295,7 @@ public final class C8128a {
         }
     }
 
-    public static ClassLoader m13399j(Context context) {
+    public static ClassLoader m13398j(Context context) {
         try {
             ClassLoader classLoader = context.getClassLoader();
             if (Build.VERSION.SDK_INT >= 14) {
@@ -313,34 +313,34 @@ public final class C8128a {
         }
     }
 
-    public static File m13398k(Context context, File file, String str) {
+    public static File m13397k(Context context, File file, String str) {
         File file2 = new File(file, "code_cache");
         try {
-            m13394o(file2);
+            m13393o(file2);
         } catch (IOException unused) {
             file2 = new File(context.getFilesDir(), "code_cache");
-            m13394o(file2);
+            m13393o(file2);
         }
         File file3 = new File(file2, str);
-        m13394o(file3);
+        m13393o(file3);
         return file3;
     }
 
-    public static void m13397l(Context context) {
+    public static void m13396l(Context context) {
         Log.i("MultiDex", "Installing application");
-        if (f26406b) {
+        if (f26409b) {
             Log.i("MultiDex", "VM has multidex support, MultiDex support library is disabled.");
             return;
         }
         int i = Build.VERSION.SDK_INT;
         if (i >= 4) {
             try {
-                ApplicationInfo i2 = m13400i(context);
+                ApplicationInfo i2 = m13399i(context);
                 if (i2 == null) {
                     Log.i("MultiDex", "No ApplicationInfo available, i.e. running on a test Context: MultiDex support library is disabled.");
                     return;
                 }
-                m13404e(context, new File(i2.sourceDir), new File(i2.dataDir), "secondary-dexes", "", true);
+                m13403e(context, new File(i2.sourceDir), new File(i2.dataDir), "secondary-dexes", "", true);
                 Log.i("MultiDex", "install done");
             } catch (Exception e) {
                 Log.e("MultiDex", "MultiDex installation failure", e);
@@ -351,20 +351,20 @@ public final class C8128a {
         }
     }
 
-    public static void m13396m(ClassLoader classLoader, File file, List<? extends File> list) {
+    public static void m13395m(ClassLoader classLoader, File file, List<? extends File> list) {
         if (!list.isEmpty()) {
             int i = Build.VERSION.SDK_INT;
             if (i >= 19) {
-                C8134b.m13389a(classLoader, list, file);
+                C8134b.m13388a(classLoader, list, file);
             } else if (i >= 14) {
-                C8129a.m13393a(classLoader, list);
+                C8129a.m13392a(classLoader, list);
             } else {
-                C8135c.m13387a(classLoader, list);
+                C8135c.m13386a(classLoader, list);
             }
         }
     }
 
-    public static boolean m13395n(String str) {
+    public static boolean m13394n(String str) {
         boolean z = false;
         if (str != null) {
             StringTokenizer stringTokenizer = new StringTokenizer(str, ".");
@@ -392,7 +392,7 @@ public final class C8128a {
         return z;
     }
 
-    public static void m13394o(File file) {
+    public static void m13393o(File file) {
         file.mkdir();
         if (!file.isDirectory()) {
             File parentFile = file.getParentFile();

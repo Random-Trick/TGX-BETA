@@ -5,21 +5,21 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public final class C8260d {
-    public final Map f26717a = new HashMap();
-    public final AtomicBoolean f26718b = new AtomicBoolean(false);
+    public final Map f26720a = new HashMap();
+    public final AtomicBoolean f26721b = new AtomicBoolean(false);
 
-    public final synchronized boolean m13018a(String str) {
-        if (!this.f26718b.get()) {
-            m13017b();
+    public final synchronized boolean m13017a(String str) {
+        if (!this.f26721b.get()) {
+            m13016b();
         }
-        Object obj = this.f26717a.get("assetOnlyUpdates");
+        Object obj = this.f26720a.get("assetOnlyUpdates");
         if (!(obj instanceof Boolean)) {
             return false;
         }
         return ((Boolean) obj).booleanValue();
     }
 
-    public final synchronized void m13017b() {
-        this.f26717a.put("assetOnlyUpdates", Boolean.FALSE);
+    public final synchronized void m13016b() {
+        this.f26720a.put("assetOnlyUpdates", Boolean.FALSE);
     }
 }

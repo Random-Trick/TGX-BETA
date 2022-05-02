@@ -5,7 +5,7 @@ import androidx.camera.core.AbstractC0642r;
 
 public final class C10301u {
     static {
-        AbstractC10304v vVar = AbstractC10304v.f33155a;
+        AbstractC10304v vVar = AbstractC10304v.f33158a;
     }
 
     public static AbstractC10295s m5522a(AbstractC0642r rVar, Context context) {

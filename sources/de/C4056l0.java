@@ -14,31 +14,31 @@ public class C4056l0 extends FrameLayoutFix {
         super(context);
     }
 
-    public void mo29117C1() {
+    public void mo29119C1() {
         throw null;
     }
 
-    public void mo29116D1() {
+    public void mo29118D1() {
         throw null;
     }
 
-    public void mo29115E1(float f) {
+    public void mo29117E1(float f) {
         throw null;
     }
 
-    public void m29114F1(AbstractC9323v4<?> v4Var) {
+    public void m29116F1(AbstractC9323v4<?> v4Var) {
         this.f13678M = v4Var;
     }
 
-    public void mo29113G1(RectF rectF, int i, int i2, int i3, boolean z) {
+    public void mo29115G1(RectF rectF, int i, int i2, int i3, boolean z) {
         throw null;
     }
 
-    public void mo29112I1(boolean z, boolean z2) {
+    public void mo29114I1(boolean z, boolean z2) {
         throw null;
     }
 
-    public void mo29111J1(int i) {
+    public void mo29113J1(int i) {
         throw null;
     }
 
@@ -56,7 +56,7 @@ public class C4056l0 extends FrameLayoutFix {
         if (motionEvent.getAction() != 0 || !this.f13678M.m9339Ta()) {
             return true;
         }
-        C1379j0.m37307r(getContext()).m14473k2(null, false);
+        C1379j0.m37310r(getContext()).m14472k2(null, false);
         return true;
     }
 }

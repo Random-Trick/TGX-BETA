@@ -6,15 +6,15 @@ import java.util.Iterator;
 import org.thunderdog.challegram.R;
 
 public class C11537v {
-    public final ArrayList<C11536u> f36979a = new ArrayList<>();
+    public final ArrayList<C11536u> f36981a = new ArrayList<>();
 
     public void m79a(C11536u uVar) {
-        this.f36979a.add(uVar);
+        this.f36981a.add(uVar);
     }
 
     public void m78b(C11537v vVar) {
-        if (vVar != null && !vVar.f36979a.isEmpty()) {
-            this.f36979a.addAll(vVar.f36979a);
+        if (vVar != null && !vVar.f36981a.isEmpty()) {
+            this.f36981a.addAll(vVar.f36981a);
         }
     }
 
@@ -43,7 +43,7 @@ public class C11537v {
     }
 
     public final void m72h(C11536u uVar) {
-        this.f36979a.add(uVar);
+        this.f36981a.add(uVar);
     }
 
     public final void m71i(Object obj, int i) {
@@ -59,7 +59,7 @@ public class C11537v {
     }
 
     public C11536u m68l(Object obj, int i) {
-        Iterator<C11536u> it = this.f36979a.iterator();
+        Iterator<C11536u> it = this.f36981a.iterator();
         while (it.hasNext()) {
             C11536u next = it.next();
             if (next.m80j(obj, i)) {
@@ -70,23 +70,23 @@ public class C11537v {
     }
 
     public ArrayList<C11536u> m67m() {
-        return this.f36979a;
+        return this.f36981a;
     }
 
     public final void m66n(boolean z) {
-        for (int size = this.f36979a.size() - 1; size >= 0; size--) {
-            if (!this.f36979a.get(size).m89a(z)) {
-                this.f36979a.remove(size);
+        for (int size = this.f36981a.size() - 1; size >= 0; size--) {
+            if (!this.f36981a.get(size).m89a(z)) {
+                this.f36981a.remove(size);
             }
         }
     }
 
     public final void m65o(Object obj) {
-        if (!this.f36979a.isEmpty()) {
-            for (int size = this.f36979a.size() - 1; size >= 0; size--) {
-                C11536u uVar = this.f36979a.get(size);
+        if (!this.f36981a.isEmpty()) {
+            for (int size = this.f36981a.size() - 1; size >= 0; size--) {
+                C11536u uVar = this.f36981a.get(size);
                 if (uVar.m86d() || uVar.m81i(obj)) {
-                    this.f36979a.remove(size);
+                    this.f36981a.remove(size);
                 }
             }
         }

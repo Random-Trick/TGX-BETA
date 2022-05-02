@@ -13,19 +13,19 @@ public final class C6383s1 {
         this.f20028d = z2;
     }
 
-    public final String m20495a() {
+    public final String m20496a() {
         return this.f20025a;
     }
 
-    public final String m20494b() {
+    public final String m20495b() {
         return this.f20026b;
     }
 
-    public final int m20493c() {
+    public final int m20494c() {
         return this.f20027c;
     }
 
-    public final boolean m20492d() {
+    public final boolean m20493d() {
         return this.f20028d;
     }
 }

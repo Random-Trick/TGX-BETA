@@ -13,12 +13,12 @@ import org.thunderdog.challegram.Log;
 public class Tracer {
 
     public final class RunnableC7869a implements Runnable {
-        public final Throwable f25441a;
-        public final int f25442b;
+        public final Throwable f25444a;
+        public final int f25445b;
 
         public RunnableC7869a(Throwable th, Throwable th2) {
-            this.f25442b = th2;
-            this.f25441a = th;
+            this.f25445b = th2;
+            this.f25444a = th;
         }
 
         public final void m14761a(Throwable th) {
@@ -39,40 +39,40 @@ public class Tracer {
 
         @Override
         public void run() {
-            int i = this.f25442b;
+            int i = this.f25445b;
             if (i == 100) {
-                AbstractC7870a.m14756b(this.f25441a);
+                AbstractC7870a.m14756b(this.f25444a);
             } else if (i != 101) {
                 switch (i) {
                     case 0:
-                        AbstractC7870a.m14757a(this.f25441a);
+                        AbstractC7870a.m14757a(this.f25444a);
                         return;
                     case 1:
-                        m14761a(this.f25441a);
+                        m14761a(this.f25444a);
                         return;
                     case 2:
-                        throw new AbstractC7870a.C7872b(this.f25441a.getClass().getSimpleName() + ": " + this.f25441a.getMessage());
+                        throw new AbstractC7870a.C7872b(this.f25444a.getClass().getSimpleName() + ": " + this.f25444a.getMessage());
                     case 3:
-                        m14759c(this.f25441a);
+                        m14759c(this.f25444a);
                         return;
                     case 4:
-                        throw new AbstractC7870a.C7873c(this.f25441a.getMessage());
+                        throw new AbstractC7870a.C7873c(this.f25444a.getMessage());
                     case 5:
-                        m14760b(this.f25441a);
+                        m14760b(this.f25444a);
                         return;
                     case 6:
-                        m14758d(this.f25441a);
+                        m14758d(this.f25444a);
                         return;
                     case 7:
-                        Tracer.m14762r(this.f25441a);
+                        Tracer.m14762r(this.f25444a);
                         return;
                     case 8:
-                        throw new AbstractC7870a.C7874d(this.f25441a.getMessage());
+                        throw new AbstractC7870a.C7874d(this.f25444a.getMessage());
                     default:
                         return;
                 }
             } else {
-                Tracer.m14762r(this.f25441a);
+                Tracer.m14762r(this.f25444a);
             }
         }
     }
@@ -119,9 +119,9 @@ public class Tracer {
         StringBuilder sb2 = new StringBuilder();
         sb2.append(cls != null ? cls.getSimpleName() : "unknown");
         sb2.append(": ");
-        sb2.append(C4779t2.m25378z5(error));
+        sb2.append(C4779t2.m25379z5(error));
         String sb3 = sb2.toString();
-        C4868i.m24726c2().m24774V5(i, sb3, 8);
+        C4868i.m24727c2().m24775V5(i, sb3, 8);
         if (stackTraceElementArr != null) {
             AbstractC7870a.C7873c cVar = new AbstractC7870a.C7873c(sb3);
             cVar.setStackTrace(stackTraceElementArr);

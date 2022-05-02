@@ -15,7 +15,7 @@ public final class C5596I implements AbstractC5542x, BiConsumer, AbstractC5531m 
     }
 
     @Override
-    public void mo22179p(Object obj, Object obj2) {
+    public void mo22180p(Object obj, Object obj2) {
         long[] jArr = (long[]) obj;
         long[] jArr2 = (long[]) obj2;
         int i = AbstractC5722j0.f18393t;
@@ -24,7 +24,7 @@ public final class C5596I implements AbstractC5542x, BiConsumer, AbstractC5531m 
     }
 
     @Override
-    public Object mo22178w(int i) {
+    public Object mo22179w(int i) {
         int i2 = AbstractC5719i2.f18390t;
         return new Object[i];
     }

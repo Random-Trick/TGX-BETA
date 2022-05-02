@@ -9,31 +9,31 @@ import p336y.AbstractC10231g2;
 import p336y.AbstractC10311w1;
 
 public class C9824s implements AbstractC10311w1 {
-    public static final List<String> f32090a = Arrays.asList("SM-T580", "SM-J710MN", "SM-A320FL", "SM-G570M", "SM-G610M");
+    public static final List<String> f32093a = Arrays.asList("SM-T580", "SM-J710MN", "SM-A320FL", "SM-G570M", "SM-G610M");
 
     public static class C9825a {
-        public static final int[] f32091a;
+        public static final int[] f32094a;
 
         static {
             int[] iArr = new int[AbstractC10231g2.EnumC10233b.values().length];
-            f32091a = iArr;
+            f32094a = iArr;
             try {
                 iArr[AbstractC10231g2.EnumC10233b.PRIV.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f32091a[AbstractC10231g2.EnumC10233b.YUV.ordinal()] = 2;
+                f32094a[AbstractC10231g2.EnumC10233b.YUV.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f32091a[AbstractC10231g2.EnumC10233b.JPEG.ordinal()] = 3;
+                f32094a[AbstractC10231g2.EnumC10233b.JPEG.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
     }
 
     public static boolean m6792a() {
-        return "samsung".equalsIgnoreCase(Build.BRAND) && f32090a.contains(Build.MODEL.toUpperCase(Locale.US));
+        return "samsung".equalsIgnoreCase(Build.BRAND) && f32093a.contains(Build.MODEL.toUpperCase(Locale.US));
     }
 
     public static boolean m6791b() {
@@ -44,7 +44,7 @@ public class C9824s implements AbstractC10311w1 {
         if (!m6792a()) {
             return null;
         }
-        int i = C9825a.f32091a[bVar.ordinal()];
+        int i = C9825a.f32094a[bVar.ordinal()];
         if (i == 1) {
             return new Size(1920, 1080);
         }

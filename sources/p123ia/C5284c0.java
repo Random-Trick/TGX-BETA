@@ -11,7 +11,7 @@ public final class C5284c0<T> implements Iterator<C5276a0<? extends T>>, Abstrac
     public int f17478b;
 
     public C5284c0(Iterator<? extends T> it) {
-        C8298k.m12934e(it, "iterator");
+        C8298k.m12933e(it, "iterator");
         this.f17477a = it;
     }
 
@@ -19,7 +19,7 @@ public final class C5284c0<T> implements Iterator<C5276a0<? extends T>>, Abstrac
         int i = this.f17478b;
         this.f17478b = i + 1;
         if (i < 0) {
-            C5304n.m23358n();
+            C5304n.m23359n();
         }
         return new C5276a0<>(i, this.f17477a.next());
     }

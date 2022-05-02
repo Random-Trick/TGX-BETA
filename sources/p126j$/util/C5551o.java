@@ -15,7 +15,7 @@ public final class C5551o implements PrimitiveIterator.OfDouble {
         this.f18088a = pVar;
     }
 
-    public static PrimitiveIterator.OfDouble m22461a(AbstractC5552p pVar) {
+    public static PrimitiveIterator.OfDouble m22462a(AbstractC5552p pVar) {
         return new C5551o(pVar);
     }
 
@@ -23,12 +23,12 @@ public final class C5551o implements PrimitiveIterator.OfDouble {
     public void forEachRemaining(DoubleConsumer doubleConsumer) {
         C5472K k = (C5472K) this.f18088a;
         Objects.requireNonNull(k);
-        k.m22600a((AbstractC5525g) doubleConsumer);
+        k.m22601a((AbstractC5525g) doubleConsumer);
     }
 
     @Override
     public void forEachRemaining2(DoubleConsumer doubleConsumer) {
-        ((C5472K) this.f18088a).m22600a(C5524f.m22485a(doubleConsumer));
+        ((C5472K) this.f18088a).m22601a(C5524f.m22486a(doubleConsumer));
     }
 
     @Override
@@ -52,6 +52,6 @@ public final class C5551o implements PrimitiveIterator.OfDouble {
         p126j$.util.function.Consumer convert = Consumer.VivifiedWrapper.convert(consumer);
         C5472K k = (C5472K) pVar;
         Objects.requireNonNull(k);
-        AbstractC5485a.m22573b(k, convert);
+        AbstractC5485a.m22574b(k, convert);
     }
 }

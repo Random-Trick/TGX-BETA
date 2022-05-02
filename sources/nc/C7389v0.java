@@ -130,52 +130,52 @@ import p350yd.C10930q6;
 import p356z4.C11253f;
 
 public class C7389v0 {
-    public static Boolean f23324a;
-    public static SoftReference<TextView> f23325b;
-    public static Integer f23326c;
-    public static final char[] f23327d = "0123456789ABCDEF".toCharArray();
-    public static C6815f<float[]> f23328e;
-    public static C6815f<float[]> f23329f;
-    public static C6815f<C7391b> f23330g;
+    public static Boolean f23327a;
+    public static SoftReference<TextView> f23328b;
+    public static Integer f23329c;
+    public static final char[] f23330d = "0123456789ABCDEF".toCharArray();
+    public static C6815f<float[]> f23331e;
+    public static C6815f<float[]> f23332f;
+    public static C6815f<C7391b> f23333g;
 
     public static class C7390a {
-        public final int f23331a;
-        public final int f23332b;
-        public final int f23333c;
-        public final long f23334d;
-        public final long f23335e;
-        public final boolean f23336f;
-        public final boolean f23337g;
-        public final String f23338h;
-        public final String f23339i;
+        public final int f23334a;
+        public final int f23335b;
+        public final int f23336c;
+        public final long f23337d;
+        public final long f23338e;
+        public final boolean f23339f;
+        public final boolean f23340g;
+        public final String f23341h;
+        public final String f23342i;
 
         public C7390a(int i, int i2, int i3, long j, long j2, boolean z, boolean z2, String str, String str2) {
-            this.f23331a = i;
-            this.f23332b = i2;
-            this.f23333c = i3;
-            this.f23334d = j;
-            this.f23335e = j2;
-            this.f23336f = z;
-            this.f23337g = z2;
-            this.f23338h = str;
-            this.f23339i = str2;
+            this.f23334a = i;
+            this.f23335b = i2;
+            this.f23336c = i3;
+            this.f23337d = j;
+            this.f23338e = j2;
+            this.f23339f = z;
+            this.f23340g = z2;
+            this.f23341h = str;
+            this.f23342i = str2;
         }
 
         public long m16554a(TimeUnit timeUnit) {
-            return timeUnit.convert(this.f23334d, TimeUnit.MILLISECONDS);
+            return timeUnit.convert(this.f23337d, TimeUnit.MILLISECONDS);
         }
     }
 
     public static class C7391b implements Comparator<Object> {
-        public Spannable f23340a;
+        public Spannable f23343a;
 
         public void m16553a(Spannable spannable) {
-            this.f23340a = spannable;
+            this.f23343a = spannable;
         }
 
         @Override
         public int compare(Object obj, Object obj2) {
-            return Integer.compare(this.f23340a.getSpanStart(obj), this.f23340a.getSpanStart(obj2));
+            return Integer.compare(this.f23343a.getSpanStart(obj), this.f23343a.getSpanStart(obj2));
         }
     }
 
@@ -191,7 +191,7 @@ public class C7389v0 {
         if (!location.hasBearing()) {
             return 0;
         }
-        int l = C5069h.m24081l(Math.round(location.getBearing()), 360);
+        int l = C5069h.m24082l(Math.round(location.getBearing()), 360);
         if (l != 0) {
             return l;
         }
@@ -204,7 +204,7 @@ public class C7389v0 {
 
     public static String m16755A2(String str, String str2) {
         String g;
-        if (!C5070i.m24061i(str2) && (g = C1369e0.m37392g(str2)) != null) {
+        if (!C5070i.m24062i(str2) && (g = C1369e0.m37395g(str2)) != null) {
             return g;
         }
         try {
@@ -248,7 +248,7 @@ public class C7389v0 {
     }
 
     public static int[] m16751B2(C6815f<int[]> fVar, int i) {
-        int[] a = fVar.m18901a();
+        int[] a = fVar.m18902a();
         if (a == null) {
             return new int[i];
         }
@@ -289,11 +289,11 @@ public class C7389v0 {
     public static void m16748C1(String str, int i, AbstractC5918j jVar, boolean z) {
         if (m16698P(str, i, jVar) && z) {
             if (i == 0) {
-                C1379j0.m37292y0(R.string.PhotoHasBeenSavedToGallery, 0);
+                C1379j0.m37295y0(R.string.PhotoHasBeenSavedToGallery, 0);
             } else if (i == 1) {
-                C1379j0.m37292y0(R.string.VideoHasBeenSavedToGallery, 0);
+                C1379j0.m37295y0(R.string.VideoHasBeenSavedToGallery, 0);
             } else if (i == 2) {
-                C1379j0.m37292y0(R.string.GifHasBeenSavedToGallery, 0);
+                C1379j0.m37295y0(R.string.GifHasBeenSavedToGallery, 0);
             }
         }
     }
@@ -368,7 +368,7 @@ public class C7389v0 {
     }
 
     public static long m16745D0(String str) {
-        if (C5070i.m24061i(str)) {
+        if (C5070i.m24062i(str)) {
             return 0L;
         }
         if (str.startsWith("content://")) {
@@ -411,14 +411,14 @@ public class C7389v0 {
 
     public static void m16740E1(File file, String str, Uri uri) {
         if (uri != null) {
-            C1379j0.m37315n().getContentResolver().delete(uri, null, null);
+            C1379j0.m37318n().getContentResolver().delete(uri, null, null);
         }
-        C5068g.m24099d(file);
+        C5068g.m24100d(file);
     }
 
     public static void m16739E2(final Bitmap bitmap, final boolean z) {
         if (Build.VERSION.SDK_INT < 23 || !m16662Y1("android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE")) {
-            C4383l.m28059a().m28058b(new Runnable() {
+            C4383l.m28061a().m28060b(new Runnable() {
                 @Override
                 public final void run() {
                     C7389v0.m16724I1(bitmap);
@@ -463,7 +463,7 @@ public class C7389v0 {
         if (file != null && (fromFile = Uri.fromFile(file)) != null) {
             Intent intent = new Intent("android.intent.action.MEDIA_SCANNER_SCAN_FILE");
             intent.setData(fromFile);
-            C1379j0.m37309q().sendBroadcast(intent);
+            C1379j0.m37312q().sendBroadcast(intent);
         }
     }
 
@@ -478,7 +478,7 @@ public class C7389v0 {
     }
 
     public static String m16733G0() {
-        return C5070i.m24073E(Build.MANUFACTURER, C4403w.m27913Y1());
+        return C5070i.m24074E(Build.MANUFACTURER, C4403w.m27915Y1());
     }
 
     public static void m16732G1(Runnable runnable, int i, boolean z) {
@@ -504,7 +504,7 @@ public class C7389v0 {
     }
 
     public static String m16729H0(double d, double d2, int i, boolean z, int i2, int i3) {
-        int i4 = C1357a0.m37542h() >= 2.0f ? 2 : 1;
+        int i4 = C1357a0.m37545h() >= 2.0f ? 2 : 1;
         int i5 = i2 / i4;
         int i6 = i3 / i4;
         if (i5 > 640 || i6 > 320) {
@@ -559,7 +559,7 @@ public class C7389v0 {
     }
 
     public static String m16725I0(C10930q6 q6Var, double d, double d2, int i, boolean z, int i2, int i3, int[] iArr) {
-        int i4 = C1357a0.m37542h() >= 2.0f ? 2 : 1;
+        int i4 = C1357a0.m37545h() >= 2.0f ? 2 : 1;
         float f = 640;
         float f2 = 320;
         float min = Math.min(Math.min(i2 / i4, 640) / f, Math.min(i3 / i4, 320) / f2);
@@ -604,8 +604,8 @@ public class C7389v0 {
     }
 
     public static String m16721J0() {
-        String u1 = C4403w.m27821u1(R.string.MarketUrl, new Object[0]);
-        return C1363c0.m37457Q(u1) ? u1 : "https://play.google.com/store/apps/details?id=org.thunderdog.challegram";
+        String u1 = C4403w.m27823u1(R.string.MarketUrl, new Object[0]);
+        return C1363c0.m37460Q(u1) ? u1 : "https://play.google.com/store/apps/details?id=org.thunderdog.challegram";
     }
 
     public static String m16719J2(String str) {
@@ -631,12 +631,12 @@ public class C7389v0 {
 
     public static synchronized int m16717K0() {
         synchronized (C7389v0.class) {
-            Integer num = f23326c;
+            Integer num = f23329c;
             if (num != null) {
                 return num.intValue();
             }
             int V = m16674V();
-            f23326c = Integer.valueOf(V);
+            f23329c = Integer.valueOf(V);
             return V;
         }
     }
@@ -645,9 +645,9 @@ public class C7389v0 {
         File file;
         try {
             if (Build.VERSION.SDK_INT >= 24) {
-                file = C1379j0.m37315n().getDataDir();
+                file = C1379j0.m37318n().getDataDir();
             } else {
-                file = C1379j0.m37315n().getFilesDir().getParentFile();
+                file = C1379j0.m37318n().getFilesDir().getParentFile();
             }
             File file2 = new File(file, "shared_prefs");
             if (!file2.exists()) {
@@ -669,7 +669,7 @@ public class C7389v0 {
             return Uri.fromFile(file);
         }
         try {
-            return FileProvider.m14750e(C1379j0.m37315n(), "org.thunderdog.challegram.provider", file);
+            return FileProvider.m14750e(C1379j0.m37318n(), "org.thunderdog.challegram.provider", file);
         } catch (Throwable th) {
             Log.m14725e("Can't create content uri for path", th, new Object[0]);
             return null;
@@ -686,21 +686,21 @@ public class C7389v0 {
             }
             boolean equalsIgnoreCase = "yes".equalsIgnoreCase(p2.extractMetadata(17));
             boolean equalsIgnoreCase2 = "yes".equalsIgnoreCase(p2.extractMetadata(16));
-            long w = C5070i.m24047w(p2.extractMetadata(9));
-            long w2 = C5070i.m24047w(p2.extractMetadata(20));
-            int s = equalsIgnoreCase ? C5070i.m24051s(p2.extractMetadata(18)) : 0;
-            int s2 = equalsIgnoreCase ? C5070i.m24051s(p2.extractMetadata(19)) : 0;
-            int s3 = (Build.VERSION.SDK_INT < 17 || !equalsIgnoreCase) ? 0 : C5070i.m24051s(p2.extractMetadata(24));
+            long w = C5070i.m24048w(p2.extractMetadata(9));
+            long w2 = C5070i.m24048w(p2.extractMetadata(20));
+            int s = equalsIgnoreCase ? C5070i.m24052s(p2.extractMetadata(18)) : 0;
+            int s2 = equalsIgnoreCase ? C5070i.m24052s(p2.extractMetadata(19)) : 0;
+            int s3 = (Build.VERSION.SDK_INT < 17 || !equalsIgnoreCase) ? 0 : C5070i.m24052s(p2.extractMetadata(24));
             if (equalsIgnoreCase) {
                 str3 = null;
                 str2 = null;
             } else {
                 String extractMetadata = p2.extractMetadata(7);
                 String extractMetadata2 = p2.extractMetadata(2);
-                if (C5070i.m24061i(extractMetadata2)) {
+                if (C5070i.m24062i(extractMetadata2)) {
                     extractMetadata2 = p2.extractMetadata(3);
                 }
-                if (C5070i.m24061i(extractMetadata2)) {
+                if (C5070i.m24062i(extractMetadata2)) {
                     extractMetadata2 = p2.extractMetadata(13);
                 }
                 str3 = extractMetadata;
@@ -715,9 +715,9 @@ public class C7389v0 {
 
     public static void m16712L1(final C6253l lVar, final AbstractC5918j jVar, boolean z, Bitmap bitmap) {
         if (bitmap != null) {
-            C6259q.m20786c().m20785d(lVar, bitmap);
+            C6259q.m20787c().m20786d(lVar, bitmap);
         }
-        C1379j0.m37334d0(new Runnable() {
+        C1379j0.m37337d0(new Runnable() {
             @Override
             public final void run() {
                 AbstractC5918j.this.mo1330a(lVar);
@@ -727,26 +727,26 @@ public class C7389v0 {
 
     public static boolean m16711L2(String str) {
         AbstractView$OnTouchListenerC7889a E;
-        return Build.VERSION.SDK_INT >= 23 && (E = C1379j0.m37366E()) != null && E.shouldShowRequestPermissionRationale(str);
+        return Build.VERSION.SDK_INT >= 23 && (E = C1379j0.m37369E()) != null && E.shouldShowRequestPermissionRationale(str);
     }
 
     public static boolean m16710M(Context context, Uri uri, File file) {
         String scheme = uri.getScheme();
         scheme.hashCode();
         if (scheme.equals("file")) {
-            return C5068g.m24102a(new File(uri.getPath()), file);
+            return C5068g.m24103a(new File(uri.getPath()), file);
         }
         if (scheme.equals("content")) {
             long j = 0;
             try {
                 InputStream openInputStream = context.getContentResolver().openInputStream(uri);
-                AbstractC4537a0 j2 = C4560o.m27370j(openInputStream);
+                AbstractC4537a0 j2 = C4560o.m27372j(openInputStream);
                 try {
-                    AbstractC4572y d = C4560o.m27376d(file);
-                    AbstractC4550f a = C4560o.m27379a(d);
+                    AbstractC4572y d = C4560o.m27378d(file);
+                    AbstractC4550f a = C4560o.m27381a(d);
                     while (true) {
                         try {
-                            long s = j2.mo5028s(a.mo27336a(), 20480L);
+                            long s = j2.mo5028s(a.mo27338a(), 20480L);
                             if (s == -1) {
                                 break;
                             }
@@ -794,7 +794,7 @@ public class C7389v0 {
 
     public static String m16709M0(String str, int i) {
         if (Build.VERSION.SDK_INT >= 26) {
-            ((NotificationManager) C1379j0.m37315n().getSystemService("notification")).createNotificationChannel(new NotificationChannel(str, C4403w.m27869i1(i), 2));
+            ((NotificationManager) C1379j0.m37318n().getSystemService("notification")).createNotificationChannel(new NotificationChannel(str, C4403w.m27871i1(i), 2));
         }
         return str;
     }
@@ -827,7 +827,7 @@ public class C7389v0 {
         int i;
         int i2;
         if (!file.exists()) {
-            C1379j0.m37334d0(new Runnable() {
+            C1379j0.m37337d0(new Runnable() {
                 @Override
                 public final void run() {
                     AbstractC5918j.this.mo1330a(null);
@@ -838,18 +838,18 @@ public class C7389v0 {
         if (z) {
             C7390a L0 = m16713L0(file.getPath());
             if (L0 != null) {
-                lVar = new C6253l(-1L, file.getPath(), file.lastModified(), L0.f23331a, L0.f23332b, -1L, false);
-                lVar.m20839i1();
-                lVar.m20838j1(L0.m16554a(TimeUnit.MILLISECONDS), "video/mov");
-                lVar.m20835m1();
-                lVar.mo20874q0(L0.f23333c);
+                lVar = new C6253l(-1L, file.getPath(), file.lastModified(), L0.f23334a, L0.f23335b, -1L, false);
+                lVar.m20840i1();
+                lVar.m20839j1(L0.m16554a(TimeUnit.MILLISECONDS), "video/mov");
+                lVar.m20836m1();
+                lVar.mo20875q0(L0.f23336c);
             } else {
                 lVar = null;
             }
         } else {
             int t0 = m16581t0(file.getPath());
             int S0 = m16685S0(t0);
-            BitmapFactory.Options h = C7907b.m14365h(file.getPath());
+            BitmapFactory.Options h = C7907b.m14364h(file.getPath());
             if (!m16624i1(t0) || S0 != 0) {
                 i = h.outWidth;
                 i2 = h.outHeight;
@@ -858,22 +858,22 @@ public class C7389v0 {
                 i2 = h.outWidth;
             }
             C6253l lVar2 = new C6253l(-1L, file.getPath(), file.lastModified(), i, i2, -1L, false);
-            lVar2.m20908l0();
-            lVar2.m20926b0();
-            lVar2.m20839i1();
-            lVar2.mo20767t0(C8112b.m13490o0());
-            lVar2.mo20874q0(S0);
+            lVar2.m20909l0();
+            lVar2.m20927b0();
+            lVar2.m20840i1();
+            lVar2.mo20768t0(C8112b.m13489o0());
+            lVar2.mo20875q0(S0);
             lVar = lVar2;
         }
         if (lVar != null) {
-            ImageLoader.m14392e().m14390g(lVar, new C7907b.AbstractC7910c() {
+            ImageLoader.m14391e().m14389g(lVar, new C7907b.AbstractC7910c() {
                 @Override
-                public final void mo14348b(boolean z2, Bitmap bitmap) {
+                public final void mo14347b(boolean z2, Bitmap bitmap) {
                     C7389v0.m16712L1(C6253l.this, jVar, z2, bitmap);
                 }
             });
         } else {
-            C1379j0.m37334d0(new Runnable() {
+            C1379j0.m37337d0(new Runnable() {
                 @Override
                 public final void run() {
                     AbstractC5918j.this.mo1330a(null);
@@ -885,7 +885,7 @@ public class C7389v0 {
     public static void m16703N2(Service service, int i, Notification notification) {
         if (notification != null) {
             int i2 = Build.VERSION.SDK_INT;
-            if (i2 < 26 || !C5070i.m24061i(notification.getChannelId())) {
+            if (i2 < 26 || !C5070i.m24062i(notification.getChannelId())) {
                 if (i2 >= 29) {
                     int i3 = 0;
                     switch (i) {
@@ -925,7 +925,7 @@ public class C7389v0 {
                 }
             });
         } else if (str != null && !str.isEmpty()) {
-            C4383l.m28059a().m28058b(new Runnable() {
+            C4383l.m28061a().m28060b(new Runnable() {
                 @Override
                 public final void run() {
                     C7389v0.m16748C1(str, i, jVar, z);
@@ -937,7 +937,7 @@ public class C7389v0 {
     public static String m16701O0(Uri uri, String str) {
         Cursor query;
         try {
-            query = C1379j0.m37309q().getContentResolver().query(uri, new String[]{"title"}, null, null, null);
+            query = C1379j0.m37312q().getContentResolver().query(uri, new String[]{"title"}, null, null, null);
         } catch (Throwable th) {
             try {
                 Log.m14725e("Couldn't get ringtone name for %s", th, uri);
@@ -978,7 +978,7 @@ public class C7389v0 {
         File g0 = m16633g0(str, i);
         if (g0 != null) {
             try {
-                if (C5068g.m24102a(new File(str), g0)) {
+                if (C5068g.m24103a(new File(str), g0)) {
                     m16610m(g0);
                     if (jVar == null) {
                         return true;
@@ -995,7 +995,7 @@ public class C7389v0 {
     }
 
     public static String m16697P0(String str, String str2) {
-        return C5070i.m24061i(str) ? str : m16701O0(Uri.parse(str), str2);
+        return C5070i.m24062i(str) ? str : m16701O0(Uri.parse(str), str2);
     }
 
     public static float m16696P1(Layout layout) {
@@ -1011,7 +1011,7 @@ public class C7389v0 {
     }
 
     public static String m16695P2(int i) {
-        return m16691Q2(C5063c.m24136j(i), C5063c.m24135k(i), C5063c.m24134l(i));
+        return m16691Q2(C5063c.m24137j(i), C5063c.m24136k(i), C5063c.m24135l(i));
     }
 
     public static Layout m16694Q(CharSequence charSequence, int i, TextPaint textPaint) {
@@ -1049,7 +1049,7 @@ public class C7389v0 {
 
     public static float m16688R1(CharSequence charSequence, int i, int i2, Paint paint) {
         float f = 0.0f;
-        if (C5070i.m24061i(charSequence)) {
+        if (C5070i.m24062i(charSequence)) {
             return 0.0f;
         }
         if (!(charSequence instanceof Spannable)) {
@@ -1070,14 +1070,14 @@ public class C7389v0 {
             if (i < spanStart) {
                 f += m16684S1(charSequence, i, spanStart, paint);
             }
-            f += kVar.mo23967b(paint);
+            f += kVar.mo23968b(paint);
             i = spannable.getSpanEnd(kVar);
         }
         return i < i2 ? f + m16684S1(charSequence, i, i2, paint) : f;
     }
 
     public static void m16687R2(final File file, final boolean z, final AbstractC5918j<C6253l> jVar) {
-        C4383l.m28059a().m28058b(new Runnable() {
+        C4383l.m28061a().m28060b(new Runnable() {
             @Override
             public final void run() {
                 C7389v0.m16704N1(file, jVar, z);
@@ -1131,12 +1131,12 @@ public class C7389v0 {
         }
         if (paint == null) {
             throw new IllegalArgumentException();
-        } else if (Build.VERSION.SDK_INT >= 23 && C1363c0.m37467G(charSequence, i, i2) != 2) {
+        } else if (Build.VERSION.SDK_INT >= 23 && C1363c0.m37470G(charSequence, i, i2) != 2) {
             return paint.getRunAdvance(charSequence, i, i2, 0, charSequence.length(), false, i2);
         } else {
             float[] r2 = m16587r2(i3, true);
             paint.getTextWidths(charSequence, i, i2, r2);
-            return C5062b.m24176F(r2, i3);
+            return C5062b.m24177F(r2, i3);
         }
     }
 
@@ -1147,9 +1147,9 @@ public class C7389v0 {
     public static void m16682T(final File file) {
         if (file != null) {
             if (m16584s1(file)) {
-                C5068g.m24099d(file);
+                C5068g.m24100d(file);
             } else {
-                MediaScannerConnection.scanFile(C1379j0.m37315n(), new String[]{file.getPath()}, null, new MediaScannerConnection.OnScanCompletedListener() {
+                MediaScannerConnection.scanFile(C1379j0.m37318n(), new String[]{file.getPath()}, null, new MediaScannerConnection.OnScanCompletedListener() {
                     @Override
                     public final void onScanCompleted(String str, Uri uri) {
                         C7389v0.m16740E1(file, str, uri);
@@ -1160,7 +1160,7 @@ public class C7389v0 {
     }
 
     public static String m16681T0(String str) {
-        if (C5070i.m24061i(str)) {
+        if (C5070i.m24062i(str)) {
             return str;
         }
         int length = str.length();
@@ -1192,7 +1192,7 @@ public class C7389v0 {
     }
 
     public static float m16680T1(CharSequence charSequence, Paint paint) {
-        if (C5070i.m24061i(charSequence)) {
+        if (C5070i.m24062i(charSequence)) {
             return 0.0f;
         }
         return m16684S1(charSequence, 0, charSequence.length(), paint);
@@ -1206,13 +1206,13 @@ public class C7389v0 {
             if (iArr != null) {
                 try {
                     if (Build.VERSION.SDK_INT >= 17) {
-                        iArr[0] = C5070i.m24051s(mediaMetadataRetriever.extractMetadata(24));
+                        iArr[0] = C5070i.m24052s(mediaMetadataRetriever.extractMetadata(24));
                     }
                 } catch (IllegalArgumentException | RuntimeException unused) {
                 }
             }
             if (Build.VERSION.SDK_INT >= 27 && Math.min(i, i2) > 0) {
-                if (Math.max(i, i2) < Math.max(C5070i.m24051s(mediaMetadataRetriever.extractMetadata(18)), C5070i.m24051s(mediaMetadataRetriever.extractMetadata(19)))) {
+                if (Math.max(i, i2) < Math.max(C5070i.m24052s(mediaMetadataRetriever.extractMetadata(18)), C5070i.m24052s(mediaMetadataRetriever.extractMetadata(19)))) {
                     bitmap = mediaMetadataRetriever.getScaledFrameAtTime(j, j == -1 ? 2 : 1, i, i2);
                 }
             }
@@ -1229,7 +1229,7 @@ public class C7389v0 {
     public static boolean m16678U(String str) {
         try {
             if (Build.VERSION.SDK_INT >= 24) {
-                return C1379j0.m37315n().deleteSharedPreferences(str);
+                return C1379j0.m37318n().deleteSharedPreferences(str);
             }
             File K2 = m16715K2(str);
             return K2 != null && K2.delete();
@@ -1240,19 +1240,19 @@ public class C7389v0 {
     }
 
     public static C7391b m16677U0() {
-        if (f23330g == null) {
+        if (f23333g == null) {
             synchronized (C7389v0.class) {
-                if (f23330g == null) {
-                    f23330g = new C6815f<>();
+                if (f23333g == null) {
+                    f23333g = new C6815f<>();
                 }
             }
         }
-        C7391b a = f23330g.m18901a();
+        C7391b a = f23333g.m18902a();
         if (a != null) {
             return a;
         }
         C7391b bVar = new C7391b();
-        f23330g.m18900b(bVar);
+        f23333g.m18901b(bVar);
         return bVar;
     }
 
@@ -1263,7 +1263,7 @@ public class C7389v0 {
         if (file.isDirectory()) {
             return m16672V1(file, file2);
         }
-        if (C5068g.m24102a(file, file2)) {
+        if (C5068g.m24103a(file, file2)) {
             return file.delete();
         }
         Log.m14709w("Cannot copy file", new Object[0]);
@@ -1400,7 +1400,7 @@ public class C7389v0 {
 
     public static boolean m16665X1(String str) {
         AbstractView$OnTouchListenerC7889a E;
-        return (Build.VERSION.SDK_INT < 23 || (E = C1379j0.m37366E()) == null || E.checkSelfPermission(str) == 0) ? false : true;
+        return (Build.VERSION.SDK_INT < 23 || (E = C1379j0.m37369E()) == null || E.checkSelfPermission(str) == 0) ? false : true;
     }
 
     public static float m16664Y(double d, double d2, double d3, double d4) {
@@ -1416,7 +1416,7 @@ public class C7389v0 {
 
     public static boolean m16662Y1(String... strArr) {
         AbstractView$OnTouchListenerC7889a E;
-        if (Build.VERSION.SDK_INT >= 23 && (E = C1379j0.m37366E()) != null) {
+        if (Build.VERSION.SDK_INT >= 23 && (E = C1379j0.m37369E()) != null) {
             for (String str : strArr) {
                 if (E.checkSelfPermission(str) != 0) {
                     return true;
@@ -1438,11 +1438,11 @@ public class C7389v0 {
     }
 
     public static CharSequence m16660Z0(C10930q6 q6Var) {
-        return C4403w.m27919X(q6Var) + " (cfee902)\nAndroid " + C2064f.m35725a() + "(" + Build.VERSION.SDK_INT + ")\n" + Build.BRAND + " " + Build.MODEL + " (" + Build.DISPLAY + ")";
+        return C4403w.m27921X(q6Var) + " (4de70fa)\nAndroid " + C2064f.m35728a() + "(" + Build.VERSION.SDK_INT + ")\n" + Build.BRAND + " " + Build.MODEL + " (" + Build.DISPLAY + ")";
     }
 
     public static AbstractC6689s m16659Z1(Context context, boolean z) {
-        return new AbstractC6689s.C6691b(context, new C6646m(context).m19675j((z || C4868i.m24726c2().m24663k1(128L)) ? 2 : 1), new C7190h(context, new C8955d().m10835d(true))).m19554r(new C11253f(context)).m19555q(new C6634k()).m19564h();
+        return new AbstractC6689s.C6691b(context, new C6646m(context).m19676j((z || C4868i.m24727c2().m24664k1(128L)) ? 2 : 1), new C7190h(context, new C8955d().m10834d(true))).m19555r(new C11253f(context)).m19556q(new C6634k()).m19565h();
     }
 
     public static byte[] m16657a0(byte[] bArr, String str) {
@@ -1480,8 +1480,8 @@ public class C7389v0 {
 
     public static String m16652b1(String str) {
         try {
-            AbstractC4551g b = C4560o.m27378b(C4560o.m27370j(new GZIPInputStream(new FileInputStream(new File(str)))));
-            String T = b.mo27337T(C5070i.f17083a);
+            AbstractC4551g b = C4560o.m27380b(C4560o.m27372j(new GZIPInputStream(new FileInputStream(new File(str)))));
+            String T = b.mo27339T(C5070i.f17083a);
             b.close();
             return T;
         } catch (Throwable th) {
@@ -1538,7 +1538,7 @@ public class C7389v0 {
 
     public static File m16647c2(File file, String str) {
         String v0 = m16573v0(str);
-        if (C5070i.m24061i(v0)) {
+        if (C5070i.m24062i(v0)) {
             return m16643d2(file, str, null);
         }
         return m16643d2(file, str.substring(0, (str.length() - v0.length()) - 1), v0);
@@ -1566,7 +1566,7 @@ public class C7389v0 {
     }
 
     public static boolean m16644d1() {
-        return Build.VERSION.SDK_INT >= 17 ? Settings.Global.getInt(C1379j0.m37309q().getContentResolver(), "airplane_mode_on", 0) != 0 : Settings.System.getInt(C1379j0.m37309q().getContentResolver(), "airplane_mode_on", 0) != 0;
+        return Build.VERSION.SDK_INT >= 17 ? Settings.Global.getInt(C1379j0.m37312q().getContentResolver(), "airplane_mode_on", 0) != 0 : Settings.System.getInt(C1379j0.m37312q().getContentResolver(), "airplane_mode_on", 0) != 0;
     }
 
     public static File m16643d2(File file, String str, String str2) {
@@ -1579,7 +1579,7 @@ public class C7389v0 {
                 sb2.append(i);
                 sb2.append(")");
             }
-            if (!C5070i.m24061i(str2)) {
+            if (!C5070i.m24062i(str2)) {
                 sb2.append(".");
                 sb2.append(str2);
             }
@@ -1638,7 +1638,7 @@ public class C7389v0 {
     }
 
     public static C6660o1 m16639e2(Uri uri) {
-        return new C6660o1.C6663c().m19633e(uri).m19637a();
+        return new C6660o1.C6663c().m19634e(uri).m19638a();
     }
 
     public static void m16637f0() {
@@ -1651,10 +1651,10 @@ public class C7389v0 {
     }
 
     public static boolean m16636f1() {
-        Boolean bool = f23324a;
+        Boolean bool = f23327a;
         if (bool == null) {
             bool = Boolean.valueOf(m16632g1());
-            f23324a = bool;
+            f23327a = bool;
         }
         return bool.booleanValue();
     }
@@ -1669,8 +1669,8 @@ public class C7389v0 {
 
     public static boolean m16632g1() {
         try {
-            String installerPackageName = C1379j0.m37315n().getPackageManager().getInstallerPackageName(C1379j0.m37315n().getPackageName());
-            if (C5070i.m24061i(installerPackageName)) {
+            String installerPackageName = C1379j0.m37318n().getPackageManager().getInstallerPackageName(C1379j0.m37318n().getPackageName());
+            if (C5070i.m24062i(installerPackageName)) {
                 return true;
             }
             Log.m14714v("Installer package: %s", installerPackageName);
@@ -1684,7 +1684,7 @@ public class C7389v0 {
     public static AbstractC7230t m16631g2(int i, TdApi.File file) {
         if (file == null) {
             throw new IllegalArgumentException();
-        } else if (file.f25373id != -1 || C5070i.m24061i(file.local.path)) {
+        } else if (file.f25376id != -1 || C5070i.m24062i(file.local.path)) {
             return new C7187g0.C7189b(new C10634e9.C10635a()).m17423b(m16639e2(C10634e9.C10637c.m4404c(i, file)));
         } else {
             return m16623i2(new File(file.local.path));
@@ -1700,7 +1700,7 @@ public class C7389v0 {
     }
 
     public static AbstractC7230t m16627h2(int i, TdApi.Message message) {
-        return m16631g2(i, C4779t2.m25494j1(message));
+        return m16631g2(i, C4779t2.m25495j1(message));
     }
 
     public static File m16625i0(boolean z, String str, int i) {
@@ -1739,15 +1739,15 @@ public class C7389v0 {
     }
 
     public static String m16619j2(String str) {
-        if (C5070i.m24061i(str)) {
+        if (C5070i.m24062i(str)) {
             return str;
         }
         while (true) {
             String readlink = C7888N.readlink(str);
-            if (C5070i.m24061i(readlink) || readlink.equals(str)) {
+            if (C5070i.m24062i(readlink) || readlink.equals(str)) {
                 try {
                     String canonicalPath = new File(str).getCanonicalPath();
-                    return !C5070i.m24061i(canonicalPath) ? canonicalPath : str;
+                    return !C5070i.m24062i(canonicalPath) ? canonicalPath : str;
                 } catch (Exception unused) {
                     return str.replace("/./", "/");
                 }
@@ -1769,15 +1769,15 @@ public class C7389v0 {
         int D = hVar.mo6153D();
         if (i == D) {
             if (i != 0) {
-                hVar.m39309L(0, D);
+                hVar.m39312L(0, D);
             }
         } else if (i == 0) {
-            hVar.m39308M(0, D);
+            hVar.m39311M(0, D);
         } else if (D == 0) {
-            hVar.m39307N(0, i);
+            hVar.m39310N(0, i);
         } else {
-            hVar.m39307N(0, i);
-            hVar.m39307N(0, D);
+            hVar.m39310N(0, i);
+            hVar.m39310N(0, D);
         }
     }
 
@@ -1790,7 +1790,7 @@ public class C7389v0 {
             return false;
         }
         try {
-            return C5220d.m23604p().mo23585i(context) == 0;
+            return C5220d.m23605p().mo23586i(context) == 0;
         } catch (Throwable unused) {
             return false;
         }
@@ -1801,15 +1801,15 @@ public class C7389v0 {
         int max = Math.max(0, D - i2);
         if (i == D) {
             if (i != 0) {
-                hVar.m39309L(i2, max);
+                hVar.m39312L(i2, max);
             }
         } else if (i == 0) {
-            hVar.m39308M(0, D);
+            hVar.m39311M(0, D);
         } else if (D == 0) {
-            hVar.m39307N(0, i);
+            hVar.m39310N(0, i);
         } else {
-            hVar.m39307N(Math.min(i2, max), i);
-            hVar.m39308M(i2, max);
+            hVar.m39310N(Math.min(i2, max), i);
+            hVar.m39311M(i2, max);
         }
     }
 
@@ -1829,17 +1829,17 @@ public class C7389v0 {
 
     public static void m16607m2(AbstractC10664f9 f9Var, String str, File file, String str2, int i) {
         String v0 = m16573v0(file.getPath());
-        if (C5070i.m24061i(str2)) {
+        if (C5070i.m24062i(str2)) {
             str2 = m16755A2(file.getPath(), v0);
         }
-        if ((!C5070i.m24061i(v0) && C1369e0.m37395d(v0)) || (!C5070i.m24061i(str2) && C1369e0.m37394e(str2))) {
+        if ((!C5070i.m24062i(v0) && C1369e0.m37398d(v0)) || (!C5070i.m24062i(str2) && C1369e0.m37397e(str2))) {
             k30 k30Var = new k30(f9Var.mo4347s(), f9Var.mo4348c());
-            k30Var.m9476Ad(k30.C2608a.m34035f(str, file.getPath(), str2).m34033h(i));
-            C1379j0.m37345W(k30Var);
-        } else if (!C1405v.m37103r(file, str2)) {
+            k30Var.m9476Ad(k30.C2608a.m34038f(str, file.getPath(), str2).m34036h(i));
+            C1379j0.m37348W(k30Var);
+        } else if (!C1405v.m37106r(file, str2)) {
             String z2 = m16555z2(file.getPath());
-            if (C5070i.m24061i(z2) || C5070i.m24067c(str2, z2)) {
-                C1379j0.m37292y0(R.string.NoAppToOpen, 0);
+            if (C5070i.m24062i(z2) || C5070i.m24068c(str2, z2)) {
+                C1379j0.m37295y0(R.string.NoAppToOpen, 0);
             } else {
                 m16607m2(f9Var, str, file, z2, i);
             }
@@ -1882,7 +1882,7 @@ public class C7389v0 {
     }
 
     public static void m16603n2(AbstractC10664f9 f9Var, TdApi.Video video) {
-        m16607m2(f9Var, C5070i.m24061i(video.fileName) ? "video/mp4".equals(video.mimeType) ? "video.mp4" : "video/quicktime".equals(video.mimeType) ? "video.mov" : "" : video.fileName, new File(video.video.local.path), video.mimeType, 0);
+        m16607m2(f9Var, C5070i.m24062i(video.fileName) ? "video/mp4".equals(video.mimeType) ? "video.mp4" : "video/quicktime".equals(video.mimeType) ? "video.mov" : "" : video.fileName, new File(video.video.local.path), video.mimeType, 0);
     }
 
     public static void m16602o(CountDownLatch countDownLatch) {
@@ -1899,9 +1899,9 @@ public class C7389v0 {
     public static File m16601o0(boolean z) {
         File file = null;
         if (z) {
-            file = C1379j0.m37309q().getExternalFilesDir(null);
+            file = C1379j0.m37312q().getExternalFilesDir(null);
         }
-        return file != null ? file : C1379j0.m37309q().getFilesDir();
+        return file != null ? file : C1379j0.m37312q().getFilesDir();
     }
 
     public static boolean m16600o1(float f, float f2, float f3, float f4, float f5) {
@@ -1912,7 +1912,7 @@ public class C7389v0 {
         if (!str.startsWith("content://")) {
             return new FileInputStream(str);
         }
-        InputStream openInputStream = C1379j0.m37309q().getContentResolver().openInputStream(Uri.parse(str));
+        InputStream openInputStream = C1379j0.m37312q().getContentResolver().openInputStream(Uri.parse(str));
         if (openInputStream != null) {
             return openInputStream;
         }
@@ -1947,7 +1947,7 @@ public class C7389v0 {
 
     public static boolean m16596p1(Uri uri) {
         String j2 = m16619j2(uri.getPath());
-        return !C5070i.m24061i(j2) && j2.startsWith(C1379j0.m37315n().getFilesDir().getPath());
+        return !C5070i.m24062i(j2) && j2.startsWith(C1379j0.m37318n().getFilesDir().getPath());
     }
 
     public static MediaMetadataRetriever m16595p2(String str) {
@@ -1961,7 +1961,7 @@ public class C7389v0 {
         }
         try {
             if (str.startsWith("content://")) {
-                mediaMetadataRetriever.setDataSource(C1379j0.m37309q(), Uri.parse(str));
+                mediaMetadataRetriever.setDataSource(C1379j0.m37312q(), Uri.parse(str));
             } else {
                 mediaMetadataRetriever.setDataSource(str);
             }
@@ -2059,7 +2059,7 @@ public class C7389v0 {
 
     public static Locale m16589r0(String str) {
         if ("zz".equals(str)) {
-            return C1379j0.m37372B().getConfiguration().locale;
+            return C1379j0.m37375B().getConfiguration().locale;
         }
         return m16718K(str);
     }
@@ -2070,38 +2070,38 @@ public class C7389v0 {
 
     public static float[] m16587r2(int i, boolean z) {
         if (i < 1 || i > 3) {
-            C6815f<float[]> fVar = f23329f;
+            C6815f<float[]> fVar = f23332f;
             if (fVar == null) {
                 synchronized (C7389v0.class) {
-                    if (f23329f == null) {
-                        f23329f = new C6815f<>();
+                    if (f23332f == null) {
+                        f23332f = new C6815f<>();
                     }
-                    fVar = f23329f;
+                    fVar = f23332f;
                 }
             }
-            float[] a = fVar.m18901a();
+            float[] a = fVar.m18902a();
             if ((a != null && a.length >= i) || !z) {
                 return a;
             }
             float[] fArr = new float[Math.max(i, 100)];
-            fVar.m18900b(fArr);
+            fVar.m18901b(fArr);
             return fArr;
         }
-        C6815f<float[]> fVar2 = f23328e;
+        C6815f<float[]> fVar2 = f23331e;
         if (fVar2 == null) {
             synchronized (C7389v0.class) {
-                if (f23328e == null) {
-                    f23328e = new C6815f<>();
+                if (f23331e == null) {
+                    f23331e = new C6815f<>();
                 }
-                fVar2 = f23328e;
+                fVar2 = f23331e;
             }
         }
-        float[] a2 = fVar2.m18901a();
+        float[] a2 = fVar2.m18902a();
         if (a2 != null || !z) {
             return a2;
         }
         float[] fArr2 = new float[3];
-        fVar2.m18900b(fArr2);
+        fVar2.m18901b(fArr2);
         return fArr2;
     }
 
@@ -2180,8 +2180,8 @@ public class C7389v0 {
     public static void m16583s2(File file, int i) {
         try {
             C5828a aVar = new C5828a(file);
-            aVar.m22032b0("Orientation", String.valueOf(i));
-            aVar.m22039W();
+            aVar.m22033b0("Orientation", String.valueOf(i));
+            aVar.m22040W();
         } catch (Throwable th) {
             Log.m14725e("Unable to update exif orientation for path: %s", th, file.getPath());
         }
@@ -2195,7 +2195,7 @@ public class C7389v0 {
         for (int i = 0; i < bArr.length; i++) {
             int i2 = bArr[i] & 255;
             int i3 = i * 2;
-            char[] cArr2 = f23327d;
+            char[] cArr2 = f23330d;
             cArr[i3] = cArr2[i2 >>> 4];
             cArr[i3 + 1] = cArr2[i2 & 15];
         }
@@ -2302,7 +2302,7 @@ public class C7389v0 {
     public static long m16574v(int i, long j) {
         long ceil = j <= 0 ? 10L : (long) Math.ceil(j / i);
         if (ceil <= 10) {
-            ceil = (long) Math.ceil(ceil * C1357a0.m37542h());
+            ceil = (long) Math.ceil(ceil * C1357a0.m37545h());
         }
         return Math.max(ValueAnimator.getFrameDelay(), ceil);
     }
@@ -2319,7 +2319,7 @@ public class C7389v0 {
 
     public static boolean m16572v1() {
         try {
-            ConnectivityManager connectivityManager = (ConnectivityManager) C1379j0.m37315n().getSystemService("connectivity");
+            ConnectivityManager connectivityManager = (ConnectivityManager) C1379j0.m37318n().getSystemService("connectivity");
             if (Build.VERSION.SDK_INT >= 28) {
                 return !connectivityManager.getNetworkCapabilities(connectivityManager.getActiveNetwork()).hasCapability(18);
             }
@@ -2349,10 +2349,10 @@ public class C7389v0 {
         ArrayList<String> arrayList = null;
         int i = 0;
         if (Build.VERSION.SDK_INT >= 19) {
-            for (File file : C1379j0.m37315n().getExternalFilesDirs(null)) {
+            for (File file : C1379j0.m37318n().getExternalFilesDirs(null)) {
                 String str2 = file.getPath().split("/Android")[0];
                 String a = C10330d.m5411a(file);
-                if (("mounted".equals(a) || "mounted_ro".equals(a)) && !C5070i.m24067c(str, str2)) {
+                if (("mounted".equals(a) || "mounted_ro".equals(a)) && !C5070i.m24068c(str, str2)) {
                     if (arrayList == null) {
                         arrayList = new ArrayList<>();
                     }
@@ -2377,7 +2377,7 @@ public class C7389v0 {
             if (!sb3.trim().isEmpty()) {
                 for (String str3 : sb3.split("\n")) {
                     String str4 = str3.split(" ")[2];
-                    if (!C5070i.m24067c(str, str4)) {
+                    if (!C5070i.m24068c(str, str4)) {
                         if (arrayList == null) {
                             arrayList = new ArrayList<>();
                         }
@@ -2409,34 +2409,34 @@ public class C7389v0 {
     }
 
     public static boolean m16568w1(float f) {
-        return C5069h.m24082k(f, 180.0f) == 90.0f;
+        return C5069h.m24083k(f, 180.0f) == 90.0f;
     }
 
     public static void m16567w2(RecyclerView.AbstractC0890h<?> hVar, int i) {
         int D = hVar.mo6153D();
         if (i == D) {
             if (i != 0) {
-                hVar.m39309L(0, D);
+                hVar.m39312L(0, D);
             }
         } else if (i == 0) {
-            hVar.m39308M(0, D);
+            hVar.m39311M(0, D);
         } else if (D == 0) {
-            hVar.m39307N(0, i);
+            hVar.m39310N(0, i);
         } else if (D > i) {
-            hVar.m39308M(i, D - i);
-            hVar.m39309L(0, i);
+            hVar.m39311M(i, D - i);
+            hVar.m39312L(0, i);
         } else {
-            hVar.m39307N(D, i - D);
-            hVar.m39309L(0, D);
+            hVar.m39310N(D, i - D);
+            hVar.m39312L(0, D);
         }
     }
 
     public static int m16566x(CharSequence charSequence, int i, float f) {
-        SoftReference<TextView> softReference = f23325b;
+        SoftReference<TextView> softReference = f23328b;
         TextView textView = softReference != null ? softReference.get() : null;
         if (textView == null) {
-            textView = new C6847b2(C1379j0.m37366E());
-            textView.setTypeface(C1389o.m37258k());
+            textView = new C6847b2(C1379j0.m37369E());
+            textView.setTypeface(C1389o.m37261k());
             textView.setPadding(0, 0, 0, 0);
         }
         textView.setText(charSequence);
@@ -2451,12 +2451,12 @@ public class C7389v0 {
     }
 
     public static boolean m16564x1(int i) {
-        return C5069h.m24081l(i, 180) == 90;
+        return C5069h.m24082l(i, 180) == 90;
     }
 
     public static void m16563x2(String[] strArr, final AbstractC5917i iVar) {
         AbstractView$OnTouchListenerC7889a E;
-        if (Build.VERSION.SDK_INT >= 23 && (E = C1379j0.m37366E()) != null) {
+        if (Build.VERSION.SDK_INT >= 23 && (E = C1379j0.m37369E()) != null) {
             E.m14575J2(strArr, new AbstractC5096a() {
                 @Override
                 public final void mo4252o1(int i, boolean z) {
@@ -2489,7 +2489,7 @@ public class C7389v0 {
     }
 
     public static boolean m16560y1(String str) {
-        if (C5070i.m24061i(str)) {
+        if (C5070i.m24062i(str)) {
             return false;
         }
         String lowerCase = str.toLowerCase();
@@ -2500,7 +2500,7 @@ public class C7389v0 {
         if (strArr == null || strArr.length == 0 || Build.VERSION.SDK_INT < 23 || !m16662Y1(strArr)) {
             return false;
         }
-        AbstractView$OnTouchListenerC7889a E = C1379j0.m37366E();
+        AbstractView$OnTouchListenerC7889a E = C1379j0.m37369E();
         if (E == null) {
             return true;
         }

@@ -18,7 +18,7 @@ import p012ab.C0244b;
 
 @Deprecated
 public class XiaomiHomeBadger implements AbstractC0243a {
-    public ResolveInfo f21959a;
+    public ResolveInfo f21962a;
 
     @Override
     public List<String> mo18371a() {
@@ -51,7 +51,7 @@ public class XiaomiHomeBadger implements AbstractC0243a {
             }
             intent.putExtra("android.intent.extra.update_application_message_text", String.valueOf(obj));
             try {
-                C1304a.m37782c(context, intent);
+                C1304a.m37785c(context, intent);
             } catch (C0244b unused3) {
             }
         }
@@ -62,14 +62,14 @@ public class XiaomiHomeBadger implements AbstractC0243a {
 
     @TargetApi(16)
     public final void m18372c(Context context, int i) {
-        if (this.f21959a == null) {
+        if (this.f21962a == null) {
             Intent intent = new Intent("android.intent.action.MAIN");
             intent.addCategory("android.intent.category.HOME");
-            this.f21959a = context.getPackageManager().resolveActivity(intent, Log.TAG_COMPRESS);
+            this.f21962a = context.getPackageManager().resolveActivity(intent, Log.TAG_COMPRESS);
         }
-        if (this.f21959a != null) {
+        if (this.f21962a != null) {
             NotificationManager notificationManager = (NotificationManager) context.getSystemService("notification");
-            Notification build = new Notification.Builder(context).setContentTitle("").setContentText("").setSmallIcon(this.f21959a.getIconResource()).build();
+            Notification build = new Notification.Builder(context).setContentTitle("").setContentText("").setSmallIcon(this.f21962a.getIconResource()).build();
             try {
                 Object obj = build.getClass().getDeclaredField("extraNotification").get(build);
                 obj.getClass().getDeclaredMethod("setMessageCount", Integer.TYPE).invoke(obj, Integer.valueOf(i));

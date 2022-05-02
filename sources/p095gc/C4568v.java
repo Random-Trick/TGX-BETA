@@ -30,29 +30,29 @@ public final class C4568v {
         this.f15007d = false;
     }
 
-    public final void m27324a() {
+    public final void m27326a() {
         C4568v vVar = this.f15010g;
         int i = 0;
         if (vVar != this) {
-            C8298k.m12936c(vVar);
+            C8298k.m12935c(vVar);
             if (vVar.f15008e) {
                 int i2 = this.f15006c - this.f15005b;
                 C4568v vVar2 = this.f15010g;
-                C8298k.m12936c(vVar2);
+                C8298k.m12935c(vVar2);
                 int i3 = 8192 - vVar2.f15006c;
                 C4568v vVar3 = this.f15010g;
-                C8298k.m12936c(vVar3);
+                C8298k.m12935c(vVar3);
                 if (!vVar3.f15007d) {
                     C4568v vVar4 = this.f15010g;
-                    C8298k.m12936c(vVar4);
+                    C8298k.m12935c(vVar4);
                     i = vVar4.f15005b;
                 }
                 if (i2 <= i3 + i) {
                     C4568v vVar5 = this.f15010g;
-                    C8298k.m12936c(vVar5);
-                    m27319f(vVar5, i2);
-                    m27323b();
-                    C4570w.m27317b(this);
+                    C8298k.m12935c(vVar5);
+                    m27321f(vVar5, i2);
+                    m27325b();
+                    C4570w.m27319b(this);
                     return;
                 }
                 return;
@@ -62,62 +62,62 @@ public final class C4568v {
         throw new IllegalStateException("cannot compact".toString());
     }
 
-    public final C4568v m27323b() {
+    public final C4568v m27325b() {
         C4568v vVar = this.f15009f;
         if (vVar == this) {
             vVar = null;
         }
         C4568v vVar2 = this.f15010g;
-        C8298k.m12936c(vVar2);
+        C8298k.m12935c(vVar2);
         vVar2.f15009f = this.f15009f;
         C4568v vVar3 = this.f15009f;
-        C8298k.m12936c(vVar3);
+        C8298k.m12935c(vVar3);
         vVar3.f15010g = this.f15010g;
         this.f15009f = null;
         this.f15010g = null;
         return vVar;
     }
 
-    public final C4568v m27322c(C4568v vVar) {
-        C8298k.m12934e(vVar, "segment");
+    public final C4568v m27324c(C4568v vVar) {
+        C8298k.m12933e(vVar, "segment");
         vVar.f15010g = this;
         vVar.f15009f = this.f15009f;
         C4568v vVar2 = this.f15009f;
-        C8298k.m12936c(vVar2);
+        C8298k.m12935c(vVar2);
         vVar2.f15010g = vVar;
         this.f15009f = vVar;
         return vVar;
     }
 
-    public final C4568v m27321d() {
+    public final C4568v m27323d() {
         this.f15007d = true;
         return new C4568v(this.f15004a, this.f15005b, this.f15006c, true, false);
     }
 
-    public final C4568v m27320e(int i) {
+    public final C4568v m27322e(int i) {
         C4568v vVar;
         if (i > 0 && i <= this.f15006c - this.f15005b) {
             if (i >= 1024) {
-                vVar = m27321d();
+                vVar = m27323d();
             } else {
-                vVar = C4570w.m27316c();
+                vVar = C4570w.m27318c();
                 byte[] bArr = this.f15004a;
                 byte[] bArr2 = vVar.f15004a;
                 int i2 = this.f15005b;
-                C5294h.m23430f(bArr, bArr2, 0, i2, i2 + i, 2, null);
+                C5294h.m23431f(bArr, bArr2, 0, i2, i2 + i, 2, null);
             }
             vVar.f15006c = vVar.f15005b + i;
             this.f15005b += i;
             C4568v vVar2 = this.f15010g;
-            C8298k.m12936c(vVar2);
-            vVar2.m27322c(vVar);
+            C8298k.m12935c(vVar2);
+            vVar2.m27324c(vVar);
             return vVar;
         }
         throw new IllegalArgumentException("byteCount out of range".toString());
     }
 
-    public final void m27319f(C4568v vVar, int i) {
-        C8298k.m12934e(vVar, "sink");
+    public final void m27321f(C4568v vVar, int i) {
+        C8298k.m12933e(vVar, "sink");
         if (vVar.f15008e) {
             int i2 = vVar.f15006c;
             if (i2 + i > 8192) {
@@ -125,7 +125,7 @@ public final class C4568v {
                     int i3 = vVar.f15005b;
                     if ((i2 + i) - i3 <= 8192) {
                         byte[] bArr = vVar.f15004a;
-                        C5294h.m23430f(bArr, bArr, 0, i3, i2, 2, null);
+                        C5294h.m23431f(bArr, bArr, 0, i3, i2, 2, null);
                         vVar.f15006c -= vVar.f15005b;
                         vVar.f15005b = 0;
                     } else {
@@ -139,7 +139,7 @@ public final class C4568v {
             byte[] bArr3 = vVar.f15004a;
             int i4 = vVar.f15006c;
             int i5 = this.f15005b;
-            C5294h.m23432d(bArr2, bArr3, i4, i5, i5 + i);
+            C5294h.m23433d(bArr2, bArr3, i4, i5, i5 + i);
             vVar.f15006c += i;
             this.f15005b += i;
             return;
@@ -148,7 +148,7 @@ public final class C4568v {
     }
 
     public C4568v(byte[] bArr, int i, int i2, boolean z, boolean z2) {
-        C8298k.m12934e(bArr, "data");
+        C8298k.m12933e(bArr, "data");
         this.f15004a = bArr;
         this.f15005b = i;
         this.f15006c = i2;

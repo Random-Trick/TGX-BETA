@@ -16,13 +16,13 @@ import p217p4.C8043h;
 import p343y6.C10428d;
 
 public final class C10095a extends AbstractC8039e {
-    public final C1189b0 f32786o = new C1189b0();
-    public final boolean f32787p;
-    public final int f32788q;
-    public final int f32789r;
-    public final String f32790s;
-    public final float f32791t;
-    public final int f32792u;
+    public final C1189b0 f32789o = new C1189b0();
+    public final boolean f32790p;
+    public final int f32791q;
+    public final int f32792r;
+    public final String f32793s;
+    public final float f32794t;
+    public final int f32795u;
 
     public C10095a(List<byte[]> list) {
         super("Tx3gDecoder");
@@ -30,25 +30,25 @@ public final class C10095a extends AbstractC8039e {
         boolean z = true;
         if (list.size() == 1 && (list.get(0).length == 48 || list.get(0).length == 53)) {
             byte[] bArr = list.get(0);
-            this.f32788q = bArr[24];
-            this.f32789r = ((bArr[26] & 255) << 24) | ((bArr[27] & 255) << 16) | ((bArr[28] & 255) << 8) | (bArr[29] & 255);
-            this.f32790s = "Serif".equals(C1216l0.m38019B(bArr, 43, bArr.length - 43)) ? "serif" : str;
+            this.f32791q = bArr[24];
+            this.f32792r = ((bArr[26] & 255) << 24) | ((bArr[27] & 255) << 16) | ((bArr[28] & 255) << 8) | (bArr[29] & 255);
+            this.f32793s = "Serif".equals(C1216l0.m38022B(bArr, 43, bArr.length - 43)) ? "serif" : str;
             int i = bArr[25] * 20;
-            this.f32792u = i;
+            this.f32795u = i;
             z = (bArr[0] & 32) == 0 ? false : z;
-            this.f32787p = z;
+            this.f32790p = z;
             if (z) {
-                this.f32791t = C1216l0.m37958o(((bArr[11] & 255) | ((bArr[10] & 255) << 8)) / i, 0.0f, 0.95f);
+                this.f32794t = C1216l0.m37961o(((bArr[11] & 255) | ((bArr[10] & 255) << 8)) / i, 0.0f, 0.95f);
             } else {
-                this.f32791t = 0.85f;
+                this.f32794t = 0.85f;
             }
         } else {
-            this.f32788q = 0;
-            this.f32789r = -1;
-            this.f32790s = str;
-            this.f32787p = false;
-            this.f32791t = 0.85f;
-            this.f32792u = -1;
+            this.f32791q = 0;
+            this.f32792r = -1;
+            this.f32793s = str;
+            this.f32790p = false;
+            this.f32794t = 0.85f;
+            this.f32795u = -1;
         }
     }
 
@@ -99,64 +99,64 @@ public final class C10095a extends AbstractC8039e {
 
     public static String m6027I(C1189b0 b0Var) {
         char g;
-        m6031E(b0Var.m38142a() >= 2);
-        int J = b0Var.m38150J();
+        m6031E(b0Var.m38145a() >= 2);
+        int J = b0Var.m38153J();
         if (J == 0) {
             return "";
         }
-        if (b0Var.m38142a() < 2 || ((g = b0Var.m38136g()) != 65279 && g != 65534)) {
-            return b0Var.m38158B(J, C10428d.f33498c);
+        if (b0Var.m38145a() < 2 || ((g = b0Var.m38139g()) != 65279 && g != 65534)) {
+            return b0Var.m38161B(J, C10428d.f33501c);
         }
-        return b0Var.m38158B(J, C10428d.f33501f);
+        return b0Var.m38161B(J, C10428d.f33504f);
     }
 
     @Override
     public AbstractC8041f mo5207B(byte[] bArr, int i, boolean z) {
-        this.f32786o.m38146N(bArr, i);
-        String I = m6027I(this.f32786o);
+        this.f32789o.m38149N(bArr, i);
+        String I = m6027I(this.f32789o);
         if (I.isEmpty()) {
-            return C10096b.f32793b;
+            return C10096b.f32796b;
         }
         SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(I);
-        m6029G(spannableStringBuilder, this.f32788q, 0, 0, spannableStringBuilder.length(), 16711680);
-        m6030F(spannableStringBuilder, this.f32789r, -1, 0, spannableStringBuilder.length(), 16711680);
-        m6028H(spannableStringBuilder, this.f32790s, 0, spannableStringBuilder.length());
-        float f = this.f32791t;
-        while (this.f32786o.m38142a() >= 8) {
-            int e = this.f32786o.m38138e();
-            int n = this.f32786o.m38129n();
-            int n2 = this.f32786o.m38129n();
+        m6029G(spannableStringBuilder, this.f32791q, 0, 0, spannableStringBuilder.length(), 16711680);
+        m6030F(spannableStringBuilder, this.f32792r, -1, 0, spannableStringBuilder.length(), 16711680);
+        m6028H(spannableStringBuilder, this.f32793s, 0, spannableStringBuilder.length());
+        float f = this.f32794t;
+        while (this.f32789o.m38145a() >= 8) {
+            int e = this.f32789o.m38141e();
+            int n = this.f32789o.m38132n();
+            int n2 = this.f32789o.m38132n();
             boolean z2 = true;
             if (n2 == 1937013100) {
-                if (this.f32786o.m38142a() < 2) {
+                if (this.f32789o.m38145a() < 2) {
                     z2 = false;
                 }
                 m6031E(z2);
-                int J = this.f32786o.m38150J();
+                int J = this.f32789o.m38153J();
                 for (int i2 = 0; i2 < J; i2++) {
-                    m6032D(this.f32786o, spannableStringBuilder);
+                    m6032D(this.f32789o, spannableStringBuilder);
                 }
-            } else if (n2 == 1952608120 && this.f32787p) {
-                if (this.f32786o.m38142a() < 2) {
+            } else if (n2 == 1952608120 && this.f32790p) {
+                if (this.f32789o.m38145a() < 2) {
                     z2 = false;
                 }
                 m6031E(z2);
-                f = C1216l0.m37958o(this.f32786o.m38150J() / this.f32792u, 0.0f, 0.95f);
+                f = C1216l0.m37961o(this.f32789o.m38153J() / this.f32795u, 0.0f, 0.95f);
             }
-            this.f32786o.m38144P(e + n);
+            this.f32789o.m38147P(e + n);
         }
-        return new C10096b(new C8032b.C8034b().m13743o(spannableStringBuilder).m13750h(f, 0).m13749i(0).m13757a());
+        return new C10096b(new C8032b.C8034b().m13742o(spannableStringBuilder).m13749h(f, 0).m13748i(0).m13756a());
     }
 
     public final void m6032D(C1189b0 b0Var, SpannableStringBuilder spannableStringBuilder) {
         int i;
-        m6031E(b0Var.m38142a() >= 12);
-        int J = b0Var.m38150J();
-        int J2 = b0Var.m38150J();
-        b0Var.m38143Q(2);
-        int D = b0Var.m38156D();
-        b0Var.m38143Q(1);
-        int n = b0Var.m38129n();
+        m6031E(b0Var.m38145a() >= 12);
+        int J = b0Var.m38153J();
+        int J2 = b0Var.m38153J();
+        b0Var.m38146Q(2);
+        int D = b0Var.m38159D();
+        b0Var.m38146Q(1);
+        int n = b0Var.m38132n();
         if (J2 > spannableStringBuilder.length()) {
             int length = spannableStringBuilder.length();
             StringBuilder sb2 = new StringBuilder(68);
@@ -165,7 +165,7 @@ public final class C10095a extends AbstractC8039e {
             sb2.append(") to cueText.length() (");
             sb2.append(length);
             sb2.append(").");
-            C1230s.m37881i("Tx3gDecoder", sb2.toString());
+            C1230s.m37884i("Tx3gDecoder", sb2.toString());
             i = spannableStringBuilder.length();
         } else {
             i = J2;
@@ -177,11 +177,11 @@ public final class C10095a extends AbstractC8039e {
             sb3.append(") >= end (");
             sb3.append(i);
             sb3.append(").");
-            C1230s.m37881i("Tx3gDecoder", sb3.toString());
+            C1230s.m37884i("Tx3gDecoder", sb3.toString());
             return;
         }
         int i2 = i;
-        m6029G(spannableStringBuilder, D, this.f32788q, J, i2, 0);
-        m6030F(spannableStringBuilder, n, this.f32789r, J, i2, 0);
+        m6029G(spannableStringBuilder, D, this.f32791q, J, i2, 0);
+        m6030F(spannableStringBuilder, n, this.f32792r, J, i2, 0);
     }
 }

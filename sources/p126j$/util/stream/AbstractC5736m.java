@@ -15,13 +15,13 @@ public abstract class AbstractC5736m {
         Collections.emptySet();
     }
 
-    public static double m22216a(double[] dArr) {
+    public static double m22217a(double[] dArr) {
         double d = dArr[0] + dArr[1];
         double d2 = dArr[dArr.length - 1];
         return (!Double.isNaN(d) || !Double.isInfinite(d2)) ? d : d2;
     }
 
-    public static double[] m22215b(double[] dArr, double d) {
+    public static double[] m22216b(double[] dArr, double d) {
         double d2 = d - dArr[1];
         double d3 = dArr[0];
         double d4 = d3 + d2;

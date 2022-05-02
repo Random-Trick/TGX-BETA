@@ -22,66 +22,66 @@ import za.C11451n;
 import za.C11452o;
 
 public final class C9122v implements Iterable<C5048h<? extends String, ? extends String>>, AbstractC8415a {
-    public static final C9124b f29332b = new C9124b(null);
-    public final String[] f29333a;
+    public static final C9124b f29335b = new C9124b(null);
+    public final String[] f29336a;
 
     public static final class C9123a {
-        public final List<String> f29334a = new ArrayList(20);
+        public final List<String> f29337a = new ArrayList(20);
 
-        public final C9123a m10368a(String str, String str2) {
-            C8298k.m12934e(str, "name");
-            C8298k.m12934e(str2, "value");
-            C9124b bVar = C9122v.f29332b;
-            bVar.m10358d(str);
-            bVar.m10357e(str2, str);
-            m10366c(str, str2);
+        public final C9123a m10367a(String str, String str2) {
+            C8298k.m12933e(str, "name");
+            C8298k.m12933e(str2, "value");
+            C9124b bVar = C9122v.f29335b;
+            bVar.m10357d(str);
+            bVar.m10356e(str2, str);
+            m10365c(str, str2);
             return this;
         }
 
-        public final C9123a m10367b(String str) {
-            C8298k.m12934e(str, "line");
+        public final C9123a m10366b(String str) {
+            C8298k.m12933e(str, "line");
             int M = C11452o.m608M(str, ':', 1, false, 4, null);
             if (M != -1) {
                 String substring = str.substring(0, M);
-                C8298k.m12935d(substring, "(this as java.lang.Strin…ing(startIndex, endIndex)");
+                C8298k.m12934d(substring, "(this as java.lang.Strin…ing(startIndex, endIndex)");
                 String substring2 = str.substring(M + 1);
-                C8298k.m12935d(substring2, "(this as java.lang.String).substring(startIndex)");
-                m10366c(substring, substring2);
+                C8298k.m12934d(substring2, "(this as java.lang.String).substring(startIndex)");
+                m10365c(substring, substring2);
             } else if (str.charAt(0) == ':') {
                 String substring3 = str.substring(1);
-                C8298k.m12935d(substring3, "(this as java.lang.String).substring(startIndex)");
-                m10366c("", substring3);
+                C8298k.m12934d(substring3, "(this as java.lang.String).substring(startIndex)");
+                m10365c("", substring3);
             } else {
-                m10366c("", str);
+                m10365c("", str);
             }
             return this;
         }
 
-        public final C9123a m10366c(String str, String str2) {
-            C8298k.m12934e(str, "name");
-            C8298k.m12934e(str2, "value");
-            this.f29334a.add(str);
-            this.f29334a.add(C11452o.m574u0(str2).toString());
+        public final C9123a m10365c(String str, String str2) {
+            C8298k.m12933e(str, "name");
+            C8298k.m12933e(str2, "value");
+            this.f29337a.add(str);
+            this.f29337a.add(C11452o.m574u0(str2).toString());
             return this;
         }
 
-        public final C9122v m10365d() {
-            Object[] array = this.f29334a.toArray(new String[0]);
+        public final C9122v m10364d() {
+            Object[] array = this.f29337a.toArray(new String[0]);
             Objects.requireNonNull(array, "null cannot be cast to non-null type kotlin.Array<T>");
             return new C9122v((String[]) array, null);
         }
 
-        public final List<String> m10364e() {
-            return this.f29334a;
+        public final List<String> m10363e() {
+            return this.f29337a;
         }
 
-        public final C9123a m10363f(String str) {
-            C8298k.m12934e(str, "name");
+        public final C9123a m10362f(String str) {
+            C8298k.m12933e(str, "name");
             int i = 0;
-            while (i < this.f29334a.size()) {
-                if (C11451n.m633l(str, this.f29334a.get(i), true)) {
-                    this.f29334a.remove(i);
-                    this.f29334a.remove(i);
+            while (i < this.f29337a.size()) {
+                if (C11451n.m633l(str, this.f29337a.get(i), true)) {
+                    this.f29337a.remove(i);
+                    this.f29337a.remove(i);
                     i -= 2;
                 }
                 i += 2;
@@ -89,14 +89,14 @@ public final class C9122v implements Iterable<C5048h<? extends String, ? extends
             return this;
         }
 
-        public final C9123a m10362g(String str, String str2) {
-            C8298k.m12934e(str, "name");
-            C8298k.m12934e(str2, "value");
-            C9124b bVar = C9122v.f29332b;
-            bVar.m10358d(str);
-            bVar.m10357e(str2, str);
-            m10363f(str);
-            m10366c(str, str2);
+        public final C9123a m10361g(String str, String str2) {
+            C8298k.m12933e(str, "name");
+            C8298k.m12933e(str2, "value");
+            C9124b bVar = C9122v.f29335b;
+            bVar.m10357d(str);
+            bVar.m10356e(str2, str);
+            m10362f(str);
+            m10365c(str, str2);
             return this;
         }
     }
@@ -105,7 +105,7 @@ public final class C9122v implements Iterable<C5048h<? extends String, ? extends
         public C9124b() {
         }
 
-        public final void m10358d(String str) {
+        public final void m10357d(String str) {
             if (str.length() > 0) {
                 int length = str.length();
                 for (int i = 0; i < length; i++) {
@@ -119,7 +119,7 @@ public final class C9122v implements Iterable<C5048h<? extends String, ? extends
             throw new IllegalArgumentException("name is empty".toString());
         }
 
-        public final void m10357e(String str, String str2) {
+        public final void m10356e(String str, String str2) {
             int length = str.length();
             for (int i = 0; i < length; i++) {
                 char charAt = str.charAt(i);
@@ -132,7 +132,7 @@ public final class C9122v implements Iterable<C5048h<? extends String, ? extends
             }
         }
 
-        public final String m10356f(String[] strArr, String str) {
+        public final String m10355f(String[] strArr, String str) {
             C10019e i = C10030l.m6188i(C10030l.m6189h(strArr.length - 2, 0), 2);
             int r = i.m6211r();
             int s = i.m6210s();
@@ -153,8 +153,8 @@ public final class C9122v implements Iterable<C5048h<? extends String, ? extends
             return strArr[r + 1];
         }
 
-        public final C9122v m10355g(String... strArr) {
-            C8298k.m12934e(strArr, "namesAndValues");
+        public final C9122v m10354g(String... strArr) {
+            C8298k.m12933e(strArr, "namesAndValues");
             if (strArr.length % 2 == 0) {
                 Object clone = strArr.clone();
                 Objects.requireNonNull(clone, "null cannot be cast to non-null type kotlin.Array<kotlin.String>");
@@ -169,7 +169,7 @@ public final class C9122v implements Iterable<C5048h<? extends String, ? extends
                         throw new IllegalArgumentException("Headers cannot be null".toString());
                     }
                 }
-                C10019e i2 = C10030l.m6188i(C5296i.m23389r(strArr2), 2);
+                C10019e i2 = C10030l.m6188i(C5296i.m23390r(strArr2), 2);
                 int r = i2.m6211r();
                 int s = i2.m6210s();
                 int t = i2.m6209t();
@@ -177,8 +177,8 @@ public final class C9122v implements Iterable<C5048h<? extends String, ? extends
                     while (true) {
                         String str2 = strArr2[r];
                         String str3 = strArr2[r + 1];
-                        m10358d(str2);
-                        m10357e(str3, str2);
+                        m10357d(str2);
+                        m10356e(str3, str2);
                         if (r == s) {
                             break;
                         }
@@ -196,24 +196,24 @@ public final class C9122v implements Iterable<C5048h<? extends String, ? extends
     }
 
     public C9122v(String[] strArr) {
-        this.f29333a = strArr;
+        this.f29336a = strArr;
     }
 
     public boolean equals(Object obj) {
-        return (obj instanceof C9122v) && Arrays.equals(this.f29333a, ((C9122v) obj).f29333a);
+        return (obj instanceof C9122v) && Arrays.equals(this.f29336a, ((C9122v) obj).f29336a);
     }
 
-    public final String m10373h(String str) {
-        C8298k.m12934e(str, "name");
-        return f29332b.m10356f(this.f29333a, str);
+    public final String m10372h(String str) {
+        C8298k.m12933e(str, "name");
+        return f29335b.m10355f(this.f29336a, str);
     }
 
     public int hashCode() {
-        return Arrays.hashCode(this.f29333a);
+        return Arrays.hashCode(this.f29336a);
     }
 
-    public final String m10372i(int i) {
-        return this.f29333a[i * 2];
+    public final String m10371i(int i) {
+        return this.f29336a[i * 2];
     }
 
     @Override
@@ -221,51 +221,51 @@ public final class C9122v implements Iterable<C5048h<? extends String, ? extends
         int size = size();
         C5048h[] hVarArr = new C5048h[size];
         for (int i = 0; i < size; i++) {
-            hVarArr[i] = C5054l.m24188a(m10372i(i), m10370r(i));
+            hVarArr[i] = C5054l.m24189a(m10371i(i), m10369r(i));
         }
-        return C8287b.m12950a(hVarArr);
+        return C8287b.m12949a(hVarArr);
     }
 
-    public final C9123a m10371m() {
+    public final C9123a m10370m() {
         C9123a aVar = new C9123a();
-        C5309s.m23353s(aVar.m10364e(), this.f29333a);
+        C5309s.m23354s(aVar.m10363e(), this.f29336a);
         return aVar;
     }
 
-    public final String m10370r(int i) {
-        return this.f29333a[(i * 2) + 1];
+    public final String m10369r(int i) {
+        return this.f29336a[(i * 2) + 1];
     }
 
-    public final List<String> m10369s(String str) {
-        C8298k.m12934e(str, "name");
+    public final List<String> m10368s(String str) {
+        C8298k.m12933e(str, "name");
         int size = size();
         ArrayList arrayList = null;
         for (int i = 0; i < size; i++) {
-            if (C11451n.m633l(str, m10372i(i), true)) {
+            if (C11451n.m633l(str, m10371i(i), true)) {
                 if (arrayList == null) {
                     arrayList = new ArrayList(2);
                 }
-                arrayList.add(m10370r(i));
+                arrayList.add(m10369r(i));
             }
         }
         if (arrayList == null) {
-            return C5304n.m23366f();
+            return C5304n.m23367f();
         }
         List<String> unmodifiableList = Collections.unmodifiableList(arrayList);
-        C8298k.m12935d(unmodifiableList, "Collections.unmodifiableList(result)");
+        C8298k.m12934d(unmodifiableList, "Collections.unmodifiableList(result)");
         return unmodifiableList;
     }
 
     public final int size() {
-        return this.f29333a.length / 2;
+        return this.f29336a.length / 2;
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
         int size = size();
         for (int i = 0; i < size; i++) {
-            String i2 = m10372i(i);
-            String r = m10370r(i);
+            String i2 = m10371i(i);
+            String r = m10369r(i);
             sb2.append(i2);
             sb2.append(": ");
             if (C9489b.m8541D(i2)) {
@@ -275,7 +275,7 @@ public final class C9122v implements Iterable<C5048h<? extends String, ? extends
             sb2.append("\n");
         }
         String sb3 = sb2.toString();
-        C8298k.m12935d(sb3, "StringBuilder().apply(builderAction).toString()");
+        C8298k.m12934d(sb3, "StringBuilder().apply(builderAction).toString()");
         return sb3;
     }
 

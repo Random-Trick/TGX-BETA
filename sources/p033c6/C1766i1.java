@@ -9,7 +9,7 @@ public final class C1766i1 extends AbstractC1923t1 {
     }
 
     @Override
-    public final Object mo35905a(Object obj) {
+    public final Object mo35908a(Object obj) {
         return ((Map.Entry) obj).getValue();
     }
 }

@@ -6,60 +6,60 @@ import qa.C8298k;
 import za.C11452o;
 
 public final class C9075d {
-    public final boolean f29082a;
-    public final boolean f29083b;
-    public final int f29084c;
-    public final int f29085d;
-    public final boolean f29086e;
-    public final boolean f29087f;
-    public final boolean f29088g;
-    public final int f29089h;
-    public final int f29090i;
-    public final boolean f29091j;
-    public final boolean f29092k;
-    public final boolean f29093l;
-    public String f29094m;
-    public static final C9077b f29081p = new C9077b(null);
-    public static final C9075d f29079n = new C9076a().m10532d().m10535a();
-    public static final C9075d f29080o = new C9076a().m10531e().m10533c(Integer.MAX_VALUE, TimeUnit.SECONDS).m10535a();
+    public final boolean f29085a;
+    public final boolean f29086b;
+    public final int f29087c;
+    public final int f29088d;
+    public final boolean f29089e;
+    public final boolean f29090f;
+    public final boolean f29091g;
+    public final int f29092h;
+    public final int f29093i;
+    public final boolean f29094j;
+    public final boolean f29095k;
+    public final boolean f29096l;
+    public String f29097m;
+    public static final C9077b f29084p = new C9077b(null);
+    public static final C9075d f29082n = new C9076a().m10531d().m10534a();
+    public static final C9075d f29083o = new C9076a().m10530e().m10532c(Integer.MAX_VALUE, TimeUnit.SECONDS).m10534a();
 
     public static final class C9076a {
-        public boolean f29095a;
-        public boolean f29096b;
-        public int f29097c = -1;
-        public int f29098d = -1;
-        public int f29099e = -1;
-        public boolean f29100f;
-        public boolean f29101g;
-        public boolean f29102h;
+        public boolean f29098a;
+        public boolean f29099b;
+        public int f29100c = -1;
+        public int f29101d = -1;
+        public int f29102e = -1;
+        public boolean f29103f;
+        public boolean f29104g;
+        public boolean f29105h;
 
-        public final C9075d m10535a() {
-            return new C9075d(this.f29095a, this.f29096b, this.f29097c, -1, false, false, false, this.f29098d, this.f29099e, this.f29100f, this.f29101g, this.f29102h, null, null);
+        public final C9075d m10534a() {
+            return new C9075d(this.f29098a, this.f29099b, this.f29100c, -1, false, false, false, this.f29101d, this.f29102e, this.f29103f, this.f29104g, this.f29105h, null, null);
         }
 
-        public final int m10534b(long j) {
+        public final int m10533b(long j) {
             if (j > Integer.MAX_VALUE) {
                 return Integer.MAX_VALUE;
             }
             return (int) j;
         }
 
-        public final C9076a m10533c(int i, TimeUnit timeUnit) {
-            C8298k.m12934e(timeUnit, "timeUnit");
+        public final C9076a m10532c(int i, TimeUnit timeUnit) {
+            C8298k.m12933e(timeUnit, "timeUnit");
             if (i >= 0) {
-                this.f29098d = m10534b(timeUnit.toSeconds(i));
+                this.f29101d = m10533b(timeUnit.toSeconds(i));
                 return this;
             }
             throw new IllegalArgumentException(("maxStale < 0: " + i).toString());
         }
 
-        public final C9076a m10532d() {
-            this.f29095a = true;
+        public final C9076a m10531d() {
+            this.f29098a = true;
             return this;
         }
 
-        public final C9076a m10531e() {
-            this.f29100f = true;
+        public final C9076a m10530e() {
+            this.f29103f = true;
             return this;
         }
     }
@@ -68,7 +68,7 @@ public final class C9075d {
         public C9077b() {
         }
 
-        public final int m10530a(String str, String str2, int i) {
+        public final int m10529a(String str, String str2, int i) {
             int length = str.length();
             while (i < length) {
                 if (C11452o.m619B(str2, str.charAt(i), false, 2, null)) {
@@ -79,8 +79,8 @@ public final class C9075d {
             return str.length();
         }
 
-        public final p278tb.C9075d m10529b(p278tb.C9122v r32) {
-            throw new UnsupportedOperationException("Method not decompiled: p278tb.C9075d.C9077b.m10529b(tb.v):tb.d");
+        public final p278tb.C9075d m10528b(p278tb.C9122v r32) {
+            throw new UnsupportedOperationException("Method not decompiled: p278tb.C9075d.C9077b.m10528b(tb.v):tb.d");
         }
 
         public C9077b(C8294g gVar) {
@@ -89,105 +89,105 @@ public final class C9075d {
     }
 
     public C9075d(boolean z, boolean z2, int i, int i2, boolean z3, boolean z4, boolean z5, int i3, int i4, boolean z6, boolean z7, boolean z8, String str) {
-        this.f29082a = z;
-        this.f29083b = z2;
-        this.f29084c = i;
-        this.f29085d = i2;
-        this.f29086e = z3;
-        this.f29087f = z4;
-        this.f29088g = z5;
-        this.f29089h = i3;
-        this.f29090i = i4;
-        this.f29091j = z6;
-        this.f29092k = z7;
-        this.f29093l = z8;
-        this.f29094m = str;
+        this.f29085a = z;
+        this.f29086b = z2;
+        this.f29087c = i;
+        this.f29088d = i2;
+        this.f29089e = z3;
+        this.f29090f = z4;
+        this.f29091g = z5;
+        this.f29092h = i3;
+        this.f29093i = i4;
+        this.f29094j = z6;
+        this.f29095k = z7;
+        this.f29096l = z8;
+        this.f29097m = str;
     }
 
-    public final boolean m10544a() {
-        return this.f29086e;
+    public final boolean m10543a() {
+        return this.f29089e;
     }
 
-    public final boolean m10543b() {
-        return this.f29087f;
+    public final boolean m10542b() {
+        return this.f29090f;
     }
 
-    public final int m10542c() {
-        return this.f29084c;
+    public final int m10541c() {
+        return this.f29087c;
     }
 
-    public final int m10541d() {
-        return this.f29089h;
+    public final int m10540d() {
+        return this.f29092h;
     }
 
-    public final int m10540e() {
-        return this.f29090i;
+    public final int m10539e() {
+        return this.f29093i;
     }
 
-    public final boolean m10539f() {
-        return this.f29088g;
+    public final boolean m10538f() {
+        return this.f29091g;
     }
 
-    public final boolean m10538g() {
-        return this.f29082a;
+    public final boolean m10537g() {
+        return this.f29085a;
     }
 
-    public final boolean m10537h() {
-        return this.f29083b;
+    public final boolean m10536h() {
+        return this.f29086b;
     }
 
-    public final boolean m10536i() {
-        return this.f29091j;
+    public final boolean m10535i() {
+        return this.f29094j;
     }
 
     public String toString() {
-        String str = this.f29094m;
+        String str = this.f29097m;
         if (str != null) {
             return str;
         }
         StringBuilder sb2 = new StringBuilder();
-        if (this.f29082a) {
+        if (this.f29085a) {
             sb2.append("no-cache, ");
         }
-        if (this.f29083b) {
+        if (this.f29086b) {
             sb2.append("no-store, ");
         }
-        if (this.f29084c != -1) {
+        if (this.f29087c != -1) {
             sb2.append("max-age=");
-            sb2.append(this.f29084c);
+            sb2.append(this.f29087c);
             sb2.append(", ");
         }
-        if (this.f29085d != -1) {
+        if (this.f29088d != -1) {
             sb2.append("s-maxage=");
-            sb2.append(this.f29085d);
+            sb2.append(this.f29088d);
             sb2.append(", ");
         }
-        if (this.f29086e) {
+        if (this.f29089e) {
             sb2.append("private, ");
         }
-        if (this.f29087f) {
+        if (this.f29090f) {
             sb2.append("public, ");
         }
-        if (this.f29088g) {
+        if (this.f29091g) {
             sb2.append("must-revalidate, ");
         }
-        if (this.f29089h != -1) {
+        if (this.f29092h != -1) {
             sb2.append("max-stale=");
-            sb2.append(this.f29089h);
+            sb2.append(this.f29092h);
             sb2.append(", ");
         }
-        if (this.f29090i != -1) {
+        if (this.f29093i != -1) {
             sb2.append("min-fresh=");
-            sb2.append(this.f29090i);
+            sb2.append(this.f29093i);
             sb2.append(", ");
         }
-        if (this.f29091j) {
+        if (this.f29094j) {
             sb2.append("only-if-cached, ");
         }
-        if (this.f29092k) {
+        if (this.f29095k) {
             sb2.append("no-transform, ");
         }
-        if (this.f29093l) {
+        if (this.f29096l) {
             sb2.append("immutable, ");
         }
         if (sb2.length() == 0) {
@@ -195,8 +195,8 @@ public final class C9075d {
         }
         sb2.delete(sb2.length() - 2, sb2.length());
         String sb3 = sb2.toString();
-        C8298k.m12935d(sb3, "StringBuilder().apply(builderAction).toString()");
-        this.f29094m = sb3;
+        C8298k.m12934d(sb3, "StringBuilder().apply(builderAction).toString()");
+        this.f29097m = sb3;
         return sb3;
     }
 

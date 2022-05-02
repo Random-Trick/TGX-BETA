@@ -26,14 +26,14 @@ public interface Comparator<T> {
     java.util.Comparator<T> thenComparingLong(ToLongFunction<? super T> toLongFunction);
 
     public final class CC<T> {
-        public static java.util.Comparator m22610a() {
+        public static java.util.Comparator m22611a() {
             return EnumC5517e.INSTANCE;
         }
 
         public static java.util.Comparator $default$thenComparing(java.util.Comparator comparator, Function function, java.util.Comparator comparator2) {
             Objects.requireNonNull(function);
             Objects.requireNonNull(comparator2);
-            return AbstractC5485a.m22574L(comparator, new C5487c(comparator2, function, 1));
+            return AbstractC5485a.m22575L(comparator, new C5487c(comparator2, function, 1));
         }
 
         public static java.util.Comparator $default$thenComparing(java.util.Comparator comparator, java.util.Comparator comparator2) {

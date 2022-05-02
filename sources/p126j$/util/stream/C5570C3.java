@@ -16,7 +16,7 @@ public final class C5570C3 extends AbstractC5575D3 implements AbstractC5468G {
     }
 
     @Override
-    public boolean mo22124a(Consumer consumer) {
+    public boolean mo22125a(Consumer consumer) {
         long j;
         Objects.requireNonNull(consumer);
         if (this.f18126a >= this.f18130e) {
@@ -28,18 +28,18 @@ public final class C5570C3 extends AbstractC5575D3 implements AbstractC5468G {
             if (j2 <= j) {
                 break;
             }
-            this.f18128c.mo22124a(C5731l.f18424j);
+            this.f18128c.mo22125a(C5731l.f18424j);
             this.f18129d++;
         }
         if (j >= this.f18130e) {
             return false;
         }
         this.f18129d = j + 1;
-        return this.f18128c.mo22124a(consumer);
+        return this.f18128c.mo22125a(consumer);
     }
 
     @Override
-    protected AbstractC5468G mo22138b(AbstractC5468G g, long j, long j2, long j3, long j4) {
+    protected AbstractC5468G mo22139b(AbstractC5468G g, long j, long j2, long j3, long j4) {
         return new C5570C3(g, j, j2, j3, j4);
     }
 
@@ -53,11 +53,11 @@ public final class C5570C3 extends AbstractC5575D3 implements AbstractC5468G {
             if (j3 < j2) {
                 if (j3 < j || this.f18128c.estimateSize() + j3 > this.f18127b) {
                     while (this.f18126a > this.f18129d) {
-                        this.f18128c.mo22124a(C5726k.f18409n);
+                        this.f18128c.mo22125a(C5726k.f18409n);
                         this.f18129d++;
                     }
                     while (this.f18129d < this.f18130e) {
-                        this.f18128c.mo22124a(consumer);
+                        this.f18128c.mo22125a(consumer);
                         this.f18129d++;
                     }
                     return;
@@ -75,11 +75,11 @@ public final class C5570C3 extends AbstractC5575D3 implements AbstractC5468G {
 
     @Override
     public long getExactSizeIfKnown() {
-        return AbstractC5485a.m22569h(this);
+        return AbstractC5485a.m22570h(this);
     }
 
     @Override
     public boolean hasCharacteristics(int i) {
-        return AbstractC5485a.m22568j(this, i);
+        return AbstractC5485a.m22569j(this, i);
     }
 }

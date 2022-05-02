@@ -10,42 +10,42 @@ import p262s6.C8646a;
 import p262s6.C8686v;
 
 public final class C7790z2 {
-    public static final C8646a f24967c = new C8646a("PatchSliceTaskHandler");
-    public final C7688f0 f24968a;
-    public final AbstractC8689y f24969b;
+    public static final C8646a f24970c = new C8646a("PatchSliceTaskHandler");
+    public final C7688f0 f24971a;
+    public final AbstractC8689y f24972b;
 
     public C7790z2(C7688f0 f0Var, AbstractC8689y yVar) {
-        this.f24968a = f0Var;
-        this.f24969b = yVar;
+        this.f24971a = f0Var;
+        this.f24972b = yVar;
     }
 
     public final void m15081a(C7785y2 y2Var) {
-        File u = this.f24968a.m15231u(y2Var.f24579b, y2Var.f24910c, y2Var.f24911d);
-        File file = new File(this.f24968a.m15230v(y2Var.f24579b, y2Var.f24910c, y2Var.f24911d), y2Var.f24915h);
+        File u = this.f24971a.m15231u(y2Var.f24582b, y2Var.f24913c, y2Var.f24914d);
+        File file = new File(this.f24971a.m15230v(y2Var.f24582b, y2Var.f24913c, y2Var.f24914d), y2Var.f24918h);
         try {
-            InputStream inputStream = y2Var.f24917j;
-            if (y2Var.f24914g == 2) {
+            InputStream inputStream = y2Var.f24920j;
+            if (y2Var.f24917g == 2) {
                 inputStream = new GZIPInputStream(inputStream, Log.TAG_LUX);
             }
             C7703i0 i0Var = new C7703i0(u, file);
-            File C = this.f24968a.m15259C(y2Var.f24579b, y2Var.f24912e, y2Var.f24913f, y2Var.f24915h);
+            File C = this.f24971a.m15259C(y2Var.f24582b, y2Var.f24915e, y2Var.f24916f, y2Var.f24918h);
             if (!C.exists()) {
                 C.mkdirs();
             }
-            C7696g3 g3Var = new C7696g3(this.f24968a, y2Var.f24579b, y2Var.f24912e, y2Var.f24913f, y2Var.f24915h);
-            C8686v.m11738a(i0Var, inputStream, new C7709j1(C, g3Var), y2Var.f24916i);
+            C7696g3 g3Var = new C7696g3(this.f24971a, y2Var.f24582b, y2Var.f24915e, y2Var.f24916f, y2Var.f24918h);
+            C8686v.m11737a(i0Var, inputStream, new C7709j1(C, g3Var), y2Var.f24919i);
             g3Var.m15217i(0);
             inputStream.close();
-            f24967c.m11815d("Patching and extraction finished for slice %s of pack %s.", y2Var.f24915h, y2Var.f24579b);
-            ((AbstractC7680d4) this.f24969b.zza()).mo15139c(y2Var.f24578a, y2Var.f24579b, y2Var.f24915h, 0);
+            f24970c.m11814d("Patching and extraction finished for slice %s of pack %s.", y2Var.f24918h, y2Var.f24582b);
+            ((AbstractC7680d4) this.f24972b.zza()).mo15139c(y2Var.f24581a, y2Var.f24582b, y2Var.f24918h, 0);
             try {
-                y2Var.f24917j.close();
+                y2Var.f24920j.close();
             } catch (IOException unused) {
-                f24967c.m11814e("Could not close file for slice %s of pack %s.", y2Var.f24915h, y2Var.f24579b);
+                f24970c.m11813e("Could not close file for slice %s of pack %s.", y2Var.f24918h, y2Var.f24582b);
             }
         } catch (IOException e) {
-            f24967c.m11817b("IOException during patching %s.", e.getMessage());
-            throw new C7694g1(String.format("Error patching slice %s of pack %s.", y2Var.f24915h, y2Var.f24579b), e, y2Var.f24578a);
+            f24970c.m11816b("IOException during patching %s.", e.getMessage());
+            throw new C7694g1(String.format("Error patching slice %s of pack %s.", y2Var.f24918h, y2Var.f24582b), e, y2Var.f24581a);
         }
     }
 }

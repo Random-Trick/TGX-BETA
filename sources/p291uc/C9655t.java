@@ -7,20 +7,20 @@ import be.C1357a0;
 import be.C1410y;
 
 public class C9655t extends Drawable {
-    public static final int[] f31360b = {-1, -2758925, -13805707, -13657655};
-    public byte[] f31361a;
+    public static final int[] f31363b = {-1, -2758925, -13805707, -13657655};
+    public byte[] f31364a;
 
     public C9655t(byte[] bArr) {
-        this.f31361a = bArr;
+        this.f31364a = bArr;
     }
 
     public final int m7849a(int i) {
-        return (this.f31361a[i / 8] >> (i % 8)) & 3;
+        return (this.f31364a[i / 8] >> (i % 8)) & 3;
     }
 
     @Override
     public void draw(Canvas canvas) {
-        byte[] bArr = this.f31361a;
+        byte[] bArr = this.f31364a;
         if (bArr != null) {
             if (bArr.length == 16) {
                 float floor = (float) Math.floor(Math.min(getBounds().width(), getBounds().height()) / 8.0f);
@@ -33,10 +33,10 @@ public class C9655t extends Drawable {
                         int a = m7849a(i);
                         i += 2;
                         int abs = Math.abs(a);
-                        int[] iArr = f31360b;
+                        int[] iArr = f31363b;
                         float f2 = max + (i3 * floor);
                         float f3 = i2 * floor;
-                        canvas.drawRect(f2, f3 + max2, f2 + floor, f3 + floor + max2, C1410y.m37039g(iArr[abs % iArr.length]));
+                        canvas.drawRect(f2, f3 + max2, f2 + floor, f3 + floor + max2, C1410y.m37042g(iArr[abs % iArr.length]));
                     }
                 }
                 return;
@@ -49,10 +49,10 @@ public class C9655t extends Drawable {
             for (int i5 = 0; i5 < 12; i5++) {
                 for (int i6 = 0; i6 < 12; i6++) {
                     int abs2 = Math.abs(m7849a(i4));
-                    int[] iArr2 = f31360b;
+                    int[] iArr2 = f31363b;
                     float f5 = max3 + (i6 * floor2);
                     float f6 = i5 * floor2;
-                    canvas.drawRect(f5, f6 + max4, f5 + floor2, f6 + floor2 + max4, C1410y.m37039g(iArr2[abs2 % iArr2.length]));
+                    canvas.drawRect(f5, f6 + max4, f5 + floor2, f6 + floor2 + max4, C1410y.m37042g(iArr2[abs2 % iArr2.length]));
                     i4 += 2;
                 }
             }
@@ -61,12 +61,12 @@ public class C9655t extends Drawable {
 
     @Override
     public int getIntrinsicHeight() {
-        return C1357a0.m37541i(32.0f);
+        return C1357a0.m37544i(32.0f);
     }
 
     @Override
     public int getIntrinsicWidth() {
-        return C1357a0.m37541i(32.0f);
+        return C1357a0.m37544i(32.0f);
     }
 
     @Override

@@ -7,14 +7,14 @@ import p039d.C3563j;
 import p108hb.C5070i;
 
 public class C1369e0 {
-    public static String m37398a(String str) {
-        if (C5070i.m24061i(str)) {
+    public static String m37401a(String str) {
+        if (C5070i.m24062i(str)) {
             return null;
         }
         TdApi.Object e = Client.m14793e(new TdApi.GetFileExtension(str));
         if (e != null && e.getConstructor() == 578181272) {
             TdApi.Text text = (TdApi.Text) e;
-            if (!C5070i.m24061i(text.text)) {
+            if (!C5070i.m24062i(text.text)) {
                 return text.text;
             }
         }
@@ -27,16 +27,16 @@ public class C1369e0 {
         return null;
     }
 
-    public static boolean m37397b(String str) {
-        if (C5070i.m24061i(str)) {
+    public static boolean m37400b(String str) {
+        if (C5070i.m24062i(str)) {
             return false;
         }
         str.hashCode();
         return str.equals("audio/mpeg");
     }
 
-    public static boolean m37396c(String str) {
-        if (C5070i.m24061i(str) || !str.startsWith("image/")) {
+    public static boolean m37399c(String str) {
+        if (C5070i.m24062i(str) || !str.startsWith("image/")) {
             return false;
         }
         char c = 65535;
@@ -84,8 +84,8 @@ public class C1369e0 {
         }
     }
 
-    public static boolean m37395d(String str) {
-        if (C5070i.m24061i(str)) {
+    public static boolean m37398d(String str) {
+        if (C5070i.m24062i(str)) {
             return false;
         }
         str.hashCode();
@@ -414,8 +414,8 @@ public class C1369e0 {
         }
     }
 
-    public static boolean m37394e(String str) {
-        if (C5070i.m24061i(str)) {
+    public static boolean m37397e(String str) {
+        if (C5070i.m24062i(str)) {
             return false;
         }
         str.hashCode();
@@ -758,8 +758,8 @@ public class C1369e0 {
         }
     }
 
-    public static boolean m37393f(String str) {
-        if (C5070i.m24061i(str) || (!str.startsWith("video/") && !str.startsWith("application/"))) {
+    public static boolean m37396f(String str) {
+        if (C5070i.m24062i(str) || (!str.startsWith("video/") && !str.startsWith("application/"))) {
             return false;
         }
         char c = 65535;
@@ -793,8 +793,8 @@ public class C1369e0 {
         }
     }
 
-    public static String m37392g(String str) {
-        if (C5070i.m24061i(str)) {
+    public static String m37395g(String str) {
+        if (C5070i.m24062i(str)) {
             return null;
         }
         if ("tgx-theme".equals(str)) {
@@ -803,7 +803,7 @@ public class C1369e0 {
         TdApi.Object e = Client.m14793e(new TdApi.GetFileMimeType("file." + str));
         if (e != null && e.getConstructor() == 578181272) {
             TdApi.Text text = (TdApi.Text) e;
-            if (!C5070i.m24061i(text.text)) {
+            if (!C5070i.m24062i(text.text)) {
                 return text.text;
             }
         }

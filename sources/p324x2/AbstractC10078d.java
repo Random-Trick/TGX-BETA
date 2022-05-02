@@ -1,15 +1,15 @@
 package p324x2;
 
 public abstract class AbstractC10078d {
-    public boolean f32744a;
-    public int f32745b;
-    public long f32746c;
-    public long f32747d;
-    public int f32748e;
-    public int f32749f;
-    public int f32750g;
-    public int f32751h;
-    public int f32752i;
+    public boolean f32747a;
+    public int f32748b;
+    public long f32749c;
+    public long f32750d;
+    public int f32751e;
+    public int f32752f;
+    public int f32753g;
+    public int f32754h;
+    public int f32755i;
 
     public abstract AbstractC10077c mo6069a(long j, int i);
 

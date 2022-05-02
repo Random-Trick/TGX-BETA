@@ -14,24 +14,24 @@ public class C5089j extends InputConnectionWrapper {
         this.f17123a = textView;
     }
 
-    public static boolean m23969b(InputConnection inputConnection, Editable editable, int i, int i2, boolean z) {
+    public static boolean m23970b(InputConnection inputConnection, Editable editable, int i, int i2, boolean z) {
         if (Build.VERSION.SDK_INT >= 19) {
-            return C5092m.m23964a(inputConnection, editable, i, i2, z);
+            return C5092m.m23965a(inputConnection, editable, i, i2, z);
         }
         return false;
     }
 
-    public final Editable m23970a() {
+    public final Editable m23971a() {
         return this.f17123a.getEditableText();
     }
 
     @Override
     public boolean deleteSurroundingText(int i, int i2) {
-        return m23969b(this, m23970a(), i, i2, false) || super.deleteSurroundingText(i, i2);
+        return m23970b(this, m23971a(), i, i2, false) || super.deleteSurroundingText(i, i2);
     }
 
     @Override
     public boolean deleteSurroundingTextInCodePoints(int i, int i2) {
-        return m23969b(this, m23970a(), i, i2, true) || super.deleteSurroundingTextInCodePoints(i, i2);
+        return m23970b(this, m23971a(), i, i2, true) || super.deleteSurroundingTextInCodePoints(i, i2);
     }
 }

@@ -8,27 +8,27 @@ import p176m5.C6750b;
 public final class C11302j0 implements Parcelable.Creator<C11300i0> {
     @Override
     public final C11300i0 createFromParcel(Parcel parcel) {
-        int x = C6750b.m19127x(parcel);
+        int x = C6750b.m19128x(parcel);
         C11296g0 g0Var = null;
         IBinder iBinder = null;
         IBinder iBinder2 = null;
         int i = 1;
         while (parcel.dataPosition() < x) {
-            int q = C6750b.m19134q(parcel);
-            int k = C6750b.m19140k(q);
+            int q = C6750b.m19135q(parcel);
+            int k = C6750b.m19141k(q);
             if (k == 1) {
-                i = C6750b.m19132s(parcel, q);
+                i = C6750b.m19133s(parcel, q);
             } else if (k == 2) {
-                g0Var = (C11296g0) C6750b.m19147d(parcel, q, C11296g0.CREATOR);
+                g0Var = (C11296g0) C6750b.m19148d(parcel, q, C11296g0.CREATOR);
             } else if (k == 3) {
-                iBinder = C6750b.m19133r(parcel, q);
+                iBinder = C6750b.m19134r(parcel, q);
             } else if (k != 4) {
-                C6750b.m19128w(parcel, q);
+                C6750b.m19129w(parcel, q);
             } else {
-                iBinder2 = C6750b.m19133r(parcel, q);
+                iBinder2 = C6750b.m19134r(parcel, q);
             }
         }
-        C6750b.m19141j(parcel, x);
+        C6750b.m19142j(parcel, x);
         return new C11300i0(i, g0Var, iBinder, iBinder2);
     }
 

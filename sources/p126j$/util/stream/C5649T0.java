@@ -15,8 +15,8 @@ final class C5649T0 implements AbstractC5632P0 {
     }
 
     @Override
-    public void mo22176a(Consumer consumer) {
-        AbstractC5485a.m22584B(this.f18241a, consumer);
+    public void mo22177a(Consumer consumer) {
+        AbstractC5485a.m22585B(this.f18241a, consumer);
     }
 
     @Override
@@ -25,12 +25,12 @@ final class C5649T0 implements AbstractC5632P0 {
     }
 
     @Override
-    public AbstractC5632P0 mo22158f(int i) {
+    public AbstractC5632P0 mo22159f(int i) {
         throw new IndexOutOfBoundsException();
     }
 
     @Override
-    public void mo22154n(Object[] objArr, int i) {
+    public void mo22155n(Object[] objArr, int i) {
         for (Object obj : this.f18241a) {
             i++;
             objArr[i] = obj;
@@ -38,25 +38,25 @@ final class C5649T0 implements AbstractC5632P0 {
     }
 
     @Override
-    public int mo22153o() {
+    public int mo22154o() {
         return 0;
     }
 
     @Override
-    public Object[] mo22152p(AbstractC5531m mVar) {
+    public Object[] mo22153p(AbstractC5531m mVar) {
         Collection collection = this.f18241a;
-        return collection.toArray((Object[]) mVar.mo22178w(collection.size()));
+        return collection.toArray((Object[]) mVar.mo22179w(collection.size()));
     }
 
     @Override
-    public AbstractC5632P0 mo22151q(long j, long j2, AbstractC5531m mVar) {
-        return AbstractC5572D0.m22398y(this, j, j2, mVar);
+    public AbstractC5632P0 mo22152q(long j, long j2, AbstractC5531m mVar) {
+        return AbstractC5572D0.m22399y(this, j, j2, mVar);
     }
 
     @Override
-    public AbstractC5468G mo42629spliterator() {
+    public AbstractC5468G mo42632spliterator() {
         Collection collection = this.f18241a;
-        return ((AbstractC5686c) (collection instanceof AbstractC5486b ? ((AbstractC5486b) collection).stream() : AbstractC5485a.m22565p(collection))).spliterator();
+        return ((AbstractC5686c) (collection instanceof AbstractC5486b ? ((AbstractC5486b) collection).stream() : AbstractC5485a.m22566p(collection))).spliterator();
     }
 
     public String toString() {

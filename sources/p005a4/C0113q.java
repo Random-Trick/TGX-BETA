@@ -23,29 +23,29 @@ public final class C0113q {
     public boolean[] f445m = new boolean[0];
     public final C1189b0 f447o = new C1189b0();
 
-    public void m42265a(C1189b0 b0Var) {
-        b0Var.m38133j(this.f447o.m38139d(), 0, this.f447o.m38137f());
-        this.f447o.m38144P(0);
+    public void m42268a(C1189b0 b0Var) {
+        b0Var.m38136j(this.f447o.m38142d(), 0, this.f447o.m38140f());
+        this.f447o.m38147P(0);
         this.f448p = false;
     }
 
-    public void m42264b(AbstractC8959g gVar) {
-        gVar.readFully(this.f447o.m38139d(), 0, this.f447o.m38137f());
-        this.f447o.m38144P(0);
+    public void m42267b(AbstractC8959g gVar) {
+        gVar.readFully(this.f447o.m38142d(), 0, this.f447o.m38140f());
+        this.f447o.m38147P(0);
         this.f448p = false;
     }
 
-    public long m42263c(int i) {
+    public long m42266c(int i) {
         return this.f442j[i];
     }
 
-    public void m42262d(int i) {
-        this.f447o.m38148L(i);
+    public void m42265d(int i) {
+        this.f447o.m38151L(i);
         this.f444l = true;
         this.f448p = true;
     }
 
-    public void m42261e(int i, int i2) {
+    public void m42264e(int i, int i2) {
         this.f437e = i;
         this.f438f = i2;
         if (this.f440h.length < i) {
@@ -61,7 +61,7 @@ public final class C0113q {
         }
     }
 
-    public void m42260f() {
+    public void m42263f() {
         this.f437e = 0;
         this.f449q = 0L;
         this.f450r = false;
@@ -70,7 +70,7 @@ public final class C0113q {
         this.f446n = null;
     }
 
-    public boolean m42259g(int i) {
+    public boolean m42262g(int i) {
         return this.f444l && this.f445m[i];
     }
 }

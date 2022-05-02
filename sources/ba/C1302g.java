@@ -22,7 +22,7 @@ public class C1302g extends C1298c {
 
     @Override
     public long mo6292c(long j) {
-        return m37788a().mo6292c(this.f4698b + j) - this.f4698b;
+        return m37791a().mo6292c(this.f4698b + j) - this.f4698b;
     }
 
     @Override
@@ -33,7 +33,7 @@ public class C1302g extends C1298c {
     @Override
     public void mo6290e() {
         super.mo6290e();
-        long d = m37788a().mo6291d();
+        long d = m37791a().mo6291d();
         if (this.f4698b + this.f4699c < d) {
             C10007i iVar = f4697g;
             iVar.m6267c("initialize(): duration=" + d + " trimStart=" + this.f4698b + " trimEnd=" + this.f4699c + " trimDuration=" + ((d - this.f4698b) - this.f4699c));
@@ -60,7 +60,7 @@ public class C1302g extends C1298c {
         if (!this.f4702f) {
             long j = this.f4698b;
             if (j > 0) {
-                this.f4700d = j - m37788a().mo6292c(this.f4698b);
+                this.f4700d = j - m37791a().mo6292c(this.f4698b);
                 C10007i iVar = f4697g;
                 iVar.m6267c("canReadTrack(): extraDurationUs=" + this.f4700d + " trimStartUs=" + this.f4698b + " source.seekTo(trimStartUs)=" + (this.f4700d - this.f4698b));
                 this.f4702f = true;

@@ -23,19 +23,19 @@ public abstract class AbstractC5277b<E> extends AbstractC5274a<E> implements Lis
             this();
         }
 
-        public final void m23465a(int i, int i2) {
+        public final void m23466a(int i, int i2) {
             if (i < 0 || i >= i2) {
                 throw new IndexOutOfBoundsException("index: " + i + ", size: " + i2);
             }
         }
 
-        public final void m23464b(int i, int i2) {
+        public final void m23465b(int i, int i2) {
             if (i < 0 || i > i2) {
                 throw new IndexOutOfBoundsException("index: " + i + ", size: " + i2);
             }
         }
 
-        public final void m23463c(int i, int i2, int i3) {
+        public final void m23464c(int i, int i2, int i3) {
             if (i < 0 || i2 > i3) {
                 throw new IndexOutOfBoundsException("fromIndex: " + i + ", toIndex: " + i2 + ", size: " + i3);
             } else if (i > i2) {
@@ -43,24 +43,24 @@ public abstract class AbstractC5277b<E> extends AbstractC5274a<E> implements Lis
             }
         }
 
-        public final boolean m23462d(Collection<?> collection, Collection<?> collection2) {
-            C8298k.m12934e(collection, "c");
-            C8298k.m12934e(collection2, "other");
+        public final boolean m23463d(Collection<?> collection, Collection<?> collection2) {
+            C8298k.m12933e(collection, "c");
+            C8298k.m12933e(collection2, "other");
             if (collection.size() != collection2.size()) {
                 return false;
             }
             Iterator<?> it = collection2.iterator();
             Iterator<?> it2 = collection.iterator();
             while (it2.hasNext()) {
-                if (!C8298k.m12937b(it2.next(), it.next())) {
+                if (!C8298k.m12936b(it2.next(), it.next())) {
                     return false;
                 }
             }
             return true;
         }
 
-        public final int m23461e(Collection<?> collection) {
-            C8298k.m12934e(collection, "c");
+        public final int m23462e(Collection<?> collection) {
+            C8298k.m12933e(collection, "c");
             Iterator<?> it = collection.iterator();
             int i = 1;
             while (it.hasNext()) {
@@ -76,11 +76,11 @@ public abstract class AbstractC5277b<E> extends AbstractC5274a<E> implements Lis
         public final AbstractC5277b<E> f17471b;
 
         public C5279b(AbstractC5277b bVar) {
-            C8298k.m12934e(bVar, "this$0");
+            C8298k.m12933e(bVar, "this$0");
             this.f17471b = bVar;
         }
 
-        public final int m23460e() {
+        public final int m23461e() {
             return this.f17470a;
         }
 
@@ -94,7 +94,7 @@ public abstract class AbstractC5277b<E> extends AbstractC5274a<E> implements Lis
             forEachRemaining(Consumer.VivifiedWrapper.convert(consumer));
         }
 
-        public final void m23459h(int i) {
+        public final void m23460h(int i) {
             this.f17470a = i;
         }
 
@@ -125,10 +125,10 @@ public abstract class AbstractC5277b<E> extends AbstractC5274a<E> implements Lis
 
         public C5280c(AbstractC5277b bVar, int i) {
             super(bVar);
-            C8298k.m12934e(bVar, "this$0");
+            C8298k.m12933e(bVar, "this$0");
             this.f17472c = bVar;
-            AbstractC5277b.f17469a.m23464b(i, bVar.size());
-            m23459h(i);
+            AbstractC5277b.f17469a.m23465b(i, bVar.size());
+            m23460h(i);
         }
 
         @Override
@@ -138,27 +138,27 @@ public abstract class AbstractC5277b<E> extends AbstractC5274a<E> implements Lis
 
         @Override
         public boolean hasPrevious() {
-            return m23460e() > 0;
+            return m23461e() > 0;
         }
 
         @Override
         public int nextIndex() {
-            return m23460e();
+            return m23461e();
         }
 
         @Override
         public E previous() {
             if (hasPrevious()) {
                 AbstractC5277b<E> bVar = this.f17472c;
-                m23459h(m23460e() - 1);
-                return bVar.get(m23460e());
+                m23460h(m23461e() - 1);
+                return bVar.get(m23461e());
             }
             throw new NoSuchElementException();
         }
 
         @Override
         public int previousIndex() {
-            return m23460e() - 1;
+            return m23461e() - 1;
         }
 
         @Override
@@ -173,16 +173,16 @@ public abstract class AbstractC5277b<E> extends AbstractC5274a<E> implements Lis
         public final int f17475c;
 
         public C5281d(AbstractC5277b<? extends E> bVar, int i, int i2) {
-            C8298k.m12934e(bVar, "list");
+            C8298k.m12933e(bVar, "list");
             this.f17474b = bVar;
             this.f17475c = i;
-            AbstractC5277b.f17469a.m23463c(i, i2, bVar.size());
+            AbstractC5277b.f17469a.m23464c(i, i2, bVar.size());
             this.f17473M = i2 - i;
         }
 
         @Override
         public E get(int i) {
-            AbstractC5277b.f17469a.m23465a(i, this.f17473M);
+            AbstractC5277b.f17469a.m23466a(i, this.f17473M);
             return this.f17474b.get(this.f17475c + i);
         }
 
@@ -210,20 +210,20 @@ public abstract class AbstractC5277b<E> extends AbstractC5274a<E> implements Lis
         if (!(obj instanceof List)) {
             return false;
         }
-        return f17469a.m23462d(this, (Collection) obj);
+        return f17469a.m23463d(this, (Collection) obj);
     }
 
     public abstract E get(int i);
 
     @Override
     public int hashCode() {
-        return f17469a.m23461e(this);
+        return f17469a.m23462e(this);
     }
 
     public int indexOf(E e) {
         int i = 0;
         for (E e2 : this) {
-            if (C8298k.m12937b(e2, e)) {
+            if (C8298k.m12936b(e2, e)) {
                 return i;
             }
             i++;
@@ -239,7 +239,7 @@ public abstract class AbstractC5277b<E> extends AbstractC5274a<E> implements Lis
     public int lastIndexOf(E e) {
         ListIterator<E> listIterator = listIterator(size());
         while (listIterator.hasPrevious()) {
-            if (C8298k.m12937b(listIterator.previous(), e)) {
+            if (C8298k.m12936b(listIterator.previous(), e)) {
                 return listIterator.nextIndex();
             }
         }

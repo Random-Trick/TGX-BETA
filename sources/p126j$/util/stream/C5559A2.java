@@ -27,7 +27,7 @@ final class C5559A2 extends AbstractC5691d {
         this.f18106m = j2;
     }
 
-    private long m22457m(long j) {
+    private long m22458m(long j) {
         if (this.f18108o) {
             return this.f18107n;
         }
@@ -36,27 +36,27 @@ final class C5559A2 extends AbstractC5691d {
         if (a2 == null || a22 == null) {
             return this.f18107n;
         }
-        long m = a2.m22457m(j);
-        return m >= j ? m : m + a22.m22457m(j);
+        long m = a2.m22458m(j);
+        return m >= j ? m : m + a22.m22458m(j);
     }
 
     @Override
-    protected Object mo22278a() {
+    protected Object mo22279a() {
         long j = -1;
-        if (m22274e()) {
-            if (EnumC5705f3.SIZED.m22264e(this.f18103j.f18322j)) {
-                j = this.f18103j.mo22303S(this.f18351b);
+        if (m22275e()) {
+            if (EnumC5705f3.SIZED.m22265e(this.f18103j.f18322j)) {
+                j = this.f18103j.mo22304S(this.f18351b);
             }
-            AbstractC5592H0 k0 = this.f18103j.mo22189k0(j, this.f18104k);
-            AbstractC5759q2 E0 = this.f18103j.mo22136E0(this.f18350a.mo22301Z(), k0);
+            AbstractC5592H0 k0 = this.f18103j.mo22190k0(j, this.f18104k);
+            AbstractC5759q2 E0 = this.f18103j.mo22137E0(this.f18350a.mo22302Z(), k0);
             AbstractC5572D0 d0 = this.f18350a;
-            d0.mo22305N(d0.mo22299r0(E0), this.f18351b);
-            return k0.mo42630b();
+            d0.mo22306N(d0.mo22300r0(E0), this.f18351b);
+            return k0.mo42633b();
         }
         AbstractC5572D0 d02 = this.f18350a;
-        AbstractC5592H0 k02 = d02.mo22189k0(-1L, this.f18104k);
-        d02.mo22300q0(k02, this.f18351b);
-        AbstractC5632P0 b = k02.mo42630b();
+        AbstractC5592H0 k02 = d02.mo22190k0(-1L, this.f18104k);
+        d02.mo22301q0(k02, this.f18351b);
+        AbstractC5632P0 b = k02.mo42633b();
         this.f18107n = b.count();
         this.f18108o = true;
         this.f18351b = null;
@@ -64,20 +64,20 @@ final class C5559A2 extends AbstractC5691d {
     }
 
     @Override
-    protected AbstractC5701f mo22273f(AbstractC5468G g) {
+    protected AbstractC5701f mo22274f(AbstractC5468G g) {
         return new C5559A2(this, g);
     }
 
     @Override
-    protected void mo22292i() {
+    protected void mo22293i() {
         this.f18336i = true;
         if (this.f18108o) {
-            mo22272g(mo22290k());
+            mo22273g(mo22291k());
         }
     }
 
-    public final AbstractC5632P0 mo22290k() {
-        return AbstractC5572D0.m22435Q(this.f18103j.mo22186x0());
+    public final AbstractC5632P0 mo22291k() {
+        return AbstractC5572D0.m22436Q(this.f18103j.mo22187x0());
     }
 
     @Override

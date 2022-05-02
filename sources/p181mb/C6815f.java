@@ -8,7 +8,7 @@ public class C6815f<T> {
     public HashMap<Looper, T> f21350b;
     public HashMap<Thread, T> f21351c;
 
-    public T m18901a() {
+    public T m18902a() {
         Looper myLooper = Looper.myLooper();
         if (myLooper == Looper.getMainLooper()) {
             return this.f21349a;
@@ -33,7 +33,7 @@ public class C6815f<T> {
         return t;
     }
 
-    public void m18900b(T t) {
+    public void m18901b(T t) {
         Looper myLooper = Looper.myLooper();
         if (myLooper == Looper.getMainLooper()) {
             this.f21349a = t;

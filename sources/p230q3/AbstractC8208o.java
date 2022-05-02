@@ -9,29 +9,29 @@ import p230q3.AbstractC8219w;
 public interface AbstractC8208o {
 
     public static class C8209a extends IOException {
-        public final int f26570a;
+        public final int f26573a;
 
         public C8209a(Throwable th, int i) {
             super(th);
-            this.f26570a = i;
+            this.f26573a = i;
         }
     }
 
-    void mo13207a(AbstractC8219w.C8220a aVar);
+    void mo13206a(AbstractC8219w.C8220a aVar);
 
-    UUID mo13206b();
+    UUID mo13205b();
 
-    boolean mo13205c();
+    boolean mo13204c();
 
-    Map<String, String> mo13204d();
+    Map<String, String> mo13203d();
 
-    void mo13203e(AbstractC8219w.C8220a aVar);
+    void mo13202e(AbstractC8219w.C8220a aVar);
 
-    boolean mo13202f(String str);
+    boolean mo13201f(String str);
 
-    C8209a mo13201g();
+    C8209a mo13200g();
 
-    CryptoConfig mo13200h();
+    CryptoConfig mo13199h();
 
-    int mo13199i();
+    int mo13198i();
 }

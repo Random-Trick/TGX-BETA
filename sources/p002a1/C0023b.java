@@ -32,7 +32,7 @@ public final class C0023b {
         }
     }
 
-    public static String m42575a(Locale locale) {
+    public static String m42578a(Locale locale) {
         String locale2 = locale.toString();
         try {
             Method method = f54b;
@@ -47,7 +47,7 @@ public final class C0023b {
         return locale2;
     }
 
-    public static String m42574b(String str) {
+    public static String m42577b(String str) {
         try {
             Method method = f53a;
             if (method != null) {
@@ -61,7 +61,7 @@ public final class C0023b {
         return null;
     }
 
-    public static String m42573c(Locale locale) {
+    public static String m42576c(Locale locale) {
         int i = Build.VERSION.SDK_INT;
         if (i >= 24) {
             return ULocale.addLikelySubtags(ULocale.forLocale(locale)).getScript();
@@ -77,9 +77,9 @@ public final class C0023b {
                 return locale.getScript();
             }
         } else {
-            String a = m42575a(locale);
+            String a = m42578a(locale);
             if (a != null) {
-                return m42574b(a);
+                return m42577b(a);
             }
             return null;
         }

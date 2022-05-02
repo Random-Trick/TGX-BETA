@@ -13,12 +13,12 @@ import java.util.List;
 import p012ab.AbstractC0243a;
 
 public class SamsungHomeBadger implements AbstractC0243a {
-    public static final String[] f21954b = {"_id", "class"};
-    public DefaultBadger f21955a;
+    public static final String[] f21957b = {"_id", "class"};
+    public DefaultBadger f21958a;
 
     public SamsungHomeBadger() {
         if (Build.VERSION.SDK_INT >= 21) {
-            this.f21955a = new DefaultBadger();
+            this.f21958a = new DefaultBadger();
         }
     }
 
@@ -29,13 +29,13 @@ public class SamsungHomeBadger implements AbstractC0243a {
 
     @Override
     public void mo18370b(Context context, ComponentName componentName, int i) {
-        DefaultBadger defaultBadger = this.f21955a;
+        DefaultBadger defaultBadger = this.f21958a;
         if (defaultBadger == null || !defaultBadger.m18382c(context)) {
             Uri parse = Uri.parse("content://com.sec.badge/apps?notify=true");
             ContentResolver contentResolver = context.getContentResolver();
             Cursor cursor = null;
             try {
-                cursor = contentResolver.query(parse, f21954b, "package=?", new String[]{componentName.getPackageName()}, null);
+                cursor = contentResolver.query(parse, f21957b, "package=?", new String[]{componentName.getPackageName()}, null);
                 if (cursor != null) {
                     String className = componentName.getClassName();
                     boolean z = false;
@@ -50,10 +50,10 @@ public class SamsungHomeBadger implements AbstractC0243a {
                     }
                 }
             } finally {
-                C1305b.m37781a(cursor);
+                C1305b.m37784a(cursor);
             }
         } else {
-            this.f21955a.mo18370b(context, componentName, i);
+            this.f21958a.mo18370b(context, componentName, i);
         }
     }
 

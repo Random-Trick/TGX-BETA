@@ -19,43 +19,43 @@ public class C2042d extends AbstractC8693b {
     public int f7256k;
 
     @Override
-    public ByteBuffer mo11723a() {
+    public ByteBuffer mo11722a() {
         ByteBuffer allocate = ByteBuffer.allocate(20);
-        C8634g.m11851j(allocate, this.f7246a);
-        C8634g.m11851j(allocate, (this.f7247b << 6) + (this.f7248c ? 32 : 0) + this.f7249d);
-        C8634g.m11854g(allocate, this.f7250e);
-        C8634g.m11853h(allocate, this.f7251f);
-        C8634g.m11851j(allocate, this.f7252g);
-        C8634g.m11856e(allocate, this.f7253h);
-        C8634g.m11856e(allocate, this.f7254i);
-        C8634g.m11851j(allocate, this.f7255j);
-        C8634g.m11856e(allocate, this.f7256k);
+        C8634g.m11850j(allocate, this.f7246a);
+        C8634g.m11850j(allocate, (this.f7247b << 6) + (this.f7248c ? 32 : 0) + this.f7249d);
+        C8634g.m11853g(allocate, this.f7250e);
+        C8634g.m11852h(allocate, this.f7251f);
+        C8634g.m11850j(allocate, this.f7252g);
+        C8634g.m11855e(allocate, this.f7253h);
+        C8634g.m11855e(allocate, this.f7254i);
+        C8634g.m11850j(allocate, this.f7255j);
+        C8634g.m11855e(allocate, this.f7256k);
         return (ByteBuffer) allocate.rewind();
     }
 
     @Override
-    public String mo11722b() {
+    public String mo11721b() {
         return "tscl";
     }
 
     @Override
-    public void mo11721c(ByteBuffer byteBuffer) {
-        this.f7246a = C8632e.m11862n(byteBuffer);
-        int n = C8632e.m11862n(byteBuffer);
+    public void mo11720c(ByteBuffer byteBuffer) {
+        this.f7246a = C8632e.m11861n(byteBuffer);
+        int n = C8632e.m11861n(byteBuffer);
         this.f7247b = (n & 192) >> 6;
         this.f7248c = (n & 32) > 0;
         this.f7249d = n & 31;
-        this.f7250e = C8632e.m11865k(byteBuffer);
-        this.f7251f = C8632e.m11864l(byteBuffer);
-        this.f7252g = C8632e.m11862n(byteBuffer);
-        this.f7253h = C8632e.m11867i(byteBuffer);
-        this.f7254i = C8632e.m11867i(byteBuffer);
-        this.f7255j = C8632e.m11862n(byteBuffer);
-        this.f7256k = C8632e.m11867i(byteBuffer);
+        this.f7250e = C8632e.m11864k(byteBuffer);
+        this.f7251f = C8632e.m11863l(byteBuffer);
+        this.f7252g = C8632e.m11861n(byteBuffer);
+        this.f7253h = C8632e.m11866i(byteBuffer);
+        this.f7254i = C8632e.m11866i(byteBuffer);
+        this.f7255j = C8632e.m11861n(byteBuffer);
+        this.f7256k = C8632e.m11866i(byteBuffer);
     }
 
     @Override
-    public int mo11726d() {
+    public int mo11725d() {
         return 20;
     }
 

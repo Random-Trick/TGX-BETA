@@ -26,7 +26,7 @@ public class C5643R2 implements AbstractC5468G {
     }
 
     @Override
-    public boolean mo22124a(Consumer consumer) {
+    public boolean mo22125a(Consumer consumer) {
         Objects.requireNonNull(consumer);
         int i = this.f18226a;
         int i2 = this.f18227b;
@@ -36,7 +36,7 @@ public class C5643R2 implements AbstractC5468G {
         Object[] objArr = this.f18230e;
         int i3 = this.f18228c;
         this.f18228c = i3 + 1;
-        consumer.mo22128k(objArr[i3]);
+        consumer.mo22129k(objArr[i3]);
         if (this.f18228c == this.f18230e.length) {
             this.f18228c = 0;
             int i4 = this.f18226a + 1;
@@ -80,7 +80,7 @@ public class C5643R2 implements AbstractC5468G {
                 }
                 Object[] objArr = this.f18231f.f18310f[i2];
                 while (i4 < objArr.length) {
-                    consumer.mo22128k(objArr[i4]);
+                    consumer.mo22129k(objArr[i4]);
                     i4++;
                 }
                 i4 = 0;
@@ -89,7 +89,7 @@ public class C5643R2 implements AbstractC5468G {
             Object[] objArr2 = this.f18226a == i ? this.f18230e : this.f18231f.f18310f[i];
             int i5 = this.f18229d;
             while (i4 < i5) {
-                consumer.mo22128k(objArr2[i4]);
+                consumer.mo22129k(objArr2[i4]);
                 i4++;
             }
             this.f18226a = this.f18227b;
@@ -104,12 +104,12 @@ public class C5643R2 implements AbstractC5468G {
 
     @Override
     public long getExactSizeIfKnown() {
-        return AbstractC5485a.m22569h(this);
+        return AbstractC5485a.m22570h(this);
     }
 
     @Override
     public boolean hasCharacteristics(int i) {
-        return AbstractC5485a.m22568j(this, i);
+        return AbstractC5485a.m22569j(this, i);
     }
 
     @Override
@@ -134,7 +134,7 @@ public class C5643R2 implements AbstractC5468G {
             if (i7 == 0) {
                 return null;
             }
-            AbstractC5468G m = AbstractC5482V.m22587m(this.f18230e, i6, i6 + i7, 1040);
+            AbstractC5468G m = AbstractC5482V.m22588m(this.f18230e, i6, i6 + i7, 1040);
             this.f18228c += i7;
             return m;
         }

@@ -16,12 +16,12 @@ public final class C5601J implements AbstractC5542x, BiConsumer, AbstractC5531m 
     }
 
     @Override
-    public void mo22179p(Object obj, Object obj2) {
-        ((C5545i) obj).m22478a((C5545i) obj2);
+    public void mo22180p(Object obj, Object obj2) {
+        ((C5545i) obj).m22479a((C5545i) obj2);
     }
 
     @Override
-    public Object mo22178w(int i) {
+    public Object mo22179w(int i) {
         return new Object[i];
     }
 }

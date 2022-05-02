@@ -12,30 +12,30 @@ public final class C3623a8<E> extends AbstractC3858z7<E> {
 
     @Override
     public final E get(int i) {
-        C3669f4.m29839a(i, this.f12351M, "index");
+        C3669f4.m29841a(i, this.f12351M, "index");
         E e = (E) this.f12352c[i];
         e.getClass();
         return e;
     }
 
     @Override
-    public final int mo29724h(Object[] objArr, int i) {
+    public final int mo29726h(Object[] objArr, int i) {
         System.arraycopy(this.f12352c, 0, objArr, 0, this.f12351M);
         return this.f12351M;
     }
 
     @Override
-    public final int mo29731i() {
+    public final int mo29733i() {
         return this.f12351M;
     }
 
     @Override
-    public final int mo29730m() {
+    public final int mo29732m() {
         return 0;
     }
 
     @Override
-    public final Object[] mo29729r() {
+    public final Object[] mo29731r() {
         return this.f12352c;
     }
 

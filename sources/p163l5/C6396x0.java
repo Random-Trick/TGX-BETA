@@ -16,7 +16,7 @@ public final class C6396x0 implements AbstractC6365n {
     }
 
     @Override
-    public final void mo20473e1(AbstractC6362m mVar, C6343g gVar) {
+    public final void mo20474e1(AbstractC6362m mVar, C6343g gVar) {
         Parcel obtain = Parcel.obtain();
         Parcel obtain2 = Parcel.obtain();
         try {
@@ -24,7 +24,7 @@ public final class C6396x0 implements AbstractC6365n {
             obtain.writeStrongBinder(mVar != null ? mVar.asBinder() : null);
             if (gVar != null) {
                 obtain.writeInt(1);
-                C6358k1.m20555a(gVar, obtain, 0);
+                C6358k1.m20556a(gVar, obtain, 0);
             } else {
                 obtain.writeInt(0);
             }

@@ -10,11 +10,11 @@ public final class HandlerC4344i extends Handler {
         super(Looper.getMainLooper());
     }
 
-    public void m28232a(View view) {
+    public void m28234a(View view) {
         removeMessages(0, view);
     }
 
-    public void m28231b(View view, long j) {
+    public void m28233b(View view, long j) {
         Message obtain = Message.obtain(this, 0, view);
         if (j > 0) {
             sendMessageDelayed(obtain, j);

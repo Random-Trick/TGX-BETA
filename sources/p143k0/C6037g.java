@@ -18,7 +18,7 @@ public class C6037g<K, V> {
         this.f19216c = 0;
     }
 
-    private void m21487a(int i) {
+    private void m21488a(int i) {
         if (i == 8) {
             synchronized (C6037g.class) {
                 Object[] objArr = f19212O;
@@ -50,15 +50,15 @@ public class C6037g<K, V> {
         this.f19215b = new Object[i << 1];
     }
 
-    public static int m21486b(int[] iArr, int i, int i2) {
+    public static int m21487b(int[] iArr, int i, int i2) {
         try {
-            return C6033c.m21518a(iArr, i, i2);
+            return C6033c.m21519a(iArr, i, i2);
         } catch (ArrayIndexOutOfBoundsException unused) {
             throw new ConcurrentModificationException();
         }
     }
 
-    public static void m21484d(int[] iArr, Object[] objArr, int i) {
+    public static void m21485d(int[] iArr, Object[] objArr, int i) {
         if (iArr.length == 8) {
             synchronized (C6037g.class) {
                 if (f19213P < 10) {
@@ -86,17 +86,17 @@ public class C6037g<K, V> {
         }
     }
 
-    public void m21485c(int i) {
+    public void m21486c(int i) {
         int i2 = this.f19216c;
         int[] iArr = this.f19214a;
         if (iArr.length < i) {
             Object[] objArr = this.f19215b;
-            m21487a(i);
+            m21488a(i);
             if (this.f19216c > 0) {
                 System.arraycopy(iArr, 0, this.f19214a, 0, i2);
                 System.arraycopy(objArr, 0, this.f19215b, 0, i2 << 1);
             }
-            m21484d(iArr, objArr, i2);
+            m21485d(iArr, objArr, i2);
         }
         if (this.f19216c != i2) {
             throw new ConcurrentModificationException();
@@ -111,7 +111,7 @@ public class C6037g<K, V> {
             this.f19214a = C6033c.f19191a;
             this.f19215b = C6033c.f19193c;
             this.f19216c = 0;
-            m21484d(iArr, objArr, i);
+            m21485d(iArr, objArr, i);
         }
         if (this.f19216c > 0) {
             throw new ConcurrentModificationException();
@@ -119,19 +119,19 @@ public class C6037g<K, V> {
     }
 
     public boolean containsKey(Object obj) {
-        return m21482f(obj) >= 0;
+        return m21483f(obj) >= 0;
     }
 
     public boolean containsValue(Object obj) {
-        return m21480h(obj) >= 0;
+        return m21481h(obj) >= 0;
     }
 
-    public int m21483e(Object obj, int i) {
+    public int m21484e(Object obj, int i) {
         int i2 = this.f19216c;
         if (i2 == 0) {
             return -1;
         }
-        int b = m21486b(this.f19214a, i2, i);
+        int b = m21487b(this.f19214a, i2, i);
         if (b < 0 || obj.equals(this.f19215b[b << 1])) {
             return b;
         }
@@ -160,8 +160,8 @@ public class C6037g<K, V> {
                 return false;
             }
             for (int i = 0; i < this.f19216c; i++) {
-                K i2 = m21479i(i);
-                V l = m21476l(i);
+                K i2 = m21480i(i);
+                V l = m21477l(i);
                 Object obj2 = gVar.get(i2);
                 if (l == null) {
                     if (obj2 != null || !gVar.containsKey(i2)) {
@@ -179,8 +179,8 @@ public class C6037g<K, V> {
                 return false;
             }
             for (int i3 = 0; i3 < this.f19216c; i3++) {
-                K i4 = m21479i(i3);
-                V l2 = m21476l(i3);
+                K i4 = m21480i(i3);
+                V l2 = m21477l(i3);
                 Object obj3 = map.get(i4);
                 if (l2 == null) {
                     if (obj3 != null || !map.containsKey(i4)) {
@@ -195,16 +195,16 @@ public class C6037g<K, V> {
         return false;
     }
 
-    public int m21482f(Object obj) {
-        return obj == null ? m21481g() : m21483e(obj, obj.hashCode());
+    public int m21483f(Object obj) {
+        return obj == null ? m21482g() : m21484e(obj, obj.hashCode());
     }
 
-    public int m21481g() {
+    public int m21482g() {
         int i = this.f19216c;
         if (i == 0) {
             return -1;
         }
-        int b = m21486b(this.f19214a, i, 0);
+        int b = m21487b(this.f19214a, i, 0);
         if (b < 0 || this.f19215b[b << 1] == null) {
             return b;
         }
@@ -228,11 +228,11 @@ public class C6037g<K, V> {
     }
 
     public V getOrDefault(Object obj, V v) {
-        int f = m21482f(obj);
+        int f = m21483f(obj);
         return f >= 0 ? (V) this.f19215b[(f << 1) + 1] : v;
     }
 
-    public int m21480h(Object obj) {
+    public int m21481h(Object obj) {
         int i = this.f19216c * 2;
         Object[] objArr = this.f19215b;
         if (obj == null) {
@@ -267,7 +267,7 @@ public class C6037g<K, V> {
         return i4;
     }
 
-    public K m21479i(int i) {
+    public K m21480i(int i) {
         return (K) this.f19215b[i << 1];
     }
 
@@ -275,7 +275,7 @@ public class C6037g<K, V> {
         return this.f19216c <= 0;
     }
 
-    public V m21478j(int i) {
+    public V m21479j(int i) {
         Object[] objArr = this.f19215b;
         int i2 = i << 1;
         V v = (V) objArr[i2 + 1];
@@ -302,7 +302,7 @@ public class C6037g<K, V> {
                 if (i3 > 8) {
                     i5 = i3 + (i3 >> 1);
                 }
-                m21487a(i5);
+                m21488a(i5);
                 if (i3 == this.f19216c) {
                     if (i > 0) {
                         System.arraycopy(iArr, 0, this.f19214a, 0, i);
@@ -327,7 +327,7 @@ public class C6037g<K, V> {
         return v;
     }
 
-    public V m21477k(int i, V v) {
+    public V m21478k(int i, V v) {
         int i2 = (i << 1) + 1;
         Object[] objArr = this.f19215b;
         V v2 = (V) objArr[i2];
@@ -335,7 +335,7 @@ public class C6037g<K, V> {
         return v2;
     }
 
-    public V m21476l(int i) {
+    public V m21477l(int i) {
         return (V) this.f19215b[(i << 1) + 1];
     }
 
@@ -344,12 +344,12 @@ public class C6037g<K, V> {
         int i2;
         int i3 = this.f19216c;
         if (k == null) {
-            i2 = m21481g();
+            i2 = m21482g();
             i = 0;
         } else {
             int hashCode = k.hashCode();
             i = hashCode;
-            i2 = m21483e(k, hashCode);
+            i2 = m21484e(k, hashCode);
         }
         if (i2 >= 0) {
             int i4 = (i2 << 1) + 1;
@@ -368,14 +368,14 @@ public class C6037g<K, V> {
                 i6 = 8;
             }
             Object[] objArr2 = this.f19215b;
-            m21487a(i6);
+            m21488a(i6);
             if (i3 == this.f19216c) {
                 int[] iArr2 = this.f19214a;
                 if (iArr2.length > 0) {
                     System.arraycopy(iArr, 0, iArr2, 0, iArr.length);
                     System.arraycopy(objArr2, 0, this.f19215b, 0, objArr2.length);
                 }
-                m21484d(iArr, objArr2, i3);
+                m21485d(iArr, objArr2, i3);
             } else {
                 throw new ConcurrentModificationException();
             }
@@ -409,17 +409,17 @@ public class C6037g<K, V> {
     }
 
     public V remove(Object obj) {
-        int f = m21482f(obj);
+        int f = m21483f(obj);
         if (f >= 0) {
-            return m21478j(f);
+            return m21479j(f);
         }
         return null;
     }
 
     public V replace(K k, V v) {
-        int f = m21482f(k);
+        int f = m21483f(k);
         if (f >= 0) {
-            return m21477k(f, v);
+            return m21478k(f, v);
         }
         return null;
     }
@@ -438,14 +438,14 @@ public class C6037g<K, V> {
             if (i > 0) {
                 sb2.append(", ");
             }
-            K i2 = m21479i(i);
+            K i2 = m21480i(i);
             if (i2 != this) {
                 sb2.append(i2);
             } else {
                 sb2.append("(this Map)");
             }
             sb2.append('=');
-            V l = m21476l(i);
+            V l = m21477l(i);
             if (l != this) {
                 sb2.append(l);
             } else {
@@ -457,28 +457,28 @@ public class C6037g<K, V> {
     }
 
     public boolean remove(Object obj, Object obj2) {
-        int f = m21482f(obj);
+        int f = m21483f(obj);
         if (f < 0) {
             return false;
         }
-        V l = m21476l(f);
+        V l = m21477l(f);
         if (obj2 != l && (obj2 == null || !obj2.equals(l))) {
             return false;
         }
-        m21478j(f);
+        m21479j(f);
         return true;
     }
 
     public boolean replace(K k, V v, V v2) {
-        int f = m21482f(k);
+        int f = m21483f(k);
         if (f < 0) {
             return false;
         }
-        V l = m21476l(f);
+        V l = m21477l(f);
         if (l != v && (v == null || !v.equals(l))) {
             return false;
         }
-        m21477k(f, v2);
+        m21478k(f, v2);
         return true;
     }
 
@@ -487,7 +487,7 @@ public class C6037g<K, V> {
             this.f19214a = C6033c.f19191a;
             this.f19215b = C6033c.f19193c;
         } else {
-            m21487a(i);
+            m21488a(i);
         }
         this.f19216c = 0;
     }

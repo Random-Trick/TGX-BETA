@@ -7,10 +7,10 @@ import java.util.Iterator;
 import java.util.Objects;
 
 public final class C8293f {
-    public static final Object[] f26781a = new Object[0];
+    public static final Object[] f26784a = new Object[0];
 
-    public static final Object[] m12940a(Collection<?> collection) {
-        C8298k.m12934e(collection, "collection");
+    public static final Object[] m12939a(Collection<?> collection) {
+        C8298k.m12933e(collection, "collection");
         int size = collection.size();
         if (size != 0) {
             Iterator<?> it = collection.iterator();
@@ -33,22 +33,22 @@ public final class C8293f {
                             }
                         }
                         objArr = Arrays.copyOf(objArr, i3);
-                        C8298k.m12935d(objArr, "copyOf(result, newSize)");
+                        C8298k.m12934d(objArr, "copyOf(result, newSize)");
                     } else if (!it.hasNext()) {
                         Object[] copyOf = Arrays.copyOf(objArr, i2);
-                        C8298k.m12935d(copyOf, "copyOf(result, size)");
+                        C8298k.m12934d(copyOf, "copyOf(result, size)");
                         return copyOf;
                     }
                     i = i2;
                 }
             }
         }
-        return f26781a;
+        return f26784a;
     }
 
-    public static final Object[] m12939b(Collection<?> collection, Object[] objArr) {
+    public static final Object[] m12938b(Collection<?> collection, Object[] objArr) {
         Object[] objArr2;
-        C8298k.m12934e(collection, "collection");
+        C8298k.m12933e(collection, "collection");
         Objects.requireNonNull(objArr);
         int size = collection.size();
         int i = 0;
@@ -78,14 +78,14 @@ public final class C8293f {
                             }
                         }
                         objArr2 = Arrays.copyOf(objArr2, i3);
-                        C8298k.m12935d(objArr2, "copyOf(result, newSize)");
+                        C8298k.m12934d(objArr2, "copyOf(result, newSize)");
                     } else if (!it.hasNext()) {
                         if (objArr2 == objArr) {
                             objArr[i2] = null;
                             return objArr;
                         }
                         Object[] copyOf = Arrays.copyOf(objArr2, i2);
-                        C8298k.m12935d(copyOf, "copyOf(result, size)");
+                        C8298k.m12934d(copyOf, "copyOf(result, size)");
                         return copyOf;
                     }
                     i = i2;

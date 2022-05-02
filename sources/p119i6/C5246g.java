@@ -29,7 +29,7 @@ public final class C5246g extends AbstractC6749a {
     }
 
     public int hashCode() {
-        return C6374q.m20523b(Integer.valueOf(this.f17415a));
+        return C6374q.m20524b(Integer.valueOf(this.f17415a));
     }
 
     @RecentlyNonNull
@@ -46,8 +46,8 @@ public final class C5246g extends AbstractC6749a {
 
     @Override
     public void writeToParcel(@RecentlyNonNull Parcel parcel, int i) {
-        int a = C6752c.m19124a(parcel);
-        C6752c.m19114k(parcel, 2, this.f17415a);
-        C6752c.m19123b(parcel, a);
+        int a = C6752c.m19125a(parcel);
+        C6752c.m19115k(parcel, 2, this.f17415a);
+        C6752c.m19124b(parcel, a);
     }
 }

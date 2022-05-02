@@ -10,17 +10,17 @@ public final class C4237l extends AbstractC4253u {
     public static final class C4238a extends AbstractC4253u.AbstractC4254a<C4238a, C4237l> {
         public C4238a(Class<? extends ListenableWorker> cls) {
             super(cls);
-            this.f14309c.f24143d = OverwritingInputMerger.class.getName();
+            this.f14309c.f24146d = OverwritingInputMerger.class.getName();
         }
 
-        public C4237l mo28339c() {
-            if (!this.f14307a || Build.VERSION.SDK_INT < 23 || !this.f14309c.f24149j.m28388h()) {
+        public C4237l mo28341c() {
+            if (!this.f14307a || Build.VERSION.SDK_INT < 23 || !this.f14309c.f24152j.m28390h()) {
                 return new C4237l(this);
             }
             throw new IllegalArgumentException("Cannot set backoff criteria on an idle mode job");
         }
 
-        public C4238a mo28338d() {
+        public C4238a mo28340d() {
             return this;
         }
     }
@@ -29,7 +29,7 @@ public final class C4237l extends AbstractC4253u {
         super(aVar.f14308b, aVar.f14309c, aVar.f14310d);
     }
 
-    public static C4237l m28354d(Class<? extends ListenableWorker> cls) {
-        return new C4238a(cls).m28340b();
+    public static C4237l m28356d(Class<? extends ListenableWorker> cls) {
+        return new C4238a(cls).m28342b();
     }
 }

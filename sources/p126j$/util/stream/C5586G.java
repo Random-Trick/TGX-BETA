@@ -35,7 +35,7 @@ public final class C5586G implements DoubleStream {
         this.f18143a = h;
     }
 
-    public static DoubleStream m22387i(AbstractC5591H h) {
+    public static DoubleStream m22388i(AbstractC5591H h) {
         if (h == null) {
             return null;
         }
@@ -45,30 +45,30 @@ public final class C5586G implements DoubleStream {
     @Override
     public boolean allMatch(DoublePredicate doublePredicate) {
         AbstractC5591H h = this.f18143a;
-        C5520b h2 = C5520b.m22491h(doublePredicate);
+        C5520b h2 = C5520b.m22492h(doublePredicate);
         AbstractC5581F f = (AbstractC5581F) h;
         Objects.requireNonNull(f);
-        return ((Boolean) f.m22297t0(AbstractC5572D0.m22424f0(h2, EnumC5557A0.ALL))).booleanValue();
+        return ((Boolean) f.m22298t0(AbstractC5572D0.m22425f0(h2, EnumC5557A0.ALL))).booleanValue();
     }
 
     @Override
     public boolean anyMatch(DoublePredicate doublePredicate) {
         AbstractC5591H h = this.f18143a;
-        C5520b h2 = C5520b.m22491h(doublePredicate);
+        C5520b h2 = C5520b.m22492h(doublePredicate);
         AbstractC5581F f = (AbstractC5581F) h;
         Objects.requireNonNull(f);
-        return ((Boolean) f.m22297t0(AbstractC5572D0.m22424f0(h2, EnumC5557A0.ANY))).booleanValue();
+        return ((Boolean) f.m22298t0(AbstractC5572D0.m22425f0(h2, EnumC5557A0.ANY))).booleanValue();
     }
 
     @Override
     public OptionalDouble average() {
-        double[] dArr = (double[]) ((AbstractC5581F) this.f18143a).m22392M0(C5766s.f18460a, C5726k.f18398c, C5746o.f18437b);
-        return AbstractC5485a.m22557x(dArr[2] > 0.0d ? C5547k.m22470d(AbstractC5736m.m22216a(dArr) / dArr[2]) : C5547k.m22473a());
+        double[] dArr = (double[]) ((AbstractC5581F) this.f18143a).m22393M0(C5766s.f18460a, C5726k.f18398c, C5746o.f18437b);
+        return AbstractC5485a.m22558x(dArr[2] > 0.0d ? C5547k.m22471d(AbstractC5736m.m22217a(dArr) / dArr[2]) : C5547k.m22474a());
     }
 
     @Override
     public Stream boxed() {
-        return C5685b3.m22312i(((AbstractC5581F) this.f18143a).m22390O0(C5676a.f18290g));
+        return C5685b3.m22313i(((AbstractC5581F) this.f18143a).m22391O0(C5676a.f18290g));
     }
 
     @Override
@@ -78,41 +78,41 @@ public final class C5586G implements DoubleStream {
 
     @Override
     public Object collect(Supplier supplier, ObjDoubleConsumer objDoubleConsumer, BiConsumer biConsumer) {
-        return ((AbstractC5581F) this.f18143a).m22392M0(C5520b.m22501B(supplier), objDoubleConsumer == null ? null : new C5520b(objDoubleConsumer), BiConsumer.VivifiedWrapper.convert(biConsumer));
+        return ((AbstractC5581F) this.f18143a).m22393M0(C5520b.m22502B(supplier), objDoubleConsumer == null ? null : new C5520b(objDoubleConsumer), BiConsumer.VivifiedWrapper.convert(biConsumer));
     }
 
     @Override
     public long count() {
-        return ((AbstractC5767s0) ((AbstractC5581F) this.f18143a).m22391N0(C5676a.f18291h)).sum();
+        return ((AbstractC5767s0) ((AbstractC5581F) this.f18143a).m22392N0(C5676a.f18291h)).sum();
     }
 
     @Override
     public DoubleStream distinct() {
-        return m22387i(((AbstractC5719i2) ((AbstractC5719i2) ((AbstractC5581F) this.f18143a).m22390O0(C5676a.f18290g)).m22249K0()).m22248L0(C5676a.f18288e));
+        return m22388i(((AbstractC5719i2) ((AbstractC5719i2) ((AbstractC5581F) this.f18143a).m22391O0(C5676a.f18290g)).m22250K0()).m22249L0(C5676a.f18288e));
     }
 
     @Override
     public DoubleStream filter(DoublePredicate doublePredicate) {
         AbstractC5591H h = this.f18143a;
-        C5520b h2 = C5520b.m22491h(doublePredicate);
+        C5520b h2 = C5520b.m22492h(doublePredicate);
         AbstractC5581F f = (AbstractC5581F) h;
         Objects.requireNonNull(f);
         Objects.requireNonNull(h2);
-        return m22387i(new C5791x(f, f, 4, EnumC5705f3.f18370t, h2, 2));
+        return m22388i(new C5791x(f, f, 4, EnumC5705f3.f18370t, h2, 2));
     }
 
     @Override
     public OptionalDouble findAny() {
         AbstractC5581F f = (AbstractC5581F) this.f18143a;
         Objects.requireNonNull(f);
-        return AbstractC5485a.m22557x((C5547k) f.m22297t0(new C5616M(false, 4, C5547k.m22473a(), C5726k.f18401f, C5596I.f18152a)));
+        return AbstractC5485a.m22558x((C5547k) f.m22298t0(new C5616M(false, 4, C5547k.m22474a(), C5726k.f18401f, C5596I.f18152a)));
     }
 
     @Override
     public OptionalDouble findFirst() {
         AbstractC5581F f = (AbstractC5581F) this.f18143a;
         Objects.requireNonNull(f);
-        return AbstractC5485a.m22557x((C5547k) f.m22297t0(new C5616M(true, 4, C5547k.m22473a(), C5726k.f18401f, C5596I.f18152a)));
+        return AbstractC5485a.m22558x((C5547k) f.m22298t0(new C5616M(true, 4, C5547k.m22474a(), C5726k.f18401f, C5596I.f18152a)));
     }
 
     @Override
@@ -121,17 +121,17 @@ public final class C5586G implements DoubleStream {
         C5520b bVar = doubleFunction == null ? null : new C5520b(doubleFunction);
         AbstractC5581F f = (AbstractC5581F) h;
         Objects.requireNonNull(f);
-        return m22387i(new C5791x(f, f, 4, EnumC5705f3.f18366p | EnumC5705f3.f18364n | EnumC5705f3.f18370t, bVar, 1));
+        return m22388i(new C5791x(f, f, 4, EnumC5705f3.f18366p | EnumC5705f3.f18364n | EnumC5705f3.f18370t, bVar, 1));
     }
 
     @Override
     public void forEach(DoubleConsumer doubleConsumer) {
-        this.f18143a.mo22385d(C5524f.m22485a(doubleConsumer));
+        this.f18143a.mo22386d(C5524f.m22486a(doubleConsumer));
     }
 
     @Override
     public void forEachOrdered(DoubleConsumer doubleConsumer) {
-        this.f18143a.mo22384h(C5524f.m22485a(doubleConsumer));
+        this.f18143a.mo22385h(C5524f.m22486a(doubleConsumer));
     }
 
     @Override
@@ -141,7 +141,7 @@ public final class C5586G implements DoubleStream {
 
     @Override
     public Iterator<Double> iterator2() {
-        return C5551o.m22461a(AbstractC5482V.m22594f(((AbstractC5581F) this.f18143a).spliterator()));
+        return C5551o.m22462a(AbstractC5482V.m22595f(((AbstractC5581F) this.f18143a).spliterator()));
     }
 
     @Override
@@ -149,7 +149,7 @@ public final class C5586G implements DoubleStream {
         AbstractC5581F f = (AbstractC5581F) this.f18143a;
         Objects.requireNonNull(f);
         if (j >= 0) {
-            return m22387i(AbstractC5572D0.m22425e0(f, 0L, j));
+            return m22388i(AbstractC5572D0.m22426e0(f, 0L, j));
         }
         throw new IllegalArgumentException(Long.toString(j));
     }
@@ -161,7 +161,7 @@ public final class C5586G implements DoubleStream {
         AbstractC5581F f = (AbstractC5581F) h;
         Objects.requireNonNull(f);
         Objects.requireNonNull(bVar);
-        return m22387i(new C5791x(f, f, 4, EnumC5705f3.f18366p | EnumC5705f3.f18364n, bVar, 0));
+        return m22388i(new C5791x(f, f, 4, EnumC5705f3.f18366p | EnumC5705f3.f18364n, bVar, 0));
     }
 
     @Override
@@ -171,53 +171,53 @@ public final class C5586G implements DoubleStream {
         AbstractC5581F f = (AbstractC5581F) h;
         Objects.requireNonNull(f);
         Objects.requireNonNull(bVar);
-        return C5727k0.m22228i(new C5801z(f, f, 4, EnumC5705f3.f18366p | EnumC5705f3.f18364n, bVar, 0));
+        return C5727k0.m22229i(new C5801z(f, f, 4, EnumC5705f3.f18366p | EnumC5705f3.f18364n, bVar, 0));
     }
 
     @Override
     public LongStream mapToLong(DoubleToLongFunction doubleToLongFunction) {
-        return C5772t0.m22177i(((AbstractC5581F) this.f18143a).m22391N0(doubleToLongFunction == null ? null : new C5520b(doubleToLongFunction)));
+        return C5772t0.m22178i(((AbstractC5581F) this.f18143a).m22392N0(doubleToLongFunction == null ? null : new C5520b(doubleToLongFunction)));
     }
 
     @Override
     public Stream mapToObj(DoubleFunction doubleFunction) {
-        return C5685b3.m22312i(((AbstractC5581F) this.f18143a).m22390O0(doubleFunction == null ? null : new C5520b(doubleFunction)));
+        return C5685b3.m22313i(((AbstractC5581F) this.f18143a).m22391O0(doubleFunction == null ? null : new C5520b(doubleFunction)));
     }
 
     @Override
     public OptionalDouble max() {
-        return AbstractC5485a.m22557x(((AbstractC5581F) this.f18143a).m22389P0(C5676a.f18289f));
+        return AbstractC5485a.m22558x(((AbstractC5581F) this.f18143a).m22390P0(C5676a.f18289f));
     }
 
     @Override
     public OptionalDouble min() {
-        return AbstractC5485a.m22557x(((AbstractC5581F) this.f18143a).m22389P0(C5726k.f18399d));
+        return AbstractC5485a.m22558x(((AbstractC5581F) this.f18143a).m22390P0(C5726k.f18399d));
     }
 
     @Override
     public boolean noneMatch(DoublePredicate doublePredicate) {
         AbstractC5591H h = this.f18143a;
-        C5520b h2 = C5520b.m22491h(doublePredicate);
+        C5520b h2 = C5520b.m22492h(doublePredicate);
         AbstractC5581F f = (AbstractC5581F) h;
         Objects.requireNonNull(f);
-        return ((Boolean) f.m22297t0(AbstractC5572D0.m22424f0(h2, EnumC5557A0.NONE))).booleanValue();
+        return ((Boolean) f.m22298t0(AbstractC5572D0.m22425f0(h2, EnumC5557A0.NONE))).booleanValue();
     }
 
     @Override
     public DoubleStream onClose(Runnable runnable) {
         AbstractC5686c cVar = (AbstractC5686c) this.f18143a;
-        cVar.m22311A0(runnable);
-        return C5706g.m22261i(cVar);
+        cVar.m22312A0(runnable);
+        return C5706g.m22262i(cVar);
     }
 
     @Override
     public DoubleStream peek(DoubleConsumer doubleConsumer) {
         AbstractC5591H h = this.f18143a;
-        AbstractC5525g a = C5524f.m22485a(doubleConsumer);
+        AbstractC5525g a = C5524f.m22486a(doubleConsumer);
         AbstractC5581F f = (AbstractC5581F) h;
         Objects.requireNonNull(f);
         Objects.requireNonNull(a);
-        return m22387i(new C5791x(f, f, 4, 0, a, 3));
+        return m22388i(new C5791x(f, f, 4, 0, a, 3));
     }
 
     @Override
@@ -227,7 +227,7 @@ public final class C5586G implements DoubleStream {
         AbstractC5581F f = (AbstractC5581F) h;
         Objects.requireNonNull(f);
         Objects.requireNonNull(bVar);
-        return ((Double) f.m22297t0(new C5593H1(4, bVar, d))).doubleValue();
+        return ((Double) f.m22298t0(new C5593H1(4, bVar, d))).doubleValue();
     }
 
     @Override
@@ -238,9 +238,9 @@ public final class C5586G implements DoubleStream {
         AbstractC5581F f2 = f;
         if (i >= 0) {
             if (i != 0) {
-                f2 = AbstractC5572D0.m22425e0(f, j, -1L);
+                f2 = AbstractC5572D0.m22426e0(f, j, -1L);
             }
-            return m22387i(f2);
+            return m22388i(f2);
         }
         throw new IllegalArgumentException(Long.toString(j));
     }
@@ -249,32 +249,32 @@ public final class C5586G implements DoubleStream {
     public DoubleStream sorted() {
         AbstractC5581F f = (AbstractC5581F) this.f18143a;
         Objects.requireNonNull(f);
-        return m22387i(new C5599I2(f));
+        return m22388i(new C5599I2(f));
     }
 
     @Override
     public double sum() {
-        return AbstractC5736m.m22216a((double[]) ((AbstractC5581F) this.f18143a).m22392M0(C5771t.f18471a, C5731l.f18417c, C5766s.f18461b));
+        return AbstractC5736m.m22217a((double[]) ((AbstractC5581F) this.f18143a).m22393M0(C5771t.f18471a, C5731l.f18417c, C5766s.f18461b));
     }
 
     @Override
     public DoubleSummaryStatistics summaryStatistics() {
-        C5543g gVar = (C5543g) ((AbstractC5581F) this.f18143a).m22392M0(C5676a.f18285b, C5676a.f18287d, C5731l.f18416b);
+        C5543g gVar = (C5543g) ((AbstractC5581F) this.f18143a).m22393M0(C5676a.f18285b, C5676a.f18287d, C5731l.f18416b);
         throw new Error("Java 8+ API desugaring (library desugaring) cannot convert to java.util.DoubleSummaryStatistics");
     }
 
     @Override
     public double[] toArray() {
-        return (double[]) AbstractC5572D0.m22432V((AbstractC5602J0) ((AbstractC5581F) this.f18143a).m22296u0(C5726k.f18400e)).mo22156l();
+        return (double[]) AbstractC5572D0.m22433V((AbstractC5602J0) ((AbstractC5581F) this.f18143a).m22297u0(C5726k.f18400e)).mo22157l();
     }
 
     @Override
     public DoubleStream unordered() {
-        return C5706g.m22261i(((AbstractC5581F) this.f18143a).unordered());
+        return C5706g.m22262i(((AbstractC5581F) this.f18143a).unordered());
     }
 
     @Override
     public OptionalDouble reduce(DoubleBinaryOperator doubleBinaryOperator) {
-        return AbstractC5485a.m22557x(((AbstractC5581F) this.f18143a).m22389P0(doubleBinaryOperator == null ? null : new C5520b(doubleBinaryOperator)));
+        return AbstractC5485a.m22558x(((AbstractC5581F) this.f18143a).m22390P0(doubleBinaryOperator == null ? null : new C5520b(doubleBinaryOperator)));
     }
 }

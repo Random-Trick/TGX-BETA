@@ -11,7 +11,7 @@ public final class C1223o {
         this.f4543a = strArr;
     }
 
-    public synchronized boolean m37905a() {
+    public synchronized boolean m37908a() {
         if (this.f4544b) {
             return this.f4545c;
         }
@@ -23,13 +23,13 @@ public final class C1223o {
             this.f4545c = true;
         } catch (UnsatisfiedLinkError unused) {
             String valueOf = String.valueOf(Arrays.toString(this.f4543a));
-            C1230s.m37881i("LibraryLoader", valueOf.length() != 0 ? "Failed to load ".concat(valueOf) : new String("Failed to load "));
+            C1230s.m37884i("LibraryLoader", valueOf.length() != 0 ? "Failed to load ".concat(valueOf) : new String("Failed to load "));
         }
         return this.f4545c;
     }
 
-    public synchronized void m37904b(String... strArr) {
-        C1186a.m38183g(!this.f4544b, "Cannot set libraries after loading");
+    public synchronized void m37907b(String... strArr) {
+        C1186a.m38186g(!this.f4544b, "Cannot set libraries after loading");
         this.f4543a = strArr;
     }
 }

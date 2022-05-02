@@ -7,6 +7,6 @@ public final class DialogInterface$OnClickListenerC5941g implements DialogInterf
 
     @Override
     public final void onClick(DialogInterface dialogInterface, int i) {
-        C5976u.m21663j0(dialogInterface, i);
+        C5976u.m21664j0(dialogInterface, i);
     }
 }

@@ -8,9 +8,9 @@ import pa.AbstractC8088l;
 import qa.C8298k;
 
 public class C5309s extends C5308r {
-    public static final <T> boolean m23354r(Collection<? super T> collection, Iterable<? extends T> iterable) {
-        C8298k.m12934e(collection, "<this>");
-        C8298k.m12934e(iterable, "elements");
+    public static final <T> boolean m23355r(Collection<? super T> collection, Iterable<? extends T> iterable) {
+        C8298k.m12933e(collection, "<this>");
+        C8298k.m12933e(iterable, "elements");
         if (iterable instanceof Collection) {
             return collection.addAll((Collection) iterable);
         }
@@ -24,13 +24,13 @@ public class C5309s extends C5308r {
         return z;
     }
 
-    public static final <T> boolean m23353s(Collection<? super T> collection, T[] tArr) {
-        C8298k.m12934e(collection, "<this>");
-        C8298k.m12934e(tArr, "elements");
-        return collection.addAll(C5294h.m23433c(tArr));
+    public static final <T> boolean m23354s(Collection<? super T> collection, T[] tArr) {
+        C8298k.m12933e(collection, "<this>");
+        C8298k.m12933e(tArr, "elements");
+        return collection.addAll(C5294h.m23434c(tArr));
     }
 
-    public static final <T> boolean m23352t(Iterable<? extends T> iterable, AbstractC8088l<? super T, Boolean> lVar, boolean z) {
+    public static final <T> boolean m23353t(Iterable<? extends T> iterable, AbstractC8088l<? super T, Boolean> lVar, boolean z) {
         Iterator<? extends T> it = iterable.iterator();
         boolean z2 = false;
         while (it.hasNext()) {
@@ -42,12 +42,12 @@ public class C5309s extends C5308r {
         return z2;
     }
 
-    public static final <T> boolean m23351u(List<T> list, AbstractC8088l<? super T, Boolean> lVar, boolean z) {
+    public static final <T> boolean m23352u(List<T> list, AbstractC8088l<? super T, Boolean> lVar, boolean z) {
         int i;
         if (!(list instanceof RandomAccess)) {
-            return m23352t(list, lVar, z);
+            return m23353t(list, lVar, z);
         }
-        int g = C5304n.m23365g(list);
+        int g = C5304n.m23366g(list);
         if (g >= 0) {
             int i2 = 0;
             i = 0;
@@ -70,7 +70,7 @@ public class C5309s extends C5308r {
         if (i >= list.size()) {
             return false;
         }
-        int g2 = C5304n.m23365g(list);
+        int g2 = C5304n.m23366g(list);
         if (i > g2) {
             return true;
         }
@@ -83,15 +83,15 @@ public class C5309s extends C5308r {
         }
     }
 
-    public static final <T> boolean m23350v(List<T> list, AbstractC8088l<? super T, Boolean> lVar) {
-        C8298k.m12934e(list, "<this>");
-        C8298k.m12934e(lVar, "predicate");
-        return m23351u(list, lVar, true);
+    public static final <T> boolean m23351v(List<T> list, AbstractC8088l<? super T, Boolean> lVar) {
+        C8298k.m12933e(list, "<this>");
+        C8298k.m12933e(lVar, "predicate");
+        return m23352u(list, lVar, true);
     }
 
-    public static final <T> boolean m23349w(Collection<? super T> collection, Iterable<? extends T> iterable) {
-        C8298k.m12934e(collection, "<this>");
-        C8298k.m12934e(iterable, "elements");
-        return collection.retainAll(C5301k.m23373a(iterable, collection));
+    public static final <T> boolean m23350w(Collection<? super T> collection, Iterable<? extends T> iterable) {
+        C8298k.m12933e(collection, "<this>");
+        C8298k.m12933e(iterable, "elements");
+        return collection.retainAll(C5301k.m23374a(iterable, collection));
     }
 }

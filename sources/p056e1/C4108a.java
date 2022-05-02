@@ -9,7 +9,7 @@ import android.view.inputmethod.EditorInfo;
 public final class C4108a {
     public static final String[] f13873a = new String[0];
 
-    public static String[] m28902a(EditorInfo editorInfo) {
+    public static String[] m28904a(EditorInfo editorInfo) {
         if (Build.VERSION.SDK_INT >= 25) {
             String[] strArr = editorInfo.contentMimeTypes;
             return strArr != null ? strArr : f13873a;
@@ -25,7 +25,7 @@ public final class C4108a {
         return stringArray != null ? stringArray : f13873a;
     }
 
-    public static void m28901b(EditorInfo editorInfo, String[] strArr) {
+    public static void m28903b(EditorInfo editorInfo, String[] strArr) {
         if (Build.VERSION.SDK_INT >= 25) {
             editorInfo.contentMimeTypes = strArr;
             return;

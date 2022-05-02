@@ -70,7 +70,7 @@ public abstract class AbstractC5492c implements Collection, Serializable {
 
     @Override
     public final Object[] toArray() {
-        long m = this.f18010a.m22540m();
+        long m = this.f18010a.m22541m();
         if (m < 0) {
             m = 0;
         }
@@ -125,7 +125,7 @@ public abstract class AbstractC5492c implements Collection, Serializable {
 
     @Override
     public final Object[] toArray(Object[] objArr) {
-        long m = this.f18010a.m22540m();
+        long m = this.f18010a.m22541m();
         if (m < 0) {
             m = 0;
         }

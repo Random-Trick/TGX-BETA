@@ -23,11 +23,11 @@ public final class C0093d {
         }
     }
 
-    public static C0095b m42375a(int i, long[] jArr, int[] iArr, long j) {
+    public static C0095b m42378a(int i, long[] jArr, int[] iArr, long j) {
         int i2 = Log.TAG_LUX / i;
         int i3 = 0;
         for (int i4 : iArr) {
-            i3 += C1216l0.m37964l(i4, i2);
+            i3 += C1216l0.m37967l(i4, i2);
         }
         long[] jArr2 = new long[i3];
         int[] iArr2 = new int[i3];

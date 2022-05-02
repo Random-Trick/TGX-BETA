@@ -13,18 +13,18 @@ import p028c1.C1452f;
 import p143k0.C6037g;
 
 public class ActivityC7953e extends Activity implements AbstractC0846g, C1452f.AbstractC1453a {
-    public C6037g<Class<Object>, Object> f25856a = new C6037g<>();
-    public C0847h f25857b = new C0847h(this);
+    public C6037g<Class<Object>, Object> f25859a = new C6037g<>();
+    public C0847h f25860b = new C0847h(this);
 
-    public AbstractC0840d mo14008a() {
-        return this.f25857b;
+    public AbstractC0840d mo14007a() {
+        return this.f25860b;
     }
 
     @Override
     public boolean dispatchKeyEvent(KeyEvent keyEvent) {
         View decorView = getWindow().getDecorView();
-        if (decorView == null || !C1452f.m36885d(decorView, keyEvent)) {
-            return C1452f.m36884e(this, decorView, this, keyEvent);
+        if (decorView == null || !C1452f.m36888d(decorView, keyEvent)) {
+            return C1452f.m36887e(this, decorView, this, keyEvent);
         }
         return true;
     }
@@ -32,14 +32,14 @@ public class ActivityC7953e extends Activity implements AbstractC0846g, C1452f.A
     @Override
     public boolean dispatchKeyShortcutEvent(KeyEvent keyEvent) {
         View decorView = getWindow().getDecorView();
-        if (decorView == null || !C1452f.m36885d(decorView, keyEvent)) {
+        if (decorView == null || !C1452f.m36888d(decorView, keyEvent)) {
             return super.dispatchKeyShortcutEvent(keyEvent);
         }
         return true;
     }
 
     @Override
-    public boolean mo14007g(KeyEvent keyEvent) {
+    public boolean mo14006g(KeyEvent keyEvent) {
         return super.dispatchKeyEvent(keyEvent);
     }
 
@@ -47,12 +47,12 @@ public class ActivityC7953e extends Activity implements AbstractC0846g, C1452f.A
     @SuppressLint({"RestrictedApi"})
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        FragmentC0858q.m39628f(this);
+        FragmentC0858q.m39631f(this);
     }
 
     @Override
     public void onSaveInstanceState(Bundle bundle) {
-        this.f25857b.m39652j(AbstractC0840d.EnumC0843c.CREATED);
+        this.f25860b.m39655j(AbstractC0840d.EnumC0843c.CREATED);
         super.onSaveInstanceState(bundle);
     }
 }

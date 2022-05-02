@@ -25,43 +25,43 @@ public final class C4291j extends AbstractC6749a {
         this.f14350O = z6;
     }
 
-    public boolean m28295b() {
+    public boolean m28297b() {
         return this.f14350O;
     }
 
-    public boolean m28294c() {
+    public boolean m28296c() {
         return this.f14353c;
     }
 
-    public boolean m28293d() {
+    public boolean m28295d() {
         return this.f14348M;
     }
 
-    public boolean m28292e() {
+    public boolean m28294e() {
         return this.f14351a;
     }
 
-    public boolean m28291f() {
+    public boolean m28293f() {
         return this.f14351a || this.f14352b;
     }
 
-    public boolean m28290g() {
+    public boolean m28292g() {
         return this.f14349N;
     }
 
-    public boolean m28289h() {
+    public boolean m28291h() {
         return this.f14352b;
     }
 
     @Override
     public void writeToParcel(@RecentlyNonNull Parcel parcel, int i) {
-        int a = C6752c.m19124a(parcel);
-        C6752c.m19122c(parcel, 1, m28292e());
-        C6752c.m19122c(parcel, 2, m28289h());
-        C6752c.m19122c(parcel, 3, m28294c());
-        C6752c.m19122c(parcel, 4, m28293d());
-        C6752c.m19122c(parcel, 5, m28290g());
-        C6752c.m19122c(parcel, 6, m28295b());
-        C6752c.m19123b(parcel, a);
+        int a = C6752c.m19125a(parcel);
+        C6752c.m19123c(parcel, 1, m28294e());
+        C6752c.m19123c(parcel, 2, m28291h());
+        C6752c.m19123c(parcel, 3, m28296c());
+        C6752c.m19123c(parcel, 4, m28295d());
+        C6752c.m19123c(parcel, 5, m28292g());
+        C6752c.m19123c(parcel, 6, m28297b());
+        C6752c.m19124b(parcel, a);
     }
 }

@@ -43,7 +43,7 @@ public final class C0120c extends AbstractC0139f {
                 throw new C0121a(e, 2000);
             }
         }
-        int read = ((InputStream) C1216l0.m37968j(this.f467g)).read(bArr, i, i2);
+        int read = ((InputStream) C1216l0.m37971j(this.f467g)).read(bArr, i, i2);
         if (read == -1) {
             return -1;
         }
@@ -51,7 +51,7 @@ public final class C0120c extends AbstractC0139f {
         if (j2 != -1) {
             this.f468h = j2 - read;
         }
-        m42225s(read);
+        m42228s(read);
         return read;
     }
 
@@ -60,13 +60,13 @@ public final class C0120c extends AbstractC0139f {
         try {
             Uri uri = oVar.f553a;
             this.f466f = uri;
-            String str = (String) C1186a.m38185e(uri.getPath());
+            String str = (String) C1186a.m38188e(uri.getPath());
             if (str.startsWith("/android_asset/")) {
                 str = str.substring(15);
             } else if (str.startsWith("/")) {
                 str = str.substring(1);
             }
-            m42223u(oVar);
+            m42226u(oVar);
             InputStream open = this.f465e.open(str, 1);
             this.f467g = open;
             if (open.skip(oVar.f559g) >= oVar.f559g) {
@@ -81,7 +81,7 @@ public final class C0120c extends AbstractC0139f {
                     }
                 }
                 this.f469i = true;
-                m42222v(oVar);
+                m42225v(oVar);
                 return this.f468h;
             }
             throw new C0121a(null, 2008);
@@ -108,7 +108,7 @@ public final class C0120c extends AbstractC0139f {
             this.f467g = null;
             if (this.f469i) {
                 this.f469i = false;
-                m42224t();
+                m42227t();
             }
         }
     }

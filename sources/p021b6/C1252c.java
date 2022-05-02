@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 import javax.annotation.CheckForNull;
 
 public final class C1252c {
-    public static String m37821a(@CheckForNull String str, @CheckForNull Object... objArr) {
+    public static String m37824a(@CheckForNull String str, @CheckForNull Object... objArr) {
         int length;
         int length2;
         int indexOf;

@@ -48,21 +48,21 @@ public final class C6310b implements C4260a.AbstractC4262b {
 
     @Override
     public byte[] getWrappedMetadataBytes() {
-        return C4263b.m28324a(this);
+        return C4263b.m28326a(this);
     }
 
     @Override
     public C6600g1 getWrappedMetadataFormat() {
-        return C4263b.m28323b(this);
+        return C4263b.m28325b(this);
     }
 
     public int hashCode() {
-        return ((((((((527 + C0201d.m42092b(this.f19850a)) * 31) + C0201d.m42092b(this.f19851b)) * 31) + C0201d.m42092b(this.f19852c)) * 31) + C0201d.m42092b(this.f19848M)) * 31) + C0201d.m42092b(this.f19849N);
+        return ((((((((527 + C0201d.m42095b(this.f19850a)) * 31) + C0201d.m42095b(this.f19851b)) * 31) + C0201d.m42095b(this.f19852c)) * 31) + C0201d.m42095b(this.f19848M)) * 31) + C0201d.m42095b(this.f19849N);
     }
 
     @Override
     public void populateMediaMetadata(C6693s1.C6695b bVar) {
-        C4263b.m28322c(this, bVar);
+        C4263b.m28324c(this, bVar);
     }
 
     public String toString() {

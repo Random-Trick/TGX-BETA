@@ -9,12 +9,12 @@ public final class C5023b {
         this.f16939a = bArr;
     }
 
-    public int m24273a() {
+    public int m24274a() {
         return ((this.f16939a.length - this.f16940b) * 8) - this.f16941c;
     }
 
-    public int m24272b(int i) {
-        if (i <= 0 || i > 32 || i > m24273a()) {
+    public int m24273b(int i) {
+        if (i <= 0 || i > 32 || i > m24274a()) {
             throw new IllegalArgumentException(String.valueOf(i));
         }
         int i2 = this.f16941c;

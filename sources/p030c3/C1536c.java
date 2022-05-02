@@ -22,22 +22,22 @@ public final class C1536c extends AbstractC1543h {
     }
 
     @Override
-    public Context mo36499b() {
+    public Context mo36502b() {
         return this.f5487a;
     }
 
     @Override
-    public String mo36498c() {
+    public String mo36501c() {
         return this.f5490d;
     }
 
     @Override
-    public AbstractC6045a mo36497d() {
+    public AbstractC6045a mo36500d() {
         return this.f5489c;
     }
 
     @Override
-    public AbstractC6045a mo36496e() {
+    public AbstractC6045a mo36499e() {
         return this.f5488b;
     }
 
@@ -49,7 +49,7 @@ public final class C1536c extends AbstractC1543h {
             return false;
         }
         AbstractC1543h hVar = (AbstractC1543h) obj;
-        return this.f5487a.equals(hVar.mo36499b()) && this.f5488b.equals(hVar.mo36496e()) && this.f5489c.equals(hVar.mo36497d()) && this.f5490d.equals(hVar.mo36498c());
+        return this.f5487a.equals(hVar.mo36502b()) && this.f5488b.equals(hVar.mo36499e()) && this.f5489c.equals(hVar.mo36500d()) && this.f5490d.equals(hVar.mo36501c());
     }
 
     public int hashCode() {

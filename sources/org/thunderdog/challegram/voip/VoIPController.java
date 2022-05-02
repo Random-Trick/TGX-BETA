@@ -342,7 +342,7 @@ public class VoIPController {
             for (TdApi.CallServer callServer : callServerArr) {
                 if (callServer.type.getConstructor() != -1507850700) {
                     throw new IllegalArgumentException();
-                } else if (!C5070i.m24061i(callServer.ipAddress) || !C5070i.m24061i(callServer.ipv6Address)) {
+                } else if (!C5070i.m24062i(callServer.ipAddress) || !C5070i.m24062i(callServer.ipv6Address)) {
                     byte[] bArr = ((TdApi.CallServerTypeTelegramReflector) callServer.type).peerTag;
                     if (bArr != null && bArr.length != 16) {
                         throw new IllegalArgumentException("endpoint " + callServer + " has peer_tag of wrong length");

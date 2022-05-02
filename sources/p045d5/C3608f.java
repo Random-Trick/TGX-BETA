@@ -32,9 +32,9 @@ public final class C3608f {
         public final int f12315d;
 
         public C3609a(C3604d.C3606b bVar) {
-            this.f12312a = bVar.m29879a();
-            this.f12313b = C1217m.m37931d(bVar.f12294c);
-            this.f12314c = C1217m.m37931d(bVar.f12295d);
+            this.f12312a = bVar.m29881a();
+            this.f12313b = C1217m.m37934d(bVar.f12294c);
+            this.f12314c = C1217m.m37934d(bVar.f12295d);
             int i = bVar.f12293b;
             if (i == 1) {
                 this.f12315d = 5;
@@ -46,21 +46,21 @@ public final class C3608f {
         }
     }
 
-    public static boolean m29869c(C3604d dVar) {
+    public static boolean m29871c(C3604d dVar) {
         C3604d.C3605a aVar = dVar.f12287a;
         C3604d.C3605a aVar2 = dVar.f12288b;
-        return aVar.m29880b() == 1 && aVar.m29881a(0).f12292a == 0 && aVar2.m29880b() == 1 && aVar2.m29881a(0).f12292a == 0;
+        return aVar.m29882b() == 1 && aVar.m29883a(0).f12292a == 0 && aVar2.m29882b() == 1 && aVar2.m29883a(0).f12292a == 0;
     }
 
-    public void m29871a(int i, float[] fArr, boolean z) {
+    public void m29873a(int i, float[] fArr, boolean z) {
         float[] fArr2;
         C3609a aVar = z ? this.f12305c : this.f12304b;
         if (aVar != null) {
-            ((C1217m.C1219b) C1186a.m38185e(this.f12306d)).m37923d();
-            C1217m.m37933b();
+            ((C1217m.C1219b) C1186a.m38188e(this.f12306d)).m37926d();
+            C1217m.m37936b();
             GLES20.glEnableVertexAttribArray(this.f12309g);
             GLES20.glEnableVertexAttribArray(this.f12310h);
-            C1217m.m37933b();
+            C1217m.m37936b();
             int i2 = this.f12303a;
             if (i2 == 1) {
                 fArr2 = z ? f12300n : f12299m;
@@ -74,35 +74,35 @@ public final class C3608f {
             GLES20.glActiveTexture(33984);
             GLES20.glBindTexture(36197, i);
             GLES20.glUniform1i(this.f12311i, 0);
-            C1217m.m37933b();
+            C1217m.m37936b();
             GLES20.glVertexAttribPointer(this.f12309g, 3, 5126, false, 12, (Buffer) aVar.f12313b);
-            C1217m.m37933b();
+            C1217m.m37936b();
             GLES20.glVertexAttribPointer(this.f12310h, 2, 5126, false, 8, (Buffer) aVar.f12314c);
-            C1217m.m37933b();
+            C1217m.m37936b();
             GLES20.glDrawArrays(aVar.f12315d, 0, aVar.f12312a);
-            C1217m.m37933b();
+            C1217m.m37936b();
             GLES20.glDisableVertexAttribArray(this.f12309g);
             GLES20.glDisableVertexAttribArray(this.f12310h);
         }
     }
 
-    public void m29870b() {
+    public void m29872b() {
         C1217m.C1219b bVar = new C1217m.C1219b(f12296j, f12297k);
         this.f12306d = bVar;
-        this.f12307e = bVar.m37924c("uMvpMatrix");
-        this.f12308f = this.f12306d.m37924c("uTexMatrix");
-        this.f12309g = this.f12306d.m37925b("aPosition");
-        this.f12310h = this.f12306d.m37925b("aTexCoords");
-        this.f12311i = this.f12306d.m37924c("uTexture");
+        this.f12307e = bVar.m37927c("uMvpMatrix");
+        this.f12308f = this.f12306d.m37927c("uTexMatrix");
+        this.f12309g = this.f12306d.m37928b("aPosition");
+        this.f12310h = this.f12306d.m37928b("aTexCoords");
+        this.f12311i = this.f12306d.m37927c("uTexture");
     }
 
-    public void m29868d(C3604d dVar) {
-        if (m29869c(dVar)) {
+    public void m29870d(C3604d dVar) {
+        if (m29871c(dVar)) {
             this.f12303a = dVar.f12289c;
-            C3609a aVar = new C3609a(dVar.f12287a.m29881a(0));
+            C3609a aVar = new C3609a(dVar.f12287a.m29883a(0));
             this.f12304b = aVar;
             if (!dVar.f12290d) {
-                aVar = new C3609a(dVar.f12288b.m29881a(0));
+                aVar = new C3609a(dVar.f12288b.m29883a(0));
             }
             this.f12305c = aVar;
         }

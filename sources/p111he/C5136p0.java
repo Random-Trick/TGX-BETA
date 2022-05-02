@@ -15,20 +15,20 @@ public class C5136p0 {
         this.f17213c = null;
     }
 
-    public long m23838a() {
+    public long m23839a() {
         return this.f17214d;
     }
 
-    public long m23837b() {
+    public long m23838b() {
         return this.f17215e;
     }
 
-    public C5136p0 m23836c(long j) {
+    public C5136p0 m23837c(long j) {
         this.f17214d = j;
         return this;
     }
 
-    public C5136p0 m23835d(long j, long j2) {
+    public C5136p0 m23836d(long j, long j2) {
         this.f17214d = j;
         this.f17215e = j2;
         return this;
@@ -36,7 +36,7 @@ public class C5136p0 {
 
     public String toString() {
         int i = this.f17212b;
-        return i != 0 ? C4403w.m27869i1(i) : this.f17213c;
+        return i != 0 ? C4403w.m27871i1(i) : this.f17213c;
     }
 
     public C5136p0(int i, String str) {

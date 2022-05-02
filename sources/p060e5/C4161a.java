@@ -11,7 +11,7 @@ import p176m5.C6750b;
 public final class C4161a implements Parcelable.Creator<GoogleSignInAccount> {
     @Override
     public final GoogleSignInAccount createFromParcel(Parcel parcel) {
-        int x = C6750b.m19127x(parcel);
+        int x = C6750b.m19128x(parcel);
         String str = null;
         long j = 0;
         String str2 = null;
@@ -25,50 +25,50 @@ public final class C4161a implements Parcelable.Creator<GoogleSignInAccount> {
         String str8 = null;
         int i = 0;
         while (parcel.dataPosition() < x) {
-            int q = C6750b.m19134q(parcel);
-            switch (C6750b.m19140k(q)) {
+            int q = C6750b.m19135q(parcel);
+            switch (C6750b.m19141k(q)) {
                 case 1:
-                    i = C6750b.m19132s(parcel, q);
+                    i = C6750b.m19133s(parcel, q);
                     break;
                 case 2:
-                    str = C6750b.m19146e(parcel, q);
+                    str = C6750b.m19147e(parcel, q);
                     break;
                 case 3:
-                    str2 = C6750b.m19146e(parcel, q);
+                    str2 = C6750b.m19147e(parcel, q);
                     break;
                 case 4:
-                    str3 = C6750b.m19146e(parcel, q);
+                    str3 = C6750b.m19147e(parcel, q);
                     break;
                 case 5:
-                    str4 = C6750b.m19146e(parcel, q);
+                    str4 = C6750b.m19147e(parcel, q);
                     break;
                 case 6:
-                    uri = (Uri) C6750b.m19147d(parcel, q, Uri.CREATOR);
+                    uri = (Uri) C6750b.m19148d(parcel, q, Uri.CREATOR);
                     break;
                 case 7:
-                    str5 = C6750b.m19146e(parcel, q);
+                    str5 = C6750b.m19147e(parcel, q);
                     break;
                 case 8:
-                    j = C6750b.m19130u(parcel, q);
+                    j = C6750b.m19131u(parcel, q);
                     break;
                 case 9:
-                    str6 = C6750b.m19146e(parcel, q);
+                    str6 = C6750b.m19147e(parcel, q);
                     break;
                 case 10:
-                    arrayList = C6750b.m19142i(parcel, q, Scope.CREATOR);
+                    arrayList = C6750b.m19143i(parcel, q, Scope.CREATOR);
                     break;
                 case 11:
-                    str7 = C6750b.m19146e(parcel, q);
+                    str7 = C6750b.m19147e(parcel, q);
                     break;
                 case 12:
-                    str8 = C6750b.m19146e(parcel, q);
+                    str8 = C6750b.m19147e(parcel, q);
                     break;
                 default:
-                    C6750b.m19128w(parcel, q);
+                    C6750b.m19129w(parcel, q);
                     break;
             }
         }
-        C6750b.m19141j(parcel, x);
+        C6750b.m19142j(parcel, x);
         return new GoogleSignInAccount(i, str, str2, str3, str4, uri, str5, j, str6, arrayList, str7, str8);
     }
 

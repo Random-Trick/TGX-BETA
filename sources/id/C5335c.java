@@ -34,12 +34,12 @@ public class C5335c extends AbstractC5333b {
 
     public C5335c(long j, String str, String str2, String str3) {
         super(j, str, str2, str3, false);
-        m23203z(str3.substring(5));
+        m23204z(str3.substring(5));
     }
 
-    public static String m23218k(String str, int i) {
-        if (!new C5335c(-1L, null, null, str).m23213p() && i == 90) {
-            return C5372x.m23063m(0, null, 90);
+    public static String m23219k(String str, int i) {
+        if (!new C5335c(-1L, null, null, str).m23214p() && i == 90) {
+            return C5372x.m23064m(0, null, 90);
         }
         int i2 = 2;
         int i3 = 0;
@@ -60,17 +60,17 @@ public class C5335c extends AbstractC5333b {
         return sb2.toString();
     }
 
-    public static boolean m23212q(C6253l lVar) {
-        return lVar != null && (lVar.m20899r() == null || lVar.m20899r().m13575k()) && ((lVar.m20912j() == null || lVar.m20912j().m14818l()) && (lVar.m20896t() == null || lVar.m20896t().m12494i()));
+    public static boolean m23213q(C6253l lVar) {
+        return lVar != null && (lVar.m20900r() == null || lVar.m20900r().m13574k()) && ((lVar.m20913j() == null || lVar.m20913j().m14818l()) && (lVar.m20897t() == null || lVar.m20897t().m12493i()));
     }
 
-    public static String m23210s(int i, long j, String str) {
+    public static String m23211s(int i, long j, String str) {
         StringBuilder sb2 = new StringBuilder("photo");
         sb2.append(i);
-        if (j != 0 || !C5070i.m24061i(str)) {
+        if (j != 0 || !C5070i.m24062i(str)) {
             sb2.append(",,,");
             sb2.append(j);
-            if (!C5070i.m24057m(str)) {
+            if (!C5070i.m24058m(str)) {
                 sb2.append(",");
                 sb2.append(str);
             }
@@ -78,7 +78,7 @@ public class C5335c extends AbstractC5333b {
         return sb2.toString();
     }
 
-    public static String m23209t(int i, long j, boolean z, int i2) {
+    public static String m23210t(int i, long j, boolean z, int i2) {
         String str;
         if (z || i2 != 0) {
             StringBuilder sb2 = new StringBuilder();
@@ -96,24 +96,24 @@ public class C5335c extends AbstractC5333b {
         } else {
             str = null;
         }
-        return m23210s(i, j, str);
+        return m23211s(i, j, str);
     }
 
-    public static String m23208u(C6253l lVar, long j) {
+    public static String m23209u(C6253l lVar, long j) {
         StringBuilder sb2 = new StringBuilder("photo");
-        sb2.append(lVar.mo20873x());
-        C8111a r = lVar.m20899r();
+        sb2.append(lVar.mo20874x());
+        C8111a r = lVar.m20900r();
         sb2.append(',');
-        if (r != null && !r.m13575k()) {
+        if (r != null && !r.m13574k()) {
             sb2.append(r.toString());
         }
         sb2.append(',');
-        C7856c j2 = lVar.m20912j();
+        C7856c j2 = lVar.m20913j();
         if (j2 != null && !j2.m14818l()) {
             sb2.append(j2.toString());
         }
-        C8431f t = lVar.m20896t();
-        if (t != null && !t.m12494i()) {
+        C8431f t = lVar.m20897t();
+        if (t != null && !t.m12493i()) {
             sb2.append(",p:");
             sb2.append(t.toString());
         }
@@ -124,20 +124,20 @@ public class C5335c extends AbstractC5333b {
         return sb2.toString();
     }
 
-    public static TdApi.InputFileGenerated m23206w(String str, int i) {
-        return new TdApi.InputFileGenerated(str, m23210s(i, AbstractC5333b.m23224g(str), null), 0);
+    public static TdApi.InputFileGenerated m23207w(String str, int i) {
+        return new TdApi.InputFileGenerated(str, m23211s(i, AbstractC5333b.m23225g(str), null), 0);
     }
 
-    public static TdApi.InputFileGenerated m23205x(String str, int i, long j, boolean z, int i2) {
-        return new TdApi.InputFileGenerated(str, m23209t(i, j, z, i2), 0);
+    public static TdApi.InputFileGenerated m23206x(String str, int i, long j, boolean z, int i2) {
+        return new TdApi.InputFileGenerated(str, m23210t(i, j, z, i2), 0);
     }
 
-    public static TdApi.InputFileGenerated m23204y(C6253l lVar) {
-        String B = lVar.m20953B();
-        return new TdApi.InputFileGenerated(B, m23208u(lVar, AbstractC5333b.m23224g(B)), 0);
+    public static TdApi.InputFileGenerated m23205y(C6253l lVar) {
+        String B = lVar.m20954B();
+        return new TdApi.InputFileGenerated(B, m23209u(lVar, AbstractC5333b.m23225g(B)), 0);
     }
 
-    public Bitmap m23221A(Bitmap bitmap, boolean z) {
+    public Bitmap m23222A(Bitmap bitmap, boolean z) {
         int i;
         int i2;
         boolean z2;
@@ -154,7 +154,7 @@ public class C5335c extends AbstractC5333b {
         int i7 = z ? this.f17524f : 0;
         C7856c cVar = this.f17526h;
         if (cVar != null) {
-            i7 = C5069h.m24081l(i7 + cVar.m14822h(), 360);
+            i7 = C5069h.m24082l(i7 + cVar.m14822h(), 360);
             if (this.f17530l == 2) {
                 Log.m14719i("Region reader failed, cropping in-memory", new Object[0]);
                 int width2 = bitmap.getWidth();
@@ -191,7 +191,7 @@ public class C5335c extends AbstractC5333b {
                 }
                 canvas.drawBitmap(bitmap, 0.0f, 0.0f, (Paint) null);
                 if (this.f17527i != null) {
-                    m23219j(canvas, bitmap.getWidth(), bitmap.getHeight());
+                    m23220j(canvas, bitmap.getWidth(), bitmap.getHeight());
                     z2 = true;
                 } else {
                     z2 = false;
@@ -231,7 +231,7 @@ public class C5335c extends AbstractC5333b {
             Bitmap createBitmap2 = Bitmap.createBitmap(bitmap2.getWidth(), bitmap2.getHeight(), Bitmap.Config.ARGB_8888);
             Canvas canvas2 = new Canvas(createBitmap2);
             canvas2.drawBitmap(bitmap2, 0.0f, 0.0f, (Paint) null);
-            m23219j(canvas2, bitmap2.getWidth(), bitmap2.getHeight());
+            m23220j(canvas2, bitmap2.getWidth(), bitmap2.getHeight());
             bitmap2.recycle();
             C7389v0.m16571v2(canvas2);
             bitmap3 = createBitmap2;
@@ -239,11 +239,11 @@ public class C5335c extends AbstractC5333b {
         return Bitmap.createBitmap(bitmap3, i2, i, width - i2, height - i, matrix2, false);
     }
 
-    public android.graphics.Bitmap m23220B(java.io.InputStream r17, android.graphics.BitmapFactory.Options r18, java.lang.String r19) {
-        throw new UnsupportedOperationException("Method not decompiled: id.C5335c.m23220B(java.io.InputStream, android.graphics.BitmapFactory$Options, java.lang.String):android.graphics.Bitmap");
+    public android.graphics.Bitmap m23221B(java.io.InputStream r17, android.graphics.BitmapFactory.Options r18, java.lang.String r19) {
+        throw new UnsupportedOperationException("Method not decompiled: id.C5335c.m23221B(java.io.InputStream, android.graphics.BitmapFactory$Options, java.lang.String):android.graphics.Bitmap");
     }
 
-    public final void m23219j(Canvas canvas, int i, int i2) {
+    public final void m23220j(Canvas canvas, int i, int i2) {
         C8431f fVar = this.f17527i;
         if (fVar == null) {
             return;
@@ -254,17 +254,17 @@ public class C5335c extends AbstractC5333b {
             int i3 = (int) (this.f17535q * width);
             int i4 = (int) (this.f17536r * height);
             Rect rect = this.f17537s;
-            this.f17527i.m12496g(canvas, -((int) (rect.left * width)), -((int) (rect.top * height)), i3, i4);
+            this.f17527i.m12495g(canvas, -((int) (rect.left * width)), -((int) (rect.top * height)), i3, i4);
             return;
         }
-        fVar.m12496g(canvas, 0, 0, i, i2);
+        fVar.m12495g(canvas, 0, 0, i, i2);
     }
 
-    public boolean m23217l() {
+    public boolean m23218l() {
         return this.f17529k;
     }
 
-    public C7856c m23216m() {
+    public C7856c m23217m() {
         C7856c cVar = this.f17526h;
         if (cVar == null || cVar.m14818l()) {
             return null;
@@ -272,31 +272,31 @@ public class C5335c extends AbstractC5333b {
         return this.f17526h;
     }
 
-    public C8431f m23215n() {
+    public C8431f m23216n() {
         C8431f fVar = this.f17527i;
-        if (fVar == null || fVar.m12494i()) {
+        if (fVar == null || fVar.m12493i()) {
             return null;
         }
         return this.f17527i;
     }
 
-    public int m23214o() {
+    public int m23215o() {
         return this.f17528j;
     }
 
-    public boolean m23213p() {
+    public boolean m23214p() {
         C8431f fVar;
         C7856c cVar;
-        return this.f17525g || ((fVar = this.f17527i) != null && !fVar.m12494i()) || ((cVar = this.f17526h) != null && !cVar.m14818l());
+        return this.f17525g || ((fVar = this.f17527i) != null && !fVar.m12493i()) || ((cVar = this.f17526h) != null && !cVar.m14818l());
     }
 
-    public boolean m23211r() {
+    public boolean m23212r() {
         return this.f17525g;
     }
 
-    public boolean m23207v(boolean z) {
+    public boolean m23208v(boolean z) {
         C8431f fVar = this.f17527i;
-        if (fVar != null && !fVar.m12494i()) {
+        if (fVar != null && !fVar.m12493i()) {
             return true;
         }
         C7856c cVar = this.f17526h;
@@ -306,10 +306,10 @@ public class C5335c extends AbstractC5333b {
         return ((z ? this.f17524f : 0) + cVar.m14822h() == 0 && this.f17526h.m14827c() == 0.0f && this.f17530l != 2) ? false : true;
     }
 
-    public final void m23203z(String str) {
+    public final void m23204z(String str) {
         char c;
         String[] split = str.split(",", -1);
-        this.f17524f = C5070i.m24051s(split[0]);
+        this.f17524f = C5070i.m24052s(split[0]);
         if (split.length > 1) {
             this.f17525g = !split[1].isEmpty();
         }
@@ -351,10 +351,10 @@ public class C5335c extends AbstractC5333b {
                 }
                 switch (c) {
                     case 0:
-                        this.f17528j = C5070i.m24051s(substring2);
+                        this.f17528j = C5070i.m24052s(substring2);
                         break;
                     case 1:
-                        this.f17527i = C8431f.m12488o(substring2);
+                        this.f17527i = C8431f.m12487o(substring2);
                         break;
                     case 2:
                         this.f17529k = true;

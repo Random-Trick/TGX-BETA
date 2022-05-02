@@ -15,7 +15,7 @@ public final class C1204i<E> implements Iterable<E> {
     public Set<E> f4509c = Collections.emptySet();
     public List<E> f4506M = Collections.emptyList();
 
-    public Set<E> m38057e() {
+    public Set<E> m38060e() {
         Set<E> set;
         synchronized (this.f4507a) {
             set = this.f4509c;
@@ -23,7 +23,7 @@ public final class C1204i<E> implements Iterable<E> {
         return set;
     }
 
-    public void m38056h(E e) {
+    public void m38059h(E e) {
         synchronized (this.f4507a) {
             ArrayList arrayList = new ArrayList(this.f4506M);
             arrayList.add(e);
@@ -43,7 +43,7 @@ public final class C1204i<E> implements Iterable<E> {
         }
     }
 
-    public int m38055i(E e) {
+    public int m38058i(E e) {
         int intValue;
         synchronized (this.f4507a) {
             intValue = this.f4508b.containsKey(e) ? this.f4508b.get(e).intValue() : 0;
@@ -60,7 +60,7 @@ public final class C1204i<E> implements Iterable<E> {
         return it;
     }
 
-    public void m38054m(E e) {
+    public void m38057m(E e) {
         synchronized (this.f4507a) {
             Integer num = this.f4508b.get(e);
             if (num != null) {

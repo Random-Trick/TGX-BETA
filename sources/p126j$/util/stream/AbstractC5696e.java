@@ -25,7 +25,7 @@ abstract class AbstractC5696e {
         return i == 0 ? this.f18341b : this.f18343d[i] + this.f18341b;
     }
 
-    public int m22281r(int i) {
+    public int m22282r(int i) {
         return 1 << ((i == 0 || i == 1) ? this.f18340a : Math.min((this.f18340a + i) - 1, 30));
     }
 }

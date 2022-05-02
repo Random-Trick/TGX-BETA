@@ -7,22 +7,22 @@ import android.os.Parcelable;
 public final class C0190c {
     public static final ClassLoader f669a = C0190c.class.getClassLoader();
 
-    public static boolean m42124a(Parcel parcel) {
+    public static boolean m42127a(Parcel parcel) {
         return parcel.readInt() != 0;
     }
 
-    public static void m42123b(Parcel parcel, boolean z) {
+    public static void m42126b(Parcel parcel, boolean z) {
         parcel.writeInt(z ? 1 : 0);
     }
 
-    public static <T extends Parcelable> T m42122c(Parcel parcel, Parcelable.Creator<T> creator) {
+    public static <T extends Parcelable> T m42125c(Parcel parcel, Parcelable.Creator<T> creator) {
         if (parcel.readInt() == 0) {
             return null;
         }
         return creator.createFromParcel(parcel);
     }
 
-    public static void m42121d(Parcel parcel, Parcelable parcelable) {
+    public static void m42124d(Parcel parcel, Parcelable parcelable) {
         if (parcelable == null) {
             parcel.writeInt(0);
             return;
@@ -31,7 +31,7 @@ public final class C0190c {
         parcelable.writeToParcel(parcel, 0);
     }
 
-    public static void m42120e(Parcel parcel, IInterface iInterface) {
+    public static void m42123e(Parcel parcel, IInterface iInterface) {
         if (iInterface == null) {
             parcel.writeStrongBinder(null);
         } else {

@@ -9,7 +9,7 @@ public final class C4857z6 implements FilenameFilter {
     @Override
     public final boolean accept(File file, String str) {
         boolean w;
-        w = C4596b7.m27068w(file, str);
+        w = C4596b7.m27070w(file, str);
         return w;
     }
 }

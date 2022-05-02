@@ -8,16 +8,16 @@ import pa.AbstractC8088l;
 import qa.C8298k;
 
 public final class C10474j<T, R> implements AbstractC10466d<R> {
-    public final AbstractC10466d<T> f33554a;
-    public final AbstractC8088l<T, R> f33555b;
+    public final AbstractC10466d<T> f33557a;
+    public final AbstractC8088l<T, R> f33558b;
 
     public static final class C10475a implements Iterator<R>, AbstractC8415a, p126j$.util.Iterator {
-        public final Iterator<T> f33556a;
-        public final C10474j<T, R> f33557b;
+        public final Iterator<T> f33559a;
+        public final C10474j<T, R> f33560b;
 
         public C10475a(C10474j<T, R> jVar) {
-            this.f33557b = jVar;
-            this.f33556a = jVar.f33554a.iterator();
+            this.f33560b = jVar;
+            this.f33559a = jVar.f33557a.iterator();
         }
 
         @Override
@@ -32,12 +32,12 @@ public final class C10474j<T, R> implements AbstractC10466d<R> {
 
         @Override
         public boolean hasNext() {
-            return this.f33556a.hasNext();
+            return this.f33559a.hasNext();
         }
 
         @Override
         public R next() {
-            return (R) this.f33557b.f33555b.mo568a(this.f33556a.next());
+            return (R) this.f33560b.f33558b.mo568a(this.f33559a.next());
         }
 
         @Override
@@ -47,10 +47,10 @@ public final class C10474j<T, R> implements AbstractC10466d<R> {
     }
 
     public C10474j(AbstractC10466d<? extends T> dVar, AbstractC8088l<? super T, ? extends R> lVar) {
-        C8298k.m12934e(dVar, "sequence");
-        C8298k.m12934e(lVar, "transformer");
-        this.f33554a = dVar;
-        this.f33555b = lVar;
+        C8298k.m12933e(dVar, "sequence");
+        C8298k.m12933e(lVar, "transformer");
+        this.f33557a = dVar;
+        this.f33558b = lVar;
     }
 
     @Override

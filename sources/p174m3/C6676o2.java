@@ -27,12 +27,12 @@ public final class C6676o2 extends AbstractC6553a {
         int i2 = 0;
         int i3 = 0;
         for (AbstractC6716x1 x1Var : collection) {
-            this.f20899S[i3] = x1Var.mo19181b();
+            this.f20899S[i3] = x1Var.mo19182b();
             this.f20898R[i3] = i;
             this.f20897Q[i3] = i2;
             i += this.f20899S[i3].mo17297v();
             i2 += this.f20899S[i3].mo17300m();
-            this.f20900T[i3] = x1Var.mo19182a();
+            this.f20900T[i3] = x1Var.mo19183a();
             HashMap<Object, Integer> hashMap = this.f20901U;
             Object obj = this.f20900T[i3];
             i3++;
@@ -44,12 +44,12 @@ public final class C6676o2 extends AbstractC6553a {
 
     @Override
     public int mo17344A(int i) {
-        return C1216l0.m37972h(this.f20897Q, i + 1, false, false);
+        return C1216l0.m37975h(this.f20897Q, i + 1, false, false);
     }
 
     @Override
     public int mo17343B(int i) {
-        return C1216l0.m37972h(this.f20898R, i + 1, false, false);
+        return C1216l0.m37975h(this.f20898R, i + 1, false, false);
     }
 
     @Override
@@ -72,7 +72,7 @@ public final class C6676o2 extends AbstractC6553a {
         return this.f20899S[i];
     }
 
-    public List<AbstractC6604g3> m19585L() {
+    public List<AbstractC6604g3> m19586L() {
         return Arrays.asList(this.f20899S);
     }
 

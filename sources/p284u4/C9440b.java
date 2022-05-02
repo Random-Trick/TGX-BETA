@@ -5,23 +5,23 @@ import p020b5.C1186a;
 import p343y6.C10422b;
 
 public final class C9440b {
-    public final int f30596a;
-    public final int f30597b;
-    public final int f30598c;
-    public final int f30599d;
-    public final int f30600e;
+    public final int f30599a;
+    public final int f30600b;
+    public final int f30601c;
+    public final int f30602d;
+    public final int f30603e;
 
     public C9440b(int i, int i2, int i3, int i4, int i5) {
-        this.f30596a = i;
-        this.f30597b = i2;
-        this.f30598c = i3;
-        this.f30599d = i4;
-        this.f30600e = i5;
+        this.f30599a = i;
+        this.f30600b = i2;
+        this.f30601c = i3;
+        this.f30602d = i4;
+        this.f30603e = i5;
     }
 
     public static C9440b m8641a(String str) {
         char c;
-        C1186a.m38189a(str.startsWith("Format:"));
+        C1186a.m38192a(str.startsWith("Format:"));
         String[] split = TextUtils.split(str.substring(7), ",");
         int i = -1;
         int i2 = -1;

@@ -24,7 +24,7 @@ public final class C0157m extends InputStream {
         }
     }
 
-    public final void m42206m() {
+    public final void m42209m() {
         if (!this.f547M) {
             this.f550a.mo4413c(this.f551b);
             this.f547M = true;
@@ -46,8 +46,8 @@ public final class C0157m extends InputStream {
 
     @Override
     public int read(byte[] bArr, int i, int i2) {
-        C1186a.m38184f(!this.f548N);
-        m42206m();
+        C1186a.m38187f(!this.f548N);
+        m42209m();
         int b = this.f550a.mo4414b(bArr, i, i2);
         if (b == -1) {
             return -1;

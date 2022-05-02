@@ -9,15 +9,15 @@ public final class C6047c implements AbstractC3589b<AbstractC6045a> {
         public static final C6047c f19258a = new C6047c();
     }
 
-    public static C6047c m21450a() {
+    public static C6047c m21451a() {
         return C6048a.f19258a;
     }
 
-    public static AbstractC6045a m21449b() {
-        return (AbstractC6045a) C3591d.m29915c(AbstractC6046b.m21452a(), "Cannot return null from a non-@Nullable @Provides method");
+    public static AbstractC6045a m21450b() {
+        return (AbstractC6045a) C3591d.m29917c(AbstractC6046b.m21453a(), "Cannot return null from a non-@Nullable @Provides method");
     }
 
     public AbstractC6045a get() {
-        return m21449b();
+        return m21450b();
     }
 }

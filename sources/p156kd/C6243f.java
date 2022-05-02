@@ -10,24 +10,24 @@ public class C6243f extends C6246h {
     public C6053a f19683b0;
 
     public C6243f(C10930q6 q6Var, TdApi.Message message) {
-        super(q6Var, C4779t2.m25494j1(message));
+        super(q6Var, C4779t2.m25495j1(message));
         this.f19682a0 = message;
     }
 
-    public C6053a m20973D0() {
+    public C6053a m20974D0() {
         return this.f19683b0;
     }
 
-    public TdApi.Message m20972E0() {
+    public TdApi.Message m20973E0() {
         return this.f19682a0;
     }
 
-    public void m20971F0(C6053a aVar) {
+    public void m20972F0(C6053a aVar) {
         this.f19683b0 = aVar;
     }
 
     @Override
-    public String mo20768d() {
-        return m20929a() + "_apic_" + this.f19704a.f25373id + "_" + this.f19682a0.chatId + "_" + this.f19682a0.f25406id;
+    public String mo20769d() {
+        return m20930a() + "_apic_" + this.f19704a.f25376id + "_" + this.f19682a0.chatId + "_" + this.f19682a0.f25409id;
     }
 }

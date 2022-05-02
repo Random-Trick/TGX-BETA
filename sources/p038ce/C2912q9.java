@@ -31,7 +31,7 @@ public class C2912q9 extends AbstractC9376x4<C2914b> {
         }
 
         @Override
-        public int mo9537vf() {
+        public int mo9536vf() {
             return R.string.GlobalSearch;
         }
     }
@@ -124,7 +124,7 @@ public class C2912q9 extends AbstractC9376x4<C2914b> {
 
     @Override
     public int mo8854gg() {
-        return C5070i.m24061i(m9131x9().f9722c) ? 1 : 2;
+        return C5070i.m24062i(m9131x9().f9722c) ? 1 : 2;
     }
 
     @Override
@@ -145,13 +145,13 @@ public class C2912q9 extends AbstractC9376x4<C2914b> {
     public AbstractC9323v4<?> mo8846mg(Context context, int i) {
         C2914b x9 = m9131x9();
         if (i == 0) {
-            View$OnClickListenerC2971rh rhVar = new View$OnClickListenerC2971rh(mo4347s(), this.f30167b);
-            rhVar.m32664Lp(new View$OnClickListenerC2971rh.C2977c0(x9.f9720a, this.f30167b.m2771L3(x9.f9721b), x9.f9722c, x9.f9723d, (TdApi.SearchMessagesFilter) null));
+            View$OnClickListenerC2971rh rhVar = new View$OnClickListenerC2971rh(mo4347s(), this.f30170b);
+            rhVar.m32667Lp(new View$OnClickListenerC2971rh.C2977c0(x9.f9720a, this.f30170b.m2771L3(x9.f9721b), x9.f9722c, x9.f9723d, (TdApi.SearchMessagesFilter) null));
             return rhVar;
         } else if (i != 1) {
             return null;
         } else {
-            C2913a aVar = new C2913a(mo4347s(), this.f30167b);
+            C2913a aVar = new C2913a(mo4347s(), this.f30170b);
             aVar.m9476Ad(x9.f9722c);
             return aVar;
         }
@@ -161,16 +161,16 @@ public class C2912q9 extends AbstractC9376x4<C2914b> {
     public void mo8845ng(Context context, FrameLayoutFix frameLayoutFix, ViewPager viewPager) {
         C2915c cVar = new C2915c(context);
         this.f9718x0 = cVar;
-        cVar.setLayoutParams(FrameLayoutFix.m18008s1(-1, C4896n.m24478e()));
+        cVar.setLayoutParams(FrameLayoutFix.m18008s1(-1, C4896n.m24479e()));
         C9239m mVar = (C9239m) m8851ig(0).mo8869G9();
         mVar.setPhotoOpenDisabled(true);
         this.f9718x0.addView(mVar);
         if (mo8854gg() > 1) {
             mVar.setNeedArrow(true);
-            TextView L2 = mo4347s().m14552P1().m9757I().m10109L2(context);
+            TextView L2 = mo4347s().m14551P1().m9756I().m10108L2(context);
             FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) L2.getLayoutParams();
             ((ViewGroup.MarginLayoutParams) layoutParams).topMargin -= View$OnClickListenerC9170d1.getTopOffset();
-            ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin = C1357a0.m37541i(68.0f) + C1357a0.m37541i(16.0f);
+            ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin = C1357a0.m37544i(68.0f) + C1357a0.m37544i(16.0f);
             L2.setText(((C2914b) m9131x9()).f9722c);
             L2.setAlpha(0.0f);
             m9126y8(L2);
@@ -181,7 +181,7 @@ public class C2912q9 extends AbstractC9376x4<C2914b> {
             imageView.setColorFilter(C11524j.m217S0());
             imageView.setAlpha(0.15f);
             m9184q8(imageView, R.id.theme_color_text);
-            imageView.setLayoutParams(FrameLayoutFix.m18006u1(C1357a0.m37541i(24.0f), C4896n.m24478e(), 3, C1357a0.m37541i(68.0f) - C1357a0.m37541i(12.0f), 0, 0, 0));
+            imageView.setLayoutParams(FrameLayoutFix.m18006u1(C1357a0.m37544i(24.0f), C4896n.m24479e(), 3, C1357a0.m37544i(68.0f) - C1357a0.m37544i(12.0f), 0, 0, 0));
             this.f9718x0.addView(imageView);
         }
     }

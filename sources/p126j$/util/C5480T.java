@@ -21,7 +21,7 @@ public class C5480T implements AbstractC5468G {
     }
 
     @Override
-    public boolean mo22124a(Consumer consumer) {
+    public boolean mo22125a(Consumer consumer) {
         Objects.requireNonNull(consumer);
         if (this.f17959b == null) {
             this.f17959b = this.f17958a.iterator();
@@ -30,7 +30,7 @@ public class C5480T implements AbstractC5468G {
         if (!this.f17959b.hasNext()) {
             return false;
         }
-        consumer.mo22128k(this.f17959b.next());
+        consumer.mo22129k(this.f17959b.next());
         return true;
     }
 
@@ -68,7 +68,7 @@ public class C5480T implements AbstractC5468G {
 
     @Override
     public Comparator getComparator() {
-        if (AbstractC5485a.m22568j(this, 4)) {
+        if (AbstractC5485a.m22569j(this, 4)) {
             return null;
         }
         throw new IllegalStateException();
@@ -76,12 +76,12 @@ public class C5480T implements AbstractC5468G {
 
     @Override
     public long getExactSizeIfKnown() {
-        return AbstractC5485a.m22569h(this);
+        return AbstractC5485a.m22570h(this);
     }
 
     @Override
     public boolean hasCharacteristics(int i) {
-        return AbstractC5485a.m22568j(this, i);
+        return AbstractC5485a.m22569j(this, i);
     }
 
     @Override

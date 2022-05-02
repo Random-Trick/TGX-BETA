@@ -22,10 +22,10 @@ public class BinderC0189b extends Binder implements IInterface {
         } else if (super.onTransact(i, parcel, parcel2, i2)) {
             return true;
         }
-        return mo24285q(i, parcel, parcel2, i2);
+        return mo24286q(i, parcel, parcel2, i2);
     }
 
-    public boolean mo24285q(int i, Parcel parcel, Parcel parcel2, int i2) {
+    public boolean mo24286q(int i, Parcel parcel, Parcel parcel2, int i2) {
         throw null;
     }
 }

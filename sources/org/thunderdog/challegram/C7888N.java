@@ -66,7 +66,7 @@ public final class C7888N {
     public static native float iimg(float f);
 
     public static boolean init() {
-        return C4861c.m24981d();
+        return C4861c.m24982d();
     }
 
     public static native int isOpusFile(String str);

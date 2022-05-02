@@ -5,11 +5,11 @@ import p149k6.AbstractC6201f;
 import p163l5.AbstractC6355k;
 
 public interface AbstractC5891f extends C5850a.AbstractC5859f {
-    void mo21078c();
+    void mo21079c();
 
-    void mo21077f(AbstractC6201f fVar);
+    void mo21078f(AbstractC6201f fVar);
 
-    void mo21076k(AbstractC6355k kVar, boolean z);
+    void mo21077k(AbstractC6355k kVar, boolean z);
 
-    void mo21075l();
+    void mo21076l();
 }

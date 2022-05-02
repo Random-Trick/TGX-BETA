@@ -15,11 +15,11 @@ public final class C3604d {
             this.f12291a = bVarArr;
         }
 
-        public C3606b m29881a(int i) {
+        public C3606b m29883a(int i) {
             return this.f12291a[i];
         }
 
-        public int m29880b() {
+        public int m29882b() {
             return this.f12291a.length;
         }
     }
@@ -32,13 +32,13 @@ public final class C3604d {
 
         public C3606b(int i, float[] fArr, float[] fArr2, int i2) {
             this.f12292a = i;
-            C1186a.m38189a(((long) fArr.length) * 2 == ((long) fArr2.length) * 3);
+            C1186a.m38192a(((long) fArr.length) * 2 == ((long) fArr2.length) * 3);
             this.f12294c = fArr;
             this.f12295d = fArr2;
             this.f12293b = i2;
         }
 
-        public int m29879a() {
+        public int m29881a() {
             return this.f12294c.length / 3;
         }
     }
@@ -47,7 +47,7 @@ public final class C3604d {
         this(aVar, aVar, i);
     }
 
-    public static C3604d m29883a(float f, int i, int i2, float f2, float f3, int i3) {
+    public static C3604d m29885a(float f, int i, int i2, float f2, float f3, int i3) {
         int i4;
         float f4;
         float[] fArr;
@@ -56,11 +56,11 @@ public final class C3604d {
         int i7;
         int i8 = i;
         int i9 = i2;
-        C1186a.m38189a(f > 0.0f);
-        C1186a.m38189a(i8 >= 1);
-        C1186a.m38189a(i9 >= 1);
-        C1186a.m38189a(f2 > 0.0f && f2 <= 180.0f);
-        C1186a.m38189a(f3 > 0.0f && f3 <= 360.0f);
+        C1186a.m38192a(f > 0.0f);
+        C1186a.m38192a(i8 >= 1);
+        C1186a.m38192a(i9 >= 1);
+        C1186a.m38192a(f2 > 0.0f && f2 <= 180.0f);
+        C1186a.m38192a(f3 > 0.0f && f3 <= 360.0f);
         float radians = (float) Math.toRadians(f2);
         float radians2 = (float) Math.toRadians(f3);
         float f5 = radians / i8;
@@ -161,8 +161,8 @@ public final class C3604d {
         return new C3604d(new C3605a(new C3606b(0, fArr2, fArr3, 1)), i3);
     }
 
-    public static C3604d m29882b(int i) {
-        return m29883a(50.0f, 36, 72, 180.0f, 360.0f, i);
+    public static C3604d m29884b(int i) {
+        return m29885a(50.0f, 36, 72, 180.0f, 360.0f, i);
     }
 
     public C3604d(C3605a aVar, C3605a aVar2, int i) {

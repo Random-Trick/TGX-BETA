@@ -17,7 +17,7 @@ public class C4323c {
     public static final C4323c f14391a = new C4323c();
 
     @RecentlyNonNull
-    public static ByteBuffer m28281a(@RecentlyNonNull ByteBuffer byteBuffer) {
+    public static ByteBuffer m28283a(@RecentlyNonNull ByteBuffer byteBuffer) {
         if (byteBuffer.hasArray()) {
             return byteBuffer;
         }
@@ -28,12 +28,12 @@ public class C4323c {
     }
 
     @RecentlyNonNull
-    public static C4323c m28278d() {
+    public static C4323c m28280d() {
         return f14391a;
     }
 
     @RecentlyNonNull
-    public static ByteBuffer m28276f(@RecentlyNonNull ByteBuffer byteBuffer, boolean z) {
+    public static ByteBuffer m28278f(@RecentlyNonNull ByteBuffer byteBuffer, boolean z) {
         ByteBuffer byteBuffer2;
         int i;
         byteBuffer.rewind();
@@ -58,7 +58,7 @@ public class C4323c {
         return byteBuffer2;
     }
 
-    public static Bitmap m28275g(Bitmap bitmap, int i, int i2, int i3) {
+    public static Bitmap m28277g(Bitmap bitmap, int i, int i2, int i3) {
         if (i == 0) {
             return Bitmap.createBitmap(bitmap, 0, 0, i2, i3);
         }
@@ -68,7 +68,7 @@ public class C4323c {
     }
 
     @TargetApi(19)
-    public static final void m28274h(Image.Plane plane, int i, int i2, byte[] bArr, int i3, int i4) {
+    public static final void m28276h(Image.Plane plane, int i, int i2, byte[] bArr, int i3, int i4) {
         ByteBuffer buffer = plane.getBuffer();
         buffer.rewind();
         int limit = ((buffer.limit() + plane.getRowStride()) - 1) / plane.getRowStride();
@@ -87,8 +87,8 @@ public class C4323c {
         }
     }
 
-    public Bitmap m28280b(@RecentlyNonNull Image image, int i) {
-        C6378r.m20515b(image.getFormat() == 256, "Only JPEG and YUV_420_888 are supported now");
+    public Bitmap m28282b(@RecentlyNonNull Image image, int i) {
+        C6378r.m20516b(image.getFormat() == 256, "Only JPEG and YUV_420_888 are supported now");
         Image.Plane[] planes = image.getPlanes();
         if (planes == null || planes.length != 1) {
             throw new IllegalArgumentException("Unexpected image format, JPEG should have exactly 1 image plane");
@@ -98,14 +98,14 @@ public class C4323c {
         int remaining = buffer.remaining();
         byte[] bArr = new byte[remaining];
         buffer.get(bArr);
-        return m28275g(BitmapFactory.decodeByteArray(bArr, 0, remaining), i, image.getWidth(), image.getHeight());
+        return m28277g(BitmapFactory.decodeByteArray(bArr, 0, remaining), i, image.getWidth(), image.getHeight());
     }
 
-    public ByteBuffer m28279c(@RecentlyNonNull C4164a aVar, boolean z) {
+    public ByteBuffer m28281c(@RecentlyNonNull C4164a aVar, boolean z) {
         ByteBuffer byteBuffer;
-        int e = aVar.m28641e();
+        int e = aVar.m28643e();
         if (e == -1) {
-            Bitmap bitmap = (Bitmap) C6378r.m20506k(aVar.m28643c());
+            Bitmap bitmap = (Bitmap) C6378r.m20507k(aVar.m28645c());
             int width = bitmap.getWidth();
             int height = bitmap.getHeight();
             int i = width * height;
@@ -143,23 +143,23 @@ public class C4323c {
         } else if (e != 17) {
             if (e != 35) {
                 if (e == 842094169) {
-                    return m28276f((ByteBuffer) C6378r.m20506k(aVar.m28642d()), z);
+                    return m28278f((ByteBuffer) C6378r.m20507k(aVar.m28644d()), z);
                 }
                 throw new C9987a("Unsupported image format", 13);
             } else if (Build.VERSION.SDK_INT >= 19) {
-                return m28277e((Image.Plane[]) C6378r.m20506k(aVar.m28638h()), aVar.m28636j(), aVar.m28640f());
+                return m28279e((Image.Plane[]) C6378r.m20507k(aVar.m28640h()), aVar.m28638j(), aVar.m28642f());
             } else {
                 throw new C9987a("Unsupported image format", 13);
             }
         } else if (z) {
-            return m28281a((ByteBuffer) C6378r.m20506k(aVar.m28642d()));
+            return m28283a((ByteBuffer) C6378r.m20507k(aVar.m28644d()));
         } else {
-            return (ByteBuffer) C6378r.m20506k(aVar.m28642d());
+            return (ByteBuffer) C6378r.m20507k(aVar.m28644d());
         }
     }
 
     @RecentlyNonNull
-    public ByteBuffer m28277e(@RecentlyNonNull Image.Plane[] planeArr, int i, int i2) {
+    public ByteBuffer m28279e(@RecentlyNonNull Image.Plane[] planeArr, int i, int i2) {
         int i3 = i * i2;
         int i4 = i3 / 4;
         byte[] bArr = new byte[i4 + i4 + i3];
@@ -179,9 +179,9 @@ public class C4323c {
             planeArr[2].getBuffer().get(bArr, i3, 1);
             buffer3.get(bArr, i3 + 1, i5 - 1);
         } else {
-            m28274h(planeArr[0], i, i2, bArr, 0, 1);
-            m28274h(planeArr[1], i, i2, bArr, i3 + 1, 2);
-            m28274h(planeArr[2], i, i2, bArr, i3, 2);
+            m28276h(planeArr[0], i, i2, bArr, 0, 1);
+            m28276h(planeArr[1], i, i2, bArr, i3 + 1, 2);
+            m28276h(planeArr[2], i, i2, bArr, i3, 2);
         }
         return ByteBuffer.wrap(bArr);
     }

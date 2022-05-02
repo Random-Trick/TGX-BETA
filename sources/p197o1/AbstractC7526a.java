@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 
 public abstract class AbstractC7526a {
     public static <T extends AbstractC0846g & AbstractC0869v> AbstractC7526a m15736b(T t) {
-        return new C7527b(t, t.mo39607e());
+        return new C7527b(t, t.mo39610e());
     }
 
     @Deprecated

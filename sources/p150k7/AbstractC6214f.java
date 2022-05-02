@@ -14,10 +14,10 @@ public interface AbstractC6214f {
             this.f19625a = i;
         }
 
-        public int m21059a() {
+        public int m21060a() {
             return this.f19625a;
         }
     }
 
-    EnumC6215a mo21060a(String str);
+    EnumC6215a mo21061a(String str);
 }

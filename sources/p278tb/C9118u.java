@@ -19,51 +19,51 @@ import qa.C8294g;
 import qa.C8298k;
 
 public final class C9118u {
-    public static final C9119a f29325e = new C9119a(null);
-    public final AbstractC5044d f29326a;
-    public final EnumC9091g0 f29327b;
-    public final C9094i f29328c;
-    public final List<Certificate> f29329d;
+    public static final C9119a f29328e = new C9119a(null);
+    public final AbstractC5044d f29329a;
+    public final EnumC9091g0 f29330b;
+    public final C9094i f29331c;
+    public final List<Certificate> f29332d;
 
     public static final class C9119a {
 
         public static final class C9120a extends AbstractC8299l implements AbstractC8077a<List<? extends Certificate>> {
-            public final List f29330b;
+            public final List f29333b;
 
             public C9120a(List list) {
                 super(0);
-                this.f29330b = list;
+                this.f29333b = list;
             }
 
             public final List<Certificate> mo4925b() {
-                return this.f29330b;
+                return this.f29333b;
             }
         }
 
         public C9119a() {
         }
 
-        public final C9118u m10377a(SSLSession sSLSession) {
+        public final C9118u m10376a(SSLSession sSLSession) {
             List<Certificate> list;
-            C8298k.m12934e(sSLSession, "$this$handshake");
+            C8298k.m12933e(sSLSession, "$this$handshake");
             String cipherSuite = sSLSession.getCipherSuite();
             if (cipherSuite != null) {
                 int hashCode = cipherSuite.hashCode();
                 if (hashCode == 1019404634 ? cipherSuite.equals("TLS_NULL_WITH_NULL_NULL") : hashCode == 1208658923 && cipherSuite.equals("SSL_NULL_WITH_NULL_NULL")) {
                     throw new IOException("cipherSuite == " + cipherSuite);
                 }
-                C9094i b = C9094i.f29265s1.m10458b(cipherSuite);
+                C9094i b = C9094i.f29268s1.m10457b(cipherSuite);
                 String protocol = sSLSession.getProtocol();
                 if (protocol == null) {
                     throw new IllegalStateException("tlsVersion == null".toString());
-                } else if (!C8298k.m12937b("NONE", protocol)) {
-                    EnumC9091g0 a = EnumC9091g0.f29152Q.m10467a(protocol);
+                } else if (!C8298k.m12936b("NONE", protocol)) {
+                    EnumC9091g0 a = EnumC9091g0.f29155Q.m10466a(protocol);
                     try {
-                        list = m10376b(sSLSession.getPeerCertificates());
+                        list = m10375b(sSLSession.getPeerCertificates());
                     } catch (SSLPeerUnverifiedException unused) {
-                        list = C5304n.m23366f();
+                        list = C5304n.m23367f();
                     }
-                    return new C9118u(a, b, m10376b(sSLSession.getLocalCertificates()), new C9120a(list));
+                    return new C9118u(a, b, m10375b(sSLSession.getLocalCertificates()), new C9120a(list));
                 } else {
                     throw new IOException("tlsVersion == NONE");
                 }
@@ -72,11 +72,11 @@ public final class C9118u {
             }
         }
 
-        public final List<Certificate> m10376b(Certificate[] certificateArr) {
+        public final List<Certificate> m10375b(Certificate[] certificateArr) {
             if (certificateArr != null) {
                 return C9489b.m8504t((Certificate[]) Arrays.copyOf(certificateArr, certificateArr.length));
             }
-            return C5304n.m23366f();
+            return C5304n.m23367f();
         }
 
         public C9119a(C8294g gVar) {
@@ -85,62 +85,62 @@ public final class C9118u {
     }
 
     public static final class C9121b extends AbstractC8299l implements AbstractC8077a<List<? extends Certificate>> {
-        public final AbstractC8077a f29331b;
+        public final AbstractC8077a f29334b;
 
         public C9121b(AbstractC8077a aVar) {
             super(0);
-            this.f29331b = aVar;
+            this.f29334b = aVar;
         }
 
         public final List<Certificate> mo4925b() {
             try {
-                return (List) this.f29331b.mo4925b();
+                return (List) this.f29334b.mo4925b();
             } catch (SSLPeerUnverifiedException unused) {
-                return C5304n.m23366f();
+                return C5304n.m23367f();
             }
         }
     }
 
     public C9118u(EnumC9091g0 g0Var, C9094i iVar, List<? extends Certificate> list, AbstractC8077a<? extends List<? extends Certificate>> aVar) {
-        C8298k.m12934e(g0Var, "tlsVersion");
-        C8298k.m12934e(iVar, "cipherSuite");
-        C8298k.m12934e(list, "localCertificates");
-        C8298k.m12934e(aVar, "peerCertificatesFn");
-        this.f29327b = g0Var;
-        this.f29328c = iVar;
-        this.f29329d = list;
-        this.f29326a = C5045e.m24197a(new C9121b(aVar));
+        C8298k.m12933e(g0Var, "tlsVersion");
+        C8298k.m12933e(iVar, "cipherSuite");
+        C8298k.m12933e(list, "localCertificates");
+        C8298k.m12933e(aVar, "peerCertificatesFn");
+        this.f29330b = g0Var;
+        this.f29331c = iVar;
+        this.f29332d = list;
+        this.f29329a = C5045e.m24198a(new C9121b(aVar));
     }
 
-    public final C9094i m10382a() {
-        return this.f29328c;
+    public final C9094i m10381a() {
+        return this.f29331c;
     }
 
-    public final String m10381b(Certificate certificate) {
+    public final String m10380b(Certificate certificate) {
         if (certificate instanceof X509Certificate) {
             return ((X509Certificate) certificate).getSubjectDN().toString();
         }
         String type = certificate.getType();
-        C8298k.m12935d(type, "type");
+        C8298k.m12934d(type, "type");
         return type;
     }
 
-    public final List<Certificate> m10380c() {
-        return this.f29329d;
+    public final List<Certificate> m10379c() {
+        return this.f29332d;
     }
 
-    public final List<Certificate> m10379d() {
-        return (List) this.f29326a.getValue();
+    public final List<Certificate> m10378d() {
+        return (List) this.f29329a.getValue();
     }
 
-    public final EnumC9091g0 m10378e() {
-        return this.f29327b;
+    public final EnumC9091g0 m10377e() {
+        return this.f29330b;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof C9118u) {
             C9118u uVar = (C9118u) obj;
-            if (uVar.f29327b == this.f29327b && C8298k.m12937b(uVar.f29328c, this.f29328c) && C8298k.m12937b(uVar.m10379d(), m10379d()) && C8298k.m12937b(uVar.f29329d, this.f29329d)) {
+            if (uVar.f29330b == this.f29330b && C8298k.m12936b(uVar.f29331c, this.f29331c) && C8298k.m12936b(uVar.m10378d(), m10378d()) && C8298k.m12936b(uVar.f29332d, this.f29332d)) {
                 return true;
             }
         }
@@ -148,32 +148,32 @@ public final class C9118u {
     }
 
     public int hashCode() {
-        return ((((((527 + this.f29327b.hashCode()) * 31) + this.f29328c.hashCode()) * 31) + m10379d().hashCode()) * 31) + this.f29329d.hashCode();
+        return ((((((527 + this.f29330b.hashCode()) * 31) + this.f29331c.hashCode()) * 31) + m10378d().hashCode()) * 31) + this.f29332d.hashCode();
     }
 
     public String toString() {
-        List<Certificate> d = m10379d();
-        ArrayList arrayList = new ArrayList(C5305o.m23357o(d, 10));
+        List<Certificate> d = m10378d();
+        ArrayList arrayList = new ArrayList(C5305o.m23358o(d, 10));
         for (Certificate certificate : d) {
-            arrayList.add(m10381b(certificate));
+            arrayList.add(m10380b(certificate));
         }
         String obj = arrayList.toString();
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Handshake{");
         sb2.append("tlsVersion=");
-        sb2.append(this.f29327b);
+        sb2.append(this.f29330b);
         sb2.append(' ');
         sb2.append("cipherSuite=");
-        sb2.append(this.f29328c);
+        sb2.append(this.f29331c);
         sb2.append(' ');
         sb2.append("peerCertificates=");
         sb2.append(obj);
         sb2.append(' ');
         sb2.append("localCertificates=");
-        List<Certificate> list = this.f29329d;
-        ArrayList arrayList2 = new ArrayList(C5305o.m23357o(list, 10));
+        List<Certificate> list = this.f29332d;
+        ArrayList arrayList2 = new ArrayList(C5305o.m23358o(list, 10));
         for (Certificate certificate2 : list) {
-            arrayList2.add(m10381b(certificate2));
+            arrayList2.add(m10380b(certificate2));
         }
         sb2.append(arrayList2);
         sb2.append('}');

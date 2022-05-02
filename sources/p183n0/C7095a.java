@@ -7,49 +7,49 @@ import p016b1.C1130f;
 import p143k0.C6037g;
 
 public final class C7095a<T> {
-    public final AbstractC1129e<ArrayList<T>> f22576a = new C1130f(10);
-    public final C6037g<T, ArrayList<T>> f22577b = new C6037g<>();
-    public final ArrayList<T> f22578c = new ArrayList<>();
-    public final HashSet<T> f22579d = new HashSet<>();
+    public final AbstractC1129e<ArrayList<T>> f22579a = new C1130f(10);
+    public final C6037g<T, ArrayList<T>> f22580b = new C6037g<>();
+    public final ArrayList<T> f22581c = new ArrayList<>();
+    public final HashSet<T> f22582d = new HashSet<>();
 
     public void m17750a(T t, T t2) {
-        if (!this.f22577b.containsKey(t) || !this.f22577b.containsKey(t2)) {
+        if (!this.f22580b.containsKey(t) || !this.f22580b.containsKey(t2)) {
             throw new IllegalArgumentException("All nodes must be present in the graph before being added as an edge");
         }
-        ArrayList<T> arrayList = this.f22577b.get(t);
+        ArrayList<T> arrayList = this.f22580b.get(t);
         if (arrayList == null) {
             arrayList = m17745f();
-            this.f22577b.put(t, arrayList);
+            this.f22580b.put(t, arrayList);
         }
         arrayList.add(t2);
     }
 
     public void m17749b(T t) {
-        if (!this.f22577b.containsKey(t)) {
-            this.f22577b.put(t, null);
+        if (!this.f22580b.containsKey(t)) {
+            this.f22580b.put(t, null);
         }
     }
 
     public void m17748c() {
-        int size = this.f22577b.size();
+        int size = this.f22580b.size();
         for (int i = 0; i < size; i++) {
-            ArrayList<T> l = this.f22577b.m21476l(i);
+            ArrayList<T> l = this.f22580b.m21477l(i);
             if (l != null) {
                 m17742i(l);
             }
         }
-        this.f22577b.clear();
+        this.f22580b.clear();
     }
 
     public boolean m17747d(T t) {
-        return this.f22577b.containsKey(t);
+        return this.f22580b.containsKey(t);
     }
 
     public final void m17746e(T t, ArrayList<T> arrayList, HashSet<T> hashSet) {
         if (!arrayList.contains(t)) {
             if (!hashSet.contains(t)) {
                 hashSet.add(t);
-                ArrayList<T> arrayList2 = this.f22577b.get(t);
+                ArrayList<T> arrayList2 = this.f22580b.get(t);
                 if (arrayList2 != null) {
                     int size = arrayList2.size();
                     for (int i = 0; i < size; i++) {
@@ -65,24 +65,24 @@ public final class C7095a<T> {
     }
 
     public final ArrayList<T> m17745f() {
-        ArrayList<T> b = this.f22576a.mo38327b();
+        ArrayList<T> b = this.f22579a.mo38330b();
         return b == null ? new ArrayList<>() : b;
     }
 
     public ArrayList<T> m17744g() {
-        this.f22578c.clear();
-        this.f22579d.clear();
-        int size = this.f22577b.size();
+        this.f22581c.clear();
+        this.f22582d.clear();
+        int size = this.f22580b.size();
         for (int i = 0; i < size; i++) {
-            m17746e(this.f22577b.m21479i(i), this.f22578c, this.f22579d);
+            m17746e(this.f22580b.m21480i(i), this.f22581c, this.f22582d);
         }
-        return this.f22578c;
+        return this.f22581c;
     }
 
     public boolean m17743h(T t) {
-        int size = this.f22577b.size();
+        int size = this.f22580b.size();
         for (int i = 0; i < size; i++) {
-            ArrayList<T> l = this.f22577b.m21476l(i);
+            ArrayList<T> l = this.f22580b.m21477l(i);
             if (l != null && l.contains(t)) {
                 return true;
             }
@@ -92,6 +92,6 @@ public final class C7095a<T> {
 
     public final void m17742i(ArrayList<T> arrayList) {
         arrayList.clear();
-        this.f22576a.mo38328a(arrayList);
+        this.f22579a.mo38331a(arrayList);
     }
 }

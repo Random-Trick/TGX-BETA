@@ -14,11 +14,11 @@ public class RunnableC0266h implements AbstractC3514b.AbstractC3516b, AbstractC3
     public AbstractC0267a f804c;
 
     public interface AbstractC0267a {
-        void mo41918Q0();
+        void mo41921Q0();
 
-        void mo41917V();
+        void mo41920V();
 
-        void mo41916w0(String str);
+        void mo41919w0(String str);
     }
 
     public RunnableC0266h(String str, C0274o oVar, AbstractC0267a aVar) {
@@ -28,7 +28,7 @@ public class RunnableC0266h implements AbstractC3514b.AbstractC3516b, AbstractC3
     }
 
     @Override
-    public void mo30257a() {
+    public void mo30259a() {
         if (Log.isEnabled(Log.TAG_YOUTUBE)) {
             Log.m14721i((int) Log.TAG_YOUTUBE, "onStopped", new Object[0]);
         }
@@ -38,52 +38,52 @@ public class RunnableC0266h implements AbstractC3514b.AbstractC3516b, AbstractC3
     }
 
     @Override
-    public void mo30256b(boolean z) {
+    public void mo30258b(boolean z) {
         if (Log.isEnabled(Log.TAG_YOUTUBE)) {
             Log.m14721i((int) Log.TAG_YOUTUBE, "onBuffering", new Object[0]);
         }
     }
 
     @Override
-    public void mo30252c() {
+    public void mo30254c() {
         if (Log.isEnabled(Log.TAG_YOUTUBE)) {
             Log.m14721i((int) Log.TAG_YOUTUBE, "onAdStarted", new Object[0]);
         }
     }
 
     @Override
-    public void mo30259d(AbstractC3514b.AbstractC3520f fVar, AbstractC3514b bVar, boolean z) {
+    public void mo30261d(AbstractC3514b.AbstractC3520f fVar, AbstractC3514b bVar, boolean z) {
         if (Log.isEnabled(Log.TAG_YOUTUBE)) {
             Log.m14721i((int) Log.TAG_YOUTUBE, "YouTube: onInitializationSuccess restored: %b player: %s, provider: %s", Boolean.valueOf(z), bVar.toString(), fVar.toString());
         }
         this.f800N = bVar;
         bVar.mo5936m(AbstractC3514b.EnumC3519e.CHROMELESS);
-        m41963o(z);
+        m41966o(z);
     }
 
     @Override
-    public void mo30258e(AbstractC3514b.AbstractC3520f fVar, EnumC9986b bVar) {
+    public void mo30260e(AbstractC3514b.AbstractC3520f fVar, EnumC9986b bVar) {
         Log.m14727e((int) Log.TAG_YOUTUBE, "onInitializationError", bVar.toString(), fVar.toString());
         AbstractC0267a aVar = this.f804c;
         if (aVar != null) {
-            aVar.mo41916w0(C0264f.m41973b(bVar));
+            aVar.mo41919w0(C0264f.m41976b(bVar));
         }
     }
 
     @Override
-    public void mo30255f() {
+    public void mo30257f() {
         if (Log.isEnabled(Log.TAG_YOUTUBE)) {
             Log.m14721i((int) Log.TAG_YOUTUBE, "onPaused", new Object[0]);
         }
         this.f802a &= -5;
         C0274o oVar = this.f799M;
         if (oVar != null) {
-            oVar.m41931x(false, false);
+            oVar.m41934x(false, false);
         }
     }
 
     @Override
-    public void mo30251g(String str) {
+    public void mo30253g(String str) {
         AbstractC3514b bVar;
         if (Log.isEnabled(Log.TAG_YOUTUBE)) {
             Log.m14721i((int) Log.TAG_YOUTUBE, "onLoaded: %s", str);
@@ -93,13 +93,13 @@ public class RunnableC0266h implements AbstractC3514b.AbstractC3516b, AbstractC3
             oVar.setDuration(bVar.mo5931r());
             AbstractC0267a aVar = this.f804c;
             if (aVar != null) {
-                aVar.mo41918Q0();
+                aVar.mo41921Q0();
             }
         }
     }
 
     @Override
-    public void mo30254h(int i) {
+    public void mo30256h(int i) {
         if (Log.isEnabled(Log.TAG_YOUTUBE)) {
             Log.m14721i((int) Log.TAG_YOUTUBE, "onSeekTo %d", Integer.valueOf(i));
         }
@@ -111,14 +111,14 @@ public class RunnableC0266h implements AbstractC3514b.AbstractC3516b, AbstractC3
     }
 
     @Override
-    public void mo30250i() {
+    public void mo30252i() {
         if (Log.isEnabled(Log.TAG_YOUTUBE)) {
             Log.m14721i((int) Log.TAG_YOUTUBE, "YouTube: onVideoStarted", new Object[0]);
         }
     }
 
     @Override
-    public void mo30253j() {
+    public void mo30255j() {
         if (Log.isEnabled(Log.TAG_YOUTUBE)) {
             Log.m14721i((int) Log.TAG_YOUTUBE, "onPlaying", new Object[0]);
         }
@@ -128,18 +128,18 @@ public class RunnableC0266h implements AbstractC3514b.AbstractC3516b, AbstractC3
             this.f802a = i & (-9);
             C0274o oVar = this.f799M;
             if (oVar != null) {
-                oVar.m41930y();
+                oVar.m41933y();
             }
         }
         C0274o oVar2 = this.f799M;
         if (oVar2 != null) {
             oVar2.post(this);
-            this.f799M.m41931x(true, false);
+            this.f799M.m41934x(true, false);
         }
     }
 
     @Override
-    public void mo30249k() {
+    public void mo30251k() {
         if (Log.isEnabled(Log.TAG_YOUTUBE)) {
             Log.m14721i((int) Log.TAG_YOUTUBE, "onVideoEnded", new Object[0]);
         }
@@ -147,60 +147,60 @@ public class RunnableC0266h implements AbstractC3514b.AbstractC3516b, AbstractC3
         this.f801O = 0;
         C0274o oVar = this.f799M;
         if (oVar != null) {
-            oVar.m41932w();
+            oVar.m41935w();
         }
     }
 
     @Override
-    public void mo30248l() {
+    public void mo30250l() {
         if (Log.isEnabled(Log.TAG_YOUTUBE)) {
             Log.m14721i((int) Log.TAG_YOUTUBE, "onLoading", new Object[0]);
         }
     }
 
     @Override
-    public void mo30247m(AbstractC3514b.EnumC3515a aVar) {
+    public void mo30249m(AbstractC3514b.EnumC3515a aVar) {
         Log.m14727e((int) Log.TAG_YOUTUBE, "onError: %s", aVar.toString());
-        C1379j0.m37290z0(aVar.name(), 0);
+        C1379j0.m37293z0(aVar.name(), 0);
     }
 
-    public AbstractC3514b m41964n() {
+    public AbstractC3514b m41967n() {
         return this.f800N;
     }
 
-    public final void m41963o(boolean z) {
+    public final void m41966o(boolean z) {
         try {
             this.f800N.mo5940i(false);
             this.f800N.mo5935n(8);
             this.f800N.mo5939j(this);
             this.f800N.mo5934o(this);
             if (z) {
-                m41959s(this.f800N, true);
+                m41962s(this.f800N, true);
             } else {
-                m41959s(this.f800N, false);
+                m41962s(this.f800N, false);
             }
         } catch (Throwable unused) {
             AbstractC0267a aVar = this.f804c;
             if (aVar != null) {
-                aVar.mo41917V();
+                aVar.mo41920V();
             }
         }
     }
 
-    public boolean m41962p() {
+    public boolean m41965p() {
         int i = this.f802a;
         return ((i & 2) == 0 && (i & 1) == 0) ? false : true;
     }
 
-    public void m41961q() {
+    public void m41964q() {
         this.f802a |= 2;
     }
 
-    public void m41960r() {
+    public void m41963r() {
         int i = this.f802a;
         if ((i & 1) != 0) {
             this.f802a = i & (-2);
-            m41959s(this.f800N, true);
+            m41962s(this.f800N, true);
         }
     }
 
@@ -221,7 +221,7 @@ public class RunnableC0266h implements AbstractC3514b.AbstractC3516b, AbstractC3
         }
     }
 
-    public void m41959s(AbstractC3514b bVar, boolean z) {
+    public void m41962s(AbstractC3514b bVar, boolean z) {
         try {
             if (z) {
                 bVar.mo5933p(this.f803b, this.f801O);
@@ -231,7 +231,7 @@ public class RunnableC0266h implements AbstractC3514b.AbstractC3516b, AbstractC3
         } catch (Throwable unused) {
             AbstractC0267a aVar = this.f804c;
             if (aVar != null) {
-                aVar.mo41917V();
+                aVar.mo41920V();
             }
         }
     }

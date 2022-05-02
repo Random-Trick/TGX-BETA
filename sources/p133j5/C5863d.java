@@ -1,7 +1,7 @@
 package p133j5;
 
 public class C5863d {
-    public static String m21927a(int i) {
+    public static String m21928a(int i) {
         switch (i) {
             case -1:
                 return "SUCCESS_CACHE";

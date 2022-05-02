@@ -20,28 +20,28 @@ import p300v6.C9856g;
 import p300v6.C9865p;
 
 public final class C7757t implements AbstractC7680d4 {
-    public static final C8646a f24840g = new C8646a("AssetPackServiceImpl");
-    public static final Intent f24841h = new Intent("com.google.android.play.core.assetmoduleservice.BIND_ASSET_MODULE_SERVICE").setPackage("com.android.vending");
-    public final String f24842a;
-    public final C7714k1 f24843b;
-    public final C7765u2 f24844c;
-    public C8670m f24845d;
-    public C8670m f24846e;
-    public final AtomicBoolean f24847f = new AtomicBoolean();
+    public static final C8646a f24843g = new C8646a("AssetPackServiceImpl");
+    public static final Intent f24844h = new Intent("com.google.android.play.core.assetmoduleservice.BIND_ASSET_MODULE_SERVICE").setPackage("com.android.vending");
+    public final String f24845a;
+    public final C7714k1 f24846b;
+    public final C7765u2 f24847c;
+    public C8670m f24848d;
+    public C8670m f24849e;
+    public final AtomicBoolean f24850f = new AtomicBoolean();
 
     public C7757t(Context context, C7714k1 k1Var, C7765u2 u2Var) {
-        this.f24842a = context.getPackageName();
-        this.f24843b = k1Var;
-        this.f24844c = u2Var;
-        if (C8680r.m11747b(context)) {
-            Context a = C8676p.m11764a(context);
-            C8646a aVar = f24840g;
-            Intent intent = f24841h;
-            C7686e4 e4Var = C7686e4.f24621a;
-            this.f24845d = new C8670m(a, aVar, "AssetPackService", intent, e4Var, null);
-            this.f24846e = new C8670m(C8676p.m11764a(context), aVar, "AssetPackService-keepAlive", intent, e4Var, null);
+        this.f24845a = context.getPackageName();
+        this.f24846b = k1Var;
+        this.f24847c = u2Var;
+        if (C8680r.m11746b(context)) {
+            Context a = C8676p.m11763a(context);
+            C8646a aVar = f24843g;
+            Intent intent = f24844h;
+            C7686e4 e4Var = C7686e4.f24624a;
+            this.f24848d = new C8670m(a, aVar, "AssetPackService", intent, e4Var, null);
+            this.f24849e = new C8670m(C8676p.m11763a(context), aVar, "AssetPackService-keepAlive", intent, e4Var, null);
         }
-        f24840g.m11818a("AssetPackService initiated.", new Object[0]);
+        f24843g.m11817a("AssetPackService initiated.", new Object[0]);
     }
 
     public static Bundle m15135g() {
@@ -65,7 +65,7 @@ public final class C7757t implements AbstractC7680d4 {
     }
 
     public static AbstractC9854e m15133i() {
-        f24840g.m11817b("onError(%d)", -11);
+        f24843g.m11816b("onError(%d)", -11);
         return C9856g.m6748b(new C7657a(-11));
     }
 
@@ -104,9 +104,9 @@ public final class C7757t implements AbstractC7680d4 {
         ArrayList arrayList = new ArrayList();
         Iterator it = list.iterator();
         while (it.hasNext()) {
-            AssetPackState next = AbstractC7669c.m15277c((Bundle) it.next(), tVar.f24843b, tVar.f24844c).mo15180a().values().iterator().next();
+            AssetPackState next = AbstractC7669c.m15277c((Bundle) it.next(), tVar.f24846b, tVar.f24847c).mo15180a().values().iterator().next();
             if (next == null) {
-                f24840g.m11817b("onGetSessionStates: Bundle contained no pack.", new Object[0]);
+                f24843g.m11816b("onGetSessionStates: Bundle contained no pack.", new Object[0]);
             }
             if (C7682e0.m15269a(next.mo15192d())) {
                 arrayList.add(next.mo15193c());
@@ -128,21 +128,21 @@ public final class C7757t implements AbstractC7680d4 {
 
     @Override
     public final AbstractC9854e mo15140b(int i, String str, String str2, int i2) {
-        if (this.f24845d == null) {
+        if (this.f24848d == null) {
             return m15133i();
         }
-        f24840g.m11815d("getChunkFileDescriptor(%s, %s, %d, session=%d)", str, str2, Integer.valueOf(i2), Integer.valueOf(i));
+        f24843g.m11814d("getChunkFileDescriptor(%s, %s, %d, session=%d)", str, str2, Integer.valueOf(i2), Integer.valueOf(i));
         C9865p pVar = new C9865p();
-        this.f24845d.m11778q(new C7707j(this, pVar, i, str, str2, i2, pVar), pVar);
+        this.f24848d.m11777q(new C7707j(this, pVar, i, str, str2, i2, pVar), pVar);
         return pVar.m6735a();
     }
 
     @Override
     public final void mo15139c(int i, String str, String str2, int i2) {
-        if (this.f24845d != null) {
-            f24840g.m11815d("notifyChunkTransferred", new Object[0]);
+        if (this.f24848d != null) {
+            f24843g.m11814d("notifyChunkTransferred", new Object[0]);
             C9865p pVar = new C9865p();
-            this.f24845d.m11778q(new C7692g(this, pVar, i, str, str2, i2, pVar), pVar);
+            this.f24848d.m11777q(new C7692g(this, pVar, i, str, str2, i2, pVar), pVar);
             return;
         }
         throw new C7694g1("The Play Store app is not installed or is an unofficial version.", i);
@@ -150,10 +150,10 @@ public final class C7757t implements AbstractC7680d4 {
 
     @Override
     public final void mo15138d(int i) {
-        if (this.f24845d != null) {
-            f24840g.m11815d("notifySessionFailed", new Object[0]);
+        if (this.f24848d != null) {
+            f24843g.m11814d("notifySessionFailed", new Object[0]);
             C9865p pVar = new C9865p();
-            this.f24845d.m11778q(new C7702i(this, pVar, i, pVar), pVar);
+            this.f24848d.m11777q(new C7702i(this, pVar, i, pVar), pVar);
             return;
         }
         throw new C7694g1("The Play Store app is not installed or is an unofficial version.", i);
@@ -161,29 +161,29 @@ public final class C7757t implements AbstractC7680d4 {
 
     @Override
     public final AbstractC9854e mo15137e(Map map) {
-        if (this.f24845d == null) {
+        if (this.f24848d == null) {
             return m15133i();
         }
-        f24840g.m11815d("syncPacks", new Object[0]);
+        f24843g.m11814d("syncPacks", new Object[0]);
         C9865p pVar = new C9865p();
-        this.f24845d.m11778q(new C7687f(this, pVar, map, pVar), pVar);
+        this.f24848d.m11777q(new C7687f(this, pVar, map, pVar), pVar);
         return pVar.m6735a();
     }
 
     @Override
     public final void mo15136f(List list) {
-        if (this.f24845d != null) {
-            f24840g.m11815d("cancelDownloads(%s)", list);
+        if (this.f24848d != null) {
+            f24843g.m11814d("cancelDownloads(%s)", list);
             C9865p pVar = new C9865p();
-            this.f24845d.m11778q(new C7681e(this, pVar, list, pVar), pVar);
+            this.f24848d.m11777q(new C7681e(this, pVar, list, pVar), pVar);
         }
     }
 
     public final void m15132j(int i, String str, int i2) {
-        if (this.f24845d != null) {
-            f24840g.m11815d("notifyModuleCompleted", new Object[0]);
+        if (this.f24848d != null) {
+            f24843g.m11814d("notifyModuleCompleted", new Object[0]);
             C9865p pVar = new C9865p();
-            this.f24845d.m11778q(new C7697h(this, pVar, i, str, pVar, i2), pVar);
+            this.f24848d.m11777q(new C7697h(this, pVar, i, str, pVar, i2), pVar);
             return;
         }
         throw new C7694g1("The Play Store app is not installed or is an unofficial version.", i);
@@ -191,17 +191,17 @@ public final class C7757t implements AbstractC7680d4 {
 
     @Override
     public final synchronized void mo15131k() {
-        if (this.f24846e == null) {
-            f24840g.m11814e("Keep alive connection manager is not initialized.", new Object[0]);
+        if (this.f24849e == null) {
+            f24843g.m11813e("Keep alive connection manager is not initialized.", new Object[0]);
             return;
         }
-        C8646a aVar = f24840g;
-        aVar.m11815d("keepAlive", new Object[0]);
-        if (!this.f24847f.compareAndSet(false, true)) {
-            aVar.m11815d("Service is already kept alive.", new Object[0]);
+        C8646a aVar = f24843g;
+        aVar.m11814d("keepAlive", new Object[0]);
+        if (!this.f24850f.compareAndSet(false, true)) {
+            aVar.m11814d("Service is already kept alive.", new Object[0]);
             return;
         }
         C9865p pVar = new C9865p();
-        this.f24846e.m11778q(new C7712k(this, pVar, pVar), pVar);
+        this.f24849e.m11777q(new C7712k(this, pVar, pVar), pVar);
     }
 }

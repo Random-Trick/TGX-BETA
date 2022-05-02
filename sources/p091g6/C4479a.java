@@ -8,11 +8,11 @@ public final class C4479a {
     public final AbstractC8983b f14823a;
 
     public C4479a(AbstractC8983b bVar) {
-        this.f14823a = (AbstractC8983b) C6378r.m20506k(bVar);
+        this.f14823a = (AbstractC8983b) C6378r.m20507k(bVar);
     }
 
     @RecentlyNonNull
-    public final AbstractC8983b m27542a() {
+    public final AbstractC8983b m27544a() {
         return this.f14823a;
     }
 }

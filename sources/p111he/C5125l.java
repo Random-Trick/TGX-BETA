@@ -42,11 +42,11 @@ public class C5125l {
         this.f17192d = i;
     }
 
-    public static int m23878c(float[] fArr, int i, int i2) {
-        return m23877d(fArr, 0, fArr.length, i, i2);
+    public static int m23879c(float[] fArr, int i, int i2) {
+        return m23878d(fArr, 0, fArr.length, i, i2);
     }
 
-    public static int m23877d(float[] fArr, int i, int i2, int i3, int i4) {
+    public static int m23878d(float[] fArr, int i, int i2, int i3, int i4) {
         float f = 0.0f;
         for (int i5 = i; i5 < i2; i5++) {
             f += fArr[i5];
@@ -54,75 +54,75 @@ public class C5125l {
         return (int) ((i3 - (((i2 - i) - 1) * i4)) / f);
     }
 
-    public final void m23880a() {
+    public final void m23881a() {
         Iterator<C5126a> it = this.f17189a.iterator();
         while (it.hasNext()) {
-            it.next().f17195a.m26779G().m18623j();
+            it.next().f17195a.m26781G().m18623j();
         }
     }
 
-    public final void m23879b(int r33, int r34) {
-        throw new UnsupportedOperationException("Method not decompiled: p111he.C5125l.m23879b(int, int):void");
+    public final void m23880b(int r33, int r34) {
+        throw new UnsupportedOperationException("Method not decompiled: p111he.C5125l.m23880b(int, int):void");
     }
 
-    public final <T extends View & AbstractC5143t> void m23876e(T t, Canvas canvas, int i, int i2, C6238b bVar) {
+    public final <T extends View & AbstractC5143t> void m23877e(T t, Canvas canvas, int i, int i2, C6238b bVar) {
         Iterator<C5126a> it = this.f17189a.iterator();
         int i3 = 0;
         while (it.hasNext()) {
             C5126a next = it.next();
-            next.f17195a.m26724s(t, canvas, i + next.f17197c, i2 + next.f17198d, bVar.m20991l(i3), bVar.m20990m(i3, next.f17195a.m26747g0()), 1.0f);
+            next.f17195a.m26725s(t, canvas, i + next.f17197c, i2 + next.f17198d, bVar.m20992l(i3), bVar.m20991m(i3, next.f17195a.m26746h0()), 1.0f);
             i3++;
         }
     }
 
-    public final int m23875f() {
+    public final int m23876f() {
         return this.f17194f;
     }
 
-    public final int m23874g(int i, int i2) {
+    public final int m23875g(int i, int i2) {
         if (i > 0 && i2 > 0 && !(this.f17190b == i && this.f17191c == i2)) {
             this.f17190b = i;
             this.f17191c = i2;
-            m23879b(i, i2);
+            m23880b(i, i2);
         }
         return this.f17194f;
     }
 
-    public int m23873h() {
+    public int m23874h() {
         return this.f17193e;
     }
 
-    public final boolean m23872i(View view, MotionEvent motionEvent, int i, int i2) {
+    public final boolean m23873i(View view, MotionEvent motionEvent, int i, int i2) {
         Iterator<C5126a> it = this.f17189a.iterator();
         while (it.hasNext()) {
-            if (it.next().f17195a.m26745h0(view, motionEvent)) {
+            if (it.next().f17195a.m26744i0(view, motionEvent)) {
                 return true;
             }
         }
         return false;
     }
 
-    public final void m23871j(int i, int i2, int i3, int i4, int i5, int i6, boolean z) {
+    public final void m23872j(int i, int i2, int i3, int i4, int i5, int i6, boolean z) {
         C5126a aVar = this.f17189a.get(i);
         aVar.f17196b = i4;
-        aVar.f17195a.m26740k(i2, i3);
+        aVar.f17195a.m26741k(i2, i3);
         aVar.f17197c = i5;
         aVar.f17198d = i6;
     }
 
-    public final void m23870k(C6238b bVar, boolean z) {
-        bVar.m20996g(this.f17189a.size());
+    public final void m23871k(C6238b bVar, boolean z) {
+        bVar.m20997g(this.f17189a.size());
         Iterator<C5126a> it = this.f17189a.iterator();
         int i = 0;
         while (it.hasNext()) {
             C5126a next = it.next();
             if (!z) {
-                next.f17195a.m26735m0(bVar.m20991l(i));
+                next.f17195a.m26734n0(bVar.m20992l(i));
             }
-            if (next.f17195a.m26747g0()) {
-                next.f17195a.m26739k0(bVar.m20993j(i));
+            if (next.f17195a.m26746h0()) {
+                next.f17195a.m26738l0(bVar.m20994j(i));
             } else {
-                next.f17195a.m26737l0(bVar.m20992k(i));
+                next.f17195a.m26736m0(bVar.m20993k(i));
             }
             i++;
         }

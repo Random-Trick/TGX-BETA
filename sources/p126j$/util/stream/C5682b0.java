@@ -14,7 +14,7 @@ public final class C5682b0 implements AbstractC5542x, AbstractC5531m {
     }
 
     @Override
-    public Object mo22178w(int i) {
+    public Object mo22179w(int i) {
         int i2 = C5799y2.f18517w;
         return new Double[i];
     }

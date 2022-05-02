@@ -9,18 +9,18 @@ import p187n4.C7227r0;
 public interface AbstractC11265j extends AbstractC11271m {
 
     public static final class C11266a {
-        public final C7227r0 f36114a;
-        public final int[] f36115b;
-        public final int f36116c;
+        public final C7227r0 f36117a;
+        public final int[] f36118b;
+        public final int f36119c;
 
         public C11266a(C7227r0 r0Var, int... iArr) {
             this(r0Var, iArr, 0);
         }
 
         public C11266a(C7227r0 r0Var, int[] iArr, int i) {
-            this.f36114a = r0Var;
-            this.f36115b = iArr;
-            this.f36116c = i;
+            this.f36117a = r0Var;
+            this.f36118b = iArr;
+            this.f36119c = i;
         }
     }
 

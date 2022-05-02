@@ -5,7 +5,7 @@ import java.util.concurrent.ScheduledExecutorService;
 
 @Deprecated
 public class C7654a {
-    public static AbstractC7655a f24541a;
+    public static AbstractC7655a f24544a;
 
     public interface AbstractC7655a {
         @RecentlyNonNull
@@ -18,10 +18,10 @@ public class C7654a {
     public static synchronized AbstractC7655a m15283a() {
         AbstractC7655a aVar;
         synchronized (C7654a.class) {
-            if (f24541a == null) {
-                f24541a = new C7656b();
+            if (f24544a == null) {
+                f24544a = new C7656b();
             }
-            aVar = f24541a;
+            aVar = f24544a;
         }
         return aVar;
     }

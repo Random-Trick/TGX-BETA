@@ -15,14 +15,14 @@ public final class C6380r1 {
         f20017b = parse.buildUpon().appendPath("circles").appendPath("find").build();
     }
 
-    public static Intent m20501a(String str) {
+    public static Intent m20502a(String str) {
         Uri fromParts = Uri.fromParts("package", "com.google.android.gms", null);
         Intent intent = new Intent("android.settings.APPLICATION_DETAILS_SETTINGS");
         intent.setData(fromParts);
         return intent;
     }
 
-    public static Intent m20500b(String str, String str2) {
+    public static Intent m20501b(String str, String str2) {
         Intent intent = new Intent("android.intent.action.VIEW");
         Uri.Builder appendQueryParameter = Uri.parse("market://details").buildUpon().appendQueryParameter("id", "com.google.android.gms");
         if (!TextUtils.isEmpty(str2)) {
@@ -34,7 +34,7 @@ public final class C6380r1 {
         return intent;
     }
 
-    public static Intent m20499c() {
+    public static Intent m20500c() {
         Intent intent = new Intent("com.google.android.clockwork.home.UPDATE_ANDROID_WEAR_ACTION");
         intent.setPackage("com.google.android.wearable.app");
         return intent;

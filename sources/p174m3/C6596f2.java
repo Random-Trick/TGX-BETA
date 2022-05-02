@@ -51,53 +51,53 @@ public final class C6596f2 {
         this.f20558p = z4;
     }
 
-    public static C6596f2 m19905k(C11282u uVar) {
+    public static C6596f2 m19906k(C11282u uVar) {
         AbstractC6604g3 g3Var = AbstractC6604g3.f20630a;
         AbstractC7230t.C7231a aVar = f20542t;
-        return new C6596f2(g3Var, aVar, -9223372036854775807L, 0L, 1, null, false, C7233t0.f23027M, uVar, AbstractC11396q.m768D(), aVar, false, 0, C6613h2.f20669M, 0L, 0L, 0L, false, false);
+        return new C6596f2(g3Var, aVar, -9223372036854775807L, 0L, 1, null, false, C7233t0.f23030M, uVar, AbstractC11396q.m768D(), aVar, false, 0, C6613h2.f20669M, 0L, 0L, 0L, false, false);
     }
 
-    public static AbstractC7230t.C7231a m19904l() {
+    public static AbstractC7230t.C7231a m19905l() {
         return f20542t;
     }
 
-    public C6596f2 m19915a(boolean z) {
+    public C6596f2 m19916a(boolean z) {
         return new C6596f2(this.f20543a, this.f20544b, this.f20545c, this.f20546d, this.f20547e, this.f20548f, z, this.f20550h, this.f20551i, this.f20552j, this.f20553k, this.f20554l, this.f20555m, this.f20556n, this.f20559q, this.f20560r, this.f20561s, this.f20557o, this.f20558p);
     }
 
-    public C6596f2 m19914b(AbstractC7230t.C7231a aVar) {
+    public C6596f2 m19915b(AbstractC7230t.C7231a aVar) {
         return new C6596f2(this.f20543a, this.f20544b, this.f20545c, this.f20546d, this.f20547e, this.f20548f, this.f20549g, this.f20550h, this.f20551i, this.f20552j, aVar, this.f20554l, this.f20555m, this.f20556n, this.f20559q, this.f20560r, this.f20561s, this.f20557o, this.f20558p);
     }
 
-    public C6596f2 m19913c(AbstractC7230t.C7231a aVar, long j, long j2, long j3, long j4, C7233t0 t0Var, C11282u uVar, List<C4260a> list) {
+    public C6596f2 m19914c(AbstractC7230t.C7231a aVar, long j, long j2, long j3, long j4, C7233t0 t0Var, C11282u uVar, List<C4260a> list) {
         return new C6596f2(this.f20543a, aVar, j2, j3, this.f20547e, this.f20548f, this.f20549g, t0Var, uVar, list, this.f20553k, this.f20554l, this.f20555m, this.f20556n, this.f20559q, j4, j, this.f20557o, this.f20558p);
     }
 
-    public C6596f2 m19912d(boolean z) {
+    public C6596f2 m19913d(boolean z) {
         return new C6596f2(this.f20543a, this.f20544b, this.f20545c, this.f20546d, this.f20547e, this.f20548f, this.f20549g, this.f20550h, this.f20551i, this.f20552j, this.f20553k, this.f20554l, this.f20555m, this.f20556n, this.f20559q, this.f20560r, this.f20561s, z, this.f20558p);
     }
 
-    public C6596f2 m19911e(boolean z, int i) {
+    public C6596f2 m19912e(boolean z, int i) {
         return new C6596f2(this.f20543a, this.f20544b, this.f20545c, this.f20546d, this.f20547e, this.f20548f, this.f20549g, this.f20550h, this.f20551i, this.f20552j, this.f20553k, z, i, this.f20556n, this.f20559q, this.f20560r, this.f20561s, this.f20557o, this.f20558p);
     }
 
-    public C6596f2 m19910f(C6681q qVar) {
+    public C6596f2 m19911f(C6681q qVar) {
         return new C6596f2(this.f20543a, this.f20544b, this.f20545c, this.f20546d, this.f20547e, qVar, this.f20549g, this.f20550h, this.f20551i, this.f20552j, this.f20553k, this.f20554l, this.f20555m, this.f20556n, this.f20559q, this.f20560r, this.f20561s, this.f20557o, this.f20558p);
     }
 
-    public C6596f2 m19909g(C6613h2 h2Var) {
+    public C6596f2 m19910g(C6613h2 h2Var) {
         return new C6596f2(this.f20543a, this.f20544b, this.f20545c, this.f20546d, this.f20547e, this.f20548f, this.f20549g, this.f20550h, this.f20551i, this.f20552j, this.f20553k, this.f20554l, this.f20555m, h2Var, this.f20559q, this.f20560r, this.f20561s, this.f20557o, this.f20558p);
     }
 
-    public C6596f2 m19908h(int i) {
+    public C6596f2 m19909h(int i) {
         return new C6596f2(this.f20543a, this.f20544b, this.f20545c, this.f20546d, i, this.f20548f, this.f20549g, this.f20550h, this.f20551i, this.f20552j, this.f20553k, this.f20554l, this.f20555m, this.f20556n, this.f20559q, this.f20560r, this.f20561s, this.f20557o, this.f20558p);
     }
 
-    public C6596f2 m19907i(boolean z) {
+    public C6596f2 m19908i(boolean z) {
         return new C6596f2(this.f20543a, this.f20544b, this.f20545c, this.f20546d, this.f20547e, this.f20548f, this.f20549g, this.f20550h, this.f20551i, this.f20552j, this.f20553k, this.f20554l, this.f20555m, this.f20556n, this.f20559q, this.f20560r, this.f20561s, this.f20557o, z);
     }
 
-    public C6596f2 m19906j(AbstractC6604g3 g3Var) {
+    public C6596f2 m19907j(AbstractC6604g3 g3Var) {
         return new C6596f2(g3Var, this.f20544b, this.f20545c, this.f20546d, this.f20547e, this.f20548f, this.f20549g, this.f20550h, this.f20551i, this.f20552j, this.f20553k, this.f20554l, this.f20555m, this.f20556n, this.f20559q, this.f20560r, this.f20561s, this.f20557o, this.f20558p);
     }
 }

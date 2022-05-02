@@ -10,8 +10,8 @@ public abstract class AbstractRunnableC5910b implements Runnable {
     public final C10327b f18812a = new C10327b();
     public final Object f18814c = new Object();
 
-    public static final void m21854f(AbstractRunnableC5910b bVar) {
-        C8298k.m12934e(bVar, "this$0");
+    public static final void m21855f(AbstractRunnableC5910b bVar) {
+        C8298k.m12933e(bVar, "this$0");
         synchronized (bVar.f18814c) {
             Handler handler = bVar.f18813b;
             if (handler != null) {
@@ -23,15 +23,15 @@ public abstract class AbstractRunnableC5910b implements Runnable {
 
     public abstract void mo1364b();
 
-    public final void m21857c() {
+    public final void m21858c() {
         this.f18812a.m5417a();
     }
 
-    public final boolean m21856d() {
+    public final boolean m21857d() {
         return !this.f18812a.m5416b();
     }
 
-    public final AbstractRunnableC5910b m21855e(Handler handler) {
+    public final AbstractRunnableC5910b m21856e(Handler handler) {
         synchronized (this.f18814c) {
             this.f18813b = handler;
             C5060q qVar = C5060q.f17066a;
@@ -40,7 +40,7 @@ public abstract class AbstractRunnableC5910b implements Runnable {
             this.f18812a.m5415c(new C10327b.AbstractC10328a() {
                 @Override
                 public final void mo5413a() {
-                    AbstractRunnableC5910b.m21854f(AbstractRunnableC5910b.this);
+                    AbstractRunnableC5910b.m21855f(AbstractRunnableC5910b.this);
                 }
             });
         } else {

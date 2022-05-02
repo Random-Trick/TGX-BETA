@@ -29,7 +29,7 @@ public final class C0111o {
         this.f425i = jArr2;
     }
 
-    public C0112p m42267a(int i) {
+    public C0112p m42270a(int i) {
         C0112p[] pVarArr = this.f427k;
         if (pVarArr == null) {
             return null;

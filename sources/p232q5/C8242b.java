@@ -4,7 +4,7 @@ import androidx.annotation.RecentlyNonNull;
 import p163l5.C6374q;
 
 public final class C8242b {
-    public static boolean m13056a(@RecentlyNonNull int[] iArr, int i) {
+    public static boolean m13055a(@RecentlyNonNull int[] iArr, int i) {
         if (iArr == null) {
             return false;
         }
@@ -16,13 +16,13 @@ public final class C8242b {
         return false;
     }
 
-    public static <T> boolean m13055b(@RecentlyNonNull T[] tArr, @RecentlyNonNull T t) {
+    public static <T> boolean m13054b(@RecentlyNonNull T[] tArr, @RecentlyNonNull T t) {
         int length = tArr != null ? tArr.length : 0;
         int i = 0;
         while (true) {
             if (i >= length) {
                 break;
-            } else if (!C6374q.m20524a(tArr[i], t)) {
+            } else if (!C6374q.m20525a(tArr[i], t)) {
                 i++;
             } else if (i >= 0) {
                 return true;

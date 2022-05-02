@@ -14,22 +14,22 @@ import p016b1.C1132h;
 import p279u.C9398b;
 
 public class C9405f implements C9398b.AbstractC9399a {
-    public final Object f30444a;
+    public final Object f30447a;
 
     public static final class C9406a {
-        public final List<Surface> f30445a;
-        public final Size f30446b;
-        public final int f30447c;
-        public final int f30448d;
-        public String f30449e;
-        public boolean f30450f = false;
+        public final List<Surface> f30448a;
+        public final Size f30449b;
+        public final int f30450c;
+        public final int f30451d;
+        public String f30452e;
+        public boolean f30453f = false;
 
         public C9406a(Surface surface) {
-            C1132h.m38321f(surface, "Surface must not be null");
-            this.f30445a = Collections.singletonList(surface);
-            this.f30446b = m8784c(surface);
-            this.f30447c = m8786a(surface);
-            this.f30448d = m8785b(surface);
+            C1132h.m38324f(surface, "Surface must not be null");
+            this.f30448a = Collections.singletonList(surface);
+            this.f30449b = m8784c(surface);
+            this.f30450c = m8786a(surface);
+            this.f30451d = m8785b(surface);
         }
 
         @SuppressLint({"BlockedPrivateApi"})
@@ -41,7 +41,7 @@ public class C9405f implements C9398b.AbstractC9399a {
                 }
                 return ((Integer) declaredMethod.invoke(null, surface)).intValue();
             } catch (ClassNotFoundException | IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
-                C0662u1.m40650d("OutputConfigCompat", "Unable to retrieve surface format.", e);
+                C0662u1.m40653d("OutputConfigCompat", "Unable to retrieve surface format.", e);
                 return 0;
             }
         }
@@ -51,7 +51,7 @@ public class C9405f implements C9398b.AbstractC9399a {
             try {
                 return ((Integer) Surface.class.getDeclaredMethod("getGenerationId", new Class[0]).invoke(surface, new Object[0])).intValue();
             } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
-                C0662u1.m40650d("OutputConfigCompat", "Unable to retrieve surface generation id.", e);
+                C0662u1.m40653d("OutputConfigCompat", "Unable to retrieve surface generation id.", e);
                 return -1;
             }
         }
@@ -63,7 +63,7 @@ public class C9405f implements C9398b.AbstractC9399a {
                 declaredMethod.setAccessible(true);
                 return (Size) declaredMethod.invoke(null, surface);
             } catch (ClassNotFoundException | IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
-                C0662u1.m40650d("OutputConfigCompat", "Unable to retrieve surface size.", e);
+                C0662u1.m40653d("OutputConfigCompat", "Unable to retrieve surface size.", e);
                 return null;
             }
         }
@@ -73,12 +73,12 @@ public class C9405f implements C9398b.AbstractC9399a {
                 return false;
             }
             C9406a aVar = (C9406a) obj;
-            if (!(this.f30446b.equals(aVar.f30446b) && this.f30447c == aVar.f30447c && this.f30448d == aVar.f30448d && this.f30450f == aVar.f30450f && Objects.equals(this.f30449e, aVar.f30449e))) {
+            if (!(this.f30449b.equals(aVar.f30449b) && this.f30450c == aVar.f30450c && this.f30451d == aVar.f30451d && this.f30453f == aVar.f30453f && Objects.equals(this.f30452e, aVar.f30452e))) {
                 return false;
             }
-            int min = Math.min(this.f30445a.size(), aVar.f30445a.size());
+            int min = Math.min(this.f30448a.size(), aVar.f30448a.size());
             for (int i = 0; i < min; i++) {
-                if (this.f30445a.get(i) != aVar.f30445a.get(i)) {
+                if (this.f30448a.get(i) != aVar.f30448a.get(i)) {
                     return false;
                 }
             }
@@ -86,29 +86,29 @@ public class C9405f implements C9398b.AbstractC9399a {
         }
 
         public int hashCode() {
-            int hashCode = this.f30445a.hashCode() ^ 31;
-            int i = this.f30448d ^ ((hashCode << 5) - hashCode);
-            int hashCode2 = this.f30446b.hashCode() ^ ((i << 5) - i);
-            int i2 = this.f30447c ^ ((hashCode2 << 5) - hashCode2);
-            int i3 = (this.f30450f ? 1 : 0) ^ ((i2 << 5) - i2);
+            int hashCode = this.f30448a.hashCode() ^ 31;
+            int i = this.f30451d ^ ((hashCode << 5) - hashCode);
+            int hashCode2 = this.f30449b.hashCode() ^ ((i << 5) - i);
+            int i2 = this.f30450c ^ ((hashCode2 << 5) - hashCode2);
+            int i3 = (this.f30453f ? 1 : 0) ^ ((i2 << 5) - i2);
             int i4 = (i3 << 5) - i3;
-            String str = this.f30449e;
+            String str = this.f30452e;
             return (str == null ? 0 : str.hashCode()) ^ i4;
         }
     }
 
     public C9405f(Surface surface) {
-        this.f30444a = new C9406a(surface);
+        this.f30447a = new C9406a(surface);
     }
 
     @Override
     public String mo8790a() {
-        return ((C9406a) this.f30444a).f30449e;
+        return ((C9406a) this.f30447a).f30452e;
     }
 
     @Override
     public Surface mo8789b() {
-        List<Surface> list = ((C9406a) this.f30444a).f30445a;
+        List<Surface> list = ((C9406a) this.f30447a).f30448a;
         if (list.size() == 0) {
             return null;
         }
@@ -117,7 +117,7 @@ public class C9405f implements C9398b.AbstractC9399a {
 
     @Override
     public void mo8788c(String str) {
-        ((C9406a) this.f30444a).f30449e = str;
+        ((C9406a) this.f30447a).f30452e = str;
     }
 
     @Override
@@ -129,14 +129,14 @@ public class C9405f implements C9398b.AbstractC9399a {
         if (!(obj instanceof C9405f)) {
             return false;
         }
-        return Objects.equals(this.f30444a, ((C9405f) obj).f30444a);
+        return Objects.equals(this.f30447a, ((C9405f) obj).f30447a);
     }
 
     public int hashCode() {
-        return this.f30444a.hashCode();
+        return this.f30447a.hashCode();
     }
 
     public C9405f(Object obj) {
-        this.f30444a = obj;
+        this.f30447a = obj;
     }
 }

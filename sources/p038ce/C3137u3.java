@@ -9,7 +9,7 @@ public final class C3137u3 implements AbstractC5912d {
     @Override
     public final boolean mo1511a(Object obj) {
         boolean yj;
-        yj = View$OnClickListenerC2805o4.m33277yj((TdApi.Chat) obj);
+        yj = View$OnClickListenerC2805o4.m33280yj((TdApi.Chat) obj);
         return yj;
     }
 }

@@ -30,53 +30,53 @@ public final class C1555c implements AbstractC1581m {
         this(null);
     }
 
-    public final boolean m36474a(C1189b0 b0Var, byte[] bArr, int i) {
-        int min = Math.min(b0Var.m38142a(), i - this.f5539g);
-        b0Var.m38133j(bArr, this.f5539g, min);
+    public final boolean m36477a(C1189b0 b0Var, byte[] bArr, int i) {
+        int min = Math.min(b0Var.m38145a(), i - this.f5539g);
+        b0Var.m38136j(bArr, this.f5539g, min);
         int i2 = this.f5539g + min;
         this.f5539g = i2;
         return i2 == i;
     }
 
     @Override
-    public void mo36333b(C1189b0 b0Var) {
-        C1186a.m38182h(this.f5537e);
-        while (b0Var.m38142a() > 0) {
+    public void mo36336b(C1189b0 b0Var) {
+        C1186a.m38185h(this.f5537e);
+        while (b0Var.m38145a() > 0) {
             int i = this.f5538f;
             if (i != 0) {
                 if (i != 1) {
                     if (i == 2) {
-                        int min = Math.min(b0Var.m38142a(), this.f5543k - this.f5539g);
-                        this.f5537e.mo10796c(b0Var, min);
+                        int min = Math.min(b0Var.m38145a(), this.f5543k - this.f5539g);
+                        this.f5537e.mo10795c(b0Var, min);
                         int i2 = this.f5539g + min;
                         this.f5539g = i2;
                         int i3 = this.f5543k;
                         if (i2 == i3) {
                             long j = this.f5544l;
                             if (j != -9223372036854775807L) {
-                                this.f5537e.mo10794e(j, 1, i3, 0, null);
+                                this.f5537e.mo10793e(j, 1, i3, 0, null);
                                 this.f5544l += this.f5541i;
                             }
                             this.f5538f = 0;
                         }
                     }
-                } else if (m36474a(b0Var, this.f5534b.m38139d(), Log.TAG_YOUTUBE)) {
-                    m36473g();
-                    this.f5534b.m38144P(0);
-                    this.f5537e.mo10796c(this.f5534b, Log.TAG_YOUTUBE);
+                } else if (m36477a(b0Var, this.f5534b.m38142d(), Log.TAG_YOUTUBE)) {
+                    m36476g();
+                    this.f5534b.m38147P(0);
+                    this.f5537e.mo10795c(this.f5534b, Log.TAG_YOUTUBE);
                     this.f5538f = 2;
                 }
-            } else if (m36472h(b0Var)) {
+            } else if (m36475h(b0Var)) {
                 this.f5538f = 1;
-                this.f5534b.m38139d()[0] = 11;
-                this.f5534b.m38139d()[1] = 119;
+                this.f5534b.m38142d()[0] = 11;
+                this.f5534b.m38142d()[1] = 119;
                 this.f5539g = 2;
             }
         }
     }
 
     @Override
-    public void mo36332c() {
+    public void mo36335c() {
         this.f5538f = 0;
         this.f5539g = 0;
         this.f5540h = false;
@@ -84,50 +84,50 @@ public final class C1555c implements AbstractC1581m {
     }
 
     @Override
-    public void mo36331d() {
+    public void mo36334d() {
     }
 
     @Override
-    public void mo36330e(AbstractC8960h hVar, AbstractC1571i0.C1575d dVar) {
-        dVar.m36406a();
-        this.f5536d = dVar.m36405b();
-        this.f5537e = hVar.mo6039r(dVar.m36404c(), 1);
+    public void mo36333e(AbstractC8960h hVar, AbstractC1571i0.C1575d dVar) {
+        dVar.m36409a();
+        this.f5536d = dVar.m36408b();
+        this.f5537e = hVar.mo6039r(dVar.m36407c(), 1);
     }
 
     @Override
-    public void mo36329f(long j, int i) {
+    public void mo36332f(long j, int i) {
         if (j != -9223372036854775807L) {
             this.f5544l = j;
         }
     }
 
     @RequiresNonNull({"output"})
-    public final void m36473g() {
-        this.f5533a.m38165p(0);
+    public final void m36476g() {
+        this.f5533a.m38168p(0);
         C7582b.C7584b e = C7582b.m15627e(this.f5533a);
         C6600g1 g1Var = this.f5542j;
-        if (g1Var == null || e.f24232d != g1Var.f20591h0 || e.f24231c != g1Var.f20592i0 || !C1216l0.m37982c(e.f24229a, g1Var.f20575U)) {
-            C6600g1 E = new C6600g1.C6602b().m19875S(this.f5536d).m19858e0(e.f24229a).m19886H(e.f24232d).m19856f0(e.f24231c).m19872V(this.f5535c).m19889E();
+        if (g1Var == null || e.f24235d != g1Var.f20591h0 || e.f24234c != g1Var.f20592i0 || !C1216l0.m37985c(e.f24232a, g1Var.f20575U)) {
+            C6600g1 E = new C6600g1.C6602b().m19876S(this.f5536d).m19859e0(e.f24232a).m19887H(e.f24235d).m19857f0(e.f24234c).m19873V(this.f5535c).m19890E();
             this.f5542j = E;
-            this.f5537e.mo10798a(E);
+            this.f5537e.mo10797a(E);
         }
-        this.f5543k = e.f24233e;
-        this.f5541i = (e.f24234f * 1000000) / this.f5542j.f20592i0;
+        this.f5543k = e.f24236e;
+        this.f5541i = (e.f24237f * 1000000) / this.f5542j.f20592i0;
     }
 
-    public final boolean m36472h(C1189b0 b0Var) {
+    public final boolean m36475h(C1189b0 b0Var) {
         while (true) {
             boolean z = false;
-            if (b0Var.m38142a() <= 0) {
+            if (b0Var.m38145a() <= 0) {
                 return false;
             }
             if (!this.f5540h) {
-                if (b0Var.m38156D() == 11) {
+                if (b0Var.m38159D() == 11) {
                     z = true;
                 }
                 this.f5540h = z;
             } else {
-                int D = b0Var.m38156D();
+                int D = b0Var.m38159D();
                 if (D == 119) {
                     this.f5540h = false;
                     return true;

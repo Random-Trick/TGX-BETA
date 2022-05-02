@@ -34,7 +34,7 @@ public class C6819a {
         }
     }
 
-    public static float m18898b(int i, int i2) {
+    public static float m18899b(int i, int i2) {
         if (i2 < -125 || i == 0) {
             return 0.0f;
         }
@@ -52,22 +52,22 @@ public class C6819a {
         return (float) (i2 > 0 ? d * dArr[i2] : d / dArr[-i2]);
     }
 
-    public void m18899a() {
-        this.f21355c = m18895e();
+    public void m18900a() {
+        this.f21355c = m18896e();
     }
 
-    public float m18897c() {
-        m18892h();
-        float d = m18896d();
-        m18893g();
+    public float m18898c() {
+        m18893h();
+        float d = m18897d();
+        m18894g();
         return d;
     }
 
-    public float m18896d() {
-        throw new UnsupportedOperationException("Method not decompiled: md.C6819a.m18896d():float");
+    public float m18897d() {
+        throw new UnsupportedOperationException("Method not decompiled: md.C6819a.m18897d():float");
     }
 
-    public final char m18895e() {
+    public final char m18896e() {
         int i = this.f21356d;
         int i2 = this.f21354b;
         if (i < i2) {
@@ -80,17 +80,17 @@ public class C6819a {
         return this.f21353a[i3];
     }
 
-    public final void m18894f(char c) {
+    public final void m18895f(char c) {
         throw new RuntimeException("Unexpected char '" + c + "'.");
     }
 
-    public void m18893g() {
+    public void m18894g() {
         while (true) {
             int i = this.f21356d;
             if (i < this.f21354b) {
                 char c = this.f21353a[i];
                 if (c == '\t' || c == '\n' || c == ' ' || c == ',') {
-                    m18899a();
+                    m18900a();
                 } else {
                     return;
                 }
@@ -100,11 +100,11 @@ public class C6819a {
         }
     }
 
-    public void m18892h() {
+    public void m18893h() {
         while (true) {
             int i = this.f21356d;
             if (i < this.f21354b && Character.isWhitespace(this.f21353a[i])) {
-                m18899a();
+                m18900a();
             } else {
                 return;
             }

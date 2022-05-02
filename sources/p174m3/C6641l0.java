@@ -8,6 +8,6 @@ public final class C6641l0 implements C1226r.AbstractC1227a {
 
     @Override
     public final void mo17513a(Object obj) {
-        C6726z0.m19285W0((AbstractC6618i2.AbstractC6622c) obj);
+        C6726z0.m19286W0((AbstractC6618i2.AbstractC6622c) obj);
     }
 }

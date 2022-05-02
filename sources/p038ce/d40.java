@@ -46,14 +46,14 @@ public class d40<T> extends AbstractC9323v4<T> {
             } catch (Throwable unused) {
                 uri = null;
             }
-            if (uri == null || !d40.this.m35147Se(uri)) {
+            if (uri == null || !d40.this.m35150Se(uri)) {
                 super.onPageFinished(webView, str);
             }
         }
 
         @Override
         public boolean shouldOverrideUrlLoading(WebView webView, WebResourceRequest webResourceRequest) {
-            return d40.this.m35147Se(webResourceRequest.getUrl()) || super.shouldOverrideUrlLoading(webView, webResourceRequest);
+            return d40.this.m35150Se(webResourceRequest.getUrl()) || super.shouldOverrideUrlLoading(webView, webResourceRequest);
         }
     }
 
@@ -69,7 +69,7 @@ public class d40<T> extends AbstractC9323v4<T> {
             } catch (Throwable unused) {
                 uri = null;
             }
-            if (uri == null || !d40.this.m35147Se(uri)) {
+            if (uri == null || !d40.this.m35150Se(uri)) {
                 super.onPageFinished(webView, str);
             }
         }
@@ -82,7 +82,7 @@ public class d40<T> extends AbstractC9323v4<T> {
             } catch (Throwable unused) {
                 uri = null;
             }
-            return (uri != null && d40.this.m35147Se(uri)) || super.shouldOverrideUrlLoading(webView, str);
+            return (uri != null && d40.this.m35150Se(uri)) || super.shouldOverrideUrlLoading(webView, str);
         }
     }
 
@@ -92,7 +92,7 @@ public class d40<T> extends AbstractC9323v4<T> {
 
         @Override
         public void onProgressChanged(WebView webView, int i) {
-            d40.this.m35148Re(i / 100.0f);
+            d40.this.m35151Re(i / 100.0f);
         }
     }
 
@@ -115,11 +115,11 @@ public class d40<T> extends AbstractC9323v4<T> {
         return this.f7889n0;
     }
 
-    public boolean m35149Pe() {
+    public boolean m35152Pe() {
         return false;
     }
 
-    public void mo33118Qe(C9289s sVar, WebView webView) {
+    public void mo33121Qe(C9289s sVar, WebView webView) {
         throw null;
     }
 
@@ -128,14 +128,14 @@ public class d40<T> extends AbstractC9323v4<T> {
         return R.id.controller_webkit;
     }
 
-    public void m35148Re(float f) {
+    public void m35151Re(float f) {
         C9289s sVar = this.f7890o0;
         if (sVar != null) {
-            sVar.m9633C1(f);
+            sVar.m9632C1(f);
         }
     }
 
-    public boolean m35147Se(Uri uri) {
+    public boolean m35150Se(Uri uri) {
         return false;
     }
 
@@ -151,7 +151,7 @@ public class d40<T> extends AbstractC9323v4<T> {
         C9289s sVar = new C9289s(mo4347s());
         this.f7890o0 = sVar;
         sVar.setThemedTextColor(this);
-        this.f7890o0.m9632D1(C1357a0.m37541i(49.0f), true);
+        this.f7890o0.m9631D1(C1357a0.m37544i(49.0f), true);
         C2275a aVar = new C2275a(context);
         C10192g.m5782i(aVar, R.id.theme_color_filling, this);
         aVar.setLayoutParams(FrameLayoutFix.m18008s1(-1, -1));
@@ -165,7 +165,7 @@ public class d40<T> extends AbstractC9323v4<T> {
             this.f7889n0.getSettings().setMixedContentMode(0);
             CookieManager.getInstance().setAcceptThirdPartyCookies(this.f7889n0, true);
         }
-        if (!m35149Pe()) {
+        if (!m35152Pe()) {
             this.f7889n0.setWebViewClient(new WebViewClient());
         } else if (i >= 24) {
             this.f7889n0.setWebViewClient(new C2276b());
@@ -173,7 +173,7 @@ public class d40<T> extends AbstractC9323v4<T> {
             this.f7889n0.setWebViewClient(new C2277c());
         }
         this.f7889n0.setWebChromeClient(new C2278d());
-        mo33118Qe(this.f7890o0, this.f7889n0);
+        mo33121Qe(this.f7890o0, this.f7889n0);
         aVar.addView(this.f7889n0);
         return aVar;
     }

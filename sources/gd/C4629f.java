@@ -13,46 +13,46 @@ public class C4629f {
         arrayList.add(eVar);
     }
 
-    public int m26797a(C4619e eVar) {
+    public int m26799a(C4619e eVar) {
         ArrayList<C4619e> arrayList = this.f15370a;
         C4619e eVar2 = arrayList.get(arrayList.size() - 1);
-        int C0 = C4779t2.m25716C0(eVar.m26858d(), false);
-        if (C0 != C4779t2.m25716C0(eVar2.m26858d(), false) || C4779t2.m25469m5(C0, eVar2.m26858d(), eVar.m26858d())) {
+        int C0 = C4779t2.m25717C0(eVar.m26860d(), false);
+        if (C0 != C4779t2.m25717C0(eVar2.m26860d(), false) || C4779t2.m25470m5(C0, eVar2.m26860d(), eVar.m26860d())) {
             return 0;
         }
-        if (eVar2.m26842t(eVar)) {
+        if (eVar2.m26844t(eVar)) {
             return 2;
         }
         this.f15370a.add(eVar);
         return 1;
     }
 
-    public ArrayList<C4619e> m26796b() {
+    public ArrayList<C4619e> m26798b() {
         return this.f15370a;
     }
 
-    public String m26795c() {
-        return C4403w.m27914Y0(this.f15370a.get(0).m26858d(), TimeUnit.SECONDS, false);
+    public String m26797c() {
+        return C4403w.m27916Y0(this.f15370a.get(0).m26860d(), TimeUnit.SECONDS, false);
     }
 
-    public boolean m26794d() {
+    public boolean m26796d() {
         return this.f15370a.isEmpty();
     }
 
-    public int m26793e(C4619e eVar) {
+    public int m26795e(C4619e eVar) {
         C4619e eVar2 = this.f15370a.get(0);
-        int C0 = C4779t2.m25716C0(eVar.m26858d(), false);
-        if (C0 != C4779t2.m25716C0(eVar2.m26858d(), false) || C4779t2.m25469m5(C0, eVar2.m26858d(), eVar.m26858d())) {
+        int C0 = C4779t2.m25717C0(eVar.m26860d(), false);
+        if (C0 != C4779t2.m25717C0(eVar2.m26860d(), false) || C4779t2.m25470m5(C0, eVar2.m26860d(), eVar.m26860d())) {
             return 0;
         }
-        if (eVar2.m26842t(eVar)) {
+        if (eVar2.m26844t(eVar)) {
             return 2;
         }
         this.f15370a.add(0, eVar);
         return 1;
     }
 
-    public void m26792f(C4619e eVar) {
+    public void m26794f(C4619e eVar) {
         this.f15370a.remove(eVar);
     }
 }

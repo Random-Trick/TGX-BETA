@@ -6,16 +6,16 @@ import androidx.annotation.RecentlyNonNull;
 import p272t5.AbstractC8983b;
 
 public interface AbstractC4991c extends IInterface {
-    void mo24291c();
+    void mo24292c();
 
-    void mo24290f();
+    void mo24291f();
 
-    void mo24289g();
+    void mo24290g();
 
-    void mo24288i(@RecentlyNonNull Bundle bundle);
+    void mo24289i(@RecentlyNonNull Bundle bundle);
 
     @RecentlyNonNull
-    AbstractC8983b mo24287r();
+    AbstractC8983b mo24288r();
 
-    void mo24286x1(AbstractC5002i iVar);
+    void mo24287x1(AbstractC5002i iVar);
 }

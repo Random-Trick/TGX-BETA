@@ -8,7 +8,7 @@ public final class C11458r {
         String valueOf = String.valueOf(c);
         Locale locale = Locale.ROOT;
         String upperCase = valueOf.toUpperCase(locale);
-        C8298k.m12935d(upperCase, "this as java.lang.String).toUpperCase(Locale.ROOT)");
+        C8298k.m12934d(upperCase, "this as java.lang.String).toUpperCase(Locale.ROOT)");
         if (upperCase.length() <= 1) {
             return String.valueOf(Character.toTitleCase(c));
         }
@@ -17,9 +17,9 @@ public final class C11458r {
         }
         char charAt = upperCase.charAt(0);
         String substring = upperCase.substring(1);
-        C8298k.m12935d(substring, "this as java.lang.String).substring(startIndex)");
+        C8298k.m12934d(substring, "this as java.lang.String).substring(startIndex)");
         String lowerCase = substring.toLowerCase(locale);
-        C8298k.m12935d(lowerCase, "this as java.lang.String).toLowerCase(Locale.ROOT)");
+        C8298k.m12934d(lowerCase, "this as java.lang.String).toLowerCase(Locale.ROOT)");
         return charAt + lowerCase;
     }
 }

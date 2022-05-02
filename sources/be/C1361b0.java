@@ -8,7 +8,7 @@ public final class C1361b0 implements Comparator {
     @Override
     public final int compare(Object obj, Object obj2) {
         int V;
-        V = C1363c0.m37452V((String) obj, (String) obj2);
+        V = C1363c0.m37455V((String) obj, (String) obj2);
         return V;
     }
 }

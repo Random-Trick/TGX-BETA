@@ -39,7 +39,7 @@ public final class C6053a extends AbstractC6069i {
             return false;
         }
         C6053a aVar = (C6053a) obj;
-        return this.f19260M == aVar.f19260M && C1216l0.m37982c(this.f19262b, aVar.f19262b) && C1216l0.m37982c(this.f19263c, aVar.f19263c) && Arrays.equals(this.f19261N, aVar.f19261N);
+        return this.f19260M == aVar.f19260M && C1216l0.m37985c(this.f19262b, aVar.f19262b) && C1216l0.m37985c(this.f19263c, aVar.f19263c) && Arrays.equals(this.f19261N, aVar.f19261N);
     }
 
     public int hashCode() {
@@ -56,7 +56,7 @@ public final class C6053a extends AbstractC6069i {
 
     @Override
     public void populateMediaMetadata(C6693s1.C6695b bVar) {
-        bVar.m19542H(this.f19261N, this.f19260M);
+        bVar.m19543H(this.f19261N, this.f19260M);
     }
 
     @Override
@@ -83,9 +83,9 @@ public final class C6053a extends AbstractC6069i {
 
     public C6053a(Parcel parcel) {
         super("APIC");
-        this.f19262b = (String) C1216l0.m37968j(parcel.readString());
+        this.f19262b = (String) C1216l0.m37971j(parcel.readString());
         this.f19263c = parcel.readString();
         this.f19260M = parcel.readInt();
-        this.f19261N = (byte[]) C1216l0.m37968j(parcel.createByteArray());
+        this.f19261N = (byte[]) C1216l0.m37971j(parcel.createByteArray());
     }
 }

@@ -38,8 +38,8 @@ public class C0038b extends Drawable implements Animatable {
         @Override
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
             float floatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();
-            C0038b.this.m42537n(floatValue, this.f95a);
-            C0038b.this.m42549b(floatValue, this.f95a, false);
+            C0038b.this.m42540n(floatValue, this.f95a);
+            C0038b.this.m42552b(floatValue, this.f95a, false);
             C0038b.this.invalidateSelf();
         }
     }
@@ -61,16 +61,16 @@ public class C0038b extends Drawable implements Animatable {
 
         @Override
         public void onAnimationRepeat(Animator animator) {
-            C0038b.this.m42549b(1.0f, this.f97a, true);
-            this.f97a.m42536A();
-            this.f97a.m42524l();
+            C0038b.this.m42552b(1.0f, this.f97a, true);
+            this.f97a.m42539A();
+            this.f97a.m42527l();
             C0038b bVar = C0038b.this;
             if (bVar.f91O) {
                 bVar.f91O = false;
                 animator.cancel();
                 animator.setDuration(1332L);
                 animator.start();
-                this.f97a.m42512x(false);
+                this.f97a.m42515x(false);
                 return;
             }
             bVar.f90N += 1.0f;
@@ -120,13 +120,13 @@ public class C0038b extends Drawable implements Animatable {
             paint3.setColor(0);
         }
 
-        public void m42536A() {
+        public void m42539A() {
             this.f109k = this.f103e;
             this.f110l = this.f104f;
             this.f111m = this.f105g;
         }
 
-        public void m42535a(Canvas canvas, Rect rect) {
+        public void m42538a(Canvas canvas, Rect rect) {
             RectF rectF = this.f99a;
             float f = this.f115q;
             float f2 = (this.f106h / 2.0f) + f;
@@ -146,10 +146,10 @@ public class C0038b extends Drawable implements Animatable {
             float f8 = -f7;
             rectF.inset(f8, f8);
             canvas.drawArc(rectF, f5, f6, false, this.f100b);
-            m42534b(canvas, f5, f6, rectF);
+            m42537b(canvas, f5, f6, rectF);
         }
 
-        public void m42534b(Canvas canvas, float f, float f2, RectF rectF) {
+        public void m42537b(Canvas canvas, float f, float f2, RectF rectF) {
             if (this.f112n) {
                 Path path = this.f113o;
                 if (path == null) {
@@ -175,155 +175,155 @@ public class C0038b extends Drawable implements Animatable {
             }
         }
 
-        public int m42533c() {
+        public int m42536c() {
             return this.f118t;
         }
 
-        public float m42532d() {
+        public float m42535d() {
             return this.f104f;
         }
 
-        public int m42531e() {
-            return this.f107i[m42530f()];
+        public int m42534e() {
+            return this.f107i[m42533f()];
         }
 
-        public int m42530f() {
+        public int m42533f() {
             return (this.f108j + 1) % this.f107i.length;
         }
 
-        public float m42529g() {
+        public float m42532g() {
             return this.f103e;
         }
 
-        public int m42528h() {
+        public int m42531h() {
             return this.f107i[this.f108j];
         }
 
-        public float m42527i() {
+        public float m42530i() {
             return this.f110l;
         }
 
-        public float m42526j() {
+        public float m42529j() {
             return this.f111m;
         }
 
-        public float m42525k() {
+        public float m42528k() {
             return this.f109k;
         }
 
-        public void m42524l() {
-            m42516t(m42530f());
+        public void m42527l() {
+            m42519t(m42533f());
         }
 
-        public void m42523m() {
+        public void m42526m() {
             this.f109k = 0.0f;
             this.f110l = 0.0f;
             this.f111m = 0.0f;
-            m42511y(0.0f);
-            m42514v(0.0f);
-            m42513w(0.0f);
+            m42514y(0.0f);
+            m42517v(0.0f);
+            m42516w(0.0f);
         }
 
-        public void m42522n(int i) {
+        public void m42525n(int i) {
             this.f118t = i;
         }
 
-        public void m42521o(float f, float f2) {
+        public void m42524o(float f, float f2) {
             this.f116r = (int) f;
             this.f117s = (int) f2;
         }
 
-        public void m42520p(float f) {
+        public void m42523p(float f) {
             if (f != this.f114p) {
                 this.f114p = f;
             }
         }
 
-        public void m42519q(float f) {
+        public void m42522q(float f) {
             this.f115q = f;
         }
 
-        public void m42518r(int i) {
+        public void m42521r(int i) {
             this.f119u = i;
         }
 
-        public void m42517s(ColorFilter colorFilter) {
+        public void m42520s(ColorFilter colorFilter) {
             this.f100b.setColorFilter(colorFilter);
         }
 
-        public void m42516t(int i) {
+        public void m42519t(int i) {
             this.f108j = i;
             this.f119u = this.f107i[i];
         }
 
-        public void m42515u(int[] iArr) {
+        public void m42518u(int[] iArr) {
             this.f107i = iArr;
-            m42516t(0);
+            m42519t(0);
         }
 
-        public void m42514v(float f) {
+        public void m42517v(float f) {
             this.f104f = f;
         }
 
-        public void m42513w(float f) {
+        public void m42516w(float f) {
             this.f105g = f;
         }
 
-        public void m42512x(boolean z) {
+        public void m42515x(boolean z) {
             if (this.f112n != z) {
                 this.f112n = z;
             }
         }
 
-        public void m42511y(float f) {
+        public void m42514y(float f) {
             this.f103e = f;
         }
 
-        public void m42510z(float f) {
+        public void m42513z(float f) {
             this.f106h = f;
             this.f100b.setStrokeWidth(f);
         }
     }
 
     public C0038b(Context context) {
-        this.f94c = ((Context) C1132h.m38322e(context)).getResources();
+        this.f94c = ((Context) C1132h.m38325e(context)).getResources();
         C0041c cVar = new C0041c();
         this.f92a = cVar;
-        cVar.m42515u(f88R);
-        m42540k(2.5f);
-        m42538m();
+        cVar.m42518u(f88R);
+        m42543k(2.5f);
+        m42541m();
     }
 
-    public final void m42550a(float f, C0041c cVar) {
-        m42537n(f, cVar);
-        cVar.m42511y(cVar.m42525k() + (((cVar.m42527i() - 0.01f) - cVar.m42525k()) * f));
-        cVar.m42514v(cVar.m42527i());
-        cVar.m42513w(cVar.m42526j() + ((((float) (Math.floor(cVar.m42526j() / 0.8f) + 1.0d)) - cVar.m42526j()) * f));
+    public final void m42553a(float f, C0041c cVar) {
+        m42540n(f, cVar);
+        cVar.m42514y(cVar.m42528k() + (((cVar.m42530i() - 0.01f) - cVar.m42528k()) * f));
+        cVar.m42517v(cVar.m42530i());
+        cVar.m42516w(cVar.m42529j() + ((((float) (Math.floor(cVar.m42529j() / 0.8f) + 1.0d)) - cVar.m42529j()) * f));
     }
 
-    public void m42549b(float f, C0041c cVar, boolean z) {
+    public void m42552b(float f, C0041c cVar, boolean z) {
         float f2;
         float f3;
         if (this.f91O) {
-            m42550a(f, cVar);
+            m42553a(f, cVar);
         } else if (f != 1.0f || z) {
-            float j = cVar.m42526j();
+            float j = cVar.m42529j();
             if (f < 0.5f) {
-                f2 = cVar.m42525k();
+                f2 = cVar.m42528k();
                 f3 = (f87Q.getInterpolation(f / 0.5f) * 0.79f) + 0.01f + f2;
             } else {
-                float k = cVar.m42525k() + 0.79f;
+                float k = cVar.m42528k() + 0.79f;
                 f2 = k - (((1.0f - f87Q.getInterpolation((f - 0.5f) / 0.5f)) * 0.79f) + 0.01f);
                 f3 = k;
             }
-            cVar.m42511y(f2);
-            cVar.m42514v(f3);
-            cVar.m42513w(j + (0.20999998f * f));
-            m42543h((f + this.f90N) * 216.0f);
+            cVar.m42514y(f2);
+            cVar.m42517v(f3);
+            cVar.m42516w(j + (0.20999998f * f));
+            m42546h((f + this.f90N) * 216.0f);
         }
     }
 
-    public final int m42548c(float f, int i, int i2) {
+    public final int m42551c(float f, int i, int i2) {
         int i3 = (i >> 24) & 255;
         int i4 = (i >> 16) & 255;
         int i5 = (i >> 8) & 255;
@@ -331,8 +331,8 @@ public class C0038b extends Drawable implements Animatable {
         return ((i3 + ((int) ((((i2 >> 24) & 255) - i3) * f))) << 24) | ((i4 + ((int) ((((i2 >> 16) & 255) - i4) * f))) << 16) | ((i5 + ((int) ((((i2 >> 8) & 255) - i5) * f))) << 8) | (i6 + ((int) (f * ((i2 & 255) - i6))));
     }
 
-    public void m42547d(boolean z) {
-        this.f92a.m42512x(z);
+    public void m42550d(boolean z) {
+        this.f92a.m42515x(z);
         invalidateSelf();
     }
 
@@ -341,29 +341,29 @@ public class C0038b extends Drawable implements Animatable {
         Rect bounds = getBounds();
         canvas.save();
         canvas.rotate(this.f93b, bounds.exactCenterX(), bounds.exactCenterY());
-        this.f92a.m42535a(canvas, bounds);
+        this.f92a.m42538a(canvas, bounds);
         canvas.restore();
     }
 
-    public void m42546e(float f) {
-        this.f92a.m42520p(f);
+    public void m42549e(float f) {
+        this.f92a.m42523p(f);
         invalidateSelf();
     }
 
-    public void m42545f(int... iArr) {
-        this.f92a.m42515u(iArr);
-        this.f92a.m42516t(0);
+    public void m42548f(int... iArr) {
+        this.f92a.m42518u(iArr);
+        this.f92a.m42519t(0);
         invalidateSelf();
     }
 
-    public void m42544g(float f) {
-        this.f92a.m42513w(f);
+    public void m42547g(float f) {
+        this.f92a.m42516w(f);
         invalidateSelf();
     }
 
     @Override
     public int getAlpha() {
-        return this.f92a.m42533c();
+        return this.f92a.m42536c();
     }
 
     @Override
@@ -371,17 +371,17 @@ public class C0038b extends Drawable implements Animatable {
         return -3;
     }
 
-    public final void m42543h(float f) {
+    public final void m42546h(float f) {
         this.f93b = f;
     }
 
-    public final void m42542i(float f, float f2, float f3, float f4) {
+    public final void m42545i(float f, float f2, float f3, float f4) {
         C0041c cVar = this.f92a;
         float f5 = this.f94c.getDisplayMetrics().density;
-        cVar.m42510z(f2 * f5);
-        cVar.m42519q(f * f5);
-        cVar.m42516t(0);
-        cVar.m42521o(f3 * f5, f4 * f5);
+        cVar.m42513z(f2 * f5);
+        cVar.m42522q(f * f5);
+        cVar.m42519t(0);
+        cVar.m42524o(f3 * f5, f4 * f5);
     }
 
     @Override
@@ -389,27 +389,27 @@ public class C0038b extends Drawable implements Animatable {
         return this.f89M.isRunning();
     }
 
-    public void m42541j(float f, float f2) {
-        this.f92a.m42511y(f);
-        this.f92a.m42514v(f2);
+    public void m42544j(float f, float f2) {
+        this.f92a.m42514y(f);
+        this.f92a.m42517v(f2);
         invalidateSelf();
     }
 
-    public void m42540k(float f) {
-        this.f92a.m42510z(f);
+    public void m42543k(float f) {
+        this.f92a.m42513z(f);
         invalidateSelf();
     }
 
-    public void m42539l(int i) {
+    public void m42542l(int i) {
         if (i == 0) {
-            m42542i(11.0f, 3.0f, 12.0f, 6.0f);
+            m42545i(11.0f, 3.0f, 12.0f, 6.0f);
         } else {
-            m42542i(7.5f, 2.5f, 10.0f, 5.0f);
+            m42545i(7.5f, 2.5f, 10.0f, 5.0f);
         }
         invalidateSelf();
     }
 
-    public final void m42538m() {
+    public final void m42541m() {
         C0041c cVar = this.f92a;
         ValueAnimator ofFloat = ValueAnimator.ofFloat(0.0f, 1.0f);
         ofFloat.addUpdateListener(new C0039a(cVar));
@@ -420,38 +420,38 @@ public class C0038b extends Drawable implements Animatable {
         this.f89M = ofFloat;
     }
 
-    public void m42537n(float f, C0041c cVar) {
+    public void m42540n(float f, C0041c cVar) {
         if (f > 0.75f) {
-            cVar.m42518r(m42548c((f - 0.75f) / 0.25f, cVar.m42528h(), cVar.m42531e()));
+            cVar.m42521r(m42551c((f - 0.75f) / 0.25f, cVar.m42531h(), cVar.m42534e()));
         } else {
-            cVar.m42518r(cVar.m42528h());
+            cVar.m42521r(cVar.m42531h());
         }
     }
 
     @Override
     public void setAlpha(int i) {
-        this.f92a.m42522n(i);
+        this.f92a.m42525n(i);
         invalidateSelf();
     }
 
     @Override
     public void setColorFilter(ColorFilter colorFilter) {
-        this.f92a.m42517s(colorFilter);
+        this.f92a.m42520s(colorFilter);
         invalidateSelf();
     }
 
     @Override
     public void start() {
         this.f89M.cancel();
-        this.f92a.m42536A();
-        if (this.f92a.m42532d() != this.f92a.m42529g()) {
+        this.f92a.m42539A();
+        if (this.f92a.m42535d() != this.f92a.m42532g()) {
             this.f91O = true;
             this.f89M.setDuration(666L);
             this.f89M.start();
             return;
         }
-        this.f92a.m42516t(0);
-        this.f92a.m42523m();
+        this.f92a.m42519t(0);
+        this.f92a.m42526m();
         this.f89M.setDuration(1332L);
         this.f89M.start();
     }
@@ -459,10 +459,10 @@ public class C0038b extends Drawable implements Animatable {
     @Override
     public void stop() {
         this.f89M.cancel();
-        m42543h(0.0f);
-        this.f92a.m42512x(false);
-        this.f92a.m42516t(0);
-        this.f92a.m42523m();
+        m42546h(0.0f);
+        this.f92a.m42515x(false);
+        this.f92a.m42519t(0);
+        this.f92a.m42526m();
         invalidateSelf();
     }
 }

@@ -12,8 +12,8 @@ import java.util.List;
 import p012ab.AbstractC0243a;
 
 public class SonyHomeBadger implements AbstractC0243a {
-    public final Uri f21956a = Uri.parse("content://com.sonymobile.home.resourceprovider/badge");
-    public AsyncQueryHandler f21957b;
+    public final Uri f21959a = Uri.parse("content://com.sonymobile.home.resourceprovider/badge");
+    public AsyncQueryHandler f21960b;
 
     public static void m18377d(Context context, ComponentName componentName, int i) {
         Intent intent = new Intent("com.sonyericsson.home.action.UPDATE_BADGE");
@@ -54,8 +54,8 @@ public class SonyHomeBadger implements AbstractC0243a {
         if (i >= 0) {
             ContentValues c = m18378c(i, componentName);
             if (Looper.myLooper() == Looper.getMainLooper()) {
-                if (this.f21957b == null) {
-                    this.f21957b = new AsyncQueryHandler(context.getApplicationContext().getContentResolver()) {
+                if (this.f21960b == null) {
+                    this.f21960b = new AsyncQueryHandler(context.getApplicationContext().getContentResolver()) {
                     };
                 }
                 m18375f(c);
@@ -66,10 +66,10 @@ public class SonyHomeBadger implements AbstractC0243a {
     }
 
     public final void m18375f(ContentValues contentValues) {
-        this.f21957b.startInsert(0, null, this.f21956a, contentValues);
+        this.f21960b.startInsert(0, null, this.f21959a, contentValues);
     }
 
     public final void m18374g(Context context, ContentValues contentValues) {
-        context.getApplicationContext().getContentResolver().insert(this.f21956a, contentValues);
+        context.getApplicationContext().getContentResolver().insert(this.f21959a, contentValues);
     }
 }

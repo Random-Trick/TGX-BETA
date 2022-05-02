@@ -10,22 +10,22 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class C9938a {
-    public static final Map<String, Lock> f32314e = new HashMap();
-    public final File f32315a;
-    public final Lock f32316b;
-    public final boolean f32317c;
-    public FileChannel f32318d;
+    public static final Map<String, Lock> f32317e = new HashMap();
+    public final File f32318a;
+    public final Lock f32319b;
+    public final boolean f32320c;
+    public FileChannel f32321d;
 
     public C9938a(String str, File file, boolean z) {
         File file2 = new File(file, str + ".lck");
-        this.f32315a = file2;
-        this.f32316b = m6461a(file2.getAbsolutePath());
-        this.f32317c = z;
+        this.f32318a = file2;
+        this.f32319b = m6461a(file2.getAbsolutePath());
+        this.f32320c = z;
     }
 
     public static Lock m6461a(String str) {
         Lock lock;
-        Map<String, Lock> map = f32314e;
+        Map<String, Lock> map = f32317e;
         synchronized (map) {
             lock = map.get(str);
             if (lock == null) {
@@ -37,11 +37,11 @@ public class C9938a {
     }
 
     public void m6460b() {
-        this.f32316b.lock();
-        if (this.f32317c) {
+        this.f32319b.lock();
+        if (this.f32320c) {
             try {
-                FileChannel channel = new FileOutputStream(this.f32315a).getChannel();
-                this.f32318d = channel;
+                FileChannel channel = new FileOutputStream(this.f32318a).getChannel();
+                this.f32321d = channel;
                 channel.lock();
             } catch (IOException e) {
                 throw new IllegalStateException("Unable to grab copy lock.", e);
@@ -50,13 +50,13 @@ public class C9938a {
     }
 
     public void m6459c() {
-        FileChannel fileChannel = this.f32318d;
+        FileChannel fileChannel = this.f32321d;
         if (fileChannel != null) {
             try {
                 fileChannel.close();
             } catch (IOException unused) {
             }
         }
-        this.f32316b.unlock();
+        this.f32319b.unlock();
     }
 }

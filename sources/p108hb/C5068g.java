@@ -18,9 +18,9 @@ import qa.C8298k;
 import za.C11451n;
 
 public final class C5068g {
-    public static final boolean m24102a(File file, File file2) {
-        C8298k.m12934e(file, "src");
-        C8298k.m12934e(file2, "dst");
+    public static final boolean m24103a(File file, File file2) {
+        C8298k.m12933e(file, "src");
+        C8298k.m12933e(file2, "dst");
         try {
             FileOutputStream fileInputStream = new FileInputStream(file).getChannel();
             try {
@@ -44,9 +44,9 @@ public final class C5068g {
         }
     }
 
-    public static final boolean m24101b(File file, boolean z) {
+    public static final boolean m24102b(File file, boolean z) {
         boolean z2;
-        C8298k.m12934e(file, "file");
+        C8298k.m12933e(file, "file");
         if (file.exists()) {
             if (file.isDirectory()) {
                 if (!z) {
@@ -60,8 +60,8 @@ public final class C5068g {
                     while (i < length) {
                         File file2 = listFiles[i];
                         i++;
-                        C8298k.m12935d(file2, "child");
-                        if (!m24101b(file2, true)) {
+                        C8298k.m12934d(file2, "child");
+                        if (!m24102b(file2, true)) {
                             z2 = true;
                         }
                     }
@@ -75,12 +75,12 @@ public final class C5068g {
         return true;
     }
 
-    public static final boolean m24100c(java.io.File[] r3, boolean r4) {
-        throw new UnsupportedOperationException("Method not decompiled: p108hb.C5068g.m24100c(java.io.File[], boolean):boolean");
+    public static final boolean m24101c(java.io.File[] r3, boolean r4) {
+        throw new UnsupportedOperationException("Method not decompiled: p108hb.C5068g.m24101c(java.io.File[], boolean):boolean");
     }
 
-    public static final boolean m24099d(File file) {
-        C8298k.m12934e(file, "file");
+    public static final boolean m24100d(File file) {
+        C8298k.m12933e(file, "file");
         try {
             if (file.exists()) {
                 if (!file.delete()) {
@@ -93,12 +93,12 @@ public final class C5068g {
         }
     }
 
-    public static final boolean m24098e(String str) {
-        C8298k.m12934e(str, "path");
-        return m24099d(new File(str));
+    public static final boolean m24099e(String str) {
+        C8298k.m12933e(str, "path");
+        return m24100d(new File(str));
     }
 
-    public static final void m24097f(File file, List<File> list) {
+    public static final void m24098f(File file, List<File> list) {
         File[] listFiles;
         if (file.exists()) {
             list.add(file);
@@ -108,24 +108,24 @@ public final class C5068g {
                 while (i < length) {
                     File file2 = listFiles[i];
                     i++;
-                    C8298k.m12935d(file2, "file");
-                    m24097f(file2, list);
+                    C8298k.m12934d(file2, "file");
+                    m24098f(file2, list);
                 }
             }
         }
     }
 
-    public static final File[] m24096g(File file) {
-        C8298k.m12934e(file, "dir");
+    public static final File[] m24097g(File file) {
+        C8298k.m12933e(file, "dir");
         ArrayList arrayList = new ArrayList();
-        m24097f(file, arrayList);
+        m24098f(file, arrayList);
         Object[] array = arrayList.toArray(new File[0]);
         Objects.requireNonNull(array, "null cannot be cast to non-null type kotlin.Array<T of kotlin.collections.ArraysKt__ArraysJVMKt.toTypedArray>");
         return (File[]) array;
     }
 
-    public static final long m24095h(File file) {
-        C8298k.m12934e(file, "file");
+    public static final long m24096h(File file) {
+        C8298k.m12933e(file, "file");
         long j = 0;
         if (!file.exists()) {
             return 0L;
@@ -144,24 +144,24 @@ public final class C5068g {
         if (z) {
             return 0L;
         }
-        C8298k.m12935d(listFiles, "files");
+        C8298k.m12934d(listFiles, "files");
         int length = listFiles.length;
         while (i < length) {
             File file2 = listFiles[i];
             i++;
-            C8298k.m12935d(file2, "nested");
-            j += m24095h(file2);
+            C8298k.m12934d(file2, "nested");
+            j += m24096h(file2);
         }
         return j;
     }
 
-    public static final long m24094i(java.io.File[] r5) {
-        throw new UnsupportedOperationException("Method not decompiled: p108hb.C5068g.m24094i(java.io.File[]):long");
+    public static final long m24095i(java.io.File[] r5) {
+        throw new UnsupportedOperationException("Method not decompiled: p108hb.C5068g.m24095i(java.io.File[]):long");
     }
 
-    public static final void m24093j(File file, File file2) {
-        C8298k.m12934e(file, "zipFile");
-        C8298k.m12934e(file2, "targetDirectory");
+    public static final void m24094j(File file, File file2) {
+        C8298k.m12933e(file, "zipFile");
+        C8298k.m12933e(file2, "targetDirectory");
         FileOutputStream zipInputStream = new ZipInputStream(new BufferedInputStream(new FileInputStream(file)));
         try {
             byte[] bArr = new byte[Log.TAG_LUX];
@@ -174,9 +174,9 @@ public final class C5068g {
                 }
                 File file3 = new File(file2, nextEntry.getName());
                 String canonicalPath = file3.getCanonicalPath();
-                C8298k.m12935d(canonicalPath, "file.canonicalPath");
+                C8298k.m12934d(canonicalPath, "file.canonicalPath");
                 String canonicalPath2 = file2.getCanonicalPath();
-                C8298k.m12935d(canonicalPath2, "targetDirectory.canonicalPath");
+                C8298k.m12934d(canonicalPath2, "targetDirectory.canonicalPath");
                 if (C11451n.m621x(canonicalPath, canonicalPath2, false, 2, th)) {
                     File parentFile = nextEntry.isDirectory() ? file3 : file3.getParentFile();
                     if (!parentFile.isDirectory() && !parentFile.mkdirs()) {

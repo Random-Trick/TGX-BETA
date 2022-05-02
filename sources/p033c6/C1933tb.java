@@ -27,14 +27,14 @@ public final class C1933tb extends AbstractC6749a {
 
     @Override
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = C6752c.m19124a(parcel);
-        C6752c.m19109p(parcel, 1, this.f6953a, false);
-        C6752c.m19109p(parcel, 2, this.f6954b, false);
-        C6752c.m19109p(parcel, 3, this.f6955c, false);
-        C6752c.m19109p(parcel, 4, this.f6949M, false);
-        C6752c.m19109p(parcel, 5, this.f6950N, false);
-        C6752c.m19110o(parcel, 6, this.f6951O, i, false);
-        C6752c.m19110o(parcel, 7, this.f6952P, i, false);
-        C6752c.m19123b(parcel, a);
+        int a = C6752c.m19125a(parcel);
+        C6752c.m19110p(parcel, 1, this.f6953a, false);
+        C6752c.m19110p(parcel, 2, this.f6954b, false);
+        C6752c.m19110p(parcel, 3, this.f6955c, false);
+        C6752c.m19110p(parcel, 4, this.f6949M, false);
+        C6752c.m19110p(parcel, 5, this.f6950N, false);
+        C6752c.m19111o(parcel, 6, this.f6951O, i, false);
+        C6752c.m19111o(parcel, 7, this.f6952P, i, false);
+        C6752c.m19124b(parcel, a);
     }
 }

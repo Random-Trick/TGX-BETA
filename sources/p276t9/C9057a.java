@@ -5,40 +5,40 @@ import android.os.Build;
 import java.nio.ByteBuffer;
 
 public class C9057a {
-    public final MediaCodec f29034a;
-    public final ByteBuffer[] f29035b;
-    public ByteBuffer[] f29036c;
+    public final MediaCodec f29037a;
+    public final ByteBuffer[] f29038b;
+    public ByteBuffer[] f29039c;
 
     public C9057a(MediaCodec mediaCodec) {
-        this.f29034a = mediaCodec;
+        this.f29037a = mediaCodec;
         if (Build.VERSION.SDK_INT < 21) {
-            this.f29035b = mediaCodec.getInputBuffers();
-            this.f29036c = mediaCodec.getOutputBuffers();
+            this.f29038b = mediaCodec.getInputBuffers();
+            this.f29039c = mediaCodec.getOutputBuffers();
             return;
         }
-        this.f29036c = null;
-        this.f29035b = null;
+        this.f29039c = null;
+        this.f29038b = null;
     }
 
-    public ByteBuffer m10596a(int i) {
+    public ByteBuffer m10595a(int i) {
         if (Build.VERSION.SDK_INT >= 21) {
-            return this.f29034a.getInputBuffer(i);
+            return this.f29037a.getInputBuffer(i);
         }
-        ByteBuffer byteBuffer = this.f29035b[i];
+        ByteBuffer byteBuffer = this.f29038b[i];
         byteBuffer.clear();
         return byteBuffer;
     }
 
-    public ByteBuffer m10595b(int i) {
+    public ByteBuffer m10594b(int i) {
         if (Build.VERSION.SDK_INT >= 21) {
-            return this.f29034a.getOutputBuffer(i);
+            return this.f29037a.getOutputBuffer(i);
         }
-        return this.f29036c[i];
+        return this.f29039c[i];
     }
 
-    public void m10594c() {
+    public void m10593c() {
         if (Build.VERSION.SDK_INT < 21) {
-            this.f29036c = this.f29034a.getOutputBuffers();
+            this.f29039c = this.f29037a.getOutputBuffers();
         }
     }
 }

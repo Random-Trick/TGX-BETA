@@ -5,7 +5,7 @@ import org.thunderdog.challegram.Log;
 
 public class C8283b implements AbstractC8281a {
     @Override
-    public void mo12952a(ShortBuffer shortBuffer, ShortBuffer shortBuffer2) {
+    public void mo12951a(ShortBuffer shortBuffer, ShortBuffer shortBuffer2) {
         int i;
         int min = Math.min(shortBuffer.remaining() / 2, shortBuffer2.remaining());
         for (int i2 = 0; i2 < min; i2++) {
@@ -25,7 +25,7 @@ public class C8283b implements AbstractC8281a {
     }
 
     @Override
-    public int mo12951b(int i) {
+    public int mo12950b(int i) {
         return i / 2;
     }
 }

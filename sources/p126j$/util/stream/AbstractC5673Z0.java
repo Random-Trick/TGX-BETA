@@ -8,31 +8,31 @@ public abstract class AbstractC5673Z0 extends AbstractC5641R0 implements Abstrac
     }
 
     @Override
-    public void mo22157i(Object obj, int i) {
-        ((AbstractC5627O0) this.f18221a).mo22157i(obj, i);
-        ((AbstractC5627O0) this.f18222b).mo22157i(obj, i + ((int) ((AbstractC5627O0) this.f18221a).count()));
+    public void mo22158i(Object obj, int i) {
+        ((AbstractC5627O0) this.f18221a).mo22158i(obj, i);
+        ((AbstractC5627O0) this.f18222b).mo22158i(obj, i + ((int) ((AbstractC5627O0) this.f18221a).count()));
     }
 
     @Override
-    public Object mo22156l() {
+    public Object mo22157l() {
         long count = count();
         if (count < 2147483639) {
-            Object g = mo22347g((int) count);
-            mo22157i(g, 0);
+            Object g = mo22348g((int) count);
+            mo22158i(g, 0);
             return g;
         }
         throw new IllegalArgumentException("Stream size exceeds max array size");
     }
 
     @Override
-    public void mo22155m(Object obj) {
-        ((AbstractC5627O0) this.f18221a).mo22155m(obj);
-        ((AbstractC5627O0) this.f18222b).mo22155m(obj);
+    public void mo22156m(Object obj) {
+        ((AbstractC5627O0) this.f18221a).mo22156m(obj);
+        ((AbstractC5627O0) this.f18222b).mo22156m(obj);
     }
 
     @Override
-    public Object[] mo22152p(AbstractC5531m mVar) {
-        return AbstractC5572D0.m22410o(this, mVar);
+    public Object[] mo22153p(AbstractC5531m mVar) {
+        return AbstractC5572D0.m22411o(this, mVar);
     }
 
     public String toString() {

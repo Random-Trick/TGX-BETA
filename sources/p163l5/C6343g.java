@@ -41,7 +41,7 @@ public class C6343g extends AbstractC6749a {
             this.f19934M = str;
         }
         if (i < 2) {
-            this.f19938Q = iBinder != null ? BinderC6319a.m20673t(AbstractC6355k.AbstractBinderC6356a.m20564s(iBinder)) : null;
+            this.f19938Q = iBinder != null ? BinderC6319a.m20674t(AbstractC6355k.AbstractBinderC6356a.m20565s(iBinder)) : null;
         } else {
             this.f19935N = iBinder;
             this.f19938Q = account;
@@ -57,13 +57,13 @@ public class C6343g extends AbstractC6749a {
     }
 
     @RecentlyNullable
-    public final String m20587b() {
+    public final String m20588b() {
         return this.f19944W;
     }
 
     @Override
     public final void writeToParcel(@RecentlyNonNull Parcel parcel, int i) {
-        C6358k1.m20555a(this, parcel, i);
+        C6358k1.m20556a(this, parcel, i);
     }
 
     public C6343g(int i, String str) {

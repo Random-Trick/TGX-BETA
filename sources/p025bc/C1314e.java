@@ -9,7 +9,7 @@ import za.C11451n;
 public final class C1314e {
     public static final String[] f4756d;
     public static final C1314e f4757e = new C1314e();
-    public static final C4552h f4753a = C4552h.f14973N.m27399c("PRI * HTTP/2.0\r\n\r\nSM\r\n\r\n");
+    public static final C4552h f4753a = C4552h.f14973N.m27401c("PRI * HTTP/2.0\r\n\r\nSM\r\n\r\n");
     public static final String[] f4754b = {"DATA", "HEADERS", "PRIORITY", "RST_STREAM", "SETTINGS", "PUSH_PROMISE", "PING", "GOAWAY", "WINDOW_UPDATE", "CONTINUATION"};
     public static final String[] f4755c = new String[64];
 
@@ -17,7 +17,7 @@ public final class C1314e {
         String[] strArr = new String[Log.TAG_CRASH];
         for (int i = 0; i < 256; i++) {
             String binaryString = Integer.toBinaryString(i);
-            C8298k.m12935d(binaryString, "Integer.toBinaryString(it)");
+            C8298k.m12934d(binaryString, "Integer.toBinaryString(it)");
             strArr[i] = C11451n.m626s(C9489b.m8507q("%8s", binaryString), ' ', '0', false, 4, null);
         }
         f4756d = strArr;
@@ -29,7 +29,7 @@ public final class C1314e {
         for (int i2 = 0; i2 < 1; i2++) {
             int i3 = iArr[i2];
             String[] strArr3 = f4755c;
-            strArr3[i3 | 8] = C8298k.m12929j(strArr3[i3], "|PADDED");
+            strArr3[i3 | 8] = C8298k.m12928j(strArr3[i3], "|PADDED");
         }
         String[] strArr4 = f4755c;
         strArr4[4] = "END_HEADERS";
@@ -55,7 +55,7 @@ public final class C1314e {
         }
     }
 
-    public final String m37747a(int i, int i2) {
+    public final String m37750a(int i, int i2) {
         String str;
         if (i2 == 0) {
             return "";
@@ -68,7 +68,7 @@ public final class C1314e {
                 String[] strArr = f4755c;
                 if (i2 < strArr.length) {
                     str = strArr[i2];
-                    C8298k.m12936c(str);
+                    C8298k.m12935c(str);
                 } else {
                     str = f4756d[i2];
                 }
@@ -82,12 +82,12 @@ public final class C1314e {
         return f4756d[i2];
     }
 
-    public final String m37746b(int i) {
+    public final String m37749b(int i) {
         String[] strArr = f4754b;
         return i < strArr.length ? strArr[i] : C9489b.m8507q("0x%02x", Integer.valueOf(i));
     }
 
-    public final String m37745c(boolean z, int i, int i2, int i3, int i4) {
-        return C9489b.m8507q("%s 0x%08x %5d %-13s %s", z ? "<<" : ">>", Integer.valueOf(i), Integer.valueOf(i2), m37746b(i3), m37747a(i3, i4));
+    public final String m37748c(boolean z, int i, int i2, int i3, int i4) {
+        return C9489b.m8507q("%s 0x%08x %5d %-13s %s", z ? "<<" : ">>", Integer.valueOf(i), Integer.valueOf(i2), m37749b(i3), m37750a(i3, i4));
     }
 }

@@ -13,26 +13,26 @@ import p198o2.AbstractC7532b;
 import p198o2.AbstractC7558q;
 
 public abstract class AbstractRunnableC7991a implements Runnable {
-    public final C4451c f26031a = new C4451c();
+    public final C4451c f26034a = new C4451c();
 
     public class C7992a extends AbstractRunnableC7991a {
-        public final C4458i f26032b;
-        public final UUID f26033c;
+        public final C4458i f26035b;
+        public final UUID f26036c;
 
         public C7992a(C4458i iVar, UUID uuid) {
-            this.f26032b = iVar;
-            this.f26033c = uuid;
+            this.f26035b = iVar;
+            this.f26036c = uuid;
         }
 
         @Override
-        public void mo13819h() {
-            WorkDatabase s = this.f26032b.m27587s();
+        public void mo13818h() {
+            WorkDatabase s = this.f26035b.m27589s();
             s.m8731c();
             try {
-                m13826a(this.f26032b, this.f26033c.toString());
+                m13825a(this.f26035b, this.f26036c.toString());
                 s.m8714t();
                 s.m8727g();
-                m13820g(this.f26032b);
+                m13819g(this.f26035b);
             } catch (Throwable th) {
                 s.m8727g();
                 throw th;
@@ -41,25 +41,25 @@ public abstract class AbstractRunnableC7991a implements Runnable {
     }
 
     public class C7993b extends AbstractRunnableC7991a {
-        public final C4458i f26034b;
-        public final String f26035c;
+        public final C4458i f26037b;
+        public final String f26038c;
 
         public C7993b(C4458i iVar, String str) {
-            this.f26034b = iVar;
-            this.f26035c = str;
+            this.f26037b = iVar;
+            this.f26038c = str;
         }
 
         @Override
-        public void mo13819h() {
-            WorkDatabase s = this.f26034b.m27587s();
+        public void mo13818h() {
+            WorkDatabase s = this.f26037b.m27589s();
             s.m8731c();
             try {
-                for (String str : s.mo38454D().mo15678q(this.f26035c)) {
-                    m13826a(this.f26034b, str);
+                for (String str : s.mo38457D().mo15678q(this.f26038c)) {
+                    m13825a(this.f26037b, str);
                 }
                 s.m8714t();
                 s.m8727g();
-                m13820g(this.f26034b);
+                m13819g(this.f26037b);
             } catch (Throwable th) {
                 s.m8727g();
                 throw th;
@@ -68,28 +68,28 @@ public abstract class AbstractRunnableC7991a implements Runnable {
     }
 
     public class C7994c extends AbstractRunnableC7991a {
-        public final boolean f26036M;
-        public final C4458i f26037b;
-        public final String f26038c;
+        public final boolean f26039M;
+        public final C4458i f26040b;
+        public final String f26041c;
 
         public C7994c(C4458i iVar, String str, boolean z) {
-            this.f26037b = iVar;
-            this.f26038c = str;
-            this.f26036M = z;
+            this.f26040b = iVar;
+            this.f26041c = str;
+            this.f26039M = z;
         }
 
         @Override
-        public void mo13819h() {
-            WorkDatabase s = this.f26037b.m27587s();
+        public void mo13818h() {
+            WorkDatabase s = this.f26040b.m27589s();
             s.m8731c();
             try {
-                for (String str : s.mo38454D().mo15682m(this.f26038c)) {
-                    m13826a(this.f26037b, str);
+                for (String str : s.mo38457D().mo15682m(this.f26041c)) {
+                    m13825a(this.f26040b, str);
                 }
                 s.m8714t();
                 s.m8727g();
-                if (this.f26036M) {
-                    m13820g(this.f26037b);
+                if (this.f26039M) {
+                    m13819g(this.f26040b);
                 }
             } catch (Throwable th) {
                 s.m8727g();
@@ -98,33 +98,33 @@ public abstract class AbstractRunnableC7991a implements Runnable {
         }
     }
 
-    public static AbstractRunnableC7991a m13825b(UUID uuid, C4458i iVar) {
+    public static AbstractRunnableC7991a m13824b(UUID uuid, C4458i iVar) {
         return new C7992a(iVar, uuid);
     }
 
-    public static AbstractRunnableC7991a m13824c(String str, C4458i iVar, boolean z) {
+    public static AbstractRunnableC7991a m13823c(String str, C4458i iVar, boolean z) {
         return new C7994c(iVar, str, z);
     }
 
-    public static AbstractRunnableC7991a m13823d(String str, C4458i iVar) {
+    public static AbstractRunnableC7991a m13822d(String str, C4458i iVar) {
         return new C7993b(iVar, str);
     }
 
-    public void m13826a(C4458i iVar, String str) {
-        m13821f(iVar.m27587s(), str);
-        iVar.m27589q().m27629l(str);
-        for (AbstractC4454e eVar : iVar.m27588r()) {
-            eVar.mo21951e(str);
+    public void m13825a(C4458i iVar, String str) {
+        m13820f(iVar.m27589s(), str);
+        iVar.m27591q().m27631l(str);
+        for (AbstractC4454e eVar : iVar.m27590r()) {
+            eVar.mo21952e(str);
         }
     }
 
-    public AbstractC4239m m13822e() {
-        return this.f26031a;
+    public AbstractC4239m m13821e() {
+        return this.f26034a;
     }
 
-    public final void m13821f(WorkDatabase workDatabase, String str) {
-        AbstractC7558q D = workDatabase.mo38454D();
-        AbstractC7532b v = workDatabase.mo38441v();
+    public final void m13820f(WorkDatabase workDatabase, String str) {
+        AbstractC7558q D = workDatabase.mo38457D();
+        AbstractC7532b v = workDatabase.mo38444v();
         LinkedList linkedList = new LinkedList();
         linkedList.add(str);
         while (!linkedList.isEmpty()) {
@@ -137,19 +137,19 @@ public abstract class AbstractRunnableC7991a implements Runnable {
         }
     }
 
-    public void m13820g(C4458i iVar) {
-        C4455f.m27624b(iVar.m27593m(), iVar.m27587s(), iVar.m27588r());
+    public void m13819g(C4458i iVar) {
+        C4455f.m27626b(iVar.m27595m(), iVar.m27589s(), iVar.m27590r());
     }
 
-    public abstract void mo13819h();
+    public abstract void mo13818h();
 
     @Override
     public void run() {
         try {
-            mo13819h();
-            this.f26031a.m27638a(AbstractC4239m.f14285a);
+            mo13818h();
+            this.f26034a.m27640a(AbstractC4239m.f14285a);
         } catch (Throwable th) {
-            this.f26031a.m27638a(new AbstractC4239m.AbstractC4241b.C4242a(th));
+            this.f26034a.m27640a(new AbstractC4239m.AbstractC4241b.C4242a(th));
         }
     }
 }

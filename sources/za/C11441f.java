@@ -5,7 +5,7 @@ import qa.C8298k;
 
 public class C11441f {
     public static final <T> void m646a(Appendable appendable, T t, AbstractC8088l<? super T, ? extends CharSequence> lVar) {
-        C8298k.m12934e(appendable, "<this>");
+        C8298k.m12933e(appendable, "<this>");
         if (lVar != null) {
             appendable.append(lVar.mo568a(t));
             return;

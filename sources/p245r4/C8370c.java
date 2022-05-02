@@ -5,10 +5,10 @@ import p217p4.AbstractC8041f;
 import p217p4.C8032b;
 
 public final class C8370c implements AbstractC8041f {
-    public final List<C8032b> f27134a;
+    public final List<C8032b> f27137a;
 
     public C8370c(List<C8032b> list) {
-        this.f27134a = list;
+        this.f27137a = list;
     }
 
     @Override
@@ -23,7 +23,7 @@ public final class C8370c implements AbstractC8041f {
 
     @Override
     public List<C8032b> mo5198c(long j) {
-        return this.f27134a;
+        return this.f27137a;
     }
 
     @Override

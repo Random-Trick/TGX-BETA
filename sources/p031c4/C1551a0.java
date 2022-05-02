@@ -44,49 +44,49 @@ public final class C1551a0 implements AbstractC8958f {
             this.f5522b = i0Var;
         }
 
-        public void m36480a(C1189b0 b0Var) {
-            b0Var.m38133j(this.f5523c.f4469a, 0, 3);
-            this.f5523c.m38165p(0);
-            m36479b();
-            b0Var.m38133j(this.f5523c.f4469a, 0, this.f5527g);
-            this.f5523c.m38165p(0);
-            m36478c();
-            this.f5521a.mo36329f(this.f5528h, 4);
-            this.f5521a.mo36333b(b0Var);
-            this.f5521a.mo36331d();
+        public void m36483a(C1189b0 b0Var) {
+            b0Var.m38136j(this.f5523c.f4469a, 0, 3);
+            this.f5523c.m38168p(0);
+            m36482b();
+            b0Var.m38136j(this.f5523c.f4469a, 0, this.f5527g);
+            this.f5523c.m38168p(0);
+            m36481c();
+            this.f5521a.mo36332f(this.f5528h, 4);
+            this.f5521a.mo36336b(b0Var);
+            this.f5521a.mo36334d();
         }
 
-        public final void m36479b() {
-            this.f5523c.m38163r(8);
-            this.f5524d = this.f5523c.m38174g();
-            this.f5525e = this.f5523c.m38174g();
-            this.f5523c.m38163r(6);
-            this.f5527g = this.f5523c.m38173h(8);
+        public final void m36482b() {
+            this.f5523c.m38166r(8);
+            this.f5524d = this.f5523c.m38177g();
+            this.f5525e = this.f5523c.m38177g();
+            this.f5523c.m38166r(6);
+            this.f5527g = this.f5523c.m38176h(8);
         }
 
-        public final void m36478c() {
+        public final void m36481c() {
             this.f5528h = 0L;
             if (this.f5524d) {
-                this.f5523c.m38163r(4);
-                this.f5523c.m38163r(1);
-                this.f5523c.m38163r(1);
-                long h = (this.f5523c.m38173h(3) << 30) | (this.f5523c.m38173h(15) << 15) | this.f5523c.m38173h(15);
-                this.f5523c.m38163r(1);
+                this.f5523c.m38166r(4);
+                this.f5523c.m38166r(1);
+                this.f5523c.m38166r(1);
+                long h = (this.f5523c.m38176h(3) << 30) | (this.f5523c.m38176h(15) << 15) | this.f5523c.m38176h(15);
+                this.f5523c.m38166r(1);
                 if (!this.f5526f && this.f5525e) {
-                    this.f5523c.m38163r(4);
-                    this.f5523c.m38163r(1);
-                    this.f5523c.m38163r(1);
-                    this.f5523c.m38163r(1);
-                    this.f5522b.m38052b((this.f5523c.m38173h(3) << 30) | (this.f5523c.m38173h(15) << 15) | this.f5523c.m38173h(15));
+                    this.f5523c.m38166r(4);
+                    this.f5523c.m38166r(1);
+                    this.f5523c.m38166r(1);
+                    this.f5523c.m38166r(1);
+                    this.f5522b.m38055b((this.f5523c.m38176h(3) << 30) | (this.f5523c.m38176h(15) << 15) | this.f5523c.m38176h(15));
                     this.f5526f = true;
                 }
-                this.f5528h = this.f5522b.m38052b(h);
+                this.f5528h = this.f5522b.m38055b(h);
             }
         }
 
-        public void m36477d() {
+        public void m36480d() {
             this.f5526f = false;
-            this.f5521a.mo36332c();
+            this.f5521a.mo36335c();
         }
     }
 
@@ -94,7 +94,7 @@ public final class C1551a0 implements AbstractC8958f {
         this(new C1205i0(0L));
     }
 
-    public static AbstractC8958f[] m36482d() {
+    public static AbstractC8958f[] m36485d() {
         return new AbstractC8958f[]{new C1551a0()};
     }
 
@@ -105,61 +105,61 @@ public final class C1551a0 implements AbstractC8958f {
     @Override
     public void mo1152b(long j, long j2) {
         boolean z = true;
-        boolean z2 = this.f5510a.m38049e() == -9223372036854775807L;
+        boolean z2 = this.f5510a.m38052e() == -9223372036854775807L;
         if (!z2) {
-            long c = this.f5510a.m38051c();
+            long c = this.f5510a.m38054c();
             if (c == -9223372036854775807L || c == 0 || c == j2) {
                 z = false;
             }
             z2 = z;
         }
         if (z2) {
-            this.f5510a.m38047g(j2);
+            this.f5510a.m38050g(j2);
         }
         C1599x xVar = this.f5518i;
         if (xVar != null) {
-            xVar.m30496h(j2);
+            xVar.m30498h(j2);
         }
         for (int i = 0; i < this.f5511b.size(); i++) {
-            this.f5511b.valueAt(i).m36477d();
+            this.f5511b.valueAt(i).m36480d();
         }
     }
 
     @Override
     public int mo1149e(AbstractC8959g gVar, C8971q qVar) {
-        C1186a.m38182h(this.f5519j);
+        C1186a.m38185h(this.f5519j);
         long a = gVar.mo6046a();
         int i = (a > (-1L) ? 1 : (a == (-1L) ? 0 : -1));
-        if ((i != 0) && !this.f5513d.m36303e()) {
-            return this.f5513d.m36301g(gVar, qVar);
+        if ((i != 0) && !this.f5513d.m36306e()) {
+            return this.f5513d.m36304g(gVar, qVar);
         }
-        m36481g(a);
+        m36484g(a);
         C1599x xVar = this.f5518i;
-        if (xVar != null && xVar.m30500d()) {
-            return this.f5518i.m30501c(gVar, qVar);
+        if (xVar != null && xVar.m30502d()) {
+            return this.f5518i.m30503c(gVar, qVar);
         }
-        gVar.mo10809m();
+        gVar.mo10808m();
         long f = i != 0 ? a - gVar.mo6045f() : -1L;
-        if ((f != -1 && f < 4) || !gVar.mo10813e(this.f5512c.m38139d(), 0, 4, true)) {
+        if ((f != -1 && f < 4) || !gVar.mo10812e(this.f5512c.m38142d(), 0, 4, true)) {
             return -1;
         }
-        this.f5512c.m38144P(0);
-        int n = this.f5512c.m38129n();
+        this.f5512c.m38147P(0);
+        int n = this.f5512c.m38132n();
         if (n == 441) {
             return -1;
         }
         if (n == 442) {
-            gVar.mo10806q(this.f5512c.m38139d(), 0, 10);
-            this.f5512c.m38144P(9);
-            gVar.mo10808n((this.f5512c.m38156D() & 7) + 14);
+            gVar.mo10805q(this.f5512c.m38142d(), 0, 10);
+            this.f5512c.m38147P(9);
+            gVar.mo10807n((this.f5512c.m38159D() & 7) + 14);
             return 0;
         } else if (n == 443) {
-            gVar.mo10806q(this.f5512c.m38139d(), 0, 2);
-            this.f5512c.m38144P(0);
-            gVar.mo10808n(this.f5512c.m38150J() + 6);
+            gVar.mo10805q(this.f5512c.m38142d(), 0, 2);
+            this.f5512c.m38147P(0);
+            gVar.mo10807n(this.f5512c.m38153J() + 6);
             return 0;
         } else if (((n & (-256)) >> 8) != 1) {
-            gVar.mo10808n(1);
+            gVar.mo10807n(1);
             return 0;
         } else {
             int i2 = n & 255;
@@ -181,7 +181,7 @@ public final class C1551a0 implements AbstractC8958f {
                         this.f5517h = gVar.mo6043r();
                     }
                     if (mVar != null) {
-                        mVar.mo36330e(this.f5519j, new AbstractC1571i0.C1575d(i2, Log.TAG_CRASH));
+                        mVar.mo36333e(this.f5519j, new AbstractC1571i0.C1575d(i2, Log.TAG_CRASH));
                         aVar = new C1552a(mVar, this.f5510a);
                         this.f5511b.put(i2, aVar);
                     }
@@ -191,18 +191,18 @@ public final class C1551a0 implements AbstractC8958f {
                     this.f5519j.mo6040m();
                 }
             }
-            gVar.mo10806q(this.f5512c.m38139d(), 0, 2);
-            this.f5512c.m38144P(0);
-            int J = this.f5512c.m38150J() + 6;
+            gVar.mo10805q(this.f5512c.m38142d(), 0, 2);
+            this.f5512c.m38147P(0);
+            int J = this.f5512c.m38153J() + 6;
             if (aVar == null) {
-                gVar.mo10808n(J);
+                gVar.mo10807n(J);
             } else {
-                this.f5512c.m38148L(J);
-                gVar.readFully(this.f5512c.m38139d(), 0, J);
-                this.f5512c.m38144P(6);
-                aVar.m36480a(this.f5512c);
+                this.f5512c.m38151L(J);
+                gVar.readFully(this.f5512c.m38142d(), 0, J);
+                this.f5512c.m38147P(6);
+                aVar.m36483a(this.f5512c);
                 C1189b0 b0Var = this.f5512c;
-                b0Var.m38145O(b0Var.m38141b());
+                b0Var.m38148O(b0Var.m38144b());
             }
             return 0;
         }
@@ -214,28 +214,28 @@ public final class C1551a0 implements AbstractC8958f {
     }
 
     @RequiresNonNull({"output"})
-    public final void m36481g(long j) {
+    public final void m36484g(long j) {
         if (!this.f5520k) {
             this.f5520k = true;
-            if (this.f5513d.m36305c() != -9223372036854775807L) {
-                C1599x xVar = new C1599x(this.f5513d.m36304d(), this.f5513d.m36305c(), j);
+            if (this.f5513d.m36308c() != -9223372036854775807L) {
+                C1599x xVar = new C1599x(this.f5513d.m36307d(), this.f5513d.m36308c(), j);
                 this.f5518i = xVar;
-                this.f5519j.mo6042a(xVar.m30502b());
+                this.f5519j.mo6042a(xVar.m30504b());
                 return;
             }
-            this.f5519j.mo6042a(new AbstractC3470g.C3472b(this.f5513d.m36305c()));
+            this.f5519j.mo6042a(new AbstractC3470g.C3472b(this.f5513d.m36308c()));
         }
     }
 
     @Override
     public boolean mo1144j(AbstractC8959g gVar) {
         byte[] bArr = new byte[14];
-        gVar.mo10806q(bArr, 0, 14);
+        gVar.mo10805q(bArr, 0, 14);
         if (442 != (((bArr[0] & 255) << 24) | ((bArr[1] & 255) << 16) | ((bArr[2] & 255) << 8) | (bArr[3] & 255)) || (bArr[4] & 196) != 68 || (bArr[6] & 4) != 4 || (bArr[8] & 4) != 4 || (bArr[9] & 1) != 1 || (bArr[12] & 3) != 3) {
             return false;
         }
-        gVar.mo10812h(bArr[13] & 7);
-        gVar.mo10806q(bArr, 0, 3);
+        gVar.mo10811h(bArr[13] & 7);
+        gVar.mo10805q(bArr, 0, 3);
         return 1 == ((((bArr[0] & 255) << 16) | ((bArr[1] & 255) << 8)) | (bArr[2] & 255));
     }
 

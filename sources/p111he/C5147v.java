@@ -23,8 +23,8 @@ public class C5147v {
         this.f17235b = str;
         this.f17236c = textPaint;
         this.f17237d = i;
-        CharSequence I = C5078d.m23986z().m24024I(str);
-        int D = i <= 0 ? C1357a0.m37551D() : i;
+        CharSequence I = C5078d.m23987z().m24025I(str);
+        int D = i <= 0 ? C1357a0.m37554D() : i;
         BoringLayout.Metrics isBoring = BoringLayout.isBoring(I, textPaint);
         if (isBoring == null || isBoring.width > D) {
             StaticLayout staticLayout = new StaticLayout(I, 0, I.length(), textPaint, D, Layout.Alignment.ALIGN_CENTER, 1.0f, 0.0f, false);
@@ -55,7 +55,7 @@ public class C5147v {
         this.f17234a = new BoringLayout(I, textPaint, D, Layout.Alignment.ALIGN_CENTER, 1.0f, 0.0f, isBoring, false);
     }
 
-    public void m23809a(Canvas canvas, int i, int i2, int i3, boolean z) {
+    public void m23810a(Canvas canvas, int i, int i2, int i3, boolean z) {
         int lineCount = this.f17234a.getLineCount();
         if (z && lineCount > 1) {
             i2 -= (this.f17234a.getLineBottom(1) - this.f17234a.getLineBottom(0)) / 2;
@@ -70,7 +70,7 @@ public class C5147v {
         canvas.restore();
     }
 
-    public int m23808b() {
+    public int m23809b() {
         int lineCount = this.f17234a.getLineCount();
         float f = 0.0f;
         for (int i = 0; i < lineCount; i++) {
@@ -79,15 +79,15 @@ public class C5147v {
         return (int) f;
     }
 
-    public int m23807c() {
+    public int m23808c() {
         return this.f17237d;
     }
 
-    public float m23806d() {
+    public float m23807d() {
         return this.f17238e;
     }
 
-    public String m23805e() {
+    public String m23806e() {
         return this.f17235b;
     }
 
@@ -95,14 +95,14 @@ public class C5147v {
         return (obj instanceof C5147v) && ((C5147v) obj).f17235b.equals(this.f17235b);
     }
 
-    public int m23804f() {
+    public int m23805f() {
         if (this.f17234a.getLineCount() > 0) {
             return (int) this.f17234a.getLineWidth(0);
         }
         return 0;
     }
 
-    public int m23803g() {
+    public int m23804g() {
         return this.f17234a.getWidth();
     }
 

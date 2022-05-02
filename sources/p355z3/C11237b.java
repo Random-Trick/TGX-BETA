@@ -6,46 +6,46 @@ import p020b5.C1231t;
 import p270t3.C8972r;
 
 public final class C11237b implements AbstractC11242g {
-    public final long f35966a;
-    public final C1231t f35967b;
-    public final C1231t f35968c;
-    public long f35969d;
+    public final long f35969a;
+    public final C1231t f35970b;
+    public final C1231t f35971c;
+    public long f35972d;
 
     public C11237b(long j, long j2, long j3) {
-        this.f35969d = j;
-        this.f35966a = j3;
+        this.f35972d = j;
+        this.f35969a = j3;
         C1231t tVar = new C1231t();
-        this.f35967b = tVar;
+        this.f35970b = tVar;
         C1231t tVar2 = new C1231t();
-        this.f35968c = tVar2;
-        tVar.m37879a(0L);
-        tVar2.m37879a(j2);
+        this.f35971c = tVar2;
+        tVar.m37882a(0L);
+        tVar2.m37882a(j2);
     }
 
     public boolean m1161a(long j) {
-        C1231t tVar = this.f35967b;
-        return j - tVar.m37878b(tVar.m37877c() - 1) < 100000;
+        C1231t tVar = this.f35970b;
+        return j - tVar.m37881b(tVar.m37880c() - 1) < 100000;
     }
 
     public void m1160b(long j, long j2) {
         if (!m1161a(j)) {
-            this.f35967b.m37879a(j);
-            this.f35968c.m37879a(j2);
+            this.f35970b.m37882a(j);
+            this.f35971c.m37882a(j2);
         }
     }
 
     @Override
     public long mo1127c() {
-        return this.f35966a;
+        return this.f35969a;
     }
 
     @Override
     public long mo1126d() {
-        return this.f35969d;
+        return this.f35972d;
     }
 
     public void m1159e(long j) {
-        this.f35969d = j;
+        this.f35972d = j;
     }
 
     @Override
@@ -55,17 +55,17 @@ public final class C11237b implements AbstractC11242g {
 
     @Override
     public long mo1124h(long j) {
-        return this.f35967b.m37878b(C1216l0.m37976f(this.f35968c, j, true, true));
+        return this.f35970b.m37881b(C1216l0.m37979f(this.f35971c, j, true, true));
     }
 
     @Override
     public AbstractC3470g.C3471a mo1123i(long j) {
-        int f = C1216l0.m37976f(this.f35967b, j, true, true);
-        C8972r rVar = new C8972r(this.f35967b.m37878b(f), this.f35968c.m37878b(f));
-        if (rVar.f28859a == j || f == this.f35967b.m37877c() - 1) {
+        int f = C1216l0.m37979f(this.f35970b, j, true, true);
+        C8972r rVar = new C8972r(this.f35970b.m37881b(f), this.f35971c.m37881b(f));
+        if (rVar.f28862a == j || f == this.f35970b.m37880c() - 1) {
             return new AbstractC3470g.C3471a(rVar);
         }
         int i = f + 1;
-        return new AbstractC3470g.C3471a(rVar, new C8972r(this.f35967b.m37878b(i), this.f35968c.m37878b(i)));
+        return new AbstractC3470g.C3471a(rVar, new C8972r(this.f35970b.m37881b(i), this.f35971c.m37881b(i)));
     }
 }

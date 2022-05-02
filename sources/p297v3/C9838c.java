@@ -18,21 +18,21 @@ import p270t3.C8966m;
 import p270t3.C8971q;
 
 public final class C9838c implements AbstractC8958f {
-    public static final AbstractC8965l f32099o = C9837b.f32098b;
-    public final byte[] f32100a;
-    public final C1189b0 f32101b;
-    public final boolean f32102c;
-    public final C8966m.C8967a f32103d;
-    public AbstractC8960h f32104e;
-    public AbstractC8974t f32105f;
-    public int f32106g;
-    public C4260a f32107h;
-    public FlacStreamMetadata f32108i;
-    public int f32109j;
-    public int f32110k;
-    public C9834a f32111l;
-    public int f32112m;
-    public long f32113n;
+    public static final AbstractC8965l f32102o = C9837b.f32101b;
+    public final byte[] f32103a;
+    public final C1189b0 f32104b;
+    public final boolean f32105c;
+    public final C8966m.C8967a f32106d;
+    public AbstractC8960h f32107e;
+    public AbstractC8974t f32108f;
+    public int f32109g;
+    public C4260a f32110h;
+    public FlacStreamMetadata f32111i;
+    public int f32112j;
+    public int f32113k;
+    public C9834a f32114l;
+    public int f32115m;
+    public long f32116n;
 
     public C9838c() {
         this(0);
@@ -50,61 +50,61 @@ public final class C9838c implements AbstractC8958f {
     public void mo1152b(long j, long j2) {
         long j3 = 0;
         if (j == 0) {
-            this.f32106g = 0;
+            this.f32109g = 0;
         } else {
-            C9834a aVar = this.f32111l;
+            C9834a aVar = this.f32114l;
             if (aVar != null) {
-                aVar.m30496h(j2);
+                aVar.m30498h(j2);
             }
         }
         if (j2 != 0) {
             j3 = -1;
         }
-        this.f32113n = j3;
-        this.f32112m = 0;
-        this.f32101b.m38148L(0);
+        this.f32116n = j3;
+        this.f32115m = 0;
+        this.f32104b.m38151L(0);
     }
 
     public final long m6776d(C1189b0 b0Var, boolean z) {
         boolean z2;
-        C1186a.m38185e(this.f32108i);
-        int e = b0Var.m38138e();
-        while (e <= b0Var.m38137f() - 16) {
-            b0Var.m38144P(e);
-            if (C8966m.m10821d(b0Var, this.f32108i, this.f32110k, this.f32103d)) {
-                b0Var.m38144P(e);
-                return this.f32103d.f28851a;
+        C1186a.m38188e(this.f32111i);
+        int e = b0Var.m38141e();
+        while (e <= b0Var.m38140f() - 16) {
+            b0Var.m38147P(e);
+            if (C8966m.m10820d(b0Var, this.f32111i, this.f32113k, this.f32106d)) {
+                b0Var.m38147P(e);
+                return this.f32106d.f28854a;
             }
             e++;
         }
         if (z) {
-            while (e <= b0Var.m38137f() - this.f32109j) {
-                b0Var.m38144P(e);
+            while (e <= b0Var.m38140f() - this.f32112j) {
+                b0Var.m38147P(e);
                 boolean z3 = false;
                 try {
-                    z2 = C8966m.m10821d(b0Var, this.f32108i, this.f32110k, this.f32103d);
+                    z2 = C8966m.m10820d(b0Var, this.f32111i, this.f32113k, this.f32106d);
                 } catch (IndexOutOfBoundsException unused) {
                     z2 = false;
                 }
-                if (b0Var.m38138e() <= b0Var.m38137f()) {
+                if (b0Var.m38141e() <= b0Var.m38140f()) {
                     z3 = z2;
                 }
                 if (z3) {
-                    b0Var.m38144P(e);
-                    return this.f32103d.f28851a;
+                    b0Var.m38147P(e);
+                    return this.f32106d.f28854a;
                 }
                 e++;
             }
-            b0Var.m38144P(b0Var.m38137f());
+            b0Var.m38147P(b0Var.m38140f());
             return -1L;
         }
-        b0Var.m38144P(e);
+        b0Var.m38147P(e);
         return -1L;
     }
 
     @Override
     public int mo1149e(AbstractC8959g gVar, C8971q qVar) {
-        int i = this.f32106g;
+        int i = this.f32109g;
         if (i == 0) {
             m6769n(gVar);
             return 0;
@@ -129,127 +129,127 @@ public final class C9838c implements AbstractC8958f {
 
     @Override
     public void mo1148f(AbstractC8960h hVar) {
-        this.f32104e = hVar;
-        this.f32105f = hVar.mo6039r(0, 1);
+        this.f32107e = hVar;
+        this.f32108f = hVar.mo6039r(0, 1);
         hVar.mo6040m();
     }
 
     public final void m6775g(AbstractC8959g gVar) {
-        this.f32110k = C3466d.m30460b(gVar);
-        ((AbstractC8960h) C1216l0.m37968j(this.f32104e)).mo6042a(m6774h(gVar.mo6043r(), gVar.mo6046a()));
-        this.f32106g = 5;
+        this.f32113k = C3466d.m30462b(gVar);
+        ((AbstractC8960h) C1216l0.m37971j(this.f32107e)).mo6042a(m6774h(gVar.mo6043r(), gVar.mo6046a()));
+        this.f32109g = 5;
     }
 
     public final AbstractC3470g m6774h(long j, long j2) {
-        C1186a.m38185e(this.f32108i);
-        FlacStreamMetadata flacStreamMetadata = this.f32108i;
+        C1186a.m38188e(this.f32111i);
+        FlacStreamMetadata flacStreamMetadata = this.f32111i;
         if (flacStreamMetadata.seekTable != null) {
             return new C3468e(flacStreamMetadata, j);
         }
         if (j2 == -1 || flacStreamMetadata.totalSamples <= 0) {
             return new AbstractC3470g.C3472b(flacStreamMetadata.getDurationUs());
         }
-        C9834a aVar = new C9834a(flacStreamMetadata, this.f32110k, j, j2);
-        this.f32111l = aVar;
-        return aVar.m30502b();
+        C9834a aVar = new C9834a(flacStreamMetadata, this.f32113k, j, j2);
+        this.f32114l = aVar;
+        return aVar.m30504b();
     }
 
     public final void m6773i(AbstractC8959g gVar) {
-        byte[] bArr = this.f32100a;
-        gVar.mo10806q(bArr, 0, bArr.length);
-        gVar.mo10809m();
-        this.f32106g = 2;
+        byte[] bArr = this.f32103a;
+        gVar.mo10805q(bArr, 0, bArr.length);
+        gVar.mo10808m();
+        this.f32109g = 2;
     }
 
     @Override
     public boolean mo1144j(AbstractC8959g gVar) {
-        C3466d.m30459c(gVar, false);
-        return C3466d.m30461a(gVar);
+        C3466d.m30461c(gVar, false);
+        return C3466d.m30463a(gVar);
     }
 
     public final void m6771l() {
-        ((AbstractC8974t) C1216l0.m37968j(this.f32105f)).mo10794e((this.f32113n * 1000000) / ((FlacStreamMetadata) C1216l0.m37968j(this.f32108i)).sampleRate, 1, this.f32112m, 0, null);
+        ((AbstractC8974t) C1216l0.m37971j(this.f32108f)).mo10793e((this.f32116n * 1000000) / ((FlacStreamMetadata) C1216l0.m37971j(this.f32111i)).sampleRate, 1, this.f32115m, 0, null);
     }
 
     public final int m6770m(AbstractC8959g gVar, C8971q qVar) {
         boolean z;
-        C1186a.m38185e(this.f32105f);
-        C1186a.m38185e(this.f32108i);
-        C9834a aVar = this.f32111l;
-        if (aVar != null && aVar.m30500d()) {
-            return this.f32111l.m30501c(gVar, qVar);
+        C1186a.m38188e(this.f32108f);
+        C1186a.m38188e(this.f32111i);
+        C9834a aVar = this.f32114l;
+        if (aVar != null && aVar.m30502d()) {
+            return this.f32114l.m30503c(gVar, qVar);
         }
-        if (this.f32113n == -1) {
-            this.f32113n = C8966m.m10816i(gVar, this.f32108i);
+        if (this.f32116n == -1) {
+            this.f32116n = C8966m.m10815i(gVar, this.f32111i);
             return 0;
         }
-        int f = this.f32101b.m38137f();
+        int f = this.f32104b.m38140f();
         if (f < 32768) {
-            int b = gVar.mo4414b(this.f32101b.m38139d(), f, Log.TAG_ROUND - f);
+            int b = gVar.mo4414b(this.f32104b.m38142d(), f, Log.TAG_ROUND - f);
             z = b == -1;
             if (!z) {
-                this.f32101b.m38145O(f + b);
-            } else if (this.f32101b.m38142a() == 0) {
+                this.f32104b.m38148O(f + b);
+            } else if (this.f32104b.m38145a() == 0) {
                 m6771l();
                 return -1;
             }
         } else {
             z = false;
         }
-        int e = this.f32101b.m38138e();
-        int i = this.f32112m;
-        int i2 = this.f32109j;
+        int e = this.f32104b.m38141e();
+        int i = this.f32115m;
+        int i2 = this.f32112j;
         if (i < i2) {
-            C1189b0 b0Var = this.f32101b;
-            b0Var.m38143Q(Math.min(i2 - i, b0Var.m38142a()));
+            C1189b0 b0Var = this.f32104b;
+            b0Var.m38146Q(Math.min(i2 - i, b0Var.m38145a()));
         }
-        long d = m6776d(this.f32101b, z);
-        int e2 = this.f32101b.m38138e() - e;
-        this.f32101b.m38144P(e);
-        this.f32105f.mo10796c(this.f32101b, e2);
-        this.f32112m += e2;
+        long d = m6776d(this.f32104b, z);
+        int e2 = this.f32104b.m38141e() - e;
+        this.f32104b.m38147P(e);
+        this.f32108f.mo10795c(this.f32104b, e2);
+        this.f32115m += e2;
         if (d != -1) {
             m6771l();
-            this.f32112m = 0;
-            this.f32113n = d;
+            this.f32115m = 0;
+            this.f32116n = d;
         }
-        if (this.f32101b.m38142a() < 16) {
-            int a = this.f32101b.m38142a();
-            System.arraycopy(this.f32101b.m38139d(), this.f32101b.m38138e(), this.f32101b.m38139d(), 0, a);
-            this.f32101b.m38144P(0);
-            this.f32101b.m38145O(a);
+        if (this.f32104b.m38145a() < 16) {
+            int a = this.f32104b.m38145a();
+            System.arraycopy(this.f32104b.m38142d(), this.f32104b.m38141e(), this.f32104b.m38142d(), 0, a);
+            this.f32104b.m38147P(0);
+            this.f32104b.m38148O(a);
         }
         return 0;
     }
 
     public final void m6769n(AbstractC8959g gVar) {
-        this.f32107h = C3466d.m30458d(gVar, !this.f32102c);
-        this.f32106g = 1;
+        this.f32110h = C3466d.m30460d(gVar, !this.f32105c);
+        this.f32109g = 1;
     }
 
     public final void m6768o(AbstractC8959g gVar) {
-        C3466d.C3467a aVar = new C3466d.C3467a(this.f32108i);
+        C3466d.C3467a aVar = new C3466d.C3467a(this.f32111i);
         boolean z = false;
         while (!z) {
-            z = C3466d.m30457e(gVar, aVar);
-            this.f32108i = (FlacStreamMetadata) C1216l0.m37968j(aVar.f11462a);
+            z = C3466d.m30459e(gVar, aVar);
+            this.f32111i = (FlacStreamMetadata) C1216l0.m37971j(aVar.f11462a);
         }
-        C1186a.m38185e(this.f32108i);
-        this.f32109j = Math.max(this.f32108i.minFrameSize, 6);
-        ((AbstractC8974t) C1216l0.m37968j(this.f32105f)).mo10798a(this.f32108i.getFormat(this.f32100a, this.f32107h));
-        this.f32106g = 4;
+        C1186a.m38188e(this.f32111i);
+        this.f32112j = Math.max(this.f32111i.minFrameSize, 6);
+        ((AbstractC8974t) C1216l0.m37971j(this.f32108f)).mo10797a(this.f32111i.getFormat(this.f32103a, this.f32110h));
+        this.f32109g = 4;
     }
 
     public final void m6767p(AbstractC8959g gVar) {
-        C3466d.m30452j(gVar);
-        this.f32106g = 3;
+        C3466d.m30454j(gVar);
+        this.f32109g = 3;
     }
 
     public C9838c(int i) {
-        this.f32100a = new byte[42];
-        this.f32101b = new C1189b0(new byte[Log.TAG_ROUND], 0);
-        this.f32102c = (i & 1) == 0 ? false : true;
-        this.f32103d = new C8966m.C8967a();
-        this.f32106g = 0;
+        this.f32103a = new byte[42];
+        this.f32104b = new C1189b0(new byte[Log.TAG_ROUND], 0);
+        this.f32105c = (i & 1) == 0 ? false : true;
+        this.f32106d = new C8966m.C8967a();
+        this.f32109g = 0;
     }
 }

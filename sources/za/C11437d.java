@@ -14,22 +14,22 @@ import pa.AbstractC8092p;
 import qa.C8298k;
 
 public final class C11437d implements AbstractC10466d<C10022g> {
-    public final CharSequence f36402a;
-    public final int f36403b;
-    public final int f36404c;
-    public final AbstractC8092p<CharSequence, Integer, C5048h<Integer, Integer>> f36405d;
+    public final CharSequence f36405a;
+    public final int f36406b;
+    public final int f36407c;
+    public final AbstractC8092p<CharSequence, Integer, C5048h<Integer, Integer>> f36408d;
 
     public static final class C11438a implements Iterator<C10022g>, AbstractC8415a, p126j$.util.Iterator {
-        public C10022g f36406M;
-        public int f36407N;
-        public int f36409a = -1;
-        public int f36410b;
-        public int f36411c;
+        public C10022g f36409M;
+        public int f36410N;
+        public int f36412a = -1;
+        public int f36413b;
+        public int f36414c;
 
         public C11438a() {
-            int f = C10030l.m6191f(C11437d.this.f36403b, 0, C11437d.this.f36402a.length());
-            this.f36410b = f;
-            this.f36411c = f;
+            int f = C10030l.m6191f(C11437d.this.f36406b, 0, C11437d.this.f36405a.length());
+            this.f36413b = f;
+            this.f36414c = f;
         }
 
         public final void m650e() {
@@ -47,14 +47,14 @@ public final class C11437d implements AbstractC10466d<C10022g> {
         }
 
         public C10022g next() {
-            if (this.f36409a == -1) {
+            if (this.f36412a == -1) {
                 m650e();
             }
-            if (this.f36409a != 0) {
-                C10022g gVar = this.f36406M;
+            if (this.f36412a != 0) {
+                C10022g gVar = this.f36409M;
                 Objects.requireNonNull(gVar, "null cannot be cast to non-null type kotlin.ranges.IntRange");
-                this.f36406M = null;
-                this.f36409a = -1;
+                this.f36409M = null;
+                this.f36412a = -1;
                 return gVar;
             }
             throw new NoSuchElementException();
@@ -62,10 +62,10 @@ public final class C11437d implements AbstractC10466d<C10022g> {
 
         @Override
         public boolean hasNext() {
-            if (this.f36409a == -1) {
+            if (this.f36412a == -1) {
                 m650e();
             }
-            return this.f36409a == 1;
+            return this.f36412a == 1;
         }
 
         @Override
@@ -75,12 +75,12 @@ public final class C11437d implements AbstractC10466d<C10022g> {
     }
 
     public C11437d(CharSequence charSequence, int i, int i2, AbstractC8092p<? super CharSequence, ? super Integer, C5048h<Integer, Integer>> pVar) {
-        C8298k.m12934e(charSequence, "input");
-        C8298k.m12934e(pVar, "getNextMatch");
-        this.f36402a = charSequence;
-        this.f36403b = i;
-        this.f36404c = i2;
-        this.f36405d = pVar;
+        C8298k.m12933e(charSequence, "input");
+        C8298k.m12933e(pVar, "getNextMatch");
+        this.f36405a = charSequence;
+        this.f36406b = i;
+        this.f36407c = i2;
+        this.f36408d = pVar;
     }
 
     @Override

@@ -10,7 +10,7 @@ import java.util.List;
 import p012ab.AbstractC0243a;
 
 public class ZukHomeBadger implements AbstractC0243a {
-    public final Uri f21960a = Uri.parse("content://com.android.badge/badge");
+    public final Uri f21963a = Uri.parse("content://com.android.badge/badge");
 
     @Override
     public List<String> mo18371a() {
@@ -22,6 +22,6 @@ public class ZukHomeBadger implements AbstractC0243a {
     public void mo18370b(Context context, ComponentName componentName, int i) {
         Bundle bundle = new Bundle();
         bundle.putInt("app_badge_count", i);
-        context.getContentResolver().call(this.f21960a, "setAppBadgeCount", (String) null, bundle);
+        context.getContentResolver().call(this.f21963a, "setAppBadgeCount", (String) null, bundle);
     }
 }

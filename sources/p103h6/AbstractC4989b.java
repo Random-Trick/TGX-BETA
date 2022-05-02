@@ -10,37 +10,37 @@ import p119i6.C5244e;
 import p272t5.AbstractC8983b;
 
 public interface AbstractC4989b extends IInterface {
-    void mo24307A0(int i);
+    void mo24308A0(int i);
 
-    void mo24306C0(@Nullable AbstractC4988a0 a0Var);
+    void mo24307C0(@Nullable AbstractC4988a0 a0Var);
 
-    float mo24305D();
+    float mo24306D();
 
-    void mo24304D1(@Nullable AbstractC4996e0 e0Var);
+    void mo24305D1(@Nullable AbstractC4996e0 e0Var);
 
-    void mo24303E(@RecentlyNonNull AbstractC8983b bVar);
+    void mo24304E(@RecentlyNonNull AbstractC8983b bVar);
 
-    void mo24302F0(@RecentlyNonNull AbstractC8983b bVar);
+    void mo24303F0(@RecentlyNonNull AbstractC8983b bVar);
 
-    AbstractC0196i mo24301H(C5244e eVar);
+    AbstractC0196i mo24302H(C5244e eVar);
 
-    void mo24300K0(@Nullable AbstractC5004k kVar);
-
-    @RecentlyNonNull
-    AbstractC4997f mo24299L0();
+    void mo24301K0(@Nullable AbstractC5004k kVar);
 
     @RecentlyNonNull
-    CameraPosition mo24298e0();
+    AbstractC4997f mo24300L0();
 
-    float mo24297i1();
+    @RecentlyNonNull
+    CameraPosition mo24299e0();
 
-    void mo24296l0(@Nullable AbstractC4992c0 c0Var);
+    float mo24298i1();
 
-    void mo24295l1(boolean z);
+    void mo24297l0(@Nullable AbstractC4992c0 c0Var);
 
-    void mo24294n1(@Nullable AbstractC5000g0 g0Var);
+    void mo24296l1(boolean z);
 
-    void mo24293r1(@Nullable AbstractC5006m mVar);
+    void mo24295n1(@Nullable AbstractC5000g0 g0Var);
 
-    boolean mo24292w(@Nullable C5242c cVar);
+    void mo24294r1(@Nullable AbstractC5006m mVar);
+
+    boolean mo24293w(@Nullable C5242c cVar);
 }

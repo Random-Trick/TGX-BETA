@@ -25,27 +25,27 @@ import p350yd.C10930q6;
 import p364zd.C11520h;
 
 public class C11520h {
-    public static Map<String, Integer> f36571l;
-    public final int f36572a;
-    public final String f36573b;
-    public TdApi.BackgroundType f36574c;
-    public final String f36575d;
-    public final boolean f36576e;
-    public int f36577f;
-    public String f36578g;
-    public C6246h f36579h;
-    public C6246h f36580i;
-    public C6246h f36581j;
-    public Integer f36582k;
+    public static Map<String, Integer> f36573l;
+    public final int f36574a;
+    public final String f36575b;
+    public TdApi.BackgroundType f36576c;
+    public final String f36577d;
+    public final boolean f36578e;
+    public int f36579f;
+    public String f36580g;
+    public C6246h f36581h;
+    public C6246h f36582i;
+    public C6246h f36583j;
+    public Integer f36584k;
 
     public class C11521a extends C6251j {
-        public final String f36583e0;
-        public final String f36584f0;
+        public final String f36585e0;
+        public final String f36586f0;
 
         public C11521a(AbstractC11073vb vbVar, TdApi.Function function, String str, String str2, String str3) {
             super(vbVar, function, str);
-            this.f36583e0 = str2;
-            this.f36584f0 = str3;
+            this.f36585e0 = str2;
+            this.f36586f0 = str3;
         }
 
         public static void m261K0(Client.AbstractC7865g gVar, TdApi.Object object) {
@@ -58,7 +58,7 @@ public class C11520h {
         }
 
         public void m260L0(String str, final Client.AbstractC7865g gVar) {
-            m20952B0().m2270r4().m14783o(new TdApi.SearchBackground(str), new Client.AbstractC7865g() {
+            m20953B0().m2270r4().m14783o(new TdApi.SearchBackground(str), new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
                     C11520h.C11521a.m261K0(Client.AbstractC7865g.this, object);
@@ -67,9 +67,9 @@ public class C11520h {
         }
 
         public void m259M0(Client.AbstractC7865g gVar, String str, Runnable runnable, TdApi.Object object) {
-            if (object.getConstructor() != 766337656 || !C4779t2.m25586V2((TdApi.File) object)) {
-                C4868i.m24726c2().m24888F3(str);
-                C11520h.this.f36578g = null;
+            if (object.getConstructor() != 766337656 || !C4779t2.m25587V2((TdApi.File) object)) {
+                C4868i.m24727c2().m24889F3(str);
+                C11520h.this.f36580g = null;
                 runnable.run();
                 return;
             }
@@ -78,17 +78,17 @@ public class C11520h {
 
         @Override
         public void mo258D0(final Client.AbstractC7865g gVar) {
-            final String str = this.f36583e0;
+            final String str = this.f36585e0;
             final Runnable eVar = new Runnable() {
                 @Override
                 public final void run() {
                     C11520h.C11521a.this.m260L0(str, gVar);
                 }
             };
-            if (!C5070i.m24061i(C11520h.this.f36578g)) {
-                Client r4 = m20952B0().m2270r4();
-                TdApi.GetRemoteFile getRemoteFile = new TdApi.GetRemoteFile(C11520h.this.f36578g, new TdApi.FileTypeWallpaper());
-                final String str2 = this.f36584f0;
+            if (!C5070i.m24062i(C11520h.this.f36580g)) {
+                Client r4 = m20953B0().m2270r4();
+                TdApi.GetRemoteFile getRemoteFile = new TdApi.GetRemoteFile(C11520h.this.f36580g, new TdApi.FileTypeWallpaper());
+                final String str2 = this.f36586f0;
                 r4.m14783o(getRemoteFile, new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object) {
@@ -102,11 +102,11 @@ public class C11520h {
     }
 
     public class C11522b extends C6251j {
-        public final String f36586e0;
+        public final String f36588e0;
 
         public C11522b(AbstractC11073vb vbVar, TdApi.Function function, String str, String str2) {
             super(vbVar, function, str);
-            this.f36586e0 = str2;
+            this.f36588e0 = str2;
         }
 
         public static void m256I0(Client.AbstractC7865g gVar, TdApi.Object object) {
@@ -121,7 +121,7 @@ public class C11520h {
 
         @Override
         public void mo258D0(final Client.AbstractC7865g gVar) {
-            m20952B0().m2270r4().m14783o(new TdApi.SearchBackground(this.f36586e0), new Client.AbstractC7865g() {
+            m20953B0().m2270r4().m14783o(new TdApi.SearchBackground(this.f36588e0), new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
                     C11520h.C11522b.m256I0(Client.AbstractC7865g.this, object);
@@ -131,16 +131,16 @@ public class C11520h {
     }
 
     public C11520h(C10930q6 q6Var, String str) {
-        this.f36572a = q6Var.m2188w6();
-        this.f36573b = null;
-        this.f36574c = null;
-        this.f36577f = 0;
-        this.f36575d = str;
-        this.f36576e = false;
-        if (!C5070i.m24061i(str)) {
+        this.f36574a = q6Var.m2188w6();
+        this.f36575b = null;
+        this.f36576c = null;
+        this.f36579f = 0;
+        this.f36577d = str;
+        this.f36578e = false;
+        if (!C5070i.m24062i(str)) {
             m271t0(new C6250i(str), false);
             C6250i iVar = new C6250i(str);
-            iVar.mo20767t0(C1357a0.m37541i(105.0f));
+            iVar.mo20768t0(C1357a0.m37544i(105.0f));
             m273s0(iVar);
         }
     }
@@ -177,7 +177,7 @@ public class C11520h {
         int constructor = backgroundFill.getConstructor();
         if (constructor == -1839206017) {
             TdApi.BackgroundFillGradient backgroundFillGradient = (TdApi.BackgroundFillGradient) backgroundFill;
-            return m334C(m284n(C5064d.m24130b(255, backgroundFillGradient.topColor), C5064d.m24130b(255, backgroundFillGradient.bottomColor)));
+            return m334C(m284n(C5064d.m24131b(255, backgroundFillGradient.topColor), C5064d.m24131b(255, backgroundFillGradient.bottomColor)));
         } else if (constructor == -1145469255) {
             return m332E((TdApi.BackgroundFillFreeformGradient) backgroundFill);
         } else {
@@ -232,7 +232,7 @@ public class C11520h {
 
     public static void m307b0(C10930q6 q6Var, TdApi.Object object) {
         if (object instanceof TdApi.File) {
-            q6Var.m2270r4().m14783o(new TdApi.DownloadFile(((TdApi.File) object).f25373id, 32, 0, 0, false), q6Var.m2392ja());
+            q6Var.m2270r4().m14783o(new TdApi.DownloadFile(((TdApi.File) object).f25376id, 32, 0, 0, false), q6Var.m2392ja());
         }
     }
 
@@ -317,10 +317,10 @@ public class C11520h {
 
     public static void m301e0(SharedPreferences.Editor editor, String str, int i, int i2, String str2) {
         String l = m288l(i);
-        if (!C5070i.m24061i(l)) {
+        if (!C5070i.m24062i(l)) {
             editor.putString(str + "_name", l);
             editor.putInt(str + "_type", 2);
-            if (!C5070i.m24061i(str2)) {
+            if (!C5070i.m24062i(str2)) {
                 editor.putString(str + "_remote_id", str2);
             }
         } else if (i == 1000000) {
@@ -335,14 +335,14 @@ public class C11520h {
     }
 
     public static String m300f(int i) {
-        return C1363c0.m37471C(C5064d.m24130b(255, i), false).substring(1).toLowerCase();
+        return C1363c0.m37474C(C5064d.m24131b(255, i), false).substring(1).toLowerCase();
     }
 
     public static C11520h m299f0(C10930q6 q6Var, C11520h hVar, boolean z) {
         if (hVar == null) {
             return m297g0(q6Var);
         }
-        return hVar.m320Q() ? hVar : new C11520h(q6Var, hVar.f36573b, m303d0(hVar.f36574c, z), hVar.f36576e, hVar.f36577f, hVar.f36578g);
+        return hVar.m320Q() ? hVar : new C11520h(q6Var, hVar.f36575b, m303d0(hVar.f36576c, z), hVar.f36578e, hVar.f36579f, hVar.f36580g);
     }
 
     public static boolean m298g(C11520h hVar, C11520h hVar2) {
@@ -357,16 +357,16 @@ public class C11520h {
         if ((hVar == null || hVar.m319R()) && (hVar2 == null || hVar2.m319R())) {
             return true;
         }
-        if (hVar == null || hVar2 == null || hVar.m319R() != hVar2.m319R() || hVar.m320Q() != hVar2.m320Q() || !C7321e.m16893z(hVar.f36574c, hVar2.f36574c, true)) {
+        if (hVar == null || hVar2 == null || hVar.m319R() != hVar2.m319R() || hVar.m320Q() != hVar2.m320Q() || !C7321e.m16893z(hVar.f36576c, hVar2.f36576c, true)) {
             return false;
         }
-        if (!z && m324M(hVar.f36574c) != m324M(hVar2.f36574c)) {
+        if (!z && m324M(hVar.f36576c) != m324M(hVar2.f36576c)) {
             return false;
         }
         if (hVar.m320Q()) {
-            return C5070i.m24067c(hVar.m280p(), hVar2.m280p());
+            return C5070i.m24068c(hVar.m280p(), hVar2.m280p());
         }
-        return C5070i.m24067c(hVar.m268w(), hVar2.m268w());
+        return C5070i.m24068c(hVar.m268w(), hVar2.m268w());
     }
 
     public static C11520h m295h0(C10930q6 q6Var, int i) {
@@ -421,12 +421,12 @@ public class C11520h {
         int constructor = backgroundFill.getConstructor();
         if (constructor == -1839206017) {
             TdApi.BackgroundFillGradient backgroundFillGradient = (TdApi.BackgroundFillGradient) backgroundFill;
-            return C5064d.m24128d(C5064d.m24130b(255, backgroundFillGradient.topColor), C5064d.m24130b(255, backgroundFillGradient.bottomColor), 0.5f);
+            return C5064d.m24129d(C5064d.m24131b(255, backgroundFillGradient.topColor), C5064d.m24131b(255, backgroundFillGradient.bottomColor), 0.5f);
         } else if (constructor != -1145469255) {
-            return constructor != 1010678813 ? i : C5064d.m24130b(255, ((TdApi.BackgroundFillSolid) backgroundFill).color);
+            return constructor != 1010678813 ? i : C5064d.m24131b(255, ((TdApi.BackgroundFillSolid) backgroundFill).color);
         } else {
             int[] iArr = ((TdApi.BackgroundFillFreeformGradient) backgroundFill).colors;
-            return C5064d.m24130b(255, iArr.length >= 3 ? iArr[2] : iArr[1]);
+            return C5064d.m24131b(255, iArr.length >= 3 ? iArr[2] : iArr[1]);
         }
     }
 
@@ -536,20 +536,20 @@ public class C11520h {
                 return 0;
             }
         }
-        if (C5070i.m24061i(str)) {
+        if (C5070i.m24062i(str)) {
             return 0;
         }
-        if (f36571l == null) {
+        if (f36573l == null) {
             int[] v = m269v();
-            f36571l = new HashMap(v.length);
+            f36573l = new HashMap(v.length);
             for (int i : v) {
                 String l = m288l(i);
                 if (l != null) {
-                    f36571l.put(l, Integer.valueOf(i));
+                    f36573l.put(l, Integer.valueOf(i));
                 }
             }
         }
-        Integer num = f36571l.get(str);
+        Integer num = f36573l.get(str);
         if (num != null) {
             return num.intValue();
         }
@@ -557,7 +557,7 @@ public class C11520h {
     }
 
     public static int m284n(int i, int i2) {
-        return C5064d.m24128d(i, i2, 0.5f);
+        return C5064d.m24129d(i, i2, 0.5f);
     }
 
     public static C11520h m283n0(C10930q6 q6Var, int i) {
@@ -572,9 +572,9 @@ public class C11520h {
             str = "wallpaper";
         }
         sb2.append(str);
-        sb2.append(C4868i.m24799S1(i));
+        sb2.append(C4868i.m24800S1(i));
         String sb3 = sb2.toString();
-        LevelDB n3 = C4868i.m24726c2().m24637n3();
+        LevelDB n3 = C4868i.m24727c2().m24638n3();
         if (n3.getBoolean(sb3 + "_empty", false)) {
             return m297g0(q6Var);
         }
@@ -588,7 +588,7 @@ public class C11520h {
         if (i2 == 1) {
             TdApi.BackgroundFill o0 = m281o0(n3, sb3);
             TdApi.BackgroundTypeFill backgroundTypeFill = new TdApi.BackgroundTypeFill(o0);
-            if (C5070i.m24061i(string)) {
+            if (C5070i.m24062i(string)) {
                 string = m336A(o0);
             }
             str2 = string;
@@ -612,7 +612,7 @@ public class C11520h {
     }
 
     public static int m282o(TdApi.BackgroundFillFreeformGradient backgroundFillFreeformGradient) {
-        int n = m284n(C5064d.m24130b(255, backgroundFillFreeformGradient.colors[0]), C5064d.m24130b(255, backgroundFillFreeformGradient.colors[1]));
+        int n = m284n(C5064d.m24131b(255, backgroundFillFreeformGradient.colors[0]), C5064d.m24131b(255, backgroundFillFreeformGradient.colors[1]));
         int i = 2;
         if (backgroundFillFreeformGradient.colors.length >= 2) {
             while (true) {
@@ -620,7 +620,7 @@ public class C11520h {
                 if (i >= iArr.length) {
                     break;
                 }
-                n = m284n(n, C5064d.m24130b(255, iArr[i]));
+                n = m284n(n, C5064d.m24131b(255, iArr[i]));
                 i++;
             }
         }
@@ -685,7 +685,7 @@ public class C11520h {
                 return C11524j.m224P(R.id.theme_color_wp_cats);
             default:
                 int t = m272t(i);
-                return (16777215 & t) != 0 ? C5064d.m24130b(51, t) : i2;
+                return (16777215 & t) != 0 ? C5064d.m24131b(51, t) : i2;
         }
     }
 
@@ -747,33 +747,33 @@ public class C11520h {
         if (!m313X()) {
             return 0;
         }
-        if (this.f36582k == null) {
-            this.f36582k = Integer.valueOf(m333D(((TdApi.BackgroundTypePattern) this.f36574c).fill));
+        if (this.f36584k == null) {
+            this.f36584k = Integer.valueOf(m333D(((TdApi.BackgroundTypePattern) this.f36576c).fill));
         }
-        return this.f36582k.intValue();
+        return this.f36584k.intValue();
     }
 
     public float m331F() {
         if (m313X()) {
-            return Math.abs(((TdApi.BackgroundTypePattern) this.f36574c).intensity) / 100.0f;
+            return Math.abs(((TdApi.BackgroundTypePattern) this.f36576c).intensity) / 100.0f;
         }
         return 1.0f;
     }
 
     public C6246h m330G(boolean z) {
         if (z) {
-            return this.f36581j;
+            return this.f36583j;
         }
-        C6246h hVar = this.f36580i;
-        return hVar != null ? hVar : this.f36579h;
+        C6246h hVar = this.f36582i;
+        return hVar != null ? hVar : this.f36581h;
     }
 
     public int m329H() {
         if (m316U()) {
-            return ((TdApi.BackgroundFillGradient) ((TdApi.BackgroundTypeFill) this.f36574c).fill).rotationAngle;
+            return ((TdApi.BackgroundFillGradient) ((TdApi.BackgroundTypeFill) this.f36576c).fill).rotationAngle;
         }
         if (m311Z()) {
-            return ((TdApi.BackgroundFillGradient) ((TdApi.BackgroundTypePattern) this.f36574c).fill).rotationAngle;
+            return ((TdApi.BackgroundFillGradient) ((TdApi.BackgroundTypePattern) this.f36576c).fill).rotationAngle;
         }
         return 0;
     }
@@ -782,90 +782,90 @@ public class C11520h {
         if (!m318S()) {
             return 0;
         }
-        if (this.f36582k == null) {
-            this.f36582k = Integer.valueOf(m333D(((TdApi.BackgroundTypeFill) this.f36574c).fill));
+        if (this.f36584k == null) {
+            this.f36584k = Integer.valueOf(m333D(((TdApi.BackgroundTypeFill) this.f36576c).fill));
         }
-        return this.f36582k.intValue();
+        return this.f36584k.intValue();
     }
 
     public int m326K() {
         if (m316U()) {
-            return ((TdApi.BackgroundFillGradient) ((TdApi.BackgroundTypeFill) this.f36574c).fill).topColor;
+            return ((TdApi.BackgroundFillGradient) ((TdApi.BackgroundTypeFill) this.f36576c).fill).topColor;
         }
         if (m311Z()) {
-            return ((TdApi.BackgroundFillGradient) ((TdApi.BackgroundTypePattern) this.f36574c).fill).topColor;
+            return ((TdApi.BackgroundFillGradient) ((TdApi.BackgroundTypePattern) this.f36576c).fill).topColor;
         }
         if (m317T()) {
-            return ((TdApi.BackgroundFillFreeformGradient) ((TdApi.BackgroundTypeFill) this.f36574c).fill).colors[0];
+            return ((TdApi.BackgroundFillFreeformGradient) ((TdApi.BackgroundTypeFill) this.f36576c).fill).colors[0];
         }
         if (m312Y()) {
-            return ((TdApi.BackgroundFillFreeformGradient) ((TdApi.BackgroundTypePattern) this.f36574c).fill).colors[0];
+            return ((TdApi.BackgroundFillFreeformGradient) ((TdApi.BackgroundTypePattern) this.f36576c).fill).colors[0];
         }
         return 0;
     }
 
     public boolean m325L() {
-        return m324M(this.f36574c);
+        return m324M(this.f36576c);
     }
 
     public boolean m323N() {
-        return this.f36577f == 1000001;
+        return this.f36579f == 1000001;
     }
 
     public boolean m322O() {
-        int i = this.f36577f;
+        int i = this.f36579f;
         return i != 0 && m321P(i);
     }
 
     public boolean m320Q() {
-        return !C5070i.m24061i(this.f36575d);
+        return !C5070i.m24062i(this.f36577d);
     }
 
     public boolean m319R() {
-        return C5070i.m24061i(this.f36573b) && C5070i.m24061i(this.f36575d);
+        return C5070i.m24062i(this.f36575b) && C5070i.m24062i(this.f36577d);
     }
 
     public boolean m318S() {
-        TdApi.BackgroundType backgroundType = this.f36574c;
+        TdApi.BackgroundType backgroundType = this.f36576c;
         return backgroundType != null && backgroundType.getConstructor() == 993008684;
     }
 
     public boolean m317T() {
-        return m318S() && ((TdApi.BackgroundTypeFill) this.f36574c).fill.getConstructor() == -1145469255;
+        return m318S() && ((TdApi.BackgroundTypeFill) this.f36576c).fill.getConstructor() == -1145469255;
     }
 
     public boolean m316U() {
-        return m318S() && ((TdApi.BackgroundTypeFill) this.f36574c).fill.getConstructor() == -1839206017;
+        return m318S() && ((TdApi.BackgroundTypeFill) this.f36576c).fill.getConstructor() == -1839206017;
     }
 
     public boolean m315V() {
-        return m318S() && ((TdApi.BackgroundTypeFill) this.f36574c).fill.getConstructor() == 1010678813;
+        return m318S() && ((TdApi.BackgroundTypeFill) this.f36576c).fill.getConstructor() == 1010678813;
     }
 
     public boolean m314W() {
-        return this.f36577f != 0;
+        return this.f36579f != 0;
     }
 
     public boolean m313X() {
-        TdApi.BackgroundType backgroundType = this.f36574c;
+        TdApi.BackgroundType backgroundType = this.f36576c;
         return backgroundType != null && backgroundType.getConstructor() == 1290213117;
     }
 
     public boolean m312Y() {
-        return m313X() && ((TdApi.BackgroundTypePattern) this.f36574c).fill.getConstructor() == -1145469255;
+        return m313X() && ((TdApi.BackgroundTypePattern) this.f36576c).fill.getConstructor() == -1145469255;
     }
 
     public boolean m311Z() {
-        return m313X() && ((TdApi.BackgroundTypePattern) this.f36574c).fill.getConstructor() == -1839206017;
+        return m313X() && ((TdApi.BackgroundTypePattern) this.f36576c).fill.getConstructor() == -1839206017;
     }
 
     public boolean m309a0() {
-        TdApi.BackgroundType backgroundType = this.f36574c;
+        TdApi.BackgroundType backgroundType = this.f36576c;
         return backgroundType != null && backgroundType.getConstructor() == 1972128891;
     }
 
     public void m305c0(final C10930q6 q6Var) {
-        C6246h hVar = this.f36579h;
+        C6246h hVar = this.f36581h;
         if (hVar instanceof C6251j) {
             ((C6251j) hVar).mo258D0(new Client.AbstractC7865g() {
                 @Override
@@ -881,68 +881,68 @@ public class C11520h {
     }
 
     public int m292j(int i) {
-        TdApi.BackgroundType backgroundType = this.f36574c;
+        TdApi.BackgroundType backgroundType = this.f36576c;
         if (backgroundType == null) {
             return i;
         }
         int constructor = backgroundType.getConstructor();
         if (constructor != 993008684) {
-            return constructor != 1290213117 ? i : m290k(((TdApi.BackgroundTypePattern) this.f36574c).fill, i);
+            return constructor != 1290213117 ? i : m290k(((TdApi.BackgroundTypePattern) this.f36576c).fill, i);
         }
-        return m290k(((TdApi.BackgroundTypeFill) this.f36574c).fill, i);
+        return m290k(((TdApi.BackgroundTypeFill) this.f36576c).fill, i);
     }
 
     public void m289k0(C6240c cVar, boolean z) {
-        C6246h hVar = this.f36579h;
+        C6246h hVar = this.f36581h;
         C6246h hVar2 = null;
         if (hVar != null) {
             if (z) {
-                hVar2 = this.f36580i;
+                hVar2 = this.f36582i;
             }
-            cVar.m20977j(hVar2, hVar);
+            cVar.m20978j(hVar2, hVar);
             return;
         }
-        cVar.m20977j(null, null);
+        cVar.m20978j(null, null);
     }
 
     public int m286m() {
         if (m316U()) {
-            return ((TdApi.BackgroundFillGradient) ((TdApi.BackgroundTypeFill) this.f36574c).fill).bottomColor;
+            return ((TdApi.BackgroundFillGradient) ((TdApi.BackgroundTypeFill) this.f36576c).fill).bottomColor;
         }
         if (m311Z()) {
-            return ((TdApi.BackgroundFillGradient) ((TdApi.BackgroundTypePattern) this.f36574c).fill).bottomColor;
+            return ((TdApi.BackgroundFillGradient) ((TdApi.BackgroundTypePattern) this.f36576c).fill).bottomColor;
         }
         if (m317T()) {
-            int[] iArr = ((TdApi.BackgroundFillFreeformGradient) ((TdApi.BackgroundTypeFill) this.f36574c).fill).colors;
+            int[] iArr = ((TdApi.BackgroundFillFreeformGradient) ((TdApi.BackgroundTypeFill) this.f36576c).fill).colors;
             return iArr[iArr.length - 1];
         } else if (!m312Y()) {
             return 0;
         } else {
-            int[] iArr2 = ((TdApi.BackgroundFillFreeformGradient) ((TdApi.BackgroundTypePattern) this.f36574c).fill).colors;
+            int[] iArr2 = ((TdApi.BackgroundFillFreeformGradient) ((TdApi.BackgroundTypePattern) this.f36576c).fill).colors;
             return iArr2[iArr2.length - 1];
         }
     }
 
     public String m280p() {
-        return this.f36575d;
+        return this.f36577d;
     }
 
     public void m279p0(int i) {
         String str;
         StringBuilder sb2 = new StringBuilder();
-        if (this.f36572a != 0) {
-            str = "wallpaper_" + this.f36572a;
+        if (this.f36574a != 0) {
+            str = "wallpaper_" + this.f36574a;
         } else {
             str = "wallpaper";
         }
         sb2.append(str);
-        sb2.append(C4868i.m24799S1(i));
+        sb2.append(C4868i.m24800S1(i));
         String sb3 = sb2.toString();
-        LevelDB W = C4868i.m24726c2().m24773W();
-        if (C5070i.m24061i(this.f36578g)) {
+        LevelDB W = C4868i.m24727c2().m24774W();
+        if (C5070i.m24062i(this.f36580g)) {
             W.remove(sb3 + "_remote_id");
         } else {
-            W.putString(sb3 + "_remote_id", this.f36578g);
+            W.putString(sb3 + "_remote_id", this.f36580g);
         }
         if (m319R()) {
             W.putBoolean(sb3 + "_empty", true);
@@ -950,28 +950,28 @@ public class C11520h {
             W.remove(sb3 + "_empty");
         }
         if (m320Q()) {
-            W.putBoolean(sb3 + "_custom", true).putString(sb3 + "_path", this.f36575d);
+            W.putBoolean(sb3 + "_custom", true).putString(sb3 + "_path", this.f36577d);
         } else {
             W.remove(sb3 + "_custom").remove(sb3 + "_path");
         }
-        if (C5070i.m24061i(this.f36573b) || (m318S() && this.f36573b.equals(m267x(m294i())))) {
+        if (C5070i.m24062i(this.f36575b) || (m318S() && this.f36575b.equals(m267x(m294i())))) {
             W.remove(sb3 + "_name");
         } else {
-            W.putString(sb3 + "_name", this.f36573b);
+            W.putString(sb3 + "_name", this.f36575b);
         }
-        if (this.f36576e) {
+        if (this.f36578e) {
             W.putBoolean(sb3 + "_vector", true);
         } else {
             W.remove(sb3 + "_vector");
         }
-        TdApi.BackgroundType backgroundType = this.f36574c;
+        TdApi.BackgroundType backgroundType = this.f36576c;
         if (backgroundType != null) {
             int constructor = backgroundType.getConstructor();
             if (constructor == 993008684) {
                 W.putInt(sb3 + "_type", 1).remove(sb3 + "_intensity").remove(sb3 + "_moving").remove(sb3 + "_blurred");
-                m291j0(W, sb3, ((TdApi.BackgroundTypeFill) this.f36574c).fill);
+                m291j0(W, sb3, ((TdApi.BackgroundTypeFill) this.f36576c).fill);
             } else if (constructor == 1290213117) {
-                TdApi.BackgroundTypePattern backgroundTypePattern = (TdApi.BackgroundTypePattern) this.f36574c;
+                TdApi.BackgroundTypePattern backgroundTypePattern = (TdApi.BackgroundTypePattern) this.f36576c;
                 if (backgroundTypePattern.intensity >= 0) {
                     W.putInt(sb3 + "_type", 3).putInt(sb3 + "_intensity", backgroundTypePattern.intensity).putBoolean(sb3 + "_moving", backgroundTypePattern.isMoving).putBoolean(sb3 + "_inverted", backgroundTypePattern.isInverted).remove(sb3 + "_blurred");
                     m291j0(W, sb3, backgroundTypePattern.fill);
@@ -979,10 +979,10 @@ public class C11520h {
                     throw new IllegalArgumentException();
                 }
             } else if (constructor == 1972128891) {
-                TdApi.BackgroundTypeWallpaper backgroundTypeWallpaper = (TdApi.BackgroundTypeWallpaper) this.f36574c;
+                TdApi.BackgroundTypeWallpaper backgroundTypeWallpaper = (TdApi.BackgroundTypeWallpaper) this.f36576c;
                 W.putInt(sb3 + "_type", 2).putBoolean(sb3 + "_moving", backgroundTypeWallpaper.isMoving).putBoolean(sb3 + "_blurred", backgroundTypeWallpaper.isBlurred).remove(sb3 + "_color").remove(sb3 + "_intensity").remove(sb3 + "_inverted");
             } else {
-                throw new UnsupportedOperationException(this.f36574c.toString());
+                throw new UnsupportedOperationException(this.f36576c.toString());
             }
         } else {
             W.remove(sb3 + "_type").remove(sb3 + "_color").remove(sb3 + "_intensity").remove(sb3 + "_inverted").remove(sb3 + "_moving").remove(sb3 + "_blurred").remove(sb3 + "_fill").remove(sb3 + "_color_top").remove(sb3 + "_color_bottom").remove(sb3 + "_colors").remove(sb3 + "_rotation_angle");
@@ -991,61 +991,61 @@ public class C11520h {
     }
 
     public void m277q0(int i) {
-        this.f36577f = i;
+        this.f36579f = i;
     }
 
     public int[] m276r() {
         if (m317T()) {
-            return ((TdApi.BackgroundFillFreeformGradient) ((TdApi.BackgroundTypeFill) this.f36574c).fill).colors;
+            return ((TdApi.BackgroundFillFreeformGradient) ((TdApi.BackgroundTypeFill) this.f36576c).fill).colors;
         }
-        return m312Y() ? ((TdApi.BackgroundFillFreeformGradient) ((TdApi.BackgroundTypePattern) this.f36574c).fill).colors : new int[0];
+        return m312Y() ? ((TdApi.BackgroundFillFreeformGradient) ((TdApi.BackgroundTypePattern) this.f36576c).fill).colors : new int[0];
     }
 
     public final void m275r0(C6246h hVar) {
-        this.f36581j = hVar;
+        this.f36583j = hVar;
         if (hVar != null) {
-            hVar.m20897s0(2);
+            hVar.m20898s0(2);
         }
     }
 
     public final void m273s0(C6246h hVar) {
-        this.f36580i = hVar;
+        this.f36582i = hVar;
         if (hVar != null) {
-            hVar.m20911j0(true);
-            hVar.m20897s0(2);
+            hVar.m20912j0(true);
+            hVar.m20898s0(2);
         }
     }
 
     public final void m271t0(C6246h hVar, boolean z) {
-        this.f36579h = hVar;
+        this.f36581h = hVar;
         if (hVar != null) {
-            hVar.m20911j0(true);
-            hVar.m20926b0();
-            if (this.f36576e) {
-                hVar.m20921e0();
+            hVar.m20912j0(true);
+            hVar.m20927b0();
+            if (this.f36578e) {
+                hVar.m20922e0();
             }
             if (m313X()) {
-                hVar.m20897s0(3);
-                hVar.mo20767t0(C1357a0.m37551D());
+                hVar.m20898s0(3);
+                hVar.mo20768t0(C1357a0.m37554D());
                 return;
             }
-            hVar.m20897s0(2);
+            hVar.m20898s0(2);
             if (z) {
-                hVar.mo20767t0(160);
-                hVar.m20919f0();
+                hVar.mo20768t0(160);
+                hVar.m20920f0();
                 return;
             }
-            hVar.mo20767t0(Math.min(1480, C1357a0.m37551D()));
-            hVar.m20909k0();
+            hVar.mo20768t0(Math.min(1480, C1357a0.m37554D()));
+            hVar.m20910k0();
         }
     }
 
     public int m270u() {
-        return this.f36577f;
+        return this.f36579f;
     }
 
     public String m268w() {
-        return this.f36573b;
+        return this.f36575b;
     }
 
     public C11520h(C10930q6 q6Var, String str, TdApi.BackgroundType backgroundType, boolean z, int i) {
@@ -1070,19 +1070,19 @@ public class C11520h {
 
     public C11520h(C10930q6 q6Var, TdApi.Background background, boolean z) {
         TdApi.Document document;
-        this.f36572a = q6Var.m2188w6();
-        this.f36573b = background.name;
-        this.f36574c = background.type;
-        this.f36575d = null;
+        this.f36574a = q6Var.m2188w6();
+        this.f36575b = background.name;
+        this.f36576c = background.type;
+        this.f36577d = null;
         TdApi.Document document2 = background.document;
-        this.f36576e = document2 != null && "application/x-tgwallpattern".equals(document2.mimeType);
-        this.f36577f = m285m0(background.name, background.type);
-        int constructor = this.f36574c.getConstructor();
+        this.f36578e = document2 != null && "application/x-tgwallpattern".equals(document2.mimeType);
+        this.f36579f = m285m0(background.name, background.type);
+        int constructor = this.f36576c.getConstructor();
         if ((constructor == 1290213117 || constructor == 1972128891) && (document = background.document) != null) {
             m271t0(new C6246h(q6Var, document.document), z);
             TdApi.Thumbnail thumbnail = background.document.thumbnail;
             if (thumbnail != null) {
-                m273s0(C4779t2.m25704D5(q6Var, thumbnail));
+                m273s0(C4779t2.m25705D5(q6Var, thumbnail));
             }
             if (background.document.minithumbnail != null) {
                 m275r0(new C6250i(background.document.minithumbnail));

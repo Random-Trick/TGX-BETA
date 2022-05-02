@@ -39,7 +39,7 @@ public class C4195j extends AbstractTextureView$SurfaceTextureListenerC4068w {
 
         @Override
         public void handleMessage(Message message) {
-            this.f14189a.m28505M0(message);
+            this.f14189a.m28507M0(message);
         }
     }
 
@@ -47,108 +47,108 @@ public class C4195j extends AbstractTextureView$SurfaceTextureListenerC4068w {
         super(context, lVar);
         C4193h hVar = new C4193h(context, this);
         this.f14179f0 = hVar;
-        hVar.m28581j0(m29068m());
-        if (lVar.mo29122j4() && this.f14180g0 == null) {
+        hVar.m28583j0(m29070m());
+        if (lVar.mo29124j4() && this.f14180g0 == null) {
             this.f14180g0 = new C4040h0(this);
         }
     }
 
-    public void m28512F0(int i, int i2) {
-        ((C4058m0) this.f13728c).m29110a(i, i2);
+    public void m28514F0(int i, int i2) {
+        ((C4058m0) this.f13728c).m29112a(i, i2);
     }
 
-    public void m28517A0() {
-        throw new UnsupportedOperationException("Method not decompiled: ee.C4195j.m28517A0():void");
+    public void m28519A0() {
+        throw new UnsupportedOperationException("Method not decompiled: ee.C4195j.m28519A0():void");
     }
 
-    public final boolean m28516B0() {
+    public final boolean m28518B0() {
         try {
-            return this.f14179f0.m28582j();
+            return this.f14179f0.m28584j();
         } catch (Throwable th) {
             Log.m14712w(Log.TAG_CAMERA, "Cannot close preview", th, new Object[0]);
             return false;
         }
     }
 
-    public void m28515C0(String str, boolean z) {
-        this.f14179f0.m28574n(str, z);
+    public void m28517C0(String str, boolean z) {
+        this.f14179f0.m28576n(str, z);
     }
 
-    public int m28514D0() {
-        return this.f14179f0.mo28527e();
+    public int m28516D0() {
+        return this.f14179f0.mo28529e();
     }
 
-    public int m28513E0() {
-        return this.f14179f0.mo28520y();
+    public int m28515E0() {
+        return this.f14179f0.mo28522y();
     }
 
     @Override
-    public void mo27772F(int i) {
+    public void mo27774F(int i) {
         AbstractC4186b bVar = this.f14179f0;
         if (bVar != null) {
-            bVar.m28581j0(i);
+            bVar.m28583j0(i);
         }
     }
 
     @Override
-    public void mo27771G() {
-        this.f14179f0.m28572o();
+    public void mo27773G() {
+        this.f14179f0.m28574o();
     }
 
-    public void m28511G0(boolean z, boolean z2, boolean z3) {
-        this.f13726b.mo29123f7(z, z2, z3);
+    public void m28513G0(boolean z, boolean z2, boolean z3) {
+        this.f13726b.mo29125f7(z, z2, z3);
     }
 
-    public void m28510H0(int i) {
-        this.f13726b.mo29127P6(i);
+    public void m28512H0(int i) {
+        this.f13726b.mo29129P6(i);
     }
 
-    public void m28509I0(boolean z) {
-        this.f13726b.mo29130L3(z);
+    public void m28511I0(boolean z) {
+        this.f13726b.mo29132L3(z);
     }
 
     @Override
-    public void mo27769J(float f) {
-        this.f14179f0.m28600Y(C5069h.m24088e(f, mo27755p(), mo27756o()));
+    public void mo27771J(float f) {
+        this.f14179f0.m28602Y(C5069h.m24089e(f, mo27757p(), mo27758o()));
     }
 
-    public void m28508J0(byte[] bArr, Camera camera) {
+    public void m28510J0(byte[] bArr, Camera camera) {
         if (this.f14180g0 != null && this.f14179f0.f14138m) {
             try {
                 Camera.Size previewSize = camera.getParameters().getPreviewSize();
-                this.f14180g0.m29242r(bArr, previewSize.width, previewSize.height, (C4193h) this.f14179f0);
+                this.f14180g0.m29244r(bArr, previewSize.width, previewSize.height, (C4193h) this.f14179f0);
             } catch (Exception unused) {
             }
         }
     }
 
     @Override
-    public void mo27768K() {
-        this.f14179f0.m28597a0();
+    public void mo27770K() {
+        this.f14179f0.m28599a0();
     }
 
-    public void m28507K0() {
+    public void m28509K0() {
         if (!this.f14188o0 && this.f14186m0) {
             Log.m14721i((int) Log.TAG_CAMERA, "onRenderedFirstFrame", new Object[0]);
             this.f14188o0 = true;
-            this.f13726b.mo29124e();
+            this.f13726b.mo29126e();
         }
     }
 
-    public final int m28506L0() {
+    public final int m28508L0() {
         try {
-            return 1 ^ this.f14179f0.m28601W();
+            return 1 ^ this.f14179f0.m28603W();
         } catch (Throwable th) {
             Log.m14712w(Log.TAG_CAMERA, "Cannot open preview", th, new Object[0]);
             if (!(this.f14179f0 instanceof C4193h)) {
                 return 2;
             }
-            m28497U0(th);
+            m28499U0(th);
             return 1;
         }
     }
 
-    public final void m28505M0(Message message) {
+    public final void m28507M0(Message message) {
         int i = message.what;
         if (i != 0) {
             boolean z = true;
@@ -159,130 +159,130 @@ public class C4195j extends AbstractTextureView$SurfaceTextureListenerC4068w {
                     if (message.arg1 != 1) {
                         z = false;
                     }
-                    m29102A(lVar, z);
+                    m29104A(lVar, z);
                     return;
                 }
                 if (message.arg1 != 1) {
                     z = false;
                 }
-                m29056z(z);
+                m29058z(z);
                 return;
             }
             return;
         }
-        m28496V0();
+        m28498V0();
     }
 
     @Override
-    public boolean mo27767N(int i) {
+    public boolean mo27769N(int i) {
         Log.m14721i((int) Log.TAG_CAMERA, "requestVideoCapture, orientation: %d", Integer.valueOf(i));
-        if (!this.f14179f0.mo28551F()) {
+        if (!this.f14179f0.mo28553F()) {
             return false;
         }
-        this.f14179f0.m28565r0(i);
+        this.f14179f0.m28567r0(i);
         return true;
     }
 
-    public boolean m28504N0(String str, C9758l0.AbstractC9760b bVar, String str2) {
+    public boolean m28506N0(String str, C9758l0.AbstractC9760b bVar, String str2) {
         Log.m14721i((int) Log.TAG_CAMERA, "requestRoundCapture, key: %s", str);
-        if (!this.f14179f0.mo28551F()) {
+        if (!this.f14179f0.mo28553F()) {
             return false;
         }
-        this.f14179f0.m28567q0(str, bVar, str2);
+        this.f14179f0.m28569q0(str, bVar, str2);
         return true;
     }
 
-    public void m28503O0(boolean z) {
+    public void m28505O0(boolean z) {
         if (this.f14188o0) {
             Log.m14721i((int) Log.TAG_CAMERA, "resetRenderState", new Object[0]);
             this.f14188o0 = false;
-            this.f13726b.mo29119n(z, null);
+            this.f13726b.mo29121n(z, null);
         }
     }
 
-    public final void m28502P0(int i) {
+    public final void m28504P0(int i) {
         HandlerC4196a aVar = this.f14187n0;
         aVar.sendMessage(Message.obtain(aVar, i));
     }
 
     @Override
-    public void mo27766Q(int i, int i2, int i3) {
-        this.f14179f0.m28563t0(i, i2, i3);
+    public void mo27768Q(int i, int i2, int i3) {
+        this.f14179f0.m28565t0(i, i2, i3);
     }
 
-    public void m28501Q0(final int i, final int i2) {
-        C1379j0.m37334d0(new Runnable() {
+    public void m28503Q0(final int i, final int i2) {
+        C1379j0.m37337d0(new Runnable() {
             @Override
             public final void run() {
-                C4195j.this.m28512F0(i, i2);
+                C4195j.this.m28514F0(i, i2);
             }
         });
     }
 
-    public void m28500R0(int i) {
+    public void m28502R0(int i) {
         synchronized (this) {
             if (this.f14182i0 != i) {
                 this.f14182i0 = i;
-                this.f13726b.mo29120m1(i);
+                this.f13726b.mo29122m1(i);
             }
         }
     }
 
     @Override
-    public void mo27765S() {
+    public void mo27767S() {
         this.f14183j0 = true;
-        m28517A0();
+        m28519A0();
     }
 
-    public void m28499S0(boolean z) {
+    public void m28501S0(boolean z) {
         synchronized (this) {
             if (this.f14181h0 != z) {
                 this.f14181h0 = z;
                 if (!z) {
-                    this.f14179f0.m28576m();
+                    this.f14179f0.m28578m();
                 }
             }
         }
     }
 
-    public void m28498T0(String str) {
-        this.f13726b.mo29126c1(str);
+    public void m28500T0(String str) {
+        this.f13726b.mo29128c1(str);
     }
 
     @Override
-    public void mo27764U() {
+    public void mo27766U() {
         this.f14184k0 = true;
-        m28517A0();
+        m28519A0();
     }
 
-    public void m28497U0(Throwable th) {
-        this.f13726b.mo29126c1(Log.toString(th));
+    public void m28499U0(Throwable th) {
+        this.f13726b.mo29128c1(Log.toString(th));
     }
 
-    public void m28496V0() {
-        if (!C1379j0.m37357K()) {
-            m28502P0(0);
+    public void m28498V0() {
+        if (!C1379j0.m37360K()) {
+            m28504P0(0);
         } else if (this.f14179f0 instanceof C4193h) {
             Log.m14727e((int) Log.TAG_CAMERA, "Trying to switch to legacy API, when already using legacy API", new Object[0]);
         } else {
             Log.m14711w((int) Log.TAG_CAMERA, "Switching to legacy API.", new Object[0]);
-            mo27761i();
+            mo27763i();
             this.f14185l0 = null;
             this.f14179f0 = new C4193h(this.f13724a, this);
-            if (m29055q0() != null) {
-                this.f14179f0.m28605P(m29055q0(), m29053s0(), m29054r0());
+            if (m29057q0() != null) {
+                this.f14179f0.m28607P(m29057q0(), m29055s0(), m29056r0());
             }
-            m28517A0();
+            m28519A0();
         }
     }
 
-    public void m28495W0() {
+    public void m28497W0() {
         if (this.f14182i0 != -1) {
-            this.f14179f0.m28564s0();
+            this.f14179f0.m28566s0();
         }
     }
 
-    public boolean m28494X0() {
+    public boolean m28496X0() {
         boolean z;
         synchronized (this) {
             z = this.f14181h0;
@@ -291,30 +291,30 @@ public class C4195j extends AbstractTextureView$SurfaceTextureListenerC4068w {
     }
 
     @Override
-    public void mo27763b0() {
+    public void mo27765b0() {
         this.f14184k0 = false;
-        m28517A0();
+        m28519A0();
     }
 
     @Override
-    public void mo27762h() {
+    public void mo27764h() {
         this.f14183j0 = false;
-        m28517A0();
+        m28519A0();
     }
 
     @Override
-    public void mo27761i() {
+    public void mo27763i() {
         C4040h0 h0Var = this.f14180g0;
         if (h0Var != null) {
-            h0Var.m29252h();
+            h0Var.m29254h();
             this.f14180g0 = null;
         }
         this.f14185l0 = this.f14179f0;
-        m28517A0();
+        m28519A0();
     }
 
     @Override
-    public boolean mo27760k(Bitmap bitmap) {
+    public boolean mo27762k(Bitmap bitmap) {
         try {
             if (((C4058m0) this.f13728c).isAvailable()) {
                 ((C4058m0) this.f13728c).getBitmap(bitmap);
@@ -327,57 +327,57 @@ public class C4195j extends AbstractTextureView$SurfaceTextureListenerC4068w {
     }
 
     @Override
-    public float mo27759l() {
-        return this.f14179f0.m28557z();
+    public float mo27761l() {
+        return this.f14179f0.m28559z();
     }
 
     @Override
-    public void mo27758l0() {
-        m28495W0();
+    public void mo27760l0() {
+        m28497W0();
     }
 
     @Override
-    public void mo27757m0() {
-        this.f14179f0.m28561u0();
+    public void mo27759m0() {
+        this.f14179f0.m28563u0();
     }
 
     @Override
-    public float mo27756o() {
-        return this.f14179f0.m28562u();
+    public float mo27758o() {
+        return this.f14179f0.m28564u();
     }
 
     @Override
-    public float mo27755p() {
+    public float mo27757p() {
         return 0.0f;
     }
 
     @Override
-    public float mo27754q() {
+    public float mo27756q() {
         return 1.0f;
     }
 
     @Override
-    public void mo28493u0(SurfaceTexture surfaceTexture, int i, int i2) {
-        this.f14179f0.m28605P(surfaceTexture, i, i2);
+    public void mo28495u0(SurfaceTexture surfaceTexture, int i, int i2) {
+        this.f14179f0.m28607P(surfaceTexture, i, i2);
     }
 
     @Override
-    public void mo28492v0(SurfaceTexture surfaceTexture) {
-        this.f14179f0.m28604Q(surfaceTexture);
+    public void mo28494v0(SurfaceTexture surfaceTexture) {
+        this.f14179f0.m28606Q(surfaceTexture);
     }
 
     @Override
-    public boolean mo27747w() {
+    public boolean mo27749w() {
         return this.f14186m0;
     }
 
     @Override
-    public void mo28491w0(SurfaceTexture surfaceTexture, int i, int i2) {
-        this.f14179f0.m28603R(surfaceTexture, i, i2);
+    public void mo28493w0(SurfaceTexture surfaceTexture, int i, int i2) {
+        this.f14179f0.m28605R(surfaceTexture, i, i2);
     }
 
     @Override
-    public void mo28490x0(int i, int i2) {
-        this.f14179f0.m28575m0(i, i2);
+    public void mo28492x0(int i, int i2) {
+        this.f14179f0.m28577m0(i, i2);
     }
 }

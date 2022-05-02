@@ -5,7 +5,7 @@ import android.graphics.drawable.Drawable;
 import p143k0.C6038h;
 
 public interface AbstractC5143t {
-    Drawable mo14042X(int i, int i2);
+    Drawable mo14041X(int i, int i2);
 
     C6038h<Drawable> getSparseDrawableHolder();
 

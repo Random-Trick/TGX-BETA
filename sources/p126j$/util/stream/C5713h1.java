@@ -9,15 +9,15 @@ class C5713h1 extends AbstractC5718i1 {
     }
 
     @Override
-    public void mo22176a(Consumer consumer) {
+    public void mo22177a(Consumer consumer) {
     }
 
     @Override
-    public void mo22154n(Object[] objArr, int i) {
+    public void mo22155n(Object[] objArr, int i) {
     }
 
     @Override
-    public AbstractC5468G mo42629spliterator() {
-        return AbstractC5482V.m22595e();
+    public AbstractC5468G mo42632spliterator() {
+        return AbstractC5482V.m22596e();
     }
 }

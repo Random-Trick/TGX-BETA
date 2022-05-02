@@ -11,7 +11,7 @@ public abstract class AbstractC11362g0<T> implements Comparator<T> {
     }
 
     public static <C extends Comparable> AbstractC11362g0<C> m822b() {
-        return C11357e0.f36299a;
+        return C11357e0.f36302a;
     }
 
     public <F> AbstractC11362g0<F> m821c(AbstractC10430f<F, ? extends T> fVar) {

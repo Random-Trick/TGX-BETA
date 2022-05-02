@@ -4,21 +4,21 @@ import java.nio.channels.ReadableByteChannel;
 import java.nio.charset.Charset;
 
 public interface AbstractC4551g extends AbstractC4537a0, ReadableByteChannel {
-    boolean mo27339B();
+    boolean mo27341B();
 
-    String mo27338H(long j);
+    String mo27340H(long j);
 
-    String mo27337T(Charset charset);
+    String mo27339T(Charset charset);
 
-    C4549e mo27336a();
+    C4549e mo27338a();
 
-    void mo27335a0(long j);
+    void mo27337a0(long j);
 
-    String mo27333e0();
+    String mo27335e0();
 
-    byte[] mo27332g0(long j);
+    byte[] mo27334g0(long j);
 
-    C4552h mo27330o(long j);
+    C4552h mo27332o(long j);
 
     byte readByte();
 
@@ -26,7 +26,7 @@ public interface AbstractC4551g extends AbstractC4537a0, ReadableByteChannel {
 
     short readShort();
 
-    void mo27329s0(long j);
+    void mo27331s0(long j);
 
-    long mo27327v0();
+    long mo27329v0();
 }

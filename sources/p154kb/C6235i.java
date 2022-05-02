@@ -7,7 +7,7 @@ import java.util.List;
 import p143k0.C6038h;
 
 public class C6235i {
-    public static <T> boolean m21015a(List<Reference<T>> list, T t) {
+    public static <T> boolean m21016a(List<Reference<T>> list, T t) {
         boolean z = false;
         for (int size = list.size() - 1; size >= 0; size--) {
             Reference<T> reference = list.get(size);
@@ -25,18 +25,18 @@ public class C6235i {
         return true;
     }
 
-    public static <T> boolean m21014b(C6038h<List<Reference<T>>> hVar, T t, int i) {
-        List<Reference<T>> e = hVar.m21471e(i);
+    public static <T> boolean m21015b(C6038h<List<Reference<T>>> hVar, T t, int i) {
+        List<Reference<T>> e = hVar.m21472e(i);
         if (e != null) {
-            return m21015a(e, t);
+            return m21016a(e, t);
         }
         ArrayList arrayList = new ArrayList();
         arrayList.add(new WeakReference(t));
-        hVar.m21466j(i, arrayList);
+        hVar.m21467j(i, arrayList);
         return true;
     }
 
-    public static <T> boolean m21013c(AbstractC6225b<T> bVar, List<Reference<T>> list, T t) {
+    public static <T> boolean m21014c(AbstractC6225b<T> bVar, List<Reference<T>> list, T t) {
         boolean z = false;
         for (int size = list.size() - 1; size >= 0; size--) {
             Reference<T> reference = list.get(size);
@@ -50,7 +50,7 @@ public class C6235i {
         if (z) {
             return false;
         }
-        Reference<T> h = bVar.mo21032h(t);
+        Reference<T> h = bVar.mo21033h(t);
         if (h != null) {
             list.add(h);
             return true;
@@ -58,7 +58,7 @@ public class C6235i {
         throw new IllegalArgumentException();
     }
 
-    public static <T> void m21012d(List<Reference<T>> list) {
+    public static <T> void m21013d(List<Reference<T>> list) {
         if (list != null) {
             for (int size = (list.size() - 1) - 1; size >= 0; size--) {
                 if (list.get(size).get() == null) {
@@ -68,7 +68,7 @@ public class C6235i {
         }
     }
 
-    public static <T> boolean m21011e(List<Reference<T>> list, T t) {
+    public static <T> boolean m21012e(List<Reference<T>> list, T t) {
         for (int size = list.size() - 1; size >= 0; size--) {
             T t2 = list.get(size).get();
             if (t2 == null || t2 == t) {
@@ -79,14 +79,14 @@ public class C6235i {
         return false;
     }
 
-    public static <T> boolean m21010f(C6038h<List<Reference<T>>> hVar, T t, int i) {
-        List<Reference<T>> e = hVar.m21471e(i);
+    public static <T> boolean m21011f(C6038h<List<Reference<T>>> hVar, T t, int i) {
+        List<Reference<T>> e = hVar.m21472e(i);
         if (e == null) {
             return false;
         }
-        boolean e2 = m21011e(e, t);
+        boolean e2 = m21012e(e, t);
         if (e.isEmpty()) {
-            hVar.m21465k(i);
+            hVar.m21466k(i);
         }
         return e2;
     }

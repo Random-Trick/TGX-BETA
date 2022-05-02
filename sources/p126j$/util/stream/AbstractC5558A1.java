@@ -16,7 +16,7 @@ public abstract class AbstractC5558A1 extends CountedCompleter implements Abstra
     public AbstractC5558A1(AbstractC5468G g, AbstractC5572D0 d0, int i) {
         this.f18096a = g;
         this.f18097b = d0;
-        this.f18098c = AbstractC5701f.m22271h(g.estimateSize());
+        this.f18098c = AbstractC5701f.m22272h(g.estimateSize());
         this.f18099d = 0L;
         this.f18100e = i;
     }
@@ -33,11 +33,11 @@ public abstract class AbstractC5558A1 extends CountedCompleter implements Abstra
         }
     }
 
-    abstract AbstractC5558A1 mo22129a(AbstractC5468G g, long j, long j2);
+    abstract AbstractC5558A1 mo22130a(AbstractC5468G g, long j, long j2);
 
     @Override
-    public void mo22135c(double d) {
-        AbstractC5572D0.m22421i();
+    public void mo22136c(double d) {
+        AbstractC5572D0.m22422i();
         throw null;
     }
 
@@ -49,33 +49,33 @@ public abstract class AbstractC5558A1 extends CountedCompleter implements Abstra
         while (g.estimateSize() > a1.f18098c && (trySplit = g.trySplit()) != null) {
             a1.setPendingCount(1);
             long estimateSize = trySplit.estimateSize();
-            a1.mo22129a(trySplit, a1.f18099d, estimateSize).fork();
-            a1 = a1.mo22129a(g, a1.f18099d + estimateSize, a1.f18100e - estimateSize);
+            a1.mo22130a(trySplit, a1.f18099d, estimateSize).fork();
+            a1 = a1.mo22130a(g, a1.f18099d + estimateSize, a1.f18100e - estimateSize);
         }
         AbstractC5686c cVar = (AbstractC5686c) a1.f18097b;
         Objects.requireNonNull(cVar);
-        cVar.mo22306M(cVar.mo22299r0(a1), g);
+        cVar.mo22307M(cVar.mo22300r0(a1), g);
         a1.propagateCompletion();
     }
 
     @Override
-    public void mo22134d(int i) {
-        AbstractC5572D0.m22414m();
+    public void mo22135d(int i) {
+        AbstractC5572D0.m22415m();
         throw null;
     }
 
     @Override
-    public void mo22133e(long j) {
-        AbstractC5572D0.m22412n();
+    public void mo22134e(long j) {
+        AbstractC5572D0.m22413n();
         throw null;
     }
 
     @Override
-    public void mo22132h() {
+    public void mo22133h() {
     }
 
     @Override
-    public void mo22131j(long j) {
+    public void mo22132j(long j) {
         long j2 = this.f18100e;
         if (j <= j2) {
             int i = (int) this.f18099d;
@@ -87,7 +87,7 @@ public abstract class AbstractC5558A1 extends CountedCompleter implements Abstra
     }
 
     @Override
-    public boolean mo22130t() {
+    public boolean mo22131t() {
         return false;
     }
 }

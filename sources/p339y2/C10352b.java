@@ -3,11 +3,11 @@ package p339y2;
 import java.util.Objects;
 
 public final class C10352b {
-    public final String f33230a;
+    public final String f33233a;
 
     public C10352b(String str) {
         Objects.requireNonNull(str, "name is null");
-        this.f33230a = str;
+        this.f33233a = str;
     }
 
     public static C10352b m5368b(String str) {
@@ -15,7 +15,7 @@ public final class C10352b {
     }
 
     public String m5369a() {
-        return this.f33230a;
+        return this.f33233a;
     }
 
     public boolean equals(Object obj) {
@@ -25,14 +25,14 @@ public final class C10352b {
         if (!(obj instanceof C10352b)) {
             return false;
         }
-        return this.f33230a.equals(((C10352b) obj).f33230a);
+        return this.f33233a.equals(((C10352b) obj).f33233a);
     }
 
     public int hashCode() {
-        return this.f33230a.hashCode() ^ 1000003;
+        return this.f33233a.hashCode() ^ 1000003;
     }
 
     public String toString() {
-        return "Encoding{name=\"" + this.f33230a + "\"}";
+        return "Encoding{name=\"" + this.f33233a + "\"}";
     }
 }

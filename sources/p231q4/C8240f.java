@@ -7,10 +7,10 @@ import p217p4.AbstractC8041f;
 import p217p4.C8032b;
 
 public final class C8240f implements AbstractC8041f {
-    public final List<C8032b> f26693a;
+    public final List<C8032b> f26696a;
 
     public C8240f(List<C8032b> list) {
-        this.f26693a = list;
+        this.f26696a = list;
     }
 
     @Override
@@ -20,13 +20,13 @@ public final class C8240f implements AbstractC8041f {
 
     @Override
     public long mo5199b(int i) {
-        C1186a.m38189a(i == 0);
+        C1186a.m38192a(i == 0);
         return 0L;
     }
 
     @Override
     public List<C8032b> mo5198c(long j) {
-        return j >= 0 ? this.f26693a : Collections.emptyList();
+        return j >= 0 ? this.f26696a : Collections.emptyList();
     }
 
     @Override

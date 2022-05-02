@@ -8,7 +8,7 @@ public final class C5204p implements C5174b0.AbstractC5176b {
     @Override
     public final Object apply(Object obj) {
         Object Y0;
-        Y0 = C5174b0.m23701Y0((Throwable) obj);
+        Y0 = C5174b0.m23702Y0((Throwable) obj);
         return Y0;
     }
 }

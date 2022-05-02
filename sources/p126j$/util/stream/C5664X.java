@@ -11,7 +11,7 @@ final class C5664X extends AbstractC5668Y {
     }
 
     @Override
-    public void mo22128k(Object obj) {
-        this.f18262b.mo22128k(obj);
+    public void mo22129k(Object obj) {
+        this.f18262b.mo22129k(obj);
     }
 }

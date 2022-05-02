@@ -12,27 +12,27 @@ public enum EnumC9064a0 {
     H2_PRIOR_KNOWLEDGE("h2_prior_knowledge"),
     QUIC("quic");
     
-    public static final C9065a f29056R = new C9065a(null);
-    public final String f29059a;
+    public static final C9065a f29059R = new C9065a(null);
+    public final String f29062a;
 
     public static final class C9065a {
         public C9065a() {
         }
 
-        public final EnumC9064a0 m10568a(String str) {
-            C8298k.m12934e(str, "protocol");
+        public final EnumC9064a0 m10567a(String str) {
+            C8298k.m12933e(str, "protocol");
             EnumC9064a0 a0Var = EnumC9064a0.HTTP_1_0;
-            if (!C8298k.m12937b(str, a0Var.f29059a)) {
+            if (!C8298k.m12936b(str, a0Var.f29062a)) {
                 a0Var = EnumC9064a0.HTTP_1_1;
-                if (!C8298k.m12937b(str, a0Var.f29059a)) {
+                if (!C8298k.m12936b(str, a0Var.f29062a)) {
                     a0Var = EnumC9064a0.H2_PRIOR_KNOWLEDGE;
-                    if (!C8298k.m12937b(str, a0Var.f29059a)) {
+                    if (!C8298k.m12936b(str, a0Var.f29062a)) {
                         a0Var = EnumC9064a0.HTTP_2;
-                        if (!C8298k.m12937b(str, a0Var.f29059a)) {
+                        if (!C8298k.m12936b(str, a0Var.f29062a)) {
                             a0Var = EnumC9064a0.SPDY_3;
-                            if (!C8298k.m12937b(str, a0Var.f29059a)) {
+                            if (!C8298k.m12936b(str, a0Var.f29062a)) {
                                 a0Var = EnumC9064a0.QUIC;
-                                if (!C8298k.m12937b(str, a0Var.f29059a)) {
+                                if (!C8298k.m12936b(str, a0Var.f29062a)) {
                                     throw new IOException("Unexpected protocol: " + str);
                                 }
                             }
@@ -49,11 +49,11 @@ public enum EnumC9064a0 {
     }
 
     EnumC9064a0(String str) {
-        this.f29059a = str;
+        this.f29062a = str;
     }
 
     @Override
     public String toString() {
-        return this.f29059a;
+        return this.f29062a;
     }
 }

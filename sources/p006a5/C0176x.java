@@ -18,7 +18,7 @@ public final class C0176x extends AbstractC0139f {
     public boolean f654h;
 
     public static final class C0177a {
-        public static boolean m42135b(Throwable th) {
+        public static boolean m42138b(Throwable th) {
             return (th instanceof ErrnoException) && ((ErrnoException) th).errno == OsConstants.EACCES;
         }
     }
@@ -50,15 +50,15 @@ public final class C0176x extends AbstractC0139f {
         super(false);
     }
 
-    public static RandomAccessFile m42137w(Uri uri) {
+    public static RandomAccessFile m42140w(Uri uri) {
         int i = 2006;
         try {
-            return new RandomAccessFile((String) C1186a.m38185e(uri.getPath()), "r");
+            return new RandomAccessFile((String) C1186a.m38188e(uri.getPath()), "r");
         } catch (FileNotFoundException e) {
             if (!TextUtils.isEmpty(uri.getQuery()) || !TextUtils.isEmpty(uri.getFragment())) {
                 throw new C0179c(String.format("uri has query and/or fragment, which are not supported. Did you call Uri.parse() on a string containing '?' or '#'? Use Uri.fromFile(new File(path)) to avoid this. path=%s,query=%s,fragment=%s", uri.getPath(), uri.getQuery(), uri.getFragment()), e, 1004);
             }
-            if (C1216l0.f4526a < 21 || !C0177a.m42135b(e.getCause())) {
+            if (C1216l0.f4526a < 21 || !C0177a.m42138b(e.getCause())) {
                 i = 2005;
             }
             throw new C0179c(e, i);
@@ -78,10 +78,10 @@ public final class C0176x extends AbstractC0139f {
             return -1;
         }
         try {
-            int read = ((RandomAccessFile) C1216l0.m37968j(this.f651e)).read(bArr, i, (int) Math.min(this.f653g, i2));
+            int read = ((RandomAccessFile) C1216l0.m37971j(this.f651e)).read(bArr, i, (int) Math.min(this.f653g, i2));
             if (read > 0) {
                 this.f653g -= read;
-                m42225s(read);
+                m42228s(read);
             }
             return read;
         } catch (IOException e) {
@@ -93,8 +93,8 @@ public final class C0176x extends AbstractC0139f {
     public long mo4413c(C0159o oVar) {
         Uri uri = oVar.f553a;
         this.f652f = uri;
-        m42223u(oVar);
-        RandomAccessFile w = m42137w(uri);
+        m42226u(oVar);
+        RandomAccessFile w = m42140w(uri);
         this.f651e = w;
         try {
             w.seek(oVar.f559g);
@@ -105,7 +105,7 @@ public final class C0176x extends AbstractC0139f {
             this.f653g = j;
             if (j >= 0) {
                 this.f654h = true;
-                m42222v(oVar);
+                m42225v(oVar);
                 return this.f653g;
             }
             throw new C0179c(null, null, 2008);
@@ -130,7 +130,7 @@ public final class C0176x extends AbstractC0139f {
             this.f651e = null;
             if (this.f654h) {
                 this.f654h = false;
-                m42224t();
+                m42227t();
             }
         }
     }

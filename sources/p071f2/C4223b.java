@@ -3,7 +3,7 @@ package p071f2;
 import android.os.Build;
 
 public final class C4223b {
-    public static final C4223b f14246i = new C4224a().m28378a();
+    public static final C4223b f14246i = new C4224a().m28380a();
     public EnumC4236k f14247a;
     public boolean f14248b;
     public boolean f14249c;
@@ -23,11 +23,11 @@ public final class C4223b {
         public long f14261g = -1;
         public C4225c f14262h = new C4225c();
 
-        public C4223b m28378a() {
+        public C4223b m28380a() {
             return new C4223b(this);
         }
 
-        public C4224a m28377b(EnumC4236k kVar) {
+        public C4224a m28379b(EnumC4236k kVar) {
             this.f14257c = kVar;
             return this;
         }
@@ -40,24 +40,24 @@ public final class C4223b {
         this.f14254h = new C4225c();
     }
 
-    public C4225c m28395a() {
+    public C4225c m28397a() {
         return this.f14254h;
     }
 
-    public EnumC4236k m28394b() {
+    public EnumC4236k m28396b() {
         return this.f14247a;
     }
 
-    public long m28393c() {
+    public long m28395c() {
         return this.f14252f;
     }
 
-    public long m28392d() {
+    public long m28394d() {
         return this.f14253g;
     }
 
-    public boolean m28391e() {
-        return this.f14254h.m28374c() > 0;
+    public boolean m28393e() {
+        return this.f14254h.m28376c() > 0;
     }
 
     public boolean equals(Object obj) {
@@ -74,15 +74,15 @@ public final class C4223b {
         return false;
     }
 
-    public boolean m28390f() {
+    public boolean m28392f() {
         return this.f14250d;
     }
 
-    public boolean m28389g() {
+    public boolean m28391g() {
         return this.f14248b;
     }
 
-    public boolean m28388h() {
+    public boolean m28390h() {
         return this.f14249c;
     }
 
@@ -92,39 +92,39 @@ public final class C4223b {
         return (((((((((((((this.f14247a.hashCode() * 31) + (this.f14248b ? 1 : 0)) * 31) + (this.f14249c ? 1 : 0)) * 31) + (this.f14250d ? 1 : 0)) * 31) + (this.f14251e ? 1 : 0)) * 31) + ((int) (j ^ (j >>> 32)))) * 31) + ((int) (j2 ^ (j2 >>> 32)))) * 31) + this.f14254h.hashCode();
     }
 
-    public boolean m28387i() {
+    public boolean m28389i() {
         return this.f14251e;
     }
 
-    public void m28386j(C4225c cVar) {
+    public void m28388j(C4225c cVar) {
         this.f14254h = cVar;
     }
 
-    public void m28385k(EnumC4236k kVar) {
+    public void m28387k(EnumC4236k kVar) {
         this.f14247a = kVar;
     }
 
-    public void m28384l(boolean z) {
+    public void m28386l(boolean z) {
         this.f14250d = z;
     }
 
-    public void m28383m(boolean z) {
+    public void m28385m(boolean z) {
         this.f14248b = z;
     }
 
-    public void m28382n(boolean z) {
+    public void m28384n(boolean z) {
         this.f14249c = z;
     }
 
-    public void m28381o(boolean z) {
+    public void m28383o(boolean z) {
         this.f14251e = z;
     }
 
-    public void m28380p(long j) {
+    public void m28382p(long j) {
         this.f14252f = j;
     }
 
-    public void m28379q(long j) {
+    public void m28381q(long j) {
         this.f14253g = j;
     }
 

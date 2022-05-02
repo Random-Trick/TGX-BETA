@@ -28,14 +28,14 @@ public class C6812c {
         this.f21339j = Color.blue(i2) - this.f21335f;
     }
 
-    public int m18909a(float f) {
+    public int m18910a(float f) {
         if (f <= 0.0f) {
             return this.f21330a;
         }
         return (f < 1.0f || this.f21340k) ? Color.argb(this.f21332c + ((int) (this.f21336g * f)), this.f21333d + ((int) (this.f21337h * f)), this.f21334e + ((int) (this.f21338i * f)), this.f21335f + ((int) (this.f21339j * f))) : this.f21331b;
     }
 
-    public void m18908b(int i, int i2) {
+    public void m18909b(int i, int i2) {
         this.f21330a = i;
         this.f21331b = i2;
         this.f21332c = Color.alpha(i);

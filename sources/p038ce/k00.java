@@ -8,6 +8,6 @@ public final class k00 implements AbstractC5918j {
 
     @Override
     public final void mo1330a(Object obj) {
-        x00.m30977ai((C10930q6.C10943m) obj);
+        x00.m30979ai((C10930q6.C10943m) obj);
     }
 }

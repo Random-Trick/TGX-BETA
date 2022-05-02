@@ -20,9 +20,9 @@ public interface AbstractC0118b0 {
         }
     }
 
-    void mo42140a(long j);
+    void mo42143a(long j);
 
-    long mo42139b(C0119a aVar);
+    long mo42142b(C0119a aVar);
 
-    int mo42138c(int i);
+    int mo42141c(int i);
 }

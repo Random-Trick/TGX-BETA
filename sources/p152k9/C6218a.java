@@ -31,19 +31,19 @@ public final class C6218a implements AbstractC4173e {
 
         @Override
         public C5060q mo4925b() {
-            m21041f();
+            m21042f();
             return C5060q.f17066a;
         }
 
-        public final void m21041f() {
-            if (!(C6218a.this.m21043h() == null || C6218a.this.m21047d() == null || C6218a.this.m21048c() == null || this.f19640c == null || C6218a.this.m21044g() == null)) {
-                GLES20.glTexImage2D(C5055m.m24187a(C6218a.this.m21045f()), 0, this.f19640c.intValue(), C6218a.this.m21043h().intValue(), C6218a.this.m21047d().intValue(), 0, C5055m.m24187a(C6218a.this.m21048c().intValue()), C5055m.m24187a(C6218a.this.m21044g().intValue()), null);
+        public final void m21042f() {
+            if (!(C6218a.this.m21044h() == null || C6218a.this.m21048d() == null || C6218a.this.m21049c() == null || this.f19640c == null || C6218a.this.m21045g() == null)) {
+                GLES20.glTexImage2D(C5055m.m24188a(C6218a.this.m21046f()), 0, this.f19640c.intValue(), C6218a.this.m21044h().intValue(), C6218a.this.m21048d().intValue(), 0, C5055m.m24188a(C6218a.this.m21049c().intValue()), C5055m.m24188a(C6218a.this.m21045g().intValue()), null);
             }
-            GLES20.glTexParameterf(C5055m.m24187a(C6218a.this.m21045f()), C5038f.m24211l(), C5038f.m24216g());
-            GLES20.glTexParameterf(C5055m.m24187a(C6218a.this.m21045f()), C5038f.m24212k(), C5038f.m24218e());
-            GLES20.glTexParameteri(C5055m.m24187a(C6218a.this.m21045f()), C5038f.m24210m(), C5038f.m24222a());
-            GLES20.glTexParameteri(C5055m.m24187a(C6218a.this.m21045f()), C5038f.m24209n(), C5038f.m24222a());
-            C4172d.m28622b("glTexParameter");
+            GLES20.glTexParameterf(C5055m.m24188a(C6218a.this.m21046f()), C5038f.m24212l(), C5038f.m24217g());
+            GLES20.glTexParameterf(C5055m.m24188a(C6218a.this.m21046f()), C5038f.m24213k(), C5038f.m24219e());
+            GLES20.glTexParameteri(C5055m.m24188a(C6218a.this.m21046f()), C5038f.m24211m(), C5038f.m24223a());
+            GLES20.glTexParameteri(C5055m.m24188a(C6218a.this.m21046f()), C5038f.m24210n(), C5038f.m24223a());
+            C4172d.m28624b("glTexParameter");
         }
     }
 
@@ -62,80 +62,80 @@ public final class C6218a implements AbstractC4173e {
         if (num != null) {
             i3 = num.intValue();
         } else {
-            int[] h = C5057n.m24186h(1);
-            int r = C5057n.m24183r(h);
+            int[] h = C5057n.m24187h(1);
+            int r = C5057n.m24184r(h);
             int[] iArr = new int[r];
             for (int i4 = 0; i4 < r; i4++) {
-                iArr[i4] = C5057n.m24184m(h, i4);
+                iArr[i4] = C5057n.m24185m(h, i4);
             }
             GLES20.glGenTextures(1, iArr, 0);
             C5060q qVar = C5060q.f17066a;
             for (int i5 = 0; i5 < 1; i5++) {
-                C5057n.m24182s(h, i5, C5055m.m24187a(iArr[i5]));
+                C5057n.m24183s(h, i5, C5055m.m24188a(iArr[i5]));
             }
-            C4172d.m28622b("glGenTextures");
-            i3 = C5057n.m24184m(h, 0);
+            C4172d.m28624b("glGenTextures");
+            i3 = C5057n.m24185m(h, 0);
         }
         this.f19632a = i3;
         if (num == null) {
-            C4174f.m28620a(this, new C6219a(num5));
+            C4174f.m28622a(this, new C6219a(num5));
         }
     }
 
     @Override
-    public void mo21050a() {
-        GLES20.glBindTexture(C5055m.m24187a(this.f19634c), C5055m.m24187a(0));
-        GLES20.glActiveTexture(C5038f.m24214i());
-        C4172d.m28622b("unbind");
+    public void mo21051a() {
+        GLES20.glBindTexture(C5055m.m24188a(this.f19634c), C5055m.m24188a(0));
+        GLES20.glActiveTexture(C5038f.m24215i());
+        C4172d.m28624b("unbind");
     }
 
     @Override
-    public void mo21049b() {
-        GLES20.glActiveTexture(C5055m.m24187a(this.f19633b));
-        GLES20.glBindTexture(C5055m.m24187a(this.f19634c), C5055m.m24187a(this.f19632a));
-        C4172d.m28622b("bind");
+    public void mo21050b() {
+        GLES20.glActiveTexture(C5055m.m24188a(this.f19633b));
+        GLES20.glBindTexture(C5055m.m24188a(this.f19634c), C5055m.m24188a(this.f19632a));
+        C4172d.m28624b("bind");
     }
 
-    public final Integer m21048c() {
+    public final Integer m21049c() {
         return this.f19637f;
     }
 
-    public final Integer m21047d() {
+    public final Integer m21048d() {
         return this.f19636e;
     }
 
-    public final int m21046e() {
+    public final int m21047e() {
         return this.f19632a;
     }
 
-    public final int m21045f() {
+    public final int m21046f() {
         return this.f19634c;
     }
 
-    public final Integer m21044g() {
+    public final Integer m21045g() {
         return this.f19638g;
     }
 
-    public final Integer m21043h() {
+    public final Integer m21044h() {
         return this.f19635d;
     }
 
-    public final void m21042i() {
-        int[] iArr = {C5055m.m24187a(this.f19632a)};
-        int r = C5057n.m24183r(iArr);
+    public final void m21043i() {
+        int[] iArr = {C5055m.m24188a(this.f19632a)};
+        int r = C5057n.m24184r(iArr);
         int[] iArr2 = new int[r];
         for (int i = 0; i < r; i++) {
-            iArr2[i] = C5057n.m24184m(iArr, i);
+            iArr2[i] = C5057n.m24185m(iArr, i);
         }
         GLES20.glDeleteTextures(1, iArr2, 0);
         C5060q qVar = C5060q.f17066a;
         for (int i2 = 0; i2 < 1; i2++) {
-            C5057n.m24182s(iArr, i2, C5055m.m24187a(iArr2[i2]));
+            C5057n.m24183s(iArr, i2, C5055m.m24188a(iArr2[i2]));
         }
     }
 
     public C6218a(int i, int i2, Integer num, int i3, C8294g gVar) {
-        this((i3 & 1) != 0 ? C5038f.m24214i() : i, (i3 & 2) != 0 ? C5038f.m24213j() : i2, (i3 & 4) != 0 ? null : num);
+        this((i3 & 1) != 0 ? C5038f.m24215i() : i, (i3 & 2) != 0 ? C5038f.m24214j() : i2, (i3 & 4) != 0 ? null : num);
     }
 
     public C6218a(int i, int i2, Integer num) {

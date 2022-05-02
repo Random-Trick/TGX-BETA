@@ -9,12 +9,12 @@ public class C4449a implements AbstractC4248q {
     public final Handler f14715a = C10333f.m5409a(Looper.getMainLooper());
 
     @Override
-    public void mo27640a(long j, Runnable runnable) {
+    public void mo27642a(long j, Runnable runnable) {
         this.f14715a.postDelayed(runnable, j);
     }
 
     @Override
-    public void mo27639b(Runnable runnable) {
+    public void mo27641b(Runnable runnable) {
         this.f14715a.removeCallbacks(runnable);
     }
 }

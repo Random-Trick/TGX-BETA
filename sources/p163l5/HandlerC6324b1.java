@@ -16,13 +16,13 @@ public final class HandlerC6324b1 extends HandlerC10104h {
         this.f19861a = cVar;
     }
 
-    public static final void m20671a(Message message) {
+    public static final void m20672a(Message message) {
         AbstractC6332c1 c1Var = (AbstractC6332c1) message.obj;
-        c1Var.mo20481a();
-        c1Var.m20619d();
+        c1Var.mo20482a();
+        c1Var.m20620d();
     }
 
-    public static final boolean m20670b(Message message) {
+    public static final boolean m20671b(Message message) {
         int i = message.what;
         return i == 2 || i == 1 || i == 7;
     }
@@ -36,51 +36,51 @@ public final class HandlerC6324b1 extends HandlerC10104h {
         boolean z;
         if (this.f19861a.f19892l0.get() == message.arg1) {
             int i = message.what;
-            if ((i == 1 || i == 7 || ((i == 4 && !this.f19861a.m20623x()) || message.what == 5)) && !this.f19861a.m20640g()) {
-                m20671a(message);
+            if ((i == 1 || i == 7 || ((i == 4 && !this.f19861a.m20624x()) || message.what == 5)) && !this.f19861a.m20641g()) {
+                m20672a(message);
                 return;
             }
             int i2 = message.what;
             PendingIntent pendingIntent = null;
             if (i2 == 4) {
                 this.f19861a.f19889i0 = new C5217a(message.arg2);
-                if (AbstractC6325c.m20646b0(this.f19861a)) {
+                if (AbstractC6325c.m20647b0(this.f19861a)) {
                     z = this.f19861a.f19890j0;
                     if (!z) {
-                        this.f19861a.m20633k0(3, null);
+                        this.f19861a.m20634k0(3, null);
                         return;
                     }
                 }
                 aVar4 = this.f19861a.f19889i0;
                 C5217a aVar5 = aVar4 != null ? this.f19861a.f19889i0 : new C5217a(8);
-                this.f19861a.f19876Y.mo20622b(aVar5);
-                this.f19861a.m20660O(aVar5);
+                this.f19861a.f19876Y.mo20623b(aVar5);
+                this.f19861a.m20661O(aVar5);
             } else if (i2 == 5) {
                 aVar3 = this.f19861a.f19889i0;
                 C5217a aVar6 = aVar3 != null ? this.f19861a.f19889i0 : new C5217a(8);
-                this.f19861a.f19876Y.mo20622b(aVar6);
-                this.f19861a.m20660O(aVar6);
+                this.f19861a.f19876Y.mo20623b(aVar6);
+                this.f19861a.m20661O(aVar6);
             } else if (i2 == 3) {
                 Object obj = message.obj;
                 if (obj instanceof PendingIntent) {
                     pendingIntent = (PendingIntent) obj;
                 }
                 C5217a aVar7 = new C5217a(message.arg2, pendingIntent);
-                this.f19861a.f19876Y.mo20622b(aVar7);
-                this.f19861a.m20660O(aVar7);
+                this.f19861a.f19876Y.mo20623b(aVar7);
+                this.f19861a.m20661O(aVar7);
             } else if (i2 == 6) {
-                this.f19861a.m20633k0(5, null);
+                this.f19861a.m20634k0(5, null);
                 aVar = this.f19861a.f19884d0;
                 if (aVar != null) {
                     aVar2 = this.f19861a.f19884d0;
-                    aVar2.mo20578q(message.arg2);
+                    aVar2.mo20579q(message.arg2);
                 }
-                this.f19861a.m20659P(message.arg2);
-                AbstractC6325c.m20639g0(this.f19861a, 5, 1, null);
-            } else if (i2 == 2 && !this.f19861a.m20649a()) {
-                m20671a(message);
-            } else if (m20670b(message)) {
-                ((AbstractC6332c1) message.obj).m20620c();
+                this.f19861a.m20660P(message.arg2);
+                AbstractC6325c.m20640g0(this.f19861a, 5, 1, null);
+            } else if (i2 == 2 && !this.f19861a.m20650a()) {
+                m20672a(message);
+            } else if (m20671b(message)) {
+                ((AbstractC6332c1) message.obj).m20621c();
             } else {
                 int i3 = message.what;
                 StringBuilder sb2 = new StringBuilder(45);
@@ -88,8 +88,8 @@ public final class HandlerC6324b1 extends HandlerC10104h {
                 sb2.append(i3);
                 Log.wtf("GmsClient", sb2.toString(), new Exception());
             }
-        } else if (m20670b(message)) {
-            m20671a(message);
+        } else if (m20671b(message)) {
+            m20672a(message);
         }
     }
 }

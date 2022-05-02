@@ -4,7 +4,7 @@ import android.util.Size;
 import java.util.Comparator;
 
 public final class C11180c implements Comparator<Size> {
-    public boolean f35833a;
+    public boolean f35836a;
 
     public C11180c() {
         this(false);
@@ -12,11 +12,11 @@ public final class C11180c implements Comparator<Size> {
 
     public int compare(Size size, Size size2) {
         int signum = Long.signum((size.getWidth() * size.getHeight()) - (size2.getWidth() * size2.getHeight()));
-        return this.f35833a ? signum * (-1) : signum;
+        return this.f35836a ? signum * (-1) : signum;
     }
 
     public C11180c(boolean z) {
-        this.f35833a = false;
-        this.f35833a = z;
+        this.f35836a = false;
+        this.f35836a = z;
     }
 }

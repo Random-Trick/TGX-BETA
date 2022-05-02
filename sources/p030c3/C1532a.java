@@ -14,7 +14,7 @@ public final class C1532a extends AbstractC1539f {
         public byte[] f5484b;
 
         @Override
-        public AbstractC1539f mo36508a() {
+        public AbstractC1539f mo36511a() {
             String str = "";
             if (this.f5483a == null) {
                 str = str + " events";
@@ -26,26 +26,26 @@ public final class C1532a extends AbstractC1539f {
         }
 
         @Override
-        public AbstractC1539f.AbstractC1540a mo36507b(Iterable<AbstractC1150h> iterable) {
+        public AbstractC1539f.AbstractC1540a mo36510b(Iterable<AbstractC1150h> iterable) {
             Objects.requireNonNull(iterable, "Null events");
             this.f5483a = iterable;
             return this;
         }
 
         @Override
-        public AbstractC1539f.AbstractC1540a mo36506c(byte[] bArr) {
+        public AbstractC1539f.AbstractC1540a mo36509c(byte[] bArr) {
             this.f5484b = bArr;
             return this;
         }
     }
 
     @Override
-    public Iterable<AbstractC1150h> mo36510b() {
+    public Iterable<AbstractC1150h> mo36513b() {
         return this.f5481a;
     }
 
     @Override
-    public byte[] mo36509c() {
+    public byte[] mo36512c() {
         return this.f5482b;
     }
 
@@ -57,8 +57,8 @@ public final class C1532a extends AbstractC1539f {
             return false;
         }
         AbstractC1539f fVar = (AbstractC1539f) obj;
-        if (this.f5481a.equals(fVar.mo36510b())) {
-            if (Arrays.equals(this.f5482b, fVar instanceof C1532a ? ((C1532a) fVar).f5482b : fVar.mo36509c())) {
+        if (this.f5481a.equals(fVar.mo36513b())) {
+            if (Arrays.equals(this.f5482b, fVar instanceof C1532a ? ((C1532a) fVar).f5482b : fVar.mo36512c())) {
                 return true;
             }
         }

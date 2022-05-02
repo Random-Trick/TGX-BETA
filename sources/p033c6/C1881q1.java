@@ -12,30 +12,30 @@ public final class C1881q1<E> extends AbstractC1721f1<E> {
 
     @Override
     public final E get(int i) {
-        C1893r.m35935a(i, this.f6819M, "index");
+        C1893r.m35938a(i, this.f6819M, "index");
         E e = (E) this.f6820c[i];
         e.getClass();
         return e;
     }
 
     @Override
-    public final int mo35829h(Object[] objArr, int i) {
+    public final int mo35832h(Object[] objArr, int i) {
         System.arraycopy(this.f6820c, 0, objArr, i, this.f6819M);
         return i + this.f6819M;
     }
 
     @Override
-    public final int mo35828i() {
+    public final int mo35831i() {
         return this.f6819M;
     }
 
     @Override
-    public final int mo35827m() {
+    public final int mo35830m() {
         return 0;
     }
 
     @Override
-    public final Object[] mo35825s() {
+    public final Object[] mo35828s() {
         return this.f6820c;
     }
 

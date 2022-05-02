@@ -9,14 +9,14 @@ public abstract class AbstractC10231g2 {
         MAXIMUM(3),
         NOT_SUPPORT(4);
         
-        public final int f33010a;
+        public final int f33013a;
 
         EnumC10232a(int i) {
-            this.f33010a = i;
+            this.f33013a = i;
         }
 
         public int m5675a() {
-            return this.f33010a;
+            return this.f33013a;
         }
     }
 

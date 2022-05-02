@@ -53,28 +53,28 @@ public class C4336c {
         this.f14406a = aVar;
     }
 
-    public void m28248c(View view) {
+    public void m28250c(View view) {
         if ((this.f14413h & 2) == 0) {
             return;
         }
         if (this.f14406a.mo7415z4(view, this.f14414i, this.f14415j)) {
             this.f14413h &= -3;
             this.f14407b = null;
-            m28247d(view, this.f14414i, this.f14415j);
+            m28249d(view, this.f14414i, this.f14415j);
             return;
         }
         this.f14413h |= 8;
     }
 
-    public void m28249b(View view, float f, float f2) {
-        m28245f(view, f, f2);
+    public void m28251b(View view, float f, float f2) {
+        m28247f(view, f, f2);
     }
 
-    public final void m28247d(View view, float f, float f2) {
+    public final void m28249d(View view, float f, float f2) {
         this.f14416k = f;
         this.f14417l = f2;
         if (this.f14406a.mo7425W6(f, f2)) {
-            C2065g.m35720b(view, true, this.f14406a.mo7426K4());
+            C2065g.m35723b(view, true, this.f14406a.mo7426K4());
         } else {
             view.performHapticFeedback(0);
         }
@@ -86,7 +86,7 @@ public class C4336c {
         this.f14407b = null;
     }
 
-    public boolean m28246e(View view, MotionEvent motionEvent) {
+    public boolean m28248e(View view, MotionEvent motionEvent) {
         float x = motionEvent.getX();
         float y = motionEvent.getY();
         int action = motionEvent.getAction();
@@ -100,15 +100,15 @@ public class C4336c {
                     } else {
                         this.f14406a.mo7428C(view, x, y);
                         if ((this.f14413h & Log.TAG_CRASH) == 0) {
-                            C2065g.m35719c(view);
+                            C2065g.m35722c(view);
                         }
                     }
-                    m28245f(view, x, y);
+                    m28247f(view, x, y);
                     return true;
                 }
             } else if (action != 2) {
                 if (action == 3 && (this.f14413h & 1) != 0) {
-                    m28245f(view, x, y);
+                    m28247f(view, x, y);
                     return true;
                 }
             } else if ((this.f14413h & 1) != 0) {
@@ -116,13 +116,13 @@ public class C4336c {
                 if ((this.f14413h & 4) != 0) {
                     this.f14406a.mo7414z6(view, motionEvent, x, y, this.f14416k, this.f14417l);
                 } else if (Math.max(Math.abs(this.f14414i - x), Math.abs(this.f14415j - y)) > ViewConfiguration.get(view.getContext()).getScaledTouchSlop() * 1.89f) {
-                    m28245f(view, x, y);
+                    m28247f(view, x, y);
                 }
                 return true;
             }
             return (this.f14413h & 1) != 0;
         }
-        m28245f(view, x, y);
+        m28247f(view, x, y);
         if ((this.f14408c && (x < this.f14409d || x > this.f14411f || y < this.f14410e || y > this.f14412g)) || !this.f14406a.mo7418n0(view, x, y)) {
             return false;
         }
@@ -131,12 +131,12 @@ public class C4336c {
         this.f14415j = y;
         this.f14406a.mo7419f3(view, x, y);
         if (this.f14406a.mo7429B(x, y)) {
-            m28244g(view);
+            m28246g(view);
         }
         return true;
     }
 
-    public final void m28245f(View view, float f, float f2) {
+    public final void m28247f(View view, float f, float f2) {
         int i = this.f14413h;
         if ((i & 2) != 0) {
             this.f14413h = i & (-3);
@@ -163,7 +163,7 @@ public class C4336c {
         }
     }
 
-    public final void m28244g(final View view) {
+    public final void m28246g(final View view) {
         if (view == null) {
             return;
         }
@@ -172,7 +172,7 @@ public class C4336c {
             Runnable aVar = new Runnable() {
                 @Override
                 public final void run() {
-                    C4336c.this.m28248c(view);
+                    C4336c.this.m28250c(view);
                 }
             };
             this.f14407b = aVar;
@@ -182,8 +182,8 @@ public class C4336c {
         throw new AssertionError();
     }
 
-    public C4336c m28243h(boolean z) {
-        this.f14413h = C5063c.m24138h(this.f14413h, Log.TAG_CRASH, z);
+    public C4336c m28245h(boolean z) {
+        this.f14413h = C5063c.m24139h(this.f14413h, Log.TAG_CRASH, z);
         return this;
     }
 }

@@ -13,7 +13,7 @@ public final class BinderC4494j extends AbstractBinderC5003j {
     }
 
     @Override
-    public final boolean mo24335o0(AbstractC0196i iVar) {
-        return this.f14855a.mo27519T2(new C5243d(iVar));
+    public final boolean mo24336o0(AbstractC0196i iVar) {
+        return this.f14855a.mo27521T2(new C5243d(iVar));
     }
 }

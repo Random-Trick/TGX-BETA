@@ -11,11 +11,11 @@ public final class C5652U extends AbstractC5668Y implements AbstractC5744n2 {
     }
 
     @Override
-    public void mo22135c(double d) {
-        this.f18245b.mo22150c(d);
+    public void mo22136c(double d) {
+        this.f18245b.mo22151c(d);
     }
 
-    public void mo22128k(Double d) {
-        AbstractC5572D0.m22419j(this, d);
+    public void mo22129k(Double d) {
+        AbstractC5572D0.m22420j(this, d);
     }
 }

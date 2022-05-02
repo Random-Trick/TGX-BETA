@@ -11,30 +11,30 @@ public final class C0055e extends AbstractC0069k {
         public AbstractC0042a f186b;
 
         @Override
-        public AbstractC0069k mo42471a() {
+        public AbstractC0069k mo42474a() {
             return new C0055e(this.f185a, this.f186b);
         }
 
         @Override
-        public AbstractC0069k.AbstractC0070a mo42470b(AbstractC0042a aVar) {
+        public AbstractC0069k.AbstractC0070a mo42473b(AbstractC0042a aVar) {
             this.f186b = aVar;
             return this;
         }
 
         @Override
-        public AbstractC0069k.AbstractC0070a mo42469c(AbstractC0069k.EnumC0071b bVar) {
+        public AbstractC0069k.AbstractC0070a mo42472c(AbstractC0069k.EnumC0071b bVar) {
             this.f185a = bVar;
             return this;
         }
     }
 
     @Override
-    public AbstractC0042a mo42473b() {
+    public AbstractC0042a mo42476b() {
         return this.f184b;
     }
 
     @Override
-    public AbstractC0069k.EnumC0071b mo42472c() {
+    public AbstractC0069k.EnumC0071b mo42475c() {
         return this.f183a;
     }
 
@@ -47,13 +47,13 @@ public final class C0055e extends AbstractC0069k {
         }
         AbstractC0069k kVar = (AbstractC0069k) obj;
         AbstractC0069k.EnumC0071b bVar = this.f183a;
-        if (bVar != null ? bVar.equals(kVar.mo42472c()) : kVar.mo42472c() == null) {
+        if (bVar != null ? bVar.equals(kVar.mo42475c()) : kVar.mo42475c() == null) {
             AbstractC0042a aVar = this.f184b;
             if (aVar == null) {
-                if (kVar.mo42473b() == null) {
+                if (kVar.mo42476b() == null) {
                     return true;
                 }
-            } else if (aVar.equals(kVar.mo42473b())) {
+            } else if (aVar.equals(kVar.mo42476b())) {
                 return true;
             }
         }

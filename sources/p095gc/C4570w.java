@@ -21,13 +21,13 @@ public final class C4570w {
         f15014d = atomicReferenceArr;
     }
 
-    public static final void m27317b(C4568v vVar) {
+    public static final void m27319b(C4568v vVar) {
         AtomicReference<C4568v> a;
         C4568v vVar2;
-        C8298k.m12934e(vVar, "segment");
+        C8298k.m12933e(vVar, "segment");
         if (!(vVar.f15009f == null && vVar.f15010g == null)) {
             throw new IllegalArgumentException("Failed requirement.".toString());
-        } else if (!vVar.f15007d && (vVar2 = (a = f15015e.m27318a()).get()) != f15012b) {
+        } else if (!vVar.f15007d && (vVar2 = (a = f15015e.m27320a()).get()) != f15012b) {
             int i = vVar2 != null ? vVar2.f15006c : 0;
             if (i < f15011a) {
                 vVar.f15009f = vVar2;
@@ -40,8 +40,8 @@ public final class C4570w {
         }
     }
 
-    public static final C4568v m27316c() {
-        AtomicReference<C4568v> a = f15015e.m27318a();
+    public static final C4568v m27318c() {
+        AtomicReference<C4568v> a = f15015e.m27320a();
         C4568v vVar = f15012b;
         C4568v andSet = a.getAndSet(vVar);
         if (andSet == vVar) {
@@ -57,9 +57,9 @@ public final class C4570w {
         return andSet;
     }
 
-    public final AtomicReference<C4568v> m27318a() {
+    public final AtomicReference<C4568v> m27320a() {
         Thread currentThread = Thread.currentThread();
-        C8298k.m12935d(currentThread, "Thread.currentThread()");
+        C8298k.m12934d(currentThread, "Thread.currentThread()");
         return f15014d[(int) (currentThread.getId() & (f15013c - 1))];
     }
 }

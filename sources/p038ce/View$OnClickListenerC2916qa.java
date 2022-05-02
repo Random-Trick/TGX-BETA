@@ -46,10 +46,10 @@ public class View$OnClickListenerC2916qa extends AbstractC3204vo<C2918b> impleme
 
         @Override
         public void mo394V2(C2964ra raVar, C9137c cVar, boolean z) {
-            if (raVar.m32835j() == R.id.btn_string) {
-                C4403w.C4406c cVar2 = (C4403w.C4406c) raVar.m32844d();
+            if (raVar.m32838j() == R.id.btn_string) {
+                C4403w.C4406c cVar2 = (C4403w.C4406c) raVar.m32847d();
                 SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
-                View$OnClickListenerC2916qa.this.f9726E0.m27794f(cVar2, spannableStringBuilder, false);
+                View$OnClickListenerC2916qa.this.f9726E0.m27796f(cVar2, spannableStringBuilder, false);
                 cVar.setTextColorId(cVar2.f14593b ? R.id.theme_color_text : R.id.theme_color_textNegative);
                 cVar.setData(spannableStringBuilder);
             }
@@ -57,7 +57,7 @@ public class View$OnClickListenerC2916qa extends AbstractC3204vo<C2918b> impleme
 
         @Override
         public void mo393t2(C2964ra raVar, int i, C7030t1 t1Var) {
-            t1Var.m18058E1(C4403w.m27836q2(R.string.xStrings, raVar.m32833l()));
+            t1Var.m18058E1(C4403w.m27838q2(R.string.xStrings, raVar.m32836l()));
         }
     }
 
@@ -72,83 +72,83 @@ public class View$OnClickListenerC2916qa extends AbstractC3204vo<C2918b> impleme
     }
 
     public interface AbstractC2919c {
-        void mo33025L5(TdApi.LanguagePackInfo languagePackInfo);
+        void mo33028L5(TdApi.LanguagePackInfo languagePackInfo);
     }
 
     public View$OnClickListenerC2916qa(Context context, C10930q6 q6Var) {
         super(context, q6Var);
     }
 
-    public void m33034Hg(TdApi.Object object) {
-        this.f30167b.m2279qb(new TdApi.UpdateLanguagePackStrings("android_x", this.f9726E0.f14587a.f25405id, null), false);
+    public void m33037Hg(TdApi.Object object) {
+        this.f30170b.m2279qb(new TdApi.UpdateLanguagePackStrings("android_x", this.f9726E0.f14587a.f25408id, null), false);
     }
 
-    public boolean m33033Ig(C4403w.C4406c cVar, View view, int i) {
+    public boolean m33036Ig(C4403w.C4406c cVar, View view, int i) {
         switch (i) {
             case R.id.btn_copyLink:
-                C1379j0.m37325i(C4779t2.m25389y1(cVar.f14592a.key), R.string.CopiedLink);
+                C1379j0.m37328i(C4779t2.m25390y1(cVar.f14592a.key), R.string.CopiedLink);
                 break;
             case R.id.btn_copyText:
-                C1379j0.m37325i(((TdApi.LanguagePackStringValueOrdinary) cVar.f14592a.value).value, R.string.CopiedText);
+                C1379j0.m37328i(((TdApi.LanguagePackStringValueOrdinary) cVar.f14592a.value).value, R.string.CopiedText);
                 break;
             case R.id.btn_open:
                 int constructor = cVar.f14592a.value.getConstructor();
                 if (constructor != -249256352) {
                     if (constructor == 1906840261) {
-                        int s1 = C4403w.m27829s1(cVar.f14592a.key);
+                        int s1 = C4403w.m27831s1(cVar.f14592a.key);
                         for (C4403w.C4407d dVar : (cVar.f14593b ? this.f9726E0.f14588b : this.f9726E0.f14589c).f14598b) {
                             int[] iArr = dVar.f14596b;
                             if (iArr != null && iArr.length > 0) {
-                                C1379j0.m37290z0(C4403w.m27844o2(s1, iArr[0]), 0);
+                                C1379j0.m37293z0(C4403w.m27846o2(s1, iArr[0]), 0);
                             }
                         }
                         break;
                     }
                 } else {
-                    C1379j0.m37290z0(((TdApi.LanguagePackStringValueOrdinary) cVar.f14592a.value).value, 1);
+                    C1379j0.m37293z0(((TdApi.LanguagePackStringValueOrdinary) cVar.f14592a.value).value, 1);
                     break;
                 }
                 break;
             case R.id.btn_string:
-                C1405v.m37097x(C4779t2.m25389y1(cVar.f14592a.key));
+                C1405v.m37100x(C4779t2.m25390y1(cVar.f14592a.key));
                 break;
         }
         return true;
     }
 
-    public void m33032Jg() {
+    public void m33035Jg() {
         if (!m9347Sa()) {
-            m33027Og();
-            m33035Gg(this.f9726E0.f14590d, this.f9727F0);
+            m33030Og();
+            m33038Gg(this.f9726E0.f14590d, this.f9727F0);
             m9204n9();
         }
     }
 
-    public void m33031Kg() {
-        this.f9726E0 = C4403w.m27994E0(m9131x9().f9731a);
-        this.f30167b.m2485dd().post(new Runnable() {
+    public void m33034Kg() {
+        this.f9726E0 = C4403w.m27996E0(m9131x9().f9731a);
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2916qa.this.m33032Jg();
+                View$OnClickListenerC2916qa.this.m33035Jg();
             }
         });
     }
 
-    public static boolean m33030Lg(TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized, String str) {
-        if (!(((((!C5070i.m24061i(languagePackStringValuePluralized.zeroValue) && languagePackStringValuePluralized.zeroValue.toLowerCase().contains(str)) || (!C5070i.m24061i(languagePackStringValuePluralized.oneValue) && languagePackStringValuePluralized.oneValue.toLowerCase().contains(str))) || (!C5070i.m24061i(languagePackStringValuePluralized.twoValue) && languagePackStringValuePluralized.twoValue.toLowerCase().contains(str))) || (!C5070i.m24061i(languagePackStringValuePluralized.fewValue) && languagePackStringValuePluralized.fewValue.toLowerCase().contains(str))) || (!C5070i.m24061i(languagePackStringValuePluralized.manyValue) && languagePackStringValuePluralized.manyValue.toLowerCase().contains(str)))) {
-            return !C5070i.m24061i(languagePackStringValuePluralized.otherValue) && languagePackStringValuePluralized.otherValue.toLowerCase().contains(str);
+    public static boolean m33033Lg(TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized, String str) {
+        if (!(((((!C5070i.m24062i(languagePackStringValuePluralized.zeroValue) && languagePackStringValuePluralized.zeroValue.toLowerCase().contains(str)) || (!C5070i.m24062i(languagePackStringValuePluralized.oneValue) && languagePackStringValuePluralized.oneValue.toLowerCase().contains(str))) || (!C5070i.m24062i(languagePackStringValuePluralized.twoValue) && languagePackStringValuePluralized.twoValue.toLowerCase().contains(str))) || (!C5070i.m24062i(languagePackStringValuePluralized.fewValue) && languagePackStringValuePluralized.fewValue.toLowerCase().contains(str))) || (!C5070i.m24062i(languagePackStringValuePluralized.manyValue) && languagePackStringValuePluralized.manyValue.toLowerCase().contains(str)))) {
+            return !C5070i.m24062i(languagePackStringValuePluralized.otherValue) && languagePackStringValuePluralized.otherValue.toLowerCase().contains(str);
         }
         return true;
     }
 
-    public static boolean m33029Mg(String str) {
+    public static boolean m33032Mg(String str) {
         return str != null && (str.startsWith(" ") || str.endsWith(" ") || str.startsWith("\n") || str.endsWith("\n"));
     }
 
     @Override
     public void mo9477Ac() {
         super.mo9477Ac();
-        m33028Ng();
+        m33031Ng();
     }
 
     @Override
@@ -161,20 +161,20 @@ public class View$OnClickListenerC2916qa extends AbstractC3204vo<C2918b> impleme
                 if (constructor != -249256352) {
                     if (constructor == 1906840261) {
                         TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized = (TdApi.LanguagePackStringValuePluralized) cVar.f14592a.value;
-                        if (m33029Mg(languagePackStringValuePluralized.zeroValue) || m33029Mg(languagePackStringValuePluralized.oneValue) || m33029Mg(languagePackStringValuePluralized.twoValue) || m33029Mg(languagePackStringValuePluralized.fewValue) || m33029Mg(languagePackStringValuePluralized.manyValue) || m33029Mg(languagePackStringValuePluralized.otherValue)) {
+                        if (m33032Mg(languagePackStringValuePluralized.zeroValue) || m33032Mg(languagePackStringValuePluralized.oneValue) || m33032Mg(languagePackStringValuePluralized.twoValue) || m33032Mg(languagePackStringValuePluralized.fewValue) || m33032Mg(languagePackStringValuePluralized.manyValue) || m33032Mg(languagePackStringValuePluralized.otherValue)) {
                             arrayList.add(cVar);
                         }
                     }
-                } else if (m33029Mg(((TdApi.LanguagePackStringValueOrdinary) cVar.f14592a.value).value)) {
+                } else if (m33032Mg(((TdApi.LanguagePackStringValueOrdinary) cVar.f14592a.value).value)) {
                     arrayList.add(cVar);
                 }
             }
-            m33035Gg(arrayList, this.f9727F0);
+            m33038Gg(arrayList, this.f9727F0);
             return;
         }
         String lowerCase = str.toLowerCase();
-        if (C5070i.m24061i(lowerCase)) {
-            m33035Gg(this.f9726E0.f14590d, this.f9727F0);
+        if (C5070i.m24062i(lowerCase)) {
+            m33038Gg(this.f9726E0.f14590d, this.f9727F0);
             return;
         }
         ArrayList arrayList2 = new ArrayList();
@@ -188,7 +188,7 @@ public class View$OnClickListenerC2916qa extends AbstractC3204vo<C2918b> impleme
         for (C4403w.C4406c cVar3 : arrayList3) {
             int constructor2 = cVar3.f14592a.value.getConstructor();
             if (constructor2 != -249256352) {
-                if (constructor2 == 1906840261 && m33030Lg((TdApi.LanguagePackStringValuePluralized) cVar3.f14592a.value, lowerCase)) {
+                if (constructor2 == 1906840261 && m33033Lg((TdApi.LanguagePackStringValuePluralized) cVar3.f14592a.value, lowerCase)) {
                     arrayList2.add(cVar3);
                 }
             } else if (((TdApi.LanguagePackStringValueOrdinary) cVar3.f14592a.value).value.toLowerCase().contains(lowerCase)) {
@@ -200,21 +200,21 @@ public class View$OnClickListenerC2916qa extends AbstractC3204vo<C2918b> impleme
             if (cVar4.f14593b) {
                 int constructor3 = cVar4.f14592a.value.getConstructor();
                 if (constructor3 != -249256352) {
-                    if (constructor3 == 1906840261 && cVar4.f14593b && m33030Lg(cVar4.m27791a(this.f9726E0.f14589c.f14598b), lowerCase)) {
+                    if (constructor3 == 1906840261 && cVar4.f14593b && m33033Lg(cVar4.m27793a(this.f9726E0.f14589c.f14598b), lowerCase)) {
                         arrayList2.add(cVar4);
                     }
-                } else if (cVar4.f14593b && cVar4.m27790b().value.toLowerCase().contains(lowerCase)) {
+                } else if (cVar4.f14593b && cVar4.m27792b().value.toLowerCase().contains(lowerCase)) {
                     arrayList2.add(cVar4);
                 }
             }
         }
-        m33035Gg(arrayList2, this.f9727F0);
+        m33038Gg(arrayList2, this.f9727F0);
     }
 
     @Override
-    public void mo31317G1(C4403w.C4405b bVar, C4403w.C4406c cVar) {
-        this.f30167b.m2270r4().m14783o(new TdApi.SetCustomLanguagePackString(bVar.f14587a.f25405id, cVar.f14593b ? cVar.f14592a : new TdApi.LanguagePackString(cVar.m27789c(), C4403w.m27879g())), this.f30167b.m2392ja());
-        String c = cVar.m27789c();
+    public void mo31319G1(C4403w.C4405b bVar, C4403w.C4406c cVar) {
+        this.f30170b.m2270r4().m14783o(new TdApi.SetCustomLanguagePackString(bVar.f14587a.f25408id, cVar.f14593b ? cVar.f14592a : new TdApi.LanguagePackString(cVar.m27791c(), C4403w.m27881g())), this.f30170b.m2392ja());
+        String c = cVar.m27791c();
         char c2 = 65535;
         int hashCode = c.hashCode();
         if (hashCode != -412800396) {
@@ -229,22 +229,22 @@ public class View$OnClickListenerC2916qa extends AbstractC3204vo<C2918b> impleme
             c2 = 2;
         }
         if (c2 == 0) {
-            m33026Pg();
-            m9131x9().f9732b.mo33025L5(bVar.f14587a);
+            m33029Pg();
+            m9131x9().f9732b.mo33028L5(bVar.f14587a);
         } else if (c2 == 1) {
-            m9131x9().f9732b.mo33025L5(bVar.f14587a);
+            m9131x9().f9732b.mo33028L5(bVar.f14587a);
         }
         if (c.startsWith("language_")) {
             this.f9728G0 = true;
-        } else if (C4403w.m27860k2().equals(bVar.f14587a.f25405id)) {
-            C10930q6 q6Var = this.f30167b;
-            String str = bVar.f14587a.f25405id;
+        } else if (C4403w.m27862k2().equals(bVar.f14587a.f25408id)) {
+            C10930q6 q6Var = this.f30170b;
+            String str = bVar.f14587a.f25408id;
             TdApi.LanguagePackString[] languagePackStringArr = new TdApi.LanguagePackString[1];
-            languagePackStringArr[0] = cVar.f14593b ? cVar.f14592a : new TdApi.LanguagePackString(cVar.m27789c(), C4403w.m27879g());
+            languagePackStringArr[0] = cVar.f14593b ? cVar.f14592a : new TdApi.LanguagePackString(cVar.m27791c(), C4403w.m27881g());
             q6Var.m2279qb(new TdApi.UpdateLanguagePackStrings("android_x", str, languagePackStringArr), false);
         }
-        this.f9725D0.m34133r3(cVar);
-        m33027Og();
+        this.f9725D0.m34136r3(cVar);
+        m33030Og();
     }
 
     @Override
@@ -252,8 +252,8 @@ public class View$OnClickListenerC2916qa extends AbstractC3204vo<C2918b> impleme
         return this.f9729H0;
     }
 
-    public final void m33035Gg(java.util.List<p082fd.C4403w.C4406c> r19, boolean r20) {
-        throw new UnsupportedOperationException("Method not decompiled: p038ce.View$OnClickListenerC2916qa.m33035Gg(java.util.List, boolean):void");
+    public final void m33038Gg(java.util.List<p082fd.C4403w.C4406c> r19, boolean r20) {
+        throw new UnsupportedOperationException("Method not decompiled: p038ce.View$OnClickListenerC2916qa.m33038Gg(java.util.List, boolean):void");
     }
 
     @Override
@@ -262,12 +262,12 @@ public class View$OnClickListenerC2916qa extends AbstractC3204vo<C2918b> impleme
             super.mo419J(i, view);
         } else if (this.f9726E0 != null) {
             this.f9727F0 = !this.f9727F0;
-            m33027Og();
-            m31303kg().m39496D1();
-            m33028Ng();
+            m33030Og();
+            m31305kg().m39499D1();
+            m33031Ng();
             C4403w.C4405b bVar = this.f9726E0;
             if (bVar != null) {
-                m33035Gg(bVar.f14590d, this.f9727F0);
+                m33038Gg(bVar.f14590d, this.f9727F0);
             }
         }
     }
@@ -277,28 +277,28 @@ public class View$OnClickListenerC2916qa extends AbstractC3204vo<C2918b> impleme
         return true;
     }
 
-    public final void m33028Ng() {
-        View$OnClickListenerC9170d1 d1Var = this.f30156R;
+    public final void m33031Ng() {
+        View$OnClickListenerC9170d1 d1Var = this.f30159R;
         if (d1Var != null) {
-            d1Var.m10097P3(mo418W9(), R.id.menu_btn_toggle, 0, this.f9727F0 ? R.drawable.baseline_indeterminate_check_box_24 : R.drawable.baseline_check_box_outline_blank_24);
+            d1Var.m10096P3(mo418W9(), R.id.menu_btn_toggle, 0, this.f9727F0 ? R.drawable.baseline_indeterminate_check_box_24 : R.drawable.baseline_check_box_outline_blank_24);
         }
     }
 
-    public final void m33027Og() {
+    public final void m33030Og() {
         String str;
-        int e = this.f9726E0.m27795e();
+        int e = this.f9726E0.m27797e();
         int size = this.f9726E0.f14590d.size();
         C9289s sVar = this.f9729H0;
         if (this.f9727F0) {
-            str = C4403w.m27844o2(R.string.TranslationsMissing, e);
+            str = C4403w.m27846o2(R.string.TranslationsMissing, e);
         } else {
             int i = size - e;
-            str = C4403w.m27865j1(R.string.format_languageStatus, C4403w.m27844o2(R.string.xStrings, i), Integer.valueOf((int) Math.floor((i / size) * 100.0f)));
+            str = C4403w.m27867j1(R.string.format_languageStatus, C4403w.m27846o2(R.string.xStrings, i), Integer.valueOf((int) Math.floor((i / size) * 100.0f)));
         }
         sVar.setSubtitle(str);
     }
 
-    public final void m33026Pg() {
+    public final void m33029Pg() {
         this.f9729H0.setTitle(m9131x9().f9731a.nativeName);
     }
 
@@ -310,7 +310,7 @@ public class View$OnClickListenerC2916qa extends AbstractC3204vo<C2918b> impleme
     @Override
     public void mo9343T5(int i, int i2) {
         if (i == 0) {
-            this.f9726E0.m27792h();
+            this.f9726E0.m27794h();
         } else if (i == 2) {
             Iterator<C4403w.C4406c> it = this.f9726E0.f14590d.iterator();
             while (true) {
@@ -318,13 +318,13 @@ public class View$OnClickListenerC2916qa extends AbstractC3204vo<C2918b> impleme
                     break;
                 }
                 C4403w.C4406c next = it.next();
-                if (C4403w.m27829s1(next.m27789c()) == i2) {
-                    next.m27787e(this.f9726E0);
+                if (C4403w.m27831s1(next.m27791c()) == i2) {
+                    next.m27789e(this.f9726E0);
                     break;
                 }
             }
         }
-        m33027Og();
+        m33030Og();
         super.mo9343T5(i, i2);
     }
 
@@ -335,17 +335,17 @@ public class View$OnClickListenerC2916qa extends AbstractC3204vo<C2918b> impleme
 
     @Override
     public CharSequence mo9313X9() {
-        return C4403w.m27869i1(this.f9727F0 ? R.string.ToolsUntranslatedTitle : R.string.ToolsAllTitle);
+        return C4403w.m27871i1(this.f9727F0 ? R.string.ToolsUntranslatedTitle : R.string.ToolsAllTitle);
     }
 
     @Override
     public void mo417Z8() {
         super.mo417Z8();
         if (this.f9728G0) {
-            this.f30167b.m2270r4().m14783o(new TdApi.SetAlarm(), new Client.AbstractC7865g() {
+            this.f30170b.m2270r4().m14783o(new TdApi.SetAlarm(), new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
-                    View$OnClickListenerC2916qa.this.m33034Hg(object);
+                    View$OnClickListenerC2916qa.this.m33037Hg(object);
                 }
             });
             this.f9728G0 = false;
@@ -365,10 +365,10 @@ public class View$OnClickListenerC2916qa extends AbstractC3204vo<C2918b> impleme
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.btn_string) {
-            final C4403w.C4406c cVar = (C4403w.C4406c) ((C2964ra) view.getTag()).m32844d();
-            if (m9131x9().f9731a.f25405id.startsWith("X")) {
+            final C4403w.C4406c cVar = (C4403w.C4406c) ((C2964ra) view.getTag()).m32847d();
+            if (m9131x9().f9731a.f25408id.startsWith("X")) {
                 m9234id();
-                C3183v6 v6Var = new C3183v6(this.f30165a, this.f30167b);
+                C3183v6 v6Var = new C3183v6(this.f30168a, this.f30170b);
                 v6Var.m9476Ad(new C3183v6.C3185b(this, this.f9726E0, cVar));
                 m9291ac(v6Var);
                 return;
@@ -376,39 +376,39 @@ public class View$OnClickListenerC2916qa extends AbstractC3204vo<C2918b> impleme
             C5320c cVar2 = new C5320c(3);
             C5320c cVar3 = new C5320c(3);
             C5146u0 u0Var = new C5146u0(3);
-            cVar2.m23284a(R.id.btn_string);
-            u0Var.m23816a(R.string.ToolsOpenOnPlatform);
-            cVar3.m23284a(R.drawable.baseline_open_in_browser_24);
-            cVar2.m23284a(R.id.btn_copyLink);
-            u0Var.m23816a(R.string.CopyLink);
-            cVar3.m23284a(R.drawable.baseline_link_24);
+            cVar2.m23285a(R.id.btn_string);
+            u0Var.m23817a(R.string.ToolsOpenOnPlatform);
+            cVar3.m23285a(R.drawable.baseline_open_in_browser_24);
+            cVar2.m23285a(R.id.btn_copyLink);
+            u0Var.m23817a(R.string.CopyLink);
+            cVar3.m23285a(R.drawable.baseline_link_24);
             if (cVar.f14592a.value instanceof TdApi.LanguagePackStringValueOrdinary) {
-                cVar2.m23284a(R.id.btn_copyText);
-                u0Var.m23816a(R.string.ToolsCopyString);
-                cVar3.m23284a(R.drawable.baseline_content_copy_24);
+                cVar2.m23285a(R.id.btn_copyText);
+                u0Var.m23817a(R.string.ToolsCopyString);
+                cVar3.m23285a(R.drawable.baseline_content_copy_24);
             }
-            cVar2.m23284a(R.id.btn_open);
-            u0Var.m23816a(R.string.ToolsShowToast);
-            cVar3.m23284a(R.drawable.baseline_visibility_24);
+            cVar2.m23285a(R.id.btn_open);
+            u0Var.m23817a(R.string.ToolsShowToast);
+            cVar3.m23285a(R.drawable.baseline_visibility_24);
             String str = cVar.f14592a.key;
             SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(str);
-            spannableStringBuilder.setSpan(new C5132o(C1389o.m37261h(), R.id.theme_color_textNeutral).m23852j(new TdApi.TextEntityTypeItalic()), 0, str.length(), 33);
-            m9261ee(Spannable.Factory.getInstance().newSpannable(spannableStringBuilder), cVar2.m23280e(), u0Var.m23813d(), null, cVar3.m23280e(), new AbstractC5117h0() {
+            spannableStringBuilder.setSpan(new C5132o(C1389o.m37264h(), R.id.theme_color_textNeutral).m23853j(new TdApi.TextEntityTypeItalic()), 0, str.length(), 33);
+            m9261ee(Spannable.Factory.getInstance().newSpannable(spannableStringBuilder), cVar2.m23281e(), u0Var.m23814d(), null, cVar3.m23281e(), new AbstractC5117h0() {
                 @Override
                 public final boolean mo493A3(View view2, int i) {
                     boolean Ig;
-                    Ig = View$OnClickListenerC2916qa.this.m33033Ig(cVar, view2, i);
+                    Ig = View$OnClickListenerC2916qa.this.m33036Ig(cVar, view2, i);
                     return Ig;
                 }
 
                 @Override
                 public boolean mo492Q() {
-                    return C5115g0.m23935a(this);
+                    return C5115g0.m23936a(this);
                 }
 
                 @Override
                 public Object mo491b2(int i) {
-                    return C5115g0.m23934b(this, i);
+                    return C5115g0.m23935b(this, i);
                 }
             });
         }
@@ -417,36 +417,36 @@ public class View$OnClickListenerC2916qa extends AbstractC3204vo<C2918b> impleme
     @Override
     public void mo414p0(int i, View$OnClickListenerC9170d1 d1Var, LinearLayout linearLayout) {
         if (i == R.id.menu_clear) {
-            d1Var.m10096Q1(linearLayout, mo9237ia(), mo9472B9());
+            d1Var.m10095Q1(linearLayout, mo9237ia(), mo9472B9());
         } else if (i != R.id.menu_editLangPack) {
             super.mo414p0(i, d1Var, linearLayout);
         } else {
-            d1Var.m10104N1(linearLayout, R.id.menu_btn_toggle, R.drawable.baseline_check_box_outline_blank_24, R.id.theme_color_headerIcon, this, C1357a0.m37541i(49.0f));
-            d1Var.m10054i2(linearLayout, this);
+            d1Var.m10103N1(linearLayout, R.id.menu_btn_toggle, R.drawable.baseline_check_box_outline_blank_24, R.id.theme_color_headerIcon, this, C1357a0.m37544i(49.0f));
+            d1Var.m10053i2(linearLayout, this);
         }
     }
 
     @Override
-    public void mo30633rg(Context context, CustomRecyclerView customRecyclerView) {
+    public void mo30635rg(Context context, CustomRecyclerView customRecyclerView) {
         C9289s sVar = new C9289s(context);
         this.f9729H0 = sVar;
         sVar.setThemedTextColor(this);
-        this.f9729H0.m9632D1(C1357a0.m37541i(49.0f) * 2, true);
-        m33026Pg();
+        this.f9729H0.m9631D1(C1357a0.m37544i(49.0f) * 2, true);
+        m33029Pg();
         this.f9729H0.setSubtitle(m9131x9().f9731a.name);
         this.f9725D0 = new C2917a(this);
         customRecyclerView.setItemAnimator(null);
         customRecyclerView.setAdapter(this.f9725D0);
-        C4383l.m28059a().m28058b(new Runnable() {
+        C4383l.m28061a().m28060b(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2916qa.this.m33031Kg();
+                View$OnClickListenerC2916qa.this.m33034Kg();
             }
         });
     }
 
     @Override
     public void mo409xc() {
-        m33035Gg(this.f9726E0.f14590d, this.f9727F0);
+        m33038Gg(this.f9726E0.f14590d, this.f9727F0);
     }
 }

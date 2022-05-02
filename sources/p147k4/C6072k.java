@@ -66,7 +66,7 @@ public final class C6072k extends AbstractC6069i {
         this.f19296b = parcel.readInt();
         this.f19297c = parcel.readInt();
         this.f19293M = parcel.readInt();
-        this.f19294N = (int[]) C1216l0.m37968j(parcel.createIntArray());
-        this.f19295O = (int[]) C1216l0.m37968j(parcel.createIntArray());
+        this.f19294N = (int[]) C1216l0.m37971j(parcel.createIntArray());
+        this.f19295O = (int[]) C1216l0.m37971j(parcel.createIntArray());
     }
 }

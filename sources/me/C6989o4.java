@@ -14,10 +14,10 @@ import p139jb.AbstractC5911c;
 import p364zd.C11524j;
 
 public class C6989o4 extends View implements AbstractC5911c {
-    public Drawable f22152M;
-    public Drawable f22153a;
-    public Drawable f22154b;
-    public Drawable f22155c;
+    public Drawable f22155M;
+    public Drawable f22156a;
+    public Drawable f22157b;
+    public Drawable f22158c;
 
     public C6989o4(Context context) {
         super(context);
@@ -25,25 +25,25 @@ public class C6989o4 extends View implements AbstractC5911c {
     }
 
     public static void m18157a(Canvas canvas, RectF rectF, Drawable drawable, Paint paint) {
-        C1362c.m37487b(canvas, drawable, rectF.centerX() - (drawable.getMinimumWidth() / 2), rectF.centerY() - (drawable.getMinimumHeight() / 2), paint);
+        C1362c.m37490b(canvas, drawable, rectF.centerX() - (drawable.getMinimumWidth() / 2), rectF.centerY() - (drawable.getMinimumHeight() / 2), paint);
     }
 
     @Override
     public void mo4501a3() {
-        if (this.f22153a != null) {
-            this.f22153a = null;
-            this.f22155c = null;
-            this.f22152M = null;
-            this.f22154b = null;
+        if (this.f22156a != null) {
+            this.f22156a = null;
+            this.f22158c = null;
+            this.f22155M = null;
+            this.f22157b = null;
         }
     }
 
     public final void m18156b() {
-        if (this.f22153a == null) {
-            this.f22153a = C1362c.m37482g(getResources(), R.drawable.baseline_star_24);
-            this.f22155c = C1362c.m37482g(getResources(), R.drawable.baseline_account_balance_wallet_24);
-            this.f22152M = C1362c.m37482g(getResources(), R.drawable.baseline_location_on_24);
-            this.f22154b = C1362c.m37482g(getResources(), R.drawable.baseline_favorite_20);
+        if (this.f22156a == null) {
+            this.f22156a = C1362c.m37485g(getResources(), R.drawable.baseline_star_24);
+            this.f22158c = C1362c.m37485g(getResources(), R.drawable.baseline_account_balance_wallet_24);
+            this.f22155M = C1362c.m37485g(getResources(), R.drawable.baseline_location_on_24);
+            this.f22157b = C1362c.m37485g(getResources(), R.drawable.baseline_favorite_20);
         }
     }
 
@@ -52,13 +52,13 @@ public class C6989o4 extends View implements AbstractC5911c {
         m18156b();
         int measuredWidth = getMeasuredWidth() / 2;
         int measuredHeight = getMeasuredHeight() / 2;
-        int i = C1357a0.m37541i(36.0f);
-        int i2 = C1357a0.m37541i(2.0f);
-        int i3 = C1357a0.m37541i(3.0f);
+        int i = C1357a0.m37544i(36.0f);
+        int i2 = C1357a0.m37544i(2.0f);
+        int i3 = C1357a0.m37544i(3.0f);
         int c = C11524j.m196c();
-        int i4 = C1357a0.m37541i(2.0f);
-        Paint i5 = C1410y.m37035i();
-        RectF a0 = C1410y.m37050a0();
+        int i4 = C1357a0.m37544i(2.0f);
+        Paint i5 = C1410y.m37038i();
+        RectF a0 = C1410y.m37053a0();
         int i6 = measuredWidth - i2;
         int i7 = i4 / 2;
         a0.left = (i6 - i) + i7;
@@ -70,21 +70,21 @@ public class C6989o4 extends View implements AbstractC5911c {
         a0.bottom = f2;
         float f3 = i3;
         float f4 = i4;
-        canvas.drawRoundRect(a0, f3, f3, C1410y.m37053Y(c, f4));
-        m18157a(canvas, a0, this.f22153a, i5);
+        canvas.drawRoundRect(a0, f3, f3, C1410y.m37056Y(c, f4));
+        m18157a(canvas, a0, this.f22156a, i5);
         int i9 = measuredHeight + i2;
         a0.top = i9 + i7;
         a0.bottom = (i9 + i) - i7;
-        canvas.drawRoundRect(a0, f3, f3, C1410y.m37053Y(c, f4));
-        m18157a(canvas, a0, this.f22155c, i5);
+        canvas.drawRoundRect(a0, f3, f3, C1410y.m37056Y(c, f4));
+        m18157a(canvas, a0, this.f22158c, i5);
         int i10 = measuredWidth + i2;
         a0.left = i10 + i7;
         a0.right = (i10 + i) - i7;
-        canvas.drawRoundRect(a0, f3, f3, C1410y.m37053Y(c, f4));
-        m18157a(canvas, a0, this.f22152M, i5);
+        canvas.drawRoundRect(a0, f3, f3, C1410y.m37056Y(c, f4));
+        m18157a(canvas, a0, this.f22155M, i5);
         a0.top = f;
         a0.bottom = f2;
-        canvas.drawRoundRect(a0, f3, f3, C1410y.m37053Y(c, f4));
-        m18157a(canvas, a0, this.f22154b, i5);
+        canvas.drawRoundRect(a0, f3, f3, C1410y.m37056Y(c, f4));
+        m18157a(canvas, a0, this.f22157b, i5);
     }
 }

@@ -134,7 +134,7 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
     }
 
     public interface AbstractC5394d {
-        boolean mo22863a(View view, RunnableC5390g gVar, C5455v0 v0Var, HandlerC10770jj.C10788q qVar);
+        boolean mo22864a(View view, RunnableC5390g gVar, C5455v0 v0Var, HandlerC10770jj.C10788q qVar);
     }
 
     public static class C5395e extends IllegalStateException {
@@ -145,7 +145,7 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
     }
 
     public interface AbstractC5397g {
-        int mo9971a(int i, int i2, int i3, int i4);
+        int mo9970a(int i, int i2, int i3, int i4);
     }
 
     public static class C5398h {
@@ -161,11 +161,11 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
             this.f17782d = iVar;
         }
 
-        public boolean m22862a() {
+        public boolean m22863a() {
             return this.f17782d != null;
         }
 
-        public boolean m22861b(int i) {
+        public boolean m22862b(int i) {
             return i >= this.f17780b && i <= this.f17781c;
         }
     }
@@ -191,7 +191,7 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
 
             @Override
             public void mo35Y0(int i, float f, C3950k kVar) {
-                C3953l.m29526a(this, i, f, kVar);
+                C3953l.m29528a(this, i, f, kVar);
             }
         }
 
@@ -201,66 +201,66 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
 
         @Override
         public void mo4501a3() {
-            this.f17785O.m29588c();
+            this.f17785O.m29590c();
         }
 
-        public void m22855f(C5455v0 v0Var, int i, int i2, int i3, boolean z) {
+        public void m22856f(C5455v0 v0Var, int i, int i2, int i3, boolean z) {
             TextPaint o0;
             int i4;
             this.f17788b++;
-            TdApi.TextEntity m = v0Var.m22681m();
+            TdApi.TextEntity m = v0Var.m22682m();
             if (m != null) {
                 if (this.f17789c == -1) {
                     this.f17789c = m.offset;
                 }
                 this.f17783M = (m.offset + m.length) - this.f17789c;
             }
-            int i5 = C1357a0.m37541i(1.0f);
-            int i6 = C1357a0.m37541i(3.0f);
-            Paint.FontMetricsInt T = RunnableC5390g.this.m22970T(RunnableC5390g.this.m22915o0(v0Var.m22687g()).getTextSize());
+            int i5 = C1357a0.m37544i(1.0f);
+            int i6 = C1357a0.m37544i(3.0f);
+            Paint.FontMetricsInt T = RunnableC5390g.this.m22971T(RunnableC5390g.this.m22916o0(v0Var.m22688g()).getTextSize());
             if (z) {
-                int f0 = RunnableC5390g.this.m22941f0(v0Var.m22684j());
+                int f0 = RunnableC5390g.this.m22942f0(v0Var.m22685j());
                 int i7 = i + (RunnableC5390g.this.f17736a / 2);
                 int i8 = f0 / 2;
-                i4 = v0Var.m22708D(i7 - i8, i7 + i8, 0);
+                i4 = v0Var.m22709D(i7 - i8, i7 + i8, 0);
             } else {
-                i4 = v0Var.m22708D(i, i2, i3);
+                i4 = v0Var.m22709D(i, i2, i3);
             }
-            int r = v0Var.m22676r();
-            float p = v0Var.m22678p();
-            RectF a0 = C1410y.m37050a0();
+            int r = v0Var.m22677r();
+            float p = v0Var.m22679p();
+            RectF a0 = C1410y.m37053a0();
             float f = i4 - i5;
             a0.left = f;
             a0.top = r - i5;
             float f2 = f + p;
             float f3 = i5;
             a0.right = f2 + f3 + f3;
-            a0.bottom = r + (v0Var.m22686h() == -1 ? T.descent - T.ascent : v0Var.m22686h()) + i5;
-            a0.offset(0.0f, o0.baselineShift + RunnableC5390g.this.m22924l0(v0Var));
+            a0.bottom = r + (v0Var.m22687h() == -1 ? T.descent - T.ascent : v0Var.m22687h()) + i5;
+            a0.offset(0.0f, o0.baselineShift + RunnableC5390g.this.m22925l0(v0Var));
             float f4 = i6;
             this.f17784N.addRoundRect(a0, f4, f4, Path.Direction.CW);
         }
 
-        public void m22854g() {
+        public void m22855g() {
         }
 
-        public void m22853h(Canvas canvas, @Deprecated int i) {
-            canvas.drawPath(this.f17784N, C1410y.m37039g(C5064d.m24131a(1.0f - m22852i(), i)));
+        public void m22854h(Canvas canvas, @Deprecated int i) {
+            canvas.drawPath(this.f17784N, C1410y.m37042g(C5064d.m24132a(1.0f - m22853i(), i)));
         }
 
-        public float m22852i() {
-            return this.f17785O.m29584g();
+        public float m22853i() {
+            return this.f17785O.m29586g();
         }
 
-        public boolean m22851j() {
-            return m22849l();
+        public boolean m22852j() {
+            return m22850l();
         }
 
-        public void m22850k(boolean z, boolean z2) {
+        public void m22851k(boolean z, boolean z2) {
         }
 
-        public boolean m22849l() {
-            return this.f17785O.m29584g() != 1.0f;
+        public boolean m22850l() {
+            return this.f17785O.m29586g() != 1.0f;
         }
     }
 
@@ -268,24 +268,24 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         this(str, i, w0Var, kVar, i2, null, null, i3, l0VarArr, null, null);
     }
 
-    public static void m23008A(Canvas canvas, Path path, int i, int i2) {
+    public static void m23009A(Canvas canvas, Path path, int i, int i2) {
         if (Color.alpha(i2) > 0) {
-            canvas.drawPath(path, C1410y.m37053Y(i2, C1357a0.m37541i(1.0f)));
+            canvas.drawPath(path, C1410y.m37056Y(i2, C1357a0.m37544i(1.0f)));
         }
         if (Color.alpha(i) > 0) {
-            canvas.drawPath(path, C1410y.m37039g(i));
+            canvas.drawPath(path, C1410y.m37042g(i));
         }
     }
 
-    public static boolean m23005B0(int i, boolean z) {
-        return m23003C0(i, Character.getType(i), z);
+    public static boolean m23006B0(int i, boolean z) {
+        return m23004C0(i, Character.getType(i), z);
     }
 
-    public static boolean m23003C0(int i, int i2, boolean z) {
-        return m23001D0(i, i2, z, null);
+    public static boolean m23004C0(int i, int i2, boolean z) {
+        return m23002D0(i, i2, z, null);
     }
 
-    public static boolean m23001D0(int i, int i2, boolean z, char[] cArr) {
+    public static boolean m23002D0(int i, int i2, boolean z, char[] cArr) {
         if (!(i == 34 || i == 160 || i == 183 || i == 39 || i == 40)) {
             if (i != 95) {
                 if (i != 96) {
@@ -306,18 +306,18 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return false;
     }
 
-    public boolean m22999E0(String str, ArrayList arrayList, CharSequence charSequence, CharSequence charSequence2, C5088i iVar, int i, int i2) {
+    public boolean m23000E0(String str, ArrayList arrayList, CharSequence charSequence, CharSequence charSequence2, C5088i iVar, int i, int i2) {
         int i3 = this.f17751m0;
         if (i > i3) {
-            m22946d1(str, i3, i, arrayList, this.f17753o0, false);
+            m22947d1(str, i3, i, arrayList, this.f17753o0, false);
         }
         int i4 = i + i2;
-        m22959Y0(str, charSequence2, iVar, i, i4, arrayList, this.f17753o0);
+        m22960Y0(str, charSequence2, iVar, i, i4, arrayList, this.f17753o0);
         this.f17751m0 = i4;
         return true;
     }
 
-    public static int m22997F0(String str, int i, int i2, char[] cArr) {
+    public static int m22998F0(String str, int i, int i2, char[] cArr) {
         if (i >= i2) {
             return -1;
         }
@@ -325,7 +325,7 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         while (i3 > i) {
             int codePointBefore = str.codePointBefore(i3);
             int type = Character.getType(codePointBefore);
-            if (i3 < i2 && m23001D0(codePointBefore, type, true, cArr)) {
+            if (i3 < i2 && m23002D0(codePointBefore, type, true, cArr)) {
                 return Math.max(i, i3);
             }
             i3 -= Character.charCount(codePointBefore);
@@ -333,13 +333,13 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return -1;
     }
 
-    public static TdApi.TextEntity[] m22996G(String str, int i) {
+    public static TdApi.TextEntity[] m22997G(String str, int i) {
         TdApi.TextEntity[] C0 = C7321e.m17014C0(str);
         if (C0 != null && C0.length > 0) {
             ArrayList arrayList = null;
             int i2 = 0;
             for (TdApi.TextEntity textEntity : C0) {
-                if (m22928k(textEntity, i)) {
+                if (m22929k(textEntity, i)) {
                     if (arrayList == null) {
                         arrayList = new ArrayList(C0.length - i2);
                     }
@@ -357,7 +357,7 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return null;
     }
 
-    public static boolean m22992I(String str, int i, int i2) {
+    public static boolean m22993I(String str, int i, int i2) {
         while (i < i2) {
             int codePointAt = str.codePointAt(i);
             if (codePointAt == 10) {
@@ -368,7 +368,7 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return false;
     }
 
-    public static AbstractC5411l0[] m22991I0(String str, int i, AbstractC5411l0[] l0VarArr, C10930q6 q6Var, HandlerC10770jj.C10788q qVar) {
+    public static AbstractC5411l0[] m22992I0(String str, int i, AbstractC5411l0[] l0VarArr, C10930q6 q6Var, HandlerC10770jj.C10788q qVar) {
         TdApi.TextEntity[] C0;
         if (l0VarArr != null && l0VarArr.length > 0) {
             return l0VarArr;
@@ -377,7 +377,7 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
             ArrayList arrayList = null;
             int i2 = 0;
             for (TdApi.TextEntity textEntity : C0) {
-                if (m22928k(textEntity, i)) {
+                if (m22929k(textEntity, i)) {
                     if (arrayList == null) {
                         arrayList = new ArrayList(C0.length - i2);
                     }
@@ -395,19 +395,19 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return null;
     }
 
-    public static boolean m22983M0(CharSequence charSequence) {
-        return !C5070i.m24061i(charSequence) && m22981N0(charSequence, 0, charSequence.length());
+    public static boolean m22984M0(CharSequence charSequence) {
+        return !C5070i.m24062i(charSequence) && m22982N0(charSequence, 0, charSequence.length());
     }
 
-    public static boolean m22981N0(CharSequence charSequence, int i, int i2) {
-        if (C5070i.m24061i(charSequence)) {
+    public static boolean m22982N0(CharSequence charSequence, int i, int i2) {
+        if (C5070i.m24062i(charSequence)) {
             return false;
         }
         int max = Math.max(0, i);
         int min = Math.min(charSequence.length(), i2);
         while (max < min) {
             int codePointAt = Character.codePointAt(charSequence, max);
-            if (m22975Q0(codePointAt)) {
+            if (m22976Q0(codePointAt)) {
                 return true;
             }
             max += Character.charCount(codePointAt);
@@ -415,13 +415,13 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return false;
     }
 
-    public static boolean m22979O0(String str, int i, int i2) {
+    public static boolean m22980O0(String str, int i, int i2) {
         if (i2 - i <= 0) {
             return false;
         }
         while (i < i2) {
             int codePointAt = str.codePointAt(i);
-            if (!m22975Q0(codePointAt)) {
+            if (!m22976Q0(codePointAt)) {
                 return false;
             }
             i += Character.charCount(codePointAt);
@@ -429,19 +429,19 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return false;
     }
 
-    public static boolean m22975Q0(int i) {
-        return m22973R0(i) || (i >= 3328 && i <= 3455) || ((i >= 1536 && i <= 1791) || ((i >= 1424 && i <= 1535) || (i >= 65280 && i <= 65280)));
+    public static boolean m22976Q0(int i) {
+        return m22974R0(i) || (i >= 3328 && i <= 3455) || ((i >= 1536 && i <= 1791) || ((i >= 1424 && i <= 1535) || (i >= 65280 && i <= 65280)));
     }
 
-    public static int m22974R() {
-        return C1357a0.m37541i(4.0f);
+    public static int m22975R() {
+        return C1357a0.m37544i(4.0f);
     }
 
-    public static boolean m22973R0(int i) {
+    public static boolean m22974R0(int i) {
         return (i >= 12352 && i <= 12447) || (i >= 12448 && i <= 12543) || ((i >= 12544 && i <= 12591) || ((i >= 44032 && i <= 55215) || ((i >= 11904 && i <= 40959) || (i >= 131072 && i <= 195103))));
     }
 
-    public static boolean m22928k(TdApi.TextEntity textEntity, int i) {
+    public static boolean m22929k(TdApi.TextEntity textEntity, int i) {
         if (i == 15) {
             return true;
         }
@@ -463,8 +463,8 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         }
     }
 
-    public static AbstractC5411l0[] m22911p1(CharSequence charSequence, boolean z, C10930q6 q6Var, HandlerC10770jj.C10788q qVar) {
-        TdApi.TextEntity[] x5 = C4779t2.m25392x5(charSequence, z);
+    public static AbstractC5411l0[] m22912p1(CharSequence charSequence, boolean z, C10930q6 q6Var, HandlerC10770jj.C10788q qVar) {
+        TdApi.TextEntity[] x5 = C4779t2.m25393x5(charSequence, z);
         if (x5 == null || x5.length <= 0) {
             return null;
         }
@@ -476,7 +476,7 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return l0VarArr;
     }
 
-    public static boolean m22909q0(String str, int i, int i2) {
+    public static boolean m22910q0(String str, int i, int i2) {
         while (i < i2) {
             int codePointAt = str.codePointAt(i);
             if (Character.getType(codePointAt) == 12) {
@@ -487,17 +487,17 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return false;
     }
 
-    public static int m22902t0(String str, int i) {
-        return m22898v0(str, i, null);
+    public static int m22903t0(String str, int i) {
+        return m22899v0(str, i, null);
     }
 
-    public static int m22900u0(String str, int i, int i2, char[] cArr) {
+    public static int m22901u0(String str, int i, int i2, char[] cArr) {
         if (i >= i2) {
             return -1;
         }
         while (i < i2) {
             int codePointAt = str.codePointAt(i);
-            if (m23001D0(codePointAt, Character.getType(codePointAt), true, cArr)) {
+            if (m23002D0(codePointAt, Character.getType(codePointAt), true, cArr)) {
                 return i;
             }
             i += Character.charCount(codePointAt);
@@ -505,16 +505,16 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return -1;
     }
 
-    public static int m22898v0(String str, int i, char[] cArr) {
-        return m22900u0(str, i, str.length(), cArr);
+    public static int m22899v0(String str, int i, char[] cArr) {
+        return m22901u0(str, i, str.length(), cArr);
     }
 
-    public boolean m23007A0(int i) {
+    public boolean m23008A0(int i) {
         C5398h hVar = this.f17763y0;
-        return hVar != null && hVar.m22861b(i);
+        return hVar != null && hVar.m22862b(i);
     }
 
-    public final int m23006B(int i, Canvas canvas, int i2, int i3, int i4, int i5, float f, AbstractC5408k kVar, C6238b bVar, int i6) {
+    public final int m23007B(int i, Canvas canvas, int i2, int i3, int i4, int i5, float f, AbstractC5408k kVar, C6238b bVar, int i6) {
         C5455v0 v0Var = this.f17730U.get(i);
         int size = this.f17730U.size();
         C5455v0 v0Var2 = v0Var;
@@ -526,30 +526,30 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
                 break;
             }
             C5455v0 v0Var3 = this.f17730U.get(i7);
-            if (!v0Var2.m22694R(v0Var3)) {
+            if (!v0Var2.m22695R(v0Var3)) {
                 break;
             }
             i8++;
             v0Var2 = v0Var3;
         }
-        int l0 = i5 + m22924l0(v0Var);
-        C5399i J = m22990J(v0Var.m22681m());
-        float i9 = J != null ? J.m22852i() * f : f;
+        int l0 = i5 + m22925l0(v0Var);
+        C5399i J = m22991J(v0Var.m22682m());
+        float i9 = J != null ? J.m22853i() * f : f;
         if (i9 > 0.0f) {
             if (i8 > 1) {
-                v0Var.m22690d(i, canvas, v0Var2.m22688f(), i2, i3, i4, l0, i9, kVar);
+                v0Var.m22691d(i, canvas, v0Var2.m22689f(), i2, i3, i4, l0, i9, kVar);
             } else {
-                v0Var.m22691c(i, canvas, i2, i3, i4, l0, i9, kVar, bVar, i6);
+                v0Var.m22692c(i, canvas, i2, i3, i4, l0, i9, kVar, bVar, i6);
             }
         }
         return i8;
     }
 
-    public final int m23004C(int i, Canvas canvas, int i2, int i3, int i4, float f, AbstractC5408k kVar, C6238b bVar, int i5) {
+    public final int m23005C(int i, Canvas canvas, int i2, int i3, int i4, float f, AbstractC5408k kVar, C6238b bVar, int i5) {
         int i6;
         int i7 = i;
         C5455v0 v0Var = this.f17730U.get(i);
-        int f0 = m22941f0(v0Var.m22684j());
+        int f0 = m22942f0(v0Var.m22685j());
         int i8 = i2 + (i4 / 2);
         int size = this.f17730U.size();
         C5455v0 v0Var2 = v0Var;
@@ -560,48 +560,48 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
                 break;
             }
             C5455v0 v0Var3 = this.f17730U.get(i6);
-            if (!v0Var2.m22694R(v0Var3)) {
+            if (!v0Var2.m22695R(v0Var3)) {
                 break;
             }
             i9++;
             v0Var2 = v0Var3;
             i7 = i6;
         }
-        int l0 = i3 + m22924l0(v0Var);
-        C5399i J = m22990J(v0Var.m22681m());
-        float i10 = J != null ? J.m22852i() * f : f;
+        int l0 = i3 + m22925l0(v0Var);
+        C5399i J = m22991J(v0Var.m22682m());
+        float i10 = J != null ? J.m22853i() * f : f;
         if (i10 > 0.0f) {
             if (i9 > 1) {
                 int i11 = f0 / 2;
-                v0Var.m22690d(i6, canvas, v0Var2.m22688f(), i8 - i11, i8 + i11, 0, l0, i10, kVar);
+                v0Var.m22691d(i6, canvas, v0Var2.m22689f(), i8 - i11, i8 + i11, 0, l0, i10, kVar);
             } else {
                 int i12 = f0 / 2;
-                v0Var.m22691c(i6, canvas, i8 - i12, i8 + i12, 0, l0, i10, kVar, bVar, i5);
+                v0Var.m22692c(i6, canvas, i8 - i12, i8 + i12, 0, l0, i10, kVar, bVar, i5);
             }
         }
         return i9;
     }
 
-    public final void m23002D(Canvas canvas, int i, int i2, int i3, int i4, boolean z, C5398h hVar, float f, AbstractC5408k kVar) {
+    public final void m23003D(Canvas canvas, int i, int i2, int i3, int i4, boolean z, C5398h hVar, float f, AbstractC5408k kVar) {
         AbstractC5411l0 g;
-        if (!(hVar == null || hVar.m22862a())) {
+        if (!(hVar == null || hVar.m22863a())) {
             int size = this.f17730U.size();
             int i5 = hVar.f17780b;
-            if (i5 >= 0 && i5 < size && (g = this.f17730U.get(i5).m22687g()) != null) {
+            if (i5 >= 0 && i5 < size && (g = this.f17730U.get(i5).m22688g()) != null) {
                 boolean z2 = true;
-                int a = C5064d.m24131a(f, m22984M(kVar, g, true));
-                int a2 = C5064d.m24131a(f, m22930j0(kVar, g, true));
+                int a = C5064d.m24132a(f, m22985M(kVar, g, true));
+                int a2 = C5064d.m24132a(f, m22931j0(kVar, g, true));
                 boolean z3 = Color.alpha(a) != 0;
                 if (Color.alpha(a2) == 0) {
                     z2 = false;
                 }
                 if (z3 || z2) {
                     C6038h<Path> hVar2 = this.f17733X;
-                    Path e = hVar2 != null ? hVar2.m21471e(i5) : null;
+                    Path e = hVar2 != null ? hVar2.m21472e(i5) : null;
                     if (e != null) {
                         canvas.save();
                         canvas.translate(0.0f, i4);
-                        m23008A(canvas, e, a, a2);
+                        m23009A(canvas, e, a, a2);
                         canvas.restore();
                         return;
                     }
@@ -609,32 +609,32 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
                     if (this.f17733X == null) {
                         this.f17733X = new C6038h<>();
                     }
-                    this.f17733X.m21466j(i5, path);
+                    this.f17733X.m21467j(i5, path);
                     for (int i6 = i5; i6 < size; i6++) {
                         C5455v0 v0Var = this.f17730U.get(i6);
-                        if (!v0Var.m22669y(g)) {
+                        if (!v0Var.m22670y(g)) {
                             break;
                         }
                         Path path2 = path;
                         path = path;
-                        m22925l(path2, v0Var, i, i2, i3, z, true);
+                        m22926l(path2, v0Var, i, i2, i3, z, true);
                     }
                     canvas.save();
                     canvas.translate(0.0f, i4);
-                    m23008A(canvas, path, a, a2);
+                    m23009A(canvas, path, a, a2);
                     canvas.restore();
                 }
             }
         }
     }
 
-    public final void m23000E(int i, int i2) {
-        if (this.f17724O != -1 && m22962X() >= this.f17724O) {
+    public final void m23001E(int i, int i2) {
+        if (this.f17724O != -1 && m22963X() >= this.f17724O) {
             this.f17743e0 -= i;
             this.f17746h0 = i2;
-            while (!this.f17734Y.isEmpty() && (m22962X() > this.f17724O || (m22962X() > 1 && m22941f0(m22962X() - 1) == 0))) {
-                this.f17734Y.remove(m22962X() - 1);
-                int Z = m22958Z(m22962X() - 1);
+            while (!this.f17734Y.isEmpty() && (m22963X() > this.f17724O || (m22963X() > 1 && m22942f0(m22963X() - 1) == 0))) {
+                this.f17734Y.remove(m22963X() - 1);
+                int Z = m22959Z(m22963X() - 1);
                 this.f17743e0 -= Z;
                 this.f17746h0 = Z;
             }
@@ -643,19 +643,19 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         }
     }
 
-    public int m22998F(String str) {
+    public int m22999F(String str) {
         AbstractC5411l0[] l0VarArr = this.f17739b0;
         if (l0VarArr == null || this.f17730U == null) {
             return -1;
         }
         for (AbstractC5411l0 l0Var : l0VarArr) {
-            if (l0Var.mo22740m(str)) {
-                int i = l0Var.m22785i();
+            if (l0Var.mo22741m(str)) {
+                int i = l0Var.m22786i();
                 Iterator<C5455v0> it = this.f17730U.iterator();
                 while (it.hasNext()) {
                     C5455v0 next = it.next();
-                    if (i >= next.m22679o() && i < next.m22688f()) {
-                        return next.m22684j();
+                    if (i >= next.m22680o() && i < next.m22689f()) {
+                        return next.m22685j();
                     }
                 }
                 continue;
@@ -664,11 +664,11 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return -1;
     }
 
-    public void m22995G0(Rect rect, C5455v0 v0Var) {
-        m22993H0(rect, v0Var, 0);
+    public void m22996G0(Rect rect, C5455v0 v0Var) {
+        m22994H0(rect, v0Var, 0);
     }
 
-    public final AbstractC5411l0 m22994H(int i, int i2) {
+    public final AbstractC5411l0 m22995H(int i, int i2) {
         int i3;
         AbstractC5411l0[] l0VarArr;
         int i4;
@@ -695,9 +695,9 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         }
         int length = l0VarArr2.length;
         for (int i7 = i3; i7 < length; i7++) {
-            int i8 = this.f17739b0[i7].m22785i();
-            int e = this.f17739b0[i7].m22786e();
-            if (e - i8 != 0 || this.f17739b0[i7].mo22735r()) {
+            int i8 = this.f17739b0[i7].m22786i();
+            int e = this.f17739b0[i7].m22787e();
+            if (e - i8 != 0 || this.f17739b0[i7].mo22736r()) {
                 if (i2 <= i8 || i < e || (e == i8 && i == i8)) {
                     this.f17747i0 = i7;
                     this.f17748j0 = i8;
@@ -720,11 +720,11 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
                         sb2.append('\n');
                     }
                     sb2.append("{type: ");
-                    sb2.append(l0Var.mo22741l());
+                    sb2.append(l0Var.mo22742l());
                     sb2.append(", start: ");
-                    sb2.append(l0Var.m22785i());
+                    sb2.append(l0Var.m22786i());
                     sb2.append(", end: ");
-                    sb2.append(l0Var.m22786e());
+                    sb2.append(l0Var.m22787e());
                     sb2.append(", entity: ");
                     sb2.append(l0Var.toString());
                     sb2.append("}");
@@ -735,43 +735,43 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return null;
     }
 
-    public void m22993H0(Rect rect, C5455v0 v0Var, int i) {
+    public void m22994H0(Rect rect, C5455v0 v0Var, int i) {
         int indexOf;
-        rect.set(0, v0Var.m22676r(), m22941f0(v0Var.m22684j()), v0Var.m22676r() + m22958Z(v0Var.m22684j()));
-        if (m22976Q() > 0) {
-            rect.left = v0Var.m22677q();
-            rect.right = v0Var.m22677q() + ((int) v0Var.m22678p());
+        rect.set(0, v0Var.m22677r(), m22942f0(v0Var.m22685j()), v0Var.m22677r() + m22959Z(v0Var.m22685j()));
+        if (m22977Q() > 0) {
+            rect.left = v0Var.m22678q();
+            rect.right = v0Var.m22678q() + ((int) v0Var.m22679p());
         }
-        AbstractC5411l0 g = v0Var.m22687g();
+        AbstractC5411l0 g = v0Var.m22688g();
         if (!(g == null || (indexOf = this.f17730U.indexOf(v0Var)) == -1)) {
             int i2 = indexOf;
             while (i2 > 0) {
                 int i3 = i2 - 1;
-                if (this.f17730U.get(i3).m22684j() != v0Var.m22684j() || !AbstractC5411l0.m22788b(g, this.f17730U.get(i3).m22687g(), i, this.f17729T)) {
+                if (this.f17730U.get(i3).m22685j() != v0Var.m22685j() || !AbstractC5411l0.m22789b(g, this.f17730U.get(i3).m22688g(), i, this.f17729T)) {
                     break;
                 }
                 i2--;
             }
             while (true) {
                 int i4 = indexOf + 1;
-                if (i4 >= this.f17730U.size() || this.f17730U.get(i4).m22684j() != v0Var.m22684j() || !AbstractC5411l0.m22788b(g, this.f17730U.get(i4).m22687g(), i, this.f17729T)) {
+                if (i4 >= this.f17730U.size() || this.f17730U.get(i4).m22685j() != v0Var.m22685j() || !AbstractC5411l0.m22789b(g, this.f17730U.get(i4).m22688g(), i, this.f17729T)) {
                     break;
                 }
                 indexOf = i4;
             }
-            int N = m22982N(this.f17726Q, g, i != 0, false);
+            int N = m22983N(this.f17726Q, g, i != 0, false);
             rect.top -= N;
             rect.bottom += N;
-            rect.left = this.f17730U.get(i2).m22677q();
-            rect.right = this.f17730U.get(indexOf).m22677q() + ((int) this.f17730U.get(indexOf).m22678p());
+            rect.left = this.f17730U.get(i2).m22678q();
+            rect.right = this.f17730U.get(indexOf).m22678q() + ((int) this.f17730U.get(indexOf).m22679p());
         }
         rect.offset(this.f17758t0, this.f17761w0);
     }
 
-    public final C5399i m22990J(TdApi.TextEntity textEntity) {
+    public final C5399i m22991J(TdApi.TextEntity textEntity) {
         if (!(this.f17731V == null || textEntity == null)) {
-            for (int i = 0; i < this.f17731V.m21496p(); i++) {
-                C5399i q = this.f17731V.m21495q(i);
+            for (int i = 0; i < this.f17731V.m21497p(); i++) {
+                C5399i q = this.f17731V.m21496q(i);
                 if (textEntity.offset >= q.f17789c && textEntity.offset < q.f17789c + q.f17783M) {
                     return q;
                 }
@@ -780,7 +780,7 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return null;
     }
 
-    public final float m22989J0(Paint paint) {
+    public final float m22990J0(Paint paint) {
         if (this.f17757s0 == 0.0f || this.f17756r0 != paint) {
             this.f17757s0 = C7389v0.m16680T1(" ", paint);
             this.f17756r0 = paint;
@@ -788,35 +788,35 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return this.f17757s0;
     }
 
-    public final int m22988K(int i, int i2, int i3, int i4, int i5, int i6, boolean z) {
+    public final int m22989K(int i, int i2, int i3, int i4, int i5, int i6, boolean z) {
         int i7;
         int i8 = i3;
         int i9 = i - i8;
         int i10 = i2 - i6;
         int i11 = 0;
         boolean z2 = (this.f17738b & 2) != 0;
-        int R = m22974R();
+        int R = m22975R();
         Iterator<C5455v0> it = this.f17730U.iterator();
         int i12 = -1;
         int i13 = 0;
         while (it.hasNext()) {
             C5455v0 next = it.next();
             if (z2) {
-                int f0 = m22941f0(next.m22684j());
+                int f0 = m22942f0(next.m22685j());
                 int i14 = (this.f17736a / 2) + i8;
                 int i15 = f0 / 2;
-                i7 = next.m22708D(i14 - i15, i14 + i15, i11);
+                i7 = next.m22709D(i14 - i15, i14 + i15, i11);
             } else {
-                i7 = next.m22708D(i8, i4, i5) - i8;
+                i7 = next.m22709D(i8, i4, i5) - i8;
             }
-            int r = next.m22676r() + m22924l0(next);
-            int p = ((int) next.m22678p()) + i7;
-            int k0 = r + m22927k0(next);
+            int r = next.m22677r() + m22925l0(next);
+            int p = ((int) next.m22679p()) + i7;
+            int k0 = r + m22928k0(next);
             if (i9 >= i7 && i9 < p && i10 >= r && i10 < k0) {
                 if (i12 == -1) {
                     i12 = i13;
                 }
-                if (m22977P0(next) || next.m22689e() != null) {
+                if (m22978P0(next) || next.m22690e() != null) {
                     return i13;
                 }
             } else if (i12 == -1 && i9 >= i7 - R && i9 <= p + R && i10 >= r - R && i10 <= k0 + R) {
@@ -830,55 +830,55 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
             return -1;
         }
         C5455v0 v0Var = this.f17730U.get(i12);
-        if (!z || m22977P0(v0Var) || v0Var.m22689e() != null) {
+        if (!z || m22978P0(v0Var) || v0Var.m22690e() != null) {
             return i12;
         }
         return -1;
     }
 
-    public TextPaint m22987K0(TextPaint textPaint) {
+    public TextPaint m22988K0(TextPaint textPaint) {
         return textPaint;
     }
 
-    public int m22986L() {
-        return -m22972S().ascent;
+    public int m22987L() {
+        return -m22973S().ascent;
     }
 
-    public final boolean m22985L0(C5455v0 v0Var) {
-        if (this.f17724O != -1 && m22962X() + 1 >= this.f17724O) {
+    public final boolean m22986L0(C5455v0 v0Var) {
+        if (this.f17724O != -1 && m22963X() + 1 >= this.f17724O) {
             return false;
         }
-        this.f17742d0 = v0Var.m22677q();
-        int O = m22980O();
+        this.f17742d0 = v0Var.m22678q();
+        int O = m22981O();
         int i = this.f17746h0;
-        m22922m(this.f17742d0, O);
+        m22923m(this.f17742d0, O);
         this.f17744f0 = Math.max(this.f17744f0, this.f17742d0);
-        this.f17742d0 = (int) v0Var.m22678p();
+        this.f17742d0 = (int) v0Var.m22679p();
         int i2 = this.f17743e0 + O;
         this.f17743e0 = i2;
         this.f17746h0 = 0;
-        v0Var.m22696P(0, i2);
-        m23000E(O, i);
+        v0Var.m22697P(0, i2);
+        m23001E(O, i);
         return true;
     }
 
-    public int m22984M(AbstractC5408k kVar, AbstractC5411l0 l0Var, boolean z) {
-        if (m22896w0(l0Var)) {
-            return m22961X0(kVar, l0Var).mo7851p0(z);
+    public int m22985M(AbstractC5408k kVar, AbstractC5411l0 l0Var, boolean z) {
+        if (m22897w0(l0Var)) {
+            return m22962X0(kVar, l0Var).mo7851p0(z);
         }
         return 0;
     }
 
-    public int m22982N(AbstractC5408k kVar, AbstractC5411l0 l0Var, boolean z, boolean z2) {
-        if (!m22896w0(l0Var)) {
+    public int m22983N(AbstractC5408k kVar, AbstractC5411l0 l0Var, boolean z, boolean z2) {
+        if (!m22897w0(l0Var)) {
             return 0;
         }
-        AbstractC5408k X0 = m22961X0(kVar, l0Var);
+        AbstractC5408k X0 = m22962X0(kVar, l0Var);
         int e = X0.mo7854e(z);
         int g = X0.mo7853g(z);
         int Q = X0.mo7858Q();
         if (z2 && g != 0) {
-            Q = Math.max(0, Q - C1357a0.m37526x());
+            Q = Math.max(0, Q - C1357a0.m37529x());
         }
         if (g == 0 && e == 0) {
             return 0;
@@ -886,11 +886,11 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return Q;
     }
 
-    public final int m22980O() {
-        return Math.max(this.f17746h0, m22960Y());
+    public final int m22981O() {
+        return Math.max(this.f17746h0, m22961Y());
     }
 
-    public int m22978P() {
+    public int m22979P() {
         ArrayList<C5455v0> arrayList = this.f17730U;
         if (!(arrayList == null || this.f17735Z == 0)) {
             int size = arrayList.size();
@@ -902,12 +902,12 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return -1;
     }
 
-    public final boolean m22977P0(C5455v0 v0Var) {
-        C5399i J = m22990J(v0Var.m22681m());
-        return J != null && J.m22851j();
+    public final boolean m22978P0(C5455v0 v0Var) {
+        C5399i J = m22991J(v0Var.m22682m());
+        return J != null && J.m22852j();
     }
 
-    public int m22976Q() {
+    public int m22977Q() {
         AbstractC5411l0[] l0VarArr = this.f17739b0;
         if (l0VarArr != null) {
             return l0VarArr.length;
@@ -915,47 +915,47 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return 0;
     }
 
-    public final Paint.FontMetricsInt m22972S() {
-        return m22970T(this.f17725P.m22660h());
+    public final Paint.FontMetricsInt m22973S() {
+        return m22971T(this.f17725P.m22661h());
     }
 
-    public final void m22971S0(List<C5455v0> list, String str) {
-        m22969T0(list, str, 0, 0, null);
+    public final void m22972S0(List<C5455v0> list, String str) {
+        m22970T0(list, str, 0, 0, null);
     }
 
-    public final Paint.FontMetricsInt m22970T(float f) {
+    public final Paint.FontMetricsInt m22971T(float f) {
         float f2 = this.f17754p0;
         if (f2 == -1.0f || f2 != f) {
-            this.f17725P.m22662f().getFontMetricsInt(this.f17755q0);
+            this.f17725P.m22663f().getFontMetricsInt(this.f17755q0);
             this.f17754p0 = f;
         }
         return this.f17755q0;
     }
 
-    public final void m22969T0(java.util.List<ie.C5455v0> r20, java.lang.String r21, int r22, int r23, ie.AbstractC5411l0 r24) {
-        throw new UnsupportedOperationException("Method not decompiled: ie.RunnableC5390g.m22969T0(java.util.List, java.lang.String, int, int, ie.l0):void");
+    public final void m22970T0(java.util.List<ie.C5455v0> r20, java.lang.String r21, int r22, int r23, ie.AbstractC5411l0 r24) {
+        throw new UnsupportedOperationException("Method not decompiled: ie.RunnableC5390g.m22970T0(java.util.List, java.lang.String, int, int, ie.l0):void");
     }
 
-    public boolean m22968U() {
+    public boolean m22969U() {
         ArrayList<C5455v0> arrayList = this.f17730U;
         if (arrayList != null && !arrayList.isEmpty()) {
             ArrayList<C5455v0> arrayList2 = this.f17730U;
-            if (arrayList2.get(arrayList2.size() - 1).m22671w()) {
+            if (arrayList2.get(arrayList2.size() - 1).m22672w()) {
                 return true;
             }
         }
-        return m22919n();
+        return m22920n();
     }
 
-    public boolean m22967U0(View view, MotionEvent motionEvent) {
-        return m22965V0(view, motionEvent, null);
+    public boolean m22968U0(View view, MotionEvent motionEvent) {
+        return m22966V0(view, motionEvent, null);
     }
 
-    public int m22966V() {
+    public int m22967V() {
         return this.f17742d0;
     }
 
-    public boolean m22965V0(View view, MotionEvent motionEvent, AbstractC5393c cVar) {
+    public boolean m22966V0(View view, MotionEvent motionEvent, AbstractC5393c cVar) {
         int i;
         int i2;
         boolean z;
@@ -966,45 +966,45 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         int action = motionEvent.getAction();
         if (action != 0) {
             if (action == 1) {
-                m22905s();
+                m22906s();
                 C5398h hVar = this.f17763y0;
                 if (hVar != null) {
                     C5455v0 v0Var = this.f17730U.get(hVar.f17779a);
-                    if (this.f17763y0.m22862a()) {
-                        m22935h1(v0Var);
-                        C2065g.m35719c(view);
+                    if (this.f17763y0.m22863a()) {
+                        m22936h1(v0Var);
+                        C2065g.m35722c(view);
                         return true;
                     }
-                    AbstractC5411l0 e = v0Var.m22689e();
+                    AbstractC5411l0 e = v0Var.m22690e();
                     AbstractC5394d dVar = this.f17723N;
                     if (dVar != null) {
-                        z = dVar.mo22863a(view, this, v0Var, e != null ? e.m22781y(view, this, v0Var) : new HandlerC10770jj.C10788q().m3312s(v0Var.m22707E(view)));
+                        z = dVar.mo22864a(view, this, v0Var, e != null ? e.m22782y(view, this, v0Var) : new HandlerC10770jj.C10788q().m3312s(v0Var.m22708E(view)));
                     } else if (e != null) {
-                        e.mo22729z(view, this, v0Var, cVar);
+                        e.mo22730z(view, this, v0Var, cVar);
                         z = true;
                     } else {
                         z = false;
                     }
-                    m22913p();
+                    m22914p();
                     if (z) {
-                        C2065g.m35719c(view);
+                        C2065g.m35722c(view);
                         return true;
                     }
                 }
             } else if (action != 2) {
                 if (action == 3) {
-                    m22905s();
+                    m22906s();
                     if (this.f17763y0 == null) {
                         return false;
                     }
-                    m22913p();
+                    m22914p();
                     return true;
                 }
             } else if (this.f17763y0 == null) {
                 return false;
             } else {
-                if (Math.max(Math.abs(this.f17764z0 - motionEvent.getX()), Math.abs(this.f17718A0 - motionEvent.getY())) > C1357a0.m37534p()) {
-                    m22913p();
+                if (Math.max(Math.abs(this.f17764z0 - motionEvent.getX()), Math.abs(this.f17718A0 - motionEvent.getY())) > C1357a0.m37537p()) {
+                    m22914p();
                 }
                 return true;
             }
@@ -1014,28 +1014,28 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         int y = (int) motionEvent.getY();
         this.f17718A0 = y;
         boolean z3 = this.f17723N == null;
-        int K = m22988K(this.f17764z0, y, this.f17758t0, this.f17759u0, this.f17760v0, this.f17761w0, z3);
+        int K = m22989K(this.f17764z0, y, this.f17758t0, this.f17759u0, this.f17760v0, this.f17761w0, z3);
         if (K == -1) {
-            m22913p();
+            m22914p();
             return false;
         }
         C5455v0 v0Var2 = this.f17730U.get(K);
-        C5399i J = m22990J(v0Var2.m22681m());
-        boolean z4 = J != null && J.m22851j();
+        C5399i J = m22991J(v0Var2.m22682m());
+        boolean z4 = J != null && J.m22852j();
         if (z4) {
             i = J.f17787a;
             i2 = J.f17787a + J.f17788b;
-        } else if ((!z3 || v0Var2.m22675s()) && (z3 || v0Var2.m22675s() || C5063c.m24144b(this.f17738b, Log.TAG_CONTACT))) {
-            AbstractC5411l0 e2 = this.f17730U.get(K).m22689e();
+        } else if ((!z3 || v0Var2.m22676s()) && (z3 || v0Var2.m22676s() || C5063c.m24145b(this.f17738b, Log.TAG_CONTACT))) {
+            AbstractC5411l0 e2 = this.f17730U.get(K).m22690e();
             if (e2 != null) {
                 int i3 = K;
-                while (i3 > 0 && this.f17730U.get(i3 - 1).m22669y(e2)) {
+                while (i3 > 0 && this.f17730U.get(i3 - 1).m22670y(e2)) {
                     i3--;
                 }
                 int i4 = K;
                 while (true) {
                     int i5 = i4 + 1;
-                    if (i5 >= this.f17730U.size() || !this.f17730U.get(i5).m22669y(e2)) {
+                    if (i5 >= this.f17730U.size() || !this.f17730U.get(i5).m22670y(e2)) {
                         break;
                     }
                     i4 = i5;
@@ -1047,7 +1047,7 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
                 i2 = i;
             }
         } else {
-            m22913p();
+            m22914p();
             return false;
         }
         if (!z4) {
@@ -1055,15 +1055,15 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         }
         C5398h hVar2 = new C5398h(K, i, i2, J);
         this.f17763y0 = hVar2;
-        if (hVar2.m22862a()) {
-            this.f17763y0.f17782d.m22850k(true, true);
+        if (hVar2.m22863a()) {
+            this.f17763y0.f17782d.m22851k(true, true);
         } else {
             if (this.f17723N == null) {
                 z2 = true;
             }
-            if (m22906r0(K, z2)) {
+            if (m22907r0(K, z2)) {
                 if ((this.f17738b & 8) != 0) {
-                    m22932i1(view, cVar);
+                    m22933i1(view, cVar);
                 } else {
                     this.f17720C0 = cVar;
                 }
@@ -1072,31 +1072,31 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return true;
     }
 
-    public int m22964W() {
+    public int m22965W() {
         int i = 0;
-        int a0 = m22955a0(false) / 2;
+        int a0 = m22956a0(false) / 2;
         if (!this.f17730U.isEmpty()) {
-            i = m22924l0(this.f17730U.get(0));
+            i = m22925l0(this.f17730U.get(0));
         }
         return a0 + i;
     }
 
-    public boolean m22963W0(View view) {
+    public boolean m22964W0(View view) {
         C5398h hVar = this.f17763y0;
-        if (hVar == null || hVar.m22862a()) {
+        if (hVar == null || hVar.m22863a()) {
             return false;
         }
         int i = this.f17763y0.f17779a;
         AbstractC5393c cVar = this.f17720C0;
-        m22913p();
-        AbstractC5411l0 e = this.f17730U.get(i).m22689e();
+        m22914p();
+        AbstractC5411l0 e = this.f17730U.get(i).m22690e();
         if (e == null) {
             return false;
         }
-        return e.mo22755A(view, this, this.f17730U.get(i), (this.f17738b & 16) == 0, cVar);
+        return e.mo22756A(view, this, this.f17730U.get(i), (this.f17738b & 16) == 0, cVar);
     }
 
-    public int m22962X() {
+    public int m22963X() {
         List<int[]> list = this.f17734Y;
         if (list != null) {
             return list.size();
@@ -1104,59 +1104,59 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return 0;
     }
 
-    public AbstractC5408k m22961X0(AbstractC5408k kVar, AbstractC5411l0 l0Var) {
+    public AbstractC5408k m22962X0(AbstractC5408k kVar, AbstractC5411l0 l0Var) {
         AbstractC5408k g;
         if (kVar == null) {
             kVar = this.f17726Q;
         }
-        return (l0Var == null || (g = l0Var.mo22743g(kVar)) == null) ? kVar : g;
+        return (l0Var == null || (g = l0Var.mo22744g(kVar)) == null) ? kVar : g;
     }
 
-    public int m22960Y() {
-        return m22955a0(true);
+    public int m22961Y() {
+        return m22956a0(true);
     }
 
-    public final void m22959Y0(String str, CharSequence charSequence, C5088i iVar, int i, int i2, ArrayList<C5455v0> arrayList, AbstractC5411l0 l0Var) {
+    public final void m22960Y0(String str, CharSequence charSequence, C5088i iVar, int i, int i2, ArrayList<C5455v0> arrayList, AbstractC5411l0 l0Var) {
         this.f17745g0 = null;
-        if (this.f17742d0 + this.f17752n0 > m22952b0(m22962X(), this.f17743e0)) {
-            m22971S0(arrayList, str);
+        if (this.f17742d0 + this.f17752n0 > m22953b0(m22963X(), this.f17743e0)) {
+            m22972S0(arrayList, str);
         }
-        C5455v0 v0Var = new C5455v0(this, str, i, i2, m22962X(), this.f17741c0);
-        v0Var.m22696P(this.f17742d0, this.f17743e0);
-        v0Var.m22697O(this.f17752n0);
-        v0Var.m22702J(l0Var);
-        v0Var.m22704H(iVar);
+        C5455v0 v0Var = new C5455v0(this, str, i, i2, m22963X(), this.f17741c0);
+        v0Var.m22697P(this.f17742d0, this.f17743e0);
+        v0Var.m22698O(this.f17752n0);
+        v0Var.m22703J(l0Var);
+        v0Var.m22705H(iVar);
         arrayList.add(v0Var);
         this.f17742d0 += this.f17752n0;
     }
 
-    public int m22958Z(int i) {
-        return m22949c0(i)[1];
+    public int m22959Z(int i) {
+        return m22950c0(i)[1];
     }
 
-    public final int m22957Z0(String str, int i, int i2, ArrayList<C5455v0> arrayList, C5078d.AbstractC5080b bVar, boolean z) {
-        AbstractC5411l0 H = m22994H(i, i2);
-        if (m22961X0(null, H).mo7857X0(false) != 0) {
+    public final int m22958Z0(String str, int i, int i2, ArrayList<C5455v0> arrayList, C5078d.AbstractC5080b bVar, boolean z) {
+        AbstractC5411l0 H = m22995H(i, i2);
+        if (m22962X0(null, H).mo7857X0(false) != 0) {
             this.f17738b |= Log.TAG_TDLIB_OPTIONS;
         }
         if (H == null) {
-            m22943e1(str, i, i2, arrayList, bVar, null);
+            m22944e1(str, i, i2, arrayList, bVar, null);
             return -1;
         }
-        if (H.mo22742h() != null) {
+        if (H.mo22743h() != null) {
             this.f17738b |= Integer.MIN_VALUE;
         }
         int max = Math.max(i, this.f17748j0);
         if (max > i) {
-            m22943e1(str, i, max, arrayList, bVar, null);
+            m22944e1(str, i, max, arrayList, bVar, null);
         }
         int i3 = this.f17749k0;
         if (i3 < i2) {
-            m22943e1(str, max, i3, arrayList, bVar, H);
+            m22944e1(str, max, i3, arrayList, bVar, H);
             if (!z) {
                 int i4 = this.f17749k0;
                 do {
-                    i4 = m22957Z0(str, i4, i2, arrayList, bVar, true);
+                    i4 = m22958Z0(str, i4, i2, arrayList, bVar, true);
                     if (i4 == -1) {
                         break;
                     }
@@ -1165,42 +1165,42 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
                 return this.f17749k0;
             }
         } else {
-            m22943e1(str, max, i2, arrayList, bVar, H);
+            m22944e1(str, max, i2, arrayList, bVar, H);
         }
         return -1;
     }
 
     @Override
-    public String mo22956a() {
+    public String mo22957a() {
         return this.f17729T;
     }
 
-    public int m22955a0(boolean z) {
-        Paint.FontMetricsInt S = m22972S();
-        return Math.abs(S.descent - S.ascent) + S.leading + (z ? m22947d0() : 0);
+    public int m22956a0(boolean z) {
+        Paint.FontMetricsInt S = m22973S();
+        return Math.abs(S.descent - S.ascent) + S.leading + (z ? m22948d0() : 0);
     }
 
-    public final void m22954a1(String str, int i, ArrayList<C5455v0> arrayList, AbstractC5411l0 l0Var) {
+    public final void m22955a1(String str, int i, ArrayList<C5455v0> arrayList, AbstractC5411l0 l0Var) {
         this.f17745g0 = null;
-        C5427s0 f = l0Var.mo22756f();
-        int i2 = C1357a0.m37541i(f.m22718b());
-        int i3 = C1357a0.m37541i(f.m22719a());
-        int b0 = m22952b0(m22962X(), this.f17743e0);
+        C5427s0 f = l0Var.mo22757f();
+        int i2 = C1357a0.m37544i(f.m22719b());
+        int i3 = C1357a0.m37544i(f.m22720a());
+        int b0 = m22953b0(m22963X(), this.f17743e0);
         int i4 = this.f17742d0;
         if (i4 > 0 && i4 + i2 > b0) {
-            m22971S0(arrayList, str);
-            b0 = m22952b0(m22962X(), this.f17743e0);
+            m22972S0(arrayList, str);
+            b0 = m22953b0(m22963X(), this.f17743e0);
         }
         if (i2 > b0) {
             i3 = (int) (i3 * (b0 / i2));
             i2 = b0;
         }
-        C5455v0 v0Var = new C5455v0(this, str, i, i, m22962X(), this.f17741c0);
-        v0Var.m22696P(this.f17742d0, this.f17743e0);
-        v0Var.m22697O(i2);
-        v0Var.m22701K(i3);
-        v0Var.m22702J(l0Var);
-        v0Var.m22700L(this.f17737a0, f);
+        C5455v0 v0Var = new C5455v0(this, str, i, i, m22963X(), this.f17741c0);
+        v0Var.m22697P(this.f17742d0, this.f17743e0);
+        v0Var.m22698O(i2);
+        v0Var.m22702K(i3);
+        v0Var.m22703J(l0Var);
+        v0Var.m22701L(this.f17737a0, f);
         arrayList.add(v0Var);
         this.f17742d0 += i2;
         this.f17746h0 = Math.max(i3, this.f17746h0);
@@ -1208,22 +1208,22 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
     }
 
     @Override
-    public int mo22953b() {
+    public int mo22954b() {
         return this.f17735Z;
     }
 
-    public int m22952b0(int i, int i2) {
+    public int m22953b0(int i, int i2) {
         if (i != -1) {
             AbstractC5397g gVar = this.f17740c;
-            return (gVar != null ? gVar.mo9971a(i, i2, this.f17736a, m22960Y()) : this.f17736a - m22944e0(i, i2)) - this.f17728S;
+            return (gVar != null ? gVar.mo9970a(i, i2, this.f17736a, m22961Y()) : this.f17736a - m22945e0(i, i2)) - this.f17728S;
         }
         throw new IllegalArgumentException("lineIndex == -1");
     }
 
-    public final void m22951b1(String str, int i, int i2, ArrayList<C5455v0> arrayList, C5078d.AbstractC5080b bVar) {
+    public final void m22952b1(String str, int i, int i2, ArrayList<C5455v0> arrayList, C5078d.AbstractC5080b bVar) {
         int i3 = i;
         if (i3 == i2) {
-            m22957Z0(str, i, i2, arrayList, bVar, false);
+            m22958Z0(str, i, i2, arrayList, bVar, false);
             return;
         }
         int i4 = i3;
@@ -1233,7 +1233,7 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         while (i3 < i2) {
             int codePointAt = str.codePointAt(i3);
             int charCount = Character.charCount(codePointAt);
-            if (codePointAt == 10 && !C5063c.m24144b(this.f17738b, Log.TAG_ROUND)) {
+            if (codePointAt == 10 && !C5063c.m24145b(this.f17738b, Log.TAG_ROUND)) {
                 break;
             }
             boolean z3 = charCount == 1 && (codePointAt == 10 || Character.getType(codePointAt) == 12);
@@ -1245,7 +1245,7 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
                 i5 += charCount;
             } else {
                 int i6 = i4 + i5;
-                m22957Z0(str, i4, i6, arrayList, bVar, false);
+                m22958Z0(str, i4, i6, arrayList, bVar, false);
                 i5 = charCount;
                 z = z3;
                 i4 = i6;
@@ -1253,47 +1253,47 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
             i3 += charCount;
         }
         int i7 = i4 + i5;
-        m22957Z0(str, i4, i7, arrayList, bVar, false);
+        m22958Z0(str, i4, i7, arrayList, bVar, false);
         if (i7 < i2) {
-            m22957Z0(str, i7, i2, arrayList, bVar, false);
+            m22958Z0(str, i7, i2, arrayList, bVar, false);
         }
     }
 
     @Override
-    public boolean mo22950c() {
+    public boolean mo22951c() {
         this.f17735Z++;
         return true;
     }
 
-    public final int[] m22949c0(int i) {
-        if (i >= 0 && i < m22962X()) {
+    public final int[] m22950c0(int i) {
+        if (i >= 0 && i < m22963X()) {
             return this.f17734Y.get(i);
         }
         throw new IllegalArgumentException("lineIndex == " + i);
     }
 
-    public final int m22948c1(java.lang.String r24, int r25, int r26, java.util.ArrayList<ie.C5455v0> r27, ie.AbstractC5411l0 r28, boolean r29, float[] r30) {
-        throw new UnsupportedOperationException("Method not decompiled: ie.RunnableC5390g.m22948c1(java.lang.String, int, int, java.util.ArrayList, ie.l0, boolean, float[]):int");
+    public final int m22949c1(java.lang.String r24, int r25, int r26, java.util.ArrayList<ie.C5455v0> r27, ie.AbstractC5411l0 r28, boolean r29, float[] r30) {
+        throw new UnsupportedOperationException("Method not decompiled: ie.RunnableC5390g.m22949c1(java.lang.String, int, int, java.util.ArrayList, ie.l0, boolean, float[]):int");
     }
 
     @Override
     public int mo7991d(boolean z) {
-        return C3962o.m29470a(this, z);
+        return C3962o.m29472a(this, z);
     }
 
-    public int m22947d0() {
-        if (C5063c.m24144b(this.f17738b, Log.TAG_NDK)) {
+    public int m22948d0() {
+        if (C5063c.m24145b(this.f17738b, Log.TAG_NDK)) {
             return 0;
         }
-        return this.f17725P.m22665c((this.f17738b & 32) != 0 ? 3.0f : 2.0f);
+        return this.f17725P.m22666c((this.f17738b & 32) != 0 ? 3.0f : 2.0f);
     }
 
-    public final int m22946d1(String str, int i, int i2, ArrayList<C5455v0> arrayList, AbstractC5411l0 l0Var, boolean z) {
+    public final int m22947d1(String str, int i, int i2, ArrayList<C5455v0> arrayList, AbstractC5411l0 l0Var, boolean z) {
         int i3;
         int i4;
         int i5;
         int codePointAt = str.codePointAt(i);
-        if (!m23005B0(codePointAt, false) || (i3 = i + Character.charCount(codePointAt)) >= i2) {
+        if (!m23006B0(codePointAt, false) || (i3 = i + Character.charCount(codePointAt)) >= i2) {
             i3 = i;
         }
         int i6 = i3;
@@ -1306,8 +1306,8 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
             int codePointAt2 = str.codePointAt(i6);
             int charCount = Character.charCount(codePointAt2);
             int type = Character.getType(codePointAt2);
-            if (m23003C0(codePointAt2, type, true)) {
-                if (i6 == i3 || (i5 = i6 + charCount) == i2 || !m23005B0(str.codePointAt(i5), false)) {
+            if (m23004C0(codePointAt2, type, true)) {
+                if (i6 == i3 || (i5 = i6 + charCount) == i2 || !m23006B0(str.codePointAt(i5), false)) {
                     i7 = i6 + charCount;
                     i8 = i7;
                 } else {
@@ -1317,7 +1317,7 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
                 if (type == 12) {
                     i8 = -1;
                 }
-            } else if (m22973R0(codePointAt2)) {
+            } else if (m22974R0(codePointAt2)) {
                 i7 = i6 + charCount;
                 i8 = i7;
             }
@@ -1327,7 +1327,7 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
                 while (i8 < i2) {
                     int codePointAt3 = str.codePointAt(i8);
                     int type2 = Character.getType(codePointAt3);
-                    if (!m23003C0(codePointAt2, type2, true) || (i8 = i8 + Character.charCount(codePointAt3)) > i2) {
+                    if (!m23004C0(codePointAt2, type2, true) || (i8 = i8 + Character.charCount(codePointAt3)) > i2) {
                         break;
                     } else if (type2 == 12) {
                         i4 = i8;
@@ -1340,44 +1340,44 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         }
         i4 = i7;
         if (i4 == -1 || i4 == i2) {
-            m22948c1(str, i, i2, arrayList, l0Var, false, null);
+            m22949c1(str, i, i2, arrayList, l0Var, false, null);
         } else {
-            m22948c1(str, i, i4, arrayList, l0Var, false, null);
+            m22949c1(str, i, i4, arrayList, l0Var, false, null);
             if (z) {
                 return i4;
             }
             int i9 = i4;
             do {
-                i9 = m22946d1(str, i9, i2, arrayList, l0Var, true);
+                i9 = m22947d1(str, i9, i2, arrayList, l0Var, true);
             } while (i9 != -1);
         }
         return -1;
     }
 
-    public int m22944e0(int i, int i2) {
+    public int m22945e0(int i, int i2) {
         if (i != -1) {
             AbstractC5396f fVar = this.f17722M;
             if (fVar != null) {
-                return fVar.mo7827a(i, i2, this.f17736a, m22960Y());
+                return fVar.mo7827a(i, i2, this.f17736a, m22961Y());
             }
             return 0;
         }
         throw new IllegalArgumentException("lineIndex == -1");
     }
 
-    public final void m22943e1(String str, int i, int i2, ArrayList<C5455v0> arrayList, C5078d.AbstractC5080b bVar, AbstractC5411l0 l0Var) {
-        Paint.FontMetricsInt E = C1410y.m37076E(m22915o0(l0Var));
+    public final void m22944e1(String str, int i, int i2, ArrayList<C5455v0> arrayList, C5078d.AbstractC5080b bVar, AbstractC5411l0 l0Var) {
+        Paint.FontMetricsInt E = C1410y.m37079E(m22916o0(l0Var));
         if (i2 - i != 0) {
             this.f17751m0 = i;
             this.f17753o0 = l0Var;
-            this.f17752n0 = Math.abs(E.descent - E.ascent) + C1357a0.m37541i(2.0f);
-            C5078d.m23986z().m24022K(str, i, i2, this, bVar);
+            this.f17752n0 = Math.abs(E.descent - E.ascent) + C1357a0.m37544i(2.0f);
+            C5078d.m23987z().m24023K(str, i, i2, this, bVar);
             int i3 = this.f17751m0;
             if (i3 < i2) {
-                m22946d1(str, i3, i2, arrayList, l0Var, false);
+                m22947d1(str, i3, i2, arrayList, l0Var, false);
             }
-        } else if (l0Var != null && l0Var.mo22735r()) {
-            m22954a1(str, i, arrayList, l0Var);
+        } else if (l0Var != null && l0Var.mo22736r()) {
+            m22955a1(str, i, arrayList, l0Var);
         }
     }
 
@@ -1385,11 +1385,11 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return (obj instanceof RunnableC5390g) && ((RunnableC5390g) obj).f17729T.equals(this.f17729T);
     }
 
-    public int m22941f0(int i) {
-        return m22949c0(i)[0];
+    public int m22942f0(int i) {
+        return m22950c0(i)[0];
     }
 
-    public int m22940f1(C6238b bVar, int i) {
+    public int m22941f1(C6238b bVar, int i) {
         int i2 = 0;
         boolean z = i == -1;
         if (this.f17737a0 > 0) {
@@ -1399,32 +1399,32 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
             Iterator<C5455v0> it = this.f17730U.iterator();
             while (it.hasNext()) {
                 C5455v0 next = it.next();
-                if (next.m22672v()) {
-                    next.m22706F(bVar, i);
+                if (next.m22673v()) {
+                    next.m22707F(bVar, i);
                     i2++;
                 }
             }
             if (z) {
-                bVar.m20996g(i2);
+                bVar.m20997g(i2);
             }
             return i2;
         }
         if (z) {
-            bVar.m20999d();
+            bVar.m21000d();
         }
         return 0;
     }
 
     @Override
     public int mo7990g(boolean z) {
-        return C3962o.m29469b(this, z);
+        return C3962o.m29471b(this, z);
     }
 
-    public int m22939g0() {
+    public int m22940g0() {
         return this.f17724O;
     }
 
-    public final void m22938g1() {
+    public final void m22939g1() {
         this.f17747i0 = -1;
         this.f17749k0 = 0;
         this.f17748j0 = 0;
@@ -1442,7 +1442,7 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         if (list != null) {
             list.clear();
         }
-        m22907r();
+        m22908r();
     }
 
     @Override
@@ -1455,14 +1455,14 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return this.f17744f0;
     }
 
-    public int m22936h0() {
+    public int m22937h0() {
         return this.f17736a;
     }
 
-    public final void m22935h1(C5455v0 v0Var) {
-        C5399i J = m22990J(v0Var.m22681m());
+    public final void m22936h1(C5455v0 v0Var) {
+        C5399i J = m22991J(v0Var.m22682m());
         if (J != null) {
-            J.f17785O.m29575p(true, true);
+            J.f17785O.m29577p(true, true);
         }
     }
 
@@ -1470,17 +1470,17 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return this.f17729T.hashCode();
     }
 
-    public int m22933i0() {
+    public int m22934i0() {
         if (this.f17730U.isEmpty()) {
             return 0;
         }
         ArrayList<C5455v0> arrayList = this.f17730U;
         C5455v0 v0Var = arrayList.get(arrayList.size() - 1);
-        return v0Var.m22676r() + m22958Z(v0Var.m22684j());
+        return v0Var.m22677r() + m22959Z(v0Var.m22685j());
     }
 
-    public final void m22932i1(View view, AbstractC5393c cVar) {
-        m22916o();
+    public final void m22933i1(View view, AbstractC5393c cVar) {
+        m22917o();
         if (view != null) {
             this.f17719B0 = view;
             this.f17720C0 = cVar;
@@ -1488,33 +1488,33 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         }
     }
 
-    public int m22930j0(AbstractC5408k kVar, AbstractC5411l0 l0Var, boolean z) {
-        if (m22896w0(l0Var)) {
-            return m22961X0(kVar, l0Var).mo7850r0(z);
+    public int m22931j0(AbstractC5408k kVar, AbstractC5411l0 l0Var, boolean z) {
+        if (m22897w0(l0Var)) {
+            return m22962X0(kVar, l0Var).mo7850r0(z);
         }
         return 0;
     }
 
-    public void m22929j1(int i, String str) {
-        m22926k1(i, str, this.f17739b0);
+    public void m22930j1(int i, String str) {
+        m22927k1(i, str, this.f17739b0);
     }
 
-    public final int m22927k0(C5455v0 v0Var) {
-        float h = v0Var.m22686h();
-        return h != -1.0f ? (int) h : m22960Y();
+    public final int m22928k0(C5455v0 v0Var) {
+        float h = v0Var.m22687h();
+        return h != -1.0f ? (int) h : m22961Y();
     }
 
-    public void m22926k1(int i, String str, AbstractC5411l0[] l0VarArr) {
+    public void m22927k1(int i, String str, AbstractC5411l0[] l0VarArr) {
         if (str != null) {
             this.f17736a = i;
             this.f17739b0 = l0VarArr;
             try {
                 if (!Log.isEnabled(64) || !Log.checkLogLevel(3)) {
-                    m22923l1(str);
+                    m22924l1(str);
                     return;
                 }
                 long elapsedRealtime = SystemClock.elapsedRealtime();
-                m22923l1(str);
+                m22924l1(str);
                 int elapsedRealtime2 = (int) (SystemClock.elapsedRealtime() - elapsedRealtime);
                 if (elapsedRealtime2 >= 150) {
                     Log.m14711w(64, "Text.set took %dms for %d chars, maxWidth: %d, text:\n%s", Integer.valueOf(elapsedRealtime2), Integer.valueOf(str.length()), Integer.valueOf(i), str);
@@ -1522,7 +1522,7 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
                     Log.m14716v(64, "Text.set took %dms for %d chars, maxWidth: %d", Integer.valueOf(elapsedRealtime2), Integer.valueOf(str.length()), Integer.valueOf(i));
                 }
             } catch (Throwable th) {
-                Log.m14712w(64, "Couldn't parse %d chars for max width: %d, fontSize: %f, text:\n%s", th, Integer.valueOf(str.length()), Integer.valueOf(i), Float.valueOf(C4868i.m24726c2().m24592t0()), str);
+                Log.m14712w(64, "Couldn't parse %d chars for max width: %d, fontSize: %f, text:\n%s", th, Integer.valueOf(str.length()), Integer.valueOf(i), Float.valueOf(C4868i.m24727c2().m24593t0()), str);
                 throw th;
             }
         } else {
@@ -1530,47 +1530,47 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         }
     }
 
-    public final void m22925l(Path path, C5455v0 v0Var, int i, int i2, int i3, boolean z, boolean z2) {
+    public final void m22926l(Path path, C5455v0 v0Var, int i, int i2, int i3, boolean z, boolean z2) {
         TextPaint o0;
         int i4;
-        int N = m22982N(this.f17726Q, v0Var.m22687g(), z2, true);
-        int i5 = C1357a0.m37541i(3.0f);
-        Paint.FontMetricsInt T = m22970T(m22915o0(v0Var.m22687g()).getTextSize());
+        int N = m22983N(this.f17726Q, v0Var.m22688g(), z2, true);
+        int i5 = C1357a0.m37544i(3.0f);
+        Paint.FontMetricsInt T = m22971T(m22916o0(v0Var.m22688g()).getTextSize());
         if (z) {
-            int f0 = m22941f0(v0Var.m22684j());
+            int f0 = m22942f0(v0Var.m22685j());
             int i6 = i + (this.f17736a / 2);
             int i7 = f0 / 2;
-            i4 = v0Var.m22708D(i6 - i7, i6 + i7, 0);
+            i4 = v0Var.m22709D(i6 - i7, i6 + i7, 0);
         } else {
-            i4 = v0Var.m22708D(i, i2, i3);
+            i4 = v0Var.m22709D(i, i2, i3);
         }
-        int r = v0Var.m22676r();
-        float p = v0Var.m22678p();
-        RectF a0 = C1410y.m37050a0();
+        int r = v0Var.m22677r();
+        float p = v0Var.m22679p();
+        RectF a0 = C1410y.m37053a0();
         float f = i4 - N;
         a0.left = f;
         a0.top = r - N;
         float f2 = f + p;
         float f3 = N;
         a0.right = f2 + f3 + f3;
-        a0.bottom = r + (v0Var.m22686h() == -1 ? T.descent - T.ascent : v0Var.m22686h()) + N;
-        a0.offset(0.0f, o0.baselineShift + m22924l0(v0Var));
+        a0.bottom = r + (v0Var.m22687h() == -1 ? T.descent - T.ascent : v0Var.m22687h()) + N;
+        a0.offset(0.0f, o0.baselineShift + m22925l0(v0Var));
         float f4 = i5;
         path.addRoundRect(a0, f4, f4, Path.Direction.CW);
     }
 
-    public final int m22924l0(C5455v0 v0Var) {
+    public final int m22925l0(C5455v0 v0Var) {
         if (this.f17737a0 > 0) {
-            return (m22958Z(v0Var.m22684j()) - m22927k0(v0Var)) / 2;
+            return (m22959Z(v0Var.m22685j()) - m22928k0(v0Var)) / 2;
         }
         return 0;
     }
 
-    public final void m22923l1(final java.lang.String r24) {
-        throw new UnsupportedOperationException("Method not decompiled: ie.RunnableC5390g.m22923l1(java.lang.String):void");
+    public final void m22924l1(final java.lang.String r24) {
+        throw new UnsupportedOperationException("Method not decompiled: ie.RunnableC5390g.m22924l1(java.lang.String):void");
     }
 
-    public final void m22922m(int i, int i2) {
+    public final void m22923m(int i, int i2) {
         if (this.f17734Y == null) {
             this.f17734Y = new ArrayList();
         }
@@ -1580,13 +1580,13 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         }
     }
 
-    public int m22921m0() {
-        return m22918n0(null, null, C5063c.m24144b(this.f17738b, Log.TAG_CONTACT), false);
+    public int m22922m0() {
+        return m22919n0(null, null, C5063c.m24145b(this.f17738b, Log.TAG_CONTACT), false);
     }
 
-    public final void m22920m1(boolean z) {
-        if (m22904s0() != z) {
-            this.f17738b = C5063c.m24138h(this.f17738b, 16777216, z);
+    public final void m22921m1(boolean z) {
+        if (m22905s0() != z) {
+            this.f17738b = C5063c.m24139h(this.f17738b, 16777216, z);
             ViewGroup viewGroup = null;
             if (z) {
                 View view = this.f17719B0;
@@ -1608,16 +1608,16 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         }
     }
 
-    public boolean m22919n() {
-        return (this.f17738b & Log.TAG_CRASH) != 0 || (C4403w.m27984G2() && (this.f17738b & 268435456) != 0);
+    public boolean m22920n() {
+        return (this.f17738b & Log.TAG_CRASH) != 0 || (C4403w.m27986G2() && (this.f17738b & 268435456) != 0);
     }
 
-    public int m22918n0(AbstractC5408k kVar, AbstractC5411l0 l0Var, boolean z, boolean z2) {
-        AbstractC5408k X0 = m22961X0(kVar, l0Var);
-        return m22896w0(l0Var) ? X0.mo7852o0(z2) : X0.mo7855c();
+    public int m22919n0(AbstractC5408k kVar, AbstractC5411l0 l0Var, boolean z, boolean z2) {
+        AbstractC5408k X0 = m22962X0(kVar, l0Var);
+        return m22897w0(l0Var) ? X0.mo7852o0(z2) : X0.mo7855c();
     }
 
-    public boolean m22917n1(int i) {
+    public boolean m22918n1(int i) {
         if (this.f17738b == i) {
             return false;
         }
@@ -1625,24 +1625,24 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return true;
     }
 
-    public final void m22916o() {
+    public final void m22917o() {
         View view = this.f17719B0;
         if (view != null) {
             view.removeCallbacks(this);
         }
     }
 
-    public TextPaint m22915o0(AbstractC5411l0 l0Var) {
+    public TextPaint m22916o0(AbstractC5411l0 l0Var) {
         TextPaint textPaint;
         int i = 0;
         boolean z = (this.f17738b & 4) != 0;
-        float d = l0Var != null ? l0Var.mo22757d() : 0.0f;
+        float d = l0Var != null ? l0Var.mo22758d() : 0.0f;
         if (l0Var != null) {
-            textPaint = l0Var.m22783k(this.f17725P, z);
+            textPaint = l0Var.m22784k(this.f17725P, z);
         } else if (z) {
-            textPaint = (this.f17738b & 67108864) != 0 ? this.f17725P.m22663e() : this.f17725P.m22664d();
+            textPaint = (this.f17738b & 67108864) != 0 ? this.f17725P.m22664e() : this.f17725P.m22665d();
         } else {
-            textPaint = this.f17725P.m22662f();
+            textPaint = this.f17725P.m22663f();
         }
         if (d != 0.0f) {
             i = (int) (textPaint.ascent() * d);
@@ -1651,60 +1651,60 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         return textPaint;
     }
 
-    public void m22914o1(AbstractC4345j jVar) {
+    public void m22915o1(AbstractC4345j jVar) {
         this.f17762x0 = jVar;
     }
 
-    public void m22913p() {
+    public void m22914p() {
         C5398h hVar = this.f17763y0;
         if (hVar != null) {
             C5399i iVar = hVar.f17782d;
             if (iVar != null) {
-                iVar.m22850k(false, true);
+                iVar.m22851k(false, true);
             }
             this.f17763y0 = null;
             if ((this.f17738b & 8) != 0) {
-                m22916o();
+                m22917o();
             }
             AbstractC4345j jVar = this.f17762x0;
             if (jVar != null) {
                 jVar.invalidate();
             }
         }
-        m22920m1(false);
+        m22921m1(false);
     }
 
-    public AbstractC4345j m22912p0() {
+    public AbstractC4345j m22913p0() {
         return this.f17762x0;
     }
 
-    public void m22910q(int i) {
+    public void m22911q(int i) {
         if (this.f17736a != i) {
-            m22926k1(i, this.f17729T, this.f17739b0);
+            m22927k1(i, this.f17729T, this.f17739b0);
         }
     }
 
-    public void m22908q1(Rect rect) {
+    public void m22909q1(Rect rect) {
         int i = this.f17758t0;
         rect.set(i, this.f17761w0, getWidth() + i, this.f17761w0 + getHeight());
     }
 
-    public final void m22907r() {
+    public final void m22908r() {
         C6035e<C5399i> eVar = this.f17731V;
         if (eVar != null) {
-            for (int p = eVar.m21496p() - 1; p >= 0; p--) {
-                C5399i q = this.f17731V.m21495q(p);
+            for (int p = eVar.m21497p() - 1; p >= 0; p--) {
+                C5399i q = this.f17731V.m21496q(p);
                 if (q != null) {
                     q.mo4501a3();
                 }
             }
-            this.f17731V.m21509b();
+            this.f17731V.m21510b();
             this.f17731V = null;
         }
     }
 
-    public boolean m22906r0(int i, boolean z) {
-        if (this.f17730U.get(i).m22689e() == null) {
+    public boolean m22907r0(int i, boolean z) {
+        if (this.f17730U.get(i).m22690e() == null) {
             return !z;
         }
         AbstractC4345j jVar = this.f17762x0;
@@ -1717,63 +1717,63 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
     @Override
     public void run() {
         View view = this.f17719B0;
-        if (view != null && this.f17763y0 != null && m22963W0(view)) {
+        if (view != null && this.f17763y0 != null && m22964W0(view)) {
             view.performHapticFeedback(0);
             if ((this.f17738b & 8) != 0) {
-                m22920m1(true);
+                m22921m1(true);
             }
         }
     }
 
-    public final void m22905s() {
-        m22920m1(false);
+    public final void m22906s() {
+        m22921m1(false);
     }
 
-    public final boolean m22904s0() {
+    public final boolean m22905s0() {
         return (this.f17738b & 16777216) != 0;
     }
 
-    public void m22903t(Canvas canvas, int i, int i2) {
-        m22891z(canvas, i, i2, null, 1.0f);
+    public void m22904t(Canvas canvas, int i, int i2) {
+        m22892z(canvas, i, i2, null, 1.0f);
     }
 
-    public void m22901u(Canvas canvas, int i, int i2, int i3, int i4) {
-        m22899v(canvas, i, i2, i3, i4, null, 1.0f);
+    public void m22902u(Canvas canvas, int i, int i2, int i3, int i4) {
+        m22900v(canvas, i, i2, i3, i4, null, 1.0f);
     }
 
-    public void m22899v(Canvas canvas, int i, int i2, int i3, int i4, AbstractC5408k kVar, float f) {
-        m22897w(canvas, i, i2, i3, i4, kVar, f, null);
+    public void m22900v(Canvas canvas, int i, int i2, int i3, int i4, AbstractC5408k kVar, float f) {
+        m22898w(canvas, i, i2, i3, i4, kVar, f, null);
     }
 
-    public void m22897w(Canvas canvas, int i, int i2, int i3, int i4, AbstractC5408k kVar, float f, C6238b bVar) {
-        m22895x(canvas, i, i2, i3, i4, kVar, f, bVar, -1);
+    public void m22898w(Canvas canvas, int i, int i2, int i3, int i4, AbstractC5408k kVar, float f, C6238b bVar) {
+        m22896x(canvas, i, i2, i3, i4, kVar, f, bVar, -1);
     }
 
-    public final boolean m22896w0(AbstractC5411l0 l0Var) {
-        return (C5063c.m24144b(this.f17738b, Log.TAG_CONTACT) || (l0Var != null && l0Var.mo22738o())) && !C5063c.m24144b(this.f17738b, Log.TAG_PAINT);
+    public final boolean m22897w0(AbstractC5411l0 l0Var) {
+        return (C5063c.m24145b(this.f17738b, Log.TAG_CONTACT) || (l0Var != null && l0Var.mo22739o())) && !C5063c.m24145b(this.f17738b, Log.TAG_PAINT);
     }
 
-    public void m22895x(android.graphics.Canvas r31, int r32, int r33, int r34, int r35, ie.AbstractC5408k r36, float r37, p156kd.C6238b r38, int r39) {
-        throw new UnsupportedOperationException("Method not decompiled: ie.RunnableC5390g.m22895x(android.graphics.Canvas, int, int, int, int, ie.k, float, kd.b, int):void");
+    public void m22896x(android.graphics.Canvas r31, int r32, int r33, int r34, int r35, ie.AbstractC5408k r36, float r37, p156kd.C6238b r38, int r39) {
+        throw new UnsupportedOperationException("Method not decompiled: ie.RunnableC5390g.m22896x(android.graphics.Canvas, int, int, int, int, ie.k, float, kd.b, int):void");
     }
 
-    public boolean m22894x0() {
+    public boolean m22895x0() {
         return (this.f17738b & Log.TAG_TDLIB_FILES) != 0;
     }
 
-    public void m22893y(Canvas canvas, int i, int i2, AbstractC5408k kVar) {
-        m22891z(canvas, i, i2, kVar, 1.0f);
+    public void m22894y(Canvas canvas, int i, int i2, AbstractC5408k kVar) {
+        m22892z(canvas, i, i2, kVar, 1.0f);
     }
 
-    public boolean m22892y0() {
-        return C5070i.m24061i(this.f17729T);
+    public boolean m22893y0() {
+        return C5070i.m24062i(this.f17729T);
     }
 
-    public void m22891z(Canvas canvas, int i, int i2, AbstractC5408k kVar, float f) {
-        m22899v(canvas, i, i, 0, i2, kVar, f);
+    public void m22892z(Canvas canvas, int i, int i2, AbstractC5408k kVar, float f) {
+        m22900v(canvas, i, i, 0, i2, kVar, f);
     }
 
-    public boolean m22890z0() {
+    public boolean m22891z0() {
         return (this.f17738b & 134217728) != 0;
     }
 
@@ -1791,8 +1791,8 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
         this.f17726Q = kVar;
         this.f17739b0 = l0VarArr;
         this.f17727R = str2;
-        this.f17728S = !C5070i.m24061i(str2) ? (int) C7389v0.m16680T1(str2, m22915o0(null)) : 0;
-        m22929j1(i, str);
+        this.f17728S = !C5070i.m24062i(str2) ? (int) C7389v0.m16680T1(str2, m22916o0(null)) : 0;
+        m22930j1(i, str);
     }
 
     public static class C5392b {
@@ -1821,120 +1821,120 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
             throw new IllegalArgumentException();
         }
 
-        public C5392b m22889a(int i) {
-            return m22865y(i | this.f17774h);
+        public C5392b m22890a(int i) {
+            return m22866y(i | this.f17774h);
         }
 
-        public C5392b m22888b() {
-            return m22887c(true);
+        public C5392b m22889b() {
+            return m22888c(true);
         }
 
-        public C5392b m22887c(boolean z) {
-            return m22865y(C5063c.m24138h(this.f17774h, 4, z));
+        public C5392b m22888c(boolean z) {
+            return m22866y(C5063c.m24139h(this.f17774h, 4, z));
         }
 
-        public C5392b m22886d() {
-            return m22885e(true);
+        public C5392b m22887d() {
+            return m22886e(true);
         }
 
-        public C5392b m22885e(boolean z) {
-            return m22865y(C5063c.m24138h(this.f17774h, Log.TAG_CONTACT, z));
+        public C5392b m22886e(boolean z) {
+            return m22866y(C5063c.m24139h(this.f17774h, Log.TAG_CONTACT, z));
         }
 
-        public RunnableC5390g m22884f() {
+        public RunnableC5390g m22885f() {
             RunnableC5390g gVar = new RunnableC5390g(this.f17767a, this.f17768b, this.f17769c, this.f17770d, this.f17771e, this.f17772f, this.f17773g, this.f17774h, this.f17775i, this.f17776j, this.f17778l);
             AbstractC4345j jVar = this.f17777k;
             if (jVar != null) {
-                gVar.m22914o1(jVar);
+                gVar.m22915o1(jVar);
             }
             return gVar;
         }
 
-        public C5392b m22883g() {
-            return m22882h(true);
+        public C5392b m22884g() {
+            return m22883h(true);
         }
 
-        public C5392b m22882h(boolean z) {
-            return m22865y(C5063c.m24138h(this.f17774h, Log.TAG_EMOJI, z));
+        public C5392b m22883h(boolean z) {
+            return m22866y(C5063c.m24139h(this.f17774h, Log.TAG_EMOJI, z));
         }
 
-        public C5392b m22881i(AbstractC5411l0[] l0VarArr) {
+        public C5392b m22882i(AbstractC5411l0[] l0VarArr) {
             this.f17775i = l0VarArr;
             return this;
         }
 
-        public C5392b m22880j() {
-            return m22879k(true);
+        public C5392b m22881j() {
+            return m22880k(true);
         }
 
-        public C5392b m22879k(boolean z) {
-            return m22865y(C5063c.m24138h(this.f17774h, Log.TAG_VIDEO, z));
+        public C5392b m22880k(boolean z) {
+            return m22866y(C5063c.m24139h(this.f17774h, Log.TAG_VIDEO, z));
         }
 
-        public C5392b m22878l() {
-            return m22877m(true);
+        public C5392b m22879l() {
+            return m22878m(true);
         }
 
-        public C5392b m22877m(boolean z) {
-            return m22865y(C5063c.m24138h(this.f17774h, Log.TAG_ROUND, z));
+        public C5392b m22878m(boolean z) {
+            return m22866y(C5063c.m24139h(this.f17774h, Log.TAG_ROUND, z));
         }
 
-        public C5392b m22876n(AbstractC5396f fVar) {
+        public C5392b m22877n(AbstractC5396f fVar) {
             this.f17773g = fVar;
             return this;
         }
 
-        public C5392b m22875o(AbstractC5397g gVar) {
+        public C5392b m22876o(AbstractC5397g gVar) {
             this.f17772f = gVar;
             return this;
         }
 
-        public C5392b m22874p(int i) {
+        public C5392b m22875p(int i) {
             this.f17771e = i;
             return this;
         }
 
-        public C5392b m22873q() {
-            return m22872r(true);
+        public C5392b m22874q() {
+            return m22873r(true);
         }
 
-        public C5392b m22872r(boolean z) {
-            return m22865y(C5063c.m24138h(this.f17774h, Log.TAG_PAINT, z));
+        public C5392b m22873r(boolean z) {
+            return m22866y(C5063c.m24139h(this.f17774h, Log.TAG_PAINT, z));
         }
 
-        public C5392b m22871s() {
-            return m22870t(true);
+        public C5392b m22872s() {
+            return m22871t(true);
         }
 
-        public C5392b m22870t(boolean z) {
-            return m22865y(C5063c.m24138h(this.f17774h, Log.TAG_NDK, z));
+        public C5392b m22871t(boolean z) {
+            return m22866y(C5063c.m24139h(this.f17774h, Log.TAG_NDK, z));
         }
 
-        public C5392b m22869u(AbstractC5394d dVar) {
+        public C5392b m22870u(AbstractC5394d dVar) {
             this.f17778l = dVar;
             return this;
         }
 
-        public C5392b m22868v() {
-            return m22874p(1);
+        public C5392b m22869v() {
+            return m22875p(1);
         }
 
-        public C5392b m22867w(C5457w0 w0Var) {
+        public C5392b m22868w(C5457w0 w0Var) {
             this.f17769c = w0Var;
             return this;
         }
 
-        public C5392b m22866x(String str) {
+        public C5392b m22867x(String str) {
             this.f17776j = str;
             return this;
         }
 
-        public C5392b m22865y(int i) {
+        public C5392b m22866y(int i) {
             this.f17774h = i;
             return this;
         }
 
-        public C5392b m22864z(AbstractC4345j jVar) {
+        public C5392b m22865z(AbstractC4345j jVar) {
             this.f17777k = jVar;
             return this;
         }
@@ -1945,14 +1945,14 @@ public class RunnableC5390g implements Runnable, C5078d.AbstractC5081c, C3944i.A
             this.f17768b = i;
             this.f17769c = w0Var;
             this.f17770d = kVar;
-            TdApi.TextEntity[] x5 = C4779t2.m25392x5(charSequence, false);
-            AbstractC5411l0[] E = (x5 == null || x5.length <= 0) ? null : AbstractC5411l0.m22790E(q6Var, charSequence.toString(), x5, qVar);
-            m22881i(E == null ? C4403w.m27916X2(charSequence) : E);
+            TdApi.TextEntity[] x5 = C4779t2.m25393x5(charSequence, false);
+            AbstractC5411l0[] E = (x5 == null || x5.length <= 0) ? null : AbstractC5411l0.m22791E(q6Var, charSequence.toString(), x5, qVar);
+            m22882i(E == null ? C4403w.m27918X2(charSequence) : E);
         }
 
         public C5392b(C10930q6 q6Var, TdApi.FormattedText formattedText, HandlerC10770jj.C10788q qVar, int i, C5457w0 w0Var, AbstractC5408k kVar) {
             this(formattedText.text, i, w0Var, kVar);
-            m22881i(AbstractC5411l0.m22790E(q6Var, this.f17767a, formattedText.entities, qVar));
+            m22882i(AbstractC5411l0.m22791E(q6Var, this.f17767a, formattedText.entities, qVar));
         }
     }
 }

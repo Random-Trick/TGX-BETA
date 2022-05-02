@@ -9,7 +9,7 @@ public final class C6188y extends AbstractC6165s0 {
     }
 
     @Override
-    public final void mo21083a() {
-        this.f19586b.mo21142g(1);
+    public final void mo21084a() {
+        this.f19586b.mo21143g(1);
     }
 }

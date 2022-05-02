@@ -6,16 +6,16 @@ import p055e0.C4104c;
 import p336y.C10245j0;
 
 public class C4199a {
-    public boolean m28480a() {
-        C4104c cVar = (C4104c) C4102a.m28909a(C4104c.class);
+    public boolean m28482a() {
+        C4104c cVar = (C4104c) C4102a.m28911a(C4104c.class);
         if (cVar != null) {
-            return cVar.m28905c(C10245j0.f33024g);
+            return cVar.m28907c(C10245j0.f33027g);
         }
         return true;
     }
 
-    public boolean m28479b(AbstractC0610l1 l1Var) {
-        C4104c cVar = (C4104c) C4102a.m28909a(C4104c.class);
-        return (cVar == null || cVar.m28905c(C10245j0.f33024g)) && l1Var.mo40756x0() == 256;
+    public boolean m28481b(AbstractC0610l1 l1Var) {
+        C4104c cVar = (C4104c) C4102a.m28911a(C4104c.class);
+        return (cVar == null || cVar.m28907c(C10245j0.f33027g)) && l1Var.mo40759x0() == 256;
     }
 }

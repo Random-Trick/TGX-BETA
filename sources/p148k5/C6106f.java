@@ -74,14 +74,14 @@ public class C6106f implements Handler.Callback {
         this.f19382Y = iVar;
         this.f19374Q = dVar;
         this.f19375R = new C6360l0(dVar);
-        if (C8248h.m13050a(context)) {
+        if (C8248h.m13049a(context)) {
             this.f19383Z = false;
         }
         iVar.sendMessage(iVar.obtainMessage(6));
     }
 
-    public static Status m21299j(C6085b<?> bVar, C5217a aVar) {
-        String b = bVar.m21386b();
+    public static Status m21300j(C6085b<?> bVar, C5217a aVar) {
+        String b = bVar.m21387b();
         String valueOf = String.valueOf(aVar);
         StringBuilder sb2 = new StringBuilder(String.valueOf(b).length() + 63 + valueOf.length());
         sb2.append("API: ");
@@ -92,30 +92,30 @@ public class C6106f implements Handler.Callback {
     }
 
     @RecentlyNonNull
-    public static C6106f m21296m(@RecentlyNonNull Context context) {
+    public static C6106f m21297m(@RecentlyNonNull Context context) {
         C6106f fVar;
         synchronized (f19368c0) {
             if (f19369d0 == null) {
                 HandlerThread handlerThread = new HandlerThread("GoogleApiHandler", 9);
                 handlerThread.start();
-                f19369d0 = new C6106f(context.getApplicationContext(), handlerThread.getLooper(), C5220d.m23604p());
+                f19369d0 = new C6106f(context.getApplicationContext(), handlerThread.getLooper(), C5220d.m23605p());
             }
             fVar = f19369d0;
         }
         return fVar;
     }
 
-    public final C6093c1<?> m21301h(AbstractC5864e<?> eVar) {
-        C6085b<?> j = eVar.m21918j();
+    public final C6093c1<?> m21302h(AbstractC5864e<?> eVar) {
+        C6085b<?> j = eVar.m21919j();
         C6093c1<?> c1Var = this.f19378U.get(j);
         if (c1Var == null) {
             c1Var = new C6093c1<>(this, eVar);
             this.f19378U.put(j, c1Var);
         }
-        if (c1Var.m21369F()) {
+        if (c1Var.m21370F()) {
             this.f19381X.add(j);
         }
-        c1Var.m21372C();
+        c1Var.m21373C();
         return c1Var;
     }
 
@@ -138,7 +138,7 @@ public class C6106f implements Handler.Callback {
                 break;
             case 2:
                 C6167s2 s2Var = (C6167s2) message.obj;
-                Iterator<C6085b<?>> it = s2Var.m21132a().iterator();
+                Iterator<C6085b<?>> it = s2Var.m21133a().iterator();
                 while (true) {
                     if (!it.hasNext()) {
                         break;
@@ -146,41 +146,41 @@ public class C6106f implements Handler.Callback {
                         C6085b<?> next = it.next();
                         C6093c1<?> c1Var2 = this.f19378U.get(next);
                         if (c1Var2 == null) {
-                            s2Var.m21131b(next, new C5217a(13), null);
+                            s2Var.m21132b(next, new C5217a(13), null);
                             break;
-                        } else if (c1Var2.m21370E()) {
-                            s2Var.m21131b(next, C5217a.f17353N, c1Var2.m21340v().mo21245h());
+                        } else if (c1Var2.m21371E()) {
+                            s2Var.m21132b(next, C5217a.f17353N, c1Var2.m21341v().mo21246h());
                         } else {
-                            C5217a y = c1Var2.m21337y();
+                            C5217a y = c1Var2.m21338y();
                             if (y != null) {
-                                s2Var.m21131b(next, y, null);
+                                s2Var.m21132b(next, y, null);
                             } else {
-                                c1Var2.m21371D(s2Var);
-                                c1Var2.m21372C();
+                                c1Var2.m21372D(s2Var);
+                                c1Var2.m21373C();
                             }
                         }
                     }
                 }
             case 3:
                 for (C6093c1<?> c1Var3 : this.f19378U.values()) {
-                    c1Var3.m21338x();
-                    c1Var3.m21372C();
+                    c1Var3.m21339x();
+                    c1Var3.m21373C();
                 }
                 break;
             case 4:
             case 8:
             case 13:
                 C6162r1 r1Var = (C6162r1) message.obj;
-                C6093c1<?> c1Var4 = this.f19378U.get(r1Var.f19536c.m21918j());
+                C6093c1<?> c1Var4 = this.f19378U.get(r1Var.f19536c.m21919j());
                 if (c1Var4 == null) {
-                    c1Var4 = m21301h(r1Var.f19536c);
+                    c1Var4 = m21302h(r1Var.f19536c);
                 }
-                if (!c1Var4.m21369F() || this.f19377T.get() == r1Var.f19535b) {
-                    c1Var4.m21342r(r1Var.f19534a);
+                if (!c1Var4.m21370F() || this.f19377T.get() == r1Var.f19535b) {
+                    c1Var4.m21343r(r1Var.f19534a);
                     break;
                 } else {
-                    r1Var.f19534a.mo21184a(f19366a0);
-                    c1Var4.m21341u();
+                    r1Var.f19534a.mo21185a(f19366a0);
+                    c1Var4.m21342u();
                     break;
                 }
                 break;
@@ -191,24 +191,24 @@ public class C6106f implements Handler.Callback {
                 while (true) {
                     if (it2.hasNext()) {
                         C6093c1<?> next2 = it2.next();
-                        if (next2.m21368G() == i2) {
+                        if (next2.m21369G() == i2) {
                             c1Var = next2;
                         }
                     }
                 }
                 if (c1Var != null) {
-                    if (aVar.m23615b() == 13) {
-                        String g = this.f19374Q.mo23587g(aVar.m23615b());
-                        String c = aVar.m23614c();
+                    if (aVar.m23616b() == 13) {
+                        String g = this.f19374Q.mo23588g(aVar.m23616b());
+                        String c = aVar.m23615c();
                         StringBuilder sb2 = new StringBuilder(String.valueOf(g).length() + 69 + String.valueOf(c).length());
                         sb2.append("Error resolution was canceled by the user, original error message: ");
                         sb2.append(g);
                         sb2.append(": ");
                         sb2.append(c);
-                        C6093c1.m21362M(c1Var, new Status(17, sb2.toString()));
+                        C6093c1.m21363M(c1Var, new Status(17, sb2.toString()));
                         break;
                     } else {
-                        C6093c1.m21362M(c1Var, m21299j(C6093c1.m21361N(c1Var), aVar));
+                        C6093c1.m21363M(c1Var, m21300j(C6093c1.m21362N(c1Var), aVar));
                         break;
                     }
                 } else {
@@ -221,20 +221,20 @@ public class C6106f implements Handler.Callback {
                 }
             case 6:
                 if (this.f19373P.getApplicationContext() instanceof Application) {
-                    ComponentCallbacks2C6090c.m21379c((Application) this.f19373P.getApplicationContext());
-                    ComponentCallbacks2C6090c.m21380b().m21381a(new C6185x0(this));
-                    if (!ComponentCallbacks2C6090c.m21380b().m21377e(true)) {
+                    ComponentCallbacks2C6090c.m21380c((Application) this.f19373P.getApplicationContext());
+                    ComponentCallbacks2C6090c.m21381b().m21382a(new C6185x0(this));
+                    if (!ComponentCallbacks2C6090c.m21381b().m21378e(true)) {
                         this.f19386c = 300000L;
                         break;
                     }
                 }
                 break;
             case 7:
-                m21301h((AbstractC5864e) message.obj);
+                m21302h((AbstractC5864e) message.obj);
                 break;
             case 9:
                 if (this.f19378U.containsKey(message.obj)) {
-                    this.f19378U.get(message.obj).m21336z();
+                    this.f19378U.get(message.obj).m21337z();
                     break;
                 }
                 break;
@@ -242,64 +242,64 @@ public class C6106f implements Handler.Callback {
                 for (C6085b<?> bVar2 : this.f19381X) {
                     C6093c1<?> remove = this.f19378U.remove(bVar2);
                     if (remove != null) {
-                        remove.m21341u();
+                        remove.m21342u();
                     }
                 }
                 this.f19381X.clear();
                 break;
             case 11:
                 if (this.f19378U.containsKey(message.obj)) {
-                    this.f19378U.get(message.obj).m21374A();
+                    this.f19378U.get(message.obj).m21375A();
                     break;
                 }
                 break;
             case 12:
                 if (this.f19378U.containsKey(message.obj)) {
-                    this.f19378U.get(message.obj).m21373B();
+                    this.f19378U.get(message.obj).m21374B();
                     break;
                 }
                 break;
             case 14:
                 C6180w wVar = (C6180w) message.obj;
-                C6085b<?> a = wVar.m21101a();
+                C6085b<?> a = wVar.m21102a();
                 if (!this.f19378U.containsKey(a)) {
-                    wVar.m21100b().m19084c(Boolean.FALSE);
+                    wVar.m21101b().m19085c(Boolean.FALSE);
                     break;
                 } else {
-                    wVar.m21100b().m19084c(Boolean.valueOf(C6093c1.m21365J(this.f19378U.get(a), false)));
+                    wVar.m21101b().m19085c(Boolean.valueOf(C6093c1.m21366J(this.f19378U.get(a), false)));
                     break;
                 }
             case 15:
                 C6098d1 d1Var = (C6098d1) message.obj;
-                if (this.f19378U.containsKey(C6098d1.m21334a(d1Var))) {
-                    C6093c1.m21364K(this.f19378U.get(C6098d1.m21334a(d1Var)), d1Var);
+                if (this.f19378U.containsKey(C6098d1.m21335a(d1Var))) {
+                    C6093c1.m21365K(this.f19378U.get(C6098d1.m21335a(d1Var)), d1Var);
                     break;
                 }
                 break;
             case 16:
                 C6098d1 d1Var2 = (C6098d1) message.obj;
-                if (this.f19378U.containsKey(C6098d1.m21334a(d1Var2))) {
-                    C6093c1.m21363L(this.f19378U.get(C6098d1.m21334a(d1Var2)), d1Var2);
+                if (this.f19378U.containsKey(C6098d1.m21335a(d1Var2))) {
+                    C6093c1.m21364L(this.f19378U.get(C6098d1.m21335a(d1Var2)), d1Var2);
                     break;
                 }
                 break;
             case 17:
-                m21298k();
+                m21299k();
                 break;
             case 18:
                 C6145n1 n1Var = (C6145n1) message.obj;
                 if (n1Var.f19487c == 0) {
-                    m21297l().mo17209a(new C6390v(n1Var.f19486b, Arrays.asList(n1Var.f19485a)));
+                    m21298l().mo17209a(new C6390v(n1Var.f19486b, Arrays.asList(n1Var.f19485a)));
                     break;
                 } else {
                     C6390v vVar = this.f19371N;
                     if (vVar != null) {
-                        List<C6371p> c2 = vVar.m20483c();
-                        if (this.f19371N.m20484b() != n1Var.f19486b || (c2 != null && c2.size() >= n1Var.f19488d)) {
+                        List<C6371p> c2 = vVar.m20484c();
+                        if (this.f19371N.m20485b() != n1Var.f19486b || (c2 != null && c2.size() >= n1Var.f19488d)) {
                             this.f19382Y.removeMessages(17);
-                            m21298k();
+                            m21299k();
                         } else {
-                            this.f19371N.m20482d(n1Var.f19485a);
+                            this.f19371N.m20483d(n1Var.f19485a);
                         }
                     }
                     if (this.f19371N == null) {
@@ -325,108 +325,108 @@ public class C6106f implements Handler.Callback {
         return true;
     }
 
-    public final <T> void m21300i(C6777m<T> mVar, int i, AbstractC5864e eVar) {
+    public final <T> void m21301i(C6777m<T> mVar, int i, AbstractC5864e eVar) {
         C6140m1 b;
-        if (i != 0 && (b = C6140m1.m21198b(this, i, eVar.m21918j())) != null) {
-            AbstractC6775l<T> a = mVar.m19086a();
+        if (i != 0 && (b = C6140m1.m21199b(this, i, eVar.m21919j())) != null) {
+            AbstractC6775l<T> a = mVar.m19087a();
             Handler handler = this.f19382Y;
             handler.getClass();
-            a.mo19079b(ExecutorC6181w0.m21099a(handler), b);
+            a.mo19080b(ExecutorC6181w0.m21100a(handler), b);
         }
     }
 
-    public final void m21298k() {
+    public final void m21299k() {
         C6390v vVar = this.f19371N;
         if (vVar != null) {
-            if (vVar.m20484b() > 0 || m21289t()) {
-                m21297l().mo17209a(vVar);
+            if (vVar.m20485b() > 0 || m21290t()) {
+                m21298l().mo17209a(vVar);
             }
             this.f19371N = null;
         }
     }
 
-    public final AbstractC6395x m21297l() {
+    public final AbstractC6395x m21298l() {
         if (this.f19372O == null) {
-            this.f19372O = C6393w.m20475a(this.f19373P);
+            this.f19372O = C6393w.m20476a(this.f19373P);
         }
         return this.f19372O;
     }
 
-    public final int m21295n() {
+    public final int m21296n() {
         return this.f19376S.getAndIncrement();
     }
 
-    public final void m21294o(@RecentlyNonNull AbstractC5864e<?> eVar) {
+    public final void m21295o(@RecentlyNonNull AbstractC5864e<?> eVar) {
         Handler handler = this.f19382Y;
         handler.sendMessage(handler.obtainMessage(7, eVar));
     }
 
-    public final C6093c1 m21293p(C6085b<?> bVar) {
+    public final C6093c1 m21294p(C6085b<?> bVar) {
         return this.f19378U.get(bVar);
     }
 
-    public final void m21292q() {
+    public final void m21293q() {
         Handler handler = this.f19382Y;
         handler.sendMessage(handler.obtainMessage(3));
     }
 
-    public final <O extends C5850a.AbstractC5854d> void m21291r(@RecentlyNonNull AbstractC5864e<O> eVar, int i, @RecentlyNonNull AbstractC3487a<? extends AbstractC5876k, C5850a.AbstractC5852b> aVar) {
+    public final <O extends C5850a.AbstractC5854d> void m21292r(@RecentlyNonNull AbstractC5864e<O> eVar, int i, @RecentlyNonNull AbstractC3487a<? extends AbstractC5876k, C5850a.AbstractC5852b> aVar) {
         C6137l2 l2Var = new C6137l2(i, aVar);
         Handler handler = this.f19382Y;
         handler.sendMessage(handler.obtainMessage(4, new C6162r1(l2Var, this.f19377T.get(), eVar)));
     }
 
-    public final <O extends C5850a.AbstractC5854d, ResultT> void m21290s(@RecentlyNonNull AbstractC5864e<O> eVar, int i, @RecentlyNonNull AbstractC6159r<C5850a.AbstractC5852b, ResultT> rVar, @RecentlyNonNull C6777m<ResultT> mVar, @RecentlyNonNull AbstractC6155q qVar) {
-        m21300i(mVar, rVar.m21155e(), eVar);
+    public final <O extends C5850a.AbstractC5854d, ResultT> void m21291s(@RecentlyNonNull AbstractC5864e<O> eVar, int i, @RecentlyNonNull AbstractC6159r<C5850a.AbstractC5852b, ResultT> rVar, @RecentlyNonNull C6777m<ResultT> mVar, @RecentlyNonNull AbstractC6155q qVar) {
+        m21301i(mVar, rVar.m21156e(), eVar);
         C6146n2 n2Var = new C6146n2(i, rVar, mVar, qVar);
         Handler handler = this.f19382Y;
         handler.sendMessage(handler.obtainMessage(4, new C6162r1(n2Var, this.f19377T.get(), eVar)));
     }
 
-    public final boolean m21289t() {
+    public final boolean m21290t() {
         if (this.f19370M) {
             return false;
         }
-        C6384t a = C6381s.m20497b().m20498a();
-        if (a != null && !a.m20489d()) {
+        C6384t a = C6381s.m20498b().m20499a();
+        if (a != null && !a.m20490d()) {
             return false;
         }
-        int b = this.f19375R.m20553b(this.f19373P, 203390000);
+        int b = this.f19375R.m20554b(this.f19373P, 203390000);
         return b == -1 || b == 0;
     }
 
     @RecentlyNonNull
-    public final <O extends C5850a.AbstractC5854d> AbstractC6775l<Void> m21288u(@RecentlyNonNull AbstractC5864e<O> eVar, @RecentlyNonNull AbstractC6138m<C5850a.AbstractC5852b, ?> mVar, @RecentlyNonNull AbstractC6168t<C5850a.AbstractC5852b, ?> tVar, @RecentlyNonNull Runnable runnable) {
+    public final <O extends C5850a.AbstractC5854d> AbstractC6775l<Void> m21289u(@RecentlyNonNull AbstractC5864e<O> eVar, @RecentlyNonNull AbstractC6138m<C5850a.AbstractC5852b, ?> mVar, @RecentlyNonNull AbstractC6168t<C5850a.AbstractC5852b, ?> tVar, @RecentlyNonNull Runnable runnable) {
         C6777m mVar2 = new C6777m();
-        m21300i(mVar2, mVar.m21199f(), eVar);
+        m21301i(mVar2, mVar.m21200f(), eVar);
         C6141m2 m2Var = new C6141m2(new C6166s1(mVar, tVar, runnable), mVar2);
         Handler handler = this.f19382Y;
         handler.sendMessage(handler.obtainMessage(8, new C6162r1(m2Var, this.f19377T.get(), eVar)));
-        return mVar2.m19086a();
+        return mVar2.m19087a();
     }
 
     @RecentlyNonNull
-    public final <O extends C5850a.AbstractC5854d> AbstractC6775l<Boolean> m21287v(@RecentlyNonNull AbstractC5864e<O> eVar, @RecentlyNonNull C6120i.C6121a aVar, int i) {
+    public final <O extends C5850a.AbstractC5854d> AbstractC6775l<Boolean> m21288v(@RecentlyNonNull AbstractC5864e<O> eVar, @RecentlyNonNull C6120i.C6121a aVar, int i) {
         C6777m mVar = new C6777m();
-        m21300i(mVar, i, eVar);
+        m21301i(mVar, i, eVar);
         C6150o2 o2Var = new C6150o2(aVar, mVar);
         Handler handler = this.f19382Y;
         handler.sendMessage(handler.obtainMessage(13, new C6162r1(o2Var, this.f19377T.get(), eVar)));
-        return mVar.m19086a();
+        return mVar.m19087a();
     }
 
-    public final boolean m21286w(C5217a aVar, int i) {
-        return this.f19374Q.m23599u(this.f19373P, aVar, i);
+    public final boolean m21287w(C5217a aVar, int i) {
+        return this.f19374Q.m23600u(this.f19373P, aVar, i);
     }
 
-    public final void m21285x(@RecentlyNonNull C5217a aVar, int i) {
-        if (!m21286w(aVar, i)) {
+    public final void m21286x(@RecentlyNonNull C5217a aVar, int i) {
+        if (!m21287w(aVar, i)) {
             Handler handler = this.f19382Y;
             handler.sendMessage(handler.obtainMessage(5, i, 0, aVar));
         }
     }
 
-    public final void m21284y(C6371p pVar, int i, long j, int i2) {
+    public final void m21285y(C6371p pVar, int i, long j, int i2) {
         Handler handler = this.f19382Y;
         handler.sendMessage(handler.obtainMessage(18, new C6145n1(pVar, i, j, i2)));
     }

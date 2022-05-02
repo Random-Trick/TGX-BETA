@@ -7,6 +7,6 @@ public final class View$OnClickListenerC3048sa implements View.OnClickListener {
 
     @Override
     public final void onClick(View view) {
-        C2760nb.m33543ph(view);
+        C2760nb.m33546ph(view);
     }
 }

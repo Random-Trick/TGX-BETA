@@ -13,24 +13,24 @@ import p364zd.C11520h;
 import p364zd.C11524j;
 
 public class C11004sj {
-    public final C10930q6 f35338a;
-    public final C6038h<List<AbstractC11006b>> f35339b = new C6038h<>();
-    public final C6038h<List<C11520h>> f35340c = new C6038h<>();
+    public final C10930q6 f35341a;
+    public final C6038h<List<AbstractC11006b>> f35342b = new C6038h<>();
+    public final C6038h<List<C11520h>> f35343c = new C6038h<>();
 
     public class RunnableC11005a implements Runnable {
-        public final AtomicBoolean f35341a;
-        public final Runnable f35342b;
+        public final AtomicBoolean f35344a;
+        public final Runnable f35345b;
 
         public RunnableC11005a(AtomicBoolean atomicBoolean, Runnable runnable) {
-            this.f35341a = atomicBoolean;
-            this.f35342b = runnable;
+            this.f35344a = atomicBoolean;
+            this.f35345b = runnable;
         }
 
         @Override
         public void run() {
-            if (!this.f35341a.getAndSet(true)) {
-                this.f35342b.run();
-                C1379j0.m37330f0(this);
+            if (!this.f35344a.getAndSet(true)) {
+                this.f35345b.run();
+                C1379j0.m37333f0(this);
             }
         }
     }
@@ -40,7 +40,7 @@ public class C11004sj {
     }
 
     public C11004sj(C10930q6 q6Var) {
-        this.f35338a = q6Var;
+        this.f35341a = q6Var;
     }
 
     public static String m2016h(String str) {
@@ -52,13 +52,13 @@ public class C11004sj {
     }
 
     public void m2011m(boolean z, int i, C11520h hVar) {
-        this.f35338a.m2294pc().m4096s0(hVar, z && (this.f35338a.m2294pc().m4146K() == i || this.f35338a.m2294pc().m4145L() == i), C11524j.m174j0(i));
+        this.f35341a.m2294pc().m4096s0(hVar, z && (this.f35341a.m2294pc().m4146K() == i || this.f35341a.m2294pc().m4145L() == i), C11524j.m174j0(i));
     }
 
     public void m2010n(final boolean z, final int i, TdApi.Object object) {
         if (object.getConstructor() == -429971172) {
-            final C11520h hVar = new C11520h(this.f35338a, (TdApi.Background) object);
-            this.f35338a.m2485dd().post(new Runnable() {
+            final C11520h hVar = new C11520h(this.f35341a, (TdApi.Background) object);
+            this.f35341a.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
                     C11004sj.this.m2011m(z, i, hVar);
@@ -71,21 +71,21 @@ public class C11004sj {
         List<AbstractC11006b> list;
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         } else if (constructor == 724728704) {
             TdApi.Background[] backgroundArr = ((TdApi.Backgrounds) object).backgrounds;
             ArrayList arrayList = new ArrayList(backgroundArr.length);
             int i = 0;
             for (TdApi.Background background : backgroundArr) {
-                arrayList.add(new C11520h(this.f35338a, background));
+                arrayList.add(new C11520h(this.f35341a, background));
             }
-            synchronized (this.f35340c) {
-                this.f35340c.m21466j(z ? 1 : 0, arrayList);
-                C6038h<List<AbstractC11006b>> hVar = this.f35339b;
+            synchronized (this.f35343c) {
+                this.f35343c.m21467j(z ? 1 : 0, arrayList);
+                C6038h<List<AbstractC11006b>> hVar = this.f35342b;
                 if (z) {
                     i = 1;
                 }
-                list = (List) C5062b.m24180B(hVar, i);
+                list = (List) C5062b.m24181B(hVar, i);
             }
             if (list != null) {
                 for (AbstractC11006b bVar : list) {
@@ -98,14 +98,14 @@ public class C11004sj {
     }
 
     public void m2008p(Runnable runnable, TdApi.Object object) {
-        this.f35338a.m2485dd().post(runnable);
+        this.f35341a.m2485dd().post(runnable);
     }
 
     public void m2007q(final Runnable runnable, TdApi.Object object) {
         if (object.getConstructor() == -429971172) {
             TdApi.Background background = (TdApi.Background) object;
             if (background.document != null) {
-                this.f35338a.m2270r4().m14783o(new TdApi.DownloadFile(background.document.document.f25373id, 32, 0, 0, true), new Client.AbstractC7865g() {
+                this.f35341a.m2270r4().m14783o(new TdApi.DownloadFile(background.document.document.f25376id, 32, 0, 0, true), new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object2) {
                         C11004sj.this.m2008p(runnable, object2);
@@ -114,28 +114,28 @@ public class C11004sj {
                 return;
             }
         }
-        this.f35338a.m2485dd().post(runnable);
+        this.f35341a.m2485dd().post(runnable);
     }
 
     public void m2018f(C11520h hVar, boolean z) {
-        List<C11520h> e = this.f35340c.m21471e(z ? 1 : 0);
+        List<C11520h> e = this.f35343c.m21472e(z ? 1 : 0);
         if (e != null) {
             e.add(0, hVar);
         }
     }
 
     public void m2017g() {
-        m2015i(this.f35338a.m2294pc().m4146K(), false);
-        m2015i(this.f35338a.m2294pc().m4145L(), false);
+        m2015i(this.f35341a.m2294pc().m4146K(), false);
+        m2015i(this.f35341a.m2294pc().m4145L(), false);
     }
 
     public final void m2015i(final int i, final boolean z) {
         if (z || m2005s(i)) {
             String V = C11524j.m212V(i);
-            if (C5070i.m24061i(V)) {
-                this.f35338a.m2294pc().m4096s0(C11520h.m297g0(this.f35338a), z, C11524j.m174j0(i));
+            if (C5070i.m24062i(V)) {
+                this.f35341a.m2294pc().m4096s0(C11520h.m297g0(this.f35341a), z, C11524j.m174j0(i));
             } else {
-                this.f35338a.m2270r4().m14783o(new TdApi.SearchBackground(V), new Client.AbstractC7865g() {
+                this.f35341a.m2270r4().m14783o(new TdApi.SearchBackground(V), new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object) {
                         C11004sj.this.m2010n(z, i, object);
@@ -146,7 +146,7 @@ public class C11004sj {
     }
 
     public final void m2014j(final boolean z) {
-        this.f35338a.m2270r4().m14783o(new TdApi.GetBackgrounds(z), new Client.AbstractC7865g() {
+        this.f35341a.m2270r4().m14783o(new TdApi.GetBackgrounds(z), new Client.AbstractC7865g() {
             @Override
             public final void mo255t2(TdApi.Object object) {
                 C11004sj.this.m2009o(z, object);
@@ -156,18 +156,18 @@ public class C11004sj {
 
     public void m2013k(AbstractC11006b bVar, boolean z) {
         List<C11520h> e;
-        synchronized (this.f35340c) {
+        synchronized (this.f35343c) {
             int i = 1;
-            e = this.f35340c.m21471e(z ? 1 : 0);
+            e = this.f35343c.m21472e(z ? 1 : 0);
             if (e == null) {
-                List<AbstractC11006b> e2 = this.f35339b.m21471e(z ? 1 : 0);
+                List<AbstractC11006b> e2 = this.f35342b.m21472e(z ? 1 : 0);
                 if (e2 == null) {
                     e2 = new ArrayList<>();
-                    C6038h<List<AbstractC11006b>> hVar = this.f35339b;
+                    C6038h<List<AbstractC11006b>> hVar = this.f35342b;
                     if (!z) {
                         i = 0;
                     }
-                    hVar.m21466j(i, e2);
+                    hVar.m21467j(i, e2);
                     m2014j(z);
                 }
                 e2.add(bVar);
@@ -183,16 +183,16 @@ public class C11004sj {
     }
 
     public void m2006r(String str, long j, final Runnable runnable) {
-        if (C5070i.m24061i(str)) {
+        if (C5070i.m24062i(str)) {
             runnable.run();
             return;
         }
         if (j > 0) {
             RunnableC11005a aVar = new RunnableC11005a(new AtomicBoolean(false), runnable);
-            C1379j0.m37332e0(aVar, j);
+            C1379j0.m37335e0(aVar, j);
             runnable = aVar;
         }
-        this.f35338a.m2270r4().m14783o(new TdApi.SearchBackground(str), new Client.AbstractC7865g() {
+        this.f35341a.m2270r4().m14783o(new TdApi.SearchBackground(str), new Client.AbstractC7865g() {
             @Override
             public final void mo255t2(TdApi.Object object) {
                 C11004sj.this.m2007q(runnable, object);
@@ -201,7 +201,7 @@ public class C11004sj {
     }
 
     public final boolean m2005s(int i) {
-        return C11524j.m212V(i) != null && this.f35338a.m2294pc().m4147J(C11524j.m174j0(i), true) == null;
+        return C11524j.m212V(i) != null && this.f35341a.m2294pc().m4147J(C11524j.m174j0(i), true) == null;
     }
 
     public void m2004t(int i) {
@@ -213,11 +213,11 @@ public class C11004sj {
         int j02 = C11524j.m174j0(i2);
         if (j0 == j02) {
             String V = C11524j.m212V(i);
-            if (!C5070i.m24067c(V, C11524j.m212V(i2))) {
-                C11520h J = this.f35338a.m2294pc().m4147J(j02, true);
-                if (C5070i.m24061i(V) && (J == null || J.m319R())) {
+            if (!C5070i.m24068c(V, C11524j.m212V(i2))) {
+                C11520h J = this.f35341a.m2294pc().m4147J(j02, true);
+                if (C5070i.m24062i(V) && (J == null || J.m319R())) {
                     m2015i(i2, true);
-                } else if (!C5070i.m24061i(V) && J != null && V.equals(m2016h(J.m268w()))) {
+                } else if (!C5070i.m24062i(V) && J != null && V.equals(m2016h(J.m268w()))) {
                     m2015i(i2, true);
                 }
             }

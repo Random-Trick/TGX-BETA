@@ -5,7 +5,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public final class C8678q {
-    public static String m11750a(byte[] bArr) {
+    public static String m11749a(byte[] bArr) {
         try {
             MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
             messageDigest.update(bArr);

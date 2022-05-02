@@ -7,14 +7,14 @@ import p071f2.AbstractC4234j;
 import p243r2.AbstractC8354a;
 
 public class C6551f extends AbstractC6544c<Boolean> {
-    public static final String f20391i = AbstractC4234j.m28360f("StorageNotLowTracker");
+    public static final String f20391i = AbstractC4234j.m28362f("StorageNotLowTracker");
 
     public C6551f(Context context, AbstractC8354a aVar) {
         super(context, aVar);
     }
 
     @Override
-    public IntentFilter mo20125g() {
+    public IntentFilter mo20126g() {
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("android.intent.action.DEVICE_STORAGE_OK");
         intentFilter.addAction("android.intent.action.DEVICE_STORAGE_LOW");
@@ -22,21 +22,21 @@ public class C6551f extends AbstractC6544c<Boolean> {
     }
 
     @Override
-    public void mo20124h(Context context, Intent intent) {
+    public void mo20125h(Context context, Intent intent) {
         if (intent.getAction() != null) {
-            AbstractC4234j.m28362c().mo28359a(f20391i, String.format("Received %s", intent.getAction()), new Throwable[0]);
+            AbstractC4234j.m28364c().mo28361a(f20391i, String.format("Received %s", intent.getAction()), new Throwable[0]);
             String action = intent.getAction();
             action.hashCode();
             if (action.equals("android.intent.action.DEVICE_STORAGE_LOW")) {
-                m20133d(Boolean.FALSE);
+                m20134d(Boolean.FALSE);
             } else if (action.equals("android.intent.action.DEVICE_STORAGE_OK")) {
-                m20133d(Boolean.TRUE);
+                m20134d(Boolean.TRUE);
             }
         }
     }
 
-    public Boolean mo20126b() {
-        Intent registerReceiver = this.f20379b.registerReceiver(null, mo20125g());
+    public Boolean mo20127b() {
+        Intent registerReceiver = this.f20379b.registerReceiver(null, mo20126g());
         if (registerReceiver == null || registerReceiver.getAction() == null) {
             return Boolean.TRUE;
         }

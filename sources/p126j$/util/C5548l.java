@@ -17,22 +17,22 @@ public final class C5548l {
         this.f18083b = i;
     }
 
-    public static C5548l m22469a() {
+    public static C5548l m22470a() {
         return f18081c;
     }
 
-    public static C5548l m22466d(int i) {
+    public static C5548l m22467d(int i) {
         return new C5548l(i);
     }
 
-    public int m22468b() {
+    public int m22469b() {
         if (this.f18082a) {
             return this.f18083b;
         }
         throw new NoSuchElementException("No value present");
     }
 
-    public boolean m22467c() {
+    public boolean m22468c() {
         return this.f18082a;
     }
 

@@ -16,16 +16,16 @@ import p108hb.C5070i;
 public class C7012r1 {
 
     public class C7013a extends InputConnectionWrapper {
-        public final InputConnection f22234a;
+        public final InputConnection f22237a;
 
         public C7013a(InputConnection inputConnection, boolean z, InputConnection inputConnection2) {
             super(inputConnection, z);
-            this.f22234a = inputConnection2;
+            this.f22237a = inputConnection2;
         }
 
         @Override
         public boolean performPrivateCommand(String str, Bundle bundle) {
-            if (C5070i.m24067c(str, "android.support.v13.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT") && bundle != null) {
+            if (C5070i.m24068c(str, "android.support.v13.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT") && bundle != null) {
                 try {
                     int i = bundle.getInt("android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_FLAGS");
                     bundle.putParcelable("androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_RESULT_RECEIVER", (ResultReceiver) bundle.getParcelable("android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_RESULT_RECEIVER"));
@@ -39,19 +39,19 @@ public class C7012r1 {
                     Log.m14710w("Cannot patch event", th, new Object[0]);
                 }
             }
-            return this.f22234a.performPrivateCommand(str, bundle);
+            return this.f22237a.performPrivateCommand(str, bundle);
         }
     }
 
     public static InputConnection m18099a(InputConnection inputConnection, EditorInfo editorInfo, C4109b.AbstractC4112c cVar) {
         if (Build.VERSION.SDK_INT >= 25) {
-            return C4109b.m28900a(inputConnection, editorInfo, cVar);
+            return C4109b.m28902a(inputConnection, editorInfo, cVar);
         }
-        return new C7013a(inputConnection, false, C4109b.m28900a(inputConnection, editorInfo, cVar));
+        return new C7013a(inputConnection, false, C4109b.m28902a(inputConnection, editorInfo, cVar));
     }
 
     public static void m18098b(EditorInfo editorInfo, String[] strArr) {
-        C4108a.m28901b(editorInfo, strArr);
+        C4108a.m28903b(editorInfo, strArr);
         if (Build.VERSION.SDK_INT < 25) {
             if (editorInfo.extras == null) {
                 editorInfo.extras = new Bundle();

@@ -1,7 +1,7 @@
 package p174m3;
 
 public interface AbstractC6716x1 {
-    Object mo19182a();
+    Object mo19183a();
 
-    AbstractC6604g3 mo19181b();
+    AbstractC6604g3 mo19182b();
 }

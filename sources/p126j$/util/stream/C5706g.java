@@ -12,7 +12,7 @@ public final class C5706g implements BaseStream {
         this.f18378a = hVar;
     }
 
-    public static BaseStream m22261i(AbstractC5711h hVar) {
+    public static BaseStream m22262i(AbstractC5711h hVar) {
         if (hVar == null) {
             return null;
         }
@@ -37,31 +37,31 @@ public final class C5706g implements BaseStream {
     @Override
     public BaseStream onClose(Runnable runnable) {
         AbstractC5686c cVar = (AbstractC5686c) this.f18378a;
-        cVar.m22311A0(runnable);
-        return m22261i(cVar);
+        cVar.m22312A0(runnable);
+        return m22262i(cVar);
     }
 
     @Override
     public BaseStream parallel() {
         AbstractC5686c cVar = (AbstractC5686c) this.f18378a;
-        cVar.m22310F0();
-        return m22261i(cVar);
+        cVar.m22311F0();
+        return m22262i(cVar);
     }
 
     @Override
     public BaseStream sequential() {
         AbstractC5686c cVar = (AbstractC5686c) this.f18378a;
-        cVar.m22309G0();
-        return m22261i(cVar);
+        cVar.m22310G0();
+        return m22262i(cVar);
     }
 
     @Override
     public Spliterator spliterator() {
-        return C5467F.m22604a(this.f18378a.spliterator());
+        return C5467F.m22605a(this.f18378a.spliterator());
     }
 
     @Override
     public BaseStream unordered() {
-        return m22261i(this.f18378a.unordered());
+        return m22262i(this.f18378a.unordered());
     }
 }

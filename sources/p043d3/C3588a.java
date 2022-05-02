@@ -11,12 +11,12 @@ public final class C3588a<T> implements AbstractC4533a<T> {
         this.f12229a = aVar;
     }
 
-    public static <P extends AbstractC4533a<T>, T> AbstractC4533a<T> m29920a(P p) {
-        C3591d.m29916b(p);
+    public static <P extends AbstractC4533a<T>, T> AbstractC4533a<T> m29922a(P p) {
+        C3591d.m29918b(p);
         return p instanceof C3588a ? p : new C3588a(p);
     }
 
-    public static Object m29919b(Object obj, Object obj2) {
+    public static Object m29921b(Object obj, Object obj2) {
         if (!(obj != f12228c) || obj == obj2) {
             return obj2;
         }
@@ -32,7 +32,7 @@ public final class C3588a<T> implements AbstractC4533a<T> {
                 t = this.f12230b;
                 if (t == obj) {
                     t = this.f12229a.get();
-                    this.f12230b = m29919b(this.f12230b, t);
+                    this.f12230b = m29921b(this.f12230b, t);
                     this.f12229a = null;
                 }
             }

@@ -11,24 +11,24 @@ import p270t3.AbstractC8965l;
 import p343y6.AbstractC10444n;
 
 public final class C7190h implements AbstractC7164a0 {
-    public final AbstractC0154k.AbstractC0155a f22878a;
-    public final C7191a f22879b;
-    public long f22880c;
-    public long f22881d;
-    public long f22882e;
-    public float f22883f;
-    public float f22884g;
+    public final AbstractC0154k.AbstractC0155a f22881a;
+    public final C7191a f22882b;
+    public long f22883c;
+    public long f22884d;
+    public long f22885e;
+    public float f22886f;
+    public float f22887g;
 
     public static final class C7191a {
-        public final AbstractC0154k.AbstractC0155a f22885a;
-        public final AbstractC8965l f22886b;
-        public final Map<Integer, AbstractC10444n<AbstractC7164a0>> f22887c = new HashMap();
-        public final Set<Integer> f22888d = new HashSet();
-        public final Map<Integer, AbstractC7164a0> f22889e = new HashMap();
+        public final AbstractC0154k.AbstractC0155a f22888a;
+        public final AbstractC8965l f22889b;
+        public final Map<Integer, AbstractC10444n<AbstractC7164a0>> f22890c = new HashMap();
+        public final Set<Integer> f22891d = new HashSet();
+        public final Map<Integer, AbstractC7164a0> f22892e = new HashMap();
 
         public C7191a(AbstractC0154k.AbstractC0155a aVar, AbstractC8965l lVar) {
-            this.f22885a = aVar;
-            this.f22886b = lVar;
+            this.f22888a = aVar;
+            this.f22889b = lVar;
         }
     }
 
@@ -37,12 +37,12 @@ public final class C7190h implements AbstractC7164a0 {
     }
 
     public C7190h(AbstractC0154k.AbstractC0155a aVar, AbstractC8965l lVar) {
-        this.f22878a = aVar;
-        this.f22879b = new C7191a(aVar, lVar);
-        this.f22880c = -9223372036854775807L;
-        this.f22881d = -9223372036854775807L;
-        this.f22882e = -9223372036854775807L;
-        this.f22883f = -3.4028235E38f;
-        this.f22884g = -3.4028235E38f;
+        this.f22881a = aVar;
+        this.f22882b = new C7191a(aVar, lVar);
+        this.f22883c = -9223372036854775807L;
+        this.f22884d = -9223372036854775807L;
+        this.f22885e = -9223372036854775807L;
+        this.f22886f = -3.4028235E38f;
+        this.f22887g = -3.4028235E38f;
     }
 }

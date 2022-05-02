@@ -11,25 +11,25 @@ import org.thunderdog.challegram.Log;
 import p262s6.C8646a;
 
 public final class C7696g3 {
-    public static final C8646a f24645h = new C8646a("SliceMetadataManager");
-    public final C7688f0 f24647b;
-    public final String f24648c;
-    public final int f24649d;
-    public final long f24650e;
-    public final String f24651f;
-    public final byte[] f24646a = new byte[Log.TAG_LUX];
-    public int f24652g = -1;
+    public static final C8646a f24648h = new C8646a("SliceMetadataManager");
+    public final C7688f0 f24650b;
+    public final String f24651c;
+    public final int f24652d;
+    public final long f24653e;
+    public final String f24654f;
+    public final byte[] f24649a = new byte[Log.TAG_LUX];
+    public int f24655g = -1;
 
     public C7696g3(C7688f0 f0Var, String str, int i, long j, String str2) {
-        this.f24647b = f0Var;
-        this.f24648c = str;
-        this.f24649d = i;
-        this.f24650e = j;
-        this.f24651f = str2;
+        this.f24650b = f0Var;
+        this.f24651c = str;
+        this.f24652d = i;
+        this.f24653e = j;
+        this.f24654f = str2;
     }
 
     public final int m15225a() {
-        File A = this.f24647b.m15261A(this.f24648c, this.f24649d, this.f24650e, this.f24651f);
+        File A = this.f24650b.m15261A(this.f24651c, this.f24652d, this.f24653e, this.f24654f);
         if (!A.exists()) {
             return 0;
         }
@@ -55,7 +55,7 @@ public final class C7696g3 {
     }
 
     public final AbstractC7691f3 m15224b() {
-        File A = this.f24647b.m15261A(this.f24648c, this.f24649d, this.f24650e, this.f24651f);
+        File A = this.f24650b.m15261A(this.f24651c, this.f24652d, this.f24653e, this.f24654f);
         if (A.exists()) {
             Properties properties = new Properties();
             FileInputStream fileInputStream = new FileInputStream(A);
@@ -71,7 +71,7 @@ public final class C7696g3 {
                     long parseLong = Long.parseLong(properties.getProperty("fileOffset", "-1"));
                     long parseLong2 = Long.parseLong(properties.getProperty("remainingBytes", "-1"));
                     int parseInt2 = Integer.parseInt(properties.getProperty("previousChunk"));
-                    this.f24652g = Integer.parseInt(properties.getProperty("metadataFileCounter", "0"));
+                    this.f24655g = Integer.parseInt(properties.getProperty("metadataFileCounter", "0"));
                     return new C7723m0(parseInt, property, parseLong, parseLong2, parseInt2);
                 } catch (NumberFormatException e) {
                     throw new C7694g1("Slice checkpoint file corrupt.", e);
@@ -89,7 +89,7 @@ public final class C7696g3 {
     }
 
     public final File m15223c() {
-        return new File(m15212n(), String.format("%s-NAM.dat", Integer.valueOf(this.f24652g)));
+        return new File(m15212n(), String.format("%s-NAM.dat", Integer.valueOf(this.f24655g)));
     }
 
     public final void m15222d(InputStream inputStream, long j) {
@@ -98,9 +98,9 @@ public final class C7696g3 {
         try {
             randomAccessFile.seek(j);
             do {
-                read = inputStream.read(this.f24646a);
+                read = inputStream.read(this.f24649a);
                 if (read > 0) {
-                    randomAccessFile.write(this.f24646a, 0, read);
+                    randomAccessFile.write(this.f24649a, 0, read);
                 }
             } while (read == 8192);
             randomAccessFile.close();
@@ -133,7 +133,7 @@ public final class C7696g3 {
         properties.put("fileStatus", "3");
         properties.put("fileOffset", String.valueOf(m15223c().length()));
         properties.put("previousChunk", String.valueOf(i));
-        properties.put("metadataFileCounter", String.valueOf(this.f24652g));
+        properties.put("metadataFileCounter", String.valueOf(this.f24655g));
         FileOutputStream fileOutputStream = new FileOutputStream(m15211o());
         try {
             properties.store(fileOutputStream, (String) null);
@@ -154,7 +154,7 @@ public final class C7696g3 {
         properties.put("fileOffset", String.valueOf(j));
         properties.put("remainingBytes", String.valueOf(j2));
         properties.put("previousChunk", String.valueOf(i));
-        properties.put("metadataFileCounter", String.valueOf(this.f24652g));
+        properties.put("metadataFileCounter", String.valueOf(this.f24655g));
         FileOutputStream fileOutputStream = new FileOutputStream(m15211o());
         try {
             properties.store(fileOutputStream, (String) null);
@@ -172,12 +172,12 @@ public final class C7696g3 {
         Properties properties = new Properties();
         properties.put("fileStatus", "2");
         properties.put("previousChunk", String.valueOf(i));
-        properties.put("metadataFileCounter", String.valueOf(this.f24652g));
+        properties.put("metadataFileCounter", String.valueOf(this.f24655g));
         FileOutputStream fileOutputStream = new FileOutputStream(m15211o());
         try {
             properties.store(fileOutputStream, (String) null);
             fileOutputStream.close();
-            File z = this.f24647b.m15226z(this.f24648c, this.f24649d, this.f24650e, this.f24651f);
+            File z = this.f24650b.m15226z(this.f24651c, this.f24652d, this.f24653e, this.f24654f);
             if (z.exists()) {
                 z.delete();
             }
@@ -198,7 +198,7 @@ public final class C7696g3 {
         Properties properties = new Properties();
         properties.put("fileStatus", "4");
         properties.put("previousChunk", String.valueOf(i));
-        properties.put("metadataFileCounter", String.valueOf(this.f24652g));
+        properties.put("metadataFileCounter", String.valueOf(this.f24655g));
         FileOutputStream fileOutputStream = new FileOutputStream(m15211o());
         try {
             properties.store(fileOutputStream, (String) null);
@@ -213,9 +213,9 @@ public final class C7696g3 {
     }
 
     public final void m15216j(byte[] bArr) {
-        this.f24652g++;
+        this.f24655g++;
         try {
-            FileOutputStream fileOutputStream = new FileOutputStream(new File(m15212n(), String.format("%s-LFH.dat", Integer.valueOf(this.f24652g))));
+            FileOutputStream fileOutputStream = new FileOutputStream(new File(m15212n(), String.format("%s-LFH.dat", Integer.valueOf(this.f24655g))));
             fileOutputStream.write(bArr);
             fileOutputStream.close();
         } catch (IOException e) {
@@ -224,14 +224,14 @@ public final class C7696g3 {
     }
 
     public final void m15215k(byte[] bArr, InputStream inputStream) {
-        this.f24652g++;
+        this.f24655g++;
         FileOutputStream fileOutputStream = new FileOutputStream(m15223c());
         try {
             fileOutputStream.write(bArr);
-            int read = inputStream.read(this.f24646a);
+            int read = inputStream.read(this.f24649a);
             while (read > 0) {
-                fileOutputStream.write(this.f24646a, 0, read);
-                read = inputStream.read(this.f24646a);
+                fileOutputStream.write(this.f24649a, 0, read);
+                read = inputStream.read(this.f24649a);
             }
             fileOutputStream.close();
         } catch (Throwable th) {
@@ -244,7 +244,7 @@ public final class C7696g3 {
     }
 
     public final void m15214l(byte[] bArr, int i, int i2) {
-        this.f24652g++;
+        this.f24655g++;
         FileOutputStream fileOutputStream = new FileOutputStream(m15223c());
         try {
             fileOutputStream.write(bArr, 0, i2);
@@ -259,7 +259,7 @@ public final class C7696g3 {
     }
 
     public final boolean m15213m() {
-        File A = this.f24647b.m15261A(this.f24648c, this.f24649d, this.f24650e, this.f24651f);
+        File A = this.f24650b.m15261A(this.f24651c, this.f24652d, this.f24653e, this.f24654f);
         if (!A.exists()) {
             return false;
         }
@@ -271,16 +271,16 @@ public final class C7696g3 {
             if (properties.getProperty("fileStatus") != null) {
                 return Integer.parseInt(properties.getProperty("fileStatus")) == 4;
             }
-            f24645h.m11817b("Slice checkpoint file corrupt while checking if extraction finished.", new Object[0]);
+            f24648h.m11816b("Slice checkpoint file corrupt while checking if extraction finished.", new Object[0]);
             return false;
         } catch (IOException e) {
-            f24645h.m11817b("Could not read checkpoint while checking if extraction finished. %s", e);
+            f24648h.m11816b("Could not read checkpoint while checking if extraction finished. %s", e);
             return false;
         }
     }
 
     public final File m15212n() {
-        File B = this.f24647b.m15260B(this.f24648c, this.f24649d, this.f24650e, this.f24651f);
+        File B = this.f24650b.m15260B(this.f24651c, this.f24652d, this.f24653e, this.f24654f);
         if (!B.exists()) {
             B.mkdirs();
         }
@@ -288,7 +288,7 @@ public final class C7696g3 {
     }
 
     public final File m15211o() {
-        File A = this.f24647b.m15261A(this.f24648c, this.f24649d, this.f24650e, this.f24651f);
+        File A = this.f24650b.m15261A(this.f24651c, this.f24652d, this.f24653e, this.f24654f);
         A.getParentFile().mkdirs();
         A.createNewFile();
         return A;

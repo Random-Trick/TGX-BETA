@@ -23,12 +23,12 @@ public final class C1794k extends AbstractC6749a {
 
     @Override
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = C6752c.m19124a(parcel);
-        C6752c.m19114k(parcel, 2, this.f6415a);
-        C6752c.m19114k(parcel, 3, this.f6416b);
-        C6752c.m19114k(parcel, 4, this.f6417c);
-        C6752c.m19111n(parcel, 5, this.f6413M);
-        C6752c.m19114k(parcel, 6, this.f6414N);
-        C6752c.m19123b(parcel, a);
+        int a = C6752c.m19125a(parcel);
+        C6752c.m19115k(parcel, 2, this.f6415a);
+        C6752c.m19115k(parcel, 3, this.f6416b);
+        C6752c.m19115k(parcel, 4, this.f6417c);
+        C6752c.m19112n(parcel, 5, this.f6413M);
+        C6752c.m19115k(parcel, 6, this.f6414N);
+        C6752c.m19124b(parcel, a);
     }
 }

@@ -15,7 +15,7 @@ import android.util.Log;
 import java.lang.reflect.Method;
 
 public class C9415e extends C9414d {
-    public static Method f30471Q;
+    public static Method f30474Q;
 
     public C9415e(Drawable drawable) {
         super(drawable);
@@ -27,14 +27,14 @@ public class C9415e extends C9414d {
         if (Build.VERSION.SDK_INT != 21) {
             return false;
         }
-        Drawable drawable = this.f30467O;
+        Drawable drawable = this.f30470O;
         return (drawable instanceof GradientDrawable) || (drawable instanceof DrawableContainer) || (drawable instanceof InsetDrawable) || (drawable instanceof RippleDrawable);
     }
 
     public final void m8744g() {
-        if (f30471Q == null) {
+        if (f30474Q == null) {
             try {
-                f30471Q = Drawable.class.getDeclaredMethod("isProjected", new Class[0]);
+                f30474Q = Drawable.class.getDeclaredMethod("isProjected", new Class[0]);
             } catch (Exception e) {
                 Log.w("WrappedDrawableApi21", "Failed to retrieve Drawable#isProjected() method", e);
             }
@@ -43,19 +43,19 @@ public class C9415e extends C9414d {
 
     @Override
     public Rect getDirtyBounds() {
-        return this.f30467O.getDirtyBounds();
+        return this.f30470O.getDirtyBounds();
     }
 
     @Override
     public void getOutline(Outline outline) {
-        this.f30467O.getOutline(outline);
+        this.f30470O.getOutline(outline);
     }
 
     @Override
     public boolean isProjected() {
         Method method;
-        Drawable drawable = this.f30467O;
-        if (!(drawable == null || (method = f30471Q) == null)) {
+        Drawable drawable = this.f30470O;
+        if (!(drawable == null || (method = f30474Q) == null)) {
             try {
                 return ((Boolean) method.invoke(drawable, new Object[0])).booleanValue();
             } catch (Exception e) {
@@ -67,12 +67,12 @@ public class C9415e extends C9414d {
 
     @Override
     public void setHotspot(float f, float f2) {
-        this.f30467O.setHotspot(f, f2);
+        this.f30470O.setHotspot(f, f2);
     }
 
     @Override
     public void setHotspotBounds(int i, int i2, int i3, int i4) {
-        this.f30467O.setHotspotBounds(i, i2, i3, i4);
+        this.f30470O.setHotspotBounds(i, i2, i3, i4);
     }
 
     @Override
@@ -89,7 +89,7 @@ public class C9415e extends C9414d {
         if (mo8745c()) {
             super.setTint(i);
         } else {
-            this.f30467O.setTint(i);
+            this.f30470O.setTint(i);
         }
     }
 
@@ -98,7 +98,7 @@ public class C9415e extends C9414d {
         if (mo8745c()) {
             super.setTintList(colorStateList);
         } else {
-            this.f30467O.setTintList(colorStateList);
+            this.f30470O.setTintList(colorStateList);
         }
     }
 
@@ -107,7 +107,7 @@ public class C9415e extends C9414d {
         if (mo8745c()) {
             super.setTintMode(mode);
         } else {
-            this.f30467O.setTintMode(mode);
+            this.f30470O.setTintMode(mode);
         }
     }
 

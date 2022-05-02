@@ -7,21 +7,21 @@ import org.checkerframework.dataflow.qual.Pure;
 
 public final class C1186a {
     @Pure
-    public static void m38189a(boolean z) {
+    public static void m38192a(boolean z) {
         if (!z) {
             throw new IllegalArgumentException();
         }
     }
 
     @Pure
-    public static void m38188b(boolean z, Object obj) {
+    public static void m38191b(boolean z, Object obj) {
         if (!z) {
             throw new IllegalArgumentException(String.valueOf(obj));
         }
     }
 
     @Pure
-    public static int m38187c(int i, int i2, int i3) {
+    public static int m38190c(int i, int i2, int i3) {
         if (i >= i2 && i < i3) {
             return i;
         }
@@ -30,7 +30,7 @@ public final class C1186a {
 
     @EnsuresNonNull({"#1"})
     @Pure
-    public static String m38186d(String str) {
+    public static String m38189d(String str) {
         if (!TextUtils.isEmpty(str)) {
             return str;
         }
@@ -39,20 +39,20 @@ public final class C1186a {
 
     @EnsuresNonNull({"#1"})
     @Pure
-    public static <T> T m38185e(T t) {
+    public static <T> T m38188e(T t) {
         Objects.requireNonNull(t);
         return t;
     }
 
     @Pure
-    public static void m38184f(boolean z) {
+    public static void m38187f(boolean z) {
         if (!z) {
             throw new IllegalStateException();
         }
     }
 
     @Pure
-    public static void m38183g(boolean z, Object obj) {
+    public static void m38186g(boolean z, Object obj) {
         if (!z) {
             throw new IllegalStateException(String.valueOf(obj));
         }
@@ -60,7 +60,7 @@ public final class C1186a {
 
     @EnsuresNonNull({"#1"})
     @Pure
-    public static <T> T m38182h(T t) {
+    public static <T> T m38185h(T t) {
         if (t != null) {
             return t;
         }
@@ -69,7 +69,7 @@ public final class C1186a {
 
     @EnsuresNonNull({"#1"})
     @Pure
-    public static <T> T m38181i(T t, Object obj) {
+    public static <T> T m38184i(T t, Object obj) {
         if (t != null) {
             return t;
         }

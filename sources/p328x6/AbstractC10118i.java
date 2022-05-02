@@ -11,15 +11,15 @@ public interface AbstractC10118i extends IInterface {
     public static abstract class AbstractBinderC10119a extends Binder implements AbstractC10118i {
 
         public static class C10120a implements AbstractC10118i {
-            public IBinder f32802a;
+            public IBinder f32805a;
 
             public C10120a(IBinder iBinder) {
-                this.f32802a = iBinder;
+                this.f32805a = iBinder;
             }
 
             @Override
             public final IBinder asBinder() {
-                return this.f32802a;
+                return this.f32805a;
             }
 
             @Override
@@ -39,7 +39,7 @@ public interface AbstractC10118i extends IInterface {
                     } else {
                         obtain.writeInt(0);
                     }
-                    this.f32802a.transact(1, obtain, obtain2, 0);
+                    this.f32805a.transact(1, obtain, obtain2, 0);
                     obtain2.readException();
                 } finally {
                     obtain2.recycle();

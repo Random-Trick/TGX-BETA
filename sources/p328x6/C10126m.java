@@ -8,16 +8,16 @@ import p328x6.AbstractC10128o;
 import p328x6.AbstractC10138q;
 
 public final class C10126m extends AbstractC10128o<AbstractC10121j> implements AbstractC10108d {
-    public final String f32816l;
-    public final String f32817m;
-    public final String f32818n;
-    public boolean f32819o;
+    public final String f32819l;
+    public final String f32820m;
+    public final String f32821n;
+    public boolean f32822o;
 
     public C10126m(Context context, String str, String str2, String str3, AbstractC10138q.AbstractC10139a aVar, AbstractC10138q.AbstractC10140b bVar) {
         super(context, aVar, bVar);
-        this.f32816l = (String) C10106b.m6017a(str);
-        this.f32817m = C10106b.m6015c(str2, "callingPackage cannot be null or empty");
-        this.f32818n = C10106b.m6015c(str3, "callingAppVersion cannot be null or empty");
+        this.f32819l = (String) C10106b.m6017a(str);
+        this.f32820m = C10106b.m6015c(str2, "callingPackage cannot be null or empty");
+        this.f32821n = C10106b.m6015c(str3, "callingAppVersion cannot be null or empty");
     }
 
     @Override
@@ -42,13 +42,13 @@ public final class C10126m extends AbstractC10128o<AbstractC10121j> implements A
                 m5954x().mo5980d(z);
             } catch (RemoteException unused) {
             }
-            this.f32819o = true;
+            this.f32822o = true;
         }
     }
 
     @Override
     public final void mo5967j(AbstractC10118i iVar, AbstractC10128o.BinderC10133e eVar) {
-        iVar.mo5983y(eVar, 1202, this.f32817m, this.f32818n, this.f32816l, null);
+        iVar.mo5983y(eVar, 1202, this.f32820m, this.f32821n, this.f32819l, null);
     }
 
     @Override
@@ -58,7 +58,7 @@ public final class C10126m extends AbstractC10128o<AbstractC10121j> implements A
 
     @Override
     public final void mo5910l() {
-        if (!this.f32819o) {
+        if (!this.f32822o) {
             mo5975d(true);
         }
         super.mo5910l();
@@ -71,7 +71,7 @@ public final class C10126m extends AbstractC10128o<AbstractC10121j> implements A
 
     public final void m5974y() {
         m5955w();
-        if (this.f32819o) {
+        if (this.f32822o) {
             throw new IllegalStateException("Connection client has been released");
         }
     }

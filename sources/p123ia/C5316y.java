@@ -25,17 +25,17 @@ public final class C5316y implements Map, Serializable, AbstractC8415a {
         if (!(obj instanceof Void)) {
             return false;
         }
-        return m23309e((Void) obj);
+        return m23310e((Void) obj);
     }
 
-    public boolean m23309e(Void r2) {
-        C8298k.m12934e(r2, "value");
+    public boolean m23310e(Void r2) {
+        C8298k.m12933e(r2, "value");
         return false;
     }
 
     @Override
     public final Set<Map.Entry> entrySet() {
-        return m23307i();
+        return m23308i();
     }
 
     @Override
@@ -56,7 +56,7 @@ public final class C5316y implements Map, Serializable, AbstractC8415a {
         return 0;
     }
 
-    public Set<Map.Entry> m23307i() {
+    public Set<Map.Entry> m23308i() {
         return C5317z.f17493a;
     }
 
@@ -67,10 +67,10 @@ public final class C5316y implements Map, Serializable, AbstractC8415a {
 
     @Override
     public final Set<Object> keySet() {
-        return m23306m();
+        return m23307m();
     }
 
-    public Set<Object> m23306m() {
+    public Set<Object> m23307m() {
         return C5317z.f17493a;
     }
 
@@ -79,7 +79,7 @@ public final class C5316y implements Map, Serializable, AbstractC8415a {
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    public Collection m23305r() {
+    public Collection m23306r() {
         return C5315x.f17491a;
     }
 
@@ -102,6 +102,6 @@ public final class C5316y implements Map, Serializable, AbstractC8415a {
 
     @Override
     public final Collection values() {
-        return m23305r();
+        return m23306r();
     }
 }

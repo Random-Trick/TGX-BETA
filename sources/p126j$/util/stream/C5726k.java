@@ -35,16 +35,16 @@ public final class C5726k implements AbstractC5542x, BiConsumer, AbstractC5538t,
     public static final C5726k f18409n = new C5726k();
 
     @Override
-    public void mo22224a(Object obj, double d) {
+    public void mo22225a(Object obj, double d) {
         double[] dArr = (double[]) obj;
         int i = AbstractC5581F.f18136t;
         dArr[2] = dArr[2] + 1.0d;
-        AbstractC5736m.m22215b(dArr, d);
+        AbstractC5736m.m22216b(dArr, d);
         dArr[3] = dArr[3] + d;
     }
 
     @Override
-    public long mo22232g(Object obj) {
+    public long mo22233g(Object obj) {
         int i = AbstractC5719i2.f18390t;
         return 1L;
     }
@@ -55,31 +55,31 @@ public final class C5726k implements AbstractC5542x, BiConsumer, AbstractC5538t,
     }
 
     @Override
-    public int mo22223i(int i, int i2) {
+    public int mo22224i(int i, int i2) {
         return Math.max(i, i2);
     }
 
     @Override
-    public void mo22128k(Object obj) {
+    public void mo22129k(Object obj) {
     }
 
     @Override
-    public long mo22222l(long j, long j2) {
+    public long mo22223l(long j, long j2) {
         return Math.max(j, j2);
     }
 
     @Override
-    public double mo22231m(double d, double d2) {
+    public double mo22232m(double d, double d2) {
         return Math.min(d, d2);
     }
 
     @Override
-    public boolean mo22210n(Object obj) {
-        return ((C5547k) obj).m22471c();
+    public boolean mo22211n(Object obj) {
+        return ((C5547k) obj).m22472c();
     }
 
     @Override
-    public void mo22230o(Object obj, int i) {
+    public void mo22231o(Object obj, int i) {
         long[] jArr = (long[]) obj;
         int i2 = AbstractC5722j0.f18393t;
         jArr[0] = jArr[0] + 1;
@@ -87,12 +87,12 @@ public final class C5726k implements AbstractC5542x, BiConsumer, AbstractC5538t,
     }
 
     @Override
-    public void mo22179p(Object obj, Object obj2) {
+    public void mo22180p(Object obj, Object obj2) {
         ((LinkedHashSet) obj).addAll((LinkedHashSet) obj2);
     }
 
     @Override
-    public void mo22229q(Object obj, long j) {
+    public void mo22230q(Object obj, long j) {
         long[] jArr = (long[]) obj;
         int i = AbstractC5767s0.f18463t;
         jArr[0] = jArr[0] + 1;
@@ -100,18 +100,18 @@ public final class C5726k implements AbstractC5542x, BiConsumer, AbstractC5538t,
     }
 
     @Override
-    public Object mo22172u(Object obj, Object obj2) {
+    public Object mo22173u(Object obj, Object obj2) {
         return new C5665X0((AbstractC5612L0) obj, (AbstractC5612L0) obj2);
     }
 
     @Override
-    public Object mo22178w(int i) {
+    public Object mo22179w(int i) {
         int i2 = AbstractC5581F.f18136t;
         return new Double[i];
     }
 
     @Override
-    public Object mo22209x(long j) {
-        return AbstractC5572D0.m22437O(j);
+    public Object mo22210x(long j) {
+        return AbstractC5572D0.m22438O(j);
     }
 }

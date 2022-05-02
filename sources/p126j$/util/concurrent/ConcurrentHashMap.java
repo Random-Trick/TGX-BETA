@@ -47,7 +47,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         Class cls = Integer.TYPE;
         serialPersistentFields = new ObjectStreamField[]{new ObjectStreamField("segments", C5504o[].class), new ObjectStreamField("segmentMask", cls), new ObjectStreamField("segmentShift", cls)};
         try {
-            Unsafe c = AbstractC5512w.m22505c();
+            Unsafe c = AbstractC5512w.m22506c();
             f17987j = c;
             f17988k = c.objectFieldOffset(ConcurrentHashMap.class.getDeclaredField("sizeCtl"));
             f17989l = c.objectFieldOffset(ConcurrentHashMap.class.getDeclaredField("transferIndex"));
@@ -71,7 +71,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
 
     public ConcurrentHashMap(int i) {
         if (i >= 0) {
-            this.sizeCtl = i >= 536870912 ? Log.TAG_TDLIB_OPTIONS : m22538o(i + (i >>> 1) + 1);
+            this.sizeCtl = i >= 536870912 ? Log.TAG_TDLIB_OPTIONS : m22539o(i + (i >>> 1) + 1);
             return;
         }
         throw new IllegalArgumentException();
@@ -82,18 +82,18 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
             throw new IllegalArgumentException();
         }
         long j = (long) (((i < i2 ? i2 : i) / f) + 1.0d);
-        this.sizeCtl = j >= 1073741824 ? Log.TAG_TDLIB_OPTIONS : m22538o((int) j);
+        this.sizeCtl = j >= 1073741824 ? Log.TAG_TDLIB_OPTIONS : m22539o((int) j);
     }
 
-    private final void m22552a(long r12, int r14) {
-        throw new UnsupportedOperationException("Method not decompiled: p126j$.util.concurrent.ConcurrentHashMap.m22552a(long, int):void");
+    private final void m22553a(long r12, int r14) {
+        throw new UnsupportedOperationException("Method not decompiled: p126j$.util.concurrent.ConcurrentHashMap.m22553a(long, int):void");
     }
 
-    static final boolean m22551b(C5502m[] mVarArr, int i, C5502m mVar, C5502m mVar2) {
-        return AbstractC5490a.m22523b(f17987j, mVarArr, (i << f17994q) + f17993p, null, mVar2);
+    static final boolean m22552b(C5502m[] mVarArr, int i, C5502m mVar, C5502m mVar2) {
+        return AbstractC5490a.m22524b(f17987j, mVarArr, (i << f17994q) + f17993p, null, mVar2);
     }
 
-    public static Class m22550c(Object obj) {
+    public static Class m22551c(Object obj) {
         Type[] actualTypeArguments;
         if (!(obj instanceof Comparable)) {
             return null;
@@ -117,18 +117,18 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         return null;
     }
 
-    public static int m22549d(Class cls, Object obj, Object obj2) {
+    public static int m22550d(Class cls, Object obj, Object obj2) {
         if (obj2 == null || obj2.getClass() != cls) {
             return 0;
         }
         return ((Comparable) obj).compareTo(obj2);
     }
 
-    private final void m22548e(long r25, boolean r27) {
-        throw new UnsupportedOperationException("Method not decompiled: p126j$.util.concurrent.ConcurrentHashMap.m22548e(long, boolean):void");
+    private final void m22549e(long r25, boolean r27) {
+        throw new UnsupportedOperationException("Method not decompiled: p126j$.util.concurrent.ConcurrentHashMap.m22549e(long, boolean):void");
     }
 
-    private final C5502m[] m22546g() {
+    private final C5502m[] m22547g() {
         while (true) {
             C5502m[] mVarArr = this.f17995a;
             if (mVarArr != null && mVarArr.length != 0) {
@@ -157,23 +157,23 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         }
     }
 
-    static final int m22543j(int i) {
+    static final int m22544j(int i) {
         return Integer.numberOfLeadingZeros(i) | Log.TAG_ROUND;
     }
 
-    static final void m22542k(C5502m[] mVarArr, int i, C5502m mVar) {
+    static final void m22543k(C5502m[] mVarArr, int i, C5502m mVar) {
         f17987j.putObjectVolatile(mVarArr, (i << f17994q) + f17993p, mVar);
     }
 
-    static final int m22541l(int i) {
+    static final int m22542l(int i) {
         return (i ^ (i >>> 16)) & Integer.MAX_VALUE;
     }
 
-    public static final C5502m m22539n(C5502m[] mVarArr, int i) {
+    public static final C5502m m22540n(C5502m[] mVarArr, int i) {
         return (C5502m) f17987j.getObjectVolatile(mVarArr, (i << f17994q) + f17993p);
     }
 
-    private static final int m22538o(int i) {
+    private static final int m22539o(int i) {
         int i2 = i - 1;
         int i3 = i2 | (i2 >>> 1);
         int i4 = i3 | (i3 >>> 2);
@@ -186,7 +186,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         return i7 >= 1073741824 ? Log.TAG_TDLIB_OPTIONS : 1 + i7;
     }
 
-    private final void m22537p(C5502m[] mVarArr, C5502m[] mVarArr2) {
+    private final void m22538p(C5502m[] mVarArr, C5502m[] mVarArr2) {
         C5502m[] mVarArr3;
         ConcurrentHashMap<K, V> concurrentHashMap;
         C5502m[] mVarArr4;
@@ -280,7 +280,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                     if (!unsafe2.compareAndSwapInt(this, j2, i12, i12 - 1)) {
                         concurrentHashMap4 = concurrentHashMap2;
                         mVarArr6 = mVarArr7;
-                    } else if (i12 - 2 == (m22543j(length) << f17985h)) {
+                    } else if (i12 - 2 == (m22544j(length) << f17985h)) {
                         i7 = length;
                         concurrentHashMap4 = concurrentHashMap2;
                         mVarArr6 = mVarArr7;
@@ -290,9 +290,9 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                         return;
                     }
                 } else {
-                    C5502m n = m22539n(mVarArr7, i7);
+                    C5502m n = m22540n(mVarArr7, i7);
                     if (n == null) {
-                        z = m22551b(mVarArr7, i7, null, hVar2);
+                        z = m22552b(mVarArr7, i7, null, hVar2);
                         i2 = i6;
                         i = length2;
                         hVar = hVar2;
@@ -310,7 +310,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                             z = true;
                         } else {
                             synchronized (n) {
-                                if (m22539n(mVarArr7, i7) == n) {
+                                if (m22540n(mVarArr7, i7) == n) {
                                     if (i13 >= 0) {
                                         int i14 = i13 & length;
                                         C5508s sVar4 = n;
@@ -348,9 +348,9 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                                         }
                                         i2 = i6;
                                         i = length2;
-                                        m22542k(mVarArr3, i7, sVar);
-                                        m22542k(mVarArr3, i3, mVar2);
-                                        m22542k(mVarArr7, i7, hVar2);
+                                        m22543k(mVarArr3, i7, sVar);
+                                        m22543k(mVarArr3, i3, mVar2);
+                                        m22543k(mVarArr7, i7, hVar2);
                                         hVar = hVar2;
                                     } else {
                                         i2 = i6;
@@ -389,11 +389,11 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                                             }
                                             C5507r rVar2 = rVar;
                                             hVar = hVar2;
-                                            C5502m s = i17 <= 6 ? m22534s(sVar3) : i18 != 0 ? new C5507r(sVar3) : rVar2;
-                                            C5502m s2 = i18 <= 6 ? m22534s(sVar7) : i17 != 0 ? new C5507r(sVar7) : rVar2;
-                                            m22542k(mVarArr3, i7, s);
-                                            m22542k(mVarArr3, i3, s2);
-                                            m22542k(mVarArr, i7, hVar);
+                                            C5502m s = i17 <= 6 ? m22535s(sVar3) : i18 != 0 ? new C5507r(sVar3) : rVar2;
+                                            C5502m s2 = i18 <= 6 ? m22535s(sVar7) : i17 != 0 ? new C5507r(sVar7) : rVar2;
+                                            m22543k(mVarArr3, i7, s);
+                                            m22543k(mVarArr3, i3, s2);
+                                            m22543k(mVarArr, i7, hVar);
                                             mVarArr7 = mVarArr;
                                         }
                                     }
@@ -418,16 +418,16 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         }
     }
 
-    private final void m22536q(C5502m[] mVarArr, int i) {
+    private final void m22537q(C5502m[] mVarArr, int i) {
         int length = mVarArr.length;
         if (length < 64) {
-            m22535r(length << 1);
+            m22536r(length << 1);
             return;
         }
-        C5502m n = m22539n(mVarArr, i);
+        C5502m n = m22540n(mVarArr, i);
         if (n != null && n.f18020a >= 0) {
             synchronized (n) {
-                if (m22539n(mVarArr, i) == n) {
+                if (m22540n(mVarArr, i) == n) {
                     C5508s sVar = null;
                     C5502m mVar = n;
                     C5508s sVar2 = null;
@@ -442,16 +442,16 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                         mVar = mVar.f18023d;
                         sVar2 = sVar3;
                     }
-                    m22542k(mVarArr, i, new C5507r(sVar));
+                    m22543k(mVarArr, i, new C5507r(sVar));
                 }
             }
         }
     }
 
-    private final void m22535r(int i) {
+    private final void m22536r(int i) {
         int length;
         C5502m[] mVarArr;
-        int o = i >= 536870912 ? Log.TAG_TDLIB_OPTIONS : m22538o(i + (i >>> 1) + 1);
+        int o = i >= 536870912 ? Log.TAG_TDLIB_OPTIONS : m22539o(i + (i >>> 1) + 1);
         while (true) {
             int i2 = this.sizeCtl;
             if (i2 >= 0) {
@@ -472,17 +472,17 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                     }
                 } else if (o > i2 && length < 1073741824) {
                     if (mVarArr2 == this.f17995a) {
-                        int j = m22543j(length);
+                        int j = m22544j(length);
                         if (i2 < 0) {
                             if ((i2 >>> f17985h) == j && i2 != j + 1 && i2 != j + f17984g && (mVarArr = this.f17996b) != null && this.transferIndex > 0) {
                                 if (f17987j.compareAndSwapInt(this, f17988k, i2, i2 + 1)) {
-                                    m22537p(mVarArr2, mVarArr);
+                                    m22538p(mVarArr2, mVarArr);
                                 }
                             } else {
                                 return;
                             }
                         } else if (f17987j.compareAndSwapInt(this, f17988k, i2, (j << f17985h) + 2)) {
-                            m22537p(mVarArr2, null);
+                            m22538p(mVarArr2, null);
                         }
                     } else {
                         continue;
@@ -513,7 +513,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
             if (readObject == null || readObject2 == null) {
                 break;
             }
-            mVar = new C5502m(m22541l(readObject.hashCode()), readObject, readObject2, mVar);
+            mVar = new C5502m(m22542l(readObject.hashCode()), readObject, readObject2, mVar);
             j3++;
         }
         if (j3 == 0) {
@@ -524,7 +524,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
             i = Log.TAG_TDLIB_OPTIONS;
         } else {
             int i2 = (int) j3;
-            i = m22538o(i2 + (i2 >>> 1) + 1);
+            i = m22539o(i2 + (i2 >>> 1) + 1);
         }
         C5502m[] mVarArr = new C5502m[i];
         int i3 = i - 1;
@@ -532,7 +532,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
             mVar = mVar.f18023d;
             int i4 = mVar.f18020a;
             int i5 = i4 & i3;
-            C5502m n = m22539n(mVarArr, i5);
+            C5502m n = m22540n(mVarArr, i5);
             if (n == null) {
                 z = true;
             } else {
@@ -566,9 +566,9 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                             mVar3 = mVar3.f18023d;
                             sVar2 = sVar3;
                         }
-                        m22542k(mVarArr, i5, new C5507r(sVar));
+                        m22543k(mVarArr, i5, new C5507r(sVar));
                     }
-                } else if (((C5507r) n).m22516f(i4, obj2, mVar.f18022c) == null) {
+                } else if (((C5507r) n).m22517f(i4, obj2, mVar.f18022c) == null) {
                     j2 += j;
                 }
                 z = false;
@@ -576,7 +576,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
             if (z) {
                 j2++;
                 mVar.f18023d = n;
-                m22542k(mVarArr, i5, mVar);
+                m22543k(mVarArr, i5, mVar);
             }
             j = 1;
         }
@@ -585,7 +585,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         this.baseCount = j2;
     }
 
-    static C5502m m22534s(C5502m mVar) {
+    static C5502m m22535s(C5502m mVar) {
         C5502m mVar2 = null;
         C5502m mVar3 = null;
         while (mVar != null) {
@@ -622,7 +622,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         if (mVarArr != null) {
             C5506q qVar = new C5506q(mVarArr, mVarArr.length, 0, mVarArr.length);
             while (true) {
-                C5502m b = qVar.m22521b();
+                C5502m b = qVar.m22522b();
                 if (b == null) {
                     break;
                 }
@@ -642,7 +642,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         loop0: while (true) {
             int i = 0;
             while (mVarArr != null && i < mVarArr.length) {
-                n = m22539n(mVarArr, i);
+                n = m22540n(mVarArr, i);
                 if (n == null) {
                     i++;
                 } else {
@@ -651,20 +651,20 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                         break;
                     }
                     synchronized (n) {
-                        if (m22539n(mVarArr, i) == n) {
+                        if (m22540n(mVarArr, i) == n) {
                             for (C5502m mVar = i2 >= 0 ? n : n instanceof C5507r ? ((C5507r) n).f18039f : null; mVar != null; mVar = mVar.f18023d) {
                                 j--;
                             }
                             i++;
-                            m22542k(mVarArr, i, null);
+                            m22543k(mVarArr, i, null);
                         }
                     }
                 }
             }
-            mVarArr = m22547f(mVarArr, n);
+            mVarArr = m22548f(mVarArr, n);
         }
         if (j != 0) {
-            m22552a(j, -1);
+            m22553a(j, -1);
         }
     }
 
@@ -677,7 +677,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         if (obj == null || biFunction == null) {
             throw null;
         }
-        int l = m22541l(obj.hashCode());
+        int l = m22542l(obj.hashCode());
         C5502m[] mVarArr = this.f17995a;
         int i2 = 0;
         Object obj4 = null;
@@ -687,12 +687,12 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                 int length = mVarArr.length;
                 if (length != 0) {
                     int i4 = (length - 1) & l;
-                    C5502m n = m22539n(mVarArr, i4);
+                    C5502m n = m22540n(mVarArr, i4);
                     if (n == null) {
                         C5503n nVar = new C5503n();
                         synchronized (nVar) {
-                            if (m22551b(mVarArr, i4, null, nVar)) {
-                                Object u = biFunction.mo22172u(obj, null);
+                            if (m22552b(mVarArr, i4, null, nVar)) {
+                                Object u = biFunction.mo22173u(obj, null);
                                 if (u != null) {
                                     mVar = new C5502m(l, obj, u, null);
                                     i = 1;
@@ -700,7 +700,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                                     i = i2;
                                     mVar = null;
                                 }
-                                m22542k(mVarArr, i4, mVar);
+                                m22543k(mVarArr, i4, mVar);
                                 i2 = i;
                                 obj4 = u;
                                 i3 = 1;
@@ -712,10 +712,10 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                     } else {
                         int i5 = n.f18020a;
                         if (i5 == -1) {
-                            mVarArr = m22547f(mVarArr, n);
+                            mVarArr = m22548f(mVarArr, n);
                         } else {
                             synchronized (n) {
-                                if (m22539n(mVarArr, i4) == n) {
+                                if (m22540n(mVarArr, i4) == n) {
                                     if (i5 >= 0) {
                                         C5502m mVar2 = null;
                                         C5502m mVar3 = n;
@@ -724,7 +724,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                                             if (mVar3.f18020a != l || ((obj3 = mVar3.f18021b) != obj && (obj3 == null || !obj.equals(obj3)))) {
                                                 C5502m mVar4 = mVar3.f18023d;
                                                 if (mVar4 == null) {
-                                                    Object u2 = biFunction.mo22172u(obj, null);
+                                                    Object u2 = biFunction.mo22173u(obj, null);
                                                     if (u2 != null) {
                                                         mVar3.f18023d = new C5502m(l, obj, u2, null);
                                                         obj2 = u2;
@@ -739,7 +739,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                                                 }
                                             }
                                         }
-                                        obj2 = biFunction.mo22172u(obj, mVar3.f18022c);
+                                        obj2 = biFunction.mo22173u(obj, mVar3.f18022c);
                                         if (obj2 != null) {
                                             mVar3.f18022c = obj2;
                                         } else {
@@ -747,7 +747,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                                             if (mVar2 != null) {
                                                 mVar2.f18023d = mVar5;
                                             } else {
-                                                m22542k(mVarArr, i4, mVar5);
+                                                m22543k(mVarArr, i4, mVar5);
                                             }
                                             i2 = -1;
                                         }
@@ -756,12 +756,12 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                                     } else if (n instanceof C5507r) {
                                         C5507r rVar = (C5507r) n;
                                         C5508s sVar = rVar.f18038e;
-                                        C5508s b = sVar != null ? sVar.m22510b(l, obj, null) : null;
-                                        Object u3 = biFunction.mo22172u(obj, b == null ? null : b.f18022c);
+                                        C5508s b = sVar != null ? sVar.m22511b(l, obj, null) : null;
+                                        Object u3 = biFunction.mo22173u(obj, b == null ? null : b.f18022c);
                                         if (u3 == null) {
                                             if (b != null) {
-                                                if (rVar.m22515g(b)) {
-                                                    m22542k(mVarArr, i4, m22534s(rVar.f18039f));
+                                                if (rVar.m22516g(b)) {
+                                                    m22543k(mVarArr, i4, m22535s(rVar.f18039f));
                                                 }
                                                 obj4 = u3;
                                                 i2 = -1;
@@ -774,7 +774,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                                             obj4 = u3;
                                             i3 = 1;
                                         } else {
-                                            rVar.m22516f(l, obj, u3);
+                                            rVar.m22517f(l, obj, u3);
                                             obj4 = u3;
                                             i2 = 1;
                                             i3 = 1;
@@ -784,17 +784,17 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                             }
                             if (i3 != 0) {
                                 if (i3 >= 8) {
-                                    m22536q(mVarArr, i4);
+                                    m22537q(mVarArr, i4);
                                 }
                             }
                         }
                     }
                 }
             }
-            mVarArr = m22546g();
+            mVarArr = m22547g();
         }
         if (i2 != 0) {
-            m22552a(i2, i3);
+            m22553a(i2, i3);
         }
         return obj4;
     }
@@ -813,7 +813,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         if (obj == null || function == null) {
             throw null;
         }
-        int l = m22541l(obj.hashCode());
+        int l = m22542l(obj.hashCode());
         C5502m[] mVarArr = this.f17995a;
         Object obj5 = null;
         int i = 0;
@@ -822,14 +822,14 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                 int length = mVarArr.length;
                 if (length != 0) {
                     int i2 = (length - 1) & l;
-                    C5502m n = m22539n(mVarArr, i2);
+                    C5502m n = m22540n(mVarArr, i2);
                     boolean z = true;
                     if (n == null) {
                         C5503n nVar = new C5503n();
                         synchronized (nVar) {
-                            if (m22551b(mVarArr, i2, null, nVar)) {
-                                Object a = function.mo22502a(obj);
-                                m22542k(mVarArr, i2, a != null ? new C5502m(l, obj, a, null) : null);
+                            if (m22552b(mVarArr, i2, null, nVar)) {
+                                Object a = function.mo22503a(obj);
+                                m22543k(mVarArr, i2, a != null ? new C5502m(l, obj, a, null) : null);
                                 obj5 = a;
                                 i = 1;
                             }
@@ -840,10 +840,10 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                     } else {
                         int i3 = n.f18020a;
                         if (i3 == -1) {
-                            mVarArr = m22547f(mVarArr, n);
+                            mVarArr = m22548f(mVarArr, n);
                         } else {
                             synchronized (n) {
-                                if (m22539n(mVarArr, i2) == n) {
+                                if (m22540n(mVarArr, i2) == n) {
                                     if (i3 >= 0) {
                                         C5502m mVar = n;
                                         int i4 = 1;
@@ -851,7 +851,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                                             if (mVar.f18020a != l || ((obj4 = mVar.f18021b) != obj && (obj4 == null || !obj.equals(obj4)))) {
                                                 C5502m mVar2 = mVar.f18023d;
                                                 if (mVar2 == null) {
-                                                    obj2 = function.mo22502a(obj);
+                                                    obj2 = function.mo22503a(obj);
                                                     if (obj2 != null) {
                                                         mVar.f18023d = new C5502m(l, obj, obj2, null);
                                                     } else {
@@ -871,10 +871,10 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                                         i = 2;
                                         C5507r rVar = (C5507r) n;
                                         C5508s sVar = rVar.f18038e;
-                                        if (sVar == null || (b = sVar.m22510b(l, obj, null)) == null) {
-                                            obj2 = function.mo22502a(obj);
+                                        if (sVar == null || (b = sVar.m22511b(l, obj, null)) == null) {
+                                            obj2 = function.mo22503a(obj);
                                             if (obj2 != null) {
-                                                rVar.m22516f(l, obj, obj2);
+                                                rVar.m22517f(l, obj, obj2);
                                             } else {
                                                 obj5 = obj2;
                                             }
@@ -888,7 +888,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                             }
                             if (i != 0) {
                                 if (i >= 8) {
-                                    m22536q(mVarArr, i2);
+                                    m22537q(mVarArr, i2);
                                 }
                                 if (!z) {
                                     return obj5;
@@ -898,10 +898,10 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                     }
                 }
             }
-            mVarArr = m22546g();
+            mVarArr = m22547g();
         }
         if (obj5 != null) {
-            m22552a(1L, i);
+            m22553a(1L, i);
         }
         return obj5;
     }
@@ -933,7 +933,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         if (mVarArr != null) {
             C5506q qVar = new C5506q(mVarArr, mVarArr.length, 0, mVarArr.length);
             while (true) {
-                C5502m b = qVar.m22521b();
+                C5502m b = qVar.m22522b();
                 if (b == null) {
                     break;
                 }
@@ -975,7 +975,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         int length = mVarArr == null ? 0 : mVarArr.length;
         C5506q qVar = new C5506q(mVarArr, length, 0, length);
         while (true) {
-            C5502m b = qVar.m22521b();
+            C5502m b = qVar.m22522b();
             if (b != null) {
                 Object obj2 = b.f18022c;
                 Object obj3 = map.get(b.f18021b);
@@ -995,17 +995,17 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         return false;
     }
 
-    final C5502m[] m22547f(C5502m[] mVarArr, C5502m mVar) {
+    final C5502m[] m22548f(C5502m[] mVarArr, C5502m mVar) {
         C5502m[] mVarArr2;
         int i;
         if (!(mVar instanceof C5497h) || (mVarArr2 = ((C5497h) mVar).f18013e) == null) {
             return this.f17995a;
         }
-        int j = m22543j(mVarArr.length);
+        int j = m22544j(mVarArr.length);
         while (true) {
             if (mVarArr2 == this.f17996b && this.f17995a == mVarArr && (i = this.sizeCtl) < 0 && (i >>> f17985h) == j && i != j + 1 && i != f17984g + j && this.transferIndex > 0) {
                 if (f17987j.compareAndSwapInt(this, f17988k, i, i + 1)) {
-                    m22537p(mVarArr, mVarArr2);
+                    m22538p(mVarArr, mVarArr2);
                     break;
                 }
             } else {
@@ -1022,9 +1022,9 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         if (mVarArr != null) {
             C5506q qVar = new C5506q(mVarArr, mVarArr.length, 0, mVarArr.length);
             while (true) {
-                C5502m b = qVar.m22521b();
+                C5502m b = qVar.m22522b();
                 if (b != null) {
-                    biConsumer.mo22179p(b.f18021b, b.f18022c);
+                    biConsumer.mo22180p(b.f18021b, b.f18022c);
                 } else {
                     return;
                 }
@@ -1048,8 +1048,8 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         return v == null ? obj2 : v;
     }
 
-    public final java.lang.Object m22545h(java.lang.Object r9, java.lang.Object r10, boolean r11) {
-        throw new UnsupportedOperationException("Method not decompiled: p126j$.util.concurrent.ConcurrentHashMap.m22545h(java.lang.Object, java.lang.Object, boolean):java.lang.Object");
+    public final java.lang.Object m22546h(java.lang.Object r9, java.lang.Object r10, boolean r11) {
+        throw new UnsupportedOperationException("Method not decompiled: p126j$.util.concurrent.ConcurrentHashMap.m22546h(java.lang.Object, java.lang.Object, boolean):java.lang.Object");
     }
 
     @Override
@@ -1059,7 +1059,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         if (mVarArr != null) {
             C5506q qVar = new C5506q(mVarArr, mVarArr.length, 0, mVarArr.length);
             while (true) {
-                C5502m b = qVar.m22521b();
+                C5502m b = qVar.m22522b();
                 if (b == null) {
                     break;
                 }
@@ -1069,7 +1069,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         return i;
     }
 
-    public final Object m22544i(Object obj, Object obj2, Object obj3) {
+    public final Object m22545i(Object obj, Object obj2, Object obj3) {
         int length;
         int i;
         C5502m n;
@@ -1077,19 +1077,19 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         C5508s b;
         C5502m s;
         Object obj5;
-        int l = m22541l(obj.hashCode());
+        int l = m22542l(obj.hashCode());
         C5502m[] mVarArr = this.f17995a;
         while (true) {
-            if (mVarArr == null || (length = mVarArr.length) == 0 || (n = m22539n(mVarArr, (i = (length - 1) & l))) == null) {
+            if (mVarArr == null || (length = mVarArr.length) == 0 || (n = m22540n(mVarArr, (i = (length - 1) & l))) == null) {
                 break;
             }
             int i2 = n.f18020a;
             if (i2 == -1) {
-                mVarArr = m22547f(mVarArr, n);
+                mVarArr = m22548f(mVarArr, n);
             } else {
                 boolean z = false;
                 synchronized (n) {
-                    if (m22539n(mVarArr, i) == n) {
+                    if (m22540n(mVarArr, i) == n) {
                         if (i2 >= 0) {
                             C5502m mVar = null;
                             C5502m mVar2 = n;
@@ -1111,7 +1111,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                                     mVar.f18023d = mVar2.f18023d;
                                 } else {
                                     s = mVar2.f18023d;
-                                    m22542k(mVarArr, i, s);
+                                    m22543k(mVarArr, i, s);
                                 }
                                 z = true;
                             }
@@ -1120,14 +1120,14 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                         } else if (n instanceof C5507r) {
                             C5507r rVar = (C5507r) n;
                             C5508s sVar = rVar.f18038e;
-                            if (sVar != null && (b = sVar.m22510b(l, obj, null)) != null) {
+                            if (sVar != null && (b = sVar.m22511b(l, obj, null)) != null) {
                                 obj4 = b.f18022c;
                                 if (obj3 == null || obj3 == obj4 || (obj4 != null && obj3.equals(obj4))) {
                                     if (obj2 != null) {
                                         b.f18022c = obj2;
-                                    } else if (rVar.m22515g(b)) {
-                                        s = m22534s(rVar.f18039f);
-                                        m22542k(mVarArr, i, s);
+                                    } else if (rVar.m22516g(b)) {
+                                        s = m22535s(rVar.f18039f);
+                                        m22543k(mVarArr, i, s);
                                     }
                                     z = true;
                                 }
@@ -1141,7 +1141,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                 if (z) {
                     if (obj4 != null) {
                         if (obj2 == null) {
-                            m22552a(-1L, -1);
+                            m22553a(-1L, -1);
                         }
                         return obj4;
                     }
@@ -1153,7 +1153,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
 
     @Override
     public boolean isEmpty() {
-        return m22540m() <= 0;
+        return m22541m() <= 0;
     }
 
     @Override
@@ -1167,7 +1167,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         return jVar2;
     }
 
-    public final long m22540m() {
+    public final long m22541m() {
         C5493d[] dVarArr = this.f17997c;
         long j = this.baseCount;
         if (dVarArr != null) {
@@ -1189,7 +1189,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         if (obj == null || obj5 == null || biFunction == null) {
             throw null;
         }
-        int l = m22541l(obj.hashCode());
+        int l = m22542l(obj.hashCode());
         C5502m[] mVarArr = this.f17995a;
         int i2 = 0;
         Object obj6 = null;
@@ -1199,15 +1199,15 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                 int length = mVarArr.length;
                 if (length != 0) {
                     int i4 = (length - 1) & l;
-                    C5502m n = m22539n(mVarArr, i4);
+                    C5502m n = m22540n(mVarArr, i4);
                     i = 1;
                     if (n != null) {
                         int i5 = n.f18020a;
                         if (i5 == -1) {
-                            mVarArr = m22547f(mVarArr, n);
+                            mVarArr = m22548f(mVarArr, n);
                         } else {
                             synchronized (n) {
-                                if (m22539n(mVarArr, i4) == n) {
+                                if (m22540n(mVarArr, i4) == n) {
                                     if (i5 >= 0) {
                                         C5502m mVar = null;
                                         C5502m mVar2 = n;
@@ -1226,7 +1226,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                                                 mVar2 = mVar3;
                                             }
                                         }
-                                        obj3 = biFunction.mo22172u(mVar2.f18022c, obj5);
+                                        obj3 = biFunction.mo22173u(mVar2.f18022c, obj5);
                                         if (obj3 != null) {
                                             mVar2.f18022c = obj3;
                                         } else {
@@ -1234,7 +1234,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                                             if (mVar != null) {
                                                 mVar.f18023d = mVar4;
                                             } else {
-                                                m22542k(mVarArr, i4, mVar4);
+                                                m22543k(mVarArr, i4, mVar4);
                                             }
                                             i3 = -1;
                                         }
@@ -1244,12 +1244,12 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                                         i2 = 2;
                                         C5507r rVar = (C5507r) n;
                                         C5508s sVar = rVar.f18038e;
-                                        C5508s b = sVar == null ? null : sVar.m22510b(l, obj, null);
-                                        Object u = b == null ? obj5 : biFunction.mo22172u(b.f18022c, obj5);
+                                        C5508s b = sVar == null ? null : sVar.m22511b(l, obj, null);
+                                        Object u = b == null ? obj5 : biFunction.mo22173u(b.f18022c, obj5);
                                         if (u == null) {
                                             if (b != null) {
-                                                if (rVar.m22515g(b)) {
-                                                    m22542k(mVarArr, i4, m22534s(rVar.f18039f));
+                                                if (rVar.m22516g(b)) {
+                                                    m22543k(mVarArr, i4, m22535s(rVar.f18039f));
                                                 }
                                                 obj6 = u;
                                                 i3 = -1;
@@ -1259,7 +1259,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                                             b.f18022c = u;
                                             obj6 = u;
                                         } else {
-                                            rVar.m22516f(l, obj, u);
+                                            rVar.m22517f(l, obj, u);
                                             obj6 = u;
                                             i3 = 1;
                                         }
@@ -1268,21 +1268,21 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                             }
                             if (i2 != 0) {
                                 if (i2 >= 8) {
-                                    m22536q(mVarArr, i4);
+                                    m22537q(mVarArr, i4);
                                 }
                                 i = i3;
                                 obj5 = obj6;
                             }
                         }
-                    } else if (m22551b(mVarArr, i4, null, new C5502m(l, obj, obj5, null))) {
+                    } else if (m22552b(mVarArr, i4, null, new C5502m(l, obj, obj5, null))) {
                         break;
                     }
                 }
             }
-            mVarArr = m22546g();
+            mVarArr = m22547g();
         }
         if (i != 0) {
-            m22552a(i, i2);
+            m22553a(i, i2);
         }
         return obj5;
     }
@@ -1294,37 +1294,37 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
 
     @Override
     public V put(K k, V v) {
-        return (V) m22545h(k, v, false);
+        return (V) m22546h(k, v, false);
     }
 
     @Override
     public void putAll(Map map) {
-        m22535r(map.size());
+        m22536r(map.size());
         for (Map.Entry<K, V> entry : map.entrySet()) {
-            m22545h(entry.getKey(), entry.getValue(), false);
+            m22546h(entry.getKey(), entry.getValue(), false);
         }
     }
 
     @Override
     public V putIfAbsent(K k, V v) {
-        return (V) m22545h(k, v, true);
+        return (V) m22546h(k, v, true);
     }
 
     @Override
     public V remove(Object obj) {
-        return (V) m22544i(obj, null, null);
+        return (V) m22545i(obj, null, null);
     }
 
     @Override
     public boolean remove(Object obj, Object obj2) {
         Objects.requireNonNull(obj);
-        return (obj2 == null || m22544i(obj, null, obj2) == null) ? false : true;
+        return (obj2 == null || m22545i(obj, null, obj2) == null) ? false : true;
     }
 
     @Override
     public Object replace(Object obj, Object obj2) {
         if (obj != null && obj2 != null) {
-            return m22544i(obj, obj2, null);
+            return m22545i(obj, obj2, null);
         }
         throw null;
     }
@@ -1332,7 +1332,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
     @Override
     public boolean replace(Object obj, Object obj2, Object obj3) {
         if (obj != null && obj2 != null && obj3 != null) {
-            return m22544i(obj, obj3, obj2) != null;
+            return m22545i(obj, obj3, obj2) != null;
         }
         throw null;
     }
@@ -1344,14 +1344,14 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         if (mVarArr != null) {
             C5506q qVar = new C5506q(mVarArr, mVarArr.length, 0, mVarArr.length);
             while (true) {
-                C5502m b = qVar.m22521b();
+                C5502m b = qVar.m22522b();
                 if (b != null) {
                     Object obj = b.f18022c;
                     Object obj2 = b.f18021b;
                     do {
-                        Object u = biFunction.mo22172u(obj2, obj);
+                        Object u = biFunction.mo22173u(obj2, obj);
                         Objects.requireNonNull(u);
-                        if (m22544i(obj2, u, obj) == null) {
+                        if (m22545i(obj2, u, obj) == null) {
                             obj = get(obj2);
                         }
                     } while (obj != null);
@@ -1369,7 +1369,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
 
     @Override
     public int size() {
-        long m = m22540m();
+        long m = m22541m();
         if (m < 0) {
             return 0;
         }
@@ -1386,7 +1386,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
         C5506q qVar = new C5506q(mVarArr, length, 0, length);
         StringBuilder sb2 = new StringBuilder();
         sb2.append('{');
-        C5502m b = qVar.m22521b();
+        C5502m b = qVar.m22522b();
         if (b != null) {
             while (true) {
                 Object obj = b.f18021b;
@@ -1400,7 +1400,7 @@ public class ConcurrentHashMap<K, V> extends AbstractMap<K, V> implements Concur
                     obj2 = "(this Map)";
                 }
                 sb2.append(obj2);
-                b = qVar.m22521b();
+                b = qVar.m22522b();
                 if (b == null) {
                     break;
                 }

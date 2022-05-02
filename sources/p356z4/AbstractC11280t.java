@@ -8,19 +8,19 @@ import p187n4.AbstractC7230t;
 import p187n4.C7233t0;
 
 public abstract class AbstractC11280t {
-    public AbstractC11281a f36190a;
-    public AbstractC0134e f36191b;
+    public AbstractC11281a f36193a;
+    public AbstractC0134e f36194b;
 
     public interface AbstractC11281a {
     }
 
     public final AbstractC0134e m963a() {
-        return (AbstractC0134e) C1186a.m38185e(this.f36191b);
+        return (AbstractC0134e) C1186a.m38188e(this.f36194b);
     }
 
     public final void m962b(AbstractC11281a aVar, AbstractC0134e eVar) {
-        this.f36190a = aVar;
-        this.f36191b = eVar;
+        this.f36193a = aVar;
+        this.f36194b = eVar;
     }
 
     public boolean mo961c() {

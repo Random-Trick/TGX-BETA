@@ -3,14 +3,14 @@ package p274t7;
 import java.util.Locale;
 
 public final class C9017h0 extends Exception {
-    public final int f28941a;
+    public final int f28944a;
 
     public C9017h0(String str) {
         super(str);
-        this.f28941a = m10691a(str);
+        this.f28944a = m10690a(str);
     }
 
-    public final int m10691a(String str) {
+    public final int m10690a(String str) {
         char c;
         if (str == null) {
             return 0;

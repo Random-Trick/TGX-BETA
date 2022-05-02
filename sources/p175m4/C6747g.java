@@ -24,15 +24,15 @@ public final class C6747g extends AbstractC6736b {
         this(j, j2);
     }
 
-    public static C6747g m19154a(C1189b0 b0Var, long j, C1205i0 i0Var) {
-        long b = m19153b(b0Var, j);
-        return new C6747g(b, i0Var.m38052b(b));
+    public static C6747g m19155a(C1189b0 b0Var, long j, C1205i0 i0Var) {
+        long b = m19154b(b0Var, j);
+        return new C6747g(b, i0Var.m38055b(b));
     }
 
-    public static long m19153b(C1189b0 b0Var, long j) {
-        long D = b0Var.m38156D();
+    public static long m19154b(C1189b0 b0Var, long j) {
+        long D = b0Var.m38159D();
         if ((128 & D) != 0) {
-            return 8589934591L & ((((D & 1) << 32) | b0Var.m38154F()) + j);
+            return 8589934591L & ((((D & 1) << 32) | b0Var.m38157F()) + j);
         }
         return -9223372036854775807L;
     }

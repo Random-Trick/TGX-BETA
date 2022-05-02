@@ -15,7 +15,7 @@ public abstract class AbstractC4234j {
         }
 
         @Override
-        public void mo28359a(String str, String str2, Throwable... thArr) {
+        public void mo28361a(String str, String str2, Throwable... thArr) {
             if (this.f14277c > 3) {
                 return;
             }
@@ -27,7 +27,7 @@ public abstract class AbstractC4234j {
         }
 
         @Override
-        public void mo28358b(String str, String str2, Throwable... thArr) {
+        public void mo28360b(String str, String str2, Throwable... thArr) {
             if (this.f14277c > 6) {
                 return;
             }
@@ -39,7 +39,7 @@ public abstract class AbstractC4234j {
         }
 
         @Override
-        public void mo28357d(String str, String str2, Throwable... thArr) {
+        public void mo28359d(String str, String str2, Throwable... thArr) {
             if (this.f14277c > 4) {
                 return;
             }
@@ -51,7 +51,7 @@ public abstract class AbstractC4234j {
         }
 
         @Override
-        public void mo28356g(String str, String str2, Throwable... thArr) {
+        public void mo28358g(String str, String str2, Throwable... thArr) {
             if (this.f14277c > 2) {
                 return;
             }
@@ -63,7 +63,7 @@ public abstract class AbstractC4234j {
         }
 
         @Override
-        public void mo28355h(String str, String str2, Throwable... thArr) {
+        public void mo28357h(String str, String str2, Throwable... thArr) {
             if (this.f14277c > 5) {
                 return;
             }
@@ -78,7 +78,7 @@ public abstract class AbstractC4234j {
     public AbstractC4234j(int i) {
     }
 
-    public static synchronized AbstractC4234j m28362c() {
+    public static synchronized AbstractC4234j m28364c() {
         AbstractC4234j jVar;
         synchronized (AbstractC4234j.class) {
             if (f14275a == null) {
@@ -89,13 +89,13 @@ public abstract class AbstractC4234j {
         return jVar;
     }
 
-    public static synchronized void m28361e(AbstractC4234j jVar) {
+    public static synchronized void m28363e(AbstractC4234j jVar) {
         synchronized (AbstractC4234j.class) {
             f14275a = jVar;
         }
     }
 
-    public static String m28360f(String str) {
+    public static String m28362f(String str) {
         int length = str.length();
         StringBuilder sb2 = new StringBuilder(23);
         sb2.append("WM-");
@@ -108,13 +108,13 @@ public abstract class AbstractC4234j {
         return sb2.toString();
     }
 
-    public abstract void mo28359a(String str, String str2, Throwable... thArr);
+    public abstract void mo28361a(String str, String str2, Throwable... thArr);
 
-    public abstract void mo28358b(String str, String str2, Throwable... thArr);
+    public abstract void mo28360b(String str, String str2, Throwable... thArr);
 
-    public abstract void mo28357d(String str, String str2, Throwable... thArr);
+    public abstract void mo28359d(String str, String str2, Throwable... thArr);
 
-    public abstract void mo28356g(String str, String str2, Throwable... thArr);
+    public abstract void mo28358g(String str, String str2, Throwable... thArr);
 
-    public abstract void mo28355h(String str, String str2, Throwable... thArr);
+    public abstract void mo28357h(String str, String str2, Throwable... thArr);
 }

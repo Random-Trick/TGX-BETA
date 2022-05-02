@@ -12,7 +12,7 @@ public final class C0054d extends AbstractC0068j {
     }
 
     @Override
-    public List<AbstractC0074m> mo42475c() {
+    public List<AbstractC0074m> mo42478c() {
         return this.f182a;
     }
 
@@ -21,7 +21,7 @@ public final class C0054d extends AbstractC0068j {
             return true;
         }
         if (obj instanceof AbstractC0068j) {
-            return this.f182a.equals(((AbstractC0068j) obj).mo42475c());
+            return this.f182a.equals(((AbstractC0068j) obj).mo42478c());
         }
         return false;
     }

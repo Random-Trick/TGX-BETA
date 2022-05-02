@@ -18,19 +18,19 @@ public class C5813a {
         this.f18532a = context;
     }
 
-    public static C5813a m22119b(Context context) {
+    public static C5813a m22120b(Context context) {
         return new C5813a(context);
     }
 
-    public boolean m22120a() {
+    public boolean m22121a() {
         return this.f18532a.getApplicationInfo().targetSdkVersion < 14;
     }
 
-    public int m22118c() {
+    public int m22119c() {
         return this.f18532a.getResources().getDisplayMetrics().widthPixels / 2;
     }
 
-    public int m22117d() {
+    public int m22118d() {
         Configuration configuration = this.f18532a.getResources().getConfiguration();
         int i = configuration.screenWidthDp;
         int i2 = configuration.screenHeightDp;
@@ -55,26 +55,26 @@ public class C5813a {
         return 4;
     }
 
-    public int m22116e() {
+    public int m22117e() {
         return this.f18532a.getResources().getDimensionPixelSize(C3557d.b_res_0x7f05000a);
     }
 
-    public int m22115f() {
+    public int m22116f() {
         TypedArray obtainStyledAttributes = this.f18532a.obtainStyledAttributes(null, C3563j.f12031a, C3554a.c_res_0x7f020005, 0);
         int layoutDimension = obtainStyledAttributes.getLayoutDimension(C3563j.f12077j, 0);
         Resources resources = this.f18532a.getResources();
-        if (!m22114g()) {
+        if (!m22115g()) {
             layoutDimension = Math.min(layoutDimension, resources.getDimensionPixelSize(C3557d.a_res_0x7f050009));
         }
         obtainStyledAttributes.recycle();
         return layoutDimension;
     }
 
-    public boolean m22114g() {
+    public boolean m22115g() {
         return this.f18532a.getResources().getBoolean(C3555b.a_res_0x7f030000);
     }
 
-    public boolean m22113h() {
+    public boolean m22114h() {
         if (Build.VERSION.SDK_INT >= 19) {
             return true;
         }

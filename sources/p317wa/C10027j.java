@@ -3,8 +3,8 @@ package p317wa;
 import qa.C8294g;
 
 public final class C10027j extends C10024h implements AbstractC10018d<Long> {
-    public static final C10028a f32641N = new C10028a(null);
-    public static final C10027j f32642O = new C10027j(1, 0);
+    public static final C10028a f32644N = new C10028a(null);
+    public static final C10027j f32645O = new C10027j(1, 0);
 
     public static final class C10028a {
         public C10028a() {

@@ -26,7 +26,7 @@ public final class C1111f {
 
         @Override
         public AbstractFutureC1291a<O> apply(I i) {
-            return C1111f.m38351h(this.f4310a.apply(i));
+            return C1111f.m38354h(this.f4310a.apply(i));
         }
     }
 
@@ -49,15 +49,15 @@ public final class C1111f {
         @Override
         public void mo5503a(I i) {
             try {
-                this.f4311a.m20716c(this.f4312b.apply(i));
+                this.f4311a.m20717c(this.f4312b.apply(i));
             } catch (Throwable th) {
-                this.f4311a.m20713f(th);
+                this.f4311a.m20714f(th);
             }
         }
 
         @Override
         public void mo5502b(Throwable th) {
-            this.f4311a.m20713f(th);
+            this.f4311a.m20714f(th);
         }
     }
 
@@ -87,7 +87,7 @@ public final class C1111f {
         public void run() {
             Throwable e;
             try {
-                this.f4315b.mo5503a(C1111f.m38355d(this.f4314a));
+                this.f4315b.mo5503a(C1111f.m38358d(this.f4314a));
             } catch (Error e2) {
                 e = e2;
                 this.f4315b.mo5502b(e);
@@ -104,22 +104,22 @@ public final class C1111f {
         }
     }
 
-    public static <V> void m38357b(AbstractFutureC1291a<V> aVar, AbstractC1107c<? super V> cVar, Executor executor) {
-        C1132h.m38322e(cVar);
-        aVar.mo13372a(new RunnableC1116e(aVar, cVar), executor);
+    public static <V> void m38360b(AbstractFutureC1291a<V> aVar, AbstractC1107c<? super V> cVar, Executor executor) {
+        C1132h.m38325e(cVar);
+        aVar.mo13371a(new RunnableC1116e(aVar, cVar), executor);
     }
 
-    public static <V> AbstractFutureC1291a<List<V>> m38356c(Collection<? extends AbstractFutureC1291a<? extends V>> collection) {
-        return new C1121h(new ArrayList(collection), true, C0003a.m42611a());
+    public static <V> AbstractFutureC1291a<List<V>> m38359c(Collection<? extends AbstractFutureC1291a<? extends V>> collection) {
+        return new C1121h(new ArrayList(collection), true, C0003a.m42614a());
     }
 
-    public static <V> V m38355d(Future<V> future) {
+    public static <V> V m38358d(Future<V> future) {
         boolean isDone = future.isDone();
-        C1132h.m38319h(isDone, "Future was expected to be done, " + future);
-        return (V) m38354e(future);
+        C1132h.m38322h(isDone, "Future was expected to be done, " + future);
+        return (V) m38357e(future);
     }
 
-    public static <V> V m38354e(Future<V> future) {
+    public static <V> V m38357e(Future<V> future) {
         V v;
         boolean z = false;
         while (true) {
@@ -141,69 +141,69 @@ public final class C1111f {
         return v;
     }
 
-    public static <V> AbstractFutureC1291a<V> m38353f(Throwable th) {
+    public static <V> AbstractFutureC1291a<V> m38356f(Throwable th) {
         return new AbstractC1117g.C1118a(th);
     }
 
-    public static <V> ScheduledFuture<V> m38352g(Throwable th) {
+    public static <V> ScheduledFuture<V> m38355g(Throwable th) {
         return new AbstractC1117g.ScheduledFutureC1119b(th);
     }
 
-    public static <V> AbstractFutureC1291a<V> m38351h(V v) {
+    public static <V> AbstractFutureC1291a<V> m38354h(V v) {
         if (v == null) {
-            return AbstractC1117g.m38342b();
+            return AbstractC1117g.m38345b();
         }
         return new AbstractC1117g.C1120c(v);
     }
 
-    public static Object m38350i(AbstractFutureC1291a aVar, C6287c.C6288a aVar2) {
-        m38346m(false, aVar, f4309a, aVar2, C0003a.m42611a());
+    public static Object m38353i(AbstractFutureC1291a aVar, C6287c.C6288a aVar2) {
+        m38349m(false, aVar, f4309a, aVar2, C0003a.m42614a());
         return "nonCancellationPropagating[" + aVar + "]";
     }
 
-    public static <V> AbstractFutureC1291a<V> m38349j(final AbstractFutureC1291a<V> aVar) {
-        C1132h.m38322e(aVar);
-        return aVar.isDone() ? aVar : C6287c.m20719a(new C6287c.AbstractC6290c() {
+    public static <V> AbstractFutureC1291a<V> m38352j(final AbstractFutureC1291a<V> aVar) {
+        C1132h.m38325e(aVar);
+        return aVar.isDone() ? aVar : C6287c.m20720a(new C6287c.AbstractC6290c() {
             @Override
             public final Object mo5520a(C6287c.C6288a aVar2) {
                 Object i;
-                i = C1111f.m38350i(AbstractFutureC1291a.this, aVar2);
+                i = C1111f.m38353i(AbstractFutureC1291a.this, aVar2);
                 return i;
             }
         });
     }
 
-    public static <V> void m38348k(AbstractFutureC1291a<V> aVar, C6287c.C6288a<V> aVar2) {
-        m38347l(aVar, f4309a, aVar2, C0003a.m42611a());
+    public static <V> void m38351k(AbstractFutureC1291a<V> aVar, C6287c.C6288a<V> aVar2) {
+        m38350l(aVar, f4309a, aVar2, C0003a.m42614a());
     }
 
-    public static <I, O> void m38347l(AbstractFutureC1291a<I> aVar, AbstractC7094a<? super I, ? extends O> aVar2, C6287c.C6288a<O> aVar3, Executor executor) {
-        m38346m(true, aVar, aVar2, aVar3, executor);
+    public static <I, O> void m38350l(AbstractFutureC1291a<I> aVar, AbstractC7094a<? super I, ? extends O> aVar2, C6287c.C6288a<O> aVar3, Executor executor) {
+        m38349m(true, aVar, aVar2, aVar3, executor);
     }
 
-    public static <I, O> void m38346m(boolean z, AbstractFutureC1291a<I> aVar, AbstractC7094a<? super I, ? extends O> aVar2, C6287c.C6288a<O> aVar3, Executor executor) {
-        C1132h.m38322e(aVar);
-        C1132h.m38322e(aVar2);
-        C1132h.m38322e(aVar3);
-        C1132h.m38322e(executor);
-        m38357b(aVar, new C1114c(aVar3, aVar2), executor);
+    public static <I, O> void m38349m(boolean z, AbstractFutureC1291a<I> aVar, AbstractC7094a<? super I, ? extends O> aVar2, C6287c.C6288a<O> aVar3, Executor executor) {
+        C1132h.m38325e(aVar);
+        C1132h.m38325e(aVar2);
+        C1132h.m38325e(aVar3);
+        C1132h.m38325e(executor);
+        m38360b(aVar, new C1114c(aVar3, aVar2), executor);
         if (z) {
-            aVar3.m20718a(new RunnableC1115d(aVar), C0003a.m42611a());
+            aVar3.m20719a(new RunnableC1115d(aVar), C0003a.m42614a());
         }
     }
 
-    public static <V> AbstractFutureC1291a<List<V>> m38345n(Collection<? extends AbstractFutureC1291a<? extends V>> collection) {
-        return new C1121h(new ArrayList(collection), false, C0003a.m42611a());
+    public static <V> AbstractFutureC1291a<List<V>> m38348n(Collection<? extends AbstractFutureC1291a<? extends V>> collection) {
+        return new C1121h(new ArrayList(collection), false, C0003a.m42614a());
     }
 
-    public static <I, O> AbstractFutureC1291a<O> m38344o(AbstractFutureC1291a<I> aVar, AbstractC7094a<? super I, ? extends O> aVar2, Executor executor) {
-        C1132h.m38322e(aVar2);
-        return m38343p(aVar, new C1112a(aVar2), executor);
+    public static <I, O> AbstractFutureC1291a<O> m38347o(AbstractFutureC1291a<I> aVar, AbstractC7094a<? super I, ? extends O> aVar2, Executor executor) {
+        C1132h.m38325e(aVar2);
+        return m38346p(aVar, new C1112a(aVar2), executor);
     }
 
-    public static <I, O> AbstractFutureC1291a<O> m38343p(AbstractFutureC1291a<I> aVar, AbstractC1104a<? super I, ? extends O> aVar2, Executor executor) {
+    public static <I, O> AbstractFutureC1291a<O> m38346p(AbstractFutureC1291a<I> aVar, AbstractC1104a<? super I, ? extends O> aVar2, Executor executor) {
         RunnableC1105b bVar = new RunnableC1105b(aVar2, aVar);
-        aVar.mo13372a(bVar, executor);
+        aVar.mo13371a(bVar, executor);
         return bVar;
     }
 }

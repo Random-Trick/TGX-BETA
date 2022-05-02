@@ -7,13 +7,13 @@ import p198o2.C7535d;
 import p323x1.AbstractC10066b;
 
 public class C8001f {
-    public final WorkDatabase f26051a;
+    public final WorkDatabase f26054a;
 
     public C8001f(WorkDatabase workDatabase) {
-        this.f26051a = workDatabase;
+        this.f26054a = workDatabase;
     }
 
-    public static void m13802b(Context context, AbstractC10066b bVar) {
+    public static void m13801b(Context context, AbstractC10066b bVar) {
         SharedPreferences sharedPreferences = context.getSharedPreferences("androidx.work.util.preferences", 0);
         if (sharedPreferences.contains("reschedule_needed") || sharedPreferences.contains("last_cancel_all_time_ms")) {
             long j = 0;
@@ -33,12 +33,12 @@ public class C8001f {
         }
     }
 
-    public boolean m13803a() {
-        Long b = this.f26051a.mo38440z().mo15715b("reschedule_needed");
+    public boolean m13802a() {
+        Long b = this.f26054a.mo38443z().mo15715b("reschedule_needed");
         return b != null && b.longValue() == 1;
     }
 
-    public void m13801c(boolean z) {
-        this.f26051a.mo38440z().mo15716a(new C7535d("reschedule_needed", z));
+    public void m13800c(boolean z) {
+        this.f26054a.mo38443z().mo15716a(new C7535d("reschedule_needed", z));
     }
 }

@@ -23,34 +23,34 @@ public class C6384t extends AbstractC6749a {
         this.f20030N = i3;
     }
 
-    public int m20491b() {
+    public int m20492b() {
         return this.f20029M;
     }
 
-    public int m20490c() {
+    public int m20491c() {
         return this.f20030N;
     }
 
-    public boolean m20489d() {
+    public boolean m20490d() {
         return this.f20032b;
     }
 
-    public boolean m20488e() {
+    public boolean m20489e() {
         return this.f20033c;
     }
 
-    public int m20487f() {
+    public int m20488f() {
         return this.f20031a;
     }
 
     @Override
     public final void writeToParcel(@RecentlyNonNull Parcel parcel, int i) {
-        int a = C6752c.m19124a(parcel);
-        C6752c.m19114k(parcel, 1, m20487f());
-        C6752c.m19122c(parcel, 2, m20489d());
-        C6752c.m19122c(parcel, 3, m20488e());
-        C6752c.m19114k(parcel, 4, m20491b());
-        C6752c.m19114k(parcel, 5, m20490c());
-        C6752c.m19123b(parcel, a);
+        int a = C6752c.m19125a(parcel);
+        C6752c.m19115k(parcel, 1, m20488f());
+        C6752c.m19123c(parcel, 2, m20490d());
+        C6752c.m19123c(parcel, 3, m20489e());
+        C6752c.m19115k(parcel, 4, m20492b());
+        C6752c.m19115k(parcel, 5, m20491c());
+        C6752c.m19124b(parcel, a);
     }
 }

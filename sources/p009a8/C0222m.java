@@ -8,11 +8,11 @@ import java.util.List;
 import p021b6.AbstractC1264i;
 
 public class C0222m {
-    public static void m42066a(@RecentlyNonNull Context context, @RecentlyNonNull String str) {
-        m42065b(context, AbstractC1264i.m37814u(str));
+    public static void m42069a(@RecentlyNonNull Context context, @RecentlyNonNull String str) {
+        m42068b(context, AbstractC1264i.m37817u(str));
     }
 
-    public static void m42065b(@RecentlyNonNull Context context, @RecentlyNonNull List<String> list) {
+    public static void m42068b(@RecentlyNonNull Context context, @RecentlyNonNull List<String> list) {
         Intent intent = new Intent();
         intent.setClassName("com.google.android.gms", "com.google.android.gms.vision.DependencyBroadcastReceiverProxy");
         intent.setAction("com.google.android.gms.vision.DEPENDENCY");

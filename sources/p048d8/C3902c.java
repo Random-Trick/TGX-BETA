@@ -9,6 +9,6 @@ public final class C3902c implements AbstractC3876h {
 
     @Override
     public final Object mo5891a(AbstractC3870e eVar) {
-        return new C3905f((C0218i) eVar.mo29677a(C0218i.class));
+        return new C3905f((C0218i) eVar.mo29679a(C0218i.class));
     }
 }

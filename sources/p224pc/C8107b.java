@@ -4,7 +4,7 @@ import org.drinkless.p210td.libcore.telegram.TdApi;
 import org.json.JSONObject;
 
 public class C8107b {
-    public static C8105a m13589a(TdApi.StatisticalGraphData statisticalGraphData, int i) {
+    public static C8105a m13588a(TdApi.StatisticalGraphData statisticalGraphData, int i) {
         JSONObject jSONObject = new JSONObject(statisticalGraphData.jsonData);
         if (i == 0) {
             return new C8105a(jSONObject);

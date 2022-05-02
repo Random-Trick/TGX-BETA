@@ -14,85 +14,85 @@ import p071f2.EnumC4245n;
 public class C7574v {
 
     public static class C7575a {
-        public static final int[] f24192a;
-        public static final int[] f24193b;
-        public static final int[] f24194c;
-        public static final int[] f24195d;
+        public static final int[] f24195a;
+        public static final int[] f24196b;
+        public static final int[] f24197c;
+        public static final int[] f24198d;
 
         static {
             int[] iArr = new int[EnumC4245n.values().length];
-            f24195d = iArr;
+            f24198d = iArr;
             try {
                 iArr[EnumC4245n.RUN_AS_NON_EXPEDITED_WORK_REQUEST.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f24195d[EnumC4245n.DROP_WORK_REQUEST.ordinal()] = 2;
+                f24198d[EnumC4245n.DROP_WORK_REQUEST.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             int[] iArr2 = new int[EnumC4236k.values().length];
-            f24194c = iArr2;
+            f24197c = iArr2;
             try {
                 iArr2[EnumC4236k.NOT_REQUIRED.ordinal()] = 1;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f24194c[EnumC4236k.CONNECTED.ordinal()] = 2;
+                f24197c[EnumC4236k.CONNECTED.ordinal()] = 2;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f24194c[EnumC4236k.UNMETERED.ordinal()] = 3;
+                f24197c[EnumC4236k.UNMETERED.ordinal()] = 3;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f24194c[EnumC4236k.NOT_ROAMING.ordinal()] = 4;
+                f24197c[EnumC4236k.NOT_ROAMING.ordinal()] = 4;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f24194c[EnumC4236k.METERED.ordinal()] = 5;
+                f24197c[EnumC4236k.METERED.ordinal()] = 5;
             } catch (NoSuchFieldError unused7) {
             }
             int[] iArr3 = new int[EnumC4222a.values().length];
-            f24193b = iArr3;
+            f24196b = iArr3;
             try {
                 iArr3[EnumC4222a.EXPONENTIAL.ordinal()] = 1;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f24193b[EnumC4222a.LINEAR.ordinal()] = 2;
+                f24196b[EnumC4222a.LINEAR.ordinal()] = 2;
             } catch (NoSuchFieldError unused9) {
             }
             int[] iArr4 = new int[C4250s.EnumC4251a.values().length];
-            f24192a = iArr4;
+            f24195a = iArr4;
             try {
                 iArr4[C4250s.EnumC4251a.ENQUEUED.ordinal()] = 1;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f24192a[C4250s.EnumC4251a.RUNNING.ordinal()] = 2;
+                f24195a[C4250s.EnumC4251a.RUNNING.ordinal()] = 2;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                f24192a[C4250s.EnumC4251a.SUCCEEDED.ordinal()] = 3;
+                f24195a[C4250s.EnumC4251a.SUCCEEDED.ordinal()] = 3;
             } catch (NoSuchFieldError unused12) {
             }
             try {
-                f24192a[C4250s.EnumC4251a.FAILED.ordinal()] = 4;
+                f24195a[C4250s.EnumC4251a.FAILED.ordinal()] = 4;
             } catch (NoSuchFieldError unused13) {
             }
             try {
-                f24192a[C4250s.EnumC4251a.BLOCKED.ordinal()] = 5;
+                f24195a[C4250s.EnumC4251a.BLOCKED.ordinal()] = 5;
             } catch (NoSuchFieldError unused14) {
             }
             try {
-                f24192a[C4250s.EnumC4251a.CANCELLED.ordinal()] = 6;
+                f24195a[C4250s.EnumC4251a.CANCELLED.ordinal()] = 6;
             } catch (NoSuchFieldError unused15) {
             }
         }
     }
 
     public static int m15663a(EnumC4222a aVar) {
-        int i = C7575a.f24193b[aVar.ordinal()];
+        int i = C7575a.f24196b[aVar.ordinal()];
         if (i == 1) {
             return 0;
         }
@@ -113,7 +113,7 @@ public class C7574v {
         ObjectOutputStream objectOutputStream2 = null;
         ObjectOutputStream objectOutputStream3 = null;
         objectOutputStream2 = null;
-        if (cVar.m28374c() == 0) {
+        if (cVar.m28376c() == 0) {
             return null;
         }
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
@@ -132,14 +132,14 @@ public class C7574v {
             objectOutputStream2 = objectOutputStream2;
         }
         try {
-            objectOutputStream.writeInt(cVar.m28374c());
-            Iterator<C4225c.C4226a> it = cVar.m28375b().iterator();
+            objectOutputStream.writeInt(cVar.m28376c());
+            Iterator<C4225c.C4226a> it = cVar.m28377b().iterator();
             while (true) {
                 hasNext = it.hasNext();
                 if (hasNext != 0) {
                     C4225c.C4226a next = it.next();
-                    objectOutputStream.writeUTF(next.m28373a().toString());
-                    objectOutputStream.writeBoolean(next.m28372b());
+                    objectOutputStream.writeUTF(next.m28375a().toString());
+                    objectOutputStream.writeBoolean(next.m28374b());
                 } else {
                     try {
                         break;
@@ -250,7 +250,7 @@ public class C7574v {
     }
 
     public static int m15656h(EnumC4236k kVar) {
-        int i = C7575a.f24194c[kVar.ordinal()];
+        int i = C7575a.f24197c[kVar.ordinal()];
         if (i == 1) {
             return 0;
         }
@@ -273,7 +273,7 @@ public class C7574v {
     }
 
     public static int m15655i(EnumC4245n nVar) {
-        int i = C7575a.f24195d[nVar.ordinal()];
+        int i = C7575a.f24198d[nVar.ordinal()];
         if (i == 1) {
             return 0;
         }
@@ -284,7 +284,7 @@ public class C7574v {
     }
 
     public static int m15654j(C4250s.EnumC4251a aVar) {
-        switch (C7575a.f24192a[aVar.ordinal()]) {
+        switch (C7575a.f24195a[aVar.ordinal()]) {
             case 1:
                 return 0;
             case 2:

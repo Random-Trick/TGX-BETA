@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class C10226f2 {
-    public final List<AbstractC10231g2> f33003a = new ArrayList();
+    public final List<AbstractC10231g2> f33006a = new ArrayList();
 
     public static void m5693b(List<int[]> list, int i, int[] iArr, int i2) {
         boolean z;
@@ -33,7 +33,7 @@ public final class C10226f2 {
     }
 
     public boolean m5694a(AbstractC10231g2 g2Var) {
-        return this.f33003a.add(g2Var);
+        return this.f33006a.add(g2Var);
     }
 
     public final List<int[]> m5692c(int i) {
@@ -46,12 +46,12 @@ public final class C10226f2 {
         if (list.isEmpty()) {
             return true;
         }
-        if (list.size() > this.f33003a.size()) {
+        if (list.size() > this.f33006a.size()) {
             return false;
         }
-        for (int[] iArr : m5692c(this.f33003a.size())) {
+        for (int[] iArr : m5692c(this.f33006a.size())) {
             boolean z = true;
-            for (int i = 0; i < this.f33003a.size() && (iArr[i] >= list.size() || ((z = z & this.f33003a.get(i).m5676d(list.get(iArr[i]))))); i++) {
+            for (int i = 0; i < this.f33006a.size() && (iArr[i] >= list.size() || ((z = z & this.f33006a.get(i).m5676d(list.get(iArr[i]))))); i++) {
             }
             if (z) {
                 return true;

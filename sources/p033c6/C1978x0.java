@@ -13,9 +13,9 @@ public class C1978x0<E> extends AbstractC1992y0<E> {
     public C1978x0(int i) {
     }
 
-    public final C1978x0<E> m35838b(E e) {
+    public final C1978x0<E> m35841b(E e) {
         Objects.requireNonNull(e);
-        m35836d(this.f7065b + 1);
+        m35839d(this.f7065b + 1);
         Object[] objArr = this.f7064a;
         int i = this.f7065b;
         this.f7065b = i + 1;
@@ -23,22 +23,22 @@ public class C1978x0<E> extends AbstractC1992y0<E> {
         return this;
     }
 
-    public final AbstractC1992y0<E> m35837c(Iterable<? extends E> iterable) {
+    public final AbstractC1992y0<E> m35840c(Iterable<? extends E> iterable) {
         if (iterable instanceof Collection) {
-            m35836d(this.f7065b + iterable.size());
+            m35839d(this.f7065b + iterable.size());
             if (iterable instanceof AbstractC2006z0) {
-                this.f7065b = ((AbstractC2006z0) iterable).mo35829h(this.f7064a, this.f7065b);
+                this.f7065b = ((AbstractC2006z0) iterable).mo35832h(this.f7064a, this.f7065b);
                 return this;
             }
         }
         Iterator it = iterable.iterator();
         while (it.hasNext()) {
-            mo35835a(it.next());
+            mo35838a(it.next());
         }
         return this;
     }
 
-    public final void m35836d(int i) {
+    public final void m35839d(int i) {
         Object[] objArr = this.f7064a;
         int length = objArr.length;
         if (length < i) {

@@ -5,7 +5,7 @@ import android.animation.TypeEvaluator;
 public class C1519e implements TypeEvaluator {
     public static final C1519e f5408a = new C1519e();
 
-    public static C1519e m36556a() {
+    public static C1519e m36559a() {
         return f5408a;
     }
 

@@ -11,28 +11,28 @@ import p082fd.C4403w;
 import p193nb.C7316a;
 
 public class C10666fb {
-    public final int f34134a;
-    public final int f34135b;
-    public final long f34136c;
-    public final long f34137d;
-    public final int f34138e;
-    public final int f34139f;
-    public final boolean f34140g;
-    public final boolean f34141h;
-    public final long[] f34142i;
-    public final long[] f34143j;
+    public final int f34137a;
+    public final int f34138b;
+    public final long f34139c;
+    public final long f34140d;
+    public final int f34141e;
+    public final int f34142f;
+    public final boolean f34143g;
+    public final boolean f34144h;
+    public final long[] f34145i;
+    public final long[] f34146j;
 
     public C10666fb(int i, int i2) {
-        this.f34134a = i;
-        this.f34135b = i2;
-        this.f34136c = 0L;
-        this.f34137d = 0L;
-        this.f34138e = 0;
-        this.f34139f = 0;
-        this.f34140g = false;
-        this.f34141h = false;
-        this.f34142i = null;
-        this.f34143j = null;
+        this.f34137a = i;
+        this.f34138b = i2;
+        this.f34139c = 0L;
+        this.f34140d = 0L;
+        this.f34141e = 0;
+        this.f34142f = 0;
+        this.f34143g = false;
+        this.f34144h = false;
+        this.f34145i = null;
+        this.f34146j = null;
     }
 
     public static long[] m4346a(Bundle bundle, String str) {
@@ -116,59 +116,59 @@ public class C10666fb {
     }
 
     public void m4343d(C10930q6 q6Var) {
-        boolean h1 = q6Var.m2440ga().m3126h1(this.f34139f);
+        boolean h1 = q6Var.m2440ga().m3126h1(this.f34142f);
         int seconds = (int) TimeUnit.HOURS.toSeconds(1L);
-        boolean z = this.f34141h;
+        boolean z = this.f34144h;
         int i = R.string.NotificationMutedPerson;
         String str = null;
         if (z) {
-            long[] jArr = this.f34143j;
+            long[] jArr = this.f34146j;
             if (jArr != null) {
                 if (h1) {
-                    str = jArr.length == 1 ? C4403w.m27865j1(R.string.NotificationMutedPerson, q6Var.m2480e2().m1721K2(this.f34143j[0])) : C4403w.m27844o2(R.string.NotificationMutedPersons, jArr.length);
+                    str = jArr.length == 1 ? C4403w.m27867j1(R.string.NotificationMutedPerson, q6Var.m2480e2().m1721K2(this.f34146j[0])) : C4403w.m27846o2(R.string.NotificationMutedPersons, jArr.length);
                 }
-                for (long j : this.f34143j) {
+                for (long j : this.f34146j) {
                     q6Var.m2470ec(j, seconds);
                 }
             }
         } else {
-            q6Var.m2470ec(this.f34136c, seconds);
+            q6Var.m2470ec(this.f34139c, seconds);
             if (h1) {
-                if (!C7316a.m17049l(this.f34136c)) {
+                if (!C7316a.m17049l(this.f34139c)) {
                     i = R.string.NotificationMutedChat;
                 }
-                str = C4403w.m27865j1(i, q6Var.m2691Q3(this.f34136c));
+                str = C4403w.m27867j1(i, q6Var.m2691Q3(this.f34139c));
             }
         }
         m4344c(q6Var);
         if (h1) {
-            C1379j0.m37290z0(str, 0);
+            C1379j0.m37293z0(str, 0);
         }
     }
 
     public void m4339h(C10930q6 q6Var) {
-        boolean h1 = q6Var.m2440ga().m3126h1(this.f34139f);
-        if (this.f34141h) {
-            q6Var.m2270r4().m14783o(new TdApi.ReadAllChatMentions(this.f34136c), q6Var.m2214uc());
+        boolean h1 = q6Var.m2440ga().m3126h1(this.f34142f);
+        if (this.f34144h) {
+            q6Var.m2270r4().m14783o(new TdApi.ReadAllChatMentions(this.f34139c), q6Var.m2214uc());
         } else {
-            q6Var.m2716Oa(this.f34136c, this.f34137d, this.f34142i);
+            q6Var.m2716Oa(this.f34139c, this.f34140d, this.f34145i);
         }
         m4344c(q6Var);
         if (h1) {
-            C1379j0.m37292y0(this.f34141h ? R.string.NotificationReadMentions : R.string.NotificationRead, 0);
+            C1379j0.m37295y0(this.f34144h ? R.string.NotificationReadMentions : R.string.NotificationRead, 0);
         }
     }
 
     public C10666fb(int i, int i2, long j, long j2, int i3, int i4, boolean z, boolean z2, long[] jArr, long[] jArr2) {
-        this.f34134a = i;
-        this.f34135b = i2;
-        this.f34136c = j;
-        this.f34137d = j2;
-        this.f34138e = i3;
-        this.f34139f = i4;
-        this.f34140g = z;
-        this.f34141h = z2;
-        this.f34142i = (jArr == null || jArr.length <= 0) ? null : jArr;
-        this.f34143j = (jArr2 == null || jArr2.length <= 0) ? null : jArr2;
+        this.f34137a = i;
+        this.f34138b = i2;
+        this.f34139c = j;
+        this.f34140d = j2;
+        this.f34141e = i3;
+        this.f34142f = i4;
+        this.f34143g = z;
+        this.f34144h = z2;
+        this.f34145i = (jArr == null || jArr.length <= 0) ? null : jArr;
+        this.f34146j = (jArr2 == null || jArr2.length <= 0) ? null : jArr2;
     }
 }

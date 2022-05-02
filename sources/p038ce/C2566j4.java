@@ -9,6 +9,6 @@ public final class C2566j4 implements C9357x2.AbstractC9363f {
 
     @Override
     public final void mo8098f1(View view, Rect rect) {
-        View$OnClickListenerC2805o4.m33365fj(view, rect);
+        View$OnClickListenerC2805o4.m33368fj(view, rect);
     }
 }

@@ -23,15 +23,15 @@ public class C4023a extends C9585k0 {
     @Override
     public boolean onTouchEvent(MotionEvent motionEvent) {
         boolean onTouchEvent = super.onTouchEvent(motionEvent);
-        if (C4868i.m24726c2().m24608r0() != 2 && onTouchEvent && motionEvent.getAction() == 0) {
+        if (C4868i.m24727c2().m24609r0() != 2 && onTouchEvent && motionEvent.getAction() == 0) {
             if (!this.f13496b) {
                 this.f13496b = C7389v0.m16670W(getContext());
             }
-            if (this.f13496b && this.f13495a.m32737Gi()) {
+            if (this.f13496b && this.f13495a.m32740Gi()) {
                 if (this.f13497c == null) {
                     this.f13497c = new AbstractC9323v4.C9334k();
                 }
-                C1379j0.m37307r(getContext()).m14473k2(this.f13497c, true);
+                C1379j0.m37310r(getContext()).m14472k2(this.f13497c, true);
             }
         }
         return onTouchEvent;

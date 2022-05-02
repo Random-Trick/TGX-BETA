@@ -13,15 +13,15 @@ public final class C0112p {
 
     public C0112p(boolean z, String str, int i, byte[] bArr, int i2, int i3, byte[] bArr2) {
         boolean z2 = true;
-        C1186a.m38189a((bArr2 != null ? false : z2) ^ (i == 0));
+        C1186a.m38192a((bArr2 != null ? false : z2) ^ (i == 0));
         this.f428a = z;
         this.f429b = str;
         this.f431d = i;
         this.f432e = bArr2;
-        this.f430c = new AbstractC8974t.C8975a(m42266a(str), bArr, i2, i3);
+        this.f430c = new AbstractC8974t.C8975a(m42269a(str), bArr, i2, i3);
     }
 
-    public static int m42266a(String str) {
+    public static int m42269a(String str) {
         if (str == null) {
             return 1;
         }
@@ -64,7 +64,7 @@ public final class C0112p {
                 sb2.append("Unsupported protection scheme type '");
                 sb2.append(str);
                 sb2.append("'. Assuming AES-CTR crypto mode.");
-                C1230s.m37881i("TrackEncryptionBox", sb2.toString());
+                C1230s.m37884i("TrackEncryptionBox", sb2.toString());
                 break;
         }
         return 1;

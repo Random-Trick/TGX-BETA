@@ -89,7 +89,7 @@ public class C4386n {
         EQUAL
     }
 
-    public static C4386n m28031s() {
+    public static C4386n m28033s() {
         if (f14536k == null) {
             synchronized (C4386n.class) {
                 if (f14536k == null) {
@@ -100,7 +100,7 @@ public class C4386n {
         return f14536k;
     }
 
-    public void m28049a(LinkedList<C4388b> linkedList, List<String> list) {
+    public void m28051a(LinkedList<C4388b> linkedList, List<String> list) {
         Iterator<C4388b> it = linkedList.iterator();
         while (it.hasNext()) {
             C4388b next = it.next();
@@ -112,11 +112,11 @@ public class C4386n {
         }
     }
 
-    public void m28048b(java.util.LinkedList<p082fd.C4386n.C4388b> r15) {
-        throw new UnsupportedOperationException("Method not decompiled: p082fd.C4386n.m28048b(java.util.LinkedList):void");
+    public void m28050b(java.util.LinkedList<p082fd.C4386n.C4388b> r15) {
+        throw new UnsupportedOperationException("Method not decompiled: p082fd.C4386n.m28050b(java.util.LinkedList):void");
     }
 
-    public void m28047c(LinkedList<C4388b> linkedList) {
+    public void m28049c(LinkedList<C4388b> linkedList) {
         if (!linkedList.isEmpty()) {
             Stack stack = new Stack();
             ListIterator<C4388b> listIterator = linkedList.listIterator();
@@ -161,17 +161,17 @@ public class C4386n {
                 next = listIterator.hasNext() ? listIterator.next() : null;
             }
             if (z) {
-                m28048b(linkedList);
+                m28050b(linkedList);
             }
-            m28046d(linkedList);
+            m28048d(linkedList);
         }
     }
 
-    public void m28046d(java.util.LinkedList<p082fd.C4386n.C4388b> r15) {
-        throw new UnsupportedOperationException("Method not decompiled: p082fd.C4386n.m28046d(java.util.LinkedList):void");
+    public void m28048d(java.util.LinkedList<p082fd.C4386n.C4388b> r15) {
+        throw new UnsupportedOperationException("Method not decompiled: p082fd.C4386n.m28048d(java.util.LinkedList):void");
     }
 
-    public final int m28045e(String str, String str2) {
+    public final int m28047e(String str, String str2) {
         if (str.length() == 0 || str2.length() == 0) {
             return 5;
         }
@@ -187,7 +187,7 @@ public class C4386n {
         return 2;
     }
 
-    public int m28044f(String str, String str2) {
+    public int m28046f(String str, String str2) {
         int min = Math.min(str.length(), str2.length());
         for (int i = 0; i < min; i++) {
             if (str.charAt(i) != str2.charAt(i)) {
@@ -197,7 +197,7 @@ public class C4386n {
         return min;
     }
 
-    public int m28043g(String str, String str2) {
+    public int m28045g(String str, String str2) {
         int length = str.length();
         int length2 = str2.length();
         int min = Math.min(length, length2);
@@ -209,7 +209,7 @@ public class C4386n {
         return min;
     }
 
-    public LinkedList<C4388b> m28042h(String str, String str2, boolean z) {
+    public LinkedList<C4388b> m28044h(String str, String str2, boolean z) {
         List<String> list;
         boolean z2 = z;
         LinkedList<C4388b> linkedList = new LinkedList<>();
@@ -233,15 +233,15 @@ public class C4386n {
             linkedList.add(new C4388b(dVar, str5.substring(indexOf + str6.length())));
             return linkedList;
         }
-        String[] j = m28040j(str, str2);
+        String[] j = m28042j(str, str2);
         if (j != null) {
             String str7 = j[0];
             String str8 = j[1];
             String str9 = j[2];
             String str10 = j[3];
             String str11 = j[4];
-            LinkedList<C4388b> o = m28035o(str7, str9, z2);
-            LinkedList<C4388b> o2 = m28035o(str8, str10, z2);
+            LinkedList<C4388b> o = m28037o(str7, str9, z2);
+            LinkedList<C4388b> o2 = m28037o(str8, str10, z2);
             o.add(new C4388b(EnumC4390d.EQUAL, str11));
             o.addAll(o2);
             return o;
@@ -250,7 +250,7 @@ public class C4386n {
             z2 = false;
         }
         if (z2) {
-            C4389c l = m28038l(str, str2);
+            C4389c l = m28040l(str, str2);
             str4 = l.f14550a;
             String str12 = l.f14551b;
             list = l.f14552c;
@@ -258,15 +258,15 @@ public class C4386n {
         } else {
             list = null;
         }
-        LinkedList<C4388b> p = m28034p(str4, str3);
+        LinkedList<C4388b> p = m28036p(str4, str3);
         if (p == null) {
             p = new LinkedList<>();
             p.add(new C4388b(EnumC4390d.DELETE, str4));
             p.add(new C4388b(EnumC4390d.INSERT, str3));
         }
         if (z2) {
-            m28049a(p, list);
-            m28047c(p);
+            m28051a(p, list);
+            m28049c(p);
             p.add(new C4388b(EnumC4390d.EQUAL, ""));
             ListIterator<C4388b> listIterator = p.listIterator();
             C4388b next = listIterator.next();
@@ -289,7 +289,7 @@ public class C4386n {
                             listIterator.previous();
                             listIterator.remove();
                         }
-                        Iterator<C4388b> it = m28035o(str14, str13, false).iterator();
+                        Iterator<C4388b> it = m28037o(str14, str13, false).iterator();
                         while (it.hasNext()) {
                             listIterator.add(it.next());
                         }
@@ -306,18 +306,18 @@ public class C4386n {
         return p;
     }
 
-    public long m28041i(int i, int i2) {
+    public long m28043i(int i, int i2) {
         return (i << 32) + i2;
     }
 
-    public String[] m28040j(String str, String str2) {
+    public String[] m28042j(String str, String str2) {
         String str3 = str.length() > str2.length() ? str : str2;
         String str4 = str.length() > str2.length() ? str2 : str;
         if (str3.length() < 10 || str4.length() < 1) {
             return null;
         }
-        String[] k = m28039k(str3, str4, (str3.length() + 3) / 4);
-        String[] k2 = m28039k(str3, str4, (str3.length() + 1) / 2);
+        String[] k = m28041k(str3, str4, (str3.length() + 3) / 4);
+        String[] k2 = m28041k(str3, str4, (str3.length() + 1) / 2);
         if (k == null && k2 == null) {
             return null;
         }
@@ -327,7 +327,7 @@ public class C4386n {
         return str.length() > str2.length() ? k : new String[]{k[2], k[3], k[0], k[1], k[4]};
     }
 
-    public final String[] m28039k(String str, String str2, int i) {
+    public final String[] m28041k(String str, String str2, int i) {
         String substring = str.substring(i, (str.length() / 4) + i);
         int i2 = -1;
         String str3 = "";
@@ -341,8 +341,8 @@ public class C4386n {
             if (i3 == i2) {
                 break;
             }
-            int f = m28044f(str.substring(i), str2.substring(i3));
-            int g = m28043g(str.substring(0, i), str2.substring(0, i3));
+            int f = m28046f(str.substring(i), str2.substring(i3));
+            int g = m28045g(str.substring(0, i), str2.substring(0, i3));
             if (str3.length() < g + f) {
                 StringBuilder sb2 = new StringBuilder();
                 int i4 = i3 - g;
@@ -364,14 +364,14 @@ public class C4386n {
         return null;
     }
 
-    public C4389c m28038l(String str, String str2) {
+    public C4389c m28040l(String str, String str2) {
         ArrayList arrayList = new ArrayList();
         HashMap hashMap = new HashMap();
         arrayList.add("");
-        return new C4389c(m28037m(str, arrayList, hashMap), m28037m(str2, arrayList, hashMap), arrayList);
+        return new C4389c(m28039m(str, arrayList, hashMap), m28039m(str2, arrayList, hashMap), arrayList);
     }
 
-    public final String m28037m(String str, List<String> list, Map<String, Integer> map) {
+    public final String m28039m(String str, List<String> list, Map<String, Integer> map) {
         StringBuilder sb2 = new StringBuilder();
         int i = 0;
         int i2 = -1;
@@ -394,38 +394,38 @@ public class C4386n {
         return sb2.toString();
     }
 
-    public LinkedList<C4388b> m28036n(String str, String str2) {
-        return m28035o(str, str2, true);
+    public LinkedList<C4388b> m28038n(String str, String str2) {
+        return m28037o(str, str2, true);
     }
 
-    public LinkedList<C4388b> m28035o(String str, String str2, boolean z) {
+    public LinkedList<C4388b> m28037o(String str, String str2, boolean z) {
         if (str.equals(str2)) {
             LinkedList<C4388b> linkedList = new LinkedList<>();
             linkedList.add(new C4388b(EnumC4390d.EQUAL, str));
             return linkedList;
         }
-        int f = m28044f(str, str2);
+        int f = m28046f(str, str2);
         String substring = str.substring(0, f);
         String substring2 = str.substring(f);
         String substring3 = str2.substring(f);
-        int g = m28043g(substring2, substring3);
+        int g = m28045g(substring2, substring3);
         String substring4 = substring2.substring(substring2.length() - g);
-        LinkedList<C4388b> h = m28042h(substring2.substring(0, substring2.length() - g), substring3.substring(0, substring3.length() - g), z);
+        LinkedList<C4388b> h = m28044h(substring2.substring(0, substring2.length() - g), substring3.substring(0, substring3.length() - g), z);
         if (substring.length() != 0) {
             h.addFirst(new C4388b(EnumC4390d.EQUAL, substring));
         }
         if (substring4.length() != 0) {
             h.addLast(new C4388b(EnumC4390d.EQUAL, substring4));
         }
-        m28048b(h);
+        m28050b(h);
         return h;
     }
 
-    public java.util.LinkedList<p082fd.C4386n.C4388b> m28034p(java.lang.String r29, java.lang.String r30) {
-        throw new UnsupportedOperationException("Method not decompiled: p082fd.C4386n.m28034p(java.lang.String, java.lang.String):java.util.LinkedList");
+    public java.util.LinkedList<p082fd.C4386n.C4388b> m28036p(java.lang.String r29, java.lang.String r30) {
+        throw new UnsupportedOperationException("Method not decompiled: p082fd.C4386n.m28036p(java.lang.String, java.lang.String):java.util.LinkedList");
     }
 
-    public LinkedList<C4388b> m28033q(List<Set<Long>> list, String str, String str2) {
+    public LinkedList<C4388b> m28035q(List<Set<Long>> list, String str, String str2) {
         EnumC4390d dVar;
         LinkedList<C4388b> linkedList = new LinkedList<>();
         int length = str.length();
@@ -433,7 +433,7 @@ public class C4386n {
         EnumC4390d dVar2 = null;
         for (int size = list.size() - 2; size >= 0; size--) {
             while (true) {
-                if (list.get(size).contains(Long.valueOf(m28041i(length - 1, length2)))) {
+                if (list.get(size).contains(Long.valueOf(m28043i(length - 1, length2)))) {
                     length--;
                     dVar = EnumC4390d.DELETE;
                     if (dVar2 == dVar) {
@@ -441,7 +441,7 @@ public class C4386n {
                     } else {
                         linkedList.addFirst(new C4388b(dVar, str.substring(length, length + 1)));
                     }
-                } else if (list.get(size).contains(Long.valueOf(m28041i(length, length2 - 1)))) {
+                } else if (list.get(size).contains(Long.valueOf(m28043i(length, length2 - 1)))) {
                     length2--;
                     dVar = EnumC4390d.INSERT;
                     if (dVar2 == dVar) {
@@ -466,7 +466,7 @@ public class C4386n {
         return linkedList;
     }
 
-    public LinkedList<C4388b> m28032r(List<Set<Long>> list, String str, String str2) {
+    public LinkedList<C4388b> m28034r(List<Set<Long>> list, String str, String str2) {
         EnumC4390d dVar;
         LinkedList<C4388b> linkedList = new LinkedList<>();
         int length = str.length();
@@ -474,7 +474,7 @@ public class C4386n {
         EnumC4390d dVar2 = null;
         for (int size = list.size() - 2; size >= 0; size--) {
             while (true) {
-                if (list.get(size).contains(Long.valueOf(m28041i(length - 1, length2)))) {
+                if (list.get(size).contains(Long.valueOf(m28043i(length - 1, length2)))) {
                     length--;
                     dVar = EnumC4390d.DELETE;
                     if (dVar2 == dVar) {
@@ -486,7 +486,7 @@ public class C4386n {
                     } else {
                         linkedList.addLast(new C4388b(dVar, str.substring((str.length() - length) - 1, str.length() - length)));
                     }
-                } else if (list.get(size).contains(Long.valueOf(m28041i(length, length2 - 1)))) {
+                } else if (list.get(size).contains(Long.valueOf(m28043i(length, length2 - 1)))) {
                     length2--;
                     dVar = EnumC4390d.INSERT;
                     if (dVar2 == dVar) {

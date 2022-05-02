@@ -24,17 +24,17 @@ public class C3944i<T extends AbstractC3948d> implements Iterable<C3955n.C3958c<
             this.f13282b = j2;
         }
 
-        public void mo29471b(C3947c<T> cVar, boolean z) {
+        public void mo29473b(C3947c<T> cVar, boolean z) {
             long j = this.f13281a;
             if (j != 0 && j < this.f13282b) {
-                cVar.f13287c.m29453f(-1.0f);
+                cVar.f13287c.m29455f(-1.0f);
             } else if (j > this.f13282b) {
-                cVar.f13287c.m29453f(1.0f);
+                cVar.f13287c.m29455f(1.0f);
             }
             cVar.f13284M = 0;
         }
 
-        public void mo29472a(C3947c<T> cVar) {
+        public void mo29474a(C3947c<T> cVar) {
             long j = this.f13282b;
             if (j == 0) {
                 cVar.f13284M = 0;
@@ -50,9 +50,9 @@ public class C3944i<T extends AbstractC3948d> implements Iterable<C3955n.C3958c<
     }
 
     public interface AbstractC3946b<T extends AbstractC3948d> {
-        T mo23041a(String str);
+        T mo23042a(String str);
 
-        void mo23040b(C3944i<?> iVar);
+        void mo23041b(C3944i<?> iVar);
     }
 
     public static class C3947c<T extends AbstractC3948d> implements C3955n.AbstractC3959d, AbstractC3936b {
@@ -67,28 +67,28 @@ public class C3944i<T extends AbstractC3948d> implements Iterable<C3955n.C3958c<
         }
 
         @Override
-        public boolean mo26679a() {
-            return this.f13287c.m29457b(this.f13284M);
+        public boolean mo26680a() {
+            return this.f13287c.m29459b(this.f13284M);
         }
 
         @Override
-        public void mo26678b(boolean z) {
-            this.f13287c.m29456c(z);
+        public void mo26679b(boolean z) {
+            this.f13287c.m29458c(z);
         }
 
         @Override
-        public boolean mo26677c(float f) {
-            return this.f13287c.m29458a(f);
+        public boolean mo26678c(float f) {
+            return this.f13287c.m29460a(f);
         }
 
         @Override
         public int mo7991d(boolean z) {
-            return C3962o.m29470a(this, z);
+            return C3962o.m29472a(this, z);
         }
 
         @Override
-        public void mo26676e() {
-            this.f13287c.m29454e(this.f13284M);
+        public void mo26677e() {
+            this.f13287c.m29456e(this.f13284M);
         }
 
         public boolean equals(Object obj) {
@@ -103,13 +103,13 @@ public class C3944i<T extends AbstractC3948d> implements Iterable<C3955n.C3958c<
         }
 
         @Override
-        public void mo26675f() {
-            this.f13287c.m29452g(this.f13284M);
+        public void mo26676f() {
+            this.f13287c.m29454g(this.f13284M);
         }
 
         @Override
         public int mo7990g(boolean z) {
-            return C3962o.m29469b(this, z);
+            return C3962o.m29471b(this, z);
         }
 
         @Override
@@ -123,16 +123,16 @@ public class C3944i<T extends AbstractC3948d> implements Iterable<C3955n.C3958c<
         }
 
         public int hashCode() {
-            return Objects.hash(Integer.valueOf(this.f13285a), this.f13286b.mo22956a());
+            return Objects.hash(Integer.valueOf(this.f13285a), this.f13286b.mo22957a());
         }
 
-        public float m29559j() {
-            return this.f13287c.m29455d();
+        public float m29561j() {
+            return this.f13287c.m29457d();
         }
     }
 
     public interface AbstractC3948d {
-        String mo22956a();
+        String mo22957a();
 
         int getHeight();
 
@@ -143,18 +143,18 @@ public class C3944i<T extends AbstractC3948d> implements Iterable<C3955n.C3958c<
         this.f13278a = bVar;
         this.f13279b = new C3955n<>(new C3955n.AbstractC3957b() {
             @Override
-            public final void mo26892a(C3955n nVar) {
-                C3944i.this.m29567r(bVar, nVar);
+            public final void mo26894a(C3955n nVar) {
+                C3944i.this.m29569r(bVar, nVar);
             }
         }, C2057b.f7280b, 180L);
     }
 
-    public void m29567r(AbstractC3946b bVar, C3955n nVar) {
-        bVar.mo23040b(this);
+    public void m29569r(AbstractC3946b bVar, C3955n nVar) {
+        bVar.mo23041b(this);
     }
 
-    public float m29569i() {
-        return this.f13279b.m29516t().m29475k();
+    public float m29571i() {
+        return this.f13279b.m29518t().m29477k();
     }
 
     @Override
@@ -162,37 +162,37 @@ public class C3944i<T extends AbstractC3948d> implements Iterable<C3955n.C3958c<
         return this.f13279b.iterator();
     }
 
-    public void m29568m(boolean z) {
-        m29565t(0L, null, z);
+    public void m29570m(boolean z) {
+        m29567t(0L, null, z);
     }
 
-    public void m29566s(long j, String str, boolean z) {
-        m29565t(j, m29564u(str), z);
+    public void m29568s(long j, String str, boolean z) {
+        m29567t(j, m29566u(str), z);
     }
 
-    public final void m29565t(long j, List<C3947c<T>> list, boolean z) {
+    public final void m29567t(long j, List<C3947c<T>> list, boolean z) {
         boolean z2 = list != null && !list.isEmpty();
         long j2 = this.f13280c;
         if (j2 != j || this.f13277M != z2) {
             this.f13280c = j;
             this.f13277M = z2;
             if (z2) {
-                this.f13279b.m29523C(list, z, new C3945a(j2, j));
+                this.f13279b.m29525C(list, z, new C3945a(j2, j));
             } else {
-                this.f13279b.m29524B(null, z);
+                this.f13279b.m29526B(null, z);
             }
         }
     }
 
-    public final List<C3947c<T>> m29564u(String str) {
-        if (C5070i.m24061i(str)) {
+    public final List<C3947c<T>> m29566u(String str) {
+        if (C5070i.m24062i(str)) {
             return null;
         }
         ArrayList arrayList = new ArrayList(str.length());
         int i = 0;
         while (i < str.length()) {
             int charCount = Character.charCount(str.codePointAt(i)) + i;
-            arrayList.add(new C3947c(arrayList.size(), this.f13278a.mo23041a(str.substring(i, charCount))));
+            arrayList.add(new C3947c(arrayList.size(), this.f13278a.mo23042a(str.substring(i, charCount))));
             i = charCount;
         }
         return arrayList;

@@ -6,34 +6,34 @@ import nc.C7389v0;
 import org.thunderdog.challegram.Log;
 
 public class C9501b {
-    public String f30756a;
-    public String f30757b;
-    public int f30758c;
-    public String f30759d;
-    public String f30760e;
+    public String f30759a;
+    public String f30760b;
+    public int f30761c;
+    public String f30762d;
+    public String f30763e;
 
     public C9501b(String str) {
-        this.f30756a = str;
-        this.f30757b = new File(str).getName();
+        this.f30759a = str;
+        this.f30760b = new File(str).getName();
         m8460e();
     }
 
     public int m8464a() {
-        return this.f30758c;
+        return this.f30761c;
     }
 
     public String m8463b() {
-        return this.f30760e;
+        return this.f30763e;
     }
 
     public String m8462c() {
-        return this.f30759d;
+        return this.f30762d;
     }
 
     public void m8461d() {
         MediaMetadataRetriever mediaMetadataRetriever = null;
         try {
-            mediaMetadataRetriever = C7389v0.m16595p2(this.f30756a);
+            mediaMetadataRetriever = C7389v0.m16595p2(this.f30759a);
             String extractMetadata = mediaMetadataRetriever.extractMetadata(9);
             String extractMetadata2 = mediaMetadataRetriever.extractMetadata(7);
             String extractMetadata3 = mediaMetadataRetriever.extractMetadata(2);
@@ -42,9 +42,9 @@ public class C9501b {
                 try {
                     long parseLong = Long.parseLong(extractMetadata);
                     if (parseLong > 1000) {
-                        this.f30758c = (int) (parseLong / 1000);
+                        this.f30761c = (int) (parseLong / 1000);
                     } else {
-                        this.f30758c = (int) parseLong;
+                        this.f30761c = (int) parseLong;
                     }
                 } catch (NumberFormatException e) {
                     Log.m14710w("Cannot parse ID3 duration: %s", e, extractMetadata);
@@ -53,20 +53,20 @@ public class C9501b {
             if (extractMetadata2 != null) {
                 String trim = extractMetadata2.trim();
                 if (trim.length() > 0) {
-                    if (this.f30759d == null) {
-                        this.f30759d = trim;
+                    if (this.f30762d == null) {
+                        this.f30762d = trim;
                     }
                     if (extractMetadata3 != null) {
                         String trim2 = extractMetadata3.trim();
                         if (trim2.length() > 0) {
-                            this.f30759d = trim;
-                            this.f30760e = trim2;
+                            this.f30762d = trim;
+                            this.f30763e = trim2;
                         }
                     } else if (extractMetadata4 != null) {
                         String trim3 = extractMetadata4.trim();
                         if (trim3.length() > 0) {
-                            this.f30759d = trim;
-                            this.f30760e = trim3;
+                            this.f30762d = trim;
+                            this.f30763e = trim3;
                         }
                     }
                 }
@@ -75,36 +75,36 @@ public class C9501b {
             Log.m14710w("cannot read id3 tags", th, new Object[0]);
         }
         C7389v0.m16730H(mediaMetadataRetriever);
-        String str = this.f30759d;
+        String str = this.f30762d;
         if (str == null) {
-            this.f30759d = "";
+            this.f30762d = "";
         } else {
-            this.f30759d = str.trim();
+            this.f30762d = str.trim();
         }
-        String str2 = this.f30760e;
+        String str2 = this.f30763e;
         if (str2 == null) {
-            this.f30760e = "";
+            this.f30763e = "";
         } else {
-            this.f30760e = str2.trim();
+            this.f30763e = str2.trim();
         }
     }
 
     public final void m8460e() {
-        String str = this.f30757b;
+        String str = this.f30760b;
         if (str != null && str.length() > 0) {
-            int indexOf = this.f30757b.indexOf(".mp3");
-            String substring = (indexOf == -1 || indexOf != this.f30757b.length() - 4 || this.f30757b.length() <= 4) ? this.f30757b : this.f30757b.substring(0, indexOf);
+            int indexOf = this.f30760b.indexOf(".mp3");
+            String substring = (indexOf == -1 || indexOf != this.f30760b.length() - 4 || this.f30760b.length() <= 4) ? this.f30760b : this.f30760b.substring(0, indexOf);
             int indexOf2 = substring.indexOf(8211);
-            if (indexOf2 == -1 && (indexOf2 = this.f30757b.indexOf(8212)) == -1) {
-                indexOf2 = this.f30757b.indexOf(45);
+            if (indexOf2 == -1 && (indexOf2 = this.f30760b.indexOf(8212)) == -1) {
+                indexOf2 = this.f30760b.indexOf(45);
             }
             if (indexOf2 == -1 || indexOf2 == substring.length() - 1) {
-                this.f30759d = null;
-                this.f30760e = null;
+                this.f30762d = null;
+                this.f30763e = null;
                 return;
             }
-            this.f30760e = substring.substring(0, indexOf2).trim();
-            this.f30759d = substring.substring(indexOf2 + 1);
+            this.f30763e = substring.substring(0, indexOf2).trim();
+            this.f30762d = substring.substring(indexOf2 + 1);
         }
     }
 }

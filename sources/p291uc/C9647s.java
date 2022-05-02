@@ -18,26 +18,26 @@ import p110hd.C5078d;
 import p110hd.C5088i;
 
 public class C9647s extends View implements C4336c.AbstractC4337a {
-    public View.OnClickListener f31292M;
-    public String f31293N;
-    public String f31294O;
-    public String[] f31295P;
-    public String f31296Q;
-    public int f31297R;
-    public C5088i f31298S;
-    public ViewParent f31299T;
-    public final C4336c f31300a = new C4336c(this);
-    public final C9639r f31301b;
-    public boolean f31302c;
+    public View.OnClickListener f31295M;
+    public String f31296N;
+    public String f31297O;
+    public String[] f31298P;
+    public String f31299Q;
+    public int f31300R;
+    public C5088i f31301S;
+    public ViewParent f31302T;
+    public final C4336c f31303a = new C4336c(this);
+    public final C9639r f31304b;
+    public boolean f31305c;
 
     public C9647s(Context context, C9639r rVar) {
         super(context);
-        this.f31301b = rVar;
+        this.f31304b = rVar;
     }
 
     private void setDrawable(C5088i iVar) {
-        if (this.f31298S != iVar) {
-            this.f31298S = iVar;
+        if (this.f31301S != iVar) {
+            this.f31301S = iVar;
             invalidate();
         }
     }
@@ -45,10 +45,10 @@ public class C9647s extends View implements C4336c.AbstractC4337a {
     private void setInLongPress(boolean z) {
         if (z) {
             setPressed(false);
-            this.f31302c = false;
-            this.f31299T = getParent();
+            this.f31305c = false;
+            this.f31302T = getParent();
         }
-        ViewParent viewParent = this.f31299T;
+        ViewParent viewParent = this.f31302T;
         if (viewParent != null) {
             viewParent.requestDisallowInterceptTouchEvent(z);
         }
@@ -57,12 +57,12 @@ public class C9647s extends View implements C4336c.AbstractC4337a {
     @Override
     public boolean mo7429B(float f, float f2) {
         C9639r rVar;
-        return (this.f31297R == 0 || (rVar = this.f31301b) == null || !rVar.m7948d()) ? false : true;
+        return (this.f31300R == 0 || (rVar = this.f31304b) == null || !rVar.m7948d()) ? false : true;
     }
 
     @Override
     public void mo7428C(View view, float f, float f2) {
-        View.OnClickListener onClickListener = this.f31292M;
+        View.OnClickListener onClickListener = this.f31295M;
         if (onClickListener != null) {
             onClickListener.onClick(view);
         }
@@ -71,26 +71,26 @@ public class C9647s extends View implements C4336c.AbstractC4337a {
     @Override
     public void mo7427F(View view, float f, float f2) {
         setInLongPress(false);
-        this.f31301b.m7942j(view);
+        this.f31304b.m7942j(view);
     }
 
     @Override
     public boolean mo7426K4() {
-        return C4335b.m28261a(this);
+        return C4335b.m28263a(this);
     }
 
     @Override
     public boolean mo7425W6(float f, float f2) {
-        return C4335b.m28259c(this, f, f2);
+        return C4335b.m28261c(this, f, f2);
     }
 
     @Override
     public void mo7424Z4(View view, float f, float f2) {
-        C4335b.m28256f(this, view, f, f2);
+        C4335b.m28258f(this, view, f, f2);
     }
 
     public boolean m7916a(String str, String str2, String[] strArr) {
-        if (!C5070i.m24067c(this.f31293N, str)) {
+        if (!C5070i.m24068c(this.f31296N, str)) {
             return false;
         }
         m7913d(str, str2, strArr);
@@ -98,86 +98,86 @@ public class C9647s extends View implements C4336c.AbstractC4337a {
     }
 
     public void m7915b() {
-        String g = this.f31301b.m7945g();
-        String i = this.f31301b.m7943i();
-        String[] h = this.f31301b.m7944h();
-        if (this.f31301b.m7939m()) {
-            if (this.f31301b.m7938n()) {
-                C4868i.m24726c2().m24582u2(64L);
+        String g = this.f31304b.m7945g();
+        String i = this.f31304b.m7943i();
+        String[] h = this.f31304b.m7944h();
+        if (this.f31304b.m7939m()) {
+            if (this.f31304b.m7938n()) {
+                C4868i.m24727c2().m24583u2(64L);
             }
-            C5078d.m23986z().m24015R(i);
+            C5078d.m23987z().m24016R(i);
         } else {
-            C5078d.m23986z().m24016Q(g, i, h);
-            View.OnClickListener onClickListener = this.f31292M;
+            C5078d.m23987z().m24017Q(g, i, h);
+            View.OnClickListener onClickListener = this.f31295M;
             if (onClickListener != null) {
                 onClickListener.onClick(this);
             }
         }
         setInLongPress(false);
-        this.f31301b.m7942j(this);
+        this.f31304b.m7942j(this);
     }
 
     public void m7914c(String str, int i) {
-        if (!C5070i.m24067c(this.f31293N, str)) {
-            this.f31293N = str;
-            this.f31297R = i;
+        if (!C5070i.m24068c(this.f31296N, str)) {
+            this.f31296N = str;
+            this.f31300R = i;
             String[] strArr = null;
-            this.f31294O = i != 0 ? C5078d.m23986z().m24012U(str) : null;
+            this.f31297O = i != 0 ? C5078d.m23987z().m24013U(str) : null;
             if (i == 2) {
-                strArr = C5078d.m23986z().m24027F(str);
+                strArr = C5078d.m23987z().m24028F(str);
             }
-            this.f31295P = strArr;
-            m7913d(str, this.f31294O, strArr);
+            this.f31298P = strArr;
+            m7913d(str, this.f31297O, strArr);
         }
     }
 
     public final void m7913d(String str, String str2, String[] strArr) {
-        String d = C1374h.m37380i().m37385d(str, str2, strArr);
-        if (!C5070i.m24067c(this.f31296Q, d)) {
-            this.f31296Q = d;
-            this.f31294O = str2;
-            this.f31295P = strArr;
-            setDrawable(C5078d.m23986z().m23995q(d));
+        String d = C1374h.m37383i().m37388d(str, str2, strArr);
+        if (!C5070i.m24068c(this.f31299Q, d)) {
+            this.f31299Q = d;
+            this.f31297O = str2;
+            this.f31298P = strArr;
+            setDrawable(C5078d.m23987z().m23996q(d));
         }
     }
 
     @Override
     public void mo7419f3(View view, float f, float f2) {
-        C4335b.m28257e(this, view, f, f2);
+        C4335b.m28259e(this, view, f, f2);
     }
 
     public String getEmojiColored() {
-        return this.f31296Q;
+        return this.f31299Q;
     }
 
     @Override
     public long getLongPressDuration() {
-        return C4335b.m28260b(this);
+        return C4335b.m28262b(this);
     }
 
     public String getRawEmoji() {
-        return this.f31293N;
+        return this.f31296N;
     }
 
     @Override
     public boolean mo7418n0(View view, float f, float f2) {
-        return this.f31292M != null;
+        return this.f31295M != null;
     }
 
     @Override
     public void mo7417o2(View view, float f, float f2) {
-        C4335b.m28255g(this, view, f, f2);
+        C4335b.m28257g(this, view, f, f2);
     }
 
     @Override
     public void onDraw(Canvas canvas) {
         int measuredWidth = getMeasuredWidth();
         int measuredHeight = getMeasuredHeight();
-        if (this.f31298S != null) {
+        if (this.f31301S != null) {
             int i = measuredWidth / 2;
             int i2 = measuredHeight / 2;
-            int min = Math.min(measuredWidth, measuredHeight) - C1357a0.m37541i(16.0f);
-            Rect Z = C1410y.m37052Z();
+            int min = Math.min(measuredWidth, measuredHeight) - C1357a0.m37544i(16.0f);
+            Rect Z = C1410y.m37055Z();
             int i3 = min / 2;
             int i4 = i - i3;
             Z.left = i4;
@@ -185,7 +185,7 @@ public class C9647s extends View implements C4336c.AbstractC4337a {
             Z.top = i5;
             Z.right = i4 + min;
             Z.bottom = i5 + min;
-            C5078d.m23986z().m24001k(canvas, this.f31298S, Z);
+            C5078d.m23987z().m24002k(canvas, this.f31301S, Z);
         }
     }
 
@@ -197,11 +197,11 @@ public class C9647s extends View implements C4336c.AbstractC4337a {
     @Override
     public boolean onTouchEvent(MotionEvent motionEvent) {
         if (motionEvent.getAction() == 0) {
-            this.f31302c = super.onTouchEvent(motionEvent);
-        } else if (this.f31302c) {
+            this.f31305c = super.onTouchEvent(motionEvent);
+        } else if (this.f31305c) {
             super.onTouchEvent(motionEvent);
         }
-        return isEnabled() && this.f31300a.m28246e(this, motionEvent);
+        return isEnabled() && this.f31303a.m28248e(this, motionEvent);
     }
 
     @Override
@@ -215,21 +215,21 @@ public class C9647s extends View implements C4336c.AbstractC4337a {
 
     @Override
     public void setOnClickListener(View.OnClickListener onClickListener) {
-        this.f31292M = onClickListener;
+        this.f31295M = onClickListener;
     }
 
     @Override
     public boolean mo7415z4(View view, float f, float f2) {
-        if (this.f31297R == 0) {
+        if (this.f31300R == 0) {
             return false;
         }
-        C1379j0.m37321k(view, false);
+        C1379j0.m37324k(view, false);
         setInLongPress(true);
-        return this.f31301b.m7936p(view, f, f2, this.f31293N, this.f31297R, this.f31294O, this.f31295P);
+        return this.f31304b.m7936p(view, f, f2, this.f31296N, this.f31300R, this.f31297O, this.f31298P);
     }
 
     @Override
     public void mo7414z6(View view, MotionEvent motionEvent, float f, float f2, float f3, float f4) {
-        this.f31301b.m7934r(view, motionEvent, f, f2);
+        this.f31304b.m7934r(view, motionEvent, f, f2);
     }
 }

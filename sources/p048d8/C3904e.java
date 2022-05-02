@@ -14,7 +14,7 @@ public final class C3904e {
         this.f13188b = dVar;
     }
 
-    public final BarcodeScannerImpl m29614a(C2035c cVar) {
-        return new BarcodeScannerImpl(cVar, this.f13187a.m42085b(cVar), this.f13188b.m42086a(cVar.m35785b()), C1863ob.m35965b(C3901b.m29617d()));
+    public final BarcodeScannerImpl m29616a(C2035c cVar) {
+        return new BarcodeScannerImpl(cVar, this.f13187a.m42088b(cVar), this.f13188b.m42089a(cVar.m35788b()), C1863ob.m35968b(C3901b.m29619d()));
     }
 }

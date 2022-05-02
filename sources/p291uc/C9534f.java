@@ -18,9 +18,9 @@ import td.C9239m;
 import td.View$OnClickListenerC9170d1;
 
 public class C9534f extends C9239m {
-    public AbstractC9535a f30879S0;
-    public CharSequence f30880T0;
-    public C10930q6 f30881U0;
+    public AbstractC9535a f30882S0;
+    public CharSequence f30883T0;
+    public C10930q6 f30884U0;
 
     public interface AbstractC9535a {
         void mo8397x3();
@@ -37,41 +37,41 @@ public class C9534f extends C9239m {
         });
         setUseDefaultClickListener(true);
         setBackgroundResource(C11532q.m113b());
-        m9833Q1(C1357a0.m37541i(56.0f), C1357a0.m37541i(49.0f));
+        m9832Q1(C1357a0.m37544i(56.0f), C1357a0.m37544i(49.0f));
     }
 
     public void m8405d2(View view) {
-        AbstractC9535a aVar = this.f30879S0;
+        AbstractC9535a aVar = this.f30882S0;
         if (aVar != null) {
             aVar.mo8397x3();
         }
     }
 
     public void m8404f2(C10930q6 q6Var, TdApi.Chat chat, C4737p7 p7Var) {
-        this.f30881U0 = q6Var;
-        setShowLock(chat != null && C7316a.m17051j(chat.f25367id));
+        this.f30884U0 = q6Var;
+        setShowLock(chat != null && C7316a.m17051j(chat.f25370id));
         if (chat == null) {
-            m9831S1("Debug controller", "nobody should find this view");
+            m9830S1("Debug controller", "nobody should find this view");
         } else if (p7Var != null) {
-            m9833Q1(C1357a0.m37541i(56.0f), C1357a0.m37541i(49.0f));
-            m9831S1(C4403w.m27844o2(p7Var.m26300a() ? R.string.xComments : R.string.xReplies, p7Var.m26291j()), null);
-            m9827W0(p7Var.m26299b(), p7Var.m26294g());
+            m9832Q1(C1357a0.m37544i(56.0f), C1357a0.m37544i(49.0f));
+            m9830S1(C4403w.m27846o2(p7Var.m26301a() ? R.string.xComments : R.string.xReplies, p7Var.m26292j()), null);
+            m9826W0(p7Var.m26300b(), p7Var.m26295g());
         } else {
             m8403h2(chat, chat.photo);
             setShowVerify(q6Var.m2430h4(chat));
-            setShowMute(C4779t2.m25393x4(chat.notificationSettings, q6Var.m2423hb(chat.f25367id)));
-            m9831S1(q6Var.m2661S3(chat), !C5070i.m24061i(this.f30880T0) ? this.f30880T0 : q6Var.m2166xc().m3295n(chat));
+            setShowMute(C4779t2.m25394x4(chat.notificationSettings, q6Var.m2423hb(chat.f25370id)));
+            m9830S1(q6Var.m2661S3(chat), !C5070i.m24062i(this.f30883T0) ? this.f30883T0 : q6Var.m2166xc().m3295n(chat));
             setExpandedSubtitle(q6Var.m2166xc().m3294o(chat));
-            setUseRedHighlight(q6Var.m2491d7(chat.f25367id));
-            m9827W0(chat.f25367id, 0L);
+            setUseRedHighlight(q6Var.m2491d7(chat.f25370id));
+            m9826W0(chat.f25370id, 0L);
         }
     }
 
     public final void m8403h2(TdApi.Chat chat, TdApi.ChatPhotoInfo chatPhotoInfo) {
-        boolean z = this.f30881U0.m2443g7(chat.f25367id) || chatPhotoInfo == null;
+        boolean z = this.f30884U0.m2443g7(chat.f25370id) || chatPhotoInfo == null;
         setPhotoOpenDisabled(z);
         if (z) {
-            setAvatarPlaceholder(this.f30881U0.m2947A3(chat, true, C9239m.getBaseAvatarRadiusDp(), null));
+            setAvatarPlaceholder(this.f30884U0.m2947A3(chat, true, C9239m.getBaseAvatarRadiusDp(), null));
         } else {
             setAvatar(chatPhotoInfo);
         }
@@ -79,7 +79,7 @@ public class C9534f extends C9239m {
 
     @Override
     public void mo8402i0(float f, float f2, float f3, boolean z) {
-        float f4 = this.f29838k0;
+        float f4 = this.f29841k0;
         if (f4 != f) {
             boolean z2 = false;
             boolean z3 = f4 == 0.0f || f == 0.0f;
@@ -96,51 +96,51 @@ public class C9534f extends C9239m {
 
     public void m8401i2(TdApi.Chat chat, TdApi.ChatPhotoInfo chatPhotoInfo) {
         m8403h2(chat, chatPhotoInfo);
-        m9826W1();
+        m9825W1();
     }
 
     public void m8400j2(long j, String str) {
         setTitle(str);
-        TdApi.Chat U2 = this.f30881U0.m2632U2(j);
+        TdApi.Chat U2 = this.f30884U0.m2632U2(j);
         if (U2 != null && U2.photo == null) {
             m8403h2(U2, null);
-            m9826W1();
+            m9825W1();
         }
     }
 
     public void m8399k2(long j, TdApi.ChatNotificationSettings chatNotificationSettings) {
-        boolean x4 = C4779t2.m25393x4(chatNotificationSettings, this.f30881U0.m2423hb(j));
+        boolean x4 = C4779t2.m25394x4(chatNotificationSettings, this.f30884U0.m2423hb(j));
         if (getShowMute() != x4) {
             setShowMute(x4);
         }
     }
 
     public void m8398l2(TdApi.Chat chat) {
-        if (C5070i.m24061i(this.f30880T0)) {
-            setSubtitle(this.f30881U0.m2166xc().m3295n(chat));
-            setExpandedSubtitle(this.f30881U0.m2166xc().m3294o(chat));
+        if (C5070i.m24062i(this.f30883T0)) {
+            setSubtitle(this.f30884U0.m2166xc().m3295n(chat));
+            setExpandedSubtitle(this.f30884U0.m2166xc().m3294o(chat));
         }
     }
 
     @Override
     public void onMeasure(int i, int i2) {
-        setMeasuredDimension(i, View$OnClickListenerC9170d1.m10064d3(this.f29838k0 != 0.0f, true));
+        setMeasuredDimension(i, View$OnClickListenerC9170d1.m10063d3(this.f29841k0 != 0.0f, true));
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent motionEvent) {
-        return this.f30879S0 != null && super.onTouchEvent(motionEvent);
+        return this.f30882S0 != null && super.onTouchEvent(motionEvent);
     }
 
     public void setCallback(AbstractC9535a aVar) {
-        this.f30879S0 = aVar;
+        this.f30882S0 = aVar;
     }
 
     public void setForcedSubtitle(CharSequence charSequence) {
-        if (!C5070i.m24067c(this.f30880T0, charSequence)) {
-            this.f30880T0 = charSequence;
-            setNoStatus(!C5070i.m24061i(charSequence));
-            if (m9817n1()) {
+        if (!C5070i.m24068c(this.f30883T0, charSequence)) {
+            this.f30883T0 = charSequence;
+            setNoStatus(!C5070i.m24062i(charSequence));
+            if (m9816n1()) {
                 setSubtitle(charSequence);
             }
         }

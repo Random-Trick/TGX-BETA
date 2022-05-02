@@ -14,12 +14,12 @@ import p193nb.C7321e;
 import p350yd.C10930q6;
 
 public abstract class AbstractC9622o0 implements C3955n.AbstractC3959d {
-    public final int f31197a;
-    public int f31198b;
+    public final int f31200a;
+    public int f31201b;
 
     public AbstractC9622o0(int i, int i2) {
-        this.f31197a = i;
-        this.f31198b = i2;
+        this.f31200a = i;
+        this.f31201b = i2;
     }
 
     public static AbstractC9622o0 m7988i(C10930q6 q6Var, File file, String str, int i, int i2) {
@@ -70,7 +70,7 @@ public abstract class AbstractC9622o0 implements C3955n.AbstractC3959d {
         if (H0 == null && game.photo.minithumbnail == null) {
             return null;
         }
-        return new C9629p0(q6Var, i, i2, C4779t2.m25655K5(H0), game.photo.minithumbnail);
+        return new C9629p0(q6Var, i, i2, C4779t2.m25656K5(H0), game.photo.minithumbnail);
     }
 
     public static AbstractC9622o0 m7983n(C10930q6 q6Var, TdApi.Location location, TdApi.Thumbnail thumbnail, int i, int i2) {
@@ -82,9 +82,9 @@ public abstract class AbstractC9622o0 implements C3955n.AbstractC3959d {
 
     public static AbstractC9622o0 m7982o(C10930q6 q6Var, TdApi.Message message, C4779t2.C4783d dVar, int i, int i2) {
         TdApi.PhotoSize H0;
-        C10930q6.C10936f d = dVar != null ? dVar.m25374d() : null;
+        C10930q6.C10936f d = dVar != null ? dVar.m25375d() : null;
         if (d != null) {
-            List<TdApi.Message> list = d.f35133a;
+            List<TdApi.Message> list = d.f35136a;
             TdApi.Message message2 = list.get(list.size() - 1);
             if (message2 != message) {
                 return m7982o(q6Var, message2, null, i, i2);
@@ -97,14 +97,14 @@ public abstract class AbstractC9622o0 implements C3955n.AbstractC3959d {
                 TdApi.Photo photo = ((TdApi.MessagePhoto) message.content).photo;
                 TdApi.PhotoSize H02 = C7321e.m17004H0(photo);
                 if (!(H02 == null && photo.minithumbnail == null)) {
-                    return new C9629p0(q6Var, i, i2, C4779t2.m25655K5(H02), photo.minithumbnail);
+                    return new C9629p0(q6Var, i, i2, C4779t2.m25656K5(H02), photo.minithumbnail);
                 }
                 break;
             case TdApi.MessageChatChangePhoto.CONSTRUCTOR:
                 TdApi.ChatPhoto chatPhoto = ((TdApi.MessageChatChangePhoto) message.content).photo;
                 TdApi.PhotoSize I0 = C7321e.m17002I0(chatPhoto.sizes);
                 if (!(I0 == null && chatPhoto.minithumbnail == null)) {
-                    return new C9629p0(q6Var, i, i2, C4779t2.m25655K5(I0), chatPhoto.minithumbnail);
+                    return new C9629p0(q6Var, i, i2, C4779t2.m25656K5(I0), chatPhoto.minithumbnail);
                 }
                 break;
             case TdApi.MessageGame.CONSTRUCTOR:
@@ -164,7 +164,7 @@ public abstract class AbstractC9622o0 implements C3955n.AbstractC3959d {
                             }
                             TdApi.Photo photo2 = webPage.photo;
                             if (!(photo2 == null || ((H0 = C7321e.m17004H0(photo2)) == null && webPage.photo.minithumbnail == null))) {
-                                return new C9629p0(q6Var, i, i2, C4779t2.m25655K5(H0), webPage.photo.minithumbnail);
+                                return new C9629p0(q6Var, i, i2, C4779t2.m25656K5(H0), webPage.photo.minithumbnail);
                             }
                         }
                     }
@@ -206,42 +206,42 @@ public abstract class AbstractC9622o0 implements C3955n.AbstractC3959d {
     }
 
     public final <T extends View & AbstractC5143t> void m7993a(T t, Canvas canvas, C6238b bVar, float f, float f2, float f3) {
-        mo7957b(t, canvas, bVar, f, f2, getWidth(), getHeight(), this.f31198b, f3);
+        mo7957b(t, canvas, bVar, f, f2, getWidth(), getHeight(), this.f31201b, f3);
     }
 
     public abstract <T extends View & AbstractC5143t> void mo7957b(T t, Canvas canvas, C6238b bVar, float f, float f2, float f3, float f4, int i, float f5);
 
     public final int m7992c() {
-        return this.f31198b;
+        return this.f31201b;
     }
 
     @Override
     public int mo7991d(boolean z) {
-        return C3962o.m29470a(this, z);
+        return C3962o.m29472a(this, z);
     }
 
     public abstract boolean mo7956e(C6238b bVar);
 
     public void mo7955f(C6238b bVar, boolean z) {
-        bVar.m20999d();
+        bVar.m21000d();
     }
 
     @Override
     public int mo7990g(boolean z) {
-        return C3962o.m29469b(this, z);
+        return C3962o.m29471b(this, z);
     }
 
     @Override
     public int getHeight() {
-        return this.f31197a;
+        return this.f31200a;
     }
 
     @Override
     public int getWidth() {
-        return this.f31197a;
+        return this.f31200a;
     }
 
     public void m7989h(int i) {
-        this.f31198b = i;
+        this.f31201b = i;
     }
 }

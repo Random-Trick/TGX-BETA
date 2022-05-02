@@ -33,12 +33,12 @@ public class C4030d extends View implements C3950k.AbstractC3952b {
     public Drawable f13547c;
 
     public interface AbstractC4031a {
-        void m29260a(C4030d dVar, float f, float f2);
+        void m29262a(C4030d dVar, float f, float f2);
     }
 
     public C4030d(Context context) {
         super(context);
-        setLayoutParams(FrameLayoutFix.m18008s1(C1357a0.m37541i(56.0f), C1357a0.m37541i(56.0f)));
+        setLayoutParams(FrameLayoutFix.m18008s1(C1357a0.m37544i(56.0f), C1357a0.m37544i(56.0f)));
     }
 
     private void setChangeFactor(float f) {
@@ -66,7 +66,7 @@ public class C4030d extends View implements C3950k.AbstractC3952b {
             if (i > 0) {
                 f2 = (-90.0f) * (1.0f - ((f - 0.5f) / 0.5f));
             }
-            aVar.m29260a(this, f2, f3);
+            aVar.m29262a(this, f2, f3);
         }
     }
 
@@ -84,12 +84,12 @@ public class C4030d extends View implements C3950k.AbstractC3952b {
         if (i == 0) {
             this.f13546b = this.f13547c;
             this.f13547c = null;
-            this.f13537P.m29541l(0.0f);
+            this.f13537P.m29543l(0.0f);
             this.f13536O = 0.0f;
         }
     }
 
-    public void m29267a(View view) {
+    public void m29269a(View view) {
         ViewParent parent;
         float f;
         if (!this.f13534M && (parent = view.getParent()) != null) {
@@ -114,74 +114,74 @@ public class C4030d extends View implements C3950k.AbstractC3952b {
         }
     }
 
-    public final void m29266b() {
+    public final void m29268b() {
         C3950k kVar = this.f13537P;
         if (kVar != null) {
-            kVar.m29541l(0.0f);
+            kVar.m29543l(0.0f);
             this.f13536O = 0.0f;
             this.f13547c = null;
         }
     }
 
-    public void m29265c(int i) {
+    public void m29267c(int i) {
         if (this.f13535N != i) {
             this.f13535N = i;
             C3950k kVar = this.f13537P;
             if (kVar == null) {
                 this.f13537P = new C3950k(0, this, C2057b.f7280b, 220L);
-            } else if (!kVar.m29531v() || this.f13536O >= 1.0f) {
-                this.f13537P.m29541l(0.0f);
+            } else if (!kVar.m29533v() || this.f13536O >= 1.0f) {
+                this.f13537P.m29543l(0.0f);
                 this.f13536O = 0.0f;
             } else {
-                this.f13537P.m29542k();
+                this.f13537P.m29544k();
                 float f = this.f13536O;
                 if (f > 0.5f) {
                     this.f13536O = (1.0f - ((1.0f - f) / 0.5f)) * 0.5f;
                     this.f13546b = this.f13547c;
                 }
             }
-            this.f13547c = C1362c.m37482g(getResources(), i);
-            this.f13537P.m29544i(1.0f);
+            this.f13547c = C1362c.m37485g(getResources(), i);
+            this.f13537P.m29546i(1.0f);
         }
     }
 
-    public final void m29264d() {
+    public final void m29266d() {
         if (getMeasuredWidth() > 0 && getMeasuredHeight() > 0) {
-            m29267a(this.f13543V ? (View) getParent() : this);
+            m29269a(this.f13543V ? (View) getParent() : this);
         }
     }
 
-    public void m29263e(boolean z) {
+    public void m29265e(boolean z) {
         float f = z ? 1.0f : 0.0f;
         C3950k kVar = this.f13539R;
         if (kVar != null) {
-            kVar.m29541l(f);
+            kVar.m29543l(f);
         }
         this.f13538Q = f;
     }
 
-    public void m29262f() {
+    public void m29264f() {
         this.f13534M = true;
         setLayoutParams(FrameLayoutFix.m18008s1(-1, -1));
     }
 
-    public void m29261g(boolean z, boolean z2) {
+    public void m29263g(boolean z, boolean z2) {
         C3950k kVar = this.f13539R;
         if (kVar == null) {
             this.f13539R = new C3950k(1, this, C2057b.f7280b, 360L);
-        } else if (this.f13540S == z && kVar.m29531v()) {
+        } else if (this.f13540S == z && kVar.m29533v()) {
             return;
         }
         float f = z ? 0.0f : 1.0f;
         float f2 = z ? 1.0f : 0.0f;
         float f3 = this.f13538Q;
         if (f3 == 1.0f || f3 == 0.0f) {
-            this.f13539R.m29541l(f);
+            this.f13539R.m29543l(f);
             this.f13538Q = f;
         }
         this.f13540S = z;
         this.f13541T = z2;
-        this.f13539R.m29544i(f2);
+        this.f13539R.m29546i(f2);
     }
 
     @Override
@@ -192,7 +192,7 @@ public class C4030d extends View implements C3950k.AbstractC3952b {
         if (this.f13546b != null) {
             int measuredWidth = getMeasuredWidth();
             int measuredHeight = getMeasuredHeight();
-            float max = Math.max(0.8f, measuredWidth / C1357a0.m37541i(56.0f));
+            float max = Math.max(0.8f, measuredWidth / C1357a0.m37544i(56.0f));
             int i = measuredWidth / 2;
             int i2 = measuredHeight / 2;
             float f = this.f13544W;
@@ -207,16 +207,16 @@ public class C4030d extends View implements C3950k.AbstractC3952b {
                     canvas.rotate(f, i, i2);
                 }
             }
-            Paint J = this.f13534M ? C1410y.m37068J() : C1410y.m37055W(-1);
+            Paint J = this.f13534M ? C1410y.m37071J() : C1410y.m37058W(-1);
             if (this.f13536O == 0.0f) {
-                C1362c.m37487b(canvas, this.f13546b, i - (drawable3.getMinimumWidth() / 2), i2 - (this.f13546b.getMinimumHeight() / 2), J);
+                C1362c.m37490b(canvas, this.f13546b, i - (drawable3.getMinimumWidth() / 2), i2 - (this.f13546b.getMinimumHeight() / 2), J);
             } else {
                 int alpha = J.getAlpha();
                 J.setAlpha((int) ((1.0f - this.f13536O) * 255.0f));
                 float f2 = i;
-                C1362c.m37487b(canvas, this.f13546b, i - (drawable.getMinimumWidth() / 2), (i2 - (this.f13546b.getMinimumHeight() / 2)) + (this.f13536O * f2), J);
+                C1362c.m37490b(canvas, this.f13546b, i - (drawable.getMinimumWidth() / 2), (i2 - (this.f13546b.getMinimumHeight() / 2)) + (this.f13536O * f2), J);
                 J.setAlpha((int) (this.f13536O * 255.0f));
-                C1362c.m37487b(canvas, this.f13547c, i - (drawable2.getMinimumWidth() / 2), (i2 - (this.f13546b.getMinimumHeight() / 2)) - (f2 * (1.0f - this.f13536O)), J);
+                C1362c.m37490b(canvas, this.f13547c, i - (drawable2.getMinimumWidth() / 2), (i2 - (this.f13546b.getMinimumHeight() / 2)) - (f2 * (1.0f - this.f13536O)), J);
                 J.setAlpha(alpha);
             }
             if (z) {
@@ -228,7 +228,7 @@ public class C4030d extends View implements C3950k.AbstractC3952b {
     @Override
     public void onLayout(boolean z, int i, int i2, int i3, int i4) {
         super.onLayout(z, i, i2, i3, i4);
-        m29264d();
+        m29266d();
     }
 
     @Override
@@ -239,7 +239,7 @@ public class C4030d extends View implements C3950k.AbstractC3952b {
     public void setAlignGravity(int i) {
         if (this.f13545a != i) {
             this.f13545a = i;
-            m29264d();
+            m29266d();
         }
     }
 
@@ -255,9 +255,9 @@ public class C4030d extends View implements C3950k.AbstractC3952b {
     }
 
     public void setIconRes(int i) {
-        m29266b();
+        m29268b();
         this.f13535N = i;
-        this.f13546b = C1362c.m37482g(getResources(), i);
+        this.f13546b = C1362c.m37485g(getResources(), i);
         invalidate();
     }
 

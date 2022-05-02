@@ -27,27 +27,27 @@ public final class C1309c {
 
     static {
         C4552h.C4553a aVar = C4552h.f14973N;
-        f4722d = aVar.m27399c(":");
-        f4723e = aVar.m27399c(":status");
-        f4724f = aVar.m27399c(":method");
-        f4725g = aVar.m27399c(":path");
-        f4726h = aVar.m27399c(":scheme");
-        f4727i = aVar.m27399c(":authority");
+        f4722d = aVar.m27401c(":");
+        f4723e = aVar.m27401c(":status");
+        f4724f = aVar.m27401c(":method");
+        f4725g = aVar.m27401c(":path");
+        f4726h = aVar.m27401c(":scheme");
+        f4727i = aVar.m27401c(":authority");
     }
 
     public C1309c(C4552h hVar, C4552h hVar2) {
-        C8298k.m12934e(hVar, "name");
-        C8298k.m12934e(hVar2, "value");
+        C8298k.m12933e(hVar, "name");
+        C8298k.m12933e(hVar2, "value");
         this.f4730b = hVar;
         this.f4731c = hVar2;
-        this.f4729a = hVar.m27404r() + 32 + hVar2.m27404r();
+        this.f4729a = hVar.m27406r() + 32 + hVar2.m27406r();
     }
 
-    public final C4552h m37778a() {
+    public final C4552h m37781a() {
         return this.f4730b;
     }
 
-    public final C4552h m37777b() {
+    public final C4552h m37780b() {
         return this.f4731c;
     }
 
@@ -59,7 +59,7 @@ public final class C1309c {
             return false;
         }
         C1309c cVar = (C1309c) obj;
-        return C8298k.m12937b(this.f4730b, cVar.f4730b) && C8298k.m12937b(this.f4731c, cVar.f4731c);
+        return C8298k.m12936b(this.f4730b, cVar.f4730b) && C8298k.m12936b(this.f4731c, cVar.f4731c);
     }
 
     public int hashCode() {
@@ -74,7 +74,7 @@ public final class C1309c {
     }
 
     public String toString() {
-        return this.f4730b.m27402u() + ": " + this.f4731c.m27402u();
+        return this.f4730b.m27404u() + ": " + this.f4731c.m27404u();
     }
 
     public C1309c(java.lang.String r2, java.lang.String r3) {
@@ -82,8 +82,8 @@ public final class C1309c {
     }
 
     public C1309c(C4552h hVar, String str) {
-        this(hVar, C4552h.f14973N.m27399c(str));
-        C8298k.m12934e(hVar, "name");
-        C8298k.m12934e(str, "value");
+        this(hVar, C4552h.f14973N.m27401c(str));
+        C8298k.m12933e(hVar, "name");
+        C8298k.m12933e(str, "value");
     }
 }

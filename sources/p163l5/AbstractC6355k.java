@@ -10,7 +10,7 @@ public interface AbstractC6355k extends IInterface {
 
     public static abstract class AbstractBinderC6356a extends BinderC10098b implements AbstractC6355k {
         @RecentlyNonNull
-        public static AbstractC6355k m20564s(@RecentlyNonNull IBinder iBinder) {
+        public static AbstractC6355k m20565s(@RecentlyNonNull IBinder iBinder) {
             if (iBinder == null) {
                 return null;
             }

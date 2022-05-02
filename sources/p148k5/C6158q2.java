@@ -18,12 +18,12 @@ public final class C6158q2 implements AbstractC5867f.AbstractC5870c {
     }
 
     @Override
-    public final void mo11484s(C5217a aVar) {
+    public final void mo11483s(C5217a aVar) {
         String valueOf = String.valueOf(aVar);
         StringBuilder sb2 = new StringBuilder(valueOf.length() + 27);
         sb2.append("beginFailureResolution for ");
         sb2.append(valueOf);
         Log.d("AutoManageHelper", sb2.toString());
-        this.f19526d.m21092h(aVar, this.f19523a);
+        this.f19526d.m21093h(aVar, this.f19523a);
     }
 }

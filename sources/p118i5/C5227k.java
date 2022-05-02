@@ -14,9 +14,9 @@ public class C5227k extends DialogInterface$OnCancelListenerC0759c {
     public DialogInterface.OnCancelListener f17378T0;
     public Dialog f17379U0;
 
-    public static C5227k m23562q1(@RecentlyNonNull Dialog dialog, DialogInterface.OnCancelListener onCancelListener) {
+    public static C5227k m23563q1(@RecentlyNonNull Dialog dialog, DialogInterface.OnCancelListener onCancelListener) {
         C5227k kVar = new C5227k();
-        Dialog dialog2 = (Dialog) C6378r.m20505l(dialog, "Cannot display null dialog");
+        Dialog dialog2 = (Dialog) C6378r.m20506l(dialog, "Cannot display null dialog");
         dialog2.setOnCancelListener(null);
         dialog2.setOnDismissListener(null);
         kVar.f17377S0 = dialog2;
@@ -27,14 +27,14 @@ public class C5227k extends DialogInterface$OnCancelListenerC0759c {
     }
 
     @Override
-    public Dialog mo23564m1(Bundle bundle) {
+    public Dialog mo23565m1(Bundle bundle) {
         Dialog dialog = this.f17377S0;
         if (dialog != null) {
             return dialog;
         }
-        m40068n1(false);
+        m40071n1(false);
         if (this.f17379U0 == null) {
-            this.f17379U0 = new AlertDialog.Builder(m40134i()).create();
+            this.f17379U0 = new AlertDialog.Builder(m40137i()).create();
         }
         return this.f17379U0;
     }
@@ -48,7 +48,7 @@ public class C5227k extends DialogInterface$OnCancelListenerC0759c {
     }
 
     @Override
-    public void mo23563p1(@RecentlyNonNull AbstractC0767i iVar, String str) {
-        super.mo23563p1(iVar, str);
+    public void mo23564p1(@RecentlyNonNull AbstractC0767i iVar, String str) {
+        super.mo23564p1(iVar, str);
     }
 }

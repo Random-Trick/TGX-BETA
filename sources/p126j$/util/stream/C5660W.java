@@ -11,11 +11,11 @@ public final class C5660W extends AbstractC5668Y implements AbstractC5754p2 {
     }
 
     @Override
-    public void mo22133e(long j) {
-        this.f18257b.mo22127e(j);
+    public void mo22134e(long j) {
+        this.f18257b.mo22128e(j);
     }
 
-    public void mo22128k(Long l) {
-        AbstractC5572D0.m22416l(this, l);
+    public void mo22129k(Long l) {
+        AbstractC5572D0.m22417l(this, l);
     }
 }

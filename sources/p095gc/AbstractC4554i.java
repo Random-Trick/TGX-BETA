@@ -6,13 +6,13 @@ public abstract class AbstractC4554i implements AbstractC4572y {
     public final AbstractC4572y f14977a;
 
     public AbstractC4554i(AbstractC4572y yVar) {
-        C8298k.m12934e(yVar, "delegate");
+        C8298k.m12933e(yVar, "delegate");
         this.f14977a = yVar;
     }
 
     @Override
-    public C4539b0 mo27301c() {
-        return this.f14977a.mo27301c();
+    public C4539b0 mo27303c() {
+        return this.f14977a.mo27303c();
     }
 
     @Override
@@ -27,7 +27,7 @@ public abstract class AbstractC4554i implements AbstractC4572y {
 
     @Override
     public void mo5030h0(C4549e eVar, long j) {
-        C8298k.m12934e(eVar, "source");
+        C8298k.m12933e(eVar, "source");
         this.f14977a.mo5030h0(eVar, j);
     }
 

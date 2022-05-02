@@ -20,12 +20,12 @@ public abstract class AbstractC4448c extends AbstractC4443a {
     }
 
     @Override
-    public View mo27642g(Context context, Cursor cursor, ViewGroup viewGroup) {
+    public View mo27644g(Context context, Cursor cursor, ViewGroup viewGroup) {
         return this.f14714T.inflate(this.f14713S, viewGroup, false);
     }
 
     @Override
-    public View mo27641h(Context context, Cursor cursor, ViewGroup viewGroup) {
+    public View mo27643h(Context context, Cursor cursor, ViewGroup viewGroup) {
         return this.f14714T.inflate(this.f14712R, viewGroup, false);
     }
 }

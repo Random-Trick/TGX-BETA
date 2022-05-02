@@ -29,7 +29,7 @@ public class C5224h {
     public static final AtomicBoolean f17374c = new AtomicBoolean();
 
     @Deprecated
-    public static void m23577a(@RecentlyNonNull Context context) {
+    public static void m23578a(@RecentlyNonNull Context context) {
         if (!f17373b.getAndSet(true)) {
             try {
                 NotificationManager notificationManager = (NotificationManager) context.getSystemService("notification");
@@ -42,7 +42,7 @@ public class C5224h {
     }
 
     @Deprecated
-    public static int m23576b(@RecentlyNonNull Context context) {
+    public static int m23577b(@RecentlyNonNull Context context) {
         try {
             return context.getPackageManager().getPackageInfo("com.google.android.gms", 0).versionCode;
         } catch (PackageManager.NameNotFoundException unused) {
@@ -52,12 +52,12 @@ public class C5224h {
     }
 
     @Deprecated
-    public static String m23575c(int i) {
-        return C5217a.m23610g(i);
+    public static String m23576c(int i) {
+        return C5217a.m23611g(i);
     }
 
     @RecentlyNullable
-    public static Context m23574d(@RecentlyNonNull Context context) {
+    public static Context m23575d(@RecentlyNonNull Context context) {
         try {
             return context.createPackageContext("com.google.android.gms", 3);
         } catch (PackageManager.NameNotFoundException unused) {
@@ -66,7 +66,7 @@ public class C5224h {
     }
 
     @RecentlyNullable
-    public static Resources m23573e(@RecentlyNonNull Context context) {
+    public static Resources m23574e(@RecentlyNonNull Context context) {
         try {
             return context.getPackageManager().getResourcesForApplication("com.google.android.gms");
         } catch (PackageManager.NameNotFoundException unused) {
@@ -75,7 +75,7 @@ public class C5224h {
     }
 
     @Deprecated
-    public static int m23572f(@RecentlyNonNull Context context, int i) {
+    public static int m23573f(@RecentlyNonNull Context context, int i) {
         PackageInfo packageInfo;
         try {
             context.getResources().getString(C5226j.a_res_0x7f0e11fe);
@@ -83,15 +83,15 @@ public class C5224h {
             Log.e("GooglePlayServicesUtil", "The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.");
         }
         if (!"com.google.android.gms".equals(context.getPackageName()) && !f17374c.get()) {
-            int a = C6399y0.m20468a(context);
+            int a = C6399y0.m20469a(context);
             if (a == 0) {
                 throw new GooglePlayServicesMissingManifestValueException();
             } else if (a != f17372a) {
                 throw new GooglePlayServicesIncorrectManifestValueException(a);
             }
         }
-        boolean z = !C8248h.m13046e(context) && !C8248h.m13044g(context);
-        C6378r.m20516a(i >= 0);
+        boolean z = !C8248h.m13045e(context) && !C8248h.m13043g(context);
+        C6378r.m20517a(i >= 0);
         String packageName = context.getPackageName();
         PackageManager packageManager = context.getPackageManager();
         if (z) {
@@ -105,19 +105,19 @@ public class C5224h {
         }
         try {
             PackageInfo packageInfo2 = packageManager.getPackageInfo("com.google.android.gms", 64);
-            C5225i.m23567a(context);
-            if (!C5225i.m23565c(packageInfo2, true)) {
+            C5225i.m23568a(context);
+            if (!C5225i.m23566c(packageInfo2, true)) {
                 Log.w("GooglePlayServicesUtil", String.valueOf(packageName).concat(" requires Google Play services, but their signature is invalid."));
             } else {
                 if (z) {
-                    C6378r.m20506k(packageInfo);
-                    if (!C5225i.m23565c(packageInfo, true)) {
+                    C6378r.m20507k(packageInfo);
+                    if (!C5225i.m23566c(packageInfo, true)) {
                         Log.w("GooglePlayServicesUtil", String.valueOf(packageName).concat(" requires Google Play Store, but its signature is invalid."));
                     }
                 }
                 if (z && packageInfo != null && !packageInfo.signatures[0].equals(packageInfo2.signatures[0])) {
                     Log.w("GooglePlayServicesUtil", String.valueOf(packageName).concat(" requires Google Play Store, but its signature doesn't match that of Google Play services."));
-                } else if (C8255o.m13023a(packageInfo2.versionCode) < C8255o.m13023a(i)) {
+                } else if (C8255o.m13022a(packageInfo2.versionCode) < C8255o.m13022a(i)) {
                     int i2 = packageInfo2.versionCode;
                     StringBuilder sb2 = new StringBuilder(String.valueOf(packageName).length() + 82);
                     sb2.append("Google Play services out of date for ");
@@ -149,37 +149,37 @@ public class C5224h {
     }
 
     @Deprecated
-    public static boolean m23571g(@RecentlyNonNull Context context, int i) {
+    public static boolean m23572g(@RecentlyNonNull Context context, int i) {
         if (i == 18) {
             return true;
         }
         if (i == 1) {
-            return m23568j(context, "com.google.android.gms");
+            return m23569j(context, "com.google.android.gms");
         }
         return false;
     }
 
     @TargetApi(18)
-    public static boolean m23570h(@RecentlyNonNull Context context) {
-        if (!C8251k.m13036c()) {
+    public static boolean m23571h(@RecentlyNonNull Context context) {
+        if (!C8251k.m13035c()) {
             return false;
         }
         Object systemService = context.getSystemService("user");
-        C6378r.m20506k(systemService);
+        C6378r.m20507k(systemService);
         Bundle applicationRestrictions = ((UserManager) systemService).getApplicationRestrictions(context.getPackageName());
         return applicationRestrictions != null && "true".equals(applicationRestrictions.getString("restricted_profile"));
     }
 
     @Deprecated
-    public static boolean m23569i(int i) {
+    public static boolean m23570i(int i) {
         return i == 1 || i == 2 || i == 3 || i == 9;
     }
 
     @TargetApi(21)
-    public static boolean m23568j(Context context, String str) {
+    public static boolean m23569j(Context context, String str) {
         ApplicationInfo applicationInfo;
         boolean equals = str.equals("com.google.android.gms");
-        if (C8251k.m13034e()) {
+        if (C8251k.m13033e()) {
             try {
                 for (PackageInstaller.SessionInfo sessionInfo : context.getPackageManager().getPackageInstaller().getAllSessions()) {
                     if (str.equals(sessionInfo.getAppPackageName())) {
@@ -197,6 +197,6 @@ public class C5224h {
         if (equals) {
             return applicationInfo.enabled;
         }
-        return applicationInfo.enabled && !m23570h(context);
+        return applicationInfo.enabled && !m23571h(context);
     }
 }

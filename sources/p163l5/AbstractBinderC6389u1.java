@@ -13,13 +13,13 @@ public abstract class AbstractBinderC6389u1 extends BinderC10098b implements Abs
     @Override
     public final boolean mo6024q(int i, Parcel parcel, Parcel parcel2, int i2) {
         if (i == 1) {
-            AbstractC8983b p = mo20476p();
+            AbstractC8983b p = mo20477p();
             parcel2.writeNoException();
             C10099c.m6021c(parcel2, p);
         } else if (i != 2) {
             return false;
         } else {
-            int Z0 = mo20477Z0();
+            int Z0 = mo20478Z0();
             parcel2.writeNoException();
             parcel2.writeInt(Z0);
         }

@@ -13,27 +13,27 @@ public interface AbstractC1349l {
 
         public static final class C1351a implements AbstractC1349l {
             @Override
-            public boolean mo37576a(int i, AbstractC4551g gVar, int i2, boolean z) {
-                C8298k.m12934e(gVar, "source");
-                gVar.mo27335a0(i2);
+            public boolean mo37579a(int i, AbstractC4551g gVar, int i2, boolean z) {
+                C8298k.m12933e(gVar, "source");
+                gVar.mo27337a0(i2);
                 return true;
             }
 
             @Override
-            public boolean mo37575b(int i, List<C1309c> list) {
-                C8298k.m12934e(list, "requestHeaders");
+            public boolean mo37578b(int i, List<C1309c> list) {
+                C8298k.m12933e(list, "requestHeaders");
                 return true;
             }
 
             @Override
-            public boolean mo37574c(int i, List<C1309c> list, boolean z) {
-                C8298k.m12934e(list, "responseHeaders");
+            public boolean mo37577c(int i, List<C1309c> list, boolean z) {
+                C8298k.m12933e(list, "responseHeaders");
                 return true;
             }
 
             @Override
-            public void mo37573d(int i, EnumC1307b bVar) {
-                C8298k.m12934e(bVar, "errorCode");
+            public void mo37576d(int i, EnumC1307b bVar) {
+                C8298k.m12933e(bVar, "errorCode");
             }
         }
 
@@ -45,11 +45,11 @@ public interface AbstractC1349l {
         }
     }
 
-    boolean mo37576a(int i, AbstractC4551g gVar, int i2, boolean z);
+    boolean mo37579a(int i, AbstractC4551g gVar, int i2, boolean z);
 
-    boolean mo37575b(int i, List<C1309c> list);
+    boolean mo37578b(int i, List<C1309c> list);
 
-    boolean mo37574c(int i, List<C1309c> list, boolean z);
+    boolean mo37577c(int i, List<C1309c> list, boolean z);
 
-    void mo37573d(int i, EnumC1307b bVar);
+    void mo37576d(int i, EnumC1307b bVar);
 }

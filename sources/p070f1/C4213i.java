@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.ListView;
 
 public final class C4213i {
-    public static boolean m28425a(ListView listView, int i) {
+    public static boolean m28427a(ListView listView, int i) {
         if (Build.VERSION.SDK_INT >= 19) {
             return listView.canScrollList(i);
         }
@@ -20,7 +20,7 @@ public final class C4213i {
         return firstVisiblePosition > 0 || listView.getChildAt(0).getTop() < listView.getListPaddingTop();
     }
 
-    public static void m28424b(ListView listView, int i) {
+    public static void m28426b(ListView listView, int i) {
         View childAt;
         if (Build.VERSION.SDK_INT >= 19) {
             listView.scrollListBy(i);

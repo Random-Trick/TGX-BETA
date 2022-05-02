@@ -28,7 +28,7 @@ public class C1690d0 extends AbstractCollection {
     @Override
     public final boolean add(Object obj) {
         int i;
-        m36088i();
+        m36091i();
         boolean isEmpty = this.f6181b.isEmpty();
         boolean add = this.f6181b.add(obj);
         if (add) {
@@ -36,7 +36,7 @@ public class C1690d0 extends AbstractCollection {
             i = g0Var.f6289M;
             g0Var.f6289M = i + 1;
             if (isEmpty) {
-                m36089h();
+                m36092h();
                 return true;
             }
         }
@@ -61,7 +61,7 @@ public class C1690d0 extends AbstractCollection {
         if (size != 0) {
             return addAll;
         }
-        m36089h();
+        m36092h();
         return true;
     }
 
@@ -74,19 +74,19 @@ public class C1690d0 extends AbstractCollection {
             AbstractC1735g0 g0Var = this.f6179N;
             i = g0Var.f6289M;
             g0Var.f6289M = i - size;
-            m36087m();
+            m36090m();
         }
     }
 
     @Override
     public final boolean contains(@CheckForNull Object obj) {
-        m36088i();
+        m36091i();
         return this.f6181b.contains(obj);
     }
 
     @Override
     public final boolean containsAll(Collection<?> collection) {
-        m36088i();
+        m36091i();
         return this.f6181b.containsAll(collection);
     }
 
@@ -95,15 +95,15 @@ public class C1690d0 extends AbstractCollection {
         if (obj == this) {
             return true;
         }
-        m36088i();
+        m36091i();
         return this.f6181b.equals(obj);
     }
 
-    public final void m36089h() {
+    public final void m36092h() {
         Map map;
         C1690d0 d0Var = this.f6182c;
         if (d0Var != null) {
-            d0Var.m36089h();
+            d0Var.m36092h();
             return;
         }
         map = this.f6179N.f6290c;
@@ -112,15 +112,15 @@ public class C1690d0 extends AbstractCollection {
 
     @Override
     public final int hashCode() {
-        m36088i();
+        m36091i();
         return this.f6181b.hashCode();
     }
 
-    public final void m36088i() {
+    public final void m36091i() {
         Map map;
         C1690d0 d0Var = this.f6182c;
         if (d0Var != null) {
-            d0Var.m36088i();
+            d0Var.m36091i();
             if (this.f6182c.f6181b != this.f6178M) {
                 throw new ConcurrentModificationException();
             }
@@ -135,15 +135,15 @@ public class C1690d0 extends AbstractCollection {
 
     @Override
     public final Iterator iterator() {
-        m36088i();
+        m36091i();
         return new C1675c0(this);
     }
 
-    public final void m36087m() {
+    public final void m36090m() {
         Map map;
         C1690d0 d0Var = this.f6182c;
         if (d0Var != null) {
-            d0Var.m36087m();
+            d0Var.m36090m();
         } else if (this.f6181b.isEmpty()) {
             map = this.f6179N.f6290c;
             map.remove(this.f6180a);
@@ -153,13 +153,13 @@ public class C1690d0 extends AbstractCollection {
     @Override
     public final boolean remove(@CheckForNull Object obj) {
         int i;
-        m36088i();
+        m36091i();
         boolean remove = this.f6181b.remove(obj);
         if (remove) {
             AbstractC1735g0 g0Var = this.f6179N;
             i = g0Var.f6289M;
             g0Var.f6289M = i - 1;
-            m36087m();
+            m36090m();
         }
         return remove;
     }
@@ -177,7 +177,7 @@ public class C1690d0 extends AbstractCollection {
             AbstractC1735g0 g0Var = this.f6179N;
             i = g0Var.f6289M;
             g0Var.f6289M = i + (size2 - size);
-            m36087m();
+            m36090m();
         }
         return removeAll;
     }
@@ -193,20 +193,20 @@ public class C1690d0 extends AbstractCollection {
             AbstractC1735g0 g0Var = this.f6179N;
             i = g0Var.f6289M;
             g0Var.f6289M = i + (size2 - size);
-            m36087m();
+            m36090m();
         }
         return retainAll;
     }
 
     @Override
     public final int size() {
-        m36088i();
+        m36091i();
         return this.f6181b.size();
     }
 
     @Override
     public final String toString() {
-        m36088i();
+        m36091i();
         return this.f6181b.toString();
     }
 }

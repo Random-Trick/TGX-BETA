@@ -14,7 +14,7 @@ public class C1544i {
         this.f5497c = aVar2;
     }
 
-    public AbstractC1543h m36495a(String str) {
-        return AbstractC1543h.m36500a(this.f5495a, this.f5496b, this.f5497c, str);
+    public AbstractC1543h m36498a(String str) {
+        return AbstractC1543h.m36503a(this.f5495a, this.f5496b, this.f5497c, str);
     }
 }

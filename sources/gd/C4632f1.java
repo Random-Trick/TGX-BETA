@@ -79,32 +79,32 @@ public class C4632f1 extends AbstractC4576a1 implements C4630f0.AbstractC4631a, 
         if (pageBlockPhoto.photo != null) {
             C4630f0 f0Var = new C4630f0(v4Var.mo4347s(), v4Var.mo4348c(), pageBlockPhoto.photo, 0L, 0L, null, false, false, iVar);
             this.f15414W = f0Var;
-            m26697e0(f0Var);
-            m26690l0(pageBlockPhoto.caption);
-            m26687o0(pageBlockPhoto.url);
+            m26698e0(f0Var);
+            m26691l0(pageBlockPhoto.caption);
+            m26688o0(pageBlockPhoto.url);
         }
     }
 
-    public void m26695g0(View view, Rect rect) {
-        rect.set(this.f15414W.m26712y(), this.f15414W.m26791A(), this.f15414W.m26710z(), this.f15414W.m26716w());
+    public void m26696g0(View view, Rect rect) {
+        rect.set(this.f15414W.m26713y(), this.f15414W.m26793A(), this.f15414W.m26711z(), this.f15414W.m26717w());
     }
 
-    public boolean m26694h0(View view, C4630f0 f0Var, View view2, int i) {
+    public boolean m26695h0(View view, C4630f0 f0Var, View view2, int i) {
         if (i == R.id.btn_copyLink) {
-            C1379j0.m37325i(this.f15422e0, R.string.CopiedLink);
+            C1379j0.m37328i(this.f15422e0, R.string.CopiedLink);
             return true;
         } else if (i == R.id.btn_open) {
-            m26693i0(f0Var);
+            m26694i0(f0Var);
             return true;
         } else if (i != R.id.btn_openLink) {
             return true;
         } else {
             HandlerC10770jj.C10788q qVar = new HandlerC10770jj.C10788q(this.f15415X);
-            if (qVar.f34541g == null) {
-                qVar.f34541g = C1379j0.m37307r(view.getContext()).m14584H3().m8984h(view, this.f15038c).m8948u(new C9357x2.AbstractC9363f() {
+            if (qVar.f34544g == null) {
+                qVar.f34544g = C1379j0.m37310r(view.getContext()).m14584H3().m8984h(view, this.f15038c).m8948u(new C9357x2.AbstractC9363f() {
                     @Override
                     public final void mo8098f1(View view3, Rect rect) {
-                        C4632f1.this.m26695g0(view3, rect);
+                        C4632f1.this.m26696g0(view3, rect);
                     }
                 });
             }
@@ -119,54 +119,54 @@ public class C4632f1 extends AbstractC4576a1 implements C4630f0.AbstractC4631a, 
     }
 
     @Override
-    public boolean mo26325C(View view, MotionEvent motionEvent) {
+    public boolean mo26326C(View view, MotionEvent motionEvent) {
         C5125l lVar = this.f15426i0;
         if (lVar != null) {
-            return lVar.m23872i(view, motionEvent, 0, mo26320q());
+            return lVar.m23873i(view, motionEvent, 0, mo26321q());
         }
         C4630f0 f0Var = this.f15414W;
-        return f0Var != null && f0Var.m26745h0(view, motionEvent);
+        return f0Var != null && f0Var.m26744i0(view, motionEvent);
     }
 
     @Override
-    public void mo9808F2(int i, C8112b bVar, boolean z) {
+    public void mo9807F2(int i, C8112b bVar, boolean z) {
     }
 
     @Override
-    public void mo26708P(C6238b bVar, boolean z) {
+    public void mo26709P(C6238b bVar, boolean z) {
         C5125l lVar = this.f15426i0;
         if (lVar != null) {
-            lVar.m23870k(bVar, z);
+            lVar.m23871k(bVar, z);
         } else {
-            bVar.m20999d();
+            bVar.m21000d();
         }
     }
 
     @Override
-    public void mo26707Q(RunnableC6507m mVar) {
+    public void mo26708Q(RunnableC6507m mVar) {
         C4630f0 f0Var = this.f15414W;
         if (f0Var != null) {
-            f0Var.m26739k0(mVar);
+            f0Var.m26738l0(mVar);
         } else {
             mVar.clear();
         }
     }
 
     @Override
-    public C8113c mo9832R4(long j, TdApi.SearchMessagesFilter searchMessagesFilter) {
+    public C8113c mo9831R4(long j, TdApi.SearchMessagesFilter searchMessagesFilter) {
         return null;
     }
 
     @Override
-    public void mo26458S(C6257p pVar) {
+    public void mo26459S(C6257p pVar) {
         if (this.f15427j0 != null) {
-            pVar.m20819G(this.f15430m0);
+            pVar.m20820G(this.f15430m0);
         } else if (this.f15417Z != null) {
-            pVar.m20819G(this.f15418a0);
+            pVar.m20820G(this.f15418a0);
         } else {
             C4630f0 f0Var = this.f15414W;
             if (f0Var != null) {
-                f0Var.m26737l0(pVar);
+                f0Var.m26736m0(pVar);
             } else {
                 pVar.clear();
             }
@@ -174,23 +174,23 @@ public class C4632f1 extends AbstractC4576a1 implements C4630f0.AbstractC4631a, 
     }
 
     @Override
-    public void mo26457T(C6240c cVar) {
+    public void mo26458T(C6240c cVar) {
         if (this.f15427j0 != null) {
-            cVar.m20977j(this.f15428k0, this.f15429l0);
+            cVar.m20978j(this.f15428k0, this.f15429l0);
             return;
         }
         C4630f0 f0Var = this.f15414W;
         if (f0Var != null) {
-            f0Var.m26735m0(cVar);
+            f0Var.m26734n0(cVar);
         } else {
             cVar.clear();
         }
     }
 
-    public boolean m26704a0(View$OnClickListenerC3147u9 u9Var, String str, ArrayList<C4632f1> arrayList) {
+    public boolean m26705a0(View$OnClickListenerC3147u9 u9Var, String str, ArrayList<C4632f1> arrayList) {
         this.f15433p0 = str;
         C4630f0 f0Var = this.f15414W;
-        if (f0Var == null || f0Var.m26760W()) {
+        if (f0Var == null || f0Var.m26761W()) {
             return false;
         }
         this.f15432o0 = arrayList;
@@ -198,12 +198,12 @@ public class C4632f1 extends AbstractC4576a1 implements C4630f0.AbstractC4631a, 
     }
 
     @Override
-    public boolean mo26703b() {
+    public boolean mo26704b() {
         TdApi.PageBlockEmbedded pageBlockEmbedded = this.f15427j0;
         return pageBlockEmbedded != null && pageBlockEmbedded.allowScrolling;
     }
 
-    public int m26702b0() {
+    public int m26703b0() {
         ArrayList<C4630f0> arrayList = this.f15419b0;
         if (arrayList != null) {
             return arrayList.size();
@@ -212,18 +212,18 @@ public class C4632f1 extends AbstractC4576a1 implements C4630f0.AbstractC4631a, 
     }
 
     @Override
-    public void mo26701c(View view, FrameLayout.LayoutParams layoutParams, int i, int i2) {
-        layoutParams.topMargin = mo26320q();
-        layoutParams.bottomMargin = (this.f15425h0 || this.f15431n0) ? 0 : mo26320q();
-        layoutParams.leftMargin = m27274x(true);
-        layoutParams.rightMargin = m27274x(false);
+    public void mo26702c(View view, FrameLayout.LayoutParams layoutParams, int i, int i2) {
+        layoutParams.topMargin = mo26321q();
+        layoutParams.bottomMargin = (this.f15425h0 || this.f15431n0) ? 0 : mo26321q();
+        layoutParams.leftMargin = m27276x(true);
+        layoutParams.rightMargin = m27276x(false);
     }
 
-    public int m26700c0() {
+    public int m26701c0() {
         return this.f15434q0;
     }
 
-    public C4630f0 m26699d0(int i) {
+    public C4630f0 m26700d0(int i) {
         ArrayList<C4630f0> arrayList = this.f15419b0;
         if (arrayList == null || i < 0 || i >= arrayList.size()) {
             return null;
@@ -232,78 +232,78 @@ public class C4632f1 extends AbstractC4576a1 implements C4630f0.AbstractC4631a, 
     }
 
     @Override
-    public void mo26698e() {
+    public void mo26699e() {
         C5125l lVar = this.f15426i0;
         if (lVar != null) {
-            lVar.m23880a();
+            lVar.m23881a();
             return;
         }
         C4630f0 f0Var = this.f15414W;
         if (f0Var != null) {
-            f0Var.m26779G().m18623j();
+            f0Var.m26781G().m18623j();
         }
     }
 
-    public final void m26697e0(C4630f0 f0Var) {
-        f0Var.m26725r0();
-        f0Var.m26790A0(this.f15038c);
-        f0Var.m26723s0(this);
+    public final void m26698e0(C4630f0 f0Var) {
+        f0Var.m26724s0();
+        f0Var.m26790B0(this.f15038c);
+        f0Var.m26722t0(this);
     }
 
     @Override
-    public int mo26323f(android.view.View r11, int r12) {
-        throw new UnsupportedOperationException("Method not decompiled: gd.C4632f1.mo26323f(android.view.View, int):int");
+    public int mo26324f(android.view.View r11, int r12) {
+        throw new UnsupportedOperationException("Method not decompiled: gd.C4632f1.mo26324f(android.view.View, int):int");
     }
 
-    public boolean m26696f0() {
+    public boolean m26697f0() {
         TdApi.PageBlockEmbedded pageBlockEmbedded = this.f15427j0;
         return pageBlockEmbedded != null && (pageBlockEmbedded.width == 0 || pageBlockEmbedded.height == 0);
     }
 
     @Override
-    public <T extends View & AbstractC5143t> void mo26322i(T t, Canvas canvas, AbstractC6264v vVar, AbstractC6264v vVar2, C6238b bVar) {
+    public <T extends View & AbstractC5143t> void mo26323i(T t, Canvas canvas, AbstractC6264v vVar, AbstractC6264v vVar2, C6238b bVar) {
         int i;
         int i2;
         int i3 = 0;
         if (this.f15427j0 != null || this.f15417Z != null) {
-            int x = m27274x(true);
-            int q = mo26320q();
-            int measuredWidth = t.getMeasuredWidth() - m27274x(false);
-            int o = m27278o();
+            int x = m27276x(true);
+            int q = mo26321q();
+            int measuredWidth = t.getMeasuredWidth() - m27276x(false);
+            int o = m27280o();
             if (!this.f15425h0 && !this.f15431n0) {
-                i3 = mo26320q();
+                i3 = mo26321q();
             }
-            vVar.mo20256K0(x, q, measuredWidth, o - i3);
-            vVar2.mo20256K0(vVar.getLeft(), vVar.getTop(), vVar.getRight(), vVar.getBottom());
-            if (vVar2.mo20246c0()) {
-                if (vVar.mo20246c0()) {
-                    vVar.mo20255N(canvas);
+            vVar.mo20257K0(x, q, measuredWidth, o - i3);
+            vVar2.mo20257K0(vVar.getLeft(), vVar.getTop(), vVar.getRight(), vVar.getBottom());
+            if (vVar2.mo20247c0()) {
+                if (vVar.mo20247c0()) {
+                    vVar.mo20256N(canvas);
                 }
                 vVar.draw(canvas);
             }
             vVar2.draw(canvas);
         } else if (this.f15426i0 != null && (t instanceof C6861d2)) {
-            int measuredWidth2 = (t.getMeasuredWidth() - m27274x(true)) - m27274x(false);
-            int h = this.f15426i0.m23873h();
-            if (!m27292I()) {
-                i2 = m27274x(true);
+            int measuredWidth2 = (t.getMeasuredWidth() - m27276x(true)) - m27276x(false);
+            int h = this.f15426i0.m23874h();
+            if (!m27294I()) {
+                i2 = m27276x(true);
             } else if (h < measuredWidth2) {
                 i2 = (measuredWidth2 - h) / 2;
             } else {
                 i = 0;
-                this.f15426i0.m23876e(t, canvas, i, mo26320q(), ((C6861d2) t).getMultipleReceiver());
+                this.f15426i0.m23877e(t, canvas, i, mo26321q(), ((C6861d2) t).getMultipleReceiver());
             }
             i = i2;
-            this.f15426i0.m23876e(t, canvas, i, mo26320q(), ((C6861d2) t).getMultipleReceiver());
+            this.f15426i0.m23877e(t, canvas, i, mo26321q(), ((C6861d2) t).getMultipleReceiver());
         } else if (this.f15414W != null) {
-            this.f15414W.m26724s(t, canvas, ((((t.getMeasuredWidth() - m27274x(true)) - m27274x(false)) / 2) - (this.f15414W.m26789B() / 2)) + m27274x(true), mo26320q(), vVar, vVar2, 1.0f);
-            if (!C5070i.m24061i(this.f15422e0)) {
-                C1362c.m37487b(canvas, this.f15423f0, (vVar2.getRight() - this.f15423f0.getMinimumWidth()) - C1357a0.m37541i(9.0f), vVar2.getTop() + C1357a0.m37541i(9.0f), C1410y.m37055W(-1));
+            this.f15414W.m26725s(t, canvas, ((((t.getMeasuredWidth() - m27276x(true)) - m27276x(false)) / 2) - (this.f15414W.m26791B() / 2)) + m27276x(true), mo26321q(), vVar, vVar2, 1.0f);
+            if (!C5070i.m24062i(this.f15422e0)) {
+                C1362c.m37490b(canvas, this.f15423f0, (vVar2.getRight() - this.f15423f0.getMinimumWidth()) - C1357a0.m37544i(9.0f), vVar2.getTop() + C1357a0.m37544i(9.0f), C1410y.m37058W(-1));
             }
         }
     }
 
-    public final boolean m26693i0(C4630f0 f0Var) {
+    public final boolean m26694i0(C4630f0 f0Var) {
         boolean z;
         ArrayList<TdApi.PageBlockCaption> arrayList;
         ArrayList<C4630f0> arrayList2;
@@ -341,14 +341,14 @@ public class C4632f1 extends AbstractC4576a1 implements C4630f0.AbstractC4631a, 
                 if (pageBlockCaption == null) {
                     str = textEntityArr;
                 } else if (!C7321e.m16962b1(pageBlockCaption.text) && !C7321e.m16962b1(pageBlockCaption.credit)) {
-                    str = C4779t2.m25507h2(pageBlockCaption.text) + "\n" + C4779t2.m25507h2(pageBlockCaption.credit);
+                    str = C4779t2.m25508h2(pageBlockCaption.text) + "\n" + C4779t2.m25508h2(pageBlockCaption.credit);
                 } else if (!C7321e.m16962b1(pageBlockCaption.text)) {
-                    str = C4779t2.m25507h2(pageBlockCaption.text);
+                    str = C4779t2.m25508h2(pageBlockCaption.text);
                 } else {
-                    str = C4779t2.m25507h2(pageBlockCaption.credit);
+                    str = C4779t2.m25508h2(pageBlockCaption.credit);
                 }
-                TdApi.FormattedText formattedText = !C5070i.m24061i(str) ? new TdApi.FormattedText(str, textEntityArr) : textEntityArr;
-                C8112b W0 = next2.m26773J() != null ? C8112b.m13525W0(this.f15036a.mo4347s(), this.f15036a.mo4348c(), next2.m26773J(), formattedText) : next2.m26764S() != null ? C8112b.m13523X0(this.f15036a.mo4347s(), this.f15036a.mo4348c(), next2.m26764S(), formattedText) : next2.m26718v() != null ? C8112b.m13529U0(this.f15036a.mo4347s(), this.f15036a.mo4348c(), next2.m26718v(), formattedText) : null;
+                TdApi.FormattedText formattedText = !C5070i.m24062i(str) ? new TdApi.FormattedText(str, textEntityArr) : textEntityArr;
+                C8112b W0 = next2.m26775J() != null ? C8112b.m13524W0(this.f15036a.mo4347s(), this.f15036a.mo4348c(), next2.m26775J(), formattedText) : next2.m26765S() != null ? C8112b.m13522X0(this.f15036a.mo4347s(), this.f15036a.mo4348c(), next2.m26765S(), formattedText) : next2.m26719v() != null ? C8112b.m13528U0(this.f15036a.mo4347s(), this.f15036a.mo4348c(), next2.m26719v(), formattedText) : null;
                 if (W0 != null) {
                     if (next2 == f0Var) {
                         i = i2;
@@ -359,7 +359,7 @@ public class C4632f1 extends AbstractC4576a1 implements C4630f0.AbstractC4631a, 
                 textEntityArr = null;
             }
             if (i != -1 && !arrayList3.isEmpty()) {
-                cVar.m13448t(i, arrayList3);
+                cVar.m13447t(i, arrayList3);
                 View$OnClickListenerC7430j1.m16132rk(this.f15036a, cVar, this.f15433p0, this, z);
                 return true;
             }
@@ -367,45 +367,45 @@ public class C4632f1 extends AbstractC4576a1 implements C4630f0.AbstractC4631a, 
         return false;
     }
 
-    public final void m26692j0(org.drinkless.p210td.libcore.telegram.TdApi.PageBlock[] r22) {
-        throw new UnsupportedOperationException("Method not decompiled: gd.C4632f1.m26692j0(org.drinkless.td.libcore.telegram.TdApi$PageBlock[]):void");
+    public final void m26693j0(org.drinkless.p210td.libcore.telegram.TdApi.PageBlock[] r22) {
+        throw new UnsupportedOperationException("Method not decompiled: gd.C4632f1.m26693j0(org.drinkless.td.libcore.telegram.TdApi$PageBlock[]):void");
     }
 
     @Override
-    public boolean mo26549k(final View view, final C4630f0 f0Var) {
+    public boolean mo26550k(final View view, final C4630f0 f0Var) {
         if (this.f15417Z != null) {
             HandlerC10770jj dd = this.f15036a.mo4348c().m2485dd();
             AbstractC9323v4<?> v4Var = this.f15036a;
             TdApi.Location location = this.f15417Z.location;
             dd.m3479q7(v4Var, new AbstractView$OnClickListenerC3344yb.C3351f(location.latitude, location.longitude));
             return true;
-        } else if (C5070i.m24061i(this.f15422e0)) {
-            return m26693i0(f0Var);
+        } else if (C5070i.m24062i(this.f15422e0)) {
+            return m26694i0(f0Var);
         } else {
-            this.f15036a.m9261ee(C4403w.m27865j1(R.string.OpenThisLink, this.f15422e0), new int[]{R.id.btn_openLink, R.id.btn_copyLink, R.id.btn_open}, new String[]{C4403w.m27869i1(R.string.Open), C4403w.m27869i1(R.string.CopyLink), C4403w.m27869i1(R.string.ViewPhoto)}, null, new int[]{R.drawable.baseline_open_in_browser_24, R.drawable.baseline_content_copy_24, R.drawable.baseline_visibility_24}, new AbstractC5117h0() {
+            this.f15036a.m9261ee(C4403w.m27867j1(R.string.OpenThisLink, this.f15422e0), new int[]{R.id.btn_openLink, R.id.btn_copyLink, R.id.btn_open}, new String[]{C4403w.m27871i1(R.string.Open), C4403w.m27871i1(R.string.CopyLink), C4403w.m27871i1(R.string.ViewPhoto)}, null, new int[]{R.drawable.baseline_open_in_browser_24, R.drawable.baseline_content_copy_24, R.drawable.baseline_visibility_24}, new AbstractC5117h0() {
                 @Override
                 public final boolean mo493A3(View view2, int i) {
                     boolean h0;
-                    h0 = C4632f1.this.m26694h0(view, f0Var, view2, i);
+                    h0 = C4632f1.this.m26695h0(view, f0Var, view2, i);
                     return h0;
                 }
 
                 @Override
                 public boolean mo492Q() {
-                    return C5115g0.m23935a(this);
+                    return C5115g0.m23936a(this);
                 }
 
                 @Override
                 public Object mo491b2(int i) {
-                    return C5115g0.m23934b(this, i);
+                    return C5115g0.m23935b(this, i);
                 }
             });
             return true;
         }
     }
 
-    public void m26691k0(WebView webView) {
-        if (!C5070i.m24061i(this.f15427j0.html)) {
+    public void m26692k0(WebView webView) {
+        if (!C5070i.m24062i(this.f15427j0.html)) {
             webView.loadDataWithBaseURL("https://telegram.org/embed", this.f15427j0.html, "text/html", "UTF-8", null);
             return;
         }
@@ -413,85 +413,85 @@ public class C4632f1 extends AbstractC4576a1 implements C4630f0.AbstractC4631a, 
         webView.loadUrl(this.f15427j0.url);
     }
 
-    public final void m26690l0(TdApi.PageBlockCaption pageBlockCaption) {
+    public final void m26691l0(TdApi.PageBlockCaption pageBlockCaption) {
         if (!C7321e.m16962b1(pageBlockCaption.text) || !C7321e.m16962b1(pageBlockCaption.credit)) {
             this.f15421d0 = pageBlockCaption;
             this.f15431n0 = true;
         }
     }
 
-    public void m26689m0() {
+    public void m26690m0() {
         this.f15425h0 = true;
     }
 
-    public void m26688n0(int i) {
+    public void m26689n0(int i) {
         this.f15434q0 = i;
     }
 
-    public final void m26687o0(String str) {
-        if (!C5070i.m24067c(this.f15422e0, str)) {
+    public final void m26688o0(String str) {
+        if (!C5070i.m24068c(this.f15422e0, str)) {
             this.f15422e0 = str;
             if (this.f15423f0 == null) {
-                this.f15423f0 = C1362c.m37483f(R.drawable.baseline_launch_24);
+                this.f15423f0 = C1362c.m37486f(R.drawable.baseline_launch_24);
             }
         }
     }
 
     @Override
-    public int mo26321p() {
+    public int mo26322p() {
         C5125l lVar = this.f15426i0;
         if (lVar != null) {
-            return lVar.m23875f();
+            return lVar.m23876f();
         }
         C4630f0 f0Var = this.f15414W;
         if (f0Var != null) {
-            return f0Var.m26714x();
+            return f0Var.m26715x();
         }
         return 0;
     }
 
     @Override
-    public int mo26320q() {
+    public int mo26321q() {
         if (this.f15425h0) {
             return 0;
         }
-        return C1357a0.m37541i(m27292I() ? 16.0f : 8.0f);
+        return C1357a0.m37544i(m27294I() ? 16.0f : 8.0f);
     }
 
     @Override
-    public int mo26686r(boolean z) {
+    public int mo26687r(boolean z) {
         TdApi.PageBlockEmbedded pageBlockEmbedded = this.f15427j0;
-        return (pageBlockEmbedded == null || pageBlockEmbedded.isFullWidth) ? super.mo26686r(z) : C1357a0.m37541i(16.0f);
+        return (pageBlockEmbedded == null || pageBlockEmbedded.isFullWidth) ? super.mo26687r(z) : C1357a0.m37544i(16.0f);
     }
 
     @Override
-    public void mo9812t1(Object obj, View$OnClickListenerC7430j1.C7448r rVar) {
-        rVar.f23722c = this;
+    public void mo9811t1(Object obj, View$OnClickListenerC7430j1.C7448r rVar) {
+        rVar.f23725c = this;
     }
 
     @Override
-    public C7462l1 mo9807v(int i, C8112b bVar) {
+    public C7462l1 mo9806v(int i, C8112b bVar) {
         C4630f0 f0Var;
         View f;
         ViewGroup viewGroup;
         if (this.f15416Y || this.f15426i0 != null) {
-            f0Var = m26699d0(i);
+            f0Var = m26700d0(i);
         } else {
             f0Var = this.f15414W;
         }
-        if (f0Var == null || (f = this.f15038c.mo28226f()) == null || (viewGroup = (ViewGroup) f.getParent()) == null) {
+        if (f0Var == null || (f = this.f15038c.mo28228f()) == null || (viewGroup = (ViewGroup) f.getParent()) == null) {
             return null;
         }
-        int i2 = C1399s0.m37154u(f)[1];
+        int i2 = C1399s0.m37157u(f)[1];
         f.getTop();
-        int q = (this.f15427j0 != null || this.f15416Y) ? mo26320q() : 0;
-        C7462l1 I = f0Var.m26775I(f, f.getTop() + q, (viewGroup.getBottom() - f.getBottom()) - q, i2 + q);
+        int q = (this.f15427j0 != null || this.f15416Y) ? mo26321q() : 0;
+        C7462l1 I = f0Var.m26777I(f, f.getTop() + q, (viewGroup.getBottom() - f.getBottom()) - q, i2 + q);
         I.m15984p(0);
         return I;
     }
 
     @Override
-    public int mo26319z() {
+    public int mo26320z() {
         if (this.f15427j0 != null) {
             return 54;
         }
@@ -508,8 +508,8 @@ public class C4632f1 extends AbstractC4576a1 implements C4630f0.AbstractC4631a, 
         super(v4Var, pageBlockMap);
         String str;
         this.f15417Z = pageBlockMap;
-        m26690l0(pageBlockMap.caption);
-        if (C4868i.m24726c2().m24695g1(true) != 2) {
+        m26691l0(pageBlockMap.caption);
+        if (C4868i.m24727c2().m24696g1(true) != 2) {
             int i = pageBlockMap.width;
             int i2 = pageBlockMap.height;
             if (i > 1024 || i2 > 1024) {
@@ -519,7 +519,7 @@ public class C4632f1 extends AbstractC4576a1 implements C4630f0.AbstractC4631a, 
             }
             int max2 = Math.max(14, i);
             int max3 = Math.max(14, i2);
-            int i3 = C1357a0.m37542h() >= 2.0f ? 2 : 1;
+            int i3 = C1357a0.m37545h() >= 2.0f ? 2 : 1;
             int i4 = max2 / i3;
             int i5 = max3 / i3;
             int max4 = Math.max(13, Math.min(20, pageBlockMap.zoom));
@@ -542,9 +542,9 @@ public class C4632f1 extends AbstractC4576a1 implements C4630f0.AbstractC4631a, 
             TdApi.Location location = pageBlockMap.location;
             C6251j jVar = new C6251j(v4Var.mo4348c(), C7389v0.m16725I0(c2, location.latitude, location.longitude, pageBlockMap.zoom, false, pageBlockMap.width, pageBlockMap.height, null), new TdApi.FileTypeThumbnail());
             this.f15418a0 = jVar;
-            jVar.m20897s0(2);
+            jVar.m20898s0(2);
         }
-        this.f15418a0.m20897s0(2);
+        this.f15418a0.m20898s0(2);
     }
 
     public C4632f1(AbstractC9323v4<?> v4Var, TdApi.PageBlockAnimation pageBlockAnimation) {
@@ -553,8 +553,8 @@ public class C4632f1 extends AbstractC4576a1 implements C4630f0.AbstractC4631a, 
         if (pageBlockAnimation.animation != null) {
             C4630f0 f0Var = new C4630f0(v4Var.mo4347s(), v4Var.mo4348c(), pageBlockAnimation.animation, 0L, 0L, null, false, true, !pageBlockAnimation.needAutoplay, null);
             this.f15414W = f0Var;
-            m26697e0(f0Var);
-            m26690l0(pageBlockAnimation.caption);
+            m26698e0(f0Var);
+            m26691l0(pageBlockAnimation.caption);
         }
     }
 
@@ -563,26 +563,26 @@ public class C4632f1 extends AbstractC4576a1 implements C4630f0.AbstractC4631a, 
         if (pageBlockVideo.video != null) {
             C4630f0 f0Var = new C4630f0(v4Var.mo4347s(), v4Var.mo4348c(), pageBlockVideo.video, 0L, 0L, (AbstractC4761s4) null, false);
             this.f15414W = f0Var;
-            m26697e0(f0Var);
-            m26690l0(pageBlockVideo.caption);
+            m26698e0(f0Var);
+            m26691l0(pageBlockVideo.caption);
         }
     }
 
     public C4632f1(AbstractC9323v4<?> v4Var, TdApi.PageBlockCollage pageBlockCollage) {
         super(v4Var, pageBlockCollage);
-        m26690l0(pageBlockCollage.caption);
-        m26692j0(pageBlockCollage.pageBlocks);
+        m26691l0(pageBlockCollage.caption);
+        m26693j0(pageBlockCollage.pageBlocks);
         ArrayList<C4630f0> arrayList = this.f15419b0;
         if (arrayList != null && !arrayList.isEmpty()) {
-            this.f15426i0 = new C5125l(this.f15419b0, C1357a0.m37541i(2.0f));
+            this.f15426i0 = new C5125l(this.f15419b0, C1357a0.m37544i(2.0f));
         }
     }
 
     public C4632f1(AbstractC9323v4<?> v4Var, TdApi.PageBlockSlideshow pageBlockSlideshow) {
         super(v4Var, pageBlockSlideshow);
         this.f15416Y = true;
-        m26690l0(pageBlockSlideshow.caption);
-        m26692j0(pageBlockSlideshow.pageBlocks);
+        m26691l0(pageBlockSlideshow.caption);
+        m26693j0(pageBlockSlideshow.pageBlocks);
     }
 
     public C4632f1(AbstractC9323v4<?> v4Var, TdApi.PageBlockEmbedded pageBlockEmbedded) {
@@ -593,22 +593,22 @@ public class C4632f1 extends AbstractC4576a1 implements C4630f0.AbstractC4631a, 
             if (photo.minithumbnail != null) {
                 C6250i iVar = new C6250i(pageBlockEmbedded.posterPhoto.minithumbnail);
                 this.f15428k0 = iVar;
-                iVar.m20897s0(2);
+                iVar.m20898s0(2);
             }
-            TdApi.PhotoSize l = C4630f0.m26738l(pageBlockEmbedded.posterPhoto);
-            TdApi.PhotoSize o = C4630f0.m26732o(pageBlockEmbedded.posterPhoto, l);
+            TdApi.PhotoSize l = C4630f0.m26739l(pageBlockEmbedded.posterPhoto);
+            TdApi.PhotoSize o = C4630f0.m26733o(pageBlockEmbedded.posterPhoto, l);
             if (l != null) {
                 C6246h hVar = new C6246h(v4Var.mo4348c(), l.photo);
                 this.f15429l0 = hVar;
-                hVar.m20897s0(2);
+                hVar.m20898s0(2);
             }
             if (o != null) {
                 C6246h hVar2 = new C6246h(v4Var.mo4348c(), o.photo);
                 this.f15430m0 = hVar2;
-                hVar2.m20897s0(2);
-                C4630f0.m26742j(this.f15430m0, o);
+                hVar2.m20898s0(2);
+                C4630f0.m26743j(this.f15430m0, o);
             }
         }
-        m26690l0(pageBlockEmbedded.caption);
+        m26691l0(pageBlockEmbedded.caption);
     }
 }

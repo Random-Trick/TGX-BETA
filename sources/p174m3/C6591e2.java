@@ -12,20 +12,20 @@ public class C6591e2 extends Exception implements AbstractC6609h {
     public final long f20524b;
 
     public C6591e2(Bundle bundle) {
-        this(bundle.getString(m19928d(2)), m19929c(bundle), bundle.getInt(m19928d(0), 1000), bundle.getLong(m19928d(1), SystemClock.elapsedRealtime()));
+        this(bundle.getString(m19929d(2)), m19930c(bundle), bundle.getInt(m19929d(0), 1000), bundle.getLong(m19929d(1), SystemClock.elapsedRealtime()));
     }
 
-    public static RemoteException m19931a(String str) {
+    public static RemoteException m19932a(String str) {
         return new RemoteException(str);
     }
 
-    public static Throwable m19930b(Class<?> cls, String str) {
+    public static Throwable m19931b(Class<?> cls, String str) {
         return (Throwable) cls.getConstructor(String.class).newInstance(str);
     }
 
-    public static Throwable m19929c(Bundle bundle) {
-        String string = bundle.getString(m19928d(3));
-        String string2 = bundle.getString(m19928d(4));
+    public static Throwable m19930c(Bundle bundle) {
+        String string = bundle.getString(m19929d(3));
+        String string2 = bundle.getString(m19929d(4));
         Throwable th = null;
         if (TextUtils.isEmpty(string)) {
             return null;
@@ -33,17 +33,17 @@ public class C6591e2 extends Exception implements AbstractC6609h {
         try {
             Class<?> cls = Class.forName(string, true, C6591e2.class.getClassLoader());
             if (Throwable.class.isAssignableFrom(cls)) {
-                th = m19930b(cls, string2);
+                th = m19931b(cls, string2);
             }
             if (th != null) {
                 return th;
             }
         } catch (Throwable unused) {
         }
-        return m19931a(string2);
+        return m19932a(string2);
     }
 
-    public static String m19928d(int i) {
+    public static String m19929d(int i) {
         return Integer.toString(i, 36);
     }
 

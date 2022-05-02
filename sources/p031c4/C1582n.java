@@ -38,7 +38,7 @@ public final class C1582n implements AbstractC1581m {
             this.f5702d = new byte[i];
         }
 
-        public void m36385a(byte[] bArr, int i, int i2) {
+        public void m36388a(byte[] bArr, int i, int i2) {
             if (this.f5699a) {
                 int i3 = i2 - i;
                 byte[] bArr2 = this.f5702d;
@@ -52,7 +52,7 @@ public final class C1582n implements AbstractC1581m {
             }
         }
 
-        public boolean m36384b(int i, int i2) {
+        public boolean m36387b(int i, int i2) {
             if (this.f5699a) {
                 int i3 = this.f5700b - i2;
                 this.f5700b = i3;
@@ -66,11 +66,11 @@ public final class C1582n implements AbstractC1581m {
                 this.f5699a = true;
             }
             byte[] bArr = f5698e;
-            m36385a(bArr, 0, bArr.length);
+            m36388a(bArr, 0, bArr.length);
             return false;
         }
 
-        public void m36383c() {
+        public void m36386c() {
             this.f5699a = false;
             this.f5700b = 0;
             this.f5701c = 0;
@@ -81,22 +81,22 @@ public final class C1582n implements AbstractC1581m {
         this(null);
     }
 
-    public static android.util.Pair<p174m3.C6600g1, java.lang.Long> m36386a(p031c4.C1582n.C1583a r8, java.lang.String r9) {
-        throw new UnsupportedOperationException("Method not decompiled: p031c4.C1582n.m36386a(c4.n$a, java.lang.String):android.util.Pair");
+    public static android.util.Pair<p174m3.C6600g1, java.lang.Long> m36389a(p031c4.C1582n.C1583a r8, java.lang.String r9) {
+        throw new UnsupportedOperationException("Method not decompiled: p031c4.C1582n.m36389a(c4.n$a, java.lang.String):android.util.Pair");
     }
 
     @Override
-    public void mo36333b(p020b5.C1189b0 r21) {
-        throw new UnsupportedOperationException("Method not decompiled: p031c4.C1582n.mo36333b(b5.b0):void");
+    public void mo36336b(p020b5.C1189b0 r21) {
+        throw new UnsupportedOperationException("Method not decompiled: p031c4.C1582n.mo36336b(b5.b0):void");
     }
 
     @Override
-    public void mo36332c() {
-        C1237x.m37855a(this.f5687f);
-        this.f5688g.m36383c();
+    public void mo36335c() {
+        C1237x.m37858a(this.f5687f);
+        this.f5688g.m36386c();
         C1596u uVar = this.f5686e;
         if (uVar != null) {
-            uVar.m36323d();
+            uVar.m36326d();
         }
         this.f5689h = 0L;
         this.f5690i = false;
@@ -105,22 +105,22 @@ public final class C1582n implements AbstractC1581m {
     }
 
     @Override
-    public void mo36331d() {
+    public void mo36334d() {
     }
 
     @Override
-    public void mo36330e(AbstractC8960h hVar, AbstractC1571i0.C1575d dVar) {
-        dVar.m36406a();
-        this.f5682a = dVar.m36405b();
-        this.f5683b = hVar.mo6039r(dVar.m36404c(), 2);
+    public void mo36333e(AbstractC8960h hVar, AbstractC1571i0.C1575d dVar) {
+        dVar.m36409a();
+        this.f5682a = dVar.m36408b();
+        this.f5683b = hVar.mo6039r(dVar.m36407c(), 2);
         C1579k0 k0Var = this.f5684c;
         if (k0Var != null) {
-            k0Var.m36388b(hVar, dVar);
+            k0Var.m36391b(hVar, dVar);
         }
     }
 
     @Override
-    public void mo36329f(long j, int i) {
+    public void mo36332f(long j, int i) {
         this.f5693l = j;
     }
 

@@ -25,14 +25,14 @@ public final class C2081g extends C2083h {
         public C2082a() {
         }
 
-        public final C2081g m35697a() {
-            if (m35696b()) {
+        public final C2081g m35700a() {
+            if (m35699b()) {
                 return new C2081g(null);
             }
             return null;
         }
 
-        public final boolean m35696b() {
+        public final boolean m35699b() {
             return C2081g.f7321e;
         }
 
@@ -58,14 +58,14 @@ public final class C2081g extends C2083h {
     }
 
     @Override
-    public void mo35691e(SSLSocket sSLSocket, String str, List<EnumC9064a0> list) {
-        C8298k.m12934e(sSLSocket, "sslSocket");
-        C8298k.m12934e(list, "protocols");
+    public void mo35694e(SSLSocket sSLSocket, String str, List<EnumC9064a0> list) {
+        C8298k.m12933e(sSLSocket, "sslSocket");
+        C8298k.m12933e(list, "protocols");
         if (sSLSocket instanceof org.openjsse.javax.net.ssl.SSLSocket) {
             org.openjsse.javax.net.ssl.SSLSocket sSLSocket2 = (org.openjsse.javax.net.ssl.SSLSocket) sSLSocket;
             SSLParameters sSLParameters = sSLSocket2.getSSLParameters();
             if (sSLParameters instanceof SSLParameters) {
-                Object[] array = C2083h.f7326c.m35679b(list).toArray(new String[0]);
+                Object[] array = C2083h.f7326c.m35682b(list).toArray(new String[0]);
                 Objects.requireNonNull(array, "null cannot be cast to non-null type kotlin.Array<T>");
                 sSLParameters.setApplicationProtocols((String[]) array);
                 sSLSocket2.setSSLParameters(sSLParameters);
@@ -73,14 +73,14 @@ public final class C2081g extends C2083h {
             }
             return;
         }
-        super.mo35691e(sSLSocket, str, list);
+        super.mo35694e(sSLSocket, str, list);
     }
 
     @Override
-    public String mo35689g(SSLSocket sSLSocket) {
-        C8298k.m12934e(sSLSocket, "sslSocket");
+    public String mo35692g(SSLSocket sSLSocket) {
+        C8298k.m12933e(sSLSocket, "sslSocket");
         if (!(sSLSocket instanceof org.openjsse.javax.net.ssl.SSLSocket)) {
-            return super.mo35689g(sSLSocket);
+            return super.mo35692g(sSLSocket);
         }
         String applicationProtocol = ((org.openjsse.javax.net.ssl.SSLSocket) sSLSocket).getApplicationProtocol();
         if (applicationProtocol != null && (applicationProtocol.hashCode() != 0 || !applicationProtocol.equals(""))) {
@@ -90,19 +90,19 @@ public final class C2081g extends C2083h {
     }
 
     @Override
-    public SSLContext mo35683m() {
+    public SSLContext mo35686m() {
         SSLContext sSLContext = SSLContext.getInstance("TLSv1.3", this.f7323d);
-        C8298k.m12935d(sSLContext, "SSLContext.getInstance(\"TLSv1.3\", provider)");
+        C8298k.m12934d(sSLContext, "SSLContext.getInstance(\"TLSv1.3\", provider)");
         return sSLContext;
     }
 
     @Override
-    public X509TrustManager mo35681o() {
+    public X509TrustManager mo35684o() {
         TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm(), this.f7323d);
         trustManagerFactory.init((KeyStore) null);
-        C8298k.m12935d(trustManagerFactory, "factory");
+        C8298k.m12934d(trustManagerFactory, "factory");
         TrustManager[] trustManagers = trustManagerFactory.getTrustManagers();
-        C8298k.m12936c(trustManagers);
+        C8298k.m12935c(trustManagers);
         boolean z = true;
         if (trustManagers.length != 1 || !(trustManagers[0] instanceof X509TrustManager)) {
             z = false;
@@ -115,7 +115,7 @@ public final class C2081g extends C2083h {
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Unexpected default trust managers: ");
         String arrays = Arrays.toString(trustManagers);
-        C8298k.m12935d(arrays, "java.util.Arrays.toString(this)");
+        C8298k.m12934d(arrays, "java.util.Arrays.toString(this)");
         sb2.append(arrays);
         throw new IllegalStateException(sb2.toString().toString());
     }

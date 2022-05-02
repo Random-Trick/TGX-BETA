@@ -9,7 +9,7 @@ public final class C6381s {
     public C6384t f20020a;
 
     @RecentlyNonNull
-    public static synchronized C6381s m20497b() {
+    public static synchronized C6381s m20498b() {
         C6381s sVar;
         synchronized (C6381s.class) {
             if (f20018b == null) {
@@ -21,17 +21,17 @@ public final class C6381s {
     }
 
     @RecentlyNullable
-    public C6384t m20498a() {
+    public C6384t m20499a() {
         return this.f20020a;
     }
 
-    public final synchronized void m20496c(C6384t tVar) {
+    public final synchronized void m20497c(C6384t tVar) {
         if (tVar == null) {
             this.f20020a = f20019c;
             return;
         }
         C6384t tVar2 = this.f20020a;
-        if (tVar2 == null || tVar2.m20487f() < tVar.m20487f()) {
+        if (tVar2 == null || tVar2.m20488f() < tVar.m20488f()) {
             this.f20020a = tVar;
         }
     }

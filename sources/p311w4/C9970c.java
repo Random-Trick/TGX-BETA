@@ -21,46 +21,46 @@ import p217p4.C8043h;
 import p343y6.C10422b;
 
 public final class C9970c extends AbstractC8039e {
-    public static final Pattern f32398p = Pattern.compile("^([0-9][0-9]+):([0-9][0-9]):([0-9][0-9])(?:(\\.[0-9]+)|:([0-9][0-9])(?:\\.([0-9]+))?)?$");
-    public static final Pattern f32399q = Pattern.compile("^([0-9]+(?:\\.[0-9]+)?)(h|m|s|ms|f|t)$");
-    public static final Pattern f32400r = Pattern.compile("^(([0-9]*.)?[0-9]+)(px|em|%)$");
-    public static final Pattern f32401s = Pattern.compile("^([-+]?\\d+\\.?\\d*?)%$");
-    public static final Pattern f32402t = Pattern.compile("^(\\d+\\.?\\d*?)% (\\d+\\.?\\d*?)%$");
-    public static final Pattern f32403u = Pattern.compile("^(\\d+\\.?\\d*?)px (\\d+\\.?\\d*?)px$");
-    public static final Pattern f32404v = Pattern.compile("^(\\d+) (\\d+)$");
-    public static final C9972b f32405w = new C9972b(30.0f, 1, 1);
-    public static final C9971a f32406x = new C9971a(32, 15);
-    public final XmlPullParserFactory f32407o;
+    public static final Pattern f32401p = Pattern.compile("^([0-9][0-9]+):([0-9][0-9]):([0-9][0-9])(?:(\\.[0-9]+)|:([0-9][0-9])(?:\\.([0-9]+))?)?$");
+    public static final Pattern f32402q = Pattern.compile("^([0-9]+(?:\\.[0-9]+)?)(h|m|s|ms|f|t)$");
+    public static final Pattern f32403r = Pattern.compile("^(([0-9]*.)?[0-9]+)(px|em|%)$");
+    public static final Pattern f32404s = Pattern.compile("^([-+]?\\d+\\.?\\d*?)%$");
+    public static final Pattern f32405t = Pattern.compile("^(\\d+\\.?\\d*?)% (\\d+\\.?\\d*?)%$");
+    public static final Pattern f32406u = Pattern.compile("^(\\d+\\.?\\d*?)px (\\d+\\.?\\d*?)px$");
+    public static final Pattern f32407v = Pattern.compile("^(\\d+) (\\d+)$");
+    public static final C9972b f32408w = new C9972b(30.0f, 1, 1);
+    public static final C9971a f32409x = new C9971a(32, 15);
+    public final XmlPullParserFactory f32410o;
 
     public static final class C9971a {
-        public final int f32408a;
-        public final int f32409b;
+        public final int f32411a;
+        public final int f32412b;
 
         public C9971a(int i, int i2) {
-            this.f32408a = i;
-            this.f32409b = i2;
+            this.f32411a = i;
+            this.f32412b = i2;
         }
     }
 
     public static final class C9972b {
-        public final float f32410a;
-        public final int f32411b;
-        public final int f32412c;
+        public final float f32413a;
+        public final int f32414b;
+        public final int f32415c;
 
         public C9972b(float f, int i, int i2) {
-            this.f32410a = f;
-            this.f32411b = i;
-            this.f32412c = i2;
+            this.f32413a = f;
+            this.f32414b = i;
+            this.f32415c = i2;
         }
     }
 
     public static final class C9973c {
-        public final int f32413a;
-        public final int f32414b;
+        public final int f32416a;
+        public final int f32417b;
 
         public C9973c(int i, int i2) {
-            this.f32413a = i;
-            this.f32414b = i2;
+            this.f32416a = i;
+            this.f32417b = i2;
         }
     }
 
@@ -68,7 +68,7 @@ public final class C9970c extends AbstractC8039e {
         super("TtmlDecoder");
         try {
             XmlPullParserFactory newInstance = XmlPullParserFactory.newInstance();
-            this.f32407o = newInstance;
+            this.f32410o = newInstance;
             newInstance.setNamespaceAware(true);
         } catch (XmlPullParserException e) {
             throw new RuntimeException("Couldn't create XmlPullParserFactory instance", e);
@@ -138,14 +138,14 @@ public final class C9970c extends AbstractC8039e {
         if (attributeValue == null) {
             return aVar;
         }
-        Matcher matcher = f32404v.matcher(attributeValue);
+        Matcher matcher = f32407v.matcher(attributeValue);
         if (!matcher.matches()) {
-            C1230s.m37881i("TtmlDecoder", attributeValue.length() != 0 ? "Ignoring malformed cell resolution: ".concat(attributeValue) : new String("Ignoring malformed cell resolution: "));
+            C1230s.m37884i("TtmlDecoder", attributeValue.length() != 0 ? "Ignoring malformed cell resolution: ".concat(attributeValue) : new String("Ignoring malformed cell resolution: "));
             return aVar;
         }
         try {
-            int parseInt = Integer.parseInt((String) C1186a.m38185e(matcher.group(1)));
-            int parseInt2 = Integer.parseInt((String) C1186a.m38185e(matcher.group(2)));
+            int parseInt = Integer.parseInt((String) C1186a.m38188e(matcher.group(1)));
+            int parseInt2 = Integer.parseInt((String) C1186a.m38188e(matcher.group(2)));
             if (parseInt != 0 && parseInt2 != 0) {
                 return new C9971a(parseInt, parseInt2);
             }
@@ -156,19 +156,19 @@ public final class C9970c extends AbstractC8039e {
             sb2.append(parseInt2);
             throw new C8043h(sb2.toString());
         } catch (NumberFormatException unused) {
-            C1230s.m37881i("TtmlDecoder", attributeValue.length() != 0 ? "Ignoring malformed cell resolution: ".concat(attributeValue) : new String("Ignoring malformed cell resolution: "));
+            C1230s.m37884i("TtmlDecoder", attributeValue.length() != 0 ? "Ignoring malformed cell resolution: ".concat(attributeValue) : new String("Ignoring malformed cell resolution: "));
             return aVar;
         }
     }
 
     public static void m6382H(String str, C9977g gVar) {
         Matcher matcher;
-        String[] A0 = C1216l0.m38020A0(str, "\\s+");
+        String[] A0 = C1216l0.m38023A0(str, "\\s+");
         if (A0.length == 1) {
-            matcher = f32400r.matcher(str);
+            matcher = f32403r.matcher(str);
         } else if (A0.length == 2) {
-            matcher = f32400r.matcher(A0[1]);
-            C1230s.m37881i("TtmlDecoder", "Multiple values in fontSize attribute. Picking the second value for vertical font size and ignoring the first.");
+            matcher = f32403r.matcher(A0[1]);
+            C1230s.m37884i("TtmlDecoder", "Multiple values in fontSize attribute. Picking the second value for vertical font size and ignoring the first.");
         } else {
             int length = A0.length;
             StringBuilder sb2 = new StringBuilder(52);
@@ -178,7 +178,7 @@ public final class C9970c extends AbstractC8039e {
             throw new C8043h(sb2.toString());
         }
         if (matcher.matches()) {
-            String str2 = (String) C1186a.m38185e(matcher.group(3));
+            String str2 = (String) C1186a.m38188e(matcher.group(3));
             str2.hashCode();
             char c = 65535;
             switch (str2.hashCode()) {
@@ -218,7 +218,7 @@ public final class C9970c extends AbstractC8039e {
                     sb3.append("'.");
                     throw new C8043h(sb3.toString());
             }
-            gVar.m6314y(Float.parseFloat((String) C1186a.m38185e(matcher.group(1))));
+            gVar.m6314y(Float.parseFloat((String) C1186a.m38188e(matcher.group(1))));
             return;
         }
         StringBuilder sb4 = new StringBuilder(String.valueOf(str).length() + 36);
@@ -234,20 +234,20 @@ public final class C9970c extends AbstractC8039e {
         float f = 1.0f;
         String attributeValue2 = xmlPullParser.getAttributeValue("http://www.w3.org/ns/ttml#parameter", "frameRateMultiplier");
         if (attributeValue2 != null) {
-            String[] A0 = C1216l0.m38020A0(attributeValue2, " ");
+            String[] A0 = C1216l0.m38023A0(attributeValue2, " ");
             if (A0.length == 2) {
                 f = Integer.parseInt(A0[0]) / Integer.parseInt(A0[1]);
             } else {
                 throw new C8043h("frameRateMultiplier doesn't have 2 parts");
             }
         }
-        C9972b bVar = f32405w;
-        int i = bVar.f32411b;
+        C9972b bVar = f32408w;
+        int i = bVar.f32414b;
         String attributeValue3 = xmlPullParser.getAttributeValue("http://www.w3.org/ns/ttml#parameter", "subFrameRate");
         if (attributeValue3 != null) {
             i = Integer.parseInt(attributeValue3);
         }
-        int i2 = bVar.f32412c;
+        int i2 = bVar.f32415c;
         String attributeValue4 = xmlPullParser.getAttributeValue("http://www.w3.org/ns/ttml#parameter", "tickRate");
         if (attributeValue4 != null) {
             i2 = Integer.parseInt(attributeValue4);
@@ -258,8 +258,8 @@ public final class C9970c extends AbstractC8039e {
     public static Map<String, C9977g> m6380J(XmlPullParser xmlPullParser, Map<String, C9977g> map, C9971a aVar, C9973c cVar, Map<String, C9975e> map2, Map<String, String> map3) {
         do {
             xmlPullParser.next();
-            if (C1220m0.m37918e(xmlPullParser, "style")) {
-                String a = C1220m0.m37922a(xmlPullParser, "style");
+            if (C1220m0.m37921e(xmlPullParser, "style")) {
+                String a = C1220m0.m37925a(xmlPullParser, "style");
                 C9977g O = m6375O(xmlPullParser, new C9977g());
                 if (a != null) {
                     for (String str : m6374P(a)) {
@@ -270,15 +270,15 @@ public final class C9970c extends AbstractC8039e {
                 if (g != null) {
                     map.put(g, O);
                 }
-            } else if (C1220m0.m37918e(xmlPullParser, "region")) {
+            } else if (C1220m0.m37921e(xmlPullParser, "region")) {
                 C9975e M = m6377M(xmlPullParser, aVar, cVar);
                 if (M != null) {
-                    map2.put(M.f32428a, M);
+                    map2.put(M.f32431a, M);
                 }
-            } else if (C1220m0.m37918e(xmlPullParser, "metadata")) {
+            } else if (C1220m0.m37921e(xmlPullParser, "metadata")) {
                 m6379K(xmlPullParser, map3);
             }
-        } while (!C1220m0.m37920c(xmlPullParser, "head"));
+        } while (!C1220m0.m37923c(xmlPullParser, "head"));
         return map;
     }
 
@@ -286,10 +286,10 @@ public final class C9970c extends AbstractC8039e {
         String a;
         do {
             xmlPullParser.next();
-            if (C1220m0.m37918e(xmlPullParser, "image") && (a = C1220m0.m37922a(xmlPullParser, "id")) != null) {
+            if (C1220m0.m37921e(xmlPullParser, "image") && (a = C1220m0.m37925a(xmlPullParser, "id")) != null) {
                 map.put(a, xmlPullParser.nextText());
             }
-        } while (!C1220m0.m37920c(xmlPullParser, "metadata"));
+        } while (!C1220m0.m37923c(xmlPullParser, "metadata"));
     }
 
     public static C9974d m6378L(XmlPullParser xmlPullParser, C9974d dVar, Map<String, C9975e> map, C9972b bVar) {
@@ -386,7 +386,7 @@ public final class C9970c extends AbstractC8039e {
             }
         }
         if (dVar != null) {
-            long j6 = dVar.f32418d;
+            long j6 = dVar.f32421d;
             j = -9223372036854775807L;
             if (j6 != -9223372036854775807L) {
                 if (j3 != -9223372036854775807L) {
@@ -404,7 +404,7 @@ public final class C9970c extends AbstractC8039e {
             if (j5 != j) {
                 j2 = j7 + j5;
             } else if (dVar != null) {
-                long j8 = dVar.f32419e;
+                long j8 = dVar.f32422e;
                 if (j8 != j) {
                     j2 = j8;
                 }
@@ -420,17 +420,17 @@ public final class C9970c extends AbstractC8039e {
     }
 
     public static float m6376N(String str) {
-        Matcher matcher = f32401s.matcher(str);
+        Matcher matcher = f32404s.matcher(str);
         if (!matcher.matches()) {
             String valueOf = String.valueOf(str);
-            C1230s.m37881i("TtmlDecoder", valueOf.length() != 0 ? "Invalid value for shear: ".concat(valueOf) : new String("Invalid value for shear: "));
+            C1230s.m37884i("TtmlDecoder", valueOf.length() != 0 ? "Invalid value for shear: ".concat(valueOf) : new String("Invalid value for shear: "));
             return Float.MAX_VALUE;
         }
         try {
-            return Math.min(100.0f, Math.max(-100.0f, Float.parseFloat((String) C1186a.m38185e(matcher.group(1)))));
+            return Math.min(100.0f, Math.max(-100.0f, Float.parseFloat((String) C1186a.m38188e(matcher.group(1)))));
         } catch (NumberFormatException e) {
             String valueOf2 = String.valueOf(str);
-            C1230s.m37880j("TtmlDecoder", valueOf2.length() != 0 ? "Failed to parse shear: ".concat(valueOf2) : new String("Failed to parse shear: "), e);
+            C1230s.m37883j("TtmlDecoder", valueOf2.length() != 0 ? "Failed to parse shear: ".concat(valueOf2) : new String("Failed to parse shear: "), e);
             return Float.MAX_VALUE;
         }
     }
@@ -441,7 +441,7 @@ public final class C9970c extends AbstractC8039e {
 
     public static String[] m6374P(String str) {
         String trim = str.trim();
-        return trim.isEmpty() ? new String[0] : C1216l0.m38020A0(trim, "\\s+");
+        return trim.isEmpty() ? new String[0] : C1216l0.m38023A0(trim, "\\s+");
     }
 
     public static long m6373Q(java.lang.String r13, p311w4.C9970c.C9972b r14) {
@@ -449,19 +449,19 @@ public final class C9970c extends AbstractC8039e {
     }
 
     public static C9973c m6372R(XmlPullParser xmlPullParser) {
-        String a = C1220m0.m37922a(xmlPullParser, "extent");
+        String a = C1220m0.m37925a(xmlPullParser, "extent");
         if (a == null) {
             return null;
         }
-        Matcher matcher = f32403u.matcher(a);
+        Matcher matcher = f32406u.matcher(a);
         if (!matcher.matches()) {
-            C1230s.m37881i("TtmlDecoder", a.length() != 0 ? "Ignoring non-pixel tts extent: ".concat(a) : new String("Ignoring non-pixel tts extent: "));
+            C1230s.m37884i("TtmlDecoder", a.length() != 0 ? "Ignoring non-pixel tts extent: ".concat(a) : new String("Ignoring non-pixel tts extent: "));
             return null;
         }
         try {
-            return new C9973c(Integer.parseInt((String) C1186a.m38185e(matcher.group(1))), Integer.parseInt((String) C1186a.m38185e(matcher.group(2))));
+            return new C9973c(Integer.parseInt((String) C1186a.m38188e(matcher.group(1))), Integer.parseInt((String) C1186a.m38188e(matcher.group(2))));
         } catch (NumberFormatException unused) {
-            C1230s.m37881i("TtmlDecoder", a.length() != 0 ? "Ignoring malformed tts extent: ".concat(a) : new String("Ignoring malformed tts extent: "));
+            C1230s.m37884i("TtmlDecoder", a.length() != 0 ? "Ignoring malformed tts extent: ".concat(a) : new String("Ignoring malformed tts extent: "));
             return null;
         }
     }
@@ -470,7 +470,7 @@ public final class C9970c extends AbstractC8039e {
     public AbstractC8041f mo5207B(byte[] bArr, int i, boolean z) {
         C9972b bVar;
         try {
-            XmlPullParser newPullParser = this.f32407o.newPullParser();
+            XmlPullParser newPullParser = this.f32410o.newPullParser();
             HashMap hashMap = new HashMap();
             HashMap hashMap2 = new HashMap();
             HashMap hashMap3 = new HashMap();
@@ -478,8 +478,8 @@ public final class C9970c extends AbstractC8039e {
             C9973c cVar = null;
             newPullParser.setInput(new ByteArrayInputStream(bArr, 0, i), null);
             ArrayDeque arrayDeque = new ArrayDeque();
-            C9972b bVar2 = f32405w;
-            C9971a aVar = f32406x;
+            C9972b bVar2 = f32408w;
+            C9971a aVar = f32409x;
             C9978h hVar = null;
             int i2 = 0;
             for (int eventType = newPullParser.getEventType(); eventType != 1; eventType = newPullParser.getEventType()) {
@@ -489,7 +489,7 @@ public final class C9970c extends AbstractC8039e {
                     if (eventType == 2) {
                         if ("tt".equals(name)) {
                             bVar2 = m6381I(newPullParser);
-                            aVar = m6383G(newPullParser, f32406x);
+                            aVar = m6383G(newPullParser, f32409x);
                             cVar = m6372R(newPullParser);
                         }
                         C9973c cVar2 = cVar;
@@ -497,7 +497,7 @@ public final class C9970c extends AbstractC8039e {
                         C9971a aVar2 = aVar;
                         if (!m6385E(name)) {
                             String valueOf = String.valueOf(newPullParser.getName());
-                            C1230s.m37884f("TtmlDecoder", valueOf.length() != 0 ? "Ignoring unsupported tag: ".concat(valueOf) : new String("Ignoring unsupported tag: "));
+                            C1230s.m37887f("TtmlDecoder", valueOf.length() != 0 ? "Ignoring unsupported tag: ".concat(valueOf) : new String("Ignoring unsupported tag: "));
                             i2++;
                             bVar2 = bVar3;
                         } else {
@@ -513,7 +513,7 @@ public final class C9970c extends AbstractC8039e {
                                         dVar.m6371a(L);
                                     }
                                 } catch (C8043h e) {
-                                    C1230s.m37880j("TtmlDecoder", "Suppressing parser error", e);
+                                    C1230s.m37883j("TtmlDecoder", "Suppressing parser error", e);
                                     i2++;
                                 }
                             }
@@ -522,10 +522,10 @@ public final class C9970c extends AbstractC8039e {
                         cVar = cVar2;
                         aVar = aVar2;
                     } else if (eventType == 4) {
-                        ((C9974d) C1186a.m38185e(dVar)).m6371a(C9974d.m6368d(newPullParser.getText()));
+                        ((C9974d) C1186a.m38188e(dVar)).m6371a(C9974d.m6368d(newPullParser.getText()));
                     } else if (eventType == 3) {
                         if (newPullParser.getName().equals("tt")) {
-                            hVar = new C9978h((C9974d) C1186a.m38185e((C9974d) arrayDeque.peek()), hashMap, hashMap2, hashMap3);
+                            hVar = new C9978h((C9974d) C1186a.m38188e((C9974d) arrayDeque.peek()), hashMap, hashMap2, hashMap3);
                         }
                         arrayDeque.pop();
                     }

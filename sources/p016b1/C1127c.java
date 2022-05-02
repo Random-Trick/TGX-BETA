@@ -14,15 +14,15 @@ public class C1127c extends Writer {
 
     @Override
     public void close() {
-        m38334m();
+        m38337m();
     }
 
     @Override
     public void flush() {
-        m38334m();
+        m38337m();
     }
 
-    public final void m38334m() {
+    public final void m38337m() {
         if (this.f4331b.length() > 0) {
             android.util.Log.d(this.f4330a, this.f4331b.toString());
             StringBuilder sb2 = this.f4331b;
@@ -35,7 +35,7 @@ public class C1127c extends Writer {
         for (int i3 = 0; i3 < i2; i3++) {
             char c = cArr[i + i3];
             if (c == '\n') {
-                m38334m();
+                m38337m();
             } else {
                 this.f4331b.append(c);
             }

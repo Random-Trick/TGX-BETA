@@ -37,22 +37,22 @@ public final class C2057b {
         }
     }
 
-    public static float m35735a(ValueAnimator valueAnimator) {
+    public static float m35738a(ValueAnimator valueAnimator) {
         if (Build.VERSION.SDK_INT >= 12) {
             return valueAnimator.getAnimatedFraction();
         }
         return ((Float) valueAnimator.getAnimatedValue()).floatValue();
     }
 
-    public static ValueAnimator m35734b() {
+    public static ValueAnimator m35737b() {
         return ValueAnimator.ofFloat(0.0f, 1.0f);
     }
 
-    public static void m35733c(View view, Animator animator) {
-        m35732d(view, animator, false);
+    public static void m35736c(View view, Animator animator) {
+        m35735d(view, animator, false);
     }
 
-    public static void m35732d(View view, final Animator animator, boolean z) {
+    public static void m35735d(View view, final Animator animator, boolean z) {
         if (view == null) {
             throw new IllegalArgumentException("view must be not null");
         } else if (animator == null) {

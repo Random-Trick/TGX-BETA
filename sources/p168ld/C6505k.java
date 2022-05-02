@@ -9,7 +9,7 @@ public class C6505k extends C6503j {
     }
 
     @Override
-    public String mo20264u() {
+    public String mo20265u() {
         return this.f20265p;
     }
 }

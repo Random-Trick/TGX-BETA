@@ -11,15 +11,15 @@ import p108hb.C5064d;
 import p108hb.C5069h;
 
 public class RunnableC7519b extends View implements Runnable {
-    public boolean f24050a;
+    public boolean f24053a;
 
     public RunnableC7519b(Context context) {
         super(context);
     }
 
     private void setIsLooping(boolean z) {
-        if (this.f24050a != z) {
-            this.f24050a = z;
+        if (this.f24053a != z) {
+            this.f24053a = z;
             if (z) {
                 postDelayed(this, 18L);
             } else {
@@ -36,15 +36,15 @@ public class RunnableC7519b extends View implements Runnable {
     public void onDraw(Canvas canvas) {
         long elapsedRealtime = SystemClock.elapsedRealtime() % 1200;
         float interpolation = elapsedRealtime <= 300 ? 0.0f : C2057b.f7280b.getInterpolation(((float) (elapsedRealtime - 300)) / 900.0f);
-        int i = C1357a0.m37541i(22.0f);
+        int i = C1357a0.m37544i(22.0f);
         int measuredHeight = getMeasuredHeight() / 2;
         float f = (interpolation * 8.0f) - 2.0f;
         for (int i2 = 0; i2 < 3; i2++) {
-            int b = C5064d.m24130b((int) (((0.6f * (1.0f - C5069h.m24089d(Math.abs((f - i2) - 1.0f) / 3.0f))) + 0.4f) * 255.0f), 16777215);
+            int b = C5064d.m24131b((int) (((0.6f * (1.0f - C5069h.m24090d(Math.abs((f - i2) - 1.0f) / 3.0f))) + 0.4f) * 255.0f), 16777215);
             float f2 = measuredHeight;
-            C1359b.m37506m(canvas, i, f2, b, true);
-            C1359b.m37506m(canvas, getMeasuredWidth() - i, f2, b, false);
-            i += C1357a0.m37541i(16.0f);
+            C1359b.m37509m(canvas, i, f2, b, true);
+            C1359b.m37509m(canvas, getMeasuredWidth() - i, f2, b, false);
+            i += C1357a0.m37544i(16.0f);
         }
     }
 
@@ -57,7 +57,7 @@ public class RunnableC7519b extends View implements Runnable {
     @Override
     public void run() {
         invalidate();
-        if (this.f24050a) {
+        if (this.f24053a) {
             postDelayed(this, 18L);
         }
     }

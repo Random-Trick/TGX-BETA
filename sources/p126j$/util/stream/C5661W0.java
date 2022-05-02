@@ -11,29 +11,29 @@ public final class C5661W0 extends AbstractC5673Z0 implements AbstractC5602J0 {
     }
 
     @Override
-    public void mo22176a(Consumer consumer) {
-        AbstractC5572D0.m22404s(this, consumer);
+    public void mo22177a(Consumer consumer) {
+        AbstractC5572D0.m22405s(this, consumer);
     }
 
-    public void mo22154n(Double[] dArr, int i) {
-        AbstractC5572D0.m22408p(this, dArr, i);
+    public void mo22155n(Double[] dArr, int i) {
+        AbstractC5572D0.m22409p(this, dArr, i);
     }
 
-    public double[] mo22347g(int i) {
+    public double[] mo22348g(int i) {
         return new double[i];
     }
 
-    public AbstractC5602J0 mo22151q(long j, long j2, AbstractC5531m mVar) {
-        return AbstractC5572D0.m22401v(this, j, j2);
+    public AbstractC5602J0 mo22152q(long j, long j2, AbstractC5531m mVar) {
+        return AbstractC5572D0.m22402v(this, j, j2);
     }
 
     @Override
-    public AbstractC5466E mo42629spliterator() {
+    public AbstractC5466E mo42632spliterator() {
         return new C5743n1(this);
     }
 
     @Override
-    public AbstractC5468G mo42629spliterator() {
+    public AbstractC5468G mo42632spliterator() {
         return new C5743n1(this);
     }
 }

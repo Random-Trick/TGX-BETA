@@ -4,7 +4,7 @@ import android.text.Spannable;
 import android.text.Spanned;
 
 public final class C4181c {
-    public static void m28617a(Spanned spanned, int i, int i2, Class<?> cls, Spannable spannable, int i3) {
+    public static void m28619a(Spanned spanned, int i, int i2, Class<?> cls, Spannable spannable, int i3) {
         if (cls == null) {
             cls = Object.class;
         }

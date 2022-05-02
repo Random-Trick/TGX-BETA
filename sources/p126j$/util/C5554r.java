@@ -15,7 +15,7 @@ public final class C5554r implements PrimitiveIterator.OfInt {
         this.f18090a = sVar;
     }
 
-    public static PrimitiveIterator.OfInt m22460a(AbstractC5555s sVar) {
+    public static PrimitiveIterator.OfInt m22461a(AbstractC5555s sVar) {
         return new C5554r(sVar);
     }
 
@@ -23,7 +23,7 @@ public final class C5554r implements PrimitiveIterator.OfInt {
     public void forEachRemaining(IntConsumer intConsumer) {
         C5470I i = (C5470I) this.f18090a;
         Objects.requireNonNull(i);
-        i.m22603a((AbstractC5530l) intConsumer);
+        i.m22604a((AbstractC5530l) intConsumer);
     }
 
     @Override
@@ -33,7 +33,7 @@ public final class C5554r implements PrimitiveIterator.OfInt {
 
     @Override
     public void forEachRemaining2(IntConsumer intConsumer) {
-        ((C5470I) this.f18090a).m22603a(C5529k.m22484a(intConsumer));
+        ((C5470I) this.f18090a).m22604a(C5529k.m22485a(intConsumer));
     }
 
     @Override

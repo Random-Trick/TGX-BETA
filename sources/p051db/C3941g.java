@@ -29,21 +29,21 @@ public final class C3941g {
         this.f13272a = new C3940f(0, new C3942a(jVar), C2057b.f7284f, 210L);
     }
 
-    public float m29572a() {
-        return this.f13272a.m29584g();
+    public float m29574a() {
+        return this.f13272a.m29586g();
     }
 
-    public void m29571b(boolean z, boolean z2) {
+    public void m29573b(boolean z, boolean z2) {
         if (z2) {
-            if (!z || this.f13272a.m29584g() != 0.0f) {
-                this.f13272a.m29577n(C2057b.f7280b);
-                this.f13272a.m29579l(100L);
+            if (!z || this.f13272a.m29586g() != 0.0f) {
+                this.f13272a.m29579n(C2057b.f7280b);
+                this.f13272a.m29581l(100L);
             } else {
-                this.f13272a.m29577n(C2057b.f7284f);
-                this.f13272a.m29579l(210L);
+                this.f13272a.m29579n(C2057b.f7284f);
+                this.f13272a.m29581l(210L);
             }
         }
-        this.f13272a.m29575p(z, z2);
+        this.f13272a.m29577p(z, z2);
     }
 
     public C3941g(C3950k.AbstractC3952b bVar) {

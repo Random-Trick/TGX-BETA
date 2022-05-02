@@ -8,8 +8,8 @@ public final class C3590c<T> implements AbstractC3589b<T> {
         this.f12232a = t;
     }
 
-    public static <T> AbstractC3589b<T> m29918a(T t) {
-        return new C3590c(C3591d.m29915c(t, "instance cannot be null"));
+    public static <T> AbstractC3589b<T> m29920a(T t) {
+        return new C3590c(C3591d.m29917c(t, "instance cannot be null"));
     }
 
     @Override

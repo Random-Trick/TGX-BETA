@@ -4,7 +4,7 @@ import java.nio.ShortBuffer;
 
 public class C3934e implements AbstractC3930a {
     @Override
-    public void mo29594a(ShortBuffer shortBuffer, ShortBuffer shortBuffer2, int i) {
+    public void mo29596a(ShortBuffer shortBuffer, ShortBuffer shortBuffer2, int i) {
         if (shortBuffer.remaining() <= shortBuffer2.remaining()) {
             shortBuffer2.put(shortBuffer);
             return;

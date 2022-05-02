@@ -1,7 +1,7 @@
 package p103h6;
 
 public final class C4999g {
-    public static Boolean m24339a(byte b) {
+    public static Boolean m24340a(byte b) {
         if (b == 0) {
             return Boolean.FALSE;
         }
@@ -11,7 +11,7 @@ public final class C4999g {
         return Boolean.TRUE;
     }
 
-    public static byte m24338b(Boolean bool) {
+    public static byte m24339b(Boolean bool) {
         if (bool != null) {
             return !bool.booleanValue() ? (byte) 0 : (byte) 1;
         }

@@ -27,33 +27,33 @@ public class C6882g0 extends C9310u0 {
 
     public C6882g0(Context context) {
         super(context);
-        int i = C1357a0.m37541i(49.0f);
+        int i = C1357a0.m37544i(49.0f);
         this.f21642U = i;
         this.f21643V = (int) (i * 0.5f);
-        int i2 = C1357a0.m37541i(12.0f);
+        int i2 = C1357a0.m37544i(12.0f);
         this.f21644W = i2;
         this.f21645a0 = (int) (i2 * 0.5f);
         Paint paint = new Paint(5);
         this.f21646b0 = paint;
         paint.setStyle(Paint.Style.STROKE);
         paint.setColor(-1);
-        paint.setStrokeWidth(C1357a0.m37541i(2.0f));
+        paint.setStrokeWidth(C1357a0.m37544i(2.0f));
         setLayoutParams(new LinearLayout.LayoutParams(i, -1));
     }
 
-    public void m18687k(float f, float f2, ValueAnimator valueAnimator) {
-        setFactor(f + (f2 * C2057b.m35735a(valueAnimator)));
+    public void m18688k(float f, float f2, ValueAnimator valueAnimator) {
+        setFactor(f + (f2 * C2057b.m35738a(valueAnimator)));
     }
 
-    public void m18686l(float f, ValueAnimator valueAnimator) {
-        setFactor(f - (C2057b.m35735a(valueAnimator) * f));
+    public void m18687l(float f, ValueAnimator valueAnimator) {
+        setFactor(f - (C2057b.m35738a(valueAnimator) * f));
     }
 
     public float getFactor() {
         return this.f21652h0;
     }
 
-    public void m18685m(boolean z, boolean z2) {
+    public void m18686m(boolean z, boolean z2) {
         if (this.f21650f0 != z) {
             this.f21650f0 = z;
             float f = 1.0f;
@@ -65,20 +65,20 @@ public class C6882g0 extends C9310u0 {
                 return;
             }
             final float factor = getFactor();
-            ValueAnimator b = C2057b.m35734b();
+            ValueAnimator b = C2057b.m35737b();
             if (z) {
                 final float f2 = 1.0f - factor;
                 b.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                     @Override
                     public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                        C6882g0.this.m18687k(factor, f2, valueAnimator);
+                        C6882g0.this.m18688k(factor, f2, valueAnimator);
                     }
                 });
             } else {
                 b.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                     @Override
                     public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                        C6882g0.this.m18686l(factor, valueAnimator);
+                        C6882g0.this.m18687l(factor, valueAnimator);
                     }
                 });
             }
@@ -101,7 +101,7 @@ public class C6882g0 extends C9310u0 {
         }
         if (this.f21652h0 > 0.0f && this.f21648d0 > 0) {
             canvas.save();
-            canvas.rotate((C4403w.m27984G2() ? -90.0f : 90.0f) * (1.0f - this.f21652h0), this.f21643V, this.f21649e0);
+            canvas.rotate((C4403w.m27986G2() ? -90.0f : 90.0f) * (1.0f - this.f21652h0), this.f21643V, this.f21649e0);
             int i2 = (int) (this.f21644W * 0.5f * this.f21652h0);
             int i3 = this.f21643V;
             int i4 = this.f21649e0;
@@ -116,8 +116,8 @@ public class C6882g0 extends C9310u0 {
     @Override
     public void onMeasure(int i, int i2) {
         super.onMeasure(i, i2);
-        this.f21648d0 = getMeasuredHeight() - C1357a0.m37541i(1.0f);
-        this.f21649e0 = C1357a0.m37541i(1.0f) + (this.f21648d0 / 2);
+        this.f21648d0 = getMeasuredHeight() - C1357a0.m37544i(1.0f);
+        this.f21649e0 = C1357a0.m37544i(1.0f) + (this.f21648d0 / 2);
     }
 
     @Override

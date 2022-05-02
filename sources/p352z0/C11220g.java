@@ -16,70 +16,70 @@ import p016b1.AbstractC1125a;
 public class C11220g {
 
     public static class ThreadFactoryC11221a implements ThreadFactory {
-        public String f35929a;
-        public int f35930b;
+        public String f35932a;
+        public int f35933b;
 
         public static class C11222a extends Thread {
-            public final int f35931a;
+            public final int f35934a;
 
             public C11222a(Runnable runnable, String str, int i) {
                 super(runnable, str);
-                this.f35931a = i;
+                this.f35934a = i;
             }
 
             @Override
             public void run() {
-                Process.setThreadPriority(this.f35931a);
+                Process.setThreadPriority(this.f35934a);
                 super.run();
             }
         }
 
         public ThreadFactoryC11221a(String str, int i) {
-            this.f35929a = str;
-            this.f35930b = i;
+            this.f35932a = str;
+            this.f35933b = i;
         }
 
         @Override
         public Thread newThread(Runnable runnable) {
-            return new C11222a(runnable, this.f35929a, this.f35930b);
+            return new C11222a(runnable, this.f35932a, this.f35933b);
         }
     }
 
     public static class RunnableC11223b<T> implements Runnable {
-        public Callable<T> f35932a;
-        public AbstractC1125a<T> f35933b;
-        public Handler f35934c;
+        public Callable<T> f35935a;
+        public AbstractC1125a<T> f35936b;
+        public Handler f35937c;
 
         public class RunnableC11224a implements Runnable {
-            public final AbstractC1125a f35935a;
-            public final Object f35936b;
+            public final AbstractC1125a f35938a;
+            public final Object f35939b;
 
             public RunnableC11224a(AbstractC1125a aVar, Object obj) {
-                this.f35935a = aVar;
-                this.f35936b = obj;
+                this.f35938a = aVar;
+                this.f35939b = obj;
             }
 
             @Override
             public void run() {
-                this.f35935a.mo1208a(this.f35936b);
+                this.f35938a.mo1208a(this.f35939b);
             }
         }
 
         public RunnableC11223b(Handler handler, Callable<T> callable, AbstractC1125a<T> aVar) {
-            this.f35932a = callable;
-            this.f35933b = aVar;
-            this.f35934c = handler;
+            this.f35935a = callable;
+            this.f35936b = aVar;
+            this.f35937c = handler;
         }
 
         @Override
         public void run() {
             T t;
             try {
-                t = this.f35932a.call();
+                t = this.f35935a.call();
             } catch (Exception unused) {
                 t = null;
             }
-            this.f35934c.post(new RunnableC11224a(this.f35933b, t));
+            this.f35937c.post(new RunnableC11224a(this.f35936b, t));
         }
     }
 

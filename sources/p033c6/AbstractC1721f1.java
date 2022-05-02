@@ -10,14 +10,14 @@ import javax.annotation.CheckForNull;
 public abstract class AbstractC1721f1<E> extends AbstractC2006z0<E> implements List<E>, RandomAccess {
     public static final AbstractC1951v1<Object> f6262b = new C1691d1(C1881q1.f6818N, 0);
 
-    public static <E> AbstractC1721f1<E> m36059u(Object[] objArr, int i) {
+    public static <E> AbstractC1721f1<E> m36062u(Object[] objArr, int i) {
         if (i == 0) {
             return (AbstractC1721f1<E>) C1881q1.f6818N;
         }
         return new C1881q1(objArr, i);
     }
 
-    public static <E> AbstractC1721f1<E> m36058v(E e, E e2) {
+    public static <E> AbstractC1721f1<E> m36061v(E e, E e2) {
         Object[] objArr = {e, e2};
         for (int i = 0; i < 2; i++) {
             if (objArr[i] == null) {
@@ -27,7 +27,7 @@ public abstract class AbstractC1721f1<E> extends AbstractC2006z0<E> implements L
                 throw new NullPointerException(sb2.toString());
             }
         }
-        return m36059u(objArr, 2);
+        return m36062u(objArr, 2);
     }
 
     @Override
@@ -58,7 +58,7 @@ public abstract class AbstractC1721f1<E> extends AbstractC2006z0<E> implements L
             if (size == list.size()) {
                 if (list instanceof RandomAccess) {
                     for (int i = 0; i < size; i++) {
-                        if (C1837n.m35975a(get(i), list.get(i))) {
+                        if (C1837n.m35978a(get(i), list.get(i))) {
                         }
                     }
                     return true;
@@ -68,7 +68,7 @@ public abstract class AbstractC1721f1<E> extends AbstractC2006z0<E> implements L
                 while (true) {
                     if (it.hasNext()) {
                         if (it2.hasNext()) {
-                            if (!C1837n.m35975a(it.next(), it2.next())) {
+                            if (!C1837n.m35978a(it.next(), it2.next())) {
                                 break;
                             }
                         } else {
@@ -84,7 +84,7 @@ public abstract class AbstractC1721f1<E> extends AbstractC2006z0<E> implements L
     }
 
     @Override
-    public int mo35829h(Object[] objArr, int i) {
+    public int mo35832h(Object[] objArr, int i) {
         int size = size();
         for (int i2 = 0; i2 < size; i2++) {
             objArr[i + i2] = get(i2);
@@ -140,7 +140,7 @@ public abstract class AbstractC1721f1<E> extends AbstractC2006z0<E> implements L
     }
 
     @Override
-    public final AbstractC1937u1<E> mo35826r() {
+    public final AbstractC1937u1<E> mo35829r() {
         return listIterator(0);
     }
 
@@ -157,7 +157,7 @@ public abstract class AbstractC1721f1<E> extends AbstractC2006z0<E> implements L
     }
 
     public AbstractC1721f1<E> subList(int i, int i2) {
-        C1893r.m35933c(i, i2, size());
+        C1893r.m35936c(i, i2, size());
         int i3 = i2 - i;
         if (i3 == size()) {
             return this;
@@ -169,7 +169,7 @@ public abstract class AbstractC1721f1<E> extends AbstractC2006z0<E> implements L
     }
 
     public final AbstractC1951v1<E> listIterator(int i) {
-        C1893r.m35934b(i, size(), "index");
+        C1893r.m35937b(i, size(), "index");
         return isEmpty() ? (AbstractC1951v1<E>) f6262b : new C1691d1(this, i);
     }
 }

@@ -3,8 +3,8 @@ package p317wa;
 import qa.C8294g;
 
 public final class C10022g extends C10019e implements AbstractC10018d<Integer> {
-    public static final C10023a f32631N = new C10023a(null);
-    public static final C10022g f32632O = new C10022g(1, 0);
+    public static final C10023a f32634N = new C10023a(null);
+    public static final C10022g f32635O = new C10022g(1, 0);
 
     public static final class C10023a {
         public C10023a() {
@@ -15,7 +15,7 @@ public final class C10022g extends C10019e implements AbstractC10018d<Integer> {
         }
 
         public final C10022g m6202a() {
-            return C10022g.f32632O;
+            return C10022g.f32635O;
         }
     }
 

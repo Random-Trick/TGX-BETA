@@ -9,7 +9,7 @@ public final class C6425i {
         this.f20107a = z;
     }
 
-    public void m20425a(C4530m[] mVarArr) {
+    public void m20426a(C4530m[] mVarArr) {
         if (this.f20107a && mVarArr != null && mVarArr.length >= 3) {
             C4530m mVar = mVarArr[0];
             mVarArr[0] = mVarArr[2];

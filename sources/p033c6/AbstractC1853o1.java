@@ -5,9 +5,9 @@ import java.util.Map;
 import java.util.Set;
 
 public interface AbstractC1853o1<K, V> {
-    Map<K, Collection<V>> mo35969a();
+    Map<K, Collection<V>> mo35972a();
 
-    boolean mo35968b(K k, V v);
+    boolean mo35971b(K k, V v);
 
-    Set<K> mo35967d();
+    Set<K> mo35970d();
 }

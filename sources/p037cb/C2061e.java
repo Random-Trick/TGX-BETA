@@ -33,12 +33,12 @@ public final class C2061e {
     }
 
     public static class C2063b {
-        public static float m35726a(float f, float f2, float f3) {
+        public static float m35729a(float f, float f2, float f3) {
             return Math.max(f, Math.min(f2, f3));
         }
     }
 
-    public static android.graphics.drawable.Drawable m35727a(int r15, int r16, int r17, boolean r18) {
-        throw new UnsupportedOperationException("Method not decompiled: p037cb.C2061e.m35727a(int, int, int, boolean):android.graphics.drawable.Drawable");
+    public static android.graphics.drawable.Drawable m35730a(int r15, int r16, int r17, boolean r18) {
+        throw new UnsupportedOperationException("Method not decompiled: p037cb.C2061e.m35730a(int, int, int, boolean):android.graphics.drawable.Drawable");
     }
 }

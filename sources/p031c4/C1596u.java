@@ -17,7 +17,7 @@ public final class C1596u {
         bArr[2] = 1;
     }
 
-    public void m36326a(byte[] bArr, int i, int i2) {
+    public void m36329a(byte[] bArr, int i, int i2) {
         if (this.f5845b) {
             int i3 = i2 - i;
             byte[] bArr2 = this.f5847d;
@@ -31,7 +31,7 @@ public final class C1596u {
         }
     }
 
-    public boolean m36325b(int i) {
+    public boolean m36328b(int i) {
         if (!this.f5845b) {
             return false;
         }
@@ -41,18 +41,18 @@ public final class C1596u {
         return true;
     }
 
-    public boolean m36324c() {
+    public boolean m36327c() {
         return this.f5846c;
     }
 
-    public void m36323d() {
+    public void m36326d() {
         this.f5845b = false;
         this.f5846c = false;
     }
 
-    public void m36322e(int i) {
+    public void m36325e(int i) {
         boolean z = true;
-        C1186a.m38184f(!this.f5845b);
+        C1186a.m38187f(!this.f5845b);
         if (i != this.f5844a) {
             z = false;
         }

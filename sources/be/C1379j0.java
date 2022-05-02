@@ -59,7 +59,7 @@ public class C1379j0 {
         void mo1641h(int i);
     }
 
-    public static Handler m37374A() {
+    public static Handler m37377A() {
         if (f5010d == null) {
             synchronized (C1379j0.class) {
                 if (f5010d == null) {
@@ -70,54 +70,54 @@ public class C1379j0 {
         return f5010d;
     }
 
-    public static void m37373A0(Intent intent) {
-        AbstractView$OnTouchListenerC7889a E = m37366E();
+    public static void m37376A0(Intent intent) {
+        AbstractView$OnTouchListenerC7889a E = m37369E();
         if (E != null) {
             E.startActivity(intent);
             return;
         }
         intent.addFlags(268435456);
-        m37315n().startActivity(intent);
+        m37318n().startActivity(intent);
     }
 
-    public static Resources m37372B() {
+    public static Resources m37375B() {
         return f5007a.getResources();
     }
 
-    public static void m37371B0(Intent intent, int i) {
-        AbstractView$OnTouchListenerC7889a E = m37366E();
+    public static void m37374B0(Intent intent, int i) {
+        AbstractView$OnTouchListenerC7889a E = m37369E();
         if (E != null) {
             E.startActivityForResult(intent, i);
         }
     }
 
-    public static long m37370C() {
+    public static long m37373C() {
         return System.currentTimeMillis() - f5014h;
     }
 
-    public static void m37369C0() {
-        m37367D0(new Intent(m37315n(), NetworkListenerService.class), false, false);
+    public static void m37372C0() {
+        m37370D0(new Intent(m37318n(), NetworkListenerService.class), false, false);
     }
 
-    public static int m37368D() {
+    public static int m37371D() {
         AbstractView$OnTouchListenerC7889a E;
-        if (Build.VERSION.SDK_INT < 21 || (E = m37366E()) == null || E.getWindow() == null) {
+        if (Build.VERSION.SDK_INT < 21 || (E = m37369E()) == null || E.getWindow() == null) {
             return 0;
         }
         return E.getWindow().getStatusBarColor();
     }
 
-    public static boolean m37367D0(final Intent intent, boolean z, boolean z2) {
+    public static boolean m37370D0(final Intent intent, boolean z, boolean z2) {
         if (z) {
             try {
                 int i = Build.VERSION.SDK_INT;
                 if (i >= 28) {
-                    final AbstractView$OnTouchListenerC7889a E = m37366E();
+                    final AbstractView$OnTouchListenerC7889a E = m37369E();
                     if (E != null) {
                         E.m14575J2(new String[]{"android.permission.FOREGROUND_SERVICE"}, new AbstractC5096a() {
                             @Override
                             public final void mo4252o1(int i2, boolean z3) {
-                                C1379j0.m37347U(AbstractView$OnTouchListenerC7889a.this, intent, i2, z3);
+                                C1379j0.m37350U(AbstractView$OnTouchListenerC7889a.this, intent, i2, z3);
                             }
                         });
                         return true;
@@ -125,7 +125,7 @@ public class C1379j0 {
                     Log.m14724e("Cannot start foreground service, because activity not found.", new Object[0]);
                 }
                 if (i >= 26) {
-                    m37309q().startForegroundService(intent);
+                    m37312q().startForegroundService(intent);
                     return true;
                 }
             } catch (Throwable th) {
@@ -134,23 +134,23 @@ public class C1379j0 {
             }
         }
         if (Build.VERSION.SDK_INT >= 28 && z2) {
-            final AbstractView$OnTouchListenerC7889a E2 = m37366E();
+            final AbstractView$OnTouchListenerC7889a E2 = m37369E();
             if (E2 != null) {
                 E2.m14575J2(new String[]{"android.permission.FOREGROUND_SERVICE"}, new AbstractC5096a() {
                     @Override
                     public final void mo4252o1(int i2, boolean z3) {
-                        C1379j0.m37346V(AbstractView$OnTouchListenerC7889a.this, intent, i2, z3);
+                        C1379j0.m37349V(AbstractView$OnTouchListenerC7889a.this, intent, i2, z3);
                     }
                 });
                 return true;
             }
             Log.m14724e("Cannot request foreground service permission, because activity not found.", new Object[0]);
         }
-        m37309q().startService(intent);
+        m37312q().startService(intent);
         return true;
     }
 
-    public static AbstractView$OnTouchListenerC7889a m37366E() {
+    public static AbstractView$OnTouchListenerC7889a m37369E() {
         WeakReference<AbstractView$OnTouchListenerC7889a> weakReference = f5008b;
         if (weakReference != null) {
             return weakReference.get();
@@ -158,53 +158,53 @@ public class C1379j0 {
         return null;
     }
 
-    public static void m37365E0(AbstractC5155y0 y0Var) {
-        m37313o().m37270t(y0Var);
+    public static void m37368E0(AbstractC5155y0 y0Var) {
+        m37316o().m37273t(y0Var);
     }
 
-    public static int m37364F() {
+    public static int m37367F() {
         return f5011e;
     }
 
-    public static void m37363F0(AbstractC5155y0 y0Var, long j) {
-        m37313o().m37269u(y0Var, j);
+    public static void m37366F0(AbstractC5155y0 y0Var, long j) {
+        m37316o().m37272u(y0Var, j);
     }
 
-    public static Window m37362G() {
-        AbstractView$OnTouchListenerC7889a E = m37366E();
+    public static Window m37365G() {
+        AbstractView$OnTouchListenerC7889a E = m37369E();
         if (E != null) {
             return E.getWindow();
         }
         return null;
     }
 
-    public static boolean m37361G0(long j) {
-        return f5011e == 0 || m37370C() <= j;
+    public static boolean m37364G0(long j) {
+        return f5011e == 0 || m37373C() <= j;
     }
 
-    public static void m37360H(View view, boolean z) {
-        C2065g.m35720b(view, z, C4868i.m24726c2().m24618p6());
+    public static void m37363H(View view, boolean z) {
+        C2065g.m35723b(view, z, C4868i.m24727c2().m24619p6());
     }
 
-    public static void m37359I() {
-        m37313o().m37286d();
+    public static void m37362I() {
+        m37316o().m37289d();
     }
 
-    public static boolean m37358J() {
+    public static boolean m37361J() {
         return f5013g != 0;
     }
 
-    public static boolean m37357K() {
+    public static boolean m37360K() {
         return Looper.myLooper() == Looper.getMainLooper();
     }
 
-    public static void m37356L(Context context) {
+    public static void m37359L(Context context) {
         if (f5007a == null && context != null) {
             synchronized (C1379j0.class) {
                 if (f5007a == null) {
                     f5007a = context;
-                    C4858a.m24993b();
-                    if (f5013g != 1 && C2059c.m35729c(context)) {
+                    C4858a.m24994b();
+                    if (f5013g != 1 && C2059c.m35732c(context)) {
                         f5013g = 1;
                         C10536ab.m4718a3();
                     }
@@ -213,33 +213,33 @@ public class C1379j0 {
         }
     }
 
-    public static void m37355M(View view) {
-        m37313o().m37285e(view);
+    public static void m37358M(View view) {
+        m37316o().m37288e(view);
     }
 
-    public static boolean m37354N() {
+    public static boolean m37357N() {
         return f5007a.getResources().getConfiguration().orientation == 2;
     }
 
-    public static boolean m37353O() {
-        C9270q1 x = m37295x();
-        return x != null && x.m9742S();
+    public static boolean m37356O() {
+        C9270q1 x = m37298x();
+        return x != null && x.m9741S();
     }
 
-    public static boolean m37352P() {
-        AbstractView$OnTouchListenerC7889a E = m37366E();
-        return E != null && E.m14424w1();
+    public static boolean m37355P() {
+        AbstractView$OnTouchListenerC7889a E = m37369E();
+        return E != null && E.m14423w1();
     }
 
-    public static boolean m37351Q() {
+    public static boolean m37354Q() {
         return f5007a.getResources().getConfiguration().orientation == 1;
     }
 
-    public static boolean m37350R() {
+    public static boolean m37353R() {
         return f5011e == 0;
     }
 
-    public static boolean m37349S() {
+    public static boolean m37352S() {
         if (f5012f == null) {
             synchronized (C1379j0.class) {
                 if (f5012f == null) {
@@ -250,13 +250,13 @@ public class C1379j0 {
         return f5012f.booleanValue();
     }
 
-    public static void m37348T(String str, AbstractView$OnTouchListenerC7889a.AbstractC7901l lVar, long j) {
-        if (m37366E() != null) {
-            m37366E().m14603D3(str, lVar, j);
+    public static void m37351T(String str, AbstractView$OnTouchListenerC7889a.AbstractC7901l lVar, long j) {
+        if (m37369E() != null) {
+            m37369E().m14603D3(str, lVar, j);
         }
     }
 
-    public static void m37347U(AbstractView$OnTouchListenerC7889a aVar, Intent intent, int i, boolean z) {
+    public static void m37350U(AbstractView$OnTouchListenerC7889a aVar, Intent intent, int i, boolean z) {
         try {
             aVar.startForegroundService(intent);
         } catch (Throwable th) {
@@ -264,7 +264,7 @@ public class C1379j0 {
         }
     }
 
-    public static void m37346V(AbstractView$OnTouchListenerC7889a aVar, Intent intent, int i, boolean z) {
+    public static void m37349V(AbstractView$OnTouchListenerC7889a aVar, Intent intent, int i, boolean z) {
         try {
             aVar.startService(intent);
         } catch (Throwable th) {
@@ -272,11 +272,11 @@ public class C1379j0 {
         }
     }
 
-    public static void m37345W(AbstractC9323v4<?> v4Var) {
-        m37313o().m37284f(v4Var);
+    public static void m37348W(AbstractC9323v4<?> v4Var) {
+        m37316o().m37287f(v4Var);
     }
 
-    public static boolean m37344X() {
+    public static boolean m37347X() {
         Context context = f5007a;
         if (context == null) {
             return false;
@@ -290,124 +290,124 @@ public class C1379j0 {
     }
 
     @Deprecated
-    public static void m37343Y(Context context) {
-        m37313o().m37283g(context, 160L, false, false);
+    public static void m37346Y(Context context) {
+        m37316o().m37286g(context, 160L, false, false);
     }
 
-    public static void m37342Z(AbstractC10664f9 f9Var, String str, File file, String str2, int i) {
-        m37313o().m37282h(f9Var, str, file, str2, i);
+    public static void m37345Z(AbstractC10664f9 f9Var, String str, File file, String str2, int i) {
+        m37316o().m37285h(f9Var, str, file, str2, i);
     }
 
-    public static void m37340a0(boolean z) {
-        m37313o().m37281i(160L, z);
+    public static void m37343a0(boolean z) {
+        m37316o().m37284i(160L, z);
     }
 
-    public static void m37338b0(String str) {
-        m37313o().m37279k(str);
+    public static void m37341b0(String str) {
+        m37316o().m37282k(str);
     }
 
-    public static void m37336c0(String str) {
-        m37313o().m37280j(str);
+    public static void m37339c0(String str) {
+        m37316o().m37283j(str);
     }
 
-    public static void m37335d(AbstractC1380a aVar) {
+    public static void m37338d(AbstractC1380a aVar) {
         f5015i.add(aVar);
     }
 
-    public static void m37334d0(Runnable runnable) {
-        m37313o().post(runnable);
+    public static void m37337d0(Runnable runnable) {
+        m37316o().post(runnable);
     }
 
-    public static void m37333e(Runnable runnable) {
-        m37313o().removeCallbacks(runnable);
+    public static void m37336e(Runnable runnable) {
+        m37316o().removeCallbacks(runnable);
     }
 
-    public static void m37332e0(Runnable runnable, long j) {
-        m37313o().postDelayed(runnable, j);
+    public static void m37335e0(Runnable runnable, long j) {
+        m37316o().postDelayed(runnable, j);
     }
 
-    public static void m37331f() {
-        m37313o().m37289a();
+    public static void m37334f() {
+        m37316o().m37292a();
     }
 
-    public static void m37330f0(Runnable runnable) {
-        m37313o().removeCallbacks(runnable);
+    public static void m37333f0(Runnable runnable) {
+        m37316o().removeCallbacks(runnable);
     }
 
-    public static void m37329g(org.thunderdog.challegram.AbstractView$OnTouchListenerC7889a r5) {
-        throw new UnsupportedOperationException("Method not decompiled: be.C1379j0.m37329g(org.thunderdog.challegram.a):void");
+    public static void m37332g(org.thunderdog.challegram.AbstractView$OnTouchListenerC7889a r5) {
+        throw new UnsupportedOperationException("Method not decompiled: be.C1379j0.m37332g(org.thunderdog.challegram.a):void");
     }
 
-    public static void m37328g0(AbstractC1380a aVar) {
+    public static void m37331g0(AbstractC1380a aVar) {
         f5015i.remove(aVar);
     }
 
-    public static void m37327h(AbstractView$OnTouchListenerC7889a aVar) {
-        if (m37366E() == aVar) {
+    public static void m37330h(AbstractView$OnTouchListenerC7889a aVar) {
+        if (m37369E() == aVar) {
             f5008b = null;
         }
     }
 
-    public static void m37326h0(AbstractView$OnTouchListenerC7889a aVar) {
+    public static void m37329h0(AbstractView$OnTouchListenerC7889a aVar) {
         f5008b = new WeakReference<>(aVar);
         if (f5007a == null) {
-            m37356L(aVar.getApplicationContext());
+            m37359L(aVar.getApplicationContext());
             if (f5007a == null) {
-                m37356L(aVar);
+                m37359L(aVar);
             }
         }
     }
 
-    public static void m37325i(CharSequence charSequence, int i) {
-        m37313o().m37288b(charSequence, i);
+    public static void m37328i(CharSequence charSequence, int i) {
+        m37316o().m37291b(charSequence, i);
     }
 
-    public static void m37324i0(View view) {
+    public static void m37327i0(View view) {
         if (Build.VERSION.SDK_INT >= 21) {
             view.setFitsSystemWindows(true);
             view.setSystemUiVisibility(1280);
         }
     }
 
-    public static void m37323j(boolean z) {
-        m37313o().m37287c(z);
+    public static void m37326j(boolean z) {
+        m37316o().m37290c(z);
     }
 
-    public static void m37322j0(C4812v2 v2Var, boolean z) {
-        m37313o().m37278l(v2Var, z);
+    public static void m37325j0(C4812v2 v2Var, boolean z) {
+        m37316o().m37281l(v2Var, z);
     }
 
-    public static void m37321k(View view, boolean z) {
-        m37319l(view, z, false);
+    public static void m37324k(View view, boolean z) {
+        m37322l(view, z, false);
     }
 
-    public static void m37320k0(C4812v2 v2Var, float f, int i) {
-        m37313o().m37277m(v2Var, f);
+    public static void m37323k0(C4812v2 v2Var, float f, int i) {
+        m37316o().m37280m(v2Var, f);
     }
 
-    public static void m37319l(View view, boolean z, boolean z2) {
-        C2065g.m35720b(view, z, z2 || C4868i.m24726c2().m24618p6());
+    public static void m37322l(View view, boolean z, boolean z2) {
+        C2065g.m35723b(view, z, z2 || C4868i.m24727c2().m24619p6());
     }
 
-    public static void m37318l0(AbstractView$OnTouchListenerC7889a aVar, int i) {
+    public static void m37321l0(AbstractView$OnTouchListenerC7889a aVar, int i) {
         if (aVar != null) {
             aVar.getWindow().setSoftInputMode(i);
         }
     }
 
-    public static void m37317m(View view) {
-        m37321k(view, true);
-        m37321k(view, true);
+    public static void m37320m(View view) {
+        m37324k(view, true);
+        m37324k(view, true);
     }
 
-    public static void m37316m0(int i) {
+    public static void m37319m0(int i) {
     }
 
-    public static Context m37315n() {
+    public static Context m37318n() {
         return f5007a;
     }
 
-    public static boolean m37314n0(int i) {
+    public static boolean m37317n0(int i) {
         int i2 = f5011e;
         boolean z = false;
         if (i2 != i) {
@@ -419,7 +419,7 @@ public class C1379j0 {
                 if (i != 0) {
                     z = true;
                 }
-                z = g3.m28134s(z);
+                z = g3.m28136s(z);
             }
             f5011e = i;
             Iterator<AbstractC1380a> it = f5015i.iterator();
@@ -430,7 +430,7 @@ public class C1379j0 {
         return z;
     }
 
-    public static HandlerC1382k0 m37313o() {
+    public static HandlerC1382k0 m37316o() {
         if (f5009c == null) {
             synchronized (HandlerC1382k0.class) {
                 if (f5009c == null) {
@@ -441,7 +441,7 @@ public class C1379j0 {
         return f5009c;
     }
 
-    public static boolean m37312o0(AbstractView$OnTouchListenerC7889a aVar, int i) {
+    public static boolean m37315o0(AbstractView$OnTouchListenerC7889a aVar, int i) {
         boolean z = false;
         boolean z2 = i == 0;
         HashMap<WeakReference<AbstractView$OnTouchListenerC7889a>, Boolean> hashMap = f5016j;
@@ -491,31 +491,31 @@ public class C1379j0 {
         } else if (weakReference != null) {
             f5016j.remove(weakReference);
         }
-        return m37314n0(!z2);
+        return m37317n0(!z2);
     }
 
-    public static Locale m37311p() {
-        return m37315n().getResources().getConfiguration().locale;
+    public static Locale m37314p() {
+        return m37318n().getResources().getConfiguration().locale;
     }
 
-    public static void m37310p0(int i) {
-        m37313o().m37271s(C4403w.m27865j1(R.string.AndroidVersionWarning, C2064f.m35724b(i), C2064f.m35722d(i)), 1);
+    public static void m37313p0(int i) {
+        m37316o().m37274s(C4403w.m27867j1(R.string.AndroidVersionWarning, C2064f.m35727b(i), C2064f.m35725d(i)), 1);
     }
 
-    public static Context m37309q() {
-        AbstractView$OnTouchListenerC7889a E = m37366E();
+    public static Context m37312q() {
+        AbstractView$OnTouchListenerC7889a E = m37369E();
         return E != null ? E : f5007a;
     }
 
-    public static void m37308q0(String str) {
-        if (C5070i.m24061i(str)) {
-            m37292y0(R.string.BotIsDown, 0);
+    public static void m37311q0(String str) {
+        if (C5070i.m24062i(str)) {
+            m37295y0(R.string.BotIsDown, 0);
             return;
         }
-        m37290z0(C4403w.m27865j1(R.string.BotIsDownSpecific, '@' + str), 0);
+        m37293z0(C4403w.m27867j1(R.string.BotIsDownSpecific, '@' + str), 0);
     }
 
-    public static AbstractView$OnTouchListenerC7889a m37307r(Context context) {
+    public static AbstractView$OnTouchListenerC7889a m37310r(Context context) {
         if (context instanceof AbstractView$OnTouchListenerC7889a) {
             return (AbstractView$OnTouchListenerC7889a) context;
         }
@@ -529,112 +529,112 @@ public class C1379j0 {
         return null;
     }
 
-    public static void m37306r0(int i, int i2, int i3) {
-        m37313o().m37276n(i, i2, i3);
+    public static void m37309r0(int i, int i2, int i3) {
+        m37316o().m37279n(i, i2, i3);
     }
 
     @Deprecated
-    public static AbstractC9323v4<?> m37305s() {
-        C9270q1 x = m37295x();
+    public static AbstractC9323v4<?> m37308s() {
+        C9270q1 x = m37298x();
         if (x != null) {
-            return x.m9749M().m9501l();
+            return x.m9748M().m9501l();
         }
         return null;
     }
 
-    public static void m37304s0(CharSequence charSequence, int i, int i2) {
-        m37313o().m37275o(charSequence, i, i2);
+    public static void m37307s0(CharSequence charSequence, int i, int i2) {
+        m37316o().m37278o(charSequence, i, i2);
     }
 
     @Deprecated
-    public static AbstractC9323v4<?> m37303t(Context context) {
-        return m37307r(context).m14552P1().m9763F();
+    public static AbstractC9323v4<?> m37306t(Context context) {
+        return m37310r(context).m14551P1().m9762F();
     }
 
-    public static void m37302t0(TdApi.Object object) {
+    public static void m37305t0(TdApi.Object object) {
         if (object.getConstructor() != -1679978726) {
-            m37290z0(C4779t2.m25378z5(object), 0);
+            m37293z0(C4779t2.m25379z5(object), 0);
             return;
         }
-        String z5 = C4779t2.m25378z5(object);
+        String z5 = C4779t2.m25379z5(object);
         if (z5 != null) {
             Log.critical("TDLib Error: %s", Log.generateException(2), z5);
-            if (C4779t2.m25481l0(object) != 401) {
-                m37290z0(z5, 0);
+            if (C4779t2.m25482l0(object) != 401) {
+                m37293z0(z5, 0);
             }
         }
     }
 
-    public static View$OnClickListenerC9218k0 m37301u(Context context) {
-        AbstractView$OnTouchListenerC7889a r = m37307r(context);
+    public static View$OnClickListenerC9218k0 m37304u(Context context) {
+        AbstractView$OnTouchListenerC7889a r = m37310r(context);
         if (r != null) {
-            return r.m14553P0();
+            return r.m14552P0();
         }
         return null;
     }
 
-    public static void m37300u0(View view) {
-        m37313o().m37274p(view, true);
+    public static void m37303u0(View view) {
+        m37316o().m37277p(view, true);
     }
 
-    public static View$OnClickListenerC9170d1 m37299v() {
-        C9270q1 x = m37295x();
+    public static View$OnClickListenerC9170d1 m37302v() {
+        C9270q1 x = m37298x();
         if (x != null) {
-            return x.m9757I();
+            return x.m9756I();
         }
         return null;
     }
 
-    public static void m37298v0() {
-        m37313o().m37272r(R.string.prompt_network, 1);
+    public static void m37301v0() {
+        m37316o().m37275r(R.string.prompt_network, 1);
     }
 
-    public static View$OnClickListenerC9170d1 m37297w(Context context) {
-        C9270q1 y = m37293y(context);
+    public static View$OnClickListenerC9170d1 m37300w(Context context) {
+        C9270q1 y = m37296y(context);
         if (y != null) {
-            return y.m9757I();
+            return y.m9756I();
         }
         return null;
     }
 
-    public static void m37296w0(String str, AbstractView$OnTouchListenerC7889a.AbstractC7901l lVar) {
-        m37313o().m37273q(str, lVar);
+    public static void m37299w0(String str, AbstractView$OnTouchListenerC7889a.AbstractC7901l lVar) {
+        m37316o().m37276q(str, lVar);
     }
 
-    public static C9270q1 m37295x() {
-        AbstractView$OnTouchListenerC7889a E = m37366E();
+    public static C9270q1 m37298x() {
+        AbstractView$OnTouchListenerC7889a E = m37369E();
         if (E != null) {
-            return E.m14552P1();
+            return E.m14551P1();
         }
         return null;
     }
 
-    public static void m37294x0(final String str, final AbstractView$OnTouchListenerC7889a.AbstractC7901l lVar, final long j) {
+    public static void m37297x0(final String str, final AbstractView$OnTouchListenerC7889a.AbstractC7901l lVar, final long j) {
         if (j <= 0) {
-            m37296w0(str, lVar);
+            m37299w0(str, lVar);
         } else {
-            m37334d0(new Runnable() {
+            m37337d0(new Runnable() {
                 @Override
                 public final void run() {
-                    C1379j0.m37348T(str, lVar, j);
+                    C1379j0.m37351T(str, lVar, j);
                 }
             });
         }
     }
 
-    public static C9270q1 m37293y(Context context) {
-        return m37307r(context).m14552P1();
+    public static C9270q1 m37296y(Context context) {
+        return m37310r(context).m14551P1();
     }
 
-    public static void m37292y0(int i, int i2) {
-        m37313o().m37272r(i, i2);
+    public static void m37295y0(int i, int i2) {
+        m37316o().m37275r(i, i2);
     }
 
-    public static int m37291z() {
+    public static int m37294z() {
         return f5007a.getResources().getConfiguration().orientation;
     }
 
-    public static void m37290z0(CharSequence charSequence, int i) {
-        m37313o().m37271s(charSequence, i);
+    public static void m37293z0(CharSequence charSequence, int i) {
+        m37316o().m37274s(charSequence, i);
     }
 }

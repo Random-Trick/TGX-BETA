@@ -8,9 +8,9 @@ import java.util.Locale;
 import p266t.C8927z;
 
 public class C9818m implements AbstractC9827u {
-    public static final List<String> f32084a = Arrays.asList("PIXEL 3A", "PIXEL 3A XL");
+    public static final List<String> f32087a = Arrays.asList("PIXEL 3A", "PIXEL 3A XL");
 
     public static boolean m6799a(C8927z zVar) {
-        return f32084a.contains(Build.MODEL.toUpperCase(Locale.US)) && ((Integer) zVar.m10952a(CameraCharacteristics.LENS_FACING)).intValue() == 1;
+        return f32087a.contains(Build.MODEL.toUpperCase(Locale.US)) && ((Integer) zVar.m10951a(CameraCharacteristics.LENS_FACING)).intValue() == 1;
     }
 }

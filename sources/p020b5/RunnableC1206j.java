@@ -26,24 +26,24 @@ public final class RunnableC1206j implements SurfaceTexture.OnFrameAvailableList
     }
 
     public interface AbstractC1209c {
-        void m38036a();
+        void m38039a();
     }
 
     public RunnableC1206j(Handler handler) {
         this(handler, null);
     }
 
-    public static EGLConfig m38045a(EGLDisplay eGLDisplay) {
+    public static EGLConfig m38048a(EGLDisplay eGLDisplay) {
         EGLConfig[] eGLConfigArr = new EGLConfig[1];
         int[] iArr = new int[1];
         boolean eglChooseConfig = EGL14.eglChooseConfig(eGLDisplay, f4514Q, 0, eGLConfigArr, 0, 1, iArr, 0);
         if (eglChooseConfig && iArr[0] > 0 && eGLConfigArr[0] != null) {
             return eGLConfigArr[0];
         }
-        throw new C1208b(C1216l0.m37936z("eglChooseConfig failed: success=%b, numConfigs[0]=%d, configs[0]=%s", Boolean.valueOf(eglChooseConfig), Integer.valueOf(iArr[0]), eGLConfigArr[0]));
+        throw new C1208b(C1216l0.m37939z("eglChooseConfig failed: success=%b, numConfigs[0]=%d, configs[0]=%s", Boolean.valueOf(eglChooseConfig), Integer.valueOf(iArr[0]), eGLConfigArr[0]));
     }
 
-    public static EGLContext m38044b(EGLDisplay eGLDisplay, EGLConfig eGLConfig, int i) {
+    public static EGLContext m38047b(EGLDisplay eGLDisplay, EGLConfig eGLConfig, int i) {
         EGLContext eglCreateContext = EGL14.eglCreateContext(eGLDisplay, eGLConfig, EGL14.EGL_NO_CONTEXT, i == 0 ? new int[]{12440, 2, 12344} : new int[]{12440, 2, 12992, 1, 12344}, 0);
         if (eglCreateContext != null) {
             return eglCreateContext;
@@ -51,7 +51,7 @@ public final class RunnableC1206j implements SurfaceTexture.OnFrameAvailableList
         throw new C1208b("eglCreateContext failed");
     }
 
-    public static EGLSurface m38043c(EGLDisplay eGLDisplay, EGLConfig eGLConfig, EGLContext eGLContext, int i) {
+    public static EGLSurface m38046c(EGLDisplay eGLDisplay, EGLConfig eGLConfig, EGLContext eGLContext, int i) {
         EGLSurface eGLSurface;
         if (i == 1) {
             eGLSurface = EGL14.EGL_NO_SURFACE;
@@ -67,12 +67,12 @@ public final class RunnableC1206j implements SurfaceTexture.OnFrameAvailableList
         throw new C1208b("eglMakeCurrent failed");
     }
 
-    public static void m38041e(int[] iArr) {
+    public static void m38044e(int[] iArr) {
         GLES20.glGenTextures(1, iArr, 0);
-        C1217m.m37933b();
+        C1217m.m37936b();
     }
 
-    public static EGLDisplay m38040f() {
+    public static EGLDisplay m38043f() {
         EGLDisplay eglGetDisplay = EGL14.eglGetDisplay(0);
         if (eglGetDisplay != null) {
             int[] iArr = new int[2];
@@ -84,31 +84,31 @@ public final class RunnableC1206j implements SurfaceTexture.OnFrameAvailableList
         throw new C1208b("eglGetDisplay failed");
     }
 
-    public final void m38042d() {
+    public final void m38045d() {
         AbstractC1209c cVar = this.f4521c;
         if (cVar != null) {
-            cVar.m38036a();
+            cVar.m38039a();
         }
     }
 
-    public SurfaceTexture m38039g() {
-        return (SurfaceTexture) C1186a.m38185e(this.f4518P);
+    public SurfaceTexture m38042g() {
+        return (SurfaceTexture) C1186a.m38188e(this.f4518P);
     }
 
-    public void m38038h(int i) {
-        EGLDisplay f = m38040f();
+    public void m38041h(int i) {
+        EGLDisplay f = m38043f();
         this.f4515M = f;
-        EGLConfig a = m38045a(f);
-        EGLContext b = m38044b(this.f4515M, a, i);
+        EGLConfig a = m38048a(f);
+        EGLContext b = m38047b(this.f4515M, a, i);
         this.f4516N = b;
-        this.f4517O = m38043c(this.f4515M, a, b, i);
-        m38041e(this.f4520b);
+        this.f4517O = m38046c(this.f4515M, a, b, i);
+        m38044e(this.f4520b);
         SurfaceTexture surfaceTexture = new SurfaceTexture(this.f4520b[0]);
         this.f4518P = surfaceTexture;
         surfaceTexture.setOnFrameAvailableListener(this);
     }
 
-    public void m38037i() {
+    public void m38040i() {
         this.f4519a.removeCallbacks(this);
         try {
             SurfaceTexture surfaceTexture = this.f4518P;
@@ -178,7 +178,7 @@ public final class RunnableC1206j implements SurfaceTexture.OnFrameAvailableList
 
     @Override
     public void run() {
-        m38042d();
+        m38045d();
         SurfaceTexture surfaceTexture = this.f4518P;
         if (surfaceTexture != null) {
             try {

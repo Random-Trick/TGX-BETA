@@ -10,15 +10,15 @@ public interface AbstractC10141r extends IInterface {
     public static abstract class AbstractBinderC10142a extends Binder implements AbstractC10141r {
 
         public static class C10143a implements AbstractC10141r {
-            public IBinder f32846a;
+            public IBinder f32849a;
 
             public C10143a(IBinder iBinder) {
-                this.f32846a = iBinder;
+                this.f32849a = iBinder;
             }
 
             @Override
             public final IBinder asBinder() {
-                return this.f32846a;
+                return this.f32849a;
             }
         }
 

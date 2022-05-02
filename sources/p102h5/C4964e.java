@@ -36,17 +36,17 @@ public class C4964e implements Parcelable {
         }
     }
 
-    public final IBinder m24363a() {
+    public final IBinder m24364a() {
         Messenger messenger = this.f16892a;
         return messenger != null ? messenger.getBinder() : this.f16893b.asBinder();
     }
 
-    public final void m24362b(Message message) {
+    public final void m24363b(Message message) {
         Messenger messenger = this.f16892a;
         if (messenger != null) {
             messenger.send(message);
         } else {
-            this.f16893b.mo24377O(message);
+            this.f16893b.mo24378O(message);
         }
     }
 
@@ -60,14 +60,14 @@ public class C4964e implements Parcelable {
             return false;
         }
         try {
-            return m24363a().equals(((C4964e) obj).m24363a());
+            return m24364a().equals(((C4964e) obj).m24364a());
         } catch (ClassCastException unused) {
             return false;
         }
     }
 
     public int hashCode() {
-        return m24363a().hashCode();
+        return m24364a().hashCode();
     }
 
     @Override

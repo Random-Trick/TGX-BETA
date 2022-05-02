@@ -23,22 +23,22 @@ public final class C6644l3 implements AbstractC6609h {
         public final int f20764c;
 
         public C6645a(C7227r0 r0Var, int[] iArr, int i, boolean[] zArr) {
-            int i2 = r0Var.f23023a;
-            C1186a.m38189a(i2 == iArr.length && i2 == zArr.length);
+            int i2 = r0Var.f23026a;
+            C1186a.m38192a(i2 == iArr.length && i2 == zArr.length);
             this.f20762a = r0Var;
             this.f20763b = (int[]) iArr.clone();
             this.f20764c = i;
             this.f20761M = (boolean[]) zArr.clone();
         }
 
-        public static String m19685b(int i) {
+        public static String m19686b(int i) {
             return Integer.toString(i, 36);
         }
 
-        public static C6645a m19684c(Bundle bundle) {
-            C7227r0 r0Var = (C7227r0) C1190c.m38112e(C7227r0.f23022M, bundle.getBundle(m19685b(0)));
-            C1186a.m38185e(r0Var);
-            return new C6645a(r0Var, (int[]) C10431g.m5140a(bundle.getIntArray(m19685b(1)), new int[r0Var.f23023a]), bundle.getInt(m19685b(2), -1), (boolean[]) C10431g.m5140a(bundle.getBooleanArray(m19685b(3)), new boolean[r0Var.f23023a]));
+        public static C6645a m19685c(Bundle bundle) {
+            C7227r0 r0Var = (C7227r0) C1190c.m38115e(C7227r0.f23025M, bundle.getBundle(m19686b(0)));
+            C1186a.m38188e(r0Var);
+            return new C6645a(r0Var, (int[]) C10431g.m5140a(bundle.getIntArray(m19686b(1)), new int[r0Var.f23026a]), bundle.getInt(m19686b(2), -1), (boolean[]) C10431g.m5140a(bundle.getBooleanArray(m19686b(3)), new boolean[r0Var.f23026a]));
         }
 
         public boolean equals(Object obj) {
@@ -61,12 +61,12 @@ public final class C6644l3 implements AbstractC6609h {
         this.f20759a = AbstractC11396q.m758z(list);
     }
 
-    public static String m19688b(int i) {
+    public static String m19689b(int i) {
         return Integer.toString(i, 36);
     }
 
-    public static C6644l3 m19687c(Bundle bundle) {
-        return new C6644l3(C1190c.m38114c(C6645a.f20760N, bundle.getParcelableArrayList(m19688b(0)), AbstractC11396q.m768D()));
+    public static C6644l3 m19688c(Bundle bundle) {
+        return new C6644l3(C1190c.m38117c(C6645a.f20760N, bundle.getParcelableArrayList(m19689b(0)), AbstractC11396q.m768D()));
     }
 
     public boolean equals(Object obj) {

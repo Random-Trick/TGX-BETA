@@ -44,15 +44,15 @@ public class C1363c0 {
 
         @Override
         public void onClick(View view) {
-            C1405v.m37097x(this.f4978a.getURL());
+            C1405v.m37100x(this.f4978a.getURL());
         }
     }
 
     public interface AbstractC1365b {
-        boolean mo22712a(char c);
+        boolean mo22713a(char c);
     }
 
-    public static int m37473A(int i) {
+    public static int m37476A(int i) {
         byte directionality = Character.getDirectionality(i);
         if (directionality != 0) {
             if (!(directionality == 1 || directionality == 2)) {
@@ -67,24 +67,24 @@ public class C1363c0 {
                         return 0;
                 }
             }
-            return m37456R(i) ? 0 : 2;
+            return m37459R(i) ? 0 : 2;
         }
         return 1;
     }
 
-    public static String m37472B(int i, float f, float f2, float f3, int i2, boolean z) {
+    public static String m37475B(int i, float f, float f2, float f3, int i2, boolean z) {
         int alpha = Color.alpha(i2);
         StringBuilder sb2 = new StringBuilder();
         if (i == 0) {
-            m37429j(i2, true, sb2);
+            m37432j(i2, true, sb2);
         } else if (i == 1) {
             sb2.append(alpha != 255 ? "rgba(" : "rgb(");
             int red = Color.red(i2);
             int green = Color.green(i2);
             int blue = Color.blue(i2);
-            m37439e(sb2, red).append(", ");
-            m37439e(sb2, green).append(", ");
-            m37439e(sb2, blue);
+            m37442e(sb2, red).append(", ");
+            m37442e(sb2, green).append(", ");
+            m37442e(sb2, blue);
             if (alpha != 255) {
                 sb2.append(", ");
                 sb2.append(C7389v0.m16641e0(alpha / 255.0f, z));
@@ -92,12 +92,12 @@ public class C1363c0 {
             sb2.append(")");
         } else if (i == 2) {
             sb2.append(alpha != 255 ? "hsla(" : "hsl(");
-            m37441d(sb2, f);
+            m37444d(sb2, f);
             sb2.append(", ");
-            m37441d(sb2, f2 * 100.0f);
+            m37444d(sb2, f2 * 100.0f);
             String str = "%, ";
             sb2.append(str);
-            m37441d(sb2, f3 * 100.0f);
+            m37444d(sb2, f3 * 100.0f);
             if (alpha == 255) {
                 str = "%)";
             }
@@ -110,13 +110,13 @@ public class C1363c0 {
         return sb2.toString();
     }
 
-    public static String m37471C(int i, boolean z) {
+    public static String m37474C(int i, boolean z) {
         StringBuilder sb2 = new StringBuilder();
-        m37429j(i, z, sb2);
+        m37432j(i, z, sb2);
         return sb2.toString();
     }
 
-    public static String m37470D(String str) {
+    public static String m37473D(String str) {
         if (str == null) {
             return null;
         }
@@ -133,9 +133,9 @@ public class C1363c0 {
         return sb2.toString();
     }
 
-    public static int m37469E(String str) {
+    public static int m37472E(String str) {
         int i = 0;
-        if (C5070i.m24061i(str)) {
+        if (C5070i.m24062i(str)) {
             return 0;
         }
         int i2 = 0;
@@ -150,17 +150,17 @@ public class C1363c0 {
         return i2;
     }
 
-    public static int m37468F(CharSequence charSequence) {
+    public static int m37471F(CharSequence charSequence) {
         if (charSequence != null) {
-            return m37467G(charSequence, 0, charSequence.length());
+            return m37470G(charSequence, 0, charSequence.length());
         }
         return 0;
     }
 
-    public static int m37467G(CharSequence charSequence, int i, int i2) {
+    public static int m37470G(CharSequence charSequence, int i, int i2) {
         while (i < i2) {
             int codePointAt = Character.codePointAt(charSequence, i);
-            int A = m37473A(codePointAt);
+            int A = m37476A(codePointAt);
             int i3 = 1;
             if (A != 1) {
                 i3 = 2;
@@ -173,25 +173,25 @@ public class C1363c0 {
         return 0;
     }
 
-    public static CharSequence m37466H(CharSequence charSequence, CharSequence charSequence2) {
+    public static CharSequence m37469H(CharSequence charSequence, CharSequence charSequence2) {
         SpannableStringBuilder append = new SpannableStringBuilder(charSequence).append((CharSequence) "\n\n").append(charSequence2);
-        append.setSpan(C4403w.m27843p().mo379a(append, 0, charSequence.length(), 0, RunnableC5390g.m22983M0(charSequence)), 0, charSequence.length(), 33);
+        append.setSpan(C4403w.m27845p().mo379a(append, 0, charSequence.length(), 0, RunnableC5390g.m22984M0(charSequence)), 0, charSequence.length(), 33);
         return append;
     }
 
-    public static CharSequence m37465I(String str, String str2, int i, char[] cArr) {
-        return m37464J(str, str2, i, cArr, 0);
+    public static CharSequence m37468I(String str, String str2, int i, char[] cArr) {
+        return m37467J(str, str2, i, cArr, 0);
     }
 
-    public static CharSequence m37464J(String str, String str2, int i, char[] cArr, int i2) {
+    public static CharSequence m37467J(String str, String str2, int i, char[] cArr, int i2) {
         String str3;
-        if (C5070i.m24061i(str) || C5070i.m24061i(str2)) {
+        if (C5070i.m24062i(str) || C5070i.m24062i(str2)) {
             return str;
         }
         int length = str.length();
         String lowerCase = str.toLowerCase();
         String lowerCase2 = str2.toLowerCase();
-        int v0 = RunnableC5390g.m22898v0(str2, i, cArr);
+        int v0 = RunnableC5390g.m22899v0(str2, i, cArr);
         int i3 = 0;
         ArrayList arrayList = null;
         while (true) {
@@ -205,11 +205,11 @@ public class C1363c0 {
                     arrayList = new ArrayList();
                 }
                 String substring = lowerCase2.substring(i3, v0);
-                if (!C5070i.m24061i(substring)) {
+                if (!C5070i.m24062i(substring)) {
                     arrayList.add(substring);
                 }
                 i3 = v0 + 1;
-                v0 = RunnableC5390g.m22902t0(str2, i3);
+                v0 = RunnableC5390g.m22903t0(str2, i3);
             }
         }
         if (arrayList != null) {
@@ -233,26 +233,26 @@ public class C1363c0 {
                 if (spannable == null) {
                     spannable = Spannable.Factory.getInstance().newSpannable(str);
                 }
-                spannable.setSpan(new C5132o(null, R.id.theme_color_textSearchQueryHighlight).m23850l(i2), i, str3.length() + i, 33);
+                spannable.setSpan(new C5132o(null, R.id.theme_color_textSearchQueryHighlight).m23851l(i2), i, str3.length() + i, 33);
             }
-            int v02 = RunnableC5390g.m22898v0(str, i, cArr);
+            int v02 = RunnableC5390g.m22899v0(str, i, cArr);
             i = v02 != -1 ? v02 + 1 : length;
         }
         return spannable != null ? spannable : str;
     }
 
-    public static boolean m37463K(String str, String str2) {
+    public static boolean m37466K(String str, String str2) {
         Uri l0;
-        if (C5070i.m24061i(str) || C5070i.m24061i(str2)) {
+        if (C5070i.m24062i(str) || C5070i.m24062i(str2)) {
             return false;
         }
         try {
-            Uri l02 = m37424l0(str);
-            if (l02 == null || (l0 = m37424l0(str2)) == null) {
+            Uri l02 = m37427l0(str);
+            if (l02 == null || (l0 = m37427l0(str2)) == null) {
                 return false;
             }
-            String i0 = m37430i0(l02.getHost());
-            String i02 = m37430i0(l0.getHost());
+            String i0 = m37433i0(l02.getHost());
+            String i02 = m37433i0(l0.getHost());
             if (!i0.equals(i02) && !i0.endsWith(i02)) {
                 if (!i02.endsWith(i0)) {
                     return false;
@@ -264,7 +264,7 @@ public class C1363c0 {
         }
     }
 
-    public static int m37462L(String str, int i, char[] cArr) {
+    public static int m37465L(String str, int i, char[] cArr) {
         int length = str.length();
         while (i < length) {
             char charAt = str.charAt(i);
@@ -278,7 +278,7 @@ public class C1363c0 {
         return -1;
     }
 
-    public static int m37461M(String str) {
+    public static int m37464M(String str) {
         if (str == null) {
             return -1;
         }
@@ -287,7 +287,7 @@ public class C1363c0 {
         while (i < length) {
             int codePointAt = str.codePointAt(i);
             int charCount = Character.charCount(codePointAt);
-            if (charCount == 1 && C5070i.m24058l((char) codePointAt)) {
+            if (charCount == 1 && C5070i.m24059l((char) codePointAt)) {
                 return i;
             }
             i += charCount;
@@ -295,16 +295,16 @@ public class C1363c0 {
         return -1;
     }
 
-    public static boolean m37460N(char c) {
-        return C5070i.m24058l(c) || (c >= 'a' && c <= 'f') || (c >= 'A' && c <= 'F');
+    public static boolean m37463N(char c) {
+        return C5070i.m24059l(c) || (c >= 'a' && c <= 'f') || (c >= 'A' && c <= 'F');
     }
 
-    public static boolean m37459O(char c) {
+    public static boolean m37462O(char c) {
         return c == '\n' || c == ' ' || c == '.';
     }
 
-    public static boolean m37458P(String str) {
-        if (C5070i.m24061i(str)) {
+    public static boolean m37461P(String str) {
+        if (C5070i.m24062i(str)) {
             return false;
         }
         TdApi.TextEntity[] C0 = C7321e.m17014C0(str);
@@ -319,12 +319,12 @@ public class C1363c0 {
         }
     }
 
-    public static boolean m37457Q(String str) {
+    public static boolean m37460Q(String str) {
         TdApi.TextEntity[] C0;
-        return !C5070i.m24061i(str) && (C0 = C7321e.m17014C0(str)) != null && C0.length == 1 && C0[0].offset == 0 && C0[0].length == str.length() && C0[0].type.getConstructor() == -1312762756;
+        return !C5070i.m24062i(str) && (C0 = C7321e.m17014C0(str)) != null && C0.length == 1 && C0[0].offset == 0 && C0[0].length == str.length() && C0[0].type.getConstructor() == -1312762756;
     }
 
-    public static boolean m37456R(int i) {
+    public static boolean m37459R(int i) {
         switch (i) {
             case 1489:
             case 1496:
@@ -360,11 +360,11 @@ public class C1363c0 {
         }
     }
 
-    public static boolean m37455S(char c) {
+    public static boolean m37458S(char c) {
         return c == ' ' || c == '\n';
     }
 
-    public static String m37454T(CharSequence charSequence, Iterable<?> iterable) {
+    public static String m37457T(CharSequence charSequence, Iterable<?> iterable) {
         StringBuilder sb2 = new StringBuilder();
         Iterator<?> it = iterable.iterator();
         boolean z = true;
@@ -380,7 +380,7 @@ public class C1363c0 {
         return sb2.toString();
     }
 
-    public static String m37453U(CharSequence charSequence, Object... objArr) {
+    public static String m37456U(CharSequence charSequence, Object... objArr) {
         StringBuilder sb2 = new StringBuilder();
         int length = objArr.length;
         boolean z = true;
@@ -396,11 +396,11 @@ public class C1363c0 {
         return sb2.toString();
     }
 
-    public static int m37452V(String str, String str2) {
+    public static int m37455V(String str, String str2) {
         return Integer.compare(str2.length(), str.length());
     }
 
-    public static int m37451W(long j) {
+    public static int m37454W(long j) {
         if (j < 0) {
             long j2 = -j;
             if (j2 < 100000) {
@@ -437,7 +437,7 @@ public class C1363c0 {
         }
     }
 
-    public static String m37450X(String str, int i) {
+    public static String m37453X(String str, int i) {
         int length = str.length();
         if (length <= i) {
             return str;
@@ -459,11 +459,11 @@ public class C1363c0 {
         return sb2.toString();
     }
 
-    public static CharSequence m37449Y(String str) {
-        return m37448Z(str, 0);
+    public static CharSequence m37452Y(String str) {
+        return m37451Z(str, 0);
     }
 
-    public static CharSequence m37448Z(String str, int i) {
+    public static CharSequence m37451Z(String str, int i) {
         int indexOf;
         SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(str);
         int i2 = 0;
@@ -471,8 +471,8 @@ public class C1363c0 {
             int indexOf2 = spannableStringBuilder.toString().indexOf("**") + 2;
             indexOf = spannableStringBuilder.toString().indexOf("**", indexOf2);
             if (indexOf2 > -1 && indexOf > -1) {
-                boolean N0 = RunnableC5390g.m22981N0(spannableStringBuilder, indexOf2, indexOf);
-                spannableStringBuilder.setSpan(new C5132o(N0 ? C1389o.m37258k() : C1389o.m37260i(), i).m23851k(N0), indexOf2, indexOf, 33);
+                boolean N0 = RunnableC5390g.m22982N0(spannableStringBuilder, indexOf2, indexOf);
+                spannableStringBuilder.setSpan(new C5132o(N0 ? C1389o.m37261k() : C1389o.m37263i(), i).m23852k(N0), indexOf2, indexOf, 33);
                 spannableStringBuilder.delete(indexOf, indexOf + 2);
                 spannableStringBuilder.delete(indexOf2 - 2, indexOf2);
                 i2++;
@@ -484,7 +484,7 @@ public class C1363c0 {
         return i2 > 0 ? spannableStringBuilder : str;
     }
 
-    public static String m37446a0(String str) {
+    public static String m37449a0(String str) {
         int length = str.length();
         StringBuilder sb2 = new StringBuilder(length);
         int i = 0;
@@ -508,7 +508,7 @@ public class C1363c0 {
         return sb2.toString();
     }
 
-    public static String m37445b(String... strArr) {
+    public static String m37448b(String... strArr) {
         for (String str : strArr) {
             if (str != null) {
                 String trim = str.trim();
@@ -520,8 +520,8 @@ public class C1363c0 {
         return "";
     }
 
-    public static String m37444b0(String str) {
-        if (C5070i.m24061i(str)) {
+    public static String m37447b0(String str) {
+        if (C5070i.m24062i(str)) {
             return str;
         }
         StringBuilder sb2 = new StringBuilder(str);
@@ -531,7 +531,7 @@ public class C1363c0 {
             indexOf = 0;
         }
         while (indexOf < sb2.length()) {
-            if (C5070i.m24058l(sb2.charAt(indexOf))) {
+            if (C5070i.m24059l(sb2.charAt(indexOf))) {
                 i++;
                 if (i == 10) {
                     i = 1;
@@ -543,7 +543,7 @@ public class C1363c0 {
         return sb2.toString();
     }
 
-    public static boolean m37443c(String str, String str2, int[] iArr) {
+    public static boolean m37446c(String str, String str2, int[] iArr) {
         if (str.startsWith(str2)) {
             if (iArr != null) {
                 iArr[0] = 0;
@@ -553,7 +553,7 @@ public class C1363c0 {
         int i = 0;
         int i2 = 0;
         do {
-            int L = m37462L(str, i, f4977c);
+            int L = m37465L(str, i, f4977c);
             if (L == -1) {
                 return false;
             }
@@ -566,23 +566,23 @@ public class C1363c0 {
         return true;
     }
 
-    public static CharSequence m37442c0(CharSequence charSequence, int i) {
+    public static CharSequence m37445c0(CharSequence charSequence, int i) {
         if (charSequence instanceof Spannable) {
             C5132o[] oVarArr = (C5132o[]) ((Spannable) charSequence).getSpans(0, charSequence.length(), C5132o.class);
             if (oVarArr != null && oVarArr.length > 0) {
                 for (C5132o oVar : oVarArr) {
-                    oVar.m23853i(i);
+                    oVar.m23854i(i);
                 }
             }
         }
         return charSequence;
     }
 
-    public static void m37441d(StringBuilder sb2, float f) {
+    public static void m37444d(StringBuilder sb2, float f) {
         sb2.append(C7389v0.m16641e0(f, false));
     }
 
-    public static String m37440d0(String str) {
+    public static String m37443d0(String str) {
         String str2;
         try {
             if (Build.VERSION.SDK_INT >= 21) {
@@ -594,15 +594,15 @@ public class C1363c0 {
             Log.m14725e("Couldn't format the phone number", th, new Object[0]);
             str2 = null;
         }
-        return (C5070i.m24061i(str2) || m37470D(str2).length() < m37470D(str).length()) ? str : str2;
+        return (C5070i.m24062i(str2) || m37473D(str2).length() < m37473D(str).length()) ? str : str2;
     }
 
-    public static StringBuilder m37439e(StringBuilder sb2, int i) {
+    public static StringBuilder m37442e(StringBuilder sb2, int i) {
         sb2.append(i);
         return sb2;
     }
 
-    public static char m37438e0(char c) {
+    public static char m37441e0(char c) {
         char lowerCase = Character.toLowerCase(c);
         if (lowerCase >= 'a' && lowerCase <= 'c') {
             return '2';
@@ -631,21 +631,21 @@ public class C1363c0 {
         throw new IllegalArgumentException();
     }
 
-    public static String m37437f(long j) {
-        if (!C4868i.m24726c2().m24744a0()) {
-            return C4403w.m27939S(j);
+    public static String m37440f(long j) {
+        if (!C4868i.m24727c2().m24745a0()) {
+            return C4403w.m27941S(j);
         }
-        StringBuilder sb2 = new StringBuilder(m37451W(j));
-        m37435g(j, C4403w.m27809x1(), sb2);
+        StringBuilder sb2 = new StringBuilder(m37454W(j));
+        m37438g(j, C4403w.m27811x1(), sb2);
         return sb2.toString();
     }
 
-    public static String m37436f0(String str) {
-        return m37434g0(str, 0);
+    public static String m37439f0(String str) {
+        return m37437g0(str, 0);
     }
 
-    public static void m37435g(long j, String str, StringBuilder sb2) {
-        sb2.ensureCapacity(sb2.length() + m37451W(j));
+    public static void m37438g(long j, String str, StringBuilder sb2) {
+        sb2.ensureCapacity(sb2.length() + m37454W(j));
         boolean z = j < 0;
         if (z) {
             j = -j;
@@ -682,9 +682,9 @@ public class C1363c0 {
         }
     }
 
-    public static String m37434g0(String str, int i) {
+    public static String m37437g0(String str, int i) {
         boolean z;
-        if (C5070i.m24061i(str)) {
+        if (C5070i.m24062i(str)) {
             return str;
         }
         int length = str.length();
@@ -726,14 +726,14 @@ public class C1363c0 {
         return sb2.toString();
     }
 
-    public static String m37433h(long j) {
+    public static String m37436h(long j) {
         StringBuilder sb2 = new StringBuilder(4);
-        m37431i(j, TimeUnit.SECONDS, false, sb2);
+        m37434i(j, TimeUnit.SECONDS, false, sb2);
         return sb2.toString();
     }
 
-    public static String m37432h0(String str, String str2) {
-        if (C5070i.m24061i(str2)) {
+    public static String m37435h0(String str, String str2) {
+        if (C5070i.m24062i(str2)) {
             return str2;
         }
         StringBuilder sb2 = new StringBuilder(str2);
@@ -775,7 +775,7 @@ public class C1363c0 {
         }
     }
 
-    public static StringBuilder m37431i(long j, TimeUnit timeUnit, boolean z, StringBuilder sb2) {
+    public static StringBuilder m37434i(long j, TimeUnit timeUnit, boolean z, StringBuilder sb2) {
         int i;
         int seconds = (int) timeUnit.toSeconds(j);
         int i2 = seconds / 60;
@@ -800,17 +800,17 @@ public class C1363c0 {
         }
         sb2.append(i3);
         if (z) {
-            sb2.append(C4403w.m27830s0());
+            sb2.append(C4403w.m27832s0());
             sb2.append((timeUnit.toMillis(j) % 1000) / 100);
         }
         return sb2;
     }
 
-    public static String m37430i0(String str) {
-        return (!C5070i.m24061i(str) && str.startsWith("www.")) ? str.substring(4) : str;
+    public static String m37433i0(String str) {
+        return (!C5070i.m24062i(str) && str.startsWith("www.")) ? str.substring(4) : str;
     }
 
-    public static void m37429j(int i, boolean z, StringBuilder sb2) {
+    public static void m37432j(int i, boolean z, StringBuilder sb2) {
         sb2.append('#');
         int alpha = Color.alpha(i);
         String c1 = alpha < 255 ? C7389v0.m16648c1(alpha) : null;
@@ -835,8 +835,8 @@ public class C1363c0 {
         }
     }
 
-    public static String m37428j0(String str) {
-        if (C5070i.m24061i(str)) {
+    public static String m37431j0(String str) {
+        if (C5070i.m24062i(str)) {
             return str;
         }
         StringBuilder sb2 = new StringBuilder(str.length());
@@ -856,7 +856,7 @@ public class C1363c0 {
         return sb2.toString();
     }
 
-    public static SpannableStringBuilder m37427k(String str) {
+    public static SpannableStringBuilder m37430k(String str) {
         URLSpan[] uRLSpanArr;
         Spanned fromHtml = Html.fromHtml(str);
         SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(fromHtml);
@@ -867,7 +867,7 @@ public class C1363c0 {
         return spannableStringBuilder;
     }
 
-    public static String m37426k0(String str, boolean z) {
+    public static String m37429k0(String str, boolean z) {
         String replace = str == null ? "" : str.replace("\n", "\\n").replace("'", "\\'").replace("\"", "\\\"");
         if (!z && !replace.startsWith(" ") && !replace.endsWith(" ")) {
             return replace;
@@ -875,28 +875,28 @@ public class C1363c0 {
         return "\"" + replace + "\"";
     }
 
-    public static CharSequence m37425l(AbstractC10664f9 f9Var, CharSequence charSequence, C5132o.AbstractC5133a aVar) {
+    public static CharSequence m37428l(AbstractC10664f9 f9Var, CharSequence charSequence, C5132o.AbstractC5133a aVar) {
         if (charSequence == null) {
             return null;
         }
-        TdApi.FormattedText A5 = C4779t2.m25725A5(charSequence, false);
-        if (C4779t2.m25621P4(A5)) {
+        TdApi.FormattedText A5 = C4779t2.m25726A5(charSequence, false);
+        if (C4779t2.m25622P4(A5)) {
             TdApi.TextEntity[] textEntityArr = A5.entities;
             if (textEntityArr.length > 0) {
-                return C4779t2.m25397x0(f9Var, A5.text, textEntityArr, null, aVar);
+                return C4779t2.m25398x0(f9Var, A5.text, textEntityArr, null, aVar);
             }
         }
         return charSequence;
     }
 
-    public static Uri m37424l0(String str) {
-        if (C5070i.m24061i(str)) {
+    public static Uri m37427l0(String str) {
+        if (C5070i.m24062i(str)) {
             return null;
         }
         try {
             Uri parse = Uri.parse(str);
             String scheme = parse.getScheme();
-            if (!C5070i.m24061i(scheme)) {
+            if (!C5070i.m24062i(scheme)) {
                 return !scheme.toLowerCase().equals(scheme) ? parse.buildUpon().scheme(scheme.toLowerCase()).build() : parse;
             }
             return Uri.parse("https://" + str);
@@ -906,91 +906,91 @@ public class C1363c0 {
         }
     }
 
-    public static String m37423m(long j) {
-        return m37421n(j, true);
+    public static String m37426m(long j) {
+        return m37424n(j, true);
     }
 
-    public static String m37422m0(String str) {
+    public static String m37425m0(String str) {
         if (str == null) {
             return null;
         }
-        if (!C1389o.m37255n() && !C1389o.m37254o()) {
+        if (!C1389o.m37258n() && !C1389o.m37257o()) {
             return str;
         }
         StringBuilder sb2 = new StringBuilder();
-        if (C1389o.m37255n()) {
+        if (C1389o.m37258n()) {
             sb2.append("\u200f");
         }
         sb2.append(str);
-        if (C1389o.m37254o()) {
+        if (C1389o.m37257o()) {
             sb2.append("\u2069");
         }
         return sb2.toString();
     }
 
-    public static String m37421n(long j, boolean z) {
-        return m37419o(j, z, C4868i.m24726c2().m24663k1(64L));
+    public static String m37424n(long j, boolean z) {
+        return m37422o(j, z, C4868i.m24727c2().m24664k1(64L));
     }
 
-    public static String m37420n0(String str) {
+    public static String m37423n0(String str) {
         if (str == null) {
             return null;
         }
-        if (!C1389o.m37256m() && !C1389o.m37254o()) {
+        if (!C1389o.m37259m() && !C1389o.m37257o()) {
             return str;
         }
         StringBuilder sb2 = new StringBuilder();
-        if (C1389o.m37256m()) {
+        if (C1389o.m37259m()) {
             sb2.append("\u200e");
         }
         sb2.append(str);
-        if (C1389o.m37254o()) {
+        if (C1389o.m37257o()) {
             sb2.append("\u2069");
         }
         return sb2.toString();
     }
 
-    public static String m37419o(long j, boolean z, boolean z2) {
+    public static String m37422o(long j, boolean z, boolean z2) {
         int i;
         double d;
         if (z2) {
-            if (j < EnumC6459p.f20143P.mo20395b(1.0d)) {
-                return C4403w.m27844o2(R.string.xBytes, (int) j);
+            if (j < EnumC6459p.f20143P.mo20396b(1.0d)) {
+                return C4403w.m27846o2(R.string.xBytes, (int) j);
             }
-            if (j < EnumC6459p.f20144Q.mo20395b(1.0d)) {
+            if (j < EnumC6459p.f20144Q.mo20396b(1.0d)) {
                 i = R.string.fileSize_KB;
-                d = EnumC6459p.f20154a.m20399e(j);
-            } else if (j < EnumC6459p.f20145R.mo20395b(1.0d)) {
+                d = EnumC6459p.f20154a.m20400e(j);
+            } else if (j < EnumC6459p.f20145R.mo20396b(1.0d)) {
                 i = R.string.fileSize_MB;
-                d = EnumC6459p.f20154a.m20397g(j);
+                d = EnumC6459p.f20154a.m20398g(j);
             } else {
                 i = R.string.fileSize_GB;
-                d = EnumC6459p.f20154a.m20401c(j);
+                d = EnumC6459p.f20154a.m20402c(j);
             }
-        } else if (j < EnumC6459p.f20156b.mo20395b(1.0d)) {
-            return C4403w.m27844o2(R.string.xBytes, (int) j);
+        } else if (j < EnumC6459p.f20156b.mo20396b(1.0d)) {
+            return C4403w.m27846o2(R.string.xBytes, (int) j);
         } else {
-            if (j < EnumC6459p.f20158c.mo20395b(1.0d)) {
+            if (j < EnumC6459p.f20158c.mo20396b(1.0d)) {
                 i = R.string.fileSize_KiB;
-                d = EnumC6459p.f20154a.m20398f(j);
-            } else if (j < EnumC6459p.f20140M.mo20395b(1.0d)) {
+                d = EnumC6459p.f20154a.m20399f(j);
+            } else if (j < EnumC6459p.f20140M.mo20396b(1.0d)) {
                 i = R.string.fileSize_MiB;
-                d = EnumC6459p.f20154a.m20396h(j);
+                d = EnumC6459p.f20154a.m20397h(j);
             } else {
                 i = R.string.fileSize_GiB;
-                d = EnumC6459p.f20154a.m20400d(j);
+                d = EnumC6459p.f20154a.m20401d(j);
             }
         }
         Object[] objArr = new Object[1];
-        objArr[0] = z ? C4403w.m27943R(d) : m37437f((long) d);
-        return C4403w.m27865j1(i, objArr);
+        objArr[0] = z ? C4403w.m27945R(d) : m37440f((long) d);
+        return C4403w.m27867j1(i, objArr);
     }
 
-    public static String m37418o0(String str) {
-        return C4403w.m27984G2() ? m37422m0(str) : m37420n0(str);
+    public static String m37421o0(String str) {
+        return C4403w.m27986G2() ? m37425m0(str) : m37423n0(str);
     }
 
-    public static String m37417p(String str) {
+    public static String m37420p(String str) {
         StringBuilder sb2 = new StringBuilder(str.length());
         for (int i = 0; i < str.length(); i++) {
             char charAt = str.charAt(i);
@@ -1001,7 +1001,7 @@ public class C1363c0 {
         return sb2.toString();
     }
 
-    public static CharSequence m37416q(CharSequence charSequence, CharSequence... charSequenceArr) {
+    public static CharSequence m37419q(CharSequence charSequence, CharSequence... charSequenceArr) {
         boolean z;
         int length = charSequence.length();
         int length2 = charSequenceArr.length;
@@ -1028,7 +1028,7 @@ public class C1363c0 {
         }
         CharSequence spannableStringBuilder = z2 ? new SpannableStringBuilder() : new StringBuilder(i2);
         for (CharSequence charSequence3 : charSequenceArr) {
-            if (!C5070i.m24061i(charSequence3)) {
+            if (!C5070i.m24062i(charSequence3)) {
                 if (z) {
                     z = false;
                 } else if (z2) {
@@ -1046,14 +1046,14 @@ public class C1363c0 {
         return spannableStringBuilder;
     }
 
-    public static CharSequence m37415r(CharSequence charSequence, CharSequence charSequence2) {
-        return m37416q(" – ", charSequence, charSequence2);
+    public static CharSequence m37418r(CharSequence charSequence, CharSequence charSequence2) {
+        return m37419q(" – ", charSequence, charSequence2);
     }
 
-    public static int m37414s(String str, int i, int i2, AbstractC1365b bVar) {
+    public static int m37417s(String str, int i, int i2, AbstractC1365b bVar) {
         int i3 = 0;
         while (i < i2) {
-            if (bVar.mo22712a(str.charAt(i))) {
+            if (bVar.mo22713a(str.charAt(i))) {
                 i3++;
             }
             i++;
@@ -1061,26 +1061,26 @@ public class C1363c0 {
         return i3;
     }
 
-    public static boolean m37413t(String str, String str2) {
-        return m37465I(str, str2, 0, null) != str;
+    public static boolean m37416t(String str, String str2) {
+        return m37468I(str, str2, 0, null) != str;
     }
 
-    public static void m37412u(CharSequence charSequence, int i) {
+    public static void m37415u(CharSequence charSequence, int i) {
         C5132o[] oVarArr = charSequence instanceof Spannable ? (C5132o[]) ((Spannable) charSequence).getSpans(0, charSequence.length(), C5132o.class) : null;
         if (oVarArr != null) {
             for (C5132o oVar : oVarArr) {
                 if (oVar != null) {
-                    oVar.m23850l(i);
+                    oVar.m23851l(i);
                 }
             }
         }
     }
 
-    public static String m37411v(String str, String str2) {
+    public static String m37414v(String str, String str2) {
         char charAt;
         if (!(str.length() == 0 || str2.length() == 0)) {
             int i = 0;
-            String x = m37409x(str + str2, false);
+            String x = m37412x(str + str2, false);
             if (x == null) {
                 return str2;
             }
@@ -1101,25 +1101,25 @@ public class C1363c0 {
         return str2;
     }
 
-    public static String m37410w(String str) {
-        return m37408y(str, true, true);
+    public static String m37413w(String str) {
+        return m37411y(str, true, true);
     }
 
-    public static String m37409x(String str, boolean z) {
-        return m37408y(str, true, z);
+    public static String m37412x(String str, boolean z) {
+        return m37411y(str, true, z);
     }
 
-    public static String m37408y(String str, boolean z, boolean z2) {
+    public static String m37411y(String str, boolean z, boolean z2) {
         String D;
         int length;
-        if (C5070i.m24061i(str) || (length = (D = m37470D(str)).length()) == 0) {
+        if (C5070i.m24062i(str) || (length = (D = m37473D(str)).length()) == 0) {
             return str;
         }
-        String a = C1371f0.m37391a(D, z2);
+        String a = C1371f0.m37394a(D, z2);
         int i = 0;
         while (a == null && i < length) {
             i++;
-            a = C1371f0.m37391a(D.substring(0, length - i), z2);
+            a = C1371f0.m37394a(D.substring(0, length - i), z2);
         }
         if (a != null) {
             return a;
@@ -1127,10 +1127,10 @@ public class C1363c0 {
         if (z) {
             D = '+' + D;
         }
-        return m37440d0(D);
+        return m37443d0(D);
     }
 
-    public static String m37407z(String str) {
+    public static String m37410z(String str) {
         if (str.isEmpty()) {
             return str;
         }

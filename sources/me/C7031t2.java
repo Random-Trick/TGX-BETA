@@ -22,19 +22,19 @@ import p139jb.AbstractRunnableC5910b;
 import td.AbstractC9323v4;
 
 public class C7031t2 extends FrameLayoutFix {
-    public Object f22311M;
-    public boolean f22312N;
-    public boolean f22313O;
-    public boolean f22314P;
-    public final ViewTreeObserver.OnPreDrawListener f22315Q = ViewTreeObserver$OnPreDrawListenerC7024s2.f22289a;
-    public C1408x.AbstractC1409a f22316R;
-    public boolean f22317S;
-    public AbstractRunnableC5910b f22318T;
-    public int f22319U;
-    public long f22320V;
-    public boolean f22321W;
-    public int f22322a0;
-    public int f22323b0;
+    public Object f22314M;
+    public boolean f22315N;
+    public boolean f22316O;
+    public boolean f22317P;
+    public final ViewTreeObserver.OnPreDrawListener f22318Q = ViewTreeObserver$OnPreDrawListenerC7024s2.f22292a;
+    public C1408x.AbstractC1409a f22319R;
+    public boolean f22320S;
+    public AbstractRunnableC5910b f22321T;
+    public int f22322U;
+    public long f22323V;
+    public boolean f22324W;
+    public int f22325a0;
+    public int f22326b0;
 
     public class C7032a extends AbstractRunnableC5910b {
         public C7032a() {
@@ -42,22 +42,22 @@ public class C7031t2 extends FrameLayoutFix {
 
         @Override
         public void mo1364b() {
-            C7031t2.this.getViewTreeObserver().removeOnPreDrawListener(C7031t2.this.f22315Q);
+            C7031t2.this.getViewTreeObserver().removeOnPreDrawListener(C7031t2.this.f22318Q);
             C7031t2.this.invalidate();
         }
     }
 
     public class C7033b extends AbstractRunnableC5910b {
-        public final boolean f22325M;
+        public final boolean f22328M;
 
         public C7033b(boolean z) {
-            this.f22325M = z;
+            this.f22328M = z;
         }
 
         @Override
         public void mo1364b() {
-            C7031t2.this.f22316R.mo14480j(this.f22325M);
-            C7031t2.this.getViewTreeObserver().removeOnPreDrawListener(C7031t2.this.f22315Q);
+            C7031t2.this.f22319R.mo14479j(this.f22328M);
+            C7031t2.this.getViewTreeObserver().removeOnPreDrawListener(C7031t2.this.f22318Q);
             C7031t2.this.invalidate();
         }
     }
@@ -110,26 +110,26 @@ public class C7031t2 extends FrameLayoutFix {
     }
 
     private void setKeyboardVisible(boolean z) {
-        if (this.f22317S != z) {
-            this.f22317S = z;
-            AbstractRunnableC5910b bVar = this.f22318T;
+        if (this.f22320S != z) {
+            this.f22320S = z;
+            AbstractRunnableC5910b bVar = this.f22321T;
             if (bVar != null) {
-                bVar.m21857c();
-                this.f22318T = null;
+                bVar.m21858c();
+                this.f22321T = null;
             }
-            if (this.f22316R != null) {
-                getViewTreeObserver().removeOnPreDrawListener(this.f22315Q);
-                getViewTreeObserver().addOnPreDrawListener(this.f22315Q);
+            if (this.f22319R != null) {
+                getViewTreeObserver().removeOnPreDrawListener(this.f22318Q);
+                getViewTreeObserver().addOnPreDrawListener(this.f22318Q);
                 if (Build.VERSION.SDK_INT >= 21) {
-                    this.f22316R.mo14480j(z);
-                    AbstractRunnableC5910b e = new C7032a().m21855e(C1379j0.m37313o());
-                    this.f22318T = e;
-                    C1379j0.m37332e0(e, 20L);
+                    this.f22319R.mo14479j(z);
+                    AbstractRunnableC5910b e = new C7032a().m21856e(C1379j0.m37316o());
+                    this.f22321T = e;
+                    C1379j0.m37335e0(e, 20L);
                     return;
                 }
-                AbstractRunnableC5910b e2 = new C7033b(z).m21855e(C1379j0.m37313o());
-                this.f22318T = e2;
-                C1379j0.m37332e0(e2, 2L);
+                AbstractRunnableC5910b e2 = new C7033b(z).m21856e(C1379j0.m37316o());
+                this.f22321T = e2;
+                C1379j0.m37335e0(e2, 2L);
             }
         }
     }
@@ -142,12 +142,12 @@ public class C7031t2 extends FrameLayoutFix {
         } else if (i == 5) {
             windowInsets = windowInsets.replaceSystemWindowInsets(0, windowInsets.getSystemWindowInsetTop(), windowInsets.getSystemWindowInsetRight(), windowInsets.getSystemWindowInsetBottom());
         }
-        marginLayoutParams.leftMargin = this.f22321W ? 0 : windowInsets.getSystemWindowInsetLeft();
+        marginLayoutParams.leftMargin = this.f22324W ? 0 : windowInsets.getSystemWindowInsetLeft();
         marginLayoutParams.topMargin = z ? 0 : windowInsets.getSystemWindowInsetTop();
-        marginLayoutParams.rightMargin = this.f22321W ? 0 : windowInsets.getSystemWindowInsetRight();
+        marginLayoutParams.rightMargin = this.f22324W ? 0 : windowInsets.getSystemWindowInsetRight();
         int systemWindowInsetBottom = windowInsets.getSystemWindowInsetBottom();
-        marginLayoutParams.bottomMargin = (this.f22312N || m18039X1(view, systemWindowInsetBottom)) ? 0 : systemWindowInsetBottom;
-        if (C1379j0.m37307r(getContext()).m14616B0(view, marginLayoutParams.leftMargin, marginLayoutParams.topMargin, marginLayoutParams.rightMargin, systemWindowInsetBottom)) {
+        marginLayoutParams.bottomMargin = (this.f22315N || m18039X1(view, systemWindowInsetBottom)) ? 0 : systemWindowInsetBottom;
+        if (C1379j0.m37310r(getContext()).m14616B0(view, marginLayoutParams.leftMargin, marginLayoutParams.topMargin, marginLayoutParams.rightMargin, systemWindowInsetBottom)) {
             marginLayoutParams.bottomMargin = 0;
             marginLayoutParams.rightMargin = 0;
             marginLayoutParams.topMargin = 0;
@@ -165,12 +165,12 @@ public class C7031t2 extends FrameLayoutFix {
         if (measureTarget != null) {
             int measuredWidth = measureTarget.getMeasuredWidth();
             int measuredHeight = measureTarget.getMeasuredHeight();
-            int i = this.f22322a0;
-            if (i != measuredHeight && i != 0 && measuredWidth == this.f22323b0 && measuredWidth > 0) {
+            int i = this.f22325a0;
+            if (i != measuredHeight && i != 0 && measuredWidth == this.f22326b0 && measuredWidth > 0) {
                 m18042U1(measuredHeight - i, measuredHeight < i ? i - measuredHeight : 0);
             }
-            this.f22322a0 = measuredHeight;
-            this.f22323b0 = measuredWidth;
+            this.f22325a0 = measuredHeight;
+            this.f22326b0 = measuredWidth;
         }
     }
 
@@ -186,10 +186,10 @@ public class C7031t2 extends FrameLayoutFix {
         int systemWindowInsetTop = windowInsets.getSystemWindowInsetTop();
         int systemWindowInsetRight = windowInsets.getSystemWindowInsetRight();
         int systemWindowInsetBottom = windowInsets.getSystemWindowInsetBottom();
-        if (this.f22314P || C1379j0.m37307r(getContext()).m14616B0(view, systemWindowInsetLeft, systemWindowInsetTop, systemWindowInsetRight, systemWindowInsetBottom)) {
+        if (this.f22317P || C1379j0.m37310r(getContext()).m14616B0(view, systemWindowInsetLeft, systemWindowInsetTop, systemWindowInsetRight, systemWindowInsetBottom)) {
             windowInsets.replaceSystemWindowInsets(0, 0, 0, 0);
         } else {
-            if (this.f22312N || m18039X1(view, systemWindowInsetBottom)) {
+            if (this.f22315N || m18039X1(view, systemWindowInsetBottom)) {
                 windowInsets.replaceSystemWindowInsets(systemWindowInsetLeft, systemWindowInsetTop, systemWindowInsetRight, 0);
             }
             AbstractC9323v4<?> o9 = AbstractC9323v4.m9196o9(view);
@@ -201,9 +201,9 @@ public class C7031t2 extends FrameLayoutFix {
     }
 
     public void m18045Q1(boolean z) {
-        this.f22312N = z;
+        this.f22315N = z;
         if (Build.VERSION.SDK_INT >= 21) {
-            C1379j0.m37324i0(this);
+            C1379j0.m37327i0(this);
             setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() {
                 @Override
                 public final WindowInsets onApplyWindowInsets(View view, WindowInsets windowInsets) {
@@ -216,38 +216,38 @@ public class C7031t2 extends FrameLayoutFix {
     }
 
     public final void m18042U1(int i, int i2) {
-        if (Math.abs(i) > Math.max(C1357a0.m37536n(), Math.max(C1357a0.m37541i(116.0f), (int) Log.TAG_YOUTUBE))) {
-            if (!this.f22312N && !this.f22314P) {
+        if (Math.abs(i) > Math.max(C1357a0.m37539n(), Math.max(C1357a0.m37544i(116.0f), (int) Log.TAG_YOUTUBE))) {
+            if (!this.f22315N && !this.f22317P) {
                 if (!C4184b.f14123p) {
-                    C1408x.m37086e(Math.abs(i));
+                    C1408x.m37089e(Math.abs(i));
                 } else if (i < 0) {
-                    if (this.f22320V != 0 && Math.signum(this.f22319U) == Math.signum(i) && SystemClock.uptimeMillis() - this.f22320V < 250) {
-                        i += this.f22319U;
+                    if (this.f22323V != 0 && Math.signum(this.f22322U) == Math.signum(i) && SystemClock.uptimeMillis() - this.f22323V < 250) {
+                        i += this.f22322U;
                     }
-                    C1408x.m37086e(-i);
+                    C1408x.m37089e(-i);
                 }
             }
             setKeyboardVisible(i < 0);
-            this.f22320V = 0L;
+            this.f22323V = 0L;
             return;
         }
-        this.f22320V = SystemClock.uptimeMillis();
-        this.f22319U = i;
+        this.f22323V = SystemClock.uptimeMillis();
+        this.f22322U = i;
     }
 
     public void m18041V1(Object obj) {
         if (Build.VERSION.SDK_INT >= 21) {
             WindowInsets windowInsets = (WindowInsets) obj;
             if (this instanceof C6864e) {
-                C1357a0.m37524z(windowInsets.getSystemWindowInsetTop());
+                C1357a0.m37527z(windowInsets.getSystemWindowInsetTop());
             }
             boolean z = true;
-            if (this.f22311M != null) {
+            if (this.f22314M != null) {
                 int systemWindowInsetBottom = windowInsets.getSystemWindowInsetBottom();
-                int abs = Math.abs(((WindowInsets) this.f22311M).getSystemWindowInsetTop() - windowInsets.getSystemWindowInsetTop());
-                int M1 = this.f22312N ? 0 : m18048M1(this.f22311M) - systemWindowInsetBottom;
-                int O1 = m18046O1(this.f22311M) - m18046O1(windowInsets);
-                int N1 = m18047N1(this.f22311M) - m18047N1(windowInsets);
+                int abs = Math.abs(((WindowInsets) this.f22314M).getSystemWindowInsetTop() - windowInsets.getSystemWindowInsetTop());
+                int M1 = this.f22315N ? 0 : m18048M1(this.f22314M) - systemWindowInsetBottom;
+                int O1 = m18046O1(this.f22314M) - m18046O1(windowInsets);
+                int N1 = m18047N1(this.f22314M) - m18047N1(windowInsets);
                 if (O1 == 0 && N1 == 0 && M1 != 0) {
                     m18042U1(M1, systemWindowInsetBottom);
                 }
@@ -255,7 +255,7 @@ public class C7031t2 extends FrameLayoutFix {
                     z = false;
                 }
             }
-            this.f22311M = windowInsets;
+            this.f22314M = windowInsets;
             if (z) {
                 requestLayout();
             }
@@ -263,11 +263,11 @@ public class C7031t2 extends FrameLayoutFix {
     }
 
     public void m18040W1() {
-        this.f22321W = true;
+        this.f22324W = true;
     }
 
     public final boolean m18039X1(View view, int i) {
-        return this.f22313O && i <= C1357a0.m37536n();
+        return this.f22316O && i <= C1357a0.m37539n();
     }
 
     @Override
@@ -283,7 +283,7 @@ public class C7031t2 extends FrameLayoutFix {
     @Override
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
         if (motionEvent.getAction() == 0) {
-            C4862d.m24934w().m24961T(false);
+            C4862d.m24935w().m24962T(false);
         }
         return super.onInterceptTouchEvent(motionEvent);
     }
@@ -300,15 +300,15 @@ public class C7031t2 extends FrameLayoutFix {
 
     @Override
     public void onMeasure(int i, int i2) {
-        if (Build.VERSION.SDK_INT >= 21 && this.f22311M != null) {
+        if (Build.VERSION.SDK_INT >= 21 && this.f22314M != null) {
             for (int i3 = 0; i3 < getChildCount(); i3++) {
                 View childAt = getChildAt(i3);
                 if (childAt != null) {
                     FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) childAt.getLayoutParams();
                     if (childAt.getFitsSystemWindows()) {
-                        m18049L1(childAt, this.f22311M, 0);
+                        m18049L1(childAt, this.f22314M, 0);
                     } else {
-                        m18052G1(childAt, layoutParams, this.f22311M, layoutParams.gravity, true);
+                        m18052G1(childAt, layoutParams, this.f22314M, layoutParams.gravity, true);
                     }
                 }
             }
@@ -323,19 +323,19 @@ public class C7031t2 extends FrameLayoutFix {
     }
 
     public void setIgnoreAll(boolean z) {
-        this.f22314P = z;
+        this.f22317P = z;
     }
 
     public void setIgnoreBottom(boolean z) {
-        this.f22312N = z;
+        this.f22315N = z;
     }
 
     public void setIgnoreSystemNavigationBar(boolean z) {
-        this.f22313O = z;
+        this.f22316O = z;
     }
 
     public void setKeyboardListener(C1408x.AbstractC1409a aVar) {
-        this.f22316R = aVar;
+        this.f22319R = aVar;
     }
 
     @Override

@@ -26,32 +26,32 @@ public class C4926a implements AbstractC4950s {
     }
 
     @Override
-    public void mo24392a(AbstractC1159m mVar, int i) {
-        mo24391b(mVar, i, false);
+    public void mo24393a(AbstractC1159m mVar, int i) {
+        mo24392b(mVar, i, false);
     }
 
     @Override
-    public void mo24391b(AbstractC1159m mVar, int i, boolean z) {
+    public void mo24392b(AbstractC1159m mVar, int i, boolean z) {
         Uri.Builder builder = new Uri.Builder();
-        builder.appendQueryParameter("backendName", mVar.mo38263b());
-        builder.appendQueryParameter("priority", String.valueOf(C6307a.m20688a(mVar.mo38261d())));
-        if (mVar.mo38262c() != null) {
-            builder.appendQueryParameter("extras", Base64.encodeToString(mVar.mo38262c(), 0));
+        builder.appendQueryParameter("backendName", mVar.mo38266b());
+        builder.appendQueryParameter("priority", String.valueOf(C6307a.m20689a(mVar.mo38264d())));
+        if (mVar.mo38265c() != null) {
+            builder.appendQueryParameter("extras", Base64.encodeToString(mVar.mo38265c(), 0));
         }
         Intent intent = new Intent(this.f16799a, AlarmManagerSchedulerBroadcastReceiver.class);
         intent.setData(builder.build());
         intent.putExtra("attemptNumber", i);
-        if (z || !m24438c(intent)) {
-            long y = this.f16800b.mo23668y(mVar);
-            long g = this.f16802d.m24429g(mVar.mo38261d(), y, i);
-            C4118a.m28883b("AlarmManagerScheduler", "Scheduling upload for context %s in %dms(Backend next call timestamp %d). Attempt %d", mVar, Long.valueOf(g), Long.valueOf(y), Integer.valueOf(i));
-            this.f16801c.set(3, this.f16803e.mo21442a() + g, PendingIntent.getBroadcast(this.f16799a, 0, intent, 0));
+        if (z || !m24439c(intent)) {
+            long y = this.f16800b.mo23669y(mVar);
+            long g = this.f16802d.m24430g(mVar.mo38264d(), y, i);
+            C4118a.m28885b("AlarmManagerScheduler", "Scheduling upload for context %s in %dms(Backend next call timestamp %d). Attempt %d", mVar, Long.valueOf(g), Long.valueOf(y), Integer.valueOf(i));
+            this.f16801c.set(3, this.f16803e.mo21443a() + g, PendingIntent.getBroadcast(this.f16799a, 0, intent, 0));
             return;
         }
-        C4118a.m28884a("AlarmManagerScheduler", "Upload for context %s is already scheduled. Returning...", mVar);
+        C4118a.m28886a("AlarmManagerScheduler", "Upload for context %s is already scheduled. Returning...", mVar);
     }
 
-    public boolean m24438c(Intent intent) {
+    public boolean m24439c(Intent intent) {
         return PendingIntent.getBroadcast(this.f16799a, 0, intent, Log.TAG_TDLIB_FILES) != null;
     }
 

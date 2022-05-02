@@ -9,17 +9,17 @@ class C5695d3 {
         this.f18339a = map;
     }
 
-    public C5695d3 m22284a(EnumC5700e3 e3Var) {
+    public C5695d3 m22285a(EnumC5700e3 e3Var) {
         this.f18339a.put(e3Var, 2);
         return this;
     }
 
-    public C5695d3 m22283b(EnumC5700e3 e3Var) {
+    public C5695d3 m22284b(EnumC5700e3 e3Var) {
         this.f18339a.put(e3Var, 1);
         return this;
     }
 
-    public C5695d3 m22282c(EnumC5700e3 e3Var) {
+    public C5695d3 m22283c(EnumC5700e3 e3Var) {
         this.f18339a.put(e3Var, 3);
         return this;
     }

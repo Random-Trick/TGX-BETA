@@ -20,26 +20,26 @@ public final class C4113c {
         }
 
         @Override
-        public Uri mo28894a() {
+        public Uri mo28896a() {
             return this.f13878a;
         }
 
         @Override
-        public void mo28893b() {
+        public void mo28895b() {
         }
 
         @Override
-        public ClipDescription mo28892c() {
+        public ClipDescription mo28894c() {
             return this.f13879b;
         }
     }
 
     public interface AbstractC4116c {
-        Uri mo28894a();
+        Uri mo28896a();
 
-        void mo28893b();
+        void mo28895b();
 
-        ClipDescription mo28892c();
+        ClipDescription mo28894c();
     }
 
     public C4113c(Uri uri, ClipDescription clipDescription, Uri uri2) {
@@ -50,23 +50,23 @@ public final class C4113c {
         }
     }
 
-    public static C4113c m28895d(Object obj) {
+    public static C4113c m28897d(Object obj) {
         if (obj != null && Build.VERSION.SDK_INT >= 25) {
             return new C4113c(new C4114a(obj));
         }
         return null;
     }
 
-    public Uri m28898a() {
-        return this.f13876a.mo28894a();
+    public Uri m28900a() {
+        return this.f13876a.mo28896a();
     }
 
-    public ClipDescription m28897b() {
-        return this.f13876a.mo28892c();
+    public ClipDescription m28899b() {
+        return this.f13876a.mo28894c();
     }
 
-    public void m28896c() {
-        this.f13876a.mo28893b();
+    public void m28898c() {
+        this.f13876a.mo28895b();
     }
 
     public static final class C4114a implements AbstractC4116c {
@@ -77,17 +77,17 @@ public final class C4113c {
         }
 
         @Override
-        public Uri mo28894a() {
+        public Uri mo28896a() {
             return this.f13877a.getContentUri();
         }
 
         @Override
-        public void mo28893b() {
+        public void mo28895b() {
             this.f13877a.requestPermission();
         }
 
         @Override
-        public ClipDescription mo28892c() {
+        public ClipDescription mo28894c() {
             return this.f13877a.getDescription();
         }
 

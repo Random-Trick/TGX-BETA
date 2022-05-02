@@ -6,8 +6,8 @@ import java.io.InputStream;
 import java.util.Objects;
 
 public final class C10409q extends FilterInputStream {
-    public long f33477b = -1;
-    public long f33476a = 1048577;
+    public long f33480b = -1;
+    public long f33479a = 1048577;
 
     public C10409q(InputStream inputStream, long j) {
         super(inputStream);
@@ -16,23 +16,23 @@ public final class C10409q extends FilterInputStream {
 
     @Override
     public final int available() {
-        return (int) Math.min(((FilterInputStream) this).in.available(), this.f33476a);
+        return (int) Math.min(((FilterInputStream) this).in.available(), this.f33479a);
     }
 
     @Override
     public final synchronized void mark(int i) {
         ((FilterInputStream) this).in.mark(i);
-        this.f33477b = this.f33476a;
+        this.f33480b = this.f33479a;
     }
 
     @Override
     public final int read() {
-        if (this.f33476a == 0) {
+        if (this.f33479a == 0) {
             return -1;
         }
         int read = ((FilterInputStream) this).in.read();
         if (read != -1) {
-            this.f33476a--;
+            this.f33479a--;
         }
         return read;
     }
@@ -41,9 +41,9 @@ public final class C10409q extends FilterInputStream {
     public final synchronized void reset() {
         if (!((FilterInputStream) this).in.markSupported()) {
             throw new IOException("Mark not supported");
-        } else if (this.f33477b != -1) {
+        } else if (this.f33480b != -1) {
             ((FilterInputStream) this).in.reset();
-            this.f33476a = this.f33477b;
+            this.f33479a = this.f33480b;
         } else {
             throw new IOException("Mark not set");
         }
@@ -51,20 +51,20 @@ public final class C10409q extends FilterInputStream {
 
     @Override
     public final long skip(long j) {
-        long skip = ((FilterInputStream) this).in.skip(Math.min(j, this.f33476a));
-        this.f33476a -= skip;
+        long skip = ((FilterInputStream) this).in.skip(Math.min(j, this.f33479a));
+        this.f33479a -= skip;
         return skip;
     }
 
     @Override
     public final int read(byte[] bArr, int i, int i2) {
-        long j = this.f33476a;
+        long j = this.f33479a;
         if (j == 0) {
             return -1;
         }
         int read = ((FilterInputStream) this).in.read(bArr, i, (int) Math.min(i2, j));
         if (read != -1) {
-            this.f33476a -= read;
+            this.f33479a -= read;
         }
         return read;
     }

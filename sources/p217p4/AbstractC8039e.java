@@ -6,7 +6,7 @@ import p020b5.C1186a;
 import p216p3.AbstractC8029i;
 
 public abstract class AbstractC8039e extends AbstractC8029i<C8046j, AbstractC8047k, C8043h> implements AbstractC8042g {
-    public final String f26199n;
+    public final String f26202n;
 
     public class C8040a extends AbstractC8047k {
         public C8040a() {
@@ -14,26 +14,26 @@ public abstract class AbstractC8039e extends AbstractC8029i<C8046j, AbstractC804
 
         @Override
         public void release() {
-            AbstractC8039e.this.mo13765t(this);
+            AbstractC8039e.this.mo13764t(this);
         }
     }
 
     public AbstractC8039e(String str) {
         super(new C8046j[2], new AbstractC8047k[2]);
-        this.f26199n = str;
-        m13762w(Log.TAG_CAMERA);
+        this.f26202n = str;
+        m13761w(Log.TAG_CAMERA);
     }
 
-    public final C8043h mo13728k(Throwable th) {
+    public final C8043h mo13727k(Throwable th) {
         return new C8043h("Unexpected decode error", th);
     }
 
     public abstract AbstractC8041f mo5207B(byte[] bArr, int i, boolean z);
 
-    public final C8043h mo13727l(C8046j jVar, AbstractC8047k kVar, boolean z) {
+    public final C8043h mo13726l(C8046j jVar, AbstractC8047k kVar, boolean z) {
         try {
-            ByteBuffer byteBuffer = (ByteBuffer) C1186a.m38185e(jVar.f26132c);
-            kVar.m13721e(jVar.f26126N, mo5207B(byteBuffer.array(), byteBuffer.limit(), z), jVar.f26202R);
+            ByteBuffer byteBuffer = (ByteBuffer) C1186a.m38188e(jVar.f26135c);
+            kVar.m13720e(jVar.f26129N, mo5207B(byteBuffer.array(), byteBuffer.limit(), z), jVar.f26205R);
             kVar.clearFlag(Integer.MIN_VALUE);
             return null;
         } catch (C8043h e) {
@@ -42,19 +42,19 @@ public abstract class AbstractC8039e extends AbstractC8029i<C8046j, AbstractC804
     }
 
     @Override
-    public final String mo13106b() {
-        return this.f26199n;
+    public final String mo13105b() {
+        return this.f26202n;
     }
 
     @Override
-    public void mo13074c(long j) {
+    public void mo13073c(long j) {
     }
 
-    public final C8046j mo13730i() {
+    public final C8046j mo13729i() {
         return new C8046j();
     }
 
-    public final AbstractC8047k mo13729j() {
+    public final AbstractC8047k mo13728j() {
         return new C8040a();
     }
 }

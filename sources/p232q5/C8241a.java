@@ -12,18 +12,18 @@ import p261s5.C8645b;
 public class C8241a {
     @RecentlyNullable
     @Deprecated
-    public static byte[] m13058a(@RecentlyNonNull Context context, @RecentlyNonNull String str) {
+    public static byte[] m13057a(@RecentlyNonNull Context context, @RecentlyNonNull String str) {
         MessageDigest b;
-        PackageInfo d = C8645b.m11820a(context).m11821d(str, 64);
+        PackageInfo d = C8645b.m11819a(context).m11820d(str, 64);
         Signature[] signatureArr = d.signatures;
-        if (signatureArr == null || signatureArr.length != 1 || (b = m13057b("SHA1")) == null) {
+        if (signatureArr == null || signatureArr.length != 1 || (b = m13056b("SHA1")) == null) {
             return null;
         }
         return b.digest(d.signatures[0].toByteArray());
     }
 
     @RecentlyNullable
-    public static MessageDigest m13057b(@RecentlyNonNull String str) {
+    public static MessageDigest m13056b(@RecentlyNonNull String str) {
         MessageDigest messageDigest;
         for (int i = 0; i < 2; i++) {
             try {

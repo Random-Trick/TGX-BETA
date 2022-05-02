@@ -18,14 +18,14 @@ public final class C3979g implements AbstractC3989k {
 
     public static final class C3980a implements C3987j.AbstractC3988a {
         @Override
-        public boolean mo29421a(SSLSocket sSLSocket) {
-            C8298k.m12934e(sSLSocket, "sslSocket");
-            return C2071c.f7304f.m35709b() && (sSLSocket instanceof BCSSLSocket);
+        public boolean mo29423a(SSLSocket sSLSocket) {
+            C8298k.m12933e(sSLSocket, "sslSocket");
+            return C2071c.f7304f.m35712b() && (sSLSocket instanceof BCSSLSocket);
         }
 
         @Override
-        public AbstractC3989k mo29420b(SSLSocket sSLSocket) {
-            C8298k.m12934e(sSLSocket, "sslSocket");
+        public AbstractC3989k mo29422b(SSLSocket sSLSocket) {
+            C8298k.m12933e(sSLSocket, "sslSocket");
             return new C3979g();
         }
     }
@@ -34,7 +34,7 @@ public final class C3979g implements AbstractC3989k {
         public C3981b() {
         }
 
-        public final C3987j.AbstractC3988a m29428a() {
+        public final C3987j.AbstractC3988a m29430a() {
             return C3979g.f13356a;
         }
 
@@ -44,19 +44,19 @@ public final class C3979g implements AbstractC3989k {
     }
 
     @Override
-    public boolean mo29419a(SSLSocket sSLSocket) {
-        C8298k.m12934e(sSLSocket, "sslSocket");
+    public boolean mo29421a(SSLSocket sSLSocket) {
+        C8298k.m12933e(sSLSocket, "sslSocket");
         return sSLSocket instanceof BCSSLSocket;
     }
 
     @Override
-    public boolean mo29418b() {
-        return C2071c.f7304f.m35709b();
+    public boolean mo29420b() {
+        return C2071c.f7304f.m35712b();
     }
 
     @Override
-    public String mo29417c(SSLSocket sSLSocket) {
-        C8298k.m12934e(sSLSocket, "sslSocket");
+    public String mo29419c(SSLSocket sSLSocket) {
+        C8298k.m12933e(sSLSocket, "sslSocket");
         String applicationProtocol = ((BCSSLSocket) sSLSocket).getApplicationProtocol();
         if (applicationProtocol != null && (applicationProtocol.hashCode() != 0 || !applicationProtocol.equals(""))) {
             return applicationProtocol;
@@ -65,14 +65,14 @@ public final class C3979g implements AbstractC3989k {
     }
 
     @Override
-    public void mo29416d(SSLSocket sSLSocket, String str, List<? extends EnumC9064a0> list) {
-        C8298k.m12934e(sSLSocket, "sslSocket");
-        C8298k.m12934e(list, "protocols");
-        if (mo29419a(sSLSocket)) {
+    public void mo29418d(SSLSocket sSLSocket, String str, List<? extends EnumC9064a0> list) {
+        C8298k.m12933e(sSLSocket, "sslSocket");
+        C8298k.m12933e(list, "protocols");
+        if (mo29421a(sSLSocket)) {
             BCSSLSocket bCSSLSocket = (BCSSLSocket) sSLSocket;
             BCSSLParameters parameters = bCSSLSocket.getParameters();
-            C8298k.m12935d(parameters, "sslParameters");
-            Object[] array = C2083h.f7326c.m35679b(list).toArray(new String[0]);
+            C8298k.m12934d(parameters, "sslParameters");
+            Object[] array = C2083h.f7326c.m35682b(list).toArray(new String[0]);
             Objects.requireNonNull(array, "null cannot be cast to non-null type kotlin.Array<T>");
             parameters.setApplicationProtocols((String[]) array);
             bCSSLSocket.setParameters(parameters);

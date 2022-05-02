@@ -17,14 +17,14 @@ public final class HandlerC6148o0 extends HandlerC9849i {
     public final void handleMessage(Message message) {
         int i = message.what;
         if (i == 1) {
-            C6156q0.m21162v(this.f19492a);
+            C6156q0.m21163v(this.f19492a);
         } else if (i != 2) {
             StringBuilder sb2 = new StringBuilder(31);
             sb2.append("Unknown message id: ");
             sb2.append(i);
             Log.w("GoogleApiClientImpl", sb2.toString());
         } else {
-            C6156q0.m21163u(this.f19492a);
+            C6156q0.m21164u(this.f19492a);
         }
     }
 }

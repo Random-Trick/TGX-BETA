@@ -26,41 +26,41 @@ public final class C4346a extends AbstractC4349c {
     }
 
     public C4346a(AbstractC4352e eVar) {
-        C8298k.m12934e(eVar, "trustRootIndex");
+        C8298k.m12933e(eVar, "trustRootIndex");
         this.f14424b = eVar;
     }
 
     @Override
-    public List<Certificate> mo28222a(List<? extends Certificate> list, String str) {
-        C8298k.m12934e(list, "chain");
-        C8298k.m12934e(str, "hostname");
+    public List<Certificate> mo28224a(List<? extends Certificate> list, String str) {
+        C8298k.m12933e(list, "chain");
+        C8298k.m12933e(str, "hostname");
         ArrayDeque arrayDeque = new ArrayDeque(list);
         ArrayList arrayList = new ArrayList();
         Object removeFirst = arrayDeque.removeFirst();
-        C8298k.m12935d(removeFirst, "queue.removeFirst()");
+        C8298k.m12934d(removeFirst, "queue.removeFirst()");
         arrayList.add(removeFirst);
         boolean z = false;
         for (int i = 0; i < 9; i++) {
             Object obj = arrayList.get(arrayList.size() - 1);
             Objects.requireNonNull(obj, "null cannot be cast to non-null type java.security.cert.X509Certificate");
             X509Certificate x509Certificate = (X509Certificate) obj;
-            X509Certificate a = this.f14424b.mo28212a(x509Certificate);
+            X509Certificate a = this.f14424b.mo28214a(x509Certificate);
             if (a != null) {
-                if (arrayList.size() > 1 || (!C8298k.m12937b(x509Certificate, a))) {
+                if (arrayList.size() > 1 || (!C8298k.m12936b(x509Certificate, a))) {
                     arrayList.add(a);
                 }
-                if (m28223b(a, a)) {
+                if (m28225b(a, a)) {
                     return arrayList;
                 }
                 z = true;
             } else {
                 Iterator it = arrayDeque.iterator();
-                C8298k.m12935d(it, "queue.iterator()");
+                C8298k.m12934d(it, "queue.iterator()");
                 while (it.hasNext()) {
                     Object next = it.next();
                     Objects.requireNonNull(next, "null cannot be cast to non-null type java.security.cert.X509Certificate");
                     X509Certificate x509Certificate2 = (X509Certificate) next;
-                    if (m28223b(x509Certificate, x509Certificate2)) {
+                    if (m28225b(x509Certificate, x509Certificate2)) {
                         it.remove();
                         arrayList.add(x509Certificate2);
                     }
@@ -74,8 +74,8 @@ public final class C4346a extends AbstractC4349c {
         throw new SSLPeerUnverifiedException("Certificate chain too long: " + arrayList);
     }
 
-    public final boolean m28223b(X509Certificate x509Certificate, X509Certificate x509Certificate2) {
-        if (!C8298k.m12937b(x509Certificate.getIssuerDN(), x509Certificate2.getSubjectDN())) {
+    public final boolean m28225b(X509Certificate x509Certificate, X509Certificate x509Certificate2) {
+        if (!C8298k.m12936b(x509Certificate.getIssuerDN(), x509Certificate2.getSubjectDN())) {
             return false;
         }
         try {
@@ -90,7 +90,7 @@ public final class C4346a extends AbstractC4349c {
         if (obj == this) {
             return true;
         }
-        return (obj instanceof C4346a) && C8298k.m12937b(((C4346a) obj).f14424b, this.f14424b);
+        return (obj instanceof C4346a) && C8298k.m12936b(((C4346a) obj).f14424b, this.f14424b);
     }
 
     public int hashCode() {

@@ -26,7 +26,7 @@ public final class C4109b {
 
         @Override
         public boolean commitContent(InputContentInfo inputContentInfo, int i, Bundle bundle) {
-            if (this.f13874a.mo8459a(C4113c.m28895d(inputContentInfo), i, bundle)) {
+            if (this.f13874a.mo8459a(C4113c.m28897d(inputContentInfo), i, bundle)) {
                 return true;
             }
             return super.commitContent(inputContentInfo, i, bundle);
@@ -43,7 +43,7 @@ public final class C4109b {
 
         @Override
         public boolean performPrivateCommand(String str, Bundle bundle) {
-            if (C4109b.m28899b(str, bundle, this.f13875a)) {
+            if (C4109b.m28901b(str, bundle, this.f13875a)) {
                 return true;
             }
             return super.performPrivateCommand(str, bundle);
@@ -55,17 +55,17 @@ public final class C4109b {
     }
 
     @Deprecated
-    public static InputConnection m28900a(InputConnection inputConnection, EditorInfo editorInfo, AbstractC4112c cVar) {
-        C1128d.m38331c(inputConnection, "inputConnection must be non-null");
-        C1128d.m38331c(editorInfo, "editorInfo must be non-null");
-        C1128d.m38331c(cVar, "onCommitContentListener must be non-null");
+    public static InputConnection m28902a(InputConnection inputConnection, EditorInfo editorInfo, AbstractC4112c cVar) {
+        C1128d.m38334c(inputConnection, "inputConnection must be non-null");
+        C1128d.m38334c(editorInfo, "editorInfo must be non-null");
+        C1128d.m38334c(cVar, "onCommitContentListener must be non-null");
         if (Build.VERSION.SDK_INT >= 25) {
             return new C4110a(inputConnection, false, cVar);
         }
-        return C4108a.m28902a(editorInfo).length == 0 ? inputConnection : new C4111b(inputConnection, false, cVar);
+        return C4108a.m28904a(editorInfo).length == 0 ? inputConnection : new C4111b(inputConnection, false, cVar);
     }
 
-    public static boolean m28899b(String str, Bundle bundle, AbstractC4112c cVar) {
+    public static boolean m28901b(String str, Bundle bundle, AbstractC4112c cVar) {
         boolean z;
         Throwable th;
         ResultReceiver resultReceiver;

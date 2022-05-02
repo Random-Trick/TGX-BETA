@@ -25,7 +25,7 @@ public final class C1949v extends AbstractC1781j1 {
     }
 
     @Override
-    public final Map mo35861h() {
+    public final Map mo35864h() {
         return this.f6991a;
     }
 
@@ -41,7 +41,7 @@ public final class C1949v extends AbstractC1781j1 {
         }
         Map.Entry entry = (Map.Entry) obj;
         entry.getClass();
-        AbstractC1735g0.m36036n(this.f6991a.f7062M, entry.getKey());
+        AbstractC1735g0.m36039n(this.f6991a.f7062M, entry.getKey());
         return true;
     }
 }

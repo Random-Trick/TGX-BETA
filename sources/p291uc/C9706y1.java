@@ -30,58 +30,58 @@ import p350yd.AbstractC10664f9;
 import p350yd.C10930q6;
 
 public class C9706y1 implements Client.AbstractC7865g {
-    public boolean f31534M;
-    public boolean f31535N;
-    public int f31536O;
-    public boolean f31537P;
-    public C7319d f31539R;
-    public int f31540S;
-    public int f31541T;
-    public String f31542U;
-    public TdApi.MessageSender f31543V;
-    public TdApi.SearchMessagesFilter f31544W;
-    public TdApi.Chat f31545X;
-    public C4737p7 f31546Y;
-    public AbstractC5123k f31547Z;
-    public final C9678w2 f31548a;
-    public long f31549a0;
-    public final C10930q6 f31550b;
-    public volatile Client.AbstractC7865g f31551b0;
-    public boolean f31552c;
-    public TdApi.Message[] f31553c0;
-    public int f31554d0;
-    public long f31555e0;
-    public boolean f31556f0;
-    public boolean f31557g0;
-    public boolean f31558h0;
-    public C7319d f31559i0;
-    public String f31560j0;
-    public int f31561k0;
-    public int f31562l0;
-    public boolean f31563m0;
-    public long f31565o0;
-    public long f31566p0;
-    public int f31567q0;
-    public int f31538Q = -1;
-    public final Object f31564n0 = new Object();
+    public boolean f31537M;
+    public boolean f31538N;
+    public int f31539O;
+    public boolean f31540P;
+    public C7319d f31542R;
+    public int f31543S;
+    public int f31544T;
+    public String f31545U;
+    public TdApi.MessageSender f31546V;
+    public TdApi.SearchMessagesFilter f31547W;
+    public TdApi.Chat f31548X;
+    public C4737p7 f31549Y;
+    public AbstractC5123k f31550Z;
+    public final C9678w2 f31551a;
+    public long f31552a0;
+    public final C10930q6 f31553b;
+    public volatile Client.AbstractC7865g f31554b0;
+    public boolean f31555c;
+    public TdApi.Message[] f31556c0;
+    public int f31557d0;
+    public long f31558e0;
+    public boolean f31559f0;
+    public boolean f31560g0;
+    public boolean f31561h0;
+    public C7319d f31562i0;
+    public String f31563j0;
+    public int f31564k0;
+    public int f31565l0;
+    public boolean f31566m0;
+    public long f31568o0;
+    public long f31569p0;
+    public int f31570q0;
+    public int f31541Q = -1;
+    public final Object f31567n0 = new Object();
 
     public class C9707a extends AbstractC5123k {
-        public final long f31569b;
-        public final AbstractC5918j f31570c;
+        public final long f31572b;
+        public final AbstractC5918j f31573c;
 
         public C9707a(long j, AbstractC5918j jVar) {
-            this.f31569b = j;
-            this.f31570c = jVar;
+            this.f31572b = j;
+            this.f31573c = jVar;
         }
 
         public void m7436e(TdApi.Object object, long j, AbstractC5918j jVar) {
-            C9706y1.this.f31537P = false;
+            C9706y1.this.f31540P = false;
             TdApi.SponsoredMessage sponsoredMessage = null;
-            C9706y1.this.f31547Z = null;
+            C9706y1.this.f31550Z = null;
             if (object.getConstructor() == -1384343080) {
                 sponsoredMessage = (TdApi.SponsoredMessage) object;
-            } else if (C9706y1.this.f31550b.m2949A1().m1504G()) {
-                sponsoredMessage = C4731p1.m26309a(C9706y1.this.f31550b);
+            } else if (C9706y1.this.f31553b.m2949A1().m1504G()) {
+                sponsoredMessage = C4731p1.m26310a(C9706y1.this.f31553b);
             }
             if (j == C9706y1.this.m7509H()) {
                 jVar.mo1330a(sponsoredMessage);
@@ -90,9 +90,9 @@ public class C9706y1 implements Client.AbstractC7865g {
 
         @Override
         public void mo7438c(final TdApi.Object object) {
-            final long j = this.f31569b;
-            final AbstractC5918j jVar = this.f31570c;
-            C1379j0.m37334d0(new Runnable() {
+            final long j = this.f31572b;
+            final AbstractC5918j jVar = this.f31573c;
+            C1379j0.m37337d0(new Runnable() {
                 @Override
                 public final void run() {
                     C9706y1.C9707a.this.m7436e(object, j, jVar);
@@ -102,16 +102,16 @@ public class C9706y1 implements Client.AbstractC7865g {
     }
 
     public class C9708b implements Client.AbstractC7865g {
-        public final boolean f31571M;
-        public final long f31573a;
-        public final boolean f31574b;
-        public final boolean f31575c;
+        public final boolean f31574M;
+        public final long f31576a;
+        public final boolean f31577b;
+        public final boolean f31578c;
 
         public C9708b(long j, boolean z, boolean z2, boolean z3) {
-            this.f31573a = j;
-            this.f31574b = z;
-            this.f31575c = z2;
-            this.f31571M = z3;
+            this.f31576a = j;
+            this.f31577b = z;
+            this.f31578c = z2;
+            this.f31574M = z3;
         }
 
         @Override
@@ -121,46 +121,46 @@ public class C9706y1 implements Client.AbstractC7865g {
     }
 
     public static class C9709c {
-        public final int f31576a;
-        public final int f31577b;
-        public final boolean f31578c;
-        public final int f31579d;
-        public final TdApi.MessageContent f31580e;
+        public final int f31579a;
+        public final int f31580b;
+        public final boolean f31581c;
+        public final int f31582d;
+        public final TdApi.MessageContent f31583e;
 
         public C9709c(int i, int i2, boolean z, int i3, TdApi.MessageContent messageContent) {
-            this.f31576a = i;
-            this.f31577b = i2;
-            this.f31578c = z;
-            this.f31579d = i3;
-            this.f31580e = messageContent;
+            this.f31579a = i;
+            this.f31580b = i2;
+            this.f31581c = z;
+            this.f31582d = i3;
+            this.f31583e = messageContent;
         }
     }
 
     public static class C9710d {
-        public int f31581a;
-        public JSONObject f31582b;
+        public int f31584a;
+        public JSONObject f31585b;
 
         public C9710d(int i, JSONObject jSONObject) {
-            this.f31581a = i;
-            this.f31582b = jSONObject;
+            this.f31584a = i;
+            this.f31585b = jSONObject;
         }
     }
 
     public C9706y1(C9678w2 w2Var) {
-        this.f31548a = w2Var;
-        this.f31550b = w2Var.m7645r0().mo4348c();
+        this.f31551a = w2Var;
+        this.f31553b = w2Var.m7645r0().mo4348c();
         m7449u0();
     }
 
     public static boolean m7510G(AbstractC10664f9 f9Var, List<TdApi.Message> list, C6035e<TdApi.User> eVar) {
-        String i1 = C4403w.m27869i1(R.string.json_ChatDemo);
-        if (!C5070i.m24061i(i1) && !i1.equals("0")) {
+        String i1 = C4403w.m27871i1(R.string.json_ChatDemo);
+        if (!C5070i.m24062i(i1) && !i1.equals("0")) {
             try {
                 return m7459p0(f9Var, list, eVar, i1);
             } catch (Throwable th) {
                 Log.m14725e("Cannot parse chat demo content", th, new Object[0]);
                 list.clear();
-                eVar.m21509b();
+                eVar.m21510b();
             }
         }
         try {
@@ -168,7 +168,7 @@ public class C9706y1 implements Client.AbstractC7865g {
         } catch (Throwable th2) {
             Log.m14723e(th2);
             list.clear();
-            eVar.m21509b();
+            eVar.m21510b();
             return false;
         }
     }
@@ -409,17 +409,17 @@ public class C9706y1 implements Client.AbstractC7865g {
     }
 
     public void m7495V(List list, C10930q6.C10936f fVar) {
-        this.f31548a.m7680j3(list, fVar);
+        this.f31551a.m7680j3(list, fVar);
     }
 
     public static void m7494W(C10930q6.C10936f fVar, C10930q6.C10936f fVar2) {
-        fVar2.f35133a.size();
-        fVar.f35133a.size();
+        fVar2.f35136a.size();
+        fVar.f35136a.size();
     }
 
     public void m7493X(final List list, final C10930q6.C10936f fVar) {
-        if (fVar.f35133a.size() != list.size()) {
-            this.f31550b.m2485dd().post(new Runnable() {
+        if (fVar.f35136a.size() != list.size()) {
+            this.f31553b.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
                     C9706y1.this.m7495V(list, fVar);
@@ -427,7 +427,7 @@ public class C9706y1 implements Client.AbstractC7865g {
             });
         }
         if (fVar.m2131a()) {
-            this.f31550b.m2269r5(fVar.f35133a, false, fVar, new AbstractC5918j() {
+            this.f31553b.m2269r5(fVar.f35136a, false, fVar, new AbstractC5918j() {
                 @Override
                 public final void mo1330a(Object obj) {
                     C9706y1.m7494W(C10930q6.C10936f.this, (C10930q6.C10936f) obj);
@@ -437,21 +437,21 @@ public class C9706y1 implements Client.AbstractC7865g {
     }
 
     public void m7492Y(int i) {
-        this.f31548a.m7686i2();
-        this.f31548a.m7628v0(new ArrayList<>(), i, 0, null, null, 0, false);
+        this.f31551a.m7686i2();
+        this.f31551a.m7628v0(new ArrayList<>(), i, 0, null, null, 0, false);
     }
 
     public void m7491Z() {
         ArrayList arrayList = new ArrayList();
         C6035e<TdApi.User> eVar = new C6035e<>();
-        this.f31548a.m7772N2(eVar, m7510G(this.f31548a.m7645r0(), arrayList, eVar));
+        this.f31551a.m7772N2(eVar, m7510G(this.f31551a.m7645r0(), arrayList, eVar));
         TdApi.Message[] messageArr = new TdApi.Message[arrayList.size()];
         arrayList.toArray(messageArr);
-        m7453s0(this.f31549a0, messageArr, 0, null, true, null);
+        m7453s0(this.f31552a0, messageArr, 0, null, true, null);
     }
 
     public static int m7489a0(C9710d dVar, C9710d dVar2) {
-        return Integer.compare(dVar2.f31581a, dVar.f31581a);
+        return Integer.compare(dVar2.f31584a, dVar.f31584a);
     }
 
     public static void m7487b0(List list, boolean z, AbstractC4761s4 s4Var, AbstractC4761s4 s4Var2) {
@@ -459,85 +459,85 @@ public class C9706y1 implements Client.AbstractC7865g {
         while (it.hasNext()) {
             TdApi.Message message = (TdApi.Message) it.next();
             if (z) {
-                s4Var.m26199F0(message, true);
+                s4Var.m26200F0(message, true);
             } else {
-                s4Var2.m26199F0(message, false);
+                s4Var2.m26200F0(message, false);
             }
         }
     }
 
     public void m7485c0() {
-        synchronized (this.f31564n0) {
-            this.f31535N = false;
+        synchronized (this.f31567n0) {
+            this.f31538N = false;
         }
-        this.f31548a.m7715c2();
-        this.f31548a.m7720b2();
+        this.f31551a.m7715c2();
+        this.f31551a.m7720b2();
     }
 
     public void m7483d0() {
-        synchronized (this.f31564n0) {
-            this.f31535N = false;
+        synchronized (this.f31567n0) {
+            this.f31538N = false;
         }
-        this.f31548a.m7676k2();
-        if (!this.f31534M) {
-            this.f31548a.m7720b2();
+        this.f31551a.m7676k2();
+        if (!this.f31537M) {
+            this.f31551a.m7720b2();
         }
     }
 
     public void m7481e0(long j, long j2, int i, String str, boolean z, List list, ArrayList arrayList, int i2, int i3, AbstractC4761s4 s4Var, C7319d dVar, boolean z2, boolean z3) {
         int size;
-        if (this.f31549a0 == j && m7509H() == j2) {
+        if (this.f31552a0 == j && m7509H() == j2) {
             m7443x0(i);
-            this.f31560j0 = str;
+            this.f31563j0 = str;
             boolean z4 = true;
             boolean z5 = false;
-            this.f31563m0 = this.f31563m0 || z;
+            this.f31566m0 = this.f31566m0 || z;
             if (list != null) {
                 Iterator it = list.iterator();
                 while (it.hasNext()) {
                     m7511F((List) it.next());
                 }
             }
-            if (!this.f31556f0 || !arrayList.isEmpty()) {
+            if (!this.f31559f0 || !arrayList.isEmpty()) {
                 int i4 = i2 == -1 ? 19 : 33;
-                int i5 = this.f31536O;
+                int i5 = this.f31539O;
                 boolean z6 = (i5 == 0 || i5 == 3) && arrayList.size() < i4 && arrayList.size() > 0;
-                this.f31548a.m7628v0(arrayList, this.f31536O, i3, s4Var, dVar, this.f31540S, z6 && this.f31556f0);
-                synchronized (this.f31564n0) {
-                    this.f31535N = false;
+                this.f31551a.m7628v0(arrayList, this.f31539O, i3, s4Var, dVar, this.f31543S, z6 && this.f31559f0);
+                synchronized (this.f31567n0) {
+                    this.f31538N = false;
                 }
-                int i6 = this.f31536O;
+                int i6 = this.f31539O;
                 if ((i6 == 0 || i6 == 3) && (size = arrayList.size()) > 0 && size < i4) {
                     if (Log.isEnabled(8)) {
                         Log.m14721i(8, "Loading more messages, because we received too few messages", new Object[0]);
                     }
                     int i7 = i4 - size;
-                    if (z6 && this.f31556f0) {
+                    if (z6 && this.f31559f0) {
                         z5 = true;
                     }
                     m7471j0(true, i7, z5);
                 } else {
                     z4 = false;
                 }
-                boolean z7 = this.f31552c;
+                boolean z7 = this.f31555c;
                 if (z7 != z2 && !z7) {
-                    this.f31548a.m7676k2();
+                    this.f31551a.m7676k2();
                 }
-                boolean z8 = this.f31534M;
+                boolean z8 = this.f31537M;
                 if (z8 != z3 && !z8) {
-                    this.f31548a.m7715c2();
+                    this.f31551a.m7715c2();
                 }
-                if (!this.f31534M && !z4) {
-                    this.f31548a.m7720b2();
+                if (!this.f31537M && !z4) {
+                    this.f31551a.m7720b2();
                 }
-                this.f31548a.m7623w0();
+                this.f31551a.m7623w0();
                 return;
             }
-            this.f31548a.m7686i2();
-            synchronized (this.f31564n0) {
-                this.f31535N = false;
+            this.f31551a.m7686i2();
+            synchronized (this.f31567n0) {
+                this.f31538N = false;
             }
-            m7479f0(this.f31559i0, this.f31561k0, this.f31562l0, this.f31536O, false, this.f31557g0, this.f31558h0);
+            m7479f0(this.f31562i0, this.f31564k0, this.f31565l0, this.f31539O, false, this.f31560g0, this.f31561h0);
         }
     }
 
@@ -552,9 +552,9 @@ public class C9706y1 implements Client.AbstractC7865g {
         String str2 = "json_" + i + "_" + str;
         int L = m7505L(str2);
         if (L != 0) {
-            return C4403w.m27869i1(L);
+            return C4403w.m27871i1(L);
         }
-        String o1 = C4403w.m27845o1(str2);
+        String o1 = C4403w.m27847o1(str2);
         if (o1 != null) {
             return o1;
         }
@@ -565,58 +565,58 @@ public class C9706y1 implements Client.AbstractC7865g {
         TdApi.File T5;
         int length = jSONArray.length();
         String str = null;
-        TdApi.User F4 = C4779t2.m25691F4(jSONArray.getInt(0), m7457q0(jSONArray.getString(1), i), length > 2 ? m7457q0(jSONArray.getString(2), i) : null);
+        TdApi.User F4 = C4779t2.m25692F4(jSONArray.getInt(0), m7457q0(jSONArray.getString(1), i), length > 2 ? m7457q0(jSONArray.getString(2), i) : null);
         if (length > 3) {
             str = jSONArray.getString(3);
         }
-        if (!C5070i.m24061i(str) && !C1363c0.m37457Q(str) && (T5 = q6Var.m2644T5(str, new TdApi.FileTypeProfilePhoto(), 0L)) != null) {
+        if (!C5070i.m24062i(str) && !C1363c0.m37460Q(str) && (T5 = q6Var.m2644T5(str, new TdApi.FileTypeProfilePhoto(), 0L)) != null) {
             F4.profilePhoto = new TdApi.ProfilePhoto(0L, T5, T5, null, false);
         }
         return F4;
     }
 
     public boolean m7516A() {
-        if (!this.f31534M) {
+        if (!this.f31537M) {
             return false;
         }
         boolean z = !m7499R();
-        this.f31534M = z;
+        this.f31537M = z;
         return z;
     }
 
     public boolean m7515B() {
-        return this.f31552c;
+        return this.f31555c;
     }
 
     public final boolean m7514C(long j) {
-        return this.f31550b.m2784K6(j) && !this.f31548a.m7645r0().m9332Ua() && !this.f31548a.m7645r0().m32566Tk() && !this.f31548a.m7645r0().m32216ui() && !this.f31548a.m7645r0().m32229ti();
+        return this.f31553b.m2784K6(j) && !this.f31551a.m7645r0().m9332Ua() && !this.f31551a.m7645r0().m32569Tk() && !this.f31551a.m7645r0().m32219ui() && !this.f31551a.m7645r0().m32232ti();
     }
 
     public final void m7513D() {
         Object[] objArr = new Object[3];
-        objArr[0] = Integer.valueOf(this.f31567q0);
-        objArr[1] = Long.valueOf(this.f31566p0);
-        int i = this.f31567q0;
-        objArr[2] = Long.valueOf(i == 0 ? -1L : this.f31566p0 / i);
+        objArr[0] = Integer.valueOf(this.f31570q0);
+        objArr[1] = Long.valueOf(this.f31569p0);
+        int i = this.f31570q0;
+        objArr[2] = Long.valueOf(i == 0 ? -1L : this.f31569p0 / i);
         Log.m14721i(8, "processed %d steps in %dms (average %dms per step)", objArr);
-        this.f31566p0 = 0L;
-        this.f31567q0 = 0;
+        this.f31569p0 = 0L;
+        this.f31570q0 = 0;
     }
 
     public final void m7512E(AbstractC4761s4 s4Var, long j, int i) {
-        long uptimeMillis = SystemClock.uptimeMillis() - this.f31565o0;
+        long uptimeMillis = SystemClock.uptimeMillis() - this.f31568o0;
         Object[] objArr = new Object[4];
         objArr[0] = Long.valueOf(j);
         objArr[1] = Integer.valueOf(i);
         objArr[2] = Long.valueOf(uptimeMillis);
         objArr[3] = s4Var != null ? s4Var.getClass().getName() : "combination";
         Log.m14721i(8, "message_id=%d (size: %d) took %dms (%s)", objArr);
-        this.f31566p0 += uptimeMillis;
-        this.f31567q0++;
+        this.f31569p0 += uptimeMillis;
+        this.f31570q0++;
     }
 
     public final void m7511F(final List<TdApi.Message> list) {
-        this.f31550b.m2269r5(list, true, null, new AbstractC5918j() {
+        this.f31553b.m2269r5(list, true, null, new AbstractC5918j() {
             @Override
             public final void mo1330a(Object obj) {
                 C9706y1.this.m7493X(list, (C10930q6.C10936f) obj);
@@ -625,59 +625,59 @@ public class C9706y1 implements Client.AbstractC7865g {
     }
 
     public long m7509H() {
-        C4737p7 p7Var = this.f31546Y;
+        C4737p7 p7Var = this.f31549Y;
         if (p7Var != null) {
-            return p7Var.m26299b();
+            return p7Var.m26300b();
         }
-        TdApi.Chat chat = this.f31545X;
+        TdApi.Chat chat = this.f31548X;
         if (chat != null) {
-            return chat.f25367id;
+            return chat.f25370id;
         }
         return 0L;
     }
 
     public int m7508I() {
-        return this.f31538Q;
+        return this.f31541Q;
     }
 
     public C4737p7 m7507J() {
-        return this.f31546Y;
+        return this.f31549Y;
     }
 
     public long m7506K() {
-        C4737p7 p7Var = this.f31546Y;
+        C4737p7 p7Var = this.f31549Y;
         if (p7Var != null) {
-            return p7Var.m26294g();
+            return p7Var.m26295g();
         }
         return 0L;
     }
 
     public int m7504M() {
-        return this.f31541T;
+        return this.f31544T;
     }
 
     public final C7319d m7503N() {
-        AbstractC4761s4 g0 = this.f31548a.m7808E0().m8119g0();
+        AbstractC4761s4 g0 = this.f31551a.m7808E0().m8119g0();
         if (g0 != null) {
-            return new C7319d(g0.m26145K2(), g0.m26065S1());
+            return new C7319d(g0.m26146K2(), g0.m26066S1());
         }
         return null;
     }
 
     public final C7319d m7502O() {
-        AbstractC4761s4 l0 = this.f31548a.m7808E0().m8114l0();
+        AbstractC4761s4 l0 = this.f31551a.m7808E0().m8114l0();
         if (l0 != null) {
-            return new C7319d(l0.m26145K2(), l0.m26205E4());
+            return new C7319d(l0.m26146K2(), l0.m26206E4());
         }
         return null;
     }
 
     public final boolean m7501P() {
-        return (this.f31546Y == null && this.f31544W == null) ? false : true;
+        return (this.f31549Y == null && this.f31547W == null) ? false : true;
     }
 
     public boolean m7500Q() {
-        return this.f31550b.m2752M6(this.f31545X);
+        return this.f31553b.m2752M6(this.f31548X);
     }
 
     public final boolean m7499R() {
@@ -685,7 +685,7 @@ public class C9706y1 implements Client.AbstractC7865g {
     }
 
     public final boolean m7498S(C7319d dVar) {
-        int i = this.f31541T;
+        int i = this.f31544T;
         if (i == 3) {
             return true;
         }
@@ -695,23 +695,23 @@ public class C9706y1 implements Client.AbstractC7865g {
         if (i == 4) {
             return true;
         }
-        TdApi.Chat chat = this.f31545X;
-        if (chat == null || chat.f25367id != dVar.m17027c()) {
+        TdApi.Chat chat = this.f31548X;
+        if (chat == null || chat.f25370id != dVar.m17027c()) {
             return false;
         }
-        if (this.f31545X.lastMessage != null && dVar.m17026d() >= this.f31545X.lastMessage.f25406id) {
+        if (this.f31548X.lastMessage != null && dVar.m17026d() >= this.f31548X.lastMessage.f25409id) {
             return true;
         }
-        TdApi.SearchMessagesFilter searchMessagesFilter = this.f31544W;
-        return searchMessagesFilter != null && searchMessagesFilter.getConstructor() == 371805512 && this.f31548a.m7750T1() != 0 && dVar.m17026d() >= this.f31548a.m7750T1();
+        TdApi.SearchMessagesFilter searchMessagesFilter = this.f31547W;
+        return searchMessagesFilter != null && searchMessagesFilter.getConstructor() == 371805512 && this.f31551a.m7750T1() != 0 && dVar.m17026d() >= this.f31551a.m7750T1();
     }
 
     public boolean m7497T() {
-        return this.f31535N;
+        return this.f31538N;
     }
 
     public boolean m7496U() {
-        TdApi.Chat chat = this.f31545X;
+        TdApi.Chat chat = this.f31548X;
         return chat != null && chat.type.getConstructor() == 862366513;
     }
 
@@ -721,19 +721,19 @@ public class C9706y1 implements Client.AbstractC7865g {
 
     public void m7477g0(C7319d dVar, int i, boolean z) {
         m7449u0();
-        this.f31534M = z;
-        this.f31552c = z;
-        this.f31539R = dVar;
-        this.f31540S = i;
+        this.f31537M = z;
+        this.f31555c = z;
+        this.f31542R = dVar;
+        this.f31543S = i;
         m7479f0(dVar, -19, 33, z ? 0 : 3, false, true, true);
     }
 
     public void m7475h0(C7319d dVar) {
         m7449u0();
-        this.f31552c = true;
-        this.f31534M = false;
-        this.f31539R = dVar;
-        this.f31540S = 0;
+        this.f31555c = true;
+        this.f31537M = false;
+        this.f31542R = dVar;
+        this.f31543S = 0;
         m7479f0(dVar, 0, 19, 0, true, true, true);
     }
 
@@ -742,7 +742,7 @@ public class C9706y1 implements Client.AbstractC7865g {
     }
 
     public final boolean m7471j0(boolean z, int i, boolean z2) {
-        if (!this.f31535N && m7509H() != 0) {
+        if (!this.f31538N && m7509H() != 0) {
             if (z) {
                 C7319d O = m7502O();
                 if (m7515B() && O != null) {
@@ -772,11 +772,11 @@ public class C9706y1 implements Client.AbstractC7865g {
 
     public void m7467l0() {
         m7449u0();
-        this.f31552c = false;
-        this.f31534M = false;
-        this.f31535N = true;
-        this.f31536O = 0;
-        C4383l.m28059a().m28058b(new Runnable() {
+        this.f31555c = false;
+        this.f31537M = false;
+        this.f31538N = true;
+        this.f31539O = 0;
+        C4383l.m28061a().m28060b(new Runnable() {
             @Override
             public final void run() {
                 C9706y1.this.m7491Z();
@@ -785,24 +785,24 @@ public class C9706y1 implements Client.AbstractC7865g {
     }
 
     public final Client.AbstractC7865g m7465m0(boolean z, boolean z2, boolean z3) {
-        long j = this.f31549a0;
-        if (this.f31551b0 == null) {
+        long j = this.f31552a0;
+        if (this.f31554b0 == null) {
             C9708b bVar = new C9708b(j, z, z2, z3);
-            this.f31551b0 = bVar;
+            this.f31554b0 = bVar;
             return bVar;
         }
         throw new IllegalStateException("lastHandler != null");
     }
 
     public final TdApi.Message m7463n0(long j, boolean z, TdApi.ChatEvent chatEvent) {
-        long j2 = chatEvent.f25368id;
+        long j2 = chatEvent.f25371id;
         TdApi.MessageSender messageSender = chatEvent.memberId;
-        return new TdApi.Message(j2, messageSender, j, null, null, this.f31550b.m2395j7(messageSender), false, false, false, false, false, false, false, false, false, false, false, false, z, false, chatEvent.date, 0, null, null, null, 0L, 0L, 0L, 0, 0.0d, 0L, null, 0L, null, null, null);
+        return new TdApi.Message(j2, messageSender, j, null, null, this.f31553b.m2395j7(messageSender), false, false, false, false, false, false, false, false, false, false, false, false, z, false, chatEvent.date, 0, null, null, null, 0L, 0L, 0L, 0, 0.0d, 0L, null, 0L, null, null, null);
     }
 
     public final TdApi.Message[] m7461o0(long j, TdApi.ChatEvent[] chatEventArr) {
         ArrayList arrayList = new ArrayList(chatEventArr.length);
-        boolean K6 = this.f31550b.m2784K6(j);
+        boolean K6 = this.f31553b.m2784K6(j);
         for (TdApi.ChatEvent chatEvent : chatEventArr) {
             TdApi.Message message = null;
             switch (chatEvent.action.getConstructor()) {
@@ -867,68 +867,68 @@ public class C9706y1 implements Client.AbstractC7865g {
     }
 
     public void m7451t0(long j, AbstractC5918j<TdApi.SponsoredMessage> jVar) {
-        if (m7514C(j) && !this.f31537P) {
-            this.f31537P = true;
-            this.f31547Z = new C9707a(j, jVar);
-            this.f31550b.m2270r4().m14783o(new TdApi.GetChatSponsoredMessage(j), this.f31547Z);
+        if (m7514C(j) && !this.f31540P) {
+            this.f31540P = true;
+            this.f31550Z = new C9707a(j, jVar);
+            this.f31553b.m2270r4().m14783o(new TdApi.GetChatSponsoredMessage(j), this.f31550Z);
         }
     }
 
     @Override
     public void mo255t2(TdApi.Object object) {
         if (object.getConstructor() != -722616727) {
-            C1379j0.m37290z0("Weird viewMessage response: " + object.toString(), 1);
+            C1379j0.m37293z0("Weird viewMessage response: " + object.toString(), 1);
         }
     }
 
     public void m7449u0() {
-        this.f31539R = null;
-        this.f31540S = 0;
-        this.f31538Q = -1;
-        this.f31563m0 = false;
-        this.f31552c = false;
-        this.f31534M = false;
-        if (this.f31549a0 == Long.MAX_VALUE) {
-            this.f31549a0 = 0L;
+        this.f31542R = null;
+        this.f31543S = 0;
+        this.f31541Q = -1;
+        this.f31566m0 = false;
+        this.f31555c = false;
+        this.f31537M = false;
+        if (this.f31552a0 == Long.MAX_VALUE) {
+            this.f31552a0 = 0L;
         }
-        this.f31549a0++;
-        this.f31554d0 = 0;
-        this.f31553c0 = null;
-        AbstractC5123k kVar = this.f31547Z;
+        this.f31552a0++;
+        this.f31557d0 = 0;
+        this.f31556c0 = null;
+        AbstractC5123k kVar = this.f31550Z;
         if (kVar != null) {
-            kVar.m23882a();
+            kVar.m23883a();
         }
-        synchronized (this.f31564n0) {
-            this.f31551b0 = null;
-            this.f31535N = false;
+        synchronized (this.f31567n0) {
+            this.f31554b0 = null;
+            this.f31538N = false;
         }
     }
 
     public void m7447v0() {
-        this.f31534M = true;
+        this.f31537M = true;
     }
 
     public void m7445w0(TdApi.Chat chat, C4737p7 p7Var, int i, TdApi.SearchMessagesFilter searchMessagesFilter) {
-        this.f31545X = chat;
-        this.f31546Y = p7Var;
-        this.f31541T = i;
-        this.f31544W = searchMessagesFilter;
+        this.f31548X = chat;
+        this.f31549Y = p7Var;
+        this.f31544T = i;
+        this.f31547W = searchMessagesFilter;
     }
 
     public final void m7443x0(int i) {
-        if (this.f31538Q != i) {
-            this.f31538Q = i;
-            this.f31548a.m7645r0().m32223to(m7509H(), i);
+        if (this.f31541Q != i) {
+            this.f31541Q = i;
+            this.f31551a.m7645r0().m32226to(m7509H(), i);
         }
     }
 
     public void m7441y0(String str, TdApi.MessageSender messageSender, TdApi.SearchMessagesFilter searchMessagesFilter) {
-        this.f31542U = str;
-        this.f31543V = messageSender;
-        this.f31544W = searchMessagesFilter;
+        this.f31545U = str;
+        this.f31546V = messageSender;
+        this.f31547W = searchMessagesFilter;
     }
 
     public final void m7439z0() {
-        this.f31565o0 = SystemClock.uptimeMillis();
+        this.f31568o0 = SystemClock.uptimeMillis();
     }
 }

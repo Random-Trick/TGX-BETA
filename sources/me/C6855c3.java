@@ -34,25 +34,25 @@ public class C6855c3 extends View implements C3950k.AbstractC3952b, C9357x2.Abst
         this.f21530c = new C3940f(0, this, decelerateInterpolator, 180L);
         this.f21524M = new C3940f(1, this, decelerateInterpolator, 220L, true);
         this.f21525N = new C3940f(2, this, decelerateInterpolator, 180L);
-        this.f21528a = C1362c.m37482g(getResources(), i);
+        this.f21528a = C1362c.m37485g(getResources(), i);
         if (f21523Q == null) {
             Paint paint = new Paint(5);
             f21523Q = paint;
             paint.setStyle(Paint.Style.STROKE);
             f21523Q.setColor(C11524j.m159q0());
             C11541z.m24e(f21523Q, R.id.theme_color_icon);
-            f21523Q.setStrokeWidth(C1357a0.m37541i(2.0f));
+            f21523Q.setStrokeWidth(C1357a0.m37544i(2.0f));
         }
     }
 
     private void setInInlineMode(boolean z) {
-        this.f21525N.m29575p(z, true);
+        this.f21525N.m29577p(z, true);
     }
 
     private void setInInlineProgress(boolean z) {
         if (this.f21529b != z) {
             this.f21529b = z;
-            m18764a();
+            m18765a();
         }
     }
 
@@ -67,45 +67,45 @@ public class C6855c3 extends View implements C3950k.AbstractC3952b, C9357x2.Abst
     @Override
     public void mo35Y0(int i, float f, C3950k kVar) {
         if (i == 3) {
-            m18764a();
+            m18765a();
         }
     }
 
-    public final void m18764a() {
+    public final void m18765a() {
         if (this.f21529b) {
             C3950k kVar = this.f21527P;
             if (kVar == null) {
                 this.f21527P = new C3950k(3, this, C2057b.f7283e, 890L);
-            } else if (!kVar.m29531v()) {
+            } else if (!kVar.m29533v()) {
                 this.f21526O = 0.0f;
-                this.f21527P.m29541l(0.0f);
+                this.f21527P.m29543l(0.0f);
             } else {
                 return;
             }
-            this.f21527P.m29544i(1.0f);
+            this.f21527P.m29546i(1.0f);
         }
     }
 
-    public void m18763c(boolean z, boolean z2) {
-        this.f21530c.m29575p(z, false);
-        this.f21524M.m29575p(z2, false);
+    public void m18764c(boolean z, boolean z2) {
+        this.f21530c.m29577p(z, false);
+        this.f21524M.m29577p(z2, false);
     }
 
-    public boolean m18762d() {
-        return this.f21525N.m29583h();
+    public boolean m18763d() {
+        return this.f21525N.m29585h();
     }
 
-    public boolean m18761e() {
-        return !this.f21530c.m29583h() && !this.f21525N.m29583h();
+    public boolean m18762e() {
+        return !this.f21530c.m29585h() && !this.f21525N.m29585h();
     }
 
     @Override
     public void mo8098f1(View view, Rect rect) {
-        rect.top += C1357a0.m37541i(8.0f);
-        rect.bottom -= C1357a0.m37541i(8.0f);
+        rect.top += C1357a0.m37544i(8.0f);
+        rect.bottom -= C1357a0.m37544i(8.0f);
     }
 
-    public void m18760g(boolean z, boolean z2) {
+    public void m18761g(boolean z, boolean z2) {
         setInInlineMode(z);
         setInInlineProgress(z2);
     }
@@ -117,14 +117,14 @@ public class C6855c3 extends View implements C3950k.AbstractC3952b, C9357x2.Abst
 
     @Override
     public boolean onTouchEvent(MotionEvent motionEvent) {
-        return C1399s0.m37205P(this, motionEvent) && super.onTouchEvent(motionEvent);
+        return C1399s0.m37208P(this, motionEvent) && super.onTouchEvent(motionEvent);
     }
 
     public void setInEditMode(boolean z) {
-        this.f21530c.m29575p(z, true);
+        this.f21530c.m29577p(z, true);
     }
 
     public void setIsActive(boolean z) {
-        this.f21524M.m29575p(z, this.f21530c.m29584g() > 0.0f);
+        this.f21524M.m29577p(z, this.f21530c.m29586g() > 0.0f);
     }
 }

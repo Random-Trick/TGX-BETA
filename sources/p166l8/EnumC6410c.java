@@ -19,7 +19,7 @@ public abstract class EnumC6410c extends Enum<EnumC6410c> {
         }
 
         @Override
-        public boolean mo20445a(int i, int i2) {
+        public boolean mo20446a(int i, int i2) {
             return ((i + i2) & 1) == 0;
         }
     }
@@ -29,49 +29,49 @@ public abstract class EnumC6410c extends Enum<EnumC6410c> {
         f20078a = aVar;
         EnumC6410c bVar = new EnumC6410c("DATA_MASK_001", 1) {
             @Override
-            public boolean mo20445a(int i, int i2) {
+            public boolean mo20446a(int i, int i2) {
                 return (i & 1) == 0;
             }
         };
         f20079b = bVar;
         EnumC6410c cVar = new EnumC6410c("DATA_MASK_010", 2) {
             @Override
-            public boolean mo20445a(int i, int i2) {
+            public boolean mo20446a(int i, int i2) {
                 return i2 % 3 == 0;
             }
         };
         f20080c = cVar;
         EnumC6410c dVar = new EnumC6410c("DATA_MASK_011", 3) {
             @Override
-            public boolean mo20445a(int i, int i2) {
+            public boolean mo20446a(int i, int i2) {
                 return (i + i2) % 3 == 0;
             }
         };
         f20072M = dVar;
         EnumC6410c eVar = new EnumC6410c("DATA_MASK_100", 4) {
             @Override
-            public boolean mo20445a(int i, int i2) {
+            public boolean mo20446a(int i, int i2) {
                 return (((i / 2) + (i2 / 3)) & 1) == 0;
             }
         };
         f20073N = eVar;
         EnumC6410c fVar = new EnumC6410c("DATA_MASK_101", 5) {
             @Override
-            public boolean mo20445a(int i, int i2) {
+            public boolean mo20446a(int i, int i2) {
                 return (i * i2) % 6 == 0;
             }
         };
         f20074O = fVar;
         EnumC6410c gVar = new EnumC6410c("DATA_MASK_110", 6) {
             @Override
-            public boolean mo20445a(int i, int i2) {
+            public boolean mo20446a(int i, int i2) {
                 return (i * i2) % 6 < 3;
             }
         };
         f20075P = gVar;
         EnumC6410c hVar = new EnumC6410c("DATA_MASK_111", 7) {
             @Override
-            public boolean mo20445a(int i, int i2) {
+            public boolean mo20446a(int i, int i2) {
                 return (((i + i2) + ((i * i2) % 3)) & 1) == 0;
             }
         };
@@ -90,13 +90,13 @@ public abstract class EnumC6410c extends Enum<EnumC6410c> {
         return (EnumC6410c[]) f20077R.clone();
     }
 
-    public abstract boolean mo20445a(int i, int i2);
+    public abstract boolean mo20446a(int i, int i2);
 
-    public final void m20446b(C5022a aVar, int i) {
+    public final void m20447b(C5022a aVar, int i) {
         for (int i2 = 0; i2 < i; i2++) {
             for (int i3 = 0; i3 < i; i3++) {
-                if (mo20445a(i2, i3)) {
-                    aVar.m24282c(i3, i2);
+                if (mo20446a(i2, i3)) {
+                    aVar.m24283c(i3, i2);
                 }
             }
         }

@@ -12,7 +12,7 @@ public abstract class AbstractBinderC4273a0 extends BinderC11318u implements Abs
         super("com.google.android.gms.location.ILocationListener");
     }
 
-    public static AbstractC4275b0 m28309s(IBinder iBinder) {
+    public static AbstractC4275b0 m28311s(IBinder iBinder) {
         IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.location.ILocationListener");
         if (queryLocalInterface instanceof AbstractC4275b0) {
             return (AbstractC4275b0) queryLocalInterface;

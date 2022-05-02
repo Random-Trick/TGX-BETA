@@ -14,7 +14,7 @@ public final class C5810x implements Spliterator.OfDouble {
         this.f18530a = yVar;
     }
 
-    public static Spliterator.OfDouble m22125a(AbstractC5811y yVar) {
+    public static Spliterator.OfDouble m22126a(AbstractC5811y yVar) {
         if (yVar == null) {
             return null;
         }
@@ -43,7 +43,7 @@ public final class C5810x implements Spliterator.OfDouble {
 
     @Override
     public void forEachRemaining2(DoubleConsumer doubleConsumer) {
-        this.f18530a.mo22122m(C5524f.m22485a(doubleConsumer));
+        this.f18530a.mo22123m(C5524f.m22486a(doubleConsumer));
     }
 
     @Override
@@ -68,11 +68,11 @@ public final class C5810x implements Spliterator.OfDouble {
 
     @Override
     public boolean tryAdvance(java.util.function.Consumer consumer) {
-        return this.f18530a.mo22124a(Consumer.VivifiedWrapper.convert(consumer));
+        return this.f18530a.mo22125a(Consumer.VivifiedWrapper.convert(consumer));
     }
 
     @Override
     public boolean tryAdvance2(DoubleConsumer doubleConsumer) {
-        return this.f18530a.mo22123l(C5524f.m22485a(doubleConsumer));
+        return this.f18530a.mo22124l(C5524f.m22486a(doubleConsumer));
     }
 }

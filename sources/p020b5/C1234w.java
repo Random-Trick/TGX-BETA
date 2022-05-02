@@ -32,7 +32,7 @@ public final class C1234w {
             this.f4571b = i2;
         }
 
-        public int m37856a() {
+        public int m37859a() {
             int i = this.f4571b;
             if (i == 2) {
                 return 10;
@@ -50,7 +50,7 @@ public final class C1234w {
         }
     }
 
-    public static boolean m37870a(String str, String str2) {
+    public static boolean m37873a(String str, String str2) {
         C1236b f;
         int a;
         if (str == null) {
@@ -138,13 +138,13 @@ public final class C1234w {
             case '\n':
                 return true;
             case 3:
-                return (str2 == null || (f = m37865f(str2)) == null || (a = f.m37856a()) == 0 || a == 16) ? false : true;
+                return (str2 == null || (f = m37868f(str2)) == null || (a = f.m37859a()) == 0 || a == 16) ? false : true;
             default:
                 return false;
         }
     }
 
-    public static String m37869b(String str) {
+    public static String m37872b(String str) {
         int size = f4565a.size();
         for (int i = 0; i < size; i++) {
             C1235a aVar = f4565a.get(i);
@@ -155,7 +155,7 @@ public final class C1234w {
         return null;
     }
 
-    public static int m37868c(String str, String str2) {
+    public static int m37871c(String str, String str2) {
         C1236b f;
         str.hashCode();
         char c = 65535;
@@ -221,10 +221,10 @@ public final class C1234w {
             case 1:
                 return 7;
             case 2:
-                if (str2 == null || (f = m37865f(str2)) == null) {
+                if (str2 == null || (f = m37868f(str2)) == null) {
                     return 0;
                 }
-                return f.m37856a();
+                return f.m37859a();
             case 3:
                 return 5;
             case 4:
@@ -242,7 +242,7 @@ public final class C1234w {
         }
     }
 
-    public static String m37867d(String str) {
+    public static String m37870d(String str) {
         C1236b f;
         String str2 = null;
         if (str == null) {
@@ -268,15 +268,15 @@ public final class C1234w {
             return "video/x-vnd.on2.vp8";
         }
         if (!c.startsWith(AudioSampleEntry.TYPE3)) {
-            return c.startsWith("mha1") ? "audio/mha1" : c.startsWith("mhm1") ? "audio/mhm1" : (c.startsWith(AudioSampleEntry.TYPE8) || c.startsWith(AC3SpecificBox.TYPE)) ? "audio/ac3" : (c.startsWith(AudioSampleEntry.TYPE9) || c.startsWith(EC3SpecificBox.TYPE)) ? "audio/eac3" : c.startsWith("ec+3") ? "audio/eac3-joc" : (c.startsWith("ac-4") || c.startsWith("dac4")) ? "audio/ac4" : c.startsWith("dtsc") ? "audio/vnd.dts" : c.startsWith(AudioSampleEntry.TYPE13) ? "audio/vnd.dts.hd;profile=lbr" : (c.startsWith(AudioSampleEntry.TYPE12) || c.startsWith(AudioSampleEntry.TYPE11)) ? "audio/vnd.dts.hd" : c.startsWith("dtsx") ? "audio/vnd.dts.uhd;profile=p2" : c.startsWith("opus") ? "audio/opus" : c.startsWith("vorbis") ? "audio/vorbis" : c.startsWith("flac") ? "audio/flac" : c.startsWith(XMLSubtitleSampleEntry.TYPE) ? "application/ttml+xml" : c.startsWith(WebVTTSampleEntry.TYPE) ? "text/vtt" : c.contains("cea708") ? "application/cea-708" : (c.contains("eia608") || c.contains("cea608")) ? "application/cea-608" : m37869b(c);
+            return c.startsWith("mha1") ? "audio/mha1" : c.startsWith("mhm1") ? "audio/mhm1" : (c.startsWith(AudioSampleEntry.TYPE8) || c.startsWith(AC3SpecificBox.TYPE)) ? "audio/ac3" : (c.startsWith(AudioSampleEntry.TYPE9) || c.startsWith(EC3SpecificBox.TYPE)) ? "audio/eac3" : c.startsWith("ec+3") ? "audio/eac3-joc" : (c.startsWith("ac-4") || c.startsWith("dac4")) ? "audio/ac4" : c.startsWith("dtsc") ? "audio/vnd.dts" : c.startsWith(AudioSampleEntry.TYPE13) ? "audio/vnd.dts.hd;profile=lbr" : (c.startsWith(AudioSampleEntry.TYPE12) || c.startsWith(AudioSampleEntry.TYPE11)) ? "audio/vnd.dts.hd" : c.startsWith("dtsx") ? "audio/vnd.dts.uhd;profile=p2" : c.startsWith("opus") ? "audio/opus" : c.startsWith("vorbis") ? "audio/vorbis" : c.startsWith("flac") ? "audio/flac" : c.startsWith(XMLSubtitleSampleEntry.TYPE) ? "application/ttml+xml" : c.startsWith(WebVTTSampleEntry.TYPE) ? "text/vtt" : c.contains("cea708") ? "application/cea-708" : (c.contains("eia608") || c.contains("cea608")) ? "application/cea-608" : m37872b(c);
         }
-        if (c.startsWith("mp4a.") && (f = m37865f(c)) != null) {
-            str2 = m37866e(f.f4570a);
+        if (c.startsWith("mp4a.") && (f = m37868f(c)) != null) {
+            str2 = m37869e(f.f4570a);
         }
         return str2 == null ? "audio/mp4a-latm" : str2;
     }
 
-    public static String m37866e(int i) {
+    public static String m37869e(int i) {
         if (i == 32) {
             return "video/mp4v-es";
         }
@@ -336,12 +336,12 @@ public final class C1234w {
         }
     }
 
-    public static C1236b m37865f(String str) {
+    public static C1236b m37868f(String str) {
         Matcher matcher = f4566b.matcher(str);
         if (!matcher.matches()) {
             return null;
         }
-        String str2 = (String) C1186a.m38185e(matcher.group(1));
+        String str2 = (String) C1186a.m38188e(matcher.group(1));
         String group = matcher.group(2);
         int i = 0;
         try {
@@ -355,7 +355,7 @@ public final class C1234w {
         }
     }
 
-    public static String m37864g(String str) {
+    public static String m37867g(String str) {
         int indexOf;
         if (str == null || (indexOf = str.indexOf(47)) == -1) {
             return null;
@@ -363,20 +363,20 @@ public final class C1234w {
         return str.substring(0, indexOf);
     }
 
-    public static int m37863h(String str) {
+    public static int m37866h(String str) {
         if (TextUtils.isEmpty(str)) {
             return -1;
         }
-        if (m37861j(str)) {
+        if (m37864j(str)) {
             return 1;
         }
-        if (m37858m(str)) {
+        if (m37861m(str)) {
             return 2;
         }
-        if (m37859l(str)) {
+        if (m37862l(str)) {
             return 3;
         }
-        if (m37860k(str)) {
+        if (m37863k(str)) {
             return 4;
         }
         if ("application/id3".equals(str) || "application/x-emsg".equals(str) || "application/x-scte35".equals(str)) {
@@ -385,10 +385,10 @@ public final class C1234w {
         if ("application/x-camera-motion".equals(str)) {
             return 6;
         }
-        return m37862i(str);
+        return m37865i(str);
     }
 
-    public static int m37862i(String str) {
+    public static int m37865i(String str) {
         int size = f4565a.size();
         for (int i = 0; i < size; i++) {
             C1235a aVar = f4565a.get(i);
@@ -399,23 +399,23 @@ public final class C1234w {
         return -1;
     }
 
-    public static boolean m37861j(String str) {
-        return "audio".equals(m37864g(str));
+    public static boolean m37864j(String str) {
+        return "audio".equals(m37867g(str));
     }
 
-    public static boolean m37860k(String str) {
-        return "image".equals(m37864g(str));
+    public static boolean m37863k(String str) {
+        return "image".equals(m37867g(str));
     }
 
-    public static boolean m37859l(String str) {
-        return "text".equals(m37864g(str)) || "application/cea-608".equals(str) || "application/cea-708".equals(str) || "application/x-mp4-cea-608".equals(str) || "application/x-subrip".equals(str) || "application/ttml+xml".equals(str) || "application/x-quicktime-tx3g".equals(str) || "application/x-mp4-vtt".equals(str) || "application/x-rawcc".equals(str) || "application/vobsub".equals(str) || "application/pgs".equals(str) || "application/dvbsubs".equals(str);
+    public static boolean m37862l(String str) {
+        return "text".equals(m37867g(str)) || "application/cea-608".equals(str) || "application/cea-708".equals(str) || "application/x-mp4-cea-608".equals(str) || "application/x-subrip".equals(str) || "application/ttml+xml".equals(str) || "application/x-quicktime-tx3g".equals(str) || "application/x-mp4-vtt".equals(str) || "application/x-rawcc".equals(str) || "application/vobsub".equals(str) || "application/pgs".equals(str) || "application/dvbsubs".equals(str);
     }
 
-    public static boolean m37858m(String str) {
-        return "video".equals(m37864g(str));
+    public static boolean m37861m(String str) {
+        return "video".equals(m37867g(str));
     }
 
-    public static String m37857n(String str) {
+    public static String m37860n(String str) {
         str.hashCode();
         char c = 65535;
         switch (str.hashCode()) {

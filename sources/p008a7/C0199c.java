@@ -23,7 +23,7 @@ public final class C0199c {
 
         @Override
         public boolean contains(Object obj) {
-            return (obj instanceof Integer) && C0199c.m42099g(this.f670a, ((Integer) obj).intValue(), this.f671b, this.f672c) != -1;
+            return (obj instanceof Integer) && C0199c.m42102g(this.f670a, ((Integer) obj).intValue(), this.f671b, this.f672c) != -1;
         }
 
         @Override
@@ -56,7 +56,7 @@ public final class C0199c {
         public int hashCode() {
             int i = 1;
             for (int i2 = this.f671b; i2 < this.f672c; i2++) {
-                i = (i * 31) + C0199c.m42100f(this.f670a[i2]);
+                i = (i * 31) + C0199c.m42103f(this.f670a[i2]);
             }
             return i;
         }
@@ -73,7 +73,7 @@ public final class C0199c {
         @Override
         public int indexOf(Object obj) {
             int g;
-            if (!(obj instanceof Integer) || (g = C0199c.m42099g(this.f670a, ((Integer) obj).intValue(), this.f671b, this.f672c)) < 0) {
+            if (!(obj instanceof Integer) || (g = C0199c.m42102g(this.f670a, ((Integer) obj).intValue(), this.f671b, this.f672c)) < 0) {
                 return -1;
             }
             return g - this.f671b;
@@ -87,13 +87,13 @@ public final class C0199c {
         @Override
         public int lastIndexOf(Object obj) {
             int h;
-            if (!(obj instanceof Integer) || (h = C0199c.m42098h(this.f670a, ((Integer) obj).intValue(), this.f671b, this.f672c)) < 0) {
+            if (!(obj instanceof Integer) || (h = C0199c.m42101h(this.f670a, ((Integer) obj).intValue(), this.f671b, this.f672c)) < 0) {
                 return -1;
             }
             return h - this.f671b;
         }
 
-        public int[] m42094m() {
+        public int[] m42097m() {
             return Arrays.copyOfRange(this.f670a, this.f671b, this.f672c);
         }
 
@@ -138,31 +138,31 @@ public final class C0199c {
         }
     }
 
-    public static List<Integer> m42103c(int... iArr) {
+    public static List<Integer> m42106c(int... iArr) {
         if (iArr.length == 0) {
             return Collections.emptyList();
         }
         return new C0200a(iArr);
     }
 
-    public static int m42102d(long j) {
+    public static int m42105d(long j) {
         int i = (int) j;
         C10433i.m5132f(((long) i) == j, "Out of range: %s", j);
         return i;
     }
 
-    public static int m42101e(int i, int i2) {
+    public static int m42104e(int i, int i2) {
         if (i < i2) {
             return -1;
         }
         return i > i2 ? 1 : 0;
     }
 
-    public static int m42100f(int i) {
+    public static int m42103f(int i) {
         return i;
     }
 
-    public static int m42099g(int[] iArr, int i, int i2, int i3) {
+    public static int m42102g(int[] iArr, int i, int i2, int i3) {
         while (i2 < i3) {
             if (iArr[i2] == i) {
                 return i2;
@@ -172,7 +172,7 @@ public final class C0199c {
         return -1;
     }
 
-    public static int m42098h(int[] iArr, int i, int i2, int i3) {
+    public static int m42101h(int[] iArr, int i, int i2, int i3) {
         for (int i4 = i3 - 1; i4 >= i2; i4--) {
             if (iArr[i4] == i) {
                 return i4;
@@ -181,9 +181,9 @@ public final class C0199c {
         return -1;
     }
 
-    public static int[] m42097i(Collection<? extends Number> collection) {
+    public static int[] m42100i(Collection<? extends Number> collection) {
         if (collection instanceof C0200a) {
-            return ((C0200a) collection).m42094m();
+            return ((C0200a) collection).m42097m();
         }
         Object[] array = collection.toArray();
         int length = array.length;

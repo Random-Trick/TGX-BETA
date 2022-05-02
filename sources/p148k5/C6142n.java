@@ -29,37 +29,37 @@ public class C6142n<A extends C5850a.AbstractC5852b, L> {
         }
 
         @RecentlyNonNull
-        public C6142n<A, L> m21195a() {
+        public C6142n<A, L> m21196a() {
             boolean z = true;
-            C6378r.m20515b(this.f19477a != null, "Must set register function");
-            C6378r.m20515b(this.f19478b != null, "Must set unregister function");
+            C6378r.m20516b(this.f19477a != null, "Must set register function");
+            C6378r.m20516b(this.f19478b != null, "Must set unregister function");
             if (this.f19480d == null) {
                 z = false;
             }
-            C6378r.m20515b(z, "Must set holder");
-            return new C6142n<>(new C6178v1(this, this.f19480d, this.f19481e, this.f19482f, this.f19483g), new C6182w1(this, (C6120i.C6121a) C6378r.m20505l(this.f19480d.m21260b(), "Key must not be null")), this.f19479c, null);
+            C6378r.m20516b(z, "Must set holder");
+            return new C6142n<>(new C6178v1(this, this.f19480d, this.f19481e, this.f19482f, this.f19483g), new C6182w1(this, (C6120i.C6121a) C6378r.m20506l(this.f19480d.m21261b(), "Key must not be null")), this.f19479c, null);
         }
 
         @RecentlyNonNull
-        public C6143a<A, L> m21194b(@RecentlyNonNull AbstractC6147o<A, C6777m<Void>> oVar) {
+        public C6143a<A, L> m21195b(@RecentlyNonNull AbstractC6147o<A, C6777m<Void>> oVar) {
             this.f19477a = oVar;
             return this;
         }
 
         @RecentlyNonNull
-        public C6143a<A, L> m21193c(int i) {
+        public C6143a<A, L> m21194c(int i) {
             this.f19483g = i;
             return this;
         }
 
         @RecentlyNonNull
-        public C6143a<A, L> m21192d(@RecentlyNonNull AbstractC6147o<A, C6777m<Boolean>> oVar) {
+        public C6143a<A, L> m21193d(@RecentlyNonNull AbstractC6147o<A, C6777m<Boolean>> oVar) {
             this.f19478b = oVar;
             return this;
         }
 
         @RecentlyNonNull
-        public C6143a<A, L> m21191e(@RecentlyNonNull C6120i<L> iVar) {
+        public C6143a<A, L> m21192e(@RecentlyNonNull C6120i<L> iVar) {
             this.f19480d = iVar;
             return this;
         }
@@ -72,7 +72,7 @@ public class C6142n<A extends C5850a.AbstractC5852b, L> {
     }
 
     @RecentlyNonNull
-    public static <A extends C5850a.AbstractC5852b, L> C6143a<A, L> m21196a() {
+    public static <A extends C5850a.AbstractC5852b, L> C6143a<A, L> m21197a() {
         return new C6143a<>(null);
     }
 }

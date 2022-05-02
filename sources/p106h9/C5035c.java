@@ -10,13 +10,13 @@ public final class C5035c {
         this.f17002a = eGLDisplay;
     }
 
-    public final EGLDisplay m24240a() {
+    public final EGLDisplay m24241a() {
         return this.f17002a;
     }
 
     public boolean equals(Object obj) {
         if (this != obj) {
-            return (obj instanceof C5035c) && C8298k.m12937b(this.f17002a, ((C5035c) obj).f17002a);
+            return (obj instanceof C5035c) && C8298k.m12936b(this.f17002a, ((C5035c) obj).f17002a);
         }
         return true;
     }

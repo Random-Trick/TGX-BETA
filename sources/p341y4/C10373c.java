@@ -13,15 +13,15 @@ import p020b5.C1230s;
 import p343y6.C10422b;
 
 public final class C10373c {
-    public static final Pattern f33364c = Pattern.compile("\\[voice=\"([^\"]*)\"\\]");
-    public static final Pattern f33365d = Pattern.compile("^((?:[0-9]*\\.)?[0-9]+)(px|em|%)$");
-    public final C1189b0 f33366a = new C1189b0();
-    public final StringBuilder f33367b = new StringBuilder();
+    public static final Pattern f33367c = Pattern.compile("\\[voice=\"([^\"]*)\"\\]");
+    public static final Pattern f33368d = Pattern.compile("^((?:[0-9]*\\.)?[0-9]+)(px|em|%)$");
+    public final C1189b0 f33369a = new C1189b0();
+    public final StringBuilder f33370b = new StringBuilder();
 
     public static boolean m5286b(C1189b0 b0Var) {
-        int e = b0Var.m38138e();
-        int f = b0Var.m38137f();
-        byte[] d = b0Var.m38139d();
+        int e = b0Var.m38141e();
+        int f = b0Var.m38140f();
+        byte[] d = b0Var.m38142d();
         if (e + 2 > f) {
             return false;
         }
@@ -36,7 +36,7 @@ public final class C10373c {
         while (true) {
             int i3 = i2 + 1;
             if (i3 >= f) {
-                b0Var.m38143Q(f - b0Var.m38138e());
+                b0Var.m38146Q(f - b0Var.m38141e());
                 return true;
             } else if (((char) d[i2]) == '*' && ((char) d[i3]) == '/') {
                 i2 = i3 + 1;
@@ -48,25 +48,25 @@ public final class C10373c {
     }
 
     public static boolean m5285c(C1189b0 b0Var) {
-        char k = m5277k(b0Var, b0Var.m38138e());
+        char k = m5277k(b0Var, b0Var.m38141e());
         if (k != '\t' && k != '\n' && k != '\f' && k != '\r' && k != ' ') {
             return false;
         }
-        b0Var.m38143Q(1);
+        b0Var.m38146Q(1);
         return true;
     }
 
     public static void m5283e(String str, C10374d dVar) {
-        Matcher matcher = f33365d.matcher(C10422b.m5149c(str));
+        Matcher matcher = f33368d.matcher(C10422b.m5149c(str));
         if (!matcher.matches()) {
             StringBuilder sb2 = new StringBuilder(String.valueOf(str).length() + 22);
             sb2.append("Invalid font-size: '");
             sb2.append(str);
             sb2.append("'.");
-            C1230s.m37881i("WebvttCssParser", sb2.toString());
+            C1230s.m37884i("WebvttCssParser", sb2.toString());
             return;
         }
-        String str2 = (String) C1186a.m38185e(matcher.group(2));
+        String str2 = (String) C1186a.m38188e(matcher.group(2));
         str2.hashCode();
         char c = 65535;
         switch (str2.hashCode()) {
@@ -102,16 +102,16 @@ public final class C10373c {
             default:
                 throw new IllegalStateException();
         }
-        dVar.m5253s(Float.parseFloat((String) C1186a.m38185e(matcher.group(1))));
+        dVar.m5253s(Float.parseFloat((String) C1186a.m38188e(matcher.group(1))));
     }
 
     public static String m5282f(C1189b0 b0Var, StringBuilder sb2) {
         boolean z = false;
         sb2.setLength(0);
-        int e = b0Var.m38138e();
-        int f = b0Var.m38137f();
+        int e = b0Var.m38141e();
+        int f = b0Var.m38140f();
         while (e < f && !z) {
-            char c = (char) b0Var.m38139d()[e];
+            char c = (char) b0Var.m38142d()[e];
             if ((c < 'A' || c > 'Z') && ((c < 'a' || c > 'z') && !((c >= '0' && c <= '9') || c == '#' || c == '-' || c == '.' || c == '_'))) {
                 z = true;
             } else {
@@ -119,13 +119,13 @@ public final class C10373c {
                 sb2.append(c);
             }
         }
-        b0Var.m38143Q(e - b0Var.m38138e());
+        b0Var.m38146Q(e - b0Var.m38141e());
         return sb2.toString();
     }
 
     public static String m5281g(C1189b0 b0Var, StringBuilder sb2) {
         m5274n(b0Var);
-        if (b0Var.m38142a() == 0) {
+        if (b0Var.m38145a() == 0) {
             return null;
         }
         String f = m5282f(b0Var, sb2);
@@ -133,7 +133,7 @@ public final class C10373c {
             return f;
         }
         StringBuilder sb3 = new StringBuilder(1);
-        sb3.append((char) b0Var.m38156D());
+        sb3.append((char) b0Var.m38159D());
         return sb3.toString();
     }
 
@@ -141,13 +141,13 @@ public final class C10373c {
         StringBuilder sb3 = new StringBuilder();
         boolean z = false;
         while (!z) {
-            int e = b0Var.m38138e();
+            int e = b0Var.m38141e();
             String g = m5281g(b0Var, sb2);
             if (g == null) {
                 return null;
             }
             if ("}".equals(g) || ";".equals(g)) {
-                b0Var.m38144P(e);
+                b0Var.m38147P(e);
                 z = true;
             } else {
                 sb3.append(g);
@@ -158,16 +158,16 @@ public final class C10373c {
 
     public static String m5279i(C1189b0 b0Var, StringBuilder sb2) {
         m5274n(b0Var);
-        if (b0Var.m38142a() < 5 || !"::cue".equals(b0Var.m38159A(5))) {
+        if (b0Var.m38145a() < 5 || !"::cue".equals(b0Var.m38162A(5))) {
             return null;
         }
-        int e = b0Var.m38138e();
+        int e = b0Var.m38141e();
         String g = m5281g(b0Var, sb2);
         if (g == null) {
             return null;
         }
         if ("{".equals(g)) {
-            b0Var.m38144P(e);
+            b0Var.m38147P(e);
             return "";
         }
         String l = "(".equals(g) ? m5276l(b0Var) : null;
@@ -184,19 +184,19 @@ public final class C10373c {
             m5274n(b0Var);
             String h = m5280h(b0Var, sb2);
             if (h != null && !"".equals(h)) {
-                int e = b0Var.m38138e();
+                int e = b0Var.m38141e();
                 String g = m5281g(b0Var, sb2);
                 if (!";".equals(g)) {
                     if ("}".equals(g)) {
-                        b0Var.m38144P(e);
+                        b0Var.m38147P(e);
                     } else {
                         return;
                     }
                 }
                 if ("color".equals(f)) {
-                    dVar.m5255q(C1196f.m38086b(h));
+                    dVar.m5255q(C1196f.m38089b(h));
                 } else if ("background-color".equals(f)) {
-                    dVar.m5258n(C1196f.m38086b(h));
+                    dVar.m5258n(C1196f.m38089b(h));
                 } else {
                     boolean z = true;
                     if ("ruby-position".equals(f)) {
@@ -233,28 +233,28 @@ public final class C10373c {
     }
 
     public static char m5277k(C1189b0 b0Var, int i) {
-        return (char) b0Var.m38139d()[i];
+        return (char) b0Var.m38142d()[i];
     }
 
     public static String m5276l(C1189b0 b0Var) {
-        int e = b0Var.m38138e();
-        int f = b0Var.m38137f();
+        int e = b0Var.m38141e();
+        int f = b0Var.m38140f();
         boolean z = false;
         while (e < f && !z) {
             e++;
-            z = ((char) b0Var.m38139d()[e]) == ')';
+            z = ((char) b0Var.m38142d()[e]) == ')';
         }
-        return b0Var.m38159A((e - 1) - b0Var.m38138e()).trim();
+        return b0Var.m38162A((e - 1) - b0Var.m38141e()).trim();
     }
 
     public static void m5275m(C1189b0 b0Var) {
         do {
-        } while (!TextUtils.isEmpty(b0Var.m38127p()));
+        } while (!TextUtils.isEmpty(b0Var.m38130p()));
     }
 
     public static void m5274n(C1189b0 b0Var) {
         while (true) {
-            for (boolean z = true; b0Var.m38142a() > 0 && z; z = false) {
+            for (boolean z = true; b0Var.m38145a() > 0 && z; z = false) {
                 if (m5285c(b0Var) || m5286b(b0Var)) {
                 }
             }
@@ -266,13 +266,13 @@ public final class C10373c {
         if (!"".equals(str)) {
             int indexOf = str.indexOf(91);
             if (indexOf != -1) {
-                Matcher matcher = f33364c.matcher(str.substring(indexOf));
+                Matcher matcher = f33367c.matcher(str.substring(indexOf));
                 if (matcher.matches()) {
-                    dVar.m5246z((String) C1186a.m38185e(matcher.group(1)));
+                    dVar.m5246z((String) C1186a.m38188e(matcher.group(1)));
                 }
                 str = str.substring(0, indexOf);
             }
-            String[] A0 = C1216l0.m38020A0(str, "\\.");
+            String[] A0 = C1216l0.m38023A0(str, "\\.");
             String str2 = A0[0];
             int indexOf2 = str2.indexOf(35);
             if (indexOf2 != -1) {
@@ -282,21 +282,21 @@ public final class C10373c {
                 dVar.m5247y(str2);
             }
             if (A0.length > 1) {
-                dVar.m5249w((String[]) C1216l0.m37943v0(A0, 1, A0.length));
+                dVar.m5249w((String[]) C1216l0.m37946v0(A0, 1, A0.length));
             }
         }
     }
 
     public List<C10374d> m5284d(C1189b0 b0Var) {
-        this.f33367b.setLength(0);
-        int e = b0Var.m38138e();
+        this.f33370b.setLength(0);
+        int e = b0Var.m38141e();
         m5275m(b0Var);
-        this.f33366a.m38146N(b0Var.m38139d(), b0Var.m38138e());
-        this.f33366a.m38144P(e);
+        this.f33369a.m38149N(b0Var.m38142d(), b0Var.m38141e());
+        this.f33369a.m38147P(e);
         ArrayList arrayList = new ArrayList();
         while (true) {
-            String i = m5279i(this.f33366a, this.f33367b);
-            if (i == null || !"{".equals(m5281g(this.f33366a, this.f33367b))) {
+            String i = m5279i(this.f33369a, this.f33370b);
+            if (i == null || !"{".equals(m5281g(this.f33369a, this.f33370b))) {
                 return arrayList;
             }
             C10374d dVar = new C10374d();
@@ -304,12 +304,12 @@ public final class C10373c {
             String str = null;
             boolean z = false;
             while (!z) {
-                int e2 = this.f33366a.m38138e();
-                String g = m5281g(this.f33366a, this.f33367b);
+                int e2 = this.f33369a.m38141e();
+                String g = m5281g(this.f33369a, this.f33370b);
                 boolean z2 = g == null || "}".equals(g);
                 if (!z2) {
-                    this.f33366a.m38144P(e2);
-                    m5278j(this.f33366a, dVar, this.f33367b);
+                    this.f33369a.m38147P(e2);
+                    m5278j(this.f33369a, dVar, this.f33370b);
                 }
                 str = g;
                 z = z2;

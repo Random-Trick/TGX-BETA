@@ -32,23 +32,23 @@ public class MenuItemC6014c extends AbstractC6013b implements MenuItem {
         }
 
         @Override
-        public boolean mo21563a() {
+        public boolean mo21564a() {
             return this.f19157d.hasSubMenu();
         }
 
         @Override
-        public View mo21562c() {
+        public View mo21563c() {
             return this.f19157d.onCreateActionView();
         }
 
         @Override
-        public boolean mo21561e() {
+        public boolean mo21562e() {
             return this.f19157d.onPerformDefaultAction();
         }
 
         @Override
-        public void mo21560f(SubMenu subMenu) {
-            this.f19157d.onPrepareSubMenu(MenuItemC6014c.this.m21568d(subMenu));
+        public void mo21561f(SubMenu subMenu) {
+            this.f19157d.onPrepareSubMenu(MenuItemC6014c.this.m21569d(subMenu));
         }
     }
 
@@ -60,22 +60,22 @@ public class MenuItemC6014c extends AbstractC6013b implements MenuItem {
         }
 
         @Override
-        public boolean mo21559b() {
+        public boolean mo21560b() {
             return this.f19157d.isVisible();
         }
 
         @Override
-        public View mo21558d(MenuItem menuItem) {
+        public View mo21559d(MenuItem menuItem) {
             return this.f19157d.onCreateActionView(menuItem);
         }
 
         @Override
-        public boolean mo21557g() {
+        public boolean mo21558g() {
             return this.f19157d.overridesItemVisibility();
         }
 
         @Override
-        public void mo21556j(AbstractC1435b.AbstractC1437b bVar) {
+        public void mo21557j(AbstractC1435b.AbstractC1437b bVar) {
             this.f19159f = bVar;
             this.f19157d.setVisibilityListener(bVar != null ? this : null);
         }
@@ -98,17 +98,17 @@ public class MenuItemC6014c extends AbstractC6013b implements MenuItem {
             addView(view);
         }
 
-        public View m21555a() {
+        public View m21556a() {
             return (View) this.f19161a;
         }
 
         @Override
-        public void mo21554c() {
+        public void mo21555c() {
             this.f19161a.onActionViewExpanded();
         }
 
         @Override
-        public void mo21553d() {
+        public void mo21554d() {
             this.f19161a.onActionViewCollapsed();
         }
     }
@@ -122,12 +122,12 @@ public class MenuItemC6014c extends AbstractC6013b implements MenuItem {
 
         @Override
         public boolean onMenuItemActionCollapse(MenuItem menuItem) {
-            return this.f19162a.onMenuItemActionCollapse(MenuItemC6014c.this.m21569c(menuItem));
+            return this.f19162a.onMenuItemActionCollapse(MenuItemC6014c.this.m21570c(menuItem));
         }
 
         @Override
         public boolean onMenuItemActionExpand(MenuItem menuItem) {
-            return this.f19162a.onMenuItemActionExpand(MenuItemC6014c.this.m21569c(menuItem));
+            return this.f19162a.onMenuItemActionExpand(MenuItemC6014c.this.m21570c(menuItem));
         }
     }
 
@@ -140,7 +140,7 @@ public class MenuItemC6014c extends AbstractC6013b implements MenuItem {
 
         @Override
         public boolean onMenuItemClick(MenuItem menuItem) {
-            return this.f19164a.onMenuItemClick(MenuItemC6014c.this.m21569c(menuItem));
+            return this.f19164a.onMenuItemClick(MenuItemC6014c.this.m21570c(menuItem));
         }
     }
 
@@ -175,7 +175,7 @@ public class MenuItemC6014c extends AbstractC6013b implements MenuItem {
     @Override
     public View getActionView() {
         View actionView = this.f19155d.getActionView();
-        return actionView instanceof C6017c ? ((C6017c) actionView).m21555a() : actionView;
+        return actionView instanceof C6017c ? ((C6017c) actionView).m21556a() : actionView;
     }
 
     @Override
@@ -245,7 +245,7 @@ public class MenuItemC6014c extends AbstractC6013b implements MenuItem {
 
     @Override
     public SubMenu getSubMenu() {
-        return m21568d(this.f19155d.getSubMenu());
+        return m21569d(this.f19155d.getSubMenu());
     }
 
     @Override
@@ -263,7 +263,7 @@ public class MenuItemC6014c extends AbstractC6013b implements MenuItem {
         return this.f19155d.getTooltipText();
     }
 
-    public void m21564h(boolean z) {
+    public void m21565h(boolean z) {
         try {
             if (this.f19156e == null) {
                 this.f19156e = this.f19155d.getClass().getDeclaredMethod("setExclusiveCheckable", Boolean.TYPE);

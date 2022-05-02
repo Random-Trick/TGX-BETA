@@ -9,16 +9,16 @@ public class C5905d extends AbstractC5902b {
     public boolean f18808h;
 
     public C5905d(C4166a aVar, Surface surface, boolean z) {
-        super(aVar, aVar.m28629a(surface));
-        C8298k.m12934e(aVar, "eglCore");
-        C8298k.m12934e(surface, "surface");
+        super(aVar, aVar.m28631a(surface));
+        C8298k.m12933e(aVar, "eglCore");
+        C8298k.m12933e(surface, "surface");
         this.f18807g = surface;
         this.f18808h = z;
     }
 
     @Override
-    public void mo21863d() {
-        super.mo21863d();
+    public void mo21864d() {
+        super.mo21864d();
         if (this.f18808h) {
             Surface surface = this.f18807g;
             if (surface != null) {

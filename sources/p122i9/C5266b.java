@@ -17,13 +17,13 @@ public final class C5266b {
         public C5267a() {
         }
 
-        public final C5266b m23480a(int i, String str) {
-            C8298k.m12934e(str, "name");
+        public final C5266b m23481a(int i, String str) {
+            C8298k.m12933e(str, "name");
             return new C5266b(i, EnumC5268b.ATTRIB, str, null);
         }
 
-        public final C5266b m23479b(int i, String str) {
-            C8298k.m12934e(str, "name");
+        public final C5266b m23480b(int i, String str) {
+            C8298k.m12933e(str, "name");
             return new C5266b(i, EnumC5268b.UNIFORM, str, null);
         }
 
@@ -42,22 +42,22 @@ public final class C5266b {
         this.f17447c = str;
         int i3 = C5269c.f17451a[bVar.ordinal()];
         if (i3 == 1) {
-            i2 = GLES20.glGetAttribLocation(C5055m.m24187a(i), str);
+            i2 = GLES20.glGetAttribLocation(C5055m.m24188a(i), str);
         } else if (i3 == 2) {
-            i2 = GLES20.glGetUniformLocation(C5055m.m24187a(i), str);
+            i2 = GLES20.glGetUniformLocation(C5055m.m24188a(i), str);
         } else {
             throw new C5046f();
         }
         this.f17445a = i2;
-        C4172d.m28621c(i2, str);
-        this.f17446b = C5055m.m24187a(i2);
+        C4172d.m28623c(i2, str);
+        this.f17446b = C5055m.m24188a(i2);
     }
 
-    public final int m23482a() {
+    public final int m23483a() {
         return this.f17446b;
     }
 
-    public final int m23481b() {
+    public final int m23482b() {
         return this.f17445a;
     }
 

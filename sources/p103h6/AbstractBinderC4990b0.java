@@ -9,7 +9,7 @@ public abstract class AbstractBinderC4990b0 extends BinderC0189b implements Abst
     }
 
     @Override
-    public final boolean mo24285q(int i, Parcel parcel, Parcel parcel2, int i2) {
+    public final boolean mo24286q(int i, Parcel parcel, Parcel parcel2, int i2) {
         if (i != 1) {
             return false;
         }

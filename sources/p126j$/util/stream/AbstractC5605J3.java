@@ -33,7 +33,7 @@ abstract class AbstractC5605J3 {
         return this.f18165a.estimateSize();
     }
 
-    public final long m22374o(long j) {
+    public final long m22375o(long j) {
         long j2;
         long min;
         do {
@@ -56,9 +56,9 @@ abstract class AbstractC5605J3 {
         return j2 > j3 ? Math.max(min - (j2 - j3), 0L) : min;
     }
 
-    protected abstract AbstractC5468G mo22373p(AbstractC5468G g);
+    protected abstract AbstractC5468G mo22374p(AbstractC5468G g);
 
-    public final int m22372q() {
+    public final int m22373q() {
         if (this.f18168d.get() > 0) {
             return 2;
         }
@@ -70,6 +70,6 @@ abstract class AbstractC5605J3 {
         if (this.f18168d.get() == 0 || (trySplit = this.f18165a.trySplit()) == null) {
             return null;
         }
-        return mo22373p(trySplit);
+        return mo22374p(trySplit);
     }
 }

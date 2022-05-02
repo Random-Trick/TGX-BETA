@@ -21,19 +21,19 @@ import p364zd.C11524j;
 import td.AbstractC9323v4;
 
 public class ViewTreeObserver$OnPreDrawListenerC9542g extends ViewGroup implements ViewTreeObserver.OnPreDrawListener, View.OnClickListener {
-    public boolean f30921P;
-    public AbstractC9543a f30922Q;
-    public AbstractC9323v4<?> f30923R;
-    public int f30925T;
-    public int f30926U;
-    public int f30927V;
-    public boolean f30928a;
-    public int f30929b;
-    public int[] f30930c;
-    public int f30918M = C1357a0.m37541i(15.0f);
-    public int f30919N = C1357a0.m37541i(10.0f);
-    public int f30920O = C1357a0.m37541i(42.0f);
-    public int f30924S = C1408x.m37090a();
+    public boolean f30924P;
+    public AbstractC9543a f30925Q;
+    public AbstractC9323v4<?> f30926R;
+    public int f30928T;
+    public int f30929U;
+    public int f30930V;
+    public boolean f30931a;
+    public int f30932b;
+    public int[] f30933c;
+    public int f30921M = C1357a0.m37544i(15.0f);
+    public int f30922N = C1357a0.m37544i(10.0f);
+    public int f30923O = C1357a0.m37544i(42.0f);
+    public int f30927S = C1408x.m37093a();
 
     public interface AbstractC9543a {
         void mo8378C1(int i);
@@ -51,21 +51,21 @@ public class ViewTreeObserver$OnPreDrawListenerC9542g extends ViewGroup implemen
 
     public ViewTreeObserver$OnPreDrawListenerC9542g(Context context) {
         super(context);
-        setLayoutParams(new ViewGroup.LayoutParams(-1, this.f30924S));
+        setLayoutParams(new ViewGroup.LayoutParams(-1, this.f30927S));
     }
 
     public final void m8387a(TdApi.KeyboardButton[][] keyboardButtonArr) {
         TextView textView;
         int length = keyboardButtonArr.length;
-        this.f30929b = length;
-        this.f30930c = new int[length];
-        this.f30921P = true;
+        this.f30932b = length;
+        this.f30933c = new int[length];
+        this.f30924P = true;
         int childCount = getChildCount();
         int i = 0;
         int i2 = 0;
         for (TdApi.KeyboardButton[] keyboardButtonArr2 : keyboardButtonArr) {
             i2++;
-            this.f30930c[i2] = keyboardButtonArr2.length;
+            this.f30933c[i2] = keyboardButtonArr2.length;
             for (TdApi.KeyboardButton keyboardButton : keyboardButtonArr2) {
                 if (i >= childCount) {
                     textView = m8386b();
@@ -75,7 +75,7 @@ public class ViewTreeObserver$OnPreDrawListenerC9542g extends ViewGroup implemen
                     textView.setVisibility(0);
                 }
                 textView.setTag(keyboardButton);
-                textView.setText(keyboardButton.text != null ? C5078d.m23986z().m24024I(keyboardButton.text) : "");
+                textView.setText(keyboardButton.text != null ? C5078d.m23987z().m24025I(keyboardButton.text) : "");
                 i++;
             }
         }
@@ -84,7 +84,7 @@ public class ViewTreeObserver$OnPreDrawListenerC9542g extends ViewGroup implemen
                 View childAt = getChildAt(i3);
                 if (childAt != null) {
                     if (i3 > 10) {
-                        AbstractC9323v4<?> v4Var = this.f30923R;
+                        AbstractC9323v4<?> v4Var = this.f30926R;
                         if (v4Var != null) {
                             v4Var.m9180qd(childAt);
                         }
@@ -95,32 +95,32 @@ public class ViewTreeObserver$OnPreDrawListenerC9542g extends ViewGroup implemen
                 }
             }
         }
-        this.f30921P = false;
+        this.f30924P = false;
     }
 
     public final TextView m8386b() {
         C6847b2 b2Var = new C6847b2(getContext());
-        C2065g.m35718d(b2Var, C11524j.m229M0(4.0f, 0.0f, R.id.theme_color_chatKeyboardButton));
-        AbstractC9323v4<?> v4Var = this.f30923R;
+        C2065g.m35721d(b2Var, C11524j.m229M0(4.0f, 0.0f, R.id.theme_color_chatKeyboardButton));
+        AbstractC9323v4<?> v4Var = this.f30926R;
         if (v4Var != null) {
             v4Var.m9163t8(b2Var);
         }
         b2Var.setGravity(17);
         b2Var.setTextColor(C11524j.m217S0());
-        AbstractC9323v4<?> v4Var2 = this.f30923R;
+        AbstractC9323v4<?> v4Var2 = this.f30926R;
         if (v4Var2 != null) {
             v4Var2.m9126y8(b2Var);
         }
         b2Var.setTextSize(1, 16.0f);
         b2Var.setOnClickListener(this);
         b2Var.setLayoutParams(new ViewGroup.MarginLayoutParams(-2, -2));
-        C1399s0.m37193a0(b2Var);
+        C1399s0.m37196a0(b2Var);
         return b2Var;
     }
 
     public void m8385c(EditTextBase editTextBase) {
-        this.f30926U = 2;
-        C1408x.m37088c(editTextBase);
+        this.f30929U = 2;
+        C1408x.m37091c(editTextBase);
     }
 
     public final void m8384d(View view, int i, int i2, int i3, int i4) {
@@ -136,11 +136,11 @@ public class ViewTreeObserver$OnPreDrawListenerC9542g extends ViewGroup implemen
 
     public final void m8383e(int i, boolean z, int i2) {
         int childCount = getChildCount();
-        int max = Math.max(getParentSize(), this.f30924S);
-        int i3 = this.f30918M;
-        int i4 = this.f30919N;
-        int i5 = this.f30929b;
-        int i6 = (int) (((i - (this.f30918M * 2)) - (this.f30919N * (this.f30930c[0] - 1))) / this.f30930c[0]);
+        int max = Math.max(getParentSize(), this.f30927S);
+        int i3 = this.f30921M;
+        int i4 = this.f30922N;
+        int i5 = this.f30932b;
+        int i6 = (int) (((i - (this.f30921M * 2)) - (this.f30922N * (this.f30933c[0] - 1))) / this.f30933c[0]);
         int i7 = (int) (((max - (i3 * 2)) - (i4 * (i5 - 1))) / i5);
         int i8 = i3;
         int i9 = i8;
@@ -148,7 +148,7 @@ public class ViewTreeObserver$OnPreDrawListenerC9542g extends ViewGroup implemen
         int i11 = 0;
         int i12 = 0;
         while (i10 < childCount) {
-            if (this.f30930c[i11] == 0) {
+            if (this.f30933c[i11] == 0) {
                 i11++;
             } else {
                 View childAt = getChildAt(i10);
@@ -160,12 +160,12 @@ public class ViewTreeObserver$OnPreDrawListenerC9542g extends ViewGroup implemen
                 }
                 i10++;
                 i12++;
-                int[] iArr = this.f30930c;
+                int[] iArr = this.f30933c;
                 if (i12 == iArr[i11]) {
                     i11++;
-                    if (i11 != this.f30929b) {
-                        int i14 = this.f30918M;
-                        int i15 = this.f30919N;
+                    if (i11 != this.f30932b) {
+                        int i14 = this.f30921M;
+                        int i15 = this.f30922N;
                         i9 = i9 + i15 + i7;
                         i6 = (int) (((i - (i14 * 2)) - (i15 * (iArr[i11] - 1))) / iArr[i11]);
                         i8 = i14;
@@ -174,26 +174,26 @@ public class ViewTreeObserver$OnPreDrawListenerC9542g extends ViewGroup implemen
                         return;
                     }
                 } else {
-                    i8 += this.f30919N + i6;
+                    i8 += this.f30922N + i6;
                 }
             }
         }
     }
 
     public void m8382f(boolean z) {
-        int i = this.f30926U;
+        int i = this.f30929U;
         if (i == 1 && z) {
-            this.f30927V = 35;
+            this.f30930V = 35;
         } else if (i == 2 && !z) {
-            this.f30926U = 0;
+            this.f30929U = 0;
         }
     }
 
     public final void m8381g(boolean z) {
-        int i = this.f30920O;
-        int i2 = this.f30929b;
-        int i3 = (i * i2) + (this.f30919N * (i2 - 1)) + (this.f30918M * 2);
-        m8380h(i3, z ? i3 : C1408x.m37090a());
+        int i = this.f30923O;
+        int i2 = this.f30932b;
+        int i3 = (i * i2) + (this.f30922N * (i2 - 1)) + (this.f30921M * 2);
+        m8380h(i3, z ? i3 : C1408x.m37093a());
     }
 
     public int getParentSize() {
@@ -205,53 +205,53 @@ public class ViewTreeObserver$OnPreDrawListenerC9542g extends ViewGroup implemen
     }
 
     public int getSize() {
-        return this.f30924S;
+        return this.f30927S;
     }
 
     public void m8380h(int i, int i2) {
         AbstractC9543a aVar;
         boolean z = getParent() != null;
         if (z) {
-            ((View) getParent()).getLayoutParams().height = Math.min(i2, this.f30920O * 7);
+            ((View) getParent()).getLayoutParams().height = Math.min(i2, this.f30923O * 7);
         }
-        if (this.f30924S != i) {
-            this.f30924S = i;
+        if (this.f30927S != i) {
+            this.f30927S = i;
             getLayoutParams().height = i;
             requestLayout();
         } else if (z) {
             getParent().requestLayout();
         }
-        if (z && (aVar = this.f30922Q) != null) {
+        if (z && (aVar = this.f30925Q) != null) {
             aVar.mo8378C1(getParentSize());
         }
     }
 
     public void m8379i(EditTextBase editTextBase) {
-        this.f30926U = 1;
-        C1408x.m37085f(editTextBase);
+        this.f30929U = 1;
+        C1408x.m37088f(editTextBase);
     }
 
     @Override
     public void onClick(View view) {
-        if (this.f30922Q != null) {
+        if (this.f30925Q != null) {
             TdApi.KeyboardButton keyboardButton = (TdApi.KeyboardButton) view.getTag();
             switch (keyboardButton.type.getConstructor()) {
                 case TdApi.KeyboardButtonTypeText.CONSTRUCTOR:
-                    this.f30922Q.mo8373y5(keyboardButton.text);
-                    if (this.f30928a) {
-                        this.f30922Q.mo8377l1();
+                    this.f30925Q.mo8373y5(keyboardButton.text);
+                    if (this.f30931a) {
+                        this.f30925Q.mo8377l1();
                         return;
                     }
                     return;
                 case TdApi.KeyboardButtonTypeRequestPhoneNumber.CONSTRUCTOR:
-                    this.f30922Q.mo8375r6(this.f30928a);
+                    this.f30925Q.mo8375r6(this.f30931a);
                     return;
                 case TdApi.KeyboardButtonTypeRequestLocation.CONSTRUCTOR:
-                    this.f30922Q.mo8374w3(this.f30928a);
+                    this.f30925Q.mo8374w3(this.f30931a);
                     return;
                 case TdApi.KeyboardButtonTypeRequestPoll.CONSTRUCTOR:
                     TdApi.KeyboardButtonTypeRequestPoll keyboardButtonTypeRequestPoll = (TdApi.KeyboardButtonTypeRequestPoll) keyboardButton.type;
-                    this.f30922Q.mo8376r2(this.f30928a, keyboardButtonTypeRequestPoll.forceQuiz, keyboardButtonTypeRequestPoll.forceRegular);
+                    this.f30925Q.mo8376r2(this.f30931a, keyboardButtonTypeRequestPoll.forceQuiz, keyboardButtonTypeRequestPoll.forceRegular);
                     return;
                 default:
                     return;
@@ -262,10 +262,10 @@ public class ViewTreeObserver$OnPreDrawListenerC9542g extends ViewGroup implemen
     @Override
     public void onLayout(boolean z, int i, int i2, int i3, int i4) {
         int i5 = i3 - i;
-        if (!this.f30921P) {
-            int i6 = this.f30925T;
+        if (!this.f30924P) {
+            int i6 = this.f30928T;
             if (i6 != 0) {
-                this.f30925T = 0;
+                this.f30928T = 0;
                 i5 = i6;
                 z = true;
             }
@@ -284,50 +284,50 @@ public class ViewTreeObserver$OnPreDrawListenerC9542g extends ViewGroup implemen
                 }
             }
         } else if (z) {
-            this.f30925T = i5;
+            this.f30928T = i5;
         }
     }
 
     @Override
     public void onMeasure(int i, int i2) {
-        setMeasuredDimension(i, View.MeasureSpec.makeMeasureSpec(Math.max(getParentSize(), this.f30924S), Log.TAG_TDLIB_OPTIONS));
+        setMeasuredDimension(i, View.MeasureSpec.makeMeasureSpec(Math.max(getParentSize(), this.f30927S), Log.TAG_TDLIB_OPTIONS));
     }
 
     @Override
     public boolean onPreDraw() {
-        int i = this.f30926U;
+        int i = this.f30929U;
         if (i == 1) {
-            int i2 = this.f30927V + 1;
-            this.f30927V = i2;
+            int i2 = this.f30930V + 1;
+            this.f30930V = i2;
             if (i2 < 40) {
                 return false;
             }
-            this.f30927V = 0;
-            this.f30926U = 0;
+            this.f30930V = 0;
+            this.f30929U = 0;
             return true;
         } else if (i != 2) {
             return true;
         } else {
-            int i3 = this.f30927V + 1;
-            this.f30927V = i3;
+            int i3 = this.f30930V + 1;
+            this.f30930V = i3;
             if (i3 < 40) {
                 return false;
             }
-            this.f30927V = 0;
-            this.f30926U = 0;
+            this.f30930V = 0;
+            this.f30929U = 0;
             return true;
         }
     }
 
     public void setCallback(AbstractC9543a aVar) {
-        this.f30922Q = aVar;
+        this.f30925Q = aVar;
     }
 
     public void setKeyboard(TdApi.ReplyMarkupShowKeyboard replyMarkupShowKeyboard) {
-        this.f30928a = replyMarkupShowKeyboard.oneTime;
+        this.f30931a = replyMarkupShowKeyboard.oneTime;
         m8387a(replyMarkupShowKeyboard.rows);
         m8381g(replyMarkupShowKeyboard.resizeKeyboard);
-        m8383e(C1357a0.m37543g(), false, 0);
+        m8383e(C1357a0.m37546g(), false, 0);
         requestLayout();
         if (getParent() != null) {
             ((ScrollView) getParent()).scrollTo(0, 0);
@@ -335,6 +335,6 @@ public class ViewTreeObserver$OnPreDrawListenerC9542g extends ViewGroup implemen
     }
 
     public void setThemeProvider(AbstractC9323v4<?> v4Var) {
-        this.f30923R = v4Var;
+        this.f30926R = v4Var;
     }
 }

@@ -15,7 +15,7 @@ public class C1301f extends C1298c {
     public void mo6290e() {
         try {
             this.f4695b = new FileInputStream(this.f4696c);
-            m37787b(new C1300e(this.f4695b.getFD()));
+            m37790b(new C1300e(this.f4695b.getFD()));
             super.mo6290e();
         } catch (IOException e) {
             throw new RuntimeException(e);

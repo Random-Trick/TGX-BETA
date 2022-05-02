@@ -14,24 +14,24 @@ public final class C6167s2 {
     public int f19545d;
     public boolean f19546e;
 
-    public final Set<C6085b<?>> m21132a() {
+    public final Set<C6085b<?>> m21133a() {
         return this.f19542a.keySet();
     }
 
-    public final void m21131b(C6085b<?> bVar, C5217a aVar, String str) {
+    public final void m21132b(C6085b<?> bVar, C5217a aVar, String str) {
         this.f19542a.put(bVar, aVar);
         this.f19543b.put(bVar, str);
         this.f19545d--;
-        if (!aVar.m23611f()) {
+        if (!aVar.m23612f()) {
             this.f19546e = true;
         }
         if (this.f19545d != 0) {
             return;
         }
         if (this.f19546e) {
-            this.f19544c.m19085b(new C5862c(this.f19542a));
+            this.f19544c.m19086b(new C5862c(this.f19542a));
             return;
         }
-        this.f19544c.m19084c(this.f19543b);
+        this.f19544c.m19085c(this.f19543b);
     }
 }

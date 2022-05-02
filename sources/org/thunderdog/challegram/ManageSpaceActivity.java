@@ -6,13 +6,13 @@ import p350yd.C10536ab;
 
 public class ManageSpaceActivity extends AbstractView$OnTouchListenerC7889a {
     @Override
-    public boolean mo14548Q1() {
+    public boolean mo14547Q1() {
         return false;
     }
 
     @Override
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        this.f25523X.m9744Q(new View$OnClickListenerC2942qs(this, C10536ab.m4667o1().m4684j0()));
+        this.f25526X.m9743Q(new View$OnClickListenerC2942qs(this, C10536ab.m4667o1().m4684j0()));
     }
 }

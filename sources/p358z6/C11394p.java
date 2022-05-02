@@ -5,25 +5,25 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 
 public class C11394p<K, V> extends AbstractC11356e<K, V> implements Serializable {
     @NullableDecl
-    public final K f36346a;
+    public final K f36349a;
     @NullableDecl
-    public final V f36347b;
+    public final V f36350b;
 
     public C11394p(@NullableDecl K k, @NullableDecl V v) {
-        this.f36346a = k;
-        this.f36347b = v;
+        this.f36349a = k;
+        this.f36350b = v;
     }
 
     @Override
     @NullableDecl
     public final K getKey() {
-        return this.f36346a;
+        return this.f36349a;
     }
 
     @Override
     @NullableDecl
     public final V getValue() {
-        return this.f36347b;
+        return this.f36350b;
     }
 
     @Override

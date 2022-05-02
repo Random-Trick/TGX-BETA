@@ -6,14 +6,14 @@ public class C4099g {
     public long f13860b;
     public int f13861c;
 
-    public static C4099g m28916b() {
+    public static C4099g m28918b() {
         if (f13858d == null) {
             f13858d = new C4099g();
         }
         return f13858d;
     }
 
-    public void m28917a(long j, double d, double d2) {
+    public void m28919a(long j, double d, double d2) {
         float f;
         float f2;
         double d3;

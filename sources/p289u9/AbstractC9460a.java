@@ -5,7 +5,7 @@ import p289u9.AbstractC9480j;
 import qa.C8298k;
 
 public abstract class AbstractC9460a<Input, InputChannel extends AbstractC9461b, Output, OutputChannel extends AbstractC9461b> implements AbstractC9480j<Input, InputChannel, Output, OutputChannel> {
-    public OutputChannel f30684b;
+    public OutputChannel f30687b;
 
     @Override
     public void mo5861a() {
@@ -14,14 +14,14 @@ public abstract class AbstractC9460a<Input, InputChannel extends AbstractC9461b,
 
     @Override
     public void mo5856i(OutputChannel outputchannel) {
-        C8298k.m12934e(outputchannel, "next");
-        this.f30684b = outputchannel;
+        C8298k.m12933e(outputchannel, "next");
+        this.f30687b = outputchannel;
     }
 
     public final OutputChannel m8580j() {
-        OutputChannel outputchannel = this.f30684b;
+        OutputChannel outputchannel = this.f30687b;
         if (outputchannel == null) {
-            C8298k.m12925n("next");
+            C8298k.m12924n("next");
         }
         return outputchannel;
     }

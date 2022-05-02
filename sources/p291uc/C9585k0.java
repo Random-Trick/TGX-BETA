@@ -31,8 +31,8 @@ public class C9585k0 extends ImageView implements C9357x2.AbstractC9363f {
 
     @Override
     public void mo8098f1(View view, Rect rect) {
-        rect.top += C1357a0.m37541i(8.0f);
-        rect.bottom -= C1357a0.m37541i(8.0f);
+        rect.top += C1357a0.m37544i(8.0f);
+        rect.bottom -= C1357a0.m37544i(8.0f);
     }
 
     @Override

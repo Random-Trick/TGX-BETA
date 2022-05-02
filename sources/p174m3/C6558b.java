@@ -30,13 +30,13 @@ public final class C6558b {
         @Override
         public void run() {
             if (C6558b.this.f20410c) {
-                this.f20411a.mo19326v();
+                this.f20411a.mo19327v();
             }
         }
     }
 
     public interface AbstractC6560b {
-        void mo19326v();
+        void mo19327v();
     }
 
     public C6558b(Context context, Handler handler, AbstractC6560b bVar) {
@@ -44,7 +44,7 @@ public final class C6558b {
         this.f20409b = new RunnableC6559a(handler, bVar);
     }
 
-    public void m20105b(boolean z) {
+    public void m20106b(boolean z) {
         if (z && !this.f20410c) {
             this.f20408a.registerReceiver(this.f20409b, new IntentFilter("android.media.AUDIO_BECOMING_NOISY"));
             this.f20410c = true;

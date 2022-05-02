@@ -9,10 +9,10 @@ public final class C3698i3 implements AbstractC4514e<C3661e6> {
     public static final C4511d f12588b;
 
     static {
-        C4511d.C4513b a = C4511d.m27508a("confidence");
+        C4511d.C4513b a = C4511d.m27510a("confidence");
         C3663e8 e8Var = new C3663e8();
-        e8Var.m29841a(1);
-        f12588b = a.m27503b(e8Var.m29840b()).m27504a();
+        e8Var.m29843a(1);
+        f12588b = a.m27505b(e8Var.m29842b()).m27506a();
     }
 
     @Override

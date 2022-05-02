@@ -16,15 +16,15 @@ public final class C4528k {
         this(str, bArr, mVarArr, aVar, System.currentTimeMillis());
     }
 
-    public C4530m[] m27492a() {
+    public C4530m[] m27494a() {
         return this.f14932d;
     }
 
-    public String m27491b() {
+    public String m27493b() {
         return this.f14929a;
     }
 
-    public void m27490c(EnumC4529l lVar, Object obj) {
+    public void m27492c(EnumC4529l lVar, Object obj) {
         if (this.f14934f == null) {
             this.f14934f = new EnumMap(EnumC4529l.class);
         }

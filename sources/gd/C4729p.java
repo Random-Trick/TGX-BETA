@@ -15,24 +15,24 @@ public class C4729p extends AbstractC4718o<String> {
         this.f15922b0 = str;
     }
 
-    public long m26313Z() {
+    public long m26314Z() {
         return this.f15923c0;
     }
 
-    public String m26312a0() {
+    public String m26313a0() {
         return this.f15922b0;
     }
 
-    public long m26311b0() {
+    public long m26312b0() {
         return this.f15921a0;
     }
 
-    public void m26310c0(long j) {
+    public void m26311c0(long j) {
         this.f15923c0 = j;
     }
 
     @Override
-    public int mo25111n() {
-        return C1357a0.m37541i(36.0f) + C1357a0.m37541i(1.0f);
+    public int mo25112n() {
+        return C1357a0.m37544i(36.0f) + C1357a0.m37544i(1.0f);
     }
 }

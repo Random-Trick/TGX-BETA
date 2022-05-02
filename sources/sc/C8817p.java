@@ -5,14 +5,14 @@ import android.view.MotionEvent;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class C8817p extends RecyclerView {
-    public boolean f28465u1;
+    public boolean f28468u1;
 
     public C8817p(Context context) {
         super(context);
     }
 
-    public void m11269G1(MotionEvent motionEvent) {
-        if (this.f28465u1) {
+    public void m11268G1(MotionEvent motionEvent) {
+        if (this.f28468u1) {
             dispatchTouchEvent(motionEvent);
         }
     }
@@ -21,9 +21,9 @@ public class C8817p extends RecyclerView {
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
         int action = motionEvent.getAction();
         if (action == 0) {
-            this.f28465u1 = true;
+            this.f28468u1 = true;
         } else if (action == 1) {
-            this.f28465u1 = false;
+            this.f28468u1 = false;
         }
         return super.onInterceptTouchEvent(motionEvent);
     }
@@ -32,9 +32,9 @@ public class C8817p extends RecyclerView {
     public boolean onTouchEvent(MotionEvent motionEvent) {
         int action = motionEvent.getAction();
         if (action == 0) {
-            this.f28465u1 = true;
+            this.f28468u1 = true;
         } else if (action == 1) {
-            this.f28465u1 = false;
+            this.f28468u1 = false;
         }
         return motionEvent.getAction() != 3 && super.onTouchEvent(motionEvent);
     }

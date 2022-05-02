@@ -7,30 +7,30 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 
 public final class C9416f extends Drawable.ConstantState {
-    public int f30472a;
-    public Drawable.ConstantState f30473b;
-    public ColorStateList f30474c;
-    public PorterDuff.Mode f30475d;
+    public int f30475a;
+    public Drawable.ConstantState f30476b;
+    public ColorStateList f30477c;
+    public PorterDuff.Mode f30478d;
 
     public C9416f(C9416f fVar) {
-        this.f30474c = null;
-        this.f30475d = C9414d.f30464P;
+        this.f30477c = null;
+        this.f30478d = C9414d.f30467P;
         if (fVar != null) {
-            this.f30472a = fVar.f30472a;
-            this.f30473b = fVar.f30473b;
-            this.f30474c = fVar.f30474c;
-            this.f30475d = fVar.f30475d;
+            this.f30475a = fVar.f30475a;
+            this.f30476b = fVar.f30476b;
+            this.f30477c = fVar.f30477c;
+            this.f30478d = fVar.f30478d;
         }
     }
 
     public boolean m8743a() {
-        return this.f30473b != null;
+        return this.f30476b != null;
     }
 
     @Override
     public int getChangingConfigurations() {
-        int i = this.f30472a;
-        Drawable.ConstantState constantState = this.f30473b;
+        int i = this.f30475a;
+        Drawable.ConstantState constantState = this.f30476b;
         return i | (constantState != null ? constantState.getChangingConfigurations() : 0);
     }
 

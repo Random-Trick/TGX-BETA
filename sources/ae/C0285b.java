@@ -11,7 +11,7 @@ public class C0285b extends C0288e {
     public C0285b(int i, int i2) {
         super(i);
         AbstractC11531p a = C11514c0.m348a(i2);
-        C8298k.m12935d(a, "getBuiltinTheme(bubbleThemeId)");
+        C8298k.m12934d(a, "getBuiltinTheme(bubbleThemeId)");
         this.f913b = a;
     }
 

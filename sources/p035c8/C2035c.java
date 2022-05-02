@@ -16,11 +16,11 @@ public class C2035c {
         @Nullable
         public Executor f7226b;
 
-        public C2035c m35784a() {
+        public C2035c m35787a() {
             return new C2035c(this.f7225a, this.f7226b, null);
         }
 
-        public C2036a m35783b(int i, @RecentlyNonNull int... iArr) {
+        public C2036a m35786b(int i, @RecentlyNonNull int... iArr) {
             this.f7225a = i;
             if (iArr != null) {
                 for (int i2 : iArr) {
@@ -36,12 +36,12 @@ public class C2035c {
         this.f7224b = executor;
     }
 
-    public final int m35786a() {
+    public final int m35789a() {
         return this.f7223a;
     }
 
     @RecentlyNullable
-    public final Executor m35785b() {
+    public final Executor m35788b() {
         return this.f7224b;
     }
 
@@ -53,10 +53,10 @@ public class C2035c {
             return false;
         }
         C2035c cVar = (C2035c) obj;
-        return this.f7223a == cVar.f7223a && C6374q.m20524a(this.f7224b, cVar.f7224b);
+        return this.f7223a == cVar.f7223a && C6374q.m20525a(this.f7224b, cVar.f7224b);
     }
 
     public int hashCode() {
-        return C6374q.m20523b(Integer.valueOf(this.f7223a), this.f7224b);
+        return C6374q.m20524b(Integer.valueOf(this.f7223a), this.f7224b);
     }
 }

@@ -28,17 +28,17 @@ public class C0144g0 {
         this.f519a = i;
     }
 
-    public static int m42214g(C0146b bVar, C0146b bVar2) {
+    public static int m42217g(C0146b bVar, C0146b bVar2) {
         return bVar.f526a - bVar2.f526a;
     }
 
-    public static int m42213h(C0146b bVar, C0146b bVar2) {
+    public static int m42216h(C0146b bVar, C0146b bVar2) {
         return Float.compare(bVar.f528c, bVar2.f528c);
     }
 
-    public void m42218c(int i, float f) {
+    public void m42221c(int i, float f) {
         C0146b bVar;
-        m42217d();
+        m42220d();
         int i2 = this.f525g;
         if (i2 > 0) {
             C0146b[] bVarArr = this.f521c;
@@ -81,22 +81,22 @@ public class C0144g0 {
         }
     }
 
-    public final void m42217d() {
+    public final void m42220d() {
         if (this.f522d != 1) {
             Collections.sort(this.f520b, f517h);
             this.f522d = 1;
         }
     }
 
-    public final void m42216e() {
+    public final void m42219e() {
         if (this.f522d != 0) {
             Collections.sort(this.f520b, f518i);
             this.f522d = 0;
         }
     }
 
-    public float m42215f(float f) {
-        m42216e();
+    public float m42218f(float f) {
+        m42219e();
         float f2 = f * this.f524f;
         int i = 0;
         for (int i2 = 0; i2 < this.f520b.size(); i2++) {
@@ -113,7 +113,7 @@ public class C0144g0 {
         return arrayList.get(arrayList.size() - 1).f528c;
     }
 
-    public void m42212i() {
+    public void m42215i() {
         this.f520b.clear();
         this.f522d = -1;
         this.f523e = 0;

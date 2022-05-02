@@ -7,24 +7,24 @@ import p251ra.AbstractC8415a;
 import qa.C8298k;
 
 public final class C10461a<T> implements AbstractC10466d<T>, AbstractC10463b<T> {
-    public final AbstractC10466d<T> f33540a;
-    public final int f33541b;
+    public final AbstractC10466d<T> f33543a;
+    public final int f33544b;
 
     public static final class C10462a implements Iterator<T>, AbstractC8415a, p126j$.util.Iterator {
-        public final Iterator<T> f33542a;
-        public int f33543b;
-        public final C10461a<T> f33544c;
+        public final Iterator<T> f33545a;
+        public int f33546b;
+        public final C10461a<T> f33547c;
 
         public C10462a(C10461a<T> aVar) {
-            this.f33544c = aVar;
-            this.f33542a = aVar.f33540a.iterator();
-            this.f33543b = aVar.f33541b;
+            this.f33547c = aVar;
+            this.f33545a = aVar.f33543a.iterator();
+            this.f33546b = aVar.f33544b;
         }
 
         public final void m5075e() {
-            while (this.f33543b > 0 && this.f33542a.hasNext()) {
-                this.f33542a.next();
-                this.f33543b--;
+            while (this.f33546b > 0 && this.f33545a.hasNext()) {
+                this.f33545a.next();
+                this.f33546b--;
             }
         }
 
@@ -41,13 +41,13 @@ public final class C10461a<T> implements AbstractC10466d<T>, AbstractC10463b<T> 
         @Override
         public boolean hasNext() {
             m5075e();
-            return this.f33542a.hasNext();
+            return this.f33545a.hasNext();
         }
 
         @Override
         public T next() {
             m5075e();
-            return this.f33542a.next();
+            return this.f33545a.next();
         }
 
         @Override
@@ -57,9 +57,9 @@ public final class C10461a<T> implements AbstractC10466d<T>, AbstractC10463b<T> 
     }
 
     public C10461a(AbstractC10466d<? extends T> dVar, int i) {
-        C8298k.m12934e(dVar, "sequence");
-        this.f33540a = dVar;
-        this.f33541b = i;
+        C8298k.m12933e(dVar, "sequence");
+        this.f33543a = dVar;
+        this.f33544b = i;
         if (!(i >= 0)) {
             throw new IllegalArgumentException(("count must be non-negative, but was " + i + '.').toString());
         }
@@ -67,8 +67,8 @@ public final class C10461a<T> implements AbstractC10466d<T>, AbstractC10463b<T> 
 
     @Override
     public AbstractC10466d<T> mo5074a(int i) {
-        int i2 = this.f33541b + i;
-        return i2 < 0 ? new C10461a(this, i) : new C10461a(this.f33540a, i2);
+        int i2 = this.f33544b + i;
+        return i2 < 0 ? new C10461a(this, i) : new C10461a(this.f33543a, i2);
     }
 
     @Override

@@ -4,11 +4,11 @@ import java.lang.ref.ReferenceQueue;
 import java.lang.ref.WeakReference;
 
 public final class C10413u extends WeakReference<Throwable> {
-    public final int f33480a;
+    public final int f33483a;
 
     public C10413u(Throwable th, ReferenceQueue<Throwable> referenceQueue) {
         super(th, referenceQueue);
-        this.f33480a = System.identityHashCode(th);
+        this.f33483a = System.identityHashCode(th);
     }
 
     public final boolean equals(Object obj) {
@@ -17,7 +17,7 @@ public final class C10413u extends WeakReference<Throwable> {
                 return true;
             }
             C10413u uVar = (C10413u) obj;
-            if (this.f33480a == uVar.f33480a && get() == uVar.get()) {
+            if (this.f33483a == uVar.f33483a && get() == uVar.get()) {
                 return true;
             }
         }
@@ -25,6 +25,6 @@ public final class C10413u extends WeakReference<Throwable> {
     }
 
     public final int hashCode() {
-        return this.f33480a;
+        return this.f33483a;
     }
 }

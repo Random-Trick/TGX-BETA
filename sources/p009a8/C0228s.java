@@ -16,7 +16,7 @@ public final class C0228s extends PhantomReference<Object> implements C0202a.Abs
     }
 
     @Override
-    public final void mo42057a() {
+    public final void mo42060a() {
         if (this.f715a.remove(this)) {
             clear();
             this.f716b.run();

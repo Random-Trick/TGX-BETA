@@ -8,7 +8,7 @@ public interface AbstractC9480j<Input, InputChannel extends AbstractC9461b, Outp
 
     public static final class C9481a {
         public static <Input, InputChannel extends AbstractC9461b, Output, OutputChannel extends AbstractC9461b> void m8557a(AbstractC9480j<Input, InputChannel, Output, OutputChannel> jVar, OutputChannel outputchannel) {
-            C8298k.m12934e(outputchannel, "next");
+            C8298k.m12933e(outputchannel, "next");
         }
 
         public static <Input, InputChannel extends AbstractC9461b, Output, OutputChannel extends AbstractC9461b> void m8556b(AbstractC9480j<Input, InputChannel, Output, OutputChannel> jVar) {

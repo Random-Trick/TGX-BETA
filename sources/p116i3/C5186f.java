@@ -9,15 +9,15 @@ public final class C5186f implements AbstractC3589b<String> {
         public static final C5186f f17311a = new C5186f();
     }
 
-    public static C5186f m23649a() {
+    public static C5186f m23650a() {
         return C5187a.f17311a;
     }
 
-    public static String m23648b() {
-        return (String) C3591d.m29915c(AbstractC5184e.m23652a(), "Cannot return null from a non-@Nullable @Provides method");
+    public static String m23649b() {
+        return (String) C3591d.m29917c(AbstractC5184e.m23653a(), "Cannot return null from a non-@Nullable @Provides method");
     }
 
     public String get() {
-        return m23648b();
+        return m23649b();
     }
 }

@@ -41,7 +41,7 @@ public final class C1811l1<K, V> extends AbstractCollection<V> {
             return super.remove(obj);
         } catch (UnsupportedOperationException unused) {
             for (Map.Entry<K, V> entry : this.f6452a.entrySet()) {
-                if (C1837n.m35975a(obj, entry.getValue())) {
+                if (C1837n.m35978a(obj, entry.getValue())) {
                     this.f6452a.remove(entry.getKey());
                     return true;
                 }

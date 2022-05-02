@@ -23,14 +23,14 @@ public class C6036f<K, V> {
         throw new IllegalArgumentException("maxSize <= 0");
     }
 
-    public V m21494a(K k) {
+    public V m21495a(K k) {
         return null;
     }
 
-    public void m21493b(boolean z, K k, V v, V v2) {
+    public void m21494b(boolean z, K k, V v, V v2) {
     }
 
-    public final V m21492c(K k) {
+    public final V m21493c(K k) {
         V put;
         Objects.requireNonNull(k, "key == null");
         synchronized (this) {
@@ -40,7 +40,7 @@ public class C6036f<K, V> {
                 return v;
             }
             this.f19209h++;
-            V a = m21494a(k);
+            V a = m21495a(k);
             if (a == null) {
                 return null;
             }
@@ -50,52 +50,52 @@ public class C6036f<K, V> {
                 if (put != null) {
                     this.f19202a.put(k, put);
                 } else {
-                    this.f19203b += m21490e(k, a);
+                    this.f19203b += m21491e(k, a);
                 }
             }
             if (put != null) {
-                m21493b(false, k, a, put);
+                m21494b(false, k, a, put);
                 return put;
             }
-            m21488g(this.f19204c);
+            m21489g(this.f19204c);
             return a;
         }
     }
 
-    public final V m21491d(K k, V v) {
+    public final V m21492d(K k, V v) {
         V put;
         if (k == null || v == null) {
             throw new NullPointerException("key == null || value == null");
         }
         synchronized (this) {
             this.f19205d++;
-            this.f19203b += m21490e(k, v);
+            this.f19203b += m21491e(k, v);
             put = this.f19202a.put(k, v);
             if (put != null) {
-                this.f19203b -= m21490e(k, put);
+                this.f19203b -= m21491e(k, put);
             }
         }
         if (put != null) {
-            m21493b(false, k, put, v);
+            m21494b(false, k, put, v);
         }
-        m21488g(this.f19204c);
+        m21489g(this.f19204c);
         return put;
     }
 
-    public final int m21490e(K k, V v) {
-        int f = m21489f(k, v);
+    public final int m21491e(K k, V v) {
+        int f = m21490f(k, v);
         if (f >= 0) {
             return f;
         }
         throw new IllegalStateException("Negative size: " + k + "=" + v);
     }
 
-    public int m21489f(K k, V v) {
+    public int m21490f(K k, V v) {
         return 1;
     }
 
-    public void m21488g(int r5) {
-        throw new UnsupportedOperationException("Method not decompiled: p143k0.C6036f.m21488g(int):void");
+    public void m21489g(int r5) {
+        throw new UnsupportedOperationException("Method not decompiled: p143k0.C6036f.m21489g(int):void");
     }
 
     public final synchronized String toString() {

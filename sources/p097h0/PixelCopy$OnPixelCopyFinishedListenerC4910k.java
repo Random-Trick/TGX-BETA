@@ -8,6 +8,6 @@ public final class PixelCopy$OnPixelCopyFinishedListenerC4910k implements PixelC
 
     @Override
     public final void onPixelCopyFinished(int i) {
-        C0718d.m40448m(i);
+        C0718d.m40451m(i);
     }
 }

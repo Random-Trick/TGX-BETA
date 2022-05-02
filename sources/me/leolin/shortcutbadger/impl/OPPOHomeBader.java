@@ -13,7 +13,7 @@ import java.util.List;
 import p012ab.AbstractC0243a;
 
 public class OPPOHomeBader implements AbstractC0243a {
-    public int f21953a = -1;
+    public int f21956a = -1;
 
     @Override
     public List<String> mo18371a() {
@@ -22,8 +22,8 @@ public class OPPOHomeBader implements AbstractC0243a {
 
     @Override
     public void mo18370b(Context context, ComponentName componentName, int i) {
-        if (this.f21953a != i) {
-            this.f21953a = i;
+        if (this.f21956a != i) {
+            this.f21956a = i;
             if (Build.VERSION.SDK_INT >= 11) {
                 m18380d(context, i);
             } else {
@@ -40,7 +40,7 @@ public class OPPOHomeBader implements AbstractC0243a {
         intent.putExtra("pakeageName", componentName.getPackageName());
         intent.putExtra("number", i);
         intent.putExtra("upgradeNumber", i);
-        C1304a.m37782c(context, intent);
+        C1304a.m37785c(context, intent);
     }
 
     @TargetApi(11)

@@ -11,48 +11,48 @@ import p266t.C8889g;
 public interface AbstractC8508j2 {
 
     public static abstract class AbstractC8509a {
-        public void mo12037a(AbstractC8508j2 j2Var) {
+        public void mo12036a(AbstractC8508j2 j2Var) {
         }
 
-        public void mo12036o(AbstractC8508j2 j2Var) {
+        public void mo12035o(AbstractC8508j2 j2Var) {
         }
 
-        public void mo12035p(AbstractC8508j2 j2Var) {
+        public void mo12034p(AbstractC8508j2 j2Var) {
         }
 
-        public void mo12034q(AbstractC8508j2 j2Var) {
+        public void mo12033q(AbstractC8508j2 j2Var) {
         }
 
-        public void mo12033r(AbstractC8508j2 j2Var) {
+        public void mo12032r(AbstractC8508j2 j2Var) {
         }
 
-        public void mo12032s(AbstractC8508j2 j2Var) {
+        public void mo12031s(AbstractC8508j2 j2Var) {
         }
 
-        public void mo12031t(AbstractC8508j2 j2Var) {
+        public void mo12030t(AbstractC8508j2 j2Var) {
         }
 
-        public void mo12030u(AbstractC8508j2 j2Var, Surface surface) {
+        public void mo12029u(AbstractC8508j2 j2Var, Surface surface) {
         }
     }
 
-    AbstractC8509a mo12192c();
+    AbstractC8509a mo12191c();
 
     void close();
 
-    void mo12191d();
+    void mo12190d();
 
-    int mo12190f(List<CaptureRequest> list, CameraCaptureSession.CaptureCallback captureCallback);
+    int mo12189f(List<CaptureRequest> list, CameraCaptureSession.CaptureCallback captureCallback);
 
-    C8889g mo12189h();
+    C8889g mo12188h();
 
-    void mo12188i();
+    void mo12187i();
 
-    CameraDevice mo12187j();
+    CameraDevice mo12186j();
 
-    int mo12068k(CaptureRequest captureRequest, CameraCaptureSession.CaptureCallback captureCallback);
+    int mo12067k(CaptureRequest captureRequest, CameraCaptureSession.CaptureCallback captureCallback);
 
-    void mo12186l();
+    void mo12185l();
 
-    AbstractFutureC1291a<Void> mo12067n(String str);
+    AbstractFutureC1291a<Void> mo12066n(String str);
 }

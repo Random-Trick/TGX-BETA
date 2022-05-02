@@ -50,7 +50,7 @@ public final class C6227d<T> implements Iterable<T>, AbstractC6225b<T> {
                     }
                 }
                 if (this.f19656b == null && C6227d.this.f19652a) {
-                    C6227d.this.m21023x();
+                    C6227d.this.m21024x();
                 }
             }
             if (this.f19656b != null) {
@@ -83,12 +83,12 @@ public final class C6227d<T> implements Iterable<T>, AbstractC6225b<T> {
                 return false;
             }
             if (this.f19646N) {
-                boolean c = C6235i.m21013c(this, this.f19645M, t);
-                C6235i.m21011e(this.f19654c, t);
+                boolean c = C6235i.m21014c(this, this.f19645M, t);
+                C6235i.m21012e(this.f19654c, t);
                 return c;
             }
-            this.f19653b.add(mo21032h(t));
-            m21025v();
+            this.f19653b.add(mo21033h(t));
+            m21026v();
             return true;
         }
     }
@@ -100,18 +100,18 @@ public final class C6227d<T> implements Iterable<T>, AbstractC6225b<T> {
                     if (!this.f19654c.contains(reference)) {
                         this.f19654c.add(reference);
                     }
-                    C6235i.m21011e(this.f19645M, reference.get());
+                    C6235i.m21012e(this.f19645M, reference.get());
                 }
             } else {
                 this.f19653b.clear();
-                m21025v();
+                m21026v();
             }
         }
     }
 
     @Override
-    public Reference mo21032h(Object obj) {
-        return C6224a.m21033a(this, obj);
+    public Reference mo21033h(Object obj) {
+        return C6224a.m21034a(this, obj);
     }
 
     public final int indexOf(T t) {
@@ -131,7 +131,7 @@ public final class C6227d<T> implements Iterable<T>, AbstractC6225b<T> {
             if (this.f19646N) {
                 return this.f19653b.isEmpty() && this.f19645M.isEmpty();
             }
-            C6235i.m21012d(this.f19653b);
+            C6235i.m21013d(this.f19653b);
             return this.f19653b.isEmpty();
         }
     }
@@ -148,7 +148,7 @@ public final class C6227d<T> implements Iterable<T>, AbstractC6225b<T> {
         }
         synchronized (this.f19653b) {
             if (this.f19652a) {
-                m21024w();
+                m21025w();
                 C6227d<T>.C6229b bVar = this.f19651S;
                 if (bVar == null) {
                     this.f19651S = new C6229b();
@@ -173,16 +173,16 @@ public final class C6227d<T> implements Iterable<T>, AbstractC6225b<T> {
                 if (!this.f19654c.contains(reference)) {
                     this.f19654c.add(reference);
                 }
-                C6235i.m21011e(this.f19645M, reference.get());
+                C6235i.m21012e(this.f19645M, reference.get());
             } else {
                 this.f19653b.remove(indexOf);
-                m21025v();
+                m21026v();
             }
             return true;
         }
     }
 
-    public final int m21026u(C6227d<T> dVar) {
+    public final int m21027u(C6227d<T> dVar) {
         Iterator<T> it = dVar.iterator();
         int i = 0;
         while (it.hasNext()) {
@@ -193,7 +193,7 @@ public final class C6227d<T> implements Iterable<T>, AbstractC6225b<T> {
         return i;
     }
 
-    public final void m21025v() {
+    public final void m21026v() {
         boolean z;
         if (this.f19649Q != null && this.f19648P != (!this.f19653b.isEmpty())) {
             this.f19648P = z;
@@ -201,7 +201,7 @@ public final class C6227d<T> implements Iterable<T>, AbstractC6225b<T> {
         }
     }
 
-    public final void m21024w() {
+    public final void m21025w() {
         if (!this.f19646N) {
             this.f19646N = true;
             return;
@@ -209,7 +209,7 @@ public final class C6227d<T> implements Iterable<T>, AbstractC6225b<T> {
         throw new IllegalStateException();
     }
 
-    public final void m21023x() {
+    public final void m21024x() {
         if (this.f19646N) {
             this.f19646N = false;
             if (!this.f19654c.isEmpty()) {
@@ -220,7 +220,7 @@ public final class C6227d<T> implements Iterable<T>, AbstractC6225b<T> {
                 this.f19653b.addAll(this.f19645M);
                 this.f19645M.clear();
             }
-            m21025v();
+            m21026v();
             return;
         }
         throw new IllegalStateException();

@@ -3,28 +3,28 @@ package p020b5;
 public interface AbstractC1221n {
 
     public interface AbstractC1222a {
-        void mo37906a();
+        void mo37909a();
     }
 
-    AbstractC1222a mo37917a(int i, int i2, int i3);
+    AbstractC1222a mo37920a(int i, int i2, int i3);
 
-    boolean mo37916b(AbstractC1222a aVar);
+    boolean mo37919b(AbstractC1222a aVar);
 
-    boolean mo37915c(Runnable runnable);
+    boolean mo37918c(Runnable runnable);
 
-    AbstractC1222a mo37914d(int i);
+    AbstractC1222a mo37917d(int i);
 
-    boolean mo37913e(int i);
+    boolean mo37916e(int i);
 
-    boolean mo37912f(int i);
+    boolean mo37915f(int i);
 
-    AbstractC1222a mo37911g(int i, int i2, int i3, Object obj);
+    AbstractC1222a mo37914g(int i, int i2, int i3, Object obj);
 
-    boolean mo37910h(int i, long j);
+    boolean mo37913h(int i, long j);
 
-    void mo37909i(int i);
+    void mo37912i(int i);
 
-    AbstractC1222a mo37908j(int i, Object obj);
+    AbstractC1222a mo37911j(int i, Object obj);
 
-    void mo37907k(Object obj);
+    void mo37910k(Object obj);
 }

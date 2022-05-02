@@ -10,15 +10,15 @@ import java.util.Map;
 import p264s8.AbstractC8693b;
 
 public interface AbstractC7307g extends Closeable {
-    C7308h mo12961D();
+    C7308h mo12960D();
 
-    long[] mo12960G();
+    long[] mo12959G();
 
-    SubSampleInformationBox mo12959I();
+    SubSampleInformationBox mo12958I();
 
-    long[] mo12958R();
+    long[] mo12957R();
 
-    List<AbstractC7306f> mo12957Y();
+    List<AbstractC7306f> mo12956Y();
 
     String mo17091b();
 
@@ -30,9 +30,9 @@ public interface AbstractC7307g extends Closeable {
 
     List<C7303c> mo17089i();
 
-    List<CompositionTimeToSample.C3420a> mo12956l();
+    List<CompositionTimeToSample.C3420a> mo12955l();
 
-    List<SampleDependencyTypeBox.C3425a> mo12954w0();
+    List<SampleDependencyTypeBox.C3425a> mo12953w0();
 
     Map<AbstractC8693b, long[]> mo17088x();
 }

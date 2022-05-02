@@ -18,14 +18,14 @@ public final class C5242c extends AbstractC6749a {
     public static final Parcelable.Creator<C5242c> CREATOR = new C5250k();
 
     public C5242c(@RecentlyNonNull String str) {
-        C6378r.m20505l(str, "json must not be null");
+        C6378r.m20506l(str, "json must not be null");
         this.f17396a = str;
     }
 
     @RecentlyNonNull
-    public static C5242c m23553b(@RecentlyNonNull Context context, int i) {
+    public static C5242c m23554b(@RecentlyNonNull Context context, int i) {
         try {
-            return new C5242c(new String(C8250j.m13040c(context.getResources().openRawResource(i)), "UTF-8"));
+            return new C5242c(new String(C8250j.m13039c(context.getResources().openRawResource(i)), "UTF-8"));
         } catch (IOException e) {
             String valueOf = String.valueOf(e);
             StringBuilder sb2 = new StringBuilder(valueOf.length() + 37);
@@ -39,8 +39,8 @@ public final class C5242c extends AbstractC6749a {
 
     @Override
     public void writeToParcel(@RecentlyNonNull Parcel parcel, int i) {
-        int a = C6752c.m19124a(parcel);
-        C6752c.m19109p(parcel, 2, this.f17396a, false);
-        C6752c.m19123b(parcel, a);
+        int a = C6752c.m19125a(parcel);
+        C6752c.m19110p(parcel, 2, this.f17396a, false);
+        C6752c.m19124b(parcel, a);
     }
 }

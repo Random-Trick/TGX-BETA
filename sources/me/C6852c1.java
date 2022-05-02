@@ -30,24 +30,24 @@ public class C6852c1 extends View {
         super(context);
     }
 
-    public final void m18777a(int i) {
+    public final void m18778a(int i) {
         StaticLayout staticLayout;
         C5386e eVar = this.f21491a;
-        this.f21489O = eVar != null ? (int) C7389v0.m16680T1(eVar.f17711a, C1410y.m37062P(16.0f, eVar.f17712b)) : 0;
+        this.f21489O = eVar != null ? (int) C7389v0.m16680T1(eVar.f17711a, C1410y.m37065P(16.0f, eVar.f17712b)) : 0;
         if (this.f21492b != null) {
             String str = this.f21492b.f17711a;
-            TextPaint j0 = C1410y.m37032j0();
+            TextPaint j0 = C1410y.m37035j0();
             if (this.f21487M == 14) {
-                i -= C1357a0.m37541i(8.0f) * 2;
+                i -= C1357a0.m37544i(8.0f) * 2;
             }
-            staticLayout = new StaticLayout(str, j0, i, Layout.Alignment.ALIGN_CENTER, 1.0f, C1357a0.m37541i(2.5f), false);
+            staticLayout = new StaticLayout(str, j0, i, Layout.Alignment.ALIGN_CENTER, 1.0f, C1357a0.m37544i(2.5f), false);
         } else {
             staticLayout = null;
         }
         this.f21490P = staticLayout;
     }
 
-    public void m18776b(int i, boolean z, String str) {
+    public void m18777b(int i, boolean z, String str) {
         int i2;
         if (this.f21487M != i) {
             int i3 = R.drawable.baseline_group_96;
@@ -118,7 +118,7 @@ public class C6852c1 extends View {
                 case 14:
                     i4 = R.string.MediaRestricted;
                     i2 = 0;
-                    if (!C5070i.m24061i(str)) {
+                    if (!C5070i.m24062i(str)) {
                         this.f21492b = new C5386e(str);
                     } else {
                         this.f21492b = null;
@@ -130,12 +130,12 @@ public class C6852c1 extends View {
             }
             this.f21487M = i;
             if (i4 != 0) {
-                this.f21491a = new C5386e(C4403w.m27869i1(i4));
+                this.f21491a = new C5386e(C4403w.m27871i1(i4));
             }
             if (i2 != 0) {
-                this.f21492b = new C5386e(C4403w.m27869i1(i2));
+                this.f21492b = new C5386e(C4403w.m27871i1(i2));
             }
-            this.f21493c = C1362c.m37483f(i3);
+            this.f21493c = C1362c.m37486f(i3);
             invalidate();
         }
     }
@@ -145,20 +145,20 @@ public class C6852c1 extends View {
         if (this.f21491a != null && this.f21492b != null && this.f21493c != null) {
             int measuredWidth = getMeasuredWidth();
             int measuredHeight = getMeasuredHeight() - getPaddingTop();
-            int minimumHeight = this.f21493c.getMinimumHeight() + C1357a0.m37541i(38.0f) + C1357a0.m37541i(18.0f) + this.f21490P.getHeight() + C1357a0.m37541i(24.0f);
+            int minimumHeight = this.f21493c.getMinimumHeight() + C1357a0.m37544i(38.0f) + C1357a0.m37544i(18.0f) + this.f21490P.getHeight() + C1357a0.m37544i(24.0f);
             int max = Math.max(minimumHeight, measuredHeight - getTop());
             canvas.save();
             canvas.translate(0.0f, (getPaddingTop() + (max / 2)) - (minimumHeight / 2));
             Drawable drawable = this.f21493c;
             int i = measuredWidth / 2;
-            C1362c.m37487b(canvas, drawable, i - (drawable.getMinimumWidth() / 2), C1357a0.m37541i(12.0f), C1410y.m37035i());
+            C1362c.m37490b(canvas, drawable, i - (drawable.getMinimumWidth() / 2), C1357a0.m37544i(12.0f), C1410y.m37038i());
             C5386e eVar = this.f21491a;
             if (eVar != null) {
-                canvas.drawText(eVar.f17711a, i - (this.f21489O / 2), this.f21493c.getMinimumHeight() + C1357a0.m37541i(32.0f) + C1357a0.m37541i(12.0f), C1410y.m37063O(16.0f, C11524j.m215T0(), this.f21491a.f17712b));
+                canvas.drawText(eVar.f17711a, i - (this.f21489O / 2), this.f21493c.getMinimumHeight() + C1357a0.m37544i(32.0f) + C1357a0.m37544i(12.0f), C1410y.m37066O(16.0f, C11524j.m215T0(), this.f21491a.f17712b));
             }
             if (this.f21490P != null) {
-                C1410y.m37030k0(C11524j.m215T0());
-                canvas.translate(i - (this.f21490P.getWidth() / 2), (minimumHeight - this.f21490P.getHeight()) - C1357a0.m37541i(12.0f));
+                C1410y.m37033k0(C11524j.m215T0());
+                canvas.translate(i - (this.f21490P.getWidth() / 2), (minimumHeight - this.f21490P.getHeight()) - C1357a0.m37544i(12.0f));
                 this.f21490P.draw(canvas);
             }
             canvas.restore();
@@ -171,7 +171,7 @@ public class C6852c1 extends View {
         int measuredWidth = getMeasuredWidth();
         if (this.f21488N != measuredWidth) {
             this.f21488N = measuredWidth;
-            m18777a(measuredWidth);
+            m18778a(measuredWidth);
         }
     }
 }

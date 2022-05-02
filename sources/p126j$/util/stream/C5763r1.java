@@ -10,19 +10,19 @@ final class C5763r1 extends AbstractC5768s1 {
     }
 
     @Override
-    public boolean mo22124a(Consumer consumer) {
+    public boolean mo22125a(Consumer consumer) {
         AbstractC5632P0 b;
-        if (!m22183d()) {
+        if (!m22184d()) {
             return false;
         }
-        boolean a = this.f18467d.mo22124a(consumer);
+        boolean a = this.f18467d.mo22125a(consumer);
         if (!a) {
-            if (this.f18466c != null || (b = m22185b(this.f18468e)) == null) {
+            if (this.f18466c != null || (b = m22186b(this.f18468e)) == null) {
                 this.f18464a = null;
             } else {
-                AbstractC5468G spliterator = b.mo42629spliterator();
+                AbstractC5468G spliterator = b.mo42632spliterator();
                 this.f18467d = spliterator;
-                return spliterator.mo22124a(consumer);
+                return spliterator.mo22125a(consumer);
             }
         }
         return a;
@@ -34,11 +34,11 @@ final class C5763r1 extends AbstractC5768s1 {
             if (this.f18467d == null) {
                 AbstractC5468G g = this.f18466c;
                 if (g == null) {
-                    Deque c = m22184c();
+                    Deque c = m22185c();
                     while (true) {
-                        AbstractC5632P0 b = m22185b(c);
+                        AbstractC5632P0 b = m22186b(c);
                         if (b != null) {
-                            b.mo22176a(consumer);
+                            b.mo22177a(consumer);
                         } else {
                             this.f18464a = null;
                             return;
@@ -49,7 +49,7 @@ final class C5763r1 extends AbstractC5768s1 {
                 }
             } else {
                 do {
-                } while (mo22124a(consumer));
+                } while (mo22125a(consumer));
             }
         }
     }

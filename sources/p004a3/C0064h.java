@@ -8,7 +8,7 @@ public final class C0064h extends AbstractC0076n {
     }
 
     @Override
-    public long mo42430c() {
+    public long mo42433c() {
         return this.f215a;
     }
 
@@ -16,7 +16,7 @@ public final class C0064h extends AbstractC0076n {
         if (obj == this) {
             return true;
         }
-        return (obj instanceof AbstractC0076n) && this.f215a == ((AbstractC0076n) obj).mo42430c();
+        return (obj instanceof AbstractC0076n) && this.f215a == ((AbstractC0076n) obj).mo42433c();
     }
 
     public int hashCode() {

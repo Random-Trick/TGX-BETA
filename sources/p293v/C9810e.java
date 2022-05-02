@@ -14,13 +14,13 @@ import p266t.C8927z;
 import p336y.AbstractC10311w1;
 
 public class C9810e implements AbstractC10311w1 {
-    public final List<Size> f32077a;
+    public final List<Size> f32080a;
 
     public C9810e(C8927z zVar) {
         List<Size> list;
-        StreamConfigurationMap streamConfigurationMap = (StreamConfigurationMap) zVar.m10952a(CameraCharacteristics.SCALER_STREAM_CONFIGURATION_MAP);
+        StreamConfigurationMap streamConfigurationMap = (StreamConfigurationMap) zVar.m10951a(CameraCharacteristics.SCALER_STREAM_CONFIGURATION_MAP);
         if (streamConfigurationMap == null) {
-            C0662u1.m40651c("CamcorderProfileResolutionQuirk", "StreamConfigurationMap is null");
+            C0662u1.m40654c("CamcorderProfileResolutionQuirk", "StreamConfigurationMap is null");
         }
         Size[] sizeArr = null;
         if (Build.VERSION.SDK_INT < 23) {
@@ -35,16 +35,16 @@ public class C9810e implements AbstractC10311w1 {
         } else {
             list = Collections.emptyList();
         }
-        this.f32077a = list;
-        C0662u1.m40653a("CamcorderProfileResolutionQuirk", "mSupportedResolutions = " + list);
+        this.f32080a = list;
+        C0662u1.m40656a("CamcorderProfileResolutionQuirk", "mSupportedResolutions = " + list);
     }
 
     public static boolean m6821b(C8927z zVar) {
-        Integer num = (Integer) zVar.m10952a(CameraCharacteristics.INFO_SUPPORTED_HARDWARE_LEVEL);
+        Integer num = (Integer) zVar.m10951a(CameraCharacteristics.INFO_SUPPORTED_HARDWARE_LEVEL);
         return num != null && num.intValue() == 2;
     }
 
     public List<Size> m6822a() {
-        return new ArrayList(this.f32077a);
+        return new ArrayList(this.f32080a);
     }
 }

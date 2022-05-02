@@ -83,8 +83,8 @@ public class g20 extends AbstractC9376x4<Object> {
     @Override
     public void mo8845ng(Context context, FrameLayoutFix frameLayoutFix, ViewPager viewPager) {
         AbstractC9382y1 y1Var;
-        if (this.f8288z0 && (y1Var = this.f30408v0) != null) {
-            y1Var.getTopView().m10152a2(0, R.id.theme_color_text);
+        if (this.f8288z0 && (y1Var = this.f30411v0) != null) {
+            y1Var.getTopView().m10151a2(0, R.id.theme_color_text);
         }
         m8840rg(0, new Runnable() {
             @Override

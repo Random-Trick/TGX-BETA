@@ -17,7 +17,7 @@ public class GestureDetector$OnGestureListenerC0256a implements GestureDetector.
         this.f778a = new GestureDetector(context, this);
     }
 
-    public boolean m41994a(MotionEvent motionEvent) {
+    public boolean m41997a(MotionEvent motionEvent) {
         return this.f778a.onTouchEvent(motionEvent);
     }
 

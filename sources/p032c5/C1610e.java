@@ -14,12 +14,12 @@ public final class C1610e {
         this.f5932c = str;
     }
 
-    public static C1610e m36250a(C1189b0 b0Var) {
+    public static C1610e m36253a(C1189b0 b0Var) {
         String str;
-        b0Var.m38143Q(2);
-        int D = b0Var.m38156D();
+        b0Var.m38146Q(2);
+        int D = b0Var.m38159D();
         int i = D >> 1;
-        int D2 = ((b0Var.m38156D() >> 3) & 31) | ((D & 1) << 5);
+        int D2 = ((b0Var.m38159D() >> 3) & 31) | ((D & 1) << 5);
         if (i == 4 || i == 5 || i == 7) {
             str = "dvhe";
         } else if (i == 8) {

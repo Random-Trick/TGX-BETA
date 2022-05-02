@@ -10,54 +10,54 @@ public abstract class AbstractC5814b {
     public boolean f18534b;
 
     public interface AbstractC5815a {
-        boolean mo22089a(AbstractC5814b bVar, Menu menu);
+        boolean mo22090a(AbstractC5814b bVar, Menu menu);
 
-        void mo22088b(AbstractC5814b bVar);
+        void mo22089b(AbstractC5814b bVar);
 
-        boolean mo22087c(AbstractC5814b bVar, MenuItem menuItem);
+        boolean mo22088c(AbstractC5814b bVar, MenuItem menuItem);
 
-        boolean mo22086d(AbstractC5814b bVar, Menu menu);
+        boolean mo22087d(AbstractC5814b bVar, Menu menu);
     }
 
-    public abstract void mo22103c();
+    public abstract void mo22104c();
 
-    public abstract View mo22102d();
+    public abstract View mo22103d();
 
-    public abstract Menu mo22101e();
+    public abstract Menu mo22102e();
 
-    public abstract MenuInflater mo22100f();
+    public abstract MenuInflater mo22101f();
 
-    public abstract CharSequence mo22099g();
+    public abstract CharSequence mo22100g();
 
-    public Object m22112h() {
+    public Object m22113h() {
         return this.f18533a;
     }
 
-    public abstract CharSequence mo22098i();
+    public abstract CharSequence mo22099i();
 
-    public boolean m22111j() {
+    public boolean m22112j() {
         return this.f18534b;
     }
 
-    public abstract void mo22097k();
+    public abstract void mo22098k();
 
-    public abstract boolean mo22096l();
+    public abstract boolean mo22097l();
 
-    public abstract void mo22095m(View view);
+    public abstract void mo22096m(View view);
 
-    public abstract void mo22094n(int i);
+    public abstract void mo22095n(int i);
 
-    public abstract void mo22093o(CharSequence charSequence);
+    public abstract void mo22094o(CharSequence charSequence);
 
-    public void m22110p(Object obj) {
+    public void m22111p(Object obj) {
         this.f18533a = obj;
     }
 
-    public abstract void mo22092q(int i);
+    public abstract void mo22093q(int i);
 
-    public abstract void mo22091r(CharSequence charSequence);
+    public abstract void mo22092r(CharSequence charSequence);
 
-    public void mo22090s(boolean z) {
+    public void mo22091s(boolean z) {
         this.f18534b = z;
     }
 }

@@ -41,23 +41,23 @@ public final class C3912m implements AbstractC3909j {
         this.f13211f = cbVar;
     }
 
-    public static boolean m29605a(Context context) {
-        return DynamiteModule.m30367a(context, "com.google.mlkit.dynamite.barcode") > 0;
+    public static boolean m29607a(Context context) {
+        return DynamiteModule.m30369a(context, "com.google.mlkit.dynamite.barcode") > 0;
     }
 
-    public final C1864oc m29604b(DynamiteModule.AbstractC3489b bVar, String str, String str2) {
-        return AbstractBinderC1892qc.m35936q(DynamiteModule.m30364d(this.f13209d, bVar, str).m30365c(str2)).mo35912n0(BinderC8986d.m10764E0(this.f13209d), new C1732fc(this.f13210e.m35786a()));
+    public final C1864oc m29606b(DynamiteModule.AbstractC3489b bVar, String str, String str2) {
+        return AbstractBinderC1892qc.m35939q(DynamiteModule.m30366d(this.f13209d, bVar, str).m30367c(str2)).mo35915n0(BinderC8986d.m10763E0(this.f13209d), new C1732fc(this.f13210e.m35789a()));
     }
 
     @Override
-    public final boolean mo29601h() {
+    public final boolean mo29603h() {
         if (this.f13212g != null) {
             return this.f13207b;
         }
-        if (m29605a(this.f13209d)) {
+        if (m29607a(this.f13209d)) {
             this.f13207b = true;
             try {
-                this.f13212g = m29604b(DynamiteModule.f11602c, "com.google.mlkit.dynamite.barcode", "com.google.mlkit.vision.barcode.bundled.internal.ThickBarcodeScannerCreator");
+                this.f13212g = m29606b(DynamiteModule.f11602c, "com.google.mlkit.dynamite.barcode", "com.google.mlkit.vision.barcode.bundled.internal.ThickBarcodeScannerCreator");
             } catch (RemoteException e) {
                 throw new C9987a("Failed to create thick barcode scanner.", 13, e);
             } catch (DynamiteModule.C3488a e2) {
@@ -66,43 +66,43 @@ public final class C3912m implements AbstractC3909j {
         } else {
             this.f13207b = false;
             try {
-                this.f13212g = m29604b(DynamiteModule.f11601b, "com.google.android.gms.vision.barcode", "com.google.android.gms.vision.barcode.mlkit.BarcodeScannerCreator");
+                this.f13212g = m29606b(DynamiteModule.f11601b, "com.google.android.gms.vision.barcode", "com.google.android.gms.vision.barcode.mlkit.BarcodeScannerCreator");
             } catch (RemoteException e3) {
-                C3901b.m29616e(this.f13211f, EnumC1846n8.OPTIONAL_MODULE_INIT_ERROR);
+                C3901b.m29618e(this.f13211f, EnumC1846n8.OPTIONAL_MODULE_INIT_ERROR);
                 throw new C9987a("Failed to create thin barcode scanner.", 13, e3);
             } catch (DynamiteModule.C3488a unused) {
                 if (!this.f13208c) {
-                    C0222m.m42066a(this.f13209d, "barcode");
+                    C0222m.m42069a(this.f13209d, "barcode");
                     this.f13208c = true;
                 }
-                C3901b.m29616e(this.f13211f, EnumC1846n8.OPTIONAL_MODULE_NOT_AVAILABLE);
+                C3901b.m29618e(this.f13211f, EnumC1846n8.OPTIONAL_MODULE_NOT_AVAILABLE);
                 throw new C9987a("Waiting for the barcode module to be downloaded. Please wait.", 14);
             }
         }
-        C3901b.m29616e(this.f13211f, EnumC1846n8.NO_ERROR);
+        C3901b.m29618e(this.f13211f, EnumC1846n8.NO_ERROR);
         return this.f13207b;
     }
 
     @Override
-    public final List<C2033a> mo29600i(C4164a aVar) {
+    public final List<C2033a> mo29602i(C4164a aVar) {
         if (this.f13212g == null) {
-            mo29601h();
+            mo29603h();
         }
-        C1864oc ocVar = (C1864oc) C6378r.m20506k(this.f13212g);
+        C1864oc ocVar = (C1864oc) C6378r.m20507k(this.f13212g);
         if (!this.f13206a) {
             try {
-                ocVar.m35963G1();
+                ocVar.m35966G1();
                 this.f13206a = true;
             } catch (RemoteException e) {
                 throw new C9987a("Failed to init barcode scanner.", 13, e);
             }
         }
-        int j = aVar.m28636j();
-        if (aVar.m28641e() == 35 && Build.VERSION.SDK_INT >= 19) {
-            j = ((Image.Plane[]) C6378r.m20506k(aVar.m28638h()))[0].getRowStride();
+        int j = aVar.m28638j();
+        if (aVar.m28643e() == 35 && Build.VERSION.SDK_INT >= 19) {
+            j = ((Image.Plane[]) C6378r.m20507k(aVar.m28640h()))[0].getRowStride();
         }
         try {
-            List<C1702dc> E0 = ocVar.m35964E0(C4324d.m28272b().m28273a(aVar), new C1990xc(aVar.m28641e(), j, aVar.m28640f(), C4322b.m28282a(aVar.m28637i()), SystemClock.elapsedRealtime()));
+            List<C1702dc> E0 = ocVar.m35967E0(C4324d.m28274b().m28275a(aVar), new C1990xc(aVar.m28643e(), j, aVar.m28642f(), C4322b.m28284a(aVar.m28639i()), SystemClock.elapsedRealtime()));
             ArrayList arrayList = new ArrayList();
             for (C1702dc dcVar : E0) {
                 arrayList.add(new C2033a(new C3911l(dcVar)));
@@ -118,7 +118,7 @@ public final class C3912m implements AbstractC3909j {
         C1864oc ocVar = this.f13212g;
         if (ocVar != null) {
             try {
-                ocVar.m35962H1();
+                ocVar.m35965H1();
             } catch (RemoteException e) {
                 Log.e("DecoupledBarcodeScanner", "Failed to release barcode scanner.", e);
             }

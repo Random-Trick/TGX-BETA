@@ -104,33 +104,33 @@ public class C5821g extends MenuInflater {
 
         public C5823b(Menu menu) {
             this.f18568a = menu;
-            m22073h();
+            m22074h();
         }
 
-        public void m22080a() {
+        public void m22081a() {
             this.f18575h = true;
-            m22072i(this.f18568a.add(this.f18569b, this.f18576i, this.f18577j, this.f18578k));
+            m22073i(this.f18568a.add(this.f18569b, this.f18576i, this.f18577j, this.f18578k));
         }
 
-        public SubMenu m22079b() {
+        public SubMenu m22080b() {
             this.f18575h = true;
             SubMenu addSubMenu = this.f18568a.addSubMenu(this.f18569b, this.f18576i, this.f18577j, this.f18578k);
-            m22072i(addSubMenu.getItem());
+            m22073i(addSubMenu.getItem());
             return addSubMenu;
         }
 
-        public final char m22078c(String str) {
+        public final char m22079c(String str) {
             if (str == null) {
                 return (char) 0;
             }
             return str.charAt(0);
         }
 
-        public boolean m22077d() {
+        public boolean m22078d() {
             return this.f18575h;
         }
 
-        public final <T> T m22076e(String str, Class<?>[] clsArr, Object[] objArr) {
+        public final <T> T m22077e(String str, Class<?>[] clsArr, Object[] objArr) {
             try {
                 Constructor<?> constructor = Class.forName(str, false, C5821g.this.f18557c.getClassLoader()).getConstructor(clsArr);
                 constructor.setAccessible(true);
@@ -141,7 +141,7 @@ public class C5821g extends MenuInflater {
             }
         }
 
-        public void m22075f(AttributeSet attributeSet) {
+        public void m22076f(AttributeSet attributeSet) {
             TypedArray obtainStyledAttributes = C5821g.this.f18557c.obtainStyledAttributes(attributeSet, C3563j.f12129t1);
             this.f18569b = obtainStyledAttributes.getResourceId(C3563j.f12139v1, 0);
             this.f18570c = obtainStyledAttributes.getInt(C3563j.f12149x1, 0);
@@ -152,60 +152,60 @@ public class C5821g extends MenuInflater {
             obtainStyledAttributes.recycle();
         }
 
-        public void m22074g(AttributeSet attributeSet) {
-            C0452g0 s = C0452g0.m41256s(C5821g.this.f18557c, attributeSet, C3563j.f11903A1);
-            this.f18576i = s.m41262m(C3563j.f11918D1, 0);
-            this.f18577j = (s.m41265j(C3563j.f11933G1, this.f18570c) & (-65536)) | (s.m41265j(C3563j.f11938H1, this.f18571d) & 65535);
-            this.f18578k = s.m41260o(C3563j.f11943I1);
-            this.f18579l = s.m41260o(C3563j.f11948J1);
-            this.f18580m = s.m41262m(C3563j.f11908B1, 0);
-            this.f18581n = m22078c(s.m41261n(C3563j.f11953K1));
-            this.f18582o = s.m41265j(C3563j.f11988R1, org.thunderdog.challegram.Log.TAG_EMOJI);
-            this.f18583p = m22078c(s.m41261n(C3563j.f11958L1));
-            this.f18584q = s.m41265j(C3563j.f12008V1, org.thunderdog.challegram.Log.TAG_EMOJI);
+        public void m22075g(AttributeSet attributeSet) {
+            C0452g0 s = C0452g0.m41259s(C5821g.this.f18557c, attributeSet, C3563j.f11903A1);
+            this.f18576i = s.m41265m(C3563j.f11918D1, 0);
+            this.f18577j = (s.m41268j(C3563j.f11933G1, this.f18570c) & (-65536)) | (s.m41268j(C3563j.f11938H1, this.f18571d) & 65535);
+            this.f18578k = s.m41263o(C3563j.f11943I1);
+            this.f18579l = s.m41263o(C3563j.f11948J1);
+            this.f18580m = s.m41265m(C3563j.f11908B1, 0);
+            this.f18581n = m22079c(s.m41264n(C3563j.f11953K1));
+            this.f18582o = s.m41268j(C3563j.f11988R1, org.thunderdog.challegram.Log.TAG_EMOJI);
+            this.f18583p = m22079c(s.m41264n(C3563j.f11958L1));
+            this.f18584q = s.m41268j(C3563j.f12008V1, org.thunderdog.challegram.Log.TAG_EMOJI);
             int i = C3563j.f11963M1;
-            if (s.m41258q(i)) {
-                this.f18585r = s.m41274a(i, false) ? 1 : 0;
+            if (s.m41261q(i)) {
+                this.f18585r = s.m41277a(i, false) ? 1 : 0;
             } else {
                 this.f18585r = this.f18572e;
             }
-            this.f18586s = s.m41274a(C3563j.f11923E1, false);
-            this.f18587t = s.m41274a(C3563j.f11928F1, this.f18573f);
-            this.f18588u = s.m41274a(C3563j.f11913C1, this.f18574g);
-            this.f18589v = s.m41265j(C3563j.f12013W1, -1);
-            this.f18593z = s.m41261n(C3563j.f11968N1);
-            this.f18590w = s.m41262m(C3563j.f11973O1, 0);
-            this.f18591x = s.m41261n(C3563j.f11983Q1);
-            String n = s.m41261n(C3563j.f11978P1);
+            this.f18586s = s.m41277a(C3563j.f11923E1, false);
+            this.f18587t = s.m41277a(C3563j.f11928F1, this.f18573f);
+            this.f18588u = s.m41277a(C3563j.f11913C1, this.f18574g);
+            this.f18589v = s.m41268j(C3563j.f12013W1, -1);
+            this.f18593z = s.m41264n(C3563j.f11968N1);
+            this.f18590w = s.m41265m(C3563j.f11973O1, 0);
+            this.f18591x = s.m41264n(C3563j.f11983Q1);
+            String n = s.m41264n(C3563j.f11978P1);
             this.f18592y = n;
             boolean z = n != null;
             if (z && this.f18590w == 0 && this.f18591x == null) {
-                this.f18562A = (AbstractC1435b) m22076e(n, C5821g.f18554f, C5821g.this.f18556b);
+                this.f18562A = (AbstractC1435b) m22077e(n, C5821g.f18554f, C5821g.this.f18556b);
             } else {
                 if (z) {
                     Log.w("SupportMenuInflater", "Ignoring attribute 'actionProviderClass'. Action view already specified.");
                 }
                 this.f18562A = null;
             }
-            this.f18563B = s.m41260o(C3563j.f11993S1);
-            this.f18564C = s.m41260o(C3563j.f12018X1);
+            this.f18563B = s.m41263o(C3563j.f11993S1);
+            this.f18564C = s.m41263o(C3563j.f12018X1);
             int i2 = C3563j.f12003U1;
-            if (s.m41258q(i2)) {
-                this.f18566E = C0475q.m41101e(s.m41265j(i2, -1), this.f18566E);
+            if (s.m41261q(i2)) {
+                this.f18566E = C0475q.m41104e(s.m41268j(i2, -1), this.f18566E);
             } else {
                 this.f18566E = null;
             }
             int i3 = C3563j.f11998T1;
-            if (s.m41258q(i3)) {
-                this.f18565D = s.m41272c(i3);
+            if (s.m41261q(i3)) {
+                this.f18565D = s.m41275c(i3);
             } else {
                 this.f18565D = null;
             }
-            s.m41254u();
+            s.m41257u();
             this.f18575h = false;
         }
 
-        public void m22073h() {
+        public void m22074h() {
             this.f18569b = 0;
             this.f18570c = 0;
             this.f18571d = 0;
@@ -214,7 +214,7 @@ public class C5821g extends MenuInflater {
             this.f18574g = true;
         }
 
-        public final void m22072i(MenuItem menuItem) {
+        public final void m22073i(MenuItem menuItem) {
             boolean z = false;
             menuItem.setChecked(this.f18586s).setVisible(this.f18587t).setEnabled(this.f18588u).setCheckable(this.f18585r >= 1).setTitleCondensed(this.f18579l).setIcon(this.f18580m);
             int i = this.f18589v;
@@ -223,7 +223,7 @@ public class C5821g extends MenuInflater {
             }
             if (this.f18593z != null) {
                 if (!C5821g.this.f18557c.isRestricted()) {
-                    menuItem.setOnMenuItemClickListener(new MenuItem$OnMenuItemClickListenerC5822a(C5821g.this.m22082b(), this.f18593z));
+                    menuItem.setOnMenuItemClickListener(new MenuItem$OnMenuItemClickListenerC5822a(C5821g.this.m22083b(), this.f18593z));
                 } else {
                     throw new IllegalStateException("The android:onClick attribute cannot be used within a restricted context");
                 }
@@ -234,14 +234,14 @@ public class C5821g extends MenuInflater {
             }
             if (this.f18585r >= 2) {
                 if (z2) {
-                    ((C0355g) menuItem).m41655t(true);
+                    ((C0355g) menuItem).m41658t(true);
                 } else if (menuItem instanceof MenuItemC6014c) {
-                    ((MenuItemC6014c) menuItem).m21564h(true);
+                    ((MenuItemC6014c) menuItem).m21565h(true);
                 }
             }
             String str = this.f18591x;
             if (str != null) {
-                menuItem.setActionView((View) m22076e(str, C5821g.f18553e, C5821g.this.f18555a));
+                menuItem.setActionView((View) m22077e(str, C5821g.f18553e, C5821g.this.f18555a));
                 z = true;
             }
             int i2 = this.f18590w;
@@ -254,19 +254,19 @@ public class C5821g extends MenuInflater {
             }
             AbstractC1435b bVar = this.f18562A;
             if (bVar != null) {
-                C1474j.m36818a(menuItem, bVar);
+                C1474j.m36821a(menuItem, bVar);
             }
-            C1474j.m36816c(menuItem, this.f18563B);
-            C1474j.m36812g(menuItem, this.f18564C);
-            C1474j.m36817b(menuItem, this.f18581n, this.f18582o);
-            C1474j.m36813f(menuItem, this.f18583p, this.f18584q);
+            C1474j.m36819c(menuItem, this.f18563B);
+            C1474j.m36815g(menuItem, this.f18564C);
+            C1474j.m36820b(menuItem, this.f18581n, this.f18582o);
+            C1474j.m36816f(menuItem, this.f18583p, this.f18584q);
             PorterDuff.Mode mode = this.f18566E;
             if (mode != null) {
-                C1474j.m36814e(menuItem, mode);
+                C1474j.m36817e(menuItem, mode);
             }
             ColorStateList colorStateList = this.f18565D;
             if (colorStateList != null) {
-                C1474j.m36815d(menuItem, colorStateList);
+                C1474j.m36818d(menuItem, colorStateList);
             }
         }
     }
@@ -285,18 +285,18 @@ public class C5821g extends MenuInflater {
         this.f18556b = objArr;
     }
 
-    public final Object m22083a(Object obj) {
-        return (!(obj instanceof Activity) && (obj instanceof ContextWrapper)) ? m22083a(((ContextWrapper) obj).getBaseContext()) : obj;
+    public final Object m22084a(Object obj) {
+        return (!(obj instanceof Activity) && (obj instanceof ContextWrapper)) ? m22084a(((ContextWrapper) obj).getBaseContext()) : obj;
     }
 
-    public Object m22082b() {
+    public Object m22083b() {
         if (this.f18558d == null) {
-            this.f18558d = m22083a(this.f18557c);
+            this.f18558d = m22084a(this.f18557c);
         }
         return this.f18558d;
     }
 
-    public final void m22081c(XmlPullParser xmlPullParser, AttributeSet attributeSet, Menu menu) {
+    public final void m22082c(XmlPullParser xmlPullParser, AttributeSet attributeSet, Menu menu) {
         C5823b bVar = new C5823b(menu);
         int eventType = xmlPullParser.getEventType();
         while (true) {
@@ -326,14 +326,14 @@ public class C5821g extends MenuInflater {
                             str = null;
                             z2 = false;
                         } else if (name2.equals("group")) {
-                            bVar.m22073h();
+                            bVar.m22074h();
                         } else if (name2.equals("item")) {
-                            if (!bVar.m22077d()) {
+                            if (!bVar.m22078d()) {
                                 AbstractC1435b bVar2 = bVar.f18562A;
-                                if (bVar2 == null || !bVar2.mo21563a()) {
-                                    bVar.m22080a();
+                                if (bVar2 == null || !bVar2.mo21564a()) {
+                                    bVar.m22081a();
                                 } else {
-                                    bVar.m22079b();
+                                    bVar.m22080b();
                                 }
                             }
                         } else if (name2.equals("menu")) {
@@ -343,11 +343,11 @@ public class C5821g extends MenuInflater {
                 } else if (!z2) {
                     String name3 = xmlPullParser.getName();
                     if (name3.equals("group")) {
-                        bVar.m22075f(attributeSet);
+                        bVar.m22076f(attributeSet);
                     } else if (name3.equals("item")) {
-                        bVar.m22074g(attributeSet);
+                        bVar.m22075g(attributeSet);
                     } else if (name3.equals("menu")) {
-                        m22081c(xmlPullParser, attributeSet, bVar.m22079b());
+                        m22082c(xmlPullParser, attributeSet, bVar.m22080b());
                     } else {
                         str = name3;
                         z2 = true;
@@ -371,7 +371,7 @@ public class C5821g extends MenuInflater {
             try {
                 try {
                     xmlResourceParser = this.f18557c.getResources().getLayout(i);
-                    m22081c(xmlResourceParser, Xml.asAttributeSet(xmlResourceParser), menu);
+                    m22082c(xmlResourceParser, Xml.asAttributeSet(xmlResourceParser), menu);
                 } catch (XmlPullParserException e) {
                     throw new InflateException("Error inflating menu XML", e);
                 }

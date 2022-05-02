@@ -7,21 +7,21 @@ import p163l5.C6378r;
 import p272t5.AbstractC8983b;
 
 public final class BinderC8986d<T> extends AbstractC8983b.AbstractBinderC8984a {
-    public final T f28885a;
+    public final T f28888a;
 
     public BinderC8986d(T t) {
-        this.f28885a = t;
+        this.f28888a = t;
     }
 
     @RecentlyNonNull
-    public static <T> AbstractC8983b m10764E0(@RecentlyNonNull T t) {
+    public static <T> AbstractC8983b m10763E0(@RecentlyNonNull T t) {
         return new BinderC8986d(t);
     }
 
     @RecentlyNonNull
-    public static <T> T m10763t(@RecentlyNonNull AbstractC8983b bVar) {
+    public static <T> T m10762t(@RecentlyNonNull AbstractC8983b bVar) {
         if (bVar instanceof BinderC8986d) {
-            return ((BinderC8986d) bVar).f28885a;
+            return ((BinderC8986d) bVar).f28888a;
         }
         IBinder asBinder = bVar.asBinder();
         Field[] declaredFields = asBinder.getClass().getDeclaredFields();
@@ -34,7 +34,7 @@ public final class BinderC8986d<T> extends AbstractC8983b.AbstractBinderC8984a {
             }
         }
         if (i == 1) {
-            C6378r.m20506k(field);
+            C6378r.m20507k(field);
             if (!field.isAccessible()) {
                 field.setAccessible(true);
                 try {

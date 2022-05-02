@@ -17,7 +17,7 @@ abstract class AbstractC5575D3 {
         this.f18130e = j4;
     }
 
-    protected abstract AbstractC5468G mo22138b(AbstractC5468G g, long j, long j2, long j3, long j4);
+    protected abstract AbstractC5468G mo22139b(AbstractC5468G g, long j, long j2, long j3, long j4);
 
     public int characteristics() {
         return this.f18128c.characteristics();
@@ -57,7 +57,7 @@ abstract class AbstractC5575D3 {
                     long j5 = this.f18129d;
                     if (j5 < j3 || estimateSize > j4) {
                         this.f18129d = min;
-                        return mo22138b(trySplit, j3, j4, j5, min);
+                        return mo22139b(trySplit, j3, j4, j5, min);
                     }
                     this.f18129d = min;
                     return trySplit;

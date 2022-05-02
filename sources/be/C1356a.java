@@ -10,7 +10,7 @@ public class C1356a {
         f4950a = Build.VERSION.SDK_INT >= 12;
     }
 
-    public static float m37555a(float f) {
-        return C5069h.m24088e(f, -0.2f, 1.0f);
+    public static float m37558a(float f) {
+        return C5069h.m24089e(f, -0.2f, 1.0f);
     }
 }

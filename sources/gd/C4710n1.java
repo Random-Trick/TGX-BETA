@@ -20,36 +20,36 @@ public class C4710n1 extends AbstractC4576a1 {
     }
 
     @Override
-    public boolean mo26325C(View view, MotionEvent motionEvent) {
+    public boolean mo26326C(View view, MotionEvent motionEvent) {
         return false;
     }
 
     @Override
-    public int mo26323f(View view, int i) {
-        return C2139ap.m35479W(mo26319z());
+    public int mo26324f(View view, int i) {
+        return C2139ap.m35482W(mo26320z());
     }
 
     @Override
-    public <T extends View & AbstractC5143t> void mo26322i(T t, Canvas canvas, AbstractC6264v vVar, AbstractC6264v vVar2, C6238b bVar) {
+    public <T extends View & AbstractC5143t> void mo26323i(T t, Canvas canvas, AbstractC6264v vVar, AbstractC6264v vVar2, C6238b bVar) {
     }
 
     @Override
-    public int mo26385l() {
+    public int mo26386l() {
         return this.f15849X;
     }
 
     @Override
-    public int mo26321p() {
+    public int mo26322p() {
         return 0;
     }
 
     @Override
-    public int mo26320q() {
+    public int mo26321q() {
         return 0;
     }
 
     @Override
-    public int mo26319z() {
+    public int mo26320z() {
         return this.f15848W;
     }
 }

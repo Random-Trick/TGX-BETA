@@ -9,7 +9,7 @@ public final class C2323e5 implements Comparator {
     @Override
     public final int compare(Object obj, Object obj2) {
         int Cg;
-        Cg = RunnableC2374f5.m34785Cg((C4618d7) obj, (C4618d7) obj2);
+        Cg = RunnableC2374f5.m34788Cg((C4618d7) obj, (C4618d7) obj2);
         return Cg;
     }
 }

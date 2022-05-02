@@ -10,63 +10,63 @@ public final class C6287c {
     public static final class C6288a<T> {
         public Object f19824a;
         public C6291d<T> f19825b;
-        public C6293d<Void> f19826c = C6293d.m20706s();
+        public C6293d<Void> f19826c = C6293d.m20707s();
         public boolean f19827d;
 
-        public void m20718a(Runnable runnable, Executor executor) {
+        public void m20719a(Runnable runnable, Executor executor) {
             C6293d<Void> dVar = this.f19826c;
             if (dVar != null) {
-                dVar.mo13372a(runnable, executor);
+                dVar.mo13371a(runnable, executor);
             }
         }
 
-        public void m20717b() {
+        public void m20718b() {
             this.f19824a = null;
             this.f19825b = null;
-            this.f19826c.mo20708p(null);
+            this.f19826c.mo20709p(null);
         }
 
-        public boolean m20716c(T t) {
+        public boolean m20717c(T t) {
             boolean z = true;
             this.f19827d = true;
             C6291d<T> dVar = this.f19825b;
-            if (dVar == null || !dVar.m20711c(t)) {
+            if (dVar == null || !dVar.m20712c(t)) {
                 z = false;
             }
             if (z) {
-                m20714e();
+                m20715e();
             }
             return z;
         }
 
-        public boolean m20715d() {
+        public boolean m20716d() {
             boolean z = true;
             this.f19827d = true;
             C6291d<T> dVar = this.f19825b;
-            if (dVar == null || !dVar.m20712b(true)) {
+            if (dVar == null || !dVar.m20713b(true)) {
                 z = false;
             }
             if (z) {
-                m20714e();
+                m20715e();
             }
             return z;
         }
 
-        public final void m20714e() {
+        public final void m20715e() {
             this.f19824a = null;
             this.f19825b = null;
             this.f19826c = null;
         }
 
-        public boolean m20713f(Throwable th) {
+        public boolean m20714f(Throwable th) {
             boolean z = true;
             this.f19827d = true;
             C6291d<T> dVar = this.f19825b;
-            if (dVar == null || !dVar.m20710d(th)) {
+            if (dVar == null || !dVar.m20711d(th)) {
                 z = false;
             }
             if (z) {
-                m20714e();
+                m20715e();
             }
             return z;
         }
@@ -75,10 +75,10 @@ public final class C6287c {
             C6293d<Void> dVar;
             C6291d<T> dVar2 = this.f19825b;
             if (dVar2 != null && !dVar2.isDone()) {
-                dVar2.m20710d(new C6289b("The completer object was garbage collected - this future would otherwise never complete. The tag was: " + this.f19824a));
+                dVar2.m20711d(new C6289b("The completer object was garbage collected - this future would otherwise never complete. The tag was: " + this.f19824a));
             }
             if (!this.f19827d && (dVar = this.f19826c) != null) {
-                dVar.mo20708p(null);
+                dVar.mo20709p(null);
             }
         }
     }
@@ -107,7 +107,7 @@ public final class C6287c {
             }
 
             @Override
-            public String mo20709m() {
+            public String mo20710m() {
                 C6288a<T> aVar = C6291d.this.f19828a.get();
                 if (aVar == null) {
                     return "Completer object has been garbage collected, future will fail soon";
@@ -121,16 +121,16 @@ public final class C6287c {
         }
 
         @Override
-        public void mo13372a(Runnable runnable, Executor executor) {
-            this.f19829b.mo13372a(runnable, executor);
+        public void mo13371a(Runnable runnable, Executor executor) {
+            this.f19829b.mo13371a(runnable, executor);
         }
 
-        public boolean m20712b(boolean z) {
+        public boolean m20713b(boolean z) {
             return this.f19829b.cancel(z);
         }
 
-        public boolean m20711c(T t) {
-            return this.f19829b.mo20708p(t);
+        public boolean m20712c(T t) {
+            return this.f19829b.mo20709p(t);
         }
 
         @Override
@@ -138,13 +138,13 @@ public final class C6287c {
             C6288a<T> aVar = this.f19828a.get();
             boolean cancel = this.f19829b.cancel(z);
             if (cancel && aVar != null) {
-                aVar.m20717b();
+                aVar.m20718b();
             }
             return cancel;
         }
 
-        public boolean m20710d(Throwable th) {
-            return this.f19829b.mo20707q(th);
+        public boolean m20711d(Throwable th) {
+            return this.f19829b.mo20708q(th);
         }
 
         @Override
@@ -172,7 +172,7 @@ public final class C6287c {
         }
     }
 
-    public static <T> AbstractFutureC1291a<T> m20719a(AbstractC6290c<T> cVar) {
+    public static <T> AbstractFutureC1291a<T> m20720a(AbstractC6290c<T> cVar) {
         C6288a<T> aVar = new C6288a<>();
         C6291d<T> dVar = new C6291d<>(aVar);
         aVar.f19825b = dVar;
@@ -183,7 +183,7 @@ public final class C6287c {
                 aVar.f19824a = a;
             }
         } catch (Exception e) {
-            dVar.m20710d(e);
+            dVar.m20711d(e);
         }
         return dVar;
     }

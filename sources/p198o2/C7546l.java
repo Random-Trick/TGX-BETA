@@ -10,8 +10,8 @@ import p308w1.C9940c;
 import p323x1.AbstractC10074f;
 
 public final class C7546l implements AbstractC7545k {
-    public final AbstractC9421e f24126a;
-    public final AbstractC9418b<C7544j> f24127b;
+    public final AbstractC9421e f24129a;
+    public final AbstractC9418b<C7544j> f24130b;
 
     public class C7547a extends AbstractC9418b<C7544j> {
         public C7547a(AbstractC9421e eVar) {
@@ -24,13 +24,13 @@ public final class C7546l implements AbstractC7545k {
         }
 
         public void mo8741g(AbstractC10074f fVar, C7544j jVar) {
-            String str = jVar.f24124a;
+            String str = jVar.f24127a;
             if (str == null) {
                 fVar.mo5374d0(1);
             } else {
                 fVar.mo5373q(1, str);
             }
-            String str2 = jVar.f24125b;
+            String str2 = jVar.f24128b;
             if (str2 == null) {
                 fVar.mo5374d0(2);
             } else {
@@ -40,19 +40,19 @@ public final class C7546l implements AbstractC7545k {
     }
 
     public C7546l(AbstractC9421e eVar) {
-        this.f24126a = eVar;
-        this.f24127b = new C7547a(eVar);
+        this.f24129a = eVar;
+        this.f24130b = new C7547a(eVar);
     }
 
     @Override
     public void mo15708a(C7544j jVar) {
-        this.f24126a.m8732b();
-        this.f24126a.m8731c();
+        this.f24129a.m8732b();
+        this.f24129a.m8731c();
         try {
-            this.f24127b.m8740h(jVar);
-            this.f24126a.m8714t();
+            this.f24130b.m8740h(jVar);
+            this.f24129a.m8714t();
         } finally {
-            this.f24126a.m8727g();
+            this.f24129a.m8727g();
         }
     }
 
@@ -64,8 +64,8 @@ public final class C7546l implements AbstractC7545k {
         } else {
             y0.mo5373q(1, str);
         }
-        this.f24126a.m8732b();
-        Cursor b = C9940c.m6454b(this.f24126a, y0, false, null);
+        this.f24129a.m8732b();
+        Cursor b = C9940c.m6454b(this.f24129a, y0, false, null);
         try {
             ArrayList arrayList = new ArrayList(b.getCount());
             while (b.moveToNext()) {

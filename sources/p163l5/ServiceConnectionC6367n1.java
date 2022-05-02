@@ -24,7 +24,7 @@ public final class ServiceConnectionC6367n1 implements ServiceConnection, Abstra
         this.f19981N = l1Var;
     }
 
-    public final void m20543a(String str) {
+    public final void m20544a(String str) {
         C8050a aVar;
         Context context;
         Context context2;
@@ -38,7 +38,7 @@ public final class ServiceConnectionC6367n1 implements ServiceConnection, Abstra
         context = this.f19983P.f20004e;
         C6361l1 l1Var = this.f19981N;
         context2 = this.f19983P.f20004e;
-        boolean d = aVar.m13700d(context, str, l1Var.m20548d(context2), this, this.f19981N.m20549c());
+        boolean d = aVar.m13699d(context, str, l1Var.m20549d(context2), this, this.f19981N.m20550c());
         this.f19986c = d;
         if (d) {
             handler = this.f19983P.f20005f;
@@ -52,12 +52,12 @@ public final class ServiceConnectionC6367n1 implements ServiceConnection, Abstra
         try {
             aVar2 = this.f19983P.f20006g;
             context3 = this.f19983P.f20004e;
-            aVar2.m13701c(context3, this);
+            aVar2.m13700c(context3, this);
         } catch (IllegalArgumentException unused) {
         }
     }
 
-    public final void m20542b(String str) {
+    public final void m20543b(String str) {
         Handler handler;
         C8050a aVar;
         Context context;
@@ -65,40 +65,40 @@ public final class ServiceConnectionC6367n1 implements ServiceConnection, Abstra
         handler.removeMessages(1, this.f19981N);
         aVar = this.f19983P.f20006g;
         context = this.f19983P.f20004e;
-        aVar.m13701c(context, this);
+        aVar.m13700c(context, this);
         this.f19986c = false;
         this.f19985b = 2;
     }
 
-    public final void m20541c(ServiceConnection serviceConnection, ServiceConnection serviceConnection2, String str) {
+    public final void m20542c(ServiceConnection serviceConnection, ServiceConnection serviceConnection2, String str) {
         this.f19984a.put(serviceConnection, serviceConnection2);
     }
 
-    public final void m20540d(ServiceConnection serviceConnection, String str) {
+    public final void m20541d(ServiceConnection serviceConnection, String str) {
         this.f19984a.remove(serviceConnection);
     }
 
-    public final boolean m20539e() {
+    public final boolean m20540e() {
         return this.f19986c;
     }
 
-    public final int m20538f() {
+    public final int m20539f() {
         return this.f19985b;
     }
 
-    public final boolean m20537g(ServiceConnection serviceConnection) {
+    public final boolean m20538g(ServiceConnection serviceConnection) {
         return this.f19984a.containsKey(serviceConnection);
     }
 
-    public final boolean m20536h() {
+    public final boolean m20537h() {
         return this.f19984a.isEmpty();
     }
 
-    public final IBinder m20535i() {
+    public final IBinder m20536i() {
         return this.f19980M;
     }
 
-    public final ComponentName m20534j() {
+    public final ComponentName m20535j() {
         return this.f19982O;
     }
 

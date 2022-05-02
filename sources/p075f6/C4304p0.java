@@ -14,15 +14,15 @@ public final class C4304p0 implements AbstractC6096d<C4289i> {
     }
 
     @Override
-    public final void mo21335a(C4289i iVar) {
+    public final void mo21336a(C4289i iVar) {
         C4289i iVar2 = iVar;
         Status a = iVar2.mo952a();
-        if (a.m30393f()) {
-            this.f14369a.m19084c(new C4287h(iVar2));
-        } else if (a.m30394e()) {
-            this.f14369a.m19085b(new C5874i(a));
+        if (a.m30395f()) {
+            this.f14369a.m19085c(new C4287h(iVar2));
+        } else if (a.m30396e()) {
+            this.f14369a.m19086b(new C5874i(a));
         } else {
-            this.f14369a.m19085b(new C5861b(a));
+            this.f14369a.m19086b(new C5861b(a));
         }
     }
 }

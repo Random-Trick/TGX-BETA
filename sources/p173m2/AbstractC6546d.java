@@ -10,7 +10,7 @@ import p145k2.AbstractC6041a;
 import p243r2.AbstractC8354a;
 
 public abstract class AbstractC6546d<T> {
-    public static final String f20377f = AbstractC4234j.m28360f("ConstraintTracker");
+    public static final String f20377f = AbstractC4234j.m28362f("ConstraintTracker");
     public final AbstractC8354a f20378a;
     public final Context f20379b;
     public final Object f20380c = new Object();
@@ -27,7 +27,7 @@ public abstract class AbstractC6546d<T> {
         @Override
         public void run() {
             for (AbstractC6041a aVar : this.f20383a) {
-                aVar.mo20703a(AbstractC6546d.this.f20382e);
+                aVar.mo20704a(AbstractC6546d.this.f20382e);
             }
         }
     }
@@ -37,40 +37,40 @@ public abstract class AbstractC6546d<T> {
         this.f20378a = aVar;
     }
 
-    public void m20135a(AbstractC6041a<T> aVar) {
+    public void m20136a(AbstractC6041a<T> aVar) {
         synchronized (this.f20380c) {
             if (this.f20381d.add(aVar)) {
                 if (this.f20381d.size() == 1) {
-                    this.f20382e = mo20126b();
-                    AbstractC4234j.m28362c().mo28359a(f20377f, String.format("%s: initial state = %s", getClass().getSimpleName(), this.f20382e), new Throwable[0]);
-                    mo20132e();
+                    this.f20382e = mo20127b();
+                    AbstractC4234j.m28364c().mo28361a(f20377f, String.format("%s: initial state = %s", getClass().getSimpleName(), this.f20382e), new Throwable[0]);
+                    mo20133e();
                 }
-                aVar.mo20703a(this.f20382e);
+                aVar.mo20704a(this.f20382e);
             }
         }
     }
 
-    public abstract T mo20126b();
+    public abstract T mo20127b();
 
-    public void m20134c(AbstractC6041a<T> aVar) {
+    public void m20135c(AbstractC6041a<T> aVar) {
         synchronized (this.f20380c) {
             if (this.f20381d.remove(aVar) && this.f20381d.isEmpty()) {
-                mo20131f();
+                mo20132f();
             }
         }
     }
 
-    public void m20133d(T t) {
+    public void m20134d(T t) {
         synchronized (this.f20380c) {
             T t2 = this.f20382e;
             if (t2 != t && (t2 == null || !t2.equals(t))) {
                 this.f20382e = t;
-                this.f20378a.mo12683a().execute(new RunnableC6547a(new ArrayList(this.f20381d)));
+                this.f20378a.mo12682a().execute(new RunnableC6547a(new ArrayList(this.f20381d)));
             }
         }
     }
 
-    public abstract void mo20132e();
+    public abstract void mo20133e();
 
-    public abstract void mo20131f();
+    public abstract void mo20132f();
 }

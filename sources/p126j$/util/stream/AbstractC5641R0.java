@@ -17,7 +17,7 @@ abstract class AbstractC5641R0 implements AbstractC5632P0 {
     }
 
     @Override
-    public AbstractC5632P0 mo22158f(int i) {
+    public AbstractC5632P0 mo22159f(int i) {
         if (i == 0) {
             return this.f18221a;
         }
@@ -28,7 +28,7 @@ abstract class AbstractC5641R0 implements AbstractC5632P0 {
     }
 
     @Override
-    public int mo22153o() {
+    public int mo22154o() {
         return 2;
     }
 }

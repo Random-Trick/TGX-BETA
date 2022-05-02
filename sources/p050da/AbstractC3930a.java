@@ -7,5 +7,5 @@ public interface AbstractC3930a {
     public static final AbstractC3930a f13259b = new C3931b();
     public static final AbstractC3930a f13260c = new C3933d();
 
-    void mo29594a(ShortBuffer shortBuffer, ShortBuffer shortBuffer2, int i);
+    void mo29596a(ShortBuffer shortBuffer, ShortBuffer shortBuffer2, int i);
 }

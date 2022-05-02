@@ -8,42 +8,42 @@ import org.thunderdog.challegram.Log;
 public class C1408x {
 
     public interface AbstractC1409a {
-        void mo14480j(boolean z);
+        void mo14479j(boolean z);
 
-        void mo14479j0();
+        void mo14478j0();
     }
 
-    public static int m37090a() {
-        return m37089b(Math.round(C1357a0.m37545e() * 0.45f));
+    public static int m37093a() {
+        return m37092b(Math.round(C1357a0.m37548e() * 0.45f));
     }
 
-    public static int m37089b(int i) {
-        return Math.max(C4868i.m24726c2().m24772W0(C1379j0.m37291z(), i), C1357a0.m37541i(75.0f));
+    public static int m37092b(int i) {
+        return Math.max(C4868i.m24727c2().m24773W0(C1379j0.m37294z(), i), C1357a0.m37544i(75.0f));
     }
 
-    public static void m37088c(View view) {
+    public static void m37091c(View view) {
         if (view != null) {
-            ((InputMethodManager) C1379j0.m37315n().getSystemService("input_method")).hideSoftInputFromWindow(view.getWindowToken(), 0);
+            ((InputMethodManager) C1379j0.m37318n().getSystemService("input_method")).hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
     }
 
-    public static void m37087d(View... viewArr) {
+    public static void m37090d(View... viewArr) {
         for (View view : viewArr) {
-            m37088c(view);
+            m37091c(view);
         }
     }
 
-    public static void m37086e(int i) {
+    public static void m37089e(int i) {
         if (i > 0) {
-            C4868i.m24726c2().m24810Q4(C1379j0.m37291z(), i);
+            C4868i.m24727c2().m24811Q4(C1379j0.m37294z(), i);
         }
     }
 
-    public static void m37085f(View view) {
+    public static void m37088f(View view) {
         if (view != null) {
             try {
                 view.requestFocus();
-                ((InputMethodManager) C1379j0.m37315n().getSystemService("input_method")).showSoftInput(view, 0);
+                ((InputMethodManager) C1379j0.m37318n().getSystemService("input_method")).showSoftInput(view, 0);
             } catch (Throwable th) {
                 Log.m14725e("Cannot show keyboard", th, new Object[0]);
             }

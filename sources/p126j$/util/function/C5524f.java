@@ -9,7 +9,7 @@ public final class C5524f implements AbstractC5525g {
         this.f18071a = doubleConsumer;
     }
 
-    public static AbstractC5525g m22485a(DoubleConsumer doubleConsumer) {
+    public static AbstractC5525g m22486a(DoubleConsumer doubleConsumer) {
         if (doubleConsumer == null) {
             return null;
         }
@@ -17,7 +17,7 @@ public final class C5524f implements AbstractC5525g {
     }
 
     @Override
-    public void mo22150c(double d) {
+    public void mo22151c(double d) {
         this.f18071a.accept(d);
     }
 }

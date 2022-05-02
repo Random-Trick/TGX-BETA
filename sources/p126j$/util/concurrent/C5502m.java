@@ -15,7 +15,7 @@ public class C5502m implements Map.Entry {
         this.f18023d = mVar;
     }
 
-    public C5502m mo22511a(int i, Object obj) {
+    public C5502m mo22512a(int i, Object obj) {
         Object obj2;
         C5502m mVar = this;
         do {

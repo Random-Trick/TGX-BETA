@@ -6,22 +6,22 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 import p343y6.C10433i;
 
 public abstract class AbstractC11326b<T> extends AbstractC11403r0<T> {
-    public EnumC11328b f36252a = EnumC11328b.NOT_READY;
+    public EnumC11328b f36255a = EnumC11328b.NOT_READY;
     @NullableDecl
-    public T f36253b;
+    public T f36256b;
 
     public static class C11327a {
-        public static final int[] f36254a;
+        public static final int[] f36257a;
 
         static {
             int[] iArr = new int[EnumC11328b.values().length];
-            f36254a = iArr;
+            f36257a = iArr;
             try {
                 iArr[EnumC11328b.DONE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f36254a[EnumC11328b.READY.ordinal()] = 2;
+                f36257a[EnumC11328b.READY.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
@@ -38,25 +38,25 @@ public abstract class AbstractC11326b<T> extends AbstractC11403r0<T> {
 
     @CanIgnoreReturnValue
     public final T m893b() {
-        this.f36252a = EnumC11328b.DONE;
+        this.f36255a = EnumC11328b.DONE;
         return null;
     }
 
     public final boolean m892c() {
-        this.f36252a = EnumC11328b.FAILED;
-        this.f36253b = mo697a();
-        if (this.f36252a == EnumC11328b.DONE) {
+        this.f36255a = EnumC11328b.FAILED;
+        this.f36256b = mo697a();
+        if (this.f36255a == EnumC11328b.DONE) {
             return false;
         }
-        this.f36252a = EnumC11328b.READY;
+        this.f36255a = EnumC11328b.READY;
         return true;
     }
 
     @Override
     @CanIgnoreReturnValue
     public final boolean hasNext() {
-        C10433i.m5124n(this.f36252a != EnumC11328b.FAILED);
-        int i = C11327a.f36254a[this.f36252a.ordinal()];
+        C10433i.m5124n(this.f36255a != EnumC11328b.FAILED);
+        int i = C11327a.f36257a[this.f36255a.ordinal()];
         if (i == 1) {
             return false;
         }
@@ -70,9 +70,9 @@ public abstract class AbstractC11326b<T> extends AbstractC11403r0<T> {
     @CanIgnoreReturnValue
     public final T next() {
         if (hasNext()) {
-            this.f36252a = EnumC11328b.NOT_READY;
-            T t = this.f36253b;
-            this.f36253b = null;
+            this.f36255a = EnumC11328b.NOT_READY;
+            T t = this.f36256b;
+            this.f36256b = null;
             return t;
         }
         throw new NoSuchElementException();

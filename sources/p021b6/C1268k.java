@@ -12,30 +12,30 @@ public final class C1268k<E> extends AbstractC1264i<E> {
 
     @Override
     public final E get(int i) {
-        C1250b.m37825a(i, this.f4630M, "index");
+        C1250b.m37828a(i, this.f4630M, "index");
         E e = (E) this.f4631c[i];
         e.getClass();
         return e;
     }
 
     @Override
-    public final int mo37808h(Object[] objArr, int i) {
+    public final int mo37811h(Object[] objArr, int i) {
         System.arraycopy(this.f4631c, 0, objArr, 0, this.f4630M);
         return this.f4630M;
     }
 
     @Override
-    public final int mo37807i() {
+    public final int mo37810i() {
         return this.f4630M;
     }
 
     @Override
-    public final int mo37806m() {
+    public final int mo37809m() {
         return 0;
     }
 
     @Override
-    public final Object[] mo37805r() {
+    public final Object[] mo37808r() {
         return this.f4631c;
     }
 

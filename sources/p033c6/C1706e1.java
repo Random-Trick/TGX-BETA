@@ -16,24 +16,24 @@ public final class C1706e1 extends AbstractC1721f1 {
 
     @Override
     public final Object get(int i) {
-        C1893r.m35935a(i, this.f6235M, "index");
+        C1893r.m35938a(i, this.f6235M, "index");
         return this.f6236N.get(i + this.f6237c);
     }
 
     @Override
-    public final int mo35828i() {
-        return this.f6236N.mo35827m() + this.f6237c + this.f6235M;
+    public final int mo35831i() {
+        return this.f6236N.mo35830m() + this.f6237c + this.f6235M;
     }
 
     @Override
-    public final int mo35827m() {
-        return this.f6236N.mo35827m() + this.f6237c;
+    public final int mo35830m() {
+        return this.f6236N.mo35830m() + this.f6237c;
     }
 
     @Override
     @CheckForNull
-    public final Object[] mo35825s() {
-        return this.f6236N.mo35825s();
+    public final Object[] mo35828s() {
+        return this.f6236N.mo35828s();
     }
 
     @Override
@@ -47,8 +47,8 @@ public final class C1706e1 extends AbstractC1721f1 {
     }
 
     @Override
-    public final AbstractC1721f1 mo36060t(int i, int i2) {
-        C1893r.m35933c(i, i2, this.f6235M);
+    public final AbstractC1721f1 mo36063t(int i, int i2) {
+        C1893r.m35936c(i, i2, this.f6235M);
         AbstractC1721f1 f1Var = this.f6236N;
         int i3 = this.f6237c;
         return f1Var.subList(i + i3, i2 + i3);

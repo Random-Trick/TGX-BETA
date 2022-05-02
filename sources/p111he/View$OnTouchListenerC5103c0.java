@@ -42,7 +42,7 @@ public class View$OnTouchListenerC5103c0 implements View.OnTouchListener, View.O
         this.f17140N = pVar;
     }
 
-    public static void m23952h(View view, View view2, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8) {
+    public static void m23953h(View view, View view2, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8) {
         ViewParent parent = view2.getParent();
         if (parent != null) {
             int measuredWidth = view2.getMeasuredWidth();
@@ -53,10 +53,10 @@ public class View$OnTouchListenerC5103c0 implements View.OnTouchListener, View.O
             int measuredWidth3 = viewGroup.getMeasuredWidth();
             int measuredHeight3 = viewGroup.getMeasuredHeight();
             if (measuredWidth > 0 && measuredHeight > 0 && measuredWidth3 > 0 && measuredHeight3 > 0) {
-                int[] u = C1399s0.m37154u(view);
+                int[] u = C1399s0.m37157u(view);
                 int i9 = u[0] + (measuredWidth2 / 2);
                 int i10 = measuredHeight2 / 2;
-                int[] u2 = C1399s0.m37154u(view2);
+                int[] u2 = C1399s0.m37157u(view2);
                 u2[0] = (int) (u2[0] - view2.getTranslationX());
                 u2[1] = (int) (u2[1] - view2.getTranslationY());
                 int i11 = measuredWidth / 2;
@@ -69,7 +69,7 @@ public class View$OnTouchListenerC5103c0 implements View.OnTouchListener, View.O
         }
     }
 
-    public void m23950j(List list, C6924j2 j2Var) {
+    public void m23951j(List list, C6924j2 j2Var) {
         Iterator it = list.iterator();
         while (it.hasNext()) {
             ((C5104a) it.next()).mo4501a3();
@@ -79,20 +79,20 @@ public class View$OnTouchListenerC5103c0 implements View.OnTouchListener, View.O
         }
     }
 
-    public View$OnTouchListenerC5103c0 m23956d(View view) {
+    public View$OnTouchListenerC5103c0 m23957d(View view) {
         view.setOnLongClickListener(this);
         return this;
     }
 
-    public View$OnTouchListenerC5103c0 m23955e(View view) {
+    public View$OnTouchListenerC5103c0 m23956e(View view) {
         view.setOnLongClickListener(null);
         return this;
     }
 
-    public final void m23954f(View view, float f, float f2, boolean z) {
+    public final void m23955f(View view, float f, float f2, boolean z) {
     }
 
-    public void m23953g() {
+    public void m23954g() {
         C6924j2 j2Var = this.f17141a;
         if (j2Var != null) {
             j2Var.m18408y2(true);
@@ -100,18 +100,18 @@ public class View$OnTouchListenerC5103c0 implements View.OnTouchListener, View.O
         }
     }
 
-    public final void m23951i(C5104a aVar, View view, View view2) {
+    public final void m23952i(C5104a aVar, View view, View view2) {
         C6924j2 j2Var = this.f17141a;
         if (j2Var != null && !j2Var.m18446A2()) {
             this.f17143c.mo4198I0(view, view2);
             if (aVar.f17148Q != null) {
                 aVar.f17148Q.onClick(view);
             }
-            m23953g();
+            m23954g();
         }
     }
 
-    public final void m23948l(final View view, final List<C5104a> list) {
+    public final void m23949l(final View view, final List<C5104a> list) {
         C6924j2 j2Var = this.f17141a;
         if (j2Var != null) {
             j2Var.m18408y2(false);
@@ -120,20 +120,20 @@ public class View$OnTouchListenerC5103c0 implements View.OnTouchListener, View.O
         i1Var.addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
             @Override
             public final void onLayoutChange(View view2, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8) {
-                View$OnTouchListenerC5103c0.m23952h(view, view2, i, i2, i3, i4, i5, i6, i7, i8);
+                View$OnTouchListenerC5103c0.m23953h(view, view2, i, i2, i3, i4, i5, i6, i7, i8);
             }
         });
-        i1Var.m9969b(this.f17139M, this.f17140N);
+        i1Var.m9968b(this.f17139M, this.f17140N);
         for (final C5104a aVar : list) {
-            aVar.f17150S = i1Var.m9970a(aVar.f17151a, aVar.f17152b, aVar.f17153c, aVar.f17144M, new View.OnClickListener() {
+            aVar.f17150S = i1Var.m9969a(aVar.f17151a, aVar.f17152b, aVar.f17153c, aVar.f17144M, new View.OnClickListener() {
                 @Override
                 public final void onClick(View view2) {
-                    View$OnTouchListenerC5103c0.this.m23951i(aVar, view, view2);
+                    View$OnTouchListenerC5103c0.this.m23952i(aVar, view, view2);
                 }
             });
-            aVar.f17150S.setVisibility(aVar.m23939h() ? 0 : 8);
+            aVar.f17150S.setVisibility(aVar.m23940h() ? 0 : 8);
             if (aVar.f17149R != 0) {
-                C4868i.m24726c2().m24582u2(aVar.f17149R);
+                C4868i.m24727c2().m24583u2(aVar.f17149R);
             }
         }
         i1Var.setAnchorMode(0);
@@ -152,13 +152,13 @@ public class View$OnTouchListenerC5103c0 implements View.OnTouchListener, View.O
 
             @Override
             public final void mo2999y4(C6924j2 j2Var3) {
-                View$OnTouchListenerC5103c0.this.m23950j(list, j2Var3);
+                View$OnTouchListenerC5103c0.this.m23951j(list, j2Var3);
             }
         });
         this.f17141a.m18431R2(i1Var);
     }
 
-    public final void m23947m(View view, float f, float f2) {
+    public final void m23948m(View view, float f, float f2) {
     }
 
     @Override
@@ -167,7 +167,7 @@ public class View$OnTouchListenerC5103c0 implements View.OnTouchListener, View.O
         if (N3 == null || N3.isEmpty()) {
             return false;
         }
-        m23948l(view, N3);
+        m23949l(view, N3);
         return true;
     }
 
@@ -195,7 +195,7 @@ public class View$OnTouchListenerC5103c0 implements View.OnTouchListener, View.O
             this.f17144M = null;
         }
 
-        public void m23938i(long j, long j2, TdApi.UserStatus userStatus, boolean z) {
+        public void m23939i(long j, long j2, TdApi.UserStatus userStatus, boolean z) {
             if (j2 == j) {
                 int i = 0;
                 boolean z2 = (userStatus == null || userStatus.getConstructor() != -759984891 || ((TdApi.UserStatusOffline) userStatus).wasOnline == 0) ? false : true;
@@ -220,7 +220,7 @@ public class View$OnTouchListenerC5103c0 implements View.OnTouchListener, View.O
             }
         }
 
-        public C5104a m23941f(C10930q6 q6Var, final long j) {
+        public C5104a m23942f(C10930q6 q6Var, final long j) {
             if (!(q6Var == null || j == 0)) {
                 this.f17145N = q6Var;
                 this.f17146O = j;
@@ -232,7 +232,7 @@ public class View$OnTouchListenerC5103c0 implements View.OnTouchListener, View.O
 
                     @Override
                     public final void mo1349J3(long j2, TdApi.UserStatus userStatus, boolean z) {
-                        View$OnTouchListenerC5103c0.C5104a.this.m23938i(j, j2, userStatus, z);
+                        View$OnTouchListenerC5103c0.C5104a.this.m23939i(j, j2, userStatus, z);
                     }
                 };
                 q6Var.m2480e2().m1650e2(j, this.f17147P);
@@ -240,17 +240,17 @@ public class View$OnTouchListenerC5103c0 implements View.OnTouchListener, View.O
             return this;
         }
 
-        public C5104a m23940g(long j) {
+        public C5104a m23941g(long j) {
             this.f17149R = j;
             return this;
         }
 
-        public boolean m23939h() {
+        public boolean m23940h() {
             C10930q6 q6Var;
             return this.f17146O == 0 || (q6Var = this.f17145N) == null || q6Var.m2480e2().m1729I2(this.f17146O);
         }
 
-        public C5104a m23937j(View.OnClickListener onClickListener) {
+        public C5104a m23938j(View.OnClickListener onClickListener) {
             this.f17148Q = onClickListener;
             return this;
         }

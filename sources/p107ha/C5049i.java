@@ -20,12 +20,12 @@ public final class C5049i<T> implements Serializable {
         public final Throwable f17060a;
 
         public C5051b(Throwable th) {
-            C8298k.m12934e(th, "exception");
+            C8298k.m12933e(th, "exception");
             this.f17060a = th;
         }
 
         public boolean equals(Object obj) {
-            return (obj instanceof C5051b) && C8298k.m12937b(this.f17060a, ((C5051b) obj).f17060a);
+            return (obj instanceof C5051b) && C8298k.m12936b(this.f17060a, ((C5051b) obj).f17060a);
         }
 
         public int hashCode() {
@@ -37,11 +37,11 @@ public final class C5049i<T> implements Serializable {
         }
     }
 
-    public static <T> Object m24192a(Object obj) {
+    public static <T> Object m24193a(Object obj) {
         return obj;
     }
 
-    public static final Throwable m24191b(Object obj) {
+    public static final Throwable m24192b(Object obj) {
         if (obj instanceof C5051b) {
             return ((C5051b) obj).f17060a;
         }

@@ -12,10 +12,10 @@ import p174m3.C6615i;
 
 public final class C8201m implements Comparator<C8203b>, Parcelable {
     public static final Parcelable.Creator<C8201m> CREATOR = new C8202a();
-    public final int f26557M;
-    public final C8203b[] f26558a;
-    public int f26559b;
-    public final String f26560c;
+    public final int f26560M;
+    public final C8203b[] f26561a;
+    public int f26562b;
+    public final String f26563c;
 
     public class C8202a implements Parcelable.Creator<C8201m> {
         public C8201m createFromParcel(Parcel parcel) {
@@ -29,11 +29,11 @@ public final class C8201m implements Comparator<C8203b>, Parcelable {
 
     public static final class C8203b implements Parcelable {
         public static final Parcelable.Creator<C8203b> CREATOR = new C8204a();
-        public final String f26561M;
-        public final byte[] f26562N;
-        public int f26563a;
-        public final UUID f26564b;
-        public final String f26565c;
+        public final String f26564M;
+        public final byte[] f26565N;
+        public int f26566a;
+        public final UUID f26567b;
+        public final String f26568c;
 
         public class C8204a implements Parcelable.Creator<C8203b> {
             public C8203b createFromParcel(Parcel parcel) {
@@ -49,12 +49,12 @@ public final class C8201m implements Comparator<C8203b>, Parcelable {
             this(uuid, null, str, bArr);
         }
 
-        public C8203b m13214a(byte[] bArr) {
-            return new C8203b(this.f26564b, this.f26565c, this.f26561M, bArr);
+        public C8203b m13213a(byte[] bArr) {
+            return new C8203b(this.f26567b, this.f26568c, this.f26564M, bArr);
         }
 
-        public boolean m13213b(UUID uuid) {
-            return C6615i.f20675a.equals(this.f26564b) || uuid.equals(this.f26564b);
+        public boolean m13212b(UUID uuid) {
+            return C6615i.f20675a.equals(this.f26567b) || uuid.equals(this.f26567b);
         }
 
         @Override
@@ -70,39 +70,39 @@ public final class C8201m implements Comparator<C8203b>, Parcelable {
                 return true;
             }
             C8203b bVar = (C8203b) obj;
-            return C1216l0.m37982c(this.f26565c, bVar.f26565c) && C1216l0.m37982c(this.f26561M, bVar.f26561M) && C1216l0.m37982c(this.f26564b, bVar.f26564b) && Arrays.equals(this.f26562N, bVar.f26562N);
+            return C1216l0.m37985c(this.f26568c, bVar.f26568c) && C1216l0.m37985c(this.f26564M, bVar.f26564M) && C1216l0.m37985c(this.f26567b, bVar.f26567b) && Arrays.equals(this.f26565N, bVar.f26565N);
         }
 
         public int hashCode() {
-            if (this.f26563a == 0) {
-                int hashCode = this.f26564b.hashCode() * 31;
-                String str = this.f26565c;
-                this.f26563a = ((((hashCode + (str == null ? 0 : str.hashCode())) * 31) + this.f26561M.hashCode()) * 31) + Arrays.hashCode(this.f26562N);
+            if (this.f26566a == 0) {
+                int hashCode = this.f26567b.hashCode() * 31;
+                String str = this.f26568c;
+                this.f26566a = ((((hashCode + (str == null ? 0 : str.hashCode())) * 31) + this.f26564M.hashCode()) * 31) + Arrays.hashCode(this.f26565N);
             }
-            return this.f26563a;
+            return this.f26566a;
         }
 
         @Override
         public void writeToParcel(Parcel parcel, int i) {
-            parcel.writeLong(this.f26564b.getMostSignificantBits());
-            parcel.writeLong(this.f26564b.getLeastSignificantBits());
-            parcel.writeString(this.f26565c);
-            parcel.writeString(this.f26561M);
-            parcel.writeByteArray(this.f26562N);
+            parcel.writeLong(this.f26567b.getMostSignificantBits());
+            parcel.writeLong(this.f26567b.getLeastSignificantBits());
+            parcel.writeString(this.f26568c);
+            parcel.writeString(this.f26564M);
+            parcel.writeByteArray(this.f26565N);
         }
 
         public C8203b(UUID uuid, String str, String str2, byte[] bArr) {
-            this.f26564b = (UUID) C1186a.m38185e(uuid);
-            this.f26565c = str;
-            this.f26561M = (String) C1186a.m38185e(str2);
-            this.f26562N = bArr;
+            this.f26567b = (UUID) C1186a.m38188e(uuid);
+            this.f26568c = str;
+            this.f26564M = (String) C1186a.m38188e(str2);
+            this.f26565N = bArr;
         }
 
         public C8203b(Parcel parcel) {
-            this.f26564b = new UUID(parcel.readLong(), parcel.readLong());
-            this.f26565c = parcel.readString();
-            this.f26561M = (String) C1216l0.m37968j(parcel.readString());
-            this.f26562N = parcel.createByteArray();
+            this.f26567b = new UUID(parcel.readLong(), parcel.readLong());
+            this.f26568c = parcel.readString();
+            this.f26564M = (String) C1216l0.m37971j(parcel.readString());
+            this.f26565N = parcel.createByteArray();
         }
     }
 
@@ -112,18 +112,18 @@ public final class C8201m implements Comparator<C8203b>, Parcelable {
 
     public int compare(C8203b bVar, C8203b bVar2) {
         UUID uuid = C6615i.f20675a;
-        if (uuid.equals(bVar.f26564b)) {
-            return uuid.equals(bVar2.f26564b) ? 0 : 1;
+        if (uuid.equals(bVar.f26567b)) {
+            return uuid.equals(bVar2.f26567b) ? 0 : 1;
         }
-        return bVar.f26564b.compareTo(bVar2.f26564b);
+        return bVar.f26567b.compareTo(bVar2.f26567b);
     }
 
-    public C8201m m13218b(String str) {
-        return C1216l0.m37982c(this.f26560c, str) ? this : new C8201m(str, false, this.f26558a);
+    public C8201m m13217b(String str) {
+        return C1216l0.m37985c(this.f26563c, str) ? this : new C8201m(str, false, this.f26561a);
     }
 
-    public C8203b m13217c(int i) {
-        return this.f26558a[i];
+    public C8203b m13216c(int i) {
+        return this.f26561a[i];
     }
 
     @Override
@@ -140,21 +140,21 @@ public final class C8201m implements Comparator<C8203b>, Parcelable {
             return false;
         }
         C8201m mVar = (C8201m) obj;
-        return C1216l0.m37982c(this.f26560c, mVar.f26560c) && Arrays.equals(this.f26558a, mVar.f26558a);
+        return C1216l0.m37985c(this.f26563c, mVar.f26563c) && Arrays.equals(this.f26561a, mVar.f26561a);
     }
 
     public int hashCode() {
-        if (this.f26559b == 0) {
-            String str = this.f26560c;
-            this.f26559b = ((str == null ? 0 : str.hashCode()) * 31) + Arrays.hashCode(this.f26558a);
+        if (this.f26562b == 0) {
+            String str = this.f26563c;
+            this.f26562b = ((str == null ? 0 : str.hashCode()) * 31) + Arrays.hashCode(this.f26561a);
         }
-        return this.f26559b;
+        return this.f26562b;
     }
 
     @Override
     public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(this.f26560c);
-        parcel.writeTypedArray(this.f26558a, 0);
+        parcel.writeString(this.f26563c);
+        parcel.writeTypedArray(this.f26561a, 0);
     }
 
     public C8201m(C8203b... bVarArr) {
@@ -166,17 +166,17 @@ public final class C8201m implements Comparator<C8203b>, Parcelable {
     }
 
     public C8201m(String str, boolean z, C8203b... bVarArr) {
-        this.f26560c = str;
+        this.f26563c = str;
         bVarArr = z ? (C8203b[]) bVarArr.clone() : bVarArr;
-        this.f26558a = bVarArr;
-        this.f26557M = bVarArr.length;
+        this.f26561a = bVarArr;
+        this.f26560M = bVarArr.length;
         Arrays.sort(bVarArr, this);
     }
 
     public C8201m(Parcel parcel) {
-        this.f26560c = parcel.readString();
-        C8203b[] bVarArr = (C8203b[]) C1216l0.m37968j((C8203b[]) parcel.createTypedArray(C8203b.CREATOR));
-        this.f26558a = bVarArr;
-        this.f26557M = bVarArr.length;
+        this.f26563c = parcel.readString();
+        C8203b[] bVarArr = (C8203b[]) C1216l0.m37971j((C8203b[]) parcel.createTypedArray(C8203b.CREATOR));
+        this.f26561a = bVarArr;
+        this.f26560M = bVarArr.length;
     }
 }

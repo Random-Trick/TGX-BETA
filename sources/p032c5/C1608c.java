@@ -21,7 +21,7 @@ public final class C1608c implements AbstractC6609h {
     }
 
     @Pure
-    public static int m36288b(int i) {
+    public static int m36291b(int i) {
         if (i == 1) {
             return 1;
         }
@@ -32,7 +32,7 @@ public final class C1608c implements AbstractC6609h {
     }
 
     @Pure
-    public static int m36287c(int i) {
+    public static int m36290c(int i) {
         if (i == 1) {
             return 3;
         }
@@ -45,12 +45,12 @@ public final class C1608c implements AbstractC6609h {
         return 7;
     }
 
-    public static String m36286d(int i) {
+    public static String m36289d(int i) {
         return Integer.toString(i, 36);
     }
 
-    public static C1608c m36285e(Bundle bundle) {
-        return new C1608c(bundle.getInt(m36286d(0), -1), bundle.getInt(m36286d(1), -1), bundle.getInt(m36286d(2), -1), bundle.getByteArray(m36286d(3)));
+    public static C1608c m36288e(Bundle bundle) {
+        return new C1608c(bundle.getInt(m36289d(0), -1), bundle.getInt(m36289d(1), -1), bundle.getInt(m36289d(2), -1), bundle.getByteArray(m36289d(3)));
     }
 
     public boolean equals(Object obj) {

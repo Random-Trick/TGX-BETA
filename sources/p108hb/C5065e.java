@@ -3,7 +3,7 @@ package p108hb;
 import java.util.HashMap;
 
 public final class C5065e {
-    public static final HashMap<String, C5066a> f17070a = m24122b();
+    public static final HashMap<String, C5066a> f17070a = m24123b();
     public static final C5066a f17071b = new C5066a("$", null, null, ",", ".", 2, 1);
 
     public static class C5066a {
@@ -26,13 +26,13 @@ public final class C5065e {
         }
     }
 
-    public static String m24123a(String str, long j) {
+    public static String m24124a(String str, long j) {
         long j2;
         long j3;
         long j4;
-        C5066a c = m24121c(str);
+        C5066a c = m24122c(str);
         StringBuilder sb2 = new StringBuilder();
-        String str2 = C5070i.m24061i(c.f17074c) ? c.f17073b : c.f17074c;
+        String str2 = C5070i.m24062i(c.f17074c) ? c.f17073b : c.f17074c;
         if ((c.f17078g & 1) != 0) {
             sb2.append(str2);
             if ((c.f17078g & 2) != 0) {
@@ -96,7 +96,7 @@ public final class C5065e {
         return sb2.toString();
     }
 
-    public static HashMap<String, C5066a> m24122b() {
+    public static HashMap<String, C5066a> m24123b() {
         HashMap<String, C5066a> hashMap = new HashMap<>();
         hashMap.put("AED", new C5066a("AED", "د.إ.\u200f", null, ",", ".", 2, 3));
         hashMap.put("AFN", new C5066a("AFN", "؋", null, ",", ".", 2, 1));
@@ -185,16 +185,16 @@ public final class C5065e {
         return hashMap;
     }
 
-    public static C5066a m24121c(String str) {
+    public static C5066a m24122c(String str) {
         C5066a aVar;
-        return (C5070i.m24061i(str) || (aVar = f17070a.get(str)) == null) ? f17071b : aVar;
+        return (C5070i.m24062i(str) || (aVar = f17070a.get(str)) == null) ? f17071b : aVar;
     }
 
-    public static String m24120d(String str) {
-        if (C5070i.m24061i(str)) {
+    public static String m24121d(String str) {
+        if (C5070i.m24062i(str)) {
             return str;
         }
-        C5066a c = m24121c(str);
-        return C5070i.m24061i(c.f17074c) ? c.f17073b : c.f17074c;
+        C5066a c = m24122c(str);
+        return C5070i.m24062i(c.f17074c) ? c.f17073b : c.f17074c;
     }
 }

@@ -37,7 +37,7 @@ public final class C6482b {
         this.f20169b = cls.getClassLoader();
     }
 
-    public static Class m20392a(String str) {
+    public static Class m20393a(String str) {
         try {
             return Class.forName(str);
         } catch (ClassNotFoundException e) {
@@ -45,7 +45,7 @@ public final class C6482b {
         }
     }
 
-    public static Class m20391b(String str, ClassLoader classLoader) {
+    public static Class m20392b(String str, ClassLoader classLoader) {
         if (str.equals("*")) {
             return null;
         }
@@ -63,36 +63,36 @@ public final class C6482b {
             if (cls2 != null) {
                 return cls2;
             }
-            Class a = m20392a("java.lang.ClassNotFoundException");
+            Class a = m20393a("java.lang.ClassNotFoundException");
             f20167g = a;
             return a;
         }
     }
 
-    public static AbstractC5327a m20390c(AbstractC5327a.AbstractC5328a aVar, Object obj, Object obj2) {
+    public static AbstractC5327a m20391c(AbstractC5327a.AbstractC5328a aVar, Object obj, Object obj2) {
         return new C6483c(aVar, obj, obj2, f20166f);
     }
 
-    public static AbstractC5327a m20389d(AbstractC5327a.AbstractC5328a aVar, Object obj, Object obj2, Object obj3) {
+    public static AbstractC5327a m20390d(AbstractC5327a.AbstractC5328a aVar, Object obj, Object obj2, Object obj3) {
         return new C6483c(aVar, obj, obj2, new Object[]{obj3});
     }
 
-    public static AbstractC5327a m20388e(AbstractC5327a.AbstractC5328a aVar, Object obj, Object obj2, Object obj3, Object obj4) {
+    public static AbstractC5327a m20389e(AbstractC5327a.AbstractC5328a aVar, Object obj, Object obj2, Object obj3, Object obj4) {
         return new C6483c(aVar, obj, obj2, new Object[]{obj3, obj4});
     }
 
-    public static AbstractC5327a m20387f(AbstractC5327a.AbstractC5328a aVar, Object obj, Object obj2, Object[] objArr) {
+    public static AbstractC5327a m20388f(AbstractC5327a.AbstractC5328a aVar, Object obj, Object obj2, Object[] objArr) {
         return new C6483c(aVar, obj, obj2, objArr);
     }
 
-    public AbstractC5921a m20386g(String str, String str2, String str3, String str4, String str5, String str6, String str7) {
+    public AbstractC5921a m20387g(String str, String str2, String str3, String str4, String str5, String str6, String str7) {
         int parseInt = Integer.parseInt(str, 16);
-        Class b = m20391b(str3, this.f20169b);
+        Class b = m20392b(str3, this.f20169b);
         StringTokenizer stringTokenizer = new StringTokenizer(str4, ":");
         int countTokens = stringTokenizer.countTokens();
         Class[] clsArr = new Class[countTokens];
         for (int i = 0; i < countTokens; i++) {
-            clsArr[i] = m20391b(stringTokenizer.nextToken(), this.f20169b);
+            clsArr[i] = m20392b(stringTokenizer.nextToken(), this.f20169b);
         }
         StringTokenizer stringTokenizer2 = new StringTokenizer(str5, ":");
         int countTokens2 = stringTokenizer2.countTokens();
@@ -104,18 +104,18 @@ public final class C6482b {
         int countTokens3 = stringTokenizer3.countTokens();
         Class[] clsArr2 = new Class[countTokens3];
         for (int i3 = 0; i3 < countTokens3; i3++) {
-            clsArr2[i3] = m20391b(stringTokenizer3.nextToken(), this.f20169b);
+            clsArr2[i3] = m20392b(stringTokenizer3.nextToken(), this.f20169b);
         }
-        return new C6486e(parseInt, str2, b, clsArr, strArr, clsArr2, m20391b(str7, this.f20169b));
+        return new C6486e(parseInt, str2, b, clsArr, strArr, clsArr2, m20392b(str7, this.f20169b));
     }
 
-    public AbstractC5327a.AbstractC5328a m20385h(String str, AbstractC5330c cVar, int i) {
+    public AbstractC5327a.AbstractC5328a m20386h(String str, AbstractC5330c cVar, int i) {
         int i2 = this.f20171d;
         this.f20171d = i2 + 1;
-        return new C6483c.C6484a(i2, str, cVar, m20384i(i, -1));
+        return new C6483c.C6484a(i2, str, cVar, m20385i(i, -1));
     }
 
-    public AbstractC5922b m20384i(int i, int i2) {
+    public AbstractC5922b m20385i(int i, int i2) {
         return new C6490g(this.f20168a, this.f20170c, i);
     }
 }

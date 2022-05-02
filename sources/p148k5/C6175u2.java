@@ -12,8 +12,8 @@ public final class C6175u2 extends AbstractC6118h1 {
     }
 
     @Override
-    public final void mo21104a() {
-        this.f19570b.f19574b.m21097c();
+    public final void mo21105a() {
+        this.f19570b.f19574b.m21098c();
         if (this.f19569a.isShowing()) {
             this.f19569a.dismiss();
         }

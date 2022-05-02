@@ -16,13 +16,13 @@ public final class C5270d {
         public C5271a() {
         }
 
-        public final int m23475b(int i, String str) {
-            int a = C5055m.m24187a(GLES20.glCreateShader(C5055m.m24187a(i)));
-            C4172d.m28622b("glCreateShader type=" + i);
+        public final int m23476b(int i, String str) {
+            int a = C5055m.m24188a(GLES20.glCreateShader(C5055m.m24188a(i)));
+            C4172d.m28624b("glCreateShader type=" + i);
             GLES20.glShaderSource(a, str);
             GLES20.glCompileShader(a);
             int[] iArr = new int[1];
-            GLES20.glGetShaderiv(a, C5038f.m24221b(), iArr, 0);
+            GLES20.glGetShaderiv(a, C5038f.m24222b(), iArr, 0);
             if (iArr[0] != 0) {
                 return a;
             }
@@ -41,16 +41,16 @@ public final class C5270d {
         this.f17454b = i2;
     }
 
-    public final int m23478a() {
+    public final int m23479a() {
         return this.f17454b;
     }
 
-    public final void m23477b() {
-        GLES20.glDeleteShader(C5055m.m24187a(this.f17454b));
+    public final void m23478b() {
+        GLES20.glDeleteShader(C5055m.m24188a(this.f17454b));
     }
 
     public C5270d(int i, String str) {
-        this(i, f17452c.m23475b(i, str));
-        C8298k.m12934e(str, "source");
+        this(i, f17452c.m23476b(i, str));
+        C8298k.m12933e(str, "source");
     }
 }

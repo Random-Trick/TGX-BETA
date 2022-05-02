@@ -14,9 +14,9 @@ public class DialogFragmentC5218b extends DialogFragment {
     public DialogInterface.OnCancelListener f17359b;
     public Dialog f17360c;
 
-    public static DialogFragmentC5218b m23609a(@RecentlyNonNull Dialog dialog, DialogInterface.OnCancelListener onCancelListener) {
+    public static DialogFragmentC5218b m23610a(@RecentlyNonNull Dialog dialog, DialogInterface.OnCancelListener onCancelListener) {
         DialogFragmentC5218b bVar = new DialogFragmentC5218b();
-        Dialog dialog2 = (Dialog) C6378r.m20505l(dialog, "Cannot display null dialog");
+        Dialog dialog2 = (Dialog) C6378r.m20506l(dialog, "Cannot display null dialog");
         dialog2.setOnCancelListener(null);
         dialog2.setOnDismissListener(null);
         bVar.f17358a = dialog2;

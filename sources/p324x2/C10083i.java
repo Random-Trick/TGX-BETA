@@ -12,14 +12,14 @@ import java.util.Collections;
 import java.util.List;
 
 public class C10083i implements Closeable {
-    public final int f32760a = 1179403647;
-    public final FileChannel f32761b;
+    public final int f32763a = 1179403647;
+    public final FileChannel f32764b;
 
     public C10083i(File file) {
         if (file == null || !file.exists()) {
             throw new IllegalArgumentException("File is null or does not exist");
         }
-        this.f32761b = new FileInputStream(file).getChannel();
+        this.f32764b = new FileInputStream(file).getChannel();
     }
 
     public short m6066A0(ByteBuffer byteBuffer, long j) {
@@ -56,16 +56,16 @@ public class C10083i implements Closeable {
 
     @Override
     public void close() {
-        this.f32761b.close();
+        this.f32764b.close();
     }
 
     public final long m6061m(AbstractC10078d dVar, long j, long j2) {
         for (long j3 = 0; j3 < j; j3++) {
             AbstractC10079e b = dVar.mo6068b(j3);
-            if (b.f32753a == 1) {
-                long j4 = b.f32755c;
-                if (j4 <= j2 && j2 <= b.f32756d + j4) {
-                    return (j2 - j4) + b.f32754b;
+            if (b.f32756a == 1) {
+                long j4 = b.f32758c;
+                if (j4 <= j2 && j2 <= b.f32759d + j4) {
+                    return (j2 - j4) + b.f32757b;
                 }
             }
         }
@@ -73,7 +73,7 @@ public class C10083i implements Closeable {
     }
 
     public AbstractC10078d m6060t() {
-        this.f32761b.position(0L);
+        this.f32764b.position(0L);
         ByteBuffer allocate = ByteBuffer.allocate(8);
         allocate.order(ByteOrder.LITTLE_ENDIAN);
         if (m6062E0(allocate, 0L) == 1179403647) {
@@ -92,15 +92,15 @@ public class C10083i implements Closeable {
 
     public List<String> m6059y0() {
         long j;
-        this.f32761b.position(0L);
+        this.f32764b.position(0L);
         ArrayList arrayList = new ArrayList();
         AbstractC10078d t = m6060t();
         ByteBuffer allocate = ByteBuffer.allocate(8);
-        allocate.order(t.f32744a ? ByteOrder.BIG_ENDIAN : ByteOrder.LITTLE_ENDIAN);
-        long j2 = t.f32749f;
+        allocate.order(t.f32747a ? ByteOrder.BIG_ENDIAN : ByteOrder.LITTLE_ENDIAN);
+        long j2 = t.f32752f;
         int i = 0;
         if (j2 == 65535) {
-            j2 = t.mo6067c(0).f32757a;
+            j2 = t.mo6067c(0).f32760a;
         }
         long j3 = 0;
         while (true) {
@@ -109,8 +109,8 @@ public class C10083i implements Closeable {
                 break;
             }
             AbstractC10079e b = t.mo6068b(j3);
-            if (b.f32753a == 2) {
-                j = b.f32754b;
+            if (b.f32756a == 2) {
+                j = b.f32757b;
                 break;
             }
             j3++;
@@ -123,14 +123,14 @@ public class C10083i implements Closeable {
         while (true) {
             AbstractC10077c a = t.mo6069a(j, i);
             j = j;
-            long j5 = a.f32742a;
+            long j5 = a.f32745a;
             if (j5 == 1) {
-                arrayList2.add(Long.valueOf(a.f32743b));
+                arrayList2.add(Long.valueOf(a.f32746b));
             } else if (j5 == 5) {
-                j4 = a.f32743b;
+                j4 = a.f32746b;
             }
             i++;
-            if (a.f32742a == 0) {
+            if (a.f32745a == 0) {
                 break;
             }
         }
@@ -149,7 +149,7 @@ public class C10083i implements Closeable {
         byteBuffer.limit(i);
         long j2 = 0;
         while (j2 < i) {
-            int read = this.f32761b.read(byteBuffer, j + j2);
+            int read = this.f32764b.read(byteBuffer, j + j2);
             if (read != -1) {
                 j2 += read;
             } else {

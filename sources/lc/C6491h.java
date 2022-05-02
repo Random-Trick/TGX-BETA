@@ -46,11 +46,11 @@ public class C6491h {
         hVar3.f20206i = 2;
     }
 
-    public void m20362a(StringBuffer stringBuffer, Class[] clsArr) {
+    public void m20363a(StringBuffer stringBuffer, Class[] clsArr) {
         if (clsArr != null) {
             if (this.f20199b) {
                 stringBuffer.append("(");
-                m20360c(stringBuffer, clsArr);
+                m20361c(stringBuffer, clsArr);
                 stringBuffer.append(")");
             } else if (clsArr.length == 0) {
                 stringBuffer.append("()");
@@ -60,28 +60,28 @@ public class C6491h {
         }
     }
 
-    public void m20361b(StringBuffer stringBuffer, Class[] clsArr) {
+    public void m20362b(StringBuffer stringBuffer, Class[] clsArr) {
         if (this.f20200c && clsArr != null && clsArr.length != 0) {
             stringBuffer.append(" throws ");
-            m20360c(stringBuffer, clsArr);
+            m20361c(stringBuffer, clsArr);
         }
     }
 
-    public void m20360c(StringBuffer stringBuffer, Class[] clsArr) {
+    public void m20361c(StringBuffer stringBuffer, Class[] clsArr) {
         for (int i = 0; i < clsArr.length; i++) {
             if (i > 0) {
                 stringBuffer.append(", ");
             }
-            stringBuffer.append(m20356g(clsArr[i]));
+            stringBuffer.append(m20357g(clsArr[i]));
         }
     }
 
-    public String m20359d(String str) {
+    public String m20360d(String str) {
         int lastIndexOf = str.lastIndexOf(45);
         return lastIndexOf == -1 ? str : str.substring(lastIndexOf + 1);
     }
 
-    public String m20358e(int i) {
+    public String m20359e(int i) {
         if (!this.f20201d) {
             return "";
         }
@@ -95,32 +95,32 @@ public class C6491h {
         return stringBuffer.toString();
     }
 
-    public String m20357f(Class cls, String str) {
-        return m20355h(cls, str, this.f20202e);
+    public String m20358f(Class cls, String str) {
+        return m20356h(cls, str, this.f20202e);
     }
 
-    public String m20356g(Class cls) {
-        return m20355h(cls, cls.getName(), this.f20198a);
+    public String m20357g(Class cls) {
+        return m20356h(cls, cls.getName(), this.f20198a);
     }
 
-    public String m20355h(Class cls, String str, boolean z) {
+    public String m20356h(Class cls, String str, boolean z) {
         if (cls == null) {
             return "ANONYMOUS";
         }
         if (cls.isArray()) {
             Class<?> componentType = cls.getComponentType();
             StringBuffer stringBuffer = new StringBuffer();
-            stringBuffer.append(m20355h(componentType, componentType.getName(), z));
+            stringBuffer.append(m20356h(componentType, componentType.getName(), z));
             stringBuffer.append("[]");
             return stringBuffer.toString();
         } else if (z) {
-            return m20354i(str).replace('$', '.');
+            return m20355i(str).replace('$', '.');
         } else {
             return str.replace('$', '.');
         }
     }
 
-    public String m20354i(String str) {
+    public String m20355i(String str) {
         int lastIndexOf = str.lastIndexOf(46);
         return lastIndexOf == -1 ? str : str.substring(lastIndexOf + 1);
     }

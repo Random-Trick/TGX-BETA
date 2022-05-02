@@ -9,7 +9,7 @@ public final class C5282b0<T> implements Iterable<C5276a0<? extends T>>, Abstrac
     public final AbstractC8077a<Iterator<T>> f17476a;
 
     public C5282b0(AbstractC8077a<? extends Iterator<? extends T>> aVar) {
-        C8298k.m12934e(aVar, "iteratorFactory");
+        C8298k.m12933e(aVar, "iteratorFactory");
         this.f17476a = aVar;
     }
 

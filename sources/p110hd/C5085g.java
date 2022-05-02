@@ -50,26 +50,26 @@ public class C5085g {
         }
     }
 
-    public static int m23978c() {
-        return C1357a0.m37542h() <= 1.0f ? 2 : 1;
+    public static int m23979c() {
+        return C1357a0.m37545h() <= 1.0f ? 2 : 1;
     }
 
-    public void m23974g(Bitmap bitmap, int i, int i2) {
+    public void m23975g(Bitmap bitmap, int i, int i2) {
         if (!this.f17116d) {
             this.f17114b[i][i2] = bitmap;
         } else if (bitmap != null) {
             bitmap.recycle();
         }
-        C1379j0.m37323j(false);
+        C1379j0.m37326j(false);
     }
 
-    public static Bitmap m23973h(String str, boolean z) {
+    public static Bitmap m23974h(String str, boolean z) {
         ImageDecoder.Source source;
-        int c = m23978c();
+        int c = m23979c();
         if (Build.VERSION.SDK_INT >= 28) {
             try {
                 if (z) {
-                    source = ImageDecoder.createSource(C1379j0.m37315n().getAssets(), str);
+                    source = ImageDecoder.createSource(C1379j0.m37318n().getAssets(), str);
                 } else {
                     source = ImageDecoder.createSource(new File(str));
                 }
@@ -79,7 +79,7 @@ public class C5085g {
             }
         } else {
             try {
-                InputStream open = z ? C1379j0.m37315n().getAssets().open(str) : C7389v0.m16599o2(str);
+                InputStream open = z ? C1379j0.m37318n().getAssets().open(str) : C7389v0.m16599o2(str);
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inJustDecodeBounds = false;
                 options.inSampleSize = c;
@@ -95,14 +95,14 @@ public class C5085g {
         return null;
     }
 
-    public Bitmap m23977d(int i, int i2) {
-        if (m23976e(i, i2)) {
+    public Bitmap m23978d(int i, int i2) {
+        if (m23977e(i, i2)) {
             return this.f17114b[i][i2];
         }
         return null;
     }
 
-    public final boolean m23976e(final int i, final int i2) {
+    public final boolean m23977e(final int i, final int i2) {
         if (this.f17116d) {
             return false;
         }
@@ -112,32 +112,32 @@ public class C5085g {
         boolean[][] zArr = this.f17115c;
         if (!zArr[i][i2]) {
             zArr[i][i2] = true;
-            C4356b0.m28201k().m28195q(new Runnable() {
+            C4356b0.m28203k().m28197q(new Runnable() {
                 @Override
                 public final void run() {
-                    C5085g.this.m23975f(i, i2);
+                    C5085g.this.m23976f(i, i2);
                 }
             });
         }
         return false;
     }
 
-    public final void m23975f(final int i, final int i2) {
+    public final void m23976f(final int i, final int i2) {
         Locale locale = Locale.US;
         String format = String.format(locale, "%d_%d.png", Integer.valueOf(i), Integer.valueOf(i2));
-        final Bitmap h = !"apple".equals(this.f17113a) ? m23973h(new File(new File(C5078d.m23993s(), this.f17113a), format).getPath(), false) : null;
+        final Bitmap h = !"apple".equals(this.f17113a) ? m23974h(new File(new File(C5078d.m23994s(), this.f17113a), format).getPath(), false) : null;
         if (h == null) {
-            h = m23973h(String.format(locale, "emoji/v%d_%s", 16, format), true);
+            h = m23974h(String.format(locale, "emoji/v%d_%s", 16, format), true);
         }
-        C1379j0.m37334d0(new Runnable() {
+        C1379j0.m37337d0(new Runnable() {
             @Override
             public final void run() {
-                C5085g.this.m23974g(h, i, i2);
+                C5085g.this.m23975g(h, i, i2);
             }
         });
     }
 
-    public void m23971j() {
+    public void m23972j() {
         Bitmap[][] bitmapArr;
         if (!this.f17116d) {
             this.f17116d = true;

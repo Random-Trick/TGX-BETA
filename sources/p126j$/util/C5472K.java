@@ -15,28 +15,28 @@ public class C5472K implements AbstractC5552p, AbstractC5525g, Iterator {
         this.f17945c = yVar;
     }
 
-    public void m22600a(AbstractC5525g gVar) {
+    public void m22601a(AbstractC5525g gVar) {
         Objects.requireNonNull(gVar);
         while (hasNext()) {
-            gVar.mo22150c(nextDouble());
+            gVar.mo22151c(nextDouble());
         }
     }
 
     @Override
-    public void mo22150c(double d) {
+    public void mo22151c(double d) {
         this.f17943a = true;
         this.f17944b = d;
     }
 
     @Override
     public void forEachRemaining(Consumer consumer) {
-        AbstractC5485a.m22573b(this, consumer);
+        AbstractC5485a.m22574b(this, consumer);
     }
 
     @Override
     public boolean hasNext() {
         if (!this.f17943a) {
-            this.f17945c.mo22123l(this);
+            this.f17945c.mo22124l(this);
         }
         return this.f17943a;
     }
@@ -46,7 +46,7 @@ public class C5472K implements AbstractC5552p, AbstractC5525g, Iterator {
         if (!AbstractC5484X.f17972a) {
             return Double.valueOf(nextDouble());
         }
-        AbstractC5484X.m22586a(C5472K.class, "{0} calling PrimitiveIterator.OfDouble.nextLong()");
+        AbstractC5484X.m22587a(C5472K.class, "{0} calling PrimitiveIterator.OfDouble.nextLong()");
         throw null;
     }
 
@@ -60,7 +60,7 @@ public class C5472K implements AbstractC5552p, AbstractC5525g, Iterator {
 
     @Override
     public void remove() {
-        Iterator.CC.m22602a();
+        Iterator.CC.m22603a();
         throw null;
     }
 }

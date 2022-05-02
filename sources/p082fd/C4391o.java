@@ -25,28 +25,28 @@ public class C4391o {
             @Override
             public void onAuthenticationError(int i, CharSequence charSequence) {
                 if (!C4392a.this.f14561c && C4391o.f14557a != null && charSequence != null) {
-                    C4392a.this.f14560b.mo28020V6(charSequence.toString(), true);
+                    C4392a.this.f14560b.mo28022V6(charSequence.toString(), true);
                 }
             }
 
             @Override
             public void onAuthenticationFailed() {
                 if (!C4392a.this.f14561c) {
-                    C4392a.this.f14560b.mo28020V6(C4403w.m27869i1(R.string.fingerprint_fail), false);
+                    C4392a.this.f14560b.mo28022V6(C4403w.m27871i1(R.string.fingerprint_fail), false);
                 }
             }
 
             @Override
             public void onAuthenticationHelp(int i, CharSequence charSequence) {
                 if (!C4392a.this.f14561c && C4391o.f14557a != null && charSequence != null) {
-                    C4392a.this.f14560b.mo28020V6(charSequence.toString(), false);
+                    C4392a.this.f14560b.mo28022V6(charSequence.toString(), false);
                 }
             }
 
             @Override
             public void onAuthenticationSucceeded(FingerprintManager.AuthenticationResult authenticationResult) {
                 if (!C4392a.this.f14561c) {
-                    C4392a.this.f14560b.mo28019e6(0);
+                    C4392a.this.f14560b.mo28021e6(0);
                 }
             }
         }
@@ -55,45 +55,45 @@ public class C4391o {
             this.f14560b = bVar;
         }
 
-        public void m28022c() {
+        public void m28024c() {
             this.f14561c = true;
         }
 
-        public FingerprintManager.AuthenticationCallback m28021d() {
+        public FingerprintManager.AuthenticationCallback m28023d() {
             return this.f14559a;
         }
     }
 
     public interface AbstractC4394b {
-        void mo28020V6(String str, boolean z);
+        void mo28022V6(String str, boolean z);
 
-        void mo28019e6(int i);
+        void mo28021e6(int i);
     }
 
-    public static void m28029b(AbstractC4394b bVar) {
+    public static void m28031b(AbstractC4394b bVar) {
         if (Build.VERSION.SDK_INT >= 23) {
-            m28028c();
-            FingerprintManager fingerprintManager = (FingerprintManager) m28027d();
+            m28030c();
+            FingerprintManager fingerprintManager = (FingerprintManager) m28029d();
             if (fingerprintManager != null) {
                 f14557a = new CancellationSignal();
                 C4392a aVar = new C4392a(bVar);
                 f14558b = aVar;
-                FingerprintManager.AuthenticationCallback d = aVar.m28021d();
+                FingerprintManager.AuthenticationCallback d = aVar.m28023d();
                 try {
                     fingerprintManager.authenticate(null, f14557a, 0, d, null);
                 } catch (Throwable th) {
                     Log.m14725e("Unable to use fingerprint sensor", th, new Object[0]);
-                    d.onAuthenticationError(-1, C4403w.m27869i1(R.string.BiometricsError));
+                    d.onAuthenticationError(-1, C4403w.m27871i1(R.string.BiometricsError));
                 }
             }
         }
     }
 
-    public static void m28028c() {
+    public static void m28030c() {
         if (Build.VERSION.SDK_INT >= 23) {
             C4392a aVar = f14558b;
             if (aVar != null) {
-                aVar.m28022c();
+                aVar.m28024c();
                 f14558b = null;
             }
             CancellationSignal cancellationSignal = f14557a;
@@ -108,20 +108,20 @@ public class C4391o {
         }
     }
 
-    public static Object m28027d() {
+    public static Object m28029d() {
         if (Build.VERSION.SDK_INT >= 23) {
-            return C1379j0.m37315n().getSystemService("fingerprint");
+            return C1379j0.m37318n().getSystemService("fingerprint");
         }
         return null;
     }
 
-    public static boolean m28026e() {
+    public static boolean m28028e() {
         FingerprintManager fingerprintManager;
-        return Build.VERSION.SDK_INT >= 23 && (fingerprintManager = (FingerprintManager) m28027d()) != null && fingerprintManager.hasEnrolledFingerprints();
+        return Build.VERSION.SDK_INT >= 23 && (fingerprintManager = (FingerprintManager) m28029d()) != null && fingerprintManager.hasEnrolledFingerprints();
     }
 
-    public static boolean m28025f() {
+    public static boolean m28027f() {
         FingerprintManager fingerprintManager;
-        return Build.VERSION.SDK_INT >= 23 && (fingerprintManager = (FingerprintManager) m28027d()) != null && fingerprintManager.isHardwareDetected();
+        return Build.VERSION.SDK_INT >= 23 && (fingerprintManager = (FingerprintManager) m28029d()) != null && fingerprintManager.isHardwareDetected();
     }
 }

@@ -11,7 +11,7 @@ public final class C1824m0 extends AbstractC1880q0<Map.Entry> {
     }
 
     @Override
-    public final Map.Entry mo35945a(int i) {
+    public final Map.Entry mo35948a(int i) {
         return new C1908s0(this.f6470N, i);
     }
 }

@@ -17,9 +17,9 @@ public final class C1806kb implements AbstractC1671bb {
 
     public C1806kb(Context context, AbstractC1960va vaVar) {
         this.f6450c = vaVar;
-        C11229a aVar = C11229a.f35947g;
-        C1165r.m38247f(context);
-        final AbstractC10357g g = C1165r.m38250c().m38246g(aVar);
+        C11229a aVar = C11229a.f35950g;
+        C1165r.m38250f(context);
+        final AbstractC10357g g = C1165r.m38253c().m38249g(aVar);
         if (aVar.mo1185a().contains(C10352b.m5368b("json"))) {
             this.f6448a = new C3896w(new AbstractC6794b() {
                 @Override
@@ -36,24 +36,24 @@ public final class C1806kb implements AbstractC1671bb {
         });
     }
 
-    public static AbstractC10353c<byte[]> m35976b(AbstractC1960va vaVar, C1731fb fbVar) {
-        int a = vaVar.mo35846a();
-        if (fbVar.m36051a() != 0) {
-            return AbstractC10353c.m5364d(fbVar.m36049c(a, false));
+    public static AbstractC10353c<byte[]> m35979b(AbstractC1960va vaVar, C1731fb fbVar) {
+        int a = vaVar.mo35849a();
+        if (fbVar.m36054a() != 0) {
+            return AbstractC10353c.m5364d(fbVar.m36052c(a, false));
         }
-        return AbstractC10353c.m5363e(fbVar.m36049c(a, false));
+        return AbstractC10353c.m5363e(fbVar.m36052c(a, false));
     }
 
     @Override
-    public final void mo35840a(C1731fb fbVar) {
-        if (this.f6450c.mo35846a() == 0) {
+    public final void mo35843a(C1731fb fbVar) {
+        if (this.f6450c.mo35849a() == 0) {
             AbstractC6794b<AbstractC10356f<byte[]>> bVar = this.f6448a;
             if (bVar != null) {
-                bVar.get().mo5362a(m35976b(this.f6450c, fbVar));
+                bVar.get().mo5362a(m35979b(this.f6450c, fbVar));
                 return;
             }
             return;
         }
-        this.f6449b.get().mo5362a(m35976b(this.f6450c, fbVar));
+        this.f6449b.get().mo5362a(m35979b(this.f6450c, fbVar));
     }
 }

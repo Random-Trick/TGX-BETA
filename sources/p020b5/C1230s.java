@@ -10,8 +10,8 @@ public final class C1230s {
     public static boolean f4562b = true;
 
     @Pure
-    public static String m37889a(String str, Throwable th) {
-        String e = m37885e(th);
+    public static String m37892a(String str, Throwable th) {
+        String e = m37888e(th);
         if (TextUtils.isEmpty(e)) {
             return str;
         }
@@ -26,30 +26,30 @@ public final class C1230s {
     }
 
     @Pure
-    public static void m37888b(String str, String str2) {
+    public static void m37891b(String str, String str2) {
         if (f4561a == 0) {
             Log.d(str, str2);
         }
     }
 
     @Pure
-    public static void m37887c(String str, String str2) {
+    public static void m37890c(String str, String str2) {
         if (f4561a <= 3) {
             Log.e(str, str2);
         }
     }
 
     @Pure
-    public static void m37886d(String str, String str2, Throwable th) {
-        m37887c(str, m37889a(str2, th));
+    public static void m37889d(String str, String str2, Throwable th) {
+        m37890c(str, m37892a(str2, th));
     }
 
     @Pure
-    public static String m37885e(Throwable th) {
+    public static String m37888e(Throwable th) {
         if (th == null) {
             return null;
         }
-        if (m37882h(th)) {
+        if (m37885h(th)) {
             return "UnknownHostException (no network)";
         }
         if (!f4562b) {
@@ -59,19 +59,19 @@ public final class C1230s {
     }
 
     @Pure
-    public static void m37884f(String str, String str2) {
+    public static void m37887f(String str, String str2) {
         if (f4561a <= 1) {
             Log.i(str, str2);
         }
     }
 
     @Pure
-    public static void m37883g(String str, String str2, Throwable th) {
-        m37884f(str, m37889a(str2, th));
+    public static void m37886g(String str, String str2, Throwable th) {
+        m37887f(str, m37892a(str2, th));
     }
 
     @Pure
-    public static boolean m37882h(Throwable th) {
+    public static boolean m37885h(Throwable th) {
         while (th != null) {
             if (th instanceof UnknownHostException) {
                 return true;
@@ -82,14 +82,14 @@ public final class C1230s {
     }
 
     @Pure
-    public static void m37881i(String str, String str2) {
+    public static void m37884i(String str, String str2) {
         if (f4561a <= 2) {
             Log.w(str, str2);
         }
     }
 
     @Pure
-    public static void m37880j(String str, String str2, Throwable th) {
-        m37881i(str, m37889a(str2, th));
+    public static void m37883j(String str, String str2, Throwable th) {
+        m37884i(str, m37892a(str2, th));
     }
 }

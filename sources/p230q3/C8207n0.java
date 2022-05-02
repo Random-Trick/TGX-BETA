@@ -7,16 +7,16 @@ import java.util.Map;
 import p006a5.C0159o;
 
 public final class C8207n0 extends IOException {
-    public final long f26566M;
-    public final C0159o f26567a;
-    public final Uri f26568b;
-    public final Map<String, List<String>> f26569c;
+    public final long f26569M;
+    public final C0159o f26570a;
+    public final Uri f26571b;
+    public final Map<String, List<String>> f26572c;
 
     public C8207n0(C0159o oVar, Uri uri, Map<String, List<String>> map, long j, Throwable th) {
         super(th);
-        this.f26567a = oVar;
-        this.f26568b = uri;
-        this.f26569c = map;
-        this.f26566M = j;
+        this.f26570a = oVar;
+        this.f26571b = uri;
+        this.f26572c = map;
+        this.f26569M = j;
     }
 }

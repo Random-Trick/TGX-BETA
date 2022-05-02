@@ -38,20 +38,20 @@ public abstract class AbstractC4067v<T extends View> {
     public final AbstractC4055l f13726b;
     public boolean f13727b0;
     public final ArrayList<Bitmap> f13720W = new ArrayList<>();
-    public final T f13728c = mo27773E();
+    public final T f13728c = mo27775E();
 
     public AbstractC4067v(Context context, AbstractC4055l lVar) {
         this.f13724a = context;
         this.f13726b = lVar;
-        m29077f();
+        m29079f();
     }
 
-    public void m29101B(C6253l lVar) {
-        m29082c0(false);
-        this.f13726b.mo29125d3(lVar);
+    public void m29103B(C6253l lVar) {
+        m29084c0(false);
+        this.f13726b.mo29127d3(lVar);
     }
 
-    public static int m29092T(int i) {
+    public static int m29094T(int i) {
         if (i == 90) {
             return 6;
         }
@@ -61,23 +61,23 @@ public abstract class AbstractC4067v<T extends View> {
         return 3;
     }
 
-    public static void m29057y(Bitmap bitmap, File file, int i, C6253l lVar) {
+    public static void m29059y(Bitmap bitmap, File file, int i, C6253l lVar) {
         if (C7389v0.m16726I(bitmap, 100, file.getPath())) {
             if (i != 0) {
-                int T = m29092T(i);
+                int T = m29094T(i);
                 try {
                     C5828a aVar = new C5828a(file.getAbsolutePath());
-                    aVar.m22032b0("Orientation", Integer.toString(T));
-                    aVar.m22039W();
+                    aVar.m22033b0("Orientation", Integer.toString(T));
+                    aVar.m22040W();
                 } catch (Throwable th) {
                     Log.m14712w(Log.TAG_CAMERA, "Unable to set exif orientation: %d", th, Integer.valueOf(T));
                 }
             }
-            lVar.m20835m1();
+            lVar.m20836m1();
         }
     }
 
-    public final Bitmap m29099D(int i, int i2) {
+    public final Bitmap m29101D(int i, int i2) {
         Bitmap bitmap;
         Bitmap bitmap2;
         synchronized (this) {
@@ -113,25 +113,25 @@ public abstract class AbstractC4067v<T extends View> {
         return bitmap == null ? Bitmap.createBitmap(i, i2, Bitmap.Config.ARGB_8888) : bitmap;
     }
 
-    public abstract T mo27773E();
+    public abstract T mo27775E();
 
-    public abstract void mo27772F(int i);
+    public abstract void mo27774F(int i);
 
-    public abstract void mo27771G();
+    public abstract void mo27773G();
 
-    public boolean m29098H(Bitmap bitmap, int i, int i2, final int i3) {
+    public boolean m29100H(Bitmap bitmap, int i, int i2, final int i3) {
         final Bitmap bitmap2;
         int i4 = i;
         int i5 = i2;
         if (bitmap == null) {
-            m29056z(false);
+            m29058z(false);
             return false;
         }
         int width = bitmap.getWidth();
         int height = bitmap.getHeight();
-        final File r = m29063r(false);
+        final File r = m29065r(false);
         if (r == null) {
-            m29056z(false);
+            m29058z(false);
             return false;
         }
         if (i4 > width || i5 > height) {
@@ -149,128 +149,128 @@ public abstract class AbstractC4067v<T extends View> {
             bitmap2 = Bitmap.createBitmap(bitmap, i6 != width ? (width - i6) / 2 : 0, i7 != height ? (height - i7) / 2 : 0, i6, i7, (Matrix) null, false);
         }
         final C6253l lVar = new C6253l(-1L, r.getPath(), System.currentTimeMillis(), bitmap2.getWidth(), bitmap2.getHeight(), -1L, false);
-        lVar.mo20874q0(i3);
-        lVar.m20839i1();
-        lVar.m20908l0();
-        lVar.m20906m0();
-        C6259q.m20786c().m20785d(lVar, bitmap2);
-        C7907b.m14362k().m14361l(new Runnable() {
+        lVar.mo20875q0(i3);
+        lVar.m20840i1();
+        lVar.m20909l0();
+        lVar.m20907m0();
+        C6259q.m20787c().m20786d(lVar, bitmap2);
+        C7907b.m14361k().m14360l(new Runnable() {
             @Override
             public final void run() {
-                AbstractC4067v.m29057y(bitmap2, r, i3, lVar);
+                AbstractC4067v.m29059y(bitmap2, r, i3, lVar);
             }
         });
-        m29102A(lVar, false);
+        m29104A(lVar, false);
         return bitmap2 == bitmap;
     }
 
-    public void mo27770I(int i, int i2) {
+    public void mo27772I(int i, int i2) {
     }
 
-    public abstract void mo27769J(float f);
+    public abstract void mo27771J(float f);
 
-    public abstract void mo27768K();
+    public abstract void mo27770K();
 
-    public void m29097L() {
+    public void m29099L() {
         if (this.f13727b0) {
             this.f13727b0 = false;
-            m29089X(this.f13723Z, this.f13725a0);
+            m29091X(this.f13723Z, this.f13725a0);
         }
     }
 
-    public void m29096M(Bitmap bitmap) {
+    public void m29098M(Bitmap bitmap) {
         if (bitmap == null || bitmap.isRecycled()) {
-            m29097L();
+            m29099L();
         } else if (this.f13727b0) {
             bitmap.eraseColor(0);
             this.f13727b0 = false;
             this.f13722Y = bitmap;
-            m29089X(this.f13723Z, this.f13725a0);
+            m29091X(this.f13723Z, this.f13725a0);
         }
     }
 
-    public abstract boolean mo27767N(int i);
+    public abstract boolean mo27769N(int i);
 
-    public final void m29056z(final boolean z) {
-        if (!C1379j0.m37357K()) {
-            C1379j0.m37334d0(new Runnable() {
+    public final void m29058z(final boolean z) {
+        if (!C1379j0.m37360K()) {
+            C1379j0.m37337d0(new Runnable() {
                 @Override
                 public final void run() {
-                    AbstractC4067v.this.m29056z(z);
+                    AbstractC4067v.this.m29058z(z);
                 }
             });
         } else if (z) {
-            m29100C(false, -1L);
-            C1379j0.m37292y0(R.string.TakeVideoError, 0);
+            m29102C(false, -1L);
+            C1379j0.m37295y0(R.string.TakeVideoError, 0);
         } else {
-            m29073h0(false);
-            C1379j0.m37292y0(R.string.TakePhotoError, 0);
+            m29075h0(false);
+            C1379j0.m37295y0(R.string.TakePhotoError, 0);
         }
     }
 
-    public void m29102A(final C6253l lVar, final boolean z) {
-        if (!C1379j0.m37357K()) {
-            C1379j0.m37334d0(new Runnable() {
+    public void m29104A(final C6253l lVar, final boolean z) {
+        if (!C1379j0.m37360K()) {
+            C1379j0.m37337d0(new Runnable() {
                 @Override
                 public final void run() {
-                    AbstractC4067v.this.m29102A(lVar, z);
+                    AbstractC4067v.this.m29104A(lVar, z);
                 }
             });
         } else if (lVar == null) {
-            m29056z(z);
+            m29058z(z);
         } else {
-            if (!this.f13726b.mo29133E1()) {
+            if (!this.f13726b.mo29135E1()) {
                 if (Build.VERSION.SDK_INT >= 29) {
-                    C7389v0.m16702O(lVar.mo20875q(), 0, false, new AbstractC5918j() {
+                    C7389v0.m16702O(lVar.mo20876q(), 0, false, new AbstractC5918j() {
                         @Override
                         public final void mo1330a(Object obj) {
-                            C6253l.this.m20830r1((File) obj);
+                            C6253l.this.m20831r1((File) obj);
                         }
                     });
                 } else {
-                    C7389v0.m16610m(new File(lVar.mo20875q()));
+                    C7389v0.m16610m(new File(lVar.mo20876q()));
                 }
             }
             if (z) {
-                m29082c0(true);
-                m29100C(false, -1L);
-                C1379j0.m37332e0(new Runnable() {
+                m29084c0(true);
+                m29102C(false, -1L);
+                C1379j0.m37335e0(new Runnable() {
                     @Override
                     public final void run() {
-                        AbstractC4067v.this.m29101B(lVar);
+                        AbstractC4067v.this.m29103B(lVar);
                     }
                 }, 200L);
                 return;
             }
-            m29073h0(false);
-            this.f13726b.mo29125d3(lVar);
+            m29075h0(false);
+            this.f13726b.mo29127d3(lVar);
         }
     }
 
-    public abstract void mo27766Q(int i, int i2, int i3);
+    public abstract void mo27768Q(int i, int i2, int i3);
 
-    public final void m29093R(float f) {
-        this.f13726b.mo29136A2(f);
+    public final void m29095R(float f) {
+        this.f13726b.mo29138A2(f);
     }
 
-    public abstract void mo27765S();
+    public abstract void mo27767S();
 
-    public abstract void mo27764U();
+    public abstract void mo27766U();
 
-    public final boolean m29091V() {
+    public final boolean m29093V() {
         return this.f13711N;
     }
 
-    public void m29090W(int i, int i2) {
+    public void m29092W(int i, int i2) {
         this.f13723Z = i;
         this.f13725a0 = i2;
         if (i > 0 && i2 > 0) {
-            m29088Y(i, i2);
-            m29089X(i, i2);
+            m29090Y(i, i2);
+            m29091X(i, i2);
         }
     }
 
-    public final void m29089X(int i, int i2) {
+    public final void m29091X(int i, int i2) {
         Bitmap bitmap;
         if (!this.f13727b0) {
             float f = i;
@@ -293,17 +293,17 @@ public abstract class AbstractC4067v<T extends View> {
                     bitmap3 = null;
                     bitmap = bitmap3;
                 } else {
-                    bitmap = m29099D(i3, i4);
+                    bitmap = m29101D(i3, i4);
                 }
                 if (bitmap3 != null && !bitmap3.isRecycled()) {
-                    m29087Z(bitmap3);
+                    m29089Z(bitmap3);
                 }
                 this.f13722Y = bitmap;
             }
         }
     }
 
-    public final void m29088Y(int i, int i2) {
+    public final void m29090Y(int i, int i2) {
         float f = i;
         float f2 = i2;
         float min = Math.min(160.0f / f, 160.0f / f2);
@@ -311,16 +311,16 @@ public abstract class AbstractC4067v<T extends View> {
         int i4 = (int) (f2 * min);
         Bitmap bitmap = this.f13721X;
         if (bitmap == null || bitmap.isRecycled() || this.f13721X.getWidth() != i3 || this.f13721X.getHeight() != i4) {
-            Bitmap D = m29099D(i3, i4);
+            Bitmap D = m29101D(i3, i4);
             Bitmap bitmap2 = this.f13721X;
             if (bitmap2 != null && !bitmap2.isRecycled()) {
-                m29087Z(this.f13721X);
+                m29089Z(this.f13721X);
             }
             this.f13721X = D;
         }
     }
 
-    public void m29087Z(Bitmap bitmap) {
+    public void m29089Z(Bitmap bitmap) {
         if (C7389v0.m16756A1(bitmap)) {
             synchronized (this) {
                 this.f13720W.add(bitmap);
@@ -328,125 +328,125 @@ public abstract class AbstractC4067v<T extends View> {
         }
     }
 
-    public final void m29085a0() {
-        m29074g0(false);
-        mo27768K();
+    public final void m29087a0() {
+        m29076g0(false);
+        mo27770K();
     }
 
-    public abstract void mo27763b0();
+    public abstract void mo27765b0();
 
-    public final void m29082c0(boolean z) {
+    public final void m29084c0(boolean z) {
         if (this.f13718U != z) {
             this.f13718U = z;
-            m29075g();
+            m29077g();
         }
     }
 
-    public final void m29080d0(int i) {
+    public final void m29082d0(int i) {
         this.f13710M = i;
     }
 
-    public void m29078e0(boolean z) {
+    public void m29080e0(boolean z) {
         this.f13712O = z;
     }
 
-    public final void m29077f() {
-        int a1 = C1379j0.m37307r(this.f13724a).m14513a1();
+    public final void m29079f() {
+        int a1 = C1379j0.m37310r(this.f13724a).m14512a1();
         if (this.f13713P != a1) {
             this.f13713P = a1;
-            this.f13726b.mo29129N();
-            mo27772F(this.f13713P);
+            this.f13726b.mo29131N();
+            mo27774F(this.f13713P);
         }
     }
 
-    public final void m29076f0(int i, int i2) {
+    public final void m29078f0(int i, int i2) {
         if (this.f13714Q != i || this.f13715R != i2) {
             this.f13714Q = i;
             this.f13715R = i2;
-            mo27770I(i, i2);
+            mo27772I(i, i2);
         }
     }
 
-    public final void m29075g() {
+    public final void m29077g() {
         boolean z = this.f13716S || this.f13717T || this.f13718U;
         if (this.f13719V != z) {
             this.f13719V = z;
-            this.f13726b.mo29132F3(z);
+            this.f13726b.mo29134F3(z);
         }
     }
 
-    public final void m29074g0(boolean z) {
+    public final void m29076g0(boolean z) {
         this.f13711N = z;
     }
 
-    public abstract void mo27762h();
+    public abstract void mo27764h();
 
-    public final void m29073h0(boolean z) {
+    public final void m29075h0(boolean z) {
         if (this.f13716S != z) {
             this.f13716S = z;
-            m29075g();
+            m29077g();
         }
     }
 
-    public abstract void mo27761i();
+    public abstract void mo27763i();
 
-    public final void m29100C(final boolean z, final long j) {
-        if (!C1379j0.m37357K()) {
-            C1379j0.m37334d0(new Runnable() {
+    public final void m29102C(final boolean z, final long j) {
+        if (!C1379j0.m37360K()) {
+            C1379j0.m37337d0(new Runnable() {
                 @Override
                 public final void run() {
-                    AbstractC4067v.this.m29100C(z, j);
+                    AbstractC4067v.this.m29102C(z, j);
                 }
             });
         } else if (this.f13717T != z) {
             this.f13717T = z;
-            m29075g();
+            m29077g();
             if (z) {
-                this.f13726b.mo29118u6(j);
+                this.f13726b.mo29120u6(j);
             } else {
-                this.f13726b.mo29134D0();
+                this.f13726b.mo29136D0();
             }
         }
     }
 
-    public final void m29071j() {
-        mo27771G();
+    public final void m29073j() {
+        mo27773G();
     }
 
-    public boolean m29070j0() {
+    public boolean m29072j0() {
         return this.f13712O;
     }
 
-    public abstract boolean mo27760k(Bitmap bitmap);
+    public abstract boolean mo27762k(Bitmap bitmap);
 
-    public final boolean m29069k0(int i) {
+    public final boolean m29071k0(int i) {
         if (this.f13716S || this.f13717T || C10536ab.m4667o1().m4713c0().m4537z0()) {
             return false;
         }
-        return mo27767N(i);
+        return mo27769N(i);
     }
 
-    public abstract float mo27759l();
+    public abstract float mo27761l();
 
-    public abstract void mo27758l0();
+    public abstract void mo27760l0();
 
-    public final int m29068m() {
+    public final int m29070m() {
         return this.f13713P;
     }
 
-    public abstract void mo27757m0();
+    public abstract void mo27759m0();
 
-    public final int m29067n() {
+    public final int m29069n() {
         return this.f13710M;
     }
 
-    public final Bitmap m29066n0() {
+    public final Bitmap m29068n0() {
         if (!C7389v0.m16756A1(this.f13721X)) {
             return null;
         }
         try {
             this.f13721X.eraseColor(0);
-            if (mo27760k(this.f13721X) && this.f13721X.getPixel(0, 0) != 0 && (m29070j0() || C7389v0.m16590r(this.f13721X, 3, 1))) {
+            if (mo27762k(this.f13721X) && this.f13721X.getPixel(0, 0) != 0 && (m29072j0() || C7389v0.m16590r(this.f13721X, 3, 1))) {
                 return this.f13721X;
             }
         } catch (Throwable th) {
@@ -455,24 +455,24 @@ public abstract class AbstractC4067v<T extends View> {
         return null;
     }
 
-    public abstract float mo27756o();
+    public abstract float mo27758o();
 
-    public final void m29065o0(int i, int i2, int i3) {
+    public final void m29067o0(int i, int i2, int i3) {
         if (!this.f13716S) {
-            m29073h0(true);
-            mo27766Q(i, i2, i3);
+            m29075h0(true);
+            mo27768Q(i, i2, i3);
         }
     }
 
-    public abstract float mo27755p();
+    public abstract float mo27757p();
 
-    public Bitmap m29064p0() {
-        m29089X(this.f13723Z, this.f13725a0);
+    public Bitmap m29066p0() {
+        m29091X(this.f13723Z, this.f13725a0);
         Bitmap bitmap = this.f13722Y;
         if (bitmap == null) {
             return null;
         }
-        mo27760k(bitmap);
+        mo27762k(bitmap);
         if (this.f13722Y.getPixel(0, 0) == 0) {
             return null;
         }
@@ -482,26 +482,26 @@ public abstract class AbstractC4067v<T extends View> {
         return bitmap2;
     }
 
-    public abstract float mo27754q();
+    public abstract float mo27756q();
 
-    public final File m29063r(boolean z) {
-        boolean z2 = Build.VERSION.SDK_INT >= 29 || this.f13726b.mo29133E1();
+    public final File m29065r(boolean z) {
+        boolean z2 = Build.VERSION.SDK_INT >= 29 || this.f13726b.mo29135E1();
         if (z) {
             return C7389v0.m16609m0(z2);
         }
         return C7389v0.m16613l0(z2);
     }
 
-    public final int m29062s() {
+    public final int m29064s() {
         return this.f13715R;
     }
 
-    public final int m29061t() {
+    public final int m29063t() {
         return this.f13714Q;
     }
 
-    public final int m29060u() {
-        int m = m29068m();
+    public final int m29062u() {
+        int m = m29070m();
         if (m == 0) {
             return 0;
         }
@@ -514,16 +514,16 @@ public abstract class AbstractC4067v<T extends View> {
         if (m == 270) {
             return 3;
         }
-        throw new IllegalStateException("displayRotation = " + m29068m());
+        throw new IllegalStateException("displayRotation = " + m29070m());
     }
 
-    public final T m29059v() {
+    public final T m29061v() {
         return this.f13728c;
     }
 
-    public abstract boolean mo27747w();
+    public abstract boolean mo27749w();
 
-    public final boolean m29058x() {
+    public final boolean m29060x() {
         return this.f13717T;
     }
 }

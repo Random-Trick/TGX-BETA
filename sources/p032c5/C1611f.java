@@ -29,7 +29,7 @@ public final class C1611f extends Surface {
             super("ExoPlayer:DummySurface");
         }
 
-        public C1611f m36246a(int i) {
+        public C1611f m36249a(int i) {
             boolean z;
             start();
             this.f5941b = new Handler(getLooper(), this);
@@ -52,27 +52,27 @@ public final class C1611f extends Surface {
             if (runtimeException == null) {
                 Error error = this.f5942c;
                 if (error == null) {
-                    return (C1611f) C1186a.m38185e(this.f5939N);
+                    return (C1611f) C1186a.m38188e(this.f5939N);
                 }
                 throw error;
             }
             throw runtimeException;
         }
 
-        public final void m36245b(int i) {
-            C1186a.m38185e(this.f5940a);
-            this.f5940a.m38038h(i);
-            this.f5939N = new C1611f(this, this.f5940a.m38039g(), i != 0);
+        public final void m36248b(int i) {
+            C1186a.m38188e(this.f5940a);
+            this.f5940a.m38041h(i);
+            this.f5939N = new C1611f(this, this.f5940a.m38042g(), i != 0);
         }
 
-        public void m36244c() {
-            C1186a.m38185e(this.f5941b);
+        public void m36247c() {
+            C1186a.m38188e(this.f5941b);
             this.f5941b.sendEmptyMessage(2);
         }
 
-        public final void m36243d() {
-            C1186a.m38185e(this.f5940a);
-            this.f5940a.m38037i();
+        public final void m36246d() {
+            C1186a.m38188e(this.f5940a);
+            this.f5940a.m38040i();
         }
 
         @Override
@@ -81,18 +81,18 @@ public final class C1611f extends Surface {
             try {
                 if (i == 1) {
                     try {
-                        m36245b(message.arg1);
+                        m36248b(message.arg1);
                         synchronized (this) {
                             notify();
                         }
                     } catch (Error e) {
-                        C1230s.m37886d("DummySurface", "Failed to initialize dummy surface", e);
+                        C1230s.m37889d("DummySurface", "Failed to initialize dummy surface", e);
                         this.f5942c = e;
                         synchronized (this) {
                             notify();
                         }
                     } catch (RuntimeException e2) {
-                        C1230s.m37886d("DummySurface", "Failed to initialize dummy surface", e2);
+                        C1230s.m37889d("DummySurface", "Failed to initialize dummy surface", e2);
                         this.f5938M = e2;
                         synchronized (this) {
                             notify();
@@ -103,7 +103,7 @@ public final class C1611f extends Surface {
                     return true;
                 } else {
                     try {
-                        m36243d();
+                        m36246d();
                     } finally {
                         try {
                             return true;
@@ -121,19 +121,19 @@ public final class C1611f extends Surface {
         }
     }
 
-    public static int m36249a(Context context) {
-        if (C1217m.m37929f(context)) {
-            return C1217m.m37928g() ? 1 : 2;
+    public static int m36252a(Context context) {
+        if (C1217m.m37932f(context)) {
+            return C1217m.m37931g() ? 1 : 2;
         }
         return 0;
     }
 
-    public static synchronized boolean m36248b(Context context) {
+    public static synchronized boolean m36251b(Context context) {
         boolean z;
         synchronized (C1611f.class) {
             z = true;
             if (!f5934N) {
-                f5933M = m36249a(context);
+                f5933M = m36252a(context);
                 f5934N = true;
             }
             if (f5933M == 0) {
@@ -143,14 +143,14 @@ public final class C1611f extends Surface {
         return z;
     }
 
-    public static C1611f m36247c(Context context, boolean z) {
+    public static C1611f m36250c(Context context, boolean z) {
         int i = 0;
-        C1186a.m38184f(!z || m36248b(context));
+        C1186a.m38187f(!z || m36251b(context));
         HandlerThreadC1613b bVar = new HandlerThreadC1613b();
         if (z) {
             i = f5933M;
         }
-        return bVar.m36246a(i);
+        return bVar.m36249a(i);
     }
 
     @Override
@@ -158,7 +158,7 @@ public final class C1611f extends Surface {
         super.release();
         synchronized (this.f5936b) {
             if (!this.f5937c) {
-                this.f5936b.m36244c();
+                this.f5936b.m36247c();
                 this.f5937c = true;
             }
         }

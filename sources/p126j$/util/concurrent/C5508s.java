@@ -13,11 +13,11 @@ public final class C5508s extends C5502m {
     }
 
     @Override
-    public C5502m mo22511a(int i, Object obj) {
-        return m22510b(i, obj, null);
+    public C5502m mo22512a(int i, Object obj) {
+        return m22511b(i, obj, null);
     }
 
-    public final C5508s m22510b(int i, Object obj, Class cls) {
+    public final C5508s m22511b(int i, Object obj, Class cls) {
         int d;
         if (obj == null) {
             return null;
@@ -35,8 +35,8 @@ public final class C5508s extends C5502m {
                     }
                     if (sVar2 != null) {
                         if (sVar3 != null) {
-                            if ((cls == null && (cls = ConcurrentHashMap.m22550c(obj)) == null) || (d = ConcurrentHashMap.m22549d(cls, obj, obj2)) == 0) {
-                                C5508s b = sVar3.m22510b(i, obj, cls);
+                            if ((cls == null && (cls = ConcurrentHashMap.m22551c(obj)) == null) || (d = ConcurrentHashMap.m22550d(cls, obj, obj2)) == 0) {
+                                C5508s b = sVar3.m22511b(i, obj, cls);
                                 if (b != null) {
                                     return b;
                                 }

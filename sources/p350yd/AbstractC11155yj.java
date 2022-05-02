@@ -8,7 +8,7 @@ import p350yd.AbstractC10596d1;
 import p350yd.C11059v7;
 
 public abstract class AbstractC11155yj extends AbstractC10596d1<Long> implements C11059v7.AbstractC11068i, C11059v7.AbstractC11069j {
-    public final C5323f f35785U = new C5323f();
+    public final C5323f f35788U = new C5323f();
 
     public interface AbstractC11156a extends AbstractC10596d1.AbstractC10598b<Long> {
     }
@@ -32,14 +32,14 @@ public abstract class AbstractC11155yj extends AbstractC10596d1<Long> implements
     }
 
     public void m1338i0(TdApi.User user) {
-        int w = m4492w(Long.valueOf(user.f25439id));
+        int w = m4492w(Long.valueOf(user.f25442id));
         if (w != -1) {
             m4513M(w, 0);
         }
     }
 
     public void m1337j0(long j, Runnable runnable) {
-        if (this.f35785U.m23260m(j)) {
+        if (this.f35788U.m23261m(j)) {
             runnable.run();
         }
     }
@@ -61,7 +61,7 @@ public abstract class AbstractC11155yj extends AbstractC10596d1<Long> implements
 
     @Override
     public void mo1348P1(final TdApi.User user) {
-        m1336k0(user.f25439id, new Runnable() {
+        m1336k0(user.f25442id, new Runnable() {
             @Override
             public final void run() {
                 AbstractC11155yj.this.m1338i0(user);
@@ -75,7 +75,7 @@ public abstract class AbstractC11155yj extends AbstractC10596d1<Long> implements
         long[] jArr = users.userIds;
         ArrayList arrayList = new ArrayList(jArr.length);
         for (long j : jArr) {
-            if (this.f35785U.m23262h(j)) {
+            if (this.f35788U.m23263h(j)) {
                 arrayList.add(Long.valueOf(j));
             }
         }
@@ -84,12 +84,12 @@ public abstract class AbstractC11155yj extends AbstractC10596d1<Long> implements
 
     @Override
     public void mo1346a0() {
-        this.f33972a.m2480e2().m1732I(this);
+        this.f33975a.m2480e2().m1732I(this);
     }
 
     @Override
     public void mo1345b0() {
-        this.f33972a.m2480e2().m1710N1(this);
+        this.f33975a.m2480e2().m1710N1(this);
     }
 
     public final void m1336k0(final long j, final Runnable runnable) {

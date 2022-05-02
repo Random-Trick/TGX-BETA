@@ -3,20 +3,20 @@ package p364zd;
 import org.thunderdog.challegram.R;
 
 public abstract class AbstractC11509a0 implements AbstractC11531p {
-    public final int f36524a;
+    public final int f36526a;
 
     public AbstractC11509a0(int i) {
-        this.f36524a = i;
+        this.f36526a = i;
     }
 
     @Override
     public final int mo96a() {
-        return this.f36524a;
+        return this.f36526a;
     }
 
     @Override
     public final String mo95b() {
-        return C11520h.m288l(C11520h.m278q(this.f36524a));
+        return C11520h.m288l(C11520h.m278q(this.f36526a));
     }
 
     @Override
@@ -30,7 +30,7 @@ public abstract class AbstractC11509a0 implements AbstractC11531p {
             return 0.0f;
         }
         if (i == R.id.theme_property_wallpaperId) {
-            return C11520h.m278q(this.f36524a);
+            return C11520h.m278q(this.f36526a);
         }
         throw C11524j.m247D0(i, "propertyId");
     }

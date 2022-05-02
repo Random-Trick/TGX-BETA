@@ -12,12 +12,12 @@ public final class C0096e implements AbstractC8965l {
     @Override
     public final AbstractC8958f[] mo1155a() {
         AbstractC8958f[] m;
-        m = C0098g.m42351m();
+        m = C0098g.m42354m();
         return m;
     }
 
     @Override
     public AbstractC8958f[] mo1154b(Uri uri, Map map) {
-        return C8964k.m10827a(this, uri, map);
+        return C8964k.m10826a(this, uri, map);
     }
 }

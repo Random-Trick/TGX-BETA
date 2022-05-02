@@ -5,7 +5,7 @@ import java.util.Comparator;
 import org.thunderdog.challegram.Log;
 
 public final class C7370m implements Comparator {
-    public static final C7370m f23296a = new C7370m();
+    public static final C7370m f23299a = new C7370m();
 
     @Override
     public final int compare(Object obj, Object obj2) {

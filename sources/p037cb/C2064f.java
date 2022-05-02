@@ -4,11 +4,11 @@ import android.os.Build;
 import p039d.C3563j;
 
 public final class C2064f {
-    public static final String m35725a() {
-        return m35723c(0, 1, null);
+    public static final String m35728a() {
+        return m35726c(0, 1, null);
     }
 
-    public static final String m35724b(int i) {
+    public static final String m35727b(int i) {
         if (i == 10000) {
             return "Magic Version";
         }
@@ -60,14 +60,14 @@ public final class C2064f {
         }
     }
 
-    public static String m35723c(int i, int i2, Object obj) {
+    public static String m35726c(int i, int i2, Object obj) {
         if ((i2 & 1) != 0) {
             i = Build.VERSION.SDK_INT;
         }
-        return m35724b(i);
+        return m35727b(i);
     }
 
-    public static final String m35722d(int i) {
+    public static final String m35725d(int i) {
         if (i == 10000) {
             return "Magic Version";
         }

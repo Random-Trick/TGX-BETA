@@ -61,30 +61,30 @@ public final class C6105e3 implements AbstractC6132k1 {
         this.f19357f = Collections.unmodifiableMap(aVar2);
     }
 
-    public static boolean m21328l(C5217a aVar) {
-        return aVar != null && aVar.m23611f();
+    public static boolean m21329l(C5217a aVar) {
+        return aVar != null && aVar.m23612f();
     }
 
-    public static C6105e3 m21327m(Context context, C6156q0 q0Var, Lock lock, Looper looper, C5221e eVar, Map<C5850a.C5853c<?>, C5850a.AbstractC5859f> map, C6336e eVar2, Map<C5850a<?>, Boolean> map2, C5850a.AbstractC5851a<? extends AbstractC5891f, C5886a> aVar, ArrayList<C6195z2> arrayList) {
+    public static C6105e3 m21328m(Context context, C6156q0 q0Var, Lock lock, Looper looper, C5221e eVar, Map<C5850a.C5853c<?>, C5850a.AbstractC5859f> map, C6336e eVar2, Map<C5850a<?>, Boolean> map2, C5850a.AbstractC5851a<? extends AbstractC5891f, C5886a> aVar, ArrayList<C6195z2> arrayList) {
         C6024a aVar2 = new C6024a();
         C6024a aVar3 = new C6024a();
         C5850a.AbstractC5859f fVar = null;
         for (Map.Entry<C5850a.C5853c<?>, C5850a.AbstractC5859f> entry : map.entrySet()) {
             C5850a.AbstractC5859f value = entry.getValue();
-            if (true == value.mo21249b()) {
+            if (true == value.mo21250b()) {
                 fVar = value;
             }
-            if (value.mo20626t()) {
+            if (value.mo20627t()) {
                 aVar2.put(entry.getKey(), value);
             } else {
                 aVar3.put(entry.getKey(), value);
             }
         }
-        C6378r.m20503n(!aVar2.isEmpty(), "CompositeGoogleApiClient should not be used without any APIs that require sign-in.");
+        C6378r.m20504n(!aVar2.isEmpty(), "CompositeGoogleApiClient should not be used without any APIs that require sign-in.");
         C6024a aVar4 = new C6024a();
         C6024a aVar5 = new C6024a();
         for (C5850a<?> aVar6 : map2.keySet()) {
-            C5850a.C5853c<?> c = aVar6.m21935c();
+            C5850a.C5853c<?> c = aVar6.m21936c();
             if (aVar2.containsKey(c)) {
                 aVar4.put(aVar6, map2.get(aVar6));
             } else if (aVar3.containsKey(c)) {
@@ -109,10 +109,10 @@ public final class C6105e3 implements AbstractC6132k1 {
         return new C6105e3(context, q0Var, lock, looper, eVar, aVar2, aVar3, eVar2, aVar, fVar, arrayList2, arrayList3, aVar4, aVar5);
     }
 
-    public static void m21325o(C6105e3 e3Var) {
+    public static void m21326o(C6105e3 e3Var) {
         C5217a aVar;
-        if (m21328l(e3Var.f19361j)) {
-            if (m21328l(e3Var.f19362k) || e3Var.m21331i()) {
+        if (m21329l(e3Var.f19361j)) {
+            if (m21329l(e3Var.f19362k) || e3Var.m21332i()) {
                 int i = e3Var.f19365n;
                 if (i != 1) {
                     if (i != 2) {
@@ -120,9 +120,9 @@ public final class C6105e3 implements AbstractC6132k1 {
                         e3Var.f19365n = 0;
                         return;
                     }
-                    ((C6156q0) C6378r.m20506k(e3Var.f19353b)).mo21177b(e3Var.f19360i);
+                    ((C6156q0) C6378r.m20507k(e3Var.f19353b)).mo21178b(e3Var.f19360i);
                 }
-                e3Var.m21332h();
+                e3Var.m21333h();
                 e3Var.f19365n = 0;
                 return;
             }
@@ -131,26 +131,26 @@ public final class C6105e3 implements AbstractC6132k1 {
                 return;
             }
             if (e3Var.f19365n == 1) {
-                e3Var.m21332h();
+                e3Var.m21333h();
                 return;
             }
-            e3Var.m21315y(aVar2);
-            e3Var.f19355d.mo21116c();
-        } else if (e3Var.f19361j == null || !m21328l(e3Var.f19362k)) {
+            e3Var.m21316y(aVar2);
+            e3Var.f19355d.mo21117c();
+        } else if (e3Var.f19361j == null || !m21329l(e3Var.f19362k)) {
             C5217a aVar3 = e3Var.f19361j;
             if (aVar3 != null && (aVar = e3Var.f19362k) != null) {
                 if (e3Var.f19356e.f19565m < e3Var.f19355d.f19565m) {
                     aVar3 = aVar;
                 }
-                e3Var.m21315y(aVar3);
+                e3Var.m21316y(aVar3);
             }
         } else {
-            e3Var.f19356e.mo21116c();
-            e3Var.m21315y((C5217a) C6378r.m20506k(e3Var.f19361j));
+            e3Var.f19356e.mo21117c();
+            e3Var.m21316y((C5217a) C6378r.m20507k(e3Var.f19361j));
         }
     }
 
-    public static void m21324p(C6105e3 e3Var, Bundle bundle) {
+    public static void m21325p(C6105e3 e3Var, Bundle bundle) {
         Bundle bundle2 = e3Var.f19360i;
         if (bundle2 == null) {
             e3Var.f19360i = bundle;
@@ -159,120 +159,120 @@ public final class C6105e3 implements AbstractC6132k1 {
         }
     }
 
-    public static void m21319u(C6105e3 e3Var, int i, boolean z) {
-        e3Var.f19353b.mo21176c(i, z);
+    public static void m21320u(C6105e3 e3Var, int i, boolean z) {
+        e3Var.f19353b.mo21177c(i, z);
         e3Var.f19362k = null;
         e3Var.f19361j = null;
     }
 
     @Override
     @GuardedBy("mLock")
-    public final void mo21118a() {
+    public final void mo21119a() {
         this.f19365n = 2;
         this.f19363l = false;
         this.f19362k = null;
         this.f19361j = null;
-        this.f19355d.mo21118a();
-        this.f19356e.mo21118a();
+        this.f19355d.mo21119a();
+        this.f19356e.mo21119a();
     }
 
     @Override
     @GuardedBy("mLock")
-    public final <A extends C5850a.AbstractC5852b, T extends AbstractC3487a<? extends AbstractC5876k, A>> T mo21117b(T t) {
-        if (!m21330j(t)) {
-            return (T) this.f19355d.mo21117b(t);
+    public final <A extends C5850a.AbstractC5852b, T extends AbstractC3487a<? extends AbstractC5876k, A>> T mo21118b(T t) {
+        if (!m21331j(t)) {
+            return (T) this.f19355d.mo21118b(t);
         }
-        if (!m21331i()) {
-            return (T) this.f19356e.mo21117b(t);
+        if (!m21332i()) {
+            return (T) this.f19356e.mo21118b(t);
         }
-        t.m30370w(new Status(4, (String) null, m21329k()));
+        t.m30372w(new Status(4, (String) null, m21330k()));
         return t;
     }
 
     @Override
     @GuardedBy("mLock")
-    public final void mo21116c() {
+    public final void mo21117c() {
         this.f19362k = null;
         this.f19361j = null;
         this.f19365n = 0;
-        this.f19355d.mo21116c();
-        this.f19356e.mo21116c();
-        m21332h();
+        this.f19355d.mo21117c();
+        this.f19356e.mo21117c();
+        m21333h();
     }
 
     @Override
-    public final void mo21115d(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
+    public final void mo21116d(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
         printWriter.append((CharSequence) str).append("authClient").println(":");
-        this.f19356e.mo21115d(String.valueOf(str).concat("  "), fileDescriptor, printWriter, strArr);
+        this.f19356e.mo21116d(String.valueOf(str).concat("  "), fileDescriptor, printWriter, strArr);
         printWriter.append((CharSequence) str).append("anonClient").println(":");
-        this.f19355d.mo21115d(String.valueOf(str).concat("  "), fileDescriptor, printWriter, strArr);
+        this.f19355d.mo21116d(String.valueOf(str).concat("  "), fileDescriptor, printWriter, strArr);
     }
 
     @Override
     @GuardedBy("mLock")
-    public final <A extends C5850a.AbstractC5852b, R extends AbstractC5876k, T extends AbstractC3487a<R, A>> T mo21114e(T t) {
-        if (!m21330j(t)) {
-            this.f19355d.mo21114e(t);
+    public final <A extends C5850a.AbstractC5852b, R extends AbstractC5876k, T extends AbstractC3487a<R, A>> T mo21115e(T t) {
+        if (!m21331j(t)) {
+            this.f19355d.mo21115e(t);
             return t;
-        } else if (m21331i()) {
-            t.m30370w(new Status(4, (String) null, m21329k()));
+        } else if (m21332i()) {
+            t.m30372w(new Status(4, (String) null, m21330k()));
             return t;
         } else {
-            this.f19356e.mo21114e(t);
+            this.f19356e.mo21115e(t);
             return t;
         }
     }
 
     @Override
     @GuardedBy("mLock")
-    public final void mo21113f() {
-        this.f19355d.mo21113f();
-        this.f19356e.mo21113f();
+    public final void mo21114f() {
+        this.f19355d.mo21114f();
+        this.f19356e.mo21114f();
     }
 
     @Override
-    public final boolean mo21112g() {
-        throw new UnsupportedOperationException("Method not decompiled: p148k5.C6105e3.mo21112g():boolean");
+    public final boolean mo21113g() {
+        throw new UnsupportedOperationException("Method not decompiled: p148k5.C6105e3.mo21113g():boolean");
     }
 
     @GuardedBy("mLock")
-    public final void m21332h() {
+    public final void m21333h() {
         for (AbstractC6151p pVar : this.f19358g) {
-            pVar.m21187a();
+            pVar.m21188a();
         }
         this.f19358g.clear();
     }
 
     @GuardedBy("mLock")
-    public final boolean m21331i() {
+    public final boolean m21332i() {
         C5217a aVar = this.f19362k;
-        return aVar != null && aVar.m23615b() == 4;
+        return aVar != null && aVar.m23616b() == 4;
     }
 
-    public final boolean m21330j(AbstractC3487a<? extends AbstractC5876k, ? extends C5850a.AbstractC5852b> aVar) {
-        C6173u0 u0Var = this.f19357f.get(aVar.m30374s());
-        C6378r.m20505l(u0Var, "GoogleApiClient is not configured to use the API required for this call.");
+    public final boolean m21331j(AbstractC3487a<? extends AbstractC5876k, ? extends C5850a.AbstractC5852b> aVar) {
+        C6173u0 u0Var = this.f19357f.get(aVar.m30376s());
+        C6378r.m20506l(u0Var, "GoogleApiClient is not configured to use the API required for this call.");
         return u0Var.equals(this.f19356e);
     }
 
-    public final PendingIntent m21329k() {
+    public final PendingIntent m21330k() {
         if (this.f19359h == null) {
             return null;
         }
-        return PendingIntent.getActivity(this.f19352a, System.identityHashCode(this.f19353b), this.f19359h.mo21238s(), 134217728);
+        return PendingIntent.getActivity(this.f19352a, System.identityHashCode(this.f19353b), this.f19359h.mo21239s(), 134217728);
     }
 
     @GuardedBy("mLock")
-    public final void m21315y(C5217a aVar) {
+    public final void m21316y(C5217a aVar) {
         int i = this.f19365n;
         if (i != 1) {
             if (i != 2) {
                 Log.wtf("CompositeGAC", "Attempted to call failure callbacks in CONNECTION_MODE_NONE. Callbacks should be disabled via GmsClientSupervisor", new Exception());
                 this.f19365n = 0;
             }
-            this.f19353b.mo21178a(aVar);
+            this.f19353b.mo21179a(aVar);
         }
-        m21332h();
+        m21333h();
         this.f19365n = 0;
     }
 }

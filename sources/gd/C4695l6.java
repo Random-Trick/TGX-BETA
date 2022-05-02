@@ -13,53 +13,53 @@ public class C4695l6 {
 
     public C4695l6(C10930q6 q6Var, C10930q6.C10942l lVar, int i, byte[] bArr) {
         this.f15749a = lVar;
-        this.f15750b = new File(lVar.f35160c);
+        this.f15750b = new File(lVar.f35163c);
         this.f15751c = i;
         this.f15753e = new C4812v2(q6Var, this);
         this.f15752d = bArr;
     }
 
-    public void m26474a() {
+    public void m26475a() {
         File file = this.f15750b;
         if (file != null && file.delete()) {
             this.f15750b = null;
         }
     }
 
-    public C4812v2 m26473b() {
+    public C4812v2 m26474b() {
         return this.f15753e;
     }
 
-    public int m26472c() {
+    public int m26473c() {
         return this.f15751c;
     }
 
-    public File m26471d() {
+    public File m26472d() {
         return this.f15750b;
     }
 
-    public int m26470e() {
-        return this.f15749a.f35159b.f25373id;
+    public int m26471e() {
+        return this.f15749a.f35162b.f25376id;
     }
 
     public boolean equals(Object obj) {
         return obj != null && (obj instanceof C4695l6) && ((C4695l6) obj).f15749a == this.f15749a;
     }
 
-    public String m26469f() {
+    public String m26470f() {
         return this.f15750b.getPath();
     }
 
-    public byte[] m26468g() {
+    public byte[] m26469g() {
         return this.f15752d;
     }
 
-    public void m26467h(byte[] bArr) {
+    public void m26468h(byte[] bArr) {
         this.f15752d = bArr;
-        this.f15753e.m25196j(bArr);
+        this.f15753e.m25197j(bArr);
     }
 
-    public TdApi.InputFile m26466i() {
-        return new TdApi.InputFileId(this.f15749a.f35159b.f25373id);
+    public TdApi.InputFile m26467i() {
+        return new TdApi.InputFileId(this.f15749a.f35162b.f25376id);
     }
 }

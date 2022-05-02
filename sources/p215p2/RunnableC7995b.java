@@ -17,59 +17,59 @@ import p087g2.C4458i;
 import p198o2.C7554p;
 
 public class RunnableC7995b implements Runnable {
-    public static final String f26039c = AbstractC4234j.m28360f("EnqueueRunnable");
-    public final C4456g f26040a;
-    public final C4451c f26041b = new C4451c();
+    public static final String f26042c = AbstractC4234j.m28362f("EnqueueRunnable");
+    public final C4456g f26043a;
+    public final C4451c f26044b = new C4451c();
 
     public RunnableC7995b(C4456g gVar) {
-        this.f26040a = gVar;
+        this.f26043a = gVar;
     }
 
-    public static boolean m13817b(C4456g gVar) {
-        boolean c = m13816c(gVar.m27616g(), gVar.m27617f(), (String[]) C4456g.m27611l(gVar).toArray(new String[0]), gVar.m27619d(), gVar.m27621b());
-        gVar.m27612k();
+    public static boolean m13816b(C4456g gVar) {
+        boolean c = m13815c(gVar.m27618g(), gVar.m27619f(), (String[]) C4456g.m27613l(gVar).toArray(new String[0]), gVar.m27621d(), gVar.m27623b());
+        gVar.m27614k();
         return c;
     }
 
-    public static boolean m13816c(p087g2.C4458i r19, java.util.List<? extends p071f2.AbstractC4253u> r20, java.lang.String[] r21, java.lang.String r22, p071f2.EnumC4227d r23) {
-        throw new UnsupportedOperationException("Method not decompiled: p215p2.RunnableC7995b.m13816c(g2.i, java.util.List, java.lang.String[], java.lang.String, f2.d):boolean");
+    public static boolean m13815c(p087g2.C4458i r19, java.util.List<? extends p071f2.AbstractC4253u> r20, java.lang.String[] r21, java.lang.String r22, p071f2.EnumC4227d r23) {
+        throw new UnsupportedOperationException("Method not decompiled: p215p2.RunnableC7995b.m13815c(g2.i, java.util.List, java.lang.String[], java.lang.String, f2.d):boolean");
     }
 
-    public static boolean m13814e(C4456g gVar) {
-        List<C4456g> e = gVar.m27618e();
+    public static boolean m13813e(C4456g gVar) {
+        List<C4456g> e = gVar.m27620e();
         boolean z = false;
         if (e != null) {
             boolean z2 = false;
             for (C4456g gVar2 : e) {
-                if (!gVar2.m27613j()) {
-                    z2 |= m13814e(gVar2);
+                if (!gVar2.m27615j()) {
+                    z2 |= m13813e(gVar2);
                 } else {
-                    AbstractC4234j.m28362c().mo28355h(f26039c, String.format("Already enqueued work ids (%s).", TextUtils.join(", ", gVar2.m27620c())), new Throwable[0]);
+                    AbstractC4234j.m28364c().mo28357h(f26042c, String.format("Already enqueued work ids (%s).", TextUtils.join(", ", gVar2.m27622c())), new Throwable[0]);
                 }
             }
             z = z2;
         }
-        return m13817b(gVar) | z;
+        return m13816b(gVar) | z;
     }
 
-    public static void m13812g(C7554p pVar) {
-        C4223b bVar = pVar.f24149j;
-        String str = pVar.f24142c;
+    public static void m13811g(C7554p pVar) {
+        C4223b bVar = pVar.f24152j;
+        String str = pVar.f24145c;
         if (str.equals(ConstraintTrackingWorker.class.getName())) {
             return;
         }
-        if (bVar.m28390f() || bVar.m28387i()) {
+        if (bVar.m28392f() || bVar.m28389i()) {
             C1070b.C1071a aVar = new C1070b.C1071a();
-            aVar.m38466c(pVar.f24144e).m38462g("androidx.work.impl.workers.ConstraintTrackingWorker.ARGUMENT_CLASS_NAME", str);
-            pVar.f24142c = ConstraintTrackingWorker.class.getName();
-            pVar.f24144e = aVar.m38468a();
+            aVar.m38469c(pVar.f24147e).m38465g("androidx.work.impl.workers.ConstraintTrackingWorker.ARGUMENT_CLASS_NAME", str);
+            pVar.f24145c = ConstraintTrackingWorker.class.getName();
+            pVar.f24147e = aVar.m38471a();
         }
     }
 
-    public static boolean m13811h(C4458i iVar, String str) {
+    public static boolean m13810h(C4458i iVar, String str) {
         try {
             Class<?> cls = Class.forName(str);
-            for (AbstractC4454e eVar : iVar.m27588r()) {
+            for (AbstractC4454e eVar : iVar.m27590r()) {
                 if (cls.isAssignableFrom(eVar.getClass())) {
                     return true;
                 }
@@ -79,11 +79,11 @@ public class RunnableC7995b implements Runnable {
         return false;
     }
 
-    public boolean m13818a() {
-        WorkDatabase s = this.f26040a.m27616g().m27587s();
+    public boolean m13817a() {
+        WorkDatabase s = this.f26043a.m27618g().m27589s();
         s.m8731c();
         try {
-            boolean e = m13814e(this.f26040a);
+            boolean e = m13813e(this.f26043a);
             s.m8714t();
             return e;
         } finally {
@@ -91,29 +91,29 @@ public class RunnableC7995b implements Runnable {
         }
     }
 
-    public AbstractC4239m m13815d() {
-        return this.f26041b;
+    public AbstractC4239m m13814d() {
+        return this.f26044b;
     }
 
-    public void m13813f() {
-        C4458i g = this.f26040a.m27616g();
-        C4455f.m27624b(g.m27593m(), g.m27587s(), g.m27588r());
+    public void m13812f() {
+        C4458i g = this.f26043a.m27618g();
+        C4455f.m27626b(g.m27595m(), g.m27589s(), g.m27590r());
     }
 
     @Override
     public void run() {
         try {
-            if (!this.f26040a.m27615h()) {
-                if (m13818a()) {
-                    C8000e.m13804a(this.f26040a.m27616g().m27594l(), RescheduleReceiver.class, true);
-                    m13813f();
+            if (!this.f26043a.m27617h()) {
+                if (m13817a()) {
+                    C8000e.m13803a(this.f26043a.m27618g().m27596l(), RescheduleReceiver.class, true);
+                    m13812f();
                 }
-                this.f26041b.m27638a(AbstractC4239m.f14285a);
+                this.f26044b.m27640a(AbstractC4239m.f14285a);
                 return;
             }
-            throw new IllegalStateException(String.format("WorkContinuation has cycles (%s)", this.f26040a));
+            throw new IllegalStateException(String.format("WorkContinuation has cycles (%s)", this.f26043a));
         } catch (Throwable th) {
-            this.f26041b.m27638a(new AbstractC4239m.AbstractC4241b.C4242a(th));
+            this.f26044b.m27640a(new AbstractC4239m.AbstractC4241b.C4242a(th));
         }
     }
 }

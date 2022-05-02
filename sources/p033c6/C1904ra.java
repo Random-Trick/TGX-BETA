@@ -6,19 +6,19 @@ public final class C1904ra extends AbstractC1946ua {
     public Integer f6881c;
 
     @Override
-    public final AbstractC1946ua mo35864a(boolean z) {
+    public final AbstractC1946ua mo35867a(boolean z) {
         this.f6880b = Boolean.TRUE;
         return this;
     }
 
     @Override
-    public final AbstractC1946ua mo35863b(int i) {
+    public final AbstractC1946ua mo35866b(int i) {
         this.f6881c = 1;
         return this;
     }
 
     @Override
-    public final AbstractC1960va mo35862c() {
+    public final AbstractC1960va mo35865c() {
         Boolean bool;
         String str = this.f6879a;
         if (str != null && (bool = this.f6880b) != null && this.f6881c != null) {
@@ -41,7 +41,7 @@ public final class C1904ra extends AbstractC1946ua {
         throw new IllegalStateException(sb3.toString());
     }
 
-    public final AbstractC1946ua m35913d(String str) {
+    public final AbstractC1946ua m35916d(String str) {
         this.f6879a = str;
         return this;
     }

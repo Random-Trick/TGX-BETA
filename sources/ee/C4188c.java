@@ -7,6 +7,6 @@ public final class C4188c implements Camera.PreviewCallback {
 
     @Override
     public final void onPreviewFrame(byte[] bArr, Camera camera) {
-        this.f14151a.m28543J0(bArr, camera);
+        this.f14151a.m28545J0(bArr, camera);
     }
 }

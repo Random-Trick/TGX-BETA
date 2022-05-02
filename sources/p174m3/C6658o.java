@@ -16,12 +16,12 @@ public final class C6658o implements AbstractC6609h {
         this.f20807c = i3;
     }
 
-    public static String m19643b(int i) {
+    public static String m19644b(int i) {
         return Integer.toString(i, 36);
     }
 
-    public static C6658o m19642c(Bundle bundle) {
-        return new C6658o(bundle.getInt(m19643b(0), 0), bundle.getInt(m19643b(1), 0), bundle.getInt(m19643b(2), 0));
+    public static C6658o m19643c(Bundle bundle) {
+        return new C6658o(bundle.getInt(m19644b(0), 0), bundle.getInt(m19644b(1), 0), bundle.getInt(m19644b(2), 0));
     }
 
     public boolean equals(Object obj) {

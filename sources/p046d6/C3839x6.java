@@ -12,17 +12,17 @@ public final class C3839x6 extends AbstractC3857z6 {
     }
 
     @Override
-    public final int mo29728a() {
+    public final int mo29730a() {
         return this.f12938c;
     }
 
     @Override
-    public final String mo29727b() {
+    public final String mo29729b() {
         return this.f12936a;
     }
 
     @Override
-    public final boolean mo29726c() {
+    public final boolean mo29728c() {
         return this.f12937b;
     }
 
@@ -32,7 +32,7 @@ public final class C3839x6 extends AbstractC3857z6 {
         }
         if (obj instanceof AbstractC3857z6) {
             AbstractC3857z6 z6Var = (AbstractC3857z6) obj;
-            if (this.f12936a.equals(z6Var.mo29727b()) && this.f12937b == z6Var.mo29726c() && this.f12938c == z6Var.mo29728a()) {
+            if (this.f12936a.equals(z6Var.mo29729b()) && this.f12937b == z6Var.mo29728c() && this.f12938c == z6Var.mo29730a()) {
                 return true;
             }
         }

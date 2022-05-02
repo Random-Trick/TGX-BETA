@@ -65,13 +65,13 @@ public class DesugarCollections {
         }
     }
 
-    public static boolean m22606c(Collection collection, AbstractC5541w wVar) {
+    public static boolean m22607c(Collection collection, AbstractC5541w wVar) {
         boolean b;
         Field field = f17929c;
         if (field == null) {
             try {
                 Collection collection2 = (Collection) f17930d.get(collection);
-                return collection2 instanceof AbstractC5486b ? ((AbstractC5486b) collection2).mo22508b(wVar) : AbstractC5485a.m22566o(collection2, wVar);
+                return collection2 instanceof AbstractC5486b ? ((AbstractC5486b) collection2).mo22509b(wVar) : AbstractC5485a.m22567o(collection2, wVar);
             } catch (IllegalAccessException e) {
                 throw new Error("Runtime illegal access in synchronized collection removeIf fall-back.", e);
             }
@@ -79,7 +79,7 @@ public class DesugarCollections {
             try {
                 synchronized (field.get(collection)) {
                     Collection collection3 = (Collection) f17930d.get(collection);
-                    b = collection3 instanceof AbstractC5486b ? ((AbstractC5486b) collection3).mo22508b(wVar) : AbstractC5485a.m22566o(collection3, wVar);
+                    b = collection3 instanceof AbstractC5486b ? ((AbstractC5486b) collection3).mo22509b(wVar) : AbstractC5485a.m22567o(collection3, wVar);
                 }
                 return b;
             } catch (IllegalAccessException e2) {
@@ -88,7 +88,7 @@ public class DesugarCollections {
         }
     }
 
-    public static void m22605d(List list, Comparator comparator) {
+    public static void m22606d(List list, Comparator comparator) {
         Field field = f17929c;
         if (field == null) {
             try {

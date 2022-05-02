@@ -18,7 +18,7 @@ import androidx.appcompat.view.menu.C0355g;
 public abstract class AbstractC6020d implements AbstractC6022f, AbstractC0359i, AdapterView.OnItemClickListener {
     public Rect f19166a;
 
-    public static int m21546o(ListAdapter listAdapter, ViewGroup viewGroup, Context context, int i) {
+    public static int m21547o(ListAdapter listAdapter, ViewGroup viewGroup, Context context, int i) {
         int makeMeasureSpec = View.MeasureSpec.makeMeasureSpec(0, 0);
         int makeMeasureSpec2 = View.MeasureSpec.makeMeasureSpec(0, 0);
         int count = listAdapter.getCount();
@@ -47,7 +47,7 @@ public abstract class AbstractC6020d implements AbstractC6022f, AbstractC0359i, 
         return i2;
     }
 
-    public static boolean m21537x(C0351e eVar) {
+    public static boolean m21538x(C0351e eVar) {
         int size = eVar.size();
         for (int i = 0; i < size; i++) {
             MenuItem item = eVar.getItem(i);
@@ -58,7 +58,7 @@ public abstract class AbstractC6020d implements AbstractC6022f, AbstractC0359i, 
         return false;
     }
 
-    public static C0350d m21536y(ListAdapter listAdapter) {
+    public static C0350d m21537y(ListAdapter listAdapter) {
         if (listAdapter instanceof HeaderViewListAdapter) {
             return (C0350d) ((HeaderViewListAdapter) listAdapter).getWrappedAdapter();
         }
@@ -66,50 +66,50 @@ public abstract class AbstractC6020d implements AbstractC6022f, AbstractC0359i, 
     }
 
     @Override
-    public boolean mo21552e(C0351e eVar, C0355g gVar) {
+    public boolean mo21553e(C0351e eVar, C0355g gVar) {
         return false;
     }
 
     @Override
-    public boolean mo21551f(C0351e eVar, C0355g gVar) {
+    public boolean mo21552f(C0351e eVar, C0355g gVar) {
         return false;
     }
 
     @Override
-    public void mo21550i(Context context, C0351e eVar) {
+    public void mo21551i(Context context, C0351e eVar) {
     }
 
-    public abstract void mo21549l(C0351e eVar);
+    public abstract void mo21550l(C0351e eVar);
 
-    public boolean mo21548m() {
+    public boolean mo21549m() {
         return true;
     }
 
-    public Rect m21547n() {
+    public Rect m21548n() {
         return this.f19166a;
     }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long j) {
         ListAdapter listAdapter = (ListAdapter) adapterView.getAdapter();
-        m21536y(listAdapter).f1228a.m41715M((MenuItem) listAdapter.getItem(i), this, mo21548m() ? 0 : 4);
+        m21537y(listAdapter).f1228a.m41718M((MenuItem) listAdapter.getItem(i), this, mo21549m() ? 0 : 4);
     }
 
-    public abstract void mo21545p(View view);
+    public abstract void mo21546p(View view);
 
-    public void m21544q(Rect rect) {
+    public void m21545q(Rect rect) {
         this.f19166a = rect;
     }
 
-    public abstract void mo21543r(boolean z);
+    public abstract void mo21544r(boolean z);
 
-    public abstract void mo21542s(int i);
+    public abstract void mo21543s(int i);
 
-    public abstract void mo21541t(int i);
+    public abstract void mo21542t(int i);
 
-    public abstract void mo21540u(PopupWindow.OnDismissListener onDismissListener);
+    public abstract void mo21541u(PopupWindow.OnDismissListener onDismissListener);
 
-    public abstract void mo21539v(boolean z);
+    public abstract void mo21540v(boolean z);
 
-    public abstract void mo21538w(int i);
+    public abstract void mo21539w(int i);
 }

@@ -17,14 +17,14 @@ import java.util.Locale;
 import p129j1.C5828a;
 
 public final class C11183e {
-    public static final String f35834c = "e";
-    public static final ThreadLocal<SimpleDateFormat> f35835d = new C11184a();
-    public static final ThreadLocal<SimpleDateFormat> f35836e = new C11185b();
-    public static final ThreadLocal<SimpleDateFormat> f35837f = new C11186c();
-    public static final List<String> f35838g = m1292n();
-    public static final List<String> f35839h = Arrays.asList("ImageWidth", "ImageLength", "PixelXDimension", "PixelYDimension", "Compression", "JPEGInterchangeFormat", "JPEGInterchangeFormatLength", "ThumbnailImageLength", "ThumbnailImageWidth", "ThumbnailOrientation");
-    public final C5828a f35840a;
-    public boolean f35841b = false;
+    public static final String f35837c = "e";
+    public static final ThreadLocal<SimpleDateFormat> f35838d = new C11184a();
+    public static final ThreadLocal<SimpleDateFormat> f35839e = new C11185b();
+    public static final ThreadLocal<SimpleDateFormat> f35840f = new C11186c();
+    public static final List<String> f35841g = m1292n();
+    public static final List<String> f35842h = Arrays.asList("ImageWidth", "ImageLength", "PixelXDimension", "PixelYDimension", "Compression", "JPEGInterchangeFormat", "JPEGInterchangeFormatLength", "ThumbnailImageLength", "ThumbnailImageWidth", "ThumbnailOrientation");
+    public final C5828a f35843a;
+    public boolean f35844b = false;
 
     public class C11184a extends ThreadLocal<SimpleDateFormat> {
         public SimpleDateFormat initialValue() {
@@ -47,14 +47,14 @@ public final class C11183e {
     public static final class C11187d {
 
         public static final class C11188a {
-            public final double f35842a;
+            public final double f35845a;
 
             public C11188a(double d) {
-                this.f35842a = d;
+                this.f35845a = d;
             }
 
             public double m1273a() {
-                return this.f35842a / 2.23694d;
+                return this.f35845a / 2.23694d;
             }
         }
 
@@ -72,23 +72,23 @@ public final class C11183e {
     }
 
     public C11183e(C5828a aVar) {
-        this.f35840a = aVar;
+        this.f35843a = aVar;
     }
 
     public static Date m1303c(String str) {
-        return f35835d.get().parse(str);
+        return f35838d.get().parse(str);
     }
 
     public static Date m1302d(String str) {
-        return f35837f.get().parse(str);
+        return f35840f.get().parse(str);
     }
 
     public static Date m1301e(String str) {
-        return f35836e.get().parse(str);
+        return f35839e.get().parse(str);
     }
 
     public static String m1300f(long j) {
-        return f35837f.get().format(new Date(j));
+        return f35840f.get().format(new Date(j));
     }
 
     public static C11183e m1298h(File file) {
@@ -100,7 +100,7 @@ public final class C11183e {
     }
 
     public static C11183e m1296j(AbstractC0610l1 l1Var) {
-        ByteBuffer a = l1Var.mo40758j()[0].mo40755a();
+        ByteBuffer a = l1Var.mo40761j()[0].mo40758a();
         a.rewind();
         byte[] bArr = new byte[a.capacity()];
         a.get(bArr);
@@ -116,33 +116,33 @@ public final class C11183e {
     }
 
     public void m1306A() {
-        if (!this.f35841b) {
+        if (!this.f35844b) {
             m1305a();
         }
-        this.f35840a.m22039W();
+        this.f35843a.m22040W();
     }
 
     public final void m1305a() {
         long currentTimeMillis = System.currentTimeMillis();
         String f = m1300f(currentTimeMillis);
-        this.f35840a.m22032b0("DateTime", f);
+        this.f35843a.m22033b0("DateTime", f);
         try {
-            this.f35840a.m22032b0("SubSecTime", Long.toString(currentTimeMillis - m1302d(f).getTime()));
+            this.f35843a.m22033b0("SubSecTime", Long.toString(currentTimeMillis - m1302d(f).getTime()));
         } catch (ParseException unused) {
         }
     }
 
     public void m1304b(Location location) {
-        this.f35840a.m22030c0(location);
+        this.f35843a.m22031c0(location);
     }
 
     public void m1299g(C11183e eVar) {
-        ArrayList<String> arrayList = new ArrayList(f35838g);
-        arrayList.removeAll(f35839h);
+        ArrayList<String> arrayList = new ArrayList(f35841g);
+        arrayList.removeAll(f35842h);
         for (String str : arrayList) {
-            String g = this.f35840a.m22023g(str);
+            String g = this.f35843a.m22024g(str);
             if (g != null) {
-                eVar.f35840a.m22032b0(str, g);
+                eVar.f35843a.m22033b0(str, g);
             }
         }
     }
@@ -175,7 +175,7 @@ public final class C11183e {
                 i = 2;
                 break;
         }
-        this.f35840a.m22032b0("Orientation", String.valueOf(i));
+        this.f35843a.m22033b0("Orientation", String.valueOf(i));
     }
 
     public void m1293m() {
@@ -206,33 +206,33 @@ public final class C11183e {
                 i = 4;
                 break;
         }
-        this.f35840a.m22032b0("Orientation", String.valueOf(i));
+        this.f35843a.m22033b0("Orientation", String.valueOf(i));
     }
 
     public String m1291o() {
-        return this.f35840a.m22023g("ImageDescription");
+        return this.f35843a.m22024g("ImageDescription");
     }
 
     public int m1290p() {
-        return this.f35840a.m22019i("ImageLength", 0);
+        return this.f35843a.m22020i("ImageLength", 0);
     }
 
     public Location m1289q() {
         double d;
-        String g = this.f35840a.m22023g("GPSProcessingMethod");
-        double[] m = this.f35840a.m22013m();
-        double f = this.f35840a.m22025f(0.0d);
-        double h = this.f35840a.m22021h("GPSSpeed", 0.0d);
-        String g2 = this.f35840a.m22023g("GPSSpeedRef");
+        String g = this.f35843a.m22024g("GPSProcessingMethod");
+        double[] m = this.f35843a.m22014m();
+        double f = this.f35843a.m22026f(0.0d);
+        double h = this.f35843a.m22022h("GPSSpeed", 0.0d);
+        String g2 = this.f35843a.m22024g("GPSSpeedRef");
         if (g2 == null) {
             g2 = "K";
         }
-        long y = m1281y(this.f35840a.m22023g("GPSDateStamp"), this.f35840a.m22023g("GPSTimeStamp"));
+        long y = m1281y(this.f35843a.m22024g("GPSDateStamp"), this.f35843a.m22024g("GPSTimeStamp"));
         if (m == null) {
             return null;
         }
         if (g == null) {
-            g = f35834c;
+            g = f35837c;
         }
         Location location = new Location(g);
         location.setLatitude(m[0]);
@@ -270,7 +270,7 @@ public final class C11183e {
     }
 
     public int m1288r() {
-        return this.f35840a.m22019i("Orientation", 0);
+        return this.f35843a.m22020i("Orientation", 0);
     }
 
     public int m1287s() {
@@ -291,11 +291,11 @@ public final class C11183e {
     }
 
     public long m1286t() {
-        long x = m1282x(this.f35840a.m22023g("DateTimeOriginal"));
+        long x = m1282x(this.f35843a.m22024g("DateTimeOriginal"));
         if (x == -1) {
             return -1L;
         }
-        String g = this.f35840a.m22023g("SubSecTimeOriginal");
+        String g = this.f35843a.m22024g("SubSecTimeOriginal");
         if (g == null) {
             return x;
         }
@@ -315,7 +315,7 @@ public final class C11183e {
     }
 
     public int m1285u() {
-        return this.f35840a.m22019i("ImageWidth", 0);
+        return this.f35843a.m22020i("ImageWidth", 0);
     }
 
     public boolean m1284v() {
@@ -361,8 +361,8 @@ public final class C11183e {
 
     public void m1280z(int i) {
         if (i % 90 != 0) {
-            C0662u1.m40643k(f35834c, String.format(Locale.US, "Can only rotate in right angles (eg. 0, 90, 180, 270). %d is unsupported.", Integer.valueOf(i)));
-            this.f35840a.m22032b0("Orientation", String.valueOf(0));
+            C0662u1.m40646k(f35837c, String.format(Locale.US, "Can only rotate in right angles (eg. 0, 90, 180, 270). %d is unsupported.", Integer.valueOf(i)));
+            this.f35843a.m22033b0("Orientation", String.valueOf(0));
             return;
         }
         int i2 = i % 360;
@@ -423,6 +423,6 @@ public final class C11183e {
                     break;
             }
         }
-        this.f35840a.m22032b0("Orientation", String.valueOf(r));
+        this.f35843a.m22033b0("Orientation", String.valueOf(r));
     }
 }

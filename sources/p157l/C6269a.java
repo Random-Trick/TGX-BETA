@@ -12,14 +12,14 @@ public class C6269a extends AbstractC6274c {
     public static class ExecutorC6270a implements Executor {
         @Override
         public void execute(Runnable runnable) {
-            C6269a.m20747f().mo20742d(runnable);
+            C6269a.m20748f().mo20743d(runnable);
         }
     }
 
     public static class ExecutorC6271b implements Executor {
         @Override
         public void execute(Runnable runnable) {
-            C6269a.m20747f().mo20745a(runnable);
+            C6269a.m20748f().mo20746a(runnable);
         }
     }
 
@@ -29,11 +29,11 @@ public class C6269a extends AbstractC6274c {
         this.f19790a = bVar;
     }
 
-    public static Executor m20748e() {
+    public static Executor m20749e() {
         return f19789e;
     }
 
-    public static C6269a m20747f() {
+    public static C6269a m20748f() {
         if (f19787c != null) {
             return f19787c;
         }
@@ -46,17 +46,17 @@ public class C6269a extends AbstractC6274c {
     }
 
     @Override
-    public void mo20745a(Runnable runnable) {
-        this.f19790a.mo20745a(runnable);
+    public void mo20746a(Runnable runnable) {
+        this.f19790a.mo20746a(runnable);
     }
 
     @Override
-    public boolean mo20743c() {
-        return this.f19790a.mo20743c();
+    public boolean mo20744c() {
+        return this.f19790a.mo20744c();
     }
 
     @Override
-    public void mo20742d(Runnable runnable) {
-        this.f19790a.mo20742d(runnable);
+    public void mo20743d(Runnable runnable) {
+        this.f19790a.mo20743d(runnable);
     }
 }

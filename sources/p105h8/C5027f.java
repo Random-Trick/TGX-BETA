@@ -11,11 +11,11 @@ public class C5027f {
         this.f16983b = mVarArr;
     }
 
-    public final C5022a m24261a() {
+    public final C5022a m24262a() {
         return this.f16982a;
     }
 
-    public final C4530m[] m24260b() {
+    public final C4530m[] m24261b() {
         return this.f16983b;
     }
 }

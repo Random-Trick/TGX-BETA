@@ -20,21 +20,21 @@ import p312w5.C9979a;
 import p312w5.C9984f;
 
 public abstract class AbstractC4957b extends BroadcastReceiver {
-    public final ExecutorService f16875a = C9979a.m6312a().mo6310b(new ThreadFactoryC8371a("firebase-iid-executor"), C9984f.f32464a);
+    public final ExecutorService f16875a = C9979a.m6312a().mo6310b(new ThreadFactoryC8371a("firebase-iid-executor"), C9984f.f32467a);
 
-    public Executor m24384a() {
+    public Executor m24385a() {
         return this.f16875a;
     }
 
-    public abstract int mo24383b(Context context, C4955a aVar);
+    public abstract int mo24384b(Context context, C4955a aVar);
 
-    public void mo24382c(Context context, Bundle bundle) {
+    public void mo24383c(Context context, Bundle bundle) {
     }
 
-    public void m24381d(Context context, Bundle bundle) {
+    public void m24382d(Context context, Bundle bundle) {
     }
 
-    public final int m24380e(Context context, Intent intent) {
+    public final int m24381e(Context context, Intent intent) {
         PendingIntent pendingIntent = (PendingIntent) intent.getParcelableExtra("pending_intent");
         if (pendingIntent != null) {
             try {
@@ -50,10 +50,10 @@ public abstract class AbstractC4957b extends BroadcastReceiver {
             extras = new Bundle();
         }
         if ("com.google.firebase.messaging.NOTIFICATION_OPEN".equals(intent.getAction())) {
-            m24381d(context, extras);
+            m24382d(context, extras);
             return -1;
         } else if ("com.google.firebase.messaging.NOTIFICATION_DISMISS".equals(intent.getAction())) {
-            mo24382c(context, extras);
+            mo24383c(context, extras);
             return -1;
         } else {
             Log.e("CloudMessagingReceiver", "Unknown notification action");
@@ -61,15 +61,15 @@ public abstract class AbstractC4957b extends BroadcastReceiver {
         }
     }
 
-    public final void m24379f(Intent intent, Context context, boolean z, BroadcastReceiver.PendingResult pendingResult) {
+    public final void m24380f(Intent intent, Context context, boolean z, BroadcastReceiver.PendingResult pendingResult) {
         int i;
         try {
             Parcelable parcelableExtra = intent.getParcelableExtra("wrapped_intent");
             Intent intent2 = parcelableExtra instanceof Intent ? (Intent) parcelableExtra : null;
             if (intent2 != null) {
-                i = m24380e(context, intent2);
+                i = m24381e(context, intent2);
             } else {
-                i = m24378g(context, intent);
+                i = m24379g(context, intent);
             }
             if (z) {
                 pendingResult.setResultCode(i);
@@ -79,22 +79,22 @@ public abstract class AbstractC4957b extends BroadcastReceiver {
         }
     }
 
-    public final int m24378g(Context context, Intent intent) {
+    public final int m24379g(Context context, Intent intent) {
         AbstractC6775l<Void> lVar;
         if (intent.getExtras() == null) {
             return 500;
         }
         String stringExtra = intent.getStringExtra("google.message_id");
         if (TextUtils.isEmpty(stringExtra)) {
-            lVar = C6781o.m19049f(null);
+            lVar = C6781o.m19050f(null);
         } else {
             Bundle bundle = new Bundle();
             bundle.putString("google.message_id", stringExtra);
-            lVar = C4969i.m24359c(context).m24358d(2, bundle);
+            lVar = C4969i.m24360c(context).m24359d(2, bundle);
         }
-        int b = mo24383b(context, new C4955a(intent));
+        int b = mo24384b(context, new C4955a(intent));
         try {
-            C6781o.m19053b(lVar, TimeUnit.SECONDS.toMillis(1L), TimeUnit.MILLISECONDS);
+            C6781o.m19054b(lVar, TimeUnit.SECONDS.toMillis(1L), TimeUnit.MILLISECONDS);
         } catch (InterruptedException | ExecutionException | TimeoutException e) {
             String valueOf = String.valueOf(e);
             StringBuilder sb2 = new StringBuilder(valueOf.length() + 20);
@@ -110,7 +110,7 @@ public abstract class AbstractC4957b extends BroadcastReceiver {
         if (intent != null) {
             final boolean isOrderedBroadcast = isOrderedBroadcast();
             final BroadcastReceiver.PendingResult goAsync = goAsync();
-            m24384a().execute(new Runnable(this, intent, context, isOrderedBroadcast, goAsync) {
+            m24385a().execute(new Runnable(this, intent, context, isOrderedBroadcast, goAsync) {
                 public final boolean f16894M;
                 public final BroadcastReceiver.PendingResult f16895N;
                 public final AbstractC4957b f16896a;
@@ -127,7 +127,7 @@ public abstract class AbstractC4957b extends BroadcastReceiver {
 
                 @Override
                 public final void run() {
-                    this.f16896a.m24379f(this.f16897b, this.f16898c, this.f16894M, this.f16895N);
+                    this.f16896a.m24380f(this.f16897b, this.f16898c, this.f16894M, this.f16895N);
                 }
             });
         }

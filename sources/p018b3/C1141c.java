@@ -16,7 +16,7 @@ public final class C1141c extends AbstractC1159m {
         public EnumC10354d f4364c;
 
         @Override
-        public AbstractC1159m mo38259a() {
+        public AbstractC1159m mo38262a() {
             String str = "";
             if (this.f4362a == null) {
                 str = str + " backendName";
@@ -31,20 +31,20 @@ public final class C1141c extends AbstractC1159m {
         }
 
         @Override
-        public AbstractC1159m.AbstractC1160a mo38258b(String str) {
+        public AbstractC1159m.AbstractC1160a mo38261b(String str) {
             Objects.requireNonNull(str, "Null backendName");
             this.f4362a = str;
             return this;
         }
 
         @Override
-        public AbstractC1159m.AbstractC1160a mo38257c(byte[] bArr) {
+        public AbstractC1159m.AbstractC1160a mo38260c(byte[] bArr) {
             this.f4363b = bArr;
             return this;
         }
 
         @Override
-        public AbstractC1159m.AbstractC1160a mo38256d(EnumC10354d dVar) {
+        public AbstractC1159m.AbstractC1160a mo38259d(EnumC10354d dVar) {
             Objects.requireNonNull(dVar, "Null priority");
             this.f4364c = dVar;
             return this;
@@ -52,17 +52,17 @@ public final class C1141c extends AbstractC1159m {
     }
 
     @Override
-    public String mo38263b() {
+    public String mo38266b() {
         return this.f4359a;
     }
 
     @Override
-    public byte[] mo38262c() {
+    public byte[] mo38265c() {
         return this.f4360b;
     }
 
     @Override
-    public EnumC10354d mo38261d() {
+    public EnumC10354d mo38264d() {
         return this.f4361c;
     }
 
@@ -74,8 +74,8 @@ public final class C1141c extends AbstractC1159m {
             return false;
         }
         AbstractC1159m mVar = (AbstractC1159m) obj;
-        if (this.f4359a.equals(mVar.mo38263b())) {
-            if (Arrays.equals(this.f4360b, mVar instanceof C1141c ? ((C1141c) mVar).f4360b : mVar.mo38262c()) && this.f4361c.equals(mVar.mo38261d())) {
+        if (this.f4359a.equals(mVar.mo38266b())) {
+            if (Arrays.equals(this.f4360b, mVar instanceof C1141c ? ((C1141c) mVar).f4360b : mVar.mo38265c()) && this.f4361c.equals(mVar.mo38264d())) {
                 return true;
             }
         }

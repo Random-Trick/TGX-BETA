@@ -13,29 +13,29 @@ public class C0224o {
     public final Queue<C0212e0> f710c = new ArrayDeque();
     public final AtomicReference<Thread> f711d = new AtomicReference<>();
 
-    public void m42062a(@RecentlyNonNull Executor executor, @RecentlyNonNull Runnable runnable) {
+    public void m42065a(@RecentlyNonNull Executor executor, @RecentlyNonNull Runnable runnable) {
         synchronized (this.f708a) {
             if (this.f709b) {
                 this.f710c.add(new C0212e0(executor, runnable, null));
                 return;
             }
             this.f709b = true;
-            m42058e(executor, runnable);
+            m42061e(executor, runnable);
         }
     }
 
-    public final void m42059d() {
+    public final void m42062d() {
         synchronized (this.f708a) {
             if (this.f710c.isEmpty()) {
                 this.f709b = false;
                 return;
             }
             C0212e0 remove = this.f710c.remove();
-            m42058e(remove.f686a, remove.f687b);
+            m42061e(remove.f686a, remove.f687b);
         }
     }
 
-    public final void m42058e(Executor executor, final Runnable runnable) {
+    public final void m42061e(Executor executor, final Runnable runnable) {
         try {
             executor.execute(new Runnable() {
                 @Override
@@ -57,7 +57,7 @@ public class C0224o {
                 }
             });
         } catch (RejectedExecutionException unused) {
-            m42059d();
+            m42062d();
         }
     }
 }

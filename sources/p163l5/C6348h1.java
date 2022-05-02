@@ -26,11 +26,11 @@ public final class C6348h1 extends AbstractC6749a {
 
     @Override
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = C6752c.m19124a(parcel);
-        C6752c.m19121d(parcel, 1, this.f19954a, false);
-        C6752c.m19106s(parcel, 2, this.f19955b, i, false);
-        C6752c.m19114k(parcel, 3, this.f19956c);
-        C6752c.m19110o(parcel, 4, this.f19953M, i, false);
-        C6752c.m19123b(parcel, a);
+        int a = C6752c.m19125a(parcel);
+        C6752c.m19122d(parcel, 1, this.f19954a, false);
+        C6752c.m19107s(parcel, 2, this.f19955b, i, false);
+        C6752c.m19115k(parcel, 3, this.f19956c);
+        C6752c.m19111o(parcel, 4, this.f19953M, i, false);
+        C6752c.m19124b(parcel, a);
     }
 }

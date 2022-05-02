@@ -18,7 +18,7 @@ public class C4341g implements AbstractC4345j {
         @Override
         public final boolean handleMessage(Message message) {
             boolean q;
-            q = C4341g.this.m28234q(message);
+            q = C4341g.this.m28236q(message);
             return q;
         }
     });
@@ -26,10 +26,10 @@ public class C4341g implements AbstractC4345j {
     public List<Reference<View>> f14421c;
 
     public interface AbstractC4342a {
-        void mo13519a();
+        void mo13518a();
     }
 
-    public boolean m28234q(Message message) {
+    public boolean m28236q(Message message) {
         int i = message.what;
         if (i == 0) {
             invalidate();
@@ -45,12 +45,12 @@ public class C4341g implements AbstractC4345j {
         if (aVar == null) {
             return false;
         }
-        aVar.mo13519a();
+        aVar.mo13518a();
         return true;
     }
 
     @Override
-    public void mo28230b(Rect rect) {
+    public void mo28232b(Rect rect) {
         List<Reference<View>> list = this.f14421c;
         if (list != null) {
             for (int size = list.size() - 1; size >= 0; size--) {
@@ -65,7 +65,7 @@ public class C4341g implements AbstractC4345j {
     }
 
     @Override
-    public boolean mo28229c(View view) {
+    public boolean mo28231c(View view) {
         List<Reference<View>> list = this.f14421c;
         if (list == null) {
             return false;
@@ -82,7 +82,7 @@ public class C4341g implements AbstractC4345j {
     }
 
     @Override
-    public void mo28228d(int i, int i2, int i3, int i4) {
+    public void mo28230d(int i, int i2, int i3, int i4) {
         List<Reference<View>> list = this.f14421c;
         if (list != null) {
             for (int size = list.size() - 1; size >= 0; size--) {
@@ -97,15 +97,15 @@ public class C4341g implements AbstractC4345j {
     }
 
     @Override
-    public void mo28227e() {
-        View f = mo28226f();
+    public void mo28229e() {
+        View f = mo28228f();
         if (f != null) {
-            C2065g.m35719c(f);
+            C2065g.m35722c(f);
         }
     }
 
     @Override
-    public View mo28226f() {
+    public View mo28228f() {
         List<Reference<View>> list = this.f14421c;
         if (list == null) {
             return null;
@@ -121,13 +121,13 @@ public class C4341g implements AbstractC4345j {
     }
 
     @Override
-    public boolean mo28225g() {
+    public boolean mo28227g() {
         List<Reference<View>> list = this.f14421c;
         return list != null && !list.isEmpty();
     }
 
     @Override
-    public void mo28224h() {
+    public void mo28226h() {
         Handler handler = this.f14419a;
         handler.sendMessage(handler.obtainMessage(0));
     }
@@ -147,7 +147,7 @@ public class C4341g implements AbstractC4345j {
         }
     }
 
-    public final boolean m28241j(View view) {
+    public final boolean m28243j(View view) {
         if (view != null) {
             if (this.f14421c == null) {
                 this.f14421c = new ArrayList(2);
@@ -170,12 +170,12 @@ public class C4341g implements AbstractC4345j {
                 return true;
             }
         } else {
-            C6235i.m21012d(this.f14421c);
+            C6235i.m21013d(this.f14421c);
         }
         return false;
     }
 
-    public final int m28240k() {
+    public final int m28242k() {
         List<Reference<View>> list = this.f14421c;
         int i = 0;
         if (list != null) {
@@ -190,7 +190,7 @@ public class C4341g implements AbstractC4345j {
         return i;
     }
 
-    public final boolean m28239l(View view) {
+    public final boolean m28241l(View view) {
         List<Reference<View>> list = this.f14421c;
         boolean z = false;
         if (list != null) {
@@ -206,24 +206,24 @@ public class C4341g implements AbstractC4345j {
                 }
                 return z;
             }
-            C6235i.m21012d(list);
+            C6235i.m21013d(list);
         }
         return false;
     }
 
-    public int m28238m() {
-        View f = mo28226f();
+    public int m28240m() {
+        View f = mo28228f();
         if (f != null) {
             return f.getMeasuredWidth();
         }
         return 0;
     }
 
-    public List<Reference<View>> m28237n() {
+    public List<Reference<View>> m28239n() {
         return this.f14421c;
     }
 
-    public void m28236o() {
+    public void m28238o() {
         List<Reference<View>> list = this.f14421c;
         if (list != null) {
             for (int size = list.size() - 1; size >= 0; size--) {
@@ -240,7 +240,7 @@ public class C4341g implements AbstractC4345j {
         }
     }
 
-    public void m28235p(int i, int i2, int i3, int i4) {
+    public void m28237p(int i, int i2, int i3, int i4) {
         List<Reference<View>> list = this.f14421c;
         if (list != null) {
             for (int size = list.size() - 1; size >= 0; size--) {
@@ -257,7 +257,7 @@ public class C4341g implements AbstractC4345j {
         }
     }
 
-    public C4341g m28233r(AbstractC4342a aVar) {
+    public C4341g m28235r(AbstractC4342a aVar) {
         this.f14420b = aVar;
         return this;
     }

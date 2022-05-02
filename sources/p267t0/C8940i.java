@@ -16,9 +16,9 @@ import p352z0.C11216f;
 
 public class C8940i extends C8941j {
     @Override
-    public Typeface mo10880b(Context context, C8606e.C8608b bVar, Resources resources, int i) {
+    public Typeface mo10879b(Context context, C8606e.C8608b bVar, Resources resources, int i) {
         try {
-            C8606e.C8609c[] a = bVar.m11940a();
+            C8606e.C8609c[] a = bVar.m11939a();
             int length = a.length;
             int i2 = 0;
             FontFamily.Builder builder = null;
@@ -30,11 +30,11 @@ public class C8940i extends C8941j {
                 }
                 C8606e.C8609c cVar = a[i3];
                 try {
-                    Font.Builder weight = new Font.Builder(resources, cVar.m11938b()).setWeight(cVar.m11935e());
-                    if (!cVar.m11934f()) {
+                    Font.Builder weight = new Font.Builder(resources, cVar.m11937b()).setWeight(cVar.m11934e());
+                    if (!cVar.m11933f()) {
                         i4 = 0;
                     }
-                    Font build = weight.setSlant(i4).setTtcIndex(cVar.m11937c()).setFontVariationSettings(cVar.m11936d()).build();
+                    Font build = weight.setSlant(i4).setTtcIndex(cVar.m11936c()).setFontVariationSettings(cVar.m11935d()).build();
                     if (builder == null) {
                         builder = new FontFamily.Builder(build);
                     } else {
@@ -58,7 +58,7 @@ public class C8940i extends C8941j {
     }
 
     @Override
-    public Typeface mo10879c(Context context, CancellationSignal cancellationSignal, C11216f.C11218b[] bVarArr, int i) {
+    public Typeface mo10878c(Context context, CancellationSignal cancellationSignal, C11216f.C11218b[] bVarArr, int i) {
         ParcelFileDescriptor openFileDescriptor;
         ContentResolver contentResolver = context.getContentResolver();
         try {
@@ -116,12 +116,12 @@ public class C8940i extends C8941j {
     }
 
     @Override
-    public Typeface mo10878d(Context context, InputStream inputStream) {
+    public Typeface mo10877d(Context context, InputStream inputStream) {
         throw new RuntimeException("Do not use this function in API 29 or later.");
     }
 
     @Override
-    public Typeface mo10877e(Context context, Resources resources, int i, String str, int i2) {
+    public Typeface mo10876e(Context context, Resources resources, int i, String str, int i2) {
         try {
             Font build = new Font.Builder(resources, i).build();
             return new Typeface.CustomFallbackBuilder(new FontFamily.Builder(build).build()).setStyle(build.getStyle()).build();
@@ -131,7 +131,7 @@ public class C8940i extends C8941j {
     }
 
     @Override
-    public C11216f.C11218b mo10874h(C11216f.C11218b[] bVarArr, int i) {
+    public C11216f.C11218b mo10873h(C11216f.C11218b[] bVarArr, int i) {
         throw new RuntimeException("Do not use this function in API 29 or later.");
     }
 }

@@ -32,15 +32,15 @@ final class C5677a0 extends CountedCompleter {
         long estimateSize = g.estimateSize();
         long j = this.f18307d;
         if (j == 0) {
-            j = AbstractC5701f.m22271h(estimateSize);
+            j = AbstractC5701f.m22272h(estimateSize);
             this.f18307d = j;
         }
-        boolean d = EnumC5705f3.SHORT_CIRCUIT.m22265d(this.f18306c.mo22301Z());
+        boolean d = EnumC5705f3.SHORT_CIRCUIT.m22266d(this.f18306c.mo22302Z());
         boolean z = false;
         AbstractC5759q2 q2Var = this.f18305b;
         C5677a0 a0Var = this;
         while (true) {
-            if (d && q2Var.mo22130t()) {
+            if (d && q2Var.mo22131t()) {
                 break;
             } else if (estimateSize <= j || (trySplit = g.trySplit()) == null) {
                 break;
@@ -59,7 +59,7 @@ final class C5677a0 extends CountedCompleter {
                 a0Var = a0Var2;
             }
         }
-        a0Var.f18306c.mo22306M(q2Var, g);
+        a0Var.f18306c.mo22307M(q2Var, g);
         a0Var.f18304a = null;
         a0Var.propagateCompletion();
     }

@@ -148,7 +148,7 @@ public class C5828a {
                     if (j2 >= 0 && j >= j2 + this.f18681b.available()) {
                         return -1;
                     }
-                    this.f18681b.m21971A0(j);
+                    this.f18681b.m21972A0(j);
                     this.f18680a = j;
                 }
                 if (i2 > this.f18681b.available()) {
@@ -183,7 +183,7 @@ public class C5828a {
             return this.f18686a.available();
         }
 
-        public int m21999m() {
+        public int m22000m() {
             return this.f18688c;
         }
 
@@ -344,15 +344,15 @@ public class C5828a {
             throw new UnsupportedOperationException("skipBytes is currently unsupported");
         }
 
-        public long m21998t() {
+        public long m21999t() {
             return readInt() & 4294967295L;
         }
 
-        public void m21997y0(ByteOrder byteOrder) {
+        public void m21998y0(ByteOrder byteOrder) {
             this.f18687b = byteOrder;
         }
 
-        public void m21996z0(int i) {
+        public void m21997z0(int i) {
             int i2 = 0;
             while (i2 < i) {
                 int i3 = i - i2;
@@ -408,19 +408,19 @@ public class C5828a {
             this.f18690b = byteOrder;
         }
 
-        public void m21995A0(long j) {
-            m21991y0((int) j);
+        public void m21996A0(long j) {
+            m21992y0((int) j);
         }
 
-        public void m21994B0(int i) {
-            m21990z0((short) i);
+        public void m21995B0(int i) {
+            m21991z0((short) i);
         }
 
-        public void m21993m(ByteOrder byteOrder) {
+        public void m21994m(ByteOrder byteOrder) {
             this.f18690b = byteOrder;
         }
 
-        public void m21992t(int i) {
+        public void m21993t(int i) {
             this.f18689a.write(i);
         }
 
@@ -429,7 +429,7 @@ public class C5828a {
             this.f18689a.write(bArr);
         }
 
-        public void m21991y0(int i) {
+        public void m21992y0(int i) {
             ByteOrder byteOrder = this.f18690b;
             if (byteOrder == ByteOrder.LITTLE_ENDIAN) {
                 this.f18689a.write((i >>> 0) & 255);
@@ -444,7 +444,7 @@ public class C5828a {
             }
         }
 
-        public void m21990z0(short s) {
+        public void m21991z0(short s) {
             ByteOrder byteOrder = this.f18690b;
             if (byteOrder == ByteOrder.LITTLE_ENDIAN) {
                 this.f18689a.write((s >>> 0) & 255);
@@ -471,7 +471,7 @@ public class C5828a {
             this(i, i2, -1L, bArr);
         }
 
-        public static C5832d m21989a(String str) {
+        public static C5832d m21990a(String str) {
             if (str.length() == 1 && str.charAt(0) >= '0' && str.charAt(0) <= '1') {
                 return new C5832d(1, 1, new byte[]{(byte) (str.charAt(0) - '0')});
             }
@@ -479,7 +479,7 @@ public class C5828a {
             return new C5832d(1, bytes.length, bytes);
         }
 
-        public static C5832d m21988b(double[] dArr, ByteOrder byteOrder) {
+        public static C5832d m21989b(double[] dArr, ByteOrder byteOrder) {
             ByteBuffer wrap = ByteBuffer.wrap(new byte[C5828a.f18629X[12] * dArr.length]);
             wrap.order(byteOrder);
             for (double d : dArr) {
@@ -488,7 +488,7 @@ public class C5828a {
             return new C5832d(12, dArr.length, wrap.array());
         }
 
-        public static C5832d m21987c(int[] iArr, ByteOrder byteOrder) {
+        public static C5832d m21988c(int[] iArr, ByteOrder byteOrder) {
             ByteBuffer wrap = ByteBuffer.wrap(new byte[C5828a.f18629X[9] * iArr.length]);
             wrap.order(byteOrder);
             for (int i : iArr) {
@@ -497,7 +497,7 @@ public class C5828a {
             return new C5832d(9, iArr.length, wrap.array());
         }
 
-        public static C5832d m21986d(C5834f[] fVarArr, ByteOrder byteOrder) {
+        public static C5832d m21987d(C5834f[] fVarArr, ByteOrder byteOrder) {
             ByteBuffer wrap = ByteBuffer.wrap(new byte[C5828a.f18629X[10] * fVarArr.length]);
             wrap.order(byteOrder);
             for (C5834f fVar : fVarArr) {
@@ -507,16 +507,16 @@ public class C5828a {
             return new C5832d(10, fVarArr.length, wrap.array());
         }
 
-        public static C5832d m21985e(String str) {
+        public static C5832d m21986e(String str) {
             byte[] bytes = (str + (char) 0).getBytes(C5828a.f18647p0);
             return new C5832d(2, bytes.length, bytes);
         }
 
-        public static C5832d m21984f(long j, ByteOrder byteOrder) {
-            return m21983g(new long[]{j}, byteOrder);
+        public static C5832d m21985f(long j, ByteOrder byteOrder) {
+            return m21984g(new long[]{j}, byteOrder);
         }
 
-        public static C5832d m21983g(long[] jArr, ByteOrder byteOrder) {
+        public static C5832d m21984g(long[] jArr, ByteOrder byteOrder) {
             ByteBuffer wrap = ByteBuffer.wrap(new byte[C5828a.f18629X[4] * jArr.length]);
             wrap.order(byteOrder);
             for (long j : jArr) {
@@ -525,11 +525,11 @@ public class C5828a {
             return new C5832d(4, jArr.length, wrap.array());
         }
 
-        public static C5832d m21982h(C5834f fVar, ByteOrder byteOrder) {
-            return m21981i(new C5834f[]{fVar}, byteOrder);
+        public static C5832d m21983h(C5834f fVar, ByteOrder byteOrder) {
+            return m21982i(new C5834f[]{fVar}, byteOrder);
         }
 
-        public static C5832d m21981i(C5834f[] fVarArr, ByteOrder byteOrder) {
+        public static C5832d m21982i(C5834f[] fVarArr, ByteOrder byteOrder) {
             ByteBuffer wrap = ByteBuffer.wrap(new byte[C5828a.f18629X[5] * fVarArr.length]);
             wrap.order(byteOrder);
             for (C5834f fVar : fVarArr) {
@@ -539,11 +539,11 @@ public class C5828a {
             return new C5832d(5, fVarArr.length, wrap.array());
         }
 
-        public static C5832d m21980j(int i, ByteOrder byteOrder) {
-            return m21979k(new int[]{i}, byteOrder);
+        public static C5832d m21981j(int i, ByteOrder byteOrder) {
+            return m21980k(new int[]{i}, byteOrder);
         }
 
-        public static C5832d m21979k(int[] iArr, ByteOrder byteOrder) {
+        public static C5832d m21980k(int[] iArr, ByteOrder byteOrder) {
             ByteBuffer wrap = ByteBuffer.wrap(new byte[C5828a.f18629X[3] * iArr.length]);
             wrap.order(byteOrder);
             for (int i : iArr) {
@@ -552,8 +552,8 @@ public class C5828a {
             return new C5832d(3, iArr.length, wrap.array());
         }
 
-        public double m21978l(ByteOrder byteOrder) {
-            Object o = m21975o(byteOrder);
+        public double m21979l(ByteOrder byteOrder) {
+            Object o = m21976o(byteOrder);
             if (o == null) {
                 throw new NumberFormatException("NULL can't be converted to a double value");
             } else if (o instanceof String) {
@@ -580,7 +580,7 @@ public class C5828a {
                 } else if (o instanceof C5834f[]) {
                     C5834f[] fVarArr = (C5834f[]) o;
                     if (fVarArr.length == 1) {
-                        return fVarArr[0].m21972a();
+                        return fVarArr[0].m21973a();
                     }
                     throw new NumberFormatException("There are more than one component");
                 } else {
@@ -589,8 +589,8 @@ public class C5828a {
             }
         }
 
-        public int m21977m(ByteOrder byteOrder) {
-            Object o = m21975o(byteOrder);
+        public int m21978m(ByteOrder byteOrder) {
+            Object o = m21976o(byteOrder);
             if (o == null) {
                 throw new NumberFormatException("NULL can't be converted to a integer value");
             } else if (o instanceof String) {
@@ -614,8 +614,8 @@ public class C5828a {
             }
         }
 
-        public String m21976n(ByteOrder byteOrder) {
-            Object o = m21975o(byteOrder);
+        public String m21977n(ByteOrder byteOrder) {
+            Object o = m21976o(byteOrder);
             if (o == null) {
                 return null;
             }
@@ -671,11 +671,11 @@ public class C5828a {
             }
         }
 
-        public java.lang.Object m21975o(java.nio.ByteOrder r11) {
-            throw new UnsupportedOperationException("Method not decompiled: p129j1.C5828a.C5832d.m21975o(java.nio.ByteOrder):java.lang.Object");
+        public java.lang.Object m21976o(java.nio.ByteOrder r11) {
+            throw new UnsupportedOperationException("Method not decompiled: p129j1.C5828a.C5832d.m21976o(java.nio.ByteOrder):java.lang.Object");
         }
 
-        public int m21974p() {
+        public int m21975p() {
             return C5828a.f18629X[this.f18691a] * this.f18692b;
         }
 
@@ -699,7 +699,7 @@ public class C5828a {
             this((long) (d * 10000.0d), 10000L);
         }
 
-        public double m21972a() {
+        public double m21973a() {
             return this.f18699a / this.f18700b;
         }
 
@@ -788,10 +788,10 @@ public class C5828a {
         this.f18665g = new HashSet(eVarArr.length);
         this.f18666h = ByteOrder.BIG_ENDIAN;
         Objects.requireNonNull(file, "file cannot be null");
-        m22061A(file.getAbsolutePath());
+        m22062A(file.getAbsolutePath());
     }
 
-    public static boolean m22060B(BufferedInputStream bufferedInputStream) {
+    public static boolean m22061B(BufferedInputStream bufferedInputStream) {
         byte[] bArr = f18648q0;
         bufferedInputStream.mark(bArr.length);
         byte[] bArr2 = new byte[bArr.length];
@@ -810,7 +810,7 @@ public class C5828a {
         }
     }
 
-    public static boolean m22058D(byte[] bArr) {
+    public static boolean m22059D(byte[] bArr) {
         int i = 0;
         while (true) {
             byte[] bArr2 = f18607B;
@@ -824,10 +824,10 @@ public class C5828a {
         }
     }
 
-    public static boolean m22053I(FileDescriptor fileDescriptor) {
+    public static boolean m22054I(FileDescriptor fileDescriptor) {
         if (Build.VERSION.SDK_INT >= 21) {
             try {
-                C5836b.C5837a.m21961c(fileDescriptor, 0L, OsConstants.SEEK_CUR);
+                C5836b.C5837a.m21962c(fileDescriptor, 0L, OsConstants.SEEK_CUR);
                 return true;
             } catch (Exception unused) {
                 if (f18653v) {
@@ -838,11 +838,11 @@ public class C5828a {
         return false;
     }
 
-    public static boolean m22051K(int i) {
+    public static boolean m22052K(int i) {
         return i == 4 || i == 13 || i == 14 || i == 3 || i == 0;
     }
 
-    public static double m22031c(String str, String str2) {
+    public static double m22032c(String str, String str2) {
         try {
             String[] split = str.split(",", -1);
             String[] split2 = split[0].split("/", -1);
@@ -861,19 +861,19 @@ public class C5828a {
         }
     }
 
-    public static boolean m22024f0(int i) {
+    public static boolean m22025f0(int i) {
         return (i == 4 || i == 9 || i == 13 || i == 14) ? false : true;
     }
 
-    public static Pair<Integer, Integer> m22002x(String str) {
+    public static Pair<Integer, Integer> m22003x(String str) {
         if (str.contains(",")) {
             String[] split = str.split(",", -1);
-            Pair<Integer, Integer> x = m22002x(split[0]);
+            Pair<Integer, Integer> x = m22003x(split[0]);
             if (((Integer) x.first).intValue() == 2) {
                 return x;
             }
             for (int i = 1; i < split.length; i++) {
-                Pair<Integer, Integer> x2 = m22002x(split[i]);
+                Pair<Integer, Integer> x2 = m22003x(split[i]);
                 int intValue = (((Integer) x2.first).equals(x.first) || ((Integer) x2.second).equals(x.first)) ? ((Integer) x.first).intValue() : -1;
                 int intValue2 = (((Integer) x.second).intValue() == -1 || (!((Integer) x2.first).equals(x.second) && !((Integer) x2.second).equals(x.second))) ? -1 : ((Integer) x.second).intValue();
                 if (intValue == -1 && intValue2 == -1) {
@@ -924,7 +924,7 @@ public class C5828a {
         }
     }
 
-    public final void m22061A(String str) {
+    public final void m22062A(String str) {
         Throwable th;
         Objects.requireNonNull(str, "filename cannot be null");
         FileInputStream fileInputStream = null;
@@ -933,17 +933,17 @@ public class C5828a {
         try {
             FileInputStream fileInputStream2 = new FileInputStream(str);
             try {
-                if (m22053I(fileInputStream2.getFD())) {
+                if (m22054I(fileInputStream2.getFD())) {
                     this.f18660b = fileInputStream2.getFD();
                 } else {
                     this.f18660b = null;
                 }
-                m22048N(fileInputStream2);
-                C5836b.m21968c(fileInputStream2);
+                m22049N(fileInputStream2);
+                C5836b.m21969c(fileInputStream2);
             } catch (Throwable th2) {
                 th = th2;
                 fileInputStream = fileInputStream2;
-                C5836b.m21968c(fileInputStream);
+                C5836b.m21969c(fileInputStream);
                 throw th;
             }
         } catch (Throwable th3) {
@@ -951,7 +951,7 @@ public class C5828a {
         }
     }
 
-    public final boolean m22059C(byte[] bArr) {
+    public final boolean m22060C(byte[] bArr) {
         Throwable th;
         Exception e;
         C5830b bVar;
@@ -1035,16 +1035,16 @@ public class C5828a {
         return false;
     }
 
-    public final boolean m22057E(byte[] bArr) {
+    public final boolean m22058E(byte[] bArr) {
         Throwable th;
         boolean z = false;
         C5830b bVar = null;
         try {
             C5830b bVar2 = new C5830b(bArr);
             try {
-                ByteOrder Q = m22045Q(bVar2);
+                ByteOrder Q = m22046Q(bVar2);
                 this.f18666h = Q;
-                bVar2.m21997y0(Q);
+                bVar2.m21998y0(Q);
                 short readShort = bVar2.readShort();
                 if (readShort == 20306 || readShort == 21330) {
                     z = true;
@@ -1071,7 +1071,7 @@ public class C5828a {
         }
     }
 
-    public final boolean m22056F(byte[] bArr) {
+    public final boolean m22057F(byte[] bArr) {
         int i = 0;
         while (true) {
             byte[] bArr2 = f18613H;
@@ -1085,7 +1085,7 @@ public class C5828a {
         }
     }
 
-    public final boolean m22055G(byte[] bArr) {
+    public final boolean m22056G(byte[] bArr) {
         byte[] bytes = "FUJIFILMCCD-RAW".getBytes(Charset.defaultCharset());
         for (int i = 0; i < bytes.length; i++) {
             if (bArr[i] != bytes[i]) {
@@ -1095,16 +1095,16 @@ public class C5828a {
         return true;
     }
 
-    public final boolean m22054H(byte[] bArr) {
+    public final boolean m22055H(byte[] bArr) {
         Throwable th;
         boolean z = false;
         C5830b bVar = null;
         try {
             C5830b bVar2 = new C5830b(bArr);
             try {
-                ByteOrder Q = m22045Q(bVar2);
+                ByteOrder Q = m22046Q(bVar2);
                 this.f18666h = Q;
-                bVar2.m21997y0(Q);
+                bVar2.m21998y0(Q);
                 if (bVar2.readShort() == 85) {
                     z = true;
                 }
@@ -1130,17 +1130,17 @@ public class C5828a {
         }
     }
 
-    public final boolean m22052J(HashMap hashMap) {
+    public final boolean m22053J(HashMap hashMap) {
         C5832d dVar;
         int m;
         C5832d dVar2 = (C5832d) hashMap.get("BitsPerSample");
         if (dVar2 != null) {
-            int[] iArr = (int[]) dVar2.m21975o(this.f18666h);
+            int[] iArr = (int[]) dVar2.m21976o(this.f18666h);
             int[] iArr2 = f18657y;
             if (Arrays.equals(iArr2, iArr)) {
                 return true;
             }
-            if (this.f18662d == 3 && (dVar = (C5832d) hashMap.get("PhotometricInterpretation")) != null && (((m = dVar.m21977m(this.f18666h)) == 1 && Arrays.equals(iArr, f18606A)) || (m == 6 && Arrays.equals(iArr, iArr2)))) {
+            if (this.f18662d == 3 && (dVar = (C5832d) hashMap.get("PhotometricInterpretation")) != null && (((m = dVar.m21978m(this.f18666h)) == 1 && Arrays.equals(iArr, f18606A)) || (m == 6 && Arrays.equals(iArr, iArr2)))) {
                 return true;
             }
         }
@@ -1151,16 +1151,16 @@ public class C5828a {
         return false;
     }
 
-    public final boolean m22050L(HashMap hashMap) {
+    public final boolean m22051L(HashMap hashMap) {
         C5832d dVar = (C5832d) hashMap.get("ImageLength");
         C5832d dVar2 = (C5832d) hashMap.get("ImageWidth");
         if (dVar == null || dVar2 == null) {
             return false;
         }
-        return dVar.m21977m(this.f18666h) <= 512 && dVar2.m21977m(this.f18666h) <= 512;
+        return dVar.m21978m(this.f18666h) <= 512 && dVar2.m21978m(this.f18666h) <= 512;
     }
 
-    public final boolean m22049M(byte[] bArr) {
+    public final boolean m22050M(byte[] bArr) {
         int i = 0;
         while (true) {
             byte[] bArr2 = f18617L;
@@ -1184,16 +1184,16 @@ public class C5828a {
         }
     }
 
-    public final void m22048N(InputStream inputStream) {
+    public final void m22049N(InputStream inputStream) {
         Objects.requireNonNull(inputStream, "inputstream shouldn't be null");
         for (int i = 0; i < f18641j0.length; i++) {
             try {
                 try {
                     this.f18664f[i] = new HashMap<>();
                 } finally {
-                    m22035a();
+                    m22036a();
                     if (f18653v) {
-                        m22046P();
+                        m22047P();
                     }
                 }
             } catch (IOException | UnsupportedOperationException e) {
@@ -1201,7 +1201,7 @@ public class C5828a {
                 if (z) {
                     Log.w("ExifInterface", "Invalid image: ExifInterface got an unsupported image format file(ExifInterface supports JPEG and some RAW image formats only) or a corrupted JPEG file to ExifInterface.", e);
                 }
-                m22035a();
+                m22036a();
                 if (!z) {
                     return;
                 }
@@ -1209,46 +1209,46 @@ public class C5828a {
         }
         if (!this.f18663e) {
             BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream, 5000);
-            this.f18662d = m22012n(bufferedInputStream);
+            this.f18662d = m22013n(bufferedInputStream);
             inputStream = bufferedInputStream;
         }
-        if (m22024f0(this.f18662d)) {
+        if (m22025f0(this.f18662d)) {
             C5835g gVar = new C5835g(inputStream);
             if (this.f18663e) {
-                m22006t(gVar);
+                m22007t(gVar);
             } else {
                 int i2 = this.f18662d;
                 if (i2 == 12) {
-                    m22015k(gVar);
+                    m22016k(gVar);
                 } else if (i2 == 7) {
-                    m22011o(gVar);
+                    m22012o(gVar);
                 } else if (i2 == 10) {
-                    m22007s(gVar);
+                    m22008s(gVar);
                 } else {
-                    m22008r(gVar);
+                    m22009r(gVar);
                 }
             }
-            gVar.m21971A0(this.f18674p);
-            m22026e0(gVar);
+            gVar.m21972A0(this.f18674p);
+            m22027e0(gVar);
         } else {
             C5830b bVar = new C5830b(inputStream);
             int i3 = this.f18662d;
             if (i3 == 4) {
-                m22014l(bVar, 0, 0);
+                m22015l(bVar, 0, 0);
             } else if (i3 == 13) {
-                m22010p(bVar);
+                m22011p(bVar);
             } else if (i3 == 9) {
-                m22009q(bVar);
+                m22010q(bVar);
             } else if (i3 == 14) {
-                m22003w(bVar);
+                m22004w(bVar);
             }
         }
     }
 
-    public final void m22047O(C5830b bVar) {
-        ByteOrder Q = m22045Q(bVar);
+    public final void m22048O(C5830b bVar) {
+        ByteOrder Q = m22046Q(bVar);
         this.f18666h = Q;
-        bVar.m21997y0(Q);
+        bVar.m21998y0(Q);
         int readUnsignedShort = bVar.readUnsignedShort();
         int i = this.f18662d;
         if (i == 7 || i == 10 || readUnsignedShort == 42) {
@@ -1256,7 +1256,7 @@ public class C5828a {
             if (readInt >= 8) {
                 int i2 = readInt - 8;
                 if (i2 > 0) {
-                    bVar.m21996z0(i2);
+                    bVar.m21997z0(i2);
                     return;
                 }
                 return;
@@ -1266,17 +1266,17 @@ public class C5828a {
         throw new IOException("Invalid start code: " + Integer.toHexString(readUnsignedShort));
     }
 
-    public final void m22046P() {
+    public final void m22047P() {
         for (int i = 0; i < this.f18664f.length; i++) {
             Log.d("ExifInterface", "The size of tag group[" + i + "]: " + this.f18664f[i].size());
             for (Map.Entry<String, C5832d> entry : this.f18664f[i].entrySet()) {
                 C5832d value = entry.getValue();
-                Log.d("ExifInterface", "tagName: " + entry.getKey() + ", tagType: " + value.toString() + ", tagValue: '" + value.m21976n(this.f18666h) + "'");
+                Log.d("ExifInterface", "tagName: " + entry.getKey() + ", tagType: " + value.toString() + ", tagValue: '" + value.m21977n(this.f18666h) + "'");
             }
         }
     }
 
-    public final ByteOrder m22045Q(C5830b bVar) {
+    public final ByteOrder m22046Q(C5830b bVar) {
         short readShort = bVar.readShort();
         if (readShort == 18761) {
             if (f18653v) {
@@ -1293,23 +1293,23 @@ public class C5828a {
         }
     }
 
-    public final void m22044R(byte[] bArr, int i) {
+    public final void m22045R(byte[] bArr, int i) {
         C5835g gVar = new C5835g(bArr);
-        m22047O(gVar);
-        m22043S(gVar, i);
+        m22048O(gVar);
+        m22044S(gVar, i);
     }
 
-    public final void m22043S(p129j1.C5828a.C5835g r30, int r31) {
-        throw new UnsupportedOperationException("Method not decompiled: p129j1.C5828a.m22043S(j1.a$g, int):void");
+    public final void m22044S(p129j1.C5828a.C5835g r30, int r31) {
+        throw new UnsupportedOperationException("Method not decompiled: p129j1.C5828a.m22044S(j1.a$g, int):void");
     }
 
-    public final void m22042T(String str) {
+    public final void m22043T(String str) {
         for (int i = 0; i < f18641j0.length; i++) {
             this.f18664f[i].remove(str);
         }
     }
 
-    public final void m22041U(int i, String str, String str2) {
+    public final void m22042U(int i, String str, String str2) {
         if (!this.f18664f[i].isEmpty() && this.f18664f[i].get(str) != null) {
             HashMap<String, C5832d>[] hashMapArr = this.f18664f;
             hashMapArr[i].put(str2, hashMapArr[i].get(str));
@@ -1317,44 +1317,44 @@ public class C5828a {
         }
     }
 
-    public final void m22040V(C5835g gVar, int i) {
+    public final void m22041V(C5835g gVar, int i) {
         C5832d dVar = this.f18664f[i].get("ImageLength");
         C5832d dVar2 = this.f18664f[i].get("ImageWidth");
         if (dVar == null || dVar2 == null) {
             C5832d dVar3 = this.f18664f[i].get("JPEGInterchangeFormat");
             C5832d dVar4 = this.f18664f[i].get("JPEGInterchangeFormatLength");
             if (dVar3 != null && dVar4 != null) {
-                int m = dVar3.m21977m(this.f18666h);
-                int m2 = dVar3.m21977m(this.f18666h);
-                gVar.m21971A0(m);
+                int m = dVar3.m21978m(this.f18666h);
+                int m2 = dVar3.m21978m(this.f18666h);
+                gVar.m21972A0(m);
                 byte[] bArr = new byte[m2];
                 gVar.read(bArr);
-                m22014l(new C5830b(bArr), m, i);
+                m22015l(new C5830b(bArr), m, i);
             }
         }
     }
 
-    public void m22039W() {
-        throw new UnsupportedOperationException("Method not decompiled: p129j1.C5828a.m22039W():void");
+    public void m22040W() {
+        throw new UnsupportedOperationException("Method not decompiled: p129j1.C5828a.m22040W():void");
     }
 
-    public final void m22038X(InputStream inputStream, OutputStream outputStream) {
+    public final void m22039X(InputStream inputStream, OutputStream outputStream) {
         if (f18653v) {
             Log.d("ExifInterface", "saveJpegAttributes starting with (inputStream: " + inputStream + ", outputStream: " + outputStream + ")");
         }
         C5830b bVar = new C5830b(inputStream);
         C5831c cVar = new C5831c(outputStream, ByteOrder.BIG_ENDIAN);
         if (bVar.readByte() == -1) {
-            cVar.m21992t(-1);
+            cVar.m21993t(-1);
             if (bVar.readByte() == -40) {
-                cVar.m21992t(-40);
+                cVar.m21993t(-40);
                 C5832d dVar = null;
-                if (m22023g("Xmp") != null && this.f18679u) {
+                if (m22024g("Xmp") != null && this.f18679u) {
                     dVar = this.f18664f[0].remove("Xmp");
                 }
-                cVar.m21992t(-1);
-                cVar.m21992t(-31);
-                m22016j0(cVar);
+                cVar.m21993t(-1);
+                cVar.m21993t(-31);
+                m22017j0(cVar);
                 if (dVar != null) {
                     this.f18664f[0].put("Xmp", dVar);
                 }
@@ -1362,15 +1362,15 @@ public class C5828a {
                 while (bVar.readByte() == -1) {
                     byte readByte = bVar.readByte();
                     if (readByte == -39 || readByte == -38) {
-                        cVar.m21992t(-1);
-                        cVar.m21992t(readByte);
-                        C5836b.m21966e(bVar, cVar);
+                        cVar.m21993t(-1);
+                        cVar.m21993t(readByte);
+                        C5836b.m21967e(bVar, cVar);
                         return;
                     } else if (readByte != -31) {
-                        cVar.m21992t(-1);
-                        cVar.m21992t(readByte);
+                        cVar.m21993t(-1);
+                        cVar.m21993t(readByte);
                         int readUnsignedShort = bVar.readUnsignedShort();
-                        cVar.m21994B0(readUnsignedShort);
+                        cVar.m21995B0(readUnsignedShort);
                         int i = readUnsignedShort - 2;
                         if (i >= 0) {
                             while (i > 0) {
@@ -1391,12 +1391,12 @@ public class C5828a {
                                 if (bVar.read(bArr2) != 6) {
                                     throw new IOException("Invalid exif");
                                 } else if (Arrays.equals(bArr2, f18648q0)) {
-                                    bVar.m21996z0(readUnsignedShort2 - 6);
+                                    bVar.m21997z0(readUnsignedShort2 - 6);
                                 }
                             }
-                            cVar.m21992t(-1);
-                            cVar.m21992t(readByte);
-                            cVar.m21994B0(readUnsignedShort2 + 2);
+                            cVar.m21993t(-1);
+                            cVar.m21993t(readByte);
+                            cVar.m21995B0(readUnsignedShort2 + 2);
                             if (readUnsignedShort2 >= 6) {
                                 readUnsignedShort2 -= 6;
                                 cVar.write(bArr2);
@@ -1420,7 +1420,7 @@ public class C5828a {
         throw new IOException("Invalid marker");
     }
 
-    public final void m22037Y(InputStream inputStream, OutputStream outputStream) {
+    public final void m22038Y(InputStream inputStream, OutputStream outputStream) {
         Throwable th;
         ByteArrayOutputStream byteArrayOutputStream;
         if (f18653v) {
@@ -1430,15 +1430,15 @@ public class C5828a {
         ByteOrder byteOrder = ByteOrder.BIG_ENDIAN;
         C5831c cVar = new C5831c(outputStream, byteOrder);
         byte[] bArr = f18613H;
-        C5836b.m21965f(bVar, cVar, bArr.length);
+        C5836b.m21966f(bVar, cVar, bArr.length);
         int i = this.f18674p;
         if (i == 0) {
             int readInt = bVar.readInt();
-            cVar.m21991y0(readInt);
-            C5836b.m21965f(bVar, cVar, readInt + 4 + 4);
+            cVar.m21992y0(readInt);
+            C5836b.m21966f(bVar, cVar, readInt + 4 + 4);
         } else {
-            C5836b.m21965f(bVar, cVar, ((i - bArr.length) - 4) - 4);
-            bVar.m21996z0(bVar.readInt() + 4 + 4);
+            C5836b.m21966f(bVar, cVar, ((i - bArr.length) - 4) - 4);
+            bVar.m21997z0(bVar.readInt() + 4 + 4);
         }
         ByteArrayOutputStream byteArrayOutputStream2 = null;
         try {
@@ -1448,52 +1448,52 @@ public class C5828a {
         }
         try {
             C5831c cVar2 = new C5831c(byteArrayOutputStream, byteOrder);
-            m22016j0(cVar2);
+            m22017j0(cVar2);
             byte[] byteArray = ((ByteArrayOutputStream) cVar2.f18689a).toByteArray();
             cVar.write(byteArray);
             CRC32 crc32 = new CRC32();
             crc32.update(byteArray, 4, byteArray.length - 4);
-            cVar.m21991y0((int) crc32.getValue());
-            C5836b.m21968c(byteArrayOutputStream);
-            C5836b.m21966e(bVar, cVar);
+            cVar.m21992y0((int) crc32.getValue());
+            C5836b.m21969c(byteArrayOutputStream);
+            C5836b.m21967e(bVar, cVar);
         } catch (Throwable th3) {
             th = th3;
             byteArrayOutputStream2 = byteArrayOutputStream;
-            C5836b.m21968c(byteArrayOutputStream2);
+            C5836b.m21969c(byteArrayOutputStream2);
             throw th;
         }
     }
 
-    public final void m22036Z(java.io.InputStream r21, java.io.OutputStream r22) {
-        throw new UnsupportedOperationException("Method not decompiled: p129j1.C5828a.m22036Z(java.io.InputStream, java.io.OutputStream):void");
+    public final void m22037Z(java.io.InputStream r21, java.io.OutputStream r22) {
+        throw new UnsupportedOperationException("Method not decompiled: p129j1.C5828a.m22037Z(java.io.InputStream, java.io.OutputStream):void");
     }
 
-    public final void m22035a() {
-        String g = m22023g("DateTimeOriginal");
-        if (g != null && m22023g("DateTime") == null) {
-            this.f18664f[0].put("DateTime", C5832d.m21985e(g));
+    public final void m22036a() {
+        String g = m22024g("DateTimeOriginal");
+        if (g != null && m22024g("DateTime") == null) {
+            this.f18664f[0].put("DateTime", C5832d.m21986e(g));
         }
-        if (m22023g("ImageWidth") == null) {
-            this.f18664f[0].put("ImageWidth", C5832d.m21984f(0L, this.f18666h));
+        if (m22024g("ImageWidth") == null) {
+            this.f18664f[0].put("ImageWidth", C5832d.m21985f(0L, this.f18666h));
         }
-        if (m22023g("ImageLength") == null) {
-            this.f18664f[0].put("ImageLength", C5832d.m21984f(0L, this.f18666h));
+        if (m22024g("ImageLength") == null) {
+            this.f18664f[0].put("ImageLength", C5832d.m21985f(0L, this.f18666h));
         }
-        if (m22023g("Orientation") == null) {
-            this.f18664f[0].put("Orientation", C5832d.m21984f(0L, this.f18666h));
+        if (m22024g("Orientation") == null) {
+            this.f18664f[0].put("Orientation", C5832d.m21985f(0L, this.f18666h));
         }
-        if (m22023g("LightSource") == null) {
-            this.f18664f[1].put("LightSource", C5832d.m21984f(0L, this.f18666h));
+        if (m22024g("LightSource") == null) {
+            this.f18664f[1].put("LightSource", C5832d.m21985f(0L, this.f18666h));
         }
     }
 
-    public void m22034a0(double d) {
+    public void m22035a0(double d) {
         String str = d >= 0.0d ? "0" : "1";
-        m22032b0("GPSAltitude", new C5834f(Math.abs(d)).toString());
-        m22032b0("GPSAltitudeRef", str);
+        m22033b0("GPSAltitude", new C5834f(Math.abs(d)).toString());
+        m22033b0("GPSAltitudeRef", str);
     }
 
-    public final String m22033b(double d) {
+    public final String m22034b(double d) {
         long j = (long) d;
         double d2 = d - j;
         long j2 = (long) (d2 * 60.0d);
@@ -1501,7 +1501,7 @@ public class C5828a {
         return j + "/1," + j2 + "/1," + round + "/10000000";
     }
 
-    public void m22032b0(String str, String str2) {
+    public void m22033b0(String str, String str2) {
         C5833e eVar;
         int i;
         Matcher matcher;
@@ -1547,7 +1547,7 @@ public class C5828a {
         while (i4 < f18641j0.length) {
             if ((i4 != 4 || this.f18667i) && (eVar = f18644m0[i4].get(str3)) != null) {
                 if (str4 != null) {
-                    Pair<Integer, Integer> x = m22002x(str4);
+                    Pair<Integer, Integer> x = m22003x(str4);
                     int i5 = -1;
                     if (eVar.f18697c == ((Integer) x.first).intValue() || eVar.f18697c == ((Integer) x.second).intValue()) {
                         i = eVar.f18697c;
@@ -1581,7 +1581,7 @@ public class C5828a {
                     }
                     switch (i) {
                         case 1:
-                            this.f18664f[i4].put(str3, C5832d.m21989a(str4));
+                            this.f18664f[i4].put(str3, C5832d.m21990a(str4));
                             continue;
                             i4++;
                             i2 = 2;
@@ -1589,7 +1589,7 @@ public class C5828a {
                             i3 = 1;
                         case 2:
                         case 7:
-                            this.f18664f[i4].put(str3, C5832d.m21985e(str4));
+                            this.f18664f[i4].put(str3, C5832d.m21986e(str4));
                             continue;
                             i4++;
                             i2 = 2;
@@ -1601,7 +1601,7 @@ public class C5828a {
                             for (int i8 = 0; i8 < split.length; i8++) {
                                 iArr[i8] = Integer.parseInt(split[i8]);
                             }
-                            this.f18664f[i4].put(str3, C5832d.m21979k(iArr, this.f18666h));
+                            this.f18664f[i4].put(str3, C5832d.m21980k(iArr, this.f18666h));
                             continue;
                             i4++;
                             i2 = 2;
@@ -1613,7 +1613,7 @@ public class C5828a {
                             for (int i9 = 0; i9 < split2.length; i9++) {
                                 jArr[i9] = Long.parseLong(split2[i9]);
                             }
-                            this.f18664f[i4].put(str3, C5832d.m21983g(jArr, this.f18666h));
+                            this.f18664f[i4].put(str3, C5832d.m21984g(jArr, this.f18666h));
                             continue;
                             i4++;
                             i2 = 2;
@@ -1629,7 +1629,7 @@ public class C5828a {
                                 i10++;
                                 i5 = -1;
                             }
-                            this.f18664f[i4].put(str3, C5832d.m21981i(fVarArr, this.f18666h));
+                            this.f18664f[i4].put(str3, C5832d.m21982i(fVarArr, this.f18666h));
                             continue;
                             i4++;
                             i2 = 2;
@@ -1654,7 +1654,7 @@ public class C5828a {
                             for (int i11 = 0; i11 < split5.length; i11++) {
                                 iArr2[i11] = Integer.parseInt(split5[i11]);
                             }
-                            this.f18664f[i4].put(str3, C5832d.m21987c(iArr2, this.f18666h));
+                            this.f18664f[i4].put(str3, C5832d.m21988c(iArr2, this.f18666h));
                             break;
                         case 10:
                             String[] split6 = str4.split(",", -1);
@@ -1668,7 +1668,7 @@ public class C5828a {
                                 c = 0;
                                 i3 = 1;
                             }
-                            this.f18664f[i4].put(str3, C5832d.m21986d(fVarArr2, this.f18666h));
+                            this.f18664f[i4].put(str3, C5832d.m21987d(fVarArr2, this.f18666h));
                             break;
                         case 12:
                             String[] split8 = str4.split(",", -1);
@@ -1676,7 +1676,7 @@ public class C5828a {
                             for (int i13 = 0; i13 < split8.length; i13++) {
                                 dArr[i13] = Double.parseDouble(split8[i13]);
                             }
-                            this.f18664f[i4].put(str3, C5832d.m21988b(dArr, this.f18666h));
+                            this.f18664f[i4].put(str3, C5832d.m21989b(dArr, this.f18666h));
                             break;
                     }
                 } else {
@@ -1690,20 +1690,20 @@ public class C5828a {
         }
     }
 
-    public void m22030c0(Location location) {
+    public void m22031c0(Location location) {
         if (location != null) {
-            m22032b0("GPSProcessingMethod", location.getProvider());
-            m22028d0(location.getLatitude(), location.getLongitude());
-            m22034a0(location.getAltitude());
-            m22032b0("GPSSpeedRef", "K");
-            m22032b0("GPSSpeed", new C5834f((location.getSpeed() * ((float) TimeUnit.HOURS.toSeconds(1L))) / 1000.0f).toString());
+            m22033b0("GPSProcessingMethod", location.getProvider());
+            m22029d0(location.getLatitude(), location.getLongitude());
+            m22035a0(location.getAltitude());
+            m22033b0("GPSSpeedRef", "K");
+            m22033b0("GPSSpeed", new C5834f((location.getSpeed() * ((float) TimeUnit.HOURS.toSeconds(1L))) / 1000.0f).toString());
             String[] split = f18626U.format(new Date(location.getTime())).split("\\s+", -1);
-            m22032b0("GPSDateStamp", split[0]);
-            m22032b0("GPSTimeStamp", split[1]);
+            m22033b0("GPSDateStamp", split[0]);
+            m22033b0("GPSTimeStamp", split[1]);
         }
     }
 
-    public final void m22029d(C5830b bVar, C5831c cVar, byte[] bArr, byte[] bArr2) {
+    public final void m22030d(C5830b bVar, C5831c cVar, byte[] bArr, byte[] bArr2) {
         Charset charset;
         String str;
         while (true) {
@@ -1720,7 +1720,7 @@ public class C5828a {
                 sb2.append(str);
                 throw new IOException(sb2.toString());
             }
-            m22027e(bVar, cVar, bArr3);
+            m22028e(bVar, cVar, bArr3);
             if (Arrays.equals(bArr3, bArr)) {
                 return;
             }
@@ -1730,57 +1730,57 @@ public class C5828a {
         }
     }
 
-    public void m22028d0(double d, double d2) {
+    public void m22029d0(double d, double d2) {
         if (d < -90.0d || d > 90.0d || Double.isNaN(d)) {
             throw new IllegalArgumentException("Latitude value " + d + " is not valid.");
         } else if (d2 < -180.0d || d2 > 180.0d || Double.isNaN(d2)) {
             throw new IllegalArgumentException("Longitude value " + d2 + " is not valid.");
         } else {
-            m22032b0("GPSLatitudeRef", d >= 0.0d ? "N" : "S");
-            m22032b0("GPSLatitude", m22033b(Math.abs(d)));
-            m22032b0("GPSLongitudeRef", d2 >= 0.0d ? "E" : "W");
-            m22032b0("GPSLongitude", m22033b(Math.abs(d2)));
+            m22033b0("GPSLatitudeRef", d >= 0.0d ? "N" : "S");
+            m22033b0("GPSLatitude", m22034b(Math.abs(d)));
+            m22033b0("GPSLongitudeRef", d2 >= 0.0d ? "E" : "W");
+            m22033b0("GPSLongitude", m22034b(Math.abs(d2)));
         }
     }
 
-    public final void m22027e(C5830b bVar, C5831c cVar, byte[] bArr) {
+    public final void m22028e(C5830b bVar, C5831c cVar, byte[] bArr) {
         int readInt = bVar.readInt();
         cVar.write(bArr);
-        cVar.m21991y0(readInt);
+        cVar.m21992y0(readInt);
         if (readInt % 2 == 1) {
             readInt++;
         }
-        C5836b.m21965f(bVar, cVar, readInt);
+        C5836b.m21966f(bVar, cVar, readInt);
     }
 
-    public final void m22026e0(C5830b bVar) {
+    public final void m22027e0(C5830b bVar) {
         HashMap<String, C5832d> hashMap = this.f18664f[4];
         C5832d dVar = hashMap.get("Compression");
         if (dVar != null) {
-            int m = dVar.m21977m(this.f18666h);
+            int m = dVar.m21978m(this.f18666h);
             this.f18673o = m;
             if (m != 1) {
                 if (m == 6) {
-                    m22001y(bVar, hashMap);
+                    m22002y(bVar, hashMap);
                     return;
                 } else if (m != 7) {
                     return;
                 }
             }
-            if (m22052J(hashMap)) {
-                m22000z(bVar, hashMap);
+            if (m22053J(hashMap)) {
+                m22001z(bVar, hashMap);
                 return;
             }
             return;
         }
         this.f18673o = 6;
-        m22001y(bVar, hashMap);
+        m22002y(bVar, hashMap);
     }
 
-    public double m22025f(double d) {
-        double h = m22021h("GPSAltitude", -1.0d);
+    public double m22026f(double d) {
+        double h = m22022h("GPSAltitude", -1.0d);
         int i = -1;
-        int i2 = m22019i("GPSAltitudeRef", -1);
+        int i2 = m22020i("GPSAltitudeRef", -1);
         if (h < 0.0d || i2 < 0) {
             return d;
         }
@@ -1790,17 +1790,17 @@ public class C5828a {
         return h * i;
     }
 
-    public String m22023g(String str) {
+    public String m22024g(String str) {
         Objects.requireNonNull(str, "tag shouldn't be null");
-        C5832d j = m22017j(str);
+        C5832d j = m22018j(str);
         if (j != null) {
             if (!f18645n0.contains(str)) {
-                return j.m21976n(this.f18666h);
+                return j.m21977n(this.f18666h);
             }
             if (str.equals("GPSTimeStamp")) {
                 int i = j.f18691a;
                 if (i == 5 || i == 10) {
-                    C5834f[] fVarArr = (C5834f[]) j.m21975o(this.f18666h);
+                    C5834f[] fVarArr = (C5834f[]) j.m21976o(this.f18666h);
                     if (fVarArr != null && fVarArr.length == 3) {
                         return String.format("%02d:%02d:%02d", Integer.valueOf((int) (((float) fVarArr[0].f18699a) / ((float) fVarArr[0].f18700b))), Integer.valueOf((int) (((float) fVarArr[1].f18699a) / ((float) fVarArr[1].f18700b))), Integer.valueOf((int) (((float) fVarArr[2].f18699a) / ((float) fVarArr[2].f18700b))));
                     }
@@ -1811,14 +1811,14 @@ public class C5828a {
                 return null;
             }
             try {
-                return Double.toString(j.m21978l(this.f18666h));
+                return Double.toString(j.m21979l(this.f18666h));
             } catch (NumberFormatException unused) {
             }
         }
         return null;
     }
 
-    public final void m22022g0(int i, int i2) {
+    public final void m22023g0(int i, int i2) {
         if (!this.f18664f[i].isEmpty() && !this.f18664f[i2].isEmpty()) {
             C5832d dVar = this.f18664f[i].get("ImageLength");
             C5832d dVar2 = this.f18664f[i].get("ImageWidth");
@@ -1829,10 +1829,10 @@ public class C5828a {
                     Log.d("ExifInterface", "First image does not contain valid size information");
                 }
             } else if (dVar3 != null && dVar4 != null) {
-                int m = dVar.m21977m(this.f18666h);
-                int m2 = dVar2.m21977m(this.f18666h);
-                int m3 = dVar3.m21977m(this.f18666h);
-                int m4 = dVar4.m21977m(this.f18666h);
+                int m = dVar.m21978m(this.f18666h);
+                int m2 = dVar2.m21978m(this.f18666h);
+                int m3 = dVar3.m21978m(this.f18666h);
+                int m4 = dVar4.m21978m(this.f18666h);
                 if (m < m3 && m2 < m4) {
                     HashMap<String, C5832d>[] hashMapArr = this.f18664f;
                     HashMap<String, C5832d> hashMap = hashMapArr[i];
@@ -1847,20 +1847,20 @@ public class C5828a {
         }
     }
 
-    public double m22021h(String str, double d) {
+    public double m22022h(String str, double d) {
         Objects.requireNonNull(str, "tag shouldn't be null");
-        C5832d j = m22017j(str);
+        C5832d j = m22018j(str);
         if (j == null) {
             return d;
         }
         try {
-            return j.m21978l(this.f18666h);
+            return j.m21979l(this.f18666h);
         } catch (NumberFormatException unused) {
             return d;
         }
     }
 
-    public final void m22020h0(C5835g gVar, int i) {
+    public final void m22021h0(C5835g gVar, int i) {
         C5832d dVar;
         C5832d dVar2;
         C5832d dVar3 = this.f18664f[i].get("DefaultCropSize");
@@ -1870,83 +1870,83 @@ public class C5828a {
         C5832d dVar7 = this.f18664f[i].get("SensorRightBorder");
         if (dVar3 != null) {
             if (dVar3.f18691a == 5) {
-                C5834f[] fVarArr = (C5834f[]) dVar3.m21975o(this.f18666h);
+                C5834f[] fVarArr = (C5834f[]) dVar3.m21976o(this.f18666h);
                 if (fVarArr == null || fVarArr.length != 2) {
                     Log.w("ExifInterface", "Invalid crop size values. cropSize=" + Arrays.toString(fVarArr));
                     return;
                 }
-                dVar2 = C5832d.m21982h(fVarArr[0], this.f18666h);
-                dVar = C5832d.m21982h(fVarArr[1], this.f18666h);
+                dVar2 = C5832d.m21983h(fVarArr[0], this.f18666h);
+                dVar = C5832d.m21983h(fVarArr[1], this.f18666h);
             } else {
-                int[] iArr = (int[]) dVar3.m21975o(this.f18666h);
+                int[] iArr = (int[]) dVar3.m21976o(this.f18666h);
                 if (iArr == null || iArr.length != 2) {
                     Log.w("ExifInterface", "Invalid crop size values. cropSize=" + Arrays.toString(iArr));
                     return;
                 }
-                dVar2 = C5832d.m21980j(iArr[0], this.f18666h);
-                dVar = C5832d.m21980j(iArr[1], this.f18666h);
+                dVar2 = C5832d.m21981j(iArr[0], this.f18666h);
+                dVar = C5832d.m21981j(iArr[1], this.f18666h);
             }
             this.f18664f[i].put("ImageWidth", dVar2);
             this.f18664f[i].put("ImageLength", dVar);
         } else if (dVar4 == null || dVar5 == null || dVar6 == null || dVar7 == null) {
-            m22040V(gVar, i);
+            m22041V(gVar, i);
         } else {
-            int m = dVar4.m21977m(this.f18666h);
-            int m2 = dVar6.m21977m(this.f18666h);
-            int m3 = dVar7.m21977m(this.f18666h);
-            int m4 = dVar5.m21977m(this.f18666h);
+            int m = dVar4.m21978m(this.f18666h);
+            int m2 = dVar6.m21978m(this.f18666h);
+            int m3 = dVar7.m21978m(this.f18666h);
+            int m4 = dVar5.m21978m(this.f18666h);
             if (m2 > m && m3 > m4) {
-                C5832d j = C5832d.m21980j(m2 - m, this.f18666h);
-                C5832d j2 = C5832d.m21980j(m3 - m4, this.f18666h);
+                C5832d j = C5832d.m21981j(m2 - m, this.f18666h);
+                C5832d j2 = C5832d.m21981j(m3 - m4, this.f18666h);
                 this.f18664f[i].put("ImageLength", j);
                 this.f18664f[i].put("ImageWidth", j2);
             }
         }
     }
 
-    public int m22019i(String str, int i) {
+    public int m22020i(String str, int i) {
         Objects.requireNonNull(str, "tag shouldn't be null");
-        C5832d j = m22017j(str);
+        C5832d j = m22018j(str);
         if (j == null) {
             return i;
         }
         try {
-            return j.m21977m(this.f18666h);
+            return j.m21978m(this.f18666h);
         } catch (NumberFormatException unused) {
             return i;
         }
     }
 
-    public final void m22018i0() {
-        m22022g0(0, 5);
-        m22022g0(0, 4);
-        m22022g0(5, 4);
+    public final void m22019i0() {
+        m22023g0(0, 5);
+        m22023g0(0, 4);
+        m22023g0(5, 4);
         C5832d dVar = this.f18664f[1].get("PixelXDimension");
         C5832d dVar2 = this.f18664f[1].get("PixelYDimension");
         if (!(dVar == null || dVar2 == null)) {
             this.f18664f[0].put("ImageWidth", dVar);
             this.f18664f[0].put("ImageLength", dVar2);
         }
-        if (this.f18664f[4].isEmpty() && m22050L(this.f18664f[5])) {
+        if (this.f18664f[4].isEmpty() && m22051L(this.f18664f[5])) {
             HashMap<String, C5832d>[] hashMapArr = this.f18664f;
             hashMapArr[4] = hashMapArr[5];
             hashMapArr[5] = new HashMap<>();
         }
-        if (!m22050L(this.f18664f[4])) {
+        if (!m22051L(this.f18664f[4])) {
             Log.d("ExifInterface", "No image meets the size requirements of a thumbnail image.");
         }
-        m22041U(0, "ThumbnailOrientation", "Orientation");
-        m22041U(0, "ThumbnailImageLength", "ImageLength");
-        m22041U(0, "ThumbnailImageWidth", "ImageWidth");
-        m22041U(5, "ThumbnailOrientation", "Orientation");
-        m22041U(5, "ThumbnailImageLength", "ImageLength");
-        m22041U(5, "ThumbnailImageWidth", "ImageWidth");
-        m22041U(4, "Orientation", "ThumbnailOrientation");
-        m22041U(4, "ImageLength", "ThumbnailImageLength");
-        m22041U(4, "ImageWidth", "ThumbnailImageWidth");
+        m22042U(0, "ThumbnailOrientation", "Orientation");
+        m22042U(0, "ThumbnailImageLength", "ImageLength");
+        m22042U(0, "ThumbnailImageWidth", "ImageWidth");
+        m22042U(5, "ThumbnailOrientation", "Orientation");
+        m22042U(5, "ThumbnailImageLength", "ImageLength");
+        m22042U(5, "ThumbnailImageWidth", "ImageWidth");
+        m22042U(4, "Orientation", "ThumbnailOrientation");
+        m22042U(4, "ImageLength", "ThumbnailImageLength");
+        m22042U(4, "ImageWidth", "ThumbnailImageWidth");
     }
 
-    public final C5832d m22017j(String str) {
+    public final C5832d m22018j(String str) {
         Objects.requireNonNull(str, "tag shouldn't be null");
         if ("ISOSpeedRatings".equals(str)) {
             if (f18653v) {
@@ -1963,20 +1963,20 @@ public class C5828a {
         return null;
     }
 
-    public final int m22016j0(C5831c cVar) {
+    public final int m22017j0(C5831c cVar) {
         C5833e[][] eVarArr = f18641j0;
         int[] iArr = new int[eVarArr.length];
         int[] iArr2 = new int[eVarArr.length];
         for (C5833e eVar : f18642k0) {
-            m22042T(eVar.f18696b);
+            m22043T(eVar.f18696b);
         }
         if (this.f18667i) {
             if (this.f18668j) {
-                m22042T("StripOffsets");
-                m22042T("StripByteCounts");
+                m22043T("StripOffsets");
+                m22043T("StripByteCounts");
             } else {
-                m22042T("JPEGInterchangeFormat");
-                m22042T("JPEGInterchangeFormatLength");
+                m22043T("JPEGInterchangeFormat");
+                m22043T("JPEGInterchangeFormatLength");
             }
         }
         for (int i = 0; i < f18641j0.length; i++) {
@@ -1988,27 +1988,27 @@ public class C5828a {
             }
         }
         if (!this.f18664f[1].isEmpty()) {
-            this.f18664f[0].put(f18642k0[1].f18696b, C5832d.m21984f(0L, this.f18666h));
+            this.f18664f[0].put(f18642k0[1].f18696b, C5832d.m21985f(0L, this.f18666h));
         }
         if (!this.f18664f[2].isEmpty()) {
-            this.f18664f[0].put(f18642k0[2].f18696b, C5832d.m21984f(0L, this.f18666h));
+            this.f18664f[0].put(f18642k0[2].f18696b, C5832d.m21985f(0L, this.f18666h));
         }
         if (!this.f18664f[3].isEmpty()) {
-            this.f18664f[1].put(f18642k0[3].f18696b, C5832d.m21984f(0L, this.f18666h));
+            this.f18664f[1].put(f18642k0[3].f18696b, C5832d.m21985f(0L, this.f18666h));
         }
         if (this.f18667i) {
             if (this.f18668j) {
-                this.f18664f[4].put("StripOffsets", C5832d.m21980j(0, this.f18666h));
-                this.f18664f[4].put("StripByteCounts", C5832d.m21980j(this.f18671m, this.f18666h));
+                this.f18664f[4].put("StripOffsets", C5832d.m21981j(0, this.f18666h));
+                this.f18664f[4].put("StripByteCounts", C5832d.m21981j(this.f18671m, this.f18666h));
             } else {
-                this.f18664f[4].put("JPEGInterchangeFormat", C5832d.m21984f(0L, this.f18666h));
-                this.f18664f[4].put("JPEGInterchangeFormatLength", C5832d.m21984f(this.f18671m, this.f18666h));
+                this.f18664f[4].put("JPEGInterchangeFormat", C5832d.m21985f(0L, this.f18666h));
+                this.f18664f[4].put("JPEGInterchangeFormatLength", C5832d.m21985f(this.f18671m, this.f18666h));
             }
         }
         for (int i2 = 0; i2 < f18641j0.length; i2++) {
             int i3 = 0;
             for (Map.Entry<String, C5832d> entry2 : this.f18664f[i2].entrySet()) {
-                int p = entry2.getValue().m21974p();
+                int p = entry2.getValue().m21975p();
                 if (p > 4) {
                     i3 += p;
                 }
@@ -2024,9 +2024,9 @@ public class C5828a {
         }
         if (this.f18667i) {
             if (this.f18668j) {
-                this.f18664f[4].put("StripOffsets", C5832d.m21980j(i4, this.f18666h));
+                this.f18664f[4].put("StripOffsets", C5832d.m21981j(i4, this.f18666h));
             } else {
-                this.f18664f[4].put("JPEGInterchangeFormat", C5832d.m21984f(i4, this.f18666h));
+                this.f18664f[4].put("JPEGInterchangeFormat", C5832d.m21985f(i4, this.f18666h));
             }
             this.f18670l = i4;
             i4 += this.f18671m;
@@ -2040,57 +2040,57 @@ public class C5828a {
             }
         }
         if (!this.f18664f[1].isEmpty()) {
-            this.f18664f[0].put(f18642k0[1].f18696b, C5832d.m21984f(iArr[1], this.f18666h));
+            this.f18664f[0].put(f18642k0[1].f18696b, C5832d.m21985f(iArr[1], this.f18666h));
         }
         if (!this.f18664f[2].isEmpty()) {
-            this.f18664f[0].put(f18642k0[2].f18696b, C5832d.m21984f(iArr[2], this.f18666h));
+            this.f18664f[0].put(f18642k0[2].f18696b, C5832d.m21985f(iArr[2], this.f18666h));
         }
         if (!this.f18664f[3].isEmpty()) {
-            this.f18664f[1].put(f18642k0[3].f18696b, C5832d.m21984f(iArr[3], this.f18666h));
+            this.f18664f[1].put(f18642k0[3].f18696b, C5832d.m21985f(iArr[3], this.f18666h));
         }
         int i7 = this.f18662d;
         if (i7 == 4) {
-            cVar.m21994B0(i4);
+            cVar.m21995B0(i4);
             cVar.write(f18648q0);
         } else if (i7 == 13) {
-            cVar.m21991y0(i4);
+            cVar.m21992y0(i4);
             cVar.write(f18614I);
         } else if (i7 == 14) {
             cVar.write(f18619N);
-            cVar.m21991y0(i4);
+            cVar.m21992y0(i4);
         }
-        cVar.m21990z0(this.f18666h == ByteOrder.BIG_ENDIAN ? (short) 19789 : (short) 18761);
-        cVar.m21993m(this.f18666h);
-        cVar.m21994B0(42);
-        cVar.m21995A0(8L);
+        cVar.m21991z0(this.f18666h == ByteOrder.BIG_ENDIAN ? (short) 19789 : (short) 18761);
+        cVar.m21994m(this.f18666h);
+        cVar.m21995B0(42);
+        cVar.m21996A0(8L);
         for (int i8 = 0; i8 < f18641j0.length; i8++) {
             if (!this.f18664f[i8].isEmpty()) {
-                cVar.m21994B0(this.f18664f[i8].size());
+                cVar.m21995B0(this.f18664f[i8].size());
                 int size = iArr[i8] + 2 + (this.f18664f[i8].size() * 12) + 4;
                 for (Map.Entry<String, C5832d> entry3 : this.f18664f[i8].entrySet()) {
                     int i9 = f18644m0[i8].get(entry3.getKey()).f18695a;
                     C5832d value = entry3.getValue();
-                    int p2 = value.m21974p();
-                    cVar.m21994B0(i9);
-                    cVar.m21994B0(value.f18691a);
-                    cVar.m21991y0(value.f18692b);
+                    int p2 = value.m21975p();
+                    cVar.m21995B0(i9);
+                    cVar.m21995B0(value.f18691a);
+                    cVar.m21992y0(value.f18692b);
                     if (p2 > 4) {
-                        cVar.m21995A0(size);
+                        cVar.m21996A0(size);
                         size += p2;
                     } else {
                         cVar.write(value.f18694d);
                         if (p2 < 4) {
                             while (p2 < 4) {
-                                cVar.m21992t(0);
+                                cVar.m21993t(0);
                                 p2++;
                             }
                         }
                     }
                 }
                 if (i8 != 0 || this.f18664f[4].isEmpty()) {
-                    cVar.m21995A0(0L);
+                    cVar.m21996A0(0L);
                 } else {
-                    cVar.m21995A0(iArr[4]);
+                    cVar.m21996A0(iArr[4]);
                 }
                 for (Map.Entry<String, C5832d> entry4 : this.f18664f[i8].entrySet()) {
                     byte[] bArr = entry4.getValue().f18694d;
@@ -2101,23 +2101,23 @@ public class C5828a {
             }
         }
         if (this.f18667i) {
-            cVar.write(m22004v());
+            cVar.write(m22005v());
         }
         if (this.f18662d == 14 && i4 % 2 == 1) {
-            cVar.m21992t(0);
+            cVar.m21993t(0);
         }
-        cVar.m21993m(ByteOrder.BIG_ENDIAN);
+        cVar.m21994m(ByteOrder.BIG_ENDIAN);
         return i4;
     }
 
-    public final void m22015k(C5835g gVar) {
+    public final void m22016k(C5835g gVar) {
         String str;
         String str2;
         if (Build.VERSION.SDK_INT >= 28) {
             MediaMetadataRetriever mediaMetadataRetriever = new MediaMetadataRetriever();
             try {
                 try {
-                    C5836b.C5838b.m21960a(mediaMetadataRetriever, new C5829a(gVar));
+                    C5836b.C5838b.m21961a(mediaMetadataRetriever, new C5829a(gVar));
                     String extractMetadata = mediaMetadataRetriever.extractMetadata(33);
                     String extractMetadata2 = mediaMetadataRetriever.extractMetadata(34);
                     String extractMetadata3 = mediaMetadataRetriever.extractMetadata(26);
@@ -2136,10 +2136,10 @@ public class C5828a {
                         str = null;
                     }
                     if (str3 != null) {
-                        this.f18664f[0].put("ImageWidth", C5832d.m21980j(Integer.parseInt(str3), this.f18666h));
+                        this.f18664f[0].put("ImageWidth", C5832d.m21981j(Integer.parseInt(str3), this.f18666h));
                     }
                     if (str2 != null) {
-                        this.f18664f[0].put("ImageLength", C5832d.m21980j(Integer.parseInt(str2), this.f18666h));
+                        this.f18664f[0].put("ImageLength", C5832d.m21981j(Integer.parseInt(str2), this.f18666h));
                     }
                     if (str != null) {
                         int i = 1;
@@ -2151,13 +2151,13 @@ public class C5828a {
                         } else if (parseInt == 270) {
                             i = 8;
                         }
-                        this.f18664f[0].put("Orientation", C5832d.m21980j(i, this.f18666h));
+                        this.f18664f[0].put("Orientation", C5832d.m21981j(i, this.f18666h));
                     }
                     if (!(extractMetadata == null || extractMetadata2 == null)) {
                         int parseInt2 = Integer.parseInt(extractMetadata);
                         int parseInt3 = Integer.parseInt(extractMetadata2);
                         if (parseInt3 > 6) {
-                            gVar.m21971A0(parseInt2);
+                            gVar.m21972A0(parseInt2);
                             byte[] bArr = new byte[6];
                             if (gVar.read(bArr) == 6) {
                                 int i2 = parseInt2 + 6;
@@ -2166,7 +2166,7 @@ public class C5828a {
                                     byte[] bArr2 = new byte[i3];
                                     if (gVar.read(bArr2) == i3) {
                                         this.f18674p = i2;
-                                        m22044R(bArr2, 0);
+                                        m22045R(bArr2, 0);
                                     } else {
                                         throw new IOException("Can't read exif");
                                     }
@@ -2194,71 +2194,71 @@ public class C5828a {
         }
     }
 
-    public final void m22014l(p129j1.C5828a.C5830b r22, int r23, int r24) {
-        throw new UnsupportedOperationException("Method not decompiled: p129j1.C5828a.m22014l(j1.a$b, int, int):void");
+    public final void m22015l(p129j1.C5828a.C5830b r22, int r23, int r24) {
+        throw new UnsupportedOperationException("Method not decompiled: p129j1.C5828a.m22015l(j1.a$b, int, int):void");
     }
 
-    public double[] m22013m() {
-        String g = m22023g("GPSLatitude");
-        String g2 = m22023g("GPSLatitudeRef");
-        String g3 = m22023g("GPSLongitude");
-        String g4 = m22023g("GPSLongitudeRef");
+    public double[] m22014m() {
+        String g = m22024g("GPSLatitude");
+        String g2 = m22024g("GPSLatitudeRef");
+        String g3 = m22024g("GPSLongitude");
+        String g4 = m22024g("GPSLongitudeRef");
         if (g == null || g2 == null || g3 == null || g4 == null) {
             return null;
         }
         try {
-            return new double[]{m22031c(g, g2), m22031c(g3, g4)};
+            return new double[]{m22032c(g, g2), m22032c(g3, g4)};
         } catch (IllegalArgumentException unused) {
             Log.w("ExifInterface", "Latitude/longitude values are not parsable. " + String.format("latValue=%s, latRef=%s, lngValue=%s, lngRef=%s", g, g2, g3, g4));
             return null;
         }
     }
 
-    public final int m22012n(BufferedInputStream bufferedInputStream) {
+    public final int m22013n(BufferedInputStream bufferedInputStream) {
         bufferedInputStream.mark(5000);
         byte[] bArr = new byte[5000];
         bufferedInputStream.read(bArr);
         bufferedInputStream.reset();
-        if (m22058D(bArr)) {
+        if (m22059D(bArr)) {
             return 4;
         }
-        if (m22055G(bArr)) {
+        if (m22056G(bArr)) {
             return 9;
         }
-        if (m22059C(bArr)) {
+        if (m22060C(bArr)) {
             return 12;
         }
-        if (m22057E(bArr)) {
+        if (m22058E(bArr)) {
             return 7;
         }
-        if (m22054H(bArr)) {
+        if (m22055H(bArr)) {
             return 10;
         }
-        if (m22056F(bArr)) {
+        if (m22057F(bArr)) {
             return 13;
         }
-        return m22049M(bArr) ? 14 : 0;
+        return m22050M(bArr) ? 14 : 0;
     }
 
-    public final void m22011o(C5835g gVar) {
-        m22008r(gVar);
+    public final void m22012o(C5835g gVar) {
+        m22009r(gVar);
         C5832d dVar = this.f18664f[1].get("MakerNote");
         if (dVar != null) {
             C5835g gVar2 = new C5835g(dVar.f18694d);
-            gVar2.m21997y0(this.f18666h);
+            gVar2.m21998y0(this.f18666h);
             byte[] bArr = f18611F;
             byte[] bArr2 = new byte[bArr.length];
             gVar2.readFully(bArr2);
-            gVar2.m21971A0(0L);
+            gVar2.m21972A0(0L);
             byte[] bArr3 = f18612G;
             byte[] bArr4 = new byte[bArr3.length];
             gVar2.readFully(bArr4);
             if (Arrays.equals(bArr2, bArr)) {
-                gVar2.m21971A0(8L);
+                gVar2.m21972A0(8L);
             } else if (Arrays.equals(bArr4, bArr3)) {
-                gVar2.m21971A0(12L);
+                gVar2.m21972A0(12L);
             }
-            m22043S(gVar2, 6);
+            m22044S(gVar2, 6);
             C5832d dVar2 = this.f18664f[7].get("PreviewImageStart");
             C5832d dVar3 = this.f18664f[7].get("PreviewImageLength");
             if (!(dVar2 == null || dVar3 == null)) {
@@ -2267,7 +2267,7 @@ public class C5828a {
             }
             C5832d dVar4 = this.f18664f[8].get("AspectFrame");
             if (dVar4 != null) {
-                int[] iArr = (int[]) dVar4.m21975o(this.f18666h);
+                int[] iArr = (int[]) dVar4.m21976o(this.f18666h);
                 if (iArr == null || iArr.length != 4) {
                     Log.w("ExifInterface", "Invalid aspect frame values. frame=" + Arrays.toString(iArr));
                 } else if (iArr[2] > iArr[0] && iArr[3] > iArr[1]) {
@@ -2278,8 +2278,8 @@ public class C5828a {
                         i2 = i3 - i2;
                         i = i3 - i2;
                     }
-                    C5832d j = C5832d.m21980j(i, this.f18666h);
-                    C5832d j2 = C5832d.m21980j(i2, this.f18666h);
+                    C5832d j = C5832d.m21981j(i, this.f18666h);
+                    C5832d j2 = C5832d.m21981j(i2, this.f18666h);
                     this.f18664f[0].put("ImageWidth", j);
                     this.f18664f[0].put("ImageLength", j2);
                 }
@@ -2287,13 +2287,13 @@ public class C5828a {
         }
     }
 
-    public final void m22010p(C5830b bVar) {
+    public final void m22011p(C5830b bVar) {
         if (f18653v) {
             Log.d("ExifInterface", "getPngAttributes starting with: " + bVar);
         }
-        bVar.m21997y0(ByteOrder.BIG_ENDIAN);
+        bVar.m21998y0(ByteOrder.BIG_ENDIAN);
         byte[] bArr = f18613H;
-        bVar.m21996z0(bArr.length);
+        bVar.m21997z0(bArr.length);
         int length = bArr.length + 0;
         while (true) {
             try {
@@ -2315,17 +2315,17 @@ public class C5828a {
                                 crc32.update(bArr3);
                                 if (((int) crc32.getValue()) == readInt2) {
                                     this.f18674p = i2;
-                                    m22044R(bArr3, 0);
-                                    m22018i0();
-                                    m22026e0(new C5830b(bArr3));
+                                    m22045R(bArr3, 0);
+                                    m22019i0();
+                                    m22027e0(new C5830b(bArr3));
                                     return;
                                 }
                                 throw new IOException("Encountered invalid CRC value for PNG-EXIF chunk.\n recorded CRC value: " + readInt2 + ", calculated CRC value: " + crc32.getValue());
                             }
-                            throw new IOException("Failed to read given length for given PNG chunk type: " + C5836b.m21970a(bArr2));
+                            throw new IOException("Failed to read given length for given PNG chunk type: " + C5836b.m21971a(bArr2));
                         }
                         int i3 = readInt + 4;
-                        bVar.m21996z0(i3);
+                        bVar.m21997z0(i3);
                         length = i2 + i3;
                     } else {
                         return;
@@ -2339,12 +2339,12 @@ public class C5828a {
         }
     }
 
-    public final void m22009q(C5830b bVar) {
+    public final void m22010q(C5830b bVar) {
         boolean z = f18653v;
         if (z) {
             Log.d("ExifInterface", "getRafAttributes starting with: " + bVar);
         }
-        bVar.m21996z0(84);
+        bVar.m21997z0(84);
         byte[] bArr = new byte[4];
         byte[] bArr2 = new byte[4];
         byte[] bArr3 = new byte[4];
@@ -2355,11 +2355,11 @@ public class C5828a {
         int i2 = ByteBuffer.wrap(bArr2).getInt();
         int i3 = ByteBuffer.wrap(bArr3).getInt();
         byte[] bArr4 = new byte[i2];
-        bVar.m21996z0(i - bVar.m21999m());
+        bVar.m21997z0(i - bVar.m22000m());
         bVar.read(bArr4);
-        m22014l(new C5830b(bArr4), i, 5);
-        bVar.m21996z0(i3 - bVar.m21999m());
-        bVar.m21997y0(ByteOrder.BIG_ENDIAN);
+        m22015l(new C5830b(bArr4), i, 5);
+        bVar.m21997z0(i3 - bVar.m22000m());
+        bVar.m21998y0(ByteOrder.BIG_ENDIAN);
         int readInt = bVar.readInt();
         if (z) {
             Log.d("ExifInterface", "numberOfDirectoryEntry: " + readInt);
@@ -2370,8 +2370,8 @@ public class C5828a {
             if (readUnsignedShort == f18636e0.f18695a) {
                 short readShort = bVar.readShort();
                 short readShort2 = bVar.readShort();
-                C5832d j = C5832d.m21980j(readShort, this.f18666h);
-                C5832d j2 = C5832d.m21980j(readShort2, this.f18666h);
+                C5832d j = C5832d.m21981j(readShort, this.f18666h);
+                C5832d j2 = C5832d.m21981j(readShort2, this.f18666h);
                 this.f18664f[0].put("ImageLength", j);
                 this.f18664f[0].put("ImageWidth", j2);
                 if (f18653v) {
@@ -2380,23 +2380,23 @@ public class C5828a {
                 }
                 return;
             }
-            bVar.m21996z0(readUnsignedShort2);
+            bVar.m21997z0(readUnsignedShort2);
         }
     }
 
-    public final void m22008r(C5835g gVar) {
+    public final void m22009r(C5835g gVar) {
         C5832d dVar;
-        m22047O(gVar);
-        m22043S(gVar, 0);
-        m22020h0(gVar, 0);
-        m22020h0(gVar, 5);
-        m22020h0(gVar, 4);
-        m22018i0();
+        m22048O(gVar);
+        m22044S(gVar, 0);
+        m22021h0(gVar, 0);
+        m22021h0(gVar, 5);
+        m22021h0(gVar, 4);
+        m22019i0();
         if (this.f18662d == 8 && (dVar = this.f18664f[1].get("MakerNote")) != null) {
             C5835g gVar2 = new C5835g(dVar.f18694d);
-            gVar2.m21997y0(this.f18666h);
-            gVar2.m21996z0(6);
-            m22043S(gVar2, 9);
+            gVar2.m21998y0(this.f18666h);
+            gVar2.m21997z0(6);
+            m22044S(gVar2, 9);
             C5832d dVar2 = this.f18664f[9].get("ColorSpace");
             if (dVar2 != null) {
                 this.f18664f[1].put("ColorSpace", dVar2);
@@ -2404,14 +2404,14 @@ public class C5828a {
         }
     }
 
-    public final void m22007s(C5835g gVar) {
+    public final void m22008s(C5835g gVar) {
         if (f18653v) {
             Log.d("ExifInterface", "getRw2Attributes starting with: " + gVar);
         }
-        m22008r(gVar);
+        m22009r(gVar);
         C5832d dVar = this.f18664f[0].get("JpgFromRaw");
         if (dVar != null) {
-            m22014l(new C5830b(dVar.f18694d), (int) dVar.f18693c, 5);
+            m22015l(new C5830b(dVar.f18694d), (int) dVar.f18693c, 5);
         }
         C5832d dVar2 = this.f18664f[0].get("ISO");
         C5832d dVar3 = this.f18664f[1].get("PhotographicSensitivity");
@@ -2420,36 +2420,36 @@ public class C5828a {
         }
     }
 
-    public final void m22006t(C5835g gVar) {
+    public final void m22007t(C5835g gVar) {
         byte[] bArr = f18648q0;
-        gVar.m21996z0(bArr.length);
+        gVar.m21997z0(bArr.length);
         byte[] bArr2 = new byte[gVar.available()];
         gVar.readFully(bArr2);
         this.f18674p = bArr.length;
-        m22044R(bArr2, 0);
+        m22045R(bArr2, 0);
     }
 
-    public byte[] m22005u() {
+    public byte[] m22006u() {
         int i = this.f18673o;
         if (i == 6 || i == 7) {
-            return m22004v();
+            return m22005v();
         }
         return null;
     }
 
-    public byte[] m22004v() {
-        throw new UnsupportedOperationException("Method not decompiled: p129j1.C5828a.m22004v():byte[]");
+    public byte[] m22005v() {
+        throw new UnsupportedOperationException("Method not decompiled: p129j1.C5828a.m22005v():byte[]");
     }
 
-    public final void m22003w(C5830b bVar) {
+    public final void m22004w(C5830b bVar) {
         if (f18653v) {
             Log.d("ExifInterface", "getWebpAttributes starting with: " + bVar);
         }
-        bVar.m21997y0(ByteOrder.LITTLE_ENDIAN);
-        bVar.m21996z0(f18617L.length);
+        bVar.m21998y0(ByteOrder.LITTLE_ENDIAN);
+        bVar.m21997z0(f18617L.length);
         int readInt = bVar.readInt() + 8;
         byte[] bArr = f18618M;
-        bVar.m21996z0(bArr.length);
+        bVar.m21997z0(bArr.length);
         int length = bArr.length + 8;
         while (true) {
             try {
@@ -2461,11 +2461,11 @@ public class C5828a {
                         byte[] bArr3 = new byte[readInt2];
                         if (bVar.read(bArr3) == readInt2) {
                             this.f18674p = i;
-                            m22044R(bArr3, 0);
-                            m22026e0(new C5830b(bArr3));
+                            m22045R(bArr3, 0);
+                            m22027e0(new C5830b(bArr3));
                             return;
                         }
-                        throw new IOException("Failed to read given length for given PNG chunk type: " + C5836b.m21970a(bArr2));
+                        throw new IOException("Failed to read given length for given PNG chunk type: " + C5836b.m21971a(bArr2));
                     }
                     if (readInt2 % 2 == 1) {
                         readInt2++;
@@ -2473,7 +2473,7 @@ public class C5828a {
                     length = i + readInt2;
                     if (length != readInt) {
                         if (length <= readInt) {
-                            bVar.m21996z0(readInt2);
+                            bVar.m21997z0(readInt2);
                         } else {
                             throw new IOException("Encountered WebP file with invalid chunk size");
                         }
@@ -2489,12 +2489,12 @@ public class C5828a {
         }
     }
 
-    public final void m22001y(C5830b bVar, HashMap hashMap) {
+    public final void m22002y(C5830b bVar, HashMap hashMap) {
         C5832d dVar = (C5832d) hashMap.get("JPEGInterchangeFormat");
         C5832d dVar2 = (C5832d) hashMap.get("JPEGInterchangeFormatLength");
         if (dVar != null && dVar2 != null) {
-            int m = dVar.m21977m(this.f18666h);
-            int m2 = dVar2.m21977m(this.f18666h);
+            int m = dVar.m21978m(this.f18666h);
+            int m2 = dVar2.m21978m(this.f18666h);
             if (this.f18662d == 7) {
                 m += this.f18675q;
             }
@@ -2515,12 +2515,12 @@ public class C5828a {
         }
     }
 
-    public final void m22000z(C5830b bVar, HashMap hashMap) {
+    public final void m22001z(C5830b bVar, HashMap hashMap) {
         C5832d dVar = (C5832d) hashMap.get("StripOffsets");
         C5832d dVar2 = (C5832d) hashMap.get("StripByteCounts");
         if (dVar != null && dVar2 != null) {
-            long[] d = C5836b.m21967d(dVar.m21975o(this.f18666h));
-            long[] d2 = C5836b.m21967d(dVar2.m21975o(this.f18666h));
+            long[] d = C5836b.m21968d(dVar.m21976o(this.f18666h));
+            long[] d2 = C5836b.m21968d(dVar2.m21976o(this.f18666h));
             if (d == null || d.length == 0) {
                 Log.w("ExifInterface", "stripOffsets should not be null or have zero length.");
             } else if (d2 == null || d2.length == 0) {
@@ -2584,7 +2584,7 @@ public class C5828a {
             this.f18686a.mark(Integer.MAX_VALUE);
         }
 
-        public void m21971A0(long j) {
+        public void m21972A0(long j) {
             int i = this.f18688c;
             if (i > j) {
                 this.f18688c = 0;
@@ -2592,7 +2592,7 @@ public class C5828a {
             } else {
                 j -= i;
             }
-            m21996z0((int) j);
+            m21997z0((int) j);
         }
 
         public C5835g(InputStream inputStream) {
@@ -2618,7 +2618,7 @@ public class C5828a {
             this.f18698d = -1;
         }
 
-        public boolean m21973a(int i) {
+        public boolean m21974a(int i) {
             int i2;
             int i3 = this.f18697c;
             if (i3 == 7 || i == 7 || i3 == i || (i2 = this.f18698d) == i) {
@@ -2647,7 +2647,7 @@ public class C5828a {
         this.f18665g = new HashSet(eVarArr.length);
         this.f18666h = ByteOrder.BIG_ENDIAN;
         Objects.requireNonNull(str, "filename cannot be null");
-        m22061A(str);
+        m22062A(str);
     }
 
     public C5828a(InputStream inputStream) {
@@ -2663,7 +2663,7 @@ public class C5828a {
         this.f18659a = null;
         if (i == 1) {
             BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream, f18648q0.length);
-            if (!m22060B(bufferedInputStream)) {
+            if (!m22061B(bufferedInputStream)) {
                 Log.w("ExifInterface", "Given data does not follow the structure of an Exif-only data.");
                 return;
             }
@@ -2677,7 +2677,7 @@ public class C5828a {
         } else {
             if (inputStream instanceof FileInputStream) {
                 FileInputStream fileInputStream = (FileInputStream) inputStream;
-                if (m22053I(fileInputStream.getFD())) {
+                if (m22054I(fileInputStream.getFD())) {
                     this.f18661c = null;
                     this.f18660b = fileInputStream.getFD();
                 }
@@ -2685,6 +2685,6 @@ public class C5828a {
             this.f18661c = null;
             this.f18660b = null;
         }
-        m22048N(inputStream);
+        m22049N(inputStream);
     }
 }

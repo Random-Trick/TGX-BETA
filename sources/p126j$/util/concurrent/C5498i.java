@@ -34,7 +34,7 @@ public final class C5498i extends AbstractC5491b implements Iterator, Enumeratio
                 if (mVar != null) {
                     Object obj = mVar.f18021b;
                     this.f18009j = mVar;
-                    m22521b();
+                    m22522b();
                     return obj;
                 }
                 throw new NoSuchElementException();
@@ -43,7 +43,7 @@ public final class C5498i extends AbstractC5491b implements Iterator, Enumeratio
                 if (mVar2 != null) {
                     Object obj2 = mVar2.f18022c;
                     this.f18009j = mVar2;
-                    m22521b();
+                    m22522b();
                     return obj2;
                 }
                 throw new NoSuchElementException();

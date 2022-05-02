@@ -9,7 +9,7 @@ public class C5874i extends C5861b {
         super(status);
     }
 
-    public void m21898c(@RecentlyNonNull Activity activity, int i) {
-        m21929a().m30392g(activity, i);
+    public void m21899c(@RecentlyNonNull Activity activity, int i) {
+        m21930a().m30394g(activity, i);
     }
 }

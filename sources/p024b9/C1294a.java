@@ -11,11 +11,11 @@ public class C1294a {
         this.f4668b = new BigDecimal(d2);
     }
 
-    public BigDecimal m37790a() {
+    public BigDecimal m37793a() {
         return this.f4667a;
     }
 
-    public BigDecimal m37789b() {
+    public BigDecimal m37792b() {
         return this.f4668b;
     }
 }

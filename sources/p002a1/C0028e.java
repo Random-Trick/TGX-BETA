@@ -19,11 +19,11 @@ public final class C0028e {
         }
 
         @Override
-        public int mo42559a(CharSequence charSequence, int i, int i2) {
+        public int mo42562a(CharSequence charSequence, int i, int i2) {
             int i3 = i2 + i;
             boolean z = false;
             while (i < i3) {
-                int a = C0028e.m42561a(Character.getDirectionality(charSequence.charAt(i)));
+                int a = C0028e.m42564a(Character.getDirectionality(charSequence.charAt(i)));
                 if (a != 0) {
                     if (a != 1) {
                         continue;
@@ -48,11 +48,11 @@ public final class C0028e {
         public static final C0030b f76a = new C0030b();
 
         @Override
-        public int mo42559a(CharSequence charSequence, int i, int i2) {
+        public int mo42562a(CharSequence charSequence, int i, int i2) {
             int i3 = i2 + i;
             int i4 = 2;
             while (i < i3 && i4 == 2) {
-                i4 = C0028e.m42560b(Character.getDirectionality(charSequence.charAt(i)));
+                i4 = C0028e.m42563b(Character.getDirectionality(charSequence.charAt(i)));
                 i++;
             }
             return i4;
@@ -60,7 +60,7 @@ public final class C0028e {
     }
 
     public interface AbstractC0031c {
-        int mo42559a(CharSequence charSequence, int i, int i2);
+        int mo42562a(CharSequence charSequence, int i, int i2);
     }
 
     public static abstract class AbstractC0032d implements AbstractC0027d {
@@ -71,25 +71,25 @@ public final class C0028e {
         }
 
         @Override
-        public boolean mo42558a(CharSequence charSequence, int i, int i2) {
+        public boolean mo42561a(CharSequence charSequence, int i, int i2) {
             if (charSequence == null || i < 0 || i2 < 0 || charSequence.length() - i2 < i) {
                 throw new IllegalArgumentException();
             } else if (this.f77a == null) {
-                return mo42556b();
+                return mo42559b();
             } else {
-                return m42557c(charSequence, i, i2);
+                return m42560c(charSequence, i, i2);
             }
         }
 
-        public abstract boolean mo42556b();
+        public abstract boolean mo42559b();
 
-        public final boolean m42557c(CharSequence charSequence, int i, int i2) {
-            int a = this.f77a.mo42559a(charSequence, i, i2);
+        public final boolean m42560c(CharSequence charSequence, int i, int i2) {
+            int a = this.f77a.mo42562a(charSequence, i, i2);
             if (a == 0) {
                 return true;
             }
             if (a != 1) {
-                return mo42556b();
+                return mo42559b();
             }
             return false;
         }
@@ -104,7 +104,7 @@ public final class C0028e {
         }
 
         @Override
-        public boolean mo42556b() {
+        public boolean mo42559b() {
             return this.f78b;
         }
     }
@@ -117,8 +117,8 @@ public final class C0028e {
         }
 
         @Override
-        public boolean mo42556b() {
-            return C0035f.m42554b(Locale.getDefault()) == 1;
+        public boolean mo42559b() {
+            return C0035f.m42557b(Locale.getDefault()) == 1;
         }
     }
 
@@ -128,14 +128,14 @@ public final class C0028e {
         f71d = new C0033e(bVar, true);
     }
 
-    public static int m42561a(int i) {
+    public static int m42564a(int i) {
         if (i != 0) {
             return (i == 1 || i == 2) ? 0 : 2;
         }
         return 1;
     }
 
-    public static int m42560b(int i) {
+    public static int m42563b(int i) {
         if (i != 0) {
             if (i == 1 || i == 2) {
                 return 0;

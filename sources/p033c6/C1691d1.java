@@ -9,7 +9,7 @@ public final class C1691d1<E> extends AbstractC1921t<E> {
     }
 
     @Override
-    public final E mo35906a(int i) {
+    public final E mo35909a(int i) {
         return this.f6183c.get(i);
     }
 }

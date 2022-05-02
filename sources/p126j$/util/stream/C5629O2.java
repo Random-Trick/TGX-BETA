@@ -11,7 +11,7 @@ final class C5629O2 extends AbstractC5569C2 {
     }
 
     @Override
-    public void mo22134d(int i) {
+    public void mo22135d(int i) {
         int[] iArr = this.f18206c;
         int i2 = this.f18207d;
         this.f18207d = i2 + 1;
@@ -19,27 +19,27 @@ final class C5629O2 extends AbstractC5569C2 {
     }
 
     @Override
-    public void mo22132h() {
+    public void mo22133h() {
         int i = 0;
         Arrays.sort(this.f18206c, 0, this.f18207d);
-        this.f18413a.mo22131j(this.f18207d);
+        this.f18413a.mo22132j(this.f18207d);
         if (!this.f18115b) {
             while (i < this.f18207d) {
-                this.f18413a.mo22134d(this.f18206c[i]);
+                this.f18413a.mo22135d(this.f18206c[i]);
                 i++;
             }
         } else {
-            while (i < this.f18207d && !this.f18413a.mo22130t()) {
-                this.f18413a.mo22134d(this.f18206c[i]);
+            while (i < this.f18207d && !this.f18413a.mo22131t()) {
+                this.f18413a.mo22135d(this.f18206c[i]);
                 i++;
             }
         }
-        this.f18413a.mo22132h();
+        this.f18413a.mo22133h();
         this.f18206c = null;
     }
 
     @Override
-    public void mo22131j(long j) {
+    public void mo22132j(long j) {
         if (j < 2147483639) {
             this.f18206c = new int[(int) j];
             return;

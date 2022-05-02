@@ -8,9 +8,9 @@ import android.provider.Settings;
 import java.io.File;
 
 public final class C2059c {
-    public static boolean m35731a(Activity activity) {
+    public static boolean m35734a(Activity activity) {
         StringBuilder sb2;
-        if (m35729c(activity)) {
+        if (m35732c(activity)) {
             return true;
         }
         String str = Build.PRODUCT;
@@ -55,7 +55,7 @@ public final class C2059c {
         return new File(sb2.toString()).exists();
     }
 
-    public static boolean m35730b(Context context, String str) {
+    public static boolean m35733b(Context context, String str) {
         try {
             return context.getPackageManager().getApplicationInfo(str, 0) != null;
         } catch (Throwable unused) {
@@ -63,7 +63,7 @@ public final class C2059c {
         }
     }
 
-    public static boolean m35729c(Context context) {
+    public static boolean m35732c(Context context) {
         try {
             return "true".equals(Settings.System.getString(context.getContentResolver(), "firebase.test.lab"));
         } catch (Throwable unused) {

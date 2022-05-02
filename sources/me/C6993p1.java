@@ -9,9 +9,9 @@ import p139jb.AbstractC5911c;
 import p156kd.C6257p;
 
 public class C6993p1 extends View implements AbstractC5911c, AbstractC6828a {
-    public final C6257p f22179a = new C6257p(this, 0);
-    public boolean f22180b;
-    public Bitmap f22181c;
+    public final C6257p f22182a = new C6257p(this, 0);
+    public boolean f22183b;
+    public Bitmap f22184c;
 
     public C6993p1(Context context) {
         super(context);
@@ -19,27 +19,27 @@ public class C6993p1 extends View implements AbstractC5911c, AbstractC6828a {
 
     @Override
     public void mo4501a3() {
-        this.f22179a.mo20249Z();
+        this.f22182a.mo20250Z();
     }
 
     @Override
     public void mo8229b() {
-        this.f22179a.mo20247b();
+        this.f22182a.mo20248b();
     }
 
     @Override
     public void mo8225f() {
-        this.f22179a.mo20245f();
+        this.f22182a.mo20246f();
     }
 
     public C6257p getReceiver() {
-        return this.f22179a;
+        return this.f22182a;
     }
 
     @Override
     public void onDraw(Canvas canvas) {
-        this.f22179a.draw(canvas);
-        C1359b.m37496w(this, canvas, this.f22181c);
+        this.f22182a.draw(canvas);
+        C1359b.m37499w(this, canvas, this.f22184c);
     }
 
     @Override
@@ -47,19 +47,19 @@ public class C6993p1 extends View implements AbstractC5911c, AbstractC6828a {
         super.onMeasure(i, i2);
         int measuredWidth = getMeasuredWidth();
         int measuredHeight = getMeasuredHeight();
-        this.f22179a.mo20256K0(getPaddingLeft(), getPaddingTop(), measuredWidth - getPaddingRight(), measuredHeight - getPaddingBottom());
-        if (this.f22180b) {
-            this.f22179a.mo20259D0(Math.min(measuredWidth, measuredHeight) / 2);
+        this.f22182a.mo20257K0(getPaddingLeft(), getPaddingTop(), measuredWidth - getPaddingRight(), measuredHeight - getPaddingBottom());
+        if (this.f22183b) {
+            this.f22182a.mo20260D0(Math.min(measuredWidth, measuredHeight) / 2);
         }
     }
 
     public void setCircular(boolean z) {
-        this.f22180b = z;
+        this.f22183b = z;
     }
 
     public void setOverlayBitmap(Bitmap bitmap) {
-        if (this.f22181c != bitmap) {
-            this.f22181c = bitmap;
+        if (this.f22184c != bitmap) {
+            this.f22184c = bitmap;
             invalidate();
         }
     }

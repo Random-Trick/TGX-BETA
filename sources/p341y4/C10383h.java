@@ -9,8 +9,8 @@ import p217p4.AbstractC8041f;
 import p217p4.C8043h;
 
 public final class C10383h extends AbstractC8039e {
-    public final C1189b0 f33413o = new C1189b0();
-    public final C10373c f33414p = new C10373c();
+    public final C1189b0 f33416o = new C1189b0();
+    public final C10373c f33417p = new C10373c();
 
     public C10383h() {
         super("WebvttDecoder");
@@ -20,8 +20,8 @@ public final class C10383h extends AbstractC8039e {
         int i = -1;
         int i2 = 0;
         while (i == -1) {
-            i2 = b0Var.m38138e();
-            String p = b0Var.m38127p();
+            i2 = b0Var.m38141e();
+            String p = b0Var.m38130p();
             if (p == null) {
                 i = 0;
             } else if ("STYLE".equals(p)) {
@@ -30,40 +30,40 @@ public final class C10383h extends AbstractC8039e {
                 i = p.startsWith("NOTE") ? 1 : 3;
             }
         }
-        b0Var.m38144P(i2);
+        b0Var.m38147P(i2);
         return i;
     }
 
     public static void m5205E(C1189b0 b0Var) {
         do {
-        } while (!TextUtils.isEmpty(b0Var.m38127p()));
+        } while (!TextUtils.isEmpty(b0Var.m38130p()));
     }
 
     @Override
     public AbstractC8041f mo5207B(byte[] bArr, int i, boolean z) {
         C10375e m;
-        this.f33413o.m38146N(bArr, i);
+        this.f33416o.m38149N(bArr, i);
         ArrayList arrayList = new ArrayList();
         try {
-            C10384i.m5201d(this.f33413o);
+            C10384i.m5201d(this.f33416o);
             do {
-            } while (!TextUtils.isEmpty(this.f33413o.m38127p()));
+            } while (!TextUtils.isEmpty(this.f33416o.m38130p()));
             ArrayList arrayList2 = new ArrayList();
             while (true) {
-                int D = m5206D(this.f33413o);
+                int D = m5206D(this.f33416o);
                 if (D == 0) {
                     return new C10386k(arrayList2);
                 }
                 if (D == 1) {
-                    m5205E(this.f33413o);
+                    m5205E(this.f33416o);
                 } else if (D == 2) {
                     if (arrayList2.isEmpty()) {
-                        this.f33413o.m38127p();
-                        arrayList.addAll(this.f33414p.m5284d(this.f33413o));
+                        this.f33416o.m38130p();
+                        arrayList.addAll(this.f33417p.m5284d(this.f33416o));
                     } else {
                         throw new C8043h("A style block was found after the first cue.");
                     }
-                } else if (D == 3 && (m = C10376f.m5233m(this.f33413o, arrayList)) != null) {
+                } else if (D == 3 && (m = C10376f.m5233m(this.f33416o, arrayList)) != null) {
                     arrayList2.add(m);
                 }
             }

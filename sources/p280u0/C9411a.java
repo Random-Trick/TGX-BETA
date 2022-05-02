@@ -12,10 +12,10 @@ import java.lang.reflect.Method;
 import org.xmlpull.v1.XmlPullParser;
 
 public final class C9411a {
-    public static Method f30460a;
-    public static boolean f30461b;
-    public static Method f30462c;
-    public static boolean f30463d;
+    public static Method f30463a;
+    public static boolean f30464b;
+    public static Method f30465c;
+    public static boolean f30466d;
 
     public static void m8767a(Drawable drawable, Resources.Theme theme) {
         if (Build.VERSION.SDK_INT >= 21) {
@@ -50,23 +50,23 @@ public final class C9411a {
             return drawable.getLayoutDirection();
         }
         if (i >= 17) {
-            if (!f30463d) {
+            if (!f30466d) {
                 try {
                     Method declaredMethod = Drawable.class.getDeclaredMethod("getLayoutDirection", new Class[0]);
-                    f30462c = declaredMethod;
+                    f30465c = declaredMethod;
                     declaredMethod.setAccessible(true);
                 } catch (NoSuchMethodException e) {
                     Log.i("DrawableCompat", "Failed to retrieve getLayoutDirection() method", e);
                 }
-                f30463d = true;
+                f30466d = true;
             }
-            Method method = f30462c;
+            Method method = f30465c;
             if (method != null) {
                 try {
                     return ((Integer) method.invoke(drawable, new Object[0])).intValue();
                 } catch (Exception e2) {
                     Log.i("DrawableCompat", "Failed to invoke getLayoutDirection() via reflection", e2);
-                    f30462c = null;
+                    f30465c = null;
                 }
             }
         }
@@ -117,24 +117,24 @@ public final class C9411a {
             return drawable.setLayoutDirection(i);
         }
         if (i2 >= 17) {
-            if (!f30461b) {
+            if (!f30464b) {
                 try {
                     Method declaredMethod = Drawable.class.getDeclaredMethod("setLayoutDirection", Integer.TYPE);
-                    f30460a = declaredMethod;
+                    f30463a = declaredMethod;
                     declaredMethod.setAccessible(true);
                 } catch (NoSuchMethodException e) {
                     Log.i("DrawableCompat", "Failed to retrieve setLayoutDirection(int) method", e);
                 }
-                f30461b = true;
+                f30464b = true;
             }
-            Method method = f30460a;
+            Method method = f30463a;
             if (method != null) {
                 try {
                     method.invoke(drawable, Integer.valueOf(i));
                     return true;
                 } catch (Exception e2) {
                     Log.i("DrawableCompat", "Failed to invoke setLayoutDirection(int) via reflection", e2);
-                    f30460a = null;
+                    f30463a = null;
                 }
             }
         }

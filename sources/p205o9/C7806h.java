@@ -15,15 +15,15 @@ import p316w9.C10007i;
 import qa.C8298k;
 
 public final class C7806h {
-    public final C10007i f25004a = new C10007i("Timer");
-    public final AbstractC10012l<Long> f25005b = new C7809c();
-    public final AbstractC10012l<Long> f25006c = new C7807a();
-    public final AbstractC10012l<Double> f25007d = new C7810d();
-    public final Map<C5048h<EnumC7313d, Integer>, AbstractC4177b> f25008e = new LinkedHashMap();
-    public final AbstractC4177b f25009f;
-    public final C7802d f25010g;
-    public final C7811i f25011h;
-    public final AbstractC10012l<Integer> f25012i;
+    public final C10007i f25007a = new C10007i("Timer");
+    public final AbstractC10012l<Long> f25008b = new C7809c();
+    public final AbstractC10012l<Long> f25009c = new C7807a();
+    public final AbstractC10012l<Double> f25010d = new C7810d();
+    public final Map<C5048h<EnumC7313d, Integer>, AbstractC4177b> f25011e = new LinkedHashMap();
+    public final AbstractC4177b f25012f;
+    public final C7802d f25013g;
+    public final C7811i f25014h;
+    public final AbstractC10012l<Integer> f25015i;
 
     public static final class C7807a implements AbstractC10012l<Long> {
         public C7807a() {
@@ -31,7 +31,7 @@ public final class C7806h {
 
         @Override
         public boolean mo6237g(EnumC7313d dVar) {
-            C8298k.m12934e(dVar, "type");
+            C8298k.m12933e(dVar, "type");
             return true;
         }
 
@@ -46,12 +46,12 @@ public final class C7806h {
 
         public Long mo6239d(EnumC7313d dVar) {
             long j;
-            C8298k.m12934e(dVar, "type");
-            if (!C7806h.this.f25011h.m14990a().mo6237g(dVar)) {
+            C8298k.m12933e(dVar, "type");
+            if (!C7806h.this.f25014h.m14990a().mo6237g(dVar)) {
                 j = 0;
             } else {
                 C7806h hVar = C7806h.this;
-                j = hVar.m15016h(hVar.f25010g.mo6239d(dVar), ((Number) C7806h.this.f25012i.mo6239d(dVar)).intValue());
+                j = hVar.m15016h(hVar.f25013g.mo6239d(dVar), ((Number) C7806h.this.f25015i.mo6239d(dVar)).intValue());
             }
             return Long.valueOf(j);
         }
@@ -76,7 +76,7 @@ public final class C7806h {
         }
 
         public Long mo6238f(EnumC7313d dVar) {
-            C8298k.m12934e(dVar, "type");
+            C8298k.m12933e(dVar, "type");
             return (Long) AbstractC10012l.C10013a.m6228e(this, dVar);
         }
 
@@ -90,37 +90,37 @@ public final class C7806h {
     }
 
     public static final class C7808b implements AbstractC4177b {
-        public long f25014a;
-        public long f25015b = Long.MAX_VALUE;
-        public final long f25016c;
-        public final int f25018e;
-        public final EnumC7313d f25019f;
+        public long f25017a;
+        public long f25018b = Long.MAX_VALUE;
+        public final long f25019c;
+        public final int f25021e;
+        public final EnumC7313d f25022f;
 
         public C7808b(int i, EnumC7313d dVar) {
             long j;
-            this.f25018e = i;
-            this.f25019f = dVar;
+            this.f25021e = i;
+            this.f25022f = dVar;
             if (i == 0) {
                 j = 0;
             } else {
-                Object obj = C7806h.this.f25008e.get(C5054l.m24188a(dVar, Integer.valueOf(i - 1)));
-                C8298k.m12936c(obj);
+                Object obj = C7806h.this.f25011e.get(C5054l.m24189a(dVar, Integer.valueOf(i - 1)));
+                C8298k.m12935c(obj);
                 j = ((AbstractC4177b) obj).mo15003a(dVar, Long.MAX_VALUE) + 10;
             }
-            this.f25016c = j;
+            this.f25019c = j;
         }
 
         @Override
         public long mo15003a(EnumC7313d dVar, long j) {
-            C8298k.m12934e(dVar, "type");
+            C8298k.m12933e(dVar, "type");
             if (j == Long.MAX_VALUE) {
-                return this.f25014a;
+                return this.f25017a;
             }
-            if (this.f25015b == Long.MAX_VALUE) {
-                this.f25015b = j;
+            if (this.f25018b == Long.MAX_VALUE) {
+                this.f25018b = j;
             }
-            this.f25014a = this.f25016c + (j - this.f25015b);
-            return C7806h.this.f25009f.mo15003a(dVar, this.f25014a);
+            this.f25017a = this.f25019c + (j - this.f25018b);
+            return C7806h.this.f25012f.mo15003a(dVar, this.f25017a);
         }
     }
 
@@ -130,7 +130,7 @@ public final class C7806h {
 
         @Override
         public boolean mo6237g(EnumC7313d dVar) {
-            C8298k.m12934e(dVar, "type");
+            C8298k.m12933e(dVar, "type");
             return true;
         }
 
@@ -145,12 +145,12 @@ public final class C7806h {
 
         public Long mo6239d(EnumC7313d dVar) {
             long j;
-            C8298k.m12934e(dVar, "type");
-            if (!C7806h.this.f25011h.m14990a().mo6237g(dVar)) {
+            C8298k.m12933e(dVar, "type");
+            if (!C7806h.this.f25014h.m14990a().mo6237g(dVar)) {
                 j = 0;
             } else {
                 C7806h hVar = C7806h.this;
-                j = hVar.m15010n(hVar.f25010g.mo6239d(dVar), ((Number) C7806h.this.f25012i.mo6239d(dVar)).intValue());
+                j = hVar.m15010n(hVar.f25013g.mo6239d(dVar), ((Number) C7806h.this.f25015i.mo6239d(dVar)).intValue());
             }
             return Long.valueOf(j);
         }
@@ -175,7 +175,7 @@ public final class C7806h {
         }
 
         public Long mo6238f(EnumC7313d dVar) {
-            C8298k.m12934e(dVar, "type");
+            C8298k.m12933e(dVar, "type");
             return (Long) AbstractC10012l.C10013a.m6228e(this, dVar);
         }
 
@@ -194,7 +194,7 @@ public final class C7806h {
 
         @Override
         public boolean mo6237g(EnumC7313d dVar) {
-            C8298k.m12934e(dVar, "type");
+            C8298k.m12933e(dVar, "type");
             return true;
         }
 
@@ -208,7 +208,7 @@ public final class C7806h {
         }
 
         public Double mo6239d(EnumC7313d dVar) {
-            C8298k.m12934e(dVar, "type");
+            C8298k.m12933e(dVar, "type");
             long longValue = C7806h.this.m15014j().mo6239d(dVar).longValue();
             long longValue2 = C7806h.this.m15015i().mo6239d(dVar).longValue();
             return Double.valueOf(longValue2 == 0 ? 0.0d : longValue / longValue2);
@@ -234,7 +234,7 @@ public final class C7806h {
         }
 
         public Double mo6238f(EnumC7313d dVar) {
-            C8298k.m12934e(dVar, "type");
+            C8298k.m12933e(dVar, "type");
             return (Double) AbstractC10012l.C10013a.m6228e(this, dVar);
         }
 
@@ -248,14 +248,14 @@ public final class C7806h {
     }
 
     public C7806h(AbstractC4177b bVar, C7802d dVar, C7811i iVar, AbstractC10012l<Integer> lVar) {
-        C8298k.m12934e(bVar, "interpolator");
-        C8298k.m12934e(dVar, "sources");
-        C8298k.m12934e(iVar, "tracks");
-        C8298k.m12934e(lVar, "current");
-        this.f25009f = bVar;
-        this.f25010g = dVar;
-        this.f25011h = iVar;
-        this.f25012i = lVar;
+        C8298k.m12933e(bVar, "interpolator");
+        C8298k.m12933e(dVar, "sources");
+        C8298k.m12933e(iVar, "tracks");
+        C8298k.m12933e(lVar, "current");
+        this.f25012f = bVar;
+        this.f25013g = dVar;
+        this.f25014h = iVar;
+        this.f25015i = lVar;
     }
 
     public final long m15016h(List<? extends AbstractC1296b> list, int i) {
@@ -264,7 +264,7 @@ public final class C7806h {
         for (Object obj : list) {
             i2++;
             if (i2 < 0) {
-                C5304n.m23358n();
+                C5304n.m23359n();
             }
             AbstractC1296b bVar = (AbstractC1296b) obj;
             j += i2 < i ? bVar.mo6288g() : bVar.mo6291d();
@@ -273,30 +273,30 @@ public final class C7806h {
     }
 
     public final AbstractC10012l<Long> m15015i() {
-        return this.f25006c;
+        return this.f25009c;
     }
 
     public final AbstractC10012l<Long> m15014j() {
-        return this.f25005b;
+        return this.f25008b;
     }
 
     public final AbstractC10012l<Double> m15013k() {
-        return this.f25007d;
+        return this.f25010d;
     }
 
     public final long m15012l() {
         long j = Long.MAX_VALUE;
-        long longValue = this.f25011h.m14990a().mo6233o() ? this.f25006c.mo6240b().longValue() : Long.MAX_VALUE;
-        if (this.f25011h.m14990a().mo6236k()) {
-            j = this.f25006c.mo6241a().longValue();
+        long longValue = this.f25014h.m14990a().mo6233o() ? this.f25009c.mo6240b().longValue() : Long.MAX_VALUE;
+        if (this.f25014h.m14990a().mo6236k()) {
+            j = this.f25009c.mo6241a().longValue();
         }
         return Math.min(longValue, j);
     }
 
     public final AbstractC4177b m15011m(EnumC7313d dVar, int i) {
-        C8298k.m12934e(dVar, "type");
-        Map<C5048h<EnumC7313d, Integer>, AbstractC4177b> map = this.f25008e;
-        C5048h<EnumC7313d, Integer> a = C5054l.m24188a(dVar, Integer.valueOf(i));
+        C8298k.m12933e(dVar, "type");
+        Map<C5048h<EnumC7313d, Integer>, AbstractC4177b> map = this.f25011e;
+        C5048h<EnumC7313d, Integer> a = C5054l.m24189a(dVar, Integer.valueOf(i));
         AbstractC4177b bVar = map.get(a);
         if (bVar == null) {
             bVar = new C7808b(i, dVar);
@@ -311,7 +311,7 @@ public final class C7806h {
         for (Object obj : list) {
             i2++;
             if (i2 < 0) {
-                C5304n.m23358n();
+                C5304n.m23359n();
             }
             AbstractC1296b bVar = (AbstractC1296b) obj;
             if (i2 <= i) {

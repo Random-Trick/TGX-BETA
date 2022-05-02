@@ -20,23 +20,23 @@ public class C3411zs extends AbstractView$OnClickListenerC3371ys<C4868i.C4874f> 
     }
 
     @Override
-    public void mo30657Ug(AbstractC5918j<List<C4868i.C4874f>> jVar) {
-        this.f30167b.m2157y5(jVar);
+    public void mo30659Ug(AbstractC5918j<List<C4868i.C4874f>> jVar) {
+        this.f30170b.m2157y5(jVar);
     }
 
     @Override
     public CharSequence mo9313X9() {
-        return C4403w.m27869i1(R.string.EmojiSets);
+        return C4403w.m27871i1(R.string.EmojiSets);
     }
 
-    public void mo30659Pg(C4868i.C4874f fVar) {
-        C5078d.m23986z().m24005g(fVar);
-        if (m30672Vg() != null) {
-            m30672Vg().m34813fi();
+    public void mo30661Pg(C4868i.C4874f fVar) {
+        C5078d.m23987z().m24006g(fVar);
+        if (m30674Vg() != null) {
+            m30674Vg().m34816fi();
         }
     }
 
-    public C4868i.C4874f mo30658Tg() {
-        return C4868i.m24726c2().m24835N0();
+    public C4868i.C4874f mo30660Tg() {
+        return C4868i.m24727c2().m24836N0();
     }
 }

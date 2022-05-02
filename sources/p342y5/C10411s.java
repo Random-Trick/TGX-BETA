@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 import javax.annotation.CheckForNull;
 
 public final class C10411s {
-    public static final Logger f33479a = Logger.getLogger(C10411s.class.getName());
+    public static final Logger f33482a = Logger.getLogger(C10411s.class.getName());
 
     public static void m5157a(@CheckForNull InputStream inputStream) {
         if (inputStream != null) {
@@ -15,7 +15,7 @@ public final class C10411s {
                 inputStream.close();
             } catch (IOException e) {
                 try {
-                    f33479a.logp(Level.WARNING, "com.google.common.io.Closeables", "close", "IOException thrown while closing Closeable.", (Throwable) e);
+                    f33482a.logp(Level.WARNING, "com.google.common.io.Closeables", "close", "IOException thrown while closing Closeable.", (Throwable) e);
                 } catch (IOException e2) {
                     throw new AssertionError(e2);
                 }

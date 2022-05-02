@@ -10,20 +10,20 @@ public class C2041c extends AbstractC8693b {
     public int f7245b;
 
     @Override
-    public ByteBuffer mo11723a() {
+    public ByteBuffer mo11722a() {
         ByteBuffer allocate = ByteBuffer.allocate(1);
-        C8634g.m11851j(allocate, this.f7245b + (this.f7244a << 6));
+        C8634g.m11850j(allocate, this.f7245b + (this.f7244a << 6));
         return (ByteBuffer) allocate.rewind();
     }
 
     @Override
-    public String mo11722b() {
+    public String mo11721b() {
         return "sync";
     }
 
     @Override
-    public void mo11721c(ByteBuffer byteBuffer) {
-        int n = C8632e.m11862n(byteBuffer);
+    public void mo11720c(ByteBuffer byteBuffer) {
+        int n = C8632e.m11861n(byteBuffer);
         this.f7244a = (n & 192) >> 6;
         this.f7245b = n & 63;
     }

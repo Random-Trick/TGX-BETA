@@ -8,7 +8,7 @@ public final class C5688c1 extends C5683b1 implements AbstractC5577E0 {
     }
 
     @Override
-    public AbstractC5602J0 mo42630b() {
+    public AbstractC5602J0 mo42633b() {
         if (this.f18316b >= this.f18315a.length) {
             return this;
         }
@@ -16,7 +16,7 @@ public final class C5688c1 extends C5683b1 implements AbstractC5577E0 {
     }
 
     @Override
-    public void mo22135c(double d) {
+    public void mo22136c(double d) {
         int i = this.f18316b;
         double[] dArr = this.f18315a;
         if (i < dArr.length) {
@@ -28,26 +28,26 @@ public final class C5688c1 extends C5683b1 implements AbstractC5577E0 {
     }
 
     @Override
-    public void mo22134d(int i) {
-        AbstractC5572D0.m22414m();
+    public void mo22135d(int i) {
+        AbstractC5572D0.m22415m();
         throw null;
     }
 
     @Override
-    public void mo22133e(long j) {
-        AbstractC5572D0.m22412n();
+    public void mo22134e(long j) {
+        AbstractC5572D0.m22413n();
         throw null;
     }
 
     @Override
-    public void mo22132h() {
+    public void mo22133h() {
         if (this.f18316b < this.f18315a.length) {
             throw new IllegalStateException(String.format("End size %d is less than fixed size %d", Integer.valueOf(this.f18316b), Integer.valueOf(this.f18315a.length)));
         }
     }
 
     @Override
-    public void mo22131j(long j) {
+    public void mo22132j(long j) {
         if (j == this.f18315a.length) {
             this.f18316b = 0;
             return;
@@ -56,7 +56,7 @@ public final class C5688c1 extends C5683b1 implements AbstractC5577E0 {
     }
 
     @Override
-    public boolean mo22130t() {
+    public boolean mo22131t() {
         return false;
     }
 
@@ -65,7 +65,7 @@ public final class C5688c1 extends C5683b1 implements AbstractC5577E0 {
         return String.format("DoubleFixedNodeBuilder[%d][%s]", Integer.valueOf(this.f18315a.length - this.f18316b), Arrays.toString(this.f18315a));
     }
 
-    public void mo22128k(Double d) {
-        AbstractC5572D0.m22419j(this, d);
+    public void mo22129k(Double d) {
+        AbstractC5572D0.m22420j(this, d);
     }
 }

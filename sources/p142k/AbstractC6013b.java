@@ -18,7 +18,7 @@ public abstract class AbstractC6013b {
         this.f19152a = context;
     }
 
-    public final MenuItem m21569c(MenuItem menuItem) {
+    public final MenuItem m21570c(MenuItem menuItem) {
         if (!(menuItem instanceof AbstractMenuItemC9830b)) {
             return menuItem;
         }
@@ -35,7 +35,7 @@ public abstract class AbstractC6013b {
         return cVar;
     }
 
-    public final SubMenu m21568d(SubMenu subMenu) {
+    public final SubMenu m21569d(SubMenu subMenu) {
         if (!(subMenu instanceof AbstractSubMenuC9831c)) {
             return subMenu;
         }
@@ -52,7 +52,7 @@ public abstract class AbstractC6013b {
         return gVar;
     }
 
-    public final void m21567e() {
+    public final void m21568e() {
         Map<AbstractMenuItemC9830b, MenuItem> map = this.f19153b;
         if (map != null) {
             map.clear();
@@ -63,7 +63,7 @@ public abstract class AbstractC6013b {
         }
     }
 
-    public final void m21566f(int i) {
+    public final void m21567f(int i) {
         Map<AbstractMenuItemC9830b, MenuItem> map = this.f19153b;
         if (map != null) {
             Iterator<AbstractMenuItemC9830b> it = map.keySet().iterator();
@@ -75,7 +75,7 @@ public abstract class AbstractC6013b {
         }
     }
 
-    public final void m21565g(int i) {
+    public final void m21566g(int i) {
         Map<AbstractMenuItemC9830b, MenuItem> map = this.f19153b;
         if (map != null) {
             Iterator<AbstractMenuItemC9830b> it = map.keySet().iterator();

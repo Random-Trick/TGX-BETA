@@ -10,8 +10,8 @@ public class VoIPMediaButtonReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         TGCallService w;
-        if ("android.intent.action.MEDIA_BUTTON".equals(intent.getAction()) && (w = TGCallService.m14211w()) != null) {
-            w.m14250L((KeyEvent) intent.getParcelableExtra("android.intent.extra.KEY_EVENT"));
+        if ("android.intent.action.MEDIA_BUTTON".equals(intent.getAction()) && (w = TGCallService.m14210w()) != null) {
+            w.m14249L((KeyEvent) intent.getParcelableExtra("android.intent.extra.KEY_EVENT"));
         }
     }
 }

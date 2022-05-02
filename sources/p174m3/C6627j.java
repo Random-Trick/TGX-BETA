@@ -31,24 +31,24 @@ public final class C6627j implements AbstractC6642l1 {
         public float f20721b = 1.03f;
         public long f20722c = 1000;
         public float f20723d = 1.0E-7f;
-        public long f20724e = C1216l0.m37953q0(20);
-        public long f20725f = C1216l0.m37953q0(500);
+        public long f20724e = C1216l0.m37956q0(20);
+        public long f20725f = C1216l0.m37956q0(500);
         public float f20726g = 0.999f;
 
-        public C6627j m19757a() {
+        public C6627j m19758a() {
             return new C6627j(this.f20720a, this.f20721b, this.f20722c, this.f20723d, this.f20724e, this.f20725f, this.f20726g);
         }
     }
 
-    public static long m19759h(long j, long j2, float f) {
+    public static long m19760h(long j, long j2, float f) {
         return (((float) j) * f) + ((1.0f - f) * ((float) j2));
     }
 
     @Override
-    public void mo19721a(C6660o1.C6669g gVar) {
-        this.f20708h = C1216l0.m37953q0(gVar.f20866a);
-        this.f20711k = C1216l0.m37953q0(gVar.f20867b);
-        this.f20712l = C1216l0.m37953q0(gVar.f20868c);
+    public void mo19722a(C6660o1.C6669g gVar) {
+        this.f20708h = C1216l0.m37956q0(gVar.f20866a);
+        this.f20711k = C1216l0.m37956q0(gVar.f20867b);
+        this.f20712l = C1216l0.m37956q0(gVar.f20868c);
         float f = gVar.f20864M;
         if (f == -3.4028235E38f) {
             f = this.f20701a;
@@ -59,36 +59,36 @@ public final class C6627j implements AbstractC6642l1 {
             f2 = this.f20702b;
         }
         this.f20714n = f2;
-        m19760g();
+        m19761g();
     }
 
     @Override
-    public float mo19720b(long j, long j2) {
+    public float mo19721b(long j, long j2) {
         if (this.f20708h == -9223372036854775807L) {
             return 1.0f;
         }
-        m19758i(j, j2);
+        m19759i(j, j2);
         if (this.f20717q != -9223372036854775807L && SystemClock.elapsedRealtime() - this.f20717q < this.f20703c) {
             return this.f20716p;
         }
         this.f20717q = SystemClock.elapsedRealtime();
-        m19761f(j);
+        m19762f(j);
         long j3 = j - this.f20713m;
         if (Math.abs(j3) < this.f20705e) {
             this.f20716p = 1.0f;
         } else {
-            this.f20716p = C1216l0.m37958o((this.f20704d * ((float) j3)) + 1.0f, this.f20715o, this.f20714n);
+            this.f20716p = C1216l0.m37961o((this.f20704d * ((float) j3)) + 1.0f, this.f20715o, this.f20714n);
         }
         return this.f20716p;
     }
 
     @Override
-    public long mo19719c() {
+    public long mo19720c() {
         return this.f20713m;
     }
 
     @Override
-    public void mo19718d() {
+    public void mo19719d() {
         long j = this.f20713m;
         if (j != -9223372036854775807L) {
             long j2 = j + this.f20706f;
@@ -102,19 +102,19 @@ public final class C6627j implements AbstractC6642l1 {
     }
 
     @Override
-    public void mo19717e(long j) {
+    public void mo19718e(long j) {
         this.f20709i = j;
-        m19760g();
+        m19761g();
     }
 
-    public final void m19761f(long j) {
+    public final void m19762f(long j) {
         long j2 = this.f20718r + (this.f20719s * 3);
         if (this.f20713m > j2) {
-            float q0 = (float) C1216l0.m37953q0(this.f20703c);
-            this.f20713m = C0201d.m42091c(j2, this.f20710j, this.f20713m - (((this.f20716p - 1.0f) * q0) + ((this.f20714n - 1.0f) * q0)));
+            float q0 = (float) C1216l0.m37956q0(this.f20703c);
+            this.f20713m = C0201d.m42094c(j2, this.f20710j, this.f20713m - (((this.f20716p - 1.0f) * q0) + ((this.f20714n - 1.0f) * q0)));
             return;
         }
-        long q = C1216l0.m37954q(j - (Math.max(0.0f, this.f20716p - 1.0f) / this.f20704d), this.f20713m, j2);
+        long q = C1216l0.m37957q(j - (Math.max(0.0f, this.f20716p - 1.0f) / this.f20704d), this.f20713m, j2);
         this.f20713m = q;
         long j3 = this.f20712l;
         if (j3 != -9223372036854775807L && q > j3) {
@@ -122,7 +122,7 @@ public final class C6627j implements AbstractC6642l1 {
         }
     }
 
-    public final void m19760g() {
+    public final void m19761g() {
         long j = this.f20708h;
         if (j != -9223372036854775807L) {
             long j2 = this.f20709i;
@@ -149,7 +149,7 @@ public final class C6627j implements AbstractC6642l1 {
         }
     }
 
-    public final void m19758i(long j, long j2) {
+    public final void m19759i(long j, long j2) {
         long j3 = j - j2;
         long j4 = this.f20718r;
         if (j4 == -9223372036854775807L) {
@@ -157,9 +157,9 @@ public final class C6627j implements AbstractC6642l1 {
             this.f20719s = 0L;
             return;
         }
-        long max = Math.max(j3, m19759h(j4, j3, this.f20707g));
+        long max = Math.max(j3, m19760h(j4, j3, this.f20707g));
         this.f20718r = max;
-        this.f20719s = m19759h(this.f20719s, Math.abs(j3 - max), this.f20707g);
+        this.f20719s = m19760h(this.f20719s, Math.abs(j3 - max), this.f20707g);
     }
 
     public C6627j(float f, float f2, long j, float f3, long j2, long j3, float f4) {

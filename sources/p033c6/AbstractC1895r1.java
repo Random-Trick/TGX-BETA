@@ -7,7 +7,7 @@ import java.util.Objects;
 public abstract class AbstractC1895r1<E> extends AbstractSet<E> {
     @Override
     public boolean removeAll(Collection<?> collection) {
-        return C1909s1.m35908a(this, collection);
+        return C1909s1.m35911a(this, collection);
     }
 
     @Override

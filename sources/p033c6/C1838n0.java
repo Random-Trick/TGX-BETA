@@ -9,7 +9,7 @@ public final class C1838n0 extends AbstractC1880q0 {
     }
 
     @Override
-    public final Object mo35945a(int i) {
+    public final Object mo35948a(int i) {
         return this.f6517N.f6957M[i];
     }
 }

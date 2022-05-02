@@ -43,7 +43,7 @@ public abstract class AbstractC5274a<E> implements Collection<E>, AbstractC8415a
             return false;
         }
         for (E e2 : this) {
-            if (C8298k.m12937b(e2, e)) {
+            if (C8298k.m12936b(e2, e)) {
                 return true;
             }
         }
@@ -52,7 +52,7 @@ public abstract class AbstractC5274a<E> implements Collection<E>, AbstractC8415a
 
     @Override
     public boolean containsAll(Collection<? extends Object> collection) {
-        C8298k.m12934e(collection, "elements");
+        C8298k.m12933e(collection, "elements");
         if (collection.isEmpty()) {
             return true;
         }
@@ -93,16 +93,16 @@ public abstract class AbstractC5274a<E> implements Collection<E>, AbstractC8415a
 
     @Override
     public Object[] toArray() {
-        return C8293f.m12940a(this);
+        return C8293f.m12939a(this);
     }
 
     public String toString() {
-        return C5312v.m23340H(this, ", ", "[", "]", 0, null, new C5275a(this), 24, null);
+        return C5312v.m23341H(this, ", ", "[", "]", 0, null, new C5275a(this), 24, null);
     }
 
     @Override
     public <T> T[] toArray(T[] tArr) {
-        C8298k.m12934e(tArr, "array");
-        return (T[]) C8293f.m12939b(this, tArr);
+        C8298k.m12933e(tArr, "array");
+        return (T[]) C8293f.m12938b(this, tArr);
     }
 }

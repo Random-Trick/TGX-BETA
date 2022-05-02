@@ -6,7 +6,7 @@ final class C5636Q extends AbstractC5644S {
     @Override
     public Object get() {
         if (this.f18232a) {
-            return C5546j.m22474d(this.f18233b);
+            return C5546j.m22475d(this.f18233b);
         }
         return null;
     }

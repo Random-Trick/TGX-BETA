@@ -10,6 +10,6 @@ public class C2031h extends Exception {
 
     public C2031h(@RecentlyNonNull String str) {
         super(str);
-        C6378r.m20509h(str, "Detail message must not be empty");
+        C6378r.m20510h(str, "Detail message must not be empty");
     }
 }

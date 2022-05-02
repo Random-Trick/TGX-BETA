@@ -4,7 +4,7 @@ import qa.C8298k;
 
 public class C10029k {
     public static final void m6196a(boolean z, Number number) {
-        C8298k.m12934e(number, "step");
+        C8298k.m12933e(number, "step");
         if (!z) {
             throw new IllegalArgumentException("Step must be positive, was: " + number + '.');
         }

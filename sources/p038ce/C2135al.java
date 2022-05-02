@@ -9,7 +9,7 @@ public final class C2135al implements AbstractC5912d {
     @Override
     public final boolean mo1511a(Object obj) {
         boolean d;
-        d = View$OnClickListenerC2192bl.C2193a.m35393d((C2964ra) obj);
+        d = View$OnClickListenerC2192bl.C2193a.m35396d((C2964ra) obj);
         return d;
     }
 }

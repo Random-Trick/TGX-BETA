@@ -9,7 +9,7 @@ public final class C3840x7<E> extends AbstractC3691h6<E> {
     }
 
     @Override
-    public final E mo29735a(int i) {
+    public final E mo29737a(int i) {
         return this.f12939c.get(i);
     }
 }

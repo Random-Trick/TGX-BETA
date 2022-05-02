@@ -9,7 +9,7 @@ public final class C11288c0 {
     }
 
     public static Looper m949b() {
-        C6378r.m20503n(Looper.myLooper() != null, "Can't create handler inside thread that has not called Looper.prepare()");
+        C6378r.m20504n(Looper.myLooper() != null, "Can't create handler inside thread that has not called Looper.prepare()");
         return Looper.myLooper();
     }
 }

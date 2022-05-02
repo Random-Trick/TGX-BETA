@@ -9,28 +9,28 @@ abstract class AbstractC5718i1 implements AbstractC5632P0 {
     }
 
     @Override
-    public AbstractC5632P0 mo22158f(int i) {
+    public AbstractC5632P0 mo22159f(int i) {
         throw new IndexOutOfBoundsException();
     }
 
-    public void m22251i(Object obj, int i) {
+    public void m22252i(Object obj, int i) {
     }
 
-    public void m22250m(Object obj) {
+    public void m22251m(Object obj) {
     }
 
     @Override
-    public int mo22153o() {
+    public int mo22154o() {
         return 0;
     }
 
     @Override
-    public Object[] mo22152p(AbstractC5531m mVar) {
-        return (Object[]) mVar.mo22178w(0);
+    public Object[] mo22153p(AbstractC5531m mVar) {
+        return (Object[]) mVar.mo22179w(0);
     }
 
     @Override
-    public AbstractC5632P0 mo22151q(long j, long j2, AbstractC5531m mVar) {
-        return AbstractC5572D0.m22398y(this, j, j2, mVar);
+    public AbstractC5632P0 mo22152q(long j, long j2, AbstractC5531m mVar) {
+        return AbstractC5572D0.m22399y(this, j, j2, mVar);
     }
 }

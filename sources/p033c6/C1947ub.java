@@ -27,14 +27,14 @@ public final class C1947ub extends AbstractC6749a {
 
     @Override
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = C6752c.m19124a(parcel);
-        C6752c.m19110o(parcel, 1, this.f6988a, i, false);
-        C6752c.m19109p(parcel, 2, this.f6989b, false);
-        C6752c.m19109p(parcel, 3, this.f6990c, false);
-        C6752c.m19106s(parcel, 4, this.f6984M, i, false);
-        C6752c.m19106s(parcel, 5, this.f6985N, i, false);
-        C6752c.m19108q(parcel, 6, this.f6986O, false);
-        C6752c.m19106s(parcel, 7, this.f6987P, i, false);
-        C6752c.m19123b(parcel, a);
+        int a = C6752c.m19125a(parcel);
+        C6752c.m19111o(parcel, 1, this.f6988a, i, false);
+        C6752c.m19110p(parcel, 2, this.f6989b, false);
+        C6752c.m19110p(parcel, 3, this.f6990c, false);
+        C6752c.m19107s(parcel, 4, this.f6984M, i, false);
+        C6752c.m19107s(parcel, 5, this.f6985N, i, false);
+        C6752c.m19109q(parcel, 6, this.f6986O, false);
+        C6752c.m19107s(parcel, 7, this.f6987P, i, false);
+        C6752c.m19124b(parcel, a);
     }
 }

@@ -46,12 +46,12 @@ public class C5424r0 extends AbstractC5411l0 {
         throw new UnsupportedOperationException("Method not decompiled: ie.C5424r0.<init>(yd.q6, java.lang.String, org.drinkless.td.libcore.telegram.TdApi$TextEntity, yd.jj$q):void");
     }
 
-    public static int m22752I(TdApi.TextEntityType textEntityType) {
-        int i = m22749L(textEntityType) ? 2 : 0;
-        if (m22747N(textEntityType)) {
+    public static int m22753I(TdApi.TextEntityType textEntityType) {
+        int i = m22750L(textEntityType) ? 2 : 0;
+        if (m22748N(textEntityType)) {
             i |= 4;
         }
-        if (m22748M(textEntityType)) {
+        if (m22749M(textEntityType)) {
             i |= Log.TAG_YOUTUBE;
         }
         switch (textEntityType.getConstructor()) {
@@ -68,7 +68,7 @@ public class C5424r0 extends AbstractC5411l0 {
         }
     }
 
-    public static boolean m22751J(List<TdApi.TextEntity> list, int i) {
+    public static boolean m22752J(List<TdApi.TextEntity> list, int i) {
         if (list == null) {
             return false;
         }
@@ -80,7 +80,7 @@ public class C5424r0 extends AbstractC5411l0 {
         return false;
     }
 
-    public static boolean m22750K(TdApi.TextEntityType textEntityType) {
+    public static boolean m22751K(TdApi.TextEntityType textEntityType) {
         switch (textEntityType.getConstructor()) {
             case TdApi.TextEntityTypeMentionName.CONSTRUCTOR:
             case TdApi.TextEntityTypeUrl.CONSTRUCTOR:
@@ -101,33 +101,33 @@ public class C5424r0 extends AbstractC5411l0 {
         }
     }
 
-    public static boolean m22749L(TdApi.TextEntityType textEntityType) {
+    public static boolean m22750L(TdApi.TextEntityType textEntityType) {
         int constructor = textEntityType.getConstructor();
         return (constructor == -1312762756 || constructor == 934535013) ? false : true;
     }
 
-    public static boolean m22748M(TdApi.TextEntityType textEntityType) {
+    public static boolean m22749M(TdApi.TextEntityType textEntityType) {
         int constructor = textEntityType.getConstructor();
         return constructor == -945325397 || constructor == 1648958606;
     }
 
-    public static boolean m22747N(TdApi.TextEntityType textEntityType) {
+    public static boolean m22748N(TdApi.TextEntityType textEntityType) {
         int constructor = textEntityType.getConstructor();
         return constructor == -974534326 || constructor == -945325397 || constructor == 1648958606;
     }
 
-    public static boolean m22746O(char c) {
+    public static boolean m22747O(char c) {
         return c == ' ';
     }
 
-    public boolean m22745P(String str, String str2, int[] iArr, AbstractC9323v4 v4Var, RunnableC5390g gVar, C5455v0 v0Var, RunnableC5390g.AbstractC5393c cVar, View view, int i) {
+    public boolean m22746P(String str, String str2, int[] iArr, AbstractC9323v4 v4Var, RunnableC5390g gVar, C5455v0 v0Var, RunnableC5390g.AbstractC5393c cVar, View view, int i) {
         int i2 = R.string.CopiedLink;
         switch (i) {
             case R.id.btn_copyLink:
                 if (str == null) {
                     str = str2;
                 }
-                C1379j0.m37325i(str, R.string.CopiedLink);
+                C1379j0.m37328i(str, R.string.CopiedLink);
                 break;
             case R.id.btn_copyText:
                 switch (this.f17837h.type.getConstructor()) {
@@ -146,15 +146,15 @@ public class C5424r0 extends AbstractC5411l0 {
                         i2 = R.string.CopiedCashtag;
                         break;
                 }
-                C1379j0.m37325i(str2, i2);
+                C1379j0.m37328i(str2, i2);
                 break;
             case R.id.btn_openLink:
-                mo22729z(view, gVar, v0Var, cVar);
+                mo22730z(view, gVar, v0Var, cVar);
                 break;
             case R.id.btn_shareLink:
                 if (iArr[0] == 0) {
                     iArr[0] = 1;
-                    C4779t2.m25490j5(new C10534a9(v4Var.mo4347s(), this.f17793a), str2);
+                    C4779t2.m25491j5(new C10534a9(v4Var.mo4347s(), this.f17793a), str2);
                     break;
                 }
                 break;
@@ -163,18 +163,18 @@ public class C5424r0 extends AbstractC5411l0 {
     }
 
     @Override
-    public boolean mo22755A(View view, final RunnableC5390g gVar, final C5455v0 v0Var, boolean z, final RunnableC5390g.AbstractC5393c cVar) {
+    public boolean mo22756A(View view, final RunnableC5390g gVar, final C5455v0 v0Var, boolean z, final RunnableC5390g.AbstractC5393c cVar) {
         String str;
         String str2;
-        final AbstractC9323v4<?> c = m22787c(view);
+        final AbstractC9323v4<?> c = m22788c(view);
         if (c == null) {
             Log.m14714v("performLongPress ignored, because ancestor not found", new Object[0]);
             return false;
         } else if (this.f17837h.type.getConstructor() == -1150997581) {
-            return cVar != null && cVar.mo18242M(view, gVar, v0Var, C7321e.m16911s1(gVar.mo22956a(), this.f17837h), true);
+            return cVar != null && cVar.mo18242M(view, gVar, v0Var, C7321e.m16911s1(gVar.mo22957a(), this.f17837h), true);
         } else {
             if (this.f17837h.type.getConstructor() != 445719651) {
-                str = C7321e.m16911s1(gVar.mo22956a(), this.f17837h);
+                str = C7321e.m16911s1(gVar.mo22957a(), this.f17837h);
             } else {
                 str = ((TdApi.TextEntityTypeTextUrl) this.f17837h.type).url;
             }
@@ -192,9 +192,9 @@ public class C5424r0 extends AbstractC5411l0 {
                 case TdApi.TextEntityTypeTextUrl.CONSTRUCTOR:
                 case TdApi.TextEntityTypeMention.CONSTRUCTOR:
                 case TdApi.TextEntityTypeCashtag.CONSTRUCTOR:
-                    cVar2.m23284a(R.id.btn_openLink);
-                    u0Var.m23816a(this.f17837h.type.getConstructor() == 105986320 ? R.string.OpenInExternalApp : R.string.Open);
-                    cVar3.m23284a(R.drawable.baseline_open_in_browser_24);
+                    cVar2.m23285a(R.id.btn_openLink);
+                    u0Var.m23817a(this.f17837h.type.getConstructor() == 105986320 ? R.string.OpenInExternalApp : R.string.Open);
+                    cVar3.m23285a(R.drawable.baseline_open_in_browser_24);
                     break;
                 case TdApi.TextEntityTypePhoneNumber.CONSTRUCTOR:
                 case TdApi.TextEntityTypeCode.CONSTRUCTOR:
@@ -207,42 +207,42 @@ public class C5424r0 extends AbstractC5411l0 {
                     return false;
             }
             if (this.f17837h.type.getConstructor() != -1570974289) {
-                cVar2.m23284a(R.id.btn_copyText);
-                u0Var.m23816a(this.f17837h.type.getConstructor() == 934535013 ? R.string.CopyUsername : R.string.Copy);
-                cVar3.m23284a(R.drawable.baseline_content_copy_24);
+                cVar2.m23285a(R.id.btn_copyText);
+                u0Var.m23817a(this.f17837h.type.getConstructor() == 934535013 ? R.string.CopyUsername : R.string.Copy);
+                cVar3.m23285a(R.drawable.baseline_content_copy_24);
             }
             if (this.f17837h.type.getConstructor() != 934535013 || str3 == null) {
                 str2 = null;
             } else {
-                cVar2.m23284a(R.id.btn_copyLink);
-                u0Var.m23816a(R.string.CopyLink);
-                cVar3.m23284a(R.drawable.baseline_link_24);
-                str2 = C4779t2.m25694F1(str3.substring(1));
+                cVar2.m23285a(R.id.btn_copyLink);
+                u0Var.m23817a(R.string.CopyLink);
+                cVar3.m23285a(R.drawable.baseline_link_24);
+                str2 = C4779t2.m25695F1(str3.substring(1));
             }
             if (z2 && z) {
-                cVar2.m23284a(R.id.btn_shareLink);
-                u0Var.m23816a(R.string.Share);
-                cVar3.m23284a(R.drawable.baseline_forward_24);
+                cVar2.m23285a(R.id.btn_shareLink);
+                u0Var.m23817a(R.string.Share);
+                cVar3.m23285a(R.drawable.baseline_forward_24);
             }
             final int[] iArr = {0};
-            int[] e = cVar2.m23280e();
+            int[] e = cVar2.m23281e();
             final String str4 = str2;
-            c.m9254fe(str3, e, u0Var.m23813d(), null, cVar3.m23280e(), new AbstractC5117h0() {
+            c.m9254fe(str3, e, u0Var.m23814d(), null, cVar3.m23281e(), new AbstractC5117h0() {
                 @Override
                 public final boolean mo493A3(View view2, int i2) {
                     boolean P;
-                    P = C5424r0.this.m22745P(str4, str3, iArr, c, gVar, v0Var, cVar, view2, i2);
+                    P = C5424r0.this.m22746P(str4, str3, iArr, c, gVar, v0Var, cVar, view2, i2);
                     return P;
                 }
 
                 @Override
                 public boolean mo492Q() {
-                    return C5115g0.m23935a(this);
+                    return C5115g0.m23936a(this);
                 }
 
                 @Override
                 public Object mo491b2(int i2) {
-                    return C5115g0.m23934b(this, i2);
+                    return C5115g0.m23935b(this, i2);
                 }
             }, cVar != null ? cVar.mo18237W4(view, gVar) : null);
             return true;
@@ -250,7 +250,7 @@ public class C5424r0 extends AbstractC5411l0 {
     }
 
     @Override
-    public boolean mo22744a(AbstractC5411l0 l0Var, int i, String str) {
+    public boolean mo22745a(AbstractC5411l0 l0Var, int i, String str) {
         TdApi.TextEntity textEntity;
         C5424r0 r0Var = (C5424r0) l0Var;
         if (i == 0) {
@@ -269,7 +269,7 @@ public class C5424r0 extends AbstractC5411l0 {
                 int i2 = textEntity2.offset;
                 int i3 = textEntity.offset;
                 if (!(i2 == textEntity.length + i3 || i3 == i2 + textEntity2.length)) {
-                    if (!C5070i.m24061i(str)) {
+                    if (!C5070i.m24062i(str)) {
                         C5420p0 p0Var = C5420p0.f17825a;
                         TdApi.TextEntity textEntity3 = this.f17838i;
                         int i4 = textEntity3.offset;
@@ -278,9 +278,9 @@ public class C5424r0 extends AbstractC5411l0 {
                         int i6 = textEntity4.length;
                         if (i4 <= i5 + i6) {
                             int i7 = textEntity3.length;
-                            if (i5 <= i4 + i7 || i5 - (i4 + i7) != C1363c0.m37414s(str, i4 + i7, i5, p0Var)) {
+                            if (i5 <= i4 + i7 || i5 - (i4 + i7) != C1363c0.m37417s(str, i4 + i7, i5, p0Var)) {
                             }
-                        } else if (i4 - (i5 + i6) == C1363c0.m37414s(str, i5 + i6, i4, p0Var)) {
+                        } else if (i4 - (i5 + i6) == C1363c0.m37417s(str, i5 + i6, i4, p0Var)) {
                             return true;
                         }
                     }
@@ -292,89 +292,89 @@ public class C5424r0 extends AbstractC5411l0 {
     }
 
     @Override
-    public AbstractC5408k mo22743g(AbstractC5408k kVar) {
-        if (!mo22733t()) {
+    public AbstractC5408k mo22744g(AbstractC5408k kVar) {
+        if (!mo22734t()) {
             return null;
         }
         C5410l lVar = this.f17839j;
-        if (lVar == null || lVar.m22794a() != kVar) {
+        if (lVar == null || lVar.m22795a() != kVar) {
             this.f17839j = new C5425a(kVar);
         }
         return this.f17839j;
     }
 
     @Override
-    public TdApi.TextEntity mo22742h() {
+    public TdApi.TextEntity mo22743h() {
         return this.f17838i;
     }
 
     @Override
-    public int mo22741l() {
+    public int mo22742l() {
         return 0;
     }
 
     @Override
-    public boolean mo22740m(String str) {
+    public boolean mo22741m(String str) {
         return false;
     }
 
     @Override
-    public boolean mo22739n() {
-        return C5063c.m24144b(this.f17836g, 8);
+    public boolean mo22740n() {
+        return C5063c.m24145b(this.f17836g, 8);
     }
 
     @Override
-    public boolean mo22738o() {
+    public boolean mo22739o() {
         return (this.f17836g & 1) != 0;
     }
 
     @Override
-    public boolean mo22737p() {
+    public boolean mo22738p() {
         return (this.f17836g & 2) != 0;
     }
 
     @Override
-    public boolean mo22736q() {
-        return C5063c.m24144b(this.f17836g, Log.TAG_YOUTUBE);
+    public boolean mo22737q() {
+        return C5063c.m24145b(this.f17836g, Log.TAG_YOUTUBE);
     }
 
     @Override
-    public boolean mo22735r() {
+    public boolean mo22736r() {
         return false;
     }
 
     @Override
-    public boolean mo22734s() {
-        return C5063c.m24144b(this.f17836g, 16);
+    public boolean mo22735s() {
+        return C5063c.m24145b(this.f17836g, 16);
     }
 
     @Override
-    public boolean mo22733t() {
+    public boolean mo22734t() {
         return (this.f17836g & 4) != 0;
     }
 
     @Override
-    public boolean mo22732u() {
+    public boolean mo22733u() {
         return false;
     }
 
     @Override
-    public boolean mo22731v() {
-        return C5063c.m24144b(this.f17836g, 64);
+    public boolean mo22732v() {
+        return C5063c.m24145b(this.f17836g, 64);
     }
 
     @Override
-    public boolean mo22730w() {
-        return C5063c.m24144b(this.f17836g, 32);
+    public boolean mo22731w() {
+        return C5063c.m24145b(this.f17836g, 32);
     }
 
     @Override
-    public void mo22729z(View view, RunnableC5390g gVar, C5455v0 v0Var, RunnableC5390g.AbstractC5393c cVar) {
+    public void mo22730z(View view, RunnableC5390g gVar, C5455v0 v0Var, RunnableC5390g.AbstractC5393c cVar) {
         C10930q6 q6Var;
         C10930q6 q6Var2;
         C10930q6 q6Var3;
         C10930q6 q6Var4;
-        AbstractC9323v4<?> c = m22787c(view);
+        AbstractC9323v4<?> c = m22788c(view);
         boolean z = false;
         if (c == null) {
             Log.m14714v("performClick ignored, because ancestor not found", new Object[0]);
@@ -384,27 +384,27 @@ public class C5424r0 extends AbstractC5411l0 {
             case TdApi.TextEntityTypeMentionName.CONSTRUCTOR:
                 TdApi.TextEntityTypeMentionName textEntityTypeMentionName = (TdApi.TextEntityTypeMentionName) this.f17837h.type;
                 if ((cVar == null || !cVar.mo18241P3(textEntityTypeMentionName.userId)) && (q6Var = this.f17793a) != null) {
-                    q6Var.m2485dd().m3429v7(c, textEntityTypeMentionName.userId, m22781y(view, gVar, v0Var));
+                    q6Var.m2485dd().m3429v7(c, textEntityTypeMentionName.userId, m22782y(view, gVar, v0Var));
                     return;
                 }
                 return;
             case TdApi.TextEntityTypeUrl.CONSTRUCTOR:
-                String s1 = C7321e.m16911s1(gVar.mo22956a(), this.f17837h);
-                HandlerC10770jj.C10788q y = m22781y(view, gVar, v0Var);
+                String s1 = C7321e.m16911s1(gVar.mo22957a(), this.f17837h);
+                HandlerC10770jj.C10788q y = m22782y(view, gVar, v0Var);
                 if ((cVar == null || !cVar.mo18235g0(view, s1, false, y)) && (q6Var2 = this.f17793a) != null) {
-                    q6Var2.m2485dd().m3858E7(c, s1, m22782x(y, cVar, s1));
+                    q6Var2.m2485dd().m3858E7(c, s1, m22783x(y, cVar, s1));
                     return;
                 }
                 return;
             case TdApi.TextEntityTypePhoneNumber.CONSTRUCTOR:
-                String s12 = C7321e.m16911s1(gVar.mo22956a(), this.f17837h);
+                String s12 = C7321e.m16911s1(gVar.mo22957a(), this.f17837h);
                 if (cVar == null || !cVar.mo18245A(s12)) {
-                    C1405v.m37141B(s12);
+                    C1405v.m37144B(s12);
                     return;
                 }
                 return;
             case TdApi.TextEntityTypeBotCommand.CONSTRUCTOR:
-                String s13 = C7321e.m16911s1(gVar.mo22956a(), this.f17837h);
+                String s13 = C7321e.m16911s1(gVar.mo22957a(), this.f17837h);
                 if (cVar != null && !cVar.mo18242M(view, gVar, v0Var, s13, false)) {
                     Log.m14709w("Unhandled bot command...", new Object[0]);
                     return;
@@ -413,7 +413,7 @@ public class C5424r0 extends AbstractC5411l0 {
             case TdApi.TextEntityTypeHashtag.CONSTRUCTOR:
             case TdApi.TextEntityTypeCashtag.CONSTRUCTOR:
                 if (this.f17793a != null) {
-                    String s14 = C7321e.m16911s1(gVar.mo22956a(), this.f17837h);
+                    String s14 = C7321e.m16911s1(gVar.mo22957a(), this.f17837h);
                     if (cVar == null || !cVar.mo18243I3(s14)) {
                         long C9 = c.mo9464C9();
                         AbstractC9323v4<?> Z9 = c.m9300Z9();
@@ -429,12 +429,12 @@ public class C5424r0 extends AbstractC5411l0 {
                             if (C9 == 0 || (C7316a.m17049l(C9) && !this.f17793a.m2443g7(C9))) {
                                 C2963r9 r9Var = new C2963r9(c.mo4347s(), this.f17793a);
                                 r9Var.m9476Ad(s14);
-                                c.mo4347s().m14552P1().m9719h0(r9Var);
+                                c.mo4347s().m14551P1().m9718h0(r9Var);
                                 return;
                             }
                             C2912q9 q9Var = new C2912q9(c.mo4347s(), this.f17793a);
                             q9Var.m9476Ad(new C2912q9.C2914b(null, C9, s14, null, false));
-                            c.mo4347s().m14552P1().m9719h0(q9Var);
+                            c.mo4347s().m14551P1().m9718h0(q9Var);
                             return;
                         }
                         return;
@@ -443,7 +443,7 @@ public class C5424r0 extends AbstractC5411l0 {
                 }
                 return;
             case TdApi.TextEntityTypeBankCardNumber.CONSTRUCTOR:
-                String s15 = C7321e.m16911s1(gVar.mo22956a(), this.f17837h);
+                String s15 = C7321e.m16911s1(gVar.mo22957a(), this.f17837h);
                 if ((cVar == null || !cVar.mo18236f5(s15)) && (q6Var3 = this.f17793a) != null) {
                     q6Var3.m2485dd().m3589f7(c, s15);
                     return;
@@ -451,23 +451,23 @@ public class C5424r0 extends AbstractC5411l0 {
                 return;
             case TdApi.TextEntityTypeTextUrl.CONSTRUCTOR:
                 String str = ((TdApi.TextEntityTypeTextUrl) this.f17837h.type).url;
-                HandlerC10770jj.C10788q y2 = m22781y(view, gVar, v0Var);
+                HandlerC10770jj.C10788q y2 = m22782y(view, gVar, v0Var);
                 if (cVar == null || !cVar.mo18235g0(view, str, true, y2)) {
-                    c.m9357Qc(str, m22782x(y2, cVar, str));
+                    c.m9357Qc(str, m22783x(y2, cVar, str));
                     return;
                 }
                 return;
             case TdApi.TextEntityTypeMention.CONSTRUCTOR:
-                String s16 = C7321e.m16911s1(gVar.mo22956a(), this.f17837h);
+                String s16 = C7321e.m16911s1(gVar.mo22957a(), this.f17837h);
                 if ((cVar == null || !cVar.mo18244H5(s16)) && (q6Var4 = this.f17793a) != null) {
-                    q6Var4.m2485dd().m3399y7(c, s16, m22781y(view, gVar, v0Var));
+                    q6Var4.m2485dd().m3399y7(c, s16, m22782y(view, gVar, v0Var));
                     return;
                 }
                 return;
             case TdApi.TextEntityTypeEmailAddress.CONSTRUCTOR:
-                String s17 = C7321e.m16911s1(gVar.mo22956a(), this.f17837h);
+                String s17 = C7321e.m16911s1(gVar.mo22957a(), this.f17837h);
                 if (cVar == null || !cVar.mo18238V4(s17)) {
-                    C1405v.m37132K(s17);
+                    C1405v.m37135K(s17);
                     return;
                 }
                 return;
@@ -477,16 +477,16 @@ public class C5424r0 extends AbstractC5411l0 {
     }
 
     public C5424r0(C10930q6 q6Var, String str, int i, int i2, TdApi.TextEntity textEntity, List<TdApi.TextEntity> list, HandlerC10770jj.C10788q qVar) {
-        super(q6Var, i, i2, (textEntity.type.getConstructor() == -1128210000 || m22751J(list, TdApi.TextEntityTypeBold.CONSTRUCTOR)) && RunnableC5390g.m22981N0(str, i, i2), qVar);
+        super(q6Var, i, i2, (textEntity.type.getConstructor() == -1128210000 || m22752J(list, TdApi.TextEntityTypeBold.CONSTRUCTOR)) && RunnableC5390g.m22982N0(str, i, i2), qVar);
         TdApi.TextEntity textEntity2 = null;
-        TdApi.TextEntity textEntity3 = m22750K(textEntity.type) ? textEntity : null;
+        TdApi.TextEntity textEntity3 = m22751K(textEntity.type) ? textEntity : null;
         textEntity2 = textEntity.type.getConstructor() == 544019899 ? textEntity : textEntity2;
-        int I = m22752I(textEntity.type);
+        int I = m22753I(textEntity.type);
         if (list != null) {
             for (int size = list.size() - 1; size >= 0; size--) {
                 TdApi.TextEntity textEntity4 = list.get(size);
-                I |= m22752I(textEntity4.type);
-                if (textEntity3 == null && m22750K(textEntity4.type)) {
+                I |= m22753I(textEntity4.type);
+                if (textEntity3 == null && m22751K(textEntity4.type)) {
                     textEntity3 = textEntity4;
                 } else if (textEntity2 == null && textEntity4.type.getConstructor() == 544019899) {
                     textEntity2 = textEntity4;

@@ -12,13 +12,13 @@ public final class C5781v implements AbstractC5525g {
     }
 
     @Override
-    public final void mo22150c(double d) {
+    public final void mo22151c(double d) {
         switch (this.f18487a) {
             case 0:
-                ((AbstractC5759q2) this.f18488b).mo22135c(d);
+                ((AbstractC5759q2) this.f18488b).mo22136c(d);
                 return;
             default:
-                ((C5786w) this.f18488b).f18394a.mo22135c(d);
+                ((C5786w) this.f18488b).f18394a.mo22136c(d);
                 return;
         }
     }

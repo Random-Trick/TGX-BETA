@@ -17,7 +17,7 @@ public final class C4511d {
             this.f14881a = str;
         }
 
-        public C4511d m27504a() {
+        public C4511d m27506a() {
             Map map;
             String str = this.f14881a;
             if (this.f14882b == null) {
@@ -28,7 +28,7 @@ public final class C4511d {
             return new C4511d(str, map);
         }
 
-        public <T extends Annotation> C4513b m27503b(T t) {
+        public <T extends Annotation> C4513b m27505b(T t) {
             if (this.f14882b == null) {
                 this.f14882b = new HashMap();
             }
@@ -37,19 +37,19 @@ public final class C4511d {
         }
     }
 
-    public static C4513b m27508a(String str) {
+    public static C4513b m27510a(String str) {
         return new C4513b(str);
     }
 
-    public static C4511d m27505d(String str) {
+    public static C4511d m27507d(String str) {
         return new C4511d(str, Collections.emptyMap());
     }
 
-    public String m27507b() {
+    public String m27509b() {
         return this.f14879a;
     }
 
-    public <T extends Annotation> T m27506c(Class<T> cls) {
+    public <T extends Annotation> T m27508c(Class<T> cls) {
         return (T) this.f14880b.get(cls);
     }
 

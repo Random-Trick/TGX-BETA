@@ -26,12 +26,12 @@ public final class C5317z implements Set, Serializable, AbstractC8415a {
         if (!(obj instanceof Void)) {
             return false;
         }
-        return m23301i((Void) obj);
+        return m23302i((Void) obj);
     }
 
     @Override
     public boolean containsAll(Collection collection) {
-        C8298k.m12934e(collection, "elements");
+        C8298k.m12933e(collection, "elements");
         return collection.isEmpty();
     }
 
@@ -53,8 +53,8 @@ public final class C5317z implements Set, Serializable, AbstractC8415a {
         return 0;
     }
 
-    public boolean m23301i(Void r2) {
-        C8298k.m12934e(r2, "element");
+    public boolean m23302i(Void r2) {
+        C8298k.m12933e(r2, "element");
         return false;
     }
 
@@ -90,13 +90,13 @@ public final class C5317z implements Set, Serializable, AbstractC8415a {
 
     @Override
     public Object[] toArray() {
-        return C8293f.m12940a(this);
+        return C8293f.m12939a(this);
     }
 
     @Override
     public <T> T[] toArray(T[] tArr) {
-        C8298k.m12934e(tArr, "array");
-        return (T[]) C8293f.m12939b(this, tArr);
+        C8298k.m12933e(tArr, "array");
+        return (T[]) C8293f.m12938b(this, tArr);
     }
 
     public String toString() {

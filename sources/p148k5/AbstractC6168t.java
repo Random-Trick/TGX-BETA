@@ -14,9 +14,9 @@ public abstract class AbstractC6168t<A extends C5850a.AbstractC5852b, L> {
     }
 
     @RecentlyNonNull
-    public C6120i.C6121a<L> m21130a() {
+    public C6120i.C6121a<L> m21131a() {
         return this.f19547a;
     }
 
-    public abstract void mo21098b(@RecentlyNonNull A a, @RecentlyNonNull C6777m<Boolean> mVar);
+    public abstract void mo21099b(@RecentlyNonNull A a, @RecentlyNonNull C6777m<Boolean> mVar);
 }

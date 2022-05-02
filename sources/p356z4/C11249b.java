@@ -4,7 +4,7 @@ import java.util.Comparator;
 import p174m3.C6600g1;
 
 public final class C11249b implements Comparator {
-    public static final C11249b f36031a = new C11249b();
+    public static final C11249b f36034a = new C11249b();
 
     @Override
     public final int compare(Object obj, Object obj2) {

@@ -14,17 +14,17 @@ public class C5087h extends Drawable {
 
     @Override
     public void draw(Canvas canvas) {
-        C5078d.m23986z().m24001k(canvas, this.f17119a, getBounds());
+        C5078d.m23987z().m24002k(canvas, this.f17119a, getBounds());
     }
 
     @Override
     public int getIntrinsicHeight() {
-        return C1357a0.m37541i(24.0f);
+        return C1357a0.m37544i(24.0f);
     }
 
     @Override
     public int getIntrinsicWidth() {
-        return C1357a0.m37541i(24.0f);
+        return C1357a0.m37544i(24.0f);
     }
 
     @Override

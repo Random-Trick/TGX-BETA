@@ -12,7 +12,7 @@ public final class C5465D implements Spliterator.OfPrimitive {
         this.f17926a = e;
     }
 
-    public static Spliterator.OfPrimitive m22609a(AbstractC5466E e) {
+    public static Spliterator.OfPrimitive m22610a(AbstractC5466E e) {
         if (e == null) {
             return null;
         }
@@ -61,6 +61,6 @@ public final class C5465D implements Spliterator.OfPrimitive {
 
     @Override
     public boolean tryAdvance(java.util.function.Consumer consumer) {
-        return this.f17926a.mo22124a(Consumer.VivifiedWrapper.convert(consumer));
+        return this.f17926a.mo22125a(Consumer.VivifiedWrapper.convert(consumer));
     }
 }

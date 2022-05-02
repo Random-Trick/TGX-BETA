@@ -7,12 +7,12 @@ public abstract class AbstractC3691h6<E> extends AbstractC3643c8<E> {
     public int f12564b;
 
     public AbstractC3691h6(int i, int i2) {
-        C3669f4.m29838b(i2, i, "index");
+        C3669f4.m29840b(i2, i, "index");
         this.f12563a = i;
         this.f12564b = i2;
     }
 
-    public abstract E mo29735a(int i);
+    public abstract E mo29737a(int i);
 
     @Override
     public final boolean hasNext() {
@@ -29,7 +29,7 @@ public abstract class AbstractC3691h6<E> extends AbstractC3643c8<E> {
         if (hasNext()) {
             int i = this.f12564b;
             this.f12564b = i + 1;
-            return mo29735a(i);
+            return mo29737a(i);
         }
         throw new NoSuchElementException();
     }
@@ -44,7 +44,7 @@ public abstract class AbstractC3691h6<E> extends AbstractC3643c8<E> {
         if (hasPrevious()) {
             int i = this.f12564b - 1;
             this.f12564b = i;
-            return mo29735a(i);
+            return mo29737a(i);
         }
         throw new NoSuchElementException();
     }

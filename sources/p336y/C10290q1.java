@@ -22,13 +22,13 @@ public class C10290q1 extends C10242i2 {
 
     public void m5537e(C10242i2 i2Var) {
         Map<String, Object> map;
-        Map<String, Object> map2 = this.f33020a;
-        if (map2 != null && (map = i2Var.f33020a) != null) {
+        Map<String, Object> map2 = this.f33023a;
+        if (map2 != null && (map = i2Var.f33023a) != null) {
             map2.putAll(map);
         }
     }
 
     public void m5534h(String str, Object obj) {
-        this.f33020a.put(str, obj);
+        this.f33023a.put(str, obj);
     }
 }

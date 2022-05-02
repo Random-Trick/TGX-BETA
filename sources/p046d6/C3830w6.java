@@ -6,19 +6,19 @@ public final class C3830w6 extends AbstractC3848y6 {
     public Integer f12917c;
 
     @Override
-    public final AbstractC3848y6 mo29734a(boolean z) {
+    public final AbstractC3848y6 mo29736a(boolean z) {
         this.f12916b = Boolean.TRUE;
         return this;
     }
 
     @Override
-    public final AbstractC3848y6 mo29733b(int i) {
+    public final AbstractC3848y6 mo29735b(int i) {
         this.f12917c = 1;
         return this;
     }
 
     @Override
-    public final AbstractC3857z6 mo29732c() {
+    public final AbstractC3857z6 mo29734c() {
         Boolean bool;
         String str = this.f12915a;
         if (str != null && (bool = this.f12916b) != null && this.f12917c != null) {
@@ -41,7 +41,7 @@ public final class C3830w6 extends AbstractC3848y6 {
         throw new IllegalStateException(sb3.toString());
     }
 
-    public final AbstractC3848y6 m29738d(String str) {
+    public final AbstractC3848y6 m29740d(String str) {
         this.f12915a = "vision-common";
         return this;
     }

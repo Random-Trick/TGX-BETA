@@ -6,7 +6,7 @@ import p270t3.AbstractC8959g;
 public final class C0110n {
     public static final int[] f416a = {1769172845, 1769172786, 1769172787, 1769172788, 1769172789, 1769172790, 1769172793, 1635148593, 1752589105, 1751479857, 1635135537, 1836069937, 1836069938, 862401121, 862401122, 862417462, 862417718, 862414134, 862414646, 1295275552, 1295270176, 1714714144, 1801741417, 1295275600, 1903435808, 1297305174, 1684175153, 1769172332, 1885955686};
 
-    public static boolean m42271a(int i, boolean z) {
+    public static boolean m42274a(int i, boolean z) {
         if ((i >>> 8) == 3368816) {
             return true;
         }
@@ -21,11 +21,11 @@ public final class C0110n {
         return false;
     }
 
-    public static boolean m42270b(AbstractC8959g gVar) {
-        return m42269c(gVar, true, false);
+    public static boolean m42273b(AbstractC8959g gVar) {
+        return m42272c(gVar, true, false);
     }
 
-    public static boolean m42269c(AbstractC8959g gVar, boolean z, boolean z2) {
+    public static boolean m42272c(AbstractC8959g gVar, boolean z, boolean z2) {
         boolean z3;
         long a = gVar.mo6046a();
         long j = 4096;
@@ -40,22 +40,22 @@ public final class C0110n {
         int i3 = 0;
         boolean z5 = false;
         while (i3 < i2) {
-            b0Var.m38148L(8);
-            byte[] d = b0Var.m38139d();
+            b0Var.m38151L(8);
+            byte[] d = b0Var.m38142d();
             int i4 = z4 ? 1 : 0;
             int i5 = z4 ? 1 : 0;
             int i6 = z4 ? 1 : 0;
             int i7 = z4 ? 1 : 0;
-            if (!gVar.mo10813e(d, i4, 8, true)) {
+            if (!gVar.mo10812e(d, i4, 8, true)) {
                 break;
             }
-            long F = b0Var.m38154F();
-            int n = b0Var.m38129n();
+            long F = b0Var.m38157F();
+            int n = b0Var.m38132n();
             int i8 = 16;
             if (F == 1) {
-                gVar.mo10806q(b0Var.m38139d(), 8, 8);
-                b0Var.m38145O(16);
-                F = b0Var.m38120w();
+                gVar.mo10805q(b0Var.m38142d(), 8, 8);
+                b0Var.m38148O(16);
+                F = b0Var.m38123w();
             } else {
                 if (F == 0) {
                     long a2 = gVar.mo6046a();
@@ -90,8 +90,8 @@ public final class C0110n {
                     if (i9 < 8) {
                         return false;
                     }
-                    b0Var.m38148L(i9);
-                    gVar.mo10806q(b0Var.m38139d(), 0, i9);
+                    b0Var.m38151L(i9);
+                    gVar.mo10805q(b0Var.m38142d(), 0, i9);
                     int i10 = i9 / 4;
                     int i11 = 0;
                     while (true) {
@@ -99,8 +99,8 @@ public final class C0110n {
                             break;
                         }
                         if (i11 == 1) {
-                            b0Var.m38143Q(4);
-                        } else if (m42271a(b0Var.m38129n(), z2)) {
+                            b0Var.m38146Q(4);
+                        } else if (m42274a(b0Var.m38132n(), z2)) {
                             z5 = true;
                             break;
                         }
@@ -110,7 +110,7 @@ public final class C0110n {
                         return false;
                     }
                 } else if (i9 != 0) {
-                    gVar.mo10812h(i9);
+                    gVar.mo10811h(i9);
                 }
                 j2 = -1;
                 z4 = false;
@@ -120,7 +120,7 @@ public final class C0110n {
         return z5 && z == z3;
     }
 
-    public static boolean m42268d(AbstractC8959g gVar, boolean z) {
-        return m42269c(gVar, false, z);
+    public static boolean m42271d(AbstractC8959g gVar, boolean z) {
+        return m42272c(gVar, false, z);
     }
 }

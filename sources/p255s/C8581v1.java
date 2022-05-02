@@ -8,47 +8,47 @@ import android.view.Display;
 import p306w.C9929g;
 
 public class C8581v1 {
-    public static final Size f27801d = new Size(1920, 1080);
-    public static final Object f27802e = new Object();
-    public static volatile C8581v1 f27803f;
-    public final DisplayManager f27804a;
-    public volatile Size f27805b = null;
-    public final C9929g f27806c = new C9929g();
+    public static final Size f27804d = new Size(1920, 1080);
+    public static final Object f27805e = new Object();
+    public static volatile C8581v1 f27806f;
+    public final DisplayManager f27807a;
+    public volatile Size f27808b = null;
+    public final C9929g f27809c = new C9929g();
 
     public C8581v1(Context context) {
-        this.f27804a = (DisplayManager) context.getSystemService("display");
+        this.f27807a = (DisplayManager) context.getSystemService("display");
     }
 
-    public static C8581v1 m12042b(Context context) {
-        if (f27803f == null) {
-            synchronized (f27802e) {
-                if (f27803f == null) {
-                    f27803f = new C8581v1(context);
+    public static C8581v1 m12041b(Context context) {
+        if (f27806f == null) {
+            synchronized (f27805e) {
+                if (f27806f == null) {
+                    f27806f = new C8581v1(context);
                 }
             }
         }
-        return f27803f;
+        return f27806f;
     }
 
-    public final Size m12043a() {
+    public final Size m12042a() {
         Size size;
         Point point = new Point();
-        m12041c().getRealSize(point);
+        m12040c().getRealSize(point);
         if (point.x > point.y) {
             size = new Size(point.x, point.y);
         } else {
             size = new Size(point.y, point.x);
         }
         int width = size.getWidth() * size.getHeight();
-        Size size2 = f27801d;
+        Size size2 = f27804d;
         if (width > size2.getWidth() * size2.getHeight()) {
             size = size2;
         }
-        return this.f27806c.m6471a(size);
+        return this.f27809c.m6471a(size);
     }
 
-    public Display m12041c() {
-        Display[] displays = this.f27804a.getDisplays();
+    public Display m12040c() {
+        Display[] displays = this.f27807a.getDisplays();
         if (displays.length == 1) {
             return displays[0];
         }
@@ -70,15 +70,15 @@ public class C8581v1 {
         throw new IllegalArgumentException("No display can be found from the input display manager!");
     }
 
-    public Size m12040d() {
-        if (this.f27805b != null) {
-            return this.f27805b;
+    public Size m12039d() {
+        if (this.f27808b != null) {
+            return this.f27808b;
         }
-        this.f27805b = m12043a();
-        return this.f27805b;
+        this.f27808b = m12042a();
+        return this.f27808b;
     }
 
-    public void m12039e() {
-        this.f27805b = m12043a();
+    public void m12038e() {
+        this.f27808b = m12042a();
     }
 }

@@ -15,34 +15,34 @@ public class C6508n {
         arrayList.add(sVar);
     }
 
-    public boolean m20226a(C6516s sVar) {
+    public boolean m20227a(C6516s sVar) {
         ArrayList<C6516s> arrayList = this.f20299c;
         if (arrayList == null || arrayList.contains(sVar)) {
             return false;
         }
-        this.f20298b.m20337Q(sVar);
+        this.f20298b.m20338Q(sVar);
         this.f20299c.add(sVar);
         return true;
     }
 
-    public C6496e m20225b() {
+    public C6496e m20226b() {
         return this.f20298b;
     }
 
-    public C6503j m20224c() {
+    public C6503j m20225c() {
         return this.f20297a;
     }
 
-    public ArrayList<C6516s> m20223d() {
+    public ArrayList<C6516s> m20224d() {
         return this.f20299c;
     }
 
-    public boolean m20222e() {
+    public boolean m20223e() {
         ArrayList<C6516s> arrayList = this.f20299c;
         return arrayList != null && !arrayList.isEmpty();
     }
 
-    public boolean m20221f(C6516s sVar) {
+    public boolean m20222f(C6516s sVar) {
         ArrayList<C6516s> arrayList = this.f20299c;
         if (arrayList == null || !arrayList.contains(sVar)) {
             return false;

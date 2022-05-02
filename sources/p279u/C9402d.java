@@ -8,11 +8,11 @@ import p016b1.C1132h;
 public class C9402d extends C9400c {
 
     public static final class C9403a {
-        public final OutputConfiguration f30442a;
-        public String f30443b;
+        public final OutputConfiguration f30445a;
+        public String f30446b;
 
         public C9403a(OutputConfiguration outputConfiguration) {
-            this.f30442a = outputConfiguration;
+            this.f30445a = outputConfiguration;
         }
 
         public boolean equals(Object obj) {
@@ -20,13 +20,13 @@ public class C9402d extends C9400c {
                 return false;
             }
             C9403a aVar = (C9403a) obj;
-            return Objects.equals(this.f30442a, aVar.f30442a) && Objects.equals(this.f30443b, aVar.f30443b);
+            return Objects.equals(this.f30445a, aVar.f30445a) && Objects.equals(this.f30446b, aVar.f30446b);
         }
 
         public int hashCode() {
-            int hashCode = this.f30442a.hashCode() ^ 31;
+            int hashCode = this.f30445a.hashCode() ^ 31;
             int i = (hashCode << 5) - hashCode;
-            String str = this.f30443b;
+            String str = this.f30446b;
             return (str == null ? 0 : str.hashCode()) ^ i;
         }
     }
@@ -41,18 +41,18 @@ public class C9402d extends C9400c {
 
     @Override
     public String mo8790a() {
-        return ((C9403a) this.f30444a).f30443b;
+        return ((C9403a) this.f30447a).f30446b;
     }
 
     @Override
     public void mo8788c(String str) {
-        ((C9403a) this.f30444a).f30443b = str;
+        ((C9403a) this.f30447a).f30446b = str;
     }
 
     @Override
     public Object mo8787d() {
-        C1132h.m38326a(this.f30444a instanceof C9403a);
-        return ((C9403a) this.f30444a).f30442a;
+        C1132h.m38329a(this.f30447a instanceof C9403a);
+        return ((C9403a) this.f30447a).f30445a;
     }
 
     public C9402d(Object obj) {

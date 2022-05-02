@@ -111,13 +111,13 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
 
         @Override
         public void mo7370C(boolean z) {
-            C6637k2.m19734p(this, z);
+            C6637k2.m19735p(this, z);
         }
 
         @Override
-        public void mo19334D(int i) {
-            boolean k = C6721y2.this.mo19255k();
-            C6721y2.this.m19367V0(k, i, C6721y2.m19381J0(k, i));
+        public void mo19335D(int i) {
+            boolean k = C6721y2.this.mo19256k();
+            C6721y2.this.m19368V0(k, i, C6721y2.m19382J0(k, i));
         }
 
         @Override
@@ -127,13 +127,13 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
         }
 
         @Override
-        public void mo19333F(Surface surface) {
-            C6721y2.this.m19369T0(null);
+        public void mo19334F(Surface surface) {
+            C6721y2.this.m19370T0(null);
         }
 
         @Override
-        public void mo19332G(Surface surface) {
-            C6721y2.this.m19369T0(surface);
+        public void mo19333G(Surface surface) {
+            C6721y2.this.m19370T0(surface);
         }
 
         @Override
@@ -156,21 +156,21 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
 
         @Override
         public void mo7368K(AbstractC6604g3 g3Var, int i) {
-            C6637k2.m19733q(this, g3Var, i);
+            C6637k2.m19734q(this, g3Var, i);
         }
 
         @Override
         public void mo7366M(boolean z, int i) {
-            C6637k2.m19739k(this, z, i);
+            C6637k2.m19740k(this, z, i);
         }
 
         @Override
         public void mo7365N(C6693s1 s1Var) {
-            C6637k2.m19744f(this, s1Var);
+            C6637k2.m19745f(this, s1Var);
         }
 
         @Override
-        public void mo19331O(int i, boolean z) {
+        public void mo19332O(int i, boolean z) {
             Iterator it = C6721y2.this.f21100h.iterator();
             while (it.hasNext()) {
                 ((AbstractC6618i2.AbstractC6624e) it.next()).mo7367L(i, z);
@@ -178,8 +178,8 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
         }
 
         @Override
-        public void mo19330P(boolean z) {
-            C6685r.m19573a(this, z);
+        public void mo19331P(boolean z) {
+            C6685r.m19574a(this, z);
         }
 
         @Override
@@ -195,7 +195,7 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
 
         @Override
         public void mo7364R(int i) {
-            C6637k2.m19736n(this, i);
+            C6637k2.m19737n(this, i);
         }
 
         @Override
@@ -222,17 +222,17 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
         public void mo15419a(boolean z) {
             if (C6721y2.this.f21085H != z) {
                 C6721y2.this.f21085H = z;
-                C6721y2.this.m19377M0();
+                C6721y2.this.m19378M0();
             }
         }
 
         @Override
         public void mo7361a0(boolean z, int i) {
-            C6721y2.this.m19366W0();
+            C6721y2.this.m19367W0();
         }
 
         @Override
-        public void mo19329b(C1607b0 b0Var) {
+        public void mo19330b(C1607b0 b0Var) {
             C6721y2.this.f21093P = b0Var;
             C6721y2.this.f21101i.mo7360b(b0Var);
             Iterator it = C6721y2.this.f21100h.iterator();
@@ -243,23 +243,23 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
 
         @Override
         public void mo7359b0(C6660o1 o1Var, int i) {
-            C6637k2.m19745e(this, o1Var, i);
+            C6637k2.m19746e(this, o1Var, i);
         }
 
         @Override
         public void mo7358c(C6613h2 h2Var) {
-            C6637k2.m19743g(this, h2Var);
+            C6637k2.m19744g(this, h2Var);
         }
 
         @Override
         public void mo7357c0(AbstractC6618i2 i2Var, AbstractC6618i2.C6623d dVar) {
-            C6637k2.m19748b(this, i2Var, dVar);
+            C6637k2.m19749b(this, i2Var, dVar);
         }
 
         @Override
-        public void mo19328d(C4260a aVar) {
+        public void mo19329d(C4260a aVar) {
             C6721y2.this.f21101i.mo7356d(aVar);
-            C6721y2.this.f21097e.m19237q1(aVar);
+            C6721y2.this.f21097e.m19238q1(aVar);
             Iterator it = C6721y2.this.f21100h.iterator();
             while (it.hasNext()) {
                 ((AbstractC6618i2.AbstractC6624e) it.next()).mo7356d(aVar);
@@ -268,7 +268,7 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
 
         @Override
         public void mo7355e0(C6591e2 e2Var) {
-            C6637k2.m19741i(this, e2Var);
+            C6637k2.m19742i(this, e2Var);
         }
 
         @Override
@@ -277,7 +277,7 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
         }
 
         @Override
-        public void mo13720g(List<C8032b> list) {
+        public void mo13719g(List<C8032b> list) {
             C6721y2.this.f21086I = list;
             Iterator it = C6721y2.this.f21100h.iterator();
             while (it.hasNext()) {
@@ -293,7 +293,7 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
 
         @Override
         public void mo7352h(int i) {
-            C6637k2.m19742h(this, i);
+            C6637k2.m19743h(this, i);
         }
 
         @Override
@@ -302,8 +302,8 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
         }
 
         @Override
-        public void mo19327i(int i) {
-            C6658o G0 = C6721y2.m19385G0(C6721y2.this.f21104l);
+        public void mo19328i(int i) {
+            C6658o G0 = C6721y2.m19386G0(C6721y2.this.f21104l);
             if (!G0.equals(C6721y2.this.f21092O)) {
                 C6721y2.this.f21092O = G0;
                 Iterator it = C6721y2.this.f21100h.iterator();
@@ -315,7 +315,7 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
 
         @Override
         public void mo7351i0(AbstractC6618i2.C6620b bVar) {
-            C6637k2.m19749a(this, bVar);
+            C6637k2.m19750a(this, bVar);
         }
 
         @Override
@@ -326,7 +326,7 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
 
         @Override
         public void mo7348k(boolean z) {
-            C6637k2.m19746d(this, z);
+            C6637k2.m19747d(this, z);
         }
 
         @Override
@@ -336,12 +336,12 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
 
         @Override
         public void mo7347l(int i) {
-            C6637k2.m19738l(this, i);
+            C6637k2.m19739l(this, i);
         }
 
         @Override
         public void mo7346l0(C6591e2 e2Var) {
-            C6637k2.m19740j(this, e2Var);
+            C6637k2.m19741j(this, e2Var);
         }
 
         @Override
@@ -351,7 +351,7 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
 
         @Override
         public void mo7344m0(boolean z) {
-            C6637k2.m19747c(this, z);
+            C6637k2.m19748c(this, z);
         }
 
         @Override
@@ -365,30 +365,30 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
                 return;
             }
             if (z && !C6721y2.this.f21090M) {
-                C6721y2.this.f21089L.m38098a(0);
+                C6721y2.this.f21089L.m38101a(0);
                 C6721y2.this.f21090M = true;
             } else if (!z && C6721y2.this.f21090M) {
-                C6721y2.this.f21089L.m38097b(0);
+                C6721y2.this.f21089L.m38100b(0);
                 C6721y2.this.f21090M = false;
             }
         }
 
         @Override
         public void onSurfaceTextureAvailable(SurfaceTexture surfaceTexture, int i, int i2) {
-            C6721y2.this.m19370S0(surfaceTexture);
-            C6721y2.this.m19379L0(i, i2);
+            C6721y2.this.m19371S0(surfaceTexture);
+            C6721y2.this.m19380L0(i, i2);
         }
 
         @Override
         public boolean onSurfaceTextureDestroyed(SurfaceTexture surfaceTexture) {
-            C6721y2.this.m19369T0(null);
-            C6721y2.this.m19379L0(0, 0);
+            C6721y2.this.m19370T0(null);
+            C6721y2.this.m19380L0(0, 0);
             return true;
         }
 
         @Override
         public void onSurfaceTextureSizeChanged(SurfaceTexture surfaceTexture, int i, int i2) {
-            C6721y2.this.m19379L0(i, i2);
+            C6721y2.this.m19380L0(i, i2);
         }
 
         @Override
@@ -397,67 +397,67 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
 
         @Override
         public void mo7342p() {
-            C6637k2.m19735o(this);
+            C6637k2.m19736o(this);
         }
 
         @Override
         public void mo7341q(C6644l3 l3Var) {
-            C6637k2.m19731s(this, l3Var);
+            C6637k2.m19732s(this, l3Var);
         }
 
         @Override
         public void mo17624r(C6600g1 g1Var) {
-            C1631o.m36152a(this, g1Var);
+            C1631o.m36155a(this, g1Var);
         }
 
         @Override
         public void mo7340s(AbstractC6618i2.C6625f fVar, AbstractC6618i2.C6625f fVar2, int i) {
-            C6637k2.m19737m(this, fVar, fVar2, i);
+            C6637k2.m19738m(this, fVar, fVar2, i);
         }
 
         @Override
         public void surfaceChanged(SurfaceHolder surfaceHolder, int i, int i2, int i3) {
-            C6721y2.this.m19379L0(i2, i3);
+            C6721y2.this.m19380L0(i2, i3);
         }
 
         @Override
         public void surfaceCreated(SurfaceHolder surfaceHolder) {
             if (C6721y2.this.f21115w) {
-                C6721y2.this.m19369T0(surfaceHolder.getSurface());
+                C6721y2.this.m19370T0(surfaceHolder.getSurface());
             }
         }
 
         @Override
         public void surfaceDestroyed(SurfaceHolder surfaceHolder) {
             if (C6721y2.this.f21115w) {
-                C6721y2.this.m19369T0(null);
+                C6721y2.this.m19370T0(null);
             }
-            C6721y2.this.m19379L0(0, 0);
+            C6721y2.this.m19380L0(0, 0);
         }
 
         @Override
         public void mo7339t(C7233t0 t0Var, C11272n nVar) {
-            C6637k2.m19732r(this, t0Var, nVar);
+            C6637k2.m19733r(this, t0Var, nVar);
         }
 
         @Override
-        public void mo19326v() {
-            C6721y2.this.m19367V0(false, -1, 3);
+        public void mo19327v() {
+            C6721y2.this.m19368V0(false, -1, 3);
         }
 
         @Override
         public void mo7223w(int i) {
-            C6721y2.this.m19366W0();
+            C6721y2.this.m19367W0();
         }
 
         @Override
-        public void mo19325x(boolean z) {
-            C6721y2.this.m19366W0();
+        public void mo19326x(boolean z) {
+            C6721y2.this.m19367W0();
         }
 
         @Override
-        public void mo19324y(float f) {
-            C6721y2.this.m19372Q0();
+        public void mo19325y(float f) {
+            C6721y2.this.m19373Q0();
         }
 
         @Override
@@ -476,38 +476,38 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
         }
 
         @Override
-        public void mo19323a(long j, float[] fArr) {
+        public void mo19324a(long j, float[] fArr) {
             AbstractC3601a aVar = this.f21120M;
             if (aVar != null) {
-                aVar.mo19323a(j, fArr);
+                aVar.mo19324a(j, fArr);
             }
             AbstractC3601a aVar2 = this.f21122b;
             if (aVar2 != null) {
-                aVar2.mo19323a(j, fArr);
+                aVar2.mo19324a(j, fArr);
             }
         }
 
         @Override
-        public void mo19322d() {
+        public void mo19323d() {
             AbstractC3601a aVar = this.f21120M;
             if (aVar != null) {
-                aVar.mo19322d();
+                aVar.mo19323d();
             }
             AbstractC3601a aVar2 = this.f21122b;
             if (aVar2 != null) {
-                aVar2.mo19322d();
+                aVar2.mo19323d();
             }
         }
 
         @Override
-        public void mo19321g(long j, long j2, C6600g1 g1Var, MediaFormat mediaFormat) {
+        public void mo19322g(long j, long j2, C6600g1 g1Var, MediaFormat mediaFormat) {
             AbstractC1622l lVar = this.f21123c;
             if (lVar != null) {
-                lVar.mo19321g(j, j2, g1Var, mediaFormat);
+                lVar.mo19322g(j, j2, g1Var, mediaFormat);
             }
             AbstractC1622l lVar2 = this.f21121a;
             if (lVar2 != null) {
-                lVar2.mo19321g(j, j2, g1Var, mediaFormat);
+                lVar2.mo19322g(j, j2, g1Var, mediaFormat);
             }
         }
 
@@ -552,13 +552,13 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
             this.f21099g = cVar;
             this.f21100h = new CopyOnWriteArraySet<>();
             Handler handler = new Handler(bVar.f20930j);
-            AbstractC6696s2[] a = bVar.f20924d.get().mo19395a(handler, bVar2, bVar2, bVar2, bVar2);
+            AbstractC6696s2[] a = bVar.f20924d.get().mo19396a(handler, bVar2, bVar2, bVar2, bVar2);
             this.f21094b = a;
             this.f21084G = 1.0f;
             if (C1216l0.f4526a < 21) {
-                this.f21082E = m19380K0(0);
+                this.f21082E = m19381K0(0);
             } else {
-                this.f21082E = C1216l0.m38017C(applicationContext);
+                this.f21082E = C1216l0.m38020C(applicationContext);
             }
             this.f21086I = Collections.emptyList();
             this.f21087J = true;
@@ -573,45 +573,45 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
                 iArr[5] = 26;
                 iArr[6] = 27;
                 iArr[7] = 28;
-                C6726z0 z0Var = new C6726z0(a, bVar.f20926f.get(), bVar.f20925e.get(), bVar.f20927g.get(), bVar.f20928h.get(), h1Var, bVar.f20939s, bVar.f20940t, bVar.f20941u, bVar.f20942v, bVar.f20943w, bVar.f20944x, bVar.f20946z, bVar.f20922b, bVar.f20930j, this, aVar.m19767c(iArr).m19765e());
+                C6726z0 z0Var = new C6726z0(a, bVar.f20926f.get(), bVar.f20925e.get(), bVar.f20927g.get(), bVar.f20928h.get(), h1Var, bVar.f20939s, bVar.f20940t, bVar.f20941u, bVar.f20942v, bVar.f20943w, bVar.f20944x, bVar.f20946z, bVar.f20922b, bVar.f20930j, this, aVar.m19768c(iArr).m19766e());
                 y2Var = this;
                 try {
                     y2Var.f21097e = z0Var;
-                    z0Var.m19319A0(bVar2);
-                    z0Var.m19216z0(bVar2);
+                    z0Var.m19320A0(bVar2);
+                    z0Var.m19217z0(bVar2);
                     long j = bVar.f20923c;
                     if (j > 0) {
-                        z0Var.m19307H0(j);
+                        z0Var.m19308H0(j);
                     }
                     C6558b bVar3 = new C6558b(bVar.f20921a, handler, bVar2);
                     y2Var.f21102j = bVar3;
-                    bVar3.m20105b(bVar.f20935o);
+                    bVar3.m20106b(bVar.f20935o);
                     C6581d dVar = new C6581d(bVar.f20921a, handler, bVar2);
                     y2Var.f21103k = dVar;
-                    dVar.m19952m(bVar.f20933m ? y2Var.f21083F : null);
+                    dVar.m19953m(bVar.f20933m ? y2Var.f21083F : null);
                     C6564b3 b3Var = new C6564b3(bVar.f20921a, handler, bVar2);
                     y2Var.f21104l = b3Var;
-                    b3Var.m20097h(C1216l0.m37988Y(y2Var.f21083F.f24332c));
+                    b3Var.m20098h(C1216l0.m37991Y(y2Var.f21083F.f24335c));
                     C6650m3 m3Var = new C6650m3(bVar.f20921a);
                     y2Var.f21105m = m3Var;
-                    m3Var.m19665a(bVar.f20934n != 0);
+                    m3Var.m19666a(bVar.f20934n != 0);
                     C6657n3 n3Var = new C6657n3(bVar.f20921a);
                     y2Var.f21106n = n3Var;
-                    n3Var.m19647a(bVar.f20934n == 2);
-                    y2Var.f21092O = m19385G0(b3Var);
+                    n3Var.m19648a(bVar.f20934n == 2);
+                    y2Var.f21092O = m19386G0(b3Var);
                     y2Var.f21093P = C1607b0.f5883N;
-                    y2Var.m19373P0(1, 10, Integer.valueOf(y2Var.f21082E));
-                    y2Var.m19373P0(2, 10, Integer.valueOf(y2Var.f21082E));
-                    y2Var.m19373P0(1, 3, y2Var.f21083F);
-                    y2Var.m19373P0(2, 4, Integer.valueOf(y2Var.f21117y));
-                    y2Var.m19373P0(2, 5, Integer.valueOf(y2Var.f21118z));
-                    y2Var.m19373P0(1, 9, Boolean.valueOf(y2Var.f21085H));
-                    y2Var.m19373P0(2, 7, cVar);
-                    y2Var.m19373P0(6, 8, cVar);
-                    gVar.m38076e();
+                    y2Var.m19374P0(1, 10, Integer.valueOf(y2Var.f21082E));
+                    y2Var.m19374P0(2, 10, Integer.valueOf(y2Var.f21082E));
+                    y2Var.m19374P0(1, 3, y2Var.f21083F);
+                    y2Var.m19374P0(2, 4, Integer.valueOf(y2Var.f21117y));
+                    y2Var.m19374P0(2, 5, Integer.valueOf(y2Var.f21118z));
+                    y2Var.m19374P0(1, 9, Boolean.valueOf(y2Var.f21085H));
+                    y2Var.m19374P0(2, 7, cVar);
+                    y2Var.m19374P0(6, 8, cVar);
+                    gVar.m38079e();
                 } catch (Throwable th2) {
                     th = th2;
-                    y2Var.f21095c.m38076e();
+                    y2Var.f21095c.m38079e();
                     throw th;
                 }
             } catch (Throwable th3) {
@@ -624,28 +624,28 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
         }
     }
 
-    public static C6658o m19385G0(C6564b3 b3Var) {
-        return new C6658o(0, b3Var.m20101d(), b3Var.m20102c());
+    public static C6658o m19386G0(C6564b3 b3Var) {
+        return new C6658o(0, b3Var.m20102d(), b3Var.m20103c());
     }
 
-    public static int m19381J0(boolean z, int i) {
+    public static int m19382J0(boolean z, int i) {
         return (!z || i == 1) ? 1 : 2;
     }
 
     @Override
-    public void mo19393A(int i, AbstractC7230t tVar) {
-        m19365X0();
-        this.f21097e.m19320A(i, tVar);
+    public void mo19394A(int i, AbstractC7230t tVar) {
+        m19366X0();
+        this.f21097e.m19321A(i, tVar);
     }
 
     @Override
-    public void mo19391B(C7602e eVar, boolean z) {
-        m19365X0();
+    public void mo19392B(C7602e eVar, boolean z) {
+        m19366X0();
         if (!this.f21091N) {
-            if (!C1216l0.m37982c(this.f21083F, eVar)) {
+            if (!C1216l0.m37985c(this.f21083F, eVar)) {
                 this.f21083F = eVar;
-                m19373P0(1, 3, eVar);
-                this.f21104l.m20097h(C1216l0.m37988Y(eVar.f24332c));
+                m19374P0(1, 3, eVar);
+                this.f21104l.m20098h(C1216l0.m37991Y(eVar.f24335c));
                 this.f21101i.mo7363V(eVar);
                 Iterator<AbstractC6618i2.AbstractC6624e> it = this.f21100h.iterator();
                 while (it.hasNext()) {
@@ -656,79 +656,79 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
             if (!z) {
                 eVar = null;
             }
-            dVar.m19952m(eVar);
-            boolean k = mo19255k();
-            int p = this.f21103k.m19949p(k, mo19217z());
-            m19367V0(k, p, m19381J0(k, p));
+            dVar.m19953m(eVar);
+            boolean k = mo19256k();
+            int p = this.f21103k.m19950p(k, mo19218z());
+            m19368V0(k, p, m19382J0(k, p));
         }
     }
 
     @Override
-    public int mo19316C() {
-        m19365X0();
-        return this.f21097e.mo19316C();
+    public int mo19317C() {
+        m19366X0();
+        return this.f21097e.mo19317C();
     }
 
     @Override
-    public int mo19314D() {
-        m19365X0();
-        return this.f21097e.mo19314D();
+    public int mo19315D() {
+        m19366X0();
+        return this.f21097e.mo19315D();
     }
 
     @Override
-    public void mo19312E(int i) {
-        m19365X0();
-        this.f21097e.mo19312E(i);
+    public void mo19313E(int i) {
+        m19366X0();
+        this.f21097e.mo19313E(i);
     }
 
     @Deprecated
-    public void m19387E0(AbstractC6618i2.AbstractC6622c cVar) {
-        C1186a.m38185e(cVar);
-        this.f21097e.m19319A0(cVar);
+    public void m19388E0(AbstractC6618i2.AbstractC6622c cVar) {
+        C1186a.m38188e(cVar);
+        this.f21097e.m19320A0(cVar);
     }
 
-    public void m19386F0() {
-        m19365X0();
-        m19374O0();
-        m19369T0(null);
-        m19379L0(0, 0);
-    }
-
-    @Override
-    public void mo19308H(int i, int i2, int i3) {
-        m19365X0();
-        this.f21097e.mo19308H(i, i2, i3);
-    }
-
-    public boolean m19384H0() {
-        m19365X0();
-        return this.f21097e.m19309G0();
+    public void m19387F0() {
+        m19366X0();
+        m19375O0();
+        m19370T0(null);
+        m19380L0(0, 0);
     }
 
     @Override
-    public void mo19383I(AbstractC6618i2.AbstractC6624e eVar) {
-        C1186a.m38185e(eVar);
+    public void mo19309H(int i, int i2, int i3) {
+        m19366X0();
+        this.f21097e.mo19309H(i, i2, i3);
+    }
+
+    public boolean m19385H0() {
+        m19366X0();
+        return this.f21097e.m19310G0();
+    }
+
+    @Override
+    public void mo19384I(AbstractC6618i2.AbstractC6624e eVar) {
+        C1186a.m38188e(eVar);
         this.f21100h.remove(eVar);
-        m19376N0(eVar);
+        m19377N0(eVar);
     }
 
-    public Looper m19382I0() {
-        return this.f21097e.m19306I0();
-    }
-
-    @Override
-    public C7233t0 mo19305J() {
-        m19365X0();
-        return this.f21097e.mo19305J();
+    public Looper m19383I0() {
+        return this.f21097e.m19307I0();
     }
 
     @Override
-    public int mo19303K() {
-        m19365X0();
-        return this.f21097e.mo19303K();
+    public C7233t0 mo19306J() {
+        m19366X0();
+        return this.f21097e.mo19306J();
     }
 
-    public final int m19380K0(int i) {
+    @Override
+    public int mo19304K() {
+        m19366X0();
+        return this.f21097e.mo19304K();
+    }
+
+    public final int m19381K0(int i) {
         AudioTrack audioTrack = this.f21110r;
         if (!(audioTrack == null || audioTrack.getAudioSessionId() == i)) {
             this.f21110r.release();
@@ -741,12 +741,12 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
     }
 
     @Override
-    public AbstractC6604g3 mo19301L() {
-        m19365X0();
-        return this.f21097e.mo19301L();
+    public AbstractC6604g3 mo19302L() {
+        m19366X0();
+        return this.f21097e.mo19302L();
     }
 
-    public final void m19379L0(int i, int i2) {
+    public final void m19380L0(int i, int i2) {
         if (i != this.f21078A || i2 != this.f21079B) {
             this.f21078A = i;
             this.f21079B = i2;
@@ -759,12 +759,12 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
     }
 
     @Override
-    public void mo19378M(AbstractC7230t tVar) {
-        m19365X0();
-        this.f21097e.m19299M(tVar);
+    public void mo19379M(AbstractC7230t tVar) {
+        m19366X0();
+        this.f21097e.m19300M(tVar);
     }
 
-    public final void m19377M0() {
+    public final void m19378M0() {
         this.f21101i.mo7362a(this.f21085H);
         Iterator<AbstractC6618i2.AbstractC6624e> it = this.f21100h.iterator();
         while (it.hasNext()) {
@@ -773,49 +773,49 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
     }
 
     @Override
-    public boolean mo19297N() {
-        m19365X0();
-        return this.f21097e.mo19297N();
+    public boolean mo19298N() {
+        m19366X0();
+        return this.f21097e.mo19298N();
     }
 
     @Deprecated
-    public void m19376N0(AbstractC6618i2.AbstractC6622c cVar) {
-        this.f21097e.m19232s1(cVar);
+    public void m19377N0(AbstractC6618i2.AbstractC6622c cVar) {
+        this.f21097e.m19233s1(cVar);
     }
 
     @Override
-    public void mo19375O(TextureView textureView) {
-        m19365X0();
+    public void mo19376O(TextureView textureView) {
+        m19366X0();
         if (textureView == null) {
-            m19386F0();
+            m19387F0();
             return;
         }
-        m19374O0();
+        m19375O0();
         this.f21116x = textureView;
         if (textureView.getSurfaceTextureListener() != null) {
-            C1230s.m37881i("SimpleExoPlayer", "Replacing existing SurfaceTextureListener.");
+            C1230s.m37884i("SimpleExoPlayer", "Replacing existing SurfaceTextureListener.");
         }
         textureView.setSurfaceTextureListener(this.f21098f);
         SurfaceTexture surfaceTexture = textureView.isAvailable() ? textureView.getSurfaceTexture() : null;
         if (surfaceTexture == null) {
-            m19369T0(null);
-            m19379L0(0, 0);
+            m19370T0(null);
+            m19380L0(0, 0);
             return;
         }
-        m19370S0(surfaceTexture);
-        m19379L0(textureView.getWidth(), textureView.getHeight());
+        m19371S0(surfaceTexture);
+        m19380L0(textureView.getWidth(), textureView.getHeight());
     }
 
-    public final void m19374O0() {
+    public final void m19375O0() {
         if (this.f21114v != null) {
-            this.f21097e.m19311E0(this.f21099g).m19649n(10000).m19650m(null).m19651l();
-            this.f21114v.m30425i(this.f21098f);
+            this.f21097e.m19312E0(this.f21099g).m19650n(10000).m19651m(null).m19652l();
+            this.f21114v.m30427i(this.f21098f);
             this.f21114v = null;
         }
         TextureView textureView = this.f21116x;
         if (textureView != null) {
             if (textureView.getSurfaceTextureListener() != this.f21098f) {
-                C1230s.m37881i("SimpleExoPlayer", "SurfaceTextureListener already unset or replaced.");
+                C1230s.m37884i("SimpleExoPlayer", "SurfaceTextureListener already unset or replaced.");
             } else {
                 this.f21116x.setSurfaceTextureListener(null);
             }
@@ -829,51 +829,51 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
     }
 
     @Override
-    public void mo19294P(AbstractC6618i2.AbstractC6624e eVar) {
-        C1186a.m38185e(eVar);
+    public void mo19295P(AbstractC6618i2.AbstractC6624e eVar) {
+        C1186a.m38188e(eVar);
         this.f21100h.add(eVar);
-        m19387E0(eVar);
+        m19388E0(eVar);
     }
 
-    public final void m19373P0(int i, int i2, Object obj) {
+    public final void m19374P0(int i, int i2, Object obj) {
         AbstractC6696s2[] s2VarArr;
         for (AbstractC6696s2 s2Var : this.f21094b) {
-            if (s2Var.mo19431k() == i) {
-                this.f21097e.m19311E0(s2Var).m19649n(i2).m19650m(obj).m19651l();
+            if (s2Var.mo19432k() == i) {
+                this.f21097e.m19312E0(s2Var).m19650n(i2).m19651m(obj).m19652l();
             }
         }
     }
 
     @Override
-    public long mo19292Q() {
-        m19365X0();
-        return this.f21097e.mo19292Q();
+    public long mo19293Q() {
+        m19366X0();
+        return this.f21097e.mo19293Q();
     }
 
-    public final void m19372Q0() {
-        m19373P0(1, 2, Float.valueOf(this.f21084G * this.f21103k.m19958g()));
+    public final void m19373Q0() {
+        m19374P0(1, 2, Float.valueOf(this.f21084G * this.f21103k.m19959g()));
     }
 
-    public final void m19371R0(SurfaceHolder surfaceHolder) {
+    public final void m19372R0(SurfaceHolder surfaceHolder) {
         this.f21115w = false;
         this.f21113u = surfaceHolder;
         surfaceHolder.addCallback(this.f21098f);
         Surface surface = this.f21113u.getSurface();
         if (surface == null || !surface.isValid()) {
-            m19379L0(0, 0);
+            m19380L0(0, 0);
             return;
         }
         Rect surfaceFrame = this.f21113u.getSurfaceFrame();
-        m19379L0(surfaceFrame.width(), surfaceFrame.height());
+        m19380L0(surfaceFrame.width(), surfaceFrame.height());
     }
 
-    public final void m19370S0(SurfaceTexture surfaceTexture) {
+    public final void m19371S0(SurfaceTexture surfaceTexture) {
         Surface surface = new Surface(surfaceTexture);
-        m19369T0(surface);
+        m19370T0(surface);
         this.f21112t = surface;
     }
 
-    public final void m19369T0(Object obj) {
+    public final void m19370T0(Object obj) {
         boolean z;
         ArrayList<C6654n2> arrayList = new ArrayList();
         AbstractC6696s2[] s2VarArr = this.f21094b;
@@ -885,8 +885,8 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
                 break;
             }
             AbstractC6696s2 s2Var = s2VarArr[i];
-            if (s2Var.mo19431k() == 2) {
-                arrayList.add(this.f21097e.m19311E0(s2Var).m19649n(1).m19650m(obj).m19651l());
+            if (s2Var.mo19432k() == 2) {
+                arrayList.add(this.f21097e.m19312E0(s2Var).m19650n(1).m19651m(obj).m19652l());
             }
             i++;
         }
@@ -896,7 +896,7 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
         } else {
             try {
                 for (C6654n2 n2Var : arrayList) {
-                    n2Var.m19662a(this.f21107o);
+                    n2Var.m19663a(this.f21107o);
                 }
             } catch (InterruptedException unused) {
                 Thread.currentThread().interrupt();
@@ -912,67 +912,67 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
         }
         this.f21111s = obj;
         if (z) {
-            this.f21097e.m19218y1(false, C6681q.m19579j(new C6590e1(3), 1003));
+            this.f21097e.m19219y1(false, C6681q.m19580j(new C6590e1(3), 1003));
         }
     }
 
-    public void m19368U0(SurfaceHolder surfaceHolder) {
-        m19365X0();
+    public void m19369U0(SurfaceHolder surfaceHolder) {
+        m19366X0();
         if (surfaceHolder == null) {
-            m19386F0();
+            m19387F0();
             return;
         }
-        m19374O0();
+        m19375O0();
         this.f21115w = true;
         this.f21113u = surfaceHolder;
         surfaceHolder.addCallback(this.f21098f);
         Surface surface = surfaceHolder.getSurface();
         if (surface == null || !surface.isValid()) {
-            m19369T0(null);
-            m19379L0(0, 0);
+            m19370T0(null);
+            m19380L0(0, 0);
             return;
         }
-        m19369T0(surface);
+        m19370T0(surface);
         Rect surfaceFrame = surfaceHolder.getSurfaceFrame();
-        m19379L0(surfaceFrame.width(), surfaceFrame.height());
+        m19380L0(surfaceFrame.width(), surfaceFrame.height());
     }
 
-    public final void m19367V0(boolean z, int i, int i2) {
+    public final void m19368V0(boolean z, int i, int i2) {
         int i3 = 0;
         boolean z2 = z && i != -1;
         if (z2 && i != 1) {
             i3 = 1;
         }
-        this.f21097e.m19220x1(z2, i3, i2);
+        this.f21097e.m19221x1(z2, i3, i2);
     }
 
-    public final void m19366W0() {
-        int z = mo19217z();
+    public final void m19367W0() {
+        int z = mo19218z();
         boolean z2 = true;
         if (z != 1) {
             if (z == 2 || z == 3) {
-                boolean H0 = m19384H0();
+                boolean H0 = m19385H0();
                 C6650m3 m3Var = this.f21105m;
-                if (!mo19255k() || H0) {
+                if (!mo19256k() || H0) {
                     z2 = false;
                 }
-                m3Var.m19664b(z2);
-                this.f21106n.m19646b(mo19255k());
+                m3Var.m19665b(z2);
+                this.f21106n.m19647b(mo19256k());
                 return;
             } else if (z != 4) {
                 throw new IllegalStateException();
             }
         }
-        this.f21105m.m19664b(false);
-        this.f21106n.m19646b(false);
+        this.f21105m.m19665b(false);
+        this.f21106n.m19647b(false);
     }
 
-    public final void m19365X0() {
-        this.f21095c.m38079b();
-        if (Thread.currentThread() != m19382I0().getThread()) {
-            String z = C1216l0.m37936z("Player is accessed on the wrong thread.\nCurrent thread: '%s'\nExpected thread: '%s'\nSee https://exoplayer.dev/issues/player-accessed-on-wrong-thread", Thread.currentThread().getName(), m19382I0().getThread().getName());
+    public final void m19366X0() {
+        this.f21095c.m38082b();
+        if (Thread.currentThread() != m19383I0().getThread()) {
+            String z = C1216l0.m37939z("Player is accessed on the wrong thread.\nCurrent thread: '%s'\nExpected thread: '%s'\nSee https://exoplayer.dev/issues/player-accessed-on-wrong-thread", Thread.currentThread().getName(), m19383I0().getThread().getName());
             if (!this.f21087J) {
-                C1230s.m37880j("SimpleExoPlayer", z, this.f21088K ? null : new IllegalStateException());
+                C1230s.m37883j("SimpleExoPlayer", z, this.f21088K ? null : new IllegalStateException());
                 this.f21088K = true;
                 return;
             }
@@ -981,28 +981,28 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
     }
 
     @Override
-    public void mo19281a() {
+    public void mo19282a() {
         AudioTrack audioTrack;
-        m19365X0();
+        m19366X0();
         if (C1216l0.f4526a < 21 && (audioTrack = this.f21110r) != null) {
             audioTrack.release();
             this.f21110r = null;
         }
-        this.f21102j.m20105b(false);
-        this.f21104l.m20098g();
-        this.f21105m.m19664b(false);
-        this.f21106n.m19646b(false);
-        this.f21103k.m19956i();
-        this.f21097e.mo19281a();
+        this.f21102j.m20106b(false);
+        this.f21104l.m20099g();
+        this.f21105m.m19665b(false);
+        this.f21106n.m19647b(false);
+        this.f21103k.m19957i();
+        this.f21097e.mo19282a();
         this.f21101i.m17708I2();
-        m19374O0();
+        m19375O0();
         Surface surface = this.f21112t;
         if (surface != null) {
             surface.release();
             this.f21112t = null;
         }
         if (this.f21090M) {
-            ((C1193d0) C1186a.m38185e(this.f21089L)).m38097b(0);
+            ((C1193d0) C1186a.m38188e(this.f21089L)).m38100b(0);
             this.f21090M = false;
         }
         this.f21086I = Collections.emptyList();
@@ -1010,33 +1010,33 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
     }
 
     @Override
-    public void mo19279b() {
-        m19365X0();
-        boolean k = mo19255k();
-        int p = this.f21103k.m19949p(k, 2);
-        m19367V0(k, p, m19381J0(k, p));
-        this.f21097e.mo19279b();
+    public void mo19280b() {
+        m19366X0();
+        boolean k = mo19256k();
+        int p = this.f21103k.m19950p(k, 2);
+        m19368V0(k, p, m19382J0(k, p));
+        this.f21097e.mo19280b();
     }
 
     @Override
-    public void mo19275d(C6613h2 h2Var) {
-        m19365X0();
-        this.f21097e.mo19275d(h2Var);
+    public void mo19276d(C6613h2 h2Var) {
+        m19366X0();
+        this.f21097e.mo19276d(h2Var);
     }
 
     @Override
-    public void mo19362e(int i, List<AbstractC7230t> list) {
-        m19365X0();
-        this.f21097e.m19272e(i, list);
+    public void mo19363e(int i, List<AbstractC7230t> list) {
+        m19366X0();
+        this.f21097e.m19273e(i, list);
     }
 
     @Override
-    public void mo19360f(float f) {
-        m19365X0();
-        float o = C1216l0.m37958o(f, 0.0f, 1.0f);
+    public void mo19361f(float f) {
+        m19366X0();
+        float o = C1216l0.m37961o(f, 0.0f, 1.0f);
         if (this.f21084G != o) {
             this.f21084G = o;
-            m19372Q0();
+            m19373Q0();
             this.f21101i.mo7338u(o);
             Iterator<AbstractC6618i2.AbstractC6624e> it = this.f21100h.iterator();
             while (it.hasNext()) {
@@ -1046,107 +1046,107 @@ public class C6721y2 extends AbstractC6588e implements AbstractC6689s {
     }
 
     @Override
-    public long mo19267g() {
-        m19365X0();
-        return this.f21097e.mo19267g();
+    public long mo19268g() {
+        m19366X0();
+        return this.f21097e.mo19268g();
     }
 
     @Override
-    public boolean mo19264h() {
-        m19365X0();
-        return this.f21097e.mo19264h();
+    public boolean mo19265h() {
+        m19366X0();
+        return this.f21097e.mo19265h();
     }
 
     @Override
-    public long mo19261i() {
-        m19365X0();
-        return this.f21097e.mo19261i();
+    public long mo19262i() {
+        m19366X0();
+        return this.f21097e.mo19262i();
     }
 
     @Override
-    public void mo19258j(int i, long j) {
-        m19365X0();
+    public void mo19259j(int i, long j) {
+        m19366X0();
         this.f21101i.m17712H2();
-        this.f21097e.mo19258j(i, j);
+        this.f21097e.mo19259j(i, j);
     }
 
     @Override
-    public boolean mo19255k() {
-        m19365X0();
-        return this.f21097e.mo19255k();
+    public boolean mo19256k() {
+        m19366X0();
+        return this.f21097e.mo19256k();
     }
 
     @Override
-    public void mo19252l(boolean z) {
-        m19365X0();
-        this.f21097e.mo19252l(z);
+    public void mo19253l(boolean z) {
+        m19366X0();
+        this.f21097e.mo19253l(z);
     }
 
     @Override
-    public int mo19249m() {
-        m19365X0();
-        return this.f21097e.mo19249m();
+    public int mo19250m() {
+        m19366X0();
+        return this.f21097e.mo19250m();
     }
 
     @Override
-    public int mo19246n() {
-        m19365X0();
-        return this.f21097e.mo19246n();
+    public int mo19247n() {
+        m19366X0();
+        return this.f21097e.mo19247n();
     }
 
     @Override
-    public void mo19350o(SurfaceView surfaceView) {
-        m19365X0();
+    public void mo19351o(SurfaceView surfaceView) {
+        m19366X0();
         if (surfaceView instanceof AbstractC1621k) {
-            m19374O0();
-            m19369T0(surfaceView);
-            m19371R0(surfaceView.getHolder());
+            m19375O0();
+            m19370T0(surfaceView);
+            m19372R0(surfaceView.getHolder());
         } else if (surfaceView instanceof SphericalGLSurfaceView) {
-            m19374O0();
+            m19375O0();
             this.f21114v = (SphericalGLSurfaceView) surfaceView;
-            this.f21097e.m19311E0(this.f21099g).m19649n(10000).m19650m(this.f21114v).m19651l();
-            this.f21114v.m30430d(this.f21098f);
-            m19369T0(this.f21114v.getVideoSurface());
-            m19371R0(surfaceView.getHolder());
+            this.f21097e.m19312E0(this.f21099g).m19650n(10000).m19651m(this.f21114v).m19652l();
+            this.f21114v.m30432d(this.f21098f);
+            m19370T0(this.f21114v.getVideoSurface());
+            m19372R0(surfaceView.getHolder());
         } else {
-            m19368U0(surfaceView == null ? null : surfaceView.getHolder());
+            m19369U0(surfaceView == null ? null : surfaceView.getHolder());
         }
     }
 
     @Override
-    public void mo19348p(List<AbstractC7230t> list) {
-        m19365X0();
-        this.f21097e.m19241p(list);
+    public void mo19349p(List<AbstractC7230t> list) {
+        m19366X0();
+        this.f21097e.m19242p(list);
     }
 
     @Override
-    public void mo19344s(List<AbstractC7230t> list) {
-        m19365X0();
-        this.f21097e.m19234s(list);
+    public void mo19345s(List<AbstractC7230t> list) {
+        m19366X0();
+        this.f21097e.m19235s(list);
     }
 
     @Override
-    public void mo19231t(int i, int i2) {
-        m19365X0();
-        this.f21097e.mo19231t(i, i2);
+    public void mo19232t(int i, int i2) {
+        m19366X0();
+        this.f21097e.mo19232t(i, i2);
     }
 
     @Override
-    public void mo19340v(boolean z) {
-        m19365X0();
-        int p = this.f21103k.m19949p(z, mo19217z());
-        m19367V0(z, p, m19381J0(z, p));
+    public void mo19341v(boolean z) {
+        m19366X0();
+        int p = this.f21103k.m19950p(z, mo19218z());
+        m19368V0(z, p, m19382J0(z, p));
     }
 
     @Override
-    public long mo19222x() {
-        m19365X0();
-        return this.f21097e.mo19222x();
+    public long mo19223x() {
+        m19366X0();
+        return this.f21097e.mo19223x();
     }
 
     @Override
-    public int mo19217z() {
-        m19365X0();
-        return this.f21097e.mo19217z();
+    public int mo19218z() {
+        m19366X0();
+        return this.f21097e.mo19218z();
     }
 }

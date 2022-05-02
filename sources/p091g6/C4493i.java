@@ -11,25 +11,25 @@ public final class C4493i {
         this.f14854a = fVar;
     }
 
-    public void m27516a(boolean z) {
+    public void m27518a(boolean z) {
         try {
-            this.f14854a.mo24321M(z);
+            this.f14854a.mo24322M(z);
         } catch (RemoteException e) {
             throw new C5245f(e);
         }
     }
 
-    public void m27515b(boolean z) {
+    public void m27517b(boolean z) {
         try {
-            this.f14854a.mo24322J(z);
+            this.f14854a.mo24323J(z);
         } catch (RemoteException e) {
             throw new C5245f(e);
         }
     }
 
-    public void m27514c(boolean z) {
+    public void m27516c(boolean z) {
         try {
-            this.f14854a.mo24320v0(z);
+            this.f14854a.mo24321v0(z);
         } catch (RemoteException e) {
             throw new C5245f(e);
         }

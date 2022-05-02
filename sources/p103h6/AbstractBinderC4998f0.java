@@ -9,11 +9,11 @@ public abstract class AbstractBinderC4998f0 extends BinderC0189b implements Abst
     }
 
     @Override
-    public final boolean mo24285q(int i, Parcel parcel, Parcel parcel2, int i2) {
+    public final boolean mo24286q(int i, Parcel parcel, Parcel parcel2, int i2) {
         if (i != 1) {
             return false;
         }
-        mo24337c0(parcel.readInt());
+        mo24338c0(parcel.readInt());
         parcel2.writeNoException();
         return true;
     }

@@ -55,9 +55,9 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
         public void mo421b(RecyclerView recyclerView, int i, int i2) {
             int a2;
             int indexOf;
-            if (!h30.this.f8476p0 && h30.this.f8477q0 && (a2 = ((LinearLayoutManager) recyclerView.getLayoutManager()).m39546a2()) != -1 && (indexOf = h30.this.f8478r0.indexOf(h30.this.f8475o0.m6136g0(a2).f32684c)) != -1 && indexOf + 5 >= h30.this.f8478r0.size()) {
+            if (!h30.this.f8476p0 && h30.this.f8477q0 && (a2 = ((LinearLayoutManager) recyclerView.getLayoutManager()).m39549a2()) != -1 && (indexOf = h30.this.f8478r0.indexOf(h30.this.f8475o0.m6136g0(a2).f32687c)) != -1 && indexOf + 5 >= h30.this.f8478r0.size()) {
                 h30 h30Var = h30.this;
-                h30Var.m34466rf(h30Var.f8478r0.size(), 25, h30.this.f8475o0.mo6153D());
+                h30Var.m34469rf(h30Var.f8478r0.size(), 25, h30.this.f8475o0.mo6153D());
             }
         }
     }
@@ -68,14 +68,14 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
 
         @Override
         public void mo1364b() {
-            if (h30.this.f8479s0 != null && h30.this.f8479s0.m21496p() > 0) {
-                int p = h30.this.f8479s0.m21496p();
+            if (h30.this.f8479s0 != null && h30.this.f8479s0.m21497p() > 0) {
+                int p = h30.this.f8479s0.m21497p();
                 long[] jArr = new long[p];
                 for (int i = 0; i < p; i++) {
-                    jArr[i] = h30.this.f8479s0.m21501j(i);
+                    jArr[i] = h30.this.f8479s0.m21502j(i);
                 }
-                h30.this.f8479s0.m21509b();
-                h30.this.f30167b.m2270r4().m14783o(new TdApi.ViewTrendingStickerSets(jArr), h30.this.f30167b.m2392ja());
+                h30.this.f8479s0.m21510b();
+                h30.this.f30170b.m2270r4().m14783o(new TdApi.ViewTrendingStickerSets(jArr), h30.this.f30170b.m2392ja());
             }
         }
     }
@@ -84,14 +84,14 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
         super(context, q6Var);
     }
 
-    public void m34474jf(ArrayList arrayList, ArrayList arrayList2, int i, int i2) {
+    public void m34477jf(ArrayList arrayList, ArrayList arrayList2, int i, int i2) {
         if (!m9347Sa()) {
-            m34478ff(arrayList, arrayList2, i, i2);
+            m34481ff(arrayList, arrayList2, i, i2);
             m9300Z9().m9204n9();
         }
     }
 
-    public void m34473kf(final int i, final int i2, TdApi.Object object) {
+    public void m34476kf(final int i, final int i2, TdApi.Object object) {
         ArrayList arrayList;
         int constructor = object.getConstructor();
         if (constructor == -1883828812) {
@@ -99,7 +99,7 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
             TdApi.StickerSetInfo[] stickerSetInfoArr = ((TdApi.StickerSets) object).sets;
             if (stickerSetInfoArr.length > 0) {
                 arrayList = new ArrayList(stickerSetInfoArr.length);
-                C2746n9.m33722Ng(this.f30167b, arrayList, arrayList2, i, stickerSetInfoArr, this, this, true);
+                C2746n9.m33725Ng(this.f30170b, arrayList, arrayList2, i, stickerSetInfoArr, this, this, true);
             } else {
                 arrayList = null;
                 if (i2 == 0) {
@@ -107,48 +107,48 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
                 }
             }
             final ArrayList arrayList3 = arrayList;
-            this.f30167b.m2485dd().post(new Runnable() {
+            this.f30170b.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    h30.this.m34474jf(arrayList3, arrayList2, i2, i);
+                    h30.this.m34477jf(arrayList3, arrayList2, i2, i);
                 }
             });
         } else if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         }
     }
 
-    public void m34472lf(C6035e eVar) {
+    public void m34475lf(C6035e eVar) {
         ArrayList<C4817v6> arrayList;
         if (!m9347Sa() && !this.f8476p0 && (arrayList = this.f8478r0) != null) {
             Iterator<C4817v6> it = arrayList.iterator();
             while (it.hasNext()) {
                 C4817v6 next = it.next();
-                if (eVar.m21503h(next.m25182c()) >= 0) {
-                    next.m25160y();
+                if (eVar.m21504h(next.m25183c()) >= 0) {
+                    next.m25161y();
                     this.f8475o0.m6149F0(next);
                 } else {
-                    next.m25194A();
+                    next.m25195A();
                     this.f8475o0.m6149F0(next);
                 }
             }
         }
     }
 
-    public void m34471mf(TdApi.StickerSet stickerSet) {
+    public void m34474mf(TdApi.StickerSet stickerSet) {
         if (!m9347Sa()) {
-            m34477gf(stickerSet);
+            m34480gf(stickerSet);
         }
     }
 
-    public void m34470nf(long j) {
+    public void m34473nf(long j) {
         ArrayList<C4817v6> arrayList;
         if (!m9347Sa() && !this.f8476p0 && (arrayList = this.f8478r0) != null) {
             Iterator<C4817v6> it = arrayList.iterator();
             while (it.hasNext()) {
                 C4817v6 next = it.next();
-                if (j == next.m25182c()) {
-                    next.m25162w();
+                if (j == next.m25183c()) {
+                    next.m25163w();
                     this.f8475o0.m6149F0(next);
                     return;
                 }
@@ -156,14 +156,14 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
         }
     }
 
-    public void m34469of(long j) {
+    public void m34472of(long j) {
         ArrayList<C4817v6> arrayList;
         if (!m9347Sa() && !this.f8476p0 && (arrayList = this.f8478r0) != null) {
             Iterator<C4817v6> it = arrayList.iterator();
             while (it.hasNext()) {
                 C4817v6 next = it.next();
-                if (j == next.m25182c()) {
-                    next.m25160y();
+                if (j == next.m25183c()) {
+                    next.m25161y();
                     this.f8475o0.m6149F0(next);
                     return;
                 }
@@ -171,15 +171,15 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
         }
     }
 
-    public void m34468pf(long j) {
+    public void m34471pf(long j) {
         ArrayList<C4817v6> arrayList;
         if (!m9347Sa() && !this.f8476p0 && (arrayList = this.f8478r0) != null) {
             Iterator<C4817v6> it = arrayList.iterator();
             while (it.hasNext()) {
                 C4817v6 next = it.next();
-                if (j == next.m25182c()) {
-                    next.m25194A();
-                    next.m25159z();
+                if (j == next.m25183c()) {
+                    next.m25195A();
+                    next.m25160z();
                     this.f8475o0.m6149F0(next);
                     return;
                 }
@@ -187,18 +187,18 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
         }
     }
 
-    public void m34467qf(TdApi.StickerSets stickerSets) {
+    public void m34470qf(TdApi.StickerSets stickerSets) {
         if (!this.f8476p0) {
             ArrayList<C4817v6> arrayList = this.f8478r0;
             if ((arrayList == null || arrayList.isEmpty()) && stickerSets.sets.length > 0) {
-                m34466rf(0, 20, 0);
+                m34469rf(0, 20, 0);
             }
         }
     }
 
     @Override
     public void mo7577A4(C2099j jVar, C2104l lVar) {
-        C2103k.m35586c(this, jVar, lVar);
+        C2103k.m35589c(this, jVar, lVar);
     }
 
     @Override
@@ -207,13 +207,13 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
     }
 
     @Override
-    public void mo25158B2(C4817v6 v6Var) {
-        m34465sf(v6Var.m25182c());
+    public void mo25159B2(C4817v6 v6Var) {
+        m34468sf(v6Var.m25183c());
     }
 
     @Override
     public void mo7568H1(C2099j jVar, C2104l lVar) {
-        C2103k.m35588a(this, jVar, lVar);
+        C2103k.m35591a(this, jVar, lVar);
     }
 
     @Override
@@ -225,9 +225,9 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
         super.mo8867Ia();
         View$OnClickListenerC10042e eVar = this.f8475o0;
         if (eVar != null) {
-            eVar.m39313H();
+            eVar.m39316H();
         }
-        C1399s0.m37171l0(this.f8474n0);
+        C1399s0.m37174l0(this.f8474n0);
     }
 
     @Override
@@ -237,38 +237,38 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
 
     @Override
     public void mo2037U3(final TdApi.StickerSets stickerSets, int i) {
-        this.f30167b.m2485dd().post(new Runnable() {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                h30.this.m34467qf(stickerSets);
+                h30.this.m34470qf(stickerSets);
             }
         });
     }
 
     @Override
     public void mo7556U6(C2099j jVar, C2104l lVar) {
-        C2103k.m35587b(this, jVar, lVar);
+        C2103k.m35590b(this, jVar, lVar);
     }
 
     @Override
-    public void mo33695X6(C2104l lVar, long j) {
+    public void mo33698X6(C2104l lVar, long j) {
         C6035e<Boolean> eVar = this.f8481u0;
         if (eVar == null) {
             this.f8481u0 = new C6035e<>();
-        } else if (eVar.m21504g(j, Boolean.FALSE).booleanValue()) {
+        } else if (eVar.m21505g(j, Boolean.FALSE).booleanValue()) {
             return;
         }
-        this.f8481u0.m21500k(j, Boolean.TRUE);
-        this.f30167b.m2270r4().m14783o(new TdApi.GetStickerSet(j), this);
+        this.f8481u0.m21501k(j, Boolean.TRUE);
+        this.f30170b.m2270r4().m14783o(new TdApi.GetStickerSet(j), this);
     }
 
     @Override
     public void mo2036Z(TdApi.StickerSetInfo stickerSetInfo) {
-        final long j = stickerSetInfo.f25424id;
-        this.f30167b.m2485dd().post(new Runnable() {
+        final long j = stickerSetInfo.f25427id;
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                h30.this.m34470nf(j);
+                h30.this.m34473nf(j);
             }
         });
     }
@@ -276,8 +276,8 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
     @Override
     public void mo417Z8() {
         super.mo417Z8();
-        C1399s0.m37162q(this.f8474n0);
-        this.f30167b.m2781K9().m1786y0(this);
+        C1399s0.m37165q(this.f8474n0);
+        this.f30170b.m2781K9().m1786y0(this);
     }
 
     @Override
@@ -292,16 +292,16 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
 
     @Override
     public void mo2034f6(TdApi.StickerSetInfo stickerSetInfo) {
-        final long j = stickerSetInfo.f25424id;
-        this.f30167b.m2485dd().post(new Runnable() {
+        final long j = stickerSetInfo.f25427id;
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                h30.this.m34468pf(j);
+                h30.this.m34471pf(j);
             }
         });
     }
 
-    public final void m34478ff(ArrayList<C4817v6> arrayList, ArrayList<View$OnClickListenerC10042e.C10044b> arrayList2, int i, int i2) {
+    public final void m34481ff(ArrayList<C4817v6> arrayList, ArrayList<View$OnClickListenerC10042e.C10044b> arrayList2, int i, int i2) {
         if (i == 0 || (this.f8476p0 && i == this.f8478r0.size())) {
             if (arrayList != null) {
                 if (i == 0) {
@@ -326,7 +326,7 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
 
     @Override
     public int getStickersListTop() {
-        return C1399s0.m37154u(this.f8474n0)[1];
+        return C1399s0.m37157u(this.f8474n0)[1];
     }
 
     @Override
@@ -334,29 +334,29 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
         return -1;
     }
 
-    public final void m34477gf(TdApi.StickerSet stickerSet) {
-        this.f8481u0.m21499l(stickerSet.f25423id);
+    public final void m34480gf(TdApi.StickerSet stickerSet) {
+        this.f8481u0.m21500l(stickerSet.f25426id);
         ArrayList<C4817v6> arrayList = this.f8478r0;
         if (arrayList != null) {
             Iterator<C4817v6> it = arrayList.iterator();
             while (it.hasNext()) {
                 C4817v6 next = it.next();
-                if (next.m25182c() == stickerSet.f25423id) {
-                    next.m25189F(stickerSet);
-                    int a = next.m25184a();
-                    int k = next.m25174k() + 1 + next.m25184a();
-                    while (a < Math.min(stickerSet.stickers.length - next.m25184a(), next.m25184a() + 4)) {
-                        C2104l lVar = this.f8475o0.m6136g0(k).f32683b;
+                if (next.m25183c() == stickerSet.f25426id) {
+                    next.m25190F(stickerSet);
+                    int a = next.m25185a();
+                    int k = next.m25175k() + 1 + next.m25185a();
+                    while (a < Math.min(stickerSet.stickers.length - next.m25185a(), next.m25185a() + 4)) {
+                        C2104l lVar = this.f8475o0.m6136g0(k).f32686b;
                         if (lVar != null) {
                             TdApi.Sticker sticker = stickerSet.stickers[a];
-                            lVar.m35563u(this.f30167b, sticker, sticker.type, stickerSet.emojis[a].emojis);
+                            lVar.m35566u(this.f30170b, sticker, sticker.type, stickerSet.emojis[a].emojis);
                         }
                         RecyclerView recyclerView = this.f8474n0;
-                        View C = recyclerView != null ? recyclerView.getLayoutManager().mo39262C(k) : null;
+                        View C = recyclerView != null ? recyclerView.getLayoutManager().mo39265C(k) : null;
                         if (C == null || !(C instanceof C2099j)) {
-                            this.f8475o0.m39312I(k);
+                            this.f8475o0.m39315I(k);
                         } else {
-                            ((C2099j) C).m35594r();
+                            ((C2099j) C).m35597r();
                         }
                         a++;
                         k++;
@@ -367,7 +367,7 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
         }
     }
 
-    public final int m34476hf(long j) {
+    public final int m34479hf(long j) {
         ArrayList<C4817v6> arrayList = this.f8478r0;
         if (arrayList == null) {
             return -1;
@@ -375,7 +375,7 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
         int i = 0;
         Iterator<C4817v6> it = arrayList.iterator();
         while (it.hasNext()) {
-            if (it.next().m25182c() == j) {
+            if (it.next().m25183c() == j) {
                 return i;
             }
             i++;
@@ -383,7 +383,7 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
         return -1;
     }
 
-    public boolean m34475if() {
+    public boolean m34478if() {
         return !this.f8476p0;
     }
 
@@ -395,12 +395,12 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
     public void mo2032k(long[] jArr, boolean z) {
         final C6035e eVar = new C6035e(jArr.length);
         for (long j : jArr) {
-            eVar.m21500k(j, null);
+            eVar.m21501k(j, null);
         }
-        this.f30167b.m2485dd().post(new Runnable() {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                h30.this.m34472lf(eVar);
+                h30.this.m34475lf(eVar);
             }
         });
     }
@@ -408,17 +408,17 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
     @Override
     public boolean mo7542k4(C2099j jVar, View view, C2104l lVar, boolean z, boolean z2, TdApi.MessageSchedulingState messageSchedulingState) {
         ArrayList<C4817v6> arrayList;
-        int hf = m34476hf(lVar.m35573k());
+        int hf = m34479hf(lVar.m35576k());
         if (hf == -1 || (arrayList = this.f8478r0) == null) {
             return false;
         }
         if (z) {
-            x00 x00Var = new x00(this.f30165a, this.f30167b);
-            x00Var.m30994Vi(new x00.C3281m(lVar.m35574j()));
-            x00Var.m30960ej();
+            x00 x00Var = new x00(this.f30168a, this.f30170b);
+            x00Var.m30996Vi(new x00.C3281m(lVar.m35577j()));
+            x00Var.m30962ej();
             return true;
         }
-        arrayList.get(hf).m25187H(this);
+        arrayList.get(hf).m25188H(this);
         return true;
     }
 
@@ -428,10 +428,10 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
         this.f8475o0 = eVar;
         eVar.m6118z0();
         GridLayoutManager gridLayoutManager = new GridLayoutManager(context, 5);
-        gridLayoutManager.m39585e3(new C2470a());
-        RecyclerView recyclerView = (RecyclerView) C1399s0.m37146y(mo4347s(), R.layout.recycler, null);
+        gridLayoutManager.m39588e3(new C2470a());
+        RecyclerView recyclerView = (RecyclerView) C1399s0.m37149y(mo4347s(), R.layout.recycler, null);
         this.f8474n0 = recyclerView;
-        C1399s0.m37171l0(recyclerView);
+        C1399s0.m37174l0(recyclerView);
         this.f8474n0.setItemAnimator(null);
         this.f8474n0.setLayoutManager(gridLayoutManager);
         this.f8474n0.setAdapter(this.f8475o0);
@@ -439,39 +439,39 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
         this.f8474n0.setLayoutParams(FrameLayoutFix.m18008s1(-1, -1));
         this.f8475o0.m6154C0(this.f8474n0.getLayoutManager());
         this.f8475o0.m6156A0(new View$OnClickListenerC10042e.C10044b(5));
-        this.f8474n0.m39422k(new C2471b());
-        this.f30167b.m2781K9().m1838l0(this);
-        m34466rf(0, 20, 0);
+        this.f8474n0.m39425k(new C2471b());
+        this.f30170b.m2781K9().m1838l0(this);
+        m34469rf(0, 20, 0);
         return this.f8474n0;
     }
 
-    public final void m34466rf(final int i, int i2, final int i3) {
+    public final void m34469rf(final int i, int i2, final int i3) {
         if (!this.f8476p0) {
             this.f8476p0 = true;
-            this.f30167b.m2270r4().m14783o(new TdApi.GetTrendingStickerSets(i, i2), new Client.AbstractC7865g() {
+            this.f30170b.m2270r4().m14783o(new TdApi.GetTrendingStickerSets(i, i2), new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
-                    h30.this.m34473kf(i3, i, object);
+                    h30.this.m34476kf(i3, i, object);
                 }
             });
         }
     }
 
-    public final void m34465sf(long j) {
+    public final void m34468sf(long j) {
         C6035e<Boolean> eVar = this.f8479s0;
         if (eVar == null) {
             this.f8479s0 = new C6035e<>();
-        } else if (eVar.m21503h(j) >= 0) {
+        } else if (eVar.m21504h(j) >= 0) {
             return;
         }
-        this.f8479s0.m21500k(j, Boolean.TRUE);
+        this.f8479s0.m21501k(j, Boolean.TRUE);
         AbstractRunnableC5910b bVar = this.f8480t0;
         if (bVar != null) {
-            bVar.m21857c();
+            bVar.m21858c();
         }
         C2472c cVar = new C2472c();
         this.f8480t0 = cVar;
-        C1379j0.m37332e0(cVar, 750L);
+        C1379j0.m37335e0(cVar, 750L);
     }
 
     @Override
@@ -479,14 +479,14 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
         int constructor = object.getConstructor();
         if (constructor == -1816236758) {
             final TdApi.StickerSet stickerSet = (TdApi.StickerSet) object;
-            this.f30167b.m2485dd().post(new Runnable() {
+            this.f30170b.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    h30.this.m34471mf(stickerSet);
+                    h30.this.m34474mf(stickerSet);
                 }
             });
         } else if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         }
     }
 
@@ -497,11 +497,11 @@ public class h30 extends AbstractC9323v4<Void> implements C2099j.AbstractC2102c,
 
     @Override
     public void mo2031y0(TdApi.StickerSetInfo stickerSetInfo) {
-        final long j = stickerSetInfo.f25424id;
-        this.f30167b.m2485dd().post(new Runnable() {
+        final long j = stickerSetInfo.f25427id;
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                h30.this.m34469of(j);
+                h30.this.m34472of(j);
             }
         });
     }

@@ -31,7 +31,7 @@ import p229q2.C8154c;
 import p243r2.AbstractC8354a;
 
 public class RunnableC4459j implements Runnable {
-    public static final String f14759c0 = AbstractC4234j.m28360f("WorkerWrapper");
+    public static final String f14759c0 = AbstractC4234j.m28362f("WorkerWrapper");
     public WorkerParameters.C1065a f14760M;
     public C7554p f14761N;
     public ListenableWorker f14762O;
@@ -48,8 +48,8 @@ public class RunnableC4459j implements Runnable {
     public String f14776b;
     public volatile boolean f14777b0;
     public List<AbstractC4454e> f14778c;
-    public ListenableWorker.AbstractC1060a f14764Q = ListenableWorker.AbstractC1060a.m38507a();
-    public C8154c<Boolean> f14773Z = C8154c.m13346t();
+    public ListenableWorker.AbstractC1060a f14764Q = ListenableWorker.AbstractC1060a.m38510a();
+    public C8154c<Boolean> f14773Z = C8154c.m13345t();
     public AbstractFutureC1291a<ListenableWorker.AbstractC1060a> f14775a0 = null;
 
     public class RunnableC4460a implements Runnable {
@@ -65,12 +65,12 @@ public class RunnableC4459j implements Runnable {
         public void run() {
             try {
                 this.f14779a.get();
-                AbstractC4234j.m28362c().mo28359a(RunnableC4459j.f14759c0, String.format("Starting work for %s", RunnableC4459j.this.f14761N.f24142c), new Throwable[0]);
+                AbstractC4234j.m28364c().mo28361a(RunnableC4459j.f14759c0, String.format("Starting work for %s", RunnableC4459j.this.f14761N.f24145c), new Throwable[0]);
                 RunnableC4459j jVar = RunnableC4459j.this;
-                jVar.f14775a0 = jVar.f14762O.mo38378o();
-                this.f14780b.mo13347r(RunnableC4459j.this.f14775a0);
+                jVar.f14775a0 = jVar.f14762O.mo38381o();
+                this.f14780b.mo13346r(RunnableC4459j.this.f14775a0);
             } catch (Throwable th) {
-                this.f14780b.mo13348q(th);
+                this.f14780b.mo13347q(th);
             }
         }
     }
@@ -92,22 +92,22 @@ public class RunnableC4459j implements Runnable {
                 try {
                     ListenableWorker.AbstractC1060a aVar = (ListenableWorker.AbstractC1060a) this.f14782a.get();
                     if (aVar == null) {
-                        AbstractC4234j.m28362c().mo28358b(RunnableC4459j.f14759c0, String.format("%s returned a null result. Treating it as a failure.", RunnableC4459j.this.f14761N.f24142c), new Throwable[0]);
+                        AbstractC4234j.m28364c().mo28360b(RunnableC4459j.f14759c0, String.format("%s returned a null result. Treating it as a failure.", RunnableC4459j.this.f14761N.f24145c), new Throwable[0]);
                     } else {
-                        AbstractC4234j.m28362c().mo28359a(RunnableC4459j.f14759c0, String.format("%s returned a %s result.", RunnableC4459j.this.f14761N.f24142c, aVar), new Throwable[0]);
+                        AbstractC4234j.m28364c().mo28361a(RunnableC4459j.f14759c0, String.format("%s returned a %s result.", RunnableC4459j.this.f14761N.f24145c, aVar), new Throwable[0]);
                         RunnableC4459j.this.f14764Q = aVar;
                     }
                 } catch (InterruptedException e2) {
                     e = e2;
-                    AbstractC4234j.m28362c().mo28358b(RunnableC4459j.f14759c0, String.format("%s failed because it threw an exception/error", this.f14783b), e);
+                    AbstractC4234j.m28364c().mo28360b(RunnableC4459j.f14759c0, String.format("%s failed because it threw an exception/error", this.f14783b), e);
                 } catch (CancellationException e3) {
-                    AbstractC4234j.m28362c().mo28357d(RunnableC4459j.f14759c0, String.format("%s was cancelled", this.f14783b), e3);
+                    AbstractC4234j.m28364c().mo28359d(RunnableC4459j.f14759c0, String.format("%s was cancelled", this.f14783b), e3);
                 } catch (ExecutionException e4) {
                     e = e4;
-                    AbstractC4234j.m28362c().mo28358b(RunnableC4459j.f14759c0, String.format("%s failed because it threw an exception/error", this.f14783b), e);
+                    AbstractC4234j.m28364c().mo28360b(RunnableC4459j.f14759c0, String.format("%s failed because it threw an exception/error", this.f14783b), e);
                 }
             } finally {
-                RunnableC4459j.this.m27574f();
+                RunnableC4459j.this.m27576f();
             }
         }
     }
@@ -132,18 +132,18 @@ public class RunnableC4459j implements Runnable {
             this.f14791g = str;
         }
 
-        public RunnableC4459j m27564a() {
+        public RunnableC4459j m27566a() {
             return new RunnableC4459j(this);
         }
 
-        public C4462c m27563b(WorkerParameters.C1065a aVar) {
+        public C4462c m27565b(WorkerParameters.C1065a aVar) {
             if (aVar != null) {
                 this.f14793i = aVar;
             }
             return this;
         }
 
-        public C4462c m27562c(List<AbstractC4454e> list) {
+        public C4462c m27564c(List<AbstractC4454e> list) {
             this.f14792h = list;
             return this;
         }
@@ -160,12 +160,12 @@ public class RunnableC4459j implements Runnable {
         this.f14765R = cVar.f14789e;
         WorkDatabase workDatabase = cVar.f14790f;
         this.f14767T = workDatabase;
-        this.f14768U = workDatabase.mo38454D();
-        this.f14769V = this.f14767T.mo38441v();
-        this.f14770W = this.f14767T.mo38453E();
+        this.f14768U = workDatabase.mo38457D();
+        this.f14769V = this.f14767T.mo38444v();
+        this.f14770W = this.f14767T.mo38456E();
     }
 
-    public final String m27579a(List<String> list) {
+    public final String m27581a(List<String> list) {
         StringBuilder sb2 = new StringBuilder("Work [ id=");
         sb2.append(this.f14776b);
         sb2.append(", tags={ ");
@@ -182,35 +182,35 @@ public class RunnableC4459j implements Runnable {
         return sb2.toString();
     }
 
-    public AbstractFutureC1291a<Boolean> m27578b() {
+    public AbstractFutureC1291a<Boolean> m27580b() {
         return this.f14773Z;
     }
 
-    public final void m27577c(ListenableWorker.AbstractC1060a aVar) {
+    public final void m27579c(ListenableWorker.AbstractC1060a aVar) {
         if (aVar instanceof ListenableWorker.AbstractC1060a.C1063c) {
-            AbstractC4234j.m28362c().mo28357d(f14759c0, String.format("Worker result SUCCESS for %s", this.f14772Y), new Throwable[0]);
+            AbstractC4234j.m28364c().mo28359d(f14759c0, String.format("Worker result SUCCESS for %s", this.f14772Y), new Throwable[0]);
             if (this.f14761N.m15699d()) {
-                m27572h();
+                m27574h();
             } else {
-                m27567m();
+                m27569m();
             }
         } else if (aVar instanceof ListenableWorker.AbstractC1060a.C1062b) {
-            AbstractC4234j.m28362c().mo28357d(f14759c0, String.format("Worker result RETRY for %s", this.f14772Y), new Throwable[0]);
-            m27573g();
+            AbstractC4234j.m28364c().mo28359d(f14759c0, String.format("Worker result RETRY for %s", this.f14772Y), new Throwable[0]);
+            m27575g();
         } else {
-            AbstractC4234j.m28362c().mo28357d(f14759c0, String.format("Worker result FAILURE for %s", this.f14772Y), new Throwable[0]);
+            AbstractC4234j.m28364c().mo28359d(f14759c0, String.format("Worker result FAILURE for %s", this.f14772Y), new Throwable[0]);
             if (this.f14761N.m15699d()) {
-                m27572h();
+                m27574h();
             } else {
-                m27568l();
+                m27570l();
             }
         }
     }
 
-    public void m27576d() {
+    public void m27578d() {
         boolean z;
         this.f14777b0 = true;
-        m27566n();
+        m27568n();
         AbstractFutureC1291a<ListenableWorker.AbstractC1060a> aVar = this.f14775a0;
         if (aVar != null) {
             z = aVar.isDone();
@@ -220,13 +220,13 @@ public class RunnableC4459j implements Runnable {
         }
         ListenableWorker listenableWorker = this.f14762O;
         if (listenableWorker == null || z) {
-            AbstractC4234j.m28362c().mo28359a(f14759c0, String.format("WorkSpec %s is already done. Not interrupting.", this.f14761N), new Throwable[0]);
+            AbstractC4234j.m28364c().mo28361a(f14759c0, String.format("WorkSpec %s is already done. Not interrupting.", this.f14761N), new Throwable[0]);
         } else {
-            listenableWorker.m38508p();
+            listenableWorker.m38511p();
         }
     }
 
-    public final void m27575e(String str) {
+    public final void m27577e(String str) {
         LinkedList linkedList = new LinkedList();
         linkedList.add(str);
         while (!linkedList.isEmpty()) {
@@ -238,18 +238,18 @@ public class RunnableC4459j implements Runnable {
         }
     }
 
-    public void m27574f() {
-        if (!m27566n()) {
+    public void m27576f() {
+        if (!m27568n()) {
             this.f14767T.m8731c();
             try {
                 C4250s.EnumC4251a n = this.f14768U.mo15681n(this.f14776b);
-                this.f14767T.mo38455C().mo15705a(this.f14776b);
+                this.f14767T.mo38458C().mo15705a(this.f14776b);
                 if (n == null) {
-                    m27571i(false);
+                    m27573i(false);
                 } else if (n == C4250s.EnumC4251a.RUNNING) {
-                    m27577c(this.f14764Q);
-                } else if (!n.m28349a()) {
-                    m27573g();
+                    m27579c(this.f14764Q);
+                } else if (!n.m28351a()) {
+                    m27575g();
                 }
                 this.f14767T.m8714t();
             } finally {
@@ -259,13 +259,13 @@ public class RunnableC4459j implements Runnable {
         List<AbstractC4454e> list = this.f14778c;
         if (list != null) {
             for (AbstractC4454e eVar : list) {
-                eVar.mo21951e(this.f14776b);
+                eVar.mo21952e(this.f14776b);
             }
-            C4455f.m27624b(this.f14765R, this.f14767T, this.f14778c);
+            C4455f.m27626b(this.f14765R, this.f14767T, this.f14778c);
         }
     }
 
-    public final void m27573g() {
+    public final void m27575g() {
         this.f14767T.m8731c();
         try {
             this.f14768U.mo15685j(C4250s.EnumC4251a.ENQUEUED, this.f14776b);
@@ -274,11 +274,11 @@ public class RunnableC4459j implements Runnable {
             this.f14767T.m8714t();
         } finally {
             this.f14767T.m8727g();
-            m27571i(true);
+            m27573i(true);
         }
     }
 
-    public final void m27572h() {
+    public final void m27574h() {
         this.f14767T.m8731c();
         try {
             this.f14768U.mo15675t(this.f14776b, System.currentTimeMillis());
@@ -288,66 +288,66 @@ public class RunnableC4459j implements Runnable {
             this.f14767T.m8714t();
         } finally {
             this.f14767T.m8727g();
-            m27571i(false);
+            m27573i(false);
         }
     }
 
-    public final void m27571i(boolean z) {
+    public final void m27573i(boolean z) {
         ListenableWorker listenableWorker;
         this.f14767T.m8731c();
         try {
-            if (!this.f14767T.mo38454D().mo15683l()) {
-                C8000e.m13804a(this.f14774a, RescheduleReceiver.class, false);
+            if (!this.f14767T.mo38457D().mo15683l()) {
+                C8000e.m13803a(this.f14774a, RescheduleReceiver.class, false);
             }
             if (z) {
                 this.f14768U.mo15685j(C4250s.EnumC4251a.ENQUEUED, this.f14776b);
                 this.f14768U.mo15693b(this.f14776b, -1L);
             }
-            if (!(this.f14761N == null || (listenableWorker = this.f14762O) == null || !listenableWorker.mo38380i())) {
+            if (!(this.f14761N == null || (listenableWorker = this.f14762O) == null || !listenableWorker.mo38383i())) {
                 this.f14766S.mo17737b(this.f14776b);
             }
             this.f14767T.m8714t();
             this.f14767T.m8727g();
-            this.f14773Z.mo13349p(Boolean.valueOf(z));
+            this.f14773Z.mo13348p(Boolean.valueOf(z));
         } catch (Throwable th) {
             this.f14767T.m8727g();
             throw th;
         }
     }
 
-    public final void m27570j() {
+    public final void m27572j() {
         C4250s.EnumC4251a n = this.f14768U.mo15681n(this.f14776b);
         if (n == C4250s.EnumC4251a.RUNNING) {
-            AbstractC4234j.m28362c().mo28359a(f14759c0, String.format("Status for %s is RUNNING;not doing any work and rescheduling for later execution", this.f14776b), new Throwable[0]);
-            m27571i(true);
+            AbstractC4234j.m28364c().mo28361a(f14759c0, String.format("Status for %s is RUNNING;not doing any work and rescheduling for later execution", this.f14776b), new Throwable[0]);
+            m27573i(true);
             return;
         }
-        AbstractC4234j.m28362c().mo28359a(f14759c0, String.format("Status for %s is %s; not doing any work", this.f14776b, n), new Throwable[0]);
-        m27571i(false);
+        AbstractC4234j.m28364c().mo28361a(f14759c0, String.format("Status for %s is %s; not doing any work", this.f14776b, n), new Throwable[0]);
+        m27573i(false);
     }
 
-    public final void m27569k() {
+    public final void m27571k() {
         C1070b b;
-        if (!m27566n()) {
+        if (!m27568n()) {
             this.f14767T.m8731c();
             try {
                 C7554p o = this.f14768U.mo15680o(this.f14776b);
                 this.f14761N = o;
                 if (o == null) {
-                    AbstractC4234j.m28362c().mo28358b(f14759c0, String.format("Didn't find WorkSpec for id %s", this.f14776b), new Throwable[0]);
-                    m27571i(false);
+                    AbstractC4234j.m28364c().mo28360b(f14759c0, String.format("Didn't find WorkSpec for id %s", this.f14776b), new Throwable[0]);
+                    m27573i(false);
                     this.f14767T.m8714t();
-                } else if (o.f24141b != C4250s.EnumC4251a.ENQUEUED) {
-                    m27570j();
+                } else if (o.f24144b != C4250s.EnumC4251a.ENQUEUED) {
+                    m27572j();
                     this.f14767T.m8714t();
-                    AbstractC4234j.m28362c().mo28359a(f14759c0, String.format("%s is not in ENQUEUED state. Nothing more to do.", this.f14761N.f24142c), new Throwable[0]);
+                    AbstractC4234j.m28364c().mo28361a(f14759c0, String.format("%s is not in ENQUEUED state. Nothing more to do.", this.f14761N.f24145c), new Throwable[0]);
                 } else {
                     if (o.m15699d() || this.f14761N.m15700c()) {
                         long currentTimeMillis = System.currentTimeMillis();
                         C7554p pVar = this.f14761N;
-                        if (!(pVar.f24153n == 0) && currentTimeMillis < pVar.m15702a()) {
-                            AbstractC4234j.m28362c().mo28359a(f14759c0, String.format("Delaying execution for %s because it is being executed before schedule.", this.f14761N.f24142c), new Throwable[0]);
-                            m27571i(true);
+                        if (!(pVar.f24156n == 0) && currentTimeMillis < pVar.m15702a()) {
+                            AbstractC4234j.m28364c().mo28361a(f14759c0, String.format("Delaying execution for %s because it is being executed before schedule.", this.f14761N.f24145c), new Throwable[0]);
+                            m27573i(true);
                             this.f14767T.m8714t();
                             return;
                         }
@@ -355,41 +355,41 @@ public class RunnableC4459j implements Runnable {
                     this.f14767T.m8714t();
                     this.f14767T.m8727g();
                     if (this.f14761N.m15699d()) {
-                        b = this.f14761N.f24144e;
+                        b = this.f14761N.f24147e;
                     } else {
-                        AbstractC4231h b2 = this.f14765R.m38490f().m28365b(this.f14761N.f24143d);
+                        AbstractC4231h b2 = this.f14765R.m38493f().m28367b(this.f14761N.f24146d);
                         if (b2 == null) {
-                            AbstractC4234j.m28362c().mo28358b(f14759c0, String.format("Could not create Input Merger %s", this.f14761N.f24143d), new Throwable[0]);
-                            m27568l();
+                            AbstractC4234j.m28364c().mo28360b(f14759c0, String.format("Could not create Input Merger %s", this.f14761N.f24146d), new Throwable[0]);
+                            m27570l();
                             return;
                         }
                         ArrayList arrayList = new ArrayList();
-                        arrayList.add(this.f14761N.f24144e);
+                        arrayList.add(this.f14761N.f24147e);
                         arrayList.addAll(this.f14768U.mo15677r(this.f14776b));
-                        b = b2.mo28366b(arrayList);
+                        b = b2.mo28368b(arrayList);
                     }
-                    WorkerParameters workerParameters = new WorkerParameters(UUID.fromString(this.f14776b), b, this.f14771X, this.f14760M, this.f14761N.f24150k, this.f14765R.m38491e(), this.f14763P, this.f14765R.m38483m(), new C8013n(this.f14767T, this.f14763P), new C8011m(this.f14767T, this.f14766S, this.f14763P));
+                    WorkerParameters workerParameters = new WorkerParameters(UUID.fromString(this.f14776b), b, this.f14771X, this.f14760M, this.f14761N.f24153k, this.f14765R.m38494e(), this.f14763P, this.f14765R.m38486m(), new C8013n(this.f14767T, this.f14763P), new C8011m(this.f14767T, this.f14766S, this.f14763P));
                     if (this.f14762O == null) {
-                        this.f14762O = this.f14765R.m38483m().m28334b(this.f14774a, this.f14761N.f24142c, workerParameters);
+                        this.f14762O = this.f14765R.m38486m().m28336b(this.f14774a, this.f14761N.f24145c, workerParameters);
                     }
                     ListenableWorker listenableWorker = this.f14762O;
                     if (listenableWorker == null) {
-                        AbstractC4234j.m28362c().mo28358b(f14759c0, String.format("Could not create Worker %s", this.f14761N.f24142c), new Throwable[0]);
-                        m27568l();
-                    } else if (listenableWorker.m38511k()) {
-                        AbstractC4234j.m28362c().mo28358b(f14759c0, String.format("Received an already-used Worker %s; WorkerFactory should return new instances", this.f14761N.f24142c), new Throwable[0]);
-                        m27568l();
+                        AbstractC4234j.m28364c().mo28360b(f14759c0, String.format("Could not create Worker %s", this.f14761N.f24145c), new Throwable[0]);
+                        m27570l();
+                    } else if (listenableWorker.m38514k()) {
+                        AbstractC4234j.m28364c().mo28360b(f14759c0, String.format("Received an already-used Worker %s; WorkerFactory should return new instances", this.f14761N.f24145c), new Throwable[0]);
+                        m27570l();
                     } else {
-                        this.f14762O.m38509n();
-                        if (!m27565o()) {
-                            m27570j();
-                        } else if (!m27566n()) {
-                            C8154c t = C8154c.m13346t();
-                            RunnableC8008l lVar = new RunnableC8008l(this.f14774a, this.f14761N, this.f14762O, workerParameters.m38499b(), this.f14763P);
-                            this.f14763P.mo12683a().execute(lVar);
-                            AbstractFutureC1291a<Void> a = lVar.m13794a();
-                            a.mo13372a(new RunnableC4460a(a, t), this.f14763P.mo12683a());
-                            t.mo13372a(new RunnableC4461b(t, this.f14772Y), this.f14763P.mo12681c());
+                        this.f14762O.m38512n();
+                        if (!m27567o()) {
+                            m27572j();
+                        } else if (!m27568n()) {
+                            C8154c t = C8154c.m13345t();
+                            RunnableC8008l lVar = new RunnableC8008l(this.f14774a, this.f14761N, this.f14762O, workerParameters.m38502b(), this.f14763P);
+                            this.f14763P.mo12682a().execute(lVar);
+                            AbstractFutureC1291a<Void> a = lVar.m13793a();
+                            a.mo13371a(new RunnableC4460a(a, t), this.f14763P.mo12682a());
+                            t.mo13371a(new RunnableC4461b(t, this.f14772Y), this.f14763P.mo12680c());
                         }
                     }
                 }
@@ -399,27 +399,27 @@ public class RunnableC4459j implements Runnable {
         }
     }
 
-    public void m27568l() {
+    public void m27570l() {
         this.f14767T.m8731c();
         try {
-            m27575e(this.f14776b);
-            this.f14768U.mo15688g(this.f14776b, ((ListenableWorker.AbstractC1060a.C1061a) this.f14764Q).m38503e());
+            m27577e(this.f14776b);
+            this.f14768U.mo15688g(this.f14776b, ((ListenableWorker.AbstractC1060a.C1061a) this.f14764Q).m38506e());
             this.f14767T.m8714t();
         } finally {
             this.f14767T.m8727g();
-            m27571i(false);
+            m27573i(false);
         }
     }
 
-    public final void m27567m() {
+    public final void m27569m() {
         this.f14767T.m8731c();
         try {
             this.f14768U.mo15685j(C4250s.EnumC4251a.SUCCEEDED, this.f14776b);
-            this.f14768U.mo15688g(this.f14776b, ((ListenableWorker.AbstractC1060a.C1063c) this.f14764Q).m38502e());
+            this.f14768U.mo15688g(this.f14776b, ((ListenableWorker.AbstractC1060a.C1063c) this.f14764Q).m38505e());
             long currentTimeMillis = System.currentTimeMillis();
             for (String str : this.f14769V.mo15721a(this.f14776b)) {
                 if (this.f14768U.mo15681n(str) == C4250s.EnumC4251a.BLOCKED && this.f14769V.mo15720b(str)) {
-                    AbstractC4234j.m28362c().mo28357d(f14759c0, String.format("Setting status to enqueued for %s", str), new Throwable[0]);
+                    AbstractC4234j.m28364c().mo28359d(f14759c0, String.format("Setting status to enqueued for %s", str), new Throwable[0]);
                     this.f14768U.mo15685j(C4250s.EnumC4251a.ENQUEUED, str);
                     this.f14768U.mo15675t(str, currentTimeMillis);
                 }
@@ -427,25 +427,25 @@ public class RunnableC4459j implements Runnable {
             this.f14767T.m8714t();
         } finally {
             this.f14767T.m8727g();
-            m27571i(false);
+            m27573i(false);
         }
     }
 
-    public final boolean m27566n() {
+    public final boolean m27568n() {
         if (!this.f14777b0) {
             return false;
         }
-        AbstractC4234j.m28362c().mo28359a(f14759c0, String.format("Work interrupted for %s", this.f14772Y), new Throwable[0]);
+        AbstractC4234j.m28364c().mo28361a(f14759c0, String.format("Work interrupted for %s", this.f14772Y), new Throwable[0]);
         C4250s.EnumC4251a n = this.f14768U.mo15681n(this.f14776b);
         if (n == null) {
-            m27571i(false);
+            m27573i(false);
         } else {
-            m27571i(!n.m28349a());
+            m27573i(!n.m28351a());
         }
         return true;
     }
 
-    public final boolean m27565o() {
+    public final boolean m27567o() {
         this.f14767T.m8731c();
         try {
             boolean z = true;
@@ -466,7 +466,7 @@ public class RunnableC4459j implements Runnable {
     public void run() {
         List<String> a = this.f14770W.mo15666a(this.f14776b);
         this.f14771X = a;
-        this.f14772Y = m27579a(a);
-        m27569k();
+        this.f14772Y = m27581a(a);
+        m27571k();
     }
 }

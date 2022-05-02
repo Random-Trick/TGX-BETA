@@ -16,23 +16,23 @@ public final class C6127j0 implements AbstractC5867f.AbstractC5869b, AbstractC58
     }
 
     @Override
-    public final void mo21080q(int i) {
+    public final void mo21081q(int i) {
     }
 
     @Override
-    public final void mo11484s(C5217a aVar) {
+    public final void mo11483s(C5217a aVar) {
         Lock lock;
         Lock lock2;
         boolean m;
         lock = this.f19423a.f19442b;
         lock.lock();
         try {
-            m = this.f19423a.m21217m(aVar);
+            m = this.f19423a.m21218m(aVar);
             if (m) {
-                this.f19423a.m21218l();
-                this.f19423a.m21221i();
+                this.f19423a.m21219l();
+                this.f19423a.m21222i();
             } else {
-                this.f19423a.m21216n(aVar);
+                this.f19423a.m21217n(aVar);
             }
         } finally {
             lock2 = this.f19423a.f19442b;
@@ -41,12 +41,12 @@ public final class C6127j0 implements AbstractC5867f.AbstractC5869b, AbstractC58
     }
 
     @Override
-    public final void mo21079t(Bundle bundle) {
+    public final void mo21080t(Bundle bundle) {
         C6336e eVar;
         AbstractC5891f fVar;
         eVar = this.f19423a.f19458r;
-        C6336e eVar2 = (C6336e) C6378r.m20506k(eVar);
+        C6336e eVar2 = (C6336e) C6378r.m20507k(eVar);
         fVar = this.f19423a.f19451k;
-        ((AbstractC5891f) C6378r.m20506k(fVar)).mo21077f(new BinderC6123i0(this.f19423a));
+        ((AbstractC5891f) C6378r.m20507k(fVar)).mo21078f(new BinderC6123i0(this.f19423a));
     }
 }

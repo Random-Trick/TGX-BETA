@@ -20,7 +20,7 @@ public final class C1767i2 implements AbstractC5021b<C1767i2> {
         return this;
     }
 
-    public final C1782j2 m35993b() {
+    public final C1782j2 m35996b() {
         return new C1782j2(new HashMap(this.f6358a), new HashMap(this.f6359b), this.f6360c);
     }
 }

@@ -16,27 +16,27 @@ public final class C6195z2 implements AbstractC5867f.AbstractC5869b, AbstractC58
         this.f19596b = z;
     }
 
-    public final void m21082a(AbstractC6084a3 a3Var) {
+    public final void m21083a(AbstractC6084a3 a3Var) {
         this.f19597c = a3Var;
     }
 
-    public final AbstractC6084a3 m21081b() {
-        C6378r.m20505l(this.f19597c, "Callbacks must be attached to a ClientConnectionHelper instance before connecting the client.");
+    public final AbstractC6084a3 m21082b() {
+        C6378r.m20506l(this.f19597c, "Callbacks must be attached to a ClientConnectionHelper instance before connecting the client.");
         return this.f19597c;
     }
 
     @Override
-    public final void mo21080q(int i) {
-        m21081b().mo21080q(i);
+    public final void mo21081q(int i) {
+        m21082b().mo21081q(i);
     }
 
     @Override
-    public final void mo11484s(C5217a aVar) {
-        m21081b().mo21119E0(aVar, this.f19595a, this.f19596b);
+    public final void mo11483s(C5217a aVar) {
+        m21082b().mo21120E0(aVar, this.f19595a, this.f19596b);
     }
 
     @Override
-    public final void mo21079t(Bundle bundle) {
-        m21081b().mo21079t(bundle);
+    public final void mo21080t(Bundle bundle) {
+        m21082b().mo21080t(bundle);
     }
 }

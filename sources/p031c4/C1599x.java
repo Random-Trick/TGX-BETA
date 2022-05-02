@@ -12,40 +12,40 @@ public final class C1599x extends AbstractC3457a {
         public final C1205i0 f5864a;
         public final C1189b0 f5865b;
 
-        public static void m36308d(C1189b0 b0Var) {
+        public static void m36311d(C1189b0 b0Var) {
             int k;
-            int f = b0Var.m38137f();
-            if (b0Var.m38142a() < 10) {
-                b0Var.m38144P(f);
+            int f = b0Var.m38140f();
+            if (b0Var.m38145a() < 10) {
+                b0Var.m38147P(f);
                 return;
             }
-            b0Var.m38143Q(9);
-            int D = b0Var.m38156D() & 7;
-            if (b0Var.m38142a() < D) {
-                b0Var.m38144P(f);
+            b0Var.m38146Q(9);
+            int D = b0Var.m38159D() & 7;
+            if (b0Var.m38145a() < D) {
+                b0Var.m38147P(f);
                 return;
             }
-            b0Var.m38143Q(D);
-            if (b0Var.m38142a() < 4) {
-                b0Var.m38144P(f);
+            b0Var.m38146Q(D);
+            if (b0Var.m38145a() < 4) {
+                b0Var.m38147P(f);
                 return;
             }
-            if (C1599x.m36310k(b0Var.m38139d(), b0Var.m38138e()) == 443) {
-                b0Var.m38143Q(4);
-                int J = b0Var.m38150J();
-                if (b0Var.m38142a() < J) {
-                    b0Var.m38144P(f);
+            if (C1599x.m36313k(b0Var.m38142d(), b0Var.m38141e()) == 443) {
+                b0Var.m38146Q(4);
+                int J = b0Var.m38153J();
+                if (b0Var.m38145a() < J) {
+                    b0Var.m38147P(f);
                     return;
                 }
-                b0Var.m38143Q(J);
+                b0Var.m38146Q(J);
             }
-            while (b0Var.m38142a() >= 4 && (k = C1599x.m36310k(b0Var.m38139d(), b0Var.m38138e())) != 442 && k != 441 && (k >>> 8) == 1) {
-                b0Var.m38143Q(4);
-                if (b0Var.m38142a() < 2) {
-                    b0Var.m38144P(f);
+            while (b0Var.m38145a() >= 4 && (k = C1599x.m36313k(b0Var.m38142d(), b0Var.m38141e())) != 442 && k != 441 && (k >>> 8) == 1) {
+                b0Var.m38146Q(4);
+                if (b0Var.m38145a() < 2) {
+                    b0Var.m38147P(f);
                     return;
                 }
-                b0Var.m38144P(Math.min(b0Var.m38137f(), b0Var.m38138e() + b0Var.m38150J()));
+                b0Var.m38147P(Math.min(b0Var.m38140f(), b0Var.m38141e() + b0Var.m38153J()));
             }
         }
 
@@ -53,46 +53,46 @@ public final class C1599x extends AbstractC3457a {
         public AbstractC3457a.C3462e mo6780a(AbstractC8959g gVar, long j) {
             long r = gVar.mo6043r();
             int min = (int) Math.min(20000L, gVar.mo6046a() - r);
-            this.f5865b.m38148L(min);
-            gVar.mo10806q(this.f5865b.m38139d(), 0, min);
-            return m36309c(this.f5865b, j, r);
+            this.f5865b.m38151L(min);
+            gVar.mo10805q(this.f5865b.m38142d(), 0, min);
+            return m36312c(this.f5865b, j, r);
         }
 
         @Override
         public void mo6779b() {
-            this.f5865b.m38147M(C1216l0.f4531f);
+            this.f5865b.m38150M(C1216l0.f4531f);
         }
 
-        public final AbstractC3457a.C3462e m36309c(C1189b0 b0Var, long j, long j2) {
+        public final AbstractC3457a.C3462e m36312c(C1189b0 b0Var, long j, long j2) {
             int i = -1;
             long j3 = -9223372036854775807L;
             int i2 = -1;
-            while (b0Var.m38142a() >= 4) {
-                if (C1599x.m36310k(b0Var.m38139d(), b0Var.m38138e()) != 442) {
-                    b0Var.m38143Q(1);
+            while (b0Var.m38145a() >= 4) {
+                if (C1599x.m36313k(b0Var.m38142d(), b0Var.m38141e()) != 442) {
+                    b0Var.m38146Q(1);
                 } else {
-                    b0Var.m38143Q(4);
-                    long l = C1602y.m36296l(b0Var);
+                    b0Var.m38146Q(4);
+                    long l = C1602y.m36299l(b0Var);
                     if (l != -9223372036854775807L) {
-                        long b = this.f5864a.m38052b(l);
+                        long b = this.f5864a.m38055b(l);
                         if (b > j) {
                             if (j3 == -9223372036854775807L) {
-                                return AbstractC3457a.C3462e.m30468d(b, j2);
+                                return AbstractC3457a.C3462e.m30470d(b, j2);
                             }
-                            return AbstractC3457a.C3462e.m30467e(j2 + i2);
+                            return AbstractC3457a.C3462e.m30469e(j2 + i2);
                         } else if (100000 + b > j) {
-                            return AbstractC3457a.C3462e.m30467e(j2 + b0Var.m38138e());
+                            return AbstractC3457a.C3462e.m30469e(j2 + b0Var.m38141e());
                         } else {
-                            i2 = b0Var.m38138e();
+                            i2 = b0Var.m38141e();
                             j3 = b;
                         }
                     }
-                    m36308d(b0Var);
-                    i = b0Var.m38138e();
+                    m36311d(b0Var);
+                    i = b0Var.m38141e();
                 }
             }
             if (j3 != -9223372036854775807L) {
-                return AbstractC3457a.C3462e.m30466f(j3, j2 + i);
+                return AbstractC3457a.C3462e.m30468f(j3, j2 + i);
             }
             return AbstractC3457a.C3462e.f11445d;
         }
@@ -107,7 +107,7 @@ public final class C1599x extends AbstractC3457a {
         super(new AbstractC3457a.C3459b(), new C1601b(i0Var), j, 0L, j + 1, 0L, j2, 188L, 1000);
     }
 
-    public static int m36310k(byte[] bArr, int i) {
+    public static int m36313k(byte[] bArr, int i) {
         return (bArr[i + 3] & 255) | ((bArr[i] & 255) << 24) | ((bArr[i + 1] & 255) << 16) | ((bArr[i + 2] & 255) << 8);
     }
 }

@@ -11,15 +11,15 @@ public class C6038h<E> implements Cloneable {
         this(10);
     }
 
-    public void m21475a(int i, E e) {
+    public void m21476a(int i, E e) {
         int i2 = this.f19218M;
         if (i2 == 0 || i > this.f19220b[i2 - 1]) {
             if (this.f19219a && i2 >= this.f19220b.length) {
-                m21472d();
+                m21473d();
             }
             int i3 = this.f19218M;
             if (i3 >= this.f19220b.length) {
-                int e2 = C6033c.m21514e(i3 + 1);
+                int e2 = C6033c.m21515e(i3 + 1);
                 int[] iArr = new int[e2];
                 Object[] objArr = new Object[e2];
                 int[] iArr2 = this.f19220b;
@@ -34,10 +34,10 @@ public class C6038h<E> implements Cloneable {
             this.f19218M = i3 + 1;
             return;
         }
-        m21466j(i, e);
+        m21467j(i, e);
     }
 
-    public void m21474b() {
+    public void m21475b() {
         int i = this.f19218M;
         Object[] objArr = this.f19221c;
         for (int i2 = 0; i2 < i; i2++) {
@@ -58,7 +58,7 @@ public class C6038h<E> implements Cloneable {
         }
     }
 
-    public final void m21472d() {
+    public final void m21473d() {
         int i = this.f19218M;
         int[] iArr = this.f19220b;
         Object[] objArr = this.f19221c;
@@ -78,12 +78,12 @@ public class C6038h<E> implements Cloneable {
         this.f19218M = i2;
     }
 
-    public E m21471e(int i) {
-        return m21470f(i, null);
+    public E m21472e(int i) {
+        return m21471f(i, null);
     }
 
-    public E m21470f(int i, E e) {
-        int a = C6033c.m21518a(this.f19220b, this.f19218M, i);
+    public E m21471f(int i, E e) {
+        int a = C6033c.m21519a(this.f19220b, this.f19218M, i);
         if (a >= 0) {
             Object[] objArr = this.f19221c;
             if (objArr[a] != f19217N) {
@@ -93,26 +93,26 @@ public class C6038h<E> implements Cloneable {
         return e;
     }
 
-    public int m21469g(int i) {
+    public int m21470g(int i) {
         if (this.f19219a) {
-            m21472d();
+            m21473d();
         }
-        return C6033c.m21518a(this.f19220b, this.f19218M, i);
+        return C6033c.m21519a(this.f19220b, this.f19218M, i);
     }
 
-    public boolean m21468h() {
-        return m21463n() == 0;
+    public boolean m21469h() {
+        return m21464n() == 0;
     }
 
-    public int m21467i(int i) {
+    public int m21468i(int i) {
         if (this.f19219a) {
-            m21472d();
+            m21473d();
         }
         return this.f19220b[i];
     }
 
-    public void m21466j(int i, E e) {
-        int a = C6033c.m21518a(this.f19220b, this.f19218M, i);
+    public void m21467j(int i, E e) {
+        int a = C6033c.m21519a(this.f19220b, this.f19218M, i);
         if (a >= 0) {
             this.f19221c[a] = e;
             return;
@@ -128,12 +128,12 @@ public class C6038h<E> implements Cloneable {
             }
         }
         if (this.f19219a && i3 >= this.f19220b.length) {
-            m21472d();
-            i2 = ~C6033c.m21518a(this.f19220b, this.f19218M, i);
+            m21473d();
+            i2 = ~C6033c.m21519a(this.f19220b, this.f19218M, i);
         }
         int i4 = this.f19218M;
         if (i4 >= this.f19220b.length) {
-            int e2 = C6033c.m21514e(i4 + 1);
+            int e2 = C6033c.m21515e(i4 + 1);
             int[] iArr = new int[e2];
             Object[] objArr2 = new Object[e2];
             int[] iArr2 = this.f19220b;
@@ -156,8 +156,8 @@ public class C6038h<E> implements Cloneable {
         this.f19218M++;
     }
 
-    public void m21465k(int i) {
-        int a = C6033c.m21518a(this.f19220b, this.f19218M, i);
+    public void m21466k(int i) {
+        int a = C6033c.m21519a(this.f19220b, this.f19218M, i);
         if (a >= 0) {
             Object[] objArr = this.f19221c;
             Object obj = objArr[a];
@@ -169,7 +169,7 @@ public class C6038h<E> implements Cloneable {
         }
     }
 
-    public void m21464l(int i) {
+    public void m21465l(int i) {
         Object[] objArr = this.f19221c;
         Object obj = objArr[i];
         Object obj2 = f19217N;
@@ -179,22 +179,22 @@ public class C6038h<E> implements Cloneable {
         }
     }
 
-    public int m21463n() {
+    public int m21464n() {
         if (this.f19219a) {
-            m21472d();
+            m21473d();
         }
         return this.f19218M;
     }
 
-    public E m21462o(int i) {
+    public E m21463o(int i) {
         if (this.f19219a) {
-            m21472d();
+            m21473d();
         }
         return (E) this.f19221c[i];
     }
 
     public String toString() {
-        if (m21463n() <= 0) {
+        if (m21464n() <= 0) {
             return "{}";
         }
         StringBuilder sb2 = new StringBuilder(this.f19218M * 28);
@@ -203,9 +203,9 @@ public class C6038h<E> implements Cloneable {
             if (i > 0) {
                 sb2.append(", ");
             }
-            sb2.append(m21467i(i));
+            sb2.append(m21468i(i));
             sb2.append('=');
-            E o = m21462o(i);
+            E o = m21463o(i);
             if (o != this) {
                 sb2.append(o);
             } else {
@@ -223,7 +223,7 @@ public class C6038h<E> implements Cloneable {
             this.f19221c = C6033c.f19193c;
             return;
         }
-        int e = C6033c.m21514e(i);
+        int e = C6033c.m21515e(i);
         this.f19220b = new int[e];
         this.f19221c = new Object[e];
     }

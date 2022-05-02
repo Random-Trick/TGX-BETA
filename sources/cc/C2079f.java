@@ -16,14 +16,14 @@ public class C2079f extends C2083h {
         public C2080a() {
         }
 
-        public final C2079f m35700a() {
-            if (m35699b()) {
+        public final C2079f m35703a() {
+            if (m35702b()) {
                 return new C2079f();
             }
             return null;
         }
 
-        public final boolean m35699b() {
+        public final boolean m35702b() {
             return C2079f.f7319d;
         }
 
@@ -37,12 +37,12 @@ public class C2079f extends C2083h {
     }
 
     @Override
-    public void mo35691e(SSLSocket sSLSocket, String str, List<EnumC9064a0> list) {
-        C8298k.m12934e(sSLSocket, "sslSocket");
-        C8298k.m12934e(list, "protocols");
+    public void mo35694e(SSLSocket sSLSocket, String str, List<EnumC9064a0> list) {
+        C8298k.m12933e(sSLSocket, "sslSocket");
+        C8298k.m12933e(list, "protocols");
         SSLParameters sSLParameters = sSLSocket.getSSLParameters();
-        List<String> b = C2083h.f7326c.m35679b(list);
-        C8298k.m12935d(sSLParameters, "sslParameters");
+        List<String> b = C2083h.f7326c.m35682b(list);
+        C8298k.m12934d(sSLParameters, "sslParameters");
         Object[] array = b.toArray(new String[0]);
         Objects.requireNonNull(array, "null cannot be cast to non-null type kotlin.Array<T>");
         sSLParameters.setApplicationProtocols((String[]) array);
@@ -50,8 +50,8 @@ public class C2079f extends C2083h {
     }
 
     @Override
-    public String mo35689g(SSLSocket sSLSocket) {
-        C8298k.m12934e(sSLSocket, "sslSocket");
+    public String mo35692g(SSLSocket sSLSocket) {
+        C8298k.m12933e(sSLSocket, "sslSocket");
         try {
             String applicationProtocol = sSLSocket.getApplicationProtocol();
             if (applicationProtocol == null) {

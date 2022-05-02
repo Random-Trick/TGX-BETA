@@ -29,14 +29,14 @@ public abstract class AbstractC3822v7<E> extends AbstractCollection<E> implement
         throw new UnsupportedOperationException();
     }
 
-    abstract int mo29724h(Object[] objArr, int i);
+    abstract int mo29726h(Object[] objArr, int i);
 
-    abstract int mo29731i();
+    abstract int mo29733i();
 
-    public abstract int mo29730m();
+    public abstract int mo29732m();
 
     @CheckForNull
-    public abstract Object[] mo29729r();
+    public abstract Object[] mo29731r();
 
     @Override
     @Deprecated
@@ -67,15 +67,15 @@ public abstract class AbstractC3822v7<E> extends AbstractCollection<E> implement
         int size = size();
         int length = tArr.length;
         if (length < size) {
-            Object[] r = mo29729r();
+            Object[] r = mo29731r();
             if (r != null) {
-                return (T[]) Arrays.copyOfRange(r, mo29730m(), mo29731i(), tArr.getClass());
+                return (T[]) Arrays.copyOfRange(r, mo29732m(), mo29733i(), tArr.getClass());
             }
             tArr = (T[]) ((Object[]) Array.newInstance(tArr.getClass().getComponentType(), size));
         } else if (length > size) {
             tArr[size] = null;
         }
-        mo29724h(tArr, 0);
+        mo29726h(tArr, 0);
         return tArr;
     }
 }

@@ -10,7 +10,7 @@ import p163l5.AbstractC6355k;
 
 public class BinderC6319a extends AbstractC6355k.AbstractBinderC6356a {
     @RecentlyNullable
-    public static Account m20673t(@RecentlyNonNull AbstractC6355k kVar) {
+    public static Account m20674t(@RecentlyNonNull AbstractC6355k kVar) {
         Account account = null;
         if (kVar != null) {
             long clearCallingIdentity = Binder.clearCallingIdentity();

@@ -22,7 +22,7 @@ public class SubMenuC6023g extends MenuC6021e implements SubMenu {
 
     @Override
     public MenuItem getItem() {
-        return m21569c(this.f19168e.getItem());
+        return m21570c(this.f19168e.getItem());
     }
 
     @Override

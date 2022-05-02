@@ -31,13 +31,13 @@ public class RunnableC1105b<I, O> extends C1108d<O> implements Runnable {
         public void run() {
             try {
                 try {
-                    RunnableC1105b.this.m38362c(C1111f.m38354e(this.f4303a));
+                    RunnableC1105b.this.m38365c(C1111f.m38357e(this.f4303a));
                 } catch (CancellationException unused) {
                     RunnableC1105b.this.cancel(false);
                     RunnableC1105b.this.f4301P = null;
                     return;
                 } catch (ExecutionException e) {
-                    RunnableC1105b.this.m38361d(e.getCause());
+                    RunnableC1105b.this.m38364d(e.getCause());
                 }
                 RunnableC1105b.this.f4301P = null;
             } catch (Throwable th) {
@@ -48,8 +48,8 @@ public class RunnableC1105b<I, O> extends C1108d<O> implements Runnable {
     }
 
     public RunnableC1105b(AbstractC1104a<? super I, ? extends O> aVar, AbstractFutureC1291a<? extends I> aVar2) {
-        this.f4302c = (AbstractC1104a) C1132h.m38322e(aVar);
-        this.f4300O = (AbstractFutureC1291a) C1132h.m38322e(aVar2);
+        this.f4302c = (AbstractC1104a) C1132h.m38325e(aVar);
+        this.f4300O = (AbstractFutureC1291a) C1132h.m38325e(aVar2);
     }
 
     @Override
@@ -57,13 +57,13 @@ public class RunnableC1105b<I, O> extends C1108d<O> implements Runnable {
         if (!super.cancel(z)) {
             return false;
         }
-        m38365h(this.f4298M, Boolean.valueOf(z));
-        m38366g(this.f4300O, z);
-        m38366g(this.f4301P, z);
+        m38368h(this.f4298M, Boolean.valueOf(z));
+        m38369g(this.f4300O, z);
+        m38369g(this.f4301P, z);
         return true;
     }
 
-    public final void m38366g(Future<?> future, boolean z) {
+    public final void m38369g(Future<?> future, boolean z) {
         if (future != null) {
             future.cancel(z);
         }
@@ -85,7 +85,7 @@ public class RunnableC1105b<I, O> extends C1108d<O> implements Runnable {
         return (O) super.get();
     }
 
-    public final <E> void m38365h(BlockingQueue<E> blockingQueue, E e) {
+    public final <E> void m38368h(BlockingQueue<E> blockingQueue, E e) {
         boolean z = false;
         while (true) {
             try {
@@ -105,7 +105,7 @@ public class RunnableC1105b<I, O> extends C1108d<O> implements Runnable {
         }
     }
 
-    public final <E> E m38364i(BlockingQueue<E> blockingQueue) {
+    public final <E> E m38367i(BlockingQueue<E> blockingQueue) {
         E take;
         boolean z = false;
         while (true) {
@@ -134,12 +134,12 @@ public class RunnableC1105b<I, O> extends C1108d<O> implements Runnable {
             try {
                 try {
                     try {
-                        apply = this.f4302c.apply(C1111f.m38354e(this.f4300O));
+                        apply = this.f4302c.apply(C1111f.m38357e(this.f4300O));
                         this.f4301P = apply;
                     } catch (Error e) {
-                        m38361d(e);
+                        m38364d(e);
                     } catch (UndeclaredThrowableException e2) {
-                        m38361d(e2.getCause());
+                        m38364d(e2.getCause());
                     }
                 } catch (Throwable th) {
                     this.f4302c = null;
@@ -150,20 +150,20 @@ public class RunnableC1105b<I, O> extends C1108d<O> implements Runnable {
             } catch (CancellationException unused) {
                 cancel(false);
             } catch (ExecutionException e3) {
-                m38361d(e3.getCause());
+                m38364d(e3.getCause());
             }
         } catch (Exception e4) {
-            m38361d(e4);
+            m38364d(e4);
         }
         if (isCancelled()) {
-            apply.cancel(((Boolean) m38364i(this.f4298M)).booleanValue());
+            apply.cancel(((Boolean) m38367i(this.f4298M)).booleanValue());
             this.f4301P = null;
             this.f4302c = null;
             this.f4300O = null;
             this.f4299N.countDown();
             return;
         }
-        apply.mo13372a(new RunnableC1106a(apply), C0003a.m42611a());
+        apply.mo13371a(new RunnableC1106a(apply), C0003a.m42614a());
         this.f4302c = null;
         this.f4300O = null;
         this.f4299N.countDown();

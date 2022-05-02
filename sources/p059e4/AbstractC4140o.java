@@ -82,7 +82,7 @@ public abstract class AbstractC4140o extends AbstractC6593f {
     public ArrayDeque<C4139n> f14031x0;
     public C4141a f14032y0;
     public C4139n f14033z0;
-    public final C8026g f13993Z = C8026g.m13776i();
+    public final C8026g f13993Z = C8026g.m13775i();
     public final C8026g f13995a0 = new C8026g(0);
     public final C8026g f13997b0 = new C8026g(2);
     public final C1203h0<C6600g1> f14001d0 = new C1203h0<>();
@@ -110,28 +110,28 @@ public abstract class AbstractC4140o extends AbstractC6593f {
     public AbstractC4140o(int i, AbstractC4134l.AbstractC4136b bVar, AbstractC4143q qVar, boolean z, float f) {
         super(i);
         this.f13985V = bVar;
-        this.f13987W = (AbstractC4143q) C1186a.m38185e(qVar);
+        this.f13987W = (AbstractC4143q) C1186a.m38188e(qVar);
         this.f13989X = z;
         this.f13991Y = f;
         C4130h hVar = new C4130h();
         this.f13999c0 = hVar;
-        hVar.m13779f(0);
-        hVar.f26132c.order(ByteOrder.nativeOrder());
+        hVar.m13778f(0);
+        hVar.f26135c.order(ByteOrder.nativeOrder());
     }
 
-    public static boolean m28777E0(IllegalStateException illegalStateException) {
-        if (C1216l0.f4526a >= 21 && m28776F0(illegalStateException)) {
+    public static boolean m28779E0(IllegalStateException illegalStateException) {
+        if (C1216l0.f4526a >= 21 && m28778F0(illegalStateException)) {
             return true;
         }
         StackTraceElement[] stackTrace = illegalStateException.getStackTrace();
         return stackTrace.length > 0 && stackTrace[0].getClassName().equals("android.media.MediaCodec");
     }
 
-    public static boolean m28776F0(IllegalStateException illegalStateException) {
+    public static boolean m28778F0(IllegalStateException illegalStateException) {
         return illegalStateException instanceof MediaCodec.CodecException;
     }
 
-    public static boolean m28775G0(IllegalStateException illegalStateException) {
+    public static boolean m28777G0(IllegalStateException illegalStateException) {
         if (illegalStateException instanceof MediaCodec.CodecException) {
             return ((MediaCodec.CodecException) illegalStateException).isRecoverable();
         }
@@ -139,26 +139,26 @@ public abstract class AbstractC4140o extends AbstractC6593f {
     }
 
     @TargetApi(23)
-    private void m28770R0() {
+    private void m28772R0() {
         int i = this.f13992Y0;
         if (i == 1) {
-            m28736l0();
+            m28738l0();
         } else if (i == 2) {
-            m28736l0();
-            m28733m1();
+            m28738l0();
+            m28735m1();
         } else if (i != 3) {
             this.f14006f1 = true;
             mo15505X0();
         } else {
-            m28764V0();
+            m28766V0();
         }
     }
 
-    public static boolean m28765V(String str, C6600g1 g1Var) {
+    public static boolean m28767V(String str, C6600g1 g1Var) {
         return C1216l0.f4526a < 21 && g1Var.f20577W.isEmpty() && "OMX.MTK.VIDEO.DECODER.AVC".equals(str);
     }
 
-    public static boolean m28763W(String str) {
+    public static boolean m28765W(String str) {
         if (C1216l0.f4526a < 21 && "OMX.SEC.mp3.dec".equals(str) && "samsung".equals(C1216l0.f4528c)) {
             String str2 = C1216l0.f4527b;
             if (str2.startsWith("baffin") || str2.startsWith("grand") || str2.startsWith("fortuna") || str2.startsWith("gprimelte") || str2.startsWith("j2y18lte") || str2.startsWith("ms01")) {
@@ -168,7 +168,7 @@ public abstract class AbstractC4140o extends AbstractC6593f {
         return false;
     }
 
-    public static boolean m28761X(String str) {
+    public static boolean m28763X(String str) {
         int i = C1216l0.f4526a;
         if (i > 23 || !"OMX.google.vorbis.decoder".equals(str)) {
             if (i <= 19) {
@@ -181,77 +181,77 @@ public abstract class AbstractC4140o extends AbstractC6593f {
         return true;
     }
 
-    public static boolean m28760Y(String str) {
+    public static boolean m28762Y(String str) {
         return C1216l0.f4526a == 21 && "OMX.google.aac.decoder".equals(str);
     }
 
-    public static boolean m28758Z(C4139n nVar) {
+    public static boolean m28760Z(C4139n nVar) {
         String str = nVar.f13952a;
         int i = C1216l0.f4526a;
         return (i <= 25 && "OMX.rk.video_decoder.avc".equals(str)) || (i <= 17 && "OMX.allwinner.video.decoder.avc".equals(str)) || ((i <= 29 && ("OMX.broadcom.video_decoder.tunnel".equals(str) || "OMX.broadcom.video_decoder.tunnel.secure".equals(str))) || ("Amazon".equals(C1216l0.f4528c) && "AFTS".equals(C1216l0.f4529d) && nVar.f13958g));
     }
 
-    public static boolean m28756a0(String str) {
+    public static boolean m28758a0(String str) {
         int i = C1216l0.f4526a;
         return i < 18 || (i == 18 && ("OMX.SEC.avc.dec".equals(str) || "OMX.SEC.avc.dec.secure".equals(str))) || (i == 19 && C1216l0.f4529d.startsWith("SM-G800") && ("OMX.Exynos.avc.dec".equals(str) || "OMX.Exynos.avc.dec.secure".equals(str)));
     }
 
-    public static boolean m28754b0(String str, C6600g1 g1Var) {
+    public static boolean m28756b0(String str, C6600g1 g1Var) {
         return C1216l0.f4526a <= 18 && g1Var.f20591h0 == 1 && "OMX.MTK.AUDIO.DECODER.MP3".equals(str);
     }
 
-    public static boolean m28752c0(String str) {
+    public static boolean m28754c0(String str) {
         return C1216l0.f4526a == 29 && "c2.android.aac.decoder".equals(str);
     }
 
-    private void m28745f1(AbstractC8208o oVar) {
-        C8206n.m13208a(this.f14019m0, oVar);
+    private void m28747f1(AbstractC8208o oVar) {
+        C8206n.m13207a(this.f14019m0, oVar);
         this.f14019m0 = oVar;
     }
 
-    private boolean m28738k0() {
+    private boolean m28740k0() {
         AbstractC4134l lVar = this.f14026s0;
         if (lVar == null || this.f13990X0 == 2 || this.f14004e1) {
             return false;
         }
         if (this.f13977N0 < 0) {
-            int f = lVar.mo28661f();
+            int f = lVar.mo28663f();
             this.f13977N0 = f;
             if (f < 0) {
                 return false;
             }
-            this.f13995a0.f26132c = this.f14026s0.mo28656k(f);
+            this.f13995a0.f26135c = this.f14026s0.mo28658k(f);
             this.f13995a0.clear();
         }
         if (this.f13990X0 == 1) {
             if (!this.f13974K0) {
                 this.f13996a1 = true;
-                this.f14026s0.mo28654m(this.f13977N0, 0, 0, 0L, 4);
-                m28755a1();
+                this.f14026s0.mo28656m(this.f13977N0, 0, 0, 0L, 4);
+                m28757a1();
             }
             this.f13990X0 = 2;
             return false;
         } else if (this.f13972I0) {
             this.f13972I0 = false;
-            ByteBuffer byteBuffer = this.f13995a0.f26132c;
+            ByteBuffer byteBuffer = this.f13995a0.f26135c;
             byte[] bArr = f13963n1;
             byteBuffer.put(bArr);
-            this.f14026s0.mo28654m(this.f13977N0, 0, bArr.length, 0L, 0);
-            m28755a1();
+            this.f14026s0.mo28656m(this.f13977N0, 0, bArr.length, 0L, 0);
+            m28757a1();
             this.f13994Z0 = true;
             return true;
         } else {
             if (this.f13988W0 == 1) {
                 for (int i = 0; i < this.f14027t0.f20577W.size(); i++) {
-                    this.f13995a0.f26132c.put(this.f14027t0.f20577W.get(i));
+                    this.f13995a0.f26135c.put(this.f14027t0.f20577W.get(i));
                 }
                 this.f13988W0 = 2;
             }
-            int position = this.f13995a0.f26132c.position();
-            C6612h1 E = m19921E();
+            int position = this.f13995a0.f26135c.position();
+            C6612h1 E = m19922E();
             try {
-                int P = m19917P(E, this.f13995a0, 0);
-                if (mo19477m()) {
+                int P = m19918P(E, this.f13995a0, 0);
+                if (mo19478m()) {
                     this.f14002d1 = this.f14000c1;
                 }
                 if (P == -3) {
@@ -271,65 +271,65 @@ public abstract class AbstractC4140o extends AbstractC6593f {
                     }
                     this.f14004e1 = true;
                     if (!this.f13994Z0) {
-                        m28770R0();
+                        m28772R0();
                         return false;
                     }
                     try {
                         if (!this.f13974K0) {
                             this.f13996a1 = true;
-                            this.f14026s0.mo28654m(this.f13977N0, 0, 0, 0L, 4);
-                            m28755a1();
+                            this.f14026s0.mo28656m(this.f13977N0, 0, 0, 0L, 4);
+                            m28757a1();
                         }
                         return false;
                     } catch (MediaCodec.CryptoException e) {
-                        throw m19924B(e, this.f14013j0, C1216l0.m37999N(e.getErrorCode()));
+                        throw m19925B(e, this.f14013j0, C1216l0.m38002N(e.getErrorCode()));
                     }
                 } else if (this.f13994Z0 || this.f13995a0.isKeyFrame()) {
-                    boolean h = this.f13995a0.m13777h();
+                    boolean h = this.f13995a0.m13776h();
                     if (h) {
-                        this.f13995a0.f26131b.m13787b(position);
+                        this.f13995a0.f26134b.m13786b(position);
                     }
                     if (this.f13965B0 && !h) {
-                        C1237x.m37854b(this.f13995a0.f26132c);
-                        if (this.f13995a0.f26132c.position() == 0) {
+                        C1237x.m37857b(this.f13995a0.f26135c);
+                        if (this.f13995a0.f26135c.position() == 0) {
                             return true;
                         }
                         this.f13965B0 = false;
                     }
                     C8026g gVar = this.f13995a0;
-                    long j = gVar.f26126N;
+                    long j = gVar.f26129N;
                     C4131i iVar = this.f13975L0;
                     if (iVar != null) {
-                        j = iVar.m28818d(this.f14013j0, gVar);
-                        this.f14000c1 = Math.max(this.f14000c1, this.f13975L0.m28820b(this.f14013j0));
+                        j = iVar.m28820d(this.f14013j0, gVar);
+                        this.f14000c1 = Math.max(this.f14000c1, this.f13975L0.m28822b(this.f14013j0));
                     }
                     long j2 = j;
                     if (this.f13995a0.isDecodeOnly()) {
                         this.f14003e0.add(Long.valueOf(j2));
                     }
                     if (this.f14008g1) {
-                        this.f14001d0.m38069a(j2, this.f14013j0);
+                        this.f14001d0.m38072a(j2, this.f14013j0);
                         this.f14008g1 = false;
                     }
                     this.f14000c1 = Math.max(this.f14000c1, j2);
-                    this.f13995a0.m13778g();
+                    this.f13995a0.m13777g();
                     if (this.f13995a0.hasSupplementalData()) {
-                        mo28722z0(this.f13995a0);
+                        mo28724z0(this.f13995a0);
                     }
                     mo15508Q0(this.f13995a0);
                     try {
                         if (h) {
-                            this.f14026s0.mo28657j(this.f13977N0, 0, this.f13995a0.f26131b, j2, 0);
+                            this.f14026s0.mo28659j(this.f13977N0, 0, this.f13995a0.f26134b, j2, 0);
                         } else {
-                            this.f14026s0.mo28654m(this.f13977N0, 0, this.f13995a0.f26132c.limit(), j2, 0);
+                            this.f14026s0.mo28656m(this.f13977N0, 0, this.f13995a0.f26135c.limit(), j2, 0);
                         }
-                        m28755a1();
+                        m28757a1();
                         this.f13994Z0 = true;
                         this.f13988W0 = 0;
-                        this.f14014j1.f26116c++;
+                        this.f14014j1.f26119c++;
                         return true;
                     } catch (MediaCodec.CryptoException e2) {
-                        throw m19924B(e2, this.f14013j0, C1216l0.m37999N(e2.getErrorCode()));
+                        throw m19925B(e2, this.f14013j0, C1216l0.m38002N(e2.getErrorCode()));
                     }
                 } else {
                     this.f13995a0.clear();
@@ -340,59 +340,59 @@ public abstract class AbstractC4140o extends AbstractC6593f {
                 }
             } catch (C8026g.C8027a e3) {
                 mo15517J0(e3);
-                m28766U0(0);
-                m28736l0();
+                m28768U0(0);
+                m28738l0();
                 return true;
             }
         }
     }
 
-    public static boolean m28737k1(C6600g1 g1Var) {
+    public static boolean m28739k1(C6600g1 g1Var) {
         int i = g1Var.f20597n0;
         return i == 0 || i == 2;
     }
 
-    public final boolean m28781A0() {
+    public final boolean m28783A0() {
         return this.f13978O0 >= 0;
     }
 
-    public final void m28780B0(C6600g1 g1Var) {
-        m28748e0();
+    public final void m28782B0(C6600g1 g1Var) {
+        m28750e0();
         String str = g1Var.f20575U;
         if ("audio/mp4a-latm".equals(str) || "audio/mpeg".equals(str) || "audio/opus".equals(str)) {
-            this.f13999c0.m28822q(32);
+            this.f13999c0.m28824q(32);
         } else {
-            this.f13999c0.m28822q(1);
+            this.f13999c0.m28824q(1);
         }
         this.f13982S0 = true;
     }
 
-    public final void m28779C0(C4139n nVar, MediaCrypto mediaCrypto) {
+    public final void m28781C0(C4139n nVar, MediaCrypto mediaCrypto) {
         String str = nVar.f13952a;
         float f = -1.0f;
-        float s0 = C1216l0.f4526a < 23 ? -1.0f : mo15495s0(this.f14025r0, this.f14013j0, m19919G());
+        float s0 = C1216l0.f4526a < 23 ? -1.0f : mo15495s0(this.f14025r0, this.f14013j0, m19920G());
         if (s0 > this.f13991Y) {
             f = s0;
         }
         long elapsedRealtime = SystemClock.elapsedRealtime();
         String valueOf = String.valueOf(str);
-        C1210j0.m38035a(valueOf.length() != 0 ? "createCodec:".concat(valueOf) : new String("createCodec:"));
-        this.f14026s0 = this.f13985V.mo28647a(mo15488w0(nVar, this.f14013j0, mediaCrypto, f));
+        C1210j0.m38038a(valueOf.length() != 0 ? "createCodec:".concat(valueOf) : new String("createCodec:"));
+        this.f14026s0 = this.f13985V.mo28649a(mo15488w0(nVar, this.f14013j0, mediaCrypto, f));
         long elapsedRealtime2 = SystemClock.elapsedRealtime();
         this.f14033z0 = nVar;
         this.f14030w0 = f;
         this.f14027t0 = this.f14013j0;
-        this.f13964A0 = m28767U(str);
-        this.f13965B0 = m28765V(str, this.f14027t0);
-        this.f13966C0 = m28756a0(str);
-        this.f13967D0 = m28752c0(str);
-        this.f13968E0 = m28761X(str);
-        this.f13969F0 = m28760Y(str);
-        this.f13970G0 = m28763W(str);
-        this.f13971H0 = m28754b0(str, this.f14027t0);
+        this.f13964A0 = m28769U(str);
+        this.f13965B0 = m28767V(str, this.f14027t0);
+        this.f13966C0 = m28758a0(str);
+        this.f13967D0 = m28754c0(str);
+        this.f13968E0 = m28763X(str);
+        this.f13969F0 = m28762Y(str);
+        this.f13970G0 = m28765W(str);
+        this.f13971H0 = m28756b0(str, this.f14027t0);
         boolean z = false;
-        this.f13974K0 = m28758Z(nVar) || mo28727r0();
-        if (this.f14026s0.mo28665b()) {
+        this.f13974K0 = m28760Z(nVar) || mo28729r0();
+        if (this.f14026s0.mo28667b()) {
             this.f13986V0 = true;
             this.f13988W0 = 1;
             if (this.f13964A0 != 0) {
@@ -403,14 +403,14 @@ public abstract class AbstractC4140o extends AbstractC6593f {
         if ("c2.android.mp3.decoder".equals(nVar.f13952a)) {
             this.f13975L0 = new C4131i();
         }
-        if (mo19479i() == 2) {
+        if (mo19480i() == 2) {
             this.f13976M0 = SystemClock.elapsedRealtime() + 1000;
         }
-        this.f14014j1.f26114a++;
+        this.f14014j1.f26117a++;
         mo15516K0(str, elapsedRealtime2, elapsedRealtime2 - elapsedRealtime);
     }
 
-    public final boolean m28778D0(long j) {
+    public final boolean m28780D0(long j) {
         int size = this.f14003e0.size();
         for (int i = 0; i < size; i++) {
             if (this.f14003e0.get(i).longValue() == j) {
@@ -421,62 +421,62 @@ public abstract class AbstractC4140o extends AbstractC6593f {
         return false;
     }
 
-    public final void m28774H0() {
+    public final void m28776H0() {
         C6600g1 g1Var;
         if (this.f14026s0 == null && !this.f13982S0 && (g1Var = this.f14013j0) != null) {
             if (this.f14019m0 != null || !mo15502i1(g1Var)) {
-                m28751c1(this.f14019m0);
+                m28753c1(this.f14019m0);
                 String str = this.f14013j0.f20575U;
                 AbstractC8208o oVar = this.f14017l0;
                 if (oVar != null) {
                     if (this.f14021n0 == null) {
-                        C8181g0 v0 = m28725v0(oVar);
+                        C8181g0 v0 = m28727v0(oVar);
                         if (v0 != null) {
                             try {
-                                MediaCrypto mediaCrypto = new MediaCrypto(v0.f26494a, v0.f26495b);
+                                MediaCrypto mediaCrypto = new MediaCrypto(v0.f26497a, v0.f26498b);
                                 this.f14021n0 = mediaCrypto;
-                                this.f14022o0 = !v0.f26496c && mediaCrypto.requiresSecureDecoderComponent(str);
+                                this.f14022o0 = !v0.f26499c && mediaCrypto.requiresSecureDecoderComponent(str);
                             } catch (MediaCryptoException e) {
-                                throw m19924B(e, this.f14013j0, 6006);
+                                throw m19925B(e, this.f14013j0, 6006);
                             }
-                        } else if (this.f14017l0.mo13201g() == null) {
+                        } else if (this.f14017l0.mo13200g() == null) {
                             return;
                         }
                     }
-                    if (C8181g0.f26493d) {
-                        int i = this.f14017l0.mo13199i();
+                    if (C8181g0.f26496d) {
+                        int i = this.f14017l0.mo13198i();
                         if (i == 1) {
-                            AbstractC8208o.C8209a aVar = (AbstractC8208o.C8209a) C1186a.m38185e(this.f14017l0.mo13201g());
-                            throw m19924B(aVar, this.f14013j0, aVar.f26570a);
+                            AbstractC8208o.C8209a aVar = (AbstractC8208o.C8209a) C1186a.m38188e(this.f14017l0.mo13200g());
+                            throw m19925B(aVar, this.f14013j0, aVar.f26573a);
                         } else if (i != 4) {
                             return;
                         }
                     }
                 }
                 try {
-                    m28773I0(this.f14021n0, this.f14022o0);
+                    m28775I0(this.f14021n0, this.f14022o0);
                 } catch (C4141a e2) {
-                    throw m19924B(e2, this.f14013j0, 4001);
+                    throw m19925B(e2, this.f14013j0, 4001);
                 }
             } else {
-                m28780B0(this.f14013j0);
+                m28782B0(this.f14013j0);
             }
         }
     }
 
     @Override
-    public void mo13719I() {
+    public void mo13718I() {
         this.f14013j0 = null;
         this.f14016k1 = -9223372036854775807L;
         this.f14018l1 = -9223372036854775807L;
         this.f14020m1 = 0;
-        m28732n0();
+        m28734n0();
     }
 
-    public final void m28773I0(MediaCrypto mediaCrypto, boolean z) {
+    public final void m28775I0(MediaCrypto mediaCrypto, boolean z) {
         if (this.f14031x0 == null) {
             try {
-                List<C4139n> o0 = m28730o0(z);
+                List<C4139n> o0 = m28732o0(z);
                 ArrayDeque<C4139n> arrayDeque = new ArrayDeque<>();
                 this.f14031x0 = arrayDeque;
                 if (this.f13989X) {
@@ -492,22 +492,22 @@ public abstract class AbstractC4140o extends AbstractC6593f {
         if (!this.f14031x0.isEmpty()) {
             while (this.f14026s0 == null) {
                 C4139n peekFirst = this.f14031x0.peekFirst();
-                if (mo28741h1(peekFirst)) {
+                if (mo28743h1(peekFirst)) {
                     try {
-                        m28779C0(peekFirst, mediaCrypto);
+                        m28781C0(peekFirst, mediaCrypto);
                     } catch (Exception e2) {
                         String valueOf = String.valueOf(peekFirst);
                         StringBuilder sb2 = new StringBuilder(valueOf.length() + 30);
                         sb2.append("Failed to initialize decoder: ");
                         sb2.append(valueOf);
-                        C1230s.m37880j("MediaCodecRenderer", sb2.toString(), e2);
+                        C1230s.m37883j("MediaCodecRenderer", sb2.toString(), e2);
                         this.f14031x0.removeFirst();
                         C4141a aVar = new C4141a(this.f14013j0, e2, z, peekFirst);
                         mo15517J0(aVar);
                         if (this.f14032y0 == null) {
                             this.f14032y0 = aVar;
                         } else {
-                            this.f14032y0 = this.f14032y0.m28719c(aVar);
+                            this.f14032y0 = this.f14032y0.m28721c(aVar);
                         }
                         if (this.f14031x0.isEmpty()) {
                             throw this.f14032y0;
@@ -531,7 +531,7 @@ public abstract class AbstractC4140o extends AbstractC6593f {
     public abstract void mo15517J0(Exception exc);
 
     @Override
-    public void mo13718K(long j, boolean z) {
+    public void mo13717K(long j, boolean z) {
         this.f14004e1 = false;
         this.f14006f1 = false;
         this.f14010h1 = false;
@@ -540,12 +540,12 @@ public abstract class AbstractC4140o extends AbstractC6593f {
             this.f13997b0.clear();
             this.f13983T0 = false;
         } else {
-            m28734m0();
+            m28736m0();
         }
-        if (this.f14001d0.m38058l() > 0) {
+        if (this.f14001d0.m38061l() > 0) {
             this.f14008g1 = true;
         }
-        this.f14001d0.m38067c();
+        this.f14001d0.m38070c();
         int i = this.f14020m1;
         if (i != 0) {
             this.f14018l1 = this.f14009h0[i - 1];
@@ -559,10 +559,10 @@ public abstract class AbstractC4140o extends AbstractC6593f {
     @Override
     public void mo15515L() {
         try {
-            m28748e0();
-            m28762W0();
+            m28750e0();
+            m28764W0();
         } finally {
-            m28745f1(null);
+            m28747f1(null);
         }
     }
 
@@ -583,13 +583,13 @@ public abstract class AbstractC4140o extends AbstractC6593f {
     public abstract void mo15510N0(C6600g1 g1Var, MediaFormat mediaFormat);
 
     @Override
-    public void mo13717O(C6600g1[] g1VarArr, long j, long j2) {
+    public void mo13716O(C6600g1[] g1VarArr, long j, long j2) {
         boolean z = true;
         if (this.f14018l1 == -9223372036854775807L) {
             if (this.f14016k1 != -9223372036854775807L) {
                 z = false;
             }
-            C1186a.m38184f(z);
+            C1186a.m38187f(z);
             this.f14016k1 = j;
             this.f14018l1 = j2;
             return;
@@ -601,7 +601,7 @@ public abstract class AbstractC4140o extends AbstractC6593f {
             StringBuilder sb2 = new StringBuilder(65);
             sb2.append("Too many stream changes, so dropping offset: ");
             sb2.append(j3);
-            C1230s.m37881i("MediaCodecRenderer", sb2.toString());
+            C1230s.m37884i("MediaCodecRenderer", sb2.toString());
         } else {
             this.f14020m1 = i + 1;
         }
@@ -612,7 +612,7 @@ public abstract class AbstractC4140o extends AbstractC6593f {
         this.f14011i0[i2 - 1] = this.f14000c1;
     }
 
-    public void mo28772O0(long j) {
+    public void mo28774O0(long j) {
         while (true) {
             int i = this.f14020m1;
             if (i != 0 && j >= this.f14011i0[0]) {
@@ -638,13 +638,13 @@ public abstract class AbstractC4140o extends AbstractC6593f {
 
     public abstract void mo15508Q0(C8026g gVar);
 
-    public final void m28771R() {
-        C1186a.m38184f(!this.f14004e1);
-        C6612h1 E = m19921E();
+    public final void m28773R() {
+        C1186a.m38187f(!this.f14004e1);
+        C6612h1 E = m19922E();
         this.f13997b0.clear();
         do {
             this.f13997b0.clear();
-            int P = m19917P(E, this.f13997b0, 0);
+            int P = m19918P(E, this.f13997b0, 0);
             if (P == -5) {
                 mo15512M0(E);
                 return;
@@ -658,25 +658,25 @@ public abstract class AbstractC4140o extends AbstractC6593f {
                 return;
             } else {
                 if (this.f14008g1) {
-                    C6600g1 g1Var = (C6600g1) C1186a.m38185e(this.f14013j0);
+                    C6600g1 g1Var = (C6600g1) C1186a.m38188e(this.f14013j0);
                     this.f14015k0 = g1Var;
                     mo15510N0(g1Var, null);
                     this.f14008g1 = false;
                 }
-                this.f13997b0.m13778g();
+                this.f13997b0.m13777g();
             }
-        } while (this.f13999c0.m28828k(this.f13997b0));
+        } while (this.f13999c0.m28830k(this.f13997b0));
         this.f13983T0 = true;
     }
 
-    public final boolean m28769S(long j, long j2) {
-        C1186a.m38184f(!this.f14006f1);
-        if (this.f13999c0.m28823p()) {
+    public final boolean m28771S(long j, long j2) {
+        C1186a.m38187f(!this.f14006f1);
+        if (this.f13999c0.m28825p()) {
             C4130h hVar = this.f13999c0;
-            if (!mo15507S0(j, j2, null, hVar.f26132c, this.f13978O0, 0, hVar.m28824o(), this.f13999c0.m28826m(), this.f13999c0.isDecodeOnly(), this.f13999c0.isEndOfStream(), this.f14015k0)) {
+            if (!mo15507S0(j, j2, null, hVar.f26135c, this.f13978O0, 0, hVar.m28826o(), this.f13999c0.m28828m(), this.f13999c0.isDecodeOnly(), this.f13999c0.isEndOfStream(), this.f14015k0)) {
                 return false;
             }
-            mo28772O0(this.f13999c0.m28825n());
+            mo28774O0(this.f13999c0.m28827n());
             this.f13999c0.clear();
         }
         if (this.f14004e1) {
@@ -684,34 +684,34 @@ public abstract class AbstractC4140o extends AbstractC6593f {
             return false;
         }
         if (this.f13983T0) {
-            C1186a.m38184f(this.f13999c0.m28828k(this.f13997b0));
+            C1186a.m38187f(this.f13999c0.m28830k(this.f13997b0));
             this.f13983T0 = false;
         }
         if (this.f13984U0) {
-            if (this.f13999c0.m28823p()) {
+            if (this.f13999c0.m28825p()) {
                 return true;
             }
-            m28748e0();
+            m28750e0();
             this.f13984U0 = false;
-            m28774H0();
+            m28776H0();
             if (!this.f13982S0) {
                 return false;
             }
         }
-        m28771R();
-        if (this.f13999c0.m28823p()) {
-            this.f13999c0.m13778g();
+        m28773R();
+        if (this.f13999c0.m28825p()) {
+            this.f13999c0.m13777g();
         }
-        return this.f13999c0.m28823p() || this.f14004e1 || this.f13984U0;
+        return this.f13999c0.m28825p() || this.f14004e1 || this.f13984U0;
     }
 
     public abstract boolean mo15507S0(long j, long j2, AbstractC4134l lVar, ByteBuffer byteBuffer, int i, int i2, int i3, long j3, boolean z, boolean z2, C6600g1 g1Var);
 
     public abstract C8028h mo15506T(C4139n nVar, C6600g1 g1Var, C6600g1 g1Var2);
 
-    public final void m28768T0() {
+    public final void m28770T0() {
         this.f13998b1 = true;
-        MediaFormat c = this.f14026s0.mo28664c();
+        MediaFormat c = this.f14026s0.mo28666c();
         if (this.f13964A0 != 0 && c.getInteger("width") == 32 && c.getInteger("height") == 32) {
             this.f13973J0 = true;
             return;
@@ -723,7 +723,7 @@ public abstract class AbstractC4140o extends AbstractC6593f {
         this.f14029v0 = true;
     }
 
-    public final int m28767U(String str) {
+    public final int m28769U(String str) {
         int i = C1216l0.f4526a;
         if (i <= 25 && "OMX.Exynos.avc.dec.secure".equals(str)) {
             String str2 = C1216l0.f4529d;
@@ -741,10 +741,10 @@ public abstract class AbstractC4140o extends AbstractC6593f {
         return ("flounder".equals(str3) || "flounder_lte".equals(str3) || "grouper".equals(str3) || "tilapia".equals(str3)) ? 1 : 0;
     }
 
-    public final boolean m28766U0(int i) {
-        C6612h1 E = m19921E();
+    public final boolean m28768U0(int i) {
+        C6612h1 E = m19922E();
         this.f13993Z.clear();
-        int P = m19917P(E, this.f13993Z, i | 4);
+        int P = m19918P(E, this.f13993Z, i | 4);
         if (P == -5) {
             mo15512M0(E);
             return true;
@@ -752,22 +752,22 @@ public abstract class AbstractC4140o extends AbstractC6593f {
             return false;
         } else {
             this.f14004e1 = true;
-            m28770R0();
+            m28772R0();
             return false;
         }
     }
 
-    public final void m28764V0() {
-        m28762W0();
-        m28774H0();
+    public final void m28766V0() {
+        m28764W0();
+        m28776H0();
     }
 
-    public void m28762W0() {
+    public void m28764W0() {
         try {
             AbstractC4134l lVar = this.f14026s0;
             if (lVar != null) {
-                lVar.mo28666a();
-                this.f14014j1.f26115b++;
+                lVar.mo28668a();
+                this.f14014j1.f26118b++;
                 mo15514L0(this.f14033z0.f13952a);
             }
             this.f14026s0 = null;
@@ -794,9 +794,9 @@ public abstract class AbstractC4140o extends AbstractC6593f {
     public void mo15505X0() {
     }
 
-    public void mo28759Y0() {
-        m28755a1();
-        m28753b1();
+    public void mo28761Y0() {
+        m28757a1();
+        m28755b1();
         this.f13976M0 = -9223372036854775807L;
         this.f13996a1 = false;
         this.f13994Z0 = false;
@@ -809,15 +809,15 @@ public abstract class AbstractC4140o extends AbstractC6593f {
         this.f14002d1 = -9223372036854775807L;
         C4131i iVar = this.f13975L0;
         if (iVar != null) {
-            iVar.m28819c();
+            iVar.m28821c();
         }
         this.f13990X0 = 0;
         this.f13992Y0 = 0;
         this.f13988W0 = this.f13986V0 ? 1 : 0;
     }
 
-    public void m28757Z0() {
-        mo28759Y0();
+    public void m28759Z0() {
+        mo28761Y0();
         this.f14012i1 = null;
         this.f13975L0 = null;
         this.f14031x0 = null;
@@ -842,43 +842,43 @@ public abstract class AbstractC4140o extends AbstractC6593f {
     }
 
     @Override
-    public final int mo11839a(C6600g1 g1Var) {
+    public final int mo11838a(C6600g1 g1Var) {
         try {
             return mo15500j1(this.f13987W, g1Var);
         } catch (C4148v.C4151c e) {
-            throw m19924B(e, g1Var, 4002);
+            throw m19925B(e, g1Var, 4002);
         }
     }
 
-    public final void m28755a1() {
+    public final void m28757a1() {
         this.f13977N0 = -1;
-        this.f13995a0.f26132c = null;
+        this.f13995a0.f26135c = null;
     }
 
-    public final void m28753b1() {
+    public final void m28755b1() {
         this.f13978O0 = -1;
         this.f13979P0 = null;
     }
 
-    public final void m28751c1(AbstractC8208o oVar) {
-        C8206n.m13208a(this.f14017l0, oVar);
+    public final void m28753c1(AbstractC8208o oVar) {
+        C8206n.m13207a(this.f14017l0, oVar);
         this.f14017l0 = oVar;
     }
 
-    public C4138m mo28750d0(Throwable th, C4139n nVar) {
+    public C4138m mo28752d0(Throwable th, C4139n nVar) {
         return new C4138m(th, nVar);
     }
 
-    public final void m28749d1() {
+    public final void m28751d1() {
         this.f14010h1 = true;
     }
 
     @Override
-    public boolean mo13706e() {
+    public boolean mo13705e() {
         return this.f14006f1;
     }
 
-    public final void m28748e0() {
+    public final void m28750e0() {
         this.f13984U0 = false;
         this.f13999c0.clear();
         this.f13997b0.clear();
@@ -886,16 +886,16 @@ public abstract class AbstractC4140o extends AbstractC6593f {
         this.f13982S0 = false;
     }
 
-    public final void m28747e1(C6681q qVar) {
+    public final void m28749e1(C6681q qVar) {
         this.f14012i1 = qVar;
     }
 
     @Override
-    public boolean mo13705f() {
-        return this.f14013j0 != null && (m19918H() || m28781A0() || (this.f13976M0 != -9223372036854775807L && SystemClock.elapsedRealtime() < this.f13976M0));
+    public boolean mo13704f() {
+        return this.f14013j0 != null && (m19919H() || m28783A0() || (this.f13976M0 != -9223372036854775807L && SystemClock.elapsedRealtime() < this.f13976M0));
     }
 
-    public final boolean m28746f0() {
+    public final boolean m28748f0() {
         if (this.f13994Z0) {
             this.f13990X0 = 1;
             if (this.f13966C0 || this.f13968E0) {
@@ -907,21 +907,21 @@ public abstract class AbstractC4140o extends AbstractC6593f {
         return true;
     }
 
-    public final void m28744g0() {
+    public final void m28746g0() {
         if (this.f13994Z0) {
             this.f13990X0 = 1;
             this.f13992Y0 = 3;
             return;
         }
-        m28764V0();
+        m28766V0();
     }
 
-    public final boolean m28743g1(long j) {
+    public final boolean m28745g1(long j) {
         return this.f14023p0 == -9223372036854775807L || SystemClock.elapsedRealtime() - j < this.f14023p0;
     }
 
     @TargetApi(23)
-    public final boolean m28742h0() {
+    public final boolean m28744h0() {
         if (this.f13994Z0) {
             this.f13990X0 = 1;
             if (this.f13966C0 || this.f13968E0) {
@@ -930,51 +930,51 @@ public abstract class AbstractC4140o extends AbstractC6593f {
             }
             this.f13992Y0 = 2;
         } else {
-            m28733m1();
+            m28735m1();
         }
         return true;
     }
 
-    public boolean mo28741h1(C4139n nVar) {
+    public boolean mo28743h1(C4139n nVar) {
         return true;
     }
 
-    public final boolean m28740i0(long j, long j2) {
+    public final boolean m28742i0(long j, long j2) {
         boolean z;
         boolean z2;
         int i;
-        if (!m28781A0()) {
+        if (!m28783A0()) {
             if (!this.f13969F0 || !this.f13996a1) {
-                i = this.f14026s0.mo28660g(this.f14005f0);
+                i = this.f14026s0.mo28662g(this.f14005f0);
             } else {
                 try {
-                    i = this.f14026s0.mo28660g(this.f14005f0);
+                    i = this.f14026s0.mo28662g(this.f14005f0);
                 } catch (IllegalStateException unused) {
-                    m28770R0();
+                    m28772R0();
                     if (this.f14006f1) {
-                        m28762W0();
+                        m28764W0();
                     }
                     return false;
                 }
             }
             if (i < 0) {
                 if (i == -2) {
-                    m28768T0();
+                    m28770T0();
                     return true;
                 }
                 if (this.f13974K0 && (this.f14004e1 || this.f13990X0 == 2)) {
-                    m28770R0();
+                    m28772R0();
                 }
                 return false;
             } else if (this.f13973J0) {
                 this.f13973J0 = false;
-                this.f14026s0.mo28659h(i, false);
+                this.f14026s0.mo28661h(i, false);
                 return true;
             } else {
                 MediaCodec.BufferInfo bufferInfo = this.f14005f0;
                 if (bufferInfo.size != 0 || (bufferInfo.flags & 4) == 0) {
                     this.f13978O0 = i;
-                    ByteBuffer n = this.f14026s0.mo28653n(i);
+                    ByteBuffer n = this.f14026s0.mo28655n(i);
                     this.f13979P0 = n;
                     if (n != null) {
                         n.position(this.f14005f0.offset);
@@ -991,13 +991,13 @@ public abstract class AbstractC4140o extends AbstractC6593f {
                             }
                         }
                     }
-                    this.f13980Q0 = m28778D0(this.f14005f0.presentationTimeUs);
+                    this.f13980Q0 = m28780D0(this.f14005f0.presentationTimeUs);
                     long j4 = this.f14002d1;
                     long j5 = this.f14005f0.presentationTimeUs;
                     this.f13981R0 = j4 == j5;
-                    m28731n1(j5);
+                    m28733n1(j5);
                 } else {
-                    m28770R0();
+                    m28772R0();
                     return false;
                 }
             }
@@ -1019,9 +1019,9 @@ public abstract class AbstractC4140o extends AbstractC6593f {
                 try {
                     z2 = mo15507S0(j, j2, lVar2, byteBuffer3, i3, bufferInfo5.flags, 1, bufferInfo5.presentationTimeUs, this.f13980Q0, this.f13981R0, this.f14015k0);
                 } catch (IllegalStateException unused2) {
-                    m28770R0();
+                    m28772R0();
                     if (this.f14006f1) {
-                        m28762W0();
+                        m28764W0();
                     }
                     return z;
                 }
@@ -1030,13 +1030,13 @@ public abstract class AbstractC4140o extends AbstractC6593f {
             }
         }
         if (z2) {
-            mo28772O0(this.f14005f0.presentationTimeUs);
+            mo28774O0(this.f14005f0.presentationTimeUs);
             boolean z3 = (this.f14005f0.flags & 4) != 0;
-            m28753b1();
+            m28755b1();
             if (!z3) {
                 return true;
             }
-            m28770R0();
+            m28772R0();
         }
         return z;
     }
@@ -1045,7 +1045,7 @@ public abstract class AbstractC4140o extends AbstractC6593f {
         return false;
     }
 
-    public final boolean m28739j0(C4139n nVar, C6600g1 g1Var, AbstractC8208o oVar, AbstractC8208o oVar2) {
+    public final boolean m28741j0(C4139n nVar, C6600g1 g1Var, AbstractC8208o oVar, AbstractC8208o oVar2) {
         C8181g0 v0;
         if (oVar == oVar2) {
             return false;
@@ -1054,80 +1054,80 @@ public abstract class AbstractC4140o extends AbstractC6593f {
             return true;
         }
         UUID uuid = C6615i.f20679e;
-        if (uuid.equals(oVar.mo13206b()) || uuid.equals(oVar2.mo13206b()) || (v0 = m28725v0(oVar2)) == null) {
+        if (uuid.equals(oVar.mo13205b()) || uuid.equals(oVar2.mo13205b()) || (v0 = m28727v0(oVar2)) == null) {
             return true;
         }
-        return !nVar.f13958g && (v0.f26496c ? false : oVar2.mo13202f(g1Var.f20575U));
+        return !nVar.f13958g && (v0.f26499c ? false : oVar2.mo13201f(g1Var.f20575U));
     }
 
     public abstract int mo15500j1(AbstractC4143q qVar, C6600g1 g1Var);
 
-    public final void m28736l0() {
+    public final void m28738l0() {
         try {
             this.f14026s0.flush();
         } finally {
-            mo28759Y0();
+            mo28761Y0();
         }
     }
 
-    public final boolean m28735l1(C6600g1 g1Var) {
-        if (!(C1216l0.f4526a < 23 || this.f14026s0 == null || this.f13992Y0 == 3 || mo19479i() == 0)) {
-            float s0 = mo15495s0(this.f14025r0, g1Var, m19919G());
+    public final boolean m28737l1(C6600g1 g1Var) {
+        if (!(C1216l0.f4526a < 23 || this.f14026s0 == null || this.f13992Y0 == 3 || mo19480i() == 0)) {
+            float s0 = mo15495s0(this.f14025r0, g1Var, m19920G());
             float f = this.f14030w0;
             if (f == s0) {
                 return true;
             }
             if (s0 == -1.0f) {
-                m28744g0();
+                m28746g0();
                 return false;
             } else if (f == -1.0f && s0 <= this.f13991Y) {
                 return true;
             } else {
                 Bundle bundle = new Bundle();
                 bundle.putFloat("operating-rate", s0);
-                this.f14026s0.mo28663d(bundle);
+                this.f14026s0.mo28665d(bundle);
                 this.f14030w0 = s0;
             }
         }
         return true;
     }
 
-    public final boolean m28734m0() {
-        boolean n0 = m28732n0();
+    public final boolean m28736m0() {
+        boolean n0 = m28734n0();
         if (n0) {
-            m28774H0();
+            m28776H0();
         }
         return n0;
     }
 
-    public final void m28733m1() {
+    public final void m28735m1() {
         try {
-            this.f14021n0.setMediaDrmSession(m28725v0(this.f14019m0).f26495b);
-            m28751c1(this.f14019m0);
+            this.f14021n0.setMediaDrmSession(m28727v0(this.f14019m0).f26498b);
+            m28753c1(this.f14019m0);
             this.f13990X0 = 0;
             this.f13992Y0 = 0;
         } catch (MediaCryptoException e) {
-            throw m19924B(e, this.f14013j0, 6006);
+            throw m19925B(e, this.f14013j0, 6006);
         }
     }
 
-    public boolean m28732n0() {
+    public boolean m28734n0() {
         if (this.f14026s0 == null) {
             return false;
         }
         if (this.f13992Y0 == 3 || this.f13966C0 || ((this.f13967D0 && !this.f13998b1) || (this.f13968E0 && this.f13996a1))) {
-            m28762W0();
+            m28764W0();
             return true;
         }
-        m28736l0();
+        m28738l0();
         return false;
     }
 
-    public final void m28731n1(long j) {
+    public final void m28733n1(long j) {
         boolean z;
-        C6600g1 j2 = this.f14001d0.m38060j(j);
+        C6600g1 j2 = this.f14001d0.m38063j(j);
         if (j2 == null && this.f14029v0) {
-            j2 = this.f14001d0.m38061i();
+            j2 = this.f14001d0.m38064i();
         }
         if (j2 != null) {
             this.f14015k0 = j2;
@@ -1141,7 +1141,7 @@ public abstract class AbstractC4140o extends AbstractC6593f {
         }
     }
 
-    public final List<C4139n> m28730o0(boolean z) {
+    public final List<C4139n> m28732o0(boolean z) {
         List<C4139n> u0 = mo15491u0(this.f13987W, this.f14013j0, z);
         if (u0.isEmpty() && z) {
             u0 = mo15491u0(this.f13987W, this.f14013j0, false);
@@ -1154,81 +1154,81 @@ public abstract class AbstractC4140o extends AbstractC6593f {
                 sb2.append(", but no secure decoder available. Trying to proceed with ");
                 sb2.append(valueOf);
                 sb2.append(".");
-                C1230s.m37881i("MediaCodecRenderer", sb2.toString());
+                C1230s.m37884i("MediaCodecRenderer", sb2.toString());
             }
         }
         return u0;
     }
 
-    public final AbstractC4134l m28729p0() {
+    public final AbstractC4134l m28731p0() {
         return this.f14026s0;
     }
 
     @Override
-    public void mo19473q(float f, float f2) {
+    public void mo19474q(float f, float f2) {
         this.f14024q0 = f;
         this.f14025r0 = f2;
-        m28735l1(this.f14027t0);
+        m28737l1(this.f14027t0);
     }
 
-    public final C4139n m28728q0() {
+    public final C4139n m28730q0() {
         return this.f14033z0;
     }
 
-    public boolean mo28727r0() {
+    public boolean mo28729r0() {
         return false;
     }
 
     @Override
-    public final int mo19430s() {
+    public final int mo19431s() {
         return 8;
     }
 
     public abstract float mo15495s0(float f, C6600g1 g1Var, C6600g1[] g1VarArr);
 
     @Override
-    public void mo13704t(long j, long j2) {
+    public void mo13703t(long j, long j2) {
         boolean z = false;
         if (this.f14010h1) {
             this.f14010h1 = false;
-            m28770R0();
+            m28772R0();
         }
         C6681q qVar = this.f14012i1;
         if (qVar == null) {
             try {
                 if (this.f14006f1) {
                     mo15505X0();
-                } else if (this.f14013j0 != null || m28766U0(2)) {
-                    m28774H0();
+                } else if (this.f14013j0 != null || m28768U0(2)) {
+                    m28776H0();
                     if (this.f13982S0) {
-                        C1210j0.m38035a("bypassRender");
-                        while (m28769S(j, j2)) {
+                        C1210j0.m38038a("bypassRender");
+                        while (m28771S(j, j2)) {
                         }
-                        C1210j0.m38033c();
+                        C1210j0.m38036c();
                     } else if (this.f14026s0 != null) {
                         long elapsedRealtime = SystemClock.elapsedRealtime();
-                        C1210j0.m38035a("drainAndFeed");
-                        while (m28740i0(j, j2) && m28743g1(elapsedRealtime)) {
+                        C1210j0.m38038a("drainAndFeed");
+                        while (m28742i0(j, j2) && m28745g1(elapsedRealtime)) {
                         }
-                        while (m28738k0() && m28743g1(elapsedRealtime)) {
+                        while (m28740k0() && m28745g1(elapsedRealtime)) {
                         }
-                        C1210j0.m38033c();
+                        C1210j0.m38036c();
                     } else {
-                        this.f14014j1.f26117d += m19916Q(j);
-                        m28766U0(1);
+                        this.f14014j1.f26120d += m19917Q(j);
+                        m28768U0(1);
                     }
-                    this.f14014j1.m13781c();
+                    this.f14014j1.m13780c();
                 }
             } catch (IllegalStateException e) {
-                if (m28777E0(e)) {
+                if (m28779E0(e)) {
                     mo15517J0(e);
-                    if (C1216l0.f4526a >= 21 && m28775G0(e)) {
+                    if (C1216l0.f4526a >= 21 && m28777G0(e)) {
                         z = true;
                     }
                     if (z) {
-                        m28762W0();
+                        m28764W0();
                     }
-                    throw m19923C(mo28750d0(e, m28728q0()), this.f14013j0, z, 4003);
+                    throw m19924C(mo28752d0(e, m28730q0()), this.f14013j0, z, 4003);
                 }
                 throw e;
             }
@@ -1238,14 +1238,14 @@ public abstract class AbstractC4140o extends AbstractC6593f {
         }
     }
 
-    public final MediaFormat m28726t0() {
+    public final MediaFormat m28728t0() {
         return this.f14028u0;
     }
 
     public abstract List<C4139n> mo15491u0(AbstractC4143q qVar, C6600g1 g1Var, boolean z);
 
-    public final C8181g0 m28725v0(AbstractC8208o oVar) {
-        CryptoConfig h = oVar.mo13200h();
+    public final C8181g0 m28727v0(AbstractC8208o oVar) {
+        CryptoConfig h = oVar.mo13199h();
         if (h == null || (h instanceof C8181g0)) {
             return (C8181g0) h;
         }
@@ -1253,20 +1253,20 @@ public abstract class AbstractC4140o extends AbstractC6593f {
         StringBuilder sb2 = new StringBuilder(valueOf.length() + 43);
         sb2.append("Expecting FrameworkCryptoConfig but found: ");
         sb2.append(valueOf);
-        throw m19924B(new IllegalArgumentException(sb2.toString()), this.f14013j0, 6001);
+        throw m19925B(new IllegalArgumentException(sb2.toString()), this.f14013j0, 6001);
     }
 
     public abstract AbstractC4134l.C4135a mo15488w0(C4139n nVar, C6600g1 g1Var, MediaCrypto mediaCrypto, float f);
 
-    public final long m28724x0() {
+    public final long m28726x0() {
         return this.f14018l1;
     }
 
-    public float m28723y0() {
+    public float m28725y0() {
         return this.f14024q0;
     }
 
-    public void mo28722z0(C8026g gVar) {
+    public void mo28724z0(C8026g gVar) {
     }
 
     public static class C4141a extends Exception {
@@ -1280,7 +1280,7 @@ public abstract class AbstractC4140o extends AbstractC6593f {
             throw new UnsupportedOperationException("Method not decompiled: p059e4.AbstractC4140o.C4141a.<init>(m3.g1, java.lang.Throwable, boolean, int):void");
         }
 
-        public static String m28720b(int i) {
+        public static String m28722b(int i) {
             String str = i < 0 ? "neg_" : "";
             int abs = Math.abs(i);
             StringBuilder sb2 = new StringBuilder(str.length() + 71);
@@ -1290,14 +1290,14 @@ public abstract class AbstractC4140o extends AbstractC6593f {
             return sb2.toString();
         }
 
-        public static String m28718d(Throwable th) {
+        public static String m28720d(Throwable th) {
             if (th instanceof MediaCodec.CodecException) {
                 return ((MediaCodec.CodecException) th).getDiagnosticInfo();
             }
             return null;
         }
 
-        public final C4141a m28719c(C4141a aVar) {
+        public final C4141a m28721c(C4141a aVar) {
             return new C4141a(getMessage(), getCause(), this.f14036a, this.f14037b, this.f14038c, this.f14034M, aVar);
         }
 

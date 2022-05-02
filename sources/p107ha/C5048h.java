@@ -12,19 +12,19 @@ public final class C5048h<A, B> implements Serializable {
         this.f17058b = b;
     }
 
-    public final A m24196a() {
+    public final A m24197a() {
         return this.f17057a;
     }
 
-    public final B m24195b() {
+    public final B m24196b() {
         return this.f17058b;
     }
 
-    public final A m24194c() {
+    public final A m24195c() {
         return this.f17057a;
     }
 
-    public final B m24193d() {
+    public final B m24194d() {
         return this.f17058b;
     }
 
@@ -36,7 +36,7 @@ public final class C5048h<A, B> implements Serializable {
             return false;
         }
         C5048h hVar = (C5048h) obj;
-        return C8298k.m12937b(this.f17057a, hVar.f17057a) && C8298k.m12937b(this.f17058b, hVar.f17058b);
+        return C8298k.m12936b(this.f17057a, hVar.f17057a) && C8298k.m12936b(this.f17058b, hVar.f17058b);
     }
 
     public int hashCode() {

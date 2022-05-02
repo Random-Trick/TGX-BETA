@@ -30,26 +30,26 @@ public class C5819f extends ActionMode {
         }
 
         @Override
-        public boolean mo22089a(AbstractC5814b bVar, Menu menu) {
-            return this.f18549a.onCreateActionMode(m22085e(bVar), m22084f(menu));
+        public boolean mo22090a(AbstractC5814b bVar, Menu menu) {
+            return this.f18549a.onCreateActionMode(m22086e(bVar), m22085f(menu));
         }
 
         @Override
-        public void mo22088b(AbstractC5814b bVar) {
-            this.f18549a.onDestroyActionMode(m22085e(bVar));
+        public void mo22089b(AbstractC5814b bVar) {
+            this.f18549a.onDestroyActionMode(m22086e(bVar));
         }
 
         @Override
-        public boolean mo22087c(AbstractC5814b bVar, MenuItem menuItem) {
-            return this.f18549a.onActionItemClicked(m22085e(bVar), new MenuItemC6014c(this.f18550b, (AbstractMenuItemC9830b) menuItem));
+        public boolean mo22088c(AbstractC5814b bVar, MenuItem menuItem) {
+            return this.f18549a.onActionItemClicked(m22086e(bVar), new MenuItemC6014c(this.f18550b, (AbstractMenuItemC9830b) menuItem));
         }
 
         @Override
-        public boolean mo22086d(AbstractC5814b bVar, Menu menu) {
-            return this.f18549a.onPrepareActionMode(m22085e(bVar), m22084f(menu));
+        public boolean mo22087d(AbstractC5814b bVar, Menu menu) {
+            return this.f18549a.onPrepareActionMode(m22086e(bVar), m22085f(menu));
         }
 
-        public ActionMode m22085e(AbstractC5814b bVar) {
+        public ActionMode m22086e(AbstractC5814b bVar) {
             int size = this.f18551c.size();
             for (int i = 0; i < size; i++) {
                 C5819f fVar = this.f18551c.get(i);
@@ -62,7 +62,7 @@ public class C5819f extends ActionMode {
             return fVar2;
         }
 
-        public final Menu m22084f(Menu menu) {
+        public final Menu m22085f(Menu menu) {
             Menu menu2 = this.f18552d.get(menu);
             if (menu2 != null) {
                 return menu2;
@@ -80,86 +80,86 @@ public class C5819f extends ActionMode {
 
     @Override
     public void finish() {
-        this.f18548b.mo22103c();
+        this.f18548b.mo22104c();
     }
 
     @Override
     public View getCustomView() {
-        return this.f18548b.mo22102d();
+        return this.f18548b.mo22103d();
     }
 
     @Override
     public Menu getMenu() {
-        return new MenuC6021e(this.f18547a, (AbstractMenuC9829a) this.f18548b.mo22101e());
+        return new MenuC6021e(this.f18547a, (AbstractMenuC9829a) this.f18548b.mo22102e());
     }
 
     @Override
     public MenuInflater getMenuInflater() {
-        return this.f18548b.mo22100f();
+        return this.f18548b.mo22101f();
     }
 
     @Override
     public CharSequence getSubtitle() {
-        return this.f18548b.mo22099g();
+        return this.f18548b.mo22100g();
     }
 
     @Override
     public Object getTag() {
-        return this.f18548b.m22112h();
+        return this.f18548b.m22113h();
     }
 
     @Override
     public CharSequence getTitle() {
-        return this.f18548b.mo22098i();
+        return this.f18548b.mo22099i();
     }
 
     @Override
     public boolean getTitleOptionalHint() {
-        return this.f18548b.m22111j();
+        return this.f18548b.m22112j();
     }
 
     @Override
     public void invalidate() {
-        this.f18548b.mo22097k();
+        this.f18548b.mo22098k();
     }
 
     @Override
     public boolean isTitleOptional() {
-        return this.f18548b.mo22096l();
+        return this.f18548b.mo22097l();
     }
 
     @Override
     public void setCustomView(View view) {
-        this.f18548b.mo22095m(view);
+        this.f18548b.mo22096m(view);
     }
 
     @Override
     public void setSubtitle(CharSequence charSequence) {
-        this.f18548b.mo22093o(charSequence);
+        this.f18548b.mo22094o(charSequence);
     }
 
     @Override
     public void setTag(Object obj) {
-        this.f18548b.m22110p(obj);
+        this.f18548b.m22111p(obj);
     }
 
     @Override
     public void setTitle(CharSequence charSequence) {
-        this.f18548b.mo22091r(charSequence);
+        this.f18548b.mo22092r(charSequence);
     }
 
     @Override
     public void setTitleOptionalHint(boolean z) {
-        this.f18548b.mo22090s(z);
+        this.f18548b.mo22091s(z);
     }
 
     @Override
     public void setSubtitle(int i) {
-        this.f18548b.mo22094n(i);
+        this.f18548b.mo22095n(i);
     }
 
     @Override
     public void setTitle(int i) {
-        this.f18548b.mo22092q(i);
+        this.f18548b.mo22093q(i);
     }
 }

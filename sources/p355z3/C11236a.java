@@ -5,7 +5,7 @@ import p199o3.C7614g0;
 
 public final class C11236a extends C3465c implements AbstractC11242g {
     public C11236a(long j, long j2, C7614g0.C7615a aVar, boolean z) {
-        super(j, j2, aVar.f24374f, aVar.f24371c, z);
+        super(j, j2, aVar.f24377f, aVar.f24374c, z);
     }
 
     @Override
@@ -15,6 +15,6 @@ public final class C11236a extends C3465c implements AbstractC11242g {
 
     @Override
     public long mo1124h(long j) {
-        return m30463b(j);
+        return m30465b(j);
     }
 }

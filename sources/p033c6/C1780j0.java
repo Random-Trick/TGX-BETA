@@ -8,12 +8,12 @@ public final class C1780j0<K, V> extends C1795k0<K, V> {
         super(new C1936u0(12));
     }
 
-    public static <K, V> C1780j0<K, V> m35990p() {
+    public static <K, V> C1780j0<K, V> m35993p() {
         return new C1780j0<>();
     }
 
     @Override
-    public final Collection mo35991g() {
+    public final Collection mo35994g() {
         return new ArrayList(3);
     }
 }

@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import p294v0.AbstractMenuItemC9830b;
 
 public final class C1474j {
-    public static MenuItem m36818a(MenuItem menuItem, AbstractC1435b bVar) {
+    public static MenuItem m36821a(MenuItem menuItem, AbstractC1435b bVar) {
         if (menuItem instanceof AbstractMenuItemC9830b) {
             return ((AbstractMenuItemC9830b) menuItem).mo6784a(bVar);
         }
@@ -16,7 +16,7 @@ public final class C1474j {
         return menuItem;
     }
 
-    public static void m36817b(MenuItem menuItem, char c, int i) {
+    public static void m36820b(MenuItem menuItem, char c, int i) {
         if (menuItem instanceof AbstractMenuItemC9830b) {
             ((AbstractMenuItemC9830b) menuItem).setAlphabeticShortcut(c, i);
         } else if (Build.VERSION.SDK_INT >= 26) {
@@ -24,7 +24,7 @@ public final class C1474j {
         }
     }
 
-    public static void m36816c(MenuItem menuItem, CharSequence charSequence) {
+    public static void m36819c(MenuItem menuItem, CharSequence charSequence) {
         if (menuItem instanceof AbstractMenuItemC9830b) {
             ((AbstractMenuItemC9830b) menuItem).setContentDescription(charSequence);
         } else if (Build.VERSION.SDK_INT >= 26) {
@@ -32,7 +32,7 @@ public final class C1474j {
         }
     }
 
-    public static void m36815d(MenuItem menuItem, ColorStateList colorStateList) {
+    public static void m36818d(MenuItem menuItem, ColorStateList colorStateList) {
         if (menuItem instanceof AbstractMenuItemC9830b) {
             ((AbstractMenuItemC9830b) menuItem).setIconTintList(colorStateList);
         } else if (Build.VERSION.SDK_INT >= 26) {
@@ -40,7 +40,7 @@ public final class C1474j {
         }
     }
 
-    public static void m36814e(MenuItem menuItem, PorterDuff.Mode mode) {
+    public static void m36817e(MenuItem menuItem, PorterDuff.Mode mode) {
         if (menuItem instanceof AbstractMenuItemC9830b) {
             ((AbstractMenuItemC9830b) menuItem).setIconTintMode(mode);
         } else if (Build.VERSION.SDK_INT >= 26) {
@@ -48,7 +48,7 @@ public final class C1474j {
         }
     }
 
-    public static void m36813f(MenuItem menuItem, char c, int i) {
+    public static void m36816f(MenuItem menuItem, char c, int i) {
         if (menuItem instanceof AbstractMenuItemC9830b) {
             ((AbstractMenuItemC9830b) menuItem).setNumericShortcut(c, i);
         } else if (Build.VERSION.SDK_INT >= 26) {
@@ -56,7 +56,7 @@ public final class C1474j {
         }
     }
 
-    public static void m36812g(MenuItem menuItem, CharSequence charSequence) {
+    public static void m36815g(MenuItem menuItem, CharSequence charSequence) {
         if (menuItem instanceof AbstractMenuItemC9830b) {
             ((AbstractMenuItemC9830b) menuItem).setTooltipText(charSequence);
         } else if (Build.VERSION.SDK_INT >= 26) {

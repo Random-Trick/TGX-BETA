@@ -11,7 +11,7 @@ class C5680a3 extends AbstractC5696e implements Consumer, Iterable {
     protected Object[] f18309e = new Object[16];
     protected Object[][] f18310f;
 
-    private void m22315w() {
+    private void m22316w() {
         if (this.f18310f == null) {
             Object[][] objArr = new Object[8];
             this.f18310f = objArr;
@@ -20,14 +20,14 @@ class C5680a3 extends AbstractC5696e implements Consumer, Iterable {
         }
     }
 
-    public void mo22176a(Consumer consumer) {
+    public void mo22177a(Consumer consumer) {
         for (int i = 0; i < this.f18342c; i++) {
             for (Object obj : this.f18310f[i]) {
-                consumer.mo22128k(obj);
+                consumer.mo22129k(obj);
             }
         }
         for (int i2 = 0; i2 < this.f18341b; i2++) {
-            consumer.mo22128k(this.f18309e[i2]);
+            consumer.mo22129k(this.f18309e[i2]);
         }
     }
 
@@ -58,22 +58,22 @@ class C5680a3 extends AbstractC5696e implements Consumer, Iterable {
 
     @Override
     public void forEach(java.util.function.Consumer consumer) {
-        mo22176a(Consumer.VivifiedWrapper.convert(consumer));
+        mo22177a(Consumer.VivifiedWrapper.convert(consumer));
     }
 
     @Override
     public Iterator iterator() {
-        return AbstractC5482V.m22591i(mo42629spliterator());
+        return AbstractC5482V.m22592i(mo42632spliterator());
     }
 
-    public void mo22128k(Object obj) {
+    public void mo22129k(Object obj) {
         if (this.f18341b == this.f18309e.length) {
-            m22315w();
+            m22316w();
             int i = this.f18342c;
             int i2 = i + 1;
             Object[][] objArr = this.f18310f;
             if (i2 >= objArr.length || objArr[i + 1] == null) {
-                m22316v(m22317u() + 1);
+                m22317v(m22318u() + 1);
             }
             this.f18341b = 0;
             int i3 = this.f18342c + 1;
@@ -86,7 +86,7 @@ class C5680a3 extends AbstractC5696e implements Consumer, Iterable {
         objArr2[i4] = obj;
     }
 
-    public void mo22154n(Object[] objArr, int i) {
+    public void mo22155n(Object[] objArr, int i) {
         long j = i;
         long count = count() + j;
         if (count > objArr.length || count < j) {
@@ -106,17 +106,17 @@ class C5680a3 extends AbstractC5696e implements Consumer, Iterable {
         }
     }
 
-    public AbstractC5468G mo42629spliterator() {
+    public AbstractC5468G mo42632spliterator() {
         return new C5643R2(this, 0, this.f18342c, 0, this.f18341b);
     }
 
     public String toString() {
         ArrayList arrayList = new ArrayList();
-        mo22176a(new C5681b(arrayList, 8));
+        mo22177a(new C5681b(arrayList, 8));
         return "SpinedBuffer:" + arrayList.toString();
     }
 
-    protected long m22317u() {
+    protected long m22318u() {
         int i = this.f18342c;
         if (i == 0) {
             return this.f18309e.length;
@@ -124,12 +124,12 @@ class C5680a3 extends AbstractC5696e implements Consumer, Iterable {
         return this.f18310f[i].length + this.f18343d[i];
     }
 
-    public final void m22316v(long j) {
+    public final void m22317v(long j) {
         Object[][] objArr;
         int i;
-        long u = m22317u();
+        long u = m22318u();
         if (j > u) {
-            m22315w();
+            m22316w();
             int i2 = this.f18342c;
             while (true) {
                 i2++;
@@ -140,7 +140,7 @@ class C5680a3 extends AbstractC5696e implements Consumer, Iterable {
                         this.f18310f = (Object[][]) Arrays.copyOf(objArr2, length);
                         this.f18343d = Arrays.copyOf(this.f18343d, length);
                     }
-                    int r = m22281r(i2);
+                    int r = m22282r(i2);
                     this.f18310f[i2] = new Object[r];
                     long[] jArr = this.f18343d;
                     jArr[i2] = jArr[i2 - 1] + objArr[i].length;

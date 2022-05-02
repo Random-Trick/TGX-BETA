@@ -16,19 +16,19 @@ public final class C6613h2 implements AbstractC6609h {
         this(f, 1.0f);
     }
 
-    public static String m19784c(int i) {
+    public static String m19785c(int i) {
         return Integer.toString(i, 36);
     }
 
-    public static C6613h2 m19783d(Bundle bundle) {
-        return new C6613h2(bundle.getFloat(m19784c(0), 1.0f), bundle.getFloat(m19784c(1), 1.0f));
+    public static C6613h2 m19784d(Bundle bundle) {
+        return new C6613h2(bundle.getFloat(m19785c(0), 1.0f), bundle.getFloat(m19785c(1), 1.0f));
     }
 
-    public long m19785b(long j) {
+    public long m19786b(long j) {
         return j * this.f20673c;
     }
 
-    public C6613h2 m19782e(float f) {
+    public C6613h2 m19783e(float f) {
         return new C6613h2(f, this.f20672b);
     }
 
@@ -48,13 +48,13 @@ public final class C6613h2 implements AbstractC6609h {
     }
 
     public String toString() {
-        return C1216l0.m37936z("PlaybackParameters(speed=%.2f, pitch=%.2f)", Float.valueOf(this.f20671a), Float.valueOf(this.f20672b));
+        return C1216l0.m37939z("PlaybackParameters(speed=%.2f, pitch=%.2f)", Float.valueOf(this.f20671a), Float.valueOf(this.f20672b));
     }
 
     public C6613h2(float f, float f2) {
         boolean z = true;
-        C1186a.m38189a(f > 0.0f);
-        C1186a.m38189a(f2 <= 0.0f ? false : z);
+        C1186a.m38192a(f > 0.0f);
+        C1186a.m38192a(f2 <= 0.0f ? false : z);
         this.f20671a = f;
         this.f20672b = f2;
         this.f20673c = Math.round(f * 1000.0f);

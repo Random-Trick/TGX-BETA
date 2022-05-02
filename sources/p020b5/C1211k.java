@@ -5,12 +5,12 @@ import java.util.List;
 import java.util.Map;
 
 public final class C1211k {
-    public static int m38031a(String str) {
+    public static int m38034a(String str) {
         char c;
         if (str == null) {
             return -1;
         }
-        String n = C1234w.m37857n(str);
+        String n = C1234w.m37860n(str);
         n.hashCode();
         switch (n.hashCode()) {
             case -2123537834:
@@ -229,12 +229,12 @@ public final class C1211k {
         }
     }
 
-    public static int m38030b(Map<String, List<String>> map) {
+    public static int m38033b(Map<String, List<String>> map) {
         List<String> list = map.get("Content-Type");
-        return m38031a((list == null || list.isEmpty()) ? null : list.get(0));
+        return m38034a((list == null || list.isEmpty()) ? null : list.get(0));
     }
 
-    public static int m38029c(Uri uri) {
+    public static int m38032c(Uri uri) {
         String lastPathSegment = uri.getLastPathSegment();
         if (lastPathSegment == null) {
             return -1;

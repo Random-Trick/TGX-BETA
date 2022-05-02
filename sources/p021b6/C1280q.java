@@ -6,19 +6,19 @@ public final class C1280q extends AbstractC1284t {
     public Integer f4641c;
 
     @Override
-    public final AbstractC1284t mo37797a(boolean z) {
+    public final AbstractC1284t mo37800a(boolean z) {
         this.f4640b = Boolean.TRUE;
         return this;
     }
 
     @Override
-    public final AbstractC1284t mo37796b(int i) {
+    public final AbstractC1284t mo37799b(int i) {
         this.f4641c = 1;
         return this;
     }
 
     @Override
-    public final AbstractC1285u mo37795c() {
+    public final AbstractC1285u mo37798c() {
         Boolean bool;
         String str = this.f4639a;
         if (str != null && (bool = this.f4640b) != null && this.f4641c != null) {
@@ -41,7 +41,7 @@ public final class C1280q extends AbstractC1284t {
         throw new IllegalStateException(sb3.toString());
     }
 
-    public final AbstractC1284t m37799d(String str) {
+    public final AbstractC1284t m37802d(String str) {
         this.f4639a = "common";
         return this;
     }

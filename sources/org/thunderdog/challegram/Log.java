@@ -109,20 +109,20 @@ public class Log {
     }
 
     public static class C7879b {
-        public final List<File> f25451a;
-        public long f25452b;
-        public long f25453c;
-        public long f25454d;
+        public final List<File> f25454a;
+        public long f25455b;
+        public long f25456c;
+        public long f25457d;
 
         public C7879b(List<File> list, long j, long j2, long j3) {
-            this.f25451a = list;
-            this.f25452b = j;
-            this.f25453c = j2;
-            this.f25454d = j3;
+            this.f25454a = list;
+            this.f25455b = j;
+            this.f25456c = j2;
+            this.f25457d = j3;
         }
 
         public boolean m14707a() {
-            return this.f25451a.isEmpty();
+            return this.f25454a.isEmpty();
         }
     }
 
@@ -133,18 +133,18 @@ public class Log {
     }
 
     public static class C7881d {
-        public final String f25455a;
-        public final String f25456b;
-        public final String f25457c;
-        public final StackTraceElement[] f25458d;
-        public final C7881d f25459e;
+        public final String f25458a;
+        public final String f25459b;
+        public final String f25460c;
+        public final StackTraceElement[] f25461d;
+        public final C7881d f25462e;
 
         public C7881d(String str, String str2, String str3, StackTraceElement[] stackTraceElementArr, C7881d dVar) {
-            this.f25455a = str;
-            this.f25456b = str2;
-            this.f25457c = str3;
-            this.f25458d = stackTraceElementArr;
-            this.f25459e = dVar;
+            this.f25458a = str;
+            this.f25459b = str2;
+            this.f25460c = str3;
+            this.f25461d = stackTraceElementArr;
+            this.f25462e = dVar;
         }
 
         public static void m14704a(StringBuilder sb2, C7881d dVar, int i) {
@@ -153,24 +153,24 @@ public class Log {
                 sb2.append(i);
                 sb2.append("===\n");
             }
-            sb2.append(dVar.f25455a);
-            if (!C5070i.m24061i(dVar.f25456b) || !C5070i.m24061i(dVar.f25457c)) {
+            sb2.append(dVar.f25458a);
+            if (!C5070i.m24062i(dVar.f25459b) || !C5070i.m24062i(dVar.f25460c)) {
                 sb2.append(": ");
-                if (!C5070i.m24061i(dVar.f25456b)) {
-                    sb2.append(dVar.f25456b);
-                    if (!C5070i.m24061i(dVar.f25457c)) {
+                if (!C5070i.m24062i(dVar.f25459b)) {
+                    sb2.append(dVar.f25459b);
+                    if (!C5070i.m24062i(dVar.f25460c)) {
                         sb2.append(" | ");
-                        sb2.append(dVar.f25457c);
+                        sb2.append(dVar.f25460c);
                     }
-                } else if (!C5070i.m24061i(dVar.f25457c)) {
-                    sb2.append(dVar.f25457c);
+                } else if (!C5070i.m24062i(dVar.f25460c)) {
+                    sb2.append(dVar.f25460c);
                 }
             }
             sb2.append("\nStack trace:\n");
             RuntimeException runtimeException = new RuntimeException();
-            runtimeException.setStackTrace(dVar.f25458d);
+            runtimeException.setStackTrace(dVar.f25461d);
             sb2.append(Log.getStackTrace(runtimeException));
-            C7881d dVar2 = dVar.f25459e;
+            C7881d dVar2 = dVar.f25462e;
             if (dVar2 != null) {
                 m14704a(sb2, dVar2, i + 1);
             }
@@ -185,12 +185,12 @@ public class Log {
                 return false;
             }
             C7881d dVar2 = (C7881d) obj;
-            if (C5070i.m24067c(this.f25455a, dVar2.f25455a) && C5070i.m24067c(this.f25456b, dVar2.f25456b) && C5070i.m24067c(this.f25457c, dVar2.f25457c) && Arrays.equals(this.f25458d, dVar2.f25458d)) {
-                C7881d dVar3 = this.f25459e;
-                if (dVar3 == null && dVar2.f25459e == null) {
+            if (C5070i.m24068c(this.f25458a, dVar2.f25458a) && C5070i.m24068c(this.f25459b, dVar2.f25459b) && C5070i.m24068c(this.f25460c, dVar2.f25460c) && Arrays.equals(this.f25461d, dVar2.f25461d)) {
+                C7881d dVar3 = this.f25462e;
+                if (dVar3 == null && dVar2.f25462e == null) {
                     return true;
                 }
-                if (dVar3 != null && (dVar = dVar2.f25459e) != null && dVar3.equals(dVar)) {
+                if (dVar3 != null && (dVar = dVar2.f25462e) != null && dVar3.equals(dVar)) {
                     return true;
                 }
             }
@@ -262,7 +262,7 @@ public class Log {
                 if ((runtimeFlags & 1) != 0 || (mVar = pool) == null) {
                     closeLogImpl();
                 } else {
-                    mVar.m28050h(Message.obtain(mVar.m28053d(), 1), 0L);
+                    mVar.m28052h(Message.obtain(mVar.m28055d(), 1), 0L);
                 }
                 z = false;
             }
@@ -289,24 +289,24 @@ public class Log {
             if ((runtimeFlags & 1) != 0 || preparePool() == null || (mVar = pool) == null) {
                 deleteAllImpl(bVar, jVar, jVar2);
             } else {
-                mVar.m28050h(Message.obtain(mVar.m28053d(), 3, new Object[]{bVar, jVar, jVar2}), 0L);
+                mVar.m28052h(Message.obtain(mVar.m28055d(), 3, new Object[]{bVar, jVar, jVar2}), 0L);
             }
         }
     }
 
     public static void deleteAllImpl(C7879b bVar, AbstractC5918j<C7879b> jVar, AbstractC5918j<C7879b> jVar2) {
-        for (int size = bVar.f25451a.size() - 1; size >= 0; size--) {
-            File file = bVar.f25451a.get(size);
+        for (int size = bVar.f25454a.size() - 1; size >= 0; size--) {
+            File file = bVar.f25454a.get(size);
             long length = file.length();
             boolean startsWith = file.getName().startsWith(CRASH_PREFIX);
             if (file.delete()) {
                 if (startsWith) {
-                    bVar.f25453c--;
+                    bVar.f25456c--;
                 } else {
-                    bVar.f25452b--;
+                    bVar.f25455b--;
                 }
-                bVar.f25454d -= length;
-                bVar.f25451a.remove(size);
+                bVar.f25457d -= length;
+                bVar.f25454a.remove(size);
                 if (jVar2 != null) {
                     jVar2.mo1330a(bVar);
                 }
@@ -399,11 +399,11 @@ public class Log {
     private static native String getDeviceInformation();
 
     public static String getDeviceInformationString() {
-        return String.format(Locale.US, "App: %s\nSDK: %d (%s)\nManufacturer: %s\nModel: %s\nBrand: %s\nDisplay: %s\nProduct: %s\nFingerprint: %s\nScreen: %dx%d (%f)\n", "0.24.6.1506-arm64-v8a", Integer.valueOf(Build.VERSION.SDK_INT), C2064f.m35725a(), Build.MANUFACTURER, Build.MODEL, Build.BRAND, Build.DISPLAY, Build.PRODUCT, Build.FINGERPRINT, Integer.valueOf(C1357a0.m37551D()), Integer.valueOf(C1357a0.m37553B()), Float.valueOf(C1357a0.m37542h()));
+        return String.format(Locale.US, "App: %s\nSDK: %d (%s)\nManufacturer: %s\nModel: %s\nBrand: %s\nDisplay: %s\nProduct: %s\nFingerprint: %s\nScreen: %dx%d (%f)\n", "0.24.6.1507-arm64-v8a", Integer.valueOf(Build.VERSION.SDK_INT), C2064f.m35728a(), Build.MANUFACTURER, Build.MODEL, Build.BRAND, Build.DISPLAY, Build.PRODUCT, Build.FINGERPRINT, Integer.valueOf(C1357a0.m37554D()), Integer.valueOf(C1357a0.m37556B()), Float.valueOf(C1357a0.m37545h()));
     }
 
     public static File getLogDir() {
-        File file = new File(C1379j0.m37315n().getFilesDir(), "logs");
+        File file = new File(C1379j0.m37318n().getFilesDir(), "logs");
         if (file.exists() || file.mkdir()) {
             return file;
         }
@@ -425,7 +425,7 @@ public class Log {
         if (logDir == null || (listFiles = logDir.listFiles()) == null) {
             return null;
         }
-        Arrays.sort(listFiles, C7370m.f23296a);
+        Arrays.sort(listFiles, C7370m.f23299a);
         ArrayList arrayList = new ArrayList(listFiles.length);
         long j = 0;
         long j2 = 0;
@@ -511,7 +511,7 @@ public class Log {
     private static void load() {
         if (!loaded) {
             C7888N.init();
-            load(C4868i.m24726c2().m24637n3());
+            load(C4868i.m24727c2().m24638n3());
         }
     }
 
@@ -598,7 +598,7 @@ public class Log {
             }
             return;
         }
-        mVar.m28050h(Message.obtain(mVar.m28053d(), 0, i, i2, str), 0L);
+        mVar.m28052h(Message.obtain(mVar.m28055d(), 0, i, i2, str), 0L);
     }
 
     public static native void logToFileImpl(int i, int i2, String str);
@@ -639,7 +639,7 @@ public class Log {
                     if (property == null) {
                         property = "";
                     }
-                    setInternalValues(logDir.getAbsolutePath(), property, "0.24.6.1506-arm64-v8a", 1506, Build.VERSION.SDK_INT, C2064f.m35725a(), Build.MODEL, Build.BRAND, Build.DISPLAY, Build.PRODUCT, Build.MANUFACTURER, Build.FINGERPRINT, C1357a0.m37551D(), C1357a0.m37553B(), C1357a0.m37542h());
+                    setInternalValues(logDir.getAbsolutePath(), property, "0.24.6.1507-arm64-v8a", 1507, Build.VERSION.SDK_INT, C2064f.m35728a(), Build.MODEL, Build.BRAND, Build.DISPLAY, Build.PRODUCT, Build.MANUFACTURER, Build.FINGERPRINT, C1357a0.m37554D(), C1357a0.m37556B(), C1357a0.m37545h());
                 }
             }
         }
@@ -658,14 +658,14 @@ public class Log {
     }
 
     public static void setEnabled(int i, boolean z) {
-        setEnabledTags(C5063c.m24137i(tags, i, z));
+        setEnabledTags(C5063c.m24138i(tags, i, z));
     }
 
     public static void setEnabledTags(long j) {
         if (tags != j) {
             tags = j;
             setLogTagsImpl(j);
-            C4868i.m24726c2().m24566w3("log_tags", j);
+            C4868i.m24727c2().m24567w3("log_tags", j);
         }
     }
 
@@ -676,7 +676,7 @@ public class Log {
             level = i;
             setLogLevelImpl(i);
             setThirdPartyLogLevels(i);
-            C4868i.m24726c2().m24581u3("log_level", i);
+            C4868i.m24727c2().m24582u3("log_level", i);
         }
     }
 
@@ -688,15 +688,15 @@ public class Log {
         synchronized (Log.class) {
             int i2 = runtimeFlags;
             if (z != ((i2 & i) == i)) {
-                runtimeFlags = C5063c.m24138h(i2, i, z);
+                runtimeFlags = C5063c.m24139h(i2, i, z);
             }
         }
     }
 
     public static void setSetting(int i, boolean z) {
         if (z != checkSetting(i)) {
-            settings = C5063c.m24138h(settings, i, z);
-            C4868i.m24726c2().m24581u3("log_settings", i);
+            settings = C5063c.m24139h(settings, i, z);
+            C4868i.m24727c2().m24582u3("log_settings", i);
         }
     }
 
@@ -726,21 +726,21 @@ public class Log {
     private static native boolean startCaptureImpl();
 
     public static C7881d throwableFromBlob(C6810a aVar) {
-        String q = aVar.m18922q();
-        String q2 = aVar.m18935d() ? aVar.m18922q() : null;
-        String q3 = aVar.m18935d() ? aVar.m18922q() : null;
-        int m = aVar.m18926m();
+        String q = aVar.m18923q();
+        String q2 = aVar.m18936d() ? aVar.m18923q() : null;
+        String q3 = aVar.m18936d() ? aVar.m18923q() : null;
+        int m = aVar.m18927m();
         StackTraceElement[] stackTraceElementArr = new StackTraceElement[m];
         for (int i = 0; i < m; i++) {
             String str = "";
-            String q4 = aVar.m18935d() ? aVar.m18922q() : str;
-            String q5 = aVar.m18935d() ? aVar.m18922q() : str;
-            if (aVar.m18935d()) {
-                str = aVar.m18922q();
+            String q4 = aVar.m18936d() ? aVar.m18923q() : str;
+            String q5 = aVar.m18936d() ? aVar.m18923q() : str;
+            if (aVar.m18936d()) {
+                str = aVar.m18923q();
             }
-            stackTraceElementArr[i] = new StackTraceElement(q4, q5, str, aVar.m18926m());
+            stackTraceElementArr[i] = new StackTraceElement(q4, q5, str, aVar.m18927m());
         }
-        return new C7881d(q, q2, q3, stackTraceElementArr, aVar.m18935d() ? throwableFromBlob(aVar) : null);
+        return new C7881d(q, q2, q3, stackTraceElementArr, aVar.m18936d() ? throwableFromBlob(aVar) : null);
     }
 
     public static void toBlob(Throwable th, C6810a aVar) {
@@ -780,7 +780,7 @@ public class Log {
         }
         sb2.append(obj);
         String sb3 = sb2.toString();
-        C1379j0.m37290z0(sb3, 1);
+        C1379j0.m37293z0(sb3, 1);
         m14738a("%s", sb3);
     }
 
@@ -798,9 +798,9 @@ public class Log {
 
     private static int blobSize(Throwable th, boolean z) {
         StackTraceElement[] stackTrace;
-        int x = C6810a.m18915x(th.getClass().getName(), true) + 1 + C6810a.m18915x(th.getMessage(), false) + 1 + C6810a.m18915x(C5070i.m24067c(th.getMessage(), th.getLocalizedMessage()) ? null : th.getLocalizedMessage(), false) + 4;
+        int x = C6810a.m18916x(th.getClass().getName(), true) + 1 + C6810a.m18916x(th.getMessage(), false) + 1 + C6810a.m18916x(C5070i.m24068c(th.getMessage(), th.getLocalizedMessage()) ? null : th.getLocalizedMessage(), false) + 4;
         for (StackTraceElement stackTraceElement : th.getStackTrace()) {
-            x += C6810a.m18915x(stackTraceElement.getClassName(), false) + 1 + 1 + C6810a.m18915x(stackTraceElement.getMethodName(), false) + 1 + C6810a.m18915x(stackTraceElement.getFileName(), false) + 4;
+            x += C6810a.m18916x(stackTraceElement.getClassName(), false) + 1 + 1 + C6810a.m18916x(stackTraceElement.getMethodName(), false) + 1 + C6810a.m18916x(stackTraceElement.getFileName(), false) + 4;
         }
         if (z) {
             int i = 5;
@@ -864,43 +864,43 @@ public class Log {
     }
 
     private static void toBlob(Throwable th, C6810a aVar, boolean z) {
-        aVar.m18941L(th.getClass().getName());
+        aVar.m18942L(th.getClass().getName());
         String message = th.getMessage();
-        boolean z2 = !C5070i.m24061i(message);
-        aVar.m18952A(z2);
+        boolean z2 = !C5070i.m24062i(message);
+        aVar.m18953A(z2);
         if (z2) {
-            aVar.m18941L(message);
+            aVar.m18942L(message);
         }
         String localizedMessage = th.getLocalizedMessage();
-        boolean z3 = !C5070i.m24061i(localizedMessage) && !localizedMessage.equals(message);
-        aVar.m18952A(z3);
+        boolean z3 = !C5070i.m24062i(localizedMessage) && !localizedMessage.equals(message);
+        aVar.m18953A(z3);
         if (z3) {
-            aVar.m18941L(localizedMessage);
+            aVar.m18942L(localizedMessage);
         }
         StackTraceElement[] stackTrace = th.getStackTrace();
-        aVar.m18945H(stackTrace.length);
+        aVar.m18946H(stackTrace.length);
         if (stackTrace.length > 0) {
             for (StackTraceElement stackTraceElement : stackTrace) {
                 String className = stackTraceElement.getClassName();
-                boolean z4 = !C5070i.m24061i(className);
+                boolean z4 = !C5070i.m24062i(className);
                 String methodName = stackTraceElement.getMethodName();
-                boolean z5 = !C5070i.m24061i(methodName);
+                boolean z5 = !C5070i.m24062i(methodName);
                 String fileName = stackTraceElement.getFileName();
-                boolean z6 = !C5070i.m24061i(fileName);
+                boolean z6 = !C5070i.m24062i(fileName);
                 int lineNumber = stackTraceElement.getLineNumber();
-                aVar.m18952A(z4);
+                aVar.m18953A(z4);
                 if (z4) {
-                    aVar.m18941L(className);
+                    aVar.m18942L(className);
                 }
-                aVar.m18952A(z5);
+                aVar.m18953A(z5);
                 if (z5) {
-                    aVar.m18941L(methodName);
+                    aVar.m18942L(methodName);
                 }
-                aVar.m18952A(z6);
+                aVar.m18953A(z6);
                 if (z6) {
-                    aVar.m18941L(fileName);
+                    aVar.m18942L(fileName);
                 }
-                aVar.m18945H(lineNumber);
+                aVar.m18946H(lineNumber);
             }
         }
         if (z) {
@@ -916,7 +916,7 @@ public class Log {
                     }
                 }
                 th = cause;
-                aVar.m18952A(th != null);
+                aVar.m18953A(th != null);
                 if (th != null) {
                     toBlob(th, aVar, false);
                 } else {
@@ -939,7 +939,7 @@ public class Log {
         }
         sb2.append(" ===\n");
         String message = th.getMessage();
-        if (!C5070i.m24061i(message)) {
+        if (!C5070i.m24062i(message)) {
             sb2.append(message);
             sb2.append('\n');
         }
@@ -1002,7 +1002,7 @@ public class Log {
         preparePool();
         C4384m mVar = pool;
         if (mVar != null) {
-            mVar.m28050h(Message.obtain(mVar.m28053d(), 2, jVar), 0L);
+            mVar.m28052h(Message.obtain(mVar.m28055d(), 2, jVar), 0L);
             return;
         }
         synchronized (Log.class) {

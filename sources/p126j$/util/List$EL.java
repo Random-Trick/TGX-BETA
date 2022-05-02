@@ -8,7 +8,7 @@ import java.util.ListIterator;
 public final class List$EL {
     public static void sort(List list, Comparator comparator) {
         if (DesugarCollections.f17928b.isInstance(list)) {
-            DesugarCollections.m22605d(list, comparator);
+            DesugarCollections.m22606d(list, comparator);
             return;
         }
         Object[] array = list.toArray();

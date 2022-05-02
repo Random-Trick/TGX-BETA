@@ -23,7 +23,7 @@ public class View$OnClickListenerC2639kv extends AbstractC3204vo<Void> implement
 
         @Override
         public void mo394V2(C2964ra raVar, C9137c cVar, boolean z) {
-            cVar.setIconColorId(raVar.m32835j() == R.id.btn_logout ? R.id.theme_color_iconNegative : 0);
+            cVar.setIconColorId(raVar.m32838j() == R.id.btn_logout ? R.id.theme_color_iconNegative : 0);
         }
     }
 
@@ -43,32 +43,32 @@ public class View$OnClickListenerC2639kv extends AbstractC3204vo<Void> implement
 
     @Override
     public CharSequence mo9313X9() {
-        return C4403w.m27869i1(R.string.LogOut);
+        return C4403w.m27871i1(R.string.LogOut);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_addAccount:
-                this.f30167b.m2485dd().m3394z2(this.f30165a, true, false);
+                this.f30170b.m2485dd().m3394z2(this.f30168a, true, false);
                 return;
             case R.id.btn_changePhoneNumber:
-                m9291ac(new View$OnClickListenerC2461gw(this.f30165a, this.f30167b));
+                m9291ac(new View$OnClickListenerC2461gw(this.f30168a, this.f30170b));
                 return;
             case R.id.btn_help:
-                this.f30167b.m2485dd().m3878C7(this);
+                this.f30170b.m2485dd().m3878C7(this);
                 return;
             case R.id.btn_logout:
-                this.f30167b.m2485dd().m3639a7(this, false);
+                this.f30170b.m2485dd().m3639a7(this, false);
                 return;
             case R.id.btn_passcode:
-                if (!C4862d.m24934w().m24933x()) {
-                    m9291ac(new View$OnClickListenerC2714mi(this.f30165a, this.f30167b));
+                if (!C4862d.m24935w().m24934x()) {
+                    m9291ac(new View$OnClickListenerC2714mi(this.f30168a, this.f30170b));
                     return;
                 }
                 return;
             case R.id.btn_storageUsage:
-                m9291ac(new View$OnClickListenerC2942qs(this.f30165a, this.f30167b));
+                m9291ac(new View$OnClickListenerC2942qs(this.f30168a, this.f30170b));
                 return;
             default:
                 return;
@@ -76,24 +76,24 @@ public class View$OnClickListenerC2639kv extends AbstractC3204vo<Void> implement
     }
 
     @Override
-    public boolean mo31074pg() {
+    public boolean mo31076pg() {
         return true;
     }
 
     @Override
-    public void mo30633rg(Context context, CustomRecyclerView customRecyclerView) {
+    public void mo30635rg(Context context, CustomRecyclerView customRecyclerView) {
         C9289s sVar = new C9289s(context);
         sVar.setThemedTextColor(this);
-        sVar.m9632D1(0, true);
+        sVar.m9631D1(0, true);
         sVar.setTitle(mo9313X9());
-        sVar.setSubtitle(C4403w.m27869i1(R.string.SignOutAlt));
+        sVar.setSubtitle(C4403w.m27871i1(R.string.SignOutAlt));
         this.f8932E0 = sVar;
         this.f8931D0 = new C2640a(this);
         ArrayList arrayList = new ArrayList();
         arrayList.add(new C2964ra(4, R.id.btn_addAccount, R.drawable.baseline_person_add_24, R.string.SignOutAltAddAccount));
         arrayList.add(new C2964ra(3));
         arrayList.add(new C2964ra(9, 0, 0, R.string.SignOutAltAddAccountHint));
-        if (!C4862d.m24934w().m24933x()) {
+        if (!C4862d.m24935w().m24934x()) {
             arrayList.add(new C2964ra(2));
             arrayList.add(new C2964ra(4, R.id.btn_passcode, R.drawable.baseline_lock_24, R.string.SignOutAltPasscode));
             arrayList.add(new C2964ra(3));
@@ -112,10 +112,10 @@ public class View$OnClickListenerC2639kv extends AbstractC3204vo<Void> implement
         arrayList.add(new C2964ra(3));
         arrayList.add(new C2964ra(9, 0, 0, R.string.SignOutAltHelpHint));
         arrayList.add(new C2964ra(2));
-        arrayList.add(new C2964ra(4, R.id.btn_logout, R.drawable.baseline_delete_forever_24, R.string.LogOut).m32843d0(R.id.theme_color_textNegative));
+        arrayList.add(new C2964ra(4, R.id.btn_logout, R.drawable.baseline_delete_forever_24, R.string.LogOut).m32846d0(R.id.theme_color_textNegative));
         arrayList.add(new C2964ra(3));
         arrayList.add(new C2964ra(9, 0, 0, R.string.SignOutAltHint2));
-        this.f8931D0.m34116x2(arrayList, false);
+        this.f8931D0.m34119x2(arrayList, false);
         customRecyclerView.setAdapter(this.f8931D0);
     }
 }

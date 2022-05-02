@@ -19,28 +19,28 @@ public class C5111e0 implements AbstractC5139r {
     }
 
     @Override
-    public void mo23818a(View view, Canvas canvas) {
-        RectF a0 = C1410y.m37050a0();
-        a0.top = C1357a0.m37541i(12.0f);
+    public void mo23819a(View view, Canvas canvas) {
+        RectF a0 = C1410y.m37053a0();
+        a0.top = C1357a0.m37544i(12.0f);
         a0.bottom = view.getMeasuredHeight() - a0.top;
-        int i = C1357a0.m37541i(3.0f);
-        int i2 = C1357a0.m37541i(14.0f);
-        if (C4403w.m27984G2()) {
+        int i = C1357a0.m37544i(3.0f);
+        int i2 = C1357a0.m37544i(14.0f);
+        if (C4403w.m27986G2()) {
             a0.left = (view.getMeasuredWidth() - i2) - i;
         } else {
             a0.left = i2;
         }
         a0.right = a0.left + i;
-        float i3 = C1357a0.m37541i(1.5f);
-        float i4 = C1357a0.m37541i(1.5f);
+        float i3 = C1357a0.m37544i(1.5f);
+        float i4 = C1357a0.m37544i(1.5f);
         AbstractC11531p pVar = this.f17160b;
-        canvas.drawRoundRect(a0, i3, i4, C1410y.m37039g(pVar != null ? pVar.mo92e(this.f17159a) : C11524j.m228N(this.f17159a)));
+        canvas.drawRoundRect(a0, i3, i4, C1410y.m37042g(pVar != null ? pVar.mo92e(this.f17159a) : C11524j.m228N(this.f17159a)));
         canvas.save();
-        canvas.translate(C1357a0.m37541i(8.0f) * (C4403w.m27984G2() ? -1 : 1), 0.0f);
+        canvas.translate(C1357a0.m37544i(8.0f) * (C4403w.m27986G2() ? -1 : 1), 0.0f);
     }
 
     @Override
-    public void mo23817b(View view, Canvas canvas) {
+    public void mo23818b(View view, Canvas canvas) {
         canvas.restore();
     }
 }

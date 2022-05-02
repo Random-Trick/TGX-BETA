@@ -7,11 +7,11 @@ import p336y.C10245j0;
 import p336y.C10324z0;
 
 public final class C8440a2 extends C8517l0 {
-    public static final C8440a2 f27403c = new C8440a2(new C9928f());
-    public final C9928f f27404b;
+    public static final C8440a2 f27406c = new C8440a2(new C9928f());
+    public final C9928f f27407b;
 
     public C8440a2(C9928f fVar) {
-        this.f27404b = fVar;
+        this.f27407b = fVar;
     }
 
     @Override
@@ -21,9 +21,9 @@ public final class C8440a2 extends C8517l0 {
             C10324z0 z0Var = (C10324z0) n2Var;
             C8333a.C8334a aVar2 = new C8333a.C8334a();
             if (z0Var.m5442O()) {
-                this.f27404b.m6472a(z0Var.m5450G(), aVar2);
+                this.f27407b.m6472a(z0Var.m5450G(), aVar2);
             }
-            aVar.m5645e(aVar2.m12792c());
+            aVar.m5645e(aVar2.m12791c());
             return;
         }
         throw new IllegalArgumentException("config is not ImageCaptureConfig");

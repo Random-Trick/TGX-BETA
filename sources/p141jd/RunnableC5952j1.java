@@ -62,7 +62,7 @@ public class RunnableC5952j1 implements Runnable {
             RunnableC5952j1.this.f18901R = null;
             synchronized (RunnableC5952j1.this) {
                 if (RunnableC5952j1.this.f18914c) {
-                    RunnableC5952j1.this.m21807Q(this.f18916M, this.f18917N, this.f18918O);
+                    RunnableC5952j1.this.m21808Q(this.f18916M, this.f18917N, this.f18918O);
                 }
             }
         }
@@ -81,76 +81,76 @@ public class RunnableC5952j1 implements Runnable {
         f18895f0 = new C4384m("EncoderThread");
     }
 
-    public void m21822B() {
-        m21787q(true);
+    public void m21823B() {
+        m21788q(true);
     }
 
-    public void m21821C() {
+    public void m21822C() {
         this.f18907X.mo6916a();
     }
 
-    public void m21819E(ByteBuffer byteBuffer) {
+    public void m21820E(ByteBuffer byteBuffer) {
         this.f18908Y.add(byteBuffer);
     }
 
-    public void m21818F(float f) {
+    public void m21819F(float f) {
         this.f18907X.mo6900f(f);
     }
 
-    public void m21817G(C10930q6 q6Var, boolean z, AbstractC5954b bVar) {
+    public void m21818G(C10930q6 q6Var, boolean z, AbstractC5954b bVar) {
         C4384m mVar = f18894e0;
         C5953a aVar = new C5953a(q6Var, z, bVar);
         this.f18901R = aVar;
-        mVar.m28052e(aVar, 150L);
+        mVar.m28054e(aVar, 150L);
     }
 
-    public void m21816H() {
-        m21787q(this.f18913b0);
+    public void m21817H() {
+        m21788q(this.f18913b0);
     }
 
-    public void m21814J(boolean z, boolean z2) {
+    public void m21815J(boolean z, boolean z2) {
         if (z) {
             this.f18913b0 = z2;
             AudioRecord audioRecord = this.f18905V;
             if (audioRecord != null) {
                 try {
                     audioRecord.stop();
-                    m21804T();
+                    m21805T();
                 } catch (Throwable th) {
                     Log.m14725e("Cannot stop recorder", th, new Object[0]);
                 }
             }
         } else {
-            m21787q(z2);
+            m21788q(z2);
         }
     }
 
-    public void m21813K(final boolean z) {
+    public void m21814K(final boolean z) {
         final boolean z2;
         AbstractRunnableC5910b bVar = this.f18901R;
         if (bVar != null) {
-            bVar.m21857c();
+            bVar.m21858c();
             this.f18901R = null;
             z2 = false;
         } else {
             z2 = true;
         }
-        f18894e0.m28052e(new Runnable() {
+        f18894e0.m28054e(new Runnable() {
             @Override
             public final void run() {
-                RunnableC5952j1.this.m21814J(z2, z);
+                RunnableC5952j1.this.m21815J(z2, z);
             }
         }, 0L);
     }
 
-    public static RunnableC5952j1 m21779y() {
+    public static RunnableC5952j1 m21780y() {
         if (f18893d0 == null) {
             f18893d0 = new RunnableC5952j1();
         }
         return f18893d0;
     }
 
-    public final void m21815I(final ByteBuffer byteBuffer, boolean z) {
+    public final void m21816I(final ByteBuffer byteBuffer, boolean z) {
         int i;
         while (byteBuffer.hasRemaining()) {
             if (byteBuffer.remaining() > this.f18909Z.remaining()) {
@@ -171,68 +171,68 @@ public class RunnableC5952j1 implements Runnable {
                 byteBuffer.limit(i);
             }
         }
-        f18894e0.m28052e(new Runnable() {
+        f18894e0.m28054e(new Runnable() {
             @Override
             public final void run() {
-                RunnableC5952j1.this.m21819E(byteBuffer);
+                RunnableC5952j1.this.m21820E(byteBuffer);
             }
         }, 0L);
     }
 
-    public final void m21820D() {
+    public final void m21821D() {
         if (this.f18905V != null) {
-            final float v = m21782v();
+            final float v = m21783v();
             if (this.f18907X != null && this.f18914c) {
-                C1379j0.m37334d0(new Runnable() {
+                C1379j0.m37337d0(new Runnable() {
                     @Override
                     public final void run() {
-                        RunnableC5952j1.this.m21818F(v);
+                        RunnableC5952j1.this.m21819F(v);
                     }
                 });
             }
         }
     }
 
-    public void m21810N(final C10930q6 q6Var, final boolean z, final AbstractC5954b bVar) {
-        m21808P(true);
-        f18895f0.m28052e(new Runnable() {
+    public void m21811N(final C10930q6 q6Var, final boolean z, final AbstractC5954b bVar) {
+        m21809P(true);
+        f18895f0.m28054e(new Runnable() {
             @Override
             public final void run() {
-                RunnableC5952j1.this.m21817G(q6Var, z, bVar);
+                RunnableC5952j1.this.m21818G(q6Var, z, bVar);
             }
         }, 0L);
     }
 
-    public void m21809O() {
-        m21808P(false);
+    public void m21810O() {
+        m21809P(false);
         if (SystemClock.elapsedRealtime() - this.f18902S < 700) {
-            m21788p();
+            m21789p();
         } else {
-            m21806R(false);
+            m21807R(false);
         }
     }
 
-    public final void m21808P(boolean z) {
+    public final void m21809P(boolean z) {
         synchronized (this) {
             this.f18914c = z;
         }
     }
 
-    public final void m21807Q(C10930q6 q6Var, boolean z, AbstractC5954b bVar) {
+    public final void m21808Q(C10930q6 q6Var, boolean z, AbstractC5954b bVar) {
         this.f18906W = q6Var;
         this.f18907X = bVar;
-        C10930q6.C10942l q5 = q6Var.m2285q5("voice" + AbstractC5333b.m23223h(), new TdApi.FileTypeVoiceNote(), z, 1, 5000L);
+        C10930q6.C10942l q5 = q6Var.m2285q5("voice" + AbstractC5333b.m23224h(), new TdApi.FileTypeVoiceNote(), z, 1, 5000L);
         if (q5 == null) {
-            m21785s();
+            m21786s();
             return;
         }
         this.f18910a = q5;
-        if (this.f18912b != null && new File(this.f18912b.f35160c).delete()) {
+        if (this.f18912b != null && new File(this.f18912b.f35163c).delete()) {
             this.f18912b = null;
         }
         try {
-            if (C7888N.startRecord(q5.f35160c) == 0) {
-                m21785s();
+            if (C7888N.startRecord(q5.f35163c) == 0) {
+                m21786s();
                 return;
             }
             if (this.f18911a0 == 0) {
@@ -260,13 +260,13 @@ public class RunnableC5952j1 implements Runnable {
             }
             this.f18905V = new AudioRecord(1, 48000, 16, 2, this.f18911a0 * 10);
             try {
-                m21805S();
+                m21806S();
                 this.f18902S = SystemClock.elapsedRealtime();
                 this.f18903T = 0;
                 this.f18913b0 = true;
                 this.f18905V.startRecording();
-                m21780x();
-                m21783u();
+                m21781x();
+                m21784u();
             } catch (Throwable th) {
                 AudioRecord audioRecord = this.f18905V;
                 if (audioRecord != null) {
@@ -276,24 +276,24 @@ public class RunnableC5952j1 implements Runnable {
                     }
                 }
                 Log.m14725e("Couldn't start recording", th, new Object[0]);
-                m21785s();
+                m21786s();
             }
         } catch (Throwable th2) {
             Log.m14725e("Couldn't set up recorder", th2, new Object[0]);
-            m21785s();
+            m21786s();
         }
     }
 
-    public final void m21806R(final boolean z) {
-        f18895f0.m28052e(new Runnable() {
+    public final void m21807R(final boolean z) {
+        f18895f0.m28054e(new Runnable() {
             @Override
             public final void run() {
-                RunnableC5952j1.this.m21813K(z);
+                RunnableC5952j1.this.m21814K(z);
             }
         }, 0L);
     }
 
-    public final void m21805S() {
+    public final void m21806S() {
         try {
             if (AutomaticGainControl.isAvailable()) {
                 AutomaticGainControl create = AutomaticGainControl.create(this.f18905V.getAudioSessionId());
@@ -336,7 +336,7 @@ public class RunnableC5952j1 implements Runnable {
         }
     }
 
-    public final void m21804T() {
+    public final void m21805T() {
         AutomaticGainControl automaticGainControl = this.f18898O;
         if (automaticGainControl != null) {
             automaticGainControl.release();
@@ -354,7 +354,7 @@ public class RunnableC5952j1 implements Runnable {
         }
     }
 
-    public final void m21789o(ByteBuffer byteBuffer, int i) {
+    public final void m21790o(ByteBuffer byteBuffer, int i) {
         double d = 0.0d;
         try {
             long j = this.f18896M;
@@ -395,14 +395,14 @@ public class RunnableC5952j1 implements Runnable {
         this.f18915c0 = (float) Math.sqrt((d / i) / 2.0d);
     }
 
-    public void m21788p() {
-        m21808P(false);
-        m21806R(true);
+    public void m21789p() {
+        m21809P(false);
+        m21807R(true);
     }
 
-    public final void m21787q(boolean z) {
+    public final void m21788q(boolean z) {
         C7888N.stopRecord();
-        m21808P(false);
+        m21809P(false);
         C10930q6.C10942l lVar = this.f18910a;
         if (lVar != null) {
             this.f18906W.m2333n5(lVar, z ? new TdApi.Error(-1, "Canceled") : null);
@@ -411,7 +411,7 @@ public class RunnableC5952j1 implements Runnable {
             } else {
                 AbstractC5954b bVar = this.f18907X;
                 if (bVar != null) {
-                    bVar.mo6894h(this.f18910a, Math.round(this.f18903T / 1000.0f), m21781w());
+                    bVar.mo6894h(this.f18910a, Math.round(this.f18903T / 1000.0f), m21782w());
                 }
             }
         }
@@ -422,11 +422,11 @@ public class RunnableC5952j1 implements Runnable {
         }
     }
 
-    public void m21786r(final C4695l6 l6Var) {
-        f18894e0.m28052e(new Runnable() {
+    public void m21787r(final C4695l6 l6Var) {
+        f18894e0.m28054e(new Runnable() {
             @Override
             public final void run() {
-                C4695l6.this.m26474a();
+                C4695l6.this.m26475a();
             }
         }, 0L);
     }
@@ -447,10 +447,10 @@ public class RunnableC5952j1 implements Runnable {
             int read = this.f18905V.read(byteBuffer, byteBuffer.capacity());
             if (read <= 0) {
                 this.f18908Y.add(byteBuffer);
-                f18895f0.m28052e(new Runnable() {
+                f18895f0.m28054e(new Runnable() {
                     @Override
                     public final void run() {
-                        RunnableC5952j1.this.m21816H();
+                        RunnableC5952j1.this.m21817H();
                     }
                 }, 0L);
                 return;
@@ -459,67 +459,67 @@ public class RunnableC5952j1 implements Runnable {
             if (read != byteBuffer.capacity()) {
                 z = true;
             }
-            m21789o(byteBuffer, read);
-            f18895f0.m28052e(new Runnable() {
+            m21790o(byteBuffer, read);
+            f18895f0.m28054e(new Runnable() {
                 @Override
                 public final void run() {
-                    RunnableC5952j1.this.m21815I(byteBuffer, z);
+                    RunnableC5952j1.this.m21816I(byteBuffer, z);
                 }
             }, 0L);
-            m21783u();
-            m21784t();
+            m21784u();
+            m21785t();
         }
     }
 
-    public final void m21785s() {
+    public final void m21786s() {
         C10930q6.C10942l lVar = this.f18910a;
         if (lVar != null) {
             this.f18906W.m2333n5(lVar, new TdApi.Error());
             this.f18910a = null;
         }
-        f18895f0.m28052e(new Runnable() {
+        f18895f0.m28054e(new Runnable() {
             @Override
             public final void run() {
-                RunnableC5952j1.this.m21822B();
+                RunnableC5952j1.this.m21823B();
             }
         }, 0L);
-        C1379j0.m37334d0(new Runnable() {
+        C1379j0.m37337d0(new Runnable() {
             @Override
             public final void run() {
-                RunnableC5952j1.this.m21821C();
+                RunnableC5952j1.this.m21822C();
             }
         });
     }
 
-    public final void m21784t() {
+    public final void m21785t() {
         if (this.f18914c) {
             long currentTimeMillis = System.currentTimeMillis();
             if (currentTimeMillis - this.f18904U >= 57) {
                 this.f18904U = currentTimeMillis;
-                f18894e0.m28052e(new Runnable() {
+                f18894e0.m28054e(new Runnable() {
                     @Override
                     public final void run() {
-                        RunnableC5952j1.this.m21820D();
+                        RunnableC5952j1.this.m21821D();
                     }
                 }, 57L);
             }
         }
     }
 
-    public final void m21783u() {
-        f18894e0.m28052e(this, 0L);
+    public final void m21784u() {
+        f18894e0.m28054e(this, 0L);
     }
 
-    public final float m21782v() {
+    public final float m21783v() {
         return this.f18915c0;
     }
 
-    public byte[] m21781w() {
+    public byte[] m21782w() {
         short[] sArr = this.f18897N;
         return C7888N.getWaveform2(sArr, sArr.length);
     }
 
-    public final void m21780x() {
+    public final void m21781x() {
         this.f18915c0 = 0.0f;
         if (this.f18896M > 0) {
             Arrays.fill(this.f18897N, (short) 0);
@@ -527,7 +527,7 @@ public class RunnableC5952j1 implements Runnable {
         }
     }
 
-    public boolean m21778z() {
+    public boolean m21779z() {
         return this.f18914c;
     }
 }

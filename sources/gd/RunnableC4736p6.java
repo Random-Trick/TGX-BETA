@@ -30,46 +30,46 @@ public class RunnableC4736p6 extends AbstractC4705m6 implements Client.AbstractC
         this.f15931N = messageForwardOriginChannel.messageId;
     }
 
-    public void m26303j() {
-        this.f15807a.m26233B8();
-        this.f15807a.m25828q8();
+    public void m26304j() {
+        this.f15807a.m26234B8();
+        this.f15807a.m25829q8();
     }
 
-    public void m26302k() {
-        this.f15807a.m26233B8();
-        this.f15807a.m25828q8();
-    }
-
-    @Override
-    public void mo25216a() {
+    public void m26303k() {
+        this.f15807a.m26234B8();
+        this.f15807a.m25829q8();
     }
 
     @Override
-    public String mo25215b() {
+    public void mo25217a() {
+    }
+
+    @Override
+    public String mo25216b() {
         String str = this.f15932O;
-        return str == null ? C4403w.m27869i1(R.string.LoadingChannel) : str;
+        return str == null ? C4403w.m27871i1(R.string.LoadingChannel) : str;
     }
 
     @Override
-    public C6246h mo25214c() {
+    public C6246h mo25215c() {
         TdApi.ChatPhotoInfo chatPhotoInfo = this.f15933P;
         if (chatPhotoInfo != null) {
-            return C4779t2.m25702E0(this.f15807a.f16099O0, chatPhotoInfo);
+            return C4779t2.m25703E0(this.f15807a.f16099O0, chatPhotoInfo);
         }
         return null;
     }
 
     @Override
-    public C4587b.C4588a mo25213d() {
+    public C4587b.C4588a mo25214d() {
         return this.f15807a.mo4348c().m2915C3(this.f15934c, false);
     }
 
     @Override
-    public void mo25212f() {
+    public void mo25213f() {
         if (this.f15934c != 0) {
             TdApi.Chat U2 = this.f15807a.mo4348c().m2632U2(this.f15934c);
             if (U2 != null) {
-                m26301l(U2);
+                m26302l(U2);
             } else {
                 this.f15807a.mo4348c().m2270r4().m14783o(new TdApi.GetChat(this.f15934c), this);
             }
@@ -77,23 +77,23 @@ public class RunnableC4736p6 extends AbstractC4705m6 implements Client.AbstractC
     }
 
     @Override
-    public boolean mo25211g(View view, RunnableC5390g gVar, C5455v0 v0Var, HandlerC10770jj.C10788q qVar, AbstractC6264v vVar) {
+    public boolean mo25212g(View view, RunnableC5390g gVar, C5455v0 v0Var, HandlerC10770jj.C10788q qVar, AbstractC6264v vVar) {
         if (this.f15934c == 0) {
             return false;
         }
         if (this.f15931N != 0) {
-            this.f15807a.mo4348c().m2485dd().m3469r7(this.f15807a.m26096P0(), this.f15934c, new C7319d(this.f15934c, this.f15931N), qVar);
+            this.f15807a.mo4348c().m2485dd().m3469r7(this.f15807a.m26097P0(), this.f15934c, new C7319d(this.f15934c, this.f15931N), qVar);
             return true;
         }
-        this.f15807a.mo4348c().m2485dd().m3569h7(this.f15807a.m26096P0(), this.f15934c, qVar != null ? new HandlerC10770jj.C10780j().m3357s(qVar) : null);
+        this.f15807a.mo4348c().m2485dd().m3569h7(this.f15807a.m26097P0(), this.f15934c, qVar != null ? new HandlerC10770jj.C10780j().m3357s(qVar) : null);
         return true;
     }
 
-    public final void m26301l(TdApi.Chat chat) {
-        if (C5070i.m24061i(this.f15930M) || this.f15807a.m26250A1()) {
+    public final void m26302l(TdApi.Chat chat) {
+        if (C5070i.m24062i(this.f15930M) || this.f15807a.m26251A1()) {
             this.f15932O = chat.title;
         } else {
-            this.f15932O = C4403w.m27865j1(R.string.format_channelAndSignature, chat.title, this.f15930M);
+            this.f15932O = C4403w.m27867j1(R.string.format_channelAndSignature, chat.title, this.f15930M);
         }
         this.f15933P = chat.photo;
         this.f15808b = true;
@@ -101,31 +101,31 @@ public class RunnableC4736p6 extends AbstractC4705m6 implements Client.AbstractC
 
     @Override
     public void run() {
-        this.f15807a.m26233B8();
-        this.f15807a.m25828q8();
+        this.f15807a.m26234B8();
+        this.f15807a.m25829q8();
     }
 
     @Override
     public void mo255t2(TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            this.f15932O = C4403w.m27869i1(R.string.ChannelPrivate);
+            this.f15932O = C4403w.m27871i1(R.string.ChannelPrivate);
             this.f15808b = true;
             this.f15933P = null;
-            C4383l.m28059a().m28058b(new Runnable() {
+            C4383l.m28061a().m28060b(new Runnable() {
                 @Override
                 public final void run() {
-                    RunnableC4736p6.this.m26302k();
+                    RunnableC4736p6.this.m26303k();
                 }
             });
         } else if (constructor != -1601123095) {
             Log.unexpectedTdlibResponse(object, TdApi.GetChat.class, TdApi.Chat.class);
         } else {
-            m26301l(this.f15807a.mo4348c().m2632U2(((TdApi.Chat) object).f25367id));
-            C4383l.m28059a().m28058b(new Runnable() {
+            m26302l(this.f15807a.mo4348c().m2632U2(((TdApi.Chat) object).f25370id));
+            C4383l.m28061a().m28060b(new Runnable() {
                 @Override
                 public final void run() {
-                    RunnableC4736p6.this.m26303j();
+                    RunnableC4736p6.this.m26304j();
                 }
             });
         }

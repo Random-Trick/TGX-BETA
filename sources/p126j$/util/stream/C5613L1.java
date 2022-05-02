@@ -15,43 +15,43 @@ class C5613L1 extends AbstractC5674Z1 implements AbstractC5670Y1, AbstractC5744n
         this.f18182d = cVar;
     }
 
-    public void mo22128k(Double d) {
-        AbstractC5572D0.m22419j(this, d);
+    public void mo22129k(Double d) {
+        AbstractC5572D0.m22420j(this, d);
     }
 
     @Override
-    public void mo22135c(double d) {
-        this.f18181c.mo22224a(this.f18281a, d);
+    public void mo22136c(double d) {
+        this.f18181c.mo22225a(this.f18281a, d);
     }
 
     @Override
-    public void mo22134d(int i) {
-        AbstractC5572D0.m22414m();
+    public void mo22135d(int i) {
+        AbstractC5572D0.m22415m();
         throw null;
     }
 
     @Override
-    public void mo22133e(long j) {
-        AbstractC5572D0.m22412n();
+    public void mo22134e(long j) {
+        AbstractC5572D0.m22413n();
         throw null;
     }
 
     @Override
-    public void mo22132h() {
+    public void mo22133h() {
     }
 
     @Override
-    public void mo22131j(long j) {
+    public void mo22132j(long j) {
         this.f18281a = this.f18180b.get();
     }
 
     @Override
-    public void mo22346s(AbstractC5670Y1 y1) {
-        this.f18281a = this.f18182d.mo22172u(this.f18281a, ((C5613L1) y1).f18281a);
+    public void mo22347s(AbstractC5670Y1 y1) {
+        this.f18281a = this.f18182d.mo22173u(this.f18281a, ((C5613L1) y1).f18281a);
     }
 
     @Override
-    public boolean mo22130t() {
+    public boolean mo22131t() {
         return false;
     }
 }

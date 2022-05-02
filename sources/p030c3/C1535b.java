@@ -14,12 +14,12 @@ public final class C1535b extends AbstractC1541g {
     }
 
     @Override
-    public long mo36504b() {
+    public long mo36507b() {
         return this.f5486b;
     }
 
     @Override
-    public AbstractC1541g.EnumC1542a mo36503c() {
+    public AbstractC1541g.EnumC1542a mo36506c() {
         return this.f5485a;
     }
 
@@ -31,7 +31,7 @@ public final class C1535b extends AbstractC1541g {
             return false;
         }
         AbstractC1541g gVar = (AbstractC1541g) obj;
-        return this.f5485a.equals(gVar.mo36503c()) && this.f5486b == gVar.mo36504b();
+        return this.f5485a.equals(gVar.mo36506c()) && this.f5486b == gVar.mo36507b();
     }
 
     public int hashCode() {

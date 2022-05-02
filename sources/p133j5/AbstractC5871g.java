@@ -7,10 +7,10 @@ import p133j5.AbstractC5876k;
 public abstract class AbstractC5871g<R extends AbstractC5876k> {
 
     public interface AbstractC5872a {
-        void mo21275a(@RecentlyNonNull Status status);
+        void mo21276a(@RecentlyNonNull Status status);
     }
 
-    public abstract void mo21901b(@RecentlyNonNull AbstractC5872a aVar);
+    public abstract void mo21902b(@RecentlyNonNull AbstractC5872a aVar);
 
-    public abstract void mo21900c(@RecentlyNonNull AbstractC5877l<? super R> lVar);
+    public abstract void mo21901c(@RecentlyNonNull AbstractC5877l<? super R> lVar);
 }

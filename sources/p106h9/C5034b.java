@@ -10,13 +10,13 @@ public final class C5034b {
         this.f17001a = eGLContext;
     }
 
-    public final EGLContext m24241a() {
+    public final EGLContext m24242a() {
         return this.f17001a;
     }
 
     public boolean equals(Object obj) {
         if (this != obj) {
-            return (obj instanceof C5034b) && C8298k.m12937b(this.f17001a, ((C5034b) obj).f17001a);
+            return (obj instanceof C5034b) && C8298k.m12936b(this.f17001a, ((C5034b) obj).f17001a);
         }
         return true;
     }

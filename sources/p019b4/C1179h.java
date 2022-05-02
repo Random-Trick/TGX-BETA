@@ -12,50 +12,50 @@ public final class C1179h extends AbstractC1180i {
     public static final byte[] f4442o = {79, 112, 117, 115, 72, 101, 97, 100};
     public boolean f4443n;
 
-    public static boolean m38211o(C1189b0 b0Var) {
-        int a = b0Var.m38142a();
+    public static boolean m38214o(C1189b0 b0Var) {
+        int a = b0Var.m38145a();
         byte[] bArr = f4442o;
         if (a < bArr.length) {
             return false;
         }
         byte[] bArr2 = new byte[bArr.length];
-        b0Var.m38133j(bArr2, 0, bArr.length);
+        b0Var.m38136j(bArr2, 0, bArr.length);
         return Arrays.equals(bArr2, bArr);
     }
 
     @Override
-    public long mo38197f(C1189b0 b0Var) {
-        return m38208c(m38212n(b0Var.m38139d()));
+    public long mo38200f(C1189b0 b0Var) {
+        return m38211c(m38215n(b0Var.m38142d()));
     }
 
     @Override
     @EnsuresNonNullIf(expression = {"#3.format"}, result = false)
-    public boolean mo38196h(C1189b0 b0Var, long j, AbstractC1180i.C1182b bVar) {
+    public boolean mo38199h(C1189b0 b0Var, long j, AbstractC1180i.C1182b bVar) {
         boolean z = true;
         if (!this.f4443n) {
-            byte[] copyOf = Arrays.copyOf(b0Var.m38139d(), b0Var.m38137f());
+            byte[] copyOf = Arrays.copyOf(b0Var.m38142d(), b0Var.m38140f());
             int c = C7617h0.m15469c(copyOf);
-            bVar.f4457a = new C6600g1.C6602b().m19858e0("audio/opus").m19886H(c).m19856f0(48000).m19874T(C7617h0.m15471a(copyOf)).m19889E();
+            bVar.f4457a = new C6600g1.C6602b().m19859e0("audio/opus").m19887H(c).m19857f0(48000).m19875T(C7617h0.m15471a(copyOf)).m19890E();
             this.f4443n = true;
             return true;
         }
-        C1186a.m38185e(bVar.f4457a);
-        if (b0Var.m38129n() != 1332770163) {
+        C1186a.m38188e(bVar.f4457a);
+        if (b0Var.m38132n() != 1332770163) {
             z = false;
         }
-        b0Var.m38144P(0);
+        b0Var.m38147P(0);
         return z;
     }
 
     @Override
-    public void mo38195l(boolean z) {
-        super.mo38195l(z);
+    public void mo38198l(boolean z) {
+        super.mo38198l(z);
         if (z) {
             this.f4443n = false;
         }
     }
 
-    public final long m38212n(byte[] bArr) {
+    public final long m38215n(byte[] bArr) {
         int i = bArr[0] & 255;
         int i2 = i & 3;
         int i3 = 2;

@@ -17,13 +17,13 @@ public final class C5496g extends C5506q implements AbstractC5468G {
     }
 
     @Override
-    public boolean mo22124a(Consumer consumer) {
+    public boolean mo22125a(Consumer consumer) {
         Objects.requireNonNull(consumer);
-        C5502m b = m22521b();
+        C5502m b = m22522b();
         if (b == null) {
             return false;
         }
-        consumer.mo22128k(new C5501l(b.f18021b, b.f18022c, this.f18011i));
+        consumer.mo22129k(new C5501l(b.f18021b, b.f18022c, this.f18011i));
         return true;
     }
 
@@ -41,9 +41,9 @@ public final class C5496g extends C5506q implements AbstractC5468G {
     public void forEachRemaining(Consumer consumer) {
         Objects.requireNonNull(consumer);
         while (true) {
-            C5502m b = m22521b();
+            C5502m b = m22522b();
             if (b != null) {
-                consumer.mo22128k(new C5501l(b.f18021b, b.f18022c, this.f18011i));
+                consumer.mo22129k(new C5501l(b.f18021b, b.f18022c, this.f18011i));
             } else {
                 return;
             }
@@ -57,12 +57,12 @@ public final class C5496g extends C5506q implements AbstractC5468G {
 
     @Override
     public long getExactSizeIfKnown() {
-        return AbstractC5485a.m22569h(this);
+        return AbstractC5485a.m22570h(this);
     }
 
     @Override
     public boolean hasCharacteristics(int i) {
-        return AbstractC5485a.m22568j(this, i);
+        return AbstractC5485a.m22569j(this, i);
     }
 
     @Override

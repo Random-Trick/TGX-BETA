@@ -15,16 +15,16 @@ import qa.C8294g;
 import qa.C8298k;
 
 public final class C10180e {
-    public static final Logger f32908i;
-    public boolean f32911b;
-    public long f32912c;
-    public final AbstractC10181a f32916g;
-    public static final C10182b f32909j = new C10182b(null);
-    public static final C10180e f32907h = new C10180e(new C10183c(C9489b.m8536I(C9489b.f30727i + " TaskRunner", true)));
-    public int f32910a = 10000;
-    public final List<C10179d> f32913d = new ArrayList();
-    public final List<C10179d> f32914e = new ArrayList();
-    public final Runnable f32915f = new RunnableC10184d();
+    public static final Logger f32911i;
+    public boolean f32914b;
+    public long f32915c;
+    public final AbstractC10181a f32919g;
+    public static final C10182b f32912j = new C10182b(null);
+    public static final C10180e f32910h = new C10180e(new C10183c(C9489b.m8536I(C9489b.f30730i + " TaskRunner", true)));
+    public int f32913a = 10000;
+    public final List<C10179d> f32916d = new ArrayList();
+    public final List<C10179d> f32917e = new ArrayList();
+    public final Runnable f32918f = new RunnableC10184d();
 
     public interface AbstractC10181a {
         void mo5815a(C10180e eVar);
@@ -41,7 +41,7 @@ public final class C10180e {
         }
 
         public final Logger m5816a() {
-            return C10180e.f32908i;
+            return C10180e.f32911i;
         }
 
         public C10182b(C8294g gVar) {
@@ -50,22 +50,22 @@ public final class C10180e {
     }
 
     public static final class C10183c implements AbstractC10181a {
-        public final ThreadPoolExecutor f32917a;
+        public final ThreadPoolExecutor f32920a;
 
         public C10183c(ThreadFactory threadFactory) {
-            C8298k.m12934e(threadFactory, "threadFactory");
-            this.f32917a = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60L, TimeUnit.SECONDS, new SynchronousQueue(), threadFactory);
+            C8298k.m12933e(threadFactory, "threadFactory");
+            this.f32920a = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 60L, TimeUnit.SECONDS, new SynchronousQueue(), threadFactory);
         }
 
         @Override
         public void mo5815a(C10180e eVar) {
-            C8298k.m12934e(eVar, "taskRunner");
+            C8298k.m12933e(eVar, "taskRunner");
             eVar.notify();
         }
 
         @Override
         public void mo5814b(C10180e eVar, long j) {
-            C8298k.m12934e(eVar, "taskRunner");
+            C8298k.m12933e(eVar, "taskRunner");
             long j2 = j / 1000000;
             long j3 = j - (1000000 * j2);
             if (j2 > 0 || j > 0) {
@@ -80,8 +80,8 @@ public final class C10180e {
 
         @Override
         public void execute(Runnable runnable) {
-            C8298k.m12934e(runnable, "runnable");
-            this.f32917a.execute(runnable);
+            C8298k.m12933e(runnable, "runnable");
+            this.f32920a.execute(runnable);
         }
     }
 
@@ -98,9 +98,9 @@ public final class C10180e {
                 }
                 if (d != null) {
                     C10179d d2 = d.m5846d();
-                    C8298k.m12936c(d2);
+                    C8298k.m12935c(d2);
                     long j = -1;
-                    boolean isLoggable = C10180e.f32909j.m5816a().isLoggable(Level.FINE);
+                    boolean isLoggable = C10180e.f32912j.m5816a().isLoggable(Level.FINE);
                     if (isLoggable) {
                         j = d2.m5833h().m5820g().mo5813c();
                         C10177b.m5841c(d, d2, "starting");
@@ -128,29 +128,29 @@ public final class C10180e {
 
     static {
         Logger logger = Logger.getLogger(C10180e.class.getName());
-        C8298k.m12935d(logger, "Logger.getLogger(TaskRunner::class.java.name)");
-        f32908i = logger;
+        C8298k.m12934d(logger, "Logger.getLogger(TaskRunner::class.java.name)");
+        f32911i = logger;
     }
 
     public C10180e(AbstractC10181a aVar) {
-        C8298k.m12934e(aVar, "backend");
-        this.f32916g = aVar;
+        C8298k.m12933e(aVar, "backend");
+        this.f32919g = aVar;
     }
 
     public final void m5824c(AbstractC10176a aVar, long j) {
-        if (!C9489b.f30726h || Thread.holdsLock(this)) {
+        if (!C9489b.f30729h || Thread.holdsLock(this)) {
             C10179d d = aVar.m5846d();
-            C8298k.m12936c(d);
+            C8298k.m12935c(d);
             if (d.m5838c() == aVar) {
                 boolean d2 = d.m5837d();
                 d.m5828m(false);
                 d.m5829l(null);
-                this.f32913d.remove(d);
+                this.f32916d.remove(d);
                 if (j != -1 && !d2 && !d.m5834g()) {
                     d.m5830k(aVar, j, true);
                 }
                 if (!d.m5836e().isEmpty()) {
-                    this.f32914e.add(d);
+                    this.f32917e.add(d);
                     return;
                 }
                 return;
@@ -160,7 +160,7 @@ public final class C10180e {
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Thread ");
         Thread currentThread = Thread.currentThread();
-        C8298k.m12935d(currentThread, "Thread.currentThread()");
+        C8298k.m12934d(currentThread, "Thread.currentThread()");
         sb2.append(currentThread.getName());
         sb2.append(" MUST hold lock on ");
         sb2.append(this);
@@ -169,11 +169,11 @@ public final class C10180e {
 
     public final AbstractC10176a m5823d() {
         boolean z;
-        if (!C9489b.f30726h || Thread.holdsLock(this)) {
-            while (!this.f32914e.isEmpty()) {
-                long c = this.f32916g.mo5813c();
+        if (!C9489b.f30729h || Thread.holdsLock(this)) {
+            while (!this.f32917e.isEmpty()) {
+                long c = this.f32919g.mo5813c();
                 long j = Long.MAX_VALUE;
-                Iterator<C10179d> it = this.f32914e.iterator();
+                Iterator<C10179d> it = this.f32917e.iterator();
                 AbstractC10176a aVar = null;
                 while (true) {
                     if (!it.hasNext()) {
@@ -193,26 +193,26 @@ public final class C10180e {
                 }
                 if (aVar != null) {
                     m5822e(aVar);
-                    if (z || (!this.f32911b && (!this.f32914e.isEmpty()))) {
-                        this.f32916g.execute(this.f32915f);
+                    if (z || (!this.f32914b && (!this.f32917e.isEmpty()))) {
+                        this.f32919g.execute(this.f32918f);
                     }
                     return aVar;
-                } else if (this.f32911b) {
-                    if (j < this.f32912c - c) {
-                        this.f32916g.mo5815a(this);
+                } else if (this.f32914b) {
+                    if (j < this.f32915c - c) {
+                        this.f32919g.mo5815a(this);
                     }
                     return null;
                 } else {
-                    this.f32911b = true;
-                    this.f32912c = c + j;
+                    this.f32914b = true;
+                    this.f32915c = c + j;
                     try {
                         try {
-                            this.f32916g.mo5814b(this, j);
+                            this.f32919g.mo5814b(this, j);
                         } catch (InterruptedException unused) {
                             m5821f();
                         }
                     } finally {
-                        this.f32911b = false;
+                        this.f32914b = false;
                     }
                 }
             }
@@ -221,7 +221,7 @@ public final class C10180e {
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Thread ");
         Thread currentThread = Thread.currentThread();
-        C8298k.m12935d(currentThread, "Thread.currentThread()");
+        C8298k.m12934d(currentThread, "Thread.currentThread()");
         sb2.append(currentThread.getName());
         sb2.append(" MUST hold lock on ");
         sb2.append(this);
@@ -229,20 +229,20 @@ public final class C10180e {
     }
 
     public final void m5822e(AbstractC10176a aVar) {
-        if (!C9489b.f30726h || Thread.holdsLock(this)) {
+        if (!C9489b.f30729h || Thread.holdsLock(this)) {
             aVar.m5844g(-1L);
             C10179d d = aVar.m5846d();
-            C8298k.m12936c(d);
+            C8298k.m12935c(d);
             d.m5836e().remove(aVar);
-            this.f32914e.remove(d);
+            this.f32917e.remove(d);
             d.m5829l(aVar);
-            this.f32913d.add(d);
+            this.f32916d.add(d);
             return;
         }
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Thread ");
         Thread currentThread = Thread.currentThread();
-        C8298k.m12935d(currentThread, "Thread.currentThread()");
+        C8298k.m12934d(currentThread, "Thread.currentThread()");
         sb2.append(currentThread.getName());
         sb2.append(" MUST hold lock on ");
         sb2.append(this);
@@ -250,42 +250,42 @@ public final class C10180e {
     }
 
     public final void m5821f() {
-        for (int size = this.f32913d.size() - 1; size >= 0; size--) {
-            this.f32913d.get(size).m5839b();
+        for (int size = this.f32916d.size() - 1; size >= 0; size--) {
+            this.f32916d.get(size).m5839b();
         }
-        for (int size2 = this.f32914e.size() - 1; size2 >= 0; size2--) {
-            C10179d dVar = this.f32914e.get(size2);
+        for (int size2 = this.f32917e.size() - 1; size2 >= 0; size2--) {
+            C10179d dVar = this.f32917e.get(size2);
             dVar.m5839b();
             if (dVar.m5836e().isEmpty()) {
-                this.f32914e.remove(size2);
+                this.f32917e.remove(size2);
             }
         }
     }
 
     public final AbstractC10181a m5820g() {
-        return this.f32916g;
+        return this.f32919g;
     }
 
     public final void m5819h(C10179d dVar) {
-        C8298k.m12934e(dVar, "taskQueue");
-        if (!C9489b.f30726h || Thread.holdsLock(this)) {
+        C8298k.m12933e(dVar, "taskQueue");
+        if (!C9489b.f30729h || Thread.holdsLock(this)) {
             if (dVar.m5838c() == null) {
                 if (!dVar.m5836e().isEmpty()) {
-                    C9489b.m8523a(this.f32914e, dVar);
+                    C9489b.m8523a(this.f32917e, dVar);
                 } else {
-                    this.f32914e.remove(dVar);
+                    this.f32917e.remove(dVar);
                 }
             }
-            if (this.f32911b) {
-                this.f32916g.mo5815a(this);
+            if (this.f32914b) {
+                this.f32919g.mo5815a(this);
             } else {
-                this.f32916g.execute(this.f32915f);
+                this.f32919g.execute(this.f32918f);
             }
         } else {
             StringBuilder sb2 = new StringBuilder();
             sb2.append("Thread ");
             Thread currentThread = Thread.currentThread();
-            C8298k.m12935d(currentThread, "Thread.currentThread()");
+            C8298k.m12934d(currentThread, "Thread.currentThread()");
             sb2.append(currentThread.getName());
             sb2.append(" MUST hold lock on ");
             sb2.append(this);
@@ -296,8 +296,8 @@ public final class C10180e {
     public final C10179d m5818i() {
         int i;
         synchronized (this) {
-            i = this.f32910a;
-            this.f32910a = i + 1;
+            i = this.f32913a;
+            this.f32913a = i + 1;
         }
         StringBuilder sb2 = new StringBuilder();
         sb2.append('Q');
@@ -306,9 +306,9 @@ public final class C10180e {
     }
 
     public final void m5817j(AbstractC10176a aVar) {
-        if (!C9489b.f30726h || !Thread.holdsLock(this)) {
+        if (!C9489b.f30729h || !Thread.holdsLock(this)) {
             Thread currentThread = Thread.currentThread();
-            C8298k.m12935d(currentThread, "currentThread");
+            C8298k.m12934d(currentThread, "currentThread");
             String name = currentThread.getName();
             currentThread.setName(aVar.m5848b());
             try {
@@ -330,7 +330,7 @@ public final class C10180e {
             StringBuilder sb2 = new StringBuilder();
             sb2.append("Thread ");
             Thread currentThread2 = Thread.currentThread();
-            C8298k.m12935d(currentThread2, "Thread.currentThread()");
+            C8298k.m12934d(currentThread2, "Thread.currentThread()");
             sb2.append(currentThread2.getName());
             sb2.append(" MUST NOT hold lock on ");
             sb2.append(this);

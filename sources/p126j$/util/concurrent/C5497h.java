@@ -9,7 +9,7 @@ public final class C5497h extends C5502m {
     }
 
     @Override
-    public p126j$.util.concurrent.C5502m mo22511a(int r5, java.lang.Object r6) {
-        throw new UnsupportedOperationException("Method not decompiled: p126j$.util.concurrent.C5497h.mo22511a(int, java.lang.Object):j$.util.concurrent.m");
+    public p126j$.util.concurrent.C5502m mo22512a(int r5, java.lang.Object r6) {
+        throw new UnsupportedOperationException("Method not decompiled: p126j$.util.concurrent.C5497h.mo22512a(int, java.lang.Object):j$.util.concurrent.m");
     }
 }

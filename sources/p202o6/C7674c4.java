@@ -8,8 +8,8 @@ import p262s6.C8649b0;
 public final class C7674c4 implements AbstractC8651c0 {
     @Override
     public final Object zza() {
-        ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor(ThreadFactoryC7761t3.f24857a);
-        C8649b0.m11808a(newSingleThreadExecutor);
+        ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor(ThreadFactoryC7761t3.f24860a);
+        C8649b0.m11807a(newSingleThreadExecutor);
         return newSingleThreadExecutor;
     }
 }

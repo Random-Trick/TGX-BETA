@@ -35,29 +35,29 @@ public final class C1226r<T> {
             this.f4557a = t;
         }
 
-        public void m37892a(int i, AbstractC1227a<T> aVar) {
+        public void m37895a(int i, AbstractC1227a<T> aVar) {
             if (!this.f4560d) {
                 if (i != -1) {
-                    this.f4558b.m38026a(i);
+                    this.f4558b.m38029a(i);
                 }
                 this.f4559c = true;
                 aVar.mo17513a(this.f4557a);
             }
         }
 
-        public void m37891b(AbstractC1228b<T> bVar) {
+        public void m37894b(AbstractC1228b<T> bVar) {
             if (!this.f4560d && this.f4559c) {
-                C1213l e = this.f4558b.m38022e();
+                C1213l e = this.f4558b.m38025e();
                 this.f4558b = new C1213l.C1215b();
                 this.f4559c = false;
                 bVar.mo17512a(this.f4557a, e);
             }
         }
 
-        public void m37890c(AbstractC1228b<T> bVar) {
+        public void m37893c(AbstractC1228b<T> bVar) {
             this.f4560d = true;
             if (this.f4559c) {
-                bVar.mo17512a(this.f4557a, this.f4558b.m38022e());
+                bVar.mo17512a(this.f4557a, this.f4558b.m38025e());
             }
         }
 
@@ -80,29 +80,29 @@ public final class C1226r<T> {
         this(new CopyOnWriteArraySet(), looper, dVar, bVar);
     }
 
-    public static void m37897g(CopyOnWriteArraySet copyOnWriteArraySet, int i, AbstractC1227a aVar) {
+    public static void m37900g(CopyOnWriteArraySet copyOnWriteArraySet, int i, AbstractC1227a aVar) {
         Iterator it = copyOnWriteArraySet.iterator();
         while (it.hasNext()) {
-            ((C1229c) it.next()).m37892a(i, aVar);
+            ((C1229c) it.next()).m37895a(i, aVar);
         }
     }
 
-    public void m37901c(T t) {
+    public void m37904c(T t) {
         if (!this.f4556g) {
-            C1186a.m38185e(t);
+            C1186a.m38188e(t);
             this.f4553d.add(new C1229c<>(t));
         }
     }
 
-    public C1226r<T> m37900d(Looper looper, AbstractC1228b<T> bVar) {
+    public C1226r<T> m37903d(Looper looper, AbstractC1228b<T> bVar) {
         return new C1226r<>(this.f4553d, looper, this.f4550a, bVar);
     }
 
-    public void m37899e() {
+    public void m37902e() {
         if (!this.f4555f.isEmpty()) {
-            if (!this.f4551b.mo37913e(0)) {
+            if (!this.f4551b.mo37916e(0)) {
                 AbstractC1221n nVar = this.f4551b;
-                nVar.mo37916b(nVar.mo37914d(0));
+                nVar.mo37919b(nVar.mo37917d(0));
             }
             boolean z = !this.f4554e.isEmpty();
             this.f4554e.addAll(this.f4555f);
@@ -116,50 +116,50 @@ public final class C1226r<T> {
         }
     }
 
-    public final boolean m37898f(Message message) {
+    public final boolean m37901f(Message message) {
         Iterator<C1229c<T>> it = this.f4553d.iterator();
         while (it.hasNext()) {
-            it.next().m37891b(this.f4552c);
-            if (this.f4551b.mo37913e(0)) {
+            it.next().m37894b(this.f4552c);
+            if (this.f4551b.mo37916e(0)) {
                 return true;
             }
         }
         return true;
     }
 
-    public void m37896h(final int i, final AbstractC1227a<T> aVar) {
+    public void m37899h(final int i, final AbstractC1227a<T> aVar) {
         final CopyOnWriteArraySet copyOnWriteArraySet = new CopyOnWriteArraySet(this.f4553d);
         this.f4555f.add(new Runnable() {
             @Override
             public final void run() {
-                C1226r.m37897g(copyOnWriteArraySet, i, aVar);
+                C1226r.m37900g(copyOnWriteArraySet, i, aVar);
             }
         });
     }
 
-    public void m37895i() {
+    public void m37898i() {
         Iterator<C1229c<T>> it = this.f4553d.iterator();
         while (it.hasNext()) {
-            it.next().m37890c(this.f4552c);
+            it.next().m37893c(this.f4552c);
         }
         this.f4553d.clear();
         this.f4556g = true;
     }
 
-    public void m37894j(T t) {
+    public void m37897j(T t) {
         Iterator<C1229c<T>> it = this.f4553d.iterator();
         while (it.hasNext()) {
             C1229c<T> next = it.next();
             if (next.f4557a.equals(t)) {
-                next.m37890c(this.f4552c);
+                next.m37893c(this.f4552c);
                 this.f4553d.remove(next);
             }
         }
     }
 
-    public void m37893k(int i, AbstractC1227a<T> aVar) {
-        m37896h(i, aVar);
-        m37899e();
+    public void m37896k(int i, AbstractC1227a<T> aVar) {
+        m37899h(i, aVar);
+        m37902e();
     }
 
     public C1226r(CopyOnWriteArraySet<C1229c<T>> copyOnWriteArraySet, Looper looper, AbstractC1192d dVar, AbstractC1228b<T> bVar) {
@@ -168,11 +168,11 @@ public final class C1226r<T> {
         this.f4552c = bVar;
         this.f4554e = new ArrayDeque<>();
         this.f4555f = new ArrayDeque<>();
-        this.f4551b = dVar.mo38083b(looper, new Handler.Callback() {
+        this.f4551b = dVar.mo38086b(looper, new Handler.Callback() {
             @Override
             public final boolean handleMessage(Message message) {
                 boolean f;
-                f = C1226r.this.m37898f(message);
+                f = C1226r.this.m37901f(message);
                 return f;
             }
         });

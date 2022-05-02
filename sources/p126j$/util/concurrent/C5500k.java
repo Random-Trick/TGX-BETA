@@ -17,23 +17,23 @@ public final class C5500k extends C5506q implements AbstractC5468G {
     }
 
     @Override
-    public boolean mo22124a(Consumer consumer) {
+    public boolean mo22125a(Consumer consumer) {
         switch (this.f18015i) {
             case 0:
                 Objects.requireNonNull(consumer);
-                C5502m b = m22521b();
+                C5502m b = m22522b();
                 if (b == null) {
                     return false;
                 }
-                consumer.mo22128k(b.f18021b);
+                consumer.mo22129k(b.f18021b);
                 return true;
             default:
                 Objects.requireNonNull(consumer);
-                C5502m b2 = m22521b();
+                C5502m b2 = m22522b();
                 if (b2 == null) {
                     return false;
                 }
-                consumer.mo22128k(b2.f18022c);
+                consumer.mo22129k(b2.f18022c);
                 return true;
         }
     }
@@ -64,9 +64,9 @@ public final class C5500k extends C5506q implements AbstractC5468G {
             case 0:
                 Objects.requireNonNull(consumer);
                 while (true) {
-                    C5502m b = m22521b();
+                    C5502m b = m22522b();
                     if (b != null) {
-                        consumer.mo22128k(b.f18021b);
+                        consumer.mo22129k(b.f18021b);
                     } else {
                         return;
                     }
@@ -74,9 +74,9 @@ public final class C5500k extends C5506q implements AbstractC5468G {
             default:
                 Objects.requireNonNull(consumer);
                 while (true) {
-                    C5502m b2 = m22521b();
+                    C5502m b2 = m22522b();
                     if (b2 != null) {
-                        consumer.mo22128k(b2.f18022c);
+                        consumer.mo22129k(b2.f18022c);
                     } else {
                         return;
                     }
@@ -98,9 +98,9 @@ public final class C5500k extends C5506q implements AbstractC5468G {
     public long getExactSizeIfKnown() {
         switch (this.f18015i) {
             case 0:
-                return AbstractC5485a.m22569h(this);
+                return AbstractC5485a.m22570h(this);
             default:
-                return AbstractC5485a.m22569h(this);
+                return AbstractC5485a.m22570h(this);
         }
     }
 
@@ -108,9 +108,9 @@ public final class C5500k extends C5506q implements AbstractC5468G {
     public boolean hasCharacteristics(int i) {
         switch (this.f18015i) {
             case 0:
-                return AbstractC5485a.m22568j(this, i);
+                return AbstractC5485a.m22569j(this, i);
             default:
-                return AbstractC5485a.m22568j(this, i);
+                return AbstractC5485a.m22569j(this, i);
         }
     }
 

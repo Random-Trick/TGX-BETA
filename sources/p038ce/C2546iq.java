@@ -141,15 +141,15 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         public void mo421b(RecyclerView recyclerView, int i, int i2) {
             float f;
             LinearLayoutManager linearLayoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
-            int X1 = linearLayoutManager.m39549X1();
+            int X1 = linearLayoutManager.m39552X1();
             if (X1 != -1) {
                 if (X1 == 0) {
                     int i3 = 0;
-                    View C = linearLayoutManager.mo39262C(0);
+                    View C = linearLayoutManager.mo39265C(0);
                     if (C != null) {
                         i3 = -C.getTop();
                     }
-                    f = C5069h.m24089d(i3 / this.f8717a);
+                    f = C5069h.m24090d(i3 / this.f8717a);
                 } else {
                     f = 1.0f;
                 }
@@ -165,11 +165,11 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         @Override
         public void mo421b(RecyclerView recyclerView, int i, int i2) {
             View C;
-            int X1 = ((LinearLayoutManager) recyclerView.getLayoutManager()).m39549X1();
-            int left = (X1 == -1 || (C = recyclerView.getLayoutManager().mo39262C(X1)) == null) ? 0 : C.getLeft();
+            int X1 = ((LinearLayoutManager) recyclerView.getLayoutManager()).m39552X1();
+            int left = (X1 == -1 || (C = recyclerView.getLayoutManager().mo39265C(X1)) == null) ? 0 : C.getLeft();
             C2964ra raVar = (C2964ra) recyclerView.getTag();
-            if (raVar.m32848b()) {
-                raVar.m32859R(X1, left);
+            if (raVar.m32851b()) {
+                raVar.m32862R(X1, left);
             }
         }
     }
@@ -184,83 +184,83 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         @Override
         public void mo8191i(Canvas canvas, RecyclerView recyclerView, RecyclerView.C0880a0 a0Var) {
             Object tag;
-            Paint g = C1410y.m37039g(C11524j.m228N(this.f8721a));
+            Paint g = C1410y.m37042g(C11524j.m228N(this.f8721a));
             int childCount = recyclerView.getChildCount();
             for (int i = 0; i < childCount; i++) {
                 View childAt = recyclerView.getChildAt(i);
-                if (childAt != null && (tag = childAt.getTag()) != null && (tag instanceof C2964ra) && mo30707l((C2964ra) tag)) {
+                if (childAt != null && (tag = childAt.getTag()) != null && (tag instanceof C2964ra) && mo30709l((C2964ra) tag)) {
                     canvas.drawRect(childAt.getLeft(), childAt.getTop(), childAt.getRight(), childAt.getBottom(), g);
                 }
             }
         }
 
-        public boolean mo30707l(C2964ra raVar) {
-            int A = raVar.m32876A();
+        public boolean mo30709l(C2964ra raVar) {
+            int A = raVar.m32879A();
             return A == 2 || A == 3 || A == 8 || A == 61 || A == 70;
         }
     }
 
     public interface AbstractC2550d {
-        int mo30660a(C2964ra raVar);
+        int mo30662a(C2964ra raVar);
     }
 
     public interface AbstractC2551e {
-        void mo30698K(int i, C2964ra raVar, View$OnFocusChangeListenerC7069y1 y1Var, String str);
+        void mo30700K(int i, C2964ra raVar, View$OnFocusChangeListenerC7069y1 y1Var, String str);
     }
 
     public C2546iq(AbstractC9323v4<?> v4Var) {
         this(v4Var, v4Var instanceof View.OnClickListener ? (View.OnClickListener) v4Var : null, v4Var);
         if (v4Var instanceof View.OnLongClickListener) {
-            m34238F2((View.OnLongClickListener) v4Var);
+            m34241F2((View.OnLongClickListener) v4Var);
         }
     }
 
-    public static boolean m34191a1(int i) {
+    public static boolean m34194a1(int i) {
         return i == 12 || i == 13 || i == 47 || i == 69 || i == 77 || i == 85 || i == 88 || i == 80 || i == 81 || i == 98 || i == 99;
     }
 
-    public static boolean m34184c1(C2964ra raVar, C2964ra raVar2) {
+    public static boolean m34187c1(C2964ra raVar, C2964ra raVar2) {
         return raVar2 == raVar;
     }
 
-    public static boolean m34181d1(Object obj, C2964ra raVar) {
-        return raVar.m32844d() == obj;
+    public static boolean m34184d1(Object obj, C2964ra raVar) {
+        return raVar.m32847d() == obj;
     }
 
-    public static boolean m34176f1(int i, C2964ra raVar) {
-        return raVar.m32835j() == i;
+    public static boolean m34179f1(int i, C2964ra raVar) {
+        return raVar.m32838j() == i;
     }
 
-    public static boolean m34172g1(int i, int i2, C2964ra raVar) {
-        return raVar.m32835j() == i && raVar.m32833l() == i2;
+    public static boolean m34175g1(int i, int i2, C2964ra raVar) {
+        return raVar.m32838j() == i && raVar.m32836l() == i2;
     }
 
-    public static boolean m34169h1(int i, C2964ra raVar) {
-        return raVar.m32835j() == i;
+    public static boolean m34172h1(int i, C2964ra raVar) {
+        return raVar.m32838j() == i;
     }
 
-    public static boolean m34165i1(long j, C2964ra raVar) {
-        return raVar.m32832m() == j;
+    public static boolean m34168i1(long j, C2964ra raVar) {
+        return raVar.m32835m() == j;
     }
 
-    public static boolean m34162j1(String str, C2964ra raVar) {
-        return str.equals(raVar.m32823v());
+    public static boolean m34165j1(String str, C2964ra raVar) {
+        return str.equals(raVar.m32826v());
     }
 
-    public static boolean m34158k1(int i, C2964ra raVar) {
-        return raVar.m32876A() == i;
+    public static boolean m34161k1(int i, C2964ra raVar) {
+        return raVar.m32879A() == i;
     }
 
-    public static int m34154l1(AbstractC5912d dVar, C2964ra raVar) {
+    public static int m34157l1(AbstractC5912d dVar, C2964ra raVar) {
         if (dVar.mo1511a(raVar)) {
-            return m34119w3(raVar);
+            return m34122w3(raVar);
         }
         return 1;
     }
 
-    public static int m34119w3(C2964ra raVar) {
-        int A = raVar.m32876A();
-        if (!(C2139ap.m35481U(A) || A == 1 || A == 23 || A == 26)) {
+    public static int m34122w3(C2964ra raVar) {
+        int A = raVar.m32879A();
+        if (!(C2139ap.m35484U(A) || A == 1 || A == 23 || A == 26)) {
             if (A == 31 || A == 34) {
                 return -1;
             }
@@ -285,7 +285,7 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                                 case 58:
                                     break;
                                 default:
-                                    return raVar.m32874C() ? 0 : 1;
+                                    return raVar.m32877C() ? 0 : 1;
                             }
                     }
                 }
@@ -294,55 +294,55 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         return 0;
     }
 
-    public SparseIntArray m34252A0() {
+    public SparseIntArray m34255A0() {
         if (this.f8715k0 == null) {
             this.f8715k0 = new SparseIntArray();
         }
         return this.f8715k0;
     }
 
-    public void m34251A1() {
-        m34244D1(C3408zp.f11297a);
+    public void m34254A1() {
+        m34247D1(C3408zp.f11297a);
     }
 
-    public void m34250A2(AbstractC9323v4<?> v4Var, boolean z) {
+    public void m34253A2(AbstractC9323v4<?> v4Var, boolean z) {
         this.f8697S = v4Var;
         this.f8698T = z;
     }
 
-    public int m34249B0() {
+    public int m34252B0() {
         if (this.f8715k0 != null) {
             return 0;
         }
         return this.f8716l0 != null ? 1 : -1;
     }
 
-    public void m34248B2(View view) {
+    public void m34251B2(View view) {
         AbstractC9323v4<?> v4Var = this.f8697S;
         if (v4Var != null && v4Var.m9333U9() == null) {
             this.f8697S.mo9438Fd(view, this.f8698T);
         }
     }
 
-    public C6038h<String> m34247C0() {
+    public C6038h<String> m34250C0() {
         if (this.f8716l0 == null) {
             this.f8716l0 = new C6038h<>();
         }
         return this.f8716l0;
     }
 
-    public void m34246C1(final AbstractC5912d<C2964ra> dVar) {
-        m34244D1(new AbstractC2550d() {
+    public void m34249C1(final AbstractC5912d<C2964ra> dVar) {
+        m34247D1(new AbstractC2550d() {
             @Override
-            public final int mo30660a(C2964ra raVar) {
+            public final int mo30662a(C2964ra raVar) {
                 int l1;
-                l1 = C2546iq.m34154l1(AbstractC5912d.this, raVar);
+                l1 = C2546iq.m34157l1(AbstractC5912d.this, raVar);
                 return l1;
             }
         });
     }
 
-    public void mo504C2(C2964ra raVar, int i, RecyclerView recyclerView) {
+    public void mo31470C2(C2964ra raVar, int i, RecyclerView recyclerView) {
     }
 
     @Override
@@ -350,11 +350,11 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         return this.f8695Q.isEmpty() ? this.f8704Z ? 0 : 1 : this.f8695Q.size();
     }
 
-    public AbstractC5109d0 m34245D0() {
+    public AbstractC5109d0 m34248D0() {
         return this.f8705a0;
     }
 
-    public final void m34244D1(AbstractC2550d dVar) {
+    public final void m34247D1(AbstractC2550d dVar) {
         Iterator<C2964ra> it = this.f8695Q.iterator();
         do {
             int i = -1;
@@ -362,49 +362,49 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                 int i2 = 0;
                 int i3 = 0;
                 for (C2964ra raVar : this.f8695Q) {
-                    if (dVar.mo30660a(raVar) != 1) {
+                    if (dVar.mo30662a(raVar) != 1) {
                         if (i2 == 0) {
                             i = i3;
                         }
                         i2++;
                     } else if (i2 > 0) {
-                        m39309L(i, i2);
+                        m39312L(i, i2);
                         i2 = 0;
                     }
                     i3++;
                 }
                 if (i2 > 0) {
-                    m39309L(i, i2);
+                    m39312L(i, i2);
                     return;
                 }
                 return;
             }
-        } while (dVar.mo30660a(it.next()) != -1);
-        m39313H();
+        } while (dVar.mo30662a(it.next()) != -1);
+        m39316H();
     }
 
     public void mo8030D2(C2964ra raVar, int i, C9494a1 a1Var) {
     }
 
-    public C2964ra m34243E0(int i) {
+    public C2964ra m34246E0(int i) {
         if (i < 0 || i >= this.f8695Q.size()) {
             return null;
         }
         return this.f8695Q.get(i);
     }
 
-    public void m34242E1(final int i) {
-        m34246C1(new AbstractC5912d() {
+    public void m34245E1(final int i) {
+        m34249C1(new AbstractC5912d() {
             @Override
             public final boolean mo1511a(Object obj) {
                 boolean B;
-                B = ((C2964ra) obj).m32875B(i);
+                B = ((C2964ra) obj).m32878B(i);
                 return B;
             }
         });
     }
 
-    public void m34241E2() {
+    public void m34244E2() {
         this.f8704Z = true;
     }
 
@@ -413,65 +413,65 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         if (this.f8695Q.isEmpty()) {
             return 15;
         }
-        return this.f8695Q.get(i).m32876A();
+        return this.f8695Q.get(i).m32879A();
     }
 
-    public List<C2964ra> m34240F0() {
+    public List<C2964ra> m34243F0() {
         return this.f8695Q;
     }
 
     public void mo6146Q(C2139ap apVar, int i) {
-        mo34122v3(apVar, i, apVar.m39332n());
+        mo34125v3(apVar, i, apVar.m39335n());
     }
 
-    public void m34238F2(View.OnLongClickListener onLongClickListener) {
+    public void m34241F2(View.OnLongClickListener onLongClickListener) {
         this.f8696R = onLongClickListener;
     }
 
-    public C6942k3.AbstractC6945c m34237G0() {
+    public C6942k3.AbstractC6945c m34240G0() {
         return this.f8706b0;
     }
 
     public C2139ap mo6145S(ViewGroup viewGroup, int i) {
         if (i == 32) {
-            return mo34207U0(viewGroup);
+            return mo34210U0(viewGroup);
         }
         if (i <= -1) {
-            return mo34205V0(viewGroup, (-1) - i);
+            return mo34208V0(viewGroup, (-1) - i);
         }
-        return C2139ap.m35485Q(this.f8691M, this.f8692N, i, this, this.f8694P, this.f8696R, this.f8701W, this.f8702X, this.f8703Y);
+        return C2139ap.m35488Q(this.f8691M, this.f8692N, i, this, this.f8694P, this.f8696R, this.f8701W, this.f8702X, this.f8703Y);
     }
 
-    public void mo11660G2(C2964ra raVar, int i, C8795k2 k2Var, boolean z) {
+    public void mo11659G2(C2964ra raVar, int i, C8795k2 k2Var, boolean z) {
     }
 
-    public int m34235H0(C2964ra raVar) {
-        return m34234I0(raVar, 0);
+    public int m34238H0(C2964ra raVar) {
+        return m34237I0(raVar, 0);
     }
 
-    public void mo9532H2(C2964ra raVar, RecyclerView recyclerView, boolean z) {
+    public void mo504H2(C2964ra raVar, RecyclerView recyclerView, boolean z) {
     }
 
-    public int m34234I0(final C2964ra raVar, int i) {
-        return m34230K0(new AbstractC5912d() {
+    public int m34237I0(final C2964ra raVar, int i) {
+        return m34233K0(new AbstractC5912d() {
             @Override
             public final boolean mo1511a(Object obj) {
                 boolean c1;
-                c1 = C2546iq.m34184c1(C2964ra.this, (C2964ra) obj);
+                c1 = C2546iq.m34187c1(C2964ra.this, (C2964ra) obj);
                 return c1;
             }
         }, i, false);
     }
 
-    public void mo34233I1(C2964ra raVar, ViewGroup viewGroup, View$OnFocusChangeListenerC7069y1 y1Var, C6985o2 o2Var) {
+    public void mo34236I1(C2964ra raVar, ViewGroup viewGroup, View$OnFocusChangeListenerC7069y1 y1Var, C6985o2 o2Var) {
     }
 
-    public final void m34232I2(float f) {
+    public final void m34235I2(float f) {
         if (this.f8709e0 != f) {
             this.f8709e0 = f;
             for (RecyclerView recyclerView : this.f8693O) {
                 for (int i = this.f8710f0; i <= this.f8711g0; i++) {
-                    View C = recyclerView.getLayoutManager().mo39262C(i);
+                    View C = recyclerView.getLayoutManager().mo39265C(i);
                     if (C != null && (C instanceof C1355a)) {
                         ((C1355a) C).setSelectableFactor(f);
                     }
@@ -480,18 +480,18 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         }
     }
 
-    public int m34231J0(AbstractC5912d<C2964ra> dVar) {
-        return m34230K0(dVar, -1, false);
+    public int m34234J0(AbstractC5912d<C2964ra> dVar) {
+        return m34233K0(dVar, -1, false);
     }
 
-    public void mo31467J1(C2964ra raVar, C6942k3 k3Var, int i, int i2) {
+    public void mo31469J1(C2964ra raVar, C6942k3 k3Var, int i, int i2) {
     }
 
-    public void mo34062J2(C2964ra raVar, int i, C6862d3 d3Var) {
-        d3Var.m18735c(C1357a0.m37541i(72.0f), 0.0f);
+    public void mo34065J2(C2964ra raVar, int i, C6862d3 d3Var) {
+        d3Var.m18736c(C1357a0.m37544i(72.0f), 0.0f);
     }
 
-    public int m34230K0(AbstractC5912d<C2964ra> dVar, int i, boolean z) {
+    public int m34233K0(AbstractC5912d<C2964ra> dVar, int i, boolean z) {
         if (z) {
             for (int size = i == -1 ? this.f8695Q.size() - 1 : Math.min(this.f8695Q.size() - 1, i); size >= 0; size--) {
                 if (dVar.mo1511a(this.f8695Q.get(size))) {
@@ -518,128 +518,128 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
     }
 
     public void mo6144V(C2139ap apVar) {
-        apVar.m35486P();
+        apVar.m35489P();
     }
 
-    public final void m34229K2(C2964ra raVar, int i, RelativeLayout relativeLayout, boolean z) {
-        mo33061L2(raVar, i, relativeLayout, z, (TextView) relativeLayout.getChildAt(0), (TextView) relativeLayout.getChildAt(1), (TextView) relativeLayout.getChildAt(2), (TextView) relativeLayout.getChildAt(3), (C6977n2) relativeLayout.getChildAt(4), raVar.m32876A() == 76 ? (C6857d) relativeLayout.getChildAt(5) : null, raVar.m32876A() == 16 ? (ImageView) relativeLayout.getChildAt(5) : null, raVar.m32876A() == 16 ? (TextView) relativeLayout.getChildAt(6) : null, raVar.m32876A() == 16 ? (TextView) relativeLayout.getChildAt(7) : null);
+    public final void m34232K2(C2964ra raVar, int i, RelativeLayout relativeLayout, boolean z) {
+        mo33064L2(raVar, i, relativeLayout, z, (TextView) relativeLayout.getChildAt(0), (TextView) relativeLayout.getChildAt(1), (TextView) relativeLayout.getChildAt(2), (TextView) relativeLayout.getChildAt(3), (C6977n2) relativeLayout.getChildAt(4), raVar.m32879A() == 76 ? (C6857d) relativeLayout.getChildAt(5) : null, raVar.m32879A() == 16 ? (ImageView) relativeLayout.getChildAt(5) : null, raVar.m32879A() == 16 ? (TextView) relativeLayout.getChildAt(6) : null, raVar.m32879A() == 16 ? (TextView) relativeLayout.getChildAt(7) : null);
     }
 
-    public int m34228L0(Object obj) {
-        return m34226M0(obj, 0);
+    public int m34231L0(Object obj) {
+        return m34229M0(obj, 0);
     }
 
     public void mo6143W(C2139ap apVar) {
-        apVar.m35482T();
+        apVar.m35485T();
     }
 
-    public void mo33061L2(C2964ra raVar, int i, RelativeLayout relativeLayout, boolean z, TextView textView, TextView textView2, TextView textView3, TextView textView4, C6977n2 n2Var, C6857d dVar, ImageView imageView, TextView textView5, TextView textView6) {
+    public void mo33064L2(C2964ra raVar, int i, RelativeLayout relativeLayout, boolean z, TextView textView, TextView textView2, TextView textView3, TextView textView4, C6977n2 n2Var, C6857d dVar, ImageView imageView, TextView textView5, TextView textView6) {
     }
 
-    public int m34226M0(final Object obj, int i) {
-        return m34230K0(new AbstractC5912d() {
+    public int m34229M0(final Object obj, int i) {
+        return m34233K0(new AbstractC5912d() {
             @Override
             public final boolean mo1511a(Object obj2) {
                 boolean d1;
-                d1 = C2546iq.m34181d1(obj, (C2964ra) obj2);
+                d1 = C2546iq.m34184d1(obj, (C2964ra) obj2);
                 return d1;
             }
         }, i, false);
     }
 
     public void mo6142X(C2139ap apVar) {
-        apVar.m35483S();
+        apVar.m35486S();
     }
 
-    public void mo31466M2(C2964ra raVar, C6879f3 f3Var) {
+    public void mo31468M2(C2964ra raVar, C6879f3 f3Var) {
     }
 
-    public int m34224N0(int i) {
-        return m34221O0(i, -1);
+    public int m34227N0(int i) {
+        return m34224O0(i, -1);
     }
 
-    public boolean m34223N1(View view) {
+    public boolean m34226N1(View view) {
         C2964ra raVar = (C2964ra) view.getTag();
-        return raVar != null && m34220O1(view, raVar, m34201W2(view));
+        return raVar != null && m34223O1(view, raVar, m34204W2(view));
     }
 
-    public void m34222N2(C6942k3.AbstractC6945c cVar) {
+    public void m34225N2(C6942k3.AbstractC6945c cVar) {
         this.f8706b0 = cVar;
     }
 
-    public int m34221O0(final int i, int i2) {
-        return m34230K0(new AbstractC5912d() {
+    public int m34224O0(final int i, int i2) {
+        return m34233K0(new AbstractC5912d() {
             @Override
             public final boolean mo1511a(Object obj) {
                 boolean f1;
-                f1 = C2546iq.m34176f1(i, (C2964ra) obj);
+                f1 = C2546iq.m34179f1(i, (C2964ra) obj);
                 return f1;
             }
         }, i2, false);
     }
 
-    public boolean m34220O1(View view, C2964ra raVar, boolean z) {
+    public boolean m34223O1(View view, C2964ra raVar, boolean z) {
         SparseIntArray sparseIntArray;
         int i;
         C6038h<String> hVar;
         C6038h<String> hVar2;
         SparseIntArray sparseIntArray2;
         if (z) {
-            if (raVar.m32823v() == null) {
-                int A = raVar.m32876A();
-                int i2 = ((A == 13 || A == 85 || A == 98) && (sparseIntArray2 = this.f8715k0) != null) ? sparseIntArray2.get(raVar.m32846c()) : 0;
-                if (raVar.m32835j() != i2) {
-                    raVar.m32858S(true);
-                    m34217Q1(raVar.m32846c(), raVar.m32835j());
-                    m34183c3(raVar.m32835j(), true);
+            if (raVar.m32826v() == null) {
+                int A = raVar.m32879A();
+                int i2 = ((A == 13 || A == 85 || A == 98) && (sparseIntArray2 = this.f8715k0) != null) ? sparseIntArray2.get(raVar.m32849c()) : 0;
+                if (raVar.m32838j() != i2) {
+                    raVar.m32861S(true);
+                    m34220Q1(raVar.m32849c(), raVar.m32838j());
+                    m34186c3(raVar.m32838j(), true);
                     if (i2 != 0) {
-                        C2964ra z0 = m34112z0(i2);
+                        C2964ra z0 = m34115z0(i2);
                         if (z0 != null) {
-                            z0.m32858S(false);
+                            z0.m32861S(false);
                         }
-                        m34183c3(i2, false);
+                        m34186c3(i2, false);
                     }
                 }
             } else {
-                int A2 = raVar.m32876A();
+                int A2 = raVar.m32879A();
                 String str = null;
                 if ((A2 == 13 || A2 == 85 || A2 == 98) && (hVar2 = this.f8716l0) != null) {
-                    str = hVar2.m21471e(raVar.m32846c());
+                    str = hVar2.m21472e(raVar.m32849c());
                 }
-                if (!C5070i.m24067c(raVar.m32823v(), str)) {
-                    raVar.m32858S(true);
-                    m34214R1(raVar.m32846c(), raVar.m32823v());
-                    m34180d3(raVar.m32823v(), true);
+                if (!C5070i.m24068c(raVar.m32826v(), str)) {
+                    raVar.m32861S(true);
+                    m34217R1(raVar.m32849c(), raVar.m32826v());
+                    m34183d3(raVar.m32826v(), true);
                     if (str != null) {
-                        C2964ra y0 = m34115y0(str);
+                        C2964ra y0 = m34118y0(str);
                         if (y0 != null) {
-                            y0.m32858S(false);
+                            y0.m32861S(false);
                         }
-                        m34180d3(str, false);
+                        m34183d3(str, false);
                     }
                 }
             }
-        } else if (raVar.m32823v() == null || (hVar = this.f8716l0) == null) {
-            if (!(raVar.m32823v() != null || (sparseIntArray = this.f8715k0) == null || (i = sparseIntArray.get(raVar.m32846c())) == 0)) {
-                C2964ra z02 = m34112z0(i);
+        } else if (raVar.m32826v() == null || (hVar = this.f8716l0) == null) {
+            if (!(raVar.m32826v() != null || (sparseIntArray = this.f8715k0) == null || (i = sparseIntArray.get(raVar.m32849c())) == 0)) {
+                C2964ra z02 = m34115z0(i);
                 if (z02 != null) {
-                    z02.m32858S(false);
+                    z02.m32861S(false);
                 }
-                this.f8715k0.delete(raVar.m32846c());
+                this.f8715k0.delete(raVar.m32849c());
             }
-        } else if (hVar.m21471e(raVar.m32846c()) != null) {
-            C2964ra y02 = m34115y0(raVar.m32823v());
+        } else if (hVar.m21472e(raVar.m32849c()) != null) {
+            C2964ra y02 = m34118y0(raVar.m32826v());
             if (y02 != null) {
-                y02.m32858S(false);
+                y02.m32861S(false);
             }
-            this.f8716l0.m21465k(raVar.m32846c());
+            this.f8716l0.m21466k(raVar.m32849c());
             return true;
         }
         return true;
     }
 
-    public void mo31465O2(C2964ra raVar, C6942k3 k3Var) {
-        k3Var.m18393j(raVar.m32824u(), raVar.m32825t(), raVar.m32826s());
+    public void mo31467O2(C2964ra raVar, C6942k3 k3Var) {
+        k3Var.m18393j(raVar.m32827u(), raVar.m32828t(), raVar.m32829s());
     }
 
     @Override
@@ -647,24 +647,24 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         this.f8693O.add(recyclerView);
     }
 
-    public int m34219P0(final int i, final int i2) {
-        return m34231J0(new AbstractC5912d() {
+    public int m34222P0(final int i, final int i2) {
+        return m34234J0(new AbstractC5912d() {
             @Override
             public final boolean mo1511a(Object obj) {
                 boolean g1;
-                g1 = C2546iq.m34172g1(i, i2, (C2964ra) obj);
+                g1 = C2546iq.m34175g1(i, i2, (C2964ra) obj);
                 return g1;
             }
         });
     }
 
-    public void mo32051P2(C2964ra raVar, int i, C6992p0 p0Var, boolean z, boolean z2) {
+    public void mo32054P2(C2964ra raVar, int i, C6992p0 p0Var, boolean z, boolean z2) {
     }
 
     @Override
     public void mo45P5(int i, float f, float f2, C3950k kVar) {
         if (i == 0) {
-            m34232I2(f);
+            m34235I2(f);
             C3950k.AbstractC3952b bVar = this.f8714j0;
             if (bVar != null) {
                 bVar.mo45P5(i, f, f2, kVar);
@@ -672,75 +672,75 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         }
     }
 
-    public int m34218Q0(final int i) {
-        return m34230K0(new AbstractC5912d() {
+    public int m34221Q0(final int i) {
+        return m34233K0(new AbstractC5912d() {
             @Override
             public final boolean mo1511a(Object obj) {
                 boolean h1;
-                h1 = C2546iq.m34169h1(i, (C2964ra) obj);
+                h1 = C2546iq.m34172h1(i, (C2964ra) obj);
                 return h1;
             }
         }, -1, true);
     }
 
-    public final void m34217Q1(int i, int i2) {
+    public final void m34220Q1(int i, int i2) {
         if (this.f8715k0 == null) {
             this.f8715k0 = new SparseIntArray();
         }
         this.f8715k0.put(i, i2);
     }
 
-    public void m34216Q2(C2964ra raVar, C6873e3 e3Var, boolean z) {
+    public void m34219Q2(C2964ra raVar, C6873e3 e3Var, boolean z) {
     }
 
-    public int m34215R0(final long j) {
-        return m34231J0(new AbstractC5912d() {
+    public int m34218R0(final long j) {
+        return m34234J0(new AbstractC5912d() {
             @Override
             public final boolean mo1511a(Object obj) {
                 boolean i1;
-                i1 = C2546iq.m34165i1(j, (C2964ra) obj);
+                i1 = C2546iq.m34168i1(j, (C2964ra) obj);
                 return i1;
             }
         });
     }
 
-    public final void m34214R1(int i, String str) {
+    public final void m34217R1(int i, String str) {
         if (this.f8716l0 == null) {
             this.f8716l0 = new C6038h<>();
         }
-        this.f8716l0.m21466j(i, str);
+        this.f8716l0.m21467j(i, str);
     }
 
     public void mo503R2(C2964ra raVar, C6973n0 n0Var, boolean z) {
-        n0Var.m18248v(raVar.m32824u(), null, false);
+        n0Var.m18248v(raVar.m32827u(), null, false);
     }
 
-    public int m34213S0(final String str) {
-        return m34231J0(new AbstractC5912d() {
+    public int m34216S0(final String str) {
+        return m34234J0(new AbstractC5912d() {
             @Override
             public final boolean mo1511a(Object obj) {
                 boolean j1;
-                j1 = C2546iq.m34162j1(str, (C2964ra) obj);
+                j1 = C2546iq.m34165j1(str, (C2964ra) obj);
                 return j1;
             }
         });
     }
 
-    public void m34147n1(final int i) {
-        if (m34200X0()) {
-            C1379j0.m37334d0(new Runnable() {
+    public void m34150n1(final int i) {
+        if (m34203X0()) {
+            C1379j0.m37337d0(new Runnable() {
                 @Override
                 public final void run() {
-                    C2546iq.this.m34147n1(i);
+                    C2546iq.this.m34150n1(i);
                 }
             });
             return;
         }
         this.f8695Q.remove(i);
-        m39306O(i);
+        m39309O(i);
     }
 
-    public void m34211S2(AbstractC2551e eVar) {
+    public void m34214S2(AbstractC2551e eVar) {
         this.f8699U = eVar;
     }
 
@@ -749,108 +749,108 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         this.f8693O.remove(recyclerView);
     }
 
-    public int m34210T0(final int i) {
-        return m34231J0(new AbstractC5912d() {
+    public int m34213T0(final int i) {
+        return m34234J0(new AbstractC5912d() {
             @Override
             public final boolean mo1511a(Object obj) {
                 boolean k1;
-                k1 = C2546iq.m34158k1(i, (C2964ra) obj);
+                k1 = C2546iq.m34161k1(i, (C2964ra) obj);
                 return k1;
             }
         });
     }
 
-    public void m34144o1(final int i) {
-        if (m34200X0()) {
-            C1379j0.m37334d0(new Runnable() {
+    public void m34147o1(final int i) {
+        if (m34203X0()) {
+            C1379j0.m37337d0(new Runnable() {
                 @Override
                 public final void run() {
-                    C2546iq.this.m34144o1(i);
+                    C2546iq.this.m34147o1(i);
                 }
             });
             return;
         }
-        int N0 = m34224N0(i);
+        int N0 = m34227N0(i);
         if (N0 != -1) {
             this.f8695Q.remove(N0);
-            m39306O(N0);
+            m39309O(N0);
         }
     }
 
-    public void m34208T2(C2964ra raVar, boolean z) {
-        m34220O1(null, raVar, z);
+    public void m34211T2(C2964ra raVar, boolean z) {
+        m34223O1(null, raVar, z);
         if (!z) {
-            m34183c3(raVar.m32835j(), false);
+            m34186c3(raVar.m32838j(), false);
         }
     }
 
     @Override
     public void mo9343T5(int i, int i2) {
         if (i == 0 || i == 1) {
-            m34251A1();
+            m34254A1();
         } else if (i == 2) {
-            m34242E1(i2);
+            m34245E1(i2);
         }
     }
 
-    public C2139ap mo34207U0(ViewGroup viewGroup) {
+    public C2139ap mo34210U0(ViewGroup viewGroup) {
         throw new RuntimeException("Stub!");
     }
 
-    public void m34141p1(final long j) {
-        if (m34200X0()) {
-            C1379j0.m37334d0(new Runnable() {
+    public void m34144p1(final long j) {
+        if (m34203X0()) {
+            C1379j0.m37337d0(new Runnable() {
                 @Override
                 public final void run() {
-                    C2546iq.this.m34141p1(j);
+                    C2546iq.this.m34144p1(j);
                 }
             });
             return;
         }
-        int R0 = m34215R0(j);
+        int R0 = m34218R0(j);
         if (R0 != -1) {
             this.f8695Q.remove(R0);
-            m39306O(R0);
+            m39309O(R0);
         }
     }
 
     public void mo395U2(C2964ra raVar, int i, C4022o oVar, boolean z) {
     }
 
-    public C2139ap mo34205V0(ViewGroup viewGroup, int i) {
+    public C2139ap mo34208V0(ViewGroup viewGroup, int i) {
         throw new RuntimeException("Stub!");
     }
 
-    public void m34204V1(int i, int i2) {
+    public void m34207V1(int i, int i2) {
         for (int i3 = (i + i2) - 1; i3 >= i; i3--) {
             this.f8695Q.remove(i3);
         }
-        m39307N(i, i2);
+        m39310N(i, i2);
     }
 
     public void mo394V2(C2964ra raVar, C9137c cVar, boolean z) {
     }
 
-    public final void m34203W0(C2964ra raVar, CustomRecyclerView customRecyclerView) {
+    public final void m34206W0(C2964ra raVar, CustomRecyclerView customRecyclerView) {
         boolean z = customRecyclerView.getAdapter() == null;
         if (z) {
-            customRecyclerView.m39422k(new C2548b());
+            customRecyclerView.m39425k(new C2548b());
         }
-        int g = raVar.m32838g();
-        int o = raVar.m32830o();
+        int g = raVar.m32841g();
+        int o = raVar.m32833o();
         if (g != -1) {
-            ((LinearLayoutManager) customRecyclerView.getLayoutManager()).m39522z2(g, o);
+            ((LinearLayoutManager) customRecyclerView.getLayoutManager()).m39525z2(g, o);
         } else {
-            ((LinearLayoutManager) customRecyclerView.getLayoutManager()).m39522z2(0, 0);
+            ((LinearLayoutManager) customRecyclerView.getLayoutManager()).m39525z2(0, 0);
         }
-        mo9532H2(raVar, customRecyclerView, z);
+        mo504H2(raVar, customRecyclerView, z);
         LinearLayoutManager linearLayoutManager = (LinearLayoutManager) customRecyclerView.getLayoutManager();
-        if (linearLayoutManager.m39534m2() != C4403w.m27984G2()) {
-            linearLayoutManager.m39572B2(C4403w.m27984G2());
+        if (linearLayoutManager.m39537m2() != C4403w.m27986G2()) {
+            linearLayoutManager.m39575B2(C4403w.m27986G2());
         }
     }
 
-    public void m34202W1(List<C2964ra> list) {
+    public void m34205W1(List<C2964ra> list) {
         int D = mo6153D();
         this.f8695Q.clear();
         if (list != null) {
@@ -859,39 +859,39 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         C7389v0.m16567w2(this, D);
     }
 
-    public boolean m34201W2(View view) {
-        return m34198X2(view, view.getTag() instanceof C2964ra ? (C2964ra) view.getTag() : m34112z0(view.getId()));
+    public boolean m34204W2(View view) {
+        return m34201X2(view, view.getTag() instanceof C2964ra ? (C2964ra) view.getTag() : m34115z0(view.getId()));
     }
 
-    public final boolean m34200X0() {
+    public final boolean m34203X0() {
         for (RecyclerView recyclerView : this.f8693O) {
-            if (recyclerView.m39500C0()) {
+            if (recyclerView.m39503C0()) {
                 return true;
             }
         }
         return false;
     }
 
-    public int m34199X1() {
+    public int m34202X1() {
         SparseIntArray sparseIntArray = this.f8715k0;
         if (sparseIntArray != null) {
             sparseIntArray.clear();
         }
         C6038h<String> hVar = this.f8716l0;
         if (hVar != null) {
-            hVar.m21474b();
+            hVar.m21475b();
         }
         boolean z = false;
         int i = 0;
         int i2 = -1;
         for (C2964ra raVar : this.f8695Q) {
-            if (raVar.m32876A() == 30) {
-                m34217Q1(raVar.m32835j(), raVar.m32826s());
-            } else if (raVar.m32873D()) {
-                if (raVar.m32823v() != null) {
-                    m34214R1(raVar.m32846c(), raVar.m32823v());
+            if (raVar.m32879A() == 30) {
+                m34220Q1(raVar.m32838j(), raVar.m32829s());
+            } else if (raVar.m32876D()) {
+                if (raVar.m32826v() != null) {
+                    m34217R1(raVar.m32849c(), raVar.m32826v());
                 } else {
-                    m34217Q1(raVar.m32846c(), raVar.m32835j());
+                    m34220Q1(raVar.m32849c(), raVar.m32838j());
                 }
                 if (!z) {
                     if (i2 == -1) {
@@ -907,7 +907,7 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         return i2;
     }
 
-    public boolean m34198X2(View view, C2964ra raVar) {
+    public boolean m34201X2(View view, C2964ra raVar) {
         if (view == null) {
             return false;
         }
@@ -921,16 +921,16 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         if (z) {
             C9137c cVar = (C9137c) view;
             if (cVar.getToggler() != null) {
-                return cVar.m10202h2();
+                return cVar.m10201h2();
             }
         }
-        int A = raVar.m32876A();
+        int A = raVar.m32879A();
         if (A != 12) {
             if (A != 13) {
                 if (!(A == 47 || A == 69 || A == 77)) {
                     if (A != 85) {
                         if (A == 88 || A == 80) {
-                            return z && ((C9139d) ((FrameLayoutFix) view).getChildAt(0)).m10184t(true);
+                            return z && ((C9139d) ((FrameLayoutFix) view).getChildAt(0)).m10183t(true);
                         }
                         if (A != 81) {
                             if (A != 98) {
@@ -942,7 +942,7 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                             return false;
                         } else {
                             C9256o0 o0Var = (C9256o0) view;
-                            return o0Var.m9793J0() && o0Var.m9782n1(true);
+                            return o0Var.m9792J0() && o0Var.m9781n1(true);
                         }
                     }
                 }
@@ -963,60 +963,60 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
     public void mo35Y0(int i, float f, C3950k kVar) {
     }
 
-    public void m34197Y1(int i) {
-        int N0 = m34224N0(i);
+    public void m34200Y1(int i) {
+        int N0 = m34227N0(i);
         if (N0 != -1) {
-            m34194Z1(N0);
+            m34197Z1(N0);
         }
     }
 
-    public void m34196Y2() {
+    public void m34199Y2() {
         int i = 0;
         for (C2964ra raVar : this.f8695Q) {
-            int A = raVar.m32876A();
+            int A = raVar.m32879A();
             if (A == 16 || A == 76) {
-                m34160j3(i);
+                m34163j3(i);
             }
             i++;
         }
     }
 
-    public boolean m34195Z0() {
+    public boolean m34198Z0() {
         return this.f8708d0;
     }
 
-    public void m34194Z1(int i) {
+    public void m34197Z1(int i) {
         if (i != -1) {
             for (RecyclerView recyclerView : this.f8693O) {
-                View C = recyclerView.getLayoutManager().mo39262C(i);
+                View C = recyclerView.getLayoutManager().mo39265C(i);
                 if (C != null && (C instanceof RecyclerView)) {
-                    ((LinearLayoutManager) ((RecyclerView) C).getLayoutManager()).m39522z2(0, 0);
+                    ((LinearLayoutManager) ((RecyclerView) C).getLayoutManager()).m39525z2(0, 0);
                 }
             }
         }
     }
 
-    public void m34193Z2() {
+    public void m34196Z2() {
         if (!this.f8695Q.isEmpty()) {
             int i = 0;
             for (C2964ra raVar : this.f8695Q) {
-                if (C2139ap.m35481U(raVar.m32876A())) {
-                    m34124u3(i);
+                if (C2139ap.m35484U(raVar.m32879A())) {
+                    m34127u3(i);
                 }
                 i++;
             }
         }
     }
 
-    public void m34190a2(C2964ra raVar, TextView textView, boolean z) {
-        textView.setText(raVar.m32824u());
+    public void m34193a2(C2964ra raVar, TextView textView, boolean z) {
+        textView.setText(raVar.m32827u());
     }
 
-    public void m34189a3(AbstractC5912d<C2964ra> dVar) {
+    public void m34192a3(AbstractC5912d<C2964ra> dVar) {
         int i = 0;
         for (C2964ra raVar : this.f8695Q) {
             if (dVar.mo1511a(raVar)) {
-                m34124u3(i);
+                m34127u3(i);
             }
             i++;
         }
@@ -1029,21 +1029,21 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         }
     }
 
-    public void m34187b2(C2964ra raVar, C7065x2 x2Var, boolean z) {
-        String upperCase = raVar.m32824u() != null ? raVar.m32824u().toString().toUpperCase() : null;
+    public void m34190b2(C2964ra raVar, C7065x2 x2Var, boolean z) {
+        String upperCase = raVar.m32827u() != null ? raVar.m32827u().toString().toUpperCase() : null;
         if (z) {
             x2Var.m17929a(upperCase);
         } else {
-            C1399s0.m37175j0(x2Var, upperCase);
+            C1399s0.m37178j0(x2Var, upperCase);
         }
     }
 
-    public void m34186b3(int i) {
+    public void m34189b3(int i) {
         int i2 = -1;
         while (true) {
-            i2 = m34221O0(i, i2 + 1);
+            i2 = m34224O0(i, i2 + 1);
             if (i2 != -1) {
-                m34124u3(i2);
+                m34127u3(i2);
             } else {
                 return;
             }
@@ -1053,31 +1053,31 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
     public void mo9531c2(C2964ra raVar, int i, C6981o oVar) {
     }
 
-    public void m34183c3(int i, boolean z) {
-        int N0 = m34224N0(i);
+    public void m34186c3(int i, boolean z) {
+        int N0 = m34227N0(i);
         if (N0 != -1) {
-            m34175f2(N0, z);
+            m34178f2(N0, z);
         }
     }
 
     public void mo505d2(C2964ra raVar, C7093z3 z3Var) {
     }
 
-    public void m34180d3(String str, boolean z) {
-        int S0 = m34213S0(str);
+    public void m34183d3(String str, boolean z) {
+        int S0 = m34216S0(str);
         if (S0 != -1) {
-            m34175f2(S0, z);
+            m34178f2(S0, z);
         }
     }
 
     public void mo502e2(C2964ra raVar, int i, C9621o oVar) {
     }
 
-    public void m34178e3(int i, boolean z, boolean z2) {
-        int N0 = m34224N0(i);
+    public void m34181e3(int i, boolean z, boolean z2) {
+        int N0 = m34227N0(i);
         if (N0 != -1) {
             for (RecyclerView recyclerView : this.f8693O) {
-                View C = recyclerView.getLayoutManager().mo39262C(N0);
+                View C = recyclerView.getLayoutManager().mo39265C(N0);
                 if (C != null) {
                     View$OnFocusChangeListenerC7069y1 y1Var = (View$OnFocusChangeListenerC7069y1) ((ViewGroup) C).getChildAt(0);
                     y1Var.setInGoodState(z);
@@ -1087,16 +1087,16 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         }
     }
 
-    public final void m34175f2(int i, boolean z) {
+    public final void m34178f2(int i, boolean z) {
         int A;
-        this.f8695Q.get(i).m32858S(z);
+        this.f8695Q.get(i).m32861S(z);
         boolean z2 = false;
         for (RecyclerView recyclerView : this.f8693O) {
-            View C = recyclerView.getLayoutManager().mo39262C(i);
+            View C = recyclerView.getLayoutManager().mo39265C(i);
             if (C != null) {
                 if (C instanceof C9137c) {
                     C9137c cVar = (C9137c) C;
-                    if (cVar.getChildCount() > 0 && C.getId() == this.f8695Q.get(i).m32835j()) {
+                    if (cVar.getChildCount() > 0 && C.getId() == this.f8695Q.get(i).m32838j()) {
                         View childAt = cVar.getChildAt(0);
                         if (childAt instanceof C7057w) {
                             ((C7057w) childAt).m17933e(z, true);
@@ -1107,39 +1107,39 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                 }
                 if (C instanceof FrameLayoutFix) {
                     FrameLayoutFix frameLayoutFix = (FrameLayoutFix) C;
-                    if (frameLayoutFix.getChildCount() == 2 && C.getId() == this.f8695Q.get(i).m32835j() && ((A = this.f8695Q.get(i).m32876A()) == 80 || A == 88)) {
+                    if (frameLayoutFix.getChildCount() == 2 && C.getId() == this.f8695Q.get(i).m32838j() && ((A = this.f8695Q.get(i).m32879A()) == 80 || A == 88)) {
                         View childAt2 = frameLayoutFix.getChildAt(1);
                         if (childAt2 instanceof C9139d) {
                             C9139d dVar = (C9139d) childAt2;
-                            dVar.m10186r(z, true);
-                            dVar.m10191m(true);
+                            dVar.m10185r(z, true);
+                            dVar.m10190m(true);
                         }
                     }
                 }
-                if ((C instanceof C9256o0) && this.f8695Q.get(i).m32876A() == 81) {
-                    ((C9256o0) C).m9787c1(z, true);
+                if ((C instanceof C9256o0) && this.f8695Q.get(i).m32879A() == 81) {
+                    ((C9256o0) C).m9786c1(z, true);
                 }
             }
             z2 = true;
         }
         if (z2) {
-            m39312I(i);
+            m39315I(i);
         }
     }
 
-    public void m34135r1(final int i) {
+    public void m34138r1(final int i) {
         if (i == -1) {
             return;
         }
-        if (m34200X0()) {
-            C1379j0.m37334d0(new Runnable() {
+        if (m34203X0()) {
+            C1379j0.m37337d0(new Runnable() {
                 @Override
                 public final void run() {
-                    C2546iq.this.m34135r1(i);
+                    C2546iq.this.m34138r1(i);
                 }
             });
         } else {
-            m39312I(i);
+            m39315I(i);
         }
     }
 
@@ -1158,45 +1158,45 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
     public void mo452g2() {
         for (RecyclerView recyclerView : this.f8693O) {
             LinearLayoutManager linearLayoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
-            int X1 = linearLayoutManager.m39549X1();
-            int a2 = linearLayoutManager.m39546a2();
+            int X1 = linearLayoutManager.m39552X1();
+            int a2 = linearLayoutManager.m39549a2();
             for (int i = X1; i <= a2; i++) {
-                View C = linearLayoutManager.mo39262C(i);
+                View C = linearLayoutManager.mo39265C(i);
                 if (C != null) {
                     C.invalidate();
                 }
             }
             if (X1 > 0) {
-                m39309L(0, X1);
+                m39312L(0, X1);
             }
             if (a2 < mo6153D() - 1) {
-                m39309L(a2, mo6153D() - a2);
+                m39312L(a2, mo6153D() - a2);
             }
         }
     }
 
-    public void m34171g3(int i) {
-        m34135r1(m34224N0(i));
+    public void m34174g3(int i) {
+        m34138r1(m34227N0(i));
     }
 
     @Override
     public final void mo18388h(C6942k3 k3Var, int i) {
-        m34217Q1(k3Var.getId(), i);
+        m34220Q1(k3Var.getId(), i);
         C2964ra raVar = (C2964ra) k3Var.getTag();
-        int s = raVar.m32826s();
-        raVar.m32855V(i);
-        mo31467J1(raVar, k3Var, i, s);
+        int s = raVar.m32829s();
+        raVar.m32858V(i);
+        mo31469J1(raVar, k3Var, i, s);
     }
 
-    public void m34168h2(C4336c.AbstractC4337a aVar) {
+    public void m34171h2(C4336c.AbstractC4337a aVar) {
         this.f8703Y = aVar;
     }
 
-    public void m34167h3(int i, String str) {
-        int N0 = m34224N0(i);
+    public void m34170h3(int i, String str) {
+        int N0 = m34227N0(i);
         if (N0 != -1) {
             for (RecyclerView recyclerView : this.f8693O) {
-                View C = recyclerView.getLayoutManager().mo39262C(N0);
+                View C = recyclerView.getLayoutManager().mo39265C(N0);
                 if (C != null) {
                     ((View$OnFocusChangeListenerC7069y1) ((ViewGroup) C).getChildAt(0)).setBlockedText(str);
                 }
@@ -1210,33 +1210,33 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         String charSequence2 = charSequence.toString();
         int id2 = ((ViewGroup) y1Var.getParent()).getId();
         C2964ra raVar = (y1Var.getParent() == null || !(((ViewGroup) y1Var.getParent()).getTag() instanceof C2964ra)) ? null : (C2964ra) ((ViewGroup) y1Var.getParent()).getTag();
-        if (raVar == null && (N0 = m34224N0(id2)) != -1) {
+        if (raVar == null && (N0 = m34227N0(id2)) != -1) {
             raVar = this.f8695Q.get(N0);
         }
         boolean z = true;
         if (raVar != null) {
-            if (!C5070i.m24067c(raVar.m32821x(), charSequence2)) {
-                raVar.m32847b0(charSequence2);
+            if (!C5070i.m24068c(raVar.m32824x(), charSequence2)) {
+                raVar.m32850b0(charSequence2);
             } else {
                 z = false;
             }
         }
         if (z && (eVar = this.f8699U) != null) {
-            eVar.mo30698K(id2, raVar, y1Var, charSequence2);
+            eVar.mo30700K(id2, raVar, y1Var, charSequence2);
         }
     }
 
-    public void m34164i3(long j) {
-        int R0 = m34215R0(j);
+    public void m34167i3(long j) {
+        int R0 = m34218R0(j);
         if (R0 != -1) {
-            m34160j3(R0);
+            m34163j3(R0);
         }
     }
 
-    public void mo11045j(C8872e eVar, float f, float f2, boolean z) {
+    public void mo11044j(C8872e eVar, float f, float f2, boolean z) {
     }
 
-    public final void m34161j2(C2964ra raVar, int i, ViewGroup viewGroup, View view) {
+    public final void m34164j2(C2964ra raVar, int i, ViewGroup viewGroup, View view) {
         ViewGroup viewGroup2 = (ViewGroup) viewGroup.getChildAt(4);
         View$OnFocusChangeListenerC7069y1 y1Var = (View$OnFocusChangeListenerC7069y1) viewGroup2.getChildAt(3);
         View$OnFocusChangeListenerC7069y1 y1Var2 = (View$OnFocusChangeListenerC7069y1) viewGroup.getChildAt(5);
@@ -1247,106 +1247,106 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         ViewGroup viewGroup5 = (ViewGroup) viewGroup.getChildAt(8);
         C6853c2 c2Var2 = (C6853c2) viewGroup5.getChildAt(1);
         C6853c2 c2Var3 = (C6853c2) viewGroup5.getChildAt(2);
-        mo34157k2(raVar, i, viewGroup, view, (C8872e) viewGroup.getChildAt(0), (C8426a) viewGroup.getChildAt(1), (C8426a) viewGroup.getChildAt(2), (View$OnFocusChangeListenerC7069y1) viewGroup.getChildAt(3), (View$OnFocusChangeListenerC7069y1) viewGroup2.getChildAt(0), (View$OnFocusChangeListenerC7069y1) viewGroup2.getChildAt(1), (View$OnFocusChangeListenerC7069y1) viewGroup2.getChildAt(2), y1Var, y1Var2, (View$OnFocusChangeListenerC7069y1) viewGroup3.getChildAt(0), (View$OnFocusChangeListenerC7069y1) viewGroup3.getChildAt(1), (View$OnFocusChangeListenerC7069y1) viewGroup3.getChildAt(2), y1Var3, (C6853c2) viewGroup5.getChildAt(3), (C6853c2) viewGroup4.getChildAt(0), c2Var, (C6853c2) viewGroup5.getChildAt(0), c2Var2, c2Var3, (C6853c2) viewGroup5.getChildAt(4));
+        mo34160k2(raVar, i, viewGroup, view, (C8872e) viewGroup.getChildAt(0), (C8426a) viewGroup.getChildAt(1), (C8426a) viewGroup.getChildAt(2), (View$OnFocusChangeListenerC7069y1) viewGroup.getChildAt(3), (View$OnFocusChangeListenerC7069y1) viewGroup2.getChildAt(0), (View$OnFocusChangeListenerC7069y1) viewGroup2.getChildAt(1), (View$OnFocusChangeListenerC7069y1) viewGroup2.getChildAt(2), y1Var, y1Var2, (View$OnFocusChangeListenerC7069y1) viewGroup3.getChildAt(0), (View$OnFocusChangeListenerC7069y1) viewGroup3.getChildAt(1), (View$OnFocusChangeListenerC7069y1) viewGroup3.getChildAt(2), y1Var3, (C6853c2) viewGroup5.getChildAt(3), (C6853c2) viewGroup4.getChildAt(0), c2Var, (C6853c2) viewGroup5.getChildAt(0), c2Var2, c2Var3, (C6853c2) viewGroup5.getChildAt(4));
     }
 
-    public void m34160j3(int i) {
+    public void m34163j3(int i) {
         if (i != -1) {
             boolean z = false;
             for (RecyclerView recyclerView : this.f8693O) {
-                View C = recyclerView.getLayoutManager().mo39262C(i);
+                View C = recyclerView.getLayoutManager().mo39265C(i);
                 if (C == null || C.getTag() != this.f8695Q.get(i) || !(C instanceof RelativeLayout)) {
                     z = true;
                 } else {
-                    m34229K2(this.f8695Q.get(i), i, (RelativeLayout) C, true);
+                    m34232K2(this.f8695Q.get(i), i, (RelativeLayout) C, true);
                 }
             }
             if (z) {
-                m39312I(i);
+                m39315I(i);
             }
         }
     }
 
-    public void mo11044k(C8872e eVar, boolean z) {
-        C8871d.m11054a(this, eVar, z);
+    public void mo11043k(C8872e eVar, boolean z) {
+        C8871d.m11053a(this, eVar, z);
     }
 
-    public void mo34157k2(C2964ra raVar, int i, ViewGroup viewGroup, View view, C8872e eVar, C8426a aVar, C8426a aVar2, View$OnFocusChangeListenerC7069y1 y1Var, View$OnFocusChangeListenerC7069y1 y1Var2, View$OnFocusChangeListenerC7069y1 y1Var3, View$OnFocusChangeListenerC7069y1 y1Var4, View$OnFocusChangeListenerC7069y1 y1Var5, View$OnFocusChangeListenerC7069y1 y1Var6, View$OnFocusChangeListenerC7069y1 y1Var7, View$OnFocusChangeListenerC7069y1 y1Var8, View$OnFocusChangeListenerC7069y1 y1Var9, View$OnFocusChangeListenerC7069y1 y1Var10, C6853c2 c2Var, C6853c2 c2Var2, C6853c2 c2Var3, C6853c2 c2Var4, C6853c2 c2Var5, C6853c2 c2Var6, C6853c2 c2Var7) {
+    public void mo34160k2(C2964ra raVar, int i, ViewGroup viewGroup, View view, C8872e eVar, C8426a aVar, C8426a aVar2, View$OnFocusChangeListenerC7069y1 y1Var, View$OnFocusChangeListenerC7069y1 y1Var2, View$OnFocusChangeListenerC7069y1 y1Var3, View$OnFocusChangeListenerC7069y1 y1Var4, View$OnFocusChangeListenerC7069y1 y1Var5, View$OnFocusChangeListenerC7069y1 y1Var6, View$OnFocusChangeListenerC7069y1 y1Var7, View$OnFocusChangeListenerC7069y1 y1Var8, View$OnFocusChangeListenerC7069y1 y1Var9, View$OnFocusChangeListenerC7069y1 y1Var10, C6853c2 c2Var, C6853c2 c2Var2, C6853c2 c2Var3, C6853c2 c2Var4, C6853c2 c2Var5, C6853c2 c2Var6, C6853c2 c2Var7) {
     }
 
-    public void m34156k3(int i) {
-        int N0 = m34224N0(i);
+    public void m34159k3(int i) {
+        int N0 = m34227N0(i);
         if (N0 != -1) {
-            m34152l3(N0);
+            m34155l3(N0);
         }
     }
 
-    public void mo18765l(C6853c2 c2Var, boolean z) {
+    public void mo18766l(C6853c2 c2Var, boolean z) {
     }
 
-    public void mo34153l2(C2964ra raVar, C2139ap apVar, int i) {
+    public void mo34156l2(C2964ra raVar, C2139ap apVar, int i) {
     }
 
-    public void m34152l3(int i) {
+    public void m34155l3(int i) {
         RecyclerView.AbstractC0886d0 l0;
         if (i != -1) {
             boolean z = false;
             for (RecyclerView recyclerView : this.f8693O) {
-                View C = recyclerView.getLayoutManager().mo39262C(i);
-                if (C == null || (l0 = recyclerView.m39418l0(C)) == null || !(l0 instanceof C2139ap)) {
+                View C = recyclerView.getLayoutManager().mo39265C(i);
+                if (C == null || (l0 = recyclerView.m39421l0(C)) == null || !(l0 instanceof C2139ap)) {
                     z = true;
                 } else {
                     mo6146Q((C2139ap) l0, i);
                 }
             }
             if (z) {
-                m39312I(i);
+                m39315I(i);
             }
         }
     }
 
-    public void mo23799m(View view, float f, boolean z) {
+    public void mo23800m(View view, float f, boolean z) {
     }
 
-    public void mo32877m2(C2964ra raVar, int i, C6992p0 p0Var, boolean z) {
+    public void mo32880m2(C2964ra raVar, int i, C6992p0 p0Var, boolean z) {
     }
 
-    public void m34149m3(long j) {
-        int R0 = m34215R0(j);
+    public void m34152m3(long j) {
+        int R0 = m34218R0(j);
         if (R0 != -1) {
-            m34146n3(R0);
+            m34149n3(R0);
         }
     }
 
     public void mo9112n2(C2964ra raVar, C9256o0 o0Var, C7025s3 s3Var, boolean z) {
     }
 
-    public void m34146n3(int i) {
+    public void m34149n3(int i) {
         boolean z = false;
         for (RecyclerView recyclerView : this.f8693O) {
-            View C = recyclerView.getLayoutManager().mo39262C(i);
+            View C = recyclerView.getLayoutManager().mo39265C(i);
             if (C == null || !(C instanceof C6992p0)) {
                 z = true;
             } else {
-                mo32051P2(this.f8695Q.get(i), i, (C6992p0) C, this.f8695Q.get(i).m32876A() == 26, true);
+                mo32054P2(this.f8695Q.get(i), i, (C6992p0) C, this.f8695Q.get(i).m32879A() == 26, true);
             }
         }
         if (z) {
-            m39312I(i);
+            m39315I(i);
         }
     }
 
-    public void mo23798o(View view, boolean z) {
-        C5149w.m23802a(this, view, z);
+    public void mo23799o(View view, boolean z) {
+        C5149w.m23803a(this, view, z);
     }
 
-    public void mo32962o2(C2964ra raVar, TextView textView) {
+    public void mo32965o2(C2964ra raVar, TextView textView) {
     }
 
-    public int m34143o3(long j, boolean z) {
-        int R0 = m34215R0(j);
+    public int m34146o3(long j, boolean z) {
+        int R0 = m34218R0(j);
         if (R0 != -1) {
-            m34140p3(R0, z);
+            m34143p3(R0, z);
         }
         return R0;
     }
@@ -1359,110 +1359,110 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
     public void mo426p2(C2964ra raVar, int i, EmbeddableStickerView embeddableStickerView, boolean z) {
     }
 
-    public void m34140p3(int i, boolean z) {
+    public void m34143p3(int i, boolean z) {
         if (i != -1) {
             boolean z2 = false;
             for (RecyclerView recyclerView : this.f8693O) {
-                View C = recyclerView.getLayoutManager().mo39262C(i);
+                View C = recyclerView.getLayoutManager().mo39265C(i);
                 if (C == null || !(C instanceof C4022o)) {
                     z2 = true;
                 } else {
                     if (z) {
-                        ((C4022o) C).m29276c1();
+                        ((C4022o) C).m29278c1();
                     } else {
-                        ((C4022o) C).m29279Q0();
+                        ((C4022o) C).m29281Q0();
                     }
                     C.invalidate();
                 }
             }
             if (z2) {
-                m39312I(i);
+                m39315I(i);
             }
         }
     }
 
-    public void mo33213q2(C2964ra raVar, TextView textView, boolean z) {
-        C1399s0.m37175j0(textView, raVar.m32824u());
+    public void mo33216q2(C2964ra raVar, TextView textView, boolean z) {
+        C1399s0.m37178j0(textView, raVar.m32827u());
     }
 
-    public void m34137q3(C2964ra raVar) {
-        int H0 = m34235H0(raVar);
+    public void m34140q3(C2964ra raVar) {
+        int H0 = m34238H0(raVar);
         if (H0 != -1) {
-            m34124u3(H0);
+            m34127u3(H0);
         }
     }
 
     @Override
-    public int mo11422r(int i) {
+    public int mo11421r(int i) {
         if (this.f8695Q.isEmpty()) {
-            return C2139ap.m35479W(mo6150F(i));
+            return C2139ap.m35482W(mo6150F(i));
         }
         int size = this.f8695Q.size();
         int i2 = 0;
         for (int i3 = 0; i3 < i && i3 < size; i3++) {
-            i2 += C2139ap.m35478X(this.f8695Q.get(i3));
+            i2 += C2139ap.m35481X(this.f8695Q.get(i3));
         }
         return i2;
     }
 
-    public void m34134r2(AbstractC5109d0 d0Var) {
+    public void m34137r2(AbstractC5109d0 d0Var) {
         this.f8705a0 = d0Var;
     }
 
-    public void m34133r3(Object obj) {
-        int L0 = m34228L0(obj);
+    public void m34136r3(Object obj) {
+        int L0 = m34231L0(obj);
         if (L0 != -1) {
-            m34124u3(L0);
+            m34127u3(L0);
         }
     }
 
-    public void m34132s0(RecyclerView recyclerView, View view, int i) {
-        recyclerView.m39422k(new C2547a(i, view));
+    public void m34135s0(RecyclerView recyclerView, View view, int i) {
+        recyclerView.m39425k(new C2547a(i, view));
     }
 
-    public void mo33136s1(C2964ra raVar, C6952l3 l3Var, C7057w wVar, boolean z) {
+    public void mo33139s1(C2964ra raVar, C6952l3 l3Var, C7057w wVar, boolean z) {
     }
 
-    public void m34131s2(boolean z, boolean z2, C3950k.AbstractC3952b bVar) {
+    public void m34134s2(boolean z, boolean z2, C3950k.AbstractC3952b bVar) {
         if (this.f8708d0 != z) {
             this.f8708d0 = z;
             this.f8713i0 = z2;
             this.f8714j0 = bVar;
-            m34121w0(z ? 1.0f : 0.0f);
+            m34124w0(z ? 1.0f : 0.0f);
         }
     }
 
-    public void m34130s3(int i) {
-        int N0 = m34224N0(i);
+    public void m34133s3(int i) {
+        int N0 = m34227N0(i);
         if (N0 != -1) {
-            m34124u3(N0);
+            m34127u3(N0);
         }
     }
 
-    public void m34129t0(int i, C2964ra raVar) {
-        m34188b1(i, raVar);
+    public void m34132t0(int i, C2964ra raVar) {
+        m34191b1(i, raVar);
     }
 
-    public void mo34128t1(C2139ap apVar, int i, C2964ra raVar, int i2, View view, boolean z) {
+    public void mo34131t1(C2139ap apVar, int i, C2964ra raVar, int i2, View view, boolean z) {
     }
 
     public void mo393t2(C2964ra raVar, int i, C7030t1 t1Var) {
     }
 
-    public void m34127t3(long j) {
-        int R0 = m34215R0(j);
+    public void m34130t3(long j) {
+        int R0 = m34218R0(j);
         if (R0 != -1) {
-            m34124u3(R0);
+            m34127u3(R0);
         }
     }
 
-    public void m34188b1(final int i, final C2964ra... raVarArr) {
+    public void m34191b1(final int i, final C2964ra... raVarArr) {
         boolean z;
-        if (m34200X0()) {
-            C1379j0.m37334d0(new Runnable() {
+        if (m34203X0()) {
+            C1379j0.m37337d0(new Runnable() {
                 @Override
                 public final void run() {
-                    C2546iq.this.m34188b1(i, raVarArr);
+                    C2546iq.this.m34191b1(i, raVarArr);
                 }
             });
         } else if (raVarArr.length > 0) {
@@ -1472,7 +1472,7 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                 if (i2 >= length) {
                     z = false;
                     break;
-                } else if (m34191a1(raVarArr[i2].m32876A())) {
+                } else if (m34194a1(raVarArr[i2].m32879A())) {
                     z = true;
                     break;
                 } else {
@@ -1481,57 +1481,57 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
             }
             if (raVarArr.length == 1) {
                 this.f8695Q.add(i, raVarArr[0]);
-                m39311J(i);
+                m39314J(i);
             } else {
                 this.f8695Q.addAll(i, Arrays.asList(raVarArr));
-                m39308M(i, raVarArr.length);
+                m39311M(i, raVarArr.length);
             }
             if (z) {
-                m34199X1();
+                m34202X1();
             }
         }
     }
 
-    public void mo33135u1(C2964ra raVar, TextView textView) {
+    public void mo33138u1(C2964ra raVar, TextView textView) {
     }
 
-    public void m34125u2(int i, int i2) {
+    public void m34128u2(int i, int i2) {
         int i3;
         SparseIntArray sparseIntArray = this.f8715k0;
         if (sparseIntArray != null && (i3 = sparseIntArray.get(i)) != i2) {
             this.f8715k0.put(i, i2);
-            m34183c3(i3, false);
-            m34183c3(i2, true);
+            m34186c3(i3, false);
+            m34186c3(i2, true);
         }
     }
 
-    public void m34124u3(int i) {
+    public void m34127u3(int i) {
         boolean z;
-        C2964ra E0 = m34243E0(i);
+        C2964ra E0 = m34246E0(i);
         if (E0 != null) {
             boolean z2 = false;
             for (RecyclerView recyclerView : this.f8693O) {
-                View C = recyclerView.getLayoutManager().mo39262C(i);
-                if (C == null || C.getId() != E0.m32835j()) {
+                View C = recyclerView.getLayoutManager().mo39265C(i);
+                if (C == null || C.getId() != E0.m32838j()) {
                     z2 = true;
                 } else if (C instanceof C9137c) {
                     mo394V2(E0, (C9137c) C, true);
                 } else {
-                    int A = E0.m32876A();
+                    int A = E0.m32879A();
                     if (A == 10) {
                         z = C instanceof TextView;
                         if (z) {
-                            m34190a2(E0, (TextView) C, true);
+                            m34193a2(E0, (TextView) C, true);
                         }
                     } else if (A == 20) {
                         z = (C instanceof ViewGroup) && (((ViewGroup) C).getChildAt(0) instanceof C7065x2);
                         if (z) {
-                            m34187b2(E0, (C7065x2) ((ViewGroup) C).getChildAt(0), true);
+                            m34190b2(E0, (C7065x2) ((ViewGroup) C).getChildAt(0), true);
                         }
                     } else if (A != 79) {
                         switch (A) {
                             case 81:
-                                z = (C instanceof C9256o0) && ((C9256o0) C).m9793J0();
+                                z = (C instanceof C9256o0) && ((C9256o0) C).m9792J0();
                                 if (z) {
                                     mo9112n2(E0, (C9256o0) C, null, true);
                                     break;
@@ -1541,7 +1541,7 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                             case 83:
                                 z = C instanceof C8795k2;
                                 if (z) {
-                                    mo11660G2(E0, i, (C8795k2) C, true);
+                                    mo11659G2(E0, i, (C8795k2) C, true);
                                     break;
                                 }
                                 break;
@@ -1550,30 +1550,30 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                                 break;
                         }
                     } else {
-                        z = (C instanceof C9256o0) && !((C9256o0) C).m9793J0();
+                        z = (C instanceof C9256o0) && !((C9256o0) C).m9792J0();
                         if (z) {
                             mo9112n2(E0, (C9256o0) C, null, true);
                         }
                     }
                     if (!z) {
-                        C2139ap apVar = (C2139ap) recyclerView.m39418l0(C);
-                        int k = apVar != null ? apVar.m39335k() : -1;
+                        C2139ap apVar = (C2139ap) recyclerView.m39421l0(C);
+                        int k = apVar != null ? apVar.m39338k() : -1;
                         if (k != -1) {
                             mo6146Q(apVar, k);
                         } else {
-                            m39312I(i);
+                            m39315I(i);
                         }
                     }
                 }
             }
             if (z2) {
-                m39312I(i);
+                m39315I(i);
             }
         }
     }
 
     @Override
-    public int mo11421v(int i) {
+    public int mo11420v(int i) {
         int i2;
         int D = mo6153D();
         int size = this.f8695Q.size();
@@ -1581,13 +1581,13 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         if (size == 0) {
             i2 = 0;
             while (i3 < D) {
-                i2 += C2139ap.m35479W(mo6150F(i3));
+                i2 += C2139ap.m35482W(mo6150F(i3));
                 i3++;
             }
         } else {
             int i4 = 0;
             while (i3 < D && i3 < size) {
-                i4 += C2139ap.m35478X(this.f8695Q.get(i3));
+                i4 += C2139ap.m35481X(this.f8695Q.get(i3));
                 i3++;
             }
             i2 = i4;
@@ -1595,13 +1595,13 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         return i < 0 ? i2 : Math.min(i, i2);
     }
 
-    public void mo30690v1(C2964ra raVar, ViewGroup viewGroup, View$OnFocusChangeListenerC7069y1 y1Var) {
+    public void mo30692v1(C2964ra raVar, ViewGroup viewGroup, View$OnFocusChangeListenerC7069y1 y1Var) {
     }
 
-    public void m34123v2(int i, boolean z, int i2) {
+    public void m34126v2(int i, boolean z, int i2) {
         boolean z2 = false;
         for (RecyclerView recyclerView : this.f8693O) {
-            View C = recyclerView.getLayoutManager().mo39262C(i);
+            View C = recyclerView.getLayoutManager().mo39265C(i);
             if (C == null || !(C instanceof AbstractC5124k0)) {
                 z2 = true;
             } else {
@@ -1609,14 +1609,14 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
             }
         }
         if (z2) {
-            m39312I(i);
+            m39315I(i);
         }
     }
 
-    public void mo34122v3(C2139ap apVar, int i, int i2) {
+    public void mo34125v3(C2139ap apVar, int i, int i2) {
         if (i < this.f8695Q.size()) {
             C2964ra raVar = this.f8695Q.get(i);
-            apVar.f3479a.setId(raVar.m32835j());
+            apVar.f3479a.setId(raVar.m32838j());
             apVar.f3479a.setTag(raVar);
             int i3 = R.id.theme_color_background_textLight;
             AbstractC2420g6.C2421a aVar = null;
@@ -1624,12 +1624,12 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
             boolean z = true;
             switch (i2) {
                 case 1:
-                    mo34062J2(raVar, i, (C6862d3) apVar.f3479a);
+                    mo34065J2(raVar, i, (C6862d3) apVar.f3479a);
                     return;
                 case 2:
                 case 3:
-                    mo31466M2(raVar, (C6879f3) apVar.f3479a);
-                    int y = raVar.m32820y(0);
+                    mo31468M2(raVar, (C6879f3) apVar.f3479a);
+                    int y = raVar.m32823y(0);
                     if (y != 0) {
                         apVar.f3479a.setBackgroundColor(C11524j.m228N(y));
                         return;
@@ -1644,22 +1644,22 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                 case 85:
                 case 98:
                 case 99:
-                    ((C9137c) apVar.f3479a).setIcon(raVar.m32836i());
-                    ((C9137c) apVar.f3479a).setName(raVar.m32824u());
+                    ((C9137c) apVar.f3479a).setIcon(raVar.m32839i());
+                    ((C9137c) apVar.f3479a).setName(raVar.m32827u());
                     ((C9137c) apVar.f3479a).setIgnoreEnabled(false);
-                    ((C9137c) apVar.f3479a).setTextColorId(raVar.m32820y(R.id.theme_color_text));
+                    ((C9137c) apVar.f3479a).setTextColorId(raVar.m32823y(R.id.theme_color_text));
                     apVar.f3479a.setEnabled(true);
                     mo394V2(raVar, (C9137c) apVar.f3479a, false);
                     if (i2 == 69 || i2 == 85) {
                         C6857d dVar = (C6857d) ((C9137c) apVar.f3479a).getChildAt(1);
-                        if (raVar.m32844d() instanceof C11131y6) {
-                            dVar.setUser((C11131y6) raVar.m32844d());
+                        if (raVar.m32847d() instanceof C11131y6) {
+                            dVar.setUser((C11131y6) raVar.m32847d());
                         } else {
                             C10930q6 q6Var = this.f8692N;
-                            if (raVar.m32844d() instanceof C10930q6) {
-                                q6Var = (C10930q6) raVar.m32844d();
+                            if (raVar.m32847d() instanceof C10930q6) {
+                                q6Var = (C10930q6) raVar.m32847d();
                             }
-                            dVar.m18745q(q6Var, raVar.m32831n(), false);
+                            dVar.m18746q(q6Var, raVar.m32834n(), false);
                         }
                     }
                     if (i2 != 12) {
@@ -1672,18 +1672,18 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                                 }
                             }
                         }
-                        C6985o2 O1 = ((C9137c) apVar.f3479a).m10216O1();
-                        O1.m18178c(raVar.m32873D(), false);
-                        O1.setColorId(raVar.m32828q());
-                        C1399s0.m37189c0(O1, (C4403w.m27984G2() ? 3 : 5) | 16);
+                        C6985o2 O1 = ((C9137c) apVar.f3479a).m10215O1();
+                        O1.m18178c(raVar.m32876D(), false);
+                        O1.setColorId(raVar.m32831q());
+                        C1399s0.m37192c0(O1, (C4403w.m27986G2() ? 3 : 5) | 16);
                         return;
                     }
                     C7057w wVar = (C7057w) ((C9137c) apVar.f3479a).getChildAt(0);
-                    wVar.m17933e(raVar.m32873D(), false);
+                    wVar.m17933e(raVar.m32876D(), false);
                     if (i2 != 77) {
                         z = false;
                     }
-                    C1399s0.m37189c0(wVar, (z != C4403w.m27984G2() ? 3 : 5) | 16);
+                    C1399s0.m37192c0(wVar, (z != C4403w.m27986G2() ? 3 : 5) | 16);
                     return;
                 case 5:
                 case 6:
@@ -1694,19 +1694,19 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                 case 91:
                 case 92:
                     C9137c cVar = (C9137c) apVar.f3479a;
-                    cVar.setIcon(raVar.m32836i());
-                    cVar.setName(raVar.m32824u());
-                    cVar.setTextColorId(raVar.m32820y(0));
+                    cVar.setIcon(raVar.m32839i());
+                    cVar.setName(raVar.m32827u());
+                    cVar.setTextColorId(raVar.m32823y(0));
                     apVar.f3479a.setEnabled(true);
                     switch (i2) {
                         case 90:
-                            C1399s0.m37189c0(((ViewGroup) apVar.f3479a).getChildAt(0), (C4403w.m27984G2() ? 5 : 3) | 16);
+                            C1399s0.m37192c0(((ViewGroup) apVar.f3479a).getChildAt(0), (C4403w.m27986G2() ? 5 : 3) | 16);
                             break;
                         case 91:
-                            C1399s0.m37189c0(((ViewGroup) apVar.f3479a).getChildAt(0), (C4403w.m27984G2() ? 3 : 5) | 16);
+                            C1399s0.m37192c0(((ViewGroup) apVar.f3479a).getChildAt(0), (C4403w.m27986G2() ? 3 : 5) | 16);
                             break;
                         case 92:
-                            ((C9137c) apVar.f3479a).m10220J1(true);
+                            ((C9137c) apVar.f3479a).m10219J1(true);
                             break;
                     }
                     mo394V2(raVar, cVar, false);
@@ -1714,8 +1714,8 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                 case 7:
                 case 67:
                     C9137c cVar2 = (C9137c) apVar.f3479a;
-                    cVar2.setName(raVar.m32824u());
-                    cVar2.getToggler().m10191m(true);
+                    cVar2.setName(raVar.m32827u());
+                    cVar2.getToggler().m10190m(true);
                     apVar.f3479a.setEnabled(true);
                     mo394V2(raVar, (C9137c) apVar.f3479a, false);
                     return;
@@ -1723,9 +1723,9 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                 case 70:
                 case 110:
                     TextView textView = (TextView) apVar.f3479a;
-                    mo33213q2(raVar, textView, false);
-                    textView.setTextColor(C11524j.m228N(raVar.m32820y(R.id.theme_color_background_textLight)));
-                    textView.setGravity(C4403w.m27985G1(16));
+                    mo33216q2(raVar, textView, false);
+                    textView.setTextColor(C11524j.m228N(raVar.m32823y(R.id.theme_color_background_textLight)));
+                    textView.setGravity(C4403w.m27987G1(16));
                     return;
                 case 9:
                 case 71:
@@ -1734,20 +1734,20 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                     if (i2 == 71) {
                         i3 = R.id.theme_color_textLight;
                     }
-                    textView2.setTextColor(C11524j.m228N(raVar.m32820y(i3)));
-                    int i4 = C1357a0.m37541i(16.0f) + raVar.m32819z();
-                    textView2.setText(raVar.m32824u());
+                    textView2.setTextColor(C11524j.m228N(raVar.m32823y(i3)));
+                    int i4 = C1357a0.m37544i(16.0f) + raVar.m32822z();
+                    textView2.setText(raVar.m32827u());
                     if (apVar.f3479a.getPaddingLeft() != i4) {
                         View view = apVar.f3479a;
                         view.setPadding(i4, view.getPaddingTop(), apVar.f3479a.getPaddingRight(), apVar.f3479a.getPaddingBottom());
                     }
                     if (i2 != 71) {
-                        textView2.setGravity(C4403w.m27985G1(16));
+                        textView2.setGravity(C4403w.m27987G1(16));
                     }
-                    mo33135u1(raVar, textView2);
+                    mo33138u1(raVar, textView2);
                     return;
                 case 10:
-                    m34190a2(raVar, (TextView) apVar.f3479a, false);
+                    m34193a2(raVar, (TextView) apVar.f3479a, false);
                     return;
                 case 11:
                 case 14:
@@ -1782,34 +1782,34 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                 case 129:
                 default:
                     if (i2 <= -1) {
-                        mo34128t1(apVar, i, raVar, (-1) - i2, apVar.f3479a, false);
+                        mo34131t1(apVar, i, raVar, (-1) - i2, apVar.f3479a, false);
                         return;
                     }
                     return;
                 case 16:
                 case 76:
-                    m34229K2(raVar, i, (RelativeLayout) apVar.f3479a, false);
+                    m34232K2(raVar, i, (RelativeLayout) apVar.f3479a, false);
                     return;
                 case 19:
                 case 75:
                     ViewGroup viewGroup = (ViewGroup) ((ViewGroup) apVar.f3479a).getChildAt(0);
                     if (i2 == 19) {
-                        ((ImageView) viewGroup.getChildAt(0)).setImageResource(raVar.m32836i());
+                        ((ImageView) viewGroup.getChildAt(0)).setImageResource(raVar.m32839i());
                     }
-                    ((TextView) viewGroup.getChildAt(1)).setText(raVar.m32824u());
+                    ((TextView) viewGroup.getChildAt(1)).setText(raVar.m32827u());
                     return;
                 case 20:
-                    m34187b2(raVar, (C7065x2) ((ViewGroup) apVar.f3479a).getChildAt(0), false);
+                    m34190b2(raVar, (C7065x2) ((ViewGroup) apVar.f3479a).getChildAt(0), false);
                     return;
                 case 21:
-                    mo32962o2(raVar, (TextView) ((RelativeLayout) ((FrameLayoutFix) apVar.f3479a).getChildAt(0)).getChildAt(2));
+                    mo32965o2(raVar, (TextView) ((RelativeLayout) ((FrameLayoutFix) apVar.f3479a).getChildAt(0)).getChildAt(2));
                     return;
                 case 22:
                     apVar.f3479a.setEnabled(true);
                     C6873e3 e3Var = (C6873e3) apVar.f3479a;
-                    e3Var.setTitle(raVar.m32824u());
+                    e3Var.setTitle(raVar.m32827u());
                     e3Var.mo8255s();
-                    m34216Q2(raVar, e3Var, false);
+                    m34219Q2(raVar, e3Var, false);
                     return;
                 case 23:
                 case 26:
@@ -1818,26 +1818,26 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                     if (i2 != 26) {
                         z = false;
                     }
-                    mo32051P2(raVar, i, p0Var, z, false);
+                    mo32054P2(raVar, i, p0Var, z, false);
                     return;
                 case C3563j.f11955K3:
-                    ((TextView) apVar.f3479a).setText(raVar.m32824u());
-                    ((TextView) apVar.f3479a).setTextColor(C11524j.m228N(raVar.m32820y(R.id.theme_color_background_textLight)));
+                    ((TextView) apVar.f3479a).setText(raVar.m32827u());
+                    ((TextView) apVar.f3479a).setTextColor(C11524j.m228N(raVar.m32823y(R.id.theme_color_background_textLight)));
                     return;
                 case 27:
                     mo395U2(raVar, i, (C4022o) apVar.f3479a, false);
                     return;
                 case 28:
-                    ((C6973n0) apVar.f3479a).m18246y(raVar.m32824u(), null, false);
+                    ((C6973n0) apVar.f3479a).m18246y(raVar.m32827u(), null, false);
                     return;
                 case C3563j.f11980P3:
-                    if (apVar.f3479a.getMeasuredHeight() != C1357a0.m37544f() / 2) {
+                    if (apVar.f3479a.getMeasuredHeight() != C1357a0.m37547f() / 2) {
                         apVar.f3479a.requestLayout();
                         return;
                     }
                     return;
                 case 30:
-                    mo31465O2(raVar, (C6942k3) apVar.f3479a);
+                    mo31467O2(raVar, (C6942k3) apVar.f3479a);
                     return;
                 case 31:
                 case 34:
@@ -1849,14 +1849,14 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                 case 95:
                 case 96:
                     View$OnFocusChangeListenerC7069y1 y1Var = (View$OnFocusChangeListenerC7069y1) ((ViewGroup) apVar.f3479a).getChildAt(0);
-                    y1Var.m17916S1(C4403w.m27984G2());
-                    y1Var.setHint(raVar.m32824u());
-                    y1Var.setText(raVar.m32821x());
-                    AbstractC2420g6.C2421a p = raVar.m32829p();
+                    y1Var.m17916S1(C4403w.m27986G2());
+                    y1Var.setHint(raVar.m32827u());
+                    y1Var.setText(raVar.m32824x());
+                    AbstractC2420g6.C2421a p = raVar.m32832p();
                     if (p != null) {
-                        y1Var.getEditText().setImeOptions(268435456 | p.m34622a());
+                        y1Var.getEditText().setImeOptions(268435456 | p.m34625a());
                         C7043v1 editText = y1Var.getEditText();
-                        if (p.m34621b()) {
+                        if (p.m34624b()) {
                             aVar = p;
                         }
                         editText.setOnEditorActionListener(aVar);
@@ -1864,77 +1864,77 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                         y1Var.getEditText().setOnEditorActionListener(null);
                         y1Var.getEditText().setImeOptions(268435456);
                     }
-                    if (raVar.m32834k() != null) {
-                        y1Var.getEditText().setFilters(raVar.m32834k());
+                    if (raVar.m32837k() != null) {
+                        y1Var.getEditText().setFilters(raVar.m32837k());
                     }
-                    mo30690v1(raVar, (ViewGroup) apVar.f3479a, y1Var);
+                    mo30692v1(raVar, (ViewGroup) apVar.f3479a, y1Var);
                     return;
                 case Log.TAG_IMAGE_LOADER:
-                    mo34153l2(raVar, apVar, i);
+                    mo34156l2(raVar, apVar, i);
                     return;
                 case 33:
                     ViewGroup viewGroup2 = (ViewGroup) apVar.f3479a;
-                    ((TextView) viewGroup2.getChildAt(0)).setText(raVar.m32824u());
-                    ((TextView) viewGroup2.getChildAt(1)).setText((String) raVar.m32844d());
+                    ((TextView) viewGroup2.getChildAt(0)).setText(raVar.m32827u());
+                    ((TextView) viewGroup2.getChildAt(1)).setText((String) raVar.m32847d());
                     return;
                 case 35:
                     ((C2139ap.C2151l) apVar.f3479a).setItem(raVar);
                     return;
                 case 38:
-                    mo504C2(raVar, i, (RecyclerView) apVar.f3479a);
+                    mo31470C2(raVar, i, (RecyclerView) apVar.f3479a);
                     return;
                 case 39:
                     return;
                 case 40:
                     ((C1355a) apVar.f3479a).setListener(this.f8700V);
-                    ((C1355a) apVar.f3479a).setItem((C8112b) raVar.m32844d());
+                    ((C1355a) apVar.f3479a).setItem((C8112b) raVar.m32847d());
                     C1355a aVar2 = (C1355a) apVar.f3479a;
                     float f = 1.0f;
                     float f2 = this.f8708d0 ? 1.0f : 0.0f;
-                    if (!raVar.m32873D()) {
+                    if (!raVar.m32876D()) {
                         f = 0.0f;
                     }
-                    aVar2.m37563A(f2, f);
+                    aVar2.m37566A(f2, f);
                     return;
                 case 41:
-                    Object d = raVar.m32844d();
+                    Object d = raVar.m32847d();
                     C10185a aVar3 = (C10185a) apVar.f3479a;
                     if (d instanceof AbstractC4718o) {
                         oVar = (AbstractC4718o) d;
                     } else if (d instanceof C4599c1) {
-                        oVar = ((C4599c1) d).m27065Y();
+                        oVar = ((C4599c1) d).m27067Y();
                     }
                     aVar3.setInlineResult(oVar);
-                    ((C10185a) apVar.f3479a).m5807u(raVar.m32873D(), raVar.m32827r());
+                    ((C10185a) apVar.f3479a).m5807u(raVar.m32876D(), raVar.m32830r());
                     return;
                 case 42:
                     mo393t2(raVar, i, (C7030t1) apVar.f3479a);
                     return;
                 case 44:
-                    ((C6852c1) apVar.f3479a).m18776b(raVar.m32833l(), raVar.m32848b(), raVar.m32821x());
+                    ((C6852c1) apVar.f3479a).m18777b(raVar.m32836l(), raVar.m32851b(), raVar.m32824x());
                     return;
                 case 45:
                 case 46:
-                    mo32877m2(raVar, i, (C6992p0) apVar.f3479a, false);
+                    mo32880m2(raVar, i, (C6992p0) apVar.f3479a, false);
                     return;
                 case 48:
                 case 49:
                 case 50:
                 case 51:
                 case 52:
-                    ((C6861d2) apVar.f3479a).setBlock((AbstractC4576a1) raVar.m32844d());
+                    ((C6861d2) apVar.f3479a).setBlock((AbstractC4576a1) raVar.m32847d());
                     return;
                 case 53:
                 case 54:
                 case 55:
                 case 111:
-                    ((RunnableC6868e2) apVar.f3479a).setBlock((AbstractC4576a1) raVar.m32844d());
+                    ((RunnableC6868e2) apVar.f3479a).setBlock((AbstractC4576a1) raVar.m32847d());
                     return;
                 case 57:
                     mo9531c2(raVar, i, (C6981o) apVar.f3479a);
                     return;
                 case 58:
-                    m34203W0(raVar, (CustomRecyclerView) apVar.f3479a);
+                    m34206W0(raVar, (CustomRecyclerView) apVar.f3479a);
                     return;
                 case 59:
                 case 60:
@@ -1942,56 +1942,56 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                     return;
                 case 61:
                     TextView textView3 = (TextView) ((FrameLayoutFix) apVar.f3479a).getChildAt(0);
-                    textView3.setGravity(C4403w.m27985G1(16));
-                    mo33213q2(raVar, textView3, false);
-                    textView3.setTextColor(C11524j.m228N(raVar.m32820y(R.id.theme_color_background_textLight)));
+                    textView3.setGravity(C4403w.m27987G1(16));
+                    mo33216q2(raVar, textView3, false);
+                    textView3.setTextColor(C11524j.m228N(raVar.m32823y(R.id.theme_color_background_textLight)));
                     ImageView imageView = (ImageView) ((FrameLayoutFix) apVar.f3479a).getChildAt(1);
-                    imageView.setId(raVar.m32835j());
-                    imageView.setImageResource(raVar.m32836i());
+                    imageView.setId(raVar.m32838j());
+                    imageView.setImageResource(raVar.m32839i());
                     imageView.setTag(raVar);
-                    C1399s0.m37185e0(imageView, C4403w.m27984G2());
-                    C1399s0.m37187d0((FrameLayout.LayoutParams) imageView.getLayoutParams(), C4403w.m27984G2() ? 3 : 5);
+                    C1399s0.m37188e0(imageView, C4403w.m27986G2());
+                    C1399s0.m37190d0((FrameLayout.LayoutParams) imageView.getLayoutParams(), C4403w.m27986G2() ? 3 : 5);
                     return;
                 case 63:
-                    if (raVar.m32844d() instanceof C4649h) {
-                        ((C6952l3) apVar.f3479a).setChat((C4649h) raVar.m32844d());
+                    if (raVar.m32847d() instanceof C4649h) {
+                        ((C6952l3) apVar.f3479a).setChat((C4649h) raVar.m32847d());
                     }
-                    mo33136s1(raVar, (C6952l3) apVar.f3479a, null, false);
+                    mo33139s1(raVar, (C6952l3) apVar.f3479a, null, false);
                     return;
                 case Log.TAG_SPEED_TEXT:
                     FrameLayoutFix frameLayoutFix = (FrameLayoutFix) apVar.f3479a;
-                    ((C6952l3) frameLayoutFix.getChildAt(0)).setChat((C4649h) raVar.m32844d());
-                    mo33136s1(raVar, (C6952l3) frameLayoutFix.getChildAt(0), (C7057w) frameLayoutFix.getChildAt(1), false);
+                    ((C6952l3) frameLayoutFix.getChildAt(0)).setChat((C4649h) raVar.m32847d());
+                    mo33139s1(raVar, (C6952l3) frameLayoutFix.getChildAt(0), (C7057w) frameLayoutFix.getChildAt(1), false);
                     return;
                 case XtraBox.MP4_XTRA_BT_GUID:
-                    ((C7023s1) ((ViewGroup) ((ViewGroup) apVar.f3479a).getChildAt(0)).getChildAt(0)).setJoinedText(raVar.m32824u());
+                    ((C7023s1) ((ViewGroup) ((ViewGroup) apVar.f3479a).getChildAt(0)).getChildAt(0)).setJoinedText(raVar.m32827u());
                     return;
                 case 74:
-                    ((C6942k3) apVar.f3479a).m18394i(Float.intBitsToFloat(raVar.m32826s()), Float.intBitsToFloat(raVar.m32833l()));
+                    ((C6942k3) apVar.f3479a).m18394i(Float.intBitsToFloat(raVar.m32829s()), Float.intBitsToFloat(raVar.m32836l()));
                     return;
                 case 79:
                     C9256o0 o0Var = (C9256o0) apVar.f3479a;
-                    o0Var.m9784g1(C1357a0.m37541i(18.0f), C1357a0.m37541i(13.5f), raVar.m32836i());
-                    o0Var.setText(raVar.m32824u().toString());
+                    o0Var.m9783g1(C1357a0.m37544i(18.0f), C1357a0.m37544i(13.5f), raVar.m32839i());
+                    o0Var.setText(raVar.m32827u().toString());
                     mo9112n2(raVar, o0Var, null, false);
                     return;
                 case 80:
                 case 88:
                     FrameLayoutFix frameLayoutFix2 = (FrameLayoutFix) apVar.f3479a;
                     C9256o0 o0Var2 = (C9256o0) frameLayoutFix2.getChildAt(0);
-                    o0Var2.m9784g1(C1357a0.m37541i(18.0f), C1357a0.m37541i(13.5f), raVar.m32836i());
-                    o0Var2.setText(raVar.m32824u().toString());
+                    o0Var2.m9783g1(C1357a0.m37544i(18.0f), C1357a0.m37544i(13.5f), raVar.m32839i());
+                    o0Var2.setText(raVar.m32827u().toString());
                     C9139d dVar2 = (C9139d) frameLayoutFix2.getChildAt(1);
-                    dVar2.m10186r(raVar.m32873D(), false);
-                    dVar2.setId(raVar.m32835j());
-                    dVar2.m10191m(true);
+                    dVar2.m10185r(raVar.m32876D(), false);
+                    dVar2.setId(raVar.m32838j());
+                    dVar2.m10190m(true);
                     return;
                 case 81:
                     mo9112n2(raVar, (C9256o0) apVar.f3479a, null, false);
                     return;
                 case 82:
                 case 83:
-                    mo11660G2(raVar, i, (C8795k2) apVar.f3479a, false);
+                    mo11659G2(raVar, i, (C8795k2) apVar.f3479a, false);
                     return;
                 case 86:
                     FrameLayoutFix frameLayoutFix3 = (FrameLayoutFix) apVar.f3479a;
@@ -2000,22 +2000,22 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
                     o0Var3.setTag(raVar);
                     return;
                 case 94:
-                    m34161j2(raVar, i, (ViewGroup) apVar.f3479a, null);
+                    m34164j2(raVar, i, (ViewGroup) apVar.f3479a, null);
                     return;
                 case 100:
                     mo503R2(raVar, (C6973n0) apVar.f3479a, false);
                     return;
                 case 101:
-                    ((C8315d) apVar.f3479a).setChart((C7833i) raVar.m32844d());
+                    ((C8315d) apVar.f3479a).setChart((C7833i) raVar.m32847d());
                     return;
                 case 102:
                 case 103:
                 case 104:
                 case 105:
-                    ((C7027t) apVar.f3479a).setChart((C7833i) raVar.m32844d());
+                    ((C7027t) apVar.f3479a).setChart((C7833i) raVar.m32847d());
                     return;
                 case 106:
-                    ((C8315d) apVar.f3479a).setChart((C7846r) raVar.m32844d());
+                    ((C8315d) apVar.f3479a).setChart((C7846r) raVar.m32847d());
                     return;
                 case C3563j.f11957L0:
                 case C3563j.f11962M0:
@@ -2036,35 +2036,35 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         }
     }
 
-    public final void m34121w0(float f) {
+    public final void m34124w0(float f) {
         C3950k kVar = this.f8712h0;
         if (kVar != null) {
-            kVar.m29542k();
+            kVar.m29544k();
         }
         if (this.f8713i0) {
             for (RecyclerView recyclerView : this.f8693O) {
                 LinearLayoutManager linearLayoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
-                this.f8710f0 = linearLayoutManager.m39549X1();
-                int a2 = linearLayoutManager.m39546a2();
+                this.f8710f0 = linearLayoutManager.m39552X1();
+                int a2 = linearLayoutManager.m39549a2();
                 this.f8711g0 = a2;
                 int i = this.f8710f0;
                 if (i == -1 || a2 == -1) {
                     C3950k kVar2 = this.f8712h0;
                     if (kVar2 != null) {
-                        kVar2.m29541l(f);
+                        kVar2.m29543l(f);
                     }
-                    m34232I2(f);
+                    m34235I2(f);
                 } else {
                     if (a2 > 0) {
-                        m39309L(0, i);
+                        m39312L(0, i);
                     }
                     if (this.f8711g0 + 1 < mo6153D() - 1) {
-                        m39309L(this.f8711g0 + 1, (mo6153D() - this.f8711g0) - 1);
+                        m39312L(this.f8711g0 + 1, (mo6153D() - this.f8711g0) - 1);
                     }
                     if (this.f8712h0 == null) {
                         this.f8712h0 = new C3950k(0, this, C2057b.f7280b, 180L, this.f8709e0);
                     }
-                    this.f8712h0.m29544i(f);
+                    this.f8712h0.m29546i(f);
                 }
             }
             return;
@@ -2072,71 +2072,71 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         if (this.f8712h0 == null) {
             this.f8712h0 = new C3950k(0, this, C2057b.f7280b, 180L, this.f8709e0);
         }
-        this.f8712h0.m29544i(f);
+        this.f8712h0.m29546i(f);
     }
 
-    public void mo30632w1(TextView textView, int i, int i2) {
+    public void mo30634w1(TextView textView, int i, int i2) {
     }
 
-    public void m34138q1(final int i, final C2964ra raVar) {
-        if (m34200X0()) {
-            C1379j0.m37334d0(new Runnable() {
+    public void m34141q1(final int i, final C2964ra raVar) {
+        if (m34203X0()) {
+            C1379j0.m37337d0(new Runnable() {
                 @Override
                 public final void run() {
-                    C2546iq.this.m34138q1(i, raVar);
+                    C2546iq.this.m34141q1(i, raVar);
                 }
             });
             return;
         }
         this.f8695Q.set(i, raVar);
-        m39312I(i);
+        m39315I(i);
     }
 
-    public void m34118x0() {
+    public void m34121x0() {
         int i = 0;
         for (C2964ra raVar : this.f8695Q) {
-            if (raVar.m32873D()) {
-                raVar.m32858S(false);
-                m34123v2(i, false, raVar.m32827r());
+            if (raVar.m32876D()) {
+                raVar.m32861S(false);
+                m34126v2(i, false, raVar.m32830r());
             }
             i++;
         }
     }
 
-    public void m34117x1(int i, C9137c cVar) {
+    public void m34120x1(int i, C9137c cVar) {
     }
 
-    public int m34116x2(List<C2964ra> list, boolean z) {
+    public int m34119x2(List<C2964ra> list, boolean z) {
         int D = mo6153D();
         this.f8695Q.clear();
-        C5062b.m24159m(this.f8695Q, list.size());
+        C5062b.m24160m(this.f8695Q, list.size());
         this.f8695Q.addAll(list);
-        int X1 = z ? m34199X1() : -1;
+        int X1 = z ? m34202X1() : -1;
         C7389v0.m16615k2(this, D);
         return X1;
     }
 
-    public C2964ra m34115y0(String str) {
-        return m34243E0(m34213S0(str));
+    public C2964ra m34118y0(String str) {
+        return m34246E0(m34216S0(str));
     }
 
-    public void m34114y1(int i, int i2) {
-        C5062b.m24149w(this.f8695Q, i, i2);
-        m39310K(i, i2);
+    public void m34117y1(int i, int i2) {
+        C5062b.m24150w(this.f8695Q, i, i2);
+        m39313K(i, i2);
     }
 
-    public void m34113y2(C2964ra[] raVarArr, boolean z) {
+    public void m34116y2(C2964ra[] raVarArr, boolean z) {
         int D = mo6153D();
         this.f8695Q.clear();
-        C5062b.m24159m(this.f8695Q, raVarArr.length);
+        C5062b.m24160m(this.f8695Q, raVarArr.length);
         Collections.addAll(this.f8695Q, raVarArr);
         if (z) {
             for (C2964ra raVar : raVarArr) {
-                if (raVar.m32873D()) {
-                    if (raVar.m32823v() != null) {
-                        m34214R1(raVar.m32846c(), raVar.m32823v());
+                if (raVar.m32876D()) {
+                    if (raVar.m32826v() != null) {
+                        m34217R1(raVar.m32849c(), raVar.m32826v());
                     } else {
-                        m34217Q1(raVar.m32846c(), raVar.m32835j());
+                        m34220Q1(raVar.m32849c(), raVar.m32838j());
                     }
                 }
             }
@@ -2144,14 +2144,14 @@ public class C2546iq extends RecyclerView.AbstractC0890h<C2139ap> implements Abs
         C7389v0.m16615k2(this, D);
     }
 
-    public C2964ra m34112z0(int i) {
-        return m34243E0(m34224N0(i));
+    public C2964ra m34115z0(int i) {
+        return m34246E0(m34227N0(i));
     }
 
-    public void m34111z1(int i, int i2, boolean z) {
-        C5062b.m24149w(this.f8695Q, i, i2);
+    public void m34114z1(int i, int i2, boolean z) {
+        C5062b.m24150w(this.f8695Q, i, i2);
         if (z) {
-            m39310K(i, i2);
+            m39313K(i, i2);
         }
     }
 

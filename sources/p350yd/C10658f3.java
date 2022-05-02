@@ -5,7 +5,7 @@ import org.drinkless.p210td.libcore.telegram.TdApi;
 import p111he.AbstractC5107c1;
 
 public final class C10658f3 implements AbstractC5107c1 {
-    public static final C10658f3 f34123a = new C10658f3();
+    public static final C10658f3 f34126a = new C10658f3();
 
     @Override
     public final Object mo2952a(Object obj) {

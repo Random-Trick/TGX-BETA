@@ -29,14 +29,14 @@ public abstract class AbstractC1258f<E> extends AbstractCollection<E> implements
         throw new UnsupportedOperationException();
     }
 
-    abstract int mo37808h(Object[] objArr, int i);
+    abstract int mo37811h(Object[] objArr, int i);
 
-    abstract int mo37807i();
+    abstract int mo37810i();
 
-    public abstract int mo37806m();
+    public abstract int mo37809m();
 
     @CheckForNull
-    public abstract Object[] mo37805r();
+    public abstract Object[] mo37808r();
 
     @Override
     @Deprecated
@@ -67,15 +67,15 @@ public abstract class AbstractC1258f<E> extends AbstractCollection<E> implements
         int size = size();
         int length = tArr.length;
         if (length < size) {
-            Object[] r = mo37805r();
+            Object[] r = mo37808r();
             if (r != null) {
-                return (T[]) Arrays.copyOfRange(r, mo37806m(), mo37807i(), tArr.getClass());
+                return (T[]) Arrays.copyOfRange(r, mo37809m(), mo37810i(), tArr.getClass());
             }
             tArr = (T[]) ((Object[]) Array.newInstance(tArr.getClass().getComponentType(), size));
         } else if (length > size) {
             tArr[size] = null;
         }
-        mo37808h(tArr, 0);
+        mo37811h(tArr, 0);
         return tArr;
     }
 }

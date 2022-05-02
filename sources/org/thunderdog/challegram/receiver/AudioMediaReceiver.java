@@ -12,7 +12,7 @@ public class AudioMediaReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         String action = intent.getAction();
         Log.m14721i((int) Log.TAG_PLAYER, "onReceive action:%s", action);
-        if (!C5070i.m24061i(action)) {
+        if (!C5070i.m24062i(action)) {
             action.hashCode();
             char c = 65535;
             switch (action.hashCode()) {

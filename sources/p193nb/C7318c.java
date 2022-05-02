@@ -15,7 +15,7 @@ public final class C7318c {
             return (int) ((TdApi.JsonValueNumber) jsonValue).value;
         }
         if (jsonValue instanceof TdApi.JsonValueString) {
-            return C5070i.m24049u(((TdApi.JsonValueString) jsonValue).value, 0, 2, null);
+            return C5070i.m24050u(((TdApi.JsonValueString) jsonValue).value, 0, 2, null);
         }
         return 0;
     }
@@ -27,16 +27,16 @@ public final class C7318c {
         TdApi.JsonValueObject jsonValueObject = (TdApi.JsonValueObject) jsonValue;
         HashMap hashMap = new HashMap(jsonValueObject.members.length);
         TdApi.JsonObjectMember[] jsonObjectMemberArr = jsonValueObject.members;
-        C8298k.m12935d(jsonObjectMemberArr, "json.members");
+        C8298k.m12934d(jsonObjectMemberArr, "json.members");
         int i = 0;
         int length = jsonObjectMemberArr.length;
         while (i < length) {
             TdApi.JsonObjectMember jsonObjectMember = jsonObjectMemberArr[i];
             i++;
             String str = jsonObjectMember.key;
-            C8298k.m12935d(str, "member.key");
+            C8298k.m12934d(str, "member.key");
             TdApi.JsonValue jsonValue2 = jsonObjectMember.value;
-            C8298k.m12935d(jsonValue2, "member.value");
+            C8298k.m12934d(jsonValue2, "member.value");
             hashMap.put(str, jsonValue2);
         }
         return hashMap;
@@ -50,7 +50,7 @@ public final class C7318c {
     }
 
     public static final TdApi.JsonValue m17033d(String str) {
-        if (C5070i.m24061i(str)) {
+        if (C5070i.m24062i(str)) {
             return null;
         }
         TdApi.Object e = Client.m14793e(new TdApi.GetJsonValue(str));
@@ -61,12 +61,12 @@ public final class C7318c {
     }
 
     public static final String m17032e(List<? extends TdApi.JsonObjectMember> list) {
-        C8298k.m12934e(list, "members");
+        C8298k.m12933e(list, "members");
         return m17031f(m17030g(list));
     }
 
     public static final String m17031f(TdApi.JsonValue jsonValue) {
-        C8298k.m12934e(jsonValue, "obj");
+        C8298k.m12933e(jsonValue, "obj");
         TdApi.Object e = Client.m14793e(new TdApi.GetJsonString(jsonValue));
         if (e instanceof TdApi.Text) {
             return ((TdApi.Text) e).text;
@@ -75,7 +75,7 @@ public final class C7318c {
     }
 
     public static final TdApi.JsonValueObject m17030g(List<? extends TdApi.JsonObjectMember> list) {
-        C8298k.m12934e(list, "members");
+        C8298k.m12933e(list, "members");
         Object[] array = list.toArray(new TdApi.JsonObjectMember[0]);
         Objects.requireNonNull(array, "null cannot be cast to non-null type kotlin.Array<T of kotlin.collections.ArraysKt__ArraysJVMKt.toTypedArray>");
         return new TdApi.JsonValueObject((TdApi.JsonObjectMember[]) array);

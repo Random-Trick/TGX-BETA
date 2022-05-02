@@ -20,7 +20,7 @@ public enum EnumC6422f {
         this.f20090a = i;
     }
 
-    public static EnumC6422f m20433a(int i) {
+    public static EnumC6422f m20434a(int i) {
         if (i >= 0) {
             EnumC6422f[] fVarArr = f20086O;
             if (i < fVarArr.length) {

@@ -5,10 +5,10 @@ import java.util.UUID;
 import p020b5.C1216l0;
 
 public final class C8181g0 implements CryptoConfig {
-    public static final boolean f26493d;
-    public final UUID f26494a;
-    public final byte[] f26495b;
-    public final boolean f26496c;
+    public static final boolean f26496d;
+    public final UUID f26497a;
+    public final byte[] f26498b;
+    public final boolean f26499c;
 
     static {
         boolean z;
@@ -16,16 +16,16 @@ public final class C8181g0 implements CryptoConfig {
             String str = C1216l0.f4529d;
             if ("AFTM".equals(str) || "AFTB".equals(str)) {
                 z = true;
-                f26493d = z;
+                f26496d = z;
             }
         }
         z = false;
-        f26493d = z;
+        f26496d = z;
     }
 
     public C8181g0(UUID uuid, byte[] bArr, boolean z) {
-        this.f26494a = uuid;
-        this.f26495b = bArr;
-        this.f26496c = z;
+        this.f26497a = uuid;
+        this.f26498b = bArr;
+        this.f26499c = z;
     }
 }

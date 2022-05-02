@@ -13,15 +13,15 @@ public final class C1548l implements AbstractC3589b<C1546k> {
         this.f5507b = aVar2;
     }
 
-    public static C1548l m36486a(AbstractC4533a<Context> aVar, AbstractC4533a<C1544i> aVar2) {
+    public static C1548l m36489a(AbstractC4533a<Context> aVar, AbstractC4533a<C1544i> aVar2) {
         return new C1548l(aVar, aVar2);
     }
 
-    public static C1546k m36484c(Context context, Object obj) {
+    public static C1546k m36487c(Context context, Object obj) {
         return new C1546k(context, (C1544i) obj);
     }
 
     public C1546k get() {
-        return m36484c(this.f5506a.get(), this.f5507b.get());
+        return m36487c(this.f5506a.get(), this.f5507b.get());
     }
 }

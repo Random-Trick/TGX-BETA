@@ -8,7 +8,7 @@ public final class ThreadFactoryC6210b implements ThreadFactory {
     @Override
     public final Thread newThread(Runnable runnable) {
         Thread h;
-        h = C6212d.m21061h(runnable);
+        h = C6212d.m21062h(runnable);
         return h;
     }
 }

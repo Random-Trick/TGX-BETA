@@ -15,21 +15,21 @@ import java.util.concurrent.TimeUnit;
 import p262s6.C8646a;
 
 public final class C7688f0 {
-    public static final C8646a f24625c = new C8646a("AssetPackStorage");
-    public static final long f24626d;
-    public static final long f24627e;
-    public final Context f24628a;
-    public final C7775w2 f24629b;
+    public static final C8646a f24628c = new C8646a("AssetPackStorage");
+    public static final long f24629d;
+    public static final long f24630e;
+    public final Context f24631a;
+    public final C7775w2 f24632b;
 
     static {
         TimeUnit timeUnit = TimeUnit.DAYS;
-        f24626d = timeUnit.toMillis(14L);
-        f24627e = timeUnit.toMillis(28L);
+        f24629d = timeUnit.toMillis(14L);
+        f24630e = timeUnit.toMillis(28L);
     }
 
     public C7688f0(Context context, C7775w2 w2Var) {
-        this.f24628a = context;
-        this.f24629b = w2Var;
+        this.f24631a = context;
+        this.f24632b = w2Var;
     }
 
     public static long m15245g(File file, boolean z) {
@@ -39,7 +39,7 @@ public final class C7688f0 {
         }
         ArrayList arrayList = new ArrayList();
         if (z && file.listFiles().length > 1) {
-            f24625c.m11814e("Multiple pack versions found, using highest version code.", new Object[0]);
+            f24628c.m11813e("Multiple pack versions found, using highest version code.", new Object[0]);
         }
         try {
             for (File file2 : file.listFiles()) {
@@ -48,7 +48,7 @@ public final class C7688f0 {
                 }
             }
         } catch (NumberFormatException e) {
-            f24625c.m11816c(e, "Corrupt asset pack directories.", new Object[0]);
+            f24628c.m11815c(e, "Corrupt asset pack directories.", new Object[0]);
         }
         if (arrayList.isEmpty()) {
             return -1L;
@@ -103,22 +103,22 @@ public final class C7688f0 {
         int length;
         File file = new File(m15241k(), str);
         if (!file.exists()) {
-            f24625c.m11818a("Pack not found with pack name: %s", str);
+            f24628c.m11817a("Pack not found with pack name: %s", str);
             return null;
         }
-        File file2 = new File(file, String.valueOf(this.f24629b.m15109a()));
+        File file2 = new File(file, String.valueOf(this.f24632b.m15109a()));
         if (!file2.exists()) {
-            f24625c.m11818a("Pack not found with pack name: %s app version: %s", str, Integer.valueOf(this.f24629b.m15109a()));
+            f24628c.m11817a("Pack not found with pack name: %s app version: %s", str, Integer.valueOf(this.f24632b.m15109a()));
             return null;
         }
         File[] listFiles = file2.listFiles();
         if (listFiles == null || (length = listFiles.length) == 0) {
-            f24625c.m11818a("No pack version found for pack name: %s app version: %s", str, Integer.valueOf(this.f24629b.m15109a()));
+            f24628c.m11817a("No pack version found for pack name: %s app version: %s", str, Integer.valueOf(this.f24632b.m15109a()));
             return null;
         } else if (length <= 1) {
             return listFiles[0].getCanonicalPath();
         } else {
-            f24625c.m11817b("Multiple pack versions found for pack name: %s app version: %s", str, Integer.valueOf(this.f24629b.m15109a()));
+            f24628c.m11816b("Multiple pack versions found for pack name: %s app version: %s", str, Integer.valueOf(this.f24632b.m15109a()));
             return null;
         }
     }
@@ -154,7 +154,7 @@ public final class C7688f0 {
                 }
             }
         } catch (IOException e) {
-            f24625c.m11817b("Could not process directory while scanning installed packs: %s", e);
+            f24628c.m11816b("Could not process directory while scanning installed packs: %s", e);
         }
         return hashMap;
     }
@@ -164,11 +164,11 @@ public final class C7688f0 {
             if (file.listFiles() != null) {
                 m15238n(file);
                 long g = m15245g(file, false);
-                if (this.f24629b.m15109a() != g) {
+                if (this.f24632b.m15109a() != g) {
                     try {
                         new File(new File(file, String.valueOf(g)), "stale.tmp").createNewFile();
                     } catch (IOException unused) {
-                        f24625c.m11817b("Could not write staleness marker.", new Object[0]);
+                        f24628c.m11816b("Could not write staleness marker.", new Object[0]);
                     }
                 }
                 for (File file2 : file.listFiles()) {
@@ -213,7 +213,7 @@ public final class C7688f0 {
     }
 
     public final void m15249c(List list) {
-        int a = this.f24629b.m15109a();
+        int a = this.f24632b.m15109a();
         for (File file : m15239m()) {
             if (!list.contains(file.getName()) && m15245g(file, true) != a) {
                 m15237o(file);
@@ -252,7 +252,7 @@ public final class C7688f0 {
     }
 
     public final File m15241k() {
-        return new File(this.f24628a.getFilesDir(), "assetpacks");
+        return new File(this.f24631a.getFilesDir(), "assetpacks");
     }
 
     public final File m15240l() {
@@ -264,7 +264,7 @@ public final class C7688f0 {
         ArrayList arrayList = new ArrayList();
         try {
         } catch (IOException e) {
-            f24625c.m11817b("Could not process directory while scanning installed packs. %s", e);
+            f24628c.m11816b("Could not process directory while scanning installed packs. %s", e);
         }
         if (m15241k().exists() && m15241k().listFiles() != null) {
             for (File file : m15241k().listFiles()) {
@@ -322,7 +322,7 @@ public final class C7688f0 {
         if (file.isDirectory()) {
             return new C7708j0(0, E, file.getCanonicalPath());
         }
-        f24625c.m11817b("Failed to find assets directory: %s", file);
+        f24628c.m11816b("Failed to find assets directory: %s", file);
         return null;
     }
 

@@ -16,11 +16,11 @@ public class C4908i extends AbstractC0687y1 {
         this.f16761b = bVar;
     }
 
-    public void m24455a(Size size, int i) {
+    public void m24456a(Size size, int i) {
         C11202l.m1236a();
         synchronized (this) {
             if (!(size.getWidth() == 0 || size.getHeight() == 0)) {
-                this.f16762c = this.f16761b.m40468c(size, i);
+                this.f16762c = this.f16761b.m40471c(size, i);
                 return;
             }
             this.f16762c = null;

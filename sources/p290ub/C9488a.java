@@ -13,7 +13,7 @@ public final class C9488a {
         int length = str.length();
         for (int i = 0; i < length; i++) {
             char charAt = str.charAt(i);
-            if (C8298k.m12933f(charAt, 31) <= 0 || C8298k.m12933f(charAt, 127) >= 0 || C11452o.m608M(" #%/:?@[\\]", charAt, 0, false, 6, null) != -1) {
+            if (C8298k.m12932f(charAt, 31) <= 0 || C8298k.m12932f(charAt, 127) >= 0 || C11452o.m608M(" #%/:?@[\\]", charAt, 0, false, 6, null) != -1) {
                 return true;
             }
         }
@@ -36,7 +36,7 @@ public final class C9488a {
             int i6 = 0;
             while (i5 < i2) {
                 char charAt = str.charAt(i5);
-                if (C8298k.m12933f(charAt, 48) < 0 || C8298k.m12933f(charAt, 57) > 0) {
+                if (C8298k.m12932f(charAt, 48) < 0 || C8298k.m12932f(charAt, 57) > 0) {
                     break;
                 } else if ((i6 == 0 && i != i5) || (i6 = ((i6 * 10) + charAt) - 48) > 255) {
                     return false;
@@ -78,25 +78,25 @@ public final class C9488a {
         C4549e eVar = new C4549e();
         while (i < bArr.length) {
             if (i == i2) {
-                eVar.mo27349C(58);
+                eVar.mo27351C(58);
                 i += i4;
                 if (i == 16) {
-                    eVar.mo27349C(58);
+                    eVar.mo27351C(58);
                 }
             } else {
                 if (i > 0) {
-                    eVar.mo27349C(58);
+                    eVar.mo27351C(58);
                 }
-                eVar.mo27346W((C9489b.m8522b(bArr[i], 255) << 8) | C9489b.m8522b(bArr[i + 1], 255));
+                eVar.mo27348W((C9489b.m8522b(bArr[i], 255) << 8) | C9489b.m8522b(bArr[i + 1], 255));
                 i += 2;
             }
         }
-        return eVar.m27433O0();
+        return eVar.m27435O0();
     }
 
     public static final String m8545e(String str) {
         InetAddress inetAddress;
-        C8298k.m12934e(str, "$this$toCanonicalHost");
+        C8298k.m12933e(str, "$this$toCanonicalHost");
         boolean z = false;
         if (C11452o.m618C(str, ":", false, 2, null)) {
             if (!C11451n.m621x(str, "[", false, 2, null) || !C11451n.m634k(str, "]", false, 2, null)) {
@@ -109,7 +109,7 @@ public final class C9488a {
             }
             byte[] address = inetAddress.getAddress();
             if (address.length == 16) {
-                C8298k.m12935d(address, "address");
+                C8298k.m12934d(address, "address");
                 return m8546d(address);
             } else if (address.length == 4) {
                 return inetAddress.getHostAddress();
@@ -119,12 +119,12 @@ public final class C9488a {
         } else {
             try {
                 String ascii = IDN.toASCII(str);
-                C8298k.m12935d(ascii, "IDN.toASCII(host)");
+                C8298k.m12934d(ascii, "IDN.toASCII(host)");
                 Locale locale = Locale.US;
-                C8298k.m12935d(locale, "Locale.US");
+                C8298k.m12934d(locale, "Locale.US");
                 if (ascii != null) {
                     String lowerCase = ascii.toLowerCase(locale);
-                    C8298k.m12935d(lowerCase, "(this as java.lang.String).toLowerCase(locale)");
+                    C8298k.m12934d(lowerCase, "(this as java.lang.String).toLowerCase(locale)");
                     if (lowerCase.length() == 0) {
                         z = true;
                     }

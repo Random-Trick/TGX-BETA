@@ -8,7 +8,7 @@ public final class C1354n extends IOException {
 
     public C1354n(EnumC1307b bVar) {
         super("stream was reset: " + bVar);
-        C8298k.m12934e(bVar, "errorCode");
+        C8298k.m12933e(bVar, "errorCode");
         this.f4935a = bVar;
     }
 }

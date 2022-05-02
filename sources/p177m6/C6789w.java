@@ -15,21 +15,21 @@ public final class C6789w<TResult, TContinuationResult> implements AbstractC6767
 
     @Override
     public final void mo3951a(TContinuationResult tcontinuationresult) {
-        this.f21272c.m19063r(tcontinuationresult);
+        this.f21272c.m19064r(tcontinuationresult);
     }
 
     @Override
-    public final void mo19039b() {
-        this.f21272c.m19059v();
+    public final void mo19040b() {
+        this.f21272c.m19060v();
     }
 
     @Override
     public final void mo4157c(Exception exc) {
-        this.f21272c.m19061t(exc);
+        this.f21272c.m19062t(exc);
     }
 
     @Override
-    public final void mo19034d(AbstractC6775l<TResult> lVar) {
+    public final void mo19035d(AbstractC6775l<TResult> lVar) {
         this.f21270a.execute(new RunnableC6788v(this, lVar));
     }
 }

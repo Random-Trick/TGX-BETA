@@ -37,65 +37,65 @@ import p358z6.AbstractC11374k;
 import p358z6.AbstractC11396q;
 
 public class C11253f extends AbstractC11269l {
-    public static final int[] f36041f = new int[0];
-    public static final AbstractC11362g0<Integer> f36042g = AbstractC11362g0.m823a(C11252e.f36040a);
-    public static final AbstractC11362g0<Integer> f36043h = AbstractC11362g0.m823a(C11251d.f36039a);
-    public final AbstractC11265j.AbstractC11267b f36044d;
-    public final AtomicReference<C11257d> f36045e;
+    public static final int[] f36044f = new int[0];
+    public static final AbstractC11362g0<Integer> f36045g = AbstractC11362g0.m823a(C11252e.f36043a);
+    public static final AbstractC11362g0<Integer> f36046h = AbstractC11362g0.m823a(C11251d.f36042a);
+    public final AbstractC11265j.AbstractC11267b f36047d;
+    public final AtomicReference<C11257d> f36048e;
 
     public static final class C11255b implements Comparable<C11255b> {
-        public final boolean f36046M;
-        public final int f36047N;
-        public final int f36048O;
-        public final int f36049P;
-        public final int f36050Q;
-        public final int f36051R;
-        public final boolean f36052S;
-        public final int f36053T;
-        public final int f36054U;
-        public final int f36055V;
-        public final int f36056W;
-        public final boolean f36057a;
-        public final String f36058b;
-        public final C11257d f36059c;
+        public final boolean f36049M;
+        public final int f36050N;
+        public final int f36051O;
+        public final int f36052P;
+        public final int f36053Q;
+        public final int f36054R;
+        public final boolean f36055S;
+        public final int f36056T;
+        public final int f36057U;
+        public final int f36058V;
+        public final int f36059W;
+        public final boolean f36060a;
+        public final String f36061b;
+        public final C11257d f36062c;
 
         public C11255b(C6600g1 g1Var, C11257d dVar, int i) {
             int i2;
             int i3;
             int i4;
-            this.f36059c = dVar;
-            this.f36058b = C11253f.m1107H(g1Var.f20585c);
+            this.f36062c = dVar;
+            this.f36061b = C11253f.m1107H(g1Var.f20585c);
             int i5 = 0;
-            this.f36046M = C11253f.m1114A(i, false);
+            this.f36049M = C11253f.m1114A(i, false);
             int i6 = 0;
             while (true) {
                 i2 = Integer.MAX_VALUE;
-                if (i6 >= dVar.f36151V.size()) {
+                if (i6 >= dVar.f36154V.size()) {
                     i6 = Integer.MAX_VALUE;
                     i3 = 0;
                     break;
                 }
-                i3 = C11253f.m1088u(g1Var, dVar.f36151V.get(i6), false);
+                i3 = C11253f.m1088u(g1Var, dVar.f36154V.get(i6), false);
                 if (i3 > 0) {
                     break;
                 }
                 i6++;
             }
-            this.f36048O = i6;
-            this.f36047N = i3;
-            this.f36049P = Integer.bitCount(g1Var.f20568N & dVar.f36152W);
+            this.f36051O = i6;
+            this.f36050N = i3;
+            this.f36052P = Integer.bitCount(g1Var.f20568N & dVar.f36155W);
             boolean z = true;
-            this.f36052S = (g1Var.f20567M & 1) != 0;
+            this.f36055S = (g1Var.f20567M & 1) != 0;
             int i7 = g1Var.f20591h0;
-            this.f36053T = i7;
-            this.f36054U = g1Var.f20592i0;
+            this.f36056T = i7;
+            this.f36057U = g1Var.f20592i0;
             int i8 = g1Var.f20571Q;
-            this.f36055V = i8;
-            if ((i8 != -1 && i8 > dVar.f36154Y) || (i7 != -1 && i7 > dVar.f36153X)) {
+            this.f36058V = i8;
+            if ((i8 != -1 && i8 > dVar.f36157Y) || (i7 != -1 && i7 > dVar.f36156X)) {
                 z = false;
             }
-            this.f36057a = z;
-            String[] Z = C1216l0.m37987Z();
+            this.f36060a = z;
+            String[] Z = C1216l0.m37990Z();
             int i9 = 0;
             while (true) {
                 if (i9 >= Z.length) {
@@ -109,12 +109,12 @@ public class C11253f extends AbstractC11269l {
                 }
                 i9++;
             }
-            this.f36050Q = i9;
-            this.f36051R = i4;
+            this.f36053Q = i9;
+            this.f36054R = i4;
             while (true) {
-                if (i5 < dVar.f36155Z.size()) {
+                if (i5 < dVar.f36158Z.size()) {
                     String str = g1Var.f20575U;
-                    if (str != null && str.equals(dVar.f36155Z.get(i5))) {
+                    if (str != null && str.equals(dVar.f36158Z.get(i5))) {
                         i2 = i5;
                         break;
                     }
@@ -123,58 +123,58 @@ public class C11253f extends AbstractC11269l {
                     break;
                 }
             }
-            this.f36056W = i2;
+            this.f36059W = i2;
         }
 
         public int compareTo(C11255b bVar) {
-            AbstractC11362g0 d = (!this.f36057a || !this.f36046M) ? C11253f.f36042g.mo788d() : C11253f.f36042g;
-            AbstractC11374k f = AbstractC11374k.m802j().mo797g(this.f36046M, bVar.f36046M).mo798f(Integer.valueOf(this.f36048O), Integer.valueOf(bVar.f36048O), AbstractC11362g0.m822b().mo788d()).mo800d(this.f36047N, bVar.f36047N).mo800d(this.f36049P, bVar.f36049P).mo797g(this.f36057a, bVar.f36057a).mo798f(Integer.valueOf(this.f36056W), Integer.valueOf(bVar.f36056W), AbstractC11362g0.m822b().mo788d()).mo798f(Integer.valueOf(this.f36055V), Integer.valueOf(bVar.f36055V), this.f36059c.f36162d0 ? C11253f.f36042g.mo788d() : C11253f.f36043h).mo797g(this.f36052S, bVar.f36052S).mo798f(Integer.valueOf(this.f36050Q), Integer.valueOf(bVar.f36050Q), AbstractC11362g0.m822b().mo788d()).mo800d(this.f36051R, bVar.f36051R).mo798f(Integer.valueOf(this.f36053T), Integer.valueOf(bVar.f36053T), d).mo798f(Integer.valueOf(this.f36054U), Integer.valueOf(bVar.f36054U), d);
-            Integer valueOf = Integer.valueOf(this.f36055V);
-            Integer valueOf2 = Integer.valueOf(bVar.f36055V);
-            if (!C1216l0.m37982c(this.f36058b, bVar.f36058b)) {
-                d = C11253f.f36043h;
+            AbstractC11362g0 d = (!this.f36060a || !this.f36049M) ? C11253f.f36045g.mo788d() : C11253f.f36045g;
+            AbstractC11374k f = AbstractC11374k.m802j().mo797g(this.f36049M, bVar.f36049M).mo798f(Integer.valueOf(this.f36051O), Integer.valueOf(bVar.f36051O), AbstractC11362g0.m822b().mo788d()).mo800d(this.f36050N, bVar.f36050N).mo800d(this.f36052P, bVar.f36052P).mo797g(this.f36060a, bVar.f36060a).mo798f(Integer.valueOf(this.f36059W), Integer.valueOf(bVar.f36059W), AbstractC11362g0.m822b().mo788d()).mo798f(Integer.valueOf(this.f36058V), Integer.valueOf(bVar.f36058V), this.f36062c.f36165d0 ? C11253f.f36045g.mo788d() : C11253f.f36046h).mo797g(this.f36055S, bVar.f36055S).mo798f(Integer.valueOf(this.f36053Q), Integer.valueOf(bVar.f36053Q), AbstractC11362g0.m822b().mo788d()).mo800d(this.f36054R, bVar.f36054R).mo798f(Integer.valueOf(this.f36056T), Integer.valueOf(bVar.f36056T), d).mo798f(Integer.valueOf(this.f36057U), Integer.valueOf(bVar.f36057U), d);
+            Integer valueOf = Integer.valueOf(this.f36058V);
+            Integer valueOf2 = Integer.valueOf(bVar.f36058V);
+            if (!C1216l0.m37985c(this.f36061b, bVar.f36061b)) {
+                d = C11253f.f36046h;
             }
             return f.mo798f(valueOf, valueOf2, d).mo795i();
         }
     }
 
     public static final class C11256c implements Comparable<C11256c> {
-        public final boolean f36060a;
-        public final boolean f36061b;
+        public final boolean f36063a;
+        public final boolean f36064b;
 
         public C11256c(C6600g1 g1Var, int i) {
-            this.f36060a = (g1Var.f20567M & 1) == 0 ? false : true;
-            this.f36061b = C11253f.m1114A(i, false);
+            this.f36063a = (g1Var.f20567M & 1) == 0 ? false : true;
+            this.f36064b = C11253f.m1114A(i, false);
         }
 
         public int compareTo(C11256c cVar) {
-            return AbstractC11374k.m802j().mo797g(this.f36061b, cVar.f36061b).mo797g(this.f36060a, cVar.f36060a).mo795i();
+            return AbstractC11374k.m802j().mo797g(this.f36064b, cVar.f36064b).mo797g(this.f36063a, cVar.f36063a).mo795i();
         }
     }
 
     public static final class C11257d extends C11278s {
-        public static final C11257d f36062x0;
+        public static final C11257d f36065x0;
         @Deprecated
-        public static final C11257d f36063y0;
-        public static final AbstractC6609h.AbstractC6610a<C11257d> f36064z0 = C11262g.f36112a;
-        public final int f36065k0;
-        public final boolean f36066l0;
-        public final boolean f36067m0;
-        public final boolean f36068n0;
-        public final boolean f36069o0;
-        public final boolean f36070p0;
-        public final boolean f36071q0;
-        public final boolean f36072r0;
-        public final boolean f36073s0;
-        public final boolean f36074t0;
-        public final boolean f36075u0;
-        public final SparseArray<Map<C7233t0, C11259f>> f36076v0;
-        public final SparseBooleanArray f36077w0;
+        public static final C11257d f36066y0;
+        public static final AbstractC6609h.AbstractC6610a<C11257d> f36067z0 = C11262g.f36115a;
+        public final int f36068k0;
+        public final boolean f36069l0;
+        public final boolean f36070m0;
+        public final boolean f36071n0;
+        public final boolean f36072o0;
+        public final boolean f36073p0;
+        public final boolean f36074q0;
+        public final boolean f36075r0;
+        public final boolean f36076s0;
+        public final boolean f36077t0;
+        public final boolean f36078u0;
+        public final SparseArray<Map<C7233t0, C11259f>> f36079v0;
+        public final SparseBooleanArray f36080w0;
 
         static {
             C11257d R = new C11258e().mo965y();
-            f36062x0 = R;
-            f36063y0 = R;
+            f36065x0 = R;
+            f36066y0 = R;
         }
 
         public static String m1080c(int i) {
@@ -229,21 +229,21 @@ public class C11253f extends AbstractC11269l {
                 return false;
             }
             C11257d dVar = (C11257d) obj;
-            return super.equals(dVar) && this.f36066l0 == dVar.f36066l0 && this.f36067m0 == dVar.f36067m0 && this.f36068n0 == dVar.f36068n0 && this.f36069o0 == dVar.f36069o0 && this.f36070p0 == dVar.f36070p0 && this.f36071q0 == dVar.f36071q0 && this.f36072r0 == dVar.f36072r0 && this.f36065k0 == dVar.f36065k0 && this.f36073s0 == dVar.f36073s0 && this.f36074t0 == dVar.f36074t0 && this.f36075u0 == dVar.f36075u0 && m1077g(this.f36077w0, dVar.f36077w0) && m1076h(this.f36076v0, dVar.f36076v0);
+            return super.equals(dVar) && this.f36069l0 == dVar.f36069l0 && this.f36070m0 == dVar.f36070m0 && this.f36071n0 == dVar.f36071n0 && this.f36072o0 == dVar.f36072o0 && this.f36073p0 == dVar.f36073p0 && this.f36074q0 == dVar.f36074q0 && this.f36075r0 == dVar.f36075r0 && this.f36068k0 == dVar.f36068k0 && this.f36076s0 == dVar.f36076s0 && this.f36077t0 == dVar.f36077t0 && this.f36078u0 == dVar.f36078u0 && m1077g(this.f36080w0, dVar.f36080w0) && m1076h(this.f36079v0, dVar.f36079v0);
         }
 
         @Override
         public int hashCode() {
-            return ((((((((((((((((((((((super.hashCode() + 31) * 31) + (this.f36066l0 ? 1 : 0)) * 31) + (this.f36067m0 ? 1 : 0)) * 31) + (this.f36068n0 ? 1 : 0)) * 31) + (this.f36069o0 ? 1 : 0)) * 31) + (this.f36070p0 ? 1 : 0)) * 31) + (this.f36071q0 ? 1 : 0)) * 31) + (this.f36072r0 ? 1 : 0)) * 31) + this.f36065k0) * 31) + (this.f36073s0 ? 1 : 0)) * 31) + (this.f36074t0 ? 1 : 0)) * 31) + (this.f36075u0 ? 1 : 0);
+            return ((((((((((((((((((((((super.hashCode() + 31) * 31) + (this.f36069l0 ? 1 : 0)) * 31) + (this.f36070m0 ? 1 : 0)) * 31) + (this.f36071n0 ? 1 : 0)) * 31) + (this.f36072o0 ? 1 : 0)) * 31) + (this.f36073p0 ? 1 : 0)) * 31) + (this.f36074q0 ? 1 : 0)) * 31) + (this.f36075r0 ? 1 : 0)) * 31) + this.f36068k0) * 31) + (this.f36076s0 ? 1 : 0)) * 31) + (this.f36077t0 ? 1 : 0)) * 31) + (this.f36078u0 ? 1 : 0);
         }
 
         public final boolean m1073k(int i) {
-            return this.f36077w0.get(i);
+            return this.f36080w0.get(i);
         }
 
         @Deprecated
         public final C11259f m1072l(int i, C7233t0 t0Var) {
-            Map<C7233t0, C11259f> map = this.f36076v0.get(i);
+            Map<C7233t0, C11259f> map = this.f36079v0.get(i);
             if (map != null) {
                 return map.get(t0Var);
             }
@@ -252,59 +252,59 @@ public class C11253f extends AbstractC11269l {
 
         @Deprecated
         public final boolean m1071m(int i, C7233t0 t0Var) {
-            Map<C7233t0, C11259f> map = this.f36076v0.get(i);
+            Map<C7233t0, C11259f> map = this.f36079v0.get(i);
             return map != null && map.containsKey(t0Var);
         }
 
         public C11257d(C11258e eVar) {
             super(eVar);
-            this.f36066l0 = eVar.f36089y;
-            this.f36067m0 = eVar.f36090z;
-            this.f36068n0 = eVar.f36078A;
-            this.f36069o0 = eVar.f36079B;
-            this.f36070p0 = eVar.f36080C;
-            this.f36071q0 = eVar.f36081D;
-            this.f36072r0 = eVar.f36082E;
-            this.f36065k0 = eVar.f36083F;
-            this.f36073s0 = eVar.f36084G;
-            this.f36074t0 = eVar.f36085H;
-            this.f36075u0 = eVar.f36086I;
-            this.f36076v0 = eVar.f36087J;
-            this.f36077w0 = eVar.f36088K;
+            this.f36069l0 = eVar.f36092y;
+            this.f36070m0 = eVar.f36093z;
+            this.f36071n0 = eVar.f36081A;
+            this.f36072o0 = eVar.f36082B;
+            this.f36073p0 = eVar.f36083C;
+            this.f36074q0 = eVar.f36084D;
+            this.f36075r0 = eVar.f36085E;
+            this.f36068k0 = eVar.f36086F;
+            this.f36076s0 = eVar.f36087G;
+            this.f36077t0 = eVar.f36088H;
+            this.f36078u0 = eVar.f36089I;
+            this.f36079v0 = eVar.f36090J;
+            this.f36080w0 = eVar.f36091K;
         }
     }
 
     public static final class C11258e extends C11278s.C11279a {
-        public boolean f36078A;
-        public boolean f36079B;
-        public boolean f36080C;
-        public boolean f36081D;
-        public boolean f36082E;
-        public int f36083F;
-        public boolean f36084G;
-        public boolean f36085H;
-        public boolean f36086I;
-        public final SparseArray<Map<C7233t0, C11259f>> f36087J;
-        public final SparseBooleanArray f36088K;
-        public boolean f36089y;
-        public boolean f36090z;
+        public boolean f36081A;
+        public boolean f36082B;
+        public boolean f36083C;
+        public boolean f36084D;
+        public boolean f36085E;
+        public int f36086F;
+        public boolean f36087G;
+        public boolean f36088H;
+        public boolean f36089I;
+        public final SparseArray<Map<C7233t0, C11259f>> f36090J;
+        public final SparseBooleanArray f36091K;
+        public boolean f36092y;
+        public boolean f36093z;
 
         public C11257d mo965y() {
             return new C11257d(this);
         }
 
         public final void m1055S() {
-            this.f36089y = true;
-            this.f36090z = false;
-            this.f36078A = true;
-            this.f36079B = true;
-            this.f36080C = false;
-            this.f36081D = false;
-            this.f36082E = false;
-            this.f36083F = 0;
-            this.f36084G = true;
-            this.f36085H = false;
-            this.f36086I = true;
+            this.f36092y = true;
+            this.f36093z = false;
+            this.f36081A = true;
+            this.f36082B = true;
+            this.f36083C = false;
+            this.f36084D = false;
+            this.f36085E = false;
+            this.f36086F = 0;
+            this.f36087G = true;
+            this.f36088H = false;
+            this.f36089I = true;
         }
 
         public final SparseBooleanArray m1054T(int[] iArr) {
@@ -319,52 +319,52 @@ public class C11253f extends AbstractC11269l {
         }
 
         public C11258e m1053U(boolean z) {
-            this.f36082E = z;
+            this.f36085E = z;
             return this;
         }
 
         public C11258e m1052V(boolean z) {
-            this.f36080C = z;
+            this.f36083C = z;
             return this;
         }
 
         public C11258e m1051W(boolean z) {
-            this.f36081D = z;
+            this.f36084D = z;
             return this;
         }
 
         public C11258e m1050X(boolean z) {
-            this.f36086I = z;
+            this.f36089I = z;
             return this;
         }
 
         public C11258e m1049Y(boolean z) {
-            this.f36090z = z;
+            this.f36093z = z;
             return this;
         }
 
         public C11258e m1048Z(boolean z) {
-            this.f36078A = z;
+            this.f36081A = z;
             return this;
         }
 
         public C11258e m1047a0(int i) {
-            this.f36083F = i;
+            this.f36086F = i;
             return this;
         }
 
         public C11258e m1046b0(boolean z) {
-            this.f36079B = z;
+            this.f36082B = z;
             return this;
         }
 
         public C11258e m1045c0(boolean z) {
-            this.f36084G = z;
+            this.f36087G = z;
             return this;
         }
 
         public C11258e m1044d0(boolean z) {
-            this.f36089y = z;
+            this.f36092y = z;
             return this;
         }
 
@@ -375,12 +375,12 @@ public class C11253f extends AbstractC11269l {
 
         @Deprecated
         public final C11258e m1042f0(int i, C7233t0 t0Var, C11259f fVar) {
-            Map<C7233t0, C11259f> map = this.f36087J.get(i);
+            Map<C7233t0, C11259f> map = this.f36090J.get(i);
             if (map == null) {
                 map = new HashMap<>();
-                this.f36087J.put(i, map);
+                this.f36090J.put(i, map);
             }
-            if (map.containsKey(t0Var) && C1216l0.m37982c(map.get(t0Var), fVar)) {
+            if (map.containsKey(t0Var) && C1216l0.m37985c(map.get(t0Var), fVar)) {
                 return this;
             }
             map.put(t0Var, fVar);
@@ -389,8 +389,8 @@ public class C11253f extends AbstractC11269l {
 
         public final void m1041g0(Bundle bundle) {
             int[] intArray = bundle.getIntArray(C11257d.m1080c(1011));
-            List c = C1190c.m38114c(C7233t0.f23028N, bundle.getParcelableArrayList(C11257d.m1080c(1012)), AbstractC11396q.m768D());
-            SparseArray d = C1190c.m38113d(C11259f.f36091N, bundle.getSparseParcelableArray(C11257d.m1080c(1013)), new SparseArray());
+            List c = C1190c.m38117c(C7233t0.f23031N, bundle.getParcelableArrayList(C11257d.m1080c(1012)), AbstractC11396q.m768D());
+            SparseArray d = C1190c.m38116d(C11259f.f36094N, bundle.getSparseParcelableArray(C11257d.m1080c(1013)), new SparseArray());
             if (intArray != null && intArray.length == c.size()) {
                 for (int i = 0; i < intArray.length; i++) {
                     m1042f0(intArray[i], (C7233t0) c.get(i), (C11259f) d.get(i));
@@ -399,7 +399,7 @@ public class C11253f extends AbstractC11269l {
         }
 
         public C11258e m1040h0(boolean z) {
-            this.f36085H = z;
+            this.f36088H = z;
             return this;
         }
 
@@ -415,51 +415,51 @@ public class C11253f extends AbstractC11269l {
 
         @Deprecated
         public C11258e() {
-            this.f36087J = new SparseArray<>();
-            this.f36088K = new SparseBooleanArray();
+            this.f36090J = new SparseArray<>();
+            this.f36091K = new SparseBooleanArray();
             m1055S();
         }
 
         public C11258e(Context context) {
             super(context);
-            this.f36087J = new SparseArray<>();
-            this.f36088K = new SparseBooleanArray();
+            this.f36090J = new SparseArray<>();
+            this.f36091K = new SparseBooleanArray();
             m1055S();
         }
 
         public C11258e(Bundle bundle) {
             super(bundle);
-            C11257d dVar = C11257d.f36062x0;
-            m1044d0(bundle.getBoolean(C11257d.m1080c(1000), dVar.f36066l0));
-            m1049Y(bundle.getBoolean(C11257d.m1080c(1001), dVar.f36067m0));
-            m1048Z(bundle.getBoolean(C11257d.m1080c(1002), dVar.f36068n0));
-            m1046b0(bundle.getBoolean(C11257d.m1080c(1003), dVar.f36069o0));
-            m1052V(bundle.getBoolean(C11257d.m1080c(1004), dVar.f36070p0));
-            m1051W(bundle.getBoolean(C11257d.m1080c(1005), dVar.f36071q0));
-            m1053U(bundle.getBoolean(C11257d.m1080c(1006), dVar.f36072r0));
-            m1047a0(bundle.getInt(C11257d.m1080c(1007), dVar.f36065k0));
-            m1045c0(bundle.getBoolean(C11257d.m1080c(1008), dVar.f36073s0));
-            m1040h0(bundle.getBoolean(C11257d.m1080c(1009), dVar.f36074t0));
-            m1050X(bundle.getBoolean(C11257d.m1080c(1010), dVar.f36075u0));
-            this.f36087J = new SparseArray<>();
+            C11257d dVar = C11257d.f36065x0;
+            m1044d0(bundle.getBoolean(C11257d.m1080c(1000), dVar.f36069l0));
+            m1049Y(bundle.getBoolean(C11257d.m1080c(1001), dVar.f36070m0));
+            m1048Z(bundle.getBoolean(C11257d.m1080c(1002), dVar.f36071n0));
+            m1046b0(bundle.getBoolean(C11257d.m1080c(1003), dVar.f36072o0));
+            m1052V(bundle.getBoolean(C11257d.m1080c(1004), dVar.f36073p0));
+            m1051W(bundle.getBoolean(C11257d.m1080c(1005), dVar.f36074q0));
+            m1053U(bundle.getBoolean(C11257d.m1080c(1006), dVar.f36075r0));
+            m1047a0(bundle.getInt(C11257d.m1080c(1007), dVar.f36068k0));
+            m1045c0(bundle.getBoolean(C11257d.m1080c(1008), dVar.f36076s0));
+            m1040h0(bundle.getBoolean(C11257d.m1080c(1009), dVar.f36077t0));
+            m1050X(bundle.getBoolean(C11257d.m1080c(1010), dVar.f36078u0));
+            this.f36090J = new SparseArray<>();
             m1041g0(bundle);
-            this.f36088K = m1054T(bundle.getIntArray(C11257d.m1080c(1014)));
+            this.f36091K = m1054T(bundle.getIntArray(C11257d.m1080c(1014)));
         }
     }
 
     public static final class C11259f implements AbstractC6609h {
-        public static final AbstractC6609h.AbstractC6610a<C11259f> f36091N = C11263h.f36113a;
-        public final int f36092M;
-        public final int f36093a;
-        public final int[] f36094b;
-        public final int f36095c;
+        public static final AbstractC6609h.AbstractC6610a<C11259f> f36094N = C11263h.f36116a;
+        public final int f36095M;
+        public final int f36096a;
+        public final int[] f36097b;
+        public final int f36098c;
 
         public C11259f(int i, int[] iArr, int i2) {
-            this.f36093a = i;
+            this.f36096a = i;
             int[] copyOf = Arrays.copyOf(iArr, iArr.length);
-            this.f36094b = copyOf;
-            this.f36095c = iArr.length;
-            this.f36092M = i2;
+            this.f36097b = copyOf;
+            this.f36098c = iArr.length;
+            this.f36095M = i2;
             Arrays.sort(copyOf);
         }
 
@@ -475,8 +475,8 @@ public class C11253f extends AbstractC11269l {
             if (i >= 0 && i2 >= 0) {
                 z = true;
             }
-            C1186a.m38189a(z);
-            C1186a.m38185e(intArray);
+            C1186a.m38192a(z);
+            C1186a.m38188e(intArray);
             return new C11259f(i, intArray, i2);
         }
 
@@ -488,38 +488,38 @@ public class C11253f extends AbstractC11269l {
                 return false;
             }
             C11259f fVar = (C11259f) obj;
-            return this.f36093a == fVar.f36093a && Arrays.equals(this.f36094b, fVar.f36094b) && this.f36092M == fVar.f36092M;
+            return this.f36096a == fVar.f36096a && Arrays.equals(this.f36097b, fVar.f36097b) && this.f36095M == fVar.f36095M;
         }
 
         public int hashCode() {
-            return (((this.f36093a * 31) + Arrays.hashCode(this.f36094b)) * 31) + this.f36092M;
+            return (((this.f36096a * 31) + Arrays.hashCode(this.f36097b)) * 31) + this.f36095M;
         }
     }
 
     public static final class C11260g implements Comparable<C11260g> {
-        public final boolean f36096M;
-        public final int f36097N;
-        public final int f36098O;
-        public final int f36099P;
-        public final int f36100Q;
-        public final boolean f36101R;
-        public final boolean f36102a;
-        public final boolean f36103b;
-        public final boolean f36104c;
+        public final boolean f36099M;
+        public final int f36100N;
+        public final int f36101O;
+        public final int f36102P;
+        public final int f36103Q;
+        public final boolean f36104R;
+        public final boolean f36105a;
+        public final boolean f36106b;
+        public final boolean f36107c;
 
         public C11260g(C6600g1 g1Var, C11257d dVar, int i, String str) {
             AbstractC11396q<String> qVar;
             int i2;
             boolean z = false;
-            this.f36103b = C11253f.m1114A(i, false);
-            int i3 = g1Var.f20567M & (~dVar.f36065k0);
-            this.f36104c = (i3 & 1) != 0;
-            this.f36096M = (i3 & 2) != 0;
+            this.f36106b = C11253f.m1114A(i, false);
+            int i3 = g1Var.f20567M & (~dVar.f36068k0);
+            this.f36107c = (i3 & 1) != 0;
+            this.f36099M = (i3 & 2) != 0;
             int i4 = Integer.MAX_VALUE;
-            if (dVar.f36157a0.isEmpty()) {
+            if (dVar.f36160a0.isEmpty()) {
                 qVar = AbstractC11396q.m767E("");
             } else {
-                qVar = dVar.f36157a0;
+                qVar = dVar.f36160a0;
             }
             int i5 = 0;
             while (true) {
@@ -527,51 +527,51 @@ public class C11253f extends AbstractC11269l {
                     i2 = 0;
                     break;
                 }
-                i2 = C11253f.m1088u(g1Var, qVar.get(i5), dVar.f36161c0);
+                i2 = C11253f.m1088u(g1Var, qVar.get(i5), dVar.f36164c0);
                 if (i2 > 0) {
                     i4 = i5;
                     break;
                 }
                 i5++;
             }
-            this.f36097N = i4;
-            this.f36098O = i2;
-            int bitCount = Integer.bitCount(g1Var.f20568N & dVar.f36159b0);
-            this.f36099P = bitCount;
-            this.f36101R = (g1Var.f20568N & 1088) != 0;
+            this.f36100N = i4;
+            this.f36101O = i2;
+            int bitCount = Integer.bitCount(g1Var.f20568N & dVar.f36162b0);
+            this.f36102P = bitCount;
+            this.f36104R = (g1Var.f20568N & 1088) != 0;
             int u = C11253f.m1088u(g1Var, str, C11253f.m1107H(str) == null);
-            this.f36100Q = u;
-            if (i2 > 0 || ((dVar.f36157a0.isEmpty() && bitCount > 0) || this.f36104c || (this.f36096M && u > 0))) {
+            this.f36103Q = u;
+            if (i2 > 0 || ((dVar.f36160a0.isEmpty() && bitCount > 0) || this.f36107c || (this.f36099M && u > 0))) {
                 z = true;
             }
-            this.f36102a = z;
+            this.f36105a = z;
         }
 
         public int compareTo(C11260g gVar) {
-            AbstractC11374k d = AbstractC11374k.m802j().mo797g(this.f36103b, gVar.f36103b).mo798f(Integer.valueOf(this.f36097N), Integer.valueOf(gVar.f36097N), AbstractC11362g0.m822b().mo788d()).mo800d(this.f36098O, gVar.f36098O).mo800d(this.f36099P, gVar.f36099P).mo797g(this.f36104c, gVar.f36104c).mo798f(Boolean.valueOf(this.f36096M), Boolean.valueOf(gVar.f36096M), this.f36098O == 0 ? AbstractC11362g0.m822b() : AbstractC11362g0.m822b().mo788d()).mo800d(this.f36100Q, gVar.f36100Q);
-            if (this.f36099P == 0) {
-                d = d.mo796h(this.f36101R, gVar.f36101R);
+            AbstractC11374k d = AbstractC11374k.m802j().mo797g(this.f36106b, gVar.f36106b).mo798f(Integer.valueOf(this.f36100N), Integer.valueOf(gVar.f36100N), AbstractC11362g0.m822b().mo788d()).mo800d(this.f36101O, gVar.f36101O).mo800d(this.f36102P, gVar.f36102P).mo797g(this.f36107c, gVar.f36107c).mo798f(Boolean.valueOf(this.f36099M), Boolean.valueOf(gVar.f36099M), this.f36101O == 0 ? AbstractC11362g0.m822b() : AbstractC11362g0.m822b().mo788d()).mo800d(this.f36103Q, gVar.f36103Q);
+            if (this.f36102P == 0) {
+                d = d.mo796h(this.f36104R, gVar.f36104R);
             }
             return d.mo795i();
         }
     }
 
     public static final class C11261h implements Comparable<C11261h> {
-        public final boolean f36105M;
-        public final int f36106N;
-        public final int f36107O;
-        public final int f36108P;
-        public final boolean f36109a;
-        public final C11257d f36110b;
-        public final boolean f36111c;
+        public final boolean f36108M;
+        public final int f36109N;
+        public final int f36110O;
+        public final int f36111P;
+        public final boolean f36112a;
+        public final C11257d f36113b;
+        public final boolean f36114c;
 
         public C11261h(p174m3.C6600g1 r7, p356z4.C11253f.C11257d r8, int r9, boolean r10) {
             throw new UnsupportedOperationException("Method not decompiled: p356z4.C11253f.C11261h.<init>(m3.g1, z4.f$d, int, boolean):void");
         }
 
         public int compareTo(C11261h hVar) {
-            AbstractC11362g0 d = (!this.f36109a || !this.f36105M) ? C11253f.f36042g.mo788d() : C11253f.f36042g;
-            return AbstractC11374k.m802j().mo797g(this.f36105M, hVar.f36105M).mo797g(this.f36109a, hVar.f36109a).mo797g(this.f36111c, hVar.f36111c).mo798f(Integer.valueOf(this.f36108P), Integer.valueOf(hVar.f36108P), AbstractC11362g0.m822b().mo788d()).mo798f(Integer.valueOf(this.f36106N), Integer.valueOf(hVar.f36106N), this.f36110b.f36162d0 ? C11253f.f36042g.mo788d() : C11253f.f36043h).mo798f(Integer.valueOf(this.f36107O), Integer.valueOf(hVar.f36107O), d).mo798f(Integer.valueOf(this.f36106N), Integer.valueOf(hVar.f36106N), d).mo795i();
+            AbstractC11362g0 d = (!this.f36112a || !this.f36108M) ? C11253f.f36045g.mo788d() : C11253f.f36045g;
+            return AbstractC11374k.m802j().mo797g(this.f36108M, hVar.f36108M).mo797g(this.f36112a, hVar.f36112a).mo797g(this.f36114c, hVar.f36114c).mo798f(Integer.valueOf(this.f36111P), Integer.valueOf(hVar.f36111P), AbstractC11362g0.m822b().mo788d()).mo798f(Integer.valueOf(this.f36109N), Integer.valueOf(hVar.f36109N), this.f36113b.f36165d0 ? C11253f.f36045g.mo788d() : C11253f.f36046h).mo798f(Integer.valueOf(this.f36110O), Integer.valueOf(hVar.f36110O), d).mo798f(Integer.valueOf(this.f36109N), Integer.valueOf(hVar.f36109N), d).mo795i();
         }
     }
 
@@ -580,7 +580,7 @@ public class C11253f extends AbstractC11269l {
     }
 
     public static boolean m1114A(int i, boolean z) {
-        int c = C6701t2.m19435c(i);
+        int c = C6701t2.m19436c(i);
         return c == 4 || (z && c == 3);
     }
 
@@ -606,7 +606,7 @@ public class C11253f extends AbstractC11269l {
         if ((g1Var.f20568N & Log.TAG_VIDEO) != 0 || !m1114A(i, false) || (i & i2) == 0) {
             return false;
         }
-        if (str != null && !C1216l0.m37982c(g1Var.f20575U, str)) {
+        if (str != null && !C1216l0.m37985c(g1Var.f20575U, str)) {
             return false;
         }
         int i12 = g1Var.f20580Z;
@@ -682,7 +682,7 @@ public class C11253f extends AbstractC11269l {
         }
         int c = t0Var.m17244c(jVar.mo1010a());
         for (int i = 0; i < jVar.length(); i++) {
-            if (C6701t2.m19434d(iArr[c][jVar.mo1008f(i)]) != 32) {
+            if (C6701t2.m19435d(iArr[c][jVar.mo1008f(i)]) != 32) {
                 return false;
             }
         }
@@ -692,13 +692,13 @@ public class C11253f extends AbstractC11269l {
     public static AbstractC11265j.C11266a m1105J(C7233t0 t0Var, int[][] iArr, int i, C11257d dVar) {
         C7233t0 t0Var2 = t0Var;
         C11257d dVar2 = dVar;
-        int i2 = dVar2.f36068n0 ? 24 : 16;
-        boolean z = dVar2.f36067m0 && (i & i2) != 0;
+        int i2 = dVar2.f36071n0 ? 24 : 16;
+        boolean z = dVar2.f36070m0 && (i & i2) != 0;
         int i3 = 0;
-        while (i3 < t0Var2.f23029a) {
+        while (i3 < t0Var2.f23032a) {
             C7227r0 b = t0Var2.m17245b(i3);
             int i4 = i3;
-            int[] s = m1090s(b, iArr[i3], z, i2, dVar2.f36156a, dVar2.f36158b, dVar2.f36160c, dVar2.f36142M, dVar2.f36143N, dVar2.f36144O, dVar2.f36145P, dVar2.f36146Q, dVar2.f36147R, dVar2.f36148S, dVar2.f36149T);
+            int[] s = m1090s(b, iArr[i3], z, i2, dVar2.f36159a, dVar2.f36161b, dVar2.f36163c, dVar2.f36145M, dVar2.f36146N, dVar2.f36147O, dVar2.f36148P, dVar2.f36149Q, dVar2.f36150R, dVar2.f36151S, dVar2.f36152T);
             if (s.length > 0) {
                 return new AbstractC11265j.C11266a(b, s);
             }
@@ -713,15 +713,15 @@ public class C11253f extends AbstractC11269l {
         int i = -1;
         C7227r0 r0Var = null;
         C11261h hVar = null;
-        for (int i2 = 0; i2 < t0Var.f23029a; i2++) {
+        for (int i2 = 0; i2 < t0Var.f23032a; i2++) {
             C7227r0 b = t0Var.m17245b(i2);
-            List<Integer> x = m1085x(b, dVar.f36147R, dVar.f36148S, dVar.f36149T);
+            List<Integer> x = m1085x(b, dVar.f36150R, dVar.f36151S, dVar.f36152T);
             int[] iArr2 = iArr[i2];
-            for (int i3 = 0; i3 < b.f23023a; i3++) {
+            for (int i3 = 0; i3 < b.f23026a; i3++) {
                 C6600g1 b2 = b.m17272b(i3);
-                if ((b2.f20568N & Log.TAG_VIDEO) == 0 && m1114A(iArr2[i3], dVar.f36073s0)) {
+                if ((b2.f20568N & Log.TAG_VIDEO) == 0 && m1114A(iArr2[i3], dVar.f36076s0)) {
                     C11261h hVar2 = new C11261h(b2, dVar, iArr2[i3], x.contains(Integer.valueOf(i3)));
-                    if ((hVar2.f36109a || dVar.f36066l0) && (hVar == null || hVar2.compareTo(hVar) > 0)) {
+                    if ((hVar2.f36112a || dVar.f36069l0) && (hVar == null || hVar2.compareTo(hVar) > 0)) {
                         r0Var = b;
                         i = i3;
                         hVar = hVar2;
@@ -746,9 +746,9 @@ public class C11253f extends AbstractC11269l {
 
     public static int[] m1092q(C7227r0 r0Var, int[] iArr, int i, int i2, boolean z, boolean z2, boolean z3) {
         C6600g1 b = r0Var.m17272b(i);
-        int[] iArr2 = new int[r0Var.f23023a];
+        int[] iArr2 = new int[r0Var.f23026a];
         int i3 = 0;
-        for (int i4 = 0; i4 < r0Var.f23023a; i4++) {
+        for (int i4 = 0; i4 < r0Var.f23026a; i4++) {
             if (i4 == i || m1113B(r0Var.m17272b(i4), iArr[i4], b, i2, z, z2, z3)) {
                 i3++;
                 iArr2[i3] = i4;
@@ -773,12 +773,12 @@ public class C11253f extends AbstractC11269l {
         HashSet hashSet;
         int i12;
         int i13;
-        if (r0Var.f23023a < 2) {
-            return f36041f;
+        if (r0Var.f23026a < 2) {
+            return f36044f;
         }
         List<Integer> x = m1085x(r0Var, i10, i11, z2);
         if (x.size() < 2) {
-            return f36041f;
+            return f36044f;
         }
         if (!z) {
             HashSet hashSet2 = new HashSet();
@@ -812,7 +812,7 @@ public class C11253f extends AbstractC11269l {
             str = null;
         }
         m1093p(r0Var, iArr, i, str, i2, i3, i4, i5, i6, i7, i8, i9, x);
-        return x.size() < 2 ? f36041f : C0199c.m42097i(x);
+        return x.size() < 2 ? f36044f : C0199c.m42100i(x);
     }
 
     public static int m1088u(C6600g1 g1Var, String str, boolean z) {
@@ -827,7 +827,7 @@ public class C11253f extends AbstractC11269l {
         if (H2.startsWith(H) || H.startsWith(H2)) {
             return 3;
         }
-        return C1216l0.m38018B0(H2, "-")[0].equals(C1216l0.m38018B0(H, "-")[0]) ? 2 : 0;
+        return C1216l0.m38021B0(H2, "-")[0].equals(C1216l0.m38021B0(H, "-")[0]) ? 2 : 0;
     }
 
     public static android.graphics.Point m1086w(boolean r3, int r4, int r5, int r6, int r7) {
@@ -836,13 +836,13 @@ public class C11253f extends AbstractC11269l {
 
     public static List<Integer> m1085x(C7227r0 r0Var, int i, int i2, boolean z) {
         int i3;
-        ArrayList arrayList = new ArrayList(r0Var.f23023a);
-        for (int i4 = 0; i4 < r0Var.f23023a; i4++) {
+        ArrayList arrayList = new ArrayList(r0Var.f23026a);
+        for (int i4 = 0; i4 < r0Var.f23026a; i4++) {
             arrayList.add(Integer.valueOf(i4));
         }
         if (!(i == Integer.MAX_VALUE || i2 == Integer.MAX_VALUE)) {
             int i5 = Integer.MAX_VALUE;
-            for (int i6 = 0; i6 < r0Var.f23023a; i6++) {
+            for (int i6 = 0; i6 < r0Var.f23026a; i6++) {
                 C6600g1 b = r0Var.m17272b(i6);
                 int i7 = b.f20580Z;
                 if (i7 > 0 && (i3 = b.f20582a0) > 0) {
@@ -857,7 +857,7 @@ public class C11253f extends AbstractC11269l {
             }
             if (i5 != Integer.MAX_VALUE) {
                 for (int size = arrayList.size() - 1; size >= 0; size--) {
-                    int f = r0Var.m17272b(((Integer) arrayList.get(size)).intValue()).m19897f();
+                    int f = r0Var.m17272b(((Integer) arrayList.get(size)).intValue()).m19898f();
                     if (f == -1 || f > i5) {
                         arrayList.remove(size);
                     }
@@ -871,7 +871,7 @@ public class C11253f extends AbstractC11269l {
         if (aVar != null) {
             int b = aVar.m1001b();
             Pair<C11275q.C11276a, Integer> pair = sparseArray.get(b);
-            if (pair == null || ((C11275q.C11276a) pair.first).f36137b.isEmpty()) {
+            if (pair == null || ((C11275q.C11276a) pair.first).f36140b.isEmpty()) {
                 sparseArray.put(b, Pair.create(aVar, Integer.valueOf(i)));
             }
         }
@@ -900,7 +900,7 @@ public class C11253f extends AbstractC11269l {
                     aVarArr[i5] = m1099P(aVar.m1013c(i5), iArr[i5], iArr2[i5], dVar, true);
                     z = aVarArr[i5] != null;
                 }
-                if (aVar.m1013c(i5).f23029a <= 0) {
+                if (aVar.m1013c(i5).f23032a <= 0) {
                     i = 0;
                 }
                 i6 |= i;
@@ -917,14 +917,14 @@ public class C11253f extends AbstractC11269l {
                 bVar = bVar2;
                 str2 = str3;
                 i2 = i8;
-                Pair<AbstractC11265j.C11266a, C11255b> L = m1103L(aVar.m1013c(i8), iArr[i8], iArr2[i8], dVar, dVar.f36075u0 || i6 == 0);
+                Pair<AbstractC11265j.C11266a, C11255b> L = m1103L(aVar.m1013c(i8), iArr[i8], iArr2[i8], dVar, dVar.f36078u0 || i6 == 0);
                 if (L != null && (bVar == null || ((C11255b) L.second).compareTo(bVar) > 0)) {
                     if (i3 != -1) {
                         aVarArr[i3] = null;
                     }
                     AbstractC11265j.C11266a aVar2 = (AbstractC11265j.C11266a) L.first;
                     aVarArr[i2] = aVar2;
-                    str3 = aVar2.f36114a.m17272b(aVar2.f36115b[0]).f20585c;
+                    str3 = aVar2.f36117a.m17272b(aVar2.f36118b[0]).f20585c;
                     bVar2 = (C11255b) L.second;
                     i7 = i2;
                     i8 = i2 + 1;
@@ -979,13 +979,13 @@ public class C11253f extends AbstractC11269l {
         C11255b bVar = null;
         int i2 = -1;
         int i3 = -1;
-        for (int i4 = 0; i4 < t0Var.f23029a; i4++) {
+        for (int i4 = 0; i4 < t0Var.f23032a; i4++) {
             C7227r0 b = t0Var.m17245b(i4);
             int[] iArr2 = iArr[i4];
-            for (int i5 = 0; i5 < b.f23023a; i5++) {
-                if (m1114A(iArr2[i5], dVar.f36073s0)) {
+            for (int i5 = 0; i5 < b.f23026a; i5++) {
+                if (m1114A(iArr2[i5], dVar.f36076s0)) {
                     C11255b bVar2 = new C11255b(b.m17272b(i5), dVar, iArr2[i5]);
-                    if ((bVar2.f36057a || dVar.f36069o0) && (bVar == null || bVar2.compareTo(bVar) > 0)) {
+                    if ((bVar2.f36060a || dVar.f36072o0) && (bVar == null || bVar2.compareTo(bVar) > 0)) {
                         i2 = i4;
                         i3 = i5;
                         bVar = bVar2;
@@ -997,8 +997,8 @@ public class C11253f extends AbstractC11269l {
             return null;
         }
         C7227r0 b2 = t0Var.m17245b(i2);
-        if (!dVar.f36163e0 && !dVar.f36162d0 && z) {
-            int[] q = m1092q(b2, iArr[i2], i3, dVar.f36154Y, dVar.f36070p0, dVar.f36071q0, dVar.f36072r0);
+        if (!dVar.f36166e0 && !dVar.f36165d0 && z) {
+            int[] q = m1092q(b2, iArr[i2], i3, dVar.f36157Y, dVar.f36073p0, dVar.f36074q0, dVar.f36075r0);
             if (q.length > 1) {
                 aVar = new AbstractC11265j.C11266a(b2, q);
             }
@@ -1006,18 +1006,18 @@ public class C11253f extends AbstractC11269l {
         if (aVar == null) {
             aVar = new AbstractC11265j.C11266a(b2, i3);
         }
-        return Pair.create(aVar, (C11255b) C1186a.m38185e(bVar));
+        return Pair.create(aVar, (C11255b) C1186a.m38188e(bVar));
     }
 
     public AbstractC11265j.C11266a m1101N(int i, C7233t0 t0Var, int[][] iArr, C11257d dVar) {
         C7227r0 r0Var = null;
         C11256c cVar = null;
         int i2 = 0;
-        for (int i3 = 0; i3 < t0Var.f23029a; i3++) {
+        for (int i3 = 0; i3 < t0Var.f23032a; i3++) {
             C7227r0 b = t0Var.m17245b(i3);
             int[] iArr2 = iArr[i3];
-            for (int i4 = 0; i4 < b.f23023a; i4++) {
-                if (m1114A(iArr2[i4], dVar.f36073s0)) {
+            for (int i4 = 0; i4 < b.f23026a; i4++) {
+                if (m1114A(iArr2[i4], dVar.f36076s0)) {
                     C11256c cVar2 = new C11256c(b.m17272b(i4), iArr2[i4]);
                     if (cVar == null || cVar2.compareTo(cVar) > 0) {
                         r0Var = b;
@@ -1037,13 +1037,13 @@ public class C11253f extends AbstractC11269l {
         int i = -1;
         C7227r0 r0Var = null;
         C11260g gVar = null;
-        for (int i2 = 0; i2 < t0Var.f23029a; i2++) {
+        for (int i2 = 0; i2 < t0Var.f23032a; i2++) {
             C7227r0 b = t0Var.m17245b(i2);
             int[] iArr2 = iArr[i2];
-            for (int i3 = 0; i3 < b.f23023a; i3++) {
-                if (m1114A(iArr2[i3], dVar.f36073s0)) {
+            for (int i3 = 0; i3 < b.f23026a; i3++) {
+                if (m1114A(iArr2[i3], dVar.f36076s0)) {
                     C11260g gVar2 = new C11260g(b.m17272b(i3), dVar, iArr2[i3], str);
-                    if (gVar2.f36102a && (gVar == null || gVar2.compareTo(gVar) > 0)) {
+                    if (gVar2.f36105a && (gVar == null || gVar2.compareTo(gVar) > 0)) {
                         r0Var = b;
                         i = i3;
                         gVar = gVar2;
@@ -1054,11 +1054,11 @@ public class C11253f extends AbstractC11269l {
         if (r0Var == null) {
             return null;
         }
-        return Pair.create(new AbstractC11265j.C11266a(r0Var, i), (C11260g) C1186a.m38185e(gVar));
+        return Pair.create(new AbstractC11265j.C11266a(r0Var, i), (C11260g) C1186a.m38188e(gVar));
     }
 
     public AbstractC11265j.C11266a m1099P(C7233t0 t0Var, int[][] iArr, int i, C11257d dVar, boolean z) {
-        AbstractC11265j.C11266a J = (dVar.f36163e0 || dVar.f36162d0 || !z) ? null : m1105J(t0Var, iArr, i, dVar);
+        AbstractC11265j.C11266a J = (dVar.f36166e0 || dVar.f36165d0 || !z) ? null : m1105J(t0Var, iArr, i, dVar);
         return J == null ? m1102M(t0Var, iArr, dVar) : J;
     }
 
@@ -1069,7 +1069,7 @@ public class C11253f extends AbstractC11269l {
 
     @Override
     public final Pair<C6709v2[], AbstractC11265j[]> mo1016j(AbstractC11269l.C11270a aVar, int[][][] iArr, int[] iArr2, AbstractC7230t.C7231a aVar2, AbstractC6604g3 g3Var) {
-        C11257d dVar = this.f36045e.get();
+        C11257d dVar = this.f36048e.get();
         int a = aVar.m1015a();
         AbstractC11265j.C11266a[] K = m1104K(aVar, iArr, iArr2, dVar);
         SparseArray<Pair<C11275q.C11276a, Integer>> t = m1089t(aVar, dVar);
@@ -1087,16 +1087,16 @@ public class C11253f extends AbstractC11269l {
                 K[i3] = null;
             }
         }
-        AbstractC11265j[] a2 = this.f36044d.mo1022a(K, m963a(), aVar2, g3Var);
+        AbstractC11265j[] a2 = this.f36047d.mo1022a(K, m963a(), aVar2, g3Var);
         C6709v2[] v2VarArr = new C6709v2[a];
         for (int i4 = 0; i4 < a; i4++) {
             boolean z = true;
-            if ((dVar.m1073k(i4) || dVar.f36165g0.contains(Integer.valueOf(aVar.m1014b(i4)))) || (aVar.m1014b(i4) != -2 && a2[i4] == null)) {
+            if ((dVar.m1073k(i4) || dVar.f36168g0.contains(Integer.valueOf(aVar.m1014b(i4)))) || (aVar.m1014b(i4) != -2 && a2[i4] == null)) {
                 z = false;
             }
             v2VarArr[i4] = z ? C6709v2.f21049b : null;
         }
-        if (dVar.f36074t0) {
+        if (dVar.f36077t0) {
             m1109F(aVar, iArr, v2VarArr, a2);
         }
         return Pair.create(v2VarArr, a2);
@@ -1105,7 +1105,7 @@ public class C11253f extends AbstractC11269l {
     public final void m1094o(AbstractC11269l.C11270a aVar, AbstractC11265j.C11266a[] aVarArr, int i, C11275q.C11276a aVar2, int i2) {
         for (int i3 = 0; i3 < aVarArr.length; i3++) {
             if (i2 == i3) {
-                aVarArr[i3] = new AbstractC11265j.C11266a(aVar2.f36136a, C0199c.m42097i(aVar2.f36137b));
+                aVarArr[i3] = new AbstractC11265j.C11266a(aVar2.f36139a, C0199c.m42100i(aVar2.f36140b));
             } else if (aVar.m1014b(i3) == i) {
                 aVarArr[i3] = null;
             }
@@ -1117,13 +1117,13 @@ public class C11253f extends AbstractC11269l {
         int a = aVar.m1015a();
         for (int i = 0; i < a; i++) {
             C7233t0 c = aVar.m1013c(i);
-            for (int i2 = 0; i2 < c.f23029a; i2++) {
-                m1108G(sparseArray, dVar.f36164f0.m1005b(c.m17245b(i2)), i);
+            for (int i2 = 0; i2 < c.f23032a; i2++) {
+                m1108G(sparseArray, dVar.f36167f0.m1005b(c.m17245b(i2)), i);
             }
         }
         C7233t0 e = aVar.m1011e();
-        for (int i3 = 0; i3 < e.f23029a; i3++) {
-            m1108G(sparseArray, dVar.f36164f0.m1005b(e.m17245b(i3)), -1);
+        for (int i3 = 0; i3 < e.f23032a; i3++) {
+            m1108G(sparseArray, dVar.f36167f0.m1005b(e.m17245b(i3)), -1);
         }
         return sparseArray;
     }
@@ -1134,7 +1134,7 @@ public class C11253f extends AbstractC11269l {
         if (l == null) {
             return null;
         }
-        return new AbstractC11265j.C11266a(c.m17245b(l.f36093a), l.f36094b, l.f36092M);
+        return new AbstractC11265j.C11266a(c.m17245b(l.f36096a), l.f36097b, l.f36095M);
     }
 
     public final boolean m1084y(AbstractC11269l.C11270a aVar, C11257d dVar, int i) {
@@ -1142,7 +1142,7 @@ public class C11253f extends AbstractC11269l {
     }
 
     public final boolean m1083z(AbstractC11269l.C11270a aVar, C11257d dVar, int i) {
-        return dVar.m1073k(i) || dVar.f36165g0.contains(Integer.valueOf(aVar.m1014b(i)));
+        return dVar.m1073k(i) || dVar.f36168g0.contains(Integer.valueOf(aVar.m1014b(i)));
     }
 
     public C11253f(Context context, AbstractC11265j.AbstractC11267b bVar) {
@@ -1150,7 +1150,7 @@ public class C11253f extends AbstractC11269l {
     }
 
     public C11253f(C11257d dVar, AbstractC11265j.AbstractC11267b bVar) {
-        this.f36044d = bVar;
-        this.f36045e = new AtomicReference<>(dVar);
+        this.f36047d = bVar;
+        this.f36048e = new AtomicReference<>(dVar);
     }
 }

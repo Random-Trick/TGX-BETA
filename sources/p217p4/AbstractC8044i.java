@@ -13,17 +13,17 @@ import p341y4.C10371a;
 import p341y4.C10383h;
 
 public interface AbstractC8044i {
-    public static final AbstractC8044i f26201a = new C8045a();
+    public static final AbstractC8044i f26204a = new C8045a();
 
     public class C8045a implements AbstractC8044i {
         @Override
-        public boolean mo13723a(C6600g1 g1Var) {
+        public boolean mo13722a(C6600g1 g1Var) {
             String str = g1Var.f20575U;
             return "text/vtt".equals(str) || "text/x-ssa".equals(str) || "application/ttml+xml".equals(str) || "application/x-mp4-vtt".equals(str) || "application/x-subrip".equals(str) || "application/x-quicktime-tx3g".equals(str) || "application/cea-608".equals(str) || "application/x-mp4-cea-608".equals(str) || "application/cea-708".equals(str) || "application/dvbsubs".equals(str) || "application/pgs".equals(str) || "text/x-exoplayer-cues".equals(str);
         }
 
         @Override
-        public AbstractC8042g mo13722b(C6600g1 g1Var) {
+        public AbstractC8042g mo13721b(C6600g1 g1Var) {
             String str = g1Var.f20575U;
             if (str != null) {
                 char c = 65535;
@@ -132,7 +132,7 @@ public interface AbstractC8044i {
         }
     }
 
-    boolean mo13723a(C6600g1 g1Var);
+    boolean mo13722a(C6600g1 g1Var);
 
-    AbstractC8042g mo13722b(C6600g1 g1Var);
+    AbstractC8042g mo13721b(C6600g1 g1Var);
 }

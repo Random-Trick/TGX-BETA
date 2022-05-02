@@ -17,10 +17,10 @@ public interface Consumer<T> {
         }
 
         @Override
-        public void mo22128k(Object obj) {
+        public void mo22129k(Object obj) {
             this.f18063a.accept(obj);
         }
     }
 
-    void mo22128k(Object obj);
+    void mo22129k(Object obj);
 }

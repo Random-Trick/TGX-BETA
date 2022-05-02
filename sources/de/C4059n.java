@@ -9,31 +9,31 @@ public class C4059n {
         this.f13686a = z;
     }
 
-    public void m29109a(int i) {
+    public void m29111a(int i) {
         this.f13687b = i | this.f13687b;
     }
 
-    public boolean m29108b(boolean z) {
-        return m29104f(z ? 6145 : 6144);
+    public boolean m29110b(boolean z) {
+        return m29106f(z ? 6145 : 6144);
     }
 
-    public boolean m29107c() {
-        return m29104f(6);
+    public boolean m29109c() {
+        return m29106f(6);
     }
 
-    public boolean m29106d() {
-        return this.f13688c > 0 && m29104f(3145728);
+    public boolean m29108d() {
+        return this.f13688c > 0 && m29106f(3145728);
     }
 
-    public int m29105e() {
+    public int m29107e() {
         return this.f13688c;
     }
 
-    public boolean m29104f(int i) {
+    public boolean m29106f(int i) {
         return (i & this.f13687b) != 0;
     }
 
-    public void m29103g(int i) {
+    public void m29105g(int i) {
         this.f13688c = i;
     }
 }

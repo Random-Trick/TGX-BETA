@@ -10,7 +10,7 @@ public final class C1231t {
         this(32);
     }
 
-    public void m37879a(long j) {
+    public void m37882a(long j) {
         int i = this.f4563a;
         long[] jArr = this.f4564b;
         if (i == jArr.length) {
@@ -22,7 +22,7 @@ public final class C1231t {
         jArr2[i2] = j;
     }
 
-    public long m37878b(int i) {
+    public long m37881b(int i) {
         if (i >= 0 && i < this.f4563a) {
             return this.f4564b[i];
         }
@@ -35,11 +35,11 @@ public final class C1231t {
         throw new IndexOutOfBoundsException(sb2.toString());
     }
 
-    public int m37877c() {
+    public int m37880c() {
         return this.f4563a;
     }
 
-    public long[] m37876d() {
+    public long[] m37879d() {
         return Arrays.copyOf(this.f4564b, this.f4563a);
     }
 

@@ -4,7 +4,7 @@ import android.os.IBinder;
 import android.os.IInterface;
 
 public abstract class AbstractBinderC8671m0 extends BinderC8655e0 implements AbstractC8673n0 {
-    public static AbstractC8673n0 m11773s(IBinder iBinder) {
+    public static AbstractC8673n0 m11772s(IBinder iBinder) {
         if (iBinder == null) {
             return null;
         }

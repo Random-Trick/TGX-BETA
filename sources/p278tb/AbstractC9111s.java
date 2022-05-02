@@ -8,19 +8,19 @@ import qa.C8294g;
 import qa.C8298k;
 
 public interface AbstractC9111s {
-    public static final C9112a f29322b = new C9112a(null);
-    public static final AbstractC9111s f29321a = new C9112a.C9113a();
+    public static final C9112a f29325b = new C9112a(null);
+    public static final AbstractC9111s f29324a = new C9112a.C9113a();
 
     public static final class C9112a {
 
         public static final class C9113a implements AbstractC9111s {
             @Override
-            public List<InetAddress> mo10411a(String str) {
-                C8298k.m12934e(str, "hostname");
+            public List<InetAddress> mo10410a(String str) {
+                C8298k.m12933e(str, "hostname");
                 try {
                     InetAddress[] allByName = InetAddress.getAllByName(str);
-                    C8298k.m12935d(allByName, "InetAddress.getAllByName(hostname)");
-                    return C5296i.m23401L(allByName);
+                    C8298k.m12934d(allByName, "InetAddress.getAllByName(hostname)");
+                    return C5296i.m23402L(allByName);
                 } catch (NullPointerException e) {
                     UnknownHostException unknownHostException = new UnknownHostException("Broken system behaviour for dns lookup of " + str);
                     unknownHostException.initCause(e);
@@ -37,5 +37,5 @@ public interface AbstractC9111s {
         }
     }
 
-    List<InetAddress> mo10411a(String str);
+    List<InetAddress> mo10410a(String str);
 }

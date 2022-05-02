@@ -8,19 +8,19 @@ public class C1131g<T> extends C1130f<T> {
     }
 
     @Override
-    public boolean mo38328a(T t) {
+    public boolean mo38331a(T t) {
         boolean a;
         synchronized (this.f4334c) {
-            a = super.mo38328a(t);
+            a = super.mo38331a(t);
         }
         return a;
     }
 
     @Override
-    public T mo38327b() {
+    public T mo38330b() {
         T t;
         synchronized (this.f4334c) {
-            t = (T) super.mo38327b();
+            t = (T) super.mo38330b();
         }
         return t;
     }

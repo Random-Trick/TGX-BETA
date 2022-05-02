@@ -22,10 +22,10 @@ public class C0036a extends ImageView {
 
         public C0037a(int i) {
             C0036a.this.f82b = i;
-            m42551a((int) rect().width());
+            m42554a((int) rect().width());
         }
 
-        public final void m42551a(int i) {
+        public final void m42554a(int i) {
             float f = i / 2;
             RadialGradient radialGradient = new RadialGradient(f, f, C0036a.this.f82b, new int[]{1023410176, 0}, (float[]) null, Shader.TileMode.CLAMP);
             this.f83a = radialGradient;
@@ -44,7 +44,7 @@ public class C0036a extends ImageView {
         @Override
         public void onResize(float f, float f2) {
             super.onResize(f, f2);
-            m42551a((int) f);
+            m42554a((int) f);
         }
     }
 
@@ -55,9 +55,9 @@ public class C0036a extends ImageView {
         int i2 = (int) (1.75f * f);
         int i3 = (int) (0.0f * f);
         this.f82b = (int) (3.5f * f);
-        if (m42553a()) {
+        if (m42556a()) {
             shapeDrawable = new ShapeDrawable(new OvalShape());
-            C1489y.m36734e0(this, f * 4.0f);
+            C1489y.m36737e0(this, f * 4.0f);
         } else {
             ShapeDrawable shapeDrawable2 = new ShapeDrawable(new C0037a(this.f82b));
             setLayerType(1, shapeDrawable2.getPaint());
@@ -67,14 +67,14 @@ public class C0036a extends ImageView {
             shapeDrawable = shapeDrawable2;
         }
         shapeDrawable.getPaint().setColor(i);
-        C1489y.m36740b0(this, shapeDrawable);
+        C1489y.m36743b0(this, shapeDrawable);
     }
 
-    public final boolean m42553a() {
+    public final boolean m42556a() {
         return Build.VERSION.SDK_INT >= 21;
     }
 
-    public void m42552b(Animation.AnimationListener animationListener) {
+    public void m42555b(Animation.AnimationListener animationListener) {
         this.f81a = animationListener;
     }
 
@@ -99,7 +99,7 @@ public class C0036a extends ImageView {
     @Override
     public void onMeasure(int i, int i2) {
         super.onMeasure(i, i2);
-        if (!m42553a()) {
+        if (!m42556a()) {
             setMeasuredDimension(getMeasuredWidth() + (this.f82b * 2), getMeasuredHeight() + (this.f82b * 2));
         }
     }

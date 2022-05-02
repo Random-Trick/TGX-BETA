@@ -30,11 +30,11 @@ public final class C6743f extends AbstractC6736b {
             this(i, j);
         }
 
-        public static C6745b m19162c(Parcel parcel) {
+        public static C6745b m19163c(Parcel parcel) {
             return new C6745b(parcel.readInt(), parcel.readLong());
         }
 
-        public final void m19161d(Parcel parcel) {
+        public final void m19162d(Parcel parcel) {
             parcel.writeInt(this.f21210a);
             parcel.writeLong(this.f21211b);
         }
@@ -49,11 +49,11 @@ public final class C6743f extends AbstractC6736b {
         this(parcel);
     }
 
-    public static C6743f m19167a(C1189b0 b0Var) {
-        int D = b0Var.m38156D();
+    public static C6743f m19168a(C1189b0 b0Var) {
+        int D = b0Var.m38159D();
         ArrayList arrayList = new ArrayList(D);
         for (int i = 0; i < D; i++) {
-            arrayList.add(C6746c.m19156e(b0Var));
+            arrayList.add(C6746c.m19157e(b0Var));
         }
         return new C6743f(arrayList);
     }
@@ -63,7 +63,7 @@ public final class C6743f extends AbstractC6736b {
         int size = this.f21209a.size();
         parcel.writeInt(size);
         for (int i2 = 0; i2 < size; i2++) {
-            this.f21209a.get(i2).m19155f(parcel);
+            this.f21209a.get(i2).m19156f(parcel);
         }
     }
 
@@ -75,7 +75,7 @@ public final class C6743f extends AbstractC6736b {
         int readInt = parcel.readInt();
         ArrayList arrayList = new ArrayList(readInt);
         for (int i = 0; i < readInt; i++) {
-            arrayList.add(C6746c.m19157d(parcel));
+            arrayList.add(C6746c.m19158d(parcel));
         }
         this.f21209a = Collections.unmodifiableList(arrayList);
     }
@@ -107,11 +107,11 @@ public final class C6743f extends AbstractC6736b {
             this.f21222k = i3;
         }
 
-        public static C6746c m19157d(Parcel parcel) {
+        public static C6746c m19158d(Parcel parcel) {
             return new C6746c(parcel);
         }
 
-        public static C6746c m19156e(C1189b0 b0Var) {
+        public static C6746c m19157e(C1189b0 b0Var) {
             boolean z;
             int i;
             int i2;
@@ -123,36 +123,36 @@ public final class C6743f extends AbstractC6736b {
             boolean z3;
             long j3;
             boolean z4;
-            long F = b0Var.m38154F();
-            boolean z5 = (b0Var.m38156D() & Log.TAG_YOUTUBE) != 0;
+            long F = b0Var.m38157F();
+            boolean z5 = (b0Var.m38159D() & Log.TAG_YOUTUBE) != 0;
             ArrayList arrayList2 = new ArrayList();
             if (!z5) {
-                int D = b0Var.m38156D();
+                int D = b0Var.m38159D();
                 boolean z6 = (D & Log.TAG_YOUTUBE) != 0;
                 boolean z7 = (D & 64) != 0;
                 boolean z8 = (D & 32) != 0;
-                long F2 = z7 ? b0Var.m38154F() : -9223372036854775807L;
+                long F2 = z7 ? b0Var.m38157F() : -9223372036854775807L;
                 if (!z7) {
-                    int D2 = b0Var.m38156D();
+                    int D2 = b0Var.m38159D();
                     ArrayList arrayList3 = new ArrayList(D2);
                     for (int i4 = 0; i4 < D2; i4++) {
-                        arrayList3.add(new C6745b(b0Var.m38156D(), b0Var.m38154F(), null));
+                        arrayList3.add(new C6745b(b0Var.m38159D(), b0Var.m38157F(), null));
                     }
                     arrayList2 = arrayList3;
                 }
                 if (z8) {
-                    long D3 = b0Var.m38156D();
+                    long D3 = b0Var.m38159D();
                     boolean z9 = (128 & D3) != 0;
-                    j3 = ((((D3 & 1) << 32) | b0Var.m38154F()) * 1000) / 90;
+                    j3 = ((((D3 & 1) << 32) | b0Var.m38157F()) * 1000) / 90;
                     z4 = z9;
                 } else {
                     z4 = false;
                     j3 = -9223372036854775807L;
                 }
-                int J = b0Var.m38150J();
-                int D4 = b0Var.m38156D();
+                int J = b0Var.m38153J();
+                int D4 = b0Var.m38159D();
                 z = z7;
-                i = b0Var.m38156D();
+                i = b0Var.m38159D();
                 j = j3;
                 arrayList = arrayList2;
                 j2 = F2;
@@ -174,7 +174,7 @@ public final class C6743f extends AbstractC6736b {
             return new C6746c(F, z5, z3, z, arrayList, j2, z2, j, i3, i2, i);
         }
 
-        public final void m19155f(Parcel parcel) {
+        public final void m19156f(Parcel parcel) {
             parcel.writeLong(this.f21212a);
             parcel.writeByte(this.f21213b ? (byte) 1 : (byte) 0);
             parcel.writeByte(this.f21214c ? (byte) 1 : (byte) 0);
@@ -182,7 +182,7 @@ public final class C6743f extends AbstractC6736b {
             int size = this.f21217f.size();
             parcel.writeInt(size);
             for (int i = 0; i < size; i++) {
-                this.f21217f.get(i).m19161d(parcel);
+                this.f21217f.get(i).m19162d(parcel);
             }
             parcel.writeLong(this.f21216e);
             parcel.writeByte(this.f21218g ? (byte) 1 : (byte) 0);
@@ -201,7 +201,7 @@ public final class C6743f extends AbstractC6736b {
             int readInt = parcel.readInt();
             ArrayList arrayList = new ArrayList(readInt);
             for (int i = 0; i < readInt; i++) {
-                arrayList.add(C6745b.m19162c(parcel));
+                arrayList.add(C6745b.m19163c(parcel));
             }
             this.f21217f = Collections.unmodifiableList(arrayList);
             this.f21216e = parcel.readLong();

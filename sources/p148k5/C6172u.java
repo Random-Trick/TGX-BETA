@@ -14,25 +14,25 @@ public final class C6172u {
     public final Map<BasePendingResult<?>, Boolean> f19551a = DesugarCollections.synchronizedMap(new WeakHashMap());
     public final Map<C6777m<?>, Boolean> f19552b = DesugarCollections.synchronizedMap(new WeakHashMap());
 
-    public final void m21127a(BasePendingResult<? extends AbstractC5876k> basePendingResult, boolean z) {
+    public final void m21128a(BasePendingResult<? extends AbstractC5876k> basePendingResult, boolean z) {
         this.f19551a.put(basePendingResult, Boolean.valueOf(z));
-        basePendingResult.mo21901b(new C6110f3(this, basePendingResult));
+        basePendingResult.mo21902b(new C6110f3(this, basePendingResult));
     }
 
-    public final <TResult> void m21126b(C6777m<TResult> mVar, boolean z) {
+    public final <TResult> void m21127b(C6777m<TResult> mVar, boolean z) {
         this.f19552b.put(mVar, Boolean.valueOf(z));
-        mVar.m19086a().mo19078c(new C6115g3(this, mVar));
+        mVar.m19087a().mo19079c(new C6115g3(this, mVar));
     }
 
-    public final boolean m21125c() {
+    public final boolean m21126c() {
         return !this.f19551a.isEmpty() || !this.f19552b.isEmpty();
     }
 
-    public final void m21124d() {
-        m21120h(false, C6106f.f19366a0);
+    public final void m21125d() {
+        m21121h(false, C6106f.f19366a0);
     }
 
-    public final void m21123e(int i, String str) {
+    public final void m21124e(int i, String str) {
         StringBuilder sb2 = new StringBuilder("The connection to Google Play services was lost");
         if (i == 1) {
             sb2.append(" due to service disconnection.");
@@ -43,10 +43,10 @@ public final class C6172u {
             sb2.append(" Last reason for disconnect: ");
             sb2.append(str);
         }
-        m21120h(true, new Status(20, sb2.toString()));
+        m21121h(true, new Status(20, sb2.toString()));
     }
 
-    public final void m21120h(boolean z, Status status) {
+    public final void m21121h(boolean z, Status status) {
         HashMap hashMap;
         HashMap hashMap2;
         synchronized (this.f19551a) {
@@ -57,12 +57,12 @@ public final class C6172u {
         }
         for (Map.Entry entry : hashMap.entrySet()) {
             if (z || ((Boolean) entry.getValue()).booleanValue()) {
-                ((BasePendingResult) entry.getKey()).m30389f(status);
+                ((BasePendingResult) entry.getKey()).m30391f(status);
             }
         }
         for (Map.Entry entry2 : hashMap2.entrySet()) {
             if (z || ((Boolean) entry2.getValue()).booleanValue()) {
-                ((C6777m) entry2.getKey()).m19083d(new C5861b(status));
+                ((C6777m) entry2.getKey()).m19084d(new C5861b(status));
             }
         }
     }

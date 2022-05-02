@@ -12,20 +12,20 @@ public class C8914p0 extends C8912o0 {
     }
 
     @Override
-    public CameraCharacteristics mo10960c(String str) {
+    public CameraCharacteristics mo10959c(String str) {
         try {
-            return this.f28767a.getCameraCharacteristics(str);
+            return this.f28770a.getCameraCharacteristics(str);
         } catch (CameraAccessException e) {
-            throw C8887f.m11022e(e);
+            throw C8887f.m11021e(e);
         }
     }
 
     @Override
-    public void mo10959d(String str, Executor executor, CameraDevice.StateCallback stateCallback) {
+    public void mo10958d(String str, Executor executor, CameraDevice.StateCallback stateCallback) {
         try {
-            this.f28767a.openCamera(str, executor, stateCallback);
+            this.f28770a.openCamera(str, executor, stateCallback);
         } catch (CameraAccessException e) {
-            throw C8887f.m11022e(e);
+            throw C8887f.m11021e(e);
         }
     }
 }

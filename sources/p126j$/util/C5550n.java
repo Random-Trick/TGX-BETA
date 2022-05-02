@@ -7,7 +7,7 @@ public final class C5550n implements AbstractC5525g {
     public final Consumer f18087a;
 
     @Override
-    public final void mo22150c(double d) {
-        this.f18087a.mo22128k(Double.valueOf(d));
+    public final void mo22151c(double d) {
+        this.f18087a.mo22129k(Double.valueOf(d));
     }
 }

@@ -13,7 +13,7 @@ import p071f2.EnumC4227d;
 import p215p2.RunnableC7995b;
 
 public class C4456g extends AbstractC4249r {
-    public static final String f14734j = AbstractC4234j.m28360f("WorkContinuationImpl");
+    public static final String f14734j = AbstractC4234j.m28362f("WorkContinuationImpl");
     public final C4458i f14735a;
     public final String f14736b;
     public final EnumC4227d f14737c;
@@ -28,81 +28,81 @@ public class C4456g extends AbstractC4249r {
         this(iVar, null, EnumC4227d.KEEP, list, null);
     }
 
-    public static boolean m27614i(C4456g gVar, Set<String> set) {
-        set.addAll(gVar.m27620c());
-        Set<String> l = m27611l(gVar);
+    public static boolean m27616i(C4456g gVar, Set<String> set) {
+        set.addAll(gVar.m27622c());
+        Set<String> l = m27613l(gVar);
         for (String str : set) {
             if (l.contains(str)) {
                 return true;
             }
         }
-        List<C4456g> e = gVar.m27618e();
+        List<C4456g> e = gVar.m27620e();
         if (e != null && !e.isEmpty()) {
             for (C4456g gVar2 : e) {
-                if (m27614i(gVar2, set)) {
+                if (m27616i(gVar2, set)) {
                     return true;
                 }
             }
         }
-        set.removeAll(gVar.m27620c());
+        set.removeAll(gVar.m27622c());
         return false;
     }
 
-    public static Set<String> m27611l(C4456g gVar) {
+    public static Set<String> m27613l(C4456g gVar) {
         HashSet hashSet = new HashSet();
-        List<C4456g> e = gVar.m27618e();
+        List<C4456g> e = gVar.m27620e();
         if (e != null && !e.isEmpty()) {
             for (C4456g gVar2 : e) {
-                hashSet.addAll(gVar2.m27620c());
+                hashSet.addAll(gVar2.m27622c());
             }
         }
         return hashSet;
     }
 
-    public AbstractC4239m m27622a() {
+    public AbstractC4239m m27624a() {
         if (!this.f14742h) {
             RunnableC7995b bVar = new RunnableC7995b(this);
-            this.f14735a.m27586t().mo12682b(bVar);
-            this.f14743i = bVar.m13815d();
+            this.f14735a.m27588t().mo12681b(bVar);
+            this.f14743i = bVar.m13814d();
         } else {
-            AbstractC4234j.m28362c().mo28355h(f14734j, String.format("Already enqueued work ids (%s)", TextUtils.join(", ", this.f14739e)), new Throwable[0]);
+            AbstractC4234j.m28364c().mo28357h(f14734j, String.format("Already enqueued work ids (%s)", TextUtils.join(", ", this.f14739e)), new Throwable[0]);
         }
         return this.f14743i;
     }
 
-    public EnumC4227d m27621b() {
+    public EnumC4227d m27623b() {
         return this.f14737c;
     }
 
-    public List<String> m27620c() {
+    public List<String> m27622c() {
         return this.f14739e;
     }
 
-    public String m27619d() {
+    public String m27621d() {
         return this.f14736b;
     }
 
-    public List<C4456g> m27618e() {
+    public List<C4456g> m27620e() {
         return this.f14741g;
     }
 
-    public List<? extends AbstractC4253u> m27617f() {
+    public List<? extends AbstractC4253u> m27619f() {
         return this.f14738d;
     }
 
-    public C4458i m27616g() {
+    public C4458i m27618g() {
         return this.f14735a;
     }
 
-    public boolean m27615h() {
-        return m27614i(this, new HashSet());
+    public boolean m27617h() {
+        return m27616i(this, new HashSet());
     }
 
-    public boolean m27613j() {
+    public boolean m27615j() {
         return this.f14742h;
     }
 
-    public void m27612k() {
+    public void m27614k() {
         this.f14742h = true;
     }
 
@@ -124,7 +124,7 @@ public class C4456g extends AbstractC4249r {
             }
         }
         for (int i = 0; i < list.size(); i++) {
-            String a = list.get(i).m28344a();
+            String a = list.get(i).m28346a();
             this.f14739e.add(a);
             this.f14740f.add(a);
         }

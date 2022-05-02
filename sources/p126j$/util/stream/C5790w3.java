@@ -15,22 +15,22 @@ public final class C5790w3 extends AbstractC5565B3 implements AbstractC5811y {
     }
 
     @Override
-    public boolean mo22124a(Consumer consumer) {
-        return AbstractC5485a.m22564q(this, consumer);
+    public boolean mo22125a(Consumer consumer) {
+        return AbstractC5485a.m22565q(this, consumer);
     }
 
     @Override
-    protected AbstractC5468G mo22138b(AbstractC5468G g, long j, long j2, long j3, long j4) {
+    protected AbstractC5468G mo22139b(AbstractC5468G g, long j, long j2, long j3, long j4) {
         return new C5790w3((AbstractC5811y) g, j, j2, j3, j4);
     }
 
     @Override
-    protected Object mo22137c() {
+    protected Object mo22138c() {
         return C5785v3.f18494a;
     }
 
     @Override
     public void forEachRemaining(Consumer consumer) {
-        AbstractC5485a.m22572c(this, consumer);
+        AbstractC5485a.m22573c(this, consumer);
     }
 }

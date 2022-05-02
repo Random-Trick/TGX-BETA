@@ -78,7 +78,7 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
             if (!RunnableC6868e2.this.f21600U) {
                 return false;
             }
-            C1379j0.m37336c0(str);
+            C1379j0.m37339c0(str);
             return true;
         }
     }
@@ -108,7 +108,7 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
         public int mo8825e() {
             C4632f1 f1Var = this.f21612P;
             if (f1Var != null) {
-                return f1Var.m26702b0();
+                return f1Var.m26703b0();
             }
             return 0;
         }
@@ -126,7 +126,7 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
                 g3Var = arrayList.remove(arrayList.size() - 1);
             }
             C4632f1 f1Var = this.f21612P;
-            g3Var.setWrapper(f1Var != null ? f1Var.m26699d0(i) : null);
+            g3Var.setWrapper(f1Var != null ? f1Var.m26700d0(i) : null);
             this.f21610N.add(g3Var);
             viewGroup.addView(g3Var);
             return g3Var;
@@ -137,7 +137,7 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
             return obj == view;
         }
 
-        public void m18714v() {
+        public void m18715v() {
             Iterator<C6888g3> it = this.f21609M.iterator();
             while (it.hasNext()) {
                 it.next().m18579f();
@@ -148,7 +148,7 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
             }
         }
 
-        public void m18713w() {
+        public void m18714w() {
             Iterator<C6888g3> it = this.f21609M.iterator();
             while (it.hasNext()) {
                 it.next().m18580b();
@@ -159,10 +159,10 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
             }
         }
 
-        public void m18712x(C4632f1 f1Var) {
+        public void m18713x(C4632f1 f1Var) {
             if (this.f21612P != f1Var) {
                 this.f21612P = f1Var;
-                m28888l();
+                m28890l();
             }
         }
     }
@@ -174,14 +174,14 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
             this.f21614a = e2Var;
         }
 
-        public void m18710b(String str, String str2) {
+        public void m18711b(String str, String str2) {
             if ("resize_frame".equals(str)) {
                 try {
-                    int s = C5070i.m24051s(new JSONObject(str2).getString("height"));
+                    int s = C5070i.m24052s(new JSONObject(str2).getString("height"));
                     if (this.f21614a.f21599T != s) {
                         this.f21614a.f21599T = s;
                         if (this.f21614a.f21601V != null) {
-                            this.f21614a.f21601V.m27295E(this.f21614a);
+                            this.f21614a.f21601V.m27297E(this.f21614a);
                         }
                     }
                 } catch (Throwable unused) {
@@ -191,10 +191,10 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
 
         @JavascriptInterface
         public final void postEvent(final String str, final String str2) {
-            C1379j0.m37334d0(new Runnable() {
+            C1379j0.m37337d0(new Runnable() {
                 @Override
                 public final void run() {
-                    RunnableC6868e2.C6872d.this.m18710b(str, str2);
+                    RunnableC6868e2.C6872d.this.m18711b(str, str2);
                 }
             });
         }
@@ -213,14 +213,14 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
         }
     }
 
-    public final void m18721I1() {
+    public final void m18722I1() {
         if (this.f21592M == 3) {
             setInSlideShow(this.f21603a0 && !this.f21605c0);
         }
     }
 
     @Override
-    public void mo18720J() {
+    public void mo18721J() {
         WebView webView = this.f21594O;
         if (webView != null) {
             webView.destroy();
@@ -229,7 +229,7 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
         }
     }
 
-    public final void m18719J1() {
+    public final void m18720J1() {
         if (this.f21594O == null) {
             C6869a aVar = new C6869a(getContext());
             this.f21594O = aVar;
@@ -251,12 +251,12 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
         }
     }
 
-    public void m18718L1(int i, AbstractC9323v4<?> v4Var) {
+    public void m18719L1(int i, AbstractC9323v4<?> v4Var) {
         this.f21592M = i;
         if (i == 1) {
             this.f21597R = new C6240c(this, 0);
             this.f21596Q = new C6257p(this, 0);
-            m18719J1();
+            m18720J1();
             setWillNotDraw(false);
         } else if (i == 3) {
             this.f21593N = new C6871c(getContext(), v4Var);
@@ -267,7 +267,7 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
             viewPager.setAdapter(this.f21593N);
             addView(viewPager);
             C6937j4 j4Var = new C6937j4(getContext());
-            j4Var.setLayoutParams(FrameLayoutFix.m18007t1(-1, C1357a0.m37541i(36.0f), 80));
+            j4Var.setLayoutParams(FrameLayoutFix.m18007t1(-1, C1357a0.m37544i(36.0f), 80));
             j4Var.m18401a(this.f21593N.mo8825e(), 0.0f);
             addView(j4Var);
         } else if (i == 4) {
@@ -283,14 +283,14 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
         }
     }
 
-    public final void m18717M1(AbstractC4576a1 a1Var) {
+    public final void m18718M1(AbstractC4576a1 a1Var) {
         int i = this.f21592M;
         if (i == 1) {
             C4632f1 f1Var = (C4632f1) a1Var;
-            f1Var.mo26457T(this.f21597R);
-            f1Var.mo26458S(this.f21596Q);
-            m18719J1();
-            if (a1Var.mo26703b()) {
+            f1Var.mo26458T(this.f21597R);
+            f1Var.mo26459S(this.f21596Q);
+            m18720J1();
+            if (a1Var.mo26704b()) {
                 this.f21594O.setVerticalScrollBarEnabled(true);
                 this.f21594O.setHorizontalScrollBarEnabled(true);
             } else {
@@ -303,29 +303,29 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
             } catch (Throwable th) {
                 Log.m14723e(th);
             }
-            f1Var.m26691k0(this.f21594O);
+            f1Var.m26692k0(this.f21594O);
         } else if (i == 3) {
             C4632f1 f1Var2 = (C4632f1) a1Var;
             org.thunderdog.challegram.widget.ViewPager viewPager = (org.thunderdog.challegram.widget.ViewPager) getChildAt(0);
             viewPager.setAdapter(null);
-            this.f21593N.m18712x(f1Var2);
+            this.f21593N.m18713x(f1Var2);
             viewPager.setAdapter(this.f21593N);
             C6937j4 j4Var = (C6937j4) getChildAt(1);
-            int c0 = f1Var2.m26700c0();
+            int c0 = f1Var2.m26701c0();
             if (viewPager.getCurrentItem() != c0) {
                 viewPager.mo18027N(c0, false);
             }
             j4Var.m18401a(this.f21593N.mo8825e(), c0);
-            C2065g.m35721a(viewPager);
-            setWillNotDraw(!a1Var.m27291J());
+            C2065g.m35724a(viewPager);
+            setWillNotDraw(!a1Var.m27293J());
         } else if (i == 4) {
             this.f21595P.setBlock(a1Var);
         }
     }
 
     @Override
-    public Drawable mo14042X(int i, int i2) {
-        return C5141s.m23833a(this, i, i2);
+    public Drawable mo14041X(int i, int i2) {
+        return C5141s.m23834a(this, i, i2);
     }
 
     @Override
@@ -334,57 +334,57 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
         this.f21598S.mo4501a3();
         int i = this.f21592M;
         if (i == 1) {
-            this.f21596Q.mo20249Z();
-            this.f21597R.mo20249Z();
+            this.f21596Q.mo20250Z();
+            this.f21597R.mo20250Z();
         } else if (i == 3) {
-            m18721I1();
+            m18722I1();
         } else if (i == 4) {
             this.f21595P.mo4501a3();
         }
     }
 
-    public void m18716b() {
-        this.f21598S.m20994i();
+    public void m18717b() {
+        this.f21598S.m20995i();
         int i = this.f21592M;
         if (i == 1) {
-            this.f21597R.mo20247b();
-            this.f21596Q.mo20247b();
+            this.f21597R.mo20248b();
+            this.f21596Q.mo20248b();
             WebView webView = this.f21594O;
             if (webView != null) {
                 webView.onPause();
             }
         } else if (i == 3) {
-            this.f21593N.m18713w();
+            this.f21593N.m18714w();
             this.f21603a0 = false;
-            m18721I1();
+            m18722I1();
         } else if (i == 4) {
-            this.f21595P.m18739b();
+            this.f21595P.m18740b();
         }
     }
 
-    public void m18715f() {
-        this.f21598S.m21001b();
+    public void m18716f() {
+        this.f21598S.m21002b();
         int i = this.f21592M;
         if (i == 1) {
-            this.f21597R.mo20245f();
-            this.f21596Q.mo20245f();
+            this.f21597R.mo20246f();
+            this.f21596Q.mo20246f();
             WebView webView = this.f21594O;
             if (webView != null) {
                 webView.onResume();
             }
         } else if (i == 3) {
-            this.f21593N.m18714v();
+            this.f21593N.m18715v();
             this.f21603a0 = true;
-            m18721I1();
+            m18722I1();
         } else if (i == 4) {
-            this.f21595P.m18738f();
+            this.f21595P.m18739f();
         }
     }
 
     public int getExactWebViewHeight() {
         int i = this.f21599T;
         if (i != 0) {
-            return C1357a0.m37541i(i);
+            return C1357a0.m37544i(i);
         }
         return 0;
     }
@@ -416,14 +416,14 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
     @Override
     public void mo8853h4(int i) {
         this.f21605c0 = i != 0;
-        m18721I1();
+        m18722I1();
     }
 
     @Override
     public void onDraw(Canvas canvas) {
         AbstractC4576a1 a1Var = this.f21601V;
         if (a1Var != null) {
-            a1Var.m27281h(this, canvas, this.f21597R, this.f21596Q, this.f21598S);
+            a1Var.m27283h(this, canvas, this.f21597R, this.f21596Q, this.f21598S);
         }
     }
 
@@ -436,12 +436,12 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
             super.onMeasure(defaultSize, i2);
             return;
         }
-        int s = a1Var.m27277s(this, defaultSize);
+        int s = a1Var.m27279s(this, defaultSize);
         View childAt2 = getChildAt(0);
         if (childAt2 != null) {
-            this.f21601V.mo26701c(this, (FrameLayout.LayoutParams) childAt2.getLayoutParams(), defaultSize, s);
+            this.f21601V.mo26702c(this, (FrameLayout.LayoutParams) childAt2.getLayoutParams(), defaultSize, s);
             if (this.f21592M == 3 && (childAt = getChildAt(1)) != null) {
-                this.f21601V.mo26701c(this, (FrameLayout.LayoutParams) childAt.getLayoutParams(), defaultSize, s);
+                this.f21601V.mo26702c(this, (FrameLayout.LayoutParams) childAt.getLayoutParams(), defaultSize, s);
             }
         }
         super.onMeasure(i, View.MeasureSpec.makeMeasureSpec(s, Log.TAG_TDLIB_OPTIONS));
@@ -465,18 +465,18 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
         AbstractC4576a1 a1Var2 = this.f21601V;
         if (a1Var2 != a1Var) {
             if (a1Var2 != null) {
-                a1Var2.m27282g(this);
+                a1Var2.m27284g(this);
                 this.f21601V = null;
             }
             this.f21601V = a1Var;
             int measuredWidth = getMeasuredWidth();
             int i = 0;
             if (a1Var != null) {
-                a1Var.mo26698e();
-                a1Var.m27283d(this);
-                m18717M1(a1Var);
+                a1Var.mo26699e();
+                a1Var.m27285d(this);
+                m18718M1(a1Var);
                 if (measuredWidth != 0) {
-                    i = a1Var.m27277s(this, measuredWidth);
+                    i = a1Var.m27279s(this, measuredWidth);
                 }
             }
             if (measuredWidth != 0 && getMeasuredHeight() != i) {
@@ -499,7 +499,7 @@ public class RunnableC6868e2 extends FrameLayoutFix implements ViewPager.Abstrac
     public void mo8832x4(int i) {
         AbstractC4576a1 a1Var = this.f21601V;
         if (a1Var != null) {
-            ((C4632f1) a1Var).m26688n0(i);
+            ((C4632f1) a1Var).m26689n0(i);
         }
     }
 }

@@ -5,7 +5,7 @@ import java.io.OutputStream;
 public final class C1647a2 extends OutputStream {
     public long f6067a = 0;
 
-    public final long m36118m() {
+    public final long m36121m() {
         return this.f6067a;
     }
 

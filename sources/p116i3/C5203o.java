@@ -9,7 +9,7 @@ public final class C5203o implements C5174b0.AbstractC5176b {
     @Override
     public final Object apply(Object obj) {
         SQLiteDatabase Z0;
-        Z0 = C5174b0.m23700Z0((Throwable) obj);
+        Z0 = C5174b0.m23701Z0((Throwable) obj);
         return Z0;
     }
 }

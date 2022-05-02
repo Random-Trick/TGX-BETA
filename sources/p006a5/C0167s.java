@@ -51,10 +51,10 @@ public final class C0167s implements AbstractC0154k {
 
     public C0167s(Context context, AbstractC0154k kVar) {
         this.f610a = context.getApplicationContext();
-        this.f612c = (AbstractC0154k) C1186a.m38185e(kVar);
+        this.f612c = (AbstractC0154k) C1186a.m38188e(kVar);
     }
 
-    public final void m42166A(AbstractC0154k kVar, AbstractC0150i0 i0Var) {
+    public final void m42169A(AbstractC0154k kVar, AbstractC0150i0 i0Var) {
         if (kVar != null) {
             kVar.mo17399g(i0Var);
         }
@@ -62,32 +62,32 @@ public final class C0167s implements AbstractC0154k {
 
     @Override
     public int mo4414b(byte[] bArr, int i, int i2) {
-        return ((AbstractC0154k) C1186a.m38185e(this.f620k)).mo4414b(bArr, i, i2);
+        return ((AbstractC0154k) C1186a.m38188e(this.f620k)).mo4414b(bArr, i, i2);
     }
 
     @Override
     public long mo4413c(C0159o oVar) {
-        C1186a.m38184f(this.f620k == null);
+        C1186a.m38187f(this.f620k == null);
         String scheme = oVar.f553a.getScheme();
-        if (C1216l0.m37965k0(oVar.f553a)) {
+        if (C1216l0.m37968k0(oVar.f553a)) {
             String path = oVar.f553a.getPath();
             if (path == null || !path.startsWith("/android_asset/")) {
-                this.f620k = m42161w();
+                this.f620k = m42164w();
             } else {
-                this.f620k = m42164t();
+                this.f620k = m42167t();
             }
         } else if ("asset".equals(scheme)) {
-            this.f620k = m42164t();
+            this.f620k = m42167t();
         } else if ("content".equals(scheme)) {
-            this.f620k = m42163u();
+            this.f620k = m42166u();
         } else if ("rtmp".equals(scheme)) {
-            this.f620k = m42159y();
+            this.f620k = m42162y();
         } else if ("udp".equals(scheme)) {
-            this.f620k = m42158z();
+            this.f620k = m42161z();
         } else if ("data".equals(scheme)) {
-            this.f620k = m42162v();
+            this.f620k = m42165v();
         } else if ("rawresource".equals(scheme) || "android.resource".equals(scheme)) {
-            this.f620k = m42160x();
+            this.f620k = m42163x();
         } else {
             this.f620k = this.f612c;
         }
@@ -108,16 +108,16 @@ public final class C0167s implements AbstractC0154k {
 
     @Override
     public void mo17399g(AbstractC0150i0 i0Var) {
-        C1186a.m38185e(i0Var);
+        C1186a.m38188e(i0Var);
         this.f612c.mo17399g(i0Var);
         this.f611b.add(i0Var);
-        m42166A(this.f613d, i0Var);
-        m42166A(this.f614e, i0Var);
-        m42166A(this.f615f, i0Var);
-        m42166A(this.f616g, i0Var);
-        m42166A(this.f617h, i0Var);
-        m42166A(this.f618i, i0Var);
-        m42166A(this.f619j, i0Var);
+        m42169A(this.f613d, i0Var);
+        m42169A(this.f614e, i0Var);
+        m42169A(this.f615f, i0Var);
+        m42169A(this.f616g, i0Var);
+        m42169A(this.f617h, i0Var);
+        m42169A(this.f618i, i0Var);
+        m42169A(this.f619j, i0Var);
     }
 
     @Override
@@ -135,65 +135,65 @@ public final class C0167s implements AbstractC0154k {
         return kVar.mo4412p();
     }
 
-    public final void m42165s(AbstractC0154k kVar) {
+    public final void m42168s(AbstractC0154k kVar) {
         for (int i = 0; i < this.f611b.size(); i++) {
             kVar.mo17399g(this.f611b.get(i));
         }
     }
 
-    public final AbstractC0154k m42164t() {
+    public final AbstractC0154k m42167t() {
         if (this.f614e == null) {
             C0120c cVar = new C0120c(this.f610a);
             this.f614e = cVar;
-            m42165s(cVar);
+            m42168s(cVar);
         }
         return this.f614e;
     }
 
-    public final AbstractC0154k m42163u() {
+    public final AbstractC0154k m42166u() {
         if (this.f615f == null) {
             C0141g gVar = new C0141g(this.f610a);
             this.f615f = gVar;
-            m42165s(gVar);
+            m42168s(gVar);
         }
         return this.f615f;
     }
 
-    public final AbstractC0154k m42162v() {
+    public final AbstractC0154k m42165v() {
         if (this.f618i == null) {
             C0149i iVar = new C0149i();
             this.f618i = iVar;
-            m42165s(iVar);
+            m42168s(iVar);
         }
         return this.f618i;
     }
 
-    public final AbstractC0154k m42161w() {
+    public final AbstractC0154k m42164w() {
         if (this.f613d == null) {
             C0176x xVar = new C0176x();
             this.f613d = xVar;
-            m42165s(xVar);
+            m42168s(xVar);
         }
         return this.f613d;
     }
 
-    public final AbstractC0154k m42160x() {
+    public final AbstractC0154k m42163x() {
         if (this.f619j == null) {
             C0132d0 d0Var = new C0132d0(this.f610a);
             this.f619j = d0Var;
-            m42165s(d0Var);
+            m42168s(d0Var);
         }
         return this.f619j;
     }
 
-    public final AbstractC0154k m42159y() {
+    public final AbstractC0154k m42162y() {
         if (this.f616g == null) {
             try {
                 AbstractC0154k kVar = (AbstractC0154k) Class.forName("com.google.android.exoplayer2.ext.rtmp.RtmpDataSource").getConstructor(new Class[0]).newInstance(new Object[0]);
                 this.f616g = kVar;
-                m42165s(kVar);
+                m42168s(kVar);
             } catch (ClassNotFoundException unused) {
-                C1230s.m37881i("DefaultDataSource", "Attempting to play RTMP stream without depending on the RTMP extension");
+                C1230s.m37884i("DefaultDataSource", "Attempting to play RTMP stream without depending on the RTMP extension");
             } catch (Exception e) {
                 throw new RuntimeException("Error instantiating RTMP extension", e);
             }
@@ -204,11 +204,11 @@ public final class C0167s implements AbstractC0154k {
         return this.f616g;
     }
 
-    public final AbstractC0154k m42158z() {
+    public final AbstractC0154k m42161z() {
         if (this.f617h == null) {
             C0152j0 j0Var = new C0152j0();
             this.f617h = j0Var;
-            m42165s(j0Var);
+            m42168s(j0Var);
         }
         return this.f617h;
     }

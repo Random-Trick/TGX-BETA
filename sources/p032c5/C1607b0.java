@@ -15,12 +15,12 @@ public final class C1607b0 implements AbstractC6609h {
         this(i, i2, 0, 1.0f);
     }
 
-    public static String m36291b(int i) {
+    public static String m36294b(int i) {
         return Integer.toString(i, 36);
     }
 
-    public static C1607b0 m36290c(Bundle bundle) {
-        return new C1607b0(bundle.getInt(m36291b(0), 0), bundle.getInt(m36291b(1), 0), bundle.getInt(m36291b(2), 0), bundle.getFloat(m36291b(3), 1.0f));
+    public static C1607b0 m36293c(Bundle bundle) {
+        return new C1607b0(bundle.getInt(m36294b(0), 0), bundle.getInt(m36294b(1), 0), bundle.getInt(m36294b(2), 0), bundle.getFloat(m36294b(3), 1.0f));
     }
 
     public boolean equals(Object obj) {

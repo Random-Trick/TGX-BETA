@@ -9,6 +9,6 @@ public final class RunnableC2892ps implements Runnable {
 
     @Override
     public final void run() {
-        View$OnClickListenerC2942qs.m32931Pg(this.f9675a);
+        View$OnClickListenerC2942qs.m32934Pg(this.f9675a);
     }
 }

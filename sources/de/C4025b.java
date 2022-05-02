@@ -16,7 +16,7 @@ public class C4025b extends View implements C3950k.AbstractC3952b {
 
     public C4025b(Context context) {
         super(context);
-        setLayoutParams(FrameLayoutFix.m18008s1(C1357a0.m37541i(100.0f), C1357a0.m37541i(100.0f)));
+        setLayoutParams(FrameLayoutFix.m18008s1(C1357a0.m37544i(100.0f), C1357a0.m37544i(100.0f)));
     }
 
     @Override
@@ -29,29 +29,29 @@ public class C4025b extends View implements C3950k.AbstractC3952b {
     @Override
     public void mo35Y0(int i, float f, C3950k kVar) {
         if (i == 0) {
-            this.f13505b.m29541l(0.0f);
+            this.f13505b.m29543l(0.0f);
         }
     }
 
-    public void m29275a() {
+    public void m29277a() {
         C3950k kVar = this.f13505b;
         if (kVar == null) {
             this.f13505b = new C3950k(0, this, C2057b.f7280b, 400L);
         } else {
-            kVar.m29541l(0.0f);
+            kVar.m29543l(0.0f);
         }
-        this.f13505b.m29544i(1.0f);
+        this.f13505b.m29546i(1.0f);
     }
 
     @Override
     public void onDraw(Canvas canvas) {
         float measuredWidth = getMeasuredWidth() / 2;
         float measuredHeight = getMeasuredHeight() / 2;
-        float i = C1357a0.m37541i((this.f13504a * 10.0f) + 40.0f);
-        canvas.drawCircle(measuredWidth, measuredHeight, i, C1410y.m37039g(1894443754));
+        float i = C1357a0.m37544i((this.f13504a * 10.0f) + 40.0f);
+        canvas.drawCircle(measuredWidth, measuredHeight, i, C1410y.m37042g(1894443754));
         C3950k kVar = this.f13505b;
         if (kVar != null) {
-            float o = kVar.m29538o();
+            float o = kVar.m29540o();
             if (o != 0.0f) {
                 float f = 1.0f;
                 if (o != 1.0f) {
@@ -60,7 +60,7 @@ public class C4025b extends View implements C3950k.AbstractC3952b {
                         f = 1.0f - ((o - 0.4f) / 0.6f);
                     }
                     if (f != 0.0f) {
-                        canvas.drawCircle(measuredWidth, measuredHeight, i * f2, C1410y.m37039g(C5064d.m24131a(f, 1894443754)));
+                        canvas.drawCircle(measuredWidth, measuredHeight, i * f2, C1410y.m37042g(C5064d.m24132a(f, 1894443754)));
                     }
                 }
             }

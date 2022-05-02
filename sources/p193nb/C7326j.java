@@ -16,7 +16,7 @@ public final class C7326j {
             if (constructor != -336109341) {
                 if (constructor != -239660751) {
                     String object = messageSender.toString();
-                    C8298k.m12935d(object, "this.toString()");
+                    C8298k.m12934d(object, "this.toString()");
                     throw new IllegalStateException(object.toString());
                 } else if (((TdApi.MessageSenderChat) messageSender).chatId != ((TdApi.MessageSenderChat) messageSender2).chatId) {
                     return false;
@@ -59,7 +59,7 @@ public final class C7326j {
         if (photoSize == photoSize2) {
             return true;
         }
-        if (photoSize != null && photoSize2 != null && photoSize.width == photoSize2.width && photoSize.height == photoSize2.height && C8298k.m12937b(photoSize.type, photoSize2.type)) {
+        if (photoSize != null && photoSize2 != null && photoSize.width == photoSize2.width && photoSize.height == photoSize2.height && C8298k.m12936b(photoSize.type, photoSize2.type)) {
             Z = m16847Z(photoSize.photo, photoSize2.photo, false, 2, null);
             if (Z) {
                 return true;
@@ -71,12 +71,12 @@ public final class C7326j {
     public static final boolean m16868E(TdApi.Point point, TdApi.Point point2) {
         if (point != point2) {
             Double d = null;
-            if (C8298k.m12938a(point == null ? null : Double.valueOf(point.f25411x), point2 == null ? null : Double.valueOf(point2.f25411x))) {
-                Double valueOf = point == null ? null : Double.valueOf(point.f25412y);
+            if (C8298k.m12937a(point == null ? null : Double.valueOf(point.f25414x), point2 == null ? null : Double.valueOf(point2.f25414x))) {
+                Double valueOf = point == null ? null : Double.valueOf(point.f25415y);
                 if (point2 != null) {
-                    d = Double.valueOf(point2.f25412y);
+                    d = Double.valueOf(point2.f25415y);
                 }
-                if (C8298k.m12938a(valueOf, d)) {
+                if (C8298k.m12937a(valueOf, d)) {
                 }
             }
             return false;
@@ -85,7 +85,7 @@ public final class C7326j {
     }
 
     public static final boolean m16867F(TdApi.RemoteFile remoteFile, TdApi.RemoteFile remoteFile2) {
-        return remoteFile == remoteFile2 || (remoteFile != null && remoteFile2 != null && remoteFile.uploadedSize == remoteFile2.uploadedSize && remoteFile.isUploadingActive == remoteFile2.isUploadingActive && remoteFile.isUploadingCompleted == remoteFile2.isUploadingCompleted && C5070i.m24067c(remoteFile.f25417id, remoteFile2.f25417id) && C5070i.m24067c(remoteFile.uniqueId, remoteFile2.uniqueId));
+        return remoteFile == remoteFile2 || (remoteFile != null && remoteFile2 != null && remoteFile.uploadedSize == remoteFile2.uploadedSize && remoteFile.isUploadingActive == remoteFile2.isUploadingActive && remoteFile.isUploadingCompleted == remoteFile2.isUploadingCompleted && C5070i.m24068c(remoteFile.f25420id, remoteFile2.f25420id) && C5070i.m24068c(remoteFile.uniqueId, remoteFile2.uniqueId));
     }
 
     public static final boolean m16866G(TdApi.ReplyMarkup replyMarkup, TdApi.ReplyMarkup replyMarkup2) {
@@ -131,9 +131,9 @@ public final class C7326j {
                                 while (i2 < length4) {
                                     i2++;
                                     TdApi.InlineKeyboardButton inlineKeyboardButton = replyMarkupInlineKeyboard.rows[i][i2];
-                                    C8298k.m12935d(inlineKeyboardButton, "this.rows[i][j]");
+                                    C8298k.m12934d(inlineKeyboardButton, "this.rows[i][j]");
                                     TdApi.InlineKeyboardButton inlineKeyboardButton2 = replyMarkupInlineKeyboard2.rows[i][i2];
-                                    C8298k.m12935d(inlineKeyboardButton2, "b.rows[i][j]");
+                                    C8298k.m12934d(inlineKeyboardButton2, "b.rows[i][j]");
                                     if (!C7321e.m16991O(inlineKeyboardButton, inlineKeyboardButton2)) {
                                         return false;
                                     }
@@ -173,9 +173,9 @@ public final class C7326j {
                                         while (i4 < length8) {
                                             i4++;
                                             TdApi.KeyboardButton keyboardButton = replyMarkupShowKeyboard.rows[i3][i4];
-                                            C8298k.m12935d(keyboardButton, "this.rows[i][j]");
+                                            C8298k.m12934d(keyboardButton, "this.rows[i][j]");
                                             TdApi.KeyboardButton keyboardButton2 = replyMarkupShowKeyboard2.rows[i3][i4];
-                                            C8298k.m12935d(keyboardButton2, "b.rows[i][j]");
+                                            C8298k.m12934d(keyboardButton2, "b.rows[i][j]");
                                             if (!C7321e.m16985R(keyboardButton, keyboardButton2)) {
                                                 return false;
                                             }
@@ -198,7 +198,7 @@ public final class C7326j {
                     break;
                 default:
                     String object = replyMarkup.toString();
-                    C8298k.m12935d(object, "this.toString()");
+                    C8298k.m12934d(object, "this.toString()");
                     throw new IllegalStateException(object.toString());
             }
         }
@@ -210,7 +210,7 @@ public final class C7326j {
         if (sticker == sticker2) {
             return true;
         }
-        if (sticker != null && sticker2 != null && sticker.width == sticker2.width && sticker.height == sticker2.height && C7321e.m16954e0(sticker.type, sticker2.type) && sticker.setId == sticker2.setId && C5070i.m24067c(sticker.emoji, sticker2.emoji)) {
+        if (sticker != null && sticker2 != null && sticker.width == sticker2.width && sticker.height == sticker2.height && C7321e.m16954e0(sticker.type, sticker2.type) && sticker.setId == sticker2.setId && C5070i.m24068c(sticker.emoji, sticker2.emoji)) {
             Z = m16847Z(sticker.sticker, sticker2.sticker, false, 2, null);
             if (Z && C7321e.m16918q0(sticker.outline, sticker2.outline) && C7321e.m16945h0(sticker.thumbnail, sticker2.thumbnail)) {
                 return true;
@@ -240,8 +240,8 @@ public final class C7326j {
                     break;
                 default:
                     String object = stickerType.toString();
-                    C8298k.m12935d(object, "this.toString()");
-                    throw new C5047g(C8298k.m12929j("An operation is not implemented: ", object));
+                    C8298k.m12934d(object, "this.toString()");
+                    throw new C5047g(C8298k.m12928j("An operation is not implemented: ", object));
             }
         }
         return true;
@@ -293,7 +293,7 @@ public final class C7326j {
                         z = true;
                     }
                     if (z) {
-                        return C5070i.m24067c(((TdApi.TextEntityTypePreCode) textEntityType).language, ((TdApi.TextEntityTypePreCode) textEntityType2).language);
+                        return C5070i.m24068c(((TdApi.TextEntityTypePreCode) textEntityType).language, ((TdApi.TextEntityTypePreCode) textEntityType2).language);
                     }
                     throw new IllegalArgumentException("Failed requirement.".toString());
                 case TdApi.TextEntityTypeTextUrl.CONSTRUCTOR:
@@ -301,13 +301,13 @@ public final class C7326j {
                         z = true;
                     }
                     if (z) {
-                        return C5070i.m24067c(((TdApi.TextEntityTypeTextUrl) textEntityType).url, ((TdApi.TextEntityTypeTextUrl) textEntityType2).url);
+                        return C5070i.m24068c(((TdApi.TextEntityTypeTextUrl) textEntityType).url, ((TdApi.TextEntityTypeTextUrl) textEntityType2).url);
                     }
                     throw new IllegalArgumentException("Failed requirement.".toString());
                 default:
                     String object = textEntityType.toString();
-                    C8298k.m12935d(object, "this.toString()");
-                    throw new C5047g(C8298k.m12929j("An operation is not implemented: ", object));
+                    C8298k.m12934d(object, "this.toString()");
+                    throw new C5047g(C8298k.m12928j("An operation is not implemented: ", object));
             }
         }
         return true;
@@ -322,9 +322,9 @@ public final class C7326j {
             Z = m16847Z(thumbnail.file, thumbnail2.file, false, 2, null);
             if (Z) {
                 TdApi.ThumbnailFormat thumbnailFormat = thumbnail.format;
-                C8298k.m12935d(thumbnailFormat, "this.format");
+                C8298k.m12934d(thumbnailFormat, "this.format");
                 TdApi.ThumbnailFormat thumbnailFormat2 = thumbnail2.format;
-                C8298k.m12935d(thumbnailFormat2, "b.format");
+                C8298k.m12934d(thumbnailFormat2, "b.format");
                 if (C7321e.m16942i0(thumbnailFormat, thumbnailFormat2)) {
                     return true;
                 }
@@ -334,14 +334,14 @@ public final class C7326j {
     }
 
     public static final boolean m16860M(TdApi.ThumbnailFormat thumbnailFormat, TdApi.ThumbnailFormat thumbnailFormat2) {
-        C8298k.m12934e(thumbnailFormat, "<this>");
-        C8298k.m12934e(thumbnailFormat2, "b");
+        C8298k.m12933e(thumbnailFormat, "<this>");
+        C8298k.m12933e(thumbnailFormat2, "b");
         return thumbnailFormat.getConstructor() == thumbnailFormat2.getConstructor();
     }
 
     public static final boolean m16859N(TdApi.UserPrivacySettingRule userPrivacySettingRule, TdApi.UserPrivacySettingRule userPrivacySettingRule2) {
-        C8298k.m12934e(userPrivacySettingRule, "<this>");
-        C8298k.m12934e(userPrivacySettingRule2, "b");
+        C8298k.m12933e(userPrivacySettingRule, "<this>");
+        C8298k.m12933e(userPrivacySettingRule2, "b");
         boolean z = false;
         if (userPrivacySettingRule != userPrivacySettingRule2) {
             if (userPrivacySettingRule.getConstructor() != userPrivacySettingRule2.getConstructor()) {
@@ -387,7 +387,7 @@ public final class C7326j {
                     throw new IllegalArgumentException("Failed requirement.".toString());
                 default:
                     String object = userPrivacySettingRule.toString();
-                    C8298k.m12935d(object, "this.toString()");
+                    C8298k.m12934d(object, "this.toString()");
                     throw new IllegalStateException(object.toString());
             }
         }
@@ -421,7 +421,7 @@ public final class C7326j {
                     break;
                 default:
                     String object = userStatus.toString();
-                    C8298k.m12935d(object, "this.toString()");
+                    C8298k.m12934d(object, "this.toString()");
                     throw new IllegalStateException(object.toString());
             }
         }
@@ -445,8 +445,8 @@ public final class C7326j {
                 }
             } else {
                 String object = vectorPathCommand.toString();
-                C8298k.m12935d(object, "this.toString()");
-                throw new C5047g(C8298k.m12929j("An operation is not implemented: ", object));
+                C8298k.m12934d(object, "this.toString()");
+                throw new C5047g(C8298k.m12928j("An operation is not implemented: ", object));
             }
         }
         return true;
@@ -460,7 +460,7 @@ public final class C7326j {
         }
         if (video != null && video2 != null && video.width == video2.width && video.height == video2.height && video.duration == video2.duration && video.supportsStreaming == video2.supportsStreaming && video.hasStickers == video2.hasStickers) {
             Z = m16847Z(video.video, video2.video, false, 2, null);
-            if (Z && C5070i.m24067c(video.fileName, video2.fileName) && C5070i.m24067c(video.mimeType, video2.mimeType) && C7321e.m16945h0(video.thumbnail, video2.thumbnail)) {
+            if (Z && C5070i.m24068c(video.fileName, video2.fileName) && C5070i.m24068c(video.mimeType, video2.mimeType) && C7321e.m16945h0(video.thumbnail, video2.thumbnail)) {
                 b0 = m16843b0(video.minithumbnail, video2.minithumbnail, false, 2, null);
                 if (b0) {
                     return true;
@@ -494,7 +494,7 @@ public final class C7326j {
         if (voiceNote == voiceNote2) {
             return true;
         }
-        if (voiceNote != null && voiceNote2 != null && voiceNote.duration == voiceNote2.duration && C5070i.m24067c(voiceNote.mimeType, voiceNote2.mimeType)) {
+        if (voiceNote != null && voiceNote2 != null && voiceNote.duration == voiceNote2.duration && C5070i.m24068c(voiceNote.mimeType, voiceNote2.mimeType)) {
             Z = m16847Z(voiceNote.voice, voiceNote2.voice, false, 2, null);
             if (Z) {
                 byte[] bArr = voiceNote.waveform;
@@ -519,9 +519,9 @@ public final class C7326j {
         if (webPage == webPage2) {
             return true;
         }
-        if (webPage != null && webPage2 != null && webPage.instantViewVersion == webPage2.instantViewVersion && webPage.duration == webPage2.duration && webPage.embedWidth == webPage2.embedWidth && webPage.embedHeight == webPage2.embedHeight && C5070i.m24067c(webPage.embedType, webPage2.embedType) && C5070i.m24067c(webPage.embedUrl, webPage2.embedUrl) && C5070i.m24067c(webPage.type, webPage2.type) && C5070i.m24067c(webPage.url, webPage2.url) && C5070i.m24067c(webPage.displayUrl, webPage2.displayUrl) && C5070i.m24067c(webPage.siteName, webPage2.siteName) && C5070i.m24067c(webPage.title, webPage2.title)) {
+        if (webPage != null && webPage2 != null && webPage.instantViewVersion == webPage2.instantViewVersion && webPage.duration == webPage2.duration && webPage.embedWidth == webPage2.embedWidth && webPage.embedHeight == webPage2.embedHeight && C5070i.m24068c(webPage.embedType, webPage2.embedType) && C5070i.m24068c(webPage.embedUrl, webPage2.embedUrl) && C5070i.m24068c(webPage.type, webPage2.type) && C5070i.m24068c(webPage.url, webPage2.url) && C5070i.m24068c(webPage.displayUrl, webPage2.displayUrl) && C5070i.m24068c(webPage.siteName, webPage2.siteName) && C5070i.m24068c(webPage.title, webPage2.title)) {
             a0 = m16845a0(webPage.description, webPage2.description, false, 2, null);
-            if (a0 && C5070i.m24067c(webPage.author, webPage2.author) && C7321e.m16971Y(webPage.photo, webPage2.photo) && C7321e.m16901w(webPage.animation, webPage2.animation) && C7321e.m16898x(webPage.audio, webPage2.audio) && C7321e.m17003I(webPage.document, webPage2.document) && C7321e.m16930m0(webPage.video, webPage2.video) && C7321e.m16927n0(webPage.videoNote, webPage2.videoNote)) {
+            if (a0 && C5070i.m24068c(webPage.author, webPage2.author) && C7321e.m16971Y(webPage.photo, webPage2.photo) && C7321e.m16901w(webPage.animation, webPage2.animation) && C7321e.m16898x(webPage.audio, webPage2.audio) && C7321e.m17003I(webPage.document, webPage2.document) && C7321e.m16930m0(webPage.video, webPage2.video) && C7321e.m16927n0(webPage.videoNote, webPage2.videoNote)) {
                 c0 = m16841c0(webPage.voiceNote, webPage2.voiceNote, false, 2, null);
                 if (c0 && C7321e.m16957d0(webPage.sticker, webPage2.sticker)) {
                     return true;
@@ -622,7 +622,7 @@ public final class C7326j {
         }
         if (animation != null && animation2 != null && animation.width == animation2.width && animation.height == animation2.height && animation.duration == animation2.duration && animation.hasStickers == animation2.hasStickers) {
             Z = m16847Z(animation.animation, animation2.animation, false, 2, null);
-            if (Z && C5070i.m24067c(animation.mimeType, animation2.mimeType) && C5070i.m24067c(animation.fileName, animation2.fileName)) {
+            if (Z && C5070i.m24068c(animation.mimeType, animation2.mimeType) && C5070i.m24068c(animation.fileName, animation2.fileName)) {
                 b0 = m16843b0(animation.minithumbnail, animation2.minithumbnail, false, 2, null);
                 if (b0 && C7321e.m16945h0(animation.thumbnail, animation2.thumbnail)) {
                     return true;
@@ -645,7 +645,7 @@ public final class C7326j {
         if (audio == audio2) {
             return true;
         }
-        if (audio != null && audio2 != null && audio.duration == audio2.duration && C5070i.m24067c(audio.title, audio2.title) && C5070i.m24067c(audio.performer, audio2.performer) && C5070i.m24067c(audio.mimeType, audio2.mimeType) && C5070i.m24067c(audio.fileName, audio2.fileName)) {
+        if (audio != null && audio2 != null && audio.duration == audio2.duration && C5070i.m24068c(audio.title, audio2.title) && C5070i.m24068c(audio.performer, audio2.performer) && C5070i.m24068c(audio.mimeType, audio2.mimeType) && C5070i.m24068c(audio.fileName, audio2.fileName)) {
             Z = m16847Z(audio.audio, audio2.audio, false, 2, null);
             if (Z && C7321e.m16945h0(audio.albumCoverThumbnail, audio2.albumCoverThumbnail)) {
                 b0 = m16843b0(audio.albumCoverMinithumbnail, audio2.albumCoverMinithumbnail, false, 2, null);
@@ -697,7 +697,7 @@ public final class C7326j {
                 }
             } else {
                 String object = backgroundFill.toString();
-                C8298k.m12935d(object, "this.toString()");
+                C8298k.m12934d(object, "this.toString()");
                 throw new IllegalStateException(object.toString());
             }
         }
@@ -751,7 +751,7 @@ public final class C7326j {
                 }
             } else {
                 String object = backgroundType.toString();
-                C8298k.m12935d(object, "this.toString()");
+                C8298k.m12934d(object, "this.toString()");
                 throw new IllegalStateException(object.toString());
             }
         }
@@ -766,8 +766,8 @@ public final class C7326j {
     }
 
     public static final boolean m16838e(TdApi.ChatAction chatAction, TdApi.ChatAction chatAction2) {
-        C8298k.m12934e(chatAction, "<this>");
-        C8298k.m12934e(chatAction2, "b");
+        C8298k.m12933e(chatAction, "<this>");
+        C8298k.m12933e(chatAction2, "b");
         boolean z = false;
         if (chatAction != chatAction2) {
             if (chatAction.getConstructor() != chatAction2.getConstructor()) {
@@ -824,13 +824,13 @@ public final class C7326j {
                         z = true;
                     }
                     if (z) {
-                        return C8298k.m12937b(((TdApi.ChatActionWatchingAnimations) chatAction).emoji, ((TdApi.ChatActionWatchingAnimations) chatAction2).emoji);
+                        return C8298k.m12936b(((TdApi.ChatActionWatchingAnimations) chatAction).emoji, ((TdApi.ChatActionWatchingAnimations) chatAction2).emoji);
                     }
                     throw new IllegalArgumentException("Failed requirement.".toString());
                 default:
                     String object = chatAction.toString();
-                    C8298k.m12935d(object, "this.toString()");
-                    throw new C5047g(C8298k.m12929j("An operation is not implemented: ", object));
+                    C8298k.m12934d(object, "this.toString()");
+                    throw new C5047g(C8298k.m12928j("An operation is not implemented: ", object));
             }
         }
         return true;
@@ -882,7 +882,7 @@ public final class C7326j {
             if (constructor != -2022707655) {
                 if (!(constructor == -400991316 || constructor == 362770115)) {
                     String object = chatList.toString();
-                    C8298k.m12935d(object, "this.toString()");
+                    C8298k.m12934d(object, "this.toString()");
                     throw new IllegalStateException(object.toString());
                 }
             } else if (((TdApi.ChatListFilter) chatList).chatFilterId != ((TdApi.ChatListFilter) chatList2).chatFilterId) {
@@ -893,8 +893,8 @@ public final class C7326j {
     }
 
     public static final boolean m16835h(TdApi.ChatMemberStatus chatMemberStatus, TdApi.ChatMemberStatus chatMemberStatus2) {
-        C8298k.m12934e(chatMemberStatus, "<this>");
-        C8298k.m12934e(chatMemberStatus2, "b");
+        C8298k.m12933e(chatMemberStatus, "<this>");
+        C8298k.m12933e(chatMemberStatus2, "b");
         if (chatMemberStatus != chatMemberStatus2) {
             if (chatMemberStatus.getConstructor() != chatMemberStatus2.getConstructor()) {
                 return false;
@@ -911,7 +911,7 @@ public final class C7326j {
                     if ((chatMemberStatus instanceof TdApi.ChatMemberStatusCreator) && (chatMemberStatus2 instanceof TdApi.ChatMemberStatusCreator)) {
                         TdApi.ChatMemberStatusCreator chatMemberStatusCreator = (TdApi.ChatMemberStatusCreator) chatMemberStatus;
                         TdApi.ChatMemberStatusCreator chatMemberStatusCreator2 = (TdApi.ChatMemberStatusCreator) chatMemberStatus2;
-                        if (chatMemberStatusCreator.isMember != chatMemberStatusCreator2.isMember || !C5070i.m24067c(chatMemberStatusCreator.customTitle, chatMemberStatusCreator2.customTitle)) {
+                        if (chatMemberStatusCreator.isMember != chatMemberStatusCreator2.isMember || !C5070i.m24068c(chatMemberStatusCreator.customTitle, chatMemberStatusCreator2.customTitle)) {
                             return false;
                         }
                     } else {
@@ -925,7 +925,7 @@ public final class C7326j {
                     if ((chatMemberStatus instanceof TdApi.ChatMemberStatusAdministrator) && (chatMemberStatus2 instanceof TdApi.ChatMemberStatusAdministrator)) {
                         TdApi.ChatMemberStatusAdministrator chatMemberStatusAdministrator = (TdApi.ChatMemberStatusAdministrator) chatMemberStatus;
                         TdApi.ChatMemberStatusAdministrator chatMemberStatusAdministrator2 = (TdApi.ChatMemberStatusAdministrator) chatMemberStatus2;
-                        if (!(chatMemberStatusAdministrator.canChangeInfo == chatMemberStatusAdministrator2.canChangeInfo && chatMemberStatusAdministrator.canPostMessages == chatMemberStatusAdministrator2.canPostMessages && chatMemberStatusAdministrator.canEditMessages == chatMemberStatusAdministrator2.canEditMessages && chatMemberStatusAdministrator.canDeleteMessages == chatMemberStatusAdministrator2.canDeleteMessages && chatMemberStatusAdministrator.canInviteUsers == chatMemberStatusAdministrator2.canInviteUsers && chatMemberStatusAdministrator.canRestrictMembers == chatMemberStatusAdministrator2.canRestrictMembers && chatMemberStatusAdministrator.canPinMessages == chatMemberStatusAdministrator2.canPinMessages && chatMemberStatusAdministrator.canPromoteMembers == chatMemberStatusAdministrator2.canPromoteMembers && chatMemberStatusAdministrator.isAnonymous == chatMemberStatusAdministrator2.isAnonymous && chatMemberStatusAdministrator.canManageChat == chatMemberStatusAdministrator2.canManageChat && chatMemberStatusAdministrator.canManageVideoChats == chatMemberStatusAdministrator2.canManageVideoChats && C5070i.m24067c(chatMemberStatusAdministrator.customTitle, chatMemberStatusAdministrator2.customTitle))) {
+                        if (!(chatMemberStatusAdministrator.canChangeInfo == chatMemberStatusAdministrator2.canChangeInfo && chatMemberStatusAdministrator.canPostMessages == chatMemberStatusAdministrator2.canPostMessages && chatMemberStatusAdministrator.canEditMessages == chatMemberStatusAdministrator2.canEditMessages && chatMemberStatusAdministrator.canDeleteMessages == chatMemberStatusAdministrator2.canDeleteMessages && chatMemberStatusAdministrator.canInviteUsers == chatMemberStatusAdministrator2.canInviteUsers && chatMemberStatusAdministrator.canRestrictMembers == chatMemberStatusAdministrator2.canRestrictMembers && chatMemberStatusAdministrator.canPinMessages == chatMemberStatusAdministrator2.canPinMessages && chatMemberStatusAdministrator.canPromoteMembers == chatMemberStatusAdministrator2.canPromoteMembers && chatMemberStatusAdministrator.isAnonymous == chatMemberStatusAdministrator2.isAnonymous && chatMemberStatusAdministrator.canManageChat == chatMemberStatusAdministrator2.canManageChat && chatMemberStatusAdministrator.canManageVideoChats == chatMemberStatusAdministrator2.canManageVideoChats && C5070i.m24068c(chatMemberStatusAdministrator.customTitle, chatMemberStatusAdministrator2.customTitle))) {
                             return false;
                         }
                     } else {
@@ -940,9 +940,9 @@ public final class C7326j {
                             return false;
                         }
                         TdApi.ChatPermissions chatPermissions = chatMemberStatusRestricted.permissions;
-                        C8298k.m12935d(chatPermissions, "this.permissions");
+                        C8298k.m12934d(chatPermissions, "this.permissions");
                         TdApi.ChatPermissions chatPermissions2 = chatMemberStatusRestricted2.permissions;
-                        C8298k.m12935d(chatPermissions2, "b.permissions");
+                        C8298k.m12934d(chatPermissions2, "b.permissions");
                         if (!C7321e.m17011E(chatPermissions, chatPermissions2)) {
                             return false;
                         }
@@ -952,7 +952,7 @@ public final class C7326j {
                     break;
                 default:
                     String object = chatMemberStatus.toString();
-                    C8298k.m12935d(object, "this.toString()");
+                    C8298k.m12934d(object, "this.toString()");
                     throw new IllegalStateException(object.toString());
             }
         }
@@ -960,8 +960,8 @@ public final class C7326j {
     }
 
     public static final boolean m16834i(TdApi.ChatPermissions chatPermissions, TdApi.ChatPermissions chatPermissions2) {
-        C8298k.m12934e(chatPermissions, "<this>");
-        C8298k.m12934e(chatPermissions2, "b");
+        C8298k.m12933e(chatPermissions, "<this>");
+        C8298k.m12933e(chatPermissions2, "b");
         return chatPermissions == chatPermissions2 || (chatPermissions.canSendMessages == chatPermissions2.canSendMessages && chatPermissions.canSendMediaMessages == chatPermissions2.canSendMediaMessages && chatPermissions.canSendOtherMessages == chatPermissions2.canSendOtherMessages && chatPermissions.canAddWebPagePreviews == chatPermissions2.canAddWebPagePreviews && chatPermissions.canSendPolls == chatPermissions2.canSendPolls && chatPermissions.canInviteUsers == chatPermissions2.canInviteUsers && chatPermissions.canPinMessages == chatPermissions2.canPinMessages && chatPermissions.canChangeInfo == chatPermissions2.canChangeInfo);
     }
 
@@ -974,9 +974,9 @@ public final class C7326j {
         boolean z6;
         boolean z7;
         boolean z8;
-        C8298k.m12934e(chatPermissions, "<this>");
-        C8298k.m12934e(chatPermissions2, "old");
-        C8298k.m12934e(chatPermissions3, "defaultPermissions");
+        C8298k.m12933e(chatPermissions, "<this>");
+        C8298k.m12933e(chatPermissions2, "old");
+        C8298k.m12933e(chatPermissions3, "defaultPermissions");
         return chatPermissions == chatPermissions2 || (((z = chatPermissions.canSendMessages) == chatPermissions2.canSendMessages || (!z && !chatPermissions3.canSendMessages)) && (((z2 = chatPermissions.canSendMediaMessages) == chatPermissions2.canSendMediaMessages || (!z2 && !chatPermissions3.canSendMediaMessages)) && (((z3 = chatPermissions.canSendOtherMessages) == chatPermissions2.canSendOtherMessages || (!z3 && !chatPermissions3.canSendOtherMessages)) && (((z4 = chatPermissions.canAddWebPagePreviews) == chatPermissions2.canAddWebPagePreviews || (!z4 && !chatPermissions3.canAddWebPagePreviews)) && (((z5 = chatPermissions.canSendPolls) == chatPermissions2.canSendPolls || (!z5 && !chatPermissions3.canSendPolls)) && (((z6 = chatPermissions.canInviteUsers) == chatPermissions2.canInviteUsers || (!z6 && !chatPermissions3.canInviteUsers)) && (((z7 = chatPermissions.canPinMessages) == chatPermissions2.canPinMessages || (!z7 && !chatPermissions3.canPinMessages)) && ((z8 = chatPermissions.canChangeInfo) == chatPermissions2.canChangeInfo || (!z8 && !chatPermissions3.canChangeInfo)))))))));
     }
 
@@ -990,7 +990,7 @@ public final class C7326j {
                 if ((chatSource instanceof TdApi.ChatSourcePublicServiceAnnouncement) && (chatSource2 instanceof TdApi.ChatSourcePublicServiceAnnouncement)) {
                     TdApi.ChatSourcePublicServiceAnnouncement chatSourcePublicServiceAnnouncement = (TdApi.ChatSourcePublicServiceAnnouncement) chatSource;
                     TdApi.ChatSourcePublicServiceAnnouncement chatSourcePublicServiceAnnouncement2 = (TdApi.ChatSourcePublicServiceAnnouncement) chatSource2;
-                    if (!C5070i.m24067c(chatSourcePublicServiceAnnouncement.type, chatSourcePublicServiceAnnouncement2.type) || !C5070i.m24067c(chatSourcePublicServiceAnnouncement.text, chatSourcePublicServiceAnnouncement2.text)) {
+                    if (!C5070i.m24068c(chatSourcePublicServiceAnnouncement.type, chatSourcePublicServiceAnnouncement2.type) || !C5070i.m24068c(chatSourcePublicServiceAnnouncement.text, chatSourcePublicServiceAnnouncement2.text)) {
                         return false;
                     }
                 } else {
@@ -998,7 +998,7 @@ public final class C7326j {
                 }
             } else if (constructor != 394074115) {
                 String object = chatSource.toString();
-                C8298k.m12935d(object, "this.toString()");
+                C8298k.m12934d(object, "this.toString()");
                 throw new IllegalStateException(object.toString());
             }
         }
@@ -1027,7 +1027,7 @@ public final class C7326j {
         }
         if (!(document == null || document2 == null)) {
             Z = m16847Z(document.document, document2.document, false, 2, null);
-            if (Z && C5070i.m24067c(document.mimeType, document2.mimeType) && C5070i.m24067c(document.fileName, document2.fileName)) {
+            if (Z && C5070i.m24068c(document.mimeType, document2.mimeType) && C5070i.m24068c(document.fileName, document2.fileName)) {
                 b0 = m16843b0(document.minithumbnail, document2.minithumbnail, false, 2, null);
                 if (b0 && C7321e.m16945h0(document.thumbnail, document2.thumbnail)) {
                     return true;
@@ -1061,10 +1061,10 @@ public final class C7326j {
                 return false;
             }
             if (z) {
-                if (file.f25373id != file2.f25373id) {
+                if (file.f25376id != file2.f25376id) {
                     return false;
                 }
-            } else if (!(file.f25373id == file2.f25373id && file.size == file2.size && file.expectedSize == file2.expectedSize && C7321e.m16981T(file.local, file2.local) && C7321e.m16963b0(file.remote, file2.remote))) {
+            } else if (!(file.f25376id == file2.f25376id && file.size == file2.size && file.expectedSize == file2.expectedSize && C7321e.m16981T(file.local, file2.local) && C7321e.m16963b0(file.remote, file2.remote))) {
                 return false;
             }
         }
@@ -1081,18 +1081,18 @@ public final class C7326j {
         if (formattedText == formattedText2) {
             return true;
         }
-        return C7321e.m16965a1(formattedText) ? C7321e.m16965a1(formattedText2) : !C7321e.m16965a1(formattedText2) && C5070i.m24067c(formattedText.text, formattedText2.text) && C7321e.m16912s0(formattedText.entities, formattedText2.entities, z);
+        return C7321e.m16965a1(formattedText) ? C7321e.m16965a1(formattedText2) : !C7321e.m16965a1(formattedText2) && C5070i.m24068c(formattedText.text, formattedText2.text) && C7321e.m16912s0(formattedText.entities, formattedText2.entities, z);
     }
 
     public static final boolean m16824s(TdApi.InlineKeyboardButton inlineKeyboardButton, TdApi.InlineKeyboardButton inlineKeyboardButton2) {
-        C8298k.m12934e(inlineKeyboardButton, "<this>");
-        C8298k.m12934e(inlineKeyboardButton2, "b");
+        C8298k.m12933e(inlineKeyboardButton, "<this>");
+        C8298k.m12933e(inlineKeyboardButton2, "b");
         if (inlineKeyboardButton != inlineKeyboardButton2) {
-            if (C8298k.m12937b(inlineKeyboardButton.text, inlineKeyboardButton2.text)) {
+            if (C8298k.m12936b(inlineKeyboardButton.text, inlineKeyboardButton2.text)) {
                 TdApi.InlineKeyboardButtonType inlineKeyboardButtonType = inlineKeyboardButton.type;
-                C8298k.m12935d(inlineKeyboardButtonType, "this.type");
+                C8298k.m12934d(inlineKeyboardButtonType, "this.type");
                 TdApi.InlineKeyboardButtonType inlineKeyboardButtonType2 = inlineKeyboardButton2.type;
-                C8298k.m12935d(inlineKeyboardButtonType2, "b.type");
+                C8298k.m12934d(inlineKeyboardButtonType2, "b.type");
                 if (C7321e.m16989P(inlineKeyboardButtonType, inlineKeyboardButtonType2)) {
                 }
             }
@@ -1102,8 +1102,8 @@ public final class C7326j {
     }
 
     public static final boolean m16823t(TdApi.InlineKeyboardButtonType inlineKeyboardButtonType, TdApi.InlineKeyboardButtonType inlineKeyboardButtonType2) {
-        C8298k.m12934e(inlineKeyboardButtonType, "<this>");
-        C8298k.m12934e(inlineKeyboardButtonType2, "b");
+        C8298k.m12933e(inlineKeyboardButtonType, "<this>");
+        C8298k.m12933e(inlineKeyboardButtonType2, "b");
         boolean z = false;
         if (inlineKeyboardButtonType != inlineKeyboardButtonType2) {
             if (inlineKeyboardButtonType.getConstructor() != inlineKeyboardButtonType2.getConstructor()) {
@@ -1114,7 +1114,7 @@ public final class C7326j {
                     if ((inlineKeyboardButtonType instanceof TdApi.InlineKeyboardButtonTypeSwitchInline) && (inlineKeyboardButtonType2 instanceof TdApi.InlineKeyboardButtonTypeSwitchInline)) {
                         TdApi.InlineKeyboardButtonTypeSwitchInline inlineKeyboardButtonTypeSwitchInline = (TdApi.InlineKeyboardButtonTypeSwitchInline) inlineKeyboardButtonType;
                         TdApi.InlineKeyboardButtonTypeSwitchInline inlineKeyboardButtonTypeSwitchInline2 = (TdApi.InlineKeyboardButtonTypeSwitchInline) inlineKeyboardButtonType2;
-                        if (inlineKeyboardButtonTypeSwitchInline.inCurrentChat != inlineKeyboardButtonTypeSwitchInline2.inCurrentChat || !C8298k.m12937b(inlineKeyboardButtonTypeSwitchInline.query, inlineKeyboardButtonTypeSwitchInline2.query)) {
+                        if (inlineKeyboardButtonTypeSwitchInline.inCurrentChat != inlineKeyboardButtonTypeSwitchInline2.inCurrentChat || !C8298k.m12936b(inlineKeyboardButtonTypeSwitchInline.query, inlineKeyboardButtonTypeSwitchInline2.query)) {
                             return false;
                         }
                     } else {
@@ -1125,7 +1125,7 @@ public final class C7326j {
                     if ((inlineKeyboardButtonType instanceof TdApi.InlineKeyboardButtonTypeLoginUrl) && (inlineKeyboardButtonType2 instanceof TdApi.InlineKeyboardButtonTypeLoginUrl)) {
                         TdApi.InlineKeyboardButtonTypeLoginUrl inlineKeyboardButtonTypeLoginUrl = (TdApi.InlineKeyboardButtonTypeLoginUrl) inlineKeyboardButtonType;
                         TdApi.InlineKeyboardButtonTypeLoginUrl inlineKeyboardButtonTypeLoginUrl2 = (TdApi.InlineKeyboardButtonTypeLoginUrl) inlineKeyboardButtonType2;
-                        if (inlineKeyboardButtonTypeLoginUrl.f25378id != inlineKeyboardButtonTypeLoginUrl2.f25378id || !C8298k.m12937b(inlineKeyboardButtonTypeLoginUrl.url, inlineKeyboardButtonTypeLoginUrl2.url) || !C8298k.m12937b(inlineKeyboardButtonTypeLoginUrl.forwardText, inlineKeyboardButtonTypeLoginUrl2.forwardText)) {
+                        if (inlineKeyboardButtonTypeLoginUrl.f25381id != inlineKeyboardButtonTypeLoginUrl2.f25381id || !C8298k.m12936b(inlineKeyboardButtonTypeLoginUrl.url, inlineKeyboardButtonTypeLoginUrl2.url) || !C8298k.m12936b(inlineKeyboardButtonTypeLoginUrl.forwardText, inlineKeyboardButtonTypeLoginUrl2.forwardText)) {
                             return false;
                         }
                     } else {
@@ -1156,12 +1156,12 @@ public final class C7326j {
                         z = true;
                     }
                     if (z) {
-                        return C8298k.m12937b(((TdApi.InlineKeyboardButtonTypeUrl) inlineKeyboardButtonType).url, ((TdApi.InlineKeyboardButtonTypeUrl) inlineKeyboardButtonType2).url);
+                        return C8298k.m12936b(((TdApi.InlineKeyboardButtonTypeUrl) inlineKeyboardButtonType).url, ((TdApi.InlineKeyboardButtonTypeUrl) inlineKeyboardButtonType2).url);
                     }
                     throw new IllegalArgumentException("Failed requirement.".toString());
                 default:
                     String object = inlineKeyboardButtonType.toString();
-                    C8298k.m12935d(object, "this.toString()");
+                    C8298k.m12934d(object, "this.toString()");
                     throw new IllegalStateException(object.toString());
             }
         }
@@ -1183,22 +1183,22 @@ public final class C7326j {
                 }
             } else {
                 String object = inputMessageContent.toString();
-                C8298k.m12935d(object, "this.toString()");
-                throw new C5047g(C8298k.m12929j("An operation is not implemented: ", object));
+                C8298k.m12934d(object, "this.toString()");
+                throw new C5047g(C8298k.m12928j("An operation is not implemented: ", object));
             }
         }
         return false;
     }
 
     public static final boolean m16821v(TdApi.KeyboardButton keyboardButton, TdApi.KeyboardButton keyboardButton2) {
-        C8298k.m12934e(keyboardButton, "<this>");
-        C8298k.m12934e(keyboardButton2, "b");
+        C8298k.m12933e(keyboardButton, "<this>");
+        C8298k.m12933e(keyboardButton2, "b");
         if (keyboardButton != keyboardButton2) {
-            if (C8298k.m12937b(keyboardButton.text, keyboardButton2.text)) {
+            if (C8298k.m12936b(keyboardButton.text, keyboardButton2.text)) {
                 TdApi.KeyboardButtonType keyboardButtonType = keyboardButton.type;
-                C8298k.m12935d(keyboardButtonType, "this.type");
+                C8298k.m12934d(keyboardButtonType, "this.type");
                 TdApi.KeyboardButtonType keyboardButtonType2 = keyboardButton2.type;
-                C8298k.m12935d(keyboardButtonType2, "b.type");
+                C8298k.m12934d(keyboardButtonType2, "b.type");
                 if (C7321e.m16983S(keyboardButtonType, keyboardButtonType2)) {
                 }
             }
@@ -1208,8 +1208,8 @@ public final class C7326j {
     }
 
     public static final boolean m16820w(TdApi.KeyboardButtonType keyboardButtonType, TdApi.KeyboardButtonType keyboardButtonType2) {
-        C8298k.m12934e(keyboardButtonType, "<this>");
-        C8298k.m12934e(keyboardButtonType2, "b");
+        C8298k.m12933e(keyboardButtonType, "<this>");
+        C8298k.m12933e(keyboardButtonType2, "b");
         if (keyboardButtonType != keyboardButtonType2) {
             if (keyboardButtonType.getConstructor() == keyboardButtonType2.getConstructor()) {
                 switch (keyboardButtonType.getConstructor()) {
@@ -1219,7 +1219,7 @@ public final class C7326j {
                         break;
                     default:
                         String object = keyboardButtonType.toString();
-                        C8298k.m12935d(object, "this.toString()");
+                        C8298k.m12934d(object, "this.toString()");
                         throw new IllegalStateException(object.toString());
                     case TdApi.KeyboardButtonTypeRequestPoll.CONSTRUCTOR:
                         if ((keyboardButtonType instanceof TdApi.KeyboardButtonTypeRequestPoll) && (keyboardButtonType2 instanceof TdApi.KeyboardButtonTypeRequestPoll)) {
@@ -1241,7 +1241,7 @@ public final class C7326j {
     }
 
     public static final boolean m16819x(TdApi.LocalFile localFile, TdApi.LocalFile localFile2) {
-        return localFile == localFile2 || (localFile != null && localFile2 != null && localFile.downloadedSize == localFile2.downloadedSize && localFile.downloadOffset == localFile2.downloadOffset && localFile.downloadedPrefixSize == localFile2.downloadedPrefixSize && localFile.isDownloadingActive == localFile2.isDownloadingActive && localFile.isDownloadingCompleted == localFile2.isDownloadingCompleted && localFile.canBeDeleted == localFile2.canBeDeleted && localFile.canBeDownloaded == localFile2.canBeDownloaded && C5070i.m24067c(localFile.path, localFile2.path));
+        return localFile == localFile2 || (localFile != null && localFile2 != null && localFile.downloadedSize == localFile2.downloadedSize && localFile.downloadOffset == localFile2.downloadOffset && localFile.downloadedPrefixSize == localFile2.downloadedPrefixSize && localFile.isDownloadingActive == localFile2.isDownloadingActive && localFile.isDownloadingCompleted == localFile2.isDownloadingCompleted && localFile.canBeDeleted == localFile2.canBeDeleted && localFile.canBeDownloaded == localFile2.canBeDownloaded && C5070i.m24068c(localFile.path, localFile2.path));
     }
 
     public static final boolean m16818y(TdApi.MaskPoint maskPoint, TdApi.MaskPoint maskPoint2) {
@@ -1259,7 +1259,7 @@ public final class C7326j {
                 return true;
             default:
                 String object = maskPoint.toString();
-                C8298k.m12935d(object, "this.toString()");
+                C8298k.m12934d(object, "this.toString()");
                 throw new IllegalStateException(object.toString());
         }
     }

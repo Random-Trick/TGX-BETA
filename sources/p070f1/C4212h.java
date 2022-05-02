@@ -11,12 +11,12 @@ public class C4212h extends AbstractView$OnTouchListenerC4202a {
     }
 
     @Override
-    public boolean mo28428a(int i) {
+    public boolean mo28430a(int i) {
         return false;
     }
 
     @Override
-    public boolean mo28427b(int i) {
+    public boolean mo28429b(int i) {
         ListView listView = this.f14232b0;
         int count = listView.getCount();
         if (count == 0) {
@@ -40,7 +40,7 @@ public class C4212h extends AbstractView$OnTouchListenerC4202a {
     }
 
     @Override
-    public void mo28426j(int i, int i2) {
-        C4213i.m28424b(this.f14232b0, i2);
+    public void mo28428j(int i, int i2) {
+        C4213i.m28426b(this.f14232b0, i2);
     }
 }

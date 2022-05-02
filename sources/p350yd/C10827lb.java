@@ -39,54 +39,54 @@ import p213p0.C7976k;
 import td.AbstractC9323v4;
 
 public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, AbstractC10816l0 {
-    public static final String f34660n0;
-    public static final String f34661o0;
-    public static final int f34662p0;
-    public static final long[] f34663q0;
-    public static final long[] f34664r0;
-    public static final long[] f34665s0;
-    public static final long[] f34666t0;
-    public static final int[] f34667u0;
-    public static final int f34668v0;
-    public static final int[] f34669w0;
-    public static final int[] f34670x0;
-    public AudioManager f34671M;
-    public Boolean f34672N;
-    public Integer f34673O;
-    public final C10677g1 f34674P;
-    public final C10677g1 f34675Q;
-    public final C10677g1 f34676R;
-    public TdApi.ScopeNotificationSettings f34677S;
-    public TdApi.ScopeNotificationSettings f34678T;
-    public TdApi.ScopeNotificationSettings f34679U;
-    public Integer f34680V;
-    public Boolean f34681W;
-    public boolean f34682X;
-    public boolean f34683Y;
-    public boolean f34684Z;
-    public final C10930q6 f34685a;
-    public String f34686a0;
-    public final C10762jb f34687b;
-    public String f34688b0;
-    public final C10828a f34689c;
-    public String f34690c0;
-    public Integer f34691d0;
-    public C10639eb f34692e0;
-    public long f34693f0;
-    public SoundPool f34694g0;
-    public long f34697j0;
-    public long f34698k0;
-    public long f34699l0;
-    public TdApi.User f34700m0;
-    public final SparseIntArray f34696i0 = new SparseIntArray();
-    public final SparseIntArray f34695h0 = new SparseIntArray();
+    public static final String f34663n0;
+    public static final String f34664o0;
+    public static final int f34665p0;
+    public static final long[] f34666q0;
+    public static final long[] f34667r0;
+    public static final long[] f34668s0;
+    public static final long[] f34669t0;
+    public static final int[] f34670u0;
+    public static final int f34671v0;
+    public static final int[] f34672w0;
+    public static final int[] f34673x0;
+    public AudioManager f34674M;
+    public Boolean f34675N;
+    public Integer f34676O;
+    public final C10677g1 f34677P;
+    public final C10677g1 f34678Q;
+    public final C10677g1 f34679R;
+    public TdApi.ScopeNotificationSettings f34680S;
+    public TdApi.ScopeNotificationSettings f34681T;
+    public TdApi.ScopeNotificationSettings f34682U;
+    public Integer f34683V;
+    public Boolean f34684W;
+    public boolean f34685X;
+    public boolean f34686Y;
+    public boolean f34687Z;
+    public final C10930q6 f34688a;
+    public String f34689a0;
+    public final C10762jb f34690b;
+    public String f34691b0;
+    public final C10828a f34692c;
+    public String f34693c0;
+    public Integer f34694d0;
+    public C10639eb f34695e0;
+    public long f34696f0;
+    public SoundPool f34697g0;
+    public long f34700j0;
+    public long f34701k0;
+    public long f34702l0;
+    public TdApi.User f34703m0;
+    public final SparseIntArray f34699i0 = new SparseIntArray();
+    public final SparseIntArray f34698h0 = new SparseIntArray();
 
     public static class C10828a extends C4384m {
-        public final C10536ab f34701M;
+        public final C10536ab f34704M;
 
         public C10828a(String str, C10536ab abVar) {
             super(str);
-            this.f34701M = abVar;
+            this.f34704M = abVar;
         }
 
         @Override
@@ -101,15 +101,15 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
                     return;
                 case 2:
                     if (Build.VERSION.SDK_INT >= 26) {
-                        C10930q6 q6Var = ((C10827lb) message.obj).f34685a;
-                        C10639eb.m4403a(this.f34701M);
+                        C10930q6 q6Var = ((C10827lb) message.obj).f34688a;
+                        C10639eb.m4403a(this.f34704M);
                         q6Var.m2440ga().m3208J();
                         C10639eb.m4402b(q6Var);
                         return;
                     }
                     return;
                 case 3:
-                    ((C10827lb) message.obj).m3202K1(C5063c.m24140f(message.arg1, message.arg2));
+                    ((C10827lb) message.obj).m3202K1(C5063c.m24141f(message.arg1, message.arg2));
                     return;
                 case 4:
                     Object[] objArr = (Object[]) message.obj;
@@ -148,13 +148,13 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
                     objArr5[0] = null;
                     return;
                 case 11:
-                    ((C10827lb) message.obj).m3153Z1(C5063c.m24140f(message.arg1, message.arg2));
+                    ((C10827lb) message.obj).m3153Z1(C5063c.m24141f(message.arg1, message.arg2));
                     return;
                 case 12:
-                    C10639eb.m4403a(this.f34701M);
+                    C10639eb.m4403a(this.f34704M);
                     return;
                 case 13:
-                    ((C10827lb) message.obj).m3074u1(C5063c.m24140f(message.arg1, message.arg2));
+                    ((C10827lb) message.obj).m3074u1(C5063c.m24141f(message.arg1, message.arg2));
                     return;
                 case 14:
                     C10827lb lbVar = (C10827lb) message.obj;
@@ -164,17 +164,17 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
                     lbVar.m3066w1(z);
                     return;
                 case 15:
-                    ((C10827lb) message.obj).f34685a.m2850G4();
+                    ((C10827lb) message.obj).f34688a.m2850G4();
                     return;
                 case 16:
                     Object[] objArr6 = (Object[]) message.obj;
                     ((Runnable) objArr6[1]).run();
-                    ((C10827lb) objArr6[0]).f34685a.m2850G4();
+                    ((C10827lb) objArr6[0]).f34688a.m2850G4();
                     objArr6[1] = null;
                     objArr6[0] = null;
                     return;
                 case 17:
-                    ((C10827lb) message.obj).m3218G1(C5063c.m24140f(message.arg1, message.arg2));
+                    ((C10827lb) message.obj).m3218G1(C5063c.m24141f(message.arg1, message.arg2));
                     return;
                 case 18:
                     Object[] objArr7 = (Object[]) message.obj;
@@ -199,42 +199,42 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
 
         public void m3051i() {
             if (Build.VERSION.SDK_INT >= 26) {
-                m28050h(Message.obtain(m28053d(), 12), 0L);
+                m28052h(Message.obtain(m28055d(), 12), 0L);
             }
         }
     }
 
     static {
         int i = Build.VERSION.SDK_INT;
-        f34660n0 = i >= 26 ? "custom_importance_" : "custom_priority_";
-        f34661o0 = i >= 26 ? "_importance" : "_priority";
-        f34662p0 = i >= 26 ? 4 : 1;
-        f34663q0 = new long[]{0, 100, 0, 100};
-        f34664r0 = new long[]{0, 1000};
-        f34665s0 = new long[]{0, 140, 0, 140, 750};
-        f34666t0 = new long[]{0, 1000, 1000};
+        f34663n0 = i >= 26 ? "custom_importance_" : "custom_priority_";
+        f34664o0 = i >= 26 ? "_importance" : "_priority";
+        f34665p0 = i >= 26 ? 4 : 1;
+        f34666q0 = new long[]{0, 100, 0, 100};
+        f34667r0 = new long[]{0, 1000};
+        f34668s0 = new long[]{0, 140, 0, 140, 750};
+        f34669t0 = new long[]{0, 1000, 1000};
         int[] iArr = {-1, -16776961, -65536, -29183, -256, -16711936, -16711681, -2984711, -65281};
-        f34667u0 = iArr;
-        f34668v0 = iArr[1];
-        f34669w0 = new int[]{R.id.theme_color_ledWhite, R.id.theme_color_ledBlue, R.id.theme_color_ledRed, R.id.theme_color_ledOrange, R.id.theme_color_ledYellow, R.id.theme_color_ledGreen, R.id.theme_color_ledCyan, R.id.theme_color_ledPurple, R.id.theme_color_ledPink};
-        f34670x0 = new int[]{R.string.LedWhite, R.string.LedBlue, R.string.LedRed, R.string.LedOrange, R.string.LedYellow, R.string.LedGreen, R.string.LedCyan, R.string.LedPurple, R.string.LedPink};
+        f34670u0 = iArr;
+        f34671v0 = iArr[1];
+        f34672w0 = new int[]{R.id.theme_color_ledWhite, R.id.theme_color_ledBlue, R.id.theme_color_ledRed, R.id.theme_color_ledOrange, R.id.theme_color_ledYellow, R.id.theme_color_ledGreen, R.id.theme_color_ledCyan, R.id.theme_color_ledPurple, R.id.theme_color_ledPink};
+        f34673x0 = new int[]{R.string.LedWhite, R.string.LedBlue, R.string.LedRed, R.string.LedOrange, R.string.LedYellow, R.string.LedGreen, R.string.LedCyan, R.string.LedPurple, R.string.LedPink};
     }
 
     public C10827lb(C10930q6 q6Var, C10828a aVar) {
-        this.f34685a = q6Var;
-        this.f34689c = aVar;
+        this.f34688a = q6Var;
+        this.f34692c = aVar;
         q6Var.m2781K9().m1839l(this);
-        this.f34687b = new C10762jb(this, q6Var);
+        this.f34690b = new C10762jb(this, q6Var);
         int w6 = q6Var.m2188w6();
-        this.f34674P = new C10677g1(w6, new TdApi.NotificationSettingsScopePrivateChats());
-        this.f34675Q = new C10677g1(w6, new TdApi.NotificationSettingsScopeGroupChats());
-        this.f34676R = new C10677g1(w6, new TdApi.NotificationSettingsScopeChannelChats());
-        C1379j0.m37335d(this);
-        C4862d.m24934w().m24955a(this);
+        this.f34677P = new C10677g1(w6, new TdApi.NotificationSettingsScopePrivateChats());
+        this.f34678Q = new C10677g1(w6, new TdApi.NotificationSettingsScopeGroupChats());
+        this.f34679R = new C10677g1(w6, new TdApi.NotificationSettingsScopeChannelChats());
+        C1379j0.m37338d(this);
+        C4862d.m24935w().m24956a(this);
     }
 
     public static boolean m3244A() {
-        return RunnableC5952j1.m21779y().m21778z();
+        return RunnableC5952j1.m21780y().m21779z();
     }
 
     public static int m3220G(C10930q6 q6Var) {
@@ -242,7 +242,7 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public static boolean m3212I(String str, String str2) {
-        return (str == null) == (str2 == null) && C5070i.m24067c(str, str2);
+        return (str == null) == (str2 == null) && C5070i.m24068c(str, str2);
     }
 
     public static android.net.Uri m3182Q(android.net.Uri r10, boolean r11, java.lang.String r12) {
@@ -250,7 +250,7 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public static String m3179R(String str) {
-        if (C5070i.m24061i(str)) {
+        if (C5070i.m24062i(str)) {
             return str;
         }
         try {
@@ -298,7 +298,7 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public final void m3242A1(C10666fb fbVar) {
-        this.f34687b.m3932S(fbVar);
+        this.f34690b.m3932S(fbVar);
     }
 
     public boolean m3241A2(TdApi.NotificationSettingsScope notificationSettingsScope, int i) {
@@ -307,11 +307,11 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         }
         C10677g1 F0 = m3223F0(notificationSettingsScope);
         F0.m4316p(i);
-        LevelDB W = C4868i.m24726c2().m24773W();
-        if (i != f34662p0) {
-            W.putInt(F0.m4313s(f34661o0), i);
+        LevelDB W = C4868i.m24727c2().m24774W();
+        if (i != f34665p0) {
+            W.putInt(F0.m4313s(f34664o0), i);
         } else {
-            W.remove(F0.m4313s(f34661o0));
+            W.remove(F0.m4313s(f34664o0));
         }
         if (Build.VERSION.SDK_INT >= 26) {
             m3157Y0(notificationSettingsScope, 0L, W);
@@ -335,14 +335,14 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public final void m3238B1() {
-        this.f34687b.m3929V();
+        this.f34690b.m3929V();
     }
 
     public void m3237B2(TdApi.NotificationSettingsScope notificationSettingsScope, boolean z) {
         TdApi.ScopeNotificationSettings M0 = m3195M0(notificationSettingsScope);
         if (M0 != null) {
             M0.showPreview = z;
-            this.f34685a.m2358lc(notificationSettingsScope, M0);
+            this.f34688a.m2358lc(notificationSettingsScope, M0);
         }
     }
 
@@ -356,28 +356,28 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public void m3234C1(TdApi.UpdateActiveNotifications updateActiveNotifications, Runnable runnable) {
-        m3097o2(Message.obtain(this.f34689c.m28053d(), 4, new Object[]{this, updateActiveNotifications}), runnable);
+        m3097o2(Message.obtain(this.f34692c.m28055d(), 4, new Object[]{this, updateActiveNotifications}), runnable);
     }
 
     public boolean m3233C2(TdApi.NotificationSettingsScope notificationSettingsScope, String str, String str2, String str3) {
         String R = m3179R(str);
         C10677g1 F0 = m3223F0(notificationSettingsScope);
-        if (m3212I(F0.m4327e(), R) && C5070i.m24067c(F0.m4326f(), str2) && C5070i.m24067c(F0.m4325g(), str3)) {
+        if (m3212I(F0.m4327e(), R) && C5070i.m24068c(F0.m4326f(), str2) && C5070i.m24068c(F0.m4325g(), str3)) {
             return false;
         }
         F0.m4315q(R, str2, str3);
-        LevelDB W = C4868i.m24726c2().m24773W();
+        LevelDB W = C4868i.m24727c2().m24774W();
         if (R != null) {
             W.putString(F0.m4313s("_sounds"), R);
         } else {
             W.remove(F0.m4313s("_sounds"));
         }
-        if (C5070i.m24061i(R) || str2 == null) {
+        if (C5070i.m24062i(R) || str2 == null) {
             W.remove(F0.m4313s("_sounds_name"));
         } else {
             W.putString(F0.m4313s("_sounds_name"), str2);
         }
-        if (C5070i.m24061i(R) || str3 == null) {
+        if (C5070i.m24062i(R) || str3 == null) {
             W.remove(F0.m4313s("_sounds_path"));
         } else {
             W.putString(F0.m4313s("_sounds_path"), str3);
@@ -413,11 +413,11 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         int constructor;
         TdApi.Message message = updateMessageSendSucceeded.message;
         try {
-            v4Var = C1379j0.m37305s();
+            v4Var = C1379j0.m37308s();
         } catch (IndexOutOfBoundsException unused) {
             v4Var = null;
         }
-        if ((((v4Var instanceof View$OnClickListenerC2971rh) && ((View$OnClickListenerC2971rh) v4Var).m32163yj(message.chatId)) || (v4Var instanceof C2760nb)) && !v4Var.m9312Xa() && (constructor = message.content.getConstructor()) != -1564971605 && constructor != 1810060209) {
+        if ((((v4Var instanceof View$OnClickListenerC2971rh) && ((View$OnClickListenerC2971rh) v4Var).m32166yj(message.chatId)) || (v4Var instanceof C2760nb)) && !v4Var.m9312Xa() && (constructor = message.content.getConstructor()) != -1564971605 && constructor != 1810060209) {
             m3177R1();
         }
     }
@@ -428,7 +428,7 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         }
         C10677g1 F0 = m3223F0(notificationSettingsScope);
         F0.m4314r(i, z);
-        LevelDB W = C4868i.m24726c2().m24773W();
+        LevelDB W = C4868i.m24727c2().m24774W();
         if (i != 0) {
             W.putInt(F0.m4313s("_vibrate"), i);
         } else {
@@ -450,7 +450,7 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public boolean m3228E(long j) {
-        TdApi.ChatNotificationSettings I3 = this.f34685a.m2819I3(j);
+        TdApi.ChatNotificationSettings I3 = this.f34688a.m2819I3(j);
         if (I3 == null || I3.useDefaultDisablePinnedMessageNotifications) {
             return m3196M(j);
         }
@@ -460,76 +460,76 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     public C10677g1 m3227E0(long j) {
         switch (C7316a.m17057d(j)) {
             case TdApi.ChatTypeSupergroup.CONSTRUCTOR:
-                return this.f34685a.m2299p7(j) ? this.f34675Q : this.f34676R;
+                return this.f34688a.m2299p7(j) ? this.f34678Q : this.f34679R;
             case TdApi.ChatTypeSecret.CONSTRUCTOR:
             case TdApi.ChatTypePrivate.CONSTRUCTOR:
-                return this.f34674P;
+                return this.f34677P;
             case TdApi.ChatTypeBasicGroup.CONSTRUCTOR:
-                return this.f34675Q;
+                return this.f34678Q;
             default:
                 throw new RuntimeException("chatId == " + j);
         }
     }
 
     public void m3226E1(TdApi.User user) {
-        m3097o2(Message.obtain(this.f34689c.m28053d(), 18, new Object[]{this, user}), null);
+        m3097o2(Message.obtain(this.f34692c.m28055d(), 18, new Object[]{this, user}), null);
     }
 
     public void m3225E2(long j, boolean z) {
-        TdApi.ChatNotificationSettings I3 = this.f34685a.m2819I3(j);
+        TdApi.ChatNotificationSettings I3 = this.f34688a.m2819I3(j);
         boolean M = m3196M(j);
         if (I3 != null) {
             I3.useDefaultDisablePinnedMessageNotifications = z == M;
             I3.disablePinnedMessageNotifications = z;
-            this.f34685a.m2763Lb(j, I3);
+            this.f34688a.m2763Lb(j, I3);
         }
     }
 
     public final AudioManager m3224F() {
-        if (this.f34671M == null) {
+        if (this.f34674M == null) {
             try {
-                this.f34671M = (AudioManager) C1379j0.m37315n().getSystemService("audio");
+                this.f34674M = (AudioManager) C1379j0.m37318n().getSystemService("audio");
             } catch (Throwable th) {
                 Log.m14728e(4, "Context.AUDIO_SERVICE is not available", th, new Object[0]);
             }
         }
-        return this.f34671M;
+        return this.f34674M;
     }
 
     public C10677g1 m3223F0(TdApi.NotificationSettingsScope notificationSettingsScope) {
         int constructor = notificationSettingsScope.getConstructor();
         if (constructor == 548013448) {
-            return this.f34676R;
+            return this.f34679R;
         }
         if (constructor == 937446759) {
-            return this.f34674P;
+            return this.f34677P;
         }
         if (constructor == 1212142067) {
-            return this.f34675Q;
+            return this.f34678Q;
         }
         throw new RuntimeException();
     }
 
     public void m3222F1(long j) {
-        m3097o2(Message.obtain(this.f34689c.m28053d(), 17, C5063c.m24133m(j), C5063c.m24132n(j), this), null);
+        m3097o2(Message.obtain(this.f34692c.m28055d(), 17, C5063c.m24134m(j), C5063c.m24133n(j), this), null);
     }
 
     public void m3221F2(long j, boolean z) {
-        TdApi.ChatNotificationSettings I3 = this.f34685a.m2819I3(j);
+        TdApi.ChatNotificationSettings I3 = this.f34688a.m2819I3(j);
         boolean K = m3204K(j);
         if (I3 != null) {
             I3.useDefaultDisableMentionNotifications = z == K;
             I3.disableMentionNotifications = z;
-            this.f34685a.m2763Lb(j, I3);
+            this.f34688a.m2763Lb(j, I3);
         }
     }
 
     public int m3219G0() {
         NotificationChannelGroup notificationChannelGroup;
-        if (Build.VERSION.SDK_INT >= 28 && this.f34685a.m2519ba() != 0 && (notificationChannelGroup = (NotificationChannelGroup) m3184P0()) != null && notificationChannelGroup.isBlocked()) {
+        if (Build.VERSION.SDK_INT >= 28 && this.f34688a.m2519ba() != 0 && (notificationChannelGroup = (NotificationChannelGroup) m3184P0()) != null && notificationChannelGroup.isBlocked()) {
             return 1;
         }
-        if (!C7976k.m13878d(C1379j0.m37315n()).m13881a()) {
+        if (!C7976k.m13877d(C1379j0.m37318n()).m13880a()) {
             return 2;
         }
         if (!m3163W0()) {
@@ -537,17 +537,17 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
                 return 3;
             }
             return m3133f1() ? 4 : 5;
-        } else if (this.f34685a.m2294pc().m4142O()) {
+        } else if (this.f34688a.m2294pc().m4142O()) {
             return 6;
         } else {
-            return (this.f34685a.m2949A1().m1464l() || !C4868i.m24726c2().m24892F(16)) ? 0 : 7;
+            return (this.f34688a.m2949A1().m1464l() || !C4868i.m24727c2().m24893F(16)) ? 0 : 7;
         }
     }
 
     public final void m3218G1(long j) {
-        this.f34699l0 = j;
+        this.f34702l0 = j;
         if (j == 0) {
-            this.f34700m0 = null;
+            this.f34703m0 = null;
         }
     }
 
@@ -555,8 +555,8 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         if (m3215H0() == i) {
             return false;
         }
-        this.f34691d0 = Integer.valueOf(i);
-        C4868i.m24726c2().m24581u3(m3118j1("repeat_notification_minutes"), i);
+        this.f34694d0 = Integer.valueOf(i);
+        C4868i.m24727c2().m24582u3(m3118j1("repeat_notification_minutes"), i);
         if (i == 0) {
             m3216H();
             return true;
@@ -569,29 +569,29 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public int m3215H0() {
-        if (this.f34691d0 == null) {
-            this.f34691d0 = Integer.valueOf(C4868i.m24726c2().m24779V0(m3114k1("repeat_notification_minutes", this.f34685a.m2188w6()), C3563j.f11957L0));
+        if (this.f34694d0 == null) {
+            this.f34694d0 = Integer.valueOf(C4868i.m24727c2().m24780V0(m3114k1("repeat_notification_minutes", this.f34688a.m2188w6()), C3563j.f11957L0));
         }
-        return this.f34691d0.intValue();
+        return this.f34694d0.intValue();
     }
 
     public final void m3214H1(TdApi.User user) {
-        this.f34700m0 = user;
+        this.f34703m0 = user;
     }
 
     public void m3213H2(long j, boolean z) {
-        TdApi.ChatNotificationSettings I3 = this.f34685a.m2819I3(j);
+        TdApi.ChatNotificationSettings I3 = this.f34688a.m2819I3(j);
         boolean O = m3188O(j);
         if (I3 != null) {
             I3.useDefaultShowPreview = z == O;
             I3.showPreview = z;
-            this.f34685a.m2763Lb(j, I3);
+            this.f34688a.m2763Lb(j, I3);
         }
     }
 
     public String m3211I0(long j, String str) {
-        C4868i c2 = C4868i.m24726c2();
-        return m3179R(c2.m24848L1(m3118j1("custom_sound_" + j), str));
+        C4868i c2 = C4868i.m24727c2();
+        return m3179R(c2.m24849L1(m3118j1("custom_sound_" + j), str));
     }
 
     public void m3210I1(TdApi.UpdateNewMessage updateNewMessage) {
@@ -599,14 +599,14 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         if (!message.isOutgoing && message.sendingState == null) {
             AbstractC9323v4<?> v4Var = null;
             try {
-                v4Var = C1379j0.m37305s();
+                v4Var = C1379j0.m37308s();
             } catch (IndexOutOfBoundsException unused) {
             }
-            if ((v4Var instanceof View$OnClickListenerC2971rh) && v4Var.m9299Za(this.f34685a)) {
-                long Sj = ((View$OnClickListenerC2971rh) v4Var).m32581Sj();
-                if (Sj != 0 && updateNewMessage.message.chatId == Sj && this.f34685a.m2223u3(Sj)) {
-                    TdApi.ChatMemberStatus K3 = this.f34685a.m2787K3(updateNewMessage.message.chatId);
-                    if (K3 == null || C4779t2.m25506h3(K3)) {
+            if ((v4Var instanceof View$OnClickListenerC2971rh) && v4Var.m9299Za(this.f34688a)) {
+                long Sj = ((View$OnClickListenerC2971rh) v4Var).m32584Sj();
+                if (Sj != 0 && updateNewMessage.message.chatId == Sj && this.f34688a.m2223u3(Sj)) {
+                    TdApi.ChatMemberStatus K3 = this.f34688a.m2787K3(updateNewMessage.message.chatId);
+                    if (K3 == null || C4779t2.m25507h3(K3)) {
                         m3180Q1();
                     }
                 }
@@ -626,8 +626,8 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public void m3208J() {
-        if (Build.VERSION.SDK_INT >= 26 && this.f34685a.m2504ca(true) != 0) {
-            m3155Z().m4401c(this.f34685a.m2550Z9());
+        if (Build.VERSION.SDK_INT >= 26 && this.f34688a.m2504ca(true) != 0) {
+            m3155Z().m4401c(this.f34688a.m2550Z9());
         }
     }
 
@@ -636,11 +636,11 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public void m3206J1(TdApi.UpdateNotification updateNotification) {
-        m3097o2(Message.obtain(this.f34689c.m28053d(), 7, new Object[]{this, updateNotification}), null);
+        m3097o2(Message.obtain(this.f34692c.m28055d(), 7, new Object[]{this, updateNotification}), null);
     }
 
     public C10930q6 m3205J2() {
-        return this.f34685a;
+        return this.f34688a;
     }
 
     public boolean m3204K(long j) {
@@ -654,9 +654,9 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
 
     public void m3202K1(long j) {
         Thread currentThread = Thread.currentThread();
-        C10828a aVar = this.f34689c;
+        C10828a aVar = this.f34692c;
         if (currentThread != aVar) {
-            m3097o2(Message.obtain(aVar.m28053d(), 3, C5063c.m24133m(j), C5063c.m24132n(j), this), null);
+            m3097o2(Message.obtain(aVar.m28055d(), 3, C5063c.m24134m(j), C5063c.m24133n(j), this), null);
         } else {
             m3132f2(j);
         }
@@ -666,7 +666,7 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         C10677g1 F0 = m3223F0(notificationSettingsScope);
         boolean z = !F0.m4322j();
         F0.m4317o(z);
-        C4868i.m24726c2().m24597s3(F0.m4313s("_content_preview"), z);
+        C4868i.m24727c2().m24598s3(F0.m4313s("_content_preview"), z);
     }
 
     public boolean m3200L(TdApi.NotificationSettingsScope notificationSettingsScope) {
@@ -679,7 +679,7 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public void m3198L1(TdApi.UpdateNotificationGroup updateNotificationGroup) {
-        m3097o2(Message.obtain(this.f34689c.m28053d(), 6, new Object[]{this, updateNotificationGroup}), null);
+        m3097o2(Message.obtain(this.f34692c.m28055d(), 6, new Object[]{this, updateNotificationGroup}), null);
     }
 
     public void m3197L2(TdApi.NotificationSettingsScope notificationSettingsScope) {
@@ -694,13 +694,13 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     public TdApi.ScopeNotificationSettings m3195M0(TdApi.NotificationSettingsScope notificationSettingsScope) {
         int constructor = notificationSettingsScope.getConstructor();
         if (constructor == 548013448) {
-            return this.f34679U;
+            return this.f34682U;
         }
         if (constructor == 937446759) {
-            return this.f34677S;
+            return this.f34680S;
         }
         if (constructor == 1212142067) {
-            return this.f34678T;
+            return this.f34681T;
         }
         throw new RuntimeException();
     }
@@ -718,8 +718,8 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public void m3193M2() {
-        this.f34672N = Boolean.valueOf(!m3060y());
-        C4868i.m24726c2().m24597s3(m3118j1("inapp_chatSounds"), this.f34672N.booleanValue());
+        this.f34675N = Boolean.valueOf(!m3060y());
+        C4868i.m24727c2().m24598s3(m3118j1("inapp_chatSounds"), this.f34675N.booleanValue());
     }
 
     public boolean m3192N(TdApi.NotificationSettingsScope notificationSettingsScope) {
@@ -731,7 +731,7 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     public Object m3191N0(TdApi.NotificationSettingsScope notificationSettingsScope, long j) {
         NotificationManager notificationManager;
         String Q0;
-        if (Build.VERSION.SDK_INT < 26 || (notificationManager = (NotificationManager) C1379j0.m37315n().getSystemService("notification")) == null || (Q0 = m3181Q0(notificationSettingsScope, j)) == null) {
+        if (Build.VERSION.SDK_INT < 26 || (notificationManager = (NotificationManager) C1379j0.m37318n().getSystemService("notification")) == null || (Q0 = m3181Q0(notificationSettingsScope, j)) == null) {
             return null;
         }
         return notificationManager.getNotificationChannel(Q0);
@@ -744,11 +744,11 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         boolean z = (M0 == null || M0.showPreview == scopeNotificationSettings.showPreview) ? false : true;
         int constructor = notificationSettingsScope.getConstructor();
         if (constructor == 548013448) {
-            this.f34679U = scopeNotificationSettings;
+            this.f34682U = scopeNotificationSettings;
         } else if (constructor == 937446759) {
-            this.f34677S = scopeNotificationSettings;
+            this.f34680S = scopeNotificationSettings;
         } else if (constructor == 1212142067) {
-            this.f34678T = scopeNotificationSettings;
+            this.f34681T = scopeNotificationSettings;
         } else {
             throw new RuntimeException();
         }
@@ -773,7 +773,7 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public void m3186O1(long j) {
-        m3097o2(Message.obtain(this.f34689c.m28053d(), 11, C5063c.m24133m(j), C5063c.m24132n(j), this), null);
+        m3097o2(Message.obtain(this.f34692c.m28055d(), 11, C5063c.m24134m(j), C5063c.m24133n(j), this), null);
     }
 
     public boolean m3185P(TdApi.NotificationSettingsScope notificationSettingsScope) {
@@ -785,12 +785,12 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     public Object m3184P0() {
         int i = Build.VERSION.SDK_INT;
         if (i >= 26) {
-            long ba2 = this.f34685a.m2519ba();
+            long ba2 = this.f34688a.m2519ba();
             if (ba2 == 0) {
                 return null;
             }
-            NotificationManager notificationManager = (NotificationManager) C1379j0.m37315n().getSystemService("notification");
-            String q = C10639eb.m4387q(ba2, this.f34685a.m2949A1().m1504G());
+            NotificationManager notificationManager = (NotificationManager) C1379j0.m37318n().getSystemService("notification");
+            String q = C10639eb.m4387q(ba2, this.f34688a.m2949A1().m1504G());
             if (i >= 28) {
                 return notificationManager.getNotificationChannelGroup(q);
             }
@@ -804,7 +804,7 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public void m3183P1(TdApi.NotificationSettingsScope notificationSettingsScope) {
-        m3097o2(Message.obtain(this.f34689c.m28053d(), 10, new Object[]{this, notificationSettingsScope}), null);
+        m3097o2(Message.obtain(this.f34692c.m28055d(), 10, new Object[]{this, notificationSettingsScope}), null);
     }
 
     @TargetApi(26)
@@ -812,7 +812,7 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         if (Build.VERSION.SDK_INT < 26) {
             return null;
         }
-        long ba2 = this.f34685a.m2519ba();
+        long ba2 = this.f34688a.m2519ba();
         if (ba2 == 0) {
             return null;
         }
@@ -850,11 +850,11 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public String m3176S() {
-        if (!this.f34682X) {
-            this.f34686a0 = C4868i.m24726c2().m24848L1(m3114k1("voice_ringtone", this.f34685a.m2188w6()), null);
-            this.f34682X = true;
+        if (!this.f34685X) {
+            this.f34689a0 = C4868i.m24727c2().m24849L1(m3114k1("voice_ringtone", this.f34688a.m2188w6()), null);
+            this.f34685X = true;
         }
-        return this.f34686a0;
+        return this.f34689a0;
     }
 
     public boolean m3175S0(long j) {
@@ -863,41 +863,41 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
 
     public final void m3174S1(int i, int i2) {
         int i3;
-        if (m3224F() != null && !RunnableC5952j1.m21779y().m21778z()) {
+        if (m3224F() != null && !RunnableC5952j1.m21780y().m21779z()) {
             Thread currentThread = Thread.currentThread();
-            C10828a aVar = this.f34689c;
+            C10828a aVar = this.f34692c;
             if (currentThread != aVar) {
-                aVar.m28050h(Message.obtain(aVar.m28053d(), 0, i, i2, this), 0L);
+                aVar.m28052h(Message.obtain(aVar.m28055d(), 0, i, i2, this), 0L);
                 return;
             }
             long currentTimeMillis = System.currentTimeMillis();
-            long j = this.f34693f0;
+            long j = this.f34696f0;
             if (j == 0 || j <= currentTimeMillis) {
                 try {
-                    if (this.f34694g0 == null) {
+                    if (this.f34697g0 == null) {
                         if (Build.VERSION.SDK_INT >= 21) {
-                            this.f34694g0 = new SoundPool.Builder().setMaxStreams(3).setAudioAttributes(new AudioAttributes.Builder().setUsage(13).setContentType(4).build()).build();
+                            this.f34697g0 = new SoundPool.Builder().setMaxStreams(3).setAudioAttributes(new AudioAttributes.Builder().setUsage(13).setContentType(4).build()).build();
                         } else {
-                            this.f34694g0 = new SoundPool(3, 1, 0);
+                            this.f34697g0 = new SoundPool(3, 1, 0);
                         }
-                        this.f34694g0.setOnLoadCompleteListener(C10801kb.f34576a);
+                        this.f34697g0.setOnLoadCompleteListener(C10801kb.f34579a);
                     }
-                    int i4 = this.f34696i0.get(i);
-                    if (i4 != 0 || this.f34695h0.get(i) == 1) {
+                    int i4 = this.f34699i0.get(i);
+                    if (i4 != 0 || this.f34698h0.get(i) == 1) {
                         i3 = i4;
                     } else {
-                        this.f34695h0.put(i, 1);
-                        SparseIntArray sparseIntArray = this.f34696i0;
-                        int load = this.f34694g0.load(C1379j0.m37315n(), i, 1);
+                        this.f34698h0.put(i, 1);
+                        SparseIntArray sparseIntArray = this.f34699i0;
+                        int load = this.f34697g0.load(C1379j0.m37318n(), i, 1);
                         sparseIntArray.put(i, load);
                         i3 = load;
                     }
                     if (i3 != 0) {
-                        this.f34694g0.play(i3, 1.0f, 1.0f, 1, 0, 1.0f);
-                        this.f34693f0 = currentTimeMillis + i2;
+                        this.f34697g0.play(i3, 1.0f, 1.0f, 1, 0, 1.0f);
+                        this.f34696f0 = currentTimeMillis + i2;
                         return;
                     }
-                    this.f34693f0 = currentTimeMillis + i2 + 30;
+                    this.f34696f0 = currentTimeMillis + i2 + 30;
                 } catch (Throwable th) {
                     Log.m14728e(4, "Unable to play raw sound", th, new Object[0]);
                 }
@@ -910,7 +910,7 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         if (h0 == null) {
             h0 = m3176S();
         }
-        return C5070i.m24061i(h0) ? RingtoneManager.getDefaultUri(1).toString() : h0;
+        return C5070i.m24062i(h0) ? RingtoneManager.getDefaultUri(1).toString() : h0;
     }
 
     public boolean m3172T0(long j) {
@@ -918,15 +918,15 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public final void m3171T1(TdApi.UpdateActiveNotifications updateActiveNotifications) {
-        this.f34687b.m3922c0(updateActiveNotifications);
+        this.f34690b.m3922c0(updateActiveNotifications);
     }
 
     public String m3170U() {
-        if (!this.f34683Y) {
-            this.f34688b0 = C4868i.m24726c2().m24848L1(m3114k1("voice_ringtone_name", this.f34685a.m2188w6()), null);
-            this.f34683Y = true;
+        if (!this.f34686Y) {
+            this.f34691b0 = C4868i.m24727c2().m24849L1(m3114k1("voice_ringtone_name", this.f34688a.m2188w6()), null);
+            this.f34686Y = true;
         }
-        return this.f34688b0;
+        return this.f34691b0;
     }
 
     public boolean m3169U0(long j) {
@@ -934,15 +934,15 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public final void m3168U1(TdApi.UpdateNotification updateNotification) {
-        this.f34687b.m3912v(updateNotification);
+        this.f34690b.m3912v(updateNotification);
     }
 
     public String m3167V() {
-        if (!this.f34684Z) {
-            this.f34690c0 = C4868i.m24726c2().m24848L1(m3114k1("voice_ringtone_path", this.f34685a.m2188w6()), null);
-            this.f34684Z = true;
+        if (!this.f34687Z) {
+            this.f34693c0 = C4868i.m24727c2().m24849L1(m3114k1("voice_ringtone_path", this.f34688a.m2188w6()), null);
+            this.f34687Z = true;
         }
-        return this.f34690c0;
+        return this.f34693c0;
     }
 
     public boolean m3166V0(long j) {
@@ -950,25 +950,25 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public final void m3165V1(TdApi.UpdateNotificationGroup updateNotificationGroup) {
-        this.f34687b.m3920e0(updateNotificationGroup);
+        this.f34690b.m3920e0(updateNotificationGroup);
     }
 
     public int m3164W() {
-        if (this.f34680V == null) {
-            this.f34680V = Integer.valueOf(C4868i.m24726c2().m24779V0(m3114k1("voice_vibrate", this.f34685a.m2188w6()), 0));
+        if (this.f34683V == null) {
+            this.f34683V = Integer.valueOf(C4868i.m24727c2().m24780V0(m3114k1("voice_vibrate", this.f34688a.m2188w6()), 0));
         }
-        return this.f34680V.intValue();
+        return this.f34683V.intValue();
     }
 
     public final boolean m3163W0() {
-        return C7389v0.m16612l1(C1379j0.m37315n());
+        return C7389v0.m16612l1(C1379j0.m37318n());
     }
 
     public final void m3162W1() {
         Thread currentThread = Thread.currentThread();
-        C10828a aVar = this.f34689c;
+        C10828a aVar = this.f34692c;
         if (currentThread != aVar) {
-            m3097o2(Message.obtain(aVar.m28053d(), 1, this), null);
+            m3097o2(Message.obtain(aVar.m28055d(), 1, this), null);
         } else {
             m3156Y1();
         }
@@ -999,28 +999,28 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public boolean m3160X0() {
-        return m3232D() || m3236C(m3101n2()) || m3236C(m3105m2()) || m3236C(m3109l2()) || !m3163W0() || this.f34685a.m2440ga().m3219G0() == 7;
+        return m3232D() || m3236C(m3101n2()) || m3236C(m3105m2()) || m3236C(m3109l2()) || !m3163W0() || this.f34688a.m2440ga().m3219G0() == 7;
     }
 
     public final void m3159X1(int i) {
-        this.f34687b.m3924a0(i);
+        this.f34690b.m3924a0(i);
     }
 
     public boolean m3158Y() {
-        if (this.f34681W == null) {
+        if (this.f34684W == null) {
             boolean z = false;
-            if (C4183a.f14102t && C4868i.m24726c2().m24632o0(m3114k1("voice_vibrate_onlysilent", this.f34685a.m2188w6()), false)) {
+            if (C4183a.f14102t && C4868i.m24727c2().m24633o0(m3114k1("voice_vibrate_onlysilent", this.f34688a.m2188w6()), false)) {
                 z = true;
             }
-            this.f34681W = Boolean.valueOf(z);
+            this.f34684W = Boolean.valueOf(z);
         }
-        return this.f34681W.booleanValue();
+        return this.f34684W.booleanValue();
     }
 
     @TargetApi(26)
     public final void m3157Y0(TdApi.NotificationSettingsScope notificationSettingsScope, long j, LevelDB levelDB) {
         String str;
-        long ba2 = this.f34685a.m2519ba();
+        long ba2 = this.f34688a.m2519ba();
         int i = (j > 0L ? 1 : (j == 0L ? 0 : -1));
         C10677g1 F0 = i != 0 ? null : m3223F0(notificationSettingsScope);
         if (i != 0) {
@@ -1028,46 +1028,46 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         } else {
             str = F0.m4321k("channels_version_");
         }
-        long e1 = i != 0 ? C4868i.m24726c2().m24711e1(str, 0L) : F0.m4331a();
+        long e1 = i != 0 ? C4868i.m24727c2().m24712e1(str, 0L) : F0.m4331a();
         long j2 = e1 == Long.MAX_VALUE ? Long.MIN_VALUE : e1 + 1;
         levelDB.putLong(str, j2);
         if (i == 0) {
             F0.m4319m(j2);
         }
         levelDB.apply();
-        C10930q6 q6Var = this.f34685a;
+        C10930q6 q6Var = this.f34688a;
         C10639eb.m4383u(q6Var, ba2, q6Var.m2949A1().m1504G(), m3130g0(), notificationSettingsScope, j, j2);
         m3202K1(ba2);
         if (i != 0) {
-            this.f34685a.m2781K9().m1972B2(j);
+            this.f34688a.m2781K9().m1972B2(j);
         } else {
-            this.f34685a.m2781K9().m1968C2(notificationSettingsScope);
+            this.f34688a.m2781K9().m1968C2(notificationSettingsScope);
         }
     }
 
     public final void m3156Y1() {
-        this.f34687b.m3928W();
+        this.f34690b.m3928W();
     }
 
     public C10639eb m3155Z() {
         if (Build.VERSION.SDK_INT < 26) {
             return null;
         }
-        long ca2 = this.f34685a.m2504ca(true);
+        long ca2 = this.f34688a.m2504ca(true);
         TdApi.User m1 = m3106m1();
         if (ca2 == 0) {
-            C10639eb ebVar = this.f34692e0;
+            C10639eb ebVar = this.f34695e0;
             if (ebVar != null) {
                 return ebVar;
             }
-            throw new IllegalStateException("Cannot retrieve accountUserId, required by channelGroup, authorizationStatus: " + this.f34685a.m2648T1());
+            throw new IllegalStateException("Cannot retrieve accountUserId, required by channelGroup, authorizationStatus: " + this.f34688a.m2648T1());
         }
-        C10639eb ebVar2 = this.f34692e0;
+        C10639eb ebVar2 = this.f34695e0;
         if (ebVar2 == null || ebVar2.m4397g() != ca2) {
-            C10930q6 q6Var = this.f34685a;
-            this.f34692e0 = new C10639eb(q6Var, ca2, q6Var.m2949A1().m1504G(), m1);
+            C10930q6 q6Var = this.f34688a;
+            this.f34695e0 = new C10639eb(q6Var, ca2, q6Var.m2949A1().m1504G(), m1);
         }
-        return this.f34692e0;
+        return this.f34695e0;
     }
 
     public boolean m3154Z0(TdApi.NotificationSettingsScope notificationSettingsScope) {
@@ -1075,13 +1075,13 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public final void m3153Z1(long j) {
-        this.f34687b.m3925Z(j);
+        this.f34690b.m3925Z(j);
     }
 
     @Override
     public void mo1411a() {
-        C10828a aVar = this.f34689c;
-        aVar.m28050h(Message.obtain(aVar.m28053d(), 20, this), 0L);
+        C10828a aVar = this.f34692c;
+        aVar.m28052h(Message.obtain(aVar.m28055d(), 20, this), 0L);
     }
 
     public final int m3152a0(TdApi.NotificationSettingsScope notificationSettingsScope, long j, int i) {
@@ -1100,13 +1100,13 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public final void m3150a2(TdApi.NotificationSettingsScope notificationSettingsScope) {
-        this.f34687b.m3927X(notificationSettingsScope);
+        this.f34690b.m3927X(notificationSettingsScope);
     }
 
     @Override
     public void mo1409b(boolean z) {
         if (Build.VERSION.SDK_INT >= 26) {
-            m3097o2(Message.obtain(this.f34689c.m28053d(), 2, this), null);
+            m3097o2(Message.obtain(this.f34692c.m28055d(), 2, this), null);
         }
     }
 
@@ -1121,12 +1121,12 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
 
     public void m3147b2(Runnable runnable) {
         if (runnable != null) {
-            C10828a aVar = this.f34689c;
-            aVar.m28050h(Message.obtain(aVar.m28053d(), 16, new Object[]{this, runnable}), 0L);
+            C10828a aVar = this.f34692c;
+            aVar.m28052h(Message.obtain(aVar.m28055d(), 16, new Object[]{this, runnable}), 0L);
             return;
         }
-        C10828a aVar2 = this.f34689c;
-        aVar2.m28050h(Message.obtain(aVar2.m28053d(), 15, this), 0L);
+        C10828a aVar2 = this.f34692c;
+        aVar2.m28052h(Message.obtain(aVar2.m28055d(), 15, this), 0L);
     }
 
     @Override
@@ -1155,12 +1155,12 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
                 defaultUri = RingtoneManager.getDefaultUri(2);
             } catch (Throwable unused) {
             }
-            if (defaultUri != null && C5070i.m24067c(defaultUri.toString(), uri)) {
+            if (defaultUri != null && C5070i.m24068c(defaultUri.toString(), uri)) {
                 return null;
             }
-            Uri actualDefaultRingtoneUri = RingtoneManager.getActualDefaultRingtoneUri(C1379j0.m37315n(), 2);
+            Uri actualDefaultRingtoneUri = RingtoneManager.getActualDefaultRingtoneUri(C1379j0.m37318n(), 2);
             if (actualDefaultRingtoneUri != null) {
-                if (C5070i.m24067c(actualDefaultRingtoneUri.toString(), uri)) {
+                if (C5070i.m24068c(actualDefaultRingtoneUri.toString(), uri)) {
                     return null;
                 }
             }
@@ -1169,12 +1169,12 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public boolean m3145c1(long j) {
-        return j != 0 && j == this.f34699l0;
+        return j != 0 && j == this.f34702l0;
     }
 
     public void m3144c2(C10666fb fbVar) {
-        C10828a aVar = this.f34689c;
-        aVar.m28050h(Message.obtain(aVar.m28053d(), 21, new Object[]{this, fbVar}), 0L);
+        C10828a aVar = this.f34692c;
+        aVar.m28052h(Message.obtain(aVar.m28055d(), 21, new Object[]{this, fbVar}), 0L);
     }
 
     @Override
@@ -1183,17 +1183,17 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public final String m3142d0(String str, String str2, String str3) {
-        if (C5070i.m24061i(str3)) {
+        if (C5070i.m24062i(str3)) {
             return str3;
         }
         if (m3212I(str3, str)) {
             return C7389v0.m16697P0(str, str2);
         }
-        return C7389v0.m16697P0(str3, C4403w.m27869i1(R.string.RingtoneCustom));
+        return C7389v0.m16697P0(str3, C4403w.m27871i1(R.string.RingtoneCustom));
     }
 
     public boolean m3141d1(long j, boolean z) {
-        TdApi.ChatNotificationSettings I3 = this.f34685a.m2819I3(j);
+        TdApi.ChatNotificationSettings I3 = this.f34688a.m2819I3(j);
         if (I3 != null && !I3.useDefaultShowPreview) {
             return I3.showPreview;
         }
@@ -1203,12 +1203,12 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         if (!z) {
             return m3188O(j);
         }
-        TdApi.ScopeNotificationSettings scopeNotificationSettings = this.f34677S;
+        TdApi.ScopeNotificationSettings scopeNotificationSettings = this.f34680S;
         return scopeNotificationSettings != null && scopeNotificationSettings.showPreview;
     }
 
     public final void m3140d2(C10666fb fbVar) {
-        this.f34687b.m3923b0(fbVar);
+        this.f34690b.m3923b0(fbVar);
     }
 
     @TargetApi(26)
@@ -1216,8 +1216,8 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         if (j == 0) {
             return m3223F0(notificationSettingsScope).m4331a();
         }
-        C4868i c2 = C4868i.m24726c2();
-        return c2.m24711e1(m3118j1("channels_version_custom_" + j), 0L);
+        C4868i c2 = C4868i.m24727c2();
+        return c2.m24712e1(m3118j1("channels_version_custom_" + j), 0L);
     }
 
     public boolean m3137e1(long j) {
@@ -1227,10 +1227,10 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
 
     public boolean m3136e2(long j) {
         C10639eb ebVar;
-        if (Build.VERSION.SDK_INT < 26 || (ebVar = this.f34692e0) == null || ebVar.m4397g() != j) {
+        if (Build.VERSION.SDK_INT < 26 || (ebVar = this.f34695e0) == null || ebVar.m4397g() != j) {
             return false;
         }
-        this.f34692e0 = null;
+        this.f34695e0 = null;
         return true;
     }
 
@@ -1246,102 +1246,102 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         if (vibrationPattern == null) {
             return 0;
         }
-        if (Arrays.equals(vibrationPattern, f34663q0)) {
+        if (Arrays.equals(vibrationPattern, f34666q0)) {
             return 1;
         }
-        return Arrays.equals(vibrationPattern, f34664r0) ? 2 : 0;
+        return Arrays.equals(vibrationPattern, f34667r0) ? 2 : 0;
     }
 
     public final boolean m3133f1() {
-        return !SyncAdapter.m14206b(C1379j0.m37309q());
+        return !SyncAdapter.m14205b(C1379j0.m37312q());
     }
 
     public final void m3132f2(long j) {
-        this.f34687b.m3930U(j);
+        this.f34690b.m3930U(j);
     }
 
     public int m3130g0() {
-        if (this.f34673O == null) {
+        if (this.f34676O == null) {
             int i = 0;
             if (Build.VERSION.SDK_INT >= 26) {
-                i = C4868i.m24726c2().m24779V0(m3114k1("channels_version_global", this.f34685a.m2188w6()), 0);
+                i = C4868i.m24727c2().m24780V0(m3114k1("channels_version_global", this.f34688a.m2188w6()), 0);
             }
-            this.f34673O = Integer.valueOf(i);
+            this.f34676O = Integer.valueOf(i);
         }
-        return this.f34673O.intValue();
+        return this.f34676O.intValue();
     }
 
     public final boolean m3129g1() {
-        return !SyncAdapter.m14205c();
+        return !SyncAdapter.m14204c();
     }
 
     public void m3128g2(boolean z) {
-        int w6 = this.f34685a.m2188w6();
-        LevelDB W = C4868i.m24726c2().m24773W();
+        int w6 = this.f34688a.m2188w6();
+        LevelDB W = C4868i.m24727c2().m24774W();
         W.remove(m3114k1("inapp_vibrate", w6)).remove(m3114k1("inapp_sounds", w6)).remove(m3114k1("inapp_chatSounds", w6)).remove(m3114k1("voice_ringtone", w6)).remove(m3114k1("voice_ringtone_name", w6)).remove(m3114k1("voice_ringtone_path", w6)).remove(m3114k1("voice_vibrate", w6)).remove(m3114k1("voice_vibrate_onlysilent", w6));
         int i = Build.VERSION.SDK_INT;
         if (i >= 26) {
             int g0 = m3130g0();
             String k1 = m3114k1("channels_version_global", w6);
             Integer valueOf = Integer.valueOf(g0 == Integer.MAX_VALUE ? Integer.MIN_VALUE : g0 + 1);
-            this.f34673O = valueOf;
+            this.f34676O = valueOf;
             W.putInt(k1, valueOf.intValue());
         }
-        C4868i.m24726c2().m24881G3(new String[]{m3114k1("custom_sound_", w6), m3114k1("custom_sound_name_", w6), m3114k1("custom_sound_path_", w6), m3114k1("custom_led_", w6), m3114k1("custom_vibrate_", w6), m3114k1("custom_vibrate_onlysilent_", w6), m3114k1("custom_call_ringtone_", w6), m3114k1("custom_call_ringtone_name_", w6), m3114k1("custom_call_vibrate_", w6), m3114k1("custom_call_vibrate_onlysilent_", w6), m3114k1(f34660n0, w6), m3114k1("channels_version_custom_", w6)}, W);
+        C4868i.m24727c2().m24882G3(new String[]{m3114k1("custom_sound_", w6), m3114k1("custom_sound_name_", w6), m3114k1("custom_sound_path_", w6), m3114k1("custom_led_", w6), m3114k1("custom_vibrate_", w6), m3114k1("custom_vibrate_onlysilent_", w6), m3114k1("custom_call_ringtone_", w6), m3114k1("custom_call_ringtone_name_", w6), m3114k1("custom_call_vibrate_", w6), m3114k1("custom_call_vibrate_onlysilent_", w6), m3114k1(f34663n0, w6), m3114k1("channels_version_custom_", w6)}, W);
         W.apply();
-        this.f34672N = null;
-        this.f34674P.m4320l(W);
-        this.f34675Q.m4320l(W);
-        this.f34676R.m4320l(W);
-        this.f34680V = null;
-        this.f34681W = null;
-        this.f34688b0 = null;
-        this.f34686a0 = null;
-        this.f34682X = false;
-        this.f34683Y = false;
-        this.f34691d0 = null;
+        this.f34675N = null;
+        this.f34677P.m4320l(W);
+        this.f34678Q.m4320l(W);
+        this.f34679R.m4320l(W);
+        this.f34683V = null;
+        this.f34684W = null;
+        this.f34691b0 = null;
+        this.f34689a0 = null;
+        this.f34685X = false;
+        this.f34686Y = false;
+        this.f34694d0 = null;
         if (i >= 26) {
-            long ba2 = this.f34685a.m2519ba();
-            TdApi.User Z9 = this.f34685a.m2550Z9();
+            long ba2 = this.f34688a.m2519ba();
+            TdApi.User Z9 = this.f34688a.m2550Z9();
             if (ba2 != 0) {
-                C10930q6 q6Var = this.f34685a;
+                C10930q6 q6Var = this.f34688a;
                 C10639eb.m4399e(q6Var, ba2, q6Var.m2949A1().m1504G(), Z9, !z);
             }
         }
         if (!z) {
-            if (m3090q1(this.f34677S)) {
-                TdApi.ScopeNotificationSettings scopeNotificationSettings = this.f34677S;
+            if (m3090q1(this.f34680S)) {
+                TdApi.ScopeNotificationSettings scopeNotificationSettings = this.f34680S;
                 if (scopeNotificationSettings != null) {
                     m3125h2(scopeNotificationSettings);
                 } else {
-                    this.f34677S = m3082s1();
+                    this.f34680S = m3082s1();
                 }
-                this.f34685a.m2270r4().m14783o(new TdApi.SetScopeNotificationSettings(new TdApi.NotificationSettingsScopePrivateChats(), this.f34677S), this.f34685a.m2392ja());
+                this.f34688a.m2270r4().m14783o(new TdApi.SetScopeNotificationSettings(new TdApi.NotificationSettingsScopePrivateChats(), this.f34680S), this.f34688a.m2392ja());
             }
-            if (m3090q1(this.f34678T)) {
-                TdApi.ScopeNotificationSettings scopeNotificationSettings2 = this.f34678T;
+            if (m3090q1(this.f34681T)) {
+                TdApi.ScopeNotificationSettings scopeNotificationSettings2 = this.f34681T;
                 if (scopeNotificationSettings2 != null) {
                     m3125h2(scopeNotificationSettings2);
                 } else {
-                    this.f34678T = m3082s1();
+                    this.f34681T = m3082s1();
                 }
-                this.f34685a.m2270r4().m14783o(new TdApi.SetScopeNotificationSettings(new TdApi.NotificationSettingsScopeGroupChats(), this.f34678T), this.f34685a.m2392ja());
+                this.f34688a.m2270r4().m14783o(new TdApi.SetScopeNotificationSettings(new TdApi.NotificationSettingsScopeGroupChats(), this.f34681T), this.f34688a.m2392ja());
             }
-            if (m3090q1(this.f34679U)) {
-                TdApi.ScopeNotificationSettings scopeNotificationSettings3 = this.f34679U;
+            if (m3090q1(this.f34682U)) {
+                TdApi.ScopeNotificationSettings scopeNotificationSettings3 = this.f34682U;
                 if (scopeNotificationSettings3 != null) {
                     m3125h2(scopeNotificationSettings3);
                 } else {
-                    this.f34679U = m3082s1();
+                    this.f34682U = m3082s1();
                 }
-                this.f34685a.m2270r4().m14783o(new TdApi.SetScopeNotificationSettings(new TdApi.NotificationSettingsScopeChannelChats(), this.f34679U), this.f34685a.m2392ja());
+                this.f34688a.m2270r4().m14783o(new TdApi.SetScopeNotificationSettings(new TdApi.NotificationSettingsScopeChannelChats(), this.f34682U), this.f34688a.m2392ja());
             }
-            boolean z2 = C4868i.m24726c2().m24747Z4(false) || C4868i.m24726c2().m24691g5(true);
-            if (C4868i.m24726c2().m24804R3()) {
-                this.f34685a.m2930B4().m4802F2();
+            boolean z2 = C4868i.m24727c2().m24748Z4(false) || C4868i.m24727c2().m24692g5(true);
+            if (C4868i.m24727c2().m24805R3()) {
+                this.f34688a.m2930B4().m4802F2();
             }
             if (z2) {
-                this.f34685a.m2930B4().m4666o2();
+                this.f34688a.m2930B4().m4666o2();
             }
         }
         m3162W1();
@@ -1349,26 +1349,26 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
 
     @Override
     public void mo1641h(int i) {
-        if (C4862d.m24934w().m24933x() && C4862d.m24934w().m24932y()) {
+        if (C4862d.m24935w().m24934x() && C4862d.m24935w().m24933y()) {
             m3162W1();
         }
     }
 
     public String m3127h0(long j) {
-        C4868i c2 = C4868i.m24726c2();
-        return c2.m24848L1(m3118j1("custom_call_ringtone_" + j), null);
+        C4868i c2 = C4868i.m24727c2();
+        return c2.m24849L1(m3118j1("custom_call_ringtone_" + j), null);
     }
 
     public boolean m3126h1(int i) {
         if (Build.VERSION.SDK_INT >= 28) {
-            return this.f34687b.m3942I(i);
+            return this.f34690b.m3942I(i);
         }
         return false;
     }
 
     public String m3123i0(long j) {
-        C4868i c2 = C4868i.m24726c2();
-        return c2.m24848L1(m3118j1("custom_call_ringtone_name_" + j), null);
+        C4868i c2 = C4868i.m24727c2();
+        return c2.m24849L1(m3118j1("custom_call_ringtone_name_" + j), null);
     }
 
     public boolean m3122i1(long j) {
@@ -1383,18 +1383,18 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public String m3119j0(long j) {
-        C4868i c2 = C4868i.m24726c2();
-        return c2.m24848L1(m3118j1("custom_call_ringtone_path_" + j), null);
+        C4868i c2 = C4868i.m24727c2();
+        return c2.m24849L1(m3118j1("custom_call_ringtone_path_" + j), null);
     }
 
     public final String m3118j1(String str) {
-        return m3114k1(str, this.f34685a.m2188w6());
+        return m3114k1(str, this.f34688a.m2188w6());
     }
 
     public TdApi.NotificationSettingsScope m3117j2(long j) {
         switch (C7316a.m17057d(j)) {
             case TdApi.ChatTypeSupergroup.CONSTRUCTOR:
-                return this.f34685a.m2299p7(j) ? m3105m2() : m3109l2();
+                return this.f34688a.m2299p7(j) ? m3105m2() : m3109l2();
             case TdApi.ChatTypeSecret.CONSTRUCTOR:
             case TdApi.ChatTypePrivate.CONSTRUCTOR:
                 return m3101n2();
@@ -1406,14 +1406,14 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public int m3115k0(long j) {
-        C4868i c2 = C4868i.m24726c2();
-        return c2.m24779V0(m3118j1("custom_call_vibrate_" + j), 0);
+        C4868i c2 = C4868i.m24727c2();
+        return c2.m24780V0(m3118j1("custom_call_vibrate_" + j), 0);
     }
 
     public TdApi.NotificationSettingsScope m3113k2(TdApi.Chat chat) {
         switch (chat.type.getConstructor()) {
             case TdApi.ChatTypeSupergroup.CONSTRUCTOR:
-                return C4779t2.m25699E3(chat.type) ? m3105m2() : m3109l2();
+                return C4779t2.m25700E3(chat.type) ? m3105m2() : m3109l2();
             case TdApi.ChatTypeSecret.CONSTRUCTOR:
             case TdApi.ChatTypePrivate.CONSTRUCTOR:
                 return m3101n2();
@@ -1428,41 +1428,41 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         if (!C4183a.f14102t) {
             return false;
         }
-        C4868i c2 = C4868i.m24726c2();
+        C4868i c2 = C4868i.m24727c2();
         StringBuilder sb2 = new StringBuilder();
         sb2.append("custom_call_vibrate_onlysilent_");
         sb2.append(j);
-        return c2.m24632o0(m3118j1(sb2.toString()), false);
+        return c2.m24633o0(m3118j1(sb2.toString()), false);
     }
 
     public TdApi.NotificationSettingsScope m3109l2() {
-        return this.f34676R.f34163b;
+        return this.f34679R.f34166b;
     }
 
     public int m3107m0(long j, int i) {
-        C4868i c2 = C4868i.m24726c2();
-        return m3152a0(null, j, c2.m24779V0(m3118j1("custom_led_" + j), i));
+        C4868i c2 = C4868i.m24727c2();
+        return m3152a0(null, j, c2.m24780V0(m3118j1("custom_led_" + j), i));
     }
 
     public TdApi.User m3106m1() {
-        return this.f34700m0;
+        return this.f34703m0;
     }
 
     public TdApi.NotificationSettingsScope m3105m2() {
-        return this.f34675Q.f34163b;
+        return this.f34678Q.f34166b;
     }
 
     public int m3103n0(long j, int i) {
-        C4868i c2 = C4868i.m24726c2();
-        return m3149b0(null, j, c2.m24779V0(m3118j1(f34660n0 + j), i));
+        C4868i c2 = C4868i.m24727c2();
+        return m3149b0(null, j, c2.m24780V0(m3118j1(f34663n0 + j), i));
     }
 
     public long m3102n1() {
-        return this.f34699l0;
+        return this.f34702l0;
     }
 
     public TdApi.NotificationSettingsScope m3101n2() {
-        return this.f34674P.f34163b;
+        return this.f34677P.f34166b;
     }
 
     public String m3099o0(long j, String str) {
@@ -1476,24 +1476,24 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         if (!C4183a.f14105w || !m3141d1(j, z)) {
             return false;
         }
-        return (C7316a.m17049l(j) || z) ? this.f34674P.m4322j() && (scopeNotificationSettings = this.f34677S) != null && scopeNotificationSettings.showPreview : this.f34685a.m2784K6(j) ? this.f34676R.m4322j() && (scopeNotificationSettings3 = this.f34679U) != null && scopeNotificationSettings3.showPreview : this.f34675Q.m4322j() && (scopeNotificationSettings2 = this.f34678T) != null && scopeNotificationSettings2.showPreview;
+        return (C7316a.m17049l(j) || z) ? this.f34677P.m4322j() && (scopeNotificationSettings = this.f34680S) != null && scopeNotificationSettings.showPreview : this.f34688a.m2784K6(j) ? this.f34679R.m4322j() && (scopeNotificationSettings3 = this.f34682U) != null && scopeNotificationSettings3.showPreview : this.f34678Q.m4322j() && (scopeNotificationSettings2 = this.f34681T) != null && scopeNotificationSettings2.showPreview;
     }
 
     public final void m3097o2(Message message, Runnable runnable) {
-        this.f34685a.m2912C6();
-        this.f34689c.m28050h(message, 0L);
+        this.f34688a.m2912C6();
+        this.f34692c.m28052h(message, 0L);
         m3147b2(runnable);
     }
 
     public String m3095p0(long j) {
         String o0 = m3099o0(j, null);
-        if (C5070i.m24061i(o0)) {
+        if (C5070i.m24062i(o0)) {
             return o0;
         }
-        C4868i c2 = C4868i.m24726c2();
-        String L1 = c2.m24848L1(m3118j1("custom_sound_" + j), null);
-        C4868i c22 = C4868i.m24726c2();
-        return m3142d0(L1, c22.m24848L1(m3118j1("custom_sound_name_" + j), null), o0);
+        C4868i c2 = C4868i.m24727c2();
+        String L1 = c2.m24849L1(m3118j1("custom_sound_" + j), null);
+        C4868i c22 = C4868i.m24727c2();
+        return m3142d0(L1, c22.m24849L1(m3118j1("custom_sound_name_" + j), null), o0);
     }
 
     public boolean m3094p1() {
@@ -1501,28 +1501,28 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public boolean m3093p2(String str, String str2, String str3) {
-        if (C5070i.m24067c(str, m3176S()) && C5070i.m24067c(str2, m3170U()) && C5070i.m24067c(str3, m3167V())) {
+        if (C5070i.m24068c(str, m3176S()) && C5070i.m24068c(str2, m3170U()) && C5070i.m24068c(str3, m3167V())) {
             return false;
         }
-        this.f34686a0 = str;
-        this.f34682X = true;
-        this.f34688b0 = str2;
-        this.f34683Y = true;
-        this.f34690c0 = str3;
-        this.f34684Z = true;
-        LevelDB W = C4868i.m24726c2().m24773W();
+        this.f34689a0 = str;
+        this.f34685X = true;
+        this.f34691b0 = str2;
+        this.f34686Y = true;
+        this.f34693c0 = str3;
+        this.f34687Z = true;
+        LevelDB W = C4868i.m24727c2().m24774W();
         if (str == null) {
             W.remove(m3118j1("voice_ringtone"));
             W.remove(m3118j1("voice_ringtone_name"));
             W.remove(m3118j1("voice_ringtone_path"));
         } else {
             W.putString(m3118j1("voice_ringtone"), str);
-            if (C5070i.m24061i(str2)) {
+            if (C5070i.m24062i(str2)) {
                 W.remove(m3118j1("voice_ringtone_name"));
             } else {
                 W.putString(m3118j1("voice_ringtone_name"), str2);
             }
-            if (C5070i.m24061i(str3)) {
+            if (C5070i.m24062i(str3)) {
                 W.remove(m3118j1("voice_ringtone_path"));
             } else {
                 W.putString(m3118j1("voice_ringtone_path"), str3);
@@ -1534,48 +1534,48 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
 
     public String m3091q0(long j) {
         String o0 = m3099o0(j, null);
-        if (C5070i.m24061i(o0)) {
+        if (C5070i.m24062i(o0)) {
             return o0;
         }
-        C4868i c2 = C4868i.m24726c2();
-        return c2.m24848L1(m3118j1("custom_sound_path_" + j), null);
+        C4868i c2 = C4868i.m24727c2();
+        return c2.m24849L1(m3118j1("custom_sound_path_" + j), null);
     }
 
     public boolean m3089q2(int i, boolean z) {
         if (m3164W() == i && m3158Y() == z) {
             return false;
         }
-        this.f34680V = Integer.valueOf(i);
-        this.f34681W = Boolean.valueOf(z);
-        C4868i.m24726c2().m24773W().putInt(m3118j1("voice_vibrate"), i).putBoolean(m3118j1("voice_vibrate_onlysilent"), z).apply();
+        this.f34683V = Integer.valueOf(i);
+        this.f34684W = Boolean.valueOf(z);
+        C4868i.m24727c2().m24774W().putInt(m3118j1("voice_vibrate"), i).putBoolean(m3118j1("voice_vibrate_onlysilent"), z).apply();
         return true;
     }
 
     public int m3087r0(long j, int i) {
-        C4868i c2 = C4868i.m24726c2();
-        return m3134f0(null, j, c2.m24779V0(m3118j1("custom_vibrate_" + j), i));
+        C4868i c2 = C4868i.m24727c2();
+        return m3134f0(null, j, c2.m24780V0(m3118j1("custom_vibrate_" + j), i));
     }
 
     public boolean m3086r1() {
-        return m3209I2() || Build.VERSION.SDK_INT < 23 || Settings.System.getInt(C1379j0.m37309q().getContentResolver(), "vibrate_when_ringing", 0) != 0;
+        return m3209I2() || Build.VERSION.SDK_INT < 23 || Settings.System.getInt(C1379j0.m37312q().getContentResolver(), "vibrate_when_ringing", 0) != 0;
     }
 
     public void m3085r2(long j, String str, String str2, String str3) {
         if (str == null) {
-            LevelDB W = C4868i.m24726c2().m24773W();
+            LevelDB W = C4868i.m24727c2().m24774W();
             SharedPreferences.Editor remove = W.remove(m3118j1("custom_call_ringtone_" + j));
             SharedPreferences.Editor remove2 = remove.remove(m3118j1("custom_call_ringtone_name_" + j));
             remove2.remove(m3118j1("custom_call_ringtone_path_" + j)).apply();
             return;
         }
-        LevelDB W2 = C4868i.m24726c2().m24773W();
+        LevelDB W2 = C4868i.m24727c2().m24774W();
         W2.putString(m3118j1("custom_call_ringtone_" + j), str);
-        if (C5070i.m24061i(str2)) {
+        if (C5070i.m24062i(str2)) {
             W2.remove(m3118j1("custom_call_ringtone_name_" + j));
         } else {
             W2.putString(m3118j1("custom_call_ringtone_name_" + j), str2);
         }
-        if (C5070i.m24061i(str3)) {
+        if (C5070i.m24062i(str3)) {
             W2.remove(m3118j1("custom_call_ringtone_path_" + j));
         } else {
             W2.putString(m3118j1("custom_call_ringtone_path_" + j), str3);
@@ -1587,25 +1587,25 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         if (!C4183a.f14102t) {
             return false;
         }
-        C4868i c2 = C4868i.m24726c2();
+        C4868i c2 = C4868i.m24727c2();
         StringBuilder sb2 = new StringBuilder();
         sb2.append("custom_vibrate_onlysilent_");
         sb2.append(j);
-        return c2.m24632o0(m3118j1(sb2.toString()), false);
+        return c2.m24633o0(m3118j1(sb2.toString()), false);
     }
 
     public void m3081s2(long j, int i, boolean z) {
         if (i == 0) {
-            LevelDB W = C4868i.m24726c2().m24773W();
+            LevelDB W = C4868i.m24727c2().m24774W();
             SharedPreferences.Editor remove = W.remove(m3118j1("custom_call_vibrate_" + j));
             remove.remove(m3118j1("custom_call_vibrate_onlysilent_" + j)).apply();
         } else if (C4183a.f14102t) {
-            LevelDB W2 = C4868i.m24726c2().m24773W();
+            LevelDB W2 = C4868i.m24727c2().m24774W();
             SharedPreferences.Editor putInt = W2.putInt(m3118j1("custom_call_vibrate_" + j), i);
             putInt.putBoolean(m3118j1("custom_call_vibrate_onlysilent_" + j), z).apply();
         } else {
-            C4868i c2 = C4868i.m24726c2();
-            c2.m24581u3(m3118j1("custom_call_vibrate_" + j), i);
+            C4868i c2 = C4868i.m24727c2();
+            c2.m24582u3(m3118j1("custom_call_vibrate_" + j), i);
         }
     }
 
@@ -1615,13 +1615,13 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
 
     public void m3078t1(long j) {
         if (C7316a.m17051j(j)) {
-            m3097o2(Message.obtain(this.f34689c.m28053d(), 13, C5063c.m24133m(j), C5063c.m24132n(j), this), null);
+            m3097o2(Message.obtain(this.f34692c.m28055d(), 13, C5063c.m24134m(j), C5063c.m24133n(j), this), null);
         }
     }
 
     public void m3077t2(long j, int i) {
         int m0 = m3107m0(j, 0);
-        LevelDB W = C4868i.m24726c2().m24773W();
+        LevelDB W = C4868i.m24727c2().m24774W();
         if (i == 0) {
             W.remove(m3118j1("custom_led_" + j));
         } else {
@@ -1639,16 +1639,16 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public final void m3074u1(long j) {
-        this.f34687b.m3935P(j);
+        this.f34690b.m3935P(j);
     }
 
     public void m3073u2(long j, int i) {
         int n0 = m3103n0(j, -100);
-        LevelDB W = C4868i.m24726c2().m24773W();
+        LevelDB W = C4868i.m24727c2().m24774W();
         if (i == -100) {
-            W.remove(m3118j1(f34660n0 + j));
+            W.remove(m3118j1(f34663n0 + j));
         } else {
-            W.putInt(m3118j1(f34660n0 + j), i);
+            W.putInt(m3118j1(f34663n0 + j), i);
         }
         if (Build.VERSION.SDK_INT < 26 || n0 == i) {
             W.apply();
@@ -1662,25 +1662,25 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public void m3070v1(boolean z) {
-        C10828a aVar = this.f34689c;
-        aVar.m28050h(Message.obtain(aVar.m28053d(), 14, z ? 1 : 0, 0, this), 0L);
+        C10828a aVar = this.f34692c;
+        aVar.m28052h(Message.obtain(aVar.m28055d(), 14, z ? 1 : 0, 0, this), 0L);
     }
 
     public void m3069v2(long j, String str, String str2, String str3) {
         String R = m3179R(str);
         String o0 = m3099o0(j, null);
-        LevelDB W = C4868i.m24726c2().m24773W();
+        LevelDB W = C4868i.m24727c2().m24774W();
         if (R == null) {
             W.remove(m3118j1("custom_sound_" + j));
         } else {
             W.putString(m3118j1("custom_sound_" + j), R);
         }
-        if (C5070i.m24061i(str2)) {
+        if (C5070i.m24062i(str2)) {
             W.remove(m3118j1("custom_sound_name_" + j));
         } else {
             W.putString(m3118j1("custom_sound_name_" + j), str2);
         }
-        if (C5070i.m24061i(str3)) {
+        if (C5070i.m24062i(str3)) {
             W.remove(m3118j1("custom_sound_path_" + j));
         } else {
             W.putString(m3118j1("custom_sound_path_" + j), str3);
@@ -1698,12 +1698,12 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public final void m3066w1(boolean z) {
-        this.f34687b.m3934Q(z);
+        this.f34690b.m3934Q(z);
     }
 
     public void m3065w2(long j, int i, boolean z) {
         int r0 = m3087r0(j, 0);
-        LevelDB W = C4868i.m24726c2().m24773W();
+        LevelDB W = C4868i.m24727c2().m24774W();
         if (i == 0) {
             W.remove(m3118j1("custom_vibrate_" + j));
             if (C4183a.f14102t) {
@@ -1727,12 +1727,12 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
             return false;
         }
         long currentTimeMillis = System.currentTimeMillis();
-        if (currentTimeMillis - this.f34697j0 >= 800 || currentTimeMillis - this.f34698k0 >= 5000) {
-            this.f34698k0 = currentTimeMillis;
-            this.f34697j0 = currentTimeMillis;
+        if (currentTimeMillis - this.f34700j0 >= 800 || currentTimeMillis - this.f34701k0 >= 5000) {
+            this.f34701k0 = currentTimeMillis;
+            this.f34700j0 = currentTimeMillis;
             return true;
         }
-        this.f34697j0 = currentTimeMillis;
+        this.f34700j0 = currentTimeMillis;
         return false;
     }
 
@@ -1741,22 +1741,22 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public void m3062x1(C10666fb fbVar) {
-        m3097o2(Message.obtain(this.f34689c.m28053d(), 9, new Object[]{this, fbVar}), null);
+        m3097o2(Message.obtain(this.f34692c.m28055d(), 9, new Object[]{this, fbVar}), null);
     }
 
     public void m3061x2(TdApi.NotificationSettingsScope notificationSettingsScope, boolean z) {
         TdApi.ScopeNotificationSettings M0 = m3195M0(notificationSettingsScope);
         if (M0 != null) {
             M0.disableMentionNotifications = z;
-            this.f34685a.m2358lc(notificationSettingsScope, M0);
+            this.f34688a.m2358lc(notificationSettingsScope, M0);
         }
     }
 
     public boolean m3060y() {
-        if (this.f34672N == null) {
-            this.f34672N = Boolean.valueOf(C4868i.m24726c2().m24632o0(m3114k1("inapp_chatSounds", this.f34685a.m2188w6()), true));
+        if (this.f34675N == null) {
+            this.f34675N = Boolean.valueOf(C4868i.m24727c2().m24633o0(m3114k1("inapp_chatSounds", this.f34688a.m2188w6()), true));
         }
-        return this.f34672N.booleanValue();
+        return this.f34675N.booleanValue();
     }
 
     public int m3059y0(TdApi.NotificationSettingsScope notificationSettingsScope) {
@@ -1764,20 +1764,20 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public void m3058y1(int i) {
-        C10828a aVar = this.f34689c;
-        aVar.m28050h(Message.obtain(aVar.m28053d(), 8, i, 0, this), 0L);
+        C10828a aVar = this.f34692c;
+        aVar.m28052h(Message.obtain(aVar.m28055d(), 8, i, 0, this), 0L);
     }
 
     public void m3057y2(TdApi.NotificationSettingsScope notificationSettingsScope, boolean z) {
         TdApi.ScopeNotificationSettings M0 = m3195M0(notificationSettingsScope);
         if (M0 != null) {
             M0.disablePinnedMessageNotifications = z;
-            this.f34685a.m2358lc(notificationSettingsScope, M0);
+            this.f34688a.m2358lc(notificationSettingsScope, M0);
         }
     }
 
     public boolean m3056z(long j) {
-        TdApi.ChatNotificationSettings I3 = this.f34685a.m2819I3(j);
+        TdApi.ChatNotificationSettings I3 = this.f34688a.m2819I3(j);
         if (I3 == null || I3.useDefaultDisableMentionNotifications) {
             return m3204K(j);
         }
@@ -1792,7 +1792,7 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
     }
 
     public final void m3054z1(int i) {
-        this.f34687b.m3931T(i);
+        this.f34690b.m3931T(i);
     }
 
     public boolean m3053z2(TdApi.NotificationSettingsScope notificationSettingsScope, int i) {
@@ -1801,8 +1801,8 @@ public class C10827lb implements C1379j0.AbstractC1380a, C4862d.AbstractC4863a, 
         }
         C10677g1 F0 = m3223F0(notificationSettingsScope);
         F0.m4318n(i);
-        LevelDB W = C4868i.m24726c2().m24773W();
-        if (i != f34668v0) {
+        LevelDB W = C4868i.m24727c2().m24774W();
+        if (i != f34671v0) {
             W.putInt(F0.m4313s("_led"), i);
         } else {
             W.remove(F0.m4313s("_led"));

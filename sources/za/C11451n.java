@@ -9,8 +9,8 @@ import qa.C8298k;
 
 public class C11451n extends C11450m {
     public static final boolean m635j(String str, String str2, boolean z) {
-        C8298k.m12934e(str, "<this>");
-        C8298k.m12934e(str2, "suffix");
+        C8298k.m12933e(str, "<this>");
+        C8298k.m12933e(str2, "suffix");
         if (!z) {
             return str.endsWith(str2);
         }
@@ -36,7 +36,7 @@ public class C11451n extends C11450m {
 
     public static final boolean m632m(CharSequence charSequence) {
         boolean z;
-        C8298k.m12934e(charSequence, "<this>");
+        C8298k.m12933e(charSequence, "<this>");
         if (charSequence.length() != 0) {
             C10022g G = C11452o.m614G(charSequence);
             if (!(G instanceof Collection) || !((Collection) G).isEmpty()) {
@@ -57,8 +57,8 @@ public class C11451n extends C11450m {
     }
 
     public static final boolean m631n(String str, int i, String str2, int i2, int i3, boolean z) {
-        C8298k.m12934e(str, "<this>");
-        C8298k.m12934e(str2, "other");
+        C8298k.m12933e(str, "<this>");
+        C8298k.m12933e(str2, "other");
         if (!z) {
             return str.regionMatches(i, str2, i2, i3);
         }
@@ -66,7 +66,7 @@ public class C11451n extends C11450m {
     }
 
     public static final String m629p(CharSequence charSequence, int i) {
-        C8298k.m12934e(charSequence, "<this>");
+        C8298k.m12933e(charSequence, "<this>");
         int i2 = 1;
         if (!(i >= 0)) {
             throw new IllegalArgumentException(("Count 'n' must be non-negative, but was " + i + '.').toString());
@@ -92,7 +92,7 @@ public class C11451n extends C11450m {
                     }
                 }
                 String sb3 = sb2.toString();
-                C8298k.m12935d(sb3, "{\n                    va…tring()\n                }");
+                C8298k.m12934d(sb3, "{\n                    va…tring()\n                }");
                 return sb3;
             }
             char charAt = charSequence.charAt(0);
@@ -105,10 +105,10 @@ public class C11451n extends C11450m {
     }
 
     public static final String m628q(String str, char c, char c2, boolean z) {
-        C8298k.m12934e(str, "<this>");
+        C8298k.m12933e(str, "<this>");
         if (!z) {
             String replace = str.replace(c, c2);
-            C8298k.m12935d(replace, "this as java.lang.String…replace(oldChar, newChar)");
+            C8298k.m12934d(replace, "this as java.lang.String…replace(oldChar, newChar)");
             return replace;
         }
         StringBuilder sb2 = new StringBuilder(str.length());
@@ -122,14 +122,14 @@ public class C11451n extends C11450m {
             sb2.append(charAt);
         }
         String sb3 = sb2.toString();
-        C8298k.m12935d(sb3, "StringBuilder(capacity).…builderAction).toString()");
+        C8298k.m12934d(sb3, "StringBuilder(capacity).…builderAction).toString()");
         return sb3;
     }
 
     public static final String m627r(String str, String str2, String str3, boolean z) {
-        C8298k.m12934e(str, "<this>");
-        C8298k.m12934e(str2, "oldValue");
-        C8298k.m12934e(str3, "newValue");
+        C8298k.m12933e(str, "<this>");
+        C8298k.m12933e(str2, "oldValue");
+        C8298k.m12933e(str3, "newValue");
         int i = 0;
         int J = C11452o.m611J(str, str2, 0, z);
         if (J < 0) {
@@ -151,7 +151,7 @@ public class C11451n extends C11450m {
             } while (J > 0);
             sb2.append((CharSequence) str, i, str.length());
             String sb3 = sb2.toString();
-            C8298k.m12935d(sb3, "stringBuilder.append(this, i, length).toString()");
+            C8298k.m12934d(sb3, "stringBuilder.append(this, i, length).toString()");
             return sb3;
         }
         throw new OutOfMemoryError();
@@ -172,8 +172,8 @@ public class C11451n extends C11450m {
     }
 
     public static final boolean m624u(String str, String str2, int i, boolean z) {
-        C8298k.m12934e(str, "<this>");
-        C8298k.m12934e(str2, "prefix");
+        C8298k.m12933e(str, "<this>");
+        C8298k.m12933e(str2, "prefix");
         if (!z) {
             return str.startsWith(str2, i);
         }
@@ -181,8 +181,8 @@ public class C11451n extends C11450m {
     }
 
     public static final boolean m623v(String str, String str2, boolean z) {
-        C8298k.m12934e(str, "<this>");
-        C8298k.m12934e(str2, "prefix");
+        C8298k.m12933e(str, "<this>");
+        C8298k.m12933e(str2, "prefix");
         if (!z) {
             return str.startsWith(str2);
         }

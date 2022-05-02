@@ -22,39 +22,39 @@ public final class C5025d {
         this.f16981h = i;
     }
 
-    public List<byte[]> m24270a() {
+    public List<byte[]> m24271a() {
         return this.f16977d;
     }
 
-    public String m24269b() {
+    public String m24270b() {
         return this.f16978e;
     }
 
-    public Object m24268c() {
+    public Object m24269c() {
         return this.f16979f;
     }
 
-    public byte[] m24267d() {
+    public byte[] m24268d() {
         return this.f16974a;
     }
 
-    public int m24266e() {
+    public int m24267e() {
         return this.f16980g;
     }
 
-    public int m24265f() {
+    public int m24266f() {
         return this.f16981h;
     }
 
-    public String m24264g() {
+    public String m24265g() {
         return this.f16976c;
     }
 
-    public boolean m24263h() {
+    public boolean m24264h() {
         return this.f16980g >= 0 && this.f16981h >= 0;
     }
 
-    public void m24262i(Object obj) {
+    public void m24263i(Object obj) {
         this.f16979f = obj;
     }
 }

@@ -15,11 +15,11 @@ public final class C1908s0 extends AbstractC1750h0 {
         this.f6885b = i;
     }
 
-    public final void m35909a() {
+    public final void m35912a() {
         int q;
         int i = this.f6885b;
-        if (i == -1 || i >= this.f6886c.size() || !C1837n.m35975a(this.f6884a, this.f6886c.f6965c[this.f6885b])) {
-            q = this.f6886c.m35868q(this.f6884a);
+        if (i == -1 || i >= this.f6886c.size() || !C1837n.m35978a(this.f6884a, this.f6886c.f6965c[this.f6885b])) {
+            q = this.f6886c.m35871q(this.f6884a);
             this.f6885b = q;
         }
     }
@@ -33,11 +33,11 @@ public final class C1908s0 extends AbstractC1750h0 {
     @Override
     @NullableDecl
     public final Object getValue() {
-        Map j = this.f6886c.m35875j();
+        Map j = this.f6886c.m35878j();
         if (j != null) {
             return j.get(this.f6884a);
         }
-        m35909a();
+        m35912a();
         int i = this.f6885b;
         if (i == -1) {
             return null;
@@ -47,11 +47,11 @@ public final class C1908s0 extends AbstractC1750h0 {
 
     @Override
     public final Object setValue(Object obj) {
-        Map j = this.f6886c.m35875j();
+        Map j = this.f6886c.m35878j();
         if (j != null) {
             return j.put(this.f6884a, obj);
         }
-        m35909a();
+        m35912a();
         int i = this.f6885b;
         if (i == -1) {
             this.f6886c.put(this.f6884a, obj);

@@ -15,10 +15,10 @@ import java.util.List;
 public interface AbstractC10067c extends Closeable {
 
     public static abstract class AbstractC10068a {
-        public final int f32733a;
+        public final int f32736a;
 
         public AbstractC10068a(int i) {
-            this.f32733a = i;
+            this.f32736a = i;
         }
 
         public final void m6083a(String str) {
@@ -83,54 +83,54 @@ public interface AbstractC10067c extends Closeable {
     }
 
     public static class C10069b {
-        public final Context f32734a;
-        public final String f32735b;
-        public final AbstractC10068a f32736c;
-        public final boolean f32737d;
+        public final Context f32737a;
+        public final String f32738b;
+        public final AbstractC10068a f32739c;
+        public final boolean f32740d;
 
         public static class C10070a {
-            public Context f32738a;
-            public String f32739b;
-            public AbstractC10068a f32740c;
-            public boolean f32741d;
+            public Context f32741a;
+            public String f32742b;
+            public AbstractC10068a f32743c;
+            public boolean f32744d;
 
             public C10070a(Context context) {
-                this.f32738a = context;
+                this.f32741a = context;
             }
 
             public C10069b m6075a() {
-                if (this.f32740c == null) {
+                if (this.f32743c == null) {
                     throw new IllegalArgumentException("Must set a callback to create the configuration.");
-                } else if (this.f32738a == null) {
+                } else if (this.f32741a == null) {
                     throw new IllegalArgumentException("Must set a non-null context to create the configuration.");
-                } else if (!this.f32741d || !TextUtils.isEmpty(this.f32739b)) {
-                    return new C10069b(this.f32738a, this.f32739b, this.f32740c, this.f32741d);
+                } else if (!this.f32744d || !TextUtils.isEmpty(this.f32742b)) {
+                    return new C10069b(this.f32741a, this.f32742b, this.f32743c, this.f32744d);
                 } else {
                     throw new IllegalArgumentException("Must set a non-null database name to a configuration that uses the no backup directory.");
                 }
             }
 
             public C10070a m6074b(AbstractC10068a aVar) {
-                this.f32740c = aVar;
+                this.f32743c = aVar;
                 return this;
             }
 
             public C10070a m6073c(String str) {
-                this.f32739b = str;
+                this.f32742b = str;
                 return this;
             }
 
             public C10070a m6072d(boolean z) {
-                this.f32741d = z;
+                this.f32744d = z;
                 return this;
             }
         }
 
         public C10069b(Context context, String str, AbstractC10068a aVar, boolean z) {
-            this.f32734a = context;
-            this.f32735b = str;
-            this.f32736c = aVar;
-            this.f32737d = z;
+            this.f32737a = context;
+            this.f32738b = str;
+            this.f32739c = aVar;
+            this.f32740d = z;
         }
 
         public static C10070a m6076a(Context context) {

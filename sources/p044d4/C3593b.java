@@ -51,17 +51,17 @@ public final class C3593b implements AbstractC8958f {
             int max = Math.max(1, cVar.f12266c / 10);
             this.f12250g = max;
             C1189b0 b0Var = new C1189b0(cVar.f12270g);
-            b0Var.m38121v();
-            int v = b0Var.m38121v();
+            b0Var.m38124v();
+            int v = b0Var.m38124v();
             this.f12247d = v;
             int i = cVar.f12265b;
             int i2 = (((cVar.f12268e - (i * 4)) * 8) / (cVar.f12269f * i)) + 1;
             if (v == i2) {
-                int l = C1216l0.m37964l(max, v);
+                int l = C1216l0.m37967l(max, v);
                 this.f12248e = new byte[cVar.f12268e * l];
-                this.f12249f = new C1189b0(l * m29902h(v, i));
+                this.f12249f = new C1189b0(l * m29904h(v, i));
                 int i3 = ((cVar.f12266c * cVar.f12268e) * 8) / v;
-                this.f12251h = new C6600g1.C6602b().m19858e0("audio/raw").m19887G(i3).m19868Z(i3).m19871W(m29902h(max, i)).m19886H(cVar.f12265b).m19856f0(cVar.f12266c).m19869Y(2).m19889E();
+                this.f12251h = new C6600g1.C6602b().m19859e0("audio/raw").m19888G(i3).m19869Z(i3).m19872W(m29904h(max, i)).m19887H(cVar.f12265b).m19857f0(cVar.f12266c).m19870Y(2).m19890E();
                 return;
             }
             StringBuilder sb2 = new StringBuilder(56);
@@ -69,15 +69,15 @@ public final class C3593b implements AbstractC8958f {
             sb2.append(i2);
             sb2.append("; got: ");
             sb2.append(v);
-            throw C6556a2.m20112a(sb2.toString(), null);
+            throw C6556a2.m20113a(sb2.toString(), null);
         }
 
-        public static int m29902h(int i, int i2) {
+        public static int m29904h(int i, int i2) {
             return i * 2 * i2;
         }
 
         @Override
-        public void mo29900a(long j) {
+        public void mo29902a(long j) {
             this.f12252i = 0;
             this.f12253j = j;
             this.f12254k = 0;
@@ -85,28 +85,28 @@ public final class C3593b implements AbstractC8958f {
         }
 
         @Override
-        public boolean mo29899b(p270t3.AbstractC8959g r7, long r8) {
-            throw new UnsupportedOperationException("Method not decompiled: p044d4.C3593b.C3594a.mo29899b(t3.g, long):boolean");
+        public boolean mo29901b(p270t3.AbstractC8959g r7, long r8) {
+            throw new UnsupportedOperationException("Method not decompiled: p044d4.C3593b.C3594a.mo29901b(t3.g, long):boolean");
         }
 
         @Override
-        public void mo29898c(int i, long j) {
+        public void mo29900c(int i, long j) {
             this.f12244a.mo6042a(new C3600e(this.f12246c, this.f12247d, i, j));
-            this.f12245b.mo10798a(this.f12251h);
+            this.f12245b.mo10797a(this.f12251h);
         }
 
-        public final void m29906d(byte[] bArr, int i, C1189b0 b0Var) {
+        public final void m29908d(byte[] bArr, int i, C1189b0 b0Var) {
             for (int i2 = 0; i2 < i; i2++) {
                 for (int i3 = 0; i3 < this.f12246c.f12265b; i3++) {
-                    m29905e(bArr, i2, i3, b0Var.m38139d());
+                    m29907e(bArr, i2, i3, b0Var.m38142d());
                 }
             }
-            int g = m29903g(this.f12247d * i);
-            b0Var.m38144P(0);
-            b0Var.m38145O(g);
+            int g = m29905g(this.f12247d * i);
+            b0Var.m38147P(0);
+            b0Var.m38148O(g);
         }
 
-        public final void m29905e(byte[] bArr, int i, int i2, byte[] bArr2) {
+        public final void m29907e(byte[] bArr, int i, int i2, byte[] bArr2) {
             C3597c cVar = this.f12246c;
             int i3 = cVar.f12268e;
             int i4 = cVar.f12265b;
@@ -126,40 +126,40 @@ public final class C3593b implements AbstractC8958f {
                 if ((i13 & 8) != 0) {
                     i14 = -i14;
                 }
-                i8 = C1216l0.m37956p(i8 + i14, -32768, 32767);
+                i8 = C1216l0.m37959p(i8 + i14, -32768, 32767);
                 i10 += i4 * 2;
                 bArr2[i10] = (byte) (i8 & 255);
                 bArr2[i10 + 1] = (byte) (i8 >> 8);
                 int i15 = min + f12242m[i13];
                 int[] iArr = f12243n;
-                min = C1216l0.m37956p(i15, 0, iArr.length - 1);
+                min = C1216l0.m37959p(i15, 0, iArr.length - 1);
                 i9 = iArr[min];
             }
         }
 
-        public final int m29904f(int i) {
+        public final int m29906f(int i) {
             return i / (this.f12246c.f12265b * 2);
         }
 
-        public final int m29903g(int i) {
-            return m29902h(i, this.f12246c.f12265b);
+        public final int m29905g(int i) {
+            return m29904h(i, this.f12246c.f12265b);
         }
 
-        public final void m29901i(int i) {
-            long y0 = this.f12253j + C1216l0.m37937y0(this.f12255l, 1000000L, this.f12246c.f12266c);
-            int g = m29903g(i);
-            this.f12245b.mo10794e(y0, 1, g, this.f12254k - g, null);
+        public final void m29903i(int i) {
+            long y0 = this.f12253j + C1216l0.m37940y0(this.f12255l, 1000000L, this.f12246c.f12266c);
+            int g = m29905g(i);
+            this.f12245b.mo10793e(y0, 1, g, this.f12254k - g, null);
             this.f12255l += i;
             this.f12254k -= g;
         }
     }
 
     public interface AbstractC3595b {
-        void mo29900a(long j);
+        void mo29902a(long j);
 
-        boolean mo29899b(AbstractC8959g gVar, long j);
+        boolean mo29901b(AbstractC8959g gVar, long j);
 
-        void mo29898c(int i, long j);
+        void mo29900c(int i, long j);
     }
 
     public static final class C3596c implements AbstractC3595b {
@@ -183,7 +183,7 @@ public final class C3593b implements AbstractC8958f {
                 int i5 = i4 * i2 * 8;
                 int max = Math.max(i2, (i4 * i2) / 10);
                 this.f12260e = max;
-                this.f12259d = new C6600g1.C6602b().m19858e0(str).m19887G(i5).m19868Z(i5).m19871W(max).m19886H(cVar.f12265b).m19856f0(cVar.f12266c).m19869Y(i).m19889E();
+                this.f12259d = new C6600g1.C6602b().m19859e0(str).m19888G(i5).m19869Z(i5).m19872W(max).m19887H(cVar.f12265b).m19857f0(cVar.f12266c).m19870Y(i).m19890E();
                 return;
             }
             StringBuilder sb2 = new StringBuilder(50);
@@ -191,18 +191,18 @@ public final class C3593b implements AbstractC8958f {
             sb2.append(i2);
             sb2.append("; got: ");
             sb2.append(i3);
-            throw C6556a2.m20112a(sb2.toString(), null);
+            throw C6556a2.m20113a(sb2.toString(), null);
         }
 
         @Override
-        public void mo29900a(long j) {
+        public void mo29902a(long j) {
             this.f12261f = j;
             this.f12262g = 0;
             this.f12263h = 0L;
         }
 
         @Override
-        public boolean mo29899b(AbstractC8959g gVar, long j) {
+        public boolean mo29901b(AbstractC8959g gVar, long j) {
             int i;
             C3597c cVar;
             int i2;
@@ -213,7 +213,7 @@ public final class C3593b implements AbstractC8958f {
                 if (i <= 0 || (i2 = this.f12262g) >= (i3 = this.f12260e)) {
                     break;
                 }
-                int d = this.f12257b.mo10795d(gVar, (int) Math.min(i3 - i2, j2), true);
+                int d = this.f12257b.mo10794d(gVar, (int) Math.min(i3 - i2, j2), true);
                 if (d == -1) {
                     j2 = 0;
                 } else {
@@ -226,7 +226,7 @@ public final class C3593b implements AbstractC8958f {
             if (i5 > 0) {
                 int i6 = i5 * i4;
                 int i7 = this.f12262g - i6;
-                this.f12257b.mo10794e(this.f12261f + C1216l0.m37937y0(this.f12263h, 1000000L, cVar.f12266c), 1, i6, i7, null);
+                this.f12257b.mo10793e(this.f12261f + C1216l0.m37940y0(this.f12263h, 1000000L, cVar.f12266c), 1, i6, i7, null);
                 this.f12263h += i5;
                 this.f12262g = i7;
             }
@@ -234,13 +234,13 @@ public final class C3593b implements AbstractC8958f {
         }
 
         @Override
-        public void mo29898c(int i, long j) {
+        public void mo29900c(int i, long j) {
             this.f12256a.mo6042a(new C3600e(this.f12258c, 1, i, j));
-            this.f12257b.mo10798a(this.f12259d);
+            this.f12257b.mo10797a(this.f12259d);
         }
     }
 
-    public static AbstractC8958f[] m29912g() {
+    public static AbstractC8958f[] m29914g() {
         return new AbstractC8958f[]{new C3593b()};
     }
 
@@ -253,34 +253,34 @@ public final class C3593b implements AbstractC8958f {
         this.f12237c = j == 0 ? 0 : 4;
         AbstractC3595b bVar = this.f12239e;
         if (bVar != null) {
-            bVar.mo29900a(j2);
+            bVar.mo29902a(j2);
         }
     }
 
     @EnsuresNonNull({"extractorOutput", "trackOutput"})
-    public final void m29913d() {
-        C1186a.m38182h(this.f12236b);
-        C1216l0.m37968j(this.f12235a);
+    public final void m29915d() {
+        C1186a.m38185h(this.f12236b);
+        C1216l0.m37971j(this.f12235a);
     }
 
     @Override
     public int mo1149e(AbstractC8959g gVar, C8971q qVar) {
-        m29913d();
+        m29915d();
         int i = this.f12237c;
         if (i == 0) {
-            m29911h(gVar);
+            m29913h(gVar);
             return 0;
         } else if (i == 1) {
-            m29909k(gVar);
+            m29911k(gVar);
             return 0;
         } else if (i == 2) {
-            m29910i(gVar);
+            m29912i(gVar);
             return 0;
         } else if (i == 3) {
-            m29907m(gVar);
+            m29909m(gVar);
             return 0;
         } else if (i == 4) {
-            return m29908l(gVar);
+            return m29910l(gVar);
         } else {
             throw new IllegalStateException();
         }
@@ -293,23 +293,23 @@ public final class C3593b implements AbstractC8958f {
         hVar.mo6040m();
     }
 
-    public final void m29911h(AbstractC8959g gVar) {
-        C1186a.m38184f(gVar.mo6043r() == 0);
+    public final void m29913h(AbstractC8959g gVar) {
+        C1186a.m38187f(gVar.mo6043r() == 0);
         int i = this.f12240f;
         if (i != -1) {
-            gVar.mo10808n(i);
+            gVar.mo10807n(i);
             this.f12237c = 4;
-        } else if (C3598d.m29897a(gVar)) {
-            gVar.mo10808n((int) (gVar.mo6045f() - gVar.mo6043r()));
+        } else if (C3598d.m29899a(gVar)) {
+            gVar.mo10807n((int) (gVar.mo6045f() - gVar.mo6043r()));
             this.f12237c = 1;
         } else {
-            throw C6556a2.m20112a("Unsupported or unrecognized wav file type.", null);
+            throw C6556a2.m20113a("Unsupported or unrecognized wav file type.", null);
         }
     }
 
     @RequiresNonNull({"extractorOutput", "trackOutput"})
-    public final void m29910i(AbstractC8959g gVar) {
-        C3597c b = C3598d.m29896b(gVar);
+    public final void m29912i(AbstractC8959g gVar) {
+        C3597c b = C3598d.m29898b(gVar);
         int i = b.f12264a;
         if (i == 17) {
             this.f12239e = new C3594a(this.f12235a, this.f12236b, b);
@@ -326,7 +326,7 @@ public final class C3593b implements AbstractC8958f {
                 StringBuilder sb2 = new StringBuilder(40);
                 sb2.append("Unsupported WAV format type: ");
                 sb2.append(i2);
-                throw C6556a2.m20110c(sb2.toString());
+                throw C6556a2.m20111c(sb2.toString());
             }
         }
         this.f12237c = 3;
@@ -334,21 +334,21 @@ public final class C3593b implements AbstractC8958f {
 
     @Override
     public boolean mo1144j(AbstractC8959g gVar) {
-        return C3598d.m29897a(gVar);
+        return C3598d.m29899a(gVar);
     }
 
-    public final void m29909k(AbstractC8959g gVar) {
-        this.f12238d = C3598d.m29895c(gVar);
+    public final void m29911k(AbstractC8959g gVar) {
+        this.f12238d = C3598d.m29897c(gVar);
         this.f12237c = 2;
     }
 
-    public final int m29908l(AbstractC8959g gVar) {
-        C1186a.m38184f(this.f12241g != -1);
-        return ((AbstractC3595b) C1186a.m38185e(this.f12239e)).mo29899b(gVar, this.f12241g - gVar.mo6043r()) ? -1 : 0;
+    public final int m29910l(AbstractC8959g gVar) {
+        C1186a.m38187f(this.f12241g != -1);
+        return ((AbstractC3595b) C1186a.m38188e(this.f12239e)).mo29901b(gVar, this.f12241g - gVar.mo6043r()) ? -1 : 0;
     }
 
-    public final void m29907m(AbstractC8959g gVar) {
-        Pair<Long, Long> e = C3598d.m29893e(gVar);
+    public final void m29909m(AbstractC8959g gVar) {
+        Pair<Long, Long> e = C3598d.m29895e(gVar);
         this.f12240f = ((Long) e.first).intValue();
         long longValue = ((Long) e.second).longValue();
         long j = this.f12238d;
@@ -365,11 +365,11 @@ public final class C3593b implements AbstractC8958f {
                 sb2.append(j2);
                 sb2.append(", ");
                 sb2.append(a);
-                C1230s.m37881i("WavExtractor", sb2.toString());
+                C1230s.m37884i("WavExtractor", sb2.toString());
                 this.f12241g = a;
             }
         }
-        ((AbstractC3595b) C1186a.m38185e(this.f12239e)).mo29898c(this.f12240f, this.f12241g);
+        ((AbstractC3595b) C1186a.m38188e(this.f12239e)).mo29900c(this.f12240f, this.f12241g);
         this.f12237c = 4;
     }
 }

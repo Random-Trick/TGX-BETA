@@ -62,28 +62,28 @@ public class C2820o9 extends AbstractC9323v4<C2822b> implements C11052v1.Abstrac
         return 3;
     }
 
-    public final CharSequence m33263Pe() {
+    public final CharSequence m33266Pe() {
         SpannableStringBuilder spannableStringBuilder;
-        CharSequence I = C5078d.m23986z().m24024I(C4403w.m27853m1(R.string.EncryptionKeyDescription, this.f30167b.m2480e2().m1749D2(m9131x9().f9517a)));
+        CharSequence I = C5078d.m23987z().m24025I(C4403w.m27855m1(R.string.EncryptionKeyDescription, this.f30170b.m2480e2().m1749D2(m9131x9().f9517a)));
         if (I instanceof SpannableStringBuilder) {
             spannableStringBuilder = (SpannableStringBuilder) I;
         } else {
             spannableStringBuilder = new SpannableStringBuilder(I);
         }
         String s = C7389v0.m16586s(this.f9513n0);
-        if (!C5070i.m24061i(s)) {
+        if (!C5070i.m24062i(s)) {
             if (spannableStringBuilder.length() > 0) {
                 spannableStringBuilder.insert(0, (CharSequence) "\n");
             }
             spannableStringBuilder.insert(0, (CharSequence) s);
-            C5132o oVar = new C5132o(C1389o.m37259j(), R.id.theme_color_background_textLight);
+            C5132o oVar = new C5132o(C1389o.m37262j(), R.id.theme_color_background_textLight);
             m9119z8(oVar, R.id.theme_color_background_textLight);
             spannableStringBuilder.setSpan(oVar, 0, s.length(), 33);
         }
         return spannableStringBuilder;
     }
 
-    public void m33262Qe(C2822b bVar) {
+    public void m33265Qe(C2822b bVar) {
         super.m9476Ad(bVar);
         this.f9513n0 = bVar.f9518b;
     }
@@ -95,7 +95,7 @@ public class C2820o9 extends AbstractC9323v4<C2822b> implements C11052v1.Abstrac
 
     @Override
     public CharSequence mo9313X9() {
-        return C4403w.m27869i1(R.string.EncryptionKey);
+        return C4403w.m27871i1(R.string.EncryptionKey);
     }
 
     @Override
@@ -128,7 +128,7 @@ public class C2820o9 extends AbstractC9323v4<C2822b> implements C11052v1.Abstrac
         C10192g.m5782i(relativeLayout, R.id.theme_color_background, this);
         C2821a aVar = new C2821a(context);
         aVar.setId(R.id.btn_encryptionKey);
-        int i = C1357a0.m37541i(12.0f);
+        int i = C1357a0.m37544i(12.0f);
         aVar.setPadding(i, i, i, i);
         C10192g.m5782i(aVar, R.id.theme_color_filling, this);
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -1);
@@ -153,7 +153,7 @@ public class C2820o9 extends AbstractC9323v4<C2822b> implements C11052v1.Abstrac
         layoutParams3.addRule(1, R.id.btn_encryptionKey);
         f3Var2.setLayoutParams(layoutParams3);
         relativeLayout.addView(f3Var2);
-        CharSequence Pe = m33263Pe();
+        CharSequence Pe = m33266Pe();
         RelativeLayout.LayoutParams layoutParams4 = new RelativeLayout.LayoutParams(-1, -1);
         layoutParams4.addRule(3, R.id.btn_encryptionKey);
         C6847b2 b2Var = new C6847b2(context);

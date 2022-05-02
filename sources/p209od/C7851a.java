@@ -11,53 +11,53 @@ import p051db.C3940f;
 import p051db.C3950k;
 
 public class C7851a extends View implements C3950k.AbstractC3952b {
-    public double f25272A0;
-    public double f25273B0;
-    public double f25274C0;
-    public double f25275D0;
-    public int f25276E0;
-    public int f25277F0;
-    public boolean f25278G0;
-    public float f25281O;
-    public int f25282P;
-    public int f25283Q;
-    public int f25285S;
-    public int f25286T;
-    public double f25287U;
-    public double f25288V;
-    public AbstractC7853b f25290a;
-    public AbstractC7852a f25292b;
-    public AbstractC7854c f25294c;
-    public int f25296d0;
-    public int f25297e0;
-    public int f25298f0;
-    public int f25299g0;
-    public int f25302j0;
-    public int f25303k0;
-    public boolean f25304l0;
-    public float f25305m0;
-    public float f25306n0;
-    public float f25307o0;
-    public float f25308p0;
-    public double f25309q0;
-    public double f25310r0;
-    public double f25311s0;
-    public double f25312t0;
-    public C3950k f25313u0;
-    public float f25314v0;
-    public double f25315w0;
-    public double f25316x0;
-    public double f25317y0;
-    public double f25318z0;
-    public final Rect f25279M = new Rect();
-    public final Paint f25280N = new Paint(5);
-    public final C3940f f25284R = new C3940f(0, this, C2057b.f7280b, 170);
-    public double f25289W = 0.0d;
-    public double f25291a0 = 0.0d;
-    public double f25293b0 = 1.0d;
-    public double f25295c0 = 1.0d;
-    public final Rect f25300h0 = new Rect();
-    public final Rect f25301i0 = new Rect();
+    public double f25275A0;
+    public double f25276B0;
+    public double f25277C0;
+    public double f25278D0;
+    public int f25279E0;
+    public int f25280F0;
+    public boolean f25281G0;
+    public float f25284O;
+    public int f25285P;
+    public int f25286Q;
+    public int f25288S;
+    public int f25289T;
+    public double f25290U;
+    public double f25291V;
+    public AbstractC7853b f25293a;
+    public AbstractC7852a f25295b;
+    public AbstractC7854c f25297c;
+    public int f25299d0;
+    public int f25300e0;
+    public int f25301f0;
+    public int f25302g0;
+    public int f25305j0;
+    public int f25306k0;
+    public boolean f25307l0;
+    public float f25308m0;
+    public float f25309n0;
+    public float f25310o0;
+    public float f25311p0;
+    public double f25312q0;
+    public double f25313r0;
+    public double f25314s0;
+    public double f25315t0;
+    public C3950k f25316u0;
+    public float f25317v0;
+    public double f25318w0;
+    public double f25319x0;
+    public double f25320y0;
+    public double f25321z0;
+    public final Rect f25282M = new Rect();
+    public final Paint f25283N = new Paint(5);
+    public final C3940f f25287R = new C3940f(0, this, C2057b.f7280b, 170);
+    public double f25292W = 0.0d;
+    public double f25294a0 = 0.0d;
+    public double f25296b0 = 1.0d;
+    public double f25298c0 = 1.0d;
+    public final Rect f25303h0 = new Rect();
+    public final Rect f25304i0 = new Rect();
 
     public interface AbstractC7852a {
         void mo14833a();
@@ -87,8 +87,8 @@ public class C7851a extends View implements C3950k.AbstractC3952b {
         float f2;
         int targetWidth = getTargetWidth();
         int targetHeight = getTargetHeight();
-        int i2 = this.f25276E0;
-        if (i2 <= 0 || (i = this.f25277F0) <= 0) {
+        int i2 = this.f25279E0;
+        if (i2 <= 0 || (i = this.f25280F0) <= 0) {
             return 0.0f;
         }
         float f3 = targetWidth / targetHeight;
@@ -103,11 +103,11 @@ public class C7851a extends View implements C3950k.AbstractC3952b {
     }
 
     private int getWorkAreaHeight() {
-        return (getMeasuredHeight() - this.f25297e0) - this.f25299g0;
+        return (getMeasuredHeight() - this.f25300e0) - this.f25302g0;
     }
 
     private int getWorkAreaWidth() {
-        return (getMeasuredWidth() - this.f25296d0) - this.f25298f0;
+        return (getMeasuredWidth() - this.f25299d0) - this.f25301f0;
     }
 
     public static float m14849h(float f, float f2, float f3, float f4) {
@@ -125,22 +125,22 @@ public class C7851a extends View implements C3950k.AbstractC3952b {
     }
 
     private void setActiveFactor(float f) {
-        if (this.f25281O != f) {
-            this.f25281O = f;
+        if (this.f25284O != f) {
+            this.f25284O = f;
             m14850g();
             invalidate();
         }
     }
 
     private void setDragMode(int i) {
-        int i2 = this.f25302j0;
+        int i2 = this.f25305j0;
         if (i2 != i) {
             int i3 = 0;
             if (i != 0) {
                 i2 = 0;
             }
-            this.f25303k0 = i2;
-            this.f25302j0 = i;
+            this.f25306k0 = i2;
+            this.f25305j0 = i;
             if (i == 9) {
                 i3 = 3;
             } else if (i != 0) {
@@ -151,11 +151,11 @@ public class C7851a extends View implements C3950k.AbstractC3952b {
     }
 
     private void setNormalizeFactor(float f) {
-        if (this.f25314v0 != f) {
-            this.f25314v0 = f;
+        if (this.f25317v0 != f) {
+            this.f25317v0 = f;
             double d = f;
-            m14839r(this.f25315w0 + (this.f25272A0 * d), this.f25316x0 + (this.f25273B0 * d), this.f25317y0 + (this.f25274C0 * d), this.f25318z0 + (this.f25275D0 * d), true);
-            AbstractC7852a aVar = this.f25292b;
+            m14839r(this.f25318w0 + (this.f25275A0 * d), this.f25319x0 + (this.f25276B0 * d), this.f25320y0 + (this.f25277C0 * d), this.f25321z0 + (this.f25278D0 * d), true);
+            AbstractC7852a aVar = this.f25295b;
             if (aVar != null) {
                 aVar.mo14832b(f);
             }
@@ -174,42 +174,42 @@ public class C7851a extends View implements C3950k.AbstractC3952b {
     @Override
     public void mo35Y0(int i, float f, C3950k kVar) {
         AbstractC7852a aVar;
-        if (i == 1 && (aVar = this.f25292b) != null) {
+        if (i == 1 && (aVar = this.f25295b) != null) {
             aVar.mo14833a();
         }
     }
 
     public boolean m14855b(double d, double d2, double d3, double d4, boolean z, boolean z2) {
-        C3950k kVar = this.f25313u0;
+        C3950k kVar = this.f25316u0;
         if (kVar == null) {
-            this.f25313u0 = new C3950k(1, this, C2057b.f7280b, 180L);
+            this.f25316u0 = new C3950k(1, this, C2057b.f7280b, 180L);
         } else {
-            kVar.m29541l(0.0f);
-            this.f25314v0 = 0.0f;
+            kVar.m29543l(0.0f);
+            this.f25317v0 = 0.0f;
         }
-        if (!z && this.f25289W == d && this.f25291a0 == d2 && this.f25293b0 == d3 && this.f25295c0 == d4) {
+        if (!z && this.f25292W == d && this.f25294a0 == d2 && this.f25296b0 == d3 && this.f25298c0 == d4) {
             return false;
         }
-        double d5 = this.f25289W;
-        this.f25315w0 = d5;
-        double d6 = this.f25291a0;
-        this.f25316x0 = d6;
-        double d7 = this.f25293b0;
-        this.f25317y0 = d7;
-        double d8 = this.f25295c0;
-        this.f25318z0 = d8;
-        this.f25272A0 = d - d5;
-        this.f25273B0 = d2 - d6;
-        this.f25274C0 = d3 - d7;
-        this.f25275D0 = d4 - d8;
-        this.f25313u0.m29528y(z2 ? 120L : 180L);
-        this.f25313u0.m29544i(1.0f);
+        double d5 = this.f25292W;
+        this.f25318w0 = d5;
+        double d6 = this.f25294a0;
+        this.f25319x0 = d6;
+        double d7 = this.f25296b0;
+        this.f25320y0 = d7;
+        double d8 = this.f25298c0;
+        this.f25321z0 = d8;
+        this.f25275A0 = d - d5;
+        this.f25276B0 = d2 - d6;
+        this.f25277C0 = d3 - d7;
+        this.f25278D0 = d4 - d8;
+        this.f25316u0.m29530y(z2 ? 120L : 180L);
+        this.f25316u0.m29546i(1.0f);
         return true;
     }
 
     public final void m14854c(Rect rect, Rect rect2) {
-        int i = this.f25296d0;
-        int i2 = this.f25297e0;
+        int i = this.f25299d0;
+        int i2 = this.f25300e0;
         int workAreaWidth = getWorkAreaWidth();
         int workAreaHeight = getWorkAreaHeight();
         float targetWidth = getTargetWidth();
@@ -227,26 +227,26 @@ public class C7851a extends View implements C3950k.AbstractC3952b {
         if (rect2 != null) {
             double d = i3;
             double d2 = i4;
-            rect2.set(((int) Math.ceil(this.f25289W * d)) + i5, ((int) Math.ceil(this.f25291a0 * d2)) + i6, i5 + ((int) Math.floor(d * this.f25293b0)), i6 + ((int) Math.floor(d2 * this.f25295c0)));
+            rect2.set(((int) Math.ceil(this.f25292W * d)) + i5, ((int) Math.ceil(this.f25294a0 * d2)) + i6, i5 + ((int) Math.floor(d * this.f25296b0)), i6 + ((int) Math.floor(d2 * this.f25298c0)));
         }
     }
 
     public boolean m14853d() {
-        return this.f25282P == 0 && !this.f25284R.m29582i();
+        return this.f25285P == 0 && !this.f25287R.m29584i();
     }
 
     public final void m14852e() {
-        C3950k kVar = this.f25313u0;
+        C3950k kVar = this.f25316u0;
         if (kVar != null) {
-            kVar.m29542k();
+            kVar.m29544k();
         }
     }
 
     public final void m14851f() {
-        if (getWorkAreaWidth() > 0 && getWorkAreaHeight() > 0 && this.f25285S > 0 && this.f25286T > 0) {
-            m14854c(this.f25300h0, null);
-            setPivotX(this.f25300h0.centerX());
-            setPivotY(this.f25300h0.centerY());
+        if (getWorkAreaWidth() > 0 && getWorkAreaHeight() > 0 && this.f25288S > 0 && this.f25289T > 0) {
+            m14854c(this.f25303h0, null);
+            setPivotX(this.f25303h0.centerX());
+            setPivotY(this.f25303h0.centerY());
         }
     }
 
@@ -256,33 +256,33 @@ public class C7851a extends View implements C3950k.AbstractC3952b {
 
     public float getFixedProportion() {
         int i;
-        int i2 = this.f25276E0;
-        if (i2 <= 0 || (i = this.f25277F0) <= 0) {
+        int i2 = this.f25279E0;
+        if (i2 <= 0 || (i = this.f25280F0) <= 0) {
             return 0.0f;
         }
         return i2 / i;
     }
 
     public float getOriginalProportion() {
-        return Math.max(this.f25285S, this.f25286T) / Math.min(this.f25285S, this.f25286T);
+        return Math.max(this.f25288S, this.f25289T) / Math.min(this.f25288S, this.f25289T);
     }
 
     public int getTargetHeight() {
-        return this.f25286T;
+        return this.f25289T;
     }
 
     public int getTargetWidth() {
-        return this.f25285S;
+        return this.f25288S;
     }
 
     public void m14848i(float f) {
         setActiveFactor(f);
-        this.f25284R.m29587d(f);
+        this.f25287R.m29589d(f);
     }
 
     public final void m14847j() {
-        m14854c(this.f25300h0, null);
-        invalidate(this.f25300h0.left - C1357a0.m37541i(2.0f), this.f25300h0.top - C1357a0.m37541i(2.0f), this.f25300h0.right + C1357a0.m37541i(2.0f), this.f25300h0.bottom + C1357a0.m37541i(2.0f));
+        m14854c(this.f25303h0, null);
+        invalidate(this.f25303h0.left - C1357a0.m37544i(2.0f), this.f25303h0.top - C1357a0.m37544i(2.0f), this.f25303h0.right + C1357a0.m37544i(2.0f), this.f25303h0.bottom + C1357a0.m37544i(2.0f));
     }
 
     public final void m14844m() {
@@ -293,20 +293,20 @@ public class C7851a extends View implements C3950k.AbstractC3952b {
             m14852e();
             return;
         }
-        double d3 = this.f25289W;
-        double d4 = this.f25293b0;
+        double d3 = this.f25292W;
+        double d4 = this.f25296b0;
         double d5 = (d3 + d4) / 2.0d;
-        double d6 = this.f25291a0;
-        double d7 = this.f25295c0;
+        double d6 = this.f25294a0;
+        double d7 = this.f25298c0;
         double d8 = (d6 + d7) / 2.0d;
         double d9 = d4 - d3;
         double d10 = d7 - d6;
-        if (this.f25285S < this.f25286T) {
+        if (this.f25288S < this.f25289T) {
             d10 = d9 * proportion;
         } else {
             d9 = d10 / proportion;
         }
-        double max = Math.max(1.0d, Math.max(((float) this.f25287U) / d9, Math.max(((float) this.f25288V) / d10, 1.0d))) * Math.min(1.0d, Math.min(1.0d / d9, 1.0d / d10));
+        double max = Math.max(1.0d, Math.max(((float) this.f25290U) / d9, Math.max(((float) this.f25291V) / d10, 1.0d))) * Math.min(1.0d, Math.min(1.0d / d9, 1.0d / d10));
         if (max != 1.0d) {
             d9 = Math.min(1.0d, Math.max(0.0d, d9 * max));
             d10 = Math.min(1.0d, Math.max(0.0d, d10 * max));
@@ -341,8 +341,8 @@ public class C7851a extends View implements C3950k.AbstractC3952b {
     }
 
     public void m14842o() {
-        this.f25276E0 = 0;
-        this.f25277F0 = 0;
+        this.f25279E0 = 0;
+        this.f25280F0 = 0;
     }
 
     @Override
@@ -362,11 +362,11 @@ public class C7851a extends View implements C3950k.AbstractC3952b {
     }
 
     public void m14841p(int i, int i2, double d, double d2, double d3, double d4, boolean z) {
-        if (this.f25285S != i || this.f25286T != i2 || this.f25289W != d || this.f25291a0 != d2 || this.f25293b0 != d3 || this.f25295c0 != d4) {
-            this.f25285S = i;
-            this.f25286T = i2;
-            this.f25287U = 18.0d / i;
-            this.f25288V = 18.0d / i2;
+        if (this.f25288S != i || this.f25289T != i2 || this.f25292W != d || this.f25294a0 != d2 || this.f25296b0 != d3 || this.f25298c0 != d4) {
+            this.f25288S = i;
+            this.f25289T = i2;
+            this.f25290U = 18.0d / i;
+            this.f25291V = 18.0d / i2;
             m14839r(d, d2, d3, d4, z);
             m14851f();
             invalidate();
@@ -377,13 +377,13 @@ public class C7851a extends View implements C3950k.AbstractC3952b {
         double d;
         double d2;
         double d3;
-        double d4 = this.f25289W;
-        double d5 = this.f25291a0;
-        double d6 = this.f25293b0;
-        double d7 = this.f25295c0;
+        double d4 = this.f25292W;
+        double d5 = this.f25294a0;
+        double d6 = this.f25296b0;
+        double d7 = this.f25298c0;
         int i2 = i;
-        int i3 = this.f25285S;
-        int i4 = this.f25286T;
+        int i3 = this.f25288S;
+        int i4 = this.f25289T;
         double d8 = d7;
         double d9 = d6;
         double d10 = d4;
@@ -418,12 +418,12 @@ public class C7851a extends View implements C3950k.AbstractC3952b {
 
     public final void m14839r(double d, double d2, double d3, double d4, boolean z) {
         AbstractC7853b bVar;
-        if (this.f25289W != d || this.f25291a0 != d2 || this.f25293b0 != d3 || this.f25295c0 != d4) {
-            this.f25289W = d;
-            this.f25291a0 = d2;
-            this.f25293b0 = d3;
-            this.f25295c0 = d4;
-            if (z && (bVar = this.f25290a) != null) {
+        if (this.f25292W != d || this.f25294a0 != d2 || this.f25296b0 != d3 || this.f25298c0 != d4) {
+            this.f25292W = d;
+            this.f25294a0 = d2;
+            this.f25296b0 = d3;
+            this.f25298c0 = d4;
+            if (z && (bVar = this.f25293a) != null) {
                 bVar.mo14831a(d, d2, d3, d4);
             }
             m14847j();
@@ -431,66 +431,66 @@ public class C7851a extends View implements C3950k.AbstractC3952b {
     }
 
     public final boolean m14838s(boolean z) {
-        if (this.f25304l0 != z) {
-            this.f25304l0 = z;
-            C1379j0.m37307r(getContext()).m14464m3(64, z);
+        if (this.f25307l0 != z) {
+            this.f25307l0 = z;
+            C1379j0.m37310r(getContext()).m14463m3(64, z);
         }
         return z;
     }
 
     public void setNormalizeListener(AbstractC7852a aVar) {
-        this.f25292b = aVar;
+        this.f25295b = aVar;
     }
 
     public void setOffsetBottom(int i) {
-        if (this.f25299g0 != i) {
-            this.f25299g0 = i;
+        if (this.f25302g0 != i) {
+            this.f25302g0 = i;
             m14851f();
             invalidate();
         }
     }
 
     public void setRectChangeListener(AbstractC7853b bVar) {
-        this.f25290a = bVar;
+        this.f25293a = bVar;
     }
 
     public void setRotateModeChangeListener(AbstractC7854c cVar) {
-        this.f25294c = cVar;
+        this.f25297c = cVar;
     }
 
     public void m14837t(int i, int i2) {
-        if (this.f25276E0 != i || this.f25277F0 != i2) {
-            this.f25276E0 = i;
-            this.f25277F0 = i2;
+        if (this.f25279E0 != i || this.f25280F0 != i2) {
+            this.f25279E0 = i;
+            this.f25280F0 = i2;
             m14844m();
         }
     }
 
     public void m14836u(int i, boolean z) {
-        int i2 = this.f25282P;
+        int i2 = this.f25285P;
         if (i2 != i) {
             boolean z2 = i != 0;
             if (z2) {
                 i2 = 0;
             }
-            this.f25283Q = i2;
-            this.f25282P = i;
+            this.f25286Q = i2;
+            this.f25285P = i;
             m14850g();
             if (z) {
-                this.f25284R.m29575p(z2, true);
+                this.f25287R.m29577p(z2, true);
                 return;
             }
-            this.f25284R.m29588c();
-            this.f25284R.m29586e(z2);
+            this.f25287R.m29590c();
+            this.f25287R.m29588e(z2);
         }
     }
 
     public void m14835v(int i, int i2, int i3, int i4) {
-        if (this.f25296d0 != i || this.f25297e0 != i2 || this.f25298f0 != i3 || this.f25299g0 != i4) {
-            this.f25296d0 = i;
-            this.f25297e0 = i2;
-            this.f25298f0 = i3;
-            this.f25299g0 = i4;
+        if (this.f25299d0 != i || this.f25300e0 != i2 || this.f25301f0 != i3 || this.f25302g0 != i4) {
+            this.f25299d0 = i;
+            this.f25300e0 = i2;
+            this.f25301f0 = i3;
+            this.f25302g0 = i4;
             m14851f();
             invalidate();
         }

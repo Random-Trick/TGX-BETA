@@ -26,7 +26,7 @@ public interface AbstractC10012l<T> extends Iterable<T>, AbstractC8415a {
         }
 
         public static <T> T m6228e(AbstractC10012l<T> lVar, EnumC7313d dVar) {
-            C8298k.m12934e(dVar, "type");
+            C8298k.m12933e(dVar, "type");
             if (lVar.mo6237g(dVar)) {
                 return lVar.mo6239d(dVar);
             }
@@ -34,7 +34,7 @@ public interface AbstractC10012l<T> extends Iterable<T>, AbstractC8415a {
         }
 
         public static <T> int m6227f(AbstractC10012l<T> lVar) {
-            return C5304n.m23363i(lVar.mo6235l(), lVar.mo6234n()).size();
+            return C5304n.m23364i(lVar.mo6235l(), lVar.mo6234n()).size();
         }
 
         public static <T> T m6226g(AbstractC10012l<T> lVar) {
@@ -42,7 +42,7 @@ public interface AbstractC10012l<T> extends Iterable<T>, AbstractC8415a {
         }
 
         public static <T> Iterator<T> m6225h(AbstractC10012l<T> lVar) {
-            return C5304n.m23363i(lVar.mo6235l(), lVar.mo6234n()).iterator();
+            return C5304n.m23364i(lVar.mo6235l(), lVar.mo6234n()).iterator();
         }
 
         public static <T> T m6224i(AbstractC10012l<T> lVar) {

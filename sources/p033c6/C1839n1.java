@@ -6,7 +6,7 @@ import javax.annotation.CheckForNull;
 
 public final class C1839n1 {
     @CheckForNull
-    public static <V> V m35974a(Map<?, V> map, @CheckForNull Object obj) {
+    public static <V> V m35977a(Map<?, V> map, @CheckForNull Object obj) {
         Objects.requireNonNull(map);
         try {
             return map.get(obj);
@@ -15,7 +15,7 @@ public final class C1839n1 {
         }
     }
 
-    public static boolean m35973b(Map<?, ?> map, @CheckForNull Object obj) {
+    public static boolean m35976b(Map<?, ?> map, @CheckForNull Object obj) {
         Objects.requireNonNull(map);
         try {
             return map.containsKey(obj);

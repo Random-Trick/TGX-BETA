@@ -13,135 +13,135 @@ import qa.C8298k;
 import ua.AbstractC9486c;
 
 public final class C7814a {
-    public final float f25026a;
-    public float f25027b;
-    public final Paint f25028c;
-    public float f25029d;
-    public float f25030e;
-    public float f25031f;
-    public float f25032g;
-    public int f25033h;
-    public C8423d f25034i;
-    public final int f25035j;
-    public final C8422c f25036k;
-    public final AbstractC8418b f25037l;
-    public long f25038m;
-    public final boolean f25039n;
-    public C8423d f25040o;
-    public C8423d f25041p;
-    public final boolean f25042q;
-    public final boolean f25043r;
-    public final float f25044s;
-    public final float f25045t;
+    public final float f25029a;
+    public float f25030b;
+    public final Paint f25031c;
+    public float f25032d;
+    public float f25033e;
+    public float f25034f;
+    public float f25035g;
+    public int f25036h;
+    public C8423d f25037i;
+    public final int f25038j;
+    public final C8422c f25039k;
+    public final AbstractC8418b f25040l;
+    public long f25041m;
+    public final boolean f25042n;
+    public C8423d f25043o;
+    public C8423d f25044p;
+    public final boolean f25045q;
+    public final boolean f25046r;
+    public final float f25047s;
+    public final float f25048t;
 
     public C7814a(C8423d dVar, int i, C8422c cVar, AbstractC8418b bVar, long j, boolean z, C8423d dVar2, C8423d dVar3, boolean z2, boolean z3, float f, float f2) {
-        C8298k.m12934e(dVar, "location");
-        C8298k.m12934e(cVar, "size");
-        C8298k.m12934e(bVar, "shape");
-        C8298k.m12934e(dVar2, "acceleration");
-        C8298k.m12934e(dVar3, "velocity");
-        this.f25034i = dVar;
-        this.f25035j = i;
-        this.f25036k = cVar;
-        this.f25037l = bVar;
-        this.f25038m = j;
-        this.f25039n = z;
-        this.f25040o = dVar2;
-        this.f25041p = dVar3;
-        this.f25042q = z2;
-        this.f25043r = z3;
-        this.f25044s = f;
-        this.f25045t = f2;
-        this.f25026a = cVar.m12531a();
-        this.f25027b = cVar.m12530b();
+        C8298k.m12933e(dVar, "location");
+        C8298k.m12933e(cVar, "size");
+        C8298k.m12933e(bVar, "shape");
+        C8298k.m12933e(dVar2, "acceleration");
+        C8298k.m12933e(dVar3, "velocity");
+        this.f25037i = dVar;
+        this.f25038j = i;
+        this.f25039k = cVar;
+        this.f25040l = bVar;
+        this.f25041m = j;
+        this.f25042n = z;
+        this.f25043o = dVar2;
+        this.f25044p = dVar3;
+        this.f25045q = z2;
+        this.f25046r = z3;
+        this.f25047s = f;
+        this.f25048t = f2;
+        this.f25029a = cVar.m12530a();
+        this.f25030b = cVar.m12529b();
         Paint paint = new Paint();
-        this.f25028c = paint;
-        this.f25031f = this.f25027b;
-        this.f25032g = 60.0f;
-        this.f25033h = 255;
+        this.f25031c = paint;
+        this.f25034f = this.f25030b;
+        this.f25035g = 60.0f;
+        this.f25036h = 255;
         Resources system = Resources.getSystem();
-        C8298k.m12935d(system, "Resources.getSystem()");
+        C8298k.m12934d(system, "Resources.getSystem()");
         float f3 = system.getDisplayMetrics().density * 0.29f;
         float f4 = 3 * f3;
         if (z2) {
-            this.f25029d = ((f4 * AbstractC9486c.f30717a.mo8551c()) + f3) * f2;
+            this.f25032d = ((f4 * AbstractC9486c.f30720a.mo8551c()) + f3) * f2;
         }
         paint.setColor(i);
     }
 
     public final void m14983a(C8423d dVar) {
-        C8298k.m12934e(dVar, "force");
-        this.f25040o.m12528b(dVar, 1.0f / this.f25026a);
+        C8298k.m12933e(dVar, "force");
+        this.f25043o.m12527b(dVar, 1.0f / this.f25029a);
     }
 
     public final void m14982b(Canvas canvas) {
-        if (this.f25034i.m12526d() > canvas.getHeight()) {
-            this.f25038m = 0L;
-        } else if (this.f25034i.m12527c() <= canvas.getWidth()) {
+        if (this.f25037i.m12525d() > canvas.getHeight()) {
+            this.f25041m = 0L;
+        } else if (this.f25037i.m12526c() <= canvas.getWidth()) {
             float f = 0;
-            if (this.f25034i.m12527c() + m14981c() >= f && this.f25034i.m12526d() + m14981c() >= f) {
-                this.f25028c.setColor((this.f25033h << 24) | (this.f25035j & 16777215));
+            if (this.f25037i.m12526c() + m14981c() >= f && this.f25037i.m12525d() + m14981c() >= f) {
+                this.f25031c.setColor((this.f25036h << 24) | (this.f25038j & 16777215));
                 float f2 = 2;
-                float abs = Math.abs((this.f25031f / this.f25027b) - 0.5f) * f2;
-                float f3 = (this.f25027b * abs) / f2;
+                float abs = Math.abs((this.f25034f / this.f25030b) - 0.5f) * f2;
+                float f3 = (this.f25030b * abs) / f2;
                 int save = canvas.save();
-                canvas.translate(this.f25034i.m12527c() - f3, this.f25034i.m12526d());
-                canvas.rotate(this.f25030e, f3, this.f25027b / f2);
+                canvas.translate(this.f25037i.m12526c() - f3, this.f25037i.m12525d());
+                canvas.rotate(this.f25033e, f3, this.f25030b / f2);
                 canvas.scale(abs, 1.0f);
-                this.f25037l.mo12532a(canvas, this.f25028c, this.f25027b);
+                this.f25040l.mo12531a(canvas, this.f25031c, this.f25030b);
                 canvas.restoreToCount(save);
             }
         }
     }
 
     public final float m14981c() {
-        return this.f25027b;
+        return this.f25030b;
     }
 
     public final boolean m14980d() {
-        return this.f25033h <= 0;
+        return this.f25036h <= 0;
     }
 
     public final void m14979e(Canvas canvas, float f) {
-        C8298k.m12934e(canvas, "canvas");
+        C8298k.m12933e(canvas, "canvas");
         m14978f(f);
         m14982b(canvas);
     }
 
     public final void m14978f(float f) {
-        if (this.f25043r) {
-            float d = this.f25040o.m12526d();
-            float f2 = this.f25044s;
+        if (this.f25046r) {
+            float d = this.f25043o.m12525d();
+            float f2 = this.f25047s;
             if (d < f2 || f2 == -1.0f) {
-                this.f25041p.m12529a(this.f25040o);
+                this.f25044p.m12528a(this.f25043o);
             }
         }
-        this.f25034i.m12528b(this.f25041p, this.f25032g * f);
-        long j = this.f25038m;
+        this.f25037i.m12527b(this.f25044p, this.f25035g * f);
+        long j = this.f25041m;
         if (j <= 0) {
             m14977g(f);
         } else {
-            this.f25038m = j - (1000 * f);
+            this.f25041m = j - (1000 * f);
         }
-        float f3 = this.f25029d * f * this.f25032g;
-        float f4 = this.f25030e + f3;
-        this.f25030e = f4;
+        float f3 = this.f25032d * f * this.f25035g;
+        float f4 = this.f25033e + f3;
+        this.f25033e = f4;
         if (f4 >= 360) {
-            this.f25030e = 0.0f;
+            this.f25033e = 0.0f;
         }
-        float f5 = this.f25031f - f3;
-        this.f25031f = f5;
+        float f5 = this.f25034f - f3;
+        this.f25034f = f5;
         if (f5 < 0) {
-            this.f25031f = this.f25027b;
+            this.f25034f = this.f25030b;
         }
     }
 
     public final void m14977g(float f) {
         int i = 0;
-        if (this.f25039n) {
-            i = C10030l.m6193d(this.f25033h - ((int) ((5 * f) * this.f25032g)), 0);
+        if (this.f25042n) {
+            i = C10030l.m6193d(this.f25036h - ((int) ((5 * f) * this.f25035g)), 0);
         }
-        this.f25033h = i;
+        this.f25036h = i;
     }
 
     public C7814a(C8423d dVar, int i, C8422c cVar, AbstractC8418b bVar, long j, boolean z, C8423d dVar2, C8423d dVar3, boolean z2, boolean z3, float f, float f2, int i2, C8294g gVar) {

@@ -13,15 +13,15 @@ public final class C6810a {
     public C6810a() {
     }
 
-    public static void m18948E(byte[] bArr, int i, double d) {
-        m18942K(bArr, i, Double.doubleToLongBits(d));
+    public static void m18949E(byte[] bArr, int i, double d) {
+        m18943K(bArr, i, Double.doubleToLongBits(d));
     }
 
-    public static void m18946G(byte[] bArr, int i, float f) {
-        m18944I(bArr, i, Float.floatToIntBits(f));
+    public static void m18947G(byte[] bArr, int i, float f) {
+        m18945I(bArr, i, Float.floatToIntBits(f));
     }
 
-    public static void m18944I(byte[] bArr, int i, int i2) {
+    public static void m18945I(byte[] bArr, int i, int i2) {
         bArr[i] = (byte) ((i2 >> 24) & 255);
         int i3 = i + 1;
         bArr[i3] = (byte) ((i2 >> 16) & 255);
@@ -30,7 +30,7 @@ public final class C6810a {
         bArr[i4 + 1] = (byte) (i2 & 255);
     }
 
-    public static void m18942K(byte[] bArr, int i, long j) {
+    public static void m18943K(byte[] bArr, int i, long j) {
         bArr[i] = (byte) ((j >>> 56) & 255);
         int i2 = i + 1;
         bArr[i2] = (byte) ((j >>> 48) & 255);
@@ -47,7 +47,7 @@ public final class C6810a {
         bArr[i7 + 1] = (byte) (j & 255);
     }
 
-    public static void m18939N(RandomAccessFile randomAccessFile, int i) {
+    public static void m18940N(RandomAccessFile randomAccessFile, int i) {
         while ((i & (-128)) != 0) {
             randomAccessFile.write((i & 127) | Log.TAG_YOUTUBE);
             i >>>= 7;
@@ -55,26 +55,26 @@ public final class C6810a {
         randomAccessFile.write(i & 127);
     }
 
-    public static byte m18933f(RandomAccessFile randomAccessFile) {
+    public static byte m18934f(RandomAccessFile randomAccessFile) {
         return (byte) randomAccessFile.read();
     }
 
-    public static byte[] m18931h(RandomAccessFile randomAccessFile) {
-        int t = m18919t(randomAccessFile);
+    public static byte[] m18932h(RandomAccessFile randomAccessFile) {
+        int t = m18920t(randomAccessFile);
         byte[] bArr = new byte[t];
         randomAccessFile.read(bArr, 0, t);
         return bArr;
     }
 
-    public static double m18929j(byte[] bArr, int i) {
-        return Double.longBitsToDouble(m18923p(bArr, i));
+    public static double m18930j(byte[] bArr, int i) {
+        return Double.longBitsToDouble(m18924p(bArr, i));
     }
 
-    public static float m18927l(byte[] bArr, int i) {
-        return Float.intBitsToFloat(m18925n(bArr, i));
+    public static float m18928l(byte[] bArr, int i) {
+        return Float.intBitsToFloat(m18926n(bArr, i));
     }
 
-    public static int m18925n(byte[] bArr, int i) {
+    public static int m18926n(byte[] bArr, int i) {
         if (bArr.length - i >= 4) {
             int i2 = i + 1;
             int i3 = i2 + 1;
@@ -84,7 +84,7 @@ public final class C6810a {
         throw new IllegalArgumentException();
     }
 
-    public static long m18923p(byte[] bArr, int i) {
+    public static long m18924p(byte[] bArr, int i) {
         if (bArr.length - i >= 8) {
             long j = 0;
             for (int i2 = 0; i2 < 8; i2++) {
@@ -96,15 +96,15 @@ public final class C6810a {
         throw new IllegalArgumentException();
     }
 
-    public static String m18921r(RandomAccessFile randomAccessFile) {
+    public static String m18922r(RandomAccessFile randomAccessFile) {
         try {
-            return new String(m18931h(randomAccessFile), C5070i.f17083a);
+            return new String(m18932h(randomAccessFile), C5070i.f17083a);
         } catch (UnsupportedEncodingException unused) {
             throw new RuntimeException();
         }
     }
 
-    public static int m18919t(RandomAccessFile randomAccessFile) {
+    public static int m18920t(RandomAccessFile randomAccessFile) {
         int i = 0;
         int i2 = 0;
         do {
@@ -118,7 +118,7 @@ public final class C6810a {
         throw new RuntimeException("varint read failed");
     }
 
-    public static int m18916w(int i) {
+    public static int m18917w(int i) {
         int i2 = 1;
         while ((i & (-128)) != 0) {
             i2++;
@@ -127,32 +127,32 @@ public final class C6810a {
         return i2;
     }
 
-    public static int m18915x(String str, boolean z) {
-        if (!C5070i.m24061i(str)) {
-            return m18916w(str.length()) + str.length();
+    public static int m18916x(String str, boolean z) {
+        if (!C5070i.m24062i(str)) {
+            return m18917w(str.length()) + str.length();
         }
         if (z) {
-            return m18916w(0);
+            return m18917w(0);
         }
         return 0;
     }
 
-    public boolean m18952A(boolean z) {
-        m18951B(z ? (byte) 1 : (byte) 0);
+    public boolean m18953A(boolean z) {
+        m18952B(z ? (byte) 1 : (byte) 0);
         return z;
     }
 
-    public void m18951B(byte b) {
-        m18938a(1);
+    public void m18952B(byte b) {
+        m18939a(1);
         byte[] bArr = this.f21329b;
         int i = this.f21328a;
         bArr[i] = b;
         this.f21328a = i + 1;
     }
 
-    public void m18950C(byte[] bArr) {
-        m18938a(m18916w(bArr.length) + bArr.length);
-        m18940M(bArr.length);
+    public void m18951C(byte[] bArr) {
+        m18939a(m18917w(bArr.length) + bArr.length);
+        m18941M(bArr.length);
         for (byte b : bArr) {
             byte[] bArr2 = this.f21329b;
             int i = this.f21328a;
@@ -161,32 +161,32 @@ public final class C6810a {
         }
     }
 
-    public void m18949D(double d) {
-        m18943J(Double.doubleToLongBits(d));
+    public void m18950D(double d) {
+        m18944J(Double.doubleToLongBits(d));
     }
 
-    public void m18947F(float f) {
-        m18945H(Float.floatToIntBits(f));
+    public void m18948F(float f) {
+        m18946H(Float.floatToIntBits(f));
     }
 
-    public void m18945H(int i) {
-        m18938a(4);
-        m18944I(this.f21329b, this.f21328a, i);
+    public void m18946H(int i) {
+        m18939a(4);
+        m18945I(this.f21329b, this.f21328a, i);
         this.f21328a += 4;
     }
 
-    public void m18943J(long j) {
-        m18938a(8);
-        m18942K(this.f21329b, this.f21328a, j);
+    public void m18944J(long j) {
+        m18939a(8);
+        m18943K(this.f21329b, this.f21328a, j);
         this.f21328a += 8;
     }
 
-    public void m18941L(String str) {
-        m18950C(str.getBytes(C5070i.f17083a));
+    public void m18942L(String str) {
+        m18951C(str.getBytes(C5070i.f17083a));
     }
 
-    public void m18940M(int i) {
-        m18938a(m18916w(i));
+    public void m18941M(int i) {
+        m18939a(m18917w(i));
         while ((i & (-128)) != 0) {
             byte[] bArr = this.f21329b;
             int i2 = this.f21328a;
@@ -200,7 +200,7 @@ public final class C6810a {
         this.f21328a = i3 + 1;
     }
 
-    public final void m18938a(int i) {
+    public final void m18939a(int i) {
         byte[] bArr = this.f21329b;
         if (bArr == null) {
             this.f21329b = new byte[i];
@@ -212,7 +212,7 @@ public final class C6810a {
         }
     }
 
-    public void m18937b(int i) {
+    public void m18938b(int i) {
         byte[] bArr = this.f21329b;
         if (bArr == null) {
             throw new RuntimeException("Blob.data == null");
@@ -221,7 +221,7 @@ public final class C6810a {
         }
     }
 
-    public void m18936c(int i) {
+    public void m18937c(int i) {
         byte[] bArr = this.f21329b;
         if (bArr == null) {
             this.f21329b = new byte[i];
@@ -233,21 +233,21 @@ public final class C6810a {
         }
     }
 
-    public boolean m18935d() {
-        return m18934e() == 1;
+    public boolean m18936d() {
+        return m18935e() == 1;
     }
 
-    public byte m18934e() {
-        m18937b(1);
+    public byte m18935e() {
+        m18938b(1);
         byte[] bArr = this.f21329b;
         int i = this.f21328a;
         this.f21328a = i + 1;
         return bArr[i];
     }
 
-    public byte[] m18932g() {
-        int s = m18920s();
-        m18937b(s);
+    public byte[] m18933g() {
+        int s = m18921s();
+        m18938b(s);
         byte[] bArr = new byte[s];
         for (int i = 0; i < s; i++) {
             byte[] bArr2 = this.f21329b;
@@ -258,16 +258,16 @@ public final class C6810a {
         return bArr;
     }
 
-    public double m18930i() {
-        return Double.longBitsToDouble(m18924o());
+    public double m18931i() {
+        return Double.longBitsToDouble(m18925o());
     }
 
-    public float m18928k() {
-        return Float.intBitsToFloat(m18926m());
+    public float m18929k() {
+        return Float.intBitsToFloat(m18927m());
     }
 
-    public int m18926m() {
-        m18937b(4);
+    public int m18927m() {
+        m18938b(4);
         byte[] bArr = this.f21329b;
         int i = this.f21328a;
         int i2 = i + 1;
@@ -282,8 +282,8 @@ public final class C6810a {
         return (bArr[i5] & 255) | i6;
     }
 
-    public long m18924o() {
-        m18937b(8);
+    public long m18925o() {
+        m18938b(8);
         long j = 0;
         for (int i = 0; i < 8; i++) {
             byte[] bArr = this.f21329b;
@@ -294,11 +294,11 @@ public final class C6810a {
         return j;
     }
 
-    public String m18922q() {
-        return new String(m18932g(), C5070i.f17083a);
+    public String m18923q() {
+        return new String(m18933g(), C5070i.f17083a);
     }
 
-    public int m18920s() {
+    public int m18921s() {
         int i = 0;
         int i2 = 0;
         do {
@@ -315,21 +315,21 @@ public final class C6810a {
         throw new RuntimeException("varint read failed");
     }
 
-    public void m18918u(byte[] bArr) {
+    public void m18919u(byte[] bArr) {
         this.f21328a = 0;
         this.f21329b = bArr;
     }
 
-    public void m18917v() {
+    public void m18918v() {
         this.f21328a = 0;
     }
 
-    public byte[] m18914y() {
-        m18913z();
+    public byte[] m18915y() {
+        m18914z();
         return this.f21329b;
     }
 
-    public void m18913z() {
+    public void m18914z() {
         int i = this.f21328a;
         byte[] bArr = this.f21329b;
         if (i != bArr.length) {

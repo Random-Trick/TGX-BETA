@@ -13,17 +13,17 @@ public final class C7259g extends AbstractC8999d {
     }
 
     @Override
-    public final void mo10756a(Context context, Intent intent) {
+    public final void mo10755a(Context context, Intent intent) {
         if (!context.getPackageName().equals(intent.getStringExtra("package.name"))) {
-            this.f28895a.m11818a("ListenerRegistryBroadcastReceiver received broadcast for third party app: %s", intent.getStringExtra("package.name"));
+            this.f28898a.m11817a("ListenerRegistryBroadcastReceiver received broadcast for third party app: %s", intent.getStringExtra("package.name"));
             return;
         }
-        this.f28895a.m11818a("List of extras in received intent:", new Object[0]);
+        this.f28898a.m11817a("List of extras in received intent:", new Object[0]);
         for (String str : intent.getExtras().keySet()) {
-            this.f28895a.m11818a("Key: %s; value: %s", str, intent.getExtras().get(str));
+            this.f28898a.m11817a("Key: %s; value: %s", str, intent.getExtras().get(str));
         }
-        InstallState f = InstallState.m30293f(intent, this.f28895a);
-        this.f28895a.m11818a("ListenerRegistryBroadcastReceiver.onReceive: %s", f);
-        m10751f(f);
+        InstallState f = InstallState.m30295f(intent, this.f28898a);
+        this.f28898a.m11817a("ListenerRegistryBroadcastReceiver.onReceive: %s", f);
+        m10750f(f);
     }
 }

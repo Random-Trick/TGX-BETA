@@ -17,9 +17,9 @@ public final class C3741m7 implements AbstractC3662e7 {
 
     public C3741m7(Context context, AbstractC3857z6 z6Var) {
         this.f12690c = z6Var;
-        C11229a aVar = C11229a.f35947g;
-        C1165r.m38247f(context);
-        final AbstractC10357g g = C1165r.m38250c().m38246g(aVar);
+        C11229a aVar = C11229a.f35950g;
+        C1165r.m38250f(context);
+        final AbstractC10357g g = C1165r.m38253c().m38249g(aVar);
         if (aVar.mo1185a().contains(C10352b.m5368b("json"))) {
             this.f12688a = new C3896w(new AbstractC6794b() {
                 @Override
@@ -36,20 +36,20 @@ public final class C3741m7 implements AbstractC3662e7 {
         });
     }
 
-    public static AbstractC10353c<byte[]> m29806b(AbstractC3857z6 z6Var, C3682g7 g7Var) {
-        return AbstractC10353c.m5363e(g7Var.m29828b(z6Var.mo29728a(), false));
+    public static AbstractC10353c<byte[]> m29808b(AbstractC3857z6 z6Var, C3682g7 g7Var) {
+        return AbstractC10353c.m5363e(g7Var.m29830b(z6Var.mo29730a(), false));
     }
 
     @Override
-    public final void mo29807a(C3682g7 g7Var) {
-        if (this.f12690c.mo29728a() == 0) {
+    public final void mo29809a(C3682g7 g7Var) {
+        if (this.f12690c.mo29730a() == 0) {
             AbstractC6794b<AbstractC10356f<byte[]>> bVar = this.f12688a;
             if (bVar != null) {
-                bVar.get().mo5362a(m29806b(this.f12690c, g7Var));
+                bVar.get().mo5362a(m29808b(this.f12690c, g7Var));
                 return;
             }
             return;
         }
-        this.f12689b.get().mo5362a(m29806b(this.f12690c, g7Var));
+        this.f12689b.get().mo5362a(m29808b(this.f12690c, g7Var));
     }
 }

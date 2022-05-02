@@ -22,7 +22,7 @@ import org.thunderdog.challegram.Log;
 public class JNIUtilities {
     public static String[] getCarrierInfo() {
         String str;
-        TelephonyManager telephonyManager = (TelephonyManager) C1379j0.m37315n().getSystemService("phone");
+        TelephonyManager telephonyManager = (TelephonyManager) C1379j0.m37318n().getSystemService("phone");
         if (Build.VERSION.SDK_INT >= 24) {
             telephonyManager = telephonyManager.createForSubscriptionId(SubscriptionManager.getDefaultDataSubscriptionId());
         }
@@ -43,7 +43,7 @@ public class JNIUtilities {
     @TargetApi(23)
     public static String getCurrentNetworkInterfaceName() {
         LinkProperties linkProperties;
-        ConnectivityManager connectivityManager = (ConnectivityManager) C1379j0.m37315n().getSystemService("connectivity");
+        ConnectivityManager connectivityManager = (ConnectivityManager) C1379j0.m37318n().getSystemService("connectivity");
         Network activeNetwork = connectivityManager.getActiveNetwork();
         if (activeNetwork == null || (linkProperties = connectivityManager.getLinkProperties(activeNetwork)) == null) {
             return null;
@@ -53,7 +53,7 @@ public class JNIUtilities {
 
     public static String[] getLocalNetworkAddressesAndInterfaceName() {
         LinkProperties linkProperties;
-        ConnectivityManager connectivityManager = (ConnectivityManager) C1379j0.m37315n().getSystemService("connectivity");
+        ConnectivityManager connectivityManager = (ConnectivityManager) C1379j0.m37318n().getSystemService("connectivity");
         String str = null;
         if (Build.VERSION.SDK_INT >= 23) {
             Network activeNetwork = connectivityManager.getActiveNetwork();
@@ -106,7 +106,7 @@ public class JNIUtilities {
 
     public static int[] getWifiInfo() {
         try {
-            WifiInfo connectionInfo = ((WifiManager) C1379j0.m37315n().getApplicationContext().getSystemService("wifi")).getConnectionInfo();
+            WifiInfo connectionInfo = ((WifiManager) C1379j0.m37318n().getApplicationContext().getSystemService("wifi")).getConnectionInfo();
             return new int[]{connectionInfo.getRssi(), connectionInfo.getLinkSpeed()};
         } catch (Exception unused) {
             return null;

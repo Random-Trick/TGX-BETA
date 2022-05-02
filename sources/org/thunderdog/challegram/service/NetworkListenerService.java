@@ -13,7 +13,7 @@ public class NetworkListenerService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int i, int i2) {
-        C1379j0.m37356L(getApplicationContext());
+        C1379j0.m37359L(getApplicationContext());
         return 1;
     }
 }

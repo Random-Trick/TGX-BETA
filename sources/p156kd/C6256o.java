@@ -9,24 +9,24 @@ public class C6256o extends C6246h {
     }
 
     @Override
-    public byte mo20777C() {
+    public byte mo20778C() {
         return (byte) 5;
     }
 
-    public String m20826D0() {
+    public String m20827D0() {
         return this.f19739a0;
     }
 
     @Override
-    public String mo20768d() {
-        if (m20886z() == 0) {
+    public String mo20769d() {
+        if (m20887z() == 0) {
             return this.f19739a0;
         }
-        return this.f19739a0 + "?" + m20886z();
+        return this.f19739a0 + "?" + m20887z();
     }
 
     @Override
-    public int mo20825s() {
+    public int mo20826s() {
         return this.f19739a0.hashCode();
     }
 }

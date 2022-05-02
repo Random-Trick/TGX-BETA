@@ -6,5 +6,5 @@ public interface AbstractC5327a {
         String toString();
     }
 
-    Object mo20383a();
+    Object mo20384a();
 }

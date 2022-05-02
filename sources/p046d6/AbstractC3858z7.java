@@ -10,14 +10,14 @@ import javax.annotation.CheckForNull;
 public abstract class AbstractC3858z7<E> extends AbstractC3822v7<E> implements List<E>, RandomAccess {
     public static final AbstractC3643c8<Object> f13109b = new C3840x7(C3623a8.f12350N, 0);
 
-    public static <E> AbstractC3858z7<E> m29722t(Object[] objArr, int i) {
+    public static <E> AbstractC3858z7<E> m29724t(Object[] objArr, int i) {
         if (i == 0) {
             return (AbstractC3858z7<E>) C3623a8.f12350N;
         }
         return new C3623a8(objArr, i);
     }
 
-    public static <E> AbstractC3858z7<E> m29721u(E e) {
+    public static <E> AbstractC3858z7<E> m29723u(E e) {
         Object[] objArr = {e};
         for (int i = 0; i <= 0; i++) {
             if (objArr[i] == null) {
@@ -27,7 +27,7 @@ public abstract class AbstractC3858z7<E> extends AbstractC3822v7<E> implements L
                 throw new NullPointerException(sb2.toString());
             }
         }
-        return m29722t(objArr, 1);
+        return m29724t(objArr, 1);
     }
 
     @Override
@@ -58,7 +58,7 @@ public abstract class AbstractC3858z7<E> extends AbstractC3822v7<E> implements L
             if (size == list.size()) {
                 if (list instanceof RandomAccess) {
                     for (int i = 0; i < size; i++) {
-                        if (C3625b0.m29850a(get(i), list.get(i))) {
+                        if (C3625b0.m29852a(get(i), list.get(i))) {
                         }
                     }
                     return true;
@@ -68,7 +68,7 @@ public abstract class AbstractC3858z7<E> extends AbstractC3822v7<E> implements L
                 while (true) {
                     if (it.hasNext()) {
                         if (it2.hasNext()) {
-                            if (!C3625b0.m29850a(it.next(), it2.next())) {
+                            if (!C3625b0.m29852a(it.next(), it2.next())) {
                                 break;
                             }
                         } else {
@@ -84,7 +84,7 @@ public abstract class AbstractC3858z7<E> extends AbstractC3822v7<E> implements L
     }
 
     @Override
-    public int mo29724h(Object[] objArr, int i) {
+    public int mo29726h(Object[] objArr, int i) {
         int size = size();
         for (int i2 = 0; i2 < size; i2++) {
             objArr[i2] = get(i2);
@@ -146,7 +146,7 @@ public abstract class AbstractC3858z7<E> extends AbstractC3822v7<E> implements L
     }
 
     public AbstractC3858z7<E> subList(int i, int i2) {
-        C3669f4.m29837c(i, i2, size());
+        C3669f4.m29839c(i, i2, size());
         int i3 = i2 - i;
         if (i3 == size()) {
             return this;
@@ -164,7 +164,7 @@ public abstract class AbstractC3858z7<E> extends AbstractC3822v7<E> implements L
     }
 
     public final AbstractC3643c8<E> listIterator(int i) {
-        C3669f4.m29838b(i, size(), "index");
+        C3669f4.m29840b(i, size(), "index");
         return isEmpty() ? (AbstractC3643c8<E>) f13109b : new C3840x7(this, i);
     }
 }

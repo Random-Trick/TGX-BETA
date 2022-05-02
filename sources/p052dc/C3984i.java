@@ -17,14 +17,14 @@ public final class C3984i implements AbstractC3989k {
 
     public static final class C3985a implements C3987j.AbstractC3988a {
         @Override
-        public boolean mo29421a(SSLSocket sSLSocket) {
-            C8298k.m12934e(sSLSocket, "sslSocket");
-            return C2073d.f7307f.m35705c() && Conscrypt.isConscrypt(sSLSocket);
+        public boolean mo29423a(SSLSocket sSLSocket) {
+            C8298k.m12933e(sSLSocket, "sslSocket");
+            return C2073d.f7307f.m35708c() && Conscrypt.isConscrypt(sSLSocket);
         }
 
         @Override
-        public AbstractC3989k mo29420b(SSLSocket sSLSocket) {
-            C8298k.m12934e(sSLSocket, "sslSocket");
+        public AbstractC3989k mo29422b(SSLSocket sSLSocket) {
+            C8298k.m12933e(sSLSocket, "sslSocket");
             return new C3984i();
         }
     }
@@ -33,7 +33,7 @@ public final class C3984i implements AbstractC3989k {
         public C3986b() {
         }
 
-        public final C3987j.AbstractC3988a m29423a() {
+        public final C3987j.AbstractC3988a m29425a() {
             return C3984i.f13362a;
         }
 
@@ -43,32 +43,32 @@ public final class C3984i implements AbstractC3989k {
     }
 
     @Override
-    public boolean mo29419a(SSLSocket sSLSocket) {
-        C8298k.m12934e(sSLSocket, "sslSocket");
+    public boolean mo29421a(SSLSocket sSLSocket) {
+        C8298k.m12933e(sSLSocket, "sslSocket");
         return Conscrypt.isConscrypt(sSLSocket);
     }
 
     @Override
-    public boolean mo29418b() {
-        return C2073d.f7307f.m35705c();
+    public boolean mo29420b() {
+        return C2073d.f7307f.m35708c();
     }
 
     @Override
-    public String mo29417c(SSLSocket sSLSocket) {
-        C8298k.m12934e(sSLSocket, "sslSocket");
-        if (mo29419a(sSLSocket)) {
+    public String mo29419c(SSLSocket sSLSocket) {
+        C8298k.m12933e(sSLSocket, "sslSocket");
+        if (mo29421a(sSLSocket)) {
             return Conscrypt.getApplicationProtocol(sSLSocket);
         }
         return null;
     }
 
     @Override
-    public void mo29416d(SSLSocket sSLSocket, String str, List<? extends EnumC9064a0> list) {
-        C8298k.m12934e(sSLSocket, "sslSocket");
-        C8298k.m12934e(list, "protocols");
-        if (mo29419a(sSLSocket)) {
+    public void mo29418d(SSLSocket sSLSocket, String str, List<? extends EnumC9064a0> list) {
+        C8298k.m12933e(sSLSocket, "sslSocket");
+        C8298k.m12933e(list, "protocols");
+        if (mo29421a(sSLSocket)) {
             Conscrypt.setUseSessionTickets(sSLSocket, true);
-            Object[] array = C2083h.f7326c.m35679b(list).toArray(new String[0]);
+            Object[] array = C2083h.f7326c.m35682b(list).toArray(new String[0]);
             Objects.requireNonNull(array, "null cannot be cast to non-null type kotlin.Array<T>");
             Conscrypt.setApplicationProtocols(sSLSocket, (String[]) array);
         }

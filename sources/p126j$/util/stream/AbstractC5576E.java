@@ -6,19 +6,19 @@ public abstract class AbstractC5576E extends AbstractC5581F {
     }
 
     @Override
-    final boolean mo22199D0() {
+    final boolean mo22200D0() {
         return false;
     }
 
     @Override
     public AbstractC5591H parallel() {
-        m22310F0();
+        m22311F0();
         return this;
     }
 
     @Override
     public AbstractC5591H sequential() {
-        m22309G0();
+        m22310G0();
         return this;
     }
 }

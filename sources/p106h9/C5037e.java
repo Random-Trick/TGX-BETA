@@ -10,13 +10,13 @@ public final class C5037e {
         this.f17023a = eGLSurface;
     }
 
-    public final EGLSurface m24223a() {
+    public final EGLSurface m24224a() {
         return this.f17023a;
     }
 
     public boolean equals(Object obj) {
         if (this != obj) {
-            return (obj instanceof C5037e) && C8298k.m12937b(this.f17023a, ((C5037e) obj).f17023a);
+            return (obj instanceof C5037e) && C8298k.m12936b(this.f17023a, ((C5037e) obj).f17023a);
         }
         return true;
     }

@@ -18,17 +18,17 @@ public class C5091l extends ReplacementSpan implements AbstractC5090k {
         this.f17127b = iVar;
     }
 
-    public static AbstractC5090k m23965d(CharSequence charSequence, C5088i iVar) {
+    public static AbstractC5090k m23966d(CharSequence charSequence, C5088i iVar) {
         return new C5091l(charSequence, iVar);
     }
 
     @Override
-    public CharSequence mo23968a() {
+    public CharSequence mo23969a() {
         return this.f17126a;
     }
 
     @Override
-    public int mo23967b(Paint paint) {
+    public int mo23968b(Paint paint) {
         if (this.f17124M == -1) {
             CharSequence charSequence = this.f17126a;
             getSize(paint, charSequence, 0, charSequence.length(), null);
@@ -37,19 +37,19 @@ public class C5091l extends ReplacementSpan implements AbstractC5090k {
     }
 
     @Override
-    public boolean mo23966c() {
+    public boolean mo23967c() {
         return this.f17125N;
     }
 
     @Override
     public void draw(Canvas canvas, CharSequence charSequence, int i, int i2, float f, int i3, int i4, int i5, Paint paint) {
         if (this.f17124M == -1) {
-            mo23967b(paint);
+            mo23968b(paint);
         }
         float f2 = f + (this.f17124M / 2.0f);
         float f3 = i3 + ((i5 - i3) / 2.0f);
-        Rect Z = C1410y.m37052Z();
-        int v = C5078d.m23986z().m23990v();
+        Rect Z = C1410y.m37055Z();
+        int v = C5078d.m23987z().m23991v();
         int i6 = this.f17124M;
         int i7 = v / 2;
         int i8 = ((int) (f2 - (i6 / 2.0f))) + i7;
@@ -59,7 +59,7 @@ public class C5091l extends ReplacementSpan implements AbstractC5090k {
         int i10 = v % 2;
         Z.right = ((i8 + i6) - i7) - i10;
         Z.bottom = ((i9 + i6) - i7) - i10;
-        this.f17125N = !C5078d.m23986z().m24001k(canvas, this.f17127b, Z);
+        this.f17125N = !C5078d.m23987z().m24002k(canvas, this.f17127b, Z);
     }
 
     @Override

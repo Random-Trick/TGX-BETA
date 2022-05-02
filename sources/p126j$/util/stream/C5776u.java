@@ -13,20 +13,20 @@ public final class C5776u implements AbstractC5521c {
     }
 
     @Override
-    public final Object mo22172u(Object obj, Object obj2) {
+    public final Object mo22173u(Object obj, Object obj2) {
         switch (this.f18482a) {
             case 0:
-                this.f18483b.mo22179p(obj, obj2);
+                this.f18483b.mo22180p(obj, obj2);
                 return obj;
             case 1:
                 BiConsumer biConsumer = this.f18483b;
                 int i = AbstractC5722j0.f18393t;
-                biConsumer.mo22179p(obj, obj2);
+                biConsumer.mo22180p(obj, obj2);
                 return obj;
             default:
                 BiConsumer biConsumer2 = this.f18483b;
                 int i2 = AbstractC5767s0.f18463t;
-                biConsumer2.mo22179p(obj, obj2);
+                biConsumer2.mo22180p(obj, obj2);
                 return obj;
         }
     }

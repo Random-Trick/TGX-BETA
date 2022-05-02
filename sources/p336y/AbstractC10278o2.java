@@ -3,7 +3,7 @@ package p336y;
 import android.content.Context;
 
 public interface AbstractC10278o2 {
-    public static final AbstractC10278o2 f33104a = new C10279a();
+    public static final AbstractC10278o2 f33107a = new C10279a();
 
     public class C10279a implements AbstractC10278o2 {
         @Override

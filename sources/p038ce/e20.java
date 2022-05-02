@@ -44,24 +44,24 @@ public class e20 extends AbstractC9323v4<C2320a> implements C6957m1.AbstractC696
         C2320a x9 = m9131x9();
         int i = x9.f7989a;
         if (i == 0) {
-            bVar = C8112b.m13525W0(mo4347s(), this.f30167b, x9.f7990b, null);
-            if (bVar.m13508f0()) {
-                bVar.m13557G0(x9.f7993e);
+            bVar = C8112b.m13524W0(mo4347s(), this.f30170b, x9.f7990b, null);
+            if (bVar.m13507f0()) {
+                bVar.m13556G0(x9.f7993e);
             } else {
-                bVar.m13557G0(x9.f7992d);
+                bVar.m13556G0(x9.f7992d);
             }
         } else if (i == 1) {
-            if (C4779t2.m25598T2(x9.f7991c.animation)) {
+            if (C4779t2.m25599T2(x9.f7991c.animation)) {
                 this.f7988n0.m15958F0();
             }
-            bVar = C8112b.m13529U0(mo4347s(), this.f30167b, x9.f7991c, null);
+            bVar = C8112b.m13528U0(mo4347s(), this.f30170b, x9.f7991c, null);
         } else if (i == 2) {
-            bVar = new C8112b(mo4347s(), this.f30167b, 0L, x9.f7994f);
+            bVar = new C8112b(mo4347s(), this.f30170b, 0L, x9.f7994f);
         } else if (i == 3) {
-            bVar = new C8112b(mo4347s(), this.f30167b, 0L, x9.f7995g);
+            bVar = new C8112b(mo4347s(), this.f30170b, 0L, x9.f7995g);
         }
         if (bVar != null) {
-            bVar.m13487q(true);
+            bVar.m13486q(true);
             this.f7988n0.setMedia(bVar);
             m9204n9();
             return this.f7988n0;

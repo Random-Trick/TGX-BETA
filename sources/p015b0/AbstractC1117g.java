@@ -61,18 +61,18 @@ public abstract class AbstractC1117g<V> implements AbstractFutureC1291a<V> {
         }
     }
 
-    public static <V> AbstractFutureC1291a<V> m38342b() {
+    public static <V> AbstractFutureC1291a<V> m38345b() {
         return C1120c.f4317b;
     }
 
     @Override
-    public void mo13372a(Runnable runnable, Executor executor) {
-        C1132h.m38322e(runnable);
-        C1132h.m38322e(executor);
+    public void mo13371a(Runnable runnable, Executor executor) {
+        C1132h.m38325e(runnable);
+        C1132h.m38325e(executor);
         try {
             executor.execute(runnable);
         } catch (RuntimeException e) {
-            C0662u1.m40650d("ImmediateFuture", "Experienced RuntimeException while attempting to notify " + runnable + " on Executor " + executor, e);
+            C0662u1.m40653d("ImmediateFuture", "Experienced RuntimeException while attempting to notify " + runnable + " on Executor " + executor, e);
         }
     }
 
@@ -86,7 +86,7 @@ public abstract class AbstractC1117g<V> implements AbstractFutureC1291a<V> {
 
     @Override
     public V get(long j, TimeUnit timeUnit) {
-        C1132h.m38322e(timeUnit);
+        C1132h.m38325e(timeUnit);
         return get();
     }
 

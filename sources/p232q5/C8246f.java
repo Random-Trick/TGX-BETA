@@ -6,12 +6,12 @@ import androidx.annotation.RecentlyNonNull;
 import p163l5.C6378r;
 
 public final class C8246f {
-    public static final String[] f26694a = {"android.", "com.android.", "dalvik.", "java.", "javax."};
+    public static final String[] f26697a = {"android.", "com.android.", "dalvik.", "java.", "javax."};
 
-    public static boolean m13052a(@RecentlyNonNull Context context, @RecentlyNonNull Throwable th) {
+    public static boolean m13051a(@RecentlyNonNull Context context, @RecentlyNonNull Throwable th) {
         try {
-            C6378r.m20506k(context);
-            C6378r.m20506k(th);
+            C6378r.m20507k(context);
+            C6378r.m20507k(th);
             return false;
         } catch (Exception e) {
             Log.e("CrashUtils", "Error adding exception to DropBox!", e);

@@ -17,99 +17,99 @@ public final class C1602y {
     public long f5873h = -9223372036854775807L;
     public final C1189b0 f5867b = new C1189b0();
 
-    public static boolean m36307a(byte[] bArr) {
+    public static boolean m36310a(byte[] bArr) {
         return (bArr[0] & 196) == 68 && (bArr[2] & 4) == 4 && (bArr[4] & 4) == 4 && (bArr[5] & 1) == 1 && (bArr[8] & 3) == 3;
     }
 
-    public static long m36296l(C1189b0 b0Var) {
-        int e = b0Var.m38138e();
-        if (b0Var.m38142a() < 9) {
+    public static long m36299l(C1189b0 b0Var) {
+        int e = b0Var.m38141e();
+        if (b0Var.m38145a() < 9) {
             return -9223372036854775807L;
         }
         byte[] bArr = new byte[9];
-        b0Var.m38133j(bArr, 0, 9);
-        b0Var.m38144P(e);
-        if (!m36307a(bArr)) {
+        b0Var.m38136j(bArr, 0, 9);
+        b0Var.m38147P(e);
+        if (!m36310a(bArr)) {
             return -9223372036854775807L;
         }
-        return m36295m(bArr);
+        return m36298m(bArr);
     }
 
-    public static long m36295m(byte[] bArr) {
+    public static long m36298m(byte[] bArr) {
         return (((bArr[0] & 56) >> 3) << 30) | ((bArr[0] & 3) << 28) | ((bArr[1] & 255) << 20) | (((bArr[2] & 248) >> 3) << 15) | ((bArr[2] & 3) << 13) | ((bArr[3] & 255) << 5) | ((bArr[4] & 248) >> 3);
     }
 
-    public final int m36306b(AbstractC8959g gVar) {
-        this.f5867b.m38147M(C1216l0.f4531f);
+    public final int m36309b(AbstractC8959g gVar) {
+        this.f5867b.m38150M(C1216l0.f4531f);
         this.f5868c = true;
-        gVar.mo10809m();
+        gVar.mo10808m();
         return 0;
     }
 
-    public long m36305c() {
+    public long m36308c() {
         return this.f5873h;
     }
 
-    public C1205i0 m36304d() {
+    public C1205i0 m36307d() {
         return this.f5866a;
     }
 
-    public boolean m36303e() {
+    public boolean m36306e() {
         return this.f5868c;
     }
 
-    public final int m36302f(byte[] bArr, int i) {
+    public final int m36305f(byte[] bArr, int i) {
         return (bArr[i + 3] & 255) | ((bArr[i] & 255) << 24) | ((bArr[i + 1] & 255) << 16) | ((bArr[i + 2] & 255) << 8);
     }
 
-    public int m36301g(AbstractC8959g gVar, C8971q qVar) {
+    public int m36304g(AbstractC8959g gVar, C8971q qVar) {
         if (!this.f5870e) {
-            return m36298j(gVar, qVar);
+            return m36301j(gVar, qVar);
         }
         if (this.f5872g == -9223372036854775807L) {
-            return m36306b(gVar);
+            return m36309b(gVar);
         }
         if (!this.f5869d) {
-            return m36300h(gVar, qVar);
+            return m36303h(gVar, qVar);
         }
         long j = this.f5871f;
         if (j == -9223372036854775807L) {
-            return m36306b(gVar);
+            return m36309b(gVar);
         }
-        long b = this.f5866a.m38052b(this.f5872g) - this.f5866a.m38052b(j);
+        long b = this.f5866a.m38055b(this.f5872g) - this.f5866a.m38055b(j);
         this.f5873h = b;
         if (b < 0) {
             StringBuilder sb2 = new StringBuilder(65);
             sb2.append("Invalid duration: ");
             sb2.append(b);
             sb2.append(". Using TIME_UNSET instead.");
-            C1230s.m37881i("PsDurationReader", sb2.toString());
+            C1230s.m37884i("PsDurationReader", sb2.toString());
             this.f5873h = -9223372036854775807L;
         }
-        return m36306b(gVar);
+        return m36309b(gVar);
     }
 
-    public final int m36300h(AbstractC8959g gVar, C8971q qVar) {
+    public final int m36303h(AbstractC8959g gVar, C8971q qVar) {
         int min = (int) Math.min(20000L, gVar.mo6046a());
         long j = 0;
         if (gVar.mo6043r() != j) {
-            qVar.f28857a = j;
+            qVar.f28860a = j;
             return 1;
         }
-        this.f5867b.m38148L(min);
-        gVar.mo10809m();
-        gVar.mo10806q(this.f5867b.m38139d(), 0, min);
-        this.f5871f = m36299i(this.f5867b);
+        this.f5867b.m38151L(min);
+        gVar.mo10808m();
+        gVar.mo10805q(this.f5867b.m38142d(), 0, min);
+        this.f5871f = m36302i(this.f5867b);
         this.f5869d = true;
         return 0;
     }
 
-    public final long m36299i(C1189b0 b0Var) {
-        int f = b0Var.m38137f();
-        for (int e = b0Var.m38138e(); e < f - 3; e++) {
-            if (m36302f(b0Var.m38139d(), e) == 442) {
-                b0Var.m38144P(e + 4);
-                long l = m36296l(b0Var);
+    public final long m36302i(C1189b0 b0Var) {
+        int f = b0Var.m38140f();
+        for (int e = b0Var.m38141e(); e < f - 3; e++) {
+            if (m36305f(b0Var.m38142d(), e) == 442) {
+                b0Var.m38147P(e + 4);
+                long l = m36299l(b0Var);
                 if (l != -9223372036854775807L) {
                     return l;
                 }
@@ -118,28 +118,28 @@ public final class C1602y {
         return -9223372036854775807L;
     }
 
-    public final int m36298j(AbstractC8959g gVar, C8971q qVar) {
+    public final int m36301j(AbstractC8959g gVar, C8971q qVar) {
         long a = gVar.mo6046a();
         int min = (int) Math.min(20000L, a);
         long j = a - min;
         if (gVar.mo6043r() != j) {
-            qVar.f28857a = j;
+            qVar.f28860a = j;
             return 1;
         }
-        this.f5867b.m38148L(min);
-        gVar.mo10809m();
-        gVar.mo10806q(this.f5867b.m38139d(), 0, min);
-        this.f5872g = m36297k(this.f5867b);
+        this.f5867b.m38151L(min);
+        gVar.mo10808m();
+        gVar.mo10805q(this.f5867b.m38142d(), 0, min);
+        this.f5872g = m36300k(this.f5867b);
         this.f5870e = true;
         return 0;
     }
 
-    public final long m36297k(C1189b0 b0Var) {
-        int e = b0Var.m38138e();
-        for (int f = b0Var.m38137f() - 4; f >= e; f--) {
-            if (m36302f(b0Var.m38139d(), f) == 442) {
-                b0Var.m38144P(f + 4);
-                long l = m36296l(b0Var);
+    public final long m36300k(C1189b0 b0Var) {
+        int e = b0Var.m38141e();
+        for (int f = b0Var.m38140f() - 4; f >= e; f--) {
+            if (m36305f(b0Var.m38142d(), f) == 442) {
+                b0Var.m38147P(f + 4);
+                long l = m36299l(b0Var);
                 if (l != -9223372036854775807L) {
                     return l;
                 }

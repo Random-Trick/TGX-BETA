@@ -6,8 +6,8 @@ import java.io.InputStream;
 import java.util.Objects;
 
 public class C8279c extends FilterInputStream {
-    public int f26757a = -1;
-    public int f26758b = -1;
+    public int f26760a = -1;
+    public int f26761b = -1;
 
     public C8279c(InputStream inputStream) {
         super(inputStream);
@@ -21,13 +21,13 @@ public class C8279c extends FilterInputStream {
     @Override
     public int read() {
         int read = super.read();
-        if (read == 3 && this.f26757a == 0 && this.f26758b == 0) {
-            this.f26757a = -1;
-            this.f26758b = -1;
+        if (read == 3 && this.f26760a == 0 && this.f26761b == 0) {
+            this.f26760a = -1;
+            this.f26761b = -1;
             read = super.read();
         }
-        this.f26757a = this.f26758b;
-        this.f26758b = read;
+        this.f26760a = this.f26761b;
+        this.f26761b = read;
         return read;
     }
 

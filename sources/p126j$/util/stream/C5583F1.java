@@ -23,7 +23,7 @@ public class C5583F1 extends AbstractC5679a2 {
     }
 
     @Override
-    public AbstractC5670Y1 mo22320b() {
+    public AbstractC5670Y1 mo22321b() {
         switch (this.f18137b) {
             case 0:
                 return new C5588G1((AbstractC5542x) this.f18139d, (AbstractC5540v) this.f18140e, (AbstractC5521c) this.f18138c);

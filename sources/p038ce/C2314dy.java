@@ -32,14 +32,14 @@ public class C2314dy extends AbstractC9376x4<View$OnClickListenerC3217vt> implem
     }
 
     @Override
-    public void mo31122K5(ArrayList<C4817v6> arrayList) {
+    public void mo31124K5(ArrayList<C4817v6> arrayList) {
         if (m9139w9() != null) {
-            m9139w9().m31153bg(null);
+            m9139w9().m31155bg(null);
         }
-        m35102yg(arrayList);
+        m35105yg(arrayList);
         AbstractC9323v4<?> ag = m8860ag(R.id.controller_stickers);
         if (ag != null) {
-            ((s20) ag).m32093Kh(this.f7971x0, null);
+            ((s20) ag).m32096Kh(this.f7971x0, null);
         }
     }
 
@@ -50,21 +50,21 @@ public class C2314dy extends AbstractC9376x4<View$OnClickListenerC3217vt> implem
 
     @Override
     public CharSequence mo9313X9() {
-        return C4403w.m27869i1(R.string.Stickers);
+        return C4403w.m27871i1(R.string.Stickers);
     }
 
     @Override
     public void mo417Z8() {
         super.mo417Z8();
         if (m9139w9() != null) {
-            m9139w9().m31153bg(null);
+            m9139w9().m31155bg(null);
         }
     }
 
     @Override
     public boolean mo9270dc() {
         AbstractC9323v4<?> ag = m8860ag(R.id.controller_stickersTrending);
-        return ag == null || !((h30) ag).m34475if();
+        return ag == null || !((h30) ag).m34478if();
     }
 
     @Override
@@ -74,7 +74,7 @@ public class C2314dy extends AbstractC9376x4<View$OnClickListenerC3217vt> implem
 
     @Override
     public String[] mo8852hg() {
-        return new String[]{C4403w.m27869i1(R.string.Trending).toUpperCase(), C4403w.m27869i1(R.string.Installed).toUpperCase(), C4403w.m27869i1(R.string.Archived).toUpperCase(), C4403w.m27869i1(R.string.Masks).toUpperCase()};
+        return new String[]{C4403w.m27871i1(R.string.Trending).toUpperCase(), C4403w.m27871i1(R.string.Installed).toUpperCase(), C4403w.m27871i1(R.string.Archived).toUpperCase(), C4403w.m27871i1(R.string.Masks).toUpperCase()};
     }
 
     @Override
@@ -85,19 +85,19 @@ public class C2314dy extends AbstractC9376x4<View$OnClickListenerC3217vt> implem
     @Override
     public AbstractC9323v4<?> mo8846mg(Context context, int i) {
         if (i == 0) {
-            return new h30(this.f30165a, this.f30167b);
+            return new h30(this.f30168a, this.f30170b);
         }
         if (i == 1) {
-            s20 s20Var = new s20(this.f30165a, this.f30167b);
-            s20Var.m32097Ih(new s20.C3030e(0, true).m32045a(this.f7971x0));
+            s20 s20Var = new s20(this.f30168a, this.f30170b);
+            s20Var.m32100Ih(new s20.C3030e(0, true).m32048a(this.f7971x0));
             return s20Var;
         } else if (i == 2) {
-            s20 s20Var2 = new s20(this.f30165a, this.f30167b);
-            s20Var2.m32097Ih(new s20.C3030e(1, false));
+            s20 s20Var2 = new s20(this.f30168a, this.f30170b);
+            s20Var2.m32100Ih(new s20.C3030e(1, false));
             return s20Var2;
         } else if (i == 3) {
-            s20 s20Var3 = new s20(this.f30165a, this.f30167b);
-            s20Var3.m32097Ih(new s20.C3030e(2, false));
+            s20 s20Var3 = new s20(this.f30168a, this.f30170b);
+            s20Var3.m32100Ih(new s20.C3030e(2, false));
             return s20Var3;
         } else {
             throw new IllegalArgumentException("position == " + i);
@@ -115,27 +115,27 @@ public class C2314dy extends AbstractC9376x4<View$OnClickListenerC3217vt> implem
         super.mo9166sc();
         AbstractC9323v4<?> ag = m8860ag(R.id.controller_stickers);
         if (ag != null) {
-            ((s20) ag).m32111Bh();
+            ((s20) ag).m32114Bh();
         }
         m8848kg().setOffscreenPageLimit(mo8854gg());
     }
 
-    public void m35103xg(View$OnClickListenerC3217vt vtVar) {
+    public void m35106xg(View$OnClickListenerC3217vt vtVar) {
         super.m9476Ad(vtVar);
-        ArrayList<C4817v6> zf = vtVar.m31123zf();
+        ArrayList<C4817v6> zf = vtVar.m31125zf();
         if (zf == null) {
-            vtVar.m31153bg(this);
+            vtVar.m31155bg(this);
         } else {
-            m35102yg(zf);
+            m35105yg(zf);
         }
     }
 
-    public final void m35102yg(ArrayList<C4817v6> arrayList) {
+    public final void m35105yg(ArrayList<C4817v6> arrayList) {
         this.f7971x0 = new ArrayList<>(arrayList.size());
         Iterator<C4817v6> it = arrayList.iterator();
         while (it.hasNext()) {
             C4817v6 next = it.next();
-            next.m25163v(this.f7971x0);
+            next.m25164v(this.f7971x0);
             this.f7971x0.add(next);
         }
     }

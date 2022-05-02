@@ -4,7 +4,7 @@ import android.content.Context;
 import androidx.camera.core.AbstractC0642r;
 
 public final class C10298t implements AbstractC10304v {
-    public static final C10298t f33142b = new C10298t();
+    public static final C10298t f33145b = new C10298t();
 
     @Override
     public final AbstractC10295s mo5515a(AbstractC0642r rVar, Context context) {

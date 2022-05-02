@@ -12,14 +12,14 @@ public final class C6374q {
         public final Object f20010b;
 
         public C6375a(Object obj, C6401z0 z0Var) {
-            C6378r.m20506k(obj);
+            C6378r.m20507k(obj);
             this.f20010b = obj;
         }
 
         @RecentlyNonNull
-        public C6375a m20521a(@RecentlyNonNull String str, Object obj) {
+        public C6375a m20522a(@RecentlyNonNull String str, Object obj) {
             List<String> list = this.f20009a;
-            C6378r.m20506k(str);
+            C6378r.m20507k(str);
             String valueOf = String.valueOf(obj);
             StringBuilder sb2 = new StringBuilder(str.length() + 1 + valueOf.length());
             sb2.append(str);
@@ -46,16 +46,16 @@ public final class C6374q {
         }
     }
 
-    public static boolean m20524a(Object obj, Object obj2) {
+    public static boolean m20525a(Object obj, Object obj2) {
         return obj == obj2 || (obj != null && obj.equals(obj2));
     }
 
-    public static int m20523b(@RecentlyNonNull Object... objArr) {
+    public static int m20524b(@RecentlyNonNull Object... objArr) {
         return Arrays.hashCode(objArr);
     }
 
     @RecentlyNonNull
-    public static C6375a m20522c(@RecentlyNonNull Object obj) {
+    public static C6375a m20523c(@RecentlyNonNull Object obj) {
         return new C6375a(obj, null);
     }
 }

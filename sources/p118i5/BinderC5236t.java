@@ -11,7 +11,7 @@ public final class BinderC5236t extends AbstractBinderC5235s {
     }
 
     @Override
-    public final byte[] mo23559s() {
+    public final byte[] mo23560s() {
         return this.f17383b;
     }
 }

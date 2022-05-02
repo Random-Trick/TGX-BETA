@@ -17,20 +17,20 @@ public class C4098f {
     public static Field f13856g;
     public static boolean f13857h;
 
-    public static void m28922a(Resources resources) {
+    public static void m28924a(Resources resources) {
         int i = Build.VERSION.SDK_INT;
         if (i < 28) {
             if (i >= 24) {
-                m28919d(resources);
+                m28921d(resources);
             } else if (i >= 23) {
-                m28920c(resources);
+                m28922c(resources);
             } else if (i >= 21) {
-                m28921b(resources);
+                m28923b(resources);
             }
         }
     }
 
-    public static void m28921b(Resources resources) {
+    public static void m28923b(Resources resources) {
         if (!f13851b) {
             try {
                 Field declaredField = Resources.class.getDeclaredField("mDrawableCache");
@@ -55,7 +55,7 @@ public class C4098f {
         }
     }
 
-    public static void m28920c(Resources resources) {
+    public static void m28922c(Resources resources) {
         if (!f13851b) {
             try {
                 Field declaredField = Resources.class.getDeclaredField("mDrawableCache");
@@ -76,11 +76,11 @@ public class C4098f {
             }
         }
         if (obj != null) {
-            m28918e(obj);
+            m28920e(obj);
         }
     }
 
-    public static void m28919d(Resources resources) {
+    public static void m28921d(Resources resources) {
         Object obj;
         if (!f13857h) {
             try {
@@ -121,13 +121,13 @@ public class C4098f {
                     }
                 }
                 if (obj2 != null) {
-                    m28918e(obj2);
+                    m28920e(obj2);
                 }
             }
         }
     }
 
-    public static void m28918e(Object obj) {
+    public static void m28920e(Object obj) {
         if (!f13853d) {
             try {
                 f13852c = Class.forName("android.content.res.ThemedResourceCache");

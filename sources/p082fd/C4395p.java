@@ -22,7 +22,7 @@ public class C4395p {
     public Gesture f14567e;
 
     public interface AbstractC4396a {
-        void mo28012A5();
+        void mo28014A5();
     }
 
     public C4395p(String str) {
@@ -33,7 +33,7 @@ public class C4395p {
         gestureStore.setSequenceType(2);
     }
 
-    public static boolean m28015d(GestureStore gestureStore, Gesture gesture) {
+    public static boolean m28017d(GestureStore gestureStore, Gesture gesture) {
         ArrayList<Prediction> recognize = gestureStore.recognize(gesture);
         if (recognize.size() == 0) {
             return false;
@@ -46,30 +46,30 @@ public class C4395p {
         return d >= 2.35d;
     }
 
-    public boolean m28018a(Gesture gesture, boolean z, AbstractC4396a aVar) {
+    public boolean m28020a(Gesture gesture, boolean z, AbstractC4396a aVar) {
         if (z) {
             GestureStore gestureStore = this.f14566d;
-            return gestureStore != null && m28015d(gestureStore, gesture);
+            return gestureStore != null && m28017d(gestureStore, gesture);
         }
-        m28016c();
+        m28018c();
         if (this.f14565c) {
-            return m28015d(this.f14563a, gesture);
+            return m28017d(this.f14563a, gesture);
         }
         if (aVar != null) {
-            aVar.mo28012A5();
+            aVar.mo28014A5();
         }
         return false;
     }
 
-    public final File m28017b() {
+    public final File m28019b() {
         String str;
-        String path = C1379j0.m37315n().getFilesDir().getPath();
+        String path = C1379j0.m37318n().getFilesDir().getPath();
         if (path.charAt(path.length() - 1) == '/') {
             str = path + "int/temp.g";
         } else {
             str = path + "/int/temp.g";
         }
-        if (!C5070i.m24061i(this.f14564b)) {
+        if (!C5070i.m24062i(this.f14564b)) {
             str = str + "." + this.f14564b;
         }
         File file = new File(str);
@@ -80,9 +80,9 @@ public class C4395p {
         return null;
     }
 
-    public final void m28016c() {
+    public final void m28018c() {
         File b;
-        if (!this.f14565c && (b = m28017b()) != null && b.exists()) {
+        if (!this.f14565c && (b = m28019b()) != null && b.exists()) {
             try {
                 this.f14563a.load(new FileInputStream(b), true);
                 this.f14565c = true;
@@ -92,8 +92,8 @@ public class C4395p {
         }
     }
 
-    public boolean m28014e(Gesture gesture) {
-        File b = m28017b();
+    public boolean m28016e(Gesture gesture) {
+        File b = m28019b();
         if (b != null) {
             try {
                 if (b.exists()) {
@@ -117,7 +117,7 @@ public class C4395p {
         return false;
     }
 
-    public void m28013f(Gesture gesture) {
+    public void m28015f(Gesture gesture) {
         GestureStore gestureStore = this.f14566d;
         if (gestureStore == null) {
             GestureStore gestureStore2 = new GestureStore();

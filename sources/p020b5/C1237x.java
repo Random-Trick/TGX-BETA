@@ -80,13 +80,13 @@ public final class C1237x {
         }
     }
 
-    public static void m37855a(boolean[] zArr) {
+    public static void m37858a(boolean[] zArr) {
         zArr[0] = false;
         zArr[1] = false;
         zArr[2] = false;
     }
 
-    public static void m37854b(ByteBuffer byteBuffer) {
+    public static void m37857b(ByteBuffer byteBuffer) {
         int position = byteBuffer.position();
         int i = 0;
         int i2 = 0;
@@ -117,18 +117,18 @@ public final class C1237x {
         }
     }
 
-    public static int m37853c(byte[] bArr, int i, int i2, boolean[] zArr) {
+    public static int m37856c(byte[] bArr, int i, int i2, boolean[] zArr) {
         int i3 = i2 - i;
         boolean z = false;
-        C1186a.m38184f(i3 >= 0);
+        C1186a.m38187f(i3 >= 0);
         if (i3 == 0) {
             return i2;
         }
         if (zArr[0]) {
-            m37855a(zArr);
+            m37858a(zArr);
             return i - 3;
         } else if (i3 > 1 && zArr[1] && bArr[i] == 1) {
-            m37855a(zArr);
+            m37858a(zArr);
             return i - 2;
         } else if (i3 <= 2 || !zArr[2] || bArr[i] != 0 || bArr[i + 1] != 1) {
             int i4 = i2 - 1;
@@ -137,7 +137,7 @@ public final class C1237x {
                 if ((bArr[i5] & 254) == 0) {
                     int i6 = i5 - 2;
                     if (bArr[i6] == 0 && bArr[i5 - 1] == 0 && bArr[i5] == 1) {
-                        m37855a(zArr);
+                        m37858a(zArr);
                         return i6;
                     }
                     i5 -= 2;
@@ -152,12 +152,12 @@ public final class C1237x {
             zArr[2] = z;
             return i2;
         } else {
-            m37855a(zArr);
+            m37858a(zArr);
             return i - 1;
         }
     }
 
-    public static int m37852d(byte[] bArr, int i, int i2) {
+    public static int m37855d(byte[] bArr, int i, int i2) {
         while (i < i2 - 2) {
             if (bArr[i] == 0 && bArr[i + 1] == 0 && bArr[i + 2] == 3) {
                 return i;
@@ -167,110 +167,110 @@ public final class C1237x {
         return i2;
     }
 
-    public static int m37851e(byte[] bArr, int i) {
+    public static int m37854e(byte[] bArr, int i) {
         return (bArr[i + 3] & 126) >> 1;
     }
 
-    public static int m37850f(byte[] bArr, int i) {
+    public static int m37853f(byte[] bArr, int i) {
         return bArr[i + 3] & 31;
     }
 
-    public static boolean m37849g(String str, byte b) {
+    public static boolean m37852g(String str, byte b) {
         if (!"video/avc".equals(str) || (b & 31) != 6) {
             return "video/hevc".equals(str) && ((b & 126) >> 1) == 39;
         }
         return true;
     }
 
-    public static C1238a m37848h(byte[] bArr, int i, int i2) {
-        return m37847i(bArr, i + 2, i2);
+    public static C1238a m37851h(byte[] bArr, int i, int i2) {
+        return m37850i(bArr, i + 2, i2);
     }
 
-    public static C1238a m37847i(byte[] bArr, int i, int i2) {
+    public static C1238a m37850i(byte[] bArr, int i, int i2) {
         C1191c0 c0Var = new C1191c0(bArr, i, i2);
-        c0Var.m38099l(4);
-        int e = c0Var.m38106e(3);
-        c0Var.m38100k();
-        int e2 = c0Var.m38106e(2);
-        boolean d = c0Var.m38107d();
-        int e3 = c0Var.m38106e(5);
+        c0Var.m38102l(4);
+        int e = c0Var.m38109e(3);
+        c0Var.m38103k();
+        int e2 = c0Var.m38109e(2);
+        boolean d = c0Var.m38110d();
+        int e3 = c0Var.m38109e(5);
         int i3 = 0;
         for (int i4 = 0; i4 < 32; i4++) {
-            if (c0Var.m38107d()) {
+            if (c0Var.m38110d()) {
                 i3 |= 1 << i4;
             }
         }
         int[] iArr = new int[6];
         for (int i5 = 0; i5 < 6; i5++) {
-            iArr[i5] = c0Var.m38106e(8);
+            iArr[i5] = c0Var.m38109e(8);
         }
-        int e4 = c0Var.m38106e(8);
+        int e4 = c0Var.m38109e(8);
         int i6 = 0;
         for (int i7 = 0; i7 < e; i7++) {
-            if (c0Var.m38107d()) {
+            if (c0Var.m38110d()) {
                 i6 += 89;
             }
-            if (c0Var.m38107d()) {
+            if (c0Var.m38110d()) {
                 i6 += 8;
             }
         }
-        c0Var.m38099l(i6);
+        c0Var.m38102l(i6);
         if (e > 0) {
-            c0Var.m38099l((8 - e) * 2);
+            c0Var.m38102l((8 - e) * 2);
         }
-        int h = c0Var.m38103h();
-        int h2 = c0Var.m38103h();
+        int h = c0Var.m38106h();
+        int h2 = c0Var.m38106h();
         if (h2 == 3) {
-            c0Var.m38100k();
+            c0Var.m38103k();
         }
-        int h3 = c0Var.m38103h();
-        int h4 = c0Var.m38103h();
-        if (c0Var.m38107d()) {
-            int h5 = c0Var.m38103h();
-            int h6 = c0Var.m38103h();
-            int h7 = c0Var.m38103h();
-            int h8 = c0Var.m38103h();
+        int h3 = c0Var.m38106h();
+        int h4 = c0Var.m38106h();
+        if (c0Var.m38110d()) {
+            int h5 = c0Var.m38106h();
+            int h6 = c0Var.m38106h();
+            int h7 = c0Var.m38106h();
+            int h8 = c0Var.m38106h();
             h3 -= ((h2 == 1 || h2 == 2) ? 2 : 1) * (h5 + h6);
             h4 -= (h2 == 1 ? 2 : 1) * (h7 + h8);
         }
-        c0Var.m38103h();
-        c0Var.m38103h();
-        int h9 = c0Var.m38103h();
-        for (int i8 = c0Var.m38107d() ? 0 : e; i8 <= e; i8++) {
-            c0Var.m38103h();
-            c0Var.m38103h();
-            c0Var.m38103h();
+        c0Var.m38106h();
+        c0Var.m38106h();
+        int h9 = c0Var.m38106h();
+        for (int i8 = c0Var.m38110d() ? 0 : e; i8 <= e; i8++) {
+            c0Var.m38106h();
+            c0Var.m38106h();
+            c0Var.m38106h();
         }
-        c0Var.m38103h();
-        c0Var.m38103h();
-        c0Var.m38103h();
-        c0Var.m38103h();
-        c0Var.m38103h();
-        c0Var.m38103h();
-        if (c0Var.m38107d() && c0Var.m38107d()) {
-            m37842n(c0Var);
+        c0Var.m38106h();
+        c0Var.m38106h();
+        c0Var.m38106h();
+        c0Var.m38106h();
+        c0Var.m38106h();
+        c0Var.m38106h();
+        if (c0Var.m38110d() && c0Var.m38110d()) {
+            m37845n(c0Var);
         }
-        c0Var.m38099l(2);
-        if (c0Var.m38107d()) {
-            c0Var.m38099l(8);
-            c0Var.m38103h();
-            c0Var.m38103h();
-            c0Var.m38100k();
+        c0Var.m38102l(2);
+        if (c0Var.m38110d()) {
+            c0Var.m38102l(8);
+            c0Var.m38106h();
+            c0Var.m38106h();
+            c0Var.m38103k();
         }
-        m37840p(c0Var);
-        if (c0Var.m38107d()) {
-            for (int i9 = 0; i9 < c0Var.m38103h(); i9++) {
-                c0Var.m38099l(h9 + 4 + 1);
+        m37843p(c0Var);
+        if (c0Var.m38110d()) {
+            for (int i9 = 0; i9 < c0Var.m38106h(); i9++) {
+                c0Var.m38102l(h9 + 4 + 1);
             }
         }
-        c0Var.m38099l(2);
+        c0Var.m38102l(2);
         float f = 1.0f;
-        if (c0Var.m38107d()) {
-            if (c0Var.m38107d()) {
-                int e5 = c0Var.m38106e(8);
+        if (c0Var.m38110d()) {
+            if (c0Var.m38110d()) {
+                int e5 = c0Var.m38109e(8);
                 if (e5 == 255) {
-                    int e6 = c0Var.m38106e(16);
-                    int e7 = c0Var.m38106e(16);
+                    int e6 = c0Var.m38109e(16);
+                    int e7 = c0Var.m38109e(16);
                     if (!(e6 == 0 || e7 == 0)) {
                         f = e6 / e7;
                     }
@@ -282,65 +282,65 @@ public final class C1237x {
                         StringBuilder sb2 = new StringBuilder(46);
                         sb2.append("Unexpected aspect_ratio_idc value: ");
                         sb2.append(e5);
-                        C1230s.m37881i("NalUnitUtil", sb2.toString());
+                        C1230s.m37884i("NalUnitUtil", sb2.toString());
                     }
                 }
             }
-            if (c0Var.m38107d()) {
-                c0Var.m38100k();
+            if (c0Var.m38110d()) {
+                c0Var.m38103k();
             }
-            if (c0Var.m38107d()) {
-                c0Var.m38099l(4);
-                if (c0Var.m38107d()) {
-                    c0Var.m38099l(24);
+            if (c0Var.m38110d()) {
+                c0Var.m38102l(4);
+                if (c0Var.m38110d()) {
+                    c0Var.m38102l(24);
                 }
             }
-            if (c0Var.m38107d()) {
-                c0Var.m38103h();
-                c0Var.m38103h();
+            if (c0Var.m38110d()) {
+                c0Var.m38106h();
+                c0Var.m38106h();
             }
-            c0Var.m38100k();
-            if (c0Var.m38107d()) {
+            c0Var.m38103k();
+            if (c0Var.m38110d()) {
                 h4 *= 2;
             }
         }
         return new C1238a(e2, d, e3, i3, iArr, e4, h, h3, h4, f);
     }
 
-    public static C1239b m37846j(byte[] bArr, int i, int i2) {
-        return m37845k(bArr, i + 1, i2);
+    public static C1239b m37849j(byte[] bArr, int i, int i2) {
+        return m37848k(bArr, i + 1, i2);
     }
 
-    public static C1239b m37845k(byte[] bArr, int i, int i2) {
+    public static C1239b m37848k(byte[] bArr, int i, int i2) {
         C1191c0 c0Var = new C1191c0(bArr, i, i2);
-        int h = c0Var.m38103h();
-        int h2 = c0Var.m38103h();
-        c0Var.m38100k();
-        return new C1239b(h, h2, c0Var.m38107d());
+        int h = c0Var.m38106h();
+        int h2 = c0Var.m38106h();
+        c0Var.m38103k();
+        return new C1239b(h, h2, c0Var.m38110d());
     }
 
-    public static C1240c m37844l(byte[] bArr, int i, int i2) {
-        return m37843m(bArr, i + 1, i2);
+    public static C1240c m37847l(byte[] bArr, int i, int i2) {
+        return m37846m(bArr, i + 1, i2);
     }
 
-    public static p020b5.C1237x.C1240c m37843m(byte[] r21, int r22, int r23) {
-        throw new UnsupportedOperationException("Method not decompiled: p020b5.C1237x.m37843m(byte[], int, int):b5.x$c");
+    public static p020b5.C1237x.C1240c m37846m(byte[] r21, int r22, int r23) {
+        throw new UnsupportedOperationException("Method not decompiled: p020b5.C1237x.m37846m(byte[], int, int):b5.x$c");
     }
 
-    public static void m37842n(C1191c0 c0Var) {
+    public static void m37845n(C1191c0 c0Var) {
         for (int i = 0; i < 4; i++) {
             int i2 = 0;
             while (i2 < 6) {
                 int i3 = 1;
-                if (!c0Var.m38107d()) {
-                    c0Var.m38103h();
+                if (!c0Var.m38110d()) {
+                    c0Var.m38106h();
                 } else {
                     int min = Math.min(64, 1 << ((i << 1) + 4));
                     if (i > 1) {
-                        c0Var.m38104g();
+                        c0Var.m38107g();
                     }
                     for (int i4 = 0; i4 < min; i4++) {
-                        c0Var.m38104g();
+                        c0Var.m38107g();
                     }
                 }
                 if (i == 3) {
@@ -351,12 +351,12 @@ public final class C1237x {
         }
     }
 
-    public static void m37841o(C1191c0 c0Var, int i) {
+    public static void m37844o(C1191c0 c0Var, int i) {
         int i2 = 8;
         int i3 = 8;
         for (int i4 = 0; i4 < i; i4++) {
             if (i2 != 0) {
-                i2 = ((c0Var.m38104g() + i3) + Log.TAG_CRASH) % Log.TAG_CRASH;
+                i2 = ((c0Var.m38107g() + i3) + Log.TAG_CRASH) % Log.TAG_CRASH;
             }
             if (i2 != 0) {
                 i3 = i2;
@@ -364,46 +364,46 @@ public final class C1237x {
         }
     }
 
-    public static void m37840p(C1191c0 c0Var) {
-        int h = c0Var.m38103h();
+    public static void m37843p(C1191c0 c0Var) {
+        int h = c0Var.m38106h();
         boolean z = false;
         int i = 0;
         for (int i2 = 0; i2 < h; i2++) {
             if (i2 != 0) {
-                z = c0Var.m38107d();
+                z = c0Var.m38110d();
             }
             if (z) {
-                c0Var.m38100k();
-                c0Var.m38103h();
+                c0Var.m38103k();
+                c0Var.m38106h();
                 for (int i3 = 0; i3 <= i; i3++) {
-                    if (c0Var.m38107d()) {
-                        c0Var.m38100k();
+                    if (c0Var.m38110d()) {
+                        c0Var.m38103k();
                     }
                 }
             } else {
-                int h2 = c0Var.m38103h();
-                int h3 = c0Var.m38103h();
+                int h2 = c0Var.m38106h();
+                int h3 = c0Var.m38106h();
                 i = h2 + h3;
                 for (int i4 = 0; i4 < h2; i4++) {
-                    c0Var.m38103h();
-                    c0Var.m38100k();
+                    c0Var.m38106h();
+                    c0Var.m38103k();
                 }
                 for (int i5 = 0; i5 < h3; i5++) {
-                    c0Var.m38103h();
-                    c0Var.m38100k();
+                    c0Var.m38106h();
+                    c0Var.m38103k();
                 }
             }
         }
     }
 
-    public static int m37839q(byte[] bArr, int i) {
+    public static int m37842q(byte[] bArr, int i) {
         int i2;
         synchronized (f4574c) {
             int i3 = 0;
             int i4 = 0;
             while (i3 < i) {
                 try {
-                    i3 = m37852d(bArr, i3, i);
+                    i3 = m37855d(bArr, i3, i);
                     if (i3 < i) {
                         int[] iArr = f4575d;
                         if (iArr.length <= i4) {

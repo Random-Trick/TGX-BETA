@@ -20,11 +20,11 @@ import p364zd.C11524j;
 import td.AbstractC9323v4;
 
 public class C9691x3 extends RecyclerView.AbstractC0890h<C9693b> implements C2099j.AbstractC2102c {
-    public final RecyclerView.AbstractC0902p f31485M;
-    public final AbstractC9323v4<?> f31486N;
-    public final AbstractC9692a f31487O;
-    public ArrayList<C2104l> f31488P;
-    public AbstractC9323v4<?> f31489Q;
+    public final RecyclerView.AbstractC0902p f31488M;
+    public final AbstractC9323v4<?> f31489N;
+    public final AbstractC9692a f31490O;
+    public ArrayList<C2104l> f31491P;
+    public AbstractC9323v4<?> f31492Q;
 
     public interface AbstractC9692a {
         int mo7583d2();
@@ -44,38 +44,38 @@ public class C9691x3 extends RecyclerView.AbstractC0890h<C9693b> implements C209
         public static C9693b m7579O(Context context, C10930q6 q6Var, int i, C2099j.AbstractC2102c cVar, AbstractC9323v4<?> v4Var) {
             if (i == 0) {
                 FrameLayoutFix frameLayoutFix = new FrameLayoutFix(context);
-                frameLayoutFix.setLayoutParams(new RecyclerView.LayoutParams(C1357a0.m37541i(34.0f), -1));
+                frameLayoutFix.setLayoutParams(new RecyclerView.LayoutParams(C1357a0.m37544i(34.0f), -1));
                 Drawable C = C11524j.m250C(R.drawable.stickers_back_left, R.id.theme_color_overlayFilling, v4Var);
                 View view = new View(context);
-                C2065g.m35718d(view, C);
+                C2065g.m35721d(view, C);
                 if (v4Var != null) {
                     v4Var.m9163t8(view);
                 }
-                view.setLayoutParams(FrameLayoutFix.m18007t1(C1357a0.m37541i(12.0f), -1, 5));
+                view.setLayoutParams(FrameLayoutFix.m18007t1(C1357a0.m37544i(12.0f), -1, 5));
                 frameLayoutFix.addView(view);
                 return new C9693b(frameLayoutFix);
             } else if (i == 1) {
                 FrameLayoutFix frameLayoutFix2 = new FrameLayoutFix(context);
-                frameLayoutFix2.setLayoutParams(new RecyclerView.LayoutParams(C1357a0.m37541i(34.0f), -1));
+                frameLayoutFix2.setLayoutParams(new RecyclerView.LayoutParams(C1357a0.m37544i(34.0f), -1));
                 Drawable C2 = C11524j.m250C(R.drawable.stickers_back_right, R.id.theme_color_overlayFilling, v4Var);
                 View view2 = new View(context);
-                C2065g.m35718d(view2, C2);
+                C2065g.m35721d(view2, C2);
                 if (v4Var != null) {
                     v4Var.m9163t8(view2);
                 }
-                view2.setLayoutParams(FrameLayoutFix.m18007t1(C1357a0.m37541i(12.0f), -1, 3));
+                view2.setLayoutParams(FrameLayoutFix.m18007t1(C1357a0.m37544i(12.0f), -1, 3));
                 frameLayoutFix2.addView(view2);
                 return new C9693b(frameLayoutFix2);
             } else if (i == 2) {
                 C2099j jVar = new C2099j(context);
-                jVar.m35602j(q6Var);
+                jVar.m35605j(q6Var);
                 jVar.setStickerMovementCallback(cVar);
-                C2065g.m35718d(jVar, C11524j.m250C(R.drawable.stickers_back_center, R.id.theme_color_overlayFilling, v4Var));
+                C2065g.m35721d(jVar, C11524j.m250C(R.drawable.stickers_back_center, R.id.theme_color_overlayFilling, v4Var));
                 if (v4Var != null) {
                     v4Var.m9163t8(jVar);
                 }
-                jVar.m35590v();
-                jVar.setPadding(0, C1357a0.m37541i(2.5f), 0, C1357a0.m37541i(6.5f));
+                jVar.m35593v();
+                jVar.setPadding(0, C1357a0.m37544i(2.5f), 0, C1357a0.m37544i(6.5f));
                 jVar.setLayoutParams(new RecyclerView.LayoutParams(-2, -2));
                 return new C9693b(jVar);
             } else {
@@ -85,10 +85,10 @@ public class C9691x3 extends RecyclerView.AbstractC0890h<C9693b> implements C209
     }
 
     public C9691x3(AbstractC9323v4<?> v4Var, AbstractC9692a aVar, RecyclerView.AbstractC0902p pVar, AbstractC9323v4<?> v4Var2) {
-        this.f31486N = v4Var;
-        this.f31487O = aVar;
-        this.f31485M = pVar;
-        this.f31489Q = v4Var2;
+        this.f31489N = v4Var;
+        this.f31490O = aVar;
+        this.f31488M = pVar;
+        this.f31492Q = v4Var2;
     }
 
     @Override
@@ -99,10 +99,10 @@ public class C9691x3 extends RecyclerView.AbstractC0890h<C9693b> implements C209
     public void mo7576B1(C2099j jVar, C2104l lVar, boolean z) {
         int d0 = m7589d0(lVar);
         if (d0 != -1) {
-            RecyclerView.AbstractC0902p pVar = this.f31485M;
-            View C = pVar != null ? pVar.mo39262C(d0 + 1) : null;
+            RecyclerView.AbstractC0902p pVar = this.f31488M;
+            View C = pVar != null ? pVar.mo39265C(d0 + 1) : null;
             if (C == null || !(C instanceof C2099j)) {
-                m39312I(d0 + 1);
+                m39315I(d0 + 1);
             } else {
                 ((C2099j) C).setStickerPressed(z);
             }
@@ -111,18 +111,18 @@ public class C9691x3 extends RecyclerView.AbstractC0890h<C9693b> implements C209
 
     @Override
     public int mo6153D() {
-        ArrayList<C2104l> arrayList = this.f31488P;
+        ArrayList<C2104l> arrayList = this.f31491P;
         if (arrayList == null || arrayList.isEmpty()) {
             return 0;
         }
-        return this.f31488P.size() + 2;
+        return this.f31491P.size() + 2;
     }
 
     @Override
     public int mo6150F(int i) {
         ArrayList<C2104l> arrayList;
         int i2 = i - 1;
-        if (i == 0 || (arrayList = this.f31488P) == null) {
+        if (i == 0 || (arrayList = this.f31491P) == null) {
             return 0;
         }
         return i2 < arrayList.size() ? 2 : 1;
@@ -137,27 +137,27 @@ public class C9691x3 extends RecyclerView.AbstractC0890h<C9693b> implements C209
     }
 
     public void m7591a0(ArrayList<C2104l> arrayList) {
-        ArrayList<C2104l> arrayList2 = this.f31488P;
+        ArrayList<C2104l> arrayList2 = this.f31491P;
         if (arrayList2 == null || arrayList2.isEmpty()) {
             throw new IllegalStateException();
         }
-        int size = this.f31488P.size();
-        this.f31488P.addAll(arrayList);
-        m39308M(size + 1, arrayList.size());
+        int size = this.f31491P.size();
+        this.f31491P.addAll(arrayList);
+        m39311M(size + 1, arrayList.size());
     }
 
     public boolean m7590c0() {
-        ArrayList<C2104l> arrayList = this.f31488P;
+        ArrayList<C2104l> arrayList = this.f31491P;
         return arrayList != null && !arrayList.isEmpty();
     }
 
     public final int m7589d0(C2104l lVar) {
-        ArrayList<C2104l> arrayList = this.f31488P;
+        ArrayList<C2104l> arrayList = this.f31491P;
         if (arrayList == null || arrayList.isEmpty()) {
             return -1;
         }
         int i = 0;
-        Iterator<C2104l> it = this.f31488P.iterator();
+        Iterator<C2104l> it = this.f31491P.iterator();
         while (it.hasNext()) {
             if (it.next().equals(lVar)) {
                 return i;
@@ -168,9 +168,9 @@ public class C9691x3 extends RecyclerView.AbstractC0890h<C9693b> implements C209
     }
 
     public void mo6146Q(C9693b bVar, int i) {
-        if (bVar.m39332n() == 2) {
+        if (bVar.m39335n() == 2) {
             C2099j jVar = (C2099j) bVar.f3479a;
-            ArrayList<C2104l> arrayList = this.f31488P;
+            ArrayList<C2104l> arrayList = this.f31491P;
             jVar.setSticker(arrayList != null ? arrayList.get(i - 1) : null);
         }
     }
@@ -181,39 +181,39 @@ public class C9691x3 extends RecyclerView.AbstractC0890h<C9693b> implements C209
     }
 
     public C9693b mo6145S(ViewGroup viewGroup, int i) {
-        return C9693b.m7579O(this.f31486N.mo4347s(), this.f31486N.mo4348c(), i, this, this.f31489Q);
+        return C9693b.m7579O(this.f31489N.mo4347s(), this.f31489N.mo4348c(), i, this, this.f31492Q);
     }
 
     public void mo6144V(C9693b bVar) {
-        if (bVar.m39332n() == 2) {
-            ((C2099j) bVar.f3479a).m35608d();
+        if (bVar.m39335n() == 2) {
+            ((C2099j) bVar.f3479a).m35611d();
         }
     }
 
     @Override
     public long getStickerOutputChatId() {
-        return this.f31487O.mo7582l3();
+        return this.f31490O.mo7582l3();
     }
 
     @Override
     public int getStickersListTop() {
-        return this.f31487O.mo7580v3();
+        return this.f31490O.mo7580v3();
     }
 
     @Override
     public int getViewportHeight() {
-        return this.f31487O.mo7583d2();
+        return this.f31490O.mo7583d2();
     }
 
     public void mo6143W(C9693b bVar) {
-        if (bVar.m39332n() == 2) {
-            ((C2099j) bVar.f3479a).m35603i();
+        if (bVar.m39335n() == 2) {
+            ((C2099j) bVar.f3479a).m35606i();
         }
     }
 
     public void m7584i0(ArrayList<C2104l> arrayList) {
         int D = mo6153D();
-        this.f31488P = arrayList;
+        this.f31491P = arrayList;
         int D2 = mo6153D();
         if (D2 == 0 || D == 0) {
             C7389v0.m16615k2(this, D);
@@ -222,19 +222,19 @@ public class C9691x3 extends RecyclerView.AbstractC0890h<C9693b> implements C209
         int i = D - 2;
         int i2 = D2 - 2;
         if (i == i2) {
-            m39309L(1, i2);
+            m39312L(1, i2);
         } else if (i < D2) {
-            m39309L(1, i);
-            m39308M(D - 1, i2 - i);
+            m39312L(1, i);
+            m39311M(D - 1, i2 - i);
         } else {
-            m39309L(1, i2);
-            m39307N(D2 - 1, i - i2);
+            m39312L(1, i2);
+            m39310N(D2 - 1, i - i2);
         }
     }
 
     @Override
     public boolean mo7542k4(C2099j jVar, View view, C2104l lVar, boolean z, boolean z2, TdApi.MessageSchedulingState messageSchedulingState) {
-        return this.f31487O.mo7581o5(view, lVar, z2, messageSchedulingState);
+        return this.f31490O.mo7581o5(view, lVar, z2, messageSchedulingState);
     }
 
     @Override

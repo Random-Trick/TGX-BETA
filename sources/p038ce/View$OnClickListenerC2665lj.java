@@ -67,85 +67,85 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         super(context, q6Var);
     }
 
-    public void m34003Af(TdApi.Object object) {
+    public void m34006Af(TdApi.Object object) {
         if (!m9347Sa()) {
-            m33949ig(false);
+            m33952ig(false);
             int constructor = object.getConstructor();
             if (constructor == -1679978726) {
-                C1379j0.m37302t0(object);
+                C1379j0.m37305t0(object);
             } else if (constructor == -860345416) {
                 ((TdApi.AuthorizationStateWaitCode) this.f8993p0).codeInfo = (TdApi.AuthenticationCodeInfo) object;
-                m33933qg();
+                m33936qg();
             }
         }
     }
 
-    public void m34002Bf(final TdApi.Object object) {
-        this.f30167b.m2485dd().post(new Runnable() {
+    public void m34005Bf(final TdApi.Object object) {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2665lj.this.m34003Af(object);
+                View$OnClickListenerC2665lj.this.m34006Af(object);
             }
         });
     }
 
-    public void m34001Cf(TdApi.Object object) {
+    public void m34004Cf(TdApi.Object object) {
         if (!m9347Sa()) {
             m9387Md(false);
-            m33949ig(false);
+            m33952ig(false);
             int constructor = object.getConstructor();
             if (constructor == -1679978726) {
                 m9425Hc(R.string.RestorePasswordNoEmailTitle, R.string.SinceNotProvided);
             } else if (constructor != -722616727) {
                 Log.unexpectedTdlibResponse(object, TdApi.RequestAuthenticationPasswordRecovery.class, TdApi.C7866Ok.class, TdApi.Error.class);
             } else {
-                View$OnClickListenerC2665lj ljVar = new View$OnClickListenerC2665lj(this.f30165a, this.f30167b);
+                View$OnClickListenerC2665lj ljVar = new View$OnClickListenerC2665lj(this.f30168a, this.f30170b);
                 TdApi.AuthorizationStateWaitPassword authorizationStateWaitPassword = (TdApi.AuthorizationStateWaitPassword) this.f8993p0;
-                ljVar.m33963bg(new C2666a(6, authorizationStateWaitPassword).m33922b(authorizationStateWaitPassword.recoveryEmailAddressPattern));
+                ljVar.m33966bg(new C2666a(6, authorizationStateWaitPassword).m33925b(authorizationStateWaitPassword.recoveryEmailAddressPattern));
                 m9291ac(ljVar);
             }
         }
     }
 
-    public void m34000Df(final TdApi.Object object) {
-        this.f30167b.m2485dd().post(new Runnable() {
+    public void m34003Df(final TdApi.Object object) {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2665lj.this.m34001Cf(object);
+                View$OnClickListenerC2665lj.this.m34004Cf(object);
             }
         });
     }
 
-    public void m33999Ef(TdApi.Object object) {
+    public void m34002Ef(TdApi.Object object) {
         if (!m9347Sa()) {
-            m33949ig(false);
+            m33952ig(false);
             if (object.getConstructor() != 1151066659) {
                 m9425Hc(R.string.RestorePasswordNoEmailTitle, R.string.SinceNotProvided);
                 return;
             }
             TdApi.EmailAddressAuthenticationCodeInfo emailAddressAuthenticationCodeInfo = (TdApi.EmailAddressAuthenticationCodeInfo) object;
-            View$OnClickListenerC2665lj ljVar = new View$OnClickListenerC2665lj(this.f30165a, this.f30167b);
-            ljVar.m33963bg(new C2666a(3, this.f8992o0).m33922b(emailAddressAuthenticationCodeInfo.emailAddressPattern).m33923a(emailAddressAuthenticationCodeInfo.length));
+            View$OnClickListenerC2665lj ljVar = new View$OnClickListenerC2665lj(this.f30168a, this.f30170b);
+            ljVar.m33966bg(new C2666a(3, this.f8992o0).m33925b(emailAddressAuthenticationCodeInfo.emailAddressPattern).m33926a(emailAddressAuthenticationCodeInfo.length));
             m9291ac(ljVar);
         }
     }
 
-    public void m33998Ff(final TdApi.Object object) {
-        this.f30167b.m2485dd().post(new Runnable() {
+    public void m34001Ff(final TdApi.Object object) {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2665lj.this.m33999Ef(object);
+                View$OnClickListenerC2665lj.this.m34002Ef(object);
             }
         });
     }
 
-    public void m33997Gf(DialogInterface dialogInterface, int i) {
+    public void m34000Gf(DialogInterface dialogInterface, int i) {
         m9298Zb();
     }
 
-    public void m33996Hf(TdApi.Object object) {
+    public void m33999Hf(TdApi.Object object) {
         if (!m9347Sa()) {
-            m33951hg(false);
+            m33954hg(false);
             if (this.f8991n0 == 7) {
                 m9387Md(false);
             }
@@ -153,172 +153,172 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
             if (constructor == -1679978726) {
                 TdApi.Error error = (TdApi.Error) object;
                 if ("PHONE_CODE_INVALID".equals(error.message)) {
-                    m33955fg(R.string.InvalidCode, true);
+                    m33958fg(R.string.InvalidCode, true);
                 } else {
-                    m33953gg(C4779t2.m25378z5(error), true);
+                    m33956gg(C4779t2.m25379z5(error), true);
                 }
             } else if (constructor == -722616727) {
                 int i = this.f8991n0;
                 if (i != 7) {
                     if (i == 8) {
-                        m9403Kc(R.string.AppName, C4403w.m27865j1(R.string.SuccessfullyChangedNumber, this.f8994q0), new DialogInterface.OnClickListener() {
+                        m9403Kc(R.string.AppName, C4403w.m27867j1(R.string.SuccessfullyChangedNumber, this.f8994q0), new DialogInterface.OnClickListener() {
                             @Override
                             public final void onClick(DialogInterface dialogInterface, int i2) {
-                                View$OnClickListenerC2665lj.this.m33997Gf(dialogInterface, i2);
+                                View$OnClickListenerC2665lj.this.m34000Gf(dialogInterface, i2);
                             }
                         }, false);
                     } else if (i == 9) {
                         m9298Zb();
                     }
-                } else if (C1379j0.m37358J()) {
-                    this.f30167b.m2270r4().m14783o(new TdApi.SetPassword(null, "objection", C1363c0.m37407z("objection"), false, null), this.f30167b.m2214uc());
+                } else if (C1379j0.m37361J()) {
+                    this.f30170b.m2270r4().m14783o(new TdApi.SetPassword(null, "objection", C1363c0.m37410z("objection"), false, null), this.f30170b.m2214uc());
                 }
             }
         }
     }
 
-    public void m33995If(final TdApi.Object object) {
-        this.f30167b.m2485dd().post(new Runnable() {
+    public void m33998If(final TdApi.Object object) {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2665lj.this.m33996Hf(object);
+                View$OnClickListenerC2665lj.this.m33999Hf(object);
             }
         });
     }
 
-    public void m33994Jf(TdApi.Object object, String str) {
+    public void m33997Jf(TdApi.Object object, String str) {
         if (!m9347Sa()) {
-            m33951hg(false);
+            m33954hg(false);
             int constructor = object.getConstructor();
             if (constructor == -2001619202) {
-                m33973Wf((TdApi.PasswordState) object, str);
+                m33976Wf((TdApi.PasswordState) object, str);
             } else if (constructor != -1679978726) {
                 Log.unexpectedTdlibResponse(object, TdApi.SetRecoveryEmailAddress.class, TdApi.PasswordState.class);
             } else {
-                m33953gg(C4779t2.m25378z5(object), true);
+                m33956gg(C4779t2.m25379z5(object), true);
             }
         }
     }
 
-    public void m33993Kf(final String str, final TdApi.Object object) {
-        this.f30167b.m2485dd().post(new Runnable() {
+    public void m33996Kf(final String str, final TdApi.Object object) {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2665lj.this.m33994Jf(object, str);
+                View$OnClickListenerC2665lj.this.m33997Jf(object, str);
             }
         });
     }
 
-    public void m33992Lf(TdApi.Object object, String str) {
+    public void m33995Lf(TdApi.Object object, String str) {
         if (!m9347Sa()) {
-            m33951hg(false);
+            m33954hg(false);
             int constructor = object.getConstructor();
             if (constructor == -2001619202) {
-                m33973Wf((TdApi.PasswordState) object, str);
+                m33976Wf((TdApi.PasswordState) object, str);
             } else if (constructor != -1679978726) {
                 Log.unexpectedTdlibResponse(object, TdApi.SetPassword.class, TdApi.PasswordState.class);
             } else {
-                C1379j0.m37302t0(object);
+                C1379j0.m37305t0(object);
             }
         }
     }
 
-    public void m33991Mf(final String str, final TdApi.Object object) {
-        this.f30167b.m2485dd().post(new Runnable() {
+    public void m33994Mf(final String str, final TdApi.Object object) {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2665lj.this.m33992Lf(object, str);
+                View$OnClickListenerC2665lj.this.m33995Lf(object, str);
             }
         });
     }
 
-    public void m33990Nf() {
-        m33955fg(R.string.PasswordDoNotMatch, true);
+    public void m33993Nf() {
+        m33958fg(R.string.PasswordDoNotMatch, true);
     }
 
-    public void m33989Of() {
+    public void m33992Of() {
         this.f8996s0.setIcon(R.drawable.baseline_check_24);
-        m33961cg(R.string.Skip);
-        m33955fg(R.string.YourEmailInfo, false);
+        m33964cg(R.string.Skip);
+        m33958fg(R.string.YourEmailInfo, false);
     }
 
-    public void m33987Pf(DialogInterface dialogInterface, int i) {
-        m33941mg(this.f8988I0, this.f8989J0, null);
+    public void m33990Pf(DialogInterface dialogInterface, int i) {
+        m33944mg(this.f8988I0, this.f8989J0, null);
     }
 
-    public void m33985Qf(org.drinkless.p210td.libcore.telegram.TdApi.Object r6, java.lang.String r7) {
-        throw new UnsupportedOperationException("Method not decompiled: p038ce.View$OnClickListenerC2665lj.m33985Qf(org.drinkless.td.libcore.telegram.TdApi$Object, java.lang.String):void");
+    public void m33988Qf(org.drinkless.p210td.libcore.telegram.TdApi.Object r6, java.lang.String r7) {
+        throw new UnsupportedOperationException("Method not decompiled: p038ce.View$OnClickListenerC2665lj.m33988Qf(org.drinkless.td.libcore.telegram.TdApi$Object, java.lang.String):void");
     }
 
-    public void m33983Rf(final String str, final TdApi.Object object) {
-        this.f30167b.m2485dd().post(new Runnable() {
+    public void m33986Rf(final String str, final TdApi.Object object) {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2665lj.this.m33985Qf(object, str);
+                View$OnClickListenerC2665lj.this.m33988Qf(object, str);
             }
         });
     }
 
-    public void m33929uf(TdApi.Object object) {
+    public void m33932uf(TdApi.Object object) {
         if (!m9347Sa()) {
-            m33951hg(false);
+            m33954hg(false);
             m9387Md(false);
             if (object.getConstructor() == -1679978726) {
                 TdApi.Error error = (TdApi.Error) object;
                 if (error.code != 400 || !"PASSWORD_HASH_INVALID".equals(error.message)) {
-                    m33953gg(C4779t2.m25378z5(object), true);
+                    m33956gg(C4779t2.m25379z5(object), true);
                     return;
                 }
-                C1399s0.m37198W(this.f8995r0.getEditText());
-                C1408x.m37085f(this.f8995r0);
-                m33955fg(R.string.InvalidPasswordTryAgain, true);
+                C1399s0.m37201W(this.f8995r0.getEditText());
+                C1408x.m37088f(this.f8995r0);
+                m33958fg(R.string.InvalidPasswordTryAgain, true);
             }
         }
     }
 
-    public void m33928vf(final TdApi.Object object) {
-        this.f30167b.m2485dd().post(new Runnable() {
+    public void m33931vf(final TdApi.Object object) {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2665lj.this.m33929uf(object);
+                View$OnClickListenerC2665lj.this.m33932uf(object);
             }
         });
     }
 
-    public void m33927wf(TdApi.AuthorizationState authorizationState) {
+    public void m33930wf(TdApi.AuthorizationState authorizationState) {
         this.f8993p0 = authorizationState;
-        m33933qg();
+        m33936qg();
     }
 
-    public void m33926xf() {
-        m33940nf(1.0f);
+    public void m33929xf() {
+        m33943nf(1.0f);
     }
 
-    public void m33925yf(TdApi.Object object) {
+    public void m33928yf(TdApi.Object object) {
         if (!m9347Sa()) {
             if (this.f8991n0 == 6) {
                 m9387Md(false);
             }
-            m33951hg(false);
+            m33954hg(false);
             int constructor = object.getConstructor();
             if (constructor == -2001619202) {
-                m33973Wf((TdApi.PasswordState) object, null);
+                m33976Wf((TdApi.PasswordState) object, null);
             } else if (constructor == -1679978726) {
                 TdApi.Error error = (TdApi.Error) object;
                 if (error.code != 400 || !"CODE_INVALID".equals(error.message)) {
-                    m33953gg(C4779t2.m25378z5(error), true);
+                    m33956gg(C4779t2.m25379z5(error), true);
                 } else {
-                    m33955fg(R.string.RecoveryCodeInvalid, true);
+                    m33958fg(R.string.RecoveryCodeInvalid, true);
                 }
             }
         }
     }
 
-    public void m33924zf(final TdApi.Object object) {
-        this.f30167b.m2485dd().post(new Runnable() {
+    public void m33927zf(final TdApi.Object object) {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2665lj.this.m33925yf(object);
+                View$OnClickListenerC2665lj.this.m33928yf(object);
             }
         });
     }
@@ -336,7 +336,7 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         }
         int i = this.f8991n0;
         if ((i != 1 || this.f8987H0 != 3) && i != 3 && i != 6) {
-            m33936pf((!z || ((i == 1 || i == 0) && this.f8987H0 == 2)) ? 1.0f : 0.0f);
+            m33939pf((!z || ((i == 1 || i == 0) && this.f8987H0 == 2)) ? 1.0f : 0.0f);
         }
     }
 
@@ -345,7 +345,7 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         int i = this.f8991n0;
         if (i == 5 || i == 7) {
             this.f8995r0.setText(str);
-            m33977Uf();
+            m33980Uf();
         }
     }
 
@@ -353,7 +353,7 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
     public void mo45P5(int i, float f, float f2, C3950k kVar) {
         C6977n2 n2Var;
         if (i == 0) {
-            m33943lg(f);
+            m33946lg(f);
         } else if (i == 1) {
             DecelerateInterpolator decelerateInterpolator = C2057b.f7280b;
             this.f8997t0.setAlpha((decelerateInterpolator.getInterpolation((f * 0.5f) + 0.5f) / decelerateInterpolator.getInterpolation(0.5f)) * f);
@@ -373,7 +373,7 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
 
     @Override
     public boolean mo17894S0(View$OnFocusChangeListenerC7069y1 y1Var) {
-        m33977Uf();
+        m33980Uf();
         return true;
     }
 
@@ -382,24 +382,24 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         return !this.f8986G0;
     }
 
-    public final void m33981Sf(String str) {
+    public final void m33984Sf(String str) {
         if (!this.f8986G0) {
-            if (this.f30167b.m2930B4().m4694g3().m28143j()) {
-                C1379j0.m37298v0();
+            if (this.f30170b.m2930B4().m4694g3().m28145j()) {
+                C1379j0.m37301v0();
                 return;
             }
-            m33951hg(true);
+            m33954hg(true);
             m9387Md(true);
-            this.f30167b.m2270r4().m14783o(new TdApi.CheckAuthenticationPassword(str), new Client.AbstractC7865g() {
+            this.f30170b.m2270r4().m14783o(new TdApi.CheckAuthenticationPassword(str), new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
-                    View$OnClickListenerC2665lj.this.m33928vf(object);
+                    View$OnClickListenerC2665lj.this.m33931vf(object);
                 }
             });
         }
     }
 
-    public final void m33979Tf() {
+    public final void m33982Tf() {
         String charSequence = this.f8995r0.getText().toString();
         int i = this.f8987H0;
         if (i != 0) {
@@ -407,71 +407,71 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
                 if (i != 2) {
                     if (i == 3) {
                         String trim = charSequence.trim();
-                        if (trim.isEmpty() || !C1363c0.m37458P(charSequence)) {
-                            m33937og();
+                        if (trim.isEmpty() || !C1363c0.m37461P(charSequence)) {
+                            m33940og();
                         } else {
-                            m33941mg(this.f8988I0, this.f8989J0, trim);
+                            m33944mg(this.f8988I0, this.f8989J0, trim);
                         }
                     }
                 } else if (charSequence.toLowerCase().equals(this.f8988I0.toLowerCase())) {
-                    m33955fg(R.string.PasswordAndHintMustBeDifferent, true);
+                    m33958fg(R.string.PasswordAndHintMustBeDifferent, true);
                 } else {
                     int i2 = this.f8991n0;
                     if (i2 == 1) {
-                        m33939ng(charSequence, 3);
+                        m33942ng(charSequence, 3);
                     } else if (i2 == 0) {
-                        m33941mg(this.f8988I0, this.f8989J0, m9139w9() != null ? m9139w9().f9008e : null);
+                        m33944mg(this.f8988I0, this.f8989J0, m9139w9() != null ? m9139w9().f9008e : null);
                     }
                 }
             } else if (charSequence.length() <= 0) {
             } else {
                 if (this.f8988I0.equals(charSequence)) {
-                    m33939ng(charSequence, 2);
+                    m33942ng(charSequence, 2);
                 } else {
-                    m33939ng(charSequence, 4);
+                    m33942ng(charSequence, 4);
                 }
             }
         } else if (charSequence.length() <= 0) {
         } else {
             if (this.f8991n0 != 0 || m9139w9() == null || !charSequence.equals(m9139w9().f9009f)) {
-                m33939ng(charSequence, 1);
+                m33942ng(charSequence, 1);
             } else {
-                m33955fg(R.string.PasswordMatchesOldOne, true);
+                m33958fg(R.string.PasswordMatchesOldOne, true);
             }
         }
     }
 
-    public final void m33977Uf() {
+    public final void m33980Uf() {
         TdApi.PasswordState passwordState;
         String charSequence = this.f8995r0.getText().toString();
         switch (this.f8991n0) {
             case 0:
             case 1:
-                m33979Tf();
+                m33982Tf();
                 return;
             case 2:
             case 10:
             case 11:
                 if (!charSequence.isEmpty()) {
-                    m33935pg(charSequence);
+                    m33938pg(charSequence);
                     return;
                 }
                 return;
             case 3:
             case 6:
-                String D = C1363c0.m37470D(charSequence);
+                String D = C1363c0.m37473D(charSequence);
                 if (D.length() >= 6) {
-                    m33971Xf(D);
+                    m33974Xf(D);
                     return;
                 }
                 return;
             case 4:
-                if (C1363c0.m37458P(charSequence) && m9139w9() != null) {
+                if (C1363c0.m37461P(charSequence) && m9139w9() != null) {
                     if (!charSequence.equals(m9139w9().f9008e) || !((passwordState = this.f8992o0) == null || passwordState.recoveryEmailAddressCodeInfo == null)) {
-                        m33945kg(charSequence);
+                        m33948kg(charSequence);
                         return;
                     } else {
-                        m33955fg(R.string.EmailMatchesOldOne, true);
+                        m33958fg(R.string.EmailMatchesOldOne, true);
                         return;
                     }
                 } else {
@@ -479,30 +479,30 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
                 }
             case 5:
                 if (!charSequence.isEmpty()) {
-                    m33981Sf(charSequence);
+                    m33984Sf(charSequence);
                     return;
                 }
                 return;
             case 7:
             case 8:
             case 9:
-                m33965ag(C1363c0.m37470D(charSequence));
+                m33968ag(C1363c0.m37473D(charSequence));
                 return;
             default:
                 return;
         }
     }
 
-    public final void m33975Vf() {
+    public final void m33978Vf() {
         switch (this.f8991n0) {
             case 1:
-                m33937og();
+                m33940og();
                 return;
             case 2:
             case 5:
             case 10:
             case 11:
-                m33967Zf();
+                m33970Zf();
                 return;
             case 3:
             case 6:
@@ -514,25 +514,25 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
             case 7:
             case 8:
             case 9:
-                m33969Yf();
+                m33972Yf();
                 return;
         }
     }
 
-    public final void m33973Wf(TdApi.PasswordState passwordState, String str) {
+    public final void m33976Wf(TdApi.PasswordState passwordState, String str) {
         this.f8992o0 = passwordState;
         int i = this.f8991n0;
         if (i == 1) {
             AbstractC9323v4<?> pd = m9186pd(R.id.controller_2faSettings);
             if (pd instanceof View$OnClickListenerC2937qp) {
-                ((View$OnClickListenerC2937qp) pd).m32963nh(passwordState, str);
+                ((View$OnClickListenerC2937qp) pd).m32966nh(passwordState, str);
                 m9291ac(pd);
                 return;
             }
         } else if (i == 0 || i == 4) {
             AbstractC9323v4<?> p9 = m9190p9(R.id.controller_2faSettings);
             if (p9 instanceof View$OnClickListenerC2937qp) {
-                ((View$OnClickListenerC2937qp) p9).m32963nh(passwordState, str);
+                ((View$OnClickListenerC2937qp) p9).m32966nh(passwordState, str);
                 m9298Zb();
                 return;
             }
@@ -540,9 +540,9 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         AbstractC9323v4<?> p92 = m9190p9(R.id.controller_privacySettings);
         if (p92 instanceof View$OnClickListenerC3222vw) {
             View$OnClickListenerC3222vw vwVar = (View$OnClickListenerC3222vw) p92;
-            vwVar.m31111Fh(passwordState);
-            View$OnClickListenerC2937qp qpVar = new View$OnClickListenerC2937qp(this.f30165a, this.f30167b);
-            qpVar.m32968ih(new View$OnClickListenerC2937qp.C2939b(vwVar, null, null));
+            vwVar.m31113Fh(passwordState);
+            View$OnClickListenerC2937qp qpVar = new View$OnClickListenerC2937qp(this.f30168a, this.f30170b);
+            qpVar.m32971ih(new View$OnClickListenerC2937qp.C2939b(vwVar, null, null));
             m9291ac(qpVar);
         }
     }
@@ -551,45 +551,45 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
     public CharSequence mo9313X9() {
         switch (this.f8991n0) {
             case 0:
-                return C4403w.m27869i1(R.string.ChangePassword);
+                return C4403w.m27871i1(R.string.ChangePassword);
             case 1:
-                return C4403w.m27869i1(R.string.YourPassword);
+                return C4403w.m27871i1(R.string.YourPassword);
             case 2:
             case 11:
-                return C4403w.m27869i1(R.string.EnterPassword);
+                return C4403w.m27871i1(R.string.EnterPassword);
             case 3:
             case 6:
-                return C4403w.m27869i1(R.string.PasswordRecovery);
+                return C4403w.m27871i1(R.string.PasswordRecovery);
             case 4:
-                return C4403w.m27869i1(R.string.ChangeRecoveryEmail);
+                return C4403w.m27871i1(R.string.ChangeRecoveryEmail);
             case 5:
-                return C4403w.m27869i1(R.string.TwoStepVerification);
+                return C4403w.m27871i1(R.string.TwoStepVerification);
             case 7:
             case 8:
-                return C4403w.m27869i1(R.string.ConfirmationCode);
+                return C4403w.m27871i1(R.string.ConfirmationCode);
             case 9:
-                return C4403w.m27869i1(R.string.CancelAccountReset);
+                return C4403w.m27871i1(R.string.CancelAccountReset);
             case 10:
-                return C4403w.m27869i1(R.string.TransferOwnershipPasswordAlert);
+                return C4403w.m27871i1(R.string.TransferOwnershipPasswordAlert);
             default:
                 return null;
         }
     }
 
-    public final void m33971Xf(String str) {
+    public final void m33974Xf(String str) {
         if (!this.f8986G0) {
-            if (this.f30167b.m2930B4().m4694g3().m28143j()) {
-                C1379j0.m37298v0();
+            if (this.f30170b.m2930B4().m4694g3().m28145j()) {
+                C1379j0.m37301v0();
                 return;
             }
-            m33951hg(true);
+            m33954hg(true);
             if (this.f8991n0 == 6) {
                 m9387Md(true);
             }
-            this.f30167b.m2270r4().m14783o(this.f8991n0 == 6 ? new TdApi.RecoverAuthenticationPassword(str, null, null) : new TdApi.RecoverPassword(str, null, null), new Client.AbstractC7865g() {
+            this.f30170b.m2270r4().m14783o(this.f8991n0 == 6 ? new TdApi.RecoverAuthenticationPassword(str, null, null) : new TdApi.RecoverPassword(str, null, null), new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
-                    View$OnClickListenerC2665lj.this.m33924zf(object);
+                    View$OnClickListenerC2665lj.this.m33927zf(object);
                 }
             });
         }
@@ -601,27 +601,27 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
             if (i == 2 && f == 0.0f) {
                 String str = this.f8980A0;
                 if (str == null || str.isEmpty()) {
-                    m33957eg("", false);
+                    m33960eg("", false);
                     return;
                 }
-                m33957eg(this.f8980A0, this.f8981B0);
+                m33960eg(this.f8980A0, this.f8981B0);
                 this.f8980A0 = null;
                 this.f8981B0 = false;
-                this.f9003z0.m29544i(1.0f);
+                this.f9003z0.m29546i(1.0f);
             }
         } else if (f == 0.0f) {
             this.f8997t0.setText("");
         }
     }
 
-    public final void m33969Yf() {
+    public final void m33972Yf() {
         TdApi.Function function;
-        if (m33930tf() && !this.f8983D0) {
-            if (this.f30167b.m2930B4().m4694g3().m28143j()) {
-                C1379j0.m37298v0();
+        if (m33933tf() && !this.f8983D0) {
+            if (this.f30170b.m2930B4().m4694g3().m28145j()) {
+                C1379j0.m37301v0();
                 return;
             }
-            m33949ig(true);
+            m33952ig(true);
             int i = this.f8991n0;
             if (i == 8) {
                 function = new TdApi.ResendChangePhoneNumberCode();
@@ -630,10 +630,10 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
             } else {
                 function = new TdApi.ResendPhoneNumberConfirmationCode();
             }
-            this.f30167b.m2270r4().m14783o(function, new Client.AbstractC7865g() {
+            this.f30170b.m2270r4().m14783o(function, new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
-                    View$OnClickListenerC2665lj.this.m34002Bf(object);
+                    View$OnClickListenerC2665lj.this.m34005Bf(object);
                 }
             });
         }
@@ -644,7 +644,7 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2665lj.this.m33927wf(authorizationState);
+                View$OnClickListenerC2665lj.this.m33930wf(authorizationState);
             }
         });
     }
@@ -652,29 +652,29 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
     @Override
     public void mo417Z8() {
         super.mo417Z8();
-        this.f30167b.m2781K9().m1904T(this);
+        this.f30170b.m2781K9().m1904T(this);
         C6851c0 c0Var = this.f8996s0;
         if (c0Var != null) {
-            c0Var.m18791b();
+            c0Var.m18792b();
         }
     }
 
-    public final void m33967Zf() {
+    public final void m33970Zf() {
         TdApi.AuthorizationState authorizationState;
         TdApi.PasswordState passwordState = this.f8992o0;
         if ((passwordState != null && !passwordState.hasRecoveryEmailAddress) || (((authorizationState = this.f8993p0) != null && authorizationState.getConstructor() == 187548796 && !((TdApi.AuthorizationStateWaitPassword) this.f8993p0).hasRecoveryEmailAddress) || (this.f8992o0 == null && this.f8993p0 == null))) {
             m9425Hc(R.string.RestorePasswordNoEmailTitle, R.string.SinceNotProvided);
         } else if (!this.f8983D0) {
-            if (this.f30167b.m2930B4().m4694g3().m28143j()) {
-                C1379j0.m37298v0();
+            if (this.f30170b.m2930B4().m4694g3().m28145j()) {
+                C1379j0.m37301v0();
                 return;
             }
-            m33949ig(true);
+            m33952ig(true);
             if (this.f8991n0 != 5) {
-                this.f30167b.m2270r4().m14783o(new TdApi.RequestPasswordRecovery(), new Client.AbstractC7865g() {
+                this.f30170b.m2270r4().m14783o(new TdApi.RequestPasswordRecovery(), new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object) {
-                        View$OnClickListenerC2665lj.this.m33998Ff(object);
+                        View$OnClickListenerC2665lj.this.m34001Ff(object);
                     }
                 });
             } else if (this.f8993p0.getConstructor() != 187548796) {
@@ -683,24 +683,24 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
                 m9425Hc(R.string.RestorePasswordNoEmailTitle, R.string.SinceNotProvided);
             } else {
                 m9387Md(true);
-                this.f30167b.m2270r4().m14783o(new TdApi.RequestAuthenticationPasswordRecovery(), new Client.AbstractC7865g() {
+                this.f30170b.m2270r4().m14783o(new TdApi.RequestAuthenticationPasswordRecovery(), new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object) {
-                        View$OnClickListenerC2665lj.this.m34000Df(object);
+                        View$OnClickListenerC2665lj.this.m34003Df(object);
                     }
                 });
             }
         }
     }
 
-    public final void m33965ag(String str) {
+    public final void m33968ag(String str) {
         TdApi.Function function;
         if (!this.f8986G0) {
-            if (this.f30167b.m2930B4().m4694g3().m28143j()) {
-                C1379j0.m37298v0();
+            if (this.f30170b.m2930B4().m4694g3().m28145j()) {
+                C1379j0.m37301v0();
                 return;
             }
-            m33951hg(true);
+            m33954hg(true);
             if (this.f8991n0 == 7) {
                 m9387Md(true);
             }
@@ -712,16 +712,16 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
             } else {
                 function = new TdApi.CheckPhoneNumberConfirmationCode(str);
             }
-            this.f30167b.m2270r4().m14783o(function, new Client.AbstractC7865g() {
+            this.f30170b.m2270r4().m14783o(function, new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
-                    View$OnClickListenerC2665lj.this.m33995If(object);
+                    View$OnClickListenerC2665lj.this.m33998If(object);
                 }
             });
         }
     }
 
-    public void m33963bg(C2666a aVar) {
+    public void m33966bg(C2666a aVar) {
         super.m9476Ad(aVar);
         this.f8991n0 = aVar.f9004a;
         this.f8992o0 = aVar.f9005b;
@@ -729,8 +729,8 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         this.f8994q0 = aVar.f9007d;
     }
 
-    public final void m33961cg(int i) {
-        m33959dg(C4403w.m27869i1(i));
+    public final void m33964cg(int i) {
+        m33962dg(C4403w.m27871i1(i));
     }
 
     @Override
@@ -739,9 +739,9 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         return i == 5 || i == 6 || i == 7;
     }
 
-    public final void m33959dg(String str) {
+    public final void m33962dg(String str) {
         if (str == null || str.isEmpty()) {
-            m33940nf(0.0f);
+            m33943nf(0.0f);
             if (this.f8997t0.getAlpha() == 0.0f) {
                 this.f8997t0.setText("");
                 return;
@@ -749,10 +749,10 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
             return;
         }
         this.f8997t0.setText(str);
-        m33940nf(1.0f);
+        m33943nf(1.0f);
     }
 
-    public final void m33957eg(String str, boolean z) {
+    public final void m33960eg(String str, boolean z) {
         this.f8999v0.setText(str);
         this.f8999v0.setTextColor(z ? C11524j.m205Y0() : C11524j.m213U0());
         m9180qd(this.f8999v0);
@@ -760,27 +760,27 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         this.f8995r0.setInErrorState(z);
     }
 
-    public final void m33955fg(int i, boolean z) {
-        m33953gg(C4403w.m27869i1(i), z);
+    public final void m33958fg(int i, boolean z) {
+        m33956gg(C4403w.m27871i1(i), z);
     }
 
-    public final void m33953gg(String str, boolean z) {
+    public final void m33956gg(String str, boolean z) {
         if (str == null || str.isEmpty()) {
-            m33938of(0.0f);
+            m33941of(0.0f);
             if (this.f8999v0.getAlpha() == 0.0f) {
-                m33957eg("", false);
+                m33960eg("", false);
             }
         } else if (this.f8999v0.getAlpha() == 0.0f) {
-            m33957eg(str, z);
-            m33938of(1.0f);
+            m33960eg(str, z);
+            m33941of(1.0f);
         } else {
             this.f8980A0 = str;
             this.f8981B0 = z;
-            m33938of(0.0f);
+            m33941of(0.0f);
         }
     }
 
-    public final void m33951hg(boolean z) {
+    public final void m33954hg(boolean z) {
         if (this.f8986G0 != z) {
             this.f8986G0 = z;
             this.f8996s0.setInProgress(z);
@@ -793,14 +793,14 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         int i = this.f8991n0;
         boolean z = true;
         if (i == 1 && this.f8987H0 == 3) {
-            m33947jg(C1363c0.m37458P(charSequence2));
+            m33950jg(C1363c0.m37461P(charSequence2));
         } else if (i == 3 || i == 6) {
-            if (C1363c0.m37470D(charSequence2).length() < 6) {
+            if (C1363c0.m37473D(charSequence2).length() < 6) {
                 z = false;
             }
-            m33947jg(z);
-        } else if ((i == 7 || i == 8 || i == 9) && C1363c0.m37469E(charSequence2) >= C4779t2.m25594U0(this.f8993p0)) {
-            m33977Uf();
+            m33950jg(z);
+        } else if ((i == 7 || i == 8 || i == 9) && C1363c0.m37472E(charSequence2) >= C4779t2.m25595U0(this.f8993p0)) {
+            m33980Uf();
         } else {
             int i2 = this.f8991n0;
             if ((i2 == 1 || i2 == 0) && this.f8987H0 == 2) {
@@ -809,38 +809,38 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         }
     }
 
-    public final void m33949ig(boolean z) {
+    public final void m33952ig(boolean z) {
         if (this.f8983D0 != z) {
             this.f8983D0 = z;
-            m33934qf(z ? 1.0f : 0.0f);
+            m33937qf(z ? 1.0f : 0.0f);
         }
     }
 
-    public final void m33947jg(boolean z) {
+    public final void m33950jg(boolean z) {
         if (this.f8990K0 != z) {
             this.f8990K0 = z;
-            m33936pf(z ? 1.0f : 0.0f);
+            m33939pf(z ? 1.0f : 0.0f);
         }
     }
 
-    public final void m33945kg(String str) {
+    public final void m33948kg(String str) {
         if (!this.f8986G0) {
-            if (this.f30167b.m2930B4().m4694g3().m28143j()) {
-                C1379j0.m37298v0();
+            if (this.f30170b.m2930B4().m4694g3().m28145j()) {
+                C1379j0.m37301v0();
                 return;
             }
-            m33951hg(true);
+            m33954hg(true);
             final String str2 = m9139w9() != null ? m9139w9().f9009f : null;
-            this.f30167b.m2270r4().m14783o(new TdApi.SetRecoveryEmailAddress(str2, str), new Client.AbstractC7865g() {
+            this.f30170b.m2270r4().m14783o(new TdApi.SetRecoveryEmailAddress(str2, str), new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
-                    View$OnClickListenerC2665lj.this.m33993Kf(str2, object);
+                    View$OnClickListenerC2665lj.this.m33996Kf(str2, object);
                 }
             });
         }
     }
 
-    public final void m33943lg(float f) {
+    public final void m33946lg(float f) {
         if (this.f9001x0 != f) {
             this.f9001x0 = f;
             this.f8996s0.setAlpha(Math.min(1.0f, f));
@@ -850,30 +850,30 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         }
     }
 
-    public final void m33941mg(final String str, String str2, String str3) {
+    public final void m33944mg(final String str, String str2, String str3) {
         if (!this.f8986G0) {
-            if (this.f30167b.m2930B4().m4694g3().m28143j()) {
-                C1379j0.m37298v0();
+            if (this.f30170b.m2930B4().m4694g3().m28145j()) {
+                C1379j0.m37301v0();
                 return;
             }
-            m33951hg(true);
-            this.f30167b.m2270r4().m14783o(new TdApi.SetPassword((this.f8991n0 == 1 || m9139w9() == null) ? null : m9139w9().f9009f, str, str2, this.f8991n0 != 0, str3), new Client.AbstractC7865g() {
+            m33954hg(true);
+            this.f30170b.m2270r4().m14783o(new TdApi.SetPassword((this.f8991n0 == 1 || m9139w9() == null) ? null : m9139w9().f9009f, str, str2, this.f8991n0 != 0, str3), new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
-                    View$OnClickListenerC2665lj.this.m33991Mf(str, object);
+                    View$OnClickListenerC2665lj.this.m33994Mf(str, object);
                 }
             });
         }
     }
 
-    public final void m33940nf(float f) {
+    public final void m33943nf(float f) {
         if (this.f8982C0 == null) {
             this.f8982C0 = new C3950k(1, this, C2057b.f7283e, 180L, this.f8997t0.getAlpha());
         }
-        this.f8982C0.m29544i(f);
+        this.f8982C0.m29546i(f);
     }
 
-    public final void m33939ng(String str, int i) {
+    public final void m33942ng(String str, int i) {
         if (this.f8987H0 != i) {
             if (i != 4) {
                 this.f8987H0 = i;
@@ -883,30 +883,30 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
             Runnable runnable = null;
             if (i != 0) {
                 if (i == 1) {
-                    m33959dg(null);
-                    m33953gg(null, false);
+                    m33962dg(null);
+                    m33956gg(null, false);
                     this.f8988I0 = str;
                     this.f9000w0 = true;
-                    m33936pf(0.0f);
+                    m33939pf(0.0f);
                     this.f8995r0.m17906d2(R.string.ReEnterAPassword, true, null);
                     return;
                 } else if (i == 2) {
-                    m33959dg(null);
-                    String z = C1363c0.m37407z(this.f8988I0);
+                    m33962dg(null);
+                    String z = C1363c0.m37410z(this.f8988I0);
                     this.f8989J0 = z;
                     this.f8995r0.m17907b2(R.string.CreateAHintForYourPassword, z, false, null);
                     if (this.f8991n0 == 0) {
-                        this.f8996s0.m18786g(R.drawable.baseline_check_24);
+                        this.f8996s0.m18787g(R.drawable.baseline_check_24);
                         return;
                     }
                     return;
                 } else if (i == 3) {
                     this.f9000w0 = true;
-                    m33936pf(0.0f);
+                    m33939pf(0.0f);
                     this.f8995r0.m17906d2(R.string.YourEmail, false, new Runnable() {
                         @Override
                         public final void run() {
-                            View$OnClickListenerC2665lj.this.m33989Of();
+                            View$OnClickListenerC2665lj.this.m33992Of();
                         }
                     });
                     return;
@@ -914,15 +914,15 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
                     return;
                 }
             }
-            m33959dg(null);
+            m33962dg(null);
             this.f9000w0 = true;
-            m33936pf(0.0f);
+            m33939pf(0.0f);
             View$OnFocusChangeListenerC7069y1 y1Var = this.f8995r0;
             if (i == 4) {
                 runnable = new Runnable() {
                     @Override
                     public final void run() {
-                        View$OnClickListenerC2665lj.this.m33990Nf();
+                        View$OnClickListenerC2665lj.this.m33993Nf();
                     }
                 };
             }
@@ -936,11 +936,11 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         String str;
         FrameLayoutFix frameLayoutFix = new FrameLayoutFix(context);
         C10192g.m5782i(frameLayoutFix, R.id.theme_color_filling, this);
-        int A = ((C1357a0.m37554A() - View$OnClickListenerC9170d1.m10066c3(false)) - C1357a0.m37541i(175.0f)) / 2;
+        int A = ((C1357a0.m37557A() - View$OnClickListenerC9170d1.m10065c3(false)) - C1357a0.m37544i(175.0f)) / 2;
         FrameLayout.LayoutParams t1 = FrameLayoutFix.m18007t1(-1, -2, 51);
         t1.topMargin = A;
-        t1.leftMargin = C1357a0.m37541i(16.0f);
-        t1.rightMargin = C1357a0.m37541i(16.0f);
+        t1.leftMargin = C1357a0.m37544i(16.0f);
+        t1.rightMargin = C1357a0.m37544i(16.0f);
         View$OnFocusChangeListenerC7069y1 y1Var = new View$OnFocusChangeListenerC7069y1(context);
         this.f8995r0 = y1Var;
         y1Var.getEditText().setImeOptions(268435462);
@@ -977,7 +977,7 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
             case 11:
                 TdApi.PasswordState passwordState = this.f8992o0;
                 if (passwordState != null && (str = passwordState.passwordHint) != null && !str.isEmpty()) {
-                    this.f8995r0.setHint(C4403w.m27865j1(R.string.Hint, this.f8992o0.passwordHint));
+                    this.f8995r0.setHint(C4403w.m27867j1(R.string.Hint, this.f8992o0.passwordHint));
                     break;
                 } else {
                     this.f8995r0.setHint(R.string.EnterAPassword);
@@ -992,8 +992,8 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
                 break;
             case 5:
                 TdApi.AuthorizationState authorizationState = this.f8993p0;
-                if (authorizationState != null && authorizationState.getConstructor() == 187548796 && !C5070i.m24061i(((TdApi.AuthorizationStateWaitPassword) this.f8993p0).passwordHint)) {
-                    this.f8995r0.setHint(C4403w.m27865j1(R.string.Hint, ((TdApi.AuthorizationStateWaitPassword) this.f8993p0).passwordHint));
+                if (authorizationState != null && authorizationState.getConstructor() == 187548796 && !C5070i.m24062i(((TdApi.AuthorizationStateWaitPassword) this.f8993p0).passwordHint)) {
+                    this.f8995r0.setHint(C4403w.m27867j1(R.string.Hint, ((TdApi.AuthorizationStateWaitPassword) this.f8993p0).passwordHint));
                     break;
                 } else {
                     this.f8995r0.setHint(R.string.EnterAPassword);
@@ -1007,17 +1007,17 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         }
         this.f8995r0.setLayoutParams(t1);
         frameLayoutFix.addView(this.f8995r0);
-        int i = C1357a0.m37541i(4.0f);
+        int i = C1357a0.m37544i(4.0f);
         int i2 = i * 2;
-        FrameLayout.LayoutParams t12 = FrameLayoutFix.m18007t1(C1357a0.m37541i(56.0f) + i2, C1357a0.m37541i(56.0f) + i2, 85);
-        int i3 = C1357a0.m37541i(16.0f) - i;
+        FrameLayout.LayoutParams t12 = FrameLayoutFix.m18007t1(C1357a0.m37544i(56.0f) + i2, C1357a0.m37544i(56.0f) + i2, 85);
+        int i3 = C1357a0.m37544i(16.0f) - i;
         t12.bottomMargin = i3;
         t12.rightMargin = i3;
         C6851c0 c0Var = new C6851c0(context);
         this.f8996s0 = c0Var;
         m9163t8(c0Var);
         this.f8996s0.setId(R.id.btn_done);
-        this.f8996s0.m18789d(m33931sf(), 56.0f, 4.0f, R.id.theme_color_circleButtonRegular, R.id.theme_color_circleButtonRegularIcon);
+        this.f8996s0.m18790d(m33934sf(), 56.0f, 4.0f, R.id.theme_color_circleButtonRegular, R.id.theme_color_circleButtonRegularIcon);
         this.f8996s0.setOnClickListener(this);
         this.f8996s0.setLayoutParams(t12);
         this.f8996s0.setAlpha(0.0f);
@@ -1030,10 +1030,10 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         this.f8997t0.setTextColor(C11524j.m228N(R.id.theme_color_textNeutral));
         m9119z8(this.f8997t0, R.id.theme_color_textNeutral);
         this.f8997t0.setTextSize(1, 15.0f);
-        this.f8997t0.setPadding(C1357a0.m37541i(16.0f), C1357a0.m37541i(16.0f), C1357a0.m37541i(16.0f), C1357a0.m37541i(16.0f));
+        this.f8997t0.setPadding(C1357a0.m37544i(16.0f), C1357a0.m37544i(16.0f), C1357a0.m37544i(16.0f), C1357a0.m37544i(16.0f));
         this.f8997t0.setOnClickListener(this);
         this.f8997t0.setAlpha(0.0f);
-        C1399s0.m37193a0(this.f8997t0);
+        C1399s0.m37196a0(this.f8997t0);
         int i4 = this.f8991n0;
         switch (i4) {
             case 2:
@@ -1045,13 +1045,13 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
                 if (i4 != 11 && i4 != 2 && i4 != 5 && i4 != 10) {
                     if (i4 == 3 || i4 == 6) {
                         String str2 = m9139w9() != null ? ((C2666a) m9139w9()).f9008e : null;
-                        if (C5070i.m24061i(str2)) {
-                            charSequence = C4403w.m27869i1(R.string.RecoveryCodeSentEmailUnknown);
-                            this.f8997t0.setText(C4403w.m27869i1(R.string.RestoreEmailTroubleUnknown));
+                        if (C5070i.m24062i(str2)) {
+                            charSequence = C4403w.m27871i1(R.string.RecoveryCodeSentEmailUnknown);
+                            this.f8997t0.setText(C4403w.m27871i1(R.string.RestoreEmailTroubleUnknown));
                             break;
                         } else {
-                            CharSequence m1 = C4403w.m27853m1(R.string.RecoveryCodeSent, str2);
-                            this.f8997t0.setText(C4403w.m27865j1(R.string.HavingTroubleAccessing, str2));
+                            CharSequence m1 = C4403w.m27855m1(R.string.RecoveryCodeSent, str2);
+                            this.f8997t0.setText(C4403w.m27867j1(R.string.HavingTroubleAccessing, str2));
                             charSequence = m1;
                             break;
                         }
@@ -1059,20 +1059,20 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
                     charSequence = null;
                     break;
                 } else {
-                    this.f8997t0.setText(C4403w.m27869i1(R.string.ForgotPassword));
-                    charSequence = C4403w.m27869i1(this.f8991n0 == 10 ? R.string.TransferOwnershipPasswordAlertHint : R.string.LoginPasswordText);
+                    this.f8997t0.setText(C4403w.m27871i1(R.string.ForgotPassword));
+                    charSequence = C4403w.m27871i1(this.f8991n0 == 10 ? R.string.TransferOwnershipPasswordAlertHint : R.string.LoginPasswordText);
                     break;
                 }
             case 4:
-                charSequence = C4403w.m27869i1(R.string.YourEmailInfo);
+                charSequence = C4403w.m27871i1(R.string.YourEmailInfo);
                 break;
             case 7:
             case 8:
             case 9:
-                if (m33930tf()) {
-                    this.f8997t0.setText(C4403w.m27869i1(R.string.DidNotGetTheCode));
+                if (m33933tf()) {
+                    this.f8997t0.setText(C4403w.m27871i1(R.string.DidNotGetTheCode));
                 }
-                charSequence = m33932rf(((TdApi.AuthorizationStateWaitCode) this.f8993p0).codeInfo.type, this.f8994q0);
+                charSequence = m33935rf(((TdApi.AuthorizationStateWaitCode) this.f8993p0).codeInfo.type, this.f8994q0);
                 break;
             default:
                 charSequence = null;
@@ -1083,10 +1083,10 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
             RelativeLayout relativeLayout = new RelativeLayout(context);
             relativeLayout.setLayoutParams(FrameLayoutFix.m18007t1(-2, -2, 83));
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-2, -2);
-            this.f8997t0.setPadding(C1357a0.m37541i(16.0f), C1357a0.m37541i(15.0f), C1357a0.m37541i(12.0f), C1357a0.m37541i(16.0f));
+            this.f8997t0.setPadding(C1357a0.m37544i(16.0f), C1357a0.m37544i(15.0f), C1357a0.m37544i(12.0f), C1357a0.m37544i(16.0f));
             this.f8997t0.setLayoutParams(layoutParams);
             relativeLayout.addView(this.f8997t0);
-            RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(C1357a0.m37541i(16.0f), C1357a0.m37541i(16.0f));
+            RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(C1357a0.m37544i(16.0f), C1357a0.m37544i(16.0f));
             layoutParams2.addRule(15);
             layoutParams2.addRule(1, R.id.btn_forgotPassword);
             C6977n2 n2Var = new C6977n2(context);
@@ -1103,16 +1103,16 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
             frameLayoutFix.addView(this.f8997t0);
         }
         FrameLayout.LayoutParams s1 = FrameLayoutFix.m18008s1(-2, -2);
-        int i6 = C1357a0.m37541i(16.0f);
+        int i6 = C1357a0.m37544i(16.0f);
         s1.rightMargin = i6;
         s1.leftMargin = i6;
-        s1.topMargin = A + C1357a0.m37541i(60.0f) + C1357a0.m37541i(14.0f);
+        s1.topMargin = A + C1357a0.m37544i(60.0f) + C1357a0.m37544i(14.0f);
         C6847b2 b2Var2 = new C6847b2(context);
         this.f8999v0 = b2Var2;
         b2Var2.setTextSize(1, 15.0f);
         this.f8999v0.setTextColor(C11524j.m213U0());
         m9119z8(this.f8999v0, R.id.theme_color_textLight);
-        this.f8999v0.setTypeface(C1389o.m37258k());
+        this.f8999v0.setTypeface(C1389o.m37261k());
         this.f8999v0.setLayoutParams(s1);
         if (charSequence != null) {
             this.f8999v0.setText(charSequence);
@@ -1123,23 +1123,23 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         m9446Ed(this.f8995r0.getEditText());
         int i7 = this.f8991n0;
         if (i7 == 3 || i7 == 5 || i7 == 6 || i7 == 7) {
-            this.f30167b.m2781K9().m1843k(this);
+            this.f30170b.m2781K9().m1843k(this);
         }
         return frameLayoutFix;
     }
 
-    public final void m33938of(float f) {
+    public final void m33941of(float f) {
         if (this.f9003z0 == null) {
             this.f9003z0 = new C3950k(2, this, C2057b.f7283e, 180L, this.f8999v0.getAlpha());
         }
-        this.f9003z0.m29544i(f);
+        this.f9003z0.m29546i(f);
     }
 
-    public final void m33937og() {
+    public final void m33940og() {
         m9418Ic(R.string.Warning, R.string.YourEmailSkipWarningText, new DialogInterface.OnClickListener() {
             @Override
             public final void onClick(DialogInterface dialogInterface, int i) {
-                View$OnClickListenerC2665lj.this.m33987Pf(dialogInterface, i);
+                View$OnClickListenerC2665lj.this.m33990Pf(dialogInterface, i);
             }
         });
     }
@@ -1148,72 +1148,72 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
     public void onClick(View view) {
         int id2 = view.getId();
         if (id2 == R.id.btn_done) {
-            m33977Uf();
+            m33980Uf();
         } else if (id2 == R.id.btn_forgotPassword) {
-            m33975Vf();
+            m33978Vf();
         }
     }
 
-    public final void m33936pf(float f) {
+    public final void m33939pf(float f) {
         if (this.f9002y0 == null) {
             this.f9002y0 = new C3950k(0, this, C2057b.f7279a, 300L, this.f9001x0);
         }
-        this.f9002y0.m29544i(f);
+        this.f9002y0.m29546i(f);
     }
 
-    public final void m33935pg(final String str) {
+    public final void m33938pg(final String str) {
         if (!this.f8986G0) {
-            if (this.f30167b.m2930B4().m4694g3().m28143j()) {
-                C1379j0.m37298v0();
+            if (this.f30170b.m2930B4().m4694g3().m28145j()) {
+                C1379j0.m37301v0();
                 return;
             }
-            m33951hg(true);
-            this.f30167b.m2270r4().m14783o(new TdApi.GetRecoveryEmailAddress(str), new Client.AbstractC7865g() {
+            m33954hg(true);
+            this.f30170b.m2270r4().m14783o(new TdApi.GetRecoveryEmailAddress(str), new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
-                    View$OnClickListenerC2665lj.this.m33983Rf(str, object);
+                    View$OnClickListenerC2665lj.this.m33986Rf(str, object);
                 }
             });
         }
     }
 
-    public final void m33934qf(float f) {
+    public final void m33937qf(float f) {
         if (this.f8984E0 == null) {
             this.f8984E0 = new C3950k(3, this, C2057b.f7280b, 180L);
         }
-        this.f8984E0.m29544i(f);
+        this.f8984E0.m29546i(f);
     }
 
-    public final void m33933qg() {
+    public final void m33936qg() {
         TdApi.AuthorizationState authorizationState = this.f8993p0;
         if (authorizationState != null && authorizationState.getConstructor() == 52643073) {
-            this.f8999v0.setText(m33932rf(((TdApi.AuthorizationStateWaitCode) this.f8993p0).codeInfo.type, this.f8994q0));
-            if (!m33930tf()) {
-                m33959dg(null);
+            this.f8999v0.setText(m33935rf(((TdApi.AuthorizationStateWaitCode) this.f8993p0).codeInfo.type, this.f8994q0));
+            if (!m33933tf()) {
+                m33962dg(null);
             }
         }
     }
 
-    public final CharSequence m33932rf(TdApi.AuthenticationCodeType authenticationCodeType, String str) {
+    public final CharSequence m33935rf(TdApi.AuthenticationCodeType authenticationCodeType, String str) {
         if (this.f8991n0 == 9) {
-            return C1363c0.m37449Y(C4403w.m27865j1(R.string.CancelAccountResetInfo, str));
+            return C1363c0.m37452Y(C4403w.m27867j1(R.string.CancelAccountResetInfo, str));
         }
-        this.f8995r0.setHint(C4403w.m27869i1(R.string.login_Code));
+        this.f8995r0.setHint(C4403w.m27871i1(R.string.login_Code));
         switch (authenticationCodeType.getConstructor()) {
             case TdApi.AuthenticationCodeTypeMissedCall.CONSTRUCTOR:
                 TdApi.AuthenticationCodeTypeMissedCall authenticationCodeTypeMissedCall = (TdApi.AuthenticationCodeTypeMissedCall) authenticationCodeType;
-                this.f8995r0.setHint(C4403w.m27836q2(R.string.login_LastDigits, authenticationCodeTypeMissedCall.length));
-                return C1363c0.m37448Z(C4403w.m27865j1(R.string.format_doubleLines, C4403w.m27865j1(R.string.SentMissedCall, C1363c0.m37410w(authenticationCodeTypeMissedCall.phoneNumberPrefix)), C4403w.m27844o2(R.string.SentMissedCallXDigits, authenticationCodeTypeMissedCall.length)), R.id.theme_color_textLight);
+                this.f8995r0.setHint(C4403w.m27838q2(R.string.login_LastDigits, authenticationCodeTypeMissedCall.length));
+                return C1363c0.m37451Z(C4403w.m27867j1(R.string.format_doubleLines, C4403w.m27867j1(R.string.SentMissedCall, C1363c0.m37413w(authenticationCodeTypeMissedCall.phoneNumberPrefix)), C4403w.m27846o2(R.string.SentMissedCallXDigits, authenticationCodeTypeMissedCall.length)), R.id.theme_color_textLight);
             case TdApi.AuthenticationCodeTypeSms.CONSTRUCTOR:
-                return C1363c0.m37448Z(C4403w.m27865j1(R.string.SentSmsCode, str), R.id.theme_color_textLight);
+                return C1363c0.m37451Z(C4403w.m27867j1(R.string.SentSmsCode, str), R.id.theme_color_textLight);
             case TdApi.AuthenticationCodeTypeFlashCall.CONSTRUCTOR:
-                return C1363c0.m37448Z(C4403w.m27865j1(R.string.SentCallOnly, str), R.id.theme_color_textLight);
+                return C1363c0.m37451Z(C4403w.m27867j1(R.string.SentCallOnly, str), R.id.theme_color_textLight);
             case TdApi.AuthenticationCodeTypeCall.CONSTRUCTOR:
-                return C1363c0.m37448Z(C4403w.m27865j1(R.string.SentCallCode, str), R.id.theme_color_textLight);
+                return C1363c0.m37451Z(C4403w.m27867j1(R.string.SentCallCode, str), R.id.theme_color_textLight);
             case TdApi.AuthenticationCodeTypeTelegramMessage.CONSTRUCTOR:
-                return C1363c0.m37448Z(C4403w.m27869i1(R.string.SentAppCode), R.id.theme_color_textLight);
+                return C1363c0.m37451Z(C4403w.m27871i1(R.string.SentAppCode), R.id.theme_color_textLight);
             default:
-                return C1363c0.m37448Z(C4403w.m27869i1(R.string.SentSmsCode), R.id.theme_color_textLight);
+                return C1363c0.m37451Z(C4403w.m27871i1(R.string.SentSmsCode), R.id.theme_color_textLight);
         }
     }
 
@@ -1231,14 +1231,14 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
             } else if (i == 8) {
                 m9280c9(R.id.controller_phone);
             }
-            if (C1379j0.m37358J()) {
+            if (C1379j0.m37361J()) {
                 int i2 = this.f8991n0;
                 if (i2 == 5) {
                     this.f8995r0.setText("objection");
-                    m33977Uf();
+                    m33980Uf();
                 } else if (i2 == 7 || i2 == 8) {
-                    this.f8995r0.setText(this.f30167b.m2609Va());
-                    m33977Uf();
+                    this.f8995r0.setText(this.f30170b.m2609Va());
+                    m33980Uf();
                 }
             }
             this.f8985F0 = true;
@@ -1248,13 +1248,13 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
             this.f8997t0.postDelayed(new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC2665lj.this.m33926xf();
+                    View$OnClickListenerC2665lj.this.m33929xf();
                 }
             }, 100L);
         }
     }
 
-    public final int m33931sf() {
+    public final int m33934sf() {
         int i = this.f8991n0;
         if (i == 4) {
             return R.drawable.baseline_check_24;
@@ -1270,7 +1270,7 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
         }
     }
 
-    public final boolean m33930tf() {
+    public final boolean m33933tf() {
         TdApi.AuthorizationState authorizationState = this.f8993p0;
         return (authorizationState == null || authorizationState.getConstructor() != 52643073 || ((TdApi.AuthorizationStateWaitCode) this.f8993p0).codeInfo.nextType == null) ? false : true;
     }
@@ -1291,22 +1291,22 @@ public class View$OnClickListenerC2665lj extends AbstractC9323v4<C2666a> impleme
             this.f9006c = null;
         }
 
-        public C2666a m33923a(int i) {
+        public C2666a m33926a(int i) {
             this.f9010g = i;
             return this;
         }
 
-        public C2666a m33922b(String str) {
+        public C2666a m33925b(String str) {
             this.f9008e = str;
             return this;
         }
 
-        public C2666a m33921c(String str) {
+        public C2666a m33924c(String str) {
             this.f9009f = str;
             return this;
         }
 
-        public C2666a m33920d(AbstractC5918j<String> jVar) {
+        public C2666a m33923d(AbstractC5918j<String> jVar) {
             this.f9011h = jVar;
             return this;
         }

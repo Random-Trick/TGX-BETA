@@ -12,15 +12,15 @@ import p217p4.C8046j;
 import p231q4.AbstractC8236e;
 
 public abstract class AbstractC8236e implements AbstractC8042g {
-    public final ArrayDeque<C8238b> f26685a = new ArrayDeque<>();
-    public final ArrayDeque<AbstractC8047k> f26686b;
-    public final PriorityQueue<C8238b> f26687c;
-    public C8238b f26688d;
-    public long f26689e;
-    public long f26690f;
+    public final ArrayDeque<C8238b> f26688a = new ArrayDeque<>();
+    public final ArrayDeque<AbstractC8047k> f26689b;
+    public final PriorityQueue<C8238b> f26690c;
+    public C8238b f26691d;
+    public long f26692e;
+    public long f26693f;
 
     public static final class C8238b extends C8046j implements Comparable<C8238b> {
-        public long f26691S;
+        public long f26694S;
 
         public C8238b() {
         }
@@ -29,9 +29,9 @@ public abstract class AbstractC8236e implements AbstractC8042g {
             if (isEndOfStream() != bVar.isEndOfStream()) {
                 return isEndOfStream() ? 1 : -1;
             }
-            long j = this.f26126N - bVar.f26126N;
+            long j = this.f26129N - bVar.f26129N;
             if (j == 0) {
-                j = this.f26691S - bVar.f26691S;
+                j = this.f26694S - bVar.f26694S;
                 if (j == 0) {
                     return 0;
                 }
@@ -41,127 +41,127 @@ public abstract class AbstractC8236e implements AbstractC8042g {
     }
 
     public static final class C8239c extends AbstractC8047k {
-        public AbstractC3437a.AbstractC3438a<C8239c> f26692c;
+        public AbstractC3437a.AbstractC3438a<C8239c> f26695c;
 
         public C8239c(AbstractC3437a.AbstractC3438a<C8239c> aVar) {
-            this.f26692c = aVar;
+            this.f26695c = aVar;
         }
 
         @Override
         public final void release() {
-            this.f26692c.mo11835a(this);
+            this.f26695c.mo11834a(this);
         }
     }
 
     public AbstractC8236e() {
         for (int i = 0; i < 10; i++) {
-            this.f26685a.add(new C8238b());
+            this.f26688a.add(new C8238b());
         }
-        this.f26686b = new ArrayDeque<>();
+        this.f26689b = new ArrayDeque<>();
         for (int i2 = 0; i2 < 2; i2++) {
-            this.f26686b.add(new C8239c(new AbstractC3437a.AbstractC3438a() {
+            this.f26689b.add(new C8239c(new AbstractC3437a.AbstractC3438a() {
                 @Override
-                public final void mo11835a(AbstractC3437a aVar) {
-                    AbstractC8236e.this.m13061p((AbstractC8236e.C8239c) aVar);
+                public final void mo11834a(AbstractC3437a aVar) {
+                    AbstractC8236e.this.m13060p((AbstractC8236e.C8239c) aVar);
                 }
             }));
         }
-        this.f26687c = new PriorityQueue<>();
+        this.f26690c = new PriorityQueue<>();
     }
 
     @Override
-    public void mo13075a() {
+    public void mo13074a() {
     }
 
     @Override
-    public void mo13074c(long j) {
-        this.f26689e = j;
+    public void mo13073c(long j) {
+        this.f26692e = j;
     }
 
     @Override
     public void flush() {
-        this.f26690f = 0L;
-        this.f26689e = 0L;
-        while (!this.f26687c.isEmpty()) {
-            m13062o((C8238b) C1216l0.m37968j(this.f26687c.poll()));
+        this.f26693f = 0L;
+        this.f26692e = 0L;
+        while (!this.f26690c.isEmpty()) {
+            m13061o((C8238b) C1216l0.m37971j(this.f26690c.poll()));
         }
-        C8238b bVar = this.f26688d;
+        C8238b bVar = this.f26691d;
         if (bVar != null) {
-            m13062o(bVar);
-            this.f26688d = null;
+            m13061o(bVar);
+            this.f26691d = null;
         }
     }
 
-    public abstract AbstractC8041f mo13070g();
+    public abstract AbstractC8041f mo13069g();
 
-    public abstract void mo13069h(C8046j jVar);
+    public abstract void mo13068h(C8046j jVar);
 
-    public C8046j mo13072e() {
-        C1186a.m38184f(this.f26688d == null);
-        if (this.f26685a.isEmpty()) {
+    public C8046j mo13071e() {
+        C1186a.m38187f(this.f26691d == null);
+        if (this.f26688a.isEmpty()) {
             return null;
         }
-        C8238b pollFirst = this.f26685a.pollFirst();
-        this.f26688d = pollFirst;
+        C8238b pollFirst = this.f26688a.pollFirst();
+        this.f26691d = pollFirst;
         return pollFirst;
     }
 
-    public AbstractC8047k mo13073d() {
-        if (this.f26686b.isEmpty()) {
+    public AbstractC8047k mo13072d() {
+        if (this.f26689b.isEmpty()) {
             return null;
         }
-        while (!this.f26687c.isEmpty() && ((C8238b) C1216l0.m37968j(this.f26687c.peek())).f26126N <= this.f26689e) {
-            C8238b bVar = (C8238b) C1216l0.m37968j(this.f26687c.poll());
+        while (!this.f26690c.isEmpty() && ((C8238b) C1216l0.m37971j(this.f26690c.peek())).f26129N <= this.f26692e) {
+            C8238b bVar = (C8238b) C1216l0.m37971j(this.f26690c.poll());
             if (bVar.isEndOfStream()) {
-                AbstractC8047k kVar = (AbstractC8047k) C1216l0.m37968j(this.f26686b.pollFirst());
+                AbstractC8047k kVar = (AbstractC8047k) C1216l0.m37971j(this.f26689b.pollFirst());
                 kVar.addFlag(4);
-                m13062o(bVar);
+                m13061o(bVar);
                 return kVar;
             }
-            mo13069h(bVar);
-            if (mo13064m()) {
-                AbstractC8041f g = mo13070g();
-                AbstractC8047k kVar2 = (AbstractC8047k) C1216l0.m37968j(this.f26686b.pollFirst());
-                kVar2.m13721e(bVar.f26126N, g, Long.MAX_VALUE);
-                m13062o(bVar);
+            mo13068h(bVar);
+            if (mo13063m()) {
+                AbstractC8041f g = mo13069g();
+                AbstractC8047k kVar2 = (AbstractC8047k) C1216l0.m37971j(this.f26689b.pollFirst());
+                kVar2.m13720e(bVar.f26129N, g, Long.MAX_VALUE);
+                m13061o(bVar);
                 return kVar2;
             }
-            m13062o(bVar);
+            m13061o(bVar);
         }
         return null;
     }
 
-    public final AbstractC8047k m13066k() {
-        return this.f26686b.pollFirst();
+    public final AbstractC8047k m13065k() {
+        return this.f26689b.pollFirst();
     }
 
-    public final long m13065l() {
-        return this.f26689e;
+    public final long m13064l() {
+        return this.f26692e;
     }
 
-    public abstract boolean mo13064m();
+    public abstract boolean mo13063m();
 
-    public void mo13071f(C8046j jVar) {
-        C1186a.m38189a(jVar == this.f26688d);
+    public void mo13070f(C8046j jVar) {
+        C1186a.m38192a(jVar == this.f26691d);
         C8238b bVar = (C8238b) jVar;
         if (bVar.isDecodeOnly()) {
-            m13062o(bVar);
+            m13061o(bVar);
         } else {
-            long j = this.f26690f;
-            this.f26690f = 1 + j;
-            bVar.f26691S = j;
-            this.f26687c.add(bVar);
+            long j = this.f26693f;
+            this.f26693f = 1 + j;
+            bVar.f26694S = j;
+            this.f26690c.add(bVar);
         }
-        this.f26688d = null;
+        this.f26691d = null;
     }
 
-    public final void m13062o(C8238b bVar) {
+    public final void m13061o(C8238b bVar) {
         bVar.clear();
-        this.f26685a.add(bVar);
+        this.f26688a.add(bVar);
     }
 
-    public void m13061p(AbstractC8047k kVar) {
+    public void m13060p(AbstractC8047k kVar) {
         kVar.clear();
-        this.f26686b.add(kVar);
+        this.f26689b.add(kVar);
     }
 }

@@ -35,7 +35,7 @@ public abstract class AbstractC4920a implements Parcelable {
         this();
     }
 
-    public final Parcelable m24448a() {
+    public final Parcelable m24449a() {
         return this.f16783a;
     }
 

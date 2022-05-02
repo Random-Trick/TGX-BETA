@@ -25,7 +25,7 @@ public interface AbstractC10008j<T> extends AbstractC10012l<T> {
         }
 
         public static <T> T m6250e(AbstractC10008j<T> jVar, EnumC7313d dVar) {
-            C8298k.m12934e(dVar, "type");
+            C8298k.m12933e(dVar, "type");
             return (T) AbstractC10012l.C10013a.m6228e(jVar, dVar);
         }
 

@@ -13,11 +13,11 @@ public final class C6124i1 extends BroadcastReceiver {
         this.f19420b = h1Var;
     }
 
-    public final void m21257a(Context context) {
+    public final void m21258a(Context context) {
         this.f19419a = context;
     }
 
-    public final synchronized void m21256b() {
+    public final synchronized void m21257b() {
         Context context = this.f19419a;
         if (context != null) {
             context.unregisterReceiver(this);
@@ -29,8 +29,8 @@ public final class C6124i1 extends BroadcastReceiver {
     public final void onReceive(Context context, Intent intent) {
         Uri data = intent.getData();
         if ("com.google.android.gms".equals(data != null ? data.getSchemeSpecificPart() : null)) {
-            this.f19420b.mo21104a();
-            m21256b();
+            this.f19420b.mo21105a();
+            m21257b();
         }
     }
 }

@@ -12,50 +12,50 @@ public final class C5243d {
     public final AbstractC0196i f17397a;
 
     public C5243d(AbstractC0196i iVar) {
-        this.f17397a = (AbstractC0196i) C6378r.m20506k(iVar);
+        this.f17397a = (AbstractC0196i) C6378r.m20507k(iVar);
     }
 
     @RecentlyNullable
-    public Object m23552a() {
+    public Object m23553a() {
         try {
-            return BinderC8986d.m10763t(this.f17397a.mo42112W());
+            return BinderC8986d.m10762t(this.f17397a.mo42115W());
         } catch (RemoteException e) {
             throw new C5245f(e);
         }
     }
 
-    public void m23551b() {
+    public void m23552b() {
         try {
-            this.f17397a.mo42110p();
+            this.f17397a.mo42113p();
         } catch (RemoteException e) {
             throw new C5245f(e);
         }
     }
 
-    public void m23550c(float f) {
+    public void m23551c(float f) {
         try {
-            this.f17397a.mo42108v(f);
+            this.f17397a.mo42111v(f);
         } catch (RemoteException e) {
             throw new C5245f(e);
         }
     }
 
-    public void m23549d(C5240a aVar) {
+    public void m23550d(C5240a aVar) {
         try {
             if (aVar == null) {
-                this.f17397a.mo42116A(null);
+                this.f17397a.mo42119A(null);
                 return;
             }
-            this.f17397a.mo42116A(aVar.m23557a());
+            this.f17397a.mo42119A(aVar.m23558a());
         } catch (RemoteException e) {
             throw new C5245f(e);
         }
     }
 
-    public void m23548e(@RecentlyNonNull LatLng latLng) {
+    public void m23549e(@RecentlyNonNull LatLng latLng) {
         if (latLng != null) {
             try {
-                this.f17397a.mo42113V(latLng);
+                this.f17397a.mo42116V(latLng);
             } catch (RemoteException e) {
                 throw new C5245f(e);
             }
@@ -69,23 +69,23 @@ public final class C5243d {
             return false;
         }
         try {
-            return this.f17397a.mo42109q0(((C5243d) obj).f17397a);
+            return this.f17397a.mo42112q0(((C5243d) obj).f17397a);
         } catch (RemoteException e) {
             throw new C5245f(e);
         }
     }
 
-    public void m23547f(Object obj) {
+    public void m23548f(Object obj) {
         try {
-            this.f17397a.mo42115D0(BinderC8986d.m10764E0(obj));
+            this.f17397a.mo42118D0(BinderC8986d.m10763E0(obj));
         } catch (RemoteException e) {
             throw new C5245f(e);
         }
     }
 
-    public void m23546g(float f) {
+    public void m23547g(float f) {
         try {
-            this.f17397a.mo42111X(f);
+            this.f17397a.mo42114X(f);
         } catch (RemoteException e) {
             throw new C5245f(e);
         }
@@ -93,7 +93,7 @@ public final class C5243d {
 
     public int hashCode() {
         try {
-            return this.f17397a.mo42114E1();
+            return this.f17397a.mo42117E1();
         } catch (RemoteException e) {
             throw new C5245f(e);
         }

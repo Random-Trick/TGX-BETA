@@ -18,7 +18,7 @@ public class C0188a implements IInterface {
         return this.f667a;
     }
 
-    public final Parcel m42127q(int i, Parcel parcel) {
+    public final Parcel m42130q(int i, Parcel parcel) {
         parcel = Parcel.obtain();
         try {
             this.f667a.transact(i, parcel, parcel, 0);
@@ -31,13 +31,13 @@ public class C0188a implements IInterface {
         }
     }
 
-    public final Parcel m42126s() {
+    public final Parcel m42129s() {
         Parcel obtain = Parcel.obtain();
         obtain.writeInterfaceToken(this.f668b);
         return obtain;
     }
 
-    public final void m42125t(int i, Parcel parcel) {
+    public final void m42128t(int i, Parcel parcel) {
         Parcel obtain = Parcel.obtain();
         try {
             this.f667a.transact(i, parcel, obtain, 0);

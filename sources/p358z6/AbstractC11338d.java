@@ -24,8 +24,8 @@ import p358z6.AbstractC11358f;
 import p358z6.C11414y;
 
 public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implements Serializable {
-    public transient Map<K, Collection<V>> f36265M;
-    public transient int f36266N;
+    public transient Map<K, Collection<V>> f36268M;
+    public transient int f36269N;
 
     public class C11339a extends AbstractC11338d<K, V>.AbstractC11343c<V> {
         public C11339a() {
@@ -39,7 +39,7 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
     }
 
     public class C11340b extends C11414y.AbstractC11422f<K, Collection<V>> {
-        public final transient Map<K, Collection<V>> f36269c;
+        public final transient Map<K, Collection<V>> f36272c;
 
         public class C11341a extends C11414y.AbstractC11419c<K, Collection<V>> {
             public C11341a() {
@@ -47,7 +47,7 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
 
             @Override
             public boolean contains(Object obj) {
-                return C11365i.m813c(C11340b.this.f36269c.entrySet(), obj);
+                return C11365i.m813c(C11340b.this.f36272c.entrySet(), obj);
             }
 
             @Override
@@ -71,17 +71,17 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
         }
 
         public class C11342b implements Iterator<Map.Entry<K, Collection<V>>>, p126j$.util.Iterator {
-            public final Iterator<Map.Entry<K, Collection<V>>> f36271a;
+            public final Iterator<Map.Entry<K, Collection<V>>> f36274a;
             @NullableDecl
-            public Collection<V> f36272b;
+            public Collection<V> f36275b;
 
             public C11342b() {
-                this.f36271a = C11340b.this.f36269c.entrySet().iterator();
+                this.f36274a = C11340b.this.f36272c.entrySet().iterator();
             }
 
             public Map.Entry<K, Collection<V>> next() {
-                Map.Entry<K, Collection<V>> next = this.f36271a.next();
-                this.f36272b = next.getValue();
+                Map.Entry<K, Collection<V>> next = this.f36274a.next();
+                this.f36275b = next.getValue();
                 return C11340b.this.m863e(next);
             }
 
@@ -97,21 +97,21 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
 
             @Override
             public boolean hasNext() {
-                return this.f36271a.hasNext();
+                return this.f36274a.hasNext();
             }
 
             @Override
             public void remove() {
-                C11363h.m818c(this.f36272b != null);
-                this.f36271a.remove();
-                AbstractC11338d.this.f36266N -= this.f36272b.size();
-                this.f36272b.clear();
-                this.f36272b = null;
+                C11363h.m818c(this.f36275b != null);
+                this.f36274a.remove();
+                AbstractC11338d.this.f36269N -= this.f36275b.size();
+                this.f36275b.clear();
+                this.f36275b = null;
             }
         }
 
         public C11340b(Map<K, Collection<V>> map) {
-            this.f36269c = map;
+            this.f36272c = map;
         }
 
         @Override
@@ -120,7 +120,7 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
         }
 
         public Collection<V> get(Object obj) {
-            Collection<V> collection = (Collection) C11414y.m683g(this.f36269c, obj);
+            Collection<V> collection = (Collection) C11414y.m683g(this.f36272c, obj);
             if (collection == null) {
                 return null;
             }
@@ -129,7 +129,7 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
 
         @Override
         public void clear() {
-            if (this.f36269c == AbstractC11338d.this.f36265M) {
+            if (this.f36272c == AbstractC11338d.this.f36268M) {
                 AbstractC11338d.this.clear();
             } else {
                 C11407u.m710c(new C11342b());
@@ -138,17 +138,17 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
 
         @Override
         public boolean containsKey(Object obj) {
-            return C11414y.m684f(this.f36269c, obj);
+            return C11414y.m684f(this.f36272c, obj);
         }
 
         public Collection<V> remove(Object obj) {
-            Collection<V> remove = this.f36269c.remove(obj);
+            Collection<V> remove = this.f36272c.remove(obj);
             if (remove == null) {
                 return null;
             }
             Collection<V> o = AbstractC11338d.this.mo874o();
             o.addAll(remove);
-            AbstractC11338d.this.f36266N -= remove.size();
+            AbstractC11338d.this.f36269N -= remove.size();
             remove.clear();
             return o;
         }
@@ -160,12 +160,12 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
 
         @Override
         public boolean equals(@NullableDecl Object obj) {
-            return this == obj || this.f36269c.equals(obj);
+            return this == obj || this.f36272c.equals(obj);
         }
 
         @Override
         public int hashCode() {
-            return this.f36269c.hashCode();
+            return this.f36272c.hashCode();
         }
 
         @Override
@@ -175,25 +175,25 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
 
         @Override
         public int size() {
-            return this.f36269c.size();
+            return this.f36272c.size();
         }
 
         @Override
         public String toString() {
-            return this.f36269c.toString();
+            return this.f36272c.toString();
         }
     }
 
     public abstract class AbstractC11343c<T> implements java.util.Iterator<T>, p126j$.util.Iterator {
-        public final java.util.Iterator<Map.Entry<K, Collection<V>>> f36276a;
+        public final java.util.Iterator<Map.Entry<K, Collection<V>>> f36279a;
         @NullableDecl
-        public K f36277b = null;
+        public K f36280b = null;
         @MonotonicNonNullDecl
-        public Collection<V> f36278c = null;
-        public java.util.Iterator<V> f36274M = C11407u.m707f();
+        public Collection<V> f36281c = null;
+        public java.util.Iterator<V> f36277M = C11407u.m707f();
 
         public AbstractC11343c() {
-            this.f36276a = (java.util.Iterator<Map.Entry<K, V>>) AbstractC11338d.this.f36265M.entrySet().iterator();
+            this.f36279a = (java.util.Iterator<Map.Entry<K, V>>) AbstractC11338d.this.f36268M.entrySet().iterator();
         }
 
         public abstract T mo861a(K k, V v);
@@ -210,26 +210,26 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
 
         @Override
         public boolean hasNext() {
-            return this.f36276a.hasNext() || this.f36274M.hasNext();
+            return this.f36279a.hasNext() || this.f36277M.hasNext();
         }
 
         @Override
         public T next() {
-            if (!this.f36274M.hasNext()) {
-                Map.Entry<K, Collection<V>> next = this.f36276a.next();
-                this.f36277b = next.getKey();
+            if (!this.f36277M.hasNext()) {
+                Map.Entry<K, Collection<V>> next = this.f36279a.next();
+                this.f36280b = next.getKey();
                 Collection<V> value = next.getValue();
-                this.f36278c = value;
-                this.f36274M = value.iterator();
+                this.f36281c = value;
+                this.f36277M = value.iterator();
             }
-            return mo861a(this.f36277b, this.f36274M.next());
+            return mo861a(this.f36280b, this.f36277M.next());
         }
 
         @Override
         public void remove() {
-            this.f36274M.remove();
-            if (this.f36278c.isEmpty()) {
-                this.f36276a.remove();
+            this.f36277M.remove();
+            if (this.f36281c.isEmpty()) {
+                this.f36279a.remove();
             }
             AbstractC11338d.m876m(AbstractC11338d.this);
         }
@@ -239,11 +239,11 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
 
         public class C11345a implements java.util.Iterator<K>, p126j$.util.Iterator {
             @NullableDecl
-            public Map.Entry<K, Collection<V>> f36280a;
-            public final java.util.Iterator f36281b;
+            public Map.Entry<K, Collection<V>> f36283a;
+            public final java.util.Iterator f36284b;
 
             public C11345a(java.util.Iterator it) {
-                this.f36281b = it;
+                this.f36284b = it;
             }
 
             @Override
@@ -258,24 +258,24 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
 
             @Override
             public boolean hasNext() {
-                return this.f36281b.hasNext();
+                return this.f36284b.hasNext();
             }
 
             @Override
             public K next() {
-                Map.Entry<K, Collection<V>> entry = (Map.Entry) this.f36281b.next();
-                this.f36280a = entry;
+                Map.Entry<K, Collection<V>> entry = (Map.Entry) this.f36284b.next();
+                this.f36283a = entry;
                 return entry.getKey();
             }
 
             @Override
             public void remove() {
-                C11363h.m818c(this.f36280a != null);
-                Collection<V> value = this.f36280a.getValue();
-                this.f36281b.remove();
-                AbstractC11338d.this.f36266N -= value.size();
+                C11363h.m818c(this.f36283a != null);
+                Collection<V> value = this.f36283a.getValue();
+                this.f36284b.remove();
+                AbstractC11338d.this.f36269N -= value.size();
                 value.clear();
-                this.f36280a = null;
+                this.f36283a = null;
             }
         }
 
@@ -315,7 +315,7 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
             if (remove != null) {
                 i = remove.size();
                 remove.clear();
-                AbstractC11338d.this.f36266N -= i;
+                AbstractC11338d.this.f36269N -= i;
             } else {
                 i = 0;
             }
@@ -563,7 +563,7 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
 
     public class C11349h extends AbstractC11338d<K, V>.C11340b implements SortedMap<K, Collection<V>> {
         @MonotonicNonNullDecl
-        public SortedSet<K> f36286N;
+        public SortedSet<K> f36289N;
 
         public C11349h(SortedMap<K, Collection<V>> sortedMap) {
             super(sortedMap);
@@ -584,17 +584,17 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
         }
 
         public SortedSet<K> keySet() {
-            SortedSet<K> sortedSet = this.f36286N;
+            SortedSet<K> sortedSet = this.f36289N;
             if (sortedSet != null) {
                 return sortedSet;
             }
             SortedSet<K> f = mo849f();
-            this.f36286N = f;
+            this.f36289N = f;
             return f;
         }
 
         public SortedMap<K, Collection<V>> mo847h() {
-            return (SortedMap) this.f36269c;
+            return (SortedMap) this.f36272c;
         }
 
         public SortedMap<K, Collection<V>> headMap(K k) {
@@ -654,18 +654,18 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
 
     public AbstractC11338d(Map<K, Collection<V>> map) {
         C10433i.m5134d(map.isEmpty());
-        this.f36265M = map;
+        this.f36268M = map;
     }
 
     public static int m877l(AbstractC11338d dVar) {
-        int i = dVar.f36266N;
-        dVar.f36266N = i + 1;
+        int i = dVar.f36269N;
+        dVar.f36269N = i + 1;
         return i;
     }
 
     public static int m876m(AbstractC11338d dVar) {
-        int i = dVar.f36266N;
-        dVar.f36266N = i - 1;
+        int i = dVar.f36269N;
+        dVar.f36269N = i - 1;
         return i;
     }
 
@@ -678,11 +678,11 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
 
     @Override
     public void clear() {
-        for (Collection<V> collection : this.f36265M.values()) {
+        for (Collection<V> collection : this.f36268M.values()) {
             collection.clear();
         }
-        this.f36265M.clear();
-        this.f36266N = 0;
+        this.f36268M.clear();
+        this.f36269N = 0;
     }
 
     @Override
@@ -703,56 +703,56 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
 
     @Override
     public boolean put(@NullableDecl K k, @NullableDecl V v) {
-        Collection<V> collection = this.f36265M.get(k);
+        Collection<V> collection = this.f36268M.get(k);
         if (collection == null) {
             Collection<V> p = m873p(k);
             if (p.add(v)) {
-                this.f36266N++;
-                this.f36265M.put(k, p);
+                this.f36269N++;
+                this.f36268M.put(k, p);
                 return true;
             }
             throw new AssertionError("New Collection violated the Collection spec");
         } else if (!collection.add(v)) {
             return false;
         } else {
-            this.f36266N++;
+            this.f36269N++;
             return true;
         }
     }
 
     public final Map<K, Collection<V>> m872q() {
-        Map<K, Collection<V>> map = this.f36265M;
+        Map<K, Collection<V>> map = this.f36268M;
         if (map instanceof NavigableMap) {
-            return new C11346e((NavigableMap) this.f36265M);
+            return new C11346e((NavigableMap) this.f36268M);
         }
         if (map instanceof SortedMap) {
-            return new C11349h((SortedMap) this.f36265M);
+            return new C11349h((SortedMap) this.f36268M);
         }
-        return new C11340b(this.f36265M);
+        return new C11340b(this.f36268M);
     }
 
     public final Set<K> m871r() {
-        Map<K, Collection<V>> map = this.f36265M;
+        Map<K, Collection<V>> map = this.f36268M;
         if (map instanceof NavigableMap) {
-            return new C11347f((NavigableMap) this.f36265M);
+            return new C11347f((NavigableMap) this.f36268M);
         }
         if (map instanceof SortedMap) {
-            return new C11350i((SortedMap) this.f36265M);
+            return new C11350i((SortedMap) this.f36268M);
         }
-        return new C11344d(this.f36265M);
+        return new C11344d(this.f36268M);
     }
 
     @Override
     public int size() {
-        return this.f36266N;
+        return this.f36269N;
     }
 
     public final void m869t(Object obj) {
-        Collection collection = (Collection) C11414y.m682h(this.f36265M, obj);
+        Collection collection = (Collection) C11414y.m682h(this.f36268M, obj);
         if (collection != null) {
             int size = collection.size();
             collection.clear();
-            this.f36266N -= size;
+            this.f36269N -= size;
         }
     }
 
@@ -771,25 +771,25 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
 
     public class C11351j extends AbstractCollection<V> {
         @NullableDecl
-        public final Collection<V> f36289M;
+        public final Collection<V> f36292M;
         @NullableDecl
-        public final K f36291a;
-        public Collection<V> f36292b;
+        public final K f36294a;
+        public Collection<V> f36295b;
         @NullableDecl
-        public final AbstractC11338d<K, V>.C11351j f36293c;
+        public final AbstractC11338d<K, V>.C11351j f36296c;
 
         public C11351j(@NullableDecl K k, Collection<V> collection, @NullableDecl AbstractC11338d<K, V>.C11351j jVar) {
-            this.f36291a = k;
-            this.f36292b = collection;
-            this.f36293c = jVar;
-            this.f36289M = jVar == null ? null : jVar.m843m();
+            this.f36294a = k;
+            this.f36295b = collection;
+            this.f36296c = jVar;
+            this.f36292M = jVar == null ? null : jVar.m843m();
         }
 
         @Override
         public boolean add(V v) {
             m841s();
-            boolean isEmpty = this.f36292b.isEmpty();
-            boolean add = this.f36292b.add(v);
+            boolean isEmpty = this.f36295b.isEmpty();
+            boolean add = this.f36295b.add(v);
             if (add) {
                 AbstractC11338d.m877l(AbstractC11338d.this);
                 if (isEmpty) {
@@ -805,10 +805,10 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
                 return false;
             }
             int size = size();
-            boolean addAll = this.f36292b.addAll(collection);
+            boolean addAll = this.f36295b.addAll(collection);
             if (addAll) {
-                int size2 = this.f36292b.size();
-                AbstractC11338d.this.f36266N += size2 - size;
+                int size2 = this.f36295b.size();
+                AbstractC11338d.this.f36269N += size2 - size;
                 if (size == 0) {
                     m845h();
                 }
@@ -820,8 +820,8 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
         public void clear() {
             int size = size();
             if (size != 0) {
-                this.f36292b.clear();
-                AbstractC11338d.this.f36266N -= size;
+                this.f36295b.clear();
+                AbstractC11338d.this.f36269N -= size;
                 m840t();
             }
         }
@@ -829,13 +829,13 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
         @Override
         public boolean contains(Object obj) {
             m841s();
-            return this.f36292b.contains(obj);
+            return this.f36295b.contains(obj);
         }
 
         @Override
         public boolean containsAll(Collection<?> collection) {
             m841s();
-            return this.f36292b.containsAll(collection);
+            return this.f36295b.containsAll(collection);
         }
 
         @Override
@@ -844,26 +844,26 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
                 return true;
             }
             m841s();
-            return this.f36292b.equals(obj);
+            return this.f36295b.equals(obj);
         }
 
         public void m845h() {
-            AbstractC11338d<K, V>.C11351j jVar = this.f36293c;
+            AbstractC11338d<K, V>.C11351j jVar = this.f36296c;
             if (jVar != null) {
                 jVar.m845h();
             } else {
-                AbstractC11338d.this.f36265M.put(this.f36291a, this.f36292b);
+                AbstractC11338d.this.f36268M.put(this.f36294a, this.f36295b);
             }
         }
 
         @Override
         public int hashCode() {
             m841s();
-            return this.f36292b.hashCode();
+            return this.f36295b.hashCode();
         }
 
         public AbstractC11338d<K, V>.C11351j m844i() {
-            return this.f36293c;
+            return this.f36296c;
         }
 
         @Override
@@ -873,17 +873,17 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
         }
 
         public Collection<V> m843m() {
-            return this.f36292b;
+            return this.f36295b;
         }
 
         K m842r() {
-            return this.f36291a;
+            return this.f36294a;
         }
 
         @Override
         public boolean remove(Object obj) {
             m841s();
-            boolean remove = this.f36292b.remove(obj);
+            boolean remove = this.f36295b.remove(obj);
             if (remove) {
                 AbstractC11338d.m876m(AbstractC11338d.this);
                 m840t();
@@ -897,10 +897,10 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
                 return false;
             }
             int size = size();
-            boolean removeAll = this.f36292b.removeAll(collection);
+            boolean removeAll = this.f36295b.removeAll(collection);
             if (removeAll) {
-                int size2 = this.f36292b.size();
-                AbstractC11338d.this.f36266N += size2 - size;
+                int size2 = this.f36295b.size();
+                AbstractC11338d.this.f36269N += size2 - size;
                 m840t();
             }
             return removeAll;
@@ -910,10 +910,10 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
         public boolean retainAll(Collection<?> collection) {
             C10433i.m5129i(collection);
             int size = size();
-            boolean retainAll = this.f36292b.retainAll(collection);
+            boolean retainAll = this.f36295b.retainAll(collection);
             if (retainAll) {
-                int size2 = this.f36292b.size();
-                AbstractC11338d.this.f36266N += size2 - size;
+                int size2 = this.f36295b.size();
+                AbstractC11338d.this.f36269N += size2 - size;
                 m840t();
             }
             return retainAll;
@@ -921,56 +921,56 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
 
         public void m841s() {
             Collection<V> collection;
-            AbstractC11338d<K, V>.C11351j jVar = this.f36293c;
+            AbstractC11338d<K, V>.C11351j jVar = this.f36296c;
             if (jVar != null) {
                 jVar.m841s();
-                if (this.f36293c.m843m() != this.f36289M) {
+                if (this.f36296c.m843m() != this.f36292M) {
                     throw new ConcurrentModificationException();
                 }
-            } else if (this.f36292b.isEmpty() && (collection = (Collection) AbstractC11338d.this.f36265M.get(this.f36291a)) != null) {
-                this.f36292b = collection;
+            } else if (this.f36295b.isEmpty() && (collection = (Collection) AbstractC11338d.this.f36268M.get(this.f36294a)) != null) {
+                this.f36295b = collection;
             }
         }
 
         @Override
         public int size() {
             m841s();
-            return this.f36292b.size();
+            return this.f36295b.size();
         }
 
         public void m840t() {
-            AbstractC11338d<K, V>.C11351j jVar = this.f36293c;
+            AbstractC11338d<K, V>.C11351j jVar = this.f36296c;
             if (jVar != null) {
                 jVar.m840t();
-            } else if (this.f36292b.isEmpty()) {
-                AbstractC11338d.this.f36265M.remove(this.f36291a);
+            } else if (this.f36295b.isEmpty()) {
+                AbstractC11338d.this.f36268M.remove(this.f36294a);
             }
         }
 
         @Override
         public String toString() {
             m841s();
-            return this.f36292b.toString();
+            return this.f36295b.toString();
         }
 
         public class C11352a implements java.util.Iterator<V>, p126j$.util.Iterator {
-            public final java.util.Iterator<V> f36294a;
-            public final Collection<V> f36295b;
+            public final java.util.Iterator<V> f36297a;
+            public final Collection<V> f36298b;
 
             public C11352a() {
-                Collection<V> collection = C11351j.this.f36292b;
-                this.f36295b = collection;
-                this.f36294a = AbstractC11338d.m870s(collection);
+                Collection<V> collection = C11351j.this.f36295b;
+                this.f36298b = collection;
+                this.f36297a = AbstractC11338d.m870s(collection);
             }
 
             public java.util.Iterator<V> m839a() {
                 m838b();
-                return this.f36294a;
+                return this.f36297a;
             }
 
             public void m838b() {
                 C11351j.this.m841s();
-                if (C11351j.this.f36292b != this.f36295b) {
+                if (C11351j.this.f36295b != this.f36298b) {
                     throw new ConcurrentModificationException();
                 }
             }
@@ -988,25 +988,25 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
             @Override
             public boolean hasNext() {
                 m838b();
-                return this.f36294a.hasNext();
+                return this.f36297a.hasNext();
             }
 
             @Override
             public V next() {
                 m838b();
-                return this.f36294a.next();
+                return this.f36297a.next();
             }
 
             @Override
             public void remove() {
-                this.f36294a.remove();
+                this.f36297a.remove();
                 AbstractC11338d.m876m(AbstractC11338d.this);
                 C11351j.this.m840t();
             }
 
             public C11352a(java.util.Iterator<V> it) {
-                this.f36295b = C11351j.this.f36292b;
-                this.f36294a = it;
+                this.f36298b = C11351j.this.f36295b;
+                this.f36297a = it;
             }
         }
     }
@@ -1086,7 +1086,7 @@ public abstract class AbstractC11338d<K, V> extends AbstractC11358f<K, V> implem
             boolean addAll = m837u().addAll(i, collection);
             if (addAll) {
                 int size2 = m843m().size();
-                AbstractC11338d.this.f36266N += size2 - size;
+                AbstractC11338d.this.f36269N += size2 - size;
                 if (size == 0) {
                     m845h();
                 }

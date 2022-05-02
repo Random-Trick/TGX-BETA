@@ -55,11 +55,11 @@ public enum EnumC5024c {
         this(new int[]{i}, new String[0]);
     }
 
-    public static EnumC5024c m24271a(int i) {
+    public static EnumC5024c m24272a(int i) {
         if (i >= 0 && i < 900) {
             return f16969m0.get(Integer.valueOf(i));
         }
-        throw C4523f.m27499a();
+        throw C4523f.m27501a();
     }
 
     EnumC5024c(int i, String... strArr) {

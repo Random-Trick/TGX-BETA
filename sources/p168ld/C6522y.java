@@ -22,7 +22,7 @@ public class C6522y {
     public Runnable f20326d = new Runnable() {
         @Override
         public final void run() {
-            C6522y.this.m20168i();
+            C6522y.this.m20169i();
         }
     };
 
@@ -38,14 +38,14 @@ public class C6522y {
             this.f20330b = j;
             String[] split = str.substring(7).split("/", 3);
             if (split.length == 3) {
-                int t = C5070i.m24050t(split[0], -1);
+                int t = C5070i.m24051t(split[0], -1);
                 this.f20331c = t;
                 if (t != -1) {
                     String str2 = split[1];
                     this.f20327M = str2;
                     String str3 = split[2];
                     this.f20328N = str3;
-                    if (C5070i.m24061i(str2) || C5070i.m24061i(str3)) {
+                    if (C5070i.m24062i(str2) || C5070i.m24062i(str3)) {
                         throw new IllegalArgumentException(str);
                     }
                     return;
@@ -55,37 +55,37 @@ public class C6522y {
             throw new IllegalArgumentException(str);
         }
 
-        public static boolean m20153c(String str) {
+        public static boolean m20154c(String str) {
             String[] split = str.substring(7).split("/", 3);
-            if (split.length != 3 || C5070i.m24050t(split[0], -1) == -1) {
+            if (split.length != 3 || C5070i.m24051t(split[0], -1) == -1) {
                 return false;
             }
-            return !C5070i.m24061i(split[1]) && !C5070i.m24061i(split[2]);
+            return !C5070i.m24062i(split[1]) && !C5070i.m24062i(split[2]);
         }
 
         public int compareTo(C6523a aVar) {
             return Long.compare(this.f20330b, aVar.f20330b);
         }
 
-        public File m20154b(File file) {
+        public File m20155b(File file) {
             return new File(new File(new File(file, Integer.toString(this.f20331c)), this.f20327M), this.f20328N);
         }
     }
 
-    public static void m20169h(File file, C6523a aVar, SharedPreferences.Editor editor) {
-        File b = aVar.m20154b(file);
+    public static void m20170h(File file, C6523a aVar, SharedPreferences.Editor editor) {
+        File b = aVar.m20155b(file);
         if (!b.exists() || b.delete()) {
             editor.remove(aVar.f20329a);
         }
     }
 
-    public static File m20167j() {
-        return new File(C4779t2.m25667J0(true), "tgs");
+    public static File m20168j() {
+        return new File(C4779t2.m25668J0(true), "tgs");
     }
 
-    public static File m20166k(int i, int i2, boolean z, String str) {
+    public static File m20167k(int i, int i2, boolean z, String str) {
         String str2;
-        File j = m20167j();
+        File j = m20168j();
         if (!j.exists() && !j.mkdir()) {
             return null;
         }
@@ -98,7 +98,7 @@ public class C6522y {
         } else {
             str2 = Integer.toString(i2);
         }
-        if (!C5070i.m24061i(str)) {
+        if (!C5070i.m24062i(str)) {
             str2 = str2 + "_" + str;
         }
         File file2 = new File(file, str2);
@@ -108,27 +108,27 @@ public class C6522y {
         return null;
     }
 
-    public static File m20165l(C6503j jVar, boolean z, int i, int i2, long j, int i3) {
+    public static File m20166l(C6503j jVar, boolean z, int i, int i2, long j, int i3) {
         if (z) {
             j = 0;
         }
         String num = i2 != 0 ? Integer.toString(i2) : null;
-        int w6 = jVar.m20292N().m2188w6();
-        File k = m20166k(w6, i, z, num);
+        int w6 = jVar.m20293N().m2188w6();
+        File k = m20167k(w6, i, z, num);
         if (k == null) {
             return null;
         }
-        File file = new File(jVar.m20285f());
+        File file = new File(jVar.m20286f());
         if (j > 0) {
-            String m = m20164m(w6, z, i, num, file.getName());
-            C4868i.m24726c2().m24637n3().putLong(m, System.currentTimeMillis() + j);
-            m20163n().m20158s(i3, m);
-            m20163n().m20157t(j, false);
+            String m = m20165m(w6, z, i, num, file.getName());
+            C4868i.m24727c2().m24638n3().putLong(m, System.currentTimeMillis() + j);
+            m20164n().m20159s(i3, m);
+            m20164n().m20158t(j, false);
         }
         return new File(k, file.getName());
     }
 
-    public static String m20164m(int i, boolean z, int i2, String str, String str2) {
+    public static String m20165m(int i, boolean z, int i2, String str, String str2) {
         Object obj;
         String str3;
         StringBuilder sb2 = new StringBuilder();
@@ -141,7 +141,7 @@ public class C6522y {
             obj = Integer.valueOf(i2);
         }
         sb2.append(obj);
-        if (!C5070i.m24061i(str)) {
+        if (!C5070i.m24062i(str)) {
             str3 = "_" + str;
         } else {
             str3 = "";
@@ -150,13 +150,13 @@ public class C6522y {
         sb2.append("/");
         sb2.append(str2);
         String sb3 = sb2.toString();
-        if (C6523a.m20153c(sb3)) {
+        if (C6523a.m20154c(sb3)) {
             return sb3;
         }
         throw new IllegalArgumentException(sb3);
     }
 
-    public static C6522y m20163n() {
+    public static C6522y m20164n() {
         if (f20322e == null) {
             synchronized (C6522y.class) {
                 if (f20322e == null) {
@@ -167,39 +167,39 @@ public class C6522y {
         return f20322e;
     }
 
-    public void m20162o(boolean z, File file, int i, C6503j jVar, int i2) {
+    public void m20163o(boolean z, File file, int i, C6503j jVar, int i2) {
         if (z) {
             file.delete();
             return;
         }
-        String m = m20164m(jVar.f20249a.mo1484a(), z, i2, i != 0 ? Integer.toString(i) : null, new File(jVar.m20285f()).getName());
-        long e1 = C4868i.m24726c2().m24711e1(m, 0L);
+        String m = m20165m(jVar.f20249a.mo1484a(), z, i2, i != 0 ? Integer.toString(i) : null, new File(jVar.m20286f()).getName());
+        long e1 = C4868i.m24727c2().m24712e1(m, 0L);
         if (e1 == 0 || System.currentTimeMillis() >= e1) {
             file.delete();
-            C4868i.m24726c2().m24888F3(m);
-            m20168i();
+            C4868i.m24727c2().m24889F3(m);
+            m20169i();
         }
     }
 
-    public static boolean m20161p(File file, String str) {
+    public static boolean m20162p(File file, String str) {
         return "0".equals(str) || str.startsWith("thumbs");
     }
 
-    public void m20160q() {
-        File j = m20167j();
+    public void m20161q() {
+        File j = m20168j();
         File[] listFiles = j.listFiles();
         if (listFiles != null) {
             for (File file : listFiles) {
                 File[] listFiles2 = file.listFiles(C6517t.f20311a);
                 if (listFiles2 != null) {
                     for (File file2 : listFiles2) {
-                        C5068g.m24101b(file2, true);
+                        C5068g.m24102b(file2, true);
                     }
                 }
             }
         }
         long currentTimeMillis = System.currentTimeMillis();
-        LevelDB n3 = C4868i.m24726c2().m24637n3();
+        LevelDB n3 = C4868i.m24727c2().m24638n3();
         LevelDB levelDB = null;
         ArrayList arrayList = null;
         long j2 = -1;
@@ -211,7 +211,7 @@ public class C6522y {
                     if (levelDB == null) {
                         levelDB = n3.edit();
                     }
-                    m20169h(j, aVar2, levelDB);
+                    m20170h(j, aVar2, levelDB);
                 } else {
                     if (j2 != -1) {
                         j3 = Math.min(j2, j3);
@@ -230,16 +230,16 @@ public class C6522y {
             levelDB.apply();
         }
         if (j2 != -1) {
-            m20157t(j2 - currentTimeMillis, true);
+            m20158t(j2 - currentTimeMillis, true);
         } else {
-            m20172e();
+            m20173e();
         }
     }
 
-    public static void m20159r(int i, String str) {
+    public static void m20160r(int i, String str) {
         int i2;
-        LevelDB n3 = C4868i.m24726c2().m24637n3();
-        File j = m20167j();
+        LevelDB n3 = C4868i.m24727c2().m24638n3();
+        File j = m20168j();
         ArrayList arrayList = new ArrayList();
         Iterator<LevelDB.C7052a> it = n3.m17974g("lottie_").iterator();
         LevelDB levelDB = null;
@@ -276,7 +276,7 @@ public class C6522y {
                 if (levelDB == null) {
                     levelDB = n3.edit();
                 }
-                m20169h(j, aVar, levelDB);
+                m20170h(j, aVar, levelDB);
                 size--;
             }
         }
@@ -285,58 +285,58 @@ public class C6522y {
         }
     }
 
-    public final void m20172e() {
+    public final void m20173e() {
         if (this.f20325c != 0) {
-            this.f20323a.m28053d().removeCallbacks(this.f20326d);
+            this.f20323a.m28055d().removeCallbacks(this.f20326d);
             this.f20325c = 0L;
         }
     }
 
-    public void m20171f(final C6503j jVar, final File file, final boolean z, final int i, final int i2) {
-        this.f20323a.m28052e(new Runnable() {
+    public void m20172f(final C6503j jVar, final File file, final boolean z, final int i, final int i2) {
+        this.f20323a.m28054e(new Runnable() {
             @Override
             public final void run() {
-                C6522y.this.m20162o(z, file, i2, jVar, i);
+                C6522y.this.m20163o(z, file, i2, jVar, i);
             }
         }, 0L);
     }
 
-    public boolean m20170g() {
-        if (!C5068g.m24101b(m20167j(), true)) {
+    public boolean m20171g() {
+        if (!C5068g.m24102b(m20168j(), true)) {
             return false;
         }
-        C4868i.m24726c2().m24637n3().m17990N("lottie_");
-        m20172e();
+        C4868i.m24727c2().m24638n3().m17990N("lottie_");
+        m20173e();
         return true;
     }
 
-    public void m20168i() {
-        this.f20323a.m28052e(new Runnable() {
+    public void m20169i() {
+        this.f20323a.m28054e(new Runnable() {
             @Override
             public final void run() {
-                C6522y.this.m20160q();
+                C6522y.this.m20161q();
             }
         }, 0L);
     }
 
-    public final void m20158s(final int i, final String str) {
-        this.f20323a.m28052e(new Runnable() {
+    public final void m20159s(final int i, final String str) {
+        this.f20323a.m28054e(new Runnable() {
             @Override
             public final void run() {
-                C6522y.m20159r(i, str);
+                C6522y.m20160r(i, str);
             }
         }, 0L);
     }
 
-    public final void m20157t(long j, boolean z) {
+    public final void m20158t(long j, boolean z) {
         if (this.f20325c == 0 || SystemClock.uptimeMillis() + j < this.f20325c || z) {
-            m20172e();
+            m20173e();
             this.f20325c = SystemClock.uptimeMillis() + j;
-            this.f20323a.m28052e(this.f20326d, j);
+            this.f20323a.m28054e(this.f20326d, j);
         }
     }
 
-    public C4384m m20156u(boolean z) {
+    public C4384m m20157u(boolean z) {
         return z ? this.f20323a : this.f20324b;
     }
 }

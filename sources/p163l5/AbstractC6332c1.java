@@ -13,11 +13,11 @@ public abstract class AbstractC6332c1<TListener> {
         this.f19895a = tlistener;
     }
 
-    public abstract void mo20481a();
+    public abstract void mo20482a();
 
-    public abstract void mo20480b(TListener tlistener);
+    public abstract void mo20481b(TListener tlistener);
 
-    public final void m20620c() {
+    public final void m20621c() {
         TListener tlistener;
         synchronized (this) {
             tlistener = this.f19895a;
@@ -32,7 +32,7 @@ public abstract class AbstractC6332c1<TListener> {
         }
         if (tlistener != null) {
             try {
-                mo20480b(tlistener);
+                mo20481b(tlistener);
             } catch (RuntimeException e) {
                 throw e;
             }
@@ -40,13 +40,13 @@ public abstract class AbstractC6332c1<TListener> {
         synchronized (this) {
             this.f19896b = true;
         }
-        m20619d();
+        m20620d();
     }
 
-    public final void m20619d() {
+    public final void m20620d() {
         ArrayList arrayList;
         ArrayList arrayList2;
-        m20618e();
+        m20619e();
         arrayList = this.f19897c.f19879a0;
         synchronized (arrayList) {
             arrayList2 = this.f19897c.f19879a0;
@@ -54,7 +54,7 @@ public abstract class AbstractC6332c1<TListener> {
         }
     }
 
-    public final void m20618e() {
+    public final void m20619e() {
         synchronized (this) {
             this.f19895a = null;
         }

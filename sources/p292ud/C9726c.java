@@ -49,111 +49,111 @@ import p350yd.C10930q6;
 import p356z4.C11272n;
 
 public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9773p0.AbstractC9778e, C3950k.AbstractC3952b {
-    public final C10536ab f31621M;
-    public int f31622N;
-    public int f31623O;
-    public C4812v2 f31624P;
-    public AbstractC6689s f31625Q;
-    public ArrayList<TdApi.Message> f31626R;
-    public boolean f31627S;
-    public int f31628T = -1;
-    public float f31629U = 1.0f;
-    public boolean f31630V;
-    public C3950k f31631W;
-    public boolean f31632X;
-    public long f31633Y;
-    public HandlerC9730d f31634Z;
-    public boolean f31635a0;
-    public C10930q6 f31636b0;
-    public TdApi.Message f31637c0;
-    public C6053a f31638d0;
-    public ArrayList<C9729c> f31639e0;
+    public final C10536ab f31624M;
+    public int f31625N;
+    public int f31626O;
+    public C4812v2 f31627P;
+    public AbstractC6689s f31628Q;
+    public ArrayList<TdApi.Message> f31629R;
+    public boolean f31630S;
+    public int f31631T = -1;
+    public float f31632U = 1.0f;
+    public boolean f31633V;
+    public C3950k f31634W;
+    public boolean f31635X;
+    public long f31636Y;
+    public HandlerC9730d f31637Z;
+    public boolean f31638a0;
+    public C10930q6 f31639b0;
+    public TdApi.Message f31640c0;
+    public C6053a f31641d0;
+    public ArrayList<C9729c> f31642e0;
 
     public class C9727a implements AbstractC6618i2.AbstractC6624e {
-        public boolean f31641a;
-        public final Runnable f31642b;
-        public final AbstractC6689s f31643c;
+        public boolean f31644a;
+        public final Runnable f31645b;
+        public final AbstractC6689s f31646c;
 
         public C9727a(Runnable runnable, AbstractC6689s sVar) {
-            this.f31642b = runnable;
-            this.f31643c = sVar;
+            this.f31645b = runnable;
+            this.f31646c = sVar;
         }
 
         @Override
         public void mo7370C(boolean z) {
-            C6643l2.m19695u(this, z);
+            C6643l2.m19696u(this, z);
         }
 
         @Override
         public void mo7368K(AbstractC6604g3 g3Var, int i) {
-            C6643l2.m19692x(this, g3Var, i);
+            C6643l2.m19693x(this, g3Var, i);
         }
 
         @Override
         public void mo7367L(int i, boolean z) {
-            C6643l2.m19711e(this, i, z);
+            C6643l2.m19712e(this, i, z);
         }
 
         @Override
         public void mo7366M(boolean z, int i) {
-            C6637k2.m19739k(this, z, i);
+            C6637k2.m19740k(this, z, i);
         }
 
         @Override
         public void mo7365N(C6693s1 s1Var) {
-            C6643l2.m19706j(this, s1Var);
+            C6643l2.m19707j(this, s1Var);
         }
 
         @Override
         public void mo7364R(int i) {
-            C6643l2.m19696t(this, i);
+            C6643l2.m19697t(this, i);
         }
 
         @Override
         public void mo7363V(C7602e eVar) {
-            C6643l2.m19715a(this, eVar);
+            C6643l2.m19716a(this, eVar);
         }
 
         @Override
         public void mo7362a(boolean z) {
-            C6643l2.m19694v(this, z);
+            C6643l2.m19695v(this, z);
         }
 
         @Override
         public void mo7361a0(boolean z, int i) {
-            if (!this.f31641a && !z && this.f31643c.mo19217z() == 1) {
+            if (!this.f31644a && !z && this.f31646c.mo19218z() == 1) {
                 m7377f();
             }
         }
 
         @Override
         public void mo7360b(C1607b0 b0Var) {
-            C6643l2.m19690z(this, b0Var);
+            C6643l2.m19691z(this, b0Var);
         }
 
         @Override
         public void mo7359b0(C6660o1 o1Var, int i) {
-            C6643l2.m19707i(this, o1Var, i);
+            C6643l2.m19708i(this, o1Var, i);
         }
 
         @Override
         public void mo7358c(C6613h2 h2Var) {
-            C6643l2.m19703m(this, h2Var);
+            C6643l2.m19704m(this, h2Var);
         }
 
         @Override
         public void mo7357c0(AbstractC6618i2 i2Var, AbstractC6618i2.C6623d dVar) {
-            C6643l2.m19710f(this, i2Var, dVar);
+            C6643l2.m19711f(this, i2Var, dVar);
         }
 
         @Override
         public void mo7356d(C4260a aVar) {
-            C6643l2.m19705k(this, aVar);
+            C6643l2.m19706k(this, aVar);
         }
 
         @Override
         public void mo7252e() {
-            C6643l2.m19697s(this);
+            C6643l2.m19698s(this);
         }
 
         @Override
@@ -162,93 +162,93 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
         }
 
         public final void m7377f() {
-            if (!this.f31641a) {
-                this.f31641a = true;
-                C1379j0.m37332e0(this.f31642b, 250L);
+            if (!this.f31644a) {
+                this.f31644a = true;
+                C1379j0.m37335e0(this.f31645b, 250L);
             }
         }
 
         @Override
         public void mo7354f0(int i, int i2) {
-            C6643l2.m19693w(this, i, i2);
+            C6643l2.m19694w(this, i, i2);
         }
 
         @Override
         public void mo7353g(List list) {
-            C6643l2.m19713c(this, list);
+            C6643l2.m19714c(this, list);
         }
 
         @Override
         public void mo7352h(int i) {
-            C6643l2.m19701o(this, i);
+            C6643l2.m19702o(this, i);
         }
 
         @Override
         public void mo7351i0(AbstractC6618i2.C6620b bVar) {
-            C6643l2.m19714b(this, bVar);
+            C6643l2.m19715b(this, bVar);
         }
 
         @Override
         public void mo7349j0(C6658o oVar) {
-            C6643l2.m19712d(this, oVar);
+            C6643l2.m19713d(this, oVar);
         }
 
         @Override
         public void mo7348k(boolean z) {
-            C6637k2.m19746d(this, z);
+            C6637k2.m19747d(this, z);
         }
 
         @Override
         public void mo7347l(int i) {
-            C6637k2.m19738l(this, i);
+            C6637k2.m19739l(this, i);
         }
 
         @Override
         public void mo7346l0(C6591e2 e2Var) {
-            C6643l2.m19699q(this, e2Var);
+            C6643l2.m19700q(this, e2Var);
         }
 
         @Override
         public void mo7344m0(boolean z) {
-            C6643l2.m19708h(this, z);
+            C6643l2.m19709h(this, z);
         }
 
         @Override
         public void mo7343o(boolean z) {
-            C6643l2.m19709g(this, z);
+            C6643l2.m19710g(this, z);
         }
 
         @Override
         public void mo7342p() {
-            C6637k2.m19735o(this);
+            C6637k2.m19736o(this);
         }
 
         @Override
         public void mo7341q(C6644l3 l3Var) {
-            C6643l2.m19691y(this, l3Var);
+            C6643l2.m19692y(this, l3Var);
         }
 
         @Override
         public void mo7340s(AbstractC6618i2.C6625f fVar, AbstractC6618i2.C6625f fVar2, int i) {
-            C6643l2.m19698r(this, fVar, fVar2, i);
+            C6643l2.m19699r(this, fVar, fVar2, i);
         }
 
         @Override
         public void mo7339t(C7233t0 t0Var, C11272n nVar) {
-            C6637k2.m19732r(this, t0Var, nVar);
+            C6637k2.m19733r(this, t0Var, nVar);
         }
 
         @Override
         public void mo7338u(float f) {
-            C6643l2.m19716A(this, f);
+            C6643l2.m19717A(this, f);
         }
 
         @Override
         public void mo7223w(int i) {
-            if (this.f31641a) {
+            if (this.f31644a) {
                 return;
             }
-            if (i == 1 || !this.f31643c.mo19255k()) {
+            if (i == 1 || !this.f31646c.mo19256k()) {
                 m7377f();
             }
         }
@@ -259,58 +259,58 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
     }
 
     public static class C9729c {
-        public final C10930q6 f31644a;
-        public final TdApi.Message f31645b;
-        public final ArrayList<AbstractC9728b> f31646c;
+        public final C10930q6 f31647a;
+        public final TdApi.Message f31648b;
+        public final ArrayList<AbstractC9728b> f31649c;
 
         public C9729c(C10930q6 q6Var, TdApi.Message message, AbstractC9728b bVar) {
-            this.f31644a = q6Var;
-            this.f31645b = message;
+            this.f31647a = q6Var;
+            this.f31648b = message;
             ArrayList<AbstractC9728b> arrayList = new ArrayList<>();
-            this.f31646c = arrayList;
+            this.f31649c = arrayList;
             arrayList.add(bVar);
         }
 
         public void m7372d(C6053a aVar) {
-            Iterator<AbstractC9728b> it = this.f31646c.iterator();
+            Iterator<AbstractC9728b> it = this.f31649c.iterator();
             while (it.hasNext()) {
-                it.next().mo7376a(this.f31644a, this.f31645b, aVar);
+                it.next().mo7376a(this.f31647a, this.f31648b, aVar);
             }
         }
     }
 
     public static class HandlerC9730d extends Handler {
-        public final C9726c f31647a;
+        public final C9726c f31650a;
 
         public HandlerC9730d(C9726c cVar) {
             super(Looper.getMainLooper());
-            this.f31647a = cVar;
+            this.f31650a = cVar;
         }
 
         @Override
         public void handleMessage(Message message) {
-            if (this.f31647a.f31635a0) {
-                this.f31647a.m7401S();
-                this.f31647a.m7400T();
+            if (this.f31650a.f31638a0) {
+                this.f31650a.m7401S();
+                this.f31650a.m7400T();
             }
         }
     }
 
     public C9726c(C10536ab abVar, C9773p0 p0Var) {
-        this.f31621M = abVar;
+        this.f31624M = abVar;
         p0Var.m7030p(this);
         p0Var.m7028q(this, false);
     }
 
     public static C6053a m7395d0(C7233t0 t0Var) {
-        for (int i = 0; i < t0Var.f23029a; i++) {
+        for (int i = 0; i < t0Var.f23032a; i++) {
             C7227r0 b = t0Var.m17245b(i);
-            for (int i2 = 0; i2 < b.f23023a; i2++) {
+            for (int i2 = 0; i2 < b.f23026a; i2++) {
                 C4260a aVar = b.m17272b(i2).f20573S;
                 if (aVar != null) {
-                    int d = aVar.m28327d();
+                    int d = aVar.m28329d();
                     for (int i3 = 0; i3 < d; i3++) {
-                        C4260a.AbstractC4262b c = aVar.m28328c(i3);
+                        C4260a.AbstractC4262b c = aVar.m28330c(i3);
                         if (c instanceof C6053a) {
                             return (C6053a) c;
                         }
@@ -324,93 +324,93 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
 
     public void m7387q0() {
         C6053a d0;
-        int i = this.f31628T;
-        if (i != -1 && i >= 0 && i < this.f31626R.size()) {
-            TdApi.Message message = this.f31626R.get(this.f31628T);
-            if (!C9773p0.m7114D(this.f31637c0, message) && (d0 = m7395d0(this.f31625Q.mo19305J())) != null) {
-                m7396Z(this.f31650b, message, d0);
+        int i = this.f31631T;
+        if (i != -1 && i >= 0 && i < this.f31629R.size()) {
+            TdApi.Message message = this.f31629R.get(this.f31631T);
+            if (!C9773p0.m7114D(this.f31640c0, message) && (d0 = m7395d0(this.f31628Q.mo19306J())) != null) {
+                m7396Z(this.f31653b, message, d0);
             }
         }
     }
 
     public static void m7386r0(AtomicBoolean atomicBoolean, AbstractC6689s sVar) {
         if (!atomicBoolean.getAndSet(true)) {
-            sVar.mo19281a();
+            sVar.mo19282a();
         }
     }
 
     public static void m7381w0(AbstractC6618i2 i2Var, int i, int i2, boolean z) {
         Log.m14721i((int) Log.TAG_PLAYER, "seekTo windowIndex:%d size:%d, reverse:%b", Integer.valueOf(i), Integer.valueOf(i2), Boolean.valueOf(z));
         try {
-            i2Var.mo19775w(z ? (i2 - i) - 1 : i);
+            i2Var.mo19776w(z ? (i2 - i) - 1 : i);
         } catch (C6636k1 unused) {
-            Log.m14724e("Cannot complete seekTo because of bug. Please report to the developer. windowIndex:%d, totalSize:%d, reverse:%b, currentWindowIndex:%d, previousWindowIndex:%d, nextWindowIndex:%d", Integer.valueOf(i), Integer.valueOf(i2), Boolean.valueOf(z), Integer.valueOf(i2Var.mo19776u()), Integer.valueOf(i2Var.mo19774y()), Integer.valueOf(i2Var.mo19781F()));
+            Log.m14724e("Cannot complete seekTo because of bug. Please report to the developer. windowIndex:%d, totalSize:%d, reverse:%b, currentWindowIndex:%d, previousWindowIndex:%d, nextWindowIndex:%d", Integer.valueOf(i), Integer.valueOf(i2), Boolean.valueOf(z), Integer.valueOf(i2Var.mo19777u()), Integer.valueOf(i2Var.mo19775y()), Integer.valueOf(i2Var.mo19782F()));
         }
     }
 
     public void m7413A0(boolean z) {
-        if (this.f31630V != z) {
-            this.f31630V = z;
-            if (this.f31631W == null) {
-                this.f31631W = new C3950k(0, this, C2057b.f7280b, 300L, this.f31629U);
+        if (this.f31633V != z) {
+            this.f31633V = z;
+            if (this.f31634W == null) {
+                this.f31634W = new C3950k(0, this, C2057b.f7280b, 300L, this.f31632U);
             }
             float f = z ? 0.035f : 1.0f;
-            if (this.f31622N == 3 && this.f31625Q != null && this.f31627S) {
-                this.f31631W.m29544i(f);
+            if (this.f31625N == 3 && this.f31628Q != null && this.f31630S) {
+                this.f31634W.m29546i(f);
                 return;
             }
-            this.f31631W.m29541l(f);
+            this.f31634W.m29543l(f);
             m7412B0(f);
         }
     }
 
     @Override
     public void mo7294B(C10930q6 q6Var, TdApi.Message message, boolean z, boolean z2, C10930q6 q6Var2, int i) {
-        if (this.f31622N == 0) {
+        if (this.f31625N == 0) {
             m7378z0(m7397Y(message.content.getConstructor() == 527777781), message.content.getConstructor() == 276722716);
         }
-        Log.m14721i((int) Log.TAG_PLAYER, "startPlayback mode:%d byUserRequest:%b, hadObject:%b, previousFileId:%d", Integer.valueOf(this.f31622N), Boolean.valueOf(z), Boolean.valueOf(z2), Integer.valueOf(i));
-        int i2 = this.f31622N;
+        Log.m14721i((int) Log.TAG_PLAYER, "startPlayback mode:%d byUserRequest:%b, hadObject:%b, previousFileId:%d", Integer.valueOf(this.f31625N), Boolean.valueOf(z), Boolean.valueOf(z2), Integer.valueOf(i));
+        int i2 = this.f31625N;
         if (i2 == 1) {
             if (message.content.getConstructor() == 527777781) {
-                this.f31624P = new C4812v2(q6Var, message, ((TdApi.MessageVoiceNote) message.content).voiceNote);
+                this.f31627P = new C4812v2(q6Var, message, ((TdApi.MessageVoiceNote) message.content).voiceNote);
             } else {
-                this.f31624P = new C4812v2(q6Var, message, ((TdApi.MessageAudio) message.content).audio);
+                this.f31627P = new C4812v2(q6Var, message, ((TdApi.MessageAudio) message.content).audio);
             }
-            this.f31624P.m25199g(this);
-            C4356b0.m28201k().m28196p(this.f31624P);
+            this.f31627P.m25200g(this);
+            C4356b0.m28203k().m28198p(this.f31627P);
         } else if (i2 == 3) {
             if (z || !z2) {
-                this.f31627S = true;
+                this.f31630S = true;
             }
         }
     }
 
     public final void m7412B0(float f) {
-        if (this.f31629U != f) {
-            this.f31629U = f;
-            AbstractC6689s sVar = this.f31625Q;
+        if (this.f31632U != f) {
+            this.f31632U = f;
+            AbstractC6689s sVar = this.f31628Q;
             if (sVar != null) {
-                sVar.mo19360f(f);
+                sVar.mo19361f(f);
             }
         }
     }
 
     @Override
     public void mo6982B3(C10930q6 q6Var, TdApi.Message message, int i, List<TdApi.Message> list, long j, int i2, int i3) {
-        if (this.f31622N == 3) {
-            this.f31623O = i2;
+        if (this.f31625N == 3) {
+            this.f31626O = i2;
             boolean h0 = m7392h0();
-            Log.m14721i((int) Log.TAG_PLAYER, "trackList reset id:%d, index:%d, totalSize:%d", Long.valueOf(message.f25406id), Integer.valueOf(i), Integer.valueOf(list.size()));
-            ArrayList<TdApi.Message> arrayList = this.f31626R;
+            Log.m14721i((int) Log.TAG_PLAYER, "trackList reset id:%d, index:%d, totalSize:%d", Long.valueOf(message.f25409id), Integer.valueOf(i), Integer.valueOf(list.size()));
+            ArrayList<TdApi.Message> arrayList = this.f31629R;
             if (arrayList == null) {
-                this.f31626R = new ArrayList<>();
+                this.f31629R = new ArrayList<>();
             } else {
                 arrayList.clear();
             }
-            this.f31626R.ensureCapacity(list.size());
-            this.f31626R.addAll(list);
-            this.f31628T = i;
+            this.f31629R.ensureCapacity(list.size());
+            this.f31629R.addAll(list);
+            this.f31631T = i;
             int size = list.size();
             ArrayList arrayList2 = new ArrayList(size);
             if (h0) {
@@ -422,30 +422,30 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
                     arrayList2.add(C7389v0.m16627h2(q6Var.m2188w6(), message2));
                 }
             }
-            AbstractC6689s sVar = this.f31625Q;
+            AbstractC6689s sVar = this.f31628Q;
             if (sVar != null) {
-                sVar.mo19383I(this);
-                this.f31625Q.mo19281a();
-                this.f31625Q = null;
+                sVar.mo19384I(this);
+                this.f31628Q.mo19282a();
+                this.f31628Q = null;
             }
-            AbstractC6689s Z1 = C7389v0.m16659Z1(C1379j0.m37315n(), true);
-            this.f31625Q = Z1;
-            Z1.mo19294P(this);
+            AbstractC6689s Z1 = C7389v0.m16659Z1(C1379j0.m37318n(), true);
+            this.f31628Q = Z1;
+            Z1.mo19295P(this);
             m7380x0();
-            this.f31625Q.mo19360f(this.f31629U);
+            this.f31628Q.mo19361f(this.f31632U);
             int N = C9773p0.m7094N(i2);
             if (N == 2) {
-                this.f31625Q.mo19312E(2);
+                this.f31628Q.mo19313E(2);
             } else if (N == 4) {
-                this.f31625Q.mo19312E(1);
+                this.f31628Q.mo19313E(1);
             }
             if ((i2 & 1) != 0) {
-                this.f31625Q.mo19252l(true);
+                this.f31628Q.mo19253l(true);
             }
-            this.f31625Q.mo19344s(arrayList2);
-            this.f31625Q.mo19279b();
-            m7381w0(this.f31625Q, i, arrayList2.size(), h0);
-            this.f31625Q.mo19340v(this.f31627S);
+            this.f31628Q.mo19345s(arrayList2);
+            this.f31628Q.mo19280b();
+            m7381w0(this.f31628Q, i, arrayList2.size(), h0);
+            this.f31628Q.mo19341v(this.f31630S);
         }
     }
 
@@ -455,105 +455,105 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
 
     public void m7411C0(boolean z) {
         AbstractC6689s sVar;
-        int i = this.f31622N;
-        if (i != 0 && i == 3 && (sVar = this.f31625Q) != null) {
-            int u = sVar.mo19776u();
+        int i = this.f31625N;
+        if (i != 0 && i == 3 && (sVar = this.f31628Q) != null) {
+            int u = sVar.mo19777u();
             if (u == -1) {
                 Log.m14721i((int) Log.TAG_PLAYER, "Couldn't skip, because current position is unset", new Object[0]);
                 return;
             }
-            boolean z2 = this.f31625Q.mo19303K() == 1;
+            boolean z2 = this.f31628Q.mo19304K() == 1;
             if (z2) {
-                this.f31625Q.mo19312E(2);
+                this.f31628Q.mo19313E(2);
             }
-            int F = z ? this.f31625Q.mo19781F() : this.f31625Q.mo19774y();
+            int F = z ? this.f31628Q.mo19782F() : this.f31628Q.mo19775y();
             boolean h0 = m7392h0();
             Log.m14721i((int) Log.TAG_PLAYER, "skipping track position:%d, desiredPosition:%d reverse:%b", Integer.valueOf(u), Integer.valueOf(F), Boolean.valueOf(h0));
             if (F == -1) {
-                this.f31621M.m4636w2().m7061d1(true);
+                this.f31624M.m4636w2().m7061d1(true);
                 return;
             }
-            this.f31625Q.mo19775w(F);
+            this.f31628Q.mo19776w(F);
             if (z2) {
-                this.f31625Q.mo19312E(1);
+                this.f31628Q.mo19313E(1);
             }
-            AbstractC6689s sVar2 = this.f31625Q;
-            this.f31627S = true;
-            sVar2.mo19340v(true);
-            this.f31621M.m4636w2().m7117B0(this.f31626R.get(m7383u0(F, this.f31625Q.mo19777r(), h0)));
+            AbstractC6689s sVar2 = this.f31628Q;
+            this.f31630S = true;
+            sVar2.mo19341v(true);
+            this.f31624M.m4636w2().m7117B0(this.f31629R.get(m7383u0(F, this.f31628Q.mo19778r(), h0)));
         }
     }
 
     @Override
     public void mo6981E4(int i) {
-        if (this.f31622N == 3 && this.f31625Q != null) {
+        if (this.f31625N == 3 && this.f31628Q != null) {
             boolean h0 = m7392h0();
             boolean z = false;
             if (h0 != ((32768 & i) != 0)) {
-                int r = this.f31625Q.mo19777r();
-                int u0 = m7383u0(this.f31628T, r, h0);
+                int r = this.f31628Q.mo19778r();
+                int u0 = m7383u0(this.f31631T, r, h0);
                 for (int i2 = u0 - 1; i2 >= 0; i2--) {
-                    this.f31625Q.mo19780G(i2, (u0 - i2) + i2);
+                    this.f31628Q.mo19781G(i2, (u0 - i2) + i2);
                 }
                 for (int i3 = u0 + 1; i3 < r; i3++) {
-                    this.f31625Q.mo19780G(i3, 0);
+                    this.f31628Q.mo19781G(i3, 0);
                 }
             }
-            int N = C9773p0.m7094N(this.f31623O);
+            int N = C9773p0.m7094N(this.f31626O);
             int N2 = C9773p0.m7094N(i);
             if (N != N2) {
                 if (N2 == 2) {
-                    this.f31625Q.mo19312E(2);
+                    this.f31628Q.mo19313E(2);
                 } else if (N2 != 4) {
-                    this.f31625Q.mo19312E(0);
+                    this.f31628Q.mo19313E(0);
                 } else {
-                    this.f31625Q.mo19312E(1);
+                    this.f31628Q.mo19313E(1);
                 }
             }
-            boolean z2 = (this.f31623O & 1) != 0;
+            boolean z2 = (this.f31626O & 1) != 0;
             if ((i & 1) != 0) {
                 z = true;
             }
             if (z2 != z) {
-                this.f31625Q.mo19252l(z);
+                this.f31628Q.mo19253l(z);
             }
-            this.f31623O = i;
+            this.f31626O = i;
         }
     }
 
     @Override
     public void mo6980G3(C10930q6 q6Var, TdApi.Message message, int i, int i2) {
-        if (this.f31622N == 3) {
-            C5062b.m24149w(this.f31626R, i, i2);
-            int i3 = this.f31628T;
+        if (this.f31625N == 3) {
+            C5062b.m24150w(this.f31629R, i, i2);
+            int i3 = this.f31631T;
             if (i3 == i) {
-                this.f31628T = i2;
+                this.f31631T = i2;
             } else {
                 if (i < i3) {
-                    this.f31628T = i3 - 1;
+                    this.f31631T = i3 - 1;
                 }
-                int i4 = this.f31628T;
+                int i4 = this.f31631T;
                 if (i2 <= i4) {
-                    this.f31628T = i4 + 1;
+                    this.f31631T = i4 + 1;
                 }
             }
-            int r = this.f31625Q.mo19777r();
+            int r = this.f31628Q.mo19778r();
             if (m7392h0()) {
-                this.f31625Q.mo19780G((r - i) - 1, (r - i2) - 1);
+                this.f31628Q.mo19781G((r - i) - 1, (r - i2) - 1);
             } else {
-                this.f31625Q.mo19780G(i, i2);
+                this.f31628Q.mo19781G(i, i2);
             }
         }
     }
 
     public final long m7405J() {
-        AbstractC6689s sVar = this.f31625Q;
-        long g = sVar != null ? sVar.mo19267g() : -9223372036854775807L;
+        AbstractC6689s sVar = this.f31628Q;
+        long g = sVar != null ? sVar.mo19268g() : -9223372036854775807L;
         if (g == -9223372036854775807L || g < 1000) {
             return 25L;
         }
         long max = (long) (Math.max(1.0d, g / 30000.0d) * 30.0d);
-        if (max < 1000 || !this.f31621M.m4636w2().m7082T()) {
+        if (max < 1000 || !this.f31624M.m4636w2().m7082T()) {
             return max;
         }
         return 1000L;
@@ -572,37 +572,37 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
         boolean z2 = true;
         m7379y0(i == 3);
         boolean z3 = i == 2;
-        if (z3 != (this.f31633Y != 0)) {
+        if (z3 != (this.f31636Y != 0)) {
             if (z3) {
-                this.f31633Y = SystemClock.uptimeMillis();
+                this.f31636Y = SystemClock.uptimeMillis();
             } else {
-                Log.m14721i((int) Log.TAG_PLAYER, "[state] buffering finished in %dms", Long.valueOf(SystemClock.uptimeMillis() - this.f31633Y));
-                this.f31633Y = 0L;
+                Log.m14721i((int) Log.TAG_PLAYER, "[state] buffering finished in %dms", Long.valueOf(SystemClock.uptimeMillis() - this.f31636Y));
+                this.f31636Y = 0L;
             }
             m7401S();
         }
-        Log.m14733d((int) Log.TAG_PLAYER, "[state] onPlayerStateChanged mode:%d, playWhenReady:%b, state:%d", Integer.valueOf(this.f31622N), Boolean.valueOf(z), Integer.valueOf(i));
+        Log.m14733d((int) Log.TAG_PLAYER, "[state] onPlayerStateChanged mode:%d, playWhenReady:%b, state:%d", Integer.valueOf(this.f31625N), Boolean.valueOf(z), Integer.valueOf(i));
         if (i != 2) {
-            if (i != 4 || (i2 = this.f31622N) == 0) {
+            if (i != 4 || (i2 = this.f31625N) == 0) {
                 return;
             }
-            if (i2 != 3 || (sVar2 = this.f31625Q) == null || sVar2.mo19303K() != 1) {
-                this.f31621M.m4636w2().m7113D0();
+            if (i2 != 3 || (sVar2 = this.f31628Q) == null || sVar2.mo19304K() != 1) {
+                this.f31624M.m4636w2().m7113D0();
             }
-        } else if (this.f31622N == 3 && (sVar = this.f31625Q) != null && sVar.mo19303K() != 1) {
-            long Q = this.f31625Q.mo19292Q();
-            long g = this.f31625Q.mo19267g();
-            int u = this.f31625Q.mo19776u();
-            int F = this.f31625Q.mo19781F();
+        } else if (this.f31625N == 3 && (sVar = this.f31628Q) != null && sVar.mo19304K() != 1) {
+            long Q = this.f31628Q.mo19293Q();
+            long g = this.f31628Q.mo19268g();
+            int u = this.f31628Q.mo19777u();
+            int F = this.f31628Q.mo19782F();
             if (Q != -9223372036854775807L && g != -9223372036854775807L && u != -1 && F != -1 && g >= 5000 && g - Q < 500) {
-                int r = this.f31625Q.mo19777r();
-                TdApi.File j1 = C4779t2.m25494j1(this.f31626R.get(m7383u0(u, r, m7392h0())));
+                int r = this.f31628Q.mo19778r();
+                TdApi.File j1 = C4779t2.m25495j1(this.f31629R.get(m7383u0(u, r, m7392h0())));
                 if (j1 == null || !j1.local.isDownloadingCompleted) {
                     z2 = false;
                 }
                 Log.m14721i((int) Log.TAG_PLAYER, "[state] seeking to the next window, because we received buffering at the end of the current file, fileLoaded:%b", new Object[0]);
                 if (z2) {
-                    m7381w0(this.f31625Q, F, r, false);
+                    m7381w0(this.f31628Q, F, r, false);
                 }
             }
         }
@@ -611,39 +611,39 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
     @Override
     public void mo6979M4(C10930q6 q6Var, TdApi.Message message, int i, boolean z) {
         int i2;
-        if (this.f31622N == 3 && this.f31625Q != null) {
+        if (this.f31625N == 3 && this.f31628Q != null) {
             boolean h0 = m7392h0();
             TdApi.Message message2 = null;
             if (z) {
-                i2 = this.f31625Q.mo19781F();
+                i2 = this.f31628Q.mo19782F();
                 if (i2 == -1) {
                     i2 = -1;
                 } else if (h0) {
-                    i2 = (this.f31626R.size() - i2) - 1;
+                    i2 = (this.f31629R.size() - i2) - 1;
                 }
                 if (i2 != -1) {
-                    message2 = this.f31626R.get(i2);
+                    message2 = this.f31629R.get(i2);
                 }
             } else {
                 i2 = i;
             }
-            this.f31626R.remove(i);
+            this.f31629R.remove(i);
             if (i < i2) {
                 i2--;
             }
             if (z) {
-                this.f31628T = i2;
+                this.f31631T = i2;
             } else {
-                int i3 = this.f31628T;
+                int i3 = this.f31631T;
                 if (i < i3) {
-                    this.f31628T = i3 - 1;
+                    this.f31631T = i3 - 1;
                 }
             }
-            int r = this.f31625Q.mo19777r();
+            int r = this.f31628Q.mo19778r();
             if (h0) {
-                this.f31625Q.mo19778q((r - i) - 1);
+                this.f31628Q.mo19779q((r - i) - 1);
             } else {
-                this.f31625Q.mo19778q(i);
+                this.f31628Q.mo19779q(i);
             }
             if (z) {
                 m7385s0(q6Var, message2);
@@ -654,14 +654,14 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
     @Override
     public void mo6985N2(int i) {
         AbstractC6689s sVar;
-        if (this.f31622N == 3 && (sVar = this.f31625Q) != null) {
-            sVar.mo19275d(C9773p0.m7047i0(m7389n0(), i));
+        if (this.f31625N == 3 && (sVar = this.f31628Q) != null) {
+            sVar.mo19276d(C9773p0.m7047i0(m7389n0(), i));
         }
     }
 
     public void m7404O(C10930q6 q6Var, TdApi.Message message, AbstractC9728b bVar) {
         synchronized (this) {
-            ArrayList<C9729c> arrayList = this.f31639e0;
+            ArrayList<C9729c> arrayList = this.f31642e0;
             if (arrayList != null) {
                 int i = 0;
                 Iterator<C9729c> it = arrayList.iterator();
@@ -670,10 +670,10 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
                         break;
                     }
                     C9729c next = it.next();
-                    if (!C9773p0.m7112E(next.f31644a, q6Var, next.f31645b, message)) {
+                    if (!C9773p0.m7112E(next.f31647a, q6Var, next.f31648b, message)) {
                         i++;
-                    } else if (next.f31646c.remove(bVar) && next.f31646c.isEmpty()) {
-                        this.f31639e0.remove(i);
+                    } else if (next.f31649c.remove(bVar) && next.f31649c.isEmpty()) {
+                        this.f31642e0.remove(i);
                     }
                 }
             }
@@ -681,7 +681,7 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
     }
 
     public final void m7403P() {
-        C1379j0.m37332e0(new Runnable() {
+        C1379j0.m37335e0(new Runnable() {
             @Override
             public final void run() {
                 C9726c.this.m7387q0();
@@ -698,15 +698,15 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
 
     public final void m7402Q() {
         AbstractC6689s sVar;
-        if (this.f31622N == 3 && (sVar = this.f31625Q) != null && this.f31626R != null) {
-            int u = sVar.mo19776u();
+        if (this.f31625N == 3 && (sVar = this.f31628Q) != null && this.f31629R != null) {
+            int u = sVar.mo19777u();
             if (u != -1 && m7392h0()) {
-                u = m7383u0(u, this.f31626R.size(), true);
+                u = m7383u0(u, this.f31629R.size(), true);
             }
-            if (u != this.f31628T && u >= 0 && u < this.f31626R.size()) {
-                Log.m14721i((int) Log.TAG_PLAYER, "Next track reached, updating UI only %d -> %d", Integer.valueOf(this.f31628T), Integer.valueOf(u));
-                this.f31628T = u;
-                m7385s0(this.f31650b, this.f31626R.get(u));
+            if (u != this.f31631T && u >= 0 && u < this.f31629R.size()) {
+                Log.m14721i((int) Log.TAG_PLAYER, "Next track reached, updating UI only %d -> %d", Integer.valueOf(this.f31631T), Integer.valueOf(u));
+                this.f31631T = u;
+                m7385s0(this.f31653b, this.f31629R.get(u));
             }
         }
     }
@@ -717,16 +717,16 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
 
     @Override
     public void mo6978R0(C10930q6 q6Var, List<TdApi.Message> list, boolean z) {
-        if (this.f31622N == 3) {
+        if (this.f31625N == 3) {
             if (z) {
-                this.f31626R.addAll(list);
+                this.f31629R.addAll(list);
             } else {
-                this.f31626R.addAll(0, list);
+                this.f31629R.addAll(0, list);
             }
             ArrayList arrayList = new ArrayList(list.size());
             int size = list.size();
             boolean z2 = true;
-            boolean z3 = (this.f31623O & Log.TAG_ROUND) != 0;
+            boolean z3 = (this.f31626O & Log.TAG_ROUND) != 0;
             while (true) {
                 size--;
                 if (size < 0) {
@@ -738,45 +738,45 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
                 z2 = false;
             }
             if (z2) {
-                this.f31625Q.mo19348p(arrayList);
+                this.f31628Q.mo19349p(arrayList);
             } else {
-                this.f31625Q.mo19362e(0, arrayList);
+                this.f31628Q.mo19363e(0, arrayList);
             }
             if (!z) {
-                this.f31628T += list.size();
+                this.f31631T += list.size();
             }
         }
     }
 
     public final void m7401S() {
         AbstractC6689s sVar;
-        if (this.f31622N == 3 && (sVar = this.f31625Q) != null) {
-            long g = sVar.mo19267g();
-            long Q = this.f31625Q.mo19292Q();
+        if (this.f31625N == 3 && (sVar = this.f31628Q) != null) {
+            long g = sVar.mo19268g();
+            long Q = this.f31628Q.mo19293Q();
             if (g != -9223372036854775807L || Q != -9223372036854775807L) {
                 long max = Math.max(-1L, g);
                 long max2 = Math.max(-1L, Q);
                 float f = max <= 0 ? 0.0f : max2 >= max ? 1.0f : (float) (max2 / max);
-                if (this.f31651c != null) {
-                    C9773p0 w2 = this.f31621M.m4636w2();
-                    C10930q6 q6Var = this.f31650b;
-                    TdApi.Message message = this.f31651c;
-                    w2.m7073X0(q6Var, message.chatId, message.f25406id, C4779t2.m25459o1(message), f, max2, max, this.f31625Q.mo19217z() == 2);
+                if (this.f31654c != null) {
+                    C9773p0 w2 = this.f31624M.m4636w2();
+                    C10930q6 q6Var = this.f31653b;
+                    TdApi.Message message = this.f31654c;
+                    w2.m7073X0(q6Var, message.chatId, message.f25409id, C4779t2.m25460o1(message), f, max2, max, this.f31628Q.mo19218z() == 2);
                 }
             }
         }
     }
 
     public final void m7400T() {
-        HandlerC9730d dVar = this.f31634Z;
+        HandlerC9730d dVar = this.f31637Z;
         dVar.sendMessageDelayed(Message.obtain(dVar, 0), m7405J());
     }
 
     public void m7399U() {
-        if (this.f31635a0) {
+        if (this.f31638a0) {
             boolean z = false;
-            if (this.f31634Z.hasMessages(0)) {
-                this.f31634Z.removeMessages(0);
+            if (this.f31637Z.hasMessages(0)) {
+                this.f31637Z.removeMessages(0);
                 z = true;
             }
             m7401S();
@@ -787,25 +787,25 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
     }
 
     public final void m7398W() {
-        this.f31636b0 = null;
-        this.f31638d0 = null;
-        this.f31637c0 = null;
+        this.f31639b0 = null;
+        this.f31641d0 = null;
+        this.f31640c0 = null;
     }
 
     @Override
     public void mo6977W3(C10930q6 q6Var, TdApi.Message message, int i) {
-        if (this.f31622N == 3) {
-            this.f31626R.add(i, message);
-            int i2 = this.f31628T;
+        if (this.f31625N == 3) {
+            this.f31629R.add(i, message);
+            int i2 = this.f31631T;
             if (i <= i2) {
-                this.f31628T = i2 + 1;
+                this.f31631T = i2 + 1;
             }
             AbstractC7230t h2 = C7389v0.m16627h2(q6Var.m2188w6(), message);
-            int r = this.f31625Q.mo19777r();
+            int r = this.f31628Q.mo19778r();
             if (m7392h0()) {
                 i = r - i;
             }
-            this.f31625Q.mo19393A(i, h2);
+            this.f31628Q.mo19394A(i, h2);
         }
     }
 
@@ -818,7 +818,7 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
 
     public final int m7397Y(boolean z) {
         int i = Build.VERSION.SDK_INT >= 16 ? 3 : 1;
-        int y1 = C4868i.m24726c2().m24554y1();
+        int y1 = C4868i.m24727c2().m24555y1();
         return (y1 <= 0 || y1 > i) ? i : y1;
     }
 
@@ -828,11 +828,11 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
 
     public final void m7396Z(C10930q6 q6Var, TdApi.Message message, C6053a aVar) {
         synchronized (this) {
-            if (!C9773p0.m7114D(this.f31637c0, message) || this.f31638d0 == null) {
-                this.f31636b0 = q6Var;
-                this.f31637c0 = message;
-                this.f31638d0 = aVar;
-                ArrayList<C9729c> arrayList = this.f31639e0;
+            if (!C9773p0.m7114D(this.f31640c0, message) || this.f31641d0 == null) {
+                this.f31639b0 = q6Var;
+                this.f31640c0 = message;
+                this.f31641d0 = aVar;
+                ArrayList<C9729c> arrayList = this.f31642e0;
                 if (arrayList != null) {
                     int i = 0;
                     Iterator<C9729c> it = arrayList.iterator();
@@ -841,10 +841,10 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
                             break;
                         }
                         C9729c next = it.next();
-                        if (next.f31644a == q6Var && C9773p0.m7114D(next.f31645b, message)) {
+                        if (next.f31647a == q6Var && C9773p0.m7114D(next.f31648b, message)) {
                             next.m7372d(aVar);
-                            next.f31646c.clear();
-                            this.f31639e0.remove(i);
+                            next.f31649c.clear();
+                            this.f31642e0.remove(i);
                             break;
                         }
                         i++;
@@ -861,7 +861,7 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
 
     @Override
     public void mo6976d7(C10930q6 q6Var, long j, long j2, long j3, boolean z, boolean z2, List<TdApi.Message> list) {
-        if (this.f31622N == 3) {
+        if (this.f31625N == 3) {
             m7398W();
         }
     }
@@ -869,19 +869,19 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
     @Override
     public void mo7355e0(C6591e2 e2Var) {
         mo7239n(e2Var);
-        if (this.f31622N != 0) {
-            this.f31621M.m4636w2().m7113D0();
+        if (this.f31625N != 0) {
+            this.f31624M.m4636w2().m7113D0();
         }
     }
 
     @Override
     public void mo7394f(C4812v2 v2Var, int i, float f) {
         TdApi.Message message;
-        if (this.f31650b != null && v2Var.m25195k() == this.f31650b && (message = this.f31651c) != null && C4779t2.m25459o1(message) == i) {
-            C9773p0 w2 = this.f31621M.m4636w2();
-            C10930q6 q6Var = this.f31650b;
-            TdApi.Message message2 = this.f31651c;
-            w2.m7073X0(q6Var, message2.chatId, message2.f25406id, i, f, -1L, -1L, false);
+        if (this.f31653b != null && v2Var.m25196k() == this.f31653b && (message = this.f31654c) != null && C4779t2.m25460o1(message) == i) {
+            C9773p0 w2 = this.f31624M.m4636w2();
+            C10930q6 q6Var = this.f31653b;
+            TdApi.Message message2 = this.f31654c;
+            w2.m7073X0(q6Var, message2.chatId, message2.f25409id, i, f, -1L, -1L, false);
         }
     }
 
@@ -894,7 +894,7 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
     }
 
     public final boolean m7392h0() {
-        return (this.f31623O & Log.TAG_ROUND) != 0;
+        return (this.f31626O & Log.TAG_ROUND) != 0;
     }
 
     @Override
@@ -911,56 +911,56 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
     }
 
     public boolean m7390k0() {
-        int i = this.f31628T;
-        return i != -1 && i >= 0 && i < this.f31626R.size();
+        int i = this.f31631T;
+        return i != -1 && i >= 0 && i < this.f31629R.size();
     }
 
     @Override
     public void mo7239n(C6591e2 e2Var) {
-        C1379j0.m37292y0(C7389v0.m16556z1(e2Var) ? R.string.AudioPlaybackUnsupported : R.string.AudioPlaybackError, 0);
+        C1379j0.m37295y0(C7389v0.m16556z1(e2Var) ? R.string.AudioPlaybackUnsupported : R.string.AudioPlaybackError, 0);
     }
 
     public boolean m7389n0() {
-        return m7390k0() && this.f31626R.get(this.f31628T).content.getConstructor() == 527777781;
+        return m7390k0() && this.f31629R.get(this.f31631T).content.getConstructor() == 527777781;
     }
 
     @Override
     public void mo6974o0(C10930q6 q6Var, TdApi.Message message, int i, List<TdApi.Message> list, boolean z, int i2) {
-        if (this.f31622N == 3 && this.f31625Q != null && this.f31628T != i) {
+        if (this.f31625N == 3 && this.f31628Q != null && this.f31631T != i) {
             boolean z2 = false;
-            Log.m14721i((int) Log.TAG_PLAYER, "trackList position change id:%d, newIndex:%d, totalCount:%d, byUserRequest:%b", Long.valueOf(message.f25406id), Integer.valueOf(i), Integer.valueOf(list.size()), Boolean.valueOf(z));
-            this.f31628T = i;
-            if (!this.f31632X) {
-                AbstractC6689s sVar = this.f31625Q;
-                int size = this.f31626R.size();
-                if ((this.f31623O & Log.TAG_ROUND) != 0) {
+            Log.m14721i((int) Log.TAG_PLAYER, "trackList position change id:%d, newIndex:%d, totalCount:%d, byUserRequest:%b", Long.valueOf(message.f25409id), Integer.valueOf(i), Integer.valueOf(list.size()), Boolean.valueOf(z));
+            this.f31631T = i;
+            if (!this.f31635X) {
+                AbstractC6689s sVar = this.f31628Q;
+                int size = this.f31629R.size();
+                if ((this.f31626O & Log.TAG_ROUND) != 0) {
                     z2 = true;
                 }
                 m7381w0(sVar, i, size, z2);
-                this.f31625Q.mo19340v(this.f31627S);
+                this.f31628Q.mo19341v(this.f31630S);
             }
         }
     }
 
     public boolean m7388p0() {
-        return this.f31622N == 3 && this.f31625Q != null;
+        return this.f31625N == 3 && this.f31628Q != null;
     }
 
     @Override
     public void mo7231r(C10930q6 q6Var, TdApi.Message message, boolean z) {
-        int i = this.f31622N;
+        int i = this.f31625N;
         if (i == 1) {
-            C4356b0.m28201k().m28191u();
+            C4356b0.m28203k().m28193u();
         } else if (i == 3) {
-            ArrayList<TdApi.Message> arrayList = this.f31626R;
+            ArrayList<TdApi.Message> arrayList = this.f31629R;
             if (arrayList != null) {
                 arrayList.clear();
-                this.f31628T = -1;
+                this.f31631T = -1;
             }
-            final AbstractC6689s sVar = this.f31625Q;
+            final AbstractC6689s sVar = this.f31628Q;
             if (sVar != null) {
-                if (this.f31627S) {
-                    sVar.mo19383I(this);
+                if (this.f31630S) {
+                    sVar.mo19384I(this);
                     final AtomicBoolean atomicBoolean = new AtomicBoolean(false);
                     Runnable aVar = new Runnable() {
                         @Override
@@ -968,13 +968,13 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
                             C9726c.m7386r0(atomicBoolean, sVar);
                         }
                     };
-                    sVar.mo19294P(new C9727a(aVar, sVar));
-                    sVar.mo19340v(false);
-                    C1379j0.m37332e0(aVar, 1000L);
+                    sVar.mo19295P(new C9727a(aVar, sVar));
+                    sVar.mo19341v(false);
+                    C1379j0.m37335e0(aVar, 1000L);
                 } else {
-                    sVar.mo19281a();
+                    sVar.mo19282a();
                 }
-                this.f31625Q = null;
+                this.f31628Q = null;
             }
         }
         m7378z0(0, false);
@@ -982,7 +982,7 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
 
     @Override
     public void mo7340s(AbstractC6618i2.C6625f fVar, AbstractC6618i2.C6625f fVar2, int i) {
-        int i2 = this.f31622N;
+        int i2 = this.f31625N;
         if (i2 == 3) {
             Log.m14733d((int) Log.TAG_PLAYER, "[state] onPositionDiscontinuity mode:%d, reason:%d", Integer.valueOf(i2), Integer.valueOf(i));
             m7402Q();
@@ -990,39 +990,39 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
     }
 
     public final void m7385s0(C10930q6 q6Var, TdApi.Message message) {
-        this.f31632X = true;
-        this.f31621M.m4636w2().m7103I0(q6Var, message, true);
-        this.f31632X = false;
+        this.f31635X = true;
+        this.f31624M.m4636w2().m7103I0(q6Var, message, true);
+        this.f31635X = false;
     }
 
     @Override
     public void mo7339t(C7233t0 t0Var, C11272n nVar) {
         Log.m14733d((int) Log.TAG_PLAYER, "[state] onTracksChanged", new Object[0]);
-        if (this.f31622N == 3 && this.f31628T != -1 && m7395d0(t0Var) != null) {
+        if (this.f31625N == 3 && this.f31631T != -1 && m7395d0(t0Var) != null) {
             m7403P();
         }
     }
 
     public C6053a m7384t0(C10930q6 q6Var, TdApi.Message message, AbstractC9728b bVar) {
         synchronized (this) {
-            if (C9773p0.m7112E(this.f31636b0, q6Var, this.f31637c0, message)) {
-                bVar.mo7376a(q6Var, message, this.f31638d0);
-                return this.f31638d0;
+            if (C9773p0.m7112E(this.f31639b0, q6Var, this.f31640c0, message)) {
+                bVar.mo7376a(q6Var, message, this.f31641d0);
+                return this.f31641d0;
             }
-            ArrayList<C9729c> arrayList = this.f31639e0;
+            ArrayList<C9729c> arrayList = this.f31642e0;
             if (arrayList != null) {
                 Iterator<C9729c> it = arrayList.iterator();
                 while (it.hasNext()) {
                     C9729c next = it.next();
-                    if (next.f31644a == q6Var && C9773p0.m7114D(next.f31645b, message)) {
-                        next.f31646c.add(bVar);
+                    if (next.f31647a == q6Var && C9773p0.m7114D(next.f31648b, message)) {
+                        next.f31649c.add(bVar);
                         return null;
                     }
                 }
             } else {
-                this.f31639e0 = new ArrayList<>();
+                this.f31642e0 = new ArrayList<>();
             }
-            this.f31639e0.add(new C9729c(q6Var, message, bVar));
+            this.f31642e0.add(new C9729c(q6Var, message, bVar));
             return null;
         }
     }
@@ -1033,21 +1033,21 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
 
     public void m7382v0(long j, long j2) {
         AbstractC6689s sVar;
-        int i = this.f31622N;
+        int i = this.f31625N;
         if (i != 0) {
             if (i != 1) {
-                if (i == 3 && (sVar = this.f31625Q) != null) {
-                    sVar.mo19779c(j);
+                if (i == 3 && (sVar = this.f31628Q) != null) {
+                    sVar.mo19780c(j);
                 }
             } else if (j2 != -1 && j >= 0 && j2 >= j) {
-                C4356b0.m28201k().m28193s(this.f31624P, C5069h.m24089d((float) (j / j2)));
+                C4356b0.m28203k().m28195s(this.f31627P, C5069h.m24090d((float) (j / j2)));
             }
         }
     }
 
     public final void m7380x0() {
-        if (this.f31625Q != null) {
-            this.f31621M.m4636w2().m7093N0().m7309i(this.f31625Q, 2);
+        if (this.f31628Q != null) {
+            this.f31624M.m4636w2().m7093N0().m7309i(this.f31628Q, 2);
         }
     }
 
@@ -1058,16 +1058,16 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
     }
 
     public final void m7379y0(boolean z) {
-        if (this.f31635a0 != z) {
-            this.f31635a0 = z;
+        if (this.f31638a0 != z) {
+            this.f31638a0 = z;
             if (z) {
-                if (this.f31634Z == null) {
-                    this.f31634Z = new HandlerC9730d(this);
+                if (this.f31637Z == null) {
+                    this.f31637Z = new HandlerC9730d(this);
                 }
                 m7400T();
                 return;
             }
-            HandlerC9730d dVar = this.f31634Z;
+            HandlerC9730d dVar = this.f31637Z;
             if (dVar != null) {
                 dVar.removeMessages(0);
             }
@@ -1080,24 +1080,24 @@ public class C9726c extends AbstractC9732d implements C4812v2.AbstractC4813a, C9
     @Override
     public void mo7218z(boolean z) {
         AbstractC6689s sVar;
-        int i = this.f31622N;
+        int i = this.f31625N;
         if (i != 1) {
-            if (i == 3 && (sVar = this.f31625Q) != null) {
-                this.f31627S = z;
-                sVar.mo19340v(z);
+            if (i == 3 && (sVar = this.f31628Q) != null) {
+                this.f31630S = z;
+                sVar.mo19341v(z);
             }
         } else if (z) {
-            C4356b0.m28201k().m28196p(this.f31624P);
+            C4356b0.m28203k().m28198p(this.f31627P);
         } else {
-            C4356b0.m28201k().m28197o(this.f31624P);
+            C4356b0.m28203k().m28199o(this.f31627P);
         }
     }
 
     public final void m7378z0(int i, boolean z) {
-        if (this.f31622N != i) {
-            this.f31622N = i;
+        if (this.f31625N != i) {
+            this.f31625N = i;
             if (i == 3) {
-                C1379j0.m37367D0(new Intent(C1379j0.m37315n(), AudioService.class), z, false);
+                C1379j0.m37370D0(new Intent(C1379j0.m37318n(), AudioService.class), z, false);
             }
         }
     }

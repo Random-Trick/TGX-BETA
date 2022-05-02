@@ -34,7 +34,7 @@ public final class C6074l extends AbstractC6069i {
             return false;
         }
         C6074l lVar = (C6074l) obj;
-        return C1216l0.m37982c(this.f19298b, lVar.f19298b) && Arrays.equals(this.f19299c, lVar.f19299c);
+        return C1216l0.m37985c(this.f19298b, lVar.f19298b) && Arrays.equals(this.f19299c, lVar.f19299c);
     }
 
     public int hashCode() {
@@ -61,7 +61,7 @@ public final class C6074l extends AbstractC6069i {
 
     public C6074l(Parcel parcel) {
         super("PRIV");
-        this.f19298b = (String) C1216l0.m37968j(parcel.readString());
-        this.f19299c = (byte[]) C1216l0.m37968j(parcel.createByteArray());
+        this.f19298b = (String) C1216l0.m37971j(parcel.readString());
+        this.f19299c = (byte[]) C1216l0.m37971j(parcel.createByteArray());
     }
 }

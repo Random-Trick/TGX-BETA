@@ -35,7 +35,7 @@ public class C9816k implements AbstractC10311w1 {
         if (m6811e()) {
             return m6814b(str, i);
         }
-        C0662u1.m40643k("ExcludedSupportedSizesQuirk", "Cannot retrieve list of supported sizes to exclude on this device.");
+        C0662u1.m40646k("ExcludedSupportedSizesQuirk", "Cannot retrieve list of supported sizes to exclude on this device.");
         return Collections.emptyList();
     }
 

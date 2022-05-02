@@ -17,33 +17,33 @@ public class C5799y2 extends AbstractC5571D {
     }
 
     @Override
-    AbstractC5632P0 mo22141B0(AbstractC5572D0 d0, AbstractC5468G g, AbstractC5531m mVar) {
-        long S = d0.mo22303S(g);
+    AbstractC5632P0 mo22142B0(AbstractC5572D0 d0, AbstractC5468G g, AbstractC5531m mVar) {
+        long S = d0.mo22304S(g);
         if (S > 0 && g.hasCharacteristics(Log.TAG_VIDEO)) {
-            return AbstractC5572D0.m22441I(d0, AbstractC5572D0.m22449A(d0.mo22302Y(), g, this.f18518u, this.f18519v), true);
+            return AbstractC5572D0.m22442I(d0, AbstractC5572D0.m22450A(d0.mo22303Y(), g, this.f18518u, this.f18519v), true);
         }
-        return !EnumC5705f3.ORDERED.m22265d(d0.mo22301Z()) ? AbstractC5572D0.m22441I(this, m22139R0((AbstractC5811y) d0.mo22298s0(g), this.f18518u, this.f18519v, S), true) : (AbstractC5632P0) new C5559A2(this, d0, g, mVar, this.f18518u, this.f18519v).invoke();
+        return !EnumC5705f3.ORDERED.m22266d(d0.mo22302Z()) ? AbstractC5572D0.m22442I(this, m22140R0((AbstractC5811y) d0.mo22299s0(g), this.f18518u, this.f18519v, S), true) : (AbstractC5632P0) new C5559A2(this, d0, g, mVar, this.f18518u, this.f18519v).invoke();
     }
 
     @Override
-    AbstractC5468G mo22140C0(AbstractC5572D0 d0, AbstractC5468G g) {
+    AbstractC5468G mo22141C0(AbstractC5572D0 d0, AbstractC5468G g) {
         long G;
-        long S = d0.mo22303S(g);
+        long S = d0.mo22304S(g);
         if (S > 0 && g.hasCharacteristics(Log.TAG_VIDEO)) {
-            AbstractC5811y yVar = (AbstractC5811y) d0.mo22298s0(g);
+            AbstractC5811y yVar = (AbstractC5811y) d0.mo22299s0(g);
             long j = this.f18518u;
-            G = AbstractC5572D0.m22443G(j, this.f18519v);
+            G = AbstractC5572D0.m22444G(j, this.f18519v);
             return new C5790w3(yVar, j, G);
         }
-        return !EnumC5705f3.ORDERED.m22265d(d0.mo22301Z()) ? m22139R0((AbstractC5811y) d0.mo22298s0(g), this.f18518u, this.f18519v, S) : ((AbstractC5632P0) new C5559A2(this, d0, g, C5682b0.f18314b, this.f18518u, this.f18519v).invoke()).mo42629spliterator();
+        return !EnumC5705f3.ORDERED.m22266d(d0.mo22302Z()) ? m22140R0((AbstractC5811y) d0.mo22299s0(g), this.f18518u, this.f18519v, S) : ((AbstractC5632P0) new C5559A2(this, d0, g, C5682b0.f18314b, this.f18518u, this.f18519v).invoke()).mo42632spliterator();
     }
 
     @Override
-    public AbstractC5759q2 mo22136E0(int i, AbstractC5759q2 q2Var) {
+    public AbstractC5759q2 mo22137E0(int i, AbstractC5759q2 q2Var) {
         return new C5794x2(this, q2Var);
     }
 
-    AbstractC5811y m22139R0(AbstractC5811y yVar, long j, long j2, long j3) {
+    AbstractC5811y m22140R0(AbstractC5811y yVar, long j, long j2, long j3) {
         long j4;
         long j5;
         if (j <= j3) {

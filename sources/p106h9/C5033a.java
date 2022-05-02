@@ -7,17 +7,17 @@ public final class C5033a {
     public final EGLConfig f17000a;
 
     public C5033a(EGLConfig eGLConfig) {
-        C8298k.m12934e(eGLConfig, "native");
+        C8298k.m12933e(eGLConfig, "native");
         this.f17000a = eGLConfig;
     }
 
-    public final EGLConfig m24242a() {
+    public final EGLConfig m24243a() {
         return this.f17000a;
     }
 
     public boolean equals(Object obj) {
         if (this != obj) {
-            return (obj instanceof C5033a) && C8298k.m12937b(this.f17000a, ((C5033a) obj).f17000a);
+            return (obj instanceof C5033a) && C8298k.m12936b(this.f17000a, ((C5033a) obj).f17000a);
         }
         return true;
     }

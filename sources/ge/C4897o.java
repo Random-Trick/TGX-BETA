@@ -15,93 +15,93 @@ import p108hb.C5070i;
 import p181mb.C6810a;
 
 public class C4897o {
-    public static void m24472a(byte b, byte b2) {
+    public static void m24473a(byte b, byte b2) {
         if (b != b2) {
             throw new AssertionError(((int) b) + " vs " + ((int) b2));
         }
     }
 
-    public static void m24471b(double d, double d2) {
+    public static void m24472b(double d, double d2) {
         if (d != d2) {
             throw new AssertionError(d + " vs " + d2);
         }
     }
 
-    public static void m24470c(float f, float f2) {
+    public static void m24471c(float f, float f2) {
         if (f != f2) {
             throw new AssertionError(f + " vs " + f2);
         }
     }
 
-    public static void m24469d(int i, int i2) {
+    public static void m24470d(int i, int i2) {
         if (i != i2) {
             throw new AssertionError(i + " vs " + i2);
         }
     }
 
-    public static void m24468e(long j, long j2) {
+    public static void m24469e(long j, long j2) {
         if (j != j2) {
             throw new AssertionError(j + " vs " + j2);
         }
     }
 
-    public static void m24467f(String str, String str2) {
-        if (!C5070i.m24067c(str, str2)) {
+    public static void m24468f(String str, String str2) {
+        if (!C5070i.m24068c(str, str2)) {
             throw new AssertionError(str + " vs " + str2);
         }
     }
 
-    public static void m24466g(boolean z, boolean z2) {
+    public static void m24467g(boolean z, boolean z2) {
         if (z != z2) {
             throw new AssertionError(z + " vs " + z2);
         }
     }
 
-    public static void m24465h(byte[] bArr, byte[] bArr2) {
+    public static void m24466h(byte[] bArr, byte[] bArr2) {
         if (!Arrays.equals(bArr, bArr2)) {
             throw new AssertionError();
         }
     }
 
-    public static void m24464i(double[] dArr, double[] dArr2) {
+    public static void m24465i(double[] dArr, double[] dArr2) {
         if (!Arrays.equals(dArr, dArr2)) {
             throw new AssertionError();
         }
     }
 
-    public static void m24463j(float[] fArr, float[] fArr2) {
+    public static void m24464j(float[] fArr, float[] fArr2) {
         if (!Arrays.equals(fArr, fArr2)) {
             throw new AssertionError();
         }
     }
 
-    public static void m24462k(int[] iArr, int[] iArr2) {
+    public static void m24463k(int[] iArr, int[] iArr2) {
         if (!Arrays.equals(iArr, iArr2)) {
             throw new AssertionError();
         }
     }
 
-    public static void m24461l(long[] jArr, long[] jArr2) {
+    public static void m24462l(long[] jArr, long[] jArr2) {
         if (!Arrays.equals(jArr, jArr2)) {
             throw new AssertionError();
         }
     }
 
-    public static void m24460m(String[] strArr, String[] strArr2) {
+    public static void m24461m(String[] strArr, String[] strArr2) {
         if (!Arrays.equals(strArr, strArr2)) {
             throw new AssertionError();
         }
     }
 
-    public static File m24459n() {
-        File file = new File(C1379j0.m37315n().getFilesDir(), "pmc");
+    public static File m24460n() {
+        File file = new File(C1379j0.m37318n().getFilesDir(), "pmc");
         if (file.exists() || file.mkdir()) {
             return new File(file, "test");
         }
         throw new IllegalStateException("Unable to create working directory");
     }
 
-    public static void m24458o() {
+    public static void m24459o() {
         float f;
         int[] iArr;
         float[] fArr;
@@ -133,7 +133,7 @@ public class C4897o {
         String str21 = "intArray";
         String str22 = "byteArray";
         Log.load(null);
-        File n = m24459n();
+        File n = m24460n();
         LevelDB levelDB = new LevelDB(n.getPath(), true, null);
         try {
             levelDB.clear();
@@ -160,7 +160,7 @@ public class C4897o {
                 if (i2 >= 1024) {
                     break;
                 }
-                iArr2[i3] = C6810a.m18925n(bArr2, i2);
+                iArr2[i3] = C6810a.m18926n(bArr2, i2);
                 i2 += 4;
                 i3++;
                 nextFloat = f;
@@ -173,7 +173,7 @@ public class C4897o {
                 if (i4 >= 1024) {
                     break;
                 }
-                fArr2[i5] = C6810a.m18927l(bArr2, i4);
+                fArr2[i5] = C6810a.m18928l(bArr2, i4);
                 i4 += 4;
                 i5++;
                 iArr2 = iArr;
@@ -186,7 +186,7 @@ public class C4897o {
                 if (i6 >= 1024) {
                     break;
                 }
-                jArr2[i7] = C6810a.m18923p(bArr2, i6);
+                jArr2[i7] = C6810a.m18924p(bArr2, i6);
                 i6 += 8;
                 i7++;
                 fArr2 = fArr;
@@ -199,7 +199,7 @@ public class C4897o {
                 if (i8 >= 1024) {
                     break;
                 }
-                dArr[i9] = C6810a.m18929j(bArr2, i8);
+                dArr[i9] = C6810a.m18930j(bArr2, i8);
                 i8 += 8;
                 i9++;
                 jArr2 = jArr;
@@ -230,7 +230,7 @@ public class C4897o {
             double[] dArr2 = dArr;
             int i14 = nextInt;
             byte[] bArr3 = bArr2;
-            m24469d(i11, i12);
+            m24470d(i11, i12);
             levelDB.putString("string", str16);
             levelDB.m17996H(str21, new int[0]);
             levelDB.m18000D(str22, new byte[0]);
@@ -413,15 +413,15 @@ public class C4897o {
             levelDB.apply();
             levelDB.m17989O(new AssertionError("Corruption: not an sstable (bad magic number)"));
             levelDB.m17970k();
-            m24467f(levelDB.m17981W("string"), str);
-            m24462k(levelDB.m17965p(str21), new int[0]);
-            m24465h(levelDB.m17968m(str32), new byte[0]);
-            m24461l(levelDB.m17963r(str20), new long[0]);
-            m24463j(levelDB.m17966o(str10), new float[0]);
-            m24464i(levelDB.m17967n(str42), new double[0]);
+            m24468f(levelDB.m17981W("string"), str);
+            m24463k(levelDB.m17965p(str21), new int[0]);
+            m24466h(levelDB.m17968m(str32), new byte[0]);
+            m24462l(levelDB.m17963r(str20), new long[0]);
+            m24464j(levelDB.m17966o(str10), new float[0]);
+            m24465i(levelDB.m17967n(str42), new double[0]);
             String str43 = str6;
-            m24460m(levelDB.m17959v(str43), new String[0]);
-            m24460m(levelDB.m17959v("stringArray2"), new String[]{str});
+            m24461m(levelDB.m17959v(str43), new String[0]);
+            m24461m(levelDB.m17959v("stringArray2"), new String[]{str});
             long uptimeMillis2 = SystemClock.uptimeMillis();
             int i23 = 0;
             while (i23 < 1000) {
@@ -432,14 +432,14 @@ public class C4897o {
                 String str45 = str39;
                 sb15.append(str45);
                 str38 = str44;
-                m24466g(levelDB.contains(sb15.toString()), true);
+                m24467g(levelDB.contains(sb15.toString()), true);
                 StringBuilder sb16 = new StringBuilder();
                 String str46 = str31;
                 sb16.append(str46);
                 sb16.append(str45);
                 sb11 = sb11;
                 int i24 = i20;
-                m24469d(levelDB.m17983U(sb16.toString()), i24);
+                m24470d(levelDB.m17983U(sb16.toString()), i24);
                 StringBuilder sb17 = new StringBuilder();
                 i20 = i24;
                 String str47 = str37;
@@ -448,20 +448,20 @@ public class C4897o {
                 str37 = str47;
                 String str48 = str43;
                 long j6 = j5;
-                m24468e(levelDB.m17982V(sb17.toString()), j6);
+                m24469e(levelDB.m17982V(sb17.toString()), j6);
                 StringBuilder sb18 = new StringBuilder();
                 String str49 = str33;
                 sb18.append(str49);
                 sb18.append(str45);
                 str33 = str49;
                 boolean z5 = z;
-                m24466g(levelDB.m17987Q(sb18.toString()), z5);
+                m24467g(levelDB.m17987Q(sb18.toString()), z5);
                 StringBuilder sb19 = new StringBuilder();
                 z = z5;
                 sb19.append("byte");
                 sb19.append(str45);
                 byte b5 = b4;
-                m24472a(levelDB.m17986R(sb19.toString()), b5);
+                m24473a(levelDB.m17986R(sb19.toString()), b5);
                 StringBuilder sb20 = new StringBuilder();
                 b4 = b5;
                 String str50 = str34;
@@ -469,7 +469,7 @@ public class C4897o {
                 sb20.append(str45);
                 str34 = str50;
                 float f4 = f;
-                m24470c(levelDB.m17984T(sb20.toString()), f4);
+                m24471c(levelDB.m17984T(sb20.toString()), f4);
                 StringBuilder sb21 = new StringBuilder();
                 f = f4;
                 String str51 = str30;
@@ -478,27 +478,27 @@ public class C4897o {
                 str30 = str51;
                 j5 = j6;
                 double d3 = d;
-                m24471b(levelDB.m17985S(sb21.toString()), d3);
+                m24472b(levelDB.m17985S(sb21.toString()), d3);
                 String str52 = uuid;
-                m24467f(levelDB.m17981W("string" + str45), str52);
-                m24462k(levelDB.m17965p(str21 + str45), iArr4);
+                m24468f(levelDB.m17981W("string" + str45), str52);
+                m24463k(levelDB.m17965p(str21 + str45), iArr4);
                 iArr4 = iArr4;
                 byte[] bArr8 = bArr5;
-                m24465h(levelDB.m17968m(str32 + str45), bArr8);
+                m24466h(levelDB.m17968m(str32 + str45), bArr8);
                 bArr5 = bArr8;
                 long[] jArr4 = jArr;
-                m24461l(levelDB.m17963r(str20 + str45), jArr4);
+                m24462l(levelDB.m17963r(str20 + str45), jArr4);
                 jArr = jArr4;
                 float[] fArr4 = fArr;
-                m24463j(levelDB.m17966o(str10 + str45), fArr4);
+                m24464j(levelDB.m17966o(str10 + str45), fArr4);
                 fArr = fArr4;
                 double[] dArr4 = dArr2;
-                m24464i(levelDB.m17967n(str42 + str45), dArr4);
+                m24465i(levelDB.m17967n(str42 + str45), dArr4);
                 StringBuilder sb22 = new StringBuilder();
                 dArr2 = dArr4;
                 sb22.append(str48);
                 sb22.append(str45);
-                m24460m(levelDB.m17959v(sb22.toString()), strArr4);
+                m24461m(levelDB.m17959v(sb22.toString()), strArr4);
                 i23++;
                 d = d3;
                 str39 = str45;
@@ -522,7 +522,7 @@ public class C4897o {
                     int h = next.m17947h();
                     str15 = str21;
                     i = i20;
-                    m24469d(h, i);
+                    m24470d(h, i);
                 } else {
                     str15 = str21;
                     i = i20;
@@ -542,7 +542,7 @@ public class C4897o {
                     str13 = str53;
                     str11 = str54;
                     j = j5;
-                    m24468e(i25, j);
+                    m24469e(i25, j);
                 } else {
                     str14 = str20;
                     str12 = str58;
@@ -562,14 +562,14 @@ public class C4897o {
             String str62 = str33;
             for (LevelDB.C7052a aVar : levelDB.m17974g(str62)) {
                 boolean z6 = z;
-                m24466g(aVar.m17951d(), z6);
+                m24467g(aVar.m17951d(), z6);
                 z = z6;
             }
             String str63 = str34;
             for (LevelDB.C7052a aVar2 : levelDB.m17974g(str63)) {
                 if (!aVar2.m17943l().startsWith(str10)) {
                     f2 = f;
-                    m24470c(aVar2.m17948g(), f2);
+                    m24471c(aVar2.m17948g(), f2);
                 } else {
                     f2 = f;
                 }
@@ -578,49 +578,49 @@ public class C4897o {
             String str64 = str30;
             for (LevelDB.C7052a aVar3 : levelDB.m17974g(str64)) {
                 if (!aVar3.m17943l().startsWith(str42)) {
-                    m24471b(aVar3.m17949f(), d4);
+                    m24472b(aVar3.m17949f(), d4);
                 }
             }
             for (LevelDB.C7052a aVar4 : levelDB.m17974g("string")) {
                 if (!aVar4.m17943l().equals("string") && !aVar4.m17943l().startsWith(str57)) {
-                    m24467f(aVar4.m17944k(), str56);
+                    m24468f(aVar4.m17944k(), str56);
                 }
             }
             for (LevelDB.C7052a aVar5 : levelDB.m17974g(str32)) {
                 if (!aVar5.m17943l().equals(str32)) {
                     bArr = bArr5;
-                    m24465h(aVar5.m17950e(), bArr);
+                    m24466h(aVar5.m17950e(), bArr);
                 } else {
                     bArr = bArr5;
                 }
                 bArr5 = bArr;
             }
-            m24467f(levelDB.m17972i(str32 + str61, bArr5), str32 + str61);
-            m24468e(levelDB.m17960u(str41), 10L);
-            m24468e(levelDB.m17960u(str55), 10L);
+            m24468f(levelDB.m17972i(str32 + str61, bArr5), str32 + str61);
+            m24469e(levelDB.m17960u(str41), 10L);
+            m24469e(levelDB.m17960u(str55), 10L);
             int i26 = 0;
             for (LevelDB.C7052a aVar6 : levelDB.m17974g(str41)) {
-                m24467f(aVar6.m17943l().substring(0, aVar6.m17943l().lastIndexOf(95)), str41);
-                m24469d(aVar6.m17947h(), iArr5[i26]);
+                m24468f(aVar6.m17943l().substring(0, aVar6.m17943l().lastIndexOf(95)), str41);
+                m24470d(aVar6.m17947h(), iArr5[i26]);
                 i26++;
             }
-            m24469d(i26, 10);
+            m24470d(i26, 10);
             int i27 = 0;
             for (LevelDB.C7052a aVar7 : levelDB.m17974g(str55)) {
-                m24467f(aVar7.m17943l().substring(0, aVar7.m17943l().lastIndexOf(95)), str55);
-                m24467f(aVar7.m17944k(), strArr4[i27]);
+                m24468f(aVar7.m17943l().substring(0, aVar7.m17943l().lastIndexOf(95)), str55);
+                m24468f(aVar7.m17944k(), strArr4[i27]);
                 i27++;
             }
-            m24469d(i27, 10);
+            m24470d(i27, 10);
             int i28 = 0;
             for (byte[] bArr9 : levelDB.m17973h(sb13)) {
-                m24465h(bArr9, bArr6[i28]);
+                m24466h(bArr9, bArr6[i28]);
                 i28++;
             }
-            m24469d(i28, 10);
-            m24467f(levelDB.m17971j(str41), str41 + "_0");
-            m24467f(levelDB.m17971j(str55), str55 + "_0");
-            m24467f(levelDB.m17971j(sb13), sb13 + "_0");
+            m24470d(i28, 10);
+            m24468f(levelDB.m17971j(str41), str41 + "_0");
+            m24468f(levelDB.m17971j(str55), str55 + "_0");
+            m24468f(levelDB.m17971j(sb13), sb13 + "_0");
             Log.m14719i("Done db test in %dms", Long.valueOf(SystemClock.uptimeMillis() - j7));
             long uptimeMillis3 = SystemClock.uptimeMillis();
             String s = levelDB.m17962s("leveldb.stats");
@@ -629,10 +629,10 @@ public class C4897o {
             String s2 = levelDB.m17962s("leveldb.stats");
             String s3 = levelDB.m17962s("leveldb.approximate-memory-usage");
             long t2 = levelDB.m17961t();
-            m24468e(t2, 0L);
+            m24469e(t2, 0L);
             Log.m14719i("Done db test in %dms count:%d size:%d->%d\n%s\n%s\n%s", Long.valueOf(SystemClock.uptimeMillis() - uptimeMillis3), Integer.valueOf(M), Long.valueOf(t), Long.valueOf(t2), s, s2, s3);
             levelDB.m17977d();
-            C5068g.m24101b(n, true);
+            C5068g.m24102b(n, true);
         } catch (Throwable th) {
             levelDB.m17977d();
             throw th;

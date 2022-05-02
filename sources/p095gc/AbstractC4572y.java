@@ -4,7 +4,7 @@ import java.io.Closeable;
 import java.io.Flushable;
 
 public interface AbstractC4572y extends Closeable, Flushable {
-    C4539b0 mo27301c();
+    C4539b0 mo27303c();
 
     @Override
     void close();

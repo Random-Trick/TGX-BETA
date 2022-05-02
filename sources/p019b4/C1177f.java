@@ -19,40 +19,40 @@ public final class C1177f {
     public final int[] f4440j = new int[255];
     public final C1189b0 f4441k = new C1189b0(255);
 
-    public boolean m38216a(AbstractC8959g gVar, boolean z) {
-        m38215b();
-        this.f4441k.m38148L(27);
-        if (!C8962i.m10831b(gVar, this.f4441k.m38139d(), 0, 27, z) || this.f4441k.m38154F() != 1332176723) {
+    public boolean m38219a(AbstractC8959g gVar, boolean z) {
+        m38218b();
+        this.f4441k.m38151L(27);
+        if (!C8962i.m10830b(gVar, this.f4441k.m38142d(), 0, 27, z) || this.f4441k.m38157F() != 1332176723) {
             return false;
         }
-        int D = this.f4441k.m38156D();
+        int D = this.f4441k.m38159D();
         this.f4431a = D;
         if (D == 0) {
-            this.f4432b = this.f4441k.m38156D();
-            this.f4433c = this.f4441k.m38125r();
-            this.f4434d = this.f4441k.m38123t();
-            this.f4435e = this.f4441k.m38123t();
-            this.f4436f = this.f4441k.m38123t();
-            int D2 = this.f4441k.m38156D();
+            this.f4432b = this.f4441k.m38159D();
+            this.f4433c = this.f4441k.m38128r();
+            this.f4434d = this.f4441k.m38126t();
+            this.f4435e = this.f4441k.m38126t();
+            this.f4436f = this.f4441k.m38126t();
+            int D2 = this.f4441k.m38159D();
             this.f4437g = D2;
             this.f4438h = D2 + 27;
-            this.f4441k.m38148L(D2);
-            if (!C8962i.m10831b(gVar, this.f4441k.m38139d(), 0, this.f4437g, z)) {
+            this.f4441k.m38151L(D2);
+            if (!C8962i.m10830b(gVar, this.f4441k.m38142d(), 0, this.f4437g, z)) {
                 return false;
             }
             for (int i = 0; i < this.f4437g; i++) {
-                this.f4440j[i] = this.f4441k.m38156D();
+                this.f4440j[i] = this.f4441k.m38159D();
                 this.f4439i += this.f4440j[i];
             }
             return true;
         } else if (z) {
             return false;
         } else {
-            throw C6556a2.m20110c("unsupported bit stream revision");
+            throw C6556a2.m20111c("unsupported bit stream revision");
         }
     }
 
-    public void m38215b() {
+    public void m38218b() {
         this.f4431a = 0;
         this.f4432b = 0;
         this.f4433c = 0L;
@@ -64,30 +64,30 @@ public final class C1177f {
         this.f4439i = 0;
     }
 
-    public boolean m38214c(AbstractC8959g gVar) {
-        return m38213d(gVar, -1L);
+    public boolean m38217c(AbstractC8959g gVar) {
+        return m38216d(gVar, -1L);
     }
 
-    public boolean m38213d(AbstractC8959g gVar, long j) {
+    public boolean m38216d(AbstractC8959g gVar, long j) {
         int i;
-        C1186a.m38189a(gVar.mo6043r() == gVar.mo6045f());
-        this.f4441k.m38148L(4);
+        C1186a.m38192a(gVar.mo6043r() == gVar.mo6045f());
+        this.f4441k.m38151L(4);
         while (true) {
             i = (j > (-1L) ? 1 : (j == (-1L) ? 0 : -1));
-            if ((i == 0 || gVar.mo6043r() + 4 < j) && C8962i.m10831b(gVar, this.f4441k.m38139d(), 0, 4, true)) {
-                this.f4441k.m38144P(0);
-                if (this.f4441k.m38154F() == 1332176723) {
-                    gVar.mo10809m();
+            if ((i == 0 || gVar.mo6043r() + 4 < j) && C8962i.m10830b(gVar, this.f4441k.m38142d(), 0, 4, true)) {
+                this.f4441k.m38147P(0);
+                if (this.f4441k.m38157F() == 1332176723) {
+                    gVar.mo10808m();
                     return true;
                 }
-                gVar.mo10808n(1);
+                gVar.mo10807n(1);
             }
         }
         do {
             if (i != 0 && gVar.mo6043r() >= j) {
                 break;
             }
-        } while (gVar.mo10811i(1) != -1);
+        } while (gVar.mo10810i(1) != -1);
         return false;
     }
 }

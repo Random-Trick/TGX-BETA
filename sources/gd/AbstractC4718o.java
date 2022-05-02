@@ -53,7 +53,7 @@ public abstract class AbstractC4718o<T> implements AbstractC5113f0, C4341g.Abstr
 
         @Override
         public void mo45P5(int i, float f, float f2, C3950k kVar) {
-            AbstractC4718o.this.m26326z();
+            AbstractC4718o.this.m26327z();
         }
 
         @Override
@@ -69,18 +69,18 @@ public abstract class AbstractC4718o<T> implements AbstractC5113f0, C4341g.Abstr
         this.f15886M = t;
         C4341g gVar = new C4341g();
         this.f15893T = gVar;
-        gVar.m28233r(this);
+        gVar.m28235r(this);
     }
 
-    public static boolean m26359A(int i) {
+    public static boolean m26360A(int i) {
         return i == 10 || i == 6;
     }
 
-    public static boolean m26358B(int i) {
+    public static boolean m26359B(int i) {
         return i == 11;
     }
 
-    public static boolean m26357C(int i) {
+    public static boolean m26358C(int i) {
         switch (i) {
             case 0:
             case 1:
@@ -98,8 +98,8 @@ public abstract class AbstractC4718o<T> implements AbstractC5113f0, C4341g.Abstr
         }
     }
 
-    private boolean m26355F() {
-        if (!m26357C(this.f15902c)) {
+    private boolean m26356F() {
+        if (!m26358C(this.f15902c)) {
             return false;
         }
         ArrayList<AbstractC4718o<?>> arrayList = this.f15895V;
@@ -110,27 +110,27 @@ public abstract class AbstractC4718o<T> implements AbstractC5113f0, C4341g.Abstr
         if (oVar.equals(this)) {
             return false;
         }
-        if (oVar.m26330v() == 15) {
+        if (oVar.m26331v() == 15) {
             return this.f15895V.size() > 1 && !this.f15895V.get(1).equals(this);
         }
         return true;
     }
 
-    public static AbstractC4718o<?> m26344W(AbstractView$OnTouchListenerC7889a aVar, C10930q6 q6Var, String str, TdApi.InlineQueryResult inlineQueryResult, C9773p0.AbstractC9776c cVar) {
+    public static AbstractC4718o<?> m26345W(AbstractView$OnTouchListenerC7889a aVar, C10930q6 q6Var, String str, TdApi.InlineQueryResult inlineQueryResult, C9773p0.AbstractC9776c cVar) {
         switch (inlineQueryResult.getConstructor()) {
             case TdApi.InlineQueryResultVoiceNote.CONSTRUCTOR:
                 return new C4756s(aVar, q6Var, (TdApi.InlineQueryResultVoiceNote) inlineQueryResult);
             case TdApi.InlineQueryResultSticker.CONSTRUCTOR:
-                if (!C5078d.m23986z().m24032A(str)) {
+                if (!C5078d.m23987z().m24033A(str)) {
                     str = null;
                 }
                 return new C4575a0(aVar, q6Var, str, (TdApi.InlineQueryResultSticker) inlineQueryResult);
             case TdApi.InlineQueryResultDocument.CONSTRUCTOR:
                 TdApi.InlineQueryResultDocument inlineQueryResultDocument = (TdApi.InlineQueryResultDocument) inlineQueryResult;
-                if (!C1369e0.m37397b(inlineQueryResultDocument.document.mimeType)) {
+                if (!C1369e0.m37400b(inlineQueryResultDocument.document.mimeType)) {
                     return new C4756s(aVar, q6Var, inlineQueryResultDocument);
                 }
-                String str2 = inlineQueryResultDocument.f25383id;
+                String str2 = inlineQueryResultDocument.f25386id;
                 String str3 = inlineQueryResultDocument.title;
                 String str4 = inlineQueryResultDocument.description;
                 TdApi.Document document = inlineQueryResultDocument.document;
@@ -158,21 +158,21 @@ public abstract class AbstractC4718o<T> implements AbstractC5113f0, C4341g.Abstr
         }
     }
 
-    public static AbstractC4718o<?> m26343X(AbstractView$OnTouchListenerC7889a aVar, C10930q6 q6Var, TdApi.Message message) {
+    public static AbstractC4718o<?> m26344X(AbstractView$OnTouchListenerC7889a aVar, C10930q6 q6Var, TdApi.Message message) {
         int constructor = message.content.getConstructor();
         if (constructor == 276722716) {
-            return new C4756s(aVar, q6Var, message, (TdApi.MessageAudio) message.content, null).mo26268S(message);
+            return new C4756s(aVar, q6Var, message, (TdApi.MessageAudio) message.content, null).mo26269S(message);
         }
         if (constructor == 527777781) {
-            return new C4756s(aVar, q6Var, message, ((TdApi.MessageVoiceNote) message.content).voiceNote).mo26268S(message);
+            return new C4756s(aVar, q6Var, message, ((TdApi.MessageVoiceNote) message.content).voiceNote).mo26269S(message);
         }
         if (constructor != 596945783) {
             return null;
         }
-        return new C4756s(aVar, q6Var, message, ((TdApi.MessageDocument) message.content).document).mo26268S(message);
+        return new C4756s(aVar, q6Var, message, ((TdApi.MessageDocument) message.content).document).mo26269S(message);
     }
 
-    public static AbstractC4718o<?> m26342Y(AbstractView$OnTouchListenerC7889a aVar, C10930q6 q6Var, TdApi.PageBlock pageBlock, C9773p0.AbstractC9776c cVar) {
+    public static AbstractC4718o<?> m26343Y(AbstractView$OnTouchListenerC7889a aVar, C10930q6 q6Var, TdApi.PageBlock pageBlock, C9773p0.AbstractC9776c cVar) {
         int constructor = pageBlock.getConstructor();
         if (constructor == -63371245) {
             return new C4756s(aVar, q6Var, (TdApi.PageBlockAudio) pageBlock, cVar);
@@ -180,37 +180,37 @@ public abstract class AbstractC4718o<T> implements AbstractC5113f0, C4341g.Abstr
         if (constructor != 1823310463) {
             return null;
         }
-        return new C4756s(aVar, q6Var, (TdApi.PageBlockVoiceNote) pageBlock, C4403w.m27869i1(R.string.Audio));
+        return new C4756s(aVar, q6Var, (TdApi.PageBlockVoiceNote) pageBlock, C4403w.m27871i1(R.string.Audio));
     }
 
-    public final void m26356D(int i, C6238b bVar) {
+    public final void m26357D(int i, C6238b bVar) {
         if (i > 0 && i != this.f15897X) {
             this.f15897X = i;
-            mo25116E(i);
+            mo25117E(i);
         }
     }
 
-    public void mo25116E(int i) {
+    public void mo25117E(int i) {
     }
 
-    public void mo25115G(Canvas canvas, C6238b bVar, int i, int i2, float f, float f2, float f3, String str, C6918i3 i3Var) {
+    public void mo25116G(Canvas canvas, C6238b bVar, int i, int i2, float f, float f2, float f3, String str, C6918i3 i3Var) {
     }
 
-    public void mo26269H(View view, boolean z) {
+    public void mo26270H(View view, boolean z) {
     }
 
-    public boolean mo25114I(View view, MotionEvent motionEvent) {
+    public boolean mo25115I(View view, MotionEvent motionEvent) {
         return false;
     }
 
-    public final void m26354J(int i) {
+    public final void m26355J(int i) {
         if (this.f15897X == 0) {
             this.f15897X = i;
-            mo25116E(i);
+            mo25117E(i);
         }
     }
 
-    public CharSequence m26353K(CharSequence charSequence, CharSequence charSequence2) {
+    public CharSequence m26354K(CharSequence charSequence, CharSequence charSequence2) {
         if (!(charSequence instanceof String) || !(charSequence2 instanceof String)) {
             SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
             int i = this.f15891R;
@@ -235,56 +235,56 @@ public abstract class AbstractC4718o<T> implements AbstractC5113f0, C4341g.Abstr
         return sb2.toString();
     }
 
-    public void mo25113L(C6238b bVar, boolean z) {
-        bVar.m20999d();
+    public void mo25114L(C6238b bVar, boolean z) {
+        bVar.m21000d();
     }
 
-    public final void m26352M(C6238b bVar) {
-        mo25113L(bVar, false);
+    public final void m26353M(C6238b bVar) {
+        mo25114L(bVar, false);
     }
 
-    public final void m26351N(ArrayList<AbstractC4718o<?>> arrayList) {
+    public final void m26352N(ArrayList<AbstractC4718o<?>> arrayList) {
         this.f15895V = arrayList;
     }
 
-    public final void m26350O(int i) {
+    public final void m26351O(int i) {
         this.f15889P = i;
     }
 
-    public void mo25206P(boolean z) {
+    public void mo25207P(boolean z) {
         this.f15890Q = z;
     }
 
-    public void m26349Q(boolean z) {
+    public void m26350Q(boolean z) {
         this.f15896W = z;
     }
 
-    public final void m26348R(AbstractC9622o0 o0Var) {
+    public final void m26349R(AbstractC9622o0 o0Var) {
         this.f15898Y = o0Var;
     }
 
-    public AbstractC4718o<T> mo26268S(TdApi.Message message) {
+    public AbstractC4718o<T> mo26269S(TdApi.Message message) {
         this.f15894U = message;
         return this;
     }
 
-    public final void m26347T(long j) {
+    public final void m26348T(long j) {
         this.f15888O = j;
     }
 
-    public AbstractC4718o<T> m26346U(int i, int i2) {
+    public AbstractC4718o<T> m26347U(int i, int i2) {
         this.f15891R = i;
         this.f15892S = i2;
         return this;
     }
 
-    public C10930q6 m26345V() {
+    public C10930q6 m26346V() {
         return this.f15901b;
     }
 
     @Override
-    public void mo13519a() {
-        List<Reference<View>> n = this.f15893T.m28237n();
+    public void mo13518a() {
+        List<Reference<View>> n = this.f15893T.m28239n();
         if (n != null) {
             for (Reference<View> reference : n) {
                 View view = reference.get();
@@ -292,29 +292,29 @@ public abstract class AbstractC4718o<T> implements AbstractC5113f0, C4341g.Abstr
                     if (view instanceof C10185a) {
                         ((C10185a) view).m5806v(this);
                     } else if (view instanceof C4341g.AbstractC4342a) {
-                        ((C4341g.AbstractC4342a) view).mo13519a();
+                        ((C4341g.AbstractC4342a) view).mo13518a();
                     }
                 }
             }
         }
     }
 
-    public final void m26341c(View view) {
-        if (this.f15893T.m28241j(view) && view != null) {
-            if (view.getMeasuredHeight() != m26337o()) {
+    public final void m26342c(View view) {
+        if (this.f15893T.m28243j(view) && view != null) {
+            if (view.getMeasuredHeight() != m26338o()) {
                 view.requestLayout();
             }
-            mo26269H(view, true);
+            mo26270H(view, true);
         }
     }
 
     @Override
-    public final long mo13513d() {
+    public final long mo13512d() {
         return this.f15888O;
     }
 
     @Override
-    public int mo13507g() {
+    public int mo13506g() {
         return this.f15889P;
     }
 
@@ -323,120 +323,120 @@ public abstract class AbstractC4718o<T> implements AbstractC5113f0, C4341g.Abstr
         return this.f15894U;
     }
 
-    public final T m26340h() {
+    public final T m26341h() {
         return this.f15886M;
     }
 
-    public final void m26339i(View view) {
-        if (this.f15893T.m28239l(view) && view != null) {
-            mo26269H(view, false);
+    public final void m26340i(View view) {
+        if (this.f15893T.m28241l(view) && view != null) {
+            mo26270H(view, false);
         }
     }
 
-    public final void m26338j(C10185a aVar, Canvas canvas, C6238b bVar, int i, int i2, float f, float f2, float f3, int i3, C6918i3 i3Var) {
+    public final void m26339j(C10185a aVar, Canvas canvas, C6238b bVar, int i, int i2, float f, float f2, float f3, int i3, C6918i3 i3Var) {
         int i4;
-        if (m26355F()) {
-            int i5 = C1357a0.m37541i(72.0f);
-            int max = Math.max(C1357a0.m37541i(0.5f), 1);
+        if (m26356F()) {
+            int i5 = C1357a0.m37544i(72.0f);
+            int max = Math.max(C1357a0.m37544i(0.5f), 1);
             float f4 = i5;
             float f5 = max;
-            canvas.drawRect(0.0f, 0.0f, f4, f5, C1410y.m37039g(C5064d.m24128d(C11524j.m148w(), C5064d.m24129c(C11524j.m148w(), C11524j.m178i()), f3)));
-            canvas.drawRect(f4, 0.0f, i, f5, C1410y.m37039g(C11524j.m223P0()));
+            canvas.drawRect(0.0f, 0.0f, f4, f5, C1410y.m37042g(C5064d.m24129d(C11524j.m148w(), C5064d.m24130c(C11524j.m148w(), C11524j.m178i()), f3)));
+            canvas.drawRect(f4, 0.0f, i, f5, C1410y.m37042g(C11524j.m223P0()));
             i4 = max + 0;
         } else {
             i4 = 0;
         }
         C3950k kVar = this.f15899Z;
         if (kVar != null) {
-            float o = kVar.m29538o();
+            float o = kVar.m29540o();
             if (o > 0.0f) {
-                if (o == 1.0f && !this.f15899Z.m29531v()) {
-                    this.f15899Z.m29544i(0.0f);
+                if (o == 1.0f && !this.f15899Z.m29533v()) {
+                    this.f15899Z.m29546i(0.0f);
                 }
-                canvas.drawRect(0.0f, i4, i, i2, C1410y.m37039g(C5064d.m24131a(o, 681615520)));
+                canvas.drawRect(0.0f, i4, i, i2, C1410y.m37042g(C5064d.m24132a(o, 681615520)));
             }
         }
         int i6 = (f3 > 0.0f ? 1 : (f3 == 0.0f ? 0 : -1));
         if (i6 != 0) {
-            canvas.drawRect(0.0f, i4, i, i2, C1410y.m37039g(C5064d.m24131a(f3, C11524j.m178i())));
+            canvas.drawRect(0.0f, i4, i, i2, C1410y.m37042g(C5064d.m24132a(f3, C11524j.m178i())));
         }
-        mo25112k(aVar, canvas, bVar, i, i2, i4);
+        mo25113k(aVar, canvas, bVar, i, i2, i4);
         if (i6 != 0) {
-            mo25115G(canvas, bVar, i, i2, f, f2, f3, i3 != -1 ? Integer.toString(i3 + 1) : null, i3Var);
+            mo25116G(canvas, bVar, i, i2, f, f2, f3, i3 != -1 ? Integer.toString(i3 + 1) : null, i3Var);
         }
     }
 
-    public void mo25112k(C10185a aVar, Canvas canvas, C6238b bVar, int i, int i2, int i3) {
+    public void mo25113k(C10185a aVar, Canvas canvas, C6238b bVar, int i, int i2, int i3) {
     }
 
-    public int mo25048l() {
+    public int mo25049l() {
         return 100;
     }
 
-    public int mo25047m() {
+    public int mo25048m() {
         return 100;
     }
 
-    public int mo25111n() {
+    public int mo25112n() {
         return 0;
     }
 
-    public final int m26337o() {
-        return m26333s() + mo25111n();
+    public final int m26338o() {
+        return m26334s() + mo25112n();
     }
 
-    public final String m26336p() {
+    public final String m26337p() {
         return this.f15887N;
     }
 
-    public AbstractC9622o0 m26335q() {
+    public AbstractC9622o0 m26336q() {
         return this.f15898Y;
     }
 
-    public final long m26334r() {
+    public final long m26335r() {
         return this.f15888O;
     }
 
-    public final int m26333s() {
-        if (m26355F()) {
-            return Math.max(1, C1357a0.m37541i(0.5f));
+    public final int m26334s() {
+        if (m26356F()) {
+            return Math.max(1, C1357a0.m37544i(0.5f));
         }
         return 0;
     }
 
-    public int m26332t() {
+    public int m26333t() {
         return this.f15892S;
     }
 
-    public int m26331u() {
+    public int m26332u() {
         return this.f15891R;
     }
 
-    public final int m26330v() {
+    public final int m26331v() {
         return this.f15902c;
     }
 
-    public final boolean m26329w() {
-        return this.f15893T.mo28225g();
+    public final boolean m26330w() {
+        return this.f15893T.mo28227g();
     }
 
-    public boolean m26328x() {
+    public boolean m26329x() {
         return (this.f15891R == -1 || this.f15892S == -1) ? false : true;
     }
 
-    public void m26327y() {
+    public void m26328y() {
         C3950k kVar = this.f15899Z;
         if (kVar == null) {
             C3950k kVar2 = new C3950k(0, new C4719a(), C2057b.f7280b, 400L, 1.0f);
             this.f15899Z = kVar2;
-            kVar2.m29553F(2000L);
+            kVar2.m29555F(2000L);
         } else {
-            kVar.m29541l(1.0f);
+            kVar.m29543l(1.0f);
         }
-        m26326z();
+        m26327z();
     }
 
-    public final void m26326z() {
+    public final void m26327z() {
         this.f15893T.invalidate();
     }
 }

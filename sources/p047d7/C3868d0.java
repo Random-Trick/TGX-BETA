@@ -31,22 +31,22 @@ public final class C3868d0 extends AbstractC3859a {
         HashSet hashSet3 = new HashSet();
         HashSet hashSet4 = new HashSet();
         HashSet hashSet5 = new HashSet();
-        for (C3890q qVar : dVar.m29705e()) {
-            if (qVar.m29638d()) {
-                if (qVar.m29636f()) {
-                    hashSet4.add(qVar.m29640b());
+        for (C3890q qVar : dVar.m29707e()) {
+            if (qVar.m29640d()) {
+                if (qVar.m29638f()) {
+                    hashSet4.add(qVar.m29642b());
                 } else {
-                    hashSet.add(qVar.m29640b());
+                    hashSet.add(qVar.m29642b());
                 }
-            } else if (qVar.m29639c()) {
-                hashSet3.add(qVar.m29640b());
-            } else if (qVar.m29636f()) {
-                hashSet5.add(qVar.m29640b());
+            } else if (qVar.m29641c()) {
+                hashSet3.add(qVar.m29642b());
+            } else if (qVar.m29638f()) {
+                hashSet5.add(qVar.m29642b());
             } else {
-                hashSet2.add(qVar.m29640b());
+                hashSet2.add(qVar.m29642b());
             }
         }
-        if (!dVar.m29702h().isEmpty()) {
+        if (!dVar.m29704h().isEmpty()) {
             hashSet.add(AbstractC5895c.class);
         }
         this.f13129a = Collections.unmodifiableSet(hashSet);
@@ -54,39 +54,39 @@ public final class C3868d0 extends AbstractC3859a {
         this.f13131c = Collections.unmodifiableSet(hashSet3);
         this.f13132d = Collections.unmodifiableSet(hashSet4);
         this.f13133e = Collections.unmodifiableSet(hashSet5);
-        this.f13134f = dVar.m29702h();
+        this.f13134f = dVar.m29704h();
         this.f13135g = eVar;
     }
 
     @Override
-    public <T> T mo29677a(Class<T> cls) {
+    public <T> T mo29679a(Class<T> cls) {
         if (this.f13129a.contains(cls)) {
-            T t = (T) this.f13135g.mo29677a(cls);
+            T t = (T) this.f13135g.mo29679a(cls);
             return !cls.equals(AbstractC5895c.class) ? t : (T) new C3869a(this.f13134f, (AbstractC5895c) t);
         }
         throw new C3892s(String.format("Attempting to request an undeclared dependency %s.", cls));
     }
 
     @Override
-    public <T> AbstractC6794b<T> mo29676b(Class<T> cls) {
+    public <T> AbstractC6794b<T> mo29678b(Class<T> cls) {
         if (this.f13130b.contains(cls)) {
-            return this.f13135g.mo29676b(cls);
+            return this.f13135g.mo29678b(cls);
         }
         throw new C3892s(String.format("Attempting to request an undeclared dependency Provider<%s>.", cls));
     }
 
     @Override
-    public <T> AbstractC6794b<Set<T>> mo29675c(Class<T> cls) {
+    public <T> AbstractC6794b<Set<T>> mo29677c(Class<T> cls) {
         if (this.f13133e.contains(cls)) {
-            return this.f13135g.mo29675c(cls);
+            return this.f13135g.mo29677c(cls);
         }
         throw new C3892s(String.format("Attempting to request an undeclared dependency Provider<Set<%s>>.", cls));
     }
 
     @Override
-    public <T> Set<T> mo29674d(Class<T> cls) {
+    public <T> Set<T> mo29676d(Class<T> cls) {
         if (this.f13132d.contains(cls)) {
-            return this.f13135g.mo29674d(cls);
+            return this.f13135g.mo29676d(cls);
         }
         throw new C3892s(String.format("Attempting to request an undeclared dependency Set<%s>.", cls));
     }

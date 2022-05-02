@@ -18,7 +18,7 @@ public class C5506q {
         this.f18034g = i3;
     }
 
-    public final C5502m m22521b() {
+    public final C5502m m22522b() {
         C5502m[] mVarArr;
         int length;
         int i;
@@ -32,7 +32,7 @@ public class C5506q {
                 this.f18029b = null;
                 return null;
             }
-            C5502m n = ConcurrentHashMap.m22539n(mVarArr, i);
+            C5502m n = ConcurrentHashMap.m22540n(mVarArr, i);
             if (n == null || n.f18020a >= 0) {
                 mVar = n;
             } else if (n instanceof C5497h) {

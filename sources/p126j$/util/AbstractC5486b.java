@@ -5,9 +5,9 @@ import p126j$.util.function.Consumer;
 import p126j$.util.stream.AbstractC5690c3;
 
 public interface AbstractC5486b {
-    void mo22509a(Consumer consumer);
+    void mo22510a(Consumer consumer);
 
-    boolean mo22508b(AbstractC5541w wVar);
+    boolean mo22509b(AbstractC5541w wVar);
 
     AbstractC5468G spliterator();
 

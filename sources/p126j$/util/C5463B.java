@@ -14,7 +14,7 @@ public final class C5463B implements Spliterator.OfLong {
         this.f17925a = c;
     }
 
-    public static Spliterator.OfLong m22611a(AbstractC5464C c) {
+    public static Spliterator.OfLong m22612a(AbstractC5464C c) {
         if (c == null) {
             return null;
         }
@@ -43,7 +43,7 @@ public final class C5463B implements Spliterator.OfLong {
 
     @Override
     public void forEachRemaining2(LongConsumer longConsumer) {
-        this.f17925a.mo22166f(C5534p.m22483a(longConsumer));
+        this.f17925a.mo22167f(C5534p.m22484a(longConsumer));
     }
 
     @Override
@@ -68,11 +68,11 @@ public final class C5463B implements Spliterator.OfLong {
 
     @Override
     public boolean tryAdvance(java.util.function.Consumer consumer) {
-        return this.f17925a.mo22124a(Consumer.VivifiedWrapper.convert(consumer));
+        return this.f17925a.mo22125a(Consumer.VivifiedWrapper.convert(consumer));
     }
 
     @Override
     public boolean tryAdvance2(LongConsumer longConsumer) {
-        return this.f17925a.mo22165g(C5534p.m22483a(longConsumer));
+        return this.f17925a.mo22166g(C5534p.m22484a(longConsumer));
     }
 }

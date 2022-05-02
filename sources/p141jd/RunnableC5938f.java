@@ -40,58 +40,58 @@ public class RunnableC5938f implements Client.AbstractC7865g, Runnable, C5976u.A
     public RunnableC5938f(View$OnClickListenerC2971rh rhVar, TdApi.Chat chat) {
         this.f18861b = rhVar;
         if (chat != null) {
-            this.f18862c = chat.f25367id;
+            this.f18862c = chat.f25370id;
             int constructor = chat.type.getConstructor();
             if (constructor == -1472570774) {
                 this.f18846M = 2;
-                this.f18848O = C7316a.m17045p(chat.f25367id);
+                this.f18848O = C7316a.m17045p(chat.f25370id);
             } else if (constructor == 973884508) {
                 this.f18846M = 1;
-                this.f18848O = C7316a.m17048m(chat.f25367id);
+                this.f18848O = C7316a.m17048m(chat.f25370id);
             } else if (constructor == 1579049844) {
                 this.f18846M = 0;
-                this.f18848O = C4779t2.m25465n2(chat);
+                this.f18848O = C4779t2.m25466n2(chat);
             }
-            m21833q();
-            m21832r(chat.replyMarkupMessageId);
+            m21834q();
+            m21833r(chat.replyMarkupMessageId);
             return;
         }
-        m21832r(0L);
+        m21833r(0L);
     }
 
-    public void m21838l(TdApi.BasicGroup basicGroup) {
-        m21851C(!C4779t2.m25506h3(basicGroup.status));
+    public void m21839l(TdApi.BasicGroup basicGroup) {
+        m21852C(!C4779t2.m25507h3(basicGroup.status));
     }
 
-    public void m21837m(TdApi.Message message) {
-        m21826x(message, true);
+    public void m21838m(TdApi.Message message) {
+        m21827x(message, true);
     }
 
-    public void m21836n(TdApi.Supergroup supergroup) {
-        m21851C(!C4779t2.m25506h3(supergroup.status));
+    public void m21837n(TdApi.Supergroup supergroup) {
+        m21852C(!C4779t2.m25507h3(supergroup.status));
     }
 
-    public void m21835o() {
+    public void m21836o() {
         String str;
         C5976u.AbstractC5988l lVar = this.f18851R;
         if (lVar != null && (str = this.f18850Q) != null && !this.f18852S) {
-            lVar.mo21605a(str);
+            lVar.mo21606a(str);
             this.f18850Q = null;
             this.f18851R = null;
         }
     }
 
-    public void m21834p() {
-        m21826x(null, true);
+    public void m21835p() {
+        m21827x(null, true);
     }
 
-    public final void m21853A(TdApi.UserFullInfo userFullInfo) {
+    public final void m21854A(TdApi.UserFullInfo userFullInfo) {
         if (userFullInfo != null) {
-            if (!C5070i.m24061i(userFullInfo.description) && !this.f18861b.m32216ui()) {
-                C9678w2 nk = this.f18861b.m32305nk();
+            if (!C5070i.m24062i(userFullInfo.description) && !this.f18861b.m32219ui()) {
+                C9678w2 nk = this.f18861b.m32308nk();
                 long j = this.f18862c;
                 String str = userFullInfo.description;
-                this.f18847N = new C4791t4(nk, j, new TdApi.FormattedText(str, RunnableC5390g.m22996G(str, 15)));
+                this.f18847N = new C4791t4(nk, j, new TdApi.FormattedText(str, RunnableC5390g.m22997G(str, 15)));
             }
             if (userFullInfo.commands.length > 0) {
                 ArrayList<AbstractC4718o<?>> arrayList = new ArrayList<>(userFullInfo.commands.length);
@@ -106,30 +106,30 @@ public class RunnableC5938f implements Client.AbstractC7865g, Runnable, C5976u.A
         }
     }
 
-    public final void m21852B() {
+    public final void m21853B() {
         this.f18854U = null;
         this.f18853T = null;
         this.f18855V = null;
     }
 
-    public final void m21851C(boolean z) {
+    public final void m21852C(boolean z) {
         if (this.f18856W != z) {
             this.f18856W = z;
-            m21826x(z ? null : this.f18858Y, false);
+            m21827x(z ? null : this.f18858Y, false);
         }
     }
 
-    public final boolean m21850D(long j) {
+    public final boolean m21851D(long j) {
         TdApi.ChatMemberStatus K3 = this.f18861b.mo4348c().m2787K3(j);
-        return K3 != null && !C4779t2.m25506h3(K3);
+        return K3 != null && !C4779t2.m25507h3(K3);
     }
 
-    public void m21849E(long j, long j2) {
+    public void m21850E(long j, long j2) {
         if (j2 == 0) {
             this.f18861b.mo4348c().m2469ed(new Runnable() {
                 @Override
                 public final void run() {
-                    RunnableC5938f.this.m21834p();
+                    RunnableC5938f.this.m21835p();
                 }
             });
         } else {
@@ -146,13 +146,13 @@ public class RunnableC5938f implements Client.AbstractC7865g, Runnable, C5976u.A
         this.f18861b.mo4348c().m2469ed(new Runnable() {
             @Override
             public final void run() {
-                RunnableC5938f.this.m21838l(basicGroup);
+                RunnableC5938f.this.m21839l(basicGroup);
             }
         });
     }
 
     @Override
-    public ArrayList<AbstractC4718o<?>> mo21606a(String str, String str2, C5976u.AbstractC5988l lVar) {
+    public ArrayList<AbstractC4718o<?>> mo21607a(String str, String str2, C5976u.AbstractC5988l lVar) {
         ArrayList<AbstractC4718o<?>> arrayList = null;
         if ((this.f18860a & 2) == 0) {
             this.f18850Q = str2;
@@ -169,7 +169,7 @@ public class RunnableC5938f implements Client.AbstractC7865g, Runnable, C5976u.A
             Iterator<AbstractC4718o<?>> it = arrayList2.iterator();
             while (it.hasNext()) {
                 C4747r rVar = (C4747r) it.next();
-                if (rVar.m26270d0(str)) {
+                if (rVar.m26271d0(str)) {
                     if (arrayList == null) {
                         arrayList = new ArrayList<>(arrayList2.size());
                     }
@@ -183,7 +183,7 @@ public class RunnableC5938f implements Client.AbstractC7865g, Runnable, C5976u.A
         return arrayList;
     }
 
-    public void m21843g() {
+    public void m21844g() {
         this.f18860a |= 1;
         int i = this.f18846M;
         if (i == 0) {
@@ -195,7 +195,7 @@ public class RunnableC5938f implements Client.AbstractC7865g, Runnable, C5976u.A
         }
     }
 
-    public AbstractC4718o<?> m21842h(String str) {
+    public AbstractC4718o<?> m21843h(String str) {
         ArrayList<AbstractC4718o<?>> arrayList = this.f18849P;
         if (arrayList == null) {
             return null;
@@ -203,7 +203,7 @@ public class RunnableC5938f implements Client.AbstractC7865g, Runnable, C5976u.A
         Iterator<AbstractC4718o<?>> it = arrayList.iterator();
         while (it.hasNext()) {
             AbstractC4718o<?> next = it.next();
-            if ((next instanceof C4747r) && str.equals(((C4747r) next).m26273a0())) {
+            if ((next instanceof C4747r) && str.equals(((C4747r) next).m26274a0())) {
                 return next;
             }
         }
@@ -212,42 +212,42 @@ public class RunnableC5938f implements Client.AbstractC7865g, Runnable, C5976u.A
 
     @Override
     public void mo1556h0(long j, TdApi.SupergroupFullInfo supergroupFullInfo) {
-        m21824z(supergroupFullInfo);
+        m21825z(supergroupFullInfo);
     }
 
-    public AbstractC4718o<?> m21841i() {
-        return m21842h("/help");
+    public AbstractC4718o<?> m21842i() {
+        return m21843h("/help");
     }
 
     @Override
     public void mo1565i4(long j, TdApi.BasicGroupFullInfo basicGroupFullInfo) {
-        m21828v(basicGroupFullInfo);
+        m21829v(basicGroupFullInfo);
     }
 
-    public AbstractC4718o<?> m21840j() {
-        return m21842h("/settings");
+    public AbstractC4718o<?> m21841j() {
+        return m21843h("/settings");
     }
 
-    public boolean m21839k() {
+    public boolean m21840k() {
         ArrayList<AbstractC4718o<?>> arrayList = this.f18849P;
         return arrayList != null && !arrayList.isEmpty();
     }
 
-    public final void m21833q() {
+    public final void m21834q() {
         int i = this.f18846M;
         if (i == 0) {
             this.f18861b.mo4348c().m2480e2().m1720L(this.f18848O, this);
-            m21853A(this.f18861b.mo4348c().m2480e2().m1745E2(this.f18848O));
+            m21854A(this.f18861b.mo4348c().m2480e2().m1745E2(this.f18848O));
         } else if (i == 1) {
             this.f18861b.mo4348c().m2480e2().m1662b2(this.f18848O, this);
-            m21828v(this.f18861b.mo4348c().m2480e2().m1708O(this.f18848O));
+            m21829v(this.f18861b.mo4348c().m2480e2().m1708O(this.f18848O));
         } else if (i == 2) {
             this.f18861b.mo4348c().m2480e2().m1654d2(this.f18848O, this);
-            m21824z(this.f18861b.mo4348c().m2480e2().m1634i2(this.f18848O));
+            m21825z(this.f18861b.mo4348c().m2480e2().m1634i2(this.f18848O));
         }
     }
 
-    public final void m21832r(long j) {
+    public final void m21833r(long j) {
         if (this.f18857X == 0 && j != 0) {
             this.f18861b.mo4348c().m2270r4().m14783o(new TdApi.GetMessage(this.f18862c, j), this);
         }
@@ -259,30 +259,30 @@ public class RunnableC5938f implements Client.AbstractC7865g, Runnable, C5976u.A
         if ((i & 1) == 0) {
             this.f18860a = i | 2;
             if (!(this.f18850Q == null || this.f18851R == null || !this.f18852S)) {
-                m21852B();
-                this.f18851R.mo21605a(this.f18850Q);
+                m21853B();
+                this.f18851R.mo21606a(this.f18850Q);
                 this.f18850Q = null;
                 this.f18851R = null;
             }
             View$OnClickListenerC2971rh rhVar = this.f18861b;
             if (rhVar != null) {
                 if (this.f18847N != null) {
-                    rhVar.m32305nk().m7756R2(this.f18847N);
+                    rhVar.m32308nk().m7756R2(this.f18847N);
                 } else {
-                    rhVar.m32305nk().m7698g0();
+                    rhVar.m32308nk().m7698g0();
                 }
-                this.f18861b.m32194vr((this.f18859Z > 0 || this.f18846M == 0) && m21839k());
+                this.f18861b.m32197vr((this.f18859Z > 0 || this.f18846M == 0) && m21840k());
             }
         }
     }
 
-    public void m21831s(long j) {
+    public void m21832s(long j) {
         if (this.f18857X == j) {
             this.f18861b.mo4348c().m2270r4().m14783o(new TdApi.DeleteChatReplyMarkup(this.f18862c, j), this);
         }
     }
 
-    public final void m21830t(TdApi.BotCommands[] botCommandsArr) {
+    public final void m21831t(TdApi.BotCommands[] botCommandsArr) {
         TdApi.User v2;
         ArrayList<AbstractC4718o<?>> arrayList = new ArrayList<>();
         int i = 0;
@@ -303,7 +303,7 @@ public class RunnableC5938f implements Client.AbstractC7865g, Runnable, C5976u.A
         this.f18861b.mo4348c().m2469ed(new Runnable() {
             @Override
             public final void run() {
-                RunnableC5938f.this.m21835o();
+                RunnableC5938f.this.m21836o();
             }
         });
     }
@@ -313,7 +313,7 @@ public class RunnableC5938f implements Client.AbstractC7865g, Runnable, C5976u.A
         this.f18861b.mo4348c().m2469ed(new Runnable() {
             @Override
             public final void run() {
-                RunnableC5938f.this.m21836n(supergroup);
+                RunnableC5938f.this.m21837n(supergroup);
             }
         });
     }
@@ -328,53 +328,53 @@ public class RunnableC5938f implements Client.AbstractC7865g, Runnable, C5976u.A
                     this.f18861b.mo4348c().m2469ed(new Runnable() {
                         @Override
                         public final void run() {
-                            RunnableC5938f.this.m21837m(message);
+                            RunnableC5938f.this.m21838m(message);
                         }
                     });
                 }
             } else if (this.f18846M != 2) {
-                C1379j0.m37302t0(object);
+                C1379j0.m37305t0(object);
             } else {
-                Log.m14709w("Cannot get bots for supergroup: %s", C4779t2.m25378z5(object));
+                Log.m14709w("Cannot get bots for supergroup: %s", C4779t2.m25379z5(object));
             }
         }
     }
 
-    public final void m21829u(TdApi.Message message, boolean z) {
+    public final void m21830u(TdApi.Message message, boolean z) {
         if (z) {
-            this.f18861b.m32534Vq();
-            this.f18861b.m32442cr(message, false, false);
+            this.f18861b.m32537Vq();
+            this.f18861b.m32445cr(message, false, false);
         } else if (this.f18846M == 0) {
-            this.f18861b.m32442cr(message, false, false);
+            this.f18861b.m32445cr(message, false, false);
         }
         if (message != null) {
-            this.f18861b.mo4348c().m2270r4().m14783o(new TdApi.DeleteChatReplyMarkup(this.f18862c, message.f25406id), this);
+            this.f18861b.mo4348c().m2270r4().m14783o(new TdApi.DeleteChatReplyMarkup(this.f18862c, message.f25409id), this);
         }
     }
 
     @Override
     public void mo1335u7(long j, TdApi.UserFullInfo userFullInfo) {
-        m21853A(userFullInfo);
+        m21854A(userFullInfo);
     }
 
-    public final void m21828v(TdApi.BasicGroupFullInfo basicGroupFullInfo) {
+    public final void m21829v(TdApi.BasicGroupFullInfo basicGroupFullInfo) {
         if (basicGroupFullInfo != null) {
-            m21830t(basicGroupFullInfo.botCommands);
+            m21831t(basicGroupFullInfo.botCommands);
         }
     }
 
-    public final void m21827w(long j, boolean z) {
-        this.f18861b.m32669Lk(z);
+    public final void m21828w(long j, boolean z) {
+        this.f18861b.m32672Lk(z);
         if (j != 0) {
             this.f18861b.mo4348c().m2270r4().m14783o(new TdApi.DeleteChatReplyMarkup(this.f18862c, j), this);
         }
     }
 
-    public final void m21826x(TdApi.Message message, boolean z) {
+    public final void m21827x(TdApi.Message message, boolean z) {
         TdApi.ReplyMarkup replyMarkup = null;
         if (z) {
             this.f18858Y = message;
-            if (this.f18856W || (message != null && m21850D(message.chatId))) {
+            if (this.f18856W || (message != null && m21851D(message.chatId))) {
                 this.f18856W = true;
                 message = null;
             }
@@ -382,7 +382,7 @@ public class RunnableC5938f implements Client.AbstractC7865g, Runnable, C5976u.A
         if (message != null) {
             replyMarkup = message.replyMarkup;
         }
-        long j = message == null ? 0L : message.f25406id;
+        long j = message == null ? 0L : message.f25409id;
         if ((this.f18860a & 1) == 0) {
             if (j > this.f18857X) {
                 this.f18857X = j;
@@ -395,26 +395,26 @@ public class RunnableC5938f implements Client.AbstractC7865g, Runnable, C5976u.A
             }
             int constructor = replyMarkup.getConstructor();
             if (constructor == -691252879) {
-                m21827w(j, ((TdApi.ReplyMarkupRemoveKeyboard) replyMarkup).isPersonal);
+                m21828w(j, ((TdApi.ReplyMarkupRemoveKeyboard) replyMarkup).isPersonal);
             } else if (constructor == -64985802) {
-                m21825y(j, (TdApi.ReplyMarkupShowKeyboard) replyMarkup);
+                m21826y(j, (TdApi.ReplyMarkupShowKeyboard) replyMarkup);
                 int i = this.f18846M;
                 if (i == 1 || i == 2) {
-                    this.f18861b.m32442cr(message, false, false);
+                    this.f18861b.m32445cr(message, false, false);
                 }
             } else if (constructor == 1101461919) {
-                m21829u(message, ((TdApi.ReplyMarkupForceReply) replyMarkup).isPersonal);
+                m21830u(message, ((TdApi.ReplyMarkupForceReply) replyMarkup).isPersonal);
             }
         }
     }
 
-    public final void m21825y(long j, TdApi.ReplyMarkupShowKeyboard replyMarkupShowKeyboard) {
-        this.f18861b.m32521Wq(j, replyMarkupShowKeyboard);
+    public final void m21826y(long j, TdApi.ReplyMarkupShowKeyboard replyMarkupShowKeyboard) {
+        this.f18861b.m32524Wq(j, replyMarkupShowKeyboard);
     }
 
-    public final void m21824z(TdApi.SupergroupFullInfo supergroupFullInfo) {
+    public final void m21825z(TdApi.SupergroupFullInfo supergroupFullInfo) {
         if (supergroupFullInfo != null) {
-            m21830t(supergroupFullInfo.botCommands);
+            m21831t(supergroupFullInfo.botCommands);
         }
     }
 }

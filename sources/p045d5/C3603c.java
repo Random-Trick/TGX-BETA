@@ -9,7 +9,7 @@ public final class C3603c {
     public final C1203h0<float[]> f12285c = new C1203h0<>();
     public boolean f12286d;
 
-    public static void m29888a(float[] fArr, float[] fArr2) {
+    public static void m29890a(float[] fArr, float[] fArr2) {
         Matrix.setIdentityM(fArr, 0);
         float sqrt = (float) Math.sqrt((fArr2[10] * fArr2[10]) + (fArr2[8] * fArr2[8]));
         fArr[0] = fArr2[10] / sqrt;
@@ -18,7 +18,7 @@ public final class C3603c {
         fArr[10] = fArr2[10] / sqrt;
     }
 
-    public static void m29887b(float[] fArr, float[] fArr2) {
+    public static void m29889b(float[] fArr, float[] fArr2) {
         float f = fArr2[0];
         float f2 = -fArr2[1];
         float f3 = -fArr2[2];
@@ -30,26 +30,26 @@ public final class C3603c {
         }
     }
 
-    public boolean m29886c(float[] fArr, long j) {
-        float[] j2 = this.f12285c.m38060j(j);
+    public boolean m29888c(float[] fArr, long j) {
+        float[] j2 = this.f12285c.m38063j(j);
         if (j2 == null) {
             return false;
         }
-        m29887b(this.f12284b, j2);
+        m29889b(this.f12284b, j2);
         if (!this.f12286d) {
-            m29888a(this.f12283a, this.f12284b);
+            m29890a(this.f12283a, this.f12284b);
             this.f12286d = true;
         }
         Matrix.multiplyMM(fArr, 0, this.f12283a, 0, this.f12284b, 0);
         return true;
     }
 
-    public void m29885d() {
-        this.f12285c.m38067c();
+    public void m29887d() {
+        this.f12285c.m38070c();
         this.f12286d = false;
     }
 
-    public void m29884e(long j, float[] fArr) {
-        this.f12285c.m38069a(j, fArr);
+    public void m29886e(long j, float[] fArr) {
+        this.f12285c.m38072a(j, fArr);
     }
 }

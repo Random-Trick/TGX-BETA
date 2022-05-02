@@ -39,12 +39,12 @@ public class C0261e extends AbstractView$OnClickListenerC0259c {
     public final C3940f f795b0 = new C3940f(0, new C3950k.AbstractC3952b() {
         @Override
         public final void mo45P5(int i, float f, float f2, C3950k kVar) {
-            C0261e.this.m41976f2(i, f, f2, kVar);
+            C0261e.this.m41979f2(i, f, f2, kVar);
         }
 
         @Override
         public void mo35Y0(int i, float f, C3950k kVar) {
-            C3953l.m29526a(this, i, f, kVar);
+            C3953l.m29528a(this, i, f, kVar);
         }
     }, C2057b.f7280b, 180);
 
@@ -54,61 +54,61 @@ public class C0261e extends AbstractView$OnClickListenerC0259c {
 
         @Override
         public void onPageFinished(WebView webView, String str) {
-            C0261e.this.f795b0.m29575p(false, true);
+            C0261e.this.f795b0.m29577p(false, true);
         }
 
         @Override
         public boolean shouldOverrideUrlLoading(WebView webView, String str) {
-            C1379j0.m37336c0(str);
+            C1379j0.m37339c0(str);
             return true;
         }
     }
 
     public C0261e(Context context, AbstractC9323v4<?> v4Var) {
         super(context, v4Var);
-        C1379j0.m37324i0(this);
+        C1379j0.m37327i0(this);
     }
 
-    public void m41976f2(int i, float f, float f2, C3950k kVar) {
-        this.f791U.setAlpha(C5069h.m24089d(f));
+    public void m41979f2(int i, float f, float f2, C3950k kVar) {
+        this.f791U.setAlpha(C5069h.m24090d(f));
     }
 
     @Override
-    public boolean mo41915E1() {
+    public boolean mo41918E1() {
         C4658i iVar = this.f782M;
         if (iVar.f15552e == 0 || iVar.f15553f == 0) {
             return false;
         }
-        mo41913F1(C1357a0.m37543g());
+        mo41916F1(C1357a0.m37546g());
         return true;
     }
 
     @Override
-    public int mo41913F1(int i) {
-        int b2 = m41978b2(i);
+    public int mo41916F1(int i) {
+        int b2 = m41981b2(i);
         this.f793W = b2;
         this.f788R.setLayoutParams(FrameLayoutFix.m18007t1(-1, b2, 48));
-        return m41977d2() ? C1357a0.m37544f() : this.f783N + this.f793W;
+        return m41980d2() ? C1357a0.m37547f() : this.f783N + this.f793W;
     }
 
     @Override
-    public void mo41912G1(boolean z) {
+    public void mo41915G1(boolean z) {
         this.f786Q.m18408y2(z);
     }
 
     @Override
-    public void mo41910J1() {
+    public void mo41913J1() {
         this.f790T.destroy();
     }
 
     @Override
-    public boolean mo41909L1(String str) {
+    public boolean mo41912L1(String str) {
         return false;
     }
 
     @Override
     @SuppressLint({"SetJavaScriptEnabled"})
-    public boolean mo41908M1(C4658i iVar) {
+    public boolean mo41911M1(C4658i iVar) {
         C10536ab.m4667o1().m4636w2().m7075W0(Log.TAG_CAMERA, true);
         WebView webView = new WebView(getContext());
         this.f790T = webView;
@@ -128,8 +128,8 @@ public class C0261e extends AbstractView$OnClickListenerC0259c {
         this.f790T.setLayoutParams(FrameLayoutFix.m18007t1(-1, -1, 48));
         this.f790T.setWebViewClient(new C0262a());
         this.f790T.setWebChromeClient(new C0263b());
-        this.f791U = C1399s0.m37151v0(getContext(), FrameLayoutFix.m18007t1(C1357a0.m37541i(48.0f), C1357a0.m37541i(48.0f), 17));
-        this.f795b0.m29575p(true, false);
+        this.f791U = C1399s0.m37154v0(getContext(), FrameLayoutFix.m18007t1(C1357a0.m37544i(48.0f), C1357a0.m37544i(48.0f), 17));
+        this.f795b0.m29577p(true, false);
         FrameLayout frameLayout = new FrameLayout(getContext());
         this.f789S = frameLayout;
         frameLayout.setBackgroundColor(-16777216);
@@ -143,16 +143,16 @@ public class C0261e extends AbstractView$OnClickListenerC0259c {
         this.f788R.addView(this.f791U);
         addView(this.f788R);
         addView(this.f789S);
-        return super.mo41908M1(iVar);
+        return super.mo41911M1(iVar);
     }
 
-    public final int m41978b2(int i) {
+    public final int m41981b2(int i) {
         int i2;
         C4658i iVar = this.f782M;
-        return (iVar.f15548a != 99 || (i2 = iVar.f15553f) == 1) ? (int) Math.min(iVar.f15553f / (iVar.f15552e / i), C1357a0.m37538l() / 2.0f) : i2;
+        return (iVar.f15548a != 99 || (i2 = iVar.f15553f) == 1) ? (int) Math.min(iVar.f15553f / (iVar.f15552e / i), C1357a0.m37541l() / 2.0f) : i2;
     }
 
-    public final boolean m41977d2() {
+    public final boolean m41980d2() {
         return this.f792V != null;
     }
 
@@ -163,26 +163,26 @@ public class C0261e extends AbstractView$OnClickListenerC0259c {
 
     @Override
     public int getPreviewHeight() {
-        return C1357a0.m37545e();
+        return C1357a0.m37548e();
     }
 
-    public final void m41975h2(boolean z) {
-        AbstractView$OnTouchListenerC7889a r = C1379j0.m37307r(getContext());
-        r.m14445r3(16, z);
+    public final void m41978h2(boolean z) {
+        AbstractView$OnTouchListenerC7889a r = C1379j0.m37310r(getContext());
+        r.m14444r3(16, z);
         if (z) {
             r.setRequestedOrientation(6);
-            r.m14432u3(1, false);
+            r.m14431u3(1, false);
             return;
         }
         r.setRequestedOrientation(-1);
-        r.m14432u3(0, false);
+        r.m14431u3(0, false);
     }
 
     @Override
     public void mo3000j2(C6924j2 j2Var) {
         C10536ab.m4667o1().m4636w2().m7075W0(Log.TAG_CAMERA, false);
-        if (m41977d2()) {
-            m41975h2(false);
+        if (m41980d2()) {
+            m41978h2(false);
         }
     }
 
@@ -198,7 +198,7 @@ public class C0261e extends AbstractView$OnClickListenerC0259c {
                 C0261e.this.f794a0.onCustomViewHidden();
                 C0261e.this.f792V = null;
                 C0261e.this.f794a0 = null;
-                C0261e.this.m41975h2(false);
+                C0261e.this.m41978h2(false);
             }
         }
 
@@ -212,7 +212,7 @@ public class C0261e extends AbstractView$OnClickListenerC0259c {
             C0261e.this.f789S.setVisibility(0);
             C0261e.this.f789S.addView(C0261e.this.f792V, FrameLayoutFix.m18008s1(-1, -1));
             C0261e.this.f794a0 = customViewCallback;
-            C0261e.this.m41975h2(true);
+            C0261e.this.m41978h2(true);
         }
 
         @Override

@@ -16,29 +16,29 @@ public class C5221e {
     public static final C5221e f17369b = new C5221e();
 
     @RecentlyNonNull
-    public static C5221e m23586h() {
+    public static C5221e m23587h() {
         return f17369b;
     }
 
-    public void m23593a(@RecentlyNonNull Context context) {
-        C5224h.m23577a(context);
+    public void m23594a(@RecentlyNonNull Context context) {
+        C5224h.m23578a(context);
     }
 
-    public int m23592b(@RecentlyNonNull Context context) {
-        return C5224h.m23576b(context);
+    public int m23593b(@RecentlyNonNull Context context) {
+        return C5224h.m23577b(context);
     }
 
     @RecentlyNullable
     @Deprecated
-    public Intent m23591c(int i) {
-        return mo23590d(null, i, null);
+    public Intent m23592c(int i) {
+        return mo23591d(null, i, null);
     }
 
     @RecentlyNullable
-    public Intent mo23590d(Context context, int i, String str) {
+    public Intent mo23591d(Context context, int i, String str) {
         if (i == 1 || i == 2) {
-            if (context != null && C8248h.m13046e(context)) {
-                return C6380r1.m20499c();
+            if (context != null && C8248h.m13045e(context)) {
+                return C6380r1.m20500c();
             }
             StringBuilder sb2 = new StringBuilder();
             sb2.append("gcore_");
@@ -54,57 +54,57 @@ public class C5221e {
             sb2.append("-");
             if (context != null) {
                 try {
-                    sb2.append(C8645b.m11820a(context).m11821d(context.getPackageName(), 0).versionCode);
+                    sb2.append(C8645b.m11819a(context).m11820d(context.getPackageName(), 0).versionCode);
                 } catch (PackageManager.NameNotFoundException unused) {
                 }
             }
-            return C6380r1.m20500b("com.google.android.gms", sb2.toString());
+            return C6380r1.m20501b("com.google.android.gms", sb2.toString());
         } else if (i != 3) {
             return null;
         } else {
-            return C6380r1.m20501a("com.google.android.gms");
+            return C6380r1.m20502a("com.google.android.gms");
         }
     }
 
     @RecentlyNullable
-    public PendingIntent mo23589e(@RecentlyNonNull Context context, int i, int i2) {
-        return m23588f(context, i, i2, null);
+    public PendingIntent mo23590e(@RecentlyNonNull Context context, int i, int i2) {
+        return m23589f(context, i, i2, null);
     }
 
     @RecentlyNullable
-    public PendingIntent m23588f(@RecentlyNonNull Context context, int i, int i2, String str) {
-        Intent d = mo23590d(context, i, str);
+    public PendingIntent m23589f(@RecentlyNonNull Context context, int i, int i2, String str) {
+        Intent d = mo23591d(context, i, str);
         if (d == null) {
             return null;
         }
         return PendingIntent.getActivity(context, i2, d, 134217728);
     }
 
-    public String mo23587g(int i) {
-        return C5224h.m23575c(i);
+    public String mo23588g(int i) {
+        return C5224h.m23576c(i);
     }
 
-    public int mo23585i(@RecentlyNonNull Context context) {
-        return mo23584j(context, f17368a);
+    public int mo23586i(@RecentlyNonNull Context context) {
+        return mo23585j(context, f17368a);
     }
 
-    public int mo23584j(@RecentlyNonNull Context context, int i) {
-        int f = C5224h.m23572f(context, i);
-        if (C5224h.m23571g(context, f)) {
+    public int mo23585j(@RecentlyNonNull Context context, int i) {
+        int f = C5224h.m23573f(context, i);
+        if (C5224h.m23572g(context, f)) {
             return 18;
         }
         return f;
     }
 
-    public boolean m23583k(@RecentlyNonNull Context context, int i) {
-        return C5224h.m23571g(context, i);
+    public boolean m23584k(@RecentlyNonNull Context context, int i) {
+        return C5224h.m23572g(context, i);
     }
 
-    public boolean m23582l(@RecentlyNonNull Context context, @RecentlyNonNull String str) {
-        return C5224h.m23568j(context, str);
+    public boolean m23583l(@RecentlyNonNull Context context, @RecentlyNonNull String str) {
+        return C5224h.m23569j(context, str);
     }
 
-    public boolean mo23581m(int i) {
-        return C5224h.m23569i(i);
+    public boolean mo23582m(int i) {
+        return C5224h.m23570i(i);
     }
 }

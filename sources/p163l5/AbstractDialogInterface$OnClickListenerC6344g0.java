@@ -9,20 +9,20 @@ import android.util.Log;
 import p148k5.AbstractC6116h;
 
 public abstract class AbstractDialogInterface$OnClickListenerC6344g0 implements DialogInterface.OnClickListener {
-    public static AbstractDialogInterface$OnClickListenerC6344g0 m20585b(Activity activity, Intent intent, int i) {
+    public static AbstractDialogInterface$OnClickListenerC6344g0 m20586b(Activity activity, Intent intent, int i) {
         return new C6338e0(intent, activity, i);
     }
 
-    public static AbstractDialogInterface$OnClickListenerC6344g0 m20584c(AbstractC6116h hVar, Intent intent, int i) {
+    public static AbstractDialogInterface$OnClickListenerC6344g0 m20585c(AbstractC6116h hVar, Intent intent, int i) {
         return new C6341f0(intent, hVar, 2);
     }
 
-    public abstract void mo20586a();
+    public abstract void mo20587a();
 
     @Override
     public final void onClick(DialogInterface dialogInterface, int i) {
         try {
-            mo20586a();
+            mo20587a();
         } catch (ActivityNotFoundException e) {
             String str = "Failed to start resolution intent.";
             if (true == Build.FINGERPRINT.contains("generic")) {

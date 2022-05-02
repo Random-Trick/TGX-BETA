@@ -43,26 +43,26 @@ public final class C6120i<L> {
 
     public C6120i(Looper looper, L l, String str) {
         this.f19413a = new HandlerC6136l1(this, looper);
-        this.f19414b = (L) C6378r.m20505l(l, "Listener must not be null");
-        this.f19415c = new C6121a<>(l, C6378r.m20510g(str));
+        this.f19414b = (L) C6378r.m20506l(l, "Listener must not be null");
+        this.f19415c = new C6121a<>(l, C6378r.m20511g(str));
     }
 
-    public void m21261a() {
+    public void m21262a() {
         this.f19414b = null;
         this.f19415c = null;
     }
 
     @RecentlyNullable
-    public C6121a<L> m21260b() {
+    public C6121a<L> m21261b() {
         return this.f19415c;
     }
 
-    public void m21259c(@RecentlyNonNull AbstractC6122b<? super L> bVar) {
-        C6378r.m20505l(bVar, "Notifier must not be null");
+    public void m21260c(@RecentlyNonNull AbstractC6122b<? super L> bVar) {
+        C6378r.m20506l(bVar, "Notifier must not be null");
         this.f19413a.sendMessage(this.f19413a.obtainMessage(1, bVar));
     }
 
-    public void m21258d(AbstractC6122b<? super L> bVar) {
+    public void m21259d(AbstractC6122b<? super L> bVar) {
         Object obj = (L) this.f19414b;
         if (obj == null) {
             bVar.mo919b();

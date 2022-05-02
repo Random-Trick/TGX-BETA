@@ -16,17 +16,17 @@ public final class C5766s implements AbstractC5542x, BiConsumer, AbstractC5531m 
     }
 
     @Override
-    public void mo22179p(Object obj, Object obj2) {
+    public void mo22180p(Object obj, Object obj2) {
         double[] dArr = (double[]) obj;
         double[] dArr2 = (double[]) obj2;
         int i = AbstractC5581F.f18136t;
-        AbstractC5736m.m22215b(dArr, dArr2[0]);
-        AbstractC5736m.m22215b(dArr, dArr2[1]);
+        AbstractC5736m.m22216b(dArr, dArr2[0]);
+        AbstractC5736m.m22216b(dArr, dArr2[1]);
         dArr[2] = dArr[2] + dArr2[2];
     }
 
     @Override
-    public Object mo22178w(int i) {
+    public Object mo22179w(int i) {
         int i2 = AbstractC5722j0.f18393t;
         return new Integer[i];
     }

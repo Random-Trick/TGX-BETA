@@ -60,7 +60,7 @@ public class C6012a implements AbstractMenuItemC9830b {
         return null;
     }
 
-    public final void m21573c() {
+    public final void m21574c() {
         Drawable drawable = this.f19141l;
         if (drawable == null) {
             return;
@@ -261,7 +261,7 @@ public class C6012a implements AbstractMenuItemC9830b {
     public MenuItem setIcon(Drawable drawable) {
         this.f19141l = drawable;
         this.f19142m = 0;
-        m21573c();
+        m21574c();
         return this;
     }
 
@@ -269,7 +269,7 @@ public class C6012a implements AbstractMenuItemC9830b {
     public MenuItem setIconTintList(ColorStateList colorStateList) {
         this.f19147r = colorStateList;
         this.f19149t = true;
-        m21573c();
+        m21574c();
         return this;
     }
 
@@ -277,7 +277,7 @@ public class C6012a implements AbstractMenuItemC9830b {
     public MenuItem setIconTintMode(PorterDuff.Mode mode) {
         this.f19148s = mode;
         this.f19150u = true;
-        m21573c();
+        m21574c();
         return this;
     }
 
@@ -382,8 +382,8 @@ public class C6012a implements AbstractMenuItemC9830b {
     @Override
     public MenuItem setIcon(int i) {
         this.f19142m = i;
-        this.f19141l = C8117a.m13438f(this.f19143n, i);
-        m21573c();
+        this.f19141l = C8117a.m13437f(this.f19143n, i);
+        m21574c();
         return this;
     }
 }

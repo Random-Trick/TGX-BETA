@@ -11,18 +11,18 @@ import android.os.Bundle;
 import android.util.Log;
 
 public final class C7954f {
-    public static Intent m14006a(Activity activity) {
+    public static Intent m14005a(Activity activity) {
         Intent parentActivityIntent;
         if (Build.VERSION.SDK_INT >= 16 && (parentActivityIntent = activity.getParentActivityIntent()) != null) {
             return parentActivityIntent;
         }
-        String c = m14004c(activity);
+        String c = m14003c(activity);
         if (c == null) {
             return null;
         }
         ComponentName componentName = new ComponentName(activity, c);
         try {
-            if (m14003d(activity, componentName) == null) {
+            if (m14002d(activity, componentName) == null) {
                 return Intent.makeMainActivity(componentName);
             }
             return new Intent().setComponent(componentName);
@@ -32,27 +32,27 @@ public final class C7954f {
         }
     }
 
-    public static Intent m14005b(Context context, ComponentName componentName) {
-        String d = m14003d(context, componentName);
+    public static Intent m14004b(Context context, ComponentName componentName) {
+        String d = m14002d(context, componentName);
         if (d == null) {
             return null;
         }
         ComponentName componentName2 = new ComponentName(componentName.getPackageName(), d);
-        if (m14003d(context, componentName2) == null) {
+        if (m14002d(context, componentName2) == null) {
             return Intent.makeMainActivity(componentName2);
         }
         return new Intent().setComponent(componentName2);
     }
 
-    public static String m14004c(Activity activity) {
+    public static String m14003c(Activity activity) {
         try {
-            return m14003d(activity, activity.getComponentName());
+            return m14002d(activity, activity.getComponentName());
         } catch (PackageManager.NameNotFoundException e) {
             throw new IllegalArgumentException(e);
         }
     }
 
-    public static String m14003d(Context context, ComponentName componentName) {
+    public static String m14002d(Context context, ComponentName componentName) {
         String string;
         String str;
         PackageManager packageManager = context.getPackageManager();
@@ -77,7 +77,7 @@ public final class C7954f {
         return context.getPackageName() + string;
     }
 
-    public static void m14002e(Activity activity, Intent intent) {
+    public static void m14001e(Activity activity, Intent intent) {
         if (Build.VERSION.SDK_INT >= 16) {
             activity.navigateUpTo(intent);
             return;
@@ -87,7 +87,7 @@ public final class C7954f {
         activity.finish();
     }
 
-    public static boolean m14001f(Activity activity, Intent intent) {
+    public static boolean m14000f(Activity activity, Intent intent) {
         if (Build.VERSION.SDK_INT >= 16) {
             return activity.shouldUpRecreateTask(intent);
         }

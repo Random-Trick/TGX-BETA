@@ -9,6 +9,6 @@ public final class C5805z3 implements AbstractC5535q {
     }
 
     @Override
-    public final void mo22127e(long j) {
+    public final void mo22128e(long j) {
     }
 }

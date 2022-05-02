@@ -4,7 +4,7 @@ import android.os.Bundle;
 import p174m3.AbstractC6609h;
 
 public final class C11277r implements AbstractC6609h.AbstractC6610a {
-    public static final C11277r f36138a = new C11277r();
+    public static final C11277r f36141a = new C11277r();
 
     @Override
     public final AbstractC6609h mo998a(Bundle bundle) {

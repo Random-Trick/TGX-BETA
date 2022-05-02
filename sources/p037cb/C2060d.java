@@ -4,7 +4,7 @@ import android.os.Build;
 import java.util.Locale;
 
 public final class C2060d {
-    public static String m35728a(Locale locale) {
+    public static String m35731a(Locale locale) {
         if (Build.VERSION.SDK_INT >= 21) {
             return locale.toLanguageTag();
         }

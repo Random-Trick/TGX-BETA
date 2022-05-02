@@ -31,9 +31,9 @@ public class C4069x extends View implements C3950k.AbstractC3952b {
     public C3950k f13744c;
 
     public interface AbstractC4070a {
-        void mo29044N5();
+        void mo29046N5();
 
-        void mo29043t5();
+        void mo29045t5();
     }
 
     public C4069x(Context context) {
@@ -77,45 +77,45 @@ public class C4069x extends View implements C3950k.AbstractC3952b {
             AbstractC4070a aVar = this.f13738S;
             if (aVar != null) {
                 if (f == 1.0f) {
-                    aVar.mo29043t5();
+                    aVar.mo29045t5();
                 } else if (f == 0.0f) {
-                    aVar.mo29044N5();
+                    aVar.mo29046N5();
                 }
             } else if (f == 1.0f) {
-                m29049c(true);
+                m29051c(true);
             }
         }
     }
 
-    public final void m29051a(float f) {
+    public final void m29053a(float f) {
         C3950k kVar = this.f13744c;
         if (kVar != null) {
-            kVar.m29541l(f);
+            kVar.m29543l(f);
         }
         setOverlayFactor(f);
     }
 
-    public void m29050b() {
+    public void m29052b() {
         C3950k kVar = this.f13740U;
         if (kVar == null) {
             this.f13740U = new C3950k(1, this, C2057b.f7280b, 280L, this.f13739T);
         } else {
-            kVar.m29528y(280L);
-            this.f13740U.m29553F(0L);
+            kVar.m29530y(280L);
+            this.f13740U.m29555F(0L);
         }
-        this.f13740U.m29544i(1.0f);
+        this.f13740U.m29546i(1.0f);
     }
 
-    public void m29049c(boolean z) {
+    public void m29051c(boolean z) {
         C3950k kVar = this.f13740U;
         if (kVar != null) {
-            kVar.m29553F(z ? 1000L : 0L);
-            this.f13740U.m29528y(120L);
-            this.f13740U.m29544i(0.0f);
+            kVar.m29555F(z ? 1000L : 0L);
+            this.f13740U.m29530y(120L);
+            this.f13740U.m29546i(0.0f);
         }
     }
 
-    public void m29048d() {
+    public void m29050d() {
         this.f13742a = true;
         if (C7389v0.m16756A1(this.f13736Q)) {
             this.f13734O = this.f13736Q;
@@ -124,18 +124,18 @@ public class C4069x extends View implements C3950k.AbstractC3952b {
             this.f13734O = null;
         }
         this.f13736Q = null;
-        m29051a(1.0f);
+        m29053a(1.0f);
         invalidate();
     }
 
-    public void m29047e(boolean z, boolean z2) {
+    public void m29049e(boolean z, boolean z2) {
         if (this.f13741V == null) {
             this.f13741V = new C3940f(2, this, C2057b.f7280b, 120L);
         }
-        this.f13741V.m29575p(z, z2);
+        this.f13741V.m29577p(z, z2);
     }
 
-    public void m29046f(boolean z, boolean z2, Runnable runnable) {
+    public void m29048f(boolean z, boolean z2, Runnable runnable) {
         if (this.f13742a != z) {
             this.f13742a = z;
             float f = z ? 1.0f : 0.0f;
@@ -144,14 +144,14 @@ public class C4069x extends View implements C3950k.AbstractC3952b {
                 if (this.f13744c == null) {
                     this.f13744c = new C3950k(0, this, C2057b.f7280b, 140L, this.f13743b);
                 }
-                this.f13744c.m29528y(((!this.f13732M || this.f13736Q != null) && !z) ? 290L : 180L);
-                this.f13744c.m29544i(f);
+                this.f13744c.m29530y(((!this.f13732M || this.f13736Q != null) && !z) ? 290L : 180L);
+                this.f13744c.m29546i(f);
                 return;
             }
             this.f13733N = null;
             C3950k kVar = this.f13744c;
             if (kVar != null) {
-                kVar.m29541l(f);
+                kVar.m29543l(f);
             }
             this.f13743b = f;
             if (runnable != null) {
@@ -160,7 +160,7 @@ public class C4069x extends View implements C3950k.AbstractC3952b {
         }
     }
 
-    public void m29045g(Bitmap bitmap, int i) {
+    public void m29047g(Bitmap bitmap, int i) {
         this.f13736Q = bitmap;
         this.f13737R = i;
         invalidate();
@@ -178,13 +178,13 @@ public class C4069x extends View implements C3950k.AbstractC3952b {
         if (i3 > 0) {
             Bitmap bitmap2 = this.f13736Q;
             if (bitmap2 == null || bitmap2.isRecycled()) {
-                canvas.drawColor(C5064d.m24130b(i3, 0));
+                canvas.drawColor(C5064d.m24131b(i3, 0));
             } else {
-                Paint j = C1410y.m37033j();
+                Paint j = C1410y.m37036j();
                 if (i3 != 255) {
                     j.setAlpha(i3);
                 }
-                int l = C5069h.m24081l(this.f13737R - C1379j0.m37307r(getContext()).m14513a1(), 360);
+                int l = C5069h.m24082l(this.f13737R - C1379j0.m37310r(getContext()).m14512a1(), 360);
                 if (l == 180) {
                     l = 0;
                 }
@@ -219,7 +219,7 @@ public class C4069x extends View implements C3950k.AbstractC3952b {
             }
         }
         C3940f fVar = this.f13741V;
-        if ((fVar != null ? fVar.m29584g() : 0.0f) > 0.0f) {
+        if ((fVar != null ? fVar.m29586g() : 0.0f) > 0.0f) {
             int i6 = measuredWidth / 3;
             int i7 = measuredHeight / 3;
             int i8 = 0;
@@ -228,9 +228,9 @@ public class C4069x extends View implements C3950k.AbstractC3952b {
                 int i10 = i4 + i6;
                 int i11 = i8 + i7;
                 float f3 = i10;
-                canvas.drawLine(f3, 0.0f, f3, measuredHeight, C1410y.m37053Y(1258291199, C1357a0.m37541i(1.0f)));
+                canvas.drawLine(f3, 0.0f, f3, measuredHeight, C1410y.m37056Y(1258291199, C1357a0.m37544i(1.0f)));
                 float f4 = i11;
-                canvas.drawLine(0.0f, f4, measuredWidth, f4, C1410y.m37053Y(1258291199, C1357a0.m37541i(1.0f)));
+                canvas.drawLine(0.0f, f4, measuredWidth, f4, C1410y.m37056Y(1258291199, C1357a0.m37544i(1.0f)));
                 i9++;
                 i4 = i10;
                 i8 = i11;
@@ -238,7 +238,7 @@ public class C4069x extends View implements C3950k.AbstractC3952b {
         }
         int i12 = (int) (this.f13739T * 255.0f * 1.0f);
         if (i12 > 0) {
-            canvas.drawColor(C5064d.m24130b(i12, 16574674));
+            canvas.drawColor(C5064d.m24131b(i12, 16574674));
         }
     }
 

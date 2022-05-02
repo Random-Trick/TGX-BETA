@@ -17,9 +17,9 @@ public final class C1989xb extends AbstractC6749a {
 
     @Override
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = C6752c.m19124a(parcel);
-        C6752c.m19118g(parcel, 1, this.f7086a);
-        C6752c.m19118g(parcel, 2, this.f7087b);
-        C6752c.m19123b(parcel, a);
+        int a = C6752c.m19125a(parcel);
+        C6752c.m19119g(parcel, 1, this.f7086a);
+        C6752c.m19119g(parcel, 2, this.f7087b);
+        C6752c.m19124b(parcel, a);
     }
 }

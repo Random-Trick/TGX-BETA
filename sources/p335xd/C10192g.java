@@ -68,8 +68,8 @@ public class C10192g {
             AbstractC11531p j = C11541z.m7t().m19j(false);
             View findViewById = datePicker.findViewById(identifier);
             if (findViewById != null) {
-                int c = C5064d.m24129c(j.mo92e(R.id.theme_color_headerBackground), j.mo92e(R.id.theme_color_headerPickerBackground));
-                int c2 = C5064d.m24129c(j.mo92e(R.id.theme_color_headerText), j.mo92e(R.id.theme_color_headerPickerText));
+                int c = C5064d.m24130c(j.mo92e(R.id.theme_color_headerBackground), j.mo92e(R.id.theme_color_headerPickerBackground));
+                int c2 = C5064d.m24130c(j.mo92e(R.id.theme_color_headerText), j.mo92e(R.id.theme_color_headerPickerText));
                 findViewById.setBackgroundColor(c);
                 int identifier2 = Resources.getSystem().getIdentifier("date_picker_header_year", "id", "android");
                 if (identifier2 != 0) {
@@ -90,7 +90,7 @@ public class C10192g {
             Log.m14718i(th);
         }
         try {
-            View x0 = C1399s0.m37147x0(datePickerDialog.getContext(), datePickerDialog, "date_picker_day_picker");
+            View x0 = C1399s0.m37150x0(datePickerDialog.getContext(), datePickerDialog, "date_picker_day_picker");
             if (x0 != null && (x0.getLayoutParams() instanceof FrameLayout.LayoutParams)) {
                 FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) x0.getLayoutParams();
                 layoutParams.gravity = 1;
@@ -109,7 +109,7 @@ public class C10192g {
 
     public static void m5784g(View view) {
         if (Build.VERSION.SDK_INT >= 21) {
-            view.setTranslationZ(C1357a0.m37541i(4.0f));
+            view.setTranslationZ(C1357a0.m37544i(4.0f));
         }
     }
 
@@ -133,7 +133,7 @@ public class C10192g {
             lVar.m16761d(i);
         } else {
             lVar = new C7368l(i);
-            C2065g.m35718d(view, lVar);
+            C2065g.m35721d(view, lVar);
         }
         if (v4Var == null) {
             return lVar;
@@ -155,16 +155,16 @@ public class C10192g {
                 }
             });
         }
-        datePickerDialog.setButton(-1, C4403w.m27869i1(R.string.OK), datePickerDialog);
-        datePickerDialog.setButton(-2, C4403w.m27869i1(R.string.Cancel), datePickerDialog);
+        datePickerDialog.setButton(-1, C4403w.m27871i1(R.string.OK), datePickerDialog);
+        datePickerDialog.setButton(-2, C4403w.m27871i1(R.string.Cancel), datePickerDialog);
         datePickerDialog.show();
-        AbstractView$OnTouchListenerC7889a.m14556O1(datePickerDialog.getContext(), datePickerDialog, null);
+        AbstractView$OnTouchListenerC7889a.m14555O1(datePickerDialog.getContext(), datePickerDialog, null);
     }
 
     public static void m5779l(TimePickerDialog timePickerDialog) {
-        timePickerDialog.setButton(-1, C4403w.m27869i1(R.string.OK), timePickerDialog);
-        timePickerDialog.setButton(-2, C4403w.m27869i1(R.string.Cancel), timePickerDialog);
+        timePickerDialog.setButton(-1, C4403w.m27871i1(R.string.OK), timePickerDialog);
+        timePickerDialog.setButton(-2, C4403w.m27871i1(R.string.Cancel), timePickerDialog);
         timePickerDialog.show();
-        AbstractView$OnTouchListenerC7889a.m14556O1(timePickerDialog.getContext(), timePickerDialog, null);
+        AbstractView$OnTouchListenerC7889a.m14555O1(timePickerDialog.getContext(), timePickerDialog, null);
     }
 }

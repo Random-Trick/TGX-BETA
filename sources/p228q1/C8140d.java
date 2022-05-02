@@ -9,14 +9,14 @@ import org.thunderdog.challegram.Log;
 public final class C8140d {
 
     public static class C8141a {
-        public long f26420a;
-        public long f26421b;
+        public long f26423a;
+        public long f26424b;
     }
 
-    public static long m13375a(RandomAccessFile randomAccessFile, C8141a aVar) {
+    public static long m13374a(RandomAccessFile randomAccessFile, C8141a aVar) {
         CRC32 crc32 = new CRC32();
-        long j = aVar.f26421b;
-        randomAccessFile.seek(aVar.f26420a);
+        long j = aVar.f26424b;
+        randomAccessFile.seek(aVar.f26423a);
         int min = (int) Math.min(16384L, j);
         byte[] bArr = new byte[Log.TAG_VIDEO];
         int read = randomAccessFile.read(bArr, 0, min);
@@ -31,7 +31,7 @@ public final class C8140d {
         return crc32.getValue();
     }
 
-    public static C8141a m13374b(RandomAccessFile randomAccessFile) {
+    public static C8141a m13373b(RandomAccessFile randomAccessFile) {
         long length = randomAccessFile.length() - 22;
         long j = 0;
         if (length >= 0) {
@@ -48,8 +48,8 @@ public final class C8140d {
                     randomAccessFile.skipBytes(2);
                     randomAccessFile.skipBytes(2);
                     C8141a aVar = new C8141a();
-                    aVar.f26421b = Integer.reverseBytes(randomAccessFile.readInt()) & 4294967295L;
-                    aVar.f26420a = Integer.reverseBytes(randomAccessFile.readInt()) & 4294967295L;
+                    aVar.f26424b = Integer.reverseBytes(randomAccessFile.readInt()) & 4294967295L;
+                    aVar.f26423a = Integer.reverseBytes(randomAccessFile.readInt()) & 4294967295L;
                     return aVar;
                 }
                 length--;
@@ -59,10 +59,10 @@ public final class C8140d {
         throw new ZipException("File too short to be a zip file: " + randomAccessFile.length());
     }
 
-    public static long m13373c(File file) {
+    public static long m13372c(File file) {
         RandomAccessFile randomAccessFile = new RandomAccessFile(file, "r");
         try {
-            return m13375a(randomAccessFile, m13374b(randomAccessFile));
+            return m13374a(randomAccessFile, m13373b(randomAccessFile));
         } finally {
             randomAccessFile.close();
         }

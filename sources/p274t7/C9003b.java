@@ -21,39 +21,39 @@ import p232q5.C8251k;
 import p274t7.C9000a;
 
 public class C9003b {
-    public final Executor f28911a;
-    public final Context f28912b;
-    public final C3527c f28913c;
+    public final Executor f28914a;
+    public final Context f28915b;
+    public final C3527c f28916c;
 
     public C9003b(Context context, C3527c cVar, Executor executor) {
-        this.f28911a = executor;
-        this.f28912b = context;
-        this.f28913c = cVar;
+        this.f28914a = executor;
+        this.f28915b = context;
+        this.f28916c = cVar;
     }
 
-    public boolean m10721a() {
-        if (this.f28913c.m30169a("gcm.n.noui")) {
+    public boolean m10720a() {
+        if (this.f28916c.m30171a("gcm.n.noui")) {
             return true;
         }
-        if (m10720b()) {
+        if (m10719b()) {
             return false;
         }
-        C9006c0 d = m10718d();
-        C9000a.C9001a d2 = C9000a.m10746d(this.f28912b, this.f28913c);
-        m10717e(d2.f28902a, d);
-        m10719c(d2);
+        C9006c0 d = m10717d();
+        C9000a.C9001a d2 = C9000a.m10745d(this.f28915b, this.f28916c);
+        m10716e(d2.f28905a, d);
+        m10718c(d2);
         return true;
     }
 
-    public final boolean m10720b() {
-        if (((KeyguardManager) this.f28912b.getSystemService("keyguard")).inKeyguardRestrictedInputMode()) {
+    public final boolean m10719b() {
+        if (((KeyguardManager) this.f28915b.getSystemService("keyguard")).inKeyguardRestrictedInputMode()) {
             return false;
         }
-        if (!C8251k.m13034e()) {
+        if (!C8251k.m13033e()) {
             SystemClock.sleep(10L);
         }
         int myPid = Process.myPid();
-        List<ActivityManager.RunningAppProcessInfo> runningAppProcesses = ((ActivityManager) this.f28912b.getSystemService("activity")).getRunningAppProcesses();
+        List<ActivityManager.RunningAppProcessInfo> runningAppProcesses = ((ActivityManager) this.f28915b.getSystemService("activity")).getRunningAppProcesses();
         if (runningAppProcesses != null) {
             Iterator<ActivityManager.RunningAppProcessInfo> it = runningAppProcesses.iterator();
             while (true) {
@@ -71,27 +71,27 @@ public class C9003b {
         return false;
     }
 
-    public final void m10719c(C9000a.C9001a aVar) {
+    public final void m10718c(C9000a.C9001a aVar) {
         if (Log.isLoggable("FirebaseMessaging", 3)) {
             Log.d("FirebaseMessaging", "Showing notification");
         }
-        ((NotificationManager) this.f28912b.getSystemService("notification")).notify(aVar.f28903b, aVar.f28904c, aVar.f28902a.m13959d());
+        ((NotificationManager) this.f28915b.getSystemService("notification")).notify(aVar.f28906b, aVar.f28907c, aVar.f28905a.m13958d());
     }
 
-    public final C9006c0 m10718d() {
-        C9006c0 y0 = C9006c0.m10713y0(this.f28913c.m30154p("gcm.n.image"));
+    public final C9006c0 m10717d() {
+        C9006c0 y0 = C9006c0.m10712y0(this.f28916c.m30156p("gcm.n.image"));
         if (y0 != null) {
-            y0.m10716A0(this.f28911a);
+            y0.m10715A0(this.f28914a);
         }
         return y0;
     }
 
-    public final void m10717e(C7956h.C7965e eVar, C9006c0 c0Var) {
+    public final void m10716e(C7956h.C7965e eVar, C9006c0 c0Var) {
         if (c0Var != null) {
             try {
-                Bitmap bitmap = (Bitmap) C6781o.m19053b(c0Var.m10712z0(), 5L, TimeUnit.SECONDS);
-                eVar.m13939x(bitmap);
-                eVar.m13968I(new C7956h.C7959b().m13983i(bitmap).m13984h(null));
+                Bitmap bitmap = (Bitmap) C6781o.m19054b(c0Var.m10711z0(), 5L, TimeUnit.SECONDS);
+                eVar.m13938x(bitmap);
+                eVar.m13967I(new C7956h.C7959b().m13982i(bitmap).m13983h(null));
             } catch (InterruptedException unused) {
                 Log.w("FirebaseMessaging", "Interrupted while downloading image, showing notification without it");
                 c0Var.close();

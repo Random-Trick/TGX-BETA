@@ -12,28 +12,28 @@ public class C6530a<K, V> extends C6531b<K, V> {
     }
 
     @Override
-    public C6531b.C6534c<K, V> mo20150i(K k) {
+    public C6531b.C6534c<K, V> mo20151i(K k) {
         return this.f20342N.get(k);
     }
 
     @Override
-    public V mo20146t(K k, V v) {
-        C6531b.C6534c<K, V> i = mo20150i(k);
+    public V mo20147t(K k, V v) {
+        C6531b.C6534c<K, V> i = mo20151i(k);
         if (i != null) {
             return i.f20349b;
         }
-        this.f20342N.put(k, m20147s(k, v));
+        this.f20342N.put(k, m20148s(k, v));
         return null;
     }
 
     @Override
-    public V mo20145u(K k) {
-        V v = (V) super.mo20145u(k);
+    public V mo20146u(K k) {
+        V v = (V) super.mo20146u(k);
         this.f20342N.remove(k);
         return v;
     }
 
-    public Map.Entry<K, V> m20152v(K k) {
+    public Map.Entry<K, V> m20153v(K k) {
         if (contains(k)) {
             return this.f20342N.get(k).f20347M;
         }

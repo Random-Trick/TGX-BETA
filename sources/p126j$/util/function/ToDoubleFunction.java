@@ -17,10 +17,10 @@ public interface ToDoubleFunction<T> {
         }
 
         @Override
-        public double mo22324v(Object obj) {
+        public double mo22325v(Object obj) {
             return this.f18065a.applyAsDouble(obj);
         }
     }
 
-    double mo22324v(Object obj);
+    double mo22325v(Object obj);
 }

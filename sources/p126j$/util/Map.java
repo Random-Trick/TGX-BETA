@@ -15,7 +15,7 @@ public interface Map<K, V> {
         public static Object $default$compute(java.util.Map map, Object obj, BiFunction biFunction) {
             Objects.requireNonNull(biFunction);
             Object obj2 = map.get(obj);
-            Object u = biFunction.mo22172u(obj, obj2);
+            Object u = biFunction.mo22173u(obj, obj2);
             if (u != null) {
                 map.put(obj, u);
                 return u;
@@ -31,7 +31,7 @@ public interface Map<K, V> {
             Object a;
             Objects.requireNonNull(function);
             Object obj2 = map.get(obj);
-            if (obj2 != null || (a = function.mo22502a(obj)) == null) {
+            if (obj2 != null || (a = function.mo22503a(obj)) == null) {
                 return obj2;
             }
             map.put(obj, a);
@@ -42,7 +42,7 @@ public interface Map<K, V> {
             Objects.requireNonNull(biFunction);
             Object obj2 = map.get(obj);
             if (obj2 != null) {
-                Object u = biFunction.mo22172u(obj, obj2);
+                Object u = biFunction.mo22173u(obj, obj2);
                 if (u != null) {
                     map.put(obj, u);
                     return u;
@@ -56,7 +56,7 @@ public interface Map<K, V> {
             Objects.requireNonNull(biConsumer);
             for (Map.Entry<K, V> entry : map.entrySet()) {
                 try {
-                    biConsumer.mo22179p(entry.getKey(), entry.getValue());
+                    biConsumer.mo22180p(entry.getKey(), entry.getValue());
                 } catch (IllegalStateException e) {
                     throw new ConcurrentModificationException(e);
                 }
@@ -68,7 +68,7 @@ public interface Map<K, V> {
             Objects.requireNonNull(obj2);
             Object obj3 = map.get(obj);
             if (obj3 != null) {
-                obj2 = biFunction.mo22172u(obj3, obj2);
+                obj2 = biFunction.mo22173u(obj3, obj2);
             }
             if (obj2 == null) {
                 map.remove(obj);
@@ -85,7 +85,7 @@ public interface Map<K, V> {
 
         public static boolean $default$remove(java.util.Map map, Object obj, Object obj2) {
             Object obj3 = map.get(obj);
-            if (!AbstractC5485a.m22585A(obj3, obj2)) {
+            if (!AbstractC5485a.m22586A(obj3, obj2)) {
                 return false;
             }
             if (obj3 == null && !map.containsKey(obj)) {
@@ -102,7 +102,7 @@ public interface Map<K, V> {
 
         public static boolean $default$replace(java.util.Map map, Object obj, Object obj2, Object obj3) {
             Object obj4 = map.get(obj);
-            if (!AbstractC5485a.m22585A(obj4, obj2)) {
+            if (!AbstractC5485a.m22586A(obj4, obj2)) {
                 return false;
             }
             if (obj4 == null && !map.containsKey(obj)) {
@@ -117,7 +117,7 @@ public interface Map<K, V> {
             for (Map.Entry<K, V> entry : map.entrySet()) {
                 try {
                     try {
-                        entry.setValue((V) biFunction.mo22172u(entry.getKey(), entry.getValue()));
+                        entry.setValue((V) biFunction.mo22173u(entry.getKey(), entry.getValue()));
                     } catch (IllegalStateException e) {
                         throw new ConcurrentModificationException(e);
                     }

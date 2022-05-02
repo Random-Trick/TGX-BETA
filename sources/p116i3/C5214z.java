@@ -9,7 +9,7 @@ public final class C5214z implements C5174b0.AbstractC5176b {
     @Override
     public final Object apply(Object obj) {
         byte[] j1;
-        j1 = C5174b0.m23690j1((Cursor) obj);
+        j1 = C5174b0.m23691j1((Cursor) obj);
         return j1;
     }
 }

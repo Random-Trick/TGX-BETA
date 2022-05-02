@@ -9,89 +9,89 @@ import org.thunderdog.challegram.R;
 import p082fd.C4356b0;
 
 public class View$OnClickListenerC8777i0 extends RecyclerView.AbstractC0890h<C8778a> implements View.OnClickListener, AbstractC8749f {
-    public final Context f28330M;
-    public final AbstractC8779b f28331N;
-    public final C4356b0.C4357a f28332O;
+    public final Context f28333M;
+    public final AbstractC8779b f28334N;
+    public final C4356b0.C4357a f28335O;
 
     public static class C8778a extends RecyclerView.AbstractC0886d0 {
         public C8778a(View view) {
             super(view);
         }
 
-        public static C8778a m11419P(Context context, View.OnClickListener onClickListener) {
+        public static C8778a m11418P(Context context, View.OnClickListener onClickListener) {
             C8783j0 j0Var = new C8783j0(context);
             j0Var.setId(R.id.bucket);
             j0Var.setOnClickListener(onClickListener);
             return new C8778a(j0Var);
         }
 
-        public void m11420O() {
-            ((C8783j0) this.f3479a).m11415f();
+        public void m11419O() {
+            ((C8783j0) this.f3479a).m11414f();
         }
 
-        public void m11418Q() {
-            ((C8783j0) this.f3479a).m11416b();
+        public void m11417Q() {
+            ((C8783j0) this.f3479a).m11415b();
         }
 
-        public void m11417R(C4356b0.C4358b bVar) {
+        public void m11416R(C4356b0.C4358b bVar) {
             ((C8783j0) this.f3479a).setBucket(bVar);
         }
     }
 
     public interface AbstractC8779b {
-        void mo11217d1(C4356b0.C4358b bVar);
+        void mo11216d1(C4356b0.C4358b bVar);
     }
 
     public View$OnClickListenerC8777i0(Context context, AbstractC8779b bVar, C4356b0.C4357a aVar) {
-        this.f28330M = context;
-        this.f28331N = bVar;
-        this.f28332O = aVar;
+        this.f28333M = context;
+        this.f28334N = bVar;
+        this.f28335O = aVar;
     }
 
     @Override
     public int mo6153D() {
-        return this.f28332O.m28186d();
+        return this.f28335O.m28188d();
     }
 
     public void mo6146Q(C8778a aVar, int i) {
-        aVar.m11417R(this.f28332O.m28185e(i));
+        aVar.m11416R(this.f28335O.m28187e(i));
     }
 
     public C8778a mo6145S(ViewGroup viewGroup, int i) {
-        return C8778a.m11419P(this.f28330M, this);
+        return C8778a.m11418P(this.f28333M, this);
     }
 
     public void mo6144V(C8778a aVar) {
-        aVar.m11420O();
+        aVar.m11419O();
     }
 
     public void mo6143W(C8778a aVar) {
-        aVar.m11418Q();
+        aVar.m11417Q();
     }
 
     public void mo6142X(C8778a aVar) {
-        aVar.m11418Q();
+        aVar.m11417Q();
     }
 
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.bucket) {
             C4356b0.C4358b bucket = ((C8783j0) view).getBucket();
-            AbstractC8779b bVar = this.f28331N;
+            AbstractC8779b bVar = this.f28334N;
             if (bVar != null) {
-                bVar.mo11217d1(bucket);
+                bVar.mo11216d1(bucket);
             }
         }
     }
 
     @Override
-    public int mo11422r(int i) {
+    public int mo11421r(int i) {
         return 0;
     }
 
     @Override
-    public int mo11421v(int i) {
-        int D = mo6153D() * C1357a0.m37541i(48.0f);
+    public int mo11420v(int i) {
+        int D = mo6153D() * C1357a0.m37544i(48.0f);
         return (i == -1 || i >= D) ? D : i;
     }
 }

@@ -10,16 +10,16 @@ import java.util.Set;
 import java.util.WeakHashMap;
 
 public class C9033p implements Application.ActivityLifecycleCallbacks {
-    public final Set<Intent> f28983a = Collections.newSetFromMap(new WeakHashMap());
+    public final Set<Intent> f28986a = Collections.newSetFromMap(new WeakHashMap());
 
     @Override
     public void onActivityCreated(Activity activity, Bundle bundle) {
         Bundle extras;
         Intent intent = activity.getIntent();
-        if (intent != null && this.f28983a.add(intent) && (extras = intent.getExtras()) != null) {
+        if (intent != null && this.f28986a.add(intent) && (extras = intent.getExtras()) != null) {
             Bundle bundle2 = extras.getBundle("gcm.n.analytics_data");
-            if (C3526b.m30196B(bundle2)) {
-                C3526b.m30175u(bundle2);
+            if (C3526b.m30198B(bundle2)) {
+                C3526b.m30177u(bundle2);
             }
         }
     }
@@ -31,7 +31,7 @@ public class C9033p implements Application.ActivityLifecycleCallbacks {
     @Override
     public void onActivityPaused(Activity activity) {
         if (activity.isFinishing()) {
-            this.f28983a.remove(activity.getIntent());
+            this.f28986a.remove(activity.getIntent());
         }
     }
 

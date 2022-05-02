@@ -21,7 +21,7 @@ public class C6233h<K, T> {
         this(false, true, null);
     }
 
-    public void m21018e(AbstractC6234a aVar, C6227d dVar, boolean z) {
+    public void m21019e(AbstractC6234a aVar, C6227d dVar, boolean z) {
         synchronized (aVar) {
             if (z) {
                 int i = this.f19663d;
@@ -39,7 +39,7 @@ public class C6233h<K, T> {
         }
     }
 
-    public final boolean m21021b(K k, T t) {
+    public final boolean m21022b(K k, T t) {
         boolean add;
         synchronized (this.f19665f) {
             C6227d<T> dVar = this.f19665f.get(k);
@@ -58,7 +58,7 @@ public class C6233h<K, T> {
         return add;
     }
 
-    public final void m21020c() {
+    public final void m21021c() {
         synchronized (this.f19665f) {
             for (Map.Entry<K, C6227d<T>> entry : this.f19665f.entrySet()) {
                 C6227d<T> value = entry.getValue();
@@ -70,7 +70,7 @@ public class C6233h<K, T> {
         }
     }
 
-    public final Iterator<T> m21019d(K k) {
+    public final Iterator<T> m21020d(K k) {
         Iterator<T> it;
         synchronized (this.f19665f) {
             C6227d<T> dVar = this.f19665f.get(k);
@@ -79,13 +79,13 @@ public class C6233h<K, T> {
         return it;
     }
 
-    public final void m21017f(K k, K k2) {
+    public final void m21018f(K k, K k2) {
         synchronized (this.f19665f) {
             C6227d<T> remove = this.f19665f.remove(k);
             if (remove != null) {
                 C6227d<T> dVar = this.f19665f.get(k2);
                 if (dVar != null) {
-                    dVar.m21026u(remove);
+                    dVar.m21027u(remove);
                     remove.clear();
                     remove.f19650R = this.f19664e;
                     this.f19664e = remove;
@@ -96,7 +96,7 @@ public class C6233h<K, T> {
         }
     }
 
-    public final void m21016g(K k, T t) {
+    public final void m21017g(K k, T t) {
         synchronized (this.f19665f) {
             C6227d<T> dVar = this.f19665f.get(k);
             if (dVar != null) {
@@ -122,7 +122,7 @@ public class C6233h<K, T> {
             this.f19662c = new C6227d.AbstractC6228a() {
                 @Override
                 public final void mo4374b(C6227d dVar, boolean z3) {
-                    C6233h.this.m21018e(aVar, dVar, z3);
+                    C6233h.this.m21019e(aVar, dVar, z3);
                 }
             };
         } else {

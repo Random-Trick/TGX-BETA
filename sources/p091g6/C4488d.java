@@ -15,17 +15,17 @@ public final class C4488d {
     @GuardedBy("MapsInitializer.class")
     public static boolean f14827a = false;
 
-    public static synchronized int m27518a(@RecentlyNonNull Context context) {
+    public static synchronized int m27520a(@RecentlyNonNull Context context) {
         synchronized (C4488d.class) {
-            C6378r.m20505l(context, "Context is null");
+            C6378r.m20506l(context, "Context is null");
             if (f14827a) {
                 return 0;
             }
             try {
-                AbstractC5016w a = C5014u.m24315a(context);
+                AbstractC5016w a = C5014u.m24316a(context);
                 try {
-                    C4480b.m27537e(a.mo24309k());
-                    C5241b.m23555b(a.mo24308t0());
+                    C4480b.m27539e(a.mo24310k());
+                    C5241b.m23556b(a.mo24309t0());
                     f14827a = true;
                     return 0;
                 } catch (RemoteException e) {

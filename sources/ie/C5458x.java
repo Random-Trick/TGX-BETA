@@ -8,31 +8,31 @@ public final class C5458x {
         C5428t.AbstractC5432b bVar = C5428t.AbstractC5432b.f17853j;
     }
 
-    public static int m22652a(C5428t.AbstractC5432b bVar, boolean z) {
+    public static int m22653a(C5428t.AbstractC5432b bVar, boolean z) {
         return R.id.theme_color_bubbleOut_textLink;
     }
 
-    public static int m22651b(C5428t.AbstractC5432b bVar) {
+    public static int m22652b(C5428t.AbstractC5432b bVar) {
         return R.id.theme_color_bubbleOut_time;
     }
 
-    public static int m22650c(C5428t.AbstractC5432b bVar) {
+    public static int m22651c(C5428t.AbstractC5432b bVar) {
         return R.id.theme_color_bubbleOut_textLinkPressHighlight;
     }
 
-    public static int m22649d() {
+    public static int m22650d() {
         int i;
         i = R.id.theme_color_bubbleOut_textLink;
         return i;
     }
 
-    public static int m22648e() {
+    public static int m22649e() {
         int i;
         i = R.id.theme_color_bubbleOut_text;
         return i;
     }
 
-    public static int m22647f() {
+    public static int m22648f() {
         int i;
         i = R.id.theme_color_bubbleOut_time;
         return i;

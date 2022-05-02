@@ -21,7 +21,7 @@ public final class C0141g extends AbstractC0139f {
     public boolean f516j;
 
     public static final class C0142a {
-        public static void m42221a(Bundle bundle) {
+        public static void m42224a(Bundle bundle) {
             bundle.putParcelable("android.provider.extra.MEDIA_CAPABILITIES", new ApplicationMediaCapabilities.Builder().addSupportedVideoMimeType("video/hevc").addSupportedHdrType("android.media.feature.hdr.dolby_vision").addSupportedHdrType("android.media.feature.hdr.hdr10").addSupportedHdrType("android.media.feature.hdr.hdr10_plus").addSupportedHdrType("android.media.feature.hdr.hlg").build());
         }
     }
@@ -53,7 +53,7 @@ public final class C0141g extends AbstractC0139f {
                 throw new C0143b(e, 2000);
             }
         }
-        int read = ((FileInputStream) C1216l0.m37968j(this.f514h)).read(bArr, i, i2);
+        int read = ((FileInputStream) C1216l0.m37971j(this.f514h)).read(bArr, i, i2);
         if (read == -1) {
             return -1;
         }
@@ -61,7 +61,7 @@ public final class C0141g extends AbstractC0139f {
         if (j2 != -1) {
             this.f515i = j2 - read;
         }
-        m42225s(read);
+        m42228s(read);
         return read;
     }
 
@@ -72,11 +72,11 @@ public final class C0141g extends AbstractC0139f {
         try {
             Uri uri = oVar.f553a;
             this.f512f = uri;
-            m42223u(oVar);
+            m42226u(oVar);
             if ("content".equals(oVar.f553a.getScheme())) {
                 Bundle bundle = new Bundle();
                 if (C1216l0.f4526a >= 31) {
-                    C0142a.m42221a(bundle);
+                    C0142a.m42224a(bundle);
                 }
                 assetFileDescriptor = this.f511e.openTypedAssetFileDescriptor(uri, "*/*", bundle);
             } else {
@@ -122,7 +122,7 @@ public final class C0141g extends AbstractC0139f {
                         this.f515i = j2;
                     }
                     this.f516j = true;
-                    m42222v(oVar);
+                    m42225v(oVar);
                     long j4 = oVar.f560h;
                     return j4 != -1 ? j4 : this.f515i;
                 }
@@ -163,7 +163,7 @@ public final class C0141g extends AbstractC0139f {
                         this.f513g = null;
                         if (this.f516j) {
                             this.f516j = false;
-                            m42224t();
+                            m42227t();
                         }
                     }
                 } catch (IOException e) {
@@ -183,7 +183,7 @@ public final class C0141g extends AbstractC0139f {
                     this.f513g = null;
                     if (this.f516j) {
                         this.f516j = false;
-                        m42224t();
+                        m42227t();
                     }
                     throw th;
                 } catch (IOException e3) {
@@ -193,7 +193,7 @@ public final class C0141g extends AbstractC0139f {
                 this.f513g = null;
                 if (this.f516j) {
                     this.f516j = false;
-                    m42224t();
+                    m42227t();
                 }
             }
         }

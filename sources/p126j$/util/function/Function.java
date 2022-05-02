@@ -17,10 +17,10 @@ public interface Function<T, R> {
         }
 
         @Override
-        public Object mo22502a(Object obj) {
+        public Object mo22503a(Object obj) {
             return this.f18064a.apply(obj);
         }
     }
 
-    Object mo22502a(Object obj);
+    Object mo22503a(Object obj);
 }

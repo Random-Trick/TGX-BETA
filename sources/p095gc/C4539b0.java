@@ -14,17 +14,17 @@ public class C4539b0 {
 
     public static final class C4540a extends C4539b0 {
         @Override
-        public C4539b0 mo27392d(long j) {
+        public C4539b0 mo27394d(long j) {
             return this;
         }
 
         @Override
-        public void mo27390f() {
+        public void mo27392f() {
         }
 
         @Override
-        public C4539b0 mo27389g(long j, TimeUnit timeUnit) {
-            C8298k.m12934e(timeUnit, "unit");
+        public C4539b0 mo27391g(long j, TimeUnit timeUnit) {
+            C8298k.m12933e(timeUnit, "unit");
             return this;
         }
     }
@@ -38,34 +38,34 @@ public class C4539b0 {
         }
     }
 
-    public C4539b0 mo27395a() {
+    public C4539b0 mo27397a() {
         this.f14956a = false;
         return this;
     }
 
-    public C4539b0 mo27394b() {
+    public C4539b0 mo27396b() {
         this.f14958c = 0L;
         return this;
     }
 
-    public long mo27393c() {
+    public long mo27395c() {
         if (this.f14956a) {
             return this.f14957b;
         }
         throw new IllegalStateException("No deadline".toString());
     }
 
-    public C4539b0 mo27392d(long j) {
+    public C4539b0 mo27394d(long j) {
         this.f14956a = true;
         this.f14957b = j;
         return this;
     }
 
-    public boolean mo27391e() {
+    public boolean mo27393e() {
         return this.f14956a;
     }
 
-    public void mo27390f() {
+    public void mo27392f() {
         if (Thread.interrupted()) {
             Thread.currentThread().interrupt();
             throw new InterruptedIOException("interrupted");
@@ -74,8 +74,8 @@ public class C4539b0 {
         }
     }
 
-    public C4539b0 mo27389g(long j, TimeUnit timeUnit) {
-        C8298k.m12934e(timeUnit, "unit");
+    public C4539b0 mo27391g(long j, TimeUnit timeUnit) {
+        C8298k.m12933e(timeUnit, "unit");
         if (j >= 0) {
             this.f14958c = timeUnit.toNanos(j);
             return this;
@@ -83,7 +83,7 @@ public class C4539b0 {
         throw new IllegalArgumentException(("timeout < 0: " + j).toString());
     }
 
-    public long m27477h() {
+    public long m27479h() {
         return this.f14958c;
     }
 }

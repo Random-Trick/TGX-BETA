@@ -14,13 +14,13 @@ public final class C3654e implements AbstractC4517h {
         this.f12415d = k8Var;
     }
 
-    public final void m29844a(C4511d dVar, boolean z) {
+    public final void m29846a(C4511d dVar, boolean z) {
         this.f12412a = false;
         this.f12414c = dVar;
         this.f12413b = z;
     }
 
-    public final void m29843b() {
+    public final void m29845b() {
         if (!this.f12412a) {
             this.f12412a = true;
             return;
@@ -30,15 +30,15 @@ public final class C3654e implements AbstractC4517h {
 
     @Override
     public final AbstractC4517h mo5167d(String str) {
-        m29843b();
-        this.f12415d.m29820f(this.f12414c, str, this.f12413b);
+        m29845b();
+        this.f12415d.m29822f(this.f12414c, str, this.f12413b);
         return this;
     }
 
     @Override
     public final AbstractC4517h mo5166e(boolean z) {
-        m29843b();
-        this.f12415d.m29819g(this.f12414c, z ? 1 : 0, this.f12413b);
+        m29845b();
+        this.f12415d.m29821g(this.f12414c, z ? 1 : 0, this.f12413b);
         return this;
     }
 }

@@ -8,9 +8,9 @@ import p174m3.C6600g1;
 import p230q3.C8201m;
 
 public final class C7601d0 {
-    public static final int[] f24323a = {1, 2, 2, 2, 2, 3, 3, 4, 4, 5, 6, 6, 6, 7, 8, 8};
-    public static final int[] f24324b = {-1, 8000, 16000, 32000, -1, -1, 11025, 22050, 44100, -1, -1, 12000, 24000, 48000, -1, -1};
-    public static final int[] f24325c = {64, 112, Log.TAG_YOUTUBE, 192, 224, Log.TAG_CRASH, 384, 448, Log.TAG_GIF_LOADER, 640, 768, 896, Log.TAG_CAMERA, 1152, 1280, 1536, 1920, Log.TAG_VOICE, 2304, 2560, 2688, 2816, 2823, 2944, 3072, 3840, Log.TAG_EMOJI, 6144, 7680};
+    public static final int[] f24326a = {1, 2, 2, 2, 2, 3, 3, 4, 4, 5, 6, 6, 6, 7, 8, 8};
+    public static final int[] f24327b = {-1, 8000, 16000, 32000, -1, -1, 11025, 22050, 44100, -1, -1, 12000, 24000, 48000, -1, -1};
+    public static final int[] f24328c = {64, 112, Log.TAG_YOUTUBE, 192, 224, Log.TAG_CRASH, 384, 448, Log.TAG_GIF_LOADER, 640, 768, 896, Log.TAG_CAMERA, 1152, 1280, 1536, 1920, Log.TAG_VOICE, 2304, 2560, 2688, 2816, 2823, 2944, 3072, 3840, Log.TAG_EMOJI, 6144, 7680};
 
     public static int m15543a(byte[] r7) {
         throw new UnsupportedOperationException("Method not decompiled: p199o3.C7601d0.m15543a(byte[]):int");
@@ -32,12 +32,12 @@ public final class C7601d0 {
         C1187a0 a0Var = new C1187a0(copyOf);
         if (copyOf[0] == 31) {
             C1187a0 a0Var2 = new C1187a0(copyOf);
-            while (a0Var2.m38179b() >= 16) {
-                a0Var2.m38163r(2);
-                a0Var.m38175f(a0Var2.m38173h(14), 14);
+            while (a0Var2.m38182b() >= 16) {
+                a0Var2.m38166r(2);
+                a0Var.m38178f(a0Var2.m38176h(14), 14);
             }
         }
-        a0Var.m38167n(copyOf);
+        a0Var.m38170n(copyOf);
         return a0Var;
     }
 
@@ -104,13 +104,13 @@ public final class C7601d0 {
 
     public static C6600g1 m15537g(byte[] bArr, String str, String str2, C8201m mVar) {
         C1187a0 b = m15542b(bArr);
-        b.m38163r(60);
-        int i = f24323a[b.m38173h(6)];
-        int i2 = f24324b[b.m38173h(4)];
-        int h = b.m38173h(5);
-        int[] iArr = f24325c;
+        b.m38166r(60);
+        int i = f24326a[b.m38176h(6)];
+        int i2 = f24327b[b.m38176h(4)];
+        int h = b.m38176h(5);
+        int[] iArr = f24328c;
         int i3 = h >= iArr.length ? -1 : (iArr[h] * 1000) / 2;
-        b.m38163r(10);
-        return new C6600g1.C6602b().m19875S(str).m19858e0("audio/vnd.dts").m19887G(i3).m19886H(i + (b.m38173h(2) > 0 ? 1 : 0)).m19856f0(i2).m19881M(mVar).m19872V(str2).m19889E();
+        b.m38166r(10);
+        return new C6600g1.C6602b().m19876S(str).m19859e0("audio/vnd.dts").m19888G(i3).m19887H(i + (b.m38176h(2) > 0 ? 1 : 0)).m19857f0(i2).m19882M(mVar).m19873V(str2).m19890E();
     }
 }

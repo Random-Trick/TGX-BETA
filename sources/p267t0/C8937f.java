@@ -17,10 +17,10 @@ import p256s0.C8606e;
 import p352z0.C11216f;
 
 public class C8937f extends C8941j {
-    public static final Class<?> f28804b;
-    public static final Constructor<?> f28805c;
-    public static final Method f28806d;
-    public static final Method f28807e;
+    public static final Class<?> f28807b;
+    public static final Constructor<?> f28808c;
+    public static final Method f28809d;
+    public static final Method f28810e;
 
     static {
         Method method;
@@ -40,65 +40,65 @@ public class C8937f extends C8941j {
             method2 = null;
             method = null;
         }
-        f28805c = constructor;
-        f28804b = cls;
-        f28806d = method;
-        f28807e = method2;
+        f28808c = constructor;
+        f28807b = cls;
+        f28809d = method;
+        f28810e = method2;
     }
 
-    public static boolean m10899k(Object obj, ByteBuffer byteBuffer, int i, int i2, boolean z) {
+    public static boolean m10898k(Object obj, ByteBuffer byteBuffer, int i, int i2, boolean z) {
         try {
-            return ((Boolean) f28806d.invoke(obj, byteBuffer, Integer.valueOf(i), null, Integer.valueOf(i2), Boolean.valueOf(z))).booleanValue();
+            return ((Boolean) f28809d.invoke(obj, byteBuffer, Integer.valueOf(i), null, Integer.valueOf(i2), Boolean.valueOf(z))).booleanValue();
         } catch (IllegalAccessException | InvocationTargetException unused) {
             return false;
         }
     }
 
-    public static Typeface m10898l(Object obj) {
+    public static Typeface m10897l(Object obj) {
         try {
-            Object newInstance = Array.newInstance(f28804b, 1);
+            Object newInstance = Array.newInstance(f28807b, 1);
             Array.set(newInstance, 0, obj);
-            return (Typeface) f28807e.invoke(null, newInstance);
+            return (Typeface) f28810e.invoke(null, newInstance);
         } catch (IllegalAccessException | InvocationTargetException unused) {
             return null;
         }
     }
 
-    public static boolean m10897m() {
-        Method method = f28806d;
+    public static boolean m10896m() {
+        Method method = f28809d;
         if (method == null) {
             Log.w("TypefaceCompatApi24Impl", "Unable to collect necessary private methods.Fallback to legacy implementation.");
         }
         return method != null;
     }
 
-    public static Object m10896n() {
+    public static Object m10895n() {
         try {
-            return f28805c.newInstance(new Object[0]);
+            return f28808c.newInstance(new Object[0]);
         } catch (IllegalAccessException | InstantiationException | InvocationTargetException unused) {
             return null;
         }
     }
 
     @Override
-    public Typeface mo10880b(Context context, C8606e.C8608b bVar, Resources resources, int i) {
+    public Typeface mo10879b(Context context, C8606e.C8608b bVar, Resources resources, int i) {
         C8606e.C8609c[] a;
-        Object n = m10896n();
+        Object n = m10895n();
         if (n == null) {
             return null;
         }
-        for (C8606e.C8609c cVar : bVar.m11940a()) {
-            ByteBuffer b = C8945k.m10864b(context, resources, cVar.m11938b());
-            if (b == null || !m10899k(n, b, cVar.m11937c(), cVar.m11935e(), cVar.m11934f())) {
+        for (C8606e.C8609c cVar : bVar.m11939a()) {
+            ByteBuffer b = C8945k.m10863b(context, resources, cVar.m11937b());
+            if (b == null || !m10898k(n, b, cVar.m11936c(), cVar.m11934e(), cVar.m11933f())) {
                 return null;
             }
         }
-        return m10898l(n);
+        return m10897l(n);
     }
 
     @Override
-    public Typeface mo10879c(Context context, CancellationSignal cancellationSignal, C11216f.C11218b[] bVarArr, int i) {
-        Object n = m10896n();
+    public Typeface mo10878c(Context context, CancellationSignal cancellationSignal, C11216f.C11218b[] bVarArr, int i) {
+        Object n = m10895n();
         if (n == null) {
             return null;
         }
@@ -107,14 +107,14 @@ public class C8937f extends C8941j {
             Uri d = bVar.m1198d();
             ByteBuffer byteBuffer = (ByteBuffer) gVar.get(d);
             if (byteBuffer == null) {
-                byteBuffer = C8945k.m10860f(context, cancellationSignal, d);
+                byteBuffer = C8945k.m10859f(context, cancellationSignal, d);
                 gVar.put(d, byteBuffer);
             }
-            if (byteBuffer == null || !m10899k(n, byteBuffer, bVar.m1199c(), bVar.m1197e(), bVar.m1196f())) {
+            if (byteBuffer == null || !m10898k(n, byteBuffer, bVar.m1199c(), bVar.m1197e(), bVar.m1196f())) {
                 return null;
             }
         }
-        Typeface l = m10898l(n);
+        Typeface l = m10897l(n);
         if (l == null) {
             return null;
         }

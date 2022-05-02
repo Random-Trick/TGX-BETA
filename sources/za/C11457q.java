@@ -7,8 +7,8 @@ import ua.AbstractC9486c;
 
 public class C11457q extends C11456p {
     public static final char m566v0(CharSequence charSequence, AbstractC9486c cVar) {
-        C8298k.m12934e(charSequence, "<this>");
-        C8298k.m12934e(cVar, "random");
+        C8298k.m12933e(charSequence, "<this>");
+        C8298k.m12933e(cVar, "random");
         if (!(charSequence.length() == 0)) {
             return charSequence.charAt(cVar.mo8550d(charSequence.length()));
         }
@@ -16,10 +16,10 @@ public class C11457q extends C11456p {
     }
 
     public static final String m565w0(String str, int i) {
-        C8298k.m12934e(str, "<this>");
+        C8298k.m12933e(str, "<this>");
         if (i >= 0) {
             String substring = str.substring(0, C10030l.m6192e(i, str.length()));
-            C8298k.m12935d(substring, "this as java.lang.String…ing(startIndex, endIndex)");
+            C8298k.m12934d(substring, "this as java.lang.String…ing(startIndex, endIndex)");
             return substring;
         }
         throw new IllegalArgumentException(("Requested character count " + i + " is less than zero.").toString());

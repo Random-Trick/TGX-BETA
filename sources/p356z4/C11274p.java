@@ -5,7 +5,7 @@ import p174m3.AbstractC6609h;
 import p356z4.C11275q;
 
 public final class C11274p implements AbstractC6609h.AbstractC6610a {
-    public static final C11274p f36131a = new C11274p();
+    public static final C11274p f36134a = new C11274p();
 
     @Override
     public final AbstractC6609h mo998a(Bundle bundle) {

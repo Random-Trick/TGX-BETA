@@ -24,54 +24,54 @@ public abstract class AbstractC4253u {
         public AbstractC4254a(Class<? extends ListenableWorker> cls) {
             this.f14311e = cls;
             this.f14309c = new C7554p(this.f14308b.toString(), cls.getName());
-            m28341a(cls.getName());
+            m28343a(cls.getName());
         }
 
-        public final B m28341a(String str) {
+        public final B m28343a(String str) {
             this.f14310d.add(str);
-            return mo28338d();
+            return mo28340d();
         }
 
-        public final W m28340b() {
-            W c = mo28339c();
-            C4223b bVar = this.f14309c.f24149j;
+        public final W m28342b() {
+            W c = mo28341c();
+            C4223b bVar = this.f14309c.f24152j;
             int i = Build.VERSION.SDK_INT;
-            boolean z = (i >= 24 && bVar.m28391e()) || bVar.m28390f() || bVar.m28389g() || (i >= 23 && bVar.m28388h());
+            boolean z = (i >= 24 && bVar.m28393e()) || bVar.m28392f() || bVar.m28391g() || (i >= 23 && bVar.m28390h());
             C7554p pVar = this.f14309c;
-            if (pVar.f24156q) {
+            if (pVar.f24159q) {
                 if (z) {
                     throw new IllegalArgumentException("Expedited jobs only support network and storage constraints");
-                } else if (pVar.f24146g > 0) {
+                } else if (pVar.f24149g > 0) {
                     throw new IllegalArgumentException("Expedited jobs cannot be delayed");
                 }
             }
             this.f14308b = UUID.randomUUID();
             C7554p pVar2 = new C7554p(this.f14309c);
             this.f14309c = pVar2;
-            pVar2.f24140a = this.f14308b.toString();
+            pVar2.f24143a = this.f14308b.toString();
             return c;
         }
 
-        public abstract W mo28339c();
+        public abstract W mo28341c();
 
-        public abstract B mo28338d();
+        public abstract B mo28340d();
 
-        public final B m28337e(EnumC4222a aVar, long j, TimeUnit timeUnit) {
+        public final B m28339e(EnumC4222a aVar, long j, TimeUnit timeUnit) {
             this.f14307a = true;
             C7554p pVar = this.f14309c;
-            pVar.f24151l = aVar;
+            pVar.f24154l = aVar;
             pVar.m15698e(timeUnit.toMillis(j));
-            return mo28338d();
+            return mo28340d();
         }
 
-        public final B m28336f(C4223b bVar) {
-            this.f14309c.f24149j = bVar;
-            return mo28338d();
+        public final B m28338f(C4223b bVar) {
+            this.f14309c.f24152j = bVar;
+            return mo28340d();
         }
 
-        public final B m28335g(C1070b bVar) {
-            this.f14309c.f24144e = bVar;
-            return mo28338d();
+        public final B m28337g(C1070b bVar) {
+            this.f14309c.f24147e = bVar;
+            return mo28340d();
         }
     }
 
@@ -81,15 +81,15 @@ public abstract class AbstractC4253u {
         this.f14306c = set;
     }
 
-    public String m28344a() {
+    public String m28346a() {
         return this.f14304a.toString();
     }
 
-    public Set<String> m28343b() {
+    public Set<String> m28345b() {
         return this.f14306c;
     }
 
-    public C7554p m28342c() {
+    public C7554p m28344c() {
         return this.f14305b;
     }
 }

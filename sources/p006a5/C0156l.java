@@ -9,8 +9,8 @@ public class C0156l extends IOException {
         this.f546a = i;
     }
 
-    public static boolean m42207a(java.io.IOException r2) {
-        throw new UnsupportedOperationException("Method not decompiled: p006a5.C0156l.m42207a(java.io.IOException):boolean");
+    public static boolean m42210a(java.io.IOException r2) {
+        throw new UnsupportedOperationException("Method not decompiled: p006a5.C0156l.m42210a(java.io.IOException):boolean");
     }
 
     public C0156l(Throwable th, int i) {

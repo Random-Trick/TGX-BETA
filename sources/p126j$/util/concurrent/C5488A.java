@@ -21,8 +21,8 @@ final class C5488A implements AbstractC5462A {
     }
 
     @Override
-    public boolean mo22124a(Consumer consumer) {
-        return AbstractC5485a.m22563r(this, consumer);
+    public boolean mo22125a(Consumer consumer) {
+        return AbstractC5485a.m22564r(this, consumer);
     }
 
     public C5488A trySplit() {
@@ -47,7 +47,7 @@ final class C5488A implements AbstractC5462A {
 
     @Override
     public void forEachRemaining(Consumer consumer) {
-        AbstractC5485a.m22571d(this, consumer);
+        AbstractC5485a.m22572d(this, consumer);
     }
 
     @Override
@@ -57,12 +57,12 @@ final class C5488A implements AbstractC5462A {
 
     @Override
     public long getExactSizeIfKnown() {
-        return AbstractC5485a.m22569h(this);
+        return AbstractC5485a.m22570h(this);
     }
 
     @Override
     public boolean hasCharacteristics(int i) {
-        return AbstractC5485a.m22568j(this, i);
+        return AbstractC5485a.m22569j(this, i);
     }
 
     @Override
@@ -72,7 +72,7 @@ final class C5488A implements AbstractC5462A {
         if (j >= this.f17977b) {
             return false;
         }
-        lVar.mo22144d(ThreadLocalRandom.current().m22530d(this.f17978c, this.f17979d));
+        lVar.mo22145d(ThreadLocalRandom.current().m22531d(this.f17978c, this.f17979d));
         this.f17976a = j + 1;
         return true;
     }
@@ -88,7 +88,7 @@ final class C5488A implements AbstractC5462A {
             int i2 = this.f17979d;
             ThreadLocalRandom current = ThreadLocalRandom.current();
             do {
-                lVar.mo22144d(current.m22530d(i, i2));
+                lVar.mo22145d(current.m22531d(i, i2));
                 j++;
             } while (j < j2);
         }

@@ -13,26 +13,26 @@ public final class C1984x6 implements AbstractC4514e<C1745ga> {
     public static final C4511d f7081f;
 
     static {
-        C4511d.C4513b a = C4511d.m27508a("durationMs");
+        C4511d.C4513b a = C4511d.m27510a("durationMs");
         C2007z1 z1Var = new C2007z1();
-        z1Var.m35824a(1);
-        f7077b = a.m27503b(z1Var.m35823b()).m27504a();
-        C4511d.C4513b a2 = C4511d.m27508a("handledErrors");
+        z1Var.m35827a(1);
+        f7077b = a.m27505b(z1Var.m35826b()).m27506a();
+        C4511d.C4513b a2 = C4511d.m27510a("handledErrors");
         C2007z1 z1Var2 = new C2007z1();
-        z1Var2.m35824a(2);
-        f7078c = a2.m27503b(z1Var2.m35823b()).m27504a();
-        C4511d.C4513b a3 = C4511d.m27508a("partiallyHandledErrors");
+        z1Var2.m35827a(2);
+        f7078c = a2.m27505b(z1Var2.m35826b()).m27506a();
+        C4511d.C4513b a3 = C4511d.m27510a("partiallyHandledErrors");
         C2007z1 z1Var3 = new C2007z1();
-        z1Var3.m35824a(3);
-        f7079d = a3.m27503b(z1Var3.m35823b()).m27504a();
-        C4511d.C4513b a4 = C4511d.m27508a("unhandledErrors");
+        z1Var3.m35827a(3);
+        f7079d = a3.m27505b(z1Var3.m35826b()).m27506a();
+        C4511d.C4513b a4 = C4511d.m27510a("unhandledErrors");
         C2007z1 z1Var4 = new C2007z1();
-        z1Var4.m35824a(4);
-        f7080e = a4.m27503b(z1Var4.m35823b()).m27504a();
-        C4511d.C4513b a5 = C4511d.m27508a("httpResponseCode");
+        z1Var4.m35827a(4);
+        f7080e = a4.m27505b(z1Var4.m35826b()).m27506a();
+        C4511d.C4513b a5 = C4511d.m27510a("httpResponseCode");
         C2007z1 z1Var5 = new C2007z1();
-        z1Var5.m35824a(5);
-        f7081f = a5.m27503b(z1Var5.m35823b()).m27504a();
+        z1Var5.m35827a(5);
+        f7081f = a5.m27505b(z1Var5.m35826b()).m27506a();
     }
 
     @Override

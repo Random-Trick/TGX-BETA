@@ -10,25 +10,25 @@ import p111he.C5141s;
 import p143k0.C6038h;
 
 public class SparseDrawableView extends View implements AbstractC5143t {
-    public C6038h<Drawable> f25810a;
+    public C6038h<Drawable> f25813a;
 
     public SparseDrawableView(Context context) {
         super(context);
     }
 
     @Override
-    public Drawable mo14042X(int i, int i2) {
-        return C5141s.m23833a(this, i, i2);
+    public Drawable mo14041X(int i, int i2) {
+        return C5141s.m23834a(this, i, i2);
     }
 
     @Override
     public final C6038h<Drawable> getSparseDrawableHolder() {
-        C6038h<Drawable> hVar = this.f25810a;
+        C6038h<Drawable> hVar = this.f25813a;
         if (hVar != null) {
             return hVar;
         }
         C6038h<Drawable> hVar2 = new C6038h<>();
-        this.f25810a = hVar2;
+        this.f25813a = hVar2;
         return hVar2;
     }
 

@@ -39,11 +39,11 @@ public class C6246h {
     public int f19706c;
 
     public interface AbstractC6247a {
-        void mo11483a(C6246h hVar);
+        void mo11482a(C6246h hVar);
     }
 
     public interface AbstractC6248b {
-        void mo20812a(C6246h hVar, C7856c cVar);
+        void mo20813a(C6246h hVar, C7856c cVar);
     }
 
     public interface AbstractC6249c {
@@ -56,37 +56,37 @@ public class C6246h {
         this.f19693P = (bArr == null || bArr.length <= 0) ? null : bArr;
     }
 
-    public static C6246h m20920f(C6246h hVar) {
+    public static C6246h m20921f(C6246h hVar) {
         if (hVar instanceof C6250i) {
             return new C6250i((C6250i) hVar);
         }
         if (hVar instanceof C6251j) {
-            return new C6251j(hVar.f19695R, hVar.m20891w(), ((C6251j) hVar).m20882E0());
+            return new C6251j(hVar.f19695R, hVar.m20892w(), ((C6251j) hVar).m20883E0());
         }
-        return new C6246h(hVar.f19695R, hVar.m20910k());
+        return new C6246h(hVar.f19695R, hVar.m20911k());
     }
 
-    public static String m20907m(int i, int i2) {
+    public static String m20908m(int i, int i2) {
         return i + "_" + i2;
     }
 
-    public static String m20905n(int i, String str) {
+    public static String m20906n(int i, String str) {
         return i + "_" + str;
     }
 
-    public static String m20903o(C10930q6 q6Var, int i) {
-        return m20907m(q6Var != null ? q6Var.m2188w6() : -1, i);
+    public static String m20904o(C10930q6 q6Var, int i) {
+        return m20908m(q6Var != null ? q6Var.m2188w6() : -1, i);
     }
 
-    public static String m20901p(C10930q6 q6Var, String str) {
-        return m20905n(q6Var != null ? q6Var.m2188w6() : -1, str);
+    public static String m20902p(C10930q6 q6Var, String str) {
+        return m20906n(q6Var != null ? q6Var.m2188w6() : -1, str);
     }
 
-    public int m20955A() {
+    public int m20956A() {
         return this.f19703Z;
     }
 
-    public boolean m20954A0() {
+    public boolean m20955A0() {
         int i = this.f19691N;
         boolean z = (i & Log.TAG_VIDEO) != 0;
         if (z) {
@@ -95,12 +95,12 @@ public class C6246h {
         return z;
     }
 
-    public String m20953B() {
+    public String m20954B() {
         C8111a aVar = this.f19698U;
-        return (aVar == null || aVar.m13575k()) ? this.f19704a.local.path : C6252k.m20878D0(this.f19698U);
+        return (aVar == null || aVar.m13574k()) ? this.f19704a.local.path : C6252k.m20879D0(this.f19698U);
     }
 
-    public C10930q6 m20952B0() {
+    public C10930q6 m20953B0() {
         AbstractC11073vb vbVar = this.f19695R;
         if (vbVar != null) {
             return vbVar.mo1480c();
@@ -108,114 +108,114 @@ public class C6246h {
         return null;
     }
 
-    public byte mo20777C() {
+    public byte mo20778C() {
         return (byte) 1;
     }
 
-    public void m20951C0(TdApi.File file) {
+    public void m20952C0(TdApi.File file) {
         C7321e.m16907u(file, this.f19704a);
         this.f19704a = file;
     }
 
-    public int mo20872D() {
+    public int mo20873D() {
         return this.f19694Q;
     }
 
-    public boolean m20950E() {
+    public boolean m20951E() {
         C8111a aVar = this.f19698U;
-        return (aVar != null && !aVar.m13575k()) || m20896t() != null;
+        return (aVar != null && !aVar.m13574k()) || m20897t() != null;
     }
 
-    public boolean m20949F() {
+    public boolean m20950F() {
         return (this.f19691N & Log.TAG_VOICE) != 0;
     }
 
-    public boolean m20948G() {
+    public boolean m20949G() {
         return (this.f19691N & Log.TAG_LUX) != 0;
     }
 
-    public boolean m20947H() {
+    public boolean m20948H() {
         return (this.f19691N & Log.TAG_PLAYER) != 0;
     }
 
-    public boolean m20946I() {
+    public boolean m20947I() {
         return (this.f19691N & 64) != 0;
     }
 
-    public boolean mo20865J() {
+    public boolean mo20866J() {
         return (this.f19691N & 32) != 0;
     }
 
-    public boolean m20945K() {
+    public boolean m20946K() {
         return (this.f19691N & Log.TAG_COMPRESS) != 0;
     }
 
-    public boolean m20944L() {
+    public boolean m20945L() {
         return (this.f19691N & Log.TAG_PAINT) != 0;
     }
 
-    public boolean m20943M() {
+    public boolean m20944M() {
         return (this.f19691N & 1) != 0;
     }
 
-    public boolean m20942N() {
+    public boolean m20943N() {
         return this.f19706c != 0;
     }
 
-    public boolean m20941O() {
+    public boolean m20942O() {
         return (this.f19691N & Log.TAG_EMOJI) != 0;
     }
 
-    public boolean m20940P() {
+    public boolean m20941P() {
         return (this.f19691N & Log.TAG_CAMERA) != 0;
     }
 
-    public boolean m20939Q() {
+    public boolean m20940Q() {
         return (this.f19691N & Log.TAG_CRASH) != 0;
     }
 
-    public boolean m20938R() {
+    public boolean m20939R() {
         return (this.f19691N & Log.TAG_YOUTUBE) != 0;
     }
 
-    public boolean m20937S() {
-        return C5063c.m24144b(this.f19691N, Log.TAG_CONTACT);
+    public boolean m20938S() {
+        return C5063c.m24145b(this.f19691N, Log.TAG_CONTACT);
     }
 
-    public boolean m20936T() {
+    public boolean m20937T() {
         return (this.f19691N & Log.TAG_GIF_LOADER) == 0;
     }
 
-    public void m20935U() {
+    public void m20936U() {
         this.f19692O = null;
         C6227d<AbstractC6247a> dVar = this.f19701X;
         if (dVar != null) {
             Iterator<AbstractC6247a> it = dVar.iterator();
             while (it.hasNext()) {
-                it.next().mo11483a(this);
+                it.next().mo11482a(this);
             }
         }
     }
 
-    public void m20934V(AbstractC6247a aVar) {
+    public void m20935V(AbstractC6247a aVar) {
         C6227d<AbstractC6247a> dVar = this.f19701X;
         if (dVar != null) {
             dVar.remove(aVar);
         }
     }
 
-    public void m20933W(AbstractC6248b bVar) {
+    public void m20934W(AbstractC6248b bVar) {
         List<Reference<AbstractC6248b>> list = this.f19700W;
         if (list != null) {
-            C6235i.m21011e(list, bVar);
+            C6235i.m21012e(list, bVar);
         }
     }
 
-    public void m20932X(int i) {
+    public void m20933X(int i) {
         this.f19706c = i;
     }
 
-    public void m20931Y(C7856c cVar) {
+    public void m20932Y(C7856c cVar) {
         if (cVar == null || cVar.m14818l()) {
             this.f19699V = null;
         } else {
@@ -226,7 +226,7 @@ public class C6246h {
             for (int size = list.size() - 1; size >= 0; size--) {
                 AbstractC6248b bVar = this.f19700W.get(size).get();
                 if (bVar != null) {
-                    bVar.mo20812a(this, cVar);
+                    bVar.mo20813a(this, cVar);
                 } else {
                     this.f19700W.remove(size);
                 }
@@ -234,11 +234,11 @@ public class C6246h {
         }
     }
 
-    public void m20930Z(boolean z) {
-        this.f19691N = C5063c.m24138h(this.f19691N, Log.TAG_CAMERA, z);
+    public void m20931Z(boolean z) {
+        this.f19691N = C5063c.m24139h(this.f19691N, Log.TAG_CAMERA, z);
     }
 
-    public final int m20929a() {
+    public final int m20930a() {
         AbstractC11073vb vbVar = this.f19695R;
         if (vbVar != null) {
             return vbVar.mo1484a();
@@ -246,47 +246,47 @@ public class C6246h {
         return -1;
     }
 
-    public void m20928a0(C8111a aVar) {
-        if (aVar == null || aVar.m13575k()) {
+    public void m20929a0(C8111a aVar) {
+        if (aVar == null || aVar.m13574k()) {
             this.f19698U = null;
         } else {
             this.f19698U = aVar;
         }
     }
 
-    public void m20927b(AbstractC6247a aVar) {
+    public void m20928b(AbstractC6247a aVar) {
         if (this.f19701X == null) {
             this.f19701X = new C6227d<>();
         }
         this.f19701X.add(aVar);
     }
 
-    public void m20926b0() {
+    public void m20927b0() {
         this.f19691N |= 16;
     }
 
-    public void m20925c(AbstractC6248b bVar) {
+    public void m20926c(AbstractC6248b bVar) {
         if (this.f19700W == null) {
             this.f19700W = new ArrayList();
         }
-        C6235i.m21015a(this.f19700W, bVar);
+        C6235i.m21016a(this.f19700W, bVar);
     }
 
-    public void m20924c0() {
+    public void m20925c0() {
         this.f19691N |= Log.TAG_PLAYER;
     }
 
-    public String mo20768d() {
-        return m20922e(new StringBuilder()).toString();
+    public String mo20769d() {
+        return m20923e(new StringBuilder()).toString();
     }
 
-    public void m20923d0() {
+    public void m20924d0() {
         this.f19691N |= 64;
     }
 
-    public final StringBuilder m20922e(StringBuilder sb2) {
+    public final StringBuilder m20923e(StringBuilder sb2) {
         sb2.append("account");
-        sb2.append(m20929a());
+        sb2.append(m20930a());
         sb2.append('_');
         sb2.append(C7321e.m16996L0(this.f19704a));
         sb2.append('_');
@@ -300,7 +300,7 @@ public class C6246h {
         return sb2;
     }
 
-    public void m20921e0() {
+    public void m20922e0() {
         this.f19691N |= Log.TAG_PAINT;
     }
 
@@ -308,15 +308,15 @@ public class C6246h {
         return (obj instanceof C6246h) && toString().equals(obj.toString());
     }
 
-    public void m20919f0() {
+    public void m20920f0() {
         this.f19706c = 3;
     }
 
-    public boolean m20918g() {
+    public boolean m20919g() {
         return (this.f19691N & 16) != 0;
     }
 
-    public void m20917g0(boolean z) {
+    public void m20918g0(boolean z) {
         int i = this.f19691N | Log.TAG_EMOJI;
         this.f19691N = i;
         if (z) {
@@ -324,7 +324,7 @@ public class C6246h {
         }
     }
 
-    public int m20916h() {
+    public int m20917h() {
         int i = this.f19706c;
         if (i == 0) {
             return 3;
@@ -332,7 +332,7 @@ public class C6246h {
         return i;
     }
 
-    public void m20915h0() {
+    public void m20916h0() {
         this.f19691N |= Log.TAG_CRASH;
     }
 
@@ -340,15 +340,15 @@ public class C6246h {
         return toString().hashCode();
     }
 
-    public byte[] m20914i() {
+    public byte[] m20915i() {
         return this.f19693P;
     }
 
-    public void m20913i0() {
+    public void m20914i0() {
         this.f19691N |= Log.TAG_YOUTUBE;
     }
 
-    public C7856c m20912j() {
+    public C7856c m20913j() {
         C7856c cVar = this.f19699V;
         if (cVar == null || cVar.m14818l()) {
             return null;
@@ -356,37 +356,37 @@ public class C6246h {
         return this.f19699V;
     }
 
-    public void m20911j0(boolean z) {
-        this.f19691N = C5063c.m24138h(this.f19691N, Log.TAG_CONTACT, z);
+    public void m20912j0(boolean z) {
+        this.f19691N = C5063c.m24139h(this.f19691N, Log.TAG_CONTACT, z);
         if (z) {
-            m20892v0(true);
+            m20893v0(true);
         }
     }
 
-    public TdApi.File m20910k() {
+    public TdApi.File m20911k() {
         return this.f19704a;
     }
 
-    public void m20909k0() {
+    public void m20910k0() {
         this.f19691N |= 8;
     }
 
-    public String mo20879l() {
-        return m20907m(m20929a(), this.f19704a.f25373id);
+    public String mo20880l() {
+        return m20908m(m20930a(), this.f19704a.f25376id);
     }
 
-    public void m20908l0() {
+    public void m20909l0() {
         this.f19691N |= 2;
     }
 
-    public void m20906m0() {
+    public void m20907m0() {
         this.f19691N |= Log.TAG_GIF_LOADER;
     }
 
-    public boolean m20904n0(C8431f fVar) {
-        if (fVar != null && !fVar.m12494i()) {
+    public boolean m20905n0(C8431f fVar) {
+        if (fVar != null && !fVar.m12493i()) {
             C8431f fVar2 = this.f19702Y;
-            if (fVar2 == null || !fVar2.m12498e(fVar)) {
+            if (fVar2 == null || !fVar2.m12497e(fVar)) {
                 this.f19702Y = fVar;
                 return true;
             }
@@ -400,15 +400,15 @@ public class C6246h {
         }
     }
 
-    public void m20902o0(C8348b.C8352d dVar) {
+    public void m20903o0(C8348b.C8352d dVar) {
         this.f19696S = dVar;
     }
 
-    public void m20900p0() {
+    public void m20901p0() {
         this.f19691N |= 32;
     }
 
-    public String mo20875q() {
+    public String mo20876q() {
         TdApi.LocalFile localFile = this.f19704a.local;
         if (localFile != null) {
             return localFile.path;
@@ -416,7 +416,7 @@ public class C6246h {
         return null;
     }
 
-    public void mo20874q0(int i) {
+    public void mo20875q0(int i) {
         AbstractC6249c cVar;
         if (this.f19694Q == i || (cVar = this.f19697T) == null) {
             this.f19694Q = i;
@@ -426,31 +426,31 @@ public class C6246h {
         cVar.mo15931a(this, i, false);
     }
 
-    public C8111a m20899r() {
+    public C8111a m20900r() {
         return this.f19698U;
     }
 
-    public void m20898r0(AbstractC6249c cVar) {
+    public void m20899r0(AbstractC6249c cVar) {
         this.f19697T = cVar;
     }
 
-    public int mo20825s() {
-        return this.f19704a.f25373id;
+    public int mo20826s() {
+        return this.f19704a.f25376id;
     }
 
-    public void m20897s0(int i) {
+    public void m20898s0(int i) {
         this.f19690M = i;
     }
 
-    public C8431f m20896t() {
+    public C8431f m20897t() {
         C8431f fVar = this.f19702Y;
-        if (fVar == null || fVar.m12494i()) {
+        if (fVar == null || fVar.m12493i()) {
             return null;
         }
         return this.f19702Y;
     }
 
-    public void mo20767t0(int i) {
+    public void mo20768t0(int i) {
         this.f19705b = i;
     }
 
@@ -459,56 +459,56 @@ public class C6246h {
         if (str != null) {
             return str;
         }
-        String d = mo20768d();
+        String d = mo20769d();
         this.f19692O = d;
         return d;
     }
 
-    public C8348b.C8352d m20895u() {
+    public C8348b.C8352d m20896u() {
         return this.f19696S;
     }
 
-    public void m20894u0(boolean z) {
-        this.f19691N = C5063c.m24138h(this.f19691N, Log.TAG_VIDEO, z);
+    public void m20895u0(boolean z) {
+        this.f19691N = C5063c.m24139h(this.f19691N, Log.TAG_VIDEO, z);
     }
 
-    public float m20893v() {
-        return C4779t2.m25431s1(this.f19704a);
+    public float m20894v() {
+        return C4779t2.m25432s1(this.f19704a);
     }
 
-    public void m20892v0(boolean z) {
-        this.f19691N = C5063c.m24138h(this.f19691N, Log.TAG_COMPRESS, z);
+    public void m20893v0(boolean z) {
+        this.f19691N = C5063c.m24139h(this.f19691N, Log.TAG_COMPRESS, z);
     }
 
-    public String m20891w() {
-        return this.f19704a.remote.f25417id;
+    public String m20892w() {
+        return this.f19704a.remote.f25420id;
     }
 
-    public void m20890w0(int i) {
+    public void m20891w0(int i) {
         this.f19703Z = i;
     }
 
-    public int mo20873x() {
+    public int mo20874x() {
         return this.f19694Q;
     }
 
-    public void m20889x0() {
+    public void m20890x0() {
         this.f19691N |= 1;
     }
 
-    public int m20888y() {
+    public int m20889y() {
         return this.f19690M;
     }
 
-    public boolean m20887y0() {
+    public boolean m20888y0() {
         return (this.f19691N & 2) == 0;
     }
 
-    public int m20886z() {
+    public int m20887z() {
         return this.f19705b;
     }
 
-    public boolean m20885z0() {
+    public boolean m20886z0() {
         return (this.f19691N & 8) == 0;
     }
 

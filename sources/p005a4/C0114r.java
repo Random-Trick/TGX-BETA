@@ -16,9 +16,9 @@ public final class C0114r {
 
     public C0114r(C0111o oVar, long[] jArr, int[] iArr, int i, long[] jArr2, int[] iArr2, long j) {
         boolean z = false;
-        C1186a.m38189a(iArr.length == jArr2.length);
-        C1186a.m38189a(jArr.length == jArr2.length);
-        C1186a.m38189a(iArr2.length == jArr2.length ? true : z);
+        C1186a.m38192a(iArr.length == jArr2.length);
+        C1186a.m38192a(jArr.length == jArr2.length);
+        C1186a.m38192a(iArr2.length == jArr2.length ? true : z);
         this.f451a = oVar;
         this.f453c = jArr;
         this.f454d = iArr;
@@ -33,8 +33,8 @@ public final class C0114r {
         }
     }
 
-    public int m42258a(long j) {
-        for (int i = C1216l0.m37970i(this.f456f, j, true, false); i >= 0; i--) {
+    public int m42261a(long j) {
+        for (int i = C1216l0.m37973i(this.f456f, j, true, false); i >= 0; i--) {
             if ((this.f457g[i] & 1) != 0) {
                 return i;
             }
@@ -42,8 +42,8 @@ public final class C0114r {
         return -1;
     }
 
-    public int m42257b(long j) {
-        for (int e = C1216l0.m37978e(this.f456f, j, true, false); e < this.f456f.length; e++) {
+    public int m42260b(long j) {
+        for (int e = C1216l0.m37981e(this.f456f, j, true, false); e < this.f456f.length; e++) {
             if ((this.f457g[e] & 1) != 0) {
                 return e;
             }

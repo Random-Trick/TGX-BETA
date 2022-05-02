@@ -17,10 +17,10 @@ public interface BiFunction<T, U, R> {
         }
 
         @Override
-        public Object mo22172u(Object obj, Object obj2) {
+        public Object mo22173u(Object obj, Object obj2) {
             return this.f18062a.apply(obj, obj2);
         }
     }
 
-    Object mo22172u(Object obj, Object obj2);
+    Object mo22173u(Object obj, Object obj2);
 }

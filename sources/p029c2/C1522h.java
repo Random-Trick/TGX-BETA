@@ -52,28 +52,28 @@ public class C1522h extends AbstractC1521g {
         }
 
         @Override
-        public boolean mo36530c() {
+        public boolean mo36533c() {
             return true;
         }
 
-        public void m36541e(Resources resources, AttributeSet attributeSet, Resources.Theme theme, XmlPullParser xmlPullParser) {
-            if (C8621i.m11897j(xmlPullParser, "pathData")) {
-                TypedArray k = C8621i.m11896k(resources, theme, attributeSet, C1511a.f5385d);
-                m36540f(k, xmlPullParser);
+        public void m36544e(Resources resources, AttributeSet attributeSet, Resources.Theme theme, XmlPullParser xmlPullParser) {
+            if (C8621i.m11896j(xmlPullParser, "pathData")) {
+                TypedArray k = C8621i.m11895k(resources, theme, attributeSet, C1511a.f5385d);
+                m36543f(k, xmlPullParser);
                 k.recycle();
             }
         }
 
-        public final void m36540f(TypedArray typedArray, XmlPullParser xmlPullParser) {
+        public final void m36543f(TypedArray typedArray, XmlPullParser xmlPullParser) {
             String string = typedArray.getString(0);
             if (string != null) {
                 this.f5448b = string;
             }
             String string2 = typedArray.getString(1);
             if (string2 != null) {
-                this.f5447a = C8931c.m10924d(string2);
+                this.f5447a = C8931c.m10923d(string2);
             }
-            this.f5449c = C8621i.m11900g(typedArray, xmlPullParser, "fillType", 2, 0);
+            this.f5449c = C8621i.m11899g(typedArray, xmlPullParser, "fillType", 2, 0);
         }
 
         public C1524b(C1524b bVar) {
@@ -85,11 +85,11 @@ public class C1522h extends AbstractC1521g {
         public AbstractC1527e() {
         }
 
-        public boolean mo36532a() {
+        public boolean mo36535a() {
             return false;
         }
 
-        public boolean mo36531b(int[] iArr) {
+        public boolean mo36534b(int[] iArr) {
             return false;
         }
     }
@@ -127,27 +127,27 @@ public class C1522h extends AbstractC1521g {
             }
         }
 
-        public boolean m36521a(int i, int i2) {
+        public boolean m36524a(int i, int i2) {
             return i == this.f5473f.getWidth() && i2 == this.f5473f.getHeight();
         }
 
-        public boolean m36520b() {
+        public boolean m36523b() {
             return !this.f5478k && this.f5474g == this.f5470c && this.f5475h == this.f5471d && this.f5477j == this.f5472e && this.f5476i == this.f5469b.getRootAlpha();
         }
 
-        public void m36519c(int i, int i2) {
-            if (this.f5473f == null || !m36521a(i, i2)) {
+        public void m36522c(int i, int i2) {
+            if (this.f5473f == null || !m36524a(i, i2)) {
                 this.f5473f = Bitmap.createBitmap(i, i2, Bitmap.Config.ARGB_8888);
                 this.f5478k = true;
             }
         }
 
-        public void m36518d(Canvas canvas, ColorFilter colorFilter, Rect rect) {
-            canvas.drawBitmap(this.f5473f, (Rect) null, rect, m36517e(colorFilter));
+        public void m36521d(Canvas canvas, ColorFilter colorFilter, Rect rect) {
+            canvas.drawBitmap(this.f5473f, (Rect) null, rect, m36520e(colorFilter));
         }
 
-        public Paint m36517e(ColorFilter colorFilter) {
-            if (!m36516f() && colorFilter == null) {
+        public Paint m36520e(ColorFilter colorFilter) {
+            if (!m36519f() && colorFilter == null) {
                 return null;
             }
             if (this.f5479l == null) {
@@ -160,12 +160,12 @@ public class C1522h extends AbstractC1521g {
             return this.f5479l;
         }
 
-        public boolean m36516f() {
+        public boolean m36519f() {
             return this.f5469b.getRootAlpha() < 255;
         }
 
-        public boolean m36515g() {
-            return this.f5469b.m36523f();
+        public boolean m36518g() {
+            return this.f5469b.m36526f();
         }
 
         @Override
@@ -173,13 +173,13 @@ public class C1522h extends AbstractC1521g {
             return this.f5468a;
         }
 
-        public boolean m36514h(int[] iArr) {
-            boolean g = this.f5469b.m36522g(iArr);
+        public boolean m36517h(int[] iArr) {
+            boolean g = this.f5469b.m36525g(iArr);
             this.f5478k |= g;
             return g;
         }
 
-        public void m36513i() {
+        public void m36516i() {
             this.f5474g = this.f5470c;
             this.f5475h = this.f5471d;
             this.f5476i = this.f5469b.getRootAlpha();
@@ -187,9 +187,9 @@ public class C1522h extends AbstractC1521g {
             this.f5478k = false;
         }
 
-        public void m36512j(int i, int i2) {
+        public void m36515j(int i, int i2) {
             this.f5473f.eraseColor(0);
-            this.f5469b.m36527b(new Canvas(this.f5473f), i, i2, null);
+            this.f5469b.m36530b(new Canvas(this.f5473f), i, i2, null);
         }
 
         @Override
@@ -217,15 +217,15 @@ public class C1522h extends AbstractC1521g {
         this.f5420b = new C1530h();
     }
 
-    public static int m36551a(int i, float f) {
+    public static int m36554a(int i, float f) {
         return (i & 16777215) | (((int) (Color.alpha(i) * f)) << 24);
     }
 
-    public static C1522h m36550b(Resources resources, int i, Resources.Theme theme) {
+    public static C1522h m36553b(Resources resources, int i, Resources.Theme theme) {
         int next;
         if (Build.VERSION.SDK_INT >= 24) {
             C1522h hVar = new C1522h();
-            hVar.f5411a = C8614h.m11919d(resources, i, theme);
+            hVar.f5411a = C8614h.m11918d(resources, i, theme);
             hVar.f5416P = new C1531i(hVar.f5411a.getConstantState());
             return hVar;
         }
@@ -239,7 +239,7 @@ public class C1522h extends AbstractC1521g {
                 }
             }
             if (next == 2) {
-                return m36549c(resources, xml, asAttributeSet, theme);
+                return m36552c(resources, xml, asAttributeSet, theme);
             }
             throw new XmlPullParserException("No start tag found");
         } catch (IOException e) {
@@ -251,13 +251,13 @@ public class C1522h extends AbstractC1521g {
         }
     }
 
-    public static C1522h m36549c(Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) {
+    public static C1522h m36552c(Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) {
         C1522h hVar = new C1522h();
         hVar.inflate(resources, xmlPullParser, attributeSet, theme);
         return hVar;
     }
 
-    public static PorterDuff.Mode m36545g(int i, PorterDuff.Mode mode) {
+    public static PorterDuff.Mode m36548g(int i, PorterDuff.Mode mode) {
         if (i == 3) {
             return PorterDuff.Mode.SRC_OVER;
         }
@@ -299,7 +299,7 @@ public class C1522h extends AbstractC1521g {
         super.clearColorFilter();
     }
 
-    public Object m36548d(String str) {
+    public Object m36551d(String str) {
         return this.f5420b.f5469b.f5467p.get(str);
     }
 
@@ -332,25 +332,25 @@ public class C1522h extends AbstractC1521g {
                 int save = canvas.save();
                 Rect rect = this.f5419S;
                 canvas.translate(rect.left, rect.top);
-                if (m36546f()) {
+                if (m36549f()) {
                     canvas.translate(this.f5419S.width(), 0.0f);
                     canvas.scale(-1.0f, 1.0f);
                 }
                 this.f5419S.offsetTo(0, 0);
-                this.f5420b.m36519c(min, min2);
+                this.f5420b.m36522c(min, min2);
                 if (!this.f5415O) {
-                    this.f5420b.m36512j(min, min2);
-                } else if (!this.f5420b.m36520b()) {
-                    this.f5420b.m36512j(min, min2);
-                    this.f5420b.m36513i();
+                    this.f5420b.m36515j(min, min2);
+                } else if (!this.f5420b.m36523b()) {
+                    this.f5420b.m36515j(min, min2);
+                    this.f5420b.m36516i();
                 }
-                this.f5420b.m36518d(canvas, colorFilter, this.f5419S);
+                this.f5420b.m36521d(canvas, colorFilter, this.f5419S);
                 canvas.restoreToCount(save);
             }
         }
     }
 
-    public final void m36547e(Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) {
+    public final void m36550e(Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) {
         C1530h hVar = this.f5420b;
         C1529g gVar = hVar.f5469b;
         ArrayDeque arrayDeque = new ArrayDeque();
@@ -364,7 +364,7 @@ public class C1522h extends AbstractC1521g {
                 C1526d dVar = (C1526d) arrayDeque.peek();
                 if ("path".equals(name)) {
                     C1525c cVar = new C1525c();
-                    cVar.m36537g(resources, attributeSet, theme, xmlPullParser);
+                    cVar.m36540g(resources, attributeSet, theme, xmlPullParser);
                     dVar.f5435b.add(cVar);
                     if (cVar.getPathName() != null) {
                         gVar.f5467p.put(cVar.getPathName(), cVar);
@@ -373,7 +373,7 @@ public class C1522h extends AbstractC1521g {
                     hVar.f5468a = cVar.f5450d | hVar.f5468a;
                 } else if ("clip-path".equals(name)) {
                     C1524b bVar = new C1524b();
-                    bVar.m36541e(resources, attributeSet, theme, xmlPullParser);
+                    bVar.m36544e(resources, attributeSet, theme, xmlPullParser);
                     dVar.f5435b.add(bVar);
                     if (bVar.getPathName() != null) {
                         gVar.f5467p.put(bVar.getPathName(), bVar);
@@ -381,7 +381,7 @@ public class C1522h extends AbstractC1521g {
                     hVar.f5468a = bVar.f5450d | hVar.f5468a;
                 } else if ("group".equals(name)) {
                     C1526d dVar2 = new C1526d();
-                    dVar2.m36535c(resources, attributeSet, theme, xmlPullParser);
+                    dVar2.m36538c(resources, attributeSet, theme, xmlPullParser);
                     dVar.f5435b.add(dVar2);
                     arrayDeque.push(dVar2);
                     if (dVar2.getGroupName() != null) {
@@ -399,7 +399,7 @@ public class C1522h extends AbstractC1521g {
         }
     }
 
-    public final boolean m36546f() {
+    public final boolean m36549f() {
         return Build.VERSION.SDK_INT >= 17 && isAutoMirrored() && C9411a.m8763e(this) == 1;
     }
 
@@ -496,21 +496,21 @@ public class C1522h extends AbstractC1521g {
         return super.getTransparentRegion();
     }
 
-    public void m36544h(boolean z) {
+    public void m36547h(boolean z) {
         this.f5415O = z;
     }
 
-    public final void m36543i(TypedArray typedArray, XmlPullParser xmlPullParser, Resources.Theme theme) {
+    public final void m36546i(TypedArray typedArray, XmlPullParser xmlPullParser, Resources.Theme theme) {
         C1530h hVar = this.f5420b;
         C1529g gVar = hVar.f5469b;
-        hVar.f5471d = m36545g(C8621i.m11900g(typedArray, xmlPullParser, "tintMode", 6, -1), PorterDuff.Mode.SRC_IN);
-        ColorStateList c = C8621i.m11904c(typedArray, xmlPullParser, theme, "tint", 1);
+        hVar.f5471d = m36548g(C8621i.m11899g(typedArray, xmlPullParser, "tintMode", 6, -1), PorterDuff.Mode.SRC_IN);
+        ColorStateList c = C8621i.m11903c(typedArray, xmlPullParser, theme, "tint", 1);
         if (c != null) {
             hVar.f5470c = c;
         }
-        hVar.f5472e = C8621i.m11906a(typedArray, xmlPullParser, "autoMirrored", 5, hVar.f5472e);
-        gVar.f5462k = C8621i.m11901f(typedArray, xmlPullParser, "viewportWidth", 7, gVar.f5462k);
-        float f = C8621i.m11901f(typedArray, xmlPullParser, "viewportHeight", 8, gVar.f5463l);
+        hVar.f5472e = C8621i.m11905a(typedArray, xmlPullParser, "autoMirrored", 5, hVar.f5472e);
+        gVar.f5462k = C8621i.m11900f(typedArray, xmlPullParser, "viewportWidth", 7, gVar.f5462k);
+        float f = C8621i.m11900f(typedArray, xmlPullParser, "viewportHeight", 8, gVar.f5463l);
         gVar.f5463l = f;
         if (gVar.f5462k <= 0.0f) {
             throw new XmlPullParserException(typedArray.getPositionDescription() + "<vector> tag requires viewportWidth > 0");
@@ -521,7 +521,7 @@ public class C1522h extends AbstractC1521g {
             if (gVar.f5460i <= 0.0f) {
                 throw new XmlPullParserException(typedArray.getPositionDescription() + "<vector> tag requires width > 0");
             } else if (dimension > 0.0f) {
-                gVar.setAlpha(C8621i.m11901f(typedArray, xmlPullParser, "alpha", 4, gVar.getAlpha()));
+                gVar.setAlpha(C8621i.m11900f(typedArray, xmlPullParser, "alpha", 4, gVar.getAlpha()));
                 String string = typedArray.getString(0);
                 if (string != null) {
                     gVar.f5465n = string;
@@ -572,10 +572,10 @@ public class C1522h extends AbstractC1521g {
         if (drawable != null) {
             return drawable.isStateful();
         }
-        return super.isStateful() || ((hVar = this.f5420b) != null && (hVar.m36515g() || ((colorStateList = this.f5420b.f5470c) != null && colorStateList.isStateful())));
+        return super.isStateful() || ((hVar = this.f5420b) != null && (hVar.m36518g() || ((colorStateList = this.f5420b.f5470c) != null && colorStateList.isStateful())));
     }
 
-    public PorterDuffColorFilter m36542j(PorterDuffColorFilter porterDuffColorFilter, ColorStateList colorStateList, PorterDuff.Mode mode) {
+    public PorterDuffColorFilter m36545j(PorterDuffColorFilter porterDuffColorFilter, ColorStateList colorStateList, PorterDuff.Mode mode) {
         if (colorStateList == null || mode == null) {
             return null;
         }
@@ -620,11 +620,11 @@ public class C1522h extends AbstractC1521g {
         C1530h hVar = this.f5420b;
         ColorStateList colorStateList = hVar.f5470c;
         if (!(colorStateList == null || (mode = hVar.f5471d) == null)) {
-            this.f5421c = m36542j(this.f5421c, colorStateList, mode);
+            this.f5421c = m36545j(this.f5421c, colorStateList, mode);
             invalidateSelf();
             z = true;
         }
-        if (!hVar.m36515g() || !hVar.m36514h(iArr)) {
+        if (!hVar.m36518g() || !hVar.m36517h(iArr)) {
             return z;
         }
         invalidateSelf();
@@ -712,7 +712,7 @@ public class C1522h extends AbstractC1521g {
         C1530h hVar = this.f5420b;
         if (hVar.f5470c != colorStateList) {
             hVar.f5470c = colorStateList;
-            this.f5421c = m36542j(this.f5421c, colorStateList, hVar.f5471d);
+            this.f5421c = m36545j(this.f5421c, colorStateList, hVar.f5471d);
             invalidateSelf();
         }
     }
@@ -727,7 +727,7 @@ public class C1522h extends AbstractC1521g {
         C1530h hVar = this.f5420b;
         if (hVar.f5471d != mode) {
             hVar.f5471d = mode;
-            this.f5421c = m36542j(this.f5421c, hVar.f5470c, mode);
+            this.f5421c = m36545j(this.f5421c, hVar.f5470c, mode);
             invalidateSelf();
         }
     }
@@ -813,15 +813,15 @@ public class C1522h extends AbstractC1521g {
             this.f5449c = 0;
         }
 
-        public boolean mo36530c() {
+        public boolean mo36533c() {
             return false;
         }
 
-        public void m36529d(Path path) {
+        public void m36532d(Path path) {
             path.reset();
             C8931c.C8933b[] bVarArr = this.f5447a;
             if (bVarArr != null) {
-                C8931c.C8933b.m10913e(bVarArr, path);
+                C8931c.C8933b.m10912e(bVarArr, path);
             }
         }
 
@@ -834,10 +834,10 @@ public class C1522h extends AbstractC1521g {
         }
 
         public void setPathData(C8931c.C8933b[] bVarArr) {
-            if (!C8931c.m10926b(this.f5447a, bVarArr)) {
-                this.f5447a = C8931c.m10922f(bVarArr);
+            if (!C8931c.m10925b(this.f5447a, bVarArr)) {
+                this.f5447a = C8931c.m10921f(bVarArr);
             } else {
-                C8931c.m10918j(this.f5447a, bVarArr);
+                C8931c.m10917j(this.f5447a, bVarArr);
             }
         }
 
@@ -847,7 +847,7 @@ public class C1522h extends AbstractC1521g {
             this.f5449c = 0;
             this.f5448b = fVar.f5448b;
             this.f5450d = fVar.f5450d;
-            this.f5447a = C8931c.m10922f(fVar.f5447a);
+            this.f5447a = C8931c.m10921f(fVar.f5447a);
         }
     }
 
@@ -860,13 +860,13 @@ public class C1522h extends AbstractC1521g {
         }
         C1530h hVar = this.f5420b;
         hVar.f5469b = new C1529g();
-        TypedArray k = C8621i.m11896k(resources, theme, attributeSet, C1511a.f5382a);
-        m36543i(k, xmlPullParser, theme);
+        TypedArray k = C8621i.m11895k(resources, theme, attributeSet, C1511a.f5382a);
+        m36546i(k, xmlPullParser, theme);
         k.recycle();
         hVar.f5468a = getChangingConfigurations();
         hVar.f5478k = true;
-        m36547e(resources, xmlPullParser, attributeSet, theme);
-        this.f5421c = m36542j(this.f5421c, hVar.f5470c, hVar.f5471d);
+        m36550e(resources, xmlPullParser, attributeSet, theme);
+        this.f5421c = m36545j(this.f5421c, hVar.f5470c, hVar.f5471d);
     }
 
     public C1522h(C1530h hVar) {
@@ -875,7 +875,7 @@ public class C1522h extends AbstractC1521g {
         this.f5418R = new Matrix();
         this.f5419S = new Rect();
         this.f5420b = hVar;
-        this.f5421c = m36542j(this.f5421c, hVar.f5470c, hVar.f5471d);
+        this.f5421c = m36545j(this.f5421c, hVar.f5470c, hVar.f5471d);
     }
 
     public static class C1525c extends AbstractC1528f {
@@ -905,16 +905,16 @@ public class C1522h extends AbstractC1521g {
         }
 
         @Override
-        public boolean mo36532a() {
-            return this.f5425h.m11952i() || this.f5423f.m11952i();
+        public boolean mo36535a() {
+            return this.f5425h.m11951i() || this.f5423f.m11951i();
         }
 
         @Override
-        public boolean mo36531b(int[] iArr) {
-            return this.f5423f.m11951j(iArr) | this.f5425h.m11951j(iArr);
+        public boolean mo36534b(int[] iArr) {
+            return this.f5423f.m11950j(iArr) | this.f5425h.m11950j(iArr);
         }
 
-        public final Paint.Cap m36539e(int i, Paint.Cap cap) {
+        public final Paint.Cap m36542e(int i, Paint.Cap cap) {
             if (i == 0) {
                 return Paint.Cap.BUTT;
             }
@@ -924,7 +924,7 @@ public class C1522h extends AbstractC1521g {
             return Paint.Cap.ROUND;
         }
 
-        public final Paint.Join m36538f(int i, Paint.Join join) {
+        public final Paint.Join m36541f(int i, Paint.Join join) {
             if (i == 0) {
                 return Paint.Join.MITER;
             }
@@ -934,9 +934,9 @@ public class C1522h extends AbstractC1521g {
             return Paint.Join.ROUND;
         }
 
-        public void m36537g(Resources resources, AttributeSet attributeSet, Resources.Theme theme, XmlPullParser xmlPullParser) {
-            TypedArray k = C8621i.m11896k(resources, theme, attributeSet, C1511a.f5384c);
-            m36536h(k, xmlPullParser, theme);
+        public void m36540g(Resources resources, AttributeSet attributeSet, Resources.Theme theme, XmlPullParser xmlPullParser) {
+            TypedArray k = C8621i.m11895k(resources, theme, attributeSet, C1511a.f5384c);
+            m36539h(k, xmlPullParser, theme);
             k.recycle();
         }
 
@@ -945,7 +945,7 @@ public class C1522h extends AbstractC1521g {
         }
 
         public int getFillColor() {
-            return this.f5425h.m11956e();
+            return this.f5425h.m11955e();
         }
 
         public float getStrokeAlpha() {
@@ -953,7 +953,7 @@ public class C1522h extends AbstractC1521g {
         }
 
         public int getStrokeColor() {
-            return this.f5423f.m11956e();
+            return this.f5423f.m11955e();
         }
 
         public float getStrokeWidth() {
@@ -972,29 +972,29 @@ public class C1522h extends AbstractC1521g {
             return this.f5428k;
         }
 
-        public final void m36536h(TypedArray typedArray, XmlPullParser xmlPullParser, Resources.Theme theme) {
+        public final void m36539h(TypedArray typedArray, XmlPullParser xmlPullParser, Resources.Theme theme) {
             this.f5422e = null;
-            if (C8621i.m11897j(xmlPullParser, "pathData")) {
+            if (C8621i.m11896j(xmlPullParser, "pathData")) {
                 String string = typedArray.getString(0);
                 if (string != null) {
                     this.f5448b = string;
                 }
                 String string2 = typedArray.getString(2);
                 if (string2 != null) {
-                    this.f5447a = C8931c.m10924d(string2);
+                    this.f5447a = C8931c.m10923d(string2);
                 }
-                this.f5425h = C8621i.m11902e(typedArray, xmlPullParser, theme, "fillColor", 1, 0);
-                this.f5427j = C8621i.m11901f(typedArray, xmlPullParser, "fillAlpha", 12, this.f5427j);
-                this.f5431n = m36539e(C8621i.m11900g(typedArray, xmlPullParser, "strokeLineCap", 8, -1), this.f5431n);
-                this.f5432o = m36538f(C8621i.m11900g(typedArray, xmlPullParser, "strokeLineJoin", 9, -1), this.f5432o);
-                this.f5433p = C8621i.m11901f(typedArray, xmlPullParser, "strokeMiterLimit", 10, this.f5433p);
-                this.f5423f = C8621i.m11902e(typedArray, xmlPullParser, theme, "strokeColor", 3, 0);
-                this.f5426i = C8621i.m11901f(typedArray, xmlPullParser, "strokeAlpha", 11, this.f5426i);
-                this.f5424g = C8621i.m11901f(typedArray, xmlPullParser, "strokeWidth", 4, this.f5424g);
-                this.f5429l = C8621i.m11901f(typedArray, xmlPullParser, "trimPathEnd", 6, this.f5429l);
-                this.f5430m = C8621i.m11901f(typedArray, xmlPullParser, "trimPathOffset", 7, this.f5430m);
-                this.f5428k = C8621i.m11901f(typedArray, xmlPullParser, "trimPathStart", 5, this.f5428k);
-                this.f5449c = C8621i.m11900g(typedArray, xmlPullParser, "fillType", 13, this.f5449c);
+                this.f5425h = C8621i.m11901e(typedArray, xmlPullParser, theme, "fillColor", 1, 0);
+                this.f5427j = C8621i.m11900f(typedArray, xmlPullParser, "fillAlpha", 12, this.f5427j);
+                this.f5431n = m36542e(C8621i.m11899g(typedArray, xmlPullParser, "strokeLineCap", 8, -1), this.f5431n);
+                this.f5432o = m36541f(C8621i.m11899g(typedArray, xmlPullParser, "strokeLineJoin", 9, -1), this.f5432o);
+                this.f5433p = C8621i.m11900f(typedArray, xmlPullParser, "strokeMiterLimit", 10, this.f5433p);
+                this.f5423f = C8621i.m11901e(typedArray, xmlPullParser, theme, "strokeColor", 3, 0);
+                this.f5426i = C8621i.m11900f(typedArray, xmlPullParser, "strokeAlpha", 11, this.f5426i);
+                this.f5424g = C8621i.m11900f(typedArray, xmlPullParser, "strokeWidth", 4, this.f5424g);
+                this.f5429l = C8621i.m11900f(typedArray, xmlPullParser, "trimPathEnd", 6, this.f5429l);
+                this.f5430m = C8621i.m11900f(typedArray, xmlPullParser, "trimPathOffset", 7, this.f5430m);
+                this.f5428k = C8621i.m11900f(typedArray, xmlPullParser, "trimPathStart", 5, this.f5428k);
+                this.f5449c = C8621i.m11899g(typedArray, xmlPullParser, "fillType", 13, this.f5449c);
             }
         }
 
@@ -1003,7 +1003,7 @@ public class C1522h extends AbstractC1521g {
         }
 
         public void setFillColor(int i) {
-            this.f5425h.m11950k(i);
+            this.f5425h.m11949k(i);
         }
 
         public void setStrokeAlpha(float f) {
@@ -1011,7 +1011,7 @@ public class C1522h extends AbstractC1521g {
         }
 
         public void setStrokeColor(int i) {
-            this.f5423f.m11950k(i);
+            this.f5423f.m11949k(i);
         }
 
         public void setStrokeWidth(float f) {
@@ -1091,42 +1091,42 @@ public class C1522h extends AbstractC1521g {
             this.f5453b = new Path();
         }
 
-        public static float m36528a(float f, float f2, float f3, float f4) {
+        public static float m36531a(float f, float f2, float f3, float f4) {
             return (f * f4) - (f2 * f3);
         }
 
-        public void m36527b(Canvas canvas, int i, int i2, ColorFilter colorFilter) {
-            m36526c(this.f5459h, f5451q, canvas, i, i2, colorFilter);
+        public void m36530b(Canvas canvas, int i, int i2, ColorFilter colorFilter) {
+            m36529c(this.f5459h, f5451q, canvas, i, i2, colorFilter);
         }
 
-        public final void m36526c(C1526d dVar, Matrix matrix, Canvas canvas, int i, int i2, ColorFilter colorFilter) {
+        public final void m36529c(C1526d dVar, Matrix matrix, Canvas canvas, int i, int i2, ColorFilter colorFilter) {
             dVar.f5434a.set(matrix);
             dVar.f5434a.preConcat(dVar.f5443j);
             canvas.save();
             for (int i3 = 0; i3 < dVar.f5435b.size(); i3++) {
                 AbstractC1527e eVar = dVar.f5435b.get(i3);
                 if (eVar instanceof C1526d) {
-                    m36526c((C1526d) eVar, dVar.f5434a, canvas, i, i2, colorFilter);
+                    m36529c((C1526d) eVar, dVar.f5434a, canvas, i, i2, colorFilter);
                 } else if (eVar instanceof AbstractC1528f) {
-                    m36525d(dVar, (AbstractC1528f) eVar, canvas, i, i2, colorFilter);
+                    m36528d(dVar, (AbstractC1528f) eVar, canvas, i, i2, colorFilter);
                 }
             }
             canvas.restore();
         }
 
-        public final void m36525d(C1526d dVar, AbstractC1528f fVar, Canvas canvas, int i, int i2, ColorFilter colorFilter) {
+        public final void m36528d(C1526d dVar, AbstractC1528f fVar, Canvas canvas, int i, int i2, ColorFilter colorFilter) {
             float f = i / this.f5462k;
             float f2 = i2 / this.f5463l;
             float min = Math.min(f, f2);
             Matrix matrix = dVar.f5434a;
             this.f5454c.set(matrix);
             this.f5454c.postScale(f, f2);
-            float e = m36524e(matrix);
+            float e = m36527e(matrix);
             if (e != 0.0f) {
-                fVar.m36529d(this.f5452a);
+                fVar.m36532d(this.f5452a);
                 Path path = this.f5452a;
                 this.f5453b.reset();
-                if (fVar.mo36530c()) {
+                if (fVar.mo36533c()) {
                     this.f5453b.setFillType(fVar.f5449c == 0 ? Path.FillType.WINDING : Path.FillType.EVEN_ODD);
                     this.f5453b.addPath(path, this.f5454c);
                     canvas.clipPath(this.f5453b);
@@ -1155,7 +1155,7 @@ public class C1522h extends AbstractC1521g {
                     path.rLineTo(0.0f, 0.0f);
                 }
                 this.f5453b.addPath(path, this.f5454c);
-                if (cVar.f5425h.m11949l()) {
+                if (cVar.f5425h.m11948l()) {
                     C8605d dVar2 = cVar.f5425h;
                     if (this.f5456e == null) {
                         Paint paint = new Paint(1);
@@ -1163,21 +1163,21 @@ public class C1522h extends AbstractC1521g {
                         paint.setStyle(Paint.Style.FILL);
                     }
                     Paint paint2 = this.f5456e;
-                    if (dVar2.m11953h()) {
-                        Shader f9 = dVar2.m11955f();
+                    if (dVar2.m11952h()) {
+                        Shader f9 = dVar2.m11954f();
                         f9.setLocalMatrix(this.f5454c);
                         paint2.setShader(f9);
                         paint2.setAlpha(Math.round(cVar.f5427j * 255.0f));
                     } else {
                         paint2.setShader(null);
                         paint2.setAlpha(255);
-                        paint2.setColor(C1522h.m36551a(dVar2.m11956e(), cVar.f5427j));
+                        paint2.setColor(C1522h.m36554a(dVar2.m11955e(), cVar.f5427j));
                     }
                     paint2.setColorFilter(colorFilter);
                     this.f5453b.setFillType(cVar.f5449c == 0 ? Path.FillType.WINDING : Path.FillType.EVEN_ODD);
                     canvas.drawPath(this.f5453b, paint2);
                 }
-                if (cVar.f5423f.m11949l()) {
+                if (cVar.f5423f.m11948l()) {
                     C8605d dVar3 = cVar.f5423f;
                     if (this.f5455d == null) {
                         Paint paint3 = new Paint(1);
@@ -1194,15 +1194,15 @@ public class C1522h extends AbstractC1521g {
                         paint4.setStrokeCap(cap);
                     }
                     paint4.setStrokeMiter(cVar.f5433p);
-                    if (dVar3.m11953h()) {
-                        Shader f10 = dVar3.m11955f();
+                    if (dVar3.m11952h()) {
+                        Shader f10 = dVar3.m11954f();
                         f10.setLocalMatrix(this.f5454c);
                         paint4.setShader(f10);
                         paint4.setAlpha(Math.round(cVar.f5426i * 255.0f));
                     } else {
                         paint4.setShader(null);
                         paint4.setAlpha(255);
-                        paint4.setColor(C1522h.m36551a(dVar3.m11956e(), cVar.f5426i));
+                        paint4.setColor(C1522h.m36554a(dVar3.m11955e(), cVar.f5426i));
                     }
                     paint4.setColorFilter(colorFilter);
                     paint4.setStrokeWidth(cVar.f5424g * min * e);
@@ -1211,10 +1211,10 @@ public class C1522h extends AbstractC1521g {
             }
         }
 
-        public final float m36524e(Matrix matrix) {
+        public final float m36527e(Matrix matrix) {
             float[] fArr = {0.0f, 1.0f, 1.0f, 0.0f};
             matrix.mapVectors(fArr);
-            float a = m36528a(fArr[0], fArr[1], fArr[2], fArr[3]);
+            float a = m36531a(fArr[0], fArr[1], fArr[2], fArr[3]);
             float max = Math.max((float) Math.hypot(fArr[0], fArr[1]), (float) Math.hypot(fArr[2], fArr[3]));
             if (max > 0.0f) {
                 return Math.abs(a) / max;
@@ -1222,15 +1222,15 @@ public class C1522h extends AbstractC1521g {
             return 0.0f;
         }
 
-        public boolean m36523f() {
+        public boolean m36526f() {
             if (this.f5466o == null) {
-                this.f5466o = Boolean.valueOf(this.f5459h.mo36532a());
+                this.f5466o = Boolean.valueOf(this.f5459h.mo36535a());
             }
             return this.f5466o.booleanValue();
         }
 
-        public boolean m36522g(int[] iArr) {
-            return this.f5459h.mo36531b(iArr);
+        public boolean m36525g(int[] iArr) {
+            return this.f5459h.mo36534b(iArr);
         }
 
         public float getAlpha() {
@@ -1346,9 +1346,9 @@ public class C1522h extends AbstractC1521g {
         }
 
         @Override
-        public boolean mo36532a() {
+        public boolean mo36535a() {
             for (int i = 0; i < this.f5435b.size(); i++) {
-                if (this.f5435b.get(i).mo36532a()) {
+                if (this.f5435b.get(i).mo36535a()) {
                     return true;
                 }
             }
@@ -1356,21 +1356,21 @@ public class C1522h extends AbstractC1521g {
         }
 
         @Override
-        public boolean mo36531b(int[] iArr) {
+        public boolean mo36534b(int[] iArr) {
             boolean z = false;
             for (int i = 0; i < this.f5435b.size(); i++) {
-                z |= this.f5435b.get(i).mo36531b(iArr);
+                z |= this.f5435b.get(i).mo36534b(iArr);
             }
             return z;
         }
 
-        public void m36535c(Resources resources, AttributeSet attributeSet, Resources.Theme theme, XmlPullParser xmlPullParser) {
-            TypedArray k = C8621i.m11896k(resources, theme, attributeSet, C1511a.f5383b);
-            m36533e(k, xmlPullParser);
+        public void m36538c(Resources resources, AttributeSet attributeSet, Resources.Theme theme, XmlPullParser xmlPullParser) {
+            TypedArray k = C8621i.m11895k(resources, theme, attributeSet, C1511a.f5383b);
+            m36536e(k, xmlPullParser);
             k.recycle();
         }
 
-        public final void m36534d() {
+        public final void m36537d() {
             this.f5443j.reset();
             this.f5443j.postTranslate(-this.f5437d, -this.f5438e);
             this.f5443j.postScale(this.f5439f, this.f5440g);
@@ -1378,20 +1378,20 @@ public class C1522h extends AbstractC1521g {
             this.f5443j.postTranslate(this.f5441h + this.f5437d, this.f5442i + this.f5438e);
         }
 
-        public final void m36533e(TypedArray typedArray, XmlPullParser xmlPullParser) {
+        public final void m36536e(TypedArray typedArray, XmlPullParser xmlPullParser) {
             this.f5445l = null;
-            this.f5436c = C8621i.m11901f(typedArray, xmlPullParser, "rotation", 5, this.f5436c);
+            this.f5436c = C8621i.m11900f(typedArray, xmlPullParser, "rotation", 5, this.f5436c);
             this.f5437d = typedArray.getFloat(1, this.f5437d);
             this.f5438e = typedArray.getFloat(2, this.f5438e);
-            this.f5439f = C8621i.m11901f(typedArray, xmlPullParser, "scaleX", 3, this.f5439f);
-            this.f5440g = C8621i.m11901f(typedArray, xmlPullParser, "scaleY", 4, this.f5440g);
-            this.f5441h = C8621i.m11901f(typedArray, xmlPullParser, "translateX", 6, this.f5441h);
-            this.f5442i = C8621i.m11901f(typedArray, xmlPullParser, "translateY", 7, this.f5442i);
+            this.f5439f = C8621i.m11900f(typedArray, xmlPullParser, "scaleX", 3, this.f5439f);
+            this.f5440g = C8621i.m11900f(typedArray, xmlPullParser, "scaleY", 4, this.f5440g);
+            this.f5441h = C8621i.m11900f(typedArray, xmlPullParser, "translateX", 6, this.f5441h);
+            this.f5442i = C8621i.m11900f(typedArray, xmlPullParser, "translateY", 7, this.f5442i);
             String string = typedArray.getString(0);
             if (string != null) {
                 this.f5446m = string;
             }
-            m36534d();
+            m36537d();
         }
 
         public String getGroupName() {
@@ -1433,49 +1433,49 @@ public class C1522h extends AbstractC1521g {
         public void setPivotX(float f) {
             if (f != this.f5437d) {
                 this.f5437d = f;
-                m36534d();
+                m36537d();
             }
         }
 
         public void setPivotY(float f) {
             if (f != this.f5438e) {
                 this.f5438e = f;
-                m36534d();
+                m36537d();
             }
         }
 
         public void setRotation(float f) {
             if (f != this.f5436c) {
                 this.f5436c = f;
-                m36534d();
+                m36537d();
             }
         }
 
         public void setScaleX(float f) {
             if (f != this.f5439f) {
                 this.f5439f = f;
-                m36534d();
+                m36537d();
             }
         }
 
         public void setScaleY(float f) {
             if (f != this.f5440g) {
                 this.f5440g = f;
-                m36534d();
+                m36537d();
             }
         }
 
         public void setTranslateX(float f) {
             if (f != this.f5441h) {
                 this.f5441h = f;
-                m36534d();
+                m36537d();
             }
         }
 
         public void setTranslateY(float f) {
             if (f != this.f5442i) {
                 this.f5442i = f;
-                m36534d();
+                m36537d();
             }
         }
 

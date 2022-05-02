@@ -18,21 +18,21 @@ import p358z6.C11365i;
 public final class C11387o0 {
 
     public static class C11388a extends AbstractC11393e<E> {
-        public final Set f36342a;
-        public final Set f36343b;
+        public final Set f36345a;
+        public final Set f36346b;
 
         public class C11389a extends AbstractC11326b<E> {
-            public final Iterator<E> f36345c;
+            public final Iterator<E> f36348c;
 
             public C11389a() {
-                this.f36345c = C11388a.this.f36342a.iterator();
+                this.f36348c = C11388a.this.f36345a.iterator();
             }
 
             @Override
             public E mo697a() {
-                while (this.f36345c.hasNext()) {
-                    ?? next = this.f36345c.next();
-                    if (C11388a.this.f36343b.contains(next)) {
+                while (this.f36348c.hasNext()) {
+                    ?? next = this.f36348c.next();
+                    if (C11388a.this.f36346b.contains(next)) {
                         return next;
                     }
                 }
@@ -42,18 +42,18 @@ public final class C11387o0 {
 
         public C11388a(Set set, Set set2) {
             super(null);
-            this.f36342a = set;
-            this.f36343b = set2;
+            this.f36345a = set;
+            this.f36346b = set2;
         }
 
         @Override
         public boolean contains(Object obj) {
-            return this.f36342a.contains(obj) && this.f36343b.contains(obj);
+            return this.f36345a.contains(obj) && this.f36346b.contains(obj);
         }
 
         @Override
         public boolean containsAll(Collection<?> collection) {
-            return this.f36342a.containsAll(collection) && this.f36343b.containsAll(collection);
+            return this.f36345a.containsAll(collection) && this.f36346b.containsAll(collection);
         }
 
         public AbstractC11403r0<E> iterator() {
@@ -62,14 +62,14 @@ public final class C11387o0 {
 
         @Override
         public boolean isEmpty() {
-            return Collections.disjoint(this.f36343b, this.f36342a);
+            return Collections.disjoint(this.f36346b, this.f36345a);
         }
 
         @Override
         public int size() {
             int i = 0;
-            for (Object obj : this.f36342a) {
-                if (this.f36343b.contains(obj)) {
+            for (Object obj : this.f36345a) {
+                if (this.f36346b.contains(obj)) {
                     i++;
                 }
             }
@@ -100,25 +100,25 @@ public final class C11387o0 {
 
         @Override
         public Comparator<? super E> comparator() {
-            return ((SortedSet) this.f36306a).comparator();
+            return ((SortedSet) this.f36309a).comparator();
         }
 
         @Override
         public E first() {
-            return (E) C11407u.m705h(this.f36306a.iterator(), this.f36307b);
+            return (E) C11407u.m705h(this.f36309a.iterator(), this.f36310b);
         }
 
         @Override
         public SortedSet<E> headSet(E e) {
-            return new C11391c(((SortedSet) this.f36306a).headSet(e), this.f36307b);
+            return new C11391c(((SortedSet) this.f36309a).headSet(e), this.f36310b);
         }
 
         @Override
         public E last() {
-            SortedSet sortedSet = (SortedSet) this.f36306a;
+            SortedSet sortedSet = (SortedSet) this.f36309a;
             while (true) {
                 ?? r1 = (Object) sortedSet.last();
-                if (this.f36307b.apply(r1)) {
+                if (this.f36310b.apply(r1)) {
                     return r1;
                 }
                 sortedSet = sortedSet.headSet(r1);
@@ -127,12 +127,12 @@ public final class C11387o0 {
 
         @Override
         public SortedSet<E> subSet(E e, E e2) {
-            return new C11391c(((SortedSet) this.f36306a).subSet(e, e2), this.f36307b);
+            return new C11391c(((SortedSet) this.f36309a).subSet(e, e2), this.f36310b);
         }
 
         @Override
         public SortedSet<E> tailSet(E e) {
-            return new C11391c(((SortedSet) this.f36306a).tailSet(e), this.f36307b);
+            return new C11391c(((SortedSet) this.f36309a).tailSet(e), this.f36310b);
         }
     }
 
@@ -225,7 +225,7 @@ public final class C11387o0 {
             return new C11390b((Set) C10433i.m5129i(set), (AbstractC10434j) C10433i.m5129i(jVar));
         }
         C11390b bVar = (C11390b) set;
-        return new C11390b((Set) bVar.f36306a, C10435k.m5121b(bVar.f36307b, jVar));
+        return new C11390b((Set) bVar.f36309a, C10435k.m5121b(bVar.f36310b, jVar));
     }
 
     public static <E> SortedSet<E> m780c(SortedSet<E> sortedSet, AbstractC10434j<? super E> jVar) {
@@ -233,7 +233,7 @@ public final class C11387o0 {
             return new C11391c((SortedSet) C10433i.m5129i(sortedSet), (AbstractC10434j) C10433i.m5129i(jVar));
         }
         C11390b bVar = (C11390b) sortedSet;
-        return new C11391c((SortedSet) bVar.f36306a, C10435k.m5121b(bVar.f36307b, jVar));
+        return new C11391c((SortedSet) bVar.f36309a, C10435k.m5121b(bVar.f36310b, jVar));
     }
 
     public static int m779d(Set<?> set) {

@@ -30,16 +30,16 @@ import p336y.C10284p1;
 import p336y.C10321y1;
 
 public class C8450c2 {
-    public AbstractC10287q0 f27423a;
-    public final C10200b2 f27424b;
+    public AbstractC10287q0 f27426a;
+    public final C10200b2 f27427b;
 
     public class C8451a implements AbstractC1107c<Void> {
-        public final Surface f27425a;
-        public final SurfaceTexture f27426b;
+        public final Surface f27428a;
+        public final SurfaceTexture f27429b;
 
         public C8451a(Surface surface, SurfaceTexture surfaceTexture) {
-            this.f27425a = surface;
-            this.f27426b = surfaceTexture;
+            this.f27428a = surface;
+            this.f27429b = surfaceTexture;
         }
 
         @Override
@@ -48,18 +48,18 @@ public class C8450c2 {
         }
 
         public void mo5503a(Void r1) {
-            this.f27425a.release();
-            this.f27426b.release();
+            this.f27428a.release();
+            this.f27429b.release();
         }
     }
 
     public static class C8452b implements AbstractC10273n2<AbstractC0688y2> {
-        public final AbstractC10268n0 f27428w;
+        public final AbstractC10268n0 f27431w;
 
         public C8452b() {
             C10284p1 J = C10284p1.m5569J();
-            J.mo5566n(AbstractC10273n2.f33093s, new C8449c1());
-            this.f27428w = J;
+            J.mo5566n(AbstractC10273n2.f33096s, new C8449c1());
+            this.f27431w = J;
         }
 
         @Override
@@ -79,7 +79,7 @@ public class C8450c2 {
 
         @Override
         public AbstractC0688y2.AbstractC0690b mo5453D(AbstractC0688y2.AbstractC0690b bVar) {
-            return C1427l.m36958a(this, bVar);
+            return C1427l.m36961a(this, bVar);
         }
 
         @Override
@@ -119,7 +119,7 @@ public class C8450c2 {
 
         @Override
         public AbstractC10268n0 mo5421k() {
-            return this.f27428w;
+            return this.f27431w;
         }
 
         @Override
@@ -134,7 +134,7 @@ public class C8450c2 {
 
         @Override
         public String mo5432q(String str) {
-            return C1423h.m36960a(this, str);
+            return C1423h.m36963a(this, str);
         }
 
         @Override
@@ -156,37 +156,37 @@ public class C8450c2 {
     public C8450c2(C8927z zVar) {
         C8452b bVar = new C8452b();
         SurfaceTexture surfaceTexture = new SurfaceTexture(0);
-        Size c = m12441c(zVar);
-        C0662u1.m40653a("MeteringRepeating", "MerteringSession SurfaceTexture size: " + c);
+        Size c = m12440c(zVar);
+        C0662u1.m40656a("MeteringRepeating", "MerteringSession SurfaceTexture size: " + c);
         surfaceTexture.setDefaultBufferSize(c.getWidth(), c.getHeight());
         Surface surface = new Surface(surfaceTexture);
         C10200b2.C10202b o = C10200b2.C10202b.m5745o(bVar);
         o.m5742r(1);
         C10237h1 h1Var = new C10237h1(surface);
-        this.f27423a = h1Var;
-        C1111f.m38357b(h1Var.m5545i(), new C8451a(surface, surfaceTexture), C0003a.m42611a());
-        o.m5749k(this.f27423a);
-        this.f27424b = o.m5747m();
+        this.f27426a = h1Var;
+        C1111f.m38360b(h1Var.m5545i(), new C8451a(surface, surfaceTexture), C0003a.m42614a());
+        o.m5749k(this.f27426a);
+        this.f27427b = o.m5747m();
     }
 
-    public static int m12438f(Size size, Size size2) {
+    public static int m12437f(Size size, Size size2) {
         return Long.signum((size.getWidth() * size.getHeight()) - (size2.getWidth() * size2.getHeight()));
     }
 
-    public void m12442b() {
-        C0662u1.m40653a("MeteringRepeating", "MeteringRepeating clear!");
-        AbstractC10287q0 q0Var = this.f27423a;
+    public void m12441b() {
+        C0662u1.m40656a("MeteringRepeating", "MeteringRepeating clear!");
+        AbstractC10287q0 q0Var = this.f27426a;
         if (q0Var != null) {
             q0Var.m5551c();
         }
-        this.f27423a = null;
+        this.f27426a = null;
     }
 
-    public final Size m12441c(C8927z zVar) {
+    public final Size m12440c(C8927z zVar) {
         Size[] sizeArr;
-        StreamConfigurationMap streamConfigurationMap = (StreamConfigurationMap) zVar.m10952a(CameraCharacteristics.SCALER_STREAM_CONFIGURATION_MAP);
+        StreamConfigurationMap streamConfigurationMap = (StreamConfigurationMap) zVar.m10951a(CameraCharacteristics.SCALER_STREAM_CONFIGURATION_MAP);
         if (streamConfigurationMap == null) {
-            C0662u1.m40651c("MeteringRepeating", "Can not retrieve SCALER_STREAM_CONFIGURATION_MAP.");
+            C0662u1.m40654c("MeteringRepeating", "Can not retrieve SCALER_STREAM_CONFIGURATION_MAP.");
             return new Size(0, 0);
         }
         if (Build.VERSION.SDK_INT < 23) {
@@ -195,17 +195,17 @@ public class C8450c2 {
             sizeArr = streamConfigurationMap.getOutputSizes(34);
         }
         if (sizeArr != null) {
-            return (Size) Collections.min(Arrays.asList(sizeArr), C8445b2.f27417a);
+            return (Size) Collections.min(Arrays.asList(sizeArr), C8445b2.f27420a);
         }
-        C0662u1.m40651c("MeteringRepeating", "Can not get output size list.");
+        C0662u1.m40654c("MeteringRepeating", "Can not get output size list.");
         return new Size(0, 0);
     }
 
-    public String m12440d() {
+    public String m12439d() {
         return "MeteringRepeating";
     }
 
-    public C10200b2 m12439e() {
-        return this.f27424b;
+    public C10200b2 m12438e() {
+        return this.f27427b;
     }
 }

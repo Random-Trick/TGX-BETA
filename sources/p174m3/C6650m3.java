@@ -15,11 +15,11 @@ public final class C6650m3 {
         this.f20778a = (PowerManager) context.getApplicationContext().getSystemService("power");
     }
 
-    public void m19665a(boolean z) {
+    public void m19666a(boolean z) {
         if (z && this.f20779b == null) {
             PowerManager powerManager = this.f20778a;
             if (powerManager == null) {
-                C1230s.m37881i("WakeLockManager", "PowerManager is null, therefore not creating the WakeLock.");
+                C1230s.m37884i("WakeLockManager", "PowerManager is null, therefore not creating the WakeLock.");
                 return;
             }
             PowerManager.WakeLock newWakeLock = powerManager.newWakeLock(1, "ExoPlayer:WakeLockManager");
@@ -27,16 +27,16 @@ public final class C6650m3 {
             newWakeLock.setReferenceCounted(false);
         }
         this.f20780c = z;
-        m19663c();
+        m19664c();
     }
 
-    public void m19664b(boolean z) {
+    public void m19665b(boolean z) {
         this.f20781d = z;
-        m19663c();
+        m19664c();
     }
 
     @SuppressLint({"WakelockTimeout"})
-    public final void m19663c() {
+    public final void m19664c() {
         PowerManager.WakeLock wakeLock = this.f20779b;
         if (wakeLock != null) {
             if (!this.f20780c || !this.f20781d) {

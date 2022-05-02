@@ -19,22 +19,22 @@ import p126j$.util.function.Function;
 import p358z6.AbstractC11384o;
 
 public abstract class AbstractC11401r<K, V> implements Map<K, V>, Serializable, p126j$.util.Map {
-    public static final Map.Entry<?, ?>[] f36356M = new Map.Entry[0];
+    public static final Map.Entry<?, ?>[] f36359M = new Map.Entry[0];
     @LazyInit
-    public transient AbstractC11404s<Map.Entry<K, V>> f36357a;
+    public transient AbstractC11404s<Map.Entry<K, V>> f36360a;
     @RetainedWith
     @LazyInit
-    public transient AbstractC11404s<K> f36358b;
+    public transient AbstractC11404s<K> f36361b;
     @RetainedWith
     @LazyInit
-    public transient AbstractC11384o<V> f36359c;
+    public transient AbstractC11384o<V> f36362c;
 
     public static class C11402a<K, V> {
         @MonotonicNonNullDecl
-        public Comparator<? super V> f36360a;
-        public Object[] f36361b;
-        public int f36362c;
-        public boolean f36363d;
+        public Comparator<? super V> f36363a;
+        public Object[] f36364b;
+        public int f36365c;
+        public boolean f36366d;
 
         public C11402a() {
             this(4);
@@ -42,28 +42,28 @@ public abstract class AbstractC11401r<K, V> implements Map<K, V>, Serializable, 
 
         public AbstractC11401r<K, V> m738a() {
             m733f();
-            this.f36363d = true;
-            return C11369j0.m812l(this.f36362c, this.f36361b);
+            this.f36366d = true;
+            return C11369j0.m812l(this.f36365c, this.f36364b);
         }
 
         public final void m737b(int i) {
             int i2 = i * 2;
-            Object[] objArr = this.f36361b;
+            Object[] objArr = this.f36364b;
             if (i2 > objArr.length) {
-                this.f36361b = Arrays.copyOf(objArr, AbstractC11384o.AbstractC11386b.m783a(objArr.length, i2));
-                this.f36363d = false;
+                this.f36364b = Arrays.copyOf(objArr, AbstractC11384o.AbstractC11386b.m783a(objArr.length, i2));
+                this.f36366d = false;
             }
         }
 
         @CanIgnoreReturnValue
         public C11402a<K, V> m736c(K k, V v) {
-            m737b(this.f36362c + 1);
+            m737b(this.f36365c + 1);
             C11363h.m820a(k, v);
-            Object[] objArr = this.f36361b;
-            int i = this.f36362c;
+            Object[] objArr = this.f36364b;
+            int i = this.f36365c;
             objArr[i * 2] = k;
             objArr[(i * 2) + 1] = v;
-            this.f36362c = i + 1;
+            this.f36365c = i + 1;
             return this;
         }
 
@@ -75,7 +75,7 @@ public abstract class AbstractC11401r<K, V> implements Map<K, V>, Serializable, 
         @CanIgnoreReturnValue
         public C11402a<K, V> m734e(Iterable<? extends Map.Entry<? extends K, ? extends V>> iterable) {
             if (iterable instanceof Collection) {
-                m737b(this.f36362c + ((Collection) iterable).size());
+                m737b(this.f36365c + ((Collection) iterable).size());
             }
             for (Map.Entry<? extends K, ? extends V> entry : iterable) {
                 m735d(entry);
@@ -85,35 +85,35 @@ public abstract class AbstractC11401r<K, V> implements Map<K, V>, Serializable, 
 
         public void m733f() {
             int i;
-            if (this.f36360a != null) {
-                if (this.f36363d) {
-                    this.f36361b = Arrays.copyOf(this.f36361b, this.f36362c * 2);
+            if (this.f36363a != null) {
+                if (this.f36366d) {
+                    this.f36364b = Arrays.copyOf(this.f36364b, this.f36365c * 2);
                 }
-                Map.Entry[] entryArr = new Map.Entry[this.f36362c];
+                Map.Entry[] entryArr = new Map.Entry[this.f36365c];
                 int i2 = 0;
                 while (true) {
-                    i = this.f36362c;
+                    i = this.f36365c;
                     if (i2 >= i) {
                         break;
                     }
-                    Object[] objArr = this.f36361b;
+                    Object[] objArr = this.f36364b;
                     int i3 = i2 * 2;
                     entryArr[i2] = new AbstractMap.SimpleImmutableEntry(objArr[i3], objArr[i3 + 1]);
                     i2++;
                 }
-                Arrays.sort(entryArr, 0, i, AbstractC11362g0.m823a(this.f36360a).m821c(C11414y.m680j()));
-                for (int i4 = 0; i4 < this.f36362c; i4++) {
+                Arrays.sort(entryArr, 0, i, AbstractC11362g0.m823a(this.f36363a).m821c(C11414y.m680j()));
+                for (int i4 = 0; i4 < this.f36365c; i4++) {
                     int i5 = i4 * 2;
-                    this.f36361b[i5] = entryArr[i4].getKey();
-                    this.f36361b[i5 + 1] = entryArr[i4].getValue();
+                    this.f36364b[i5] = entryArr[i4].getKey();
+                    this.f36364b[i5 + 1] = entryArr[i4].getValue();
                 }
             }
         }
 
         public C11402a(int i) {
-            this.f36361b = new Object[i * 2];
-            this.f36362c = 0;
-            this.f36363d = false;
+            this.f36364b = new Object[i * 2];
+            this.f36365c = 0;
+            this.f36366d = false;
         }
     }
 
@@ -138,7 +138,7 @@ public abstract class AbstractC11401r<K, V> implements Map<K, V>, Serializable, 
     }
 
     public static <K, V> AbstractC11401r<K, V> m740j() {
-        return (AbstractC11401r<K, V>) C11369j0.f36312Q;
+        return (AbstractC11401r<K, V>) C11369j0.f36315Q;
     }
 
     @Override
@@ -209,12 +209,12 @@ public abstract class AbstractC11401r<K, V> implements Map<K, V>, Serializable, 
     }
 
     public AbstractC11404s<Map.Entry<K, V>> entrySet() {
-        AbstractC11404s<Map.Entry<K, V>> sVar = this.f36357a;
+        AbstractC11404s<Map.Entry<K, V>> sVar = this.f36360a;
         if (sVar != null) {
             return sVar;
         }
         AbstractC11404s<Map.Entry<K, V>> d = mo746d();
-        this.f36357a = d;
+        this.f36360a = d;
         return d;
     }
 
@@ -235,12 +235,12 @@ public abstract class AbstractC11401r<K, V> implements Map<K, V>, Serializable, 
     }
 
     public AbstractC11404s<K> keySet() {
-        AbstractC11404s<K> sVar = this.f36358b;
+        AbstractC11404s<K> sVar = this.f36361b;
         if (sVar != null) {
             return sVar;
         }
         AbstractC11404s<K> e = mo745e();
-        this.f36358b = e;
+        this.f36361b = e;
         return e;
     }
 
@@ -250,12 +250,12 @@ public abstract class AbstractC11401r<K, V> implements Map<K, V>, Serializable, 
     }
 
     public AbstractC11384o<V> values() {
-        AbstractC11384o<V> oVar = this.f36359c;
+        AbstractC11384o<V> oVar = this.f36362c;
         if (oVar != null) {
             return oVar;
         }
         AbstractC11384o<V> f = mo744f();
-        this.f36359c = f;
+        this.f36362c = f;
         return f;
     }
 

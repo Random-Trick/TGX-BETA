@@ -48,14 +48,14 @@ public final class C0164r implements AbstractC0134e, AbstractC0150i0 {
 
         public C0166b(Context context) {
             this.f605a = context == null ? null : context.getApplicationContext();
-            this.f606b = m42167b(C1216l0.m38009G(context));
+            this.f606b = m42170b(C1216l0.m38012G(context));
             this.f607c = 2000;
             this.f608d = AbstractC1192d.f4481a;
             this.f609e = true;
         }
 
-        public static Map<Integer, Long> m42167b(String str) {
-            int[] j = C0164r.m42174j(str);
+        public static Map<Integer, Long> m42170b(String str) {
+            int[] j = C0164r.m42177j(str);
             HashMap hashMap = new HashMap(8);
             hashMap.put(0, 1000000L);
             AbstractC11396q<Long> qVar = C0164r.f583p;
@@ -69,12 +69,12 @@ public final class C0164r implements AbstractC0134e, AbstractC0150i0 {
             return hashMap;
         }
 
-        public C0164r m42168a() {
+        public C0164r m42171a() {
             return new C0164r(this.f605a, this.f606b, this.f607c, this.f608d, this.f609e);
         }
     }
 
-    public static int[] m42174j(String str) {
+    public static int[] m42177j(String str) {
         str.hashCode();
         char c = 65535;
         switch (str.hashCode()) {
@@ -1910,61 +1910,61 @@ public final class C0164r implements AbstractC0134e, AbstractC0150i0 {
         }
     }
 
-    public static synchronized C0164r m42172l(Context context) {
+    public static synchronized C0164r m42175l(Context context) {
         C0164r rVar;
         synchronized (C0164r.class) {
             if (f589v == null) {
-                f589v = new C0166b(context).m42168a();
+                f589v = new C0166b(context).m42171a();
             }
             rVar = f589v;
         }
         return rVar;
     }
 
-    public static boolean m42171m(C0159o oVar, boolean z) {
-        return z && !oVar.m42201d(8);
+    public static boolean m42174m(C0159o oVar, boolean z) {
+        return z && !oVar.m42204d(8);
     }
 
     @Override
-    public void mo42183a(Handler handler, AbstractC0134e.AbstractC0135a aVar) {
-        C1186a.m38185e(handler);
-        C1186a.m38185e(aVar);
-        this.f591b.m42233b(handler, aVar);
+    public void mo42186a(Handler handler, AbstractC0134e.AbstractC0135a aVar) {
+        C1186a.m38188e(handler);
+        C1186a.m38188e(aVar);
+        this.f591b.m42236b(handler, aVar);
     }
 
     @Override
-    public synchronized void mo42182b(AbstractC0154k kVar, C0159o oVar, boolean z, int i) {
-        if (m42171m(oVar, z)) {
+    public synchronized void mo42185b(AbstractC0154k kVar, C0159o oVar, boolean z, int i) {
+        if (m42174m(oVar, z)) {
             this.f597h += i;
         }
     }
 
     @Override
-    public synchronized void mo42181c(AbstractC0154k kVar, C0159o oVar, boolean z) {
-        if (m42171m(oVar, z)) {
+    public synchronized void mo42184c(AbstractC0154k kVar, C0159o oVar, boolean z) {
+        if (m42174m(oVar, z)) {
             if (this.f595f == 0) {
-                this.f596g = this.f593d.mo38081d();
+                this.f596g = this.f593d.mo38084d();
             }
             this.f595f++;
         }
     }
 
     @Override
-    public synchronized void mo42180d(AbstractC0154k kVar, C0159o oVar, boolean z) {
-        if (m42171m(oVar, z)) {
-            C1186a.m38184f(this.f595f > 0);
-            long d = this.f593d.mo38081d();
+    public synchronized void mo42183d(AbstractC0154k kVar, C0159o oVar, boolean z) {
+        if (m42174m(oVar, z)) {
+            C1186a.m38187f(this.f595f > 0);
+            long d = this.f593d.mo38084d();
             int i = (int) (d - this.f596g);
             this.f599j += i;
             long j = this.f600k;
             long j2 = this.f597h;
             this.f600k = j + j2;
             if (i > 0) {
-                this.f592c.m42218c((int) Math.sqrt(j2), (((float) j2) * 8000.0f) / i);
+                this.f592c.m42221c((int) Math.sqrt(j2), (((float) j2) * 8000.0f) / i);
                 if (this.f599j >= 2000 || this.f600k >= 524288) {
-                    this.f601l = this.f592c.m42215f(0.5f);
+                    this.f601l = this.f592c.m42218f(0.5f);
                 }
-                m42170n(i, this.f597h, this.f601l);
+                m42173n(i, this.f597h, this.f601l);
                 this.f596g = d;
                 this.f597h = 0L;
             }
@@ -1973,20 +1973,20 @@ public final class C0164r implements AbstractC0134e, AbstractC0150i0 {
     }
 
     @Override
-    public AbstractC0150i0 mo42179e() {
+    public AbstractC0150i0 mo42182e() {
         return this;
     }
 
     @Override
-    public void mo42178f(AbstractC0154k kVar, C0159o oVar, boolean z) {
+    public void mo42181f(AbstractC0154k kVar, C0159o oVar, boolean z) {
     }
 
     @Override
-    public void mo42177g(AbstractC0134e.AbstractC0135a aVar) {
-        this.f591b.m42230e(aVar);
+    public void mo42180g(AbstractC0134e.AbstractC0135a aVar) {
+        this.f591b.m42233e(aVar);
     }
 
-    public final long m42173k(int i) {
+    public final long m42176k(int i) {
         Long l = this.f590a.get(Integer.valueOf(i));
         if (l == null) {
             l = this.f590a.get(0);
@@ -1997,14 +1997,14 @@ public final class C0164r implements AbstractC0134e, AbstractC0150i0 {
         return l.longValue();
     }
 
-    public final void m42170n(int i, long j, long j2) {
+    public final void m42173n(int i, long j, long j2) {
         if (i != 0 || j != 0 || j2 != this.f602m) {
             this.f602m = j2;
-            this.f591b.m42232c(i, j, j2);
+            this.f591b.m42235c(i, j, j2);
         }
     }
 
-    public final synchronized void m42169o(int i) {
+    public final synchronized void m42172o(int i) {
         int i2 = this.f598i;
         if (i2 == 0 || this.f594e) {
             if (this.f603n) {
@@ -2013,14 +2013,14 @@ public final class C0164r implements AbstractC0134e, AbstractC0150i0 {
             if (i2 != i) {
                 this.f598i = i;
                 if (!(i == 1 || i == 0 || i == 8)) {
-                    this.f601l = m42173k(i);
-                    long d = this.f593d.mo38081d();
-                    m42170n(this.f595f > 0 ? (int) (d - this.f596g) : 0, this.f597h, this.f601l);
+                    this.f601l = m42176k(i);
+                    long d = this.f593d.mo38084d();
+                    m42173n(this.f595f > 0 ? (int) (d - this.f596g) : 0, this.f597h, this.f601l);
                     this.f596g = d;
                     this.f597h = 0L;
                     this.f600k = 0L;
                     this.f599j = 0L;
-                    this.f592c.m42212i();
+                    this.f592c.m42215i();
                 }
             }
         }
@@ -2033,19 +2033,19 @@ public final class C0164r implements AbstractC0134e, AbstractC0150i0 {
         this.f593d = dVar;
         this.f594e = z;
         if (context != null) {
-            C1242z d = C1242z.m37835d(context);
-            int f = d.m37833f();
+            C1242z d = C1242z.m37838d(context);
+            int f = d.m37836f();
             this.f598i = f;
-            this.f601l = m42173k(f);
-            d.m37830i(new C1242z.AbstractC1245c() {
+            this.f601l = m42176k(f);
+            d.m37833i(new C1242z.AbstractC1245c() {
                 @Override
-                public final void mo37826a(int i2) {
-                    C0164r.this.m42169o(i2);
+                public final void mo37829a(int i2) {
+                    C0164r.this.m42172o(i2);
                 }
             });
             return;
         }
         this.f598i = 0;
-        this.f601l = m42173k(0);
+        this.f601l = m42176k(0);
     }
 }

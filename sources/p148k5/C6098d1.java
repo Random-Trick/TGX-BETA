@@ -12,14 +12,14 @@ public final class C6098d1 {
         this.f19346b = cVar;
     }
 
-    public static C6085b m21334a(C6098d1 d1Var) {
+    public static C6085b m21335a(C6098d1 d1Var) {
         return d1Var.f19345a;
     }
 
     public final boolean equals(Object obj) {
         if (obj != null && (obj instanceof C6098d1)) {
             C6098d1 d1Var = (C6098d1) obj;
-            if (C6374q.m20524a(this.f19345a, d1Var.f19345a) && C6374q.m20524a(this.f19346b, d1Var.f19346b)) {
+            if (C6374q.m20525a(this.f19345a, d1Var.f19345a) && C6374q.m20525a(this.f19346b, d1Var.f19346b)) {
                 return true;
             }
         }
@@ -27,10 +27,10 @@ public final class C6098d1 {
     }
 
     public final int hashCode() {
-        return C6374q.m20523b(this.f19345a, this.f19346b);
+        return C6374q.m20524b(this.f19345a, this.f19346b);
     }
 
     public final String toString() {
-        return C6374q.m20522c(this).m20521a("key", this.f19345a).m20521a("feature", this.f19346b).toString();
+        return C6374q.m20523c(this).m20522a("key", this.f19345a).m20522a("feature", this.f19346b).toString();
     }
 }

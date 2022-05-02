@@ -6,7 +6,7 @@ import p107ha.C5048h;
 import qa.C8298k;
 
 public class C5293g0 extends C5291f0 {
-    public static final int m23436a(int i) {
+    public static final int m23437a(int i) {
         if (i < 0) {
             return i;
         }
@@ -19,18 +19,18 @@ public class C5293g0 extends C5291f0 {
         return Integer.MAX_VALUE;
     }
 
-    public static final <K, V> Map<K, V> m23435b(C5048h<? extends K, ? extends V> hVar) {
-        C8298k.m12934e(hVar, "pair");
-        Map<K, V> singletonMap = Collections.singletonMap(hVar.m24194c(), hVar.m24193d());
-        C8298k.m12935d(singletonMap, "singletonMap(pair.first, pair.second)");
+    public static final <K, V> Map<K, V> m23436b(C5048h<? extends K, ? extends V> hVar) {
+        C8298k.m12933e(hVar, "pair");
+        Map<K, V> singletonMap = Collections.singletonMap(hVar.m24195c(), hVar.m24194d());
+        C8298k.m12934d(singletonMap, "singletonMap(pair.first, pair.second)");
         return singletonMap;
     }
 
-    public static final <K, V> Map<K, V> m23434c(Map<? extends K, ? extends V> map) {
-        C8298k.m12934e(map, "<this>");
+    public static final <K, V> Map<K, V> m23435c(Map<? extends K, ? extends V> map) {
+        C8298k.m12933e(map, "<this>");
         Map.Entry<? extends K, ? extends V> next = map.entrySet().iterator().next();
         Map<K, V> singletonMap = Collections.singletonMap(next.getKey(), next.getValue());
-        C8298k.m12935d(singletonMap, "with(entries.iterator().…ingletonMap(key, value) }");
+        C8298k.m12934d(singletonMap, "with(entries.iterator().…ingletonMap(key, value) }");
         return singletonMap;
     }
 }

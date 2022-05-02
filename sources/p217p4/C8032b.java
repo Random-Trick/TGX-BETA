@@ -12,241 +12,241 @@ import p174m3.AbstractC6609h;
 import p343y6.C10432h;
 
 public final class C8032b implements AbstractC6609h {
-    public static final C8032b f26155a0 = new C8034b().m13743o("").m13757a();
-    public static final AbstractC6609h.AbstractC6610a<C8032b> f26156b0 = C8031a.f26154a;
-    public final Bitmap f26157M;
-    public final float f26158N;
-    public final int f26159O;
-    public final int f26160P;
-    public final float f26161Q;
-    public final int f26162R;
-    public final float f26163S;
-    public final float f26164T;
-    public final boolean f26165U;
-    public final int f26166V;
-    public final int f26167W;
-    public final float f26168X;
-    public final int f26169Y;
-    public final float f26170Z;
-    public final CharSequence f26171a;
-    public final Layout.Alignment f26172b;
-    public final Layout.Alignment f26173c;
+    public static final C8032b f26158a0 = new C8034b().m13742o("").m13756a();
+    public static final AbstractC6609h.AbstractC6610a<C8032b> f26159b0 = C8031a.f26157a;
+    public final Bitmap f26160M;
+    public final float f26161N;
+    public final int f26162O;
+    public final int f26163P;
+    public final float f26164Q;
+    public final int f26165R;
+    public final float f26166S;
+    public final float f26167T;
+    public final boolean f26168U;
+    public final int f26169V;
+    public final int f26170W;
+    public final float f26171X;
+    public final int f26172Y;
+    public final float f26173Z;
+    public final CharSequence f26174a;
+    public final Layout.Alignment f26175b;
+    public final Layout.Alignment f26176c;
 
     public static final class C8034b {
-        public CharSequence f26174a;
-        public Bitmap f26175b;
-        public Layout.Alignment f26176c;
-        public Layout.Alignment f26177d;
-        public float f26178e;
-        public int f26179f;
-        public int f26180g;
-        public float f26181h;
-        public int f26182i;
-        public int f26183j;
-        public float f26184k;
-        public float f26185l;
-        public float f26186m;
-        public boolean f26187n;
-        public int f26188o;
-        public int f26189p;
-        public float f26190q;
+        public CharSequence f26177a;
+        public Bitmap f26178b;
+        public Layout.Alignment f26179c;
+        public Layout.Alignment f26180d;
+        public float f26181e;
+        public int f26182f;
+        public int f26183g;
+        public float f26184h;
+        public int f26185i;
+        public int f26186j;
+        public float f26187k;
+        public float f26188l;
+        public float f26189m;
+        public boolean f26190n;
+        public int f26191o;
+        public int f26192p;
+        public float f26193q;
 
-        public C8032b m13757a() {
-            return new C8032b(this.f26174a, this.f26176c, this.f26177d, this.f26175b, this.f26178e, this.f26179f, this.f26180g, this.f26181h, this.f26182i, this.f26183j, this.f26184k, this.f26185l, this.f26186m, this.f26187n, this.f26188o, this.f26189p, this.f26190q);
+        public C8032b m13756a() {
+            return new C8032b(this.f26177a, this.f26179c, this.f26180d, this.f26178b, this.f26181e, this.f26182f, this.f26183g, this.f26184h, this.f26185i, this.f26186j, this.f26187k, this.f26188l, this.f26189m, this.f26190n, this.f26191o, this.f26192p, this.f26193q);
         }
 
-        public C8034b m13756b() {
-            this.f26187n = false;
+        public C8034b m13755b() {
+            this.f26190n = false;
             return this;
         }
 
         @Pure
-        public int m13755c() {
-            return this.f26180g;
+        public int m13754c() {
+            return this.f26183g;
         }
 
         @Pure
-        public int m13754d() {
-            return this.f26182i;
+        public int m13753d() {
+            return this.f26185i;
         }
 
         @Pure
-        public CharSequence m13753e() {
-            return this.f26174a;
+        public CharSequence m13752e() {
+            return this.f26177a;
         }
 
-        public C8034b m13752f(Bitmap bitmap) {
-            this.f26175b = bitmap;
+        public C8034b m13751f(Bitmap bitmap) {
+            this.f26178b = bitmap;
             return this;
         }
 
-        public C8034b m13751g(float f) {
-            this.f26186m = f;
+        public C8034b m13750g(float f) {
+            this.f26189m = f;
             return this;
         }
 
-        public C8034b m13750h(float f, int i) {
-            this.f26178e = f;
-            this.f26179f = i;
+        public C8034b m13749h(float f, int i) {
+            this.f26181e = f;
+            this.f26182f = i;
             return this;
         }
 
-        public C8034b m13749i(int i) {
-            this.f26180g = i;
+        public C8034b m13748i(int i) {
+            this.f26183g = i;
             return this;
         }
 
-        public C8034b m13748j(Layout.Alignment alignment) {
-            this.f26177d = alignment;
+        public C8034b m13747j(Layout.Alignment alignment) {
+            this.f26180d = alignment;
             return this;
         }
 
-        public C8034b m13747k(float f) {
-            this.f26181h = f;
+        public C8034b m13746k(float f) {
+            this.f26184h = f;
             return this;
         }
 
-        public C8034b m13746l(int i) {
-            this.f26182i = i;
+        public C8034b m13745l(int i) {
+            this.f26185i = i;
             return this;
         }
 
-        public C8034b m13745m(float f) {
-            this.f26190q = f;
+        public C8034b m13744m(float f) {
+            this.f26193q = f;
             return this;
         }
 
-        public C8034b m13744n(float f) {
-            this.f26185l = f;
+        public C8034b m13743n(float f) {
+            this.f26188l = f;
             return this;
         }
 
-        public C8034b m13743o(CharSequence charSequence) {
-            this.f26174a = charSequence;
+        public C8034b m13742o(CharSequence charSequence) {
+            this.f26177a = charSequence;
             return this;
         }
 
-        public C8034b m13742p(Layout.Alignment alignment) {
-            this.f26176c = alignment;
+        public C8034b m13741p(Layout.Alignment alignment) {
+            this.f26179c = alignment;
             return this;
         }
 
-        public C8034b m13741q(float f, int i) {
-            this.f26184k = f;
-            this.f26183j = i;
+        public C8034b m13740q(float f, int i) {
+            this.f26187k = f;
+            this.f26186j = i;
             return this;
         }
 
-        public C8034b m13740r(int i) {
-            this.f26189p = i;
+        public C8034b m13739r(int i) {
+            this.f26192p = i;
             return this;
         }
 
-        public C8034b m13739s(int i) {
-            this.f26188o = i;
-            this.f26187n = true;
+        public C8034b m13738s(int i) {
+            this.f26191o = i;
+            this.f26190n = true;
             return this;
         }
 
         public C8034b() {
-            this.f26174a = null;
-            this.f26175b = null;
-            this.f26176c = null;
-            this.f26177d = null;
-            this.f26178e = -3.4028235E38f;
-            this.f26179f = Integer.MIN_VALUE;
-            this.f26180g = Integer.MIN_VALUE;
-            this.f26181h = -3.4028235E38f;
-            this.f26182i = Integer.MIN_VALUE;
-            this.f26183j = Integer.MIN_VALUE;
-            this.f26184k = -3.4028235E38f;
-            this.f26185l = -3.4028235E38f;
-            this.f26186m = -3.4028235E38f;
-            this.f26187n = false;
-            this.f26188o = -16777216;
-            this.f26189p = Integer.MIN_VALUE;
+            this.f26177a = null;
+            this.f26178b = null;
+            this.f26179c = null;
+            this.f26180d = null;
+            this.f26181e = -3.4028235E38f;
+            this.f26182f = Integer.MIN_VALUE;
+            this.f26183g = Integer.MIN_VALUE;
+            this.f26184h = -3.4028235E38f;
+            this.f26185i = Integer.MIN_VALUE;
+            this.f26186j = Integer.MIN_VALUE;
+            this.f26187k = -3.4028235E38f;
+            this.f26188l = -3.4028235E38f;
+            this.f26189m = -3.4028235E38f;
+            this.f26190n = false;
+            this.f26191o = -16777216;
+            this.f26192p = Integer.MIN_VALUE;
         }
 
         public C8034b(C8032b bVar) {
-            this.f26174a = bVar.f26171a;
-            this.f26175b = bVar.f26157M;
-            this.f26176c = bVar.f26172b;
-            this.f26177d = bVar.f26173c;
-            this.f26178e = bVar.f26158N;
-            this.f26179f = bVar.f26159O;
-            this.f26180g = bVar.f26160P;
-            this.f26181h = bVar.f26161Q;
-            this.f26182i = bVar.f26162R;
-            this.f26183j = bVar.f26167W;
-            this.f26184k = bVar.f26168X;
-            this.f26185l = bVar.f26163S;
-            this.f26186m = bVar.f26164T;
-            this.f26187n = bVar.f26165U;
-            this.f26188o = bVar.f26166V;
-            this.f26189p = bVar.f26169Y;
-            this.f26190q = bVar.f26170Z;
+            this.f26177a = bVar.f26174a;
+            this.f26178b = bVar.f26160M;
+            this.f26179c = bVar.f26175b;
+            this.f26180d = bVar.f26176c;
+            this.f26181e = bVar.f26161N;
+            this.f26182f = bVar.f26162O;
+            this.f26183g = bVar.f26163P;
+            this.f26184h = bVar.f26164Q;
+            this.f26185i = bVar.f26165R;
+            this.f26186j = bVar.f26170W;
+            this.f26187k = bVar.f26171X;
+            this.f26188l = bVar.f26166S;
+            this.f26189m = bVar.f26167T;
+            this.f26190n = bVar.f26168U;
+            this.f26191o = bVar.f26169V;
+            this.f26192p = bVar.f26172Y;
+            this.f26193q = bVar.f26173Z;
         }
     }
 
-    public static final C8032b m13759c(Bundle bundle) {
+    public static final C8032b m13758c(Bundle bundle) {
         C8034b bVar = new C8034b();
-        CharSequence charSequence = bundle.getCharSequence(m13758d(0));
+        CharSequence charSequence = bundle.getCharSequence(m13757d(0));
         if (charSequence != null) {
-            bVar.m13743o(charSequence);
+            bVar.m13742o(charSequence);
         }
-        Layout.Alignment alignment = (Layout.Alignment) bundle.getSerializable(m13758d(1));
+        Layout.Alignment alignment = (Layout.Alignment) bundle.getSerializable(m13757d(1));
         if (alignment != null) {
-            bVar.m13742p(alignment);
+            bVar.m13741p(alignment);
         }
-        Layout.Alignment alignment2 = (Layout.Alignment) bundle.getSerializable(m13758d(2));
+        Layout.Alignment alignment2 = (Layout.Alignment) bundle.getSerializable(m13757d(2));
         if (alignment2 != null) {
-            bVar.m13748j(alignment2);
+            bVar.m13747j(alignment2);
         }
-        Bitmap bitmap = (Bitmap) bundle.getParcelable(m13758d(3));
+        Bitmap bitmap = (Bitmap) bundle.getParcelable(m13757d(3));
         if (bitmap != null) {
-            bVar.m13752f(bitmap);
+            bVar.m13751f(bitmap);
         }
-        if (bundle.containsKey(m13758d(4)) && bundle.containsKey(m13758d(5))) {
-            bVar.m13750h(bundle.getFloat(m13758d(4)), bundle.getInt(m13758d(5)));
+        if (bundle.containsKey(m13757d(4)) && bundle.containsKey(m13757d(5))) {
+            bVar.m13749h(bundle.getFloat(m13757d(4)), bundle.getInt(m13757d(5)));
         }
-        if (bundle.containsKey(m13758d(6))) {
-            bVar.m13749i(bundle.getInt(m13758d(6)));
+        if (bundle.containsKey(m13757d(6))) {
+            bVar.m13748i(bundle.getInt(m13757d(6)));
         }
-        if (bundle.containsKey(m13758d(7))) {
-            bVar.m13747k(bundle.getFloat(m13758d(7)));
+        if (bundle.containsKey(m13757d(7))) {
+            bVar.m13746k(bundle.getFloat(m13757d(7)));
         }
-        if (bundle.containsKey(m13758d(8))) {
-            bVar.m13746l(bundle.getInt(m13758d(8)));
+        if (bundle.containsKey(m13757d(8))) {
+            bVar.m13745l(bundle.getInt(m13757d(8)));
         }
-        if (bundle.containsKey(m13758d(10)) && bundle.containsKey(m13758d(9))) {
-            bVar.m13741q(bundle.getFloat(m13758d(10)), bundle.getInt(m13758d(9)));
+        if (bundle.containsKey(m13757d(10)) && bundle.containsKey(m13757d(9))) {
+            bVar.m13740q(bundle.getFloat(m13757d(10)), bundle.getInt(m13757d(9)));
         }
-        if (bundle.containsKey(m13758d(11))) {
-            bVar.m13744n(bundle.getFloat(m13758d(11)));
+        if (bundle.containsKey(m13757d(11))) {
+            bVar.m13743n(bundle.getFloat(m13757d(11)));
         }
-        if (bundle.containsKey(m13758d(12))) {
-            bVar.m13751g(bundle.getFloat(m13758d(12)));
+        if (bundle.containsKey(m13757d(12))) {
+            bVar.m13750g(bundle.getFloat(m13757d(12)));
         }
-        if (bundle.containsKey(m13758d(13))) {
-            bVar.m13739s(bundle.getInt(m13758d(13)));
+        if (bundle.containsKey(m13757d(13))) {
+            bVar.m13738s(bundle.getInt(m13757d(13)));
         }
-        if (!bundle.getBoolean(m13758d(14), false)) {
-            bVar.m13756b();
+        if (!bundle.getBoolean(m13757d(14), false)) {
+            bVar.m13755b();
         }
-        if (bundle.containsKey(m13758d(15))) {
-            bVar.m13740r(bundle.getInt(m13758d(15)));
+        if (bundle.containsKey(m13757d(15))) {
+            bVar.m13739r(bundle.getInt(m13757d(15)));
         }
-        if (bundle.containsKey(m13758d(16))) {
-            bVar.m13745m(bundle.getFloat(m13758d(16)));
+        if (bundle.containsKey(m13757d(16))) {
+            bVar.m13744m(bundle.getFloat(m13757d(16)));
         }
-        return bVar.m13757a();
+        return bVar.m13756a();
     }
 
-    public static String m13758d(int i) {
+    public static String m13757d(int i) {
         return Integer.toString(i, 36);
     }
 
-    public C8034b m13760b() {
+    public C8034b m13759b() {
         return new C8034b();
     }
 
@@ -260,41 +260,41 @@ public final class C8032b implements AbstractC6609h {
             return false;
         }
         C8032b bVar = (C8032b) obj;
-        return TextUtils.equals(this.f26171a, bVar.f26171a) && this.f26172b == bVar.f26172b && this.f26173c == bVar.f26173c && ((bitmap = this.f26157M) != null ? !((bitmap2 = bVar.f26157M) == null || !bitmap.sameAs(bitmap2)) : bVar.f26157M == null) && this.f26158N == bVar.f26158N && this.f26159O == bVar.f26159O && this.f26160P == bVar.f26160P && this.f26161Q == bVar.f26161Q && this.f26162R == bVar.f26162R && this.f26163S == bVar.f26163S && this.f26164T == bVar.f26164T && this.f26165U == bVar.f26165U && this.f26166V == bVar.f26166V && this.f26167W == bVar.f26167W && this.f26168X == bVar.f26168X && this.f26169Y == bVar.f26169Y && this.f26170Z == bVar.f26170Z;
+        return TextUtils.equals(this.f26174a, bVar.f26174a) && this.f26175b == bVar.f26175b && this.f26176c == bVar.f26176c && ((bitmap = this.f26160M) != null ? !((bitmap2 = bVar.f26160M) == null || !bitmap.sameAs(bitmap2)) : bVar.f26160M == null) && this.f26161N == bVar.f26161N && this.f26162O == bVar.f26162O && this.f26163P == bVar.f26163P && this.f26164Q == bVar.f26164Q && this.f26165R == bVar.f26165R && this.f26166S == bVar.f26166S && this.f26167T == bVar.f26167T && this.f26168U == bVar.f26168U && this.f26169V == bVar.f26169V && this.f26170W == bVar.f26170W && this.f26171X == bVar.f26171X && this.f26172Y == bVar.f26172Y && this.f26173Z == bVar.f26173Z;
     }
 
     public int hashCode() {
-        return C10432h.m5138b(this.f26171a, this.f26172b, this.f26173c, this.f26157M, Float.valueOf(this.f26158N), Integer.valueOf(this.f26159O), Integer.valueOf(this.f26160P), Float.valueOf(this.f26161Q), Integer.valueOf(this.f26162R), Float.valueOf(this.f26163S), Float.valueOf(this.f26164T), Boolean.valueOf(this.f26165U), Integer.valueOf(this.f26166V), Integer.valueOf(this.f26167W), Float.valueOf(this.f26168X), Integer.valueOf(this.f26169Y), Float.valueOf(this.f26170Z));
+        return C10432h.m5138b(this.f26174a, this.f26175b, this.f26176c, this.f26160M, Float.valueOf(this.f26161N), Integer.valueOf(this.f26162O), Integer.valueOf(this.f26163P), Float.valueOf(this.f26164Q), Integer.valueOf(this.f26165R), Float.valueOf(this.f26166S), Float.valueOf(this.f26167T), Boolean.valueOf(this.f26168U), Integer.valueOf(this.f26169V), Integer.valueOf(this.f26170W), Float.valueOf(this.f26171X), Integer.valueOf(this.f26172Y), Float.valueOf(this.f26173Z));
     }
 
     public C8032b(CharSequence charSequence, Layout.Alignment alignment, Layout.Alignment alignment2, Bitmap bitmap, float f, int i, int i2, float f2, int i3, int i4, float f3, float f4, float f5, boolean z, int i5, int i6, float f6) {
         if (charSequence == null) {
-            C1186a.m38185e(bitmap);
+            C1186a.m38188e(bitmap);
         } else {
-            C1186a.m38189a(bitmap == null);
+            C1186a.m38192a(bitmap == null);
         }
         if (charSequence instanceof Spanned) {
-            this.f26171a = SpannedString.valueOf(charSequence);
+            this.f26174a = SpannedString.valueOf(charSequence);
         } else if (charSequence != null) {
-            this.f26171a = charSequence.toString();
+            this.f26174a = charSequence.toString();
         } else {
-            this.f26171a = null;
+            this.f26174a = null;
         }
-        this.f26172b = alignment;
-        this.f26173c = alignment2;
-        this.f26157M = bitmap;
-        this.f26158N = f;
-        this.f26159O = i;
-        this.f26160P = i2;
-        this.f26161Q = f2;
-        this.f26162R = i3;
-        this.f26163S = f4;
-        this.f26164T = f5;
-        this.f26165U = z;
-        this.f26166V = i5;
-        this.f26167W = i4;
-        this.f26168X = f3;
-        this.f26169Y = i6;
-        this.f26170Z = f6;
+        this.f26175b = alignment;
+        this.f26176c = alignment2;
+        this.f26160M = bitmap;
+        this.f26161N = f;
+        this.f26162O = i;
+        this.f26163P = i2;
+        this.f26164Q = f2;
+        this.f26165R = i3;
+        this.f26166S = f4;
+        this.f26167T = f5;
+        this.f26168U = z;
+        this.f26169V = i5;
+        this.f26170W = i4;
+        this.f26171X = f3;
+        this.f26172Y = i6;
+        this.f26173Z = f6;
     }
 }

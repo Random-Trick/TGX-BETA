@@ -56,20 +56,20 @@ public class C10159b extends C10158a {
 
     public final void m5878m(String str, String str2) {
         StringBuilder sb2 = new StringBuilder();
-        String valueOf = String.valueOf(C10158a.f32858f - this.f32863e.m6692c());
+        String valueOf = String.valueOf(C10158a.f32861f - this.f32866e.m6692c());
         int length = 8 - valueOf.length();
         sb2.append("@" + valueOf);
         for (int i = 0; i < length; i++) {
             sb2.append(' ');
         }
         sb2.append(str);
-        int length2 = (100 - sb2.length()) - this.f32863e.m6692c();
+        int length2 = (100 - sb2.length()) - this.f32866e.m6692c();
         for (int i2 = 0; i2 < length2; i2++) {
             sb2.append(' ');
         }
-        sb2.append(this.f32863e);
+        sb2.append(this.f32866e);
         sb2.append(" (" + str2 + ")");
-        this.f32863e.m6693b();
+        this.f32866e.m6693b();
         C9884b.m6691a(sb2.toString());
     }
 }

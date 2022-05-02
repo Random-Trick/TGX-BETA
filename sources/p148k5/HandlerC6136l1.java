@@ -20,7 +20,7 @@ public final class HandlerC6136l1 extends HandlerC9849i {
         if (message.what != 1) {
             z = false;
         }
-        C6378r.m20516a(z);
-        this.f19462a.m21258d((C6120i.AbstractC6122b) message.obj);
+        C6378r.m20517a(z);
+        this.f19462a.m21259d((C6120i.AbstractC6122b) message.obj);
     }
 }

@@ -17,10 +17,10 @@ public interface ToLongFunction<T> {
         }
 
         @Override
-        public long mo22232g(Object obj) {
+        public long mo22233g(Object obj) {
             return this.f18067a.applyAsLong(obj);
         }
     }
 
-    long mo22232g(Object obj);
+    long mo22233g(Object obj);
 }

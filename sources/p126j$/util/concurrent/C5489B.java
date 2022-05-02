@@ -21,8 +21,8 @@ final class C5489B implements AbstractC5464C {
     }
 
     @Override
-    public boolean mo22124a(Consumer consumer) {
-        return AbstractC5485a.m22562s(this, consumer);
+    public boolean mo22125a(Consumer consumer) {
+        return AbstractC5485a.m22563s(this, consumer);
     }
 
     public C5489B trySplit() {
@@ -56,7 +56,7 @@ final class C5489B implements AbstractC5464C {
             long j4 = this.f17983d;
             ThreadLocalRandom current = ThreadLocalRandom.current();
             do {
-                qVar.mo22127e(current.m22529e(j3, j4));
+                qVar.mo22128e(current.m22530e(j3, j4));
                 j++;
             } while (j < j2);
         }
@@ -64,7 +64,7 @@ final class C5489B implements AbstractC5464C {
 
     @Override
     public void forEachRemaining(Consumer consumer) {
-        AbstractC5485a.m22570e(this, consumer);
+        AbstractC5485a.m22571e(this, consumer);
     }
 
     @Override
@@ -74,7 +74,7 @@ final class C5489B implements AbstractC5464C {
         if (j >= this.f17981b) {
             return false;
         }
-        qVar.mo22127e(ThreadLocalRandom.current().m22529e(this.f17982c, this.f17983d));
+        qVar.mo22128e(ThreadLocalRandom.current().m22530e(this.f17982c, this.f17983d));
         this.f17980a = j + 1;
         return true;
     }
@@ -86,11 +86,11 @@ final class C5489B implements AbstractC5464C {
 
     @Override
     public long getExactSizeIfKnown() {
-        return AbstractC5485a.m22569h(this);
+        return AbstractC5485a.m22570h(this);
     }
 
     @Override
     public boolean hasCharacteristics(int i) {
-        return AbstractC5485a.m22568j(this, i);
+        return AbstractC5485a.m22569j(this, i);
     }
 }

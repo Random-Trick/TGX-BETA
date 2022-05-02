@@ -27,47 +27,47 @@ public class C6866e1 implements C3950k.AbstractC3952b {
 
         @Override
         public int mo7858Q() {
-            return C5406j.m22807d(this);
+            return C5406j.m22808d(this);
         }
 
         @Override
         public long mo7857X0(boolean z) {
-            return C5406j.m22808c(this, z);
+            return C5406j.m22809c(this, z);
         }
 
         @Override
         public int mo7856b1() {
-            return C5406j.m22805f(this);
+            return C5406j.m22806f(this);
         }
 
         @Override
         public int mo7855c() {
-            return C5064d.m24128d(-16777216, 2130706432, C6866e1.this.f21590c.m23036i());
+            return C5064d.m24129d(-16777216, 2130706432, C6866e1.this.f21590c.m23037i());
         }
 
         @Override
         public int mo7854e(boolean z) {
-            return C5406j.m22809b(this, z);
+            return C5406j.m22810b(this, z);
         }
 
         @Override
         public int mo7853g(boolean z) {
-            return C5406j.m22803h(this, z);
+            return C5406j.m22804h(this, z);
         }
 
         @Override
         public int mo7852o0(boolean z) {
-            return C5406j.m22806e(this, z);
+            return C5406j.m22807e(this, z);
         }
 
         @Override
         public int mo7851p0(boolean z) {
-            return C5064d.m24128d(-1, Integer.MAX_VALUE, C6866e1.this.f21590c.m23036i());
+            return C5064d.m24129d(-1, Integer.MAX_VALUE, C6866e1.this.f21590c.m23037i());
         }
 
         @Override
         public int mo7850r0(boolean z) {
-            return C5406j.m22804g(this, z);
+            return C5406j.m22805g(this, z);
         }
     }
 
@@ -75,8 +75,8 @@ public class C6866e1 implements C3950k.AbstractC3952b {
         this.f21586M = view;
         Path path = new Path();
         this.f21588a = path;
-        int i = C1357a0.m37541i(10.0f);
-        int i2 = C1357a0.m37541i(5.0f);
+        int i = C1357a0.m37544i(10.0f);
+        int i2 = C1357a0.m37544i(5.0f);
         path.setFillType(Path.FillType.EVEN_ODD);
         float f = (-i) / 2.0f;
         float f2 = -i2;
@@ -99,7 +99,7 @@ public class C6866e1 implements C3950k.AbstractC3952b {
     public void mo35Y0(int i, float f, C3950k kVar) {
     }
 
-    public final void m18730b(Canvas canvas, int i, int i2, int i3) {
+    public final void m18731b(Canvas canvas, int i, int i2, int i3) {
         canvas.save();
         float f = i2;
         canvas.translate(i, f);
@@ -107,36 +107,36 @@ public class C6866e1 implements C3950k.AbstractC3952b {
         if (f2 != 0.0f) {
             canvas.rotate(f2);
         }
-        canvas.drawPath(this.f21588a, C1410y.m37039g(i3));
+        canvas.drawPath(this.f21588a, C1410y.m37042g(i3));
         canvas.restore();
         if (this.f21590c != null && this.f21587N < 1.0f) {
-            boolean G2 = C4403w.m27984G2();
-            int i4 = C1357a0.m37541i(24.0f);
+            boolean G2 = C4403w.m27986G2();
+            int i4 = C1357a0.m37544i(24.0f);
             int i5 = G2 ? 1 : -1;
             canvas.save();
             float f3 = i + (i4 * i5);
             canvas.scale(0.85f, 0.85f, f3, f);
-            this.f21590c.m23039d(canvas, f3, f, G2 ? 3 : 5, 1.0f - this.f21587N);
+            this.f21590c.m23040d(canvas, f3, f, G2 ? 3 : 5, 1.0f - this.f21587N);
             canvas.restore();
         }
     }
 
-    public void m18729c(boolean z, boolean z2) {
-        this.f21589b.m29575p(z, z2);
+    public void m18730c(boolean z, boolean z2) {
+        this.f21589b.m29577p(z, z2);
     }
 
-    public void m18728d(int i, boolean z, boolean z2) {
+    public void m18729d(int i, boolean z, boolean z2) {
         if (i > 0 || this.f21590c != null) {
             if (this.f21590c == null) {
-                this.f21590c = new C5375a.C5377b().m23020c(this.f21586M).m23018e(new C6867a()).m23021b();
+                this.f21590c = new C5375a.C5377b().m23021c(this.f21586M).m23019e(new C6867a()).m23022b();
             }
-            this.f21590c.m23026u(i, z, z2);
+            this.f21590c.m23027u(i, z, z2);
         }
     }
 
-    public boolean m18727e() {
-        boolean z = !this.f21589b.m29583h();
-        m18729c(z, true);
+    public boolean m18728e() {
+        boolean z = !this.f21589b.m29585h();
+        m18730c(z, true);
         return z;
     }
 }

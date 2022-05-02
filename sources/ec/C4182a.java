@@ -18,7 +18,7 @@ public final class C4182a extends ProxySelector {
     @Override
     public List<Proxy> select(URI uri) {
         if (uri != null) {
-            return C5303m.m23370b(Proxy.NO_PROXY);
+            return C5303m.m23371b(Proxy.NO_PROXY);
         }
         throw new IllegalArgumentException("uri must not be null".toString());
     }

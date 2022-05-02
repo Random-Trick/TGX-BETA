@@ -37,47 +37,47 @@ import p139jb.AbstractRunnableC5910b;
 import p350yd.C10536ab;
 
 public class FirebaseListenerService extends FirebaseMessagingService {
-    public static C4384m f25644Q;
-    public final Object f25645P = new Object();
+    public static C4384m f25647Q;
+    public final Object f25648P = new Object();
 
     public class C7914a extends AbstractRunnableC5910b {
-        public final AtomicInteger f25646M;
-        public final long f25647N;
-        public final int f25648O;
-        public final C10536ab f25649P;
-        public final boolean f25650Q;
-        public final CountDownLatch f25651R;
+        public final AtomicInteger f25649M;
+        public final long f25650N;
+        public final int f25651O;
+        public final C10536ab f25652P;
+        public final boolean f25653Q;
+        public final CountDownLatch f25654R;
 
         public C7914a(AtomicInteger atomicInteger, long j, int i, C10536ab abVar, boolean z, CountDownLatch countDownLatch) {
-            this.f25646M = atomicInteger;
-            this.f25647N = j;
-            this.f25648O = i;
-            this.f25649P = abVar;
-            this.f25650Q = z;
-            this.f25651R = countDownLatch;
+            this.f25649M = atomicInteger;
+            this.f25650N = j;
+            this.f25651O = i;
+            this.f25652P = abVar;
+            this.f25653Q = z;
+            this.f25654R = countDownLatch;
         }
 
         @Override
         public void mo1364b() {
-            synchronized (FirebaseListenerService.this.f25645P) {
-                if (this.f25646M.compareAndSet(0, 1)) {
-                    C7903b.C7904a.m14399a(this.f25647N, this.f25648O, "Starting a foreground task because the job is running too long", new Object[0]);
-                    FirebaseListenerService.this.m14280H(this.f25649P, this.f25650Q, this.f25647N, this.f25648O);
-                    this.f25651R.countDown();
+            synchronized (FirebaseListenerService.this.f25648P) {
+                if (this.f25649M.compareAndSet(0, 1)) {
+                    C7903b.C7904a.m14398a(this.f25650N, this.f25651O, "Starting a foreground task because the job is running too long", new Object[0]);
+                    FirebaseListenerService.this.m14279H(this.f25652P, this.f25653Q, this.f25650N, this.f25651O);
+                    this.f25654R.countDown();
                 }
             }
         }
     }
 
-    public void m14285C(long j, int i, long j2, AtomicInteger atomicInteger, CountDownLatch countDownLatch, boolean z, AtomicReference atomicReference) {
+    public void m14284C(long j, int i, long j2, AtomicInteger atomicInteger, CountDownLatch countDownLatch, boolean z, AtomicReference atomicReference) {
         String str;
         AbstractRunnableC5910b bVar;
-        C7903b.C7904a.m14399a(j, i, "processPushOrSync finished in %dms", Long.valueOf(SystemClock.uptimeMillis() - j2));
-        synchronized (this.f25645P) {
+        C7903b.C7904a.m14398a(j, i, "processPushOrSync finished in %dms", Long.valueOf(SystemClock.uptimeMillis() - j2));
+        synchronized (this.f25648P) {
             if (atomicInteger.compareAndSet(1, 2)) {
-                C7903b.C7904a.m14399a(j, i, "Stopping a foreground task", new Object[0]);
-                ForegroundService.m14264e(getApplicationContext(), j, i);
-                SyncTask.m14199r(i);
+                C7903b.C7904a.m14398a(j, i, "Stopping a foreground task", new Object[0]);
+                ForegroundService.m14263e(getApplicationContext(), j, i);
+                SyncTask.m14198r(i);
             } else {
                 int i2 = atomicInteger.get();
                 Object[] objArr = new Object[1];
@@ -89,59 +89,59 @@ public class FirebaseListenerService extends FirebaseMessagingService {
                     str = i2 == 2 ? "finished" : Integer.toString(i2);
                 }
                 objArr[0] = str;
-                C7903b.C7904a.m14399a(j, i, "Finishing without a foreground task, state: %s", objArr);
+                C7903b.C7904a.m14398a(j, i, "Finishing without a foreground task, state: %s", objArr);
                 atomicInteger.set(2);
                 countDownLatch.countDown();
                 if (z && (bVar = (AbstractRunnableC5910b) atomicReference.get()) != null) {
-                    bVar.m21857c();
-                    m14281G().m28055a(bVar);
+                    bVar.m21858c();
+                    m14280G().m28057a(bVar);
                 }
             }
         }
-        C7903b.C7904a.m14399a(j, i, "Finished push processing task in %dms", Long.valueOf(SystemClock.uptimeMillis() - j2));
+        C7903b.C7904a.m14398a(j, i, "Finished push processing task in %dms", Long.valueOf(SystemClock.uptimeMillis() - j2));
     }
 
-    public static String m14284D(C3528d dVar) {
+    public static String m14283D(C3528d dVar) {
         JSONObject jSONObject = new JSONObject();
-        m14282F(jSONObject, "google.sent_time", Long.valueOf(dVar.m30141d()));
-        C3528d.C3530b c = dVar.m30142c();
+        m14281F(jSONObject, "google.sent_time", Long.valueOf(dVar.m30143d()));
+        C3528d.C3530b c = dVar.m30144c();
         if (c != null) {
-            m14282F(jSONObject, "google.notification.sound", c.m30138b());
+            m14281F(jSONObject, "google.notification.sound", c.m30140b());
         } else {
-            Bundle extras = dVar.m30140e().getExtras();
+            Bundle extras = dVar.m30142e().getExtras();
             if (extras != null) {
                 if (extras.containsKey("gcm.n.sound2")) {
-                    m14282F(jSONObject, "google.notification.sound", extras.getString("gcm.n.sound2"));
+                    m14281F(jSONObject, "google.notification.sound", extras.getString("gcm.n.sound2"));
                 } else if (extras.containsKey("gcm.n.sound")) {
-                    m14282F(jSONObject, "google.notification.sound", extras.getString("gcm.n.sound"));
+                    m14281F(jSONObject, "google.notification.sound", extras.getString("gcm.n.sound"));
                 }
             }
         }
-        Map<String, String> b = dVar.m30143b();
+        Map<String, String> b = dVar.m30145b();
         if (b != null) {
             for (Map.Entry<String, String> entry : b.entrySet()) {
-                m14282F(jSONObject, entry.getKey(), entry.getValue());
+                m14281F(jSONObject, entry.getKey(), entry.getValue());
             }
         }
         return jSONObject.toString();
     }
 
-    public static void m14282F(JSONObject jSONObject, String str, Object obj) {
+    public static void m14281F(JSONObject jSONObject, String str, Object obj) {
         try {
-            jSONObject.put(str, m14279I(obj));
+            jSONObject.put(str, m14278I(obj));
         } catch (JSONException unused) {
             Log.m14727e(4, "Cannot set JSON value %s: %s", str, obj);
         }
     }
 
-    public static C4384m m14281G() {
-        if (f25644Q == null) {
-            f25644Q = new C4384m("FcmForegroundServiceTimer");
+    public static C4384m m14280G() {
+        if (f25647Q == null) {
+            f25647Q = new C4384m("FcmForegroundServiceTimer");
         }
-        return f25644Q;
+        return f25647Q;
     }
 
-    public static Object m14279I(Object obj) {
+    public static Object m14278I(Object obj) {
         if (Build.VERSION.SDK_INT >= 19) {
             return JSONObject.wrap(obj);
         }
@@ -169,7 +169,7 @@ public class FirebaseListenerService extends FirebaseMessagingService {
         return obj;
     }
 
-    public final void m14287A(C10536ab abVar, final long j, String str, final int i) {
+    public final void m14286A(C10536ab abVar, final long j, String str, final int i) {
         AtomicReference atomicReference;
         boolean z;
         int i2;
@@ -177,22 +177,22 @@ public class FirebaseListenerService extends FirebaseMessagingService {
         char c;
         int i4;
         String str2;
-        boolean z2 = m14269z();
-        boolean y = m14270y();
+        boolean z2 = m14268z();
+        boolean y = m14269y();
         final long uptimeMillis = SystemClock.uptimeMillis();
         final AtomicInteger atomicInteger = new AtomicInteger(0);
         final CountDownLatch countDownLatch = new CountDownLatch(1);
         AtomicReference atomicReference2 = new AtomicReference();
         boolean k1 = abVar.m4680k1();
         if (z2 || !y || k1) {
-            synchronized (this.f25645P) {
+            synchronized (this.f25648P) {
                 try {
                     try {
-                        C7903b.C7904a.m14399a(j, i, "Starting a foreground task because we may be operating in a constrained environment, doze: %b, network: %b, recovery: %b", Boolean.valueOf(z2), Boolean.valueOf(y), Boolean.valueOf(k1));
+                        C7903b.C7904a.m14398a(j, i, "Starting a foreground task because we may be operating in a constrained environment, doze: %b, network: %b, recovery: %b", Boolean.valueOf(z2), Boolean.valueOf(y), Boolean.valueOf(k1));
                         atomicInteger.set(1);
                         i2 = 2;
                         atomicReference = atomicReference2;
-                        m14280H(abVar, k1, j, i);
+                        m14279H(abVar, k1, j, i);
                         countDownLatch.countDown();
                         z = true;
                     } catch (Throwable th) {
@@ -213,15 +213,15 @@ public class FirebaseListenerService extends FirebaseMessagingService {
         abVar.m4628y2(j, i, str, new Runnable() {
             @Override
             public final void run() {
-                FirebaseListenerService.this.m14285C(j, i, uptimeMillis, atomicInteger, countDownLatch, z3, atomicReference3);
+                FirebaseListenerService.this.m14284C(j, i, uptimeMillis, atomicInteger, countDownLatch, z3, atomicReference3);
             }
         });
         if (!z) {
-            synchronized (this.f25645P) {
+            synchronized (this.f25648P) {
                 if (atomicInteger.get() != i2) {
                     C7914a aVar = new C7914a(atomicInteger, j, i, abVar, k1, countDownLatch);
                     atomicReference.set(aVar);
-                    m14281G().m28052e(aVar, TimeUnit.SECONDS.toMillis(7L));
+                    m14280G().m28054e(aVar, TimeUnit.SECONDS.toMillis(7L));
                 }
             }
         }
@@ -234,9 +234,9 @@ public class FirebaseListenerService extends FirebaseMessagingService {
             c = 0;
             i4 = i;
             i3 = 2;
-            C7903b.C7904a.m14399a(j, i4, "Interrupted.", new Object[0]);
+            C7903b.C7904a.m14398a(j, i4, "Interrupted.", new Object[0]);
         }
-        synchronized (this.f25645P) {
+        synchronized (this.f25648P) {
             int i5 = atomicInteger.get();
             Object[] objArr = new Object[1];
             if (i5 == 0) {
@@ -247,60 +247,60 @@ public class FirebaseListenerService extends FirebaseMessagingService {
                 str2 = i5 == i3 ? "finished" : Integer.toString(i5);
             }
             objArr[c] = str2;
-            C7903b.C7904a.m14399a(j, i4, "Quitting processPush() with state: %s", objArr);
+            C7903b.C7904a.m14398a(j, i4, "Quitting processPush() with state: %s", objArr);
             if (i5 != i3) {
-                SyncTask.m14198s(j, i4);
+                SyncTask.m14197s(j, i4);
             }
         }
     }
 
-    public final void m14280H(C10536ab abVar, boolean z, long j, int i) {
-        ForegroundService.m14265d(getApplicationContext(), C4403w.m27869i1(z ? R.string.RetrieveMessagesError : R.string.RetrievingMessages), (i == -1 || !abVar.m4661q1()) ? null : C4403w.m27865j1(R.string.RetrievingText, abVar.m4745U(i).m1456t()), C7389v0.m16705N0(), 0, j, i);
+    public final void m14279H(C10536ab abVar, boolean z, long j, int i) {
+        ForegroundService.m14264d(getApplicationContext(), C4403w.m27871i1(z ? R.string.RetrieveMessagesError : R.string.RetrievingMessages), (i == -1 || !abVar.m4661q1()) ? null : C4403w.m27867j1(R.string.RetrievingText, abVar.m4745U(i).m1456t()), C7389v0.m16705N0(), 0, j, i);
     }
 
     @Override
-    public void mo14278n() {
-        C1379j0.m37356L(getApplicationContext());
-        C7903b.C7904a.m14398b("onDeletedMessages: performing sync for all accounts", new Object[0]);
+    public void mo14277n() {
+        C1379j0.m37359L(getApplicationContext());
+        C7903b.C7904a.m14397b("onDeletedMessages: performing sync for all accounts", new Object[0]);
         C10536ab.m4723Z1(getApplicationContext(), -1, 3, 0L, !C10536ab.m4677l1(), 0L);
     }
 
     @Override
-    public void mo14277o(C3528d dVar) {
+    public void mo14276o(C3528d dVar) {
         final int i;
-        final String D = m14284D(dVar);
-        long d = dVar.m30141d();
-        C1379j0.m37356L(getApplicationContext());
-        final long b3 = C4868i.m24726c2().m24733b3();
+        final String D = m14283D(dVar);
+        long d = dVar.m30143d();
+        C1379j0.m37359L(getApplicationContext());
+        final long b3 = C4868i.m24727c2().m24734b3();
         TdApi.Object e = Client.m14793e(new TdApi.GetPushReceiverId(D));
         if (e instanceof TdApi.PushReceiverId) {
-            long j = ((TdApi.PushReceiverId) e).f25416id;
-            int Y = C4868i.m24726c2().m24759Y(j);
+            long j = ((TdApi.PushReceiverId) e).f25419id;
+            int Y = C4868i.m24727c2().m24760Y(j);
             if (Y != -1) {
-                C7903b.C7904a.m14399a(b3, Y, "Found account for receiverId: %d, payload: %s, sentTime: %d", Long.valueOf(j), D, Long.valueOf(d));
+                C7903b.C7904a.m14398a(b3, Y, "Found account for receiverId: %d, payload: %s, sentTime: %d", Long.valueOf(j), D, Long.valueOf(d));
             } else {
-                C7903b.C7904a.m14399a(b3, Y, "Couldn't find account for receiverId: %d. Sending to all accounts, payload: %s, sentTime: %d", Long.valueOf(j), D, Long.valueOf(d));
+                C7903b.C7904a.m14398a(b3, Y, "Couldn't find account for receiverId: %d. Sending to all accounts, payload: %s, sentTime: %d", Long.valueOf(j), D, Long.valueOf(d));
             }
             i = Y;
-        } else if (C5070i.m24061i(D) || D.equals("{}") || D.equals("{\"badge\":\"0\"}")) {
-            C7903b.C7904a.m14399a(b3, -1, "Empty payload: %s, error: %s. Quitting task.", D, C4779t2.m25378z5(e));
+        } else if (C5070i.m24062i(D) || D.equals("{}") || D.equals("{\"badge\":\"0\"}")) {
+            C7903b.C7904a.m14398a(b3, -1, "Empty payload: %s, error: %s. Quitting task.", D, C4779t2.m25379z5(e));
             return;
         } else {
-            C7903b.C7904a.m14399a(b3, -1, "Couldn't fetch receiverId: %s, payload: %s. Sending to all instances.", C4779t2.m25378z5(e), D);
+            C7903b.C7904a.m14398a(b3, -1, "Couldn't fetch receiverId: %s, payload: %s. Sending to all instances.", C4779t2.m25379z5(e), D);
             i = -1;
         }
         C10536ab.m4664p1(i).m4790I2(new AbstractC5918j() {
             @Override
             public final void mo1330a(Object obj) {
-                FirebaseListenerService.this.m14287A(b3, D, i, (C10536ab) obj);
+                FirebaseListenerService.this.m14286A(b3, D, i, (C10536ab) obj);
             }
         });
     }
 
     @Override
-    public void mo14276q(final String str) {
-        C1379j0.m37356L(getApplicationContext());
-        C7903b.C7904a.m14398b("onNewToken %s, sending to all accounts", str);
+    public void mo14275q(final String str) {
+        C1379j0.m37359L(getApplicationContext());
+        C7903b.C7904a.m14397b("onNewToken %s, sending to all accounts", str);
         C10536ab.m4667o1().m4790I2(new AbstractC5918j() {
             @Override
             public final void mo1330a(Object obj) {
@@ -309,12 +309,12 @@ public class FirebaseListenerService extends FirebaseMessagingService {
         });
     }
 
-    public final boolean m14270y() {
+    public final boolean m14269y() {
         NetworkInfo activeNetworkInfo = ((ConnectivityManager) getSystemService("connectivity")).getActiveNetworkInfo();
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
-    public final boolean m14269z() {
+    public final boolean m14268z() {
         if (Build.VERSION.SDK_INT >= 23) {
             return ((PowerManager) getSystemService("power")).isDeviceIdleMode();
         }

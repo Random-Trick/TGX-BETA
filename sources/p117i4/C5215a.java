@@ -46,12 +46,12 @@ public final class C5215a implements C4260a.AbstractC4262b {
 
     @Override
     public byte[] getWrappedMetadataBytes() {
-        return C4263b.m28324a(this);
+        return C4263b.m28326a(this);
     }
 
     @Override
     public C6600g1 getWrappedMetadataFormat() {
-        return C4263b.m28323b(this);
+        return C4263b.m28325b(this);
     }
 
     public int hashCode() {
@@ -97,19 +97,19 @@ public final class C5215a implements C4260a.AbstractC4262b {
         }
         switch (c) {
             case 0:
-                bVar.m19537M(this.f17352b);
+                bVar.m19538M(this.f17352b);
                 return;
             case 1:
-                bVar.m19502k0(this.f17352b);
+                bVar.m19503k0(this.f17352b);
                 return;
             case 2:
-                bVar.m19530T(this.f17352b);
+                bVar.m19531T(this.f17352b);
                 return;
             case 3:
-                bVar.m19538L(this.f17352b);
+                bVar.m19539L(this.f17352b);
                 return;
             case 4:
-                bVar.m19536N(this.f17352b);
+                bVar.m19537N(this.f17352b);
                 return;
             default:
                 return;
@@ -134,7 +134,7 @@ public final class C5215a implements C4260a.AbstractC4262b {
     }
 
     public C5215a(Parcel parcel) {
-        this.f17351a = (String) C1216l0.m37968j(parcel.readString());
-        this.f17352b = (String) C1216l0.m37968j(parcel.readString());
+        this.f17351a = (String) C1216l0.m37971j(parcel.readString());
+        this.f17352b = (String) C1216l0.m37971j(parcel.readString());
     }
 }

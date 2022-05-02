@@ -8,12 +8,12 @@ import p016b1.C1132h;
 public class C9400c extends C9405f {
 
     public static final class C9401a {
-        public final OutputConfiguration f30439a;
-        public String f30440b;
-        public boolean f30441c;
+        public final OutputConfiguration f30442a;
+        public String f30443b;
+        public boolean f30444c;
 
         public C9401a(OutputConfiguration outputConfiguration) {
-            this.f30439a = outputConfiguration;
+            this.f30442a = outputConfiguration;
         }
 
         public boolean equals(Object obj) {
@@ -21,14 +21,14 @@ public class C9400c extends C9405f {
                 return false;
             }
             C9401a aVar = (C9401a) obj;
-            return Objects.equals(this.f30439a, aVar.f30439a) && this.f30441c == aVar.f30441c && Objects.equals(this.f30440b, aVar.f30440b);
+            return Objects.equals(this.f30442a, aVar.f30442a) && this.f30444c == aVar.f30444c && Objects.equals(this.f30443b, aVar.f30443b);
         }
 
         public int hashCode() {
-            int hashCode = this.f30439a.hashCode() ^ 31;
-            int i = (this.f30441c ? 1 : 0) ^ ((hashCode << 5) - hashCode);
+            int hashCode = this.f30442a.hashCode() ^ 31;
+            int i = (this.f30444c ? 1 : 0) ^ ((hashCode << 5) - hashCode);
             int i2 = (i << 5) - i;
-            String str = this.f30440b;
+            String str = this.f30443b;
             return (str == null ? 0 : str.hashCode()) ^ i2;
         }
     }
@@ -43,7 +43,7 @@ public class C9400c extends C9405f {
 
     @Override
     public String mo8790a() {
-        return ((C9401a) this.f30444a).f30440b;
+        return ((C9401a) this.f30447a).f30443b;
     }
 
     @Override
@@ -53,13 +53,13 @@ public class C9400c extends C9405f {
 
     @Override
     public void mo8788c(String str) {
-        ((C9401a) this.f30444a).f30440b = str;
+        ((C9401a) this.f30447a).f30443b = str;
     }
 
     @Override
     public Object mo8787d() {
-        C1132h.m38326a(this.f30444a instanceof C9401a);
-        return ((C9401a) this.f30444a).f30439a;
+        C1132h.m38329a(this.f30447a instanceof C9401a);
+        return ((C9401a) this.f30447a).f30442a;
     }
 
     public C9400c(Object obj) {

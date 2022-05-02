@@ -16,12 +16,12 @@ public final class C5793x1 extends AbstractC5558A1 implements AbstractC5749o2 {
     }
 
     @Override
-    AbstractC5558A1 mo22129a(AbstractC5468G g, long j, long j2) {
+    AbstractC5558A1 mo22130a(AbstractC5468G g, long j, long j2) {
         return new C5793x1(this, g, j, j2);
     }
 
     @Override
-    public void mo22134d(int i) {
+    public void mo22135d(int i) {
         int i2 = this.f18101f;
         if (i2 < this.f18102g) {
             int[] iArr = this.f18507h;
@@ -32,7 +32,7 @@ public final class C5793x1 extends AbstractC5558A1 implements AbstractC5749o2 {
         throw new IndexOutOfBoundsException(Integer.toString(this.f18101f));
     }
 
-    public void mo22128k(Integer num) {
-        AbstractC5572D0.m22417k(this, num);
+    public void mo22129k(Integer num) {
+        AbstractC5572D0.m22418k(this, num);
     }
 }

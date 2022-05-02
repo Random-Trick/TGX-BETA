@@ -13,49 +13,49 @@ import p309w2.C9951c;
 import p324x2.C10083i;
 
 public class C9956d {
-    public final Set<String> f32345a;
-    public final C9951c.AbstractC9953b f32346b;
-    public final C9951c.AbstractC9952a f32347c;
-    public boolean f32348d;
-    public boolean f32349e;
-    public C9951c.AbstractC9955d f32350f;
+    public final Set<String> f32348a;
+    public final C9951c.AbstractC9953b f32349b;
+    public final C9951c.AbstractC9952a f32350c;
+    public boolean f32351d;
+    public boolean f32352e;
+    public C9951c.AbstractC9955d f32353f;
 
     public class RunnableC9957a implements Runnable {
-        public final C9951c.AbstractC9954c f32351M;
-        public final Context f32353a;
-        public final String f32354b;
-        public final String f32355c;
+        public final C9951c.AbstractC9954c f32354M;
+        public final Context f32356a;
+        public final String f32357b;
+        public final String f32358c;
 
         public RunnableC9957a(Context context, String str, String str2, C9951c.AbstractC9954c cVar) {
-            this.f32353a = context;
-            this.f32354b = str;
-            this.f32355c = str2;
-            this.f32351M = cVar;
+            this.f32356a = context;
+            this.f32357b = str;
+            this.f32358c = str2;
+            this.f32354M = cVar;
         }
 
         @Override
         public void run() {
             try {
-                C9956d.this.m6423h(this.f32353a, this.f32354b, this.f32355c);
-                this.f32351M.m6433a();
+                C9956d.this.m6423h(this.f32356a, this.f32357b, this.f32358c);
+                this.f32354M.m6433a();
             } catch (UnsatisfiedLinkError e) {
-                this.f32351M.m6432b(e);
+                this.f32354M.m6432b(e);
             } catch (C9950b e2) {
-                this.f32351M.m6432b(e2);
+                this.f32354M.m6432b(e2);
             }
         }
     }
 
     public class C9958b implements FilenameFilter {
-        public final String f32356a;
+        public final String f32359a;
 
         public C9958b(String str) {
-            this.f32356a = str;
+            this.f32359a = str;
         }
 
         @Override
         public boolean accept(File file, String str) {
-            return str.startsWith(this.f32356a);
+            return str.startsWith(this.f32359a);
         }
     }
 
@@ -66,10 +66,10 @@ public class C9956d {
     public void m6429b(Context context, String str, String str2) {
         File c = m6428c(context);
         File d = m6427d(context, str, str2);
-        File[] listFiles = c.listFiles(new C9958b(this.f32346b.mo6418a(str)));
+        File[] listFiles = c.listFiles(new C9958b(this.f32349b.mo6418a(str)));
         if (listFiles != null) {
             for (File file : listFiles) {
-                if (this.f32348d || !file.getAbsolutePath().equals(d.getAbsolutePath())) {
+                if (this.f32351d || !file.getAbsolutePath().equals(d.getAbsolutePath())) {
                     file.delete();
                 }
             }
@@ -81,7 +81,7 @@ public class C9956d {
     }
 
     public File m6427d(Context context, String str, String str2) {
-        String a = this.f32346b.mo6418a(str);
+        String a = this.f32349b.mo6418a(str);
         if (C9960f.m6413a(str2)) {
             return new File(m6428c(context), a);
         }
@@ -114,24 +114,24 @@ public class C9956d {
 
     public final void m6423h(Context context, String str, String str2) {
         Throwable th;
-        if (!this.f32345a.contains(str) || this.f32348d) {
+        if (!this.f32348a.contains(str) || this.f32351d) {
             try {
-                this.f32346b.mo6417b(str);
-                this.f32345a.add(str);
+                this.f32349b.mo6417b(str);
+                this.f32348a.add(str);
                 m6420k("%s (%s) was loaded normally!", str, str2);
             } catch (UnsatisfiedLinkError e) {
                 m6420k("Loading the library normally failed: %s", Log.getStackTraceString(e));
                 m6420k("%s (%s) was not loaded normally, re-linking...", str, str2);
                 File d = m6427d(context, str, str2);
-                if (!d.exists() || this.f32348d) {
-                    if (this.f32348d) {
+                if (!d.exists() || this.f32351d) {
+                    if (this.f32351d) {
                         m6420k("Forcing a re-link of %s (%s)...", str, str2);
                     }
                     m6429b(context, str, str2);
-                    this.f32347c.mo6434a(context, this.f32346b.mo6415d(), this.f32346b.mo6418a(str), d, this);
+                    this.f32350c.mo6434a(context, this.f32349b.mo6415d(), this.f32349b.mo6418a(str), d, this);
                 }
                 try {
-                    if (this.f32349e) {
+                    if (this.f32352e) {
                         C10083i iVar = null;
                         try {
                             C10083i iVar2 = new C10083i(d);
@@ -139,7 +139,7 @@ public class C9956d {
                                 List<String> y0 = iVar2.m6059y0();
                                 iVar2.close();
                                 for (String str3 : y0) {
-                                    m6426e(context, this.f32346b.mo6416c(str3));
+                                    m6426e(context, this.f32349b.mo6416c(str3));
                                 }
                             } catch (Throwable th2) {
                                 th = th2;
@@ -153,8 +153,8 @@ public class C9956d {
                     }
                 } catch (IOException unused) {
                 }
-                this.f32346b.mo6414e(d.getAbsolutePath());
-                this.f32345a.add(str);
+                this.f32349b.mo6414e(d.getAbsolutePath());
+                this.f32348a.add(str);
                 m6420k("%s (%s) was re-linked!", str, str2);
             }
         } else {
@@ -163,12 +163,12 @@ public class C9956d {
     }
 
     public C9956d m6422i(C9951c.AbstractC9955d dVar) {
-        this.f32350f = dVar;
+        this.f32353f = dVar;
         return this;
     }
 
     public void m6421j(String str) {
-        C9951c.AbstractC9955d dVar = this.f32350f;
+        C9951c.AbstractC9955d dVar = this.f32353f;
         if (dVar != null) {
             dVar.mo6431a(str);
         }
@@ -179,17 +179,17 @@ public class C9956d {
     }
 
     public C9956d m6419l() {
-        this.f32349e = true;
+        this.f32352e = true;
         return this;
     }
 
     public C9956d(C9951c.AbstractC9953b bVar, C9951c.AbstractC9952a aVar) {
-        this.f32345a = new HashSet();
+        this.f32348a = new HashSet();
         if (bVar == null) {
             throw new IllegalArgumentException("Cannot pass null library loader");
         } else if (aVar != null) {
-            this.f32346b = bVar;
-            this.f32347c = aVar;
+            this.f32349b = bVar;
+            this.f32350c = aVar;
         } else {
             throw new IllegalArgumentException("Cannot pass null library installer");
         }

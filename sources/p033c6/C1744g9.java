@@ -10,7 +10,7 @@ public final class C1744g9 {
     }
 
     @AbstractC1707e2(zza = 1)
-    public final EnumC1846n8 m36018a() {
+    public final EnumC1846n8 m36021a() {
         return this.f6314a;
     }
 }

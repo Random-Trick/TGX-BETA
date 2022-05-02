@@ -9,7 +9,7 @@ public final class C5529k implements AbstractC5530l {
         this.f18072a = intConsumer;
     }
 
-    public static AbstractC5530l m22484a(IntConsumer intConsumer) {
+    public static AbstractC5530l m22485a(IntConsumer intConsumer) {
         if (intConsumer == null) {
             return null;
         }
@@ -17,7 +17,7 @@ public final class C5529k implements AbstractC5530l {
     }
 
     @Override
-    public void mo22144d(int i) {
+    public void mo22145d(int i) {
         this.f18072a.accept(i);
     }
 }

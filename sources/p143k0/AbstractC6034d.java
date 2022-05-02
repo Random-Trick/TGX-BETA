@@ -14,9 +14,9 @@ public abstract class AbstractC6034d<T> implements Iterator<T>, p126j$.util.Iter
         this.f19194a = i;
     }
 
-    public abstract T mo21512a(int i);
+    public abstract T mo21513a(int i);
 
-    public abstract void mo21511b(int i);
+    public abstract void mo21512b(int i);
 
     @Override
     public void forEachRemaining(Consumer consumer) {
@@ -36,7 +36,7 @@ public abstract class AbstractC6034d<T> implements Iterator<T>, p126j$.util.Iter
     @Override
     public T next() {
         if (hasNext()) {
-            T a = mo21512a(this.f19195b);
+            T a = mo21513a(this.f19195b);
             this.f19195b++;
             this.f19196c = true;
             return a;
@@ -49,7 +49,7 @@ public abstract class AbstractC6034d<T> implements Iterator<T>, p126j$.util.Iter
         if (this.f19196c) {
             int i = this.f19195b - 1;
             this.f19195b = i;
-            mo21511b(i);
+            mo21512b(i);
             this.f19194a--;
             this.f19196c = false;
             return;

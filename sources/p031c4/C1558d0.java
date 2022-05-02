@@ -18,24 +18,24 @@ public final class C1558d0 {
         this.f5553b = new AbstractC8974t[list.size()];
     }
 
-    public void m36471a(long j, C1189b0 b0Var) {
-        C8953b.m10846a(j, b0Var, this.f5553b);
+    public void m36474a(long j, C1189b0 b0Var) {
+        C8953b.m10845a(j, b0Var, this.f5553b);
     }
 
-    public void m36470b(AbstractC8960h hVar, AbstractC1571i0.C1575d dVar) {
+    public void m36473b(AbstractC8960h hVar, AbstractC1571i0.C1575d dVar) {
         for (int i = 0; i < this.f5553b.length; i++) {
-            dVar.m36406a();
-            AbstractC8974t r = hVar.mo6039r(dVar.m36404c(), 3);
+            dVar.m36409a();
+            AbstractC8974t r = hVar.mo6039r(dVar.m36407c(), 3);
             C6600g1 g1Var = this.f5552a.get(i);
             String str = g1Var.f20575U;
             boolean z = "application/cea-608".equals(str) || "application/cea-708".equals(str);
             String valueOf = String.valueOf(str);
-            C1186a.m38188b(z, valueOf.length() != 0 ? "Invalid closed caption mime type provided: ".concat(valueOf) : new String("Invalid closed caption mime type provided: "));
+            C1186a.m38191b(z, valueOf.length() != 0 ? "Invalid closed caption mime type provided: ".concat(valueOf) : new String("Invalid closed caption mime type provided: "));
             String str2 = g1Var.f20581a;
             if (str2 == null) {
-                str2 = dVar.m36405b();
+                str2 = dVar.m36408b();
             }
-            r.mo10798a(new C6600g1.C6602b().m19875S(str2).m19858e0(str).m19854g0(g1Var.f20567M).m19872V(g1Var.f20585c).m19888F(g1Var.f20596m0).m19874T(g1Var.f20577W).m19889E());
+            r.mo10797a(new C6600g1.C6602b().m19876S(str2).m19859e0(str).m19855g0(g1Var.f20567M).m19873V(g1Var.f20585c).m19889F(g1Var.f20596m0).m19875T(g1Var.f20577W).m19890E());
             this.f5553b[i] = r;
         }
     }

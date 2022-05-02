@@ -10,7 +10,7 @@ final class C5740m3 extends AbstractC5745n3 implements Consumer {
     }
 
     @Override
-    public void mo22128k(Object obj) {
+    public void mo22129k(Object obj) {
         Object[] objArr = this.f18429b;
         int i = this.f18435a;
         this.f18435a = i + 1;

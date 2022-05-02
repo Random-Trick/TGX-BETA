@@ -10,7 +10,7 @@ public final class C3296xa implements AbstractC5913e {
     @Override
     public final Object get() {
         String i1;
-        i1 = C4403w.m27869i1(R.string.language_continueInLanguage);
+        i1 = C4403w.m27871i1(R.string.language_continueInLanguage);
         return i1;
     }
 }

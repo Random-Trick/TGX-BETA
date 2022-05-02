@@ -4,10 +4,10 @@ import java.util.Set;
 import p336y.AbstractC10268n0;
 
 public class C10308w {
-    public static final AbstractC10295s f33162a = new C10309a();
+    public static final AbstractC10295s f33165a = new C10309a();
 
     public static final class C10309a implements AbstractC10295s {
-        public final AbstractC10316x0 f33163w = AbstractC10316x0.m5482a(new Object());
+        public final AbstractC10316x0 f33166w = AbstractC10316x0.m5482a(new Object());
 
         @Override
         public Object mo5426a(AbstractC10268n0.AbstractC10269a aVar, Object obj) {
@@ -71,11 +71,11 @@ public class C10308w {
 
         @Override
         public AbstractC10316x0 mo5494z() {
-            return this.f33163w;
+            return this.f33166w;
         }
     }
 
     public static AbstractC10295s m5498a() {
-        return f33162a;
+        return f33165a;
     }
 }

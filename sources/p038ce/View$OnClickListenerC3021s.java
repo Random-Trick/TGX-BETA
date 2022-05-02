@@ -31,20 +31,20 @@ public class View$OnClickListenerC3021s extends AbstractC3204vo<C3022a> implemen
         super(context, q6Var);
     }
 
-    public void m32118Bg() {
+    public void m32121Bg() {
         AbstractC9323v4 v4Var = m9131x9().f10147c;
         if (v4Var instanceof View$OnClickListenerC2855p0) {
-            ((View$OnClickListenerC2855p0) v4Var).m33141yh(m9131x9().f10146b);
+            ((View$OnClickListenerC2855p0) v4Var).m33144yh(m9131x9().f10146b);
         }
     }
 
     @Override
     public void mo420Cc(String str) {
         super.mo420Cc(str);
-        this.f10144D0.m460b0(C1363c0.m37417p(str.trim()));
+        this.f10144D0.m460b0(C1363c0.m37420p(str.trim()));
     }
 
-    public void m32117Cg(C3022a aVar) {
+    public void m32120Cg(C3022a aVar) {
         super.m9476Ad(aVar);
         this.f10144D0 = new C11493p(this, aVar.f10145a, aVar.f10146b);
     }
@@ -54,8 +54,8 @@ public class View$OnClickListenerC3021s extends AbstractC3204vo<C3022a> implemen
         View$OnClickListenerC9170d1 d1Var;
         if (i == R.id.menu_btn_clear) {
             m9341T8();
-        } else if (i == R.id.menu_btn_search && (d1Var = this.f30156R) != null) {
-            d1Var.m10019z3();
+        } else if (i == R.id.menu_btn_search && (d1Var = this.f30159R) != null) {
+            d1Var.m10018z3();
         }
     }
 
@@ -71,7 +71,7 @@ public class View$OnClickListenerC3021s extends AbstractC3204vo<C3022a> implemen
 
     @Override
     public CharSequence mo9313X9() {
-        return C4403w.m27869i1(R.string.InviteLinkRequests);
+        return C4403w.m27871i1(R.string.InviteLinkRequests);
     }
 
     @Override
@@ -107,16 +107,16 @@ public class View$OnClickListenerC3021s extends AbstractC3204vo<C3022a> implemen
     @Override
     public void mo414p0(int i, View$OnClickListenerC9170d1 d1Var, LinearLayout linearLayout) {
         if (i == R.id.menu_clear) {
-            d1Var.m10091S1(linearLayout, this);
+            d1Var.m10090S1(linearLayout, this);
         } else if (i == R.id.menu_search) {
             if (m9131x9().f10146b == null || m9131x9().f10146b.isEmpty()) {
-                d1Var.m10054i2(linearLayout, this);
+                d1Var.m10053i2(linearLayout, this);
             }
         }
     }
 
     @Override
-    public void mo30633rg(Context context, CustomRecyclerView customRecyclerView) {
+    public void mo30635rg(Context context, CustomRecyclerView customRecyclerView) {
         this.f10144D0.m467W(context, customRecyclerView);
     }
 

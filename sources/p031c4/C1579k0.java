@@ -18,27 +18,27 @@ public final class C1579k0 {
         this.f5674b = new AbstractC8974t[list.size()];
     }
 
-    public void m36389a(long j, C1189b0 b0Var) {
-        if (b0Var.m38142a() >= 9) {
-            int n = b0Var.m38129n();
-            int n2 = b0Var.m38129n();
-            int D = b0Var.m38156D();
+    public void m36392a(long j, C1189b0 b0Var) {
+        if (b0Var.m38145a() >= 9) {
+            int n = b0Var.m38132n();
+            int n2 = b0Var.m38132n();
+            int D = b0Var.m38159D();
             if (n == 434 && n2 == 1195456820 && D == 3) {
-                C8953b.m10845b(j, b0Var, this.f5674b);
+                C8953b.m10844b(j, b0Var, this.f5674b);
             }
         }
     }
 
-    public void m36388b(AbstractC8960h hVar, AbstractC1571i0.C1575d dVar) {
+    public void m36391b(AbstractC8960h hVar, AbstractC1571i0.C1575d dVar) {
         for (int i = 0; i < this.f5674b.length; i++) {
-            dVar.m36406a();
-            AbstractC8974t r = hVar.mo6039r(dVar.m36404c(), 3);
+            dVar.m36409a();
+            AbstractC8974t r = hVar.mo6039r(dVar.m36407c(), 3);
             C6600g1 g1Var = this.f5673a.get(i);
             String str = g1Var.f20575U;
             boolean z = "application/cea-608".equals(str) || "application/cea-708".equals(str);
             String valueOf = String.valueOf(str);
-            C1186a.m38188b(z, valueOf.length() != 0 ? "Invalid closed caption mime type provided: ".concat(valueOf) : new String("Invalid closed caption mime type provided: "));
-            r.mo10798a(new C6600g1.C6602b().m19875S(dVar.m36405b()).m19858e0(str).m19854g0(g1Var.f20567M).m19872V(g1Var.f20585c).m19888F(g1Var.f20596m0).m19874T(g1Var.f20577W).m19889E());
+            C1186a.m38191b(z, valueOf.length() != 0 ? "Invalid closed caption mime type provided: ".concat(valueOf) : new String("Invalid closed caption mime type provided: "));
+            r.mo10797a(new C6600g1.C6602b().m19876S(dVar.m36408b()).m19859e0(str).m19855g0(g1Var.f20567M).m19873V(g1Var.f20585c).m19889F(g1Var.f20596m0).m19875T(g1Var.f20577W).m19890E());
             this.f5674b[i] = r;
         }
     }

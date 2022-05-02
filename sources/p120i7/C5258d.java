@@ -34,17 +34,17 @@ public final class C5258d implements AbstractC5021b<C5258d> {
         }
 
         @Override
-        public void mo23512a(Object obj, Writer writer) {
+        public void mo23513a(Object obj, Writer writer) {
             C5261e eVar = new C5261e(writer, C5258d.this.f17423a, C5258d.this.f17424b, C5258d.this.f17425c, C5258d.this.f17426d);
-            eVar.m23507h(obj, false);
-            eVar.m23499p();
+            eVar.m23508h(obj, false);
+            eVar.m23500p();
         }
 
         @Override
-        public String mo23511b(Object obj) {
+        public String mo23512b(Object obj) {
             StringWriter stringWriter = new StringWriter();
             try {
-                mo23512a(obj, stringWriter);
+                mo23513a(obj, stringWriter);
             } catch (IOException unused) {
             }
             return stringWriter.toString();
@@ -73,29 +73,29 @@ public final class C5258d implements AbstractC5021b<C5258d> {
     }
 
     public C5258d() {
-        m23513p(String.class, f17420f);
-        m23513p(Boolean.class, f17421g);
-        m23513p(Date.class, f17422h);
+        m23514p(String.class, f17420f);
+        m23514p(Boolean.class, f17421g);
+        m23514p(Date.class, f17422h);
     }
 
-    public static void m23517l(Object obj, AbstractC4515f fVar) {
+    public static void m23518l(Object obj, AbstractC4515f fVar) {
         throw new C4510c("Couldn't find encoder for type " + obj.getClass().getCanonicalName());
     }
 
-    public static void m23515n(Boolean bool, AbstractC4517h hVar) {
+    public static void m23516n(Boolean bool, AbstractC4517h hVar) {
         hVar.mo5166e(bool.booleanValue());
     }
 
-    public AbstractC4508a m23520i() {
+    public AbstractC4508a m23521i() {
         return new C5259a();
     }
 
-    public C5258d m23519j(AbstractC5020a aVar) {
+    public C5258d m23520j(AbstractC5020a aVar) {
         aVar.mo5164a(this);
         return this;
     }
 
-    public C5258d m23518k(boolean z) {
+    public C5258d m23519k(boolean z) {
         this.f17426d = z;
         return this;
     }
@@ -106,7 +106,7 @@ public final class C5258d implements AbstractC5021b<C5258d> {
         return this;
     }
 
-    public <T> C5258d m23513p(Class<T> cls, AbstractC4516g<? super T> gVar) {
+    public <T> C5258d m23514p(Class<T> cls, AbstractC4516g<? super T> gVar) {
         this.f17424b.put(cls, gVar);
         this.f17423a.remove(cls);
         return this;

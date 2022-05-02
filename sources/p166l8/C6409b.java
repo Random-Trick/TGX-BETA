@@ -11,21 +11,21 @@ public final class C6409b {
         this.f20071b = bArr;
     }
 
-    public static C6409b[] m20448b(byte[] bArr, C6426j jVar, EnumC6422f fVar) {
-        if (bArr.length == jVar.m20417h()) {
-            C6426j.C6428b f = jVar.m20419f(fVar);
-            C6426j.C6427a[] a = f.m20412a();
+    public static C6409b[] m20449b(byte[] bArr, C6426j jVar, EnumC6422f fVar) {
+        if (bArr.length == jVar.m20418h()) {
+            C6426j.C6428b f = jVar.m20420f(fVar);
+            C6426j.C6427a[] a = f.m20413a();
             int i = 0;
             for (C6426j.C6427a aVar : a) {
-                i += aVar.m20414a();
+                i += aVar.m20415a();
             }
             C6409b[] bVarArr = new C6409b[i];
             int i2 = 0;
             for (C6426j.C6427a aVar2 : a) {
-                for (int i3 = 0; i3 < aVar2.m20414a(); i3++) {
-                    int b = aVar2.m20413b();
+                for (int i3 = 0; i3 < aVar2.m20415a(); i3++) {
+                    int b = aVar2.m20414b();
                     i2++;
-                    bVarArr[i2] = new C6409b(b, new byte[f.m20411b() + b]);
+                    bVarArr[i2] = new C6409b(b, new byte[f.m20412b() + b]);
                 }
             }
             int length = bVarArr[0].f20071b.length;
@@ -34,7 +34,7 @@ public final class C6409b {
                 i4--;
             }
             int i5 = i4 + 1;
-            int b2 = length - f.m20411b();
+            int b2 = length - f.m20412b();
             int i6 = 0;
             for (int i7 = 0; i7 < b2; i7++) {
                 for (int i8 = 0; i8 < i2; i8++) {
@@ -61,11 +61,11 @@ public final class C6409b {
         throw new IllegalArgumentException();
     }
 
-    public byte[] m20449a() {
+    public byte[] m20450a() {
         return this.f20071b;
     }
 
-    public int m20447c() {
+    public int m20448c() {
         return this.f20070a;
     }
 }

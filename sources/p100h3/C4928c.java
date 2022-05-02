@@ -18,7 +18,7 @@ public final class C4928c extends AbstractC4934g {
     }
 
     @Override
-    public AbstractC6045a mo24431e() {
+    public AbstractC6045a mo24432e() {
         return this.f16805a;
     }
 
@@ -30,11 +30,11 @@ public final class C4928c extends AbstractC4934g {
             return false;
         }
         AbstractC4934g gVar = (AbstractC4934g) obj;
-        return this.f16805a.equals(gVar.mo24431e()) && this.f16806b.equals(gVar.mo24428h());
+        return this.f16805a.equals(gVar.mo24432e()) && this.f16806b.equals(gVar.mo24429h());
     }
 
     @Override
-    public Map<EnumC10354d, AbstractC4934g.AbstractC4936b> mo24428h() {
+    public Map<EnumC10354d, AbstractC4934g.AbstractC4936b> mo24429h() {
         return this.f16806b;
     }
 

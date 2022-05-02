@@ -12,7 +12,7 @@ public final class C5467F implements Spliterator {
         this.f17933a = g;
     }
 
-    public static Spliterator m22604a(AbstractC5468G g) {
+    public static Spliterator m22605a(AbstractC5468G g) {
         if (g == null) {
             return null;
         }
@@ -51,11 +51,11 @@ public final class C5467F implements Spliterator {
 
     @Override
     public boolean tryAdvance(java.util.function.Consumer consumer) {
-        return this.f17933a.mo22124a(Consumer.VivifiedWrapper.convert(consumer));
+        return this.f17933a.mo22125a(Consumer.VivifiedWrapper.convert(consumer));
     }
 
     @Override
     public Spliterator trySplit() {
-        return m22604a(this.f17933a.trySplit());
+        return m22605a(this.f17933a.trySplit());
     }
 }

@@ -19,15 +19,15 @@ class C5628O1 extends AbstractC5679a2 {
     }
 
     @Override
-    public int mo22321a() {
-        if (this.f18205e.m22242a().contains(EnumC5716i.UNORDERED)) {
+    public int mo22322a() {
+        if (this.f18205e.m22243a().contains(EnumC5716i.UNORDERED)) {
             return EnumC5705f3.f18368r;
         }
         return 0;
     }
 
     @Override
-    public AbstractC5670Y1 mo22320b() {
+    public AbstractC5670Y1 mo22321b() {
         return new C5633P1(this.f18204d, this.f18203c, this.f18202b);
     }
 }

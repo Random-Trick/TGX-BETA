@@ -9,7 +9,7 @@ public class C5545i implements AbstractC5535q, AbstractC5530l {
     private long min = Long.MAX_VALUE;
     private long max = Long.MIN_VALUE;
 
-    public void m22478a(C5545i iVar) {
+    public void m22479a(C5545i iVar) {
         this.count += iVar.count;
         this.sum += iVar.sum;
         this.min = Math.min(this.min, iVar.min);
@@ -17,12 +17,12 @@ public class C5545i implements AbstractC5535q, AbstractC5530l {
     }
 
     @Override
-    public void mo22144d(int i) {
-        mo22127e(i);
+    public void mo22145d(int i) {
+        mo22128e(i);
     }
 
     @Override
-    public void mo22127e(long j) {
+    public void mo22128e(long j) {
         this.count++;
         this.sum += j;
         this.min = Math.min(this.min, j);

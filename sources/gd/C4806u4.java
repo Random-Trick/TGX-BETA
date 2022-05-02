@@ -40,86 +40,86 @@ public class C4806u4 extends AbstractC4761s4 {
     }
 
     @Override
-    public int mo25222X2() {
-        return m26068R9() ? C1357a0.m37541i(46.0f) : C1357a0.m37541i(25.0f) * 2;
+    public int mo25223X2() {
+        return m26069R9() ? C1357a0.m37544i(46.0f) : C1357a0.m37544i(25.0f) * 2;
     }
 
     @Override
-    public void mo25221a0(int i) {
+    public void mo25222a0(int i) {
         int i2;
-        this.f16378V2 = C4619e.m26852j(this.f16377U2, m25928g6());
-        this.f16379W2 = C4619e.m26850l(this.f16377U2);
-        boolean z = m26068R9() || this.f16377U2.duration > 0;
+        this.f16378V2 = C4619e.m26854j(this.f16377U2, m25929g6());
+        this.f16379W2 = C4619e.m26852l(this.f16377U2);
+        boolean z = m26069R9() || this.f16377U2.duration > 0;
         if (z) {
-            i2 = C4779t2.m25660K0(this.f16377U2, m25928g6(), true);
+            i2 = C4779t2.m25661K0(this.f16377U2, m25929g6(), true);
         } else {
-            i2 = m25928g6() ? R.string.OutgoingCall : R.string.IncomingCall;
+            i2 = m25929g6() ? R.string.OutgoingCall : R.string.IncomingCall;
         }
-        String i1 = C4403w.m27869i1(i2);
-        String h = C4619e.m26854h(this.f16122a, z, 1);
-        if (m26068R9()) {
+        String i1 = C4403w.m27871i1(i2);
+        String h = C4619e.m26856h(this.f16122a, z, 1);
+        if (m26069R9()) {
             StringBuilder sb2 = new StringBuilder();
-            sb2.append(C4403w.m27932T2(this.f16122a.date, TimeUnit.SECONDS));
-            if (!C5070i.m24061i(h)) {
+            sb2.append(C4403w.m27934T2(this.f16122a.date, TimeUnit.SECONDS));
+            if (!C5070i.m24062i(h)) {
                 sb2.append(", ");
                 sb2.append(h);
             }
             h = sb2.toString();
         } else {
-            i -= C1357a0.m37541i(40.0f) + C1357a0.m37541i(11.0f);
+            i -= C1357a0.m37544i(40.0f) + C1357a0.m37544i(11.0f);
         }
-        boolean M0 = RunnableC5390g.m22983M0(i1);
+        boolean M0 = RunnableC5390g.m22984M0(i1);
         this.f16382Z2 = M0;
-        this.f16380X2 = TextUtils.ellipsize(i1, C1410y.m37062P(15.0f, M0), i, TextUtils.TruncateAt.END).toString();
-        this.f16381Y2 = TextUtils.ellipsize(h, C1410y.m37040f0(), i - C1357a0.m37541i(20.0f), TextUtils.TruncateAt.END).toString();
-        this.f16383a3 = C7389v0.m16680T1(this.f16380X2, C1410y.m37062P(13.0f, this.f16382Z2));
-        this.f16384b3 = C7389v0.m16680T1(this.f16381Y2, C1410y.m37040f0());
+        this.f16380X2 = TextUtils.ellipsize(i1, C1410y.m37065P(15.0f, M0), i, TextUtils.TruncateAt.END).toString();
+        this.f16381Y2 = TextUtils.ellipsize(h, C1410y.m37043f0(), i - C1357a0.m37544i(20.0f), TextUtils.TruncateAt.END).toString();
+        this.f16383a3 = C7389v0.m16680T1(this.f16380X2, C1410y.m37065P(13.0f, this.f16382Z2));
+        this.f16384b3 = C7389v0.m16680T1(this.f16381Y2, C1410y.m37043f0());
     }
 
     @Override
-    public void mo25220b1(C9552h1 h1Var, Canvas canvas, int i, int i2, int i3) {
-        Drawable X = h1Var.mo14042X(this.f16377U2.isVideo ? R.drawable.baseline_videocam_24 : R.drawable.baseline_phone_24, 0);
-        Drawable X2 = h1Var.mo14042X(this.f16378V2, 0);
-        boolean R9 = m26068R9();
+    public void mo25221b1(C9552h1 h1Var, Canvas canvas, int i, int i2, int i3) {
+        Drawable X = h1Var.mo14041X(this.f16377U2.isVideo ? R.drawable.baseline_videocam_24 : R.drawable.baseline_phone_24, 0);
+        Drawable X2 = h1Var.mo14041X(this.f16378V2, 0);
+        boolean R9 = m26069R9();
         int i4 = R.id.theme_color_file;
         if (R9) {
-            if (m25918h6()) {
+            if (m25919h6()) {
                 i4 = R.id.theme_color_bubbleOut_file;
             }
-            C1362c.m37487b(canvas, X, ((mo25218c3() + i) - (mo25222X2() / 2.0f)) - (X.getMinimumWidth() / 2.0f), (i2 + (mo25222X2() / 2.0f)) - (X.getMinimumHeight() / 2.0f), C1411z.m36998b(i4));
+            C1362c.m37490b(canvas, X, ((mo25219c3() + i) - (mo25223X2() / 2.0f)) - (X.getMinimumWidth() / 2.0f), (i2 + (mo25223X2() / 2.0f)) - (X.getMinimumHeight() / 2.0f), C1411z.m37001b(i4));
         } else {
-            int i5 = C1357a0.m37541i(25.0f);
+            int i5 = C1357a0.m37544i(25.0f);
             float f = i + i5;
             float f2 = i2 + i5;
-            canvas.drawCircle(f, f2, i5, C1410y.m37039g(C11524j.m228N(R.id.theme_color_file)));
-            C1362c.m37487b(canvas, X, f - (X.getMinimumWidth() / 2.0f), f2 - (X.getMinimumHeight() / 2.0f), C1410y.m37055W(-1));
-            i += (i5 * 2) + C1357a0.m37541i(11.0f);
+            canvas.drawCircle(f, f2, i5, C1410y.m37042g(C11524j.m228N(R.id.theme_color_file)));
+            C1362c.m37490b(canvas, X, f - (X.getMinimumWidth() / 2.0f), f2 - (X.getMinimumHeight() / 2.0f), C1410y.m37058W(-1));
+            i += (i5 * 2) + C1357a0.m37544i(11.0f);
         }
-        if (m26068R9()) {
-            i2 -= C1357a0.m37541i(4.0f);
+        if (m26069R9()) {
+            i2 -= C1357a0.m37544i(4.0f);
         }
         float f3 = i;
-        canvas.drawText(this.f16380X2, f3, C1357a0.m37541i(21.0f) + i2, C1410y.m37063O(15.0f, m26154J4(), this.f16382Z2));
+        canvas.drawText(this.f16380X2, f3, C1357a0.m37544i(21.0f) + i2, C1410y.m37066O(15.0f, m26155J4(), this.f16382Z2));
         int i6 = this.f16378V2;
-        C1362c.m37487b(canvas, X2, f3, C1357a0.m37541i(i6 == R.drawable.baseline_call_missed_18 ? 27.5f : i6 == R.drawable.baseline_call_made_18 ? 26.5f : 27.0f) + i2, C1410y.m37055W(C11524j.m228N(this.f16379W2)));
-        canvas.drawText(this.f16381Y2, i + C1357a0.m37541i(20.0f), i2 + C1357a0.m37541i(41.0f), C1410y.m37046c0(13.0f, m25873m3()));
+        C1362c.m37490b(canvas, X2, f3, C1357a0.m37544i(i6 == R.drawable.baseline_call_missed_18 ? 27.5f : i6 == R.drawable.baseline_call_made_18 ? 26.5f : 27.0f) + i2, C1410y.m37058W(C11524j.m228N(this.f16379W2)));
+        canvas.drawText(this.f16381Y2, i + C1357a0.m37544i(20.0f), i2 + C1357a0.m37544i(41.0f), C1410y.m37049c0(13.0f, m25874m3()));
     }
 
     @Override
-    public int mo25219b2() {
+    public int mo25220b2() {
         return AbstractC4761s4.f16062g2 + AbstractC4761s4.f16063h2;
     }
 
     @Override
-    public int mo25218c3() {
-        return ((int) Math.max(Math.max(this.f16383a3, this.f16384b3 + C1357a0.m37541i(20.0f)), m26068R9() ? C1357a0.m37541i(182.0f) : 0.0f)) + C1357a0.m37541i(40.0f) + C1357a0.m37541i(11.0f);
+    public int mo25219c3() {
+        return ((int) Math.max(Math.max(this.f16383a3, this.f16384b3 + C1357a0.m37544i(20.0f)), m26069R9() ? C1357a0.m37544i(182.0f) : 0.0f)) + C1357a0.m37544i(40.0f) + C1357a0.m37544i(11.0f);
     }
 
     @Override
-    public boolean mo25217f8(C9552h1 h1Var, MotionEvent motionEvent) {
+    public boolean mo25218f8(C9552h1 h1Var, MotionEvent motionEvent) {
         long j;
         boolean z = true;
-        if (super.mo25217f8(h1Var, motionEvent)) {
+        if (super.mo25218f8(h1Var, motionEvent)) {
             return true;
         }
         float x = motionEvent.getX();
@@ -132,13 +132,13 @@ public class C4806u4 extends AbstractC4761s4 {
                         this.f16385c3 = false;
                         return true;
                     }
-                } else if (this.f16385c3 && Math.abs(x - this.f16386d3) > C1357a0.m37534p() && Math.abs(y - this.f16387e3) > C1357a0.m37534p()) {
+                } else if (this.f16385c3 && Math.abs(x - this.f16386d3) > C1357a0.m37537p() && Math.abs(y - this.f16387e3) > C1357a0.m37537p()) {
                     this.f16385c3 = false;
                     return true;
                 }
             } else if (this.f16385c3) {
                 this.f16385c3 = true;
-                if (m25928g6()) {
+                if (m25929g6()) {
                     j = C7316a.m17044q(this.f16122a.chatId);
                 } else {
                     j = C7321e.m16984R0(this.f16122a);
@@ -146,13 +146,13 @@ public class C4806u4 extends AbstractC4761s4 {
                 if (j == 0) {
                     return false;
                 }
-                m25889k8();
-                this.f16099O0.m2930B4().m4713c0().m4549t0(m26096P0(), j, null);
+                m25890k8();
+                this.f16099O0.m2930B4().m4713c0().m4549t0(m26097P0(), j, null);
                 return true;
             }
             return this.f16385c3;
         }
-        if (x < m25959d3() || x > m25959d3() + mo25218c3() || y < m25949e3() || y > m25949e3() + mo25222X2()) {
+        if (x < m25960d3() || x > m25960d3() + mo25219c3() || y < m25950e3() || y > m25950e3() + mo25223X2()) {
             z = false;
         }
         this.f16385c3 = z;

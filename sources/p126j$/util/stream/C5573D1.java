@@ -10,24 +10,24 @@ public class C5573D1 extends AbstractC5578E1 {
     }
 
     @Override
-    void mo22396a() {
+    void mo22397a() {
         switch (this.f18123c) {
             case 0:
-                ((AbstractC5627O0) this.f18131a).mo22157i(this.f18124d, this.f18132b);
+                ((AbstractC5627O0) this.f18131a).mo22158i(this.f18124d, this.f18132b);
                 return;
             default:
-                this.f18131a.mo22154n((Object[]) this.f18124d, this.f18132b);
+                this.f18131a.mo22155n((Object[]) this.f18124d, this.f18132b);
                 return;
         }
     }
 
     @Override
-    AbstractC5578E1 mo22395b(int i, int i2) {
+    AbstractC5578E1 mo22396b(int i, int i2) {
         switch (this.f18123c) {
             case 0:
-                return new C5573D1(this, ((AbstractC5627O0) this.f18131a).mo22158f(i), i2);
+                return new C5573D1(this, ((AbstractC5627O0) this.f18131a).mo22159f(i), i2);
             default:
-                return new C5573D1(this, this.f18131a.mo22158f(i), i2);
+                return new C5573D1(this, this.f18131a.mo22159f(i), i2);
         }
     }
 

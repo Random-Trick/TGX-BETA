@@ -6,9 +6,9 @@ import java.util.Random;
 public interface AbstractC7214n0 {
 
     public static class C7215a implements AbstractC7214n0 {
-        public final Random f22974a;
-        public final int[] f22975b;
-        public final int[] f22976c;
+        public final Random f22977a;
+        public final int[] f22978b;
+        public final int[] f22979c;
 
         public C7215a(int i) {
             this(i, new Random());
@@ -29,19 +29,19 @@ public interface AbstractC7214n0 {
 
         @Override
         public int mo17325a() {
-            return this.f22975b.length;
+            return this.f22978b.length;
         }
 
         @Override
         public AbstractC7214n0 mo17324b(int i, int i2) {
             int i3 = i2 - i;
-            int[] iArr = new int[this.f22975b.length - i3];
+            int[] iArr = new int[this.f22978b.length - i3];
             int i4 = 0;
             int i5 = 0;
             while (true) {
-                int[] iArr2 = this.f22975b;
+                int[] iArr2 = this.f22978b;
                 if (i4 >= iArr2.length) {
-                    return new C7215a(iArr, new Random(this.f22974a.nextLong()));
+                    return new C7215a(iArr, new Random(this.f22977a.nextLong()));
                 }
                 if (iArr2[i4] < i || iArr2[i4] >= i2) {
                     iArr[i4 - i5] = iArr2[i4] >= i ? iArr2[i4] - i3 : iArr2[i4];
@@ -54,7 +54,7 @@ public interface AbstractC7214n0 {
 
         @Override
         public int mo17323c() {
-            int[] iArr = this.f22975b;
+            int[] iArr = this.f22978b;
             if (iArr.length > 0) {
                 return iArr[0];
             }
@@ -63,17 +63,17 @@ public interface AbstractC7214n0 {
 
         @Override
         public int mo17322d(int i) {
-            int i2 = this.f22976c[i] - 1;
+            int i2 = this.f22979c[i] - 1;
             if (i2 >= 0) {
-                return this.f22975b[i2];
+                return this.f22978b[i2];
             }
             return -1;
         }
 
         @Override
         public int mo17321e(int i) {
-            int i2 = this.f22976c[i] + 1;
-            int[] iArr = this.f22975b;
+            int i2 = this.f22979c[i] + 1;
+            int[] iArr = this.f22978b;
             if (i2 < iArr.length) {
                 return iArr[i2];
             }
@@ -87,21 +87,21 @@ public interface AbstractC7214n0 {
             int i3 = 0;
             int i4 = 0;
             while (i4 < i2) {
-                iArr[i4] = this.f22974a.nextInt(this.f22975b.length + 1);
+                iArr[i4] = this.f22977a.nextInt(this.f22978b.length + 1);
                 int i5 = i4 + 1;
-                int nextInt = this.f22974a.nextInt(i5);
+                int nextInt = this.f22977a.nextInt(i5);
                 iArr2[i4] = iArr2[nextInt];
                 iArr2[nextInt] = i4 + i;
                 i4 = i5;
             }
             Arrays.sort(iArr);
-            int[] iArr3 = new int[this.f22975b.length + i2];
+            int[] iArr3 = new int[this.f22978b.length + i2];
             int i6 = 0;
             int i7 = 0;
             while (true) {
-                int[] iArr4 = this.f22975b;
+                int[] iArr4 = this.f22978b;
                 if (i3 >= iArr4.length + i2) {
-                    return new C7215a(iArr3, new Random(this.f22974a.nextLong()));
+                    return new C7215a(iArr3, new Random(this.f22977a.nextLong()));
                 }
                 if (i6 >= i2 || i7 != iArr[i6]) {
                     i7++;
@@ -119,7 +119,7 @@ public interface AbstractC7214n0 {
 
         @Override
         public int mo17319g() {
-            int[] iArr = this.f22975b;
+            int[] iArr = this.f22978b;
             if (iArr.length > 0) {
                 return iArr[iArr.length - 1];
             }
@@ -128,7 +128,7 @@ public interface AbstractC7214n0 {
 
         @Override
         public AbstractC7214n0 mo17318h() {
-            return new C7215a(0, new Random(this.f22974a.nextLong()));
+            return new C7215a(0, new Random(this.f22977a.nextLong()));
         }
 
         public C7215a(int i, Random random) {
@@ -136,35 +136,35 @@ public interface AbstractC7214n0 {
         }
 
         public C7215a(int[] iArr, Random random) {
-            this.f22975b = iArr;
-            this.f22974a = random;
-            this.f22976c = new int[iArr.length];
+            this.f22978b = iArr;
+            this.f22977a = random;
+            this.f22979c = new int[iArr.length];
             for (int i = 0; i < iArr.length; i++) {
-                this.f22976c[iArr[i]] = i;
+                this.f22979c[iArr[i]] = i;
             }
         }
     }
 
     public static final class C7216b implements AbstractC7214n0 {
-        public final int f22977a;
+        public final int f22980a;
 
         public C7216b(int i) {
-            this.f22977a = i;
+            this.f22980a = i;
         }
 
         @Override
         public int mo17325a() {
-            return this.f22977a;
+            return this.f22980a;
         }
 
         @Override
         public AbstractC7214n0 mo17324b(int i, int i2) {
-            return new C7216b((this.f22977a - i2) + i);
+            return new C7216b((this.f22980a - i2) + i);
         }
 
         @Override
         public int mo17323c() {
-            return this.f22977a > 0 ? 0 : -1;
+            return this.f22980a > 0 ? 0 : -1;
         }
 
         @Override
@@ -179,7 +179,7 @@ public interface AbstractC7214n0 {
         @Override
         public int mo17321e(int i) {
             int i2 = i + 1;
-            if (i2 < this.f22977a) {
+            if (i2 < this.f22980a) {
                 return i2;
             }
             return -1;
@@ -187,12 +187,12 @@ public interface AbstractC7214n0 {
 
         @Override
         public AbstractC7214n0 mo17320f(int i, int i2) {
-            return new C7216b(this.f22977a + i2);
+            return new C7216b(this.f22980a + i2);
         }
 
         @Override
         public int mo17319g() {
-            int i = this.f22977a;
+            int i = this.f22980a;
             if (i > 0) {
                 return i - 1;
             }

@@ -3,7 +3,7 @@ package p270t3;
 import com.google.android.exoplayer2.extractor.AbstractC3470g;
 
 public interface AbstractC8960h {
-    public static final AbstractC8960h f28848L = new C8961a();
+    public static final AbstractC8960h f28851L = new C8961a();
 
     public class C8961a implements AbstractC8960h {
         @Override

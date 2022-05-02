@@ -15,15 +15,15 @@ class C5471J implements AbstractC5808v, AbstractC5535q, Iterator {
         this.f17942c = c;
     }
 
-    public void m22601a(AbstractC5535q qVar) {
+    public void m22602a(AbstractC5535q qVar) {
         Objects.requireNonNull(qVar);
         while (hasNext()) {
-            qVar.mo22127e(nextLong());
+            qVar.mo22128e(nextLong());
         }
     }
 
     @Override
-    public void mo22127e(long j) {
+    public void mo22128e(long j) {
         this.f17940a = true;
         this.f17941b = j;
     }
@@ -31,24 +31,24 @@ class C5471J implements AbstractC5808v, AbstractC5535q, Iterator {
     @Override
     public void forEachRemaining(Consumer consumer) {
         if (consumer instanceof AbstractC5535q) {
-            m22601a((AbstractC5535q) consumer);
+            m22602a((AbstractC5535q) consumer);
             return;
         }
         Objects.requireNonNull(consumer);
         if (!AbstractC5484X.f17972a) {
             while (hasNext()) {
-                consumer.mo22128k(Long.valueOf(nextLong()));
+                consumer.mo22129k(Long.valueOf(nextLong()));
             }
             return;
         }
-        AbstractC5484X.m22586a(C5471J.class, "{0} calling PrimitiveIterator.OfLong.forEachRemainingLong(action::accept)");
+        AbstractC5484X.m22587a(C5471J.class, "{0} calling PrimitiveIterator.OfLong.forEachRemainingLong(action::accept)");
         throw null;
     }
 
     @Override
     public boolean hasNext() {
         if (!this.f17940a) {
-            this.f17942c.mo22165g(this);
+            this.f17942c.mo22166g(this);
         }
         return this.f17940a;
     }
@@ -58,7 +58,7 @@ class C5471J implements AbstractC5808v, AbstractC5535q, Iterator {
         if (!AbstractC5484X.f17972a) {
             return Long.valueOf(nextLong());
         }
-        AbstractC5484X.m22586a(C5471J.class, "{0} calling PrimitiveIterator.OfLong.nextLong()");
+        AbstractC5484X.m22587a(C5471J.class, "{0} calling PrimitiveIterator.OfLong.nextLong()");
         throw null;
     }
 
@@ -72,7 +72,7 @@ class C5471J implements AbstractC5808v, AbstractC5535q, Iterator {
 
     @Override
     public void remove() {
-        Iterator.CC.m22602a();
+        Iterator.CC.m22603a();
         throw null;
     }
 }

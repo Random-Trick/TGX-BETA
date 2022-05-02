@@ -11,17 +11,17 @@ public class C6267y {
         this.f19786a = new WeakReference(xVar);
     }
 
-    public void m20750a(C6246h hVar, boolean z, Bitmap bitmap) {
+    public void m20751a(C6246h hVar, boolean z, Bitmap bitmap) {
         AbstractC6266x xVar = this.f19786a.get();
         if (xVar != null) {
-            xVar.mo14384k0(hVar, z, bitmap);
+            xVar.mo14383k0(hVar, z, bitmap);
         }
     }
 
-    public void m20749b(C6246h hVar, float f) {
+    public void m20750b(C6246h hVar, float f) {
         AbstractC6266x xVar = this.f19786a.get();
         if (xVar != null) {
-            xVar.mo14383q5(hVar, f);
+            xVar.mo14382q5(hVar, f);
         }
     }
 }

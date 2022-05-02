@@ -15,7 +15,7 @@ public final class C5807u implements PrimitiveIterator.OfLong {
         this.f18528a = vVar;
     }
 
-    public static PrimitiveIterator.OfLong m22126a(AbstractC5808v vVar) {
+    public static PrimitiveIterator.OfLong m22127a(AbstractC5808v vVar) {
         return new C5807u(vVar);
     }
 
@@ -23,7 +23,7 @@ public final class C5807u implements PrimitiveIterator.OfLong {
     public void forEachRemaining(LongConsumer longConsumer) {
         C5471J j = (C5471J) this.f18528a;
         Objects.requireNonNull(j);
-        j.m22601a((AbstractC5535q) longConsumer);
+        j.m22602a((AbstractC5535q) longConsumer);
     }
 
     @Override
@@ -33,7 +33,7 @@ public final class C5807u implements PrimitiveIterator.OfLong {
 
     @Override
     public void forEachRemaining2(LongConsumer longConsumer) {
-        ((C5471J) this.f18528a).m22601a(C5534p.m22483a(longConsumer));
+        ((C5471J) this.f18528a).m22602a(C5534p.m22484a(longConsumer));
     }
 
     @Override

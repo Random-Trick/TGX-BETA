@@ -13,50 +13,50 @@ public final class C4480b {
     public static AbstractC4987a f14824a;
 
     @RecentlyNonNull
-    public static C4479a m27541a(@RecentlyNonNull CameraPosition cameraPosition) {
-        C6378r.m20505l(cameraPosition, "cameraPosition must not be null");
+    public static C4479a m27543a(@RecentlyNonNull CameraPosition cameraPosition) {
+        C6378r.m20506l(cameraPosition, "cameraPosition must not be null");
         try {
-            return new C4479a(m27536f().mo24332O0(cameraPosition));
+            return new C4479a(m27538f().mo24333O0(cameraPosition));
         } catch (RemoteException e) {
             throw new C5245f(e);
         }
     }
 
     @RecentlyNonNull
-    public static C4479a m27540b(@RecentlyNonNull LatLng latLng) {
-        C6378r.m20505l(latLng, "latLng must not be null");
+    public static C4479a m27542b(@RecentlyNonNull LatLng latLng) {
+        C6378r.m20506l(latLng, "latLng must not be null");
         try {
-            return new C4479a(m27536f().mo24331a0(latLng));
+            return new C4479a(m27538f().mo24332a0(latLng));
         } catch (RemoteException e) {
             throw new C5245f(e);
         }
     }
 
     @RecentlyNonNull
-    public static C4479a m27539c(@RecentlyNonNull LatLngBounds latLngBounds, int i, int i2, int i3) {
-        C6378r.m20505l(latLngBounds, "bounds must not be null");
+    public static C4479a m27541c(@RecentlyNonNull LatLngBounds latLngBounds, int i, int i2, int i3) {
+        C6378r.m20506l(latLngBounds, "bounds must not be null");
         try {
-            return new C4479a(m27536f().mo24333I0(latLngBounds, i, i2, i3));
+            return new C4479a(m27538f().mo24334I0(latLngBounds, i, i2, i3));
         } catch (RemoteException e) {
             throw new C5245f(e);
         }
     }
 
     @RecentlyNonNull
-    public static C4479a m27538d(@RecentlyNonNull LatLng latLng, float f) {
-        C6378r.m20505l(latLng, "latLng must not be null");
+    public static C4479a m27540d(@RecentlyNonNull LatLng latLng, float f) {
+        C6378r.m20506l(latLng, "latLng must not be null");
         try {
-            return new C4479a(m27536f().mo24330m1(latLng, f));
+            return new C4479a(m27538f().mo24331m1(latLng, f));
         } catch (RemoteException e) {
             throw new C5245f(e);
         }
     }
 
-    public static void m27537e(@RecentlyNonNull AbstractC4987a aVar) {
-        f14824a = (AbstractC4987a) C6378r.m20506k(aVar);
+    public static void m27539e(@RecentlyNonNull AbstractC4987a aVar) {
+        f14824a = (AbstractC4987a) C6378r.m20507k(aVar);
     }
 
-    public static AbstractC4987a m27536f() {
-        return (AbstractC4987a) C6378r.m20505l(f14824a, "CameraUpdateFactory is not initialized");
+    public static AbstractC4987a m27538f() {
+        return (AbstractC4987a) C6378r.m20506l(f14824a, "CameraUpdateFactory is not initialized");
     }
 }

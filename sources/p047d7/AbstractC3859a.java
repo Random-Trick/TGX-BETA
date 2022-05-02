@@ -5,8 +5,8 @@ import p178m7.AbstractC6794b;
 
 public abstract class AbstractC3859a implements AbstractC3870e {
     @Override
-    public <T> T mo29677a(Class<T> cls) {
-        AbstractC6794b<T> b = mo29676b(cls);
+    public <T> T mo29679a(Class<T> cls) {
+        AbstractC6794b<T> b = mo29678b(cls);
         if (b == null) {
             return null;
         }
@@ -14,7 +14,7 @@ public abstract class AbstractC3859a implements AbstractC3870e {
     }
 
     @Override
-    public <T> Set<T> mo29674d(Class<T> cls) {
-        return mo29675c(cls).get();
+    public <T> Set<T> mo29676d(Class<T> cls) {
+        return mo29677c(cls).get();
     }
 }

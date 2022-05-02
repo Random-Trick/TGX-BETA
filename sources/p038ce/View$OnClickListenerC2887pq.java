@@ -51,7 +51,7 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
         @Override
         public void mo395U2(C2964ra raVar, int i, C4022o oVar, boolean z) {
             if (z) {
-                oVar.m29276c1();
+                oVar.m29278c1();
             } else {
                 oVar.setUser((C4618d7) View$OnClickListenerC2887pq.this.f9665D0.get(i));
             }
@@ -64,17 +64,17 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
 
         @Override
         public void mo9527a(RecyclerView.AbstractC0886d0 d0Var) {
-            View$OnClickListenerC2887pq.this.m33091ah(((C4022o) d0Var.f3479a).getUser());
+            View$OnClickListenerC2887pq.this.m33094ah(((C4022o) d0Var.f3479a).getUser());
         }
 
         @Override
         public boolean mo9526b(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var, int i) {
-            return d0Var.m39332n() == 27;
+            return d0Var.m39335n() == 27;
         }
 
         @Override
         public float mo9525e() {
-            return C4012k.m29329a(this);
+            return C4012k.m29331a(this);
         }
     }
 
@@ -84,8 +84,8 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
 
         @Override
         public void mo421b(RecyclerView recyclerView, int i, int i2) {
-            if (View$OnClickListenerC2887pq.this.m9339Ta() && View$OnClickListenerC2887pq.this.f9668G0 && !View$OnClickListenerC2887pq.this.f9669H0 && View$OnClickListenerC2887pq.this.f9665D0 != null && !View$OnClickListenerC2887pq.this.f9665D0.isEmpty() && View$OnClickListenerC2887pq.this.f9667F0 != 0 && ((LinearLayoutManager) recyclerView.getLayoutManager()).m39546a2() + 10 >= View$OnClickListenerC2887pq.this.f9665D0.size()) {
-                View$OnClickListenerC2887pq.this.m33094Xg();
+            if (View$OnClickListenerC2887pq.this.m9339Ta() && View$OnClickListenerC2887pq.this.f9668G0 && !View$OnClickListenerC2887pq.this.f9669H0 && View$OnClickListenerC2887pq.this.f9665D0 != null && !View$OnClickListenerC2887pq.this.f9665D0.isEmpty() && View$OnClickListenerC2887pq.this.f9667F0 != 0 && ((LinearLayoutManager) recyclerView.getLayoutManager()).m39549a2() + 10 >= View$OnClickListenerC2887pq.this.f9665D0.size()) {
+                View$OnClickListenerC2887pq.this.m33097Xg();
             }
         }
     }
@@ -94,50 +94,50 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
         super(context, q6Var);
     }
 
-    public void m33100Rg(long j, boolean z) {
+    public void m33103Rg(long j, boolean z) {
         if (!m9347Sa() && this.f9665D0 != null) {
-            int Qg = m33101Qg(j);
+            int Qg = m33104Qg(j);
             if (z && Qg == -1) {
-                long d4 = this.f30167b.m2494d4(j);
+                long d4 = this.f30170b.m2494d4(j);
                 if (d4 != 0) {
-                    m33105Mg(new TdApi.MessageSenderUser(d4));
+                    m33108Mg(new TdApi.MessageSenderUser(d4));
                 } else {
-                    m33105Mg(new TdApi.MessageSenderChat(j));
+                    m33108Mg(new TdApi.MessageSenderChat(j));
                 }
             } else if (!z && Qg != -1) {
-                m33092Zg(Qg);
+                m33095Zg(Qg);
             }
         }
     }
 
-    public void m33099Sg(ArrayList arrayList, TdApi.MessageSenders messageSenders) {
+    public void m33102Sg(ArrayList arrayList, TdApi.MessageSenders messageSenders) {
         if (!m9347Sa()) {
             this.f9665D0 = arrayList;
             int length = messageSenders.senders.length;
             this.f9667F0 = length;
             this.f9668G0 = length <= messageSenders.totalCount;
-            m33102Pg();
+            m33105Pg();
             m9204n9();
         }
     }
 
-    public void m33098Tg(TdApi.Object object) {
+    public void m33101Tg(TdApi.Object object) {
         if (object.getConstructor() == -690158467) {
             final TdApi.MessageSenders messageSenders = (TdApi.MessageSenders) object;
             final ArrayList arrayList = new ArrayList(messageSenders.senders.length);
             for (TdApi.MessageSender messageSender : messageSenders.senders) {
-                arrayList.add(m33093Yg(this.f30167b, messageSender, arrayList));
+                arrayList.add(m33096Yg(this.f30170b, messageSender, arrayList));
             }
-            this.f30167b.m2485dd().post(new Runnable() {
+            this.f30170b.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC2887pq.this.m33099Sg(arrayList, messageSenders);
+                    View$OnClickListenerC2887pq.this.m33102Sg(arrayList, messageSenders);
                 }
             });
         }
     }
 
-    public void m33097Ug(TdApi.MessageSenders messageSenders, ArrayList arrayList) {
+    public void m33100Ug(TdApi.MessageSenders messageSenders, ArrayList arrayList) {
         if (!m9347Sa()) {
             boolean z = false;
             this.f9669H0 = false;
@@ -148,38 +148,38 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
             }
             this.f9668G0 = z;
             for (int size = arrayList.size() - 1; size >= 0; size--) {
-                if (m33101Qg(((C4618d7) arrayList.get(size)).m26880h()) != -1) {
+                if (m33104Qg(((C4618d7) arrayList.get(size)).m26882h()) != -1) {
                     arrayList.remove(size);
                 }
             }
-            m33104Ng(arrayList);
+            m33107Ng(arrayList);
         }
     }
 
-    public void m33096Vg(TdApi.User user) {
+    public void m33099Vg(TdApi.User user) {
         ArrayList<C4618d7> arrayList;
         if (!m9347Sa() && (arrayList = this.f9665D0) != null && !arrayList.isEmpty()) {
             Iterator<C4618d7> it = this.f9665D0.iterator();
             while (it.hasNext()) {
                 C4618d7 next = it.next();
-                if (next.m26869s() == user.f25439id) {
-                    next.m26889C(user, 0);
-                    this.f9670I0.m34143o3(C7316a.m17058c(user.f25439id), false);
+                if (next.m26871s() == user.f25442id) {
+                    next.m26891C(user, 0);
+                    this.f9670I0.m34146o3(C7316a.m17058c(user.f25442id), false);
                     return;
                 }
             }
         }
     }
 
-    public boolean m33095Wg(C4618d7 d7Var, View view, int i) {
+    public boolean m33098Wg(C4618d7 d7Var, View view, int i) {
         if (i != R.id.btn_unblockSender) {
             return true;
         }
-        this.f30167b.m2496d2(d7Var.m26876l(), false, this.f30167b.m2392ja());
+        this.f30170b.m2496d2(d7Var.m26878l(), false, this.f30170b.m2392ja());
         return true;
     }
 
-    public static C4618d7 m33093Yg(C10930q6 q6Var, TdApi.MessageSender messageSender, ArrayList<C4618d7> arrayList) {
+    public static C4618d7 m33096Yg(C10930q6 q6Var, TdApi.MessageSender messageSender, ArrayList<C4618d7> arrayList) {
         C4618d7 d7Var;
         int constructor = messageSender.getConstructor();
         if (constructor == -336109341) {
@@ -189,13 +189,13 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
         } else {
             throw new UnsupportedOperationException(messageSender.toString());
         }
-        d7Var.m26891A();
-        d7Var.m26864x(arrayList);
+        d7Var.m26893A();
+        d7Var.m26866x(arrayList);
         return d7Var;
     }
 
     @Override
-    public boolean mo23866A6() {
+    public boolean mo23867A6() {
         return true;
     }
 
@@ -215,8 +215,8 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
     }
 
     @Override
-    public String mo23865D6() {
-        return C4403w.m27869i1(R.string.BlockSender);
+    public String mo23866D6() {
+        return C4403w.m27871i1(R.string.BlockSender);
     }
 
     @Override
@@ -232,14 +232,14 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
     @Override
     public void mo419J(int i, View view) {
         if (i == R.id.menu_btn_addContact) {
-            m33103Og();
+            m33106Og();
         }
     }
 
     @Override
     public void mo1349J3(long j, TdApi.UserStatus userStatus, boolean z) {
         if (!m9347Sa() && this.f9665D0 != null) {
-            this.f9670I0.m34143o3(C7316a.m17058c(j), true);
+            this.f9670I0.m34146o3(C7316a.m17058c(j), true);
         }
     }
 
@@ -253,60 +253,60 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
         C10721i0.m4185l(this, j, i);
     }
 
-    public final void m33105Mg(TdApi.MessageSender messageSender) {
+    public final void m33108Mg(TdApi.MessageSender messageSender) {
         C4618d7 Yg;
         ArrayList<C4618d7> arrayList = this.f9665D0;
-        if (arrayList != null && (Yg = m33093Yg(this.f30167b, messageSender, arrayList)) != null) {
+        if (arrayList != null && (Yg = m33096Yg(this.f30170b, messageSender, arrayList)) != null) {
             this.f9665D0.add(0, Yg);
             if (this.f9665D0.size() == 1) {
-                m33102Pg();
+                m33105Pg();
                 return;
             }
-            int hg = m31306hg();
-            int lg = m31302lg(hg);
-            this.f9670I0.m34240F0().add(0, new C2964ra(27, R.id.user, 0, 0).m32863N(Yg.m26880h()));
-            this.f9670I0.m39311J(0);
+            int hg = m31308hg();
+            int lg = m31304lg(hg);
+            this.f9670I0.m34243F0().add(0, new C2964ra(27, R.id.user, 0, 0).m32866N(Yg.m26882h()));
+            this.f9670I0.m39314J(0);
             if (hg != -1) {
-                ((LinearLayoutManager) m31303kg().getLayoutManager()).m39522z2(hg, lg);
+                ((LinearLayoutManager) m31305kg().getLayoutManager()).m39525z2(hg, lg);
             }
         }
     }
 
-    public final void m33104Ng(ArrayList<C4618d7> arrayList) {
+    public final void m33107Ng(ArrayList<C4618d7> arrayList) {
         if (!arrayList.isEmpty()) {
             int size = this.f9665D0.size();
             ArrayList<C4618d7> arrayList2 = this.f9665D0;
             arrayList2.ensureCapacity(arrayList2.size() + arrayList.size());
             this.f9665D0.addAll(arrayList);
-            List<C2964ra> F0 = this.f9670I0.m34240F0();
-            C5062b.m24159m(F0, F0.size() + arrayList.size());
+            List<C2964ra> F0 = this.f9670I0.m34243F0();
+            C5062b.m24160m(F0, F0.size() + arrayList.size());
             Iterator<C4618d7> it = arrayList.iterator();
             while (it.hasNext()) {
-                F0.add(new C2964ra(27, R.id.user, 0, 0).m32863N(it.next().m26869s()));
+                F0.add(new C2964ra(27, R.id.user, 0, 0).m32866N(it.next().m26871s()));
             }
-            this.f9670I0.m39308M(size, arrayList.size());
+            this.f9670I0.m39311M(size, arrayList.size());
         }
     }
 
-    public final void m33103Og() {
-        RunnableC2374f5 f5Var = new RunnableC2374f5(this.f30165a, this.f30167b);
-        f5Var.m34764Xg(new RunnableC2374f5.C2376b(this));
-        f5Var.m34766Vg(true);
-        f5Var.m34765Wg(true, false);
+    public final void m33106Og() {
+        RunnableC2374f5 f5Var = new RunnableC2374f5(this.f30168a, this.f30170b);
+        f5Var.m34767Xg(new RunnableC2374f5.C2376b(this));
+        f5Var.m34769Vg(true);
+        f5Var.m34768Wg(true, false);
         m9291ac(f5Var);
     }
 
     @Override
     public void mo1348P1(final TdApi.User user) {
-        this.f30167b.m2485dd().post(new Runnable() {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2887pq.this.m33096Vg(user);
+                View$OnClickListenerC2887pq.this.m33099Vg(user);
             }
         });
     }
 
-    public final void m33102Pg() {
+    public final void m33105Pg() {
         ArrayList arrayList = new ArrayList();
         ArrayList<C4618d7> arrayList2 = this.f9665D0;
         if (arrayList2 != null) {
@@ -316,14 +316,14 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
                 arrayList.ensureCapacity(this.f9665D0.size());
                 Iterator<C4618d7> it = this.f9665D0.iterator();
                 while (it.hasNext()) {
-                    arrayList.add(new C2964ra(27, R.id.user, 0, 0).m32863N(it.next().m26880h()));
+                    arrayList.add(new C2964ra(27, R.id.user, 0, 0).m32866N(it.next().m26882h()));
                 }
             }
         }
-        this.f9670I0.m34116x2(arrayList, false);
+        this.f9670I0.m34119x2(arrayList, false);
     }
 
-    public final int m33101Qg(long j) {
+    public final int m33104Qg(long j) {
         ArrayList<C4618d7> arrayList = this.f9665D0;
         if (arrayList == null) {
             return -1;
@@ -331,7 +331,7 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
         int i = 0;
         Iterator<C4618d7> it = arrayList.iterator();
         while (it.hasNext()) {
-            if (it.next().m26880h() == j) {
+            if (it.next().m26882h() == j) {
                 return i;
             }
             i++;
@@ -365,25 +365,25 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
     }
 
     @Override
-    public boolean mo23864X5(RunnableC2374f5 f5Var, View view, TdApi.MessageSender messageSender) {
-        CharSequence m1 = C4403w.m27853m1(messageSender.getConstructor() == -336109341 ? R.string.QBlockUser : R.string.QBlockChat, C1363c0.m37418o0(this.f30167b.m2151yb(messageSender)));
+    public boolean mo23865X5(RunnableC2374f5 f5Var, View view, TdApi.MessageSender messageSender) {
+        CharSequence m1 = C4403w.m27855m1(messageSender.getConstructor() == -336109341 ? R.string.QBlockUser : R.string.QBlockChat, C1363c0.m37421o0(this.f30170b.m2151yb(messageSender)));
         int[] iArr = {R.id.btn_blockSender, R.id.btn_cancel};
         String[] strArr = new String[2];
-        strArr[0] = C4403w.m27869i1(messageSender.getConstructor() == -336109341 ? R.string.BlockUserBtn : R.string.BlockChatBtn);
-        strArr[1] = C4403w.m27869i1(R.string.Cancel);
+        strArr[0] = C4403w.m27871i1(messageSender.getConstructor() == -336109341 ? R.string.BlockUserBtn : R.string.BlockChatBtn);
+        strArr[1] = C4403w.m27871i1(R.string.Cancel);
         m9268de(m1, iArr, strArr, new int[]{2, 1}, new int[]{R.drawable.baseline_block_24, R.drawable.baseline_cancel_24});
         return false;
     }
 
     @Override
     public CharSequence mo9313X9() {
-        return C4403w.m27869i1(R.string.BlockedSenders);
+        return C4403w.m27871i1(R.string.BlockedSenders);
     }
 
-    public final void m33094Xg() {
+    public final void m33097Xg() {
         if (!this.f9669H0 && this.f9668G0) {
             this.f9669H0 = true;
-            this.f30167b.m2270r4().m14783o(new TdApi.GetBlockedMessageSenders(this.f9667F0, 50), this);
+            this.f30170b.m2270r4().m14783o(new TdApi.GetBlockedMessageSenders(this.f9667F0, 50), this);
         }
     }
 
@@ -395,17 +395,17 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
     @Override
     public void mo417Z8() {
         super.mo417Z8();
-        this.f30167b.m2480e2().m1710N1(this);
-        this.f30167b.m2781K9().m1826o0(this);
+        this.f30170b.m2480e2().m1710N1(this);
+        this.f30170b.m2781K9().m1826o0(this);
     }
 
-    public final void m33092Zg(int i) {
+    public final void m33095Zg(int i) {
         if (this.f9665D0.size() == 1) {
             this.f9665D0.clear();
-            m33102Pg();
+            m33105Pg();
             return;
         }
-        this.f9670I0.m34141p1(this.f9665D0.remove(i).m26880h());
+        this.f9670I0.m34144p1(this.f9665D0.remove(i).m26882h());
     }
 
     @Override
@@ -413,23 +413,23 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
         C10721i0.m4191f(this, j, messageSender);
     }
 
-    public void m33091ah(final C4618d7 d7Var) {
-        m9261ee(C4403w.m27853m1(R.string.QUnblockX, this.f30167b.m2151yb(d7Var.m26876l())), new int[]{R.id.btn_unblockSender, R.id.btn_cancel}, new String[]{C4403w.m27869i1(R.string.Unblock), C4403w.m27869i1(R.string.Cancel)}, new int[]{2, 1}, new int[]{R.drawable.baseline_block_24, R.drawable.baseline_cancel_24}, new AbstractC5117h0() {
+    public void m33094ah(final C4618d7 d7Var) {
+        m9261ee(C4403w.m27855m1(R.string.QUnblockX, this.f30170b.m2151yb(d7Var.m26878l())), new int[]{R.id.btn_unblockSender, R.id.btn_cancel}, new String[]{C4403w.m27871i1(R.string.Unblock), C4403w.m27871i1(R.string.Cancel)}, new int[]{2, 1}, new int[]{R.drawable.baseline_block_24, R.drawable.baseline_cancel_24}, new AbstractC5117h0() {
             @Override
             public final boolean mo493A3(View view, int i) {
                 boolean Wg;
-                Wg = View$OnClickListenerC2887pq.this.m33095Wg(d7Var, view, i);
+                Wg = View$OnClickListenerC2887pq.this.m33098Wg(d7Var, view, i);
                 return Wg;
             }
 
             @Override
             public boolean mo492Q() {
-                return C5115g0.m23935a(this);
+                return C5115g0.m23936a(this);
             }
 
             @Override
             public Object mo491b2(int i) {
-                return C5115g0.m23934b(this, i);
+                return C5115g0.m23935b(this, i);
             }
         });
     }
@@ -465,7 +465,7 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
     }
 
     @Override
-    public void mo23863j(RunnableC2374f5 f5Var, TdApi.MessageSender messageSender, int i) {
+    public void mo23864j(RunnableC2374f5 f5Var, TdApi.MessageSender messageSender, int i) {
         this.f9666E0 = messageSender;
     }
 
@@ -478,14 +478,14 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
     public void onClick(View view) {
         C4618d7 user;
         if (view.getId() == R.id.user && (user = ((C4022o) view).getUser()) != null) {
-            this.f30167b.m2485dd().m3549j7(this, user.m26876l(), new HandlerC10770jj.C10780j().m3368h());
+            this.f30170b.m2485dd().m3549j7(this, user.m26878l(), new HandlerC10770jj.C10780j().m3368h());
         }
     }
 
     @Override
     public void mo414p0(int i, View$OnClickListenerC9170d1 d1Var, LinearLayout linearLayout) {
         if (i == R.id.menu_contacts) {
-            d1Var.m10104N1(linearLayout, R.id.menu_btn_addContact, R.drawable.baseline_person_add_24, mo9375O9(), this, C1357a0.m37541i(49.0f));
+            d1Var.m10103N1(linearLayout, R.id.menu_btn_addContact, R.drawable.baseline_person_add_24, mo9375O9(), this, C1357a0.m37544i(49.0f));
         }
     }
 
@@ -495,21 +495,21 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
     }
 
     @Override
-    public void mo30633rg(Context context, CustomRecyclerView customRecyclerView) {
+    public void mo30635rg(Context context, CustomRecyclerView customRecyclerView) {
         this.f9670I0 = new C2888a(this);
-        m33102Pg();
+        m33105Pg();
         C10192g.m5782i(customRecyclerView, R.id.theme_color_filling, this);
-        C4007j.m29342a(customRecyclerView, new C2889b());
-        customRecyclerView.m39422k(new C2890c());
+        C4007j.m29344a(customRecyclerView, new C2889b());
+        customRecyclerView.m39425k(new C2890c());
         customRecyclerView.setAdapter(this.f9670I0);
-        this.f30167b.m2270r4().m14783o(new TdApi.GetBlockedMessageSenders(0, 20), new Client.AbstractC7865g() {
+        this.f30170b.m2270r4().m14783o(new TdApi.GetBlockedMessageSenders(0, 20), new Client.AbstractC7865g() {
             @Override
             public final void mo255t2(TdApi.Object object) {
-                View$OnClickListenerC2887pq.this.m33098Tg(object);
+                View$OnClickListenerC2887pq.this.m33101Tg(object);
             }
         });
-        this.f30167b.m2480e2().m1732I(this);
-        this.f30167b.m2781K9().m1882a0(this);
+        this.f30170b.m2480e2().m1732I(this);
+        this.f30170b.m2781K9().m1882a0(this);
     }
 
     @Override
@@ -527,7 +527,7 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
         super.mo9166sc();
         TdApi.MessageSender messageSender = this.f9666E0;
         if (messageSender != null) {
-            C10930q6 q6Var = this.f30167b;
+            C10930q6 q6Var = this.f30170b;
             q6Var.m2496d2(messageSender, true, q6Var.m2392ja());
             this.f9666E0 = null;
         }
@@ -539,13 +539,13 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
             final TdApi.MessageSenders messageSenders = (TdApi.MessageSenders) object;
             final ArrayList arrayList = new ArrayList(messageSenders.senders.length);
             for (TdApi.MessageSender messageSender : messageSenders.senders) {
-                arrayList.add(m33093Yg(this.f30167b, messageSender, this.f9665D0));
+                arrayList.add(m33096Yg(this.f30170b, messageSender, this.f9665D0));
             }
             if (!arrayList.isEmpty()) {
-                this.f30167b.m2485dd().post(new Runnable() {
+                this.f30170b.m2485dd().post(new Runnable() {
                     @Override
                     public final void run() {
-                        View$OnClickListenerC2887pq.this.m33097Ug(messageSenders, arrayList);
+                        View$OnClickListenerC2887pq.this.m33100Ug(messageSenders, arrayList);
                     }
                 });
             }
@@ -570,10 +570,10 @@ public class View$OnClickListenerC2887pq extends AbstractC3204vo<View$OnClickLis
     @Override
     public void mo4054w1(final long j, final boolean z) {
         if (!C7316a.m17051j(j)) {
-            this.f30167b.m2485dd().post(new Runnable() {
+            this.f30170b.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC2887pq.this.m33100Rg(j, z);
+                    View$OnClickListenerC2887pq.this.m33103Rg(j, z);
                 }
             });
         }

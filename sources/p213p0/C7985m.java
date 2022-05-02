@@ -7,108 +7,108 @@ import java.util.HashSet;
 import java.util.Set;
 
 public final class C7985m {
-    public final String f26015a;
-    public final CharSequence f26016b;
-    public final CharSequence[] f26017c;
-    public final boolean f26018d;
-    public final int f26019e;
-    public final Bundle f26020f;
-    public final Set<String> f26021g;
+    public final String f26018a;
+    public final CharSequence f26019b;
+    public final CharSequence[] f26020c;
+    public final boolean f26021d;
+    public final int f26022e;
+    public final Bundle f26023f;
+    public final Set<String> f26024g;
 
     public static final class C7986a {
-        public final String f26022a;
-        public CharSequence f26025d;
-        public CharSequence[] f26026e;
-        public final Set<String> f26023b = new HashSet();
-        public final Bundle f26024c = new Bundle();
-        public boolean f26027f = true;
-        public int f26028g = 0;
+        public final String f26025a;
+        public CharSequence f26028d;
+        public CharSequence[] f26029e;
+        public final Set<String> f26026b = new HashSet();
+        public final Bundle f26027c = new Bundle();
+        public boolean f26030f = true;
+        public int f26031g = 0;
 
         public C7986a(String str) {
             if (str != null) {
-                this.f26022a = str;
+                this.f26025a = str;
                 return;
             }
             throw new IllegalArgumentException("Result key can't be null");
         }
 
-        public C7985m m13835a() {
-            return new C7985m(this.f26022a, this.f26025d, this.f26026e, this.f26027f, this.f26028g, this.f26024c, this.f26023b);
+        public C7985m m13834a() {
+            return new C7985m(this.f26025a, this.f26028d, this.f26029e, this.f26030f, this.f26031g, this.f26027c, this.f26026b);
         }
 
-        public C7986a m13834b(CharSequence charSequence) {
-            this.f26025d = charSequence;
+        public C7986a m13833b(CharSequence charSequence) {
+            this.f26028d = charSequence;
             return this;
         }
     }
 
     public C7985m(String str, CharSequence charSequence, CharSequence[] charSequenceArr, boolean z, int i, Bundle bundle, Set<String> set) {
-        this.f26015a = str;
-        this.f26016b = charSequence;
-        this.f26017c = charSequenceArr;
-        this.f26018d = z;
-        this.f26019e = i;
-        this.f26020f = bundle;
-        this.f26021g = set;
-        if (m13840f() == 2 && !m13843c()) {
+        this.f26018a = str;
+        this.f26019b = charSequence;
+        this.f26020c = charSequenceArr;
+        this.f26021d = z;
+        this.f26022e = i;
+        this.f26023f = bundle;
+        this.f26024g = set;
+        if (m13839f() == 2 && !m13842c()) {
             throw new IllegalArgumentException("setEditChoicesBeforeSending requires setAllowFreeFormInput");
         }
     }
 
-    public static RemoteInput m13845a(C7985m mVar) {
+    public static RemoteInput m13844a(C7985m mVar) {
         Set<String> d;
-        RemoteInput.Builder addExtras = new RemoteInput.Builder(mVar.m13837i()).setLabel(mVar.m13838h()).setChoices(mVar.m13841e()).setAllowFreeFormInput(mVar.m13843c()).addExtras(mVar.m13839g());
-        if (Build.VERSION.SDK_INT >= 26 && (d = mVar.m13842d()) != null) {
+        RemoteInput.Builder addExtras = new RemoteInput.Builder(mVar.m13836i()).setLabel(mVar.m13837h()).setChoices(mVar.m13840e()).setAllowFreeFormInput(mVar.m13842c()).addExtras(mVar.m13838g());
+        if (Build.VERSION.SDK_INT >= 26 && (d = mVar.m13841d()) != null) {
             for (String str : d) {
                 addExtras.setAllowDataType(str, true);
             }
         }
         if (Build.VERSION.SDK_INT >= 29) {
-            addExtras.setEditChoicesBeforeSending(mVar.m13840f());
+            addExtras.setEditChoicesBeforeSending(mVar.m13839f());
         }
         return addExtras.build();
     }
 
-    public static RemoteInput[] m13844b(C7985m[] mVarArr) {
+    public static RemoteInput[] m13843b(C7985m[] mVarArr) {
         if (mVarArr == null) {
             return null;
         }
         RemoteInput[] remoteInputArr = new RemoteInput[mVarArr.length];
         for (int i = 0; i < mVarArr.length; i++) {
-            remoteInputArr[i] = m13845a(mVarArr[i]);
+            remoteInputArr[i] = m13844a(mVarArr[i]);
         }
         return remoteInputArr;
     }
 
-    public boolean m13843c() {
-        return this.f26018d;
+    public boolean m13842c() {
+        return this.f26021d;
     }
 
-    public Set<String> m13842d() {
-        return this.f26021g;
+    public Set<String> m13841d() {
+        return this.f26024g;
     }
 
-    public CharSequence[] m13841e() {
-        return this.f26017c;
+    public CharSequence[] m13840e() {
+        return this.f26020c;
     }
 
-    public int m13840f() {
-        return this.f26019e;
+    public int m13839f() {
+        return this.f26022e;
     }
 
-    public Bundle m13839g() {
-        return this.f26020f;
+    public Bundle m13838g() {
+        return this.f26023f;
     }
 
-    public CharSequence m13838h() {
-        return this.f26016b;
+    public CharSequence m13837h() {
+        return this.f26019b;
     }
 
-    public String m13837i() {
-        return this.f26015a;
+    public String m13836i() {
+        return this.f26018a;
     }
 
-    public boolean m13836j() {
-        return !m13843c() && (m13841e() == null || m13841e().length == 0) && m13842d() != null && !m13842d().isEmpty();
+    public boolean m13835j() {
+        return !m13842c() && (m13840e() == null || m13840e().length == 0) && m13841d() != null && !m13841d().isEmpty();
     }
 }

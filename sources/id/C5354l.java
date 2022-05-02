@@ -9,7 +9,7 @@ public final class C5354l implements Comparator {
     @Override
     public final int compare(Object obj, Object obj2) {
         int k0;
-        k0 = C5365w.m23099k0((TdApi.LanguagePackString) obj, (TdApi.LanguagePackString) obj2);
+        k0 = C5365w.m23100k0((TdApi.LanguagePackString) obj, (TdApi.LanguagePackString) obj2);
         return k0;
     }
 }

@@ -5,15 +5,15 @@ import java.lang.reflect.Field;
 import p328x6.AbstractC10141r;
 
 public final class BinderC10144s<T> extends AbstractC10141r.AbstractBinderC10142a {
-    public final T f32847a;
+    public final T f32850a;
 
     public BinderC10144s(T t) {
-        this.f32847a = t;
+        this.f32850a = t;
     }
 
     public static <T> T m5905s(AbstractC10141r rVar) {
         if (rVar instanceof BinderC10144s) {
-            return ((BinderC10144s) rVar).f32847a;
+            return ((BinderC10144s) rVar).f32850a;
         }
         IBinder asBinder = rVar.asBinder();
         Field[] declaredFields = asBinder.getClass().getDeclaredFields();

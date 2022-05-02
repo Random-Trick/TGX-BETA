@@ -10,11 +10,11 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 
 public abstract class AbstractC11358f<K, V> implements AbstractC11423z<K, V> {
     @MonotonicNonNullDecl
-    public transient Set<K> f36300a;
+    public transient Set<K> f36303a;
     @MonotonicNonNullDecl
-    public transient Collection<V> f36301b;
+    public transient Collection<V> f36304b;
     @MonotonicNonNullDecl
-    public transient Map<K, Collection<V>> f36302c;
+    public transient Map<K, Collection<V>> f36305c;
 
     public class C11359a extends AbstractCollection<V> {
         public C11359a() {
@@ -43,12 +43,12 @@ public abstract class AbstractC11358f<K, V> implements AbstractC11423z<K, V> {
 
     @Override
     public Map<K, Collection<V>> mo669a() {
-        Map<K, Collection<V>> map = this.f36302c;
+        Map<K, Collection<V>> map = this.f36305c;
         if (map != null) {
             return map;
         }
         Map<K, Collection<V>> c = mo832c();
-        this.f36302c = c;
+        this.f36305c = c;
         return c;
     }
 
@@ -72,12 +72,12 @@ public abstract class AbstractC11358f<K, V> implements AbstractC11423z<K, V> {
     }
 
     public Set<K> m829f() {
-        Set<K> set = this.f36300a;
+        Set<K> set = this.f36303a;
         if (set != null) {
             return set;
         }
         Set<K> d = mo831d();
-        this.f36300a = d;
+        this.f36303a = d;
         return d;
     }
 
@@ -93,12 +93,12 @@ public abstract class AbstractC11358f<K, V> implements AbstractC11423z<K, V> {
 
     @Override
     public Collection<V> values() {
-        Collection<V> collection = this.f36301b;
+        Collection<V> collection = this.f36304b;
         if (collection != null) {
             return collection;
         }
         Collection<V> e = mo830e();
-        this.f36301b = e;
+        this.f36304b = e;
         return e;
     }
 }

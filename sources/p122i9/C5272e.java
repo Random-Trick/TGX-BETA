@@ -43,85 +43,85 @@ public class C5272e extends C5263a {
 
     public C5272e(int i, boolean z, String str, String str2, String str3, String str4) {
         super(i, z, new C5270d[0]);
-        C8298k.m12934e(str, "vertexPositionName");
-        C8298k.m12934e(str2, "vertexMvpMatrixName");
-        this.f17456f = C5039g.m24203c(C4172d.f14075a);
+        C8298k.m12933e(str, "vertexPositionName");
+        C8298k.m12933e(str2, "vertexMvpMatrixName");
+        this.f17456f = C5039g.m24204c(C4172d.f14075a);
         C5266b bVar = null;
-        this.f17457g = str4 != null ? m23487g(str4) : null;
-        this.f17458h = C6429a.m20409b(8);
-        this.f17459i = str3 != null ? m23488f(str3) : bVar;
-        this.f17460j = m23488f(str);
-        this.f17461k = m23487g(str2);
+        this.f17457g = str4 != null ? m23488g(str4) : null;
+        this.f17458h = C6429a.m20410b(8);
+        this.f17459i = str3 != null ? m23489f(str3) : bVar;
+        this.f17460j = m23489f(str);
+        this.f17461k = m23488g(str2);
         this.f17462l = new RectF();
         this.f17463m = -1;
     }
 
     @Override
-    public void mo23474i(AbstractC4329b bVar) {
-        C8298k.m12934e(bVar, "drawable");
-        super.mo23474i(bVar);
-        GLES20.glDisableVertexAttribArray(this.f17460j.m23482a());
+    public void mo23475i(AbstractC4329b bVar) {
+        C8298k.m12933e(bVar, "drawable");
+        super.mo23475i(bVar);
+        GLES20.glDisableVertexAttribArray(this.f17460j.m23483a());
         C5266b bVar2 = this.f17459i;
         if (bVar2 != null) {
-            GLES20.glDisableVertexAttribArray(bVar2.m23482a());
+            GLES20.glDisableVertexAttribArray(bVar2.m23483a());
         }
         C6218a aVar = this.f17465o;
         if (aVar != null) {
-            aVar.mo21050a();
+            aVar.mo21051a();
         }
-        C4172d.m28622b("onPostDraw end");
+        C4172d.m28624b("onPostDraw end");
     }
 
     @Override
-    public void mo23473j(AbstractC4329b bVar, float[] fArr) {
-        C8298k.m12934e(bVar, "drawable");
-        C8298k.m12934e(fArr, "modelViewProjectionMatrix");
-        super.mo23473j(bVar, fArr);
+    public void mo23474j(AbstractC4329b bVar, float[] fArr) {
+        C8298k.m12933e(bVar, "drawable");
+        C8298k.m12933e(fArr, "modelViewProjectionMatrix");
+        super.mo23474j(bVar, fArr);
         if (bVar instanceof AbstractC4328a) {
             C6218a aVar = this.f17465o;
             if (aVar != null) {
-                aVar.mo21049b();
+                aVar.mo21050b();
             }
-            GLES20.glUniformMatrix4fv(this.f17461k.m23481b(), 1, false, fArr, 0);
-            C4172d.m28622b("glUniformMatrix4fv");
+            GLES20.glUniformMatrix4fv(this.f17461k.m23482b(), 1, false, fArr, 0);
+            C4172d.m28624b("glUniformMatrix4fv");
             C5266b bVar2 = this.f17457g;
             if (bVar2 != null) {
-                GLES20.glUniformMatrix4fv(bVar2.m23481b(), 1, false, this.f17456f, 0);
-                C4172d.m28622b("glUniformMatrix4fv");
+                GLES20.glUniformMatrix4fv(bVar2.m23482b(), 1, false, this.f17456f, 0);
+                C4172d.m28624b("glUniformMatrix4fv");
             }
             C5266b bVar3 = this.f17460j;
-            GLES20.glEnableVertexAttribArray(bVar3.m23482a());
-            C4172d.m28622b("glEnableVertexAttribArray");
-            GLES20.glVertexAttribPointer(bVar3.m23482a(), 2, C5038f.m24220c(), false, bVar.m28265g(), (Buffer) bVar.mo28263d());
-            C4172d.m28622b("glVertexAttribPointer");
+            GLES20.glEnableVertexAttribArray(bVar3.m23483a());
+            C4172d.m28624b("glEnableVertexAttribArray");
+            GLES20.glVertexAttribPointer(bVar3.m23483a(), 2, C5038f.m24221c(), false, bVar.m28267g(), (Buffer) bVar.mo28265d());
+            C4172d.m28624b("glVertexAttribPointer");
             C5266b bVar4 = this.f17459i;
             if (bVar4 != null) {
-                if ((!C8298k.m12937b(bVar, this.f17464n)) || bVar.m28267e() != this.f17463m) {
+                if ((!C8298k.m12936b(bVar, this.f17464n)) || bVar.m28269e() != this.f17463m) {
                     AbstractC4328a aVar2 = (AbstractC4328a) bVar;
                     this.f17464n = aVar2;
-                    this.f17463m = bVar.m28267e();
-                    aVar2.m28270h(this.f17462l);
-                    int f = bVar.m28266f() * 2;
+                    this.f17463m = bVar.m28269e();
+                    aVar2.m28272h(this.f17462l);
+                    int f = bVar.m28268f() * 2;
                     if (this.f17458h.capacity() < f) {
-                        C6430b.m20408a(this.f17458h);
-                        this.f17458h = C6429a.m20409b(f);
+                        C6430b.m20409a(this.f17458h);
+                        this.f17458h = C6429a.m20410b(f);
                     }
                     this.f17458h.clear();
                     this.f17458h.limit(f);
                     for (int i = 0; i < f; i++) {
                         boolean z = i % 2 == 0;
-                        float f2 = bVar.mo28263d().get(i);
+                        float f2 = bVar.mo28265d().get(i);
                         RectF rectF = this.f17462l;
                         float f3 = z ? rectF.left : rectF.bottom;
                         RectF rectF2 = this.f17462l;
-                        this.f17458h.put(m23471l(i / 2, aVar2, f2, f3, z ? rectF2.right : rectF2.top, z));
+                        this.f17458h.put(m23472l(i / 2, aVar2, f2, f3, z ? rectF2.right : rectF2.top, z));
                     }
                 }
                 this.f17458h.rewind();
-                GLES20.glEnableVertexAttribArray(bVar4.m23482a());
-                C4172d.m28622b("glEnableVertexAttribArray");
-                GLES20.glVertexAttribPointer(bVar4.m23482a(), 2, C5038f.m24220c(), false, bVar.m28265g(), (Buffer) this.f17458h);
-                C4172d.m28622b("glVertexAttribPointer");
+                GLES20.glEnableVertexAttribArray(bVar4.m23483a());
+                C4172d.m28624b("glEnableVertexAttribArray");
+                GLES20.glVertexAttribPointer(bVar4.m23483a(), 2, C5038f.m24221c(), false, bVar.m28267g(), (Buffer) this.f17458h);
+                C4172d.m28624b("glVertexAttribPointer");
                 return;
             }
             return;
@@ -130,26 +130,26 @@ public class C5272e extends C5263a {
     }
 
     @Override
-    public void mo23472k() {
-        super.mo23472k();
-        C6430b.m20408a(this.f17458h);
+    public void mo23473k() {
+        super.mo23473k();
+        C6430b.m20409a(this.f17458h);
         C6218a aVar = this.f17465o;
         if (aVar != null) {
-            aVar.m21042i();
+            aVar.m21043i();
         }
         this.f17465o = null;
     }
 
-    public float m23471l(int i, AbstractC4328a aVar, float f, float f2, float f3, boolean z) {
-        C8298k.m12934e(aVar, "drawable");
+    public float m23472l(int i, AbstractC4328a aVar, float f, float f2, float f3, boolean z) {
+        C8298k.m12933e(aVar, "drawable");
         return (((f - f2) / (f3 - f2)) * 1.0f) + 0.0f;
     }
 
-    public final float[] m23470m() {
+    public final float[] m23471m() {
         return this.f17456f;
     }
 
-    public final void m23469n(C6218a aVar) {
+    public final void m23470n(C6218a aVar) {
         this.f17465o = aVar;
     }
 
@@ -158,10 +158,10 @@ public class C5272e extends C5263a {
     }
 
     public C5272e(String str, String str2, String str3, String str4, String str5, String str6) {
-        this(C5263a.f17436e.m23485a(str, str2), true, str3, str4, str5, str6);
-        C8298k.m12934e(str, "vertexShader");
-        C8298k.m12934e(str2, "fragmentShader");
-        C8298k.m12934e(str3, "vertexPositionName");
-        C8298k.m12934e(str4, "vertexMvpMatrixName");
+        this(C5263a.f17436e.m23486a(str, str2), true, str3, str4, str5, str6);
+        C8298k.m12933e(str, "vertexShader");
+        C8298k.m12933e(str2, "fragmentShader");
+        C8298k.m12933e(str3, "vertexPositionName");
+        C8298k.m12933e(str4, "vertexMvpMatrixName");
     }
 }

@@ -20,13 +20,13 @@ public abstract class AbstractC5903c extends C5901a {
 
     static {
         String simpleName = C5037e.class.getSimpleName();
-        C8298k.m12935d(simpleName, "EglSurface::class.java.simpleName");
+        C8298k.m12934d(simpleName, "EglSurface::class.java.simpleName");
         f18805e = simpleName;
     }
 
     public AbstractC5903c(C4166a aVar, C5037e eVar) {
         super(aVar, eVar);
-        C8298k.m12934e(aVar, "eglCore");
-        C8298k.m12934e(eVar, "eglSurface");
+        C8298k.m12933e(aVar, "eglCore");
+        C8298k.m12933e(eVar, "eglSurface");
     }
 }

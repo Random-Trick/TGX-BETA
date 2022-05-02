@@ -13,14 +13,14 @@ public class C4436c extends Drawable implements Drawable.Callback {
     public Drawable f14692a;
 
     public C4436c(Drawable drawable) {
-        m27678b(drawable);
+        m27680b(drawable);
     }
 
-    public Drawable m27679a() {
+    public Drawable m27681a() {
         return this.f14692a;
     }
 
-    public void m27678b(Drawable drawable) {
+    public void m27680b(Drawable drawable) {
         Drawable drawable2 = this.f14692a;
         if (drawable2 != null) {
             drawable2.setCallback(null);

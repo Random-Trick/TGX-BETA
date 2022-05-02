@@ -21,7 +21,7 @@ public final class RunnableC6756b0 implements Runnable {
             gVar = this.f21230b.f21233c;
             if (gVar != null) {
                 gVar2 = this.f21230b.f21233c;
-                gVar2.mo4157c((Exception) C6378r.m20506k(this.f21229a.mo19070k()));
+                gVar2.mo4157c((Exception) C6378r.m20507k(this.f21229a.mo19071k()));
             }
         }
     }

@@ -12,12 +12,12 @@ public final class C6347h0 implements AbstractC6325c.AbstractC6326a {
     }
 
     @Override
-    public final void mo20578q(int i) {
-        this.f19952a.mo21080q(i);
+    public final void mo20579q(int i) {
+        this.f19952a.mo21081q(i);
     }
 
     @Override
-    public final void mo20577t(Bundle bundle) {
-        this.f19952a.mo21079t(bundle);
+    public final void mo20578t(Bundle bundle) {
+        this.f19952a.mo21080t(bundle);
     }
 }

@@ -35,40 +35,40 @@ public final class C9976f {
             spannable.setSpan(new UnderlineSpan(), i, i2, 33);
         }
         if (gVar.m6322q()) {
-            C8980c.m10783a(spannable, new ForegroundColorSpan(gVar.m6336c()), i, i2, 33);
+            C8980c.m10782a(spannable, new ForegroundColorSpan(gVar.m6336c()), i, i2, 33);
         }
         if (gVar.m6323p()) {
-            C8980c.m10783a(spannable, new BackgroundColorSpan(gVar.m6337b()), i, i2, 33);
+            C8980c.m10782a(spannable, new BackgroundColorSpan(gVar.m6337b()), i, i2, 33);
         }
         if (gVar.m6335d() != null) {
-            C8980c.m10783a(spannable, new TypefaceSpan(gVar.m6335d()), i, i2, 33);
+            C8980c.m10782a(spannable, new TypefaceSpan(gVar.m6335d()), i, i2, 33);
         }
         if (gVar.m6324o() != null) {
-            C9969b bVar = (C9969b) C1186a.m38185e(gVar.m6324o());
-            int i5 = bVar.f32395a;
+            C9969b bVar = (C9969b) C1186a.m38188e(gVar.m6324o());
+            int i5 = bVar.f32398a;
             if (i5 == -1) {
                 i5 = (i3 == 2 || i3 == 1) ? 3 : 1;
                 i4 = 1;
             } else {
-                i4 = bVar.f32396b;
+                i4 = bVar.f32399b;
             }
-            int i6 = bVar.f32397c;
+            int i6 = bVar.f32400c;
             if (i6 == -2) {
                 i6 = 1;
             }
-            C8980c.m10783a(spannable, new C8981d(i5, i4, i6), i, i2, 33);
+            C8980c.m10782a(spannable, new C8981d(i5, i4, i6), i, i2, 33);
         }
         int j = gVar.m6329j();
         if (j == 2) {
             C9974d d = m6352d(dVar, map);
             if (!(d == null || (e = m6351e(d, map)) == null)) {
-                if (e.m6365g() != 1 || e.m6366f(0).f32416b == null) {
-                    C1230s.m37884f("TtmlRenderUtil", "Skipping rubyText node without exactly one text child.");
+                if (e.m6365g() != 1 || e.m6366f(0).f32419b == null) {
+                    C1230s.m37887f("TtmlRenderUtil", "Skipping rubyText node without exactly one text child.");
                 } else {
-                    String str = (String) C1216l0.m37968j(e.m6366f(0).f32416b);
-                    C9977g f2 = m6350f(e.f32420f, e.m6360l(), map);
+                    String str = (String) C1216l0.m37971j(e.m6366f(0).f32419b);
+                    C9977g f2 = m6350f(e.f32423f, e.m6360l(), map);
                     int i7 = f2 != null ? f2.m6330i() : -1;
-                    if (i7 == -1 && (f = m6350f(d.f32420f, d.m6360l(), map)) != null) {
+                    if (i7 == -1 && (f = m6350f(d.f32423f, d.m6360l(), map)) != null) {
                         i7 = f.m6330i();
                     }
                     spannable.setSpan(new C8979b(str, i7), i, i2, 33);
@@ -78,15 +78,15 @@ public final class C9976f {
             spannable.setSpan(new C9968a(), i, i2, 33);
         }
         if (gVar.m6325n()) {
-            C8980c.m10783a(spannable, new C8978a(), i, i2, 33);
+            C8980c.m10782a(spannable, new C8978a(), i, i2, 33);
         }
         int f3 = gVar.m6333f();
         if (f3 == 1) {
-            C8980c.m10783a(spannable, new AbsoluteSizeSpan((int) gVar.m6334e(), true), i, i2, 33);
+            C8980c.m10782a(spannable, new AbsoluteSizeSpan((int) gVar.m6334e(), true), i, i2, 33);
         } else if (f3 == 2) {
-            C8980c.m10783a(spannable, new RelativeSizeSpan(gVar.m6334e()), i, i2, 33);
+            C8980c.m10782a(spannable, new RelativeSizeSpan(gVar.m6334e()), i, i2, 33);
         } else if (f3 == 3) {
-            C8980c.m10783a(spannable, new RelativeSizeSpan(gVar.m6334e() / 100.0f), i, i2, 33);
+            C8980c.m10782a(spannable, new RelativeSizeSpan(gVar.m6334e() / 100.0f), i, i2, 33);
         }
     }
 
@@ -106,11 +106,11 @@ public final class C9976f {
 
     public static C9974d m6352d(C9974d dVar, Map<String, C9977g> map) {
         while (dVar != null) {
-            C9977g f = m6350f(dVar.f32420f, dVar.m6360l(), map);
+            C9977g f = m6350f(dVar.f32423f, dVar.m6360l(), map);
             if (f != null && f.m6329j() == 1) {
                 return dVar;
             }
-            dVar = dVar.f32424j;
+            dVar = dVar.f32427j;
         }
         return null;
     }
@@ -120,7 +120,7 @@ public final class C9976f {
         arrayDeque.push(dVar);
         while (!arrayDeque.isEmpty()) {
             C9974d dVar2 = (C9974d) arrayDeque.pop();
-            C9977g f = m6350f(dVar2.f32420f, dVar2.m6360l(), map);
+            C9977g f = m6350f(dVar2.f32423f, dVar2.m6360l(), map);
             if (f != null && f.m6329j() == 3) {
                 return dVar2;
             }

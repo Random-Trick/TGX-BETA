@@ -6,8 +6,8 @@ import java.nio.charset.Charset;
 import java.util.UUID;
 
 public class C7297m {
-    public static final byte f23168a = Byte.parseByte("01110000", 2);
-    public static final byte f23169b = Byte.parseByte("00001111", 2);
+    public static final byte f23171a = Byte.parseByte("01110000", 2);
+    public static final byte f23172b = Byte.parseByte("00001111", 2);
 
     public static String m17123b(byte[] bArr) {
         return new String(Base64.encode(bArr, 11), Charset.defaultCharset()).substring(0, 22);
@@ -23,7 +23,7 @@ public class C7297m {
     public String m17124a() {
         byte[] c = m17122c(UUID.randomUUID(), new byte[17]);
         c[16] = c[0];
-        c[0] = (byte) ((f23169b & c[0]) | f23168a);
+        c[0] = (byte) ((f23172b & c[0]) | f23171a);
         return m17123b(c);
     }
 }

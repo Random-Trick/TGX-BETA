@@ -29,19 +29,19 @@ import td.AbstractC9323v4;
 public class C9586k1 extends RecyclerView.AbstractC0886d0 {
 
     public class C9587a extends C6860d1 {
-        public final C9678w2 f31090b;
+        public final C9678w2 f31093b;
 
         public C9587a(Context context, C9678w2 w2Var) {
             super(context);
-            this.f31090b = w2Var;
+            this.f31093b = w2Var;
         }
 
         @Override
         public void onDraw(Canvas canvas) {
             int i;
-            if (this.f31090b.m7615x3()) {
-                C1359b.m37515d(this, canvas, AbstractC4761s4.m26249A2(this.f31090b));
-                i = AbstractC4761s4.m26239B2(this.f31090b);
+            if (this.f31093b.m7615x3()) {
+                C1359b.m37518d(this, canvas, AbstractC4761s4.m26250A2(this.f31093b));
+                i = AbstractC4761s4.m26240B2(this.f31093b);
             } else {
                 i = C11524j.m213U0();
             }
@@ -58,7 +58,7 @@ public class C9586k1 extends RecyclerView.AbstractC0886d0 {
         @Override
         public void onMeasure(int i, int i2) {
             int defaultSize = FrameLayout.getDefaultSize(getSuggestedMinimumHeight(), i2);
-            int i3 = C1357a0.m37541i(200.0f);
+            int i3 = C1357a0.m37544i(200.0f);
             if (i3 > defaultSize) {
                 super.onMeasure(i, View.MeasureSpec.makeMeasureSpec(i3, 0));
             } else {
@@ -68,38 +68,38 @@ public class C9586k1 extends RecyclerView.AbstractC0886d0 {
     }
 
     public class C9589c extends Drawable {
-        public final ImageView[] f31091a;
-        public final TextView[] f31092b;
-        public final View[] f31093c;
-        public final C9678w2 f31094d;
+        public final ImageView[] f31094a;
+        public final TextView[] f31095b;
+        public final View[] f31096c;
+        public final C9678w2 f31097d;
 
         public C9589c(ImageView[] imageViewArr, TextView[] textViewArr, View[] viewArr, C9678w2 w2Var) {
-            this.f31091a = imageViewArr;
-            this.f31092b = textViewArr;
-            this.f31093c = viewArr;
-            this.f31094d = w2Var;
+            this.f31094a = imageViewArr;
+            this.f31095b = textViewArr;
+            this.f31096c = viewArr;
+            this.f31097d = w2Var;
         }
 
         @Override
         public void draw(Canvas canvas) {
-            int top = this.f31091a[0].getTop();
-            int min = Math.min(this.f31092b[0].getLeft(), this.f31092b[1].getLeft());
-            int max = Math.max(this.f31092b[0].getRight(), this.f31092b[1].getRight());
-            int bottom = this.f31093c[0].getBottom();
-            int i = C1357a0.m37541i(6.0f);
-            int i2 = C1357a0.m37541i(9.0f);
+            int top = this.f31094a[0].getTop();
+            int min = Math.min(this.f31095b[0].getLeft(), this.f31095b[1].getLeft());
+            int max = Math.max(this.f31095b[0].getRight(), this.f31095b[1].getRight());
+            int bottom = this.f31096c[0].getBottom();
+            int i = C1357a0.m37544i(6.0f);
+            int i2 = C1357a0.m37544i(9.0f);
             int i3 = min - i2;
             int i4 = max + i2;
-            int i5 = top - C1357a0.m37541i(12.0f);
-            int i6 = bottom + C1357a0.m37541i(8.0f);
-            RectF a0 = C1410y.m37050a0();
+            int i5 = top - C1357a0.m37544i(12.0f);
+            int i6 = bottom + C1357a0.m37544i(8.0f);
+            RectF a0 = C1410y.m37053a0();
             a0.set(i3, i5, i4, i6);
             float f = i;
-            canvas.drawRoundRect(a0, f, f, C1410y.m37039g(AbstractC4761s4.m26249A2(this.f31094d)));
-            int B2 = AbstractC4761s4.m26239B2(this.f31094d);
-            if (this.f31092b[0].getCurrentTextColor() != B2) {
-                this.f31092b[0].setTextColor(B2);
-                this.f31091a[0].setColorFilter(B2);
+            canvas.drawRoundRect(a0, f, f, C1410y.m37042g(AbstractC4761s4.m26250A2(this.f31097d)));
+            int B2 = AbstractC4761s4.m26240B2(this.f31097d);
+            if (this.f31095b[0].getCurrentTextColor() != B2) {
+                this.f31095b[0].setTextColor(B2);
+                this.f31094a[0].setColorFilter(B2);
             }
         }
 
@@ -124,7 +124,7 @@ public class C9586k1 extends RecyclerView.AbstractC0886d0 {
     public static C9586k1 m8096P(Context context, C9678w2 w2Var, int i, AbstractC9323v4<?> v4Var) {
         if (i == 0) {
             C9587a aVar = new C9587a(context, w2Var);
-            aVar.setTextSize(1, C4868i.m24726c2().m24592t0());
+            aVar.setTextSize(1, C4868i.m24727c2().m24593t0());
             aVar.setLayoutParams(new RecyclerView.LayoutParams(-1, -1));
             if (v4Var != null) {
                 v4Var.m9163t8(aVar);
@@ -139,15 +139,15 @@ public class C9586k1 extends RecyclerView.AbstractC0886d0 {
             View[] viewArr = new View[1];
             RelativeLayout relativeLayout = new RelativeLayout(context);
             if (z) {
-                C2065g.m35718d(relativeLayout, new C9589c(imageViewArr, textViewArr, viewArr, w2Var));
+                C2065g.m35721d(relativeLayout, new C9589c(imageViewArr, textViewArr, viewArr, w2Var));
                 if (v4Var != null) {
                     v4Var.m9163t8(relativeLayout);
                 }
             }
             relativeLayout.setLayoutParams(FrameLayoutFix.m18007t1(-1, -2, 17));
-            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, C1357a0.m37541i(50.0f));
+            RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, C1357a0.m37544i(50.0f));
             layoutParams.addRule(14);
-            layoutParams.topMargin = C1357a0.m37541i(16.0f);
+            layoutParams.topMargin = C1357a0.m37544i(16.0f);
             ImageView imageView = new ImageView(context);
             imageViewArr[0] = imageView;
             imageView.setId(R.id.secret_icon);
@@ -178,15 +178,15 @@ public class C9586k1 extends RecyclerView.AbstractC0886d0 {
                 }
             }
             b2Var.setTextSize(1, 15.0f);
-            b2Var.setTypeface(C1389o.m37260i());
-            b2Var.setText(C4403w.m27869i1(R.string.SecretChats));
+            b2Var.setTypeface(C1389o.m37263i());
+            b2Var.setText(C4403w.m27871i1(R.string.SecretChats));
             b2Var.setGravity(17);
-            b2Var.setPadding(0, C1357a0.m37541i(5.0f), 0, C1357a0.m37541i(10.0f));
+            b2Var.setPadding(0, C1357a0.m37544i(5.0f), 0, C1357a0.m37544i(10.0f));
             b2Var.setLayoutParams(layoutParams2);
             relativeLayout.addView(b2Var);
             RelativeLayout.LayoutParams layoutParams3 = new RelativeLayout.LayoutParams(-1, -2);
             layoutParams3.addRule(3, R.id.secret_title);
-            layoutParams3.bottomMargin = C1357a0.m37541i(16.0f);
+            layoutParams3.bottomMargin = C1357a0.m37544i(16.0f);
             FrameLayoutFix frameLayoutFix = new FrameLayoutFix(context);
             viewArr[0] = frameLayoutFix;
             frameLayoutFix.setLayoutParams(layoutParams3);
@@ -194,8 +194,8 @@ public class C9586k1 extends RecyclerView.AbstractC0886d0 {
             textViewArr[1] = b2Var2;
             b2Var2.setTextSize(1, 15.0f);
             b2Var2.setGravity(3);
-            b2Var2.setTypeface(C1389o.m37258k());
-            b2Var2.setText(C4403w.m27865j1(R.string.format_EncryptedDescription, C4403w.m27869i1(R.string.EncryptedDescription1), C4403w.m27869i1(R.string.EncryptedDescription2), C4403w.m27869i1(R.string.EncryptedDescription3), C4403w.m27869i1(R.string.EncryptedDescription4)));
+            b2Var2.setTypeface(C1389o.m37261k());
+            b2Var2.setText(C4403w.m27867j1(R.string.format_EncryptedDescription, C4403w.m27871i1(R.string.EncryptedDescription1), C4403w.m27871i1(R.string.EncryptedDescription2), C4403w.m27871i1(R.string.EncryptedDescription3), C4403w.m27871i1(R.string.EncryptedDescription4)));
             if (z) {
                 b2Var2.setTextColor(-1);
             } else {
@@ -204,7 +204,7 @@ public class C9586k1 extends RecyclerView.AbstractC0886d0 {
                     v4Var.m9126y8(b2Var2);
                 }
             }
-            b2Var2.setLineSpacing(C1357a0.m37541i(4.0f), 1.0f);
+            b2Var2.setLineSpacing(C1357a0.m37544i(4.0f), 1.0f);
             b2Var2.setLayoutParams(FrameLayoutFix.m18007t1(-2, -2, 1));
             frameLayoutFix.addView(b2Var2);
             relativeLayout.addView(frameLayoutFix);
@@ -266,7 +266,7 @@ public class C9586k1 extends RecyclerView.AbstractC0886d0 {
     }
 
     public void m8097O() {
-        int n = m39332n();
+        int n = m39335n();
         if (!m8092T(n)) {
             return;
         }
@@ -278,7 +278,7 @@ public class C9586k1 extends RecyclerView.AbstractC0886d0 {
     }
 
     public void m8094R() {
-        int n = m39332n();
+        int n = m39335n();
         if (!m8092T(n)) {
             return;
         }
@@ -290,7 +290,7 @@ public class C9586k1 extends RecyclerView.AbstractC0886d0 {
     }
 
     public void m8091U(AbstractC4761s4 s4Var) {
-        if (m39332n() >= 10) {
+        if (m39335n() >= 10) {
             ((C9565i1) this.f3479a).setMessage(s4Var);
         } else {
             ((C9552h1) this.f3479a).setMessage(s4Var);

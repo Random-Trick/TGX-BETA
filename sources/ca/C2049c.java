@@ -30,26 +30,26 @@ public class C2049c implements AbstractC2055f {
             cVar.m663b(dVar);
         }
 
-        public C2051b m35751a(long j) {
+        public C2051b m35754a(long j) {
             this.f7270c = j;
             return this;
         }
 
-        public C2049c m35750b() {
-            return new C2049c(m35747e());
+        public C2049c m35753b() {
+            return new C2049c(m35750e());
         }
 
-        public C2051b m35749c(int i) {
+        public C2051b m35752c(int i) {
             this.f7269b = i;
             return this;
         }
 
-        public C2051b m35748d(float f) {
+        public C2051b m35751d(float f) {
             this.f7271d = f;
             return this;
         }
 
-        public C2052c m35747e() {
+        public C2052c m35750e() {
             C2052c cVar = new C2052c();
             cVar.f7273a = this.f7268a;
             cVar.f7275c = this.f7269b;
@@ -75,21 +75,21 @@ public class C2049c implements AbstractC2055f {
         this.f7267a = cVar;
     }
 
-    public static C2051b m35757b(int i, int i2) {
+    public static C2051b m35760b(int i, int i2) {
         return new C2051b(new C11430a(i, i2));
     }
 
-    public static C2051b m35755d(int i, int i2) {
+    public static C2051b m35758d(int i, int i2) {
         return new C2051b(new C11431b(i, i2));
     }
 
     @Override
-    public EnumC7311c mo35736a(List<MediaFormat> list, MediaFormat mediaFormat) {
+    public EnumC7311c mo35739a(List<MediaFormat> list, MediaFormat mediaFormat) {
         int i;
         int i2;
         long j;
-        boolean c = m35756c(list);
-        C7309a f = m35753f(list);
+        boolean c = m35759c(list);
+        C7309a f = m35756f(list);
         int d = f.m17067d();
         int c2 = f.m17068c();
         C10007i iVar = f7266b;
@@ -110,10 +110,10 @@ public class C2049c implements AbstractC2055f {
             iVar.m6267c("Output width&height: " + i + "x" + i2);
             boolean z = true;
             boolean z2 = f.m17065b() <= a.m17065b();
-            int g = m35752g(list);
+            int g = m35755g(list);
             int min = g > 0 ? Math.min(g, this.f7267a.f7275c) : this.f7267a.f7275c;
             boolean z3 = g <= min;
-            int e = m35754e(list);
+            int e = m35757e(list);
             boolean z4 = ((float) e) >= this.f7267a.f7276d;
             if (list.size() != 1) {
                 z = false;
@@ -145,7 +145,7 @@ public class C2049c implements AbstractC2055f {
         }
     }
 
-    public final boolean m35756c(List<MediaFormat> list) {
+    public final boolean m35759c(List<MediaFormat> list) {
         for (MediaFormat mediaFormat : list) {
             if (!mediaFormat.getString("mime").equalsIgnoreCase(this.f7267a.f7277e)) {
                 return false;
@@ -154,7 +154,7 @@ public class C2049c implements AbstractC2055f {
         return true;
     }
 
-    public final int m35754e(List<MediaFormat> list) {
+    public final int m35757e(List<MediaFormat> list) {
         int i = 0;
         int i2 = 0;
         for (MediaFormat mediaFormat : list) {
@@ -169,7 +169,7 @@ public class C2049c implements AbstractC2055f {
         return -1;
     }
 
-    public final C7309a m35753f(List<MediaFormat> list) {
+    public final C7309a m35756f(List<MediaFormat> list) {
         int size = list.size();
         float[] fArr = new float[size];
         boolean[] zArr = new boolean[size];
@@ -203,7 +203,7 @@ public class C2049c implements AbstractC2055f {
         return new C7309a(i4, integer3);
     }
 
-    public final int m35752g(List<MediaFormat> list) {
+    public final int m35755g(List<MediaFormat> list) {
         int i = Integer.MAX_VALUE;
         for (MediaFormat mediaFormat : list) {
             if (mediaFormat.containsKey("frame-rate")) {

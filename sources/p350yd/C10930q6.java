@@ -81,171 +81,171 @@ import td.AbstractC9323v4;
 import vc.C9903a;
 
 public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
-    public long f34964A1;
-    public long f34966B1;
-    public boolean f34968C1;
-    public boolean f34970D1;
-    public boolean f34972E1;
-    public boolean f34974F1;
-    public boolean f34975G0;
-    public int f34976G1;
-    public boolean f34977H0;
-    public AbstractC5917i f34978H1;
-    public boolean f34979I0;
-    public boolean f34980I1;
-    public boolean f34981J0;
-    public TdApi.AuthorizationState f34982J1;
-    public String f34983K0;
-    public boolean f34984K1;
-    public String[] f34985L0;
-    public boolean f34986L1;
-    public TdApi.Reaction[] f34988M0;
-    public String f34989M1;
-    public String f34992N1;
-    public boolean f34994O0;
-    public boolean f34997P0;
-    public boolean f35000Q0;
-    public boolean f35003R0;
-    public boolean f35006S0;
-    public final Comparator<TdApi.User> f35008T;
-    public boolean f35009T0;
-    public final Comparator<AbstractC5098a1> f35011U;
-    public C10945o[] f35012U0;
-    public final C10536ab f35014V;
-    public long f35015V0;
-    public Map<String, Queue<Runnable>> f35016V1;
-    public final int f35017W;
-    public long f35018W0;
-    public C10946p f35019W1;
-    public C10941k f35020X;
-    public String f35022X1;
-    public boolean f35024Y0;
-    public String f35025Y1;
-    public final Object f35026Z;
-    public TdApi.NetworkType f35028Z1;
-    public boolean f35032a2;
-    public HandlerC10770jj f35033b;
-    public boolean f35036b2;
-    public String f35039c1;
-    public boolean f35040c2;
-    public String f35042d1;
-    public boolean f35043d2;
-    public TdApi.LanguagePackInfo f35045e1;
-    public long f35046e2;
-    public String f35048f1;
-    public boolean f35049f2;
-    public final C11059v7 f35053h0;
-    public String f35054h1;
-    public TdApi.ChatFilterInfo[] f35055h2;
-    public final C11039u9 f35056i0;
-    public String f35057i1;
-    public final C10756j9 f35059j0;
-    public boolean f35061j2;
-    public final C10802kc f35062k0;
-    public final C11134y8 f35065l0;
-    public final C11115xb f35068m0;
-    public TdApi.ProfilePhoto f35070m2;
-    public final C10733ic f35071n0;
-    public boolean f35073n2;
-    public final C11004sj f35074o0;
-    public boolean f35076o2;
-    public final C10827lb f35077p0;
-    public final C5365w f35080q0;
-    public int f35093u1;
-    public boolean f35095v0;
-    public int[] f35096v1;
-    public int f35098w1;
-    public boolean f35100x1;
-    public boolean f35102y1;
-    public static final long f34958v2 = C7316a.m17059b(1112283549);
-    public static final long f34959w2 = C7316a.m17059b(1336679475);
-    public static final long f34960x2 = C7316a.m17059b(1136101327);
-    public static final long f34961y2 = C7316a.m17059b(1247387696);
-    public static final long f34962z2 = C7316a.m17059b(1140222267);
-    public static int f34956A2 = -1;
-    public static int f34957B2 = -2;
-    public final Object f35029a = new Object();
-    public final Client.AbstractC7865g f34987M = C10926q2.f34951a;
-    public final Client.AbstractC7865g f34990N = new Client.AbstractC7865g() {
+    public long f34967A1;
+    public long f34969B1;
+    public boolean f34971C1;
+    public boolean f34973D1;
+    public boolean f34975E1;
+    public boolean f34977F1;
+    public boolean f34978G0;
+    public int f34979G1;
+    public boolean f34980H0;
+    public AbstractC5917i f34981H1;
+    public boolean f34982I0;
+    public boolean f34983I1;
+    public boolean f34984J0;
+    public TdApi.AuthorizationState f34985J1;
+    public String f34986K0;
+    public boolean f34987K1;
+    public String[] f34988L0;
+    public boolean f34989L1;
+    public TdApi.Reaction[] f34991M0;
+    public String f34992M1;
+    public String f34995N1;
+    public boolean f34997O0;
+    public boolean f35000P0;
+    public boolean f35003Q0;
+    public boolean f35006R0;
+    public boolean f35009S0;
+    public final Comparator<TdApi.User> f35011T;
+    public boolean f35012T0;
+    public final Comparator<AbstractC5098a1> f35014U;
+    public C10945o[] f35015U0;
+    public final C10536ab f35017V;
+    public long f35018V0;
+    public Map<String, Queue<Runnable>> f35019V1;
+    public final int f35020W;
+    public long f35021W0;
+    public C10946p f35022W1;
+    public C10941k f35023X;
+    public String f35025X1;
+    public boolean f35027Y0;
+    public String f35028Y1;
+    public final Object f35029Z;
+    public TdApi.NetworkType f35031Z1;
+    public boolean f35035a2;
+    public HandlerC10770jj f35036b;
+    public boolean f35039b2;
+    public String f35042c1;
+    public boolean f35043c2;
+    public String f35045d1;
+    public boolean f35046d2;
+    public TdApi.LanguagePackInfo f35048e1;
+    public long f35049e2;
+    public String f35051f1;
+    public boolean f35052f2;
+    public final C11059v7 f35056h0;
+    public String f35057h1;
+    public TdApi.ChatFilterInfo[] f35058h2;
+    public final C11039u9 f35059i0;
+    public String f35060i1;
+    public final C10756j9 f35062j0;
+    public boolean f35064j2;
+    public final C10802kc f35065k0;
+    public final C11134y8 f35068l0;
+    public final C11115xb f35071m0;
+    public TdApi.ProfilePhoto f35073m2;
+    public final C10733ic f35074n0;
+    public boolean f35076n2;
+    public final C11004sj f35077o0;
+    public boolean f35079o2;
+    public final C10827lb f35080p0;
+    public final C5365w f35083q0;
+    public int f35096u1;
+    public boolean f35098v0;
+    public int[] f35099v1;
+    public int f35101w1;
+    public boolean f35103x1;
+    public boolean f35105y1;
+    public static final long f34961v2 = C7316a.m17059b(1112283549);
+    public static final long f34962w2 = C7316a.m17059b(1336679475);
+    public static final long f34963x2 = C7316a.m17059b(1136101327);
+    public static final long f34964y2 = C7316a.m17059b(1247387696);
+    public static final long f34965z2 = C7316a.m17059b(1140222267);
+    public static int f34959A2 = -1;
+    public static int f34960B2 = -2;
+    public final Object f35032a = new Object();
+    public final Client.AbstractC7865g f34990M = C10926q2.f34954a;
+    public final Client.AbstractC7865g f34993N = new Client.AbstractC7865g() {
         @Override
         public final void mo255t2(TdApi.Object object) {
             C10930q6.this.m2186w8(object);
         }
     };
-    public final Client.AbstractC7865g f34993O = new Client.AbstractC7865g() {
+    public final Client.AbstractC7865g f34996O = new Client.AbstractC7865g() {
         @Override
         public final void mo255t2(TdApi.Object object) {
             C10930q6.this.m2894D8(object);
         }
     };
-    public final Client.AbstractC7865g f34996P = C10905p2.f34902a;
-    public final Client.AbstractC7865g f34999Q = C11011t2.f35350a;
-    public final Client.AbstractC7865g f35002R = new Client.AbstractC7865g() {
+    public final Client.AbstractC7865g f34999P = C10905p2.f34905a;
+    public final Client.AbstractC7865g f35002Q = C11011t2.f35353a;
+    public final Client.AbstractC7865g f35005R = new Client.AbstractC7865g() {
         @Override
         public final void mo255t2(TdApi.Object object) {
             C10930q6.this.m2846G8(object);
         }
     };
-    public final Client.AbstractC7865g f35005S = C10966r2.f35228a;
-    public int f35023Y = -1;
-    public final Object f35030a0 = new Object();
-    public final HashMap<Long, TdApi.Chat> f35034b0 = new HashMap<>();
-    public final HashMap<String, C10684g8> f35038c0 = new HashMap<>();
-    public final C10947q f35041d0 = new C10947q(0, "AnimatedTgxEmojies", false);
-    public final C10947q f35044e0 = new C10947q(2, "BetterDice", true);
-    public final HashSet<Long> f35047f0 = new HashSet<>();
-    public final HashMap<Long, Integer> f35050g0 = new HashMap<>();
-    public final HashSet<Long> f35083r0 = new HashSet<>();
-    public final C5325h f35086s0 = new C5325h();
-    public long f35089t0 = 0;
-    public int f35092u0 = 100000;
-    public int f35097w0 = 10000;
-    public long f35099x0 = 1000;
-    public long f35101y0 = 64;
-    public long f35103z0 = 12582912;
-    public long f34963A0 = 384;
-    public int f34965B0 = 100;
-    public int f34967C0 = 200;
-    public int f34969D0 = 5;
-    public int f34971E0 = 100;
-    public double f34973F0 = 0.75d;
-    public boolean f34991N0 = true;
-    public int f35021X0 = -1;
-    public String f35027Z0 = "gif";
-    public String f35031a1 = "foursquare";
-    public String f35035b1 = "pic";
-    public long f35051g1 = SystemClock.uptimeMillis();
-    public long f35060j1 = 30000;
-    public long f35063k1 = 10000;
-    public long f35066l1 = 1271266957;
-    public long f35069m1 = 777000;
-    public final Map<String, C10562b9> f35072n1 = new HashMap();
-    public final C11164z6 f35075o1 = new C11164z6();
-    public final C11164z6 f35078p1 = new C11164z6();
-    public int f35081q1 = Log.TAG_CAMERA;
-    public int f35084r1 = 4000;
-    public int f35087s1 = 200;
-    public boolean f35090t1 = false;
-    public final AtomicInteger f35104z1 = new AtomicInteger(0);
-    public final HashMap<String, C10942l> f34995O1 = new HashMap<>();
-    public final HashMap<Long, C10942l> f34998P1 = new HashMap<>();
-    public final C6035e<ArrayList<AbstractC9323v4<?>>> f35001Q1 = new C6035e<>(8);
-    public final C5324g f35004R1 = new C5324g();
-    public final Object f35007S1 = new Object();
-    public final HashMap<String, TdApi.MessageContent> f35010T1 = new HashMap<>();
-    public final HashMap<String, TdApi.FormattedText> f35013U1 = new HashMap<>();
-    public final Set<String> f35052g2 = new HashSet();
-    public final C6038h<TdApi.Call> f35058i2 = new C6038h<>();
-    public final List<TdApi.SuggestedAction> f35064k2 = new ArrayList();
-    public final Map<String, TdApi.ChatTheme> f35067l2 = new HashMap();
-    public final C6814e f35079p2 = new C6814e(new AbstractC5914f() {
+    public final Client.AbstractC7865g f35008S = C10966r2.f35231a;
+    public int f35026Y = -1;
+    public final Object f35033a0 = new Object();
+    public final HashMap<Long, TdApi.Chat> f35037b0 = new HashMap<>();
+    public final HashMap<String, C10684g8> f35041c0 = new HashMap<>();
+    public final C10947q f35044d0 = new C10947q(0, "AnimatedTgxEmojies", false);
+    public final C10947q f35047e0 = new C10947q(2, "BetterDice", true);
+    public final HashSet<Long> f35050f0 = new HashSet<>();
+    public final HashMap<Long, Integer> f35053g0 = new HashMap<>();
+    public final HashSet<Long> f35086r0 = new HashSet<>();
+    public final C5325h f35089s0 = new C5325h();
+    public long f35092t0 = 0;
+    public int f35095u0 = 100000;
+    public int f35100w0 = 10000;
+    public long f35102x0 = 1000;
+    public long f35104y0 = 64;
+    public long f35106z0 = 12582912;
+    public long f34966A0 = 384;
+    public int f34968B0 = 100;
+    public int f34970C0 = 200;
+    public int f34972D0 = 5;
+    public int f34974E0 = 100;
+    public double f34976F0 = 0.75d;
+    public boolean f34994N0 = true;
+    public int f35024X0 = -1;
+    public String f35030Z0 = "gif";
+    public String f35034a1 = "foursquare";
+    public String f35038b1 = "pic";
+    public long f35054g1 = SystemClock.uptimeMillis();
+    public long f35063j1 = 30000;
+    public long f35066k1 = 10000;
+    public long f35069l1 = 1271266957;
+    public long f35072m1 = 777000;
+    public final Map<String, C10562b9> f35075n1 = new HashMap();
+    public final C11164z6 f35078o1 = new C11164z6();
+    public final C11164z6 f35081p1 = new C11164z6();
+    public int f35084q1 = Log.TAG_CAMERA;
+    public int f35087r1 = 4000;
+    public int f35090s1 = 200;
+    public boolean f35093t1 = false;
+    public final AtomicInteger f35107z1 = new AtomicInteger(0);
+    public final HashMap<String, C10942l> f34998O1 = new HashMap<>();
+    public final HashMap<Long, C10942l> f35001P1 = new HashMap<>();
+    public final C6035e<ArrayList<AbstractC9323v4<?>>> f35004Q1 = new C6035e<>(8);
+    public final C5324g f35007R1 = new C5324g();
+    public final Object f35010S1 = new Object();
+    public final HashMap<String, TdApi.MessageContent> f35013T1 = new HashMap<>();
+    public final HashMap<String, TdApi.FormattedText> f35016U1 = new HashMap<>();
+    public final Set<String> f35055g2 = new HashSet();
+    public final C6038h<TdApi.Call> f35061i2 = new C6038h<>();
+    public final List<TdApi.SuggestedAction> f35067k2 = new ArrayList();
+    public final Map<String, TdApi.ChatTheme> f35070l2 = new HashMap();
+    public final C6814e f35082p2 = new C6814e(new AbstractC5914f() {
         @Override
         public final boolean get() {
             boolean x8;
             x8 = C10930q6.this.m2170x8();
             return x8;
         }
-    }).m18905c(new Runnable() {
+    }).m18906c(new Runnable() {
         @Override
         public final void run() {
             C10930q6.this.m2328na();
@@ -256,14 +256,14 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             C10930q6.this.m2312oa();
         }
     });
-    public final C6814e f35082q2 = new C6814e(new AbstractC5914f() {
+    public final C6814e f35085q2 = new C6814e(new AbstractC5914f() {
         @Override
         public final boolean get() {
             boolean y8;
             y8 = C10930q6.this.m2154y8();
             return y8;
         }
-    }).m18905c(new Runnable() {
+    }).m18906c(new Runnable() {
         @Override
         public final void run() {
             C10930q6.this.m2328na();
@@ -274,14 +274,14 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             C10930q6.this.m2312oa();
         }
     });
-    public final C6814e f35085r2 = new C6814e(new AbstractC5914f() {
+    public final C6814e f35088r2 = new C6814e(new AbstractC5914f() {
         @Override
         public final boolean get() {
             boolean z8;
             z8 = C10930q6.this.m2138z8();
             return z8;
         }
-    }).m18905c(new Runnable() {
+    }).m18906c(new Runnable() {
         @Override
         public final void run() {
             C10930q6.this.m2328na();
@@ -292,14 +292,14 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             C10930q6.this.m2312oa();
         }
     });
-    public final C6814e f35088s2 = new C6814e(new AbstractC5914f() {
+    public final C6814e f35091s2 = new C6814e(new AbstractC5914f() {
         @Override
         public final boolean get() {
             boolean A8;
             A8 = C10930q6.this.m2942A8();
             return A8;
         }
-    }).m18905c(new Runnable() {
+    }).m18906c(new Runnable() {
         @Override
         public final void run() {
             C10930q6.this.m2328na();
@@ -310,8 +310,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             C10930q6.this.m2312oa();
         }
     });
-    public final C6814e f35091t2 = new C6814e(C10751j4.f34392a);
-    public final C6814e f35094u2 = new C6814e(new AbstractC5914f() {
+    public final C6814e f35094t2 = new C6814e(C10751j4.f34395a);
+    public final C6814e f35097u2 = new C6814e(new AbstractC5914f() {
         @Override
         public final boolean get() {
             boolean C8;
@@ -319,41 +319,41 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             return C8;
         }
     });
-    public final TdApi.TdlibParameters f35037c = new TdApi.TdlibParameters(false, null, null, true, true, true, true, 21724, "3e0cb5efcd52300aec5994fdfc5bdc16", null, null, null, "0.24.6.1506-arm64-v8a", false, false);
+    public final TdApi.TdlibParameters f35040c = new TdApi.TdlibParameters(false, null, null, true, true, true, true, 21724, "3e0cb5efcd52300aec5994fdfc5bdc16", null, null, null, "0.24.6.1507-arm64-v8a", false, false);
 
     public class C10931a extends AbstractRunnableC5910b {
-        public final AtomicBoolean f35105M;
-        public final TdApi.Message f35106N;
-        public final boolean f35107O;
-        public final AbstractC5918j f35108P;
+        public final AtomicBoolean f35108M;
+        public final TdApi.Message f35109N;
+        public final boolean f35110O;
+        public final AbstractC5918j f35111P;
 
         public C10931a(AtomicBoolean atomicBoolean, TdApi.Message message, boolean z, AbstractC5918j jVar) {
-            this.f35105M = atomicBoolean;
-            this.f35106N = message;
-            this.f35107O = z;
-            this.f35108P = jVar;
+            this.f35108M = atomicBoolean;
+            this.f35109N = message;
+            this.f35110O = z;
+            this.f35111P = jVar;
         }
 
         @Override
         public void mo1364b() {
             boolean z;
             String str;
-            synchronized (this.f35105M) {
-                if (!this.f35105M.get()) {
-                    String f4 = C10930q6.this.m2462f4(this.f35106N.chatId);
-                    if (!C5070i.m24061i(f4)) {
+            synchronized (this.f35108M) {
+                if (!this.f35108M.get()) {
+                    String f4 = C10930q6.this.m2462f4(this.f35109N.chatId);
+                    if (!C5070i.m24062i(f4)) {
                         z = false;
-                        str = C10930q6.this.m2714Oc(f4, C7319d.m17021i(this.f35106N.f25406id));
-                        if (!this.f35107O && this.f35106N.mediaAlbumId != 0) {
+                        str = C10930q6.this.m2714Oc(f4, C7319d.m17021i(this.f35109N.f25409id));
+                        if (!this.f35110O && this.f35109N.mediaAlbumId != 0) {
                             str = str + "?single";
                         }
                     } else {
-                        long p = C7316a.m17045p(this.f35106N.chatId);
-                        str = p != 0 ? C10930q6.this.m2698Pc(p, C7319d.m17021i(this.f35106N.f25406id)) : null;
+                        long p = C7316a.m17045p(this.f35109N.chatId);
+                        str = p != 0 ? C10930q6.this.m2698Pc(p, C7319d.m17021i(this.f35109N.f25409id)) : null;
                         z = true;
                     }
-                    if (!C5070i.m24061i(str) && !this.f35105M.getAndSet(true)) {
-                        this.f35108P.mo1330a(new C10943m(str, z));
+                    if (!C5070i.m24062i(str) && !this.f35108M.getAndSet(true)) {
+                        this.f35111P.mo1330a(new C10943m(str, z));
                     }
                 }
             }
@@ -361,12 +361,12 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public class C10932b implements Client.AbstractC7865g {
-        public final Client.AbstractC7865g f35110a;
-        public final long f35111b;
+        public final Client.AbstractC7865g f35113a;
+        public final long f35114b;
 
         public C10932b(Client.AbstractC7865g gVar, long j) {
-            this.f35110a = gVar;
-            this.f35111b = j;
+            this.f35113a = gVar;
+            this.f35114b = j;
         }
 
         @Override
@@ -375,7 +375,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             switch (object.getConstructor()) {
                 case TdApi.Error.CONSTRUCTOR:
                 case TdApi.ChatInviteLink.CONSTRUCTOR:
-                    this.f35110a.mo255t2(object);
+                    this.f35113a.mo255t2(object);
                     return;
                 case TdApi.SupergroupFullInfo.CONSTRUCTOR:
                     chatInviteLink = ((TdApi.SupergroupFullInfo) object).inviteLink;
@@ -388,30 +388,30 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                     return;
             }
             if (chatInviteLink != null) {
-                this.f35110a.mo255t2(chatInviteLink);
+                this.f35113a.mo255t2(chatInviteLink);
             } else {
-                C10930q6.this.m2270r4().m14783o(new TdApi.ReplacePrimaryChatInviteLink(this.f35111b), this);
+                C10930q6.this.m2270r4().m14783o(new TdApi.ReplacePrimaryChatInviteLink(this.f35114b), this);
             }
         }
     }
 
     public class C10933c implements Client.AbstractC7865g {
-        public final TdApi.ChatMemberStatus f35113M;
-        public final AtomicReference f35114N;
-        public final AtomicInteger f35115O;
-        public final AbstractC10939i f35116P;
-        public final AtomicBoolean f35118a;
-        public final long f35119b;
-        public final TdApi.MessageSender f35120c;
+        public final TdApi.ChatMemberStatus f35116M;
+        public final AtomicReference f35117N;
+        public final AtomicInteger f35118O;
+        public final AbstractC10939i f35119P;
+        public final AtomicBoolean f35121a;
+        public final long f35122b;
+        public final TdApi.MessageSender f35123c;
 
         public C10933c(AtomicBoolean atomicBoolean, long j, TdApi.MessageSender messageSender, TdApi.ChatMemberStatus chatMemberStatus, AtomicReference atomicReference, AtomicInteger atomicInteger, AbstractC10939i iVar) {
-            this.f35118a = atomicBoolean;
-            this.f35119b = j;
-            this.f35120c = messageSender;
-            this.f35113M = chatMemberStatus;
-            this.f35114N = atomicReference;
-            this.f35115O = atomicInteger;
-            this.f35116P = iVar;
+            this.f35121a = atomicBoolean;
+            this.f35122b = j;
+            this.f35123c = messageSender;
+            this.f35116M = chatMemberStatus;
+            this.f35117N = atomicReference;
+            this.f35118O = atomicInteger;
+            this.f35119P = iVar;
         }
 
         @Override
@@ -419,31 +419,31 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             int constructor = object.getConstructor();
             boolean z = false;
             if (constructor == -1679978726) {
-                TdApi.Error error = (TdApi.Error) this.f35114N.getAndSet((TdApi.Error) object);
+                TdApi.Error error = (TdApi.Error) this.f35117N.getAndSet((TdApi.Error) object);
                 if (error == null) {
-                    C10930q6.this.m2270r4().m14783o(new TdApi.GetChatMember(this.f35119b, this.f35120c), this);
+                    C10930q6.this.m2270r4().m14783o(new TdApi.GetChatMember(this.f35122b, this.f35123c), this);
                     return;
                 }
-                AbstractC10939i iVar = this.f35116P;
+                AbstractC10939i iVar = this.f35119P;
                 if (iVar != null) {
                     iVar.mo1765a(false, error);
                 } else {
-                    C1379j0.m37302t0(error);
+                    C1379j0.m37305t0(error);
                 }
             } else if (constructor == -722616727) {
-                AtomicBoolean atomicBoolean = this.f35118a;
+                AtomicBoolean atomicBoolean = this.f35121a;
                 if (atomicBoolean == null || atomicBoolean.getAndSet(true)) {
-                    C10930q6.this.m2270r4().m14783o(new TdApi.GetChatMember(this.f35119b, this.f35120c), this);
+                    C10930q6.this.m2270r4().m14783o(new TdApi.GetChatMember(this.f35122b, this.f35123c), this);
                 } else {
-                    C10930q6.this.m2270r4().m14783o(new TdApi.SetChatMemberStatus(this.f35119b, this.f35120c, this.f35113M), this);
+                    C10930q6.this.m2270r4().m14783o(new TdApi.SetChatMemberStatus(this.f35122b, this.f35123c, this.f35116M), this);
                 }
             } else if (constructor == 1829953909) {
                 TdApi.ChatMember chatMember = (TdApi.ChatMember) object;
-                if (this.f35114N.get() != null || C7321e.m17013D(this.f35113M, chatMember.status) || this.f35115O.incrementAndGet() > 3) {
-                    C10930q6.this.m2480e2().m1651e1(this.f35119b, chatMember);
-                    if (this.f35116P != null) {
-                        TdApi.Error error2 = (TdApi.Error) this.f35114N.get();
-                        AbstractC10939i iVar2 = this.f35116P;
+                if (this.f35117N.get() != null || C7321e.m17013D(this.f35116M, chatMember.status) || this.f35118O.incrementAndGet() > 3) {
+                    C10930q6.this.m2480e2().m1651e1(this.f35122b, chatMember);
+                    if (this.f35119P != null) {
+                        TdApi.Error error2 = (TdApi.Error) this.f35117N.get();
+                        AbstractC10939i iVar2 = this.f35119P;
                         if (error2 == null) {
                             z = true;
                         }
@@ -452,26 +452,26 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                     }
                     return;
                 }
-                C10930q6.this.m2270r4().m14783o(new TdApi.SetAlarm((this.f35115O.get() * 0.5d) + 0.5d), this);
+                C10930q6.this.m2270r4().m14783o(new TdApi.SetAlarm((this.f35118O.get() * 0.5d) + 0.5d), this);
             }
         }
     }
 
     public class C10934d implements Client.AbstractC7865g {
-        public final AtomicInteger f35121M;
-        public final AbstractC10939i f35122N;
-        public final AtomicReference f35123O;
-        public final long f35125a;
-        public final TdApi.MessageSender f35126b;
-        public final int f35127c;
+        public final AtomicInteger f35124M;
+        public final AbstractC10939i f35125N;
+        public final AtomicReference f35126O;
+        public final long f35128a;
+        public final TdApi.MessageSender f35129b;
+        public final int f35130c;
 
         public C10934d(long j, TdApi.MessageSender messageSender, int i, AtomicInteger atomicInteger, AbstractC10939i iVar, AtomicReference atomicReference) {
-            this.f35125a = j;
-            this.f35126b = messageSender;
-            this.f35127c = i;
-            this.f35121M = atomicInteger;
-            this.f35122N = iVar;
-            this.f35123O = atomicReference;
+            this.f35128a = j;
+            this.f35129b = messageSender;
+            this.f35130c = i;
+            this.f35124M = atomicInteger;
+            this.f35125N = iVar;
+            this.f35126O = atomicReference;
         }
 
         @Override
@@ -479,113 +479,113 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             int constructor = object.getConstructor();
             boolean z = false;
             if (constructor == -1679978726) {
-                TdApi.Error error = (TdApi.Error) this.f35123O.getAndSet((TdApi.Error) object);
+                TdApi.Error error = (TdApi.Error) this.f35126O.getAndSet((TdApi.Error) object);
                 if (error == null) {
-                    C10930q6.this.m2270r4().m14783o(new TdApi.GetChatMember(this.f35125a, this.f35126b), this);
+                    C10930q6.this.m2270r4().m14783o(new TdApi.GetChatMember(this.f35128a, this.f35129b), this);
                     return;
                 }
-                AbstractC10939i iVar = this.f35122N;
+                AbstractC10939i iVar = this.f35125N;
                 if (iVar != null) {
                     iVar.mo1765a(false, error);
                 } else {
-                    C1379j0.m37302t0(error);
+                    C1379j0.m37305t0(error);
                 }
             } else if (constructor == -722616727) {
-                C10930q6.this.m2270r4().m14783o(new TdApi.GetChatMember(this.f35125a, this.f35126b), this);
+                C10930q6.this.m2270r4().m14783o(new TdApi.GetChatMember(this.f35128a, this.f35129b), this);
             } else if (constructor == 1829953909) {
                 TdApi.ChatMember chatMember = (TdApi.ChatMember) object;
-                if (chatMember.status.getConstructor() == this.f35127c || this.f35121M.incrementAndGet() > 3) {
-                    C10930q6.this.m2480e2().m1651e1(this.f35125a, chatMember);
-                    AbstractC10939i iVar2 = this.f35122N;
+                if (chatMember.status.getConstructor() == this.f35130c || this.f35124M.incrementAndGet() > 3) {
+                    C10930q6.this.m2480e2().m1651e1(this.f35128a, chatMember);
+                    AbstractC10939i iVar2 = this.f35125N;
                     if (iVar2 != null) {
-                        if (chatMember.status.getConstructor() == this.f35127c) {
+                        if (chatMember.status.getConstructor() == this.f35130c) {
                             z = true;
                         }
-                        iVar2.mo1765a(z, (TdApi.Error) this.f35123O.get());
+                        iVar2.mo1765a(z, (TdApi.Error) this.f35126O.get());
                         return;
                     }
                     return;
                 }
-                C10930q6.this.m2270r4().m14783o(new TdApi.SetAlarm((this.f35121M.get() * 0.5d) + 0.5d), this);
+                C10930q6.this.m2270r4().m14783o(new TdApi.SetAlarm((this.f35124M.get() * 0.5d) + 0.5d), this);
             }
         }
     }
 
     public class C10935e implements Client.AbstractC7865g {
-        public final TdApi.Function f35128M;
-        public final AbstractC5918j f35130a;
-        public final List f35131b;
-        public final boolean f35132c;
+        public final TdApi.Function f35131M;
+        public final AbstractC5918j f35133a;
+        public final List f35134b;
+        public final boolean f35135c;
 
         public C10935e(AbstractC5918j jVar, List list, boolean z, TdApi.Function function) {
-            this.f35130a = jVar;
-            this.f35131b = list;
-            this.f35132c = z;
-            this.f35128M = function;
+            this.f35133a = jVar;
+            this.f35134b = list;
+            this.f35135c = z;
+            this.f35131M = function;
         }
 
         @Override
         public void mo255t2(TdApi.Object object) {
             int constructor = object.getConstructor();
             if (constructor == -1679978726) {
-                if (this.f35131b.isEmpty()) {
-                    C1379j0.m37302t0(object);
+                if (this.f35134b.isEmpty()) {
+                    C1379j0.m37305t0(object);
                 }
-                this.f35130a.mo1330a(this.f35131b);
+                this.f35133a.mo1330a(this.f35134b);
             } else if (constructor == -16498159) {
                 TdApi.Message[] messageArr = ((TdApi.Messages) object).messages;
                 if (messageArr.length == 0) {
-                    this.f35130a.mo1330a(this.f35131b);
+                    this.f35133a.mo1330a(this.f35134b);
                     return;
                 }
-                Collections.addAll(this.f35131b, messageArr);
-                List list = this.f35131b;
-                long j = ((TdApi.Message) list.get(list.size() - 1)).f25406id;
-                if (this.f35132c) {
-                    ((TdApi.SearchChatMessages) this.f35128M).fromMessageId = j;
+                Collections.addAll(this.f35134b, messageArr);
+                List list = this.f35134b;
+                long j = ((TdApi.Message) list.get(list.size() - 1)).f25409id;
+                if (this.f35135c) {
+                    ((TdApi.SearchChatMessages) this.f35131M).fromMessageId = j;
                 } else {
-                    ((TdApi.GetChatHistory) this.f35128M).fromMessageId = j;
+                    ((TdApi.GetChatHistory) this.f35131M).fromMessageId = j;
                 }
-                C10930q6.this.m2270r4().m14783o(this.f35128M, this);
+                C10930q6.this.m2270r4().m14783o(this.f35131M, this);
             }
         }
     }
 
     public static class C10937g {
-        public final TdApi.ChatPosition f35136a;
-        public final int f35137b;
+        public final TdApi.ChatPosition f35139a;
+        public final int f35140b;
 
         public C10937g(TdApi.ChatPosition chatPosition, int i) {
-            this.f35136a = chatPosition;
-            this.f35137b = i;
+            this.f35139a = chatPosition;
+            this.f35140b = i;
         }
 
         public boolean m2130a() {
-            return C5063c.m24138h(this.f35137b, 1, false) != 0;
+            return C5063c.m24139h(this.f35140b, 1, false) != 0;
         }
 
         public boolean m2129b() {
-            return C5063c.m24144b(this.f35137b, 1);
+            return C5063c.m24145b(this.f35140b, 1);
         }
 
         public boolean m2128c() {
-            return C5063c.m24144b(this.f35137b, 4);
+            return C5063c.m24145b(this.f35140b, 4);
         }
 
         public boolean m2127d() {
-            return C5063c.m24144b(this.f35137b, 2);
+            return C5063c.m24145b(this.f35140b, 2);
         }
     }
 
     public static class C10938h {
-        public final C10684g8 f35138a;
-        public final TdApi.Chat f35139b;
-        public final C10937g f35140c;
+        public final C10684g8 f35141a;
+        public final TdApi.Chat f35142b;
+        public final C10937g f35143c;
 
         public C10938h(C10684g8 g8Var, TdApi.Chat chat, C10937g gVar) {
-            this.f35138a = g8Var;
-            this.f35139b = chat;
-            this.f35140c = gVar;
+            this.f35141a = g8Var;
+            this.f35142b = chat;
+            this.f35143c = gVar;
         }
     }
 
@@ -594,90 +594,90 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public static class C10940j {
-        public int f35141a;
-        public int f35142b;
-        public String f35143c;
-        public String f35144d;
+        public int f35144a;
+        public int f35145b;
+        public String f35146c;
+        public String f35147d;
 
         public C10940j(int i, int i2, String str, String str2) {
-            this.f35141a = i;
-            this.f35142b = i2;
-            this.f35143c = str;
-            this.f35144d = str2;
+            this.f35144a = i;
+            this.f35145b = i2;
+            this.f35146c = str;
+            this.f35147d = str2;
         }
 
         public boolean m2126a() {
-            return (this.f35142b & 1) == 0;
+            return (this.f35145b & 1) == 0;
         }
 
         public void m2125b(boolean z) {
-            this.f35142b = C5063c.m24138h(this.f35142b, 1, !z);
+            this.f35145b = C5063c.m24139h(this.f35145b, 1, !z);
         }
 
         public final String toString() {
             StringBuilder sb2 = new StringBuilder();
             sb2.append(0);
             sb2.append('_');
-            sb2.append(this.f35141a);
+            sb2.append(this.f35144a);
             sb2.append('_');
-            sb2.append(this.f35142b);
+            sb2.append(this.f35145b);
             sb2.append('_');
-            sb2.append(this.f35143c.length());
+            sb2.append(this.f35146c.length());
             sb2.append('_');
-            sb2.append(this.f35143c);
-            if (!C5070i.m24061i(this.f35144d)) {
+            sb2.append(this.f35146c);
+            if (!C5070i.m24062i(this.f35147d)) {
                 sb2.append('_');
-                sb2.append(this.f35144d.length());
+                sb2.append(this.f35147d.length());
                 sb2.append('_');
-                sb2.append(this.f35144d);
+                sb2.append(this.f35147d);
             }
             return sb2.toString();
         }
     }
 
     public static final class C10941k implements Client.AbstractC7865g, Client.AbstractC7861c {
-        public static final AtomicInteger f35145V = new AtomicInteger();
-        public final C10691gc f35146M;
-        public long f35148O;
-        public long f35149P;
-        public boolean f35150Q;
-        public int f35152S;
-        public Runnable f35154U;
-        public final C10930q6 f35155a;
-        public final Client f35156b;
-        public final C10691gc f35157c;
-        public boolean f35147N = true;
-        public final CountDownLatch f35151R = new CountDownLatch(1);
-        public final AtomicBoolean f35153T = new AtomicBoolean(false);
+        public static final AtomicInteger f35148V = new AtomicInteger();
+        public final C10691gc f35149M;
+        public long f35151O;
+        public long f35152P;
+        public boolean f35153Q;
+        public int f35155S;
+        public Runnable f35157U;
+        public final C10930q6 f35158a;
+        public final Client f35159b;
+        public final C10691gc f35160c;
+        public boolean f35150N = true;
+        public final CountDownLatch f35154R = new CountDownLatch(1);
+        public final AtomicBoolean f35156T = new AtomicBoolean(false);
 
         public C10941k(C10930q6 q6Var) {
-            Log.m14721i((int) Log.TAG_ACCOUNTS, "Creating client #%d", Integer.valueOf(f35145V.incrementAndGet()));
-            this.f35155a = q6Var;
-            Client d = Client.m14794d(this, this, this, q6Var.f35100x1);
-            this.f35156b = d;
+            Log.m14721i((int) Log.TAG_ACCOUNTS, "Creating client #%d", Integer.valueOf(f35148V.incrementAndGet()));
+            this.f35158a = q6Var;
+            Client d = Client.m14794d(this, this, this, q6Var.f35103x1);
+            this.f35159b = d;
             q6Var.m2196ve(d);
-            if (q6Var.f35032a2) {
-                d.m14783o(new TdApi.SetOption("online", new TdApi.OptionValueBoolean(true)), q6Var.f34987M);
+            if (q6Var.f35035a2) {
+                d.m14783o(new TdApi.SetOption("online", new TdApi.OptionValueBoolean(true)), q6Var.f34990M);
             }
-            q6Var.f35014V.m4719a2(q6Var, d);
-            this.f35157c = new C10691gc(q6Var, "Y2xvdWRfdGd4X2FuZHJvaWRfcmVzb3Vy");
-            this.f35146M = new C10691gc(q6Var, "tgx_log");
-            if (!q6Var.f35014V.m4680k1()) {
+            q6Var.f35017V.m4719a2(q6Var, d);
+            this.f35160c = new C10691gc(q6Var, "Y2xvdWRfdGd4X2FuZHJvaWRfcmVzb3Vy");
+            this.f35149M = new C10691gc(q6Var, "tgx_log");
+            if (!q6Var.f35017V.m4680k1()) {
                 m2110m();
             }
         }
 
         public void m2109n(StackTraceElement[] stackTraceElementArr, TdApi.Object object) {
             if (object.getConstructor() == -1679978726) {
-                Tracer.m14771i(this.f35155a.m2188w6(), TdApi.SetTdlibParameters.class, (TdApi.Error) object, stackTraceElementArr);
+                Tracer.m14771i(this.f35158a.m2188w6(), TdApi.SetTdlibParameters.class, (TdApi.Error) object, stackTraceElementArr);
             }
         }
 
         public void m2108o(long j, StackTraceElement[] stackTraceElementArr, TdApi.Object object) {
-            C7903b.C7904a.m14397c("CheckDatabaseEncryptionKey response in %dms, accountId:%d", Long.valueOf(SystemClock.uptimeMillis() - j), Integer.valueOf(this.f35155a.f35017W));
+            C7903b.C7904a.m14396c("CheckDatabaseEncryptionKey response in %dms, accountId:%d", Long.valueOf(SystemClock.uptimeMillis() - j), Integer.valueOf(this.f35158a.f35020W));
             m2103t();
             if (object.getConstructor() == -1679978726) {
-                Tracer.m14771i(this.f35155a.m2188w6(), TdApi.CheckDatabaseEncryptionKey.class, (TdApi.Error) object, stackTraceElementArr);
+                Tracer.m14771i(this.f35158a.m2188w6(), TdApi.CheckDatabaseEncryptionKey.class, (TdApi.Error) object, stackTraceElementArr);
             }
         }
 
@@ -685,43 +685,43 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             TdApi.Proxy[] proxyArr;
             if (object.getConstructor() == 1200447205) {
                 for (TdApi.Proxy proxy : ((TdApi.Proxies) object).proxies) {
-                    int o = C4868i.m24726c2().m24633o(proxy.server, proxy.port, proxy.type, null, proxy.isEnabled);
+                    int o = C4868i.m24727c2().m24634o(proxy.server, proxy.port, proxy.type, null, proxy.isEnabled);
                     if (proxy.isEnabled) {
-                        this.f35155a.m2390jc(o, proxy.server, proxy.port, proxy.type);
+                        this.f35158a.m2390jc(o, proxy.server, proxy.port, proxy.type);
                     }
                 }
                 return;
             }
-            int H0 = C4868i.m24726c2().m24877H0();
-            C4868i.C4880l A1 = C4868i.m24726c2().m24925A1(H0);
+            int H0 = C4868i.m24727c2().m24878H0();
+            C4868i.C4880l A1 = C4868i.m24727c2().m24926A1(H0);
             if (A1 != null) {
-                this.f35155a.m2390jc(H0, A1.f16690b, A1.f16691c, A1.f16681M);
+                this.f35158a.m2390jc(H0, A1.f16690b, A1.f16691c, A1.f16681M);
             } else {
-                this.f35155a.m2390jc(0, null, 0, null);
+                this.f35158a.m2390jc(0, null, 0, null);
             }
         }
 
         public void m2105r() {
-            synchronized (this.f35153T) {
-                if (!this.f35153T.get()) {
-                    this.f35155a.m2548Zb(true);
+            synchronized (this.f35156T) {
+                if (!this.f35156T.get()) {
+                    this.f35158a.m2548Zb(true);
                 }
             }
         }
 
         public void m2104s(TdApi.Update update) {
-            this.f35155a.m2796Ja(this, update);
+            this.f35158a.m2796Ja(this, update);
         }
 
         public long m2124A() {
-            if (this.f35148O != 0) {
-                return SystemClock.uptimeMillis() - this.f35148O;
+            if (this.f35151O != 0) {
+                return SystemClock.uptimeMillis() - this.f35151O;
             }
             return -1L;
         }
 
         public long m2123B() {
-            return this.f35149P;
+            return this.f35152P;
         }
 
         @Override
@@ -730,70 +730,70 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         }
 
         public void m2112k() {
-            Log.m14721i((int) Log.TAG_ACCOUNTS, "Calling client.close(), accountId:%d", Integer.valueOf(this.f35155a.f35017W));
+            Log.m14721i((int) Log.TAG_ACCOUNTS, "Calling client.close(), accountId:%d", Integer.valueOf(this.f35158a.f35020W));
             long uptimeMillis = SystemClock.uptimeMillis();
-            this.f35156b.m14795c();
-            Log.m14721i((int) Log.TAG_ACCOUNTS, "client.close() done in %dms, accountId:%d, accountsNum:%d", Long.valueOf(SystemClock.uptimeMillis() - uptimeMillis), Integer.valueOf(this.f35155a.f35017W), Integer.valueOf(f35145V.decrementAndGet()));
+            this.f35159b.m14795c();
+            Log.m14721i((int) Log.TAG_ACCOUNTS, "client.close() done in %dms, accountId:%d, accountsNum:%d", Long.valueOf(SystemClock.uptimeMillis() - uptimeMillis), Integer.valueOf(this.f35158a.f35020W), Integer.valueOf(f35148V.decrementAndGet()));
         }
 
         public boolean m2111l() {
-            boolean z = this.f35150Q;
-            this.f35150Q = true;
+            boolean z = this.f35153Q;
+            this.f35153Q = true;
             return z;
         }
 
         public void m2110m() {
             TdApi.Function function;
-            if (this.f35148O == 0) {
-                this.f35148O = SystemClock.uptimeMillis();
+            if (this.f35151O == 0) {
+                this.f35151O = SystemClock.uptimeMillis();
                 final StackTraceElement[] stackTrace = new RuntimeException().getStackTrace();
-                this.f35156b.m14783o(new TdApi.SetTdlibParameters(this.f35155a.f35037c), new Client.AbstractC7865g() {
+                this.f35159b.m14783o(new TdApi.SetTdlibParameters(this.f35158a.f35040c), new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object) {
                         C10930q6.C10941k.this.m2109n(stackTrace, object);
                     }
                 });
                 final long uptimeMillis = SystemClock.uptimeMillis();
-                this.f35156b.m14783o(new TdApi.CheckDatabaseEncryptionKey(), new Client.AbstractC7865g() {
+                this.f35159b.m14783o(new TdApi.CheckDatabaseEncryptionKey(), new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object) {
                         C10930q6.C10941k.this.m2108o(uptimeMillis, stackTrace, object);
                     }
                 });
                 m2100w();
-                if (this.f35155a.f35017W != 0 || !C4868i.m24726c2().m24833N2()) {
+                if (this.f35158a.f35020W != 0 || !C4868i.m24727c2().m24834N2()) {
                     function = new TdApi.SetAlarm(0.0d);
                 } else {
                     function = new TdApi.GetProxies();
                 }
-                this.f35156b.m14783o(function, new Client.AbstractC7865g() {
+                this.f35159b.m14783o(function, new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object) {
                         C10930q6.C10941k.this.m2107p(object);
                     }
                 });
-                this.f35156b.m14783o(new TdApi.GetApplicationConfig(), this.f35155a.f34990N);
+                this.f35159b.m14783o(new TdApi.GetApplicationConfig(), this.f35158a.f34993N);
             }
         }
 
         public final void m2103t() {
-            synchronized (this.f35153T) {
-                if (!this.f35153T.getAndSet(true)) {
-                    if (this.f35154U != null) {
-                        this.f35155a.m2485dd().removeCallbacks(this.f35154U);
-                        this.f35154U = null;
+            synchronized (this.f35156T) {
+                if (!this.f35156T.getAndSet(true)) {
+                    if (this.f35157U != null) {
+                        this.f35158a.m2485dd().removeCallbacks(this.f35157U);
+                        this.f35157U = null;
                     }
-                    this.f35155a.m2548Zb(false);
+                    this.f35158a.m2548Zb(false);
                 }
             }
         }
 
         @Override
         public void mo255t2(TdApi.Object object) {
-            if (this.f35147N) {
+            if (this.f35150N) {
                 long uptimeMillis = SystemClock.uptimeMillis();
                 if (object instanceof TdApi.Update) {
-                    this.f35155a.m2796Ja(this, (TdApi.Update) object);
+                    this.f35158a.m2796Ja(this, (TdApi.Update) object);
                 } else {
                     Log.m14724e("Invalid update type: %s", object);
                 }
@@ -802,7 +802,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                     if (uptimeMillis2 > 100) {
                         Log.m14724e("%s took %dms", object.toString(), Long.valueOf(uptimeMillis2));
                     }
-                    this.f35149P += uptimeMillis2;
+                    this.f35152P += uptimeMillis2;
                     return;
                 }
                 return;
@@ -815,7 +815,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         }
 
         public void m2101v(final Runnable runnable, double d) {
-            this.f35156b.m14783o(new TdApi.SetAlarm(d), new Client.AbstractC7865g() {
+            this.f35159b.m14783o(new TdApi.SetAlarm(d), new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
                     runnable.run();
@@ -824,26 +824,26 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         }
 
         public final void m2100w() {
-            synchronized (this.f35153T) {
-                if (!this.f35153T.get() && this.f35154U == null) {
-                    this.f35154U = new Runnable() {
+            synchronized (this.f35156T) {
+                if (!this.f35156T.get() && this.f35157U == null) {
+                    this.f35157U = new Runnable() {
                         @Override
                         public final void run() {
                             C10930q6.C10941k.this.m2105r();
                         }
                     };
-                    this.f35155a.m2485dd().postDelayed(this.f35154U, 1000L);
+                    this.f35158a.m2485dd().postDelayed(this.f35157U, 1000L);
                 }
             }
         }
 
         public void m2099x() {
-            this.f35156b.m14783o(new TdApi.Close(), this.f35155a.f34987M);
+            this.f35159b.m14783o(new TdApi.Close(), this.f35158a.f34990M);
         }
 
         public void m2098y(final TdApi.Update update, boolean z) {
             if (z) {
-                this.f35155a.m2796Ja(this, update);
+                this.f35158a.m2796Ja(this, update);
             } else {
                 m2102u(new Runnable() {
                     @Override
@@ -855,83 +855,83 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         }
 
         public void m2097z() {
-            this.f35147N = false;
+            this.f35150N = false;
         }
     }
 
     public static class C10942l {
-        public CountDownLatch f35158a;
-        public TdApi.File f35159b;
-        public String f35160c;
-        public long f35161d;
-        public boolean f35162e;
-        public Runnable f35163f;
+        public CountDownLatch f35161a;
+        public TdApi.File f35162b;
+        public String f35163c;
+        public long f35164d;
+        public boolean f35165e;
+        public Runnable f35166f;
     }
 
     public static class C10943m {
-        public final String f35164a;
-        public final boolean f35165b;
+        public final String f35167a;
+        public final boolean f35168b;
 
         public C10943m(String str, boolean z) {
-            this.f35164a = str;
-            this.f35165b = z;
+            this.f35167a = str;
+            this.f35168b = z;
         }
 
         public String toString() {
-            return this.f35164a;
+            return this.f35167a;
         }
     }
 
     public static class C10944n {
-        public final long f35166a;
-        public final int f35167b;
-        public final int f35168c;
+        public final long f35169a;
+        public final int f35170b;
+        public final int f35171c;
 
         public C10944n(long j, int i, int i2) {
-            this.f35166a = j;
-            this.f35167b = i;
-            this.f35168c = i2;
+            this.f35169a = j;
+            this.f35170b = i;
+            this.f35171c = i2;
         }
 
         public boolean m2090a() {
-            int i = this.f35167b;
+            int i = this.f35170b;
             return (i == 1 || i == 2) ? false : true;
         }
 
         public boolean m2089b() {
-            return C7316a.m17049l(this.f35166a);
+            return C7316a.m17049l(this.f35169a);
         }
     }
 
     public static class C10945o {
-        public final String f35169a;
-        public final int f35170b;
-        public final String f35171c;
-        public final String f35172d;
+        public final String f35172a;
+        public final int f35173b;
+        public final String f35174c;
+        public final String f35175d;
 
         public C10945o(TdApi.JsonValueObject jsonValueObject) {
             Map<String, TdApi.JsonValue> b = C7318c.m17035b(jsonValueObject);
-            this.f35169a = C7318c.m17034c(b.get("host"));
-            this.f35170b = C7318c.m17036a(b.get("port"));
-            this.f35171c = C7318c.m17034c(b.get("username"));
-            this.f35172d = C7318c.m17034c(b.get("password"));
+            this.f35172a = C7318c.m17034c(b.get("host"));
+            this.f35173b = C7318c.m17036a(b.get("port"));
+            this.f35174c = C7318c.m17034c(b.get("username"));
+            this.f35175d = C7318c.m17034c(b.get("password"));
         }
     }
 
     public static class C10946p {
-        public final TdApi.Session[] f35173a;
-        public final TdApi.Session[] f35174b;
-        public final TdApi.Session[] f35175c;
-        public final TdApi.Session f35176d;
-        public final boolean f35177e;
-        public final int f35178f;
-        public final int f35179g;
-        public final int f35180h;
-        public final int f35181i;
+        public final TdApi.Session[] f35176a;
+        public final TdApi.Session[] f35177b;
+        public final TdApi.Session[] f35178c;
+        public final TdApi.Session f35179d;
+        public final boolean f35180e;
+        public final int f35181f;
+        public final int f35182g;
+        public final int f35183h;
+        public final int f35184i;
 
         public C10946p(TdApi.Sessions sessions) {
             boolean z;
-            this.f35181i = sessions.inactiveSessionTtlDays;
+            this.f35184i = sessions.inactiveSessionTtlDays;
             C7321e.m16920p1(sessions.sessions);
             HashMap hashMap = new HashMap();
             TdApi.Session[] sessionArr = sessions.sessions;
@@ -971,14 +971,14 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 i++;
             }
             atomicInteger = session != null ? (AtomicInteger) hashMap.remove(m2088a(session)) : atomicInteger;
-            this.f35173a = sessions.sessions;
-            this.f35176d = session;
-            this.f35179g = atomicInteger != null ? atomicInteger.get() : 1;
-            this.f35178f = hashMap.size();
-            this.f35180h = i3;
-            this.f35177e = i2 != 1 ? false : z;
-            this.f35175c = (arrayList2 == null || arrayList2.isEmpty()) ? new TdApi.Session[0] : (TdApi.Session[]) arrayList2.toArray(new TdApi.Session[0]);
-            this.f35174b = (arrayList == null || arrayList.isEmpty()) ? new TdApi.Session[0] : (TdApi.Session[]) arrayList.toArray(new TdApi.Session[0]);
+            this.f35176a = sessions.sessions;
+            this.f35179d = session;
+            this.f35182g = atomicInteger != null ? atomicInteger.get() : 1;
+            this.f35181f = hashMap.size();
+            this.f35183h = i3;
+            this.f35180e = i2 != 1 ? false : z;
+            this.f35178c = (arrayList2 == null || arrayList2.isEmpty()) ? new TdApi.Session[0] : (TdApi.Session[]) arrayList2.toArray(new TdApi.Session[0]);
+            this.f35177b = (arrayList == null || arrayList.isEmpty()) ? new TdApi.Session[0] : (TdApi.Session[]) arrayList.toArray(new TdApi.Session[0]);
         }
 
         public static String m2088a(TdApi.Session session) {
@@ -987,41 +987,41 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public static class C10947q {
-        public final ConcurrentHashMap<String, TdApi.Sticker> f35182a = new ConcurrentHashMap<>();
-        public TdApi.StickerSet f35183b;
-        public final int f35184c;
-        public boolean f35185d;
-        public String f35186e;
-        public boolean f35187f;
+        public final ConcurrentHashMap<String, TdApi.Sticker> f35185a = new ConcurrentHashMap<>();
+        public TdApi.StickerSet f35186b;
+        public final int f35187c;
+        public boolean f35188d;
+        public String f35189e;
+        public boolean f35190f;
 
         public C10947q(int i, String str, boolean z) {
-            this.f35184c = i;
-            this.f35186e = str;
-            this.f35187f = z;
+            this.f35187c = i;
+            this.f35189e = str;
+            this.f35190f = z;
         }
 
         public void m2085c() {
-            this.f35185d = false;
-            this.f35182a.clear();
-            this.f35183b = null;
+            this.f35188d = false;
+            this.f35185a.clear();
+            this.f35186b = null;
         }
 
         public TdApi.Sticker m2084d(int i) {
-            return this.f35182a.get(C5078d.m24013T(i));
+            return this.f35185a.get(C5078d.m24014T(i));
         }
 
         public TdApi.Sticker m2083e(String str) {
-            return this.f35182a.get(C5078d.m23986z().m24004h(str));
+            return this.f35185a.get(C5078d.m23987z().m24005h(str));
         }
 
         public boolean m2082f() {
-            return !this.f35182a.isEmpty();
+            return !this.f35185a.isEmpty();
         }
 
         public void m2080h(final C10930q6 q6Var) {
-            if (!this.f35185d && !C5070i.m24061i(this.f35186e)) {
-                this.f35185d = true;
-                q6Var.m2150yc(this.f35186e, new AbstractC5918j() {
+            if (!this.f35188d && !C5070i.m24062i(this.f35189e)) {
+                this.f35188d = true;
+                q6Var.m2150yc(this.f35189e, new AbstractC5918j() {
                     @Override
                     public final void mo1330a(Object obj) {
                         C10930q6.C10947q.this.m2081g(q6Var, (TdApi.StickerSet) obj);
@@ -1034,31 +1034,31 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             TdApi.Sticker d;
             TdApi.Sticker[] stickerArr;
             m2085c();
-            this.f35183b = stickerSet;
+            this.f35186b = stickerSet;
             if (stickerSet != null) {
                 int i = 0;
                 for (TdApi.Sticker sticker : stickerSet.stickers) {
                     TdApi.Emojis emojis = stickerSet.emojis[i];
-                    if (!this.f35187f || emojis.emojis.length <= 1) {
+                    if (!this.f35190f || emojis.emojis.length <= 1) {
                         for (String str : emojis.emojis) {
-                            String h = C5078d.m23986z().m24004h(str);
-                            if (!this.f35182a.containsKey(h)) {
-                                this.f35182a.put(h, sticker);
+                            String h = C5078d.m23987z().m24005h(str);
+                            if (!this.f35185a.containsKey(h)) {
+                                this.f35185a.put(h, sticker);
                             }
                         }
                         i++;
                     }
                 }
             }
-            q6Var.m2781K9().m1971C(this.f35184c);
-            if (!(this.f35184c != 2 || (d = m2084d(0)) == null || C4779t2.m25598T2(d.sticker))) {
+            q6Var.m2781K9().m1971C(this.f35187c);
+            if (!(this.f35187c != 2 || (d = m2084d(0)) == null || C4779t2.m25599T2(d.sticker))) {
                 q6Var.m2413i5().m3975p(d.sticker);
             }
         }
 
         public void m2078j(C10930q6 q6Var, TdApi.StickerSet stickerSet) {
-            TdApi.StickerSet stickerSet2 = this.f35183b;
-            if (stickerSet2 != null && stickerSet2.f25423id == stickerSet.f25423id) {
+            TdApi.StickerSet stickerSet2 = this.f35186b;
+            if (stickerSet2 != null && stickerSet2.f25426id == stickerSet.f25426id) {
                 m2081g(q6Var, stickerSet);
             }
         }
@@ -1069,86 +1069,86 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public static final class C10949s {
-        public final TdApi.Document f35188a;
-        public final int f35189b;
-        public final String f35190c;
+        public final TdApi.Document f35191a;
+        public final int f35192b;
+        public final String f35193c;
 
         public C10949s(TdApi.Document document, int i, String str) {
-            this.f35188a = document;
-            this.f35189b = i;
-            this.f35190c = str;
+            this.f35191a = document;
+            this.f35192b = i;
+            this.f35193c = str;
         }
     }
 
     public C10930q6(C11131y6 y6Var, boolean z) {
         TdApi.JsonValue d;
         C11028tj tjVar = new C11028tj(this);
-        this.f35008T = tjVar;
-        this.f35011U = new C11177zj(tjVar);
+        this.f35011T = tjVar;
+        this.f35014U = new C11177zj(tjVar);
         Object obj = new Object();
-        this.f35026Z = obj;
+        this.f35029Z = obj;
         long j = 0;
-        C10536ab abVar = y6Var.f35704a;
-        this.f35014V = abVar;
-        this.f35017W = y6Var.f35705b;
-        this.f35100x1 = z;
-        this.f34970D1 = y6Var.m1508C();
-        this.f34972E1 = y6Var.m1502I();
+        C10536ab abVar = y6Var.f35707a;
+        this.f35017V = abVar;
+        this.f35020W = y6Var.f35708b;
+        this.f35103x1 = z;
+        this.f34973D1 = y6Var.m1508C();
+        this.f34975E1 = y6Var.m1502I();
         boolean needMeasureLaunchSpeed = Log.needMeasureLaunchSpeed();
         j = needMeasureLaunchSpeed ? SystemClock.uptimeMillis() : j;
-        this.f35056i0 = new C11039u9(this);
+        this.f35059i0 = new C11039u9(this);
         if (needMeasureLaunchSpeed) {
             Log.m14714v("INITIALIZATION: Tdlib.listeners -> %dms", Long.valueOf(SystemClock.uptimeMillis() - j));
             j = SystemClock.uptimeMillis();
         }
-        this.f35053h0 = new C11059v7(this);
+        this.f35056h0 = new C11059v7(this);
         if (needMeasureLaunchSpeed) {
             Log.m14714v("INITIALIZATION: Tdlib.cache -> %dms", Long.valueOf(SystemClock.uptimeMillis() - j));
             j = SystemClock.uptimeMillis();
         }
-        this.f35059j0 = new C10756j9(this);
+        this.f35062j0 = new C10756j9(this);
         if (needMeasureLaunchSpeed) {
             Log.m14714v("INITIALIZATION: Tdlib.filesManager -> %dms", Long.valueOf(SystemClock.uptimeMillis() - j));
             j = SystemClock.uptimeMillis();
         }
-        this.f35062k0 = new C10802kc(this);
+        this.f35065k0 = new C10802kc(this);
         if (needMeasureLaunchSpeed) {
             Log.m14714v("INITIALIZATION: Tdlib.statusManager -> %dms", Long.valueOf(SystemClock.uptimeMillis() - j));
             j = SystemClock.uptimeMillis();
         }
-        this.f35065l0 = new C11134y8(this);
+        this.f35068l0 = new C11134y8(this);
         if (needMeasureLaunchSpeed) {
             Log.m14714v("INITIALIZATION: Tdlib.contactManager -> %dms", Long.valueOf(SystemClock.uptimeMillis() - j));
             j = SystemClock.uptimeMillis();
         }
-        this.f35068m0 = new C11115xb(this);
+        this.f35071m0 = new C11115xb(this);
         if (needMeasureLaunchSpeed) {
             Log.m14714v("INITIALIZATION: Tdlib.quickAckManager -> %dms", Long.valueOf(SystemClock.uptimeMillis() - j));
             j = SystemClock.uptimeMillis();
         }
-        this.f35071n0 = new C10733ic(this);
+        this.f35074n0 = new C10733ic(this);
         if (needMeasureLaunchSpeed) {
             Log.m14714v("INITIALIZATION: Tdlib.settingsManager -> %dms", Long.valueOf(SystemClock.uptimeMillis() - j));
             j = SystemClock.uptimeMillis();
         }
-        this.f35074o0 = new C11004sj(this);
+        this.f35077o0 = new C11004sj(this);
         if (needMeasureLaunchSpeed) {
             Log.m14714v("INITIALIZATION: Tdlib.wallpaperManager -> %dms", Long.valueOf(SystemClock.uptimeMillis() - j));
             j = SystemClock.uptimeMillis();
         }
-        this.f35077p0 = new C10827lb(this, abVar.m4707d2());
+        this.f35080p0 = new C10827lb(this, abVar.m4707d2());
         if (needMeasureLaunchSpeed) {
             Log.m14714v("INITIALIZATION: Tdlib.notificationManager -> %dms", Long.valueOf(SystemClock.uptimeMillis() - j));
             j = SystemClock.uptimeMillis();
         }
-        this.f35080q0 = new C5365w(this);
+        this.f35083q0 = new C5365w(this);
         if (needMeasureLaunchSpeed) {
             Log.m14714v("INITIALIZATION: Tdlib.fileGenerationManager -> %dms", Long.valueOf(SystemClock.uptimeMillis() - j));
             j = SystemClock.uptimeMillis();
         }
         String u = m2294pc().m4093u();
-        this.f35025Y1 = u;
-        if (!C5070i.m24061i(u) && (d = C7318c.m17033d(this.f35025Y1)) != null) {
+        this.f35028Y1 = u;
+        if (!C5070i.m24062i(u) && (d = C7318c.m17033d(this.f35028Y1)) != null) {
             m2828Ha(d);
         }
         if (needMeasureLaunchSpeed) {
@@ -1156,14 +1156,14 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             j = SystemClock.uptimeMillis();
         }
         synchronized (obj) {
-            if (this.f35020X == null) {
-                this.f35020X = m2456fa();
+            if (this.f35023X == null) {
+                this.f35023X = m2456fa();
             }
         }
         if (needMeasureLaunchSpeed) {
             Log.m14719i("INITIALIZATION: Tdlib.newClient() -> %dms", Long.valueOf(SystemClock.uptimeMillis() - j));
         }
-        C4868i.m24726c2().m24649m(this);
+        C4868i.m24727c2().m24650m(this);
     }
 
     public void m2943A7(final TdApi.LanguagePackInfo languagePackInfo, final AbstractC5917i iVar, final TdApi.Object object) {
@@ -1176,19 +1176,19 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2942A8() {
-        return !this.f35040c2;
+        return !this.f35043c2;
     }
 
     public void m2941A9(AbstractC5918j jVar, TdApi.Session session, TdApi.Object object) {
         jVar.mo1330a(object.getConstructor() == -1679978726 ? (TdApi.Error) object : null);
         if (object.getConstructor() == -722616727) {
-            this.f35019W1 = null;
-            this.f35056i0.m1939K(session);
+            this.f35022W1 = null;
+            this.f35059i0.m1939K(session);
         }
     }
 
     public void m2927B7(final TdApi.LanguagePackInfo languagePackInfo, final AbstractC5917i iVar) {
-        m2270r4().m14783o(new TdApi.SetOption("language_pack_id", new TdApi.OptionValueString(languagePackInfo.f25405id)), new Client.AbstractC7865g() {
+        m2270r4().m14783o(new TdApi.SetOption("language_pack_id", new TdApi.OptionValueString(languagePackInfo.f25408id)), new Client.AbstractC7865g() {
             @Override
             public final void mo255t2(TdApi.Object object) {
                 C10930q6.this.m2943A7(languagePackInfo, iVar, object);
@@ -1218,7 +1218,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2910C8() {
-        TdApi.AuthorizationState authorizationState = this.f34982J1;
+        TdApi.AuthorizationState authorizationState = this.f34985J1;
         return authorizationState != null && authorizationState.getConstructor() == 1526047584;
     }
 
@@ -1247,7 +1247,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         } else if (iVar != null) {
             iVar.mo1765a(false, (TdApi.Error) object);
         } else {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         }
     }
 
@@ -1268,7 +1268,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         TdApi.Message[] messageArr;
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         } else if (constructor == -16498159) {
             for (TdApi.Message message : ((TdApi.Messages) object).messages) {
                 if (message != null) {
@@ -1283,7 +1283,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public void m2893D9(String str, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            Log.m14724e("Failed to fetch suggested language, code: %s %s", str, C4779t2.m25378z5(object));
+            Log.m14724e("Failed to fetch suggested language, code: %s %s", str, C4779t2.m25379z5(object));
             m2342mc(str, null);
         } else if (constructor != 542199642) {
             Log.unexpectedTdlibResponse(object, TdApi.GetLanguagePackInfo.class, TdApi.LanguagePackInfo.class, TdApi.Error.class);
@@ -1303,9 +1303,9 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public static void m2878E8(TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         } else if (constructor == -722616727) {
-            C1379j0.m37292y0(R.string.Done, 0);
+            C1379j0.m37295y0(R.string.Done, 0);
         }
     }
 
@@ -1329,7 +1329,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public static void m2862F8(TdApi.Object object) {
         if (object.getConstructor() == -1679978726) {
-            Log.m14724e("TDLib Error (silenced): %s", C4779t2.m25378z5(object));
+            Log.m14724e("TDLib Error (silenced): %s", C4779t2.m25379z5(object));
         }
     }
 
@@ -1344,7 +1344,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public void m2846G8(TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            Log.m14727e(32, "DownloadFile failed: %s", C4779t2.m25378z5(object));
+            Log.m14727e(32, "DownloadFile failed: %s", C4779t2.m25379z5(object));
         } else if (constructor == -722616727) {
         } else {
             if (constructor != 766337656) {
@@ -1354,7 +1354,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             TdApi.File file = (TdApi.File) object;
             TdApi.LocalFile localFile = file.local;
             if (localFile.isDownloadingCompleted) {
-                ImageLoader.m14392e().m14389h(this, file);
+                ImageLoader.m14391e().m14388h(this, file);
             } else if (!localFile.isDownloadingActive) {
                 Log.m14727e(32, "WARNING: Image load not started", new Object[0]);
             }
@@ -1362,14 +1362,14 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2845G9(TdApi.UpdateServiceNotification updateServiceNotification, CharSequence charSequence) {
-        AbstractC9323v4<?> s = C1379j0.m37305s();
+        AbstractC9323v4<?> s = C1379j0.m37308s();
         if (s == null) {
             return;
         }
-        if (C5070i.m24061i(updateServiceNotification.type) || (!updateServiceNotification.type.startsWith("AUTH_KEY_DROP") && !updateServiceNotification.type.startsWith("AUTHKEYDROP"))) {
+        if (C5070i.m24062i(updateServiceNotification.type) || (!updateServiceNotification.type.startsWith("AUTH_KEY_DROP") && !updateServiceNotification.type.startsWith("AUTHKEYDROP"))) {
             s.m9447Ec(R.string.AppName, charSequence);
         } else {
-            s.m9439Fc(R.string.AppName, charSequence, C4403w.m27869i1(R.string.LogOut), new DialogInterface.OnClickListener() {
+            s.m9439Fc(R.string.AppName, charSequence, C4403w.m27871i1(R.string.LogOut), new DialogInterface.OnClickListener() {
                 @Override
                 public final void onClick(DialogInterface dialogInterface, int i) {
                     C10930q6.this.m2861F9(dialogInterface, i);
@@ -1393,8 +1393,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public static void m2830H8(TdApi.Object object) {
         if (object.getConstructor() == -1679978726) {
-            Log.m14724e("setProfilePhoto failed: %s", C4779t2.m25378z5(object));
-            C1379j0.m37290z0(C4403w.m27865j1(R.string.SetProfilePhotoError, C4779t2.m25378z5(object)), 0);
+            Log.m14724e("setProfilePhoto failed: %s", C4779t2.m25379z5(object));
+            C1379j0.m37293z0(C4403w.m27867j1(R.string.SetProfilePhotoError, C4779t2.m25379z5(object)), 0);
         }
     }
 
@@ -1402,7 +1402,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (rVar != null) {
             rVar.mo1525a(j, j2, object.getConstructor() == -1679978726 ? (TdApi.Error) object : null);
         } else if (object.getConstructor() == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         }
     }
 
@@ -1424,7 +1424,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public void m2815I7(TdApi.Object object, AtomicInteger atomicInteger, TdApi.Object object2) {
         if (object2.getConstructor() == -1679978726) {
-            Log.m14724e("Received error while sending change log: %s", C4779t2.m25378z5(object));
+            Log.m14724e("Received error while sending change log: %s", C4779t2.m25379z5(object));
         }
         if (atomicInteger.decrementAndGet() == 0) {
             m2834H4(1);
@@ -1434,7 +1434,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public void m2814I8(Runnable runnable, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         } else if (constructor == -722616727) {
             mo1480c().m2485dd().post(runnable);
         }
@@ -1444,7 +1444,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         int constructor = object.getConstructor();
         if (constructor != -1679978726) {
             if (constructor == -1601123095) {
-                final long j2 = ((TdApi.Chat) object).f25367id;
+                final long j2 = ((TdApi.Chat) object).f25370id;
                 m2270r4().m14783o(new TdApi.GetSupergroupFullInfo(C7316a.m17045p(j2)), new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object2) {
@@ -1455,13 +1455,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         } else if (rVar != null) {
             rVar.mo1525a(j, j, (TdApi.Error) object);
         } else {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         }
     }
 
     public void m2799J7(AtomicInteger atomicInteger, List list, final TdApi.Object object) {
         if (object.getConstructor() == -1679978726) {
-            Log.m14724e("Received error while posting change log: %s", C4779t2.m25378z5(object));
+            Log.m14724e("Received error while posting change log: %s", C4779t2.m25379z5(object));
         }
         if (atomicInteger.decrementAndGet() == 0) {
             final AtomicInteger atomicInteger2 = new AtomicInteger(list.size());
@@ -1480,7 +1480,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2798J8(Runnable runnable, TdApi.Object object) {
-        this.f34987M.mo255t2(object);
+        this.f34990M.mo255t2(object);
         runnable.run();
     }
 
@@ -1502,7 +1502,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public static TdApi.FormattedText m2765L9(String str, String str2) {
-        TdApi.FormattedText formattedText = new TdApi.FormattedText(C4403w.m27821u1(R.string.ChangeLogText, str, str2), null);
+        TdApi.FormattedText formattedText = new TdApi.FormattedText(C4403w.m27823u1(R.string.ChangeLogText, str, str2), null);
         C7321e.m16935k1(formattedText);
         return formattedText;
     }
@@ -1511,9 +1511,9 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
             TdApi.Error error = (TdApi.Error) object;
-            int max = Math.max(5, C4779t2.m25410v1(error.code, error.message, 5));
+            int max = Math.max(5, C4779t2.m25411v1(error.code, error.message, 5));
             if (max <= 60 || !m2658S6()) {
-                Log.m14724e("Unable to register device token, retrying in %d seconds: %s, accountId:%d", Integer.valueOf(max), C4779t2.m25378z5(object), Integer.valueOf(this.f35017W));
+                Log.m14724e("Unable to register device token, retrying in %d seconds: %s, accountId:%d", Integer.valueOf(max), C4779t2.m25379z5(object), Integer.valueOf(this.f35020W));
                 m2270r4().m14783o(new TdApi.SetAlarm(max), new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object2) {
@@ -1521,16 +1521,16 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                     }
                 });
             } else {
-                Log.m14724e("Unable to register device token, flood is %d seconds, ignoring: %s, accountId:%d", Integer.valueOf(max), C4779t2.m25378z5(object), Integer.valueOf(this.f35017W));
-                this.f35014V.m4758Q2(this.f35017W, true);
+                Log.m14724e("Unable to register device token, flood is %d seconds, ignoring: %s, accountId:%d", Integer.valueOf(max), C4779t2.m25379z5(object), Integer.valueOf(this.f35020W));
+                this.f35017V.m4758Q2(this.f35020W, true);
                 C7389v0.m16743D2(runnable);
             }
         } else if (constructor == 371056428) {
-            Log.m14721i(4, "Successfully registered device token:%s, accountId:%d, otherUserIdsCount:%d", str, Integer.valueOf(this.f35017W), Integer.valueOf(jArr.length));
-            C4868i.m24726c2().m24552y3(((TdApi.PushReceiverId) object).f25416id, this.f35017W);
-            C10733ic.m4100q0(this.f35017W, j, str, jArr);
-            m2930B4().m4758Q2(this.f35017W, true);
-            m2930B4().m4702e3(this.f35100x1, this.f35017W, jArr2);
+            Log.m14721i(4, "Successfully registered device token:%s, accountId:%d, otherUserIdsCount:%d", str, Integer.valueOf(this.f35020W), Integer.valueOf(jArr.length));
+            C4868i.m24727c2().m24553y3(((TdApi.PushReceiverId) object).f25419id, this.f35020W);
+            C10733ic.m4100q0(this.f35020W, j, str, jArr);
+            m2930B4().m4758Q2(this.f35020W, true);
+            m2930B4().m4702e3(this.f35103x1, this.f35020W, jArr2);
             C7389v0.m16743D2(runnable);
         }
         m2834H4(1);
@@ -1541,7 +1541,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             synchronized (map) {
                 map.remove(str);
             }
-            this.f35056i0.m1836l2(j, j2);
+            this.f35059i0.m1836l2(j, j2);
         }
     }
 
@@ -1562,7 +1562,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public void m2734N8(final Map map, final String str, final TdApi.Object object, final long j, final long j2, TdApi.Object object2) {
         if (object2.getConstructor() == -1679978726) {
-            C1379j0.m37302t0(object2);
+            C1379j0.m37305t0(object2);
         }
         mo1480c().m2485dd().post(new Runnable() {
             @Override
@@ -1591,12 +1591,12 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2718O8(long j, Runnable runnable) {
-        C7903b.C7904a.m14399a(j, this.f35017W, "Finished processing push. Invoking after()", new Object[0]);
+        C7903b.C7904a.m14398a(j, this.f35020W, "Finished processing push. Invoking after()", new Object[0]);
         runnable.run();
     }
 
     public void m2702P8(final long j, final Runnable runnable) {
-        C7903b.C7904a.m14399a(j, this.f35017W, "Making sure we're not in AuthorizationStateLoggingOut", new Object[0]);
+        C7903b.C7904a.m14398a(j, this.f35020W, "Making sure we're not in AuthorizationStateLoggingOut", new Object[0]);
         m2603W1(new Runnable() {
             @Override
             public final void run() {
@@ -1613,7 +1613,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 if (jVar != null) {
                     jVar.mo1330a(session);
                 }
-                this.f35056i0.m1947I(session);
+                this.f35059i0.m1947I(session);
             }
         } else if (jVar2 != null) {
             jVar2.mo1330a((TdApi.Error) object);
@@ -1621,16 +1621,16 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2686Q8(long j) {
-        C7903b.C7904a.m14399a(j, this.f35017W, "All notifications displayed. But there's no after() callback.", new Object[0]);
+        C7903b.C7904a.m14398a(j, this.f35020W, "All notifications displayed. But there's no after() callback.", new Object[0]);
     }
 
     public void m2672R7(long j, AbstractC5917i iVar, TdApi.Object object) {
         int constructor = object.getConstructor();
         boolean z = true;
         if (constructor == -1679978726) {
-            Log.m14724e("Unable to delete files data:%s, accountId:%d", C4779t2.m25378z5(object), Integer.valueOf(this.f35017W));
+            Log.m14724e("Unable to delete files data:%s, accountId:%d", C4779t2.m25379z5(object), Integer.valueOf(this.f35020W));
         } else if (constructor == 217237013) {
-            Log.m14719i("Cleared files in %dms, accountId:%d", Long.valueOf(SystemClock.uptimeMillis() - j), Integer.valueOf(this.f35017W));
+            Log.m14719i("Cleared files in %dms, accountId:%d", Long.valueOf(SystemClock.uptimeMillis() - j), Integer.valueOf(this.f35020W));
         }
         if (iVar != null) {
             if (object.getConstructor() != 217237013) {
@@ -1641,7 +1641,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2671R8(final long j, final Runnable runnable) {
-        C7903b.C7904a.m14399a(j, this.f35017W, "Making sure all notifications displayed", new Object[0]);
+        C7903b.C7904a.m14398a(j, this.f35020W, "Making sure all notifications displayed", new Object[0]);
         m2912C6();
         if (runnable != null) {
             m2440ga().m3147b2(new Runnable() {
@@ -1662,18 +1662,18 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public void m2657S7(long j, boolean z, Runnable runnable, TdApi.Object object) {
         if (object.getConstructor() == -1679978726) {
-            Log.m14724e("Cannot close secret chat, secretChatId:%d, error: %s", Integer.valueOf(C7316a.m17047n(j)), C4779t2.m25378z5(object));
+            Log.m14724e("Cannot close secret chat, secretChatId:%d, error: %s", Integer.valueOf(C7316a.m17047n(j)), C4779t2.m25379z5(object));
         }
         m2270r4().m14783o(new TdApi.DeleteChatHistory(j, true, z), m2198vc(runnable));
     }
 
     public void m2656S8(Runnable runnable, long j) {
         if (runnable != null) {
-            C7903b.C7904a.m14399a(j, this.f35017W, "Finished processing push. Invoking after()", new Object[0]);
+            C7903b.C7904a.m14398a(j, this.f35020W, "Finished processing push. Invoking after()", new Object[0]);
             runnable.run();
             return;
         }
-        C7903b.C7904a.m14399a(j, this.f35017W, "All notifications displayed. But there's no after() callback.", new Object[0]);
+        C7903b.C7904a.m14398a(j, this.f35020W, "All notifications displayed. But there's no after() callback.", new Object[0]);
     }
 
     public void m2642T7(long j, boolean z, Runnable runnable, TdApi.Object object) {
@@ -1704,7 +1704,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (constructor == -1679978726) {
             TdApi.Error error = (TdApi.Error) object;
             if (error.code == 401) {
-                C7903b.C7904a.m14399a(j, this.f35017W, "TDLib tells to expect AuthorizationStateLoggingOut: %s, waiting.", error);
+                C7903b.C7904a.m14398a(j, this.f35020W, "TDLib tells to expect AuthorizationStateLoggingOut: %s, waiting.", error);
                 m2603W1(new Runnable() {
                     @Override
                     public final void run() {
@@ -1712,7 +1712,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                     }
                 }, true);
             } else {
-                C7903b.C7904a.m14399a(j, this.f35017W, "Failed to process push: %s, performing full sync.", C4779t2.m25378z5(object));
+                C7903b.C7904a.m14398a(j, this.f35020W, "Failed to process push: %s, performing full sync.", C4779t2.m25379z5(object));
                 m2638Tb(true);
                 m2842Gc(j, new Runnable() {
                     @Override
@@ -1722,15 +1722,15 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 }, true, false);
             }
         } else if (constructor == -722616727) {
-            C7903b.C7904a.m14399a(j, this.f35017W, "Ensuring updateActiveNotifications was sent. ignoreNotificationUpdates:%b, receivedActiveNotificationsTime:%d, receivedActiveNotificationsIgnored: %b", Boolean.valueOf(this.f34974F1), Long.valueOf(this.f35046e2), Boolean.valueOf(this.f35049f2));
+            C7903b.C7904a.m14398a(j, this.f35020W, "Ensuring updateActiveNotifications was sent. ignoreNotificationUpdates:%b, receivedActiveNotificationsTime:%d, receivedActiveNotificationsIgnored: %b", Boolean.valueOf(this.f34977F1), Long.valueOf(this.f35049e2), Boolean.valueOf(this.f35052f2));
             m2543a2(i3Var);
         }
         m2850G4();
     }
 
     public void m2612V7() {
-        if (!this.f35043d2) {
-            this.f35043d2 = true;
+        if (!this.f35046d2) {
+            this.f35046d2 = true;
             m2280qa();
         }
     }
@@ -1738,16 +1738,16 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public void m2611V8(boolean z, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            Log.m14724e("Failed to load avatar, accountId:%d, big:%b", Integer.valueOf(this.f35017W), Boolean.valueOf(z));
+            Log.m14724e("Failed to load avatar, accountId:%d, big:%b", Integer.valueOf(this.f35020W), Boolean.valueOf(z));
         } else if (constructor == 766337656) {
             TdApi.File file = (TdApi.File) object;
-            if (C4779t2.m25598T2(file)) {
-                TdApi.ProfilePhoto profilePhoto = this.f35070m2;
+            if (C4779t2.m25599T2(file)) {
+                TdApi.ProfilePhoto profilePhoto = this.f35073m2;
                 TdApi.File file2 = profilePhoto != null ? z ? profilePhoto.big : profilePhoto.small : null;
-                if (file2 != null && file2.f25373id == file.f25373id) {
+                if (file2 != null && file2.f25376id == file.f25376id) {
                     C7321e.m16907u(file, file2);
                     m2949A1().m1469h0(z, file.local.path);
-                    this.f35014V.m4669n2(this.f35017W, z);
+                    this.f35017V.m4669n2(this.f35020W, z);
                 }
             }
         }
@@ -1755,9 +1755,9 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public void m2597W7(long j, long j2, TdApi.InputMessageText inputMessageText, TdApi.MessageText messageText, TdApi.Object object) {
         if (object.getConstructor() == -1816658231) {
-            m2892Da(j, j2, new TdApi.MessageAnimatedEmoji((TdApi.AnimatedEmoji) object, inputMessageText.text.text), new TdApi.EditMessageText(j, j2, null, inputMessageText), this.f35010T1);
+            m2892Da(j, j2, new TdApi.MessageAnimatedEmoji((TdApi.AnimatedEmoji) object, inputMessageText.text.text), new TdApi.EditMessageText(j, j2, null, inputMessageText), this.f35013T1);
         } else {
-            m2892Da(j, j2, messageText, new TdApi.EditMessageText(j, j2, null, inputMessageText), this.f35010T1);
+            m2892Da(j, j2, messageText, new TdApi.EditMessageText(j, j2, null, inputMessageText), this.f35013T1);
         }
     }
 
@@ -1768,15 +1768,15 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (chat.unreadCount == 0 || (message = chat.lastMessage) == null) {
             z = false;
         } else {
-            m2716Oa(chat.f25367id, 0L, new long[]{message.f25406id});
+            m2716Oa(chat.f25370id, 0L, new long[]{message.f25409id});
             z = true;
         }
         if (chat.isMarkedAsUnread) {
-            m2270r4().m14783o(new TdApi.ToggleChatIsMarkedAsUnread(chat.f25367id, false), this.f34987M);
+            m2270r4().m14783o(new TdApi.ToggleChatIsMarkedAsUnread(chat.f25370id, false), this.f34990M);
             z = true;
         }
         if (chat.unreadMentionCount > 0) {
-            m2270r4().m14783o(new TdApi.ReadAllChatMentions(chat.f25367id), this.f34987M);
+            m2270r4().m14783o(new TdApi.ReadAllChatMentions(chat.f25370id), this.f34990M);
         } else {
             z2 = z;
         }
@@ -1789,19 +1789,19 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         ArrayList<C4868i.AbstractC4872d> arrayList = new ArrayList();
         HashMap hashMap = new HashMap();
         C4868i.AbstractC4872d dVar = (C4868i.AbstractC4872d) eVar.get();
-        boolean g = dVar.mo24528g();
+        boolean g = dVar.mo24529g();
         Iterator it = list.iterator();
         boolean z = false;
         while (it.hasNext()) {
             TdApi.Message message = (TdApi.Message) it.next();
             TdApi.MessageContent messageContent = message.content;
             TdApi.Document document = ((TdApi.MessageDocument) messageContent).document;
-            if (C4779t2.m25395x2(((TdApi.MessageDocument) messageContent).caption, "#preview")) {
+            if (C4779t2.m25396x2(((TdApi.MessageDocument) messageContent).caption, "#preview")) {
                 hashMap.put(C7389v0.m16681T0(document.fileName), document.document);
             } else {
                 try {
                     C4868i.AbstractC4872d dVar2 = (C4868i.AbstractC4872d) c1Var.mo2952a(message);
-                    if (!z && dVar2.mo24528g()) {
+                    if (!z && dVar2.mo24529g()) {
                         z = true;
                     } else if (!g && dVar2.f16665a.equals(dVar.f16665a)) {
                         g = true;
@@ -1819,7 +1819,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         }
         Collections.sort(arrayList);
         for (C4868i.AbstractC4872d dVar3 : arrayList) {
-            dVar3.m24534i(this, (TdApi.File) hashMap.remove(dVar3.f16665a));
+            dVar3.m24535i(this, (TdApi.File) hashMap.remove(dVar3.f16665a));
         }
         jVar.mo1330a(arrayList);
     }
@@ -1831,7 +1831,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public static boolean m2567Y7(String str, TdApi.Message message) {
-        return message.content.getConstructor() == 596945783 && C4779t2.m25395x2(((TdApi.MessageDocument) message.content).caption, str);
+        return message.content.getConstructor() == 596945783 && C4779t2.m25396x2(((TdApi.MessageDocument) message.content).caption, str);
     }
 
     public void m2566Y8(Runnable runnable) {
@@ -1875,10 +1875,10 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public static void m2537a8(C10942l lVar, CountDownLatch countDownLatch, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            Log.m14709w("Error starting file generation: %s", C4779t2.m25378z5(object));
+            Log.m14709w("Error starting file generation: %s", C4779t2.m25379z5(object));
             countDownLatch.countDown();
         } else if (constructor == 766337656) {
-            lVar.f35159b = (TdApi.File) object;
+            lVar.f35162b = (TdApi.File) object;
         }
         countDownLatch.countDown();
     }
@@ -1917,7 +1917,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         int constructor = object.getConstructor();
         int i = 0;
         if (constructor == -1679978726) {
-            Log.m14719i("Failed to fetch part of an album: %s", C4779t2.m25378z5(object));
+            Log.m14719i("Failed to fetch part of an album: %s", C4779t2.m25379z5(object));
         } else if (constructor == -16498159) {
             TdApi.Message[] messageArr = ((TdApi.Messages) object).messages;
             int length = messageArr.length;
@@ -1926,7 +1926,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                     break;
                 }
                 TdApi.Message message2 = messageArr[i];
-                if (message2.f25406id < message.f25406id) {
+                if (message2.f25409id < message.f25409id) {
                     if (message2.mediaAlbumId != message.mediaAlbumId) {
                         atomicBoolean.set(true);
                         break;
@@ -1945,14 +1945,14 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2505c9(AbstractC5918j jVar, TdApi.Object object) {
-        this.f34993O.mo255t2(object);
+        this.f34996O.mo255t2(object);
         jVar.mo1330a(object instanceof TdApi.Message ? (TdApi.Message) object : null);
     }
 
     public static void m2490d8(TdApi.Message message, AtomicBoolean atomicBoolean, List list, boolean z, AtomicInteger atomicInteger, Runnable runnable, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            Log.m14719i("Failed to fetch part of an album: %s", C4779t2.m25378z5(object));
+            Log.m14719i("Failed to fetch part of an album: %s", C4779t2.m25379z5(object));
         } else if (constructor == -16498159) {
             TdApi.Message[] messageArr = ((TdApi.Messages) object).messages;
             int length = messageArr.length - 1;
@@ -1961,7 +1961,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                     break;
                 }
                 TdApi.Message message2 = messageArr[length];
-                if (message2.f25406id > message.f25406id) {
+                if (message2.f25409id > message.f25409id) {
                     if (message2.mediaAlbumId != message.mediaAlbumId) {
                         atomicBoolean.set(true);
                         break;
@@ -1983,15 +1983,15 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public void m2489d9(long j, String str, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            Log.m14724e("Cannot set clientData: %s, chatId:%d, clientData:%s", C4779t2.m25378z5(object), Long.valueOf(j), str);
-            C1379j0.m37302t0(object);
+            Log.m14724e("Cannot set clientData: %s, chatId:%d, clientData:%s", C4779t2.m25379z5(object), Long.valueOf(j), str);
+            C1379j0.m37305t0(object);
         } else if (constructor == -722616727) {
-            this.f35056i0.m1926N0(j, str);
+            this.f35059i0.m1926N0(j, str);
         }
     }
 
     public static C4868i.C4874f m2474e8() {
-        return C4868i.m24726c2().m24835N0();
+        return C4868i.m24727c2().m24836N0();
     }
 
     public void m2473e9(TdApi.MessageSender messageSender, TdApi.ChatMemberStatus chatMemberStatus, TdApi.ChatMemberStatus chatMemberStatus2, AbstractC10939i iVar, long j, long j2, TdApi.Error error) {
@@ -2003,7 +2003,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public static C4868i.C4876h m2458f8() {
-        return C4868i.m24726c2().m24800S0();
+        return C4868i.m24727c2().m24801S0();
     }
 
     public void m2457f9(long j, final TdApi.MessageSender messageSender, final TdApi.ChatMemberStatus chatMemberStatus, final TdApi.ChatMemberStatus chatMemberStatus2, final AbstractC10939i iVar) {
@@ -2020,7 +2020,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             if (jVar != null) {
                 jVar.mo1330a(null);
             }
-            Log.m14719i("Could not get message from server: %s, chatId:%s, messageId:%s", C4779t2.m25378z5(object), Long.valueOf(j), Long.valueOf(j2));
+            Log.m14719i("Could not get message from server: %s, chatId:%s, messageId:%s", C4779t2.m25379z5(object), Long.valueOf(j), Long.valueOf(j2));
         } else if (jVar != null) {
             jVar.mo1330a((TdApi.Message) object);
         }
@@ -2044,7 +2044,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2425h9(Runnable runnable, final AbstractC10939i iVar, final TdApi.Object object) {
-        if (C4779t2.m25450p3(object)) {
+        if (C4779t2.m25451p3(object)) {
             runnable.run();
         } else if (iVar != null) {
             m2485dd().post(new Runnable() {
@@ -2060,7 +2060,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         synchronized (atomicBoolean) {
             if (!atomicBoolean.getAndSet(true)) {
                 if (bVar != null) {
-                    bVar.m21857c();
+                    bVar.m21858c();
                 }
                 jVar.mo1330a(new C10943m(messageLink.link, messageLink.isPublic));
             }
@@ -2070,7 +2070,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public static void m2409i9(AbstractC5917i iVar, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
             iVar.mo1322a(false);
         } else if (constructor == -722616727) {
             iVar.mo1322a(true);
@@ -2080,7 +2080,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public void m2394j8(final AtomicBoolean atomicBoolean, final AbstractRunnableC5910b bVar, final AbstractC5918j jVar, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            Log.m14724e("Could not fetch message link: %s", C4779t2.m25378z5(object));
+            Log.m14724e("Could not fetch message link: %s", C4779t2.m25379z5(object));
             if (bVar != null) {
                 m2485dd().post(bVar);
             }
@@ -2098,13 +2098,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public void m2393j9(AbstractC5918j jVar, int i, TdApi.Object object) {
         jVar.mo1330a(object.getConstructor() == -1679978726 ? (TdApi.Error) object : null);
         if (object.getConstructor() == -722616727) {
-            this.f35019W1 = null;
-            this.f35056i0.m1955G(i);
+            this.f35022W1 = null;
+            this.f35059i0.m1955G(i);
         }
     }
 
     public void m2377k9(boolean z, Client client) {
-        client.m14783o(new TdApi.SetOption("is_emulator", new TdApi.OptionValueBoolean(z)), this.f34987M);
+        client.m14783o(new TdApi.SetOption("is_emulator", new TdApi.OptionValueBoolean(z)), this.f34990M);
     }
 
     public void m2362l8(final AbstractC5918j jVar, TdApi.Object object) {
@@ -2116,7 +2116,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             Log.unexpectedTdlibResponse(object, TdApi.GetProxyLink.class, TdApi.HttpUrl.class, TdApi.Error.class);
             return;
         } else {
-            Log.m14724e("Proxy link unavailable: %s", C4779t2.m25378z5(object));
+            Log.m14724e("Proxy link unavailable: %s", C4779t2.m25379z5(object));
             str = null;
         }
         m2485dd().post(new Runnable() {
@@ -2128,12 +2128,12 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2361l9(TdApi.NetworkType networkType, Client client) {
-        client.m14783o(new TdApi.SetNetworkType(networkType), this.f34987M);
+        client.m14783o(new TdApi.SetNetworkType(networkType), this.f34990M);
     }
 
     public void m2346m8(final AbstractC5918j jVar, TdApi.Object object) {
         if (object.getConstructor() == 196049779) {
-            m2270r4().m14783o(new TdApi.GetProxyLink(((TdApi.Proxy) object).f25415id), new Client.AbstractC7865g() {
+            m2270r4().m14783o(new TdApi.GetProxyLink(((TdApi.Proxy) object).f25418id), new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object2) {
                     C10930q6.this.m2362l8(jVar, object2);
@@ -2143,11 +2143,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2345m9(boolean z, Client client) {
-        client.m14783o(new TdApi.SetOption("online", new TdApi.OptionValueBoolean(z)), this.f34987M);
+        client.m14783o(new TdApi.SetOption("online", new TdApi.OptionValueBoolean(z)), this.f34990M);
     }
 
     public void m2330n8(AbstractC5918j jVar) {
-        C10946p pVar = this.f35019W1;
+        C10946p pVar = this.f35022W1;
         if (pVar == null) {
             m2569Y5(false, jVar);
         } else if (jVar != null) {
@@ -2159,15 +2159,15 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         C10946p pVar;
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            Log.m14724e("Unable to fetch sessions", C4779t2.m25378z5(object));
+            Log.m14724e("Unable to fetch sessions", C4779t2.m25379z5(object));
             if (jVar != null) {
                 jVar.mo1330a(null);
             }
         } else if (constructor == 842912274) {
             TdApi.Sessions sessions = (TdApi.Sessions) object;
-            synchronized (this.f35030a0) {
+            synchronized (this.f35033a0) {
                 pVar = new C10946p(sessions);
-                this.f35019W1 = pVar;
+                this.f35022W1 = pVar;
             }
             if (jVar != null) {
                 jVar.mo1330a(pVar);
@@ -2186,7 +2186,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public static void m2298p8(AbstractC5918j jVar, String[] strArr, String str, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            Log.m14724e("Failed to fetch %d strings: %s, languagePackId: %s", Integer.valueOf(strArr.length), C4779t2.m25378z5(object), str);
+            Log.m14724e("Failed to fetch %d strings: %s, languagePackId: %s", Integer.valueOf(strArr.length), C4779t2.m25379z5(object), str);
             if (jVar != null) {
                 jVar.mo1330a(null);
             }
@@ -2204,13 +2204,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public void m2297p9(boolean z, String str, TdApi.Object object) {
         if (z) {
-            C1379j0.m37290z0(C4403w.m27865j1(R.string.SignedOutAs, str), 0);
+            C1379j0.m37293z0(C4403w.m27867j1(R.string.SignedOutAs, str), 0);
         }
         m2834H4(1);
     }
 
     public static boolean m2286q4(int i, int i2, boolean z) {
-        return i < i2 && (i2 <= 1506 || z);
+        return i < i2 && (i2 <= 1507 || z);
     }
 
     public static void m2282q8(AbstractC5918j jVar, Map map, Map map2) {
@@ -2232,7 +2232,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public void m2281q9(Runnable runnable, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         } else if (constructor == -722616727) {
             mo1480c().m2485dd().post(runnable);
         }
@@ -2261,13 +2261,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (constructor == -1816236758) {
             jVar.mo1330a((TdApi.StickerSet) object);
         } else if (constructor == -1679978726) {
-            Log.m14724e("Failed to find animated emoji sticker set: %s, %s, isDebugInstance: %b", str, C4779t2.m25378z5(object), Boolean.valueOf(m2658S6()));
+            Log.m14724e("Failed to find animated emoji sticker set: %s, %s, isDebugInstance: %b", str, C4779t2.m25379z5(object), Boolean.valueOf(m2658S6()));
             jVar.mo1330a(null);
         }
     }
 
     public void m2250s8(AbstractC5919k kVar, TdApi.Chat chat) {
-        if (chat == null || !C4779t2.m25506h3(m2787K3(f34960x2))) {
+        if (chat == null || !C4779t2.m25507h3(m2787K3(f34963x2))) {
             kVar.mo3250a(0);
         } else {
             kVar.mo3250a(1);
@@ -2284,8 +2284,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2234t8(final AbstractC5919k kVar, TdApi.Chat chat) {
-        if (chat == null || !C4779t2.m25506h3(m2787K3(f34959w2))) {
-            m2602W2(f34960x2, new AbstractC5918j() {
+        if (chat == null || !C4779t2.m25507h3(m2787K3(f34962w2))) {
+            m2602W2(f34963x2, new AbstractC5918j() {
                 @Override
                 public final void mo1330a(Object obj) {
                     C10930q6.this.m2250s8(kVar, (TdApi.Chat) obj);
@@ -2297,7 +2297,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2233t9(long j, final Runnable runnable) {
-        C7903b.C7904a.m14399a(j, this.f35017W, "Connection available. Performing network request to make sure it's still active.", new Object[0]);
+        C7903b.C7904a.m14398a(j, this.f35020W, "Connection available. Performing network request to make sure it's still active.", new Object[0]);
         m2876Ea(new AbstractC5918j() {
             @Override
             public final void mo1330a(Object obj) {
@@ -2307,8 +2307,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2218u8(final AbstractC5919k kVar, TdApi.Chat chat) {
-        if (chat == null || !C4779t2.m25506h3(m2787K3(f34958v2))) {
-            m2602W2(f34959w2, new AbstractC5918j() {
+        if (chat == null || !C4779t2.m25507h3(m2787K3(f34961v2))) {
+            m2602W2(f34962w2, new AbstractC5918j() {
                 @Override
                 public final void mo1330a(Object obj) {
                     C10930q6.this.m2234t8(kVar, (TdApi.Chat) obj);
@@ -2320,7 +2320,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2217u9(long j, Runnable runnable) {
-        C7903b.C7904a.m14399a(j, this.f35017W, "Sync task finished.", new Object[0]);
+        C7903b.C7904a.m14398a(j, this.f35020W, "Sync task finished.", new Object[0]);
         runnable.run();
     }
 
@@ -2331,7 +2331,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         long j2 = chatPosition.order;
         int i2 = j != j2 ? 1 : 0;
         if (j2 == 0) {
-            chat.positions = (TdApi.ChatPosition[]) C5062b.m24146z(chatPositionArr, i, new TdApi.ChatPosition[chatPositionArr.length - 1]);
+            chat.positions = (TdApi.ChatPosition[]) C5062b.m24147z(chatPositionArr, i, new TdApi.ChatPosition[chatPositionArr.length - 1]);
         } else {
             if (!C7321e.m17007G(chatPosition2.source, chatPosition.source)) {
                 i2 |= 2;
@@ -2349,15 +2349,15 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public static void m2202v8(TdApi.Object object) {
         if (object.getConstructor() == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         }
     }
 
     public void m2201v9(final Runnable runnable, boolean z, final long j) {
         if (runnable == null) {
-            C7903b.C7904a.m14399a(j, this.f35017W, "Sync task finished, but there's no callback.", new Object[0]);
+            C7903b.C7904a.m14398a(j, this.f35020W, "Sync task finished, but there's no callback.", new Object[0]);
         } else if (z) {
-            C7903b.C7904a.m14399a(j, this.f35017W, "Making sure havePendingNotifications is false.", new Object[0]);
+            C7903b.C7904a.m14398a(j, this.f35020W, "Making sure havePendingNotifications is false.", new Object[0]);
             m2527b2(new Runnable() {
                 @Override
                 public final void run() {
@@ -2365,7 +2365,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 }
             });
         } else {
-            C7903b.C7904a.m14399a(j, this.f35017W, "Sync task finished.", new Object[0]);
+            C7903b.C7904a.m14398a(j, this.f35020W, "Sync task finished.", new Object[0]);
             runnable.run();
         }
         m2834H4(3);
@@ -2377,7 +2377,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             m2891Db(jsonValue, C7318c.m17031f(jsonValue));
             return;
         }
-        Log.m14724e("getApplicationConfig failed: %s", C4779t2.m25378z5(object));
+        Log.m14724e("getApplicationConfig failed: %s", C4779t2.m25379z5(object));
     }
 
     public boolean m2170x8() {
@@ -2393,17 +2393,17 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2154y8() {
-        return m2648T1() != 0 && this.f35023Y == 0;
+        return m2648T1() != 0 && this.f35026Y == 0;
     }
 
     public static void m2153y9(String str, AbstractC5917i iVar, TdApi.Object object) {
         int constructor = object.getConstructor();
         boolean z = true;
         if (constructor == -1679978726) {
-            Log.m14724e("Unable to synchronize languagePackId %s: %s", str, C4779t2.m25378z5(object));
-            z = str.equals(C4403w.m27906a0());
+            Log.m14724e("Unable to synchronize languagePackId %s: %s", str, C4779t2.m25379z5(object));
+            z = str.equals(C4403w.m27908a0());
             if (!z) {
-                C1379j0.m37302t0(object);
+                C1379j0.m37305t0(object);
                 z = false;
             }
         } else if (constructor != -722616727) {
@@ -2420,12 +2420,12 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public static void m2139z7(TdApi.Object object, TdApi.LanguagePackInfo languagePackInfo, AbstractC5917i iVar) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
             if (iVar != null) {
                 iVar.mo1322a(false);
             }
         } else if (constructor == -722616727) {
-            C4403w.m27831s(languagePackInfo);
+            C4403w.m27833s(languagePackInfo);
             if (iVar != null) {
                 iVar.mo1322a(true);
             }
@@ -2435,7 +2435,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public boolean m2138z8() {
         int T1 = m2648T1();
         if (T1 != 1) {
-            return T1 == 2 && this.f35043d2;
+            return T1 == 2 && this.f35046d2;
         }
         return true;
     }
@@ -2445,19 +2445,19 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             jVar.mo1330a(object.getConstructor() == -1679978726 ? (TdApi.Error) object : null);
         }
         if (object.getConstructor() == -722616727) {
-            this.f35019W1 = null;
-            this.f35056i0.m1975B(session);
+            this.f35022W1 = null;
+            this.f35059i0.m1975B(session);
         }
     }
 
     public C11131y6 m2949A1() {
-        return this.f35014V.m4745U(this.f35017W);
+        return this.f35017V.m4745U(this.f35020W);
     }
 
     public boolean m2948A2(TdApi.Chat chat) {
         TdApi.ChatMemberStatus K3;
         if (chat != null) {
-            long j = chat.f25367id;
+            long j = chat.f25370id;
             if (!(j == 0 || (K3 = m2787K3(j)) == null)) {
                 int constructor = K3.getConstructor();
                 if (constructor == -160019714) {
@@ -2477,7 +2477,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public C11134y8 m2946A4() {
-        return this.f35065l0;
+        return this.f35068l0;
     }
 
     public CharSequence m2945A5(TdApi.Chat chat) {
@@ -2489,17 +2489,17 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2940Aa(long j, AbstractC9323v4<?> v4Var, final Runnable runnable) {
-        synchronized (this.f35007S1) {
-            ArrayList<AbstractC9323v4<?>> f = this.f35001Q1.m21505f(j);
+        synchronized (this.f35010S1) {
+            ArrayList<AbstractC9323v4<?>> f = this.f35004Q1.m21506f(j);
             if (f == null) {
                 f = new ArrayList<>();
                 f.add(v4Var);
-                this.f35001Q1.m21500k(j, f);
+                this.f35004Q1.m21501k(j, f);
             } else {
                 f.add(v4Var);
             }
             if (f.size() == 1) {
-                this.f35004R1.m23252g(j, (int) (System.currentTimeMillis() / 1000));
+                this.f35007R1.m23253g(j, (int) (System.currentTimeMillis() / 1000));
                 if (Log.isEnabled(8)) {
                     Log.m14716v(8, "openChat, chatId=%d", Long.valueOf(j));
                 }
@@ -2508,7 +2508,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                     public final void mo255t2(TdApi.Object object) {
                         C10930q6.this.m2798J8(runnable, object);
                     }
-                } : this.f34987M);
+                } : this.f34990M);
             } else if (runnable != null) {
                 m2270r4().m14783o(new TdApi.SetAlarm(0.0d), new Client.AbstractC7865g() {
                     @Override
@@ -2533,21 +2533,21 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2938Ac() {
-        return this.f35095v0;
+        return this.f35098v0;
     }
 
     public final void m2937Ad(TdApi.UpdateChatPermissions updateChatPermissions) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatPermissions.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatPermissions.chatId));
             if (!C10859mj.m2997b(updateChatPermissions.chatId, chat, updateChatPermissions)) {
                 chat.permissions = updateChatPermissions.permissions;
-                this.f35056i0.m1829n1(updateChatPermissions);
+                this.f35059i0.m1829n1(updateChatPermissions);
             }
         }
     }
 
     public final void m2936Ae(final TdApi.UpdateServiceNotification updateServiceNotification) {
-        final CharSequence t5 = C4779t2.m25420t5(C7321e.m16899w1(updateServiceNotification.content));
+        final CharSequence t5 = C4779t2.m25421t5(C7321e.m16899w1(updateServiceNotification.content));
         if (t5 != null) {
             m2485dd().post(new Runnable() {
                 @Override
@@ -2574,11 +2574,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public C10536ab m2930B4() {
-        return this.f35014V;
+        return this.f35017V;
     }
 
     public void m2929B5(AbstractC5918j<List<C4868i.C4876h>> jVar) {
-        m2445g5(jVar, "#icons", C11161z3.f35790a, C10602d4.f33988a, C10927q3.f34952a);
+        m2445g5(jVar, "#icons", C11161z3.f35793a, C10602d4.f33991a, C10927q3.f34955a);
     }
 
     public void m2928B6() {
@@ -2587,9 +2587,9 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public boolean m2924Ba(Client client) {
         boolean z;
-        synchronized (this.f35026Z) {
-            C10941k kVar = this.f35020X;
-            z = kVar != null && kVar.f35156b == client;
+        synchronized (this.f35029Z) {
+            C10941k kVar = this.f35023X;
+            z = kVar != null && kVar.f35159b == client;
         }
         return z;
     }
@@ -2610,19 +2610,19 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2921Bd(TdApi.UpdateChatPhoto updateChatPhoto) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatPhoto.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatPhoto.chatId));
             if (!C10859mj.m2997b(updateChatPhoto.chatId, chat, updateChatPhoto)) {
                 chat.photo = updateChatPhoto.photo;
-                this.f35056i0.m1825o1(updateChatPhoto);
+                this.f35059i0.m1825o1(updateChatPhoto);
             }
         }
     }
 
     public final void m2920Be(TdApi.StickerSet stickerSet) {
-        this.f35041d0.m2078j(this, stickerSet);
-        this.f35044e0.m2078j(this, stickerSet);
-        this.f35056i0.m1936K2(stickerSet);
+        this.f35044d0.m2078j(this, stickerSet);
+        this.f35047e0.m2078j(this, stickerSet);
+        this.f35059i0.m1936K2(stickerSet);
     }
 
     public int m2917C1(long j) {
@@ -2643,8 +2643,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public int m2913C5() {
         int i;
-        synchronized (this.f35030a0) {
-            i = this.f35087s1;
+        synchronized (this.f35033a0) {
+            i = this.f35090s1;
         }
         return i;
     }
@@ -2667,7 +2667,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public long m2907Cb() {
-        long j = this.f35069m1;
+        long j = this.f35072m1;
         return j != 0 ? j : C7316a.m17058c(777000L);
     }
 
@@ -2680,13 +2680,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2905Cd(TdApi.UpdateChatPosition updateChatPosition) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatPosition.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatPosition.chatId));
             if (!C10859mj.m2997b(updateChatPosition.chatId, chat, updateChatPosition)) {
                 int Nb = m2731Nb(chat, updateChatPosition.position);
                 C10938h hVar = Nb != 0 ? new C10938h(m2351m3(updateChatPosition.position.list), chat, new C10937g(updateChatPosition.position, Nb)) : null;
                 if (hVar != null) {
-                    this.f35056i0.m1813r1(updateChatPosition, hVar);
+                    this.f35059i0.m1813r1(updateChatPosition, hVar);
                 }
             }
         }
@@ -2694,21 +2694,21 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public final void m2904Ce(TdApi.UpdateSuggestedActions updateSuggestedActions) {
         TdApi.SuggestedAction[] suggestedActionArr;
-        synchronized (this.f35030a0) {
+        synchronized (this.f35033a0) {
             for (TdApi.SuggestedAction suggestedAction : updateSuggestedActions.removedActions) {
-                for (int size = this.f35064k2.size() - 1; size >= 0; size--) {
-                    if (this.f35064k2.get(size).getConstructor() == suggestedAction.getConstructor()) {
-                        this.f35064k2.remove(size);
+                for (int size = this.f35067k2.size() - 1; size >= 0; size--) {
+                    if (this.f35067k2.get(size).getConstructor() == suggestedAction.getConstructor()) {
+                        this.f35067k2.remove(size);
                     }
                 }
             }
-            Collections.addAll(this.f35064k2, updateSuggestedActions.addedActions);
+            Collections.addAll(this.f35067k2, updateSuggestedActions.addedActions);
         }
         m2781K9().m1932L2(updateSuggestedActions);
     }
 
     public String m2901D1() {
-        return this.f35014V.m4745U(this.f35017W).m1456t();
+        return this.f35017V.m4745U(this.f35020W).m1456t();
     }
 
     public boolean m2900D2(long j) {
@@ -2720,24 +2720,24 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public long m2898D4() {
-        synchronized (this.f35030a0) {
-            if (this.f35015V0 != 0) {
-                return TimeUnit.SECONDS.toMillis(this.f35015V0) + (SystemClock.elapsedRealtime() - this.f35018W0);
+        synchronized (this.f35033a0) {
+            if (this.f35018V0 != 0) {
+                return TimeUnit.SECONDS.toMillis(this.f35018V0) + (SystemClock.elapsedRealtime() - this.f35021W0);
             }
             return System.currentTimeMillis();
         }
     }
 
     public C10562b9 m2897D5() {
-        return m2189w5(C7317b.f23224a);
+        return m2189w5(C7317b.f23227a);
     }
 
     public final void m2896D6(int i) {
         boolean z;
-        synchronized (this.f35026Z) {
-            int incrementAndGet = this.f35104z1.incrementAndGet();
+        synchronized (this.f35029Z) {
+            int incrementAndGet = this.f35107z1.incrementAndGet();
             z = incrementAndGet == 1;
-            Log.m14716v((int) Log.TAG_ACCOUNTS, "accountId:%d, referenceCount:%d, type:%d", Integer.valueOf(this.f35017W), Integer.valueOf(incrementAndGet), Integer.valueOf(i));
+            Log.m14716v((int) Log.TAG_ACCOUNTS, "accountId:%d, referenceCount:%d, type:%d", Integer.valueOf(this.f35020W), Integer.valueOf(incrementAndGet), Integer.valueOf(i));
             if (i == 0) {
                 m2949A1().m1496O();
             }
@@ -2746,7 +2746,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (z) {
             m2728Ne();
             if (i == 0) {
-                this.f35014V.m4693h0(m2949A1());
+                this.f35017V.m4693h0(m2949A1());
             }
         }
     }
@@ -2768,7 +2768,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 throw th;
             }
         }
-        this.f35056i0.m1836l2(j, j2);
+        this.f35059i0.m1836l2(j, j2);
         m2270r4().m14783o(function, new Client.AbstractC7865g() {
             @Override
             public final void mo255t2(TdApi.Object object) {
@@ -2778,9 +2778,9 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2891Db(TdApi.JsonValue jsonValue, String str) {
-        String str2 = this.f35025Y1;
+        String str2 = this.f35028Y1;
         if (str2 == null || !str2.equals(str)) {
-            this.f35025Y1 = str;
+            this.f35028Y1 = str;
             m2294pc().m4112k0(str);
             if (jsonValue != null) {
                 m2828Ha(jsonValue);
@@ -2789,13 +2789,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public String m2890Dc() {
-        return this.f35042d1;
+        return this.f35045d1;
     }
 
     public final void m2888De(TdApi.UpdateSupergroup updateSupergroup) {
         TdApi.Chat chat;
-        synchronized (this.f35030a0) {
-            chat = this.f35034b0.get(Long.valueOf(C7316a.m17059b(updateSupergroup.supergroup.f25425id)));
+        synchronized (this.f35033a0) {
+            chat = this.f35037b0.get(Long.valueOf(C7316a.m17059b(updateSupergroup.supergroup.f25428id)));
             if (chat != null) {
                 TdApi.ChatType chatType = chat.type;
                 boolean z = ((TdApi.ChatTypeSupergroup) chatType).isChannel;
@@ -2804,18 +2804,18 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                     ((TdApi.ChatTypeSupergroup) chatType).isChannel = z2;
                     long j = ((TdApi.ChatTypeSupergroup) chatType).supergroupId;
                     if (z2) {
-                        this.f35083r0.add(Long.valueOf(j));
+                        this.f35086r0.add(Long.valueOf(j));
                     } else {
-                        this.f35083r0.remove(Long.valueOf(j));
+                        this.f35086r0.remove(Long.valueOf(j));
                     }
                 }
             }
         }
-        this.f35053h0.m1608p1(updateSupergroup, chat);
+        this.f35056h0.m1608p1(updateSupergroup, chat);
     }
 
     public String m2885E1() {
-        return this.f35014V.m4745U(this.f35017W).m1455u();
+        return this.f35017V.m4745U(this.f35020W).m1455u();
     }
 
     public boolean m2884E2(TdApi.Chat chat) {
@@ -2831,7 +2831,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (p == 0 || (h2 = m2480e2().m1638h2(p)) == null) {
             return false;
         }
-        return !C5070i.m24061i(h2.username) || h2.hasLocation;
+        return !C5070i.m24062i(h2.username) || h2.hasLocation;
     }
 
     public void m2882E4() {
@@ -2847,10 +2847,10 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2876Ea(AbstractC5918j<Client> jVar, Runnable runnable) {
-        synchronized (this.f35026Z) {
-            if (!this.f35102y1) {
+        synchronized (this.f35029Z) {
+            if (!this.f35105y1) {
                 C10941k u4 = m2222u4();
-                Client client = u4 != null ? u4.f35156b : null;
+                Client client = u4 != null ? u4.f35159b : null;
                 if (client != null) {
                     jVar.mo1330a(client);
                 } else if (runnable != null) {
@@ -2861,17 +2861,17 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2875Eb(String str, String str2) {
-        this.f34989M1 = str;
-        this.f34992N1 = str2;
+        this.f34992M1 = str;
+        this.f34995N1 = str2;
     }
 
     public TdApi.LanguagePackInfo m2874Ec() {
-        return this.f35045e1;
+        return this.f35048e1;
     }
 
     public final void m2873Ed(TdApi.UpdateChatReadInbox updateChatReadInbox) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatReadInbox.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatReadInbox.chatId));
             if (!C10859mj.m2997b(updateChatReadInbox.chatId, chat, updateChatReadInbox)) {
                 chat.lastReadInboxMessageId = updateChatReadInbox.lastReadInboxMessageId;
                 boolean z = true;
@@ -2881,7 +2881,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                     z = false;
                 }
                 chat.unreadCount = i;
-                this.f35056i0.m1805t1(updateChatReadInbox, z, chat, m2335n3(chat.positions));
+                this.f35059i0.m1805t1(updateChatReadInbox, z, chat, m2335n3(chat.positions));
             }
         }
     }
@@ -2899,7 +2899,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2867F3(TdApi.Chat chat) {
-        return !C5070i.m24061i(m2835H3(chat));
+        return !C5070i.m24062i(m2835H3(chat));
     }
 
     public void m2866F4() {
@@ -2920,41 +2920,41 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public int m2860Fa() {
-        return this.f34971E0;
+        return this.f34974E0;
     }
 
     public void m2859Fb(boolean z) {
-        if (this.f35009T0 != z) {
-            this.f35009T0 = z;
-            m2270r4().m14783o(new TdApi.SetOption("archive_and_mute_new_chats_from_unknown_users", new TdApi.OptionValueBoolean(z)), this.f34987M);
+        if (this.f35012T0 != z) {
+            this.f35012T0 = z;
+            m2270r4().m14783o(new TdApi.SetOption("archive_and_mute_new_chats_from_unknown_users", new TdApi.OptionValueBoolean(z)), this.f34990M);
         }
     }
 
     public int m2858Fc() {
-        return this.f35092u0;
+        return this.f35095u0;
     }
 
     public final void m2857Fd(TdApi.UpdateChatReadOutbox updateChatReadOutbox) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatReadOutbox.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatReadOutbox.chatId));
             if (!C10859mj.m2997b(updateChatReadOutbox.chatId, chat, updateChatReadOutbox)) {
                 chat.lastReadOutboxMessageId = updateChatReadOutbox.lastReadOutboxMessageId;
-                this.f35056i0.m1801u1(updateChatReadOutbox);
+                this.f35059i0.m1801u1(updateChatReadOutbox);
             }
         }
     }
 
     public final void m2856Fe(TdApi.UpdateTrendingStickerSets updateTrendingStickerSets) {
         int G;
-        synchronized (this.f35030a0) {
-            G = C4779t2.m25689G(updateTrendingStickerSets.stickerSets);
-            this.f35098w1 = G;
+        synchronized (this.f35033a0) {
+            G = C4779t2.m25690G(updateTrendingStickerSets.stickerSets);
+            this.f35101w1 = G;
         }
-        this.f35056i0.m1920O2(updateTrendingStickerSets, G);
+        this.f35059i0.m1920O2(updateTrendingStickerSets, G);
     }
 
     public String m2853G1() {
-        return this.f35014V.m4745U(this.f35017W).m1453w();
+        return this.f35017V.m4745U(this.f35020W).m1453w();
     }
 
     public boolean m2852G2(long j) {
@@ -2976,8 +2976,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public void m2849G5(TdApi.Message message, boolean z, boolean z2, final AbstractC5918j<C10943m> jVar) {
         final AtomicBoolean atomicBoolean = new AtomicBoolean(false);
-        final C10931a aVar = (message.sendingState != null || C7316a.m17049l(message.chatId) || C7319d.m17021i(message.f25406id) == 0 || z2) ? null : new C10931a(atomicBoolean, message, z, jVar);
-        m2270r4().m14783o(new TdApi.GetMessageLink(message.chatId, message.f25406id, 0, z, z2), new Client.AbstractC7865g() {
+        final C10931a aVar = (message.sendingState != null || C7316a.m17049l(message.chatId) || C7319d.m17021i(message.f25409id) == 0 || z2) ? null : new C10931a(atomicBoolean, message, z, jVar);
+        m2270r4().m14783o(new TdApi.GetMessageLink(message.chatId, message.f25409id, 0, z, z2), new Client.AbstractC7865g() {
             @Override
             public final void mo255t2(TdApi.Object object) {
                 C10930q6.this.m2394j8(atomicBoolean, aVar, jVar, object);
@@ -2989,20 +2989,20 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2848G6() {
-        TdApi.AuthorizationState authorizationState = this.f34982J1;
+        TdApi.AuthorizationState authorizationState = this.f34985J1;
         return authorizationState != null && authorizationState.getConstructor() == -1834871737;
     }
 
     public int m2844Ga() {
-        return this.f34969D0;
+        return this.f34972D0;
     }
 
     public final void m2843Gb(TdApi.Chat chat, final String str) {
         if (chat != null) {
-            synchronized (this.f35030a0) {
-                if (!C5070i.m24067c(chat.clientData, str)) {
+            synchronized (this.f35033a0) {
+                if (!C5070i.m24068c(chat.clientData, str)) {
                     chat.clientData = str;
-                    final long j = chat.f25367id;
+                    final long j = chat.f25370id;
                     m2270r4().m14783o(new TdApi.SetChatClientData(j, str), new Client.AbstractC7865g() {
                         @Override
                         public final void mo255t2(TdApi.Object object) {
@@ -3015,7 +3015,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2842Gc(final long j, final Runnable runnable, final boolean z, boolean z2) {
-        int i = this.f35017W;
+        int i = this.f35020W;
         Object[] objArr = new Object[5];
         boolean z3 = false;
         objArr[0] = Boolean.valueOf(z);
@@ -3024,9 +3024,9 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             z3 = true;
         }
         objArr[2] = Boolean.valueOf(z3);
-        objArr[3] = Integer.valueOf(this.f35023Y);
+        objArr[3] = Integer.valueOf(this.f35026Y);
         objArr[4] = Integer.valueOf(m2648T1());
-        C7903b.C7904a.m14399a(j, i, "Performing sync needNotification: %b, needNetworkRequest: %b, hasAfter: %b. Awaiting connection. Connection state: %d, status: %d", objArr);
+        C7903b.C7904a.m14398a(j, i, "Performing sync needNotification: %b, needNetworkRequest: %b, hasAfter: %b. Awaiting connection. Connection state: %d, status: %d", objArr);
         m2896D6(3);
         final Runnable s3Var = new Runnable() {
             @Override
@@ -3047,28 +3047,28 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2841Gd(TdApi.UpdateChatReplyMarkup updateChatReplyMarkup) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatReplyMarkup.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatReplyMarkup.chatId));
             if (!C10859mj.m2997b(updateChatReplyMarkup.chatId, chat, updateChatReplyMarkup)) {
                 chat.replyMarkupMessageId = updateChatReplyMarkup.replyMarkupMessageId;
-                this.f35056i0.m1789x1(updateChatReplyMarkup);
+                this.f35059i0.m1789x1(updateChatReplyMarkup);
             }
         }
     }
 
     public final void m2840Ge(TdApi.UpdateUnreadChatCount updateUnreadChatCount) {
-        if (m2326nc(updateUnreadChatCount.chatList, updateUnreadChatCount.totalCount, updateUnreadChatCount.unreadCount, updateUnreadChatCount.unreadUnmutedCount, updateUnreadChatCount.markedAsUnreadCount, updateUnreadChatCount.markedAsUnreadUnmutedCount) && this.f35075o1.m1326d(this)) {
+        if (m2326nc(updateUnreadChatCount.chatList, updateUnreadChatCount.totalCount, updateUnreadChatCount.unreadCount, updateUnreadChatCount.unreadUnmutedCount, updateUnreadChatCount.markedAsUnreadCount, updateUnreadChatCount.markedAsUnreadUnmutedCount) && this.f35078o1.m1326d(this)) {
             HandlerC10770jj dd = m2485dd();
             HandlerC10770jj dd2 = m2485dd();
-            int b = this.f35075o1.m1328b();
-            boolean c = this.f35075o1.m1327c();
+            int b = this.f35078o1.m1328b();
+            boolean c = this.f35078o1.m1327c();
             dd.sendMessage(dd2.obtainMessage(3, b, c ? 1 : 0, updateUnreadChatCount.chatList));
         }
     }
 
     public String m2837H1(int i) {
         String G1 = m2853G1();
-        return i != 0 ? C4403w.m27865j1(R.string.format_accountAndCategory, G1, C4403w.m27958N0(i)) : G1;
+        return i != 0 ? C4403w.m27867j1(R.string.format_accountAndCategory, G1, C4403w.m27960N0(i)) : G1;
     }
 
     public boolean m2836H2(long j) {
@@ -3077,17 +3077,17 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public String m2835H3(TdApi.Chat chat) {
         TdApi.User b4;
-        if (chat == null || !C4868i.m24726c2().m24819P2()) {
+        if (chat == null || !C4868i.m24727c2().m24820P2()) {
             return null;
         }
         int constructor = chat.type.getConstructor();
         if (constructor == -1472570774) {
-            TdApi.Supergroup h2 = m2480e2().m1638h2(C7316a.m17045p(chat.f25367id));
-            if (h2 == null || C5070i.m24061i(h2.restrictionReason)) {
+            TdApi.Supergroup h2 = m2480e2().m1638h2(C7316a.m17045p(chat.f25370id));
+            if (h2 == null || C5070i.m24062i(h2.restrictionReason)) {
                 return null;
             }
             return h2.restrictionReason;
-        } else if ((constructor == 862366513 || constructor == 1579049844) && (b4 = m2525b4(chat)) != null && !C5070i.m24061i(b4.restrictionReason)) {
+        } else if ((constructor == 862366513 || constructor == 1579049844) && (b4 = m2525b4(chat)) != null && !C5070i.m24062i(b4.restrictionReason)) {
             return b4.restrictionReason;
         } else {
             return null;
@@ -3095,10 +3095,10 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2834H4(int i) {
-        synchronized (this.f35026Z) {
-            int decrementAndGet = this.f35104z1.decrementAndGet();
+        synchronized (this.f35029Z) {
+            int decrementAndGet = this.f35107z1.decrementAndGet();
             if (decrementAndGet >= 0) {
-                Log.m14716v((int) Log.TAG_ACCOUNTS, "accountId:%d, referenceCount:%d, type:%d", Integer.valueOf(this.f35017W), Integer.valueOf(decrementAndGet), Integer.valueOf(i));
+                Log.m14716v((int) Log.TAG_ACCOUNTS, "accountId:%d, referenceCount:%d, type:%d", Integer.valueOf(this.f35020W), Integer.valueOf(decrementAndGet), Integer.valueOf(i));
                 m2487db();
             } else {
                 IllegalStateException illegalStateException = new IllegalStateException("type == " + i);
@@ -3117,7 +3117,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             return (TdApi.Message) s4;
         }
         if (s4 instanceof TdApi.Error) {
-            Log.m14719i("Could not get message: %s, chatId:%s, messageId:%s", C4779t2.m25378z5(s4), Long.valueOf(j), Long.valueOf(j2));
+            Log.m14719i("Could not get message: %s, chatId:%s, messageId:%s", C4779t2.m25379z5(s4), Long.valueOf(j), Long.valueOf(j2));
         }
         return null;
     }
@@ -3133,7 +3133,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         char c2;
         if (jsonValue instanceof TdApi.JsonValueObject) {
             for (TdApi.JsonObjectMember jsonObjectMember : ((TdApi.JsonValueObject) jsonValue).members) {
-                if (!C5070i.m24061i(jsonObjectMember.key)) {
+                if (!C5070i.m24062i(jsonObjectMember.key)) {
                     String str = jsonObjectMember.key;
                     str.hashCode();
                     boolean z = true;
@@ -3239,13 +3239,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                             if (!(jsonValue2 instanceof TdApi.JsonValueString)) {
                                 break;
                             } else {
-                                this.f34983K0 = ((TdApi.JsonValueString) jsonValue2).value;
+                                this.f34986K0 = ((TdApi.JsonValueString) jsonValue2).value;
                                 continue;
                             }
                         case 1:
                             TdApi.JsonValue jsonValue3 = jsonObjectMember.value;
                             if (jsonValue3 instanceof TdApi.JsonValueBoolean) {
-                                this.f34979I0 = ((TdApi.JsonValueBoolean) jsonValue3).value;
+                                this.f34982I0 = ((TdApi.JsonValueBoolean) jsonValue3).value;
                                 break;
                             } else {
                                 continue;
@@ -3253,7 +3253,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                         case 2:
                             TdApi.JsonValue jsonValue4 = jsonObjectMember.value;
                             if (jsonValue4 instanceof TdApi.JsonValueBoolean) {
-                                this.f34977H0 = ((TdApi.JsonValueBoolean) jsonValue4).value;
+                                this.f34980H0 = ((TdApi.JsonValueBoolean) jsonValue4).value;
                                 break;
                             } else {
                                 continue;
@@ -3267,12 +3267,12 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                             if (!(jsonValue5 instanceof TdApi.JsonValueString) || !"disabled".equals(((TdApi.JsonValueString) jsonValue5).value)) {
                                 z = false;
                             }
-                            this.f34975G0 = z;
+                            this.f34978G0 = z;
                             continue;
                         case 5:
                             TdApi.JsonValue jsonValue6 = jsonObjectMember.value;
                             if (jsonValue6 instanceof TdApi.JsonValueNumber) {
-                                this.f34973F0 = Math.max(0.75d, C5069h.m24091b(((TdApi.JsonValueNumber) jsonValue6).value));
+                                this.f34976F0 = Math.max(0.75d, C5069h.m24092b(((TdApi.JsonValueNumber) jsonValue6).value));
                                 break;
                             } else {
                                 continue;
@@ -3280,7 +3280,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                         case 7:
                             TdApi.JsonValue jsonValue7 = jsonObjectMember.value;
                             if (jsonValue7 instanceof TdApi.JsonValueBoolean) {
-                                this.f35095v0 = ((TdApi.JsonValueBoolean) jsonValue7).value;
+                                this.f35098v0 = ((TdApi.JsonValueBoolean) jsonValue7).value;
                                 break;
                             } else {
                                 continue;
@@ -3288,7 +3288,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                         case '\b':
                             TdApi.JsonValue jsonValue8 = jsonObjectMember.value;
                             if (jsonValue8 instanceof TdApi.JsonValueNumber) {
-                                this.f35097w0 = (int) ((TdApi.JsonValueNumber) jsonValue8).value;
+                                this.f35100w0 = (int) ((TdApi.JsonValueNumber) jsonValue8).value;
                                 break;
                             } else {
                                 continue;
@@ -3337,16 +3337,16 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                                         }
                                         switch (c2) {
                                             case 0:
-                                                this.f34963A0 = j;
+                                                this.f34966A0 = j;
                                                 break;
                                             case 1:
-                                                this.f35101y0 = j;
+                                                this.f35104y0 = j;
                                                 break;
                                             case 2:
-                                                this.f35103z0 = j;
+                                                this.f35106z0 = j;
                                                 break;
                                             case 3:
-                                                this.f35099x0 = j;
+                                                this.f35102x0 = j;
                                                 break;
                                         }
                                     }
@@ -3369,7 +3369,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                                         }
                                     }
                                 }
-                                this.f35012U0 = (C10945o[]) arrayList.toArray(new C10945o[0]);
+                                this.f35015U0 = (C10945o[]) arrayList.toArray(new C10945o[0]);
                                 break;
                             } else {
                                 continue;
@@ -3377,7 +3377,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                         case '\f':
                             TdApi.JsonValue jsonValue13 = jsonObjectMember.value;
                             if (jsonValue13 instanceof TdApi.JsonValueBoolean) {
-                                this.f34981J0 = ((TdApi.JsonValueBoolean) jsonValue13).value;
+                                this.f34984J0 = ((TdApi.JsonValueBoolean) jsonValue13).value;
                                 break;
                             } else {
                                 continue;
@@ -3396,7 +3396,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2827Hb(final long j, final TdApi.MessageSender messageSender, final TdApi.ChatMemberStatus chatMemberStatus, int i, final TdApi.ChatMemberStatus chatMemberStatus2, final AbstractC10939i iVar) {
-        if (!C7316a.m17054g(j) || !C4779t2.m25379z4(chatMemberStatus)) {
+        if (!C7316a.m17054g(j) || !C4779t2.m25380z4(chatMemberStatus)) {
             m2795Jb(j, messageSender, chatMemberStatus, i, chatMemberStatus2, iVar);
             return;
         }
@@ -3406,7 +3406,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 C10930q6.this.m2457f9(j, messageSender, chatMemberStatus, chatMemberStatus2, iVar);
             }
         };
-        if (i <= 0 || messageSender.getConstructor() != -336109341 || !C4779t2.m25499i3(chatMemberStatus, false) || C4779t2.m25499i3(chatMemberStatus2, false)) {
+        if (i <= 0 || messageSender.getConstructor() != -336109341 || !C4779t2.m25500i3(chatMemberStatus, false) || C4779t2.m25500i3(chatMemberStatus2, false)) {
             k3Var.run();
         } else {
             m2270r4().m14783o(new TdApi.AddChatMember(j, ((TdApi.MessageSenderUser) messageSender).userId, i), new Client.AbstractC7865g() {
@@ -3419,25 +3419,25 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public TdApi.Chat m2826Hc(TdApi.Chat chat) {
-        return this.f35047f0.contains(Long.valueOf(chat.f25367id)) ? chat : m2739N3(chat.f25367id);
+        return this.f35050f0.contains(Long.valueOf(chat.f25370id)) ? chat : m2739N3(chat.f25370id);
     }
 
     public final void m2825Hd(TdApi.UpdateChatTheme updateChatTheme) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatTheme.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatTheme.chatId));
             if (!C10859mj.m2997b(updateChatTheme.chatId, chat, updateChatTheme)) {
                 chat.themeName = updateChatTheme.themeName;
-                this.f35056i0.m1977A1(updateChatTheme, chat, m2335n3(chat.positions));
+                this.f35059i0.m1977A1(updateChatTheme, chat, m2335n3(chat.positions));
             }
         }
     }
 
     public final void m2824He(TdApi.UpdateUnreadMessageCount updateUnreadMessageCount) {
-        if (m2310oc(updateUnreadMessageCount.chatList, updateUnreadMessageCount.unreadCount, updateUnreadMessageCount.unreadUnmutedCount) && this.f35075o1.m1326d(this)) {
+        if (m2310oc(updateUnreadMessageCount.chatList, updateUnreadMessageCount.unreadCount, updateUnreadMessageCount.unreadUnmutedCount) && this.f35078o1.m1326d(this)) {
             HandlerC10770jj dd = m2485dd();
             HandlerC10770jj dd2 = m2485dd();
-            int b = this.f35075o1.m1328b();
-            boolean c = this.f35075o1.m1327c();
+            int b = this.f35078o1.m1328b();
+            boolean c = this.f35078o1.m1327c();
             dd.sendMessage(dd2.obtainMessage(3, b, c ? 1 : 0, updateUnreadMessageCount.chatList));
         }
     }
@@ -3467,14 +3467,14 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2812Ia(final long j, String str, final Runnable runnable) {
-        int i = this.f35017W;
+        int i = this.f35020W;
         boolean z = true;
         Object[] objArr = new Object[1];
         if (runnable == null) {
             z = false;
         }
         objArr[0] = Boolean.valueOf(z);
-        C7903b.C7904a.m14399a(j, i, "Started processing push notification, hasAfter:%b", objArr);
+        C7903b.C7904a.m14398a(j, i, "Started processing push notification, hasAfter:%b", objArr);
         m2912C6();
         m2270r4().m14783o(new TdApi.ProcessPushNotification(str), new Client.AbstractC7865g() {
             @Override
@@ -3499,29 +3499,29 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public final void m2809Id(TdApi.UpdateChatThemes updateChatThemes) {
         TdApi.ChatTheme[] chatThemeArr;
-        synchronized (this.f35030a0) {
-            this.f35067l2.clear();
+        synchronized (this.f35033a0) {
+            this.f35070l2.clear();
             for (TdApi.ChatTheme chatTheme : updateChatThemes.chatThemes) {
-                this.f35067l2.put(chatTheme.name, chatTheme);
+                this.f35070l2.put(chatTheme.name, chatTheme);
             }
         }
     }
 
     public final void m2808Ie(TdApi.UpdateUsersNearby updateUsersNearby) {
-        this.f35056i0.m1916P2(updateUsersNearby);
+        this.f35059i0.m1916P2(updateUsersNearby);
     }
 
     public final void m2805J1(long j, long j2, boolean z) {
         int size;
-        synchronized (this.f35052g2) {
-            int size2 = this.f35052g2.size();
+        synchronized (this.f35055g2) {
+            int size2 = this.f35055g2.size();
             String str = j + "_" + j2;
             if (z) {
-                this.f35052g2.add(str);
+                this.f35055g2.add(str);
             } else {
-                this.f35052g2.remove(str);
+                this.f35055g2.remove(str);
             }
-            size = this.f35052g2.size() - size2;
+            size = this.f35055g2.size() - size2;
         }
         if (size > 0) {
             for (int i = 0; i < size; i++) {
@@ -3547,7 +3547,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2802J4(final AbstractC5917i iVar) {
-        Log.m14719i("Clearing data... accountId:%d", Integer.valueOf(this.f35017W));
+        Log.m14719i("Clearing data... accountId:%d", Integer.valueOf(this.f35020W));
         final long uptimeMillis = SystemClock.uptimeMillis();
         m2270r4().m14783o(new TdApi.OptimizeStorage(0L, 0, 0, 0, new TdApi.FileType[]{new TdApi.FileTypeAnimation(), new TdApi.FileTypeAudio(), new TdApi.FileTypeDocument(), new TdApi.FileTypePhoto(), new TdApi.FileTypeProfilePhoto(), new TdApi.FileTypeSecret(), new TdApi.FileTypeSecretThumbnail(), new TdApi.FileTypeSecure(), new TdApi.FileTypeSticker(), new TdApi.FileTypeThumbnail(), new TdApi.FileTypeUnknown(), new TdApi.FileTypeVideo(), new TdApi.FileTypeVideoNote(), new TdApi.FileTypeVoiceNote(), new TdApi.FileTypeWallpaper()}, null, null, false, 0), new Client.AbstractC7865g() {
             @Override
@@ -3558,17 +3558,17 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final long m2801J5() {
-        if (C4868i.m24726c2().m24720d0()) {
+        if (C4868i.m24727c2().m24721d0()) {
             return TimeUnit.SECONDS.toMillis(1L);
         }
         if (!m2930B4().m4687i1()) {
             return TimeUnit.SECONDS.toMillis(5L);
         }
-        if (this.f35014V.m4824A0() == 1) {
+        if (this.f35017V.m4824A0() == 1) {
             return TimeUnit.MINUTES.toMillis(15L);
         }
-        C10536ab abVar = this.f35014V;
-        int i = this.f35017W;
+        C10536ab abVar = this.f35017V;
+        int i = this.f35020W;
         TimeUnit timeUnit = TimeUnit.MINUTES;
         int y0 = abVar.m4630y0(i, timeUnit.toMillis(15L));
         if (y0 == -1) {
@@ -3591,7 +3591,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public String m2797J9() {
-        return this.f35037c.systemLanguageCode;
+        return this.f35040c.systemLanguageCode;
     }
 
     public final void m2796Ja(C10941k kVar, TdApi.Update update) {
@@ -3632,7 +3632,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 m2745Md((TdApi.UpdateChatAction) update);
                 return;
             case TdApi.UpdateSecretChat.CONSTRUCTOR:
-                this.f35053h0.m1612o1((TdApi.UpdateSecretChat) update);
+                this.f35056h0.m1612o1((TdApi.UpdateSecretChat) update);
                 return;
             case TdApi.UpdateChatPermissions.CONSTRUCTOR:
                 m2937Ad((TdApi.UpdateChatPermissions) update);
@@ -3680,7 +3680,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 m2372ke((TdApi.UpdateMessageSendFailed) update);
                 return;
             case TdApi.UpdateBasicGroup.CONSTRUCTOR:
-                this.f35053h0.m1639h1((TdApi.UpdateBasicGroup) update);
+                this.f35056h0.m1639h1((TdApi.UpdateBasicGroup) update);
                 return;
             case TdApi.UpdateChatFilters.CONSTRUCTOR:
                 m2261rd((TdApi.UpdateChatFilters) update);
@@ -3728,7 +3728,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 m2888De((TdApi.UpdateSupergroup) update);
                 return;
             case TdApi.UpdateUserFullInfo.CONSTRUCTOR:
-                this.f35053h0.m1596s1((TdApi.UpdateUserFullInfo) update);
+                this.f35056h0.m1596s1((TdApi.UpdateUserFullInfo) update);
                 return;
             case TdApi.UpdateChatPosition.CONSTRUCTOR:
                 m2905Cd((TdApi.UpdateChatPosition) update);
@@ -3742,7 +3742,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             case TdApi.UpdateFile.CONSTRUCTOR:
                 TdApi.UpdateFile updateFile = (TdApi.UpdateFile) update;
                 if (Log.isEnabled(Log.TAG_TDLIB_FILES)) {
-                    Log.m14721i((int) Log.TAG_TDLIB_FILES, "updateFile id=%d size=%d expectedSize=%d remote=%s local=%s", Integer.valueOf(updateFile.file.f25373id), Integer.valueOf(updateFile.file.size), Integer.valueOf(updateFile.file.expectedSize), updateFile.file.remote.toString(), updateFile.file.local.toString());
+                    Log.m14721i((int) Log.TAG_TDLIB_FILES, "updateFile id=%d size=%d expectedSize=%d remote=%s local=%s", Integer.valueOf(updateFile.file.f25376id), Integer.valueOf(updateFile.file.size), Integer.valueOf(updateFile.file.expectedSize), updateFile.file.remote.toString(), updateFile.file.local.toString());
                 }
                 m2666Rd(updateFile);
                 return;
@@ -3756,7 +3756,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 m2133zd((TdApi.UpdateChatPendingJoinRequests) update);
                 return;
             case TdApi.UpdateSupergroupFullInfo.CONSTRUCTOR:
-                this.f35053h0.m1604q1((TdApi.UpdateSupergroupFullInfo) update);
+                this.f35056h0.m1604q1((TdApi.UpdateSupergroupFullInfo) update);
                 return;
             case TdApi.UpdateTrendingStickerSets.CONSTRUCTOR:
                 m2856Fe((TdApi.UpdateTrendingStickerSets) update);
@@ -3795,7 +3795,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 m2340me((TdApi.UpdateMessageUnreadReactions) update);
                 return;
             case TdApi.UpdateUserStatus.CONSTRUCTOR:
-                this.f35053h0.m1592t1((TdApi.UpdateUserStatus) update);
+                this.f35056h0.m1592t1((TdApi.UpdateUserStatus) update);
                 return;
             case TdApi.UpdateMessageIsPinned.CONSTRUCTOR:
                 m2404ie((TdApi.UpdateMessageIsPinned) update);
@@ -3804,10 +3804,10 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 m2531ae((TdApi.UpdateInstalledStickerSets) update);
                 return;
             case TdApi.UpdateUser.CONSTRUCTOR:
-                this.f35053h0.m1600r1((TdApi.UpdateUser) update);
+                this.f35056h0.m1600r1((TdApi.UpdateUser) update);
                 return;
             case TdApi.UpdateMessageSendAcknowledged.CONSTRUCTOR:
-                this.f35068m0.m1517e((TdApi.UpdateMessageSendAcknowledged) update);
+                this.f35071m0.m1517e((TdApi.UpdateMessageSendAcknowledged) update);
                 return;
             case TdApi.UpdateChatReplyMarkup.CONSTRUCTOR:
                 m2841Gd((TdApi.UpdateChatReplyMarkup) update);
@@ -3819,7 +3819,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 m2373kd((TdApi.UpdateCall) update);
                 return;
             case TdApi.UpdateBasicGroupFullInfo.CONSTRUCTOR:
-                this.f35053h0.m1635i1((TdApi.UpdateBasicGroupFullInfo) update);
+                this.f35056h0.m1635i1((TdApi.UpdateBasicGroupFullInfo) update);
                 return;
             case TdApi.UpdateChatDraftMessage.CONSTRUCTOR:
                 m2277qd((TdApi.UpdateChatDraftMessage) update);
@@ -3882,8 +3882,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public final void m2795Jb(long j, TdApi.MessageSender messageSender, TdApi.ChatMemberStatus chatMemberStatus, int i, TdApi.ChatMemberStatus chatMemberStatus2, AbstractC10939i iVar) {
         TdApi.Function function;
-        boolean z = C7316a.m17054g(j) && i > 0 && !C4779t2.m25499i3(chatMemberStatus2, false) && C4779t2.m25499i3(chatMemberStatus, false) && messageSender.getConstructor() == -336109341;
-        AtomicBoolean atomicBoolean = (!z || !C4779t2.m25679H2(chatMemberStatus)) ? null : new AtomicBoolean(false);
+        boolean z = C7316a.m17054g(j) && i > 0 && !C4779t2.m25500i3(chatMemberStatus2, false) && C4779t2.m25500i3(chatMemberStatus, false) && messageSender.getConstructor() == -336109341;
+        AtomicBoolean atomicBoolean = (!z || !C4779t2.m25680H2(chatMemberStatus)) ? null : new AtomicBoolean(false);
         if (z) {
             function = new TdApi.AddChatMember(j, ((TdApi.MessageSenderUser) messageSender).userId, i);
         } else {
@@ -3893,10 +3893,10 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2794Jc(final TdApi.LanguagePackInfo languagePackInfo, final AbstractC5917i iVar) {
-        if (C5070i.m24061i(languagePackInfo.baseLanguagePackId)) {
-            m2810Ic(languagePackInfo.f25405id, iVar);
+        if (C5070i.m24062i(languagePackInfo.baseLanguagePackId)) {
+            m2810Ic(languagePackInfo.f25408id, iVar);
         } else {
-            m2810Ic(languagePackInfo.f25405id, new AbstractC5917i() {
+            m2810Ic(languagePackInfo.f25408id, new AbstractC5917i() {
                 @Override
                 public final void mo1322a(boolean z) {
                     C10930q6.this.m2169x9(languagePackInfo, iVar, z);
@@ -3906,11 +3906,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2793Jd(TdApi.UpdateChatTitle updateChatTitle) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatTitle.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatTitle.chatId));
             if (!C10859mj.m2997b(updateChatTitle.chatId, chat, updateChatTitle)) {
                 chat.title = updateChatTitle.title;
-                this.f35056i0.m1969C1(updateChatTitle, chat, m2335n3(chat.positions));
+                this.f35059i0.m1969C1(updateChatTitle, chat, m2335n3(chat.positions));
                 if (Build.VERSION.SDK_INT >= 26) {
                     long ba2 = m2519ba();
                     if (ba2 != 0) {
@@ -3929,7 +3929,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (fVar == null) {
             return false;
         }
-        for (TdApi.Message message : fVar.f35133a) {
+        for (TdApi.Message message : fVar.f35136a) {
             if (m2625U9(message)) {
                 return true;
             }
@@ -3988,7 +3988,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             case TdApi.ChatTypeSupergroup.CONSTRUCTOR:
             case TdApi.ChatTypeBasicGroup.CONSTRUCTOR:
                 TdApi.ChatMemberStatus K3 = m2787K3(j);
-                if (K3 == null || !C4779t2.m25499i3(K3, false)) {
+                if (K3 == null || !C4779t2.m25500i3(K3, false)) {
                     m2270r4().m14783o(new TdApi.DeleteChatHistory(j, true, z), m2376ka(runnable));
                     return;
                 } else {
@@ -4043,11 +4043,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public C11039u9 m2781K9() {
-        return this.f35056i0;
+        return this.f35059i0;
     }
 
     public Client.AbstractC7865g m2780Ka() {
-        return this.f35005S;
+        return this.f35008S;
     }
 
     public void m2779Kb(long j, int i) {
@@ -4055,12 +4055,12 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public String m2778Kc() {
-        return Uri.parse(this.f35054h1).getHost();
+        return Uri.parse(this.f35057h1).getHost();
     }
 
     public final void m2777Kd(TdApi.UpdateChatUnreadMentionCount updateChatUnreadMentionCount) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatUnreadMentionCount.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatUnreadMentionCount.chatId));
             if (!C10859mj.m2997b(updateChatUnreadMentionCount.chatId, chat, updateChatUnreadMentionCount)) {
                 boolean z = true;
                 boolean z2 = chat.unreadMentionCount > 0;
@@ -4069,7 +4069,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                     z = false;
                 }
                 chat.unreadMentionCount = i;
-                this.f35056i0.m1961E1(updateChatUnreadMentionCount, z);
+                this.f35059i0.m1961E1(updateChatUnreadMentionCount, z);
             }
         }
     }
@@ -4084,7 +4084,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2773L1() {
-        return this.f34977H0;
+        return this.f34980H0;
     }
 
     public boolean m2772L2(TdApi.Chat chat) {
@@ -4093,8 +4093,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public TdApi.Chat m2771L3(long j) {
         TdApi.Chat chat;
-        synchronized (this.f35030a0) {
-            chat = this.f35034b0.get(Long.valueOf(j));
+        synchronized (this.f35033a0) {
+            chat = this.f35037b0.get(Long.valueOf(j));
             if (chat == null) {
                 throw new IllegalStateException("updateChat not received for id:" + j);
             }
@@ -4103,13 +4103,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2770L4(long j, long[] jArr, boolean z) {
-        m2270r4().m14783o(new TdApi.DeleteMessages(j, jArr, z), this.f34987M);
+        m2270r4().m14783o(new TdApi.DeleteMessages(j, jArr, z), this.f34990M);
     }
 
     public TdApi.FormattedText m2769L5(long j, long j2) {
         TdApi.FormattedText formattedText;
-        synchronized (this.f35013U1) {
-            HashMap<String, TdApi.FormattedText> hashMap = this.f35013U1;
+        synchronized (this.f35016U1) {
+            HashMap<String, TdApi.FormattedText> hashMap = this.f35016U1;
             formattedText = hashMap.get(j + "_" + j2);
         }
         return formattedText;
@@ -4130,7 +4130,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2763Lb(long j, TdApi.ChatNotificationSettings chatNotificationSettings) {
-        m2270r4().m14783o(new TdApi.SetChatNotificationSettings(j, chatNotificationSettings), this.f34987M);
+        m2270r4().m14783o(new TdApi.SetChatNotificationSettings(j, chatNotificationSettings), this.f34990M);
     }
 
     public String m2762Lc(String str) {
@@ -4138,8 +4138,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2761Ld(TdApi.UpdateChatUnreadReactionCount updateChatUnreadReactionCount) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatUnreadReactionCount.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatUnreadReactionCount.chatId));
             if (!C10859mj.m2997b(updateChatUnreadReactionCount.chatId, chat, updateChatUnreadReactionCount)) {
                 boolean z = true;
                 boolean z2 = chat.unreadReactionCount > 0;
@@ -4148,13 +4148,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                     z = false;
                 }
                 chat.unreadReactionCount = i;
-                this.f35056i0.m1953G1(updateChatUnreadReactionCount, z);
+                this.f35059i0.m1953G1(updateChatUnreadReactionCount, z);
             }
         }
     }
 
     public Comparator<TdApi.User> m2760Le() {
-        return this.f35008T;
+        return this.f35011T;
     }
 
     public void m2757M1(final TdApi.LanguagePackInfo languagePackInfo, final AbstractC5917i iVar, boolean z) {
@@ -4164,7 +4164,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 C10930q6.this.m2927B7(languagePackInfo, iVar);
             }
         };
-        if (!z || C4779t2.m25513g3(languagePackInfo.f25405id)) {
+        if (!z || C4779t2.m25514g3(languagePackInfo.f25408id)) {
             w3Var.run();
         } else {
             m2794Jc(languagePackInfo, new AbstractC5917i() {
@@ -4177,7 +4177,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2756M2(TdApi.Chat chat) {
-        return ((m2283q7(chat) && m2336n2(chat, false)) || m2708P2(chat.f25367id)) && C5070i.m24061i(m2462f4(chat.f25367id));
+        return ((m2283q7(chat) && m2336n2(chat, false)) || m2708P2(chat.f25370id)) && C5070i.m24062i(m2462f4(chat.f25370id));
     }
 
     public boolean m2755M3(long j) {
@@ -4192,13 +4192,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2754M4(long j, long[] jArr, boolean z) {
-        m2270r4().m14783o(new TdApi.DeleteMessages(j, jArr, z), this.f34987M);
+        m2270r4().m14783o(new TdApi.DeleteMessages(j, jArr, z), this.f34990M);
     }
 
     public TdApi.MessageContent m2753M5(long j, long j2) {
         TdApi.MessageContent messageContent;
-        synchronized (this.f35010T1) {
-            HashMap<String, TdApi.MessageContent> hashMap = this.f35010T1;
+        synchronized (this.f35013T1) {
+            HashMap<String, TdApi.MessageContent> hashMap = this.f35013T1;
             messageContent = hashMap.get(j + "_" + j2);
         }
         return messageContent;
@@ -4209,7 +4209,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public C11115xb m2748Ma() {
-        return this.f35068m0;
+        return this.f35071m0;
     }
 
     public void m2747Mb(long j, TdApi.ChatPermissions chatPermissions, final AbstractC5917i iVar) {
@@ -4222,7 +4222,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public String m2746Mc() {
-        return C5070i.m24071G(m2652Sc());
+        return C5070i.m24072G(m2652Sc());
     }
 
     public final void m2745Md(TdApi.UpdateChatAction updateChatAction) {
@@ -4232,11 +4232,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public Comparator<AbstractC5098a1> m2744Me() {
-        return this.f35011U;
+        return this.f35014U;
     }
 
     public boolean m2741N1() {
-        return this.f35024Y0;
+        return this.f35027Y0;
     }
 
     public boolean m2740N2(long j) {
@@ -4249,16 +4249,16 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2738N4() {
-        m2270r4().m14783o(new TdApi.Destroy(), this.f34987M);
+        m2270r4().m14783o(new TdApi.Destroy(), this.f34990M);
     }
 
     public String m2737N5() {
-        return this.f35035b1;
+        return this.f35038b1;
     }
 
     public boolean m2736N6(long j) {
         long p = C7316a.m17045p(j);
-        return p != 0 && this.f35083r0.contains(Long.valueOf(p));
+        return p != 0 && this.f35086r0.contains(Long.valueOf(p));
     }
 
     public void m2733N9(long j, long j2, Runnable runnable) {
@@ -4266,11 +4266,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (U2 != null) {
             int i = (j2 > 0L ? 1 : (j2 == 0L ? 0 : -1));
             if (i == 0 && U2.isMarkedAsUnread) {
-                m2270r4().m14783o(new TdApi.ToggleChatIsMarkedAsUnread(U2.f25367id, false), m2376ka(runnable));
+                m2270r4().m14783o(new TdApi.ToggleChatIsMarkedAsUnread(U2.f25370id, false), m2376ka(runnable));
             }
             if (!m2284q6(U2) && U2.lastMessage != null) {
                 if (i != 0 || U2.unreadCount > 0) {
-                    m2270r4().m14783o(new TdApi.ViewMessages(j, j2, new long[]{U2.lastMessage.f25406id}, true), m2376ka(runnable));
+                    m2270r4().m14783o(new TdApi.ViewMessages(j, j2, new long[]{U2.lastMessage.f25409id}, true), m2376ka(runnable));
                 }
             }
         }
@@ -4296,18 +4296,18 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2729Nd(TdApi.UpdateChatVideoChat updateChatVideoChat) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatVideoChat.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatVideoChat.chatId));
             if (!C10859mj.m2997b(updateChatVideoChat.chatId, chat, updateChatVideoChat)) {
                 chat.videoChat = updateChatVideoChat.videoChat;
-                this.f35056i0.m1945I1(updateChatVideoChat);
+                this.f35059i0.m1945I1(updateChatVideoChat);
             }
         }
     }
 
     public void m2728Ne() {
-        synchronized (this.f35026Z) {
-            if (this.f35020X != null && this.f35102y1 && Thread.currentThread() == this.f35020X.f35156b.m14791g()) {
+        synchronized (this.f35029Z) {
+            if (this.f35023X != null && this.f35105y1 && Thread.currentThread() == this.f35023X.f35159b.m14791g()) {
                 new Thread(new Runnable() {
                     @Override
                     public final void run() {
@@ -4321,7 +4321,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2725O1() {
-        return this.f35021X0 == 1;
+        return this.f35024X0 == 1;
     }
 
     public boolean m2724O2(TdApi.Chat chat) {
@@ -4332,7 +4332,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (j == 0) {
             return null;
         }
-        TdApi.Chat U2 = this.f35047f0.contains(Long.valueOf(j)) ? m2632U2(j) : null;
+        TdApi.Chat U2 = this.f35050f0.contains(Long.valueOf(j)) ? m2632U2(j) : null;
         if (U2 != null) {
             return U2;
         }
@@ -4340,8 +4340,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (s4 != null) {
             int constructor = s4.getConstructor();
             if (constructor == -1679978726) {
-                Log.m14724e("chatSync failed: %s, chatId:%d", C4779t2.m25378z5(s4), Long.valueOf(j));
-            } else if (constructor == -1601123095 && this.f35047f0.contains(Long.valueOf(j))) {
+                Log.m14724e("chatSync failed: %s, chatId:%d", C4779t2.m25379z5(s4), Long.valueOf(j));
+            } else if (constructor == -1601123095 && this.f35050f0.contains(Long.valueOf(j))) {
                 return m2632U2(j);
             } else {
                 return null;
@@ -4359,13 +4359,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 }
             });
         }
-        return this.f35090t1;
+        return this.f35093t1;
     }
 
     public List<Long> m2721O5(TdApi.ChatList chatList) {
-        synchronized (this.f35030a0) {
+        synchronized (this.f35033a0) {
             ArrayList<TdApi.Chat> arrayList = null;
-            for (TdApi.Chat chat : this.f35034b0.values()) {
+            for (TdApi.Chat chat : this.f35037b0.values()) {
                 TdApi.ChatPosition a = C7317b.m17043a(chat, chatList);
                 if (a != null && a.isPinned) {
                     if (arrayList == null) {
@@ -4378,7 +4378,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 C7321e.m16929m1(arrayList, chatList);
                 ArrayList arrayList2 = new ArrayList(arrayList.size());
                 for (TdApi.Chat chat2 : arrayList) {
-                    arrayList2.add(Long.valueOf(chat2.f25367id));
+                    arrayList2.add(Long.valueOf(chat2.f25370id));
                 }
                 return arrayList2;
             }
@@ -4388,15 +4388,15 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public boolean m2720O6(long j) {
         boolean z;
-        synchronized (this.f35007S1) {
-            z = this.f35004R1.m23255d(j) != 0;
+        synchronized (this.f35010S1) {
+            z = this.f35007R1.m23256d(j) != 0;
         }
         return z;
     }
 
     public void m2717O9(TdApi.Chat chat, Runnable runnable) {
         if (chat != null && chat.unreadCount == 0 && !chat.isMarkedAsUnread) {
-            m2270r4().m14783o(new TdApi.ToggleChatIsMarkedAsUnread(chat.f25367id, true), m2376ka(runnable));
+            m2270r4().m14783o(new TdApi.ToggleChatIsMarkedAsUnread(chat.f25370id, true), m2376ka(runnable));
         }
     }
 
@@ -4404,7 +4404,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (Log.isEnabled(4)) {
             Log.m14722i(4, "Reading messages chatId:%d messageIds:%s", Log.generateSingleLineException(2), Long.valueOf(j), Arrays.toString(jArr));
         }
-        m2270r4().m14783o(new TdApi.ViewMessages(j, j2, jArr, true), this.f34987M);
+        m2270r4().m14783o(new TdApi.ViewMessages(j, j2, jArr, true), this.f34990M);
     }
 
     public final java.util.List<p350yd.C10930q6.C10938h> m2715Ob(org.drinkless.p210td.libcore.telegram.TdApi.Chat r23, org.drinkless.p210td.libcore.telegram.TdApi.ChatPosition[] r24) {
@@ -4436,34 +4436,34 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             default:
                 throw new UnsupportedOperationException(updateConnectionState.toString());
         }
-        int i2 = this.f35023Y;
+        int i2 = this.f35026Y;
         if (i2 != i) {
-            this.f35023Y = i;
+            this.f35026Y = i;
             if (i == 0 || i == 4) {
-                this.f35051g1 = 0L;
-            } else if (this.f35051g1 == 0) {
-                this.f35051g1 = SystemClock.uptimeMillis();
+                this.f35054g1 = 0L;
+            } else if (this.f35054g1 == 0) {
+                this.f35054g1 = SystemClock.uptimeMillis();
             }
-            this.f35056i0.m1941J1(i, i2);
-            this.f35014V.m4686i2(this, i);
+            this.f35059i0.m1941J1(i, i2);
+            this.f35017V.m4686i2(this, i);
             if (i == 0) {
                 m2360la();
             } else if (i2 == 0) {
-                m2930B4().m4694g3().m28144i();
+                m2930B4().m4694g3().m28146i();
             }
         }
     }
 
     public C11004sj m2712Oe() {
-        return this.f35074o0;
+        return this.f35077o0;
     }
 
     public String m2709P1() {
-        return this.f34989M1;
+        return this.f34992M1;
     }
 
     public boolean m2708P2(long j) {
-        return C7316a.m17054g(j) && C4779t2.m25623P2(m2787K3(j));
+        return C7316a.m17054g(j) && C4779t2.m25624P2(m2787K3(j));
     }
 
     public int m2707P3(long j) {
@@ -4483,11 +4483,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2704P6() {
-        return this.f35023Y == 0;
+        return this.f35026Y == 0;
     }
 
     public int m2701P9() {
-        return this.f35081q1;
+        return this.f35084q1;
     }
 
     public final void m2700Pa(long j, TdApi.MessageSender messageSender, int i, AbstractC10939i iVar) {
@@ -4495,9 +4495,9 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2699Pb(boolean z) {
-        if (this.f35090t1 != z) {
-            this.f35090t1 = z;
-            m2270r4().m14783o(new TdApi.SetOption("disable_contact_registered_notifications", new TdApi.OptionValueBoolean(z)), this.f34987M);
+        if (this.f35093t1 != z) {
+            this.f35093t1 = z;
+            m2270r4().m14783o(new TdApi.SetOption("disable_contact_registered_notifications", new TdApi.OptionValueBoolean(z)), this.f34990M);
             m2781K9().m1933L1(z);
         }
     }
@@ -4507,17 +4507,17 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2697Pd(String[] strArr) {
-        synchronized (this.f35030a0) {
-            this.f34985L0 = strArr;
+        synchronized (this.f35033a0) {
+            this.f34988L0 = strArr;
         }
     }
 
     public boolean m2696Pe() {
-        return !this.f34975G0 || C7389v0.m16636f1();
+        return !this.f34978G0 || C7389v0.m16636f1();
     }
 
     public String m2693Q1() {
-        return this.f34992N1;
+        return this.f34995N1;
     }
 
     public void m2692Q2(TdApi.Message message) {
@@ -4549,11 +4549,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             return false;
         }
         TdApi.User b4 = m2525b4(chat);
-        return C4779t2.m25630O2(b4) && !m2379k7(b4.f25439id);
+        return C4779t2.m25631O2(b4) && !m2379k7(b4.f25442id);
     }
 
     public int m2685Q9() {
-        return this.f35084r1;
+        return this.f35087r1;
     }
 
     public void m2684Qa(long j, long[] jArr) {
@@ -4561,8 +4561,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2683Qb(boolean z) {
-        if (this.f35090t1 != z) {
-            this.f35090t1 = z;
+        if (this.f35093t1 != z) {
+            this.f35093t1 = z;
             m2781K9().m1933L1(z);
         }
     }
@@ -4572,23 +4572,23 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2681Qd(TdApi.UpdateFavoriteStickers updateFavoriteStickers) {
-        synchronized (this.f35030a0) {
-            this.f35096v1 = updateFavoriteStickers.stickerIds;
+        synchronized (this.f35033a0) {
+            this.f35099v1 = updateFavoriteStickers.stickerIds;
         }
-        this.f35056i0.m1929M1(updateFavoriteStickers);
+        this.f35059i0.m1929M1(updateFavoriteStickers);
     }
 
     public String m2678R1() {
         if (!m2332n6()) {
             return "";
         }
-        return C1363c0.m37408y("+" + this.f34989M1 + this.f34992N1, false, true);
+        return C1363c0.m37411y("+" + this.f34992M1 + this.f34995N1, false, true);
     }
 
     public final void m2677R2() {
-        if (this.f35076o2) {
-            SyncHelper.m14202a(C1379j0.m37309q(), this.f35017W);
-            this.f35076o2 = false;
+        if (this.f35079o2) {
+            SyncHelper.m14201a(C1379j0.m37312q(), this.f35020W);
+            this.f35079o2 = false;
         }
     }
 
@@ -4597,8 +4597,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (U2 != null) {
             return m2631U3(U2, z, z2);
         }
-        if (j == f34961y2 && ".".equals(U2.title)) {
-            return C4403w.m27869i1(R.string.EmojiSets);
+        if (j == f34964y2 && ".".equals(U2.title)) {
+            return C4403w.m27871i1(R.string.EmojiSets);
         }
         long d4 = m2494d4(j);
         if (d4 != 0) {
@@ -4626,7 +4626,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2673R6() {
-        return m2930B4().m4632x2() == this.f35017W;
+        return m2930B4().m4632x2() == this.f35020W;
     }
 
     public String m2670R9(TdApi.Message message) {
@@ -4634,13 +4634,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2669Ra() {
-        this.f35047f0.clear();
-        this.f35034b0.clear();
+        this.f35050f0.clear();
+        this.f35037b0.clear();
     }
 
     public void m2668Rb(boolean z) {
-        this.f35024Y0 = z;
-        m2270r4().m14783o(new TdApi.SetOption("disable_sent_scheduled_message_notifications", new TdApi.OptionValueBoolean(z)), this.f34987M);
+        this.f35027Y0 = z;
+        m2270r4().m14783o(new TdApi.SetOption("disable_sent_scheduled_message_notifications", new TdApi.OptionValueBoolean(z)), this.f34990M);
     }
 
     public String m2667Rc(String str) {
@@ -4648,20 +4648,20 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2666Rd(TdApi.UpdateFile updateFile) {
-        this.f35056i0.m1925N1(updateFile);
-        this.f35014V.m4636w2().m7009z0(this, updateFile);
+        this.f35059i0.m1925N1(updateFile);
+        this.f35017V.m4636w2().m7009z0(this, updateFile);
         m2413i5().m3990h0(updateFile);
         TdApi.File file = updateFile.file;
         if (file.local.isDownloadingActive || file.remote.isUploadingActive) {
             m2413i5().m3992g0(updateFile);
-            int i = updateFile.file.f25373id;
-            if (!ImageLoader.m14392e().m14388i(this, updateFile.file)) {
-                GifBridge.m14341f().m14333n(this, i, C4779t2.m25431s1(updateFile.file));
+            int i = updateFile.file.f25376id;
+            if (!ImageLoader.m14391e().m14387i(this, updateFile.file)) {
+                GifBridge.m14340f().m14332n(this, i, C4779t2.m25432s1(updateFile.file));
             }
-        } else if (C4779t2.m25598T2(file)) {
+        } else if (C4779t2.m25599T2(file)) {
             m2413i5().m3994f0(updateFile);
-            if (!ImageLoader.m14392e().m14389h(this, updateFile.file)) {
-                GifBridge.m14341f().m14334m(this, updateFile.file);
+            if (!ImageLoader.m14391e().m14388h(this, updateFile.file)) {
+                GifBridge.m14340f().m14333m(this, updateFile.file);
             }
         } else {
             m2413i5().m3988i0(updateFile);
@@ -4669,7 +4669,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public TdApi.AuthorizationState m2663S1() {
-        return this.f34982J1;
+        return this.f34985J1;
     }
 
     public void m2662S2(AbstractC4761s4 s4Var, int i) {
@@ -4681,16 +4681,16 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2660S4(TdApi.ChatList chatList, int i, boolean z) {
-        this.f35014V.m4716b1().m1539p(this, chatList, i, z);
+        this.f35017V.m4716b1().m1539p(this, chatList, i, z);
     }
 
     public final String m2659S5() {
-        String W0 = this.f35014V.m4736W0();
-        return C5070i.m24061i(W0) ? C4868i.m24726c2().m24898E0() : W0;
+        String W0 = this.f35017V.m4736W0();
+        return C5070i.m24062i(W0) ? C4868i.m24727c2().m24899E0() : W0;
     }
 
     public final boolean m2658S6() {
-        return this.f35100x1;
+        return this.f35103x1;
     }
 
     public String m2655S9(TdApi.Message message, boolean z, boolean z2) {
@@ -4705,7 +4705,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 return z2 ? m2480e2().m1749D2(j) : m2480e2().m1721K2(j);
             } else if (constructor == 1490730723) {
                 TdApi.MessageForwardOriginChannel messageForwardOriginChannel = (TdApi.MessageForwardOriginChannel) message.forwardInfo.origin;
-                if (z && !C5070i.m24061i(messageForwardOriginChannel.authorSignature)) {
+                if (z && !C5070i.m24062i(messageForwardOriginChannel.authorSignature)) {
                     return messageForwardOriginChannel.authorSignature;
                 }
                 TdApi.Chat U2 = m2632U2(messageForwardOriginChannel.chatId);
@@ -4714,7 +4714,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 }
             } else if (constructor == 1526010724) {
                 TdApi.MessageForwardOriginChat messageForwardOriginChat = (TdApi.MessageForwardOriginChat) message.forwardInfo.origin;
-                if (z && !C5070i.m24061i(messageForwardOriginChat.authorSignature)) {
+                if (z && !C5070i.m24062i(messageForwardOriginChat.authorSignature)) {
                     return messageForwardOriginChat.authorSignature;
                 }
                 TdApi.Chat U22 = m2632U2(messageForwardOriginChat.senderChatId);
@@ -4731,42 +4731,42 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2654Sa() {
-        this.f35038c0.clear();
-        this.f35047f0.clear();
-        this.f35058i2.m21474b();
-        this.f35086s0.m23248a();
-        this.f35050g0.clear();
-        this.f35070m2 = null;
-        this.f35010T1.clear();
-        this.f35013U1.clear();
-        this.f35044e0.m2085c();
-        this.f35064k2.clear();
-        this.f35069m1 = 777000L;
-        this.f35066l1 = 1271266957L;
-        this.f35019W1 = null;
-        this.f35041d0.m2085c();
+        this.f35041c0.clear();
+        this.f35050f0.clear();
+        this.f35061i2.m21475b();
+        this.f35089s0.m23249a();
+        this.f35053g0.clear();
+        this.f35073m2 = null;
+        this.f35013T1.clear();
+        this.f35016U1.clear();
+        this.f35047e0.m2085c();
+        this.f35067k2.clear();
+        this.f35072m1 = 777000L;
+        this.f35069l1 = 1271266957L;
+        this.f35022W1 = null;
+        this.f35044d0.m2085c();
     }
 
     public void m2653Sb(boolean z) {
-        this.f35021X0 = z ? 1 : 0;
-        m2270r4().m14783o(new TdApi.SetOption("disable_top_chats", new TdApi.OptionValueBoolean(z)), this.f34987M);
+        this.f35024X0 = z ? 1 : 0;
+        m2270r4().m14783o(new TdApi.SetOption("disable_top_chats", new TdApi.OptionValueBoolean(z)), this.f34990M);
     }
 
     public String m2652Sc() {
-        if (!C5070i.m24061i(this.f35054h1)) {
-            return this.f35054h1;
+        if (!C5070i.m24062i(this.f35057h1)) {
+            return this.f35057h1;
         }
-        return "https://" + C4779t2.m25514g2() + "/";
+        return "https://" + C4779t2.m25515g2() + "/";
     }
 
     public final void m2651Sd(TdApi.UpdateFileAddedToDownloads updateFileAddedToDownloads) {
-        this.f35056i0.m1921O1(updateFileAddedToDownloads);
+        this.f35059i0.m1921O1(updateFileAddedToDownloads);
     }
 
     public int m2648T1() {
         int Z5;
-        synchronized (this.f35030a0) {
-            Z5 = m2554Z5(this.f34982J1);
+        synchronized (this.f35033a0) {
+            Z5 = m2554Z5(this.f34985J1);
         }
         return Z5;
     }
@@ -4802,11 +4802,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2643T6(String str) {
-        if (C5070i.m24061i(str)) {
+        if (C5070i.m24062i(str)) {
             return false;
         }
-        synchronized (this.f35030a0) {
-            String[] strArr = this.f34985L0;
+        synchronized (this.f35033a0) {
+            String[] strArr = this.f34988L0;
             if (strArr != null) {
                 for (String str2 : strArr) {
                     if (str.equals(str2)) {
@@ -4830,17 +4830,17 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2639Ta() {
-        this.f35043d2 = false;
-        this.f34974F1 = false;
+        this.f35046d2 = false;
+        this.f34977F1 = false;
     }
 
     public final void m2638Tb(boolean z) {
-        if (this.f34970D1 == z) {
+        if (this.f34973D1 == z) {
             return;
         }
         if (!z || !m2704P6()) {
-            this.f34970D1 = z;
-            m2930B4().m4742U2(this.f35017W, z);
+            this.f34973D1 = z;
+            m2930B4().m4742U2(this.f35020W, z);
         }
     }
 
@@ -4849,11 +4849,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2636Td(TdApi.UpdateFileDownload updateFileDownload) {
-        this.f35056i0.m1917P1(updateFileDownload);
+        this.f35059i0.m1917P1(updateFileDownload);
     }
 
     public boolean m2633U1() {
-        return this.f35006S0;
+        return this.f35009S0;
     }
 
     public TdApi.Chat m2632U2(long j) {
@@ -4861,22 +4861,22 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (j == 0) {
             return null;
         }
-        synchronized (this.f35030a0) {
-            chat = this.f35034b0.get(Long.valueOf(j));
+        synchronized (this.f35033a0) {
+            chat = this.f35037b0.get(Long.valueOf(j));
         }
         return chat;
     }
 
     public String m2631U3(TdApi.Chat chat, boolean z, boolean z2) {
-        if (chat.f25367id == f34961y2 && ".".equals(chat.title)) {
-            return C4403w.m27869i1(R.string.EmojiSets);
+        if (chat.f25370id == f34964y2 && ".".equals(chat.title)) {
+            return C4403w.m27871i1(R.string.EmojiSets);
         }
-        long d4 = m2494d4(chat.f25367id);
+        long d4 = m2494d4(chat.f25370id);
         return d4 != 0 ? m2480e2().m1753C2(d4, z, z2) : chat.title;
     }
 
     public final void m2630U4() {
-        synchronized (this.f35026Z) {
+        synchronized (this.f35029Z) {
             m2615V4();
         }
     }
@@ -4884,82 +4884,82 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public C10944n m2629U5(TdApi.Chat chat, int i) {
         TdApi.User v2;
         int constructor;
-        if (chat == null || chat.f25367id == 0 || !C4779t2.m25664J3(i)) {
+        if (chat == null || chat.f25370id == 0 || !C4779t2.m25665J3(i)) {
             return null;
         }
-        TdApi.ChatMemberStatus K3 = m2787K3(chat.f25367id);
+        TdApi.ChatMemberStatus K3 = m2787K3(chat.f25370id);
         boolean z = true;
-        int i2 = (K3 == null || (K3.getConstructor() != 844723285 && (K3.getConstructor() != 1661432998 || !C4779t2.m25577X(((TdApi.ChatMemberStatusRestricted) K3).permissions, i)))) ? 0 : 1;
+        int i2 = (K3 == null || (K3.getConstructor() != 844723285 && (K3.getConstructor() != 1661432998 || !C4779t2.m25578X(((TdApi.ChatMemberStatusRestricted) K3).permissions, i)))) ? 0 : 1;
         if (K3 != null) {
             switch (K3.getConstructor()) {
                 case TdApi.ChatMemberStatusBanned.CONSTRUCTOR:
-                    return new C10944n(chat.f25367id, 2, ((TdApi.ChatMemberStatusBanned) K3).bannedUntilDate);
+                    return new C10944n(chat.f25370id, 2, ((TdApi.ChatMemberStatusBanned) K3).bannedUntilDate);
                 case TdApi.ChatMemberStatusCreator.CONSTRUCTOR:
                 case TdApi.ChatMemberStatusAdministrator.CONSTRUCTOR:
                     return null;
                 case TdApi.ChatMemberStatusMember.CONSTRUCTOR:
                     if (m2752M6(chat)) {
-                        return new C10944n(chat.f25367id, 3, 0);
+                        return new C10944n(chat.f25370id, 3, 0);
                     }
                     break;
                 case TdApi.ChatMemberStatusRestricted.CONSTRUCTOR:
-                    if (!C4779t2.m25577X(chat.permissions, i)) {
-                        return new C10944n(chat.f25367id, 0, 0);
+                    if (!C4779t2.m25578X(chat.permissions, i)) {
+                        return new C10944n(chat.f25370id, 0, 0);
                     }
                     TdApi.ChatMemberStatusRestricted chatMemberStatusRestricted = (TdApi.ChatMemberStatusRestricted) K3;
-                    if (!C4779t2.m25577X(chatMemberStatusRestricted.permissions, i)) {
-                        return new C10944n(chat.f25367id, 1, chatMemberStatusRestricted.restrictedUntilDate);
+                    if (!C4779t2.m25578X(chatMemberStatusRestricted.permissions, i)) {
+                        return new C10944n(chat.f25370id, 1, chatMemberStatusRestricted.restrictedUntilDate);
                     }
                     return null;
             }
         }
         int constructor2 = chat.type.getConstructor();
         if (constructor2 == 862366513) {
-            TdApi.SecretChat S1 = m2480e2().m1691S1(C7316a.m17047n(chat.f25367id));
+            TdApi.SecretChat S1 = m2480e2().m1691S1(C7316a.m17047n(chat.f25370id));
             if (S1 == null || S1.state.getConstructor() != -1611352087 || (v2 = m2480e2().m1583v2(S1.userId)) == null) {
-                return new C10944n(chat.f25367id, 3, 0);
+                return new C10944n(chat.f25370id, 3, 0);
             }
             int constructor3 = v2.type.getConstructor();
             if (constructor3 == -1807729372 || constructor3 == -724541123) {
-                return new C10944n(chat.f25367id, 3, 0);
+                return new C10944n(chat.f25370id, 3, 0);
             }
             return null;
         } else if (constructor2 == 1579049844) {
-            TdApi.User v22 = m2480e2().m1583v2(C7316a.m17044q(chat.f25367id));
+            TdApi.User v22 = m2480e2().m1583v2(C7316a.m17044q(chat.f25370id));
             boolean z2 = v22 == null;
             if (z2 || !((constructor = v22.type.getConstructor()) == -1807729372 || constructor == -724541123)) {
                 z = z2;
             }
             if (z) {
-                return new C10944n(chat.f25367id, 3, 0);
+                return new C10944n(chat.f25370id, 3, 0);
             }
             return null;
-        } else if (!C4779t2.m25577X(chat.permissions, i)) {
-            return new C10944n(chat.f25367id, i2 ^ 1, 0);
+        } else if (!C4779t2.m25578X(chat.permissions, i)) {
+            return new C10944n(chat.f25370id, i2 ^ 1, 0);
         } else {
             return null;
         }
     }
 
     public boolean m2628U6() {
-        return this.f35036b2;
+        return this.f35039b2;
     }
 
     public boolean m2625U9(TdApi.Message message) {
-        return (message == null || m2785K5(message.chatId, message.f25406id) == null) ? false : true;
+        return (message == null || m2785K5(message.chatId, message.f25409id) == null) ? false : true;
     }
 
     public int m2624Ua() {
         String Wa = m2594Wa();
-        if (C5070i.m24061i(Wa)) {
+        if (C5070i.m24062i(Wa)) {
             return 0;
         }
-        return C5070i.m24051s(Wa.substring(8)) - 50;
+        return C5070i.m24052s(Wa.substring(8)) - 50;
     }
 
     public final void m2623Ub(boolean z) {
-        if (this.f35061j2 != z) {
-            this.f35061j2 = z;
+        if (this.f35064j2 != z) {
+            this.f35064j2 = z;
             if (z) {
                 m2944A6();
             } else {
@@ -4973,11 +4973,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2621Ud(TdApi.UpdateFileDownloads updateFileDownloads) {
-        this.f35056i0.m1913Q1(updateFileDownloads);
+        this.f35059i0.m1913Q1(updateFileDownloads);
     }
 
     public boolean m2618V1() {
-        return this.f35009T0;
+        return this.f35012T0;
     }
 
     public void m2617V2(final long j, final AbstractC5913e<TdApi.Function> eVar, final AbstractC5918j<TdApi.Chat> jVar) {
@@ -4998,19 +4998,19 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2615V4() {
-        if (this.f34966B1 != 0) {
-            if (this.f35020X == null || this.f35102y1) {
-                Log.m14727e((int) Log.TAG_ACCOUNTS, "Cannot pause TDLib instance, because it is already paused. accountId:%d", Integer.valueOf(this.f35017W));
+        if (this.f34969B1 != 0) {
+            if (this.f35023X == null || this.f35105y1) {
+                Log.m14727e((int) Log.TAG_ACCOUNTS, "Cannot pause TDLib instance, because it is already paused. accountId:%d", Integer.valueOf(this.f35020W));
                 return;
             }
-            this.f34966B1 = 0L;
+            this.f34969B1 = 0L;
             if (!m2278qc()) {
-                Log.m14721i((int) Log.TAG_ACCOUNTS, "Cannot restart TDLib, because it is in use. referenceCount:%d, accountId:%d", Integer.valueOf(this.f35104z1.get()), Integer.valueOf(this.f35017W));
+                Log.m14721i((int) Log.TAG_ACCOUNTS, "Cannot restart TDLib, because it is in use. referenceCount:%d, accountId:%d", Integer.valueOf(this.f35107z1.get()), Integer.valueOf(this.f35020W));
                 return;
             }
-            Log.m14721i((int) Log.TAG_ACCOUNTS, "Pausing TDLib instance, because it is unused, accountId:%d", Integer.valueOf(this.f35017W));
-            this.f35102y1 = true;
-            this.f35020X.m2099x();
+            Log.m14721i((int) Log.TAG_ACCOUNTS, "Pausing TDLib instance, because it is unused, accountId:%d", Integer.valueOf(this.f35020W));
+            this.f35105y1 = true;
+            this.f35023X.m2099x();
         }
     }
 
@@ -5034,14 +5034,14 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 }
                 break;
         }
-        int i5 = U5.f35167b;
+        int i5 = U5.f35170b;
         if (i5 != 0) {
             if (i5 == 1) {
-                int i6 = U5.f35168c;
-                return i6 != 0 ? C4403w.m27865j1(i4, C4403w.m28001C1(i6, TimeUnit.SECONDS)) : C4403w.m27869i1(i3);
+                int i6 = U5.f35171c;
+                return i6 != 0 ? C4403w.m27867j1(i4, C4403w.m28003C1(i6, TimeUnit.SECONDS)) : C4403w.m27871i1(i3);
             } else if (i5 == 2) {
-                int i7 = U5.f35168c;
-                return i7 != 0 ? C4403w.m27865j1(R.string.ChatBannedUntil, C4403w.m28001C1(i7, TimeUnit.SECONDS)) : C4403w.m27869i1(R.string.ChatBanned);
+                int i7 = U5.f35171c;
+                return i7 != 0 ? C4403w.m27867j1(R.string.ChatBannedUntil, C4403w.m28003C1(i7, TimeUnit.SECONDS)) : C4403w.m27871i1(R.string.ChatBanned);
             } else if (i5 != 3) {
                 throw new UnsupportedOperationException();
             }
@@ -5049,7 +5049,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (U5.m2089b()) {
             i2 = R.string.UserDisabledMessages;
         }
-        return C4403w.m27869i1(i2);
+        return C4403w.m27871i1(i2);
     }
 
     public boolean m2613V6(TdApi.Message message) {
@@ -5057,12 +5057,12 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public Client.AbstractC7865g m2610V9() {
-        return this.f34993O;
+        return this.f34996O;
     }
 
     public String m2609Va() {
         String Wa = m2594Wa();
-        if (C5070i.m24061i(Wa)) {
+        if (C5070i.m24062i(Wa)) {
             return "";
         }
         StringBuilder sb2 = new StringBuilder(5);
@@ -5073,35 +5073,35 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2608Vb(boolean z) {
-        if (this.f35003R0 != z) {
-            this.f35003R0 = z;
-            m2270r4().m14783o(new TdApi.SetOption("ignore_sensitive_content_restrictions", new TdApi.OptionValueBoolean(z)), this.f34987M);
+        if (this.f35006R0 != z) {
+            this.f35006R0 = z;
+            m2270r4().m14783o(new TdApi.SetOption("ignore_sensitive_content_restrictions", new TdApi.OptionValueBoolean(z)), this.f34990M);
         }
     }
 
     public String m2607Vc() {
-        return this.f35057i1;
+        return this.f35060i1;
     }
 
     public final void m2606Vd(TdApi.UpdateFileGenerationStart updateFileGenerationStart) {
-        synchronized (this.f34995O1) {
-            C10942l remove = this.f34995O1.remove(updateFileGenerationStart.conversion);
+        synchronized (this.f34998O1) {
+            C10942l remove = this.f34998O1.remove(updateFileGenerationStart.conversion);
             if (remove != null) {
-                remove.f35162e = true;
-                remove.f35161d = updateFileGenerationStart.generationId;
-                remove.f35160c = updateFileGenerationStart.destinationPath;
-                this.f34998P1.put(Long.valueOf(updateFileGenerationStart.generationId), remove);
-                remove.f35158a.countDown();
+                remove.f35165e = true;
+                remove.f35164d = updateFileGenerationStart.generationId;
+                remove.f35163c = updateFileGenerationStart.destinationPath;
+                this.f35001P1.put(Long.valueOf(updateFileGenerationStart.generationId), remove);
+                remove.f35161a.countDown();
                 return;
             }
-            m2429h5().m23144E0(updateFileGenerationStart);
+            m2429h5().m23145E0(updateFileGenerationStart);
         }
     }
 
     public void m2603W1(Runnable runnable, boolean z) {
         TdApi.AuthorizationState authorizationState;
-        if (z || ((authorizationState = this.f34982J1) != null && authorizationState.getConstructor() == 154449270)) {
-            this.f35094u2.m18907a(runnable);
+        if (z || ((authorizationState = this.f34985J1) != null && authorizationState.getConstructor() == 154449270)) {
+            this.f35097u2.m18908a(runnable);
         } else {
             runnable.run();
         }
@@ -5125,7 +5125,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public Client.AbstractC7865g m2600W4() {
-        return this.f34996P;
+        return this.f34999P;
     }
 
     public CharSequence m2599W5(TdApi.Chat chat, TdApi.InputMessageContent inputMessageContent) {
@@ -5148,25 +5148,25 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2598W6(String str, boolean z) {
-        if (C5070i.m24061i(str)) {
+        if (C5070i.m24062i(str)) {
             return false;
         }
-        String G = C5070i.m24071G(str.toLowerCase());
+        String G = C5070i.m24072G(str.toLowerCase());
         int indexOf = G.indexOf(47);
         if (indexOf != -1) {
             G = G.substring(0, indexOf);
         }
-        if (!C5070i.m24061i(this.f35054h1) && C5070i.m24067c(G, C5070i.m24071G(this.f35054h1))) {
+        if (!C5070i.m24062i(this.f35057h1) && C5070i.m24068c(G, C5070i.m24072G(this.f35057h1))) {
             return true;
         }
-        for (String str2 : C7322f.f23232c) {
-            if (C5070i.m24067c(G, str2)) {
+        for (String str2 : C7322f.f23235c) {
+            if (C5070i.m24068c(G, str2)) {
                 return true;
             }
         }
         if (z) {
-            for (String str3 : C7322f.f23233d) {
-                if (C5070i.m24067c(G, str3)) {
+            for (String str3 : C7322f.f23236d) {
+                if (C5070i.m24068c(G, str3)) {
                     return true;
                 }
             }
@@ -5175,16 +5175,16 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2595W9(TdApi.Message message) {
-        return (message == null || message.sendingState == null || m2748Ma().m1519c(message.chatId, message.f25406id)) ? false : true;
+        return (message == null || message.sendingState == null || m2748Ma().m1519c(message.chatId, message.f25409id)) ? false : true;
     }
 
     public String m2594Wa() {
         TdApi.User Z9 = m2550Z9();
         String str = Z9 != null ? Z9.phoneNumber : null;
-        if (C5070i.m24061i(str)) {
-            str = this.f34989M1 + this.f34992N1;
+        if (C5070i.m24062i(str)) {
+            str = this.f34992M1 + this.f34995N1;
         }
-        if (C5070i.m24061i(str) || !str.startsWith("999661") || str.length() != 10) {
+        if (C5070i.m24062i(str) || !str.startsWith("999661") || str.length() != 10) {
             return null;
         }
         return str;
@@ -5209,21 +5209,21 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2591Wd(TdApi.UpdateFileGenerationStop updateFileGenerationStop) {
-        synchronized (this.f34995O1) {
-            C10942l remove = this.f34998P1.remove(Long.valueOf(updateFileGenerationStop.generationId));
+        synchronized (this.f34998O1) {
+            C10942l remove = this.f35001P1.remove(Long.valueOf(updateFileGenerationStop.generationId));
             if (remove != null) {
-                Runnable runnable = remove.f35163f;
+                Runnable runnable = remove.f35166f;
                 if (runnable != null) {
                     runnable.run();
                 }
                 return;
             }
-            m2429h5().m23142F0(updateFileGenerationStop);
+            m2429h5().m23143F0(updateFileGenerationStop);
         }
     }
 
     public void m2588X1(Runnable runnable) {
-        this.f35082q2.m18907a(runnable);
+        this.f35085q2.m18908a(runnable);
     }
 
     public int m2587X2(long j) {
@@ -5245,12 +5245,12 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         TdApi.ProfilePhoto profilePhoto;
         m2949A1().m1471g0(user);
         TdApi.ProfilePhoto profilePhoto2 = user != null ? user.profilePhoto : null;
-        if (profilePhoto2 != null || this.f35070m2 != null) {
-            if (profilePhoto2 == null || (profilePhoto = this.f35070m2) == null || profilePhoto2.f25414id != profilePhoto.f25414id || profilePhoto2.small.f25373id != profilePhoto.small.f25373id || profilePhoto2.big.f25373id != profilePhoto.big.f25373id) {
-                this.f35070m2 = profilePhoto2;
+        if (profilePhoto2 != null || this.f35073m2 != null) {
+            if (profilePhoto2 == null || (profilePhoto = this.f35073m2) == null || profilePhoto2.f25417id != profilePhoto.f25417id || profilePhoto2.small.f25376id != profilePhoto.small.f25376id || profilePhoto2.big.f25376id != profilePhoto.big.f25376id) {
+                this.f35073m2 = profilePhoto2;
                 if (profilePhoto2 != null) {
-                    m2270r4().m14783o(new TdApi.DownloadFile(profilePhoto2.small.f25373id, 4, 0, 0, true), m2764La(false));
-                    m2270r4().m14783o(new TdApi.DownloadFile(profilePhoto2.big.f25373id, 3, 0, 0, true), m2764La(true));
+                    m2270r4().m14783o(new TdApi.DownloadFile(profilePhoto2.small.f25376id, 4, 0, 0, true), m2764La(false));
+                    m2270r4().m14783o(new TdApi.DownloadFile(profilePhoto2.big.f25376id, 3, 0, 0, true), m2764La(true));
                 }
             }
         }
@@ -5294,7 +5294,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (j == 0) {
             j = C7321e.m16984R0(message);
         }
-        if (j == 0 || (v2 = m2480e2().m1583v2(j)) == null || C5070i.m24061i(v2.username)) {
+        if (j == 0 || (v2 = m2480e2().m1583v2(j)) == null || C5070i.m24062i(v2.username)) {
             return null;
         }
         return v2.username;
@@ -5305,13 +5305,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2578Xb(boolean z) {
-        synchronized (this.f35026Z) {
-            if (this.f35100x1 != z) {
-                this.f35100x1 = z;
-                if (!this.f35102y1) {
-                    int i = this.f35104z1.get();
+        synchronized (this.f35029Z) {
+            if (this.f35103x1 != z) {
+                this.f35103x1 = z;
+                if (!this.f35105y1) {
+                    int i = this.f35107z1.get();
                     if (i <= 0) {
-                        this.f35020X.m2099x();
+                        this.f35023X.m2099x();
                     } else {
                         throw new IllegalStateException("referenceCount == " + i);
                     }
@@ -5321,7 +5321,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2577Xc(final TdApi.Session session, final AbstractC5918j<TdApi.Error> jVar) {
-        m2270r4().m14783o(new TdApi.TerminateSession(session.f25420id), new Client.AbstractC7865g() {
+        m2270r4().m14783o(new TdApi.TerminateSession(session.f25423id), new Client.AbstractC7865g() {
             @Override
             public final void mo255t2(TdApi.Object object) {
                 C10930q6.this.m2941A9(jVar, session, object);
@@ -5330,11 +5330,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2576Xd(TdApi.UpdateFileRemovedFromDownloads updateFileRemovedFromDownloads) {
-        this.f35056i0.m1909R1(updateFileRemovedFromDownloads);
+        this.f35059i0.m1909R1(updateFileRemovedFromDownloads);
     }
 
     public void m2573Y1(Runnable runnable) {
-        this.f35079p2.m18907a(runnable);
+        this.f35082p2.m18908a(runnable);
     }
 
     public int m2572Y2(TdApi.Chat chat) {
@@ -5342,12 +5342,12 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             return -1;
         }
         if (chat.type.getConstructor() == -1472570774) {
-            TdApi.Supergroup Y3 = m2571Y3(chat.f25367id);
+            TdApi.Supergroup Y3 = m2571Y3(chat.f25370id);
             if (Y3 == null) {
                 return -1;
             }
-            boolean z = !C5070i.m24061i(Y3.username) || Y3.hasLinkedChat || Y3.hasLocation;
-            boolean s7 = m2251s7(chat.f25367id);
+            boolean z = !C5070i.m24062i(Y3.username) || Y3.hasLinkedChat || Y3.hasLocation;
+            boolean s7 = m2251s7(chat.f25370id);
             int constructor = Y3.status.getConstructor();
             if (constructor == -1653518666) {
                 return -2;
@@ -5375,8 +5375,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2570Y4(long j, long j2, TdApi.FormattedText formattedText) {
-        C4779t2.m25628O4(formattedText);
-        m2892Da(j, j2, formattedText, new TdApi.EditMessageCaption(j, j2, null, formattedText), this.f35013U1);
+        C4779t2.m25629O4(formattedText);
+        m2892Da(j, j2, formattedText, new TdApi.EditMessageCaption(j, j2, null, formattedText), this.f35016U1);
     }
 
     public void m2569Y5(boolean z, final AbstractC5918j<C10946p> jVar) {
@@ -5423,8 +5423,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2563Yb(final boolean z) {
-        if (this.f35036b2 != z) {
-            this.f35036b2 = z;
+        if (this.f35039b2 != z) {
+            this.f35039b2 = z;
             m2876Ea(new AbstractC5918j() {
                 @Override
                 public final void mo1330a(Object obj) {
@@ -5439,24 +5439,24 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2561Yd(TdApi.UpdateGroupCall updateGroupCall) {
-        this.f35056i0.m1902T1(updateGroupCall);
+        this.f35059i0.m1902T1(updateGroupCall);
     }
 
     public void m2558Z1(TdApi.Message message, Runnable runnable) {
         TdApi.MessageSendingState messageSendingState = message.sendingState;
-        if (messageSendingState == null || messageSendingState.getConstructor() != -1381803582 || m2748Ma().m1519c(message.chatId, message.f25406id)) {
+        if (messageSendingState == null || messageSendingState.getConstructor() != -1381803582 || m2748Ma().m1519c(message.chatId, message.f25409id)) {
             runnable.run();
             return;
         }
-        synchronized (this.f35030a0) {
-            if (this.f35016V1 == null) {
-                this.f35016V1 = new HashMap();
+        synchronized (this.f35033a0) {
+            if (this.f35019V1 == null) {
+                this.f35019V1 = new HashMap();
             }
-            String str = message.chatId + "_" + message.f25406id;
-            Queue<Runnable> queue = this.f35016V1.get(str);
+            String str = message.chatId + "_" + message.f25409id;
+            Queue<Runnable> queue = this.f35019V1.get(str);
             if (queue == null) {
                 queue = new ArrayDeque<>();
-                this.f35016V1.put(str, queue);
+                this.f35019V1.put(str, queue);
             }
             queue.add(runnable);
         }
@@ -5464,7 +5464,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public boolean m2557Z2(long j) {
         TdApi.Chat U2;
-        return (j == 0 || (U2 = m2632U2(j)) == null || C7317b.m17043a(U2, C7317b.f23225b) == null) ? false : true;
+        return (j == 0 || (U2 = m2632U2(j)) == null || C7317b.m17043a(U2, C7317b.f23228b) == null) ? false : true;
     }
 
     public TdApi.ChatType m2556Z3(long j) {
@@ -5495,7 +5495,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public void m2555Z4(final long j, final long j2, final TdApi.InputMessageText inputMessageText, TdApi.WebPage webPage, boolean z) {
         TdApi.WebPage webPage2 = inputMessageText.disableWebPagePreview ? null : webPage;
-        C4779t2.m25628O4(inputMessageText.text);
+        C4779t2.m25629O4(inputMessageText.text);
         final TdApi.MessageText messageText = new TdApi.MessageText(inputMessageText.text, webPage2);
         TdApi.TextEntity[] textEntityArr = inputMessageText.text.entities;
         if ((textEntityArr == null || textEntityArr.length <= 0) && z) {
@@ -5506,12 +5506,12 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 }
             });
         } else {
-            m2892Da(j, j2, messageText, new TdApi.EditMessageText(j, j2, null, inputMessageText), this.f35010T1);
+            m2892Da(j, j2, messageText, new TdApi.EditMessageText(j, j2, null, inputMessageText), this.f35013T1);
         }
     }
 
     public boolean m2553Z6() {
-        return this.f35032a2;
+        return this.f35035a2;
     }
 
     public TdApi.User m2550Z9() {
@@ -5523,14 +5523,14 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2548Zb(boolean z) {
-        if (this.f34984K1 != z) {
-            this.f34984K1 = z;
+        if (this.f34987K1 != z) {
+            this.f34987K1 = z;
             m2930B4().m4716b1().m1538q(this, z);
         }
     }
 
     public long m2547Zc() {
-        long j = this.f35051g1;
+        long j = this.f35054g1;
         if (j != 0) {
             return SystemClock.uptimeMillis() - j;
         }
@@ -5538,7 +5538,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2546Zd(TdApi.UpdateGroupCallParticipant updateGroupCallParticipant) {
-        this.f35056i0.m1896V1(updateGroupCallParticipant);
+        this.f35059i0.m1896V1(updateGroupCallParticipant);
     }
 
     @Override
@@ -5547,14 +5547,14 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2543a2(Runnable runnable) {
-        this.f35085r2.m18907a(runnable);
+        this.f35088r2.m18908a(runnable);
     }
 
     public boolean m2542a3(TdApi.Chat chat) {
         if (chat == null) {
             return false;
         }
-        boolean i3 = C4779t2.m25499i3(m2787K3(chat.f25367id), false);
+        boolean i3 = C4779t2.m25500i3(m2787K3(chat.f25370id), false);
         if (i3 || chat.type.getConstructor() == -1472570774) {
             return i3;
         }
@@ -5581,7 +5581,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public String m2540a5() {
-        return C4403w.m27865j1(R.string.email_metadata, "0.24.6.1506-arm64-v8a", this.f35039c1, C10536ab.m4764P0(), C10536ab.m4760Q0());
+        return C4403w.m27867j1(R.string.email_metadata, "0.24.6.1507-arm64-v8a", this.f35042c1, C10536ab.m4764P0(), C10536ab.m4760Q0());
     }
 
     public CharSequence m2539a6(TdApi.Chat chat) {
@@ -5589,7 +5589,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2538a7() {
-        return this.f34984K1;
+        return this.f34987K1;
     }
 
     public TdApi.UserFullInfo m2535aa() {
@@ -5611,7 +5611,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2533ac(TdApi.LanguagePackInfo languagePackInfo) {
-        return m2517bc(languagePackInfo.f25405id, true);
+        return m2517bc(languagePackInfo.f25408id, true);
     }
 
     public long m2532ad(long j, TimeUnit timeUnit) {
@@ -5620,15 +5620,15 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public final void m2531ae(TdApi.UpdateInstalledStickerSets updateInstalledStickerSets) {
         if (!updateInstalledStickerSets.isMasks) {
-            synchronized (this.f35030a0) {
-                this.f35093u1 = updateInstalledStickerSets.stickerSetIds.length;
+            synchronized (this.f35033a0) {
+                this.f35096u1 = updateInstalledStickerSets.stickerSetIds.length;
             }
         }
-        this.f35056i0.m1893W1(updateInstalledStickerSets);
+        this.f35059i0.m1893W1(updateInstalledStickerSets);
     }
 
     public void m2527b2(Runnable runnable) {
-        this.f35088s2.m18907a(runnable);
+        this.f35091s2.m18908a(runnable);
     }
 
     public C6246h m2526b3(long j) {
@@ -5646,7 +5646,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             return null;
         }
         C6246h hVar = new C6246h(this, chatPhotoInfo.small);
-        hVar.mo20767t0(C9903a.getDefaultAvatarCacheSize());
+        hVar.mo20768t0(C9903a.getDefaultAvatarCacheSize());
         return hVar;
     }
 
@@ -5659,7 +5659,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public double m2524b5() {
-        return this.f34973F0;
+        return this.f34976F0;
     }
 
     public final void m2523b6(final String str, final String[] strArr, final AbstractC5918j<Map<String, TdApi.LanguagePackString>> jVar) {
@@ -5673,8 +5673,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public boolean m2522b7() {
         boolean z;
-        synchronized (this.f35026Z) {
-            if (this.f35020X != null && !this.f35102y1) {
+        synchronized (this.f35029Z) {
+            if (this.f35023X != null && !this.f35105y1) {
                 z = false;
             }
             z = true;
@@ -5688,17 +5688,17 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public final void m2518bb() {
         m2350m4();
-        this.f35041d0.m2080h(this);
-        if (C4868i.m24726c2().m24663k1(32L) && !m2658S6()) {
-            this.f35044e0.m2080h(this);
+        this.f35044d0.m2080h(this);
+        if (C4868i.m24727c2().m24664k1(32L) && !m2658S6()) {
+            this.f35047e0.m2080h(this);
         }
     }
 
     public final boolean m2517bc(String str, boolean z) {
-        if (C5070i.m24067c(str, str)) {
+        if (C5070i.m24068c(str, str)) {
             return false;
         }
-        this.f35039c1 = str;
+        this.f35042c1 = str;
         if (!z) {
             return true;
         }
@@ -5708,11 +5708,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public void m2516bd(TdApi.ChatInviteLinkInfo chatInviteLinkInfo) {
         if (chatInviteLinkInfo.chatId != 0) {
-            synchronized (this.f35030a0) {
+            synchronized (this.f35033a0) {
                 if (!chatInviteLinkInfo.isPublic && chatInviteLinkInfo.accessibleFor != 0) {
-                    this.f35086s0.m23242g(chatInviteLinkInfo.chatId, SystemClock.elapsedRealtime() + TimeUnit.SECONDS.toMillis(chatInviteLinkInfo.accessibleFor));
+                    this.f35089s0.m23243g(chatInviteLinkInfo.chatId, SystemClock.elapsedRealtime() + TimeUnit.SECONDS.toMillis(chatInviteLinkInfo.accessibleFor));
                 }
-                this.f35086s0.m23246c(chatInviteLinkInfo.chatId);
+                this.f35089s0.m23247c(chatInviteLinkInfo.chatId);
             }
         }
     }
@@ -5729,17 +5729,17 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public int m2512c2() {
-        return this.f34967C0;
+        return this.f34970C0;
     }
 
     public int m2511c3(long j) {
         long j2 = 0;
         if (j == 0) {
-            return C4779t2.m25681H0(-1L, m2519ba());
+            return C4779t2.m25682H0(-1L, m2519ba());
         }
         switch (C7316a.m17057d(j)) {
             case TdApi.ChatTypeSupergroup.CONSTRUCTOR:
-                return C4779t2.m25681H0(-C7316a.m17045p(j), m2519ba());
+                return C4779t2.m25682H0(-C7316a.m17045p(j), m2519ba());
             case TdApi.ChatTypeSecret.CONSTRUCTOR:
                 int n = C7316a.m17047n(j);
                 TdApi.SecretChat S1 = n != 0 ? m2480e2().m1691S1(n) : null;
@@ -5749,7 +5749,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 }
                 return e2.m1575x2(j2);
             case TdApi.ChatTypeBasicGroup.CONSTRUCTOR:
-                return C4779t2.m25681H0(-C7316a.m17048m(j), m2519ba());
+                return C4779t2.m25682H0(-C7316a.m17048m(j), m2519ba());
             case TdApi.ChatTypePrivate.CONSTRUCTOR:
                 return m2480e2().m1575x2(C7316a.m17044q(j));
             default:
@@ -5763,24 +5763,24 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2509c5(AbstractC5917i iVar) {
-        synchronized (this.f35026Z) {
-            if (this.f34978H1 == null) {
-                if (this.f35020X == null || this.f35102y1 || this.f35014V.m4680k1()) {
-                    this.f34978H1 = null;
+        synchronized (this.f35029Z) {
+            if (this.f34981H1 == null) {
+                if (this.f35023X == null || this.f35105y1 || this.f35017V.m4680k1()) {
+                    this.f34981H1 = null;
                     iVar.mo1322a(m2493d5());
                     return;
                 }
-                this.f34978H1 = iVar;
-                this.f35020X.m2099x();
+                this.f34981H1 = iVar;
+                this.f35023X.m2099x();
             }
         }
     }
 
     public void m2508c6(final TdApi.LanguagePackInfo languagePackInfo, final String[] strArr, final AbstractC5918j<Map<String, TdApi.LanguagePackString>> jVar) {
-        if (C5070i.m24061i(languagePackInfo.baseLanguagePackId)) {
-            m2523b6(languagePackInfo.f25405id, strArr, jVar);
+        if (C5070i.m24062i(languagePackInfo.baseLanguagePackId)) {
+            m2523b6(languagePackInfo.f25408id, strArr, jVar);
         } else {
-            m2523b6(languagePackInfo.f25405id, strArr, new AbstractC5918j() {
+            m2523b6(languagePackInfo.f25408id, strArr, new AbstractC5918j() {
                 @Override
                 public final void mo1330a(Object obj) {
                     C10930q6.this.m2266r8(strArr, languagePackInfo, jVar, (Map) obj);
@@ -5794,7 +5794,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (j == 0 || (U2 = m2632U2(j)) == null) {
             return false;
         }
-        if (!C5070i.m24061i(m2446g4(U2))) {
+        if (!C5070i.m24062i(m2446g4(U2))) {
             return true;
         }
         TdApi.Supergroup Y3 = m2571Y3(j);
@@ -5814,12 +5814,12 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2502cc(boolean z) {
-        if (this.f34972E1 != z) {
-            this.f34972E1 = z;
+        if (this.f34975E1 != z) {
+            this.f34975E1 = z;
             if (z) {
-                this.f34974F1 = true;
+                this.f34977F1 = true;
             }
-            m2930B4().m4726Y2(this.f35017W, z);
+            m2930B4().m4726Y2(this.f35020W, z);
             m2302p4();
             if (z) {
                 m2440ga().m3070v1(true);
@@ -5838,11 +5838,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public final void m2500ce(Client client, boolean z) {
         if (z) {
-            this.f35039c1 = C4868i.m24726c2().m24751Z0().f25405id;
-            client.m14783o(new TdApi.SetOption("language_pack_database_path", new TdApi.OptionValueString(this.f35014V.m4739V1())), this.f34987M);
-            client.m14783o(new TdApi.SetOption("localization_target", new TdApi.OptionValueString("android_x")), this.f34987M);
+            this.f35042c1 = C4868i.m24727c2().m24752Z0().f25408id;
+            client.m14783o(new TdApi.SetOption("language_pack_database_path", new TdApi.OptionValueString(this.f35017V.m4739V1())), this.f34990M);
+            client.m14783o(new TdApi.SetOption("localization_target", new TdApi.OptionValueString("android_x")), this.f34990M);
         }
-        client.m14783o(new TdApi.SetOption("language_pack_id", new TdApi.OptionValueString(this.f35039c1)), this.f34987M);
+        client.m14783o(new TdApi.SetOption("language_pack_id", new TdApi.OptionValueString(this.f35042c1)), this.f34990M);
     }
 
     public void m2496d2(TdApi.MessageSender messageSender, boolean z, Client.AbstractC7865g gVar) {
@@ -5853,16 +5853,16 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (chat != null) {
             switch (chat.type.getConstructor()) {
                 case TdApi.ChatTypeSupergroup.CONSTRUCTOR:
-                    return C4779t2.m25681H0(-((TdApi.ChatTypeSupergroup) chat.type).supergroupId, m2519ba());
+                    return C4779t2.m25682H0(-((TdApi.ChatTypeSupergroup) chat.type).supergroupId, m2519ba());
                 case TdApi.ChatTypeSecret.CONSTRUCTOR:
                 case TdApi.ChatTypePrivate.CONSTRUCTOR:
                     long e4 = m2478e4(chat);
                     return m2379k7(e4) ? R.id.theme_color_avatarSavedMessages : m2480e2().m1575x2(e4);
                 case TdApi.ChatTypeBasicGroup.CONSTRUCTOR:
-                    return C4779t2.m25681H0(-((TdApi.ChatTypeBasicGroup) chat.type).basicGroupId, m2519ba());
+                    return C4779t2.m25682H0(-((TdApi.ChatTypeBasicGroup) chat.type).basicGroupId, m2519ba());
             }
         }
-        return C4779t2.m25681H0(-1L, 0L);
+        return C4779t2.m25682H0(-1L, 0L);
     }
 
     public long m2494d4(long j) {
@@ -5880,28 +5880,28 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final boolean m2493d5() {
-        File file = new File(this.f35037c.databaseDirectory, "db.sqlite-wal");
+        File file = new File(this.f35040c.databaseDirectory, "db.sqlite-wal");
         boolean z = !file.exists() || file.delete();
-        File file2 = new File(this.f35037c.databaseDirectory, "db.sqlite-shm");
+        File file2 = new File(this.f35040c.databaseDirectory, "db.sqlite-shm");
         boolean z2 = (!file2.exists() || file2.delete()) && z;
-        File file3 = new File(this.f35037c.databaseDirectory, "db.sqlite");
+        File file3 = new File(this.f35040c.databaseDirectory, "db.sqlite");
         boolean z3 = (!file3.exists() || file3.delete()) && z2;
         if (z3) {
-            this.f34980I1 = true;
+            this.f34983I1 = true;
         }
         boolean z4 = m2477e5() && z3;
         if (z4) {
-            Log.m14719i("Successfully deleted TDLib database, accountId:%d", Integer.valueOf(this.f35017W));
+            Log.m14719i("Successfully deleted TDLib database, accountId:%d", Integer.valueOf(this.f35020W));
         } else {
-            Log.m14724e("Failed to delete TDLib database, accountId:%d", Integer.valueOf(this.f35017W));
+            Log.m14724e("Failed to delete TDLib database, accountId:%d", Integer.valueOf(this.f35020W));
         }
         return z4;
     }
 
     public TdApi.SuggestedAction[] m2492d6() {
         TdApi.SuggestedAction[] suggestedActionArr;
-        synchronized (this.f35030a0) {
-            suggestedActionArr = (TdApi.SuggestedAction[]) this.f35064k2.toArray(new TdApi.SuggestedAction[0]);
+        synchronized (this.f35033a0) {
+            suggestedActionArr = (TdApi.SuggestedAction[]) this.f35067k2.toArray(new TdApi.SuggestedAction[0]);
         }
         return suggestedActionArr;
     }
@@ -5919,7 +5919,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public String m2488da() {
         TdApi.User Z9 = m2550Z9();
-        if (Z9 == null || C5070i.m24061i(Z9.username)) {
+        if (Z9 == null || C5070i.m24062i(Z9.username)) {
             return null;
         }
         return Z9.username;
@@ -5929,18 +5929,18 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         long j;
         if (m2278qc()) {
             long J5 = m2801J5();
-            long j2 = this.f34966B1;
+            long j2 = this.f34969B1;
             if (j2 == 0) {
-                Log.m14721i((int) Log.TAG_ACCOUNTS, "Scheduling TDLib restart, accountId:%d, timeout:%d", Integer.valueOf(this.f35017W), Long.valueOf(J5));
-                this.f34966B1 = SystemClock.uptimeMillis();
-                this.f34964A1 = J5;
+                Log.m14721i((int) Log.TAG_ACCOUNTS, "Scheduling TDLib restart, accountId:%d, timeout:%d", Integer.valueOf(this.f35020W), Long.valueOf(J5));
+                this.f34969B1 = SystemClock.uptimeMillis();
+                this.f34967A1 = J5;
                 j = 0;
             } else {
-                long j3 = this.f34964A1;
+                long j3 = this.f34967A1;
                 if (j3 != J5) {
-                    this.f34964A1 = J5;
+                    this.f34967A1 = J5;
                     long uptimeMillis = (j2 + J5) - SystemClock.uptimeMillis();
-                    Log.m14721i((int) Log.TAG_ACCOUNTS, "Rescheduling TDLib restart, accountId:%d, timeout:%d (%d->%d)", Integer.valueOf(this.f35017W), Long.valueOf(uptimeMillis), Long.valueOf(j3), Long.valueOf(J5));
+                    Log.m14721i((int) Log.TAG_ACCOUNTS, "Rescheduling TDLib restart, accountId:%d, timeout:%d (%d->%d)", Integer.valueOf(this.f35020W), Long.valueOf(uptimeMillis), Long.valueOf(j3), Long.valueOf(J5));
                     m2485dd().removeMessages(7);
                     J5 = uptimeMillis;
                     j = 0;
@@ -5953,9 +5953,9 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             } else {
                 m2615V4();
             }
-        } else if (this.f34966B1 != 0) {
-            this.f34966B1 = 0L;
-            Log.m14721i((int) Log.TAG_ACCOUNTS, "Canceling TDLib restart, accountId:%d, referenceCount:%d, keepAlive:%b", Integer.valueOf(this.f35017W), Integer.valueOf(this.f35104z1.get()), Boolean.valueOf(m2949A1().m1499L()));
+        } else if (this.f34969B1 != 0) {
+            this.f34969B1 = 0L;
+            Log.m14721i((int) Log.TAG_ACCOUNTS, "Canceling TDLib restart, accountId:%d, referenceCount:%d, keepAlive:%b", Integer.valueOf(this.f35020W), Integer.valueOf(this.f35107z1.get()), Boolean.valueOf(m2949A1().m1499L()));
             m2485dd().removeMessages(7);
         }
     }
@@ -5971,25 +5971,25 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public HandlerC10770jj m2485dd() {
-        if (this.f35033b == null) {
-            synchronized (this.f35029a) {
-                if (this.f35033b == null) {
+        if (this.f35036b == null) {
+            synchronized (this.f35032a) {
+                if (this.f35036b == null) {
                     long uptimeMillis = SystemClock.uptimeMillis();
-                    this.f35033b = new HandlerC10770jj(this);
+                    this.f35036b = new HandlerC10770jj(this);
                     Log.m14721i((int) Log.TAG_ACCOUNTS, "Created UI handler in %dms", Long.valueOf(SystemClock.uptimeMillis() - uptimeMillis));
                 }
             }
         }
-        return this.f35033b;
+        return this.f35036b;
     }
 
     public final void m2484de(TdApi.UpdateMessageLiveLocationViewed updateMessageLiveLocationViewed) {
-        this.f35056i0.m1852h2(updateMessageLiveLocationViewed);
-        this.f35014V.m4735W1().m4356t();
+        this.f35059i0.m1852h2(updateMessageLiveLocationViewed);
+        this.f35017V.m4735W1().m4356t();
     }
 
     public C11059v7 m2480e2() {
-        return this.f35053h0;
+        return this.f35056h0;
     }
 
     public boolean m2479e3(long j) {
@@ -6013,25 +6013,25 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         loop0: while (true) {
             z = true;
             for (String str : C10536ab.m4820B0(false)) {
-                File file = new File(this.f35037c.filesDirectory, str);
+                File file = new File(this.f35040c.filesDirectory, str);
                 if (file.exists()) {
-                    if (!C5068g.m24101b(file, true) || !z) {
+                    if (!C5068g.m24102b(file, true) || !z) {
                         z = false;
                     }
                 }
             }
         }
         for (String str2 : C10536ab.m4820B0(true)) {
-            File file2 = new File(this.f35037c.databaseDirectory, str2);
+            File file2 = new File(this.f35040c.databaseDirectory, str2);
             if (file2.exists()) {
-                z = C5068g.m24101b(file2, true) && z;
+                z = C5068g.m24102b(file2, true) && z;
             }
         }
         return z;
     }
 
     public void m2476e6(final AbstractC5919k kVar) {
-        if (this.f35014V.m4680k1() || m2658S6()) {
+        if (this.f35017V.m4680k1() || m2658S6()) {
             kVar.mo3250a(2);
             return;
         }
@@ -6041,7 +6041,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         } else if (ba2 == 7736885) {
             kVar.mo3250a(4);
         } else {
-            m2602W2(f34958v2, new AbstractC5918j() {
+            m2602W2(f34961v2, new AbstractC5918j() {
                 @Override
                 public final void mo1330a(Object obj) {
                     C10930q6.this.m2218u8(kVar, (TdApi.Chat) obj);
@@ -6051,18 +6051,18 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2475e7(long j) {
-        long j2 = this.f35066l1;
+        long j2 = this.f35069l1;
         return (j2 != 0 && j2 == j) || j == C7316a.m17058c(1271266957L);
     }
 
     public TdApi.NetworkType m2472ea() {
-        return this.f35028Z1;
+        return this.f35031Z1;
     }
 
     public final void m2471eb() {
-        if (!this.f35076o2) {
-            SyncHelper.m14201b(C1379j0.m37309q(), this.f35017W);
-            this.f35076o2 = true;
+        if (!this.f35079o2) {
+            SyncHelper.m14200b(C1379j0.m37312q(), this.f35020W);
+            this.f35079o2 = true;
         }
     }
 
@@ -6093,9 +6093,9 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2468ee(TdApi.UpdateMessageContent updateMessageContent) {
-        synchronized (this.f35030a0) {
-            if (!C10859mj.m2997b(updateMessageContent.chatId, this.f35034b0.get(Long.valueOf(updateMessageContent.chatId)), updateMessageContent)) {
-                this.f35056i0.m1890X1(updateMessageContent);
+        synchronized (this.f35033a0) {
+            if (!C10859mj.m2997b(updateMessageContent.chatId, this.f35037b0.get(Long.valueOf(updateMessageContent.chatId)), updateMessageContent)) {
+                this.f35059i0.m1890X1(updateMessageContent);
                 int constructor = updateMessageContent.newContent.getConstructor();
                 if (constructor == -662130099) {
                     m2781K9().m1952G2(((TdApi.MessagePoll) updateMessageContent.newContent).poll);
@@ -6123,7 +6123,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         switch (C7316a.m17057d(j)) {
             case TdApi.ChatTypeSupergroup.CONSTRUCTOR:
                 TdApi.Supergroup h2 = m2480e2().m1638h2(C7316a.m17045p(j));
-                if (h2 == null || C5070i.m24061i(h2.username)) {
+                if (h2 == null || C5070i.m24062i(h2.username)) {
                     return null;
                 }
                 return h2.username;
@@ -6145,7 +6145,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public void m2461f5(long j, String str, TdApi.SearchMessagesFilter searchMessagesFilter, AbstractC5918j<List<TdApi.Message>> jVar) {
         TdApi.Function function;
         ArrayList arrayList = new ArrayList();
-        boolean z = !C5070i.m24061i(str) || searchMessagesFilter != null;
+        boolean z = !C5070i.m24062i(str) || searchMessagesFilter != null;
         if (z) {
             function = new TdApi.SearchChatMessages(j, str, null, 0L, 0, 100, searchMessagesFilter, 0L);
         } else {
@@ -6157,8 +6157,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public int m2460f6(TdApi.ChatList chatList) {
         int i;
-        synchronized (this.f35030a0) {
-            i = m2189w5(chatList).f33873a;
+        synchronized (this.f35033a0) {
+            i = m2189w5(chatList).f33876a;
         }
         return i;
     }
@@ -6171,17 +6171,17 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (messageForwardInfo2 != null) {
             str = messageForwardInfo2.publicServiceAnnouncementType;
         }
-        return C7321e.m16975W(message.senderId, message2.senderId) && C5070i.m24067c(str2, str);
+        return C7321e.m16975W(message.senderId, message2.senderId) && C5070i.m24068c(str2, str);
     }
 
     public final C10941k m2456fa() {
         Object[] objArr = new Object[4];
-        objArr[0] = Boolean.valueOf(this.f35020X != null);
-        objArr[1] = Integer.valueOf(this.f35017W);
+        objArr[0] = Boolean.valueOf(this.f35023X != null);
+        objArr[1] = Integer.valueOf(this.f35020W);
         objArr[2] = Boolean.valueOf(m2658S6());
-        objArr[3] = Boolean.valueOf(this.f35102y1);
+        objArr[3] = Boolean.valueOf(this.f35105y1);
         Log.m14719i("Creating TDLib client, hasInstance:%b, accountId:%d, debug:%b, wasPaused:%b", objArr);
-        this.f35102y1 = false;
+        this.f35105y1 = false;
         return new C10941k(this);
     }
 
@@ -6195,8 +6195,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2454fc(boolean z) {
-        if (this.f35073n2 != z) {
-            this.f35073n2 = z;
+        if (this.f35076n2 != z) {
+            this.f35076n2 = z;
             if (z) {
                 m2471eb();
             } else {
@@ -6206,19 +6206,19 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public String m2453fd() {
-        return this.f35017W + "." + this.f35089t0;
+        return this.f35020W + "." + this.f35092t0;
     }
 
     public final void m2452fe(TdApi.UpdateMessageContentOpened updateMessageContentOpened) {
-        this.f35056i0.m1884Z1(updateMessageContentOpened);
+        this.f35059i0.m1884Z1(updateMessageContentOpened);
     }
 
     public long m2448g2() {
-        return this.f35060j1;
+        return this.f35063j1;
     }
 
     public boolean m2447g3(TdApi.Chat chat) {
-        return chat != null && m2463f3(chat.f25367id);
+        return chat != null && m2463f3(chat.f25370id);
     }
 
     public String m2446g4(TdApi.Chat chat) {
@@ -6228,7 +6228,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         switch (chat.type.getConstructor()) {
             case TdApi.ChatTypeSupergroup.CONSTRUCTOR:
                 TdApi.Supergroup h2 = m2480e2().m1638h2(((TdApi.ChatTypeSupergroup) chat.type).supergroupId);
-                if (h2 == null || C5070i.m24061i(h2.username)) {
+                if (h2 == null || C5070i.m24062i(h2.username)) {
                     return null;
                 }
                 return h2.username;
@@ -6243,7 +6243,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public <T extends C4868i.AbstractC4872d> void m2445g5(final AbstractC5918j<List<T>> jVar, final String str, final AbstractC5913e<T> eVar, final AbstractC5913e<T> eVar2, final AbstractC5107c1<T, TdApi.Message> c1Var) {
-        m2238t4().f35157c.m4264j(new AbstractC5918j() {
+        m2238t4().f35160c.m4264j(new AbstractC5918j() {
             @Override
             public final void mo1330a(Object obj) {
                 C10930q6.this.m2582X7(eVar, c1Var, eVar2, jVar, (List) obj);
@@ -6259,8 +6259,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public C11164z6 m2444g6() {
-        this.f35078p1.m1326d(this);
-        return this.f35078p1;
+        this.f35081p1.m1326d(this);
+        return this.f35081p1;
     }
 
     public boolean m2443g7(long j) {
@@ -6268,11 +6268,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public C10827lb m2440ga() {
-        return this.f35077p0;
+        return this.f35080p0;
     }
 
     public int m2439gb(TdApi.NotificationSettingsScope notificationSettingsScope) {
-        TdApi.ScopeNotificationSettings M0 = this.f35077p0.m3195M0(notificationSettingsScope);
+        TdApi.ScopeNotificationSettings M0 = this.f35080p0.m3195M0(notificationSettingsScope);
         if (M0 != null) {
             return M0.muteFor;
         }
@@ -6280,7 +6280,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2438gc(final TdApi.NetworkType networkType) {
-        this.f35028Z1 = networkType;
+        this.f35031Z1 = networkType;
         m2876Ea(new AbstractC5918j() {
             @Override
             public final void mo1330a(Object obj) {
@@ -6291,15 +6291,15 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public String m2437gd(long j) {
-        return this.f35017W + "." + this.f35089t0 + "." + j;
+        return this.f35020W + "." + this.f35092t0 + "." + j;
     }
 
     public final void m2436ge(TdApi.UpdateMessageEdited updateMessageEdited) {
-        this.f35056i0.m1876b2(updateMessageEdited);
+        this.f35059i0.m1876b2(updateMessageEdited);
     }
 
     public long m2432h2() {
-        return this.f35063k1;
+        return this.f35066k1;
     }
 
     public boolean m2431h3(long j) {
@@ -6315,12 +6315,12 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (constructor != -1472570774) {
             return (constructor == 862366513 || constructor == 1579049844) && (b4 = m2525b4(chat)) != null && b4.isVerified;
         }
-        TdApi.Supergroup h2 = m2480e2().m1638h2(C7316a.m17045p(chat.f25367id));
+        TdApi.Supergroup h2 = m2480e2().m1638h2(C7316a.m17045p(chat.f25370id));
         return h2 != null && h2.isVerified;
     }
 
     public C5365w m2429h5() {
-        return this.f35080q0;
+        return this.f35083q0;
     }
 
     public int m2428h6() {
@@ -6328,12 +6328,12 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2427h7(TdApi.Chat chat) {
-        return chat != null && m2443g7(chat.f25367id);
+        return chat != null && m2443g7(chat.f25370id);
     }
 
     public final void m2424ha(long j, long j2) {
-        synchronized (this.f35030a0) {
-            Map<String, Queue<Runnable>> map = this.f35016V1;
+        synchronized (this.f35033a0) {
+            Map<String, Queue<Runnable>> map = this.f35019V1;
             if (map != null) {
                 Queue<Runnable> remove = map.remove(j + "_" + j2);
                 if (remove != null) {
@@ -6346,13 +6346,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public TdApi.ScopeNotificationSettings m2423hb(long j) {
-        return this.f35077p0.m3203K0(j);
+        return this.f35080p0.m3203K0(j);
     }
 
     public void m2422hc(final boolean z) {
-        if (this.f35032a2 != z) {
-            this.f35032a2 = z;
-            Log.m14719i("SetOnline accountId:%d -> %b", Integer.valueOf(this.f35017W), Boolean.valueOf(z));
+        if (this.f35035a2 != z) {
+            this.f35035a2 = z;
+            Log.m14719i("SetOnline accountId:%d -> %b", Integer.valueOf(this.f35020W), Boolean.valueOf(z));
             m2876Ea(new AbstractC5918j() {
                 @Override
                 public final void mo1330a(Object obj) {
@@ -6363,11 +6363,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2421hd(TdApi.UpdateAnimatedEmojiMessageClicked updateAnimatedEmojiMessageClicked) {
-        this.f35056i0.m1978A0(updateAnimatedEmojiMessageClicked);
+        this.f35059i0.m1978A0(updateAnimatedEmojiMessageClicked);
     }
 
     public final void m2420he(TdApi.UpdateMessageInteractionInfo updateMessageInteractionInfo) {
-        this.f35056i0.m1868d2(updateMessageInteractionInfo);
+        this.f35059i0.m1868d2(updateMessageInteractionInfo);
     }
 
     public long m2416i2(TdApi.Message message) {
@@ -6381,9 +6381,9 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public List<TdApi.Chat> m2414i4(long[] jArr) {
         ArrayList arrayList = new ArrayList(jArr.length);
-        synchronized (this.f35030a0) {
+        synchronized (this.f35033a0) {
             for (long j : jArr) {
-                TdApi.Chat chat = this.f35034b0.get(Long.valueOf(j));
+                TdApi.Chat chat = this.f35037b0.get(Long.valueOf(j));
                 if (!C10859mj.m2998a(j, chat)) {
                     arrayList.add(chat);
                 }
@@ -6393,16 +6393,16 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public C10756j9 m2413i5() {
-        return this.f35059j0;
+        return this.f35062j0;
     }
 
     @Override
     public void mo2412i6(long j, long j2) {
-        if (C5063c.m24143c(j, 32L) != C5063c.m24143c(j2, 32L) && !m2658S6()) {
-            if (!C5063c.m24143c(j, 32L) || this.f35044e0.m2082f()) {
+        if (C5063c.m24144c(j, 32L) != C5063c.m24144c(j2, 32L) && !m2658S6()) {
+            if (!C5063c.m24144c(j, 32L) || this.f35047e0.m2082f()) {
                 m2781K9().m1971C(2);
             } else {
-                this.f35044e0.m2080h(this);
+                this.f35047e0.m2080h(this);
             }
         }
     }
@@ -6412,18 +6412,18 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public TdApi.Chat m2408ia(TdApi.Object object) {
-        return m2632U2(((TdApi.Chat) object).f25367id);
+        return m2632U2(((TdApi.Chat) object).f25370id);
     }
 
     public TdApi.ScopeNotificationSettings m2407ib(TdApi.Chat chat) {
-        return this.f35077p0.m3199L0(chat);
+        return this.f35080p0.m3199L0(chat);
     }
 
     public void m2406ic(TdApi.Chat chat, C10940j jVar) {
         if (chat == null) {
             return;
         }
-        if (jVar == null || !C4862d.m24931z(jVar.f35141a)) {
+        if (jVar == null || !C4862d.m24932z(jVar.f35144a)) {
             m2843Gb(chat, null);
         } else {
             m2843Gb(chat, jVar.toString());
@@ -6434,7 +6434,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2404ie(TdApi.UpdateMessageIsPinned updateMessageIsPinned) {
-        this.f35056i0.m1860f2(updateMessageIsPinned);
+        this.f35059i0.m1860f2(updateMessageIsPinned);
     }
 
     public boolean m2400j2(TdApi.Chat chat) {
@@ -6457,13 +6457,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             switch (C7316a.m17057d(j)) {
                 case TdApi.ChatTypeSupergroup.CONSTRUCTOR:
                 case TdApi.ChatTypeBasicGroup.CONSTRUCTOR:
-                    return C4779t2.m25722B1(m2691Q3(j));
+                    return C4779t2.m25723B1(m2691Q3(j));
                 case TdApi.ChatTypeSecret.CONSTRUCTOR:
                 case TdApi.ChatTypePrivate.CONSTRUCTOR:
-                    return C4779t2.m25701E1(m2541a4(m2494d4(j)));
+                    return C4779t2.m25702E1(m2541a4(m2494d4(j)));
             }
         }
-        return C4779t2.m25729A1();
+        return C4779t2.m25730A1();
     }
 
     public boolean m2398j4(boolean z, boolean z2) {
@@ -6472,13 +6472,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (!(T1 == 2 || T1 == 1)) {
             return false;
         }
-        String str = this.f35017W + "_app_version";
+        String str = this.f35020W + "_app_version";
         if (T1 == 1 || z) {
-            C4868i.m24726c2().m24581u3(str, 1506);
+            C4868i.m24727c2().m24582u3(str, 1507);
             return z;
         }
-        int V0 = !z2 ? C4868i.m24726c2().m24779V0(str, 0) : 0;
-        if (V0 != 1506) {
+        int V0 = !z2 ? C4868i.m24727c2().m24780V0(str, 0) : 0;
+        if (V0 != 1507) {
             final ArrayList arrayList2 = new ArrayList();
             ArrayList arrayList3 = new ArrayList();
             if (m2286q4(V0, 906, z2)) {
@@ -6513,7 +6513,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 m2896D6(1);
                 ArrayList<TdApi.Function> arrayList4 = arrayList;
                 arrayList4.add(new TdApi.CreatePrivateChat(777000L, false));
-                long j = this.f35069m1;
+                long j = this.f35072m1;
                 if (!(j == 0 || j == 777000)) {
                     arrayList4.add(new TdApi.GetChat(j));
                 }
@@ -6528,7 +6528,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                     m2270r4().m14783o(function, n6Var);
                 }
             }
-            C4868i.m24726c2().m24581u3(str, 1506);
+            C4868i.m24727c2().m24582u3(str, 1507);
         }
         return true;
     }
@@ -6539,7 +6539,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public String m2396j6() {
-        return this.f35031a1;
+        return this.f35034a1;
     }
 
     public boolean m2395j7(TdApi.MessageSender messageSender) {
@@ -6547,11 +6547,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public Client.AbstractC7865g m2392ja() {
-        return this.f34987M;
+        return this.f34990M;
     }
 
     public TdApi.ScopeNotificationSettings m2391jb(TdApi.NotificationSettingsScope notificationSettingsScope) {
-        return this.f35077p0.m3195M0(notificationSettingsScope);
+        return this.f35080p0.m3195M0(notificationSettingsScope);
     }
 
     public void m2390jc(int i, String str, int i2, TdApi.ProxyType proxyType) {
@@ -6561,7 +6561,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         } else {
             function = new TdApi.DisableProxy();
         }
-        m2270r4().m14783o(function, C11032u2.f35401a);
+        m2270r4().m14783o(function, C11032u2.f35404a);
     }
 
     public final void m2389jd(p350yd.C10930q6.C10941k r12, org.drinkless.p210td.libcore.telegram.TdApi.AuthorizationState r13) {
@@ -6569,8 +6569,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2388je(TdApi.UpdateMessageMentionRead updateMessageMentionRead) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateMessageMentionRead.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateMessageMentionRead.chatId));
             if (!C10859mj.m2997b(updateMessageMentionRead.chatId, chat, updateMessageMentionRead)) {
                 int i = chat.unreadMentionCount;
                 boolean z = true;
@@ -6581,7 +6581,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                     z = false;
                 }
                 chat.unreadMentionCount = i2;
-                this.f35056i0.m1840k2(updateMessageMentionRead, z, z3);
+                this.f35059i0.m1840k2(updateMessageMentionRead, z, z3);
             }
         }
     }
@@ -6595,13 +6595,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             switch (chat.type.getConstructor()) {
                 case TdApi.ChatTypeSupergroup.CONSTRUCTOR:
                 case TdApi.ChatTypeBasicGroup.CONSTRUCTOR:
-                    return C4779t2.m25722B1(m2661S3(chat));
+                    return C4779t2.m25723B1(m2661S3(chat));
                 case TdApi.ChatTypeSecret.CONSTRUCTOR:
                 case TdApi.ChatTypePrivate.CONSTRUCTOR:
-                    return C4779t2.m25701E1(m2525b4(chat));
+                    return C4779t2.m25702E1(m2525b4(chat));
             }
         }
-        return C4779t2.m25729A1();
+        return C4779t2.m25730A1();
     }
 
     public void m2382k4() {
@@ -6613,14 +6613,14 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         String[] strArr;
         char c;
         int i2;
-        if (!C4868i.m24726c2().m24663k1(32L)) {
+        if (!C4868i.m24727c2().m24664k1(32L)) {
             return null;
         }
-        TdApi.StickerSet stickerSet = this.f35044e0.f35183b;
+        TdApi.StickerSet stickerSet = this.f35047e0.f35186b;
         if (stickerSet != null) {
-            String D0 = C4403w.m27998D0();
-            String Z = C4403w.m27911Z();
-            String T = C5078d.m24013T(i);
+            String D0 = C4403w.m28000D0();
+            String Z = C4403w.m27913Z();
+            String T = C5078d.m24014T(i);
             TdApi.Sticker sticker = null;
             int i3 = 0;
             for (TdApi.Sticker sticker2 : stickerSet.stickers) {
@@ -6661,25 +6661,25 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 return sticker;
             }
         }
-        TdApi.Sticker d = this.f35044e0.m2084d(i);
+        TdApi.Sticker d = this.f35047e0.m2084d(i);
         if (d != null) {
             return d;
         }
         if (i != 1) {
             return null;
         }
-        TdApi.Sticker e = this.f35044e0.m2083e(C4403w.m27998D0());
+        TdApi.Sticker e = this.f35047e0.m2083e(C4403w.m28000D0());
         if (e != null) {
             return e;
         }
-        TdApi.Sticker e2 = this.f35044e0.m2083e(C4403w.m27911Z());
-        return e2 != null ? e2 : this.f35044e0.m2083e(C4779t2.f16222G.f16283a);
+        TdApi.Sticker e2 = this.f35047e0.m2083e(C4403w.m27913Z());
+        return e2 != null ? e2 : this.f35047e0.m2083e(C4779t2.f16222G.f16283a);
     }
 
     public String m2380k6(String str) {
         Uri parse;
         List<String> pathSegments;
-        if (C5070i.m24061i(str)) {
+        if (C5070i.m24062i(str)) {
             return null;
         }
         try {
@@ -6687,12 +6687,12 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         } catch (Throwable unused) {
         }
         if (!"tg".equals(parse.getScheme())) {
-            if (C5070i.m24061i(parse.getScheme())) {
+            if (C5070i.m24062i(parse.getScheme())) {
                 parse = Uri.parse("http://" + str);
             }
             if (m2598W6(parse.getHost(), false) && (pathSegments = parse.getPathSegments()) != null && pathSegments.size() == 2 && "bg".equalsIgnoreCase(pathSegments.get(0))) {
                 String query = parse.getQuery();
-                if (C5070i.m24061i(query)) {
+                if (C5070i.m24062i(query)) {
                     return pathSegments.get(1);
                 }
                 return pathSegments.get(1) + "?" + query;
@@ -6702,22 +6702,22 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             return null;
         } else {
             String queryParameter = parse.getQueryParameter("slug");
-            if (C5070i.m24061i(queryParameter)) {
+            if (C5070i.m24062i(queryParameter)) {
                 return parse.getQueryParameter("color");
             }
             String queryParameter2 = parse.getQueryParameter("bg_color");
             String queryParameter3 = parse.getQueryParameter("intensity");
-            if (C5070i.m24061i(queryParameter2) && C5070i.m24061i(queryParameter3)) {
+            if (C5070i.m24062i(queryParameter2) && C5070i.m24062i(queryParameter3)) {
                 return queryParameter;
             }
             StringBuilder sb2 = new StringBuilder(queryParameter);
             sb2.append("?");
-            if (!C5070i.m24061i(queryParameter2)) {
+            if (!C5070i.m24062i(queryParameter2)) {
                 sb2.append("bg_color=");
                 sb2.append(queryParameter2);
             }
-            if (!C5070i.m24061i(queryParameter3)) {
-                if (!C5070i.m24061i(queryParameter2)) {
+            if (!C5070i.m24062i(queryParameter3)) {
+                if (!C5070i.m24062i(queryParameter2)) {
                     sb2.append("&");
                 }
                 sb2.append("intensity=");
@@ -6763,29 +6763,29 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2373kd(TdApi.UpdateCall updateCall) {
-        if (C4779t2.m25686G2(updateCall.call)) {
-            C6038h<TdApi.Call> hVar = this.f35058i2;
+        if (C4779t2.m25687G2(updateCall.call)) {
+            C6038h<TdApi.Call> hVar = this.f35061i2;
             TdApi.Call call = updateCall.call;
-            hVar.m21466j(call.f25364id, call);
+            hVar.m21467j(call.f25367id, call);
         } else {
-            this.f35058i2.m21465k(updateCall.call.f25364id);
+            this.f35061i2.m21466k(updateCall.call.f25367id);
         }
-        m2623Ub(!this.f35058i2.m21468h());
+        m2623Ub(!this.f35061i2.m21469h());
         m2485dd().sendMessage(m2485dd().obtainMessage(2, updateCall));
-        this.f35056i0.m1954G0(updateCall);
+        this.f35059i0.m1954G0(updateCall);
     }
 
     public final void m2372ke(TdApi.UpdateMessageSendFailed updateMessageSendFailed) {
-        C1379j0.m37302t0(new TdApi.Error(updateMessageSendFailed.errorCode, updateMessageSendFailed.errorMessage));
-        synchronized (this.f35030a0) {
-            C4868i c2 = C4868i.m24726c2();
-            int i = this.f35017W;
+        C1379j0.m37305t0(new TdApi.Error(updateMessageSendFailed.errorCode, updateMessageSendFailed.errorMessage));
+        synchronized (this.f35033a0) {
+            C4868i c2 = C4868i.m24727c2();
+            int i = this.f35020W;
             TdApi.Message message = updateMessageSendFailed.message;
-            c2.m24650l6(i, message.chatId, updateMessageSendFailed.oldMessageId, message.f25406id);
+            c2.m24651l6(i, message.chatId, updateMessageSendFailed.oldMessageId, message.f25409id);
         }
-        this.f35056i0.m1820p2(updateMessageSendFailed);
-        this.f35068m0.m1516f(updateMessageSendFailed.message.chatId, updateMessageSendFailed.oldMessageId);
-        this.f35014V.m4716b1().m1535t(this, updateMessageSendFailed);
+        this.f35059i0.m1820p2(updateMessageSendFailed);
+        this.f35071m0.m1516f(updateMessageSendFailed.message.chatId, updateMessageSendFailed.oldMessageId);
+        this.f35017V.m4716b1().m1535t(this, updateMessageSendFailed);
         m2805J1(updateMessageSendFailed.message.chatId, updateMessageSendFailed.oldMessageId, false);
     }
 
@@ -6800,7 +6800,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         for (TdApi.ChatPosition chatPosition : chatPositionArr) {
             int constructor = chatPosition.list.getConstructor();
             if (constructor == -400991316) {
-                return !m2443g7(chat.f25367id) && !m2363l7(chat.f25367id);
+                return !m2443g7(chat.f25370id) && !m2363l7(chat.f25370id);
             }
             if (constructor == 362770115) {
                 return true;
@@ -6811,7 +6811,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public C10684g8 m2367l3(TdApi.ChatList chatList) {
         C10684g8 m3;
-        synchronized (this.f35030a0) {
+        synchronized (this.f35033a0) {
             m3 = m2351m3(chatList);
         }
         return m3;
@@ -6820,7 +6820,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public final void m2366l4(Client client, boolean z) {
         int Y0 = m2930B4().m4728Y0();
         String S5 = m2659S5();
-        if (!C5070i.m24061i(S5) && (Y0 == 0 || Y0 == 2)) {
+        if (!C5070i.m24062i(S5) && (Y0 == 0 || Y0 == 2)) {
             Y0 = 3;
         }
         if (Y0 != 0) {
@@ -6828,7 +6828,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             ArrayList arrayList = new ArrayList();
             if (Y0 == 1) {
                 arrayList.add(new TdApi.JsonObjectMember("device_token", new TdApi.JsonValueString("FIREBASE_ERROR")));
-                if (!C5070i.m24061i(X0)) {
+                if (!C5070i.m24062i(X0)) {
                     arrayList.add(new TdApi.JsonObjectMember("firebase_error", new TdApi.JsonValueString(X0)));
                 }
             } else if (Y0 == 2) {
@@ -6842,15 +6842,15 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             if (e == null) {
                 return;
             }
-            if (z || !C5070i.m24067c(this.f35022X1, e)) {
-                this.f35022X1 = e;
-                client.m14783o(new TdApi.SetOption("connection_parameters", new TdApi.OptionValueString(e)), this.f34987M);
+            if (z || !C5070i.m24068c(this.f35025X1, e)) {
+                this.f35025X1 = e;
+                client.m14783o(new TdApi.SetOption("connection_parameters", new TdApi.OptionValueString(e)), this.f34990M);
             }
         }
     }
 
     public TdApi.Sticker m2365l5(String str) {
-        return this.f35041d0.m2083e(str);
+        return this.f35044d0.m2083e(str);
     }
 
     public void m2364l6(Message message) {
@@ -6858,10 +6858,10 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         boolean z = false;
         switch (i) {
             case 1:
-                this.f35062k0.m3284y((TdApi.UpdateChatAction) message.obj);
+                this.f35065k0.m3284y((TdApi.UpdateChatAction) message.obj);
                 return;
             case 2:
-                this.f35053h0.m1631j1((TdApi.UpdateCall) message.obj);
+                this.f35056h0.m1631j1((TdApi.UpdateCall) message.obj);
                 return;
             case 3:
                 TdApi.ChatList chatList = (TdApi.ChatList) message.obj;
@@ -6897,24 +6897,24 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             case 10:
             default:
                 if (i >= 100000) {
-                    ((AbstractC4761s4) message.obj).mo25976b5(i - 100000, message.arg1, message.arg2);
+                    ((AbstractC4761s4) message.obj).mo25977b5(i - 100000, message.arg1, message.arg2);
                     return;
                 }
                 return;
             case 11:
-                C4403w.m27908Z2((TdApi.UpdateLanguagePackStrings) message.obj);
+                C4403w.m27910Z2((TdApi.UpdateLanguagePackStrings) message.obj);
                 return;
         }
     }
 
     public boolean m2363l7(long j) {
-        long j2 = this.f35069m1;
+        long j2 = this.f35072m1;
         return (j2 != 0 && j2 == j) || j == C7316a.m17058c(777000L);
     }
 
     public final void m2360la() {
         m2638Tb(false);
-        this.f35082q2.m18904d();
+        this.f35085q2.m18905d();
     }
 
     public TdApi.Chat m2359lb() {
@@ -6922,26 +6922,26 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2358lc(TdApi.NotificationSettingsScope notificationSettingsScope, TdApi.ScopeNotificationSettings scopeNotificationSettings) {
-        m2270r4().m14783o(new TdApi.SetScopeNotificationSettings(notificationSettingsScope, scopeNotificationSettings), this.f34987M);
+        m2270r4().m14783o(new TdApi.SetScopeNotificationSettings(notificationSettingsScope, scopeNotificationSettings), this.f34990M);
     }
 
     public final void m2357ld(TdApi.UpdateNewCallSignalingData updateNewCallSignalingData) {
-        this.f35056i0.m1784y2(updateNewCallSignalingData);
+        this.f35059i0.m1784y2(updateNewCallSignalingData);
     }
 
     public final void m2356le(TdApi.UpdateMessageSendSucceeded updateMessageSendSucceeded) {
-        synchronized (this.f35030a0) {
-            C4868i c2 = C4868i.m24726c2();
-            int i = this.f35017W;
+        synchronized (this.f35033a0) {
+            C4868i c2 = C4868i.m24727c2();
+            int i = this.f35020W;
             TdApi.Message message = updateMessageSendSucceeded.message;
-            c2.m24650l6(i, message.chatId, updateMessageSendSucceeded.oldMessageId, message.f25406id);
+            c2.m24651l6(i, message.chatId, updateMessageSendSucceeded.oldMessageId, message.f25409id);
         }
         m2424ha(updateMessageSendSucceeded.message.chatId, updateMessageSendSucceeded.oldMessageId);
-        this.f35056i0.m1812r2(updateMessageSendSucceeded);
-        this.f35077p0.m3230D1(updateMessageSendSucceeded);
-        this.f35068m0.m1515g(updateMessageSendSucceeded.message.chatId, updateMessageSendSucceeded.oldMessageId);
-        this.f35014V.m4716b1().m1534u(this, updateMessageSendSucceeded);
-        this.f35053h0.m1724K(updateMessageSendSucceeded.message);
+        this.f35059i0.m1812r2(updateMessageSendSucceeded);
+        this.f35080p0.m3230D1(updateMessageSendSucceeded);
+        this.f35071m0.m1515g(updateMessageSendSucceeded.message.chatId, updateMessageSendSucceeded.oldMessageId);
+        this.f35017V.m4716b1().m1534u(this, updateMessageSendSucceeded);
+        this.f35056h0.m1724K(updateMessageSendSucceeded.message);
         m2805J1(updateMessageSendSucceeded.message.chatId, updateMessageSendSucceeded.oldMessageId, false);
     }
 
@@ -6950,13 +6950,13 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final C10684g8 m2351m3(TdApi.ChatList chatList) {
-        String o4 = C4779t2.m25456o4(chatList);
-        C10684g8 g8Var = this.f35038c0.get(o4);
+        String o4 = C4779t2.m25457o4(chatList);
+        C10684g8 g8Var = this.f35041c0.get(o4);
         if (g8Var != null) {
             return g8Var;
         }
         C10684g8 g8Var2 = new C10684g8(this, chatList);
-        this.f35038c0.put(o4, g8Var2);
+        this.f35041c0.put(o4, g8Var2);
         return g8Var2;
     }
 
@@ -6974,7 +6974,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2348m6() {
-        return m2460f6(C7317b.f23225b) > 0;
+        return m2460f6(C7317b.f23228b) > 0;
     }
 
     public boolean m2347m7(TdApi.SuggestedAction suggestedAction) {
@@ -6982,9 +6982,9 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2344ma() {
-        this.f35079p2.m18904d();
-        this.f35085r2.m18904d();
-        this.f35082q2.m18904d();
+        this.f35082p2.m18905d();
+        this.f35088r2.m18905d();
+        this.f35085q2.m18905d();
     }
 
     public long m2343mb() {
@@ -6992,24 +6992,24 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2342mc(String str, TdApi.LanguagePackInfo languagePackInfo) {
-        if (C5070i.m24067c(this.f35042d1, str) && this.f35045e1 == null) {
-            this.f35045e1 = languagePackInfo;
+        if (C5070i.m24068c(this.f35045d1, str) && this.f35048e1 == null) {
+            this.f35048e1 = languagePackInfo;
             m2781K9().m1928M2(str, languagePackInfo);
         }
     }
 
     public final void m2341md(TdApi.UpdateChatActionBar updateChatActionBar) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatActionBar.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatActionBar.chatId));
             if (!C10859mj.m2997b(updateChatActionBar.chatId, chat, updateChatActionBar)) {
                 chat.actionBar = updateChatActionBar.actionBar;
-                this.f35056i0.m1950H0(updateChatActionBar);
+                this.f35059i0.m1950H0(updateChatActionBar);
             }
         }
     }
 
     public final void m2340me(TdApi.UpdateMessageUnreadReactions updateMessageUnreadReactions) {
-        this.f35056i0.m1804t2(updateMessageUnreadReactions);
+        this.f35059i0.m1804t2(updateMessageUnreadReactions);
     }
 
     public boolean m2336n2(org.drinkless.p210td.libcore.telegram.TdApi.Chat r7, boolean r8) {
@@ -7028,20 +7028,20 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public synchronized void m2334n4(final Runnable runnable) {
-        final String W0 = this.f35014V.m4736W0();
-        if (!C5070i.m24061i(W0) && m2648T1() == 2) {
+        final String W0 = this.f35017V.m4736W0();
+        if (!C5070i.m24062i(W0) && m2648T1() == 2) {
             final long ba2 = m2519ba();
             if (ba2 != 0) {
-                final long[] Z = this.f35014V.m4725Z(this.f35100x1);
-                final long[] y = C5062b.m24147y(Z, Arrays.binarySearch(Z, ba2));
+                final long[] Z = this.f35017V.m4725Z(this.f35103x1);
+                final long[] y = C5062b.m24148y(Z, Arrays.binarySearch(Z, ba2));
                 if (C10733ic.m4115j(m2188w6(), ba2, W0, y, false)) {
-                    Log.m14721i(4, "Device token already registered. accountId:%d", Integer.valueOf(this.f35017W));
-                    this.f35014V.m4758Q2(this.f35017W, true);
+                    Log.m14721i(4, "Device token already registered. accountId:%d", Integer.valueOf(this.f35020W));
+                    this.f35017V.m4758Q2(this.f35020W, true);
                     C7389v0.m16743D2(runnable);
                     return;
                 }
-                Log.m14721i(4, "Registering device token... accountId:%d", Integer.valueOf(this.f35017W));
-                this.f35014V.m4758Q2(this.f35017W, false);
+                Log.m14721i(4, "Registering device token... accountId:%d", Integer.valueOf(this.f35020W));
+                this.f35017V.m4758Q2(this.f35020W, false);
                 TdApi.DeviceTokenFirebaseCloudMessaging deviceTokenFirebaseCloudMessaging = new TdApi.DeviceTokenFirebaseCloudMessaging(W0, true);
                 m2896D6(1);
                 m2270r4().m14783o(new TdApi.RegisterDevice(deviceTokenFirebaseCloudMessaging, y), new Client.AbstractC7865g() {
@@ -7055,18 +7055,18 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2333n5(C10942l lVar, TdApi.Error error) {
-        synchronized (this.f34995O1) {
-            this.f34998P1.remove(Long.valueOf(lVar.f35161d));
+        synchronized (this.f34998O1) {
+            this.f35001P1.remove(Long.valueOf(lVar.f35164d));
         }
-        m2270r4().m14783o(new TdApi.FinishFileGeneration(lVar.f35161d, error), m2214uc());
+        m2270r4().m14783o(new TdApi.FinishFileGeneration(lVar.f35164d, error), m2214uc());
     }
 
     public boolean m2332n6() {
-        return !C5070i.m24061i(this.f34992N1) || !C5070i.m24061i(this.f34989M1);
+        return !C5070i.m24062i(this.f34995N1) || !C5070i.m24062i(this.f34992M1);
     }
 
     public boolean m2331n7() {
-        return this.f34986L1;
+        return this.f34989L1;
     }
 
     public final void m2328na() {
@@ -7079,24 +7079,24 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public final boolean m2326nc(TdApi.ChatList chatList, int i, int i2, int i3, int i4, int i5) {
         C10562b9 w5 = m2189w5(chatList);
-        int max = Math.max(w5.f33874b, 0);
-        int max2 = Math.max(w5.f33875c, 0);
-        int i6 = w5.f33873a;
+        int max = Math.max(w5.f33877b, 0);
+        int max2 = Math.max(w5.f33878c, 0);
+        int i6 = w5.f33876a;
         if (!w5.m4531e(i, i2, i3, i4, i5)) {
             return false;
         }
-        this.f35014V.m4670n1(chatList, i2 - max, i3 - max2, true);
+        this.f35017V.m4670n1(chatList, i2 - max, i3 - max2, true);
         m2949A1().m1473f0(chatList, w5, true);
         m2781K9().m1959F(chatList, (i > 0) != (i6 > 0), i, i2, i3);
         return true;
     }
 
     public final void m2325nd(TdApi.UpdateChatAvailableReactions updateChatAvailableReactions) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatAvailableReactions.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatAvailableReactions.chatId));
             if (!C10859mj.m2997b(updateChatAvailableReactions.chatId, chat, updateChatAvailableReactions)) {
                 chat.availableReactions = updateChatAvailableReactions.availableReactions;
-                this.f35056i0.m1938K0(updateChatAvailableReactions);
+                this.f35059i0.m1938K0(updateChatAvailableReactions);
             }
         }
     }
@@ -7104,9 +7104,9 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public final void m2324ne(TdApi.UpdateDeleteMessages updateDeleteMessages) {
         if (!updateDeleteMessages.fromCache) {
             Arrays.sort(updateDeleteMessages.messageIds);
-            this.f35056i0.m1796v2(updateDeleteMessages);
-            this.f35014V.m4716b1().m1533v(this, updateDeleteMessages);
-            this.f35053h0.m1660c0(updateDeleteMessages.chatId, updateDeleteMessages.messageIds);
+            this.f35059i0.m1796v2(updateDeleteMessages);
+            this.f35017V.m4716b1().m1533v(this, updateDeleteMessages);
+            this.f35056h0.m1660c0(updateDeleteMessages.chatId, updateDeleteMessages.messageIds);
         }
     }
 
@@ -7123,28 +7123,28 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final boolean m2318o4() {
-        boolean z = this.f35040c2 || this.f34970D1;
-        if (this.f34968C1 != z) {
-            this.f34968C1 = z;
-            m2930B4().m4730X2(this.f35017W, z);
+        boolean z = this.f35043c2 || this.f34973D1;
+        if (this.f34971C1 != z) {
+            this.f34971C1 = z;
+            m2930B4().m4730X2(this.f35020W, z);
         }
         return z;
     }
 
     public int m2317o5() {
-        return this.f34965B0;
+        return this.f34968B0;
     }
 
     public boolean m2316o6() {
-        C6035e<ArrayList<AbstractC9323v4<?>>> eVar = this.f35001Q1;
-        return eVar != null && eVar.m21496p() > 0;
+        C6035e<ArrayList<AbstractC9323v4<?>>> eVar = this.f35004Q1;
+        return eVar != null && eVar.m21497p() > 0;
     }
 
     public boolean m2315o7(int i) {
         boolean z;
-        synchronized (this.f35030a0) {
-            int[] iArr = this.f35096v1;
-            z = (iArr == null || C5062b.m24154r(iArr, i) == -1) ? false : true;
+        synchronized (this.f35033a0) {
+            int[] iArr = this.f35099v1;
+            z = (iArr == null || C5062b.m24155r(iArr, i) == -1) ? false : true;
         }
         return z;
     }
@@ -7187,26 +7187,26 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public final boolean m2310oc(TdApi.ChatList chatList, int i, int i2) {
         C10562b9 w5 = m2189w5(chatList);
-        int i3 = w5.f33878f;
-        if (i3 == i && w5.f33879g == i2) {
+        int i3 = w5.f33881f;
+        if (i3 == i && w5.f33882g == i2) {
             return false;
         }
         int max = Math.max(i3, 0);
-        int max2 = Math.max(w5.f33879g, 0);
-        w5.f33878f = i;
-        w5.f33879g = i2;
-        this.f35014V.m4670n1(chatList, i - max, i2 - max2, false);
+        int max2 = Math.max(w5.f33882g, 0);
+        w5.f33881f = i;
+        w5.f33882g = i2;
+        this.f35017V.m4670n1(chatList, i - max, i2 - max2, false);
         m2949A1().m1473f0(chatList, w5, false);
         m2781K9().m1951H(chatList, i, i2);
         return true;
     }
 
     public final void m2309od(TdApi.UpdateChatDefaultDisableNotification updateChatDefaultDisableNotification) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatDefaultDisableNotification.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatDefaultDisableNotification.chatId));
             if (!C10859mj.m2997b(updateChatDefaultDisableNotification.chatId, chat, updateChatDefaultDisableNotification)) {
                 chat.defaultDisableNotification = updateChatDefaultDisableNotification.defaultDisableNotification;
-                this.f35056i0.m1918P0(updateChatDefaultDisableNotification);
+                this.f35059i0.m1918P0(updateChatDefaultDisableNotification);
             }
         }
     }
@@ -7214,16 +7214,16 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public final void m2308oe(TdApi.UpdateNewChat updateNewChat) {
         ArrayList<C10684g8> arrayList;
         TdApi.ChatPosition[] chatPositionArr;
-        synchronized (this.f35030a0) {
-            this.f35034b0.put(Long.valueOf(updateNewChat.chat.f25367id), updateNewChat.chat);
-            this.f35047f0.add(Long.valueOf(updateNewChat.chat.f25367id));
+        synchronized (this.f35033a0) {
+            this.f35037b0.put(Long.valueOf(updateNewChat.chat.f25370id), updateNewChat.chat);
+            this.f35050f0.add(Long.valueOf(updateNewChat.chat.f25370id));
             if (updateNewChat.chat.type.getConstructor() == -1472570774) {
                 TdApi.ChatType chatType = updateNewChat.chat.type;
                 long j = ((TdApi.ChatTypeSupergroup) chatType).supergroupId;
                 if (((TdApi.ChatTypeSupergroup) chatType).isChannel) {
-                    this.f35083r0.add(Long.valueOf(j));
+                    this.f35086r0.add(Long.valueOf(j));
                 } else {
-                    this.f35083r0.remove(Long.valueOf(j));
+                    this.f35086r0.remove(Long.valueOf(j));
                 }
             }
             TdApi.ChatPosition[] chatPositionArr2 = updateNewChat.chat.positions;
@@ -7249,10 +7249,10 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (chat == null || chat.lastMessage == null) {
             return false;
         }
-        switch (C7316a.m17057d(chat.f25367id)) {
+        switch (C7316a.m17057d(chat.f25370id)) {
             case TdApi.ChatTypeSupergroup.CONSTRUCTOR:
-                TdApi.Supergroup Y3 = m2571Y3(chat.f25367id);
-                return Y3 != null && !Y3.isChannel && C5070i.m24061i(Y3.username);
+                TdApi.Supergroup Y3 = m2571Y3(chat.f25370id);
+                return Y3 != null && !Y3.isChannel && C5070i.m24062i(Y3.username);
             case TdApi.ChatTypeSecret.CONSTRUCTOR:
             case TdApi.ChatTypeBasicGroup.CONSTRUCTOR:
             case TdApi.ChatTypePrivate.CONSTRUCTOR:
@@ -7288,7 +7288,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2302p4() {
-        synchronized (this.f35026Z) {
+        synchronized (this.f35029Z) {
             m2487db();
         }
     }
@@ -7308,7 +7308,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public void m2296pa(TdApi.UpdateMessageSendAcknowledged updateMessageSendAcknowledged) {
         m2424ha(updateMessageSendAcknowledged.chatId, updateMessageSendAcknowledged.messageId);
-        this.f35056i0.m1828n2(updateMessageSendAcknowledged);
+        this.f35059i0.m1828n2(updateMessageSendAcknowledged);
     }
 
     public void m2295pb(long j, long j2, String str) {
@@ -7316,15 +7316,15 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public C10733ic m2294pc() {
-        return this.f35071n0;
+        return this.f35074n0;
     }
 
     public final void m2293pd(TdApi.UpdateChatMessageSender updateChatMessageSender) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatMessageSender.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatMessageSender.chatId));
             if (!C10859mj.m2997b(updateChatMessageSender.chatId, chat, updateChatMessageSender)) {
                 chat.messageSenderId = updateChatMessageSender.messageSenderId;
-                this.f35056i0.m1914Q0(updateChatMessageSender);
+                this.f35059i0.m1914Q0(updateChatMessageSender);
             }
         }
     }
@@ -7333,16 +7333,16 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         TdApi.Message message = updateNewMessage.message;
         if ((message.sendingState instanceof TdApi.MessageSendingStatePending) && message.content.getConstructor() != 1810060209) {
             TdApi.Message message2 = updateNewMessage.message;
-            m2805J1(message2.chatId, message2.f25406id, true);
+            m2805J1(message2.chatId, message2.f25409id, true);
             if (z) {
                 return;
             }
         }
-        this.f35056i0.m1780z2(updateNewMessage);
-        this.f35077p0.m3210I1(updateNewMessage);
-        this.f35014V.m4716b1().m1532w(this, updateNewMessage);
-        if (!this.f35100x1 && updateNewMessage.message.chatId == C7316a.m17058c(777000L)) {
-            this.f35056i0.m1943J(true);
+        this.f35059i0.m1780z2(updateNewMessage);
+        this.f35080p0.m3210I1(updateNewMessage);
+        this.f35017V.m4716b1().m1532w(this, updateNewMessage);
+        if (!this.f35103x1 && updateNewMessage.message.chatId == C7316a.m17058c(777000L)) {
+            this.f35059i0.m1943J(true);
         }
     }
 
@@ -7352,7 +7352,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             return false;
         }
         long p = C7316a.m17045p(j);
-        return (p == 0 || (h2 = m2480e2().m1638h2(p)) == null || C5070i.m24061i(h2.username)) ? false : true;
+        return (p == 0 || (h2 = m2480e2().m1638h2(p)) == null || C5070i.m24062i(h2.username)) ? false : true;
     }
 
     public int m2287q3(long j) {
@@ -7362,9 +7362,9 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     public C10942l m2285q5(String str, TdApi.FileType fileType, boolean z, int i, long j) {
         final CountDownLatch countDownLatch = new CountDownLatch(2);
         final C10942l lVar = new C10942l();
-        lVar.f35158a = countDownLatch;
-        synchronized (this.f34995O1) {
-            this.f34995O1.put(str, lVar);
+        lVar.f35161a = countDownLatch;
+        synchronized (this.f34998O1) {
+            this.f34998O1.put(str, lVar);
         }
         Client r4 = m2270r4();
         TdApi.InputFileGenerated inputFileGenerated = new TdApi.InputFileGenerated(null, str, 0);
@@ -7386,21 +7386,21 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         } catch (InterruptedException e) {
             Log.m14718i(e);
         }
-        synchronized (this.f34995O1) {
-            if (lVar.f35162e) {
-                this.f34998P1.remove(Long.valueOf(lVar.f35161d));
+        synchronized (this.f34998O1) {
+            if (lVar.f35165e) {
+                this.f35001P1.remove(Long.valueOf(lVar.f35164d));
             } else {
-                this.f34995O1.remove(str);
+                this.f34998O1.remove(str);
             }
         }
-        if (lVar.f35159b == null || lVar.f35160c == null) {
+        if (lVar.f35162b == null || lVar.f35163c == null) {
             return null;
         }
         return lVar;
     }
 
     public boolean m2284q6(TdApi.Chat chat) {
-        return chat != null && !C5070i.m24061i(chat.clientData);
+        return chat != null && !C5070i.m24062i(chat.clientData);
     }
 
     public boolean m2283q7(TdApi.Chat chat) {
@@ -7408,7 +7408,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2280qa() {
-        this.f35085r2.m18904d();
+        this.f35088r2.m18905d();
     }
 
     public void m2279qb(TdApi.Update update, boolean z) {
@@ -7416,31 +7416,31 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final boolean m2278qc() {
-        if (this.f35102y1 || m2648T1() == 0) {
+        if (this.f35105y1 || m2648T1() == 0) {
             return false;
         }
-        TdApi.AuthorizationState authorizationState = this.f34982J1;
-        return (authorizationState == null || authorizationState.getConstructor() == 306402531) && !m2318o4() && !m2949A1().m1499L() && m2949A1().m1503H() && this.f35104z1.get() == 0;
+        TdApi.AuthorizationState authorizationState = this.f34985J1;
+        return (authorizationState == null || authorizationState.getConstructor() == 306402531) && !m2318o4() && !m2949A1().m1499L() && m2949A1().m1503H() && this.f35107z1.get() == 0;
     }
 
     public final void m2277qd(TdApi.UpdateChatDraftMessage updateChatDraftMessage) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatDraftMessage.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatDraftMessage.chatId));
             if (!C10859mj.m2997b(updateChatDraftMessage.chatId, chat, updateChatDraftMessage)) {
                 chat.draftMessage = updateChatDraftMessage.draftMessage;
-                this.f35056i0.m1906S0(updateChatDraftMessage, m2715Ob(chat, updateChatDraftMessage.positions));
+                this.f35059i0.m1906S0(updateChatDraftMessage, m2715Ob(chat, updateChatDraftMessage.positions));
             }
         }
     }
 
     public final void m2276qe(Client client) {
         int i = Build.VERSION.SDK_INT >= 30 ? 7 : 10;
-        client.m14783o(new TdApi.SetOption("notification_group_count_max", new TdApi.OptionValueInteger(25L)), this.f34987M);
-        client.m14783o(new TdApi.SetOption("notification_group_size_max", new TdApi.OptionValueInteger(i)), this.f34987M);
+        client.m14783o(new TdApi.SetOption("notification_group_count_max", new TdApi.OptionValueInteger(25L)), this.f34990M);
+        client.m14783o(new TdApi.SetOption("notification_group_size_max", new TdApi.OptionValueInteger(i)), this.f34990M);
     }
 
     public boolean m2272r2(TdApi.Message message) {
-        return message != null && message.sendingState == null && C7316a.m17045p(message.chatId) != 0 && !C4779t2.m25727A3(message);
+        return message != null && message.sendingState == null && C7316a.m17045p(message.chatId) != 0 && !C4779t2.m25728A3(message);
     }
 
     public int m2271r3(TdApi.Chat chat) {
@@ -7451,7 +7451,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (!chatNotificationSettings.useDefaultMuteFor) {
             return chatNotificationSettings.muteFor;
         }
-        TdApi.ScopeNotificationSettings L0 = this.f35077p0.m3199L0(chat);
+        TdApi.ScopeNotificationSettings L0 = this.f35080p0.m3199L0(chat);
         if (L0 != null) {
             return L0.muteFor;
         }
@@ -7459,7 +7459,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public Client m2270r4() {
-        return m2238t4().f35156b;
+        return m2238t4().f35159b;
     }
 
     public void m2269r5(final List<TdApi.Message> list, final boolean z, C10936f fVar, final AbstractC5918j<C10936f> jVar) {
@@ -7470,8 +7470,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         final TdApi.Message message2 = list.get(list.size() - 1);
         final ArrayList arrayList = new ArrayList();
         final ArrayList arrayList2 = new ArrayList();
-        final AtomicBoolean atomicBoolean2 = new AtomicBoolean(fVar != null && !fVar.f35135c);
-        if (fVar != null && !fVar.f35134b) {
+        final AtomicBoolean atomicBoolean2 = new AtomicBoolean(fVar != null && !fVar.f35138c);
+        if (fVar != null && !fVar.f35137b) {
             z2 = true;
         }
         final AtomicBoolean atomicBoolean3 = new AtomicBoolean(z2);
@@ -7491,7 +7491,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             if (!atomicBoolean2.get()) {
                 atomicInteger = atomicInteger2;
                 atomicBoolean = atomicBoolean3;
-                m2270r4().m14783o(new TdApi.GetChatHistory(message2.chatId, message2.f25406id, 0, size, z), new Client.AbstractC7865g() {
+                m2270r4().m14783o(new TdApi.GetChatHistory(message2.chatId, message2.f25409id, 0, size, z), new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object) {
                         C10930q6.m2506c8(TdApi.Message.this, atomicBoolean2, arrayList, z, atomicInteger, b4Var, object);
@@ -7503,7 +7503,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             }
             if (!atomicBoolean.get()) {
                 final AtomicInteger atomicInteger3 = atomicInteger;
-                m2270r4().m14783o(new TdApi.GetChatHistory(message.chatId, message.f25406id, -size, size, z), new Client.AbstractC7865g() {
+                m2270r4().m14783o(new TdApi.GetChatHistory(message.chatId, message.f25409id, -size, size, z), new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object) {
                         C10930q6.m2490d8(TdApi.Message.this, atomicBoolean, arrayList2, z, atomicInteger3, b4Var, object);
@@ -7525,7 +7525,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2264ra() {
-        this.f35088s2.m18904d();
+        this.f35091s2.m18905d();
     }
 
     public void m2263rb(long j, long j2, long j3, TdApi.MessageSendOptions messageSendOptions, long j4, String str) {
@@ -7537,21 +7537,21 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2261rd(TdApi.UpdateChatFilters updateChatFilters) {
-        synchronized (this.f35030a0) {
-            this.f35055h2 = updateChatFilters.chatFilters;
+        synchronized (this.f35033a0) {
+            this.f35058h2 = updateChatFilters.chatFilters;
         }
-        this.f35056i0.m1903T0(updateChatFilters);
+        this.f35059i0.m1903T0(updateChatFilters);
     }
 
     public final void m2260re(TdApi.UpdateChatNotificationSettings updateChatNotificationSettings) {
         long j = updateChatNotificationSettings.chatId;
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(j));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(j));
             if (!C10859mj.m2997b(j, chat, updateChatNotificationSettings)) {
                 TdApi.ChatNotificationSettings chatNotificationSettings = chat.notificationSettings;
                 chat.notificationSettings = updateChatNotificationSettings.notificationSettings;
-                this.f35056i0.m1960E2(updateChatNotificationSettings);
-                this.f35077p0.m3194M1(updateChatNotificationSettings, j, chatNotificationSettings);
+                this.f35059i0.m1960E2(updateChatNotificationSettings);
+                this.f35080p0.m3194M1(updateChatNotificationSettings, j, chatNotificationSettings);
             }
         }
     }
@@ -7598,7 +7598,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 jVar.mo1330a(null);
             }
         } else if (fVar != null) {
-            m2269r5(fVar.f35133a, z, fVar, jVar);
+            m2269r5(fVar.f35136a, z, fVar, jVar);
         } else {
             ArrayList arrayList = new ArrayList(10);
             arrayList.add(message);
@@ -7607,26 +7607,26 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2252s6(TdApi.ChatList chatList) {
-        return m2189w5(chatList).f33874b > 0;
+        return m2189w5(chatList).f33877b > 0;
     }
 
     public boolean m2251s7(long j) {
-        synchronized (this.f35030a0) {
-            long d = this.f35086s0.m23245d(j);
+        synchronized (this.f35033a0) {
+            long d = this.f35089s0.m23246d(j);
             if (d > SystemClock.elapsedRealtime()) {
                 return true;
             }
             if (d != 0) {
-                this.f35086s0.m23246c(j);
+                this.f35089s0.m23247c(j);
             }
             return false;
         }
     }
 
     public final void m2248sa() {
-        Log.m14719i("Performing account startup for accountId:%d, isAfterRestart:%b", Integer.valueOf(this.f35017W), Boolean.valueOf(this.f34986L1));
-        m2781K9().m1907S(this.f34986L1);
-        this.f34986L1 = true;
+        Log.m14719i("Performing account startup for accountId:%d, isAfterRestart:%b", Integer.valueOf(this.f35020W), Boolean.valueOf(this.f34989L1));
+        m2781K9().m1907S(this.f34989L1);
+        this.f34989L1 = true;
     }
 
     public void m2247sb(long j, long j2, long j3, TdApi.MessageSendOptions messageSendOptions, TdApi.InputMessageContent inputMessageContent, final AbstractC5918j<TdApi.Message> jVar) {
@@ -7651,23 +7651,23 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (V5 == null) {
             return false;
         }
-        C1379j0.m37290z0(V5, 0);
+        C1379j0.m37293z0(V5, 0);
         return true;
     }
 
     public final void m2245sd(TdApi.UpdateChatHasProtectedContent updateChatHasProtectedContent) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatHasProtectedContent.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatHasProtectedContent.chatId));
             if (!C10859mj.m2997b(updateChatHasProtectedContent.chatId, chat, updateChatHasProtectedContent)) {
                 chat.hasProtectedContent = updateChatHasProtectedContent.hasProtectedContent;
-                this.f35056i0.m1900U0(updateChatHasProtectedContent);
+                this.f35059i0.m1900U0(updateChatHasProtectedContent);
             }
         }
     }
 
     public final void m2244se(TdApi.UpdateScopeNotificationSettings updateScopeNotificationSettings) {
-        this.f35056i0.m1956F2(updateScopeNotificationSettings);
-        this.f35077p0.m3190N1(updateScopeNotificationSettings);
+        this.f35059i0.m1956F2(updateScopeNotificationSettings);
+        this.f35080p0.m3190N1(updateScopeNotificationSettings);
     }
 
     public boolean m2240t2(long j) {
@@ -7680,25 +7680,25 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2239t3(TdApi.Chat chat) {
-        return chat != null && C4779t2.m25393x4(chat.notificationSettings, m2423hb(chat.f25367id));
+        return chat != null && C4779t2.m25394x4(chat.notificationSettings, m2423hb(chat.f25370id));
     }
 
     public final C10941k m2238t4() {
-        synchronized (this.f35026Z) {
+        synchronized (this.f35029Z) {
             C10941k u4 = m2222u4();
             if (u4 != null) {
                 return u4;
             }
-            CountDownLatch countDownLatch = this.f35020X.f35151R;
-            if (!C4868i.m24726c2().m24720d0()) {
+            CountDownLatch countDownLatch = this.f35023X.f35154R;
+            if (!C4868i.m24727c2().m24721d0()) {
                 C7389v0.m16602o(countDownLatch);
             } else if (!C7389v0.m16598p(countDownLatch, 10L, TimeUnit.SECONDS)) {
                 StringBuilder sb2 = new StringBuilder();
                 sb2.append("Long close detected. authState: ");
-                sb2.append(this.f34982J1);
+                sb2.append(this.f34985J1);
                 sb2.append(", closeState: ");
-                C10941k kVar = this.f35020X;
-                sb2.append(kVar != null ? kVar.f35152S : -1);
+                C10941k kVar = this.f35023X;
+                sb2.append(kVar != null ? kVar.f35155S : -1);
                 RuntimeException runtimeException = new RuntimeException(sb2.toString());
                 Tracer.m14772h(runtimeException);
                 throw runtimeException;
@@ -7716,7 +7716,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2235t7(String str) {
-        if (C5070i.m24061i(str)) {
+        if (C5070i.m24062i(str)) {
             return false;
         }
         if (str.startsWith("tg://")) {
@@ -7733,11 +7733,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2232ta(int i) {
-        synchronized (this.f35007S1) {
-            int i2 = this.f35004R1.m23250i();
+        synchronized (this.f35010S1) {
+            int i2 = this.f35007R1.m23251i();
             for (int i3 = 0; i3 < i2; i3++) {
-                if (i >= this.f35004R1.m23249j(i3)) {
-                    long f = this.f35004R1.m23253f(i3);
+                if (i >= this.f35007R1.m23250j(i3)) {
+                    long f = this.f35007R1.m23254f(i3);
                     TdApi.Chat U2 = m2632U2(f);
                     if (m2220u6(U2) && (C7316a.m17051j(f) || m2485dd().m3528l8(U2))) {
                         m2199vb(f);
@@ -7753,11 +7753,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public void m2230tc() {
         int v0;
-        if (m2930B4().m4632x2() == this.f35017W && (v0 = m2930B4().m4642v0(this.f35017W)) != -1) {
+        if (m2930B4().m4632x2() == this.f35020W && (v0 = m2930B4().m4642v0(this.f35020W)) != -1) {
             m2930B4().m4709d0(v0, 0);
         }
         final boolean q1 = m2930B4().m4661q1();
-        final String q2 = q1 ? C4779t2.m25444q2(m2949A1().m1459q(), m2949A1().m1457s()) : null;
+        final String q2 = q1 ? C4779t2.m25445q2(m2949A1().m1459q(), m2949A1().m1457s()) : null;
         m2896D6(1);
         m2270r4().m14783o(new TdApi.LogOut(), new Client.AbstractC7865g() {
             @Override
@@ -7768,11 +7768,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2229td(TdApi.UpdateChatHasScheduledMessages updateChatHasScheduledMessages) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatHasScheduledMessages.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatHasScheduledMessages.chatId));
             if (!C10859mj.m2997b(updateChatHasScheduledMessages.chatId, chat, updateChatHasScheduledMessages)) {
                 chat.hasScheduledMessages = updateChatHasScheduledMessages.hasScheduledMessages;
-                this.f35056i0.m1894W0(updateChatHasScheduledMessages);
+                this.f35059i0.m1894W0(updateChatHasScheduledMessages);
             }
         }
     }
@@ -7790,8 +7790,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final C10941k m2222u4() {
-        if (this.f35020X == null) {
-            this.f35020X = m2456fa();
+        if (this.f35023X == null) {
+            this.f35023X = m2456fa();
             m2485dd().postDelayed(new Runnable() {
                 @Override
                 public final void run() {
@@ -7799,17 +7799,17 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 }
             }, 350L);
         }
-        if (!this.f35102y1) {
-            return this.f35020X;
+        if (!this.f35105y1) {
+            return this.f35023X;
         }
-        if (Thread.currentThread() != this.f35020X.f35156b.m14791g()) {
+        if (Thread.currentThread() != this.f35023X.f35159b.m14791g()) {
             return null;
         }
         throw new IllegalStateException();
     }
 
     public String m2221u5() {
-        return this.f35027Z0;
+        return this.f35030Z0;
     }
 
     public boolean m2220u6(TdApi.Chat chat) {
@@ -7817,7 +7817,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2219u7() {
-        TdApi.AuthorizationState authorizationState = this.f34982J1;
+        TdApi.AuthorizationState authorizationState = this.f34985J1;
         if (authorizationState != null) {
             switch (authorizationState.getConstructor()) {
                 case TdApi.AuthorizationStateReady.CONSTRUCTOR:
@@ -7833,22 +7833,22 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 case TdApi.AuthorizationStateWaitRegistration.CONSTRUCTOR:
                     return true;
                 default:
-                    throw new AssertionError(this.f34982J1);
+                    throw new AssertionError(this.f34985J1);
             }
         }
         return false;
     }
 
     public final void m2216ua(TdApi.UpdateActiveNotifications updateActiveNotifications) {
-        C7903b.C7904a.m14399a(0L, this.f35017W, "Received updateActiveNotifications, ignore: %b", Boolean.valueOf(this.f34974F1));
-        if (!this.f34974F1 || updateActiveNotifications.groups.length <= 0) {
-            this.f35049f2 = false;
+        C7903b.C7904a.m14398a(0L, this.f35020W, "Received updateActiveNotifications, ignore: %b", Boolean.valueOf(this.f34977F1));
+        if (!this.f34977F1 || updateActiveNotifications.groups.length <= 0) {
+            this.f35052f2 = false;
         } else {
             updateActiveNotifications = new TdApi.UpdateActiveNotifications(new TdApi.NotificationGroup[0]);
-            this.f35049f2 = true;
+            this.f35052f2 = true;
         }
-        this.f35046e2 = SystemClock.uptimeMillis();
-        this.f35077p0.m3234C1(updateActiveNotifications, new Runnable() {
+        this.f35049e2 = SystemClock.uptimeMillis();
+        this.f35080p0.m3234C1(updateActiveNotifications, new Runnable() {
             @Override
             public final void run() {
                 C10930q6.this.m2675R4();
@@ -7861,15 +7861,15 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public Client.AbstractC7865g m2214uc() {
-        return this.f34999Q;
+        return this.f35002Q;
     }
 
     public final void m2213ud(TdApi.UpdateChatIsBlocked updateChatIsBlocked) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatIsBlocked.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatIsBlocked.chatId));
             if (!C10859mj.m2997b(updateChatIsBlocked.chatId, chat, updateChatIsBlocked)) {
                 chat.isBlocked = updateChatIsBlocked.isBlocked;
-                this.f35056i0.m1885Z0(updateChatIsBlocked);
+                this.f35059i0.m1885Z0(updateChatIsBlocked);
             }
         }
     }
@@ -7883,11 +7883,11 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             return true;
         }
         TdApi.ChatNotificationSettings chatNotificationSettings = chat.notificationSettings;
-        return !chatNotificationSettings.useDefaultMuteFor ? chatNotificationSettings.muteFor == 0 : m2439gb(this.f35077p0.m3113k2(chat)) == 0;
+        return !chatNotificationSettings.useDefaultMuteFor ? chatNotificationSettings.muteFor == 0 : m2439gb(this.f35080p0.m3113k2(chat)) == 0;
     }
 
     public TdApi.TdlibParameters m2206v4() {
-        return this.f35037c;
+        return this.f35040c;
     }
 
     public int m2205v5(int i) {
@@ -7895,8 +7895,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2204v6() {
-        synchronized (this.f35030a0) {
-            for (TdApi.SuggestedAction suggestedAction : this.f35064k2) {
+        synchronized (this.f35033a0) {
+            for (TdApi.SuggestedAction suggestedAction : this.f35067k2) {
                 if (m2347m7(suggestedAction)) {
                     return true;
                 }
@@ -7911,15 +7911,15 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public final void m2200va(TdApi.UpdateHavePendingNotifications updateHavePendingNotifications) {
         boolean z = updateHavePendingNotifications.haveDelayedNotifications || updateHavePendingNotifications.haveUnreceivedNotifications;
-        if (this.f35040c2 != z) {
-            this.f35040c2 = z;
+        if (this.f35043c2 != z) {
+            this.f35043c2 = z;
             m2318o4();
         }
         if (!updateHavePendingNotifications.haveUnreceivedNotifications) {
-            this.f35091t2.m18903e(true);
+            this.f35094t2.m18904e(true);
         }
         m2912C6();
-        this.f35077p0.m3147b2(z ? null : new Runnable() {
+        this.f35080p0.m3147b2(z ? null : new Runnable() {
             @Override
             public final void run() {
                 C10930q6.this.m2264ra();
@@ -7944,49 +7944,49 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2197vd(TdApi.UpdateChatIsMarkedAsUnread updateChatIsMarkedAsUnread) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatIsMarkedAsUnread.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatIsMarkedAsUnread.chatId));
             if (!C10859mj.m2997b(updateChatIsMarkedAsUnread.chatId, chat, updateChatIsMarkedAsUnread)) {
                 chat.isMarkedAsUnread = updateChatIsMarkedAsUnread.isMarkedAsUnread;
-                this.f35056i0.m1877b1(updateChatIsMarkedAsUnread);
+                this.f35059i0.m1877b1(updateChatIsMarkedAsUnread);
             }
         }
     }
 
     public final void m2196ve(Client client) {
         m2500ce(client, true);
-        client.m14783o(new TdApi.SetOption("use_quick_ack", new TdApi.OptionValueBoolean(true)), this.f34987M);
-        client.m14783o(new TdApi.SetOption("use_pfs", new TdApi.OptionValueBoolean(true)), this.f34987M);
+        client.m14783o(new TdApi.SetOption("use_quick_ack", new TdApi.OptionValueBoolean(true)), this.f34990M);
+        client.m14783o(new TdApi.SetOption("use_pfs", new TdApi.OptionValueBoolean(true)), this.f34990M);
         m2276qe(client);
-        boolean e2 = C4868i.m24726c2().m24710e2();
-        this.f35036b2 = e2;
-        client.m14783o(new TdApi.SetOption("is_emulator", new TdApi.OptionValueBoolean(e2)), this.f34987M);
-        client.m14783o(new TdApi.SetOption("storage_max_files_size", new TdApi.OptionValueInteger(2147483647L)), this.f34987M);
-        client.m14783o(new TdApi.SetOption("ignore_default_disable_notification", new TdApi.OptionValueBoolean(true)), this.f34987M);
-        client.m14783o(new TdApi.SetOption("ignore_platform_restrictions", new TdApi.OptionValueBoolean(C7389v0.m16636f1())), this.f34987M);
+        boolean e2 = C4868i.m24727c2().m24711e2();
+        this.f35039b2 = e2;
+        client.m14783o(new TdApi.SetOption("is_emulator", new TdApi.OptionValueBoolean(e2)), this.f34990M);
+        client.m14783o(new TdApi.SetOption("storage_max_files_size", new TdApi.OptionValueInteger(2147483647L)), this.f34990M);
+        client.m14783o(new TdApi.SetOption("ignore_default_disable_notification", new TdApi.OptionValueBoolean(true)), this.f34990M);
+        client.m14783o(new TdApi.SetOption("ignore_platform_restrictions", new TdApi.OptionValueBoolean(C7389v0.m16636f1())), this.f34990M);
         m2366l4(client, true);
-        if (this.f34980I1) {
+        if (this.f34983I1) {
             client.m14783o(new TdApi.SetOption("drop_notification_ids", new TdApi.OptionValueBoolean(true)), new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
                     C10930q6.this.m2877E9(object);
                 }
             });
-            this.f34980I1 = false;
+            this.f34983I1 = false;
         }
-        this.f35037c.useTestDc = m2658S6();
-        this.f35037c.databaseDirectory = C10536ab.m4748T0(this.f35017W, false);
-        this.f35037c.filesDirectory = C10536ab.m4748T0(this.f35017W, true);
-        this.f35037c.systemLanguageCode = C10536ab.m4764P0();
-        this.f35037c.deviceModel = C10536ab.m4816C0();
-        this.f35037c.systemVersion = C10536ab.m4760Q0();
+        this.f35040c.useTestDc = m2658S6();
+        this.f35040c.databaseDirectory = C10536ab.m4748T0(this.f35020W, false);
+        this.f35040c.filesDirectory = C10536ab.m4748T0(this.f35020W, true);
+        this.f35040c.systemLanguageCode = C10536ab.m4764P0();
+        this.f35040c.deviceModel = C10536ab.m4816C0();
+        this.f35040c.systemVersion = C10536ab.m4760Q0();
     }
 
     public boolean m2192w2() {
         boolean z;
         int[] iArr;
-        synchronized (this.f35030a0) {
-            if (this.f35093u1 < 5 && ((iArr = this.f35096v1) == null || iArr.length <= 0)) {
+        synchronized (this.f35033a0) {
+            if (this.f35096u1 < 5 && ((iArr = this.f35099v1) == null || iArr.length <= 0)) {
                 z = false;
             }
             z = true;
@@ -7999,8 +7999,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (j == 0) {
             return 0;
         }
-        synchronized (this.f35030a0) {
-            num = this.f35050g0.get(Long.valueOf(j));
+        synchronized (this.f35033a0) {
+            num = this.f35053g0.get(Long.valueOf(j));
         }
         if (num == null || num.intValue() <= 1) {
             return 0;
@@ -8022,18 +8022,18 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public C10562b9 m2189w5(TdApi.ChatList chatList) {
-        String o4 = C4779t2.m25456o4(chatList);
-        C10562b9 b9Var = this.f35072n1.get(o4);
+        String o4 = C4779t2.m25457o4(chatList);
+        C10562b9 b9Var = this.f35075n1.get(o4);
         if (b9Var != null) {
             return b9Var;
         }
         C10562b9 b9Var2 = new C10562b9(-1, -1, -1, -1, -1, -1, -1);
-        this.f35072n1.put(o4, b9Var2);
+        this.f35075n1.put(o4, b9Var2);
         return b9Var2;
     }
 
     public int m2188w6() {
-        return this.f35017W;
+        return this.f35020W;
     }
 
     public boolean m2187w7(long j) {
@@ -8041,9 +8041,9 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2184wa(long j) {
-        this.f35014V.m4679k2(this.f35017W, j);
+        this.f35017V.m4679k2(this.f35020W, j);
         m2480e2().m1616n1(j);
-        this.f35077p0.m3222F1(j);
+        this.f35080p0.m3222F1(j);
     }
 
     public TdApi.MessageSender m2183wb(long j) {
@@ -8052,9 +8052,9 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public TdApi.SuggestedAction m2182wc() {
-        synchronized (this.f35030a0) {
+        synchronized (this.f35033a0) {
             TdApi.SuggestedAction suggestedAction = null;
-            for (TdApi.SuggestedAction suggestedAction2 : this.f35064k2) {
+            for (TdApi.SuggestedAction suggestedAction2 : this.f35067k2) {
                 if (m2347m7(suggestedAction2)) {
                     if (suggestedAction != null) {
                         return null;
@@ -8071,24 +8071,24 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             Object[] objArr = new Object[2];
             objArr[0] = Long.valueOf(updateChatLastMessage.chatId);
             TdApi.Message message = updateChatLastMessage.lastMessage;
-            objArr[1] = Long.valueOf(message != null ? message.f25406id : 0L);
+            objArr[1] = Long.valueOf(message != null ? message.f25409id : 0L);
             Log.m14721i(8, "updateChatTopMessage chatId=%d messageId=%d", objArr);
         }
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatLastMessage.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatLastMessage.chatId));
             if (!C10859mj.m2997b(updateChatLastMessage.chatId, chat, updateChatLastMessage)) {
                 chat.lastMessage = updateChatLastMessage.lastMessage;
-                this.f35056i0.m1869d1(updateChatLastMessage, m2715Ob(chat, updateChatLastMessage.positions));
+                this.f35059i0.m1869d1(updateChatLastMessage, m2715Ob(chat, updateChatLastMessage.positions));
             }
         }
     }
 
     public final void m2180we(TdApi.UpdateUserPrivacySettingRules updateUserPrivacySettingRules) {
-        this.f35056i0.m1948H2(updateUserPrivacySettingRules.setting, updateUserPrivacySettingRules.rules);
+        this.f35059i0.m1948H2(updateUserPrivacySettingRules.setting, updateUserPrivacySettingRules.rules);
     }
 
     public boolean m2176x2() {
-        return this.f35000Q0;
+        return this.f35003Q0;
     }
 
     public C10940j m2175x3(TdApi.Chat chat) {
@@ -8098,38 +8098,38 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             return null;
         }
         String str2 = chat.clientData;
-        if (C5070i.m24061i(str2)) {
+        if (C5070i.m24062i(str2)) {
             return null;
         }
         String[] split = str2.split("_", 2);
-        if (split.length == 2 && (s = C5070i.m24051s(split[0])) >= 0 && s <= 0) {
+        if (split.length == 2 && (s = C5070i.m24052s(split[0])) >= 0 && s <= 0) {
             if (s < 0) {
                 while (s <= 0) {
                     str2 = m2792Je(chat, s);
                     s++;
                 }
                 m2843Gb(chat, str2);
-                if (C5070i.m24061i(str2)) {
+                if (C5070i.m24062i(str2)) {
                     return null;
                 }
                 split = str2.split("_", 2);
-                if (!(split.length == 2 && C5070i.m24051s(split[0]) == 0)) {
+                if (!(split.length == 2 && C5070i.m24052s(split[0]) == 0)) {
                     return null;
                 }
             }
             try {
                 String str3 = split[1];
                 int indexOf = str3.indexOf(95);
-                int s2 = C5070i.m24051s(str3.substring(0, indexOf));
-                if (!C4862d.m24931z(s2)) {
+                int s2 = C5070i.m24052s(str3.substring(0, indexOf));
+                if (!C4862d.m24932z(s2)) {
                     return null;
                 }
                 int i = indexOf + 1;
                 int indexOf2 = str3.indexOf(95, i);
-                int s3 = C5070i.m24051s(str3.substring(i, indexOf2));
+                int s3 = C5070i.m24052s(str3.substring(i, indexOf2));
                 int i2 = indexOf2 + 1;
                 int indexOf3 = str3.indexOf(95, i2);
-                int s4 = C5070i.m24051s(str3.substring(i2, indexOf3));
+                int s4 = C5070i.m24052s(str3.substring(i2, indexOf3));
                 if (s4 < 0) {
                     return null;
                 }
@@ -8139,7 +8139,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
                 if (str3.length() > i4) {
                     int i5 = i4 + 1;
                     int indexOf4 = str3.indexOf(95, i5);
-                    int s5 = C5070i.m24051s(str3.substring(i5, indexOf4));
+                    int s5 = C5070i.m24052s(str3.substring(i5, indexOf4));
                     if (s5 > 0) {
                         int i6 = indexOf4 + 1;
                         str = str3.substring(i6, s5 + i6);
@@ -8156,15 +8156,15 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2703P7(long j, AbstractC9323v4<?> v4Var) {
-        synchronized (this.f35007S1) {
-            ArrayList<AbstractC9323v4<?>> f = this.f35001Q1.m21505f(j);
+        synchronized (this.f35010S1) {
+            ArrayList<AbstractC9323v4<?>> f = this.f35004Q1.m21506f(j);
             if (f != null && f.remove(v4Var) && f.isEmpty()) {
-                this.f35004R1.m23256c(j);
-                this.f35001Q1.m21499l(j);
+                this.f35007R1.m23257c(j);
+                this.f35004Q1.m21500l(j);
                 if (Log.isEnabled(8)) {
                     Log.m14716v(8, "closeChat, chatId=%d", Long.valueOf(j));
                 }
-                m2270r4().m14783o(new TdApi.CloseChat(j), this.f34987M);
+                m2270r4().m14783o(new TdApi.CloseChat(j), this.f34990M);
             }
         }
     }
@@ -8185,7 +8185,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public boolean m2172x6() {
-        return this.f35003R0;
+        return this.f35006R0;
     }
 
     public boolean m2171x7(TdApi.Chat chat) {
@@ -8197,8 +8197,8 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2168xa(TdApi.UpdateNotification updateNotification) {
-        if (!this.f34974F1) {
-            this.f35077p0.m3206J1(updateNotification);
+        if (!this.f34977F1) {
+            this.f35080p0.m3206J1(updateNotification);
         }
     }
 
@@ -8218,33 +8218,33 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
         if (C7316a.m17049l(N0)) {
             long d4 = m2494d4(N0);
             return z2 ? m2480e2().m1749D2(d4) : m2480e2().m1721K2(d4);
-        } else if (N0 != message.chatId || C5070i.m24061i(message.authorSignature)) {
+        } else if (N0 != message.chatId || C5070i.m24062i(message.authorSignature)) {
             return m2691Q3(N0);
         } else {
             if (z2) {
                 return message.authorSignature;
             }
-            return C4403w.m27865j1(m2784K6(message.chatId) ? R.string.format_channelAndSignature : R.string.format_chatAndSignature, m2691Q3(N0), message.authorSignature);
+            return C4403w.m27867j1(m2784K6(message.chatId) ? R.string.format_channelAndSignature : R.string.format_chatAndSignature, m2691Q3(N0), message.authorSignature);
         }
     }
 
     public C10802kc m2166xc() {
-        return this.f35062k0;
+        return this.f35065k0;
     }
 
     public final void m2165xd(TdApi.UpdateChatMessageTtl updateChatMessageTtl) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatMessageTtl.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatMessageTtl.chatId));
             if (!C10859mj.m2997b(updateChatMessageTtl.chatId, chat, updateChatMessageTtl)) {
                 chat.messageTtl = updateChatMessageTtl.messageTtl;
-                this.f35056i0.m1857g1(updateChatMessageTtl);
+                this.f35059i0.m1857g1(updateChatMessageTtl);
             }
         }
     }
 
     public final void m2164xe(TdApi.UpdateReactions updateReactions) {
-        synchronized (this.f35030a0) {
-            this.f34988M0 = updateReactions.reactions;
+        synchronized (this.f35033a0) {
+            this.f34991M0 = updateReactions.reactions;
         }
     }
 
@@ -8270,22 +8270,22 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2157y5(AbstractC5918j<List<C4868i.C4874f>> jVar) {
-        m2445g5(jVar, "#emoji", C10529a4.f33754a, C10578c4.f33919a, C10658f3.f34123a);
+        m2445g5(jVar, "#emoji", C10529a4.f33757a, C10578c4.f33922a, C10658f3.f34126a);
     }
 
     public Client.AbstractC7865g m2156y6() {
-        return this.f35002R;
+        return this.f35005R;
     }
 
     public boolean m2155y7() {
-        TdApi.NetworkType networkType = this.f35028Z1;
-        return (networkType != null && networkType.getConstructor() == -1971691759) || this.f35014V.m4694g3().m28139n();
+        TdApi.NetworkType networkType = this.f35031Z1;
+        return (networkType != null && networkType.getConstructor() == -1971691759) || this.f35017V.m4694g3().m28141n();
     }
 
     public final void m2152ya(TdApi.UpdateNotificationGroup updateNotificationGroup) {
-        C7903b.C7904a.m14399a(0L, this.f35017W, "Received updateNotificationGroup, groupId: %d, elapsed: %d, ignore: %b", Integer.valueOf(updateNotificationGroup.notificationGroupId), Long.valueOf(SystemClock.uptimeMillis() - this.f35046e2), Boolean.valueOf(this.f34974F1));
-        if (!this.f34974F1) {
-            this.f35077p0.m3198L1(updateNotificationGroup);
+        C7903b.C7904a.m14398a(0L, this.f35020W, "Received updateNotificationGroup, groupId: %d, elapsed: %d, ignore: %b", Integer.valueOf(updateNotificationGroup.notificationGroupId), Long.valueOf(SystemClock.uptimeMillis() - this.f35049e2), Boolean.valueOf(this.f34977F1));
+        if (!this.f34977F1) {
+            this.f35080p0.m3198L1(updateNotificationGroup);
         }
     }
 
@@ -8294,7 +8294,7 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public void m2150yc(final String str, final AbstractC5918j<TdApi.StickerSet> jVar) {
-        if (C5070i.m24061i(str)) {
+        if (C5070i.m24062i(str)) {
             jVar.mo1330a(null);
         } else {
             m2270r4().m14783o(new TdApi.SearchStickerSet(str), new Client.AbstractC7865g() {
@@ -8307,23 +8307,23 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public final void m2149yd(TdApi.UpdateChatOnlineMemberCount updateChatOnlineMemberCount) {
-        synchronized (this.f35030a0) {
-            Integer num = this.f35050g0.get(Long.valueOf(updateChatOnlineMemberCount.chatId));
+        synchronized (this.f35033a0) {
+            Integer num = this.f35053g0.get(Long.valueOf(updateChatOnlineMemberCount.chatId));
             int intValue = num != null ? num.intValue() : 0;
             int i = updateChatOnlineMemberCount.onlineMemberCount;
             if (i != intValue) {
                 if (i != 0) {
-                    this.f35050g0.put(Long.valueOf(updateChatOnlineMemberCount.chatId), Integer.valueOf(updateChatOnlineMemberCount.onlineMemberCount));
+                    this.f35053g0.put(Long.valueOf(updateChatOnlineMemberCount.chatId), Integer.valueOf(updateChatOnlineMemberCount.onlineMemberCount));
                 } else {
-                    this.f35050g0.remove(Long.valueOf(updateChatOnlineMemberCount.chatId));
+                    this.f35053g0.remove(Long.valueOf(updateChatOnlineMemberCount.chatId));
                 }
-                this.f35056i0.m1845j1(updateChatOnlineMemberCount);
+                this.f35059i0.m1845j1(updateChatOnlineMemberCount);
             }
         }
     }
 
     public final void m2148ye(TdApi.UpdateRecentStickers updateRecentStickers) {
-        this.f35056i0.m1944I2(updateRecentStickers);
+        this.f35059i0.m1944I2(updateRecentStickers);
     }
 
     public boolean m2144z2(org.drinkless.p210td.libcore.telegram.TdApi.Chat r7, boolean r8) {
@@ -8338,14 +8338,14 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
     }
 
     public int m2142z4() {
-        return this.f35023Y;
+        return this.f35026Y;
     }
 
     public TdApi.FormattedText m2141z5(TdApi.Message message) {
         if (message == null) {
             return null;
         }
-        TdApi.FormattedText K5 = m2785K5(message.chatId, message.f25406id);
+        TdApi.FormattedText K5 = m2785K5(message.chatId, message.f25409id);
         return K5 != null ? K5 : C7321e.m16899w1(message.content);
     }
 
@@ -8372,38 +8372,38 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
 
     public void m2134zc(int i) {
         if (i > 0) {
-            this.f34976G1 += i;
+            this.f34979G1 += i;
             m2238t4().m2099x();
         }
     }
 
     public final void m2133zd(TdApi.UpdateChatPendingJoinRequests updateChatPendingJoinRequests) {
-        synchronized (this.f35030a0) {
-            TdApi.Chat chat = this.f35034b0.get(Long.valueOf(updateChatPendingJoinRequests.chatId));
+        synchronized (this.f35033a0) {
+            TdApi.Chat chat = this.f35037b0.get(Long.valueOf(updateChatPendingJoinRequests.chatId));
             if (!C10859mj.m2997b(updateChatPendingJoinRequests.chatId, chat, updateChatPendingJoinRequests)) {
                 chat.pendingJoinRequests = updateChatPendingJoinRequests.pendingJoinRequests;
-                this.f35056i0.m1837l1(updateChatPendingJoinRequests);
+                this.f35059i0.m1837l1(updateChatPendingJoinRequests);
             }
         }
     }
 
     public final void m2132ze(TdApi.UpdateSavedAnimations updateSavedAnimations) {
-        this.f35056i0.m1940J2(updateSavedAnimations);
+        this.f35059i0.m1940J2(updateSavedAnimations);
     }
 
     public static class C10936f {
-        public final List<TdApi.Message> f35133a;
-        public final boolean f35134b;
-        public final boolean f35135c;
+        public final List<TdApi.Message> f35136a;
+        public final boolean f35137b;
+        public final boolean f35138c;
 
         public C10936f(List<TdApi.Message> list, boolean z, boolean z2) {
-            this.f35133a = list;
-            this.f35134b = z;
-            this.f35135c = z2;
+            this.f35136a = list;
+            this.f35137b = z;
+            this.f35138c = z2;
         }
 
         public boolean m2131a() {
-            return this.f35134b || this.f35135c;
+            return this.f35137b || this.f35138c;
         }
 
         public boolean equals(Object obj) {
@@ -8413,14 +8413,14 @@ public class C10930q6 implements AbstractC11073vb, C4868i.AbstractC4886q {
             if (obj == null || !(obj instanceof C10936f)) {
                 return false;
             }
-            List<TdApi.Message> list = ((C10936f) obj).f35133a;
-            if (list.size() != this.f35133a.size()) {
+            List<TdApi.Message> list = ((C10936f) obj).f35136a;
+            if (list.size() != this.f35136a.size()) {
                 return false;
             }
             for (int i = 0; i < list.size(); i++) {
                 TdApi.Message message = list.get(i);
-                TdApi.Message message2 = this.f35133a.get(i);
-                if (!(message.chatId == message2.chatId && message.f25406id == message2.f25406id && message.mediaAlbumId == message2.mediaAlbumId)) {
+                TdApi.Message message2 = this.f35136a.get(i);
+                if (!(message.chatId == message2.chatId && message.f25409id == message2.f25409id && message.mediaAlbumId == message2.mediaAlbumId)) {
                     return false;
                 }
             }

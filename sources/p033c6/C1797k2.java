@@ -14,13 +14,13 @@ public final class C1797k2 implements AbstractC4517h {
         this.f6422d = g2Var;
     }
 
-    public final void m35978a(C4511d dVar, boolean z) {
+    public final void m35981a(C4511d dVar, boolean z) {
         this.f6419a = false;
         this.f6421c = dVar;
         this.f6420b = z;
     }
 
-    public final void m35977b() {
+    public final void m35980b() {
         if (!this.f6419a) {
             this.f6419a = true;
             return;
@@ -30,15 +30,15 @@ public final class C1797k2 implements AbstractC4517h {
 
     @Override
     public final AbstractC4517h mo5167d(String str) {
-        m35977b();
-        this.f6422d.m36031f(this.f6421c, str, this.f6420b);
+        m35980b();
+        this.f6422d.m36034f(this.f6421c, str, this.f6420b);
         return this;
     }
 
     @Override
     public final AbstractC4517h mo5166e(boolean z) {
-        m35977b();
-        this.f6422d.m36030g(this.f6421c, z ? 1 : 0, this.f6420b);
+        m35980b();
+        this.f6422d.m36033g(this.f6421c, z ? 1 : 0, this.f6420b);
         return this;
     }
 }

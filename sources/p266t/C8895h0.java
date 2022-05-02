@@ -8,17 +8,17 @@ import p279u.C9407g;
 
 public class C8895h0 extends C8893g0 {
     public C8895h0(CameraDevice cameraDevice) {
-        super((CameraDevice) C1132h.m38322e(cameraDevice), null);
+        super((CameraDevice) C1132h.m38325e(cameraDevice), null);
     }
 
     @Override
-    public void mo10987a(C9407g gVar) {
+    public void mo10986a(C9407g gVar) {
         SessionConfiguration sessionConfiguration = (SessionConfiguration) gVar.m8775i();
-        C1132h.m38322e(sessionConfiguration);
+        C1132h.m38325e(sessionConfiguration);
         try {
-            this.f28725a.createCaptureSession(sessionConfiguration);
+            this.f28728a.createCaptureSession(sessionConfiguration);
         } catch (CameraAccessException e) {
-            throw C8887f.m11022e(e);
+            throw C8887f.m11021e(e);
         }
     }
 }

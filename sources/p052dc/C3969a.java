@@ -20,15 +20,15 @@ public final class C3969a implements AbstractC3989k {
         public C3970a() {
         }
 
-        public final AbstractC3989k m29443a() {
-            if (m29442b()) {
+        public final AbstractC3989k m29445a() {
+            if (m29444b()) {
                 return new C3969a();
             }
             return null;
         }
 
-        public final boolean m29442b() {
-            return C2083h.f7326c.m35673h() && Build.VERSION.SDK_INT >= 29;
+        public final boolean m29444b() {
+            return C2083h.f7326c.m35676h() && Build.VERSION.SDK_INT >= 29;
         }
 
         public C3970a(C8294g gVar) {
@@ -37,20 +37,20 @@ public final class C3969a implements AbstractC3989k {
     }
 
     @Override
-    public boolean mo29419a(SSLSocket sSLSocket) {
-        C8298k.m12934e(sSLSocket, "sslSocket");
+    public boolean mo29421a(SSLSocket sSLSocket) {
+        C8298k.m12933e(sSLSocket, "sslSocket");
         return SSLSockets.isSupportedSocket(sSLSocket);
     }
 
     @Override
-    public boolean mo29418b() {
-        return f13340a.m29442b();
+    public boolean mo29420b() {
+        return f13340a.m29444b();
     }
 
     @Override
     @SuppressLint({"NewApi"})
-    public String mo29417c(SSLSocket sSLSocket) {
-        C8298k.m12934e(sSLSocket, "sslSocket");
+    public String mo29419c(SSLSocket sSLSocket) {
+        C8298k.m12933e(sSLSocket, "sslSocket");
         String applicationProtocol = sSLSocket.getApplicationProtocol();
         if (applicationProtocol != null && (applicationProtocol.hashCode() != 0 || !applicationProtocol.equals(""))) {
             return applicationProtocol;
@@ -60,14 +60,14 @@ public final class C3969a implements AbstractC3989k {
 
     @Override
     @SuppressLint({"NewApi"})
-    public void mo29416d(SSLSocket sSLSocket, String str, List<? extends EnumC9064a0> list) {
-        C8298k.m12934e(sSLSocket, "sslSocket");
-        C8298k.m12934e(list, "protocols");
+    public void mo29418d(SSLSocket sSLSocket, String str, List<? extends EnumC9064a0> list) {
+        C8298k.m12933e(sSLSocket, "sslSocket");
+        C8298k.m12933e(list, "protocols");
         try {
             SSLSockets.setUseSessionTickets(sSLSocket, true);
             SSLParameters sSLParameters = sSLSocket.getSSLParameters();
-            C8298k.m12935d(sSLParameters, "sslParameters");
-            Object[] array = C2083h.f7326c.m35679b(list).toArray(new String[0]);
+            C8298k.m12934d(sSLParameters, "sslParameters");
+            Object[] array = C2083h.f7326c.m35682b(list).toArray(new String[0]);
             if (array != null) {
                 sSLParameters.setApplicationProtocols((String[]) array);
                 sSLSocket.setSSLParameters(sSLParameters);

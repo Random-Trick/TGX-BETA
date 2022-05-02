@@ -20,14 +20,14 @@ public class animationInterpolatorC1520f implements Interpolator {
         this(context.getResources(), context.getTheme(), attributeSet, xmlPullParser);
     }
 
-    public final void m36555a(float f, float f2, float f3, float f4) {
+    public final void m36558a(float f, float f2, float f3, float f4) {
         Path path = new Path();
         path.moveTo(0.0f, 0.0f);
         path.cubicTo(f, f2, f3, f4, 1.0f, 1.0f);
-        m36554b(path);
+        m36557b(path);
     }
 
-    public final void m36554b(Path path) {
+    public final void m36557b(Path path) {
         int i = 0;
         PathMeasure pathMeasure = new PathMeasure(path, false);
         float length = pathMeasure.getLength();
@@ -79,34 +79,34 @@ public class animationInterpolatorC1520f implements Interpolator {
         throw new IllegalArgumentException("The Path has a invalid length " + length);
     }
 
-    public final void m36553c(float f, float f2) {
+    public final void m36556c(float f, float f2) {
         Path path = new Path();
         path.moveTo(0.0f, 0.0f);
         path.quadTo(f, f2, 1.0f, 1.0f);
-        m36554b(path);
+        m36557b(path);
     }
 
-    public final void m36552d(TypedArray typedArray, XmlPullParser xmlPullParser) {
-        if (C8621i.m11897j(xmlPullParser, "pathData")) {
-            String i = C8621i.m11898i(typedArray, xmlPullParser, "pathData", 4);
-            Path e = C8931c.m10923e(i);
+    public final void m36555d(TypedArray typedArray, XmlPullParser xmlPullParser) {
+        if (C8621i.m11896j(xmlPullParser, "pathData")) {
+            String i = C8621i.m11897i(typedArray, xmlPullParser, "pathData", 4);
+            Path e = C8931c.m10922e(i);
             if (e != null) {
-                m36554b(e);
+                m36557b(e);
                 return;
             }
             throw new InflateException("The path is null, which is created from " + i);
-        } else if (!C8621i.m11897j(xmlPullParser, "controlX1")) {
+        } else if (!C8621i.m11896j(xmlPullParser, "controlX1")) {
             throw new InflateException("pathInterpolator requires the controlX1 attribute");
-        } else if (C8621i.m11897j(xmlPullParser, "controlY1")) {
-            float f = C8621i.m11901f(typedArray, xmlPullParser, "controlX1", 0, 0.0f);
-            float f2 = C8621i.m11901f(typedArray, xmlPullParser, "controlY1", 1, 0.0f);
-            boolean j = C8621i.m11897j(xmlPullParser, "controlX2");
-            if (j != C8621i.m11897j(xmlPullParser, "controlY2")) {
+        } else if (C8621i.m11896j(xmlPullParser, "controlY1")) {
+            float f = C8621i.m11900f(typedArray, xmlPullParser, "controlX1", 0, 0.0f);
+            float f2 = C8621i.m11900f(typedArray, xmlPullParser, "controlY1", 1, 0.0f);
+            boolean j = C8621i.m11896j(xmlPullParser, "controlX2");
+            if (j != C8621i.m11896j(xmlPullParser, "controlY2")) {
                 throw new InflateException("pathInterpolator requires both controlX2 and controlY2 for cubic Beziers.");
             } else if (!j) {
-                m36553c(f, f2);
+                m36556c(f, f2);
             } else {
-                m36555a(f, f2, C8621i.m11901f(typedArray, xmlPullParser, "controlX2", 2, 0.0f), C8621i.m11901f(typedArray, xmlPullParser, "controlY2", 3, 0.0f));
+                m36558a(f, f2, C8621i.m11900f(typedArray, xmlPullParser, "controlX2", 2, 0.0f), C8621i.m11900f(typedArray, xmlPullParser, "controlY2", 3, 0.0f));
             }
         } else {
             throw new InflateException("pathInterpolator requires the controlY1 attribute");
@@ -142,8 +142,8 @@ public class animationInterpolatorC1520f implements Interpolator {
     }
 
     public animationInterpolatorC1520f(Resources resources, Resources.Theme theme, AttributeSet attributeSet, XmlPullParser xmlPullParser) {
-        TypedArray k = C8621i.m11896k(resources, theme, attributeSet, C1511a.f5393l);
-        m36552d(k, xmlPullParser);
+        TypedArray k = C8621i.m11895k(resources, theme, attributeSet, C1511a.f5393l);
+        m36555d(k, xmlPullParser);
         k.recycle();
     }
 }

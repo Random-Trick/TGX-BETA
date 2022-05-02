@@ -21,8 +21,8 @@ final class C5515z implements AbstractC5811y {
     }
 
     @Override
-    public boolean mo22124a(Consumer consumer) {
-        return AbstractC5485a.m22564q(this, consumer);
+    public boolean mo22125a(Consumer consumer) {
+        return AbstractC5485a.m22565q(this, consumer);
     }
 
     public C5515z trySplit() {
@@ -47,7 +47,7 @@ final class C5515z implements AbstractC5811y {
 
     @Override
     public void forEachRemaining(Consumer consumer) {
-        AbstractC5485a.m22572c(this, consumer);
+        AbstractC5485a.m22573c(this, consumer);
     }
 
     @Override
@@ -57,12 +57,12 @@ final class C5515z implements AbstractC5811y {
 
     @Override
     public long getExactSizeIfKnown() {
-        return AbstractC5485a.m22569h(this);
+        return AbstractC5485a.m22570h(this);
     }
 
     @Override
     public boolean hasCharacteristics(int i) {
-        return AbstractC5485a.m22568j(this, i);
+        return AbstractC5485a.m22569j(this, i);
     }
 
     @Override
@@ -72,7 +72,7 @@ final class C5515z implements AbstractC5811y {
         if (j >= this.f18050b) {
             return false;
         }
-        gVar.mo22150c(ThreadLocalRandom.current().m22531c(this.f18051c, this.f18052d));
+        gVar.mo22151c(ThreadLocalRandom.current().m22532c(this.f18051c, this.f18052d));
         this.f18049a = j + 1;
         return true;
     }
@@ -88,7 +88,7 @@ final class C5515z implements AbstractC5811y {
             double d2 = this.f18052d;
             ThreadLocalRandom current = ThreadLocalRandom.current();
             do {
-                gVar.mo22150c(current.m22531c(d, d2));
+                gVar.mo22151c(current.m22532c(d, d2));
                 j++;
             } while (j < j2);
         }

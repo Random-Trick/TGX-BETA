@@ -60,7 +60,7 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
             return tVar;
         }
 
-        public C0171b m42146c(String str) {
+        public C0171b m42149c(String str) {
             this.f642d = str;
             return this;
         }
@@ -73,11 +73,11 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
             this.f647a = map;
         }
 
-        public static boolean m42142i(Map.Entry entry) {
+        public static boolean m42145i(Map.Entry entry) {
             return entry.getKey() != null;
         }
 
-        public static boolean m42141j(String str) {
+        public static boolean m42144j(String str) {
             return str != null;
         }
 
@@ -137,7 +137,7 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
         }
     }
 
-    public static void m42155B(HttpURLConnection httpURLConnection, long j) {
+    public static void m42158B(HttpURLConnection httpURLConnection, long j) {
         int i;
         if (httpURLConnection != null && (i = C1216l0.f4526a) >= 19 && i <= 20) {
             try {
@@ -151,7 +151,7 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
                 }
                 String name = inputStream.getClass().getName();
                 if ("com.android.okhttp.internal.http.HttpTransport$ChunkedInputStream".equals(name) || "com.android.okhttp.internal.http.HttpTransport$FixedLengthInputStream".equals(name)) {
-                    Method declaredMethod = ((Class) C1186a.m38185e(inputStream.getClass().getSuperclass())).getDeclaredMethod("unexpectedEndOfInput", new Class[0]);
+                    Method declaredMethod = ((Class) C1186a.m38188e(inputStream.getClass().getSuperclass())).getDeclaredMethod("unexpectedEndOfInput", new Class[0]);
                     declaredMethod.setAccessible(true);
                     declaredMethod.invoke(inputStream, new Object[0]);
                 }
@@ -160,25 +160,25 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
         }
     }
 
-    public static boolean m42149y(HttpURLConnection httpURLConnection) {
+    public static boolean m42152y(HttpURLConnection httpURLConnection) {
         return "gzip".equalsIgnoreCase(httpURLConnection.getHeaderField("Content-Encoding"));
     }
 
-    public final HttpURLConnection m42156A(URL url, int i, byte[] bArr, long j, long j2, boolean z, boolean z2, Map<String, String> map) {
-        HttpURLConnection C = m42154C(url);
+    public final HttpURLConnection m42159A(URL url, int i, byte[] bArr, long j, long j2, boolean z, boolean z2, Map<String, String> map) {
+        HttpURLConnection C = m42157C(url);
         C.setConnectTimeout(this.f625f);
         C.setReadTimeout(this.f626g);
         HashMap hashMap = new HashMap();
         AbstractC0180y.C0186f fVar = this.f628i;
         if (fVar != null) {
-            hashMap.putAll(fVar.m42131a());
+            hashMap.putAll(fVar.m42134a());
         }
-        hashMap.putAll(this.f629j.m42131a());
+        hashMap.putAll(this.f629j.m42134a());
         hashMap.putAll(map);
         for (Map.Entry entry : hashMap.entrySet()) {
             C.setRequestProperty((String) entry.getKey(), (String) entry.getValue());
         }
-        String a = C0187z.m42130a(j, j2);
+        String a = C0187z.m42133a(j, j2);
         if (a != null) {
             C.setRequestProperty("Range", a);
         }
@@ -189,7 +189,7 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
         C.setRequestProperty("Accept-Encoding", z ? "gzip" : "identity");
         C.setInstanceFollowRedirects(z2);
         C.setDoOutput(bArr != null);
-        C.setRequestMethod(C0159o.m42202c(i));
+        C.setRequestMethod(C0159o.m42205c(i));
         if (bArr != null) {
             C.setFixedLengthStreamingMode(bArr.length);
             C.connect();
@@ -202,11 +202,11 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
         return C;
     }
 
-    public HttpURLConnection m42154C(URL url) {
+    public HttpURLConnection m42157C(URL url) {
         return (HttpURLConnection) url.openConnection();
     }
 
-    public final int m42153D(byte[] bArr, int i, int i2) {
+    public final int m42156D(byte[] bArr, int i, int i2) {
         if (i2 == 0) {
             return 0;
         }
@@ -218,25 +218,25 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
             }
             i2 = (int) Math.min(i2, j2);
         }
-        int read = ((InputStream) C1216l0.m37968j(this.f634o)).read(bArr, i, i2);
+        int read = ((InputStream) C1216l0.m37971j(this.f634o)).read(bArr, i, i2);
         if (read == -1) {
             return -1;
         }
         this.f638s += read;
-        m42225s(read);
+        m42228s(read);
         return read;
     }
 
-    public final void m42152E(long j, C0159o oVar) {
+    public final void m42155E(long j, C0159o oVar) {
         if (j != 0) {
             byte[] bArr = new byte[Log.TAG_EMOJI];
             while (j > 0) {
-                int read = ((InputStream) C1216l0.m37968j(this.f634o)).read(bArr, 0, (int) Math.min(j, (long) Log.TAG_EMOJI));
+                int read = ((InputStream) C1216l0.m37971j(this.f634o)).read(bArr, 0, (int) Math.min(j, (long) Log.TAG_EMOJI));
                 if (Thread.currentThread().isInterrupted()) {
                     throw new AbstractC0180y.C0183c(new InterruptedIOException(), oVar, 2000, 1);
                 } else if (read != -1) {
                     j -= read;
-                    m42225s(read);
+                    m42228s(read);
                 } else {
                     throw new AbstractC0180y.C0183c(oVar, 2008, 1);
                 }
@@ -247,9 +247,9 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
     @Override
     public int mo4414b(byte[] bArr, int i, int i2) {
         try {
-            return m42153D(bArr, i, i2);
+            return m42156D(bArr, i, i2);
         } catch (IOException e) {
-            throw AbstractC0180y.C0183c.m42132c(e, (C0159o) C1216l0.m37968j(this.f632m), 2);
+            throw AbstractC0180y.C0183c.m42135c(e, (C0159o) C1216l0.m37971j(this.f632m), 2);
         }
     }
 
@@ -260,9 +260,9 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
         long j = 0;
         this.f638s = 0L;
         this.f637r = 0L;
-        m42223u(oVar);
+        m42226u(oVar);
         try {
-            HttpURLConnection z = m42148z(oVar);
+            HttpURLConnection z = m42151z(oVar);
             this.f633n = z;
             this.f636q = z.getResponseCode();
             String responseMessage = z.getResponseMessage();
@@ -271,9 +271,9 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
             if (i < 200 || i > 299) {
                 Map<String, List<String>> headerFields = z.getHeaderFields();
                 if (this.f636q == 416) {
-                    if (oVar.f559g == C0187z.m42128c(z.getHeaderField("Content-Range"))) {
+                    if (oVar.f559g == C0187z.m42131c(z.getHeaderField("Content-Range"))) {
                         this.f635p = true;
-                        m42222v(oVar);
+                        m42225v(oVar);
                         long j3 = oVar.f560h;
                         if (j3 != -1) {
                             return j3;
@@ -283,12 +283,12 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
                 }
                 InputStream errorStream = z.getErrorStream();
                 try {
-                    bArr = errorStream != null ? C1216l0.m38014D0(errorStream) : C1216l0.f4531f;
+                    bArr = errorStream != null ? C1216l0.m38017D0(errorStream) : C1216l0.f4531f;
                 } catch (IOException unused) {
                     bArr = C1216l0.f4531f;
                 }
                 byte[] bArr2 = bArr;
-                m42151w();
+                m42154w();
                 throw new AbstractC0180y.C0185e(this.f636q, responseMessage, this.f636q == 416 ? new C0156l(2008) : null, headerFields, oVar, bArr2);
             }
             String contentType = z.getContentType();
@@ -300,13 +300,13 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
                         j = j4;
                     }
                 }
-                boolean y = m42149y(z);
+                boolean y = m42152y(z);
                 if (!y) {
                     long j5 = oVar.f560h;
                     if (j5 != -1) {
                         this.f637r = j5;
                     } else {
-                        long b = C0187z.m42129b(z.getHeaderField("Content-Length"), z.getHeaderField("Content-Range"));
+                        long b = C0187z.m42132b(z.getHeaderField("Content-Length"), z.getHeaderField("Content-Range"));
                         if (b != -1) {
                             j2 = b - j;
                         }
@@ -321,28 +321,28 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
                         this.f634o = new GZIPInputStream(this.f634o);
                     }
                     this.f635p = true;
-                    m42222v(oVar);
+                    m42225v(oVar);
                     try {
-                        m42152E(j, oVar);
+                        m42155E(j, oVar);
                         return this.f637r;
                     } catch (IOException e) {
-                        m42151w();
+                        m42154w();
                         if (e instanceof AbstractC0180y.C0183c) {
                             throw ((AbstractC0180y.C0183c) e);
                         }
                         throw new AbstractC0180y.C0183c(e, oVar, 2000, 1);
                     }
                 } catch (IOException e2) {
-                    m42151w();
+                    m42154w();
                     throw new AbstractC0180y.C0183c(e2, oVar, 2000, 1);
                 }
             } else {
-                m42151w();
+                m42154w();
                 throw new AbstractC0180y.C0184d(contentType, oVar);
             }
         } catch (IOException e3) {
-            m42151w();
-            throw AbstractC0180y.C0183c.m42132c(e3, oVar, 1);
+            m42154w();
+            throw AbstractC0180y.C0183c.m42135c(e3, oVar, 1);
         }
     }
 
@@ -356,19 +356,19 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
                 if (j != -1) {
                     j2 = j - this.f638s;
                 }
-                m42155B(this.f633n, j2);
+                m42158B(this.f633n, j2);
                 try {
                     inputStream.close();
                 } catch (IOException e) {
-                    throw new AbstractC0180y.C0183c(e, (C0159o) C1216l0.m37968j(this.f632m), 2000, 3);
+                    throw new AbstractC0180y.C0183c(e, (C0159o) C1216l0.m37971j(this.f632m), 2000, 3);
                 }
             }
         } finally {
             this.f634o = null;
-            m42151w();
+            m42154w();
             if (this.f635p) {
                 this.f635p = false;
-                m42224t();
+                m42227t();
             }
         }
     }
@@ -391,19 +391,19 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
         return Uri.parse(httpURLConnection.getURL().toString());
     }
 
-    public final void m42151w() {
+    public final void m42154w() {
         HttpURLConnection httpURLConnection = this.f633n;
         if (httpURLConnection != null) {
             try {
                 httpURLConnection.disconnect();
             } catch (Exception e) {
-                C1230s.m37886d("DefaultHttpDataSource", "Unexpected error while disconnecting", e);
+                C1230s.m37889d("DefaultHttpDataSource", "Unexpected error while disconnecting", e);
             }
             this.f633n = null;
         }
     }
 
-    public final URL m42150x(URL url, String str, C0159o oVar) {
+    public final URL m42153x(URL url, String str, C0159o oVar) {
         if (str != null) {
             try {
                 URL url2 = new URL(url, str);
@@ -431,8 +431,8 @@ public class C0169t extends AbstractC0139f implements AbstractC0180y {
         }
     }
 
-    public final java.net.HttpURLConnection m42148z(p006a5.C0159o r26) {
-        throw new UnsupportedOperationException("Method not decompiled: p006a5.C0169t.m42148z(a5.o):java.net.HttpURLConnection");
+    public final java.net.HttpURLConnection m42151z(p006a5.C0159o r26) {
+        throw new UnsupportedOperationException("Method not decompiled: p006a5.C0169t.m42151z(a5.o):java.net.HttpURLConnection");
     }
 
     public C0169t(String str, int i, int i2, boolean z, AbstractC0180y.C0186f fVar, AbstractC10434j<String> jVar, boolean z2) {

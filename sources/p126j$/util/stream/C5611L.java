@@ -13,7 +13,7 @@ public final class C5611L implements AbstractC5542x, AbstractC5531m {
     }
 
     @Override
-    public Object mo22178w(int i) {
+    public Object mo22179w(int i) {
         int i2 = C5789w2.f18500w;
         return new Long[i];
     }

@@ -25,8 +25,8 @@ public class C9404e extends C9402d {
 
     @Override
     public Object mo8787d() {
-        C1132h.m38326a(this.f30444a instanceof OutputConfiguration);
-        return this.f30444a;
+        C1132h.m38329a(this.f30447a instanceof OutputConfiguration);
+        return this.f30447a;
     }
 
     public C9404e(Object obj) {

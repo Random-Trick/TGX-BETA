@@ -53,25 +53,25 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
         }
 
         @Override
-        public void mo32051P2(C2964ra raVar, int i, C6992p0 p0Var, boolean z, boolean z2) {
+        public void mo32054P2(C2964ra raVar, int i, C6992p0 p0Var, boolean z, boolean z2) {
             C4817v6 v6Var;
             C6853c2 button;
             if (z && s20.this.f10163M0 != null) {
-                v6Var = (C4817v6) s20.this.f10163M0.get(i - s20.this.m32068jh());
+                v6Var = (C4817v6) s20.this.f10163M0.get(i - s20.this.m32071jh());
             } else if (s20.this.f10162L0 != null) {
-                v6Var = (C4817v6) s20.this.f10162L0.get(i - s20.this.m32067kh());
+                v6Var = (C4817v6) s20.this.f10162L0.get(i - s20.this.m32070kh());
             } else {
                 return;
             }
             p0Var.setStickerSet(v6Var);
             if (z && (button = p0Var.getButton()) != null) {
-                int lh = s20.this.m32066lh(v6Var);
+                int lh = s20.this.m32069lh(v6Var);
                 boolean z3 = false;
-                button.m18769g(lh == 1, z2);
+                button.m18770g(lh == 1, z2);
                 if (lh == 2) {
                     z3 = true;
                 }
-                button.m18768h(z3, z2);
+                button.m18769h(z3, z2);
             }
         }
     }
@@ -84,48 +84,48 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
         }
 
         @Override
-        public void mo9884B(RecyclerView.AbstractC0886d0 d0Var, int i) {
+        public void mo9883B(RecyclerView.AbstractC0886d0 d0Var, int i) {
         }
 
-        public final void m32050C(int i, int i2) {
-            s20.this.m32101Gh();
+        public final void m32053C(int i, int i2) {
+            s20.this.m32104Gh();
         }
 
         @Override
-        public void mo9881c(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var) {
+        public void mo9880c(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var) {
             int i;
-            super.mo9881c(recyclerView, d0Var);
+            super.mo9880c(recyclerView, d0Var);
             int i2 = this.f10167d;
             if (!(i2 == -1 || (i = this.f10168e) == -1 || i2 == i)) {
-                m32050C(i2, i);
+                m32053C(i2, i);
             }
             this.f10168e = -1;
             this.f10167d = -1;
         }
 
         @Override
-        public int mo9880k(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var) {
+        public int mo9879k(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var) {
             int k;
-            if (s20.this.f10162L0 == null || (k = d0Var.m39335k()) == -1 || k < s20.this.m32067kh() || s20.this.f10162L0 == null || k >= s20.this.m32067kh() + s20.this.f10162L0.size()) {
+            if (s20.this.f10162L0 == null || (k = d0Var.m39338k()) == -1 || k < s20.this.m32070kh() || s20.this.f10162L0 == null || k >= s20.this.m32070kh() + s20.this.f10162L0.size()) {
                 return 0;
             }
-            return C0962g.AbstractC0968f.m38781t(3, 0);
+            return C0962g.AbstractC0968f.m38784t(3, 0);
         }
 
         @Override
-        public boolean mo9879r() {
+        public boolean mo9878r() {
             return true;
         }
 
         @Override
-        public boolean mo9877y(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var, RecyclerView.AbstractC0886d0 d0Var2) {
-            int k = d0Var.m39335k();
-            int k2 = d0Var2.m39335k();
-            if (s20.this.f10162L0 == null || k < s20.this.m32067kh() || k >= s20.this.m32067kh() + s20.this.f10162L0.size() || k2 < s20.this.m32067kh() || k2 >= s20.this.m32067kh() + s20.this.f10162L0.size()) {
+        public boolean mo9876y(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var, RecyclerView.AbstractC0886d0 d0Var2) {
+            int k = d0Var.m39338k();
+            int k2 = d0Var2.m39338k();
+            if (s20.this.f10162L0 == null || k < s20.this.m32070kh() || k >= s20.this.m32070kh() + s20.this.f10162L0.size() || k2 < s20.this.m32070kh() || k2 >= s20.this.m32070kh() + s20.this.f10162L0.size()) {
                 return false;
             }
             s20 s20Var = s20.this;
-            s20Var.m32113Ah(k - s20Var.m32067kh(), k2 - s20.this.m32067kh());
+            s20Var.m32116Ah(k - s20Var.m32070kh(), k2 - s20.this.m32070kh());
             if (this.f10167d == -1) {
                 this.f10167d = k;
             }
@@ -134,8 +134,8 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
         }
 
         @Override
-        public void mo9876z(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var, int i, RecyclerView.AbstractC0886d0 d0Var2, int i2, int i3, int i4) {
-            super.mo9876z(recyclerView, d0Var, i, d0Var2, i2, i3, i4);
+        public void mo9875z(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var, int i, RecyclerView.AbstractC0886d0 d0Var2, int i2, int i3, int i4) {
+            super.mo9875z(recyclerView, d0Var, i, d0Var2, i2, i3, i4);
             d0Var.f3479a.invalidate();
             d0Var2.f3479a.invalidate();
         }
@@ -151,8 +151,8 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
             if (s20.this.f10159I0) {
                 return;
             }
-            if (((s20.this.f10162L0 != null && !s20.this.f10162L0.isEmpty()) || (s20.this.f10163M0 != null && !s20.this.f10163M0.isEmpty())) && (a2 = ((LinearLayoutManager) recyclerView.getLayoutManager()).m39546a2()) != -1 && a2 + 10 >= s20.this.f10156F0.mo6153D() - 1) {
-                s20.this.m32052zh(true);
+            if (((s20.this.f10162L0 != null && !s20.this.f10162L0.isEmpty()) || (s20.this.f10163M0 != null && !s20.this.f10163M0.isEmpty())) && (a2 = ((LinearLayoutManager) recyclerView.getLayoutManager()).m39549a2()) != -1 && a2 + 10 >= s20.this.f10156F0.mo6153D() - 1) {
+                s20.this.m32055zh(true);
             }
         }
     }
@@ -168,29 +168,29 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
             this.f10174c = jArr;
         }
 
-        public void m32047c(C4817v6 v6Var, int i) {
+        public void m32050c(C4817v6 v6Var, int i) {
             if (!s20.this.m9347Sa()) {
-                s20.this.m32072fh(v6Var, i);
+                s20.this.m32075fh(v6Var, i);
             }
         }
 
-        public void m32046d() {
+        public void m32049d() {
             if (!s20.this.m9347Sa()) {
-                s20.this.m32099Hh(false);
+                s20.this.m32102Hh(false);
             }
         }
 
         @Override
         public void mo255t2(TdApi.Object object) {
             if (object.getConstructor() == -1816236758) {
-                final C4817v6 v6Var = new C4817v6(s20.this.f30167b, (TdApi.StickerSet) object);
+                final C4817v6 v6Var = new C4817v6(s20.this.f30170b, (TdApi.StickerSet) object);
                 int[] iArr = this.f10172a;
                 final int i = iArr[1];
                 iArr[1] = i + 1;
-                s20.this.f30167b.m2485dd().post(new Runnable() {
+                s20.this.f30170b.m2485dd().post(new Runnable() {
                     @Override
                     public final void run() {
-                        s20.C3029d.this.m32047c(v6Var, i);
+                        s20.C3029d.this.m32050c(v6Var, i);
                     }
                 });
             }
@@ -198,12 +198,12 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
             int i2 = iArr2[0] + 1;
             iArr2[0] = i2;
             if (i2 < this.f10173b) {
-                s20.this.f30167b.m2270r4().m14783o(new TdApi.GetStickerSet(this.f10174c[this.f10172a[0]]), this);
+                s20.this.f30170b.m2270r4().m14783o(new TdApi.GetStickerSet(this.f10174c[this.f10172a[0]]), this);
             } else {
-                s20.this.f30167b.m2485dd().post(new Runnable() {
+                s20.this.f30170b.m2485dd().post(new Runnable() {
                     @Override
                     public final void run() {
-                        s20.C3029d.this.m32046d();
+                        s20.C3029d.this.m32049d();
                     }
                 });
             }
@@ -220,7 +220,7 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
             this.f10176b = z;
         }
 
-        public C3030e m32045a(ArrayList<C4817v6> arrayList) {
+        public C3030e m32048a(ArrayList<C4817v6> arrayList) {
             this.f10177c = arrayList;
             return this;
         }
@@ -230,216 +230,216 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
         super(context, q6Var);
     }
 
-    public static boolean m32064nh(TdApi.StickerType stickerType) {
+    public static boolean m32067nh(TdApi.StickerType stickerType) {
         return stickerType.getConstructor() == -839756573;
     }
 
-    public void m32062ph(TdApi.Object object, final C4817v6 v6Var) {
+    public void m32065ph(TdApi.Object object, final C4817v6 v6Var) {
         if (!m9347Sa()) {
             int i = 0;
             boolean z = object.getConstructor() == -722616727;
             if (z) {
-                v6Var.m25160y();
+                v6Var.m25161y();
             }
-            long c = v6Var.m25182c();
+            long c = v6Var.m25183c();
             if (z) {
                 i = 2;
             }
-            m32095Jh(c, i);
+            m32098Jh(c, i);
             if (!z) {
                 return;
             }
             if (this.f10154D0 == 1) {
-                C1379j0.m37332e0(new Runnable() {
+                C1379j0.m37335e0(new Runnable() {
                     @Override
                     public final void run() {
-                        s20.this.m32063oh(v6Var);
+                        s20.this.m32066oh(v6Var);
                     }
                 }, 1500L);
                 return;
             }
             C5324g gVar = this.f10157G0;
             if (gVar != null) {
-                gVar.m23256c(v6Var.m25182c());
+                gVar.m23257c(v6Var.m25183c());
             }
         }
     }
 
-    public void m32061qh(final C4817v6 v6Var, final TdApi.Object object) {
-        this.f30167b.m2485dd().post(new Runnable() {
+    public void m32064qh(final C4817v6 v6Var, final TdApi.Object object) {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                s20.this.m32062ph(object, v6Var);
+                s20.this.m32065ph(object, v6Var);
             }
         });
     }
 
-    public void m32060rh(long[] jArr) {
+    public void m32063rh(long[] jArr) {
         if (!m9347Sa() && !this.f10159I0 && this.f10162L0 != null) {
-            m32070hh(jArr);
+            m32073hh(jArr);
         }
     }
 
-    public void m32059sh(TdApi.Object object) {
+    public void m32062sh(TdApi.Object object) {
         if (!m9347Sa()) {
             this.f10159I0 = false;
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         }
     }
 
-    public void m32058th(ArrayList arrayList, ArrayList arrayList2) {
+    public void m32061th(ArrayList arrayList, ArrayList arrayList2) {
         if (!m9347Sa()) {
             this.f10159I0 = false;
             if (this.f10160J0) {
-                m32073eh(arrayList, arrayList2);
+                m32076eh(arrayList, arrayList2);
             } else {
-                m32093Kh(arrayList, arrayList2);
+                m32096Kh(arrayList, arrayList2);
             }
         }
     }
 
-    public void m32057uh(final ArrayList arrayList, TdApi.Object object) {
+    public void m32060uh(final ArrayList arrayList, TdApi.Object object) {
         final ArrayList<C4817v6> arrayList2;
         if (object.getConstructor() == -1883828812) {
             TdApi.StickerSetInfo[] stickerSetInfoArr = ((TdApi.StickerSets) object).sets;
             if (stickerSetInfoArr.length > 0) {
                 arrayList2 = new ArrayList<>(stickerSetInfoArr.length);
                 for (TdApi.StickerSetInfo stickerSetInfo : stickerSetInfoArr) {
-                    C4817v6 v6Var = new C4817v6(this.f30167b, stickerSetInfo);
-                    v6Var.m25163v(arrayList2);
+                    C4817v6 v6Var = new C4817v6(this.f30170b, stickerSetInfo);
+                    v6Var.m25164v(arrayList2);
                     arrayList2.add(v6Var);
                 }
-                this.f30167b.m2485dd().post(new Runnable() {
+                this.f30170b.m2485dd().post(new Runnable() {
                     @Override
                     public final void run() {
-                        s20.this.m32058th(arrayList, arrayList2);
+                        s20.this.m32061th(arrayList, arrayList2);
                     }
                 });
             }
         }
         arrayList2 = null;
-        this.f30167b.m2485dd().post(new Runnable() {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                s20.this.m32058th(arrayList, arrayList2);
+                s20.this.m32061th(arrayList, arrayList2);
             }
         });
     }
 
-    public void m32056vh(ArrayList arrayList) {
+    public void m32059vh(ArrayList arrayList) {
         if (!m9347Sa()) {
             this.f10159I0 = false;
             if (this.f10160J0) {
-                m32073eh(arrayList, null);
+                m32076eh(arrayList, null);
             } else {
-                m32093Kh(arrayList, null);
+                m32096Kh(arrayList, null);
             }
         }
     }
 
-    public void m32055wh(TdApi.StickerSetInfo stickerSetInfo) {
+    public void m32058wh(TdApi.StickerSetInfo stickerSetInfo) {
         if (!m9347Sa() && !this.f10159I0 && this.f10162L0 != null) {
             if (this.f10154D0 == 2) {
-                m32075ch(stickerSetInfo);
+                m32078ch(stickerSetInfo);
             } else {
-                m32074dh(stickerSetInfo);
+                m32077dh(stickerSetInfo);
             }
         }
     }
 
-    public void m32054xh(TdApi.StickerSetInfo stickerSetInfo) {
+    public void m32057xh(TdApi.StickerSetInfo stickerSetInfo) {
         if (!m9347Sa() && !this.f10159I0 && this.f10162L0 != null && this.f10154D0 != 2) {
-            m32105Eh(stickerSetInfo.f25424id);
+            m32108Eh(stickerSetInfo.f25427id);
         }
     }
 
-    public void m32053yh(TdApi.StickerSetInfo stickerSetInfo) {
+    public void m32056yh(TdApi.StickerSetInfo stickerSetInfo) {
         if (!m9347Sa() && !this.f10159I0 && this.f10162L0 != null && this.f10154D0 != 2) {
-            m32105Eh(stickerSetInfo.f25424id);
+            m32108Eh(stickerSetInfo.f25427id);
         }
     }
 
-    public final void m32113Ah(int i, int i2) {
+    public final void m32116Ah(int i, int i2) {
         ArrayList<C4817v6> arrayList;
         if (i != i2 && (arrayList = this.f10162L0) != null) {
-            C5062b.m24149w(arrayList, i, i2);
-            int kh = i + m32067kh();
-            int kh2 = i2 + m32067kh();
-            int X1 = ((LinearLayoutManager) m31303kg().getLayoutManager()).m39549X1();
-            View C = m31303kg().getLayoutManager().mo39262C(X1);
+            C5062b.m24150w(arrayList, i, i2);
+            int kh = i + m32070kh();
+            int kh2 = i2 + m32070kh();
+            int X1 = ((LinearLayoutManager) m31305kg().getLayoutManager()).m39552X1();
+            View C = m31305kg().getLayoutManager().mo39265C(X1);
             int top = C != null ? C.getTop() : 0;
-            this.f10156F0.m34111z1(kh, kh2, true);
-            ((LinearLayoutManager) m31303kg().getLayoutManager()).m39522z2(X1, top);
+            this.f10156F0.m34114z1(kh, kh2, true);
+            ((LinearLayoutManager) m31305kg().getLayoutManager()).m39525z2(X1, top);
         }
     }
 
-    public void m32111Bh() {
+    public void m32114Bh() {
         if (!this.f10158H0) {
             this.f10158H0 = true;
-            m31303kg().setItemAnimator(new C8731d(C2057b.f7280b, 180L));
+            m31305kg().setItemAnimator(new C8731d(C2057b.f7280b, 180L));
         }
     }
 
-    public final void m32109Ch(int i) {
+    public final void m32112Ch(int i) {
         ArrayList<C4817v6> arrayList = this.f10163M0;
         if (arrayList != null && !arrayList.isEmpty()) {
             C4817v6 remove = this.f10163M0.remove(i);
             C5324g gVar = this.f10157G0;
             if (gVar != null) {
-                gVar.m23256c(remove.m25182c());
+                gVar.m23257c(remove.m25183c());
             }
             if (this.f10163M0.isEmpty()) {
-                this.f10156F0.m34204V1(m32068jh() - 2, 4);
+                this.f10156F0.m34207V1(m32071jh() - 2, 4);
             } else {
-                this.f10156F0.m34204V1(m32068jh() + i, 1);
+                this.f10156F0.m34207V1(m32071jh() + i, 1);
             }
         }
     }
 
-    public final void m32063oh(C4817v6 v6Var) {
+    public final void m32066oh(C4817v6 v6Var) {
         if (this.f10162L0 != null) {
             C5324g gVar = this.f10157G0;
             if (gVar != null) {
-                gVar.m23256c(v6Var.m25182c());
+                gVar.m23257c(v6Var.m25183c());
             }
-            int mh = m32065mh(v6Var.m25182c());
+            int mh = m32068mh(v6Var.m25183c());
             if (mh != -1) {
                 this.f10162L0.remove(mh);
                 if (this.f10162L0.size() == 0) {
-                    m32071gh();
+                    m32074gh();
                     return;
                 }
                 int i = mh + 3;
-                this.f10156F0.m34240F0().remove(i);
-                this.f10156F0.m39306O(i);
+                this.f10156F0.m34243F0().remove(i);
+                this.f10156F0.m39309O(i);
             }
         }
     }
 
-    public final void m32105Eh(long j) {
-        int mh = m32065mh(j);
+    public final void m32108Eh(long j) {
+        int mh = m32068mh(j);
         if (mh != -1) {
-            m32103Fh(mh);
+            m32106Fh(mh);
         }
     }
 
-    public final void m32103Fh(int i) {
+    public final void m32106Fh(int i) {
         ArrayList<C4817v6> arrayList = this.f10162L0;
         if (arrayList != null) {
             arrayList.remove(i);
             if (!this.f10162L0.isEmpty()) {
-                int kh = i + m32067kh();
-                this.f10156F0.m34240F0().remove(kh);
-                this.f10156F0.m39306O(kh);
+                int kh = i + m32070kh();
+                this.f10156F0.m34243F0().remove(kh);
+                this.f10156F0.m39309O(kh);
             } else if (this.f10154D0 == 2) {
-                this.f10156F0.m34204V1(i + 2, 3);
+                this.f10156F0.m34207V1(i + 2, 3);
             } else {
-                m32071gh();
+                m32074gh();
             }
         }
     }
 
-    public final void m32101Gh() {
+    public final void m32104Gh() {
         ArrayList<C4817v6> arrayList = this.f10162L0;
         if (arrayList != null && !arrayList.isEmpty()) {
             long[] jArr = new long[this.f10162L0.size()];
@@ -448,13 +448,13 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
             int i = 0;
             while (it.hasNext()) {
                 i++;
-                jArr[i] = it.next().m25182c();
+                jArr[i] = it.next().m25183c();
             }
-            Client r4 = this.f30167b.m2270r4();
+            Client r4 = this.f30170b.m2270r4();
             if (this.f10154D0 == 2) {
                 z = true;
             }
-            r4.m14783o(new TdApi.ReorderInstalledStickerSets(z, jArr), this.f30167b.m2392ja());
+            r4.m14783o(new TdApi.ReorderInstalledStickerSets(z, jArr), this.f30170b.m2392ja());
         }
     }
 
@@ -462,13 +462,13 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
     public void mo2038H4(int[] iArr, boolean z) {
     }
 
-    public final void m32099Hh(boolean z) {
+    public final void m32102Hh(boolean z) {
         ArrayList<long[]> arrayList;
         if (this.f10164N0 != z) {
             this.f10164N0 = z;
             if (!z && (arrayList = this.f10165O0) != null && !arrayList.isEmpty()) {
                 do {
-                    m32070hh(this.f10165O0.remove(0));
+                    m32073hh(this.f10165O0.remove(0));
                     if (this.f10165O0.isEmpty()) {
                         return;
                     }
@@ -477,25 +477,25 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
         }
     }
 
-    public void m32097Ih(C3030e eVar) {
+    public void m32100Ih(C3030e eVar) {
         super.m9476Ad(eVar);
         this.f10154D0 = eVar.f10175a;
         this.f10155E0 = eVar.f10176b;
         this.f10162L0 = eVar.f10177c;
     }
 
-    public final void m32095Jh(long j, int i) {
+    public final void m32098Jh(long j, int i) {
         if (this.f10157G0 == null) {
             this.f10157G0 = new C5324g();
         }
-        this.f10157G0.m23252g(j, i);
-        this.f10156F0.m34149m3(j);
+        this.f10157G0.m23253g(j, i);
+        this.f10156F0.m34152m3(j);
     }
 
-    public void m32093Kh(ArrayList<C4817v6> arrayList, ArrayList<C4817v6> arrayList2) {
+    public void m32096Kh(ArrayList<C4817v6> arrayList, ArrayList<C4817v6> arrayList2) {
         this.f10162L0 = arrayList;
         this.f10163M0 = arrayList2;
-        m32071gh();
+        m32074gh();
     }
 
     @Override
@@ -510,11 +510,11 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
 
     @Override
     public void mo2036Z(final TdApi.StickerSetInfo stickerSetInfo) {
-        if ((this.f10154D0 == 2 && m32064nh(stickerSetInfo.stickerType)) || (this.f10154D0 == 1 && !m32064nh(stickerSetInfo.stickerType))) {
-            this.f30167b.m2485dd().post(new Runnable() {
+        if ((this.f10154D0 == 2 && m32067nh(stickerSetInfo.stickerType)) || (this.f10154D0 == 1 && !m32067nh(stickerSetInfo.stickerType))) {
+            this.f30170b.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    s20.this.m32055wh(stickerSetInfo);
+                    s20.this.m32058wh(stickerSetInfo);
                 }
             });
         }
@@ -523,39 +523,39 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
     @Override
     public void mo417Z8() {
         super.mo417Z8();
-        this.f30167b.m2781K9().m1786y0(this);
+        this.f30170b.m2781K9().m1786y0(this);
     }
 
-    public final void m32075ch(TdApi.StickerSetInfo stickerSetInfo) {
+    public final void m32078ch(TdApi.StickerSetInfo stickerSetInfo) {
         ArrayList<C4817v6> arrayList = this.f10163M0;
         if (arrayList == null) {
             this.f10163M0 = new ArrayList<>();
         } else {
             Iterator<C4817v6> it = arrayList.iterator();
             while (it.hasNext()) {
-                if (it.next().m25182c() == stickerSetInfo.f25424id) {
+                if (it.next().m25183c() == stickerSetInfo.f25427id) {
                     return;
                 }
             }
         }
-        long j = stickerSetInfo.f25424id;
+        long j = stickerSetInfo.f25427id;
         String str = stickerSetInfo.title;
-        C4817v6 v6Var = new C4817v6(this.f30167b, new TdApi.StickerSetInfo(j, str, str, stickerSetInfo.thumbnail, stickerSetInfo.thumbnailOutline, true, true, stickerSetInfo.isOfficial, stickerSetInfo.stickerType, stickerSetInfo.isViewed, stickerSetInfo.size, stickerSetInfo.covers));
-        v6Var.m25163v(this.f10163M0);
-        int jh = m32068jh();
-        C2964ra N = new C2964ra(26, R.id.btn_stickerSetInfo, 0, 0).m32863N(v6Var.m25182c());
+        C4817v6 v6Var = new C4817v6(this.f30170b, new TdApi.StickerSetInfo(j, str, str, stickerSetInfo.thumbnail, stickerSetInfo.thumbnailOutline, true, true, stickerSetInfo.isOfficial, stickerSetInfo.stickerType, stickerSetInfo.isViewed, stickerSetInfo.size, stickerSetInfo.covers));
+        v6Var.m25164v(this.f10163M0);
+        int jh = m32071jh();
+        C2964ra N = new C2964ra(26, R.id.btn_stickerSetInfo, 0, 0).m32866N(v6Var.m25183c());
         this.f10163M0.add(0, v6Var);
         if (this.f10163M0.size() == 1) {
-            int size = this.f10156F0.m34240F0().size();
-            this.f10156F0.m34240F0().add(new C2964ra(8, 0, 0, R.string.Archived));
-            this.f10156F0.m34240F0().add(new C2964ra(2));
-            this.f10156F0.m34240F0().add(N);
-            this.f10156F0.m34240F0().add(new C2964ra(3));
-            this.f10156F0.m39308M(size, 4);
+            int size = this.f10156F0.m34243F0().size();
+            this.f10156F0.m34243F0().add(new C2964ra(8, 0, 0, R.string.Archived));
+            this.f10156F0.m34243F0().add(new C2964ra(2));
+            this.f10156F0.m34243F0().add(N);
+            this.f10156F0.m34243F0().add(new C2964ra(3));
+            this.f10156F0.m39311M(size, 4);
             return;
         }
-        this.f10156F0.m34240F0().add(jh, N);
-        this.f10156F0.m39311J(jh);
+        this.f10156F0.m34243F0().add(jh, N);
+        this.f10156F0.m39314J(jh);
     }
 
     @Override
@@ -563,77 +563,77 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
         C10965r1.m2045g(this, stickerSet);
     }
 
-    public final void m32074dh(TdApi.StickerSetInfo stickerSetInfo) {
+    public final void m32077dh(TdApi.StickerSetInfo stickerSetInfo) {
         if (this.f10162L0 != null) {
-            long j = stickerSetInfo.f25424id;
+            long j = stickerSetInfo.f25427id;
             String str = stickerSetInfo.title;
-            C4817v6 v6Var = new C4817v6(this.f30167b, new TdApi.StickerSetInfo(j, str, str, stickerSetInfo.thumbnail, stickerSetInfo.thumbnailOutline, stickerSetInfo.isInstalled, true, stickerSetInfo.isOfficial, stickerSetInfo.stickerType, stickerSetInfo.isViewed, stickerSetInfo.size, stickerSetInfo.covers));
-            v6Var.m25163v(this.f10162L0);
+            C4817v6 v6Var = new C4817v6(this.f30170b, new TdApi.StickerSetInfo(j, str, str, stickerSetInfo.thumbnail, stickerSetInfo.thumbnailOutline, stickerSetInfo.isInstalled, true, stickerSetInfo.isOfficial, stickerSetInfo.stickerType, stickerSetInfo.isViewed, stickerSetInfo.size, stickerSetInfo.covers));
+            v6Var.m25164v(this.f10162L0);
             this.f10162L0.add(0, v6Var);
             if (this.f10162L0.size() == 1) {
-                m32071gh();
+                m32074gh();
                 return;
             }
-            this.f10156F0.m34240F0().add(3, new C2964ra(26, R.id.btn_stickerSetInfo, 0, 0).m32863N(v6Var.m25182c()));
-            this.f10156F0.m39311J(3);
+            this.f10156F0.m34243F0().add(3, new C2964ra(26, R.id.btn_stickerSetInfo, 0, 0).m32866N(v6Var.m25183c()));
+            this.f10156F0.m39314J(3);
         }
     }
 
-    public void m32073eh(ArrayList<C4817v6> arrayList, ArrayList<C4817v6> arrayList2) {
+    public void m32076eh(ArrayList<C4817v6> arrayList, ArrayList<C4817v6> arrayList2) {
         ArrayList<C4817v6> arrayList3;
         if (this.f10154D0 == 1 && (arrayList3 = this.f10162L0) != null && !arrayList3.isEmpty() && !arrayList.isEmpty()) {
             this.f10162L0.addAll(arrayList);
-            List<C2964ra> F0 = this.f10156F0.m34240F0();
+            List<C2964ra> F0 = this.f10156F0.m34243F0();
             int size = F0.size() - 1;
             C2964ra remove = F0.remove(size);
             Iterator<C4817v6> it = arrayList.iterator();
             while (it.hasNext()) {
                 C4817v6 next = it.next();
-                next.m25163v(this.f10162L0);
-                F0.add(new C2964ra(26, R.id.btn_stickerSetInfo, 0, 0).m32863N(next.m25182c()));
+                next.m25164v(this.f10162L0);
+                F0.add(new C2964ra(26, R.id.btn_stickerSetInfo, 0, 0).m32866N(next.m25183c()));
             }
             F0.add(remove);
-            this.f10156F0.m39308M(size, arrayList.size());
+            this.f10156F0.m39311M(size, arrayList.size());
         }
     }
 
     @Override
     public void mo2034f6(final TdApi.StickerSetInfo stickerSetInfo) {
-        if ((this.f10154D0 == 2 && m32064nh(stickerSetInfo.stickerType)) || (this.f10154D0 == 1 && !m32064nh(stickerSetInfo.stickerType))) {
-            this.f30167b.m2485dd().post(new Runnable() {
+        if ((this.f10154D0 == 2 && m32067nh(stickerSetInfo.stickerType)) || (this.f10154D0 == 1 && !m32067nh(stickerSetInfo.stickerType))) {
+            this.f30170b.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    s20.this.m32053yh(stickerSetInfo);
+                    s20.this.m32056yh(stickerSetInfo);
                 }
             });
         }
     }
 
-    public final void m32072fh(C4817v6 v6Var, int i) {
+    public final void m32075fh(C4817v6 v6Var, int i) {
         ArrayList<C4817v6> arrayList = this.f10162L0;
         if (arrayList != null) {
-            v6Var.m25163v(arrayList);
+            v6Var.m25164v(arrayList);
             this.f10162L0.add(i, v6Var);
-            int X1 = ((LinearLayoutManager) m31303kg().getLayoutManager()).m39549X1();
-            View C = m31303kg().getLayoutManager().mo39262C(X1);
+            int X1 = ((LinearLayoutManager) m31305kg().getLayoutManager()).m39552X1();
+            View C = m31305kg().getLayoutManager().mo39265C(X1);
             int top = C != null ? C.getTop() : 0;
-            C2964ra N = new C2964ra(23, R.id.btn_stickerSetInfo, 0, 0).m32863N(v6Var.m25182c());
+            C2964ra N = new C2964ra(23, R.id.btn_stickerSetInfo, 0, 0).m32866N(v6Var.m25183c());
             if (this.f10162L0.size() != 1 || this.f10154D0 == 0) {
-                int kh = i + m32067kh();
-                this.f10156F0.m34240F0().add(kh, N);
-                this.f10156F0.m39311J(kh);
+                int kh = i + m32070kh();
+                this.f10156F0.m34243F0().add(kh, N);
+                this.f10156F0.m39314J(kh);
             } else {
                 int i2 = i + 2;
-                this.f10156F0.m34240F0().add(i2, new C2964ra(3));
-                this.f10156F0.m34240F0().add(i2, N);
-                this.f10156F0.m34240F0().add(i2, new C2964ra(2));
-                this.f10156F0.m39308M(i2, 3);
+                this.f10156F0.m34243F0().add(i2, new C2964ra(3));
+                this.f10156F0.m34243F0().add(i2, N);
+                this.f10156F0.m34243F0().add(i2, new C2964ra(2));
+                this.f10156F0.m39311M(i2, 3);
             }
-            ((LinearLayoutManager) m31303kg().getLayoutManager()).m39522z2(X1, top);
+            ((LinearLayoutManager) m31305kg().getLayoutManager()).m39525z2(X1, top);
         }
     }
 
-    public final void m32071gh() {
+    public final void m32074gh() {
         ArrayList<C4817v6> arrayList;
         ArrayList<C4817v6> arrayList2;
         ArrayList<C4817v6> arrayList3 = this.f10162L0;
@@ -642,7 +642,7 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
             int i = this.f10154D0;
             if (i == 1) {
                 arrayList4.add(new C2964ra(14));
-                arrayList4.add(new C2964ra(9, 0, 0, (CharSequence) C4403w.m27865j1(R.string.ArchivedStickersInfo, C1363c0.m37437f(this.f30167b.m2913C5())), false));
+                arrayList4.add(new C2964ra(9, 0, 0, (CharSequence) C4403w.m27867j1(R.string.ArchivedStickersInfo, C1363c0.m37440f(this.f30170b.m2913C5())), false));
                 arrayList4.add(new C2964ra(2));
             } else if (i == 2) {
                 arrayList4.add(new C2964ra(14));
@@ -654,12 +654,12 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
             if (this.f10154D0 == 1) {
                 Iterator<C4817v6> it = this.f10162L0.iterator();
                 while (it.hasNext()) {
-                    arrayList4.add(new C2964ra(26, R.id.btn_stickerSetInfo, 0, 0).m32863N(it.next().m25182c()));
+                    arrayList4.add(new C2964ra(26, R.id.btn_stickerSetInfo, 0, 0).m32866N(it.next().m25183c()));
                 }
             } else {
                 Iterator<C4817v6> it2 = this.f10162L0.iterator();
                 while (it2.hasNext()) {
-                    arrayList4.add(new C2964ra(23, R.id.btn_stickerSetInfo, 0, 0).m32863N(it2.next().m25182c()));
+                    arrayList4.add(new C2964ra(23, R.id.btn_stickerSetInfo, 0, 0).m32866N(it2.next().m25183c()));
                 }
             }
             if (!this.f10162L0.isEmpty()) {
@@ -670,28 +670,28 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
                 arrayList4.add(new C2964ra(2));
                 Iterator<C4817v6> it3 = this.f10163M0.iterator();
                 while (it3.hasNext()) {
-                    arrayList4.add(new C2964ra(26, R.id.btn_stickerSetInfo, 0, 0).m32863N(it3.next().m25182c()));
+                    arrayList4.add(new C2964ra(26, R.id.btn_stickerSetInfo, 0, 0).m32866N(it3.next().m25183c()));
                 }
                 arrayList4.add(new C2964ra(3));
             }
             if (this.f10154D0 == 0) {
-                arrayList4.add(new C2964ra(9, 0, 0, (CharSequence) C4403w.m27865j1(R.string.ArchivedStickersInfo, C1363c0.m37437f(this.f30167b.m2913C5())), false));
+                arrayList4.add(new C2964ra(9, 0, 0, (CharSequence) C4403w.m27867j1(R.string.ArchivedStickersInfo, C1363c0.m37440f(this.f30170b.m2913C5())), false));
             }
         } else {
             int i2 = this.f10154D0;
             if (i2 == 1) {
-                arrayList4.add(new C2964ra(24, 0, 0, (CharSequence) C4403w.m27865j1(R.string.ArchivedStickersInfo, C1363c0.m37437f(this.f30167b.m2913C5())), false));
+                arrayList4.add(new C2964ra(24, 0, 0, (CharSequence) C4403w.m27867j1(R.string.ArchivedStickersInfo, C1363c0.m37440f(this.f30170b.m2913C5())), false));
             } else {
                 arrayList4.add(new C2964ra(24, 0, 0, i2 == 0 ? R.string.NoStickerSets : R.string.NoMasks));
             }
         }
-        this.f10156F0.m34116x2(arrayList4, false);
+        this.f10156F0.m34119x2(arrayList4, false);
     }
 
-    public final void m32070hh(long[] jArr) {
+    public final void m32073hh(long[] jArr) {
         if (this.f10154D0 == 1) {
             for (long j : jArr) {
-                m32105Eh(j);
+                m32108Eh(j);
             }
         } else if (this.f10164N0) {
             if (this.f10165O0 == null) {
@@ -701,14 +701,14 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
         } else {
             ArrayList<C4817v6> arrayList = this.f10162L0;
             if ((arrayList == null || arrayList.isEmpty()) && this.f10154D0 != 2) {
-                m32052zh(false);
+                m32055zh(false);
                 return;
             }
             C6035e eVar = new C6035e();
             Iterator<C4817v6> it = this.f10162L0.iterator();
             while (it.hasNext()) {
                 C4817v6 next = it.next();
-                eVar.m21500k(next.m25182c(), next);
+                eVar.m21501k(next.m25183c(), next);
             }
             C6035e eVar2 = new C6035e(jArr.length);
             C6035e eVar3 = null;
@@ -718,12 +718,12 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
             int i2 = 0;
             int i3 = -1;
             for (long j2 : jArr) {
-                if (((C4817v6) eVar.m21505f(j2)) != null) {
-                    eVar.m21499l(j2);
+                if (((C4817v6) eVar.m21506f(j2)) != null) {
+                    eVar.m21500l(j2);
                     if (eVar3 == null) {
                         eVar3 = new C6035e(5);
                     }
-                    eVar3.m21500k(j2, Integer.valueOf(i));
+                    eVar3.m21501k(j2, Integer.valueOf(i));
                     i++;
                 } else if (!z) {
                     i3++;
@@ -733,32 +733,32 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
                         if (eVar4 == null) {
                             eVar4 = new C5322e(5);
                         }
-                        eVar4.m23275a(j2);
+                        eVar4.m23276a(j2);
                     }
                 }
-                eVar2.m21500k(j2, Integer.valueOf(i2));
+                eVar2.m21501k(j2, Integer.valueOf(i2));
                 i2++;
             }
             ArrayList<C4817v6> arrayList2 = this.f10163M0;
             if (arrayList2 != null && !arrayList2.isEmpty()) {
                 for (int size = this.f10163M0.size() - 1; size >= 0; size--) {
-                    if (((Integer) eVar2.m21504g(this.f10163M0.get(size).m25182c(), -1)).intValue() != -1) {
-                        m32109Ch(size);
+                    if (((Integer) eVar2.m21505g(this.f10163M0.get(size).m25183c(), -1)).intValue() != -1) {
+                        m32112Ch(size);
                     }
                 }
             }
-            int p = eVar.m21496p();
+            int p = eVar.m21497p();
             for (int i4 = 0; i4 < p; i4++) {
-                m32105Eh(((C4817v6) eVar.m21495q(i4)).m25182c());
+                m32108Eh(((C4817v6) eVar.m21496q(i4)).m25183c());
             }
             if (eVar3 != null && !this.f10162L0.isEmpty()) {
-                for (int i5 = 0; i5 < eVar3.m21496p(); i5++) {
-                    long j3 = eVar3.m21501j(i5);
-                    int intValue = ((Integer) eVar3.m21495q(i5)).intValue();
-                    int mh = m32065mh(j3);
+                for (int i5 = 0; i5 < eVar3.m21497p(); i5++) {
+                    long j3 = eVar3.m21502j(i5);
+                    int intValue = ((Integer) eVar3.m21496q(i5)).intValue();
+                    int mh = m32068mh(j3);
                     if (mh != -1) {
                         if (mh != intValue) {
-                            m32113Ah(mh, intValue);
+                            m32116Ah(mh, intValue);
                         }
                     } else {
                         throw new RuntimeException();
@@ -766,23 +766,23 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
                 }
             }
             if (z) {
-                m32052zh(false);
+                m32055zh(false);
             } else if (eVar4 != null) {
-                m32099Hh(true);
-                long[] g = eVar4.m23269g();
+                m32102Hh(true);
+                long[] g = eVar4.m23270g();
                 int[] iArr = new int[2];
-                this.f30167b.m2270r4().m14783o(new TdApi.GetStickerSet(g[iArr[0]]), new C3029d(iArr, eVar4.m23264l(), g));
+                this.f30170b.m2270r4().m14783o(new TdApi.GetStickerSet(g[iArr[0]]), new C3029d(iArr, eVar4.m23265l(), g));
             }
         }
     }
 
-    public final C4817v6 m32069ih(long j) {
+    public final C4817v6 m32072ih(long j) {
         ArrayList<C4817v6> arrayList = this.f10162L0;
         if (arrayList != null && !arrayList.isEmpty()) {
             Iterator<C4817v6> it = this.f10162L0.iterator();
             while (it.hasNext()) {
                 C4817v6 next = it.next();
-                if (next.m25182c() == j) {
+                if (next.m25183c() == j) {
                     return next;
                 }
             }
@@ -794,7 +794,7 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
         Iterator<C4817v6> it2 = this.f10163M0.iterator();
         while (it2.hasNext()) {
             C4817v6 next2 = it2.next();
-            if (next2.m25182c() == j) {
+            if (next2.m25183c() == j) {
                 return next2;
             }
         }
@@ -805,8 +805,8 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
     public void mo2033j3(int[] iArr) {
     }
 
-    public final int m32068jh() {
-        int kh = m32067kh();
+    public final int m32071jh() {
+        int kh = m32070kh();
         ArrayList<C4817v6> arrayList = this.f10162L0;
         return kh + (arrayList != null ? arrayList.size() + 3 : 1);
     }
@@ -815,16 +815,16 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
     public void mo2032k(final long[] jArr, boolean z) {
         int i = this.f10154D0;
         if ((i == 2 && z) || (i == 0 && !z)) {
-            this.f30167b.m2485dd().post(new Runnable() {
+            this.f30170b.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    s20.this.m32060rh(jArr);
+                    s20.this.m32063rh(jArr);
                 }
             });
         }
     }
 
-    public final int m32067kh() {
+    public final int m32070kh() {
         ArrayList<C4817v6> arrayList = this.f10162L0;
         if (arrayList == null || this.f10154D0 == 0) {
             return 0;
@@ -832,15 +832,15 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
         return arrayList.isEmpty() ? 1 : 3;
     }
 
-    public final int m32066lh(C4817v6 v6Var) {
+    public final int m32069lh(C4817v6 v6Var) {
         C5324g gVar = this.f10157G0;
         if (gVar != null) {
-            return gVar.m23254e(v6Var.m25182c(), 0);
+            return gVar.m23255e(v6Var.m25183c(), 0);
         }
         return 0;
     }
 
-    public final int m32065mh(long j) {
+    public final int m32068mh(long j) {
         ArrayList<C4817v6> arrayList = this.f10162L0;
         if (arrayList == null) {
             return -1;
@@ -848,7 +848,7 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
         int i = 0;
         Iterator<C4817v6> it = arrayList.iterator();
         while (it.hasNext()) {
-            if (it.next().m25182c() == j) {
+            if (it.next().m25183c() == j) {
                 return i;
             }
             i++;
@@ -862,45 +862,45 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
         C5324g gVar;
         int id2 = view.getId();
         if (id2 == R.id.btn_double) {
-            final C4817v6 ih2 = m32069ih(((C2964ra) ((ViewGroup) view.getParent()).getTag()).m32832m());
-            if (ih2 != null && m32066lh(ih2) == 0) {
-                m32095Jh(ih2.m25182c(), 1);
-                this.f30167b.m2270r4().m14783o(new TdApi.ChangeStickerSet(ih2.m25182c(), true, false), new Client.AbstractC7865g() {
+            final C4817v6 ih2 = m32072ih(((C2964ra) ((ViewGroup) view.getParent()).getTag()).m32835m());
+            if (ih2 != null && m32069lh(ih2) == 0) {
+                m32098Jh(ih2.m25183c(), 1);
+                this.f30170b.m2270r4().m14783o(new TdApi.ChangeStickerSet(ih2.m25183c(), true, false), new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object) {
-                        s20.this.m32061qh(ih2, object);
+                        s20.this.m32064qh(ih2, object);
                     }
                 });
             }
-        } else if (id2 != R.id.btn_stickerSetInfo || (ih = m32069ih(((C2964ra) view.getTag()).m32832m())) == null) {
+        } else if (id2 != R.id.btn_stickerSetInfo || (ih = m32072ih(((C2964ra) view.getTag()).m32835m())) == null) {
         } else {
-            if (this.f10154D0 != 1 || (gVar = this.f10157G0) == null || gVar.m23254e(ih.m25182c(), 0) != 2) {
-                View$OnClickListenerC2096i.m35618X1(this, ih.m25181d()).m35620V1();
+            if (this.f10154D0 != 1 || (gVar = this.f10157G0) == null || gVar.m23255e(ih.m25183c(), 0) != 2) {
+                View$OnClickListenerC2096i.m35621X1(this, ih.m25182d()).m35623V1();
             }
         }
     }
 
     @Override
-    public void mo30633rg(Context context, CustomRecyclerView customRecyclerView) {
+    public void mo30635rg(Context context, CustomRecyclerView customRecyclerView) {
         this.f10156F0 = new C3026a(this);
         int i = this.f10154D0;
         if (i == 0 || i == 2) {
             if (i == 0) {
                 customRecyclerView.setItemAnimator(null);
             }
-            new C0962g(new C3027b()).m38809m(customRecyclerView);
+            new C0962g(new C3027b()).m38812m(customRecyclerView);
         }
         if (this.f10154D0 == 1) {
-            customRecyclerView.m39422k(new C3028c());
+            customRecyclerView.m39425k(new C3028c());
         }
         if (this.f10162L0 != null) {
-            m32071gh();
+            m32074gh();
         } else if (!this.f10155E0) {
-            m32052zh(false);
+            m32055zh(false);
         }
         int i2 = this.f10154D0;
         if (i2 == 0 || i2 == 2 || i2 == 1) {
-            this.f30167b.m2781K9().m1838l0(this);
+            this.f30170b.m2781K9().m1838l0(this);
         }
         customRecyclerView.setAdapter(this.f10156F0);
     }
@@ -918,8 +918,8 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
                 while (i2 < length) {
                     TdApi.StickerSetInfo stickerSetInfo = stickerSetInfoArr[i2];
                     if (!stickerSetInfo.isArchived) {
-                        C4817v6 v6Var = new C4817v6(this.f30167b, stickerSetInfo);
-                        v6Var.m25163v(arrayList);
+                        C4817v6 v6Var = new C4817v6(this.f30170b, stickerSetInfo);
+                        v6Var.m25164v(arrayList);
                         arrayList.add(v6Var);
                     }
                     i2++;
@@ -929,8 +929,8 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
                 while (i2 < length2) {
                     TdApi.StickerSetInfo stickerSetInfo2 = stickerSetInfoArr[i2];
                     if (stickerSetInfo2.isArchived) {
-                        C4817v6 v6Var2 = new C4817v6(this.f30167b, stickerSetInfo2);
-                        v6Var2.m25163v(arrayList);
+                        C4817v6 v6Var2 = new C4817v6(this.f30170b, stickerSetInfo2);
+                        v6Var2.m25164v(arrayList);
                         arrayList.add(v6Var2);
                     }
                     i2++;
@@ -938,33 +938,33 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
             } else if (i == 2) {
                 int length3 = stickerSetInfoArr.length;
                 while (i2 < length3) {
-                    C4817v6 v6Var3 = new C4817v6(this.f30167b, stickerSetInfoArr[i2]);
-                    v6Var3.m25163v(arrayList);
+                    C4817v6 v6Var3 = new C4817v6(this.f30170b, stickerSetInfoArr[i2]);
+                    v6Var3.m25164v(arrayList);
                     arrayList.add(v6Var3);
                     i2++;
                 }
             }
             arrayList.trimToSize();
             if (this.f10154D0 == 2) {
-                this.f30167b.m2270r4().m14783o(new TdApi.GetArchivedStickerSets(true, 0L, 100), new Client.AbstractC7865g() {
+                this.f30170b.m2270r4().m14783o(new TdApi.GetArchivedStickerSets(true, 0L, 100), new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object2) {
-                        s20.this.m32057uh(arrayList, object2);
+                        s20.this.m32060uh(arrayList, object2);
                     }
                 });
             } else {
-                this.f30167b.m2485dd().post(new Runnable() {
+                this.f30170b.m2485dd().post(new Runnable() {
                     @Override
                     public final void run() {
-                        s20.this.m32056vh(arrayList);
+                        s20.this.m32059vh(arrayList);
                     }
                 });
             }
         } else if (constructor == -1679978726) {
-            this.f30167b.m2485dd().post(new Runnable() {
+            this.f30170b.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    s20.this.m32059sh(object);
+                    s20.this.m32062sh(object);
                 }
             });
         }
@@ -972,17 +972,17 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
 
     @Override
     public void mo2031y0(final TdApi.StickerSetInfo stickerSetInfo) {
-        if ((this.f10154D0 == 2 && m32064nh(stickerSetInfo.stickerType)) || (this.f10154D0 == 1 && !m32064nh(stickerSetInfo.stickerType))) {
-            this.f30167b.m2485dd().post(new Runnable() {
+        if ((this.f10154D0 == 2 && m32067nh(stickerSetInfo.stickerType)) || (this.f10154D0 == 1 && !m32067nh(stickerSetInfo.stickerType))) {
+            this.f30170b.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    s20.this.m32054xh(stickerSetInfo);
+                    s20.this.m32057xh(stickerSetInfo);
                 }
             });
         }
     }
 
-    public final void m32052zh(boolean z) {
+    public final void m32055zh(boolean z) {
         int i;
         long j;
         if (this.f10159I0) {
@@ -998,21 +998,21 @@ public class s20 extends AbstractC3204vo<C3030e> implements Client.AbstractC7865
                         ArrayList<C4817v6> arrayList = this.f10162L0;
                         if (arrayList != null && !arrayList.isEmpty()) {
                             ArrayList<C4817v6> arrayList2 = this.f10162L0;
-                            j = arrayList2.get(arrayList2.size() - 1).m25182c();
+                            j = arrayList2.get(arrayList2.size() - 1).m25183c();
                             i = 100;
                         } else {
                             return;
                         }
                     } else {
                         j = 0;
-                        i = C1357a0.m37548b(C1357a0.m37541i(72.0f), 20);
+                        i = C1357a0.m37551b(C1357a0.m37544i(72.0f), 20);
                     }
-                    this.f30167b.m2270r4().m14783o(new TdApi.GetArchivedStickerSets(false, j, i), this);
+                    this.f30170b.m2270r4().m14783o(new TdApi.GetArchivedStickerSets(false, j, i), this);
                 } else if (i2 == 2 && !z) {
-                    this.f30167b.m2270r4().m14783o(new TdApi.GetInstalledStickerSets(true), this);
+                    this.f30170b.m2270r4().m14783o(new TdApi.GetInstalledStickerSets(true), this);
                 }
             } else if (!z) {
-                this.f30167b.m2270r4().m14783o(new TdApi.GetInstalledStickerSets(false), this);
+                this.f30170b.m2270r4().m14783o(new TdApi.GetInstalledStickerSets(false), this);
             }
         }
     }

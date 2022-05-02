@@ -33,7 +33,7 @@ public final class C6078n extends AbstractC6069i {
             return false;
         }
         C6078n nVar = (C6078n) obj;
-        return this.f19289a.equals(nVar.f19289a) && C1216l0.m37982c(this.f19302b, nVar.f19302b) && C1216l0.m37982c(this.f19303c, nVar.f19303c);
+        return this.f19289a.equals(nVar.f19289a) && C1216l0.m37985c(this.f19302b, nVar.f19302b) && C1216l0.m37985c(this.f19303c, nVar.f19303c);
     }
 
     public int hashCode() {
@@ -67,8 +67,8 @@ public final class C6078n extends AbstractC6069i {
     }
 
     public C6078n(Parcel parcel) {
-        super((String) C1216l0.m37968j(parcel.readString()));
+        super((String) C1216l0.m37971j(parcel.readString()));
         this.f19302b = parcel.readString();
-        this.f19303c = (String) C1216l0.m37968j(parcel.readString());
+        this.f19303c = (String) C1216l0.m37971j(parcel.readString());
     }
 }

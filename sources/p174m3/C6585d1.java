@@ -6,7 +6,7 @@ public final class C6585d1 {
     public static final HashSet<String> f20515a = new HashSet<>();
     public static String f20516b = "goog.exo.core";
 
-    public static synchronized void m19945a(String str) {
+    public static synchronized void m19946a(String str) {
         synchronized (C6585d1.class) {
             if (f20515a.add(str)) {
                 String str2 = f20516b;
@@ -19,7 +19,7 @@ public final class C6585d1 {
         }
     }
 
-    public static synchronized String m19944b() {
+    public static synchronized String m19945b() {
         String str;
         synchronized (C6585d1.class) {
             str = f20516b;

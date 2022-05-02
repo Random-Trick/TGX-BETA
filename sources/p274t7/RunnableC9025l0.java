@@ -20,66 +20,66 @@ import javax.annotation.Nullable;
 import p246r5.ThreadFactoryC8371a;
 
 public class RunnableC9025l0 implements Runnable {
-    public ExecutorService f28959M = new ThreadPoolExecutor(0, 1, 30, TimeUnit.SECONDS, new LinkedBlockingQueue(), new ThreadFactoryC8371a("firebase-iid-executor"));
-    public final long f28960a;
-    public final PowerManager.WakeLock f28961b;
-    public final FirebaseMessaging f28962c;
+    public ExecutorService f28962M = new ThreadPoolExecutor(0, 1, 30, TimeUnit.SECONDS, new LinkedBlockingQueue(), new ThreadFactoryC8371a("firebase-iid-executor"));
+    public final long f28963a;
+    public final PowerManager.WakeLock f28964b;
+    public final FirebaseMessaging f28965c;
 
     public static class C9026a extends BroadcastReceiver {
         @Nullable
-        public RunnableC9025l0 f28963a;
+        public RunnableC9025l0 f28966a;
 
         public C9026a(RunnableC9025l0 l0Var) {
-            this.f28963a = l0Var;
+            this.f28966a = l0Var;
         }
 
-        public void m10669a() {
-            if (RunnableC9025l0.m10672c()) {
+        public void m10668a() {
+            if (RunnableC9025l0.m10671c()) {
                 Log.d("FirebaseMessaging", "Connectivity change received registered");
             }
-            this.f28963a.m10673b().registerReceiver(this, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
+            this.f28966a.m10672b().registerReceiver(this, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
         }
 
         @Override
         public void onReceive(Context context, Intent intent) {
-            RunnableC9025l0 l0Var = this.f28963a;
-            if (l0Var != null && l0Var.m10671d()) {
-                if (RunnableC9025l0.m10672c()) {
+            RunnableC9025l0 l0Var = this.f28966a;
+            if (l0Var != null && l0Var.m10670d()) {
+                if (RunnableC9025l0.m10671c()) {
                     Log.d("FirebaseMessaging", "Connectivity changed. Starting background sync.");
                 }
-                this.f28963a.f28962c.m30229d(this.f28963a, 0L);
-                this.f28963a.m10673b().unregisterReceiver(this);
-                this.f28963a = null;
+                this.f28966a.f28965c.m30231d(this.f28966a, 0L);
+                this.f28966a.m10672b().unregisterReceiver(this);
+                this.f28966a = null;
             }
         }
     }
 
     @SuppressLint({"InvalidWakeLockTag"})
     public RunnableC9025l0(FirebaseMessaging firebaseMessaging, long j) {
-        this.f28962c = firebaseMessaging;
-        this.f28960a = j;
-        PowerManager.WakeLock newWakeLock = ((PowerManager) m10673b().getSystemService("power")).newWakeLock(1, "fiid-sync");
-        this.f28961b = newWakeLock;
+        this.f28965c = firebaseMessaging;
+        this.f28963a = j;
+        PowerManager.WakeLock newWakeLock = ((PowerManager) m10672b().getSystemService("power")).newWakeLock(1, "fiid-sync");
+        this.f28964b = newWakeLock;
         newWakeLock.setReferenceCounted(false);
     }
 
-    public static boolean m10672c() {
+    public static boolean m10671c() {
         return Log.isLoggable("FirebaseMessaging", 3) || (Build.VERSION.SDK_INT == 23 && Log.isLoggable("FirebaseMessaging", 3));
     }
 
-    public Context m10673b() {
-        return this.f28962c.m30228e();
+    public Context m10672b() {
+        return this.f28965c.m30230e();
     }
 
-    public boolean m10671d() {
-        ConnectivityManager connectivityManager = (ConnectivityManager) m10673b().getSystemService("connectivity");
+    public boolean m10670d() {
+        ConnectivityManager connectivityManager = (ConnectivityManager) m10672b().getSystemService("connectivity");
         NetworkInfo activeNetworkInfo = connectivityManager != null ? connectivityManager.getActiveNetworkInfo() : null;
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
-    public boolean m10670e() {
+    public boolean m10669e() {
         try {
-            if (this.f28962c.m30230c() == null) {
+            if (this.f28965c.m30232c() == null) {
                 Log.e("FirebaseMessaging", "Token retrieval failed: null");
                 return false;
             } else if (!Log.isLoggable("FirebaseMessaging", 3)) {
@@ -89,7 +89,7 @@ public class RunnableC9025l0 implements Runnable {
                 return true;
             }
         } catch (IOException e) {
-            if (C9002a0.m10727f(e.getMessage())) {
+            if (C9002a0.m10726f(e.getMessage())) {
                 String message = e.getMessage();
                 StringBuilder sb2 = new StringBuilder(String.valueOf(message).length() + 52);
                 sb2.append("Token retrieval failed: ");
@@ -112,29 +112,29 @@ public class RunnableC9025l0 implements Runnable {
     @Override
     @SuppressLint({"WakelockTimeout"})
     public void run() {
-        if (C9019i0.m10689b().m10686e(m10673b())) {
-            this.f28961b.acquire();
+        if (C9019i0.m10688b().m10685e(m10672b())) {
+            this.f28964b.acquire();
         }
         try {
             try {
-                this.f28962c.m30214s(true);
-                if (!this.f28962c.m30220m()) {
-                    this.f28962c.m30214s(false);
-                    if (!C9019i0.m10689b().m10686e(m10673b())) {
+                this.f28965c.m30216s(true);
+                if (!this.f28965c.m30222m()) {
+                    this.f28965c.m30216s(false);
+                    if (!C9019i0.m10688b().m10685e(m10672b())) {
                         return;
                     }
-                } else if (!C9019i0.m10689b().m10687d(m10673b()) || m10671d()) {
-                    if (m10670e()) {
-                        this.f28962c.m30214s(false);
+                } else if (!C9019i0.m10688b().m10686d(m10672b()) || m10670d()) {
+                    if (m10669e()) {
+                        this.f28965c.m30216s(false);
                     } else {
-                        this.f28962c.m30211v(this.f28960a);
+                        this.f28965c.m30213v(this.f28963a);
                     }
-                    if (!C9019i0.m10689b().m10686e(m10673b())) {
+                    if (!C9019i0.m10688b().m10685e(m10672b())) {
                         return;
                     }
                 } else {
-                    new C9026a(this).m10669a();
-                    if (!C9019i0.m10689b().m10686e(m10673b())) {
+                    new C9026a(this).m10668a();
+                    if (!C9019i0.m10688b().m10685e(m10672b())) {
                         return;
                     }
                 }
@@ -145,15 +145,15 @@ public class RunnableC9025l0 implements Runnable {
                 sb2.append(message);
                 sb2.append(". Won't retry the operation.");
                 Log.e("FirebaseMessaging", sb2.toString());
-                this.f28962c.m30214s(false);
-                if (!C9019i0.m10689b().m10686e(m10673b())) {
+                this.f28965c.m30216s(false);
+                if (!C9019i0.m10688b().m10685e(m10672b())) {
                     return;
                 }
             }
-            this.f28961b.release();
+            this.f28964b.release();
         } catch (Throwable th) {
-            if (C9019i0.m10689b().m10686e(m10673b())) {
-                this.f28961b.release();
+            if (C9019i0.m10688b().m10685e(m10672b())) {
+                this.f28964b.release();
             }
             throw th;
         }

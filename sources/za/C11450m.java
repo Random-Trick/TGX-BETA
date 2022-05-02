@@ -4,14 +4,14 @@ import qa.C8298k;
 
 public class C11450m extends C11449l {
     public static final Integer m639f(String str) {
-        C8298k.m12934e(str, "<this>");
+        C8298k.m12933e(str, "<this>");
         return m638g(str, 10);
     }
 
     public static final Integer m638g(String str, int i) {
         boolean z;
         int i2;
-        C8298k.m12934e(str, "<this>");
+        C8298k.m12933e(str, "<this>");
         C11434a.m661a(i);
         int length = str.length();
         if (length == 0) {
@@ -21,7 +21,7 @@ public class C11450m extends C11449l {
         char charAt = str.charAt(0);
         int i4 = -2147483647;
         int i5 = 1;
-        if (C8298k.m12933f(charAt, 48) >= 0) {
+        if (C8298k.m12932f(charAt, 48) >= 0) {
             z = false;
             i5 = 0;
         } else if (length == 1) {
@@ -52,7 +52,7 @@ public class C11450m extends C11449l {
     }
 
     public static final Long m637h(String str) {
-        C8298k.m12934e(str, "<this>");
+        C8298k.m12933e(str, "<this>");
         return m636i(str, 10);
     }
 

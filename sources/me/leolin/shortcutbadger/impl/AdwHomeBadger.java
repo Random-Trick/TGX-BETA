@@ -20,6 +20,6 @@ public class AdwHomeBadger implements AbstractC0243a {
         intent.putExtra("PNAME", componentName.getPackageName());
         intent.putExtra("CNAME", componentName.getClassName());
         intent.putExtra("COUNT", i);
-        C1304a.m37782c(context, intent);
+        C1304a.m37785c(context, intent);
     }
 }

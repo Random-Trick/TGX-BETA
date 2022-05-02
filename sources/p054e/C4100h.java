@@ -28,7 +28,7 @@ public class C4100h {
         this.f13864b = locationManager;
     }
 
-    public static C4100h m28915a(Context context) {
+    public static C4100h m28917a(Context context) {
         if (f13862d == null) {
             Context applicationContext = context.getApplicationContext();
             f13862d = new C4100h(applicationContext, (LocationManager) applicationContext.getSystemService("location"));
@@ -37,16 +37,16 @@ public class C4100h {
     }
 
     @SuppressLint({"MissingPermission"})
-    public final Location m28914b() {
+    public final Location m28916b() {
         Location location = null;
-        Location c = C8127c.m13409b(this.f13863a, "android.permission.ACCESS_COARSE_LOCATION") == 0 ? m28913c("network") : null;
-        if (C8127c.m13409b(this.f13863a, "android.permission.ACCESS_FINE_LOCATION") == 0) {
-            location = m28913c("gps");
+        Location c = C8127c.m13408b(this.f13863a, "android.permission.ACCESS_COARSE_LOCATION") == 0 ? m28915c("network") : null;
+        if (C8127c.m13408b(this.f13863a, "android.permission.ACCESS_FINE_LOCATION") == 0) {
+            location = m28915c("gps");
         }
         return (location == null || c == null) ? location != null ? location : c : location.getTime() > c.getTime() ? location : c;
     }
 
-    public final Location m28913c(String str) {
+    public final Location m28915c(String str) {
         try {
             if (this.f13864b.isProviderEnabled(str)) {
                 return this.f13864b.getLastKnownLocation(str);
@@ -58,14 +58,14 @@ public class C4100h {
         }
     }
 
-    public boolean m28912d() {
+    public boolean m28914d() {
         C4101a aVar = this.f13865c;
-        if (m28911e()) {
+        if (m28913e()) {
             return aVar.f13866a;
         }
-        Location b = m28914b();
+        Location b = m28916b();
         if (b != null) {
-            m28910f(b);
+            m28912f(b);
             return aVar.f13866a;
         }
         Log.i("TwilightManager", "Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.");
@@ -73,23 +73,23 @@ public class C4100h {
         return i < 6 || i >= 22;
     }
 
-    public final boolean m28911e() {
+    public final boolean m28913e() {
         return this.f13865c.f13871f > System.currentTimeMillis();
     }
 
-    public final void m28910f(Location location) {
+    public final void m28912f(Location location) {
         long j;
         C4101a aVar = this.f13865c;
         long currentTimeMillis = System.currentTimeMillis();
-        C4099g b = C4099g.m28916b();
-        b.m28917a(currentTimeMillis - 86400000, location.getLatitude(), location.getLongitude());
+        C4099g b = C4099g.m28918b();
+        b.m28919a(currentTimeMillis - 86400000, location.getLatitude(), location.getLongitude());
         long j2 = b.f13859a;
-        b.m28917a(currentTimeMillis, location.getLatitude(), location.getLongitude());
+        b.m28919a(currentTimeMillis, location.getLatitude(), location.getLongitude());
         boolean z = b.f13861c == 1;
         long j3 = b.f13860b;
         long j4 = b.f13859a;
         boolean z2 = z;
-        b.m28917a(86400000 + currentTimeMillis, location.getLatitude(), location.getLongitude());
+        b.m28919a(86400000 + currentTimeMillis, location.getLatitude(), location.getLongitude());
         long j5 = b.f13860b;
         if (j3 == -1 || j4 == -1) {
             j = 43200000 + currentTimeMillis;

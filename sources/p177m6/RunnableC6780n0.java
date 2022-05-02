@@ -14,11 +14,11 @@ public final class RunnableC6780n0 implements Runnable {
     @Override
     public final void run() {
         try {
-            this.f21258a.m19063r(this.f21259b.call());
+            this.f21258a.m19064r(this.f21259b.call());
         } catch (Exception e) {
-            this.f21258a.m19061t(e);
+            this.f21258a.m19062t(e);
         } catch (Throwable th) {
-            this.f21258a.m19061t(new RuntimeException(th));
+            this.f21258a.m19062t(new RuntimeException(th));
         }
     }
 }

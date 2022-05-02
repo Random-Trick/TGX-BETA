@@ -1,7 +1,7 @@
 package p077f8;
 
 public class C4322b {
-    public static int m28282a(int i) {
+    public static int m28284a(int i) {
         if (i == 0) {
             return 0;
         }

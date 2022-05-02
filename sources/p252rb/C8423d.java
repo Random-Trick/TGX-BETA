@@ -4,36 +4,36 @@ import qa.C8294g;
 import qa.C8298k;
 
 public final class C8423d {
-    public float f27332a;
-    public float f27333b;
+    public float f27335a;
+    public float f27336b;
 
     public C8423d() {
         this(0.0f, 0.0f, 3, null);
     }
 
     public C8423d(float f, float f2) {
-        this.f27332a = f;
-        this.f27333b = f2;
+        this.f27335a = f;
+        this.f27336b = f2;
     }
 
-    public final void m12529a(C8423d dVar) {
-        C8298k.m12934e(dVar, "v");
-        this.f27332a += dVar.f27332a;
-        this.f27333b += dVar.f27333b;
+    public final void m12528a(C8423d dVar) {
+        C8298k.m12933e(dVar, "v");
+        this.f27335a += dVar.f27335a;
+        this.f27336b += dVar.f27336b;
     }
 
-    public final void m12528b(C8423d dVar, float f) {
-        C8298k.m12934e(dVar, "v");
-        this.f27332a += dVar.f27332a * f;
-        this.f27333b += dVar.f27333b * f;
+    public final void m12527b(C8423d dVar, float f) {
+        C8298k.m12933e(dVar, "v");
+        this.f27335a += dVar.f27335a * f;
+        this.f27336b += dVar.f27336b * f;
     }
 
-    public final float m12527c() {
-        return this.f27332a;
+    public final float m12526c() {
+        return this.f27335a;
     }
 
-    public final float m12526d() {
-        return this.f27333b;
+    public final float m12525d() {
+        return this.f27336b;
     }
 
     public boolean equals(Object obj) {
@@ -44,15 +44,15 @@ public final class C8423d {
             return false;
         }
         C8423d dVar = (C8423d) obj;
-        return Float.compare(this.f27332a, dVar.f27332a) == 0 && Float.compare(this.f27333b, dVar.f27333b) == 0;
+        return Float.compare(this.f27335a, dVar.f27335a) == 0 && Float.compare(this.f27336b, dVar.f27336b) == 0;
     }
 
     public int hashCode() {
-        return (Float.floatToIntBits(this.f27332a) * 31) + Float.floatToIntBits(this.f27333b);
+        return (Float.floatToIntBits(this.f27335a) * 31) + Float.floatToIntBits(this.f27336b);
     }
 
     public String toString() {
-        return "Vector(x=" + this.f27332a + ", y=" + this.f27333b + ")";
+        return "Vector(x=" + this.f27335a + ", y=" + this.f27336b + ")";
     }
 
     public C8423d(float f, float f2, int i, C8294g gVar) {

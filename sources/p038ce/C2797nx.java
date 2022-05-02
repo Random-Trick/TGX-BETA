@@ -9,6 +9,6 @@ public final class C2797nx implements AbstractC5918j {
 
     @Override
     public final void mo1330a(Object obj) {
-        C1379j0.m37302t0((TdApi.Error) obj);
+        C1379j0.m37305t0((TdApi.Error) obj);
     }
 }

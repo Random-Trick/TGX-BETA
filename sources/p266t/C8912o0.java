@@ -13,11 +13,11 @@ public class C8912o0 extends C8916q0 {
         super(context, null);
     }
 
-    public static C8912o0 m10966g(Context context) {
+    public static C8912o0 m10965g(Context context) {
         return new C8912o0(context);
     }
 
-    public static boolean m10964i(Throwable th) {
+    public static boolean m10963i(Throwable th) {
         StackTraceElement[] stackTrace;
         if (!th.getClass().equals(RuntimeException.class) || (stackTrace = th.getStackTrace()) == null || stackTrace.length < 0) {
             return false;
@@ -26,49 +26,49 @@ public class C8912o0 extends C8916q0 {
     }
 
     @Override
-    public void mo10962a(Executor executor, CameraManager.AvailabilityCallback availabilityCallback) {
-        this.f28767a.registerAvailabilityCallback(executor, availabilityCallback);
+    public void mo10961a(Executor executor, CameraManager.AvailabilityCallback availabilityCallback) {
+        this.f28770a.registerAvailabilityCallback(executor, availabilityCallback);
     }
 
     @Override
-    public void mo10961b(CameraManager.AvailabilityCallback availabilityCallback) {
-        this.f28767a.unregisterAvailabilityCallback(availabilityCallback);
+    public void mo10960b(CameraManager.AvailabilityCallback availabilityCallback) {
+        this.f28770a.unregisterAvailabilityCallback(availabilityCallback);
     }
 
     @Override
-    public CameraCharacteristics mo10960c(String str) {
+    public CameraCharacteristics mo10959c(String str) {
         try {
-            return super.mo10960c(str);
+            return super.mo10959c(str);
         } catch (RuntimeException e) {
-            if (m10965h(e)) {
-                m10963j(e);
+            if (m10964h(e)) {
+                m10962j(e);
             }
             throw e;
         }
     }
 
     @Override
-    public void mo10959d(String str, Executor executor, CameraDevice.StateCallback stateCallback) {
+    public void mo10958d(String str, Executor executor, CameraDevice.StateCallback stateCallback) {
         try {
-            this.f28767a.openCamera(str, executor, stateCallback);
+            this.f28770a.openCamera(str, executor, stateCallback);
         } catch (CameraAccessException e) {
-            throw C8887f.m11022e(e);
+            throw C8887f.m11021e(e);
         } catch (IllegalArgumentException e2) {
             throw e2;
         } catch (SecurityException e3) {
         } catch (RuntimeException e4) {
-            if (m10965h(e4)) {
-                m10963j(e4);
+            if (m10964h(e4)) {
+                m10962j(e4);
             }
             throw e4;
         }
     }
 
-    public final boolean m10965h(Throwable th) {
-        return Build.VERSION.SDK_INT == 28 && m10964i(th);
+    public final boolean m10964h(Throwable th) {
+        return Build.VERSION.SDK_INT == 28 && m10963i(th);
     }
 
-    public final void m10963j(Throwable th) {
+    public final void m10962j(Throwable th) {
         throw new C8887f(10001, th);
     }
 }

@@ -21,28 +21,28 @@ import p308w1.C9942e;
 import p323x1.AbstractC10074f;
 
 public final class C7559r implements AbstractC7558q {
-    public final AbstractC9421e f24166a;
-    public final AbstractC9418b<C7554p> f24167b;
-    public final AbstractC9433k f24168c;
-    public final AbstractC9433k f24169d;
-    public final AbstractC9433k f24170e;
-    public final AbstractC9433k f24171f;
-    public final AbstractC9433k f24172g;
-    public final AbstractC9433k f24173h;
-    public final AbstractC9433k f24174i;
-    public final AbstractC9433k f24175j;
+    public final AbstractC9421e f24169a;
+    public final AbstractC9418b<C7554p> f24170b;
+    public final AbstractC9433k f24171c;
+    public final AbstractC9433k f24172d;
+    public final AbstractC9433k f24173e;
+    public final AbstractC9433k f24174f;
+    public final AbstractC9433k f24175g;
+    public final AbstractC9433k f24176h;
+    public final AbstractC9433k f24177i;
+    public final AbstractC9433k f24178j;
 
     public class CallableC7560a implements Callable<List<C7554p.C7557c>> {
-        public final C9430h f24176a;
+        public final C9430h f24179a;
 
         public CallableC7560a(C9430h hVar) {
-            this.f24176a = hVar;
+            this.f24179a = hVar;
         }
 
         public List<C7554p.C7557c> call() {
-            C7559r.this.f24166a.m8731c();
+            C7559r.this.f24169a.m8731c();
             try {
-                Cursor b = C9940c.m6454b(C7559r.this.f24166a, this.f24176a, true, null);
+                Cursor b = C9940c.m6454b(C7559r.this.f24169a, this.f24179a, true, null);
                 int c = C9939b.m6456c(b, "id");
                 int c2 = C9939b.m6456c(b, "state");
                 int c3 = C9939b.m6456c(b, "output");
@@ -77,24 +77,24 @@ public final class C7559r implements AbstractC7558q {
                         arrayList3 = new ArrayList();
                     }
                     C7554p.C7557c cVar = new C7554p.C7557c();
-                    cVar.f24160a = b.getString(c);
-                    cVar.f24161b = C7574v.m15657g(b.getInt(c2));
-                    cVar.f24162c = C1070b.m38475g(b.getBlob(c3));
-                    cVar.f24163d = b.getInt(c4);
-                    cVar.f24164e = arrayList2;
-                    cVar.f24165f = arrayList3;
+                    cVar.f24163a = b.getString(c);
+                    cVar.f24164b = C7574v.m15657g(b.getInt(c2));
+                    cVar.f24165c = C1070b.m38478g(b.getBlob(c3));
+                    cVar.f24166d = b.getInt(c4);
+                    cVar.f24167e = arrayList2;
+                    cVar.f24168f = arrayList3;
                     arrayList.add(cVar);
                 }
-                C7559r.this.f24166a.m8714t();
+                C7559r.this.f24169a.m8714t();
                 b.close();
                 return arrayList;
             } finally {
-                C7559r.this.f24166a.m8727g();
+                C7559r.this.f24169a.m8727g();
             }
         }
 
         public void finalize() {
-            this.f24176a.m8683B0();
+            this.f24179a.m8683B0();
         }
     }
 
@@ -109,58 +109,58 @@ public final class C7559r implements AbstractC7558q {
         }
 
         public void mo8741g(AbstractC10074f fVar, C7554p pVar) {
-            String str = pVar.f24140a;
+            String str = pVar.f24143a;
             if (str == null) {
                 fVar.mo5374d0(1);
             } else {
                 fVar.mo5373q(1, str);
             }
-            fVar.mo5376J(2, C7574v.m15654j(pVar.f24141b));
-            String str2 = pVar.f24142c;
+            fVar.mo5376J(2, C7574v.m15654j(pVar.f24144b));
+            String str2 = pVar.f24145c;
             if (str2 == null) {
                 fVar.mo5374d0(3);
             } else {
                 fVar.mo5373q(3, str2);
             }
-            String str3 = pVar.f24143d;
+            String str3 = pVar.f24146d;
             if (str3 == null) {
                 fVar.mo5374d0(4);
             } else {
                 fVar.mo5373q(4, str3);
             }
-            byte[] m = C1070b.m38469m(pVar.f24144e);
+            byte[] m = C1070b.m38472m(pVar.f24147e);
             if (m == null) {
                 fVar.mo5374d0(5);
             } else {
                 fVar.mo5375N(5, m);
             }
-            byte[] m2 = C1070b.m38469m(pVar.f24145f);
+            byte[] m2 = C1070b.m38472m(pVar.f24148f);
             if (m2 == null) {
                 fVar.mo5374d0(6);
             } else {
                 fVar.mo5375N(6, m2);
             }
-            fVar.mo5376J(7, pVar.f24146g);
-            fVar.mo5376J(8, pVar.f24147h);
-            fVar.mo5376J(9, pVar.f24148i);
-            fVar.mo5376J(10, pVar.f24150k);
-            fVar.mo5376J(11, C7574v.m15663a(pVar.f24151l));
-            fVar.mo5376J(12, pVar.f24152m);
-            fVar.mo5376J(13, pVar.f24153n);
-            fVar.mo5376J(14, pVar.f24154o);
-            fVar.mo5376J(15, pVar.f24155p);
-            fVar.mo5376J(16, pVar.f24156q ? 1L : 0L);
-            fVar.mo5376J(17, C7574v.m15655i(pVar.f24157r));
-            C4223b bVar = pVar.f24149j;
+            fVar.mo5376J(7, pVar.f24149g);
+            fVar.mo5376J(8, pVar.f24150h);
+            fVar.mo5376J(9, pVar.f24151i);
+            fVar.mo5376J(10, pVar.f24153k);
+            fVar.mo5376J(11, C7574v.m15663a(pVar.f24154l));
+            fVar.mo5376J(12, pVar.f24155m);
+            fVar.mo5376J(13, pVar.f24156n);
+            fVar.mo5376J(14, pVar.f24157o);
+            fVar.mo5376J(15, pVar.f24158p);
+            fVar.mo5376J(16, pVar.f24159q ? 1L : 0L);
+            fVar.mo5376J(17, C7574v.m15655i(pVar.f24160r));
+            C4223b bVar = pVar.f24152j;
             if (bVar != null) {
-                fVar.mo5376J(18, C7574v.m15656h(bVar.m28394b()));
-                fVar.mo5376J(19, bVar.m28389g() ? 1L : 0L);
-                fVar.mo5376J(20, bVar.m28388h() ? 1L : 0L);
-                fVar.mo5376J(21, bVar.m28390f() ? 1L : 0L);
-                fVar.mo5376J(22, bVar.m28387i() ? 1L : 0L);
-                fVar.mo5376J(23, bVar.m28393c());
-                fVar.mo5376J(24, bVar.m28392d());
-                byte[] c = C7574v.m15661c(bVar.m28395a());
+                fVar.mo5376J(18, C7574v.m15656h(bVar.m28396b()));
+                fVar.mo5376J(19, bVar.m28391g() ? 1L : 0L);
+                fVar.mo5376J(20, bVar.m28390h() ? 1L : 0L);
+                fVar.mo5376J(21, bVar.m28392f() ? 1L : 0L);
+                fVar.mo5376J(22, bVar.m28389i() ? 1L : 0L);
+                fVar.mo5376J(23, bVar.m28395c());
+                fVar.mo5376J(24, bVar.m28394d());
+                byte[] c = C7574v.m15661c(bVar.m28397a());
                 if (c == null) {
                     fVar.mo5374d0(25);
                 } else {
@@ -268,55 +268,55 @@ public final class C7559r implements AbstractC7558q {
     }
 
     public C7559r(AbstractC9421e eVar) {
-        this.f24166a = eVar;
-        this.f24167b = new C7561b(eVar);
-        this.f24168c = new C7562c(eVar);
-        this.f24169d = new C7563d(eVar);
-        this.f24170e = new C7564e(eVar);
-        this.f24171f = new C7565f(eVar);
-        this.f24172g = new C7566g(eVar);
-        this.f24173h = new C7567h(eVar);
-        this.f24174i = new C7568i(eVar);
-        this.f24175j = new C7569j(eVar);
+        this.f24169a = eVar;
+        this.f24170b = new C7561b(eVar);
+        this.f24171c = new C7562c(eVar);
+        this.f24172d = new C7563d(eVar);
+        this.f24173e = new C7564e(eVar);
+        this.f24174f = new C7565f(eVar);
+        this.f24175g = new C7566g(eVar);
+        this.f24176h = new C7567h(eVar);
+        this.f24177i = new C7568i(eVar);
+        this.f24178j = new C7569j(eVar);
     }
 
     @Override
     public void mo15694a(String str) {
-        this.f24166a.m8732b();
-        AbstractC10074f a = this.f24168c.m8677a();
+        this.f24169a.m8732b();
+        AbstractC10074f a = this.f24171c.m8677a();
         if (str == null) {
             a.mo5374d0(1);
         } else {
             a.mo5373q(1, str);
         }
-        this.f24166a.m8731c();
+        this.f24169a.m8731c();
         try {
             a.mo5371u();
-            this.f24166a.m8714t();
+            this.f24169a.m8714t();
         } finally {
-            this.f24166a.m8727g();
-            this.f24168c.m8672f(a);
+            this.f24169a.m8727g();
+            this.f24171c.m8672f(a);
         }
     }
 
     @Override
     public int mo15693b(String str, long j) {
-        this.f24166a.m8732b();
-        AbstractC10074f a = this.f24173h.m8677a();
+        this.f24169a.m8732b();
+        AbstractC10074f a = this.f24176h.m8677a();
         a.mo5376J(1, j);
         if (str == null) {
             a.mo5374d0(2);
         } else {
             a.mo5373q(2, str);
         }
-        this.f24166a.m8731c();
+        this.f24169a.m8731c();
         try {
             int u = a.mo5371u();
-            this.f24166a.m8714t();
+            this.f24169a.m8714t();
             return u;
         } finally {
-            this.f24166a.m8727g();
-            this.f24173h.m8672f(a);
+            this.f24169a.m8727g();
+            this.f24176h.m8672f(a);
         }
     }
 
@@ -328,16 +328,16 @@ public final class C7559r implements AbstractC7558q {
         } else {
             y0.mo5373q(1, str);
         }
-        this.f24166a.m8732b();
-        Cursor b = C9940c.m6454b(this.f24166a, y0, false, null);
+        this.f24169a.m8732b();
+        Cursor b = C9940c.m6454b(this.f24169a, y0, false, null);
         try {
             int c = C9939b.m6456c(b, "id");
             int c2 = C9939b.m6456c(b, "state");
             ArrayList arrayList = new ArrayList(b.getCount());
             while (b.moveToNext()) {
                 C7554p.C7556b bVar = new C7554p.C7556b();
-                bVar.f24158a = b.getString(c);
-                bVar.f24159b = C7574v.m15657g(b.getInt(c2));
+                bVar.f24161a = b.getString(c);
+                bVar.f24162b = C7574v.m15657g(b.getInt(c2));
                 arrayList.add(bVar);
             }
             return arrayList;
@@ -353,8 +353,8 @@ public final class C7559r implements AbstractC7558q {
         Throwable th;
         C9430h y0 = C9430h.m8682y0("SELECT `required_network_type`, `requires_charging`, `requires_device_idle`, `requires_battery_not_low`, `requires_storage_not_low`, `trigger_content_update_delay`, `trigger_max_content_delay`, `content_uri_triggers`, `WorkSpec`.`id` AS `id`, `WorkSpec`.`state` AS `state`, `WorkSpec`.`worker_class_name` AS `worker_class_name`, `WorkSpec`.`input_merger_class_name` AS `input_merger_class_name`, `WorkSpec`.`input` AS `input`, `WorkSpec`.`output` AS `output`, `WorkSpec`.`initial_delay` AS `initial_delay`, `WorkSpec`.`interval_duration` AS `interval_duration`, `WorkSpec`.`flex_duration` AS `flex_duration`, `WorkSpec`.`run_attempt_count` AS `run_attempt_count`, `WorkSpec`.`backoff_policy` AS `backoff_policy`, `WorkSpec`.`backoff_delay_duration` AS `backoff_delay_duration`, `WorkSpec`.`period_start_time` AS `period_start_time`, `WorkSpec`.`minimum_retention_duration` AS `minimum_retention_duration`, `WorkSpec`.`schedule_requested_at` AS `schedule_requested_at`, `WorkSpec`.`run_in_foreground` AS `run_in_foreground`, `WorkSpec`.`out_of_quota_policy` AS `out_of_quota_policy` FROM workspec WHERE period_start_time >= ? AND state IN (2, 3, 5) ORDER BY period_start_time DESC", 1);
         y0.mo5376J(1, j);
-        this.f24166a.m8732b();
-        Cursor b = C9940c.m6454b(this.f24166a, y0, false, null);
+        this.f24169a.m8732b();
+        Cursor b = C9940c.m6454b(this.f24169a, y0, false, null);
         try {
             int c = C9939b.m6456c(b, "required_network_type");
             int c2 = C9939b.m6456c(b, "requires_charging");
@@ -393,50 +393,50 @@ public final class C7559r implements AbstractC7558q {
                     C4223b bVar = new C4223b();
                     int i2 = b.getInt(c);
                     c = c;
-                    bVar.m28385k(C7574v.m15659e(i2));
-                    bVar.m28383m(b.getInt(c2) != 0);
-                    bVar.m28382n(b.getInt(c3) != 0);
-                    bVar.m28384l(b.getInt(c4) != 0);
-                    bVar.m28381o(b.getInt(c5) != 0);
+                    bVar.m28387k(C7574v.m15659e(i2));
+                    bVar.m28385m(b.getInt(c2) != 0);
+                    bVar.m28384n(b.getInt(c3) != 0);
+                    bVar.m28386l(b.getInt(c4) != 0);
+                    bVar.m28383o(b.getInt(c5) != 0);
                     c2 = c2;
                     c3 = c3;
-                    bVar.m28380p(b.getLong(c6));
-                    bVar.m28379q(b.getLong(c7));
-                    bVar.m28386j(C7574v.m15662b(b.getBlob(c8)));
+                    bVar.m28382p(b.getLong(c6));
+                    bVar.m28381q(b.getLong(c7));
+                    bVar.m28388j(C7574v.m15662b(b.getBlob(c8)));
                     C7554p pVar = new C7554p(string, string2);
-                    pVar.f24141b = C7574v.m15657g(b.getInt(c10));
-                    pVar.f24143d = b.getString(c12);
-                    pVar.f24144e = C1070b.m38475g(b.getBlob(c13));
+                    pVar.f24144b = C7574v.m15657g(b.getInt(c10));
+                    pVar.f24146d = b.getString(c12);
+                    pVar.f24147e = C1070b.m38478g(b.getBlob(c13));
                     int i3 = i;
-                    pVar.f24145f = C1070b.m38475g(b.getBlob(i3));
+                    pVar.f24148f = C1070b.m38478g(b.getBlob(i3));
                     int i4 = c15;
                     i = i3;
-                    pVar.f24146g = b.getLong(i4);
+                    pVar.f24149g = b.getLong(i4);
                     c12 = c12;
                     int i5 = c16;
-                    pVar.f24147h = b.getLong(i5);
+                    pVar.f24150h = b.getLong(i5);
                     c4 = c4;
                     int i6 = c17;
-                    pVar.f24148i = b.getLong(i6);
+                    pVar.f24151i = b.getLong(i6);
                     int i7 = c18;
-                    pVar.f24150k = b.getInt(i7);
+                    pVar.f24153k = b.getInt(i7);
                     int i8 = c19;
-                    pVar.f24151l = C7574v.m15660d(b.getInt(i8));
+                    pVar.f24154l = C7574v.m15660d(b.getInt(i8));
                     c17 = i6;
                     int i9 = c20;
-                    pVar.f24152m = b.getLong(i9);
+                    pVar.f24155m = b.getLong(i9);
                     int i10 = c21;
-                    pVar.f24153n = b.getLong(i10);
+                    pVar.f24156n = b.getLong(i10);
                     c21 = i10;
                     int i11 = c22;
-                    pVar.f24154o = b.getLong(i11);
+                    pVar.f24157o = b.getLong(i11);
                     int i12 = c23;
-                    pVar.f24155p = b.getLong(i12);
+                    pVar.f24158p = b.getLong(i12);
                     int i13 = c24;
-                    pVar.f24156q = b.getInt(i13) != 0;
+                    pVar.f24159q = b.getInt(i13) != 0;
                     int i14 = c25;
-                    pVar.f24157r = C7574v.m15658f(b.getInt(i14));
-                    pVar.f24149j = bVar;
+                    pVar.f24160r = C7574v.m15658f(b.getInt(i14));
+                    pVar.f24152j = bVar;
                     arrayList.add(pVar);
                     c25 = i14;
                     c15 = i4;
@@ -469,8 +469,8 @@ public final class C7559r implements AbstractC7558q {
         Throwable th;
         C9430h y0 = C9430h.m8682y0("SELECT `required_network_type`, `requires_charging`, `requires_device_idle`, `requires_battery_not_low`, `requires_storage_not_low`, `trigger_content_update_delay`, `trigger_max_content_delay`, `content_uri_triggers`, `WorkSpec`.`id` AS `id`, `WorkSpec`.`state` AS `state`, `WorkSpec`.`worker_class_name` AS `worker_class_name`, `WorkSpec`.`input_merger_class_name` AS `input_merger_class_name`, `WorkSpec`.`input` AS `input`, `WorkSpec`.`output` AS `output`, `WorkSpec`.`initial_delay` AS `initial_delay`, `WorkSpec`.`interval_duration` AS `interval_duration`, `WorkSpec`.`flex_duration` AS `flex_duration`, `WorkSpec`.`run_attempt_count` AS `run_attempt_count`, `WorkSpec`.`backoff_policy` AS `backoff_policy`, `WorkSpec`.`backoff_delay_duration` AS `backoff_delay_duration`, `WorkSpec`.`period_start_time` AS `period_start_time`, `WorkSpec`.`minimum_retention_duration` AS `minimum_retention_duration`, `WorkSpec`.`schedule_requested_at` AS `schedule_requested_at`, `WorkSpec`.`run_in_foreground` AS `run_in_foreground`, `WorkSpec`.`out_of_quota_policy` AS `out_of_quota_policy` FROM workspec WHERE state=0 AND schedule_requested_at=-1 ORDER BY period_start_time LIMIT (SELECT MAX(?-COUNT(*), 0) FROM workspec WHERE schedule_requested_at<>-1 AND state NOT IN (2, 3, 5))", 1);
         y0.mo5376J(1, i);
-        this.f24166a.m8732b();
-        Cursor b = C9940c.m6454b(this.f24166a, y0, false, null);
+        this.f24169a.m8732b();
+        Cursor b = C9940c.m6454b(this.f24169a, y0, false, null);
         try {
             int c = C9939b.m6456c(b, "required_network_type");
             int c2 = C9939b.m6456c(b, "requires_charging");
@@ -509,50 +509,50 @@ public final class C7559r implements AbstractC7558q {
                     C4223b bVar = new C4223b();
                     int i3 = b.getInt(c);
                     c = c;
-                    bVar.m28385k(C7574v.m15659e(i3));
-                    bVar.m28383m(b.getInt(c2) != 0);
-                    bVar.m28382n(b.getInt(c3) != 0);
-                    bVar.m28384l(b.getInt(c4) != 0);
-                    bVar.m28381o(b.getInt(c5) != 0);
+                    bVar.m28387k(C7574v.m15659e(i3));
+                    bVar.m28385m(b.getInt(c2) != 0);
+                    bVar.m28384n(b.getInt(c3) != 0);
+                    bVar.m28386l(b.getInt(c4) != 0);
+                    bVar.m28383o(b.getInt(c5) != 0);
                     c2 = c2;
                     c3 = c3;
-                    bVar.m28380p(b.getLong(c6));
-                    bVar.m28379q(b.getLong(c7));
-                    bVar.m28386j(C7574v.m15662b(b.getBlob(c8)));
+                    bVar.m28382p(b.getLong(c6));
+                    bVar.m28381q(b.getLong(c7));
+                    bVar.m28388j(C7574v.m15662b(b.getBlob(c8)));
                     C7554p pVar = new C7554p(string, string2);
-                    pVar.f24141b = C7574v.m15657g(b.getInt(c10));
-                    pVar.f24143d = b.getString(c12);
-                    pVar.f24144e = C1070b.m38475g(b.getBlob(c13));
+                    pVar.f24144b = C7574v.m15657g(b.getInt(c10));
+                    pVar.f24146d = b.getString(c12);
+                    pVar.f24147e = C1070b.m38478g(b.getBlob(c13));
                     int i4 = i2;
-                    pVar.f24145f = C1070b.m38475g(b.getBlob(i4));
+                    pVar.f24148f = C1070b.m38478g(b.getBlob(i4));
                     i2 = i4;
                     int i5 = c15;
-                    pVar.f24146g = b.getLong(i5);
+                    pVar.f24149g = b.getLong(i5);
                     c12 = c12;
                     int i6 = c16;
-                    pVar.f24147h = b.getLong(i6);
+                    pVar.f24150h = b.getLong(i6);
                     c4 = c4;
                     int i7 = c17;
-                    pVar.f24148i = b.getLong(i7);
+                    pVar.f24151i = b.getLong(i7);
                     int i8 = c18;
-                    pVar.f24150k = b.getInt(i8);
+                    pVar.f24153k = b.getInt(i8);
                     int i9 = c19;
-                    pVar.f24151l = C7574v.m15660d(b.getInt(i9));
+                    pVar.f24154l = C7574v.m15660d(b.getInt(i9));
                     c17 = i7;
                     int i10 = c20;
-                    pVar.f24152m = b.getLong(i10);
+                    pVar.f24155m = b.getLong(i10);
                     int i11 = c21;
-                    pVar.f24153n = b.getLong(i11);
+                    pVar.f24156n = b.getLong(i11);
                     c21 = i11;
                     int i12 = c22;
-                    pVar.f24154o = b.getLong(i12);
+                    pVar.f24157o = b.getLong(i12);
                     int i13 = c23;
-                    pVar.f24155p = b.getLong(i13);
+                    pVar.f24158p = b.getLong(i13);
                     int i14 = c24;
-                    pVar.f24156q = b.getInt(i14) != 0;
+                    pVar.f24159q = b.getInt(i14) != 0;
                     int i15 = c25;
-                    pVar.f24157r = C7574v.m15658f(b.getInt(i15));
-                    pVar.f24149j = bVar;
+                    pVar.f24160r = C7574v.m15658f(b.getInt(i15));
+                    pVar.f24152j = bVar;
                     arrayList.add(pVar);
                     c25 = i15;
                     c15 = i5;
@@ -584,8 +584,8 @@ public final class C7559r implements AbstractC7558q {
         C9430h hVar;
         Throwable th;
         C9430h y0 = C9430h.m8682y0("SELECT `required_network_type`, `requires_charging`, `requires_device_idle`, `requires_battery_not_low`, `requires_storage_not_low`, `trigger_content_update_delay`, `trigger_max_content_delay`, `content_uri_triggers`, `WorkSpec`.`id` AS `id`, `WorkSpec`.`state` AS `state`, `WorkSpec`.`worker_class_name` AS `worker_class_name`, `WorkSpec`.`input_merger_class_name` AS `input_merger_class_name`, `WorkSpec`.`input` AS `input`, `WorkSpec`.`output` AS `output`, `WorkSpec`.`initial_delay` AS `initial_delay`, `WorkSpec`.`interval_duration` AS `interval_duration`, `WorkSpec`.`flex_duration` AS `flex_duration`, `WorkSpec`.`run_attempt_count` AS `run_attempt_count`, `WorkSpec`.`backoff_policy` AS `backoff_policy`, `WorkSpec`.`backoff_delay_duration` AS `backoff_delay_duration`, `WorkSpec`.`period_start_time` AS `period_start_time`, `WorkSpec`.`minimum_retention_duration` AS `minimum_retention_duration`, `WorkSpec`.`schedule_requested_at` AS `schedule_requested_at`, `WorkSpec`.`run_in_foreground` AS `run_in_foreground`, `WorkSpec`.`out_of_quota_policy` AS `out_of_quota_policy` FROM workspec WHERE state=0 AND schedule_requested_at<>-1", 0);
-        this.f24166a.m8732b();
-        Cursor b = C9940c.m6454b(this.f24166a, y0, false, null);
+        this.f24169a.m8732b();
+        Cursor b = C9940c.m6454b(this.f24169a, y0, false, null);
         try {
             int c = C9939b.m6456c(b, "required_network_type");
             int c2 = C9939b.m6456c(b, "requires_charging");
@@ -624,50 +624,50 @@ public final class C7559r implements AbstractC7558q {
                     C4223b bVar = new C4223b();
                     int i2 = b.getInt(c);
                     c = c;
-                    bVar.m28385k(C7574v.m15659e(i2));
-                    bVar.m28383m(b.getInt(c2) != 0);
-                    bVar.m28382n(b.getInt(c3) != 0);
-                    bVar.m28384l(b.getInt(c4) != 0);
-                    bVar.m28381o(b.getInt(c5) != 0);
+                    bVar.m28387k(C7574v.m15659e(i2));
+                    bVar.m28385m(b.getInt(c2) != 0);
+                    bVar.m28384n(b.getInt(c3) != 0);
+                    bVar.m28386l(b.getInt(c4) != 0);
+                    bVar.m28383o(b.getInt(c5) != 0);
                     c2 = c2;
                     c3 = c3;
-                    bVar.m28380p(b.getLong(c6));
-                    bVar.m28379q(b.getLong(c7));
-                    bVar.m28386j(C7574v.m15662b(b.getBlob(c8)));
+                    bVar.m28382p(b.getLong(c6));
+                    bVar.m28381q(b.getLong(c7));
+                    bVar.m28388j(C7574v.m15662b(b.getBlob(c8)));
                     C7554p pVar = new C7554p(string, string2);
-                    pVar.f24141b = C7574v.m15657g(b.getInt(c10));
-                    pVar.f24143d = b.getString(c12);
-                    pVar.f24144e = C1070b.m38475g(b.getBlob(c13));
+                    pVar.f24144b = C7574v.m15657g(b.getInt(c10));
+                    pVar.f24146d = b.getString(c12);
+                    pVar.f24147e = C1070b.m38478g(b.getBlob(c13));
                     int i3 = i;
-                    pVar.f24145f = C1070b.m38475g(b.getBlob(i3));
+                    pVar.f24148f = C1070b.m38478g(b.getBlob(i3));
                     i = i3;
                     int i4 = c15;
-                    pVar.f24146g = b.getLong(i4);
+                    pVar.f24149g = b.getLong(i4);
                     c13 = c13;
                     int i5 = c16;
-                    pVar.f24147h = b.getLong(i5);
+                    pVar.f24150h = b.getLong(i5);
                     c4 = c4;
                     int i6 = c17;
-                    pVar.f24148i = b.getLong(i6);
+                    pVar.f24151i = b.getLong(i6);
                     int i7 = c18;
-                    pVar.f24150k = b.getInt(i7);
+                    pVar.f24153k = b.getInt(i7);
                     int i8 = c19;
-                    pVar.f24151l = C7574v.m15660d(b.getInt(i8));
+                    pVar.f24154l = C7574v.m15660d(b.getInt(i8));
                     c17 = i6;
                     int i9 = c20;
-                    pVar.f24152m = b.getLong(i9);
+                    pVar.f24155m = b.getLong(i9);
                     int i10 = c21;
-                    pVar.f24153n = b.getLong(i10);
+                    pVar.f24156n = b.getLong(i10);
                     c21 = i10;
                     int i11 = c22;
-                    pVar.f24154o = b.getLong(i11);
+                    pVar.f24157o = b.getLong(i11);
                     int i12 = c23;
-                    pVar.f24155p = b.getLong(i12);
+                    pVar.f24158p = b.getLong(i12);
                     int i13 = c24;
-                    pVar.f24156q = b.getInt(i13) != 0;
+                    pVar.f24159q = b.getInt(i13) != 0;
                     int i14 = c25;
-                    pVar.f24157r = C7574v.m15658f(b.getInt(i14));
-                    pVar.f24149j = bVar;
+                    pVar.f24160r = C7574v.m15658f(b.getInt(i14));
+                    pVar.f24152j = bVar;
                     arrayList.add(pVar);
                     c25 = i14;
                     c15 = i4;
@@ -696,9 +696,9 @@ public final class C7559r implements AbstractC7558q {
 
     @Override
     public void mo15688g(String str, C1070b bVar) {
-        this.f24166a.m8732b();
-        AbstractC10074f a = this.f24169d.m8677a();
-        byte[] m = C1070b.m38469m(bVar);
+        this.f24169a.m8732b();
+        AbstractC10074f a = this.f24172d.m8677a();
+        byte[] m = C1070b.m38472m(bVar);
         if (m == null) {
             a.mo5374d0(1);
         } else {
@@ -709,25 +709,25 @@ public final class C7559r implements AbstractC7558q {
         } else {
             a.mo5373q(2, str);
         }
-        this.f24166a.m8731c();
+        this.f24169a.m8731c();
         try {
             a.mo5371u();
-            this.f24166a.m8714t();
+            this.f24169a.m8714t();
         } finally {
-            this.f24166a.m8727g();
-            this.f24169d.m8672f(a);
+            this.f24169a.m8727g();
+            this.f24172d.m8672f(a);
         }
     }
 
     @Override
     public void mo15687h(C7554p pVar) {
-        this.f24166a.m8732b();
-        this.f24166a.m8731c();
+        this.f24169a.m8732b();
+        this.f24169a.m8731c();
         try {
-            this.f24167b.m8740h(pVar);
-            this.f24166a.m8714t();
+            this.f24170b.m8740h(pVar);
+            this.f24169a.m8714t();
         } finally {
-            this.f24166a.m8727g();
+            this.f24169a.m8727g();
         }
     }
 
@@ -739,19 +739,19 @@ public final class C7559r implements AbstractC7558q {
         } else {
             y0.mo5373q(1, str);
         }
-        return this.f24166a.m8725i().m38667d(new String[]{"WorkTag", "WorkProgress", "workspec", "workname"}, true, new CallableC7560a(y0));
+        return this.f24169a.m8725i().m38670d(new String[]{"WorkTag", "WorkProgress", "workspec", "workname"}, true, new CallableC7560a(y0));
     }
 
     @Override
     public int mo15685j(C4250s.EnumC4251a aVar, String... strArr) {
-        this.f24166a.m8732b();
+        this.f24169a.m8732b();
         StringBuilder b = C9942e.m6450b();
         b.append("UPDATE workspec SET state=");
         b.append("?");
         b.append(" WHERE id IN (");
         C9942e.m6451a(b, strArr.length);
         b.append(")");
-        AbstractC10074f d = this.f24166a.m8730d(b.toString());
+        AbstractC10074f d = this.f24169a.m8730d(b.toString());
         d.mo5376J(1, C7574v.m15654j(aVar));
         int i = 2;
         for (String str : strArr) {
@@ -762,13 +762,13 @@ public final class C7559r implements AbstractC7558q {
             }
             i++;
         }
-        this.f24166a.m8731c();
+        this.f24169a.m8731c();
         try {
             int u = d.mo5371u();
-            this.f24166a.m8714t();
+            this.f24169a.m8714t();
             return u;
         } finally {
-            this.f24166a.m8727g();
+            this.f24169a.m8727g();
         }
     }
 
@@ -777,8 +777,8 @@ public final class C7559r implements AbstractC7558q {
         C9430h hVar;
         Throwable th;
         C9430h y0 = C9430h.m8682y0("SELECT `required_network_type`, `requires_charging`, `requires_device_idle`, `requires_battery_not_low`, `requires_storage_not_low`, `trigger_content_update_delay`, `trigger_max_content_delay`, `content_uri_triggers`, `WorkSpec`.`id` AS `id`, `WorkSpec`.`state` AS `state`, `WorkSpec`.`worker_class_name` AS `worker_class_name`, `WorkSpec`.`input_merger_class_name` AS `input_merger_class_name`, `WorkSpec`.`input` AS `input`, `WorkSpec`.`output` AS `output`, `WorkSpec`.`initial_delay` AS `initial_delay`, `WorkSpec`.`interval_duration` AS `interval_duration`, `WorkSpec`.`flex_duration` AS `flex_duration`, `WorkSpec`.`run_attempt_count` AS `run_attempt_count`, `WorkSpec`.`backoff_policy` AS `backoff_policy`, `WorkSpec`.`backoff_delay_duration` AS `backoff_delay_duration`, `WorkSpec`.`period_start_time` AS `period_start_time`, `WorkSpec`.`minimum_retention_duration` AS `minimum_retention_duration`, `WorkSpec`.`schedule_requested_at` AS `schedule_requested_at`, `WorkSpec`.`run_in_foreground` AS `run_in_foreground`, `WorkSpec`.`out_of_quota_policy` AS `out_of_quota_policy` FROM workspec WHERE state=1", 0);
-        this.f24166a.m8732b();
-        Cursor b = C9940c.m6454b(this.f24166a, y0, false, null);
+        this.f24169a.m8732b();
+        Cursor b = C9940c.m6454b(this.f24169a, y0, false, null);
         try {
             int c = C9939b.m6456c(b, "required_network_type");
             int c2 = C9939b.m6456c(b, "requires_charging");
@@ -817,50 +817,50 @@ public final class C7559r implements AbstractC7558q {
                     C4223b bVar = new C4223b();
                     int i2 = b.getInt(c);
                     c = c;
-                    bVar.m28385k(C7574v.m15659e(i2));
-                    bVar.m28383m(b.getInt(c2) != 0);
-                    bVar.m28382n(b.getInt(c3) != 0);
-                    bVar.m28384l(b.getInt(c4) != 0);
-                    bVar.m28381o(b.getInt(c5) != 0);
+                    bVar.m28387k(C7574v.m15659e(i2));
+                    bVar.m28385m(b.getInt(c2) != 0);
+                    bVar.m28384n(b.getInt(c3) != 0);
+                    bVar.m28386l(b.getInt(c4) != 0);
+                    bVar.m28383o(b.getInt(c5) != 0);
                     c2 = c2;
                     c3 = c3;
-                    bVar.m28380p(b.getLong(c6));
-                    bVar.m28379q(b.getLong(c7));
-                    bVar.m28386j(C7574v.m15662b(b.getBlob(c8)));
+                    bVar.m28382p(b.getLong(c6));
+                    bVar.m28381q(b.getLong(c7));
+                    bVar.m28388j(C7574v.m15662b(b.getBlob(c8)));
                     C7554p pVar = new C7554p(string, string2);
-                    pVar.f24141b = C7574v.m15657g(b.getInt(c10));
-                    pVar.f24143d = b.getString(c12);
-                    pVar.f24144e = C1070b.m38475g(b.getBlob(c13));
+                    pVar.f24144b = C7574v.m15657g(b.getInt(c10));
+                    pVar.f24146d = b.getString(c12);
+                    pVar.f24147e = C1070b.m38478g(b.getBlob(c13));
                     int i3 = i;
-                    pVar.f24145f = C1070b.m38475g(b.getBlob(i3));
+                    pVar.f24148f = C1070b.m38478g(b.getBlob(i3));
                     i = i3;
                     int i4 = c15;
-                    pVar.f24146g = b.getLong(i4);
+                    pVar.f24149g = b.getLong(i4);
                     c13 = c13;
                     int i5 = c16;
-                    pVar.f24147h = b.getLong(i5);
+                    pVar.f24150h = b.getLong(i5);
                     c4 = c4;
                     int i6 = c17;
-                    pVar.f24148i = b.getLong(i6);
+                    pVar.f24151i = b.getLong(i6);
                     int i7 = c18;
-                    pVar.f24150k = b.getInt(i7);
+                    pVar.f24153k = b.getInt(i7);
                     int i8 = c19;
-                    pVar.f24151l = C7574v.m15660d(b.getInt(i8));
+                    pVar.f24154l = C7574v.m15660d(b.getInt(i8));
                     c17 = i6;
                     int i9 = c20;
-                    pVar.f24152m = b.getLong(i9);
+                    pVar.f24155m = b.getLong(i9);
                     int i10 = c21;
-                    pVar.f24153n = b.getLong(i10);
+                    pVar.f24156n = b.getLong(i10);
                     c21 = i10;
                     int i11 = c22;
-                    pVar.f24154o = b.getLong(i11);
+                    pVar.f24157o = b.getLong(i11);
                     int i12 = c23;
-                    pVar.f24155p = b.getLong(i12);
+                    pVar.f24158p = b.getLong(i12);
                     int i13 = c24;
-                    pVar.f24156q = b.getInt(i13) != 0;
+                    pVar.f24159q = b.getInt(i13) != 0;
                     int i14 = c25;
-                    pVar.f24157r = C7574v.m15658f(b.getInt(i14));
-                    pVar.f24149j = bVar;
+                    pVar.f24160r = C7574v.m15658f(b.getInt(i14));
+                    pVar.f24152j = bVar;
                     arrayList.add(pVar);
                     c25 = i14;
                     c15 = i4;
@@ -891,8 +891,8 @@ public final class C7559r implements AbstractC7558q {
     public boolean mo15683l() {
         boolean z = false;
         C9430h y0 = C9430h.m8682y0("SELECT COUNT(*) > 0 FROM workspec WHERE state NOT IN (2, 3, 5) LIMIT 1", 0);
-        this.f24166a.m8732b();
-        Cursor b = C9940c.m6454b(this.f24166a, y0, false, null);
+        this.f24169a.m8732b();
+        Cursor b = C9940c.m6454b(this.f24169a, y0, false, null);
         try {
             if (b.moveToFirst()) {
                 if (b.getInt(0) != 0) {
@@ -914,8 +914,8 @@ public final class C7559r implements AbstractC7558q {
         } else {
             y0.mo5373q(1, str);
         }
-        this.f24166a.m8732b();
-        Cursor b = C9940c.m6454b(this.f24166a, y0, false, null);
+        this.f24169a.m8732b();
+        Cursor b = C9940c.m6454b(this.f24169a, y0, false, null);
         try {
             ArrayList arrayList = new ArrayList(b.getCount());
             while (b.moveToNext()) {
@@ -936,9 +936,9 @@ public final class C7559r implements AbstractC7558q {
         } else {
             y0.mo5373q(1, str);
         }
-        this.f24166a.m8732b();
+        this.f24169a.m8732b();
         C4250s.EnumC4251a aVar = null;
-        Cursor b = C9940c.m6454b(this.f24166a, y0, false, null);
+        Cursor b = C9940c.m6454b(this.f24169a, y0, false, null);
         try {
             if (b.moveToFirst()) {
                 aVar = C7574v.m15657g(b.getInt(0));
@@ -961,8 +961,8 @@ public final class C7559r implements AbstractC7558q {
         } else {
             y0.mo5373q(1, str);
         }
-        this.f24166a.m8732b();
-        Cursor b = C9940c.m6454b(this.f24166a, y0, false, null);
+        this.f24169a.m8732b();
+        Cursor b = C9940c.m6454b(this.f24169a, y0, false, null);
         try {
             int c = C9939b.m6456c(b, "required_network_type");
             int c2 = C9939b.m6456c(b, "requires_charging");
@@ -995,31 +995,31 @@ public final class C7559r implements AbstractC7558q {
                     String string = b.getString(c9);
                     String string2 = b.getString(c11);
                     C4223b bVar = new C4223b();
-                    bVar.m28385k(C7574v.m15659e(b.getInt(c)));
-                    bVar.m28383m(b.getInt(c2) != 0);
-                    bVar.m28382n(b.getInt(c3) != 0);
-                    bVar.m28384l(b.getInt(c4) != 0);
-                    bVar.m28381o(b.getInt(c5) != 0);
-                    bVar.m28380p(b.getLong(c6));
-                    bVar.m28379q(b.getLong(c7));
-                    bVar.m28386j(C7574v.m15662b(b.getBlob(c8)));
+                    bVar.m28387k(C7574v.m15659e(b.getInt(c)));
+                    bVar.m28385m(b.getInt(c2) != 0);
+                    bVar.m28384n(b.getInt(c3) != 0);
+                    bVar.m28386l(b.getInt(c4) != 0);
+                    bVar.m28383o(b.getInt(c5) != 0);
+                    bVar.m28382p(b.getLong(c6));
+                    bVar.m28381q(b.getLong(c7));
+                    bVar.m28388j(C7574v.m15662b(b.getBlob(c8)));
                     C7554p pVar2 = new C7554p(string, string2);
-                    pVar2.f24141b = C7574v.m15657g(b.getInt(c10));
-                    pVar2.f24143d = b.getString(c12);
-                    pVar2.f24144e = C1070b.m38475g(b.getBlob(c13));
-                    pVar2.f24145f = C1070b.m38475g(b.getBlob(c14));
-                    pVar2.f24146g = b.getLong(c15);
-                    pVar2.f24147h = b.getLong(c16);
-                    pVar2.f24148i = b.getLong(c17);
-                    pVar2.f24150k = b.getInt(c18);
-                    pVar2.f24151l = C7574v.m15660d(b.getInt(c19));
-                    pVar2.f24152m = b.getLong(c20);
-                    pVar2.f24153n = b.getLong(c21);
-                    pVar2.f24154o = b.getLong(c22);
-                    pVar2.f24155p = b.getLong(c23);
-                    pVar2.f24156q = b.getInt(c24) != 0;
-                    pVar2.f24157r = C7574v.m15658f(b.getInt(c25));
-                    pVar2.f24149j = bVar;
+                    pVar2.f24144b = C7574v.m15657g(b.getInt(c10));
+                    pVar2.f24146d = b.getString(c12);
+                    pVar2.f24147e = C1070b.m38478g(b.getBlob(c13));
+                    pVar2.f24148f = C1070b.m38478g(b.getBlob(c14));
+                    pVar2.f24149g = b.getLong(c15);
+                    pVar2.f24150h = b.getLong(c16);
+                    pVar2.f24151i = b.getLong(c17);
+                    pVar2.f24153k = b.getInt(c18);
+                    pVar2.f24154l = C7574v.m15660d(b.getInt(c19));
+                    pVar2.f24155m = b.getLong(c20);
+                    pVar2.f24156n = b.getLong(c21);
+                    pVar2.f24157o = b.getLong(c22);
+                    pVar2.f24158p = b.getLong(c23);
+                    pVar2.f24159q = b.getInt(c24) != 0;
+                    pVar2.f24160r = C7574v.m15658f(b.getInt(c25));
+                    pVar2.f24152j = bVar;
                     pVar = pVar2;
                 } else {
                     pVar = null;
@@ -1041,21 +1041,21 @@ public final class C7559r implements AbstractC7558q {
 
     @Override
     public int mo15679p(String str) {
-        this.f24166a.m8732b();
-        AbstractC10074f a = this.f24172g.m8677a();
+        this.f24169a.m8732b();
+        AbstractC10074f a = this.f24175g.m8677a();
         if (str == null) {
             a.mo5374d0(1);
         } else {
             a.mo5373q(1, str);
         }
-        this.f24166a.m8731c();
+        this.f24169a.m8731c();
         try {
             int u = a.mo5371u();
-            this.f24166a.m8714t();
+            this.f24169a.m8714t();
             return u;
         } finally {
-            this.f24166a.m8727g();
-            this.f24172g.m8672f(a);
+            this.f24169a.m8727g();
+            this.f24175g.m8672f(a);
         }
     }
 
@@ -1067,8 +1067,8 @@ public final class C7559r implements AbstractC7558q {
         } else {
             y0.mo5373q(1, str);
         }
-        this.f24166a.m8732b();
-        Cursor b = C9940c.m6454b(this.f24166a, y0, false, null);
+        this.f24169a.m8732b();
+        Cursor b = C9940c.m6454b(this.f24169a, y0, false, null);
         try {
             ArrayList arrayList = new ArrayList(b.getCount());
             while (b.moveToNext()) {
@@ -1089,12 +1089,12 @@ public final class C7559r implements AbstractC7558q {
         } else {
             y0.mo5373q(1, str);
         }
-        this.f24166a.m8732b();
-        Cursor b = C9940c.m6454b(this.f24166a, y0, false, null);
+        this.f24169a.m8732b();
+        Cursor b = C9940c.m6454b(this.f24169a, y0, false, null);
         try {
             ArrayList arrayList = new ArrayList(b.getCount());
             while (b.moveToNext()) {
-                arrayList.add(C1070b.m38475g(b.getBlob(0)));
+                arrayList.add(C1070b.m38478g(b.getBlob(0)));
             }
             return arrayList;
         } finally {
@@ -1105,41 +1105,41 @@ public final class C7559r implements AbstractC7558q {
 
     @Override
     public int mo15676s(String str) {
-        this.f24166a.m8732b();
-        AbstractC10074f a = this.f24171f.m8677a();
+        this.f24169a.m8732b();
+        AbstractC10074f a = this.f24174f.m8677a();
         if (str == null) {
             a.mo5374d0(1);
         } else {
             a.mo5373q(1, str);
         }
-        this.f24166a.m8731c();
+        this.f24169a.m8731c();
         try {
             int u = a.mo5371u();
-            this.f24166a.m8714t();
+            this.f24169a.m8714t();
             return u;
         } finally {
-            this.f24166a.m8727g();
-            this.f24171f.m8672f(a);
+            this.f24169a.m8727g();
+            this.f24174f.m8672f(a);
         }
     }
 
     @Override
     public void mo15675t(String str, long j) {
-        this.f24166a.m8732b();
-        AbstractC10074f a = this.f24170e.m8677a();
+        this.f24169a.m8732b();
+        AbstractC10074f a = this.f24173e.m8677a();
         a.mo5376J(1, j);
         if (str == null) {
             a.mo5374d0(2);
         } else {
             a.mo5373q(2, str);
         }
-        this.f24166a.m8731c();
+        this.f24169a.m8731c();
         try {
             a.mo5371u();
-            this.f24166a.m8714t();
+            this.f24169a.m8714t();
         } finally {
-            this.f24166a.m8727g();
-            this.f24170e.m8672f(a);
+            this.f24169a.m8727g();
+            this.f24173e.m8672f(a);
         }
     }
 
@@ -1149,8 +1149,8 @@ public final class C7559r implements AbstractC7558q {
         Throwable th;
         C9430h y0 = C9430h.m8682y0("SELECT `required_network_type`, `requires_charging`, `requires_device_idle`, `requires_battery_not_low`, `requires_storage_not_low`, `trigger_content_update_delay`, `trigger_max_content_delay`, `content_uri_triggers`, `WorkSpec`.`id` AS `id`, `WorkSpec`.`state` AS `state`, `WorkSpec`.`worker_class_name` AS `worker_class_name`, `WorkSpec`.`input_merger_class_name` AS `input_merger_class_name`, `WorkSpec`.`input` AS `input`, `WorkSpec`.`output` AS `output`, `WorkSpec`.`initial_delay` AS `initial_delay`, `WorkSpec`.`interval_duration` AS `interval_duration`, `WorkSpec`.`flex_duration` AS `flex_duration`, `WorkSpec`.`run_attempt_count` AS `run_attempt_count`, `WorkSpec`.`backoff_policy` AS `backoff_policy`, `WorkSpec`.`backoff_delay_duration` AS `backoff_delay_duration`, `WorkSpec`.`period_start_time` AS `period_start_time`, `WorkSpec`.`minimum_retention_duration` AS `minimum_retention_duration`, `WorkSpec`.`schedule_requested_at` AS `schedule_requested_at`, `WorkSpec`.`run_in_foreground` AS `run_in_foreground`, `WorkSpec`.`out_of_quota_policy` AS `out_of_quota_policy` FROM workspec WHERE state=0 ORDER BY period_start_time LIMIT ?", 1);
         y0.mo5376J(1, i);
-        this.f24166a.m8732b();
-        Cursor b = C9940c.m6454b(this.f24166a, y0, false, null);
+        this.f24169a.m8732b();
+        Cursor b = C9940c.m6454b(this.f24169a, y0, false, null);
         try {
             int c = C9939b.m6456c(b, "required_network_type");
             int c2 = C9939b.m6456c(b, "requires_charging");
@@ -1189,50 +1189,50 @@ public final class C7559r implements AbstractC7558q {
                     C4223b bVar = new C4223b();
                     int i3 = b.getInt(c);
                     c = c;
-                    bVar.m28385k(C7574v.m15659e(i3));
-                    bVar.m28383m(b.getInt(c2) != 0);
-                    bVar.m28382n(b.getInt(c3) != 0);
-                    bVar.m28384l(b.getInt(c4) != 0);
-                    bVar.m28381o(b.getInt(c5) != 0);
+                    bVar.m28387k(C7574v.m15659e(i3));
+                    bVar.m28385m(b.getInt(c2) != 0);
+                    bVar.m28384n(b.getInt(c3) != 0);
+                    bVar.m28386l(b.getInt(c4) != 0);
+                    bVar.m28383o(b.getInt(c5) != 0);
                     c2 = c2;
                     c3 = c3;
-                    bVar.m28380p(b.getLong(c6));
-                    bVar.m28379q(b.getLong(c7));
-                    bVar.m28386j(C7574v.m15662b(b.getBlob(c8)));
+                    bVar.m28382p(b.getLong(c6));
+                    bVar.m28381q(b.getLong(c7));
+                    bVar.m28388j(C7574v.m15662b(b.getBlob(c8)));
                     C7554p pVar = new C7554p(string, string2);
-                    pVar.f24141b = C7574v.m15657g(b.getInt(c10));
-                    pVar.f24143d = b.getString(c12);
-                    pVar.f24144e = C1070b.m38475g(b.getBlob(c13));
+                    pVar.f24144b = C7574v.m15657g(b.getInt(c10));
+                    pVar.f24146d = b.getString(c12);
+                    pVar.f24147e = C1070b.m38478g(b.getBlob(c13));
                     int i4 = i2;
-                    pVar.f24145f = C1070b.m38475g(b.getBlob(i4));
+                    pVar.f24148f = C1070b.m38478g(b.getBlob(i4));
                     i2 = i4;
                     int i5 = c15;
-                    pVar.f24146g = b.getLong(i5);
+                    pVar.f24149g = b.getLong(i5);
                     c12 = c12;
                     int i6 = c16;
-                    pVar.f24147h = b.getLong(i6);
+                    pVar.f24150h = b.getLong(i6);
                     c4 = c4;
                     int i7 = c17;
-                    pVar.f24148i = b.getLong(i7);
+                    pVar.f24151i = b.getLong(i7);
                     int i8 = c18;
-                    pVar.f24150k = b.getInt(i8);
+                    pVar.f24153k = b.getInt(i8);
                     int i9 = c19;
-                    pVar.f24151l = C7574v.m15660d(b.getInt(i9));
+                    pVar.f24154l = C7574v.m15660d(b.getInt(i9));
                     c17 = i7;
                     int i10 = c20;
-                    pVar.f24152m = b.getLong(i10);
+                    pVar.f24155m = b.getLong(i10);
                     int i11 = c21;
-                    pVar.f24153n = b.getLong(i11);
+                    pVar.f24156n = b.getLong(i11);
                     c21 = i11;
                     int i12 = c22;
-                    pVar.f24154o = b.getLong(i12);
+                    pVar.f24157o = b.getLong(i12);
                     int i13 = c23;
-                    pVar.f24155p = b.getLong(i13);
+                    pVar.f24158p = b.getLong(i13);
                     int i14 = c24;
-                    pVar.f24156q = b.getInt(i14) != 0;
+                    pVar.f24159q = b.getInt(i14) != 0;
                     int i15 = c25;
-                    pVar.f24157r = C7574v.m15658f(b.getInt(i15));
-                    pVar.f24149j = bVar;
+                    pVar.f24160r = C7574v.m15658f(b.getInt(i15));
+                    pVar.f24152j = bVar;
                     arrayList.add(pVar);
                     c25 = i15;
                     c15 = i5;
@@ -1261,16 +1261,16 @@ public final class C7559r implements AbstractC7558q {
 
     @Override
     public int mo15673v() {
-        this.f24166a.m8732b();
-        AbstractC10074f a = this.f24174i.m8677a();
-        this.f24166a.m8731c();
+        this.f24169a.m8732b();
+        AbstractC10074f a = this.f24177i.m8677a();
+        this.f24169a.m8731c();
         try {
             int u = a.mo5371u();
-            this.f24166a.m8714t();
+            this.f24169a.m8714t();
             return u;
         } finally {
-            this.f24166a.m8727g();
-            this.f24174i.m8672f(a);
+            this.f24169a.m8727g();
+            this.f24177i.m8672f(a);
         }
     }
 
@@ -1286,7 +1286,7 @@ public final class C7559r implements AbstractC7558q {
                 loop0: while (true) {
                     i = 0;
                     while (i2 < size) {
-                        aVar2.put(aVar.m21479i(i2), aVar.m21476l(i2));
+                        aVar2.put(aVar.m21480i(i2), aVar.m21477l(i2));
                         i2++;
                         i++;
                         if (i == 999) {
@@ -1317,13 +1317,13 @@ public final class C7559r implements AbstractC7558q {
                 }
                 i3++;
             }
-            Cursor b2 = C9940c.m6454b(this.f24166a, y0, false, null);
+            Cursor b2 = C9940c.m6454b(this.f24169a, y0, false, null);
             try {
                 int b3 = C9939b.m6457b(b2, "work_spec_id");
                 if (b3 != -1) {
                     while (b2.moveToNext()) {
                         if (!b2.isNull(b3) && (arrayList = aVar.get(b2.getString(b3))) != null) {
-                            arrayList.add(C1070b.m38475g(b2.getBlob(0)));
+                            arrayList.add(C1070b.m38478g(b2.getBlob(0)));
                         }
                     }
                 }
@@ -1345,7 +1345,7 @@ public final class C7559r implements AbstractC7558q {
                 loop0: while (true) {
                     i = 0;
                     while (i2 < size) {
-                        aVar2.put(aVar.m21479i(i2), aVar.m21476l(i2));
+                        aVar2.put(aVar.m21480i(i2), aVar.m21477l(i2));
                         i2++;
                         i++;
                         if (i == 999) {
@@ -1376,7 +1376,7 @@ public final class C7559r implements AbstractC7558q {
                 }
                 i3++;
             }
-            Cursor b2 = C9940c.m6454b(this.f24166a, y0, false, null);
+            Cursor b2 = C9940c.m6454b(this.f24169a, y0, false, null);
             try {
                 int b3 = C9939b.m6457b(b2, "work_spec_id");
                 if (b3 != -1) {

@@ -40,13 +40,13 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
         }
 
         @Override
-        public K mo21512a(int i) {
-            return C6024a.this.m21479i(i);
+        public K mo21513a(int i) {
+            return C6024a.this.m21480i(i);
         }
 
         @Override
-        public void mo21511b(int i) {
-            C6024a.this.m21478j(i);
+        public void mo21512b(int i) {
+            C6024a.this.m21479j(i);
         }
     }
 
@@ -76,7 +76,7 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
                 return false;
             } else {
                 Map.Entry entry = (Map.Entry) obj;
-                return C6033c.m21516c(entry.getKey(), C6024a.this.m21479i(this.f19177b)) && C6033c.m21516c(entry.getValue(), C6024a.this.m21476l(this.f19177b));
+                return C6033c.m21517c(entry.getKey(), C6024a.this.m21480i(this.f19177b)) && C6033c.m21517c(entry.getValue(), C6024a.this.m21477l(this.f19177b));
             }
         }
 
@@ -93,7 +93,7 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
         @Override
         public K getKey() {
             if (this.f19178c) {
-                return C6024a.this.m21479i(this.f19177b);
+                return C6024a.this.m21480i(this.f19177b);
             }
             throw new IllegalStateException("This container does not support retaining Map.Entry objects");
         }
@@ -101,7 +101,7 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
         @Override
         public V getValue() {
             if (this.f19178c) {
-                return C6024a.this.m21476l(this.f19177b);
+                return C6024a.this.m21477l(this.f19177b);
             }
             throw new IllegalStateException("This container does not support retaining Map.Entry objects");
         }
@@ -114,8 +114,8 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
         @Override
         public int hashCode() {
             if (this.f19178c) {
-                K i = C6024a.this.m21479i(this.f19177b);
-                V l = C6024a.this.m21476l(this.f19177b);
+                K i = C6024a.this.m21480i(this.f19177b);
+                V l = C6024a.this.m21477l(this.f19177b);
                 int i2 = 0;
                 int hashCode = i == null ? 0 : i.hashCode();
                 if (l != null) {
@@ -129,7 +129,7 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
         @Override
         public void remove() {
             if (this.f19178c) {
-                C6024a.this.m21478j(this.f19177b);
+                C6024a.this.m21479j(this.f19177b);
                 this.f19177b--;
                 this.f19176a--;
                 this.f19178c = false;
@@ -141,7 +141,7 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
         @Override
         public V setValue(V v) {
             if (this.f19178c) {
-                return C6024a.this.m21477k(this.f19177b, v);
+                return C6024a.this.m21478k(this.f19177b, v);
             }
             throw new IllegalStateException("This container does not support retaining Map.Entry objects");
         }
@@ -157,20 +157,20 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
         }
 
         @Override
-        public V mo21512a(int i) {
-            return C6024a.this.m21476l(i);
+        public V mo21513a(int i) {
+            return C6024a.this.m21477l(i);
         }
 
         @Override
-        public void mo21511b(int i) {
-            C6024a.this.m21478j(i);
+        public void mo21512b(int i) {
+            C6024a.this.m21479j(i);
         }
     }
 
     public C6024a() {
     }
 
-    public static <T> boolean m21531n(Set<T> set, Object obj) {
+    public static <T> boolean m21532n(Set<T> set, Object obj) {
         if (set == obj) {
             return true;
         }
@@ -251,7 +251,7 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
         return cVar2;
     }
 
-    public boolean m21532m(Collection<?> collection) {
+    public boolean m21533m(Collection<?> collection) {
         java.util.Iterator<?> it = collection.iterator();
         while (it.hasNext()) {
             if (!containsKey(it.next())) {
@@ -271,7 +271,7 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
         return merge(obj, obj2, BiFunction.VivifiedWrapper.convert(biFunction));
     }
 
-    public boolean m21530o(Collection<?> collection) {
+    public boolean m21531o(Collection<?> collection) {
         int i = this.f19216c;
         java.util.Iterator<?> it = collection.iterator();
         while (it.hasNext()) {
@@ -280,11 +280,11 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
         return i != this.f19216c;
     }
 
-    public boolean m21529p(Collection<?> collection) {
+    public boolean m21530p(Collection<?> collection) {
         int i = this.f19216c;
         for (int i2 = i - 1; i2 >= 0; i2--) {
-            if (!collection.contains(m21479i(i2))) {
-                m21478j(i2);
+            if (!collection.contains(m21480i(i2))) {
+                m21479j(i2);
             }
         }
         return i != this.f19216c;
@@ -292,13 +292,13 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
 
     @Override
     public void putAll(java.util.Map<? extends K, ? extends V> map) {
-        m21485c(this.f19216c + map.size());
+        m21486c(this.f19216c + map.size());
         for (Map.Entry<? extends K, ? extends V> entry : map.entrySet()) {
             put(entry.getKey(), entry.getValue());
         }
     }
 
-    public <T> T[] m21528q(T[] tArr, int i) {
+    public <T> T[] m21529q(T[] tArr, int i) {
         int i2 = this.f19216c;
         if (tArr.length < i2) {
             tArr = (T[]) ((Object[]) Array.newInstance(tArr.getClass().getComponentType(), i2));
@@ -363,19 +363,19 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
 
         @Override
         public boolean containsAll(Collection<?> collection) {
-            return C6024a.this.m21532m(collection);
+            return C6024a.this.m21533m(collection);
         }
 
         @Override
         public boolean equals(Object obj) {
-            return C6024a.m21531n(this, obj);
+            return C6024a.m21532n(this, obj);
         }
 
         @Override
         public int hashCode() {
             int i = 0;
             for (int i2 = C6024a.this.f19216c - 1; i2 >= 0; i2--) {
-                K i3 = C6024a.this.m21479i(i2);
+                K i3 = C6024a.this.m21480i(i2);
                 i += i3 == null ? 0 : i3.hashCode();
             }
             return i;
@@ -393,22 +393,22 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
 
         @Override
         public boolean remove(Object obj) {
-            int f = C6024a.this.m21482f(obj);
+            int f = C6024a.this.m21483f(obj);
             if (f < 0) {
                 return false;
             }
-            C6024a.this.m21478j(f);
+            C6024a.this.m21479j(f);
             return true;
         }
 
         @Override
         public boolean removeAll(Collection<?> collection) {
-            return C6024a.this.m21530o(collection);
+            return C6024a.this.m21531o(collection);
         }
 
         @Override
         public boolean retainAll(Collection<?> collection) {
-            return C6024a.this.m21529p(collection);
+            return C6024a.this.m21530p(collection);
         }
 
         @Override
@@ -421,14 +421,14 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
             int i = C6024a.this.f19216c;
             Object[] objArr = new Object[i];
             for (int i2 = 0; i2 < i; i2++) {
-                objArr[i2] = C6024a.this.m21479i(i2);
+                objArr[i2] = C6024a.this.m21480i(i2);
             }
             return objArr;
         }
 
         @Override
         public <T> T[] toArray(T[] tArr) {
-            return (T[]) C6024a.this.m21528q(tArr, 0);
+            return (T[]) C6024a.this.m21529q(tArr, 0);
         }
     }
 
@@ -453,7 +453,7 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
 
         @Override
         public boolean contains(Object obj) {
-            return C6024a.this.m21480h(obj) >= 0;
+            return C6024a.this.m21481h(obj) >= 0;
         }
 
         @Override
@@ -479,11 +479,11 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
 
         @Override
         public boolean remove(Object obj) {
-            int h = C6024a.this.m21480h(obj);
+            int h = C6024a.this.m21481h(obj);
             if (h < 0) {
                 return false;
             }
-            C6024a.this.m21478j(h);
+            C6024a.this.m21479j(h);
             return true;
         }
 
@@ -493,8 +493,8 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
             int i2 = 0;
             boolean z = false;
             while (i2 < i) {
-                if (collection.contains(C6024a.this.m21476l(i2))) {
-                    C6024a.this.m21478j(i2);
+                if (collection.contains(C6024a.this.m21477l(i2))) {
+                    C6024a.this.m21479j(i2);
                     i2--;
                     i--;
                     z = true;
@@ -510,8 +510,8 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
             int i2 = 0;
             boolean z = false;
             while (i2 < i) {
-                if (!collection.contains(C6024a.this.m21476l(i2))) {
-                    C6024a.this.m21478j(i2);
+                if (!collection.contains(C6024a.this.m21477l(i2))) {
+                    C6024a.this.m21479j(i2);
                     i2--;
                     i--;
                     z = true;
@@ -531,14 +531,14 @@ public class C6024a<K, V> extends C6037g<K, V> implements Map<K, V>, p126j$.util
             int i = C6024a.this.f19216c;
             Object[] objArr = new Object[i];
             for (int i2 = 0; i2 < i; i2++) {
-                objArr[i2] = C6024a.this.m21476l(i2);
+                objArr[i2] = C6024a.this.m21477l(i2);
             }
             return objArr;
         }
 
         @Override
         public <T> T[] toArray(T[] tArr) {
-            return (T[]) C6024a.this.m21528q(tArr, 1);
+            return (T[]) C6024a.this.m21529q(tArr, 1);
         }
     }
 }

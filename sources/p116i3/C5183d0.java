@@ -7,7 +7,7 @@ public final class C5183d0 implements C5194h0.AbstractC5195a {
     public static final C5183d0 f17309a = new C5183d0();
 
     @Override
-    public final void mo23626a(SQLiteDatabase sQLiteDatabase) {
-        C5194h0.m23635C0(sQLiteDatabase);
+    public final void mo23627a(SQLiteDatabase sQLiteDatabase) {
+        C5194h0.m23636C0(sQLiteDatabase);
     }
 }

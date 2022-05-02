@@ -20,7 +20,7 @@ public class C5817d extends ContextWrapper {
         super(null);
     }
 
-    public final Resources m22109a() {
+    public final Resources m22110a() {
         if (this.f18539e == null) {
             Configuration configuration = this.f18538d;
             if (configuration == null) {
@@ -37,11 +37,11 @@ public class C5817d extends ContextWrapper {
         super.attachBaseContext(context);
     }
 
-    public int m22108b() {
+    public int m22109b() {
         return this.f18535a;
     }
 
-    public final void m22107c() {
+    public final void m22108c() {
         boolean z = this.f18536b == null;
         if (z) {
             this.f18536b = getResources().newTheme();
@@ -50,10 +50,10 @@ public class C5817d extends ContextWrapper {
                 this.f18536b.setTo(theme);
             }
         }
-        m22106d(this.f18536b, this.f18535a, z);
+        m22107d(this.f18536b, this.f18535a, z);
     }
 
-    public void m22106d(Resources.Theme theme, int i, boolean z) {
+    public void m22107d(Resources.Theme theme, int i, boolean z) {
         theme.applyStyle(i, true);
     }
 
@@ -64,7 +64,7 @@ public class C5817d extends ContextWrapper {
 
     @Override
     public Resources getResources() {
-        return m22109a();
+        return m22110a();
     }
 
     @Override
@@ -87,7 +87,7 @@ public class C5817d extends ContextWrapper {
         if (this.f18535a == 0) {
             this.f18535a = C3562i.c;
         }
-        m22107c();
+        m22108c();
         return this.f18536b;
     }
 
@@ -95,7 +95,7 @@ public class C5817d extends ContextWrapper {
     public void setTheme(int i) {
         if (this.f18535a != i) {
             this.f18535a = i;
-            m22107c();
+            m22108c();
         }
     }
 

@@ -10,12 +10,12 @@ final class C5748o1 extends AbstractC5758q1 implements AbstractC5462A {
     }
 
     @Override
-    public boolean mo22124a(Consumer consumer) {
-        return AbstractC5485a.m22563r(this, consumer);
+    public boolean mo22125a(Consumer consumer) {
+        return AbstractC5485a.m22564r(this, consumer);
     }
 
     @Override
     public void forEachRemaining(Consumer consumer) {
-        AbstractC5485a.m22571d(this, consumer);
+        AbstractC5485a.m22572d(this, consumer);
     }
 }

@@ -3,9 +3,9 @@ package p095gc;
 import qa.C8298k;
 
 public final class C4543c0 {
-    public static final long m27470a(String str, int i, int i2) {
+    public static final long m27472a(String str, int i, int i2) {
         int i3;
-        C8298k.m12934e(str, "$this$utf8Size");
+        C8298k.m12933e(str, "$this$utf8Size");
         boolean z = true;
         if (i >= 0) {
             if (i2 >= i) {
@@ -47,13 +47,13 @@ public final class C4543c0 {
         throw new IllegalArgumentException(("beginIndex < 0: " + i).toString());
     }
 
-    public static long m27469b(String str, int i, int i2, int i3, Object obj) {
+    public static long m27471b(String str, int i, int i2, int i3, Object obj) {
         if ((i3 & 1) != 0) {
             i = 0;
         }
         if ((i3 & 2) != 0) {
             i2 = str.length();
         }
-        return m27470a(str, i, i2);
+        return m27472a(str, i, i2);
     }
 }

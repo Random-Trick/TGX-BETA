@@ -8,7 +8,7 @@ public final class C2154as implements Comparator {
     @Override
     public final int compare(Object obj, Object obj2) {
         int Jh;
-        Jh = View$OnClickListenerC2942qs.m32943Jh((C2964ra) obj, (C2964ra) obj2);
+        Jh = View$OnClickListenerC2942qs.m32946Jh((C2964ra) obj, (C2964ra) obj2);
         return Jh;
     }
 }

@@ -39,9 +39,9 @@ public final class C5070i {
         }
 
         public final CharSequence mo568a(String str) {
-            C8298k.m12934e(str, "item");
-            String F = C5070i.m24072F(str, null, 2, null);
-            C8298k.m12936c(F);
+            C8298k.m12933e(str, "item");
+            String F = C5070i.m24073F(str, null, 2, null);
+            C8298k.m12935c(F);
             return F;
         }
     }
@@ -56,23 +56,23 @@ public final class C5070i {
             charset = Charset.forName("UTF-8");
             str = "forName(\"UTF-8\")";
         }
-        C8298k.m12935d(charset, str);
+        C8298k.m12934d(charset, str);
         f17083a = charset;
     }
 
-    public static final String m24077A(String str, int i) {
-        C8298k.m12934e(str, "source");
+    public static final String m24078A(String str, int i) {
+        C8298k.m12933e(str, "source");
         C10022g gVar = new C10022g(1, i);
-        ArrayList arrayList = new ArrayList(C5305o.m23357o(gVar, 10));
+        ArrayList arrayList = new ArrayList(C5305o.m23358o(gVar, 10));
         Iterator<Integer> it = gVar.iterator();
         while (it.hasNext()) {
             ((AbstractC5286d0) it).mo6206e();
-            arrayList.add(Character.valueOf(C11457q.m566v0(str, AbstractC9486c.f30717a)));
+            arrayList.add(Character.valueOf(C11457q.m566v0(str, AbstractC9486c.f30720a)));
         }
-        return C5312v.m23340H(arrayList, "", null, null, 0, null, null, 62, null);
+        return C5312v.m23341H(arrayList, "", null, null, 0, null, null, 62, null);
     }
 
-    public static final String m24076B(String str) {
+    public static final String m24077B(String str) {
         String sb2;
         if (str == null || str.length() == 0) {
             return str;
@@ -99,21 +99,21 @@ public final class C5070i {
         return (sb3 == null || (sb2 = sb3.toString()) == null) ? str : sb2;
     }
 
-    public static final String m24075C(String str) {
+    public static final String m24076C(String str) {
         if (str == null) {
             return null;
         }
-        return C5312v.m23340H(C11452o.m586i0(C11451n.m625t(str, "'", "", false, 4, null), new String[]{" ", "-"}, false, 0, 6, null), "", null, null, 0, null, C5071a.f17084b, 30, null);
+        return C5312v.m23341H(C11452o.m586i0(C11451n.m625t(str, "'", "", false, 4, null), new String[]{" ", "-"}, false, 0, 6, null), "", null, null, 0, null, C5071a.f17084b, 30, null);
     }
 
-    public static final String m24074D(String str) {
+    public static final String m24075D(String str) {
         if (str == null) {
             return null;
         }
         return C11452o.m574u0(str).toString();
     }
 
-    public static final String m24073E(String str, Locale locale) {
+    public static final String m24074E(String str, Locale locale) {
         String str2;
         if (str == null) {
             return null;
@@ -132,34 +132,34 @@ public final class C5070i {
         }
         sb2.append((Object) str2);
         String substring = str.substring(1);
-        C8298k.m12935d(substring, "this as java.lang.String).substring(startIndex)");
+        C8298k.m12934d(substring, "this as java.lang.String).substring(startIndex)");
         sb2.append(substring);
         return sb2.toString();
     }
 
-    public static String m24072F(String str, Locale locale, int i, Object obj) {
+    public static String m24073F(String str, Locale locale, int i, Object obj) {
         if ((i & 2) != 0) {
             locale = null;
         }
-        return m24073E(str, locale);
+        return m24074E(str, locale);
     }
 
-    public static final String m24071G(String str) {
-        C8298k.m12934e(str, "url");
+    public static final String m24072G(String str) {
+        C8298k.m12933e(str, "url");
         if (C11451n.m621x(str, "https://", false, 2, null)) {
             String substring = str.substring(8);
-            C8298k.m12935d(substring, "this as java.lang.String).substring(startIndex)");
+            C8298k.m12934d(substring, "this as java.lang.String).substring(startIndex)");
             return substring;
         } else if (!C11451n.m621x(str, "http://", false, 2, null)) {
             return str;
         } else {
             String substring2 = str.substring(7);
-            C8298k.m12935d(substring2, "this as java.lang.String).substring(startIndex)");
+            C8298k.m12934d(substring2, "this as java.lang.String).substring(startIndex)");
             return substring2;
         }
     }
 
-    public static final Uri m24070H(String str) {
+    public static final Uri m24071H(String str) {
         Uri build;
         boolean z = false;
         if (str == null || str.length() == 0) {
@@ -176,13 +176,13 @@ public final class C5070i {
             } else {
                 Locale locale = Locale.ROOT;
                 String lowerCase = scheme.toLowerCase(locale);
-                C8298k.m12935d(lowerCase, "this as java.lang.String).toLowerCase(Locale.ROOT)");
-                if (C8298k.m12937b(lowerCase, scheme)) {
+                C8298k.m12934d(lowerCase, "this as java.lang.String).toLowerCase(Locale.ROOT)");
+                if (C8298k.m12936b(lowerCase, scheme)) {
                     return parse;
                 }
                 Uri.Builder buildUpon = parse.buildUpon();
                 String lowerCase2 = scheme.toLowerCase(locale);
-                C8298k.m12935d(lowerCase2, "this as java.lang.String).toLowerCase(Locale.ROOT)");
+                C8298k.m12934d(lowerCase2, "this as java.lang.String).toLowerCase(Locale.ROOT)");
                 build = buildUpon.scheme(lowerCase2).build();
             }
             return build;
@@ -192,8 +192,8 @@ public final class C5070i {
         }
     }
 
-    public static final String m24069a(String str) {
-        C8298k.m12934e(str, "component");
+    public static final String m24070a(String str) {
+        C8298k.m12933e(str, "component");
         try {
             return URLDecoder.decode(str, "UTF-8");
         } catch (UnsupportedEncodingException unused) {
@@ -201,7 +201,7 @@ public final class C5070i {
         }
     }
 
-    public static final String m24068b(String str) {
+    public static final String m24069b(String str) {
         int i = 0;
         if (str == null || C11451n.m632m(str)) {
             return null;
@@ -217,24 +217,24 @@ public final class C5070i {
         }
         if (M != -1) {
             String substring = str.substring(i, M);
-            C8298k.m12935d(substring, "this as java.lang.String…ing(startIndex, endIndex)");
+            C8298k.m12934d(substring, "this as java.lang.String…ing(startIndex, endIndex)");
             return substring;
         } else if (i <= 0) {
             return str;
         } else {
             String substring2 = str.substring(i);
-            C8298k.m12935d(substring2, "this as java.lang.String).substring(startIndex)");
+            C8298k.m12934d(substring2, "this as java.lang.String).substring(startIndex)");
             return substring2;
         }
     }
 
-    public static final boolean m24067c(CharSequence charSequence, CharSequence charSequence2) {
-        boolean i = m24061i(charSequence);
-        if (i == m24061i(charSequence2)) {
+    public static final boolean m24068c(CharSequence charSequence, CharSequence charSequence2) {
+        boolean i = m24062i(charSequence);
+        if (i == m24062i(charSequence2)) {
             if (!i) {
-                C8298k.m12936c(charSequence);
-                C8298k.m12936c(charSequence2);
-                if (m24065e(charSequence, charSequence2)) {
+                C8298k.m12935c(charSequence);
+                C8298k.m12935c(charSequence2);
+                if (m24066e(charSequence, charSequence2)) {
                 }
             }
             return true;
@@ -242,7 +242,7 @@ public final class C5070i {
         return false;
     }
 
-    public static final boolean m24066d(CharSequence charSequence, CharSequence charSequence2, Locale locale) {
+    public static final boolean m24067d(CharSequence charSequence, CharSequence charSequence2, Locale locale) {
         String str;
         String obj;
         String obj2;
@@ -255,37 +255,37 @@ public final class C5070i {
                 str2 = null;
             } else {
                 str2 = obj4.toLowerCase(Locale.ROOT);
-                C8298k.m12935d(str2, "this as java.lang.String).toLowerCase(Locale.ROOT)");
+                C8298k.m12934d(str2, "this as java.lang.String).toLowerCase(Locale.ROOT)");
             }
             if (!(charSequence2 == null || (obj3 = charSequence2.toString()) == null)) {
                 str3 = obj3.toLowerCase(Locale.ROOT);
-                C8298k.m12935d(str3, "this as java.lang.String).toLowerCase(Locale.ROOT)");
+                C8298k.m12934d(str3, "this as java.lang.String).toLowerCase(Locale.ROOT)");
             }
-            return m24067c(str2, str3);
+            return m24068c(str2, str3);
         }
         if (charSequence == null || (obj2 = charSequence.toString()) == null) {
             str = null;
         } else {
             str = obj2.toLowerCase(locale);
-            C8298k.m12935d(str, "this as java.lang.String).toLowerCase(locale)");
+            C8298k.m12934d(str, "this as java.lang.String).toLowerCase(locale)");
         }
         if (!(charSequence2 == null || (obj = charSequence2.toString()) == null)) {
             str3 = obj.toLowerCase(locale);
-            C8298k.m12935d(str3, "this as java.lang.String).toLowerCase(locale)");
+            C8298k.m12934d(str3, "this as java.lang.String).toLowerCase(locale)");
         }
-        return m24067c(str, str3);
+        return m24068c(str, str3);
     }
 
-    public static final boolean m24065e(CharSequence charSequence, CharSequence charSequence2) {
-        C8298k.m12934e(charSequence, "<this>");
-        C8298k.m12934e(charSequence2, "other");
+    public static final boolean m24066e(CharSequence charSequence, CharSequence charSequence2) {
+        C8298k.m12933e(charSequence, "<this>");
+        C8298k.m12933e(charSequence2, "other");
         if (!(charSequence instanceof Spanned) && !(charSequence2 instanceof Spanned)) {
-            return C8298k.m12937b(charSequence, charSequence2);
+            return C8298k.m12936b(charSequence, charSequence2);
         }
         try {
-            return C8298k.m12937b(charSequence, charSequence2);
+            return C8298k.m12936b(charSequence, charSequence2);
         } catch (Throwable unused) {
-            if (!C8298k.m12937b(charSequence.toString(), charSequence2.toString())) {
+            if (!C8298k.m12936b(charSequence.toString(), charSequence2.toString())) {
                 return false;
             }
             boolean z = charSequence instanceof Spanned;
@@ -310,7 +310,7 @@ public final class C5070i {
                         Object obj = spans[i];
                         Object obj2 = objArr[i];
                         try {
-                            if (!C8298k.m12937b(obj, obj2) || ((Spanned) charSequence).getSpanStart(obj) != ((Spanned) charSequence2).getSpanStart(obj2) || ((Spanned) charSequence).getSpanEnd(obj) != ((Spanned) charSequence2).getSpanEnd(obj2)) {
+                            if (!C8298k.m12936b(obj, obj2) || ((Spanned) charSequence).getSpanStart(obj) != ((Spanned) charSequence2).getSpanStart(obj2) || ((Spanned) charSequence).getSpanEnd(obj) != ((Spanned) charSequence2).getSpanEnd(obj2)) {
                                 return false;
                             }
                         } catch (Throwable unused2) {
@@ -325,9 +325,9 @@ public final class C5070i {
         }
     }
 
-    public static final boolean m24064f(String str) {
+    public static final boolean m24065f(String str) {
         int i;
-        C8298k.m12934e(str, "str");
+        C8298k.m12933e(str, "str");
         int length = str.length();
         int i2 = 0;
         do {
@@ -343,25 +343,25 @@ public final class C5070i {
         return false;
     }
 
-    public static final int m24063g(CharSequence charSequence, String str, int i) {
-        C8298k.m12934e(charSequence, "source");
-        C8298k.m12934e(str, "target");
+    public static final int m24064g(CharSequence charSequence, String str, int i) {
+        C8298k.m12933e(charSequence, "source");
+        C8298k.m12933e(str, "target");
         return C11452o.m607N(charSequence, str, i, false, 4, null);
     }
 
-    public static final boolean m24062h(String str) {
+    public static final boolean m24063h(String str) {
         return str != null && !C11452o.m619B(str, '/', false, 2, null);
     }
 
-    public static final boolean m24061i(CharSequence charSequence) {
+    public static final boolean m24062i(CharSequence charSequence) {
         return charSequence == null || charSequence.length() == 0;
     }
 
-    public static final boolean m24060j(CharSequence charSequence) {
+    public static final boolean m24061j(CharSequence charSequence) {
         return charSequence == null || C11451n.m632m(charSequence);
     }
 
-    public static final boolean m24059k(CharSequence charSequence) {
+    public static final boolean m24060k(CharSequence charSequence) {
         if (charSequence == null || C11451n.m632m(charSequence)) {
             return true;
         }
@@ -376,11 +376,11 @@ public final class C5070i {
         return true;
     }
 
-    public static final boolean m24058l(char c) {
+    public static final boolean m24059l(char c) {
         return '0' <= c && c < ':';
     }
 
-    public static final boolean m24057m(String str) {
+    public static final boolean m24058m(String str) {
         if (str == null || C11451n.m632m(str)) {
             return false;
         }
@@ -388,17 +388,17 @@ public final class C5070i {
         int i = 0;
         while (i < length) {
             i++;
-            if (!m24058l(str.charAt(i))) {
+            if (!m24059l(str.charAt(i))) {
                 return false;
             }
         }
         return true;
     }
 
-    public static final String m24056n(String str, String str2, List<String> list) {
-        C8298k.m12934e(str, "separator");
-        C8298k.m12934e(str2, "separatorForLastItem");
-        C8298k.m12934e(list, "list");
+    public static final String m24057n(String str, String str2, List<String> list) {
+        C8298k.m12933e(str, "separator");
+        C8298k.m12933e(str2, "separatorForLastItem");
+        C8298k.m12933e(list, "list");
         int size = list.size();
         if (size == 0) {
             return "";
@@ -425,24 +425,24 @@ public final class C5070i {
             }
         }
         String sb3 = sb2.toString();
-        C8298k.m12935d(sb3, "b.toString()");
+        C8298k.m12934d(sb3, "b.toString()");
         return sb3;
     }
 
-    public static final String m24055o(String str, int[] iArr) {
-        C8298k.m12934e(str, "separator");
-        C8298k.m12934e(iArr, "tokens");
-        return C5296i.m23409D(iArr, str, null, null, 0, null, null, 62, null);
+    public static final String m24056o(String str, int[] iArr) {
+        C8298k.m12933e(str, "separator");
+        C8298k.m12933e(iArr, "tokens");
+        return C5296i.m23410D(iArr, str, null, null, 0, null, null, 62, null);
     }
 
-    public static final int m24054p(CharSequence charSequence) {
+    public static final int m24055p(CharSequence charSequence) {
         if (charSequence == null) {
             return 0;
         }
         return charSequence.length();
     }
 
-    public static final String m24053q(int i) {
+    public static final String m24054q(int i) {
         String valueOf = String.valueOf(i);
         int length = 10 - valueOf.length();
         if (length <= 0) {
@@ -456,12 +456,12 @@ public final class C5070i {
         }
         sb2.append(valueOf);
         String sb3 = sb2.toString();
-        C8298k.m12935d(sb3, "b.toString()");
+        C8298k.m12934d(sb3, "b.toString()");
         return sb3;
     }
 
-    public static final String m24052r(String str, int i) {
-        C8298k.m12934e(str, "<this>");
+    public static final String m24053r(String str, int i) {
+        C8298k.m12933e(str, "<this>");
         if (i == 0) {
             return "";
         }
@@ -483,28 +483,28 @@ public final class C5070i {
             }
         }
         String sb3 = sb2.toString();
-        C8298k.m12935d(sb3, "b.toString()");
+        C8298k.m12934d(sb3, "b.toString()");
         return sb3;
     }
 
-    public static final int m24051s(String str) {
-        return m24049u(str, 0, 2, null);
+    public static final int m24052s(String str) {
+        return m24050u(str, 0, 2, null);
     }
 
-    public static final int m24050t(String str, int i) {
+    public static final int m24051t(String str, int i) {
         Integer f;
         return (str == null || (f = C11450m.m639f(str)) == null) ? i : f.intValue();
     }
 
-    public static int m24049u(String str, int i, int i2, Object obj) {
+    public static int m24050u(String str, int i, int i2, Object obj) {
         if ((i2 & 2) != 0) {
             i = 0;
         }
-        return m24050t(str, i);
+        return m24051t(str, i);
     }
 
-    public static final int[] m24048v(String str, String str2) {
-        C8298k.m12934e(str2, "delimiter");
+    public static final int[] m24049v(String str, String str2) {
+        C8298k.m12933e(str2, "delimiter");
         int i = 0;
         if (str == null || C11451n.m632m(str)) {
             return null;
@@ -522,24 +522,24 @@ public final class C5070i {
         return iArr;
     }
 
-    public static final long m24047w(String str) {
-        return m24045y(str, 0L, 2, null);
+    public static final long m24048w(String str) {
+        return m24046y(str, 0L, 2, null);
     }
 
-    public static final long m24046x(String str, long j) {
+    public static final long m24047x(String str, long j) {
         Long h;
         return (str == null || (h = C11450m.m637h(str)) == null) ? j : h.longValue();
     }
 
-    public static long m24045y(String str, long j, int i, Object obj) {
+    public static long m24046y(String str, long j, int i, Object obj) {
         if ((i & 2) != 0) {
             j = 0;
         }
-        return m24046x(str, j);
+        return m24047x(str, j);
     }
 
-    public static final long[] m24044z(String str, String str2) {
-        C8298k.m12934e(str2, "delimiter");
+    public static final long[] m24045z(String str, String str2) {
+        C8298k.m12933e(str2, "delimiter");
         int i = 0;
         if (str == null || C11451n.m632m(str)) {
             return null;

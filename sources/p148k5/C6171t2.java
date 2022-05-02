@@ -8,16 +8,16 @@ public final class C6171t2 {
     public final C5217a f19550b;
 
     public C6171t2(C5217a aVar, int i) {
-        C6378r.m20506k(aVar);
+        C6378r.m20507k(aVar);
         this.f19550b = aVar;
         this.f19549a = i;
     }
 
-    public final int m21129a() {
+    public final int m21130a() {
         return this.f19549a;
     }
 
-    public final C5217a m21128b() {
+    public final C5217a m21129b() {
         return this.f19550b;
     }
 }

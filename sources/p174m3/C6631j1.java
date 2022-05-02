@@ -15,14 +15,14 @@ public final class C6631j1 extends AbstractC6684q2 {
         this.f20731c = false;
     }
 
-    public static String m19756c(int i) {
+    public static String m19757c(int i) {
         return Integer.toString(i, 36);
     }
 
-    public static C6631j1 m19754e(Bundle bundle) {
-        C1186a.m38189a(bundle.getInt(m19756c(0), -1) == 0);
-        if (bundle.getBoolean(m19756c(1), false)) {
-            return new C6631j1(bundle.getBoolean(m19756c(2), false));
+    public static C6631j1 m19755e(Bundle bundle) {
+        C1186a.m38192a(bundle.getInt(m19757c(0), -1) == 0);
+        if (bundle.getBoolean(m19757c(1), false)) {
+            return new C6631j1(bundle.getBoolean(m19757c(2), false));
         }
         return new C6631j1();
     }

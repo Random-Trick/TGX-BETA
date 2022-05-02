@@ -14,10 +14,10 @@ public abstract class AbstractC11404s<E> extends AbstractC11384o<E> implements S
     @RetainedWith
     @NullableDecl
     @LazyInit
-    public transient AbstractC11396q<E> f36364b;
+    public transient AbstractC11396q<E> f36367b;
 
     public static <E> AbstractC11404s<E> m731B() {
-        return C11377k0.f36330Q;
+        return C11377k0.f36333Q;
     }
 
     public static <E> AbstractC11404s<E> m730C(E e) {
@@ -137,12 +137,12 @@ public abstract class AbstractC11404s<E> extends AbstractC11384o<E> implements S
 
     @Override
     public AbstractC11396q<E> mo726h() {
-        AbstractC11396q<E> qVar = this.f36364b;
+        AbstractC11396q<E> qVar = this.f36367b;
         if (qVar != null) {
             return qVar;
         }
         AbstractC11396q<E> z = mo720z();
-        this.f36364b = z;
+        this.f36367b = z;
         return z;
     }
 

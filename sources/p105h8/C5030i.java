@@ -10,7 +10,7 @@ public final class C5030i extends C5028g {
         super(gVar);
     }
 
-    public static int[][] m24253e(byte[] bArr, int i, int i2, int i3, int i4) {
+    public static int[][] m24254e(byte[] bArr, int i, int i2, int i3, int i4) {
         int i5 = 8;
         int i6 = i4 - 8;
         int i7 = i3 - 8;
@@ -94,41 +94,41 @@ public final class C5030i extends C5028g {
         return iArr;
     }
 
-    public static void m24252f(byte[] bArr, int i, int i2, int i3, int i4, int[][] iArr, C5022a aVar) {
+    public static void m24253f(byte[] bArr, int i, int i2, int i3, int i4, int[][] iArr, C5022a aVar) {
         int i5 = i4 - 8;
         int i6 = i3 - 8;
         for (int i7 = 0; i7 < i2; i7++) {
             int i8 = i7 << 3;
             int i9 = i8 > i5 ? i5 : i8;
-            int g = m24251g(i7, i2 - 3);
+            int g = m24252g(i7, i2 - 3);
             for (int i10 = 0; i10 < i; i10++) {
                 int i11 = i10 << 3;
                 int i12 = i11 > i6 ? i6 : i11;
-                int g2 = m24251g(i10, i - 3);
+                int g2 = m24252g(i10, i - 3);
                 int i13 = 0;
                 for (int i14 = -2; i14 <= 2; i14++) {
                     int[] iArr2 = iArr[g + i14];
                     i13 += iArr2[g2 - 2] + iArr2[g2 - 1] + iArr2[g2] + iArr2[g2 + 1] + iArr2[2 + g2];
                 }
-                m24250h(bArr, i12, i9, i13 / 25, i3, aVar);
+                m24251h(bArr, i12, i9, i13 / 25, i3, aVar);
             }
         }
     }
 
-    public static int m24251g(int i, int i2) {
+    public static int m24252g(int i, int i2) {
         if (i < 2) {
             return 2;
         }
         return Math.min(i, i2);
     }
 
-    public static void m24250h(byte[] bArr, int i, int i2, int i3, int i4, C5022a aVar) {
+    public static void m24251h(byte[] bArr, int i, int i2, int i3, int i4, C5022a aVar) {
         int i5 = (i2 * i4) + i;
         int i6 = 0;
         while (i6 < 8) {
             for (int i7 = 0; i7 < 8; i7++) {
                 if ((bArr[i5 + i7] & 255) <= i3) {
-                    aVar.m24276i(i + i7, i2 + i6);
+                    aVar.m24277i(i + i7, i2 + i6);
                 }
             }
             i6++;
@@ -137,18 +137,18 @@ public final class C5030i extends C5028g {
     }
 
     @Override
-    public C5022a mo24254a() {
+    public C5022a mo24255a() {
         C5022a aVar = this.f16988e;
         if (aVar != null) {
             return aVar;
         }
-        AbstractC4524g b = m27502b();
-        int d = b.m27497d();
-        int a = b.m27498a();
+        AbstractC4524g b = m27504b();
+        int d = b.m27499d();
+        int a = b.m27500a();
         if (d < 40 || a < 40) {
-            this.f16988e = super.mo24254a();
+            this.f16988e = super.mo24255a();
         } else {
-            byte[] b2 = b.mo27495b();
+            byte[] b2 = b.mo27497b();
             int i = d >> 3;
             if ((d & 7) != 0) {
                 i++;
@@ -159,9 +159,9 @@ public final class C5030i extends C5028g {
                 i3++;
             }
             int i4 = i3;
-            int[][] e = m24253e(b2, i2, i4, d, a);
+            int[][] e = m24254e(b2, i2, i4, d, a);
             C5022a aVar2 = new C5022a(d, a);
-            m24252f(b2, i2, i4, d, a, e, aVar2);
+            m24253f(b2, i2, i4, d, a, e, aVar2);
             this.f16988e = aVar2;
         }
         return this.f16988e;

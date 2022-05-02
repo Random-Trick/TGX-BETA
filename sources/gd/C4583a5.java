@@ -83,7 +83,7 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
         this.f15075U2 = i;
     }
 
-    public boolean m27239na(C4584a aVar, View view, C5132o oVar) {
+    public boolean m27241na(C4584a aVar, View view, C5132o oVar) {
         long j;
         int i = this.f15075U2;
         if (i == 10 || i == 13 || i == 30) {
@@ -97,34 +97,34 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
             if (j == 0) {
                 return true;
             }
-            m25882l5(j);
+            m25883l5(j);
             return true;
         }
-        aVar.m27218h(this);
+        aVar.m27220h(this);
         return true;
     }
 
-    public boolean m27238oa(C4584a aVar, View view, C5132o oVar) {
+    public boolean m27240oa(C4584a aVar, View view, C5132o oVar) {
         int i = this.f15075U2;
         if ((i == 6 || i == 100) && this.f15087g3 != null) {
-            this.f16099O0.m2485dd().m3887B8(m26096P0(), this.f15087g3, m26145K2(), true, null, null);
+            this.f16099O0.m2485dd().m3887B8(m26097P0(), this.f15087g3, m26146K2(), true, null, null);
             return true;
         } else if (i != 101 || this.f15087g3 == null) {
-            aVar.m27218h(this);
+            aVar.m27220h(this);
             return true;
         } else {
-            this.f16099O0.m2485dd().m3897A8(m26096P0(), this.f15087g3, m26145K2(), true, true, null, null);
+            this.f16099O0.m2485dd().m3897A8(m26097P0(), this.f15087g3, m26146K2(), true, true, null, null);
             return true;
         }
     }
 
-    public Object m27237pa(boolean z, C4584a[] aVarArr, boolean z2, CharSequence charSequence, int i, int i2, int i3, boolean z3) {
+    public Object m27239pa(boolean z, C4584a[] aVarArr, boolean z2, CharSequence charSequence, int i, int i2, int i3, boolean z3) {
         int P1;
         int i4 = 0;
         if (z) {
             if (i3 == 0) {
-                C5132o oVar = new C5132o(z3 ? C1389o.m37258k() : C1389o.m37262g(), 0);
-                oVar.m23851k(z3);
+                C5132o oVar = new C5132o(z3 ? C1389o.m37261k() : C1389o.m37265g(), 0);
+                oVar.m23852k(z3);
                 return oVar;
             }
             i3--;
@@ -134,24 +134,24 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
         }
         final C4584a aVar = aVarArr[i3];
         if (aVar.f15111h != null) {
-            return new C5132o(null, 0).m23843s(aVar);
+            return new C5132o(null, 0).m23844s(aVar);
         }
-        boolean g = aVar.m27219g();
-        Typeface k = z3 ? C1389o.m37258k() : (m26068R9() || !g) ? C1389o.m37262g() : C1389o.m37260i();
-        boolean R9 = m26068R9();
+        boolean g = aVar.m27221g();
+        Typeface k = z3 ? C1389o.m37261k() : (m26069R9() || !g) ? C1389o.m37265g() : C1389o.m37263i();
+        boolean R9 = m26069R9();
         int i5 = R.id.theme_color_messageAuthor;
         if (!R9 && g) {
             i4 = R.id.theme_color_messageAuthor;
         }
         C5132o oVar2 = new C5132o(k, i4);
-        oVar2.m23851k(z3);
+        oVar2.m23852k(z3);
         if (g) {
             if (aVar.f15109f) {
-                oVar2.m23845q(new C5132o.AbstractC5133a() {
+                oVar2.m23846q(new C5132o.AbstractC5133a() {
                     @Override
                     public final boolean mo490a(View view, C5132o oVar3) {
                         boolean na2;
-                        na2 = C4583a5.this.m27239na(aVar, view, oVar3);
+                        na2 = C4583a5.this.m27241na(aVar, view, oVar3);
                         return na2;
                     }
                 });
@@ -160,19 +160,19 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
                     if (aVar.f15107d != null) {
                         P1 = aVar.f15107d.m4210f();
                     } else {
-                        P1 = C4779t2.m25624P1(aVar.f15106c != null ? C4779t2.m25681H0(aVar.f15106c.f25439id, this.f16099O0.m2519ba()) : this.f16099O0.m2511c3(aVar.f15113j));
+                        P1 = C4779t2.m25625P1(aVar.f15106c != null ? C4779t2.m25682H0(aVar.f15106c.f25442id, this.f16099O0.m2519ba()) : this.f16099O0.m2511c3(aVar.f15113j));
                     }
                     i5 = P1;
                 }
-                oVar2.m23841u(i5, this.f16097N0.m7645r0().m32662Lr());
-                if (!m26068R9()) {
-                    oVar2.m23853i(i5);
+                oVar2.m23842u(i5, this.f16097N0.m7645r0().m32665Lr());
+                if (!m26069R9()) {
+                    oVar2.m23854i(i5);
                 }
-                oVar2.m23845q(new C5132o.AbstractC5133a() {
+                oVar2.m23846q(new C5132o.AbstractC5133a() {
                     @Override
                     public final boolean mo490a(View view, C5132o oVar3) {
                         boolean oa;
-                        oa = C4583a5.this.m27238oa(aVar, view, oVar3);
+                        oa = C4583a5.this.m27240oa(aVar, view, oVar3);
                         return oa;
                     }
                 });
@@ -181,72 +181,72 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
         return oVar2;
     }
 
-    public boolean m27236qa(long j, View view, C5132o oVar) {
-        this.f16099O0.m2485dd().m3429v7(m26096P0(), j, m25916h8());
+    public boolean m27238qa(long j, View view, C5132o oVar) {
+        this.f16099O0.m2485dd().m3429v7(m26097P0(), j, m25917h8());
         return true;
     }
 
-    public void m27235ra(TdApi.Message message) {
-        if (!m26030V5()) {
+    public void m27237ra(TdApi.Message message) {
+        if (!m26031V5()) {
             this.f15093m3 = message;
             if (this.f15075U2 == 10 && message.content.getConstructor() == -69441162) {
                 this.f15092l3 = ((TdApi.MessageGame) message.content).game;
             }
-            m25748y8();
+            m25749y8();
         }
     }
 
-    public static void m27234s5() {
-        f15072x3 = C1357a0.m37541i(38.0f);
-        int i = C1357a0.m37541i(12.0f);
+    public static void m27236s5() {
+        f15072x3 = C1357a0.m37544i(38.0f);
+        int i = C1357a0.m37544i(12.0f);
         f15074z3 = i;
         f15073y3 = i * 2;
-        int i2 = C1357a0.m37541i(28.0f);
+        int i2 = C1357a0.m37544i(28.0f);
         f15070B3 = i2;
         f15069A3 = i2 * 2;
-        f15071C3 = C1357a0.m37541i(4.0f);
+        f15071C3 = C1357a0.m37544i(4.0f);
     }
 
-    public static String m27226za(String str) {
-        return C1363c0.m37418o0(str);
-    }
-
-    @Override
-    public void mo26150J8(C6257p pVar) {
-        pVar.m20819G(this.f15082b3);
+    public static String m27228za(String str) {
+        return C1363c0.m37421o0(str);
     }
 
     @Override
-    public boolean mo25333L9(TdApi.Message message, TdApi.MessageContent messageContent, boolean z) {
+    public void mo26151J8(C6257p pVar) {
+        pVar.m20820G(this.f15082b3);
+    }
+
+    @Override
+    public boolean mo25334L9(TdApi.Message message, TdApi.MessageContent messageContent, boolean z) {
         this.f16122a.content = messageContent;
-        m25748y8();
+        m25749y8();
         return true;
     }
 
     @Override
-    public final int mo26074R3(boolean z) {
+    public final int mo26075R3(boolean z) {
         return f15070B3;
     }
 
     @Override
-    public boolean mo26066S0() {
+    public boolean mo26067S0() {
         return true;
     }
 
     @Override
-    public boolean mo26059S7(C9552h1 h1Var, View$OnClickListenerC2971rh rhVar) {
+    public boolean mo26060S7(C9552h1 h1Var, View$OnClickListenerC2971rh rhVar) {
         if (this.f15075U2 != 27 || this.f15084d3 == 0) {
             return false;
         }
-        this.f16099O0.m2485dd().m3777M8(m26096P0(), this.f15084d3);
+        this.f16099O0.m2485dd().m3777M8(m26097P0(), this.f15084d3);
         return true;
     }
 
     @Override
-    public C7462l1 mo26022W3(long j, View view, int i, int i2, int i3) {
+    public C7462l1 mo26023W3(long j, View view, int i, int i2, int i3) {
         C7462l1 l1Var = new C7462l1();
         l1Var.m15986n();
-        l1Var.m15984p(mo26074R3(false));
+        l1Var.m15984p(mo26075R3(false));
         int i4 = this.f15097q3 + i;
         int i5 = f15070B3 * 2;
         int measuredHeight = view.getMeasuredHeight();
@@ -255,45 +255,45 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
         int i8 = this.f15096p3;
         l1Var.m15991i(i8, i6 + i3, i8 + i5, i6 + i5 + i3);
         l1Var.m15988l(0, i4 < 0 ? -i4 : 0, 0, i7 < 0 ? -i7 : 0);
-        l1Var.m15987m(m26071R6().m7615x3() ? R.id.theme_color_placeholder : R.id.theme_color_chatBackground);
+        l1Var.m15987m(m26072R6().m7615x3() ? R.id.theme_color_placeholder : R.id.theme_color_chatBackground);
         return l1Var;
     }
 
     @Override
-    public int mo25222X2() {
-        return this.f15089i3.getHeight() + C1357a0.m37541i(m26068R9() ? 0.5f : 6.5f) + (this.f15082b3 != null ? f15071C3 + f15069A3 : 0);
+    public int mo25223X2() {
+        return this.f15089i3.getHeight() + C1357a0.m37544i(m26069R9() ? 0.5f : 6.5f) + (this.f15082b3 != null ? f15071C3 + f15069A3 : 0);
     }
 
     @Override
-    public void mo25221a0(int i) {
+    public void mo25222a0(int i) {
         if (f15072x3 == 0.0f) {
-            m27234s5();
+            m27236s5();
         }
         this.f15090j3 = this.f16096N - f15073y3;
-        m27228xa();
-        m27233sa();
+        m27230xa();
+        m27235sa();
     }
 
     @Override
-    public void mo25961d1(C9552h1 h1Var, Canvas canvas, int i, int i2, int i3, AbstractC6264v vVar, AbstractC6264v vVar2) {
+    public void mo25962d1(C9552h1 h1Var, Canvas canvas, int i, int i2, int i3, AbstractC6264v vVar, AbstractC6264v vVar2) {
         int i4;
         if (this.f15089i3 != null) {
             canvas.save();
-            canvas.translate(f15074z3, m27241la());
-            if (m26068R9()) {
+            canvas.translate(f15074z3, m27243la());
+            if (m26069R9()) {
                 int lineCount = this.f15089i3.getLineCount();
-                i4 = m25960d2();
-                int c2 = m25969c2();
-                RectF a0 = C1410y.m37050a0();
-                int i5 = C1357a0.m37541i(8.0f);
-                int i6 = C1357a0.m37541i(5.0f);
-                int i7 = C1357a0.m37541i(26.0f);
-                int i8 = C1357a0.m37541i(C11524j.m242G());
+                i4 = m25961d2();
+                int c2 = m25970c2();
+                RectF a0 = C1410y.m37053a0();
+                int i5 = C1357a0.m37544i(8.0f);
+                int i6 = C1357a0.m37544i(5.0f);
+                int i7 = C1357a0.m37544i(26.0f);
+                int i8 = C1357a0.m37544i(C11524j.m242G());
                 if (lineCount == 1) {
                     float f = i5;
                     a0.set(this.f15089i3.getLineLeft(0) - f, this.f15089i3.getLineTop(0) - i6, this.f15089i3.getLineRight(0) + f, (this.f15089i3.getLineTop(0) + i7) - i6);
                     float f2 = i8;
-                    canvas.drawRoundRect(a0, f2, f2, C1410y.m37039g(c2));
+                    canvas.drawRoundRect(a0, f2, f2, C1410y.m37042g(c2));
                 } else {
                     a0.set(0.0f, 0.0f, 0.0f, 0.0f);
                     for (int i9 = 0; i9 < lineCount; i9++) {
@@ -314,7 +314,7 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
                     a0.top = this.f15089i3.getLineTop(0) - i6;
                     a0.bottom = (this.f15089i3.getLineTop(lineCount - 1) - i6) + i7;
                     float f6 = i8;
-                    canvas.drawRoundRect(a0, f6, f6, C1410y.m37039g(c2));
+                    canvas.drawRoundRect(a0, f6, f6, C1410y.m37042g(c2));
                 }
             } else {
                 i4 = C11524j.m217S0();
@@ -324,27 +324,27 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
             canvas.restore();
             if (this.f15082b3 != null) {
                 int measuredWidth = h1Var.getMeasuredWidth() / 2;
-                int height = i2 + this.f15089i3.getHeight() + C1357a0.m37541i(14.0f) + f15070B3;
-                if (vVar2.mo20246c0()) {
-                    canvas.drawCircle(measuredWidth, height, f15070B3, C1410y.m37057U());
+                int height = i2 + this.f15089i3.getHeight() + C1357a0.m37544i(14.0f) + f15070B3;
+                if (vVar2.mo20247c0()) {
+                    canvas.drawCircle(measuredWidth, height, f15070B3, C1410y.m37060U());
                 }
                 int i10 = f15070B3;
                 int i11 = measuredWidth - i10;
                 this.f15096p3 = i11;
                 int i12 = height - i10;
                 this.f15097q3 = i12;
-                vVar2.mo20256K0(i11, i12, measuredWidth + i10, height + i10);
+                vVar2.mo20257K0(i11, i12, measuredWidth + i10, height + i10);
                 vVar2.draw(canvas);
             }
         }
     }
 
     @Override
-    public boolean mo25217f8(p291uc.C9552h1 r8, android.view.MotionEvent r9) {
-        throw new UnsupportedOperationException("Method not decompiled: gd.C4583a5.mo25217f8(uc.h1, android.view.MotionEvent):boolean");
+    public boolean mo25218f8(p291uc.C9552h1 r8, android.view.MotionEvent r9) {
+        throw new UnsupportedOperationException("Method not decompiled: gd.C4583a5.mo25218f8(uc.h1, android.view.MotionEvent):boolean");
     }
 
-    public C5132o m27244ia(MotionEvent motionEvent) {
+    public C5132o m27246ia(MotionEvent motionEvent) {
         CharSequence charSequence = this.f15094n3;
         if (!(charSequence instanceof Spannable)) {
             return null;
@@ -361,10 +361,10 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
             this.f15103w3 = new RectF();
         }
         for (C5132o oVar : oVarArr) {
-            if (oVar.m23859c() != null) {
+            if (oVar.m23860c() != null) {
                 this.f15089i3.getSelectionPath(spannable.getSpanStart(oVar), spannable.getSpanEnd(oVar), this.f15102v3);
                 this.f15102v3.computeBounds(this.f15103w3, true);
-                this.f15103w3.offset(f15074z3, m27241la());
+                this.f15103w3.offset(f15074z3, m27243la());
                 if (this.f15103w3.contains(x, y)) {
                     return oVar;
                 }
@@ -374,53 +374,53 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
     }
 
     @Override
-    public boolean mo25351j5() {
+    public boolean mo25352j5() {
         return true;
     }
 
-    public final void m27243ja() {
+    public final void m27245ja() {
         this.f15098r3 = 0.0f;
         this.f15099s3 = 0.0f;
         this.f15101u3 = false;
         this.f15100t3 = null;
     }
 
-    public final TextPaint m27242ka(boolean z, boolean z2) {
-        return z2 ? m26068R9() ? C1410y.m37029l(z, -1) : C1410y.m37021p(z, C11524j.m217S0()) : m26068R9() ? C1410y.m37031k(z) : C1410y.m37023o(z);
+    public final TextPaint m27244ka(boolean z, boolean z2) {
+        return z2 ? m26069R9() ? C1410y.m37032l(z, -1) : C1410y.m37024p(z, C11524j.m217S0()) : m26069R9() ? C1410y.m37034k(z) : C1410y.m37026o(z);
     }
 
-    public final int m27241la() {
-        return m25949e3() + (m26068R9() ? 0 : C1357a0.m37541i(3.0f));
+    public final int m27243la() {
+        return m25950e3() + (m26069R9() ? 0 : C1357a0.m37544i(3.0f));
     }
 
-    public final boolean m27240ma() {
+    public final boolean m27242ma() {
         int i = this.f15075U2;
         return i == 15 || i == 16;
     }
 
     @Override
-    public boolean mo25829q7() {
+    public boolean mo25830q7() {
         return true;
     }
 
-    public final void m27233sa() {
+    public final void m27235sa() {
         if (this.f15094n3 != null) {
-            TextPaint ka = m27242ka(this.f15095o3, false);
+            TextPaint ka = m27244ka(this.f15095o3, false);
             BoringLayout.Metrics isBoring = BoringLayout.isBoring(this.f15094n3, ka);
             if (isBoring == null || isBoring.width > this.f15090j3) {
                 CharSequence charSequence = this.f15094n3;
-                this.f15089i3 = new StaticLayout(charSequence, 0, charSequence.length(), ka, this.f15090j3, Layout.Alignment.ALIGN_CENTER, 1.0f, C1357a0.m37541i(4.0f), false);
+                this.f15089i3 = new StaticLayout(charSequence, 0, charSequence.length(), ka, this.f15090j3, Layout.Alignment.ALIGN_CENTER, 1.0f, C1357a0.m37544i(4.0f), false);
                 return;
             }
-            this.f15089i3 = new BoringLayout(this.f15094n3, ka, this.f15090j3, Layout.Alignment.ALIGN_CENTER, 1.0f, C1357a0.m37541i(4.0f), isBoring, false);
+            this.f15089i3 = new BoringLayout(this.f15094n3, ka, this.f15090j3, Layout.Alignment.ALIGN_CENTER, 1.0f, C1357a0.m37544i(4.0f), isBoring, false);
             return;
         }
         this.f15089i3 = null;
     }
 
     @Override
-    public boolean mo25806t0() {
-        return !m27240ma() && super.mo25806t0();
+    public boolean mo25807t0() {
+        return !m27242ma() && super.mo25807t0();
     }
 
     @Override
@@ -430,17 +430,17 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
             this.f16099O0.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    C4583a5.this.m27235ra(message);
+                    C4583a5.this.m27237ra(message);
                 }
             });
         }
     }
 
-    public final void m27232ta(int i, long j, C4584a... aVarArr) {
-        m27229wa(i, true, j, aVarArr);
+    public final void m27234ta(int i, long j, C4584a... aVarArr) {
+        m27231wa(i, true, j, aVarArr);
     }
 
-    public final void m27231ua(int i, int i2, int i3, int i4, int i5, int i6, long j, TimeUnit timeUnit, C4584a... aVarArr) {
+    public final void m27233ua(int i, int i2, int i3, int i4, int i5, int i6, long j, TimeUnit timeUnit, C4584a... aVarArr) {
         long days = timeUnit.toDays(j);
         long j2 = days / 30;
         long j3 = days / 7;
@@ -448,27 +448,27 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
         long minutes = timeUnit.toMinutes(j);
         long seconds = timeUnit.toSeconds(j);
         if (i6 != 0 && j2 > 0) {
-            m27232ta(i6, j2, aVarArr);
+            m27234ta(i6, j2, aVarArr);
         } else if (i5 != 0 && j3 > 0) {
-            m27232ta(i5, j3, aVarArr);
+            m27234ta(i5, j3, aVarArr);
         } else if (i4 != 0 && days > 0) {
-            m27232ta(i4, days, aVarArr);
+            m27234ta(i4, days, aVarArr);
         } else if (i3 != 0 && hours > 0) {
-            m27232ta(i3, hours, aVarArr);
+            m27234ta(i3, hours, aVarArr);
         } else if (i2 != 0 && minutes > 0) {
-            m27232ta(i2, minutes, aVarArr);
+            m27234ta(i2, minutes, aVarArr);
         } else if (i != 0) {
-            m27232ta(i, seconds, aVarArr);
+            m27234ta(i, seconds, aVarArr);
         } else {
             throw new IllegalArgumentException();
         }
     }
 
-    public final void m27230va(int i, C4584a... aVarArr) {
-        m27229wa(i, false, 0L, aVarArr);
+    public final void m27232va(int i, C4584a... aVarArr) {
+        m27231wa(i, false, 0L, aVarArr);
     }
 
-    public final void m27229wa(int i, final boolean z, long j, final C4584a... aVarArr) {
+    public final void m27231wa(int i, final boolean z, long j, final C4584a... aVarArr) {
         boolean z2;
         C5132o[] oVarArr;
         String str;
@@ -479,19 +479,19 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
         String str2;
         if ((aVarArr == null || aVarArr.length == 0) && !z) {
             if (i != 0) {
-                str2 = C4403w.m27869i1(i);
+                str2 = C4403w.m27871i1(i);
             } else {
                 str2 = this.f15088h3;
             }
-            m27227ya(str2);
+            m27229ya(str2);
             return;
         }
-        final boolean i7 = m25907i7();
+        final boolean i7 = m25908i7();
         C4403w.AbstractC4409f v4Var = new C4403w.AbstractC4409f() {
             @Override
             public final Object mo379a(CharSequence charSequence, int i4, int i5, int i6, boolean z4) {
                 Object pa2;
-                pa2 = C4583a5.this.m27237pa(z, aVarArr, i7, charSequence, i4, i5, i6, z4);
+                pa2 = C4583a5.this.m27239pa(z, aVarArr, i7, charSequence, i4, i5, i6, z4);
                 return pa2;
             }
         };
@@ -500,16 +500,16 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
             String str3 = this.f15088h3;
             if (str3 != null) {
                 try {
-                    m27227ya(C4403w.m27935T(str3, v4Var, aVarArr));
+                    m27229ya(C4403w.m27937T(str3, v4Var, aVarArr));
                 } catch (Throwable th) {
                     Log.m14725e("Broken string format: %s", th, this.f15088h3);
-                    m27227ya(this.f15088h3);
+                    m27229ya(this.f15088h3);
                 }
             }
         } else if (z) {
-            m27227ya(C4403w.m27848n2(i, j, v4Var, aVarArr));
+            m27229ya(C4403w.m27850n2(i, j, v4Var, aVarArr));
         } else {
-            m27227ya(C4403w.m27873h1(i, v4Var, aVarArr));
+            m27229ya(C4403w.m27875h1(i, v4Var, aVarArr));
         }
         CharSequence charSequence = this.f15094n3;
         if ((charSequence instanceof SpannableStringBuilder) && aVarArr != null && aVarArr.length > 0) {
@@ -532,15 +532,15 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
                 int i5 = 0;
                 while (i5 < length2) {
                     C5132o oVar = oVarArr[i5];
-                    C4584a aVar2 = (C4584a) oVar.m23858d();
+                    C4584a aVar2 = (C4584a) oVar.m23859d();
                     if (!(aVar2 == null || aVar2.f15111h == null)) {
                         int spanStart = spannableStringBuilder.getSpanStart(oVar);
                         int spanEnd = spannableStringBuilder.getSpanEnd(oVar);
                         spannableStringBuilder.removeSpan(oVar);
                         if (spanStart >= 0 && spanEnd >= 0) {
                             spannableStringBuilder.delete(spanStart, spanEnd);
-                            String m0 = C4403w.m27854m0();
-                            String n0 = C4403w.m27850n0(z4);
+                            String m0 = C4403w.m27856m0();
+                            String n0 = C4403w.m27852n0(z4);
                             long[] jArr = aVar2.f15111h;
                             int length3 = jArr.length;
                             int i6 = 0;
@@ -560,12 +560,12 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
                                 }
                                 String str4 = aVar2.f15112i[i8];
                                 length2 = length2;
-                                boolean M0 = RunnableC5390g.m22983M0(str4);
+                                boolean M0 = RunnableC5390g.m22984M0(str4);
                                 if (i7) {
                                     z3 = i7;
                                     str = m0;
                                     aVar = aVar2;
-                                    i2 = C4779t2.m25624P1(C4779t2.m25681H0(j2, this.f16099O0.m2519ba()));
+                                    i2 = C4779t2.m25625P1(C4779t2.m25682H0(j2, this.f16099O0.m2519ba()));
                                 } else {
                                     z3 = i7;
                                     str = m0;
@@ -574,13 +574,13 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
                                 }
                                 spannableStringBuilder.insert(spanStart, (CharSequence) str4);
                                 n0 = n0;
-                                C5132o u = new C5132o(M0 ? C1389o.m37258k() : m26068R9() ? C1389o.m37262g() : C1389o.m37260i(), m26068R9() ? 0 : i2).m23841u(i2, this.f16097N0.m7645r0().m32662Lr());
-                                u.m23851k(M0);
-                                u.m23845q(new C5132o.AbstractC5133a() {
+                                C5132o u = new C5132o(M0 ? C1389o.m37261k() : m26069R9() ? C1389o.m37265g() : C1389o.m37263i(), m26069R9() ? 0 : i2).m23842u(i2, this.f16097N0.m7645r0().m32665Lr());
+                                u.m23852k(M0);
+                                u.m23846q(new C5132o.AbstractC5133a() {
                                     @Override
                                     public final boolean mo490a(View view, C5132o oVar2) {
                                         boolean qa2;
-                                        qa2 = C4583a5.this.m27236qa(j2, view, oVar2);
+                                        qa2 = C4583a5.this.m27238qa(j2, view, oVar2);
                                         return qa2;
                                     }
                                 });
@@ -602,18 +602,18 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
                 }
             }
         }
-        if (!C5070i.m24061i(this.f15094n3)) {
-            this.f15094n3 = C5078d.m23986z().m24024I(this.f15094n3);
+        if (!C5070i.m24062i(this.f15094n3)) {
+            this.f15094n3 = C5078d.m23987z().m24025I(this.f15094n3);
         }
     }
 
-    public final void m27228xa() {
-        throw new UnsupportedOperationException("Method not decompiled: gd.C4583a5.m27228xa():void");
+    public final void m27230xa() {
+        throw new UnsupportedOperationException("Method not decompiled: gd.C4583a5.m27230xa():void");
     }
 
-    public final void m27227ya(CharSequence charSequence) {
+    public final void m27229ya(CharSequence charSequence) {
         this.f15094n3 = charSequence;
-        this.f15095o3 = RunnableC5390g.m22983M0(charSequence);
+        this.f15095o3 = RunnableC5390g.m22984M0(charSequence);
     }
 
     public C4583a5(C9678w2 w2Var, TdApi.Message message, TdApi.MessageBasicGroupChatCreate messageBasicGroupChatCreate) {
@@ -639,47 +639,47 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
             this.f15112i = new String[jArr.length];
             int i = 0;
             for (long j : jArr) {
-                this.f15112i[i] = C4583a5.m27226za(C4779t2.m25451p2(j, s4Var.m26027V9(j)));
+                this.f15112i[i] = C4583a5.m27228za(C4779t2.m25452p2(j, s4Var.m26028V9(j)));
                 i++;
             }
         }
 
-        public boolean m27219g() {
+        public boolean m27221g() {
             return (this.f15106c == null && this.f15107d == null && this.f15113j == 0 && this.f15108e == null && !this.f15110g && !this.f15109f) ? false : true;
         }
 
-        public void m27218h(AbstractC4761s4 s4Var) {
+        public void m27220h(AbstractC4761s4 s4Var) {
             if (this.f15106c != null) {
-                s4Var.f16099O0.m2485dd().m3429v7(s4Var.m26096P0(), this.f15106c.f25439id, s4Var.m25916h8());
+                s4Var.f16099O0.m2485dd().m3429v7(s4Var.m26097P0(), this.f15106c.f25442id, s4Var.m25917h8());
                 return;
             }
             C10712hc hcVar = this.f15107d;
             if (hcVar != null) {
                 if (hcVar.m4199q()) {
-                    s4Var.f16099O0.m2485dd().m3429v7(s4Var.m26096P0(), this.f15107d.m4207i(), s4Var.m25916h8());
+                    s4Var.f16099O0.m2485dd().m3429v7(s4Var.m26097P0(), this.f15107d.m4207i(), s4Var.m25917h8());
                 } else if (this.f15107d.m4202n()) {
-                    s4Var.f16099O0.m2485dd().m3529l7(s4Var.m26096P0(), this.f15107d.m4213c(), null, s4Var.m25916h8());
+                    s4Var.f16099O0.m2485dd().m3529l7(s4Var.m26097P0(), this.f15107d.m4213c(), null, s4Var.m25917h8());
                 }
             } else if (this.f15113j != 0) {
-                s4Var.f16099O0.m2485dd().m3569h7(s4Var.m26096P0(), this.f15113j, new HandlerC10770jj.C10780j().m3368h().m3362n());
+                s4Var.f16099O0.m2485dd().m3569h7(s4Var.m26097P0(), this.f15113j, new HandlerC10770jj.C10780j().m3368h().m3362n());
             } else if (this.f15108e != null) {
                 HandlerC10770jj dd = s4Var.f16099O0.m2485dd();
                 TdApi.Location location = this.f15108e;
-                dd.m3479q7(s4Var, new AbstractView$OnClickListenerC3344yb.C3351f(location.latitude, location.longitude).m30702a(s4Var.f16122a.chatId, s4Var.m25981a7().m32266qk()).m30701b(s4Var.f16122a.chatId));
+                dd.m3479q7(s4Var, new AbstractView$OnClickListenerC3344yb.C3351f(location.latitude, location.longitude).m30704a(s4Var.f16122a.chatId, s4Var.m25982a7().m32269qk()).m30703b(s4Var.f16122a.chatId));
             } else if (this.f15110g) {
-                s4Var.f16099O0.m2485dd().m3838G7(s4Var.m26096P0(), this.f15105b, s4Var.m25916h8());
+                s4Var.f16099O0.m2485dd().m3838G7(s4Var.m26097P0(), this.f15105b, s4Var.m25917h8());
             }
         }
 
-        public C4584a m27217i(boolean z) {
+        public C4584a m27219i(boolean z) {
             this.f15109f = z;
             return this;
         }
 
-        public C4584a m27216j(boolean z) {
+        public C4584a m27218j(boolean z) {
             this.f15110g = z;
             if (z) {
-                this.f15104a = C5070i.m24071G(this.f15105b);
+                this.f15104a = C5070i.m24072G(this.f15105b);
             }
             return this;
         }
@@ -691,7 +691,7 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
 
         public C4584a(String str) {
             this.f15105b = str;
-            this.f15104a = C4583a5.m27226za(str);
+            this.f15104a = C4583a5.m27228za(str);
         }
 
         public C4584a(TdApi.User user) {
@@ -720,16 +720,16 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
         public C4584a(TdApi.User user, boolean z) {
             String str;
             if (user != null) {
-                str = (!z || C4779t2.m25671I3(user)) ? C4779t2.m25437r2(user) : user.firstName;
+                str = (!z || C4779t2.m25672I3(user)) ? C4779t2.m25438r2(user) : user.firstName;
             } else {
-                str = C4403w.m27869i1(R.string.Somebody);
+                str = C4403w.m27871i1(R.string.Somebody);
             }
             this.f15104a = str;
             this.f15106c = user;
         }
 
         public C4584a(String str, TdApi.User user) {
-            this.f15104a = C4583a5.m27226za(str);
+            this.f15104a = C4583a5.m27228za(str);
             this.f15106c = user;
         }
     }
@@ -758,7 +758,7 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
     public C4583a5(C9678w2 w2Var, TdApi.Message message, TdApi.MessageChatChangePhoto messageChatChangePhoto) {
         super(w2Var, message);
         TdApi.PhotoSize[] photoSizeArr;
-        if (!m26002Y5() || message.content.getConstructor() != 0) {
+        if (!m26003Y5() || message.content.getConstructor() != 0) {
             this.f15075U2 = 2;
         } else {
             TdApi.ChatEventAction chatEventAction = ((C4728o7) message.content).f15918a.action;
@@ -785,7 +785,7 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
             if (photoSize != null) {
                 C6246h hVar = new C6246h(this.f16099O0, photoSize.photo);
                 this.f15082b3 = hVar;
-                hVar.mo20767t0(C9903a.getDefaultAvatarCacheSize());
+                hVar.mo20768t0(C9903a.getDefaultAvatarCacheSize());
             }
         }
     }
@@ -799,7 +799,7 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
     public C4583a5(C9678w2 w2Var, TdApi.Message message, TdApi.MessageChatDeleteMember messageChatDeleteMember) {
         super(w2Var, message);
         this.f15075U2 = 5;
-        this.f15077W2 = m26027V9(messageChatDeleteMember.userId);
+        this.f15077W2 = m26028V9(messageChatDeleteMember.userId);
     }
 
     public C4583a5(C9678w2 w2Var, TdApi.Message message, TdApi.MessageSupergroupChatCreate messageSupergroupChatCreate) {
@@ -893,7 +893,7 @@ public class C4583a5 extends AbstractC4761s4 implements Client.AbstractC7865g {
     public C4583a5(C9678w2 w2Var, TdApi.Message message, TdApi.MessagePaymentSuccessful messagePaymentSuccessful) {
         super(w2Var, message);
         this.f15075U2 = 30;
-        this.f15085e3 = C5065e.m24123a(messagePaymentSuccessful.currency, messagePaymentSuccessful.totalAmount);
+        this.f15085e3 = C5065e.m24124a(messagePaymentSuccessful.currency, messagePaymentSuccessful.totalAmount);
         if (messagePaymentSuccessful.invoiceMessageId != 0) {
             this.f16099O0.m2270r4().m14783o(new TdApi.GetMessage(message.chatId, messagePaymentSuccessful.invoiceMessageId), this);
         }

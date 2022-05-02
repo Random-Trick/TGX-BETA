@@ -9,43 +9,43 @@ public final class C1213l {
         public final SparseBooleanArray f4524a = new SparseBooleanArray();
         public boolean f4525b;
 
-        public C1215b m38026a(int i) {
-            C1186a.m38184f(!this.f4525b);
+        public C1215b m38029a(int i) {
+            C1186a.m38187f(!this.f4525b);
             this.f4524a.append(i, true);
             return this;
         }
 
-        public C1215b m38025b(C1213l lVar) {
-            for (int i = 0; i < lVar.m38027b(); i++) {
-                m38026a(lVar.m38028a(i));
+        public C1215b m38028b(C1213l lVar) {
+            for (int i = 0; i < lVar.m38030b(); i++) {
+                m38029a(lVar.m38031a(i));
             }
             return this;
         }
 
-        public C1215b m38024c(int... iArr) {
+        public C1215b m38027c(int... iArr) {
             for (int i : iArr) {
-                m38026a(i);
+                m38029a(i);
             }
             return this;
         }
 
-        public C1215b m38023d(int i, boolean z) {
-            return z ? m38026a(i) : this;
+        public C1215b m38026d(int i, boolean z) {
+            return z ? m38029a(i) : this;
         }
 
-        public C1213l m38022e() {
-            C1186a.m38184f(!this.f4525b);
+        public C1213l m38025e() {
+            C1186a.m38187f(!this.f4525b);
             this.f4525b = true;
             return new C1213l(this.f4524a);
         }
     }
 
-    public int m38028a(int i) {
-        C1186a.m38187c(i, 0, m38027b());
+    public int m38031a(int i) {
+        C1186a.m38190c(i, 0, m38030b());
         return this.f4523a.keyAt(i);
     }
 
-    public int m38027b() {
+    public int m38030b() {
         return this.f4523a.size();
     }
 
@@ -60,11 +60,11 @@ public final class C1213l {
         if (C1216l0.f4526a >= 24) {
             return this.f4523a.equals(lVar.f4523a);
         }
-        if (m38027b() != lVar.m38027b()) {
+        if (m38030b() != lVar.m38030b()) {
             return false;
         }
-        for (int i = 0; i < m38027b(); i++) {
-            if (m38028a(i) != lVar.m38028a(i)) {
+        for (int i = 0; i < m38030b(); i++) {
+            if (m38031a(i) != lVar.m38031a(i)) {
                 return false;
             }
         }
@@ -75,9 +75,9 @@ public final class C1213l {
         if (C1216l0.f4526a >= 24) {
             return this.f4523a.hashCode();
         }
-        int b = m38027b();
-        for (int i = 0; i < m38027b(); i++) {
-            b = (b * 31) + m38028a(i);
+        int b = m38030b();
+        for (int i = 0; i < m38030b(); i++) {
+            b = (b * 31) + m38031a(i);
         }
         return b;
     }

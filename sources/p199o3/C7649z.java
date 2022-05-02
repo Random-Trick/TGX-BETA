@@ -5,20 +5,20 @@ import p020b5.C1186a;
 import p199o3.AbstractC7611g;
 
 public final class C7649z extends AbstractC7648y {
-    public int[] f24520i;
-    public int[] f24521j;
+    public int[] f24523i;
+    public int[] f24524j;
 
     @Override
     public void mo15305b(ByteBuffer byteBuffer) {
-        int[] iArr = (int[]) C1186a.m38185e(this.f24521j);
+        int[] iArr = (int[]) C1186a.m38188e(this.f24524j);
         int position = byteBuffer.position();
         int limit = byteBuffer.limit();
-        ByteBuffer m = m15306m(((limit - position) / this.f24513b.f24361d) * this.f24514c.f24361d);
+        ByteBuffer m = m15306m(((limit - position) / this.f24516b.f24364d) * this.f24517c.f24364d);
         while (position < limit) {
             for (int i : iArr) {
                 m.putShort(byteBuffer.getShort((i * 2) + position));
             }
-            position += this.f24513b.f24361d;
+            position += this.f24516b.f24364d;
         }
         byteBuffer.position(limit);
         m.flip();
@@ -26,16 +26,16 @@ public final class C7649z extends AbstractC7648y {
 
     @Override
     public AbstractC7611g.C7612a mo15304i(AbstractC7611g.C7612a aVar) {
-        int[] iArr = this.f24520i;
+        int[] iArr = this.f24523i;
         if (iArr == null) {
-            return AbstractC7611g.C7612a.f24357e;
+            return AbstractC7611g.C7612a.f24360e;
         }
-        if (aVar.f24360c == 2) {
-            boolean z = aVar.f24359b != iArr.length;
+        if (aVar.f24363c == 2) {
+            boolean z = aVar.f24362b != iArr.length;
             int i = 0;
             while (i < iArr.length) {
                 int i2 = iArr[i];
-                if (i2 < aVar.f24359b) {
+                if (i2 < aVar.f24362b) {
                     z |= i2 != i;
                     i++;
                 } else {
@@ -43,25 +43,25 @@ public final class C7649z extends AbstractC7648y {
                 }
             }
             if (z) {
-                return new AbstractC7611g.C7612a(aVar.f24358a, iArr.length, 2);
+                return new AbstractC7611g.C7612a(aVar.f24361a, iArr.length, 2);
             }
-            return AbstractC7611g.C7612a.f24357e;
+            return AbstractC7611g.C7612a.f24360e;
         }
         throw new AbstractC7611g.C7613b(aVar);
     }
 
     @Override
     public void mo15303j() {
-        this.f24521j = this.f24520i;
+        this.f24524j = this.f24523i;
     }
 
     @Override
     public void mo15302l() {
-        this.f24521j = null;
-        this.f24520i = null;
+        this.f24524j = null;
+        this.f24523i = null;
     }
 
     public void m15301n(int[] iArr) {
-        this.f24520i = iArr;
+        this.f24523i = iArr;
     }
 }

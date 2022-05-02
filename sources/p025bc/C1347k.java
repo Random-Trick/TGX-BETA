@@ -22,18 +22,18 @@ public final class C1347k {
         f4924b = bArr;
         int length = bArr.length;
         for (int i = 0; i < length; i++) {
-            kVar.m37583a(i, f4923a[i], f4924b[i]);
+            kVar.m37586a(i, f4923a[i], f4924b[i]);
         }
     }
 
-    public final void m37583a(int i, int i2, int i3) {
+    public final void m37586a(int i, int i2, int i3) {
         C1348a aVar = new C1348a(i, i3);
         C1348a aVar2 = f4925c;
         while (i3 > 8) {
             i3 -= 8;
             int i4 = (i2 >>> i3) & 255;
-            C1348a[] a = aVar2.m37579a();
-            C8298k.m12936c(a);
+            C1348a[] a = aVar2.m37582a();
+            C8298k.m12935c(a);
             C1348a aVar3 = a[i4];
             if (aVar3 == null) {
                 aVar3 = new C1348a();
@@ -43,14 +43,14 @@ public final class C1347k {
         }
         int i5 = 8 - i3;
         int i6 = (i2 << i5) & 255;
-        C1348a[] a2 = aVar2.m37579a();
-        C8298k.m12936c(a2);
-        C5294h.m23427i(a2, aVar, i6, (1 << i5) + i6);
+        C1348a[] a2 = aVar2.m37582a();
+        C8298k.m12935c(a2);
+        C5294h.m23428i(a2, aVar, i6, (1 << i5) + i6);
     }
 
-    public final void m37582b(AbstractC4551g gVar, long j, AbstractC4550f fVar) {
-        C8298k.m12934e(gVar, "source");
-        C8298k.m12934e(fVar, "sink");
+    public final void m37585b(AbstractC4551g gVar, long j, AbstractC4550f fVar) {
+        C8298k.m12933e(gVar, "source");
+        C8298k.m12933e(fVar, "sink");
         C1348a aVar = f4925c;
         int i = 0;
         int i2 = 0;
@@ -59,13 +59,13 @@ public final class C1347k {
             i2 += 8;
             while (i2 >= 8) {
                 int i3 = i2 - 8;
-                C1348a[] a = aVar.m37579a();
-                C8298k.m12936c(a);
+                C1348a[] a = aVar.m37582a();
+                C8298k.m12935c(a);
                 aVar = a[(i >>> i3) & 255];
-                C8298k.m12936c(aVar);
-                if (aVar.m37579a() == null) {
-                    fVar.mo27349C(aVar.m37578b());
-                    i2 -= aVar.m37577c();
+                C8298k.m12935c(aVar);
+                if (aVar.m37582a() == null) {
+                    fVar.mo27351C(aVar.m37581b());
+                    i2 -= aVar.m37580c();
                     aVar = f4925c;
                 } else {
                     i2 = i3;
@@ -73,13 +73,13 @@ public final class C1347k {
             }
         }
         while (i2 > 0) {
-            C1348a[] a2 = aVar.m37579a();
-            C8298k.m12936c(a2);
+            C1348a[] a2 = aVar.m37582a();
+            C8298k.m12935c(a2);
             C1348a aVar2 = a2[(i << (8 - i2)) & 255];
-            C8298k.m12936c(aVar2);
-            if (aVar2.m37579a() == null && aVar2.m37577c() <= i2) {
-                fVar.mo27349C(aVar2.m37578b());
-                i2 -= aVar2.m37577c();
+            C8298k.m12935c(aVar2);
+            if (aVar2.m37582a() == null && aVar2.m37580c() <= i2) {
+                fVar.mo27351C(aVar2.m37581b());
+                i2 -= aVar2.m37580c();
                 aVar = f4925c;
             } else {
                 return;
@@ -87,34 +87,34 @@ public final class C1347k {
         }
     }
 
-    public final void m37581c(C4552h hVar, AbstractC4550f fVar) {
-        C8298k.m12934e(hVar, "source");
-        C8298k.m12934e(fVar, "sink");
-        int r = hVar.m27404r();
+    public final void m37584c(C4552h hVar, AbstractC4550f fVar) {
+        C8298k.m12933e(hVar, "source");
+        C8298k.m12933e(fVar, "sink");
+        int r = hVar.m27406r();
         long j = 0;
         int i = 0;
         for (int i2 = 0; i2 < r; i2++) {
-            int b = C9489b.m8522b(hVar.m27412d(i2), 255);
+            int b = C9489b.m8522b(hVar.m27414d(i2), 255);
             int i3 = f4923a[b];
             byte b2 = f4924b[b];
             j = (j << b2) | i3;
             i += b2;
             while (i >= 8) {
                 i = (i == true ? 1 : 0) - 8;
-                fVar.mo27349C((int) (j >> i));
+                fVar.mo27351C((int) (j >> i));
             }
         }
         if (i > 0) {
-            fVar.mo27349C((int) ((j << (8 - i)) | (255 >>> (i == 1 ? 1L : 0L))));
+            fVar.mo27351C((int) ((j << (8 - i)) | (255 >>> (i == 1 ? 1L : 0L))));
         }
     }
 
-    public final int m37580d(C4552h hVar) {
-        C8298k.m12934e(hVar, "bytes");
-        int r = hVar.m27404r();
+    public final int m37583d(C4552h hVar) {
+        C8298k.m12933e(hVar, "bytes");
+        int r = hVar.m27406r();
         long j = 0;
         for (int i = 0; i < r; i++) {
-            j += f4924b[C9489b.m8522b(hVar.m27412d(i), 255)];
+            j += f4924b[C9489b.m8522b(hVar.m27414d(i), 255)];
         }
         return (int) ((j + 7) >> 3);
     }
@@ -130,15 +130,15 @@ public final class C1347k {
             this.f4929c = 0;
         }
 
-        public final C1348a[] m37579a() {
+        public final C1348a[] m37582a() {
             return this.f4927a;
         }
 
-        public final int m37578b() {
+        public final int m37581b() {
             return this.f4928b;
         }
 
-        public final int m37577c() {
+        public final int m37580c() {
             return this.f4929c;
         }
 

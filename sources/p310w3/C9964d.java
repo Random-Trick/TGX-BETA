@@ -9,9 +9,9 @@ import p020b5.C1189b0;
 import p270t3.C8957e;
 
 public final class C9964d extends AbstractC9965e {
-    public long f32380b = -9223372036854775807L;
-    public long[] f32381c = new long[0];
-    public long[] f32382d = new long[0];
+    public long f32383b = -9223372036854775807L;
+    public long[] f32384c = new long[0];
+    public long[] f32385d = new long[0];
 
     public C9964d() {
         super(new C8957e());
@@ -19,7 +19,7 @@ public final class C9964d extends AbstractC9965e {
 
     public static Boolean m6400g(C1189b0 b0Var) {
         boolean z = true;
-        if (b0Var.m38156D() != 1) {
+        if (b0Var.m38159D() != 1) {
             z = false;
         }
         return Boolean.valueOf(z);
@@ -52,16 +52,16 @@ public final class C9964d extends AbstractC9965e {
 
     public static Date m6398i(C1189b0 b0Var) {
         Date date = new Date((long) m6397j(b0Var).doubleValue());
-        b0Var.m38143Q(2);
+        b0Var.m38146Q(2);
         return date;
     }
 
     public static Double m6397j(C1189b0 b0Var) {
-        return Double.valueOf(Double.longBitsToDouble(b0Var.m38120w()));
+        return Double.valueOf(Double.longBitsToDouble(b0Var.m38123w()));
     }
 
     public static HashMap<String, Object> m6396k(C1189b0 b0Var) {
-        int H = b0Var.m38152H();
+        int H = b0Var.m38155H();
         HashMap<String, Object> hashMap = new HashMap<>(H);
         for (int i = 0; i < H; i++) {
             String n = m6393n(b0Var);
@@ -89,7 +89,7 @@ public final class C9964d extends AbstractC9965e {
     }
 
     public static ArrayList<Object> m6394m(C1189b0 b0Var) {
-        int H = b0Var.m38152H();
+        int H = b0Var.m38155H();
         ArrayList<Object> arrayList = new ArrayList<>(H);
         for (int i = 0; i < H; i++) {
             Object h = m6399h(b0Var, m6392o(b0Var));
@@ -101,14 +101,14 @@ public final class C9964d extends AbstractC9965e {
     }
 
     public static String m6393n(C1189b0 b0Var) {
-        int J = b0Var.m38150J();
-        int e = b0Var.m38138e();
-        b0Var.m38143Q(J);
-        return new String(b0Var.m38139d(), e, J);
+        int J = b0Var.m38153J();
+        int e = b0Var.m38141e();
+        b0Var.m38146Q(J);
+        return new String(b0Var.m38142d(), e, J);
     }
 
     public static int m6392o(C1189b0 b0Var) {
-        return b0Var.m38156D();
+        return b0Var.m38159D();
     }
 
     @Override
@@ -126,7 +126,7 @@ public final class C9964d extends AbstractC9965e {
         if (obj instanceof Double) {
             double doubleValue = ((Double) obj).doubleValue();
             if (doubleValue > 0.0d) {
-                this.f32380b = (long) (doubleValue * 1000000.0d);
+                this.f32383b = (long) (doubleValue * 1000000.0d);
             }
         }
         Object obj2 = k.get("keyframes");
@@ -138,18 +138,18 @@ public final class C9964d extends AbstractC9965e {
                 List list = (List) obj3;
                 List list2 = (List) obj4;
                 int size = list2.size();
-                this.f32381c = new long[size];
-                this.f32382d = new long[size];
+                this.f32384c = new long[size];
+                this.f32385d = new long[size];
                 for (int i = 0; i < size; i++) {
                     Object obj5 = list.get(i);
                     Object obj6 = list2.get(i);
                     if (!(obj6 instanceof Double) || !(obj5 instanceof Double)) {
-                        this.f32381c = new long[0];
-                        this.f32382d = new long[0];
+                        this.f32384c = new long[0];
+                        this.f32385d = new long[0];
                         break;
                     }
-                    this.f32381c[i] = (long) (((Double) obj6).doubleValue() * 1000000.0d);
-                    this.f32382d[i] = ((Double) obj5).longValue();
+                    this.f32384c[i] = (long) (((Double) obj6).doubleValue() * 1000000.0d);
+                    this.f32385d[i] = ((Double) obj5).longValue();
                 }
             }
         }
@@ -157,14 +157,14 @@ public final class C9964d extends AbstractC9965e {
     }
 
     public long m6403d() {
-        return this.f32380b;
+        return this.f32383b;
     }
 
     public long[] m6402e() {
-        return this.f32382d;
+        return this.f32385d;
     }
 
     public long[] m6401f() {
-        return this.f32381c;
+        return this.f32384c;
     }
 }

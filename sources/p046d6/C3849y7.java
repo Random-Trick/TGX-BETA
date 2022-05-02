@@ -16,29 +16,29 @@ public final class C3849y7 extends AbstractC3858z7 {
 
     @Override
     public final Object get(int i) {
-        C3669f4.m29839a(i, this.f13088M, "index");
+        C3669f4.m29841a(i, this.f13088M, "index");
         return this.f13089N.get(i + this.f13090c);
     }
 
     @Override
-    public final int mo29731i() {
-        return this.f13089N.mo29730m() + this.f13090c + this.f13088M;
+    public final int mo29733i() {
+        return this.f13089N.mo29732m() + this.f13090c + this.f13088M;
     }
 
     @Override
-    public final int mo29730m() {
-        return this.f13089N.mo29730m() + this.f13090c;
+    public final int mo29732m() {
+        return this.f13089N.mo29732m() + this.f13090c;
     }
 
     @Override
     @CheckForNull
-    public final Object[] mo29729r() {
-        return this.f13089N.mo29729r();
+    public final Object[] mo29731r() {
+        return this.f13089N.mo29731r();
     }
 
     @Override
-    public final AbstractC3858z7 mo29723s(int i, int i2) {
-        C3669f4.m29837c(i, i2, this.f13088M);
+    public final AbstractC3858z7 mo29725s(int i, int i2) {
+        C3669f4.m29839c(i, i2, this.f13088M);
         AbstractC3858z7 z7Var = this.f13089N;
         int i3 = this.f13090c;
         return z7Var.subList(i + i3, i2 + i3);

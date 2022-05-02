@@ -18,17 +18,17 @@ public final class C3630b5 {
     }
 
     @AbstractC3703i8(zza = 50)
-    public final C3801t4 m29849a() {
+    public final C3801t4 m29851a() {
         return this.f12369c;
     }
 
     @AbstractC3703i8(zza = 2)
-    public final EnumC3846y4 m29848b() {
+    public final EnumC3846y4 m29850b() {
         return this.f12368b;
     }
 
     @AbstractC3703i8(zza = 1)
-    public final C3758o6 m29847c() {
+    public final C3758o6 m29849c() {
         return this.f12367a;
     }
 }

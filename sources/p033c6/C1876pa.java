@@ -12,7 +12,7 @@ public final class C1876pa {
     }
 
     @AbstractC1707e2(zza = 1)
-    public final AbstractC1721f1<EnumC1834ma> m35948a() {
+    public final AbstractC1721f1<EnumC1834ma> m35951a() {
         return this.f6810a;
     }
 
@@ -23,10 +23,10 @@ public final class C1876pa {
         if (!(obj instanceof C1876pa)) {
             return false;
         }
-        return C6374q.m20524a(this.f6810a, ((C1876pa) obj).f6810a);
+        return C6374q.m20525a(this.f6810a, ((C1876pa) obj).f6810a);
     }
 
     public final int hashCode() {
-        return C6374q.m20523b(this.f6810a);
+        return C6374q.m20524b(this.f6810a);
     }
 }

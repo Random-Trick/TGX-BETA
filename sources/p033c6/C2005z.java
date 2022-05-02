@@ -15,7 +15,7 @@ public final class C2005z extends C1796k1 {
 
     @Override
     public final void clear() {
-        C1736g1.m36034a(iterator());
+        C1736g1.m36037a(iterator());
     }
 
     @Override

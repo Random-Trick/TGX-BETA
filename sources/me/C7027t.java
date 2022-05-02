@@ -31,16 +31,16 @@ import p350yd.C10930q6;
 import td.AbstractC9323v4;
 
 public class C7027t extends FrameLayout implements C3950k.AbstractC3952b, AbstractC6828a, C7833i.AbstractC7835b {
-    public C7833i f22297M;
-    public boolean f22298N;
-    public boolean f22299O;
-    public final C3940f f22300P = new C3940f(0, this, C2057b.f7280b, 120, true);
-    public int f22301Q;
-    public AbstractC7821f<?, ?> f22302R;
-    public TdApi.Sticker f22303S;
-    public final RunnableC6507m f22304a;
-    public C10930q6 f22305b;
-    public AbstractC7028a f22306c;
+    public C7833i f22300M;
+    public boolean f22301N;
+    public boolean f22302O;
+    public final C3940f f22303P = new C3940f(0, this, C2057b.f7280b, 120, true);
+    public int f22304Q;
+    public AbstractC7821f<?, ?> f22305R;
+    public TdApi.Sticker f22306S;
+    public final RunnableC6507m f22307a;
+    public C10930q6 f22308b;
+    public AbstractC7028a f22309c;
 
     public interface AbstractC7028a {
         AbstractC7821f.C7830i mo18061g();
@@ -49,18 +49,18 @@ public class C7027t extends FrameLayout implements C3950k.AbstractC3952b, Abstra
     public C7027t(Context context) {
         super(context);
         RunnableC6507m mVar = new RunnableC6507m(this);
-        this.f22304a = mVar;
-        mVar.mo20247b();
+        this.f22307a = mVar;
+        mVar.mo20248b();
         setWillNotDraw(false);
         setLayoutParams(new RecyclerView.LayoutParams(-1, -1));
     }
 
     public void m18065h(TdApi.AnimatedEmoji animatedEmoji, C10930q6 q6Var) {
         TdApi.Sticker sticker = animatedEmoji.sticker;
-        this.f22303S = sticker;
+        this.f22306S = sticker;
         C6503j jVar = new C6503j(q6Var, sticker.sticker, 3);
-        jVar.m20297I(1);
-        this.f22304a.m20231r(jVar);
+        jVar.m20298I(1);
+        this.f22307a.m20232r(jVar);
         m18063j();
     }
 
@@ -86,7 +86,7 @@ public class C7027t extends FrameLayout implements C3950k.AbstractC3952b, Abstra
 
     @Override
     public void mo35Y0(int i, float f, C3950k kVar) {
-        C3953l.m29526a(this, i, f, kVar);
+        C3953l.m29528a(this, i, f, kVar);
     }
 
     @Override
@@ -96,32 +96,32 @@ public class C7027t extends FrameLayout implements C3950k.AbstractC3952b, Abstra
 
     @Override
     public void mo8229b() {
-        this.f22298N = false;
+        this.f22301N = false;
         m18067e();
     }
 
     public final void m18067e() {
-        boolean z = this.f22298N && this.f22300P.m29584g() < 1.0f;
-        if (this.f22299O != z) {
-            this.f22299O = z;
+        boolean z = this.f22301N && this.f22303P.m29586g() < 1.0f;
+        if (this.f22302O != z) {
+            this.f22302O = z;
             if (z) {
-                this.f22304a.mo20245f();
+                this.f22307a.mo20246f();
             } else {
-                this.f22304a.mo20247b();
+                this.f22307a.mo20248b();
             }
         }
     }
 
     @Override
     public void mo8225f() {
-        this.f22298N = true;
+        this.f22301N = true;
         m18067e();
     }
 
     public void m18066g(final C10930q6 q6Var, int i, AbstractC7028a aVar, AbstractC9323v4<?> v4Var) {
-        this.f22305b = q6Var;
-        this.f22306c = aVar;
-        this.f22301Q = i;
+        this.f22308b = q6Var;
+        this.f22309c = aVar;
+        this.f22304Q = i;
         C10192g.m5782i(this, R.id.theme_color_filling, v4Var);
         q6Var.m2270r4().m14783o(new TdApi.GetAnimatedEmoji(C4779t2.f16220E.f16283a), new Client.AbstractC7865g() {
             @Override
@@ -130,63 +130,63 @@ public class C7027t extends FrameLayout implements C3950k.AbstractC3952b, Abstra
             }
         });
         if (i == 1) {
-            this.f22302R = new C7843o(getContext());
+            this.f22305R = new C7843o(getContext());
         } else if (i == 2) {
-            this.f22302R = new C7850u(getContext());
+            this.f22305R = new C7850u(getContext());
         } else if (i != 4) {
-            this.f22302R = new C7845q(getContext());
+            this.f22305R = new C7845q(getContext());
         } else {
-            this.f22302R = new C7816a(getContext());
+            this.f22305R = new C7816a(getContext());
         }
-        this.f22302R.f25109a = aVar.mo18061g();
-        addView(this.f22302R);
-        addView(this.f22302R.f25103V0, -2, -2);
-        this.f22302R.f25103V0.m12885g(false, true);
-        this.f22302R.m14948O();
+        this.f22305R.f25112a = aVar.mo18061g();
+        addView(this.f22305R);
+        addView(this.f22305R.f25106V0, -2, -2);
+        this.f22305R.f25106V0.m12884g(false, true);
+        this.f22305R.m14948O();
         if (v4Var != null) {
-            v4Var.m9163t8(this.f22302R);
+            v4Var.m9163t8(this.f22305R);
         }
     }
 
     public final void m18063j() {
-        if (this.f22303S != null) {
+        if (this.f22306S != null) {
             int measuredWidth = getMeasuredWidth() / 2;
             int measuredHeight = getMeasuredHeight() / 2;
             if (measuredWidth != 0 && measuredHeight != 0) {
-                int max = Math.max(C1357a0.m37541i(100.0f), (int) C1357a0.m37529u(this.f22303S.width));
-                int max2 = Math.max(C1357a0.m37541i(100.0f), (int) C1357a0.m37529u(this.f22303S.height));
+                int max = Math.max(C1357a0.m37544i(100.0f), (int) C1357a0.m37532u(this.f22306S.width));
+                int max2 = Math.max(C1357a0.m37544i(100.0f), (int) C1357a0.m37532u(this.f22306S.height));
                 int i = measuredWidth - (max / 2);
                 int i2 = measuredHeight - (max2 / 2);
-                this.f22304a.mo20256K0(i, i2, max + i, max2 + i2);
+                this.f22307a.mo20257K0(i, i2, max + i, max2 + i2);
             }
         }
     }
 
     public final void m18062k(boolean z) {
-        C7833i iVar = this.f22297M;
+        C7833i iVar = this.f22300M;
         if (iVar != null) {
-            this.f22302R.setListener(iVar);
-            C8105a h = this.f22297M.m14921h();
-            int i = this.f22301Q;
+            this.f22305R.setListener(iVar);
+            C8105a h = this.f22300M.m14921h();
+            int i = this.f22304Q;
             if (i == 1) {
-                ((C7843o) this.f22302R).setData((C8108c) h);
+                ((C7843o) this.f22305R).setData((C8108c) h);
             } else if (i == 2) {
-                ((C7850u) this.f22302R).setData((C8109d) h);
+                ((C7850u) this.f22305R).setData((C8109d) h);
             } else if (i != 4) {
-                ((C7845q) this.f22302R).setData(h);
+                ((C7845q) this.f22305R).setData(h);
             } else {
-                ((C7816a) this.f22302R).setData(h);
+                ((C7816a) this.f22305R).setData(h);
             }
-            this.f22302R.f25103V0.m12885g(!this.f22297M.m14915n(), !z);
+            this.f22305R.f25106V0.m12884g(!this.f22300M.m14915n(), !z);
             return;
         }
-        this.f22302R.setListener(null);
+        this.f22305R.setListener(null);
     }
 
     @Override
     public void onDraw(Canvas canvas) {
-        this.f22304a.setAlpha(1.0f - this.f22300P.m29584g());
-        this.f22304a.draw(canvas);
+        this.f22307a.setAlpha(1.0f - this.f22303P.m29586g());
+        this.f22307a.draw(canvas);
     }
 
     @Override
@@ -198,14 +198,14 @@ public class C7027t extends FrameLayout implements C3950k.AbstractC3952b, Abstra
     }
 
     public void setChart(C7833i iVar) {
-        C7833i iVar2 = this.f22297M;
+        C7833i iVar2 = this.f22300M;
         if (iVar2 != iVar) {
             if (iVar2 != null) {
                 iVar2.m14922g(this);
             }
-            this.f22297M = iVar;
+            this.f22300M = iVar;
             if (iVar != null) {
-                this.f22302R.f25103V0.f26825a = iVar.m14911r();
+                this.f22305R.f25106V0.f26828a = iVar.m14911r();
                 m18062k(false);
                 iVar.m14924e(this);
             }

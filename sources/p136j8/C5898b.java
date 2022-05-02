@@ -28,13 +28,13 @@ public final class C5898b {
         throw new IllegalArgumentException();
     }
 
-    public C5898b m21880a(C5898b bVar) {
+    public C5898b m21881a(C5898b bVar) {
         if (!this.f18798a.equals(bVar.f18798a)) {
             throw new IllegalArgumentException("GenericGFPolys do not have same GenericGF field");
-        } else if (m21876e()) {
+        } else if (m21877e()) {
             return bVar;
         } else {
-            if (bVar.m21876e()) {
+            if (bVar.m21877e()) {
                 return this;
             }
             int[] iArr = this.f18799b;
@@ -47,20 +47,20 @@ public final class C5898b {
             int length = iArr.length - iArr2.length;
             System.arraycopy(iArr, 0, iArr3, 0, length);
             for (int i = length; i < iArr.length; i++) {
-                iArr3[i] = C5897a.m21890a(iArr2[i - length], iArr[i]);
+                iArr3[i] = C5897a.m21891a(iArr2[i - length], iArr[i]);
             }
             return new C5898b(this.f18798a, iArr3);
         }
     }
 
-    public int m21879b(int i) {
+    public int m21880b(int i) {
         if (i == 0) {
-            return m21878c(0);
+            return m21879c(0);
         }
         if (i == 1) {
             int i2 = 0;
             for (int i3 : this.f18799b) {
-                i2 = C5897a.m21890a(i2, i3);
+                i2 = C5897a.m21891a(i2, i3);
             }
             return i2;
         }
@@ -68,27 +68,27 @@ public final class C5898b {
         int i4 = iArr[0];
         int length = iArr.length;
         for (int i5 = 1; i5 < length; i5++) {
-            i4 = C5897a.m21890a(this.f18798a.m21881j(i, i4), this.f18799b[i5]);
+            i4 = C5897a.m21891a(this.f18798a.m21882j(i, i4), this.f18799b[i5]);
         }
         return i4;
     }
 
-    public int m21878c(int i) {
+    public int m21879c(int i) {
         int[] iArr = this.f18799b;
         return iArr[(iArr.length - 1) - i];
     }
 
-    public int m21877d() {
+    public int m21878d() {
         return this.f18799b.length - 1;
     }
 
-    public boolean m21876e() {
+    public boolean m21877e() {
         return this.f18799b[0] == 0;
     }
 
-    public C5898b m21875f(int i) {
+    public C5898b m21876f(int i) {
         if (i == 0) {
-            return this.f18798a.m21884g();
+            return this.f18798a.m21885g();
         }
         if (i == 1) {
             return this;
@@ -96,16 +96,16 @@ public final class C5898b {
         int length = this.f18799b.length;
         int[] iArr = new int[length];
         for (int i2 = 0; i2 < length; i2++) {
-            iArr[i2] = this.f18798a.m21881j(this.f18799b[i2], i);
+            iArr[i2] = this.f18798a.m21882j(this.f18799b[i2], i);
         }
         return new C5898b(this.f18798a, iArr);
     }
 
-    public C5898b m21874g(C5898b bVar) {
+    public C5898b m21875g(C5898b bVar) {
         if (!this.f18798a.equals(bVar.f18798a)) {
             throw new IllegalArgumentException("GenericGFPolys do not have same GenericGF field");
-        } else if (m21876e() || bVar.m21876e()) {
-            return this.f18798a.m21884g();
+        } else if (m21877e() || bVar.m21877e()) {
+            return this.f18798a.m21885g();
         } else {
             int[] iArr = this.f18799b;
             int length = iArr.length;
@@ -116,38 +116,38 @@ public final class C5898b {
                 int i2 = iArr[i];
                 for (int i3 = 0; i3 < length2; i3++) {
                     int i4 = i + i3;
-                    iArr3[i4] = C5897a.m21890a(iArr3[i4], this.f18798a.m21881j(i2, iArr2[i3]));
+                    iArr3[i4] = C5897a.m21891a(iArr3[i4], this.f18798a.m21882j(i2, iArr2[i3]));
                 }
             }
             return new C5898b(this.f18798a, iArr3);
         }
     }
 
-    public C5898b m21873h(int i, int i2) {
+    public C5898b m21874h(int i, int i2) {
         if (i < 0) {
             throw new IllegalArgumentException();
         } else if (i2 == 0) {
-            return this.f18798a.m21884g();
+            return this.f18798a.m21885g();
         } else {
             int length = this.f18799b.length;
             int[] iArr = new int[i + length];
             for (int i3 = 0; i3 < length; i3++) {
-                iArr[i3] = this.f18798a.m21881j(this.f18799b[i3], i2);
+                iArr[i3] = this.f18798a.m21882j(this.f18799b[i3], i2);
             }
             return new C5898b(this.f18798a, iArr);
         }
     }
 
     public String toString() {
-        if (m21876e()) {
+        if (m21877e()) {
             return "0";
         }
-        StringBuilder sb2 = new StringBuilder(m21877d() * 8);
-        for (int d = m21877d(); d >= 0; d--) {
-            int c = m21878c(d);
+        StringBuilder sb2 = new StringBuilder(m21878d() * 8);
+        for (int d = m21878d(); d >= 0; d--) {
+            int c = m21879c(d);
             if (c != 0) {
                 if (c < 0) {
-                    if (d == m21877d()) {
+                    if (d == m21878d()) {
                         sb2.append("-");
                     } else {
                         sb2.append(" - ");
@@ -157,7 +157,7 @@ public final class C5898b {
                     sb2.append(" + ");
                 }
                 if (d == 0 || c != 1) {
-                    int i = this.f18798a.m21882i(c);
+                    int i = this.f18798a.m21883i(c);
                     if (i == 0) {
                         sb2.append('1');
                     } else if (i == 1) {

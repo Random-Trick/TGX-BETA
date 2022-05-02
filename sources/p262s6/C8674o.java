@@ -6,7 +6,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 
 public final class C8674o {
-    public static void m11765a(PackageManager packageManager, ComponentName componentName, int i) {
+    public static void m11764a(PackageManager packageManager, ComponentName componentName, int i) {
         ComponentInfo componentInfo;
         int componentEnabledSetting = packageManager.getComponentEnabledSetting(componentName);
         if (componentEnabledSetting != 1) {

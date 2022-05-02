@@ -16,13 +16,13 @@ class C5469H implements Iterator, Consumer {
     @Override
     public boolean hasNext() {
         if (!this.f17934a) {
-            this.f17936c.mo22124a(this);
+            this.f17936c.mo22125a(this);
         }
         return this.f17934a;
     }
 
     @Override
-    public void mo22128k(Object obj) {
+    public void mo22129k(Object obj) {
         this.f17934a = true;
         this.f17935b = obj;
     }

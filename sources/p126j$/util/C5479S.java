@@ -20,8 +20,8 @@ public final class C5479S implements AbstractC5462A {
     }
 
     @Override
-    public boolean mo22124a(Consumer consumer) {
-        return AbstractC5485a.m22563r(this, consumer);
+    public boolean mo22125a(Consumer consumer) {
+        return AbstractC5485a.m22564r(this, consumer);
     }
 
     @Override
@@ -36,12 +36,12 @@ public final class C5479S implements AbstractC5462A {
 
     @Override
     public void forEachRemaining(Consumer consumer) {
-        AbstractC5485a.m22571d(this, consumer);
+        AbstractC5485a.m22572d(this, consumer);
     }
 
     @Override
     public Comparator getComparator() {
-        if (AbstractC5485a.m22568j(this, 4)) {
+        if (AbstractC5485a.m22569j(this, 4)) {
             return null;
         }
         throw new IllegalStateException();
@@ -49,12 +49,12 @@ public final class C5479S implements AbstractC5462A {
 
     @Override
     public long getExactSizeIfKnown() {
-        return AbstractC5485a.m22569h(this);
+        return AbstractC5485a.m22570h(this);
     }
 
     @Override
     public boolean hasCharacteristics(int i) {
-        return AbstractC5485a.m22568j(this, i);
+        return AbstractC5485a.m22569j(this, i);
     }
 
     @Override
@@ -66,7 +66,7 @@ public final class C5479S implements AbstractC5462A {
         }
         int[] iArr = this.f17954a;
         this.f17955b = i + 1;
-        lVar.mo22144d(iArr[i]);
+        lVar.mo22145d(iArr[i]);
         return true;
     }
 
@@ -81,7 +81,7 @@ public final class C5479S implements AbstractC5462A {
             this.f17955b = i2;
             if (i < i2) {
                 do {
-                    lVar.mo22144d(iArr[i]);
+                    lVar.mo22145d(iArr[i]);
                     i++;
                 } while (i < i2);
             }

@@ -10,29 +10,29 @@ public abstract class AbstractC5729k2 implements AbstractC5749o2 {
         this.f18413a = q2Var;
     }
 
-    public void mo22128k(Integer num) {
-        AbstractC5572D0.m22417k(this, num);
+    public void mo22129k(Integer num) {
+        AbstractC5572D0.m22418k(this, num);
     }
 
     @Override
-    public void mo22135c(double d) {
-        AbstractC5572D0.m22421i();
+    public void mo22136c(double d) {
+        AbstractC5572D0.m22422i();
         throw null;
     }
 
     @Override
-    public void mo22133e(long j) {
-        AbstractC5572D0.m22412n();
+    public void mo22134e(long j) {
+        AbstractC5572D0.m22413n();
         throw null;
     }
 
     @Override
-    public void mo22132h() {
-        this.f18413a.mo22132h();
+    public void mo22133h() {
+        this.f18413a.mo22133h();
     }
 
     @Override
-    public boolean mo22130t() {
-        return this.f18413a.mo22130t();
+    public boolean mo22131t() {
+        return this.f18413a.mo22131t();
     }
 }

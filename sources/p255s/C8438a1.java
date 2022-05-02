@@ -14,17 +14,17 @@ import p336y.AbstractC10273n2;
 import p336y.AbstractC10318y;
 
 public final class C8438a1 implements AbstractC10318y {
-    public final Map<String, C8502i2> f27401a;
-    public final AbstractC8447c f27402b;
+    public final Map<String, C8502i2> f27404a;
+    public final AbstractC8447c f27405b;
 
     public class C8439a implements AbstractC8447c {
         @Override
-        public CamcorderProfile mo12445a(int i, int i2) {
+        public CamcorderProfile mo12444a(int i, int i2) {
             return CamcorderProfile.get(i, i2);
         }
 
         @Override
-        public boolean mo12444b(int i, int i2) {
+        public boolean mo12443b(int i, int i2) {
             return CamcorderProfile.hasProfile(i, i2);
         }
     }
@@ -35,40 +35,40 @@ public final class C8438a1 implements AbstractC10318y {
 
     @Override
     public AbstractC10231g2 mo5478a(String str, int i, Size size) {
-        C8502i2 i2Var = this.f27401a.get(str);
+        C8502i2 i2Var = this.f27404a.get(str);
         if (i2Var != null) {
-            return i2Var.m12291L(i, size);
+            return i2Var.m12290L(i, size);
         }
         return null;
     }
 
     @Override
     public Map<AbstractC10273n2<?>, Size> mo5477b(String str, List<AbstractC10231g2> list, List<AbstractC10273n2<?>> list2) {
-        C1132h.m38325b(!list2.isEmpty(), "No new use cases to be bound.");
-        C8502i2 i2Var = this.f27401a.get(str);
+        C1132h.m38328b(!list2.isEmpty(), "No new use cases to be bound.");
+        C8502i2 i2Var = this.f27404a.get(str);
         if (i2Var != null) {
-            return i2Var.m12266y(list, list2);
+            return i2Var.m12265y(list, list2);
         }
         throw new IllegalArgumentException("No such camera id in supported combination list: " + str);
     }
 
-    public final void m12447c(Context context, C8906m0 m0Var, Set<String> set) {
-        C1132h.m38322e(context);
+    public final void m12446c(Context context, C8906m0 m0Var, Set<String> set) {
+        C1132h.m38325e(context);
         for (String str : set) {
-            this.f27401a.put(str, new C8502i2(context, str, m0Var, this.f27402b));
+            this.f27404a.put(str, new C8502i2(context, str, m0Var, this.f27405b));
         }
     }
 
     public C8438a1(Context context, AbstractC8447c cVar, Object obj, Set<String> set) {
         C8906m0 m0Var;
-        this.f27401a = new HashMap();
-        C1132h.m38322e(cVar);
-        this.f27402b = cVar;
+        this.f27404a = new HashMap();
+        C1132h.m38325e(cVar);
+        this.f27405b = cVar;
         if (obj instanceof C8906m0) {
             m0Var = (C8906m0) obj;
         } else {
-            m0Var = C8906m0.m10981a(context);
+            m0Var = C8906m0.m10980a(context);
         }
-        m12447c(context, m0Var, set);
+        m12446c(context, m0Var, set);
     }
 }

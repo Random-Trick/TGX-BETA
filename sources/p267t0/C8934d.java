@@ -12,29 +12,29 @@ import p256s0.C8614h;
 import p352z0.C11216f;
 
 public class C8934d {
-    public static final C8941j f28796a;
-    public static final C6036f<String, Typeface> f28797b;
+    public static final C8941j f28799a;
+    public static final C6036f<String, Typeface> f28800b;
 
     public static class C8935a extends C11216f.C11219c {
-        public C8614h.AbstractC8618d f28798a;
+        public C8614h.AbstractC8618d f28801a;
 
         public C8935a(C8614h.AbstractC8618d dVar) {
-            this.f28798a = dVar;
+            this.f28801a = dVar;
         }
 
         @Override
         public void mo1195a(int i) {
-            C8614h.AbstractC8618d dVar = this.f28798a;
+            C8614h.AbstractC8618d dVar = this.f28801a;
             if (dVar != null) {
-                dVar.mo11908d(i);
+                dVar.mo11907d(i);
             }
         }
 
         @Override
         public void mo1194b(Typeface typeface) {
-            C8614h.AbstractC8618d dVar = this.f28798a;
+            C8614h.AbstractC8618d dVar = this.f28801a;
             if (dVar != null) {
-                dVar.mo11907e(typeface);
+                dVar.mo11906e(typeface);
             }
         }
     }
@@ -42,87 +42,87 @@ public class C8934d {
     static {
         int i = Build.VERSION.SDK_INT;
         if (i >= 29) {
-            f28796a = new C8940i();
+            f28799a = new C8940i();
         } else if (i >= 28) {
-            f28796a = new C8939h();
+            f28799a = new C8939h();
         } else if (i >= 26) {
-            f28796a = new C8938g();
-        } else if (i >= 24 && C8937f.m10897m()) {
-            f28796a = new C8937f();
+            f28799a = new C8938g();
+        } else if (i >= 24 && C8937f.m10896m()) {
+            f28799a = new C8937f();
         } else if (i >= 21) {
-            f28796a = new C8936e();
+            f28799a = new C8936e();
         } else {
-            f28796a = new C8941j();
+            f28799a = new C8941j();
         }
-        f28797b = new C6036f<>(16);
+        f28800b = new C6036f<>(16);
     }
 
-    public static Typeface m10912a(Context context, Typeface typeface, int i) {
+    public static Typeface m10911a(Context context, Typeface typeface, int i) {
         Typeface g;
         if (context != null) {
-            return (Build.VERSION.SDK_INT >= 21 || (g = m10906g(context, typeface, i)) == null) ? Typeface.create(typeface, i) : g;
+            return (Build.VERSION.SDK_INT >= 21 || (g = m10905g(context, typeface, i)) == null) ? Typeface.create(typeface, i) : g;
         }
         throw new IllegalArgumentException("Context cannot be null");
     }
 
-    public static Typeface m10911b(Context context, CancellationSignal cancellationSignal, C11216f.C11218b[] bVarArr, int i) {
-        return f28796a.mo10879c(context, cancellationSignal, bVarArr, i);
+    public static Typeface m10910b(Context context, CancellationSignal cancellationSignal, C11216f.C11218b[] bVarArr, int i) {
+        return f28799a.mo10878c(context, cancellationSignal, bVarArr, i);
     }
 
-    public static Typeface m10910c(Context context, C8606e.AbstractC8607a aVar, Resources resources, int i, int i2, C8614h.AbstractC8618d dVar, Handler handler, boolean z) {
+    public static Typeface m10909c(Context context, C8606e.AbstractC8607a aVar, Resources resources, int i, int i2, C8614h.AbstractC8618d dVar, Handler handler, boolean z) {
         Typeface typeface;
         if (aVar instanceof C8606e.C8610d) {
             C8606e.C8610d dVar2 = (C8606e.C8610d) aVar;
-            Typeface h = m10905h(dVar2.m11931c());
+            Typeface h = m10904h(dVar2.m11930c());
             if (h != null) {
                 if (dVar != null) {
-                    dVar.m11910b(h, handler);
+                    dVar.m11909b(h, handler);
                 }
                 return h;
             }
-            typeface = C11216f.m1205a(context, dVar2.m11932b(), i2, !z ? dVar == null : dVar2.m11933a() == 0, z ? dVar2.m11930d() : -1, C8614h.AbstractC8618d.m11909c(handler), new C8935a(dVar));
+            typeface = C11216f.m1205a(context, dVar2.m11931b(), i2, !z ? dVar == null : dVar2.m11932a() == 0, z ? dVar2.m11929d() : -1, C8614h.AbstractC8618d.m11908c(handler), new C8935a(dVar));
         } else {
-            typeface = f28796a.mo10880b(context, (C8606e.C8608b) aVar, resources, i2);
+            typeface = f28799a.mo10879b(context, (C8606e.C8608b) aVar, resources, i2);
             if (dVar != null) {
                 if (typeface != null) {
-                    dVar.m11910b(typeface, handler);
+                    dVar.m11909b(typeface, handler);
                 } else {
-                    dVar.m11911a(-3, handler);
+                    dVar.m11910a(-3, handler);
                 }
             }
         }
         if (typeface != null) {
-            f28797b.m21491d(m10908e(resources, i, i2), typeface);
+            f28800b.m21492d(m10907e(resources, i, i2), typeface);
         }
         return typeface;
     }
 
-    public static Typeface m10909d(Context context, Resources resources, int i, String str, int i2) {
-        Typeface e = f28796a.mo10877e(context, resources, i, str, i2);
+    public static Typeface m10908d(Context context, Resources resources, int i, String str, int i2) {
+        Typeface e = f28799a.mo10876e(context, resources, i, str, i2);
         if (e != null) {
-            f28797b.m21491d(m10908e(resources, i, i2), e);
+            f28800b.m21492d(m10907e(resources, i, i2), e);
         }
         return e;
     }
 
-    public static String m10908e(Resources resources, int i, int i2) {
+    public static String m10907e(Resources resources, int i, int i2) {
         return resources.getResourcePackageName(i) + "-" + i + "-" + i2;
     }
 
-    public static Typeface m10907f(Resources resources, int i, int i2) {
-        return f28797b.m21492c(m10908e(resources, i, i2));
+    public static Typeface m10906f(Resources resources, int i, int i2) {
+        return f28800b.m21493c(m10907e(resources, i, i2));
     }
 
-    public static Typeface m10906g(Context context, Typeface typeface, int i) {
-        C8941j jVar = f28796a;
-        C8606e.C8608b i2 = jVar.m10873i(typeface);
+    public static Typeface m10905g(Context context, Typeface typeface, int i) {
+        C8941j jVar = f28799a;
+        C8606e.C8608b i2 = jVar.m10872i(typeface);
         if (i2 == null) {
             return null;
         }
-        return jVar.mo10880b(context, i2, context.getResources(), i);
+        return jVar.mo10879b(context, i2, context.getResources(), i);
     }
 
-    public static Typeface m10905h(String str) {
+    public static Typeface m10904h(String str) {
         if (str == null || str.isEmpty()) {
             return null;
         }

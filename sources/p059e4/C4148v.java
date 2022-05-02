@@ -68,15 +68,15 @@ public final class C4148v {
     }
 
     public interface AbstractC4152d {
-        MediaCodecInfo mo28673a(int i);
+        MediaCodecInfo mo28675a(int i);
 
-        boolean mo28672b(String str, String str2, MediaCodecInfo.CodecCapabilities codecCapabilities);
+        boolean mo28674b(String str, String str2, MediaCodecInfo.CodecCapabilities codecCapabilities);
 
-        boolean mo28671c(String str, String str2, MediaCodecInfo.CodecCapabilities codecCapabilities);
+        boolean mo28673c(String str, String str2, MediaCodecInfo.CodecCapabilities codecCapabilities);
 
-        int mo28670d();
+        int mo28672d();
 
-        boolean mo28669e();
+        boolean mo28671e();
     }
 
     public static final class C4153e implements AbstractC4152d {
@@ -84,27 +84,27 @@ public final class C4148v {
         }
 
         @Override
-        public MediaCodecInfo mo28673a(int i) {
+        public MediaCodecInfo mo28675a(int i) {
             return MediaCodecList.getCodecInfoAt(i);
         }
 
         @Override
-        public boolean mo28672b(String str, String str2, MediaCodecInfo.CodecCapabilities codecCapabilities) {
+        public boolean mo28674b(String str, String str2, MediaCodecInfo.CodecCapabilities codecCapabilities) {
             return "secure-playback".equals(str) && "video/avc".equals(str2);
         }
 
         @Override
-        public boolean mo28671c(String str, String str2, MediaCodecInfo.CodecCapabilities codecCapabilities) {
+        public boolean mo28673c(String str, String str2, MediaCodecInfo.CodecCapabilities codecCapabilities) {
             return false;
         }
 
         @Override
-        public int mo28670d() {
+        public int mo28672d() {
             return MediaCodecList.getCodecCount();
         }
 
         @Override
-        public boolean mo28669e() {
+        public boolean mo28671e() {
             return false;
         }
     }
@@ -118,34 +118,34 @@ public final class C4148v {
         }
 
         @Override
-        public MediaCodecInfo mo28673a(int i) {
-            m28668f();
+        public MediaCodecInfo mo28675a(int i) {
+            m28670f();
             return this.f14052b[i];
         }
 
         @Override
-        public boolean mo28672b(String str, String str2, MediaCodecInfo.CodecCapabilities codecCapabilities) {
+        public boolean mo28674b(String str, String str2, MediaCodecInfo.CodecCapabilities codecCapabilities) {
             return codecCapabilities.isFeatureSupported(str);
         }
 
         @Override
-        public boolean mo28671c(String str, String str2, MediaCodecInfo.CodecCapabilities codecCapabilities) {
+        public boolean mo28673c(String str, String str2, MediaCodecInfo.CodecCapabilities codecCapabilities) {
             return codecCapabilities.isFeatureRequired(str);
         }
 
         @Override
-        public int mo28670d() {
-            m28668f();
+        public int mo28672d() {
+            m28670f();
             return this.f14052b.length;
         }
 
         @Override
-        public boolean mo28669e() {
+        public boolean mo28671e() {
             return true;
         }
 
         @EnsuresNonNull({"mediaCodecInfos"})
-        public final void m28668f() {
+        public final void m28670f() {
             if (this.f14052b == null) {
                 this.f14052b = new MediaCodecList(this.f14051a).getCodecInfos();
             }
@@ -153,14 +153,14 @@ public final class C4148v {
     }
 
     public interface AbstractC4155g<T> {
-        int mo28667a(T t);
+        int mo28669a(T t);
     }
 
-    public static boolean m28716A(MediaCodecInfo mediaCodecInfo) {
+    public static boolean m28718A(MediaCodecInfo mediaCodecInfo) {
         return mediaCodecInfo.isAlias();
     }
 
-    public static boolean m28715B(MediaCodecInfo mediaCodecInfo, String str, boolean z, String str2) {
+    public static boolean m28717B(MediaCodecInfo mediaCodecInfo, String str, boolean z, String str2) {
         if (mediaCodecInfo.isEncoder() || (!z && str.endsWith(".secure"))) {
             return false;
         }
@@ -204,20 +204,20 @@ public final class C4148v {
         return false;
     }
 
-    public static boolean m28714C(MediaCodecInfo mediaCodecInfo) {
+    public static boolean m28716C(MediaCodecInfo mediaCodecInfo) {
         if (C1216l0.f4526a >= 29) {
-            return m28713D(mediaCodecInfo);
+            return m28715D(mediaCodecInfo);
         }
-        return !m28712E(mediaCodecInfo);
+        return !m28714E(mediaCodecInfo);
     }
 
-    public static boolean m28713D(MediaCodecInfo mediaCodecInfo) {
+    public static boolean m28715D(MediaCodecInfo mediaCodecInfo) {
         return mediaCodecInfo.isHardwareAccelerated();
     }
 
-    public static boolean m28712E(MediaCodecInfo mediaCodecInfo) {
+    public static boolean m28714E(MediaCodecInfo mediaCodecInfo) {
         if (C1216l0.f4526a >= 29) {
-            return m28711F(mediaCodecInfo);
+            return m28713F(mediaCodecInfo);
         }
         String c = C10422b.m5149c(mediaCodecInfo.getName());
         if (c.startsWith("arc.")) {
@@ -226,23 +226,23 @@ public final class C4148v {
         return c.startsWith("omx.google.") || c.startsWith("omx.ffmpeg.") || (c.startsWith("omx.sec.") && c.contains(".sw.")) || c.equals("omx.qcom.video.decoder.hevcswvdec") || c.startsWith("c2.android.") || c.startsWith("c2.google.") || (!c.startsWith("omx.") && !c.startsWith("c2."));
     }
 
-    public static boolean m28711F(MediaCodecInfo mediaCodecInfo) {
+    public static boolean m28713F(MediaCodecInfo mediaCodecInfo) {
         return mediaCodecInfo.isSoftwareOnly();
     }
 
-    public static boolean m28710G(MediaCodecInfo mediaCodecInfo) {
+    public static boolean m28712G(MediaCodecInfo mediaCodecInfo) {
         if (C1216l0.f4526a >= 29) {
-            return m28709H(mediaCodecInfo);
+            return m28711H(mediaCodecInfo);
         }
         String c = C10422b.m5149c(mediaCodecInfo.getName());
         return !c.startsWith("omx.google.") && !c.startsWith("c2.android.") && !c.startsWith("c2.google.");
     }
 
-    public static boolean m28709H(MediaCodecInfo mediaCodecInfo) {
+    public static boolean m28711H(MediaCodecInfo mediaCodecInfo) {
         return mediaCodecInfo.isVendor();
     }
 
-    public static int m28708I(C4139n nVar) {
+    public static int m28710I(C4139n nVar) {
         String str = nVar.f13952a;
         if (str.startsWith("OMX.google") || str.startsWith("c2.android")) {
             return 1;
@@ -250,32 +250,32 @@ public final class C4148v {
         return (C1216l0.f4526a >= 26 || !str.equals("OMX.MTK.AUDIO.DECODER.RAW")) ? 0 : -1;
     }
 
-    public static int m28707J(C4139n nVar) {
+    public static int m28709J(C4139n nVar) {
         return nVar.f13952a.startsWith("OMX.google") ? 1 : 0;
     }
 
-    public static int m28706K(C6600g1 g1Var, C4139n nVar) {
+    public static int m28708K(C6600g1 g1Var, C4139n nVar) {
         try {
-            return nVar.m28795m(g1Var) ? 1 : 0;
+            return nVar.m28797m(g1Var) ? 1 : 0;
         } catch (C4151c unused) {
             return -1;
         }
     }
 
-    public static int m28705L(AbstractC4155g gVar, Object obj, Object obj2) {
-        return gVar.mo28667a(obj2) - gVar.mo28667a(obj);
+    public static int m28707L(AbstractC4155g gVar, Object obj, Object obj2) {
+        return gVar.mo28669a(obj2) - gVar.mo28669a(obj);
     }
 
-    public static int m28704M() {
+    public static int m28706M() {
         if (f14047c == -1) {
             int i = 0;
-            C4139n q = m28683q("video/avc", false, false);
+            C4139n q = m28685q("video/avc", false, false);
             if (q != null) {
-                MediaCodecInfo.CodecProfileLevel[] g = q.m28801g();
+                MediaCodecInfo.CodecProfileLevel[] g = q.m28803g();
                 int length = g.length;
                 int i2 = 0;
                 while (i < length) {
-                    i2 = Math.max(m28692h(g[i].level), i2);
+                    i2 = Math.max(m28694h(g[i].level), i2);
                     i++;
                 }
                 i = Math.max(i2, C1216l0.f4526a >= 21 ? 345600 : 172800);
@@ -285,7 +285,7 @@ public final class C4148v {
         return f14047c;
     }
 
-    public static int m28703N(int i) {
+    public static int m28705N(int i) {
         int i2 = 17;
         if (i != 17) {
             i2 = 20;
@@ -323,18 +323,18 @@ public final class C4148v {
         return i2;
     }
 
-    public static <T> void m28702O(List<T> list, final AbstractC4155g<T> gVar) {
+    public static <T> void m28704O(List<T> list, final AbstractC4155g<T> gVar) {
         Collections.sort(list, new Comparator() {
             @Override
             public final int compare(Object obj, Object obj2) {
                 int L;
-                L = C4148v.m28705L(C4148v.AbstractC4155g.this, obj, obj2);
+                L = C4148v.m28707L(C4148v.AbstractC4155g.this, obj, obj2);
                 return L;
             }
         });
     }
 
-    public static int m28701P(int i) {
+    public static int m28703P(int i) {
         if (i == 10) {
             return 1;
         }
@@ -377,7 +377,7 @@ public final class C4148v {
         }
     }
 
-    public static int m28700Q(int i) {
+    public static int m28702Q(int i) {
         if (i == 0) {
             return 1;
         }
@@ -390,18 +390,18 @@ public final class C4148v {
         return 4;
     }
 
-    public static void m28695e(String str, List<C4139n> list) {
+    public static void m28697e(String str, List<C4139n> list) {
         if ("audio/raw".equals(str)) {
             if (C1216l0.f4526a < 26 && C1216l0.f4527b.equals("R9") && list.size() == 1 && list.get(0).f13952a.equals("OMX.MTK.AUDIO.DECODER.RAW")) {
-                list.add(C4139n.m28808A("OMX.google.raw.decoder", "audio/raw", "audio/raw", null, false, true, false, false, false));
+                list.add(C4139n.m28810A("OMX.google.raw.decoder", "audio/raw", "audio/raw", null, false, true, false, false, false));
             }
-            m28702O(list, C4145s.f14042a);
+            m28704O(list, C4145s.f14042a);
         }
         int i = C1216l0.f4526a;
         if (i < 21 && list.size() > 1) {
             String str2 = list.get(0).f13952a;
             if ("OMX.SEC.mp3.dec".equals(str2) || "OMX.SEC.MP3.Decoder".equals(str2) || "OMX.brcm.audio.mp3.decoder".equals(str2)) {
-                m28702O(list, C4146t.f14043a);
+                m28704O(list, C4146t.f14043a);
             }
         }
         if (i < 32 && list.size() > 1 && "OMX.qti.audio.decoder.flac".equals(list.get(0).f13952a)) {
@@ -409,7 +409,7 @@ public final class C4148v {
         }
     }
 
-    public static int m28694f(int i) {
+    public static int m28696f(int i) {
         switch (i) {
             case 0:
                 return 1;
@@ -464,7 +464,7 @@ public final class C4148v {
         }
     }
 
-    public static int m28693g(int i) {
+    public static int m28695g(int i) {
         switch (i) {
             case 10:
                 return 1;
@@ -515,7 +515,7 @@ public final class C4148v {
         }
     }
 
-    public static int m28692h(int i) {
+    public static int m28694h(int i) {
         if (i == 1 || i == 2) {
             return 25344;
         }
@@ -552,7 +552,7 @@ public final class C4148v {
         }
     }
 
-    public static int m28691i(int i) {
+    public static int m28693i(int i) {
         if (i == 66) {
             return 1;
         }
@@ -574,7 +574,7 @@ public final class C4148v {
         return 32;
     }
 
-    public static Integer m28690j(String str) {
+    public static Integer m28692j(String str) {
         if (str == null) {
             return null;
         }
@@ -691,7 +691,7 @@ public final class C4148v {
         }
     }
 
-    public static Integer m28689k(String str) {
+    public static Integer m28691k(String str) {
         if (str == null) {
             return null;
         }
@@ -784,29 +784,29 @@ public final class C4148v {
         }
     }
 
-    public static Pair<Integer, Integer> m28688l(String str, String[] strArr) {
+    public static Pair<Integer, Integer> m28690l(String str, String[] strArr) {
         int N;
         if (strArr.length != 3) {
             String valueOf = String.valueOf(str);
-            C1230s.m37881i("MediaCodecUtil", valueOf.length() != 0 ? "Ignoring malformed MP4A codec string: ".concat(valueOf) : new String("Ignoring malformed MP4A codec string: "));
+            C1230s.m37884i("MediaCodecUtil", valueOf.length() != 0 ? "Ignoring malformed MP4A codec string: ".concat(valueOf) : new String("Ignoring malformed MP4A codec string: "));
             return null;
         }
         try {
-            if ("audio/mp4a-latm".equals(C1234w.m37866e(Integer.parseInt(strArr[1], 16))) && (N = m28703N(Integer.parseInt(strArr[2]))) != -1) {
+            if ("audio/mp4a-latm".equals(C1234w.m37869e(Integer.parseInt(strArr[1], 16))) && (N = m28705N(Integer.parseInt(strArr[2]))) != -1) {
                 return new Pair<>(Integer.valueOf(N), 0);
             }
         } catch (NumberFormatException unused) {
             String valueOf2 = String.valueOf(str);
-            C1230s.m37881i("MediaCodecUtil", valueOf2.length() != 0 ? "Ignoring malformed MP4A codec string: ".concat(valueOf2) : new String("Ignoring malformed MP4A codec string: "));
+            C1230s.m37884i("MediaCodecUtil", valueOf2.length() != 0 ? "Ignoring malformed MP4A codec string: ".concat(valueOf2) : new String("Ignoring malformed MP4A codec string: "));
         }
         return null;
     }
 
-    public static Pair<Integer, Integer> m28687m(String str, String[] strArr, C1608c cVar) {
+    public static Pair<Integer, Integer> m28689m(String str, String[] strArr, C1608c cVar) {
         int i;
         if (strArr.length < 4) {
             String valueOf = String.valueOf(str);
-            C1230s.m37881i("MediaCodecUtil", valueOf.length() != 0 ? "Ignoring malformed AV1 codec string: ".concat(valueOf) : new String("Ignoring malformed AV1 codec string: "));
+            C1230s.m37884i("MediaCodecUtil", valueOf.length() != 0 ? "Ignoring malformed AV1 codec string: ".concat(valueOf) : new String("Ignoring malformed AV1 codec string: "));
             return null;
         }
         int i2 = 1;
@@ -818,41 +818,41 @@ public final class C4148v {
                 StringBuilder sb2 = new StringBuilder(32);
                 sb2.append("Unknown AV1 profile: ");
                 sb2.append(parseInt);
-                C1230s.m37881i("MediaCodecUtil", sb2.toString());
+                C1230s.m37884i("MediaCodecUtil", sb2.toString());
                 return null;
             } else if (parseInt3 == 8 || parseInt3 == 10) {
                 if (parseInt3 != 8) {
                     i2 = (cVar == null || !(cVar.f5890M != null || (i = cVar.f5894c) == 7 || i == 6)) ? 2 : Log.TAG_EMOJI;
                 }
-                int f = m28694f(parseInt2);
+                int f = m28696f(parseInt2);
                 if (f != -1) {
                     return new Pair<>(Integer.valueOf(i2), Integer.valueOf(f));
                 }
                 StringBuilder sb3 = new StringBuilder(30);
                 sb3.append("Unknown AV1 level: ");
                 sb3.append(parseInt2);
-                C1230s.m37881i("MediaCodecUtil", sb3.toString());
+                C1230s.m37884i("MediaCodecUtil", sb3.toString());
                 return null;
             } else {
                 StringBuilder sb4 = new StringBuilder(34);
                 sb4.append("Unknown AV1 bit depth: ");
                 sb4.append(parseInt3);
-                C1230s.m37881i("MediaCodecUtil", sb4.toString());
+                C1230s.m37884i("MediaCodecUtil", sb4.toString());
                 return null;
             }
         } catch (NumberFormatException unused) {
             String valueOf2 = String.valueOf(str);
-            C1230s.m37881i("MediaCodecUtil", valueOf2.length() != 0 ? "Ignoring malformed AV1 codec string: ".concat(valueOf2) : new String("Ignoring malformed AV1 codec string: "));
+            C1230s.m37884i("MediaCodecUtil", valueOf2.length() != 0 ? "Ignoring malformed AV1 codec string: ".concat(valueOf2) : new String("Ignoring malformed AV1 codec string: "));
             return null;
         }
     }
 
-    public static Pair<Integer, Integer> m28686n(String str, String[] strArr) {
+    public static Pair<Integer, Integer> m28688n(String str, String[] strArr) {
         int i;
         int i2;
         if (strArr.length < 2) {
             String valueOf = String.valueOf(str);
-            C1230s.m37881i("MediaCodecUtil", valueOf.length() != 0 ? "Ignoring malformed AVC codec string: ".concat(valueOf) : new String("Ignoring malformed AVC codec string: "));
+            C1230s.m37884i("MediaCodecUtil", valueOf.length() != 0 ? "Ignoring malformed AVC codec string: ".concat(valueOf) : new String("Ignoring malformed AVC codec string: "));
             return null;
         }
         try {
@@ -864,34 +864,34 @@ public final class C4148v {
                 i = Integer.parseInt(strArr[2]);
             } else {
                 String valueOf2 = String.valueOf(str);
-                C1230s.m37881i("MediaCodecUtil", valueOf2.length() != 0 ? "Ignoring malformed AVC codec string: ".concat(valueOf2) : new String("Ignoring malformed AVC codec string: "));
+                C1230s.m37884i("MediaCodecUtil", valueOf2.length() != 0 ? "Ignoring malformed AVC codec string: ".concat(valueOf2) : new String("Ignoring malformed AVC codec string: "));
                 return null;
             }
-            int i3 = m28691i(i2);
+            int i3 = m28693i(i2);
             if (i3 == -1) {
                 StringBuilder sb2 = new StringBuilder(32);
                 sb2.append("Unknown AVC profile: ");
                 sb2.append(i2);
-                C1230s.m37881i("MediaCodecUtil", sb2.toString());
+                C1230s.m37884i("MediaCodecUtil", sb2.toString());
                 return null;
             }
-            int g = m28693g(i);
+            int g = m28695g(i);
             if (g != -1) {
                 return new Pair<>(Integer.valueOf(i3), Integer.valueOf(g));
             }
             StringBuilder sb3 = new StringBuilder(30);
             sb3.append("Unknown AVC level: ");
             sb3.append(i);
-            C1230s.m37881i("MediaCodecUtil", sb3.toString());
+            C1230s.m37884i("MediaCodecUtil", sb3.toString());
             return null;
         } catch (NumberFormatException unused) {
             String valueOf3 = String.valueOf(str);
-            C1230s.m37881i("MediaCodecUtil", valueOf3.length() != 0 ? "Ignoring malformed AVC codec string: ".concat(valueOf3) : new String("Ignoring malformed AVC codec string: "));
+            C1230s.m37884i("MediaCodecUtil", valueOf3.length() != 0 ? "Ignoring malformed AVC codec string: ".concat(valueOf3) : new String("Ignoring malformed AVC codec string: "));
             return null;
         }
     }
 
-    public static String m28685o(MediaCodecInfo mediaCodecInfo, String str, String str2) {
+    public static String m28687o(MediaCodecInfo mediaCodecInfo, String str, String str2) {
         String[] supportedTypes;
         for (String str3 : mediaCodecInfo.getSupportedTypes()) {
             if (str3.equalsIgnoreCase(str2)) {
@@ -916,19 +916,19 @@ public final class C4148v {
         }
     }
 
-    public static android.util.Pair<java.lang.Integer, java.lang.Integer> m28684p(p174m3.C6600g1 r6) {
-        throw new UnsupportedOperationException("Method not decompiled: p059e4.C4148v.m28684p(m3.g1):android.util.Pair");
+    public static android.util.Pair<java.lang.Integer, java.lang.Integer> m28686p(p174m3.C6600g1 r6) {
+        throw new UnsupportedOperationException("Method not decompiled: p059e4.C4148v.m28686p(m3.g1):android.util.Pair");
     }
 
-    public static C4139n m28683q(String str, boolean z, boolean z2) {
-        List<C4139n> r = m28682r(str, z, z2);
+    public static C4139n m28685q(String str, boolean z, boolean z2) {
+        List<C4139n> r = m28684r(str, z, z2);
         if (r.isEmpty()) {
             return null;
         }
         return r.get(0);
     }
 
-    public static synchronized List<C4139n> m28682r(String str, boolean z, boolean z2) {
+    public static synchronized List<C4139n> m28684r(String str, boolean z, boolean z2) {
         AbstractC4152d dVar;
         synchronized (C4148v.class) {
             C4150b bVar = new C4150b(str, z, z2);
@@ -943,9 +943,9 @@ public final class C4148v {
             } else {
                 dVar = new C4153e();
             }
-            ArrayList<C4139n> s = m28681s(bVar, dVar);
+            ArrayList<C4139n> s = m28683s(bVar, dVar);
             if (z && s.isEmpty() && 21 <= i && i <= 23) {
-                s = m28681s(bVar, new C4153e());
+                s = m28683s(bVar, new C4153e());
                 if (!s.isEmpty()) {
                     String str2 = s.get(0).f13952a;
                     StringBuilder sb2 = new StringBuilder(String.valueOf(str).length() + 63 + String.valueOf(str2).length());
@@ -953,17 +953,17 @@ public final class C4148v {
                     sb2.append(str);
                     sb2.append(". Assuming: ");
                     sb2.append(str2);
-                    C1230s.m37881i("MediaCodecUtil", sb2.toString());
+                    C1230s.m37884i("MediaCodecUtil", sb2.toString());
                 }
             }
-            m28695e(str, s);
+            m28697e(str, s);
             List<C4139n> unmodifiableList = Collections.unmodifiableList(s);
             hashMap.put(bVar, unmodifiableList);
             return unmodifiableList;
         }
     }
 
-    public static ArrayList<C4139n> m28681s(C4150b bVar, AbstractC4152d dVar) {
+    public static ArrayList<C4139n> m28683s(C4150b bVar, AbstractC4152d dVar) {
         boolean z;
         int i;
         int i2;
@@ -978,18 +978,18 @@ public final class C4148v {
         try {
             ArrayList<C4139n> arrayList = new ArrayList<>();
             String str3 = bVar.f14048a;
-            int d = dVar.mo28670d();
-            boolean e2 = dVar.mo28669e();
+            int d = dVar.mo28672d();
+            boolean e2 = dVar.mo28671e();
             int i3 = 0;
             while (i3 < d) {
-                MediaCodecInfo a = dVar.mo28673a(i3);
-                if (!m28674z(a)) {
+                MediaCodecInfo a = dVar.mo28675a(i3);
+                if (!m28676z(a)) {
                     String name = a.getName();
-                    if (m28715B(a, name, e2, str3) && (o = m28685o(a, name, str3)) != null) {
+                    if (m28717B(a, name, e2, str3) && (o = m28687o(a, name, str3)) != null) {
                         try {
                             capabilitiesForType = a.getCapabilitiesForType(o);
-                            b = dVar.mo28672b("tunneled-playback", o, capabilitiesForType);
-                            c = dVar.mo28671c("tunneled-playback", o, capabilitiesForType);
+                            b = dVar.mo28674b("tunneled-playback", o, capabilitiesForType);
+                            c = dVar.mo28673c("tunneled-playback", o, capabilitiesForType);
                             z2 = bVar.f14050c;
                         } catch (Exception e3) {
                             e = e3;
@@ -1000,13 +1000,13 @@ public final class C4148v {
                             i2 = d;
                         }
                         if ((z2 || !c) && (!z2 || b)) {
-                            boolean b2 = dVar.mo28672b("secure-playback", o, capabilitiesForType);
-                            boolean c2 = dVar.mo28671c("secure-playback", o, capabilitiesForType);
+                            boolean b2 = dVar.mo28674b("secure-playback", o, capabilitiesForType);
+                            boolean c2 = dVar.mo28673c("secure-playback", o, capabilitiesForType);
                             boolean z3 = bVar.f14049b;
                             if ((z3 || !c2) && (!z3 || b2)) {
-                                boolean C = m28714C(a);
-                                boolean E = m28712E(a);
-                                boolean G = m28710G(a);
+                                boolean C = m28716C(a);
+                                boolean E = m28714E(a);
+                                boolean G = m28712G(a);
                                 if ((!e2 || bVar.f14049b != b2) && (e2 || bVar.f14049b)) {
                                     str2 = o;
                                     str = name;
@@ -1014,7 +1014,7 @@ public final class C4148v {
                                     z = e2;
                                     i2 = d;
                                     if (!z && b2) {
-                                        arrayList.add(C4139n.m28808A(String.valueOf(str).concat(".secure"), str3, str2, capabilitiesForType, C, E, G, false, true));
+                                        arrayList.add(C4139n.m28810A(String.valueOf(str).concat(".secure"), str3, str2, capabilitiesForType, C, E, G, false, true));
                                         return arrayList;
                                     }
                                     i3 = i + 1;
@@ -1027,7 +1027,7 @@ public final class C4148v {
                                     z = e2;
                                     i2 = d;
                                     try {
-                                        arrayList.add(C4139n.m28808A(name, str3, o, capabilitiesForType, C, E, G, false, false));
+                                        arrayList.add(C4139n.m28810A(name, str3, o, capabilitiesForType, C, E, G, false, false));
                                     } catch (Exception e4) {
                                         e = e4;
                                         if (C1216l0.f4526a > 23 || arrayList.isEmpty()) {
@@ -1038,14 +1038,14 @@ public final class C4148v {
                                             sb2.append(" (");
                                             sb2.append(str2);
                                             sb2.append(")");
-                                            C1230s.m37887c("MediaCodecUtil", sb2.toString());
+                                            C1230s.m37890c("MediaCodecUtil", sb2.toString());
                                             throw e;
                                         }
                                         StringBuilder sb3 = new StringBuilder(String.valueOf(str).length() + 46);
                                         sb3.append("Skipping codec ");
                                         sb3.append(str);
                                         sb3.append(" (failed to query capabilities)");
-                                        C1230s.m37887c("MediaCodecUtil", sb3.toString());
+                                        C1230s.m37890c("MediaCodecUtil", sb3.toString());
                                         i3 = i + 1;
                                         d = i2;
                                         e2 = z;
@@ -1071,63 +1071,63 @@ public final class C4148v {
         }
     }
 
-    public static List<C4139n> m28680t(List<C4139n> list, final C6600g1 g1Var) {
+    public static List<C4139n> m28682t(List<C4139n> list, final C6600g1 g1Var) {
         ArrayList arrayList = new ArrayList(list);
-        m28702O(arrayList, new AbstractC4155g() {
+        m28704O(arrayList, new AbstractC4155g() {
             @Override
-            public final int mo28667a(Object obj) {
+            public final int mo28669a(Object obj) {
                 int K;
-                K = C4148v.m28706K(C6600g1.this, (C4139n) obj);
+                K = C4148v.m28708K(C6600g1.this, (C4139n) obj);
                 return K;
             }
         });
         return arrayList;
     }
 
-    public static C4139n m28679u() {
-        return m28683q("audio/raw", false, false);
+    public static C4139n m28681u() {
+        return m28685q("audio/raw", false, false);
     }
 
-    public static Pair<Integer, Integer> m28678v(String str, String[] strArr) {
+    public static Pair<Integer, Integer> m28680v(String str, String[] strArr) {
         if (strArr.length < 3) {
             String valueOf = String.valueOf(str);
-            C1230s.m37881i("MediaCodecUtil", valueOf.length() != 0 ? "Ignoring malformed Dolby Vision codec string: ".concat(valueOf) : new String("Ignoring malformed Dolby Vision codec string: "));
+            C1230s.m37884i("MediaCodecUtil", valueOf.length() != 0 ? "Ignoring malformed Dolby Vision codec string: ".concat(valueOf) : new String("Ignoring malformed Dolby Vision codec string: "));
             return null;
         }
         Matcher matcher = f14045a.matcher(strArr[1]);
         if (!matcher.matches()) {
             String valueOf2 = String.valueOf(str);
-            C1230s.m37881i("MediaCodecUtil", valueOf2.length() != 0 ? "Ignoring malformed Dolby Vision codec string: ".concat(valueOf2) : new String("Ignoring malformed Dolby Vision codec string: "));
+            C1230s.m37884i("MediaCodecUtil", valueOf2.length() != 0 ? "Ignoring malformed Dolby Vision codec string: ".concat(valueOf2) : new String("Ignoring malformed Dolby Vision codec string: "));
             return null;
         }
         String group = matcher.group(1);
-        Integer k = m28689k(group);
+        Integer k = m28691k(group);
         if (k == null) {
             String valueOf3 = String.valueOf(group);
-            C1230s.m37881i("MediaCodecUtil", valueOf3.length() != 0 ? "Unknown Dolby Vision profile string: ".concat(valueOf3) : new String("Unknown Dolby Vision profile string: "));
+            C1230s.m37884i("MediaCodecUtil", valueOf3.length() != 0 ? "Unknown Dolby Vision profile string: ".concat(valueOf3) : new String("Unknown Dolby Vision profile string: "));
             return null;
         }
         String str2 = strArr[2];
-        Integer j = m28690j(str2);
+        Integer j = m28692j(str2);
         if (j != null) {
             return new Pair<>(k, j);
         }
         String valueOf4 = String.valueOf(str2);
-        C1230s.m37881i("MediaCodecUtil", valueOf4.length() != 0 ? "Unknown Dolby Vision level string: ".concat(valueOf4) : new String("Unknown Dolby Vision level string: "));
+        C1230s.m37884i("MediaCodecUtil", valueOf4.length() != 0 ? "Unknown Dolby Vision level string: ".concat(valueOf4) : new String("Unknown Dolby Vision level string: "));
         return null;
     }
 
-    public static Pair<Integer, Integer> m28677w(String str, String[] strArr) {
+    public static Pair<Integer, Integer> m28679w(String str, String[] strArr) {
         if (strArr.length < 4) {
             String valueOf = String.valueOf(str);
-            C1230s.m37881i("MediaCodecUtil", valueOf.length() != 0 ? "Ignoring malformed HEVC codec string: ".concat(valueOf) : new String("Ignoring malformed HEVC codec string: "));
+            C1230s.m37884i("MediaCodecUtil", valueOf.length() != 0 ? "Ignoring malformed HEVC codec string: ".concat(valueOf) : new String("Ignoring malformed HEVC codec string: "));
             return null;
         }
         int i = 1;
         Matcher matcher = f14045a.matcher(strArr[1]);
         if (!matcher.matches()) {
             String valueOf2 = String.valueOf(str);
-            C1230s.m37881i("MediaCodecUtil", valueOf2.length() != 0 ? "Ignoring malformed HEVC codec string: ".concat(valueOf2) : new String("Ignoring malformed HEVC codec string: "));
+            C1230s.m37884i("MediaCodecUtil", valueOf2.length() != 0 ? "Ignoring malformed HEVC codec string: ".concat(valueOf2) : new String("Ignoring malformed HEVC codec string: "));
             return null;
         }
         String group = matcher.group(1);
@@ -1136,54 +1136,54 @@ public final class C4148v {
                 i = 2;
             } else {
                 String valueOf3 = String.valueOf(group);
-                C1230s.m37881i("MediaCodecUtil", valueOf3.length() != 0 ? "Unknown HEVC profile string: ".concat(valueOf3) : new String("Unknown HEVC profile string: "));
+                C1230s.m37884i("MediaCodecUtil", valueOf3.length() != 0 ? "Unknown HEVC profile string: ".concat(valueOf3) : new String("Unknown HEVC profile string: "));
                 return null;
             }
         }
         String str2 = strArr[3];
-        Integer y = m28675y(str2);
+        Integer y = m28677y(str2);
         if (y != null) {
             return new Pair<>(Integer.valueOf(i), y);
         }
         String valueOf4 = String.valueOf(str2);
-        C1230s.m37881i("MediaCodecUtil", valueOf4.length() != 0 ? "Unknown HEVC level string: ".concat(valueOf4) : new String("Unknown HEVC level string: "));
+        C1230s.m37884i("MediaCodecUtil", valueOf4.length() != 0 ? "Unknown HEVC level string: ".concat(valueOf4) : new String("Unknown HEVC level string: "));
         return null;
     }
 
-    public static Pair<Integer, Integer> m28676x(String str, String[] strArr) {
+    public static Pair<Integer, Integer> m28678x(String str, String[] strArr) {
         if (strArr.length < 3) {
             String valueOf = String.valueOf(str);
-            C1230s.m37881i("MediaCodecUtil", valueOf.length() != 0 ? "Ignoring malformed VP9 codec string: ".concat(valueOf) : new String("Ignoring malformed VP9 codec string: "));
+            C1230s.m37884i("MediaCodecUtil", valueOf.length() != 0 ? "Ignoring malformed VP9 codec string: ".concat(valueOf) : new String("Ignoring malformed VP9 codec string: "));
             return null;
         }
         try {
             int parseInt = Integer.parseInt(strArr[1]);
             int parseInt2 = Integer.parseInt(strArr[2]);
-            int Q = m28700Q(parseInt);
+            int Q = m28702Q(parseInt);
             if (Q == -1) {
                 StringBuilder sb2 = new StringBuilder(32);
                 sb2.append("Unknown VP9 profile: ");
                 sb2.append(parseInt);
-                C1230s.m37881i("MediaCodecUtil", sb2.toString());
+                C1230s.m37884i("MediaCodecUtil", sb2.toString());
                 return null;
             }
-            int P = m28701P(parseInt2);
+            int P = m28703P(parseInt2);
             if (P != -1) {
                 return new Pair<>(Integer.valueOf(Q), Integer.valueOf(P));
             }
             StringBuilder sb3 = new StringBuilder(30);
             sb3.append("Unknown VP9 level: ");
             sb3.append(parseInt2);
-            C1230s.m37881i("MediaCodecUtil", sb3.toString());
+            C1230s.m37884i("MediaCodecUtil", sb3.toString());
             return null;
         } catch (NumberFormatException unused) {
             String valueOf2 = String.valueOf(str);
-            C1230s.m37881i("MediaCodecUtil", valueOf2.length() != 0 ? "Ignoring malformed VP9 codec string: ".concat(valueOf2) : new String("Ignoring malformed VP9 codec string: "));
+            C1230s.m37884i("MediaCodecUtil", valueOf2.length() != 0 ? "Ignoring malformed VP9 codec string: ".concat(valueOf2) : new String("Ignoring malformed VP9 codec string: "));
             return null;
         }
     }
 
-    public static Integer m28675y(String str) {
+    public static Integer m28677y(String str) {
         if (str == null) {
             return null;
         }
@@ -1404,7 +1404,7 @@ public final class C4148v {
         }
     }
 
-    public static boolean m28674z(MediaCodecInfo mediaCodecInfo) {
-        return C1216l0.f4526a >= 29 && m28716A(mediaCodecInfo);
+    public static boolean m28676z(MediaCodecInfo mediaCodecInfo) {
+        return C1216l0.f4526a >= 29 && m28718A(mediaCodecInfo);
     }
 }

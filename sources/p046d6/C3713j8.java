@@ -9,6 +9,6 @@ public final class C3713j8 implements AbstractC4514e {
 
     @Override
     public final void mo5165a(Object obj, AbstractC4515f fVar) {
-        C3723k8.m29816j((Map.Entry) obj, fVar);
+        C3723k8.m29818j((Map.Entry) obj, fVar);
     }
 }

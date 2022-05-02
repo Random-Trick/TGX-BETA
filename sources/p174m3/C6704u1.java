@@ -17,12 +17,12 @@ public final class C6704u1 {
 
     public C6704u1(AbstractC7230t.C7231a aVar, long j, long j2, long j3, long j4, boolean z, boolean z2, boolean z3, boolean z4) {
         boolean z5 = false;
-        C1186a.m38189a(!z4 || z2);
-        C1186a.m38189a(!z3 || z2);
+        C1186a.m38192a(!z4 || z2);
+        C1186a.m38192a(!z3 || z2);
         if (!z || (!z2 && !z3 && !z4)) {
             z5 = true;
         }
-        C1186a.m38189a(z5);
+        C1186a.m38192a(z5);
         this.f21035a = aVar;
         this.f21036b = j;
         this.f21037c = j2;
@@ -34,14 +34,14 @@ public final class C6704u1 {
         this.f21043i = z4;
     }
 
-    public C6704u1 m19433a(long j) {
+    public C6704u1 m19434a(long j) {
         if (j == this.f21037c) {
             return this;
         }
         return new C6704u1(this.f21035a, this.f21036b, j, this.f21038d, this.f21039e, this.f21040f, this.f21041g, this.f21042h, this.f21043i);
     }
 
-    public C6704u1 m19432b(long j) {
+    public C6704u1 m19433b(long j) {
         if (j == this.f21036b) {
             return this;
         }
@@ -56,7 +56,7 @@ public final class C6704u1 {
             return false;
         }
         C6704u1 u1Var = (C6704u1) obj;
-        return this.f21036b == u1Var.f21036b && this.f21037c == u1Var.f21037c && this.f21038d == u1Var.f21038d && this.f21039e == u1Var.f21039e && this.f21040f == u1Var.f21040f && this.f21041g == u1Var.f21041g && this.f21042h == u1Var.f21042h && this.f21043i == u1Var.f21043i && C1216l0.m37982c(this.f21035a, u1Var.f21035a);
+        return this.f21036b == u1Var.f21036b && this.f21037c == u1Var.f21037c && this.f21038d == u1Var.f21038d && this.f21039e == u1Var.f21039e && this.f21040f == u1Var.f21040f && this.f21041g == u1Var.f21041g && this.f21042h == u1Var.f21042h && this.f21043i == u1Var.f21043i && C1216l0.m37985c(this.f21035a, u1Var.f21035a);
     }
 
     public int hashCode() {

@@ -14,22 +14,22 @@ public final class C1413a extends AbstractC1421f {
     }
 
     @Override
-    public float mo12423a() {
+    public float mo12422a() {
         return this.f5220b;
     }
 
     @Override
-    public float mo12422b() {
+    public float mo12421b() {
         return this.f5221c;
     }
 
     @Override
-    public float mo12421c() {
+    public float mo12420c() {
         return this.f5219a;
     }
 
     @Override
-    public float mo12420d() {
+    public float mo12419d() {
         return this.f5222d;
     }
 
@@ -41,7 +41,7 @@ public final class C1413a extends AbstractC1421f {
             return false;
         }
         AbstractC1421f fVar = (AbstractC1421f) obj;
-        return Float.floatToIntBits(this.f5219a) == Float.floatToIntBits(fVar.mo12421c()) && Float.floatToIntBits(this.f5220b) == Float.floatToIntBits(fVar.mo12423a()) && Float.floatToIntBits(this.f5221c) == Float.floatToIntBits(fVar.mo12422b()) && Float.floatToIntBits(this.f5222d) == Float.floatToIntBits(fVar.mo12420d());
+        return Float.floatToIntBits(this.f5219a) == Float.floatToIntBits(fVar.mo12420c()) && Float.floatToIntBits(this.f5220b) == Float.floatToIntBits(fVar.mo12422a()) && Float.floatToIntBits(this.f5221c) == Float.floatToIntBits(fVar.mo12421b()) && Float.floatToIntBits(this.f5222d) == Float.floatToIntBits(fVar.mo12419d());
     }
 
     public int hashCode() {

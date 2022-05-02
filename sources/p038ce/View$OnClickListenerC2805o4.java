@@ -158,22 +158,22 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         }
 
         @Override
-        public void mo9885A(RecyclerView.AbstractC0886d0 d0Var, int i) {
-            super.mo9885A(d0Var, i);
-            if (d0Var != null && d0Var.m39332n() == 0) {
+        public void mo9884A(RecyclerView.AbstractC0886d0 d0Var, int i) {
+            super.mo9884A(d0Var, i);
+            if (d0Var != null && d0Var.m39335n() == 0) {
                 ((C9903a) d0Var.f3479a).setIsDragging(true);
-                View$OnClickListenerC2805o4.this.m33364fk(1, true);
+                View$OnClickListenerC2805o4.this.m33367fk(1, true);
             }
         }
 
         @Override
-        public void mo9884B(RecyclerView.AbstractC0886d0 d0Var, int i) {
+        public void mo9883B(RecyclerView.AbstractC0886d0 d0Var, int i) {
         }
 
         @Override
-        public void mo9881c(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var) {
+        public void mo9880c(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var) {
             int i;
-            super.mo9881c(recyclerView, d0Var);
+            super.mo9880c(recyclerView, d0Var);
             int i2 = this.f9486d;
             if (!(i2 == -1 || (i = this.f9487e) == -1 || i2 == i)) {
                 View$OnClickListenerC2805o4.this.f9485z0.m6627H0();
@@ -181,7 +181,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             this.f9487e = -1;
             this.f9486d = -1;
             View$OnClickListenerC2805o4.this.f9484y0.setItemAnimator(null);
-            View$OnClickListenerC2805o4.this.m33364fk(1, false);
+            View$OnClickListenerC2805o4.this.m33367fk(1, false);
             ((C9903a) d0Var.f3479a).setIsDragging(false);
             if (View$OnClickListenerC2805o4.this.f9478Y0 != null) {
                 View$OnClickListenerC2805o4.this.f9478Y0.m8919F();
@@ -189,26 +189,26 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         }
 
         @Override
-        public int mo9880k(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var) {
+        public int mo9879k(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var) {
             C4592b3 chat;
-            if (d0Var.m39332n() != 0 || (chat = ((C9903a) d0Var.f3479a).getChat()) == null || !chat.m27123n0() || !View$OnClickListenerC2805o4.this.f9485z0.m6599f0() || View$OnClickListenerC2805o4.this.f9481v0 != null) {
+            if (d0Var.m39335n() != 0 || (chat = ((C9903a) d0Var.f3479a).getChat()) == null || !chat.m27125n0() || !View$OnClickListenerC2805o4.this.f9485z0.m6599f0() || View$OnClickListenerC2805o4.this.f9481v0 != null) {
                 return 0;
             }
-            return C0962g.AbstractC0968f.m38781t(3, 0);
+            return C0962g.AbstractC0968f.m38784t(3, 0);
         }
 
         @Override
-        public boolean mo9879r() {
+        public boolean mo9878r() {
             return false;
         }
 
         @Override
-        public boolean mo9877y(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var, RecyclerView.AbstractC0886d0 d0Var2) {
-            int k = d0Var.m39335k();
-            int k2 = d0Var2.m39335k();
+        public boolean mo9876y(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var, RecyclerView.AbstractC0886d0 d0Var2) {
+            int k = d0Var.m39338k();
+            int k2 = d0Var2.m39338k();
             C4592b3 i0 = View$OnClickListenerC2805o4.this.f9485z0.m6593i0(k);
             C4592b3 i02 = View$OnClickListenerC2805o4.this.f9485z0.m6593i0(k2);
-            if (i0 != null && i02 != null && i0.m27123n0() && i02.m27123n0()) {
+            if (i0 != null && i02 != null && i0.m27125n0() && i02.m27125n0()) {
                 if (this.f9486d == -1) {
                     this.f9486d = k;
                 }
@@ -222,8 +222,8 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         }
 
         @Override
-        public void mo9876z(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var, int i, RecyclerView.AbstractC0886d0 d0Var2, int i2, int i3, int i4) {
-            super.mo9876z(recyclerView, d0Var, i, d0Var2, i2, i3, i4);
+        public void mo9875z(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var, int i, RecyclerView.AbstractC0886d0 d0Var2, int i2, int i3, int i4) {
+            super.mo9875z(recyclerView, d0Var, i, d0Var2, i2, i3, i4);
             d0Var.f3479a.invalidate();
             d0Var2.f3479a.invalidate();
             if (View$OnClickListenerC2805o4.this.f9478Y0 != null) {
@@ -243,40 +243,40 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             boolean z = false;
             if (View$OnClickListenerC2805o4.this.f9464K0 && View$OnClickListenerC2805o4.this.f9465L0 && View$OnClickListenerC2805o4.this.f9468O0 == 0 && i != 0) {
                 LinearLayoutManager linearLayoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
-                if (linearLayoutManager.m39549X1() == 1 && (C = linearLayoutManager.mo39262C(1)) != null && linearLayoutManager.m39231U(C) == 0) {
-                    View$OnClickListenerC2805o4.this.m33359gk(false);
+                if (linearLayoutManager.m39552X1() == 1 && (C = linearLayoutManager.mo39265C(1)) != null && linearLayoutManager.m39234U(C) == 0) {
+                    View$OnClickListenerC2805o4.this.m33362gk(false);
                 }
             }
             View$OnClickListenerC2805o4.this.f9468O0 = i;
             if (View$OnClickListenerC2805o4.this.f9464K0 && i == 0) {
                 LinearLayoutManager linearLayoutManager2 = (LinearLayoutManager) recyclerView.getLayoutManager();
-                int X1 = linearLayoutManager2.m39549X1();
+                int X1 = linearLayoutManager2.m39552X1();
                 if (X1 == 0) {
-                    View$OnClickListenerC2805o4.this.m33359gk(false);
-                    View C2 = linearLayoutManager2.mo39262C(X1);
-                    int i2 = C2 != null ? -linearLayoutManager2.m39231U(C2) : 0;
-                    if (i2 < C9903a.m6642r1(C4868i.m24726c2().m24584u0()) / 2) {
+                    View$OnClickListenerC2805o4.this.m33362gk(false);
+                    View C2 = linearLayoutManager2.mo39265C(X1);
+                    int i2 = C2 != null ? -linearLayoutManager2.m39234U(C2) : 0;
+                    if (i2 < C9903a.m6642r1(C4868i.m24727c2().m24585u0()) / 2) {
                         View$OnClickListenerC2805o4.this.f9484y0.mo8024v1(0, -i2);
                     } else {
                         View$OnClickListenerC2805o4.this.mo8829I();
                     }
                 } else if (X1 == 1) {
-                    View C3 = linearLayoutManager2.mo39262C(X1);
+                    View C3 = linearLayoutManager2.mo39265C(X1);
                     View$OnClickListenerC2805o4 o4Var = View$OnClickListenerC2805o4.this;
-                    if (C3 == null || linearLayoutManager2.m39231U(C3) < 0) {
+                    if (C3 == null || linearLayoutManager2.m39234U(C3) < 0) {
                         z = true;
                     }
-                    o4Var.m33359gk(z);
+                    o4Var.m33362gk(z);
                 } else {
-                    View$OnClickListenerC2805o4.this.m33359gk(true);
+                    View$OnClickListenerC2805o4.this.m33362gk(true);
                 }
             }
         }
 
         @Override
         public void mo421b(RecyclerView recyclerView, int i, int i2) {
-            if (View$OnClickListenerC2805o4.this.f9464K0 && !View$OnClickListenerC2805o4.this.f9465L0 && View$OnClickListenerC2805o4.this.f9468O0 == 2 && i2 > 0 && ((LinearLayoutManager) recyclerView.getLayoutManager()).m39549X1() > 0) {
-                View$OnClickListenerC2805o4.this.m33359gk(true);
+            if (View$OnClickListenerC2805o4.this.f9464K0 && !View$OnClickListenerC2805o4.this.f9465L0 && View$OnClickListenerC2805o4.this.f9468O0 == 2 && i2 > 0 && ((LinearLayoutManager) recyclerView.getLayoutManager()).m39552X1() > 0) {
+                View$OnClickListenerC2805o4.this.m33362gk(true);
             }
         }
     }
@@ -286,12 +286,12 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             View$OnClickListenerC2805o4.this = r1;
         }
 
-        public void m33270c(C10684g8 g8Var) {
+        public void m33273c(C10684g8 g8Var) {
             View$OnClickListenerC2805o4.this.f9485z0.m6626I0(g8Var.m4301L() > 0);
             View$OnClickListenerC2805o4.this.f9485z0.m6624K0(0);
         }
 
-        public void m33269d(int i) {
+        public void m33272d(int i) {
             View$OnClickListenerC2805o4.this.f9485z0.m6624K0(i);
         }
 
@@ -324,7 +324,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                 View$OnClickListenerC2805o4.this.m9135wd(new Runnable() {
                     @Override
                     public final void run() {
-                        View$OnClickListenerC2805o4.C2808c.this.m33269d(i2);
+                        View$OnClickListenerC2805o4.C2808c.this.m33272d(i2);
                     }
                 });
             }
@@ -332,18 +332,18 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             View$OnClickListenerC2805o4.this.m9135wd(new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC2805o4.C2808c.this.m33269d(i2);
+                    View$OnClickListenerC2805o4.C2808c.this.m33272d(i2);
                 }
             });
         }
 
         @Override
         public void mo3009i(final C10684g8 g8Var, int i) {
-            if (C5063c.m24138h(i, 1, false) != 0) {
+            if (C5063c.m24139h(i, 1, false) != 0) {
                 View$OnClickListenerC2805o4.this.m9135wd(new Runnable() {
                     @Override
                     public final void run() {
-                        View$OnClickListenerC2805o4.C2808c.this.m33270c(g8Var);
+                        View$OnClickListenerC2805o4.C2808c.this.m33273c(g8Var);
                     }
                 });
             }
@@ -367,9 +367,9 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         }
 
         @Override
-        public void mo11622q0(View view, float f) {
+        public void mo11621q0(View view, float f) {
             if ((View$OnClickListenerC2805o4.this.f9469P0 & 2) == 0) {
-                super.mo11622q0(view, f);
+                super.mo11621q0(view, f);
             }
         }
     }
@@ -379,16 +379,16 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             View$OnClickListenerC2805o4.this = r1;
         }
 
-        public static void m33267b(int i) {
-            C1379j0.m37290z0(C4403w.m27844o2(R.string.ReadAllChatsDone, i), 0);
+        public static void m33270b(int i) {
+            C1379j0.m37293z0(C4403w.m27846o2(R.string.ReadAllChatsDone, i), 0);
         }
 
         @Override
         public void mo3385B6(C6957m1.C6963f fVar, int i, Object obj) {
             if (i == R.id.btn_markChatAsRead) {
-                View$OnClickListenerC2805o4.this.f30167b.m2732Na(new TdApi.ChatListArchive(), C2958r4.f9823a);
+                View$OnClickListenerC2805o4.this.f30170b.m2732Na(new TdApi.ChatListArchive(), C2958r4.f9823a);
             } else if (i == R.id.btn_pinUnpinChat) {
-                View$OnClickListenerC2805o4.this.f30167b.m2294pc().m4092u0(1L);
+                View$OnClickListenerC2805o4.this.f30170b.m2294pc().m4092u0(1L);
             }
         }
 
@@ -427,7 +427,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         @Override
         public void mo1364b() {
             if (View$OnClickListenerC2805o4.this.f9477X0 == this && View$OnClickListenerC2805o4.this.f9475V0 != null) {
-                View$OnClickListenerC2805o4.this.m33334lk(this.f9494M, this.f9495N, true);
+                View$OnClickListenerC2805o4.this.m33337lk(this.f9494M, this.f9495N, true);
             }
         }
     }
@@ -441,15 +441,15 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             this.f9502a = o4Var;
             Paint paint = new Paint(5);
             this.f9503b = paint;
-            paint.setShader(new LinearGradient(0.0f, 0.0f, 0.0f, C6879f3.m18691q(), C6879f3.m18690r(), (float[]) null, Shader.TileMode.CLAMP));
+            paint.setShader(new LinearGradient(0.0f, 0.0f, 0.0f, C6879f3.m18692q(), C6879f3.m18691r(), (float[]) null, Shader.TileMode.CLAMP));
             Paint paint2 = new Paint(5);
             this.f9504c = paint2;
-            paint2.setShader(new LinearGradient(0.0f, 0.0f, 0.0f, C6879f3.m18692p(), C6879f3.m18707a(), (float[]) null, Shader.TileMode.CLAMP));
+            paint2.setShader(new LinearGradient(0.0f, 0.0f, 0.0f, C6879f3.m18693p(), C6879f3.m18708a(), (float[]) null, Shader.TileMode.CLAMP));
         }
 
         @Override
         public void mo7527g(Rect rect, View view, RecyclerView recyclerView, RecyclerView.C0880a0 a0Var) {
-            int k0 = recyclerView.m39421k0(view);
+            int k0 = recyclerView.m39424k0(view);
             if (k0 == -1) {
                 rect.top = 0;
                 rect.bottom = 0;
@@ -458,30 +458,30 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             C4592b3 i0 = this.f9502a.f9485z0.m6593i0(k0);
             if (i0 != null) {
                 C4592b3 i02 = this.f9502a.f9485z0.m6593i0(k0 + 1);
-                if (i02 == null || (i0.m27138h0() == i02.m27138h0() && i0.m27121o0() == i02.m27121o0())) {
-                    rect.bottom = C1357a0.m37526x();
+                if (i02 == null || (i0.m27140h0() == i02.m27140h0() && i0.m27123o0() == i02.m27123o0())) {
+                    rect.bottom = C1357a0.m37529x();
                 } else {
-                    rect.bottom = C1357a0.m37541i(12.0f);
+                    rect.bottom = C1357a0.m37544i(12.0f);
                 }
                 rect.top = 0;
-                if (this.f9502a.f9462I0 != null && this.f9502a.f9462I0.m21732w()) {
-                    int ii = this.f9502a.m33351ii();
+                if (this.f9502a.f9462I0 != null && this.f9502a.f9462I0.m21733w()) {
+                    int ii = this.f9502a.m33354ii();
                     if (k0 == ii) {
-                        rect.top = C5974t0.m21735t();
+                        rect.top = C5974t0.m21736t();
                     } else if (k0 == ii - 1) {
-                        rect.bottom = C1357a0.m37541i(1.0f);
+                        rect.bottom = C1357a0.m37544i(1.0f);
                     }
                 }
-                if (this.f9502a.f9465L0 && rect.top == 0 && i0.m27138h0()) {
-                    rect.top = -C9903a.m6642r1(i0.m27201E());
-                    if (this.f9502a.f9462I0 == null || !this.f9502a.f9462I0.m21732w()) {
-                        rect.top -= C1357a0.m37541i(12.0f);
+                if (this.f9502a.f9465L0 && rect.top == 0 && i0.m27140h0()) {
+                    rect.top = -C9903a.m6642r1(i0.m27203E());
+                    if (this.f9502a.f9462I0 == null || !this.f9502a.f9462I0.m21733w()) {
+                        rect.top -= C1357a0.m37544i(12.0f);
                     } else {
-                        rect.top -= C1357a0.m37541i(1.0f);
+                        rect.top -= C1357a0.m37544i(1.0f);
                     }
                 }
             } else if (this.f9502a.f9485z0.mo6153D() > 0 && this.f9502a.f9485z0.m6587m0() && this.f9502a.f9464K0 && k0 == this.f9502a.f9485z0.mo6153D() - 1) {
-                rect.bottom = Math.max(0, recyclerView.getMeasuredHeight() - this.f9502a.m33434Qh());
+                rect.bottom = Math.max(0, recyclerView.getMeasuredHeight() - this.f9502a.m33437Qh());
             }
         }
 
@@ -505,274 +505,274 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         super(context, q6Var);
     }
 
-    public boolean m33497Ai(TdApi.Chat chat) {
-        return !this.f30167b.m2443g7(chat.f25367id);
+    public boolean m33500Ai(TdApi.Chat chat) {
+        return !this.f30170b.m2443g7(chat.f25370id);
     }
 
-    public boolean m33496Aj(View view, int i) {
+    public boolean m33499Aj(View view, int i) {
         switch (i) {
             case R.id.btn_selectAll:
-                m33379ck(C3137u3.f10516a, this.f30167b.m2189w5(m33410Wh()).f33873a);
+                m33382ck(C3137u3.f10516a, this.f30170b.m2189w5(m33413Wh()).f33876a);
                 return true;
             case R.id.btn_selectChat:
             default:
                 return true;
             case R.id.btn_selectMuted:
-                final C10930q6 q6Var = this.f30167b;
+                final C10930q6 q6Var = this.f30170b;
                 Objects.requireNonNull(q6Var);
-                m33379ck(new AbstractC5912d() {
+                m33382ck(new AbstractC5912d() {
                     @Override
                     public final boolean mo1511a(Object obj) {
                         return C10930q6.this.m2239t3((TdApi.Chat) obj);
                     }
-                }, this.f30167b.m2189w5(m33410Wh()).f33873a);
+                }, this.f30170b.m2189w5(m33413Wh()).f33876a);
                 return true;
             case R.id.btn_selectUnread:
-                m33379ck(C3180v3.f10626a, this.f30167b.m2189w5(m33410Wh()).f33874b);
+                m33382ck(C3180v3.f10626a, this.f30170b.m2189w5(m33413Wh()).f33877b);
                 return true;
         }
     }
 
-    public boolean m33493Bi(TdApi.Chat chat) {
+    public boolean m33496Bi(TdApi.Chat chat) {
         return C7317b.m17037g(chat, this.f9457D0);
     }
 
-    public static void m33492Bj(long[] jArr, TdApi.Object object) {
+    public static void m33495Bj(long[] jArr, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         } else if (constructor == 217237013) {
             long j = ((TdApi.StorageStatistics) object).size;
             if (j > 0) {
-                C1379j0.m37290z0(C4403w.m27840p2(R.string.ClearedSizeChats, jArr.length, C1363c0.m37423m(j)), 0);
+                C1379j0.m37293z0(C4403w.m27842p2(R.string.ClearedSizeChats, jArr.length, C1363c0.m37426m(j)), 0);
             } else {
-                C1379j0.m37290z0(C4403w.m27844o2(R.string.ClearedNoneChats, jArr.length), 0);
+                C1379j0.m37293z0(C4403w.m27846o2(R.string.ClearedNoneChats, jArr.length), 0);
             }
         }
     }
 
-    public void m33489Ci(List list) {
+    public void m33492Ci(List list) {
         this.f9480u0 = true;
         this.f9485z0.m6600e0((C4592b3[]) list.toArray(new C4592b3[0]));
     }
 
-    public boolean m33488Cj(View view, int i) {
+    public boolean m33491Cj(View view, int i) {
         if (i != R.id.btn_clearCache) {
             return true;
         }
-        final long[] v = C5062b.m24150v(this.f9472S0);
-        C1379j0.m37290z0(C4403w.m27844o2(R.string.ClearingXChats, v.length), 0);
-        this.f30167b.m2270r4().m14783o(new TdApi.OptimizeStorage(0L, 0, 0, 0, null, v, null, true, 0), new Client.AbstractC7865g() {
+        final long[] v = C5062b.m24151v(this.f9472S0);
+        C1379j0.m37293z0(C4403w.m27846o2(R.string.ClearingXChats, v.length), 0);
+        this.f30170b.m2270r4().m14783o(new TdApi.OptimizeStorage(0L, 0, 0, 0, null, v, null, true, 0), new Client.AbstractC7865g() {
             @Override
             public final void mo255t2(TdApi.Object object) {
-                View$OnClickListenerC2805o4.m33492Bj(v, object);
+                View$OnClickListenerC2805o4.m33495Bj(v, object);
             }
         });
-        m33399Yj();
+        m33402Yj();
         return true;
     }
 
-    public void m33485Di(TdApi.BasicGroup basicGroup) {
-        m33406Xh(C7316a.m17060a(basicGroup.f25363id));
+    public void m33488Di(TdApi.BasicGroup basicGroup) {
+        m33409Xh(C7316a.m17060a(basicGroup.f25366id));
     }
 
-    public void m33484Dj(TdApi.NotificationSettingsScope notificationSettingsScope, TdApi.ScopeNotificationSettings scopeNotificationSettings) {
+    public void m33487Dj(TdApi.NotificationSettingsScope notificationSettingsScope, TdApi.ScopeNotificationSettings scopeNotificationSettings) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14170m2(notificationSettingsScope, scopeNotificationSettings);
+            chatsRecyclerView.m14169m2(notificationSettingsScope, scopeNotificationSettings);
         }
     }
 
-    public void m33481Ei(TdApi.Chat chat, int i, C10930q6.C10937g gVar) {
-        this.f9484y0.m14191R1(this.f9485z0.m6604c0(chat, i, gVar));
+    public void m33484Ei(TdApi.Chat chat, int i, C10930q6.C10937g gVar) {
+        this.f9484y0.m14190R1(this.f9485z0.m6604c0(chat, i, gVar));
     }
 
-    public void m33480Ej(long j, TdApi.ChatNotificationSettings chatNotificationSettings) {
+    public void m33483Ej(long j, TdApi.ChatNotificationSettings chatNotificationSettings) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14171l2(j, chatNotificationSettings);
+            chatsRecyclerView.m14170l2(j, chatNotificationSettings);
         }
     }
 
-    public void m33477Fi(TdApi.Chat chat, int i, C10930q6.C10937g gVar) {
-        this.f9484y0.m14191R1(this.f9485z0.m6623L0(chat, i, gVar));
+    public void m33480Fi(TdApi.Chat chat, int i, C10930q6.C10937g gVar) {
+        this.f9484y0.m14190R1(this.f9485z0.m6623L0(chat, i, gVar));
     }
 
-    public void m33476Fj(TdApi.SecretChat secretChat) {
+    public void m33479Fj(TdApi.SecretChat secretChat) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14169n2(secretChat);
+            chatsRecyclerView.m14168n2(secretChat);
         }
     }
 
-    public void m33473Gi(long j, String str) {
+    public void m33476Gi(long j, String str) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14189T1(j, str);
+            chatsRecyclerView.m14188T1(j, str);
         }
     }
 
-    public void m33472Gj() {
+    public void m33475Gj() {
         if (!m9347Sa()) {
             m9300Z9().m9307Y8();
             mo8837u5(-1);
         }
     }
 
-    public void m33469Hi() {
-        if (!m9347Sa() && !m33331mi()) {
+    public void m33472Hi() {
+        if (!m9347Sa() && !m33334mi()) {
             m9298Zb();
         }
     }
 
-    public void m33468Hj(TdApi.Supergroup supergroup) {
-        m33406Xh(C7316a.m17059b(supergroup.f25425id));
+    public void m33471Hj(TdApi.Supergroup supergroup) {
+        m33409Xh(C7316a.m17059b(supergroup.f25428id));
     }
 
-    public void m33465Ii(long j, TdApi.DraftMessage draftMessage) {
+    public void m33468Ii(long j, TdApi.DraftMessage draftMessage) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14188U1(j, draftMessage);
+            chatsRecyclerView.m14187U1(j, draftMessage);
         }
     }
 
-    public void m33464Ij(TdApi.User user) {
+    public void m33467Ij(TdApi.User user) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14168p2(user);
+            chatsRecyclerView.m14167p2(user);
         }
     }
 
-    public void m33461Ji(long j, boolean z) {
+    public void m33464Ji(long j, boolean z) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14187V1(j, z);
+            chatsRecyclerView.m14186V1(j, z);
         }
     }
 
-    public void m33460Jj(TdApi.Object object) {
+    public void m33463Jj(TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         } else if (constructor == -722616727) {
             m9135wd(new RunnableC2736n1(this));
         }
     }
 
-    public void m33457Ki(int i) {
-        if (C5063c.m24144b(i, 10)) {
-            m33391ai();
+    public void m33460Ki(int i) {
+        if (C5063c.m24145b(i, 10)) {
+            m33394ai();
         }
     }
 
-    public void m33456Kj() {
+    public void m33459Kj() {
         C2760nb nbVar = this.f9455B0;
         if (nbVar != null) {
-            nbVar.m9291ac(new View$OnClickListenerC2928qj(this.f30165a, this.f30167b).m31290zg().m31316Ag());
+            nbVar.m9291ac(new View$OnClickListenerC2928qj(this.f30168a, this.f30170b).m31292zg().m31318Ag());
         }
     }
 
-    public void m33453Li(int i, int i2) {
+    public void m33456Li(int i, int i2) {
         if (i == 2) {
             this.f9485z0.m6608Z0();
         }
-        m33391ai();
+        m33394ai();
         if (i2 == 1) {
-            m33336li();
+            m33339li();
             if (!this.f9480u0) {
                 this.f9480u0 = true;
                 this.f9485z0.m6597g0();
             }
         }
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
-        if (chatsRecyclerView != null && i == 0 && ((LinearLayoutManager) chatsRecyclerView.getLayoutManager()).m39546a2() == this.f9485z0.mo6153D() - 1) {
-            mo14166A0();
+        if (chatsRecyclerView != null && i == 0 && ((LinearLayoutManager) chatsRecyclerView.getLayoutManager()).m39549a2() == this.f9485z0.mo6153D() - 1) {
+            mo14165A0();
         }
     }
 
-    public void m33452Lj(View view) {
+    public void m33455Lj(View view) {
         int id2 = view.getId();
         if (id2 == R.id.btn_archive) {
-            View$OnClickListenerC2805o4 o4Var = new View$OnClickListenerC2805o4(this.f30165a, this.f30167b);
-            o4Var.m33354hk(new C2813h(C7317b.f23225b).m33264c(true));
+            View$OnClickListenerC2805o4 o4Var = new View$OnClickListenerC2805o4(this.f30168a, this.f30170b);
+            o4Var.m33357hk(new C2813h(C7317b.f23228b).m33267c(true));
             C2760nb nbVar = this.f9455B0;
             if (nbVar != null) {
                 nbVar.m9291ac(o4Var);
             }
         } else if (id2 == R.id.btn_invite) {
-            this.f30167b.m2946A4().m1370u0(mo4347s(), true, new Runnable() {
+            this.f30170b.m2946A4().m1370u0(mo4347s(), true, new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC2805o4.this.m33456Kj();
+                    View$OnClickListenerC2805o4.this.m33459Kj();
                 }
             });
         }
     }
 
-    public void m33449Mi(long j, boolean z) {
+    public void m33452Mi(long j, boolean z) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14186W1(j, z);
+            chatsRecyclerView.m14185W1(j, z);
         }
     }
 
-    public void m33448Mj(C10327b bVar, boolean z) {
+    public void m33451Mj(C10327b bVar, boolean z) {
         if (!m9347Sa() && !bVar.m5416b()) {
-            m9300Z9().m9402Kd(this.f9472S0.m21496p());
-            m33309qk();
+            m9300Z9().m9402Kd(this.f9472S0.m21497p());
+            m33312qk();
             if (z) {
                 this.f9471R0.remove(bVar);
             }
         }
     }
 
-    public void m33445Ni(TdApi.Chat chat, int i, int i2, C10930q6.C10937g gVar) {
-        this.f9484y0.m14191R1(this.f9485z0.m6581s0(chat, i, i2, gVar));
+    public void m33448Ni(TdApi.Chat chat, int i, int i2, C10930q6.C10937g gVar) {
+        this.f9484y0.m14190R1(this.f9485z0.m6581s0(chat, i, i2, gVar));
     }
 
-    public void m33444Nj(C10327b bVar, TdApi.Chat chat) {
-        if (!m9347Sa() && !bVar.m5416b() && this.f9472S0.m21503h(chat.f25367id) < 0) {
-            m33369ek(chat, false);
+    public void m33447Nj(C10327b bVar, TdApi.Chat chat) {
+        if (!m9347Sa() && !bVar.m5416b() && this.f9472S0.m21504h(chat.f25370id) < 0) {
+            m33372ek(chat, false);
         }
     }
 
-    public void m33441Oi(long j, TdApi.ChatPermissions chatPermissions) {
+    public void m33444Oi(long j, TdApi.ChatPermissions chatPermissions) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14185X1(j, chatPermissions);
+            chatsRecyclerView.m14184X1(j, chatPermissions);
         }
     }
 
-    public void m33440Oj(AbstractC5912d dVar, final C10327b bVar, final TdApi.Chat chat) {
-        if (m33376di(chat) != null && dVar.mo1511a(chat)) {
-            this.f30167b.m2485dd().post(new Runnable() {
+    public void m33443Oj(AbstractC5912d dVar, final C10327b bVar, final TdApi.Chat chat) {
+        if (m33379di(chat) != null && dVar.mo1511a(chat)) {
+            this.f30170b.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC2805o4.this.m33444Nj(bVar, chat);
+                    View$OnClickListenerC2805o4.this.m33447Nj(bVar, chat);
                 }
             });
         }
     }
 
-    public void m33437Pi(long j, TdApi.ChatPhotoInfo chatPhotoInfo) {
+    public void m33440Pi(long j, TdApi.ChatPhotoInfo chatPhotoInfo) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14184Y1(j, chatPhotoInfo);
+            chatsRecyclerView.m14183Y1(j, chatPhotoInfo);
         }
     }
 
-    public void m33433Qi(long j, TdApi.ChatPosition chatPosition, boolean z, boolean z2, boolean z3) {
+    public void m33436Qi(long j, TdApi.ChatPosition chatPosition, boolean z, boolean z2, boolean z3) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14183Z1(j, chatPosition, z, z2, z3);
+            chatsRecyclerView.m14182Z1(j, chatPosition, z, z2, z3);
             if (chatPosition.order == 0) {
-                m33406Xh(j);
+                m33409Xh(j);
             }
         }
     }
 
-    public void m33432Qj(final AbstractC5917i iVar, final boolean z) {
-        this.f30167b.m2485dd().post(new Runnable() {
+    public void m33435Qj(final AbstractC5917i iVar, final boolean z) {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
                 AbstractC5917i.this.mo1322a(z);
@@ -780,151 +780,151 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         });
     }
 
-    public void m33429Ri(long j, long j2, int i) {
+    public void m33432Ri(long j, long j2, int i) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14182a2(j, j2, i);
+            chatsRecyclerView.m14181a2(j, j2, i);
         }
     }
 
-    public void m33428Rj() {
+    public void m33431Rj() {
         if (!m9347Sa()) {
-            this.f9484y0.m14161J1();
-            this.f9485z0.m39312I(0);
-            this.f9484y0.m14162I1();
+            this.f9484y0.m14160J1();
+            this.f9485z0.m39315I(0);
+            this.f9484y0.m14161I1();
         }
     }
 
-    public void m33425Si(long j, long j2) {
+    public void m33428Si(long j, long j2) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14181b2(j, j2);
+            chatsRecyclerView.m14180b2(j, j2);
         }
     }
 
-    public void m33421Ti(TdApi.Chat chat, int i, C10930q6.C10937g gVar) {
-        this.f9484y0.m14191R1(this.f9485z0.m6628G0(chat, i, gVar));
+    public void m33424Ti(TdApi.Chat chat, int i, C10930q6.C10937g gVar) {
+        this.f9484y0.m14190R1(this.f9485z0.m6628G0(chat, i, gVar));
     }
 
-    public void m33417Ui(long j, String str) {
+    public void m33420Ui(long j, String str) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14179d2(j, str);
+            chatsRecyclerView.m14178d2(j, str);
         }
     }
 
-    public void m33413Vi(long j, TdApi.Message message) {
+    public void m33416Vi(long j, TdApi.Message message) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14178e2(j, message);
+            chatsRecyclerView.m14177e2(j, message);
         }
     }
 
-    public void m33409Wi(long j, int i) {
+    public void m33412Wi(long j, int i) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14177f2(j, i);
+            chatsRecyclerView.m14176f2(j, i);
         }
     }
 
-    public void m33405Xi(TdApi.Chat chat) {
+    public void m33408Xi(TdApi.Chat chat) {
         if (!m9347Sa() && m9339Ta()) {
-            m33394Zj(chat);
+            m33397Zj(chat);
         }
     }
 
-    public boolean m33390aj(final C3950k kVar, final float f, Object obj) {
-        View$OnClickListenerC2805o4 o4Var = new View$OnClickListenerC2805o4(mo4347s(), this.f30167b);
-        o4Var.m33354hk(new C2813h(C7317b.f23225b).m33264c(true));
+    public boolean m33393aj(final C3950k kVar, final float f, Object obj) {
+        View$OnClickListenerC2805o4 o4Var = new View$OnClickListenerC2805o4(mo4347s(), this.f30170b);
+        o4Var.m33357hk(new C2813h(C7317b.f23228b).m33267c(true));
         o4Var.m9248gd(new Runnable() {
             @Override
             public final void run() {
-                C3950k.this.m29544i(f);
+                C3950k.this.m29546i(f);
             }
         });
         o4Var.m9162t9();
-        mo4347s().m14552P1().m9719h0(o4Var);
+        mo4347s().m14551P1().m9718h0(o4Var);
         return true;
     }
 
-    public void m33385bj(C4592b3 b3Var) {
-        m33374dk(b3Var, true);
+    public void m33388bj(C4592b3 b3Var) {
+        m33377dk(b3Var, true);
     }
 
-    public void m33380cj(CustomRecyclerView customRecyclerView, int i, int i2, int i3, int i4) {
+    public void m33383cj(CustomRecyclerView customRecyclerView, int i, int i2, int i3, int i4) {
         if (i4 != i2 && this.f9485z0.m6587m0() && this.f9464K0 && this.f9485z0.mo6153D() > 0) {
             C9906c cVar = this.f9485z0;
-            cVar.m39312I(cVar.mo6153D() - 1);
+            cVar.m39315I(cVar.mo6153D() - 1);
         }
     }
 
-    public void m33375dj() {
+    public void m33378dj() {
         this.f9460G0 = true;
-        m33391ai();
+        m33394ai();
         m9204n9();
     }
 
-    public void m33370ej() {
+    public void m33373ej() {
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33375dj();
+                View$OnClickListenerC2805o4.this.m33378dj();
             }
         });
     }
 
-    public static void m33365fj(View view, Rect rect) {
-        ((C9903a) view).getAvatarReceiver().mo20248a1(rect);
+    public static void m33368fj(View view, Rect rect) {
+        ((C9903a) view).getAvatarReceiver().mo20249a1(rect);
     }
 
-    public void m33360gj(C4592b3 b3Var) {
-        m33374dk(b3Var, true);
+    public void m33363gj(C4592b3 b3Var) {
+        m33377dk(b3Var, true);
     }
 
-    public void m33355hj(int i) {
+    public void m33358hj(int i) {
         int i2 = 0;
-        for (int i3 = 0; i3 < this.f9472S0.m21496p(); i3++) {
-            TdApi.Chat q = this.f9472S0.m21495q(i3);
-            if (!this.f30167b.m2443g7(q.f25367id)) {
+        for (int i3 = 0; i3 < this.f9472S0.m21497p(); i3++) {
+            TdApi.Chat q = this.f9472S0.m21496q(i3);
+            if (!this.f30170b.m2443g7(q.f25370id)) {
                 if (i == -1) {
                     TdApi.ChatNotificationSettings chatNotificationSettings = q.notificationSettings;
                     chatNotificationSettings.useDefaultMuteFor = true;
-                    this.f30167b.m2763Lb(q.f25367id, chatNotificationSettings);
+                    this.f30170b.m2763Lb(q.f25370id, chatNotificationSettings);
                 } else {
-                    this.f30167b.m2486dc(q.f25367id, i);
+                    this.f30170b.m2486dc(q.f25370id, i);
                 }
                 i2++;
             }
         }
-        C1379j0.m37290z0(C4403w.m27844o2(R.string.MutedXChats, i2), 0);
-        m33399Yj();
+        C1379j0.m37293z0(C4403w.m27846o2(R.string.MutedXChats, i2), 0);
+        m33402Yj();
     }
 
-    public static boolean m33350ij(AbstractC5919k kVar, View view, int i) {
+    public static boolean m33353ij(AbstractC5919k kVar, View view, int i) {
         kVar.mo3250a(i == R.id.btn_menu_resetToDefault ? -1 : HandlerC10770jj.m3563i3(i));
         return true;
     }
 
-    public void m33345jj() {
+    public void m33348jj() {
         int i = 0;
         int i2 = 0;
-        for (int i3 = 0; i3 < this.f9472S0.m21496p(); i3++) {
-            TdApi.Chat q = this.f9472S0.m21495q(i3);
-            if (!this.f30167b.m2443g7(q.f25367id)) {
-                if (this.f30167b.m2271r3(q) > 0) {
+        for (int i3 = 0; i3 < this.f9472S0.m21497p(); i3++) {
+            TdApi.Chat q = this.f9472S0.m21496q(i3);
+            if (!this.f30170b.m2443g7(q.f25370id)) {
+                if (this.f30170b.m2271r3(q) > 0) {
                     i2++;
                 }
-                if (this.f30167b.m2407ib(q).muteFor > 0) {
+                if (this.f30170b.m2407ib(q).muteFor > 0) {
                     i++;
                 }
-                this.f30167b.m2486dc(q.f25367id, 0);
+                this.f30170b.m2486dc(q.f25370id, 0);
             }
         }
-        C1379j0.m37290z0(C4403w.m27844o2(i > 0 ? R.string.NotificationsOnXChats : R.string.UnmutedXChats, i2), 0);
-        m33399Yj();
+        C1379j0.m37293z0(C4403w.m27846o2(i > 0 ? R.string.NotificationsOnXChats : R.string.UnmutedXChats, i2), 0);
+        m33402Yj();
     }
 
-    public static boolean m33340kj(Runnable runnable, View view, int i) {
+    public static boolean m33343kj(Runnable runnable, View view, int i) {
         if (i != R.id.btn_unmute) {
             return true;
         }
@@ -932,23 +932,23 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         return true;
     }
 
-    public void m33335lj(AtomicInteger atomicInteger, TdApi.Object object) {
+    public void m33338lj(AtomicInteger atomicInteger, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         } else if (constructor == -722616727 && atomicInteger.decrementAndGet() == 0) {
-            this.f30167b.m2485dd().post(new RunnableC2736n1(this));
+            this.f30170b.m2485dd().post(new RunnableC2736n1(this));
         }
     }
 
-    public boolean m33330mj(boolean z, View view, int i) {
+    public boolean m33333mj(boolean z, View view, int i) {
         if (i != R.id.btn_pinUnpinChat) {
             return true;
         }
         if (z) {
-            int p = this.f9472S0.m21496p();
-            for (int i2 = 0; i2 < this.f9472S0.m21496p(); i2++) {
-                if (!C7317b.m17037g(this.f9472S0.m21495q(i2), this.f9457D0)) {
+            int p = this.f9472S0.m21497p();
+            for (int i2 = 0; i2 < this.f9472S0.m21497p(); i2++) {
+                if (!C7317b.m17037g(this.f9472S0.m21496q(i2), this.f9457D0)) {
                     p--;
                 }
             }
@@ -956,123 +956,123 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             Client.AbstractC7865g f4Var = new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
-                    View$OnClickListenerC2805o4.this.m33335lj(atomicInteger, object);
+                    View$OnClickListenerC2805o4.this.m33338lj(atomicInteger, object);
                 }
             };
-            for (int i3 = 0; i3 < this.f9472S0.m21496p(); i3++) {
-                long j = this.f9472S0.m21501j(i3);
-                if (C7317b.m17037g(this.f9472S0.m21495q(i3), this.f9457D0)) {
-                    this.f30167b.m2270r4().m14783o(new TdApi.ToggleChatIsPinned(this.f9457D0, j, false), f4Var);
+            for (int i3 = 0; i3 < this.f9472S0.m21497p(); i3++) {
+                long j = this.f9472S0.m21502j(i3);
+                if (C7317b.m17037g(this.f9472S0.m21496q(i3), this.f9457D0)) {
+                    this.f30170b.m2270r4().m14783o(new TdApi.ToggleChatIsPinned(this.f9457D0, j, false), f4Var);
                 }
             }
             return true;
         }
-        List<Long> O5 = this.f30167b.m2721O5(this.f9457D0);
+        List<Long> O5 = this.f30170b.m2721O5(this.f9457D0);
         C6035e<TdApi.Chat> eVar = this.f9472S0;
-        TdApi.Chat[] chatArr = (TdApi.Chat[]) C5062b.m24167e(eVar, new TdApi.Chat[eVar.m21496p()]);
+        TdApi.Chat[] chatArr = (TdApi.Chat[]) C5062b.m24168e(eVar, new TdApi.Chat[eVar.m21497p()]);
         C7321e.m16926n1(chatArr, this.f9457D0);
         for (TdApi.Chat chat : chatArr) {
             if (!C7317b.m17037g(chat, this.f9457D0)) {
-                O5.add(Long.valueOf(chat.f25367id));
+                O5.add(Long.valueOf(chat.f25370id));
             }
         }
-        m33389ak(new TdApi.SetPinnedChats(this.f9457D0, C5062b.m24168d(O5)));
+        m33392ak(new TdApi.SetPinnedChats(this.f9457D0, C5062b.m24169d(O5)));
         return true;
     }
 
-    public void m33325nj(long j, long j2, TdApi.MessageContent messageContent) {
+    public void m33328nj(long j, long j2, TdApi.MessageContent messageContent) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14175h2(j, j2, messageContent);
+            chatsRecyclerView.m14174h2(j, j2, messageContent);
         }
     }
 
-    public void m33320oj(long j, long j2, TdApi.MessageInteractionInfo messageInteractionInfo) {
+    public void m33323oj(long j, long j2, TdApi.MessageInteractionInfo messageInteractionInfo) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14174i2(j, j2, messageInteractionInfo);
+            chatsRecyclerView.m14173i2(j, j2, messageInteractionInfo);
         }
     }
 
-    public void m33315pj(long j, long j2) {
+    public void m33318pj(long j, long j2) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14190S1(j, j2, true);
+            chatsRecyclerView.m14189S1(j, j2, true);
         }
     }
 
-    public void m33310qj(long j, long j2) {
+    public void m33313qj(long j, long j2) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14190S1(j, j2, false);
+            chatsRecyclerView.m14189S1(j, j2, false);
         }
     }
 
-    public void m33305rj(TdApi.Message message, long j) {
+    public void m33308rj(TdApi.Message message, long j) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14173j2(message, j);
+            chatsRecyclerView.m14172j2(message, j);
         }
     }
 
-    public void m33301sj(long j, long[] jArr) {
+    public void m33304sj(long j, long[] jArr) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14172k2(j, jArr);
+            chatsRecyclerView.m14171k2(j, jArr);
         }
     }
 
-    public void m33297tj(int i, int i2) {
+    public void m33300tj(int i, int i2) {
         if (i != 0) {
-            C1379j0.m37290z0(C4403w.m27844o2(i, i2), 0);
+            C1379j0.m37293z0(C4403w.m27846o2(i, i2), 0);
         }
-        m33399Yj();
+        m33402Yj();
     }
 
-    public void m33294ui(AtomicInteger atomicInteger, boolean z, int i) {
+    public void m33297ui(AtomicInteger atomicInteger, boolean z, int i) {
         if (atomicInteger.decrementAndGet() == 0) {
-            C1379j0.m37290z0(C4403w.m27844o2(z ? R.string.ClearedXHistories : R.string.DeletedXChats, i), 0);
-            m33399Yj();
+            C1379j0.m37293z0(C4403w.m27846o2(z ? R.string.ClearedXHistories : R.string.DeletedXChats, i), 0);
+            m33402Yj();
         }
     }
 
-    public void m33293uj(AtomicInteger atomicInteger, Runnable runnable) {
+    public void m33296uj(AtomicInteger atomicInteger, Runnable runnable) {
         if (atomicInteger.decrementAndGet() == 0) {
-            this.f30167b.m2485dd().post(runnable);
+            this.f30170b.m2485dd().post(runnable);
         }
     }
 
-    public boolean m33290vi(final boolean z, boolean z2, View view, int i) {
+    public boolean m33293vi(final boolean z, boolean z2, View view, int i) {
         if (i != R.id.btn_delete) {
             return true;
         }
-        final int p = this.f9472S0.m21496p();
+        final int p = this.f9472S0.m21497p();
         final AtomicInteger atomicInteger = new AtomicInteger(p);
         Runnable x2Var = new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33294ui(atomicInteger, z, p);
+                View$OnClickListenerC2805o4.this.m33297ui(atomicInteger, z, p);
             }
         };
         for (int i2 = 0; i2 < p; i2++) {
-            this.f30167b.m2786K4(this.f9472S0.m21501j(i2), z2, x2Var);
+            this.f30170b.m2786K4(this.f9472S0.m21502j(i2), z2, x2Var);
         }
         return true;
     }
 
-    public static void m33289vj(Runnable runnable, TdApi.Object object) {
+    public static void m33292vj(Runnable runnable, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         } else if (constructor == -722616727) {
             runnable.run();
         }
     }
 
-    public void m33286wi(String str, final boolean z, final boolean z2) {
-        String i1 = C4403w.m27869i1(R.string.NoUndoWarn);
+    public void m33289wi(String str, final boolean z, final boolean z2) {
+        String i1 = C4403w.m27871i1(R.string.NoUndoWarn);
         int[] iArr = {R.id.btn_delete, R.id.btn_cancel};
-        String[] strArr = {str, C4403w.m27869i1(R.string.Cancel)};
+        String[] strArr = {str, C4403w.m27871i1(R.string.Cancel)};
         int[] iArr2 = {2, 1};
         int[] iArr3 = new int[2];
         iArr3[0] = z ? R.drawable.templarian_baseline_broom_24 : R.drawable.baseline_delete_24;
@@ -1081,54 +1081,54 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             @Override
             public final boolean mo493A3(View view, int i) {
                 boolean vi;
-                vi = View$OnClickListenerC2805o4.this.m33290vi(z, z2, view, i);
+                vi = View$OnClickListenerC2805o4.this.m33293vi(z, z2, view, i);
                 return vi;
             }
 
             @Override
             public boolean mo492Q() {
-                return C5115g0.m23935a(this);
+                return C5115g0.m23936a(this);
             }
 
             @Override
             public Object mo491b2(int i) {
-                return C5115g0.m23934b(this, i);
+                return C5115g0.m23935b(this, i);
             }
         });
     }
 
-    public boolean m33285wj(boolean z, final Runnable runnable, View view, int i) {
+    public boolean m33288wj(boolean z, final Runnable runnable, View view, int i) {
         if (i != R.id.btn_archiveUnarchiveChat) {
             return true;
         }
         TdApi.ChatList chatListMain = z ? new TdApi.ChatListMain() : new TdApi.ChatListArchive();
-        for (int i2 = 0; i2 < this.f9472S0.m21496p(); i2++) {
-            this.f30167b.m2270r4().m14783o(new TdApi.AddChatToList(this.f9472S0.m21501j(i2), chatListMain), new Client.AbstractC7865g() {
+        for (int i2 = 0; i2 < this.f9472S0.m21497p(); i2++) {
+            this.f30170b.m2270r4().m14783o(new TdApi.AddChatToList(this.f9472S0.m21502j(i2), chatListMain), new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
-                    View$OnClickListenerC2805o4.m33289vj(runnable, object);
+                    View$OnClickListenerC2805o4.m33292vj(runnable, object);
                 }
             });
         }
         return true;
     }
 
-    public static void m33282xi(AbstractC5917i iVar, int i, SparseIntArray sparseIntArray) {
+    public static void m33285xi(AbstractC5917i iVar, int i, SparseIntArray sparseIntArray) {
         iVar.mo1322a(sparseIntArray.get(R.id.btn_clearChatHistory) == R.id.btn_clearChatHistory);
     }
 
-    public boolean m33281xj(Runnable runnable, View view, int i) {
+    public boolean m33284xj(Runnable runnable, View view, int i) {
         if (i == R.id.btn_unblockSender || i == R.id.btn_blockSender) {
-            for (int p = this.f9472S0.m21496p() - 1; p >= 0; p--) {
-                long j = this.f9472S0.m21501j(p);
-                C10930q6 q6Var = this.f30167b;
-                q6Var.m2496d2(q6Var.m2183wb(j), i == R.id.btn_blockSender, this.f30167b.m2376ka(runnable));
+            for (int p = this.f9472S0.m21497p() - 1; p >= 0; p--) {
+                long j = this.f9472S0.m21502j(p);
+                C10930q6 q6Var = this.f30170b;
+                q6Var.m2496d2(q6Var.m2183wb(j), i == R.id.btn_blockSender, this.f30170b.m2376ka(runnable));
             }
         }
         return true;
     }
 
-    public static boolean m33278yi(AbstractC5917i iVar, View view, int i) {
+    public static boolean m33281yi(AbstractC5917i iVar, View view, int i) {
         if (i != R.id.btn_delete) {
             return true;
         }
@@ -1136,20 +1136,20 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         return true;
     }
 
-    public static boolean m33277yj(TdApi.Chat chat) {
+    public static boolean m33280yj(TdApi.Chat chat) {
         return true;
     }
 
-    public boolean m33274zi(TdApi.Chat chat) {
-        return this.f30167b.m2443g7(chat.f25367id);
+    public boolean m33277zi(TdApi.Chat chat) {
+        return this.f30170b.m2443g7(chat.f25370id);
     }
 
-    public static boolean m33273zj(TdApi.Chat chat) {
+    public static boolean m33276zj(TdApi.Chat chat) {
         return chat.unreadCount > 0 || chat.isMarkedAsUnread;
     }
 
     @Override
-    public void mo14166A0() {
+    public void mo14165A0() {
         C10846m8 m8Var = this.f9463J0;
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         m8Var.m3045B(chatsRecyclerView != null ? chatsRecyclerView.getLoadCount() : 40, null);
@@ -1157,25 +1157,25 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
 
     @Override
     public void mo4077A1(C10930q6 q6Var, long j, boolean z) {
-        if (this.f30167b.m2188w6() == q6Var.m2188w6() && j == 1) {
-            m33344jk(z);
+        if (this.f30170b.m2188w6() == q6Var.m2188w6() && j == 1) {
+            m33347jk(z);
         }
     }
 
     @Override
     public int mo408A9() {
-        return m33331mi() ? 2 : 3;
+        return m33334mi() ? 2 : 3;
     }
 
     @Override
     public void mo9477Ac() {
         View$OnClickListenerC9170d1 d1Var;
         super.mo9477Ac();
-        if (m33331mi() && (d1Var = this.f30156R) != null) {
-            d1Var.m10063d4(mo418W9());
+        if (m33334mi() && (d1Var = this.f30159R) != null) {
+            d1Var.m10062d4(mo418W9());
         }
-        m33400Yi(this.f30167b.m2142z4());
-        m33309qk();
+        m33403Yi(this.f30170b.m2142z4());
+        m33312qk();
     }
 
     @Override
@@ -1183,7 +1183,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33476Fj(secretChat);
+                View$OnClickListenerC2805o4.this.m33479Fj(secretChat);
             }
         });
     }
@@ -1203,7 +1203,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33484Dj(notificationSettingsScope, scopeNotificationSettings);
+                View$OnClickListenerC2805o4.this.m33487Dj(notificationSettingsScope, scopeNotificationSettings);
             }
         });
     }
@@ -1224,7 +1224,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
     }
 
     @Override
-    public boolean mo21728G(C5974t0 t0Var, boolean z, boolean z2) {
+    public boolean mo21729G(C5974t0 t0Var, boolean z, boolean z2) {
         if (this.f9484y0 == null) {
             return false;
         }
@@ -1236,10 +1236,10 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         } else if (!m9339Ta()) {
             return false;
         }
-        if (this.f9485z0.m6591j0().isEmpty() || ((LinearLayoutManager) this.f9484y0.getLayoutManager()).m39549X1() != 0 || !z2) {
+        if (this.f9485z0.m6591j0().isEmpty() || ((LinearLayoutManager) this.f9484y0.getLayoutManager()).m39552X1() != 0 || !z2) {
             return false;
         }
-        m33364fk(2, true);
+        m33367fk(2, true);
         return true;
     }
 
@@ -1263,7 +1263,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33301sj(j, jArr);
+                View$OnClickListenerC2805o4.this.m33304sj(j, jArr);
             }
         });
     }
@@ -1280,11 +1280,11 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         C5974t0 t0Var;
         C9906c cVar = this.f9485z0;
         if (cVar != null && cVar.m6586n0() && (chatsRecyclerView = this.f9484y0) != null) {
-            chatsRecyclerView.m39496D1();
+            chatsRecyclerView.m39499D1();
             LinearLayoutManager linearLayoutManager = (LinearLayoutManager) this.f9484y0.getLayoutManager();
             int k0 = this.f9485z0.m6589k0(true, null);
-            int r1 = C9903a.m6642r1(C4868i.m24726c2().m24584u0());
-            int X1 = linearLayoutManager.m39549X1();
+            int r1 = C9903a.m6642r1(C4868i.m24727c2().m24585u0());
+            int X1 = linearLayoutManager.m39552X1();
             if (X1 != -1) {
                 int i2 = r1 * X1;
                 int D = this.f9485z0.mo6153D() - 1;
@@ -1293,25 +1293,25 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                 } else {
                     i = X1 - 1;
                     C5974t0 t0Var2 = this.f9462I0;
-                    i2 += (t0Var2 == null || !t0Var2.m21732w()) ? C1357a0.m37541i(12.0f) : C5974t0.m21735t() + C1357a0.m37541i(1.0f);
+                    i2 += (t0Var2 == null || !t0Var2.m21733w()) ? C1357a0.m37544i(12.0f) : C5974t0.m21736t() + C1357a0.m37544i(1.0f);
                     k0--;
                     D--;
                 }
-                if (!this.f9485z0.m6587m0() && (t0Var = this.f9462I0) != null && t0Var.m21732w() && X1 >= m33351ii()) {
-                    i2 += C5974t0.m21735t();
+                if (!this.f9485z0.m6587m0() && (t0Var = this.f9462I0) != null && t0Var.m21733w() && X1 >= m33354ii()) {
+                    i2 += C5974t0.m21736t();
                 }
                 if (k0 != 0 && D > k0 && X1 > k0) {
                     i--;
-                    i2 += C1357a0.m37541i(12.0f);
+                    i2 += C1357a0.m37544i(12.0f);
                 }
-                int x = i2 + (i * C1357a0.m37526x());
+                int x = i2 + (i * C1357a0.m37529x());
                 if (this.f9485z0.m6587m0() && this.f9464K0) {
                     C5974t0 t0Var3 = this.f9462I0;
-                    x -= r1 + ((t0Var3 == null || !t0Var3.m21732w()) ? C1357a0.m37541i(12.0f) : C1357a0.m37541i(1.0f));
+                    x -= r1 + ((t0Var3 == null || !t0Var3.m21733w()) ? C1357a0.m37544i(12.0f) : C1357a0.m37544i(1.0f));
                 }
-                View C = linearLayoutManager.mo39262C(X1);
+                View C = linearLayoutManager.mo39265C(X1);
                 if (C != null) {
-                    x -= linearLayoutManager.m39231U(C);
+                    x -= linearLayoutManager.m39234U(C);
                 }
                 this.f9484y0.mo8024v1(0, -x);
             }
@@ -1319,41 +1319,41 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
     }
 
     @Override
-    public C6957m1.AbstractC6962e mo9611I4(View view, C6957m1.C6963f fVar, C5320c cVar, C5320c cVar2, C5146u0 u0Var, AbstractC9323v4<?> v4Var) {
+    public C6957m1.AbstractC6962e mo9610I4(View view, C6957m1.C6963f fVar, C5320c cVar, C5320c cVar2, C5146u0 u0Var, AbstractC9323v4<?> v4Var) {
         final C4592b3 chat = view instanceof C9903a ? ((C9903a) view).getChat() : null;
-        if (chat == null || !chat.m27138h0()) {
+        if (chat == null || !chat.m27140h0()) {
             View$OnClickListenerC6902i iVar = (View$OnClickListenerC6902i) view;
-            return this.f30167b.m2485dd().m3773N2(this, iVar.getPreviewChatList(), iVar.getPreviewChatId(), null, cVar, cVar2, u0Var, m33341ki() == 0, m33418Uh(chat), m33326ni(chat), new Runnable() {
+            return this.f30170b.m2485dd().m3773N2(this, iVar.getPreviewChatList(), iVar.getPreviewChatId(), null, cVar, cVar2, u0Var, m33344ki() == 0, m33421Uh(chat), m33329ni(chat), new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC2805o4.this.m33385bj(chat);
+                    View$OnClickListenerC2805o4.this.m33388bj(chat);
                 }
             });
         }
-        C10930q6 q6Var = this.f30167b;
-        TdApi.ChatListArchive chatListArchive = C7317b.f23225b;
+        C10930q6 q6Var = this.f30170b;
+        TdApi.ChatListArchive chatListArchive = C7317b.f23228b;
         if (q6Var.m2252s6(chatListArchive)) {
-            cVar.m23284a(R.id.btn_markChatAsRead);
-            u0Var.m23816a(R.string.ArchiveRead);
-            cVar2.m23284a(R.drawable.baseline_done_all_24);
+            cVar.m23285a(R.id.btn_markChatAsRead);
+            u0Var.m23817a(R.string.ArchiveRead);
+            cVar2.m23285a(R.drawable.baseline_done_all_24);
         }
-        boolean V = this.f30167b.m2294pc().m4135V();
-        cVar.m23284a(R.id.btn_pinUnpinChat);
+        boolean V = this.f30170b.m2294pc().m4135V();
+        cVar.m23285a(R.id.btn_pinUnpinChat);
         if (V) {
-            cVar2.m23284a(R.drawable.deproko_baseline_pin_24);
-            u0Var.m23816a(R.string.ArchivePin);
+            cVar2.m23285a(R.drawable.deproko_baseline_pin_24);
+            u0Var.m23817a(R.string.ArchivePin);
         } else {
-            cVar2.m23284a(R.drawable.baseline_arrow_upward_24);
-            u0Var.m23816a(R.string.ArchiveHide);
+            cVar2.m23285a(R.drawable.baseline_arrow_upward_24);
+            u0Var.m23817a(R.string.ArchiveHide);
         }
-        fVar.m18329Q(this.f30167b);
+        fVar.m18329Q(this.f30170b);
         fVar.m18334L(null, new C4587b(C9239m.getBaseAvatarRadiusDp(), new C4587b.C4588a((int) R.id.theme_color_avatarArchive, (int) R.drawable.baseline_archive_24), null));
-        fVar.m18335K(C4403w.m27869i1(R.string.ArchiveTitle), C4403w.m27844o2(R.string.xChats, this.f30167b.m2460f6(chatListArchive)));
+        fVar.m18335K(C4403w.m27871i1(R.string.ArchiveTitle), C4403w.m27846o2(R.string.xChats, this.f30170b.m2460f6(chatListArchive)));
         fVar.m18332N(new C6957m1.AbstractC6964g() {
             @Override
             public final boolean mo18302a(C3950k kVar, float f, Object obj) {
                 boolean aj;
-                aj = View$OnClickListenerC2805o4.this.m33390aj(kVar, f, obj);
+                aj = View$OnClickListenerC2805o4.this.m33393aj(kVar, f, obj);
                 return aj;
             }
         });
@@ -1365,7 +1365,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33453Li(i, i2);
+                View$OnClickListenerC2805o4.this.m33456Li(i, i2);
             }
         });
     }
@@ -1375,7 +1375,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         super.mo8867Ia();
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            C1399s0.m37171l0(chatsRecyclerView);
+            C1399s0.m37174l0(chatsRecyclerView);
             this.f9485z0.m6577x0();
         }
     }
@@ -1392,7 +1392,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                 m9341T8();
                 return;
             case R.id.menu_btn_delete:
-                m33438Ph(false);
+                m33441Ph(false);
                 return;
             case R.id.menu_btn_more:
                 C5320c cVar2 = new C5320c(2);
@@ -1406,9 +1406,9 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                 int i10 = 0;
                 int i11 = 0;
                 int i12 = 0;
-                while (i4 < this.f9472S0.m21496p()) {
-                    TdApi.Chat q = this.f9472S0.m21495q(i4);
-                    if (this.f30167b.m2368l2(m33410Wh(), q)) {
+                while (i4 < this.f9472S0.m21497p()) {
+                    TdApi.Chat q = this.f9472S0.m21496q(i4);
+                    if (this.f30170b.m2368l2(m33413Wh(), q)) {
                         if (C7317b.m17038f(q)) {
                             i6++;
                         } else {
@@ -1417,18 +1417,18 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                     }
                     cVar3 = cVar3;
                     i6 = i6;
-                    if (!this.f30167b.m2443g7(q.f25367id) && this.f30167b.m2304p2(q)) {
+                    if (!this.f30170b.m2443g7(q.f25370id) && this.f30170b.m2304p2(q)) {
                         i7++;
                     }
-                    if (this.f30167b.m2932B2(q)) {
+                    if (this.f30170b.m2932B2(q)) {
                         i8++;
                     } else {
                         i9++;
                     }
-                    if (this.f30167b.m2884E2(q)) {
+                    if (this.f30170b.m2884E2(q)) {
                         i10++;
                     }
-                    if (this.f30167b.m2447g3(q)) {
+                    if (this.f30170b.m2447g3(q)) {
                         i12++;
                     } else {
                         i11++;
@@ -1436,107 +1436,107 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                     i4++;
                 }
                 C5320c cVar4 = cVar3;
-                if (this.f9472S0.m21496p() < this.f30167b.m2189w5(m33410Wh()).f33873a) {
-                    cVar2.m23284a(R.id.more_btn_selectAll);
-                    u0Var.m23816a(R.string.SelectMore);
+                if (this.f9472S0.m21497p() < this.f30170b.m2189w5(m33413Wh()).f33876a) {
+                    cVar2.m23285a(R.id.more_btn_selectAll);
+                    u0Var.m23817a(R.string.SelectMore);
                     cVar = cVar4;
-                    cVar.m23284a(R.drawable.baseline_playlist_add_check_24);
+                    cVar.m23285a(R.drawable.baseline_playlist_add_check_24);
                 } else {
                     cVar = cVar4;
                 }
                 if (i5 + i6 > 0) {
-                    cVar2.m23284a(R.id.more_btn_archiveUnarchive);
-                    u0Var.m23816a(i6 > 0 ? R.string.Unarchive : R.string.Archive);
-                    cVar.m23284a(i6 > 0 ? R.drawable.baseline_unarchive_24 : R.drawable.baseline_archive_24);
+                    cVar2.m23285a(R.id.more_btn_archiveUnarchive);
+                    u0Var.m23817a(i6 > 0 ? R.string.Unarchive : R.string.Archive);
+                    cVar.m23285a(i6 > 0 ? R.drawable.baseline_unarchive_24 : R.drawable.baseline_archive_24);
                 }
                 if (i8 > 0) {
-                    cVar2.m23284a(R.id.more_btn_markAsRead);
-                    u0Var.m23816a(R.string.MarkAsRead);
-                    cVar.m23284a(R.drawable.baseline_done_all_24);
+                    cVar2.m23285a(R.id.more_btn_markAsRead);
+                    u0Var.m23817a(R.string.MarkAsRead);
+                    cVar.m23285a(R.drawable.baseline_done_all_24);
                 } else if (i9 > 0) {
-                    cVar2.m23284a(R.id.more_btn_markAsUnread);
-                    u0Var.m23816a(R.string.MarkAsUnread);
-                    cVar.m23284a(R.drawable.baseline_unsubscribe_24);
+                    cVar2.m23285a(R.id.more_btn_markAsUnread);
+                    u0Var.m23817a(R.string.MarkAsUnread);
+                    cVar.m23285a(R.drawable.baseline_unsubscribe_24);
                 }
-                if (i10 == this.f9472S0.m21496p()) {
-                    cVar2.m23284a(R.id.more_btn_report);
-                    u0Var.m23816a(R.string.Report);
-                    cVar.m23284a(R.drawable.baseline_report_24);
+                if (i10 == this.f9472S0.m21497p()) {
+                    cVar2.m23285a(R.id.more_btn_report);
+                    u0Var.m23817a(R.string.Report);
+                    cVar.m23285a(R.drawable.baseline_report_24);
                 }
                 if (i12 > 0) {
-                    cVar2.m23284a(R.id.more_btn_unblock);
-                    u0Var.m23816a(R.string.Unblock);
-                    cVar.m23284a(R.drawable.baseline_block_24);
-                } else if (i11 == this.f9472S0.m21496p()) {
-                    cVar2.m23284a(R.id.more_btn_block);
-                    u0Var.m23816a(R.string.BlockContact);
-                    cVar.m23284a(R.drawable.baseline_block_24);
+                    cVar2.m23285a(R.id.more_btn_unblock);
+                    u0Var.m23817a(R.string.Unblock);
+                    cVar.m23285a(R.drawable.baseline_block_24);
+                } else if (i11 == this.f9472S0.m21497p()) {
+                    cVar2.m23285a(R.id.more_btn_block);
+                    u0Var.m23817a(R.string.BlockContact);
+                    cVar.m23285a(R.drawable.baseline_block_24);
                 }
-                if (i7 == this.f9472S0.m21496p()) {
-                    cVar2.m23284a(R.id.more_btn_clearHistory);
-                    u0Var.m23816a(R.string.ClearHistory);
-                    cVar.m23284a(R.drawable.baseline_delete_24);
+                if (i7 == this.f9472S0.m21497p()) {
+                    cVar2.m23285a(R.id.more_btn_clearHistory);
+                    u0Var.m23817a(R.string.ClearHistory);
+                    cVar.m23285a(R.drawable.baseline_delete_24);
                 }
-                cVar2.m23284a(R.id.more_btn_clearCache);
-                u0Var.m23816a(R.string.DeleteChatCache);
-                cVar.m23284a(R.drawable.templarian_baseline_broom_24);
-                m9300Z9().m9296Zd(cVar2.m23280e(), u0Var.m23813d(), cVar.m23280e());
+                cVar2.m23285a(R.id.more_btn_clearCache);
+                u0Var.m23817a(R.string.DeleteChatCache);
+                cVar.m23285a(R.drawable.templarian_baseline_broom_24);
+                m9300Z9().m9296Zd(cVar2.m23281e(), u0Var.m23814d(), cVar.m23281e());
                 return;
             case R.id.menu_btn_muteUnmute:
-                int Sh = m33426Sh();
+                int Sh = m33429Sh();
                 if (Sh == 1) {
                     SparseIntArray sparseIntArray = new SparseIntArray(3);
                     int i13 = 0;
                     boolean z = false;
-                    for (int i14 = 0; i14 < this.f9472S0.m21496p(); i14++) {
-                        TdApi.Chat q2 = this.f9472S0.m21495q(i14);
-                        if (!this.f30167b.m2443g7(q2.f25367id)) {
+                    for (int i14 = 0; i14 < this.f9472S0.m21497p(); i14++) {
+                        TdApi.Chat q2 = this.f9472S0.m21496q(i14);
+                        if (!this.f30170b.m2443g7(q2.f25370id)) {
                             i13++;
-                            TdApi.ScopeNotificationSettings ib = this.f30167b.m2407ib(q2);
+                            TdApi.ScopeNotificationSettings ib = this.f30170b.m2407ib(q2);
                             sparseIntArray.put(ib.getConstructor(), sparseIntArray.get(ib.getConstructor()) + 1);
-                            if (!z && this.f30167b.m2440ga().m3240B(q2.f25367id, true)) {
+                            if (!z && this.f30170b.m2440ga().m3240B(q2.f25370id, true)) {
                                 z = true;
                             }
                         }
                     }
                     int[] iArr = null;
-                    TdApi.ScopeNotificationSettings jb = sparseIntArray.size() == 3 ? this.f30167b.m2391jb(C7321e.m16946h(sparseIntArray.keyAt(0))) : null;
+                    TdApi.ScopeNotificationSettings jb = sparseIntArray.size() == 3 ? this.f30170b.m2391jb(C7321e.m16946h(sparseIntArray.keyAt(0))) : null;
                     final AbstractC5919k c4Var = new AbstractC5919k() {
                         @Override
                         public final void mo3250a(int i15) {
-                            View$OnClickListenerC2805o4.this.m33355hj(i15);
+                            View$OnClickListenerC2805o4.this.m33358hj(i15);
                         }
                     };
                     C5320c cVar5 = new C5320c(3);
                     C5320c cVar6 = new C5320c(3);
                     C5320c cVar7 = z ? new C5320c(3) : null;
                     C5146u0 u0Var2 = new C5146u0(3);
-                    if (jb == null || !C4779t2.m25464n3(jb.muteFor)) {
+                    if (jb == null || !C4779t2.m25465n3(jb.muteFor)) {
                         i4 = 1;
                     }
                     HandlerC10770jj.m3653Z2(cVar5, cVar6, u0Var2, cVar7, false, i4, true, false, false, jb != null ? HandlerC10770jj.m3493p3(jb.muteFor, true) : null, z);
-                    CharSequence q22 = C4403w.m27836q2(R.string.MuteXChats, i13);
-                    int[] e = cVar5.m23280e();
-                    String[] d = u0Var2.m23813d();
+                    CharSequence q22 = C4403w.m27838q2(R.string.MuteXChats, i13);
+                    int[] e = cVar5.m23281e();
+                    String[] d = u0Var2.m23814d();
                     if (cVar7 != null) {
-                        iArr = cVar7.m23280e();
+                        iArr = cVar7.m23281e();
                     }
-                    m9261ee(q22, e, d, iArr, cVar6.m23280e(), new AbstractC5117h0() {
+                    m9261ee(q22, e, d, iArr, cVar6.m23281e(), new AbstractC5117h0() {
                         @Override
                         public final boolean mo493A3(View view2, int i15) {
                             boolean ij;
-                            ij = View$OnClickListenerC2805o4.m33350ij(AbstractC5919k.this, view2, i15);
+                            ij = View$OnClickListenerC2805o4.m33353ij(AbstractC5919k.this, view2, i15);
                             return ij;
                         }
 
                         @Override
                         public boolean mo492Q() {
-                            return C5115g0.m23935a(this);
+                            return C5115g0.m23936a(this);
                         }
 
                         @Override
                         public Object mo491b2(int i15) {
-                            return C5115g0.m23934b(this, i15);
+                            return C5115g0.m23935b(this, i15);
                         }
                     });
                     return;
@@ -1544,13 +1544,13 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                     int i15 = 0;
                     int i16 = 0;
                     int i17 = 0;
-                    for (int i18 = 0; i18 < this.f9472S0.m21496p(); i18++) {
-                        TdApi.Chat q3 = this.f9472S0.m21495q(i18);
-                        if (!this.f30167b.m2443g7(q3.f25367id)) {
-                            if (this.f30167b.m2271r3(q3) > 0) {
+                    for (int i18 = 0; i18 < this.f9472S0.m21497p(); i18++) {
+                        TdApi.Chat q3 = this.f9472S0.m21496q(i18);
+                        if (!this.f30170b.m2443g7(q3.f25370id)) {
+                            if (this.f30170b.m2271r3(q3) > 0) {
                                 i16++;
                             }
-                            int i19 = this.f30167b.m2407ib(q3).muteFor;
+                            int i19 = this.f30170b.m2407ib(q3).muteFor;
                             if (i19 > 0) {
                                 i17 = i15 == 0 ? i19 : Math.min(i19, i17);
                                 i15++;
@@ -1560,26 +1560,26 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                     final Runnable s1Var = new Runnable() {
                         @Override
                         public final void run() {
-                            View$OnClickListenerC2805o4.this.m33345jj();
+                            View$OnClickListenerC2805o4.this.m33348jj();
                         }
                     };
                     if (i15 > 0) {
-                        m9261ee(C4403w.m27865j1(this.f9472S0.m21496p() > i15 ? R.string.NotificationsEnableOverride3 : R.string.NotificationsEnableOverride2, C4403w.m27909Z1(HandlerC10770jj.m3503o3(i17))), new int[]{R.id.btn_unmute, R.id.btn_cancel}, new String[]{C4403w.m27844o2(R.string.EnableNotifications2, i16), C4403w.m27869i1(R.string.Cancel)}, null, new int[]{R.drawable.baseline_notifications_24, R.drawable.baseline_cancel_24}, new AbstractC5117h0() {
+                        m9261ee(C4403w.m27867j1(this.f9472S0.m21497p() > i15 ? R.string.NotificationsEnableOverride3 : R.string.NotificationsEnableOverride2, C4403w.m27911Z1(HandlerC10770jj.m3503o3(i17))), new int[]{R.id.btn_unmute, R.id.btn_cancel}, new String[]{C4403w.m27846o2(R.string.EnableNotifications2, i16), C4403w.m27871i1(R.string.Cancel)}, null, new int[]{R.drawable.baseline_notifications_24, R.drawable.baseline_cancel_24}, new AbstractC5117h0() {
                             @Override
                             public final boolean mo493A3(View view2, int i20) {
                                 boolean kj;
-                                kj = View$OnClickListenerC2805o4.m33340kj(s1Var, view2, i20);
+                                kj = View$OnClickListenerC2805o4.m33343kj(s1Var, view2, i20);
                                 return kj;
                             }
 
                             @Override
                             public boolean mo492Q() {
-                                return C5115g0.m23935a(this);
+                                return C5115g0.m23936a(this);
                             }
 
                             @Override
                             public Object mo491b2(int i20) {
-                                return C5115g0.m23934b(this, i20);
+                                return C5115g0.m23935b(this, i20);
                             }
                         });
                         return;
@@ -1591,14 +1591,14 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                     return;
                 }
             case R.id.menu_btn_pinUnpin:
-                int Th = m33422Th();
+                int Th = m33425Th();
                 long j = 0;
                 if (Th != 0) {
                     i3 = 0;
                     i2 = 0;
-                    for (int i20 = 0; i20 < this.f9472S0.m21496p(); i20++) {
-                        if (Th != 3 || !C7317b.m17037g(this.f9472S0.m21495q(i20), this.f9457D0)) {
-                            j = this.f9472S0.m21501j(i20);
+                    for (int i20 = 0; i20 < this.f9472S0.m21497p(); i20++) {
+                        if (Th != 3 || !C7317b.m17037g(this.f9472S0.m21496q(i20), this.f9457D0)) {
+                            j = this.f9472S0.m21502j(i20);
                             if (C7316a.m17051j(j)) {
                                 i2++;
                             } else {
@@ -1611,24 +1611,24 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                     i2 = 0;
                 }
                 int i21 = i3 + i2;
-                if (i21 == 1 && this.f30167b.m2143z3(this.f9457D0, j)) {
-                    this.f30167b.m2485dd().m3798K7(this, m33410Wh(), this.f9472S0.m21501j(0), null, R.id.btn_pinUnpinChat, new RunnableC2736n1(this));
+                if (i21 == 1 && this.f30170b.m2143z3(this.f9457D0, j)) {
+                    this.f30170b.m2485dd().m3798K7(this, m33413Wh(), this.f9472S0.m21502j(0), null, R.id.btn_pinUnpinChat, new RunnableC2736n1(this));
                     return;
                 } else if (i3 > 0 || i2 > 0) {
                     final boolean z2 = Th == 1;
-                    int Ga = m33410Wh().getConstructor() == -400991316 ? this.f30167b.m2844Ga() : this.f30167b.m2860Fa();
+                    int Ga = m33413Wh().getConstructor() == -400991316 ? this.f30170b.m2844Ga() : this.f30170b.m2860Fa();
                     int l0 = this.f9485z0.m6588l0(false);
                     int l02 = this.f9485z0.m6588l0(true);
                     if (z2 || (l0 + i3 <= Ga && l02 + i2 <= Ga)) {
                         if (i21 == 1) {
-                            charSequence = this.f30167b.m2691Q3(j);
+                            charSequence = this.f30170b.m2691Q3(j);
                         } else {
-                            charSequence = C4403w.m27836q2(z2 ? R.string.UnpinXChats : R.string.PinXChats, i21);
+                            charSequence = C4403w.m27838q2(z2 ? R.string.UnpinXChats : R.string.PinXChats, i21);
                         }
                         int[] iArr2 = {R.id.btn_pinUnpinChat, R.id.btn_cancel};
                         String[] strArr = new String[2];
-                        strArr[0] = C4403w.m27869i1(z2 ? R.string.UnpinFromTop : R.string.PinToTop);
-                        strArr[1] = C4403w.m27869i1(R.string.Cancel);
+                        strArr[0] = C4403w.m27871i1(z2 ? R.string.UnpinFromTop : R.string.PinToTop);
+                        strArr[1] = C4403w.m27871i1(R.string.Cancel);
                         int[] iArr3 = new int[2];
                         iArr3[0] = z2 ? R.drawable.deproko_baseline_pin_undo_24 : R.drawable.deproko_baseline_pin_24;
                         iArr3[1] = R.drawable.baseline_cancel_24;
@@ -1636,23 +1636,23 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                             @Override
                             public final boolean mo493A3(View view2, int i22) {
                                 boolean mj;
-                                mj = View$OnClickListenerC2805o4.this.m33330mj(z2, view2, i22);
+                                mj = View$OnClickListenerC2805o4.this.m33333mj(z2, view2, i22);
                                 return mj;
                             }
 
                             @Override
                             public boolean mo492Q() {
-                                return C5115g0.m23935a(this);
+                                return C5115g0.m23936a(this);
                             }
 
                             @Override
                             public Object mo491b2(int i22) {
-                                return C5115g0.m23934b(this, i22);
+                                return C5115g0.m23935b(this, i22);
                             }
                         });
                         return;
                     }
-                    this.f30165a.m14584H3().m8985g(view).m8958i(m9300Z9()).m8951q(R.drawable.baseline_error_24).m8971D(this.f30167b, m33410Wh().getConstructor() == -400991316 ? C4403w.m27836q2(R.string.PinTooMuchWarn, Ga) : C4403w.m27844o2(R.string.ErrorPinnedChatsLimit, Ga));
+                    this.f30168a.m14584H3().m8985g(view).m8958i(m9300Z9()).m8951q(R.drawable.baseline_error_24).m8971D(this.f30170b, m33413Wh().getConstructor() == -400991316 ? C4403w.m27838q2(R.string.PinTooMuchWarn, Ga) : C4403w.m27846o2(R.string.ErrorPinnedChatsLimit, Ga));
                     return;
                 } else {
                     return;
@@ -1672,15 +1672,15 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             C9903a aVar = (C9903a) iVar;
             if (aVar.m6664C0(f, f2)) {
                 C4592b3 chat = aVar.getChat();
-                if (this.f9484y0 != null && chat.m27123n0() && this.f9485z0.m6599f0() && (l0 = this.f9484y0.m39418l0(iVar)) != null) {
+                if (this.f9484y0 != null && chat.m27125n0() && this.f9485z0.m6599f0() && (l0 = this.f9484y0.m39421l0(iVar)) != null) {
                     iVar.m18508R(f, f2);
-                    this.f30165a.m14478j1(true);
-                    this.f9461H0.m38815H(l0);
+                    this.f30168a.m14477j1(true);
+                    this.f9461H0.m38818H(l0);
                     C9357x2.C9370l lVar = this.f9478Y0;
                     if (lVar != null) {
                         lVar.m8920E(true);
                     }
-                    this.f9478Y0 = this.f30165a.m14584H3().m8985g(iVar).m8958i(m9300Z9()).m8948u(C2566j4.f8759a).m8972C(this.f30167b, R.string.DragChatsHint);
+                    this.f9478Y0 = this.f30168a.m14584H3().m8985g(iVar).m8958i(m9300Z9()).m8948u(C2566j4.f8759a).m8972C(this.f30170b, R.string.DragChatsHint);
                     return true;
                 }
             }
@@ -1692,7 +1692,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
     public void mo1349J3(long j, TdApi.UserStatus userStatus, boolean z) {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14167q2(j);
+            chatsRecyclerView.m14166q2(j);
         }
     }
 
@@ -1703,10 +1703,10 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
 
     @Override
     public void mo8866Ja(int i, int i2) {
-        m33400Yi(this.f30167b.m2142z4());
+        m33403Yi(this.f30170b.m2142z4());
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14176g2(C4403w.m27981H1(i, i2));
+            chatsRecyclerView.m14175g2(C4403w.m27983H1(i, i2));
         }
     }
 
@@ -1720,7 +1720,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33461Ji(j, z);
+                View$OnClickListenerC2805o4.this.m33464Ji(j, z);
             }
         });
     }
@@ -1731,9 +1731,9 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
     }
 
     @Override
-    public void mo21727L4(C5974t0 t0Var, boolean z, float f, boolean z2) {
+    public void mo21728L4(C5974t0 t0Var, boolean z, float f, boolean z2) {
         if (z2) {
-            m33364fk(2, false);
+            m33367fk(2, false);
         }
     }
 
@@ -1753,18 +1753,18 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             case R.id.more_btn_unblock:
                 switch (i) {
                     case R.id.more_btn_archiveUnarchive:
-                        i4 = m33410Wh().getConstructor() == 362770115 ? R.string.UnarchivedXChats : R.string.ArchivedXChats;
-                        i3 = m33341ki();
+                        i4 = m33413Wh().getConstructor() == 362770115 ? R.string.UnarchivedXChats : R.string.ArchivedXChats;
+                        i3 = m33344ki();
                         i2 = 0;
                         break;
                     case R.id.more_btn_block:
                     case R.id.more_btn_unblock:
                         HashSet hashSet = new HashSet();
                         i2 = 0;
-                        for (int i7 = 0; i7 < this.f9472S0.m21496p(); i7++) {
-                            long e4 = this.f30167b.m2478e4(this.f9472S0.m21495q(i7));
+                        for (int i7 = 0; i7 < this.f9472S0.m21497p(); i7++) {
+                            long e4 = this.f30170b.m2478e4(this.f9472S0.m21496q(i7));
                             hashSet.add(Long.valueOf(e4));
-                            if (this.f30167b.m2480e2().m1567z2(e4)) {
+                            if (this.f30170b.m2480e2().m1567z2(e4)) {
                                 i2++;
                             }
                         }
@@ -1774,16 +1774,16 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                         break;
                     case R.id.more_btn_markAsRead:
                         i4 = R.string.ReadAllChatsDone;
-                        i3 = m33341ki();
+                        i3 = m33344ki();
                         i2 = 0;
                         break;
                     case R.id.more_btn_markAsUnread:
                         i4 = R.string.MarkedXChats;
-                        i3 = m33341ki();
+                        i3 = m33344ki();
                         i2 = 0;
                         break;
                     case R.id.more_btn_report:
-                        i3 = m33341ki();
+                        i3 = m33344ki();
                         i4 = 0;
                         i2 = 0;
                         break;
@@ -1793,7 +1793,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                 final Runnable x1Var = new Runnable() {
                     @Override
                     public final void run() {
-                        View$OnClickListenerC2805o4.this.m33297tj(i4, i3);
+                        View$OnClickListenerC2805o4.this.m33300tj(i4, i3);
                     }
                 };
                 if (i3 == 1) {
@@ -1808,32 +1808,32 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                             i5 = R.id.btn_markChatAsUnread;
                             break;
                         case R.id.more_btn_report:
-                            HandlerC10770jj.m3708T7(m9300Z9(), this.f9472S0.m21501j(0), null, x1Var, null);
+                            HandlerC10770jj.m3708T7(m9300Z9(), this.f9472S0.m21502j(0), null, x1Var, null);
                             return;
                         default:
                             i5 = 0;
                             break;
                     }
                     if (i5 != 0) {
-                        this.f30167b.m2485dd().m3798K7(this, m33410Wh(), this.f9472S0.m21501j(0), null, i5, x1Var);
+                        this.f30170b.m2485dd().m3798K7(this, m33413Wh(), this.f9472S0.m21502j(0), null, i5, x1Var);
                         return;
                     }
                 }
-                final AtomicInteger atomicInteger = new AtomicInteger(this.f9472S0.m21496p());
+                final AtomicInteger atomicInteger = new AtomicInteger(this.f9472S0.m21497p());
                 final Runnable w2Var = new Runnable() {
                     @Override
                     public final void run() {
-                        View$OnClickListenerC2805o4.this.m33293uj(atomicInteger, x1Var);
+                        View$OnClickListenerC2805o4.this.m33296uj(atomicInteger, x1Var);
                     }
                 };
                 switch (i) {
                     case R.id.more_btn_archiveUnarchive:
-                        final boolean z = m33410Wh().getConstructor() == 362770115;
-                        CharSequence q2 = C4403w.m27836q2(z ? R.string.UnarchiveXChats : R.string.ArchiveXChats, this.f9472S0.m21496p());
+                        final boolean z = m33413Wh().getConstructor() == 362770115;
+                        CharSequence q2 = C4403w.m27838q2(z ? R.string.UnarchiveXChats : R.string.ArchiveXChats, this.f9472S0.m21497p());
                         int[] iArr = {R.id.btn_archiveUnarchiveChat, R.id.btn_cancel};
                         String[] strArr = new String[2];
-                        strArr[0] = C4403w.m27869i1(z ? R.string.Unarchive : R.string.Archive);
-                        strArr[1] = C4403w.m27869i1(R.string.Cancel);
+                        strArr[0] = C4403w.m27871i1(z ? R.string.Unarchive : R.string.Archive);
+                        strArr[1] = C4403w.m27871i1(R.string.Cancel);
                         int[] iArr2 = new int[2];
                         iArr2[0] = z ? R.drawable.baseline_unarchive_24 : R.drawable.baseline_archive_24;
                         iArr2[1] = R.drawable.baseline_cancel_24;
@@ -1841,93 +1841,93 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                             @Override
                             public final boolean mo493A3(View view, int i8) {
                                 boolean wj;
-                                wj = View$OnClickListenerC2805o4.this.m33285wj(z, w2Var, view, i8);
+                                wj = View$OnClickListenerC2805o4.this.m33288wj(z, w2Var, view, i8);
                                 return wj;
                             }
 
                             @Override
                             public boolean mo492Q() {
-                                return C5115g0.m23935a(this);
+                                return C5115g0.m23936a(this);
                             }
 
                             @Override
                             public Object mo491b2(int i8) {
-                                return C5115g0.m23934b(this, i8);
+                                return C5115g0.m23935b(this, i8);
                             }
                         });
                         return;
                     case R.id.more_btn_block:
                     case R.id.more_btn_unblock:
                         if (i == R.id.more_btn_unblock) {
-                            for (int p = this.f9472S0.m21496p() - 1; p >= 0; p--) {
-                                long j = this.f9472S0.m21501j(p);
-                                C10930q6 q6Var = this.f30167b;
-                                q6Var.m2496d2(q6Var.m2183wb(j), false, this.f30167b.m2392ja());
+                            for (int p = this.f9472S0.m21497p() - 1; p >= 0; p--) {
+                                long j = this.f9472S0.m21502j(p);
+                                C10930q6 q6Var = this.f30170b;
+                                q6Var.m2496d2(q6Var.m2183wb(j), false, this.f30170b.m2392ja());
                             }
                             return;
                         }
-                        m9261ee(C4403w.m27836q2(i2 == i3 ? R.string.BlockXBots : R.string.BlockXUsers, i3), new int[]{R.id.btn_blockSender, R.id.btn_cancel}, new String[]{C4403w.m27869i1(R.string.BlockContact), C4403w.m27869i1(R.string.Cancel)}, new int[]{2, 1}, new int[]{R.drawable.baseline_block_24, R.drawable.baseline_cancel_24}, new AbstractC5117h0() {
+                        m9261ee(C4403w.m27838q2(i2 == i3 ? R.string.BlockXBots : R.string.BlockXUsers, i3), new int[]{R.id.btn_blockSender, R.id.btn_cancel}, new String[]{C4403w.m27871i1(R.string.BlockContact), C4403w.m27871i1(R.string.Cancel)}, new int[]{2, 1}, new int[]{R.drawable.baseline_block_24, R.drawable.baseline_cancel_24}, new AbstractC5117h0() {
                             @Override
                             public final boolean mo493A3(View view, int i8) {
                                 boolean xj;
-                                xj = View$OnClickListenerC2805o4.this.m33281xj(w2Var, view, i8);
+                                xj = View$OnClickListenerC2805o4.this.m33284xj(w2Var, view, i8);
                                 return xj;
                             }
 
                             @Override
                             public boolean mo492Q() {
-                                return C5115g0.m23935a(this);
+                                return C5115g0.m23936a(this);
                             }
 
                             @Override
                             public Object mo491b2(int i8) {
-                                return C5115g0.m23934b(this, i8);
+                                return C5115g0.m23935b(this, i8);
                             }
                         });
                         return;
                     case R.id.more_btn_report:
-                        HandlerC10770jj.m3688V7(m9300Z9(), C5062b.m24150v(this.f9472S0), x1Var);
+                        HandlerC10770jj.m3688V7(m9300Z9(), C5062b.m24151v(this.f9472S0), x1Var);
                         return;
                 }
-                while (i6 < this.f9472S0.m21496p()) {
+                while (i6 < this.f9472S0.m21497p()) {
                     switch (i) {
                         case R.id.more_btn_markAsRead:
-                            this.f30167b.m2733N9(this.f9472S0.m21501j(i6), 0L, w2Var);
+                            this.f30170b.m2733N9(this.f9472S0.m21502j(i6), 0L, w2Var);
                             break;
                         case R.id.more_btn_markAsUnread:
-                            this.f30167b.m2717O9(this.f9472S0.m21495q(i6), w2Var);
+                            this.f30170b.m2717O9(this.f9472S0.m21496q(i6), w2Var);
                             break;
                     }
                     i6++;
                 }
                 return;
             case R.id.more_btn_clearCache:
-                m9261ee(C4403w.m27836q2(R.string.ClearXChats, this.f9472S0.m21496p()), new int[]{R.id.btn_clearCache, R.id.btn_cancel}, new String[]{C4403w.m27869i1(R.string.DeleteChatCache), C4403w.m27869i1(R.string.Cancel)}, null, new int[]{R.drawable.templarian_baseline_broom_24, R.drawable.baseline_cancel_24}, new AbstractC5117h0() {
+                m9261ee(C4403w.m27838q2(R.string.ClearXChats, this.f9472S0.m21497p()), new int[]{R.id.btn_clearCache, R.id.btn_cancel}, new String[]{C4403w.m27871i1(R.string.DeleteChatCache), C4403w.m27871i1(R.string.Cancel)}, null, new int[]{R.drawable.templarian_baseline_broom_24, R.drawable.baseline_cancel_24}, new AbstractC5117h0() {
                     @Override
                     public final boolean mo493A3(View view, int i8) {
                         boolean Cj;
-                        Cj = View$OnClickListenerC2805o4.this.m33488Cj(view, i8);
+                        Cj = View$OnClickListenerC2805o4.this.m33491Cj(view, i8);
                         return Cj;
                     }
 
                     @Override
                     public boolean mo492Q() {
-                        return C5115g0.m23935a(this);
+                        return C5115g0.m23936a(this);
                     }
 
                     @Override
                     public Object mo491b2(int i8) {
-                        return C5115g0.m23934b(this, i8);
+                        return C5115g0.m23935b(this, i8);
                     }
                 });
                 return;
             case R.id.more_btn_clearHistory:
-                m33438Ph(true);
+                m33441Ph(true);
                 return;
             case R.id.more_btn_selectAll:
                 int i8 = 0;
-                while (i6 < this.f9472S0.m21496p()) {
-                    if (this.f30167b.m2932B2(this.f9472S0.m21495q(i6))) {
+                while (i6 < this.f9472S0.m21497p()) {
+                    if (this.f30170b.m2932B2(this.f9472S0.m21496q(i6))) {
                         i8++;
                     }
                     i6++;
@@ -1935,33 +1935,33 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                 C5320c cVar = new C5320c(3);
                 C5146u0 u0Var = new C5146u0(3);
                 C5320c cVar2 = new C5320c(3);
-                cVar.m23284a(R.id.btn_selectAll);
-                u0Var.m23816a(R.string.SelectAll);
-                cVar2.m23284a(R.drawable.baseline_playlist_add_check_24);
-                if (i8 == this.f9472S0.m21496p() && i8 < this.f30167b.m2189w5(m33410Wh()).f33874b) {
-                    cVar.m23284a(R.id.btn_selectUnread);
-                    u0Var.m23816a(R.string.SelectUnread);
-                    cVar2.m23284a(R.drawable.baseline_unsubscribe_24);
+                cVar.m23285a(R.id.btn_selectAll);
+                u0Var.m23817a(R.string.SelectAll);
+                cVar2.m23285a(R.drawable.baseline_playlist_add_check_24);
+                if (i8 == this.f9472S0.m21497p() && i8 < this.f30170b.m2189w5(m33413Wh()).f33877b) {
+                    cVar.m23285a(R.id.btn_selectUnread);
+                    u0Var.m23817a(R.string.SelectUnread);
+                    cVar2.m23285a(R.drawable.baseline_unsubscribe_24);
                 }
-                cVar.m23284a(R.id.btn_selectMuted);
-                u0Var.m23816a(R.string.SelectMuted);
-                cVar2.m23284a(R.drawable.baseline_notifications_off_24);
-                m9261ee(C4403w.m27869i1(R.string.SelectMore), cVar.m23280e(), u0Var.m23813d(), null, cVar2.m23280e(), new AbstractC5117h0() {
+                cVar.m23285a(R.id.btn_selectMuted);
+                u0Var.m23817a(R.string.SelectMuted);
+                cVar2.m23285a(R.drawable.baseline_notifications_off_24);
+                m9261ee(C4403w.m27871i1(R.string.SelectMore), cVar.m23281e(), u0Var.m23814d(), null, cVar2.m23281e(), new AbstractC5117h0() {
                     @Override
                     public final boolean mo493A3(View view, int i9) {
                         boolean Aj;
-                        Aj = View$OnClickListenerC2805o4.this.m33496Aj(view, i9);
+                        Aj = View$OnClickListenerC2805o4.this.m33499Aj(view, i9);
                         return Aj;
                     }
 
                     @Override
                     public boolean mo492Q() {
-                        return C5115g0.m23935a(this);
+                        return C5115g0.m23936a(this);
                     }
 
                     @Override
                     public Object mo491b2(int i9) {
-                        return C5115g0.m23934b(this, i9);
+                        return C5115g0.m23935b(this, i9);
                     }
                 });
                 return;
@@ -1975,7 +1975,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33464Ij(user);
+                View$OnClickListenerC2805o4.this.m33467Ij(user);
             }
         });
     }
@@ -1988,18 +1988,18 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         }
     }
 
-    public final void m33438Ph(final boolean z) {
+    public final void m33441Ph(final boolean z) {
         TdApi.SecretChat X3;
         long j = 0;
         int i = 0;
-        for (int i2 = 0; i2 < this.f9472S0.m21496p(); i2++) {
-            if (this.f30167b.m2542a3(this.f9472S0.m21495q(i2))) {
+        for (int i2 = 0; i2 < this.f9472S0.m21497p(); i2++) {
+            if (this.f30170b.m2542a3(this.f9472S0.m21496q(i2))) {
                 i++;
-                j = this.f9472S0.m21501j(i2);
+                j = this.f9472S0.m21502j(i2);
             }
         }
         if (i == 1) {
-            this.f30167b.m2485dd().m3798K7(this, m33410Wh(), j, null, z ? R.id.btn_clearChatHistory : R.id.btn_removeChatFromList, new RunnableC2736n1(this));
+            this.f30170b.m2485dd().m3798K7(this, m33413Wh(), j, null, z ? R.id.btn_clearChatHistory : R.id.btn_removeChatFromList, new RunnableC2736n1(this));
             return;
         }
         int i3 = 0;
@@ -2008,22 +2008,22 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         int i6 = 0;
         int i7 = 0;
         int i8 = 0;
-        for (int i9 = 0; i9 < this.f9472S0.m21496p(); i9++) {
-            TdApi.Chat q = this.f9472S0.m21495q(i9);
-            if (this.f30167b.m2542a3(q)) {
+        for (int i9 = 0; i9 < this.f9472S0.m21497p(); i9++) {
+            TdApi.Chat q = this.f9472S0.m21496q(i9);
+            if (this.f30170b.m2542a3(q)) {
                 i3++;
-                if (this.f30167b.m2836H2(q.f25367id)) {
+                if (this.f30170b.m2836H2(q.f25370id)) {
                     i7++;
                 }
-                if (!z && C7316a.m17051j(q.f25367id) && (X3 = this.f30167b.m2586X3(q.f25367id)) != null && X3.state.getConstructor() != -1945106707) {
+                if (!z && C7316a.m17051j(q.f25370id) && (X3 = this.f30170b.m2586X3(q.f25370id)) != null && X3.state.getConstructor() != -1945106707) {
                     i8++;
                 }
-                TdApi.ChatMemberStatus K3 = this.f30167b.m2787K3(q.f25367id);
-                if (K3 != null && C4779t2.m25679H2(K3)) {
+                TdApi.ChatMemberStatus K3 = this.f30170b.m2787K3(q.f25370id);
+                if (K3 != null && C4779t2.m25680H2(K3)) {
                     i6++;
                 }
-                if (!this.f30167b.m2171x7(q) && !this.f30167b.m2883E3(q.f25367id)) {
-                    if (this.f30167b.m2752M6(q)) {
+                if (!this.f30170b.m2171x7(q) && !this.f30170b.m2883E3(q.f25370id)) {
+                    if (this.f30170b.m2752M6(q)) {
                         i4++;
                     } else {
                         i5++;
@@ -2031,88 +2031,88 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                 }
             }
         }
-        SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(C4403w.m27836q2(z ? R.string.ClearXHistoriesConfirm : R.string.DeleteXChatsConfirm, i3));
+        SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(C4403w.m27838q2(z ? R.string.ClearXHistoriesConfirm : R.string.DeleteXChatsConfirm, i3));
         int i10 = i4 + i5;
         if (i10 + i6 > 0 || (!z && i8 > 0)) {
             spannableStringBuilder.append((CharSequence) "\n");
             if (i6 > 0) {
-                spannableStringBuilder.append((CharSequence) "\n").append(C4403w.m27836q2(R.string.LosingXAdminRights, i6));
+                spannableStringBuilder.append((CharSequence) "\n").append(C4403w.m27838q2(R.string.LosingXAdminRights, i6));
             }
             if (i10 > 0) {
-                spannableStringBuilder.append((CharSequence) "\n").append(C4403w.m27836q2(i4 == 0 ? R.string.LeaveXPrivateGroup : i5 == 0 ? R.string.LeaveXPrivateChannel : R.string.LeaveXChats, i10));
+                spannableStringBuilder.append((CharSequence) "\n").append(C4403w.m27838q2(i4 == 0 ? R.string.LeaveXPrivateGroup : i5 == 0 ? R.string.LeaveXPrivateChannel : R.string.LeaveXChats, i10));
             }
             if (!z && i8 > 0) {
-                spannableStringBuilder.append((CharSequence) "\n").append(C4403w.m27836q2(R.string.ClosingXSecretChats, i8));
+                spannableStringBuilder.append((CharSequence) "\n").append(C4403w.m27838q2(R.string.ClosingXSecretChats, i8));
             }
         }
-        final String o2 = C4403w.m27844o2(z ? R.string.ClearXHistories : R.string.DeleteXChats, this.f9472S0.m21496p());
+        final String o2 = C4403w.m27846o2(z ? R.string.ClearXHistories : R.string.DeleteXChats, this.f9472S0.m21497p());
         final AbstractC5917i w3Var = new AbstractC5917i() {
             @Override
             public final void mo1322a(boolean z2) {
-                View$OnClickListenerC2805o4.this.m33286wi(o2, z, z2);
+                View$OnClickListenerC2805o4.this.m33289wi(o2, z, z2);
             }
         };
         if (i7 > 0) {
-            m9206me(new C9188f2(R.id.btn_removeChatFromList).m10010c(false).m10011b(spannableStringBuilder).m9997p(new C2964ra[]{new C2964ra(12, (int) R.id.btn_clearChatHistory, 0, C4403w.m27836q2(R.string.RevokeForX, i7), (int) R.id.btn_clearChatHistory, false)}).m9996q(R.id.theme_color_textNegative).m9995r(z ? R.string.ClearHistoryBtn : R.string.Delete).m10003j(new AbstractC9323v4.AbstractC9343r() {
+            m9206me(new C9188f2(R.id.btn_removeChatFromList).m10009c(false).m10010b(spannableStringBuilder).m9996p(new C2964ra[]{new C2964ra(12, (int) R.id.btn_clearChatHistory, 0, C4403w.m27838q2(R.string.RevokeForX, i7), (int) R.id.btn_clearChatHistory, false)}).m9995q(R.id.theme_color_textNegative).m9994r(z ? R.string.ClearHistoryBtn : R.string.Delete).m10002j(new AbstractC9323v4.AbstractC9343r() {
                 @Override
                 public final void mo1773l6(int i11, SparseIntArray sparseIntArray) {
-                    View$OnClickListenerC2805o4.m33282xi(AbstractC5917i.this, i11, sparseIntArray);
+                    View$OnClickListenerC2805o4.m33285xi(AbstractC5917i.this, i11, sparseIntArray);
                 }
             }));
         } else {
-            m9261ee(spannableStringBuilder, new int[]{R.id.btn_delete, R.id.btn_cancel}, new String[]{o2, C4403w.m27869i1(R.string.Cancel)}, new int[]{2, 1}, new int[]{R.drawable.templarian_baseline_broom_24, R.drawable.baseline_cancel_24}, new AbstractC5117h0() {
+            m9261ee(spannableStringBuilder, new int[]{R.id.btn_delete, R.id.btn_cancel}, new String[]{o2, C4403w.m27871i1(R.string.Cancel)}, new int[]{2, 1}, new int[]{R.drawable.templarian_baseline_broom_24, R.drawable.baseline_cancel_24}, new AbstractC5117h0() {
                 @Override
                 public final boolean mo493A3(View view, int i11) {
                     boolean yi;
-                    yi = View$OnClickListenerC2805o4.m33278yi(AbstractC5917i.this, view, i11);
+                    yi = View$OnClickListenerC2805o4.m33281yi(AbstractC5917i.this, view, i11);
                     return yi;
                 }
 
                 @Override
                 public boolean mo492Q() {
-                    return C5115g0.m23935a(this);
+                    return C5115g0.m23936a(this);
                 }
 
                 @Override
                 public Object mo491b2(int i11) {
-                    return C5115g0.m23934b(this, i11);
+                    return C5115g0.m23935b(this, i11);
                 }
             });
         }
     }
 
     @Override
-    public boolean mo9575Qf(View view, C4601c3 c3Var) {
-        m33412Vj(this.f30167b.m2632U2(c3Var.m27051a()));
+    public boolean mo9574Qf(View view, C4601c3 c3Var) {
+        m33415Vj(this.f30170b.m2632U2(c3Var.m27053a()));
         return true;
     }
 
-    public int m33434Qh() {
+    public int m33437Qh() {
         C5974t0 t0Var;
         int k0 = this.f9485z0.m6589k0(true, null);
-        int r1 = C9903a.m6642r1(C4868i.m24726c2().m24584u0());
+        int r1 = C9903a.m6642r1(C4868i.m24727c2().m24585u0());
         int D = this.f9485z0.mo6153D() - 1;
         int i = r1 * D;
         if (this.f9485z0.m6587m0() && D > 1) {
             D--;
             C5974t0 t0Var2 = this.f9462I0;
-            i += (t0Var2 == null || !t0Var2.m21732w()) ? C1357a0.m37541i(12.0f) : C5974t0.m21735t() + C1357a0.m37541i(1.0f);
+            i += (t0Var2 == null || !t0Var2.m21733w()) ? C1357a0.m37544i(12.0f) : C5974t0.m21736t() + C1357a0.m37544i(1.0f);
             k0--;
         }
         int i2 = D;
-        if (!this.f9485z0.m6587m0() && (t0Var = this.f9462I0) != null && t0Var.m21732w()) {
-            i += C5974t0.m21735t();
+        if (!this.f9485z0.m6587m0() && (t0Var = this.f9462I0) != null && t0Var.m21733w()) {
+            i += C5974t0.m21736t();
         }
         if (k0 != 0 && D > k0) {
             i2--;
-            i += C1357a0.m37541i(12.0f);
+            i += C1357a0.m37544i(12.0f);
         }
-        int x = i + (i2 * C1357a0.m37526x());
+        int x = i + (i2 * C1357a0.m37529x());
         if (this.f9485z0.m6587m0() && this.f9464K0) {
             C5974t0 t0Var3 = this.f9462I0;
-            x -= r1 + ((t0Var3 == null || !t0Var3.m21732w()) ? C1357a0.m37541i(12.0f) : C1357a0.m37541i(1.0f));
+            x -= r1 + ((t0Var3 == null || !t0Var3.m21733w()) ? C1357a0.m37544i(12.0f) : C1357a0.m37544i(1.0f));
         }
-        return x + C2139ap.m35479W(42);
+        return x + C2139ap.m35482W(42);
     }
 
     @Override
@@ -2120,7 +2120,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33449Mi(j, z);
+                View$OnClickListenerC2805o4.this.m33452Mi(j, z);
             }
         });
     }
@@ -2130,7 +2130,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33310qj(j, j2);
+                View$OnClickListenerC2805o4.this.m33313qj(j, j2);
             }
         });
     }
@@ -2140,18 +2140,18 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         return R.id.controller_chats;
     }
 
-    public final int m33430Rh() {
+    public final int m33433Rh() {
         AbstractC5912d<TdApi.Chat> n3Var = new AbstractC5912d() {
             @Override
             public final boolean mo1511a(Object obj) {
                 boolean zi;
-                zi = View$OnClickListenerC2805o4.this.m33274zi((TdApi.Chat) obj);
+                zi = View$OnClickListenerC2805o4.this.m33277zi((TdApi.Chat) obj);
                 return zi;
             }
         };
-        final C10930q6 q6Var = this.f30167b;
+        final C10930q6 q6Var = this.f30170b;
         Objects.requireNonNull(q6Var);
-        return m33371ei(n3Var, new AbstractC5912d() {
+        return m33374ei(n3Var, new AbstractC5912d() {
             @Override
             public final boolean mo1511a(Object obj) {
                 return C10930q6.this.m2542a3((TdApi.Chat) obj);
@@ -2165,24 +2165,24 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
     }
 
     @Override
-    public void mo21726S1(C5974t0 t0Var, boolean z, boolean z2) {
+    public void mo21727S1(C5974t0 t0Var, boolean z, boolean z2) {
         if (this.f9484y0 != null && !this.f9485z0.m6591j0().isEmpty()) {
-            int ii = m33351ii();
-            this.f9485z0.m39312I(ii);
+            int ii = m33354ii();
+            this.f9485z0.m39315I(ii);
             if (ii > 0) {
-                this.f9485z0.m39312I(ii - 1);
+                this.f9485z0.m39315I(ii - 1);
             }
             if (this.f9485z0.m6587m0() && this.f9464K0) {
                 C9906c cVar = this.f9485z0;
-                cVar.m39312I(cVar.mo6153D() - 1);
+                cVar.m39315I(cVar.mo6153D() - 1);
             }
         }
     }
 
-    public final int m33426Sh() {
-        final C10930q6 q6Var = this.f30167b;
+    public final int m33429Sh() {
+        final C10930q6 q6Var = this.f30170b;
         Objects.requireNonNull(q6Var);
-        return m33371ei(new AbstractC5912d() {
+        return m33374ei(new AbstractC5912d() {
             @Override
             public final boolean mo1511a(Object obj) {
                 return C10930q6.this.m2207v3((TdApi.Chat) obj);
@@ -2191,15 +2191,15 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             @Override
             public final boolean mo1511a(Object obj) {
                 boolean Ai;
-                Ai = View$OnClickListenerC2805o4.this.m33497Ai((TdApi.Chat) obj);
+                Ai = View$OnClickListenerC2805o4.this.m33500Ai((TdApi.Chat) obj);
                 return Ai;
             }
         });
     }
 
-    public C10846m8 m33424Sj() {
+    public C10846m8 m33427Sj() {
         if (this.f9463J0 == null) {
-            this.f9463J0 = new C10846m8(this.f30167b, m33410Wh(), this.f9481v0, false);
+            this.f9463J0 = new C10846m8(this.f30170b, m33413Wh(), this.f9481v0, false);
         }
         return this.f9463J0;
     }
@@ -2209,7 +2209,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33320oj(j, j2, messageInteractionInfo);
+                View$OnClickListenerC2805o4.this.m33323oj(j, j2, messageInteractionInfo);
             }
         });
     }
@@ -2219,50 +2219,50 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33481Ei(chat, i, gVar);
+                View$OnClickListenerC2805o4.this.m33484Ei(chat, i, gVar);
             }
         });
     }
 
-    public final int m33422Th() {
-        return m33371ei(new AbstractC5912d() {
+    public final int m33425Th() {
+        return m33374ei(new AbstractC5912d() {
             @Override
             public final boolean mo1511a(Object obj) {
                 boolean Bi;
-                Bi = View$OnClickListenerC2805o4.this.m33493Bi((TdApi.Chat) obj);
+                Bi = View$OnClickListenerC2805o4.this.m33496Bi((TdApi.Chat) obj);
                 return Bi;
             }
         }, null);
     }
 
-    public final CharSequence m33420Tj() {
-        long[] M = this.f30167b.m2946A4().m1425M();
-        int I = this.f30167b.m2946A4().m1429I();
+    public final CharSequence m33423Tj() {
+        long[] M = this.f30170b.m2946A4().m1425M();
+        int I = this.f30170b.m2946A4().m1429I();
         if (I == 1) {
-            return C4403w.m27853m1(R.string.ContactsOnTelegramSingle, this.f30167b.m2480e2().m1721K2(M[0]));
+            return C4403w.m27855m1(R.string.ContactsOnTelegramSingle, this.f30170b.m2480e2().m1721K2(M[0]));
         }
         if (I == 2) {
-            return C4403w.m27853m1(R.string.ContactsOnTelegramSeveral, this.f30167b.m2480e2().m1749D2(M[0]), this.f30167b.m2480e2().m1749D2(M[1]));
+            return C4403w.m27855m1(R.string.ContactsOnTelegramSeveral, this.f30170b.m2480e2().m1749D2(M[0]), this.f30170b.m2480e2().m1749D2(M[1]));
         }
         if (I == 3) {
-            return C4403w.m27853m1(R.string.ContactsOnTelegramSeveral, C1363c0.m37453U(C4403w.m27854m0(), this.f30167b.m2480e2().m1749D2(M[0]), this.f30167b.m2480e2().m1749D2(M[1])), this.f30167b.m2480e2().m1749D2(M[2]));
+            return C4403w.m27855m1(R.string.ContactsOnTelegramSeveral, C1363c0.m37456U(C4403w.m27856m0(), this.f30170b.m2480e2().m1749D2(M[0]), this.f30170b.m2480e2().m1749D2(M[1])), this.f30170b.m2480e2().m1749D2(M[2]));
         }
         if (I == 4) {
-            return C4403w.m27853m1(R.string.ContactsOnTelegramSeveral, C1363c0.m37453U(C4403w.m27854m0(), this.f30167b.m2480e2().m1749D2(M[0]), this.f30167b.m2480e2().m1749D2(M[1]), this.f30167b.m2480e2().m1749D2(M[2])), this.f30167b.m2480e2().m1749D2(M[3]));
+            return C4403w.m27855m1(R.string.ContactsOnTelegramSeveral, C1363c0.m37456U(C4403w.m27856m0(), this.f30170b.m2480e2().m1749D2(M[0]), this.f30170b.m2480e2().m1749D2(M[1]), this.f30170b.m2480e2().m1749D2(M[2])), this.f30170b.m2480e2().m1749D2(M[3]));
         }
         if (I >= 5) {
-            return C4403w.m27848n2(R.string.ContactsOnTelegramMany, I - 3, C4403w.m27843p(), C1363c0.m37453U(C4403w.m27854m0(), this.f30167b.m2480e2().m1749D2(M[0]), this.f30167b.m2480e2().m1749D2(M[1]), this.f30167b.m2480e2().m1749D2(M[2])));
+            return C4403w.m27850n2(R.string.ContactsOnTelegramMany, I - 3, C4403w.m27845p(), C1363c0.m37456U(C4403w.m27856m0(), this.f30170b.m2480e2().m1749D2(M[0]), this.f30170b.m2480e2().m1749D2(M[1]), this.f30170b.m2480e2().m1749D2(M[2])));
         }
         return null;
     }
 
-    public boolean m33418Uh(C4592b3 b3Var) {
-        return b3Var != null && !b3Var.m27138h0() && this.f30167b.m2542a3(b3Var.m27099w());
+    public boolean m33421Uh(C4592b3 b3Var) {
+        return b3Var != null && !b3Var.m27140h0() && this.f30170b.m2542a3(b3Var.m27101w());
     }
 
-    public boolean m33416Uj() {
+    public boolean m33419Uj() {
         C5974t0 t0Var;
-        return (this.f9484y0 == null || (t0Var = this.f9462I0) == null || !t0Var.m21732w()) ? false : true;
+        return (this.f9484y0 == null || (t0Var = this.f9462I0) == null || !t0Var.m21733w()) ? false : true;
     }
 
     @Override
@@ -2280,12 +2280,12 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33429Ri(j, j2, i);
+                View$OnClickListenerC2805o4.this.m33432Ri(j, j2, i);
             }
         });
     }
 
-    public final void m33414Vh() {
+    public final void m33417Vh() {
         List<C10327b> list = this.f9471R0;
         if (list != null) {
             for (C10327b bVar : list) {
@@ -2295,15 +2295,15 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         }
     }
 
-    public final void m33412Vj(final TdApi.Chat chat) {
+    public final void m33415Vj(final TdApi.Chat chat) {
         if (this.f9456C0 == null) {
-            m33394Zj(chat);
+            m33397Zj(chat);
             return;
         }
         Runnable z2Var = new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33405Xi(chat);
+                View$OnClickListenerC2805o4.this.m33408Xi(chat);
             }
         };
         if (this.f9456C0.mo3379d(chat, z2Var)) {
@@ -2318,11 +2318,11 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
 
     @Override
     public void mo1566W2(final TdApi.BasicGroup basicGroup, boolean z) {
-        if (!C4779t2.m25506h3(basicGroup.status)) {
+        if (!C4779t2.m25507h3(basicGroup.status)) {
             m9135wd(new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC2805o4.this.m33485Di(basicGroup);
+                    View$OnClickListenerC2805o4.this.m33488Di(basicGroup);
                 }
             });
         }
@@ -2330,32 +2330,32 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
 
     @Override
     public int mo418W9() {
-        return m33331mi() ? R.id.menu_passcode : R.id.menu_search;
+        return m33334mi() ? R.id.menu_passcode : R.id.menu_search;
     }
 
-    public TdApi.ChatList m33410Wh() {
+    public TdApi.ChatList m33413Wh() {
         if (this.f9457D0 == null) {
-            this.f9457D0 = C7317b.f23224a;
+            this.f9457D0 = C7317b.f23227a;
         }
         return this.f9457D0;
     }
 
-    public final void m33408Wj() {
+    public final void m33411Wj() {
         LinearLayoutManager linearLayoutManager = (LinearLayoutManager) this.f9484y0.getLayoutManager();
-        if (linearLayoutManager.m39549X1() == 0) {
-            View C = linearLayoutManager.mo39262C(0);
+        if (linearLayoutManager.m39552X1() == 0) {
+            View C = linearLayoutManager.mo39265C(0);
             if (C != null) {
-                int max = Math.max(0, linearLayoutManager.m39231U(C));
-                this.f9484y0.mo8024v1(0, Math.max(0, linearLayoutManager.m39241O(C)) - max);
+                int max = Math.max(0, linearLayoutManager.m39234U(C));
+                this.f9484y0.mo8024v1(0, Math.max(0, linearLayoutManager.m39244O(C)) - max);
             }
             C2760nb nbVar = this.f9455B0;
             if (nbVar != null) {
-                nbVar.m33569Vh(this);
+                nbVar.m33572Vh(this);
                 return;
             }
             return;
         }
-        m33359gk(true);
+        m33362gk(true);
     }
 
     @Override
@@ -2363,31 +2363,31 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33305rj(message, j);
+                View$OnClickListenerC2805o4.this.m33308rj(message, j);
             }
         });
     }
 
-    public final void m33406Xh(long j) {
+    public final void m33409Xh(long j) {
         TdApi.Chat f;
-        if (m33341ki() > 0 && (f = this.f9472S0.m21505f(j)) != null && !this.f30167b.m2542a3(f)) {
-            m33369ek(f, true);
+        if (m33344ki() > 0 && (f = this.f9472S0.m21506f(j)) != null && !this.f30170b.m2542a3(f)) {
+            m33372ek(f, true);
         }
     }
 
-    public void m33404Xj(float f, float f2) {
+    public void m33407Xj(float f, float f2) {
         ChatsRecyclerView chatsRecyclerView;
-        if (m33416Uj() && (chatsRecyclerView = this.f9484y0) != null) {
+        if (m33419Uj() && (chatsRecyclerView = this.f9484y0) != null) {
             RecyclerView.AbstractC0902p layoutManager = chatsRecyclerView.getLayoutManager();
-            View C = layoutManager.mo39262C(m33351ii());
+            View C = layoutManager.mo39265C(m33354ii());
             int top = C != null ? C.getTop() : 0;
             if (top > 0) {
-                int U = layoutManager.m39231U(C);
+                int U = layoutManager.m39234U(C);
                 if ((C instanceof C9903a) && U < top && f2 < top) {
                     float f3 = U;
                     if (f2 >= f3) {
-                        this.f9484y0.m39496D1();
-                        this.f9462I0.m21767O(f, f2 - f3);
+                        this.f9484y0.m39499D1();
+                        this.f9462I0.m21768O(f, f2 - f3);
                     }
                 }
             }
@@ -2399,7 +2399,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33413Vi(j, message);
+                View$OnClickListenerC2805o4.this.m33416Vi(j, message);
             }
         });
     }
@@ -2407,20 +2407,20 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
     @Override
     public void mo35Y0(int i, float f, C3950k kVar) {
         if (i == 0 && f == 0.0f) {
-            m33386bi();
+            m33389bi();
         }
     }
 
-    public final void m33401Yh() {
+    public final void m33404Yh() {
         this.f9485z0.m6597g0();
-        m33349ik(this.f9463J0.m3018v() && this.f9485z0.m6591j0().size() == 0);
+        m33352ik(this.f9463J0.m3018v() && this.f9485z0.m6591j0().size() == 0);
     }
 
-    public final void m33399Yj() {
+    public final void m33402Yj() {
         m9300Z9().m9212m8(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33472Gj();
+                View$OnClickListenerC2805o4.this.m33475Gj();
             }
         });
     }
@@ -2430,22 +2430,22 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         C3940f fVar;
         if (!m9347Sa()) {
             C2760nb nbVar = this.f9455B0;
-            boolean z2 = nbVar != null && nbVar.m9339Ta() && (fVar = this.f9476W0) != null && fVar.m29584g() > 0.0f;
-            m33391ai();
+            boolean z2 = nbVar != null && nbVar.m9339Ta() && (fVar = this.f9476W0) != null && fVar.m29586g() > 0.0f;
+            m33394ai();
             if (this.f9475V0 != null) {
                 AbstractRunnableC5910b bVar = this.f9477X0;
                 if (bVar != null) {
-                    bVar.m21857c();
+                    bVar.m21858c();
                     this.f9477X0 = null;
                 }
                 if (!z2 || jArr == null || jArr.length <= 0 || !z) {
-                    m33334lk(jArr, i, z2);
+                    m33337lk(jArr, i, z2);
                     return;
                 }
                 C2812g gVar = new C2812g(jArr, i);
                 this.f9477X0 = gVar;
-                gVar.m21855e(C1379j0.m37313o());
-                C1379j0.m37332e0(this.f9477X0, 1300L);
+                gVar.m21856e(C1379j0.m37316o());
+                C1379j0.m37335e0(this.f9477X0, 1300L);
             }
         }
     }
@@ -2455,7 +2455,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         super.mo417Z8();
         C5974t0 t0Var = this.f9462I0;
         if (t0Var != null) {
-            t0Var.m21739o();
+            t0Var.m21740o();
         }
         C10684g8 g8Var = this.f9466M0;
         if (g8Var != null) {
@@ -2467,30 +2467,30 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                 b3Var.mo4501a3();
             }
         }
-        C4868i.m24726c2().m24867I3(this);
-        this.f30167b.m2294pc().m4124e0(this);
-        this.f30167b.m2781K9().m1826o0(this);
-        this.f30167b.m2480e2().m1619m2(this);
+        C4868i.m24727c2().m24868I3(this);
+        this.f30170b.m2294pc().m4124e0(this);
+        this.f30170b.m2781K9().m1826o0(this);
+        this.f30170b.m2480e2().m1619m2(this);
         this.f9463J0.m3040G(this);
         C11052v1.m1768b().m1766d(this);
-        this.f30167b.m2946A4().m1394i0(this);
+        this.f30170b.m2946A4().m1394i0(this);
     }
 
-    public final void m33396Zh() {
+    public final void m33399Zh() {
         if (this.f9463J0.m3042E()) {
-            m33319ok();
+            m33322ok();
         } else {
-            m33336li();
+            m33339li();
         }
     }
 
-    public final void m33394Zj(TdApi.Chat chat) {
+    public final void m33397Zj(TdApi.Chat chat) {
         HandlerC10770jj.C10780j jVar;
         AbstractC2815j jVar2 = this.f9456C0;
         Object c = jVar2 != null ? jVar2.mo3380c() : null;
-        int F0 = C9678w2.m7805F0(this.f30167b.m2188w6(), chat, null);
+        int F0 = C9678w2.m7805F0(this.f30170b.m2188w6(), chat, null);
         if (F0 != 0) {
-            jVar = new HandlerC10770jj.C10780j().m3358r(c).m3372d(F0, C9678w2.m7801G0(this.f30167b.m2188w6(), chat, null, F0));
+            jVar = new HandlerC10770jj.C10780j().m3358r(c).m3372d(F0, C9678w2.m7801G0(this.f30170b.m2188w6(), chat, null, F0));
         } else {
             jVar = new HandlerC10770jj.C10780j().m3358r(c);
         }
@@ -2498,10 +2498,10 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         if (jVar3 != null) {
             jVar3.mo3382a(jVar);
         }
-        if (m33410Wh().getConstructor() != -400991316) {
+        if (m33413Wh().getConstructor() != -400991316) {
             jVar.m3368h();
         }
-        this.f30167b.m2485dd().m3881C4(this, chat, jVar);
+        this.f30170b.m2485dd().m3881C4(this, chat, jVar);
     }
 
     @Override
@@ -2509,66 +2509,66 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         C10721i0.m4191f(this, j, messageSender);
     }
 
-    public void m33391ai() {
-        m33396Zh();
-        m33401Yh();
+    public void m33394ai() {
+        m33399Zh();
+        m33404Yh();
     }
 
-    public final void m33389ak(TdApi.Function function) {
-        this.f30167b.m2270r4().m14783o(function, new Client.AbstractC7865g() {
+    public final void m33392ak(TdApi.Function function) {
+        this.f30170b.m2270r4().m14783o(function, new Client.AbstractC7865g() {
             @Override
             public final void mo255t2(TdApi.Object object) {
-                View$OnClickListenerC2805o4.this.m33460Jj(object);
+                View$OnClickListenerC2805o4.this.m33463Jj(object);
             }
         });
     }
 
-    public final void m33386bi() {
+    public final void m33389bi() {
         RecyclerView recyclerView = this.f9474U0;
         if (recyclerView != null) {
             m9180qd(recyclerView);
-            C1399s0.m37162q(this.f9474U0);
+            C1399s0.m37165q(this.f9474U0);
             this.f9482w0.removeView(this.f9474U0);
             this.f9475V0 = null;
             this.f9474U0 = null;
             AbstractRunnableC5910b bVar = this.f9477X0;
             if (bVar != null) {
-                bVar.m21857c();
+                bVar.m21858c();
                 this.f9477X0 = null;
             }
         }
     }
 
-    public final void m33384bk() {
+    public final void m33387bk() {
         if (this.f9474U0 == null) {
             this.f9475V0 = new C2546iq(this, new View.OnClickListener() {
                 @Override
                 public final void onClick(View view) {
-                    View$OnClickListenerC2805o4.this.m33452Lj(view);
+                    View$OnClickListenerC2805o4.this.m33455Lj(view);
                 }
             }, this);
             ArrayList arrayList = new ArrayList(5);
             AbstractC10650f0 f0Var = this.f9481v0;
             if (f0Var != null) {
                 arrayList.add(new C2964ra(24, 0, 0, f0Var.mo4378i3()));
-            } else if (m33410Wh() instanceof TdApi.ChatListArchive) {
+            } else if (m33413Wh() instanceof TdApi.ChatListArchive) {
                 arrayList.add(new C2964ra(24, 0, 0, R.string.NoArchive));
             } else {
                 C10684g8 g8Var = this.f9466M0;
                 if (g8Var == null || g8Var.m4301L() <= 0) {
-                    int L = this.f30167b.m2946A4().m1426L();
-                    arrayList.add(new C2964ra(72, (int) R.id.inviteFriendsText, (int) R.drawable.baseline_forum_96, m33420Tj(), false));
+                    int L = this.f30170b.m2946A4().m1426L();
+                    arrayList.add(new C2964ra(72, (int) R.id.inviteFriendsText, (int) R.drawable.baseline_forum_96, m33423Tj(), false));
                     arrayList.add(new C2964ra(2));
                     arrayList.add(new C2964ra(20, R.id.btn_invite, 0, L > 0 ? R.string.ShowContacts : R.string.InviteContacts));
                     arrayList.add(new C2964ra(3));
                 } else {
-                    arrayList.add(new C2964ra(19, (int) R.id.changePhoneText, (int) R.drawable.baseline_archive_96, C4403w.m27982H0(this, R.string.OpenArchiveHint, new Object[0]), false));
+                    arrayList.add(new C2964ra(19, (int) R.id.changePhoneText, (int) R.drawable.baseline_archive_96, C4403w.m27984H0(this, R.string.OpenArchiveHint, new Object[0]), false));
                     arrayList.add(new C2964ra(2));
                     arrayList.add(new C2964ra(20, R.id.btn_archive, 0, R.string.OpenArchive));
                     arrayList.add(new C2964ra(3));
                 }
             }
-            this.f9475V0.m34116x2(arrayList, false);
+            this.f9475V0.m34119x2(arrayList, false);
             C2811f fVar = new C2811f(mo4347s());
             this.f9474U0 = fVar;
             fVar.setHasFixedSize(true);
@@ -2588,7 +2588,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33465Ii(j, draftMessage);
+                View$OnClickListenerC2805o4.this.m33468Ii(j, draftMessage);
             }
         });
     }
@@ -2598,7 +2598,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33437Pi(j, chatPhotoInfo);
+                View$OnClickListenerC2805o4.this.m33440Pi(j, chatPhotoInfo);
             }
         });
     }
@@ -2608,33 +2608,33 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         C10722i1.m4171a(this, j, j2, sticker);
     }
 
-    public final void m33381ci(List<C10846m8.C10848b> list) {
+    public final void m33384ci(List<C10846m8.C10848b> list) {
         int initialLoadCount = this.f9484y0.getInitialLoadCount();
         final ArrayList arrayList = new ArrayList(list.size());
         for (C10846m8.C10848b bVar : list) {
             initialLoadCount--;
-            arrayList.add(new C4592b3(this, m33410Wh(), bVar.f34205a, initialLoadCount >= 0));
+            arrayList.add(new C4592b3(this, m33413Wh(), bVar.f34208a, initialLoadCount >= 0));
         }
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33489Ci(arrayList);
+                View$OnClickListenerC2805o4.this.m33492Ci(arrayList);
             }
         });
     }
 
-    public final void m33379ck(final AbstractC5912d<TdApi.Chat> dVar, int i) {
+    public final void m33382ck(final AbstractC5912d<TdApi.Chat> dVar, int i) {
         TdApi.Chat di;
         final C10327b bVar = new C10327b();
         Iterator<C4592b3> it = this.f9485z0.m6591j0().iterator();
         while (it.hasNext()) {
             C4592b3 next = it.next();
-            if (m33418Uh(next) && (di = m33376di(next.m27099w())) != null && dVar.mo1511a(di)) {
+            if (m33421Uh(next) && (di = m33379di(next.m27101w())) != null && dVar.mo1511a(di)) {
                 if (i > 0) {
                     i--;
                 }
-                if (this.f9472S0.m21503h(di.f25367id) < 0) {
-                    m33369ek(di, false);
+                if (this.f9472S0.m21504h(di.f25370id) < 0) {
+                    m33372ek(di, false);
                 }
             }
         }
@@ -2645,19 +2645,19 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         final AbstractC5917i y3Var = new AbstractC5917i() {
             @Override
             public final void mo1322a(boolean z) {
-                View$OnClickListenerC2805o4.this.m33448Mj(bVar, z);
+                View$OnClickListenerC2805o4.this.m33451Mj(bVar, z);
             }
         };
         if (i > 0 || i == -1) {
-            this.f30167b.m2237t5(this.f9457D0, new AbstractC5918j() {
+            this.f30170b.m2237t5(this.f9457D0, new AbstractC5918j() {
                 @Override
                 public final void mo1330a(Object obj) {
-                    View$OnClickListenerC2805o4.this.m33440Oj(dVar, bVar, (TdApi.Chat) obj);
+                    View$OnClickListenerC2805o4.this.m33443Oj(dVar, bVar, (TdApi.Chat) obj);
                 }
             }, new AbstractC5917i() {
                 @Override
                 public final void mo1322a(boolean z) {
-                    View$OnClickListenerC2805o4.this.m33432Qj(y3Var, z);
+                    View$OnClickListenerC2805o4.this.m33435Qj(y3Var, z);
                 }
             }, true);
         } else {
@@ -2684,17 +2684,17 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         return true;
     }
 
-    public TdApi.Chat m33376di(TdApi.Chat chat) {
+    public TdApi.Chat m33379di(TdApi.Chat chat) {
         AbstractC10650f0 f0Var;
-        if (chat == null || (((f0Var = this.f9481v0) != null && !f0Var.mo1511a(chat)) || C7317b.m17043a(chat, m33410Wh()) == null)) {
+        if (chat == null || (((f0Var = this.f9481v0) != null && !f0Var.mo1511a(chat)) || C7317b.m17043a(chat, m33413Wh()) == null)) {
             return null;
         }
         return chat;
     }
 
-    public final void m33374dk(C4592b3 b3Var, boolean z) {
-        if (m33418Uh(b3Var)) {
-            m33369ek(b3Var.m27099w(), z);
+    public final void m33377dk(C4592b3 b3Var, boolean z) {
+        if (m33421Uh(b3Var)) {
+            m33372ek(b3Var.m27101w(), z);
         }
     }
 
@@ -2703,7 +2703,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33400Yi(i);
+                View$OnClickListenerC2805o4.this.m33403Yi(i);
             }
         });
     }
@@ -2713,7 +2713,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33477Fi(chat, i, gVar);
+                View$OnClickListenerC2805o4.this.m33480Fi(chat, i, gVar);
             }
         });
     }
@@ -2723,15 +2723,15 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         C10721i0.m4186k(this, j, i);
     }
 
-    public final int m33371ei(AbstractC5912d<TdApi.Chat> dVar, AbstractC5912d<TdApi.Chat> dVar2) {
+    public final int m33374ei(AbstractC5912d<TdApi.Chat> dVar, AbstractC5912d<TdApi.Chat> dVar2) {
         C6035e<TdApi.Chat> eVar = this.f9472S0;
-        if (eVar == null || eVar.m21496p() == 0) {
+        if (eVar == null || eVar.m21497p() == 0) {
             return 0;
         }
         int i = 0;
         boolean z = false;
-        for (int i2 = 0; i2 < this.f9472S0.m21496p(); i2++) {
-            TdApi.Chat L3 = this.f30167b.m2771L3(this.f9472S0.m21501j(i2));
+        for (int i2 = 0; i2 < this.f9472S0.m21497p(); i2++) {
+            TdApi.Chat L3 = this.f30170b.m2771L3(this.f9472S0.m21502j(i2));
             if (dVar2 == null || dVar2.mo1511a(L3)) {
                 boolean a = dVar.mo1511a(L3);
                 if (i == 0) {
@@ -2748,53 +2748,53 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         return z ? 1 : 2;
     }
 
-    public final void m33369ek(TdApi.Chat chat, boolean z) {
+    public final void m33372ek(TdApi.Chat chat, boolean z) {
         C6035e<TdApi.Chat> eVar = this.f9472S0;
-        int h = eVar != null ? eVar.m21503h(chat.f25367id) : -1;
+        int h = eVar != null ? eVar.m21504h(chat.f25370id) : -1;
         boolean z2 = h >= 0;
-        if (this.f30167b.m2542a3(chat) || z2) {
+        if (this.f30170b.m2542a3(chat) || z2) {
             boolean z3 = !z2;
             if (z3) {
                 if (this.f9472S0 == null) {
                     this.f9472S0 = new C6035e<>();
                 }
                 C6035e<TdApi.Chat> eVar2 = this.f9472S0;
-                long j = chat.f25367id;
-                eVar2.m21500k(j, this.f30167b.m2771L3(j));
+                long j = chat.f25370id;
+                eVar2.m21501k(j, this.f30170b.m2771L3(j));
                 if (z) {
-                    if (this.f9472S0.m21496p() == 1) {
+                    if (this.f9472S0.m21497p() == 1) {
                         m9300Z9().m9297Zc(1);
                     } else {
-                        m9300Z9().m9402Kd(this.f9472S0.m21496p());
+                        m9300Z9().m9402Kd(this.f9472S0.m21497p());
                     }
-                    m33309qk();
+                    m33312qk();
                 }
             } else {
-                this.f9472S0.m21498n(h);
+                this.f9472S0.m21499n(h);
                 if (z) {
-                    if (this.f9472S0.m21496p() == 0) {
+                    if (this.f9472S0.m21497p() == 0) {
                         m9300Z9().m9307Y8();
                     } else {
-                        m9300Z9().m9402Kd(this.f9472S0.m21496p());
-                        m33309qk();
+                        m9300Z9().m9402Kd(this.f9472S0.m21497p());
+                        m33312qk();
                     }
                 }
             }
             ChatsRecyclerView chatsRecyclerView = this.f9484y0;
             if (chatsRecyclerView != null) {
-                chatsRecyclerView.m14180c2(chat.f25367id, z3);
+                chatsRecyclerView.m14179c2(chat.f25370id, z3);
             }
         }
     }
 
-    public AbstractC10650f0 m33366fi() {
+    public AbstractC10650f0 m33369fi() {
         return this.f9481v0;
     }
 
-    public final void m33364fk(int i, boolean z) {
+    public final void m33367fk(int i, boolean z) {
         int h;
         int i2;
-        if (!m9347Sa() && this.f9484y0 != null && (i2 = this.f9469P0) != (h = C5063c.m24138h(this.f9469P0, i, z))) {
+        if (!m9347Sa() && this.f9484y0 != null && (i2 = this.f9469P0) != (h = C5063c.m24139h(this.f9469P0, i, z))) {
             boolean z2 = true;
             boolean z3 = i2 != 0;
             if (h == 0) {
@@ -2824,7 +2824,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
     public void mo452g2() {
         ChatsRecyclerView chatsRecyclerView = this.f9484y0;
         if (chatsRecyclerView != null) {
-            chatsRecyclerView.m14164G1();
+            chatsRecyclerView.m14163G1();
         }
     }
 
@@ -2833,15 +2833,15 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         return R.id.theme_color_filling;
     }
 
-    public final int m33361gi() {
+    public final int m33364gi() {
         AbstractC2815j jVar = this.f9456C0;
         if (jVar != null) {
             return jVar.mo3381b();
         }
-        return this.f9481v0 != null ? R.string.Chats : m33410Wh().getConstructor() != 362770115 ? R.string.general_Messages : R.string.ArchiveTitle;
+        return this.f9481v0 != null ? R.string.Chats : m33413Wh().getConstructor() != 362770115 ? R.string.general_Messages : R.string.ArchiveTitle;
     }
 
-    public final void m33359gk(boolean z) {
+    public final void m33362gk(boolean z) {
         if (this.f9465L0 == z) {
             return;
         }
@@ -2850,10 +2850,10 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             return;
         }
         this.f9465L0 = z;
-        C1379j0.m37334d0(new Runnable() {
+        C1379j0.m37337d0(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33428Rj();
+                View$OnClickListenerC2805o4.this.m33431Rj();
             }
         });
     }
@@ -2868,11 +2868,11 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         C10721i0.m4184m(this, j, chatJoinRequestsInfo);
     }
 
-    public final String m33356hi() {
-        return C4403w.m27869i1(m33361gi());
+    public final String m33359hi() {
+        return C4403w.m27871i1(m33364gi());
     }
 
-    public void m33354hk(C2813h hVar) {
+    public void m33357hk(C2813h hVar) {
         super.m9476Ad(hVar);
         if (this.f9463J0 != null) {
             throw new IllegalStateException();
@@ -2880,14 +2880,14 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             this.f9454A0 = null;
             this.f9481v0 = null;
             this.f9456C0 = null;
-            this.f9457D0 = C7317b.f23224a;
+            this.f9457D0 = C7317b.f23227a;
             this.f9458E0 = false;
         } else {
             this.f9481v0 = hVar.f9497a;
             this.f9456C0 = hVar.f9498b;
             TdApi.ChatList chatList = hVar.f9499c;
             if (chatList == null) {
-                chatList = C7317b.f23224a;
+                chatList = C7317b.f23227a;
             }
             this.f9457D0 = chatList;
             this.f9458E0 = hVar.f9501e;
@@ -2899,7 +2899,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33457Ki(i);
+                View$OnClickListenerC2805o4.this.m33460Ki(i);
             }
         });
     }
@@ -2914,7 +2914,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33417Ui(j, str);
+                View$OnClickListenerC2805o4.this.m33420Ui(j, str);
             }
         });
     }
@@ -2924,11 +2924,11 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         return R.id.theme_color_headerLightIcon;
     }
 
-    public int m33351ii() {
+    public int m33354ii() {
         return this.f9485z0.m6587m0() ? 1 : 0;
     }
 
-    public final void m33349ik(boolean z) {
+    public final void m33352ik(boolean z) {
         C2760nb nbVar;
         if (this.f9473T0 != z) {
             this.f9473T0 = z;
@@ -2936,29 +2936,29 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                 this.f9476W0 = new C3940f(0, this, C2057b.f7280b, 180L, !z);
             }
             if (z) {
-                m33384bk();
+                m33387bk();
                 C2760nb nbVar2 = this.f9455B0;
                 if (nbVar2 != null) {
-                    nbVar2.m33569Vh(this);
+                    nbVar2.m33572Vh(this);
                 }
             }
             ChatsRecyclerView chatsRecyclerView = this.f9484y0;
-            this.f9476W0.m29575p(z, chatsRecyclerView != null && Math.max(chatsRecyclerView.getMeasuredWidth(), this.f9484y0.getMeasuredHeight()) > 0 && this.f9459F0 != 0 && SystemClock.uptimeMillis() - this.f9459F0 >= 600 && ((nbVar = this.f9455B0) == null ? m9339Ta() : nbVar.m9339Ta()));
+            this.f9476W0.m29577p(z, chatsRecyclerView != null && Math.max(chatsRecyclerView.getMeasuredWidth(), this.f9484y0.getMeasuredHeight()) > 0 && this.f9459F0 != 0 && SystemClock.uptimeMillis() - this.f9459F0 >= 600 && ((nbVar = this.f9455B0) == null ? m9339Ta() : nbVar.m9339Ta()));
         }
     }
 
-    public C2760nb m33346ji() {
+    public C2760nb m33349ji() {
         return this.f9455B0;
     }
 
-    public final void m33344jk(boolean z) {
+    public final void m33347jk(boolean z) {
         if (this.f9466M0 != null && this.f9464K0 != z) {
             this.f9464K0 = z;
             if (this.f9484y0 != null) {
                 C9906c cVar = this.f9485z0;
-                cVar.m39312I(cVar.mo6153D() - 1);
+                cVar.m39315I(cVar.mo6153D() - 1);
                 if (z) {
-                    m33408Wj();
+                    m33411Wj();
                 }
             }
         }
@@ -2969,15 +2969,15 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         C10722i1.m4162j(this, message, j, i, str);
     }
 
-    public final int m33341ki() {
+    public final int m33344ki() {
         C6035e<TdApi.Chat> eVar = this.f9472S0;
         if (eVar != null) {
-            return eVar.m21496p();
+            return eVar.m21497p();
         }
         return 0;
     }
 
-    public View$OnClickListenerC2805o4 m33339kk(C2760nb nbVar) {
+    public View$OnClickListenerC2805o4 m33342kk(C2760nb nbVar) {
         this.f9455B0 = nbVar;
         return this;
     }
@@ -2987,7 +2987,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33325nj(j, j2, messageContent);
+                View$OnClickListenerC2805o4.this.m33328nj(j, j2, messageContent);
             }
         });
     }
@@ -2997,13 +2997,13 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33480Ej(j, chatNotificationSettings);
+                View$OnClickListenerC2805o4.this.m33483Ej(j, chatNotificationSettings);
             }
         });
     }
 
     @Override
-    public void mo24540l5(int i) {
+    public void mo24541l5(int i) {
         C9906c cVar = this.f9485z0;
         if (cVar != null) {
             cVar.m6595h0();
@@ -3011,12 +3011,12 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
     }
 
     @Override
-    public boolean mo9547lf(TdApi.Chat chat) {
+    public boolean mo9546lf(TdApi.Chat chat) {
         AbstractC10650f0 f0Var;
-        return chat != null && ((f0Var = this.f9481v0) == null || !f0Var.mo4377k6() || this.f9481v0.mo1511a(chat)) && C7317b.m17043a(chat, m33410Wh()) != null;
+        return chat != null && ((f0Var = this.f9481v0) == null || !f0Var.mo4377k6() || this.f9481v0.mo1511a(chat)) && C7317b.m17043a(chat, m33413Wh()) != null;
     }
 
-    public void m33336li() {
+    public void m33339li() {
         C6977n2 n2Var = this.f9483x0;
         if (n2Var != null && this.f9479t0) {
             this.f9479t0 = false;
@@ -3024,30 +3024,30 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             this.f9483x0.mo4501a3();
             this.f9483x0 = null;
         }
-        m33329mk();
+        m33332mk();
     }
 
-    public final void m33334lk(long[] jArr, int i, boolean z) {
-        int N0 = this.f9475V0.m34224N0(R.id.inviteFriendsText);
+    public final void m33337lk(long[] jArr, int i, boolean z) {
+        int N0 = this.f9475V0.m34227N0(R.id.inviteFriendsText);
         if (N0 != -1) {
-            C2964ra raVar = this.f9475V0.m34240F0().get(N0);
-            CharSequence Tj = m33420Tj();
-            View C = this.f9474U0.getLayoutManager().mo39262C(N0);
-            if (Tj != null && !Tj.equals(raVar.m32824u())) {
-                raVar.m32853X(Tj);
-                this.f9475V0.m34124u3(N0);
+            C2964ra raVar = this.f9475V0.m34243F0().get(N0);
+            CharSequence Tj = m33423Tj();
+            View C = this.f9474U0.getLayoutManager().mo39265C(N0);
+            if (Tj != null && !Tj.equals(raVar.m32827u())) {
+                raVar.m32856X(Tj);
+                this.f9475V0.m34127u3(N0);
             }
             if (C != null) {
                 ((C7023s1) ((ViewGroup) ((ViewGroup) C).getChildAt(0)).getChildAt(0)).m18075i(jArr, i, z);
             }
         }
-        int N02 = this.f9475V0.m34224N0(R.id.btn_invite);
+        int N02 = this.f9475V0.m34227N0(R.id.btn_invite);
         if (N02 != -1) {
-            C2964ra raVar2 = this.f9475V0.m34240F0().get(N02);
+            C2964ra raVar2 = this.f9475V0.m34243F0().get(N02);
             int i2 = i > 0 ? R.string.ShowContacts : R.string.InviteContacts;
-            if (raVar2.m32822w() != i2) {
-                raVar2.m32854W(i2);
-                this.f9475V0.m34124u3(N02);
+            if (raVar2.m32825w() != i2) {
+                raVar2.m32857W(i2);
+                this.f9475V0.m34127u3(N02);
             }
         }
     }
@@ -3057,7 +3057,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33409Wi(j, i);
+                View$OnClickListenerC2805o4.this.m33412Wi(j, i);
             }
         });
     }
@@ -3072,16 +3072,16 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33421Ti(chat, i, gVar);
+                View$OnClickListenerC2805o4.this.m33424Ti(chat, i, gVar);
             }
         });
     }
 
-    public final boolean m33331mi() {
-        return this.f9456C0 == null && ((m9139w9() != null && m9139w9().f9500d) || m33410Wh().getConstructor() == -400991316);
+    public final boolean m33334mi() {
+        return this.f9456C0 == null && ((m9139w9() != null && m9139w9().f9500d) || m33413Wh().getConstructor() == -400991316);
     }
 
-    public final void m33329mk() {
+    public final void m33332mk() {
         CharSequence charSequenceExtra;
         Intent intent = this.f9454A0;
         if (intent != null && !this.f9479t0) {
@@ -3096,9 +3096,9 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                 if (stringExtra != null) {
                     String trim = stringExtra.trim();
                     if (trim.length() > 0) {
-                        x00 x00Var = new x00(this.f30165a, this.f30167b);
-                        x00Var.m30994Vi(new x00.C3281m(trim));
-                        x00Var.m30960ej();
+                        x00 x00Var = new x00(this.f30168a, this.f30170b);
+                        x00Var.m30996Vi(new x00.C3281m(trim));
+                        x00Var.m30962ej();
                     }
                 }
             }
@@ -3116,7 +3116,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             m9135wd(new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC2805o4.this.m33469Hi();
+                    View$OnClickListenerC2805o4.this.m33472Hi();
                 }
             });
         }
@@ -3127,17 +3127,17 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33445Ni(chat, i, i2, gVar);
+                View$OnClickListenerC2805o4.this.m33448Ni(chat, i, i2, gVar);
             }
         });
     }
 
-    public boolean m33326ni(C4592b3 b3Var) {
+    public boolean m33329ni(C4592b3 b3Var) {
         C6035e<TdApi.Chat> eVar;
-        return m33418Uh(b3Var) && (eVar = this.f9472S0) != null && eVar.m21503h(b3Var.m27096x()) >= 0;
+        return m33421Uh(b3Var) && (eVar = this.f9472S0) != null && eVar.m21504h(b3Var.m27098x()) >= 0;
     }
 
-    public final boolean m33324nk(int i) {
+    public final boolean m33327nk(int i) {
         return (i == 0 || i == 3) ? false : true;
     }
 
@@ -3157,17 +3157,17 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
 
     @Override
     public View mo403oc(Context context) {
-        m33424Sj();
-        m33400Yi(this.f30167b.m2142z4());
+        m33427Sj();
+        m33403Yi(this.f30170b.m2142z4());
         C9261p pVar = new C9261p(context);
         this.f9482w0 = pVar;
         pVar.setLayoutParams(FrameLayoutFix.m18008s1(-1, -1));
-        ChatsRecyclerView chatsRecyclerView = (ChatsRecyclerView) C1399s0.m37146y(mo4347s(), R.layout.recycler_chats, this.f9482w0);
+        ChatsRecyclerView chatsRecyclerView = (ChatsRecyclerView) C1399s0.m37149y(mo4347s(), R.layout.recycler_chats, this.f9482w0);
         this.f9484y0 = chatsRecyclerView;
         chatsRecyclerView.setMeasureListener(new CustomRecyclerView.AbstractC7920a() {
             @Override
-            public final void mo14159a(CustomRecyclerView customRecyclerView, int i, int i2, int i3, int i4) {
-                View$OnClickListenerC2805o4.this.m33380cj(customRecyclerView, i, i2, i3, i4);
+            public final void mo14158a(CustomRecyclerView customRecyclerView, int i, int i2, int i3, int i4) {
+                View$OnClickListenerC2805o4.this.m33383cj(customRecyclerView, i, i2, i3, i4);
             }
         });
         this.f9484y0.setItemAnimator(null);
@@ -3176,47 +3176,47 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             this.f9484y0.setVerticalScrollBarEnabled(false);
         }
         this.f9484y0.setHasFixedSize(true);
-        this.f9484y0.m39434g(new C2814i(this));
+        this.f9484y0.m39437g(new C2814i(this));
         C10192g.m5782i(this.f9484y0, R.id.theme_color_filling, this);
         C0962g gVar = new C0962g(new C2806a());
         this.f9461H0 = gVar;
-        gVar.m38809m(this.f9484y0);
-        this.f9485z0 = this.f9484y0.m14192Q1(this, this);
+        gVar.m38812m(this.f9484y0);
+        this.f9485z0 = this.f9484y0.m14191Q1(this, this);
         this.f9484y0.setLayoutParams(FrameLayoutFix.m18008s1(-1, -1));
         AbstractC10650f0 f0Var = this.f9481v0;
         if (f0Var != null) {
             this.f9484y0.setTotalRes(f0Var.mo4379Q3());
         }
         this.f9482w0.addView(this.f9484y0);
-        C1399s0.m37171l0(this.f9484y0);
-        m33396Zh();
-        if (!m33331mi()) {
-            m9542qf(this.f9482w0);
+        C1399s0.m37174l0(this.f9484y0);
+        m33399Zh();
+        if (!m33334mi()) {
+            m9541qf(this.f9482w0);
         }
-        m33400Yi(this.f30167b.m2142z4());
-        this.f30167b.m2781K9().m1882a0(this);
-        this.f30167b.m2480e2().m1668Z1(this);
-        C4868i.m24726c2().m24657l(this);
+        m33403Yi(this.f30170b.m2142z4());
+        this.f30170b.m2781K9().m1882a0(this);
+        this.f30170b.m2480e2().m1668Z1(this);
+        C4868i.m24727c2().m24658l(this);
         C11052v1.m1768b().m1769a(this);
         this.f9463J0.m3019u(this, new AbstractC5918j() {
             @Override
             public final void mo1330a(Object obj) {
-                View$OnClickListenerC2805o4.this.m33381ci((List) obj);
+                View$OnClickListenerC2805o4.this.m33384ci((List) obj);
             }
         }, this.f9484y0.getInitialLoadCount(), new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33370ej();
+                View$OnClickListenerC2805o4.this.m33373ej();
             }
         });
-        if (m33331mi()) {
-            this.f30167b.m2946A4().m1371u(this);
-            if (this.f9481v0 == null && m33410Wh().getConstructor() == -400991316) {
-                this.f9484y0.m39422k(new C2807b());
-                boolean V = this.f30167b.m2294pc().m4135V();
+        if (m33334mi()) {
+            this.f30170b.m2946A4().m1371u(this);
+            if (this.f9481v0 == null && m33413Wh().getConstructor() == -400991316) {
+                this.f9484y0.m39425k(new C2807b());
+                boolean V = this.f30170b.m2294pc().m4135V();
                 this.f9465L0 = V;
                 this.f9464K0 = V;
-                this.f9466M0 = this.f30167b.m2367l3(C7317b.f23225b);
+                this.f9466M0 = this.f30170b.m2367l3(C7317b.f23228b);
                 this.f9467N0 = new C2808c();
                 C9906c cVar = this.f9485z0;
                 if (this.f9466M0.m4301L() > 0) {
@@ -3225,29 +3225,29 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                 cVar.m6626I0(z);
                 this.f9466M0.m4302K(this.f9467N0);
                 this.f9466M0.m4309D(null, 3, null);
-                this.f30167b.m2294pc().m4121g(this);
+                this.f30170b.m2294pc().m4121g(this);
             }
         }
         if (this.f9481v0 == null) {
-            C5974t0 t0Var = new C5974t0(this.f30165a, this.f30167b, 0L, 0L, this.f9484y0, true, this);
+            C5974t0 t0Var = new C5974t0(this.f30168a, this.f30170b, 0L, 0L, this.f9484y0, true, this);
             this.f9462I0 = t0Var;
-            t0Var.m21733v();
+            t0Var.m21734v();
         }
         this.f9459F0 = SystemClock.uptimeMillis();
         return this.f9482w0;
     }
 
-    public boolean m33321oi() {
+    public boolean m33324oi() {
         return this.f9463J0.m3018v();
     }
 
-    public void m33319ok() {
+    public void m33322ok() {
         if (!this.f9479t0) {
             if (this.f9483x0 == null) {
                 C6977n2 n2Var = new C6977n2(mo4347s());
                 this.f9483x0 = n2Var;
                 n2Var.m18226h(1.0f);
-                this.f9483x0.setLayoutParams(FrameLayoutFix.m18007t1(C1357a0.m37541i(48.0f), C1357a0.m37541i(48.0f), 17));
+                this.f9483x0.setLayoutParams(FrameLayoutFix.m18007t1(C1357a0.m37544i(48.0f), C1357a0.m37544i(48.0f), 17));
             }
             if (this.f9483x0.getParent() == null) {
                 this.f9482w0.addView(this.f9483x0);
@@ -3262,14 +3262,14 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         if (view.getId() != R.id.chat || (chat = ((C9903a) view).getChat()) == null) {
             return;
         }
-        if (m33326ni(chat) || m33341ki() > 0) {
-            m33374dk(chat, true);
-        } else if (chat.m27138h0()) {
-            View$OnClickListenerC2805o4 o4Var = new View$OnClickListenerC2805o4(this.f30165a, this.f30167b);
-            o4Var.m33354hk(new C2813h(new TdApi.ChatListArchive()).m33264c(true));
-            this.f30165a.m14552P1().m9719h0(o4Var);
+        if (m33329ni(chat) || m33344ki() > 0) {
+            m33377dk(chat, true);
+        } else if (chat.m27140h0()) {
+            View$OnClickListenerC2805o4 o4Var = new View$OnClickListenerC2805o4(this.f30168a, this.f30170b);
+            o4Var.m33357hk(new C2813h(new TdApi.ChatListArchive()).m33267c(true));
+            this.f30168a.m14551P1().m9718h0(o4Var);
         } else {
-            m33412Vj(chat.m27099w());
+            m33415Vj(chat.m27101w());
         }
     }
 
@@ -3279,18 +3279,18 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         if (view.getId() != R.id.chat || (chat = ((C9903a) view).getChat()) == null) {
             return false;
         }
-        if (!chat.m27138h0()) {
-            this.f30167b.m2485dd().m3468r8(this, m33410Wh(), chat.m27096x(), null, m33418Uh(chat), m33326ni(chat), new Runnable() {
+        if (!chat.m27140h0()) {
+            this.f30170b.m2485dd().m3468r8(this, m33413Wh(), chat.m27098x(), null, m33421Uh(chat), m33329ni(chat), new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC2805o4.this.m33360gj(chat);
+                    View$OnClickListenerC2805o4.this.m33363gj(chat);
                 }
             });
             return true;
-        } else if (m33341ki() != 0) {
+        } else if (m33344ki() != 0) {
             return true;
         } else {
-            this.f30167b.m2485dd().m3508n8(this, this.f30167b.m2367l3(C7317b.f23225b));
+            this.f30170b.m2485dd().m3508n8(this, this.f30170b.m2367l3(C7317b.f23228b));
             return true;
         }
     }
@@ -3300,14 +3300,14 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         switch (i) {
             case R.id.menu_chatBulkActions:
                 int wa = m9138wa();
-                int Th = m33422Th();
+                int Th = m33425Th();
                 boolean z = true;
                 int i2 = 8;
-                d1Var.m10104N1(linearLayout, R.id.menu_btn_pinUnpin, Th == 1 ? R.drawable.deproko_baseline_pin_undo_24 : R.drawable.deproko_baseline_pin_24, wa, this, C1357a0.m37541i(52.0f)).setVisibility(m33324nk(Th) ? 0 : 8);
-                int Sh = m33426Sh();
-                d1Var.m10104N1(linearLayout, R.id.menu_btn_muteUnmute, Sh == 1 ? R.drawable.baseline_notifications_off_24 : R.drawable.baseline_notifications_24, wa, this, C1357a0.m37541i(52.0f)).setVisibility(Sh != 0 ? 0 : 8);
-                int Rh = m33430Rh();
-                C9310u0 U1 = d1Var.m10087U1(linearLayout, this, wa);
+                d1Var.m10103N1(linearLayout, R.id.menu_btn_pinUnpin, Th == 1 ? R.drawable.deproko_baseline_pin_undo_24 : R.drawable.deproko_baseline_pin_24, wa, this, C1357a0.m37544i(52.0f)).setVisibility(m33327nk(Th) ? 0 : 8);
+                int Sh = m33429Sh();
+                d1Var.m10103N1(linearLayout, R.id.menu_btn_muteUnmute, Sh == 1 ? R.drawable.baseline_notifications_off_24 : R.drawable.baseline_notifications_24, wa, this, C1357a0.m37544i(52.0f)).setVisibility(Sh != 0 ? 0 : 8);
+                int Rh = m33433Rh();
+                C9310u0 U1 = d1Var.m10086U1(linearLayout, this, wa);
                 if (Rh == 0 || Rh == 3) {
                     z = false;
                 }
@@ -3315,19 +3315,19 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
                     i2 = 0;
                 }
                 U1.setVisibility(i2);
-                d1Var.m10065d2(linearLayout, this, m9138wa());
+                d1Var.m10064d2(linearLayout, this, m9138wa());
                 return;
             case R.id.menu_clear:
-                d1Var.m10096Q1(linearLayout, mo9237ia(), m9265ea());
+                d1Var.m10095Q1(linearLayout, mo9237ia(), m9265ea());
                 return;
             case R.id.menu_passcode:
-                if (m33331mi()) {
-                    d1Var.m10071a2(linearLayout);
+                if (m33334mi()) {
+                    d1Var.m10070a2(linearLayout);
                 }
-                d1Var.m10054i2(linearLayout, this);
+                d1Var.m10053i2(linearLayout, this);
                 return;
             case R.id.menu_search:
-                d1Var.m10054i2(linearLayout, this);
+                d1Var.m10053i2(linearLayout, this);
                 return;
             default:
                 return;
@@ -3339,21 +3339,21 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         C10722i1.m4160l(this, j, j2, unreadReactionArr, i);
     }
 
-    public boolean m33316pi() {
+    public boolean m33319pi() {
         return this.f9481v0 != null;
     }
 
-    public void m33400Yi(int i) {
+    public void m33403Yi(int i) {
         if (i == 0) {
-            m33329mk();
-            m9424Hd(m33356hi());
+            m33332mk();
+            m9424Hd(m33359hi());
             return;
         }
         m9432Gd(HandlerC10770jj.m3707T8(i));
     }
 
     @Override
-    public boolean mo14165q1() {
+    public boolean mo14164q1() {
         return this.f9463J0.m3024p();
     }
 
@@ -3362,28 +3362,28 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         C10721i0.m4189h(this, j, z);
     }
 
-    public boolean m33311qi() {
+    public boolean m33314qi() {
         return this.f9480u0;
     }
 
-    public final void m33309qk() {
+    public final void m33312qk() {
         C9270q1 bc = m9300Z9().m9284bc();
-        View$OnClickListenerC9170d1 I = bc != null ? bc.m9757I() : null;
+        View$OnClickListenerC9170d1 I = bc != null ? bc.m9756I() : null;
         if (I != null) {
-            int Th = m33422Th();
+            int Th = m33425Th();
             int i = 8;
             boolean z = true;
-            I.m10097P3(R.id.menu_chatBulkActions, R.id.menu_btn_pinUnpin, m33324nk(Th) ? 0 : 8, Th == 1 ? R.drawable.deproko_baseline_pin_undo_24 : R.drawable.deproko_baseline_pin_24);
-            int Sh = m33426Sh();
-            I.m10097P3(R.id.menu_chatBulkActions, R.id.menu_btn_muteUnmute, Sh != 0 ? 0 : 8, Sh == 1 ? R.drawable.baseline_notifications_off_24 : R.drawable.baseline_notifications_24);
-            int Rh = m33430Rh();
+            I.m10096P3(R.id.menu_chatBulkActions, R.id.menu_btn_pinUnpin, m33327nk(Th) ? 0 : 8, Th == 1 ? R.drawable.deproko_baseline_pin_undo_24 : R.drawable.deproko_baseline_pin_24);
+            int Sh = m33429Sh();
+            I.m10096P3(R.id.menu_chatBulkActions, R.id.menu_btn_muteUnmute, Sh != 0 ? 0 : 8, Sh == 1 ? R.drawable.baseline_notifications_off_24 : R.drawable.baseline_notifications_24);
+            int Rh = m33433Rh();
             if (Rh == 0 || Rh == 3) {
                 z = false;
             }
             if (z) {
                 i = 0;
             }
-            I.m10097P3(R.id.menu_chatBulkActions, R.id.menu_btn_delete, i, 0);
+            I.m10096P3(R.id.menu_chatBulkActions, R.id.menu_btn_delete, i, 0);
         }
     }
 
@@ -3392,7 +3392,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         C10722i1.m4169c(this, j, j2, i, replyMarkup);
     }
 
-    public boolean m33306ri() {
+    public boolean m33309ri() {
         return this.f9459F0 == 0 || SystemClock.uptimeMillis() - this.f9459F0 <= 1000;
     }
 
@@ -3403,10 +3403,10 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
 
     @Override
     public void mo4251s3(final long j, final long j2) {
-        this.f30167b.m2469ed(new Runnable() {
+        this.f30170b.m2469ed(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33315pj(j, j2);
+                View$OnClickListenerC2805o4.this.m33318pj(j, j2);
             }
         });
     }
@@ -3416,22 +3416,22 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33473Gi(j, str);
+                View$OnClickListenerC2805o4.this.m33476Gi(j, str);
             }
         });
     }
 
-    public boolean m33302si() {
+    public boolean m33305si() {
         return this.f9456C0 != null;
     }
 
     @Override
     public void mo1555t0(final TdApi.Supergroup supergroup) {
-        if (!C4779t2.m25506h3(supergroup.status)) {
+        if (!C4779t2.m25507h3(supergroup.status)) {
             m9135wd(new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC2805o4.this.m33468Hj(supergroup);
+                    View$OnClickListenerC2805o4.this.m33471Hj(supergroup);
                 }
             });
         }
@@ -3442,14 +3442,14 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33441Oi(j, chatPermissions);
+                View$OnClickListenerC2805o4.this.m33444Oi(j, chatPermissions);
             }
         });
     }
 
-    public boolean m33298ti() {
+    public boolean m33301ti() {
         C9906c cVar;
-        return this.f9464K0 && (cVar = this.f9485z0) != null && cVar.m6587m0() && ((LinearLayoutManager) this.f9484y0.getLayoutManager()).m39549X1() == 0;
+        return this.f9464K0 && (cVar = this.f9485z0) != null && cVar.m6587m0() && ((LinearLayoutManager) this.f9484y0.getLayoutManager()).m39552X1() == 0;
     }
 
     @Override
@@ -3463,10 +3463,10 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
 
     @Override
     public void mo8837u5(int i) {
-        m33414Vh();
+        m33417Vh();
         if (this.f9472S0 != null) {
-            while (this.f9472S0.m21496p() > 0) {
-                m33369ek(this.f9472S0.m21495q(0), false);
+            while (this.f9472S0.m21497p() > 0) {
+                m33372ek(this.f9472S0.m21496q(0), false);
             }
         }
     }
@@ -3477,8 +3477,8 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
     }
 
     @Override
-    public TdApi.ChatList mo9538uf() {
-        TdApi.ChatList Wh = m33410Wh();
+    public TdApi.ChatList mo9537uf() {
+        TdApi.ChatList Wh = m33413Wh();
         if (Wh instanceof TdApi.ChatListMain) {
             return null;
         }
@@ -3491,12 +3491,12 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
     }
 
     @Override
-    public int mo9537vf() {
+    public int mo9536vf() {
         AbstractC10650f0 f0Var = this.f9481v0;
         if (f0Var == null || !f0Var.mo4377k6()) {
-            return m33410Wh().getConstructor() == 362770115 ? R.string.MessagesArchive : super.mo9537vf();
+            return m33413Wh().getConstructor() == 362770115 ? R.string.MessagesArchive : super.mo9536vf();
         }
-        return this.f9481v0.mo4380L(m33410Wh().getConstructor() == 362770115);
+        return this.f9481v0.mo4380L(m33413Wh().getConstructor() == 362770115);
     }
 
     @Override
@@ -3509,7 +3509,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33433Qi(j, chatPosition, z, z2, z3);
+                View$OnClickListenerC2805o4.this.m33436Qi(j, chatPosition, z, z2, z3);
             }
         });
     }
@@ -3520,7 +3520,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
     }
 
     @Override
-    public int mo9536wf() {
+    public int mo9535wf() {
         return this.f9458E0 ? 11 : 9;
     }
 
@@ -3539,7 +3539,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2805o4.this.m33425Si(j, j2);
+                View$OnClickListenerC2805o4.this.m33428Si(j, j2);
             }
         });
     }
@@ -3547,7 +3547,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
     @Override
     public void mo8830yc() {
         super.mo8830yc();
-        m33414Vh();
+        m33417Vh();
     }
 
     @Override
@@ -3561,7 +3561,7 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
     }
 
     @Override
-    public View mo9533zf() {
+    public View mo9532zf() {
         return this.f9484y0;
     }
 
@@ -3576,17 +3576,17 @@ public class View$OnClickListenerC2805o4 extends AbstractC9299t2<C2813h> impleme
             this.f9497a = f0Var;
         }
 
-        public C2813h m33266a(TdApi.ChatList chatList) {
+        public C2813h m33269a(TdApi.ChatList chatList) {
             this.f9499c = chatList;
             return this;
         }
 
-        public C2813h m33265b(boolean z) {
+        public C2813h m33268b(boolean z) {
             this.f9500d = z;
             return this;
         }
 
-        public C2813h m33264c(boolean z) {
+        public C2813h m33267c(boolean z) {
             this.f9501e = z;
             return this;
         }

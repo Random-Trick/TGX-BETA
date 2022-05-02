@@ -4,11 +4,11 @@ import java.io.Serializable;
 import p343y6.C10433i;
 
 public final class C11357e0 extends AbstractC11362g0<Comparable> implements Serializable {
-    public static final C11357e0 f36299a = new C11357e0();
+    public static final C11357e0 f36302a = new C11357e0();
 
     @Override
     public <S extends Comparable> AbstractC11362g0<S> mo788d() {
-        return C11379l0.f36336a;
+        return C11379l0.f36339a;
     }
 
     public int compare(Comparable comparable, Comparable comparable2) {

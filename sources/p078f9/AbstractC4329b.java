@@ -6,28 +6,28 @@ import p064e9.C4172d;
 import p106h9.C5039g;
 
 public abstract class AbstractC4329b extends AbstractC4175g {
-    public final float[] f14399d = C5039g.m24203c(C4172d.f14075a);
+    public final float[] f14399d = C5039g.m24204c(C4172d.f14075a);
     public int f14400e;
 
-    public abstract void mo28264a();
+    public abstract void mo28266a();
 
-    public abstract int mo28269b();
+    public abstract int mo28271b();
 
-    public final float[] m28268c() {
+    public final float[] m28270c() {
         return this.f14399d;
     }
 
-    public abstract FloatBuffer mo28263d();
+    public abstract FloatBuffer mo28265d();
 
-    public final int m28267e() {
+    public final int m28269e() {
         return this.f14400e;
     }
 
-    public int m28266f() {
-        return mo28263d().limit() / mo28269b();
+    public int m28268f() {
+        return mo28265d().limit() / mo28271b();
     }
 
-    public int m28265g() {
-        return mo28269b() * 4;
+    public int m28267g() {
+        return mo28271b() * 4;
     }
 }

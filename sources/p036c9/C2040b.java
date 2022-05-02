@@ -5,17 +5,17 @@ import p264s8.AbstractC8693b;
 
 public class C2040b extends AbstractC8693b {
     @Override
-    public ByteBuffer mo11723a() {
+    public ByteBuffer mo11722a() {
         return ByteBuffer.allocate(0);
     }
 
     @Override
-    public String mo11722b() {
+    public String mo11721b() {
         return "stsa";
     }
 
     @Override
-    public void mo11721c(ByteBuffer byteBuffer) {
+    public void mo11720c(ByteBuffer byteBuffer) {
     }
 
     public boolean equals(Object obj) {

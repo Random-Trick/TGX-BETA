@@ -39,56 +39,56 @@ public class C2964ra {
         this(i, 0, 0, 0, null, 0, false);
     }
 
-    public int m32876A() {
+    public int m32879A() {
         return this.f9831a;
     }
 
-    public boolean m32875B(int i) {
+    public boolean m32878B(int i) {
         if (this.f9834d == i) {
             return true;
         }
         int[] iArr = this.f9855y;
-        return iArr != null && C5062b.m24154r(iArr, i) >= 0;
+        return iArr != null && C5062b.m24155r(iArr, i) >= 0;
     }
 
-    public boolean m32874C() {
+    public boolean m32877C() {
         return (this.f9834d == 0 && this.f9855y == null) ? false : true;
     }
 
-    public boolean m32873D() {
+    public boolean m32876D() {
         return (this.f9837g & 1) != 0;
     }
 
-    public C2964ra m32872E(boolean z) {
-        this.f9837g = C5063c.m24138h(this.f9837g, 2, z);
+    public C2964ra m32875E(boolean z) {
+        this.f9837g = C5063c.m24139h(this.f9837g, 2, z);
         return this;
     }
 
-    public C2964ra m32871F(int... iArr) {
+    public C2964ra m32874F(int... iArr) {
         this.f9855y = iArr;
         return this;
     }
 
-    public C2964ra m32870G(Object obj) {
+    public C2964ra m32873G(Object obj) {
         this.f9852v = obj;
         return this;
     }
 
-    public C2964ra m32869H(double d) {
-        return m32862O(Double.doubleToLongBits(d));
+    public C2964ra m32872H(double d) {
+        return m32865O(Double.doubleToLongBits(d));
     }
 
-    public C2964ra m32868I(AbstractC5139r rVar) {
+    public C2964ra m32871I(AbstractC5139r rVar) {
         this.f9841k = rVar;
         return this;
     }
 
-    public C2964ra m32867J(int i) {
+    public C2964ra m32870J(int i) {
         this.f9851u = i;
         return this;
     }
 
-    public boolean m32866K(int i) {
+    public boolean m32869K(int i) {
         if (this.f9833c == i) {
             return false;
         }
@@ -96,147 +96,147 @@ public class C2964ra {
         return true;
     }
 
-    public C2964ra m32865L(InputFilter[] inputFilterArr) {
+    public C2964ra m32868L(InputFilter[] inputFilterArr) {
         this.f9854x = inputFilterArr;
         return this;
     }
 
-    public C2964ra m32864M(int i) {
+    public C2964ra m32867M(int i) {
         this.f9846p = i;
         return this;
     }
 
-    public C2964ra m32863N(long j) {
+    public C2964ra m32866N(long j) {
         this.f9838h = j;
         return this;
     }
 
-    public C2964ra m32862O(long j) {
+    public C2964ra m32865O(long j) {
         this.f9847q = j;
         return this;
     }
 
-    public C2964ra m32861P(AbstractC2420g6.C2421a aVar) {
+    public C2964ra m32864P(AbstractC2420g6.C2421a aVar) {
         this.f9853w = aVar;
         return this;
     }
 
-    public C2964ra m32860Q(int i) {
+    public C2964ra m32863Q(int i) {
         this.f9850t = i;
         return this;
     }
 
-    public void m32859R(int i, int i2) {
+    public void m32862R(int i, int i2) {
         this.f9848r = i;
         this.f9849s = i2;
     }
 
-    public C2964ra m32858S(boolean z) {
-        this.f9837g = C5063c.m24138h(this.f9837g, 1, z);
+    public C2964ra m32861S(boolean z) {
+        this.f9837g = C5063c.m24139h(this.f9837g, 1, z);
         return this;
     }
 
-    public void m32857T(boolean z, int i) {
-        this.f9837g = C5063c.m24138h(this.f9837g | 4, 1, z);
+    public void m32860T(boolean z, int i) {
+        this.f9837g = C5063c.m24139h(this.f9837g | 4, 1, z);
         this.f9846p = i;
     }
 
-    public C2964ra m32856U(String[] strArr, int i) {
+    public C2964ra m32859U(String[] strArr, int i) {
         this.f9839i = strArr;
         this.f9840j = i;
         return this;
     }
 
-    public void m32855V(int i) {
+    public void m32858V(int i) {
         this.f9840j = i;
     }
 
-    public void m32854W(int i) {
+    public void m32857W(int i) {
         this.f9834d = i;
         this.f9835e = null;
     }
 
-    public void m32853X(CharSequence charSequence) {
+    public void m32856X(CharSequence charSequence) {
         this.f9834d = 0;
         this.f9835e = charSequence;
     }
 
-    public boolean m32852Y(int i) {
+    public boolean m32855Y(int i) {
         if (this.f9834d == i) {
             return false;
         }
-        boolean z = !C5070i.m24067c(m32824u(), i != 0 ? C4403w.m27869i1(i) : this.f9835e);
+        boolean z = !C5070i.m24068c(m32827u(), i != 0 ? C4403w.m27871i1(i) : this.f9835e);
         this.f9834d = i;
         this.f9835e = null;
         return z;
     }
 
-    public boolean m32851Z(CharSequence charSequence) {
-        if (C5070i.m24067c(this.f9835e, charSequence)) {
+    public boolean m32854Z(CharSequence charSequence) {
+        if (C5070i.m24068c(this.f9835e, charSequence)) {
             return false;
         }
-        boolean z = this.f9834d == 0 || !C5070i.m24067c(m32824u(), charSequence);
+        boolean z = this.f9834d == 0 || !C5070i.m24068c(m32827u(), charSequence);
         this.f9835e = charSequence;
         this.f9834d = 0;
         return z;
     }
 
-    public int m32850a() {
+    public int m32853a() {
         if ((this.f9837g & 4) != 0) {
             this.f9846p--;
         }
         return this.f9846p;
     }
 
-    public C2964ra m32849a0(String str) {
+    public C2964ra m32852a0(String str) {
         this.f9842l = str;
         return this;
     }
 
-    public boolean m32848b() {
+    public boolean m32851b() {
         return (this.f9837g & 2) != 0;
     }
 
-    public C2964ra m32847b0(String str) {
+    public C2964ra m32850b0(String str) {
         this.f9843m = str;
         return this;
     }
 
-    public int m32846c() {
+    public int m32849c() {
         return this.f9836f;
     }
 
-    public boolean m32845c0(String str) {
-        if (C5070i.m24067c(this.f9843m, str)) {
+    public boolean m32848c0(String str) {
+        if (C5070i.m24068c(this.f9843m, str)) {
             return false;
         }
         this.f9843m = str;
         return true;
     }
 
-    public Object m32844d() {
+    public Object m32847d() {
         return this.f9852v;
     }
 
-    public C2964ra m32843d0(int i) {
+    public C2964ra m32846d0(int i) {
         this.f9844n = i;
         return this;
     }
 
-    public double m32842e() {
-        return Double.longBitsToDouble(m32831n());
+    public double m32845e() {
+        return Double.longBitsToDouble(m32834n());
     }
 
-    public C2964ra m32841e0(int i) {
+    public C2964ra m32844e0(int i) {
         this.f9845o = i;
         return this;
     }
 
-    public AbstractC5139r m32840f() {
+    public AbstractC5139r m32843f() {
         return this.f9841k;
     }
 
-    public boolean m32839f0(int i) {
+    public boolean m32842f0(int i) {
         if (this.f9831a == i) {
             return false;
         }
@@ -244,88 +244,88 @@ public class C2964ra {
         return true;
     }
 
-    public int m32838g() {
+    public int m32841g() {
         return this.f9848r;
     }
 
-    public int m32837h() {
+    public int m32840h() {
         return this.f9851u;
     }
 
-    public int m32836i() {
+    public int m32839i() {
         return this.f9833c;
     }
 
-    public int m32835j() {
+    public int m32838j() {
         return this.f9832b;
     }
 
-    public InputFilter[] m32834k() {
+    public InputFilter[] m32837k() {
         return this.f9854x;
     }
 
-    public int m32833l() {
+    public int m32836l() {
         return this.f9846p;
     }
 
-    public long m32832m() {
+    public long m32835m() {
         return this.f9838h;
     }
 
-    public long m32831n() {
+    public long m32834n() {
         return this.f9847q;
     }
 
-    public int m32830o() {
+    public int m32833o() {
         return this.f9849s;
     }
 
-    public AbstractC2420g6.C2421a m32829p() {
+    public AbstractC2420g6.C2421a m32832p() {
         return this.f9853w;
     }
 
-    public int m32828q() {
+    public int m32831q() {
         return this.f9850t;
     }
 
-    public int m32827r() {
+    public int m32830r() {
         if ((this.f9837g & 4) != 0) {
             return this.f9846p;
         }
         return -1;
     }
 
-    public int m32826s() {
+    public int m32829s() {
         return this.f9840j;
     }
 
-    public String[] m32825t() {
+    public String[] m32828t() {
         return this.f9839i;
     }
 
-    public CharSequence m32824u() {
+    public CharSequence m32827u() {
         int i = this.f9834d;
-        return i != 0 ? C4403w.m27869i1(i) : this.f9835e;
+        return i != 0 ? C4403w.m27871i1(i) : this.f9835e;
     }
 
-    public String m32823v() {
+    public String m32826v() {
         return this.f9842l;
     }
 
-    public int m32822w() {
+    public int m32825w() {
         return this.f9834d;
     }
 
-    public String m32821x() {
+    public String m32824x() {
         return this.f9843m;
     }
 
-    public int m32820y(int i) {
+    public int m32823y(int i) {
         int i2 = this.f9844n;
         return i2 != 0 ? i2 : i;
     }
 
-    public int m32819z() {
+    public int m32822z() {
         return this.f9845o;
     }
 

@@ -11,20 +11,20 @@ public class C5095o implements AbstractC6811b {
     }
 
     @Override
-    public void mo18912a(C6810a aVar) {
-        this.f17131a = aVar.m18920s();
-        this.f17132b = aVar.m18920s();
+    public void mo18913a(C6810a aVar) {
+        this.f17131a = aVar.m18921s();
+        this.f17132b = aVar.m18921s();
     }
 
     @Override
-    public int mo18911b() {
-        return C6810a.m18916w(this.f17131a) + C6810a.m18916w(this.f17132b);
+    public int mo18912b() {
+        return C6810a.m18917w(this.f17131a) + C6810a.m18917w(this.f17132b);
     }
 
     @Override
-    public void mo18910c(C6810a aVar) {
-        aVar.m18940M(this.f17131a);
-        aVar.m18940M(this.f17132b);
+    public void mo18911c(C6810a aVar) {
+        aVar.m18941M(this.f17131a);
+        aVar.m18941M(this.f17132b);
     }
 
     public C5095o(int i, int i2) {

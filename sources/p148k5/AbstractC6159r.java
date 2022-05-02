@@ -23,31 +23,31 @@ public abstract class AbstractC6159r<A extends C5850a.AbstractC5852b, ResultT> {
         }
 
         @RecentlyNonNull
-        public AbstractC6159r<A, ResultT> m21154a() {
-            C6378r.m20515b(this.f19530a != null, "execute parameter required");
+        public AbstractC6159r<A, ResultT> m21155a() {
+            C6378r.m20516b(this.f19530a != null, "execute parameter required");
             return new C6099d2(this, this.f19532c, this.f19531b, this.f19533d);
         }
 
         @RecentlyNonNull
-        public C6160a<A, ResultT> m21153b(@RecentlyNonNull AbstractC6147o<A, C6777m<ResultT>> oVar) {
+        public C6160a<A, ResultT> m21154b(@RecentlyNonNull AbstractC6147o<A, C6777m<ResultT>> oVar) {
             this.f19530a = oVar;
             return this;
         }
 
         @RecentlyNonNull
-        public C6160a<A, ResultT> m21152c(boolean z) {
+        public C6160a<A, ResultT> m21153c(boolean z) {
             this.f19531b = z;
             return this;
         }
 
         @RecentlyNonNull
-        public C6160a<A, ResultT> m21151d(@RecentlyNonNull C5219c... cVarArr) {
+        public C6160a<A, ResultT> m21152d(@RecentlyNonNull C5219c... cVarArr) {
             this.f19532c = cVarArr;
             return this;
         }
 
         @RecentlyNonNull
-        public C6160a<A, ResultT> m21150e(int i) {
+        public C6160a<A, ResultT> m21151e(int i) {
             this.f19533d = i;
             return this;
         }
@@ -64,22 +64,22 @@ public abstract class AbstractC6159r<A extends C5850a.AbstractC5852b, ResultT> {
     }
 
     @RecentlyNonNull
-    public static <A extends C5850a.AbstractC5852b, ResultT> C6160a<A, ResultT> m21159a() {
+    public static <A extends C5850a.AbstractC5852b, ResultT> C6160a<A, ResultT> m21160a() {
         return new C6160a<>(null);
     }
 
-    public abstract void mo21158b(@RecentlyNonNull A a, @RecentlyNonNull C6777m<ResultT> mVar);
+    public abstract void mo21159b(@RecentlyNonNull A a, @RecentlyNonNull C6777m<ResultT> mVar);
 
-    public boolean m21157c() {
+    public boolean m21158c() {
         return this.f19528b;
     }
 
     @RecentlyNullable
-    public final C5219c[] m21156d() {
+    public final C5219c[] m21157d() {
         return this.f19527a;
     }
 
-    public final int m21155e() {
+    public final int m21156e() {
         return this.f19529c;
     }
 }

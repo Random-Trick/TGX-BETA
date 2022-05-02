@@ -46,28 +46,28 @@ public class C6402a {
         this(context, i, str, null, context == null ? null : context.getPackageName());
     }
 
-    public void m20466a(long r14) {
-        throw new UnsupportedOperationException("Method not decompiled: p164l6.C6402a.m20466a(long):void");
+    public void m20467a(long r14) {
+        throw new UnsupportedOperationException("Method not decompiled: p164l6.C6402a.m20467a(long):void");
     }
 
-    public void m20465b() {
-        throw new UnsupportedOperationException("Method not decompiled: p164l6.C6402a.m20465b():void");
+    public void m20466b() {
+        throw new UnsupportedOperationException("Method not decompiled: p164l6.C6402a.m20466b():void");
     }
 
-    public void m20464c(boolean z) {
+    public void m20465c(boolean z) {
         this.f20053b.setReferenceCounted(z);
         this.f20060i = z;
     }
 
-    public final String m20463d(String str) {
+    public final String m20464d(String str) {
         return (!this.f20060i || TextUtils.isEmpty(str)) ? this.f20057f : str;
     }
 
-    public final List<String> m20462e() {
-        return C8254n.m13026b(this.f20054c);
+    public final List<String> m20463e() {
+        return C8254n.m13025b(this.f20054c);
     }
 
-    public final void m20461f(int i) {
+    public final void m20462f(int i) {
         if (this.f20053b.isHeld()) {
             try {
                 this.f20053b.release();
@@ -93,8 +93,8 @@ public class C6402a {
         this.f20061j = new HashMap();
         this.f20062k = Collections.synchronizedSet(new HashSet());
         this.f20064m = new AtomicInteger(0);
-        C6378r.m20505l(context, "WakeLock: context must not be null");
-        C6378r.m20509h(str, "WakeLock: wakeLockName must not be empty");
+        C6378r.m20506l(context, "WakeLock: context must not be null");
+        C6378r.m20510h(str, "WakeLock: wakeLockName must not be empty");
         this.f20055d = i;
         this.f20057f = null;
         this.f20058g = null;
@@ -108,10 +108,10 @@ public class C6402a {
         }
         PowerManager.WakeLock newWakeLock = ((PowerManager) context.getSystemService("power")).newWakeLock(i, str);
         this.f20053b = newWakeLock;
-        if (C8254n.m13025c(context)) {
-            WorkSource a = C8254n.m13027a(context, C8253m.m13028a(str3) ? context.getPackageName() : str3);
+        if (C8254n.m13024c(context)) {
+            WorkSource a = C8254n.m13026a(context, C8253m.m13027a(str3) ? context.getPackageName() : str3);
             this.f20054c = a;
-            if (a != null && C8254n.m13025c(applicationContext)) {
+            if (a != null && C8254n.m13024c(applicationContext)) {
                 WorkSource workSource = this.f20054c;
                 if (workSource != null) {
                     workSource.add(a);

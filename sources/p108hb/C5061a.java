@@ -8,6 +8,6 @@ public final class C5061a implements AbstractC5918j {
 
     @Override
     public final void mo1330a(Object obj) {
-        C5062b.m24177E((AbstractC5911c) obj);
+        C5062b.m24178E((AbstractC5911c) obj);
     }
 }

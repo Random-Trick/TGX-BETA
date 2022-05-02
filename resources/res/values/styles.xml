@@ -23,6 +23,19 @@
         <item name="android:timePickerDialogTheme">@style/DialogTheme</item>
         <item name="android:datePickerDialogTheme">@style/DialogTheme</item>
     </style>
+    <style name="AppTheme.Dark" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/splash</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:datePickerStyle">@style/DatePickerTheme</item>
+        <item name="android:colorControlActivated">#ff5b95c2</item>
+        <item name="android:colorPrimary">@color/apps_list</item>
+        <item name="android:colorPrimaryDark">@color/status_bar</item>
+        <item name="android:navigationBarColor">@color/navigation_bar</item>
+        <item name="android:timePickerStyle">@style/TimePickerTheme</item>
+        <item name="android:timePickerDialogTheme">@style/DialogTheme</item>
+        <item name="android:datePickerDialogTheme">@style/DialogTheme</item>
+    </style>
     <style name="Base.AlertDialog.AppCompat" parent="@android:style/Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
         <item name="buttonIconDimen">@dimen/abc_alert_dialog_button_dimen</item>
@@ -1396,7 +1409,7 @@
         <item name="android:textSize">@dimen/notification_action_text_size</item>
         <item name="android:textColor">@color/androidx_core_secondary_text_default_material_light</item>
     </style>
-    <style name="a_res_0x7f0f0167" parent="@android:style/Widget">
+    <style name="a_res_0x7f0f0168" parent="@android:style/Widget">
         <item name="statusBarBackground">#000000</item>
     </style>
 </resources>

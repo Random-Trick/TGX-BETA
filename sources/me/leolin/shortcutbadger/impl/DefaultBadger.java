@@ -21,10 +21,10 @@ public class DefaultBadger implements AbstractC0243a {
         intent.putExtra("badge_count", i);
         intent.putExtra("badge_count_package_name", componentName.getPackageName());
         intent.putExtra("badge_count_class_name", componentName.getClassName());
-        C1304a.m37783b(context, intent);
+        C1304a.m37786b(context, intent);
     }
 
     public boolean m18382c(Context context) {
-        return C1304a.m37784a(context, new Intent("android.intent.action.BADGE_COUNT_UPDATE")).size() > 0 || (Build.VERSION.SDK_INT >= 26 && C1304a.m37784a(context, new Intent("me.leolin.shortcutbadger.BADGE_COUNT_UPDATE")).size() > 0);
+        return C1304a.m37787a(context, new Intent("android.intent.action.BADGE_COUNT_UPDATE")).size() > 0 || (Build.VERSION.SDK_INT >= 26 && C1304a.m37787a(context, new Intent("me.leolin.shortcutbadger.BADGE_COUNT_UPDATE")).size() > 0);
     }
 }

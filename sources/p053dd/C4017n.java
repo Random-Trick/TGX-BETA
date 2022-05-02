@@ -62,15 +62,15 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
 
         public C4018a(Context context) {
             super(context);
-            int i = C1357a0.m37541i(17.0f);
-            int i2 = C1357a0.m37541i(50.0f);
+            int i = C1357a0.m37544i(17.0f);
+            int i2 = C1357a0.m37544i(50.0f);
             this.f13472b = i + i + i2;
             this.f13471a = new C6257p(this, i2 / 2);
             setMinimumWidth(this.f13472b);
-            setLayoutParams(new RecyclerView.LayoutParams(-2, C1357a0.m37541i(95.0f)));
+            setLayoutParams(new RecyclerView.LayoutParams(-2, C1357a0.m37544i(95.0f)));
         }
 
-        public void m29294f() {
+        public void m29296f() {
             requestLayout();
         }
 
@@ -94,9 +94,9 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
                 if (str2 == null || !str2.equals(str)) {
                     this.f13465M = str;
                     if (str != null) {
-                        String charSequence = TextUtils.ellipsize(str, C1410y.m37042e0(), C1357a0.m37541i(50.0f) + C1357a0.m37541i(26.0f), TextUtils.TruncateAt.END).toString();
+                        String charSequence = TextUtils.ellipsize(str, C1410y.m37045e0(), C1357a0.m37544i(50.0f) + C1357a0.m37544i(26.0f), TextUtils.TruncateAt.END).toString();
                         this.f13467O = charSequence;
-                        this.f13466N = (int) C7389v0.m16680T1(charSequence, C1410y.m37042e0());
+                        this.f13466N = (int) C7389v0.m16680T1(charSequence, C1410y.m37045e0());
                         return;
                     }
                     this.f13465M = null;
@@ -123,39 +123,39 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
         public void mo35Y0(int i, float f, C3950k kVar) {
         }
 
-        public final void m29298b(boolean z) {
+        public final void m29300b(boolean z) {
             if (this.f13469Q == null) {
                 this.f13469Q = new C3950k(0, this, C2057b.f7280b, 180L);
             }
-            this.f13469Q.m29542k();
+            this.f13469Q.m29544k();
             float f = 0.0f;
             if (!z || this.f13468P != 0.0f) {
-                this.f13469Q.m29557B(C2057b.f7280b);
-                this.f13469Q.m29528y(100L);
+                this.f13469Q.m29559B(C2057b.f7280b);
+                this.f13469Q.m29530y(100L);
             } else {
-                this.f13469Q.m29557B(C2057b.f7284f);
-                this.f13469Q.m29528y(210L);
+                this.f13469Q.m29559B(C2057b.f7284f);
+                this.f13469Q.m29530y(210L);
             }
             C3950k kVar = this.f13469Q;
             if (z) {
                 f = 1.0f;
             }
-            kVar.m29544i(f);
+            kVar.m29546i(f);
         }
 
-        public void m29297c() {
-            this.f13471a.mo20245f();
+        public void m29299c() {
+            this.f13471a.mo20246f();
         }
 
-        public void m29296d() {
-            this.f13471a.mo20247b();
+        public void m29298d() {
+            this.f13471a.mo20248b();
         }
 
-        public final void m29295e(boolean z) {
+        public final void m29297e(boolean z) {
             C3950k kVar = this.f13469Q;
             float f = 1.0f;
             if (kVar != null) {
-                kVar.m29541l(z ? 1.0f : 0.0f);
+                kVar.m29543l(z ? 1.0f : 0.0f);
             }
             if (!z) {
                 f = 0.0f;
@@ -163,13 +163,13 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
             setOnlineFactor(f);
         }
 
-        public final void m29293g(boolean z, boolean z2) {
+        public final void m29295g(boolean z, boolean z2) {
             if (this.f13470R != z) {
                 this.f13470R = z;
                 if (z2) {
-                    m29298b(z);
+                    m29300b(z);
                 } else {
-                    m29295e(z);
+                    m29297e(z);
                 }
             }
         }
@@ -177,7 +177,7 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
         public long getUserId() {
             C4020c cVar = this.f13473c;
             if (cVar != null) {
-                return cVar.m29289e();
+                return cVar.m29291e();
             }
             return 0L;
         }
@@ -186,19 +186,19 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
         public void onDraw(Canvas canvas) {
             C4020c cVar = this.f13473c;
             if (cVar != null) {
-                if (cVar.m29290d().m26280h()) {
-                    if (this.f13471a.mo20246c0()) {
-                        this.f13471a.mo20228u0(canvas, C1357a0.m37541i(50.0f) / 2);
+                if (cVar.m29292d().m26281h()) {
+                    if (this.f13471a.mo20247c0()) {
+                        this.f13471a.mo20229u0(canvas, C1357a0.m37544i(50.0f) / 2);
                     }
                     this.f13471a.draw(canvas);
                 } else {
-                    this.f13473c.m29290d().m26287a(canvas, C1357a0.m37541i(50.0f) / 2, this.f13471a.getLeft(), this.f13471a.getTop(), 17.0f);
+                    this.f13473c.m29292d().m26288a(canvas, C1357a0.m37544i(50.0f) / 2, this.f13471a.getLeft(), this.f13471a.getTop(), 17.0f);
                 }
                 String str = this.f13467O;
                 if (str != null) {
-                    canvas.drawText(str, (getMeasuredWidth() / 2) - (this.f13466N / 2), C1357a0.m37541i(82.0f), C1410y.m37042e0());
+                    canvas.drawText(str, (getMeasuredWidth() / 2) - (this.f13466N / 2), C1357a0.m37544i(82.0f), C1410y.m37045e0());
                 }
-                C1359b.m37501r(canvas, this.f13471a, this.f13468P);
+                C1359b.m37504r(canvas, this.f13471a, this.f13468P);
             }
         }
 
@@ -206,43 +206,43 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
         public void onMeasure(int i, int i2) {
             setMeasuredDimension(View.MeasureSpec.makeMeasureSpec(getDesiredWidth(), Log.TAG_TDLIB_OPTIONS), View.getDefaultSize(getSuggestedMinimumHeight(), i2));
             int measuredWidth = getMeasuredWidth() / 2;
-            int i3 = C1357a0.m37541i(11.0f);
-            int i4 = C1357a0.m37541i(50.0f);
+            int i3 = C1357a0.m37544i(11.0f);
+            int i4 = C1357a0.m37544i(50.0f);
             int i5 = i4 / 2;
-            this.f13471a.mo20256K0(measuredWidth - i5, i3, measuredWidth + i5, i4 + i3);
+            this.f13471a.mo20257K0(measuredWidth - i5, i3, measuredWidth + i5, i4 + i3);
         }
 
         public void setIsOnline(boolean z) {
-            m29293g(z, true);
+            m29295g(z, true);
         }
 
         public void setUser(C4020c cVar) {
             this.f13473c = cVar;
             String str = null;
             if (cVar != null) {
-                this.f13471a.m20819G(cVar.m29288f());
+                this.f13471a.m20820G(cVar.m29290f());
             } else {
-                this.f13471a.m20819G(null);
+                this.f13471a.m20820G(null);
             }
             if (cVar != null) {
-                cVar.m29290d().m26279i(17.0f, null);
-                setTag(cVar.m29290d().m26281g());
+                cVar.m29292d().m26280i(17.0f, null);
+                setTag(cVar.m29292d().m26282g());
             } else {
                 setTag(null);
             }
             if (cVar != null) {
-                str = cVar.m29290d().m26286b();
+                str = cVar.m29292d().m26287b();
             }
             setFirstName(str);
-            m29293g(cVar != null && cVar.f13474a.m26276l().m2480e2().m1621m0(cVar.m29289e()), false);
+            m29295g(cVar != null && cVar.f13474a.m26277l().m2480e2().m1621m0(cVar.m29291e()), false);
             if (getMeasuredWidth() != 0 && getMeasuredWidth() != getDesiredWidth()) {
-                if (getParent() == null || !((RecyclerView) getParent()).m39500C0()) {
+                if (getParent() == null || !((RecyclerView) getParent()).m39503C0()) {
                     requestLayout();
                 } else {
                     post(new Runnable() {
                         @Override
                         public final void run() {
-                            C4017n.C4018a.this.m29294f();
+                            C4017n.C4018a.this.m29296f();
                         }
                     });
                 }
@@ -259,7 +259,7 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
         public void handleMessage(Message message) {
             if (message.what == 0) {
                 Object[] objArr = (Object[]) message.obj;
-                ((C4017n) objArr[0]).m29300t0((TdApi.User) objArr[1]);
+                ((C4017n) objArr[0]).m29302t0((TdApi.User) objArr[1]);
                 objArr[0] = null;
                 objArr[1] = null;
             }
@@ -277,23 +277,23 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
         }
 
         @Override
-        public TdApi.User mo23960c() {
-            return this.f13474a.m26281g();
+        public TdApi.User mo23961c() {
+            return this.f13474a.m26282g();
         }
 
-        public C4746q7 m29290d() {
+        public C4746q7 m29292d() {
             return this.f13474a;
         }
 
-        public long m29289e() {
-            return this.f13474a.m26285c();
+        public long m29291e() {
+            return this.f13474a.m26286c();
         }
 
-        public C6246h m29288f() {
-            return this.f13474a.m26284d();
+        public C6246h m29290f() {
+            return this.f13474a.m26285d();
         }
 
-        public int m29287g() {
+        public int m29289g() {
             TdApi.ChatMember chatMember = this.f13475b;
             if (chatMember != null) {
                 return chatMember.joinedChatDate;
@@ -307,18 +307,18 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
             super(view);
         }
 
-        public static C4021d m29286O(Context context, View.OnClickListener onClickListener, View.OnLongClickListener onLongClickListener, int i) {
+        public static C4021d m29288O(Context context, View.OnClickListener onClickListener, View.OnLongClickListener onLongClickListener, int i) {
             if (i == 1) {
                 C4018a aVar = new C4018a(context);
-                C1399s0.m37193a0(aVar);
+                C1399s0.m37196a0(aVar);
                 C10189d.m5794j(aVar);
                 aVar.setOnClickListener(onClickListener);
                 aVar.setOnLongClickListener(onLongClickListener);
                 aVar.setId(R.id.user);
                 return new C4021d(aVar);
             } else if (i == 3) {
-                TextView O = C1399s0.m37206O(context, 16.0f, C11524j.m213U0(), 17, 0);
-                O.setText(C4403w.m27869i1(R.string.Nobody));
+                TextView O = C1399s0.m37209O(context, 16.0f, C11524j.m213U0(), 17, 0);
+                O.setText(C4403w.m27871i1(R.string.Nobody));
                 O.setLayoutParams(new RecyclerView.LayoutParams(-1, -1));
                 return new C4021d(O);
             } else {
@@ -334,7 +334,7 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
         this.f13462P = onLongClickListener;
     }
 
-    public static HandlerC4019b m29310j0() {
+    public static HandlerC4019b m29312j0() {
         if (f13458S == null) {
             synchronized (HandlerC4019b.class) {
                 if (f13458S == null) {
@@ -366,10 +366,10 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
     @Override
     public void mo1349J3(long j, TdApi.UserStatus userStatus, boolean z) {
         int k0;
-        if (!z && (k0 = m29309k0(j)) != -1) {
+        if (!z && (k0 = m29311k0(j)) != -1) {
             C4020c cVar = this.f13463Q.get(k0);
-            if (cVar.m29290d().m26277k(userStatus)) {
-                m29301s0(k0, cVar.m29289e(), this.f13459M.mo4348c().m2480e2().m1621m0(cVar.m29289e()));
+            if (cVar.m29292d().m26278k(userStatus)) {
+                m29303s0(k0, cVar.m29291e(), this.f13459M.mo4348c().m2480e2().m1621m0(cVar.m29291e()));
                 this.f13463Q.remove(k0);
                 int binarySearch = Collections.binarySearch(this.f13463Q, cVar, this);
                 if (binarySearch >= 0) {
@@ -379,7 +379,7 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
                 int i = (-binarySearch) - 1;
                 this.f13463Q.add(k0, cVar);
                 if (i != k0) {
-                    m39310K(k0, i);
+                    m39313K(k0, i);
                 }
             }
         }
@@ -392,7 +392,7 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
 
     @Override
     public void mo1348P1(TdApi.User user) {
-        HandlerC4019b j0 = m29310j0();
+        HandlerC4019b j0 = m29312j0();
         j0.sendMessage(Message.obtain(j0, 0, new Object[]{this, user}));
     }
 
@@ -401,20 +401,20 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
         this.f13464R.remove(recyclerView);
     }
 
-    public final void m29317c0(C4020c cVar, boolean z) {
+    public final void m29319c0(C4020c cVar, boolean z) {
         int binarySearch = Collections.binarySearch(this.f13463Q, cVar, this);
         if (binarySearch < 0) {
             int i = (-binarySearch) - 1;
             this.f13463Q.add(i, cVar);
             if (z) {
-                m39311J(i);
+                m39314J(i);
             }
         }
     }
 
-    public final int m29316d0() {
-        int i = C1357a0.m37541i(17.0f);
-        int i2 = i + i + C1357a0.m37541i(50.0f);
+    public final int m29318d0() {
+        int i = C1357a0.m37544i(17.0f);
+        int i2 = i + i + C1357a0.m37544i(50.0f);
         int D = mo6153D();
         if (D == 0 || this.f13464R.isEmpty()) {
             return i2;
@@ -424,14 +424,14 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
         return max > i2 ? Math.max(i2, (measuredWidth - (max - i2)) / D) : max;
     }
 
-    public final void m29315e0(boolean z) {
+    public final void m29317e0(boolean z) {
         if (!this.f13463Q.isEmpty()) {
             C5322e eVar = new C5322e(this.f13463Q.size());
             Iterator<C4020c> it = this.f13463Q.iterator();
             while (it.hasNext()) {
-                eVar.m23275a(it.next().m29289e());
+                eVar.m23276a(it.next().m29291e());
             }
-            this.f13459M.mo4348c().m2480e2().m1591t2(eVar.m23269g(), this);
+            this.f13459M.mo4348c().m2480e2().m1591t2(eVar.m23270g(), this);
             int D = mo6153D();
             this.f13463Q.clear();
             if (z) {
@@ -442,10 +442,10 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
 
     public int compare(C4020c cVar, C4020c cVar2) {
         int i;
-        C4746q7 d = cVar.m29290d();
-        C4746q7 d2 = cVar2.m29290d();
-        TdApi.User g = d.m26281g();
-        TdApi.User g2 = d2.m26281g();
+        C4746q7 d = cVar.m29292d();
+        C4746q7 d2 = cVar2.m29292d();
+        TdApi.User g = d.m26282g();
+        TdApi.User g2 = d2.m26282g();
         if (g == null && g2 == null) {
             return 0;
         }
@@ -457,24 +457,24 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
         }
         long ba2 = this.f13459M.mo4348c().m2519ba();
         int i2 = Integer.MAX_VALUE;
-        if (g.f25439id == ba2) {
-            i = C4779t2.m25382z1(g2);
-        } else if (g2.f25439id == ba2) {
-            i2 = C4779t2.m25382z1(g);
+        if (g.f25442id == ba2) {
+            i = C4779t2.m25383z1(g2);
+        } else if (g2.f25442id == ba2) {
+            i2 = C4779t2.m25383z1(g);
             i = Integer.MAX_VALUE;
         } else {
-            i2 = C4779t2.m25382z1(g);
-            i = C4779t2.m25382z1(g2);
+            i2 = C4779t2.m25383z1(g);
+            i = C4779t2.m25383z1(g2);
         }
         if (i2 != i) {
             return i2 > i ? -1 : 1;
         }
-        int g3 = cVar.m29287g();
-        int g4 = cVar2.m29287g();
+        int g3 = cVar.m29289g();
+        int g4 = cVar2.m29289g();
         if (g3 <= g4) {
             if (g3 >= g4) {
-                long j = g.f25439id;
-                long j2 = g2.f25439id;
+                long j = g.f25442id;
+                long j2 = g2.f25442id;
                 if (j <= j2) {
                     if (j >= j2) {
                         return 0;
@@ -486,30 +486,30 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
         return -1;
     }
 
-    public void m29313g0() {
-        m29315e0(true);
+    public void m29315g0() {
+        m29317e0(true);
     }
 
-    public TdApi.ChatMember m29312h0(long j) {
-        int k0 = m29309k0(j);
+    public TdApi.ChatMember m29314h0(long j) {
+        int k0 = m29311k0(j);
         if (k0 != -1) {
             return this.f13463Q.get(k0).f13475b;
         }
         return null;
     }
 
-    public TdApi.ChatMember m29311i0(TdApi.MessageSender messageSender) {
+    public TdApi.ChatMember m29313i0(TdApi.MessageSender messageSender) {
         if (messageSender.getConstructor() == -336109341) {
-            return m29312h0(((TdApi.MessageSenderUser) messageSender).userId);
+            return m29314h0(((TdApi.MessageSenderUser) messageSender).userId);
         }
         return null;
     }
 
-    public final int m29309k0(long j) {
+    public final int m29311k0(long j) {
         Iterator<C4020c> it = this.f13463Q.iterator();
         int i = 0;
         while (it.hasNext()) {
-            if (it.next().m29289e() == j) {
+            if (it.next().m29291e() == j) {
                 return i;
             }
             i++;
@@ -518,87 +518,87 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
     }
 
     public void mo6146Q(C4021d dVar, int i) {
-        if (dVar.m39332n() == 1) {
+        if (dVar.m39335n() == 1) {
             ((C4018a) dVar.f3479a).setUser(this.f13463Q.get(i));
         }
     }
 
     public C4021d mo6145S(ViewGroup viewGroup, int i) {
-        return C4021d.m29286O(this.f13459M.mo4347s(), this.f13461O, this.f13462P, i);
+        return C4021d.m29288O(this.f13459M.mo4347s(), this.f13461O, this.f13462P, i);
     }
 
     public void mo6144V(C4021d dVar) {
-        if (dVar.m39332n() == 1) {
-            ((C4018a) dVar.f3479a).m29297c();
+        if (dVar.m39335n() == 1) {
+            ((C4018a) dVar.f3479a).m29299c();
         }
     }
 
     public void mo6143W(C4021d dVar) {
-        if (dVar.m39332n() == 1) {
-            ((C4018a) dVar.f3479a).m29296d();
+        if (dVar.m39335n() == 1) {
+            ((C4018a) dVar.f3479a).m29298d();
         }
     }
 
-    public void m29304p0(TdApi.ChatMember[] chatMemberArr) {
+    public void m29306p0(TdApi.ChatMember[] chatMemberArr) {
         if (this.f13463Q.isEmpty()) {
-            m29303q0(chatMemberArr);
+            m29305q0(chatMemberArr);
         } else if (chatMemberArr.length == 0) {
-            m29315e0(true);
+            m29317e0(true);
         } else {
             C6035e eVar = new C6035e(chatMemberArr.length);
             for (TdApi.ChatMember chatMember : chatMemberArr) {
-                eVar.m21500k(((TdApi.MessageSenderUser) chatMember.memberId).userId, chatMember);
+                eVar.m21501k(((TdApi.MessageSenderUser) chatMember.memberId).userId, chatMember);
             }
-            int d0 = m29316d0();
+            int d0 = m29318d0();
             int i = 0;
             for (int size = this.f13463Q.size() - 1; size >= 0; size--) {
-                int h = eVar.m21503h(this.f13463Q.get(size).m29289e());
+                int h = eVar.m21504h(this.f13463Q.get(size).m29291e());
                 if (h < 0) {
                     this.f13463Q.remove(size);
-                    m39306O(size);
+                    m39309O(size);
                     i--;
                 } else {
-                    eVar.m21498n(h);
+                    eVar.m21499n(h);
                 }
             }
-            for (int i2 = 0; i2 < eVar.m21496p(); i2++) {
-                m29317c0(new C4020c(this.f13459M.mo4348c(), (TdApi.ChatMember) eVar.m21495q(i2)), true);
+            for (int i2 = 0; i2 < eVar.m21497p(); i2++) {
+                m29319c0(new C4020c(this.f13459M.mo4348c(), (TdApi.ChatMember) eVar.m21496q(i2)), true);
                 i++;
             }
-            if (!(i == 0 || m29316d0() == d0)) {
-                m39309L(0, mo6153D());
+            if (!(i == 0 || m29318d0() == d0)) {
+                m39312L(0, mo6153D());
             }
         }
     }
 
-    public void m29303q0(TdApi.ChatMember[] chatMemberArr) {
+    public void m29305q0(TdApi.ChatMember[] chatMemberArr) {
         if (!this.f13463Q.isEmpty() || chatMemberArr.length != 0) {
             int D = mo6153D();
-            m29315e0(false);
+            m29317e0(false);
             this.f13463Q.ensureCapacity(chatMemberArr.length);
             C5322e eVar = new C5322e(chatMemberArr.length);
             for (TdApi.ChatMember chatMember : chatMemberArr) {
-                m29317c0(new C4020c(this.f13459M.mo4348c(), chatMember), false);
-                eVar.m23275a(((TdApi.MessageSenderUser) chatMember.memberId).userId);
+                m29319c0(new C4020c(this.f13459M.mo4348c(), chatMember), false);
+                eVar.m23276a(((TdApi.MessageSenderUser) chatMember.memberId).userId);
             }
-            this.f13459M.mo4348c().m2480e2().m1642g2(eVar.m23269g(), this);
+            this.f13459M.mo4348c().m2480e2().m1642g2(eVar.m23270g(), this);
             C7389v0.m16567w2(this, D);
         }
     }
 
-    public void m29302r0(TdApi.ChatMember chatMember) {
+    public void m29304r0(TdApi.ChatMember chatMember) {
         int k0;
-        if (chatMember.memberId.getConstructor() == -336109341 && (k0 = m29309k0(((TdApi.MessageSenderUser) chatMember.memberId).userId)) != -1) {
+        if (chatMember.memberId.getConstructor() == -336109341 && (k0 = m29311k0(((TdApi.MessageSenderUser) chatMember.memberId).userId)) != -1) {
             this.f13463Q.set(k0, new C4020c(this.f13459M.mo4348c(), chatMember));
-            m39312I(k0);
+            m39315I(k0);
         }
     }
 
-    public final void m29301s0(int i, long j, boolean z) {
+    public final void m29303s0(int i, long j, boolean z) {
         Iterator<RecyclerView> it = this.f13464R.iterator();
         boolean z2 = false;
         while (it.hasNext()) {
-            View C = it.next().getLayoutManager().mo39262C(i);
+            View C = it.next().getLayoutManager().mo39265C(i);
             if (C != null && (C instanceof C4018a)) {
                 C4018a aVar = (C4018a) C;
                 if (aVar.getUserId() == j) {
@@ -608,19 +608,19 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
             z2 = true;
         }
         if (z2) {
-            m39312I(i);
+            m39315I(i);
         }
     }
 
-    public final void m29300t0(TdApi.User user) {
-        int k0 = m29309k0(user.f25439id);
+    public final void m29302t0(TdApi.User user) {
+        int k0 = m29311k0(user.f25442id);
         if (k0 != -1) {
             C4020c cVar = this.f13463Q.get(k0);
-            cVar.m29290d().m26278j(user);
+            cVar.m29292d().m26279j(user);
             boolean z = false;
             Iterator<RecyclerView> it = this.f13464R.iterator();
             while (it.hasNext()) {
-                View C = it.next().getLayoutManager().mo39262C(k0);
+                View C = it.next().getLayoutManager().mo39265C(k0);
                 if (C == null || !(C instanceof C4018a)) {
                     z = true;
                 } else {
@@ -629,7 +629,7 @@ public class C4017n extends RecyclerView.AbstractC0890h<C4021d> implements Compa
                 }
             }
             if (z) {
-                m39312I(k0);
+                m39315I(k0);
             }
         }
     }

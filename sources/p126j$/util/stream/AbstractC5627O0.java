@@ -4,16 +4,16 @@ import p126j$.util.AbstractC5466E;
 
 public interface AbstractC5627O0 extends AbstractC5632P0 {
     @Override
-    AbstractC5627O0 mo22158f(int i);
+    AbstractC5627O0 mo22159f(int i);
 
-    Object mo22347g(int i);
+    Object mo22348g(int i);
 
-    void mo22157i(Object obj, int i);
+    void mo22158i(Object obj, int i);
 
-    Object mo22156l();
+    Object mo22157l();
 
-    void mo22155m(Object obj);
+    void mo22156m(Object obj);
 
     @Override
-    AbstractC5466E mo42629spliterator();
+    AbstractC5466E mo42632spliterator();
 }

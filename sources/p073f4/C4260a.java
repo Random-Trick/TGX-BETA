@@ -34,19 +34,19 @@ public final class C4260a implements Parcelable {
         this.f14313a = bVarArr;
     }
 
-    public C4260a m28330a(AbstractC4262b... bVarArr) {
-        return bVarArr.length == 0 ? this : new C4260a((AbstractC4262b[]) C1216l0.m37947t0(this.f14313a, bVarArr));
+    public C4260a m28332a(AbstractC4262b... bVarArr) {
+        return bVarArr.length == 0 ? this : new C4260a((AbstractC4262b[]) C1216l0.m37950t0(this.f14313a, bVarArr));
     }
 
-    public C4260a m28329b(C4260a aVar) {
-        return aVar == null ? this : m28330a(aVar.f14313a);
+    public C4260a m28331b(C4260a aVar) {
+        return aVar == null ? this : m28332a(aVar.f14313a);
     }
 
-    public AbstractC4262b m28328c(int i) {
+    public AbstractC4262b m28330c(int i) {
         return this.f14313a[i];
     }
 
-    public int m28327d() {
+    public int m28329d() {
         return this.f14313a.length;
     }
 

@@ -26,107 +26,107 @@ public class ActivityC4073a extends ActivityC0761d implements AbstractC4074b, C7
     public Resources f13748e0;
 
     @Override
-    public void mo29042C() {
-        m29041D().mo28971m();
+    public void mo29044C() {
+        m29043D().mo28973m();
     }
 
-    public AbstractC4075c m29041D() {
+    public AbstractC4075c m29043D() {
         if (this.f13747d0 == null) {
-            this.f13747d0 = AbstractC4075c.m29031e(this, this);
+            this.f13747d0 = AbstractC4075c.m29033e(this, this);
         }
         return this.f13747d0;
     }
 
-    public ActionBar m29040E() {
-        return m29041D().mo28975k();
+    public ActionBar m29042E() {
+        return m29043D().mo28977k();
     }
 
-    public void m29039F(C7988o oVar) {
-        oVar.m13832i(this);
+    public void m29041F(C7988o oVar) {
+        oVar.m13831i(this);
     }
 
-    public void m29038G(int i) {
+    public void m29040G(int i) {
     }
 
-    public void m29037H(C7988o oVar) {
+    public void m29039H(C7988o oVar) {
     }
 
     @Deprecated
-    public void m29036I() {
+    public void m29038I() {
     }
 
-    public boolean m29035J() {
-        Intent c = mo13827c();
+    public boolean m29037J() {
+        Intent c = mo13826c();
         if (c == null) {
             return false;
         }
-        if (m29032M(c)) {
-            C7988o r = C7988o.m13830r(this);
-            m29039F(r);
-            m29037H(r);
-            r.m13829s();
+        if (m29034M(c)) {
+            C7988o r = C7988o.m13829r(this);
+            m29041F(r);
+            m29039H(r);
+            r.m13828s();
             try {
-                C7941a.m14029n(this);
+                C7941a.m14028n(this);
                 return true;
             } catch (IllegalStateException unused) {
                 finish();
                 return true;
             }
         } else {
-            m29033L(c);
+            m29035L(c);
             return true;
         }
     }
 
-    public final boolean m29034K(int i, KeyEvent keyEvent) {
+    public final boolean m29036K(int i, KeyEvent keyEvent) {
         Window window;
         return Build.VERSION.SDK_INT < 26 && !keyEvent.isCtrlPressed() && !KeyEvent.metaStateHasNoModifiers(keyEvent.getMetaState()) && keyEvent.getRepeatCount() == 0 && !KeyEvent.isModifierKey(keyEvent.getKeyCode()) && (window = getWindow()) != null && window.getDecorView() != null && window.getDecorView().dispatchKeyShortcutEvent(keyEvent);
     }
 
-    public void m29033L(Intent intent) {
-        C7954f.m14002e(this, intent);
+    public void m29035L(Intent intent) {
+        C7954f.m14001e(this, intent);
     }
 
-    public boolean m29032M(Intent intent) {
-        return C7954f.m14001f(this, intent);
+    public boolean m29034M(Intent intent) {
+        return C7954f.m14000f(this, intent);
     }
 
     @Override
     public void addContentView(View view, ViewGroup.LayoutParams layoutParams) {
-        m29041D().mo28988c(view, layoutParams);
+        m29043D().mo28990c(view, layoutParams);
     }
 
     @Override
     public void attachBaseContext(Context context) {
         super.attachBaseContext(context);
-        m29041D().mo28986d(context);
+        m29043D().mo28988d(context);
     }
 
     @Override
-    public Intent mo13827c() {
-        return C7954f.m14006a(this);
+    public Intent mo13826c() {
+        return C7954f.m14005a(this);
     }
 
     @Override
     public void closeOptionsMenu() {
-        ActionBar E = m29040E();
+        ActionBar E = m29042E();
         if (!getWindow().hasFeature(0)) {
             return;
         }
-        if (E == null || !E.m41854g()) {
+        if (E == null || !E.m41857g()) {
             super.closeOptionsMenu();
         }
     }
 
     @Override
-    public void mo28926d(AbstractC5814b bVar) {
+    public void mo28928d(AbstractC5814b bVar) {
     }
 
     @Override
     public boolean dispatchKeyEvent(KeyEvent keyEvent) {
         int keyCode = keyEvent.getKeyCode();
-        ActionBar E = m29040E();
-        if (keyCode != 82 || E == null || !E.m41851p(keyEvent)) {
+        ActionBar E = m29042E();
+        if (keyCode != 82 || E == null || !E.m41854p(keyEvent)) {
             return super.dispatchKeyEvent(keyEvent);
         }
         return true;
@@ -134,17 +134,17 @@ public class ActivityC4073a extends ActivityC0761d implements AbstractC4074b, C7
 
     @Override
     public <T extends View> T findViewById(int i) {
-        return (T) m29041D().mo28982g(i);
+        return (T) m29043D().mo28984g(i);
     }
 
     @Override
     public MenuInflater getMenuInflater() {
-        return m29041D().mo28977j();
+        return m29043D().mo28979j();
     }
 
     @Override
     public Resources getResources() {
-        if (this.f13748e0 == null && C0466l0.m41202b()) {
+        if (this.f13748e0 == null && C0466l0.m41205b()) {
             this.f13748e0 = new C0466l0(this, super.getResources());
         }
         Resources resources = this.f13748e0;
@@ -152,17 +152,17 @@ public class ActivityC4073a extends ActivityC0761d implements AbstractC4074b, C7
     }
 
     @Override
-    public void mo28924h(AbstractC5814b bVar) {
+    public void mo28926h(AbstractC5814b bVar) {
     }
 
     @Override
-    public AbstractC5814b mo28923i(AbstractC5814b.AbstractC5815a aVar) {
+    public AbstractC5814b mo28925i(AbstractC5814b.AbstractC5815a aVar) {
         return null;
     }
 
     @Override
     public void invalidateOptionsMenu() {
-        m29041D().mo28971m();
+        m29043D().mo28973m();
     }
 
     @Override
@@ -171,31 +171,31 @@ public class ActivityC4073a extends ActivityC0761d implements AbstractC4074b, C7
         if (this.f13748e0 != null) {
             this.f13748e0.updateConfiguration(configuration, super.getResources().getDisplayMetrics());
         }
-        m29041D().mo28967p(configuration);
+        m29043D().mo28969p(configuration);
     }
 
     @Override
     public void onContentChanged() {
-        m29036I();
+        m29038I();
     }
 
     @Override
     public void onCreate(Bundle bundle) {
-        AbstractC4075c D = m29041D();
-        D.mo28973l();
-        D.mo28965q(bundle);
+        AbstractC4075c D = m29043D();
+        D.mo28975l();
+        D.mo28967q(bundle);
         super.onCreate(bundle);
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        m29041D().mo28963r();
+        m29043D().mo28965r();
     }
 
     @Override
     public boolean onKeyDown(int i, KeyEvent keyEvent) {
-        if (m29034K(i, keyEvent)) {
+        if (m29036K(i, keyEvent)) {
             return true;
         }
         return super.onKeyDown(i, keyEvent);
@@ -206,11 +206,11 @@ public class ActivityC4073a extends ActivityC0761d implements AbstractC4074b, C7
         if (super.onMenuItemSelected(i, menuItem)) {
             return true;
         }
-        ActionBar E = m29040E();
-        if (menuItem.getItemId() != 16908332 || E == null || (E.mo41766j() & 4) == 0) {
+        ActionBar E = m29042E();
+        if (menuItem.getItemId() != 16908332 || E == null || (E.mo41769j() & 4) == 0) {
             return false;
         }
-        return m29035J();
+        return m29037J();
     }
 
     @Override
@@ -226,68 +226,68 @@ public class ActivityC4073a extends ActivityC0761d implements AbstractC4074b, C7
     @Override
     public void onPostCreate(Bundle bundle) {
         super.onPostCreate(bundle);
-        m29041D().mo28961s(bundle);
+        m29043D().mo28963s(bundle);
     }
 
     @Override
     public void onPostResume() {
         super.onPostResume();
-        m29041D().mo28959t();
+        m29043D().mo28961t();
     }
 
     @Override
     public void onSaveInstanceState(Bundle bundle) {
         super.onSaveInstanceState(bundle);
-        m29041D().mo28957u(bundle);
+        m29043D().mo28959u(bundle);
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        m29041D().mo28955v();
+        m29043D().mo28957v();
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        m29041D().mo28953w();
+        m29043D().mo28955w();
     }
 
     @Override
     public void onTitleChanged(CharSequence charSequence, int i) {
         super.onTitleChanged(charSequence, i);
-        m29041D().mo29019D(charSequence);
+        m29043D().mo29021D(charSequence);
     }
 
     @Override
     public void openOptionsMenu() {
-        ActionBar E = m29040E();
+        ActionBar E = m29042E();
         if (!getWindow().hasFeature(0)) {
             return;
         }
-        if (E == null || !E.m41850q()) {
+        if (E == null || !E.m41853q()) {
             super.openOptionsMenu();
         }
     }
 
     @Override
     public void setContentView(int i) {
-        m29041D().mo28948z(i);
+        m29043D().mo28950z(i);
     }
 
     @Override
     public void setTheme(int i) {
         super.setTheme(i);
-        m29041D().mo29021C(i);
+        m29043D().mo29023C(i);
     }
 
     @Override
     public void setContentView(View view) {
-        m29041D().mo29025A(view);
+        m29043D().mo29027A(view);
     }
 
     @Override
     public void setContentView(View view, ViewGroup.LayoutParams layoutParams) {
-        m29041D().mo29023B(view, layoutParams);
+        m29043D().mo29025B(view, layoutParams);
     }
 }

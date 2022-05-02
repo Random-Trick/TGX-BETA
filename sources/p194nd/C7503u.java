@@ -10,9 +10,9 @@ import nc.C7389v0;
 import p156kd.C6246h;
 
 public class C7503u extends RecyclerView.AbstractC0890h<C7504a> {
-    public final Context f24018M;
-    public final View.OnClickListener f24019N;
-    public ArrayList<C6246h> f24020O;
+    public final Context f24021M;
+    public final View.OnClickListener f24022N;
+    public ArrayList<C6246h> f24023O;
 
     public static class C7504a extends RecyclerView.AbstractC0886d0 {
         public C7504a(View view) {
@@ -21,13 +21,13 @@ public class C7503u extends RecyclerView.AbstractC0890h<C7504a> {
     }
 
     public C7503u(Context context, View.OnClickListener onClickListener) {
-        this.f24018M = context;
-        this.f24019N = onClickListener;
+        this.f24021M = context;
+        this.f24022N = onClickListener;
     }
 
     @Override
     public int mo6153D() {
-        ArrayList<C6246h> arrayList = this.f24020O;
+        ArrayList<C6246h> arrayList = this.f24023O;
         if (arrayList != null) {
             return arrayList.size();
         }
@@ -35,12 +35,12 @@ public class C7503u extends RecyclerView.AbstractC0890h<C7504a> {
     }
 
     public void mo6146Q(C7504a aVar, int i) {
-        ((C7508w) aVar.f3479a).setImage(this.f24020O.get(i));
+        ((C7508w) aVar.f3479a).setImage(this.f24023O.get(i));
     }
 
     public C7504a mo6145S(ViewGroup viewGroup, int i) {
-        C7508w wVar = new C7508w(this.f24018M);
-        wVar.setOnDeleteClick(this.f24019N);
+        C7508w wVar = new C7508w(this.f24021M);
+        wVar.setOnDeleteClick(this.f24022N);
         return new C7504a(wVar);
     }
 
@@ -57,12 +57,12 @@ public class C7503u extends RecyclerView.AbstractC0890h<C7504a> {
     }
 
     public void m15762g0(C6246h hVar) {
-        Iterator<C6246h> it = this.f24020O.iterator();
+        Iterator<C6246h> it = this.f24023O.iterator();
         int i = 0;
         while (it.hasNext()) {
             if (it.next() == hVar) {
-                this.f24020O.remove(i);
-                m39306O(i);
+                this.f24023O.remove(i);
+                m39309O(i);
                 return;
             }
             i++;
@@ -71,7 +71,7 @@ public class C7503u extends RecyclerView.AbstractC0890h<C7504a> {
 
     public void m15761h0(ArrayList<C6246h> arrayList) {
         int D = mo6153D();
-        this.f24020O = arrayList;
+        this.f24023O = arrayList;
         C7389v0.m16615k2(this, D);
     }
 }

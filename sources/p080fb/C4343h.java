@@ -17,44 +17,44 @@ public class C4343h implements AbstractC4345j {
     }
 
     @Override
-    public void mo28230b(Rect rect) {
-        View f = mo28226f();
+    public void mo28232b(Rect rect) {
+        View f = mo28228f();
         if (f != null) {
             f.invalidate(rect);
         }
     }
 
     @Override
-    public boolean mo28229c(View view) {
-        return mo28226f() == view;
+    public boolean mo28231c(View view) {
+        return mo28228f() == view;
     }
 
     @Override
-    public void mo28228d(int i, int i2, int i3, int i4) {
-        View f = mo28226f();
+    public void mo28230d(int i, int i2, int i3, int i4) {
+        View f = mo28228f();
         if (f != null) {
             f.invalidate(i, i2, i3, i4);
         }
     }
 
     @Override
-    public void mo28227e() {
-        C2065g.m35719c(mo28226f());
+    public void mo28229e() {
+        C2065g.m35722c(mo28228f());
     }
 
     @Override
-    public View mo28226f() {
+    public View mo28228f() {
         return this.f14422a;
     }
 
     @Override
-    public boolean mo28225g() {
-        return mo28226f() != null;
+    public boolean mo28227g() {
+        return mo28228f() != null;
     }
 
     @Override
-    public void mo28224h() {
-        View f = mo28226f();
+    public void mo28226h() {
+        View f = mo28228f();
         if (f != null) {
             f.postInvalidate();
         }
@@ -62,7 +62,7 @@ public class C4343h implements AbstractC4345j {
 
     @Override
     public void invalidate() {
-        View f = mo28226f();
+        View f = mo28228f();
         if (f != null) {
             f.invalidate();
         }
@@ -70,7 +70,7 @@ public class C4343h implements AbstractC4345j {
 
     @Override
     public void requestLayout() {
-        View f = mo28226f();
+        View f = mo28228f();
         if (f != null) {
             f.requestLayout();
         }

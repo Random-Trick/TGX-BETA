@@ -6,11 +6,11 @@ import p004a3.C0065i;
 public abstract class AbstractC0077o {
 
     public static abstract class AbstractC0078a {
-        public abstract AbstractC0077o mo42426a();
+        public abstract AbstractC0077o mo42429a();
 
-        public abstract AbstractC0078a mo42425b(EnumC0079b bVar);
+        public abstract AbstractC0078a mo42428b(EnumC0079b bVar);
 
-        public abstract AbstractC0078a mo42424c(EnumC0080c cVar);
+        public abstract AbstractC0078a mo42427c(EnumC0080c cVar);
     }
 
     public enum EnumC0079b {
@@ -88,11 +88,11 @@ public abstract class AbstractC0077o {
             this.f247a = i;
         }
 
-        public static EnumC0079b m42423a(int i) {
+        public static EnumC0079b m42426a(int i) {
             return f245f0.get(i);
         }
 
-        public int m42422b() {
+        public int m42425b() {
             return this.f247a;
         }
     }
@@ -168,20 +168,20 @@ public abstract class AbstractC0077o {
             this.f269a = i;
         }
 
-        public static EnumC0080c m42421a(int i) {
+        public static EnumC0080c m42424a(int i) {
             return f267d0.get(i);
         }
 
-        public int m42420b() {
+        public int m42423b() {
             return this.f269a;
         }
     }
 
-    public static AbstractC0078a m42429a() {
+    public static AbstractC0078a m42432a() {
         return new C0065i.C0067b();
     }
 
-    public abstract EnumC0079b mo42428b();
+    public abstract EnumC0079b mo42431b();
 
-    public abstract EnumC0080c mo42427c();
+    public abstract EnumC0080c mo42430c();
 }

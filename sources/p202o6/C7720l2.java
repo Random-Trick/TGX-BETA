@@ -4,22 +4,22 @@ import java.util.Arrays;
 import org.thunderdog.challegram.Log;
 
 public final class C7720l2 {
-    public byte[] f24746a = new byte[Log.TAG_EMOJI];
-    public int f24747b;
-    public long f24748c;
-    public long f24749d;
-    public int f24750e;
-    public int f24751f;
-    public int f24752g;
-    public boolean f24753h;
-    public String f24754i;
+    public byte[] f24749a = new byte[Log.TAG_EMOJI];
+    public int f24750b;
+    public long f24751c;
+    public long f24752d;
+    public int f24753e;
+    public int f24754f;
+    public int f24755g;
+    public boolean f24756h;
+    public String f24757i;
 
     public C7720l2() {
         m15174d();
     }
 
     public final int m15177a() {
-        return this.f24751f;
+        return this.f24754f;
     }
 
     public final int m15176b(byte[] bArr, int i, int i2) {
@@ -27,69 +27,69 @@ public final class C7720l2 {
         if (e == -1) {
             return -1;
         }
-        if (this.f24748c == -1) {
-            long b = C7733o0.m15156b(this.f24746a, 0);
-            this.f24748c = b;
+        if (this.f24751c == -1) {
+            long b = C7733o0.m15156b(this.f24749a, 0);
+            this.f24751c = b;
             if (b == 67324752) {
-                this.f24753h = false;
-                this.f24749d = C7733o0.m15156b(this.f24746a, 18);
-                this.f24752g = C7733o0.m15157a(this.f24746a, 8);
-                this.f24750e = C7733o0.m15157a(this.f24746a, 26);
-                int a = this.f24750e + 30 + C7733o0.m15157a(this.f24746a, 28);
-                this.f24751f = a;
-                int length = this.f24746a.length;
+                this.f24756h = false;
+                this.f24752d = C7733o0.m15156b(this.f24749a, 18);
+                this.f24755g = C7733o0.m15157a(this.f24749a, 8);
+                this.f24753e = C7733o0.m15157a(this.f24749a, 26);
+                int a = this.f24753e + 30 + C7733o0.m15157a(this.f24749a, 28);
+                this.f24754f = a;
+                int length = this.f24749a.length;
                 if (length < a) {
                     do {
                         length += length;
                     } while (length < a);
-                    this.f24746a = Arrays.copyOf(this.f24746a, length);
+                    this.f24749a = Arrays.copyOf(this.f24749a, length);
                 }
             } else {
-                this.f24753h = true;
+                this.f24756h = true;
             }
         }
-        int e2 = m15173e(this.f24751f, bArr, i + e, i2 - e);
+        int e2 = m15173e(this.f24754f, bArr, i + e, i2 - e);
         if (e2 == -1) {
             return -1;
         }
         int i3 = e + e2;
-        if (!this.f24753h && this.f24754i == null) {
-            this.f24754i = new String(this.f24746a, 30, this.f24750e);
+        if (!this.f24756h && this.f24757i == null) {
+            this.f24757i = new String(this.f24749a, 30, this.f24753e);
         }
         return i3;
     }
 
     public final AbstractC7726m3 m15175c() {
-        int i = this.f24747b;
-        int i2 = this.f24751f;
+        int i = this.f24750b;
+        int i2 = this.f24754f;
         if (i < i2) {
-            return new C7728n0(this.f24754i, this.f24749d, this.f24752g, true, this.f24753h, Arrays.copyOf(this.f24746a, i));
+            return new C7728n0(this.f24757i, this.f24752d, this.f24755g, true, this.f24756h, Arrays.copyOf(this.f24749a, i));
         }
-        C7728n0 n0Var = new C7728n0(this.f24754i, this.f24749d, this.f24752g, false, this.f24753h, Arrays.copyOf(this.f24746a, i2));
+        C7728n0 n0Var = new C7728n0(this.f24757i, this.f24752d, this.f24755g, false, this.f24756h, Arrays.copyOf(this.f24749a, i2));
         m15174d();
         return n0Var;
     }
 
     public final void m15174d() {
-        this.f24747b = 0;
-        this.f24750e = -1;
-        this.f24748c = -1L;
-        this.f24753h = false;
-        this.f24751f = 30;
-        this.f24749d = -1L;
-        this.f24752g = -1;
-        this.f24754i = null;
+        this.f24750b = 0;
+        this.f24753e = -1;
+        this.f24751c = -1L;
+        this.f24756h = false;
+        this.f24754f = 30;
+        this.f24752d = -1L;
+        this.f24755g = -1;
+        this.f24757i = null;
     }
 
     public final int m15173e(int i, byte[] bArr, int i2, int i3) {
-        int i4 = this.f24747b;
+        int i4 = this.f24750b;
         if (i4 >= i) {
             return 0;
         }
         int min = Math.min(i3, i - i4);
-        System.arraycopy(bArr, i2, this.f24746a, this.f24747b, min);
-        int i5 = this.f24747b + min;
-        this.f24747b = i5;
+        System.arraycopy(bArr, i2, this.f24749a, this.f24750b, min);
+        int i5 = this.f24750b + min;
+        this.f24750b = i5;
         if (i5 < i) {
             return -1;
         }

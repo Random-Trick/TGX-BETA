@@ -22,15 +22,15 @@ public final class C1168t implements AbstractC3589b<C1165r> {
         this.f4401e = aVar5;
     }
 
-    public static C1168t m38241a(AbstractC4533a<AbstractC6045a> aVar, AbstractC4533a<AbstractC6045a> aVar2, AbstractC4533a<AbstractC4467e> aVar3, AbstractC4533a<C4944m> aVar4, AbstractC4533a<C4948q> aVar5) {
+    public static C1168t m38244a(AbstractC4533a<AbstractC6045a> aVar, AbstractC4533a<AbstractC6045a> aVar2, AbstractC4533a<AbstractC4467e> aVar3, AbstractC4533a<C4944m> aVar4, AbstractC4533a<C4948q> aVar5) {
         return new C1168t(aVar, aVar2, aVar3, aVar4, aVar5);
     }
 
-    public static C1165r m38239c(AbstractC6045a aVar, AbstractC6045a aVar2, AbstractC4467e eVar, C4944m mVar, C4948q qVar) {
+    public static C1165r m38242c(AbstractC6045a aVar, AbstractC6045a aVar2, AbstractC4467e eVar, C4944m mVar, C4948q qVar) {
         return new C1165r(aVar, aVar2, eVar, mVar, qVar);
     }
 
     public C1165r get() {
-        return m38239c(this.f4397a.get(), this.f4398b.get(), this.f4399c.get(), this.f4400d.get(), this.f4401e.get());
+        return m38242c(this.f4397a.get(), this.f4398b.get(), this.f4399c.get(), this.f4400d.get(), this.f4401e.get());
     }
 }

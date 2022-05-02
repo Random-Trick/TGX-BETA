@@ -17,16 +17,16 @@ import p336y.C10200b2;
 import p336y.C10245j0;
 
 public final class C10320y0 implements AbstractC10273n2<C0599k0>, AbstractC10219e1, AbstractC1426k {
-    public final C10300t1 f33175w;
-    public static final AbstractC10268n0.AbstractC10269a<Integer> f33172x = AbstractC10268n0.AbstractC10269a.m5582a("camerax.core.imageAnalysis.backpressureStrategy", C0599k0.AbstractC0601b.class);
-    public static final AbstractC10268n0.AbstractC10269a<Integer> f33173y = AbstractC10268n0.AbstractC10269a.m5582a("camerax.core.imageAnalysis.imageQueueDepth", Integer.TYPE);
-    public static final AbstractC10268n0.AbstractC10269a<AbstractC0618m1> f33174z = AbstractC10268n0.AbstractC10269a.m5582a("camerax.core.imageAnalysis.imageReaderProxyProvider", AbstractC0618m1.class);
-    public static final AbstractC10268n0.AbstractC10269a<Integer> f33169A = AbstractC10268n0.AbstractC10269a.m5582a("camerax.core.imageAnalysis.outputImageFormat", C0599k0.AbstractC0604e.class);
-    public static final AbstractC10268n0.AbstractC10269a<Boolean> f33170B = AbstractC10268n0.AbstractC10269a.m5582a("camerax.core.imageAnalysis.onePixelShiftEnabled", Boolean.class);
-    public static final AbstractC10268n0.AbstractC10269a<Boolean> f33171C = AbstractC10268n0.AbstractC10269a.m5582a("camerax.core.imageAnalysis.outputImageRotationEnabled", Boolean.class);
+    public final C10300t1 f33178w;
+    public static final AbstractC10268n0.AbstractC10269a<Integer> f33175x = AbstractC10268n0.AbstractC10269a.m5582a("camerax.core.imageAnalysis.backpressureStrategy", C0599k0.AbstractC0601b.class);
+    public static final AbstractC10268n0.AbstractC10269a<Integer> f33176y = AbstractC10268n0.AbstractC10269a.m5582a("camerax.core.imageAnalysis.imageQueueDepth", Integer.TYPE);
+    public static final AbstractC10268n0.AbstractC10269a<AbstractC0618m1> f33177z = AbstractC10268n0.AbstractC10269a.m5582a("camerax.core.imageAnalysis.imageReaderProxyProvider", AbstractC0618m1.class);
+    public static final AbstractC10268n0.AbstractC10269a<Integer> f33172A = AbstractC10268n0.AbstractC10269a.m5582a("camerax.core.imageAnalysis.outputImageFormat", C0599k0.AbstractC0604e.class);
+    public static final AbstractC10268n0.AbstractC10269a<Boolean> f33173B = AbstractC10268n0.AbstractC10269a.m5582a("camerax.core.imageAnalysis.onePixelShiftEnabled", Boolean.class);
+    public static final AbstractC10268n0.AbstractC10269a<Boolean> f33174C = AbstractC10268n0.AbstractC10269a.m5582a("camerax.core.imageAnalysis.outputImageRotationEnabled", Boolean.class);
 
     public C10320y0(C10300t1 t1Var) {
-        this.f33175w = t1Var;
+        this.f33178w = t1Var;
     }
 
     @Override
@@ -46,7 +46,7 @@ public final class C10320y0 implements AbstractC10273n2<C0599k0>, AbstractC10219
 
     @Override
     public AbstractC0688y2.AbstractC0690b mo5453D(AbstractC0688y2.AbstractC0690b bVar) {
-        return C1427l.m36958a(this, bVar);
+        return C1427l.m36961a(this, bVar);
     }
 
     @Override
@@ -55,31 +55,31 @@ public final class C10320y0 implements AbstractC10273n2<C0599k0>, AbstractC10219
     }
 
     public Executor m5475F(Executor executor) {
-        return C1425j.m36959a(this, executor);
+        return C1425j.m36962a(this, executor);
     }
 
     public int m5474G(int i) {
-        return ((Integer) mo5426a(f33172x, Integer.valueOf(i))).intValue();
+        return ((Integer) mo5426a(f33175x, Integer.valueOf(i))).intValue();
     }
 
     public int m5473H(int i) {
-        return ((Integer) mo5426a(f33173y, Integer.valueOf(i))).intValue();
+        return ((Integer) mo5426a(f33176y, Integer.valueOf(i))).intValue();
     }
 
     public AbstractC0618m1 m5472I() {
-        return (AbstractC0618m1) mo5426a(f33174z, null);
+        return (AbstractC0618m1) mo5426a(f33177z, null);
     }
 
     public Boolean m5471J(Boolean bool) {
-        return (Boolean) mo5426a(f33170B, bool);
+        return (Boolean) mo5426a(f33173B, bool);
     }
 
     public int m5470K(int i) {
-        return ((Integer) mo5426a(f33169A, Integer.valueOf(i))).intValue();
+        return ((Integer) mo5426a(f33172A, Integer.valueOf(i))).intValue();
     }
 
     public Boolean m5469L(Boolean bool) {
-        return (Boolean) mo5426a(f33171C, bool);
+        return (Boolean) mo5426a(f33174C, bool);
     }
 
     @Override
@@ -129,7 +129,7 @@ public final class C10320y0 implements AbstractC10273n2<C0599k0>, AbstractC10219
 
     @Override
     public AbstractC10268n0 mo5421k() {
-        return this.f33175w;
+        return this.f33178w;
     }
 
     @Override
@@ -154,7 +154,7 @@ public final class C10320y0 implements AbstractC10273n2<C0599k0>, AbstractC10219
 
     @Override
     public String mo5432q(String str) {
-        return C1423h.m36960a(this, str);
+        return C1423h.m36963a(this, str);
     }
 
     @Override

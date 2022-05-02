@@ -6,10 +6,10 @@ import org.thunderdog.challegram.R;
 public final class C10619e0 {
 
     public class C10620a implements AbstractC10650f0 {
-        public final C10930q6 f34023a;
+        public final C10930q6 f34026a;
 
         public C10620a(C10930q6 q6Var) {
-            this.f34023a = q6Var;
+            this.f34026a = q6Var;
         }
 
         @Override
@@ -23,7 +23,7 @@ public final class C10619e0 {
         }
 
         public boolean mo1511a(TdApi.Chat chat) {
-            return this.f34023a.m2568Y6(chat) && this.f34023a.m2160y2(chat);
+            return this.f34026a.m2568Y6(chat) && this.f34026a.m2160y2(chat);
         }
 
         @Override
@@ -38,10 +38,10 @@ public final class C10619e0 {
     }
 
     public class C10621b implements AbstractC10650f0 {
-        public final C10930q6 f34024a;
+        public final C10930q6 f34027a;
 
         public C10621b(C10930q6 q6Var) {
-            this.f34024a = q6Var;
+            this.f34027a = q6Var;
         }
 
         @Override
@@ -55,7 +55,7 @@ public final class C10619e0 {
         }
 
         public boolean mo1511a(TdApi.Chat chat) {
-            return this.f34024a.m2568Y6(chat);
+            return this.f34027a.m2568Y6(chat);
         }
 
         @Override
@@ -70,10 +70,10 @@ public final class C10619e0 {
     }
 
     public class C10622c implements AbstractC10650f0 {
-        public final C10930q6 f34025a;
+        public final C10930q6 f34028a;
 
         public C10622c(C10930q6 q6Var) {
-            this.f34025a = q6Var;
+            this.f34028a = q6Var;
         }
 
         @Override
@@ -87,7 +87,7 @@ public final class C10619e0 {
         }
 
         public boolean mo1511a(TdApi.Chat chat) {
-            return this.f34025a.m2784K6(chat.f25367id);
+            return this.f34028a.m2784K6(chat.f25370id);
         }
 
         @Override
@@ -102,10 +102,10 @@ public final class C10619e0 {
     }
 
     public class C10623d implements AbstractC10650f0 {
-        public final C10930q6 f34026a;
+        public final C10930q6 f34029a;
 
         public C10623d(C10930q6 q6Var) {
-            this.f34026a = q6Var;
+            this.f34029a = q6Var;
         }
 
         @Override
@@ -119,7 +119,7 @@ public final class C10619e0 {
         }
 
         public boolean mo1511a(TdApi.Chat chat) {
-            return this.f34026a.m2171x7(chat) && !this.f34026a.m2816I6(chat);
+            return this.f34029a.m2171x7(chat) && !this.f34029a.m2816I6(chat);
         }
 
         @Override
@@ -134,10 +134,10 @@ public final class C10619e0 {
     }
 
     public class C10624e implements AbstractC10650f0 {
-        public final C10930q6 f34027a;
+        public final C10930q6 f34030a;
 
         public C10624e(C10930q6 q6Var) {
-            this.f34027a = q6Var;
+            this.f34030a = q6Var;
         }
 
         @Override
@@ -151,7 +151,7 @@ public final class C10619e0 {
         }
 
         public boolean mo1511a(TdApi.Chat chat) {
-            return this.f34027a.m2816I6(chat);
+            return this.f34030a.m2816I6(chat);
         }
 
         @Override

@@ -11,18 +11,18 @@ public final class C3771q1 implements AbstractC4514e<C3699i4> {
     public static final C4511d f12783d;
 
     static {
-        C4511d.C4513b a = C4511d.m27508a("modelType");
+        C4511d.C4513b a = C4511d.m27510a("modelType");
         C3663e8 e8Var = new C3663e8();
-        e8Var.m29841a(1);
-        f12781b = a.m27503b(e8Var.m29840b()).m27504a();
-        C4511d.C4513b a2 = C4511d.m27508a("isSuccessful");
+        e8Var.m29843a(1);
+        f12781b = a.m27505b(e8Var.m29842b()).m27506a();
+        C4511d.C4513b a2 = C4511d.m27510a("isSuccessful");
         C3663e8 e8Var2 = new C3663e8();
-        e8Var2.m29841a(2);
-        f12782c = a2.m27503b(e8Var2.m29840b()).m27504a();
-        C4511d.C4513b a3 = C4511d.m27508a("modelName");
+        e8Var2.m29843a(2);
+        f12782c = a2.m27505b(e8Var2.m29842b()).m27506a();
+        C4511d.C4513b a3 = C4511d.m27510a("modelName");
         C3663e8 e8Var3 = new C3663e8();
-        e8Var3.m29841a(3);
-        f12783d = a3.m27503b(e8Var3.m29840b()).m27504a();
+        e8Var3.m29843a(3);
+        f12783d = a3.m27505b(e8Var3.m29842b()).m27506a();
     }
 
     @Override

@@ -74,7 +74,7 @@ public class C1512b extends AbstractC1521g implements Animatable {
                     this.f5402b = hVar2;
                     hVar2.setCallback(callback);
                     this.f5402b.setBounds(bVar.f5402b.getBounds());
-                    this.f5402b.m36544h(false);
+                    this.f5402b.m36547h(false);
                 }
                 ArrayList<Animator> arrayList = bVar.f5404d;
                 if (arrayList != null) {
@@ -85,16 +85,16 @@ public class C1512b extends AbstractC1521g implements Animatable {
                         Animator animator = bVar.f5404d.get(i);
                         Animator clone = animator.clone();
                         String str = bVar.f5405e.get(animator);
-                        clone.setTarget(this.f5402b.m36548d(str));
+                        clone.setTarget(this.f5402b.m36551d(str));
                         this.f5404d.add(clone);
                         this.f5405e.put(clone, str);
                     }
-                    m36579a();
+                    m36582a();
                 }
             }
         }
 
-        public void m36579a() {
+        public void m36582a() {
             if (this.f5403c == null) {
                 this.f5403c = new AnimatorSet();
             }
@@ -121,7 +121,7 @@ public class C1512b extends AbstractC1521g implements Animatable {
         this(null, null, null);
     }
 
-    public static C1512b m36582a(Context context, Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) {
+    public static C1512b m36585a(Context context, Resources resources, XmlPullParser xmlPullParser, AttributeSet attributeSet, Resources.Theme theme) {
         C1512b bVar = new C1512b(context);
         bVar.inflate(resources, xmlPullParser, attributeSet, theme);
         return bVar;
@@ -135,10 +135,10 @@ public class C1512b extends AbstractC1521g implements Animatable {
         }
     }
 
-    public final void m36581b(String str, Animator animator) {
-        animator.setTarget(this.f5398b.f5402b.m36548d(str));
+    public final void m36584b(String str, Animator animator) {
+        animator.setTarget(this.f5398b.f5402b.m36551d(str));
         if (Build.VERSION.SDK_INT < 21) {
-            m36580c(animator);
+            m36583c(animator);
         }
         C1514b bVar = this.f5398b;
         if (bVar.f5404d == null) {
@@ -149,11 +149,11 @@ public class C1512b extends AbstractC1521g implements Animatable {
         this.f5398b.f5405e.put(animator, str);
     }
 
-    public final void m36580c(Animator animator) {
+    public final void m36583c(Animator animator) {
         ArrayList<Animator> childAnimations;
         if ((animator instanceof AnimatorSet) && (childAnimations = ((AnimatorSet) animator).getChildAnimations()) != null) {
             for (int i = 0; i < childAnimations.size(); i++) {
-                m36580c(childAnimations.get(i));
+                m36583c(childAnimations.get(i));
             }
         }
         if (animator instanceof ObjectAnimator) {
@@ -300,11 +300,11 @@ public class C1512b extends AbstractC1521g implements Animatable {
             if (eventType == 2) {
                 String name = xmlPullParser.getName();
                 if ("animated-vector".equals(name)) {
-                    TypedArray k = C8621i.m11896k(resources, theme, attributeSet, C1511a.f5386e);
+                    TypedArray k = C8621i.m11895k(resources, theme, attributeSet, C1511a.f5386e);
                     int resourceId = k.getResourceId(0, 0);
                     if (resourceId != 0) {
-                        C1522h b = C1522h.m36550b(resources, resourceId, theme);
-                        b.m36544h(false);
+                        C1522h b = C1522h.m36553b(resources, resourceId, theme);
+                        b.m36547h(false);
                         b.setCallback(this.f5397P);
                         C1522h hVar = this.f5398b.f5402b;
                         if (hVar != null) {
@@ -320,7 +320,7 @@ public class C1512b extends AbstractC1521g implements Animatable {
                     if (resourceId2 != 0) {
                         Context context = this.f5399c;
                         if (context != null) {
-                            m36581b(string, C1517d.m36568i(context, resourceId2));
+                            m36584b(string, C1517d.m36571i(context, resourceId2));
                         } else {
                             obtainAttributes.recycle();
                             throw new IllegalStateException("Context can't be null when inflating animators");
@@ -333,7 +333,7 @@ public class C1512b extends AbstractC1521g implements Animatable {
             }
             eventType = xmlPullParser.next();
         }
-        this.f5398b.m36579a();
+        this.f5398b.m36582a();
     }
 
     @Override

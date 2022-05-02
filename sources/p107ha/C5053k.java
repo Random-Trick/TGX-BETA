@@ -11,13 +11,13 @@ public final class C5053k<T> implements AbstractC5044d<T>, Serializable {
     public final Object f17063c;
 
     public C5053k(AbstractC8077a<? extends T> aVar, Object obj) {
-        C8298k.m12934e(aVar, "initializer");
+        C8298k.m12933e(aVar, "initializer");
         this.f17061a = aVar;
         this.f17062b = C5058o.f17065a;
         this.f17063c = obj == null ? this : obj;
     }
 
-    public boolean m24189a() {
+    public boolean m24190a() {
         return this.f17062b != C5058o.f17065a;
     }
 
@@ -33,7 +33,7 @@ public final class C5053k<T> implements AbstractC5044d<T>, Serializable {
             t = (T) this.f17062b;
             if (t == oVar) {
                 AbstractC8077a<? extends T> aVar = this.f17061a;
-                C8298k.m12936c(aVar);
+                C8298k.m12935c(aVar);
                 t = aVar.mo4925b();
                 this.f17062b = t;
                 this.f17061a = null;
@@ -43,7 +43,7 @@ public final class C5053k<T> implements AbstractC5044d<T>, Serializable {
     }
 
     public String toString() {
-        return m24189a() ? String.valueOf(getValue()) : "Lazy value not initialized yet.";
+        return m24190a() ? String.valueOf(getValue()) : "Lazy value not initialized yet.";
     }
 
     public C5053k(AbstractC8077a aVar, Object obj, int i, C8294g gVar) {

@@ -9,7 +9,7 @@ import p192n9.EnumC7313d;
 import p222p9.C8075d;
 
 public class C1295a implements AbstractC1296b {
-    public static final int f4669f = C8075d.m13611c(Log.TAG_VOICE, 2);
+    public static final int f4669f = C8075d.m13610c(Log.TAG_VOICE, 2);
     public final long f4670a;
     public ByteBuffer f4671b;
     public MediaFormat f4672c;
@@ -38,7 +38,7 @@ public class C1295a implements AbstractC1296b {
         MediaFormat mediaFormat = new MediaFormat();
         this.f4672c = mediaFormat;
         mediaFormat.setString("mime", "audio/raw");
-        this.f4672c.setInteger("bitrate", C8075d.m13613a(44100, 2));
+        this.f4672c.setInteger("bitrate", C8075d.m13612a(44100, 2));
         this.f4672c.setInteger("channel-count", 2);
         this.f4672c.setInteger("max-input-size", i);
         this.f4672c.setInteger("sample-rate", 44100);
@@ -58,7 +58,7 @@ public class C1295a implements AbstractC1296b {
         long j = this.f4673d;
         aVar.f4677c = j;
         aVar.f4678d = true;
-        this.f4673d = j + C8075d.m13612b(min, 44100, 2);
+        this.f4673d = j + C8075d.m13611b(min, 44100, 2);
     }
 
     @Override

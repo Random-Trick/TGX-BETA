@@ -7,11 +7,11 @@ import qa.C8298k;
 public abstract class AbstractC5902b extends AbstractC5903c {
     public AbstractC5902b(C4166a aVar, C5037e eVar) {
         super(aVar, eVar);
-        C8298k.m12934e(aVar, "eglCore");
-        C8298k.m12934e(eVar, "eglSurface");
+        C8298k.m12933e(aVar, "eglCore");
+        C8298k.m12933e(eVar, "eglSurface");
     }
 
-    public final boolean m21864f() {
-        return m21868a().m28624f(m21867b());
+    public final boolean m21865f() {
+        return m21869a().m28626f(m21868b());
     }
 }

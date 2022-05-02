@@ -10,15 +10,15 @@ public enum EnumC9091g0 {
     TLS_1_0("TLSv1"),
     SSL_3_0("SSLv3");
     
-    public static final C9092a f29152Q = new C9092a(null);
-    public final String f29155a;
+    public static final C9092a f29155Q = new C9092a(null);
+    public final String f29158a;
 
     public static final class C9092a {
         public C9092a() {
         }
 
-        public final EnumC9091g0 m10467a(String str) {
-            C8298k.m12934e(str, "javaName");
+        public final EnumC9091g0 m10466a(String str) {
+            C8298k.m12933e(str, "javaName");
             int hashCode = str.hashCode();
             if (hashCode != 79201641) {
                 if (hashCode != 79923350) {
@@ -54,10 +54,10 @@ public enum EnumC9091g0 {
     }
 
     EnumC9091g0(String str) {
-        this.f29155a = str;
+        this.f29158a = str;
     }
 
-    public final String m10468a() {
-        return this.f29155a;
+    public final String m10467a() {
+        return this.f29158a;
     }
 }

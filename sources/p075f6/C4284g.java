@@ -24,7 +24,7 @@ public final class C4284g extends AbstractC6749a {
         public boolean f14342c = false;
 
         @RecentlyNonNull
-        public C4285a m28299a(@RecentlyNonNull LocationRequest locationRequest) {
+        public C4285a m28301a(@RecentlyNonNull LocationRequest locationRequest) {
             if (locationRequest != null) {
                 this.f14340a.add(locationRequest);
             }
@@ -32,12 +32,12 @@ public final class C4284g extends AbstractC6749a {
         }
 
         @RecentlyNonNull
-        public C4284g m28298b() {
+        public C4284g m28300b() {
             return new C4284g(this.f14340a, this.f14341b, this.f14342c, null);
         }
 
         @RecentlyNonNull
-        public C4285a m28297c(boolean z) {
+        public C4285a m28299c(boolean z) {
             this.f14341b = z;
             return this;
         }
@@ -52,11 +52,11 @@ public final class C4284g extends AbstractC6749a {
 
     @Override
     public void writeToParcel(@RecentlyNonNull Parcel parcel, int i) {
-        int a = C6752c.m19124a(parcel);
-        C6752c.m19105t(parcel, 1, Collections.unmodifiableList(this.f14337a), false);
-        C6752c.m19122c(parcel, 2, this.f14338b);
-        C6752c.m19122c(parcel, 3, this.f14339c);
-        C6752c.m19110o(parcel, 5, this.f14336M, i, false);
-        C6752c.m19123b(parcel, a);
+        int a = C6752c.m19125a(parcel);
+        C6752c.m19106t(parcel, 1, Collections.unmodifiableList(this.f14337a), false);
+        C6752c.m19123c(parcel, 2, this.f14338b);
+        C6752c.m19123c(parcel, 3, this.f14339c);
+        C6752c.m19111o(parcel, 5, this.f14336M, i, false);
+        C6752c.m19124b(parcel, a);
     }
 }

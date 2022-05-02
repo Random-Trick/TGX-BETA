@@ -21,7 +21,7 @@ public class C0215g {
     }
 
     @RecentlyNonNull
-    public static C0215g m42084a() {
+    public static C0215g m42087a() {
         C0215g gVar;
         synchronized (f688b) {
             if (f689c == null) {
@@ -35,31 +35,31 @@ public class C0215g {
     }
 
     @RecentlyNonNull
-    public static Executor m42081d() {
+    public static Executor m42084d() {
         return EnumC0230u.f719a;
     }
 
     @RecentlyNonNull
-    public <ResultT> AbstractC6775l<ResultT> m42083b(@RecentlyNonNull final Callable<ResultT> callable) {
+    public <ResultT> AbstractC6775l<ResultT> m42086b(@RecentlyNonNull final Callable<ResultT> callable) {
         final C6777m mVar = new C6777m();
-        m42082c(new Runnable() {
+        m42085c(new Runnable() {
             @Override
             public final void run() {
                 Callable callable2 = callable;
                 C6777m mVar2 = mVar;
                 try {
-                    mVar2.m19084c(callable2.call());
+                    mVar2.m19085c(callable2.call());
                 } catch (C9987a e) {
-                    mVar2.m19085b(e);
+                    mVar2.m19086b(e);
                 } catch (Exception e2) {
-                    mVar2.m19085b(new C9987a("Internal error has occurred when executing ML Kit tasks", 13, e2));
+                    mVar2.m19086b(new C9987a("Internal error has occurred when executing ML Kit tasks", 13, e2));
                 }
             }
         });
-        return mVar.m19086a();
+        return mVar.m19087a();
     }
 
-    public void m42082c(@RecentlyNonNull Runnable runnable) {
-        m42081d().execute(runnable);
+    public void m42085c(@RecentlyNonNull Runnable runnable) {
+        m42084d().execute(runnable);
     }
 }

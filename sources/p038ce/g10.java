@@ -9,7 +9,7 @@ public final class g10 implements Comparator {
     @Override
     public final int compare(Object obj, Object obj2) {
         int ag;
-        ag = i10.m34363ag((TdApi.Message) obj, (TdApi.Message) obj2);
+        ag = i10.m34366ag((TdApi.Message) obj, (TdApi.Message) obj2);
         return ag;
     }
 }

@@ -16,14 +16,14 @@ public class C1720f0 extends C1690d0 implements List {
     @Override
     public final void add(int i, Object obj) {
         int i2;
-        m36088i();
+        m36091i();
         boolean isEmpty = this.f6181b.isEmpty();
         ((List) this.f6181b).add(i, obj);
         AbstractC1735g0 g0Var = this.f6261O;
         i2 = g0Var.f6289M;
         g0Var.f6289M = i2 + 1;
         if (isEmpty) {
-            m36089h();
+            m36092h();
         }
     }
 
@@ -45,55 +45,55 @@ public class C1720f0 extends C1690d0 implements List {
         if (size != 0) {
             return addAll;
         }
-        m36089h();
+        m36092h();
         return true;
     }
 
     @Override
     public final Object get(int i) {
-        m36088i();
+        m36091i();
         return ((List) this.f6181b).get(i);
     }
 
     @Override
     public final int indexOf(@CheckForNull Object obj) {
-        m36088i();
+        m36091i();
         return ((List) this.f6181b).indexOf(obj);
     }
 
     @Override
     public final int lastIndexOf(@CheckForNull Object obj) {
-        m36088i();
+        m36091i();
         return ((List) this.f6181b).lastIndexOf(obj);
     }
 
     @Override
     public final ListIterator listIterator() {
-        m36088i();
+        m36091i();
         return new C1705e0(this);
     }
 
     @Override
     public final Object remove(int i) {
         int i2;
-        m36088i();
+        m36091i();
         Object remove = ((List) this.f6181b).remove(i);
         AbstractC1735g0 g0Var = this.f6261O;
         i2 = g0Var.f6289M;
         g0Var.f6289M = i2 - 1;
-        m36087m();
+        m36090m();
         return remove;
     }
 
     @Override
     public final Object set(int i, Object obj) {
-        m36088i();
+        m36091i();
         return ((List) this.f6181b).set(i, obj);
     }
 
     @Override
     public final List subList(int i, int i2) {
-        m36088i();
+        m36091i();
         AbstractC1735g0 g0Var = this.f6261O;
         Object obj = this.f6180a;
         List subList = ((List) this.f6181b).subList(i, i2);
@@ -101,12 +101,12 @@ public class C1720f0 extends C1690d0 implements List {
         if (d0Var == null) {
             d0Var = this;
         }
-        return g0Var.m36039k(obj, subList, d0Var);
+        return g0Var.m36042k(obj, subList, d0Var);
     }
 
     @Override
     public final ListIterator listIterator(int i) {
-        m36088i();
+        m36091i();
         return new C1705e0(this, i);
     }
 }

@@ -30,16 +30,16 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
     public transient Object[] f6965c;
 
     public C1936u0(int i) {
-        m35872m(12);
+        m35875m(12);
     }
 
     @Override
     public final void clear() {
-        if (!m35870o()) {
-            m35873l();
-            Map<K, V> j = m35875j();
+        if (!m35873o()) {
+            m35876l();
+            Map<K, V> j = m35878j();
             if (j != null) {
-                this.f6958N = C1965w1.m35841a(size(), 3, 1073741823);
+                this.f6958N = C1965w1.m35844a(size(), 3, 1073741823);
                 j.clear();
                 this.f6963a = null;
                 this.f6959O = 0;
@@ -62,28 +62,28 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
 
     @Override
     public final boolean containsKey(@NullableDecl Object obj) {
-        Map<K, V> j = m35875j();
+        Map<K, V> j = m35878j();
         if (j != null) {
             return j.containsKey(obj);
         }
-        return m35868q(obj) != -1;
+        return m35871q(obj) != -1;
     }
 
     @Override
     public final boolean containsValue(@NullableDecl Object obj) {
-        Map<K, V> j = m35875j();
+        Map<K, V> j = m35878j();
         if (j != null) {
             return j.containsValue(obj);
         }
         for (int i = 0; i < this.f6959O; i++) {
-            if (C1837n.m35975a(obj, this.f6957M[i])) {
+            if (C1837n.m35978a(obj, this.f6957M[i])) {
                 return true;
             }
         }
         return false;
     }
 
-    public final int m35880e() {
+    public final int m35883e() {
         return isEmpty() ? -1 : 0;
     }
 
@@ -98,7 +98,7 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
         return o0Var;
     }
 
-    public final int m35879f(int i) {
+    public final int m35882f(int i) {
         int i2 = i + 1;
         if (i2 < this.f6959O) {
             return i2;
@@ -108,11 +108,11 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
 
     @Override
     public final V get(@NullableDecl Object obj) {
-        Map<K, V> j = m35875j();
+        Map<K, V> j = m35878j();
         if (j != null) {
             return j.get(obj);
         }
-        int q = m35868q(obj);
+        int q = m35871q(obj);
         if (q == -1) {
             return null;
         }
@@ -125,7 +125,7 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
     }
 
     @NullableDecl
-    public final Map<K, V> m35875j() {
+    public final Map<K, V> m35878j() {
         Object obj = this.f6963a;
         if (obj instanceof Map) {
             return (Map) obj;
@@ -144,15 +144,15 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
         return r0Var;
     }
 
-    public final void m35873l() {
+    public final void m35876l() {
         this.f6958N += 32;
     }
 
-    public final void m35872m(int i) {
-        this.f6958N = C1965w1.m35841a(12, 1, 1073741823);
+    public final void m35875m(int i) {
+        this.f6958N = C1965w1.m35844a(12, 1, 1073741823);
     }
 
-    public final void m35871n(int i, int i2) {
+    public final void m35874n(int i, int i2) {
         int size = size() - 1;
         if (i < size) {
             Object[] objArr = this.f6965c;
@@ -165,8 +165,8 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
             int[] iArr = this.f6964b;
             iArr[i] = iArr[size];
             iArr[size] = 0;
-            int a = C1964w0.m35842a(obj) & i2;
-            int c = C1950v0.m35858c(this.f6963a, a);
+            int a = C1964w0.m35845a(obj) & i2;
+            int c = C1950v0.m35861c(this.f6963a, a);
             int i3 = size + 1;
             if (c != i3) {
                 while (true) {
@@ -182,7 +182,7 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
                     }
                 }
             } else {
-                C1950v0.m35856e(this.f6963a, a, i + 1);
+                C1950v0.m35859e(this.f6963a, a, i + 1);
             }
         } else {
             this.f6965c[i] = null;
@@ -191,11 +191,11 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
         }
     }
 
-    public final boolean m35870o() {
+    public final boolean m35873o() {
         return this.f6963a == null;
     }
 
-    public final int m35869p() {
+    public final int m35872p() {
         return (1 << (this.f6958N & 31)) - 1;
     }
 
@@ -203,8 +203,8 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
     @NullableDecl
     public final V put(@NullableDecl K k, @NullableDecl V v) {
         int min;
-        if (m35870o()) {
-            C1893r.m35932d(m35870o(), "Arrays already allocated");
+        if (m35873o()) {
+            C1893r.m35935d(m35873o(), "Arrays already allocated");
             int i = this.f6958N;
             int max = Math.max(i + 1, 2);
             int highestOneBit = Integer.highestOneBit(max);
@@ -212,13 +212,13 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
                 highestOneBit = Log.TAG_TDLIB_OPTIONS;
             }
             int max2 = Math.max(4, highestOneBit);
-            this.f6963a = C1950v0.m35857d(max2);
-            m35865t(max2 - 1);
+            this.f6963a = C1950v0.m35860d(max2);
+            m35868t(max2 - 1);
             this.f6964b = new int[i];
             this.f6965c = new Object[i];
             this.f6957M = new Object[i];
         }
-        Map<K, V> j = m35875j();
+        Map<K, V> j = m35878j();
         if (j != null) {
             return j.put(k, v);
         }
@@ -227,10 +227,10 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
         Object[] objArr2 = this.f6957M;
         int i2 = this.f6959O;
         int i3 = i2 + 1;
-        int a = C1964w0.m35842a(k);
-        int p = m35869p();
+        int a = C1964w0.m35845a(k);
+        int p = m35872p();
         int i4 = a & p;
-        int c = C1950v0.m35858c(this.f6963a, i4);
+        int c = C1950v0.m35861c(this.f6963a, i4);
         if (c != 0) {
             int i5 = ~p;
             int i6 = a & i5;
@@ -239,26 +239,26 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
                 int i8 = c - 1;
                 int i9 = iArr[i8];
                 int i10 = i9 & i5;
-                if (i10 != i6 || !C1837n.m35975a(k, objArr[i8])) {
+                if (i10 != i6 || !C1837n.m35978a(k, objArr[i8])) {
                     int i11 = i9 & p;
                     i7++;
                     if (i11 != 0) {
                         c = i11;
                     } else if (i7 >= 9) {
-                        LinkedHashMap linkedHashMap = new LinkedHashMap(m35869p() + 1, 1.0f);
-                        int e = m35880e();
+                        LinkedHashMap linkedHashMap = new LinkedHashMap(m35872p() + 1, 1.0f);
+                        int e = m35883e();
                         while (e >= 0) {
                             linkedHashMap.put(this.f6965c[e], this.f6957M[e]);
-                            e = m35879f(e);
+                            e = m35882f(e);
                         }
                         this.f6963a = linkedHashMap;
                         this.f6964b = null;
                         this.f6965c = null;
                         this.f6957M = null;
-                        m35873l();
+                        m35876l();
                         return (V) linkedHashMap.put(k, v);
                     } else if (i3 > p) {
-                        p = m35867r(p, C1950v0.m35860a(p), a, i2);
+                        p = m35870r(p, C1950v0.m35863a(p), a, i2);
                     } else {
                         iArr[i8] = (i3 & p) | i10;
                     }
@@ -269,9 +269,9 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
                 }
             }
         } else if (i3 > p) {
-            p = m35867r(p, C1950v0.m35860a(p), a, i2);
+            p = m35870r(p, C1950v0.m35863a(p), a, i2);
         } else {
-            C1950v0.m35856e(this.f6963a, i4, i3);
+            C1950v0.m35859e(this.f6963a, i4, i3);
         }
         int length = this.f6964b.length;
         if (i3 > length && (min = Math.min(1073741823, (Math.max(1, length >>> 1) + length) | 1)) != length) {
@@ -283,17 +283,17 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
         this.f6965c[i2] = k;
         this.f6957M[i2] = v;
         this.f6959O = i3;
-        m35873l();
+        m35876l();
         return null;
     }
 
-    public final int m35868q(@NullableDecl Object obj) {
-        if (m35870o()) {
+    public final int m35871q(@NullableDecl Object obj) {
+        if (m35873o()) {
             return -1;
         }
-        int a = C1964w0.m35842a(obj);
-        int p = m35869p();
-        int c = C1950v0.m35858c(this.f6963a, a & p);
+        int a = C1964w0.m35845a(obj);
+        int p = m35872p();
+        int c = C1950v0.m35861c(this.f6963a, a & p);
         if (c == 0) {
             return -1;
         }
@@ -302,7 +302,7 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
         do {
             int i3 = c - 1;
             int i4 = this.f6964b[i3];
-            if ((i4 & i) == i2 && C1837n.m35975a(obj, this.f6965c[i3])) {
+            if ((i4 & i) == i2 && C1837n.m35978a(obj, this.f6965c[i3])) {
                 return i3;
             }
             c = i4 & p;
@@ -310,40 +310,40 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
         return -1;
     }
 
-    public final int m35867r(int i, int i2, int i3, int i4) {
-        Object d = C1950v0.m35857d(i2);
+    public final int m35870r(int i, int i2, int i3, int i4) {
+        Object d = C1950v0.m35860d(i2);
         int i5 = i2 - 1;
         if (i4 != 0) {
-            C1950v0.m35856e(d, i3 & i5, i4 + 1);
+            C1950v0.m35859e(d, i3 & i5, i4 + 1);
         }
         Object obj = this.f6963a;
         int[] iArr = this.f6964b;
         for (int i6 = 0; i6 <= i; i6++) {
-            int c = C1950v0.m35858c(obj, i6);
+            int c = C1950v0.m35861c(obj, i6);
             while (c != 0) {
                 int i7 = c - 1;
                 int i8 = iArr[i7];
                 int i9 = ((~i) & i8) | i6;
                 int i10 = i9 & i5;
-                int c2 = C1950v0.m35858c(d, i10);
-                C1950v0.m35856e(d, i10, c);
+                int c2 = C1950v0.m35861c(d, i10);
+                C1950v0.m35859e(d, i10, c);
                 iArr[i7] = ((~i5) & i9) | (c2 & i5);
                 c = i8 & i;
             }
         }
         this.f6963a = d;
-        m35865t(i5);
+        m35868t(i5);
         return i5;
     }
 
     @Override
     @NullableDecl
     public final V remove(@NullableDecl Object obj) {
-        Map<K, V> j = m35875j();
+        Map<K, V> j = m35878j();
         if (j != null) {
             return j.remove(obj);
         }
-        V v = (V) m35866s(obj);
+        V v = (V) m35869s(obj);
         if (v == f6956S) {
             return null;
         }
@@ -351,29 +351,29 @@ public final class C1936u0<K, V> extends AbstractMap<K, V> implements Serializab
     }
 
     @NullableDecl
-    public final Object m35866s(@NullableDecl Object obj) {
-        if (m35870o()) {
+    public final Object m35869s(@NullableDecl Object obj) {
+        if (m35873o()) {
             return f6956S;
         }
-        int p = m35869p();
-        int b = C1950v0.m35859b(obj, null, p, this.f6963a, this.f6964b, this.f6965c, null);
+        int p = m35872p();
+        int b = C1950v0.m35862b(obj, null, p, this.f6963a, this.f6964b, this.f6965c, null);
         if (b == -1) {
             return f6956S;
         }
         Object obj2 = this.f6957M[b];
-        m35871n(b, p);
+        m35874n(b, p);
         this.f6959O--;
-        m35873l();
+        m35876l();
         return obj2;
     }
 
     @Override
     public final int size() {
-        Map<K, V> j = m35875j();
+        Map<K, V> j = m35878j();
         return j != null ? j.size() : this.f6959O;
     }
 
-    public final void m35865t(int i) {
+    public final void m35868t(int i) {
         this.f6958N = ((32 - Integer.numberOfLeadingZeros(i)) & 31) | (this.f6958N & (-32));
     }
 

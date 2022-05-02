@@ -10,14 +10,14 @@ public final class C5721j {
         this.f18392a = collector;
     }
 
-    public static C5721j m22241b(Collector collector) {
+    public static C5721j m22242b(Collector collector) {
         if (collector == null) {
             return null;
         }
         return new C5721j(collector);
     }
 
-    public Set m22242a() {
+    public Set m22243a() {
         return this.f18392a.characteristics();
     }
 }

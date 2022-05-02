@@ -14,21 +14,21 @@ public class C2044a implements AbstractC2055f {
         public long f7260c = Long.MIN_VALUE;
         public String f7261d = "audio/mp4a-latm";
 
-        public C2046b m35771a(long j) {
+        public C2046b m35774a(long j) {
             this.f7260c = j;
             return this;
         }
 
-        public C2044a m35770b() {
-            return new C2044a(m35768d());
+        public C2044a m35773b() {
+            return new C2044a(m35771d());
         }
 
-        public C2046b m35769c(int i) {
+        public C2046b m35772c(int i) {
             this.f7258a = i;
             return this;
         }
 
-        public C2047c m35768d() {
+        public C2047c m35771d() {
             C2047c cVar = new C2047c();
             cVar.f7262a = this.f7258a;
             cVar.f7263b = this.f7259b;
@@ -37,7 +37,7 @@ public class C2044a implements AbstractC2055f {
             return cVar;
         }
 
-        public C2046b m35767e(int i) {
+        public C2046b m35770e(int i) {
             this.f7259b = i;
             return this;
         }
@@ -57,22 +57,22 @@ public class C2044a implements AbstractC2055f {
         this.f7257a = cVar;
     }
 
-    public static C2046b m35774b() {
+    public static C2046b m35777b() {
         return new C2046b();
     }
 
     @Override
-    public EnumC7311c mo35736a(List<MediaFormat> list, MediaFormat mediaFormat) {
+    public EnumC7311c mo35739a(List<MediaFormat> list, MediaFormat mediaFormat) {
         int i;
         int i2;
         long j;
         if (this.f7257a.f7262a == -1) {
-            i = m35773c(list);
+            i = m35776c(list);
         } else {
             i = this.f7257a.f7262a;
         }
         if (this.f7257a.f7263b == -1) {
-            i2 = m35772d(list);
+            i2 = m35775d(list);
         } else {
             i2 = this.f7257a.f7263b;
         }
@@ -93,7 +93,7 @@ public class C2044a implements AbstractC2055f {
         return EnumC7311c.COMPRESSING;
     }
 
-    public final int m35773c(List<MediaFormat> list) {
+    public final int m35776c(List<MediaFormat> list) {
         int i = 0;
         for (MediaFormat mediaFormat : list) {
             i = Math.max(i, mediaFormat.getInteger("channel-count"));
@@ -101,7 +101,7 @@ public class C2044a implements AbstractC2055f {
         return i;
     }
 
-    public final int m35772d(List<MediaFormat> list) {
+    public final int m35775d(List<MediaFormat> list) {
         int i = Integer.MAX_VALUE;
         for (MediaFormat mediaFormat : list) {
             i = Math.min(i, mediaFormat.getInteger("sample-rate"));

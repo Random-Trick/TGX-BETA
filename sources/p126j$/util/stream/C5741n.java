@@ -34,7 +34,7 @@ public final class C5741n implements Consumer, AbstractC5542x {
     }
 
     @Override
-    public void mo22128k(Object obj) {
+    public void mo22129k(Object obj) {
         switch (this.f18430a) {
             case 0:
                 AtomicBoolean atomicBoolean = (AtomicBoolean) this.f18431b;
@@ -47,10 +47,10 @@ public final class C5741n implements Consumer, AbstractC5542x {
                     return;
                 }
             case 5:
-                ((BiConsumer) this.f18431b).mo22179p(this.f18432c, obj);
+                ((BiConsumer) this.f18431b).mo22180p(this.f18432c, obj);
                 return;
             default:
-                ((C5750o3) this.f18431b).m22208o((Consumer) this.f18432c, obj);
+                ((C5750o3) this.f18431b).m22209o((Consumer) this.f18432c, obj);
                 return;
         }
     }

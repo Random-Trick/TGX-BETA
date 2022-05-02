@@ -17,14 +17,14 @@ public class C4574a {
     public C4574a(C10930q6 q6Var, long j) {
         this.f15019a = q6Var;
         this.f15020b = j;
-        m27299a();
+        m27301a();
     }
 
-    public void m27299a() {
+    public void m27301a() {
         TdApi.User v2 = this.f15019a.m2480e2().m1583v2(this.f15020b);
-        this.f15023e = C4779t2.m25701E1(v2);
-        this.f15022d = C4779t2.m25674I0(v2, this.f15019a.m2519ba());
-        this.f15021c = C4779t2.m25688G0(this.f15019a, v2);
-        this.f15024f = C1410y.m37008v0(this.f15023e, 15.0f);
+        this.f15023e = C4779t2.m25702E1(v2);
+        this.f15022d = C4779t2.m25675I0(v2, this.f15019a.m2519ba());
+        this.f15021c = C4779t2.m25689G0(this.f15019a, v2);
+        this.f15024f = C1410y.m37011v0(this.f15023e, 15.0f);
     }
 }

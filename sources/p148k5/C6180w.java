@@ -6,11 +6,11 @@ public final class C6180w {
     public final C6085b<?> f19575a;
     public final C6777m<Boolean> f19576b;
 
-    public final C6085b<?> m21101a() {
+    public final C6085b<?> m21102a() {
         return this.f19575a;
     }
 
-    public final C6777m<Boolean> m21100b() {
+    public final C6777m<Boolean> m21101b() {
         return this.f19576b;
     }
 }

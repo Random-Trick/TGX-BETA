@@ -9,7 +9,7 @@ public final class C5353k implements Comparator {
     @Override
     public final int compare(Object obj, Object obj2) {
         int a0;
-        a0 = C5365w.m23119a0((Map.Entry) obj, (Map.Entry) obj2);
+        a0 = C5365w.m23120a0((Map.Entry) obj, (Map.Entry) obj2);
         return a0;
     }
 }

@@ -9,7 +9,7 @@ public class C4057m extends View {
 
     public C4057m(Context context) {
         super(context);
-        setBackgroundColor(C5064d.m24130b(178, 0));
+        setBackgroundColor(C5064d.m24131b(178, 0));
     }
 
     public void setFadeFactor(float f) {

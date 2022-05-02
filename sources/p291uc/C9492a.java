@@ -46,6 +46,6 @@ public class C9492a extends LinearLayout {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
-        return (motionEvent.getAction() == 0 && !C1399s0.m37218C(this)) || super.onInterceptTouchEvent(motionEvent);
+        return (motionEvent.getAction() == 0 && !C1399s0.m37221C(this)) || super.onInterceptTouchEvent(motionEvent);
     }
 }

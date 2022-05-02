@@ -12,7 +12,7 @@ public final class C5285d<T> implements Collection<T>, AbstractC8415a {
     public final boolean f17480b;
 
     public C5285d(T[] tArr, boolean z) {
-        C8298k.m12934e(tArr, "values");
+        C8298k.m12933e(tArr, "values");
         this.f17479a = tArr;
         this.f17480b = z;
     }
@@ -34,12 +34,12 @@ public final class C5285d<T> implements Collection<T>, AbstractC8415a {
 
     @Override
     public boolean contains(Object obj) {
-        return C5296i.m23392o(this.f17479a, obj);
+        return C5296i.m23393o(this.f17479a, obj);
     }
 
     @Override
     public boolean containsAll(Collection<? extends Object> collection) {
-        C8298k.m12934e(collection, "elements");
+        C8298k.m12933e(collection, "elements");
         if (collection.isEmpty()) {
             return true;
         }
@@ -63,7 +63,7 @@ public final class C5285d<T> implements Collection<T>, AbstractC8415a {
 
     @Override
     public Iterator<T> iterator() {
-        return C8287b.m12950a(this.f17479a);
+        return C8287b.m12949a(this.f17479a);
     }
 
     @Override
@@ -88,12 +88,12 @@ public final class C5285d<T> implements Collection<T>, AbstractC8415a {
 
     @Override
     public final Object[] toArray() {
-        return C5303m.m23371a(this.f17479a, this.f17480b);
+        return C5303m.m23372a(this.f17479a, this.f17480b);
     }
 
     @Override
     public <T> T[] toArray(T[] tArr) {
-        C8298k.m12934e(tArr, "array");
-        return (T[]) C8293f.m12939b(this, tArr);
+        C8298k.m12933e(tArr, "array");
+        return (T[]) C8293f.m12938b(this, tArr);
     }
 }

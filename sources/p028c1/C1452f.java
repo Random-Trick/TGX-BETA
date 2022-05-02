@@ -19,10 +19,10 @@ public class C1452f {
     public static Field f5306d;
 
     public interface AbstractC1453a {
-        boolean mo14007g(KeyEvent keyEvent);
+        boolean mo14006g(KeyEvent keyEvent);
     }
 
-    public static boolean m36888a(ActionBar actionBar, KeyEvent keyEvent) {
+    public static boolean m36891a(ActionBar actionBar, KeyEvent keyEvent) {
         if (!f5303a) {
             try {
                 f5304b = actionBar.getClass().getMethod("onMenuKeyEvent", KeyEvent.class);
@@ -40,12 +40,12 @@ public class C1452f {
         return false;
     }
 
-    public static boolean m36887b(Activity activity, KeyEvent keyEvent) {
+    public static boolean m36890b(Activity activity, KeyEvent keyEvent) {
         activity.onUserInteraction();
         Window window = activity.getWindow();
         if (window.hasFeature(8)) {
             ActionBar actionBar = activity.getActionBar();
-            if (keyEvent.getKeyCode() == 82 && actionBar != null && m36888a(actionBar, keyEvent)) {
+            if (keyEvent.getKeyCode() == 82 && actionBar != null && m36891a(actionBar, keyEvent)) {
                 return true;
             }
         }
@@ -53,14 +53,14 @@ public class C1452f {
             return true;
         }
         View decorView = window.getDecorView();
-        if (C1489y.m36733f(decorView, keyEvent)) {
+        if (C1489y.m36736f(decorView, keyEvent)) {
             return true;
         }
         return keyEvent.dispatch(activity, decorView != null ? decorView.getKeyDispatcherState() : null, activity);
     }
 
-    public static boolean m36886c(Dialog dialog, KeyEvent keyEvent) {
-        DialogInterface.OnKeyListener f = m36883f(dialog);
+    public static boolean m36889c(Dialog dialog, KeyEvent keyEvent) {
+        DialogInterface.OnKeyListener f = m36886f(dialog);
         if (f != null && f.onKey(dialog, keyEvent.getKeyCode(), keyEvent)) {
             return true;
         }
@@ -69,33 +69,33 @@ public class C1452f {
             return true;
         }
         View decorView = window.getDecorView();
-        if (C1489y.m36733f(decorView, keyEvent)) {
+        if (C1489y.m36736f(decorView, keyEvent)) {
             return true;
         }
         return keyEvent.dispatch(dialog, decorView != null ? decorView.getKeyDispatcherState() : null, dialog);
     }
 
-    public static boolean m36885d(View view, KeyEvent keyEvent) {
-        return C1489y.m36731g(view, keyEvent);
+    public static boolean m36888d(View view, KeyEvent keyEvent) {
+        return C1489y.m36734g(view, keyEvent);
     }
 
-    public static boolean m36884e(AbstractC1453a aVar, View view, Window.Callback callback, KeyEvent keyEvent) {
+    public static boolean m36887e(AbstractC1453a aVar, View view, Window.Callback callback, KeyEvent keyEvent) {
         if (aVar == null) {
             return false;
         }
         if (Build.VERSION.SDK_INT >= 28) {
-            return aVar.mo14007g(keyEvent);
+            return aVar.mo14006g(keyEvent);
         }
         if (callback instanceof Activity) {
-            return m36887b((Activity) callback, keyEvent);
+            return m36890b((Activity) callback, keyEvent);
         }
         if (callback instanceof Dialog) {
-            return m36886c((Dialog) callback, keyEvent);
+            return m36889c((Dialog) callback, keyEvent);
         }
-        return (view != null && C1489y.m36733f(view, keyEvent)) || aVar.mo14007g(keyEvent);
+        return (view != null && C1489y.m36736f(view, keyEvent)) || aVar.mo14006g(keyEvent);
     }
 
-    public static DialogInterface.OnKeyListener m36883f(Dialog dialog) {
+    public static DialogInterface.OnKeyListener m36886f(Dialog dialog) {
         if (!f5305c) {
             try {
                 Field declaredField = Dialog.class.getDeclaredField("mOnKeyListener");

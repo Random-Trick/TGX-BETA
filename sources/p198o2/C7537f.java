@@ -8,8 +8,8 @@ import p308w1.C9940c;
 import p323x1.AbstractC10074f;
 
 public final class C7537f implements AbstractC7536e {
-    public final AbstractC9421e f24114a;
-    public final AbstractC9418b<C7535d> f24115b;
+    public final AbstractC9421e f24117a;
+    public final AbstractC9418b<C7535d> f24118b;
 
     public class C7538a extends AbstractC9418b<C7535d> {
         public C7538a(AbstractC9421e eVar) {
@@ -22,13 +22,13 @@ public final class C7537f implements AbstractC7536e {
         }
 
         public void mo8741g(AbstractC10074f fVar, C7535d dVar) {
-            String str = dVar.f24112a;
+            String str = dVar.f24115a;
             if (str == null) {
                 fVar.mo5374d0(1);
             } else {
                 fVar.mo5373q(1, str);
             }
-            Long l = dVar.f24113b;
+            Long l = dVar.f24116b;
             if (l == null) {
                 fVar.mo5374d0(2);
             } else {
@@ -38,19 +38,19 @@ public final class C7537f implements AbstractC7536e {
     }
 
     public C7537f(AbstractC9421e eVar) {
-        this.f24114a = eVar;
-        this.f24115b = new C7538a(eVar);
+        this.f24117a = eVar;
+        this.f24118b = new C7538a(eVar);
     }
 
     @Override
     public void mo15716a(C7535d dVar) {
-        this.f24114a.m8732b();
-        this.f24114a.m8731c();
+        this.f24117a.m8732b();
+        this.f24117a.m8731c();
         try {
-            this.f24115b.m8740h(dVar);
-            this.f24114a.m8714t();
+            this.f24118b.m8740h(dVar);
+            this.f24117a.m8714t();
         } finally {
-            this.f24114a.m8727g();
+            this.f24117a.m8727g();
         }
     }
 
@@ -62,9 +62,9 @@ public final class C7537f implements AbstractC7536e {
         } else {
             y0.mo5373q(1, str);
         }
-        this.f24114a.m8732b();
+        this.f24117a.m8732b();
         Long l = null;
-        Cursor b = C9940c.m6454b(this.f24114a, y0, false, null);
+        Cursor b = C9940c.m6454b(this.f24117a, y0, false, null);
         try {
             if (b.moveToFirst() && !b.isNull(0)) {
                 l = Long.valueOf(b.getLong(0));

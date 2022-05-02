@@ -35,7 +35,7 @@ public final class C6061e extends AbstractC6069i {
             return false;
         }
         C6061e eVar = (C6061e) obj;
-        return C1216l0.m37982c(this.f19278c, eVar.f19278c) && C1216l0.m37982c(this.f19277b, eVar.f19277b) && C1216l0.m37982c(this.f19276M, eVar.f19276M);
+        return C1216l0.m37985c(this.f19278c, eVar.f19278c) && C1216l0.m37985c(this.f19277b, eVar.f19277b) && C1216l0.m37985c(this.f19276M, eVar.f19276M);
     }
 
     public int hashCode() {
@@ -74,8 +74,8 @@ public final class C6061e extends AbstractC6069i {
 
     public C6061e(Parcel parcel) {
         super("COMM");
-        this.f19277b = (String) C1216l0.m37968j(parcel.readString());
-        this.f19278c = (String) C1216l0.m37968j(parcel.readString());
-        this.f19276M = (String) C1216l0.m37968j(parcel.readString());
+        this.f19277b = (String) C1216l0.m37971j(parcel.readString());
+        this.f19278c = (String) C1216l0.m37971j(parcel.readString());
+        this.f19276M = (String) C1216l0.m37971j(parcel.readString());
     }
 }

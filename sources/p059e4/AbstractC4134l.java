@@ -31,52 +31,52 @@ public interface AbstractC4134l {
             this.f13949g = z;
         }
 
-        public static C4135a m28812a(C4139n nVar, MediaFormat mediaFormat, C6600g1 g1Var, MediaCrypto mediaCrypto) {
+        public static C4135a m28814a(C4139n nVar, MediaFormat mediaFormat, C6600g1 g1Var, MediaCrypto mediaCrypto) {
             return new C4135a(nVar, mediaFormat, g1Var, null, mediaCrypto, 0, false);
         }
 
-        public static C4135a m28811b(C4139n nVar, MediaFormat mediaFormat, C6600g1 g1Var, Surface surface, MediaCrypto mediaCrypto) {
+        public static C4135a m28813b(C4139n nVar, MediaFormat mediaFormat, C6600g1 g1Var, Surface surface, MediaCrypto mediaCrypto) {
             return new C4135a(nVar, mediaFormat, g1Var, surface, mediaCrypto, 0, false);
         }
     }
 
     public interface AbstractC4136b {
-        AbstractC4134l mo28647a(C4135a aVar);
+        AbstractC4134l mo28649a(C4135a aVar);
     }
 
     public interface AbstractC4137c {
-        void mo28810a(AbstractC4134l lVar, long j, long j2);
+        void mo28812a(AbstractC4134l lVar, long j, long j2);
     }
 
-    void mo28666a();
+    void mo28668a();
 
-    boolean mo28665b();
+    boolean mo28667b();
 
-    MediaFormat mo28664c();
+    MediaFormat mo28666c();
 
-    void mo28663d(Bundle bundle);
+    void mo28665d(Bundle bundle);
 
-    void mo28662e(int i, long j);
+    void mo28664e(int i, long j);
 
-    int mo28661f();
+    int mo28663f();
 
     void flush();
 
-    int mo28660g(MediaCodec.BufferInfo bufferInfo);
+    int mo28662g(MediaCodec.BufferInfo bufferInfo);
 
-    void mo28659h(int i, boolean z);
+    void mo28661h(int i, boolean z);
 
-    void mo28658i(int i);
+    void mo28660i(int i);
 
-    void mo28657j(int i, int i2, C8020c cVar, long j, int i3);
+    void mo28659j(int i, int i2, C8020c cVar, long j, int i3);
 
-    ByteBuffer mo28656k(int i);
+    ByteBuffer mo28658k(int i);
 
-    void mo28655l(Surface surface);
+    void mo28657l(Surface surface);
 
-    void mo28654m(int i, int i2, int i3, long j, int i4);
+    void mo28656m(int i, int i2, int i3, long j, int i4);
 
-    ByteBuffer mo28653n(int i);
+    ByteBuffer mo28655n(int i);
 
-    void mo28652o(AbstractC4137c cVar, Handler handler);
+    void mo28654o(AbstractC4137c cVar, Handler handler);
 }

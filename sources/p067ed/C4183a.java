@@ -47,7 +47,7 @@ public class C4183a {
         boolean z3 = i >= 18;
         f14089g = z3;
         f14090h = z3;
-        f14091i = !C7389v0.m16612l1(C1379j0.m37315n());
+        f14091i = !C7389v0.m16612l1(C1379j0.m37318n());
         f14092j = i >= 16;
         f14093k = i >= 21;
         f14094l = i >= 15;
@@ -69,16 +69,16 @@ public class C4183a {
         f14107y = z;
     }
 
-    public static boolean m28616a(TdApi.Document document) {
+    public static boolean m28618a(TdApi.Document document) {
         String str;
         return (document == null || (str = document.fileName) == null || !str.toLowerCase().endsWith(".tgx-theme")) ? false : true;
     }
 
-    public static boolean m28615b() {
+    public static boolean m28617b() {
         return false;
     }
 
-    public static boolean m28614c(TdApi.Message message) {
+    public static boolean m28616c(TdApi.Message message) {
         if (!f14100r || message == null) {
             return false;
         }
@@ -92,7 +92,7 @@ public class C4183a {
         } else if (constructor != 596945783) {
             return false;
         } else {
-            return C4779t2.m25692F3(((TdApi.MessageDocument) message.content).document);
+            return C4779t2.m25693F3(((TdApi.MessageDocument) message.content).document);
         }
     }
 }

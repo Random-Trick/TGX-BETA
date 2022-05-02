@@ -26,7 +26,7 @@ public final class C5487c implements Comparator, Serializable {
             default:
                 Comparator comparator3 = this.f17974b;
                 Function function = (Function) this.f17975c;
-                return comparator3.compare(function.mo22502a(obj), function.mo22502a(obj2));
+                return comparator3.compare(function.mo22503a(obj), function.mo22503a(obj2));
         }
     }
 }

@@ -8,11 +8,11 @@ import p258s2.C8630c;
 import p288u8.C9459a;
 
 public abstract class AbstractC9056a {
-    public static Map<UUID, Class<? extends AbstractC9056a>> f29033a = new HashMap();
+    public static Map<UUID, Class<? extends AbstractC9056a>> f29036a = new HashMap();
 
-    public static AbstractC9056a m10597a(UUID uuid, ByteBuffer byteBuffer) {
+    public static AbstractC9056a m10596a(UUID uuid, ByteBuffer byteBuffer) {
         AbstractC9056a newInstance;
-        Class<? extends AbstractC9056a> cls = f29033a.get(uuid);
+        Class<? extends AbstractC9056a> cls = f29036a.get(uuid);
         if (cls != null) {
             try {
                 newInstance = cls.newInstance();
@@ -47,7 +47,7 @@ public abstract class AbstractC9056a {
         duplicate.rewind();
         byte[] bArr = new byte[duplicate.limit()];
         duplicate.get(bArr);
-        sb2.append(C8630c.m11880b(bArr));
+        sb2.append(C8630c.m11879b(bArr));
         sb2.append('}');
         return sb2.toString();
     }

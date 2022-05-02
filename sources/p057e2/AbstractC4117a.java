@@ -11,20 +11,20 @@ public abstract class AbstractC4117a {
     public DataSetObserver f13882b;
 
     @Deprecated
-    public void m28891a(View view, int i, Object obj) {
+    public void m28893a(View view, int i, Object obj) {
         throw new UnsupportedOperationException("Required method destroyItem was not overridden");
     }
 
     public void mo8826b(ViewGroup viewGroup, int i, Object obj) {
-        m28891a(viewGroup, i, obj);
+        m28893a(viewGroup, i, obj);
     }
 
     @Deprecated
-    public void m28890c(View view) {
+    public void m28892c(View view) {
     }
 
     public void mo18588d(ViewGroup viewGroup) {
-        m28890c(viewGroup);
+        m28892c(viewGroup);
     }
 
     public abstract int mo8825e();
@@ -42,17 +42,17 @@ public abstract class AbstractC4117a {
     }
 
     @Deprecated
-    public Object m28889i(View view, int i) {
+    public Object m28891i(View view, int i) {
         throw new UnsupportedOperationException("Required method instantiateItem was not overridden");
     }
 
     public Object mo8823j(ViewGroup viewGroup, int i) {
-        return m28889i(viewGroup, i);
+        return m28891i(viewGroup, i);
     }
 
     public abstract boolean mo8822k(View view, Object obj);
 
-    public void m28888l() {
+    public void m28890l() {
         synchronized (this) {
             DataSetObserver dataSetObserver = this.f13882b;
             if (dataSetObserver != null) {
@@ -74,25 +74,25 @@ public abstract class AbstractC4117a {
     }
 
     @Deprecated
-    public void m28887p(View view, int i, Object obj) {
+    public void m28889p(View view, int i, Object obj) {
     }
 
     public void mo18017q(ViewGroup viewGroup, int i, Object obj) {
-        m28887p(viewGroup, i, obj);
+        m28889p(viewGroup, i, obj);
     }
 
-    public void m28886r(DataSetObserver dataSetObserver) {
+    public void m28888r(DataSetObserver dataSetObserver) {
         synchronized (this) {
             this.f13882b = dataSetObserver;
         }
     }
 
     @Deprecated
-    public void m28885s(View view) {
+    public void m28887s(View view) {
     }
 
     public void mo18584t(ViewGroup viewGroup) {
-        m28885s(viewGroup);
+        m28887s(viewGroup);
     }
 
     public void mo18583u(DataSetObserver dataSetObserver) {

@@ -23,14 +23,14 @@ public class C4369f0 extends BroadcastReceiver {
                 C10536ab.m4667o1().m4636w2().m7119A0(4);
             }
         } else if ("android.net.conn.CONNECTIVITY_CHANGE".equals(action)) {
-            this.f14476a.m28138o();
+            this.f14476a.m28140o();
         } else {
             int i = Build.VERSION.SDK_INT;
             if (i < 21 || !"android.intent.action.HEADSET_PLUG".equals(action)) {
                 if (i < 24 || !"android.net.conn.RESTRICT_BACKGROUND_CHANGED".equals(action)) {
-                    this.f14476a.m28138o();
+                    this.f14476a.m28140o();
                 } else {
-                    this.f14476a.m28138o();
+                    this.f14476a.m28140o();
                 }
             } else if (intent.getIntExtra("state", 0) == 1) {
                 C10536ab.m4667o1().m4636w2().m7075W0(4, false);

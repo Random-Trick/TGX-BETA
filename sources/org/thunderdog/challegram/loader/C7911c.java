@@ -14,7 +14,7 @@ public class C7911c extends C4384m {
     public void mo3052f(Message message) {
         if (message.what == 0) {
             Object[] objArr = (Object[]) message.obj;
-            C7907b.m14362k().m14356q((C7906a) objArr[0], (C6246h) objArr[1], (String) objArr[2], (C7907b.AbstractC7910c) objArr[3]);
+            C7907b.m14361k().m14355q((C7906a) objArr[0], (C6246h) objArr[1], (String) objArr[2], (C7907b.AbstractC7910c) objArr[3]);
             objArr[0] = null;
             objArr[1] = null;
             objArr[2] = null;
@@ -22,7 +22,7 @@ public class C7911c extends C4384m {
         }
     }
 
-    public void m14347i(C7906a aVar, C6246h hVar, String str, C7907b.AbstractC7910c cVar) {
-        m28050h(Message.obtain(m28053d(), 0, new Object[]{aVar, hVar, str, cVar}), 0L);
+    public void m14346i(C7906a aVar, C6246h hVar, String str, C7907b.AbstractC7910c cVar) {
+        m28052h(Message.obtain(m28055d(), 0, new Object[]{aVar, hVar, str, cVar}), 0L);
     }
 }

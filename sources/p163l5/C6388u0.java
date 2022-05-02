@@ -14,11 +14,11 @@ public final class C6388u0 extends AbstractC8988f<C6363m0> {
         super("com.google.android.gms.common.ui.SignInButtonCreatorImpl");
     }
 
-    public static View m20485c(Context context, int i, int i2) {
+    public static View m20486c(Context context, int i, int i2) {
         C6388u0 u0Var = f20036c;
         try {
             C6382s0 s0Var = new C6382s0(1, i, i2, null);
-            return (View) BinderC8986d.m10763t(u0Var.m10761b(context).m20544G1(BinderC8986d.m10764E0(context), s0Var));
+            return (View) BinderC8986d.m10762t(u0Var.m10760b(context).m20545G1(BinderC8986d.m10763E0(context), s0Var));
         } catch (Exception e) {
             StringBuilder sb2 = new StringBuilder(64);
             sb2.append("Could not get button with size ");
@@ -30,7 +30,7 @@ public final class C6388u0 extends AbstractC8988f<C6363m0> {
     }
 
     @Override
-    public final C6363m0 mo10762a(IBinder iBinder) {
+    public final C6363m0 mo10761a(IBinder iBinder) {
         if (iBinder == null) {
             return null;
         }

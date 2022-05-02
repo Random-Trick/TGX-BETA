@@ -30,20 +30,20 @@ public class C1430o implements AbstractC10251k0 {
         this.f5249b = i2;
     }
 
-    public static C11190g m36948e(AbstractC0610l1 l1Var) {
+    public static C11190g m36951e(AbstractC0610l1 l1Var) {
         C11190g.C11192b a = C11190g.m1262a();
-        l1Var.mo40736Z().mo36994b(a);
+        l1Var.mo40739Z().mo36997b(a);
         return a.m1250j(l1Var.getWidth()).m1251i(l1Var.getHeight()).m1259a();
     }
 
     @Override
     public void mo5632a(Surface surface, int i) {
-        C1132h.m38319h(i == 256, "YuvToJpegProcessor only supports JPEG output format.");
+        C1132h.m38322h(i == 256, "YuvToJpegProcessor only supports JPEG output format.");
         synchronized (this.f5250c) {
             if (this.f5251d) {
-                C0662u1.m40643k("YuvToJpegProcessor", "Cannot set output surface. Processor is closed.");
+                C0662u1.m40646k("YuvToJpegProcessor", "Cannot set output surface. Processor is closed.");
             } else if (this.f5253f == null) {
-                this.f5253f = C3564a.m30048d(surface, this.f5249b, i);
+                this.f5253f = C3564a.m30050d(surface, this.f5249b, i);
             } else {
                 throw new IllegalStateException("Output surface already set.");
             }
@@ -62,21 +62,21 @@ public class C1430o implements AbstractC10251k0 {
         }
     }
 
-    public void m36949d() {
+    public void m36952d() {
         synchronized (this.f5250c) {
             if (!this.f5251d) {
                 this.f5251d = true;
                 if (this.f5252e != 0 || this.f5253f == null) {
-                    C0662u1.m40653a("YuvToJpegProcessor", "close() called while processing. Will close after completion.");
+                    C0662u1.m40656a("YuvToJpegProcessor", "close() called while processing. Will close after completion.");
                 } else {
-                    C0662u1.m40653a("YuvToJpegProcessor", "No processing in progress. Closing immediately.");
+                    C0662u1.m40656a("YuvToJpegProcessor", "No processing in progress. Closing immediately.");
                     this.f5253f.close();
                 }
             }
         }
     }
 
-    public void m36947f(int i) {
+    public void m36950f(int i) {
         this.f5248a = i;
     }
 

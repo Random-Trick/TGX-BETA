@@ -9,7 +9,7 @@ public final class C0187z {
     public static final Pattern f665a = Pattern.compile("bytes (\\d+)-(\\d+)/(?:\\d+|\\*)");
     public static final Pattern f666b = Pattern.compile("bytes (?:(?:\\d+-\\d+)|\\*)/(\\d+)");
 
-    public static String m42130a(long j, long j2) {
+    public static String m42133a(long j, long j2) {
         if (j == 0 && j2 == -1) {
             return null;
         }
@@ -23,17 +23,17 @@ public final class C0187z {
         return sb2.toString();
     }
 
-    public static long m42129b(java.lang.String r9, java.lang.String r10) {
-        throw new UnsupportedOperationException("Method not decompiled: p006a5.C0187z.m42129b(java.lang.String, java.lang.String):long");
+    public static long m42132b(java.lang.String r9, java.lang.String r10) {
+        throw new UnsupportedOperationException("Method not decompiled: p006a5.C0187z.m42132b(java.lang.String, java.lang.String):long");
     }
 
-    public static long m42128c(String str) {
+    public static long m42131c(String str) {
         if (TextUtils.isEmpty(str)) {
             return -1L;
         }
         Matcher matcher = f666b.matcher(str);
         if (matcher.matches()) {
-            return Long.parseLong((String) C1186a.m38185e(matcher.group(1)));
+            return Long.parseLong((String) C1186a.m38188e(matcher.group(1)));
         }
         return -1L;
     }

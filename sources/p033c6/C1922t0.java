@@ -19,7 +19,7 @@ public final class C1922t0 extends AbstractCollection {
     @Override
     public final Iterator iterator() {
         C1936u0 u0Var = this.f6916a;
-        Map j = u0Var.m35875j();
+        Map j = u0Var.m35878j();
         if (j != null) {
             return j.values().iterator();
         }

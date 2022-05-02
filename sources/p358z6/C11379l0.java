@@ -4,7 +4,7 @@ import java.io.Serializable;
 import p343y6.C10433i;
 
 public final class C11379l0 extends AbstractC11362g0<Comparable> implements Serializable {
-    public static final C11379l0 f36336a = new C11379l0();
+    public static final C11379l0 f36339a = new C11379l0();
 
     @Override
     public <S extends Comparable> AbstractC11362g0<S> mo788d() {

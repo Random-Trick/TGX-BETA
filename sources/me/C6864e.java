@@ -23,7 +23,7 @@ public class C6864e extends C7031t2 implements GestureDetector$OnGestureListener
         this.f21576c0 = new GestureDetector$OnGestureListenerC0256a(context, this);
     }
 
-    public void m18732Y1(AbstractC9323v4.C9334k kVar, boolean z) {
+    public void m18733Y1(AbstractC9323v4.C9334k kVar, boolean z) {
         if (this.f21577d0 == 0) {
             this.f21577d0 = 1;
             if (z) {
@@ -37,10 +37,10 @@ public class C6864e extends C7031t2 implements GestureDetector$OnGestureListener
 
     @Override
     public boolean mo7205o7(float f, float f2) {
-        if (this.f21577d0 != 2 || Math.abs(f2) < C1357a0.m37541i(10.0f)) {
+        if (this.f21577d0 != 2 || Math.abs(f2) < C1357a0.m37544i(10.0f)) {
             return false;
         }
-        C1379j0.m37307r(getContext()).m14601E0(f2 < 0.0f, true);
+        C1379j0.m37310r(getContext()).m14601E0(f2 < 0.0f, true);
         this.f21577d0 = 0;
         return true;
     }
@@ -55,24 +55,24 @@ public class C6864e extends C7031t2 implements GestureDetector$OnGestureListener
         if (this.f21577d0 != 2) {
             return super.onTouchEvent(motionEvent);
         }
-        this.f21576c0.m41994a(motionEvent);
+        this.f21576c0.m41997a(motionEvent);
         if (this.f21577d0 != 2) {
             return true;
         }
         int action = motionEvent.getAction();
         if (action == 1) {
-            C1379j0.m37307r(getContext()).m14606D0();
+            C1379j0.m37310r(getContext()).m14606D0();
             this.f21577d0 = 0;
         } else if (action == 2) {
             float y = motionEvent.getY();
             float max = Math.max(0.0f, Math.min(1.0f, (this.f21583j0 ? this.f21582i0 - y : y - this.f21582i0) / getMeasuredHeight()));
-            AbstractView$OnTouchListenerC7889a r = C1379j0.m37307r(getContext());
+            AbstractView$OnTouchListenerC7889a r = C1379j0.m37310r(getContext());
             if (!this.f21583j0) {
                 max = 1.0f - max;
             }
-            r.m14531U2(max);
+            r.m14530U2(max);
         } else if (action == 3) {
-            C1379j0.m37307r(getContext()).m14601E0(false, false);
+            C1379j0.m37310r(getContext()).m14601E0(false, false);
             this.f21577d0 = 0;
         }
         return true;

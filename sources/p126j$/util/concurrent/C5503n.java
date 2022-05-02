@@ -6,7 +6,7 @@ final class C5503n extends C5502m {
     }
 
     @Override
-    public C5502m mo22511a(int i, Object obj) {
+    public C5502m mo22512a(int i, Object obj) {
         return null;
     }
 }

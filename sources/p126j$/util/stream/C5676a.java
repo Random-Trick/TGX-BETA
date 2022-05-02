@@ -49,24 +49,24 @@ public final class C5676a implements AbstractC5531m, AbstractC5542x, BiConsumer,
     public static final C5676a f18303t = new C5676a();
 
     @Override
-    public long mo22327A(int i) {
+    public long mo22328A(int i) {
         int i2 = AbstractC5722j0.f18393t;
         return 1L;
     }
 
     @Override
-    public void mo22224a(Object obj, double d) {
-        ((C5543g) obj).mo22150c(d);
+    public void mo22225a(Object obj, double d) {
+        ((C5543g) obj).mo22151c(d);
     }
 
     @Override
-    public int mo22326f(Object obj) {
+    public int mo22327f(Object obj) {
         int i = AbstractC5722j0.f18393t;
         return ((Integer) obj).intValue();
     }
 
     @Override
-    public long mo22232g(Object obj) {
+    public long mo22233g(Object obj) {
         int i = AbstractC5767s0.f18463t;
         return ((Long) obj).longValue();
     }
@@ -77,80 +77,80 @@ public final class C5676a implements AbstractC5531m, AbstractC5542x, BiConsumer,
     }
 
     @Override
-    public int mo22223i(int i, int i2) {
+    public int mo22224i(int i, int i2) {
         return i + i2;
     }
 
     @Override
-    public void mo22128k(Object obj) {
+    public void mo22129k(Object obj) {
     }
 
     @Override
-    public long mo22222l(long j, long j2) {
+    public long mo22223l(long j, long j2) {
         return j + j2;
     }
 
     @Override
-    public double mo22231m(double d, double d2) {
+    public double mo22232m(double d, double d2) {
         return Math.max(d, d2);
     }
 
     @Override
-    public boolean mo22210n(Object obj) {
-        return ((C5546j) obj).m22475c();
+    public boolean mo22211n(Object obj) {
+        return ((C5546j) obj).m22476c();
     }
 
     @Override
-    public void mo22230o(Object obj, int i) {
-        ((C5544h) obj).mo22144d(i);
+    public void mo22231o(Object obj, int i) {
+        ((C5544h) obj).mo22145d(i);
     }
 
     @Override
-    public void mo22179p(Object obj, Object obj2) {
+    public void mo22180p(Object obj, Object obj2) {
         ((LinkedHashSet) obj).add(obj2);
     }
 
     @Override
-    public void mo22229q(Object obj, long j) {
-        ((C5545i) obj).mo22127e(j);
+    public void mo22230q(Object obj, long j) {
+        ((C5545i) obj).mo22128e(j);
     }
 
     @Override
-    public long mo22325r(double d) {
+    public long mo22326r(double d) {
         int i = AbstractC5581F.f18136t;
         return 1L;
     }
 
     @Override
-    public Object mo22172u(Object obj, Object obj2) {
+    public Object mo22173u(Object obj, Object obj2) {
         return new C5661W0((AbstractC5602J0) obj, (AbstractC5602J0) obj2);
     }
 
     @Override
-    public double mo22324v(Object obj) {
+    public double mo22325v(Object obj) {
         int i = AbstractC5581F.f18136t;
         return ((Double) obj).doubleValue();
     }
 
     @Override
-    public Object mo22178w(int i) {
+    public Object mo22179w(int i) {
         int i2 = AbstractC5686c.f18319s;
         return new Object[i];
     }
 
     @Override
-    public Object mo22209x(long j) {
+    public Object mo22210x(long j) {
         return Long.valueOf(j);
     }
 
     @Override
-    public long mo22323y(long j) {
+    public long mo22324y(long j) {
         int i = AbstractC5767s0.f18463t;
         return 1L;
     }
 
     @Override
-    public Object mo22322z(double d) {
+    public Object mo22323z(double d) {
         return Double.valueOf(d);
     }
 }

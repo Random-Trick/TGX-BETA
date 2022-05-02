@@ -7,11 +7,11 @@ import p357z5.C11317t;
 public abstract class AbstractC4309s implements AbstractC6147o<C11317t, C6777m<Boolean>> {
     public boolean f14376a = true;
 
-    public final boolean m28287b() {
+    public final boolean m28289b() {
         return this.f14376a;
     }
 
-    public final void m28286c(boolean z) {
+    public final void m28288c(boolean z) {
         this.f14376a = false;
     }
 }

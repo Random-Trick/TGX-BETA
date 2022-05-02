@@ -10,7 +10,7 @@ public final class ExecutorC6181w0 implements Executor {
         this.f19577a = handler;
     }
 
-    public static Executor m21099a(Handler handler) {
+    public static Executor m21100a(Handler handler) {
         return new ExecutorC6181w0(handler);
     }
 

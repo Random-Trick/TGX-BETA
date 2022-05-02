@@ -6,10 +6,10 @@ import p020b5.C1216l0;
 import p174m3.C6556a2;
 
 public final class C10384i {
-    public static final Pattern f33415a = Pattern.compile("^NOTE([ \t].*)?$");
+    public static final Pattern f33418a = Pattern.compile("^NOTE([ \t].*)?$");
 
     public static boolean m5204a(C1189b0 b0Var) {
-        String p = b0Var.m38127p();
+        String p = b0Var.m38130p();
         return p != null && p.startsWith("WEBVTT");
     }
 
@@ -21,9 +21,9 @@ public final class C10384i {
     }
 
     public static long m5202c(String str) {
-        String[] B0 = C1216l0.m38018B0(str, "\\.");
+        String[] B0 = C1216l0.m38021B0(str, "\\.");
         long j = 0;
-        for (String str2 : C1216l0.m38020A0(B0[0], ":")) {
+        for (String str2 : C1216l0.m38023A0(B0[0], ":")) {
             j = (j * 60) + Long.parseLong(str2);
         }
         long j2 = j * 1000;
@@ -34,11 +34,11 @@ public final class C10384i {
     }
 
     public static void m5201d(C1189b0 b0Var) {
-        int e = b0Var.m38138e();
+        int e = b0Var.m38141e();
         if (!m5204a(b0Var)) {
-            b0Var.m38144P(e);
-            String valueOf = String.valueOf(b0Var.m38127p());
-            throw C6556a2.m20112a(valueOf.length() != 0 ? "Expected WEBVTT. Got ".concat(valueOf) : new String("Expected WEBVTT. Got "), null);
+            b0Var.m38147P(e);
+            String valueOf = String.valueOf(b0Var.m38130p());
+            throw C6556a2.m20113a(valueOf.length() != 0 ? "Expected WEBVTT. Got ".concat(valueOf) : new String("Expected WEBVTT. Got "), null);
         }
     }
 }

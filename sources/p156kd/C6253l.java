@@ -40,43 +40,43 @@ public class C6253l extends C6246h implements Comparable<C6253l> {
     }
 
     @Override
-    public byte mo20777C() {
+    public byte mo20778C() {
         return (byte) 2;
     }
 
     @Override
-    public int mo20872D() {
-        return C5069h.m24081l(this.f19694Q + this.f19724h0, 360);
+    public int mo20873D() {
+        return C5069h.m24082l(this.f19694Q + this.f19724h0, 360);
     }
 
-    public boolean m20871D0() {
-        return true ^ C7321e.m16993N(m20867H0(true, true), m20867H0(true, false), true);
+    public boolean m20872D0() {
+        return true ^ C7321e.m16993N(m20868H0(true, true), m20868H0(true, false), true);
     }
 
-    public boolean m20870E0() {
-        if (m20955A() > 0) {
+    public boolean m20871E0() {
+        if (m20956A() > 0) {
             return false;
         }
-        if (m20843e1()) {
-            return C5349g0.m23169j(this);
+        if (m20844e1()) {
+            return C5349g0.m23170j(this);
         }
-        return C5335c.m23212q(this);
+        return C5335c.m23213q(this);
     }
 
     public int compareTo(C6253l lVar) {
-        long I0 = m20866I0();
-        long I02 = lVar.m20866I0();
+        long I0 = m20867I0();
+        long I02 = lVar.m20867I0();
         if (I0 != I02) {
             return Long.compare(I02, I0);
         }
-        return Long.compare(lVar.m20863K0(), m20863K0());
+        return Long.compare(lVar.m20864K0(), m20864K0());
     }
 
-    public List<File> m20868G0() {
+    public List<File> m20869G0() {
         return this.f19735s0;
     }
 
-    public TdApi.FormattedText m20867H0(boolean z, boolean z2) {
+    public TdApi.FormattedText m20868H0(boolean z, boolean z2) {
         if (!z) {
             return this.f19734r0;
         }
@@ -91,40 +91,40 @@ public class C6253l extends C6246h implements Comparable<C6253l> {
         return formattedText2;
     }
 
-    public long m20866I0() {
+    public long m20867I0() {
         return this.f19719c0;
     }
 
     @Override
-    public boolean mo20865J() {
+    public boolean mo20866J() {
         return true;
     }
 
-    public long m20864J0() {
+    public long m20865J0() {
         return this.f19726j0;
     }
 
-    public long m20863K0() {
+    public long m20864K0() {
         return this.f19717a0;
     }
 
-    public int m20862L0() {
-        return C7389v0.m16564x1(mo20872D()) ? this.f19720d0 : this.f19721e0;
+    public int m20863L0() {
+        return C7389v0.m16564x1(mo20873D()) ? this.f19720d0 : this.f19721e0;
     }
 
-    public int m20861M0() {
-        return C7389v0.m16564x1(m20850X0()) ? this.f19720d0 : this.f19721e0;
+    public int m20862M0() {
+        return C7389v0.m16564x1(m20851X0()) ? this.f19720d0 : this.f19721e0;
     }
 
-    public void m20860N0(int[] iArr) {
+    public void m20861N0(int[] iArr) {
         int i;
         int i2;
-        C7856c j = m20912j();
+        C7856c j = m20913j();
         if (j == null || j.m14818l()) {
-            i2 = m20849Y0();
-            i = m20862L0();
+            i2 = m20850Y0();
+            i = m20863L0();
         } else {
-            if (C7389v0.m16564x1(mo20872D() + j.m14822h())) {
+            if (C7389v0.m16564x1(mo20873D() + j.m14822h())) {
                 i2 = this.f19721e0;
                 i = this.f19720d0;
             } else {
@@ -147,30 +147,30 @@ public class C6253l extends C6246h implements Comparable<C6253l> {
         iArr[1] = i;
     }
 
-    public int m20859O0() {
+    public int m20860O0() {
         return this.f19724h0;
     }
 
-    public long m20858P0() {
+    public long m20859P0() {
         return this.f19725i0;
     }
 
-    public long m20857Q0() {
+    public long m20858Q0() {
         return this.f19727k0;
     }
 
-    public long m20856R0() {
+    public long m20857R0() {
         return this.f19730n0;
     }
 
-    public int m20855S0(boolean z) {
-        return (int) m20854T0(z, TimeUnit.SECONDS);
+    public int m20856S0(boolean z) {
+        return (int) m20855T0(z, TimeUnit.SECONDS);
     }
 
-    public long m20854T0(boolean z, TimeUnit timeUnit) {
+    public long m20855T0(boolean z, TimeUnit timeUnit) {
         TimeUnit timeUnit2;
         long j;
-        if (!z || !m20847a1()) {
+        if (!z || !m20848a1()) {
             j = this.f19732p0;
             timeUnit2 = TimeUnit.MILLISECONDS;
         } else {
@@ -180,80 +180,80 @@ public class C6253l extends C6246h implements Comparable<C6253l> {
         return timeUnit.convert(j, timeUnit2);
     }
 
-    public int m20853U0() {
+    public int m20854U0() {
         return this.f19731o0;
     }
 
-    public double m20852V0() {
+    public double m20853V0() {
         return this.f19729m0;
     }
 
-    public double m20851W0() {
+    public double m20852W0() {
         return this.f19728l0;
     }
 
-    public int m20850X0() {
-        C7856c j = m20912j();
+    public int m20851X0() {
+        C7856c j = m20913j();
         if (j != null) {
-            return C5069h.m24081l(mo20872D() + j.m14822h(), 360);
+            return C5069h.m24082l(mo20873D() + j.m14822h(), 360);
         }
-        return mo20872D();
+        return mo20873D();
     }
 
-    public int m20849Y0() {
-        return C7389v0.m16564x1(mo20872D()) ? this.f19721e0 : this.f19720d0;
+    public int m20850Y0() {
+        return C7389v0.m16564x1(mo20873D()) ? this.f19721e0 : this.f19720d0;
     }
 
-    public int m20848Z0() {
-        return C7389v0.m16564x1(m20850X0()) ? this.f19721e0 : this.f19720d0;
+    public int m20849Z0() {
+        return C7389v0.m16564x1(m20851X0()) ? this.f19721e0 : this.f19720d0;
     }
 
-    public boolean m20847a1() {
+    public boolean m20848a1() {
         return (this.f19725i0 == -1 || this.f19726j0 == -1 || this.f19727k0 == -1) ? false : true;
     }
 
-    public boolean m20846b1() {
+    public boolean m20847b1() {
         return (this.f19723g0 & 8) != 0;
     }
 
-    public boolean m20845c1() {
+    public boolean m20846c1() {
         return (this.f19723g0 & 16) == 0;
     }
 
     @Override
-    public String mo20768d() {
+    public String mo20769d() {
         StringBuilder sb2 = new StringBuilder();
         sb2.append(this.f19704a.local.path);
         sb2.append("?");
         long j = this.f19725i0;
         String str = "";
         sb2.append(j > 0 ? Long.valueOf(j) : str);
-        if (m20842f1()) {
+        if (m20843f1()) {
             str = "thumb" + this.f19717a0;
         }
         sb2.append(str);
         return sb2.toString();
     }
 
-    public boolean m20844d1() {
-        return m20910k().local.path.toLowerCase().contains("screen");
+    public boolean m20845d1() {
+        return m20911k().local.path.toLowerCase().contains("screen");
     }
 
-    public boolean m20843e1() {
+    public boolean m20844e1() {
         return (this.f19723g0 & 2) != 0;
     }
 
-    public boolean m20842f1() {
+    public boolean m20843f1() {
         return (this.f19723g0 & 1) != 0;
     }
 
-    public int m20841g1() {
-        int l = C5069h.m24081l(this.f19724h0 - 90, 360);
+    public int m20842g1() {
+        int l = C5069h.m24082l(this.f19724h0 - 90, 360);
         this.f19724h0 = l;
         return l;
     }
 
-    public void m20840h1(TdApi.FormattedText formattedText) {
+    public void m20841h1(TdApi.FormattedText formattedText) {
         if (C7321e.m16965a1(formattedText)) {
             this.f19734r0 = null;
         } else {
@@ -261,40 +261,40 @@ public class C6253l extends C6246h implements Comparable<C6253l> {
         }
     }
 
-    public void m20839i1() {
+    public void m20840i1() {
         this.f19723g0 |= 8;
     }
 
-    public void m20838j1(long j, String str) {
+    public void m20839j1(long j, String str) {
         this.f19723g0 |= 2;
         this.f19732p0 = j;
         this.f19733q0 = str;
     }
 
-    public void m20837k1(boolean z) {
-        this.f19723g0 = C5063c.m24138h(this.f19723g0, 1, z);
+    public void m20838k1(boolean z) {
+        this.f19723g0 = C5063c.m24139h(this.f19723g0, 1, z);
     }
 
-    public void m20836l1(int i) {
+    public void m20837l1(int i) {
         this.f19724h0 = i;
     }
 
-    public void m20835m1() {
+    public void m20836m1() {
         this.f19723g0 &= -17;
     }
 
-    public boolean m20834n1(long j, long j2, long j3) {
+    public boolean m20835n1(long j, long j2, long j3) {
         if (this.f19725i0 == j && this.f19726j0 == j2 && this.f19727k0 == j3) {
             return false;
         }
         this.f19725i0 = j;
         this.f19726j0 = j2;
         this.f19727k0 = j3;
-        m20935U();
+        m20936U();
         return true;
     }
 
-    public boolean m20833o1(long j, double d, double d2, int i, long j2) {
+    public boolean m20834o1(long j, double d, double d2, int i, long j2) {
         if (this.f19727k0 == j && this.f19728l0 == d && this.f19729m0 == d2 && this.f19731o0 == i && this.f19730n0 == j2) {
             return false;
         }
@@ -306,16 +306,16 @@ public class C6253l extends C6246h implements Comparable<C6253l> {
         return true;
     }
 
-    public boolean m20832p1() {
+    public boolean m20833p1() {
         return (this.f19723g0 & 4) != 0;
     }
 
-    public boolean m20831q1() {
+    public boolean m20832q1() {
         this.f19723g0 ^= 4;
-        return m20832p1();
+        return m20833p1();
     }
 
-    public void m20830r1(File file) {
+    public void m20831r1(File file) {
         if (this.f19735s0 == null) {
             this.f19735s0 = new ArrayList();
         }
@@ -323,8 +323,8 @@ public class C6253l extends C6246h implements Comparable<C6253l> {
     }
 
     @Override
-    public int mo20825s() {
-        return mo20875q().hashCode();
+    public int mo20826s() {
+        return mo20876q().hashCode();
     }
 
     public C6253l(C6253l lVar) {
@@ -350,6 +350,6 @@ public class C6253l extends C6246h implements Comparable<C6253l> {
         this.f19731o0 = lVar.f19731o0;
         this.f19732p0 = lVar.f19732p0;
         this.f19733q0 = lVar.f19733q0;
-        mo20767t0(lVar.m20886z());
+        mo20768t0(lVar.m20887z());
     }
 }

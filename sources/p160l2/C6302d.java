@@ -10,18 +10,18 @@ import p243r2.AbstractC8354a;
 
 public class C6302d extends AbstractC6300c<C6042b> {
     public C6302d(Context context, AbstractC8354a aVar) {
-        super(C6552g.m20120c(context, aVar).m20119d());
+        super(C6552g.m20121c(context, aVar).m20120d());
     }
 
     @Override
-    public boolean mo20691b(C7554p pVar) {
-        return pVar.f24149j.m28394b() == EnumC4236k.CONNECTED;
+    public boolean mo20692b(C7554p pVar) {
+        return pVar.f24152j.m28396b() == EnumC4236k.CONNECTED;
     }
 
-    public boolean mo20690c(C6042b bVar) {
+    public boolean mo20691c(C6042b bVar) {
         if (Build.VERSION.SDK_INT >= 26) {
-            return !bVar.m21461a() || !bVar.m21458d();
+            return !bVar.m21462a() || !bVar.m21459d();
         }
-        return !bVar.m21461a();
+        return !bVar.m21462a();
     }
 }

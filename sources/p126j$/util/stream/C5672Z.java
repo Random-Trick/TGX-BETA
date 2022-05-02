@@ -19,7 +19,7 @@ final class C5672Z extends CountedCompleter {
         super(null);
         this.f18274a = d0;
         this.f18275b = g;
-        this.f18276c = AbstractC5701f.m22271h(g.estimateSize());
+        this.f18276c = AbstractC5701f.m22272h(g.estimateSize());
         this.f18277d = new ConcurrentHashMap(Math.max(16, AbstractC5701f.f18349g << 1));
         this.f18278e = q2Var;
         this.f18279f = null;
@@ -69,12 +69,12 @@ final class C5672Z extends CountedCompleter {
         if (z2.getPendingCount() > 0) {
             C5731l lVar = C5731l.f18419e;
             AbstractC5572D0 d0 = z2.f18274a;
-            AbstractC5592H0 k0 = d0.mo22189k0(d0.mo22303S(g), lVar);
+            AbstractC5592H0 k0 = d0.mo22190k0(d0.mo22304S(g), lVar);
             AbstractC5686c cVar = (AbstractC5686c) z2.f18274a;
             Objects.requireNonNull(cVar);
             Objects.requireNonNull(k0);
-            cVar.mo22306M(cVar.mo22299r0(k0), g);
-            z2.f18280g = k0.mo42630b();
+            cVar.mo22307M(cVar.mo22300r0(k0), g);
+            z2.f18280g = k0.mo42633b();
             z2.f18275b = null;
         }
         z2.tryComplete();
@@ -84,12 +84,12 @@ final class C5672Z extends CountedCompleter {
     public void onCompletion(CountedCompleter countedCompleter) {
         AbstractC5632P0 p0 = this.f18280g;
         if (p0 != null) {
-            p0.mo22176a(this.f18278e);
+            p0.mo22177a(this.f18278e);
             this.f18280g = null;
         } else {
             AbstractC5468G g = this.f18275b;
             if (g != null) {
-                this.f18274a.mo22300q0(this.f18278e, g);
+                this.f18274a.mo22301q0(this.f18278e, g);
                 this.f18275b = null;
             }
         }

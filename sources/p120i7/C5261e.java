@@ -32,35 +32,35 @@ public final class C5261e implements AbstractC4515f, AbstractC4517h {
 
     @Override
     public AbstractC4515f mo5192a(C4511d dVar, Object obj) {
-        return m23503l(dVar.m27507b(), obj);
+        return m23504l(dVar.m27509b(), obj);
     }
 
     @Override
     public AbstractC4515f mo5191b(C4511d dVar, long j) {
-        return m23504k(dVar.m27507b(), j);
+        return m23505k(dVar.m27509b(), j);
     }
 
     @Override
     public AbstractC4515f mo5190c(C4511d dVar, int i) {
-        return m23505j(dVar.m27507b(), i);
+        return m23506j(dVar.m27509b(), i);
     }
 
-    public C5261e m23509f(int i) {
-        m23495t();
+    public C5261e m23510f(int i) {
+        m23496t();
         this.f17431c.value(i);
         return this;
     }
 
-    public C5261e m23508g(long j) {
-        m23495t();
+    public C5261e m23509g(long j) {
+        m23496t();
         this.f17431c.value(j);
         return this;
     }
 
-    public C5261e m23507h(Object obj, boolean z) {
+    public C5261e m23508h(Object obj, boolean z) {
         int[] iArr;
         int i = 0;
-        if (z && m23500o(obj)) {
+        if (z && m23501o(obj)) {
             Object[] objArr = new Object[1];
             objArr[0] = obj == null ? null : obj.getClass();
             throw new C4510c(String.format("%s cannot be encoded inline", objArr));
@@ -72,7 +72,7 @@ public final class C5261e implements AbstractC4515f, AbstractC4517h {
             return this;
         } else if (obj.getClass().isArray()) {
             if (obj instanceof byte[]) {
-                return m23501n((byte[]) obj);
+                return m23502n((byte[]) obj);
             }
             this.f17431c.beginArray();
             if (obj instanceof int[]) {
@@ -85,7 +85,7 @@ public final class C5261e implements AbstractC4515f, AbstractC4517h {
                 long[] jArr = (long[]) obj;
                 int length2 = jArr.length;
                 while (i < length2) {
-                    m23508g(jArr[i]);
+                    m23509g(jArr[i]);
                     i++;
                 }
             } else if (obj instanceof double[]) {
@@ -104,11 +104,11 @@ public final class C5261e implements AbstractC4515f, AbstractC4517h {
                 }
             } else if (obj instanceof Number[]) {
                 for (Number number : (Number[]) obj) {
-                    m23507h(number, false);
+                    m23508h(number, false);
                 }
             } else {
                 for (Object obj2 : (Object[]) obj) {
-                    m23507h(obj2, false);
+                    m23508h(obj2, false);
                 }
             }
             this.f17431c.endArray();
@@ -116,7 +116,7 @@ public final class C5261e implements AbstractC4515f, AbstractC4517h {
         } else if (obj instanceof Collection) {
             this.f17431c.beginArray();
             for (Object obj3 : (Collection) obj) {
-                m23507h(obj3, false);
+                m23508h(obj3, false);
             }
             this.f17431c.endArray();
             return this;
@@ -125,7 +125,7 @@ public final class C5261e implements AbstractC4515f, AbstractC4517h {
             for (Map.Entry entry : ((Map) obj).entrySet()) {
                 Object key = entry.getKey();
                 try {
-                    m23503l((String) key, entry.getValue());
+                    m23504l((String) key, entry.getValue());
                 } catch (ClassCastException e) {
                     throw new C4510c(String.format("Only String keys are currently supported in maps, got %s of type %s instead.", key, key.getClass()), e);
                 }
@@ -135,14 +135,14 @@ public final class C5261e implements AbstractC4515f, AbstractC4517h {
         } else {
             AbstractC4514e<?> eVar = this.f17432d.get(obj.getClass());
             if (eVar != null) {
-                return m23498q(eVar, obj, z);
+                return m23499q(eVar, obj, z);
             }
             AbstractC4516g<?> gVar = this.f17433e.get(obj.getClass());
             if (gVar != null) {
                 gVar.mo5165a(obj, this);
                 return this;
             } else if (!(obj instanceof Enum)) {
-                return m23498q(this.f17434f, obj, z);
+                return m23499q(this.f17434f, obj, z);
             } else {
                 mo5167d(((Enum) obj).name());
                 return this;
@@ -151,38 +151,38 @@ public final class C5261e implements AbstractC4515f, AbstractC4517h {
     }
 
     public C5261e mo5167d(String str) {
-        m23495t();
+        m23496t();
         this.f17431c.value(str);
         return this;
     }
 
-    public C5261e m23505j(String str, int i) {
-        m23495t();
+    public C5261e m23506j(String str, int i) {
+        m23496t();
         this.f17431c.name(str);
-        return m23509f(i);
+        return m23510f(i);
     }
 
-    public C5261e m23504k(String str, long j) {
-        m23495t();
+    public C5261e m23505k(String str, long j) {
+        m23496t();
         this.f17431c.name(str);
-        return m23508g(j);
+        return m23509g(j);
     }
 
-    public C5261e m23503l(String str, Object obj) {
+    public C5261e m23504l(String str, Object obj) {
         if (this.f17435g) {
-            return m23496s(str, obj);
+            return m23497s(str, obj);
         }
-        return m23497r(str, obj);
+        return m23498r(str, obj);
     }
 
     public C5261e mo5166e(boolean z) {
-        m23495t();
+        m23496t();
         this.f17431c.value(z);
         return this;
     }
 
-    public C5261e m23501n(byte[] bArr) {
-        m23495t();
+    public C5261e m23502n(byte[] bArr) {
+        m23496t();
         if (bArr == null) {
             this.f17431c.nullValue();
         } else {
@@ -191,16 +191,16 @@ public final class C5261e implements AbstractC4515f, AbstractC4517h {
         return this;
     }
 
-    public final boolean m23500o(Object obj) {
+    public final boolean m23501o(Object obj) {
         return obj == null || obj.getClass().isArray() || (obj instanceof Collection) || (obj instanceof Date) || (obj instanceof Enum) || (obj instanceof Number);
     }
 
-    public void m23499p() {
-        m23495t();
+    public void m23500p() {
+        m23496t();
         this.f17431c.flush();
     }
 
-    public C5261e m23498q(AbstractC4514e<Object> eVar, Object obj, boolean z) {
+    public C5261e m23499q(AbstractC4514e<Object> eVar, Object obj, boolean z) {
         if (!z) {
             this.f17431c.beginObject();
         }
@@ -211,30 +211,30 @@ public final class C5261e implements AbstractC4515f, AbstractC4517h {
         return this;
     }
 
-    public final C5261e m23497r(String str, Object obj) {
-        m23495t();
+    public final C5261e m23498r(String str, Object obj) {
+        m23496t();
         this.f17431c.name(str);
         if (obj != null) {
-            return m23507h(obj, false);
+            return m23508h(obj, false);
         }
         this.f17431c.nullValue();
         return this;
     }
 
-    public final C5261e m23496s(String str, Object obj) {
+    public final C5261e m23497s(String str, Object obj) {
         if (obj == null) {
             return this;
         }
-        m23495t();
+        m23496t();
         this.f17431c.name(str);
-        return m23507h(obj, false);
+        return m23508h(obj, false);
     }
 
-    public final void m23495t() {
+    public final void m23496t() {
         if (this.f17430b) {
             C5261e eVar = this.f17429a;
             if (eVar != null) {
-                eVar.m23495t();
+                eVar.m23496t();
                 this.f17429a.f17430b = false;
                 this.f17429a = null;
                 this.f17431c.endObject();

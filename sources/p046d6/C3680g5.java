@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 import javax.annotation.CheckForNull;
 
 public final class C3680g5 {
-    public static String m29831a(@CheckForNull String str, @CheckForNull Object... objArr) {
+    public static String m29833a(@CheckForNull String str, @CheckForNull Object... objArr) {
         int length;
         int length2;
         int indexOf;
@@ -75,7 +75,7 @@ public final class C3680g5 {
         return sb6.toString();
     }
 
-    public static boolean m29830b(@CheckForNull String str) {
-        return C3658e3.m29842a(str);
+    public static boolean m29832b(@CheckForNull String str) {
+        return C3658e3.m29844a(str);
     }
 }

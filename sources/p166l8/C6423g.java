@@ -6,16 +6,16 @@ public final class C6423g {
     public final byte f20093b;
 
     public C6423g(int i) {
-        this.f20092a = EnumC6422f.m20433a((i >> 3) & 3);
+        this.f20092a = EnumC6422f.m20434a((i >> 3) & 3);
         this.f20093b = (byte) (i & 7);
     }
 
-    public static C6423g m20432a(int i, int i2) {
-        C6423g b = m20431b(i, i2);
-        return b != null ? b : m20431b(i ^ 21522, i2 ^ 21522);
+    public static C6423g m20433a(int i, int i2) {
+        C6423g b = m20432b(i, i2);
+        return b != null ? b : m20432b(i ^ 21522, i2 ^ 21522);
     }
 
-    public static C6423g m20431b(int i, int i2) {
+    public static C6423g m20432b(int i, int i2) {
         int[][] iArr;
         int e;
         int i3 = Integer.MAX_VALUE;
@@ -25,12 +25,12 @@ public final class C6423g {
             if (i5 == i || i5 == i2) {
                 return new C6423g(iArr2[1]);
             }
-            int e2 = m20428e(i, i5);
+            int e2 = m20429e(i, i5);
             if (e2 < i3) {
                 i4 = iArr2[1];
                 i3 = e2;
             }
-            if (i != i2 && (e = m20428e(i2, i5)) < i3) {
+            if (i != i2 && (e = m20429e(i2, i5)) < i3) {
                 i4 = iArr2[1];
                 i3 = e;
             }
@@ -41,15 +41,15 @@ public final class C6423g {
         return null;
     }
 
-    public static int m20428e(int i, int i2) {
+    public static int m20429e(int i, int i2) {
         return Integer.bitCount(i ^ i2);
     }
 
-    public byte m20430c() {
+    public byte m20431c() {
         return this.f20093b;
     }
 
-    public EnumC6422f m20429d() {
+    public EnumC6422f m20430d() {
         return this.f20092a;
     }
 

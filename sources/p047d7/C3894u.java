@@ -22,16 +22,16 @@ public class C3894u implements AbstractC5896d, AbstractC5895c {
         this.f13173c = executor;
     }
 
-    public static void m29627e(Map.Entry entry, C5893a aVar) {
-        ((AbstractC5894b) entry.getKey()).mo10609a(aVar);
+    public static void m29629e(Map.Entry entry, C5893a aVar) {
+        ((AbstractC5894b) entry.getKey()).mo10608a(aVar);
     }
 
     @Override
-    public <T> void mo21891a(Class<T> cls, AbstractC5894b<? super T> bVar) {
-        m29625g(cls, this.f13173c, bVar);
+    public <T> void mo21892a(Class<T> cls, AbstractC5894b<? super T> bVar) {
+        m29627g(cls, this.f13173c, bVar);
     }
 
-    public void m29629c() {
+    public void m29631c() {
         Queue<C5893a<?>> queue;
         synchronized (this) {
             queue = this.f13172b;
@@ -43,40 +43,40 @@ public class C3894u implements AbstractC5896d, AbstractC5895c {
         }
         if (queue != null) {
             for (C5893a<?> aVar : queue) {
-                m29626f(aVar);
+                m29628f(aVar);
             }
         }
     }
 
-    public final synchronized Set<Map.Entry<AbstractC5894b<Object>, Executor>> m29628d(C5893a<?> aVar) {
+    public final synchronized Set<Map.Entry<AbstractC5894b<Object>, Executor>> m29630d(C5893a<?> aVar) {
         ConcurrentHashMap<AbstractC5894b<Object>, Executor> concurrentHashMap;
-        concurrentHashMap = this.f13171a.get(aVar.m21892a());
+        concurrentHashMap = this.f13171a.get(aVar.m21893a());
         return concurrentHashMap == null ? Collections.emptySet() : concurrentHashMap.entrySet();
     }
 
-    public void m29626f(final C5893a<?> aVar) {
-        C3864c0.m29712b(aVar);
+    public void m29628f(final C5893a<?> aVar) {
+        C3864c0.m29714b(aVar);
         synchronized (this) {
             Queue<C5893a<?>> queue = this.f13172b;
             if (queue != null) {
                 queue.add(aVar);
                 return;
             }
-            for (final Map.Entry<AbstractC5894b<Object>, Executor> entry : m29628d(aVar)) {
+            for (final Map.Entry<AbstractC5894b<Object>, Executor> entry : m29630d(aVar)) {
                 entry.getValue().execute(new Runnable() {
                     @Override
                     public final void run() {
-                        C3894u.m29627e(entry, aVar);
+                        C3894u.m29629e(entry, aVar);
                     }
                 });
             }
         }
     }
 
-    public synchronized <T> void m29625g(Class<T> cls, Executor executor, AbstractC5894b<? super T> bVar) {
-        C3864c0.m29712b(cls);
-        C3864c0.m29712b(bVar);
-        C3864c0.m29712b(executor);
+    public synchronized <T> void m29627g(Class<T> cls, Executor executor, AbstractC5894b<? super T> bVar) {
+        C3864c0.m29714b(cls);
+        C3864c0.m29714b(bVar);
+        C3864c0.m29714b(executor);
         if (!this.f13171a.containsKey(cls)) {
             this.f13171a.put(cls, new ConcurrentHashMap<>());
         }

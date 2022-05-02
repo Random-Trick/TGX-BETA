@@ -20,13 +20,13 @@ public class C4437d extends C4432b {
             if (aVar != null) {
                 this.f14695J = aVar.f14695J;
             } else {
-                this.f14695J = new int[m27697f()];
+                this.f14695J = new int[m27699f()];
             }
         }
 
-        public int m27673A(int[] iArr) {
+        public int m27675A(int[] iArr) {
             int[][] iArr2 = this.f14695J;
-            int h = m27695h();
+            int h = m27697h();
             for (int i = 0; i < h; i++) {
                 if (StateSet.stateSetMatches(iArr2[i], iArr)) {
                     return i;
@@ -41,15 +41,15 @@ public class C4437d extends C4432b {
         }
 
         @Override
-        public void mo27672o(int i, int i2) {
-            super.mo27672o(i, i2);
+        public void mo27674o(int i, int i2) {
+            super.mo27674o(i, i2);
             int[][] iArr = new int[i2];
             System.arraycopy(this.f14695J, 0, iArr, 0, i);
             this.f14695J = iArr;
         }
 
         @Override
-        public void mo27671r() {
+        public void mo27673r() {
             int[][] iArr = this.f14695J;
             int[][] iArr2 = new int[iArr.length];
             for (int length = iArr.length - 1; length >= 0; length--) {
@@ -59,8 +59,8 @@ public class C4437d extends C4432b {
             this.f14695J = iArr2;
         }
 
-        public int m27670z(int[] iArr, Drawable drawable) {
-            int a = m27702a(drawable);
+        public int m27672z(int[] iArr, Drawable drawable) {
+            int a = m27704a(drawable);
             this.f14695J[a] = iArr;
             return a;
         }
@@ -72,7 +72,7 @@ public class C4437d extends C4432b {
     }
 
     public C4437d(C4438a aVar, Resources resources) {
-        mo27676h(new C4438a(aVar, this, resources));
+        mo27678h(new C4438a(aVar, this, resources));
         onStateChange(getState());
     }
 
@@ -83,8 +83,8 @@ public class C4437d extends C4432b {
     }
 
     @Override
-    public void mo27676h(C4432b.AbstractC4435c cVar) {
-        super.mo27676h(cVar);
+    public void mo27678h(C4432b.AbstractC4435c cVar) {
+        super.mo27678h(cVar);
         if (cVar instanceof C4438a) {
             this.f14693W = (C4438a) cVar;
         }
@@ -95,11 +95,11 @@ public class C4437d extends C4432b {
         return true;
     }
 
-    public C4438a mo27677b() {
+    public C4438a mo27679b() {
         return new C4438a(this.f14693W, this, null);
     }
 
-    public int[] m27674k(AttributeSet attributeSet) {
+    public int[] m27676k(AttributeSet attributeSet) {
         int attributeCount = attributeSet.getAttributeCount();
         int[] iArr = new int[attributeCount];
         int i = 0;
@@ -119,7 +119,7 @@ public class C4437d extends C4432b {
     @Override
     public Drawable mutate() {
         if (!this.f14694X && super.mutate() == this) {
-            this.f14693W.mo27671r();
+            this.f14693W.mo27673r();
             this.f14694X = true;
         }
         return this;
@@ -128,16 +128,16 @@ public class C4437d extends C4432b {
     @Override
     public boolean onStateChange(int[] iArr) {
         boolean onStateChange = super.onStateChange(iArr);
-        int A = this.f14693W.m27673A(iArr);
+        int A = this.f14693W.m27675A(iArr);
         if (A < 0) {
-            A = this.f14693W.m27673A(StateSet.WILD_CARD);
+            A = this.f14693W.m27675A(StateSet.WILD_CARD);
         }
-        return m27706g(A) || onStateChange;
+        return m27708g(A) || onStateChange;
     }
 
     public C4437d(C4438a aVar) {
         if (aVar != null) {
-            mo27676h(aVar);
+            mo27678h(aVar);
         }
     }
 }

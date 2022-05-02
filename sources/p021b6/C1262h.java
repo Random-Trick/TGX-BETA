@@ -16,29 +16,29 @@ public final class C1262h extends AbstractC1264i {
 
     @Override
     public final Object get(int i) {
-        C1250b.m37825a(i, this.f4623M, "index");
+        C1250b.m37828a(i, this.f4623M, "index");
         return this.f4624N.get(i + this.f4625c);
     }
 
     @Override
-    public final int mo37807i() {
-        return this.f4624N.mo37806m() + this.f4625c + this.f4623M;
+    public final int mo37810i() {
+        return this.f4624N.mo37809m() + this.f4625c + this.f4623M;
     }
 
     @Override
-    public final int mo37806m() {
-        return this.f4624N.mo37806m() + this.f4625c;
+    public final int mo37809m() {
+        return this.f4624N.mo37809m() + this.f4625c;
     }
 
     @Override
     @CheckForNull
-    public final Object[] mo37805r() {
-        return this.f4624N.mo37805r();
+    public final Object[] mo37808r() {
+        return this.f4624N.mo37808r();
     }
 
     @Override
-    public final AbstractC1264i mo37816s(int i, int i2) {
-        C1250b.m37823c(i, i2, this.f4623M);
+    public final AbstractC1264i mo37819s(int i, int i2) {
+        C1250b.m37826c(i, i2, this.f4623M);
         AbstractC1264i iVar = this.f4624N;
         int i3 = this.f4625c;
         return iVar.subList(i + i3, i2 + i3);

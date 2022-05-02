@@ -8,7 +8,7 @@ public class C5544h implements AbstractC5530l {
     private int min = Integer.MAX_VALUE;
     private int max = Integer.MIN_VALUE;
 
-    public void m22479a(C5544h hVar) {
+    public void m22480a(C5544h hVar) {
         this.count += hVar.count;
         this.sum += hVar.sum;
         this.min = Math.min(this.min, hVar.min);
@@ -16,7 +16,7 @@ public class C5544h implements AbstractC5530l {
     }
 
     @Override
-    public void mo22144d(int i) {
+    public void mo22145d(int i) {
         this.count++;
         this.sum += i;
         this.min = Math.min(this.min, i);

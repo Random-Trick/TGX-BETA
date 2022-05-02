@@ -16,27 +16,27 @@ class C5663W2 extends AbstractC5671Y2 implements AbstractC5464C {
     }
 
     @Override
-    public boolean mo22124a(Consumer consumer) {
-        return AbstractC5485a.m22562s(this, consumer);
+    public boolean mo22125a(Consumer consumer) {
+        return AbstractC5485a.m22563s(this, consumer);
     }
 
     @Override
-    void mo22345b(Object obj, int i, Object obj2) {
-        ((AbstractC5535q) obj2).mo22127e(((long[]) obj)[i]);
+    void mo22346b(Object obj, int i, Object obj2) {
+        ((AbstractC5535q) obj2).mo22128e(((long[]) obj)[i]);
     }
 
     @Override
-    AbstractC5466E mo22344c(Object obj, int i, int i2) {
-        return AbstractC5482V.m22588l((long[]) obj, i, i2 + i, 1040);
+    AbstractC5466E mo22345c(Object obj, int i, int i2) {
+        return AbstractC5482V.m22589l((long[]) obj, i, i2 + i, 1040);
     }
 
     @Override
-    AbstractC5466E mo22343d(int i, int i2, int i3, int i4) {
+    AbstractC5466E mo22344d(int i, int i2, int i3, int i4) {
         return new C5663W2(this.f18261g, i, i2, i3, i4);
     }
 
     @Override
     public void forEachRemaining(Consumer consumer) {
-        AbstractC5485a.m22570e(this, consumer);
+        AbstractC5485a.m22571e(this, consumer);
     }
 }

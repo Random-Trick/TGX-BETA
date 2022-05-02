@@ -23,7 +23,7 @@ import p227q0.C8117a;
 import p243r2.AbstractC8354a;
 
 public class C4452d implements AbstractC4450b, AbstractC7098a {
-    public static final String f14718U = AbstractC4234j.m28360f("Processor");
+    public static final String f14718U = AbstractC4234j.m28362f("Processor");
     public AbstractC8354a f14719M;
     public WorkDatabase f14720N;
     public List<AbstractC4454e> f14723Q;
@@ -55,7 +55,7 @@ public class C4452d implements AbstractC4450b, AbstractC7098a {
             } catch (InterruptedException | ExecutionException unused) {
                 z = true;
             }
-            this.f14730a.mo24442d(this.f14731b, z);
+            this.f14730a.mo24443d(this.f14731b, z);
         }
     }
 
@@ -67,29 +67,29 @@ public class C4452d implements AbstractC4450b, AbstractC7098a {
         this.f14723Q = list;
     }
 
-    public static boolean m27636e(String str, RunnableC4459j jVar) {
+    public static boolean m27638e(String str, RunnableC4459j jVar) {
         if (jVar != null) {
-            jVar.m27576d();
-            AbstractC4234j.m28362c().mo28359a(f14718U, String.format("WorkerWrapper interrupted for %s", str), new Throwable[0]);
+            jVar.m27578d();
+            AbstractC4234j.m28364c().mo28361a(f14718U, String.format("WorkerWrapper interrupted for %s", str), new Throwable[0]);
             return true;
         }
-        AbstractC4234j.m28362c().mo28359a(f14718U, String.format("WorkerWrapper could not be found for %s", str), new Throwable[0]);
+        AbstractC4234j.m28364c().mo28361a(f14718U, String.format("WorkerWrapper could not be found for %s", str), new Throwable[0]);
         return false;
     }
 
     @Override
     public void mo17738a(String str, C4228e eVar) {
         synchronized (this.f14726T) {
-            AbstractC4234j.m28362c().mo28357d(f14718U, String.format("Moving WorkSpec (%s) to the foreground", str), new Throwable[0]);
+            AbstractC4234j.m28364c().mo28359d(f14718U, String.format("Moving WorkSpec (%s) to the foreground", str), new Throwable[0]);
             RunnableC4459j remove = this.f14722P.remove(str);
             if (remove != null) {
                 if (this.f14727a == null) {
-                    PowerManager.WakeLock b = C8007k.m13795b(this.f14728b, "ProcessorForegroundLck");
+                    PowerManager.WakeLock b = C8007k.m13794b(this.f14728b, "ProcessorForegroundLck");
                     this.f14727a = b;
                     b.acquire();
                 }
                 this.f14721O.put(str, remove);
-                C8117a.m13431m(this.f14728b, C1097a.m38401c(this.f14728b, str, eVar));
+                C8117a.m13430m(this.f14728b, C1097a.m38404c(this.f14728b, str, eVar));
             }
         }
     }
@@ -98,28 +98,28 @@ public class C4452d implements AbstractC4450b, AbstractC7098a {
     public void mo17737b(String str) {
         synchronized (this.f14726T) {
             this.f14721O.remove(str);
-            m27628m();
+            m27630m();
         }
     }
 
-    public void m27637c(AbstractC4450b bVar) {
+    public void m27639c(AbstractC4450b bVar) {
         synchronized (this.f14726T) {
             this.f14725S.add(bVar);
         }
     }
 
     @Override
-    public void mo24442d(String str, boolean z) {
+    public void mo24443d(String str, boolean z) {
         synchronized (this.f14726T) {
             this.f14722P.remove(str);
-            AbstractC4234j.m28362c().mo28359a(f14718U, String.format("%s %s executed; reschedule = %s", getClass().getSimpleName(), str, Boolean.valueOf(z)), new Throwable[0]);
+            AbstractC4234j.m28364c().mo28361a(f14718U, String.format("%s %s executed; reschedule = %s", getClass().getSimpleName(), str, Boolean.valueOf(z)), new Throwable[0]);
             for (AbstractC4450b bVar : this.f14725S) {
-                bVar.mo24442d(str, z);
+                bVar.mo24443d(str, z);
             }
         }
     }
 
-    public boolean m27635f(String str) {
+    public boolean m27637f(String str) {
         boolean contains;
         synchronized (this.f14726T) {
             contains = this.f14724R.contains(str);
@@ -127,7 +127,7 @@ public class C4452d implements AbstractC4450b, AbstractC7098a {
         return contains;
     }
 
-    public boolean m27634g(String str) {
+    public boolean m27636g(String str) {
         boolean z;
         synchronized (this.f14726T) {
             if (!this.f14722P.containsKey(str) && !this.f14721O.containsKey(str)) {
@@ -138,7 +138,7 @@ public class C4452d implements AbstractC4450b, AbstractC7098a {
         return z;
     }
 
-    public boolean m27633h(String str) {
+    public boolean m27635h(String str) {
         boolean containsKey;
         synchronized (this.f14726T) {
             containsKey = this.f14721O.containsKey(str);
@@ -146,37 +146,37 @@ public class C4452d implements AbstractC4450b, AbstractC7098a {
         return containsKey;
     }
 
-    public void m27632i(AbstractC4450b bVar) {
+    public void m27634i(AbstractC4450b bVar) {
         synchronized (this.f14726T) {
             this.f14725S.remove(bVar);
         }
     }
 
-    public boolean m27631j(String str) {
-        return m27630k(str, null);
+    public boolean m27633j(String str) {
+        return m27632k(str, null);
     }
 
-    public boolean m27630k(String str, WorkerParameters.C1065a aVar) {
+    public boolean m27632k(String str, WorkerParameters.C1065a aVar) {
         synchronized (this.f14726T) {
-            if (m27634g(str)) {
-                AbstractC4234j.m28362c().mo28359a(f14718U, String.format("Work %s is already enqueued for processing", str), new Throwable[0]);
+            if (m27636g(str)) {
+                AbstractC4234j.m28364c().mo28361a(f14718U, String.format("Work %s is already enqueued for processing", str), new Throwable[0]);
                 return false;
             }
-            RunnableC4459j a = new RunnableC4459j.C4462c(this.f14728b, this.f14729c, this.f14719M, this, this.f14720N, str).m27562c(this.f14723Q).m27563b(aVar).m27564a();
-            AbstractFutureC1291a<Boolean> b = a.m27578b();
-            b.mo13372a(new RunnableC4453a(this, str, b), this.f14719M.mo12683a());
+            RunnableC4459j a = new RunnableC4459j.C4462c(this.f14728b, this.f14729c, this.f14719M, this, this.f14720N, str).m27564c(this.f14723Q).m27565b(aVar).m27566a();
+            AbstractFutureC1291a<Boolean> b = a.m27580b();
+            b.mo13371a(new RunnableC4453a(this, str, b), this.f14719M.mo12682a());
             this.f14722P.put(str, a);
-            this.f14719M.mo12681c().execute(a);
-            AbstractC4234j.m28362c().mo28359a(f14718U, String.format("%s: processing %s", getClass().getSimpleName(), str), new Throwable[0]);
+            this.f14719M.mo12680c().execute(a);
+            AbstractC4234j.m28364c().mo28361a(f14718U, String.format("%s: processing %s", getClass().getSimpleName(), str), new Throwable[0]);
             return true;
         }
     }
 
-    public boolean m27629l(String str) {
+    public boolean m27631l(String str) {
         boolean e;
         synchronized (this.f14726T) {
             boolean z = true;
-            AbstractC4234j.m28362c().mo28359a(f14718U, String.format("Processor cancelling %s", str), new Throwable[0]);
+            AbstractC4234j.m28364c().mo28361a(f14718U, String.format("Processor cancelling %s", str), new Throwable[0]);
             this.f14724R.add(str);
             RunnableC4459j remove = this.f14721O.remove(str);
             if (remove == null) {
@@ -185,18 +185,18 @@ public class C4452d implements AbstractC4450b, AbstractC7098a {
             if (remove == null) {
                 remove = this.f14722P.remove(str);
             }
-            e = m27636e(str, remove);
+            e = m27638e(str, remove);
             if (z) {
-                m27628m();
+                m27630m();
             }
         }
         return e;
     }
 
-    public final void m27628m() {
+    public final void m27630m() {
         synchronized (this.f14726T) {
             if (!(!this.f14721O.isEmpty())) {
-                this.f14728b.startService(C1097a.m38400e(this.f14728b));
+                this.f14728b.startService(C1097a.m38403e(this.f14728b));
                 PowerManager.WakeLock wakeLock = this.f14727a;
                 if (wakeLock != null) {
                     wakeLock.release();
@@ -206,20 +206,20 @@ public class C4452d implements AbstractC4450b, AbstractC7098a {
         }
     }
 
-    public boolean m27627n(String str) {
+    public boolean m27629n(String str) {
         boolean e;
         synchronized (this.f14726T) {
-            AbstractC4234j.m28362c().mo28359a(f14718U, String.format("Processor stopping foreground work %s", str), new Throwable[0]);
-            e = m27636e(str, this.f14721O.remove(str));
+            AbstractC4234j.m28364c().mo28361a(f14718U, String.format("Processor stopping foreground work %s", str), new Throwable[0]);
+            e = m27638e(str, this.f14721O.remove(str));
         }
         return e;
     }
 
-    public boolean m27626o(String str) {
+    public boolean m27628o(String str) {
         boolean e;
         synchronized (this.f14726T) {
-            AbstractC4234j.m28362c().mo28359a(f14718U, String.format("Processor stopping background work %s", str), new Throwable[0]);
-            e = m27636e(str, this.f14722P.remove(str));
+            AbstractC4234j.m28364c().mo28361a(f14718U, String.format("Processor stopping background work %s", str), new Throwable[0]);
+            e = m27638e(str, this.f14722P.remove(str));
         }
         return e;
     }

@@ -8,16 +8,16 @@ public final class C4983w extends AbstractC4981u<Bundle> {
     }
 
     @Override
-    public final void mo24341a(Bundle bundle) {
+    public final void mo24342a(Bundle bundle) {
         Bundle bundle2 = bundle.getBundle("data");
         if (bundle2 == null) {
             bundle2 = Bundle.EMPTY;
         }
-        m24345c(bundle2);
+        m24346c(bundle2);
     }
 
     @Override
-    public final boolean mo24340d() {
+    public final boolean mo24341d() {
         return false;
     }
 }

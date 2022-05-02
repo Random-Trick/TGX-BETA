@@ -17,11 +17,11 @@ public final class C3600e implements AbstractC3470g {
         this.f12275c = j;
         long j3 = (j2 - j) / cVar.f12268e;
         this.f12276d = j3;
-        this.f12277e = m29891a(j3);
+        this.f12277e = m29893a(j3);
     }
 
-    public final long m29891a(long j) {
-        return C1216l0.m37937y0(j * this.f12274b, 1000000L, this.f12273a.f12266c);
+    public final long m29893a(long j) {
+        return C1216l0.m37940y0(j * this.f12274b, 1000000L, this.f12273a.f12266c);
     }
 
     @Override
@@ -36,14 +36,14 @@ public final class C3600e implements AbstractC3470g {
 
     @Override
     public AbstractC3470g.C3471a mo1123i(long j) {
-        long q = C1216l0.m37954q((this.f12273a.f12266c * j) / (this.f12274b * 1000000), 0L, this.f12276d - 1);
+        long q = C1216l0.m37957q((this.f12273a.f12266c * j) / (this.f12274b * 1000000), 0L, this.f12276d - 1);
         long j2 = this.f12275c + (this.f12273a.f12268e * q);
-        long a = m29891a(q);
+        long a = m29893a(q);
         C8972r rVar = new C8972r(a, j2);
         if (a >= j || q == this.f12276d - 1) {
             return new AbstractC3470g.C3471a(rVar);
         }
         long j3 = q + 1;
-        return new AbstractC3470g.C3471a(rVar, new C8972r(m29891a(j3), this.f12275c + (this.f12273a.f12268e * j3)));
+        return new AbstractC3470g.C3471a(rVar, new C8972r(m29893a(j3), this.f12275c + (this.f12273a.f12268e * j3)));
     }
 }

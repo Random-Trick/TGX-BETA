@@ -21,14 +21,14 @@ public abstract class AbstractC0220k {
     public final C0224o f696a = new C0224o();
 
     @RecentlyNonNull
-    public <T> AbstractC6775l<T> m42071a(@RecentlyNonNull final Executor executor, @RecentlyNonNull final Callable<T> callable, @RecentlyNonNull final AbstractC6753a aVar) {
-        C6378r.m20504m(this.f697b.get() > 0);
-        if (aVar.mo19044a()) {
-            return C6781o.m19051d();
+    public <T> AbstractC6775l<T> m42074a(@RecentlyNonNull final Executor executor, @RecentlyNonNull final Callable<T> callable, @RecentlyNonNull final AbstractC6753a aVar) {
+        C6378r.m20505m(this.f697b.get() > 0);
+        if (aVar.mo19045a()) {
+            return C6781o.m19052d();
         }
         final C6755b bVar = new C6755b();
-        final C6777m mVar = new C6777m(bVar.m19097b());
-        this.f696a.m42062a(new Executor() {
+        final C6777m mVar = new C6777m(bVar.m19098b());
+        this.f696a.m42065a(new Executor() {
             @Override
             public final void execute(Runnable runnable) {
                 Executor executor2 = executor;
@@ -38,10 +38,10 @@ public abstract class AbstractC0220k {
                 try {
                     executor2.execute(runnable);
                 } catch (RuntimeException e) {
-                    if (aVar2.mo19044a()) {
-                        bVar2.m19098a();
+                    if (aVar2.mo19045a()) {
+                        bVar2.m19099a();
                     } else {
-                        mVar2.m19085b(e);
+                        mVar2.m19086b(e);
                     }
                     throw e;
                 }
@@ -49,70 +49,70 @@ public abstract class AbstractC0220k {
         }, new Runnable() {
             @Override
             public final void run() {
-                AbstractC0220k.this.m42068f(aVar, bVar, callable, mVar);
+                AbstractC0220k.this.m42071f(aVar, bVar, callable, mVar);
             }
         });
-        return mVar.m19086a();
+        return mVar.m19087a();
     }
 
-    public abstract void mo29612b();
+    public abstract void mo29614b();
 
-    public void m42070c() {
+    public void m42073c() {
         this.f697b.incrementAndGet();
     }
 
-    public abstract void mo29611d();
+    public abstract void mo29613d();
 
-    public void m42069e(@RecentlyNonNull Executor executor) {
-        C6378r.m20504m(this.f697b.get() > 0);
-        this.f696a.m42062a(executor, new Runnable() {
+    public void m42072e(@RecentlyNonNull Executor executor) {
+        C6378r.m20505m(this.f697b.get() > 0);
+        this.f696a.m42065a(executor, new Runnable() {
             @Override
             public final void run() {
-                AbstractC0220k.this.m42067g();
+                AbstractC0220k.this.m42070g();
             }
         });
     }
 
-    public final void m42068f(@RecentlyNonNull AbstractC6753a aVar, @RecentlyNonNull C6755b bVar, @RecentlyNonNull Callable callable, @RecentlyNonNull C6777m mVar) {
+    public final void m42071f(@RecentlyNonNull AbstractC6753a aVar, @RecentlyNonNull C6755b bVar, @RecentlyNonNull Callable callable, @RecentlyNonNull C6777m mVar) {
         try {
-            if (aVar.mo19044a()) {
-                bVar.m19098a();
+            if (aVar.mo19045a()) {
+                bVar.m19099a();
                 return;
             }
             try {
                 if (!this.f698c.get()) {
-                    mo29612b();
+                    mo29614b();
                     this.f698c.set(true);
                 }
-                if (aVar.mo19044a()) {
-                    bVar.m19098a();
+                if (aVar.mo19045a()) {
+                    bVar.m19099a();
                     return;
                 }
                 Object call = callable.call();
-                if (aVar.mo19044a()) {
-                    bVar.m19098a();
+                if (aVar.mo19045a()) {
+                    bVar.m19099a();
                 } else {
-                    mVar.m19084c(call);
+                    mVar.m19085c(call);
                 }
             } catch (RuntimeException e) {
                 throw new C9987a("Internal error has occurred when executing ML Kit tasks", 13, e);
             }
         } catch (Exception e2) {
-            if (aVar.mo19044a()) {
-                bVar.m19098a();
+            if (aVar.mo19045a()) {
+                bVar.m19099a();
             } else {
-                mVar.m19085b(e2);
+                mVar.m19086b(e2);
             }
         }
     }
 
-    public final void m42067g() {
+    public final void m42070g() {
         int decrementAndGet = this.f697b.decrementAndGet();
-        C6378r.m20504m(decrementAndGet >= 0);
+        C6378r.m20505m(decrementAndGet >= 0);
         if (decrementAndGet == 0) {
-            mo29611d();
+            mo29613d();
             this.f698c.set(false);
         }
-        C1278p.m37801a();
+        C1278p.m37804a();
     }
 }

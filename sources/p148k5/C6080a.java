@@ -7,7 +7,7 @@ import p163l5.C6322b;
 public class C6080a implements AbstractC6155q {
     @Override
     @RecentlyNonNull
-    public final Exception mo21179a(@RecentlyNonNull Status status) {
-        return C6322b.m20672a(status);
+    public final Exception mo21180a(@RecentlyNonNull Status status) {
+        return C6322b.m20673a(status);
     }
 }

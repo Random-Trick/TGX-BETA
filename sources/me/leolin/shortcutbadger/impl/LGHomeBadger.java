@@ -21,6 +21,6 @@ public class LGHomeBadger implements AbstractC0243a {
         intent.putExtra("badge_count", i);
         intent.putExtra("badge_count_package_name", componentName.getPackageName());
         intent.putExtra("badge_count_class_name", componentName.getClassName());
-        C1304a.m37783b(context, intent);
+        C1304a.m37786b(context, intent);
     }
 }

@@ -29,11 +29,11 @@ public class C4812v2 {
         this.f16401c = voiceNote;
     }
 
-    public boolean m25205a(C4812v2 v2Var) {
-        return v2Var != null && m25204b() == v2Var.m25204b() && this.f16399a.m2188w6() == v2Var.f16399a.m2188w6();
+    public boolean m25206a(C4812v2 v2Var) {
+        return v2Var != null && m25205b() == v2Var.m25205b() && this.f16399a.m2188w6() == v2Var.f16399a.m2188w6();
     }
 
-    public int m25204b() {
+    public int m25205b() {
         TdApi.VideoNote videoNote = this.f16403e;
         if (videoNote != null) {
             return C7321e.m16996L0(videoNote.video);
@@ -49,62 +49,62 @@ public class C4812v2 {
         return C7321e.m16996L0(audio.audio);
     }
 
-    public AbstractC4813a m25203c() {
+    public AbstractC4813a m25204c() {
         return this.f16406h;
     }
 
-    public String m25202d() {
+    public String m25203d() {
         TdApi.VideoNote videoNote = this.f16403e;
         if (videoNote != null) {
-            return C4779t2.m25445q1(videoNote.video);
+            return C4779t2.m25446q1(videoNote.video);
         }
         TdApi.VoiceNote voiceNote = this.f16401c;
         if (voiceNote != null) {
-            return C4779t2.m25445q1(voiceNote.voice);
+            return C4779t2.m25446q1(voiceNote.voice);
         }
         TdApi.Audio audio = this.f16402d;
         if (audio == null) {
             return null;
         }
-        return C4779t2.m25445q1(audio.audio);
+        return C4779t2.m25446q1(audio.audio);
     }
 
-    public float m25201e() {
+    public float m25202e() {
         return this.f16404f;
     }
 
-    public boolean m25200f() {
+    public boolean m25201f() {
         return this.f16401c != null;
     }
 
-    public void m25199g(AbstractC4813a aVar) {
+    public void m25200g(AbstractC4813a aVar) {
         this.f16406h = aVar;
     }
 
-    public void m25198h(boolean z) {
+    public void m25199h(boolean z) {
         if (this.f16406h != null) {
-            C1379j0.m37322j0(this, z);
+            C1379j0.m37325j0(this, z);
         }
     }
 
-    public void m25197i(float f, int i) {
+    public void m25198i(float f, int i) {
         if (this.f16404f != f || this.f16405g != i) {
             this.f16404f = f;
             this.f16405g = i;
             if (this.f16406h != null) {
-                C1379j0.m37320k0(this, f, i);
+                C1379j0.m37323k0(this, f, i);
             }
         }
     }
 
-    public void m25196j(byte[] bArr) {
+    public void m25197j(byte[] bArr) {
         TdApi.VoiceNote voiceNote = this.f16401c;
         if (voiceNote != null) {
             voiceNote.waveform = bArr;
         }
     }
 
-    public C10930q6 m25195k() {
+    public C10930q6 m25196k() {
         return this.f16399a;
     }
 
@@ -117,6 +117,6 @@ public class C4812v2 {
     public C4812v2(C10930q6 q6Var, C4695l6 l6Var) {
         this.f16399a = q6Var;
         this.f16400b = null;
-        this.f16401c = new TdApi.VoiceNote(l6Var.m26472c(), null, "audio/ogg", C4779t2.m25677H4(l6Var.m26471d()));
+        this.f16401c = new TdApi.VoiceNote(l6Var.m26473c(), null, "audio/ogg", C4779t2.m25678H4(l6Var.m26472d()));
     }
 }

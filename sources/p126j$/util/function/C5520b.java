@@ -32,49 +32,49 @@ public final class C5520b implements AbstractC5521c, AbstractC5523e, AbstractC55
         this.f18070a = obj;
     }
 
-    public static AbstractC5542x m22501B(Supplier supplier) {
+    public static AbstractC5542x m22502B(Supplier supplier) {
         if (supplier == null) {
             return null;
         }
         return new C5520b(supplier);
     }
 
-    public static C5520b m22491h(DoublePredicate doublePredicate) {
+    public static C5520b m22492h(DoublePredicate doublePredicate) {
         if (doublePredicate == null) {
             return null;
         }
         return new C5520b(doublePredicate);
     }
 
-    public static C5520b m22490j(IntPredicate intPredicate) {
+    public static C5520b m22491j(IntPredicate intPredicate) {
         if (intPredicate == null) {
             return null;
         }
         return new C5520b(intPredicate);
     }
 
-    public static C5520b m22489k(LongPredicate longPredicate) {
+    public static C5520b m22490k(LongPredicate longPredicate) {
         if (longPredicate == null) {
             return null;
         }
         return new C5520b(longPredicate);
     }
 
-    public static AbstractC5521c m22488p(BinaryOperator binaryOperator) {
+    public static AbstractC5521c m22489p(BinaryOperator binaryOperator) {
         if (binaryOperator == null) {
             return null;
         }
         return new C5520b(binaryOperator);
     }
 
-    public static AbstractC5531m m22487t(IntFunction intFunction) {
+    public static AbstractC5531m m22488t(IntFunction intFunction) {
         if (intFunction == null) {
             return null;
         }
         return new C5520b(intFunction);
     }
 
-    public static AbstractC5541w m22486v(Predicate predicate) {
+    public static AbstractC5541w m22487v(Predicate predicate) {
         if (predicate == null) {
             return null;
         }
@@ -82,48 +82,48 @@ public final class C5520b implements AbstractC5521c, AbstractC5523e, AbstractC55
     }
 
     @Override
-    public long mo22327A(int i) {
+    public long mo22328A(int i) {
         return ((IntToLongFunction) this.f18070a).applyAsLong(i);
     }
 
-    public boolean m22500C(double d) {
+    public boolean m22501C(double d) {
         return ((DoublePredicate) this.f18070a).test(d);
     }
 
-    public boolean m22499D(int i) {
+    public boolean m22500D(int i) {
         return ((IntPredicate) this.f18070a).test(i);
     }
 
-    public boolean m22498E(long j) {
+    public boolean m22499E(long j) {
         return ((LongPredicate) this.f18070a).test(j);
     }
 
     @Override
-    public void mo22224a(Object obj, double d) {
+    public void mo22225a(Object obj, double d) {
         ((ObjDoubleConsumer) this.f18070a).accept(obj, d);
     }
 
-    public double m22497b(double d) {
+    public double m22498b(double d) {
         return ((DoubleUnaryOperator) this.f18070a).applyAsDouble(d);
     }
 
-    public double m22496c(int i) {
+    public double m22497c(int i) {
         return ((IntToDoubleFunction) this.f18070a).applyAsDouble(i);
     }
 
-    public double m22495d(long j) {
+    public double m22496d(long j) {
         return ((LongToDoubleFunction) this.f18070a).applyAsDouble(j);
     }
 
-    public int m22494e(double d) {
+    public int m22495e(double d) {
         return ((DoubleToIntFunction) this.f18070a).applyAsInt(d);
     }
 
-    public int m22493f(int i) {
+    public int m22494f(int i) {
         return ((IntUnaryOperator) this.f18070a).applyAsInt(i);
     }
 
-    public int m22492g(long j) {
+    public int m22493g(long j) {
         return ((LongToIntFunction) this.f18070a).applyAsInt(j);
     }
 
@@ -133,62 +133,62 @@ public final class C5520b implements AbstractC5521c, AbstractC5523e, AbstractC55
     }
 
     @Override
-    public int mo22223i(int i, int i2) {
+    public int mo22224i(int i, int i2) {
         return ((IntBinaryOperator) this.f18070a).applyAsInt(i, i2);
     }
 
     @Override
-    public long mo22222l(long j, long j2) {
+    public long mo22223l(long j, long j2) {
         return ((LongBinaryOperator) this.f18070a).applyAsLong(j, j2);
     }
 
     @Override
-    public double mo22231m(double d, double d2) {
+    public double mo22232m(double d, double d2) {
         return ((DoubleBinaryOperator) this.f18070a).applyAsDouble(d, d2);
     }
 
     @Override
-    public boolean mo22210n(Object obj) {
+    public boolean mo22211n(Object obj) {
         return ((Predicate) this.f18070a).test(obj);
     }
 
     @Override
-    public void mo22230o(Object obj, int i) {
+    public void mo22231o(Object obj, int i) {
         ((ObjIntConsumer) this.f18070a).accept(obj, i);
     }
 
     @Override
-    public void mo22229q(Object obj, long j) {
+    public void mo22230q(Object obj, long j) {
         ((ObjLongConsumer) this.f18070a).accept(obj, j);
     }
 
     @Override
-    public long mo22325r(double d) {
+    public long mo22326r(double d) {
         return ((DoubleToLongFunction) this.f18070a).applyAsLong(d);
     }
 
     @Override
-    public Object mo22172u(Object obj, Object obj2) {
+    public Object mo22173u(Object obj, Object obj2) {
         return ((BinaryOperator) this.f18070a).apply(obj, obj2);
     }
 
     @Override
-    public Object mo22178w(int i) {
+    public Object mo22179w(int i) {
         return ((IntFunction) this.f18070a).apply(i);
     }
 
     @Override
-    public Object mo22209x(long j) {
+    public Object mo22210x(long j) {
         return ((LongFunction) this.f18070a).apply(j);
     }
 
     @Override
-    public long mo22323y(long j) {
+    public long mo22324y(long j) {
         return ((LongUnaryOperator) this.f18070a).applyAsLong(j);
     }
 
     @Override
-    public Object mo22322z(double d) {
+    public Object mo22323z(double d) {
         return ((DoubleFunction) this.f18070a).apply(d);
     }
 }

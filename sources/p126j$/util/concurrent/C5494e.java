@@ -27,7 +27,7 @@ final class C5494e extends AbstractC5491b implements Iterator, p126j$.util.Itera
             Object obj = mVar.f18021b;
             Object obj2 = mVar.f18022c;
             this.f18009j = mVar;
-            m22521b();
+            m22522b();
             return new C5501l(obj, obj2, this.f18008i);
         }
         throw new NoSuchElementException();

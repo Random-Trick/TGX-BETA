@@ -12,7 +12,7 @@ public abstract class AbstractC1825m1<K, V> extends AbstractMap<K, V> {
     @CheckForNull
     public transient Collection<V> f6472b;
 
-    public abstract Set<Map.Entry<K, V>> mo35839a();
+    public abstract Set<Map.Entry<K, V>> mo35842a();
 
     @Override
     public final Set<Map.Entry<K, V>> entrySet() {
@@ -20,7 +20,7 @@ public abstract class AbstractC1825m1<K, V> extends AbstractMap<K, V> {
         if (set != null) {
             return set;
         }
-        Set<Map.Entry<K, V>> a = mo35839a();
+        Set<Map.Entry<K, V>> a = mo35842a();
         this.f6471a = a;
         return a;
     }

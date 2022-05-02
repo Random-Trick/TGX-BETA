@@ -6,14 +6,14 @@ import p266t.C8927z;
 import p336y.AbstractC10311w1;
 
 public class C9806a implements AbstractC10311w1 {
-    public final Range<Integer> f32076a;
+    public final Range<Integer> f32079a;
 
     public C9806a(C8927z zVar) {
-        this.f32076a = m6826d((Range[]) zVar.m10952a(CameraCharacteristics.CONTROL_AE_AVAILABLE_TARGET_FPS_RANGES));
+        this.f32079a = m6826d((Range[]) zVar.m10951a(CameraCharacteristics.CONTROL_AE_AVAILABLE_TARGET_FPS_RANGES));
     }
 
     public static boolean m6827c(C8927z zVar) {
-        Integer num = (Integer) zVar.m10952a(CameraCharacteristics.INFO_SUPPORTED_HARDWARE_LEVEL);
+        Integer num = (Integer) zVar.m10951a(CameraCharacteristics.INFO_SUPPORTED_HARDWARE_LEVEL);
         return num != null && num.intValue() == 2;
     }
 
@@ -30,7 +30,7 @@ public class C9806a implements AbstractC10311w1 {
     }
 
     public Range<Integer> m6828b() {
-        return this.f32076a;
+        return this.f32079a;
     }
 
     public final Range<Integer> m6826d(Range<Integer>[] rangeArr) {

@@ -8,13 +8,13 @@ public class C1198g {
         this(AbstractC1192d.f4481a);
     }
 
-    public synchronized void m38080a() {
+    public synchronized void m38083a() {
         while (!this.f4497b) {
             wait();
         }
     }
 
-    public synchronized void m38079b() {
+    public synchronized void m38082b() {
         boolean z = false;
         while (!this.f4497b) {
             try {
@@ -28,18 +28,18 @@ public class C1198g {
         }
     }
 
-    public synchronized boolean m38078c() {
+    public synchronized boolean m38081c() {
         boolean z;
         z = this.f4497b;
         this.f4497b = false;
         return z;
     }
 
-    public synchronized boolean m38077d() {
+    public synchronized boolean m38080d() {
         return this.f4497b;
     }
 
-    public synchronized boolean m38076e() {
+    public synchronized boolean m38079e() {
         if (this.f4497b) {
             return false;
         }

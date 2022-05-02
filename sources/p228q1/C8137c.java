@@ -21,12 +21,12 @@ import java.util.zip.ZipFile;
 import java.util.zip.ZipOutputStream;
 
 public final class C8137c implements Closeable {
-    public final RandomAccessFile f26412M;
-    public final FileChannel f26413N;
-    public final FileLock f26414O;
-    public final File f26415a;
-    public final long f26416b;
-    public final File f26417c;
+    public final RandomAccessFile f26415M;
+    public final FileChannel f26416N;
+    public final FileLock f26417O;
+    public final File f26418a;
+    public final long f26419b;
+    public final File f26420c;
 
     public class C8138a implements FileFilter {
         public C8138a() {
@@ -39,7 +39,7 @@ public final class C8137c implements Closeable {
     }
 
     public static class C8139b extends File {
-        public long f26419a = -1;
+        public long f26422a = -1;
 
         public C8139b(File file, String str) {
             super(file, str);
@@ -49,51 +49,51 @@ public final class C8137c implements Closeable {
     public C8137c(File file, File file2) {
         Throwable e;
         Log.i("MultiDex", "MultiDexExtractor(" + file.getPath() + ", " + file2.getPath() + ")");
-        this.f26415a = file;
-        this.f26417c = file2;
-        this.f26416b = m13385B0(file);
+        this.f26418a = file;
+        this.f26420c = file2;
+        this.f26419b = m13384B0(file);
         File file3 = new File(file2, "MultiDex.lock");
         RandomAccessFile randomAccessFile = new RandomAccessFile(file3, "rw");
-        this.f26412M = randomAccessFile;
+        this.f26415M = randomAccessFile;
         try {
             FileChannel channel = randomAccessFile.getChannel();
-            this.f26413N = channel;
+            this.f26416N = channel;
             try {
                 Log.i("MultiDex", "Blocking on lock " + file3.getPath());
-                this.f26414O = channel.lock();
+                this.f26417O = channel.lock();
                 Log.i("MultiDex", file3.getPath() + " locked");
             } catch (IOException e2) {
                 e = e2;
-                m13378t(this.f26413N);
+                m13377t(this.f26416N);
                 throw e;
             } catch (Error e3) {
                 e = e3;
-                m13378t(this.f26413N);
+                m13377t(this.f26416N);
                 throw e;
             } catch (RuntimeException e4) {
                 e = e4;
-                m13378t(this.f26413N);
+                m13377t(this.f26416N);
                 throw e;
             }
         } catch (IOException | Error | RuntimeException e5) {
-            m13378t(this.f26412M);
+            m13377t(this.f26415M);
             throw e5;
         }
     }
 
-    public static long m13386A0(File file) {
+    public static long m13385A0(File file) {
         long lastModified = file.lastModified();
         return lastModified == -1 ? lastModified - 1 : lastModified;
     }
 
-    public static long m13385B0(File file) {
-        long c = C8140d.m13373c(file);
+    public static long m13384B0(File file) {
+        long c = C8140d.m13372c(file);
         return c == -1 ? c - 1 : c;
     }
 
-    public static boolean m13384C0(Context context, File file, long j, String str) {
-        SharedPreferences z0 = m13376z0(context);
-        if (z0.getLong(str + "timestamp", -1L) == m13386A0(file)) {
+    public static boolean m13383C0(Context context, File file, long j, String str) {
+        SharedPreferences z0 = m13375z0(context);
+        if (z0.getLong(str + "timestamp", -1L) == m13385A0(file)) {
             if (z0.getLong(str + "crc", -1L) == j) {
                 return false;
             }
@@ -101,21 +101,21 @@ public final class C8137c implements Closeable {
         return true;
     }
 
-    public static void m13380G0(Context context, String str, long j, long j2, List<C8139b> list) {
-        SharedPreferences.Editor edit = m13376z0(context).edit();
+    public static void m13379G0(Context context, String str, long j, long j2, List<C8139b> list) {
+        SharedPreferences.Editor edit = m13375z0(context).edit();
         edit.putLong(str + "timestamp", j);
         edit.putLong(str + "crc", j2);
         edit.putInt(str + "dex.number", list.size() + 1);
         int i = 2;
         for (C8139b bVar : list) {
-            edit.putLong(str + "dex.crc." + i, bVar.f26419a);
+            edit.putLong(str + "dex.crc." + i, bVar.f26422a);
             edit.putLong(str + "dex.time." + i, bVar.lastModified());
             i++;
         }
         edit.commit();
     }
 
-    public static void m13378t(Closeable closeable) {
+    public static void m13377t(Closeable closeable) {
         try {
             closeable.close();
         } catch (IOException e) {
@@ -123,7 +123,7 @@ public final class C8137c implements Closeable {
         }
     }
 
-    public static void m13377y0(ZipFile zipFile, ZipEntry zipEntry, File file, String str) {
+    public static void m13376y0(ZipFile zipFile, ZipEntry zipEntry, File file, String str) {
         InputStream inputStream = zipFile.getInputStream(zipEntry);
         File createTempFile = File.createTempFile("tmp-" + str, ".zip", file.getParentFile());
         Log.i("MultiDex", "Extracting " + createTempFile.getPath());
@@ -147,35 +147,35 @@ public final class C8137c implements Closeable {
             }
             throw new IOException("Failed to mark readonly \"" + createTempFile.getAbsolutePath() + "\" (tmp of \"" + file.getAbsolutePath() + "\")");
         } finally {
-            m13378t(inputStream);
+            m13377t(inputStream);
             createTempFile.delete();
         }
     }
 
-    public static SharedPreferences m13376z0(Context context) {
+    public static SharedPreferences m13375z0(Context context) {
         return context.getSharedPreferences("multidex.version", Build.VERSION.SDK_INT < 11 ? 0 : 4);
     }
 
-    public List<? extends File> m13383D0(Context context, String str, boolean z) {
+    public List<? extends File> m13382D0(Context context, String str, boolean z) {
         List<C8139b> list;
         List<C8139b> list2;
-        Log.i("MultiDex", "MultiDexExtractor.load(" + this.f26415a.getPath() + ", " + z + ", " + str + ")");
-        if (this.f26414O.isValid()) {
-            if (z || m13384C0(context, this.f26415a, this.f26416b, str)) {
+        Log.i("MultiDex", "MultiDexExtractor.load(" + this.f26418a.getPath() + ", " + z + ", " + str + ")");
+        if (this.f26417O.isValid()) {
+            if (z || m13383C0(context, this.f26418a, this.f26419b, str)) {
                 if (z) {
                     Log.i("MultiDex", "Forced extraction must be performed.");
                 } else {
                     Log.i("MultiDex", "Detected that extraction must be performed.");
                 }
-                list2 = m13381F0();
-                m13380G0(context, str, m13386A0(this.f26415a), this.f26416b, list2);
+                list2 = m13380F0();
+                m13379G0(context, str, m13385A0(this.f26418a), this.f26419b, list2);
             } else {
                 try {
-                    list = m13382E0(context, str);
+                    list = m13381E0(context, str);
                 } catch (IOException e) {
                     Log.w("MultiDex", "Failed to reload existing extracted secondary dex files, falling back to fresh extraction", e);
-                    list2 = m13381F0();
-                    m13380G0(context, str, m13386A0(this.f26415a), this.f26416b, list2);
+                    list2 = m13380F0();
+                    m13379G0(context, str, m13385A0(this.f26418a), this.f26419b, list2);
                 }
                 Log.i("MultiDex", "load found " + list.size() + " secondary dex files");
                 return list;
@@ -187,53 +187,53 @@ public final class C8137c implements Closeable {
         throw new IllegalStateException("MultiDexExtractor was closed");
     }
 
-    public final List<C8139b> m13382E0(Context context, String str) {
+    public final List<C8139b> m13381E0(Context context, String str) {
         Log.i("MultiDex", "loading existing secondary dex files");
-        String str2 = this.f26415a.getName() + ".classes";
-        SharedPreferences z0 = m13376z0(context);
+        String str2 = this.f26418a.getName() + ".classes";
+        SharedPreferences z0 = m13375z0(context);
         int i = z0.getInt(str + "dex.number", 1);
         ArrayList arrayList = new ArrayList(i + (-1));
         for (int i2 = 2; i2 <= i; i2++) {
-            C8139b bVar = new C8139b(this.f26417c, str2 + i2 + ".zip");
+            C8139b bVar = new C8139b(this.f26420c, str2 + i2 + ".zip");
             if (bVar.isFile()) {
-                bVar.f26419a = m13385B0(bVar);
+                bVar.f26422a = m13384B0(bVar);
                 long j = z0.getLong(str + "dex.crc." + i2, -1L);
                 long j2 = z0.getLong(str + "dex.time." + i2, -1L);
                 long lastModified = bVar.lastModified();
                 if (j2 == lastModified) {
                     str2 = str2;
                     z0 = z0;
-                    if (j == bVar.f26419a) {
+                    if (j == bVar.f26422a) {
                         arrayList.add(bVar);
                     }
                 }
-                throw new IOException("Invalid extracted dex: " + bVar + " (key \"" + str + "\"), expected modification time: " + j2 + ", modification time: " + lastModified + ", expected crc: " + j + ", file crc: " + bVar.f26419a);
+                throw new IOException("Invalid extracted dex: " + bVar + " (key \"" + str + "\"), expected modification time: " + j2 + ", modification time: " + lastModified + ", expected crc: " + j + ", file crc: " + bVar.f26422a);
             }
             throw new IOException("Missing extracted secondary dex file '" + bVar.getPath() + "'");
         }
         return arrayList;
     }
 
-    public final List<C8139b> m13381F0() {
+    public final List<C8139b> m13380F0() {
         boolean z;
-        String str = this.f26415a.getName() + ".classes";
-        m13379m();
+        String str = this.f26418a.getName() + ".classes";
+        m13378m();
         ArrayList arrayList = new ArrayList();
-        ZipFile zipFile = new ZipFile(this.f26415a);
+        ZipFile zipFile = new ZipFile(this.f26418a);
         try {
             ZipEntry entry = zipFile.getEntry("classes2.dex");
             int i = 2;
             while (entry != null) {
-                C8139b bVar = new C8139b(this.f26417c, str + i + ".zip");
+                C8139b bVar = new C8139b(this.f26420c, str + i + ".zip");
                 arrayList.add(bVar);
                 Log.i("MultiDex", "Extraction is needed for file " + bVar);
                 int i2 = 0;
                 boolean z2 = false;
                 while (i2 < 3 && !z2) {
                     i2++;
-                    m13377y0(zipFile, entry, bVar, str);
+                    m13376y0(zipFile, entry, bVar, str);
                     try {
-                        bVar.f26419a = m13385B0(bVar);
+                        bVar.f26422a = m13384B0(bVar);
                         z = true;
                     } catch (IOException e) {
                         Log.w("MultiDex", "Failed to read crc from " + bVar.getAbsolutePath(), e);
@@ -247,7 +247,7 @@ public final class C8137c implements Closeable {
                     sb2.append("': length ");
                     sb2.append(bVar.length());
                     sb2.append(" - crc: ");
-                    sb2.append(bVar.f26419a);
+                    sb2.append(bVar.f26422a);
                     Log.i("MultiDex", sb2.toString());
                     if (!z) {
                         bVar.delete();
@@ -282,15 +282,15 @@ public final class C8137c implements Closeable {
 
     @Override
     public void close() {
-        this.f26414O.release();
-        this.f26413N.close();
-        this.f26412M.close();
+        this.f26417O.release();
+        this.f26416N.close();
+        this.f26415M.close();
     }
 
-    public final void m13379m() {
-        File[] listFiles = this.f26417c.listFiles(new C8138a());
+    public final void m13378m() {
+        File[] listFiles = this.f26420c.listFiles(new C8138a());
         if (listFiles == null) {
-            Log.w("MultiDex", "Failed to list secondary dex dir content (" + this.f26417c.getPath() + ").");
+            Log.w("MultiDex", "Failed to list secondary dex dir content (" + this.f26420c.getPath() + ").");
             return;
         }
         for (File file : listFiles) {

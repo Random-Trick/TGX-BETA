@@ -25,49 +25,49 @@ import p269t2.AbstractC8951b;
 import p345y8.C10454h;
 
 public class C7301b extends C7305e implements AbstractC8278b {
-    public List<C3915a> f23177X = new ArrayList();
-    public UUID f23178Y;
+    public List<C3915a> f23180X = new ArrayList();
+    public UUID f23181Y;
 
     public class C7302a {
-        public AbstractC8951b f23179a;
-        public SampleAuxiliaryInformationSizesBox f23180b;
-        public SampleAuxiliaryInformationOffsetsBox f23181c;
+        public AbstractC8951b f23182a;
+        public SampleAuxiliaryInformationSizesBox f23183b;
+        public SampleAuxiliaryInformationOffsetsBox f23184c;
 
         public C7302a(AbstractC8951b bVar) {
-            this.f23179a = bVar;
+            this.f23182a = bVar;
         }
 
         public SampleAuxiliaryInformationOffsetsBox m17108c() {
-            return this.f23181c;
+            return this.f23184c;
         }
 
         public SampleAuxiliaryInformationSizesBox m17107d() {
-            return this.f23180b;
+            return this.f23183b;
         }
 
         public C7302a m17106e() {
-            List boxes = this.f23179a.getBoxes(SampleAuxiliaryInformationSizesBox.class);
-            List boxes2 = this.f23179a.getBoxes(SampleAuxiliaryInformationOffsetsBox.class);
-            this.f23180b = null;
-            this.f23181c = null;
+            List boxes = this.f23182a.getBoxes(SampleAuxiliaryInformationSizesBox.class);
+            List boxes2 = this.f23182a.getBoxes(SampleAuxiliaryInformationOffsetsBox.class);
+            this.f23183b = null;
+            this.f23184c = null;
             for (int i = 0; i < boxes.size(); i++) {
-                if (!(this.f23180b == null && ((SampleAuxiliaryInformationSizesBox) boxes.get(i)).getAuxInfoType() == null) && !"cenc".equals(((SampleAuxiliaryInformationSizesBox) boxes.get(i)).getAuxInfoType())) {
-                    SampleAuxiliaryInformationSizesBox sampleAuxiliaryInformationSizesBox = this.f23180b;
+                if (!(this.f23183b == null && ((SampleAuxiliaryInformationSizesBox) boxes.get(i)).getAuxInfoType() == null) && !"cenc".equals(((SampleAuxiliaryInformationSizesBox) boxes.get(i)).getAuxInfoType())) {
+                    SampleAuxiliaryInformationSizesBox sampleAuxiliaryInformationSizesBox = this.f23183b;
                     if (sampleAuxiliaryInformationSizesBox == null || sampleAuxiliaryInformationSizesBox.getAuxInfoType() != null || !"cenc".equals(((SampleAuxiliaryInformationSizesBox) boxes.get(i)).getAuxInfoType())) {
                         throw new RuntimeException("Are there two cenc labeled saiz?");
                     }
-                    this.f23180b = (SampleAuxiliaryInformationSizesBox) boxes.get(i);
+                    this.f23183b = (SampleAuxiliaryInformationSizesBox) boxes.get(i);
                 } else {
-                    this.f23180b = (SampleAuxiliaryInformationSizesBox) boxes.get(i);
+                    this.f23183b = (SampleAuxiliaryInformationSizesBox) boxes.get(i);
                 }
-                if (!(this.f23181c == null && ((SampleAuxiliaryInformationOffsetsBox) boxes2.get(i)).getAuxInfoType() == null) && !"cenc".equals(((SampleAuxiliaryInformationOffsetsBox) boxes2.get(i)).getAuxInfoType())) {
-                    SampleAuxiliaryInformationOffsetsBox sampleAuxiliaryInformationOffsetsBox = this.f23181c;
+                if (!(this.f23184c == null && ((SampleAuxiliaryInformationOffsetsBox) boxes2.get(i)).getAuxInfoType() == null) && !"cenc".equals(((SampleAuxiliaryInformationOffsetsBox) boxes2.get(i)).getAuxInfoType())) {
+                    SampleAuxiliaryInformationOffsetsBox sampleAuxiliaryInformationOffsetsBox = this.f23184c;
                     if (sampleAuxiliaryInformationOffsetsBox == null || sampleAuxiliaryInformationOffsetsBox.getAuxInfoType() != null || !"cenc".equals(((SampleAuxiliaryInformationOffsetsBox) boxes2.get(i)).getAuxInfoType())) {
                         throw new RuntimeException("Are there two cenc labeled saio?");
                     }
-                    this.f23181c = (SampleAuxiliaryInformationOffsetsBox) boxes2.get(i);
+                    this.f23184c = (SampleAuxiliaryInformationOffsetsBox) boxes2.get(i);
                 } else {
-                    this.f23181c = (SampleAuxiliaryInformationOffsetsBox) boxes2.get(i);
+                    this.f23184c = (SampleAuxiliaryInformationOffsetsBox) boxes2.get(i);
                 }
             }
             return this;
@@ -92,7 +92,7 @@ public class C7301b extends C7305e implements AbstractC8278b {
                     TrackFragmentBox trackFragmentBox = (TrackFragmentBox) it2.next();
                     if (trackFragmentBox.getTrackFragmentHeaderBox().getTrackId() == trackId) {
                         TrackEncryptionBox trackEncryptionBox = (TrackEncryptionBox) C10454h.m5090c(trackBox, "mdia[0]/minf[0]/stbl[0]/stsd[0]/enc.[0]/sinf[0]/schi[0]/tenc[0]");
-                        this.f23178Y = trackEncryptionBox.getDefault_KID();
+                        this.f23181Y = trackEncryptionBox.getDefault_KID();
                         if (trackFragmentBox.getTrackFragmentHeaderBox().hasBaseDataOffset()) {
                             bVar = ((AbstractC8950a) trackBox.getParent()).getParent();
                             j2 = trackFragmentBox.getTrackFragmentHeaderBox().getBaseDataOffset();
@@ -131,7 +131,7 @@ public class C7301b extends C7305e implements AbstractC8278b {
                                 i2 = i2;
                                 movieFragmentBox = movieFragmentBox;
                                 it2 = it2;
-                                this.f23177X.add(m17111t(trackEncryptionBox.getDefaultIvSize(), byteBuffer, d.getSize(i6)));
+                                this.f23180X.add(m17111t(trackEncryptionBox.getDefaultIvSize(), byteBuffer, d.getSize(i6)));
                             }
                             i3++;
                             i4 = i2;
@@ -142,12 +142,12 @@ public class C7301b extends C7305e implements AbstractC8278b {
             return;
         }
         TrackEncryptionBox trackEncryptionBox2 = (TrackEncryptionBox) C10454h.m5090c(trackBox, "mdia[0]/minf[0]/stbl[0]/stsd[0]/enc.[0]/sinf[0]/schi[0]/tenc[0]");
-        this.f23178Y = trackEncryptionBox2.getDefault_KID();
+        this.f23181Y = trackEncryptionBox2.getDefault_KID();
         ChunkOffsetBox chunkOffsetBox = (ChunkOffsetBox) C10454h.m5090c(trackBox, "mdia[0]/minf[0]/stbl[0]/stco[0]");
         long[] blowup = trackBox.getSampleTableBox().getSampleToChunkBox().blowup((chunkOffsetBox == null ? (ChunkOffsetBox) C10454h.m5090c(trackBox, "mdia[0]/minf[0]/stbl[0]/co64[0]") : chunkOffsetBox).getChunkOffsets().length);
         C7302a e2 = new C7302a((AbstractC8951b) C10454h.m5090c(trackBox, "mdia[0]/minf[0]/stbl[0]")).m17106e();
-        SampleAuxiliaryInformationOffsetsBox sampleAuxiliaryInformationOffsetsBox = e2.f23181c;
-        SampleAuxiliaryInformationSizesBox sampleAuxiliaryInformationSizesBox = e2.f23180b;
+        SampleAuxiliaryInformationOffsetsBox sampleAuxiliaryInformationOffsetsBox = e2.f23184c;
+        SampleAuxiliaryInformationSizesBox sampleAuxiliaryInformationSizesBox = e2.f23183b;
         AbstractC8951b parent = ((MovieBox) trackBox.getParent()).getParent();
         if (sampleAuxiliaryInformationOffsetsBox.getOffsets().length == 1) {
             long j5 = sampleAuxiliaryInformationOffsetsBox.getOffsets()[0];
@@ -161,7 +161,7 @@ public class C7301b extends C7305e implements AbstractC8278b {
             }
             ByteBuffer byteBuffer2 = parent.getByteBuffer(j5, i);
             for (int i8 = 0; i8 < sampleAuxiliaryInformationSizesBox.getSampleCount(); i8++) {
-                this.f23177X.add(m17111t(trackEncryptionBox2.getDefaultIvSize(), byteBuffer2, sampleAuxiliaryInformationSizesBox.getSize(i8)));
+                this.f23180X.add(m17111t(trackEncryptionBox2.getDefaultIvSize(), byteBuffer2, sampleAuxiliaryInformationSizesBox.getSize(i8)));
             }
         } else if (sampleAuxiliaryInformationOffsetsBox.getOffsets().length == blowup.length) {
             int i9 = 0;
@@ -177,7 +177,7 @@ public class C7301b extends C7305e implements AbstractC8278b {
                 }
                 ByteBuffer byteBuffer3 = parent.getByteBuffer(j6, j);
                 for (int i12 = 0; i12 < blowup[i10]; i12++) {
-                    this.f23177X.add(m17111t(trackEncryptionBox2.getDefaultIvSize(), byteBuffer3, sampleAuxiliaryInformationSizesBox.getSize(i9 + i12)));
+                    this.f23180X.add(m17111t(trackEncryptionBox2.getDefaultIvSize(), byteBuffer3, sampleAuxiliaryInformationSizesBox.getSize(i9 + i12)));
                 }
                 i9 = (int) (i9 + blowup[i10]);
             }
@@ -192,12 +192,12 @@ public class C7301b extends C7305e implements AbstractC8278b {
     }
 
     @Override
-    public List<C3915a> mo12963c0() {
-        return this.f23177X;
+    public List<C3915a> mo12962c0() {
+        return this.f23180X;
     }
 
     @Override
-    public boolean mo12962q0() {
+    public boolean mo12961q0() {
         return false;
     }
 
@@ -208,14 +208,14 @@ public class C7301b extends C7305e implements AbstractC8278b {
             aVar.f13219a = bArr;
             byteBuffer.get(bArr);
             if (j > i) {
-                aVar.f13220b = new C3915a.AbstractC3925j[C8632e.m11867i(byteBuffer)];
+                aVar.f13220b = new C3915a.AbstractC3925j[C8632e.m11866i(byteBuffer)];
                 int i2 = 0;
                 while (true) {
                     C3915a.AbstractC3925j[] jVarArr = aVar.f13220b;
                     if (i2 >= jVarArr.length) {
                         break;
                     }
-                    jVarArr[i2] = aVar.m29599a(C8632e.m11867i(byteBuffer), C8632e.m11865k(byteBuffer));
+                    jVarArr[i2] = aVar.m29601a(C8632e.m11866i(byteBuffer), C8632e.m11864k(byteBuffer));
                     i2++;
                 }
             }

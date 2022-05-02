@@ -9,22 +9,22 @@ public class C6184x extends AbstractC5867f {
     }
 
     @Override
-    public final void mo21089d() {
+    public final void mo21090d() {
         throw new UnsupportedOperationException(this.f19583b);
     }
 
     @Override
-    public final void mo21088e() {
+    public final void mo21089e() {
         throw new UnsupportedOperationException(this.f19583b);
     }
 
     @Override
-    public final void mo21087k(AbstractC5867f.AbstractC5870c cVar) {
+    public final void mo21088k(AbstractC5867f.AbstractC5870c cVar) {
         throw new UnsupportedOperationException(this.f19583b);
     }
 
     @Override
-    public final void mo21086l(AbstractC5867f.AbstractC5870c cVar) {
+    public final void mo21087l(AbstractC5867f.AbstractC5870c cVar) {
         throw new UnsupportedOperationException(this.f19583b);
     }
 }

@@ -10,27 +10,27 @@ public class C5322e {
         this.f17499a = new long[i];
     }
 
-    public void m23275a(long j) {
-        m23271e(this.f17500b + 1, 10);
+    public void m23276a(long j) {
+        m23272e(this.f17500b + 1, 10);
         long[] jArr = this.f17499a;
         int i = this.f17500b;
         this.f17500b = i + 1;
         jArr[i] = j;
     }
 
-    public void m23274b(long[] jArr) {
+    public void m23275b(long[] jArr) {
         if (jArr.length > 0) {
-            m23271e(this.f17500b + jArr.length, 10);
+            m23272e(this.f17500b + jArr.length, 10);
             System.arraycopy(jArr, 0, this.f17499a, this.f17500b, jArr.length);
             this.f17500b += jArr.length;
         }
     }
 
-    public void m23273c() {
+    public void m23274c() {
         this.f17500b = 0;
     }
 
-    public boolean m23272d(long j) {
+    public boolean m23273d(long j) {
         long[] jArr;
         int i = 0;
         for (long j2 : this.f17499a) {
@@ -44,7 +44,7 @@ public class C5322e {
         return false;
     }
 
-    public void m23271e(int i, int i2) {
+    public void m23272e(int i, int i2) {
         long[] jArr = this.f17499a;
         if (jArr.length < i) {
             long[] jArr2 = new long[Math.max(i, jArr.length + i2)];
@@ -54,16 +54,16 @@ public class C5322e {
         }
     }
 
-    public long m23270f(int i) {
+    public long m23271f(int i) {
         return this.f17499a[i];
     }
 
-    public long[] m23269g() {
-        m23263m();
+    public long[] m23270g() {
+        m23264m();
         return this.f17499a;
     }
 
-    public int m23268h(long j) {
+    public int m23269h(long j) {
         for (int i = 0; i < this.f17500b; i++) {
             if (this.f17499a[i] == j) {
                 return i;
@@ -72,20 +72,20 @@ public class C5322e {
         return -1;
     }
 
-    public boolean m23267i() {
+    public boolean m23268i() {
         return this.f17500b == 0;
     }
 
-    public boolean m23266j(long j) {
-        int h = m23268h(j);
+    public boolean m23267j(long j) {
+        int h = m23269h(j);
         if (h == -1) {
             return false;
         }
-        m23265k(h);
+        m23266k(h);
         return true;
     }
 
-    public void m23265k(int i) {
+    public void m23266k(int i) {
         int i2;
         if (i < 0 || i >= (i2 = this.f17500b)) {
             throw new IndexOutOfBoundsException();
@@ -98,11 +98,11 @@ public class C5322e {
         this.f17500b--;
     }
 
-    public int m23264l() {
+    public int m23265l() {
         return this.f17500b;
     }
 
-    public final void m23263m() {
+    public final void m23264m() {
         int i = this.f17500b;
         long[] jArr = this.f17499a;
         if (i < jArr.length) {
@@ -113,7 +113,7 @@ public class C5322e {
     }
 
     public String toString() {
-        return C5062b.m24173I(this.f17499a, this.f17500b);
+        return C5062b.m24174I(this.f17499a, this.f17500b);
     }
 
     public C5322e(long[] jArr) {

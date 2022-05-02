@@ -14,120 +14,120 @@ import p181mb.C6810a;
 import p181mb.C6815f;
 
 public class C8434g {
-    public static C6815f<Paint> f27368y;
-    public final int f27369a;
-    public final int f27370b;
-    public final int f27371c;
-    public final float f27372d;
-    public final float f27373e;
-    public int f27374f;
-    public float f27375g;
-    public float f27376h;
-    public float f27377i;
-    public float f27378j;
-    public float f27379k;
-    public C8427b f27380l;
-    public ArrayList<AbstractC8435a> f27381m;
-    public int f27382n;
-    public float f27383o;
-    public float f27384p;
-    public float f27385q;
-    public float f27386r;
-    public float f27387s;
-    public float f27388t;
-    public float f27389u;
-    public float f27390v;
-    public float f27391w;
-    public float f27392x;
+    public static C6815f<Paint> f27371y;
+    public final int f27372a;
+    public final int f27373b;
+    public final int f27374c;
+    public final float f27375d;
+    public final float f27376e;
+    public int f27377f;
+    public float f27378g;
+    public float f27379h;
+    public float f27380i;
+    public float f27381j;
+    public float f27382k;
+    public C8427b f27383l;
+    public ArrayList<AbstractC8435a> f27384m;
+    public int f27385n;
+    public float f27386o;
+    public float f27387p;
+    public float f27388q;
+    public float f27389r;
+    public float f27390s;
+    public float f27391t;
+    public float f27392u;
+    public float f27393v;
+    public float f27394w;
+    public float f27395x;
 
     public interface AbstractC8435a {
-        void mo12448o(C8434g gVar, boolean z);
+        void mo12447o(C8434g gVar, boolean z);
     }
 
     public C8434g(int i) {
         this(i, 0, 0, 0.0f, 0.0f);
     }
 
-    public static boolean m12462m(int i) {
+    public static boolean m12461m(int i) {
         return i == 2;
     }
 
-    public static boolean m12461n(int i) {
+    public static boolean m12460n(int i) {
         return i != 3;
     }
 
-    public static Paint m12460o() {
+    public static Paint m12459o() {
         Paint paint = new Paint(5);
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeCap(Paint.Cap.ROUND);
         return paint;
     }
 
-    public static C8434g m12458q(RandomAccessFile randomAccessFile) {
+    public static C8434g m12457q(RandomAccessFile randomAccessFile) {
         int read = randomAccessFile.read();
-        int t = C6810a.m18919t(randomAccessFile);
-        int t2 = C6810a.m18919t(randomAccessFile);
+        int t = C6810a.m18920t(randomAccessFile);
+        int t2 = C6810a.m18920t(randomAccessFile);
         float readFloat = randomAccessFile.readFloat();
-        float readFloat2 = m12462m(read) ? randomAccessFile.readFloat() : 0.0f;
+        float readFloat2 = m12461m(read) ? randomAccessFile.readFloat() : 0.0f;
         int readInt = randomAccessFile.readInt();
-        float readFloat3 = m12461n(read) ? randomAccessFile.readFloat() : 0.0f;
+        float readFloat3 = m12460n(read) ? randomAccessFile.readFloat() : 0.0f;
         C8434g gVar = new C8434g(read, t, t2, readFloat, readFloat2);
-        gVar.m12450y(readInt, readFloat3);
-        m12456s(randomAccessFile, gVar);
+        gVar.m12449y(readInt, readFloat3);
+        m12455s(randomAccessFile, gVar);
         return gVar;
     }
 
-    public static C8434g m12457r(C6810a aVar) {
-        byte e = aVar.m18934e();
-        int s = aVar.m18920s();
-        int s2 = aVar.m18920s();
-        float k = aVar.m18928k();
-        float k2 = m12462m(e) ? aVar.m18928k() : 0.0f;
-        int m = aVar.m18926m();
-        float k3 = m12461n(e) ? aVar.m18928k() : 0.0f;
+    public static C8434g m12456r(C6810a aVar) {
+        byte e = aVar.m18935e();
+        int s = aVar.m18921s();
+        int s2 = aVar.m18921s();
+        float k = aVar.m18929k();
+        float k2 = m12461m(e) ? aVar.m18929k() : 0.0f;
+        int m = aVar.m18927m();
+        float k3 = m12460n(e) ? aVar.m18929k() : 0.0f;
         C8434g gVar = new C8434g(e, s, s2, k, k2);
-        gVar.m12450y(m, k3);
-        m12455t(aVar, gVar);
+        gVar.m12449y(m, k3);
+        m12454t(aVar, gVar);
         return gVar;
     }
 
-    public static void m12456s(RandomAccessFile randomAccessFile, C8434g gVar) {
-        int i = gVar.f27369a;
+    public static void m12455s(RandomAccessFile randomAccessFile, C8434g gVar) {
+        int i = gVar.f27372a;
         if (i == 0) {
-            gVar.f27380l = new C8427b(gVar, randomAccessFile);
+            gVar.f27383l = new C8427b(gVar, randomAccessFile);
         } else if (i == 1 || i == 2) {
-            gVar.f27376h = randomAccessFile.readFloat();
-            gVar.f27377i = randomAccessFile.readFloat();
-            gVar.f27378j = randomAccessFile.readFloat();
-            gVar.f27379k = randomAccessFile.readFloat();
+            gVar.f27379h = randomAccessFile.readFloat();
+            gVar.f27380i = randomAccessFile.readFloat();
+            gVar.f27381j = randomAccessFile.readFloat();
+            gVar.f27382k = randomAccessFile.readFloat();
         }
     }
 
-    public static void m12455t(C6810a aVar, C8434g gVar) {
-        int i = gVar.f27369a;
+    public static void m12454t(C6810a aVar, C8434g gVar) {
+        int i = gVar.f27372a;
         if (i == 0) {
-            gVar.f27380l = new C8427b(gVar, aVar);
+            gVar.f27383l = new C8427b(gVar, aVar);
         } else if (i == 1 || i == 2) {
-            gVar.f27376h = aVar.m18928k();
-            gVar.f27377i = aVar.m18928k();
-            gVar.f27378j = aVar.m18928k();
-            gVar.f27379k = aVar.m18928k();
+            gVar.f27379h = aVar.m18929k();
+            gVar.f27380i = aVar.m18929k();
+            gVar.f27381j = aVar.m18929k();
+            gVar.f27382k = aVar.m18929k();
         }
     }
 
-    public final void m12475A(MotionEvent motionEvent, boolean z, boolean z2) {
-        m12473b(motionEvent, z, z2);
-        m12464k(!z);
+    public final void m12474A(MotionEvent motionEvent, boolean z, boolean z2) {
+        m12472b(motionEvent, z, z2);
+        m12463k(!z);
     }
 
-    public void m12474a(AbstractC8435a aVar) {
-        if (this.f27381m == null) {
-            this.f27381m = new ArrayList<>();
+    public void m12473a(AbstractC8435a aVar) {
+        if (this.f27384m == null) {
+            this.f27384m = new ArrayList<>();
         }
-        this.f27381m.add(aVar);
+        this.f27384m.add(aVar);
     }
 
-    public final void m12473b(MotionEvent motionEvent, boolean z, boolean z2) {
+    public final void m12472b(MotionEvent motionEvent, boolean z, boolean z2) {
         float f;
         float f2;
         int i;
@@ -148,54 +148,54 @@ public class C8434g {
                 f = motionEvent.getY();
             }
             if (z) {
-                if (this.f27382n == 0) {
-                    C8427b bVar = this.f27380l;
-                    this.f27391w = f2;
-                    this.f27392x = f;
-                    bVar.m12511j(f2, f);
+                if (this.f27385n == 0) {
+                    C8427b bVar = this.f27383l;
+                    this.f27394w = f2;
+                    this.f27395x = f;
+                    bVar.m12510j(f2, f);
                 }
-                float f4 = this.f27391w;
-                if (f4 == f2 && this.f27392x == f) {
-                    this.f27380l.m12512i(f2 + 1.0f, f);
+                float f4 = this.f27394w;
+                if (f4 == f2 && this.f27395x == f) {
+                    this.f27383l.m12511i(f2 + 1.0f, f);
                     return;
                 } else {
-                    this.f27380l.m12510k(f4, this.f27392x, f2, f);
+                    this.f27383l.m12509k(f4, this.f27395x, f2, f);
                     return;
                 }
             } else {
-                if (this.f27391w == f2 && this.f27392x == f && this.f27382n > 0) {
+                if (this.f27394w == f2 && this.f27395x == f && this.f27385n > 0) {
                     i = i3;
                 } else {
-                    this.f27391w = f2;
-                    this.f27392x = f;
-                    int i4 = this.f27382n;
-                    this.f27382n = i4 + 1;
+                    this.f27394w = f2;
+                    this.f27395x = f;
+                    int i4 = this.f27385n;
+                    this.f27385n = i4 + 1;
                     float f5 = 0.0f;
                     if (i4 == 0) {
-                        this.f27380l.m12511j(f2, f);
+                        this.f27383l.m12510j(f2, f);
                         f3 = 0.0f;
                     } else {
-                        f5 = (f2 - this.f27387s) / 3.0f;
-                        f3 = (f - this.f27388t) / 3.0f;
+                        f5 = (f2 - this.f27390s) / 3.0f;
+                        f3 = (f - this.f27391t) / 3.0f;
                     }
                     if (i4 > 3) {
-                        float f6 = this.f27387s;
-                        float f7 = this.f27388t;
-                        float f8 = this.f27389u;
-                        float f9 = this.f27390v;
+                        float f6 = this.f27390s;
+                        float f7 = this.f27391t;
+                        float f8 = this.f27392u;
+                        float f9 = this.f27393v;
                         i = i3;
-                        this.f27380l.m12516e(this.f27383o + this.f27385q, this.f27386r + this.f27384p, f6 - f8, f7 - f9, f6, f7);
+                        this.f27383l.m12515e(this.f27386o + this.f27388q, this.f27389r + this.f27387p, f6 - f8, f7 - f9, f6, f7);
                     } else {
                         i = i3;
                     }
-                    this.f27383o = this.f27387s;
-                    this.f27384p = this.f27388t;
-                    this.f27385q = this.f27389u;
-                    this.f27386r = this.f27390v;
-                    this.f27387s = f2;
-                    this.f27388t = f;
-                    this.f27389u = f5;
-                    this.f27390v = f3;
+                    this.f27386o = this.f27390s;
+                    this.f27387p = this.f27391t;
+                    this.f27388q = this.f27392u;
+                    this.f27389r = this.f27393v;
+                    this.f27390s = f2;
+                    this.f27391t = f;
+                    this.f27392u = f5;
+                    this.f27393v = f3;
                 }
                 i2++;
                 motionEvent2 = motionEvent;
@@ -204,38 +204,38 @@ public class C8434g {
         }
     }
 
-    public boolean m12472c(C8434g gVar) {
+    public boolean m12471c(C8434g gVar) {
         int i;
         int i2;
         int i3;
         if (gVar != null) {
-            int i4 = gVar.f27369a;
-            int i5 = this.f27369a;
-            if (i4 == i5 && gVar.f27374f == this.f27374f && ((!m12461n(i5) || gVar.f27375g == this.f27375g) && (((i = this.f27369a) == 3 || (((i2 = gVar.f27370b) == (i3 = this.f27370b) && gVar.f27371c == this.f27371c) || i2 / gVar.f27371c == i3 / this.f27371c)) && ((!m12462m(i) || gVar.f27373e == this.f27373e) && gVar.f27376h == this.f27376h && gVar.f27377i == this.f27377i && gVar.f27378j == this.f27378j && gVar.f27379k == this.f27379k && (this.f27369a != 0 || gVar.f27380l.m12517d(this.f27380l)))))) {
+            int i4 = gVar.f27372a;
+            int i5 = this.f27372a;
+            if (i4 == i5 && gVar.f27377f == this.f27377f && ((!m12460n(i5) || gVar.f27378g == this.f27378g) && (((i = this.f27372a) == 3 || (((i2 = gVar.f27373b) == (i3 = this.f27373b) && gVar.f27374c == this.f27374c) || i2 / gVar.f27374c == i3 / this.f27374c)) && ((!m12461m(i) || gVar.f27376e == this.f27376e) && gVar.f27379h == this.f27379h && gVar.f27380i == this.f27380i && gVar.f27381j == this.f27381j && gVar.f27382k == this.f27382k && (this.f27372a != 0 || gVar.f27383l.m12516d(this.f27383l)))))) {
                 return true;
             }
         }
         return false;
     }
 
-    public boolean m12471d(MotionEvent motionEvent, boolean z) {
-        int i = this.f27369a;
+    public boolean m12470d(MotionEvent motionEvent, boolean z) {
+        int i = this.f27372a;
         if (i != 0) {
-            return !(i == 1 || i == 2) || !z || (this.f27376h == this.f27377i && this.f27378j == this.f27379k);
+            return !(i == 1 || i == 2) || !z || (this.f27379h == this.f27380i && this.f27381j == this.f27382k);
         }
-        if (z && this.f27380l.m12515f() <= 3) {
+        if (z && this.f27383l.m12514f() <= 3) {
             return false;
         }
-        m12475A(motionEvent, true, true);
-        this.f27380l.m12506o();
+        m12474A(motionEvent, true, true);
+        this.f27383l.m12505o();
         return true;
     }
 
-    public final int m12470e(float f, float f2, float f3) {
-        return (int) (C1357a0.m37539k(f) * (f2 / this.f27370b) * this.f27372d);
+    public final int m12469e(float f, float f2, float f3) {
+        return (int) (C1357a0.m37542k(f) * (f2 / this.f27373b) * this.f27375d);
     }
 
-    public void m12469f(Canvas canvas, int i, int i2, int i3, int i4) {
+    public void m12468f(Canvas canvas, int i, int i2, int i3, int i4) {
         int i5;
         Paint paint;
         float f;
@@ -246,8 +246,8 @@ public class C8434g {
         float f3 = i;
         double d = f3;
         double d2 = i6;
-        float ceil = (float) (Math.ceil(this.f27376h * d2) + d);
-        float floor = (float) (d + Math.floor(d2 * this.f27377i));
+        float ceil = (float) (Math.ceil(this.f27379h * d2) + d);
+        float floor = (float) (d + Math.floor(d2 * this.f27380i));
         if (ceil == floor) {
             if (floor >= i6) {
                 ceil -= 1.0f;
@@ -258,8 +258,8 @@ public class C8434g {
         float f4 = i2;
         double d3 = f4;
         double d4 = i7;
-        float ceil2 = (float) (Math.ceil(this.f27378j * d4) + d3);
-        float floor2 = (float) (d3 + Math.floor(d4 * this.f27379k));
+        float ceil2 = (float) (Math.ceil(this.f27381j * d4) + d3);
+        float floor2 = (float) (d3 + Math.floor(d4 * this.f27382k));
         if (ceil2 == floor2) {
             if (floor2 >= i7) {
                 ceil2 -= 1.0f;
@@ -275,20 +275,20 @@ public class C8434g {
         float max2 = Math.max(f5, f6);
         float f7 = i6;
         float f8 = i7;
-        float e = m12470e(this.f27375g, f7, f8);
-        Paint a = f27368y.m18901a();
+        float e = m12469e(this.f27378g, f7, f8);
+        Paint a = f27371y.m18902a();
         if (a == null) {
-            C6815f<Paint> fVar = f27368y;
+            C6815f<Paint> fVar = f27371y;
             i5 = i7;
-            paint = m12460o();
-            fVar.m18900b(paint);
+            paint = m12459o();
+            fVar.m18901b(paint);
         } else {
             i5 = i7;
             paint = a;
         }
         paint.setStrokeWidth(e);
-        paint.setColor(this.f27374f);
-        int i8 = this.f27369a;
+        paint.setColor(this.f27377f);
+        int i8 = this.f27372a;
         if (i8 != 0) {
             boolean z = true;
             if (i8 == 1) {
@@ -301,8 +301,8 @@ public class C8434g {
                 paint2.setStyle(Paint.Style.STROKE);
                 float f10 = (ceil - floor) / 2.0f;
                 float f11 = (f5 - f6) / 2.0f;
-                float e2 = m12470e(24.0f, f7, f8);
-                float abs = Math.abs(C5069h.m24085h(0.0f, 0.0f, f10, f11));
+                float e2 = m12469e(24.0f, f7, f8);
+                float abs = Math.abs(C5069h.m24086h(0.0f, 0.0f, f10, f11));
                 if (abs > e2) {
                     float f12 = e2 / abs;
                     f10 *= f12;
@@ -345,15 +345,15 @@ public class C8434g {
                 canvas.restore();
             } else if (i8 == 2) {
                 Paint paint3 = paint;
-                RectF a0 = C1410y.m37050a0();
+                RectF a0 = C1410y.m37053a0();
                 a0.set(min, min2, max, max2);
-                if (this.f27373e == 0.0f) {
+                if (this.f27376e == 0.0f) {
                     z = false;
                 }
                 if (z) {
                     canvas.save();
                     canvas2 = canvas;
-                    canvas2.rotate(-this.f27373e, min, min2);
+                    canvas2.rotate(-this.f27376e, min, min2);
                 } else {
                     canvas2 = canvas;
                 }
@@ -372,160 +372,160 @@ public class C8434g {
             if (!(i == 0 && i2 == 0)) {
                 canvas.translate(f3, f4);
             }
-            canvas.drawPath(this.f27380l.m12513h(i6, i5), paint);
+            canvas.drawPath(this.f27383l.m12512h(i6, i5), paint);
             canvas.restore();
         }
     }
 
-    public int m12468g() {
+    public int m12467g() {
         int i = 4;
-        int w = C6810a.m18916w(this.f27370b) + 1 + C6810a.m18916w(this.f27371c) + 4 + (m12462m(this.f27369a) ? 4 : 0) + 4;
-        if (!m12461n(this.f27369a)) {
+        int w = C6810a.m18917w(this.f27373b) + 1 + C6810a.m18917w(this.f27374c) + 4 + (m12461m(this.f27372a) ? 4 : 0) + 4;
+        if (!m12460n(this.f27372a)) {
             i = 0;
         }
-        return w + i + m12467h();
+        return w + i + m12466h();
     }
 
-    public final int m12467h() {
-        int i = this.f27369a;
+    public final int m12466h() {
+        int i = this.f27372a;
         if (i != 0) {
             return (i == 1 || i == 2) ? 32 : 0;
         }
-        return this.f27380l.m12514g();
+        return this.f27383l.m12513g();
     }
 
-    public float m12466i(float f) {
-        return f / this.f27370b;
+    public float m12465i(float f) {
+        return f / this.f27373b;
     }
 
-    public float m12465j(float f) {
-        return f / this.f27371c;
+    public float m12464j(float f) {
+        return f / this.f27374c;
     }
 
-    public final void m12464k(boolean z) {
-        ArrayList<AbstractC8435a> arrayList = this.f27381m;
+    public final void m12463k(boolean z) {
+        ArrayList<AbstractC8435a> arrayList = this.f27384m;
         if (arrayList != null) {
             Iterator<AbstractC8435a> it = arrayList.iterator();
             while (it.hasNext()) {
-                it.next().mo12448o(this, z);
+                it.next().mo12447o(this, z);
             }
         }
     }
 
-    public void m12463l(MotionEvent motionEvent, boolean z) {
-        float i = m12466i(motionEvent.getX());
-        float j = m12465j(motionEvent.getY());
-        int i2 = this.f27369a;
+    public void m12462l(MotionEvent motionEvent, boolean z) {
+        float i = m12465i(motionEvent.getX());
+        float j = m12464j(motionEvent.getY());
+        int i2 = this.f27372a;
         if (i2 == 0) {
-            m12475A(motionEvent, false, z);
+            m12474A(motionEvent, false, z);
         } else if (i2 != 1 && i2 != 2) {
         } else {
-            if (this.f27377i != i || this.f27379k != j) {
-                this.f27377i = i;
-                this.f27379k = j;
-                m12464k(true);
+            if (this.f27380i != i || this.f27382k != j) {
+                this.f27380i = i;
+                this.f27382k = j;
+                m12463k(true);
             }
         }
     }
 
-    public void m12459p(AbstractC8435a aVar) {
-        ArrayList<AbstractC8435a> arrayList = this.f27381m;
+    public void m12458p(AbstractC8435a aVar) {
+        ArrayList<AbstractC8435a> arrayList = this.f27384m;
         if (arrayList != null) {
             arrayList.remove(aVar);
         }
     }
 
-    public void m12454u(RandomAccessFile randomAccessFile) {
-        randomAccessFile.writeByte((byte) this.f27369a);
-        C6810a.m18939N(randomAccessFile, this.f27370b);
-        C6810a.m18939N(randomAccessFile, this.f27371c);
-        randomAccessFile.writeFloat(this.f27372d);
-        if (m12462m(this.f27369a)) {
-            randomAccessFile.writeFloat(this.f27373e);
+    public void m12453u(RandomAccessFile randomAccessFile) {
+        randomAccessFile.writeByte((byte) this.f27372a);
+        C6810a.m18940N(randomAccessFile, this.f27373b);
+        C6810a.m18940N(randomAccessFile, this.f27374c);
+        randomAccessFile.writeFloat(this.f27375d);
+        if (m12461m(this.f27372a)) {
+            randomAccessFile.writeFloat(this.f27376e);
         }
-        randomAccessFile.writeInt(this.f27374f);
-        if (m12461n(this.f27369a)) {
-            randomAccessFile.writeFloat(this.f27375g);
+        randomAccessFile.writeInt(this.f27377f);
+        if (m12460n(this.f27372a)) {
+            randomAccessFile.writeFloat(this.f27378g);
         }
-        m12452w(randomAccessFile);
+        m12451w(randomAccessFile);
     }
 
-    public void m12453v(C6810a aVar) {
-        aVar.m18951B((byte) this.f27369a);
-        aVar.m18940M(this.f27370b);
-        aVar.m18940M(this.f27371c);
-        aVar.m18947F(this.f27372d);
-        if (m12462m(this.f27369a)) {
-            aVar.m18947F(this.f27373e);
+    public void m12452v(C6810a aVar) {
+        aVar.m18952B((byte) this.f27372a);
+        aVar.m18941M(this.f27373b);
+        aVar.m18941M(this.f27374c);
+        aVar.m18948F(this.f27375d);
+        if (m12461m(this.f27372a)) {
+            aVar.m18948F(this.f27376e);
         }
-        aVar.m18945H(this.f27374f);
-        if (m12461n(this.f27369a)) {
-            aVar.m18947F(this.f27375g);
+        aVar.m18946H(this.f27377f);
+        if (m12460n(this.f27372a)) {
+            aVar.m18948F(this.f27378g);
         }
-        m12451x(aVar);
+        m12450x(aVar);
     }
 
-    public final void m12452w(RandomAccessFile randomAccessFile) {
-        int i = this.f27369a;
+    public final void m12451w(RandomAccessFile randomAccessFile) {
+        int i = this.f27372a;
         if (i == 0) {
-            this.f27380l.m12508m(randomAccessFile);
+            this.f27383l.m12507m(randomAccessFile);
         } else if (i == 1 || i == 2) {
-            randomAccessFile.writeFloat(this.f27376h);
-            randomAccessFile.writeFloat(this.f27377i);
-            randomAccessFile.writeFloat(this.f27378j);
-            randomAccessFile.writeFloat(this.f27379k);
+            randomAccessFile.writeFloat(this.f27379h);
+            randomAccessFile.writeFloat(this.f27380i);
+            randomAccessFile.writeFloat(this.f27381j);
+            randomAccessFile.writeFloat(this.f27382k);
         }
     }
 
-    public final void m12451x(C6810a aVar) {
-        int i = this.f27369a;
+    public final void m12450x(C6810a aVar) {
+        int i = this.f27372a;
         if (i == 0) {
-            this.f27380l.m12507n(aVar);
+            this.f27383l.m12506n(aVar);
         } else if (i == 1 || i == 2) {
-            aVar.m18947F(this.f27376h);
-            aVar.m18947F(this.f27377i);
-            aVar.m18947F(this.f27378j);
-            aVar.m18947F(this.f27379k);
+            aVar.m18948F(this.f27379h);
+            aVar.m18948F(this.f27380i);
+            aVar.m18948F(this.f27381j);
+            aVar.m18948F(this.f27382k);
         }
     }
 
-    public void m12450y(int i, float f) {
-        if (this.f27374f != i || this.f27375g != f) {
-            this.f27374f = i;
-            this.f27375g = f;
-            m12464k(false);
+    public void m12449y(int i, float f) {
+        if (this.f27377f != i || this.f27378g != f) {
+            this.f27377f = i;
+            this.f27378g = f;
+            m12463k(false);
         }
     }
 
-    public void m12449z(MotionEvent motionEvent) {
-        float i = m12466i(motionEvent.getX());
-        float j = m12465j(motionEvent.getY());
-        this.f27377i = i;
-        this.f27376h = i;
-        this.f27379k = j;
-        this.f27378j = j;
-        if (this.f27369a == 0) {
-            m12475A(motionEvent, false, true);
+    public void m12448z(MotionEvent motionEvent) {
+        float i = m12465i(motionEvent.getX());
+        float j = m12464j(motionEvent.getY());
+        this.f27380i = i;
+        this.f27379h = i;
+        this.f27382k = j;
+        this.f27381j = j;
+        if (this.f27372a == 0) {
+            m12474A(motionEvent, false, true);
         }
     }
 
     public C8434g(int i, int i2, int i3, float f, float f2) {
-        this.f27369a = i;
-        this.f27370b = i2;
-        this.f27371c = i3;
-        this.f27372d = f;
-        float f3 = this.f27376h;
-        this.f27377i = f3;
-        this.f27376h = f3;
-        float f4 = this.f27378j;
-        this.f27379k = f4;
-        this.f27378j = f4;
-        this.f27373e = f2;
-        this.f27380l = i == 0 ? new C8427b(this) : null;
-        if (f27368y == null) {
+        this.f27372a = i;
+        this.f27373b = i2;
+        this.f27374c = i3;
+        this.f27375d = f;
+        float f3 = this.f27379h;
+        this.f27380i = f3;
+        this.f27379h = f3;
+        float f4 = this.f27381j;
+        this.f27382k = f4;
+        this.f27381j = f4;
+        this.f27376e = f2;
+        this.f27383l = i == 0 ? new C8427b(this) : null;
+        if (f27371y == null) {
             C6815f<Paint> fVar = new C6815f<>();
-            f27368y = fVar;
-            fVar.m18900b(m12460o());
+            f27371y = fVar;
+            fVar.m18901b(m12459o());
         }
     }
 }

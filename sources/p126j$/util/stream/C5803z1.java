@@ -16,12 +16,12 @@ public final class C5803z1 extends AbstractC5558A1 {
     }
 
     @Override
-    AbstractC5558A1 mo22129a(AbstractC5468G g, long j, long j2) {
+    AbstractC5558A1 mo22130a(AbstractC5468G g, long j, long j2) {
         return new C5803z1(this, g, j, j2);
     }
 
     @Override
-    public void mo22128k(Object obj) {
+    public void mo22129k(Object obj) {
         int i = this.f18101f;
         if (i < this.f18102g) {
             Object[] objArr = this.f18524h;

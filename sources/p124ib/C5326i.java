@@ -27,13 +27,13 @@ public final class C5326i implements Cloneable {
         }
     }
 
-    public long m23237b(int i, long j) {
-        int a = C5318a.m23300a(this.f17508a, this.f17510c, i);
+    public long m23238b(int i, long j) {
+        int a = C5318a.m23301a(this.f17508a, this.f17510c, i);
         return a < 0 ? j : this.f17509b[a];
     }
 
-    public final void m23236c(int i) {
-        int e = C5318a.m23296e(i);
+    public final void m23237c(int i) {
+        int e = C5318a.m23297e(i);
         int[] iArr = new int[e];
         long[] jArr = new long[e];
         int[] iArr2 = this.f17508a;
@@ -44,16 +44,16 @@ public final class C5326i implements Cloneable {
         this.f17509b = jArr;
     }
 
-    public int m23235d(int i) {
-        return C5318a.m23300a(this.f17508a, this.f17510c, i);
+    public int m23236d(int i) {
+        return C5318a.m23301a(this.f17508a, this.f17510c, i);
     }
 
-    public int m23234e(int i) {
+    public int m23235e(int i) {
         return this.f17508a[i];
     }
 
-    public void m23233f(int i, long j) {
-        int a = C5318a.m23300a(this.f17508a, this.f17510c, i);
+    public void m23234f(int i, long j) {
+        int a = C5318a.m23301a(this.f17508a, this.f17510c, i);
         if (a >= 0) {
             this.f17509b[a] = j;
             return;
@@ -61,7 +61,7 @@ public final class C5326i implements Cloneable {
         int i2 = ~a;
         int i3 = this.f17510c;
         if (i3 >= this.f17508a.length) {
-            m23236c(i3 + 1);
+            m23237c(i3 + 1);
         }
         int i4 = this.f17510c;
         if (i4 - i2 != 0) {
@@ -76,20 +76,20 @@ public final class C5326i implements Cloneable {
         this.f17510c++;
     }
 
-    public void m23232g(int i, long j) {
+    public void m23233g(int i, long j) {
         this.f17509b[i] = j;
     }
 
-    public int m23231h() {
+    public int m23232h() {
         return this.f17510c;
     }
 
-    public long m23230i(int i) {
+    public long m23231i(int i) {
         return this.f17509b[i];
     }
 
     public String toString() {
-        if (m23231h() <= 0) {
+        if (m23232h() <= 0) {
             return "{}";
         }
         StringBuilder sb2 = new StringBuilder(this.f17510c * 28);
@@ -98,9 +98,9 @@ public final class C5326i implements Cloneable {
             if (i > 0) {
                 sb2.append(", ");
             }
-            sb2.append(m23234e(i));
+            sb2.append(m23235e(i));
             sb2.append('=');
-            sb2.append(m23230i(i));
+            sb2.append(m23231i(i));
         }
         sb2.append('}');
         return sb2.toString();
@@ -111,7 +111,7 @@ public final class C5326i implements Cloneable {
             this.f17508a = C5062b.f17068a;
             this.f17509b = C5062b.f17069b;
         } else {
-            int e = C5318a.m23296e(i);
+            int e = C5318a.m23297e(i);
             this.f17508a = new int[e];
             this.f17509b = new long[e];
         }

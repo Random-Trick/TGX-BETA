@@ -16,32 +16,32 @@ public final class C4172d {
 
     static {
         float[] fArr = new float[16];
-        C4532a.m27482b(fArr);
+        C4532a.m27484b(fArr);
         f14075a = fArr;
     }
 
-    public static final void m28623a(String str) {
+    public static final void m28625a(String str) {
         int eglGetError;
-        C8298k.m12934e(str, "opName");
-        if (EGL14.eglGetError() != C5036d.m24226n()) {
-            String str2 = "Error during " + str + ": EGL error 0x" + C5039g.m24204b(eglGetError);
+        C8298k.m12933e(str, "opName");
+        if (EGL14.eglGetError() != C5036d.m24227n()) {
+            String str2 = "Error during " + str + ": EGL error 0x" + C5039g.m24205b(eglGetError);
             Log.e("Egloo", str2);
             throw new RuntimeException(str2);
         }
     }
 
-    public static final void m28622b(String str) {
+    public static final void m28624b(String str) {
         int a;
-        C8298k.m12934e(str, "opName");
-        if (C5055m.m24187a(GLES20.glGetError()) != C5038f.m24215h()) {
-            String str2 = "Error during " + str + ": glError 0x" + C5039g.m24204b(a) + ": " + C5039g.m24205a(a);
+        C8298k.m12933e(str, "opName");
+        if (C5055m.m24188a(GLES20.glGetError()) != C5038f.m24216h()) {
+            String str2 = "Error during " + str + ": glError 0x" + C5039g.m24205b(a) + ": " + C5039g.m24206a(a);
             Log.e("Egloo", str2);
             throw new RuntimeException(str2);
         }
     }
 
-    public static final void m28621c(int i, String str) {
-        C8298k.m12934e(str, "label");
+    public static final void m28623c(int i, String str) {
+        C8298k.m12933e(str, "label");
         if (i < 0) {
             String str2 = "Unable to locate " + str + " in program";
             Log.e("Egloo", str2);

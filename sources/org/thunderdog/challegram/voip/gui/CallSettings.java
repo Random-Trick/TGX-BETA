@@ -29,7 +29,7 @@ public class CallSettings {
 
     private boolean isCallActive() {
         TdApi.Call g0 = this.tdlib.m2480e2().m1644g0(this.callId);
-        return g0 != null && !C4779t2.m25562Z2(g0);
+        return g0 != null && !C4779t2.m25563Z2(g0);
     }
 
     public boolean lambda$toggleSpeakerMode$0(View view, int i) {
@@ -79,12 +79,12 @@ public class CallSettings {
     }
 
     public void toggleSpeakerMode(AbstractC9323v4<?> v4Var) {
-        TGCallService w = TGCallService.m14211w();
+        TGCallService w = TGCallService.m14210w();
         if (w != null) {
-            if (!w.m14255G() || !w.m14257E()) {
+            if (!w.m14254G() || !w.m14256E()) {
                 setSpeakerMode(!isSpeakerModeEnabled());
             } else {
-                v4Var.m9261ee(null, new int[]{R.id.btn_routingBluetooth, R.id.btn_routingEarpiece, R.id.btn_routingSpeaker}, new String[]{C4403w.m27869i1(R.string.VoipAudioRoutingBluetooth), C4403w.m27869i1(R.string.VoipAudioRoutingEarpiece), C4403w.m27869i1(R.string.VoipAudioRoutingSpeaker)}, null, new int[]{R.drawable.baseline_bluetooth_24, R.drawable.baseline_phone_in_talk_24, R.drawable.baseline_volume_up_24}, new AbstractC5117h0() {
+                v4Var.m9261ee(null, new int[]{R.id.btn_routingBluetooth, R.id.btn_routingEarpiece, R.id.btn_routingSpeaker}, new String[]{C4403w.m27871i1(R.string.VoipAudioRoutingBluetooth), C4403w.m27871i1(R.string.VoipAudioRoutingEarpiece), C4403w.m27871i1(R.string.VoipAudioRoutingSpeaker)}, null, new int[]{R.drawable.baseline_bluetooth_24, R.drawable.baseline_phone_in_talk_24, R.drawable.baseline_volume_up_24}, new AbstractC5117h0() {
                     @Override
                     public final boolean mo493A3(View view, int i) {
                         boolean lambda$toggleSpeakerMode$0;
@@ -94,12 +94,12 @@ public class CallSettings {
 
                     @Override
                     public boolean mo492Q() {
-                        return C5115g0.m23935a(this);
+                        return C5115g0.m23936a(this);
                     }
 
                     @Override
                     public Object mo491b2(int i) {
-                        return C5115g0.m23934b(this, i);
+                        return C5115g0.m23935b(this, i);
                     }
                 });
             }

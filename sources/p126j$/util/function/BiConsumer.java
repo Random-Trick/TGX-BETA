@@ -17,10 +17,10 @@ public interface BiConsumer<T, U> {
         }
 
         @Override
-        public void mo22179p(Object obj, Object obj2) {
+        public void mo22180p(Object obj, Object obj2) {
             this.f18061a.accept(obj, obj2);
         }
     }
 
-    void mo22179p(Object obj, Object obj2);
+    void mo22180p(Object obj, Object obj2);
 }

@@ -20,28 +20,28 @@ public abstract class AbstractDialogInterface$OnCancelListenerC6183w2 extends Li
         this.f19580N = dVar;
     }
 
-    public static final int m21095e(C6171t2 t2Var) {
+    public static final int m21096e(C6171t2 t2Var) {
         if (t2Var == null) {
             return -1;
         }
-        return t2Var.m21129a();
+        return t2Var.m21130a();
     }
 
-    public final void m21097c() {
+    public final void m21098c() {
         this.f19582c.set(null);
-        mo21093g();
+        mo21094g();
     }
 
-    public final void m21096d(C5217a aVar, int i) {
+    public final void m21097d(C5217a aVar, int i) {
         this.f19582c.set(null);
-        mo21094f(aVar, i);
+        mo21095f(aVar, i);
     }
 
-    public abstract void mo21094f(C5217a aVar, int i);
+    public abstract void mo21095f(C5217a aVar, int i);
 
-    public abstract void mo21093g();
+    public abstract void mo21094g();
 
-    public final void m21092h(C5217a aVar, int i) {
+    public final void m21093h(C5217a aVar, int i) {
         C6171t2 t2Var = new C6171t2(aVar, i);
         if (this.f19582c.compareAndSet(null, t2Var)) {
             this.f19579M.post(new RunnableC6179v2(this, t2Var));
@@ -50,6 +50,6 @@ public abstract class AbstractDialogInterface$OnCancelListenerC6183w2 extends Li
 
     @Override
     public final void onCancel(DialogInterface dialogInterface) {
-        m21096d(new C5217a(13, null), m21095e(this.f19582c.get()));
+        m21097d(new C5217a(13, null), m21096e(this.f19582c.get()));
     }
 }

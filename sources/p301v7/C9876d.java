@@ -5,17 +5,17 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class C9876d {
-    public static volatile C9876d f32160b;
-    public final Set<AbstractC9878f> f32161a = new HashSet();
+    public static volatile C9876d f32163b;
+    public final Set<AbstractC9878f> f32164a = new HashSet();
 
     public static C9876d m6706a() {
-        C9876d dVar = f32160b;
+        C9876d dVar = f32163b;
         if (dVar == null) {
             synchronized (C9876d.class) {
-                dVar = f32160b;
+                dVar = f32163b;
                 if (dVar == null) {
                     dVar = new C9876d();
-                    f32160b = dVar;
+                    f32163b = dVar;
                 }
             }
         }
@@ -24,8 +24,8 @@ public class C9876d {
 
     public Set<AbstractC9878f> m6705b() {
         Set<AbstractC9878f> unmodifiableSet;
-        synchronized (this.f32161a) {
-            unmodifiableSet = Collections.unmodifiableSet(this.f32161a);
+        synchronized (this.f32164a) {
+            unmodifiableSet = Collections.unmodifiableSet(this.f32164a);
         }
         return unmodifiableSet;
     }

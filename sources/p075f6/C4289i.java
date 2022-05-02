@@ -27,15 +27,15 @@ public final class C4289i extends AbstractC6749a implements AbstractC5876k {
     }
 
     @RecentlyNullable
-    public C4291j m28296b() {
+    public C4291j m28298b() {
         return this.f14347b;
     }
 
     @Override
     public void writeToParcel(@RecentlyNonNull Parcel parcel, int i) {
-        int a = C6752c.m19124a(parcel);
-        C6752c.m19110o(parcel, 1, mo952a(), i, false);
-        C6752c.m19110o(parcel, 2, m28296b(), i, false);
-        C6752c.m19123b(parcel, a);
+        int a = C6752c.m19125a(parcel);
+        C6752c.m19111o(parcel, 1, mo952a(), i, false);
+        C6752c.m19111o(parcel, 2, m28298b(), i, false);
+        C6752c.m19124b(parcel, a);
     }
 }

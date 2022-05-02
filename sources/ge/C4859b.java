@@ -21,28 +21,28 @@ public class C4859b {
     public static class C4860a implements Thread.UncaughtExceptionHandler {
         @Override
         public void uncaughtException(Thread thread, Throwable th) {
-            C4859b.m24988d().m24987e(thread, th);
+            C4859b.m24989d().m24988e(thread, th);
         }
     }
 
-    public static String m24989c(long j) {
-        return Log.CRASH_PREFIX + "0.24.6.1506-arm64-v8a." + j + ".log";
+    public static String m24990c(long j) {
+        return Log.CRASH_PREFIX + "0.24.6.1507-arm64-v8a." + j + ".log";
     }
 
-    public static C4859b m24988d() {
+    public static C4859b m24989d() {
         if (f16588d == null) {
             f16588d = new C4859b();
         }
         return f16588d;
     }
 
-    public final File m24990b(long j) {
+    public final File m24991b(long j) {
         String str;
-        String path = C1379j0.m37315n().getFilesDir().getPath();
+        String path = C1379j0.m37318n().getFilesDir().getPath();
         if (path.charAt(path.length() - 1) == '/') {
-            str = path + "logs/" + m24989c(j);
+            str = path + "logs/" + m24990c(j);
         } else {
-            str = path + "/logs/" + m24989c(j);
+            str = path + "/logs/" + m24990c(j);
         }
         File file = new File(str);
         File parentFile = file.getParentFile();
@@ -53,12 +53,12 @@ public class C4859b {
     }
 
     @SuppressLint({"CommitPrefEdits"})
-    public final void m24987e(Thread thread, Throwable th) {
-        m24986f(null, thread, th);
+    public final void m24988e(Thread thread, Throwable th) {
+        m24987f(null, thread, th);
     }
 
     @SuppressLint({"CommitPrefEdits"})
-    public final void m24986f(String str, Thread thread, Throwable th) {
+    public final void m24987f(String str, Thread thread, Throwable th) {
         if (!this.f16591c) {
             this.f16591c = true;
             if (th != null) {
@@ -67,11 +67,11 @@ public class C4859b {
             Log.setRuntimeFlag(1, true);
             StringBuilder sb2 = new StringBuilder();
             try {
-                long e1 = C4868i.m24726c2().m24711e1("crash_id_release", 0L) + 1;
-                File b = m24990b(e1);
+                long e1 = C4868i.m24727c2().m24712e1("crash_id_release", 0L) + 1;
+                File b = m24991b(e1);
                 sb2.append(Log.getDeviceInformationString());
                 sb2.append("\n\nCrashed on: ");
-                sb2.append(C4403w.m27979I(System.currentTimeMillis(), TimeUnit.MILLISECONDS));
+                sb2.append(C4403w.m27981I(System.currentTimeMillis(), TimeUnit.MILLISECONDS));
                 sb2.append("\nCrash comment: ");
                 if (str == null) {
                     str = "Uncaught crash";
@@ -89,7 +89,7 @@ public class C4859b {
                         FileOutputStream fileOutputStream = new FileOutputStream(b);
                         fileOutputStream.write(sb3.getBytes(C5070i.f17083a));
                         fileOutputStream.close();
-                        C4868i.m24726c2().m24566w3("crash_id_release", e1);
+                        C4868i.m24727c2().m24567w3("crash_id_release", e1);
                     } catch (IOException e) {
                         Log.m14712w(Log.TAG_CRASH, "Cannot save crash file", e, new Object[0]);
                     }
@@ -115,14 +115,14 @@ public class C4859b {
         }
     }
 
-    public void m24985g() {
+    public void m24986g() {
         if (this.f16590b == null) {
             this.f16590b = Thread.getDefaultUncaughtExceptionHandler();
         }
         Thread.setDefaultUncaughtExceptionHandler(this.f16589a);
     }
 
-    public void m24984h(long j) {
-        C4868i.m24726c2().m24566w3("crash_id_reported_release", j);
+    public void m24985h(long j) {
+        C4868i.m24727c2().m24567w3("crash_id_reported_release", j);
     }
 }

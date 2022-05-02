@@ -13,22 +13,22 @@ public final class C1414b implements AbstractC0577i1 {
     }
 
     @Override
-    public C10242i2 mo36995a() {
+    public C10242i2 mo36998a() {
         return this.f5223a.mo5557a();
     }
 
     @Override
-    public void mo36994b(C11190g.C11192b bVar) {
+    public void mo36997b(C11190g.C11192b bVar) {
         this.f5223a.mo5556b(bVar);
     }
 
     @Override
-    public long mo36993c() {
+    public long mo36996c() {
         return this.f5223a.mo5555c();
     }
 
     @Override
-    public int mo36992d() {
+    public int mo36995d() {
         return 0;
     }
 }

@@ -8,11 +8,11 @@ import p020b5.C1186a;
 import p358z6.AbstractC11396q;
 
 public final class C8036d implements AbstractC8042g {
-    public final C8035c f26191a = new C8035c();
-    public final C8046j f26192b = new C8046j();
-    public final Deque<AbstractC8047k> f26193c = new ArrayDeque();
-    public int f26194d;
-    public boolean f26195e;
+    public final C8035c f26194a = new C8035c();
+    public final C8046j f26195b = new C8046j();
+    public final Deque<AbstractC8047k> f26196c = new ArrayDeque();
+    public int f26197d;
+    public boolean f26198e;
 
     public class C8037a extends AbstractC8047k {
         public C8037a() {
@@ -20,33 +20,33 @@ public final class C8036d implements AbstractC8042g {
 
         @Override
         public void release() {
-            C8036d.this.m13733k(this);
+            C8036d.this.m13732k(this);
         }
     }
 
     public static final class C8038b implements AbstractC8041f {
-        public final long f26197a;
-        public final AbstractC11396q<C8032b> f26198b;
+        public final long f26200a;
+        public final AbstractC11396q<C8032b> f26201b;
 
         public C8038b(long j, AbstractC11396q<C8032b> qVar) {
-            this.f26197a = j;
-            this.f26198b = qVar;
+            this.f26200a = j;
+            this.f26201b = qVar;
         }
 
         @Override
         public int mo5200a(long j) {
-            return this.f26197a > j ? 0 : -1;
+            return this.f26200a > j ? 0 : -1;
         }
 
         @Override
         public long mo5199b(int i) {
-            C1186a.m38189a(i == 0);
-            return this.f26197a;
+            C1186a.m38192a(i == 0);
+            return this.f26200a;
         }
 
         @Override
         public List<C8032b> mo5198c(long j) {
-            return j >= this.f26197a ? this.f26198b : AbstractC11396q.m768D();
+            return j >= this.f26200a ? this.f26201b : AbstractC11396q.m768D();
         }
 
         @Override
@@ -57,73 +57,73 @@ public final class C8036d implements AbstractC8042g {
 
     public C8036d() {
         for (int i = 0; i < 2; i++) {
-            this.f26193c.addFirst(new C8037a());
+            this.f26196c.addFirst(new C8037a());
         }
-        this.f26194d = 0;
+        this.f26197d = 0;
     }
 
     @Override
-    public void mo13075a() {
-        this.f26195e = true;
+    public void mo13074a() {
+        this.f26198e = true;
     }
 
     @Override
-    public String mo13106b() {
+    public String mo13105b() {
         return "ExoplayerCuesDecoder";
     }
 
     @Override
-    public void mo13074c(long j) {
+    public void mo13073c(long j) {
     }
 
     @Override
     public void flush() {
-        C1186a.m38184f(!this.f26195e);
-        this.f26192b.clear();
-        this.f26194d = 0;
+        C1186a.m38187f(!this.f26198e);
+        this.f26195b.clear();
+        this.f26197d = 0;
     }
 
-    public C8046j mo13072e() {
-        C1186a.m38184f(!this.f26195e);
-        if (this.f26194d != 0) {
+    public C8046j mo13071e() {
+        C1186a.m38187f(!this.f26198e);
+        if (this.f26197d != 0) {
             return null;
         }
-        this.f26194d = 1;
-        return this.f26192b;
+        this.f26197d = 1;
+        return this.f26195b;
     }
 
-    public AbstractC8047k mo13073d() {
-        C1186a.m38184f(!this.f26195e);
-        if (this.f26194d != 2 || this.f26193c.isEmpty()) {
+    public AbstractC8047k mo13072d() {
+        C1186a.m38187f(!this.f26198e);
+        if (this.f26197d != 2 || this.f26196c.isEmpty()) {
             return null;
         }
-        AbstractC8047k removeFirst = this.f26193c.removeFirst();
-        if (this.f26192b.isEndOfStream()) {
+        AbstractC8047k removeFirst = this.f26196c.removeFirst();
+        if (this.f26195b.isEndOfStream()) {
             removeFirst.addFlag(4);
         } else {
-            C8046j jVar = this.f26192b;
-            removeFirst.m13721e(this.f26192b.f26126N, new C8038b(jVar.f26126N, this.f26191a.m13738a(((ByteBuffer) C1186a.m38185e(jVar.f26132c)).array())), 0L);
+            C8046j jVar = this.f26195b;
+            removeFirst.m13720e(this.f26195b.f26129N, new C8038b(jVar.f26129N, this.f26194a.m13737a(((ByteBuffer) C1186a.m38188e(jVar.f26135c)).array())), 0L);
         }
-        this.f26192b.clear();
-        this.f26194d = 0;
+        this.f26195b.clear();
+        this.f26197d = 0;
         return removeFirst;
     }
 
-    public void mo13071f(C8046j jVar) {
+    public void mo13070f(C8046j jVar) {
         boolean z = true;
-        C1186a.m38184f(!this.f26195e);
-        C1186a.m38184f(this.f26194d == 1);
-        if (this.f26192b != jVar) {
+        C1186a.m38187f(!this.f26198e);
+        C1186a.m38187f(this.f26197d == 1);
+        if (this.f26195b != jVar) {
             z = false;
         }
-        C1186a.m38189a(z);
-        this.f26194d = 2;
+        C1186a.m38192a(z);
+        this.f26197d = 2;
     }
 
-    public final void m13733k(AbstractC8047k kVar) {
-        C1186a.m38184f(this.f26193c.size() < 2);
-        C1186a.m38189a(!this.f26193c.contains(kVar));
+    public final void m13732k(AbstractC8047k kVar) {
+        C1186a.m38187f(this.f26196c.size() < 2);
+        C1186a.m38192a(!this.f26196c.contains(kVar));
         kVar.clear();
-        this.f26193c.addFirst(kVar);
+        this.f26196c.addFirst(kVar);
     }
 }

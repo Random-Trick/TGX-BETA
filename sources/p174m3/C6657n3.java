@@ -14,11 +14,11 @@ public final class C6657n3 {
         this.f20799a = (WifiManager) context.getApplicationContext().getSystemService("wifi");
     }
 
-    public void m19647a(boolean z) {
+    public void m19648a(boolean z) {
         if (z && this.f20800b == null) {
             WifiManager wifiManager = this.f20799a;
             if (wifiManager == null) {
-                C1230s.m37881i("WifiLockManager", "WifiManager is null, therefore not creating the WifiLock.");
+                C1230s.m37884i("WifiLockManager", "WifiManager is null, therefore not creating the WifiLock.");
                 return;
             }
             WifiManager.WifiLock createWifiLock = wifiManager.createWifiLock(3, "ExoPlayer:WifiLockManager");
@@ -26,15 +26,15 @@ public final class C6657n3 {
             createWifiLock.setReferenceCounted(false);
         }
         this.f20801c = z;
-        m19645c();
+        m19646c();
     }
 
-    public void m19646b(boolean z) {
+    public void m19647b(boolean z) {
         this.f20802d = z;
-        m19645c();
+        m19646c();
     }
 
-    public final void m19645c() {
+    public final void m19646c() {
         WifiManager.WifiLock wifiLock = this.f20800b;
         if (wifiLock != null) {
             if (!this.f20801c || !this.f20802d) {

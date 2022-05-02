@@ -6,13 +6,13 @@ public abstract class AbstractC4555j implements AbstractC4537a0 {
     public final AbstractC4537a0 f14978a;
 
     public AbstractC4555j(AbstractC4537a0 a0Var) {
-        C8298k.m12934e(a0Var, "delegate");
+        C8298k.m12933e(a0Var, "delegate");
         this.f14978a = a0Var;
     }
 
     @Override
-    public C4539b0 mo27334c() {
-        return this.f14978a.mo27334c();
+    public C4539b0 mo27336c() {
+        return this.f14978a.mo27336c();
     }
 
     @Override
@@ -20,7 +20,7 @@ public abstract class AbstractC4555j implements AbstractC4537a0 {
         this.f14978a.close();
     }
 
-    public final AbstractC4537a0 m27396m() {
+    public final AbstractC4537a0 m27398m() {
         return this.f14978a;
     }
 

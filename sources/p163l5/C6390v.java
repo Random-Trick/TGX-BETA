@@ -22,16 +22,16 @@ public class C6390v extends AbstractC6749a {
         this.f20038b = list;
     }
 
-    public final int m20484b() {
+    public final int m20485b() {
         return this.f20037a;
     }
 
     @RecentlyNullable
-    public final List<C6371p> m20483c() {
+    public final List<C6371p> m20484c() {
         return this.f20038b;
     }
 
-    public final void m20482d(@RecentlyNonNull C6371p pVar) {
+    public final void m20483d(@RecentlyNonNull C6371p pVar) {
         if (this.f20038b == null) {
             this.f20038b = new ArrayList();
         }
@@ -40,9 +40,9 @@ public class C6390v extends AbstractC6749a {
 
     @Override
     public final void writeToParcel(@RecentlyNonNull Parcel parcel, int i) {
-        int a = C6752c.m19124a(parcel);
-        C6752c.m19114k(parcel, 1, this.f20037a);
-        C6752c.m19105t(parcel, 2, this.f20038b, false);
-        C6752c.m19123b(parcel, a);
+        int a = C6752c.m19125a(parcel);
+        C6752c.m19115k(parcel, 1, this.f20037a);
+        C6752c.m19106t(parcel, 2, this.f20038b, false);
+        C6752c.m19124b(parcel, a);
     }
 }

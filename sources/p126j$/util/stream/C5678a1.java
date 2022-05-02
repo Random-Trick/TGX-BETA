@@ -11,40 +11,40 @@ public final class C5678a1 extends AbstractC5641R0 {
     }
 
     @Override
-    public void mo22176a(Consumer consumer) {
-        this.f18221a.mo22176a(consumer);
-        this.f18222b.mo22176a(consumer);
+    public void mo22177a(Consumer consumer) {
+        this.f18221a.mo22177a(consumer);
+        this.f18222b.mo22177a(consumer);
     }
 
     @Override
-    public void mo22154n(Object[] objArr, int i) {
+    public void mo22155n(Object[] objArr, int i) {
         Objects.requireNonNull(objArr);
-        this.f18221a.mo22154n(objArr, i);
-        this.f18222b.mo22154n(objArr, i + ((int) this.f18221a.count()));
+        this.f18221a.mo22155n(objArr, i);
+        this.f18222b.mo22155n(objArr, i + ((int) this.f18221a.count()));
     }
 
     @Override
-    public Object[] mo22152p(AbstractC5531m mVar) {
+    public Object[] mo22153p(AbstractC5531m mVar) {
         long count = count();
         if (count < 2147483639) {
-            Object[] objArr = (Object[]) mVar.mo22178w((int) count);
-            mo22154n(objArr, 0);
+            Object[] objArr = (Object[]) mVar.mo22179w((int) count);
+            mo22155n(objArr, 0);
             return objArr;
         }
         throw new IllegalArgumentException("Stream size exceeds max array size");
     }
 
     @Override
-    public AbstractC5632P0 mo22151q(long j, long j2, AbstractC5531m mVar) {
+    public AbstractC5632P0 mo22152q(long j, long j2, AbstractC5531m mVar) {
         if (j == 0 && j2 == count()) {
             return this;
         }
         long count = this.f18221a.count();
-        return j >= count ? this.f18222b.mo22151q(j - count, j2 - count, mVar) : j2 <= count ? this.f18221a.mo22151q(j, j2, mVar) : AbstractC5572D0.m22438L(1, this.f18221a.mo22151q(j, count, mVar), this.f18222b.mo22151q(0L, j2 - count, mVar));
+        return j >= count ? this.f18222b.mo22152q(j - count, j2 - count, mVar) : j2 <= count ? this.f18221a.mo22152q(j, j2, mVar) : AbstractC5572D0.m22439L(1, this.f18221a.mo22152q(j, count, mVar), this.f18222b.mo22152q(0L, j2 - count, mVar));
     }
 
     @Override
-    public AbstractC5468G mo42629spliterator() {
+    public AbstractC5468G mo42632spliterator() {
         return new C5763r1(this);
     }
 

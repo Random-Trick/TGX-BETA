@@ -11,18 +11,18 @@ import p163l5.C6378r;
 
 public class C8252l {
     @Nullable
-    public static String f26702a;
-    public static int f26703b;
+    public static String f26705a;
+    public static int f26706b;
 
     @RecentlyNullable
-    public static String m13029a() {
+    public static String m13028a() {
         BufferedReader bufferedReader;
         Throwable th;
-        if (f26702a == null) {
-            if (f26703b == 0) {
-                f26703b = Process.myPid();
+        if (f26705a == null) {
+            if (f26706b == 0) {
+                f26706b = Process.myPid();
             }
-            int i = f26703b;
+            int i = f26706b;
             String str = null;
             str = null;
             BufferedReader bufferedReader2 = null;
@@ -44,19 +44,19 @@ public class C8252l {
                 }
                 try {
                     String readLine = bufferedReader.readLine();
-                    C6378r.m20506k(readLine);
+                    C6378r.m20507k(readLine);
                     str = readLine.trim();
                 } catch (IOException unused2) {
                 } catch (Throwable th3) {
                     th = th3;
                     bufferedReader2 = bufferedReader;
-                    C8250j.m13042a(bufferedReader2);
+                    C8250j.m13041a(bufferedReader2);
                     throw th;
                 }
-                C8250j.m13042a(bufferedReader);
+                C8250j.m13041a(bufferedReader);
             }
-            f26702a = str;
+            f26705a = str;
         }
-        return f26702a;
+        return f26705a;
     }
 }

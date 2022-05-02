@@ -11,7 +11,7 @@ public final class C6770i0<TResult> {
     @GuardedBy("mLock")
     public boolean f21246c;
 
-    public final void m19090a(AbstractC6768h0<TResult> h0Var) {
+    public final void m19091a(AbstractC6768h0<TResult> h0Var) {
         synchronized (this.f21244a) {
             if (this.f21245b == null) {
                 this.f21245b = new ArrayDeque();
@@ -20,7 +20,7 @@ public final class C6770i0<TResult> {
         }
     }
 
-    public final void m19089b(AbstractC6775l<TResult> lVar) {
+    public final void m19090b(AbstractC6775l<TResult> lVar) {
         AbstractC6768h0<TResult> poll;
         synchronized (this.f21244a) {
             if (this.f21245b != null && !this.f21246c) {
@@ -33,7 +33,7 @@ public final class C6770i0<TResult> {
                             return;
                         }
                     }
-                    poll.mo19034d(lVar);
+                    poll.mo19035d(lVar);
                 }
             }
         }

@@ -13,8 +13,8 @@ public final class C5907b implements Comparator<Comparable<? super Object>>, p12
     public static final C5907b f18809a = new C5907b();
 
     public int compare(Comparable<Object> comparable, Comparable<Object> comparable2) {
-        C8298k.m12934e(comparable, "a");
-        C8298k.m12934e(comparable2, "b");
+        C8298k.m12933e(comparable, "a");
+        C8298k.m12933e(comparable2, "b");
         return comparable.compareTo(comparable2);
     }
 

@@ -25,11 +25,11 @@ public final class C6734a extends AbstractC6736b {
         this(parcel);
     }
 
-    public static C6734a m19178a(C1189b0 b0Var, int i, long j) {
-        long F = b0Var.m38154F();
+    public static C6734a m19179a(C1189b0 b0Var, int i, long j) {
+        long F = b0Var.m38157F();
         int i2 = i - 4;
         byte[] bArr = new byte[i2];
-        b0Var.m38133j(bArr, 0, i2);
+        b0Var.m38136j(bArr, 0, i2);
         return new C6734a(F, bArr, j);
     }
 
@@ -49,6 +49,6 @@ public final class C6734a extends AbstractC6736b {
     public C6734a(Parcel parcel) {
         this.f21187a = parcel.readLong();
         this.f21188b = parcel.readLong();
-        this.f21189c = (byte[]) C1216l0.m37968j(parcel.createByteArray());
+        this.f21189c = (byte[]) C1216l0.m37971j(parcel.createByteArray());
     }
 }

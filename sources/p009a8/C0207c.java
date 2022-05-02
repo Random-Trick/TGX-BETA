@@ -12,7 +12,7 @@ public class C0207c {
     public static final C6352j f681a = new C6352j("CommonUtils", "");
 
     @RecentlyNonNull
-    public static String m42088a(@RecentlyNonNull Context context) {
+    public static String m42091a(@RecentlyNonNull Context context) {
         try {
             return String.valueOf(context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode);
         } catch (PackageManager.NameNotFoundException e) {
@@ -21,13 +21,13 @@ public class C0207c {
             StringBuilder sb2 = new StringBuilder(valueOf.length() + 48);
             sb2.append("Exception thrown when trying to get app version ");
             sb2.append(valueOf);
-            jVar.m20570c("CommonUtils", sb2.toString());
+            jVar.m20571c("CommonUtils", sb2.toString());
             return "";
         }
     }
 
-    public static String m42087b(@RecentlyNonNull Locale locale) {
-        if (C8251k.m13034e()) {
+    public static String m42090b(@RecentlyNonNull Locale locale) {
+        if (C8251k.m13033e()) {
             return locale.toLanguageTag();
         }
         StringBuilder sb2 = new StringBuilder(locale.getLanguage());

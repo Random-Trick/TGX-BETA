@@ -19,6 +19,6 @@ public final class C3568a extends ClickableSpan {
     public void onClick(View view) {
         Bundle bundle = new Bundle();
         bundle.putInt("ACCESSIBILITY_CLICKABLE_SPAN_ID", this.f12163a);
-        this.f12164b.m30027L(this.f12165c, bundle);
+        this.f12164b.m30029L(this.f12165c, bundle);
     }
 }

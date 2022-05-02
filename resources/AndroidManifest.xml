@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1506020" android:versionName="0.24.6.1506-arm64-v8a" android:installLocation="auto" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="org.thunderdog.challegram" platformBuildVersionCode="31" platformBuildVersionName="12">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1507020" android:versionName="0.24.6.1507-arm64-v8a" android:installLocation="auto" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="org.thunderdog.challegram" platformBuildVersionCode="31" platformBuildVersionName="12">
     <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30"/>
     <uses-feature android:glEsVersion="0x20000" android:required="true"/>
     <uses-feature android:name="android.hardware.microphone" android:required="false"/>

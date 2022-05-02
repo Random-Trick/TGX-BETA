@@ -14,21 +14,21 @@ import org.json.JSONObject;
 import p034c7.C2021c;
 
 public class C8058b {
-    public static final String[] f26240c = {"*", "FCM", "GCM", ""};
-    public final SharedPreferences f26241a;
-    public final String f26242b;
+    public static final String[] f26243c = {"*", "FCM", "GCM", ""};
+    public final SharedPreferences f26244a;
+    public final String f26245b;
 
     public C8058b(C2021c cVar) {
-        this.f26241a = cVar.m35815h().getSharedPreferences("com.google.android.gms.appid", 0);
-        this.f26242b = m13688b(cVar);
+        this.f26244a = cVar.m35818h().getSharedPreferences("com.google.android.gms.appid", 0);
+        this.f26245b = m13687b(cVar);
     }
 
-    public static String m13688b(C2021c cVar) {
-        String d = cVar.m35812k().m35792d();
+    public static String m13687b(C2021c cVar) {
+        String d = cVar.m35815k().m35795d();
         if (d != null) {
             return d;
         }
-        String c = cVar.m35812k().m35793c();
+        String c = cVar.m35815k().m35796c();
         if (!c.startsWith("1:") && !c.startsWith("2:")) {
             return c;
         }
@@ -43,7 +43,7 @@ public class C8058b {
         return str;
     }
 
-    public static String m13687c(PublicKey publicKey) {
+    public static String m13686c(PublicKey publicKey) {
         try {
             byte[] digest = MessageDigest.getInstance("SHA1").digest(publicKey.getEncoded());
             digest[0] = (byte) (((digest[0] & 15) + 112) & 255);
@@ -54,11 +54,11 @@ public class C8058b {
         }
     }
 
-    public final String m13689a(String str, String str2) {
+    public final String m13688a(String str, String str2) {
         return "|T|" + str + "|" + str2;
     }
 
-    public final String m13686d(String str) {
+    public final String m13685d(String str) {
         try {
             return new JSONObject(str).getString("token");
         } catch (JSONException unused) {
@@ -66,7 +66,7 @@ public class C8058b {
         }
     }
 
-    public final PublicKey m13685e(String str) {
+    public final PublicKey m13684e(String str) {
         try {
             return KeyFactory.getInstance("RSA").generatePublic(new X509EncodedKeySpec(Base64.decode(str, 8)));
         } catch (IllegalArgumentException | NoSuchAlgorithmException | InvalidKeySpecException e) {
@@ -75,45 +75,45 @@ public class C8058b {
         }
     }
 
-    public String m13684f() {
-        synchronized (this.f26241a) {
-            String g = m13683g();
+    public String m13683f() {
+        synchronized (this.f26244a) {
+            String g = m13682g();
             if (g != null) {
                 return g;
             }
-            return m13682h();
+            return m13681h();
         }
     }
 
-    public final String m13683g() {
+    public final String m13682g() {
         String string;
-        synchronized (this.f26241a) {
-            string = this.f26241a.getString("|S|id", null);
+        synchronized (this.f26244a) {
+            string = this.f26244a.getString("|S|id", null);
         }
         return string;
     }
 
-    public final String m13682h() {
-        synchronized (this.f26241a) {
-            String string = this.f26241a.getString("|S||P|", null);
+    public final String m13681h() {
+        synchronized (this.f26244a) {
+            String string = this.f26244a.getString("|S||P|", null);
             if (string == null) {
                 return null;
             }
-            PublicKey e = m13685e(string);
+            PublicKey e = m13684e(string);
             if (e == null) {
                 return null;
             }
-            return m13687c(e);
+            return m13686c(e);
         }
     }
 
-    public String m13681i() {
-        synchronized (this.f26241a) {
-            for (String str : f26240c) {
-                String string = this.f26241a.getString(m13689a(this.f26242b, str), null);
+    public String m13680i() {
+        synchronized (this.f26244a) {
+            for (String str : f26243c) {
+                String string = this.f26244a.getString(m13688a(this.f26245b, str), null);
                 if (string != null && !string.isEmpty()) {
                     if (string.startsWith("{")) {
-                        string = m13686d(string);
+                        string = m13685d(string);
                     }
                     return string;
                 }

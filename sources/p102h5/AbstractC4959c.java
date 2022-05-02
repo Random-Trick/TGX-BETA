@@ -15,7 +15,7 @@ public interface AbstractC4959c extends IInterface {
         }
 
         @Override
-        public void mo24377O(Message message) {
+        public void mo24378O(Message message) {
             Parcel obtain = Parcel.obtain();
             obtain.writeInterfaceToken("com.google.android.gms.iid.IMessengerCompat");
             obtain.writeInt(1);
@@ -33,5 +33,5 @@ public interface AbstractC4959c extends IInterface {
         }
     }
 
-    void mo24377O(Message message);
+    void mo24378O(Message message);
 }

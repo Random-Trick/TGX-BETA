@@ -12,16 +12,16 @@ public final class C6129j2 {
     public final Set<BasePendingResult<?>> f19425a = Collections.synchronizedSet(Collections.newSetFromMap(new WeakHashMap()));
     public final C6125i2 f19426b = new C6125i2(this);
 
-    public final void m21252a(BasePendingResult<? extends AbstractC5876k> basePendingResult) {
+    public final void m21253a(BasePendingResult<? extends AbstractC5876k> basePendingResult) {
         this.f19425a.add(basePendingResult);
-        basePendingResult.m30379p(this.f19426b);
+        basePendingResult.m30381p(this.f19426b);
     }
 
-    public final void m21251b() {
+    public final void m21252b() {
         BasePendingResult[] basePendingResultArr;
         for (BasePendingResult basePendingResult : (BasePendingResult[]) this.f19425a.toArray(new BasePendingResult[0])) {
-            basePendingResult.m30379p(null);
-            if (basePendingResult.m30383l()) {
+            basePendingResult.m30381p(null);
+            if (basePendingResult.m30385l()) {
                 this.f19425a.remove(basePendingResult);
             }
         }

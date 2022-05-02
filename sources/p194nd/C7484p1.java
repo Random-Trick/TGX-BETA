@@ -14,30 +14,30 @@ import p108hb.C5064d;
 import p364zd.C11524j;
 
 public class C7484p1 extends View implements C3950k.AbstractC3952b {
-    public int f23928M;
-    public float f23929N;
-    public float f23930O;
-    public C3950k f23931P;
-    public int f23932Q;
-    public int f23933R;
-    public C3950k f23934S;
-    public int f23935T;
-    public int f23936U;
-    public boolean f23937V;
-    public C3950k f23938W;
-    public float f23940a0;
-    public int f23941b;
-    public float f23942b0;
-    public boolean f23943c;
-    public C3950k f23944c0;
-    public C3950k f23946e0;
-    public long f23947f0;
-    public AbstractC7485a f23948g0;
-    public float f23949h0;
-    public int f23950i0;
-    public int f23951j0;
-    public int f23939a = R.id.theme_color_sliderActive;
-    public float f23945d0 = -1.0f;
+    public int f23931M;
+    public float f23932N;
+    public float f23933O;
+    public C3950k f23934P;
+    public int f23935Q;
+    public int f23936R;
+    public C3950k f23937S;
+    public int f23938T;
+    public int f23939U;
+    public boolean f23940V;
+    public C3950k f23941W;
+    public float f23943a0;
+    public int f23944b;
+    public float f23945b0;
+    public boolean f23946c;
+    public C3950k f23947c0;
+    public C3950k f23949e0;
+    public long f23950f0;
+    public AbstractC7485a f23951g0;
+    public float f23952h0;
+    public int f23953i0;
+    public int f23954j0;
+    public int f23942a = R.id.theme_color_sliderActive;
+    public float f23948d0 = -1.0f;
 
     public interface AbstractC7485a {
         void mo15839U0(C7484p1 p1Var, float f);
@@ -52,41 +52,41 @@ public class C7484p1 extends View implements C3950k.AbstractC3952b {
     }
 
     private float getSmallValue() {
-        C3950k kVar = this.f23946e0;
-        return kVar != null ? kVar.m29538o() : this.f23945d0;
+        C3950k kVar = this.f23949e0;
+        return kVar != null ? kVar.m29540o() : this.f23948d0;
     }
 
     private int getTotalPaddingLeft() {
-        return getPaddingLeft() + this.f23950i0;
+        return getPaddingLeft() + this.f23953i0;
     }
 
     private int getTotalPaddingRight() {
-        return getPaddingRight() + this.f23951j0;
+        return getPaddingRight() + this.f23954j0;
     }
 
     private void setColorId(int i) {
-        if (this.f23939a != i) {
-            this.f23939a = i;
+        if (this.f23942a != i) {
+            this.f23942a = i;
             invalidate();
         }
     }
 
     private void setEnableFactor(float f) {
-        if (this.f23942b0 != f) {
-            this.f23942b0 = f;
+        if (this.f23945b0 != f) {
+            this.f23945b0 = f;
             invalidate();
         }
     }
 
     private void setIsUp(boolean z) {
-        if (this.f23937V != z) {
-            this.f23937V = z;
+        if (this.f23940V != z) {
+            this.f23940V = z;
             getParent().requestDisallowInterceptTouchEvent(z);
-            if (this.f23938W == null) {
-                this.f23938W = new C3950k(1, this, C2057b.f7280b, 180L);
+            if (this.f23941W == null) {
+                this.f23941W = new C3950k(1, this, C2057b.f7280b, 180L);
             }
-            this.f23938W.m29544i(z ? 1.0f : 0.0f);
-            AbstractC7485a aVar = this.f23948g0;
+            this.f23941W.m29546i(z ? 1.0f : 0.0f);
+            AbstractC7485a aVar = this.f23951g0;
             if (aVar != null) {
                 aVar.mo15838q2(this, z);
             }
@@ -94,8 +94,8 @@ public class C7484p1 extends View implements C3950k.AbstractC3952b {
     }
 
     private void setUpFactor(float f) {
-        if (this.f23940a0 != f) {
-            this.f23940a0 = f;
+        if (this.f23943a0 != f) {
+            this.f23943a0 = f;
             invalidate();
         }
     }
@@ -118,44 +118,44 @@ public class C7484p1 extends View implements C3950k.AbstractC3952b {
     @Override
     public void mo35Y0(int i, float f, C3950k kVar) {
         if (i == 0 && f == 1.0f) {
-            this.f23939a = this.f23936U;
+            this.f23942a = this.f23939U;
         }
     }
 
     public final void m15848a(float f) {
-        if (this.f23944c0 == null) {
-            float f2 = this.f23942b0;
+        if (this.f23947c0 == null) {
+            float f2 = this.f23945b0;
             if (f2 != f) {
-                this.f23944c0 = new C3950k(2, this, C2057b.f7280b, 180L, f2);
+                this.f23947c0 = new C3950k(2, this, C2057b.f7280b, 180L, f2);
             } else {
                 return;
             }
         }
-        this.f23944c0.m29544i(f);
+        this.f23947c0.m29546i(f);
     }
 
     public void m15847b(float f) {
-        C3950k kVar = this.f23931P;
+        C3950k kVar = this.f23934P;
         if (kVar != null) {
-            kVar.m29542k();
+            kVar.m29544k();
         }
-        float f2 = this.f23929N;
+        float f2 = this.f23932N;
         if (f2 != f) {
-            C3950k kVar2 = this.f23931P;
+            C3950k kVar2 = this.f23934P;
             if (kVar2 == null) {
-                this.f23931P = new C3950k(3, this, C2057b.f7280b, 180L, f2);
+                this.f23934P = new C3950k(3, this, C2057b.f7280b, 180L, f2);
             } else {
-                kVar2.m29541l(f2);
+                kVar2.m29543l(f2);
             }
-            this.f23931P.m29544i(f);
+            this.f23934P.m29546i(f);
         }
     }
 
     public final void m15846c(float f) {
-        if (this.f23929N != f) {
-            this.f23929N = f;
+        if (this.f23932N != f) {
+            this.f23932N = f;
             invalidate();
-            AbstractC7485a aVar = this.f23948g0;
+            AbstractC7485a aVar = this.f23951g0;
             if (aVar != null) {
                 aVar.mo15839U0(this, f);
             }
@@ -167,14 +167,14 @@ public class C7484p1 extends View implements C3950k.AbstractC3952b {
         float f2;
         int totalPaddingLeft = getTotalPaddingLeft();
         int measuredWidth = (getMeasuredWidth() - getTotalPaddingRight()) - totalPaddingLeft;
-        if (this.f23941b == 1) {
+        if (this.f23944b == 1) {
             int i = measuredWidth / 2;
             totalPaddingLeft += i;
             f = i;
-            f2 = this.f23929N;
+            f2 = this.f23932N;
         } else {
             f = measuredWidth;
-            f2 = this.f23929N;
+            f2 = this.f23932N;
         }
         return totalPaddingLeft + ((int) (f * f2));
     }
@@ -184,51 +184,51 @@ public class C7484p1 extends View implements C3950k.AbstractC3952b {
     }
 
     public final void m15843f(float f) {
-        C3950k kVar = this.f23944c0;
+        C3950k kVar = this.f23947c0;
         if (kVar != null) {
-            kVar.m29541l(f);
+            kVar.m29543l(f);
         }
         setEnableFactor(f);
     }
 
     public void m15842g(int i, boolean z) {
         if (z) {
-            C3950k kVar = this.f23934S;
+            C3950k kVar = this.f23937S;
             if (kVar != null) {
-                kVar.m29542k();
-            } else if (this.f23939a != i) {
-                this.f23934S = new C3950k(0, this, C2057b.f7280b, 180L, 0.0f);
+                kVar.m29544k();
+            } else if (this.f23942a != i) {
+                this.f23937S = new C3950k(0, this, C2057b.f7280b, 180L, 0.0f);
             } else {
                 return;
             }
-            int i2 = this.f23939a;
+            int i2 = this.f23942a;
             if (i2 != i) {
-                this.f23935T = i2;
-                this.f23936U = i;
-                this.f23934S.m29541l(0.0f);
-                this.f23934S.m29544i(1.0f);
+                this.f23938T = i2;
+                this.f23939U = i;
+                this.f23937S.m29543l(0.0f);
+                this.f23937S.m29546i(1.0f);
                 return;
             }
             return;
         }
-        C3950k kVar2 = this.f23934S;
+        C3950k kVar2 = this.f23937S;
         if (kVar2 != null) {
-            kVar2.m29541l(0.0f);
+            kVar2.m29543l(0.0f);
         }
         setColorId(i);
     }
 
     public float getSecondaryValue() {
-        return this.f23930O;
+        return this.f23933O;
     }
 
     public float getValue() {
-        return this.f23929N;
+        return this.f23932N;
     }
 
     public void m15841h(boolean z, boolean z2) {
-        if (this.f23943c != z) {
-            this.f23943c = z;
+        if (this.f23946c != z) {
+            this.f23946c = z;
             float f = 1.0f;
             if (z2) {
                 if (!z) {
@@ -260,7 +260,7 @@ public class C7484p1 extends View implements C3950k.AbstractC3952b {
         float f3;
         int i6;
         int i7;
-        int i8 = C1357a0.m37541i(1.0f);
+        int i8 = C1357a0.m37544i(1.0f);
         int totalPaddingLeft = getTotalPaddingLeft();
         int measuredWidth = getMeasuredWidth() - getTotalPaddingRight();
         int e = m15844e();
@@ -268,38 +268,38 @@ public class C7484p1 extends View implements C3950k.AbstractC3952b {
         int i10 = e + i8;
         int i11 = measuredWidth - totalPaddingLeft;
         float smallValue = getSmallValue();
-        float f4 = (1.0f - this.f23942b0) * 0.65f;
-        C3950k kVar = this.f23934S;
-        int N = (kVar == null || !kVar.m29531v()) ? C11524j.m228N(this.f23939a) : C5064d.m24128d(C11524j.m228N(this.f23935T), C11524j.m228N(this.f23936U), this.f23934S.m29538o());
+        float f4 = (1.0f - this.f23945b0) * 0.65f;
+        C3950k kVar = this.f23937S;
+        int N = (kVar == null || !kVar.m29533v()) ? C11524j.m228N(this.f23942a) : C5064d.m24129d(C11524j.m228N(this.f23938T), C11524j.m228N(this.f23939U), this.f23937S.m29540o());
         if (f4 > 0.0f) {
-            N = C5064d.m24129c(N, C5064d.m24130b((int) (f4 * 255.0f), 0));
+            N = C5064d.m24130c(N, C5064d.m24131b((int) (f4 * 255.0f), 0));
         }
-        int i12 = this.f23932Q;
-        int N2 = i12 != 0 ? C11524j.m228N(i12) : C5064d.m24130b(68, N);
-        int i13 = this.f23933R;
-        int N3 = i13 != 0 ? C11524j.m228N(i13) : C5064d.m24130b(136, N);
-        int i14 = C1357a0.m37541i(4.5f);
-        int i15 = C1357a0.m37541i(2.5f);
-        RectF a0 = C1410y.m37050a0();
+        int i12 = this.f23935Q;
+        int N2 = i12 != 0 ? C11524j.m228N(i12) : C5064d.m24131b(68, N);
+        int i13 = this.f23936R;
+        int N3 = i13 != 0 ? C11524j.m228N(i13) : C5064d.m24131b(136, N);
+        int i14 = C1357a0.m37544i(4.5f);
+        int i15 = C1357a0.m37544i(2.5f);
+        RectF a0 = C1410y.m37053a0();
         int i16 = i15;
         float f5 = totalPaddingLeft;
         float f6 = i9;
         float f7 = i10;
         a0.set(f5, f6, measuredWidth, f7);
-        int i17 = this.f23928M;
+        int i17 = this.f23931M;
         if (i17 > 1) {
             int i18 = i11 / (i17 - 1);
             int i19 = totalPaddingLeft;
             f = smallValue;
             i2 = N;
             int i20 = 0;
-            for (int i21 = 1; i20 < this.f23928M - i21; i21 = 1) {
+            for (int i21 = 1; i20 < this.f23931M - i21; i21 = 1) {
                 i19 += i18;
                 i18 = i18;
                 i14 = i14;
                 a0.set(i19 + i14, a0.top, i19 - i14, a0.bottom);
                 float f8 = i8;
-                canvas.drawRoundRect(a0, f8, f8, C1410y.m37039g(N2));
+                canvas.drawRoundRect(a0, f8, f8, C1410y.m37042g(N2));
                 i20++;
             }
             i = i14;
@@ -308,29 +308,29 @@ public class C7484p1 extends View implements C3950k.AbstractC3952b {
             i2 = N;
             i = i14;
             float f9 = i8;
-            canvas.drawRoundRect(a0, f9, f9, C1410y.m37039g(N2));
+            canvas.drawRoundRect(a0, f9, f9, C1410y.m37042g(N2));
         }
-        if (this.f23930O > 0.0f && this.f23941b == 0) {
+        if (this.f23933O > 0.0f && this.f23944b == 0) {
             a0.set(f5, f6, ((int) (i11 * f2)) + totalPaddingLeft, f7);
             float f10 = i8;
-            canvas.drawRoundRect(a0, f10, f10, C1410y.m37039g(N3));
+            canvas.drawRoundRect(a0, f10, f10, C1410y.m37042g(N3));
         }
-        if (this.f23941b == 1) {
+        if (this.f23944b == 1) {
             int i22 = i11 / 2;
-            i3 = ((int) (i22 * this.f23929N)) + totalPaddingLeft + i22;
+            i3 = ((int) (i22 * this.f23932N)) + totalPaddingLeft + i22;
             a0.set(Math.min(i7, i3), f6, Math.max(i7, i3), f7);
         } else {
-            i3 = ((int) (i11 * this.f23929N)) + totalPaddingLeft;
+            i3 = ((int) (i11 * this.f23932N)) + totalPaddingLeft;
             a0.set(f5, f6, i3, f7);
         }
-        int i23 = this.f23928M;
+        int i23 = this.f23931M;
         if (i23 > 1) {
             float f11 = a0.left;
             float f12 = a0.right;
             int i24 = i11 / (i23 - 1);
             int i25 = totalPaddingLeft;
             int i26 = 0;
-            for (int i27 = 1; i26 < this.f23928M - i27; i27 = 1) {
+            for (int i27 = 1; i26 < this.f23931M - i27; i27 = 1) {
                 float f13 = i25;
                 if (f13 < f11 || f13 > f12) {
                     i6 = totalPaddingLeft;
@@ -341,7 +341,7 @@ public class C7484p1 extends View implements C3950k.AbstractC3952b {
                     f3 = f11;
                     a0.set(Math.max(f11, f13) + f14, a0.top, Math.min(f12, i25 + i24) - f14, a0.bottom);
                     float f15 = i8;
-                    canvas.drawRoundRect(a0, f15, f15, C1410y.m37039g(i2));
+                    canvas.drawRoundRect(a0, f15, f15, C1410y.m37042g(i2));
                 }
                 i25 += i24;
                 i26++;
@@ -352,37 +352,37 @@ public class C7484p1 extends View implements C3950k.AbstractC3952b {
         } else {
             i4 = totalPaddingLeft;
             float f16 = i8;
-            canvas.drawRoundRect(a0, f16, f16, C1410y.m37039g(i2));
+            canvas.drawRoundRect(a0, f16, f16, C1410y.m37042g(i2));
         }
         int i28 = f != -1.0f ? (int) (f5 + (i11 * f)) : -1;
-        int i29 = C1357a0.m37541i(3.5f);
+        int i29 = C1357a0.m37544i(3.5f);
         if (i28 != -1) {
             i5 = e;
-            canvas.drawCircle(i28, i5, i29, C1410y.m37039g(i28 > i3 ? N2 : i2));
+            canvas.drawCircle(i28, i5, i29, C1410y.m37042g(i28 > i3 ? N2 : i2));
         } else {
             i5 = e;
         }
-        int i30 = this.f23928M;
+        int i30 = this.f23931M;
         if (i30 > 1) {
             int i31 = i11 / (i30 - 1);
             int i32 = i4;
             int i33 = 0;
-            while (i33 < this.f23928M) {
+            while (i33 < this.f23931M) {
                 int i34 = i16;
-                canvas.drawCircle(i32, i5, i34, C1410y.m37039g(i32 > i3 ? N2 : i2));
+                canvas.drawCircle(i32, i5, i34, C1410y.m37042g(i32 > i3 ? N2 : i2));
                 i32 += i31;
                 i33++;
                 i16 = i34;
             }
         }
-        int i35 = C1357a0.m37541i(6.0f) + ((int) (C1357a0.m37541i(4.0f) * this.f23940a0));
+        int i35 = C1357a0.m37544i(6.0f) + ((int) (C1357a0.m37544i(4.0f) * this.f23943a0));
         float f17 = i5;
-        canvas.drawCircle(i3, f17, i35, C1410y.m37039g(i2));
+        canvas.drawCircle(i3, f17, i35, C1410y.m37042g(i2));
         if (i28 != -1 && Math.abs(i3 - i28) < i35 + i29) {
             canvas.save();
             int i36 = i3 + i35;
             canvas.clipRect(i3 - i35, i5 - i35, i36, i5 + i35);
-            canvas.drawCircle(i28, f17, i29, C1410y.m37039g(C5064d.m24128d(C11524j.m148w(), N2, (i28 <= i36 || i28 >= i36 + i29) ? 0.0f : ((i28 - i3) - i35) / i29)));
+            canvas.drawCircle(i28, f17, i29, C1410y.m37042g(C5064d.m24129d(C11524j.m148w(), N2, (i28 <= i36 || i28 >= i36 + i29) ? 0.0f : ((i28 - i3) - i35) / i29)));
             canvas.restore();
         }
     }
@@ -399,17 +399,17 @@ public class C7484p1 extends View implements C3950k.AbstractC3952b {
             if (action != 1) {
                 if (action != 2) {
                     if (action == 3) {
-                        if (!this.f23937V) {
+                        if (!this.f23940V) {
                             return false;
                         }
                         setIsUp(false);
                         return true;
                     }
-                } else if (this.f23937V) {
-                    float f2 = x - this.f23949h0;
+                } else if (this.f23940V) {
+                    float f2 = x - this.f23952h0;
                     int totalPaddingLeft = getTotalPaddingLeft();
                     int measuredWidth = (getMeasuredWidth() - getTotalPaddingRight()) - totalPaddingLeft;
-                    if (this.f23941b == 1) {
+                    if (this.f23944b == 1) {
                         int i = measuredWidth / 2;
                         f = Math.max(-1.0f, Math.min(1.0f, (f2 - (totalPaddingLeft + i)) / i));
                     } else {
@@ -418,70 +418,70 @@ public class C7484p1 extends View implements C3950k.AbstractC3952b {
                     m15846c(f);
                     return true;
                 }
-            } else if (this.f23937V) {
+            } else if (this.f23940V) {
                 setIsUp(false);
                 return true;
             }
-            return this.f23937V;
+            return this.f23940V;
         }
         int d = m15845d();
         int e = m15844e();
-        int i2 = C1357a0.m37541i(24.0f);
-        if (x < d - i2 || x > d + i2 || y < e - i2 || y > e + i2 || !this.f23943c || (((kVar = this.f23931P) != null && kVar.m29531v()) || ((aVar = this.f23948g0) != null && !aVar.mo15837s0(this)))) {
+        int i2 = C1357a0.m37544i(24.0f);
+        if (x < d - i2 || x > d + i2 || y < e - i2 || y > e + i2 || !this.f23946c || (((kVar = this.f23934P) != null && kVar.m29533v()) || ((aVar = this.f23951g0) != null && !aVar.mo15837s0(this)))) {
             return false;
         }
-        this.f23949h0 = x - d;
+        this.f23952h0 = x - d;
         setIsUp(true);
         return true;
     }
 
     public void setAddPaddingLeft(int i) {
-        if (this.f23950i0 != i) {
-            this.f23950i0 = i;
+        if (this.f23953i0 != i) {
+            this.f23953i0 = i;
             invalidate();
         }
     }
 
     public void setAddPaddingRight(int i) {
-        if (this.f23951j0 != i) {
-            this.f23951j0 = i;
+        if (this.f23954j0 != i) {
+            this.f23954j0 = i;
             invalidate();
         }
     }
 
     public void setAnchorMode(int i) {
-        this.f23941b = i;
+        this.f23944b = i;
     }
 
     public void setForceBackgroundColorId(int i) {
-        this.f23932Q = i;
+        this.f23935Q = i;
     }
 
     public void setForceSecondaryColorId(int i) {
-        this.f23933R = i;
+        this.f23936R = i;
     }
 
     public void setListener(AbstractC7485a aVar) {
-        this.f23948g0 = aVar;
+        this.f23951g0 = aVar;
     }
 
     public void setSecondaryValue(float f) {
-        if (this.f23930O != f) {
-            this.f23930O = f;
+        if (this.f23933O != f) {
+            this.f23933O = f;
             invalidate();
         }
     }
 
     public void setValue(float f) {
-        if (this.f23929N != f) {
-            this.f23929N = f;
+        if (this.f23932N != f) {
+            this.f23932N = f;
             invalidate();
         }
     }
 
     public void setValueCount(int i) {
-        if (this.f23928M != i) {
-            this.f23928M = i;
+        if (this.f23931M != i) {
+            this.f23931M = i;
             invalidate();
         }
     }

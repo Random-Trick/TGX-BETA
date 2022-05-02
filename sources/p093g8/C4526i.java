@@ -18,14 +18,14 @@ public final class C4526i extends AbstractC4524g {
         this.f14925f = i3;
         this.f14926g = i4;
         if (z) {
-            m27493e(i5, i6);
+            m27495e(i5, i6);
         }
     }
 
     @Override
-    public byte[] mo27495b() {
-        int d = m27497d();
-        int a = m27498a();
+    public byte[] mo27497b() {
+        int d = m27499d();
+        int a = m27500a();
         int i = this.f14923d;
         if (d == i && a == this.f14924e) {
             return this.f14922c;
@@ -45,11 +45,11 @@ public final class C4526i extends AbstractC4524g {
     }
 
     @Override
-    public byte[] mo27494c(int i, byte[] bArr) {
-        if (i < 0 || i >= m27498a()) {
+    public byte[] mo27496c(int i, byte[] bArr) {
+        if (i < 0 || i >= m27500a()) {
             throw new IllegalArgumentException("Requested row is outside the image: ".concat(String.valueOf(i)));
         }
-        int d = m27497d();
+        int d = m27499d();
         if (bArr == null || bArr.length < d) {
             bArr = new byte[d];
         }
@@ -57,7 +57,7 @@ public final class C4526i extends AbstractC4524g {
         return bArr;
     }
 
-    public final void m27493e(int i, int i2) {
+    public final void m27495e(int i, int i2) {
         byte[] bArr = this.f14922c;
         int i3 = (this.f14926g * this.f14923d) + this.f14925f;
         int i4 = 0;

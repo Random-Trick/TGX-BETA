@@ -15,53 +15,53 @@ import p229q2.C8154c;
 import p243r2.AbstractC8354a;
 
 public class C8011m implements AbstractC4229f {
-    public static final String f26079d = AbstractC4234j.m28360f("WMFgUpdater");
-    public final AbstractC8354a f26080a;
-    public final AbstractC7098a f26081b;
-    public final AbstractC7558q f26082c;
+    public static final String f26082d = AbstractC4234j.m28362f("WMFgUpdater");
+    public final AbstractC8354a f26083a;
+    public final AbstractC7098a f26084b;
+    public final AbstractC7558q f26085c;
 
     public class RunnableC8012a implements Runnable {
-        public final Context f26083M;
-        public final C8154c f26085a;
-        public final UUID f26086b;
-        public final C4228e f26087c;
+        public final Context f26086M;
+        public final C8154c f26088a;
+        public final UUID f26089b;
+        public final C4228e f26090c;
 
         public RunnableC8012a(C8154c cVar, UUID uuid, C4228e eVar, Context context) {
-            this.f26085a = cVar;
-            this.f26086b = uuid;
-            this.f26087c = eVar;
-            this.f26083M = context;
+            this.f26088a = cVar;
+            this.f26089b = uuid;
+            this.f26090c = eVar;
+            this.f26086M = context;
         }
 
         @Override
         public void run() {
             try {
-                if (!this.f26085a.isCancelled()) {
-                    String uuid = this.f26086b.toString();
-                    C4250s.EnumC4251a n = C8011m.this.f26082c.mo15681n(uuid);
-                    if (n == null || n.m28349a()) {
+                if (!this.f26088a.isCancelled()) {
+                    String uuid = this.f26089b.toString();
+                    C4250s.EnumC4251a n = C8011m.this.f26085c.mo15681n(uuid);
+                    if (n == null || n.m28351a()) {
                         throw new IllegalStateException("Calls to setForegroundAsync() must complete before a ListenableWorker signals completion of work by returning an instance of Result.");
                     }
-                    C8011m.this.f26081b.mo17738a(uuid, this.f26087c);
-                    this.f26083M.startService(C1097a.m38402a(this.f26083M, uuid, this.f26087c));
+                    C8011m.this.f26084b.mo17738a(uuid, this.f26090c);
+                    this.f26086M.startService(C1097a.m38405a(this.f26086M, uuid, this.f26090c));
                 }
-                this.f26085a.mo13349p(null);
+                this.f26088a.mo13348p(null);
             } catch (Throwable th) {
-                this.f26085a.mo13348q(th);
+                this.f26088a.mo13347q(th);
             }
         }
     }
 
     public C8011m(WorkDatabase workDatabase, AbstractC7098a aVar, AbstractC8354a aVar2) {
-        this.f26081b = aVar;
-        this.f26080a = aVar2;
-        this.f26082c = workDatabase.mo38454D();
+        this.f26084b = aVar;
+        this.f26083a = aVar2;
+        this.f26085c = workDatabase.mo38457D();
     }
 
     @Override
-    public AbstractFutureC1291a<Void> mo13793a(Context context, UUID uuid, C4228e eVar) {
-        C8154c t = C8154c.m13346t();
-        this.f26080a.mo12682b(new RunnableC8012a(t, uuid, eVar, context));
+    public AbstractFutureC1291a<Void> mo13792a(Context context, UUID uuid, C4228e eVar) {
+        C8154c t = C8154c.m13345t();
+        this.f26083a.mo12681b(new RunnableC8012a(t, uuid, eVar, context));
         return t;
     }
 }

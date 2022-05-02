@@ -13,15 +13,15 @@ public final class C4469g implements AbstractC3589b<AbstractC4934g> {
         this.f14812a = aVar;
     }
 
-    public static AbstractC4934g m27552a(AbstractC6045a aVar) {
-        return (AbstractC4934g) C3591d.m29915c(AbstractC4468f.m27553a(aVar), "Cannot return null from a non-@Nullable @Provides method");
+    public static AbstractC4934g m27554a(AbstractC6045a aVar) {
+        return (AbstractC4934g) C3591d.m29917c(AbstractC4468f.m27555a(aVar), "Cannot return null from a non-@Nullable @Provides method");
     }
 
-    public static C4469g m27551b(AbstractC4533a<AbstractC6045a> aVar) {
+    public static C4469g m27553b(AbstractC4533a<AbstractC6045a> aVar) {
         return new C4469g(aVar);
     }
 
     public AbstractC4934g get() {
-        return m27552a(this.f14812a.get());
+        return m27554a(this.f14812a.get());
     }
 }

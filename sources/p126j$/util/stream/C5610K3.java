@@ -12,63 +12,63 @@ public final class C5610K3 implements AbstractC5759q2 {
     }
 
     @Override
-    public void mo22135c(double d) {
+    public void mo22136c(double d) {
         switch (this.f18176a) {
             case 0:
-                AbstractC5572D0.m22421i();
+                AbstractC5572D0.m22422i();
                 throw null;
             default:
-                AbstractC5572D0.m22421i();
+                AbstractC5572D0.m22422i();
                 throw null;
         }
     }
 
     @Override
-    public void mo22134d(int i) {
+    public void mo22135d(int i) {
         switch (this.f18176a) {
             case 0:
-                AbstractC5572D0.m22414m();
+                AbstractC5572D0.m22415m();
                 throw null;
             default:
-                AbstractC5572D0.m22414m();
+                AbstractC5572D0.m22415m();
                 throw null;
         }
     }
 
     @Override
-    public void mo22133e(long j) {
+    public void mo22134e(long j) {
         switch (this.f18176a) {
             case 0:
-                AbstractC5572D0.m22412n();
+                AbstractC5572D0.m22413n();
                 throw null;
             default:
-                AbstractC5572D0.m22412n();
+                AbstractC5572D0.m22413n();
                 throw null;
         }
     }
 
     @Override
-    public void mo22132h() {
+    public void mo22133h() {
     }
 
     @Override
-    public void mo22131j(long j) {
+    public void mo22132j(long j) {
     }
 
     @Override
-    public final void mo22128k(Object obj) {
+    public final void mo22129k(Object obj) {
         switch (this.f18176a) {
             case 0:
-                ((Consumer) this.f18177b).mo22128k(obj);
+                ((Consumer) this.f18177b).mo22129k(obj);
                 return;
             default:
-                ((C5680a3) this.f18177b).mo22128k(obj);
+                ((C5680a3) this.f18177b).mo22129k(obj);
                 return;
         }
     }
 
     @Override
-    public boolean mo22130t() {
+    public boolean mo22131t() {
         return false;
     }
 }

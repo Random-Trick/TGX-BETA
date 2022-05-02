@@ -13,8 +13,8 @@ import p016b1.C1132h;
 import p085g0.C4439a;
 
 public class C1429n {
-    public static Map<AbstractC0688y2, Rect> m36957a(Rect rect, boolean z, Rational rational, int i, int i2, int i3, Map<AbstractC0688y2, Size> map) {
-        C1132h.m38325b(rect.width() > 0 && rect.height() > 0, "Cannot compute viewport crop rects zero sized sensor rect.");
+    public static Map<AbstractC0688y2, Rect> m36960a(Rect rect, boolean z, Rational rational, int i, int i2, int i3, Map<AbstractC0688y2, Size> map) {
+        C1132h.m38328b(rect.width() > 0 && rect.height() > 0, "Cannot compute viewport crop rects zero sized sensor rect.");
         RectF rectF = new RectF(rect);
         HashMap hashMap = new HashMap();
         RectF rectF2 = new RectF(rect);
@@ -27,7 +27,7 @@ public class C1429n {
             matrix.mapRect(rectF4, rectF3);
             rectF2.intersect(rectF4);
         }
-        RectF g = m36951g(rectF2, C4439a.m27666d(i, rational), i2, z, i3, i);
+        RectF g = m36954g(rectF2, C4439a.m27668d(i, rational), i2, z, i3, i);
         HashMap hashMap2 = new HashMap();
         RectF rectF5 = new RectF();
         Matrix matrix2 = new Matrix();
@@ -41,7 +41,7 @@ public class C1429n {
         return hashMap2;
     }
 
-    public static RectF m36956b(boolean z, int i, RectF rectF, RectF rectF2) {
+    public static RectF m36959b(boolean z, int i, RectF rectF, RectF rectF2) {
         boolean z2 = true;
         boolean z3 = i == 0 && !z;
         boolean z4 = i == 90 && z;
@@ -51,41 +51,41 @@ public class C1429n {
         boolean z5 = i == 0 && z;
         boolean z6 = i == 270 && !z;
         if (z5 || z6) {
-            return m36955c(rectF2, rectF.centerX());
+            return m36958c(rectF2, rectF.centerX());
         }
         boolean z7 = i == 90 && !z;
         boolean z8 = i == 180 && z;
         if (z7 || z8) {
-            return m36954d(rectF2, rectF.centerY());
+            return m36957d(rectF2, rectF.centerY());
         }
         boolean z9 = i == 180 && !z;
         if (i != 270 || !z) {
             z2 = false;
         }
         if (z9 || z2) {
-            return m36955c(m36954d(rectF2, rectF.centerY()), rectF.centerX());
+            return m36958c(m36957d(rectF2, rectF.centerY()), rectF.centerX());
         }
         throw new IllegalArgumentException("Invalid argument: mirrored " + z + " rotation " + i);
     }
 
-    public static RectF m36955c(RectF rectF, float f) {
-        return new RectF(m36953e(rectF.right, f), rectF.top, m36953e(rectF.left, f), rectF.bottom);
+    public static RectF m36958c(RectF rectF, float f) {
+        return new RectF(m36956e(rectF.right, f), rectF.top, m36956e(rectF.left, f), rectF.bottom);
     }
 
-    public static RectF m36954d(RectF rectF, float f) {
-        return new RectF(rectF.left, m36952f(rectF.bottom, f), rectF.right, m36952f(rectF.top, f));
+    public static RectF m36957d(RectF rectF, float f) {
+        return new RectF(rectF.left, m36955f(rectF.bottom, f), rectF.right, m36955f(rectF.top, f));
     }
 
-    public static float m36953e(float f, float f2) {
+    public static float m36956e(float f, float f2) {
         return (f2 + f2) - f;
     }
 
-    public static float m36952f(float f, float f2) {
+    public static float m36955f(float f, float f2) {
         return (f2 + f2) - f;
     }
 
     @SuppressLint({"SwitchIntDef"})
-    public static RectF m36951g(RectF rectF, Rational rational, int i, boolean z, int i2, int i3) {
+    public static RectF m36954g(RectF rectF, Rational rational, int i, boolean z, int i2, int i3) {
         if (i == 3) {
             return rectF;
         }
@@ -102,10 +102,10 @@ public class C1429n {
         }
         RectF rectF3 = new RectF();
         matrix.mapRect(rectF3, rectF2);
-        return m36956b(m36950h(z, i2), i3, rectF, rectF3);
+        return m36959b(m36953h(z, i2), i3, rectF, rectF3);
     }
 
-    public static boolean m36950h(boolean z, int i) {
+    public static boolean m36953h(boolean z, int i) {
         boolean z2 = true;
         if (i != 1) {
             z2 = false;

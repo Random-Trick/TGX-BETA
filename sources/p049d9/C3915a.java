@@ -20,11 +20,11 @@ public class C3915a {
                 return false;
             }
             AbstractC3925j jVar = (AbstractC3925j) obj;
-            return clear() == jVar.clear() && mo29597a() == jVar.mo29597a();
+            return clear() == jVar.clear() && mo29599a() == jVar.mo29599a();
         }
 
         public String toString() {
-            return "P(" + clear() + "|" + mo29597a() + ")";
+            return "P(" + clear() + "|" + mo29599a() + ")";
         }
 
         public AbstractC3916a(C3915a aVar, AbstractC3916a aVar2) {
@@ -43,7 +43,7 @@ public class C3915a {
         }
 
         @Override
-        public long mo29597a() {
+        public long mo29599a() {
             return this.f13223c;
         }
 
@@ -64,7 +64,7 @@ public class C3915a {
         }
 
         @Override
-        public long mo29597a() {
+        public long mo29599a() {
             return this.f13226c;
         }
 
@@ -85,7 +85,7 @@ public class C3915a {
         }
 
         @Override
-        public long mo29597a() {
+        public long mo29599a() {
             return this.f13229c;
         }
 
@@ -106,7 +106,7 @@ public class C3915a {
         }
 
         @Override
-        public long mo29597a() {
+        public long mo29599a() {
             return this.f13232c;
         }
 
@@ -127,7 +127,7 @@ public class C3915a {
         }
 
         @Override
-        public long mo29597a() {
+        public long mo29599a() {
             return this.f13235c;
         }
 
@@ -148,7 +148,7 @@ public class C3915a {
         }
 
         @Override
-        public long mo29597a() {
+        public long mo29599a() {
             return this.f13238c;
         }
 
@@ -169,7 +169,7 @@ public class C3915a {
         }
 
         @Override
-        public long mo29597a() {
+        public long mo29599a() {
             return this.f13241c;
         }
 
@@ -190,7 +190,7 @@ public class C3915a {
         }
 
         @Override
-        public long mo29597a() {
+        public long mo29599a() {
             return this.f13244c;
         }
 
@@ -201,7 +201,7 @@ public class C3915a {
     }
 
     public interface AbstractC3925j {
-        long mo29597a();
+        long mo29599a();
 
         int clear();
     }
@@ -217,7 +217,7 @@ public class C3915a {
         }
 
         @Override
-        public long mo29597a() {
+        public long mo29599a() {
             return this.f13247c;
         }
 
@@ -238,7 +238,7 @@ public class C3915a {
         }
 
         @Override
-        public long mo29597a() {
+        public long mo29599a() {
             return this.f13250c;
         }
 
@@ -259,7 +259,7 @@ public class C3915a {
         }
 
         @Override
-        public long mo29597a() {
+        public long mo29599a() {
             return this.f13253c;
         }
 
@@ -280,7 +280,7 @@ public class C3915a {
         }
 
         @Override
-        public long mo29597a() {
+        public long mo29599a() {
             return this.f13256c;
         }
 
@@ -290,7 +290,7 @@ public class C3915a {
         }
     }
 
-    public AbstractC3925j m29599a(int i, long j) {
+    public AbstractC3925j m29601a(int i, long j) {
         if (i <= 127) {
             if (j <= 127) {
                 return new C3917b(i, j);
@@ -326,7 +326,7 @@ public class C3915a {
         }
     }
 
-    public int m29598b() {
+    public int m29600b() {
         int length = this.f13219a.length;
         AbstractC3925j[] jVarArr = this.f13220b;
         return (jVarArr == null || jVarArr.length <= 0) ? length : length + 2 + (jVarArr.length * 6);
@@ -360,6 +360,6 @@ public class C3915a {
     }
 
     public String toString() {
-        return "Entry{iv=" + C8630c.m11880b(this.f13219a) + ", pairs=" + Arrays.toString(this.f13220b) + '}';
+        return "Entry{iv=" + C8630c.m11879b(this.f13219a) + ", pairs=" + Arrays.toString(this.f13220b) + '}';
     }
 }

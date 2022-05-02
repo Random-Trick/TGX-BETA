@@ -14,18 +14,18 @@ public class C3862b0<T> implements AbstractC6794b<T> {
         this.f13115b = bVar;
     }
 
-    public static <T> C3862b0<T> m29717c() {
+    public static <T> C3862b0<T> m29719c() {
         return new C3862b0<>(f13112c, f13113d);
     }
 
-    public static void m29716d(AbstractC6794b bVar) {
+    public static void m29718d(AbstractC6794b bVar) {
     }
 
-    public static Object m29715e() {
+    public static Object m29717e() {
         return null;
     }
 
-    public void m29714f(AbstractC6794b<T> bVar) {
+    public void m29716f(AbstractC6794b<T> bVar) {
         AbstractC6793a<T> aVar;
         if (this.f13115b == f13113d) {
             synchronized (this) {
@@ -33,7 +33,7 @@ public class C3862b0<T> implements AbstractC6794b<T> {
                 this.f13114a = null;
                 this.f13115b = bVar;
             }
-            aVar.mo19033a(bVar);
+            aVar.mo19034a(bVar);
             return;
         }
         throw new IllegalStateException("provide() can be called only once.");

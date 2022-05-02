@@ -15,19 +15,19 @@ public class C6042b {
         this.f19253d = z4;
     }
 
-    public boolean m21461a() {
+    public boolean m21462a() {
         return this.f19250a;
     }
 
-    public boolean m21460b() {
+    public boolean m21461b() {
         return this.f19252c;
     }
 
-    public boolean m21459c() {
+    public boolean m21460c() {
         return this.f19253d;
     }
 
-    public boolean m21458d() {
+    public boolean m21459d() {
         return this.f19251b;
     }
 

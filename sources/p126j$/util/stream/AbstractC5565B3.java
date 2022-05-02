@@ -10,10 +10,10 @@ public abstract class AbstractC5565B3 extends AbstractC5575D3 implements Abstrac
         super(e, j, j2, 0L, Math.min(e.estimateSize(), j2));
     }
 
-    protected abstract Object mo22137c();
+    protected abstract Object mo22138c();
 
     @Override
-    public void m22450n(Object obj) {
+    public void m22451n(Object obj) {
         Objects.requireNonNull(obj);
         long j = this.f18126a;
         long j2 = this.f18130e;
@@ -22,7 +22,7 @@ public abstract class AbstractC5565B3 extends AbstractC5575D3 implements Abstrac
             if (j3 < j2) {
                 if (j3 < j || ((AbstractC5466E) this.f18128c).estimateSize() + j3 > this.f18127b) {
                     while (this.f18126a > this.f18129d) {
-                        ((AbstractC5466E) this.f18128c).tryAdvance(mo22137c());
+                        ((AbstractC5466E) this.f18128c).tryAdvance(mo22138c());
                         this.f18129d++;
                     }
                     while (this.f18129d < this.f18130e) {
@@ -44,16 +44,16 @@ public abstract class AbstractC5565B3 extends AbstractC5575D3 implements Abstrac
 
     @Override
     public long getExactSizeIfKnown() {
-        return AbstractC5485a.m22569h(this);
+        return AbstractC5485a.m22570h(this);
     }
 
     @Override
     public boolean hasCharacteristics(int i) {
-        return AbstractC5485a.m22568j(this, i);
+        return AbstractC5485a.m22569j(this, i);
     }
 
     @Override
-    public boolean m22452l(Object obj) {
+    public boolean m22453l(Object obj) {
         long j;
         Objects.requireNonNull(obj);
         if (this.f18126a >= this.f18130e) {
@@ -65,7 +65,7 @@ public abstract class AbstractC5565B3 extends AbstractC5575D3 implements Abstrac
             if (j2 <= j) {
                 break;
             }
-            ((AbstractC5466E) this.f18128c).tryAdvance(mo22137c());
+            ((AbstractC5466E) this.f18128c).tryAdvance(mo22138c());
             this.f18129d++;
         }
         if (j >= this.f18130e) {

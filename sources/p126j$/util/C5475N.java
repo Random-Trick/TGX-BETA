@@ -7,13 +7,13 @@ import p126j$.util.function.Consumer;
 
 final class C5475N extends AbstractC5485a implements AbstractC5811y {
     @Override
-    public boolean mo22124a(Consumer consumer) {
-        return AbstractC5485a.m22564q(this, consumer);
+    public boolean mo22125a(Consumer consumer) {
+        return AbstractC5485a.m22565q(this, consumer);
     }
 
     @Override
     public void forEachRemaining(Consumer consumer) {
-        AbstractC5485a.m22572c(this, consumer);
+        AbstractC5485a.m22573c(this, consumer);
     }
 
     @Override
@@ -23,22 +23,22 @@ final class C5475N extends AbstractC5485a implements AbstractC5811y {
 
     @Override
     public long getExactSizeIfKnown() {
-        return AbstractC5485a.m22569h(this);
+        return AbstractC5485a.m22570h(this);
     }
 
     @Override
     public boolean hasCharacteristics(int i) {
-        return AbstractC5485a.m22568j(this, i);
+        return AbstractC5485a.m22569j(this, i);
     }
 
     @Override
-    public boolean mo22123l(AbstractC5525g gVar) {
+    public boolean mo22124l(AbstractC5525g gVar) {
         Objects.requireNonNull(gVar);
         return false;
     }
 
     @Override
-    public void mo22122m(AbstractC5525g gVar) {
+    public void mo22123m(AbstractC5525g gVar) {
         Objects.requireNonNull(gVar);
     }
 }

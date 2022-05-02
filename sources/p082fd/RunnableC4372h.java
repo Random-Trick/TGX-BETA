@@ -5,6 +5,6 @@ public final class RunnableC4372h implements Runnable {
 
     @Override
     public final void run() {
-        C4378j.m28105F();
+        C4378j.m28107F();
     }
 }

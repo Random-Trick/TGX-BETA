@@ -15,17 +15,17 @@ public final class C6085b<O extends C5850a.AbstractC5854d> {
         this.f19308b = aVar;
         this.f19309c = o;
         this.f19310d = str;
-        this.f19307a = C6374q.m20523b(aVar, o, str);
+        this.f19307a = C6374q.m20524b(aVar, o, str);
     }
 
     @RecentlyNonNull
-    public static <O extends C5850a.AbstractC5854d> C6085b<O> m21387a(@RecentlyNonNull C5850a<O> aVar, O o, String str) {
+    public static <O extends C5850a.AbstractC5854d> C6085b<O> m21388a(@RecentlyNonNull C5850a<O> aVar, O o, String str) {
         return new C6085b<>(aVar, o, str);
     }
 
     @RecentlyNonNull
-    public final String m21386b() {
-        return this.f19308b.m21934d();
+    public final String m21387b() {
+        return this.f19308b.m21935d();
     }
 
     public final boolean equals(Object obj) {
@@ -39,7 +39,7 @@ public final class C6085b<O extends C5850a.AbstractC5854d> {
             return false;
         }
         C6085b bVar = (C6085b) obj;
-        return C6374q.m20524a(this.f19308b, bVar.f19308b) && C6374q.m20524a(this.f19309c, bVar.f19309c) && C6374q.m20524a(this.f19310d, bVar.f19310d);
+        return C6374q.m20525a(this.f19308b, bVar.f19308b) && C6374q.m20525a(this.f19309c, bVar.f19309c) && C6374q.m20525a(this.f19310d, bVar.f19310d);
     }
 
     public final int hashCode() {

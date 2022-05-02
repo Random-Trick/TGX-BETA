@@ -8,6 +8,6 @@ public final class C5256b implements AbstractC4516g {
 
     @Override
     public final void mo5165a(Object obj, AbstractC4517h hVar) {
-        C5258d.m23515n((Boolean) obj, hVar);
+        C5258d.m23516n((Boolean) obj, hVar);
     }
 }

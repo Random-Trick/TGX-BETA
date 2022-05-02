@@ -13,23 +13,23 @@ public final class C1195e0 implements AbstractC1232u {
         this.f4489a = dVar;
     }
 
-    public void m38090a(long j) {
+    public void m38093a(long j) {
         this.f4491c = j;
         if (this.f4490b) {
-            this.f4487M = this.f4489a.mo38081d();
+            this.f4487M = this.f4489a.mo38084d();
         }
     }
 
-    public void m38089b() {
+    public void m38092b() {
         if (!this.f4490b) {
-            this.f4487M = this.f4489a.mo38081d();
+            this.f4487M = this.f4489a.mo38084d();
             this.f4490b = true;
         }
     }
 
-    public void m38088c() {
+    public void m38091c() {
         if (this.f4490b) {
-            m38090a(mo15503g());
+            m38093a(mo15503g());
             this.f4490b = false;
         }
     }
@@ -37,7 +37,7 @@ public final class C1195e0 implements AbstractC1232u {
     @Override
     public void mo15504d(C6613h2 h2Var) {
         if (this.f4490b) {
-            m38090a(mo15503g());
+            m38093a(mo15503g());
         }
         this.f4488N = h2Var;
     }
@@ -49,12 +49,12 @@ public final class C1195e0 implements AbstractC1232u {
         if (!this.f4490b) {
             return j2;
         }
-        long d = this.f4489a.mo38081d() - this.f4487M;
+        long d = this.f4489a.mo38084d() - this.f4487M;
         C6613h2 h2Var = this.f4488N;
         if (h2Var.f20671a == 1.0f) {
-            j = C1216l0.m37953q0(d);
+            j = C1216l0.m37956q0(d);
         } else {
-            j = h2Var.m19785b(d);
+            j = h2Var.m19786b(d);
         }
         return j2 + j;
     }

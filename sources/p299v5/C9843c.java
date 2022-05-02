@@ -5,7 +5,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public final class C9843c {
-    public static final ClassLoader f32122a = C9843c.class.getClassLoader();
+    public static final ClassLoader f32125a = C9843c.class.getClassLoader();
 
     public static void m6757a(Parcel parcel, boolean z) {
         parcel.writeInt(z ? 1 : 0);

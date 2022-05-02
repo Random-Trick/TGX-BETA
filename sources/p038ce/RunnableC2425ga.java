@@ -120,10 +120,10 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
 
         @Override
         public void mo1364b() {
-            if (!this.f8347M.f8359c && !RunnableC2425ga.this.m9347Sa() && !this.f8347M.m34547e(1)) {
-                C6924j2 Zf = RunnableC2425ga.this.m34584Zf(this.f8347M);
+            if (!this.f8347M.f8359c && !RunnableC2425ga.this.m9347Sa() && !this.f8347M.m34550e(1)) {
+                C6924j2 Zf = RunnableC2425ga.this.m34587Zf(this.f8347M);
                 if (Zf != null) {
-                    this.f8347M.m34545g(Zf, 1);
+                    this.f8347M.m34548g(Zf, 1);
                 } else {
                     this.f8347M.f8362f = true;
                 }
@@ -161,10 +161,10 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
             int size2 = View.MeasureSpec.getSize(i2);
             if (size >= size2) {
                 size /= 2;
-                RunnableC2425ga.this.f8335o0.m34515m(true);
+                RunnableC2425ga.this.f8335o0.m34518m(true);
             } else {
                 size2 -= Math.min(size, size2 / 2);
-                RunnableC2425ga.this.f8335o0.m34515m(false);
+                RunnableC2425ga.this.f8335o0.m34518m(false);
             }
             super.onMeasure(View.MeasureSpec.makeMeasureSpec(size, Log.TAG_TDLIB_OPTIONS), View.MeasureSpec.makeMeasureSpec(size2, Log.TAG_TDLIB_OPTIONS));
         }
@@ -185,8 +185,8 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         public void onMeasure(int i, int i2) {
             super.onMeasure(i, i2);
             if (getLayout() != null && getLayout().getLineCount() > 0) {
-                int i3 = C1357a0.m37541i(24.0f);
-                int measuredWidth = (getMeasuredWidth() / 2) + (((int) getLayout().getLineWidth(0)) / 2) + C1357a0.m37541i(16.0f);
+                int i3 = C1357a0.m37544i(24.0f);
+                int measuredWidth = (getMeasuredWidth() / 2) + (((int) getLayout().getLineWidth(0)) / 2) + C1357a0.m37544i(16.0f);
                 int measuredHeight = getMeasuredHeight() / 2;
                 int i4 = i3 / 2;
                 RunnableC2425ga.this.f8345y0.m18274p(measuredWidth - i4, measuredHeight - i4, measuredWidth + i4, measuredHeight + i4);
@@ -214,9 +214,9 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
 
         @Override
         public void mo45P5(int i, float f, float f2, C3950k kVar) {
-            RunnableC2425ga.this.f8344x0.setTranslationY((C1357a0.m37541i(48.0f) + C1357a0.m37541i(16.0f)) * (1.0f - f));
-            RunnableC2425ga.this.f8343w0.setTranslationY((-C1357a0.m37541i(48.0f)) * f);
-            RunnableC2425ga.this.f8335o0.m34514n(f);
+            RunnableC2425ga.this.f8344x0.setTranslationY((C1357a0.m37544i(48.0f) + C1357a0.m37544i(16.0f)) * (1.0f - f));
+            RunnableC2425ga.this.f8343w0.setTranslationY((-C1357a0.m37544i(48.0f)) * f);
+            RunnableC2425ga.this.f8335o0.m34517n(f);
         }
 
         @Override
@@ -230,7 +230,7 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
 
         @Override
         public void mo1364b() {
-            RunnableC2425ga.this.m34578cg();
+            RunnableC2425ga.this.m34581cg();
         }
     }
 
@@ -281,20 +281,20 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
             this.f8357a = jVar;
         }
 
-        public void m34550b() {
+        public void m34553b() {
             if (!this.f8359c) {
                 this.f8359c = true;
-                m34549c();
-                m34546f(null);
+                m34552c();
+                m34549f(null);
                 this.f8362f = false;
             }
         }
 
-        public void m34549c() {
-            m34545g(null, 0);
+        public void m34552c() {
+            m34548g(null, 0);
         }
 
-        public final C2436k m34548d() {
+        public final C2436k m34551d() {
             C6924j2 j2Var = this.f8360d;
             if (j2Var == null || j2Var.m18446A2() || this.f8360d.getBoundView() == null || !(this.f8360d.getBoundView().getTag() instanceof C2436k)) {
                 return null;
@@ -302,24 +302,24 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
             return (C2436k) this.f8360d.getBoundView().getTag();
         }
 
-        public boolean m34547e(int i) {
-            C2436k d = m34548d();
+        public boolean m34550e(int i) {
+            C2436k d = m34551d();
             return d != null && d.f8370b == i;
         }
 
-        public void m34546f(AbstractRunnableC5910b bVar) {
+        public void m34549f(AbstractRunnableC5910b bVar) {
             AbstractRunnableC5910b bVar2 = this.f8361e;
             if (bVar2 != null) {
-                bVar2.m21857c();
+                bVar2.m21858c();
             }
             this.f8361e = bVar;
         }
 
-        public void m34545g(C6924j2 j2Var, int i) {
+        public void m34548g(C6924j2 j2Var, int i) {
             C6924j2 j2Var2 = this.f8360d;
             if (j2Var2 != null && !j2Var2.m18446A2()) {
                 C6924j2 j2Var3 = this.f8360d;
-                j2Var3.m18408y2(C1379j0.m37307r(j2Var3.getContext()).m14582I0() == 0);
+                j2Var3.m18408y2(C1379j0.m37310r(j2Var3.getContext()).m14582I0() == 0);
             }
             this.f8360d = j2Var;
             if (j2Var != null) {
@@ -341,44 +341,44 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
             this.f8364b = i;
         }
 
-        public void m34535j(C10930q6 q6Var, boolean z) {
+        public void m34538j(C10930q6 q6Var, boolean z) {
             C10930q6 q6Var2 = this.f8365c;
             if (q6Var2 == q6Var || z) {
                 if (q6Var2 == q6Var) {
                     this.f8365c = null;
                 }
                 if (z) {
-                    m34528q();
+                    m34531q();
                 }
-                m34529p(z);
+                m34532p(z);
             }
         }
 
-        public void m34534k(final C10930q6 q6Var, final boolean z) {
+        public void m34537k(final C10930q6 q6Var, final boolean z) {
             if (!z) {
                 Log.m14724e("Failed to load language from intro", new Object[0]);
             }
             q6Var.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    RunnableC2425ga.C2435j.this.m34535j(q6Var, z);
+                    RunnableC2425ga.C2435j.this.m34538j(q6Var, z);
                 }
             });
         }
 
-        public void m34533l(C10930q6 q6Var, boolean z) {
+        public void m34536l(C10930q6 q6Var, boolean z) {
             C10930q6 q6Var2 = this.f8366d;
             if (q6Var2 == q6Var || z) {
                 if (q6Var2 == q6Var) {
                     this.f8366d = null;
                 }
                 if (z) {
-                    m34528q();
+                    m34531q();
                 }
             }
         }
 
-        public void m34532m(final C10930q6 q6Var, Map map) {
+        public void m34535m(final C10930q6 q6Var, Map map) {
             final boolean z = map != null;
             if (!z) {
                 Log.m14724e("Failed to load intro strings", new Object[0]);
@@ -386,13 +386,13 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
             q6Var.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    RunnableC2425ga.C2435j.this.m34533l(q6Var, z);
+                    RunnableC2425ga.C2435j.this.m34536l(q6Var, z);
                 }
             });
         }
 
-        public void m34540e(Runnable runnable) {
-            if (m34536i()) {
+        public void m34543e(Runnable runnable) {
+            if (m34539i()) {
                 runnable.run();
                 return;
             }
@@ -405,11 +405,11 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         }
 
         public boolean equals(Object obj) {
-            return (obj instanceof C2435j) && ((C2435j) obj).m34538g().equals(m34538g());
+            return (obj instanceof C2435j) && ((C2435j) obj).m34541g().equals(m34541g());
         }
 
-        public void m34539f(AbstractC5917i iVar) {
-            if (m34537h()) {
+        public void m34542f(AbstractC5917i iVar) {
+            if (m34540h()) {
                 iVar.mo1322a(true);
                 return;
             }
@@ -419,44 +419,44 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
             this.f8367e.add(iVar);
         }
 
-        public String m34538g() {
-            return this.f8363a.f25405id;
+        public String m34541g() {
+            return this.f8363a.f25408id;
         }
 
-        public boolean m34537h() {
+        public boolean m34540h() {
             return this.f8364b == 2;
         }
 
-        public boolean m34536i() {
+        public boolean m34539i() {
             int i = this.f8364b;
             return i == 2 || i == 1;
         }
 
-        public void m34531n(final C10930q6 q6Var) {
-            if (this.f8365c != q6Var && !m34537h()) {
+        public void m34534n(final C10930q6 q6Var) {
+            if (this.f8365c != q6Var && !m34540h()) {
                 this.f8365c = q6Var;
                 q6Var.m2794Jc(this.f8363a, new AbstractC5917i() {
                     @Override
                     public final void mo1322a(boolean z) {
-                        RunnableC2425ga.C2435j.this.m34534k(q6Var, z);
+                        RunnableC2425ga.C2435j.this.m34537k(q6Var, z);
                     }
                 });
             }
         }
 
-        public void m34530o(final C10930q6 q6Var) {
-            if (this.f8365c != q6Var && this.f8366d != q6Var && !m34536i()) {
+        public void m34533o(final C10930q6 q6Var) {
+            if (this.f8365c != q6Var && this.f8366d != q6Var && !m34539i()) {
                 this.f8366d = q6Var;
-                q6Var.m2508c6(this.f8363a, C4403w.m28010A0(RunnableC2425ga.m34555wf()), new AbstractC5918j() {
+                q6Var.m2508c6(this.f8363a, C4403w.m28012A0(RunnableC2425ga.m34558wf()), new AbstractC5918j() {
                     @Override
                     public final void mo1330a(Object obj) {
-                        RunnableC2425ga.C2435j.this.m34532m(q6Var, (Map) obj);
+                        RunnableC2425ga.C2435j.this.m34535m(q6Var, (Map) obj);
                     }
                 });
             }
         }
 
-        public final void m34529p(boolean z) {
+        public final void m34532p(boolean z) {
             if (z && this.f8364b != 2) {
                 this.f8364b = 2;
             }
@@ -469,7 +469,7 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
             }
         }
 
-        public final void m34528q() {
+        public final void m34531q() {
             if (this.f8364b == 0) {
                 this.f8364b = 1;
             }
@@ -513,29 +513,29 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         public int f8380V = -1;
         public StaticLayout[] f8387c0 = new StaticLayout[6];
         public final float[] f8371M = new float[6];
-        public int f8372N = C1357a0.m37541i(16.0f);
-        public int f8373O = C1357a0.m37541i(42.0f);
-        public int f8386c = C1357a0.m37541i(22.0f);
+        public int f8372N = C1357a0.m37544i(16.0f);
+        public int f8373O = C1357a0.m37544i(42.0f);
+        public int f8386c = C1357a0.m37544i(22.0f);
 
         public C2437l(Context context) {
             super(context);
             Paint paint = new Paint(5);
             this.f8382a = paint;
-            paint.setTextSize(C1357a0.m37541i(24.0f));
-            this.f8382a.setTypeface(C1389o.m37260i());
+            paint.setTextSize(C1357a0.m37544i(24.0f));
+            this.f8382a.setTypeface(C1389o.m37263i());
             this.f8382a.setColor(C11524j.m217S0());
             TextPaint textPaint = new TextPaint(5);
             this.f8384b = textPaint;
-            textPaint.setTextSize(C1357a0.m37541i(16.0f));
-            this.f8384b.setTypeface(C1389o.m37258k());
+            textPaint.setTextSize(C1357a0.m37544i(16.0f));
+            this.f8384b.setTypeface(C1389o.m37261k());
             this.f8384b.setColor(C11524j.m217S0());
         }
 
-        public static int m34524d() {
-            return C1357a0.m37541i(3.0f);
+        public static int m34527d() {
+            return C1357a0.m37544i(3.0f);
         }
 
-        public final StaticLayout m34527a(int i, CharSequence charSequence) {
+        public final StaticLayout m34530a(int i, CharSequence charSequence) {
             StaticLayout[] staticLayoutArr;
             int measuredWidth = getMeasuredWidth();
             if (i == -1 || charSequence == null || measuredWidth == 0) {
@@ -557,15 +557,15 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
                 return staticLayoutArr2[i];
             }
             TextPaint textPaint = this.f8384b;
-            if (measuredWidth - (C1357a0.m37541i(16.0f) * 2) >= 0) {
-                measuredWidth -= C1357a0.m37541i(16.0f) * 2;
+            if (measuredWidth - (C1357a0.m37544i(16.0f) * 2) >= 0) {
+                measuredWidth -= C1357a0.m37544i(16.0f) * 2;
             }
-            StaticLayout staticLayout2 = new StaticLayout(charSequence, textPaint, measuredWidth, Layout.Alignment.ALIGN_CENTER, 1.0f, m34524d(), false);
+            StaticLayout staticLayout2 = new StaticLayout(charSequence, textPaint, measuredWidth, Layout.Alignment.ALIGN_CENTER, 1.0f, m34527d(), false);
             this.f8387c0[i] = staticLayout2;
             return staticLayout2;
         }
 
-        public final float m34526b(int i, String str) {
+        public final float m34529b(int i, String str) {
             float[] fArr = this.f8371M;
             if (fArr[i] != 0.0f) {
                 return fArr[i];
@@ -575,22 +575,22 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
             return T1;
         }
 
-        public void m34525c(RunnableC2425ga gaVar) {
+        public void m34528c(RunnableC2425ga gaVar) {
             gaVar.m9471Ba().m73g(this.f8382a, R.id.theme_color_text, 5);
             gaVar.m9471Ba().m73g(this.f8384b, R.id.theme_color_text, 5);
         }
 
-        public void m34523e(int i, CharSequence... charSequenceArr) {
+        public void m34526e(int i, CharSequence... charSequenceArr) {
             StaticLayout[] staticLayoutArr;
             this.f8388d0 = i;
             int i2 = 0;
             for (StaticLayout staticLayout : this.f8387c0) {
-                this.f8387c0[i2] = new StaticLayout(charSequenceArr[i2], this.f8384b, i - (C1357a0.m37541i(16.0f) * 2) < 0 ? i : i - (C1357a0.m37541i(16.0f) * 2), Layout.Alignment.ALIGN_CENTER, 1.0f, m34524d(), false);
+                this.f8387c0[i2] = new StaticLayout(charSequenceArr[i2], this.f8384b, i - (C1357a0.m37544i(16.0f) * 2) < 0 ? i : i - (C1357a0.m37544i(16.0f) * 2), Layout.Alignment.ALIGN_CENTER, 1.0f, m34527d(), false);
                 i2++;
             }
         }
 
-        public void m34522f(String... strArr) {
+        public void m34525f(String... strArr) {
             float[] fArr;
             int i = 0;
             for (float f : this.f8371M) {
@@ -599,11 +599,11 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
             }
         }
 
-        public void m34521g() {
-            C5062b.m24164h(this.f8387c0);
+        public void m34524g() {
+            C5062b.m24165h(this.f8387c0);
         }
 
-        public void m34520h() {
+        public void m34523h() {
             int i = 0;
             while (true) {
                 float[] fArr = this.f8371M;
@@ -616,14 +616,14 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
             }
         }
 
-        public void m34519i(int i, String str, CharSequence charSequence) {
+        public void m34522i(int i, String str, CharSequence charSequence) {
             this.f8376R = i;
             this.f8377S = str;
-            this.f8378T = m34526b(i, str);
+            this.f8378T = m34529b(i, str);
             this.f8379U = charSequence;
         }
 
-        public void m34518j(float f, float f2) {
+        public void m34521j(float f, float f2) {
             if (this.f8389e0 != f || this.f8390f0 != f2) {
                 this.f8389e0 = f;
                 this.f8390f0 = f2;
@@ -634,7 +634,7 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
             }
         }
 
-        public void m34517k(int i, float f) {
+        public void m34520k(int i, float f) {
             if (this.f8391g0 != i || this.f8390f0 != f) {
                 this.f8391g0 = i;
                 this.f8390f0 = f;
@@ -643,7 +643,7 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
             }
         }
 
-        public void m34516l(int i, String str, CharSequence charSequence) {
+        public void m34519l(int i, String str, CharSequence charSequence) {
             this.f8380V = i;
             if (i == -1) {
                 this.f8381W = null;
@@ -652,15 +652,15 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
                 return;
             }
             this.f8381W = str;
-            this.f8383a0 = m34526b(i, str);
+            this.f8383a0 = m34529b(i, str);
             this.f8385b0 = charSequence;
         }
 
-        public void m34515m(boolean z) {
+        public void m34518m(boolean z) {
             this.f8374P = z;
         }
 
-        public void m34514n(float f) {
+        public void m34517n(float f) {
             if (this.f8375Q != f) {
                 this.f8375Q = f;
                 invalidate();
@@ -675,8 +675,8 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         @Override
         public void onMeasure(int i, int i2) {
             super.onMeasure(i, i2);
-            m34527a(this.f8376R, this.f8379U);
-            m34527a(this.f8380V, this.f8385b0);
+            m34530a(this.f8376R, this.f8379U);
+            m34530a(this.f8380V, this.f8385b0);
         }
     }
 
@@ -684,63 +684,63 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         super(context, null);
     }
 
-    public static int m34620Af(int i, boolean z) {
+    public static int m34623Af(int i, boolean z) {
         return i != 0 ? i != 1 ? i != 2 ? i != 3 ? i != 4 ? i != 5 ? z ? R.string.Page1Message : R.string.Page1Title : z ? R.string.Page6Message : R.string.Page6Title : z ? R.string.Page5Message : R.string.Page5Title : z ? R.string.Page4Message : R.string.Page4Title : z ? R.string.Page3Message : R.string.Page3Title : z ? R.string.Page2Message : R.string.Page2Title : z ? R.string.Page1Message : R.string.Page1Title;
     }
 
-    public static boolean m34617Df() {
-        if (!C4868i.m24726c2().m24694g2()) {
+    public static boolean m34620Df() {
+        if (!C4868i.m24727c2().m24695g2()) {
             return false;
         }
         Log.m14709w("Not showing intro controller, because it has failed once", new Object[0]);
         return true;
     }
 
-    public void m34616Ef() {
+    public void m34619Ef() {
         if (!m9347Sa()) {
-            m34600Rf(this.f8337q0);
+            m34603Rf(this.f8337q0);
         }
     }
 
-    public boolean m34615Ff(View view, int i) {
+    public boolean m34618Ff(View view, int i) {
         if (i == R.id.btn_log_files) {
-            m9291ac(new View$OnClickListenerC3209vr(this.f30165a, m34554xf()));
+            m9291ac(new View$OnClickListenerC3209vr(this.f30168a, m34557xf()));
         } else if (i == R.id.btn_proxy) {
-            m34554xf().m2485dd().m3409x7(new C10534a9(this.f30165a, m34554xf()), true);
-        } else if (i == R.id.btn_test && !C1379j0.m37358J()) {
+            m34557xf().m2485dd().m3409x7(new C10534a9(this.f30168a, m34557xf()), true);
+        } else if (i == R.id.btn_test && !C1379j0.m37361J()) {
             C1379j0.f5013g = 2;
-            m34598Sf(true);
+            m34601Sf(true);
         }
         return true;
     }
 
-    public void m34614Gf() {
+    public void m34617Gf() {
         if (!this.f8336p0) {
             this.f8334n0.setVisibility(0);
-            m34592Vf();
+            m34595Vf();
         }
     }
 
-    public void m34613Hf(String str, TdApi.LanguagePackInfo languagePackInfo) {
+    public void m34616Hf(String str, TdApi.LanguagePackInfo languagePackInfo) {
         if (!m9347Sa()) {
-            m34588Xf(str, languagePackInfo);
-            m34565mf();
+            m34591Xf(str, languagePackInfo);
+            m34568mf();
         }
     }
 
-    public void m34612If(C2434i iVar, boolean z) {
+    public void m34615If(C2434i iVar, boolean z) {
         if (z) {
-            m34600Rf(iVar);
+            m34603Rf(iVar);
             return;
         }
         Log.m14724e("Unexpected server error. Proceeding in English.", new Object[0]);
-        m34594Uf(true);
+        m34597Uf(true);
     }
 
-    public boolean m34611Jf(TdApi.LanguagePackInfo languagePackInfo, View view, int i) {
+    public boolean m34614Jf(TdApi.LanguagePackInfo languagePackInfo, View view, int i) {
         String str;
         if (i == R.id.btn_help) {
-            TdApi.NetworkType ea = m34554xf().m2472ea();
+            TdApi.NetworkType ea = m34557xf().m2472ea();
             if (ea != null) {
                 switch (ea.getConstructor()) {
                     case TdApi.NetworkTypeMobileRoaming.CONSTRUCTOR:
@@ -762,58 +762,58 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
             } else {
                 str = "Unknown";
             }
-            if (m34554xf().m2704P6()) {
-                str = str + ", " + C4403w.m27861k1(languagePackInfo, R.string.Connected);
+            if (m34557xf().m2704P6()) {
+                str = str + ", " + C4403w.m27863k1(languagePackInfo, R.string.Connected);
             }
-            C1405v.m37130M(C4403w.m27821u1(R.string.email_SmsHelp, new Object[0]), C4403w.m27861k1(languagePackInfo, R.string.email_LoginTooLong_subject), C4403w.m27857l1(languagePackInfo, R.string.email_LoginTooLong_text, "0.24.6.1506-arm64-v8a", languagePackInfo.f25405id, C4403w.m27818v0((int) (m34554xf().m2547Zc() / 1000)) + " (" + str + ")", C10536ab.m4764P0(), C10536ab.m4760Q0()), C4403w.m27861k1(languagePackInfo, R.string.HelpEmailError));
+            C1405v.m37133M(C4403w.m27823u1(R.string.email_SmsHelp, new Object[0]), C4403w.m27863k1(languagePackInfo, R.string.email_LoginTooLong_subject), C4403w.m27859l1(languagePackInfo, R.string.email_LoginTooLong_text, "0.24.6.1507-arm64-v8a", languagePackInfo.f25408id, C4403w.m27820v0((int) (m34557xf().m2547Zc() / 1000)) + " (" + str + ")", C10536ab.m4764P0(), C10536ab.m4760Q0()), C4403w.m27863k1(languagePackInfo, R.string.HelpEmailError));
         } else if (i == R.id.btn_proxy) {
-            m34554xf().m2485dd().m3409x7(new C10534a9(this.f30165a, m34554xf()), true);
+            m34557xf().m2485dd().m3409x7(new C10534a9(this.f30168a, m34557xf()), true);
         }
         return true;
     }
 
-    public void m34610Kf(View view) {
+    public void m34613Kf(View view) {
         if (!m9347Sa()) {
             view.setVisibility(0);
         }
     }
 
-    public boolean m34609Lf(C2434i iVar, boolean z) {
+    public boolean m34612Lf(C2434i iVar, boolean z) {
         if (this.f8337q0 != iVar) {
             return false;
         }
-        m34567kf();
+        m34570kf();
         return false;
     }
 
-    public static boolean m34608Mf(View view, int i) {
+    public static boolean m34611Mf(View view, int i) {
         if (i != R.id.btn_settings) {
             return true;
         }
         if (C7389v0.m16644d1()) {
-            C1405v.m37108m();
+            C1405v.m37111m();
             return true;
         }
-        C1405v.m37136G();
+        C1405v.m37139G();
         return true;
     }
 
-    public boolean m34607Nf(C2434i iVar, boolean z) {
+    public boolean m34610Nf(C2434i iVar, boolean z) {
         if (this.f8337q0 != iVar) {
             return false;
         }
-        m34567kf();
+        m34570kf();
         return false;
     }
 
-    public static void m34586Yf(boolean z) {
+    public static void m34589Yf(boolean z) {
         if (f8316Q0 != z) {
             f8316Q0 = z;
-            C4868i.m24726c2().m24817P4(z);
+            C4868i.m24727c2().m24818P4(z);
         }
     }
 
-    public static boolean m34569if(int i) {
+    public static boolean m34572if(int i) {
         switch (i) {
             case R.string.Page1Message:
             case R.string.Page1Title:
@@ -833,7 +833,7 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         }
     }
 
-    public static int[] m34555wf() {
+    public static int[] m34558wf() {
         return new int[]{R.string.StartMessaging, R.string.Page1Title, R.string.Page1Message, R.string.Page2Title, R.string.Page2Message, R.string.Page3Title, R.string.Page3Message, R.string.Page4Title, R.string.Page4Message, R.string.Page5Title, R.string.Page5Message, R.string.Page6Title, R.string.Page6Message};
     }
 
@@ -843,10 +843,10 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         View view = this.f8334n0;
         if (view != null && view.getVisibility() != 0) {
             this.f8336p0 = false;
-            C1379j0.m37332e0(new Runnable() {
+            C1379j0.m37335e0(new Runnable() {
                 @Override
                 public final void run() {
-                    RunnableC2425ga.this.m34614Gf();
+                    RunnableC2425ga.this.m34617Gf();
                 }
             }, 50L);
         }
@@ -857,17 +857,17 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         return false;
     }
 
-    public final void m34619Bf() {
-        TdApi.LanguagePackInfo f0 = C4403w.m27882f0();
-        TdApi.LanguagePackInfo Y = C4403w.m27915Y();
+    public final void m34622Bf() {
+        TdApi.LanguagePackInfo f0 = C4403w.m27884f0();
+        TdApi.LanguagePackInfo Y = C4403w.m27917Y();
         this.f8340t0 = new C2435j(Y, 2);
-        if (f0.f25405id.equals(Y.f25405id)) {
+        if (f0.f25408id.equals(Y.f25408id)) {
             this.f8341u0 = this.f8340t0;
         } else {
             this.f8341u0 = new C2435j(f0, 1);
         }
         this.f8339s0 = this.f8341u0;
-        m34588Xf(m34554xf().m2890Dc(), m34554xf().m2874Ec());
+        m34591Xf(m34557xf().m2890Dc(), m34557xf().m2874Ec());
     }
 
     @Override
@@ -875,14 +875,14 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         C11008t0.m1997e(this, y6Var, i, i2);
     }
 
-    public final void m34618Cf(GL10 gl10) {
-        C7888N.setIcTextures(m34606Of(gl10, R.drawable.intro_ic_bubble_dot), m34606Of(gl10, R.drawable.intro_ic_bubble), m34606Of(gl10, R.drawable.intro_ic_cam_lens), m34606Of(gl10, R.drawable.intro_ic_cam), m34606Of(gl10, R.drawable.intro_ic_pencil), m34606Of(gl10, R.drawable.intro_ic_pin), m34606Of(gl10, R.drawable.intro_ic_smile_eye), m34606Of(gl10, R.drawable.intro_ic_smile), m34606Of(gl10, R.drawable.intro_ic_videocam));
-        C7888N.setTelegramTextures(m34604Pf(gl10, m34557uf()), m34606Of(gl10, R.drawable.intro_tg_plane));
-        C7888N.setPowerfulTextures(m34606Of(gl10, R.drawable.intro_powerful_mask), m34606Of(gl10, R.drawable.intro_powerful_star), m34606Of(gl10, R.drawable.intro_powerful_infinity), m34606Of(gl10, R.drawable.intro_powerful_infinity_white));
-        C7888N.setPrivateTextures(m34606Of(gl10, R.drawable.intro_private_door), m34606Of(gl10, R.drawable.intro_private_screw));
-        C7888N.setFastTextures(m34606Of(gl10, R.drawable.intro_fast_body), m34606Of(gl10, R.drawable.intro_fast_spiral), m34606Of(gl10, R.drawable.intro_fast_arrow), m34606Of(gl10, R.drawable.intro_fast_arrow_shadow));
-        C7888N.setFreeTextures(m34606Of(gl10, R.drawable.intro_knot_up), m34606Of(gl10, R.drawable.intro_knot_down));
-        m34570hf(C11524j.m148w());
+    public final void m34621Cf(GL10 gl10) {
+        C7888N.setIcTextures(m34609Of(gl10, R.drawable.intro_ic_bubble_dot), m34609Of(gl10, R.drawable.intro_ic_bubble), m34609Of(gl10, R.drawable.intro_ic_cam_lens), m34609Of(gl10, R.drawable.intro_ic_cam), m34609Of(gl10, R.drawable.intro_ic_pencil), m34609Of(gl10, R.drawable.intro_ic_pin), m34609Of(gl10, R.drawable.intro_ic_smile_eye), m34609Of(gl10, R.drawable.intro_ic_smile), m34609Of(gl10, R.drawable.intro_ic_videocam));
+        C7888N.setTelegramTextures(m34607Pf(gl10, m34560uf()), m34609Of(gl10, R.drawable.intro_tg_plane));
+        C7888N.setPowerfulTextures(m34609Of(gl10, R.drawable.intro_powerful_mask), m34609Of(gl10, R.drawable.intro_powerful_star), m34609Of(gl10, R.drawable.intro_powerful_infinity), m34609Of(gl10, R.drawable.intro_powerful_infinity_white));
+        C7888N.setPrivateTextures(m34609Of(gl10, R.drawable.intro_private_door), m34609Of(gl10, R.drawable.intro_private_screw));
+        C7888N.setFastTextures(m34609Of(gl10, R.drawable.intro_fast_body), m34609Of(gl10, R.drawable.intro_fast_spiral), m34609Of(gl10, R.drawable.intro_fast_arrow), m34609Of(gl10, R.drawable.intro_fast_arrow_shadow));
+        C7888N.setFreeTextures(m34609Of(gl10, R.drawable.intro_knot_up), m34609Of(gl10, R.drawable.intro_knot_down));
+        m34573hf(C11524j.m148w());
         C7888N.onSurfaceCreated();
     }
 
@@ -916,11 +916,11 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         C11008t0.m1994h(this, q6Var, z);
     }
 
-    public final int m34606Of(GL10 gl10, int i) {
-        return m34604Pf(gl10, m34553yf(i));
+    public final int m34609Of(GL10 gl10, int i) {
+        return m34607Pf(gl10, m34556yf(i));
     }
 
-    public final int m34604Pf(GL10 gl10, Bitmap bitmap) {
+    public final int m34607Pf(GL10 gl10, Bitmap bitmap) {
         this.f8330M0[0] = 0;
         int[] iArr = this.f8332O0;
         iArr[0] = 0;
@@ -949,8 +949,8 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         C11020tb.m1985d(this, suggestedActionArr, suggestedActionArr2);
     }
 
-    public final boolean m34602Qf() {
-        return !m9347Sa() && m34554xf().m2155y7();
+    public final boolean m34605Qf() {
+        return !m9347Sa() && m34557xf().m2155y7();
     }
 
     @Override
@@ -958,56 +958,56 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         return R.id.controller_intro;
     }
 
-    public final void m34600Rf(final C2434i iVar) {
+    public final void m34603Rf(final C2434i iVar) {
         if (iVar != null && !iVar.f8359c) {
             this.f8337q0 = iVar;
-            iVar.m34546f(null);
+            iVar.m34549f(null);
             iVar.f8362f = false;
-            if (m34602Qf()) {
-                if (!iVar.m34547e(0)) {
-                    C6924j2 ag = m34582ag(iVar);
+            if (m34605Qf()) {
+                if (!iVar.m34550e(0)) {
+                    C6924j2 ag = m34585ag(iVar);
                     if (ag != null) {
-                        m34564nf();
-                        iVar.m34545g(ag, 0);
+                        m34567nf();
+                        iVar.m34548g(ag, 0);
                         return;
                     }
                     iVar.f8362f = true;
-                    iVar.m34549c();
+                    iVar.m34552c();
                 }
-            } else if (!iVar.f8357a.m34537h()) {
-                if (!iVar.m34547e(1)) {
-                    iVar.m34549c();
+            } else if (!iVar.f8357a.m34540h()) {
+                if (!iVar.m34550e(1)) {
+                    iVar.m34552c();
                 }
-                m34564nf();
+                m34567nf();
                 if (!iVar.f8358b) {
                     iVar.f8358b = true;
-                    iVar.f8357a.m34539f(new AbstractC5917i() {
+                    iVar.f8357a.m34542f(new AbstractC5917i() {
                         @Override
                         public final void mo1322a(boolean z) {
-                            RunnableC2425ga.this.m34612If(iVar, z);
+                            RunnableC2425ga.this.m34615If(iVar, z);
                         }
                     });
                 }
-                iVar.f8357a.m34531n(m34554xf());
+                iVar.f8357a.m34534n(m34557xf());
                 C2426a aVar = new C2426a(iVar);
-                iVar.m34546f(aVar);
-                m34554xf().m2485dd().postDelayed(aVar, m34554xf().m2464f2(4000L));
+                iVar.m34549f(aVar);
+                m34557xf().m2485dd().postDelayed(aVar, m34557xf().m2464f2(4000L));
             } else {
-                iVar.m34549c();
+                iVar.m34552c();
                 this.f8338r0 = true;
-                C4403w.m27831s(iVar.f8357a.f8363a);
+                C4403w.m27833s(iVar.f8357a.f8363a);
                 this.f8337q0 = null;
-                m34564nf();
-                m9291ac(new View$OnClickListenerC2393fk(this.f30165a, m34554xf()));
+                m34567nf();
+                m9291ac(new View$OnClickListenerC2393fk(this.f30168a, m34557xf()));
             }
         }
     }
 
-    public final void m34598Sf(boolean z) {
-        if (m34554xf().m2949A1().m1504G() != z) {
-            ((MainActivity) this.f30165a).m14632r4(z);
+    public final void m34601Sf(boolean z) {
+        if (m34557xf().m2949A1().m1504G() != z) {
+            ((MainActivity) this.f30168a).m14631s4(z);
         }
-        m34594Uf(false);
+        m34597Uf(false);
     }
 
     @Override
@@ -1017,55 +1017,55 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
             if (i == 0) {
                 TextView textView = this.f8343w0;
                 if (textView != null) {
-                    textView.setText(m34556vf(R.string.StartMessaging));
+                    textView.setText(m34559vf(R.string.StartMessaging));
                 }
                 if (this.f8335o0 != null) {
-                    m34574eg();
+                    m34577eg();
                 }
             } else if (i == 2) {
                 TextView textView2 = this.f8343w0;
                 if (textView2 != null && i2 == R.string.StartMessaging) {
-                    textView2.setText(m34556vf(R.string.StartMessaging));
+                    textView2.setText(m34559vf(R.string.StartMessaging));
                 }
-                if (this.f8335o0 != null && m34569if(i2)) {
-                    m34574eg();
+                if (this.f8335o0 != null && m34572if(i2)) {
+                    m34577eg();
                 }
             }
         }
     }
 
-    public final void m34596Tf() {
-        m34554xf().m2781K9().m1898V(this);
-        m34554xf().m2781K9().m1814r0(this);
+    public final void m34599Tf() {
+        m34557xf().m2781K9().m1898V(this);
+        m34557xf().m2781K9().m1814r0(this);
         C10536ab.m4667o1().m4716b1().m1531x(this);
     }
 
-    public final void m34594Uf(boolean z) {
+    public final void m34597Uf(boolean z) {
         C2435j jVar = z ? this.f8340t0 : this.f8339s0;
         C2434i iVar = this.f8337q0;
         if (iVar == null || !iVar.f8357a.equals(jVar)) {
-            m34567kf();
-            m34600Rf(new C2434i(jVar));
+            m34570kf();
+            m34603Rf(new C2434i(jVar));
         }
     }
 
-    public final void m34592Vf() {
+    public final void m34595Vf() {
         View view = this.f8334n0;
         if (view != null) {
             ((GLSurfaceView) view).requestRender();
         }
     }
 
-    public final void m34590Wf(int i, int i2) {
-        C7888N.onSurfaceChanged(i, i2, C1357a0.m37542h(), 0);
+    public final void m34593Wf(int i, int i2) {
+        C7888N.onSurfaceChanged(i, i2, C1357a0.m37545h(), 0);
     }
 
-    public final void m34588Xf(String str, TdApi.LanguagePackInfo languagePackInfo) {
-        if (C5070i.m24061i(str)) {
+    public final void m34591Xf(String str, TdApi.LanguagePackInfo languagePackInfo) {
+        if (C5070i.m24062i(str)) {
             this.f8342v0 = null;
-        } else if (str.equals(this.f8340t0.m34538g())) {
+        } else if (str.equals(this.f8340t0.m34541g())) {
             this.f8342v0 = this.f8340t0;
-        } else if (str.equals(this.f8341u0.m34538g())) {
+        } else if (str.equals(this.f8341u0.m34541g())) {
             this.f8342v0 = this.f8341u0;
         } else if (languagePackInfo != null) {
             this.f8342v0 = new C2435j(languagePackInfo, 0);
@@ -1077,60 +1077,60 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
     @Override
     public void mo417Z8() {
         super.mo417Z8();
-        m34567kf();
-        m34578cg();
-        m34561qf();
-        m34562pf(false);
-        m34596Tf();
+        m34570kf();
+        m34581cg();
+        m34564qf();
+        m34565pf(false);
+        m34599Tf();
     }
 
-    public final C6924j2 m34584Zf(final C2434i iVar) {
+    public final C6924j2 m34587Zf(final C2434i iVar) {
         final View findViewById;
         C5320c cVar = new C5320c(2);
         C5320c cVar2 = new C5320c(2);
         C5146u0 u0Var = new C5146u0(2);
         final TdApi.LanguagePackInfo languagePackInfo = iVar.f8357a.f8363a;
-        cVar.m23284a(R.id.btn_proxy);
-        u0Var.m23815b(C4403w.m27861k1(languagePackInfo, C4868i.m24726c2().m24764X1() ? R.string.ProxySettings : R.string.ProxyAdd));
-        cVar2.m23284a(R.drawable.baseline_security_24);
-        cVar.m23284a(R.id.btn_help);
-        u0Var.m23815b(C4403w.m27861k1(languagePackInfo, R.string.Help));
-        cVar2.m23284a(R.drawable.baseline_help_24);
-        long f2 = m34554xf().m2464f2(12000L);
-        C6924j2 ee2 = m9261ee(C1363c0.m37425l(new C10534a9(this.f30165a, m34554xf()), C4403w.m27861k1(languagePackInfo, R.string.LoginErrorLongConnecting), null), cVar.m23280e(), u0Var.m23813d(), null, cVar2.m23280e(), new AbstractC5117h0() {
+        cVar.m23285a(R.id.btn_proxy);
+        u0Var.m23816b(C4403w.m27863k1(languagePackInfo, C4868i.m24727c2().m24765X1() ? R.string.ProxySettings : R.string.ProxyAdd));
+        cVar2.m23285a(R.drawable.baseline_security_24);
+        cVar.m23285a(R.id.btn_help);
+        u0Var.m23816b(C4403w.m27863k1(languagePackInfo, R.string.Help));
+        cVar2.m23285a(R.drawable.baseline_help_24);
+        long f2 = m34557xf().m2464f2(12000L);
+        C6924j2 ee2 = m9261ee(C1363c0.m37428l(new C10534a9(this.f30168a, m34557xf()), C4403w.m27863k1(languagePackInfo, R.string.LoginErrorLongConnecting), null), cVar.m23281e(), u0Var.m23814d(), null, cVar2.m23281e(), new AbstractC5117h0() {
             @Override
             public final boolean mo493A3(View view, int i) {
                 boolean Jf;
-                Jf = RunnableC2425ga.this.m34611Jf(languagePackInfo, view, i);
+                Jf = RunnableC2425ga.this.m34614Jf(languagePackInfo, view, i);
                 return Jf;
             }
 
             @Override
             public boolean mo492Q() {
-                return C5115g0.m23935a(this);
+                return C5115g0.m23936a(this);
             }
 
             @Override
             public Object mo491b2(int i) {
-                return C5115g0.m23934b(this, i);
+                return C5115g0.m23935b(this, i);
             }
         });
         if (ee2 != null) {
             if (f2 > 0 && (findViewById = ee2.getBoundView().findViewById(R.id.btn_help)) != null) {
                 findViewById.setVisibility(8);
-                m34554xf().m2485dd().postDelayed(new Runnable() {
+                m34557xf().m2485dd().postDelayed(new Runnable() {
                     @Override
                     public final void run() {
-                        RunnableC2425ga.this.m34610Kf(findViewById);
+                        RunnableC2425ga.this.m34613Kf(findViewById);
                     }
                 }, f2);
             }
             ee2.setDisableCancelOnTouchDown(true);
             ee2.setBackListener(new AbstractC9162c() {
                 @Override
-                public final boolean mo10135g0(boolean z) {
+                public final boolean mo10134g0(boolean z) {
                     boolean Lf;
-                    Lf = RunnableC2425ga.this.m34609Lf(iVar, z);
+                    Lf = RunnableC2425ga.this.m34612Lf(iVar, z);
                     return Lf;
                 }
             });
@@ -1143,24 +1143,24 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         return C11524j.m148w();
     }
 
-    public final C6924j2 m34582ag(final C2434i iVar) {
+    public final C6924j2 m34585ag(final C2434i iVar) {
         TdApi.LanguagePackInfo languagePackInfo = iVar.f8357a.f8363a;
         boolean d1 = C7389v0.m16644d1();
         C5320c cVar = new C5320c(1);
         C5320c cVar2 = new C5320c(1);
         C5146u0 u0Var = new C5146u0(1);
-        CharSequence l = C1363c0.m37425l(new C10534a9(this.f30165a, m34554xf()), C4403w.m27861k1(languagePackInfo, d1 ? R.string.LoginErrorAirplane : R.string.LoginErrorOffline), null);
-        cVar.m23284a(R.id.btn_settings);
-        u0Var.m23815b(C4403w.m27861k1(languagePackInfo, R.string.Settings));
-        cVar2.m23284a(R.drawable.baseline_settings_24);
-        C6924j2 ee2 = m9261ee(l, cVar.m23280e(), u0Var.m23813d(), null, cVar2.m23280e(), C3342y9.f11113a);
+        CharSequence l = C1363c0.m37428l(new C10534a9(this.f30168a, m34557xf()), C4403w.m27863k1(languagePackInfo, d1 ? R.string.LoginErrorAirplane : R.string.LoginErrorOffline), null);
+        cVar.m23285a(R.id.btn_settings);
+        u0Var.m23816b(C4403w.m27863k1(languagePackInfo, R.string.Settings));
+        cVar2.m23285a(R.drawable.baseline_settings_24);
+        C6924j2 ee2 = m9261ee(l, cVar.m23281e(), u0Var.m23814d(), null, cVar2.m23281e(), C3342y9.f11113a);
         if (ee2 != null) {
             ee2.setDisableCancelOnTouchDown(true);
             ee2.setBackListener(new AbstractC9162c() {
                 @Override
-                public final boolean mo10135g0(boolean z) {
+                public final boolean mo10134g0(boolean z) {
                     boolean Nf;
-                    Nf = RunnableC2425ga.this.m34607Nf(iVar, z);
+                    Nf = RunnableC2425ga.this.m34610Nf(iVar, z);
                     return Nf;
                 }
             });
@@ -1173,11 +1173,11 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         C11008t0.m1996f(this, y6Var, i);
     }
 
-    public final void m34580bg() {
-        m34566lf();
+    public final void m34583bg() {
+        m34569lf();
         if (!this.f8319B0) {
             this.f8319B0 = true;
-            C1379j0.m37332e0(this, 17L);
+            C1379j0.m37335e0(this, 17L);
         }
     }
 
@@ -1186,11 +1186,11 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         return true;
     }
 
-    public final void m34578cg() {
-        m34566lf();
+    public final void m34581cg() {
+        m34569lf();
         if (this.f8319B0) {
             this.f8319B0 = false;
-            C1379j0.m37330f0(this);
+            C1379j0.m37333f0(this);
         }
     }
 
@@ -1238,7 +1238,7 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
                     break;
                 }
                 eGLConfigArr = eGLConfigArr2;
-                if (m34559sf(egl10, eGLDisplay, eGLConfigArr2[i4], 12324, 0) == 5) {
+                if (m34562sf(egl10, eGLDisplay, eGLConfigArr2[i4], 12324, 0) == 5) {
                     break;
                 }
                 i4++;
@@ -1265,7 +1265,7 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         if (view != null) {
             ((GLSurfaceView) view).onPause();
         }
-        m34578cg();
+        m34581cg();
     }
 
     @Override
@@ -1273,11 +1273,11 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         return true;
     }
 
-    public final void m34576dg() {
-        m34566lf();
+    public final void m34579dg() {
+        m34569lf();
         C2432g gVar = new C2432g();
         this.f8320C0 = gVar;
-        gVar.m21855e(C1379j0.m37313o());
+        gVar.m21856e(C1379j0.m37316o());
         int i = this.f8325H0;
         long j = 6000;
         j = 4000;
@@ -1290,7 +1290,7 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
                 j = 1000;
             }
         }
-        C1379j0.m37332e0(this.f8320C0, j + 8000);
+        C1379j0.m37335e0(this.f8320C0, j + 8000);
     }
 
     @Override
@@ -1299,16 +1299,16 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
             return;
         }
         if (i2 == 4 || i == 4) {
-            m34554xf().m2485dd().post(new Runnable() {
+            m34557xf().m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    RunnableC2425ga.this.m34616Ef();
+                    RunnableC2425ga.this.m34619Ef();
                 }
             });
         }
     }
 
-    public final void m34574eg() {
+    public final void m34577eg() {
         int i = 0;
         int i2 = 0;
         while (true) {
@@ -1324,42 +1324,42 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
                 charSequenceArr[i] = null;
                 i++;
             } else {
-                this.f8335o0.m34520h();
-                m34572fg(true);
+                this.f8335o0.m34523h();
+                m34575fg(true);
                 this.f8335o0.invalidate();
                 return;
             }
         }
     }
 
-    public final void m34572fg(boolean z) {
+    public final void m34575fg(boolean z) {
         if (z) {
-            this.f8335o0.m34521g();
+            this.f8335o0.m34524g();
         }
         int i = this.f8321D0;
         int i2 = this.f8326I0;
         if (i != i2 || z) {
             this.f8321D0 = i2;
-            this.f8335o0.m34519i(i2, m34552zf(i2), m34558tf(this.f8321D0));
+            this.f8335o0.m34522i(i2, m34555zf(i2), m34561tf(this.f8321D0));
         }
         int i3 = this.f8326I0;
         int i4 = i3 + 1 > 5 ? -1 : i3 + 1;
         if (this.f8322E0 != i4 || z) {
             this.f8322E0 = i4;
             if (i4 == -1) {
-                this.f8335o0.m34516l(-1, null, null);
+                this.f8335o0.m34519l(-1, null, null);
             } else {
-                this.f8335o0.m34516l(i4, m34552zf(i4), m34558tf(this.f8322E0));
+                this.f8335o0.m34519l(i4, m34555zf(i4), m34561tf(this.f8322E0));
             }
         }
     }
 
     @Override
     public void mo1777g(final String str, final TdApi.LanguagePackInfo languagePackInfo) {
-        m34554xf().m2485dd().post(new Runnable() {
+        m34557xf().m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                RunnableC2425ga.this.m34613Hf(str, languagePackInfo);
+                RunnableC2425ga.this.m34616Hf(str, languagePackInfo);
             }
         });
     }
@@ -1367,17 +1367,17 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
     @Override
     public void mo8853h4(int i) {
         if (i == 0) {
-            m34576dg();
+            m34579dg();
         } else if (i == 1 || i == 2) {
-            m34580bg();
+            m34583bg();
         }
     }
 
-    public final void m34570hf(int i) {
+    public final void m34573hf(int i) {
         if (f8317R0 != i) {
             f8317R0 = i;
             C7888N.setColor(Color.red(i) / 255.0f, Color.green(i) / 255.0f, Color.blue(i) / 255.0f);
-            m34592Vf();
+            m34595Vf();
         }
     }
 
@@ -1386,7 +1386,7 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         return true;
     }
 
-    public final float m34568jf(int i) {
+    public final float m34571jf(int i) {
         int i2 = this.f8325H0;
         if (i != i2) {
             if (i == i2 + 1) {
@@ -1399,12 +1399,12 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         return this.f8327J0;
     }
 
-    public final void m34567kf() {
+    public final void m34570kf() {
         C2434i iVar = this.f8337q0;
         if (iVar != null) {
-            iVar.m34550b();
+            iVar.m34553b();
             this.f8337q0 = null;
-            m34564nf();
+            m34567nf();
         }
     }
 
@@ -1418,10 +1418,10 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         }
     }
 
-    public final void m34566lf() {
+    public final void m34569lf() {
         AbstractRunnableC5910b bVar = this.f8320C0;
         if (bVar != null) {
-            bVar.m21857c();
+            bVar.m21858c();
             this.f8320C0 = null;
         }
     }
@@ -1434,33 +1434,33 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
     @Override
     public void mo134m7(boolean z, C11510b bVar) {
         super.mo134m7(z, bVar);
-        m34563of();
-        m34562pf(true);
-        m34572fg(true);
+        m34566of();
+        m34565pf(true);
+        m34575fg(true);
         this.f8335o0.invalidate();
-        m34570hf(C11524j.m148w());
-        m34592Vf();
+        m34573hf(C11524j.m148w());
+        m34595Vf();
     }
 
     @Override
     public void mo9208mc(Configuration configuration) {
         super.mo9208mc(configuration);
-        TdApi.LanguagePackInfo f0 = C4403w.m27882f0();
-        TdApi.LanguagePackInfo Y = C4403w.m27915Y();
-        if (!Y.f25405id.equals(this.f8340t0.m34538g())) {
+        TdApi.LanguagePackInfo f0 = C4403w.m27884f0();
+        TdApi.LanguagePackInfo Y = C4403w.m27917Y();
+        if (!Y.f25408id.equals(this.f8340t0.m34541g())) {
             this.f8340t0 = new C2435j(Y, 2);
         }
-        if (!f0.f25405id.equals(this.f8341u0.m34538g())) {
-            if (f0.f25405id.equals(this.f8340t0.m34538g())) {
+        if (!f0.f25408id.equals(this.f8341u0.m34541g())) {
+            if (f0.f25408id.equals(this.f8340t0.m34541g())) {
                 this.f8341u0 = this.f8340t0;
             } else {
                 this.f8341u0 = new C2435j(f0, 1);
             }
         }
-        m34565mf();
+        m34568mf();
     }
 
-    public final void m34565mf() {
+    public final void m34568mf() {
         C2435j jVar;
         if (!this.f8340t0.equals(this.f8341u0)) {
             jVar = this.f8341u0;
@@ -1468,35 +1468,35 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
             C2435j jVar2 = this.f8342v0;
             if (jVar2 == null) {
                 jVar = this.f8340t0;
-            } else if (jVar2.m34536i()) {
+            } else if (jVar2.m34539i()) {
                 jVar = this.f8342v0;
             } else {
-                this.f8342v0.m34540e(new Runnable() {
+                this.f8342v0.m34543e(new Runnable() {
                     @Override
                     public final void run() {
-                        RunnableC2425ga.this.m34565mf();
+                        RunnableC2425ga.this.m34568mf();
                     }
                 });
-                this.f8342v0.m34530o(m34554xf());
+                this.f8342v0.m34533o(m34557xf());
                 jVar = this.f8340t0;
             }
         }
         if (!this.f8339s0.equals(jVar)) {
             this.f8339s0 = jVar;
             mo9343T5(0, 0);
-            this.f8344x0.setText(C4403w.m27861k1(this.f8340t0.f8363a, R.string.language_continueInLanguage));
-            this.f8318A0.m29575p(!this.f8340t0.equals(this.f8339s0), m9339Ta());
+            this.f8344x0.setText(C4403w.m27863k1(this.f8340t0.f8363a, R.string.language_continueInLanguage));
+            this.f8318A0.m29577p(!this.f8340t0.equals(this.f8339s0), m9339Ta());
         }
-        if (!this.f8339s0.m34537h()) {
-            this.f8339s0.m34531n(m34554xf());
+        if (!this.f8339s0.m34540h()) {
+            this.f8339s0.m34534n(m34557xf());
         }
     }
 
-    public final void m34564nf() {
+    public final void m34567nf() {
         if (this.f8346z0 != null && !m9347Sa()) {
             C3940f fVar = this.f8346z0;
             C2434i iVar = this.f8337q0;
-            fVar.m29575p(iVar != null && !iVar.f8359c, m9339Ta());
+            fVar.m29577p(iVar != null && !iVar.f8359c, m9339Ta());
         }
     }
 
@@ -1511,8 +1511,8 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
 
     @Override
     public View mo403oc(Context context) {
-        m34586Yf(true);
-        m34619Bf();
+        m34589Yf(true);
+        m34622Bf();
         FrameLayoutFix frameLayoutFix = new FrameLayoutFix(context);
         C10192g.m5782i(frameLayoutFix, R.id.theme_color_filling, this);
         frameLayoutFix.setLayoutParams(FrameLayoutFix.m18008s1(-1, -1));
@@ -1536,27 +1536,27 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         cVar.setLayoutParams(t12);
         C2437l lVar = new C2437l(context);
         this.f8335o0 = lVar;
-        lVar.m34525c(this);
-        this.f8335o0.m34522f(m34552zf(0), m34552zf(1), m34552zf(2), m34552zf(3), m34552zf(4), m34552zf(5));
-        this.f8335o0.m34523e(C1357a0.m37543g(), m34558tf(0), m34558tf(1), m34558tf(2), m34558tf(3), m34558tf(4), m34558tf(5));
+        lVar.m34528c(this);
+        this.f8335o0.m34525f(m34555zf(0), m34555zf(1), m34555zf(2), m34555zf(3), m34555zf(4), m34555zf(5));
+        this.f8335o0.m34526e(C1357a0.m37546g(), m34561tf(0), m34561tf(1), m34561tf(2), m34561tf(3), m34561tf(4), m34561tf(5));
         this.f8335o0.setLayoutParams(FrameLayoutFix.m18008s1(-1, -1));
         cVar.addView(this.f8335o0);
-        FrameLayout.LayoutParams t13 = FrameLayoutFix.m18007t1(-1, C1357a0.m37541i(48.0f), 80);
-        int i = C1357a0.m37541i(16.0f);
+        FrameLayout.LayoutParams t13 = FrameLayoutFix.m18007t1(-1, C1357a0.m37544i(48.0f), 80);
+        int i = C1357a0.m37544i(16.0f);
         t13.rightMargin = i;
         t13.leftMargin = i;
         t13.bottomMargin = i;
         this.f8343w0 = new C2429d(context);
-        RunnableC6969m2 m2Var = new RunnableC6969m2(C1379j0.m37307r(context), C1357a0.m37541i(3.5f));
+        RunnableC6969m2 m2Var = new RunnableC6969m2(C1379j0.m37310r(context), C1357a0.m37544i(3.5f));
         this.f8345y0 = m2Var;
         m2Var.m18275o(0.0f);
         this.f8345y0.m18291E(new C4343h(this.f8343w0));
         this.f8343w0.setId(R.id.btn_done);
-        this.f8343w0.setPadding(0, 0, 0, C1357a0.m37541i(1.0f));
-        this.f8343w0.setTypeface(C1389o.m37260i());
+        this.f8343w0.setPadding(0, 0, 0, C1357a0.m37544i(1.0f));
+        this.f8343w0.setTypeface(C1389o.m37263i());
         this.f8343w0.setTextSize(1, 17.0f);
         this.f8343w0.setGravity(17);
-        this.f8343w0.setText(m34556vf(R.string.StartMessaging));
+        this.f8343w0.setText(m34559vf(R.string.StartMessaging));
         this.f8343w0.setOnClickListener(this);
         this.f8343w0.setOnLongClickListener(this);
         this.f8343w0.setLayoutParams(t13);
@@ -1567,41 +1567,41 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         C2430e eVar = new C2430e();
         DecelerateInterpolator decelerateInterpolator = C2057b.f7280b;
         this.f8346z0 = new C3940f(0, eVar, decelerateInterpolator, 180L);
-        FrameLayout.LayoutParams t14 = FrameLayoutFix.m18007t1(-2, C1357a0.m37541i(48.0f), 81);
-        t14.bottomMargin = C1357a0.m37541i(16.0f);
+        FrameLayout.LayoutParams t14 = FrameLayoutFix.m18007t1(-2, C1357a0.m37544i(48.0f), 81);
+        t14.bottomMargin = C1357a0.m37544i(16.0f);
         C6847b2 b2Var = new C6847b2(context);
         this.f8344x0 = b2Var;
         b2Var.setId(R.id.btn_cancel);
-        this.f8344x0.setTypeface(C1389o.m37258k());
+        this.f8344x0.setTypeface(C1389o.m37261k());
         this.f8344x0.setTextSize(1, 17.0f);
         this.f8344x0.setGravity(17);
         this.f8344x0.setLayoutParams(t14);
         this.f8344x0.setOnClickListener(this);
-        this.f8344x0.setPadding(C1357a0.m37541i(16.0f), 0, C1357a0.m37541i(16.0f), C1357a0.m37541i(1.0f));
+        this.f8344x0.setPadding(C1357a0.m37544i(16.0f), 0, C1357a0.m37544i(16.0f), C1357a0.m37544i(1.0f));
         this.f8344x0.setTextColor(C11524j.m228N(R.id.theme_color_textNeutral));
-        this.f8344x0.setTranslationY(C1357a0.m37541i(48.0f) + C1357a0.m37541i(16.0f));
+        this.f8344x0.setTranslationY(C1357a0.m37544i(48.0f) + C1357a0.m37544i(16.0f));
         m9119z8(this.f8344x0, R.id.theme_color_textNeutral);
         cVar.addView(this.f8344x0);
         this.f8318A0 = new C3940f(0, new C2431f(), decelerateInterpolator, 180L);
         frameLayoutFix.addView(cVar);
-        m34554xf().m2781K9().m1831n(this);
-        m34554xf().m2781K9().m1866e0(this);
+        m34557xf().m2781K9().m1831n(this);
+        m34557xf().m2781K9().m1866e0(this);
         C10536ab.m4667o1().m4716b1().m1554a(this);
         if (!this.f8340t0.equals(this.f8339s0)) {
-            this.f8344x0.setText(C4403w.m27861k1(this.f8340t0.f8363a, R.string.language_continueInLanguage));
-            this.f8318A0.m29575p(true, false);
+            this.f8344x0.setText(C4403w.m27863k1(this.f8340t0.f8363a, R.string.language_continueInLanguage));
+            this.f8318A0.m29577p(true, false);
         }
-        m34565mf();
+        m34568mf();
         return frameLayoutFix;
     }
 
-    public final void m34563of() {
+    public final void m34566of() {
         synchronized (this.f8328K0) {
-            int n = this.f8329L0.m21463n();
+            int n = this.f8329L0.m21464n();
             for (int i = 0; i < n; i++) {
-                this.f8329L0.m21462o(i).recycle();
+                this.f8329L0.m21463o(i).recycle();
             }
-            this.f8329L0.m21474b();
+            this.f8329L0.m21475b();
         }
     }
 
@@ -1609,15 +1609,15 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
     public void onClick(View view) {
         int id2 = view.getId();
         if (id2 == R.id.btn_cancel) {
-            m34594Uf(true);
+            m34597Uf(true);
         } else if (id2 == R.id.btn_done) {
-            m34594Uf(false);
+            m34597Uf(false);
         }
     }
 
     @Override
     public void onDrawFrame(GL10 gl10) {
-        m34560rf();
+        m34563rf();
     }
 
     @Override
@@ -1625,28 +1625,28 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         C5320c cVar = new C5320c(2);
         C5146u0 u0Var = new C5146u0(2);
         C5320c cVar2 = new C5320c(2);
-        cVar.m23284a(R.id.btn_proxy);
-        cVar2.m23284a(R.drawable.baseline_security_24);
-        u0Var.m23815b(m34556vf(C4868i.m24726c2().m24764X1() ? R.string.ProxySettings : R.string.ProxyAdd));
-        cVar.m23284a(R.id.btn_log_files);
-        cVar2.m23284a(R.drawable.baseline_bug_report_24);
-        u0Var.m23815b("Log Settings");
-        m9261ee(null, cVar.m23280e(), u0Var.m23813d(), null, cVar2.m23280e(), new AbstractC5117h0() {
+        cVar.m23285a(R.id.btn_proxy);
+        cVar2.m23285a(R.drawable.baseline_security_24);
+        u0Var.m23816b(m34559vf(C4868i.m24727c2().m24765X1() ? R.string.ProxySettings : R.string.ProxyAdd));
+        cVar.m23285a(R.id.btn_log_files);
+        cVar2.m23285a(R.drawable.baseline_bug_report_24);
+        u0Var.m23816b("Log Settings");
+        m9261ee(null, cVar.m23281e(), u0Var.m23814d(), null, cVar2.m23281e(), new AbstractC5117h0() {
             @Override
             public final boolean mo493A3(View view2, int i) {
                 boolean Ff;
-                Ff = RunnableC2425ga.this.m34615Ff(view2, i);
+                Ff = RunnableC2425ga.this.m34618Ff(view2, i);
                 return Ff;
             }
 
             @Override
             public boolean mo492Q() {
-                return C5115g0.m23935a(this);
+                return C5115g0.m23936a(this);
             }
 
             @Override
             public Object mo491b2(int i) {
-                return C5115g0.m23934b(this, i);
+                return C5115g0.m23935b(this, i);
             }
         });
         return true;
@@ -1654,13 +1654,13 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
 
     @Override
     public void onSurfaceChanged(GL10 gl10, int i, int i2) {
-        m34590Wf(i, i2);
-        m34592Vf();
+        m34593Wf(i, i2);
+        m34595Vf();
     }
 
     @Override
     public void onSurfaceCreated(GL10 gl10, EGLConfig eGLConfig) {
-        m34618Cf(gl10);
+        m34621Cf(gl10);
     }
 
     @Override
@@ -1673,11 +1673,11 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         C11008t0.m1998d(this, y6Var, i);
     }
 
-    public final void m34562pf(boolean z) {
+    public final void m34565pf(boolean z) {
         if (!z) {
-            C5062b.m24164h(this.f8324G0);
+            C5062b.m24165h(this.f8324G0);
         }
-        C5062b.m24164h(this.f8323F0);
+        C5062b.m24165h(this.f8323F0);
     }
 
     @Override
@@ -1685,15 +1685,15 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         C11020tb.m1987b(this, z);
     }
 
-    public final void m34561qf() {
+    public final void m34564qf() {
         synchronized (this.f8328K0) {
-            int n = this.f8328K0.m21463n();
+            int n = this.f8328K0.m21464n();
             for (int i = 0; i < n; i++) {
-                this.f8328K0.m21462o(i).recycle();
+                this.f8328K0.m21463o(i).recycle();
             }
-            this.f8328K0.m21474b();
+            this.f8328K0.m21475b();
         }
-        m34563of();
+        m34566of();
     }
 
     @Override
@@ -1701,34 +1701,34 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         C11020tb.m1983f(this, z);
     }
 
-    public final void m34560rf() {
+    public final void m34563rf() {
         C7888N.setDate(((float) (System.currentTimeMillis() - this.f8331N0)) / 1000.0f);
         C7888N.onDrawFrame();
-        m34586Yf(false);
+        m34589Yf(false);
     }
 
     @Override
     public void run() {
-        m34592Vf();
+        m34595Vf();
         if (this.f8319B0) {
-            C1379j0.m37332e0(this, 17L);
+            C1379j0.m37335e0(this, 17L);
         }
     }
 
     @Override
     public void mo9166sc() {
         super.mo9166sc();
-        if (C1379j0.m37358J()) {
-            m34598Sf(true);
+        if (C1379j0.m37361J()) {
+            m34601Sf(true);
             return;
         }
         C2434i iVar = this.f8337q0;
         if (iVar != null && iVar.f8362f) {
-            m34600Rf(iVar);
+            m34603Rf(iVar);
         }
     }
 
-    public final int m34559sf(EGL10 egl10, EGLDisplay eGLDisplay, EGLConfig eGLConfig, int i, int i2) {
+    public final int m34562sf(EGL10 egl10, EGLDisplay eGLDisplay, EGLConfig eGLConfig, int i, int i2) {
         return egl10.eglGetConfigAttrib(eGLDisplay, eGLConfig, i, this.f8332O0) ? this.f8332O0[0] : i2;
     }
 
@@ -1737,33 +1737,33 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         C11020tb.m1986c(this, z);
     }
 
-    public final CharSequence m34558tf(int i) {
+    public final CharSequence m34561tf(int i) {
         CharSequence[] charSequenceArr = this.f8323F0;
         if (charSequenceArr[i] != null) {
             return charSequenceArr[i];
         }
-        String vf = m34556vf(m34620Af(i, true));
+        String vf = m34559vf(m34623Af(i, true));
         CharSequence[] charSequenceArr2 = this.f8323F0;
-        CharSequence Z = C1363c0.m37448Z(vf, R.id.theme_color_text);
+        CharSequence Z = C1363c0.m37451Z(vf, R.id.theme_color_text);
         charSequenceArr2[i] = Z;
         return Z;
     }
 
-    public final Bitmap m34557uf() {
+    public final Bitmap m34560uf() {
         Bitmap e;
         synchronized (this.f8328K0) {
-            e = this.f8329L0.m21471e(0);
+            e = this.f8329L0.m21472e(0);
         }
         if (e != null) {
             return e;
         }
-        int i = C1357a0.m37541i(220.0f);
+        int i = C1357a0.m37544i(220.0f);
         Bitmap createBitmap = Bitmap.createBitmap(i, i, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(createBitmap);
-        canvas.drawCircle(createBitmap.getWidth() / 2, createBitmap.getHeight() / 2, createBitmap.getWidth() / 2, C1410y.m37039g(-13261090));
+        canvas.drawCircle(createBitmap.getWidth() / 2, createBitmap.getHeight() / 2, createBitmap.getWidth() / 2, C1410y.m37042g(-13261090));
         C7389v0.m16571v2(canvas);
         synchronized (this.f8328K0) {
-            this.f8329L0.m21466j(0, createBitmap);
+            this.f8329L0.m21467j(0, createBitmap);
         }
         return createBitmap;
     }
@@ -1773,52 +1773,52 @@ public class RunnableC2425ga extends AbstractC9323v4<Void> implements GLSurfaceV
         C11008t0.m1999c(this, y6Var, user, i, y6Var2);
     }
 
-    public String m34556vf(int i) {
-        return C4403w.m27861k1(this.f8339s0.f8363a, i);
+    public String m34559vf(int i) {
+        return C4403w.m27863k1(this.f8339s0.f8363a, i);
     }
 
     @Override
     public void mo8833x(int i, float f, int i2) {
         this.f8326I0 = i;
         this.f8327J0 = f;
-        m34572fg(false);
-        float jf = m34568jf(i);
-        this.f8335o0.m34518j(f, jf);
+        m34575fg(false);
+        float jf = m34571jf(i);
+        this.f8335o0.m34521j(f, jf);
         C7888N.setScrollOffset(jf);
-        m34592Vf();
+        m34595Vf();
     }
 
     @Override
     public void mo8832x4(int i) {
         if (this.f8325H0 != i) {
             this.f8325H0 = i;
-            this.f8335o0.m34517k(i, m34568jf(this.f8326I0));
+            this.f8335o0.m34520k(i, m34571jf(this.f8326I0));
             C7888N.setPage(i);
         }
     }
 
-    public final C10930q6 m34554xf() {
-        return this.f30165a.m14410z0();
+    public final C10930q6 m34557xf() {
+        return this.f30168a.m14409z0();
     }
 
-    public final Bitmap m34553yf(int i) {
+    public final Bitmap m34556yf(int i) {
         Bitmap e;
         synchronized (this.f8328K0) {
-            e = this.f8328K0.m21471e(i);
+            e = this.f8328K0.m21472e(i);
             if (e == null || e.isRecycled()) {
-                e = BitmapFactory.decodeResource(C1379j0.m37372B(), i);
-                this.f8328K0.m21466j(i, e);
+                e = BitmapFactory.decodeResource(C1379j0.m37375B(), i);
+                this.f8328K0.m21467j(i, e);
             }
         }
         return e;
     }
 
-    public final String m34552zf(int i) {
+    public final String m34555zf(int i) {
         String[] strArr = this.f8324G0;
         if (strArr[i] != null) {
             return strArr[i];
         }
-        String vf = m34556vf(m34620Af(i, false));
+        String vf = m34559vf(m34623Af(i, false));
         strArr[i] = vf;
         return vf;
     }

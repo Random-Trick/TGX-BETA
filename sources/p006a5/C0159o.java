@@ -33,47 +33,47 @@ public final class C0159o {
         public int f572i;
         public Object f573j;
 
-        public C0159o m42200a() {
-            C1186a.m38181i(this.f564a, "The uri must be set.");
+        public C0159o m42203a() {
+            C1186a.m38184i(this.f564a, "The uri must be set.");
             return new C0159o(this.f564a, this.f565b, this.f566c, this.f567d, this.f568e, this.f569f, this.f570g, this.f571h, this.f572i, this.f573j);
         }
 
-        public C0161b m42199b(int i) {
+        public C0161b m42202b(int i) {
             this.f572i = i;
             return this;
         }
 
-        public C0161b m42198c(byte[] bArr) {
+        public C0161b m42201c(byte[] bArr) {
             this.f567d = bArr;
             return this;
         }
 
-        public C0161b m42197d(int i) {
+        public C0161b m42200d(int i) {
             this.f566c = i;
             return this;
         }
 
-        public C0161b m42196e(Map<String, String> map) {
+        public C0161b m42199e(Map<String, String> map) {
             this.f568e = map;
             return this;
         }
 
-        public C0161b m42195f(String str) {
+        public C0161b m42198f(String str) {
             this.f571h = str;
             return this;
         }
 
-        public C0161b m42194g(long j) {
+        public C0161b m42197g(long j) {
             this.f569f = j;
             return this;
         }
 
-        public C0161b m42193h(Uri uri) {
+        public C0161b m42196h(Uri uri) {
             this.f564a = uri;
             return this;
         }
 
-        public C0161b m42192i(String str) {
+        public C0161b m42195i(String str) {
             this.f564a = Uri.parse(str);
             return this;
         }
@@ -99,10 +99,10 @@ public final class C0159o {
     }
 
     static {
-        C6585d1.m19945a("goog.exo.datasource");
+        C6585d1.m19946a("goog.exo.datasource");
     }
 
-    public static String m42202c(int i) {
+    public static String m42205c(int i) {
         if (i == 1) {
             return "GET";
         }
@@ -115,20 +115,20 @@ public final class C0159o {
         throw new IllegalStateException();
     }
 
-    public C0161b m42204a() {
+    public C0161b m42207a() {
         return new C0161b();
     }
 
-    public final String m42203b() {
-        return m42202c(this.f555c);
+    public final String m42206b() {
+        return m42205c(this.f555c);
     }
 
-    public boolean m42201d(int i) {
+    public boolean m42204d(int i) {
         return (this.f562j & i) == i;
     }
 
     public String toString() {
-        String b = m42203b();
+        String b = m42206b();
         String valueOf = String.valueOf(this.f553a);
         long j = this.f559g;
         long j2 = this.f560h;
@@ -155,12 +155,12 @@ public final class C0159o {
         byte[] bArr2 = bArr;
         long j4 = j + j2;
         boolean z = true;
-        C1186a.m38189a(j4 >= 0);
-        C1186a.m38189a(j2 >= 0);
+        C1186a.m38192a(j4 >= 0);
+        C1186a.m38192a(j2 >= 0);
         if (j3 <= 0 && j3 != -1) {
             z = false;
         }
-        C1186a.m38189a(z);
+        C1186a.m38192a(z);
         this.f553a = uri;
         this.f554b = j;
         this.f555c = i;

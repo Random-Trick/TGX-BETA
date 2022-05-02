@@ -18,48 +18,48 @@ import p230q3.AbstractC8169f0;
 import p358z6.AbstractC11401r;
 
 public final class C8198k0 implements AbstractC8205m0 {
-    public final AbstractC0180y.AbstractC0182b f26548a;
-    public final String f26549b;
-    public final boolean f26550c;
-    public final Map<String, String> f26551d;
+    public final AbstractC0180y.AbstractC0182b f26551a;
+    public final String f26552b;
+    public final boolean f26553c;
+    public final Map<String, String> f26554d;
 
     public C8198k0(String str, boolean z, AbstractC0180y.AbstractC0182b bVar) {
-        C1186a.m38189a(!z || !TextUtils.isEmpty(str));
-        this.f26548a = bVar;
-        this.f26549b = str;
-        this.f26550c = z;
-        this.f26551d = new HashMap();
+        C1186a.m38192a(!z || !TextUtils.isEmpty(str));
+        this.f26551a = bVar;
+        this.f26552b = str;
+        this.f26553c = z;
+        this.f26554d = new HashMap();
     }
 
-    public static byte[] m13224c(AbstractC0180y.AbstractC0182b bVar, String str, byte[] bArr, Map<String, String> map) {
+    public static byte[] m13223c(AbstractC0180y.AbstractC0182b bVar, String str, byte[] bArr, Map<String, String> map) {
         C0148h0 h0Var = new C0148h0(bVar.mo4407a());
-        C0159o a = new C0159o.C0161b().m42192i(str).m42196e(map).m42197d(2).m42198c(bArr).m42199b(1).m42200a();
+        C0159o a = new C0159o.C0161b().m42195i(str).m42199e(map).m42200d(2).m42201c(bArr).m42202b(1).m42203a();
         int i = 0;
         C0159o oVar = a;
         while (true) {
             try {
                 C0157m mVar = new C0157m(h0Var, oVar);
                 try {
-                    byte[] D0 = C1216l0.m38014D0(mVar);
-                    C1216l0.m37962m(mVar);
+                    byte[] D0 = C1216l0.m38017D0(mVar);
+                    C1216l0.m37965m(mVar);
                     return D0;
                 } catch (AbstractC0180y.C0185e e) {
-                    String d = m13223d(e, i);
+                    String d = m13222d(e, i);
                     if (d != null) {
                         i++;
-                        oVar = oVar.m42204a().m42192i(d).m42200a();
-                        C1216l0.m37962m(mVar);
+                        oVar = oVar.m42207a().m42195i(d).m42203a();
+                        C1216l0.m37965m(mVar);
                     } else {
                         throw e;
                     }
                 }
             } catch (Exception e2) {
-                throw new C8207n0(a, (Uri) C1186a.m38185e(h0Var.m42210t()), h0Var.mo17398l(), h0Var.m42211s(), e2);
+                throw new C8207n0(a, (Uri) C1186a.m38188e(h0Var.m42213t()), h0Var.mo17398l(), h0Var.m42214s(), e2);
             }
         }
     }
 
-    public static String m13223d(AbstractC0180y.C0185e eVar, int i) {
+    public static String m13222d(AbstractC0180y.C0185e eVar, int i) {
         Map<String, List<String>> map;
         List<String> list;
         int i2 = eVar.f659M;
@@ -70,11 +70,11 @@ public final class C8198k0 implements AbstractC8205m0 {
     }
 
     @Override
-    public byte[] mo13210a(UUID uuid, AbstractC8169f0.C8170a aVar) {
+    public byte[] mo13209a(UUID uuid, AbstractC8169f0.C8170a aVar) {
         String str;
-        String b = aVar.m13331b();
-        if (this.f26550c || TextUtils.isEmpty(b)) {
-            b = this.f26549b;
+        String b = aVar.m13330b();
+        if (this.f26553c || TextUtils.isEmpty(b)) {
+            b = this.f26552b;
         }
         if (!TextUtils.isEmpty(b)) {
             HashMap hashMap = new HashMap();
@@ -88,30 +88,30 @@ public final class C8198k0 implements AbstractC8205m0 {
             if (uuid2.equals(uuid)) {
                 hashMap.put("SOAPAction", "http://schemas.microsoft.com/DRM/2007/03/protocols/AcquireLicense");
             }
-            synchronized (this.f26551d) {
-                hashMap.putAll(this.f26551d);
+            synchronized (this.f26554d) {
+                hashMap.putAll(this.f26554d);
             }
-            return m13224c(this.f26548a, b, aVar.m13332a(), hashMap);
+            return m13223c(this.f26551a, b, aVar.m13331a(), hashMap);
         }
-        throw new C8207n0(new C0159o.C0161b().m42193h(Uri.EMPTY).m42200a(), Uri.EMPTY, AbstractC11401r.m740j(), 0L, new IllegalStateException("No license URL"));
+        throw new C8207n0(new C0159o.C0161b().m42196h(Uri.EMPTY).m42203a(), Uri.EMPTY, AbstractC11401r.m740j(), 0L, new IllegalStateException("No license URL"));
     }
 
     @Override
-    public byte[] mo13209b(UUID uuid, AbstractC8169f0.C8173d dVar) {
-        String b = dVar.m13329b();
-        String A = C1216l0.m38021A(dVar.m13330a());
+    public byte[] mo13208b(UUID uuid, AbstractC8169f0.C8173d dVar) {
+        String b = dVar.m13328b();
+        String A = C1216l0.m38024A(dVar.m13329a());
         StringBuilder sb2 = new StringBuilder(String.valueOf(b).length() + 15 + String.valueOf(A).length());
         sb2.append(b);
         sb2.append("&signedRequest=");
         sb2.append(A);
-        return m13224c(this.f26548a, sb2.toString(), null, Collections.emptyMap());
+        return m13223c(this.f26551a, sb2.toString(), null, Collections.emptyMap());
     }
 
-    public void m13222e(String str, String str2) {
-        C1186a.m38185e(str);
-        C1186a.m38185e(str2);
-        synchronized (this.f26551d) {
-            this.f26551d.put(str, str2);
+    public void m13221e(String str, String str2) {
+        C1186a.m38188e(str);
+        C1186a.m38188e(str2);
+        synchronized (this.f26554d) {
+            this.f26554d.put(str, str2);
         }
     }
 }

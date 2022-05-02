@@ -13,8 +13,8 @@ public class C1130f<T> implements AbstractC1129e<T> {
     }
 
     @Override
-    public boolean mo38328a(T t) {
-        if (!m38329c(t)) {
+    public boolean mo38331a(T t) {
+        if (!m38332c(t)) {
             int i = this.f4333b;
             Object[] objArr = this.f4332a;
             if (i >= objArr.length) {
@@ -28,7 +28,7 @@ public class C1130f<T> implements AbstractC1129e<T> {
     }
 
     @Override
-    public T mo38327b() {
+    public T mo38330b() {
         int i = this.f4333b;
         if (i <= 0) {
             return null;
@@ -41,7 +41,7 @@ public class C1130f<T> implements AbstractC1129e<T> {
         return t;
     }
 
-    public final boolean m38329c(T t) {
+    public final boolean m38332c(T t) {
         for (int i = 0; i < this.f4333b; i++) {
             if (this.f4332a[i] == t) {
                 return true;

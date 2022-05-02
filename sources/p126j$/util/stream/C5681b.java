@@ -23,15 +23,15 @@ public final class C5681b implements AbstractC5542x, AbstractC5536r, Consumer, A
             case 0:
                 return (AbstractC5468G) this.f18312b;
             default:
-                return ((AbstractC5686c) this.f18312b).m22294z0();
+                return ((AbstractC5686c) this.f18312b).m22295z0();
         }
     }
 
     @Override
-    public void mo22128k(Object obj) {
+    public void mo22129k(Object obj) {
         switch (this.f18311a) {
             case 3:
-                ((AbstractC5759q2) this.f18312b).mo22128k(obj);
+                ((AbstractC5759q2) this.f18312b).mo22129k(obj);
                 return;
             default:
                 ((List) this.f18312b).add(obj);
@@ -40,8 +40,8 @@ public final class C5681b implements AbstractC5542x, AbstractC5536r, Consumer, A
     }
 
     @Override
-    public Object mo22209x(long j) {
+    public Object mo22210x(long j) {
         int i = C5653U0.f18246k;
-        return AbstractC5572D0.m22444F(j, (AbstractC5531m) this.f18312b);
+        return AbstractC5572D0.m22445F(j, (AbstractC5531m) this.f18312b);
     }
 }

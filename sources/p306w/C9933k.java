@@ -8,7 +8,7 @@ import p293v.C9824s;
 import p336y.AbstractC10231g2;
 
 public class C9933k {
-    public final C9824s f32311a;
+    public final C9824s f32314a;
 
     public C9933k() {
         this((C9824s) C9814i.m6817a(C9824s.class));
@@ -16,7 +16,7 @@ public class C9933k {
 
     public List<Size> m6466a(AbstractC10231g2.EnumC10233b bVar, List<Size> list) {
         Size c;
-        C9824s sVar = this.f32311a;
+        C9824s sVar = this.f32314a;
         if (sVar == null || (c = sVar.m6790c(bVar)) == null) {
             return list;
         }
@@ -31,6 +31,6 @@ public class C9933k {
     }
 
     public C9933k(C9824s sVar) {
-        this.f32311a = sVar;
+        this.f32314a = sVar;
     }
 }

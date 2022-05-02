@@ -7,6 +7,6 @@ public final class RunnableC4927b implements Runnable {
 
     @Override
     public final void run() {
-        AlarmManagerSchedulerBroadcastReceiver.m30565b();
+        AlarmManagerSchedulerBroadcastReceiver.m30567b();
     }
 }

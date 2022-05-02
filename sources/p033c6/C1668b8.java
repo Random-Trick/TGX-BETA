@@ -18,12 +18,12 @@ public final class C1668b8 {
     }
 
     @AbstractC1707e2(zza = 1)
-    public final EnumC2013z7 m36114a() {
+    public final EnumC2013z7 m36117a() {
         return this.f6118a;
     }
 
     @AbstractC1707e2(zza = 2)
-    public final Integer m36113b() {
+    public final Integer m36116b() {
         return this.f6119b;
     }
 
@@ -35,10 +35,10 @@ public final class C1668b8 {
             return false;
         }
         C1668b8 b8Var = (C1668b8) obj;
-        return C6374q.m20524a(this.f6118a, b8Var.f6118a) && C6374q.m20524a(this.f6119b, b8Var.f6119b) && C6374q.m20524a(null, null) && C6374q.m20524a(null, null);
+        return C6374q.m20525a(this.f6118a, b8Var.f6118a) && C6374q.m20525a(this.f6119b, b8Var.f6119b) && C6374q.m20525a(null, null) && C6374q.m20525a(null, null);
     }
 
     public final int hashCode() {
-        return C6374q.m20523b(this.f6118a, this.f6119b, null, null);
+        return C6374q.m20524b(this.f6118a, this.f6119b, null, null);
     }
 }

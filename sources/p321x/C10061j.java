@@ -11,10 +11,10 @@ import p336y.C10300t1;
 import p336y.C10321y1;
 
 public class C10061j implements AbstractC10325z1 {
-    public final AbstractC10268n0 f32729w;
+    public final AbstractC10268n0 f32732w;
 
     public static final class C10062a implements AbstractC0560f0<C10061j> {
-        public final C10284p1 f32730a = C10284p1.m5569J();
+        public final C10284p1 f32733a = C10284p1.m5569J();
 
         public static C10062a m6089e(final AbstractC10268n0 n0Var) {
             final C10062a aVar = new C10062a();
@@ -36,16 +36,16 @@ public class C10061j implements AbstractC10325z1 {
 
         @Override
         public AbstractC10277o1 mo6092a() {
-            return this.f32730a;
+            return this.f32733a;
         }
 
         public C10061j m6090d() {
-            return new C10061j(C10300t1.m5524H(this.f32730a));
+            return new C10061j(C10300t1.m5524H(this.f32733a));
         }
     }
 
     public C10061j(AbstractC10268n0 n0Var) {
-        this.f32729w = n0Var;
+        this.f32732w = n0Var;
     }
 
     @Override
@@ -80,7 +80,7 @@ public class C10061j implements AbstractC10325z1 {
 
     @Override
     public AbstractC10268n0 mo5421k() {
-        return this.f32729w;
+        return this.f32732w;
     }
 
     @Override

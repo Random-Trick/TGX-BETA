@@ -10,7 +10,7 @@ import p176m5.C6750b;
 public final class C4495k implements Parcelable.Creator<GoogleMapOptions> {
     @Override
     public final GoogleMapOptions createFromParcel(Parcel parcel) {
-        int x = C6750b.m19127x(parcel);
+        int x = C6750b.m19128x(parcel);
         CameraPosition cameraPosition = null;
         Float f = null;
         Float f2 = null;
@@ -29,66 +29,66 @@ public final class C4495k implements Parcelable.Creator<GoogleMapOptions> {
         byte b11 = -1;
         byte b12 = -1;
         while (parcel.dataPosition() < x) {
-            int q = C6750b.m19134q(parcel);
-            switch (C6750b.m19140k(q)) {
+            int q = C6750b.m19135q(parcel);
+            switch (C6750b.m19141k(q)) {
                 case 2:
-                    b = C6750b.m19138m(parcel, q);
+                    b = C6750b.m19139m(parcel, q);
                     break;
                 case 3:
-                    b2 = C6750b.m19138m(parcel, q);
+                    b2 = C6750b.m19139m(parcel, q);
                     break;
                 case 4:
-                    i = C6750b.m19132s(parcel, q);
+                    i = C6750b.m19133s(parcel, q);
                     break;
                 case 5:
-                    cameraPosition = (CameraPosition) C6750b.m19147d(parcel, q, CameraPosition.CREATOR);
+                    cameraPosition = (CameraPosition) C6750b.m19148d(parcel, q, CameraPosition.CREATOR);
                     break;
                 case 6:
-                    b3 = C6750b.m19138m(parcel, q);
+                    b3 = C6750b.m19139m(parcel, q);
                     break;
                 case 7:
-                    b4 = C6750b.m19138m(parcel, q);
+                    b4 = C6750b.m19139m(parcel, q);
                     break;
                 case 8:
-                    b5 = C6750b.m19138m(parcel, q);
+                    b5 = C6750b.m19139m(parcel, q);
                     break;
                 case 9:
-                    b6 = C6750b.m19138m(parcel, q);
+                    b6 = C6750b.m19139m(parcel, q);
                     break;
                 case 10:
-                    b7 = C6750b.m19138m(parcel, q);
+                    b7 = C6750b.m19139m(parcel, q);
                     break;
                 case 11:
-                    b8 = C6750b.m19138m(parcel, q);
+                    b8 = C6750b.m19139m(parcel, q);
                     break;
                 case 12:
-                    b9 = C6750b.m19138m(parcel, q);
+                    b9 = C6750b.m19139m(parcel, q);
                     break;
                 case 13:
                 default:
-                    C6750b.m19128w(parcel, q);
+                    C6750b.m19129w(parcel, q);
                     break;
                 case 14:
-                    b10 = C6750b.m19138m(parcel, q);
+                    b10 = C6750b.m19139m(parcel, q);
                     break;
                 case 15:
-                    b11 = C6750b.m19138m(parcel, q);
+                    b11 = C6750b.m19139m(parcel, q);
                     break;
                 case 16:
-                    f = C6750b.m19135p(parcel, q);
+                    f = C6750b.m19136p(parcel, q);
                     break;
                 case 17:
-                    f2 = C6750b.m19135p(parcel, q);
+                    f2 = C6750b.m19136p(parcel, q);
                     break;
                 case 18:
-                    latLngBounds = (LatLngBounds) C6750b.m19147d(parcel, q, LatLngBounds.CREATOR);
+                    latLngBounds = (LatLngBounds) C6750b.m19148d(parcel, q, LatLngBounds.CREATOR);
                     break;
                 case 19:
-                    b12 = C6750b.m19138m(parcel, q);
+                    b12 = C6750b.m19139m(parcel, q);
                     break;
             }
         }
-        C6750b.m19141j(parcel, x);
+        C6750b.m19142j(parcel, x);
         return new GoogleMapOptions(b, b2, i, cameraPosition, b3, b4, b5, b6, b7, b8, b9, b10, b11, f, f2, latLngBounds, b12);
     }
 

@@ -22,17 +22,17 @@ public final class C4982v {
         this.f16925a = context;
     }
 
-    public final synchronized int m24344a() {
+    public final synchronized int m24345a() {
         int i = this.f16927c;
         if (i != 0) {
             return i;
         }
         PackageManager packageManager = this.f16925a.getPackageManager();
-        if (C8645b.m11820a(this.f16925a).m11824a("com.google.android.c2dm.permission.SEND", "com.google.android.gms") == -1) {
+        if (C8645b.m11819a(this.f16925a).m11823a("com.google.android.c2dm.permission.SEND", "com.google.android.gms") == -1) {
             Log.e("Metadata", "Google Play services missing or without correct permission.");
             return 0;
         }
-        if (!C8251k.m13032g()) {
+        if (!C8251k.m13031g()) {
             Intent intent = new Intent("com.google.android.c2dm.intent.REGISTER");
             intent.setPackage("com.google.android.gms");
             List<ResolveInfo> queryIntentServices = packageManager.queryIntentServices(intent, 0);
@@ -46,7 +46,7 @@ public final class C4982v {
         List<ResolveInfo> queryBroadcastReceivers = packageManager.queryBroadcastReceivers(intent2, 0);
         if (queryBroadcastReceivers == null || queryBroadcastReceivers.size() <= 0) {
             Log.w("Metadata", "Failed to resolve IID implementation package, falling back");
-            if (C8251k.m13032g()) {
+            if (C8251k.m13031g()) {
                 this.f16927c = 2;
             } else {
                 this.f16927c = 1;
@@ -57,9 +57,9 @@ public final class C4982v {
         return 2;
     }
 
-    public final PackageInfo m24343b(String str) {
+    public final PackageInfo m24344b(String str) {
         try {
-            return C8645b.m11820a(this.f16925a).m11821d(str, 0);
+            return C8645b.m11819a(this.f16925a).m11820d(str, 0);
         } catch (PackageManager.NameNotFoundException e) {
             String valueOf = String.valueOf(e);
             StringBuilder sb2 = new StringBuilder(valueOf.length() + 23);
@@ -70,9 +70,9 @@ public final class C4982v {
         }
     }
 
-    public final synchronized int m24342c() {
+    public final synchronized int m24343c() {
         PackageInfo b;
-        if (this.f16926b == 0 && (b = m24343b("com.google.android.gms")) != null) {
+        if (this.f16926b == 0 && (b = m24344b("com.google.android.gms")) != null) {
             this.f16926b = b.versionCode;
         }
         return this.f16926b;

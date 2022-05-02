@@ -14,28 +14,28 @@ import java.util.TreeMap;
 import p323x1.AbstractC10066b;
 
 public class C9943f {
-    public final String f32320a;
-    public final Map<String, C9944a> f32321b;
-    public final Set<C9945b> f32322c;
-    public final Set<C9947d> f32323d;
+    public final String f32323a;
+    public final Map<String, C9944a> f32324b;
+    public final Set<C9945b> f32325c;
+    public final Set<C9947d> f32326d;
 
     public static class C9944a {
-        public final String f32324a;
-        public final String f32325b;
-        public final int f32326c;
-        public final boolean f32327d;
-        public final int f32328e;
-        public final String f32329f;
-        public final int f32330g;
+        public final String f32327a;
+        public final String f32328b;
+        public final int f32329c;
+        public final boolean f32330d;
+        public final int f32331e;
+        public final String f32332f;
+        public final int f32333g;
 
         public C9944a(String str, String str2, boolean z, int i, String str3, int i2) {
-            this.f32324a = str;
-            this.f32325b = str2;
-            this.f32327d = z;
-            this.f32328e = i;
-            this.f32326c = m6443a(str2);
-            this.f32329f = str3;
-            this.f32330g = i2;
+            this.f32327a = str;
+            this.f32328b = str2;
+            this.f32330d = z;
+            this.f32331e = i;
+            this.f32329c = m6443a(str2);
+            this.f32332f = str3;
+            this.f32333g = i2;
         }
 
         public static int m6443a(String str) {
@@ -56,7 +56,7 @@ public class C9943f {
         }
 
         public boolean m6442b() {
-            return this.f32328e > 0;
+            return this.f32331e > 0;
         }
 
         public boolean equals(Object obj) {
@@ -71,47 +71,47 @@ public class C9943f {
             }
             C9944a aVar = (C9944a) obj;
             if (Build.VERSION.SDK_INT >= 20) {
-                if (this.f32328e != aVar.f32328e) {
+                if (this.f32331e != aVar.f32331e) {
                     return false;
                 }
             } else if (m6442b() != aVar.m6442b()) {
                 return false;
             }
-            if (!this.f32324a.equals(aVar.f32324a) || this.f32327d != aVar.f32327d) {
+            if (!this.f32327a.equals(aVar.f32327a) || this.f32330d != aVar.f32330d) {
                 return false;
             }
-            if (this.f32330g == 1 && aVar.f32330g == 2 && (str3 = this.f32329f) != null && !str3.equals(aVar.f32329f)) {
+            if (this.f32333g == 1 && aVar.f32333g == 2 && (str3 = this.f32332f) != null && !str3.equals(aVar.f32332f)) {
                 return false;
             }
-            if (this.f32330g == 2 && aVar.f32330g == 1 && (str2 = aVar.f32329f) != null && !str2.equals(this.f32329f)) {
+            if (this.f32333g == 2 && aVar.f32333g == 1 && (str2 = aVar.f32332f) != null && !str2.equals(this.f32332f)) {
                 return false;
             }
-            int i = this.f32330g;
-            return (i == 0 || i != aVar.f32330g || ((str = this.f32329f) == null ? aVar.f32329f == null : str.equals(aVar.f32329f))) && this.f32326c == aVar.f32326c;
+            int i = this.f32333g;
+            return (i == 0 || i != aVar.f32333g || ((str = this.f32332f) == null ? aVar.f32332f == null : str.equals(aVar.f32332f))) && this.f32329c == aVar.f32329c;
         }
 
         public int hashCode() {
-            return (((((this.f32324a.hashCode() * 31) + this.f32326c) * 31) + (this.f32327d ? 1231 : 1237)) * 31) + this.f32328e;
+            return (((((this.f32327a.hashCode() * 31) + this.f32329c) * 31) + (this.f32330d ? 1231 : 1237)) * 31) + this.f32331e;
         }
 
         public String toString() {
-            return "Column{name='" + this.f32324a + "', type='" + this.f32325b + "', affinity='" + this.f32326c + "', notNull=" + this.f32327d + ", primaryKeyPosition=" + this.f32328e + ", defaultValue='" + this.f32329f + "'}";
+            return "Column{name='" + this.f32327a + "', type='" + this.f32328b + "', affinity='" + this.f32329c + "', notNull=" + this.f32330d + ", primaryKeyPosition=" + this.f32331e + ", defaultValue='" + this.f32332f + "'}";
         }
     }
 
     public static class C9945b {
-        public final String f32331a;
-        public final String f32332b;
-        public final String f32333c;
-        public final List<String> f32334d;
-        public final List<String> f32335e;
+        public final String f32334a;
+        public final String f32335b;
+        public final String f32336c;
+        public final List<String> f32337d;
+        public final List<String> f32338e;
 
         public C9945b(String str, String str2, String str3, List<String> list, List<String> list2) {
-            this.f32331a = str;
-            this.f32332b = str2;
-            this.f32333c = str3;
-            this.f32334d = Collections.unmodifiableList(list);
-            this.f32335e = Collections.unmodifiableList(list2);
+            this.f32334a = str;
+            this.f32335b = str2;
+            this.f32336c = str3;
+            this.f32337d = Collections.unmodifiableList(list);
+            this.f32338e = Collections.unmodifiableList(list2);
         }
 
         public boolean equals(Object obj) {
@@ -122,49 +122,49 @@ public class C9943f {
                 return false;
             }
             C9945b bVar = (C9945b) obj;
-            if (this.f32331a.equals(bVar.f32331a) && this.f32332b.equals(bVar.f32332b) && this.f32333c.equals(bVar.f32333c) && this.f32334d.equals(bVar.f32334d)) {
-                return this.f32335e.equals(bVar.f32335e);
+            if (this.f32334a.equals(bVar.f32334a) && this.f32335b.equals(bVar.f32335b) && this.f32336c.equals(bVar.f32336c) && this.f32337d.equals(bVar.f32337d)) {
+                return this.f32338e.equals(bVar.f32338e);
             }
             return false;
         }
 
         public int hashCode() {
-            return (((((((this.f32331a.hashCode() * 31) + this.f32332b.hashCode()) * 31) + this.f32333c.hashCode()) * 31) + this.f32334d.hashCode()) * 31) + this.f32335e.hashCode();
+            return (((((((this.f32334a.hashCode() * 31) + this.f32335b.hashCode()) * 31) + this.f32336c.hashCode()) * 31) + this.f32337d.hashCode()) * 31) + this.f32338e.hashCode();
         }
 
         public String toString() {
-            return "ForeignKey{referenceTable='" + this.f32331a + "', onDelete='" + this.f32332b + "', onUpdate='" + this.f32333c + "', columnNames=" + this.f32334d + ", referenceColumnNames=" + this.f32335e + '}';
+            return "ForeignKey{referenceTable='" + this.f32334a + "', onDelete='" + this.f32335b + "', onUpdate='" + this.f32336c + "', columnNames=" + this.f32337d + ", referenceColumnNames=" + this.f32338e + '}';
         }
     }
 
     public static class C9946c implements Comparable<C9946c> {
-        public final String f32336M;
-        public final int f32337a;
-        public final int f32338b;
-        public final String f32339c;
+        public final String f32339M;
+        public final int f32340a;
+        public final int f32341b;
+        public final String f32342c;
 
         public C9946c(int i, int i2, String str, String str2) {
-            this.f32337a = i;
-            this.f32338b = i2;
-            this.f32339c = str;
-            this.f32336M = str2;
+            this.f32340a = i;
+            this.f32341b = i2;
+            this.f32342c = str;
+            this.f32339M = str2;
         }
 
         public int compareTo(C9946c cVar) {
-            int i = this.f32337a - cVar.f32337a;
-            return i == 0 ? this.f32338b - cVar.f32338b : i;
+            int i = this.f32340a - cVar.f32340a;
+            return i == 0 ? this.f32341b - cVar.f32341b : i;
         }
     }
 
     public static class C9947d {
-        public final String f32340a;
-        public final boolean f32341b;
-        public final List<String> f32342c;
+        public final String f32343a;
+        public final boolean f32344b;
+        public final List<String> f32345c;
 
         public C9947d(String str, boolean z, List<String> list) {
-            this.f32340a = str;
-            this.f32341b = z;
-            this.f32342c = list;
+            this.f32343a = str;
+            this.f32344b = z;
+            this.f32345c = list;
         }
 
         public boolean equals(Object obj) {
@@ -175,29 +175,29 @@ public class C9943f {
                 return false;
             }
             C9947d dVar = (C9947d) obj;
-            if (this.f32341b != dVar.f32341b || !this.f32342c.equals(dVar.f32342c)) {
+            if (this.f32344b != dVar.f32344b || !this.f32345c.equals(dVar.f32345c)) {
                 return false;
             }
-            if (this.f32340a.startsWith("index_")) {
-                return dVar.f32340a.startsWith("index_");
+            if (this.f32343a.startsWith("index_")) {
+                return dVar.f32343a.startsWith("index_");
             }
-            return this.f32340a.equals(dVar.f32340a);
+            return this.f32343a.equals(dVar.f32343a);
         }
 
         public int hashCode() {
-            return ((((this.f32340a.startsWith("index_") ? -1184239155 : this.f32340a.hashCode()) * 31) + (this.f32341b ? 1 : 0)) * 31) + this.f32342c.hashCode();
+            return ((((this.f32343a.startsWith("index_") ? -1184239155 : this.f32343a.hashCode()) * 31) + (this.f32344b ? 1 : 0)) * 31) + this.f32345c.hashCode();
         }
 
         public String toString() {
-            return "Index{name='" + this.f32340a + "', unique=" + this.f32341b + ", columns=" + this.f32342c + '}';
+            return "Index{name='" + this.f32343a + "', unique=" + this.f32344b + ", columns=" + this.f32345c + '}';
         }
     }
 
     public C9943f(String str, Map<String, C9944a> map, Set<C9945b> set, Set<C9947d> set2) {
-        this.f32320a = str;
-        this.f32321b = Collections.unmodifiableMap(map);
-        this.f32322c = Collections.unmodifiableSet(set);
-        this.f32323d = set2 == null ? null : Collections.unmodifiableSet(set2);
+        this.f32323a = str;
+        this.f32324b = Collections.unmodifiableMap(map);
+        this.f32325c = Collections.unmodifiableSet(set);
+        this.f32326d = set2 == null ? null : Collections.unmodifiableSet(set2);
     }
 
     public static C9943f m6449a(AbstractC10066b bVar, String str) {
@@ -258,9 +258,9 @@ public class C9943f {
                     ArrayList arrayList = new ArrayList();
                     ArrayList arrayList2 = new ArrayList();
                     for (C9946c cVar : c) {
-                        if (cVar.f32337a == i2) {
-                            arrayList.add(cVar.f32339c);
-                            arrayList2.add(cVar.f32336M);
+                        if (cVar.f32340a == i2) {
+                            arrayList.add(cVar.f32342c);
+                            arrayList2.add(cVar.f32339M);
                         }
                     }
                     hashSet.add(new C9945b(S.getString(columnIndex3), S.getString(columnIndex4), S.getString(columnIndex5), arrayList, arrayList2));
@@ -335,32 +335,32 @@ public class C9943f {
             return false;
         }
         C9943f fVar = (C9943f) obj;
-        String str = this.f32320a;
-        if (str == null ? fVar.f32320a != null : !str.equals(fVar.f32320a)) {
+        String str = this.f32323a;
+        if (str == null ? fVar.f32323a != null : !str.equals(fVar.f32323a)) {
             return false;
         }
-        Map<String, C9944a> map = this.f32321b;
-        if (map == null ? fVar.f32321b != null : !map.equals(fVar.f32321b)) {
+        Map<String, C9944a> map = this.f32324b;
+        if (map == null ? fVar.f32324b != null : !map.equals(fVar.f32324b)) {
             return false;
         }
-        Set<C9945b> set2 = this.f32322c;
-        if (set2 == null ? fVar.f32322c != null : !set2.equals(fVar.f32322c)) {
+        Set<C9945b> set2 = this.f32325c;
+        if (set2 == null ? fVar.f32325c != null : !set2.equals(fVar.f32325c)) {
             return false;
         }
-        Set<C9947d> set3 = this.f32323d;
-        if (set3 == null || (set = fVar.f32323d) == null) {
+        Set<C9947d> set3 = this.f32326d;
+        if (set3 == null || (set = fVar.f32326d) == null) {
             return true;
         }
         return set3.equals(set);
     }
 
     public int hashCode() {
-        String str = this.f32320a;
+        String str = this.f32323a;
         int i = 0;
         int hashCode = (str != null ? str.hashCode() : 0) * 31;
-        Map<String, C9944a> map = this.f32321b;
+        Map<String, C9944a> map = this.f32324b;
         int hashCode2 = (hashCode + (map != null ? map.hashCode() : 0)) * 31;
-        Set<C9945b> set = this.f32322c;
+        Set<C9945b> set = this.f32325c;
         if (set != null) {
             i = set.hashCode();
         }
@@ -368,6 +368,6 @@ public class C9943f {
     }
 
     public String toString() {
-        return "TableInfo{name='" + this.f32320a + "', columns=" + this.f32321b + ", foreignKeys=" + this.f32322c + ", indices=" + this.f32323d + '}';
+        return "TableInfo{name='" + this.f32323a + "', columns=" + this.f32324b + ", foreignKeys=" + this.f32325c + ", indices=" + this.f32326d + '}';
     }
 }

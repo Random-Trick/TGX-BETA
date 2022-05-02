@@ -14,31 +14,31 @@ public class C1478n {
         this.f5347c = view;
     }
 
-    public boolean m36802a(float f, float f2, boolean z) {
+    public boolean m36805a(float f, float f2, boolean z) {
         ViewParent h;
-        if (!m36791l() || (h = m36795h(0)) == null) {
+        if (!m36794l() || (h = m36798h(0)) == null) {
             return false;
         }
-        return C1440c0.m36917a(h, this.f5347c, f, f2, z);
+        return C1440c0.m36920a(h, this.f5347c, f, f2, z);
     }
 
-    public boolean m36801b(float f, float f2) {
+    public boolean m36804b(float f, float f2) {
         ViewParent h;
-        if (!m36791l() || (h = m36795h(0)) == null) {
+        if (!m36794l() || (h = m36798h(0)) == null) {
             return false;
         }
-        return C1440c0.m36916b(h, this.f5347c, f, f2);
+        return C1440c0.m36919b(h, this.f5347c, f, f2);
     }
 
-    public boolean m36800c(int i, int i2, int[] iArr, int[] iArr2) {
-        return m36799d(i, i2, iArr, iArr2, 0);
+    public boolean m36803c(int i, int i2, int[] iArr, int[] iArr2) {
+        return m36802d(i, i2, iArr, iArr2, 0);
     }
 
-    public boolean m36799d(int i, int i2, int[] iArr, int[] iArr2, int i3) {
+    public boolean m36802d(int i, int i2, int[] iArr, int[] iArr2, int i3) {
         ViewParent h;
         int i4;
         int i5;
-        if (!m36791l() || (h = m36795h(i3)) == null) {
+        if (!m36794l() || (h = m36798h(i3)) == null) {
             return false;
         }
         if (i != 0 || i2 != 0) {
@@ -51,11 +51,11 @@ public class C1478n {
                 i4 = 0;
             }
             if (iArr == null) {
-                iArr = m36794i();
+                iArr = m36797i();
             }
             iArr[0] = 0;
             iArr[1] = 0;
-            C1440c0.m36915c(h, this.f5347c, i, i2, iArr, i3);
+            C1440c0.m36918c(h, this.f5347c, i, i2, iArr, i3);
             if (iArr2 != null) {
                 this.f5347c.getLocationInWindow(iArr2);
                 iArr2[0] = iArr2[0] - i5;
@@ -71,20 +71,20 @@ public class C1478n {
         }
     }
 
-    public void m36798e(int i, int i2, int i3, int i4, int[] iArr, int i5, int[] iArr2) {
-        m36796g(i, i2, i3, i4, iArr, i5, iArr2);
+    public void m36801e(int i, int i2, int i3, int i4, int[] iArr, int i5, int[] iArr2) {
+        m36799g(i, i2, i3, i4, iArr, i5, iArr2);
     }
 
-    public boolean m36797f(int i, int i2, int i3, int i4, int[] iArr) {
-        return m36796g(i, i2, i3, i4, iArr, 0, null);
+    public boolean m36800f(int i, int i2, int i3, int i4, int[] iArr) {
+        return m36799g(i, i2, i3, i4, iArr, 0, null);
     }
 
-    public final boolean m36796g(int i, int i2, int i3, int i4, int[] iArr, int i5, int[] iArr2) {
+    public final boolean m36799g(int i, int i2, int i3, int i4, int[] iArr, int i5, int[] iArr2) {
         ViewParent h;
         int i6;
         int i7;
         int[] iArr3;
-        if (!m36791l() || (h = m36795h(i5)) == null) {
+        if (!m36794l() || (h = m36798h(i5)) == null) {
             return false;
         }
         if (i == 0 && i2 == 0 && i3 == 0 && i4 == 0) {
@@ -103,14 +103,14 @@ public class C1478n {
             i6 = 0;
         }
         if (iArr2 == null) {
-            int[] i8 = m36794i();
+            int[] i8 = m36797i();
             i8[0] = 0;
             i8[1] = 0;
             iArr3 = i8;
         } else {
             iArr3 = iArr2;
         }
-        C1440c0.m36914d(h, this.f5347c, i, i2, i3, i4, i5, iArr3);
+        C1440c0.m36917d(h, this.f5347c, i, i2, i3, i4, i5, iArr3);
         if (iArr != null) {
             this.f5347c.getLocationInWindow(iArr);
             iArr[0] = iArr[0] - i7;
@@ -119,7 +119,7 @@ public class C1478n {
         return true;
     }
 
-    public final ViewParent m36795h(int i) {
+    public final ViewParent m36798h(int i) {
         if (i == 0) {
             return this.f5345a;
         }
@@ -129,33 +129,33 @@ public class C1478n {
         return this.f5346b;
     }
 
-    public final int[] m36794i() {
+    public final int[] m36797i() {
         if (this.f5349e == null) {
             this.f5349e = new int[2];
         }
         return this.f5349e;
     }
 
-    public boolean m36793j() {
-        return m36792k(0);
+    public boolean m36796j() {
+        return m36795k(0);
     }
 
-    public boolean m36792k(int i) {
-        return m36795h(i) != null;
+    public boolean m36795k(int i) {
+        return m36798h(i) != null;
     }
 
-    public boolean m36791l() {
+    public boolean m36794l() {
         return this.f5348d;
     }
 
-    public void m36790m(boolean z) {
+    public void m36793m(boolean z) {
         if (this.f5348d) {
-            C1489y.m36712p0(this.f5347c);
+            C1489y.m36715p0(this.f5347c);
         }
         this.f5348d = z;
     }
 
-    public final void m36789n(int i, ViewParent viewParent) {
+    public final void m36792n(int i, ViewParent viewParent) {
         if (i == 0) {
             this.f5345a = viewParent;
         } else if (i == 1) {
@@ -163,22 +163,22 @@ public class C1478n {
         }
     }
 
-    public boolean m36788o(int i) {
-        return m36787p(i, 0);
+    public boolean m36791o(int i) {
+        return m36790p(i, 0);
     }
 
-    public boolean m36787p(int i, int i2) {
-        if (m36792k(i2)) {
+    public boolean m36790p(int i, int i2) {
+        if (m36795k(i2)) {
             return true;
         }
-        if (!m36791l()) {
+        if (!m36794l()) {
             return false;
         }
         View view = this.f5347c;
         for (ViewParent parent = this.f5347c.getParent(); parent != null; parent = parent.getParent()) {
-            if (C1440c0.m36912f(parent, view, this.f5347c, i, i2)) {
-                m36789n(i2, parent);
-                C1440c0.m36913e(parent, view, this.f5347c, i, i2);
+            if (C1440c0.m36915f(parent, view, this.f5347c, i, i2)) {
+                m36792n(i2, parent);
+                C1440c0.m36916e(parent, view, this.f5347c, i, i2);
                 return true;
             }
             if (parent instanceof View) {
@@ -188,15 +188,15 @@ public class C1478n {
         return false;
     }
 
-    public void m36786q() {
-        m36785r(0);
+    public void m36789q() {
+        m36788r(0);
     }
 
-    public void m36785r(int i) {
-        ViewParent h = m36795h(i);
+    public void m36788r(int i) {
+        ViewParent h = m36798h(i);
         if (h != null) {
-            C1440c0.m36911g(h, this.f5347c, i);
-            m36789n(i, null);
+            C1440c0.m36914g(h, this.f5347c, i);
+            m36792n(i, null);
         }
     }
 }

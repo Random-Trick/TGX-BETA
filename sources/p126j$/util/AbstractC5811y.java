@@ -5,14 +5,14 @@ import p126j$.util.function.Consumer;
 
 public interface AbstractC5811y extends AbstractC5466E {
     @Override
-    boolean mo22124a(Consumer consumer);
+    boolean mo22125a(Consumer consumer);
 
     @Override
     void forEachRemaining(Consumer consumer);
 
-    boolean mo22123l(AbstractC5525g gVar);
+    boolean mo22124l(AbstractC5525g gVar);
 
-    void mo22122m(AbstractC5525g gVar);
+    void mo22123m(AbstractC5525g gVar);
 
     @Override
     AbstractC5811y trySplit();

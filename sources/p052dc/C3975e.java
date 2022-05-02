@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.LogRecord;
 
 public final class C3975e {
-    public static final int m29435b(LogRecord logRecord) {
+    public static final int m29437b(LogRecord logRecord) {
         if (logRecord.getLevel().intValue() > Level.INFO.intValue()) {
             return 5;
         }

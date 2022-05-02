@@ -9,6 +9,6 @@ public final class C5607K0 implements AbstractC5530l {
     }
 
     @Override
-    public final void mo22144d(int i) {
+    public final void mo22145d(int i) {
     }
 }

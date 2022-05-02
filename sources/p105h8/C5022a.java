@@ -12,11 +12,11 @@ public final class C5022a implements Cloneable {
         this(i, i);
     }
 
-    public final String m24284a(String str, String str2, String str3) {
+    public final String m24285a(String str, String str2, String str3) {
         StringBuilder sb2 = new StringBuilder(this.f16937b * (this.f16936a + 1));
         for (int i = 0; i < this.f16937b; i++) {
             for (int i2 = 0; i2 < this.f16936a; i2++) {
-                sb2.append(m24281d(i2, i) ? str : str2);
+                sb2.append(m24282d(i2, i) ? str : str2);
             }
             sb2.append(str3);
         }
@@ -27,17 +27,17 @@ public final class C5022a implements Cloneable {
         return new C5022a(this.f16936a, this.f16937b, this.f16938c, (int[]) this.f16935M.clone());
     }
 
-    public void m24282c(int i, int i2) {
+    public void m24283c(int i, int i2) {
         int i3 = (i2 * this.f16938c) + (i / 32);
         int[] iArr = this.f16935M;
         iArr[i3] = (1 << (i & 31)) ^ iArr[i3];
     }
 
-    public boolean m24281d(int i, int i2) {
+    public boolean m24282d(int i, int i2) {
         return ((this.f16935M[(i2 * this.f16938c) + (i / 32)] >>> (i & 31)) & 1) != 0;
     }
 
-    public int[] m24280e() {
+    public int[] m24281e() {
         int length = this.f16935M.length - 1;
         while (length >= 0 && this.f16935M[length] == 0) {
             length--;
@@ -63,11 +63,11 @@ public final class C5022a implements Cloneable {
         return this.f16936a == aVar.f16936a && this.f16937b == aVar.f16937b && this.f16938c == aVar.f16938c && Arrays.equals(this.f16935M, aVar.f16935M);
     }
 
-    public int m24279f() {
+    public int m24280f() {
         return this.f16937b;
     }
 
-    public int[] m24278g() {
+    public int[] m24279g() {
         int[] iArr;
         int i = 0;
         while (true) {
@@ -91,7 +91,7 @@ public final class C5022a implements Cloneable {
         return new int[]{i4 + i6, i3};
     }
 
-    public int m24277h() {
+    public int m24278h() {
         return this.f16936a;
     }
 
@@ -100,13 +100,13 @@ public final class C5022a implements Cloneable {
         return (((((((i * 31) + i) * 31) + this.f16937b) * 31) + this.f16938c) * 31) + Arrays.hashCode(this.f16935M);
     }
 
-    public void m24276i(int i, int i2) {
+    public void m24277i(int i, int i2) {
         int i3 = (i2 * this.f16938c) + (i / 32);
         int[] iArr = this.f16935M;
         iArr[i3] = (1 << (i & 31)) | iArr[i3];
     }
 
-    public void m24275j(int i, int i2, int i3, int i4) {
+    public void m24276j(int i, int i2, int i3, int i4) {
         if (i2 < 0 || i < 0) {
             throw new IllegalArgumentException("Left and top must be nonnegative");
         } else if (i4 <= 0 || i3 <= 0) {
@@ -129,12 +129,12 @@ public final class C5022a implements Cloneable {
         }
     }
 
-    public String m24274k(String str, String str2) {
-        return m24284a(str, str2, "\n");
+    public String m24275k(String str, String str2) {
+        return m24285a(str, str2, "\n");
     }
 
     public String toString() {
-        return m24274k("X ", "  ");
+        return m24275k("X ", "  ");
     }
 
     public C5022a(int i, int i2) {

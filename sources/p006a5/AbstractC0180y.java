@@ -46,7 +46,7 @@ public interface AbstractC0180y extends AbstractC0154k {
         public final Map<String, String> f663a = new HashMap();
         public Map<String, String> f664b;
 
-        public synchronized Map<String, String> m42131a() {
+        public synchronized Map<String, String> m42134a() {
             if (this.f664b == null) {
                 this.f664b = Collections.unmodifiableMap(new HashMap(this.f663a));
             }
@@ -59,19 +59,19 @@ public interface AbstractC0180y extends AbstractC0154k {
         public final int f657c;
 
         public C0183c(C0159o oVar, int i, int i2) {
-            super(m42133b(i, i2));
+            super(m42136b(i, i2));
             this.f656b = oVar;
             this.f657c = i2;
         }
 
-        public static int m42133b(int i, int i2) {
+        public static int m42136b(int i, int i2) {
             if (i == 2000 && i2 == 1) {
                 return 2001;
             }
             return i;
         }
 
-        public static C0183c m42132c(IOException iOException, C0159o oVar, int i) {
+        public static C0183c m42135c(IOException iOException, C0159o oVar, int i) {
             int i2;
             String message = iOException.getMessage();
             if (iOException instanceof SocketTimeoutException) {
@@ -88,19 +88,19 @@ public interface AbstractC0180y extends AbstractC0154k {
         }
 
         public C0183c(String str, C0159o oVar, int i, int i2) {
-            super(str, m42133b(i, i2));
+            super(str, m42136b(i, i2));
             this.f656b = oVar;
             this.f657c = i2;
         }
 
         public C0183c(IOException iOException, C0159o oVar, int i, int i2) {
-            super(iOException, m42133b(i, i2));
+            super(iOException, m42136b(i, i2));
             this.f656b = oVar;
             this.f657c = i2;
         }
 
         public C0183c(String str, IOException iOException, C0159o oVar, int i, int i2) {
-            super(str, iOException, m42133b(i, i2));
+            super(str, iOException, m42136b(i, i2));
             this.f656b = oVar;
             this.f657c = i2;
         }

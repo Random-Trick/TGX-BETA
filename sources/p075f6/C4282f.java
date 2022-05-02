@@ -34,23 +34,23 @@ public class C4282f {
     }
 
     @RecentlyNonNull
-    public static C4274b m28302a(@RecentlyNonNull Context context) {
+    public static C4274b m28304a(@RecentlyNonNull Context context) {
         return new C4274b(context);
     }
 
     @RecentlyNonNull
-    public static C4295l m28301b(@RecentlyNonNull Context context) {
+    public static C4295l m28303b(@RecentlyNonNull Context context) {
         return new C4295l(context);
     }
 
-    public static C11317t m28300c(AbstractC5867f fVar) {
+    public static C11317t m28302c(AbstractC5867f fVar) {
         boolean z = true;
-        C6378r.m20515b(fVar != null, "GoogleApiClient parameter is required.");
-        C11317t tVar = (C11317t) fVar.mo21173h(f14334e);
+        C6378r.m20516b(fVar != null, "GoogleApiClient parameter is required.");
+        C11317t tVar = (C11317t) fVar.mo21174h(f14334e);
         if (tVar == null) {
             z = false;
         }
-        C6378r.m20503n(z, "GoogleApiClient is not configured to use the LocationServices.API Api. Pass thisinto GoogleApiClient.Builder#addApi() to use this feature.");
+        C6378r.m20504n(z, "GoogleApiClient is not configured to use the LocationServices.API Api. Pass thisinto GoogleApiClient.Builder#addApi() to use this feature.");
         return tVar;
     }
 }

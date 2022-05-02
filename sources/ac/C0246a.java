@@ -21,23 +21,23 @@ public final class C0246a {
     }
 
     public C0246a(AbstractC4551g gVar) {
-        C8298k.m12934e(gVar, "source");
+        C8298k.m12933e(gVar, "source");
         this.f752b = gVar;
     }
 
-    public final C9122v m42019a() {
+    public final C9122v m42022a() {
         C9122v.C9123a aVar = new C9122v.C9123a();
         while (true) {
-            String b = m42018b();
+            String b = m42021b();
             if (b.length() == 0) {
-                return aVar.m10365d();
+                return aVar.m10364d();
             }
-            aVar.m10367b(b);
+            aVar.m10366b(b);
         }
     }
 
-    public final String m42018b() {
-        String H = this.f752b.mo27338H(this.f751a);
+    public final String m42021b() {
+        String H = this.f752b.mo27340H(this.f751a);
         this.f751a -= H.length();
         return H;
     }

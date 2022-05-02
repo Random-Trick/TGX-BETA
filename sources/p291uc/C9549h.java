@@ -10,7 +10,7 @@ import be.C1399s0;
 import ie.C5375a;
 
 public class C9549h extends View {
-    public final C5375a f30948a = new C5375a.C5377b().m23019d(new C9550a()).m23021b();
+    public final C5375a f30951a = new C5375a.C5377b().m23020d(new C9550a()).m23022b();
 
     public class C9550a implements C5375a.AbstractC5378c {
         public C9550a() {
@@ -18,7 +18,7 @@ public class C9549h extends View {
 
         @Override
         public boolean mo8363d(C5375a aVar) {
-            return C1399s0.m37218C(C9549h.this);
+            return C1399s0.m37221C(C9549h.this);
         }
 
         @Override
@@ -33,17 +33,17 @@ public class C9549h extends View {
     public C9549h(Context context) {
         super(context);
         setLayoutParams(new ViewGroup.LayoutParams(-1, -2));
-        setMinimumHeight(C1357a0.m37541i(28.0f));
+        setMinimumHeight(C1357a0.m37544i(28.0f));
     }
 
     public void m8364a(int i, boolean z, boolean z2) {
-        this.f30948a.m23026u(i, z, z2);
+        this.f30951a.m23027u(i, z, z2);
     }
 
     @Override
     public void onDraw(Canvas canvas) {
         int paddingLeft = getPaddingLeft();
-        this.f30948a.m23039d(canvas, paddingLeft + (((getMeasuredWidth() - paddingLeft) - getPaddingRight()) / 2), getMeasuredHeight() / 2, 1, 1.0f);
+        this.f30951a.m23040d(canvas, paddingLeft + (((getMeasuredWidth() - paddingLeft) - getPaddingRight()) / 2), getMeasuredHeight() / 2, 1, 1.0f);
     }
 
     @Override

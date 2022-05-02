@@ -7,7 +7,7 @@ import java.util.concurrent.ScheduledExecutorService;
 public final class C0015f {
     public static volatile ScheduledExecutorService f22a;
 
-    public static ScheduledExecutorService m42598a() {
+    public static ScheduledExecutorService m42601a() {
         if (f22a != null) {
             return f22a;
         }

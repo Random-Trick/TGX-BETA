@@ -9,7 +9,7 @@ public final class C6595f1 implements AbstractC6609h.AbstractC6610a {
     @Override
     public final AbstractC6609h mo998a(Bundle bundle) {
         C6600g1 e;
-        e = C6600g1.m19898e(bundle);
+        e = C6600g1.m19899e(bundle);
         return e;
     }
 }

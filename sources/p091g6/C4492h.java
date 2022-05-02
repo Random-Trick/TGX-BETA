@@ -8,6 +8,6 @@ public class C4492h {
     public final AbstractC4993d f14853a;
 
     public C4492h(@RecentlyNonNull AbstractC4993d dVar) {
-        this.f14853a = (AbstractC4993d) C6378r.m20505l(dVar, "delegate");
+        this.f14853a = (AbstractC4993d) C6378r.m20506l(dVar, "delegate");
     }
 }

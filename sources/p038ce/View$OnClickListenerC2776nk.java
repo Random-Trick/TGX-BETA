@@ -44,8 +44,8 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
 
             @Override
             public void mo421b(RecyclerView recyclerView, int i, int i2) {
-                AbstractC11155yj yjVar = ((C2780c) ((C2964ra) recyclerView.getTag()).m32844d()).f9402b;
-                if (((LinearLayoutManager) recyclerView.getLayoutManager()).m39546a2() + 5 >= yjVar.m4494u()) {
+                AbstractC11155yj yjVar = ((C2780c) ((C2964ra) recyclerView.getTag()).m32847d()).f9402b;
+                if (((LinearLayoutManager) recyclerView.getLayoutManager()).m39549a2() + 5 >= yjVar.m4494u()) {
                     yjVar.m4518G(false, null);
                 }
             }
@@ -56,11 +56,11 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
         }
 
         @Override
-        public void mo9532H2(C2964ra raVar, RecyclerView recyclerView, boolean z) {
-            C2780c cVar = (C2780c) raVar.m32844d();
+        public void mo504H2(C2964ra raVar, RecyclerView recyclerView, boolean z) {
+            C2780c cVar = (C2780c) raVar.m32847d();
             if (z) {
                 recyclerView.setItemAnimator(new C8731d(C2057b.f7280b, 180L));
-                recyclerView.m39422k(new C2778a());
+                recyclerView.m39425k(new C2778a());
             }
             if (recyclerView.getAdapter() != cVar.f9403c) {
                 recyclerView.setAdapter(cVar.f9403c);
@@ -73,13 +73,13 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
             switch (n0Var.getId()) {
                 case R.id.text_subtitle:
                     n0Var.setTextSize(15.0f);
-                    n0Var.setPadding(C1357a0.m37541i(16.0f), C1357a0.m37541i(6.0f), C1357a0.m37541i(16.0f), C1357a0.m37541i(6.0f));
+                    n0Var.setPadding(C1357a0.m37544i(16.0f), C1357a0.m37544i(6.0f), C1357a0.m37544i(16.0f), C1357a0.m37544i(6.0f));
                     n0Var.setTextColorId(R.id.theme_color_background_text);
                     C10192g.m5782i(n0Var, 0, View$OnClickListenerC2776nk.this);
                     return;
                 case R.id.text_title:
                     n0Var.setTextSize(17.0f);
-                    n0Var.setPadding(C1357a0.m37541i(16.0f), C1357a0.m37541i(13.0f), C1357a0.m37541i(16.0f), C1357a0.m37541i(13.0f));
+                    n0Var.setPadding(C1357a0.m37544i(16.0f), C1357a0.m37544i(13.0f), C1357a0.m37544i(16.0f), C1357a0.m37544i(13.0f));
                     n0Var.setTextColorId(R.id.theme_color_text);
                     C10192g.m5782i(n0Var, R.id.theme_color_filling, View$OnClickListenerC2776nk.this);
                     return;
@@ -90,12 +90,12 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
 
         @Override
         public void mo393t2(C2964ra raVar, int i, C7030t1 t1Var) {
-            int i2 = View$OnClickListenerC2776nk.this.m33523Hg() ? ((TdApi.PollTypeQuiz) View$OnClickListenerC2776nk.this.m33524Gg().type).correctOptionId : -1;
-            TdApi.PollOption pollOption = View$OnClickListenerC2776nk.this.m33524Gg().options[raVar.m32833l()];
+            int i2 = View$OnClickListenerC2776nk.this.m33526Hg() ? ((TdApi.PollTypeQuiz) View$OnClickListenerC2776nk.this.m33527Gg().type).correctOptionId : -1;
+            TdApi.PollOption pollOption = View$OnClickListenerC2776nk.this.m33527Gg().options[raVar.m32836l()];
             Object[] objArr = new Object[2];
-            objArr[0] = C4403w.m27836q2(View$OnClickListenerC2776nk.this.m33523Hg() ? raVar.m32833l() == i2 ? R.string.xCorrectAnswers : R.string.xAnswers : R.string.xVotes, pollOption.voterCount);
+            objArr[0] = C4403w.m27838q2(View$OnClickListenerC2776nk.this.m33526Hg() ? raVar.m32836l() == i2 ? R.string.xCorrectAnswers : R.string.xAnswers : R.string.xVotes, pollOption.voterCount);
             objArr[1] = Integer.valueOf(pollOption.votePercentage);
-            t1Var.m18058E1(C4403w.m27935T("%s — %d%%", null, objArr));
+            t1Var.m18058E1(C4403w.m27937T("%s — %d%%", null, objArr));
         }
     }
 
@@ -123,7 +123,7 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
 
             @Override
             public void mo505d2(C2964ra raVar, C7093z3 z3Var) {
-                z3Var.setChat((C4601c3) raVar.m32844d());
+                z3Var.setChat((C4601c3) raVar.m32847d());
             }
         }
 
@@ -150,7 +150,7 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
             this.f9401a = c;
             C2781a aVar = new C2781a(v4Var);
             this.f9403c = aVar;
-            aVar.m34241E2();
+            aVar.m34244E2();
             C2782b bVar = new C2782b(c, 50, 50, this, j, j2, i);
             this.f9402b = bVar;
             bVar.m4520E(null);
@@ -166,10 +166,10 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
             ArrayList arrayList = new ArrayList(list.size());
             for (Long l : list) {
                 long longValue = l.longValue();
-                arrayList.add(new C2964ra(59, R.id.user).m32870G(new C4601c3(this.f9401a, longValue).m27061D()).m32863N(C7316a.m17058c(longValue)));
+                arrayList.add(new C2964ra(59, R.id.user).m32873G(new C4601c3(this.f9401a, longValue).m27063D()).m32866N(C7316a.m17058c(longValue)));
             }
-            this.f9403c.m34240F0().addAll(i, arrayList);
-            this.f9403c.m39308M(i, arrayList.size());
+            this.f9403c.m34243F0().addAll(i, arrayList);
+            this.f9403c.m39311M(i, arrayList.size());
         }
 
         @Override
@@ -188,7 +188,7 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
         }
 
         public void mo4478x2(AbstractC10596d1<Long> d1Var, Long l, int i) {
-            this.f9403c.m34129t0(i, new C2964ra(59).m32870G(new C4601c3(this.f9401a, l.longValue()).m27061D()).m32863N(C7316a.m17058c(l.longValue())));
+            this.f9403c.m34132t0(i, new C2964ra(59).m32873G(new C4601c3(this.f9401a, l.longValue()).m27063D()).m32866N(C7316a.m17058c(l.longValue())));
         }
 
         public void mo4480i7(AbstractC10596d1<Long> d1Var, Long l, int i, int i2) {
@@ -209,34 +209,34 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
         super(context, q6Var);
     }
 
-    public void m33522Ig(TdApi.Poll poll) {
+    public void m33525Ig(TdApi.Poll poll) {
         TdApi.PollOption[] pollOptionArr;
-        if (!m9347Sa() && m33524Gg().f25413id == poll.f25413id) {
+        if (!m9347Sa() && m33527Gg().f25416id == poll.f25416id) {
             m9131x9().f9398a = poll;
-            if (poll.totalVoterCount == 0 || !C4779t2.m25409v2(poll)) {
+            if (poll.totalVoterCount == 0 || !C4779t2.m25410v2(poll)) {
                 m9298Zb();
                 return;
             }
-            m33520Kg(true);
-            List<C2964ra> F0 = this.f9395E0.m34240F0();
+            m33523Kg(true);
+            List<C2964ra> F0 = this.f9395E0.m34243F0();
             int i = 0;
             int i2 = 0;
             for (TdApi.PollOption pollOption : poll.options) {
-                int Fg = m33525Fg(i2);
+                int Fg = m33528Fg(i2);
                 if (pollOption.voterCount == 0) {
                     if (Fg != -1) {
-                        this.f9395E0.m34204V1(Fg, 5);
+                        this.f9395E0.m34207V1(Fg, 5);
                     }
                 } else if (Fg == -1) {
-                    int Eg = m33526Eg(i2);
-                    F0.addAll(Eg, Arrays.asList(new C2964ra(8, (int) R.id.text_subtitle, 0, (CharSequence) pollOption.text, false).m32864M(i2), new C2964ra(2), m33521Jg(i2), new C2964ra(3), new C2964ra(42).m32864M(i2)));
-                    this.f9395E0.m39309L(Eg, 5);
+                    int Eg = m33529Eg(i2);
+                    F0.addAll(Eg, Arrays.asList(new C2964ra(8, (int) R.id.text_subtitle, 0, (CharSequence) pollOption.text, false).m32867M(i2), new C2964ra(2), m33524Jg(i2), new C2964ra(3), new C2964ra(42).m32867M(i2)));
+                    this.f9395E0.m39312L(Eg, 5);
                 }
                 i2++;
             }
             for (C2964ra raVar : F0) {
-                if (raVar.m32876A() == 42) {
-                    this.f9395E0.m34124u3(i);
+                if (raVar.m32879A() == 42) {
+                    this.f9395E0.m34127u3(i);
                 }
                 i++;
             }
@@ -253,11 +253,11 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
         C10626e1.m4420g(this, d1Var, list, i, z);
     }
 
-    public final int m33526Eg(int i) {
-        List<C2964ra> F0 = this.f9395E0.m34240F0();
+    public final int m33529Eg(int i) {
+        List<C2964ra> F0 = this.f9395E0.m34243F0();
         int i2 = 0;
         for (C2964ra raVar : F0) {
-            if (raVar.m32835j() == R.id.text_subtitle && raVar.m32833l() >= i) {
+            if (raVar.m32838j() == R.id.text_subtitle && raVar.m32836l() >= i) {
                 return i2;
             }
             i2++;
@@ -270,10 +270,10 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
         C10626e1.m4419h(this, d1Var);
     }
 
-    public final int m33525Fg(int i) {
+    public final int m33528Fg(int i) {
         int i2 = 0;
-        for (C2964ra raVar : this.f9395E0.m34240F0()) {
-            if (raVar.m32835j() == R.id.text_subtitle && raVar.m32833l() == i) {
+        for (C2964ra raVar : this.f9395E0.m34243F0()) {
+            if (raVar.m32838j() == R.id.text_subtitle && raVar.m32836l() == i) {
                 return i2;
             }
             i2++;
@@ -286,7 +286,7 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
         return this.f9394D0;
     }
 
-    public final TdApi.Poll m33524Gg() {
+    public final TdApi.Poll m33527Gg() {
         return m9131x9().f9398a;
     }
 
@@ -295,8 +295,8 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
         C10626e1.m4422e(this, d1Var, l, i, i2);
     }
 
-    public final boolean m33523Hg() {
-        return m33524Gg().type.getConstructor() == 657013913;
+    public final boolean m33526Hg() {
+        return m33527Gg().type.getConstructor() == 657013913;
     }
 
     @Override
@@ -304,22 +304,22 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
         C10626e1.m4418i(this, d1Var, i);
     }
 
-    public final C2964ra m33521Jg(int i) {
-        return new C2964ra(58).m32864M(i).m32870G(new C2780c(this, m9131x9().f9399b, m9131x9().f9400c, i));
+    public final C2964ra m33524Jg(int i) {
+        return new C2964ra(58).m32867M(i).m32873G(new C2780c(this, m9131x9().f9399b, m9131x9().f9400c, i));
     }
 
-    public final void m33520Kg(boolean z) {
-        int constructor = m33524Gg().type.getConstructor();
+    public final void m33523Kg(boolean z) {
+        int constructor = m33527Gg().type.getConstructor();
         if (constructor == 641265698) {
             if (!z) {
                 this.f9394D0.setTitle(R.string.PollResultsTitle);
             }
-            this.f9394D0.setSubtitle(C4403w.m27844o2(R.string.xVotes, m33524Gg().totalVoterCount));
+            this.f9394D0.setSubtitle(C4403w.m27846o2(R.string.xVotes, m33527Gg().totalVoterCount));
         } else if (constructor == 657013913) {
             if (!z) {
                 this.f9394D0.setTitle(R.string.QuizResultsTitle);
             }
-            this.f9394D0.setSubtitle(C4403w.m27844o2(R.string.xAnswers, m33524Gg().totalVoterCount));
+            this.f9394D0.setSubtitle(C4403w.m27846o2(R.string.xAnswers, m33527Gg().totalVoterCount));
         }
     }
 
@@ -328,7 +328,7 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
         m9151ud(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC2776nk.this.m33522Ig(poll);
+                View$OnClickListenerC2776nk.this.m33525Ig(poll);
             }
         });
     }
@@ -340,11 +340,11 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
 
     @Override
     public boolean mo8863S8(C9270q1 q1Var, float f, float f2) {
-        float f3 = f - (C1399s0.m37154u(m31303kg())[0] - C1399s0.m37154u(q1Var.get())[0]);
-        float f4 = f2 - (C1399s0.m37154u(m31303kg())[1] - C1399s0.m37154u(q1Var.get())[1]);
-        if (f3 >= 0.0f && f4 >= 0.0f && f3 < m31303kg().getMeasuredWidth() && f4 < m31303kg().getMeasuredHeight()) {
-            View X = m31303kg().m39457X(f3, f4);
-            if ((X instanceof RecyclerView) && ((LinearLayoutManager) ((RecyclerView) X).getLayoutManager()).m39553T1() != 0) {
+        float f3 = f - (C1399s0.m37157u(m31305kg())[0] - C1399s0.m37157u(q1Var.get())[0]);
+        float f4 = f2 - (C1399s0.m37157u(m31305kg())[1] - C1399s0.m37157u(q1Var.get())[1]);
+        if (f3 >= 0.0f && f4 >= 0.0f && f3 < m31305kg().getMeasuredWidth() && f4 < m31305kg().getMeasuredHeight()) {
+            View X = m31305kg().m39460X(f3, f4);
+            if ((X instanceof RecyclerView) && ((LinearLayoutManager) ((RecyclerView) X).getLayoutManager()).m39556T1() != 0) {
                 return false;
             }
         }
@@ -354,7 +354,7 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
     @Override
     public void mo417Z8() {
         super.mo417Z8();
-        this.f30167b.m2781K9().m1895W(m33524Gg().f25413id, this);
+        this.f30170b.m2781K9().m1895W(m33527Gg().f25416id, this);
     }
 
     @Override
@@ -370,37 +370,37 @@ public class View$OnClickListenerC2776nk extends AbstractC3204vo<C2779b> impleme
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.user) {
-            this.f30167b.m2485dd().m3429v7(this, ((C7093z3) view).getUserId(), new HandlerC10770jj.C10788q().m3312s(mo4347s().m14584H3().m8985g(view)));
+            this.f30170b.m2485dd().m3429v7(this, ((C7093z3) view).getUserId(), new HandlerC10770jj.C10788q().m3312s(mo4347s().m14584H3().m8985g(view)));
         }
     }
 
     @Override
-    public void mo30633rg(Context context, CustomRecyclerView customRecyclerView) {
+    public void mo30635rg(Context context, CustomRecyclerView customRecyclerView) {
         TdApi.PollOption[] pollOptionArr;
         C9289s sVar = new C9289s(context);
         this.f9394D0 = sVar;
         sVar.setThemedTextColor(this);
-        this.f9394D0.m9632D1(C1357a0.m37541i(49.0f), true);
-        m33520Kg(false);
+        this.f9394D0.m9631D1(C1357a0.m37544i(49.0f), true);
+        m33523Kg(false);
         ArrayList arrayList = new ArrayList();
-        arrayList.add(new C2964ra(100, (int) R.id.text_title, 0, (CharSequence) m33524Gg().question, false));
+        arrayList.add(new C2964ra(100, (int) R.id.text_title, 0, (CharSequence) m33527Gg().question, false));
         arrayList.add(new C2964ra(3));
         int i = 0;
-        for (TdApi.PollOption pollOption : m33524Gg().options) {
+        for (TdApi.PollOption pollOption : m33527Gg().options) {
             if (pollOption.voterCount != 0) {
-                arrayList.add(new C2964ra(100, (int) R.id.text_subtitle, 0, (CharSequence) pollOption.text, false).m32864M(i));
+                arrayList.add(new C2964ra(100, (int) R.id.text_subtitle, 0, (CharSequence) pollOption.text, false).m32867M(i));
                 arrayList.add(new C2964ra(2));
-                arrayList.add(m33521Jg(i));
+                arrayList.add(m33524Jg(i));
                 arrayList.add(new C2964ra(3));
-                arrayList.add(new C2964ra(42).m32864M(i));
+                arrayList.add(new C2964ra(42).m32867M(i));
             }
             i++;
         }
         C2777a aVar = new C2777a(this);
         this.f9395E0 = aVar;
-        aVar.m34116x2(arrayList, false);
+        aVar.m34119x2(arrayList, false);
         customRecyclerView.setAdapter(this.f9395E0);
-        this.f30167b.m2781K9().m1827o(m33524Gg().f25413id, this);
+        this.f30170b.m2781K9().m1827o(m33527Gg().f25416id, this);
     }
 
     @Override

@@ -5,15 +5,15 @@ import p156kd.C6246h;
 import p225pd.C8112b;
 
 public interface AbstractC7511x {
-    ArrayList<C6246h> mo11250J0(boolean z);
+    ArrayList<C6246h> mo11249J0(boolean z);
 
-    int mo11242P0();
+    int mo11241P0();
 
-    void mo11240Q1(int i, C8112b bVar, boolean z);
+    void mo11239Q1(int i, C8112b bVar, boolean z);
 
-    boolean mo11227Y3();
+    boolean mo11226Y3();
 
-    long mo11221b();
+    long mo11220b();
 
-    boolean mo11198v1(int i, C8112b bVar);
+    boolean mo11197v1(int i, C8112b bVar);
 }

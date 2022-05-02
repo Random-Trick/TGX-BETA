@@ -11,6 +11,6 @@ public final class C2948qv implements AbstractC5914f {
 
     @Override
     public final boolean get() {
-        return View$OnClickListenerC2359ew.m35003Bg(this.f9803a);
+        return View$OnClickListenerC2359ew.m35006Bg(this.f9803a);
     }
 }

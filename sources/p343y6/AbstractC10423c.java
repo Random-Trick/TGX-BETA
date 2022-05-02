@@ -11,36 +11,36 @@ public abstract class AbstractC10423c implements AbstractC10434j<Character> {
     }
 
     public static final class C10425b extends AbstractC10424a {
-        public final char f33493a;
+        public final char f33496a;
 
         public C10425b(char c) {
-            this.f33493a = c;
+            this.f33496a = c;
         }
 
         @Override
         public boolean mo5141e(char c) {
-            return c == this.f33493a;
+            return c == this.f33496a;
         }
 
         public String toString() {
-            return "CharMatcher.is('" + AbstractC10423c.m5143g(this.f33493a) + "')";
+            return "CharMatcher.is('" + AbstractC10423c.m5143g(this.f33496a) + "')";
         }
     }
 
     public static abstract class AbstractC10426c extends AbstractC10424a {
-        public final String f33494a;
+        public final String f33497a;
 
         public AbstractC10426c(String str) {
-            this.f33494a = (String) C10433i.m5129i(str);
+            this.f33497a = (String) C10433i.m5129i(str);
         }
 
         public final String toString() {
-            return this.f33494a;
+            return this.f33497a;
         }
     }
 
     public static final class C10427d extends AbstractC10426c {
-        public static final C10427d f33495b = new C10427d();
+        public static final C10427d f33498b = new C10427d();
 
         public C10427d() {
             super("CharMatcher.none()");
@@ -63,7 +63,7 @@ public abstract class AbstractC10423c implements AbstractC10434j<Character> {
     }
 
     public static AbstractC10423c m5144f() {
-        return C10427d.f33495b;
+        return C10427d.f33498b;
     }
 
     public static String m5143g(char c) {

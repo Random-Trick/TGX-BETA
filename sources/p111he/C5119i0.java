@@ -8,18 +8,18 @@ public class C5119i0 {
         this.f17165a = new int[9];
     }
 
-    public void m23932a(int i) {
+    public void m23933a(int i) {
         int[] iArr = this.f17165a;
         int i2 = this.f17166b;
         iArr[i2] = i;
         this.f17166b = i2 + 1;
     }
 
-    public void m23931b() {
+    public void m23932b() {
         this.f17166b = 0;
     }
 
-    public boolean m23930c(C5119i0 i0Var) {
+    public boolean m23931c(C5119i0 i0Var) {
         if (i0Var == null || i0Var.f17166b != this.f17166b) {
             return false;
         }
@@ -31,15 +31,15 @@ public class C5119i0 {
         return true;
     }
 
-    public int m23929d() {
+    public int m23930d() {
         return this.f17165a[this.f17166b - 1];
     }
 
-    public int m23928e() {
+    public int m23929e() {
         return this.f17166b;
     }
 
-    public void m23927f() {
+    public void m23928f() {
         int i = this.f17166b;
         if (i > 0) {
             this.f17166b = i - 1;

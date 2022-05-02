@@ -5,10 +5,10 @@ import android.content.Context;
 import p328x6.AbstractC10138q;
 
 public abstract class AbstractC10105a {
-    public static final AbstractC10105a f32800a = m6018d();
+    public static final AbstractC10105a f32803a = m6018d();
 
     public static AbstractC10105a m6019a() {
-        return f32800a;
+        return f32803a;
     }
 
     public static AbstractC10105a m6018d() {

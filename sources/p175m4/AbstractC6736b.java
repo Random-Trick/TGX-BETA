@@ -13,17 +13,17 @@ public abstract class AbstractC6736b implements C4260a.AbstractC4262b {
 
     @Override
     public byte[] getWrappedMetadataBytes() {
-        return C4263b.m28324a(this);
+        return C4263b.m28326a(this);
     }
 
     @Override
     public C6600g1 getWrappedMetadataFormat() {
-        return C4263b.m28323b(this);
+        return C4263b.m28325b(this);
     }
 
     @Override
     public void populateMediaMetadata(C6693s1.C6695b bVar) {
-        C4263b.m28322c(this, bVar);
+        C4263b.m28324c(this, bVar);
     }
 
     public String toString() {

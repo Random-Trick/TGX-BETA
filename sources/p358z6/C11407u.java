@@ -13,19 +13,19 @@ import p343y6.C10433i;
 public final class C11407u {
 
     public static class C11408a extends AbstractC11326b<T> {
-        public final AbstractC10434j f36365M;
-        public final Iterator f36366c;
+        public final AbstractC10434j f36368M;
+        public final Iterator f36369c;
 
         public C11408a(Iterator it, AbstractC10434j jVar) {
-            this.f36366c = it;
-            this.f36365M = jVar;
+            this.f36369c = it;
+            this.f36368M = jVar;
         }
 
         @Override
         public T mo697a() {
-            while (this.f36366c.hasNext()) {
-                ?? next = this.f36366c.next();
-                if (this.f36365M.apply(next)) {
+            while (this.f36369c.hasNext()) {
+                ?? next = this.f36369c.next();
+                if (this.f36368M.apply(next)) {
                     return next;
                 }
             }
@@ -34,23 +34,23 @@ public final class C11407u {
     }
 
     public static class C11409b extends AbstractC11403r0<T> {
-        public boolean f36367a;
-        public final Object f36368b;
+        public boolean f36370a;
+        public final Object f36371b;
 
         public C11409b(Object obj) {
-            this.f36368b = obj;
+            this.f36371b = obj;
         }
 
         @Override
         public boolean hasNext() {
-            return !this.f36367a;
+            return !this.f36370a;
         }
 
         @Override
         public T next() {
-            if (!this.f36367a) {
-                this.f36367a = true;
-                return this.f36368b;
+            if (!this.f36370a) {
+                this.f36370a = true;
+                return this.f36371b;
             }
             throw new NoSuchElementException();
         }

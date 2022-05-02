@@ -8,7 +8,7 @@ import p176m5.C6750b;
 public final class C4279d0 implements Parcelable.Creator<LocationRequest> {
     @Override
     public final LocationRequest createFromParcel(Parcel parcel) {
-        int x = C6750b.m19127x(parcel);
+        int x = C6750b.m19128x(parcel);
         long j = 3600000;
         long j2 = 600000;
         long j3 = Long.MAX_VALUE;
@@ -19,41 +19,41 @@ public final class C4279d0 implements Parcelable.Creator<LocationRequest> {
         float f = 0.0f;
         boolean z2 = false;
         while (parcel.dataPosition() < x) {
-            int q = C6750b.m19134q(parcel);
-            switch (C6750b.m19140k(q)) {
+            int q = C6750b.m19135q(parcel);
+            switch (C6750b.m19141k(q)) {
                 case 1:
-                    i = C6750b.m19132s(parcel, q);
+                    i = C6750b.m19133s(parcel, q);
                     break;
                 case 2:
-                    j = C6750b.m19130u(parcel, q);
+                    j = C6750b.m19131u(parcel, q);
                     break;
                 case 3:
-                    j2 = C6750b.m19130u(parcel, q);
+                    j2 = C6750b.m19131u(parcel, q);
                     break;
                 case 4:
-                    z = C6750b.m19139l(parcel, q);
+                    z = C6750b.m19140l(parcel, q);
                     break;
                 case 5:
-                    j3 = C6750b.m19130u(parcel, q);
+                    j3 = C6750b.m19131u(parcel, q);
                     break;
                 case 6:
-                    i2 = C6750b.m19132s(parcel, q);
+                    i2 = C6750b.m19133s(parcel, q);
                     break;
                 case 7:
-                    f = C6750b.m19136o(parcel, q);
+                    f = C6750b.m19137o(parcel, q);
                     break;
                 case 8:
-                    j4 = C6750b.m19130u(parcel, q);
+                    j4 = C6750b.m19131u(parcel, q);
                     break;
                 case 9:
-                    z2 = C6750b.m19139l(parcel, q);
+                    z2 = C6750b.m19140l(parcel, q);
                     break;
                 default:
-                    C6750b.m19128w(parcel, q);
+                    C6750b.m19129w(parcel, q);
                     break;
             }
         }
-        C6750b.m19141j(parcel, x);
+        C6750b.m19142j(parcel, x);
         return new LocationRequest(i, j, j2, z, j3, i2, f, j4, z2);
     }
 

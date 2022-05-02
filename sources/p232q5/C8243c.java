@@ -5,7 +5,7 @@ import androidx.annotation.RecentlyNonNull;
 
 public final class C8243c {
     @RecentlyNonNull
-    public static String m13054a(@RecentlyNonNull byte[] bArr) {
+    public static String m13053a(@RecentlyNonNull byte[] bArr) {
         if (bArr == null) {
             return null;
         }

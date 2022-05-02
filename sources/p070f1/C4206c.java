@@ -12,7 +12,7 @@ public final class C4206c {
     public static Field f14228a;
     public static boolean f14229b;
 
-    public static Drawable m28442a(CompoundButton compoundButton) {
+    public static Drawable m28444a(CompoundButton compoundButton) {
         if (Build.VERSION.SDK_INT >= 23) {
             return compoundButton.getButtonDrawable();
         }
@@ -38,7 +38,7 @@ public final class C4206c {
         return null;
     }
 
-    public static void m28441b(CompoundButton compoundButton, ColorStateList colorStateList) {
+    public static void m28443b(CompoundButton compoundButton, ColorStateList colorStateList) {
         if (Build.VERSION.SDK_INT >= 21) {
             compoundButton.setButtonTintList(colorStateList);
         } else if (compoundButton instanceof AbstractC4219l) {
@@ -46,7 +46,7 @@ public final class C4206c {
         }
     }
 
-    public static void m28440c(CompoundButton compoundButton, PorterDuff.Mode mode) {
+    public static void m28442c(CompoundButton compoundButton, PorterDuff.Mode mode) {
         if (Build.VERSION.SDK_INT >= 21) {
             compoundButton.setButtonTintMode(mode);
         } else if (compoundButton instanceof AbstractC4219l) {

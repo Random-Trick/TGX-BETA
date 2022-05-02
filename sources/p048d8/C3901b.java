@@ -79,58 +79,58 @@ public final class C3901b {
         hashMap.put(Integer.valueOf((int) Log.TAG_EMOJI), EnumC1834ma.AZTEC);
     }
 
-    public static EnumC2014z8 m29620a(int i) {
+    public static EnumC2014z8 m29622a(int i) {
         EnumC2014z8 z8Var = f13181a.get(i);
         return z8Var == null ? EnumC2014z8.FORMAT_UNKNOWN : z8Var;
     }
 
-    public static EnumC1654a9 m29619b(int i) {
+    public static EnumC1654a9 m29621b(int i) {
         EnumC1654a9 a9Var = f13182b.get(i);
         return a9Var == null ? EnumC1654a9.TYPE_UNKNOWN : a9Var;
     }
 
-    public static C1876pa m29618c(C2035c cVar) {
-        int a = cVar.m35786a();
+    public static C1876pa m29620c(C2035c cVar) {
+        int a = cVar.m35789a();
         C1661b1 b1Var = new C1661b1();
         if (a == 0) {
-            b1Var.m36116f(f13184d.values());
+            b1Var.m36119f(f13184d.values());
         } else {
             for (Map.Entry<Integer, EnumC1834ma> entry : f13184d.entrySet()) {
                 if ((entry.getKey().intValue() & a) != 0) {
-                    b1Var.m36117e(entry.getValue());
+                    b1Var.m36120e(entry.getValue());
                 }
             }
         }
         C1848na naVar = new C1848na();
-        naVar.m35971b(b1Var.m36115g());
-        return naVar.m35970c();
+        naVar.m35974b(b1Var.m36118g());
+        return naVar.m35973c();
     }
 
-    public static String m29617d() {
-        return true != m29615f() ? "play-services-mlkit-barcode-scanning" : "barcode-scanning";
+    public static String m29619d() {
+        return true != m29617f() ? "play-services-mlkit-barcode-scanning" : "barcode-scanning";
     }
 
-    public static void m29616e(C1686cb cbVar, final EnumC1846n8 n8Var) {
-        cbVar.m36097b(new AbstractC1656ab() {
+    public static void m29618e(C1686cb cbVar, final EnumC1846n8 n8Var) {
+        cbVar.m36100b(new AbstractC1656ab() {
             @Override
             public final C1731fb zza() {
                 EnumC1846n8 n8Var2 = EnumC1846n8.this;
                 C1874p8 p8Var = new C1874p8();
-                p8Var.m35957e(C3901b.m29615f() ? EnumC1832m8.TYPE_THICK : EnumC1832m8.TYPE_THIN);
+                p8Var.m35960e(C3901b.m29617f() ? EnumC1832m8.TYPE_THICK : EnumC1832m8.TYPE_THIN);
                 C1714e9 e9Var = new C1714e9();
-                e9Var.m36065b(n8Var2);
-                p8Var.m35954h(e9Var.m36064c());
-                return C1731fb.m36048d(p8Var);
+                e9Var.m36068b(n8Var2);
+                p8Var.m35957h(e9Var.m36067c());
+                return C1731fb.m36051d(p8Var);
             }
         }, EnumC1860o8.ON_DEVICE_BARCODE_LOAD);
     }
 
-    public static boolean m29615f() {
+    public static boolean m29617f() {
         AtomicReference<Boolean> atomicReference = f13183c;
         if (atomicReference.get() != null) {
             return atomicReference.get().booleanValue();
         }
-        boolean a = C3912m.m29605a(C0218i.m42077c().m42078b());
+        boolean a = C3912m.m29607a(C0218i.m42080c().m42081b());
         atomicReference.set(Boolean.valueOf(a));
         return a;
     }

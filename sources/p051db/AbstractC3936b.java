@@ -1,13 +1,13 @@
 package p051db;
 
 public interface AbstractC3936b {
-    boolean mo26679a();
+    boolean mo26680a();
 
-    void mo26678b(boolean z);
+    void mo26679b(boolean z);
 
-    boolean mo26677c(float f);
+    boolean mo26678c(float f);
 
-    void mo26676e();
+    void mo26677e();
 
-    void mo26675f();
+    void mo26676f();
 }

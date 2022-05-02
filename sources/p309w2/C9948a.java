@@ -23,12 +23,12 @@ import p309w2.C9951c;
 public class C9948a implements C9951c.AbstractC9952a {
 
     public static class C9949a {
-        public ZipFile f32343a;
-        public ZipEntry f32344b;
+        public ZipFile f32346a;
+        public ZipEntry f32347b;
 
         public C9949a(ZipFile zipFile, ZipEntry zipEntry) {
-            this.f32343a = zipFile;
-            this.f32344b = zipEntry;
+            this.f32346a = zipFile;
+            this.f32347b = zipEntry;
         }
     }
 
@@ -59,7 +59,7 @@ public class C9948a implements C9951c.AbstractC9952a {
                         try {
                             if (file.exists() || file.createNewFile()) {
                                 try {
-                                    inputStream = d.f32343a.getInputStream(d.f32344b);
+                                    inputStream = d.f32346a.getInputStream(d.f32347b);
                                     try {
                                         closeable = new FileOutputStream(file);
                                         try {
@@ -106,7 +106,7 @@ public class C9948a implements C9951c.AbstractC9952a {
                                     file.setExecutable(true, false);
                                     file.setWritable(true);
                                     try {
-                                        ZipFile zipFile = d.f32343a;
+                                        ZipFile zipFile = d.f32346a;
                                         if (zipFile != null) {
                                             zipFile.close();
                                             return;
@@ -122,7 +122,7 @@ public class C9948a implements C9951c.AbstractC9952a {
                     } else {
                         dVar.m6421j("FATAL! Couldn't extract the library from the APK!");
                         try {
-                            ZipFile zipFile2 = d.f32343a;
+                            ZipFile zipFile2 = d.f32346a;
                             if (zipFile2 != null) {
                                 zipFile2.close();
                                 return;
@@ -146,7 +146,7 @@ public class C9948a implements C9951c.AbstractC9952a {
             aVar = d;
             if (aVar != null) {
                 try {
-                    ZipFile zipFile3 = aVar.f32343a;
+                    ZipFile zipFile3 = aVar.f32346a;
                     if (zipFile3 != null) {
                         zipFile3.close();
                     }

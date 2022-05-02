@@ -15,11 +15,11 @@ public final class C1149g {
         this.f4379b = bArr;
     }
 
-    public byte[] m38307a() {
+    public byte[] m38310a() {
         return this.f4379b;
     }
 
-    public C10352b m38306b() {
+    public C10352b m38309b() {
         return this.f4378a;
     }
 

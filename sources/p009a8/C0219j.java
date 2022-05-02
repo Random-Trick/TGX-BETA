@@ -25,7 +25,7 @@ public class C0219j extends AbstractExecutorServiceC1274n {
                 return defaultThreadFactory.newThread(new Runnable() {
                     @Override
                     public final void run() {
-                        C0219j.m42073d(runnable);
+                        C0219j.m42076d(runnable);
                     }
                 });
             }
@@ -34,13 +34,13 @@ public class C0219j extends AbstractExecutorServiceC1274n {
         threadPoolExecutor.allowCoreThreadTimeOut(true);
     }
 
-    public static void m42073d(Runnable runnable) {
+    public static void m42076d(Runnable runnable) {
         f694b.set(new ArrayDeque());
         runnable.run();
     }
 
-    public static void m42072e(Deque<Runnable> deque, Runnable runnable) {
-        C6378r.m20506k(deque);
+    public static void m42075e(Deque<Runnable> deque, Runnable runnable) {
+        C6378r.m20507k(deque);
         deque.add(runnable);
         if (deque.size() <= 1) {
             do {
@@ -53,13 +53,13 @@ public class C0219j extends AbstractExecutorServiceC1274n {
 
     @Override
     @RecentlyNonNull
-    public final Object mo37820a() {
+    public final Object mo37823a() {
         return this.f695a;
     }
 
     @Override
     @RecentlyNonNull
-    public final ExecutorService mo37804b() {
+    public final ExecutorService mo37807b() {
         return this.f695a;
     }
 
@@ -70,11 +70,11 @@ public class C0219j extends AbstractExecutorServiceC1274n {
             this.f695a.execute(new Runnable() {
                 @Override
                 public final void run() {
-                    C0219j.m42072e(C0219j.f694b.get(), runnable);
+                    C0219j.m42075e(C0219j.f694b.get(), runnable);
                 }
             });
         } else {
-            m42072e(deque, runnable);
+            m42075e(deque, runnable);
         }
     }
 }

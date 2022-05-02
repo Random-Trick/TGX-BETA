@@ -8,7 +8,7 @@ abstract class AbstractC5512w {
     private static final Unsafe f18048a;
 
     static {
-        Field b = m22506b();
+        Field b = m22507b();
         b.setAccessible(true);
         try {
             f18048a = (Unsafe) b.get(null);
@@ -17,7 +17,7 @@ abstract class AbstractC5512w {
         }
     }
 
-    public static final int m22507a(Unsafe unsafe, Object obj, long j, int i) {
+    public static final int m22508a(Unsafe unsafe, Object obj, long j, int i) {
         int intVolatile;
         do {
             intVolatile = unsafe.getIntVolatile(obj, j);
@@ -25,7 +25,7 @@ abstract class AbstractC5512w {
         return intVolatile;
     }
 
-    private static Field m22506b() {
+    private static Field m22507b() {
         Field[] declaredFields;
         try {
             return Unsafe.class.getDeclaredField("theUnsafe");
@@ -39,7 +39,7 @@ abstract class AbstractC5512w {
         }
     }
 
-    public static Unsafe m22505c() {
+    public static Unsafe m22506c() {
         return f18048a;
     }
 }

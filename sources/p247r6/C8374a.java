@@ -4,14 +4,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public final class C8374a {
-    public static final Map f27141a;
-    public static final Map f27142b;
+    public static final Map f27144a;
+    public static final Map f27145b;
 
     static {
         HashMap hashMap = new HashMap();
-        f27141a = hashMap;
+        f27144a = hashMap;
         HashMap hashMap2 = new HashMap();
-        f27142b = hashMap2;
+        f27145b = hashMap2;
         hashMap.put(-2, "An unknown error occurred.");
         hashMap.put(-3, "The API is not available on this device.");
         hashMap.put(-4, "The request that was sent by the app is malformed.");
@@ -35,13 +35,13 @@ public final class C8374a {
         hashMap2.put(-100, "ERROR_INTERNAL_ERROR");
     }
 
-    public static String m12654a(int i) {
-        Map map = f27141a;
+    public static String m12653a(int i) {
+        Map map = f27144a;
         Integer valueOf = Integer.valueOf(i);
         if (!map.containsKey(valueOf)) {
             return "";
         }
-        Map map2 = f27142b;
+        Map map2 = f27145b;
         if (!map2.containsKey(valueOf)) {
             return "";
         }

@@ -19,21 +19,21 @@ public final class C0020a {
         public AbstractC0027d f46c;
 
         public C0021a() {
-            m42585c(C0020a.m42592e(Locale.getDefault()));
+            m42588c(C0020a.m42595e(Locale.getDefault()));
         }
 
-        public static C0020a m42586b(boolean z) {
+        public static C0020a m42589b(boolean z) {
             return z ? C0020a.f40h : C0020a.f39g;
         }
 
-        public C0020a m42587a() {
+        public C0020a m42590a() {
             if (this.f45b == 2 && this.f46c == C0020a.f36d) {
-                return m42586b(this.f44a);
+                return m42589b(this.f44a);
             }
             return new C0020a(this.f44a, this.f45b, this.f46c);
         }
 
-        public final void m42585c(boolean z) {
+        public final void m42588c(boolean z) {
             this.f44a = z;
             this.f46c = C0020a.f36d;
             this.f45b = 2;
@@ -60,11 +60,11 @@ public final class C0020a {
             this.f50c = charSequence.length();
         }
 
-        public static byte m42582c(char c) {
+        public static byte m42585c(char c) {
             return c < 1792 ? f47f[c] : Character.getDirectionality(c);
         }
 
-        public byte m42584a() {
+        public byte m42587a() {
             char charAt = this.f48a.charAt(this.f51d - 1);
             this.f52e = charAt;
             if (Character.isLowSurrogate(charAt)) {
@@ -73,18 +73,18 @@ public final class C0020a {
                 return Character.getDirectionality(codePointBefore);
             }
             this.f51d--;
-            byte c = m42582c(this.f52e);
+            byte c = m42585c(this.f52e);
             if (!this.f49b) {
                 return c;
             }
             char c2 = this.f52e;
             if (c2 == '>') {
-                return m42577h();
+                return m42580h();
             }
-            return c2 == ';' ? m42579f() : c;
+            return c2 == ';' ? m42582f() : c;
         }
 
-        public byte m42583b() {
+        public byte m42586b() {
             char charAt = this.f48a.charAt(this.f51d);
             this.f52e = charAt;
             if (Character.isHighSurrogate(charAt)) {
@@ -93,24 +93,24 @@ public final class C0020a {
                 return Character.getDirectionality(codePointAt);
             }
             this.f51d++;
-            byte c = m42582c(this.f52e);
+            byte c = m42585c(this.f52e);
             if (!this.f49b) {
                 return c;
             }
             char c2 = this.f52e;
             if (c2 == '<') {
-                return m42576i();
+                return m42579i();
             }
-            return c2 == '&' ? m42578g() : c;
+            return c2 == '&' ? m42581g() : c;
         }
 
-        public int m42581d() {
+        public int m42584d() {
             this.f51d = 0;
             int i = 0;
             int i2 = 0;
             int i3 = 0;
             while (this.f51d < this.f50c && i == 0) {
-                byte b = m42583b();
+                byte b = m42586b();
                 if (b != 0) {
                     if (b == 1 || b == 2) {
                         if (i3 == 0) {
@@ -146,7 +146,7 @@ public final class C0020a {
                 return i2;
             }
             while (this.f51d > 0) {
-                switch (m42584a()) {
+                switch (m42587a()) {
                     case 14:
                     case 15:
                         if (i == i3) {
@@ -168,12 +168,12 @@ public final class C0020a {
             return 0;
         }
 
-        public int m42580e() {
+        public int m42583e() {
             this.f51d = this.f50c;
             int i = 0;
             int i2 = 0;
             while (this.f51d > 0) {
-                byte a = m42584a();
+                byte a = m42587a();
                 if (a != 0) {
                     if (a == 1 || a == 2) {
                         if (i == 0) {
@@ -223,7 +223,7 @@ public final class C0020a {
             return 0;
         }
 
-        public final byte m42579f() {
+        public final byte m42582f() {
             char charAt;
             int i = this.f51d;
             do {
@@ -245,7 +245,7 @@ public final class C0020a {
             return (byte) 13;
         }
 
-        public final byte m42578g() {
+        public final byte m42581g() {
             char charAt;
             do {
                 int i = this.f51d;
@@ -260,7 +260,7 @@ public final class C0020a {
             return (byte) 12;
         }
 
-        public final byte m42577h() {
+        public final byte m42580h() {
             char charAt;
             int i = this.f51d;
             while (true) {
@@ -296,7 +296,7 @@ public final class C0020a {
             return (byte) 13;
         }
 
-        public final byte m42576i() {
+        public final byte m42579i() {
             char charAt;
             int i = this.f51d;
             while (true) {
@@ -342,54 +342,54 @@ public final class C0020a {
         this.f43c = dVar;
     }
 
-    public static int m42596a(CharSequence charSequence) {
-        return new C0022b(charSequence, false).m42581d();
+    public static int m42599a(CharSequence charSequence) {
+        return new C0022b(charSequence, false).m42584d();
     }
 
-    public static int m42595b(CharSequence charSequence) {
-        return new C0022b(charSequence, false).m42580e();
+    public static int m42598b(CharSequence charSequence) {
+        return new C0022b(charSequence, false).m42583e();
     }
 
-    public static C0020a m42594c() {
-        return new C0021a().m42587a();
+    public static C0020a m42597c() {
+        return new C0021a().m42590a();
     }
 
-    public static boolean m42592e(Locale locale) {
-        return C0035f.m42554b(locale) == 1;
+    public static boolean m42595e(Locale locale) {
+        return C0035f.m42557b(locale) == 1;
     }
 
-    public boolean m42593d() {
+    public boolean m42596d() {
         return (this.f42b & 2) != 0;
     }
 
-    public final String m42591f(CharSequence charSequence, AbstractC0027d dVar) {
-        boolean a = dVar.mo42558a(charSequence, 0, charSequence.length());
-        if (this.f41a || (!a && m42595b(charSequence) != 1)) {
-            return this.f41a ? (!a || m42595b(charSequence) == -1) ? f38f : "" : "";
+    public final String m42594f(CharSequence charSequence, AbstractC0027d dVar) {
+        boolean a = dVar.mo42561a(charSequence, 0, charSequence.length());
+        if (this.f41a || (!a && m42598b(charSequence) != 1)) {
+            return this.f41a ? (!a || m42598b(charSequence) == -1) ? f38f : "" : "";
         }
         return f37e;
     }
 
-    public final String m42590g(CharSequence charSequence, AbstractC0027d dVar) {
-        boolean a = dVar.mo42558a(charSequence, 0, charSequence.length());
-        if (this.f41a || (!a && m42596a(charSequence) != 1)) {
-            return this.f41a ? (!a || m42596a(charSequence) == -1) ? f38f : "" : "";
+    public final String m42593g(CharSequence charSequence, AbstractC0027d dVar) {
+        boolean a = dVar.mo42561a(charSequence, 0, charSequence.length());
+        if (this.f41a || (!a && m42599a(charSequence) != 1)) {
+            return this.f41a ? (!a || m42599a(charSequence) == -1) ? f38f : "" : "";
         }
         return f37e;
     }
 
-    public CharSequence m42589h(CharSequence charSequence) {
-        return m42588i(charSequence, this.f43c, true);
+    public CharSequence m42592h(CharSequence charSequence) {
+        return m42591i(charSequence, this.f43c, true);
     }
 
-    public CharSequence m42588i(CharSequence charSequence, AbstractC0027d dVar, boolean z) {
+    public CharSequence m42591i(CharSequence charSequence, AbstractC0027d dVar, boolean z) {
         if (charSequence == null) {
             return null;
         }
-        boolean a = dVar.mo42558a(charSequence, 0, charSequence.length());
+        boolean a = dVar.mo42561a(charSequence, 0, charSequence.length());
         SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
-        if (m42593d() && z) {
-            spannableStringBuilder.append((CharSequence) m42590g(charSequence, a ? C0028e.f69b : C0028e.f68a));
+        if (m42596d() && z) {
+            spannableStringBuilder.append((CharSequence) m42593g(charSequence, a ? C0028e.f69b : C0028e.f68a));
         }
         if (a != this.f41a) {
             spannableStringBuilder.append(a ? (char) 8235 : (char) 8234);
@@ -399,7 +399,7 @@ public final class C0020a {
             spannableStringBuilder.append(charSequence);
         }
         if (z) {
-            spannableStringBuilder.append((CharSequence) m42591f(charSequence, a ? C0028e.f69b : C0028e.f68a));
+            spannableStringBuilder.append((CharSequence) m42594f(charSequence, a ? C0028e.f69b : C0028e.f68a));
         }
         return spannableStringBuilder;
     }

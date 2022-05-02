@@ -42,34 +42,34 @@ public final class C4217k {
             this.f14241b = textView;
         }
 
-        public final Intent m28401a() {
+        public final Intent m28403a() {
             return new Intent().setAction("android.intent.action.PROCESS_TEXT").setType("text/plain");
         }
 
-        public final Intent m28400b(ResolveInfo resolveInfo, TextView textView) {
-            Intent putExtra = m28401a().putExtra("android.intent.extra.PROCESS_TEXT_READONLY", !m28398d(textView));
+        public final Intent m28402b(ResolveInfo resolveInfo, TextView textView) {
+            Intent putExtra = m28403a().putExtra("android.intent.extra.PROCESS_TEXT_READONLY", !m28400d(textView));
             ActivityInfo activityInfo = resolveInfo.activityInfo;
             return putExtra.setClassName(activityInfo.packageName, activityInfo.name);
         }
 
-        public final List<ResolveInfo> m28399c(Context context, PackageManager packageManager) {
+        public final List<ResolveInfo> m28401c(Context context, PackageManager packageManager) {
             ArrayList arrayList = new ArrayList();
             if (!(context instanceof Activity)) {
                 return arrayList;
             }
-            for (ResolveInfo resolveInfo : packageManager.queryIntentActivities(m28401a(), 0)) {
-                if (m28397e(resolveInfo, context)) {
+            for (ResolveInfo resolveInfo : packageManager.queryIntentActivities(m28403a(), 0)) {
+                if (m28399e(resolveInfo, context)) {
                     arrayList.add(resolveInfo);
                 }
             }
             return arrayList;
         }
 
-        public final boolean m28398d(TextView textView) {
+        public final boolean m28400d(TextView textView) {
             return (textView instanceof Editable) && textView.onCheckIsTextEditor() && textView.isEnabled();
         }
 
-        public final boolean m28397e(ResolveInfo resolveInfo, Context context) {
+        public final boolean m28399e(ResolveInfo resolveInfo, Context context) {
             if (context.getPackageName().equals(resolveInfo.activityInfo.packageName)) {
                 return true;
             }
@@ -81,7 +81,7 @@ public final class C4217k {
             return str == null || context.checkSelfPermission(str) == 0;
         }
 
-        public final void m28396f(Menu menu) {
+        public final void m28398f(Menu menu) {
             Method method;
             Context context = this.f14241b.getContext();
             PackageManager packageManager = context.getPackageManager();
@@ -110,10 +110,10 @@ public final class C4217k {
                         method.invoke(menu, Integer.valueOf(size));
                     }
                 }
-                List<ResolveInfo> c = m28399c(context, packageManager);
+                List<ResolveInfo> c = m28401c(context, packageManager);
                 for (int i = 0; i < c.size(); i++) {
                     ResolveInfo resolveInfo = c.get(i);
-                    menu.add(0, 0, i + 100, resolveInfo.loadLabel(packageManager)).setIntent(m28400b(resolveInfo, this.f14241b)).setShowAsAction(1);
+                    menu.add(0, 0, i + 100, resolveInfo.loadLabel(packageManager)).setIntent(m28402b(resolveInfo, this.f14241b)).setShowAsAction(1);
                 }
             } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException unused2) {
             }
@@ -136,20 +136,20 @@ public final class C4217k {
 
         @Override
         public boolean onPrepareActionMode(ActionMode actionMode, Menu menu) {
-            m28396f(menu);
+            m28398f(menu);
             return this.f14240a.onPrepareActionMode(actionMode, menu);
         }
     }
 
-    public static int m28415a(TextView textView) {
+    public static int m28417a(TextView textView) {
         return textView.getPaddingTop() - textView.getPaint().getFontMetricsInt().top;
     }
 
-    public static int m28414b(TextView textView) {
+    public static int m28416b(TextView textView) {
         return textView.getPaddingBottom() + textView.getPaint().getFontMetricsInt().bottom;
     }
 
-    public static int m28413c(TextDirectionHeuristic textDirectionHeuristic) {
+    public static int m28415c(TextDirectionHeuristic textDirectionHeuristic) {
         if (textDirectionHeuristic == TextDirectionHeuristics.FIRSTSTRONG_RTL || textDirectionHeuristic == TextDirectionHeuristics.FIRSTSTRONG_LTR) {
             return 1;
         }
@@ -171,7 +171,7 @@ public final class C4217k {
         return textDirectionHeuristic == TextDirectionHeuristics.FIRSTSTRONG_RTL ? 7 : 1;
     }
 
-    public static TextDirectionHeuristic m28412d(TextView textView) {
+    public static TextDirectionHeuristic m28414d(TextView textView) {
         if (textView.getTransformationMethod() instanceof PasswordTransformationMethod) {
             return TextDirectionHeuristics.LTR;
         }
@@ -208,24 +208,24 @@ public final class C4217k {
         }
     }
 
-    public static C0024c.C0025a m28411e(TextView textView) {
+    public static C0024c.C0025a m28413e(TextView textView) {
         int i = Build.VERSION.SDK_INT;
         if (i >= 28) {
             return new C0024c.C0025a(textView.getTextMetricsParams());
         }
         C0024c.C0025a.C0026a aVar = new C0024c.C0025a.C0026a(new TextPaint(textView.getPaint()));
         if (i >= 23) {
-            aVar.m42564b(textView.getBreakStrategy());
-            aVar.m42563c(textView.getHyphenationFrequency());
+            aVar.m42567b(textView.getBreakStrategy());
+            aVar.m42566c(textView.getHyphenationFrequency());
         }
         if (i >= 18) {
-            aVar.m42562d(m28412d(textView));
+            aVar.m42565d(m28414d(textView));
         }
-        return aVar.m42565a();
+        return aVar.m42568a();
     }
 
-    public static void m28410f(TextView textView, ColorStateList colorStateList) {
-        C1132h.m38322e(textView);
+    public static void m28412f(TextView textView, ColorStateList colorStateList) {
+        C1132h.m38325e(textView);
         if (Build.VERSION.SDK_INT >= 24) {
             textView.setCompoundDrawableTintList(colorStateList);
         } else if (textView instanceof AbstractC4220m) {
@@ -233,8 +233,8 @@ public final class C4217k {
         }
     }
 
-    public static void m28409g(TextView textView, PorterDuff.Mode mode) {
-        C1132h.m38322e(textView);
+    public static void m28411g(TextView textView, PorterDuff.Mode mode) {
+        C1132h.m38325e(textView);
         if (Build.VERSION.SDK_INT >= 24) {
             textView.setCompoundDrawableTintMode(mode);
         } else if (textView instanceof AbstractC4220m) {
@@ -242,9 +242,9 @@ public final class C4217k {
         }
     }
 
-    public static void m28408h(TextView textView, int i) {
+    public static void m28410h(TextView textView, int i) {
         int i2;
-        C1132h.m38323d(i);
+        C1132h.m38326d(i);
         int i3 = Build.VERSION.SDK_INT;
         if (i3 >= 28) {
             textView.setFirstBaselineToTopHeight(i);
@@ -261,9 +261,9 @@ public final class C4217k {
         }
     }
 
-    public static void m28407i(TextView textView, int i) {
+    public static void m28409i(TextView textView, int i) {
         int i2;
-        C1132h.m38323d(i);
+        C1132h.m38326d(i);
         Paint.FontMetricsInt fontMetricsInt = textView.getPaint().getFontMetricsInt();
         if (Build.VERSION.SDK_INT < 16 || textView.getIncludeFontPadding()) {
             i2 = fontMetricsInt.bottom;
@@ -275,25 +275,25 @@ public final class C4217k {
         }
     }
 
-    public static void m28406j(TextView textView, int i) {
-        C1132h.m38323d(i);
+    public static void m28408j(TextView textView, int i) {
+        C1132h.m38326d(i);
         int fontMetricsInt = textView.getPaint().getFontMetricsInt(null);
         if (i != fontMetricsInt) {
             textView.setLineSpacing(i - fontMetricsInt, 1.0f);
         }
     }
 
-    public static void m28405k(TextView textView, C0024c cVar) {
+    public static void m28407k(TextView textView, C0024c cVar) {
         if (Build.VERSION.SDK_INT >= 29) {
-            textView.setText(cVar.m42571b());
-        } else if (m28411e(textView).m42570a(cVar.m42572a())) {
+            textView.setText(cVar.m42574b());
+        } else if (m28413e(textView).m42573a(cVar.m42575a())) {
             textView.setText(cVar);
         } else {
             throw new IllegalArgumentException("Given text can not be applied to TextView.");
         }
     }
 
-    public static void m28404l(TextView textView, int i) {
+    public static void m28406l(TextView textView, int i) {
         if (Build.VERSION.SDK_INT >= 23) {
             textView.setTextAppearance(i);
         } else {
@@ -301,26 +301,26 @@ public final class C4217k {
         }
     }
 
-    public static void m28403m(TextView textView, C0024c.C0025a aVar) {
+    public static void m28405m(TextView textView, C0024c.C0025a aVar) {
         int i = Build.VERSION.SDK_INT;
         if (i >= 18) {
-            textView.setTextDirection(m28413c(aVar.m42567d()));
+            textView.setTextDirection(m28415c(aVar.m42570d()));
         }
         if (i < 23) {
-            float textScaleX = aVar.m42566e().getTextScaleX();
-            textView.getPaint().set(aVar.m42566e());
+            float textScaleX = aVar.m42569e().getTextScaleX();
+            textView.getPaint().set(aVar.m42569e());
             if (textScaleX == textView.getTextScaleX()) {
                 textView.setTextScaleX((textScaleX / 2.0f) + 1.0f);
             }
             textView.setTextScaleX(textScaleX);
             return;
         }
-        textView.getPaint().set(aVar.m42566e());
-        textView.setBreakStrategy(aVar.m42569b());
-        textView.setHyphenationFrequency(aVar.m42568c());
+        textView.getPaint().set(aVar.m42569e());
+        textView.setBreakStrategy(aVar.m42572b());
+        textView.setHyphenationFrequency(aVar.m42571c());
     }
 
-    public static ActionMode.Callback m28402n(TextView textView, ActionMode.Callback callback) {
+    public static ActionMode.Callback m28404n(TextView textView, ActionMode.Callback callback) {
         int i = Build.VERSION.SDK_INT;
         return (i < 26 || i > 27 || (callback instanceof ActionMode$CallbackC4218a) || callback == null) ? callback : new ActionMode$CallbackC4218a(callback, textView);
     }

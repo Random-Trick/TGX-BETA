@@ -13,11 +13,11 @@ import p159l1.C6295b;
 import p159l1.C6296c;
 
 public class C1516c {
-    public static android.view.animation.Interpolator m36578a(android.content.Context r2, android.content.res.Resources r3, android.content.res.Resources.Theme r4, org.xmlpull.v1.XmlPullParser r5) {
-        throw new UnsupportedOperationException("Method not decompiled: p029c2.C1516c.m36578a(android.content.Context, android.content.res.Resources, android.content.res.Resources$Theme, org.xmlpull.v1.XmlPullParser):android.view.animation.Interpolator");
+    public static android.view.animation.Interpolator m36581a(android.content.Context r2, android.content.res.Resources r3, android.content.res.Resources.Theme r4, org.xmlpull.v1.XmlPullParser r5) {
+        throw new UnsupportedOperationException("Method not decompiled: p029c2.C1516c.m36581a(android.content.Context, android.content.res.Resources, android.content.res.Resources$Theme, org.xmlpull.v1.XmlPullParser):android.view.animation.Interpolator");
     }
 
-    public static Interpolator m36577b(Context context, int i) {
+    public static Interpolator m36580b(Context context, int i) {
         if (Build.VERSION.SDK_INT >= 21) {
             return AnimationUtils.loadInterpolator(context, i);
         }
@@ -34,7 +34,7 @@ public class C1516c {
                     return new C6296c();
                 }
                 XmlResourceParser animation = context.getResources().getAnimation(i);
-                Interpolator a = m36578a(context, context.getResources(), context.getTheme(), animation);
+                Interpolator a = m36581a(context, context.getResources(), context.getTheme(), animation);
                 if (animation != null) {
                     animation.close();
                 }

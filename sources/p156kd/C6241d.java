@@ -23,11 +23,11 @@ public class C6241d {
         this.f19678a = pVar;
     }
 
-    public void m20976a() {
+    public void m20977a() {
         this.f19679b++;
     }
 
-    public void m20975b(int i) {
+    public void m20976b(int i) {
         float f;
         float f2;
         if (this.f19679b == i) {
@@ -63,7 +63,7 @@ public class C6241d {
         }
     }
 
-    public void m20974c() {
+    public void m20975c() {
         this.f19679b++;
         this.f19680c = System.currentTimeMillis();
         HandlerC6242e eVar = f19676e;

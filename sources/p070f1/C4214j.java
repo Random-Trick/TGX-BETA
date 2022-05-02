@@ -16,33 +16,33 @@ public final class C4214j {
     public static boolean f14236d;
 
     public static class C4215a {
-        public static void m28420a(PopupWindow popupWindow, View view, int i, int i2, int i3) {
+        public static void m28422a(PopupWindow popupWindow, View view, int i, int i2, int i3) {
             popupWindow.showAsDropDown(view, i, i2, i3);
         }
     }
 
     public static class C4216b {
-        public static boolean m28419a(PopupWindow popupWindow) {
+        public static boolean m28421a(PopupWindow popupWindow) {
             return popupWindow.getOverlapAnchor();
         }
 
-        public static int m28418b(PopupWindow popupWindow) {
+        public static int m28420b(PopupWindow popupWindow) {
             return popupWindow.getWindowLayoutType();
         }
 
-        public static void m28417c(PopupWindow popupWindow, boolean z) {
+        public static void m28419c(PopupWindow popupWindow, boolean z) {
             popupWindow.setOverlapAnchor(z);
         }
 
-        public static void m28416d(PopupWindow popupWindow, int i) {
+        public static void m28418d(PopupWindow popupWindow, int i) {
             popupWindow.setWindowLayoutType(i);
         }
     }
 
-    public static void m28423a(PopupWindow popupWindow, boolean z) {
+    public static void m28425a(PopupWindow popupWindow, boolean z) {
         int i = Build.VERSION.SDK_INT;
         if (i >= 23) {
-            C4216b.m28417c(popupWindow, z);
+            C4216b.m28419c(popupWindow, z);
         } else if (i >= 21) {
             if (!f14236d) {
                 try {
@@ -65,9 +65,9 @@ public final class C4214j {
         }
     }
 
-    public static void m28422b(PopupWindow popupWindow, int i) {
+    public static void m28424b(PopupWindow popupWindow, int i) {
         if (Build.VERSION.SDK_INT >= 23) {
-            C4216b.m28416d(popupWindow, i);
+            C4216b.m28418d(popupWindow, i);
             return;
         }
         if (!f14234b) {
@@ -88,12 +88,12 @@ public final class C4214j {
         }
     }
 
-    public static void m28421c(PopupWindow popupWindow, View view, int i, int i2, int i3) {
+    public static void m28423c(PopupWindow popupWindow, View view, int i, int i2, int i3) {
         if (Build.VERSION.SDK_INT >= 19) {
-            C4215a.m28420a(popupWindow, view, i, i2, i3);
+            C4215a.m28422a(popupWindow, view, i, i2, i3);
             return;
         }
-        if ((C1450e.m36889b(i3, C1489y.m36705v(view)) & 7) == 5) {
+        if ((C1450e.m36892b(i3, C1489y.m36708v(view)) & 7) == 5) {
             i -= popupWindow.getWidth() - view.getWidth();
         }
         popupWindow.showAsDropDown(view, i, i2);

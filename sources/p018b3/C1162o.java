@@ -7,6 +7,6 @@ public final class C1162o implements AbstractC10358h {
 
     @Override
     public final void mo5360a(Exception exc) {
-        C1163p.m38254c(exc);
+        C1163p.m38257c(exc);
     }
 }

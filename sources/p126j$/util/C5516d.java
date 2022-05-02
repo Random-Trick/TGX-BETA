@@ -21,16 +21,16 @@ public final class C5516d implements Comparator, Serializable {
         switch (this.f18053a) {
             case 0:
                 Function function = (Function) this.f18054b;
-                return ((Comparable) function.mo22502a(obj)).compareTo(function.mo22502a(obj2));
+                return ((Comparable) function.mo22503a(obj)).compareTo(function.mo22503a(obj2));
             case 1:
                 ToDoubleFunction toDoubleFunction = (ToDoubleFunction) this.f18054b;
-                return Double.compare(toDoubleFunction.mo22324v(obj), toDoubleFunction.mo22324v(obj2));
+                return Double.compare(toDoubleFunction.mo22325v(obj), toDoubleFunction.mo22325v(obj2));
             case 2:
                 ToIntFunction toIntFunction = (ToIntFunction) this.f18054b;
-                return Integer.compare(toIntFunction.mo22326f(obj), toIntFunction.mo22326f(obj2));
+                return Integer.compare(toIntFunction.mo22327f(obj), toIntFunction.mo22327f(obj2));
             default:
                 ToLongFunction toLongFunction = (ToLongFunction) this.f18054b;
-                return Long.compare(toLongFunction.mo22232g(obj), toLongFunction.mo22232g(obj2));
+                return Long.compare(toLongFunction.mo22233g(obj), toLongFunction.mo22233g(obj2));
         }
     }
 }

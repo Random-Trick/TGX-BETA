@@ -12,7 +12,7 @@ public final class C5519a implements AbstractC5521c {
     }
 
     @Override
-    public final Object mo22172u(Object obj, Object obj2) {
+    public final Object mo22173u(Object obj, Object obj2) {
         switch (this.f18068a) {
             case 0:
                 return this.f18069b.compare(obj, obj2) >= 0 ? obj : obj2;

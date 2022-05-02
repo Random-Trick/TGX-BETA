@@ -25,28 +25,28 @@ public class C11434a {
     }
 
     public static final String m658d(char c, Locale locale) {
-        C8298k.m12934e(locale, "locale");
+        C8298k.m12933e(locale, "locale");
         String e = m657e(c, locale);
         if (e.length() <= 1) {
             String upperCase = String.valueOf(c).toUpperCase(Locale.ROOT);
-            C8298k.m12935d(upperCase, "this as java.lang.String).toUpperCase(Locale.ROOT)");
-            return !C8298k.m12937b(e, upperCase) ? e : String.valueOf(Character.toTitleCase(c));
+            C8298k.m12934d(upperCase, "this as java.lang.String).toUpperCase(Locale.ROOT)");
+            return !C8298k.m12936b(e, upperCase) ? e : String.valueOf(Character.toTitleCase(c));
         } else if (c == 329) {
             return e;
         } else {
             char charAt = e.charAt(0);
             String substring = e.substring(1);
-            C8298k.m12935d(substring, "this as java.lang.String).substring(startIndex)");
+            C8298k.m12934d(substring, "this as java.lang.String).substring(startIndex)");
             String lowerCase = substring.toLowerCase(Locale.ROOT);
-            C8298k.m12935d(lowerCase, "this as java.lang.String).toLowerCase(Locale.ROOT)");
+            C8298k.m12934d(lowerCase, "this as java.lang.String).toLowerCase(Locale.ROOT)");
             return charAt + lowerCase;
         }
     }
 
     public static final String m657e(char c, Locale locale) {
-        C8298k.m12934e(locale, "locale");
+        C8298k.m12933e(locale, "locale");
         String upperCase = String.valueOf(c).toUpperCase(locale);
-        C8298k.m12935d(upperCase, "this as java.lang.String).toUpperCase(locale)");
+        C8298k.m12934d(upperCase, "this as java.lang.String).toUpperCase(locale)");
         return upperCase;
     }
 }

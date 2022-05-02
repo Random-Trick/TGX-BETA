@@ -24,15 +24,15 @@ public final class ComponentCallbacks2C6090c implements Application.ActivityLife
     public boolean f19322M = false;
 
     public interface AbstractC6091a {
-        void mo21085a(boolean z);
+        void mo21086a(boolean z);
     }
 
     @RecentlyNonNull
-    public static ComponentCallbacks2C6090c m21380b() {
+    public static ComponentCallbacks2C6090c m21381b() {
         return f19321N;
     }
 
-    public static void m21379c(@RecentlyNonNull Application application) {
+    public static void m21380c(@RecentlyNonNull Application application) {
         ComponentCallbacks2C6090c cVar = f19321N;
         synchronized (cVar) {
             if (!cVar.f19322M) {
@@ -43,20 +43,20 @@ public final class ComponentCallbacks2C6090c implements Application.ActivityLife
         }
     }
 
-    public void m21381a(@RecentlyNonNull AbstractC6091a aVar) {
+    public void m21382a(@RecentlyNonNull AbstractC6091a aVar) {
         synchronized (f19321N) {
             this.f19325c.add(aVar);
         }
     }
 
-    public boolean m21378d() {
+    public boolean m21379d() {
         return this.f19323a.get();
     }
 
     @TargetApi(16)
-    public boolean m21377e(boolean z) {
+    public boolean m21378e(boolean z) {
         if (!this.f19324b.get()) {
-            if (!C8251k.m13037b()) {
+            if (!C8251k.m13036b()) {
                 return z;
             }
             ActivityManager.RunningAppProcessInfo runningAppProcessInfo = new ActivityManager.RunningAppProcessInfo();
@@ -65,14 +65,14 @@ public final class ComponentCallbacks2C6090c implements Application.ActivityLife
                 this.f19323a.set(true);
             }
         }
-        return m21378d();
+        return m21379d();
     }
 
-    public final void m21376f(boolean z) {
+    public final void m21377f(boolean z) {
         synchronized (f19321N) {
             Iterator<AbstractC6091a> it = this.f19325c.iterator();
             while (it.hasNext()) {
-                it.next().mo21085a(z);
+                it.next().mo21086a(z);
             }
         }
     }
@@ -82,7 +82,7 @@ public final class ComponentCallbacks2C6090c implements Application.ActivityLife
         boolean compareAndSet = this.f19323a.compareAndSet(true, false);
         this.f19324b.set(true);
         if (compareAndSet) {
-            m21376f(false);
+            m21377f(false);
         }
     }
 
@@ -99,7 +99,7 @@ public final class ComponentCallbacks2C6090c implements Application.ActivityLife
         boolean compareAndSet = this.f19323a.compareAndSet(true, false);
         this.f19324b.set(true);
         if (compareAndSet) {
-            m21376f(false);
+            m21377f(false);
         }
     }
 
@@ -127,7 +127,7 @@ public final class ComponentCallbacks2C6090c implements Application.ActivityLife
     public final void onTrimMemory(int i) {
         if (i == 20 && this.f19323a.compareAndSet(false, true)) {
             this.f19324b.set(true);
-            m21376f(true);
+            m21377f(true);
         }
     }
 }

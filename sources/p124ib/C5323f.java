@@ -11,7 +11,7 @@ public class C5323f implements Iterable<Long> {
         this.f17501a = new ArrayList<>();
     }
 
-    public boolean m23262h(long j) {
+    public boolean m23263h(long j) {
         int binarySearch = Collections.binarySearch(this.f17501a, Long.valueOf(j));
         if (binarySearch >= 0) {
             return false;
@@ -20,7 +20,7 @@ public class C5323f implements Iterable<Long> {
         return true;
     }
 
-    public void m23261i(int i) {
+    public void m23262i(int i) {
         this.f17501a.ensureCapacity(i);
     }
 
@@ -29,11 +29,11 @@ public class C5323f implements Iterable<Long> {
         return this.f17501a.iterator();
     }
 
-    public boolean m23260m(long j) {
+    public boolean m23261m(long j) {
         return Collections.binarySearch(this.f17501a, Long.valueOf(j)) >= 0;
     }
 
-    public long[] m23259r() {
+    public long[] m23260r() {
         long[] jArr = new long[this.f17501a.size()];
         for (int i = 0; i < this.f17501a.size(); i++) {
             jArr[i] = this.f17501a.get(i).longValue();

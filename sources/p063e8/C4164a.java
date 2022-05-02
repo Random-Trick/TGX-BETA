@@ -24,27 +24,27 @@ public class C4164a implements AbstractC0217h {
     public final int f14066g;
 
     public C4164a(Bitmap bitmap, int i) {
-        this.f14060a = (Bitmap) C6378r.m20506k(bitmap);
+        this.f14060a = (Bitmap) C6378r.m20507k(bitmap);
         this.f14063d = bitmap.getWidth();
         this.f14064e = bitmap.getHeight();
         this.f14065f = i;
         this.f14066g = -1;
     }
 
-    public static C4164a m28645a(@RecentlyNonNull byte[] bArr, int i, int i2, int i3, int i4) {
+    public static C4164a m28647a(@RecentlyNonNull byte[] bArr, int i, int i2, int i3, int i4) {
         long elapsedRealtime = SystemClock.elapsedRealtime();
-        C4164a aVar = new C4164a(ByteBuffer.wrap((byte[]) C6378r.m20506k(bArr)), i, i2, i3, i4);
-        m28635k(i4, 2, elapsedRealtime, i2, i, bArr.length, i3);
+        C4164a aVar = new C4164a(ByteBuffer.wrap((byte[]) C6378r.m20507k(bArr)), i, i2, i3, i4);
+        m28637k(i4, 2, elapsedRealtime, i2, i, bArr.length, i3);
         return aVar;
     }
 
-    public static C4164a m28644b(@RecentlyNonNull Image image, int i) {
+    public static C4164a m28646b(@RecentlyNonNull Image image, int i) {
         boolean z;
         int i2;
         C4164a aVar;
         int limit;
         long elapsedRealtime = SystemClock.elapsedRealtime();
-        C6378r.m20505l(image, "Please provide a valid image");
+        C6378r.m20506l(image, "Please provide a valid image");
         boolean z2 = true;
         if (i == 0 || i == 90 || i == 180) {
             i2 = i;
@@ -56,15 +56,15 @@ public class C4164a implements AbstractC0217h {
             i2 = i;
             z = false;
         }
-        C6378r.m20515b(z, "Invalid rotation. Only 0, 90, 180, 270 are supported currently.");
+        C6378r.m20516b(z, "Invalid rotation. Only 0, 90, 180, 270 are supported currently.");
         if (!(image.getFormat() == 256 || image.getFormat() == 35)) {
             z2 = false;
         }
-        C6378r.m20515b(z2, "Only JPEG and YUV_420_888 are supported now");
+        C6378r.m20516b(z2, "Only JPEG and YUV_420_888 are supported now");
         Image.Plane[] planes = image.getPlanes();
         if (image.getFormat() == 256) {
             limit = image.getPlanes()[0].getBuffer().limit();
-            aVar = new C4164a(C4323c.m28278d().m28280b(image, i2), 0);
+            aVar = new C4164a(C4323c.m28280d().m28282b(image, i2), 0);
         } else {
             for (Image.Plane plane : planes) {
                 if (plane.getBuffer() != null) {
@@ -76,58 +76,58 @@ public class C4164a implements AbstractC0217h {
         }
         int i3 = limit;
         C4164a aVar2 = aVar;
-        m28635k(image.getFormat(), 5, elapsedRealtime, image.getHeight(), image.getWidth(), i3, i2);
+        m28637k(image.getFormat(), 5, elapsedRealtime, image.getHeight(), image.getWidth(), i3, i2);
         return aVar2;
     }
 
-    public static void m28635k(int i, int i2, long j, int i3, int i4, int i5, int i6) {
-        C3786r7.m29757a(C3768p7.m29773b("vision-common"), i, i2, j, i3, i4, i5, i6);
+    public static void m28637k(int i, int i2, long j, int i3, int i4, int i5, int i6) {
+        C3786r7.m29759a(C3768p7.m29775b("vision-common"), i, i2, j, i3, i4, i5, i6);
     }
 
     @RecentlyNullable
-    public Bitmap m28643c() {
+    public Bitmap m28645c() {
         return this.f14060a;
     }
 
     @RecentlyNullable
-    public ByteBuffer m28642d() {
+    public ByteBuffer m28644d() {
         return this.f14061b;
     }
 
-    public int m28641e() {
+    public int m28643e() {
         return this.f14066g;
     }
 
-    public int m28640f() {
+    public int m28642f() {
         return this.f14064e;
     }
 
     @RecentlyNullable
-    public Image m28639g() {
+    public Image m28641g() {
         if (this.f14062c == null) {
             return null;
         }
-        return this.f14062c.m28634a();
+        return this.f14062c.m28636a();
     }
 
     @RecentlyNullable
-    public Image.Plane[] m28638h() {
+    public Image.Plane[] m28640h() {
         if (this.f14062c == null) {
             return null;
         }
-        return this.f14062c.m28633b();
+        return this.f14062c.m28635b();
     }
 
-    public int m28637i() {
+    public int m28639i() {
         return this.f14065f;
     }
 
-    public int m28636j() {
+    public int m28638j() {
         return this.f14063d;
     }
 
     public C4164a(Image image, int i, int i2, int i3) {
-        C6378r.m20506k(image);
+        C6378r.m20507k(image);
         this.f14062c = new C4165b(image);
         this.f14063d = i;
         this.f14064e = i2;
@@ -144,8 +144,8 @@ public class C4164a implements AbstractC0217h {
                 z = false;
             }
         }
-        C6378r.m20516a(z);
-        this.f14061b = (ByteBuffer) C6378r.m20506k(byteBuffer);
+        C6378r.m20517a(z);
+        this.f14061b = (ByteBuffer) C6378r.m20507k(byteBuffer);
         byteBuffer.rewind();
         this.f14063d = i;
         this.f14064e = i2;

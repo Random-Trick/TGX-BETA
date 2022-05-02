@@ -6,7 +6,7 @@ import p262s6.C8682s;
 
 public final class C9856g {
     public static <ResultT> ResultT m6749a(AbstractC9854e<ResultT> eVar) {
-        C8682s.m11744a(eVar, "Task must not be null");
+        C8682s.m11743a(eVar, "Task must not be null");
         if (eVar.mo6722h()) {
             return (ResultT) m6746d(eVar);
         }
@@ -36,7 +36,7 @@ public final class C9856g {
     }
 
     public static void m6745e(AbstractC9854e eVar, AbstractC9872w wVar) {
-        Executor executor = C9855f.f32128b;
+        Executor executor = C9855f.f32131b;
         eVar.mo6726d(executor, wVar);
         eVar.mo6728b(executor, wVar);
     }

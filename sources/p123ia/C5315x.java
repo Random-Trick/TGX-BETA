@@ -33,12 +33,12 @@ public final class C5315x implements List, Serializable, RandomAccess, AbstractC
         if (!(obj instanceof Void)) {
             return false;
         }
-        return m23314m((Void) obj);
+        return m23315m((Void) obj);
     }
 
     @Override
     public boolean containsAll(Collection collection) {
-        C8298k.m12934e(collection, "elements");
+        C8298k.m12933e(collection, "elements");
         return collection.isEmpty();
     }
 
@@ -69,7 +69,7 @@ public final class C5315x implements List, Serializable, RandomAccess, AbstractC
         if (!(obj instanceof Void)) {
             return -1;
         }
-        return m23312s((Void) obj);
+        return m23313s((Void) obj);
     }
 
     @Override
@@ -87,7 +87,7 @@ public final class C5315x implements List, Serializable, RandomAccess, AbstractC
         if (!(obj instanceof Void)) {
             return -1;
         }
-        return m23311t((Void) obj);
+        return m23312t((Void) obj);
     }
 
     @Override
@@ -95,8 +95,8 @@ public final class C5315x implements List, Serializable, RandomAccess, AbstractC
         return C5314w.f17490a;
     }
 
-    public boolean m23314m(Void r2) {
-        C8298k.m12934e(r2, "element");
+    public boolean m23315m(Void r2) {
+        C8298k.m12933e(r2, "element");
         return false;
     }
 
@@ -124,8 +124,8 @@ public final class C5315x implements List, Serializable, RandomAccess, AbstractC
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    public int m23312s(Void r2) {
-        C8298k.m12934e(r2, "element");
+    public int m23313s(Void r2) {
+        C8298k.m12933e(r2, "element");
         return -1;
     }
 
@@ -142,20 +142,20 @@ public final class C5315x implements List, Serializable, RandomAccess, AbstractC
         throw new IndexOutOfBoundsException("fromIndex: " + i + ", toIndex: " + i2);
     }
 
-    public int m23311t(Void r2) {
-        C8298k.m12934e(r2, "element");
+    public int m23312t(Void r2) {
+        C8298k.m12933e(r2, "element");
         return -1;
     }
 
     @Override
     public Object[] toArray() {
-        return C8293f.m12940a(this);
+        return C8293f.m12939a(this);
     }
 
     @Override
     public <T> T[] toArray(T[] tArr) {
-        C8298k.m12934e(tArr, "array");
-        return (T[]) C8293f.m12939b(this, tArr);
+        C8298k.m12933e(tArr, "array");
+        return (T[]) C8293f.m12938b(this, tArr);
     }
 
     public String toString() {
@@ -171,6 +171,6 @@ public final class C5315x implements List, Serializable, RandomAccess, AbstractC
         if (i == 0) {
             return C5314w.f17490a;
         }
-        throw new IndexOutOfBoundsException(C8298k.m12929j("Index: ", Integer.valueOf(i)));
+        throw new IndexOutOfBoundsException(C8298k.m12928j("Index: ", Integer.valueOf(i)));
     }
 }

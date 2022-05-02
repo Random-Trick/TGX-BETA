@@ -59,13 +59,13 @@ import td.AbstractC9323v4;
 import td.C9357x2;
 
 public class C9357x2 extends ViewGroup {
-    public final Paint f30320M;
-    public C9370l f30322O;
-    public boolean f30323P;
-    public AbstractC9361d f30324a;
-    public final int[] f30325b = new int[2];
-    public final AbstractC9362e f30326c = new C9358a();
-    public final List<C9370l> f30321N = new ArrayList();
+    public final Paint f30323M;
+    public C9370l f30325O;
+    public boolean f30326P;
+    public AbstractC9361d f30327a;
+    public final int[] f30328b = new int[2];
+    public final AbstractC9362e f30329c = new C9358a();
+    public final List<C9370l> f30324N = new ArrayList();
 
     public class C9358a implements AbstractC9362e {
         public C9358a() {
@@ -83,7 +83,7 @@ public class C9357x2 extends ViewGroup {
 
         @Override
         public int mo8940N0() {
-            return C5412m.m22768m(this);
+            return C5412m.m22769m(this);
         }
 
         @Override
@@ -93,42 +93,42 @@ public class C9357x2 extends ViewGroup {
 
         @Override
         public int mo7858Q() {
-            return C5406j.m22807d(this);
+            return C5406j.m22808d(this);
         }
 
         @Override
         public long mo7857X0(boolean z) {
-            return C5406j.m22808c(this, z);
+            return C5406j.m22809c(this, z);
         }
 
         @Override
         public int mo8938Z0() {
-            return C5412m.m22772i(this);
+            return C5412m.m22773i(this);
         }
 
         @Override
         public int mo7856b1() {
-            return C5412m.m22773h(this);
+            return C5412m.m22774h(this);
         }
 
         @Override
         public int mo7855c() {
-            return C5412m.m22775f(this);
+            return C5412m.m22776f(this);
         }
 
         @Override
         public int mo7854e(boolean z) {
-            return C5412m.m22779b(this, z);
+            return C5412m.m22780b(this, z);
         }
 
         @Override
         public int mo7853g(boolean z) {
-            return C5412m.m22770k(this, z);
+            return C5412m.m22771k(this, z);
         }
 
         @Override
         public AbstractC11531p mo8937j1() {
-            return C5412m.m22776e(this);
+            return C5412m.m22777e(this);
         }
 
         @Override
@@ -143,12 +143,12 @@ public class C9357x2 extends ViewGroup {
 
         @Override
         public int mo7852o0(boolean z) {
-            return C5412m.m22778c(this, z);
+            return C5412m.m22779c(this, z);
         }
 
         @Override
         public int mo7851p0(boolean z) {
-            return C5412m.m22780a(this, z);
+            return C5412m.m22781a(this, z);
         }
 
         @Override
@@ -158,7 +158,7 @@ public class C9357x2 extends ViewGroup {
 
         @Override
         public int mo7850r0(boolean z) {
-            return C5412m.m22771j(this, z);
+            return C5412m.m22772j(this, z);
         }
 
         @Override
@@ -168,15 +168,15 @@ public class C9357x2 extends ViewGroup {
 
         @Override
         public AbstractC11531p mo8932z() {
-            return C5412m.m22774g(this);
+            return C5412m.m22775g(this);
         }
     }
 
     public class C9359b implements AbstractC9362e {
-        public final AbstractC11531p f30328a;
+        public final AbstractC11531p f30331a;
 
         public C9359b(AbstractC11531p pVar) {
-            this.f30328a = pVar;
+            this.f30331a = pVar;
         }
 
         @Override
@@ -191,7 +191,7 @@ public class C9357x2 extends ViewGroup {
 
         @Override
         public int mo8940N0() {
-            return C5412m.m22768m(this);
+            return C5412m.m22769m(this);
         }
 
         @Override
@@ -201,42 +201,42 @@ public class C9357x2 extends ViewGroup {
 
         @Override
         public int mo7858Q() {
-            return C5406j.m22807d(this);
+            return C5406j.m22808d(this);
         }
 
         @Override
         public long mo7857X0(boolean z) {
-            return C5406j.m22808c(this, z);
+            return C5406j.m22809c(this, z);
         }
 
         @Override
         public int mo8938Z0() {
-            return C5412m.m22772i(this);
+            return C5412m.m22773i(this);
         }
 
         @Override
         public int mo7856b1() {
-            return C5412m.m22773h(this);
+            return C5412m.m22774h(this);
         }
 
         @Override
         public int mo7855c() {
-            return C5412m.m22775f(this);
+            return C5412m.m22776f(this);
         }
 
         @Override
         public int mo7854e(boolean z) {
-            return C5412m.m22779b(this, z);
+            return C5412m.m22780b(this, z);
         }
 
         @Override
         public int mo7853g(boolean z) {
-            return C5412m.m22770k(this, z);
+            return C5412m.m22771k(this, z);
         }
 
         @Override
         public AbstractC11531p mo8937j1() {
-            return C5412m.m22776e(this);
+            return C5412m.m22777e(this);
         }
 
         @Override
@@ -251,12 +251,12 @@ public class C9357x2 extends ViewGroup {
 
         @Override
         public int mo7852o0(boolean z) {
-            return C5412m.m22778c(this, z);
+            return C5412m.m22779c(this, z);
         }
 
         @Override
         public int mo7851p0(boolean z) {
-            return C5412m.m22780a(this, z);
+            return C5412m.m22781a(this, z);
         }
 
         @Override
@@ -266,7 +266,7 @@ public class C9357x2 extends ViewGroup {
 
         @Override
         public int mo7850r0(boolean z) {
-            return C5412m.m22771j(this, z);
+            return C5412m.m22772j(this, z);
         }
 
         @Override
@@ -276,20 +276,20 @@ public class C9357x2 extends ViewGroup {
 
         @Override
         public AbstractC11531p mo8932z() {
-            return this.f30328a;
+            return this.f30331a;
         }
     }
 
     public class View$OnAttachStateChangeListenerC9360c implements View.OnAttachStateChangeListener {
-        public final C9370l f30330a;
+        public final C9370l f30333a;
 
         public View$OnAttachStateChangeListenerC9360c(C9370l lVar) {
-            this.f30330a = lVar;
+            this.f30333a = lVar;
         }
 
         @Override
         public void onViewAttachedToWindow(View view) {
-            this.f30330a.m8900Y();
+            this.f30333a.m8900Y();
             C9357x2.this.removeOnAttachStateChangeListener(this);
         }
 
@@ -321,10 +321,10 @@ public class C9357x2 extends ViewGroup {
     }
 
     public static abstract class AbstractC9367i {
-        public final C9357x2 f30351a;
+        public final C9357x2 f30354a;
 
         public AbstractC9367i(C9357x2 x2Var) {
-            this.f30351a = x2Var;
+            this.f30354a = x2Var;
         }
 
         public abstract void mo8930a(Canvas canvas, AbstractC9362e eVar, int i, int i2, int i3, int i4, float f, C6238b bVar);
@@ -341,31 +341,31 @@ public class C9357x2 extends ViewGroup {
     }
 
     public static class C9368j extends AbstractC9367i {
-        public final C10930q6 f30352b;
-        public final TdApi.FormattedText f30353c;
-        public final HandlerC10770jj.C10788q f30354d;
-        public final int f30355e;
-        public RunnableC5390g f30356f;
+        public final C10930q6 f30355b;
+        public final TdApi.FormattedText f30356c;
+        public final HandlerC10770jj.C10788q f30357d;
+        public final int f30358e;
+        public RunnableC5390g f30359f;
 
         public C9368j(C9357x2 x2Var, C10930q6 q6Var, TdApi.FormattedText formattedText, int i, HandlerC10770jj.C10788q qVar) {
             super(x2Var);
-            this.f30352b = q6Var;
-            this.f30353c = formattedText;
-            this.f30355e = i;
-            this.f30354d = qVar;
+            this.f30355b = q6Var;
+            this.f30356c = formattedText;
+            this.f30358e = i;
+            this.f30357d = qVar;
         }
 
         @Override
         public void mo8930a(Canvas canvas, AbstractC9362e eVar, int i, int i2, int i3, int i4, float f, C6238b bVar) {
-            RunnableC5390g gVar = this.f30356f;
+            RunnableC5390g gVar = this.f30359f;
             if (gVar != null) {
-                gVar.m22897w(canvas, i, i3, 0, i2, null, f, bVar);
+                gVar.m22898w(canvas, i, i3, 0, i2, null, f, bVar);
             }
         }
 
         @Override
         public int mo8929b() {
-            RunnableC5390g gVar = this.f30356f;
+            RunnableC5390g gVar = this.f30359f;
             if (gVar != null) {
                 return gVar.getHeight();
             }
@@ -374,7 +374,7 @@ public class C9357x2 extends ViewGroup {
 
         @Override
         public int mo8928c() {
-            RunnableC5390g gVar = this.f30356f;
+            RunnableC5390g gVar = this.f30359f;
             if (gVar != null) {
                 return gVar.getWidth();
             }
@@ -383,109 +383,109 @@ public class C9357x2 extends ViewGroup {
 
         @Override
         public boolean mo8927d(C9370l lVar, int i, int i2, int i3) {
-            RunnableC5390g gVar = this.f30356f;
-            if (gVar != null && gVar.m22936h0() == i3) {
+            RunnableC5390g gVar = this.f30359f;
+            if (gVar != null && gVar.m22937h0() == i3) {
                 return false;
             }
-            this.f30356f = new RunnableC5390g.C5392b(this.f30352b, this.f30353c, this.f30354d, i3, C1410y.m37083A0(lVar.f30381h).m22656l(lVar.f30382i), lVar.f30378e).m22865y(this.f30355e | 8).m22864z(new C4343h(this.f30351a)).m22884f();
+            this.f30359f = new RunnableC5390g.C5392b(this.f30355b, this.f30356c, this.f30357d, i3, C1410y.m37086A0(lVar.f30384h).m22657l(lVar.f30385i), lVar.f30381e).m22866y(this.f30358e | 8).m22865z(new C4343h(this.f30354a)).m22885f();
             return true;
         }
 
         @Override
         public boolean mo8926e(C9370l lVar, View view, MotionEvent motionEvent) {
-            return this.f30356f.m22965V0(view, motionEvent, lVar.f30383j);
+            return this.f30359f.m22966V0(view, motionEvent, lVar.f30386j);
         }
 
         @Override
         public void mo8925f(C6238b bVar) {
-            bVar.m20999d();
+            bVar.m21000d();
         }
     }
 
     public static class C9369k extends AbstractC9367i {
-        public final C5459x0 f30357b;
+        public final C5459x0 f30360b;
 
         public C9369k(C9357x2 x2Var, C5459x0 x0Var) {
             super(x2Var);
-            this.f30357b = x0Var;
-            x0Var.m22636H(new C4343h(x2Var));
+            this.f30360b = x0Var;
+            x0Var.m22637H(new C4343h(x2Var));
         }
 
         @Override
         public void mo8930a(Canvas canvas, AbstractC9362e eVar, int i, int i2, int i3, int i4, float f, C6238b bVar) {
-            this.f30357b.m22629i(canvas, i, i3, 0, i2, null, f, bVar);
+            this.f30360b.m22630i(canvas, i, i3, 0, i2, null, f, bVar);
         }
 
         @Override
         public int mo8929b() {
-            return this.f30357b.getHeight();
+            return this.f30360b.getHeight();
         }
 
         @Override
         public int mo8928c() {
-            return this.f30357b.getWidth();
+            return this.f30360b.getWidth();
         }
 
         @Override
         public boolean mo8927d(C9370l lVar, int i, int i2, int i3) {
-            this.f30357b.m22642B(i3);
+            this.f30360b.m22643B(i3);
             return true;
         }
 
         @Override
         public boolean mo8926e(C9370l lVar, View view, MotionEvent motionEvent) {
-            return this.f30357b.m22613y(view, motionEvent, lVar.f30383j);
+            return this.f30360b.m22614y(view, motionEvent, lVar.f30386j);
         }
 
         @Override
         public void mo8925f(C6238b bVar) {
-            this.f30357b.m22641C(bVar);
+            this.f30360b.m22642C(bVar);
         }
     }
 
     public static class C9370l {
-        public C10327b f30358A;
-        public boolean f30359B;
-        public final AbstractC5911c f30360C;
-        public final AbstractC9323v4.AbstractC9335l f30361D;
-        public long f30362E;
-        public List<AbstractC5920l> f30363F;
-        public boolean f30364G;
-        public int f30365H;
-        public int f30366I;
-        public final RectF f30367J;
-        public final Path f30368K;
-        public View f30369L;
-        public boolean f30370M;
-        public final View.OnLayoutChangeListener f30371N;
-        public final View$OnClickListenerC6902i.AbstractC6909g f30372O;
-        public final View.OnAttachStateChangeListener f30373P;
-        public final C9357x2 f30374a;
-        public final View f30375b;
-        public final AbstractC4345j f30376c;
-        public final AbstractC9363f f30377d;
-        public final AbstractC9362e f30378e;
-        public final AbstractC9364g f30379f;
-        public final AbstractC9323v4<?> f30380g;
-        public final float f30381h;
-        public final boolean f30382i;
-        public final RunnableC5390g.AbstractC5393c f30383j;
-        public Drawable f30384k;
-        public final C6246h f30385l;
-        public final C6246h f30386m;
-        public final C6503j f30387n;
-        public final float f30388o;
-        public final int f30389p;
-        public AbstractC9367i f30390q;
-        public final C6238b f30391r;
-        public final C6240c f30392s;
-        public final RunnableC6507m f30393t;
-        public final int[] f30394u;
-        public final Rect f30395v;
-        public C6227d<AbstractC9374m> f30396w;
-        public final C3940f f30397x;
-        public AbstractRunnableC5910b f30398y;
-        public boolean f30399z;
+        public C10327b f30361A;
+        public boolean f30362B;
+        public final AbstractC5911c f30363C;
+        public final AbstractC9323v4.AbstractC9335l f30364D;
+        public long f30365E;
+        public List<AbstractC5920l> f30366F;
+        public boolean f30367G;
+        public int f30368H;
+        public int f30369I;
+        public final RectF f30370J;
+        public final Path f30371K;
+        public View f30372L;
+        public boolean f30373M;
+        public final View.OnLayoutChangeListener f30374N;
+        public final View$OnClickListenerC6902i.AbstractC6909g f30375O;
+        public final View.OnAttachStateChangeListener f30376P;
+        public final C9357x2 f30377a;
+        public final View f30378b;
+        public final AbstractC4345j f30379c;
+        public final AbstractC9363f f30380d;
+        public final AbstractC9362e f30381e;
+        public final AbstractC9364g f30382f;
+        public final AbstractC9323v4<?> f30383g;
+        public final float f30384h;
+        public final boolean f30385i;
+        public final RunnableC5390g.AbstractC5393c f30386j;
+        public Drawable f30387k;
+        public final C6246h f30388l;
+        public final C6246h f30389m;
+        public final C6503j f30390n;
+        public final float f30391o;
+        public final int f30392p;
+        public AbstractC9367i f30393q;
+        public final C6238b f30394r;
+        public final C6240c f30395s;
+        public final RunnableC6507m f30396t;
+        public final int[] f30397u;
+        public final Rect f30398v;
+        public C6227d<AbstractC9374m> f30399w;
+        public final C3940f f30400x;
+        public AbstractRunnableC5910b f30401y;
+        public boolean f30402z;
 
         public class C9371a implements C3950k.AbstractC3952b {
             public C9371a() {
@@ -493,21 +493,21 @@ public class C9357x2 extends ViewGroup {
 
             @Override
             public void mo45P5(int i, float f, float f2, C3950k kVar) {
-                if (C9370l.this.f30396w != null) {
-                    Iterator it = C9370l.this.f30396w.iterator();
+                if (C9370l.this.f30399w != null) {
+                    Iterator it = C9370l.this.f30399w.iterator();
                     while (it.hasNext()) {
                         ((AbstractC9374m) it.next()).mo8872i(C9370l.this, f);
                     }
                 }
-                if (C9370l.this.f30359B) {
-                    C9370l.this.f30374a.invalidate();
+                if (C9370l.this.f30362B) {
+                    C9370l.this.f30377a.invalidate();
                 }
             }
 
             @Override
             public void mo35Y0(int i, float f, C3950k kVar) {
-                if (C9370l.this.f30396w != null) {
-                    Iterator it = C9370l.this.f30396w.iterator();
+                if (C9370l.this.f30399w != null) {
+                    Iterator it = C9370l.this.f30399w.iterator();
                     while (it.hasNext()) {
                         ((AbstractC9374m) it.next()).mo8871l(C9370l.this, f > 0.0f);
                     }
@@ -544,57 +544,57 @@ public class C9357x2 extends ViewGroup {
         }
 
         public C9370l(C9357x2 x2Var, View view, AbstractC4345j jVar, AbstractC9363f fVar, AbstractC9362e eVar, AbstractC9364g gVar, AbstractC9323v4<?> v4Var, RunnableC5390g.AbstractC5393c cVar, float f, boolean z, int i, C6246h hVar, C6246h hVar2, C6503j jVar2, float f2, int i2, AbstractC9367i iVar) {
-            this.f30394u = new int[2];
-            this.f30395v = new Rect();
-            this.f30397x = new C3940f(0, new C9371a(), C2057b.f7284f, 210L);
-            this.f30360C = new AbstractC5911c() {
+            this.f30397u = new int[2];
+            this.f30398v = new Rect();
+            this.f30400x = new C3940f(0, new C9371a(), C2057b.f7284f, 210L);
+            this.f30363C = new AbstractC5911c() {
                 @Override
                 public final void mo4501a3() {
                     C9357x2.C9370l.this.m8915J();
                 }
             };
-            this.f30361D = new AbstractC9323v4.AbstractC9335l() {
+            this.f30364D = new AbstractC9323v4.AbstractC9335l() {
                 @Override
                 public final void mo3383a(AbstractC9323v4 v4Var2, boolean z2) {
                     C9357x2.C9370l.this.m8912M(v4Var2, z2);
                 }
             };
-            this.f30367J = new RectF();
-            this.f30368K = new Path();
-            this.f30371N = new View.OnLayoutChangeListener() {
+            this.f30370J = new RectF();
+            this.f30371K = new Path();
+            this.f30374N = new View.OnLayoutChangeListener() {
                 @Override
                 public final void onLayoutChange(View view2, int i3, int i4, int i5, int i6, int i7, int i8, int i9, int i10) {
                     C9357x2.C9370l.this.m8911N(view2, i3, i4, i5, i6, i7, i8, i9, i10);
                 }
             };
-            this.f30372O = new View$OnClickListenerC6902i.AbstractC6909g() {
+            this.f30375O = new View$OnClickListenerC6902i.AbstractC6909g() {
                 @Override
-                public final void mo10015a(View$OnClickListenerC6902i iVar2, float f3, float f4) {
+                public final void mo10014a(View$OnClickListenerC6902i iVar2, float f3, float f4) {
                     C9357x2.C9370l.this.m8910O(iVar2, f3, f4);
                 }
             };
-            this.f30373P = new View$OnAttachStateChangeListenerC9373c();
-            this.f30374a = x2Var;
-            this.f30375b = view;
-            this.f30376c = jVar;
-            this.f30377d = fVar;
-            this.f30378e = eVar != null ? eVar : x2Var.f30326c;
-            this.f30379f = gVar;
-            this.f30380g = v4Var;
-            this.f30381h = f;
-            this.f30382i = z;
-            this.f30383j = cVar;
-            this.f30384k = C1362c.m37483f(i);
-            this.f30385l = hVar;
-            this.f30386m = hVar2;
-            this.f30387n = jVar2;
+            this.f30376P = new View$OnAttachStateChangeListenerC9373c();
+            this.f30377a = x2Var;
+            this.f30378b = view;
+            this.f30379c = jVar;
+            this.f30380d = fVar;
+            this.f30381e = eVar != null ? eVar : x2Var.f30329c;
+            this.f30382f = gVar;
+            this.f30383g = v4Var;
+            this.f30384h = f;
+            this.f30385i = z;
+            this.f30386j = cVar;
+            this.f30387k = C1362c.m37486f(i);
+            this.f30388l = hVar;
+            this.f30389m = hVar2;
+            this.f30390n = jVar2;
             RunnableC6507m mVar = null;
-            this.f30392s = (hVar == null && hVar2 == null) ? null : new C6240c(x2Var, 0);
-            this.f30393t = jVar2 != null ? new RunnableC6507m(x2Var) : mVar;
-            this.f30391r = new C6238b(x2Var);
-            this.f30388o = f2;
-            this.f30389p = i2;
-            this.f30390q = iVar;
+            this.f30395s = (hVar == null && hVar2 == null) ? null : new C6240c(x2Var, 0);
+            this.f30396t = jVar2 != null ? new RunnableC6507m(x2Var) : mVar;
+            this.f30394r = new C6238b(x2Var);
+            this.f30391o = f2;
+            this.f30392p = i2;
+            this.f30393q = iVar;
         }
 
         public void m8912M(AbstractC9323v4 v4Var, boolean z) {
@@ -618,8 +618,8 @@ public class C9357x2 extends ViewGroup {
         public void m8909P(C10327b bVar) {
             if (!bVar.m5416b()) {
                 m8901X(true, true);
-                if (this.f30358A == bVar) {
-                    this.f30358A = null;
+                if (this.f30361A == bVar) {
+                    this.f30361A = null;
                 }
             }
         }
@@ -635,51 +635,51 @@ public class C9357x2 extends ViewGroup {
             int i8;
             int i9;
             RunnableC6507m mVar;
-            float g = this.f30397x.m29584g();
-            float d = C5069h.m24089d(g);
+            float g = this.f30400x.m29586g();
+            float d = C5069h.m24090d(g);
             float f = (g * 0.2f) + 0.8f;
-            Rect Z = C1410y.m37052Z();
-            int c = this.f30365H - (this.f30390q.mo8928c() / 2);
+            Rect Z = C1410y.m37055Z();
+            int c = this.f30368H - (this.f30393q.mo8928c() / 2);
             Z.left = c;
-            Z.right = c + this.f30390q.mo8928c();
+            Z.right = c + this.f30393q.mo8928c();
             int i10 = 0;
             boolean z = f != 1.0f;
             if (z) {
                 int save = canvas.save();
-                if (C5063c.m24144b(this.f30389p, 8)) {
-                    canvas.scale(f, f, this.f30367J.centerX(), this.f30367J.centerY());
+                if (C5063c.m24145b(this.f30392p, 8)) {
+                    canvas.scale(f, f, this.f30370J.centerX(), this.f30370J.centerY());
                 } else {
-                    canvas.scale(f, f, this.f30365H, this.f30366I);
+                    canvas.scale(f, f, this.f30368H, this.f30369I);
                 }
                 i = save;
             } else {
                 i = -1;
             }
-            int a = C5064d.m24131a(d, this.f30378e.mo8936k());
+            int a = C5064d.m24132a(d, this.f30381e.mo8936k());
             if (Color.alpha(a) > 0) {
-                this.f30374a.f30320M.setStyle(Paint.Style.STROKE);
-                this.f30374a.f30320M.setStrokeWidth(C1357a0.m37541i(2.0f));
-                this.f30374a.f30320M.setColor(a);
-                canvas.drawPath(this.f30368K, this.f30374a.f30320M);
-                this.f30374a.f30320M.setStyle(Paint.Style.FILL);
+                this.f30377a.f30323M.setStyle(Paint.Style.STROKE);
+                this.f30377a.f30323M.setStrokeWidth(C1357a0.m37544i(2.0f));
+                this.f30377a.f30323M.setColor(a);
+                canvas.drawPath(this.f30371K, this.f30377a.f30323M);
+                this.f30377a.f30323M.setStyle(Paint.Style.FILL);
             }
-            this.f30374a.f30320M.setColor(C5064d.m24131a(d, this.f30378e.mo8939P0()));
-            canvas.drawPath(this.f30368K, this.f30374a.f30320M);
+            this.f30377a.f30323M.setColor(C5064d.m24132a(d, this.f30381e.mo8939P0()));
+            canvas.drawPath(this.f30371K, this.f30377a.f30323M);
             if (m8921D()) {
-                int i11 = C1357a0.m37541i(8.0f);
-                int i12 = C1357a0.m37541i(10.0f);
-                int i13 = C1357a0.m37541i(11.0f);
-                i10 = C1357a0.m37541i(24.0f) + C1357a0.m37541i(8.0f);
-                int max = Math.max(0, (C1357a0.m37541i(24.0f) / 2) - (this.f30390q.mo8929b() / 2));
-                int i14 = C1357a0.m37541i(24.0f);
-                RectF rectF = this.f30367J;
+                int i11 = C1357a0.m37544i(8.0f);
+                int i12 = C1357a0.m37544i(10.0f);
+                int i13 = C1357a0.m37544i(11.0f);
+                i10 = C1357a0.m37544i(24.0f) + C1357a0.m37544i(8.0f);
+                int max = Math.max(0, (C1357a0.m37544i(24.0f) / 2) - (this.f30393q.mo8929b() / 2));
+                int i14 = C1357a0.m37544i(24.0f);
+                RectF rectF = this.f30370J;
                 int i15 = (int) (rectF.left + i11);
                 int i16 = (int) (rectF.top + i13);
                 int i17 = i14 / 2;
                 int i18 = i15 + i17;
                 int i19 = i17 + i16;
-                int min = i14 + (Math.min(i11, C1357a0.m37541i(8.0f)) / 2);
-                if (this.f30392s == null || ((mVar = this.f30393t) != null && !mVar.mo20246c0())) {
+                int min = i14 + (Math.min(i11, C1357a0.m37544i(8.0f)) / 2);
+                if (this.f30395s == null || ((mVar = this.f30396t) != null && !mVar.mo20247c0())) {
                     i9 = i11;
                     i8 = max;
                     i7 = i12;
@@ -690,78 +690,78 @@ public class C9357x2 extends ViewGroup {
                     i8 = max;
                     i7 = i12;
                     i6 = i13;
-                    this.f30392s.mo20256K0(i18 - i20, i19 - i20, i18 + i20, i19 + i20);
-                    this.f30392s.mo20250U(d);
-                    this.f30392s.draw(canvas);
-                    this.f30392s.mo20253P();
+                    this.f30395s.mo20257K0(i18 - i20, i19 - i20, i18 + i20, i19 + i20);
+                    this.f30395s.mo20251U(d);
+                    this.f30395s.draw(canvas);
+                    this.f30395s.mo20254P();
                 }
-                RunnableC6507m mVar2 = this.f30393t;
+                RunnableC6507m mVar2 = this.f30396t;
                 if (mVar2 != null) {
                     int i21 = min / 2;
-                    mVar2.mo20256K0(i18 - i21, i19 - i21, i18 + i21, i19 + i21);
-                    this.f30393t.setAlpha(d);
-                    this.f30393t.draw(canvas);
+                    mVar2.mo20257K0(i18 - i21, i19 - i21, i18 + i21, i19 + i21);
+                    this.f30396t.setAlpha(d);
+                    this.f30396t.draw(canvas);
                 }
-                Drawable drawable = this.f30384k;
+                Drawable drawable = this.f30387k;
                 if (drawable != null) {
-                    C1362c.m37487b(canvas, drawable, i15, i16, C1410y.m37055W(C5064d.m24131a(d, this.f30378e.mo7855c())));
+                    C1362c.m37490b(canvas, drawable, i15, i16, C1410y.m37058W(C5064d.m24132a(d, this.f30381e.mo7855c())));
                 }
-                C5063c.m24144b(this.f30389p, 16);
+                C5063c.m24145b(this.f30392p, 16);
                 i5 = i9;
                 i4 = i8;
                 i3 = i7;
                 i2 = i6;
             } else {
-                i5 = C1357a0.m37541i(8.0f);
-                i3 = C1357a0.m37541i(8.0f);
-                i2 = C1357a0.m37541i(8.0f);
+                i5 = C1357a0.m37544i(8.0f);
+                i3 = C1357a0.m37544i(8.0f);
+                i2 = C1357a0.m37544i(8.0f);
                 i4 = 0;
             }
-            AbstractC9367i iVar = this.f30390q;
-            AbstractC9362e eVar = this.f30378e;
-            RectF rectF2 = this.f30367J;
+            AbstractC9367i iVar = this.f30393q;
+            AbstractC9362e eVar = this.f30381e;
+            RectF rectF2 = this.f30370J;
             float f2 = i2;
-            iVar.mo8930a(canvas, eVar, (int) (rectF2.left + i5 + i10), (int) (rectF2.top + f2 + i4), (int) (rectF2.right - i3), (int) (rectF2.bottom - f2), d, this.f30391r);
+            iVar.mo8930a(canvas, eVar, (int) (rectF2.left + i5 + i10), (int) (rectF2.top + f2 + i4), (int) (rectF2.right - i3), (int) (rectF2.bottom - f2), d, this.f30394r);
             if (z) {
                 canvas.restoreToCount(i);
             }
         }
 
         public final View m8923B() {
-            AbstractC4345j jVar = this.f30376c;
+            AbstractC4345j jVar = this.f30379c;
             if (jVar != null) {
-                View view = this.f30375b;
-                if (view != null && jVar.mo28229c(view)) {
-                    return this.f30375b;
+                View view = this.f30378b;
+                if (view != null && jVar.mo28231c(view)) {
+                    return this.f30378b;
                 }
-                View f = this.f30376c.mo28226f();
+                View f = this.f30379c.mo28228f();
                 if (f != null) {
                     return f;
                 }
             }
-            return this.f30375b;
+            return this.f30378b;
         }
 
         public String m8922C() {
-            AbstractC9367i iVar = this.f30390q;
+            AbstractC9367i iVar = this.f30393q;
             if (iVar instanceof C9368j) {
-                return ((C9368j) iVar).f30353c.text;
+                return ((C9368j) iVar).f30356c.text;
             }
             return null;
         }
 
         public final boolean m8921D() {
-            return (this.f30384k == null && this.f30385l == null && this.f30386m == null && this.f30387n == null) ? false : true;
+            return (this.f30387k == null && this.f30388l == null && this.f30389m == null && this.f30390n == null) ? false : true;
         }
 
         public void m8920E(boolean z) {
             m8875x();
-            if (z || this.f30398y == null) {
+            if (z || this.f30401y == null) {
                 m8876w();
                 m8901X(false, true);
                 return;
             }
-            this.f30399z = true;
+            this.f30402z = true;
         }
 
         public C9370l m8919F() {
@@ -778,11 +778,11 @@ public class C9357x2 extends ViewGroup {
 
         public C9370l m8916I(boolean z, long j, TimeUnit timeUnit) {
             m8876w();
-            this.f30399z = z;
+            this.f30402z = z;
             C9372b bVar = new C9372b();
-            this.f30398y = bVar;
-            bVar.m21855e(C1379j0.m37313o());
-            C1379j0.m37332e0(this.f30398y, timeUnit.toMillis(j));
+            this.f30401y = bVar;
+            bVar.m21856e(C1379j0.m37316o());
+            C1379j0.m37335e0(this.f30401y, timeUnit.toMillis(j));
             return this;
         }
 
@@ -791,35 +791,35 @@ public class C9357x2 extends ViewGroup {
         }
 
         public boolean m8914K(float f, float f2) {
-            RectF rectF = this.f30367J;
+            RectF rectF = this.f30370J;
             return f >= rectF.left && f < rectF.right && f2 >= rectF.top && f2 < rectF.bottom;
         }
 
         public boolean m8913L() {
-            return this.f30359B && this.f30397x.m29584g() > 0.0f;
+            return this.f30362B && this.f30400x.m29586g() > 0.0f;
         }
 
         public boolean m8908Q(int i, int i2) {
             float f;
             char c;
             View B = m8923B();
-            int i3 = this.f30365H;
-            int i4 = this.f30366I;
-            boolean z = this.f30364G;
+            int i3 = this.f30368H;
+            int i4 = this.f30369I;
+            boolean z = this.f30367G;
             if (B != null) {
-                B.getLocationOnScreen(this.f30394u);
-                int[] iArr = this.f30394u;
-                iArr[0] = iArr[0] - this.f30374a.f30325b[0];
-                int[] iArr2 = this.f30394u;
-                iArr2[1] = iArr2[1] - this.f30374a.f30325b[1];
+                B.getLocationOnScreen(this.f30397u);
+                int[] iArr = this.f30397u;
+                iArr[0] = iArr[0] - this.f30377a.f30328b[0];
+                int[] iArr2 = this.f30397u;
+                iArr2[1] = iArr2[1] - this.f30377a.f30328b[1];
             } else {
-                int[] iArr3 = this.f30394u;
+                int[] iArr3 = this.f30397u;
                 iArr3[1] = 0;
                 iArr3[0] = 0;
             }
-            C1410y.m37052Z().set(this.f30395v);
-            RectF a0 = C1410y.m37050a0();
-            a0.set(this.f30367J);
+            C1410y.m37055Z().set(this.f30398v);
+            RectF a0 = C1410y.m37053a0();
+            a0.set(this.f30370J);
             if (B != null) {
                 float scaleX = B.getScaleX();
                 float scaleY = B.getScaleY();
@@ -827,7 +827,7 @@ public class C9357x2 extends ViewGroup {
                 float pivotY = B.getPivotY();
                 int measuredWidth = B.getMeasuredWidth();
                 int measuredHeight = B.getMeasuredHeight();
-                this.f30395v.set(0, 0, measuredWidth, measuredHeight);
+                this.f30398v.set(0, 0, measuredWidth, measuredHeight);
                 if (scaleX != 1.0f || scaleY != 1.0f) {
                     float f2 = measuredWidth;
                     int i5 = (int) (scaleX * f2);
@@ -835,79 +835,79 @@ public class C9357x2 extends ViewGroup {
                     int i6 = (int) (scaleY * f3);
                     int i7 = (int) ((measuredWidth - i5) * (pivotX / f2));
                     int i8 = (int) ((measuredHeight - i6) * (pivotY / f3));
-                    if (!C5063c.m24144b(this.f30389p, 64)) {
+                    if (!C5063c.m24145b(this.f30392p, 64)) {
                         c = 0;
-                        this.f30395v.set(0, 0, i5, i6);
-                        this.f30395v.offset(i7, i8);
+                        this.f30398v.set(0, 0, i5, i6);
+                        this.f30398v.offset(i7, i8);
                     } else {
                         c = 0;
                     }
-                    int[] iArr4 = this.f30394u;
+                    int[] iArr4 = this.f30397u;
                     iArr4[c] = iArr4[c] - i7;
                     iArr4[1] = iArr4[1] - i8;
                 }
             } else {
-                this.f30395v.set(0, 0, 0, 0);
+                this.f30398v.set(0, 0, 0, 0);
             }
-            AbstractC9363f fVar = this.f30377d;
+            AbstractC9363f fVar = this.f30380d;
             if (fVar != null) {
-                fVar.mo8098f1(B, this.f30395v);
+                fVar.mo8098f1(B, this.f30398v);
             } else if (B instanceof AbstractC9363f) {
-                ((AbstractC9363f) B).mo8098f1(B, this.f30395v);
+                ((AbstractC9363f) B).mo8098f1(B, this.f30398v);
             }
             boolean D = m8921D();
-            int i9 = C1357a0.m37541i(8.0f);
-            int i10 = C1357a0.m37541i(D ? 10.0f : 8.0f);
-            int i11 = C1357a0.m37541i(D ? 11.0f : 8.0f);
-            int i12 = C1357a0.m37541i(8.0f);
-            int i13 = D ? C1357a0.m37541i(24.0f) + C1357a0.m37541i(8.0f) : 0;
-            boolean b = C5063c.m24144b(this.f30389p, 4);
+            int i9 = C1357a0.m37544i(8.0f);
+            int i10 = C1357a0.m37544i(D ? 10.0f : 8.0f);
+            int i11 = C1357a0.m37544i(D ? 11.0f : 8.0f);
+            int i12 = C1357a0.m37544i(8.0f);
+            int i13 = D ? C1357a0.m37544i(24.0f) + C1357a0.m37544i(8.0f) : 0;
+            boolean b = C5063c.m24145b(this.f30392p, 4);
             int i14 = i12 * 2;
             int min = Math.min(i - i14, i2 - i14);
             if (!b) {
-                float f4 = this.f30388o;
+                float f4 = this.f30391o;
                 if (f4 > 0.0f) {
-                    min = Math.min(C1357a0.m37541i(f4), min);
+                    min = Math.min(C1357a0.m37544i(f4), min);
                 }
             }
-            boolean d = this.f30390q.mo8927d(this, i, i2, ((min - i9) - i10) - i13);
+            boolean d = this.f30393q.mo8927d(this, i, i2, ((min - i9) - i10) - i13);
             int i15 = i11 * 2;
-            int b2 = this.f30390q.mo8929b() + i15 + C1357a0.m37541i(12.0f);
-            this.f30364G = (this.f30394u[1] + this.f30395v.top) - b2 < View$OnClickListenerC9170d1.getTopOffset() && (this.f30394u[1] + this.f30395v.bottom) + b2 < i2;
-            this.f30365H = this.f30394u[0] + this.f30395v.centerX();
-            this.f30366I = this.f30364G ? this.f30394u[1] + this.f30395v.bottom : this.f30394u[1] + this.f30395v.top;
-            int i16 = C5063c.m24144b(this.f30389p, 8) ? i12 : C1357a0.m37541i(5.0f);
-            int c2 = i10 + i9 + this.f30390q.mo8928c() + i13;
-            int b3 = this.f30390q.mo8929b() + i15;
+            int b2 = this.f30393q.mo8929b() + i15 + C1357a0.m37544i(12.0f);
+            this.f30367G = (this.f30397u[1] + this.f30398v.top) - b2 < View$OnClickListenerC9170d1.getTopOffset() && (this.f30397u[1] + this.f30398v.bottom) + b2 < i2;
+            this.f30368H = this.f30397u[0] + this.f30398v.centerX();
+            this.f30369I = this.f30367G ? this.f30397u[1] + this.f30398v.bottom : this.f30397u[1] + this.f30398v.top;
+            int i16 = C5063c.m24145b(this.f30392p, 8) ? i12 : C1357a0.m37544i(5.0f);
+            int c2 = i10 + i9 + this.f30393q.mo8928c() + i13;
+            int b3 = this.f30393q.mo8929b() + i15;
             if (D) {
-                c2 = Math.max(c2, (i9 * 2) + C1357a0.m37541i(24.0f));
-                b3 = Math.max(b3, i15 + C1357a0.m37541i(24.0f));
+                c2 = Math.max(c2, (i9 * 2) + C1357a0.m37544i(24.0f));
+                b3 = Math.max(b3, i15 + C1357a0.m37544i(24.0f));
             }
             if (b) {
-                RectF rectF = this.f30367J;
-                int i17 = this.f30365H;
+                RectF rectF = this.f30370J;
+                int i17 = this.f30368H;
                 float f5 = min / 2.0f;
                 f = 0.0f;
                 rectF.set(i17 - f5, 0.0f, i17 + f5, b3);
             } else {
                 f = 0.0f;
-                RectF rectF2 = this.f30367J;
-                int i18 = this.f30365H;
+                RectF rectF2 = this.f30370J;
+                int i18 = this.f30368H;
                 float f6 = c2 / 2.0f;
                 rectF2.set(i18 - f6, 0.0f, i18 + f6, b3);
             }
-            if (this.f30364G) {
-                this.f30367J.offset(f, this.f30366I + i16 + 0);
+            if (this.f30367G) {
+                this.f30370J.offset(f, this.f30369I + i16 + 0);
             } else {
-                this.f30367J.offset(f, ((this.f30366I - i16) - b3) - 0);
+                this.f30370J.offset(f, ((this.f30369I - i16) - b3) - 0);
             }
-            RectF rectF3 = this.f30367J;
+            RectF rectF3 = this.f30370J;
             rectF3.offset(Math.max(f, i12 - rectF3.left), f);
-            RectF rectF4 = this.f30367J;
+            RectF rectF4 = this.f30370J;
             rectF4.offset(Math.min(f, (i - i12) - rectF4.right), f);
-            int i19 = (C1357a0.m37541i(10.0f) / 2) + C1357a0.m37541i(6.0f);
-            int i20 = this.f30365H;
-            RectF rectF5 = this.f30367J;
+            int i19 = (C1357a0.m37544i(10.0f) / 2) + C1357a0.m37544i(6.0f);
+            int i20 = this.f30368H;
+            RectF rectF5 = this.f30370J;
             float f7 = rectF5.left;
             if (i20 - i19 < f7) {
                 rectF5.offset((i20 - i19) - f7, 0.0f);
@@ -917,32 +917,32 @@ public class C9357x2 extends ViewGroup {
                     rectF5.offset((i20 + i19) - f8, 0.0f);
                 }
             }
-            AbstractC9364g gVar = this.f30379f;
+            AbstractC9364g gVar = this.f30382f;
             if (gVar != null) {
-                gVar.mo8975a(this.f30367J);
+                gVar.mo8975a(this.f30370J);
             }
             m8878u(B);
-            if (!d && this.f30365H == i3 && this.f30366I == i4 && this.f30364G == z && this.f30367J.equals(a0)) {
+            if (!d && this.f30368H == i3 && this.f30369I == i4 && this.f30367G == z && this.f30370J.equals(a0)) {
                 return false;
             }
-            m8877v(this.f30368K, this.f30367J);
+            m8877v(this.f30371K, this.f30370J);
             return true;
         }
 
         public boolean m8907R(View view, MotionEvent motionEvent) {
             boolean D = m8921D();
-            C1357a0.m37541i(8.0f);
-            C1357a0.m37541i(D ? 11.0f : 8.0f);
+            C1357a0.m37544i(8.0f);
+            C1357a0.m37544i(D ? 11.0f : 8.0f);
             if (D) {
-                C1357a0.m37541i(24.0f);
-                C1357a0.m37541i(8.0f);
+                C1357a0.m37544i(24.0f);
+                C1357a0.m37544i(8.0f);
             }
-            return this.f30390q.mo8926e(this, view, motionEvent);
+            return this.f30393q.mo8926e(this, view, motionEvent);
         }
 
         public final void m8906S(View view, boolean z) {
-            if (this.f30369L == view && this.f30370M != z) {
-                this.f30370M = z;
+            if (this.f30372L == view && this.f30373M != z) {
+                this.f30373M = z;
                 if (z) {
                     m8915J();
                 }
@@ -950,7 +950,7 @@ public class C9357x2 extends ViewGroup {
         }
 
         public C9370l m8905T(AbstractC9374m mVar) {
-            C6227d<AbstractC9374m> dVar = this.f30396w;
+            C6227d<AbstractC9374m> dVar = this.f30399w;
             if (dVar != null) {
                 dVar.remove(mVar);
             }
@@ -958,46 +958,46 @@ public class C9357x2 extends ViewGroup {
         }
 
         public void m8904U() {
-            if (m8908Q(this.f30374a.getMeasuredWidth(), this.f30374a.getMeasuredHeight()) && this.f30397x.m29584g() > 0.0f) {
-                this.f30374a.invalidate();
+            if (m8908Q(this.f30377a.getMeasuredWidth(), this.f30377a.getMeasuredHeight()) && this.f30400x.m29586g() > 0.0f) {
+                this.f30377a.invalidate();
             }
         }
 
         public void m8903V(AbstractC9367i iVar, int i) {
-            this.f30390q = iVar;
-            this.f30384k = C1362c.m37483f(i);
-            m8908Q(this.f30374a.getMeasuredWidth(), this.f30374a.getMeasuredHeight());
-            this.f30374a.invalidate();
+            this.f30393q = iVar;
+            this.f30387k = C1362c.m37486f(i);
+            m8908Q(this.f30377a.getMeasuredWidth(), this.f30377a.getMeasuredHeight());
+            this.f30377a.invalidate();
         }
 
         public void m8902W(C10930q6 q6Var, CharSequence charSequence, int i) {
-            m8903V(this.f30374a.m8981k(q6Var, charSequence, 0), i);
+            m8903V(this.f30377a.m8981k(q6Var, charSequence, 0), i);
         }
 
         public final void m8901X(boolean z, boolean z2) {
-            if (this.f30397x.m29583h() != z) {
-                if (!z || this.f30397x.m29584g() != 0.0f || C5063c.m24144b(this.f30389p, 8)) {
-                    this.f30397x.m29577n(C2057b.f7280b);
-                    this.f30397x.m29579l(100L);
+            if (this.f30400x.m29585h() != z) {
+                if (!z || this.f30400x.m29586g() != 0.0f || C5063c.m24145b(this.f30392p, 8)) {
+                    this.f30400x.m29579n(C2057b.f7280b);
+                    this.f30400x.m29581l(100L);
                 } else {
-                    this.f30397x.m29577n(C2057b.f7284f);
-                    this.f30397x.m29579l(210L);
+                    this.f30400x.m29579n(C2057b.f7284f);
+                    this.f30400x.m29581l(210L);
                 }
-                AbstractC9323v4<?> v4Var = this.f30380g;
+                AbstractC9323v4<?> v4Var = this.f30383g;
                 if (v4Var != null) {
                     if (z) {
-                        v4Var.m9226k8(this.f30360C);
-                        this.f30380g.m9219l8(this.f30361D);
+                        v4Var.m9226k8(this.f30363C);
+                        this.f30383g.m9219l8(this.f30364D);
                     } else {
-                        v4Var.m9200nd(this.f30360C);
-                        this.f30380g.m9193od(this.f30361D);
+                        v4Var.m9200nd(this.f30363C);
+                        this.f30383g.m9193od(this.f30364D);
                     }
                 }
                 if (z) {
-                    this.f30362E = SystemClock.uptimeMillis();
+                    this.f30365E = SystemClock.uptimeMillis();
                 } else {
-                    long uptimeMillis = SystemClock.uptimeMillis() - this.f30362E;
-                    List<AbstractC5920l> list = this.f30363F;
+                    long uptimeMillis = SystemClock.uptimeMillis() - this.f30365E;
+                    List<AbstractC5920l> list = this.f30366F;
                     if (list != null) {
                         for (AbstractC5920l lVar : list) {
                             lVar.mo3050a(uptimeMillis);
@@ -1008,20 +1008,20 @@ public class C9357x2 extends ViewGroup {
             if (z) {
                 m8879t();
             }
-            this.f30397x.m29575p(z, z2);
+            this.f30400x.m29577p(z, z2);
         }
 
         public void m8900Y() {
             m8876w();
             m8875x();
-            AbstractC9323v4<?> v4Var = this.f30380g;
-            if (v4Var == null || v4Var.m9339Ta() || this.f30397x.m29584g() > 0.0f) {
+            AbstractC9323v4<?> v4Var = this.f30383g;
+            if (v4Var == null || v4Var.m9339Ta() || this.f30400x.m29586g() > 0.0f) {
                 m8901X(true, true);
                 return;
             }
             final C10327b bVar = new C10327b();
-            this.f30358A = bVar;
-            this.f30380g.m9212m8(new Runnable() {
+            this.f30361A = bVar;
+            this.f30383g.m9212m8(new Runnable() {
                 @Override
                 public final void run() {
                     C9357x2.C9370l.this.m8909P(bVar);
@@ -1031,82 +1031,82 @@ public class C9357x2 extends ViewGroup {
 
         public boolean m8899Z() {
             AbstractRunnableC5910b bVar;
-            return this.f30397x.m29583h() && ((bVar = this.f30398y) == null || !bVar.m21856d());
+            return this.f30400x.m29585h() && ((bVar = this.f30401y) == null || !bVar.m21857d());
         }
 
         public C9370l m8881r(AbstractC9374m mVar) {
-            if (this.f30396w == null) {
-                this.f30396w = new C6227d<>();
+            if (this.f30399w == null) {
+                this.f30399w = new C6227d<>();
             }
-            this.f30396w.add(mVar);
+            this.f30399w.add(mVar);
             return this;
         }
 
         public C9370l m8880s(AbstractC5920l lVar) {
-            if (this.f30363F == null) {
-                this.f30363F = new ArrayList();
+            if (this.f30366F == null) {
+                this.f30366F = new ArrayList();
             }
-            this.f30363F.add(lVar);
+            this.f30366F.add(lVar);
             return this;
         }
 
         public final void m8879t() {
-            if (!this.f30359B) {
-                this.f30359B = true;
-                this.f30374a.m8986f(this);
-                this.f30390q.mo8925f(this.f30391r);
-                this.f30391r.m21001b();
-                C6240c cVar = this.f30392s;
+            if (!this.f30362B) {
+                this.f30362B = true;
+                this.f30377a.m8986f(this);
+                this.f30393q.mo8925f(this.f30394r);
+                this.f30394r.m21002b();
+                C6240c cVar = this.f30395s;
                 if (cVar != null) {
-                    cVar.m20977j(this.f30385l, this.f30386m);
-                    this.f30392s.mo20245f();
+                    cVar.m20978j(this.f30388l, this.f30389m);
+                    this.f30395s.mo20246f();
                 }
-                RunnableC6507m mVar = this.f30393t;
+                RunnableC6507m mVar = this.f30396t;
                 if (mVar != null) {
-                    mVar.m20231r(this.f30387n);
-                    this.f30393t.mo20245f();
+                    mVar.m20232r(this.f30390n);
+                    this.f30396t.mo20246f();
                 }
             }
         }
 
         public final void m8878u(View view) {
-            View view2 = this.f30369L;
+            View view2 = this.f30372L;
             if (view2 != view) {
                 if (view2 != null) {
-                    view2.removeOnLayoutChangeListener(this.f30371N);
-                    this.f30369L.removeOnAttachStateChangeListener(this.f30373P);
-                    View view3 = this.f30369L;
+                    view2.removeOnLayoutChangeListener(this.f30374N);
+                    this.f30372L.removeOnAttachStateChangeListener(this.f30376P);
+                    View view3 = this.f30372L;
                     if (view3 instanceof View$OnClickListenerC6902i) {
-                        ((View$OnClickListenerC6902i) view3).m18499q0(this.f30372O);
+                        ((View$OnClickListenerC6902i) view3).m18499q0(this.f30375O);
                     }
                 }
-                this.f30369L = view;
+                this.f30372L = view;
                 if (view != null) {
                     if (Build.VERSION.SDK_INT >= 19) {
-                        this.f30370M = view.isAttachedToWindow();
+                        this.f30373M = view.isAttachedToWindow();
                     } else {
-                        this.f30370M = true;
+                        this.f30373M = true;
                     }
-                    view.addOnLayoutChangeListener(this.f30371N);
-                    view.addOnAttachStateChangeListener(this.f30373P);
+                    view.addOnLayoutChangeListener(this.f30374N);
+                    view.addOnAttachStateChangeListener(this.f30376P);
                     if (view instanceof View$OnClickListenerC6902i) {
-                        ((View$OnClickListenerC6902i) view).m18513G(this.f30372O);
+                        ((View$OnClickListenerC6902i) view).m18513G(this.f30375O);
                     }
                 }
             }
         }
 
         public final void m8877v(Path path, RectF rectF) {
-            int i = C1357a0.m37541i(10.0f);
-            int i2 = C1357a0.m37541i(6.0f);
-            int i3 = C1357a0.m37541i(5.0f);
+            int i = C1357a0.m37544i(10.0f);
+            int i2 = C1357a0.m37544i(6.0f);
+            int i3 = C1357a0.m37544i(5.0f);
             path.reset();
             path.setFillType(Path.FillType.EVEN_ODD);
-            RectF a0 = C1410y.m37050a0();
-            if (C5063c.m24144b(this.f30389p, 8)) {
+            RectF a0 = C1410y.m37053a0();
+            if (C5063c.m24145b(this.f30392p, 8)) {
                 float f = i2;
                 path.addRoundRect(rectF, f, f, Path.Direction.CW);
-            } else if (this.f30364G) {
+            } else if (this.f30367G) {
                 float f2 = i2;
                 path.moveTo(rectF.left, rectF.top + f2);
                 float f3 = rectF.left;
@@ -1115,7 +1115,7 @@ public class C9357x2 extends ViewGroup {
                 a0.set(f3, f4, f3 + f5, f4 + f5);
                 path.arcTo(a0, -180.0f, 90.0f);
                 float f6 = i / 2.0f;
-                path.lineTo(this.f30365H - f6, rectF.top);
+                path.lineTo(this.f30368H - f6, rectF.top);
                 path.rLineTo(f6, -i3);
                 path.rLineTo(f6, i3);
                 path.lineTo(rectF.right - f2, rectF.top);
@@ -1138,7 +1138,7 @@ public class C9357x2 extends ViewGroup {
                 float f13 = i2;
                 path.moveTo(rectF.left + f13, rectF.bottom);
                 float f14 = i / 2.0f;
-                path.lineTo(this.f30365H - f14, rectF.bottom);
+                path.lineTo(this.f30368H - f14, rectF.bottom);
                 path.rLineTo(f14, i3);
                 path.rLineTo(f14, -i3);
                 path.lineTo(rectF.right - f13, rectF.bottom);
@@ -1167,19 +1167,19 @@ public class C9357x2 extends ViewGroup {
         }
 
         public final void m8876w() {
-            this.f30399z = false;
-            AbstractRunnableC5910b bVar = this.f30398y;
+            this.f30402z = false;
+            AbstractRunnableC5910b bVar = this.f30401y;
             if (bVar != null) {
-                bVar.m21857c();
-                this.f30398y = null;
+                bVar.m21858c();
+                this.f30401y = null;
             }
         }
 
         public final void m8875x() {
-            C10327b bVar = this.f30358A;
+            C10327b bVar = this.f30361A;
             if (bVar != null) {
                 bVar.m5417a();
-                this.f30358A = null;
+                this.f30361A = null;
             }
         }
 
@@ -1187,29 +1187,29 @@ public class C9357x2 extends ViewGroup {
             m8876w();
             m8873z();
             m8901X(false, false);
-            this.f30391r.mo4501a3();
-            C6240c cVar = this.f30392s;
+            this.f30394r.mo4501a3();
+            C6240c cVar = this.f30395s;
             if (cVar != null) {
-                cVar.mo20249Z();
+                cVar.mo20250Z();
             }
-            RunnableC6507m mVar = this.f30393t;
+            RunnableC6507m mVar = this.f30396t;
             if (mVar != null) {
-                mVar.mo20249Z();
+                mVar.mo20250Z();
             }
         }
 
         public final void m8873z() {
-            if (this.f30359B) {
-                this.f30359B = false;
-                this.f30374a.m8978n(this);
-                this.f30391r.m20994i();
-                C6240c cVar = this.f30392s;
+            if (this.f30362B) {
+                this.f30362B = false;
+                this.f30377a.m8978n(this);
+                this.f30394r.m20995i();
+                C6240c cVar = this.f30395s;
                 if (cVar != null) {
-                    cVar.mo20247b();
+                    cVar.mo20248b();
                 }
-                RunnableC6507m mVar = this.f30393t;
+                RunnableC6507m mVar = this.f30396t;
                 if (mVar != null) {
-                    mVar.mo20247b();
+                    mVar.mo20248b();
                 }
             }
         }
@@ -1224,27 +1224,27 @@ public class C9357x2 extends ViewGroup {
     public C9357x2(Context context) {
         super(context);
         Paint paint = new Paint(5);
-        this.f30320M = paint;
+        this.f30323M = paint;
         paint.setStyle(Paint.Style.FILL);
         setWillNotDraw(true);
     }
 
     public final void m8986f(C9370l lVar) {
-        for (int size = this.f30321N.size() - 1; size >= 0; size--) {
-            C9370l lVar2 = this.f30321N.get(size);
-            if (lVar2.f30398y != null) {
+        for (int size = this.f30324N.size() - 1; size >= 0; size--) {
+            C9370l lVar2 = this.f30324N.get(size);
+            if (lVar2.f30401y != null) {
                 lVar2.m8915J();
             }
         }
-        getLocationOnScreen(this.f30325b);
+        getLocationOnScreen(this.f30328b);
         if (getMeasuredWidth() > 0 && getMeasuredHeight() > 0) {
             lVar.m8908Q(getMeasuredWidth(), getMeasuredHeight());
         }
-        this.f30321N.add(lVar);
-        if (this.f30321N.size() == 1) {
+        this.f30324N.add(lVar);
+        if (this.f30324N.size() == 1) {
             setWillNotDraw(false);
             addOnAttachStateChangeListener(new View$OnAttachStateChangeListenerC9360c(lVar));
-            AbstractC9361d dVar = this.f30324a;
+            AbstractC9361d dVar = this.f30327a;
             if (dVar != null) {
                 dVar.mo8976a(this, true);
                 return;
@@ -1267,21 +1267,21 @@ public class C9357x2 extends ViewGroup {
     }
 
     public void m8982j(boolean z) {
-        for (int size = this.f30321N.size() - 1; size >= 0; size--) {
-            this.f30321N.get(size).m8920E(z);
+        for (int size = this.f30324N.size() - 1; size >= 0; size--) {
+            this.f30324N.get(size).m8920E(z);
         }
     }
 
     public AbstractC9367i m8981k(C10930q6 q6Var, CharSequence charSequence, int i) {
-        return new C9368j(q6Var, new TdApi.FormattedText(charSequence.toString(), C4779t2.m25392x5(charSequence, false)), i, null);
+        return new C9368j(q6Var, new TdApi.FormattedText(charSequence.toString(), C4779t2.m25393x5(charSequence, false)), i, null);
     }
 
     public boolean m8980l() {
-        for (int size = this.f30321N.size() - 1; size >= 0; size--) {
-            C9370l lVar = this.f30321N.get(size);
+        for (int size = this.f30324N.size() - 1; size >= 0; size--) {
+            C9370l lVar = this.f30324N.get(size);
             boolean Z = lVar.m8899Z();
             lVar.m8920E(true);
-            if (Z || C5063c.m24144b(lVar.f30389p, 32)) {
+            if (Z || C5063c.m24145b(lVar.f30392p, 32)) {
                 return true;
             }
         }
@@ -1296,9 +1296,9 @@ public class C9357x2 extends ViewGroup {
     }
 
     public final void m8978n(C9370l lVar) {
-        if (this.f30321N.remove(lVar) && this.f30321N.isEmpty()) {
+        if (this.f30324N.remove(lVar) && this.f30324N.isEmpty()) {
             setWillNotDraw(true);
-            AbstractC9361d dVar = this.f30324a;
+            AbstractC9361d dVar = this.f30327a;
             if (dVar != null) {
                 dVar.mo8976a(this, false);
             }
@@ -1312,7 +1312,7 @@ public class C9357x2 extends ViewGroup {
         if (measuredWidth > 0 && measuredHeight > 0) {
             loop0: while (true) {
                 z = false;
-                for (C9370l lVar : this.f30321N) {
+                for (C9370l lVar : this.f30324N) {
                     if (lVar.m8908Q(measuredWidth, measuredHeight) || z) {
                         z = true;
                     }
@@ -1327,12 +1327,12 @@ public class C9357x2 extends ViewGroup {
     @Override
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        getLocationOnScreen(this.f30325b);
+        getLocationOnScreen(this.f30328b);
     }
 
     @Override
     public void onDraw(Canvas canvas) {
-        for (C9370l lVar : this.f30321N) {
+        for (C9370l lVar : this.f30324N) {
             lVar.m8924A(canvas);
         }
     }
@@ -1353,24 +1353,24 @@ public class C9357x2 extends ViewGroup {
         int action = motionEvent.getAction();
         boolean z = false;
         if (action == 0) {
-            this.f30322O = null;
-            this.f30323P = false;
-            for (int size = this.f30321N.size() - 1; size >= 0; size--) {
-                C9370l lVar = this.f30321N.get(size);
-                if (this.f30322O == null && lVar.m8907R(this, motionEvent)) {
-                    this.f30322O = this.f30321N.get(size);
-                } else if (C5063c.m24144b(lVar.f30389p, 1) && lVar.m8914K(motionEvent.getX(), motionEvent.getY())) {
-                    this.f30323P = true;
-                } else if (!C5063c.m24144b(lVar.f30389p, 2)) {
-                    lVar.m8920E(lVar.f30399z);
+            this.f30325O = null;
+            this.f30326P = false;
+            for (int size = this.f30324N.size() - 1; size >= 0; size--) {
+                C9370l lVar = this.f30324N.get(size);
+                if (this.f30325O == null && lVar.m8907R(this, motionEvent)) {
+                    this.f30325O = this.f30324N.get(size);
+                } else if (C5063c.m24145b(lVar.f30392p, 1) && lVar.m8914K(motionEvent.getX(), motionEvent.getY())) {
+                    this.f30326P = true;
+                } else if (!C5063c.m24145b(lVar.f30392p, 2)) {
+                    lVar.m8920E(lVar.f30402z);
                 }
             }
-            return this.f30322O != null || this.f30323P;
+            return this.f30325O != null || this.f30326P;
         } else if (action != 3) {
-            C9370l lVar2 = this.f30322O;
-            return (lVar2 != null && lVar2.m8907R(this, motionEvent)) || this.f30323P;
+            C9370l lVar2 = this.f30325O;
+            return (lVar2 != null && lVar2.m8907R(this, motionEvent)) || this.f30326P;
         } else {
-            C9370l lVar3 = this.f30322O;
+            C9370l lVar3 = this.f30325O;
             if (lVar3 != null && lVar3.m8907R(this, motionEvent)) {
                 z = true;
             }
@@ -1380,28 +1380,28 @@ public class C9357x2 extends ViewGroup {
     }
 
     public void setAvailabilityListener(AbstractC9361d dVar) {
-        this.f30324a = dVar;
+        this.f30327a = dVar;
     }
 
     public static class C9365h implements Cloneable {
-        public AbstractC9363f f30332M;
-        public AbstractC9362e f30333N;
-        public AbstractC9364g f30334O;
-        public RunnableC5390g.AbstractC5393c f30335P;
-        public AbstractC9323v4<?> f30336Q;
-        public float f30337R;
-        public boolean f30338S;
-        public int f30339T;
-        public int f30340U;
-        public C6246h f30341V;
-        public C6246h f30342W;
-        public C6503j f30343X;
-        public float f30344Y;
-        public HandlerC10770jj.C10788q f30345Z;
-        public final C9357x2 f30346a;
-        public List<AbstractC5918j<C9370l>> f30347a0;
-        public View f30348b;
-        public AbstractC4345j f30349c;
+        public AbstractC9363f f30335M;
+        public AbstractC9362e f30336N;
+        public AbstractC9364g f30337O;
+        public RunnableC5390g.AbstractC5393c f30338P;
+        public AbstractC9323v4<?> f30339Q;
+        public float f30340R;
+        public boolean f30341S;
+        public int f30342T;
+        public int f30343U;
+        public C6246h f30344V;
+        public C6246h f30345W;
+        public C6503j f30346X;
+        public float f30347Y;
+        public HandlerC10770jj.C10788q f30348Z;
+        public final C9357x2 f30349a;
+        public List<AbstractC5918j<C9370l>> f30350a0;
+        public View f30351b;
+        public AbstractC4345j f30352c;
 
         public class C9366a implements AbstractC9362e {
             public C9366a() {
@@ -1419,7 +1419,7 @@ public class C9357x2 extends ViewGroup {
 
             @Override
             public int mo8940N0() {
-                return C5412m.m22768m(this);
+                return C5412m.m22769m(this);
             }
 
             @Override
@@ -1429,42 +1429,42 @@ public class C9357x2 extends ViewGroup {
 
             @Override
             public int mo7858Q() {
-                return C5406j.m22807d(this);
+                return C5406j.m22808d(this);
             }
 
             @Override
             public long mo7857X0(boolean z) {
-                return C5406j.m22808c(this, z);
+                return C5406j.m22809c(this, z);
             }
 
             @Override
             public int mo8938Z0() {
-                return C5412m.m22772i(this);
+                return C5412m.m22773i(this);
             }
 
             @Override
             public int mo7856b1() {
-                return C5412m.m22773h(this);
+                return C5412m.m22774h(this);
             }
 
             @Override
             public int mo7855c() {
-                return C5412m.m22775f(this);
+                return C5412m.m22776f(this);
             }
 
             @Override
             public int mo7854e(boolean z) {
-                return C5412m.m22779b(this, z);
+                return C5412m.m22780b(this, z);
             }
 
             @Override
             public int mo7853g(boolean z) {
-                return C5412m.m22770k(this, z);
+                return C5412m.m22771k(this, z);
             }
 
             @Override
             public AbstractC11531p mo8937j1() {
-                return C5412m.m22776e(this);
+                return C5412m.m22777e(this);
             }
 
             @Override
@@ -1479,12 +1479,12 @@ public class C9357x2 extends ViewGroup {
 
             @Override
             public int mo7852o0(boolean z) {
-                return C5412m.m22778c(this, z);
+                return C5412m.m22779c(this, z);
             }
 
             @Override
             public int mo7851p0(boolean z) {
-                return C5412m.m22780a(this, z);
+                return C5412m.m22781a(this, z);
             }
 
             @Override
@@ -1494,7 +1494,7 @@ public class C9357x2 extends ViewGroup {
 
             @Override
             public int mo7850r0(boolean z) {
-                return C5412m.m22771j(this, z);
+                return C5412m.m22772j(this, z);
             }
 
             @Override
@@ -1504,24 +1504,24 @@ public class C9357x2 extends ViewGroup {
 
             @Override
             public AbstractC11531p mo8932z() {
-                return C5412m.m22774g(this);
+                return C5412m.m22775g(this);
             }
         }
 
         public C9365h(C9357x2 x2Var) {
-            this.f30337R = 13.0f;
-            this.f30338S = true;
-            this.f30344Y = 320.0f;
-            this.f30346a = x2Var;
+            this.f30340R = 13.0f;
+            this.f30341S = true;
+            this.f30347Y = 320.0f;
+            this.f30349a = x2Var;
         }
 
         public C9370l m8974A(C5459x0 x0Var) {
-            return m8973B(new C9369k(this.f30346a, x0Var));
+            return m8973B(new C9369k(this.f30349a, x0Var));
         }
 
         public C9370l m8973B(AbstractC9367i iVar) {
-            C9370l lVar = new C9370l(this.f30348b, this.f30349c, this.f30332M, this.f30333N, this.f30334O, this.f30336Q, this.f30335P, this.f30337R, this.f30338S, this.f30340U, this.f30341V, this.f30342W, this.f30343X, this.f30344Y, this.f30339T, iVar);
-            List<AbstractC5918j<C9370l>> list = this.f30347a0;
+            C9370l lVar = new C9370l(this.f30351b, this.f30352c, this.f30335M, this.f30336N, this.f30337O, this.f30339Q, this.f30338P, this.f30340R, this.f30341S, this.f30343U, this.f30344V, this.f30345W, this.f30346X, this.f30347Y, this.f30342T, iVar);
+            List<AbstractC5918j<C9370l>> list = this.f30350a0;
             if (list != null) {
                 for (AbstractC5918j<C9370l> jVar : list) {
                     jVar.mo1330a(lVar);
@@ -1532,21 +1532,21 @@ public class C9357x2 extends ViewGroup {
         }
 
         public C9370l m8972C(C10930q6 q6Var, int i) {
-            return m8970E(q6Var, new TdApi.FormattedText(C4403w.m27869i1(i), null));
+            return m8970E(q6Var, new TdApi.FormattedText(C4403w.m27871i1(i), null));
         }
 
         public C9370l m8971D(C10930q6 q6Var, CharSequence charSequence) {
-            return m8970E(q6Var, new TdApi.FormattedText(charSequence.toString(), C4779t2.m25392x5(charSequence, false)));
+            return m8970E(q6Var, new TdApi.FormattedText(charSequence.toString(), C4779t2.m25393x5(charSequence, false)));
         }
 
         public C9370l m8970E(C10930q6 q6Var, TdApi.FormattedText formattedText) {
-            return m8973B(new C9368j(q6Var, formattedText, 0, this.f30345Z));
+            return m8973B(new C9368j(q6Var, formattedText, 0, this.f30348Z));
         }
 
         public void m8969F(AbstractC9323v4<?> v4Var, C10930q6 q6Var, int i, CharSequence charSequence) {
             boolean z = false;
-            if (this.f30348b == null && this.f30349c == null && this.f30332M == null) {
-                C1379j0.m37290z0(charSequence, 0);
+            if (this.f30351b == null && this.f30352c == null && this.f30335M == null) {
+                C1379j0.m37293z0(charSequence, 0);
                 return;
             }
             C9365h q = m8951q(i);
@@ -1557,29 +1557,29 @@ public class C9357x2 extends ViewGroup {
         }
 
         public C9365h m8968G(HandlerC10770jj.C10788q qVar) {
-            this.f30345Z = qVar;
+            this.f30348Z = qVar;
             return this;
         }
 
         public C9365h m8967H(float f, boolean z) {
-            this.f30337R = Math.max(13.0f, f);
-            this.f30338S = z;
+            this.f30340R = Math.max(13.0f, f);
+            this.f30341S = z;
             return this;
         }
 
         public C9365h m8966a(View view) {
-            this.f30348b = view;
+            this.f30351b = view;
             return this;
         }
 
         public C9365h m8965b(View view, AbstractC4345j jVar) {
-            this.f30348b = view;
-            this.f30349c = jVar;
+            this.f30351b = view;
+            this.f30352c = jVar;
             return this;
         }
 
         public C9365h m8964c(AbstractC4345j jVar) {
-            this.f30349c = jVar;
+            this.f30352c = jVar;
             return this;
         }
 
@@ -1588,26 +1588,26 @@ public class C9357x2 extends ViewGroup {
         }
 
         public C9365h m8962e(float f) {
-            return m8967H(C4868i.m24726c2().m24592t0() + f, C4868i.m24726c2().m24924A2());
+            return m8967H(C4868i.m24727c2().m24593t0() + f, C4868i.m24727c2().m24925A2());
         }
 
         public C9365h m8961f(RunnableC5390g.AbstractC5393c cVar) {
-            this.f30335P = cVar;
+            this.f30338P = cVar;
             return this;
         }
 
         public C9365h m8960g(AbstractC9362e eVar) {
-            this.f30333N = eVar;
+            this.f30336N = eVar;
             return this;
         }
 
         public AbstractC9362e m8959h() {
-            AbstractC9362e eVar = this.f30333N;
+            AbstractC9362e eVar = this.f30336N;
             return eVar != null ? eVar : new C9366a();
         }
 
         public C9365h m8958i(AbstractC9323v4<?> v4Var) {
-            this.f30336Q = v4Var;
+            this.f30339Q = v4Var;
             return this;
         }
 
@@ -1616,13 +1616,13 @@ public class C9357x2 extends ViewGroup {
         }
 
         public C9365h m8956k(int i, boolean z) {
-            this.f30339T = C5063c.m24138h(this.f30339T, i, z);
+            this.f30342T = C5063c.m24139h(this.f30342T, i, z);
             return this;
         }
 
         public C9365h m8955l(C6503j jVar, C6246h hVar) {
-            this.f30343X = jVar;
-            this.f30341V = hVar;
+            this.f30346X = jVar;
+            this.f30344V = hVar;
             return this;
         }
 
@@ -1631,28 +1631,28 @@ public class C9357x2 extends ViewGroup {
         }
 
         public boolean m8953o() {
-            return this.f30336Q != null;
+            return this.f30339Q != null;
         }
 
         public boolean m8952p() {
-            AbstractC4345j jVar = this.f30349c;
+            AbstractC4345j jVar = this.f30352c;
             if (jVar != null) {
-                View f = jVar.mo28226f();
-                return f != null && C1489y.m36760J(f);
+                View f = jVar.mo28228f();
+                return f != null && C1489y.m36763J(f);
             }
-            AbstractC9323v4<?> v4Var = this.f30336Q;
+            AbstractC9323v4<?> v4Var = this.f30339Q;
             if (v4Var != null) {
                 return v4Var.m9339Ta();
             }
-            View view = this.f30348b;
+            View view = this.f30351b;
             if (view != null) {
-                return C1489y.m36760J(view);
+                return C1489y.m36763J(view);
             }
             return false;
         }
 
         public C9365h m8951q(int i) {
-            this.f30340U = i;
+            this.f30343U = i;
             return this;
         }
 
@@ -1665,7 +1665,7 @@ public class C9357x2 extends ViewGroup {
         }
 
         public C9365h m8948u(AbstractC9363f fVar) {
-            this.f30332M = fVar;
+            this.f30335M = fVar;
             return this;
         }
 
@@ -1678,15 +1678,15 @@ public class C9357x2 extends ViewGroup {
         }
 
         public C9365h m8945x(AbstractC9364g gVar) {
-            this.f30334O = gVar;
+            this.f30337O = gVar;
             return this;
         }
 
         public C9365h m8944y(AbstractC5918j<C9370l> jVar) {
-            if (this.f30347a0 == null) {
-                this.f30347a0 = new ArrayList();
+            if (this.f30350a0 == null) {
+                this.f30350a0 = new ArrayList();
             }
-            this.f30347a0.add(jVar);
+            this.f30350a0.add(jVar);
             return this;
         }
 
@@ -1695,27 +1695,27 @@ public class C9357x2 extends ViewGroup {
         }
 
         public C9365h(C9365h hVar) {
-            this.f30337R = 13.0f;
-            this.f30338S = true;
-            this.f30344Y = 320.0f;
-            this.f30346a = hVar.f30346a;
-            this.f30348b = hVar.f30348b;
-            this.f30349c = hVar.f30349c;
-            this.f30332M = hVar.f30332M;
-            this.f30333N = hVar.f30333N;
-            this.f30334O = hVar.f30334O;
-            this.f30335P = hVar.f30335P;
-            this.f30336Q = hVar.f30336Q;
-            this.f30337R = hVar.f30337R;
-            this.f30338S = hVar.f30338S;
-            this.f30339T = hVar.f30339T;
-            this.f30340U = hVar.f30340U;
-            this.f30341V = hVar.f30341V;
-            this.f30342W = hVar.f30342W;
-            this.f30343X = hVar.f30343X;
-            this.f30344Y = hVar.f30344Y;
-            this.f30345Z = hVar.f30345Z;
-            this.f30347a0 = hVar.f30347a0 != null ? new ArrayList(hVar.f30347a0) : null;
+            this.f30340R = 13.0f;
+            this.f30341S = true;
+            this.f30347Y = 320.0f;
+            this.f30349a = hVar.f30349a;
+            this.f30351b = hVar.f30351b;
+            this.f30352c = hVar.f30352c;
+            this.f30335M = hVar.f30335M;
+            this.f30336N = hVar.f30336N;
+            this.f30337O = hVar.f30337O;
+            this.f30338P = hVar.f30338P;
+            this.f30339Q = hVar.f30339Q;
+            this.f30340R = hVar.f30340R;
+            this.f30341S = hVar.f30341S;
+            this.f30342T = hVar.f30342T;
+            this.f30343U = hVar.f30343U;
+            this.f30344V = hVar.f30344V;
+            this.f30345W = hVar.f30345W;
+            this.f30346X = hVar.f30346X;
+            this.f30347Y = hVar.f30347Y;
+            this.f30348Z = hVar.f30348Z;
+            this.f30350a0 = hVar.f30350a0 != null ? new ArrayList(hVar.f30350a0) : null;
         }
     }
 }

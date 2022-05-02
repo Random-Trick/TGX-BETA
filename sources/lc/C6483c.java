@@ -23,26 +23,26 @@ public class C6483c implements AbstractC5327a {
             this.f20179d = i;
         }
 
-        public String m20382a() {
+        public String m20383a() {
             return this.f20176a;
         }
 
-        public AbstractC5330c m20381b() {
+        public AbstractC5330c m20382b() {
             return this.f20177b;
         }
 
-        public String m20380c(C6491h hVar) {
+        public String m20381c(C6491h hVar) {
             StringBuffer stringBuffer = new StringBuffer();
-            stringBuffer.append(hVar.m20359d(m20382a()));
+            stringBuffer.append(hVar.m20360d(m20383a()));
             stringBuffer.append("(");
-            stringBuffer.append(((AbstractC6487f) m20381b()).m20368k(hVar));
+            stringBuffer.append(((AbstractC6487f) m20382b()).m20369k(hVar));
             stringBuffer.append(")");
             return stringBuffer.toString();
         }
 
         @Override
         public final String toString() {
-            return m20380c(C6491h.f20196k);
+            return m20381c(C6491h.f20196k);
         }
     }
 
@@ -54,7 +54,7 @@ public class C6483c implements AbstractC5327a {
     }
 
     @Override
-    public Object mo20383a() {
+    public Object mo20384a() {
         return this.f20173b;
     }
 

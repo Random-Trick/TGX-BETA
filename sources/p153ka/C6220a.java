@@ -17,16 +17,16 @@ public class C6220a {
         }
     }
 
-    public void mo20406a(Throwable th, Throwable th2) {
-        C8298k.m12934e(th, "cause");
-        C8298k.m12934e(th2, "exception");
+    public void mo20407a(Throwable th, Throwable th2) {
+        C8298k.m12933e(th, "cause");
+        C8298k.m12933e(th2, "exception");
         Method method = C6221a.f19642b;
         if (method != null) {
             method.invoke(th, th2);
         }
     }
 
-    public AbstractC9486c mo18953b() {
+    public AbstractC9486c mo18954b() {
         return new C9484b();
     }
 }

@@ -9,7 +9,7 @@ public class C5561B extends AbstractC5576E {
     }
 
     @Override
-    public AbstractC5759q2 mo22136E0(int i, AbstractC5759q2 q2Var) {
+    public AbstractC5759q2 mo22137E0(int i, AbstractC5759q2 q2Var) {
         switch (this.f18109u) {
             case 0:
                 return q2Var;

@@ -9,15 +9,15 @@ public class C5410l implements AbstractC5408k {
 
     @Override
     public int mo7858Q() {
-        return C5406j.m22807d(this);
+        return C5406j.m22808d(this);
     }
 
     @Override
     public long mo7857X0(boolean z) {
-        return C5406j.m22808c(this, z);
+        return C5406j.m22809c(this, z);
     }
 
-    public AbstractC5408k m22794a() {
+    public AbstractC5408k m22795a() {
         return this.f17792a;
     }
 

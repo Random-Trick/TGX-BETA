@@ -13,19 +13,19 @@ public class C6490g implements AbstractC5922b {
         this.f20194c = i;
     }
 
-    public String m20364a() {
+    public String m20365a() {
         return this.f20193b;
     }
 
-    public int m20363b() {
+    public int m20364b() {
         return this.f20194c;
     }
 
     public String toString() {
         StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append(m20364a());
+        stringBuffer.append(m20365a());
         stringBuffer.append(":");
-        stringBuffer.append(m20363b());
+        stringBuffer.append(m20364b());
         return stringBuffer.toString();
     }
 }

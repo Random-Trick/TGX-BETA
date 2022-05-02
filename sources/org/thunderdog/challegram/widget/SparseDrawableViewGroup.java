@@ -15,8 +15,8 @@ public abstract class SparseDrawableViewGroup extends ViewGroup implements Abstr
     }
 
     @Override
-    public Drawable mo14042X(int i, int i2) {
-        return C5141s.m23833a(this, i, i2);
+    public Drawable mo14041X(int i, int i2) {
+        return C5141s.m23834a(this, i, i2);
     }
 
     @Override

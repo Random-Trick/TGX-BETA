@@ -53,14 +53,14 @@ public class C5340e0 {
         }
 
         @Override
-        public void mo23170a(double d, long j) {
+        public void mo23171a(double d, long j) {
             synchronized (this.f17554a) {
                 if (!this.f17554a.f17566a.get() && !this.f17554a.f17567b.get() && d > 0.0d) {
                     long j2 = this.f17555b;
                     if (j2 == 0 || j <= j2 || !this.f17556c) {
-                        this.f17554a.m23173h(d, j);
+                        this.f17554a.m23174h(d, j);
                     } else if (!this.f17554a.f17567b.getAndSet(true)) {
-                        this.f17554a.m23175f();
+                        this.f17554a.m23176f();
                     }
                 }
             }
@@ -87,26 +87,26 @@ public class C5340e0 {
         }
 
         @Override
-        public void mo18988a(int i) {
+        public void mo18989a(int i) {
             if (i == 0) {
                 this.f17560c.run();
             } else if (i == 1) {
-                C5340e0.this.m23182t(this.f17561d, this.f17562e);
+                C5340e0.this.m23183t(this.f17561d, this.f17562e);
             }
         }
 
         @Override
-        public void mo18987b(double d) {
-            this.f17558a.mo23170a(d, this.f17559b.exists() ? this.f17559b.length() : 0L);
+        public void mo18988b(double d) {
+            this.f17558a.mo23171a(d, this.f17559b.exists() ? this.f17559b.length() : 0L);
         }
 
         @Override
-        public void mo18986c(Throwable th) {
+        public void mo18987c(Throwable th) {
             this.f17564g.mo1330a(th);
         }
 
         @Override
-        public void mo18985d() {
+        public void mo18986d() {
             this.f17563f.run();
         }
     }
@@ -131,28 +131,28 @@ public class C5340e0 {
             this.f17574i = j;
         }
 
-        public void m23175f() {
+        public void m23176f() {
             Future<Void> future = this.f17575j;
             if (future != null) {
                 future.cancel(true);
             }
         }
 
-        public double m23174g() {
+        public double m23175g() {
             return this.f17569d;
         }
 
-        public void m23173h(double d, long j) {
+        public void m23174h(double d, long j) {
             if (this.f17569d != d) {
                 this.f17569d = d;
-                m23172i(j, this.f17571f);
+                m23173i(j, this.f17571f);
             }
         }
 
-        public void m23172i(long j, long j2) {
+        public void m23173i(long j, long j2) {
             if (this.f17572g == j) {
                 long j3 = this.f17571f;
-                if (j2 >= j3 && j2 - j3 < EnumC6459p.f20156b.mo20395b(5.0d)) {
+                if (j2 >= j3 && j2 - j3 < EnumC6459p.f20156b.mo20396b(5.0d)) {
                     return;
                 }
             }
@@ -161,14 +161,14 @@ public class C5340e0 {
             this.f17573h.f17551a.m2270r4().m14783o(new TdApi.SetFileGenerationProgress(this.f17574i, (int) j, (int) j2), this.f17573h.f17551a.m2214uc());
         }
 
-        public void m23171j(long j) {
+        public void m23172j(long j) {
             this.f17570e = 0L;
-            m23172i(j, 0L);
+            m23173i(j, 0L);
         }
     }
 
     public interface AbstractC5344d {
-        void mo23170a(double d, long j);
+        void mo23171a(double d, long j);
     }
 
     public static class C5345e extends C4384m {
@@ -182,7 +182,7 @@ public class C5340e0 {
         @Override
         public void mo3052f(Message message) {
             if (message.what == 0) {
-                this.f17576M.m23181u((C5349g0) message.obj);
+                this.f17576M.m23182u((C5349g0) message.obj);
             }
         }
     }
@@ -191,7 +191,7 @@ public class C5340e0 {
         this.f17551a = q6Var;
     }
 
-    public static long m23190l(String str, boolean z) {
+    public static long m23191l(String str, boolean z) {
         try {
             return new RandomAccessFile(str, "r").length();
         } catch (IOException unused) {
@@ -209,29 +209,29 @@ public class C5340e0 {
         }
     }
 
-    public void m23187o(C5343c cVar, C5349g0 g0Var, String str) {
+    public void m23188o(C5343c cVar, C5349g0 g0Var, String str) {
         synchronized (cVar) {
             if (!cVar.f17566a.getAndSet(true)) {
-                this.f17551a.m2429h5().m23136K(g0Var);
+                this.f17551a.m2429h5().m23137K(g0Var);
                 this.f17553c.remove(str);
             }
         }
     }
 
-    public void m23186p(C5343c cVar, C5349g0 g0Var, String str) {
+    public void m23187p(C5343c cVar, C5349g0 g0Var, String str) {
         synchronized (cVar) {
             if (!cVar.f17566a.getAndSet(true)) {
                 if (cVar.f17568c.get() || !cVar.f17567b.get()) {
-                    this.f17551a.m2429h5().m23138I(g0Var, -1, "Video conversion has been cancelled");
+                    this.f17551a.m2429h5().m23139I(g0Var, -1, "Video conversion has been cancelled");
                     this.f17553c.remove(str);
                 } else {
-                    m23182t(g0Var, cVar);
+                    m23183t(g0Var, cVar);
                 }
             }
         }
     }
 
-    public void m23185q(C5343c cVar, String str) {
+    public void m23186q(C5343c cVar, String str) {
         synchronized (cVar) {
             cVar.f17568c.set(true);
             cVar.f17566a.set(true);
@@ -247,7 +247,7 @@ public class C5340e0 {
         }
     }
 
-    public void m23184r(C5343c cVar, String str, boolean z, C5349g0 g0Var, String str2, Throwable th) {
+    public void m23185r(C5343c cVar, String str, boolean z, C5349g0 g0Var, String str2, Throwable th) {
         synchronized (cVar) {
             if (!cVar.f17566a.getAndSet(true)) {
                 if (th != null) {
@@ -256,61 +256,61 @@ public class C5340e0 {
                     Log.m14719i("No need to transcode video: %s", str);
                 }
                 if (cVar.f17568c.get() || !z) {
-                    this.f17551a.m2429h5().m23138I(g0Var, -1, C4403w.m27869i1(R.string.SendVideoError));
+                    this.f17551a.m2429h5().m23139I(g0Var, -1, C4403w.m27871i1(R.string.SendVideoError));
                     this.f17553c.remove(str2);
                 } else {
-                    m23182t(g0Var, cVar);
+                    m23183t(g0Var, cVar);
                 }
             }
         }
     }
 
-    public void m23183s(java.lang.String r15, long r16, java.lang.String r18, id.C5340e0.C5343c r19, id.C5349g0 r20) {
-        throw new UnsupportedOperationException("Method not decompiled: id.C5340e0.m23183s(java.lang.String, long, java.lang.String, id.e0$c, id.g0):void");
+    public void m23184s(java.lang.String r15, long r16, java.lang.String r18, id.C5340e0.C5343c r19, id.C5349g0 r20) {
+        throw new UnsupportedOperationException("Method not decompiled: id.C5340e0.m23184s(java.lang.String, long, java.lang.String, id.e0$c, id.g0):void");
     }
 
-    public final void m23193i(final C5349g0 g0Var, final C5343c cVar) {
-        final String f = g0Var.m23225f();
-        final String c = g0Var.m23228c();
-        final boolean k = g0Var.m23168k();
-        C5341a aVar = new C5341a(cVar, m23190l(f, true), k);
+    public final void m23194i(final C5349g0 g0Var, final C5343c cVar) {
+        final String f = g0Var.m23226f();
+        final String c = g0Var.m23229c();
+        final boolean k = g0Var.m23169k();
+        C5341a aVar = new C5341a(cVar, m23191l(f, true), k);
         Runnable zVar = new Runnable() {
             @Override
             public final void run() {
-                C5340e0.this.m23187o(cVar, g0Var, c);
+                C5340e0.this.m23188o(cVar, g0Var, c);
             }
         };
         Runnable a0Var = new Runnable() {
             @Override
             public final void run() {
-                C5340e0.this.m23186p(cVar, g0Var, c);
+                C5340e0.this.m23187p(cVar, g0Var, c);
             }
         };
-        g0Var.m23222i(new Runnable() {
+        g0Var.m23223i(new Runnable() {
             @Override
             public final void run() {
-                C5340e0.this.m23185q(cVar, c);
+                C5340e0.this.m23186q(cVar, c);
             }
         });
         AbstractC5918j<Throwable> d0Var = new AbstractC5918j() {
             @Override
             public final void mo1330a(Object obj) {
-                C5340e0.this.m23184r(cVar, f, k, g0Var, c, (Throwable) obj);
+                C5340e0.this.m23185r(cVar, f, k, g0Var, c, (Throwable) obj);
             }
         };
-        if (!g0Var.m23167l() || !k) {
+        if (!g0Var.m23168l() || !k) {
             try {
-                m23192j(f, c, g0Var, cVar, aVar, zVar, a0Var, d0Var);
+                m23193j(f, c, g0Var, cVar, aVar, zVar, a0Var, d0Var);
             } catch (Throwable th) {
                 Log.m14723e(th);
                 d0Var.mo1330a(th);
             }
         } else {
-            m23182t(g0Var, cVar);
+            m23183t(g0Var, cVar);
         }
     }
 
-    public final void m23192j(String str, String str2, C5349g0 g0Var, C5343c cVar, AbstractC5344d dVar, Runnable runnable, Runnable runnable2, AbstractC5918j<Throwable> jVar) {
+    public final void m23193j(String str, String str2, C5349g0 g0Var, C5343c cVar, AbstractC5344d dVar, Runnable runnable, Runnable runnable2, AbstractC5918j<Throwable> jVar) {
         AbstractC1296b bVar;
         AbstractC2055f fVar;
         AbstractC2055f fVar2;
@@ -318,24 +318,24 @@ public class C5340e0 {
         C4868i.C4891v vVar;
         int i;
         if (str.startsWith("content://")) {
-            bVar = new C1303h(C1379j0.m37315n(), Uri.parse(str));
+            bVar = new C1303h(C1379j0.m37318n(), Uri.parse(str));
         } else {
             bVar = new C1301f(str);
             bVar.mo6290e();
         }
         C1302g gVar = bVar;
-        if (g0Var.m23156w()) {
-            long d = gVar.mo6291d() - g0Var.m23166m();
-            long o = g0Var.m23164o();
+        if (g0Var.m23157w()) {
+            long d = gVar.mo6291d() - g0Var.m23167m();
+            long o = g0Var.m23165o();
             if (d < 1000) {
                 d = 0;
             }
             gVar = new C1302g(gVar, o, d);
         }
-        if (g0Var.m23167l()) {
+        if (g0Var.m23168l()) {
             fVar = new C2053d();
         } else {
-            C4868i.C4889t p = g0Var.m23163p();
+            C4868i.C4889t p = g0Var.m23164p();
             if (p == null) {
                 p = new C4868i.C4889t();
             }
@@ -349,82 +349,82 @@ public class C5340e0 {
                 float f = K0 / i;
                 int i3 = (int) (i * f);
                 int i4 = i3 - (i3 % 2);
-                p = p.m24491a(new C4868i.C4891v(i4, ((int) (vVar.f16720b * f)) - (i4 % 2)));
+                p = p.m24492a(new C4868i.C4891v(i4, ((int) (vVar.f16720b * f)) - (i4 % 2)));
             }
             if (j == Long.MIN_VALUE && (n = gVar.mo6281n(EnumC7313d.VIDEO)) != null) {
-                C4868i.C4891v d2 = p.m24488d(n.getInteger("width"), n.getInteger("height"));
-                i2 = p.m24489c(n.getInteger("frame-rate"));
-                j = p.m24490b(d2, i2, p.f16718c);
+                C4868i.C4891v d2 = p.m24489d(n.getInteger("width"), n.getInteger("height"));
+                i2 = p.m24490c(n.getInteger("frame-rate"));
+                j = p.m24491b(d2, i2, p.f16718c);
             }
             C4868i.C4891v vVar2 = p.f16716a;
-            fVar = C2049c.m35757b(vVar2.f16720b, vVar2.f16719a).m35749c(i2).m35751a(j).m35750b();
+            fVar = C2049c.m35760b(vVar2.f16720b, vVar2.f16719a).m35752c(i2).m35754a(j).m35753b();
         }
-        int n2 = g0Var.m23165n();
+        int n2 = g0Var.m23166n();
         File file = new File(str2);
-        C6806c.C6808b f2 = C6803a.m18991b(str2).m18960a(gVar).m18955f(fVar);
-        if (g0Var.m23157v()) {
+        C6806c.C6808b f2 = C6803a.m18992b(str2).m18961a(gVar).m18956f(fVar);
+        if (g0Var.m23158v()) {
             fVar2 = new C2054e();
-        } else if (g0Var.m23167l() || C4868i.m24726c2().m24663k1(256L)) {
+        } else if (g0Var.m23168l() || C4868i.m24727c2().m24664k1(256L)) {
             fVar2 = new C2053d();
         } else {
-            fVar2 = new C2044a.C2046b().m35767e(44100).m35771a(62000L).m35769c(2).m35770b();
+            fVar2 = new C2044a.C2046b().m35770e(44100).m35774a(62000L).m35772c(2).m35773b();
         }
-        cVar.f17575j = f2.m18958c(fVar2).m18956e(n2).m18957d(new C5342b(dVar, file, runnable, g0Var, cVar, runnable2, jVar)).m18954g();
+        cVar.f17575j = f2.m18959c(fVar2).m18957e(n2).m18958d(new C5342b(dVar, file, runnable, g0Var, cVar, runnable2, jVar)).m18955g();
     }
 
-    public final boolean m23191k(String str, String str2, C5349g0 g0Var, AtomicBoolean atomicBoolean, AbstractC5920l lVar) {
+    public final boolean m23192k(String str, String str2, C5349g0 g0Var, AtomicBoolean atomicBoolean, AbstractC5920l lVar) {
         C5373y yVar = new C5373y(str);
-        if (g0Var.m23156w()) {
-            return yVar.m23058e(str2, g0Var.m23157v(), g0Var.m23165n(), g0Var.m23164o() / 1000000.0d, g0Var.m23166m() / 1000000.0d, lVar, atomicBoolean);
+        if (g0Var.m23157w()) {
+            return yVar.m23059e(str2, g0Var.m23158v(), g0Var.m23166n(), g0Var.m23165o() / 1000000.0d, g0Var.m23167m() / 1000000.0d, lVar, atomicBoolean);
         }
-        return yVar.m23057f(str2, g0Var.m23157v(), g0Var.m23165n(), lVar, atomicBoolean);
+        return yVar.m23058f(str2, g0Var.m23158v(), g0Var.m23166n(), lVar, atomicBoolean);
     }
 
-    public C5343c m23189m(String str) {
+    public C5343c m23190m(String str) {
         return this.f17553c.get(str);
     }
 
-    public C5345e m23188n() {
+    public C5345e m23189n() {
         return this.f17552b;
     }
 
-    public final void m23182t(final C5349g0 g0Var, final C5343c cVar) {
-        final long d = g0Var.m23227d();
-        final String f = g0Var.m23225f();
-        final String c = g0Var.m23228c();
+    public final void m23183t(final C5349g0 g0Var, final C5343c cVar) {
+        final long d = g0Var.m23228d();
+        final String f = g0Var.m23226f();
+        final String c = g0Var.m23229c();
         boolean z = false;
         cVar.f17566a.set(false);
-        if (g0Var.m23156w() || g0Var.m23157v() || g0Var.m23165n() != 0) {
-            cVar.m23171j(0L);
+        if (g0Var.m23157w() || g0Var.m23158v() || g0Var.m23166n() != 0) {
+            cVar.m23172j(0L);
             try {
-                z = m23191k(f, c, g0Var, cVar.f17568c, null);
+                z = m23192k(f, c, g0Var, cVar.f17568c, null);
             } catch (Throwable th) {
                 Log.m14712w(Log.TAG_VIDEO, "Cannot trim video", th, new Object[0]);
             }
             synchronized (cVar) {
                 if (!cVar.f17566a.getAndSet(true)) {
                     if (z) {
-                        this.f17551a.m2429h5().m23136K(g0Var);
+                        this.f17551a.m2429h5().m23137K(g0Var);
                     } else {
-                        this.f17551a.m2429h5().m23138I(g0Var, -1, C4403w.m27869i1(R.string.SendVideoError));
+                        this.f17551a.m2429h5().m23139I(g0Var, -1, C4403w.m27871i1(R.string.SendVideoError));
                     }
                     this.f17553c.remove(c);
                 }
             }
             return;
         }
-        cVar.m23171j((int) m23190l(f, true));
-        this.f17551a.m2429h5().m23124W().execute(new Runnable() {
+        cVar.m23172j((int) m23191l(f, true));
+        this.f17551a.m2429h5().m23125W().execute(new Runnable() {
             @Override
             public final void run() {
-                C5340e0.this.m23183s(f, d, c, cVar, g0Var);
+                C5340e0.this.m23184s(f, d, c, cVar, g0Var);
             }
         });
     }
 
-    public final void m23181u(C5349g0 g0Var) {
+    public final void m23182u(C5349g0 g0Var) {
         C5343c cVar = new C5343c(g0Var.f17516a);
-        this.f17553c.put(g0Var.m23228c(), cVar);
-        m23193i(g0Var, cVar);
+        this.f17553c.put(g0Var.m23229c(), cVar);
+        m23194i(g0Var, cVar);
     }
 }

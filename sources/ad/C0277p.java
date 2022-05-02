@@ -40,7 +40,7 @@ public class C0277p extends FrameLayoutFix implements RunnableC0266h.AbstractC02
     public C0281s f884d0;
     public C6246h f885e0;
     public C6257p f877T = new C6257p(this, 0);
-    public int f879V = C1357a0.m37541i(10.0f);
+    public int f879V = C1357a0.m37544i(10.0f);
 
     public class C0278a extends AnimatorListenerAdapter {
         public C0278a() {
@@ -50,7 +50,7 @@ public class C0277p extends FrameLayoutFix implements RunnableC0266h.AbstractC02
         public void onAnimationEnd(Animator animator) {
             C6257p pVar = C0277p.this.f877T;
             C0277p.this.f885e0 = null;
-            pVar.m20819G(null);
+            pVar.m20820G(null);
         }
     }
 
@@ -65,8 +65,8 @@ public class C0277p extends FrameLayoutFix implements RunnableC0266h.AbstractC02
         Paint paint2 = new Paint(5);
         this.f881a0 = paint2;
         paint2.setColor(-1);
-        this.f881a0.setTypeface(C1389o.m37258k());
-        this.f881a0.setTextSize(C1357a0.m37541i(15.0f));
+        this.f881a0.setTypeface(C1389o.m37261k());
+        this.f881a0.setTextSize(C1357a0.m37544i(15.0f));
         setClipChildren(false);
         setWillNotDraw(false);
     }
@@ -81,90 +81,90 @@ public class C0277p extends FrameLayoutFix implements RunnableC0266h.AbstractC02
         postInvalidate();
     }
 
-    public void m41926E1() {
+    public void m41929E1() {
         C6257p pVar = this.f877T;
         this.f885e0 = null;
-        pVar.m20819G(null);
+        pVar.m20820G(null);
         View view = this.f882b0;
         if (view != null) {
             view.setVisibility(0);
         }
     }
 
-    public boolean m41925F1() {
+    public boolean m41928F1() {
         return this.f883c0;
     }
 
-    public void m41924G1(String str) {
+    public void m41927G1(String str) {
         if (this.f872O == null) {
             this.f872O = new RunnableC0266h(str, this.f874Q, this);
         }
-        this.f873P = FragmentC0265g.m41965f(this.f872O);
+        this.f873P = FragmentC0265g.m41968f(this.f872O);
         ((AbstractView$OnTouchListenerC7889a) getContext()).getFragmentManager().beginTransaction().add(R.id.youtube_container, this.f873P).commit();
     }
 
-    public void m41923I1() {
+    public void m41926I1() {
         C6257p pVar = this.f877T;
         this.f885e0 = null;
-        pVar.m20819G(null);
+        pVar.m20820G(null);
     }
 
-    public void m41922J1() {
+    public void m41925J1() {
         FragmentC0265g gVar = this.f873P;
         if (gVar != null) {
-            gVar.m41968c();
+            gVar.m41971c();
             this.f873P = null;
         }
     }
 
-    public void m41921L1(int i) {
+    public void m41924L1(int i) {
         FragmentC0265g gVar = this.f873P;
-        if (gVar != null && gVar.m41967d() != null) {
-            this.f873P.m41967d().mo5938k(i);
+        if (gVar != null && gVar.m41970d() != null) {
+            this.f873P.m41970d().mo5938k(i);
         }
     }
 
-    public void m41920M1(int i, int i2) {
+    public void m41923M1(int i, int i2) {
         this.f870M = i;
         this.f871N = i2;
     }
 
-    public void m41919N1() {
+    public void m41922N1() {
         View view = this.f882b0;
         if (view != null) {
             view.setVisibility(4);
             C6257p pVar = this.f877T;
             C6246h hVar = this.f878U;
             this.f885e0 = hVar;
-            pVar.m20819G(hVar);
+            pVar.m20820G(hVar);
         }
     }
 
     @Override
-    public void mo41918Q0() {
+    public void mo41921Q0() {
         this.f883c0 = true;
         View view = this.f882b0;
         if (view != null) {
             if (C0281s.f891m0) {
-                C1379j0.m37324i0(view);
+                C1379j0.m37327i0(view);
             }
-            C0264f.m41969f(this.f882b0);
+            C0264f.m41972f(this.f882b0);
             this.f874Q.setAlpha(0.0f);
             this.f882b0.setAlpha(0.0f);
             C0274o oVar = this.f874Q;
             DecelerateInterpolator decelerateInterpolator = C2057b.f7280b;
-            C1399s0.m37174k(oVar, 1.0f, 200L, decelerateInterpolator, null);
-            C1399s0.m37174k(this.f882b0, 1.0f, 200L, decelerateInterpolator, new C0278a());
+            C1399s0.m37177k(oVar, 1.0f, 200L, decelerateInterpolator, null);
+            C1399s0.m37177k(this.f882b0, 1.0f, 200L, decelerateInterpolator, new C0278a());
             return;
         }
         C6257p pVar = this.f877T;
         this.f885e0 = null;
-        pVar.m20819G(null);
+        pVar.m20820G(null);
     }
 
     @Override
-    public void mo41917V() {
-        this.f884d0.mo41912G1(true);
+    public void mo41920V() {
+        this.f884d0.mo41915G1(true);
     }
 
     @Override
@@ -186,19 +186,19 @@ public class C0277p extends FrameLayoutFix implements RunnableC0266h.AbstractC02
         if (gVar == null) {
             return null;
         }
-        return gVar.m41967d();
+        return gVar.m41970d();
     }
 
     @Override
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        this.f877T.mo20245f();
+        this.f877T.mo20246f();
     }
 
     @Override
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        this.f877T.mo20247b();
+        this.f877T.mo20248b();
     }
 
     @Override
@@ -206,7 +206,7 @@ public class C0277p extends FrameLayoutFix implements RunnableC0266h.AbstractC02
         FragmentC0265g gVar;
         View view;
         C0274o oVar;
-        if (this.f885e0 != null || (gVar = this.f873P) == null || gVar.m41966e() || !(((view = this.f882b0) == null || view.getAlpha() == 1.0f) && ((oVar = this.f874Q) == null || oVar.getAlpha() == 1.0f))) {
+        if (this.f885e0 != null || (gVar = this.f873P) == null || gVar.m41969e() || !(((view = this.f882b0) == null || view.getAlpha() == 1.0f) && ((oVar = this.f874Q) == null || oVar.getAlpha() == 1.0f))) {
             canvas.drawRect(0.0f, 0.0f, this.f870M, this.f871N, this.f880W);
             this.f877T.draw(canvas);
         }
@@ -226,14 +226,14 @@ public class C0277p extends FrameLayoutFix implements RunnableC0266h.AbstractC02
     @Override
     public void onMeasure(int i, int i2) {
         super.onMeasure(View.MeasureSpec.makeMeasureSpec(this.f870M, Log.TAG_TDLIB_OPTIONS), View.MeasureSpec.makeMeasureSpec(this.f871N, Log.TAG_TDLIB_OPTIONS));
-        this.f877T.mo20256K0(0, 0, this.f870M, this.f871N);
+        this.f877T.mo20257K0(0, 0, this.f870M, this.f871N);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent motionEvent) {
         super.onTouchEvent(motionEvent);
         C0274o oVar = this.f874Q;
-        return oVar != null && oVar.m41929z(motionEvent);
+        return oVar != null && oVar.m41932z(motionEvent);
     }
 
     public void setControls(C0274o oVar) {
@@ -248,11 +248,11 @@ public class C0277p extends FrameLayoutFix implements RunnableC0266h.AbstractC02
         this.f878U = hVar;
         C6257p pVar = this.f877T;
         this.f885e0 = hVar;
-        pVar.m20819G(hVar);
+        pVar.m20820G(hVar);
     }
 
     @Override
-    public void mo41916w0(String str) {
+    public void mo41919w0(String str) {
         setError(str);
     }
 }

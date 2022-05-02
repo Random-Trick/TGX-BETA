@@ -11,11 +11,11 @@ public class TGShareBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         String dataString = intent.getDataString();
-        if (!C5070i.m24061i(dataString)) {
+        if (!C5070i.m24062i(dataString)) {
             Intent intent2 = new Intent("android.intent.action.SEND");
             intent2.setType("text/plain");
             intent2.putExtra("android.intent.extra.TEXT", dataString);
-            Intent createChooser = Intent.createChooser(intent2, C4403w.m27869i1(R.string.ShareLink));
+            Intent createChooser = Intent.createChooser(intent2, C4403w.m27871i1(R.string.ShareLink));
             createChooser.setFlags(268435456);
             context.startActivity(createChooser);
         }

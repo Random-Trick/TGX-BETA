@@ -6,7 +6,7 @@ import android.view.View;
 import java.lang.reflect.Method;
 
 public final class C2065g {
-    public static void m35721a(View view) {
+    public static void m35724a(View view) {
         try {
             Method declaredMethod = view.getClass().getDeclaredMethod("resetTouch", new Class[0]);
             declaredMethod.setAccessible(true);
@@ -15,7 +15,7 @@ public final class C2065g {
         }
     }
 
-    public static void m35720b(View view, boolean z, boolean z2) {
+    public static void m35723b(View view, boolean z, boolean z2) {
         if (view != null) {
             int i = 0;
             int i2 = z ? 0 : 3;
@@ -26,13 +26,13 @@ public final class C2065g {
         }
     }
 
-    public static void m35719c(View view) {
+    public static void m35722c(View view) {
         if (view != null) {
             view.playSoundEffect(0);
         }
     }
 
-    public static void m35718d(View view, Drawable drawable) {
+    public static void m35721d(View view, Drawable drawable) {
         if (view == null) {
             return;
         }

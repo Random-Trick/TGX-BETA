@@ -27,7 +27,7 @@ public class C9907d extends RecyclerView.AbstractC0886d0 {
             aVar.setPreviewActionListProvider(cVar);
             aVar.setLongPressInterceptor(o4Var);
             if (o4Var != null) {
-                aVar.setAnimationsDisabled(o4Var.m33306ri());
+                aVar.setAnimationsDisabled(o4Var.m33309ri());
                 aVar.setOnClickListener(o4Var);
                 aVar.setOnLongClickListener(o4Var);
             } else {
@@ -48,8 +48,8 @@ public class C9907d extends RecyclerView.AbstractC0886d0 {
         } else if (i == 2) {
             C6847b2 b2Var = new C6847b2(context);
             b2Var.setTextSize(1, 15.0f);
-            b2Var.setTypeface(C1389o.m37258k());
-            b2Var.setPadding(C1357a0.m37541i(16.0f), C1357a0.m37541i(16.0f), C1357a0.m37541i(16.0f), C1357a0.m37541i(16.0f));
+            b2Var.setTypeface(C1389o.m37261k());
+            b2Var.setPadding(C1357a0.m37544i(16.0f), C1357a0.m37544i(16.0f), C1357a0.m37544i(16.0f), C1357a0.m37544i(16.0f));
             b2Var.setGravity(17);
             b2Var.setTextColor(C11524j.m213U0());
             if (v4Var != null) {
@@ -69,7 +69,7 @@ public class C9907d extends RecyclerView.AbstractC0886d0 {
     }
 
     public void m6572Q(int i) {
-        ((C7030t1) this.f3479a).m18059D1(C4403w.m27869i1(i));
+        ((C7030t1) this.f3479a).m18059D1(C4403w.m27871i1(i));
     }
 
     public void m6571R(CharSequence charSequence) {

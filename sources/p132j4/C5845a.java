@@ -13,12 +13,12 @@ import p343y6.C10428d;
 
 public final class C5845a extends AbstractC4270h {
     public static final Pattern f18709c = Pattern.compile("(.+?)='(.*?)';", 32);
-    public final CharsetDecoder f18710a = C10428d.f33498c.newDecoder();
-    public final CharsetDecoder f18711b = C10428d.f33497b.newDecoder();
+    public final CharsetDecoder f18710a = C10428d.f33501c.newDecoder();
+    public final CharsetDecoder f18711b = C10428d.f33500b.newDecoder();
 
     @Override
-    public C4260a mo19175b(C4267e eVar, ByteBuffer byteBuffer) {
-        String c = m21943c(byteBuffer);
+    public C4260a mo19176b(C4267e eVar, ByteBuffer byteBuffer) {
+        String c = m21944c(byteBuffer);
         byte[] bArr = new byte[byteBuffer.limit()];
         byteBuffer.get(bArr);
         String str = null;
@@ -43,7 +43,7 @@ public final class C5845a extends AbstractC4270h {
         return new C4260a(new C5848c(bArr, str, str2));
     }
 
-    public final String m21943c(ByteBuffer byteBuffer) {
+    public final String m21944c(ByteBuffer byteBuffer) {
         try {
             return this.f18710a.decode(byteBuffer).toString();
         } catch (CharacterCodingException unused) {

@@ -33,41 +33,41 @@ public class C3976f implements AbstractC3989k {
             }
 
             @Override
-            public boolean mo29421a(SSLSocket sSLSocket) {
-                C8298k.m12934e(sSLSocket, "sslSocket");
+            public boolean mo29423a(SSLSocket sSLSocket) {
+                C8298k.m12933e(sSLSocket, "sslSocket");
                 String name = sSLSocket.getClass().getName();
-                C8298k.m12935d(name, "sslSocket.javaClass.name");
+                C8298k.m12934d(name, "sslSocket.javaClass.name");
                 return C11451n.m621x(name, this.f13355a + '.', false, 2, null);
             }
 
             @Override
-            public AbstractC3989k mo29420b(SSLSocket sSLSocket) {
-                C8298k.m12934e(sSLSocket, "sslSocket");
-                return C3976f.f13349g.m29432b(sSLSocket.getClass());
+            public AbstractC3989k mo29422b(SSLSocket sSLSocket) {
+                C8298k.m12933e(sSLSocket, "sslSocket");
+                return C3976f.f13349g.m29434b(sSLSocket.getClass());
             }
         }
 
         public C3977a() {
         }
 
-        public final C3976f m29432b(Class<? super SSLSocket> cls) {
+        public final C3976f m29434b(Class<? super SSLSocket> cls) {
             Class<? super SSLSocket> cls2 = cls;
-            while (cls2 != null && (!C8298k.m12937b(cls2.getSimpleName(), "OpenSSLSocketImpl"))) {
+            while (cls2 != null && (!C8298k.m12936b(cls2.getSimpleName(), "OpenSSLSocketImpl"))) {
                 cls2 = cls2.getSuperclass();
                 if (cls2 == null) {
                     throw new AssertionError("No OpenSSLSocketImpl superclass of socket of type " + cls);
                 }
             }
-            C8298k.m12936c(cls2);
+            C8298k.m12935c(cls2);
             return new C3976f(cls2);
         }
 
-        public final C3987j.AbstractC3988a m29431c(String str) {
-            C8298k.m12934e(str, "packageName");
+        public final C3987j.AbstractC3988a m29433c(String str) {
+            C8298k.m12933e(str, "packageName");
             return new C3978a(str);
         }
 
-        public final C3987j.AbstractC3988a m29430d() {
+        public final C3987j.AbstractC3988a m29432d() {
             return C3976f.f13348f;
         }
 
@@ -79,14 +79,14 @@ public class C3976f implements AbstractC3989k {
     static {
         C3977a aVar = new C3977a(null);
         f13349g = aVar;
-        f13348f = aVar.m29431c("com.google.android.gms.org.conscrypt");
+        f13348f = aVar.m29433c("com.google.android.gms.org.conscrypt");
     }
 
     public C3976f(Class<? super SSLSocket> cls) {
-        C8298k.m12934e(cls, "sslSocketClass");
+        C8298k.m12933e(cls, "sslSocketClass");
         this.f13354e = cls;
         Method declaredMethod = cls.getDeclaredMethod("setUseSessionTickets", Boolean.TYPE);
-        C8298k.m12935d(declaredMethod, "sslSocketClass.getDeclar…:class.javaPrimitiveType)");
+        C8298k.m12934d(declaredMethod, "sslSocketClass.getDeclar…:class.javaPrimitiveType)");
         this.f13350a = declaredMethod;
         this.f13351b = cls.getMethod("setHostname", String.class);
         this.f13352c = cls.getMethod("getAlpnSelectedProtocol", new Class[0]);
@@ -94,20 +94,20 @@ public class C3976f implements AbstractC3989k {
     }
 
     @Override
-    public boolean mo29419a(SSLSocket sSLSocket) {
-        C8298k.m12934e(sSLSocket, "sslSocket");
+    public boolean mo29421a(SSLSocket sSLSocket) {
+        C8298k.m12933e(sSLSocket, "sslSocket");
         return this.f13354e.isInstance(sSLSocket);
     }
 
     @Override
-    public boolean mo29418b() {
-        return C2068b.f7298g.m35712b();
+    public boolean mo29420b() {
+        return C2068b.f7298g.m35715b();
     }
 
     @Override
-    public String mo29417c(SSLSocket sSLSocket) {
-        C8298k.m12934e(sSLSocket, "sslSocket");
-        if (!mo29419a(sSLSocket)) {
+    public String mo29419c(SSLSocket sSLSocket) {
+        C8298k.m12933e(sSLSocket, "sslSocket");
+        if (!mo29421a(sSLSocket)) {
             return null;
         }
         try {
@@ -116,12 +116,12 @@ public class C3976f implements AbstractC3989k {
                 return null;
             }
             Charset charset = StandardCharsets.UTF_8;
-            C8298k.m12935d(charset, "StandardCharsets.UTF_8");
+            C8298k.m12934d(charset, "StandardCharsets.UTF_8");
             return new String(bArr, charset);
         } catch (IllegalAccessException e) {
             throw new AssertionError(e);
         } catch (NullPointerException e2) {
-            if (C8298k.m12937b(e2.getMessage(), "ssl == null")) {
+            if (C8298k.m12936b(e2.getMessage(), "ssl == null")) {
                 return null;
             }
             throw e2;
@@ -131,16 +131,16 @@ public class C3976f implements AbstractC3989k {
     }
 
     @Override
-    public void mo29416d(SSLSocket sSLSocket, String str, List<? extends EnumC9064a0> list) {
-        C8298k.m12934e(sSLSocket, "sslSocket");
-        C8298k.m12934e(list, "protocols");
-        if (mo29419a(sSLSocket)) {
+    public void mo29418d(SSLSocket sSLSocket, String str, List<? extends EnumC9064a0> list) {
+        C8298k.m12933e(sSLSocket, "sslSocket");
+        C8298k.m12933e(list, "protocols");
+        if (mo29421a(sSLSocket)) {
             try {
                 this.f13350a.invoke(sSLSocket, Boolean.TRUE);
                 if (str != null) {
                     this.f13351b.invoke(sSLSocket, str);
                 }
-                this.f13353d.invoke(sSLSocket, C2083h.f7326c.m35678c(list));
+                this.f13353d.invoke(sSLSocket, C2083h.f7326c.m35681c(list));
             } catch (IllegalAccessException e) {
                 throw new AssertionError(e);
             } catch (InvocationTargetException e2) {

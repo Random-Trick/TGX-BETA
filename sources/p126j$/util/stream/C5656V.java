@@ -11,11 +11,11 @@ final class C5656V extends AbstractC5668Y implements AbstractC5749o2 {
     }
 
     @Override
-    public void mo22134d(int i) {
-        this.f18251b.mo22144d(i);
+    public void mo22135d(int i) {
+        this.f18251b.mo22145d(i);
     }
 
-    public void mo22128k(Integer num) {
-        AbstractC5572D0.m22417k(this, num);
+    public void mo22129k(Integer num) {
+        AbstractC5572D0.m22418k(this, num);
     }
 }

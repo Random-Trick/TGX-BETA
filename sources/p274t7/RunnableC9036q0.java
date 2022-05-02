@@ -14,54 +14,54 @@ import com.google.firebase.messaging.C3524a;
 import java.io.IOException;
 
 public class RunnableC9036q0 implements Runnable {
-    public static final Object f28995O = new Object();
-    public static Boolean f28996P;
-    public static Boolean f28997Q;
-    public final C9034p0 f28998M;
-    public final long f28999N;
-    public final Context f29000a;
-    public final C9010e0 f29001b;
-    public final PowerManager.WakeLock f29002c;
+    public static final Object f28998O = new Object();
+    public static Boolean f28999P;
+    public static Boolean f29000Q;
+    public final C9034p0 f29001M;
+    public final long f29002N;
+    public final Context f29003a;
+    public final C9010e0 f29004b;
+    public final PowerManager.WakeLock f29005c;
 
     public class C9037a extends BroadcastReceiver {
-        public RunnableC9036q0 f29003a;
+        public RunnableC9036q0 f29006a;
 
         public C9037a(RunnableC9036q0 q0Var) {
-            this.f29003a = q0Var;
+            this.f29006a = q0Var;
         }
 
-        public void m10618a() {
-            if (RunnableC9036q0.m10619j()) {
+        public void m10617a() {
+            if (RunnableC9036q0.m10618j()) {
                 Log.d("FirebaseMessaging", "Connectivity change received registered");
             }
-            RunnableC9036q0.this.f29000a.registerReceiver(this, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
+            RunnableC9036q0.this.f29003a.registerReceiver(this, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
         }
 
         @Override
         public synchronized void onReceive(Context context, Intent intent) {
-            RunnableC9036q0 q0Var = this.f29003a;
+            RunnableC9036q0 q0Var = this.f29006a;
             if (q0Var != null) {
-                if (q0Var.m10620i()) {
-                    if (RunnableC9036q0.m10619j()) {
+                if (q0Var.m10619i()) {
+                    if (RunnableC9036q0.m10618j()) {
                         Log.d("FirebaseMessaging", "Connectivity changed. Starting background sync.");
                     }
-                    this.f29003a.f28998M.m10634k(this.f29003a, 0L);
+                    this.f29006a.f29001M.m10633k(this.f29006a, 0L);
                     context.unregisterReceiver(this);
-                    this.f29003a = null;
+                    this.f29006a = null;
                 }
             }
         }
     }
 
     public RunnableC9036q0(C9034p0 p0Var, Context context, C9010e0 e0Var, long j) {
-        this.f28998M = p0Var;
-        this.f29000a = context;
-        this.f28999N = j;
-        this.f29001b = e0Var;
-        this.f29002c = ((PowerManager) context.getSystemService("power")).newWakeLock(1, "wake:com.google.firebase.messaging");
+        this.f29001M = p0Var;
+        this.f29003a = context;
+        this.f29002N = j;
+        this.f29004b = e0Var;
+        this.f29005c = ((PowerManager) context.getSystemService("power")).newWakeLock(1, "wake:com.google.firebase.messaging");
     }
 
-    public static String m10624e(String str) {
+    public static String m10623e(String str) {
         StringBuilder sb2 = new StringBuilder(str.length() + 142);
         sb2.append("Missing Permission: ");
         sb2.append(str);
@@ -69,24 +69,24 @@ public class RunnableC9036q0 implements Runnable {
         return sb2.toString();
     }
 
-    public static boolean m10623f(Context context) {
+    public static boolean m10622f(Context context) {
         boolean z;
         boolean booleanValue;
-        synchronized (f28995O) {
-            Boolean bool = f28997Q;
+        synchronized (f28998O) {
+            Boolean bool = f29000Q;
             if (bool == null) {
-                z = m10622g(context, "android.permission.ACCESS_NETWORK_STATE", bool);
+                z = m10621g(context, "android.permission.ACCESS_NETWORK_STATE", bool);
             } else {
                 z = bool.booleanValue();
             }
             Boolean valueOf = Boolean.valueOf(z);
-            f28997Q = valueOf;
+            f29000Q = valueOf;
             booleanValue = valueOf.booleanValue();
         }
         return booleanValue;
     }
 
-    public static boolean m10622g(Context context, String str, Boolean bool) {
+    public static boolean m10621g(Context context, String str, Boolean bool) {
         if (bool != null) {
             return bool.booleanValue();
         }
@@ -94,34 +94,34 @@ public class RunnableC9036q0 implements Runnable {
         if (z || !Log.isLoggable("FirebaseMessaging", 3)) {
             return z;
         }
-        Log.d("FirebaseMessaging", m10624e(str));
+        Log.d("FirebaseMessaging", m10623e(str));
         return false;
     }
 
-    public static boolean m10621h(Context context) {
+    public static boolean m10620h(Context context) {
         boolean z;
         boolean booleanValue;
-        synchronized (f28995O) {
-            Boolean bool = f28996P;
+        synchronized (f28998O) {
+            Boolean bool = f28999P;
             if (bool == null) {
-                z = m10622g(context, "android.permission.WAKE_LOCK", bool);
+                z = m10621g(context, "android.permission.WAKE_LOCK", bool);
             } else {
                 z = bool.booleanValue();
             }
             Boolean valueOf = Boolean.valueOf(z);
-            f28996P = valueOf;
+            f28999P = valueOf;
             booleanValue = valueOf.booleanValue();
         }
         return booleanValue;
     }
 
-    public static boolean m10619j() {
+    public static boolean m10618j() {
         return Log.isLoggable("FirebaseMessaging", 3) || (Build.VERSION.SDK_INT == 23 && Log.isLoggable("FirebaseMessaging", 3));
     }
 
-    public final synchronized boolean m10620i() {
+    public final synchronized boolean m10619i() {
         boolean z;
-        ConnectivityManager connectivityManager = (ConnectivityManager) this.f29000a.getSystemService("connectivity");
+        ConnectivityManager connectivityManager = (ConnectivityManager) this.f29003a.getSystemService("connectivity");
         NetworkInfo activeNetworkInfo = connectivityManager != null ? connectivityManager.getActiveNetworkInfo() : null;
         if (activeNetworkInfo != null) {
             if (activeNetworkInfo.isConnected()) {
@@ -135,39 +135,39 @@ public class RunnableC9036q0 implements Runnable {
     @Override
     @SuppressLint({"Wakelock"})
     public void run() {
-        if (m10621h(this.f29000a)) {
-            this.f29002c.acquire(C3524a.f11771a);
+        if (m10620h(this.f29003a)) {
+            this.f29005c.acquire(C3524a.f11771a);
         }
         try {
             try {
-                this.f28998M.m10633l(true);
-                if (!this.f29001b.m10705g()) {
-                    this.f28998M.m10633l(false);
-                    if (m10621h(this.f29000a)) {
+                this.f29001M.m10632l(true);
+                if (!this.f29004b.m10704g()) {
+                    this.f29001M.m10632l(false);
+                    if (m10620h(this.f29003a)) {
                         try {
-                            this.f29002c.release();
+                            this.f29005c.release();
                         } catch (RuntimeException unused) {
                             Log.i("FirebaseMessaging", "TopicsSyncTask's wakelock was already released due to timeout.");
                         }
                     }
-                } else if (!m10623f(this.f29000a) || m10620i()) {
-                    if (this.f28998M.m10630o()) {
-                        this.f28998M.m10633l(false);
+                } else if (!m10622f(this.f29003a) || m10619i()) {
+                    if (this.f29001M.m10629o()) {
+                        this.f29001M.m10632l(false);
                     } else {
-                        this.f28998M.m10629p(this.f28999N);
+                        this.f29001M.m10628p(this.f29002N);
                     }
-                    if (m10621h(this.f29000a)) {
+                    if (m10620h(this.f29003a)) {
                         try {
-                            this.f29002c.release();
+                            this.f29005c.release();
                         } catch (RuntimeException unused2) {
                             Log.i("FirebaseMessaging", "TopicsSyncTask's wakelock was already released due to timeout.");
                         }
                     }
                 } else {
-                    new C9037a(this).m10618a();
-                    if (m10621h(this.f29000a)) {
+                    new C9037a(this).m10617a();
+                    if (m10620h(this.f29003a)) {
                         try {
-                            this.f29002c.release();
+                            this.f29005c.release();
                         } catch (RuntimeException unused3) {
                             Log.i("FirebaseMessaging", "TopicsSyncTask's wakelock was already released due to timeout.");
                         }
@@ -176,19 +176,19 @@ public class RunnableC9036q0 implements Runnable {
             } catch (IOException e) {
                 String valueOf = String.valueOf(e.getMessage());
                 Log.e("FirebaseMessaging", valueOf.length() != 0 ? "Failed to sync topics. Won't retry sync. ".concat(valueOf) : new String("Failed to sync topics. Won't retry sync. "));
-                this.f28998M.m10633l(false);
-                if (m10621h(this.f29000a)) {
+                this.f29001M.m10632l(false);
+                if (m10620h(this.f29003a)) {
                     try {
-                        this.f29002c.release();
+                        this.f29005c.release();
                     } catch (RuntimeException unused4) {
                         Log.i("FirebaseMessaging", "TopicsSyncTask's wakelock was already released due to timeout.");
                     }
                 }
             }
         } catch (Throwable th) {
-            if (m10621h(this.f29000a)) {
+            if (m10620h(this.f29003a)) {
                 try {
-                    this.f29002c.release();
+                    this.f29005c.release();
                 } catch (RuntimeException unused5) {
                     Log.i("FirebaseMessaging", "TopicsSyncTask's wakelock was already released due to timeout.");
                 }

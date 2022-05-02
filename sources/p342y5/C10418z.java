@@ -3,7 +3,7 @@ package p342y5;
 import java.io.PrintStream;
 
 public final class C10418z {
-    public static final AbstractC10412t f33484a;
+    public static final AbstractC10412t f33487a;
 
     static {
         AbstractC10412t tVar;
@@ -31,13 +31,13 @@ public final class C10418z {
             th.printStackTrace(System.err);
             tVar = new C10416x();
         }
-        f33484a = tVar;
+        f33487a = tVar;
         if (num != null) {
             num.intValue();
         }
     }
 
     public static void m5154a(Throwable th, Throwable th2) {
-        f33484a.mo5155a(th, th2);
+        f33487a.mo5155a(th, th2);
     }
 }

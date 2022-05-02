@@ -18,7 +18,7 @@ public class C4861c implements C9951c.AbstractC9955d {
     public static volatile C4861c f16593c;
     public ArrayList<String> f16594a;
 
-    public static C4861c m24982c() {
+    public static C4861c m24983c() {
         if (f16593c == null) {
             synchronized (C4861c.class) {
                 if (f16593c == null) {
@@ -29,11 +29,11 @@ public class C4861c implements C9951c.AbstractC9955d {
         return f16593c;
     }
 
-    public static synchronized boolean m24981d() {
+    public static synchronized boolean m24982d() {
         boolean z;
         synchronized (C4861c.class) {
             if (!f16592b) {
-                C9956d i = C9951c.m6435a().m6422i(m24982c());
+                C9956d i = C9951c.m6435a().m6422i(m24983c());
                 ArrayList<String> arrayList = new ArrayList(3);
                 arrayList.add("c++_shared");
                 arrayList.add("tdjni");
@@ -41,14 +41,14 @@ public class C4861c implements C9951c.AbstractC9955d {
                 arrayList.add("challegram.23");
                 for (String str : arrayList) {
                     long uptimeMillis = SystemClock.uptimeMillis();
-                    i.m6425f(C1379j0.m37315n(), str, "1.304");
+                    i.m6425f(C1379j0.m37318n(), str, "1.304");
                     Log.v(org.thunderdog.challegram.Log.LOG_TAG, "Loaded " + str + " in " + (SystemClock.uptimeMillis() - uptimeMillis) + "ms");
                 }
                 if (Build.VERSION.SDK_INT >= 16) {
-                    OpusLibrary.m30515c(1, new String[0]);
-                    VpxLibrary.m30505c(1, new String[0]);
-                    C3454i.m30529a(new String[0]);
-                    FfmpegLibrary.m30548e(new String[0]);
+                    OpusLibrary.m30517c(1, new String[0]);
+                    VpxLibrary.m30507c(1, new String[0]);
+                    C3454i.m30531a(new String[0]);
+                    FfmpegLibrary.m30550e(new String[0]);
                 }
                 f16592b = true;
             }
@@ -67,7 +67,7 @@ public class C4861c implements C9951c.AbstractC9955d {
         }
     }
 
-    public String m24983b() {
+    public String m24984b() {
         String str;
         synchronized (this) {
             ArrayList<String> arrayList = this.f16594a;

@@ -26,117 +26,117 @@ import p213p0.C7956h;
 import p227q0.C8117a;
 
 public final class C9000a {
-    public static final AtomicInteger f28901a = new AtomicInteger((int) SystemClock.elapsedRealtime());
+    public static final AtomicInteger f28904a = new AtomicInteger((int) SystemClock.elapsedRealtime());
 
     public static class C9001a {
-        public final C7956h.C7965e f28902a;
-        public final String f28903b;
-        public final int f28904c = 0;
+        public final C7956h.C7965e f28905a;
+        public final String f28906b;
+        public final int f28907c = 0;
 
         public C9001a(C7956h.C7965e eVar, String str, int i) {
-            this.f28902a = eVar;
-            this.f28903b = str;
+            this.f28905a = eVar;
+            this.f28906b = str;
         }
     }
 
-    public static PendingIntent m10749a(Context context, C3527c cVar, String str, PackageManager packageManager) {
-        Intent f = m10744f(str, cVar, packageManager);
+    public static PendingIntent m10748a(Context context, C3527c cVar, String str, PackageManager packageManager) {
+        Intent f = m10743f(str, cVar, packageManager);
         if (f == null) {
             return null;
         }
         f.addFlags(67108864);
-        f.putExtras(cVar.m30145y());
-        if (m10733q(cVar)) {
-            f.putExtra("gcm.n.analytics_data", cVar.m30146x());
+        f.putExtras(cVar.m30147y());
+        if (m10732q(cVar)) {
+            f.putExtra("gcm.n.analytics_data", cVar.m30148x());
         }
-        return PendingIntent.getActivity(context, m10743g(), f, m10738l(Log.TAG_TDLIB_OPTIONS));
+        return PendingIntent.getActivity(context, m10742g(), f, m10737l(Log.TAG_TDLIB_OPTIONS));
     }
 
-    public static PendingIntent m10748b(Context context, C3527c cVar) {
-        if (!m10733q(cVar)) {
+    public static PendingIntent m10747b(Context context, C3527c cVar) {
+        if (!m10732q(cVar)) {
             return null;
         }
-        return m10747c(context, new Intent("com.google.firebase.messaging.NOTIFICATION_DISMISS").putExtras(cVar.m30146x()));
+        return m10746c(context, new Intent("com.google.firebase.messaging.NOTIFICATION_DISMISS").putExtras(cVar.m30148x()));
     }
 
-    public static PendingIntent m10747c(Context context, Intent intent) {
-        return PendingIntent.getBroadcast(context, m10743g(), new Intent("com.google.firebase.MESSAGING_EVENT").setComponent(new ComponentName(context, "com.google.firebase.iid.FirebaseInstanceIdReceiver")).putExtra("wrapped_intent", intent), m10738l(Log.TAG_TDLIB_OPTIONS));
+    public static PendingIntent m10746c(Context context, Intent intent) {
+        return PendingIntent.getBroadcast(context, m10742g(), new Intent("com.google.firebase.MESSAGING_EVENT").setComponent(new ComponentName(context, "com.google.firebase.iid.FirebaseInstanceIdReceiver")).putExtra("wrapped_intent", intent), m10737l(Log.TAG_TDLIB_OPTIONS));
     }
 
-    public static C9001a m10746d(Context context, C3527c cVar) {
-        Bundle j = m10740j(context.getPackageManager(), context.getPackageName());
-        return m10745e(context, context.getPackageName(), cVar, m10739k(context, cVar.m30159k(), j), context.getResources(), context.getPackageManager(), j);
+    public static C9001a m10745d(Context context, C3527c cVar) {
+        Bundle j = m10739j(context.getPackageManager(), context.getPackageName());
+        return m10744e(context, context.getPackageName(), cVar, m10738k(context, cVar.m30161k(), j), context.getResources(), context.getPackageManager(), j);
     }
 
-    public static C9001a m10745e(Context context, String str, C3527c cVar, String str2, Resources resources, PackageManager packageManager, Bundle bundle) {
+    public static C9001a m10744e(Context context, String str, C3527c cVar, String str2, Resources resources, PackageManager packageManager, Bundle bundle) {
         C7956h.C7965e eVar = new C7956h.C7965e(context, str2);
-        String n = cVar.m30156n(resources, str, "gcm.n.title");
+        String n = cVar.m30158n(resources, str, "gcm.n.title");
         if (!TextUtils.isEmpty(n)) {
-            eVar.m13946q(n);
+            eVar.m13945q(n);
         }
-        String n2 = cVar.m30156n(resources, str, "gcm.n.body");
+        String n2 = cVar.m30158n(resources, str, "gcm.n.body");
         if (!TextUtils.isEmpty(n2)) {
-            eVar.m13947p(n2);
-            eVar.m13968I(new C7956h.C7963c().m13978h(n2));
+            eVar.m13946p(n2);
+            eVar.m13967I(new C7956h.C7963c().m13977h(n2));
         }
-        eVar.m13971F(m10737m(packageManager, resources, str, cVar.m30154p("gcm.n.icon"), bundle));
-        Uri n3 = m10736n(str, cVar, resources);
+        eVar.m13970F(m10736m(packageManager, resources, str, cVar.m30156p("gcm.n.icon"), bundle));
+        Uri n3 = m10735n(str, cVar, resources);
         if (n3 != null) {
-            eVar.m13969H(n3);
+            eVar.m13968H(n3);
         }
-        eVar.m13948o(m10749a(context, cVar, str, packageManager));
-        PendingIntent b = m10748b(context, cVar);
+        eVar.m13947o(m10748a(context, cVar, str, packageManager));
+        PendingIntent b = m10747b(context, cVar);
         if (b != null) {
-            eVar.m13944s(b);
+            eVar.m13943s(b);
         }
-        Integer h = m10742h(context, cVar.m30154p("gcm.n.color"), bundle);
+        Integer h = m10741h(context, cVar.m30156p("gcm.n.color"), bundle);
         if (h != null) {
-            eVar.m13949n(h.intValue());
+            eVar.m13948n(h.intValue());
         }
-        eVar.m13952k(!cVar.m30169a("gcm.n.sticky"));
-        eVar.m13937z(cVar.m30169a("gcm.n.local_only"));
-        String p = cVar.m30154p("gcm.n.ticker");
+        eVar.m13951k(!cVar.m30171a("gcm.n.sticky"));
+        eVar.m13936z(cVar.m30171a("gcm.n.local_only"));
+        String p = cVar.m30156p("gcm.n.ticker");
         if (p != null) {
-            eVar.m13966K(p);
+            eVar.m13965K(p);
         }
-        Integer m = cVar.m30157m();
+        Integer m = cVar.m30159m();
         if (m != null) {
-            eVar.m13974C(m.intValue());
+            eVar.m13973C(m.intValue());
         }
-        Integer r = cVar.m30152r();
+        Integer r = cVar.m30154r();
         if (r != null) {
-            eVar.m13964M(r.intValue());
+            eVar.m13963M(r.intValue());
         }
-        Integer l = cVar.m30158l();
+        Integer l = cVar.m30160l();
         if (l != null) {
-            eVar.m13976A(l.intValue());
+            eVar.m13975A(l.intValue());
         }
-        Long j = cVar.m30160j("gcm.n.event_time");
+        Long j = cVar.m30162j("gcm.n.event_time");
         if (j != null) {
-            eVar.m13972E(true);
-            eVar.m13963N(j.longValue());
+            eVar.m13971E(true);
+            eVar.m13962N(j.longValue());
         }
-        long[] q = cVar.m30153q();
+        long[] q = cVar.m30155q();
         if (q != null) {
-            eVar.m13965L(q);
+            eVar.m13964L(q);
         }
-        int[] e = cVar.m30165e();
+        int[] e = cVar.m30167e();
         if (e != null) {
-            eVar.m13938y(e[0], e[1], e[2]);
+            eVar.m13937y(e[0], e[1], e[2]);
         }
-        eVar.m13945r(m10741i(cVar));
-        return new C9001a(eVar, m10735o(cVar), 0);
+        eVar.m13944r(m10740i(cVar));
+        return new C9001a(eVar, m10734o(cVar), 0);
     }
 
-    public static Intent m10744f(String str, C3527c cVar, PackageManager packageManager) {
-        String p = cVar.m30154p("gcm.n.click_action");
+    public static Intent m10743f(String str, C3527c cVar, PackageManager packageManager) {
+        String p = cVar.m30156p("gcm.n.click_action");
         if (!TextUtils.isEmpty(p)) {
             Intent intent = new Intent(p);
             intent.setPackage(str);
             intent.setFlags(268435456);
             return intent;
         }
-        Uri f = cVar.m30164f();
+        Uri f = cVar.m30166f();
         if (f != null) {
             Intent intent2 = new Intent("android.intent.action.VIEW");
             intent2.setPackage(str);
@@ -150,11 +150,11 @@ public final class C9000a {
         return launchIntentForPackage;
     }
 
-    public static int m10743g() {
-        return f28901a.incrementAndGet();
+    public static int m10742g() {
+        return f28904a.incrementAndGet();
     }
 
-    public static Integer m10742h(Context context, String str, Bundle bundle) {
+    public static Integer m10741h(Context context, String str, Bundle bundle) {
         if (Build.VERSION.SDK_INT < 21) {
             return null;
         }
@@ -172,7 +172,7 @@ public final class C9000a {
         int i = bundle.getInt("com.google.firebase.messaging.default_notification_color", 0);
         if (i != 0) {
             try {
-                return Integer.valueOf(C8117a.m13440d(context, i));
+                return Integer.valueOf(C8117a.m13439d(context, i));
             } catch (Resources.NotFoundException unused2) {
                 android.util.Log.w("FirebaseMessaging", "Cannot find the color resource referenced in AndroidManifest.");
             }
@@ -180,12 +180,12 @@ public final class C9000a {
         return null;
     }
 
-    public static int m10741i(C3527c cVar) {
-        boolean a = cVar.m30169a("gcm.n.default_sound");
-        if (cVar.m30169a("gcm.n.default_vibrate_timings")) {
+    public static int m10740i(C3527c cVar) {
+        boolean a = cVar.m30171a("gcm.n.default_sound");
+        if (cVar.m30171a("gcm.n.default_vibrate_timings")) {
             a = (a ? 1 : 0) | true;
         }
-        if (cVar.m30169a("gcm.n.default_light_settings")) {
+        if (cVar.m30171a("gcm.n.default_light_settings")) {
             return (a ? 1 : 0) | 4;
         }
         int i = a ? 1 : 0;
@@ -193,7 +193,7 @@ public final class C9000a {
         return i;
     }
 
-    public static Bundle m10740j(PackageManager packageManager, String str) {
+    public static Bundle m10739j(PackageManager packageManager, String str) {
         try {
             ApplicationInfo applicationInfo = packageManager.getApplicationInfo(str, Log.TAG_YOUTUBE);
             if (applicationInfo != null) {
@@ -213,7 +213,7 @@ public final class C9000a {
     }
 
     @TargetApi(26)
-    public static String m10739k(Context context, String str, Bundle bundle) {
+    public static String m10738k(Context context, String str, Bundle bundle) {
         String str2;
         if (Build.VERSION.SDK_INT < 26) {
             return null;
@@ -256,21 +256,21 @@ public final class C9000a {
         return null;
     }
 
-    public static int m10738l(int i) {
+    public static int m10737l(int i) {
         if (Build.VERSION.SDK_INT >= 23) {
             return 1140850688;
         }
         return Log.TAG_TDLIB_OPTIONS;
     }
 
-    public static int m10737m(PackageManager packageManager, Resources resources, String str, String str2, Bundle bundle) {
+    public static int m10736m(PackageManager packageManager, Resources resources, String str, String str2, Bundle bundle) {
         if (!TextUtils.isEmpty(str2)) {
             int identifier = resources.getIdentifier(str2, "drawable", str);
-            if (identifier != 0 && m10734p(resources, identifier)) {
+            if (identifier != 0 && m10733p(resources, identifier)) {
                 return identifier;
             }
             int identifier2 = resources.getIdentifier(str2, "mipmap", str);
-            if (identifier2 != 0 && m10734p(resources, identifier2)) {
+            if (identifier2 != 0 && m10733p(resources, identifier2)) {
                 return identifier2;
             }
             StringBuilder sb2 = new StringBuilder(String.valueOf(str2).length() + 61);
@@ -280,7 +280,7 @@ public final class C9000a {
             android.util.Log.w("FirebaseMessaging", sb2.toString());
         }
         int i = bundle.getInt("com.google.firebase.messaging.default_notification_icon", 0);
-        if (i == 0 || !m10734p(resources, i)) {
+        if (i == 0 || !m10733p(resources, i)) {
             try {
                 i = packageManager.getApplicationInfo(str, 0).icon;
             } catch (PackageManager.NameNotFoundException e) {
@@ -291,14 +291,14 @@ public final class C9000a {
                 android.util.Log.w("FirebaseMessaging", sb3.toString());
             }
         }
-        if (i == 0 || !m10734p(resources, i)) {
+        if (i == 0 || !m10733p(resources, i)) {
             return 17301651;
         }
         return i;
     }
 
-    public static Uri m10736n(String str, C3527c cVar, Resources resources) {
-        String o = cVar.m30155o();
+    public static Uri m10735n(String str, C3527c cVar, Resources resources) {
+        String o = cVar.m30157o();
         if (TextUtils.isEmpty(o)) {
             return null;
         }
@@ -313,8 +313,8 @@ public final class C9000a {
         return Uri.parse(sb2.toString());
     }
 
-    public static String m10735o(C3527c cVar) {
-        String p = cVar.m30154p("gcm.n.tag");
+    public static String m10734o(C3527c cVar) {
+        String p = cVar.m30156p("gcm.n.tag");
         if (!TextUtils.isEmpty(p)) {
             return p;
         }
@@ -326,7 +326,7 @@ public final class C9000a {
     }
 
     @TargetApi(26)
-    public static boolean m10734p(Resources resources, int i) {
+    public static boolean m10733p(Resources resources, int i) {
         if (Build.VERSION.SDK_INT != 26) {
             return true;
         }
@@ -349,7 +349,7 @@ public final class C9000a {
         }
     }
 
-    public static boolean m10733q(C3527c cVar) {
-        return cVar.m30169a("google.c.a.e");
+    public static boolean m10732q(C3527c cVar) {
+        return cVar.m30171a("google.c.a.e");
     }
 }

@@ -6,7 +6,7 @@ import p118i5.C5217a;
 import p163l5.AbstractC6355k;
 
 public interface AbstractC6083a2 {
-    void mo21282a(C5217a aVar);
+    void mo21283a(C5217a aVar);
 
-    void mo21281c(AbstractC6355k kVar, Set<Scope> set);
+    void mo21282c(AbstractC6355k kVar, Set<Scope> set);
 }

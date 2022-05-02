@@ -20,7 +20,7 @@ public final class C3872g<T> {
     public static class C3874b implements AbstractC3875c<Context> {
         public final Class<? extends Service> f13141a;
 
-        public final Bundle m29680b(Context context) {
+        public final Bundle m29682b(Context context) {
             try {
                 PackageManager packageManager = context.getPackageManager();
                 if (packageManager == null) {
@@ -39,8 +39,8 @@ public final class C3872g<T> {
             }
         }
 
-        public List<String> mo29678a(Context context) {
-            Bundle b = m29680b(context);
+        public List<String> mo29680a(Context context) {
+            Bundle b = m29682b(context);
             if (b == null) {
                 Log.w("ComponentDiscovery", "Could not retrieve metadata, returning empty list of registrars.");
                 return Collections.emptyList();
@@ -60,7 +60,7 @@ public final class C3872g<T> {
     }
 
     public interface AbstractC3875c<T> {
-        List<String> mo29678a(T t);
+        List<String> mo29680a(T t);
     }
 
     public C3872g(T t, AbstractC3875c<T> cVar) {
@@ -68,11 +68,11 @@ public final class C3872g<T> {
         this.f13140b = cVar;
     }
 
-    public static C3872g<Context> m29683c(Context context, Class<? extends Service> cls) {
+    public static C3872g<Context> m29685c(Context context, Class<? extends Service> cls) {
         return new C3872g<>(context, new C3874b(cls));
     }
 
-    public static AbstractC3877i m29682d(String str) {
+    public static AbstractC3877i m29684d(String str) {
         try {
             Class<?> cls = Class.forName(str);
             if (AbstractC3877i.class.isAssignableFrom(cls)) {
@@ -93,14 +93,14 @@ public final class C3872g<T> {
         }
     }
 
-    public List<AbstractC6794b<AbstractC3877i>> m29684b() {
+    public List<AbstractC6794b<AbstractC3877i>> m29686b() {
         ArrayList arrayList = new ArrayList();
-        for (final String str : this.f13140b.mo29678a(this.f13139a)) {
+        for (final String str : this.f13140b.mo29680a(this.f13139a)) {
             arrayList.add(new AbstractC6794b() {
                 @Override
                 public final Object get() {
                     AbstractC3877i d;
-                    d = C3872g.m29682d(str);
+                    d = C3872g.m29684d(str);
                     return d;
                 }
             });

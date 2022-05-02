@@ -12,38 +12,38 @@ import java.util.Iterator;
 import p227q0.C8117a;
 
 public final class C7988o implements Iterable<Intent> {
-    public final ArrayList<Intent> f26029a = new ArrayList<>();
-    public final Context f26030b;
+    public final ArrayList<Intent> f26032a = new ArrayList<>();
+    public final Context f26033b;
 
     public interface AbstractC7989a {
-        Intent mo13827c();
+        Intent mo13826c();
     }
 
     public C7988o(Context context) {
-        this.f26030b = context;
+        this.f26033b = context;
     }
 
-    public static C7988o m13830r(Context context) {
+    public static C7988o m13829r(Context context) {
         return new C7988o(context);
     }
 
-    public C7988o m13833h(Intent intent) {
-        this.f26029a.add(intent);
+    public C7988o m13832h(Intent intent) {
+        this.f26032a.add(intent);
         return this;
     }
 
-    public C7988o m13832i(Activity activity) {
-        Intent c = activity instanceof AbstractC7989a ? ((AbstractC7989a) activity).mo13827c() : null;
+    public C7988o m13831i(Activity activity) {
+        Intent c = activity instanceof AbstractC7989a ? ((AbstractC7989a) activity).mo13826c() : null;
         if (c == null) {
-            c = C7954f.m14006a(activity);
+            c = C7954f.m14005a(activity);
         }
         if (c != null) {
             ComponentName component = c.getComponent();
             if (component == null) {
-                component = c.resolveActivity(this.f26030b.getPackageManager());
+                component = c.resolveActivity(this.f26033b.getPackageManager());
             }
-            m13831m(component);
-            m13833h(c);
+            m13830m(component);
+            m13832h(c);
         }
         return this;
     }
@@ -51,16 +51,16 @@ public final class C7988o implements Iterable<Intent> {
     @Override
     @Deprecated
     public Iterator<Intent> iterator() {
-        return this.f26029a.iterator();
+        return this.f26032a.iterator();
     }
 
-    public C7988o m13831m(ComponentName componentName) {
-        int size = this.f26029a.size();
+    public C7988o m13830m(ComponentName componentName) {
+        int size = this.f26032a.size();
         try {
-            Intent b = C7954f.m14005b(this.f26030b, componentName);
+            Intent b = C7954f.m14004b(this.f26033b, componentName);
             while (b != null) {
-                this.f26029a.add(size, b);
-                b = C7954f.m14005b(this.f26030b, b.getComponent());
+                this.f26032a.add(size, b);
+                b = C7954f.m14004b(this.f26033b, b.getComponent());
             }
             return this;
         } catch (PackageManager.NameNotFoundException e) {
@@ -69,19 +69,19 @@ public final class C7988o implements Iterable<Intent> {
         }
     }
 
-    public void m13829s() {
-        m13828t(null);
+    public void m13828s() {
+        m13827t(null);
     }
 
-    public void m13828t(Bundle bundle) {
-        if (!this.f26029a.isEmpty()) {
-            ArrayList<Intent> arrayList = this.f26029a;
+    public void m13827t(Bundle bundle) {
+        if (!this.f26032a.isEmpty()) {
+            ArrayList<Intent> arrayList = this.f26032a;
             Intent[] intentArr = (Intent[]) arrayList.toArray(new Intent[arrayList.size()]);
             intentArr[0] = new Intent(intentArr[0]).addFlags(268484608);
-            if (!C8117a.m13433k(this.f26030b, intentArr, bundle)) {
+            if (!C8117a.m13432k(this.f26033b, intentArr, bundle)) {
                 Intent intent = new Intent(intentArr[intentArr.length - 1]);
                 intent.addFlags(268435456);
-                this.f26030b.startActivity(intent);
+                this.f26033b.startActivity(intent);
                 return;
             }
             return;

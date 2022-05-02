@@ -28,7 +28,7 @@ public class C6272b extends AbstractC6274c {
         }
     }
 
-    public static Handler m20746e(Looper looper) {
+    public static Handler m20747e(Looper looper) {
         int i = Build.VERSION.SDK_INT;
         if (i >= 28) {
             return Handler.createAsync(looper);
@@ -45,21 +45,21 @@ public class C6272b extends AbstractC6274c {
     }
 
     @Override
-    public void mo20745a(Runnable runnable) {
+    public void mo20746a(Runnable runnable) {
         this.f19793b.execute(runnable);
     }
 
     @Override
-    public boolean mo20743c() {
+    public boolean mo20744c() {
         return Looper.getMainLooper().getThread() == Thread.currentThread();
     }
 
     @Override
-    public void mo20742d(Runnable runnable) {
+    public void mo20743d(Runnable runnable) {
         if (this.f19794c == null) {
             synchronized (this.f19792a) {
                 if (this.f19794c == null) {
-                    this.f19794c = m20746e(Looper.getMainLooper());
+                    this.f19794c = m20747e(Looper.getMainLooper());
                 }
             }
         }

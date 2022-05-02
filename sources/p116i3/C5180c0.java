@@ -17,15 +17,15 @@ public final class C5180c0 implements AbstractC3589b<C5174b0> {
         this.f17307d = aVar4;
     }
 
-    public static C5180c0 m23667a(AbstractC4533a<AbstractC6045a> aVar, AbstractC4533a<AbstractC6045a> aVar2, AbstractC4533a<AbstractC5181d> aVar3, AbstractC4533a<C5194h0> aVar4) {
+    public static C5180c0 m23668a(AbstractC4533a<AbstractC6045a> aVar, AbstractC4533a<AbstractC6045a> aVar2, AbstractC4533a<AbstractC5181d> aVar3, AbstractC4533a<C5194h0> aVar4) {
         return new C5180c0(aVar, aVar2, aVar3, aVar4);
     }
 
-    public static C5174b0 m23665c(AbstractC6045a aVar, AbstractC6045a aVar2, Object obj, Object obj2) {
+    public static C5174b0 m23666c(AbstractC6045a aVar, AbstractC6045a aVar2, Object obj, Object obj2) {
         return new C5174b0(aVar, aVar2, (AbstractC5181d) obj, (C5194h0) obj2);
     }
 
     public C5174b0 get() {
-        return m23665c(this.f17304a.get(), this.f17305b.get(), this.f17306c.get(), this.f17307d.get());
+        return m23666c(this.f17304a.get(), this.f17305b.get(), this.f17306c.get(), this.f17307d.get());
     }
 }

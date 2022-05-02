@@ -21,28 +21,28 @@ public class C5427s0 {
         this.f17846f = null;
     }
 
-    public int m22719a() {
+    public int m22720a() {
         return this.f17842b;
     }
 
-    public int m22718b() {
+    public int m22719b() {
         return this.f17841a;
     }
 
-    public boolean m22717c() {
+    public boolean m22718c() {
         return this.f17846f != null;
     }
 
-    public boolean m22716d() {
+    public boolean m22717d() {
         return this.f17845e != null;
     }
 
-    public void m22715e(int i, C6238b bVar) {
-        bVar.m20991l(i).m20977j(this.f17843c, this.f17844d);
+    public void m22716e(int i, C6238b bVar) {
+        bVar.m20992l(i).m20978j(this.f17843c, this.f17844d);
         if (this.f17845e != null) {
-            bVar.m20992k(i).m20819G(this.f17845e);
+            bVar.m20993k(i).m20820G(this.f17845e);
         } else if (this.f17846f != null) {
-            bVar.m20993j(i).m20231r(this.f17846f);
+            bVar.m20994j(i).m20232r(this.f17846f);
         }
     }
 

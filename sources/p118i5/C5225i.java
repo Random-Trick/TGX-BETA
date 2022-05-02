@@ -20,11 +20,11 @@ public class C5225i {
     }
 
     @RecentlyNonNull
-    public static C5225i m23567a(@RecentlyNonNull Context context) {
-        C6378r.m20506k(context);
+    public static C5225i m23568a(@RecentlyNonNull Context context) {
+        C6378r.m20507k(context);
         synchronized (C5225i.class) {
             if (f17375b == null) {
-                C5239w.m23558a(context);
+                C5239w.m23559a(context);
                 f17375b = new C5225i(context);
             }
         }
@@ -32,7 +32,7 @@ public class C5225i {
     }
 
     @Nullable
-    public static final AbstractBinderC5235s m23566b(PackageInfo packageInfo, AbstractBinderC5235s... sVarArr) {
+    public static final AbstractBinderC5235s m23567b(PackageInfo packageInfo, AbstractBinderC5235s... sVarArr) {
         Signature[] signatureArr = packageInfo.signatures;
         if (signatureArr == null) {
             return null;
@@ -50,9 +50,9 @@ public class C5225i {
         return null;
     }
 
-    public static final boolean m23565c(@RecentlyNonNull PackageInfo packageInfo, boolean z) {
+    public static final boolean m23566c(@RecentlyNonNull PackageInfo packageInfo, boolean z) {
         if (!(packageInfo == null || packageInfo.signatures == null)) {
-            if ((z ? m23566b(packageInfo, C5238v.f17386a) : m23566b(packageInfo, C5238v.f17386a[0])) != null) {
+            if ((z ? m23567b(packageInfo, C5238v.f17386a) : m23567b(packageInfo, C5238v.f17386a[0])) != null) {
                 return true;
             }
         }

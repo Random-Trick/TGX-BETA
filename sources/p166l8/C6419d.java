@@ -64,7 +64,7 @@ public final class C6419d {
         }
     }
 
-    public static C5025d m20444a(byte[] bArr, C6426j jVar, EnumC6422f fVar, Map<EnumC4522e, ?> map) {
+    public static C5025d m20445a(byte[] bArr, C6426j jVar, EnumC6422f fVar, Map<EnumC4522e, ?> map) {
         EnumC6424h a;
         EnumC6424h hVar;
         C5023b bVar = new C5023b(bArr);
@@ -77,10 +77,10 @@ public final class C6419d {
         int i3 = -1;
         while (true) {
             try {
-                if (bVar.m24273a() < 4) {
+                if (bVar.m24274a() < 4) {
                     a = EnumC6424h.TERMINATOR;
                 } else {
-                    a = EnumC6424h.m20427a(bVar.m24272b(4));
+                    a = EnumC6424h.m20428a(bVar.m24273b(4));
                 }
                 EnumC6424h hVar2 = a;
                 int[] iArr = C6420a.f20082a;
@@ -94,54 +94,54 @@ public final class C6419d {
                         z = true;
                         break;
                     case 8:
-                        if (bVar.m24273a() >= 16) {
-                            int b = bVar.m24272b(8);
-                            i3 = bVar.m24272b(8);
+                        if (bVar.m24274a() >= 16) {
+                            int b = bVar.m24273b(8);
+                            i3 = bVar.m24273b(8);
                             i2 = b;
                             hVar = hVar2;
                             break;
                         } else {
-                            throw C4523f.m27499a();
+                            throw C4523f.m27501a();
                         }
                     case 9:
-                        cVar = EnumC5024c.m24271a(m20438g(bVar));
+                        cVar = EnumC5024c.m24272a(m20439g(bVar));
                         if (cVar == null) {
-                            throw C4523f.m27499a();
+                            throw C4523f.m27501a();
                         }
                         hVar = hVar2;
                         break;
                     case 10:
-                        int b2 = bVar.m24272b(4);
-                        int b3 = bVar.m24272b(hVar2.m20426b(jVar));
+                        int b2 = bVar.m24273b(4);
+                        int b3 = bVar.m24273b(hVar2.m20427b(jVar));
                         if (b2 == i) {
-                            m20441d(bVar, sb2, b3);
+                            m20442d(bVar, sb2, b3);
                         }
                         hVar = hVar2;
                         break;
                     default:
-                        int b4 = bVar.m24272b(hVar2.m20426b(jVar));
+                        int b4 = bVar.m24273b(hVar2.m20427b(jVar));
                         int i4 = iArr[hVar2.ordinal()];
                         if (i4 != i) {
                             if (i4 != 2) {
                                 if (i4 == 3) {
                                     hVar = hVar2;
-                                    m20442c(bVar, sb2, b4, cVar, arrayList, map);
+                                    m20443c(bVar, sb2, b4, cVar, arrayList, map);
                                     break;
                                 } else if (i4 == 4) {
-                                    m20440e(bVar, sb2, b4);
+                                    m20441e(bVar, sb2, b4);
                                     hVar = hVar2;
                                     break;
                                 } else {
-                                    throw C4523f.m27499a();
+                                    throw C4523f.m27501a();
                                 }
                             } else {
                                 hVar = hVar2;
-                                m20443b(bVar, sb2, b4, z);
+                                m20444b(bVar, sb2, b4, z);
                                 break;
                             }
                         } else {
                             hVar = hVar2;
-                            m20439f(bVar, sb2, b4);
+                            m20440f(bVar, sb2, b4);
                             break;
                         }
                 }
@@ -150,27 +150,27 @@ public final class C6419d {
                 }
                 i = 1;
             } catch (IllegalArgumentException unused) {
-                throw C4523f.m27499a();
+                throw C4523f.m27501a();
             }
         }
     }
 
-    public static void m20443b(C5023b bVar, StringBuilder sb2, int i, boolean z) {
+    public static void m20444b(C5023b bVar, StringBuilder sb2, int i, boolean z) {
         while (i > 1) {
-            if (bVar.m24273a() >= 11) {
-                int b = bVar.m24272b(11);
-                sb2.append(m20437h(b / 45));
-                sb2.append(m20437h(b % 45));
+            if (bVar.m24274a() >= 11) {
+                int b = bVar.m24273b(11);
+                sb2.append(m20438h(b / 45));
+                sb2.append(m20438h(b % 45));
                 i -= 2;
             } else {
-                throw C4523f.m27499a();
+                throw C4523f.m27501a();
             }
         }
         if (i == 1) {
-            if (bVar.m24273a() >= 6) {
-                sb2.append(m20437h(bVar.m24272b(6)));
+            if (bVar.m24274a() >= 6) {
+                sb2.append(m20438h(bVar.m24273b(6)));
             } else {
-                throw C4523f.m27499a();
+                throw C4523f.m27501a();
             }
         }
         if (z) {
@@ -188,15 +188,15 @@ public final class C6419d {
         }
     }
 
-    public static void m20442c(C5023b bVar, StringBuilder sb2, int i, EnumC5024c cVar, Collection<byte[]> collection, Map<EnumC4522e, ?> map) {
+    public static void m20443c(C5023b bVar, StringBuilder sb2, int i, EnumC5024c cVar, Collection<byte[]> collection, Map<EnumC4522e, ?> map) {
         String str;
-        if ((i << 3) <= bVar.m24273a()) {
+        if ((i << 3) <= bVar.m24274a()) {
             byte[] bArr = new byte[i];
             for (int i2 = 0; i2 < i; i2++) {
-                bArr[i2] = (byte) bVar.m24272b(8);
+                bArr[i2] = (byte) bVar.m24273b(8);
             }
             if (cVar == null) {
-                str = C5032k.m24243a(bArr, map);
+                str = C5032k.m24244a(bArr, map);
             } else {
                 str = cVar.name();
             }
@@ -204,19 +204,19 @@ public final class C6419d {
                 sb2.append(new String(bArr, str));
                 collection.add(bArr);
             } catch (UnsupportedEncodingException unused) {
-                throw C4523f.m27499a();
+                throw C4523f.m27501a();
             }
         } else {
-            throw C4523f.m27499a();
+            throw C4523f.m27501a();
         }
     }
 
-    public static void m20441d(C5023b bVar, StringBuilder sb2, int i) {
-        if (i * 13 <= bVar.m24273a()) {
+    public static void m20442d(C5023b bVar, StringBuilder sb2, int i) {
+        if (i * 13 <= bVar.m24274a()) {
             byte[] bArr = new byte[i * 2];
             int i2 = 0;
             while (i > 0) {
-                int b = bVar.m24272b(13);
+                int b = bVar.m24273b(13);
                 int i3 = (b % 96) | ((b / 96) << 8);
                 int i4 = i3 + (i3 < 2560 ? 41377 : 42657);
                 bArr[i2] = (byte) (i4 >> 8);
@@ -227,19 +227,19 @@ public final class C6419d {
             try {
                 sb2.append(new String(bArr, "GB2312"));
             } catch (UnsupportedEncodingException unused) {
-                throw C4523f.m27499a();
+                throw C4523f.m27501a();
             }
         } else {
-            throw C4523f.m27499a();
+            throw C4523f.m27501a();
         }
     }
 
-    public static void m20440e(C5023b bVar, StringBuilder sb2, int i) {
-        if (i * 13 <= bVar.m24273a()) {
+    public static void m20441e(C5023b bVar, StringBuilder sb2, int i) {
+        if (i * 13 <= bVar.m24274a()) {
             byte[] bArr = new byte[i * 2];
             int i2 = 0;
             while (i > 0) {
-                int b = bVar.m24272b(13);
+                int b = bVar.m24273b(13);
                 int i3 = (b % 192) | ((b / 192) << 8);
                 int i4 = i3 + (i3 < 7936 ? 33088 : 49472);
                 bArr[i2] = (byte) (i4 >> 8);
@@ -250,73 +250,73 @@ public final class C6419d {
             try {
                 sb2.append(new String(bArr, "SJIS"));
             } catch (UnsupportedEncodingException unused) {
-                throw C4523f.m27499a();
+                throw C4523f.m27501a();
             }
         } else {
-            throw C4523f.m27499a();
+            throw C4523f.m27501a();
         }
     }
 
-    public static void m20439f(C5023b bVar, StringBuilder sb2, int i) {
+    public static void m20440f(C5023b bVar, StringBuilder sb2, int i) {
         while (i >= 3) {
-            if (bVar.m24273a() >= 10) {
-                int b = bVar.m24272b(10);
+            if (bVar.m24274a() >= 10) {
+                int b = bVar.m24273b(10);
                 if (b < 1000) {
-                    sb2.append(m20437h(b / 100));
-                    sb2.append(m20437h((b / 10) % 10));
-                    sb2.append(m20437h(b % 10));
+                    sb2.append(m20438h(b / 100));
+                    sb2.append(m20438h((b / 10) % 10));
+                    sb2.append(m20438h(b % 10));
                     i -= 3;
                 } else {
-                    throw C4523f.m27499a();
+                    throw C4523f.m27501a();
                 }
             } else {
-                throw C4523f.m27499a();
+                throw C4523f.m27501a();
             }
         }
         if (i == 2) {
-            if (bVar.m24273a() >= 7) {
-                int b2 = bVar.m24272b(7);
+            if (bVar.m24274a() >= 7) {
+                int b2 = bVar.m24273b(7);
                 if (b2 < 100) {
-                    sb2.append(m20437h(b2 / 10));
-                    sb2.append(m20437h(b2 % 10));
+                    sb2.append(m20438h(b2 / 10));
+                    sb2.append(m20438h(b2 % 10));
                     return;
                 }
-                throw C4523f.m27499a();
+                throw C4523f.m27501a();
             }
-            throw C4523f.m27499a();
+            throw C4523f.m27501a();
         } else if (i != 1) {
         } else {
-            if (bVar.m24273a() >= 4) {
-                int b3 = bVar.m24272b(4);
+            if (bVar.m24274a() >= 4) {
+                int b3 = bVar.m24273b(4);
                 if (b3 < 10) {
-                    sb2.append(m20437h(b3));
+                    sb2.append(m20438h(b3));
                     return;
                 }
-                throw C4523f.m27499a();
+                throw C4523f.m27501a();
             }
-            throw C4523f.m27499a();
+            throw C4523f.m27501a();
         }
     }
 
-    public static int m20438g(C5023b bVar) {
-        int b = bVar.m24272b(8);
+    public static int m20439g(C5023b bVar) {
+        int b = bVar.m24273b(8);
         if ((b & Log.TAG_YOUTUBE) == 0) {
             return b & 127;
         }
         if ((b & 192) == 128) {
-            return bVar.m24272b(8) | ((b & 63) << 8);
+            return bVar.m24273b(8) | ((b & 63) << 8);
         }
         if ((b & 224) == 192) {
-            return bVar.m24272b(16) | ((b & 31) << 16);
+            return bVar.m24273b(16) | ((b & 31) << 16);
         }
-        throw C4523f.m27499a();
+        throw C4523f.m27501a();
     }
 
-    public static char m20437h(int i) {
+    public static char m20438h(int i) {
         char[] cArr = f20081a;
         if (i < cArr.length) {
             return cArr[i];
         }
-        throw C4523f.m27499a();
+        throw C4523f.m27501a();
     }
 }

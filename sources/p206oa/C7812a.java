@@ -6,8 +6,8 @@ import qa.C8298k;
 
 public final class C7812a {
     public static final <T> Class<T> m14984a(AbstractC10169b<T> bVar) {
-        C8298k.m12934e(bVar, "<this>");
-        Class<T> cls = (Class<T>) ((AbstractC8290d) bVar).mo12923b();
+        C8298k.m12933e(bVar, "<this>");
+        Class<T> cls = (Class<T>) ((AbstractC8290d) bVar).mo12922b();
         if (!cls.isPrimitive()) {
             return cls;
         }

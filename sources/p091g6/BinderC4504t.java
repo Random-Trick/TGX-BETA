@@ -11,7 +11,7 @@ public final class BinderC4504t extends AbstractBinderC4998f0 {
     }
 
     @Override
-    public final void mo24337c0(int i) {
-        this.f14875a.mo11383S3(i);
+    public final void mo24338c0(int i) {
+        this.f14875a.mo11382S3(i);
     }
 }

@@ -28,9 +28,9 @@ public final class HandlerC5228l extends HandlerC9849i {
             Log.w("GoogleApiAvailability", sb2.toString());
             return;
         }
-        int i2 = this.f17381b.mo23585i(this.f17380a);
-        if (this.f17381b.mo23581m(i2)) {
-            this.f17381b.m23602r(this.f17380a, i2);
+        int i2 = this.f17381b.mo23586i(this.f17380a);
+        if (this.f17381b.mo23582m(i2)) {
+            this.f17381b.m23603r(this.f17380a, i2);
         }
     }
 }

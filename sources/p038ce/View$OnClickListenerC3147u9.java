@@ -71,11 +71,11 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
         public void mo7527g(Rect rect, View view, RecyclerView recyclerView, RecyclerView.C0880a0 a0Var) {
             AbstractC4576a1.C4578b[] u;
             rect.left = 0;
-            AbstractC4576a1 Ue = View$OnClickListenerC3147u9.this.m31344Ue(view);
-            if (!(Ue == null || (u = Ue.m27276u()) == null)) {
-                rect.left = C1357a0.m37541i(18.0f);
+            AbstractC4576a1 Ue = View$OnClickListenerC3147u9.this.m31346Ue(view);
+            if (!(Ue == null || (u = Ue.m27278u()) == null)) {
+                rect.left = C1357a0.m37544i(18.0f);
                 for (AbstractC4576a1.C4578b bVar : u) {
-                    rect.left = (int) (rect.left + Math.max(C1357a0.m37541i(16.0f), bVar.f15041a.f15040b + C1357a0.m37541i(4.0f)));
+                    rect.left = (int) (rect.left + Math.max(C1357a0.m37544i(16.0f), bVar.f15041a.f15040b + C1357a0.m37544i(4.0f)));
                 }
             }
         }
@@ -84,17 +84,17 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
         public void mo18530n(Canvas canvas, RecyclerView recyclerView, RecyclerView.C0880a0 a0Var, View view) {
             AbstractC4576a1.C4578b[] u;
             float alpha = view.getAlpha();
-            AbstractC4576a1 Ue = View$OnClickListenerC3147u9.this.m31344Ue(view);
-            if (!(Ue == null || (u = Ue.m27276u()) == null)) {
-                int U = recyclerView.getLayoutManager().m39231U(view) + ((int) view.getTranslationY()) + Ue.m27279m();
-                int left = view.getLeft() - recyclerView.getLayoutManager().m39237Q(view);
+            AbstractC4576a1 Ue = View$OnClickListenerC3147u9.this.m31346Ue(view);
+            if (!(Ue == null || (u = Ue.m27278u()) == null)) {
+                int U = recyclerView.getLayoutManager().m39234U(view) + ((int) view.getTranslationY()) + Ue.m27281m();
+                int left = view.getLeft() - recyclerView.getLayoutManager().m39240Q(view);
                 for (int length = u.length - 1; length >= 0; length--) {
                     AbstractC4576a1.C4578b bVar = u[length];
                     AbstractC4576a1 a1Var = bVar.f15044d;
                     if (a1Var == null || a1Var == Ue) {
                         int width = left - bVar.f15043c.getWidth();
-                        bVar.f15043c.m22899v(canvas, width, width, 0, U, null, alpha);
-                        left = (int) (left - Math.max(C1357a0.m37541i(16.0f), bVar.f15041a.f15040b + C1357a0.m37541i(4.0f)));
+                        bVar.f15043c.m22900v(canvas, width, width, 0, U, null, alpha);
+                        left = (int) (left - Math.max(C1357a0.m37544i(16.0f), bVar.f15041a.f15040b + C1357a0.m37544i(4.0f)));
                     } else {
                         return;
                     }
@@ -104,13 +104,13 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
 
         @Override
         public int mo18528p(int i, View view) {
-            AbstractC4576a1 Ue = View$OnClickListenerC3147u9.this.m31344Ue(view);
-            int l = Ue != null ? Ue.mo26385l() : 0;
+            AbstractC4576a1 Ue = View$OnClickListenerC3147u9.this.m31346Ue(view);
+            int l = Ue != null ? Ue.mo26386l() : 0;
             if (l == 0) {
                 return 0;
             }
             if (l != R.id.theme_color_filling) {
-                return C5064d.m24129c(C11524j.m228N(R.id.theme_color_filling), C5064d.m24131a(view.getAlpha(), C11524j.m228N(l)));
+                return C5064d.m24130c(C11524j.m228N(R.id.theme_color_filling), C5064d.m24132a(view.getAlpha(), C11524j.m228N(l)));
             }
             return C11524j.m228N(l);
         }
@@ -137,26 +137,26 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
         super(context, q6Var);
     }
 
-    public void m31342We() {
-        C1379j0.m37336c0(m9131x9().f10549a.url);
+    public void m31344We() {
+        C1379j0.m37339c0(m9131x9().f10549a.url);
     }
 
-    public void m31341Xe(TdApi.WebPageInstantView webPageInstantView) {
+    public void m31343Xe(TdApi.WebPageInstantView webPageInstantView) {
         if (m9347Sa()) {
             return;
         }
-        if (!C4779t2.m25388y2(webPageInstantView.version)) {
-            C1379j0.m37292y0(R.string.InstantViewUnsupported, 0);
-            C1379j0.m37336c0(m31343Ve());
+        if (!C4779t2.m25389y2(webPageInstantView.version)) {
+            C1379j0.m37295y0(R.string.InstantViewUnsupported, 0);
+            C1379j0.m37339c0(m31345Ve());
             return;
         }
         m9131x9().f10550b = webPageInstantView;
-        m31346Se(true);
+        m31348Se(true);
     }
 
     @Override
     public boolean mo18245A(String str) {
-        return C5402h.m22840i(this, str);
+        return C5402h.m22841i(this, str);
     }
 
     @Override
@@ -171,31 +171,31 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
 
     @Override
     public boolean mo18244H5(String str) {
-        return C5402h.m22836m(this, str);
+        return C5402h.m22837m(this, str);
     }
 
     @Override
     public boolean mo18243I3(String str) {
-        return C5402h.m22841h(this, str);
+        return C5402h.m22842h(this, str);
     }
 
     @Override
     public void mo419J(int i, View view) {
         if (i == R.id.menu_btn_forward) {
             String str = m9131x9().f10549a.url;
-            x00 x00Var = new x00(this.f30165a, this.f30167b);
+            x00 x00Var = new x00(this.f30168a, this.f30170b);
             x00.C3281m mVar = new x00.C3281m(str);
-            mVar.m30887B(R.string.OpenInExternalApp, new Runnable() {
+            mVar.m30889B(R.string.OpenInExternalApp, new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC3147u9.this.m31342We();
+                    View$OnClickListenerC3147u9.this.m31344We();
                 }
             });
-            if (C1363c0.m37457Q(str)) {
-                mVar.m30886C(str);
+            if (C1363c0.m37460Q(str)) {
+                mVar.m30888C(str);
             }
-            x00Var.m30994Vi(mVar);
-            x00Var.m30960ej();
+            x00Var.m30996Vi(mVar);
+            x00Var.m30962ej();
         }
     }
 
@@ -206,7 +206,7 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
 
     @Override
     public boolean mo18242M(View view, RunnableC5390g gVar, C5455v0 v0Var, String str, boolean z) {
-        return C5402h.m22843f(this, view, gVar, v0Var, str, z);
+        return C5402h.m22844f(this, view, gVar, v0Var, str, z);
     }
 
     @Override
@@ -216,7 +216,7 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
 
     @Override
     public boolean mo18241P3(long j) {
-        return C5402h.m22837l(this, j);
+        return C5402h.m22838l(this, j);
     }
 
     @Override
@@ -231,14 +231,14 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
 
     @Override
     public boolean mo18240S6(View view, String str) {
-        return m31339Ze(str, true);
+        return m31341Ze(str, true);
     }
 
     @Override
     public boolean mo8863S8(C9270q1 q1Var, float f, float f2) {
-        float f3 = f - (C1399s0.m37154u(this.f10546o0)[0] - C1399s0.m37154u(q1Var.get())[0]);
-        float f4 = f2 - (C1399s0.m37154u(this.f10546o0)[1] - C1399s0.m37154u(q1Var.get())[1]);
-        View X = this.f10546o0.m39457X(f3, f4);
+        float f3 = f - (C1399s0.m37157u(this.f10546o0)[0] - C1399s0.m37157u(q1Var.get())[0]);
+        float f4 = f2 - (C1399s0.m37157u(this.f10546o0)[1] - C1399s0.m37157u(q1Var.get())[1]);
+        View X = this.f10546o0.m39460X(f3, f4);
         if (!(X instanceof RunnableC6868e2)) {
             return super.mo8863S8(q1Var, f3, f4);
         }
@@ -259,11 +259,11 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
         }
     }
 
-    public final void m31346Se(boolean z) {
+    public final void m31348Se(boolean z) {
         C3149b x9 = m9131x9();
         TdApi.WebPageInstantView webPageInstantView = x9.f10550b;
         if (!z || webPageInstantView.isFull) {
-            ArrayList<AbstractC4576a1> N = AbstractC4576a1.m27289N(this, m31343Ve(), webPageInstantView, null, this, null);
+            ArrayList<AbstractC4576a1> N = AbstractC4576a1.m27291N(this, m31345Ve(), webPageInstantView, null, this, null);
             ArrayList arrayList = new ArrayList(N.size());
             this.f10547p0 = new ArrayList<>();
             Iterator<AbstractC4576a1> it = N.iterator();
@@ -271,19 +271,19 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
                 AbstractC4576a1 next = it.next();
                 if (next instanceof C4632f1) {
                     C4632f1 f1Var = (C4632f1) next;
-                    if (f1Var.m26704a0(this, m31345Te(), this.f10547p0)) {
+                    if (f1Var.m26705a0(this, m31347Te(), this.f10547p0)) {
                         this.f10547p0.add(f1Var);
                     }
                 }
-                arrayList.add(new C2964ra(next.mo26319z()).m32870G(next));
+                arrayList.add(new C2964ra(next.mo26320z()).m32873G(next));
             }
-            this.f10545n0.m34116x2(arrayList, false);
-            this.f10546o0.m39504A0();
-            if (!C5070i.m24061i(x9.f10551c)) {
-                m31339Ze(x9.f10551c, false);
+            this.f10545n0.m34119x2(arrayList, false);
+            this.f10546o0.m39507A0();
+            if (!C5070i.m24062i(x9.f10551c)) {
+                m31341Ze(x9.f10551c, false);
             }
             if (!z) {
-                this.f30167b.m2270r4().m14783o(new TdApi.GetWebPageInstantView(m31343Ve(), true), this);
+                this.f30170b.m2270r4().m14783o(new TdApi.GetWebPageInstantView(m31345Ve(), true), this);
                 return;
             }
             return;
@@ -291,35 +291,35 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
         Log.m14724e("TDLib error: instantView.isFull returned false on the second call", new Object[0]);
     }
 
-    public String m31345Te() {
+    public String m31347Te() {
         return m9131x9().f10549a.displayUrl;
     }
 
     @Override
     public TdApi.WebPage mo18239U2(String str) {
-        return C5402h.m22848a(this, str);
+        return C5402h.m22849a(this, str);
     }
 
-    public final AbstractC4576a1 m31344Ue(View view) {
+    public final AbstractC4576a1 m31346Ue(View view) {
         C2964ra raVar = (C2964ra) view.getTag();
-        if (raVar == null || !(raVar.m32844d() instanceof AbstractC4576a1)) {
+        if (raVar == null || !(raVar.m32847d() instanceof AbstractC4576a1)) {
             return null;
         }
-        return (AbstractC4576a1) raVar.m32844d();
+        return (AbstractC4576a1) raVar.m32847d();
     }
 
     @Override
     public boolean mo18238V4(String str) {
-        return C5402h.m22842g(this, str);
+        return C5402h.m22843g(this, str);
     }
 
-    public String m31343Ve() {
+    public String m31345Ve() {
         return m9131x9().f10549a.url;
     }
 
     @Override
     public AbstractC11531p mo18237W4(View view, RunnableC5390g gVar) {
-        return C5402h.m22846c(this, view, gVar);
+        return C5402h.m22847c(this, view, gVar);
     }
 
     @Override
@@ -332,13 +332,13 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
         return m9131x9().f10549a.siteName;
     }
 
-    public final void m31340Ye() {
+    public final void m31342Ye() {
         this.f10547p0.clear();
-        for (C2964ra raVar : this.f10545n0.m34240F0()) {
-            AbstractC4576a1 a1Var = (AbstractC4576a1) raVar.m32844d();
+        for (C2964ra raVar : this.f10545n0.m34243F0()) {
+            AbstractC4576a1 a1Var = (AbstractC4576a1) raVar.m32847d();
             if (a1Var instanceof C4632f1) {
                 C4632f1 f1Var = (C4632f1) a1Var;
-                if (f1Var.m26704a0(this, m31345Te(), this.f10547p0)) {
+                if (f1Var.m26705a0(this, m31347Te(), this.f10547p0)) {
                     this.f10547p0.add(f1Var);
                 }
             }
@@ -348,45 +348,45 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
     @Override
     public void mo417Z8() {
         super.mo417Z8();
-        C1399s0.m37162q(this.f10546o0);
+        C1399s0.m37165q(this.f10546o0);
         C11541z.m7t().m42S(this);
-        mo4347s().m14438t2(this, true);
+        mo4347s().m14437t2(this, true);
     }
 
-    public final boolean m31339Ze(String str, boolean z) {
+    public final boolean m31341Ze(String str, boolean z) {
         if (str == null) {
             return false;
         }
-        String a = C5070i.m24069a(str);
+        String a = C5070i.m24070a(str);
         if (str.equals(a)) {
             a = null;
         }
-        List<C2964ra> F0 = this.f10545n0.m34240F0();
+        List<C2964ra> F0 = this.f10545n0.m34243F0();
         int i = 0;
         for (C2964ra raVar : F0) {
-            Object d = raVar.m32844d();
+            Object d = raVar.m32847d();
             if (d instanceof AbstractC4576a1) {
                 AbstractC4576a1 a1Var = (AbstractC4576a1) d;
-                boolean z2 = str.equals(a1Var.m27280j()) || (a != null && a.equals(a1Var.m27280j()));
-                if (z2 && !a1Var.m27294F()) {
-                    m31338af(i, a1Var, null, true);
+                boolean z2 = str.equals(a1Var.m27282j()) || (a != null && a.equals(a1Var.m27282j()));
+                if (z2 && !a1Var.m27296F()) {
+                    m31340af(i, a1Var, null, true);
                     return true;
-                } else if (a1Var.mo26462D(str)) {
-                    m31338af(i, a1Var, str, true);
+                } else if (a1Var.mo26463D(str)) {
+                    m31340af(i, a1Var, str, true);
                     return true;
-                } else if (z2 && a1Var.m27294F()) {
+                } else if (z2 && a1Var.m27296F()) {
                     int i2 = i + 1;
                     if (i2 < F0.size()) {
-                        Object d2 = F0.get(i2).m32844d();
+                        Object d2 = F0.get(i2).m32847d();
                         if (d2 instanceof AbstractC4576a1) {
                             AbstractC4576a1 a1Var2 = (AbstractC4576a1) d2;
-                            if (str.equals(a1Var2.m27280j()) && !a1Var2.m27294F()) {
-                                m31338af(i2, a1Var2, a1Var.m27280j(), true);
+                            if (str.equals(a1Var2.m27282j()) && !a1Var2.m27296F()) {
+                                m31340af(i2, a1Var2, a1Var.m27282j(), true);
                                 return true;
                             }
                         }
                     }
-                    m31338af(i, a1Var, null, false);
+                    m31340af(i, a1Var, null, false);
                     return true;
                 }
             }
@@ -395,59 +395,59 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
         if (!str.isEmpty() || F0.isEmpty()) {
             return false;
         }
-        m31338af(0, null, null, true);
+        m31340af(0, null, null, true);
         return true;
     }
 
-    public final void m31338af(int i, AbstractC4576a1 a1Var, String str, boolean z) {
+    public final void m31340af(int i, AbstractC4576a1 a1Var, String str, boolean z) {
         LinearLayoutManager linearLayoutManager = (LinearLayoutManager) this.f10546o0.getLayoutManager();
         if (linearLayoutManager != null) {
-            if (C5070i.m24061i(str)) {
+            if (C5070i.m24062i(str)) {
                 if (z) {
-                    linearLayoutManager.m39522z2(i, 0);
+                    linearLayoutManager.m39525z2(i, 0);
                     return;
                 }
                 int i2 = i + 1;
                 if (i2 < this.f10545n0.mo6153D()) {
-                    linearLayoutManager.m39522z2(i2, 0);
+                    linearLayoutManager.m39525z2(i2, 0);
                 } else {
-                    linearLayoutManager.m39522z2(i, this.f30165a.m14567L0(this.f10546o0));
+                    linearLayoutManager.m39525z2(i, this.f30168a.m14567L0(this.f10546o0));
                 }
             } else if (a1Var != null) {
-                linearLayoutManager.m39522z2(i, -a1Var.mo26441n(str, this.f30165a.m14567L0(this.f10546o0)));
+                linearLayoutManager.m39525z2(i, -a1Var.mo26442n(str, this.f30168a.m14567L0(this.f10546o0)));
             }
         }
     }
 
-    public void m31337bf() {
-        if (this.f30165a.m14552P1().m9737X()) {
+    public void m31339bf() {
+        if (this.f30168a.m14551P1().m9736X()) {
             mo417Z8();
             return;
         }
         get();
-        this.f30165a.m14552P1().m9719h0(this);
+        this.f30168a.m14551P1().m9718h0(this);
     }
 
     @Override
     public boolean mo18236f5(String str) {
-        return C5402h.m22844e(this, str);
+        return C5402h.m22845e(this, str);
     }
 
     @Override
     public boolean mo18235g0(View view, String str, boolean z, HandlerC10770jj.C10788q qVar) {
         List<String> pathSegments;
-        String Ve = m31343Ve();
-        Uri l0 = C1363c0.m37424l0(Ve);
+        String Ve = m31345Ve();
+        Uri l0 = C1363c0.m37427l0(Ve);
         boolean z2 = false;
-        if (l0 != null && this.f30167b.m2598W6(l0.getHost(), false) && (pathSegments = l0.getPathSegments()) != null && pathSegments.size() == 1 && pathSegments.get(0).equals("iv")) {
+        if (l0 != null && this.f30170b.m2598W6(l0.getHost(), false) && (pathSegments = l0.getPathSegments()) != null && pathSegments.size() == 1 && pathSegments.get(0).equals("iv")) {
             String queryParameter = l0.getQueryParameter("url");
             String queryParameter2 = l0.getQueryParameter("rhash");
-            if (!C5070i.m24061i(queryParameter) && !C5070i.m24061i(queryParameter2)) {
-                str = new Uri.Builder().scheme("https").authority(this.f30167b.m2778Kc()).path("iv").appendQueryParameter("url", str).appendQueryParameter("rhash", queryParameter2).build().toString();
+            if (!C5070i.m24062i(queryParameter) && !C5070i.m24062i(queryParameter2)) {
+                str = new Uri.Builder().scheme("https").authority(this.f30170b.m2778Kc()).path("iv").appendQueryParameter("url", str).appendQueryParameter("rhash", queryParameter2).build().toString();
                 z2 = true;
             }
         }
-        this.f30167b.m2485dd().m3858E7(this, str, new HandlerC10770jj.C10788q(qVar).m3322i().m3319l(Ve).m3321j(z2 ? str : null));
+        this.f30170b.m2485dd().m3858E7(this, str, new HandlerC10770jj.C10788q(qVar).m3322i().m3319l(Ve).m3321j(z2 ? str : null));
         return true;
     }
 
@@ -468,16 +468,16 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
     @Override
     public boolean mo18234i0(View view, String str, String str2, HandlerC10770jj.C10788q qVar) {
         TdApi.RichText G0;
-        if (qVar.f34541g == null || (G0 = C7321e.m17006G0(m9131x9().f10550b, str2)) == null) {
+        if (qVar.f34544g == null || (G0 = C7321e.m17006G0(m9131x9().f10550b, str2)) == null) {
             return false;
         }
-        qVar.f34541g.m8965b(view, ((C6861d2) view).getBlock().m27296B()).m8958i(this).m8974A(C5459x0.m22612z(this, this, G0, C1410y.m37083A0(13.0f), qVar.f34541g.m8959h(), qVar));
+        qVar.f34544g.m8965b(view, ((C6861d2) view).getBlock().m27298B()).m8958i(this).m8974A(C5459x0.m22613z(this, this, G0, C1410y.m37086A0(13.0f), qVar.f34544g.m8959h(), qVar));
         return true;
     }
 
     @Override
     public boolean mo18233m2(String str) {
-        return C5402h.m22847b(this, str);
+        return C5402h.m22848b(this, str);
     }
 
     @Override
@@ -490,7 +490,7 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
         FrameLayout frameLayout = new FrameLayout(context);
         frameLayout.setLayoutParams(FrameLayoutFix.m18008s1(-1, -1));
         C10192g.m5782i(frameLayout, R.id.theme_color_background, this);
-        RecyclerView recyclerView = (RecyclerView) C1399s0.m37146y(mo4347s(), R.layout.recycler, frameLayout);
+        RecyclerView recyclerView = (RecyclerView) C1399s0.m37149y(mo4347s(), R.layout.recycler, frameLayout);
         this.f10546o0 = recyclerView;
         int i = 1;
         recyclerView.setHasFixedSize(true);
@@ -504,9 +504,9 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
         this.f10546o0.setItemAnimator(null);
         frameLayout.addView(this.f10546o0);
         RecyclerView recyclerView3 = this.f10546o0;
-        recyclerView3.m39434g(new C3148a(recyclerView3, this));
+        recyclerView3.m39437g(new C3148a(recyclerView3, this));
         this.f10545n0 = new C2546iq(this);
-        m31346Se(false);
+        m31348Se(false);
         this.f10546o0.setAdapter(this.f10545n0);
         C11052v1.m1768b().m1769a(this);
         C11541z.m7t().m23f(this);
@@ -516,48 +516,48 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
     @Override
     public void onClick(View view) {
         int L0;
-        AbstractC4576a1 Ue = m31344Ue(view);
-        if (Ue != null && Ue.mo26460H()) {
+        AbstractC4576a1 Ue = m31346Ue(view);
+        if (Ue != null && Ue.mo26461H()) {
             int i = 0;
-            if (!(Ue.mo26659L(view, false) || !(Ue.m27273y() instanceof TdApi.PageBlockDetails) || (L0 = this.f10545n0.m34228L0(Ue)) == -1)) {
-                if (((C4699m1) Ue).m26461D0()) {
+            if (!(Ue.mo26660L(view, false) || !(Ue.m27275y() instanceof TdApi.PageBlockDetails) || (L0 = this.f10545n0.m34231L0(Ue)) == -1)) {
+                if (((C4699m1) Ue).m26462D0()) {
                     try {
-                        ArrayList<AbstractC4576a1> N = AbstractC4576a1.m27289N(this, m31343Ve(), m9131x9().f10550b, Ue, this, null);
+                        ArrayList<AbstractC4576a1> N = AbstractC4576a1.m27291N(this, m31345Ve(), m9131x9().f10550b, Ue, this, null);
                         C2964ra[] raVarArr = new C2964ra[N.size()];
                         Iterator<AbstractC4576a1> it = N.iterator();
                         while (it.hasNext()) {
                             AbstractC4576a1 next = it.next();
-                            raVarArr[i] = new C2964ra(next.mo26319z()).m32870G(next);
+                            raVarArr[i] = new C2964ra(next.mo26320z()).m32873G(next);
                             i++;
                         }
-                        this.f10545n0.m34188b1(L0 + 1, raVarArr);
+                        this.f10545n0.m34191b1(L0 + 1, raVarArr);
                     } catch (Throwable th) {
                         Log.m14725e("Unsupported instant view block", th, new Object[0]);
-                        mo4347s().m14584H3().m8985g(view).m8972C(this.f30167b, R.string.InstantViewError).m8919F();
+                        mo4347s().m14584H3().m8985g(view).m8972C(this.f30170b, R.string.InstantViewError).m8919F();
                         return;
                     }
                 } else {
                     int i2 = L0 + 1;
-                    for (int i3 = i2; i3 < this.f10545n0.m34240F0().size() && ((AbstractC4576a1) this.f10545n0.m34243E0(i3).m32844d()).m27293G(Ue); i3++) {
+                    for (int i3 = i2; i3 < this.f10545n0.m34243F0().size() && ((AbstractC4576a1) this.f10545n0.m34246E0(i3).m32847d()).m27295G(Ue); i3++) {
                         i++;
                     }
-                    this.f10545n0.m34204V1(i2, i);
+                    this.f10545n0.m34207V1(i2, i);
                 }
-                m31340Ye();
+                m31342Ye();
             }
         }
     }
 
     @Override
     public boolean onLongClick(View view) {
-        AbstractC4576a1 Ue = m31344Ue(view);
-        return Ue != null && Ue.mo26460H() && Ue.mo26659L(view, true);
+        AbstractC4576a1 Ue = m31346Ue(view);
+        return Ue != null && Ue.mo26461H() && Ue.mo26660L(view, true);
     }
 
     @Override
     public void mo414p0(int i, View$OnClickListenerC9170d1 d1Var, LinearLayout linearLayout) {
         if (i == R.id.menu_iv) {
-            linearLayout.addView(d1Var.m10134A2(R.id.menu_btn_forward, R.drawable.baseline_share_arrow_24, mo9375O9(), this, C1357a0.m37541i(52.0f), C11532q.m113b(), d1Var), C4403w.m27984G2() ? 0 : -1);
+            linearLayout.addView(d1Var.m10133A2(R.id.menu_btn_forward, R.drawable.baseline_share_arrow_24, mo9375O9(), this, C1357a0.m37544i(52.0f), C11532q.m113b(), d1Var), C4403w.m27986G2() ? 0 : -1);
         }
     }
 
@@ -579,11 +579,11 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
             i = 8;
         }
         int i2 = -1;
-        for (int size = this.f10545n0.m34240F0().size() - 1; size >= 0; size--) {
-            AbstractC4576a1 a1Var = (AbstractC4576a1) this.f10545n0.m34240F0().get(size).m32844d();
-            C4756s Y = a1Var instanceof C4599c1 ? ((C4599c1) a1Var).m27065Y() : null;
-            if (Y != null && Y.m26330v() == i) {
-                TdApi.Message a0 = Y.m26266a0();
+        for (int size = this.f10545n0.m34243F0().size() - 1; size >= 0; size--) {
+            AbstractC4576a1 a1Var = (AbstractC4576a1) this.f10545n0.m34243F0().get(size).m32847d();
+            C4756s Y = a1Var instanceof C4599c1 ? ((C4599c1) a1Var).m27067Y() : null;
+            if (Y != null && Y.m26331v() == i) {
+                TdApi.Message a0 = Y.m26267a0();
                 if (a0 == message) {
                     if (i2 == -1) {
                         i2 = arrayList.size();
@@ -604,15 +604,15 @@ public class View$OnClickListenerC3147u9 extends AbstractC9323v4<C3149b> impleme
     public void mo255t2(TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         } else if (constructor != 778202453) {
             Log.unexpectedTdlibResponse(object, TdApi.GetWebPageInstantView.class, TdApi.WebPageInstantView.class);
         } else {
             final TdApi.WebPageInstantView webPageInstantView = (TdApi.WebPageInstantView) object;
-            this.f30167b.m2485dd().post(new Runnable() {
+            this.f30170b.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC3147u9.this.m31341Xe(webPageInstantView);
+                    View$OnClickListenerC3147u9.this.m31343Xe(webPageInstantView);
                 }
             });
         }

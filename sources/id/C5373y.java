@@ -54,7 +54,7 @@ public class C5373y {
             while (i2 < mediaExtractor.getTrackCount()) {
                 MediaFormat trackFormat = mediaExtractor.getTrackFormat(i2);
                 String string = trackFormat.getString("mime");
-                if (!C5070i.m24061i(string) && string.startsWith("video/")) {
+                if (!C5070i.m24062i(string) && string.startsWith("video/")) {
                     long j = trackFormat.getLong("durationUs");
                     this.f17662f = j / 1000000.0d;
                     if (trackFormat.containsKey("frame-rate")) {
@@ -81,7 +81,7 @@ public class C5373y {
                     long sampleTime = mediaExtractor.getSampleTime();
                     if (mediaExtractor.advance()) {
                         long sampleTime2 = mediaExtractor.getSampleTime();
-                        if (!C5063c.m24144b(mediaExtractor.getSampleFlags(), 1)) {
+                        if (!C5063c.m24145b(mediaExtractor.getSampleFlags(), 1)) {
                             mediaExtractor.seekTo(sampleTime2, 1);
                             sampleTime2 = mediaExtractor.getSampleTime();
                         }
@@ -100,57 +100,57 @@ public class C5373y {
             return;
         }
         mediaExtractor.release();
-        m23044s();
+        m23045s();
         if (this.f17659c == null) {
             throw new IllegalArgumentException("Unsupported video format");
         }
     }
 
-    public static int m23050m(C10453g gVar) {
-        if (gVar == null || gVar.equals(C10453g.f33523j)) {
+    public static int m23051m(C10453g gVar) {
+        if (gVar == null || gVar.equals(C10453g.f33526j)) {
             return 0;
         }
-        if (gVar.equals(C10453g.f33524k)) {
+        if (gVar.equals(C10453g.f33527k)) {
             return 90;
         }
-        if (gVar.equals(C10453g.f33525l)) {
+        if (gVar.equals(C10453g.f33528l)) {
             return 180;
         }
-        if (gVar.equals(C10453g.f33526m)) {
+        if (gVar.equals(C10453g.f33529m)) {
             return 270;
         }
         throw new IllegalArgumentException();
     }
 
-    public static C10453g m23047p(int i) {
-        int l = C5069h.m24081l(i, 360);
+    public static C10453g m23048p(int i) {
+        int l = C5069h.m24082l(i, 360);
         if (l == 0) {
-            return C10453g.f33523j;
+            return C10453g.f33526j;
         }
         if (l == 90) {
-            return C10453g.f33524k;
+            return C10453g.f33527k;
         }
         if (l == 180) {
-            return C10453g.f33525l;
+            return C10453g.f33528l;
         }
         if (l == 270) {
-            return C10453g.f33526m;
+            return C10453g.f33529m;
         }
         throw new IllegalArgumentException();
     }
 
-    public boolean m23062a() {
+    public boolean m23063a() {
         return this.f17662f > 0.0d && this.f17667k;
     }
 
-    public double m23061b(double d, double d2, boolean z) {
-        if (m23046q(z)) {
-            d2 = Math.max(d, m23059d(d2, 3));
+    public double m23062b(double d, double d2, boolean z) {
+        if (m23047q(z)) {
+            d2 = Math.max(d, m23060d(d2, 3));
             while (true) {
                 if (d != d2 && d2 - d >= 0.5d) {
                     break;
                 }
-                double d3 = m23059d(d2, 1);
+                double d3 = m23060d(d2, 1);
                 if (d2 == d3) {
                     break;
                 }
@@ -160,11 +160,11 @@ public class C5373y {
         return d2;
     }
 
-    public double m23060c(double d, double d2, boolean z) {
-        if (m23046q(z)) {
-            d = Math.min(d2, m23059d(d, 3));
+    public double m23061c(double d, double d2, boolean z) {
+        if (m23047q(z)) {
+            d = Math.min(d2, m23060d(d, 3));
             while (d != 0.0d && (d == d2 || d2 - d < 0.5d)) {
-                double d3 = m23059d(d, 2);
+                double d3 = m23060d(d, 2);
                 if (d3 == d) {
                     break;
                 }
@@ -174,7 +174,7 @@ public class C5373y {
         return d;
     }
 
-    public final double m23059d(double d, int i) {
+    public final double m23060d(double d, int i) {
         MediaExtractor mediaExtractor = this.f17658b;
         int i2 = 0;
         if (mediaExtractor != null) {
@@ -208,7 +208,7 @@ public class C5373y {
                     if (sampleTime3 == -1) {
                         return this.f17662f;
                     }
-                    if (!C5063c.m24144b(this.f17658b.getSampleFlags(), 1)) {
+                    if (!C5063c.m24145b(this.f17658b.getSampleFlags(), 1)) {
                         this.f17658b.seekTo(sampleTime3, 1);
                         sampleTime3 = this.f17658b.getSampleTime();
                         if (sampleTime3 == -1) {
@@ -267,24 +267,24 @@ public class C5373y {
         }
     }
 
-    public boolean m23058e(java.lang.String r32, boolean r33, int r34, double r35, double r37, p139jb.AbstractC5920l r39, java.util.concurrent.atomic.AtomicBoolean r40) {
-        throw new UnsupportedOperationException("Method not decompiled: id.C5373y.m23058e(java.lang.String, boolean, int, double, double, jb.l, java.util.concurrent.atomic.AtomicBoolean):boolean");
+    public boolean m23059e(java.lang.String r32, boolean r33, int r34, double r35, double r37, p139jb.AbstractC5920l r39, java.util.concurrent.atomic.AtomicBoolean r40) {
+        throw new UnsupportedOperationException("Method not decompiled: id.C5373y.m23059e(java.lang.String, boolean, int, double, double, jb.l, java.util.concurrent.atomic.AtomicBoolean):boolean");
     }
 
-    public boolean m23057f(String str, boolean z, int i, AbstractC5920l lVar, AtomicBoolean atomicBoolean) {
-        return m23058e(str, z, i, -1.0d, -1.0d, lVar, atomicBoolean);
+    public boolean m23058f(String str, boolean z, int i, AbstractC5920l lVar, AtomicBoolean atomicBoolean) {
+        return m23059e(str, z, i, -1.0d, -1.0d, lVar, atomicBoolean);
     }
 
-    public double m23056g(double d) {
-        return m23059d(d, 3);
+    public double m23057g(double d) {
+        return m23060d(d, 3);
     }
 
-    public long m23055h() {
+    public long m23056h() {
         return this.f17666j;
     }
 
-    public Bitmap m23054i(double d, int i) {
-        MediaMetadataRetriever l = m23051l();
+    public Bitmap m23055i(double d, int i) {
+        MediaMetadataRetriever l = m23052l();
         if (l == null) {
             return null;
         }
@@ -294,18 +294,18 @@ public class C5373y {
         }
         float f = i;
         float max = Math.max(f / frameAtTime.getWidth(), f / frameAtTime.getHeight());
-        return max < 1.0f ? C7907b.m14351v(frameAtTime, (int) (frameAtTime.getWidth() * max), (int) (frameAtTime.getHeight() * max), false) : frameAtTime;
+        return max < 1.0f ? C7907b.m14350v(frameAtTime, (int) (frameAtTime.getWidth() * max), (int) (frameAtTime.getHeight() * max), false) : frameAtTime;
     }
 
-    public int m23053j() {
+    public int m23054j() {
         return this.f17665i;
     }
 
-    public double m23052k() {
+    public double m23053k() {
         return this.f17664h;
     }
 
-    public final MediaMetadataRetriever m23051l() {
+    public final MediaMetadataRetriever m23052l() {
         Throwable th;
         MediaMetadataRetriever mediaMetadataRetriever;
         MediaMetadataRetriever mediaMetadataRetriever2 = this.f17670n;
@@ -336,21 +336,21 @@ public class C5373y {
         return mediaMetadataRetriever2;
     }
 
-    public double m23049n() {
+    public double m23050n() {
         return this.f17662f;
     }
 
-    public double m23048o() {
+    public double m23049o() {
         return this.f17663g;
     }
 
-    public boolean m23046q(boolean z) {
+    public boolean m23047q(boolean z) {
         return true;
     }
 
-    public final C7304d m23045r(boolean z, int i, double d, double d2) {
+    public final C7304d m23046r(boolean z, int i, double d, double d2) {
         C8277a aVar;
-        m23044s();
+        m23045s();
         C7304d dVar = this.f17659c;
         if (dVar != null) {
             double d3 = -1.0d;
@@ -365,8 +365,8 @@ public class C5373y {
                     } else {
                         long j = 0;
                         double d4 = 0.0d;
-                        long g = gVar.mo12961D().m17081g();
-                        long[] R = gVar.mo12958R();
+                        long g = gVar.mo12960D().m17081g();
+                        long[] R = gVar.mo12957R();
                         int length = R.length;
                         double d5 = d3;
                         long j2 = -1;
@@ -395,7 +395,7 @@ public class C5373y {
                         aVar = new C8277a(new C8280d(gVar, j3, j5));
                     }
                     if (i != 0) {
-                        aVar.mo12961D().m17073p(m23047p(m23050m(aVar.mo12961D().m17082f()) + i));
+                        aVar.mo12960D().m17073p(m23048p(m23051m(aVar.mo12960D().m17082f()) + i));
                     }
                     this.f17659c.m17101a(aVar);
                     d3 = -1.0d;
@@ -406,7 +406,7 @@ public class C5373y {
         throw new IllegalStateException();
     }
 
-    public final void m23044s() {
+    public final void m23045s() {
         C7304d dVar;
         boolean z;
         try {
@@ -425,14 +425,14 @@ public class C5373y {
                     break;
                 }
                 AbstractC7307g next = it.next();
-                long[] G = next.mo12960G();
+                long[] G = next.mo12959G();
                 if (!(G == null || G.length == 0)) {
                     double[] dArr = new double[G.length];
-                    long g2 = next.mo12961D().m17081g();
-                    this.f17663g = next.mo12961D().m17078j();
-                    this.f17664h = next.mo12961D().m17085c();
+                    long g2 = next.mo12960D().m17081g();
+                    this.f17663g = next.mo12960D().m17078j();
+                    this.f17664h = next.mo12960D().m17085c();
                     long j = 0;
-                    long[] R = next.mo12958R();
+                    long[] R = next.mo12957R();
                     int length = R.length;
                     double d = 0.0d;
                     for (int i = 0; i < length; i++) {
@@ -468,7 +468,7 @@ public class C5373y {
         }
     }
 
-    public void m23043t() {
+    public void m23044t() {
         MediaExtractor mediaExtractor = this.f17658b;
         if (mediaExtractor != null) {
             try {
@@ -487,7 +487,7 @@ public class C5373y {
         }
     }
 
-    public final void m23042u(int i) {
+    public final void m23043u(int i) {
         MediaExtractor mediaExtractor;
         int i2 = this.f17669m;
         if (i2 != i && (mediaExtractor = this.f17658b) != null) {

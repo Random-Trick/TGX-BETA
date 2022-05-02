@@ -12,18 +12,18 @@ import p163l5.AbstractC6346h;
 import p163l5.C6336e;
 
 public class C11294f0 extends AbstractC6346h<AbstractC11299i> {
-    public final String f36204r0;
-    public final AbstractC11323z<AbstractC11299i> f36205s0 = new C11292e0(this);
+    public final String f36207r0;
+    public final AbstractC11323z<AbstractC11299i> f36208s0 = new C11292e0(this);
 
     public C11294f0(Context context, Looper looper, AbstractC5867f.AbstractC5869b bVar, AbstractC5867f.AbstractC5870c cVar, String str, C6336e eVar) {
         super(context, looper, 23, eVar, bVar, cVar);
-        this.f36204r0 = str;
+        this.f36207r0 = str;
     }
 
     @Override
     public final Bundle mo943D() {
         Bundle bundle = new Bundle();
-        bundle.putString("client_name", this.f36204r0);
+        bundle.putString("client_name", this.f36207r0);
         return bundle;
     }
 

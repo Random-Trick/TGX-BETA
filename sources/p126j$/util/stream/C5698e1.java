@@ -8,37 +8,37 @@ import p126j$.util.function.Consumer;
 
 final class C5698e1 extends AbstractC5718i1 implements AbstractC5602J0 {
     @Override
-    public void mo22176a(Consumer consumer) {
-        AbstractC5572D0.m22404s(this, consumer);
+    public void mo22177a(Consumer consumer) {
+        AbstractC5572D0.m22405s(this, consumer);
     }
 
-    public void mo22154n(Double[] dArr, int i) {
-        AbstractC5572D0.m22408p(this, dArr, i);
+    public void mo22155n(Double[] dArr, int i) {
+        AbstractC5572D0.m22409p(this, dArr, i);
     }
 
-    public AbstractC5602J0 mo22151q(long j, long j2, AbstractC5531m mVar) {
-        return AbstractC5572D0.m22401v(this, j, j2);
+    public AbstractC5602J0 mo22152q(long j, long j2, AbstractC5531m mVar) {
+        return AbstractC5572D0.m22402v(this, j, j2);
     }
 
     @Override
-    public AbstractC5627O0 mo22158f(int i) {
+    public AbstractC5627O0 mo22159f(int i) {
         throw new IndexOutOfBoundsException();
     }
 
     @Override
-    public Object mo22156l() {
+    public Object mo22157l() {
         double[] dArr;
         dArr = AbstractC5572D0.f18122g;
         return dArr;
     }
 
     @Override
-    public AbstractC5466E mo42629spliterator() {
-        return AbstractC5482V.m22598b();
+    public AbstractC5466E mo42632spliterator() {
+        return AbstractC5482V.m22599b();
     }
 
     @Override
-    public AbstractC5468G mo42629spliterator() {
-        return AbstractC5482V.m22598b();
+    public AbstractC5468G mo42632spliterator() {
+        return AbstractC5482V.m22599b();
     }
 }

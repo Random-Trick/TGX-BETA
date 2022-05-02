@@ -40,7 +40,7 @@ public final class C6059d extends AbstractC6069i {
             return false;
         }
         C6059d dVar = (C6059d) obj;
-        return this.f19275c == dVar.f19275c && this.f19271M == dVar.f19271M && C1216l0.m37982c(this.f19274b, dVar.f19274b) && Arrays.equals(this.f19272N, dVar.f19272N) && Arrays.equals(this.f19273O, dVar.f19273O);
+        return this.f19275c == dVar.f19275c && this.f19271M == dVar.f19271M && C1216l0.m37985c(this.f19274b, dVar.f19274b) && Arrays.equals(this.f19272N, dVar.f19272N) && Arrays.equals(this.f19273O, dVar.f19273O);
     }
 
     public int hashCode() {
@@ -63,11 +63,11 @@ public final class C6059d extends AbstractC6069i {
 
     public C6059d(Parcel parcel) {
         super("CTOC");
-        this.f19274b = (String) C1216l0.m37968j(parcel.readString());
+        this.f19274b = (String) C1216l0.m37971j(parcel.readString());
         boolean z = true;
         this.f19275c = parcel.readByte() != 0;
         this.f19271M = parcel.readByte() == 0 ? false : z;
-        this.f19272N = (String[]) C1216l0.m37968j(parcel.createStringArray());
+        this.f19272N = (String[]) C1216l0.m37971j(parcel.createStringArray());
         int readInt = parcel.readInt();
         this.f19273O = new AbstractC6069i[readInt];
         for (int i = 0; i < readInt; i++) {

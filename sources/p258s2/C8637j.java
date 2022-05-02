@@ -3,7 +3,7 @@ package p258s2;
 import java.io.UnsupportedEncodingException;
 
 public final class C8637j {
-    public static String m11845a(byte[] bArr) {
+    public static String m11844a(byte[] bArr) {
         if (bArr == null) {
             return null;
         }
@@ -14,7 +14,7 @@ public final class C8637j {
         }
     }
 
-    public static byte[] m11844b(String str) {
+    public static byte[] m11843b(String str) {
         if (str == null) {
             return null;
         }
@@ -25,7 +25,7 @@ public final class C8637j {
         }
     }
 
-    public static int m11843c(String str) {
+    public static int m11842c(String str) {
         if (str == null) {
             return 0;
         }

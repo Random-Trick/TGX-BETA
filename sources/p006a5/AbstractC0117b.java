@@ -1,13 +1,13 @@
 package p006a5;
 
 public interface AbstractC0117b {
-    void mo42191a(C0115a aVar);
+    void mo42194a(C0115a aVar);
 
-    C0115a mo42190b();
+    C0115a mo42193b();
 
-    void mo42189c(C0115a[] aVarArr);
+    void mo42192c(C0115a[] aVarArr);
 
-    void mo42188d();
+    void mo42191d();
 
-    int mo42187e();
+    int mo42190e();
 }

@@ -45,14 +45,14 @@ public final class ServiceConnectionC4970j implements ServiceConnection {
 
             @Override
             public final boolean handleMessage(Message message) {
-                return this.f16911a.m24351d(message);
+                return this.f16911a.m24352d(message);
             }
         }));
         this.f16904M = new ArrayDeque();
         this.f16905N = new SparseArray<>();
     }
 
-    public final void m24354a() {
+    public final void m24355a() {
         ScheduledExecutorService scheduledExecutorService;
         scheduledExecutorService = this.f16906O.f16901b;
         scheduledExecutorService.execute(new Runnable(this) {
@@ -72,7 +72,7 @@ public final class ServiceConnectionC4970j implements ServiceConnection {
                     synchronized (jVar) {
                         if (jVar.f16907a == 2) {
                             if (jVar.f16904M.isEmpty()) {
-                                jVar.m24349f();
+                                jVar.m24350f();
                                 return;
                             }
                             poll = jVar.f16904M.poll();
@@ -89,7 +89,7 @@ public final class ServiceConnectionC4970j implements ServiceConnection {
 
                                 @Override
                                 public final void run() {
-                                    this.f16915a.m24353b(this.f16916b.f16921a);
+                                    this.f16915a.m24354b(this.f16916b.f16921a);
                                 }
                             }, 30L, TimeUnit.SECONDS);
                         } else {
@@ -110,21 +110,21 @@ public final class ServiceConnectionC4970j implements ServiceConnection {
                     obtain.arg1 = poll.f16921a;
                     obtain.replyTo = messenger;
                     Bundle bundle = new Bundle();
-                    bundle.putBoolean("oneWay", poll.mo24340d());
+                    bundle.putBoolean("oneWay", poll.mo24341d());
                     bundle.putString("pkg", context.getPackageName());
                     bundle.putBundle("data", poll.f16924d);
                     obtain.setData(bundle);
                     try {
-                        jVar.f16909c.m24347a(obtain);
+                        jVar.f16909c.m24348a(obtain);
                     } catch (RemoteException e) {
-                        jVar.m24352c(2, e.getMessage());
+                        jVar.m24353c(2, e.getMessage());
                     }
                 }
             }
         });
     }
 
-    public final synchronized void m24353b(int i) {
+    public final synchronized void m24354b(int i) {
         AbstractC4981u<?> uVar = this.f16905N.get(i);
         if (uVar != null) {
             StringBuilder sb2 = new StringBuilder(31);
@@ -132,12 +132,12 @@ public final class ServiceConnectionC4970j implements ServiceConnection {
             sb2.append(i);
             Log.w("MessengerIpcClient", sb2.toString());
             this.f16905N.remove(i);
-            uVar.m24346b(new C4980t(3, "Timed out waiting for response"));
-            m24349f();
+            uVar.m24347b(new C4980t(3, "Timed out waiting for response"));
+            m24350f();
         }
     }
 
-    public final synchronized void m24352c(int i, String str) {
+    public final synchronized void m24353c(int i, String str) {
         Context context;
         if (Log.isLoggable("MessengerIpcClient", 3)) {
             String valueOf = String.valueOf(str);
@@ -151,16 +151,16 @@ public final class ServiceConnectionC4970j implements ServiceConnection {
                 Log.v("MessengerIpcClient", "Unbinding service");
             }
             this.f16907a = 4;
-            C8050a b = C8050a.m13702b();
+            C8050a b = C8050a.m13701b();
             context = this.f16906O.f16900a;
-            b.m13701c(context, this);
+            b.m13700c(context, this);
             C4980t tVar = new C4980t(i, str);
             for (AbstractC4981u<?> uVar : this.f16904M) {
-                uVar.m24346b(tVar);
+                uVar.m24347b(tVar);
             }
             this.f16904M.clear();
             for (int i3 = 0; i3 < this.f16905N.size(); i3++) {
-                this.f16905N.valueAt(i3).m24346b(tVar);
+                this.f16905N.valueAt(i3).m24347b(tVar);
             }
             this.f16905N.clear();
         } else if (i2 == 3) {
@@ -174,7 +174,7 @@ public final class ServiceConnectionC4970j implements ServiceConnection {
         }
     }
 
-    public final boolean m24351d(Message message) {
+    public final boolean m24352d(Message message) {
         int i = message.arg1;
         if (Log.isLoggable("MessengerIpcClient", 3)) {
             StringBuilder sb2 = new StringBuilder(41);
@@ -192,34 +192,34 @@ public final class ServiceConnectionC4970j implements ServiceConnection {
                 return true;
             }
             this.f16905N.remove(i);
-            m24349f();
+            m24350f();
             Bundle data = message.getData();
             if (data.getBoolean("unsupported", false)) {
-                uVar.m24346b(new C4980t(4, "Not supported by GmsCore"));
+                uVar.m24347b(new C4980t(4, "Not supported by GmsCore"));
             } else {
-                uVar.mo24341a(data);
+                uVar.mo24342a(data);
             }
             return true;
         }
     }
 
-    public final synchronized boolean m24350e(AbstractC4981u<?> uVar) {
+    public final synchronized boolean m24351e(AbstractC4981u<?> uVar) {
         Context context;
         ScheduledExecutorService scheduledExecutorService;
         int i = this.f16907a;
         if (i == 0) {
             this.f16904M.add(uVar);
-            C6378r.m20504m(this.f16907a == 0);
+            C6378r.m20505m(this.f16907a == 0);
             if (Log.isLoggable("MessengerIpcClient", 2)) {
                 Log.v("MessengerIpcClient", "Starting bind to GmsCore");
             }
             this.f16907a = 1;
             Intent intent = new Intent("com.google.android.c2dm.intent.REGISTER");
             intent.setPackage("com.google.android.gms");
-            C8050a b = C8050a.m13702b();
+            C8050a b = C8050a.m13701b();
             context = this.f16906O.f16900a;
-            if (!b.m13703a(context, intent, this, 1)) {
-                m24352c(0, "Unable to bind to service");
+            if (!b.m13702a(context, intent, this, 1)) {
+                m24353c(0, "Unable to bind to service");
             } else {
                 scheduledExecutorService = this.f16906O.f16901b;
                 scheduledExecutorService.schedule(new Runnable(this) {
@@ -231,7 +231,7 @@ public final class ServiceConnectionC4970j implements ServiceConnection {
 
                     @Override
                     public final void run() {
-                        this.f16910a.m24348g();
+                        this.f16910a.m24349g();
                     }
                 }, 30L, TimeUnit.SECONDS);
             }
@@ -250,27 +250,27 @@ public final class ServiceConnectionC4970j implements ServiceConnection {
             return false;
         } else {
             this.f16904M.add(uVar);
-            m24354a();
+            m24355a();
             return true;
         }
     }
 
-    public final synchronized void m24349f() {
+    public final synchronized void m24350f() {
         Context context;
         if (this.f16907a == 2 && this.f16904M.isEmpty() && this.f16905N.size() == 0) {
             if (Log.isLoggable("MessengerIpcClient", 2)) {
                 Log.v("MessengerIpcClient", "Finished handling requests, unbinding");
             }
             this.f16907a = 3;
-            C8050a b = C8050a.m13702b();
+            C8050a b = C8050a.m13701b();
             context = this.f16906O.f16900a;
-            b.m13701c(context, this);
+            b.m13700c(context, this);
         }
     }
 
-    public final synchronized void m24348g() {
+    public final synchronized void m24349g() {
         if (this.f16907a == 1) {
-            m24352c(1, "Timed out while binding");
+            m24353c(1, "Timed out while binding");
         }
     }
 
@@ -297,15 +297,15 @@ public final class ServiceConnectionC4970j implements ServiceConnection {
                 synchronized (jVar) {
                     try {
                         if (iBinder2 == null) {
-                            jVar.m24352c(0, "Null service connection");
+                            jVar.m24353c(0, "Null service connection");
                             return;
                         }
                         try {
                             jVar.f16909c = new C4979s(iBinder2);
                             jVar.f16907a = 2;
-                            jVar.m24354a();
+                            jVar.m24355a();
                         } catch (RemoteException e) {
-                            jVar.m24352c(0, e.getMessage());
+                            jVar.m24353c(0, e.getMessage());
                         }
                     } catch (Throwable th) {
                         throw th;
@@ -331,7 +331,7 @@ public final class ServiceConnectionC4970j implements ServiceConnection {
 
             @Override
             public final void run() {
-                this.f16917a.m24352c(2, "Service disconnected");
+                this.f16917a.m24353c(2, "Service disconnected");
             }
         });
     }

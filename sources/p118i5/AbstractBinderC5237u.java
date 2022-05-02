@@ -10,15 +10,15 @@ public abstract class AbstractBinderC5237u extends AbstractBinderC5235s {
         super(bArr);
     }
 
-    public abstract byte[] mo23560E0();
+    public abstract byte[] mo23561E0();
 
     @Override
-    public final byte[] mo23559s() {
+    public final byte[] mo23560s() {
         byte[] bArr;
         synchronized (this) {
             bArr = this.f17385b.get();
             if (bArr == null) {
-                bArr = mo23560E0();
+                bArr = mo23561E0();
                 this.f17385b = new WeakReference<>(bArr);
             }
         }

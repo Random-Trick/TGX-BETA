@@ -14,6 +14,6 @@ public class BinderC4307r extends AbstractBinderC11293f {
 
     @Override
     public final void mo925J0(C11285b bVar) {
-        C6164s.m21135b(bVar.mo952a(), this.f14375a);
+        C6164s.m21136b(bVar.mo952a(), this.f14375a);
     }
 }

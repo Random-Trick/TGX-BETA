@@ -14,13 +14,13 @@ class C5794x2 extends AbstractC5724j2 {
     }
 
     @Override
-    public void mo22135c(double d) {
+    public void mo22136c(double d) {
         long j = this.f18508b;
         if (j == 0) {
             long j2 = this.f18509c;
             if (j2 > 0) {
                 this.f18509c = j2 - 1;
-                this.f18394a.mo22135c(d);
+                this.f18394a.mo22136c(d);
                 return;
             }
             return;
@@ -29,12 +29,12 @@ class C5794x2 extends AbstractC5724j2 {
     }
 
     @Override
-    public void mo22131j(long j) {
-        this.f18394a.mo22131j(AbstractC5572D0.m22448B(j, this.f18510d.f18518u, this.f18509c));
+    public void mo22132j(long j) {
+        this.f18394a.mo22132j(AbstractC5572D0.m22449B(j, this.f18510d.f18518u, this.f18509c));
     }
 
     @Override
-    public boolean mo22130t() {
-        return this.f18509c == 0 || this.f18394a.mo22130t();
+    public boolean mo22131t() {
+        return this.f18509c == 0 || this.f18394a.mo22131t();
     }
 }

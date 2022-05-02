@@ -10,23 +10,23 @@ import javax.annotation.CheckForNull;
 public abstract class AbstractC1264i<E> extends AbstractC1258f<E> implements List<E>, RandomAccess {
     public static final AbstractC1272m<Object> f4627b = new C1260g(C1268k.f4629N, 0);
 
-    public static <E> AbstractC1264i<E> m37815t(Object[] objArr, int i) {
+    public static <E> AbstractC1264i<E> m37818t(Object[] objArr, int i) {
         if (i == 0) {
             return (AbstractC1264i<E>) C1268k.f4629N;
         }
         return new C1268k(objArr, i);
     }
 
-    public static <E> AbstractC1264i<E> m37814u(E e) {
+    public static <E> AbstractC1264i<E> m37817u(E e) {
         Object[] objArr = {e};
-        C1266j.m37810a(objArr, 1);
-        return m37815t(objArr, 1);
+        C1266j.m37813a(objArr, 1);
+        return m37818t(objArr, 1);
     }
 
-    public static <E> AbstractC1264i<E> m37813v(E e, E e2, E e3, E e4, E e5, E e6, E e7, E e8, E e9) {
+    public static <E> AbstractC1264i<E> m37816v(E e, E e2, E e3, E e4, E e5, E e6, E e7, E e8, E e9) {
         Object[] objArr = {e, e2, e3, e4, e5, e6, e7, e8, e9};
-        C1266j.m37810a(objArr, 9);
-        return m37815t(objArr, 9);
+        C1266j.m37813a(objArr, 9);
+        return m37818t(objArr, 9);
     }
 
     @Override
@@ -57,7 +57,7 @@ public abstract class AbstractC1264i<E> extends AbstractC1258f<E> implements Lis
             if (size == list.size()) {
                 if (list instanceof RandomAccess) {
                     for (int i = 0; i < size; i++) {
-                        if (C1281q0.m37798a(get(i), list.get(i))) {
+                        if (C1281q0.m37801a(get(i), list.get(i))) {
                         }
                     }
                     return true;
@@ -67,7 +67,7 @@ public abstract class AbstractC1264i<E> extends AbstractC1258f<E> implements Lis
                 while (true) {
                     if (it.hasNext()) {
                         if (it2.hasNext()) {
-                            if (!C1281q0.m37798a(it.next(), it2.next())) {
+                            if (!C1281q0.m37801a(it.next(), it2.next())) {
                                 break;
                             }
                         } else {
@@ -83,7 +83,7 @@ public abstract class AbstractC1264i<E> extends AbstractC1258f<E> implements Lis
     }
 
     @Override
-    public int mo37808h(Object[] objArr, int i) {
+    public int mo37811h(Object[] objArr, int i) {
         int size = size();
         for (int i2 = 0; i2 < size; i2++) {
             objArr[i2] = get(i2);
@@ -145,7 +145,7 @@ public abstract class AbstractC1264i<E> extends AbstractC1258f<E> implements Lis
     }
 
     public AbstractC1264i<E> subList(int i, int i2) {
-        C1250b.m37823c(i, i2, size());
+        C1250b.m37826c(i, i2, size());
         int i3 = i2 - i;
         if (i3 == size()) {
             return this;
@@ -163,7 +163,7 @@ public abstract class AbstractC1264i<E> extends AbstractC1258f<E> implements Lis
     }
 
     public final AbstractC1272m<E> listIterator(int i) {
-        C1250b.m37824b(i, size(), "index");
+        C1250b.m37827b(i, size(), "index");
         return isEmpty() ? (AbstractC1272m<E>) f4627b : new C1260g(this, i);
     }
 }

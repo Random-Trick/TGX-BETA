@@ -15,85 +15,85 @@ import p051db.C3950k;
 import p051db.C3953l;
 
 public class C7020s0 extends FrameLayoutFix implements GestureDetector$OnGestureListenerC0256a.AbstractC0257a {
-    public View f22247M;
-    public float f22248N;
-    public float f22249O;
-    public float f22250P;
-    public float f22251Q;
-    public boolean f22252R;
-    public boolean f22253S;
-    public GestureDetector$OnGestureListenerC0256a f22254T = new GestureDetector$OnGestureListenerC0256a(getContext(), this);
+    public View f22250M;
+    public float f22251N;
+    public float f22252O;
+    public float f22253P;
+    public float f22254Q;
+    public boolean f22255R;
+    public boolean f22256S;
+    public GestureDetector$OnGestureListenerC0256a f22257T = new GestureDetector$OnGestureListenerC0256a(getContext(), this);
 
     public class C7021a implements C3950k.AbstractC3952b {
-        public final float f22255M;
-        public final float f22256N;
-        public final int f22257O;
-        public final View f22259a;
-        public final float f22260b;
-        public final float f22261c;
+        public final float f22258M;
+        public final float f22259N;
+        public final int f22260O;
+        public final View f22262a;
+        public final float f22263b;
+        public final float f22264c;
 
         public C7021a(View view, float f, float f2, float f3, float f4, int i) {
-            this.f22259a = view;
-            this.f22260b = f;
-            this.f22261c = f2;
-            this.f22255M = f3;
-            this.f22256N = f4;
-            this.f22257O = i;
+            this.f22262a = view;
+            this.f22263b = f;
+            this.f22264c = f2;
+            this.f22258M = f3;
+            this.f22259N = f4;
+            this.f22260O = i;
         }
 
         @Override
         public void mo45P5(int i, float f, float f2, C3950k kVar) {
-            int measuredWidth = ((C7020s0.this.getMeasuredWidth() - this.f22259a.getMeasuredWidth()) - C7020s0.this.getPaddingLeft()) - C7020s0.this.getPaddingRight();
-            int measuredHeight = ((C7020s0.this.getMeasuredHeight() - this.f22259a.getMeasuredHeight()) - C7020s0.this.getPaddingTop()) - C7020s0.this.getPaddingBottom();
-            View view = this.f22259a;
-            float f3 = this.f22260b;
-            view.setTranslationX(f3 + (((this.f22261c * measuredWidth) - f3) * f));
-            View view2 = this.f22259a;
-            float f4 = this.f22255M;
-            view2.setTranslationY(f4 + (((this.f22256N * measuredHeight) - f4) * f));
+            int measuredWidth = ((C7020s0.this.getMeasuredWidth() - this.f22262a.getMeasuredWidth()) - C7020s0.this.getPaddingLeft()) - C7020s0.this.getPaddingRight();
+            int measuredHeight = ((C7020s0.this.getMeasuredHeight() - this.f22262a.getMeasuredHeight()) - C7020s0.this.getPaddingTop()) - C7020s0.this.getPaddingBottom();
+            View view = this.f22262a;
+            float f3 = this.f22263b;
+            view.setTranslationX(f3 + (((this.f22264c * measuredWidth) - f3) * f));
+            View view2 = this.f22262a;
+            float f4 = this.f22258M;
+            view2.setTranslationY(f4 + (((this.f22259N * measuredHeight) - f4) * f));
         }
 
         @Override
         public void mo35Y0(int i, float f, C3950k kVar) {
-            if (C1399s0.m37189c0(this.f22259a, this.f22257O)) {
-                this.f22259a.setTranslationX(0.0f);
-                this.f22259a.setTranslationY(0.0f);
-                C1399s0.m37145y0(this.f22259a);
-                C4868i.m24726c2().m24775V4(this.f22257O);
+            if (C1399s0.m37192c0(this.f22262a, this.f22260O)) {
+                this.f22262a.setTranslationX(0.0f);
+                this.f22262a.setTranslationY(0.0f);
+                C1399s0.m37148y0(this.f22262a);
+                C4868i.m24727c2().m24776V4(this.f22260O);
             }
         }
     }
 
     public class C7022b implements C3950k.AbstractC3952b {
-        public final float f22262M;
-        public final boolean f22263N;
-        public final View f22265a;
-        public final float f22266b;
-        public final float f22267c;
+        public final float f22265M;
+        public final boolean f22266N;
+        public final View f22268a;
+        public final float f22269b;
+        public final float f22270c;
 
         public C7022b(View view, float f, float f2, float f3, boolean z) {
-            this.f22265a = view;
-            this.f22266b = f;
-            this.f22267c = f2;
-            this.f22262M = f3;
-            this.f22263N = z;
+            this.f22268a = view;
+            this.f22269b = f;
+            this.f22270c = f2;
+            this.f22265M = f3;
+            this.f22266N = z;
         }
 
         @Override
         public void mo45P5(int i, float f, float f2, C3950k kVar) {
-            this.f22265a.setAlpha(this.f22266b * (1.0f - f));
-            View view = this.f22265a;
-            float f3 = this.f22267c;
+            this.f22268a.setAlpha(this.f22269b * (1.0f - f));
+            View view = this.f22268a;
+            float f3 = this.f22270c;
             view.setScaleX(f3 + ((0.7f - f3) * f));
-            View view2 = this.f22265a;
-            float f4 = this.f22262M;
+            View view2 = this.f22268a;
+            float f4 = this.f22265M;
             view2.setScaleY(f4 + ((0.7f - f4) * f));
         }
 
         @Override
         public void mo35Y0(int i, float f, C3950k kVar) {
-            C7020s0.this.removeView(this.f22265a);
-            if (this.f22263N && C7020s0.this.getChildCount() == 0 && C7020s0.this.getParent() != null) {
+            C7020s0.this.removeView(this.f22268a);
+            if (this.f22266N && C7020s0.this.getChildCount() == 0 && C7020s0.this.getParent() != null) {
                 ((ViewGroup) C7020s0.this.getParent()).removeView(C7020s0.this);
             }
         }
@@ -115,7 +115,7 @@ public class C7020s0 extends FrameLayoutFix implements GestureDetector$OnGesture
 
     public void m18089D1(final View view) {
         if (view.getTag() instanceof C3950k) {
-            ((C3950k) view.getTag()).m29542k();
+            ((C3950k) view.getTag()).m29544k();
         }
         if (view.getParent() == null) {
             addView(view);
@@ -134,17 +134,17 @@ public class C7020s0 extends FrameLayoutFix implements GestureDetector$OnGesture
 
             @Override
             public void mo35Y0(int i, float f, C3950k kVar2) {
-                C3953l.m29526a(this, i, f, kVar2);
+                C3953l.m29528a(this, i, f, kVar2);
             }
         }, C2057b.f7280b, 140L);
         view.setTag(kVar);
-        kVar.m29544i(1.0f);
+        kVar.m29546i(1.0f);
     }
 
     public final void m18088E1(float f, float f2) {
-        if (this.f22252R) {
-            View view = this.f22247M;
-            this.f22252R = false;
+        if (this.f22255R) {
+            View view = this.f22250M;
+            this.f22255R = false;
             float measuredHeight = getMeasuredHeight() / 2;
             int measuredHeight2 = view.getMeasuredHeight() / 2;
             float x = view.getX() + (view.getMeasuredWidth() / 2);
@@ -153,7 +153,7 @@ public class C7020s0 extends FrameLayoutFix implements GestureDetector$OnGesture
             float f4 = x > ((float) (getMeasuredWidth() / 2)) ? 1.0f : 0.0f;
             float f5 = measuredHeight2 / 2;
             float f6 = (y <= measuredHeight - f5 || y >= f5 + measuredHeight) ? y > measuredHeight ? 1.0f : 0.0f : 0.5f;
-            float q = C1357a0.m37533q();
+            float q = C1357a0.m37536q();
             if (!(f == 0.0f && f2 == 0.0f) && Math.max(Math.abs(f), Math.abs(f2)) > q) {
                 double degrees = Math.toDegrees(Math.atan2(f2, f));
                 double abs = Math.abs(degrees);
@@ -198,14 +198,14 @@ public class C7020s0 extends FrameLayoutFix implements GestureDetector$OnGesture
             float translationY = view.getTranslationY();
             C3950k kVar = (C3950k) view.getTag();
             if (kVar != null) {
-                kVar.m29542k();
+                kVar.m29544k();
             }
-            new C3950k(0, new C7021a(view, translationX, f3, translationY, f7, i4), C2057b.f7280b, 230L).m29544i(1.0f);
+            new C3950k(0, new C7021a(view, translationX, f3, translationY, f7, i4), C2057b.f7280b, 230L).m29546i(1.0f);
         }
     }
 
     public final View m18087F1(float f, float f2) {
-        if (this.f22253S) {
+        if (this.f22256S) {
             return null;
         }
         int childCount = getChildCount();
@@ -224,16 +224,16 @@ public class C7020s0 extends FrameLayoutFix implements GestureDetector$OnGesture
 
     public void m18084J1(View view, boolean z) {
         if (view.getTag() instanceof C3950k) {
-            ((C3950k) view.getTag()).m29542k();
+            ((C3950k) view.getTag()).m29544k();
         }
         C3950k kVar = new C3950k(0, new C7022b(view, view.getAlpha(), view.getScaleX(), view.getScaleY(), z), C2057b.f7280b, 140L);
         view.setTag(kVar);
-        kVar.m29544i(1.0f);
+        kVar.m29546i(1.0f);
     }
 
     @Override
     public boolean mo7205o7(float f, float f2) {
-        if (!this.f22252R) {
+        if (!this.f22255R) {
             return false;
         }
         m18088E1(f, f2);
@@ -248,27 +248,27 @@ public class C7020s0 extends FrameLayoutFix implements GestureDetector$OnGesture
         if (action == 0) {
             m18088E1(0.0f, 0.0f);
             View F1 = m18087F1(x, y);
-            this.f22247M = F1;
+            this.f22250M = F1;
             if (F1 == null) {
                 return true;
             }
-            this.f22254T.m41994a(motionEvent);
-            this.f22248N = x;
-            this.f22249O = y;
-            this.f22250P = this.f22247M.getTranslationX();
-            this.f22251Q = this.f22247M.getTranslationY();
-            C3950k kVar = (C3950k) this.f22247M.getTag();
-            if (kVar != null && kVar.m29531v()) {
-                kVar.m29542k();
-                this.f22252R = true;
+            this.f22257T.m41997a(motionEvent);
+            this.f22251N = x;
+            this.f22252O = y;
+            this.f22253P = this.f22250M.getTranslationX();
+            this.f22254Q = this.f22250M.getTranslationY();
+            C3950k kVar = (C3950k) this.f22250M.getTag();
+            if (kVar != null && kVar.m29533v()) {
+                kVar.m29544k();
+                this.f22255R = true;
                 return true;
             }
         } else if (action == 1) {
-            this.f22254T.m41994a(motionEvent);
-        } else if (action == 2 && this.f22247M != null && Math.max(Math.abs(x - this.f22248N), Math.abs(y - this.f22249O)) >= C1357a0.m37534p()) {
-            this.f22248N = x;
-            this.f22249O = y;
-            this.f22252R = true;
+            this.f22257T.m41997a(motionEvent);
+        } else if (action == 2 && this.f22250M != null && Math.max(Math.abs(x - this.f22251N), Math.abs(y - this.f22252O)) >= C1357a0.m37537p()) {
+            this.f22251N = x;
+            this.f22252O = y;
+            this.f22255R = true;
             return true;
         }
         return super.onInterceptTouchEvent(motionEvent);
@@ -282,6 +282,6 @@ public class C7020s0 extends FrameLayoutFix implements GestureDetector$OnGesture
     @Override
     public void requestDisallowInterceptTouchEvent(boolean z) {
         super.requestDisallowInterceptTouchEvent(z);
-        this.f22253S = z;
+        this.f22256S = z;
     }
 }

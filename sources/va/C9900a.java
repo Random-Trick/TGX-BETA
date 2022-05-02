@@ -9,7 +9,7 @@ public final class C9900a extends AbstractC9483a {
     @Override
     public Random mo6669e() {
         ThreadLocalRandom current = ThreadLocalRandom.current();
-        C8298k.m12935d(current, "current()");
+        C8298k.m12934d(current, "current()");
         return current;
     }
 }

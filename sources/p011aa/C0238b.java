@@ -59,10 +59,10 @@ public class C0238b implements AbstractC0237a {
         C10007i iVar = f732i;
         iVar.m6267c("setTrackFormat(" + dVar + ") format=" + mediaFormat);
         if (this.f737e.mo6239d(dVar) == EnumC7311c.COMPRESSING) {
-            this.f740h.m42024b(dVar, mediaFormat);
+            this.f740h.m42027b(dVar, mediaFormat);
         }
         this.f738f.mo6256p(dVar, mediaFormat);
-        m42030i();
+        m42033i();
     }
 
     @Override
@@ -80,7 +80,7 @@ public class C0238b implements AbstractC0237a {
         if (this.f733a) {
             this.f734b.writeSampleData(this.f739g.mo6239d(dVar).intValue(), byteBuffer, bufferInfo);
         } else {
-            m42031h(dVar, byteBuffer, bufferInfo);
+            m42034h(dVar, byteBuffer, bufferInfo);
         }
     }
 
@@ -91,7 +91,7 @@ public class C0238b implements AbstractC0237a {
         }
     }
 
-    public final void m42032g() {
+    public final void m42035g() {
         if (!this.f735c.isEmpty()) {
             this.f736d.flip();
             C10007i iVar = f732i;
@@ -108,7 +108,7 @@ public class C0238b implements AbstractC0237a {
         }
     }
 
-    public final void m42031h(EnumC7313d dVar, ByteBuffer byteBuffer, MediaCodec.BufferInfo bufferInfo) {
+    public final void m42034h(EnumC7313d dVar, ByteBuffer byteBuffer, MediaCodec.BufferInfo bufferInfo) {
         if (this.f736d == null) {
             this.f736d = ByteBuffer.allocateDirect(Log.TAG_PAINT).order(ByteOrder.nativeOrder());
         }
@@ -120,7 +120,7 @@ public class C0238b implements AbstractC0237a {
         this.f735c.add(new C0240b(dVar, bufferInfo));
     }
 
-    public final void m42030i() {
+    public final void m42033i() {
         if (!this.f733a) {
             AbstractC10008j<EnumC7311c> jVar = this.f737e;
             EnumC7313d dVar = EnumC7313d.VIDEO;
@@ -150,7 +150,7 @@ public class C0238b implements AbstractC0237a {
                 }
                 this.f734b.start();
                 this.f733a = true;
-                m42032g();
+                m42035g();
             }
         }
     }

@@ -16,9 +16,9 @@ public final class C1257e0 implements AbstractC1289y {
 
     public C1257e0(Context context, AbstractC1285u uVar) {
         this.f4620c = uVar;
-        C11229a aVar = C11229a.f35947g;
-        C1165r.m38247f(context);
-        final AbstractC10357g g = C1165r.m38250c().m38246g(aVar);
+        C11229a aVar = C11229a.f35950g;
+        C1165r.m38250f(context);
+        final AbstractC10357g g = C1165r.m38253c().m38249g(aVar);
         if (aVar.mo1185a().contains(C10352b.m5368b("json"))) {
             this.f4618a = new C3896w(new AbstractC6794b() {
                 @Override

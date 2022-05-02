@@ -50,10 +50,10 @@ public abstract class AbstractView$OnClickListenerC3371ys<T extends C4868i.Abstr
 
         @Override
         public void mo394V2(C2964ra raVar, C9137c cVar, boolean z) {
-            cVar.setDrawModifier(raVar.m32840f());
-            if (raVar.m32835j() == R.id.btn_settings) {
-                C4868i.AbstractC4872d dVar = (C4868i.AbstractC4872d) raVar.m32844d();
-                boolean equals = dVar.equals(AbstractView$OnClickListenerC3371ys.this.mo30658Tg());
+            cVar.setDrawModifier(raVar.m32843f());
+            if (raVar.m32838j() == R.id.btn_settings) {
+                C4868i.AbstractC4872d dVar = (C4868i.AbstractC4872d) raVar.m32847d();
+                boolean equals = dVar.equals(AbstractView$OnClickListenerC3371ys.this.mo30660Tg());
                 int i = 0;
                 boolean z2 = AbstractView$OnClickListenerC3371ys.this.f11220N0 != null && AbstractView$OnClickListenerC3371ys.this.f11220N0.equals(dVar);
                 if (equals) {
@@ -62,22 +62,22 @@ public abstract class AbstractView$OnClickListenerC3371ys<T extends C4868i.Abstr
                     TdApi.File file = null;
                     if (z2) {
                         if (!AbstractView$OnClickListenerC3371ys.this.f11219M0) {
-                            file = dVar.m24537c();
+                            file = dVar.m24538c();
                         }
-                        cVar.setData(C4403w.m27822u0(file, AbstractView$OnClickListenerC3371ys.this.f11216J0, false));
+                        cVar.setData(C4403w.m27824u0(file, AbstractView$OnClickListenerC3371ys.this.f11216J0, false));
                     } else {
-                        int d = dVar.mo24530d(true);
+                        int d = dVar.mo24531d(true);
                         boolean z3 = d == 1;
                         if (!z3) {
-                            file = dVar.m24537c();
+                            file = dVar.m24538c();
                         }
-                        cVar.setData(C4403w.m27822u0(file, dVar.mo24528g() ? AbstractView$OnClickListenerC3371ys.this.f11213G0 : d == 2 ? AbstractView$OnClickListenerC3371ys.this.f11215I0 : AbstractView$OnClickListenerC3371ys.this.f11214H0, true ^ z3));
+                        cVar.setData(C4403w.m27824u0(file, dVar.mo24529g() ? AbstractView$OnClickListenerC3371ys.this.f11213G0 : d == 2 ? AbstractView$OnClickListenerC3371ys.this.f11215I0 : AbstractView$OnClickListenerC3371ys.this.f11214H0, true ^ z3));
                     }
                 }
                 if (AbstractView$OnClickListenerC3371ys.this.f11220N0 == null) {
                     z2 = equals;
                 }
-                C6985o2 O1 = cVar.m10216O1();
+                C6985o2 O1 = cVar.m10215O1();
                 if (!z || z2) {
                     O1.m18179b(equals, z);
                 }
@@ -86,7 +86,7 @@ public abstract class AbstractView$OnClickListenerC3371ys<T extends C4868i.Abstr
                     i = R.id.theme_color_textNeutral;
                 }
                 cVar.setDataColorId(i);
-                cVar.getReceiver().m20819G(dVar.m24536e());
+                cVar.getReceiver().m20820G(dVar.m24537e());
             }
         }
     }
@@ -96,18 +96,18 @@ public abstract class AbstractView$OnClickListenerC3371ys<T extends C4868i.Abstr
         }
 
         @Override
-        public void mo23818a(View view, Canvas canvas) {
-            C5137q.m23834a(this, view, canvas);
+        public void mo23819a(View view, Canvas canvas) {
+            C5137q.m23835a(this, view, canvas);
         }
 
         @Override
-        public void mo23817b(View view, Canvas canvas) {
+        public void mo23818b(View view, Canvas canvas) {
             C6257p receiver = ((C9137c) view).getReceiver();
-            int i = C1357a0.m37541i(18.0f);
-            int i2 = C1357a0.m37541i(64.0f) - (C1357a0.m37541i(12.0f) * 2);
+            int i = C1357a0.m37544i(18.0f);
+            int i2 = C1357a0.m37544i(64.0f) - (C1357a0.m37544i(12.0f) * 2);
             int measuredWidth = (view.getMeasuredWidth() - i) - i2;
             int i3 = i2 / 2;
-            receiver.mo20256K0(measuredWidth, (view.getMeasuredHeight() / 2) - i3, view.getMeasuredWidth() - i, (view.getMeasuredHeight() / 2) + i3);
+            receiver.mo20257K0(measuredWidth, (view.getMeasuredHeight() / 2) - i3, view.getMeasuredWidth() - i, (view.getMeasuredHeight() / 2) + i3);
             receiver.draw(canvas);
         }
     }
@@ -123,46 +123,46 @@ public abstract class AbstractView$OnClickListenerC3371ys<T extends C4868i.Abstr
         this.f11216J0 = i6;
     }
 
-    public void m30670Xg(C4868i.AbstractC4872d dVar, boolean z) {
+    public void m30672Xg(C4868i.AbstractC4872d dVar, boolean z) {
         T t;
         if (!m9347Sa() && (t = this.f11220N0) != null && t.equals(dVar)) {
             if (z) {
-                T Tg = mo30658Tg();
+                T Tg = mo30660Tg();
                 this.f11220N0 = null;
-                mo30659Pg(dVar);
-                m30661gh(Tg);
-                m30661gh(dVar);
+                mo30661Pg(dVar);
+                m30663gh(Tg);
+                m30663gh(dVar);
                 return;
             }
-            m30663eh(mo30658Tg());
+            m30665eh(mo30660Tg());
         }
     }
 
-    public void m30669Yg(final C4868i.AbstractC4872d dVar, final boolean z) {
-        this.f30167b.m2485dd().post(new Runnable() {
+    public void m30671Yg(final C4868i.AbstractC4872d dVar, final boolean z) {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                AbstractView$OnClickListenerC3371ys.this.m30670Xg(dVar, z);
+                AbstractView$OnClickListenerC3371ys.this.m30672Xg(dVar, z);
             }
         });
     }
 
-    public void m30668Zg() {
-        m30663eh(mo30658Tg());
+    public void m30670Zg() {
+        m30665eh(mo30660Tg());
     }
 
-    public void m30667ah(C4868i.AbstractC4872d dVar, boolean z) {
+    public void m30669ah(C4868i.AbstractC4872d dVar, boolean z) {
         if (z) {
-            C4868i.m24726c2().m24582u2(this.f11210D0);
-            m30663eh(dVar);
+            C4868i.m24727c2().m24583u2(this.f11210D0);
+            m30665eh(dVar);
         }
     }
 
-    public void m30666bh(List list) {
+    public void m30668bh(List list) {
         boolean z;
         if (!m9347Sa()) {
             this.f11218L0 = list;
-            m30675Qg();
+            m30677Qg();
             T t = m9139w9() != null ? ((C3374c) m9139w9()).f11223a : null;
             if (t != null) {
                 Iterator it = list.iterator();
@@ -173,58 +173,58 @@ public abstract class AbstractView$OnClickListenerC3371ys<T extends C4868i.Abstr
                     }
                     C4868i.AbstractC4872d dVar = (C4868i.AbstractC4872d) it.next();
                     if (dVar.equals(t)) {
-                        m30663eh(dVar);
+                        m30665eh(dVar);
                         z = true;
                         break;
                     }
                 }
                 if (!z) {
-                    C1379j0.m37292y0(R.string.EmojiUpdateUnavailable, 0);
+                    C1379j0.m37295y0(R.string.EmojiUpdateUnavailable, 0);
                 }
             }
         }
     }
 
-    public void m30665ch(final List list) {
-        this.f30167b.m2485dd().post(new Runnable() {
+    public void m30667ch(final List list) {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                AbstractView$OnClickListenerC3371ys.this.m30666bh(list);
+                AbstractView$OnClickListenerC3371ys.this.m30668bh(list);
             }
         });
     }
 
-    public void m30664dh(TdApi.File file, boolean z) {
+    public void m30666dh(TdApi.File file, boolean z) {
         T Sg;
-        if (!m9347Sa() && (Sg = m30673Sg(file.f25373id)) != null) {
-            C7321e.m16907u(file, Sg.m24537c());
-            if (C4779t2.m25598T2(file)) {
-                this.f30167b.m2413i5().m4030D0(file.f25373id, this);
-                this.f30167b.m2413i5().m3986j0(Sg.m24537c(), this);
+        if (!m9347Sa() && (Sg = m30675Sg(file.f25376id)) != null) {
+            C7321e.m16907u(file, Sg.m24538c());
+            if (C4779t2.m25599T2(file)) {
+                this.f30170b.m2413i5().m4030D0(file.f25376id, this);
+                this.f30170b.m2413i5().m3986j0(Sg.m24538c(), this);
                 T t = this.f11220N0;
-                if (!(t == null || t.m24537c() == null || this.f11220N0.m24537c().f25373id != file.f25373id)) {
-                    m30671Wg(this.f11220N0);
+                if (!(t == null || t.m24538c() == null || this.f11220N0.m24538c().f25376id != file.f25376id)) {
+                    m30673Wg(this.f11220N0);
                 }
             } else if (z) {
-                this.f30167b.m2413i5().m4034B0(file, this);
+                this.f30170b.m2413i5().m4034B0(file, this);
             }
-            m30661gh(Sg);
+            m30663gh(Sg);
         }
     }
 
-    public abstract void mo30659Pg(T t);
+    public abstract void mo30661Pg(T t);
 
-    public final void m30675Qg() {
+    public final void m30677Qg() {
         if (this.f11218L0 != null) {
             ArrayList arrayList = new ArrayList();
             for (T t : this.f11218L0) {
                 if (!arrayList.isEmpty()) {
                     arrayList.add(new C2964ra(11));
                 }
-                arrayList.add(new C2964ra(90, (int) R.id.btn_settings, 0, (CharSequence) t.m24538b(), false).m32870G(t).m32868I(new C3373b()));
+                arrayList.add(new C2964ra(90, (int) R.id.btn_settings, 0, (CharSequence) t.m24539b(), false).m32873G(t).m32871I(new C3373b()));
             }
             arrayList.add(new C2964ra(3));
-            this.f11217K0.m34116x2(arrayList, false);
+            this.f11217K0.m34119x2(arrayList, false);
             m9204n9();
         }
     }
@@ -232,17 +232,17 @@ public abstract class AbstractView$OnClickListenerC3371ys<T extends C4868i.Abstr
     @Override
     public void mo3954R2(C10930q6 q6Var, int i, int i2, TdApi.File file) {
         if (file != null) {
-            m30662fh(file, false);
+            m30664fh(file, false);
         }
     }
 
-    public final void m30674Rg(T t) {
+    public final void m30676Rg(T t) {
         this.f11220N0 = t;
         this.f11219M0 = false;
-        if (t.mo24528g() || t.m24537c() == null || t.m24535h() || C4779t2.m25586V2(t.m24537c())) {
-            m30671Wg(t);
+        if (t.mo24529g() || t.m24538c() == null || t.m24536h() || C4779t2.m25587V2(t.m24538c())) {
+            m30673Wg(t);
         } else {
-            this.f30167b.m2413i5().m3991h(t.m24537c(), this, false);
+            this.f30170b.m2413i5().m3991h(t.m24538c(), this, false);
         }
     }
 
@@ -251,44 +251,44 @@ public abstract class AbstractView$OnClickListenerC3371ys<T extends C4868i.Abstr
         return this.f11220N0 == null;
     }
 
-    public final T m30673Sg(int i) {
+    public final T m30675Sg(int i) {
         T t;
         TdApi.File c;
-        for (C2964ra raVar : this.f11217K0.m34240F0()) {
-            if (raVar.m32835j() == R.id.btn_settings && raVar.m32844d() != null && (c = (t = (T) raVar.m32844d()).m24537c()) != null && c.f25373id == i) {
+        for (C2964ra raVar : this.f11217K0.m34243F0()) {
+            if (raVar.m32838j() == R.id.btn_settings && raVar.m32847d() != null && (c = (t = (T) raVar.m32847d()).m24538c()) != null && c.f25376id == i) {
                 return t;
             }
         }
         return null;
     }
 
-    public abstract T mo30658Tg();
+    public abstract T mo30660Tg();
 
-    public abstract void mo30657Ug(AbstractC5918j<List<T>> jVar);
+    public abstract void mo30659Ug(AbstractC5918j<List<T>> jVar);
 
     @Override
     public void mo3953V0(TdApi.File file) {
-        m30662fh(file, false);
+        m30664fh(file, false);
     }
 
-    public final View$OnClickListenerC2364ez m30672Vg() {
+    public final View$OnClickListenerC2364ez m30674Vg() {
         if (m9139w9() != null) {
             return m9139w9().f11224b;
         }
         return null;
     }
 
-    public final void m30671Wg(final T t) {
+    public final void m30673Wg(final T t) {
         this.f11219M0 = true;
-        if (t.m24535h()) {
+        if (t.m24536h()) {
             this.f11220N0 = null;
-            mo30659Pg(t);
+            mo30661Pg(t);
             return;
         }
-        t.mo24529f(new AbstractC5917i() {
+        t.mo24530f(new AbstractC5917i() {
             @Override
             public final void mo1322a(boolean z) {
-                AbstractView$OnClickListenerC3371ys.this.m30669Yg(t, z);
+                AbstractView$OnClickListenerC3371ys.this.m30671Yg(t, z);
             }
         });
     }
@@ -298,41 +298,41 @@ public abstract class AbstractView$OnClickListenerC3371ys<T extends C4868i.Abstr
         return this.f11218L0 == null;
     }
 
-    public final void m30663eh(T t) {
-        T Tg = mo30658Tg();
+    public final void m30665eh(T t) {
+        T Tg = mo30660Tg();
         T t2 = this.f11220N0;
         T t3 = t2 != null ? t2 : Tg;
         if (t2 != null) {
             if (!t2.equals(t)) {
-                this.f30167b.m2413i5().m3986j0(this.f11220N0.m24537c(), this);
+                this.f30170b.m2413i5().m3986j0(this.f11220N0.m24538c(), this);
                 this.f11220N0 = null;
             } else {
                 return;
             }
         }
         if (!Tg.equals(t)) {
-            m30674Rg(t);
+            m30676Rg(t);
         }
-        m30661gh(t3);
-        m30661gh(t);
+        m30663gh(t3);
+        m30663gh(t);
     }
 
-    public final void m30662fh(final TdApi.File file, final boolean z) {
-        this.f30167b.m2485dd().post(new Runnable() {
+    public final void m30664fh(final TdApi.File file, final boolean z) {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                AbstractView$OnClickListenerC3371ys.this.m30664dh(file, z);
+                AbstractView$OnClickListenerC3371ys.this.m30666dh(file, z);
             }
         });
     }
 
-    public final void m30661gh(T t) {
+    public final void m30663gh(T t) {
         int i = 0;
-        for (C2964ra raVar : this.f11217K0.m34240F0()) {
-            if (raVar.m32835j() != R.id.btn_settings || raVar.m32844d() == null || !raVar.m32844d().equals(t)) {
+        for (C2964ra raVar : this.f11217K0.m34243F0()) {
+            if (raVar.m32838j() != R.id.btn_settings || raVar.m32847d() == null || !raVar.m32847d().equals(t)) {
                 i++;
             } else {
-                this.f11217K0.m34124u3(i);
+                this.f11217K0.m34127u3(i);
                 return;
             }
         }
@@ -340,7 +340,7 @@ public abstract class AbstractView$OnClickListenerC3371ys<T extends C4868i.Abstr
 
     @Override
     public void mo2039h2(TdApi.UpdateFile updateFile) {
-        m30662fh(updateFile.file, true);
+        m30664fh(updateFile.file, true);
     }
 
     @Override
@@ -351,7 +351,7 @@ public abstract class AbstractView$OnClickListenerC3371ys<T extends C4868i.Abstr
         m9179qe(new Runnable() {
             @Override
             public final void run() {
-                AbstractView$OnClickListenerC3371ys.this.m30668Zg();
+                AbstractView$OnClickListenerC3371ys.this.m30670Zg();
             }
         });
         return true;
@@ -360,14 +360,14 @@ public abstract class AbstractView$OnClickListenerC3371ys<T extends C4868i.Abstr
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.btn_settings) {
-            final C4868i.AbstractC4872d dVar = (C4868i.AbstractC4872d) ((C2964ra) view.getTag()).m32844d();
-            if (this.f11210D0 == 0 || this.f11211E0 == 0 || !C4868i.m24726c2().m24763X2(this.f11210D0)) {
-                m30663eh(dVar);
+            final C4868i.AbstractC4872d dVar = (C4868i.AbstractC4872d) ((C2964ra) view.getTag()).m32847d();
+            if (this.f11210D0 == 0 || this.f11211E0 == 0 || !C4868i.m24727c2().m24764X2(this.f11210D0)) {
+                m30665eh(dVar);
             } else {
-                m9172re(C4403w.m27982H0(this, this.f11211E0, new Object[0]), new AbstractC5917i() {
+                m9172re(C4403w.m27984H0(this, this.f11211E0, new Object[0]), new AbstractC5917i() {
                     @Override
                     public final void mo1322a(boolean z) {
-                        AbstractView$OnClickListenerC3371ys.this.m30667ah(dVar, z);
+                        AbstractView$OnClickListenerC3371ys.this.m30669ah(dVar, z);
                     }
                 });
             }
@@ -375,12 +375,12 @@ public abstract class AbstractView$OnClickListenerC3371ys<T extends C4868i.Abstr
     }
 
     @Override
-    public void mo30633rg(Context context, CustomRecyclerView customRecyclerView) {
+    public void mo30635rg(Context context, CustomRecyclerView customRecyclerView) {
         this.f11217K0 = new C3372a(this, this, this);
-        mo30657Ug(new AbstractC5918j() {
+        mo30659Ug(new AbstractC5918j() {
             @Override
             public final void mo1330a(Object obj) {
-                AbstractView$OnClickListenerC3371ys.this.m30665ch((List) obj);
+                AbstractView$OnClickListenerC3371ys.this.m30667ch((List) obj);
             }
         });
         customRecyclerView.setAdapter(this.f11217K0);

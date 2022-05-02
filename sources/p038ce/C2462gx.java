@@ -7,6 +7,6 @@ public final class C2462gx implements AbstractC5918j {
 
     @Override
     public final void mo1330a(Object obj) {
-        View$OnLongClickListenerC2502hx.m34428lh((String) obj);
+        View$OnLongClickListenerC2502hx.m34431lh((String) obj);
     }
 }

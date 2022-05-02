@@ -21,7 +21,7 @@ public final class C1434a0 {
         }
     }
 
-    public static float m36933a(ViewConfiguration viewConfiguration, Context context) {
+    public static float m36936a(ViewConfiguration viewConfiguration, Context context) {
         Method method;
         if (Build.VERSION.SDK_INT >= 25 && (method = f5260a) != null) {
             try {
@@ -37,28 +37,28 @@ public final class C1434a0 {
         return 0.0f;
     }
 
-    public static float m36932b(ViewConfiguration viewConfiguration, Context context) {
+    public static float m36935b(ViewConfiguration viewConfiguration, Context context) {
         if (Build.VERSION.SDK_INT >= 26) {
             return viewConfiguration.getScaledHorizontalScrollFactor();
         }
-        return m36933a(viewConfiguration, context);
+        return m36936a(viewConfiguration, context);
     }
 
-    public static int m36931c(ViewConfiguration viewConfiguration) {
+    public static int m36934c(ViewConfiguration viewConfiguration) {
         if (Build.VERSION.SDK_INT >= 28) {
             return viewConfiguration.getScaledHoverSlop();
         }
         return viewConfiguration.getScaledTouchSlop() / 2;
     }
 
-    public static float m36930d(ViewConfiguration viewConfiguration, Context context) {
+    public static float m36933d(ViewConfiguration viewConfiguration, Context context) {
         if (Build.VERSION.SDK_INT >= 26) {
             return viewConfiguration.getScaledVerticalScrollFactor();
         }
-        return m36933a(viewConfiguration, context);
+        return m36936a(viewConfiguration, context);
     }
 
-    public static boolean m36929e(ViewConfiguration viewConfiguration, Context context) {
+    public static boolean m36932e(ViewConfiguration viewConfiguration, Context context) {
         if (Build.VERSION.SDK_INT >= 28) {
             return viewConfiguration.shouldShowMenuShortcutsWhenKeyboardPresent();
         }

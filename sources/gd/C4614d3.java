@@ -17,40 +17,40 @@ public class C4614d3 {
         CharSequence charSequence;
         this.f15310a = new C4601c3(q6Var, chatList, chat, (String) null);
         this.f15311b = message;
-        if (C5070i.m24061i(str)) {
-            this.f15312c = C4779t2.m25717C(q6Var, message, true);
+        if (C5070i.m24062i(str)) {
+            this.f15312c = C4779t2.m25718C(q6Var, message, true);
             return;
         }
-        String j2 = C4779t2.m25493j2(message);
-        if (!C5070i.m24061i(j2)) {
-            charSequence = C1363c0.m37465I(C1363c0.m37446a0(j2), str, 0, C4776t.f16203g0);
+        String j2 = C4779t2.m25494j2(message);
+        if (!C5070i.m24062i(j2)) {
+            charSequence = C1363c0.m37468I(C1363c0.m37449a0(j2), str, 0, C4776t.f16203g0);
         } else {
-            charSequence = C4779t2.m25717C(q6Var, message, true);
+            charSequence = C4779t2.m25718C(q6Var, message, true);
         }
-        this.f15312c = C5078d.m23986z().m24024I(charSequence);
+        this.f15312c = C5078d.m23987z().m24025I(charSequence);
     }
 
-    public C6246h m26898a() {
-        return this.f15310a.m27050b();
+    public C6246h m26900a() {
+        return this.f15310a.m27052b();
     }
 
-    public C4587b.C4588a m26897b() {
-        return this.f15310a.m27049c();
+    public C4587b.C4588a m26899b() {
+        return this.f15310a.m27051c();
     }
 
-    public C4601c3 m26896c() {
+    public C4601c3 m26898c() {
         return this.f15310a;
     }
 
-    public long m26895d() {
-        return this.f15311b.f25406id;
+    public long m26897d() {
+        return this.f15311b.f25409id;
     }
 
-    public TdApi.Message m26894e() {
+    public TdApi.Message m26896e() {
         return this.f15311b;
     }
 
-    public CharSequence m26893f() {
+    public CharSequence m26895f() {
         return this.f15312c;
     }
 }

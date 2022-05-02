@@ -12,17 +12,17 @@ public final class C1932ta extends AbstractC1960va {
     }
 
     @Override
-    public final int mo35846a() {
+    public final int mo35849a() {
         return this.f6948c;
     }
 
     @Override
-    public final String mo35845b() {
+    public final String mo35848b() {
         return this.f6946a;
     }
 
     @Override
-    public final boolean mo35844c() {
+    public final boolean mo35847c() {
         return this.f6947b;
     }
 
@@ -32,7 +32,7 @@ public final class C1932ta extends AbstractC1960va {
         }
         if (obj instanceof AbstractC1960va) {
             AbstractC1960va vaVar = (AbstractC1960va) obj;
-            if (this.f6946a.equals(vaVar.mo35845b()) && this.f6947b == vaVar.mo35844c() && this.f6948c == vaVar.mo35846a()) {
+            if (this.f6946a.equals(vaVar.mo35848b()) && this.f6947b == vaVar.mo35847c() && this.f6948c == vaVar.mo35849a()) {
                 return true;
             }
         }

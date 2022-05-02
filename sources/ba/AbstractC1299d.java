@@ -28,9 +28,9 @@ public abstract class AbstractC1299d implements AbstractC1296b {
     public long f4690j = -1;
     public long f4691k = -1;
 
-    public abstract void mo37786a(MediaExtractor mediaExtractor);
+    public abstract void mo37789a(MediaExtractor mediaExtractor);
 
-    public abstract void mo37785b(MediaMetadataRetriever mediaMetadataRetriever);
+    public abstract void mo37788b(MediaMetadataRetriever mediaMetadataRetriever);
 
     @Override
     public long mo6292c(long j) {
@@ -82,10 +82,10 @@ public abstract class AbstractC1299d implements AbstractC1296b {
         MediaExtractor mediaExtractor = new MediaExtractor();
         this.f4687g = mediaExtractor;
         try {
-            mo37786a(mediaExtractor);
+            mo37789a(mediaExtractor);
             MediaMetadataRetriever mediaMetadataRetriever = new MediaMetadataRetriever();
             this.f4686f = mediaMetadataRetriever;
-            mo37785b(mediaMetadataRetriever);
+            mo37788b(mediaMetadataRetriever);
             int trackCount = this.f4687g.getTrackCount();
             for (int i = 0; i < trackCount; i++) {
                 MediaFormat trackFormat = this.f4687g.getTrackFormat(i);

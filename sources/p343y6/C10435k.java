@@ -8,12 +8,12 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 public final class C10435k {
 
     public static class C10437b<T> implements AbstractC10434j<T>, Serializable {
-        public final List<? extends AbstractC10434j<? super T>> f33502a;
+        public final List<? extends AbstractC10434j<? super T>> f33505a;
 
         @Override
         public boolean apply(@NullableDecl T t) {
-            for (int i = 0; i < this.f33502a.size(); i++) {
-                if (!this.f33502a.get(i).apply(t)) {
+            for (int i = 0; i < this.f33505a.size(); i++) {
+                if (!this.f33505a.get(i).apply(t)) {
                     return false;
                 }
             }
@@ -22,21 +22,21 @@ public final class C10435k {
 
         public boolean equals(@NullableDecl Object obj) {
             if (obj instanceof C10437b) {
-                return this.f33502a.equals(((C10437b) obj).f33502a);
+                return this.f33505a.equals(((C10437b) obj).f33505a);
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f33502a.hashCode() + 306654252;
+            return this.f33505a.hashCode() + 306654252;
         }
 
         public String toString() {
-            return C10435k.m5119d("and", this.f33502a);
+            return C10435k.m5119d("and", this.f33505a);
         }
 
         public C10437b(List<? extends AbstractC10434j<? super T>> list) {
-            this.f33502a = list;
+            this.f33505a = list;
         }
     }
 

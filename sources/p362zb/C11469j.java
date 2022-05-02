@@ -31,8 +31,8 @@ import qa.C8298k;
 import za.C11439e;
 
 public final class C11469j implements AbstractC9129x {
-    public static final C11470a f36442b = new C11470a(null);
-    public final C9132z f36443a;
+    public static final C11470a f36445b = new C11470a(null);
+    public final C9132z f36446a;
 
     public static final class C11470a {
         public C11470a() {
@@ -44,19 +44,19 @@ public final class C11469j implements AbstractC9129x {
     }
 
     public C11469j(C9132z zVar) {
-        C8298k.m12934e(zVar, "client");
-        this.f36443a = zVar;
+        C8298k.m12933e(zVar, "client");
+        this.f36446a = zVar;
     }
 
     @Override
     public C9078d0 mo523a(AbstractC9129x.AbstractC9130a aVar) {
         C10478c o;
         C9069b0 c;
-        C8298k.m12934e(aVar, "chain");
+        C8298k.m12933e(aVar, "chain");
         C11466g gVar = (C11466g) aVar;
         C9069b0 i = gVar.m531i();
         C10482e e = gVar.m535e();
-        List f = C5304n.m23366f();
+        List f = C5304n.m23367f();
         boolean z = true;
         z = false;
         C9078d0 d0Var = null;
@@ -69,14 +69,14 @@ public final class C11469j implements AbstractC9129x {
                     try {
                         C9078d0 a = gVar.mo539a(i);
                         if (d0Var != null) {
-                            a = a.m10519J0().m10495o(d0Var.m10519J0().m10508b(null).m10507c()).m10507c();
+                            a = a.m10518J0().m10494o(d0Var.m10518J0().m10507b(null).m10506c()).m10506c();
                         }
                         d0Var = a;
                         o = e.m5002o();
                         c = m521c(d0Var, o);
                     } catch (IOException e2) {
                         if (m519e(e2, e, i, !(e2 instanceof C1306a))) {
-                            f = C5312v.m23337K(f, e2);
+                            f = C5312v.m23338K(f, e2);
                             e.m5008i(z);
                             z2 = false;
                         } else {
@@ -84,7 +84,7 @@ public final class C11469j implements AbstractC9129x {
                         }
                     } catch (C10495j e3) {
                         if (m519e(e3.m4937c(), e, i, z)) {
-                            f = C5312v.m23337K(f, e3.m4938b());
+                            f = C5312v.m23338K(f, e3.m4938b());
                             e.m5008i(z);
                             z2 = false;
                         } else {
@@ -97,11 +97,11 @@ public final class C11469j implements AbstractC9129x {
                         }
                         return d0Var;
                     }
-                    AbstractC9072c0 a2 = c.m10567a();
-                    if (a2 != null && a2.m10550d()) {
+                    AbstractC9072c0 a2 = c.m10566a();
+                    if (a2 != null && a2.m10549d()) {
                         return d0Var;
                     }
-                    AbstractC9081e0 m = d0Var.m10513m();
+                    AbstractC9081e0 m = d0Var.m10512m();
                     if (m != null) {
                         C9489b.m8514j(m);
                     }
@@ -126,63 +126,63 @@ public final class C11469j implements AbstractC9129x {
         String E0;
         C9125w o;
         AbstractC9072c0 c0Var = null;
-        if (!this.f36443a.m10274o() || (E0 = C9078d0.m10524E0(d0Var, "Location", null, 2, null)) == null || (o = d0Var.m10515N0().m10559i().m10340o(E0)) == null) {
+        if (!this.f36446a.m10273o() || (E0 = C9078d0.m10523E0(d0Var, "Location", null, 2, null)) == null || (o = d0Var.m10514N0().m10558i().m10339o(E0)) == null) {
             return null;
         }
-        if (!C8298k.m12937b(o.m10339p(), d0Var.m10515N0().m10559i().m10339p()) && !this.f36443a.m10273p()) {
+        if (!C8298k.m12936b(o.m10338p(), d0Var.m10514N0().m10558i().m10338p()) && !this.f36446a.m10272p()) {
             return null;
         }
-        C9069b0.C9070a h = d0Var.m10515N0().m10560h();
+        C9069b0.C9070a h = d0Var.m10514N0().m10559h();
         if (C11465f.m543a(str)) {
-            int A0 = d0Var.m10528A0();
-            C11465f fVar = C11465f.f36428a;
+            int A0 = d0Var.m10527A0();
+            C11465f fVar = C11465f.f36431a;
             boolean z = fVar.m541c(str) || A0 == 308 || A0 == 307;
             if (!fVar.m542b(str) || A0 == 308 || A0 == 307) {
                 if (z) {
-                    c0Var = d0Var.m10515N0().m10567a();
+                    c0Var = d0Var.m10514N0().m10566a();
                 }
-                h.m10555d(str, c0Var);
+                h.m10554d(str, c0Var);
             } else {
-                h.m10555d("GET", null);
+                h.m10554d("GET", null);
             }
             if (!z) {
-                h.m10554e("Transfer-Encoding");
-                h.m10554e("Content-Length");
-                h.m10554e("Content-Type");
+                h.m10553e("Transfer-Encoding");
+                h.m10553e("Content-Length");
+                h.m10553e("Content-Type");
             }
         }
-        if (!C9489b.m8517g(d0Var.m10515N0().m10559i(), o)) {
-            h.m10554e("Authorization");
+        if (!C9489b.m8517g(d0Var.m10514N0().m10558i(), o)) {
+            h.m10553e("Authorization");
         }
-        return h.m10552g(o).m10558a();
+        return h.m10551g(o).m10557a();
     }
 
     public final C9069b0 m521c(C9078d0 d0Var, C10478c cVar) {
         C10486f h;
         C9085f0 z = (cVar == null || (h = cVar.m5043h()) == null) ? null : h.m4951z();
-        int A0 = d0Var.m10528A0();
-        String g = d0Var.m10515N0().m10561g();
+        int A0 = d0Var.m10527A0();
+        String g = d0Var.m10514N0().m10560g();
         if (!(A0 == 307 || A0 == 308)) {
             if (A0 == 401) {
-                return this.f36443a.m10285c().mo6668a(z, d0Var);
+                return this.f36446a.m10284c().mo6668a(z, d0Var);
             }
             if (A0 == 421) {
-                AbstractC9072c0 a = d0Var.m10515N0().m10567a();
-                if ((a != null && a.m10550d()) || cVar == null || !cVar.m5040k()) {
+                AbstractC9072c0 a = d0Var.m10514N0().m10566a();
+                if ((a != null && a.m10549d()) || cVar == null || !cVar.m5040k()) {
                     return null;
                 }
                 cVar.m5043h().m4953x();
-                return d0Var.m10515N0();
+                return d0Var.m10514N0();
             } else if (A0 == 503) {
-                C9078d0 K0 = d0Var.m10518K0();
-                if ((K0 == null || K0.m10528A0() != 503) && m517g(d0Var, Integer.MAX_VALUE) == 0) {
-                    return d0Var.m10515N0();
+                C9078d0 K0 = d0Var.m10517K0();
+                if ((K0 == null || K0.m10527A0() != 503) && m517g(d0Var, Integer.MAX_VALUE) == 0) {
+                    return d0Var.m10514N0();
                 }
                 return null;
             } else if (A0 == 407) {
-                C8298k.m12936c(z);
-                if (z.m10484b().type() == Proxy.Type.HTTP) {
-                    return this.f36443a.m10264z().mo6668a(z, d0Var);
+                C8298k.m12935c(z);
+                if (z.m10483b().type() == Proxy.Type.HTTP) {
+                    return this.f36446a.m10263z().mo6668a(z, d0Var);
                 }
                 throw new ProtocolException("Received HTTP_PROXY_AUTH (407) code while not using proxy");
             } else if (A0 != 408) {
@@ -195,16 +195,16 @@ public final class C11469j implements AbstractC9129x {
                     default:
                         return null;
                 }
-            } else if (!this.f36443a.m10292C()) {
+            } else if (!this.f36446a.m10291C()) {
                 return null;
             } else {
-                AbstractC9072c0 a2 = d0Var.m10515N0().m10567a();
-                if (a2 != null && a2.m10550d()) {
+                AbstractC9072c0 a2 = d0Var.m10514N0().m10566a();
+                if (a2 != null && a2.m10549d()) {
                     return null;
                 }
-                C9078d0 K02 = d0Var.m10518K0();
-                if ((K02 == null || K02.m10528A0() != 408) && m517g(d0Var, 0) <= 0) {
-                    return d0Var.m10515N0();
+                C9078d0 K02 = d0Var.m10517K0();
+                if ((K02 == null || K02.m10527A0() != 408) && m517g(d0Var, 0) <= 0) {
+                    return d0Var.m10514N0();
                 }
                 return null;
             }
@@ -220,19 +220,19 @@ public final class C11469j implements AbstractC9129x {
     }
 
     public final boolean m519e(IOException iOException, C10482e eVar, C9069b0 b0Var, boolean z) {
-        if (!this.f36443a.m10292C()) {
+        if (!this.f36446a.m10291C()) {
             return false;
         }
         return (!z || !m518f(iOException, b0Var)) && m520d(iOException, z) && eVar.m4993x();
     }
 
     public final boolean m518f(IOException iOException, C9069b0 b0Var) {
-        AbstractC9072c0 a = b0Var.m10567a();
-        return (a != null && a.m10550d()) || (iOException instanceof FileNotFoundException);
+        AbstractC9072c0 a = b0Var.m10566a();
+        return (a != null && a.m10549d()) || (iOException instanceof FileNotFoundException);
     }
 
     public final int m517g(C9078d0 d0Var, int i) {
-        String E0 = C9078d0.m10524E0(d0Var, "Retry-After", null, 2, null);
+        String E0 = C9078d0.m10523E0(d0Var, "Retry-After", null, 2, null);
         if (E0 == null) {
             return i;
         }
@@ -240,7 +240,7 @@ public final class C11469j implements AbstractC9129x {
             return Integer.MAX_VALUE;
         }
         Integer valueOf = Integer.valueOf(E0);
-        C8298k.m12935d(valueOf, "Integer.valueOf(header)");
+        C8298k.m12934d(valueOf, "Integer.valueOf(header)");
         return valueOf.intValue();
     }
 }

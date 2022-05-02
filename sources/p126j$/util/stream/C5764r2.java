@@ -14,18 +14,18 @@ class C5764r2 extends AbstractC5739m2 {
     }
 
     @Override
-    public void mo22131j(long j) {
-        this.f18428a.mo22131j(AbstractC5572D0.m22448B(j, this.f18457d.f18469u, this.f18456c));
+    public void mo22132j(long j) {
+        this.f18428a.mo22132j(AbstractC5572D0.m22449B(j, this.f18457d.f18469u, this.f18456c));
     }
 
     @Override
-    public void mo22128k(Object obj) {
+    public void mo22129k(Object obj) {
         long j = this.f18455b;
         if (j == 0) {
             long j2 = this.f18456c;
             if (j2 > 0) {
                 this.f18456c = j2 - 1;
-                this.f18428a.mo22128k(obj);
+                this.f18428a.mo22129k(obj);
                 return;
             }
             return;
@@ -34,7 +34,7 @@ class C5764r2 extends AbstractC5739m2 {
     }
 
     @Override
-    public boolean mo22130t() {
-        return this.f18456c == 0 || this.f18428a.mo22130t();
+    public boolean mo22131t() {
+        return this.f18456c == 0 || this.f18428a.mo22131t();
     }
 }

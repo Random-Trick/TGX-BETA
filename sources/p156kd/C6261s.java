@@ -14,47 +14,47 @@ public class C6261s extends C6246h {
     }
 
     @Override
-    public byte mo20777C() {
+    public byte mo20778C() {
         return (byte) 6;
     }
 
-    public long m20776D0() {
+    public long m20777D0() {
         return this.f19781c0;
     }
 
-    public int m20775E0() {
+    public int m20776E0() {
         return this.f19780b0;
     }
 
-    public int m20774F0() {
+    public int m20775F0() {
         return this.f19779a0;
     }
 
-    public int m20773G0() {
+    public int m20774G0() {
         return this.f19694Q;
     }
 
-    public void m20772H0(long j) {
+    public void m20773H0(long j) {
         this.f19781c0 = j;
     }
 
-    public void m20771I0(int i) {
+    public void m20772I0(int i) {
         this.f19780b0 = i;
         this.f19779a0 = i;
     }
 
-    public void m20770J0(int i, int i2) {
+    public void m20771J0(int i, int i2) {
         this.f19779a0 = i;
         this.f19780b0 = i2;
     }
 
-    public void m20769K0(int i) {
+    public void m20770K0(int i) {
         this.f19782d0 = i;
     }
 
     @Override
-    public String mo20768d() {
-        StringBuilder e = m20922e(new StringBuilder("video_"));
+    public String mo20769d() {
+        StringBuilder e = m20923e(new StringBuilder("video_"));
         if (this.f19779a0 > 0 && this.f19780b0 > 0) {
             e.append(':');
             e.append(this.f19779a0);
@@ -71,8 +71,8 @@ public class C6261s extends C6246h {
     }
 
     @Override
-    public void mo20767t0(int i) {
-        super.mo20767t0(i);
-        m20771I0(i);
+    public void mo20768t0(int i) {
+        super.mo20768t0(i);
+        m20772I0(i);
     }
 }

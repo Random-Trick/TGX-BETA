@@ -12,16 +12,16 @@ import p255s.C8453c3;
 import p266t.C8927z;
 
 public final class C8575u1 implements C8453c3.AbstractC8455b {
-    public final C8927z f27784a;
-    public C6287c.C6288a<Void> f27786c;
-    public Rect f27785b = null;
-    public Rect f27787d = null;
+    public final C8927z f27787a;
+    public C6287c.C6288a<Void> f27789c;
+    public Rect f27788b = null;
+    public Rect f27790d = null;
 
     public C8575u1(C8927z zVar) {
-        this.f27784a = zVar;
+        this.f27787a = zVar;
     }
 
-    public static Rect m12059g(Rect rect, float f) {
+    public static Rect m12058g(Rect rect, float f) {
         float width = rect.width() / f;
         float height = rect.height() / f;
         float width2 = (rect.width() - width) / 2.0f;
@@ -30,67 +30,67 @@ public final class C8575u1 implements C8453c3.AbstractC8455b {
     }
 
     @Override
-    public void mo12065a(TotalCaptureResult totalCaptureResult) {
-        if (this.f27786c != null) {
+    public void mo12064a(TotalCaptureResult totalCaptureResult) {
+        if (this.f27789c != null) {
             CaptureRequest request = totalCaptureResult.getRequest();
             Rect rect = request == null ? null : (Rect) request.get(CaptureRequest.SCALER_CROP_REGION);
-            Rect rect2 = this.f27787d;
+            Rect rect2 = this.f27790d;
             if (rect2 != null && rect2.equals(rect)) {
-                this.f27786c.m20716c(null);
-                this.f27786c = null;
-                this.f27787d = null;
+                this.f27789c.m20717c(null);
+                this.f27789c = null;
+                this.f27790d = null;
             }
         }
     }
 
     @Override
-    public void mo12064b(C8333a.C8334a aVar) {
-        Rect rect = this.f27785b;
+    public void mo12063b(C8333a.C8334a aVar) {
+        Rect rect = this.f27788b;
         if (rect != null) {
-            aVar.m12790e(CaptureRequest.SCALER_CROP_REGION, rect);
+            aVar.m12789e(CaptureRequest.SCALER_CROP_REGION, rect);
         }
     }
 
     @Override
-    public float mo12063c() {
-        Float f = (Float) this.f27784a.m10952a(CameraCharacteristics.SCALER_AVAILABLE_MAX_DIGITAL_ZOOM);
+    public float mo12062c() {
+        Float f = (Float) this.f27787a.m10951a(CameraCharacteristics.SCALER_AVAILABLE_MAX_DIGITAL_ZOOM);
         if (f == null) {
             return 1.0f;
         }
-        if (f.floatValue() < mo12062d()) {
-            return mo12062d();
+        if (f.floatValue() < mo12061d()) {
+            return mo12061d();
         }
         return f.floatValue();
     }
 
     @Override
-    public float mo12062d() {
+    public float mo12061d() {
         return 1.0f;
     }
 
     @Override
-    public void mo12061e(float f, C6287c.C6288a<Void> aVar) {
-        this.f27785b = m12059g(m12058h(), f);
-        C6287c.C6288a<Void> aVar2 = this.f27786c;
+    public void mo12060e(float f, C6287c.C6288a<Void> aVar) {
+        this.f27788b = m12058g(m12057h(), f);
+        C6287c.C6288a<Void> aVar2 = this.f27789c;
         if (aVar2 != null) {
-            aVar2.m20713f(new AbstractC0615m.C0616a("There is a new zoomRatio being set"));
+            aVar2.m20714f(new AbstractC0615m.C0616a("There is a new zoomRatio being set"));
         }
-        this.f27787d = this.f27785b;
-        this.f27786c = aVar;
+        this.f27790d = this.f27788b;
+        this.f27789c = aVar;
     }
 
     @Override
-    public void mo12060f() {
-        this.f27787d = null;
-        this.f27785b = null;
-        C6287c.C6288a<Void> aVar = this.f27786c;
+    public void mo12059f() {
+        this.f27790d = null;
+        this.f27788b = null;
+        C6287c.C6288a<Void> aVar = this.f27789c;
         if (aVar != null) {
-            aVar.m20713f(new AbstractC0615m.C0616a("Camera is not active."));
-            this.f27786c = null;
+            aVar.m20714f(new AbstractC0615m.C0616a("Camera is not active."));
+            this.f27789c = null;
         }
     }
 
-    public final Rect m12058h() {
-        return (Rect) C1132h.m38322e((Rect) this.f27784a.m10952a(CameraCharacteristics.SENSOR_INFO_ACTIVE_ARRAY_SIZE));
+    public final Rect m12057h() {
+        return (Rect) C1132h.m38325e((Rect) this.f27787a.m10951a(CameraCharacteristics.SENSOR_INFO_ACTIVE_ARRAY_SIZE));
     }
 }

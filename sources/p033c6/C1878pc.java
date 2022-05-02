@@ -11,12 +11,12 @@ public final class C1878pc extends C1644a implements AbstractC1906rc {
     }
 
     @Override
-    public final C1864oc mo35912n0(AbstractC8983b bVar, C1732fc fcVar) {
+    public final C1864oc mo35915n0(AbstractC8983b bVar, C1732fc fcVar) {
         C1864oc ocVar;
-        Parcel q = m36121q();
-        C1676c1.m36099b(q, bVar);
-        C1676c1.m36100a(q, fcVar);
-        Parcel s = m36120s(1, q);
+        Parcel q = m36124q();
+        C1676c1.m36102b(q, bVar);
+        C1676c1.m36103a(q, fcVar);
+        Parcel s = m36123s(1, q);
         IBinder readStrongBinder = s.readStrongBinder();
         if (readStrongBinder == null) {
             ocVar = null;

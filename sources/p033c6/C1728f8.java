@@ -26,27 +26,27 @@ public final class C1728f8 {
     }
 
     @AbstractC1707e2(zza = 2)
-    public final EnumC1846n8 m36056a() {
+    public final EnumC1846n8 m36059a() {
         return this.f6281b;
     }
 
     @AbstractC1707e2(zza = 4)
-    public final Boolean m36055b() {
+    public final Boolean m36058b() {
         return this.f6283d;
     }
 
     @AbstractC1707e2(zza = 5)
-    public final Boolean m36054c() {
+    public final Boolean m36057c() {
         return this.f6284e;
     }
 
     @AbstractC1707e2(zza = 3)
-    public final Boolean m36053d() {
+    public final Boolean m36056d() {
         return this.f6282c;
     }
 
     @AbstractC1707e2(zza = 1)
-    public final Long m36052e() {
+    public final Long m36055e() {
         return this.f6280a;
     }
 }

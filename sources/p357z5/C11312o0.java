@@ -17,15 +17,15 @@ import p163l5.C6378r;
 public final class C11312o0 implements AbstractC4272a {
     @Override
     public final AbstractC5871g<Status> mo923a(AbstractC5867f fVar, LocationRequest locationRequest, AbstractC4280e eVar) {
-        C6378r.m20505l(Looper.myLooper(), "Calling thread must be a prepared Looper thread.");
-        return fVar.mo21174g(new C11304k0(this, fVar, locationRequest, eVar));
+        C6378r.m20506l(Looper.myLooper(), "Calling thread must be a prepared Looper thread.");
+        return fVar.mo21175g(new C11304k0(this, fVar, locationRequest, eVar));
     }
 
     @Override
     public final Location mo922b(AbstractC5867f fVar) {
         String str;
-        C11317t c = C4282f.m28300c(fVar);
-        Context i = fVar.mo21172i();
+        C11317t c = C4282f.m28302c(fVar);
+        Context i = fVar.mo21173i();
         try {
             if (Build.VERSION.SDK_INT >= 30 && i != null) {
                 try {
@@ -43,6 +43,6 @@ public final class C11312o0 implements AbstractC4272a {
 
     @Override
     public final AbstractC5871g<Status> mo921c(AbstractC5867f fVar, AbstractC4280e eVar) {
-        return fVar.mo21174g(new C11306l0(this, fVar, eVar));
+        return fVar.mo21175g(new C11306l0(this, fVar, eVar));
     }
 }

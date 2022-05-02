@@ -3,13 +3,13 @@ package p174m3;
 import p174m3.C6660o1;
 
 public interface AbstractC6642l1 {
-    void mo19721a(C6660o1.C6669g gVar);
+    void mo19722a(C6660o1.C6669g gVar);
 
-    float mo19720b(long j, long j2);
+    float mo19721b(long j, long j2);
 
-    long mo19719c();
+    long mo19720c();
 
-    void mo19718d();
+    void mo19719d();
 
-    void mo19717e(long j);
+    void mo19718e(long j);
 }

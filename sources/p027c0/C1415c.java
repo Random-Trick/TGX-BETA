@@ -7,7 +7,7 @@ public final class C1415c implements C0519c2.AbstractC0523d {
     public static final C1415c f5224a = new C1415c();
 
     @Override
-    public final void mo36991a(C0676x2 x2Var) {
-        C1417e.m36985F(x2Var);
+    public final void mo36994a(C0676x2 x2Var) {
+        C1417e.m36988F(x2Var);
     }
 }

@@ -15,51 +15,51 @@ import p336y.EnumC10275o;
 import p351z.C11190g;
 
 public class C8462e implements AbstractC10286q {
-    public final C10242i2 f27454a;
-    public final CaptureResult f27455b;
+    public final C10242i2 f27457a;
+    public final CaptureResult f27458b;
 
     public C8462e(C10242i2 i2Var, CaptureResult captureResult) {
-        this.f27454a = i2Var;
-        this.f27455b = captureResult;
+        this.f27457a = i2Var;
+        this.f27458b = captureResult;
     }
 
     @Override
     public C10242i2 mo5557a() {
-        return this.f27454a;
+        return this.f27457a;
     }
 
     @Override
     public void mo5556b(C11190g.C11192b bVar) {
         Integer num;
         C10282p.m5570a(this, bVar);
-        Rect rect = (Rect) this.f27455b.get(CaptureResult.SCALER_CROP_REGION);
+        Rect rect = (Rect) this.f27458b.get(CaptureResult.SCALER_CROP_REGION);
         if (rect != null) {
             bVar.m1250j(rect.width()).m1251i(rect.height());
         }
-        Integer num2 = (Integer) this.f27455b.get(CaptureResult.JPEG_ORIENTATION);
+        Integer num2 = (Integer) this.f27458b.get(CaptureResult.JPEG_ORIENTATION);
         if (num2 != null) {
             bVar.m1247m(num2.intValue());
         }
-        Long l = (Long) this.f27455b.get(CaptureResult.SENSOR_EXPOSURE_TIME);
+        Long l = (Long) this.f27458b.get(CaptureResult.SENSOR_EXPOSURE_TIME);
         if (l != null) {
             bVar.m1254f(l.longValue());
         }
-        Float f = (Float) this.f27455b.get(CaptureResult.LENS_APERTURE);
+        Float f = (Float) this.f27458b.get(CaptureResult.LENS_APERTURE);
         if (f != null) {
             bVar.m1248l(f.floatValue());
         }
-        Integer num3 = (Integer) this.f27455b.get(CaptureResult.SENSOR_SENSITIVITY);
+        Integer num3 = (Integer) this.f27458b.get(CaptureResult.SENSOR_SENSITIVITY);
         if (num3 != null) {
-            if (Build.VERSION.SDK_INT >= 24 && (num = (Integer) this.f27455b.get(CaptureResult.CONTROL_POST_RAW_SENSITIVITY_BOOST)) != null) {
+            if (Build.VERSION.SDK_INT >= 24 && (num = (Integer) this.f27458b.get(CaptureResult.CONTROL_POST_RAW_SENSITIVITY_BOOST)) != null) {
                 num3 = Integer.valueOf(num3.intValue() * ((int) (num.intValue() / 100.0f)));
             }
             bVar.m1249k(num3.intValue());
         }
-        Float f2 = (Float) this.f27455b.get(CaptureResult.LENS_FOCAL_LENGTH);
+        Float f2 = (Float) this.f27458b.get(CaptureResult.LENS_FOCAL_LENGTH);
         if (f2 != null) {
             bVar.m1252h(f2.floatValue());
         }
-        Integer num4 = (Integer) this.f27455b.get(CaptureResult.CONTROL_AWB_MODE);
+        Integer num4 = (Integer) this.f27458b.get(CaptureResult.CONTROL_AWB_MODE);
         if (num4 != null) {
             C11190g.EnumC11196c cVar = C11190g.EnumC11196c.AUTO;
             if (num4.intValue() == 0) {
@@ -71,7 +71,7 @@ public class C8462e implements AbstractC10286q {
 
     @Override
     public long mo5555c() {
-        Long l = (Long) this.f27455b.get(CaptureResult.SENSOR_TIMESTAMP);
+        Long l = (Long) this.f27458b.get(CaptureResult.SENSOR_TIMESTAMP);
         if (l == null) {
             return -1L;
         }
@@ -80,7 +80,7 @@ public class C8462e implements AbstractC10286q {
 
     @Override
     public EnumC10275o mo5554d() {
-        Integer num = (Integer) this.f27455b.get(CaptureResult.FLASH_STATE);
+        Integer num = (Integer) this.f27458b.get(CaptureResult.FLASH_STATE);
         if (num == null) {
             return EnumC10275o.UNKNOWN;
         }
@@ -94,12 +94,12 @@ public class C8462e implements AbstractC10286q {
         if (intValue == 3 || intValue == 4) {
             return EnumC10275o.FIRED;
         }
-        C0662u1.m40651c("C2CameraCaptureResult", "Undefined flash state: " + num);
+        C0662u1.m40654c("C2CameraCaptureResult", "Undefined flash state: " + num);
         return EnumC10275o.UNKNOWN;
     }
 
-    public EnumC10250k m12417e() {
-        Integer num = (Integer) this.f27455b.get(CaptureResult.CONTROL_AE_STATE);
+    public EnumC10250k m12416e() {
+        Integer num = (Integer) this.f27458b.get(CaptureResult.CONTROL_AE_STATE);
         if (num == null) {
             return EnumC10250k.UNKNOWN;
         }
@@ -118,15 +118,15 @@ public class C8462e implements AbstractC10286q {
                 return EnumC10250k.FLASH_REQUIRED;
             }
             if (intValue != 5) {
-                C0662u1.m40651c("C2CameraCaptureResult", "Undefined ae state: " + num);
+                C0662u1.m40654c("C2CameraCaptureResult", "Undefined ae state: " + num);
                 return EnumC10250k.UNKNOWN;
             }
         }
         return EnumC10250k.SEARCHING;
     }
 
-    public EnumC10254l m12416f() {
-        Integer num = (Integer) this.f27455b.get(CaptureResult.CONTROL_AF_MODE);
+    public EnumC10254l m12415f() {
+        Integer num = (Integer) this.f27458b.get(CaptureResult.CONTROL_AF_MODE);
         if (num == null) {
             return EnumC10254l.UNKNOWN;
         }
@@ -139,15 +139,15 @@ public class C8462e implements AbstractC10286q {
                 return EnumC10254l.ON_CONTINUOUS_AUTO;
             }
             if (intValue != 5) {
-                C0662u1.m40651c("C2CameraCaptureResult", "Undefined af mode: " + num);
+                C0662u1.m40654c("C2CameraCaptureResult", "Undefined af mode: " + num);
                 return EnumC10254l.UNKNOWN;
             }
         }
         return EnumC10254l.OFF;
     }
 
-    public EnumC10261m m12415g() {
-        Integer num = (Integer) this.f27455b.get(CaptureResult.CONTROL_AF_STATE);
+    public EnumC10261m m12414g() {
+        Integer num = (Integer) this.f27458b.get(CaptureResult.CONTROL_AF_STATE);
         if (num == null) {
             return EnumC10261m.UNKNOWN;
         }
@@ -166,13 +166,13 @@ public class C8462e implements AbstractC10286q {
             case 6:
                 return EnumC10261m.PASSIVE_NOT_FOCUSED;
             default:
-                C0662u1.m40651c("C2CameraCaptureResult", "Undefined af state: " + num);
+                C0662u1.m40654c("C2CameraCaptureResult", "Undefined af state: " + num);
                 return EnumC10261m.UNKNOWN;
         }
     }
 
-    public EnumC10267n m12414h() {
-        Integer num = (Integer) this.f27455b.get(CaptureResult.CONTROL_AWB_STATE);
+    public EnumC10267n m12413h() {
+        Integer num = (Integer) this.f27458b.get(CaptureResult.CONTROL_AWB_STATE);
         if (num == null) {
             return EnumC10267n.UNKNOWN;
         }
@@ -189,7 +189,7 @@ public class C8462e implements AbstractC10286q {
         if (intValue == 3) {
             return EnumC10267n.LOCKED;
         }
-        C0662u1.m40651c("C2CameraCaptureResult", "Undefined awb state: " + num);
+        C0662u1.m40654c("C2CameraCaptureResult", "Undefined awb state: " + num);
         return EnumC10267n.UNKNOWN;
     }
 

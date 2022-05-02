@@ -51,14 +51,14 @@ public class C5996x0 implements AbstractC9142a {
 
         @Override
         public void mo4376V3(C5996x0 x0Var, String str, Location location) {
-            x0Var.m21593k();
-            this.f19102a.mo11689a(0, location);
+            x0Var.m21594k();
+            this.f19102a.mo11688a(0, location);
         }
 
         @Override
         public void mo4362n5(C5996x0 x0Var, int i, String str, Location location) {
-            x0Var.m21593k();
-            this.f19102a.mo11689a(i, location);
+            x0Var.m21594k();
+            this.f19102a.mo11688a(i, location);
         }
     }
 
@@ -74,31 +74,31 @@ public class C5996x0 implements AbstractC9142a {
         }
 
         @Override
-        public void mo21578a(LocationAvailability locationAvailability) {
-            if (!locationAvailability.m30354b()) {
-                this.f19103a[0].m21857c();
+        public void mo21579a(LocationAvailability locationAvailability) {
+            if (!locationAvailability.m30356b()) {
+                this.f19103a[0].m21858c();
                 boolean[] zArr = this.f19104b;
                 if (!zArr[0]) {
                     zArr[0] = true;
-                    C5996x0.this.m21587q(-1);
+                    C5996x0.this.m21588q(-1);
                 }
                 try {
-                    this.f19105c.m28307u(this);
+                    this.f19105c.m28309u(this);
                 } catch (Throwable unused) {
                 }
             }
         }
 
         @Override
-        public void mo21577b(LocationResult locationResult) {
-            this.f19103a[0].m21857c();
+        public void mo21578b(LocationResult locationResult) {
+            this.f19103a[0].m21858c();
             boolean[] zArr = this.f19104b;
             if (!zArr[0]) {
                 zArr[0] = true;
-                C5996x0.this.m21588p(locationResult.m30345b());
+                C5996x0.this.m21589p(locationResult.m30347b());
             }
             try {
-                this.f19105c.m28307u(this);
+                this.f19105c.m28309u(this);
             } catch (Throwable unused) {
             }
         }
@@ -121,12 +121,12 @@ public class C5996x0 implements AbstractC9142a {
             if (!zArr[0]) {
                 zArr[0] = true;
                 try {
-                    this.f19108N.m28307u(this.f19109O);
+                    this.f19108N.m28309u(this.f19109O);
                 } catch (Throwable unused) {
                 }
                 Location location = null;
                 try {
-                    location = this.f19108N.m28308t().mo19069l();
+                    location = this.f19108N.m28310t().mo19070l();
                 } catch (SecurityException unused2) {
                 } catch (Throwable th) {
                     Log.m14710w("getLastLocation error", th, new Object[0]);
@@ -135,9 +135,9 @@ public class C5996x0 implements AbstractC9142a {
                     location = C7389v0.m16749C0(C5996x0.this.f19099a, false);
                 }
                 if (location != null) {
-                    C5996x0.this.m21588p(location);
+                    C5996x0.this.m21589p(location);
                 } else {
-                    C5996x0.this.m21587q(-3);
+                    C5996x0.this.m21588q(-3);
                 }
             }
         }
@@ -156,7 +156,7 @@ public class C5996x0 implements AbstractC9142a {
 
         @Override
         public void onLocationChanged(Location location) {
-            this.f19111a[0].m21857c();
+            this.f19111a[0].m21858c();
             try {
                 this.f19112b.removeUpdates(this);
             } catch (SecurityException unused) {
@@ -166,7 +166,7 @@ public class C5996x0 implements AbstractC9142a {
             boolean[] zArr = this.f19113c;
             if (!zArr[0]) {
                 zArr[0] = true;
-                C5996x0.this.m21588p(location);
+                C5996x0.this.m21589p(location);
             }
         }
 
@@ -197,16 +197,16 @@ public class C5996x0 implements AbstractC9142a {
                 zArr[0] = true;
                 Location C0 = C5996x0.this.f19101c ? C7389v0.m16749C0(C5996x0.this.f19099a, true) : null;
                 if (C0 != null) {
-                    C5996x0.this.m21588p(C0);
+                    C5996x0.this.m21589p(C0);
                 } else {
-                    C5996x0.this.m21587q(-3);
+                    C5996x0.this.m21588q(-3);
                 }
             }
         }
     }
 
     public interface AbstractC6002f {
-        void mo11689a(int i, Location location);
+        void mo11688a(int i, Location location);
     }
 
     public interface AbstractC6003g {
@@ -216,7 +216,7 @@ public class C5996x0 implements AbstractC9142a {
     }
 
     public interface AbstractC6004h {
-        void mo21576a(boolean z, Runnable runnable, AbstractC5096a aVar);
+        void mo21577a(boolean z, Runnable runnable, AbstractC5096a aVar);
     }
 
     public C5996x0(Context context, AbstractC6003g gVar, boolean z, boolean z2) {
@@ -226,7 +226,7 @@ public class C5996x0 implements AbstractC9142a {
         this.f19093M = z2;
     }
 
-    public static int m21594j(Context context, boolean z) {
+    public static int m21595j(Context context, boolean z) {
         String[] strArr;
         int i = Build.VERSION.SDK_INT;
         if (i >= 23) {
@@ -245,8 +245,8 @@ public class C5996x0 implements AbstractC9142a {
         return 0;
     }
 
-    public static Location m21592l(Context context, boolean z) {
-        C4868i.C4878j b1 = C4868i.m24726c2().m24735b1();
+    public static Location m21593l(Context context, boolean z) {
+        C4868i.C4878j b1 = C4868i.m24727c2().m24736b1();
         if (b1 == null) {
             return null;
         }
@@ -257,40 +257,40 @@ public class C5996x0 implements AbstractC9142a {
         return location;
     }
 
-    public void m21591m() {
-        m21587q(-5);
+    public void m21592m() {
+        m21588q(-5);
     }
 
-    public void m21590n(boolean[] zArr, AbstractView$OnTouchListenerC7889a aVar, boolean z, boolean z2, int i, boolean z3) {
+    public void m21591n(boolean[] zArr, AbstractView$OnTouchListenerC7889a aVar, boolean z, boolean z2, int i, boolean z3) {
         if (!zArr[0]) {
             if (z3) {
-                m21583v(aVar, true, z, z2);
+                m21584v(aVar, true, z, z2);
             } else {
-                m21587q(-1);
+                m21588q(-1);
             }
         }
     }
 
-    public void m21589o(boolean[] zArr, boolean z, boolean z2, Context context, AbstractC6775l lVar) {
+    public void m21590o(boolean[] zArr, boolean z, boolean z2, Context context, AbstractC6775l lVar) {
         if (!zArr[0]) {
             boolean z3 = true;
             try {
-                C4287h hVar = (C4287h) lVar.mo19068m(C5861b.class);
+                C4287h hVar = (C4287h) lVar.mo19069m(C5861b.class);
                 if (z) {
-                    m21588p(null);
+                    m21589p(null);
                 } else {
-                    m21586r(zArr, true);
+                    m21587r(zArr, true);
                 }
             } catch (C5861b e) {
-                if (e.m21928b() == 6) {
+                if (e.m21929b() == 6) {
                     if (!z2) {
-                        m21587q(-1);
+                        m21588q(-1);
                         return;
                     }
                     try {
-                        AbstractView$OnTouchListenerC7889a r = C1379j0.m37307r(context);
-                        r.m14453p2(106, this);
-                        ((C5874i) e).m21898c(r, 106);
+                        AbstractView$OnTouchListenerC7889a r = C1379j0.m37310r(context);
+                        r.m14452p2(106, this);
+                        ((C5874i) e).m21899c(r, 106);
                         z3 = false;
                     } catch (Throwable unused) {
                     }
@@ -299,21 +299,21 @@ public class C5996x0 implements AbstractC9142a {
                     return;
                 }
                 if (z) {
-                    m21587q(-1);
+                    m21588q(-1);
                 } else {
-                    m21586r(zArr, false);
+                    m21587r(zArr, false);
                 }
             }
         }
     }
 
-    public static C5996x0 m21580y(AbstractView$OnTouchListenerC7889a aVar, long j, boolean z, boolean z2, AbstractC6002f fVar) {
+    public static C5996x0 m21581y(AbstractView$OnTouchListenerC7889a aVar, long j, boolean z, boolean z2, AbstractC6002f fVar) {
         C5996x0 x0Var = new C5996x0(aVar, new C5997a(fVar), true, z2);
-        x0Var.m21585s("", null, j, z);
+        x0Var.m21586s("", null, j, z);
         return x0Var;
     }
 
-    public void m21596h() {
+    public void m21597h() {
         this.f19095O = null;
         this.f19096P = 0L;
         boolean[] zArr = this.f19097Q;
@@ -322,7 +322,7 @@ public class C5996x0 implements AbstractC9142a {
         }
     }
 
-    public void m21595i(String str, AbstractView$OnTouchListenerC7889a aVar) {
+    public void m21596i(String str, AbstractView$OnTouchListenerC7889a aVar) {
         this.f19095O = str;
         this.f19096P = -1L;
         boolean[] zArr = this.f19097Q;
@@ -330,68 +330,68 @@ public class C5996x0 implements AbstractC9142a {
             zArr[0] = true;
         }
         if (aVar == null) {
-            aVar = C1379j0.m37307r(this.f19099a);
+            aVar = C1379j0.m37310r(this.f19099a);
         }
-        m21583v(aVar, true, true, false);
+        m21584v(aVar, true, true, false);
     }
 
-    public void m21593k() {
+    public void m21594k() {
         AbstractC5867f fVar = this.f19098R;
         if (fVar != null) {
             try {
-                fVar.mo21088e();
+                fVar.mo21089e();
             } catch (Throwable unused) {
             }
             this.f19098R = null;
         }
     }
 
-    public final void m21588p(Location location) {
+    public final void m21589p(Location location) {
         Log.m14714v("Location successfully received", new Object[0]);
         String str = this.f19095O;
         if (str == null) {
             return;
         }
         if (location != null) {
-            C4868i.m24726c2().m24748Z3(location.getLatitude(), location.getLongitude(), location.getAccuracy());
+            C4868i.m24727c2().m24749Z3(location.getLatitude(), location.getLongitude(), location.getAccuracy());
             this.f19100b.mo4376V3(this, this.f19095O, location);
             return;
         }
         this.f19100b.mo4376V3(this, str, null);
     }
 
-    public final void m21587q(int i) {
+    public final void m21588q(int i) {
         Log.m14714v("Location receive failure, code: %d", Integer.valueOf(i));
         if (this.f19095O != null) {
-            this.f19100b.mo4362n5(this, i, this.f19095O, this.f19101c ? m21592l(this.f19099a, false) : null);
+            this.f19100b.mo4362n5(this, i, this.f19095O, this.f19101c ? m21593l(this.f19099a, false) : null);
         }
     }
 
-    public final void m21586r(boolean[] zArr, boolean z) {
+    public final void m21587r(boolean[] zArr, boolean z) {
         if (z) {
-            m21582w(zArr);
+            m21583w(zArr);
         } else {
-            m21581x(zArr);
+            m21582x(zArr);
         }
     }
 
-    public void m21585s(String str, AbstractView$OnTouchListenerC7889a aVar, long j, boolean z) {
-        m21584u(str, aVar, j, z, false);
+    public void m21586s(String str, AbstractView$OnTouchListenerC7889a aVar, long j, boolean z) {
+        m21585u(str, aVar, j, z, false);
     }
 
     @Override
-    public void mo10182t(int i, int i2, Intent intent) {
+    public void mo10181t(int i, int i2, Intent intent) {
         boolean[] zArr;
         if (i == 106 && (zArr = this.f19097Q) != null && !zArr[0]) {
             if (i2 == -1) {
-                m21586r(zArr, true);
+                m21587r(zArr, true);
             } else {
-                m21587q(-2);
+                m21588q(-2);
             }
         }
     }
 
-    public void m21584u(String str, AbstractView$OnTouchListenerC7889a aVar, long j, boolean z, boolean z2) {
+    public void m21585u(String str, AbstractView$OnTouchListenerC7889a aVar, long j, boolean z, boolean z2) {
         this.f19095O = str;
         this.f19096P = j;
         boolean[] zArr = this.f19097Q;
@@ -399,120 +399,120 @@ public class C5996x0 implements AbstractC9142a {
             zArr[0] = true;
         }
         if (aVar == null) {
-            aVar = C1379j0.m37307r(this.f19099a);
+            aVar = C1379j0.m37310r(this.f19099a);
         }
-        m21583v(aVar, z, false, z2);
+        m21584v(aVar, z, false, z2);
     }
 
-    public final void m21583v(final AbstractView$OnTouchListenerC7889a aVar, final boolean z, final boolean z2, final boolean z3) {
+    public final void m21584v(final AbstractView$OnTouchListenerC7889a aVar, final boolean z, final boolean z2, final boolean z3) {
         final boolean[] zArr = new boolean[1];
         this.f19097Q = zArr;
         final AbstractView$OnTouchListenerC7889a aVar2 = aVar != null ? aVar : this.f19099a;
-        if (Build.VERSION.SDK_INT < 23 || m21594j(aVar2, this.f19093M) == 0) {
+        if (Build.VERSION.SDK_INT < 23 || m21595j(aVar2, this.f19093M) == 0) {
             try {
                 if (this.f19098R == null) {
                     AbstractC5867f.C5868a aVar3 = new AbstractC5867f.C5868a(aVar2);
-                    aVar3.m21905a(C4282f.f14330a);
-                    AbstractC5867f c = aVar3.m21903c();
+                    aVar3.m21906a(C4282f.f14330a);
+                    AbstractC5867f c = aVar3.m21904c();
                     this.f19098R = c;
-                    c.mo21089d();
+                    c.mo21090d();
                 }
-                C4282f.m28301b(aVar2).m28288t(new C4284g.C4285a().m28299a(LocationRequest.m30353b()).m28297c(true).m28298b()).mo19078c(new AbstractC6763f() {
+                C4282f.m28303b(aVar2).m28290t(new C4284g.C4285a().m28301a(LocationRequest.m30355b()).m28299c(true).m28300b()).mo19079c(new AbstractC6763f() {
                     @Override
-                    public final void mo10608a(AbstractC6775l lVar) {
-                        C5996x0.this.m21589o(zArr, z2, z, aVar2, lVar);
+                    public final void mo10607a(AbstractC6775l lVar) {
+                        C5996x0.this.m21590o(zArr, z2, z, aVar2, lVar);
                     }
                 });
             } catch (Throwable unused) {
                 if (z2) {
-                    m21587q(-4);
+                    m21588q(-4);
                 } else {
-                    m21586r(zArr, false);
+                    m21587r(zArr, false);
                 }
             }
         } else if (!z) {
-            m21587q(-1);
+            m21588q(-1);
         } else if (aVar != null) {
             Runnable v0Var = new Runnable() {
                 @Override
                 public final void run() {
-                    C5996x0.this.m21591m();
+                    C5996x0.this.m21592m();
                 }
             };
             AbstractC5096a u0Var = new AbstractC5096a() {
                 @Override
                 public final void mo4252o1(int i, boolean z4) {
-                    C5996x0.this.m21590n(zArr, aVar, z2, z3, i, z4);
+                    C5996x0.this.m21591n(zArr, aVar, z2, z3, i, z4);
                 }
             };
             AbstractC6004h hVar = this.f19094N;
             if (hVar != null) {
-                hVar.mo21576a(z3, v0Var, u0Var);
+                hVar.mo21577a(z3, v0Var, u0Var);
             } else {
                 aVar.m14565L2(this.f19093M, z3, v0Var, u0Var);
             }
         }
     }
 
-    public final void m21582w(boolean[] zArr) {
+    public final void m21583w(boolean[] zArr) {
         if (!zArr[0]) {
-            if (m21594j(this.f19099a, this.f19093M) != 0) {
-                m21587q(-1);
+            if (m21595j(this.f19099a, this.f19093M) != 0) {
+                m21588q(-1);
                 return;
             }
-            C4274b a = C4282f.m28302a(this.f19099a);
+            C4274b a = C4282f.m28304a(this.f19099a);
             C5998b bVar = new C5998b(r3, zArr, a);
             AbstractRunnableC5910b[] bVarArr = {new C5999c(zArr, a, bVar)};
-            bVarArr[0].m21855e(C1379j0.m37313o());
+            bVarArr[0].m21856e(C1379j0.m37316o());
             long j = this.f19096P;
             if (j != -1) {
-                C1379j0.m37332e0(bVarArr[0], j);
+                C1379j0.m37335e0(bVarArr[0], j);
             }
             try {
-                LocationRequest e = LocationRequest.m30353b().m30348g(C1379j0.m37350R() ? 100 : 102).m30349f(1).m30350e(5000L);
+                LocationRequest e = LocationRequest.m30355b().m30350g(C1379j0.m37353R() ? 100 : 102).m30351f(1).m30352e(5000L);
                 long j2 = this.f19096P;
                 if (j2 != -1) {
-                    e.m30351d(j2);
+                    e.m30353d(j2);
                 }
-                a.m28306v(e, bVar, Looper.getMainLooper());
+                a.m28308v(e, bVar, Looper.getMainLooper());
             } catch (Throwable unused) {
                 zArr[0] = true;
                 boolean[] zArr2 = new boolean[1];
                 this.f19097Q = zArr2;
-                m21581x(zArr2);
+                m21582x(zArr2);
             }
         }
     }
 
-    public final void m21581x(boolean[] zArr) {
+    public final void m21582x(boolean[] zArr) {
         if (!zArr[0]) {
-            if (m21594j(this.f19099a, this.f19093M) != 0) {
-                m21587q(-1);
+            if (m21595j(this.f19099a, this.f19093M) != 0) {
+                m21588q(-1);
                 return;
             }
             try {
                 LocationManager locationManager = (LocationManager) this.f19099a.getSystemService("location");
                 if (locationManager == null) {
-                    m21587q(-4);
+                    m21588q(-4);
                     return;
                 }
                 C6000d dVar = new C6000d(r5, locationManager, zArr);
                 AbstractRunnableC5910b[] bVarArr = {new C6001e(zArr)};
-                C1379j0.m37332e0(bVarArr[0], this.f19096P);
+                C1379j0.m37335e0(bVarArr[0], this.f19096P);
                 locationManager.requestLocationUpdates("gps", 1L, 0.0f, dVar);
                 locationManager.requestLocationUpdates("network", 1L, 0.0f, dVar);
             } catch (SecurityException unused) {
                 zArr[0] = true;
-                m21587q(-1);
+                m21588q(-1);
             } catch (Throwable th) {
                 zArr[0] = true;
                 Log.m14710w("Error occurred", th, new Object[0]);
-                m21587q(-4);
+                m21588q(-4);
             }
         }
     }
 
-    public void m21579z(AbstractC6004h hVar) {
+    public void m21580z(AbstractC6004h hVar) {
         this.f19094N = hVar;
     }
 }

@@ -36,18 +36,18 @@ public class C5132o extends MetricAffectingSpan {
         this.f17209b = i;
     }
 
-    public final void m23861a(TextPaint textPaint) {
+    public final void m23862a(TextPaint textPaint) {
         int i;
         C9620n4 n4Var;
         int i2 = 0;
         textPaint.setFakeBoldText((this.f17201N & 1) != 0);
-        C5063c.m24144b(this.f17201N, 32);
+        C5063c.m24145b(this.f17201N, 32);
         int i3 = this.f17205R;
         if (i3 != 0) {
             AbstractC11531p pVar = this.f17210c;
             int e = pVar != null ? pVar.mo92e(i3) : C11524j.m228N(i3);
             if ((this.f17201N & 4) != 0 && Color.alpha(e) < 255) {
-                e = C5064d.m24129c(-16777216, e);
+                e = C5064d.m24130c(-16777216, e);
             }
             textPaint.bgColor = e;
         }
@@ -76,7 +76,7 @@ public class C5132o extends MetricAffectingSpan {
         }
         float f = this.f17202O;
         if (f != 0.0f) {
-            textPaint.setTextSize(C1357a0.m37541i(f));
+            textPaint.setTextSize(C1357a0.m37544i(f));
         }
         int i5 = this.f17209b;
         if (i5 != 0) {
@@ -94,123 +94,123 @@ public class C5132o extends MetricAffectingSpan {
                     } else if (backgroundTransparency == 1.0f) {
                         i = C11524j.m228N(this.f17203P);
                     } else {
-                        i = C5064d.m24128d(C11524j.m228N(this.f17209b), C11524j.m228N(this.f17203P), backgroundTransparency);
+                        i = C5064d.m24129d(C11524j.m228N(this.f17209b), C11524j.m228N(this.f17203P), backgroundTransparency);
                     }
                 }
             }
             textPaint.setColor(i);
         } else if (this.f17203P != 0 && this.f17204Q != null) {
-            textPaint.setColor(C5064d.m24128d(textPaint.getColor(), C11524j.m228N(this.f17203P), this.f17204Q.getBackgroundTransparency()));
+            textPaint.setColor(C5064d.m24129d(textPaint.getColor(), C11524j.m228N(this.f17203P), this.f17204Q.getBackgroundTransparency()));
         }
     }
 
-    public TdApi.TextEntityType m23860b() {
+    public TdApi.TextEntityType m23861b() {
         return this.f17200M;
     }
 
-    public AbstractC5133a m23859c() {
+    public AbstractC5133a m23860c() {
         return this.f17207T;
     }
 
-    public Object m23858d() {
+    public Object m23859d() {
         return this.f17206S;
     }
 
-    public boolean m23857e() {
+    public boolean m23858e() {
         return this.f17207T != null;
     }
 
-    public void m23856f(View view) {
+    public void m23857f(View view) {
         AbstractC5133a aVar = this.f17207T;
         if (aVar != null) {
             aVar.mo490a(view, this);
         }
     }
 
-    public C5132o m23855g(int i) {
-        return m23854h(i, false);
+    public C5132o m23856g(int i) {
+        return m23855h(i, false);
     }
 
-    public C5132o m23854h(int i, boolean z) {
+    public C5132o m23855h(int i, boolean z) {
         this.f17205R = i;
-        this.f17201N = C5063c.m24138h(this.f17201N, 4, z);
+        this.f17201N = C5063c.m24139h(this.f17201N, 4, z);
         return this;
     }
 
-    public C5132o m23853i(int i) {
+    public C5132o m23854i(int i) {
         this.f17209b = i;
         return this;
     }
 
-    public C5132o m23852j(TdApi.TextEntityType textEntityType) {
+    public C5132o m23853j(TdApi.TextEntityType textEntityType) {
         this.f17200M = textEntityType;
         boolean z = false;
         if (textEntityType != null) {
-            m23846p(textEntityType.getConstructor() == 792317842);
-            m23847o(textEntityType.getConstructor() == 961529082);
+            m23847p(textEntityType.getConstructor() == 792317842);
+            m23848o(textEntityType.getConstructor() == 961529082);
             if (textEntityType.getConstructor() == 544019899) {
                 z = true;
             }
-            m23848n(z);
+            m23849n(z);
         } else {
-            m23846p(false);
-            m23847o(false);
-            m23848n(false);
+            m23847p(false);
+            m23848o(false);
+            m23849n(false);
         }
         return this;
     }
 
-    public C5132o m23851k(boolean z) {
-        this.f17201N = C5063c.m24138h(this.f17201N, 1, z);
+    public C5132o m23852k(boolean z) {
+        this.f17201N = C5063c.m24139h(this.f17201N, 1, z);
         return this;
     }
 
-    public C5132o m23850l(int i) {
+    public C5132o m23851l(int i) {
         this.f17210c = i != 0 ? C11514c0.m345d(i, true) : null;
         return this;
     }
 
-    public C5132o m23849m(AbstractC11531p pVar) {
+    public C5132o m23850m(AbstractC11531p pVar) {
         this.f17210c = pVar;
         return this;
     }
 
-    public C5132o m23848n(boolean z) {
-        this.f17201N = C5063c.m24138h(this.f17201N, 32, z);
+    public C5132o m23849n(boolean z) {
+        this.f17201N = C5063c.m24139h(this.f17201N, 32, z);
         return this;
     }
 
-    public C5132o m23847o(boolean z) {
-        this.f17201N = C5063c.m24138h(this.f17201N, 16, z);
+    public C5132o m23848o(boolean z) {
+        this.f17201N = C5063c.m24139h(this.f17201N, 16, z);
         return this;
     }
 
-    public C5132o m23846p(boolean z) {
-        this.f17201N = C5063c.m24138h(this.f17201N, 8, z);
+    public C5132o m23847p(boolean z) {
+        this.f17201N = C5063c.m24139h(this.f17201N, 8, z);
         return this;
     }
 
-    public C5132o m23845q(AbstractC5133a aVar) {
+    public C5132o m23846q(AbstractC5133a aVar) {
         this.f17207T = aVar;
         return this;
     }
 
-    public C5132o m23844r(boolean z) {
-        this.f17201N = C5063c.m24138h(this.f17201N, 2, z);
+    public C5132o m23845r(boolean z) {
+        this.f17201N = C5063c.m24139h(this.f17201N, 2, z);
         return this;
     }
 
-    public C5132o m23843s(Object obj) {
+    public C5132o m23844s(Object obj) {
         this.f17206S = obj;
         return this;
     }
 
-    public C5132o m23842t(float f) {
+    public C5132o m23843t(float f) {
         this.f17202O = f;
         return this;
     }
 
-    public C5132o m23841u(int i, C9620n4 n4Var) {
+    public C5132o m23842u(int i, C9620n4 n4Var) {
         this.f17203P = i;
         this.f17204Q = n4Var;
         return this;
@@ -218,15 +218,15 @@ public class C5132o extends MetricAffectingSpan {
 
     @Override
     public void updateDrawState(TextPaint textPaint) {
-        m23861a(textPaint);
+        m23862a(textPaint);
     }
 
     @Override
     public void updateMeasureState(TextPaint textPaint) {
-        m23861a(textPaint);
+        m23862a(textPaint);
     }
 
-    public C5132o m23840v(Typeface typeface) {
+    public C5132o m23841v(Typeface typeface) {
         this.f17208a = typeface;
         return this;
     }

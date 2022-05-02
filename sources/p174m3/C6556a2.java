@@ -12,15 +12,15 @@ public class C6556a2 extends IOException {
         this.f20404b = i;
     }
 
-    public static C6556a2 m20112a(String str, Throwable th) {
+    public static C6556a2 m20113a(String str, Throwable th) {
         return new C6556a2(str, th, true, 1);
     }
 
-    public static C6556a2 m20111b(String str, Throwable th) {
+    public static C6556a2 m20112b(String str, Throwable th) {
         return new C6556a2(str, th, true, 0);
     }
 
-    public static C6556a2 m20110c(String str) {
+    public static C6556a2 m20111c(String str) {
         return new C6556a2(str, null, false, 1);
     }
 }

@@ -21,9 +21,9 @@ public final class C3971b extends AbstractC4349c {
         public C3972a() {
         }
 
-        public final C3971b m29441a(X509TrustManager x509TrustManager) {
+        public final C3971b m29443a(X509TrustManager x509TrustManager) {
             X509TrustManagerExtensions x509TrustManagerExtensions;
-            C8298k.m12934e(x509TrustManager, "trustManager");
+            C8298k.m12933e(x509TrustManager, "trustManager");
             try {
                 x509TrustManagerExtensions = new X509TrustManagerExtensions(x509TrustManager);
             } catch (IllegalArgumentException unused) {
@@ -41,21 +41,21 @@ public final class C3971b extends AbstractC4349c {
     }
 
     public C3971b(X509TrustManager x509TrustManager, X509TrustManagerExtensions x509TrustManagerExtensions) {
-        C8298k.m12934e(x509TrustManager, "trustManager");
-        C8298k.m12934e(x509TrustManagerExtensions, "x509TrustManagerExtensions");
+        C8298k.m12933e(x509TrustManager, "trustManager");
+        C8298k.m12933e(x509TrustManagerExtensions, "x509TrustManagerExtensions");
         this.f13342b = x509TrustManager;
         this.f13343c = x509TrustManagerExtensions;
     }
 
     @Override
-    public List<Certificate> mo28222a(List<? extends Certificate> list, String str) {
-        C8298k.m12934e(list, "chain");
-        C8298k.m12934e(str, "hostname");
+    public List<Certificate> mo28224a(List<? extends Certificate> list, String str) {
+        C8298k.m12933e(list, "chain");
+        C8298k.m12933e(str, "hostname");
         Object[] array = list.toArray(new X509Certificate[0]);
         Objects.requireNonNull(array, "null cannot be cast to non-null type kotlin.Array<T>");
         try {
             List<X509Certificate> checkServerTrusted = this.f13343c.checkServerTrusted((X509Certificate[]) array, "RSA", str);
-            C8298k.m12935d(checkServerTrusted, "x509TrustManagerExtensio…ficates, \"RSA\", hostname)");
+            C8298k.m12934d(checkServerTrusted, "x509TrustManagerExtensio…ficates, \"RSA\", hostname)");
             return checkServerTrusted;
         } catch (CertificateException e) {
             SSLPeerUnverifiedException sSLPeerUnverifiedException = new SSLPeerUnverifiedException(e.getMessage());

@@ -10,7 +10,7 @@ import p269t2.AbstractC8950a;
 import p269t2.AbstractC8951b;
 
 public class C10454h {
-    public static Pattern f33536a = Pattern.compile("(....|\\.\\.)(\\[(.*)\\])?");
+    public static Pattern f33539a = Pattern.compile("(....|\\.\\.)(\\[(.*)\\])?");
 
     public static String m5092a(AbstractC8950a aVar) {
         return m5091b(aVar, "");
@@ -60,7 +60,7 @@ public class C10454h {
             } else {
                 str2 = "";
             }
-            Matcher matcher = f33536a.matcher(str);
+            Matcher matcher = f33539a.matcher(str);
             if (matcher.matches()) {
                 String group = matcher.group(1);
                 if ("..".equals(group)) {

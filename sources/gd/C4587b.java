@@ -37,7 +37,7 @@ public class C4587b {
         public boolean equals(Object obj) {
             if (obj instanceof C4588a) {
                 C4588a aVar = (C4588a) obj;
-                if (aVar.f15120a == this.f15120a && C5070i.m24067c(aVar.f15121b, this.f15121b) && aVar.f15120a == this.f15120a) {
+                if (aVar.f15120a == this.f15120a && C5070i.m24068c(aVar.f15121b, this.f15121b) && aVar.f15120a == this.f15120a) {
                     return true;
                 }
             }
@@ -76,78 +76,78 @@ public class C4587b {
         aVar = aVar == null ? new C4588a() : aVar;
         this.f15119d = aVar;
         this.f15116a = f;
-        this.f15117b = C5070i.m24061i(aVar.f15121b) ? null : new RunnableC5390g.C5392b(aVar.f15121b, C1357a0.m37541i(f) * 3, C1410y.m37083A0((int) (f * 0.75f)), C5428t.AbstractC5441d.f17880K).m22888b().m22868v().m22884f();
+        this.f15117b = C5070i.m24062i(aVar.f15121b) ? null : new RunnableC5390g.C5392b(aVar.f15121b, C1357a0.m37544i(f) * 3, C1410y.m37086A0((int) (f * 0.75f)), C5428t.AbstractC5441d.f17880K).m22889b().m22869v().m22885f();
         if (tVar != null) {
-            this.f15118c = tVar.mo14042X(aVar.f15122c, R.id.theme_color_avatar_content);
+            this.f15118c = tVar.mo14041X(aVar.f15122c, R.id.theme_color_avatar_content);
             return;
         }
         int i = aVar.f15122c;
         if (i != R.drawable.baseline_bookmark_24) {
-            this.f15118c = C1362c.m37483f(i);
+            this.f15118c = C1362c.m37486f(i);
         } else {
-            this.f15118c = C1392p.m37233c();
+            this.f15118c = C1392p.m37236c();
         }
     }
 
-    public void m27215a(Canvas canvas, float f, float f2) {
-        m27212d(canvas, f, f2, 1.0f, m27210f(), true);
+    public void m27217a(Canvas canvas, float f, float f2) {
+        m27214d(canvas, f, f2, 1.0f, m27212f(), true);
     }
 
-    public void m27214b(Canvas canvas, float f, float f2, float f3) {
-        m27212d(canvas, f, f2, f3, m27210f(), true);
+    public void m27216b(Canvas canvas, float f, float f2, float f3) {
+        m27214d(canvas, f, f2, f3, m27212f(), true);
     }
 
-    public void m27213c(Canvas canvas, float f, float f2, float f3, float f4) {
-        m27212d(canvas, f, f2, f3, f4, true);
+    public void m27215c(Canvas canvas, float f, float f2, float f3, float f4) {
+        m27214d(canvas, f, f2, f3, f4, true);
     }
 
-    public void m27212d(Canvas canvas, float f, float f2, float f3, float f4, boolean z) {
+    public void m27214d(Canvas canvas, float f, float f2, float f3, float f4, boolean z) {
         Drawable drawable;
         RunnableC5390g gVar;
         int i;
         if (f3 > 0.0f) {
             if (z && (i = this.f15119d.f15120a) != 0) {
-                canvas.drawCircle(f, f2, f4, C1410y.m37039g(C5064d.m24131a(f3, C11524j.m228N(i))));
+                canvas.drawCircle(f, f2, f4, C1410y.m37042g(C5064d.m24132a(f3, C11524j.m228N(i))));
             }
             int i2 = -1;
             boolean z2 = true;
             if (this.f15117b != null) {
-                float i3 = C1357a0.m37541i(this.f15116a);
+                float i3 = C1357a0.m37544i(this.f15116a);
                 float min = (f4 < i3 ? f4 / i3 : 1.0f) * Math.min(1.0f, (f4 * 2.0f) / Math.max(this.f15117b.getWidth(), this.f15117b.getHeight()));
                 if (min == 1.0f) {
                     z2 = false;
                 }
                 if (z2) {
-                    i2 = C1399s0.m37199V(canvas);
+                    i2 = C1399s0.m37202V(canvas);
                     canvas.scale(min, min, f, f2);
                 }
-                this.f15117b.m22891z(canvas, (int) (f - (gVar.getWidth() / 2)), (int) (f2 - (this.f15117b.getHeight() / 2)), null, f3);
+                this.f15117b.m22892z(canvas, (int) (f - (gVar.getWidth() / 2)), (int) (f2 - (this.f15117b.getHeight() / 2)), null, f3);
                 if (z2) {
-                    C1399s0.m37201T(canvas, i2);
+                    C1399s0.m37204T(canvas, i2);
                 }
             } else if (this.f15118c != null) {
-                float i4 = C1357a0.m37541i(this.f15116a);
+                float i4 = C1357a0.m37544i(this.f15116a);
                 float min2 = (f4 < i4 ? f4 / i4 : 1.0f) * Math.min(1.0f, (f4 * 2.0f) / Math.max(this.f15118c.getMinimumWidth(), this.f15118c.getMinimumHeight()));
                 if (min2 == 1.0f) {
                     z2 = false;
                 }
                 if (z2) {
-                    i2 = C1399s0.m37199V(canvas);
+                    i2 = C1399s0.m37202V(canvas);
                     canvas.scale(min2, min2, f, f2);
                 }
-                C1362c.m37487b(canvas, this.f15118c, f - (drawable.getMinimumWidth() / 2.0f), f2 - (this.f15118c.getMinimumHeight() / 2.0f), C1411z.m36997c(R.id.theme_color_avatar_content, f3));
+                C1362c.m37490b(canvas, this.f15118c, f - (drawable.getMinimumWidth() / 2.0f), f2 - (this.f15118c.getMinimumHeight() / 2.0f), C1411z.m37000c(R.id.theme_color_avatar_content, f3));
                 if (z2) {
-                    C1399s0.m37201T(canvas, i2);
+                    C1399s0.m37204T(canvas, i2);
                 }
             }
         }
     }
 
-    public int m27211e() {
+    public int m27213e() {
         return C11524j.m228N(this.f15119d.f15120a);
     }
 
-    public int m27210f() {
-        return C1357a0.m37541i(this.f15116a);
+    public int m27212f() {
+        return C1357a0.m37544i(this.f15116a);
     }
 }

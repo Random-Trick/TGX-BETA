@@ -15,30 +15,30 @@ final class C5619M2 extends AbstractC5579E2 {
     }
 
     @Override
-    public void mo22132h() {
+    public void mo22133h() {
         List$EL.sort(this.f18194d, this.f18133b);
-        this.f18428a.mo22131j(this.f18194d.size());
+        this.f18428a.mo22132j(this.f18194d.size());
         if (!this.f18134c) {
             ArrayList arrayList = this.f18194d;
             AbstractC5759q2 q2Var = this.f18428a;
             Objects.requireNonNull(q2Var);
-            AbstractC5485a.m22584B(arrayList, new C5681b(q2Var, 3));
+            AbstractC5485a.m22585B(arrayList, new C5681b(q2Var, 3));
         } else {
             Iterator it = this.f18194d.iterator();
             while (it.hasNext()) {
                 Object next = it.next();
-                if (this.f18428a.mo22130t()) {
+                if (this.f18428a.mo22131t()) {
                     break;
                 }
-                this.f18428a.mo22128k(next);
+                this.f18428a.mo22129k(next);
             }
         }
-        this.f18428a.mo22132h();
+        this.f18428a.mo22133h();
         this.f18194d = null;
     }
 
     @Override
-    public void mo22131j(long j) {
+    public void mo22132j(long j) {
         if (j < 2147483639) {
             this.f18194d = j >= 0 ? new ArrayList((int) j) : new ArrayList();
             return;
@@ -47,7 +47,7 @@ final class C5619M2 extends AbstractC5579E2 {
     }
 
     @Override
-    public void mo22128k(Object obj) {
+    public void mo22129k(Object obj) {
         this.f18194d.add(obj);
     }
 }

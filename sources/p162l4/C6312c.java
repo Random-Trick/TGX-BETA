@@ -48,13 +48,13 @@ public final class C6312c implements C4260a.AbstractC4262b {
         }
 
         public C6314b(long j, long j2, int i) {
-            C1186a.m38189a(j < j2);
+            C1186a.m38192a(j < j2);
             this.f19855a = j;
             this.f19856b = j2;
             this.f19857c = i;
         }
 
-        public static int m20678b(C6314b bVar, C6314b bVar2) {
+        public static int m20679b(C6314b bVar, C6314b bVar2) {
             return AbstractC11374k.m802j().mo799e(bVar.f19855a, bVar2.f19855a).mo799e(bVar.f19856b, bVar2.f19856b).mo800d(bVar.f19857c, bVar2.f19857c).mo795i();
         }
 
@@ -79,7 +79,7 @@ public final class C6312c implements C4260a.AbstractC4262b {
         }
 
         public String toString() {
-            return C1216l0.m37936z("Segment: startTimeMs=%d, endTimeMs=%d, speedDivisor=%d", Long.valueOf(this.f19855a), Long.valueOf(this.f19856b), Integer.valueOf(this.f19857c));
+            return C1216l0.m37939z("Segment: startTimeMs=%d, endTimeMs=%d, speedDivisor=%d", Long.valueOf(this.f19855a), Long.valueOf(this.f19856b), Integer.valueOf(this.f19857c));
         }
 
         @Override
@@ -92,10 +92,10 @@ public final class C6312c implements C4260a.AbstractC4262b {
 
     public C6312c(List<C6314b> list) {
         this.f19853a = list;
-        C1186a.m38189a(!m20682a(list));
+        C1186a.m38192a(!m20683a(list));
     }
 
-    public static boolean m20682a(List<C6314b> list) {
+    public static boolean m20683a(List<C6314b> list) {
         if (list.isEmpty()) {
             return false;
         }
@@ -126,12 +126,12 @@ public final class C6312c implements C4260a.AbstractC4262b {
 
     @Override
     public byte[] getWrappedMetadataBytes() {
-        return C4263b.m28324a(this);
+        return C4263b.m28326a(this);
     }
 
     @Override
     public C6600g1 getWrappedMetadataFormat() {
-        return C4263b.m28323b(this);
+        return C4263b.m28325b(this);
     }
 
     public int hashCode() {
@@ -140,7 +140,7 @@ public final class C6312c implements C4260a.AbstractC4262b {
 
     @Override
     public void populateMediaMetadata(C6693s1.C6695b bVar) {
-        C4263b.m28322c(this, bVar);
+        C4263b.m28324c(this, bVar);
     }
 
     public String toString() {

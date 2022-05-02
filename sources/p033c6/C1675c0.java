@@ -31,8 +31,8 @@ public class C1675c0 implements Iterator, p126j$.util.Iterator {
         this.f6146a = it;
     }
 
-    public final void m36101a() {
-        this.f6148c.m36088i();
+    public final void m36104a() {
+        this.f6148c.m36091i();
         if (this.f6148c.f6181b != this.f6147b) {
             throw new ConcurrentModificationException();
         }
@@ -50,13 +50,13 @@ public class C1675c0 implements Iterator, p126j$.util.Iterator {
 
     @Override
     public final boolean hasNext() {
-        m36101a();
+        m36104a();
         return this.f6146a.hasNext();
     }
 
     @Override
     public final Object next() {
-        m36101a();
+        m36104a();
         return this.f6146a.next();
     }
 
@@ -67,6 +67,6 @@ public class C1675c0 implements Iterator, p126j$.util.Iterator {
         AbstractC1735g0 g0Var = this.f6148c.f6179N;
         i = g0Var.f6289M;
         g0Var.f6289M = i - 1;
-        this.f6148c.m36087m();
+        this.f6148c.m36090m();
     }
 }

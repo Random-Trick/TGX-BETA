@@ -13,7 +13,7 @@ public final class C5507r extends C5502m {
 
     static {
         try {
-            Unsafe c = AbstractC5512w.m22505c();
+            Unsafe c = AbstractC5512w.m22506c();
             f18036h = c;
             f18037i = c.objectFieldOffset(C5507r.class.getDeclaredField("lockState"));
         } catch (Exception e) {
@@ -42,7 +42,7 @@ public final class C5507r extends C5502m {
                 while (true) {
                     Object obj2 = sVar3.f18021b;
                     int i2 = sVar3.f18020a;
-                    j = i2 > i ? -1 : i2 < i ? 1 : ((cls == null && (cls = ConcurrentHashMap.m22550c(obj)) == null) || (d = ConcurrentHashMap.m22549d(cls, obj, obj2)) == 0) ? m22512j(obj, obj2) : d;
+                    j = i2 > i ? -1 : i2 < i ? 1 : ((cls == null && (cls = ConcurrentHashMap.m22551c(obj)) == null) || (d = ConcurrentHashMap.m22550d(cls, obj, obj2)) == 0) ? m22513j(obj, obj2) : d;
                     C5508s sVar4 = j <= 0 ? sVar3.f18042f : sVar3.f18043g;
                     if (sVar4 == null) {
                         break;
@@ -55,14 +55,14 @@ public final class C5507r extends C5502m {
                 } else {
                     sVar3.f18043g = sVar;
                 }
-                sVar = m22519c(sVar2, sVar);
+                sVar = m22520c(sVar2, sVar);
             }
             sVar2 = sVar;
         }
         this.f18038e = sVar2;
     }
 
-    static C5508s m22520b(C5508s sVar, C5508s sVar2) {
+    static C5508s m22521b(C5508s sVar, C5508s sVar2) {
         while (sVar2 != null && sVar2 != sVar) {
             C5508s sVar3 = sVar2.f18041e;
             if (sVar3 == null) {
@@ -79,7 +79,7 @@ public final class C5507r extends C5502m {
                     if (sVar4 != null && sVar4.f18045i) {
                         sVar4.f18045i = false;
                         sVar3.f18045i = true;
-                        sVar = m22514h(sVar, sVar3);
+                        sVar = m22515h(sVar, sVar3);
                         sVar3 = sVar2.f18041e;
                         sVar4 = sVar3 == null ? null : sVar3.f18043g;
                     }
@@ -94,7 +94,7 @@ public final class C5507r extends C5502m {
                                     sVar6.f18045i = false;
                                 }
                                 sVar4.f18045i = true;
-                                sVar = m22513i(sVar, sVar4);
+                                sVar = m22514i(sVar, sVar4);
                                 sVar3 = sVar2.f18041e;
                                 if (sVar3 != null) {
                                     sVar5 = sVar3.f18043g;
@@ -110,7 +110,7 @@ public final class C5507r extends C5502m {
                             }
                             if (sVar3 != null) {
                                 sVar3.f18045i = false;
-                                sVar = m22514h(sVar, sVar3);
+                                sVar = m22515h(sVar, sVar3);
                             }
                             sVar2 = sVar;
                             sVar = sVar2;
@@ -122,7 +122,7 @@ public final class C5507r extends C5502m {
                     if (sVar4 != null && sVar4.f18045i) {
                         sVar4.f18045i = false;
                         sVar3.f18045i = true;
-                        sVar = m22513i(sVar, sVar3);
+                        sVar = m22514i(sVar, sVar3);
                         sVar3 = sVar2.f18041e;
                         sVar4 = sVar3 == null ? null : sVar3.f18042f;
                     }
@@ -137,7 +137,7 @@ public final class C5507r extends C5502m {
                                     sVar10.f18045i = false;
                                 }
                                 sVar4.f18045i = true;
-                                sVar = m22514h(sVar, sVar4);
+                                sVar = m22515h(sVar, sVar4);
                                 sVar3 = sVar2.f18041e;
                                 if (sVar3 != null) {
                                     sVar5 = sVar3.f18042f;
@@ -153,7 +153,7 @@ public final class C5507r extends C5502m {
                             }
                             if (sVar3 != null) {
                                 sVar3.f18045i = false;
-                                sVar = m22513i(sVar, sVar3);
+                                sVar = m22514i(sVar, sVar3);
                             }
                             sVar2 = sVar;
                             sVar = sVar2;
@@ -167,7 +167,7 @@ public final class C5507r extends C5502m {
         return sVar;
     }
 
-    static C5508s m22519c(C5508s sVar, C5508s sVar2) {
+    static C5508s m22520c(C5508s sVar, C5508s sVar2) {
         C5508s sVar3;
         sVar2.f18045i = true;
         while (true) {
@@ -183,7 +183,7 @@ public final class C5507r extends C5502m {
                     sVar5 = sVar3.f18043g;
                     if (sVar5 == null || !sVar5.f18045i) {
                         if (sVar2 == sVar4.f18043g) {
-                            sVar = m22514h(sVar, sVar4);
+                            sVar = m22515h(sVar, sVar4);
                             C5508s sVar6 = sVar4.f18041e;
                             sVar3 = sVar6 == null ? null : sVar6.f18041e;
                             sVar4 = sVar6;
@@ -193,7 +193,7 @@ public final class C5507r extends C5502m {
                             sVar4.f18045i = false;
                             if (sVar3 != null) {
                                 sVar3.f18045i = true;
-                                sVar = m22513i(sVar, sVar3);
+                                sVar = m22514i(sVar, sVar3);
                             }
                         }
                     } else {
@@ -204,7 +204,7 @@ public final class C5507r extends C5502m {
                     }
                 } else if (sVar5 == null || !sVar5.f18045i) {
                     if (sVar2 == sVar4.f18042f) {
-                        sVar = m22513i(sVar, sVar4);
+                        sVar = m22514i(sVar, sVar4);
                         C5508s sVar7 = sVar4.f18041e;
                         sVar3 = sVar7 == null ? null : sVar7.f18041e;
                         sVar4 = sVar7;
@@ -214,7 +214,7 @@ public final class C5507r extends C5502m {
                         sVar4.f18045i = false;
                         if (sVar3 != null) {
                             sVar3.f18045i = true;
-                            sVar = m22514h(sVar, sVar3);
+                            sVar = m22515h(sVar, sVar3);
                         }
                     }
                 } else {
@@ -228,7 +228,7 @@ public final class C5507r extends C5502m {
         return sVar;
     }
 
-    private final void m22518d() {
+    private final void m22519d() {
         boolean z = false;
         while (true) {
             int i = this.lockState;
@@ -250,13 +250,13 @@ public final class C5507r extends C5502m {
         }
     }
 
-    private final void m22517e() {
+    private final void m22518e() {
         if (!f18036h.compareAndSwapInt(this, f18037i, 0, 1)) {
-            m22518d();
+            m22519d();
         }
     }
 
-    static C5508s m22514h(C5508s sVar, C5508s sVar2) {
+    static C5508s m22515h(C5508s sVar, C5508s sVar2) {
         C5508s sVar3 = sVar2.f18043g;
         if (sVar3 != null) {
             C5508s sVar4 = sVar3.f18042f;
@@ -280,7 +280,7 @@ public final class C5507r extends C5502m {
         return sVar;
     }
 
-    static C5508s m22513i(C5508s sVar, C5508s sVar2) {
+    static C5508s m22514i(C5508s sVar, C5508s sVar2) {
         C5508s sVar3 = sVar2.f18042f;
         if (sVar3 != null) {
             C5508s sVar4 = sVar3.f18043g;
@@ -304,13 +304,13 @@ public final class C5507r extends C5502m {
         return sVar;
     }
 
-    static int m22512j(Object obj, Object obj2) {
+    static int m22513j(Object obj, Object obj2) {
         int compareTo;
         return (obj == null || obj2 == null || (compareTo = obj.getClass().getName().compareTo(obj2.getClass().getName())) == 0) ? System.identityHashCode(obj) <= System.identityHashCode(obj2) ? -1 : 1 : compareTo;
     }
 
     @Override
-    public final C5502m mo22511a(int i, Object obj) {
+    public final C5502m mo22512a(int i, Object obj) {
         Object obj2;
         Thread thread;
         Thread thread2;
@@ -328,14 +328,14 @@ public final class C5507r extends C5502m {
                     try {
                         C5508s sVar2 = this.f18038e;
                         if (sVar2 != null) {
-                            sVar = sVar2.m22510b(i, obj, null);
+                            sVar = sVar2.m22511b(i, obj, null);
                         }
-                        if (AbstractC5512w.m22507a(unsafe, this, j, -4) == 6 && (thread2 = this.f18040g) != null) {
+                        if (AbstractC5512w.m22508a(unsafe, this, j, -4) == 6 && (thread2 = this.f18040g) != null) {
                             LockSupport.unpark(thread2);
                         }
                         return sVar;
                     } catch (Throwable th) {
-                        if (AbstractC5512w.m22507a(f18036h, this, f18037i, -4) == 6 && (thread = this.f18040g) != null) {
+                        if (AbstractC5512w.m22508a(f18036h, this, f18037i, -4) == 6 && (thread = this.f18040g) != null) {
                             LockSupport.unpark(thread);
                         }
                         throw th;
@@ -348,11 +348,11 @@ public final class C5507r extends C5502m {
         return mVar;
     }
 
-    public final p126j$.util.concurrent.C5508s m22516f(int r16, java.lang.Object r17, java.lang.Object r18) {
-        throw new UnsupportedOperationException("Method not decompiled: p126j$.util.concurrent.C5507r.m22516f(int, java.lang.Object, java.lang.Object):j$.util.concurrent.s");
+    public final p126j$.util.concurrent.C5508s m22517f(int r16, java.lang.Object r17, java.lang.Object r18) {
+        throw new UnsupportedOperationException("Method not decompiled: p126j$.util.concurrent.C5507r.m22517f(int, java.lang.Object, java.lang.Object):j$.util.concurrent.s");
     }
 
-    public final boolean m22515g(p126j$.util.concurrent.C5508s r11) {
-        throw new UnsupportedOperationException("Method not decompiled: p126j$.util.concurrent.C5507r.m22515g(j$.util.concurrent.s):boolean");
+    public final boolean m22516g(p126j$.util.concurrent.C5508s r11) {
+        throw new UnsupportedOperationException("Method not decompiled: p126j$.util.concurrent.C5507r.m22516g(j$.util.concurrent.s):boolean");
     }
 }

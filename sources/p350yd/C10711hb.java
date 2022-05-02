@@ -13,26 +13,26 @@ import p181mb.C6813d;
 import p193nb.C7316a;
 
 public class C10711hb implements Iterable<C10609db> {
-    public final long f34264M;
-    public int f34265N;
-    public final ArrayList<C10609db> f34266O;
-    public int f34267P;
-    public int f34268Q;
-    public final C10930q6 f34269a;
-    public final int f34270b;
-    public final TdApi.NotificationGroupType f34271c;
+    public final long f34267M;
+    public int f34268N;
+    public final ArrayList<C10609db> f34269O;
+    public int f34270P;
+    public int f34271Q;
+    public final C10930q6 f34272a;
+    public final int f34273b;
+    public final TdApi.NotificationGroupType f34274c;
 
     public C10711hb(C10930q6 q6Var, TdApi.NotificationGroup notificationGroup) {
-        this.f34269a = q6Var;
-        this.f34270b = notificationGroup.f25408id;
-        this.f34271c = notificationGroup.type;
-        this.f34264M = notificationGroup.chatId;
-        this.f34265N = notificationGroup.totalCount;
-        this.f34266O = new ArrayList<>(notificationGroup.notifications.length);
+        this.f34272a = q6Var;
+        this.f34273b = notificationGroup.f25411id;
+        this.f34274c = notificationGroup.type;
+        this.f34267M = notificationGroup.chatId;
+        this.f34268N = notificationGroup.totalCount;
+        this.f34269O = new ArrayList<>(notificationGroup.notifications.length);
         for (TdApi.Notification notification : notificationGroup.notifications) {
-            this.f34266O.add(new C10609db(q6Var, notification, this));
+            this.f34269O.add(new C10609db(q6Var, notification, this));
         }
-        Collections.sort(this.f34266O);
+        Collections.sort(this.f34269O);
         m4233R();
     }
 
@@ -41,7 +41,7 @@ public class C10711hb implements Iterable<C10609db> {
     }
 
     public final int m4250A(int i) {
-        int binarySearch = Collections.binarySearch(this.f34266O, new C10609db(i));
+        int binarySearch = Collections.binarySearch(this.f34269O, new C10609db(i));
         if (binarySearch >= 0) {
             return binarySearch;
         }
@@ -49,16 +49,16 @@ public class C10711hb implements Iterable<C10609db> {
     }
 
     public boolean m4249B() {
-        return (this.f34268Q & 2) == 0 && m4248C(m4237N());
+        return (this.f34271Q & 2) == 0 && m4248C(m4237N());
     }
 
     public boolean m4248C(int i) {
-        int i2 = this.f34267P;
+        int i2 = this.f34270P;
         return i2 != 0 && i2 >= i;
     }
 
     public boolean m4247D() {
-        return this.f34271c.getConstructor() == -2050324051;
+        return this.f34274c.getConstructor() == -2050324051;
     }
 
     public boolean m4246E() {
@@ -104,28 +104,28 @@ public class C10711hb implements Iterable<C10609db> {
     }
 
     public boolean m4243H() {
-        return this.f34269a.m2443g7(this.f34264M);
+        return this.f34272a.m2443g7(this.f34267M);
     }
 
     public C10609db m4241J() {
-        ArrayList<C10609db> arrayList = this.f34266O;
+        ArrayList<C10609db> arrayList = this.f34269O;
         return arrayList.get(arrayList.size() - 1);
     }
 
     public void m4240K(int i) {
-        int i2 = this.f34268Q & (-3);
+        int i2 = this.f34271Q & (-3);
         if (i == 1) {
             i2 |= 1;
         }
         int N = m4237N();
         m4232S(N, i2);
         if (i != 2 && m4236O()) {
-            this.f34269a.m2270r4().m14783o(new TdApi.RemoveNotificationGroup(this.f34270b, N), this.f34269a.m2214uc());
+            this.f34272a.m2270r4().m14783o(new TdApi.RemoveNotificationGroup(this.f34273b, N), this.f34272a.m2214uc());
         }
     }
 
     public void m4239L() {
-        m4232S(this.f34267P, (this.f34268Q & (-2)) | 2);
+        m4232S(this.f34270P, (this.f34271Q & (-2)) | 2);
     }
 
     public boolean m4238M(int i) {
@@ -133,10 +133,10 @@ public class C10711hb implements Iterable<C10609db> {
     }
 
     public int m4237N() {
-        if (this.f34266O.isEmpty()) {
-            return this.f34267P;
+        if (this.f34269O.isEmpty()) {
+            return this.f34270P;
         }
-        ArrayList<C10609db> arrayList = this.f34266O;
+        ArrayList<C10609db> arrayList = this.f34269O;
         return arrayList.get(arrayList.size() - 1).m4462j();
     }
 
@@ -145,7 +145,7 @@ public class C10711hb implements Iterable<C10609db> {
         if (!m4247D()) {
             switch (C7316a.m17057d(m4220v())) {
                 case TdApi.ChatTypeSupergroup.CONSTRUCTOR:
-                    if (this.f34269a.m2784K6(m4220v())) {
+                    if (this.f34272a.m2784K6(m4220v())) {
                         i = 4;
                         break;
                     }
@@ -158,22 +158,22 @@ public class C10711hb implements Iterable<C10609db> {
                 default:
                     return true;
             }
-            return !C4868i.m24726c2().m24892F(i);
+            return !C4868i.m24727c2().m24893F(i);
         }
         i = 1;
-        return !C4868i.m24726c2().m24892F(i);
+        return !C4868i.m24727c2().m24893F(i);
     }
 
     public List<C10609db> m4235P() {
-        return this.f34266O;
+        return this.f34269O;
     }
 
     public C10609db m4234Q(int i) {
-        Iterator<C10609db> it = this.f34266O.iterator();
+        Iterator<C10609db> it = this.f34269O.iterator();
         int i2 = 0;
         while (it.hasNext()) {
             if (it.next().m4462j() == i) {
-                return this.f34266O.remove(i2);
+                return this.f34269O.remove(i2);
             }
             i2++;
         }
@@ -181,16 +181,16 @@ public class C10711hb implements Iterable<C10609db> {
     }
 
     public final void m4233R() {
-        long y = this.f34269a.m2294pc().m4085y(this.f34270b);
-        this.f34267P = C5063c.m24133m(y);
-        this.f34268Q = C5063c.m24132n(y);
+        long y = this.f34272a.m2294pc().m4085y(this.f34273b);
+        this.f34270P = C5063c.m24134m(y);
+        this.f34271Q = C5063c.m24133n(y);
     }
 
     public final void m4232S(int i, int i2) {
-        if (this.f34267P != i || this.f34268Q != i2) {
-            this.f34267P = i;
-            this.f34268Q = i2;
-            this.f34269a.m2294pc().m4102p0(this.f34270b, i, i2);
+        if (this.f34270P != i || this.f34271Q != i2) {
+            this.f34270P = i;
+            this.f34271Q = i2;
+            this.f34272a.m2294pc().m4102p0(this.f34273b, i, i2);
         }
     }
 
@@ -215,12 +215,12 @@ public class C10711hb implements Iterable<C10609db> {
     }
 
     public C10609db m4229V(TdApi.Notification notification) {
-        int A = m4250A(notification.f25407id);
+        int A = m4250A(notification.f25410id);
         if (A < 0) {
             return null;
         }
-        C10609db dbVar = new C10609db(this.f34269a, notification, this);
-        this.f34266O.set(A, dbVar);
+        C10609db dbVar = new C10609db(this.f34272a, notification, this);
+        this.f34269O.set(A, dbVar);
         return dbVar;
     }
 
@@ -235,21 +235,21 @@ public class C10711hb implements Iterable<C10609db> {
     }
 
     public boolean m4226i() {
-        if (this.f34267P == 0 && this.f34268Q == 0) {
+        if (this.f34270P == 0 && this.f34271Q == 0) {
             return false;
         }
-        this.f34267P = 0;
-        this.f34268Q = 0;
+        this.f34270P = 0;
+        this.f34271Q = 0;
         return true;
     }
 
     public boolean isEmpty() {
-        return this.f34266O.isEmpty();
+        return this.f34269O.isEmpty();
     }
 
     @Override
     public Iterator<C10609db> iterator() {
-        return new C6813d(this.f34266O, C10690gb.f34214a);
+        return new C6813d(this.f34269O, C10690gb.f34217a);
     }
 
     public long m4225m() {
@@ -267,26 +267,26 @@ public class C10711hb implements Iterable<C10609db> {
     }
 
     public int m4224r() {
-        if (!this.f34266O.isEmpty()) {
-            return this.f34266O.get(0).m4462j();
+        if (!this.f34269O.isEmpty()) {
+            return this.f34269O.get(0).m4462j();
         }
         return 0;
     }
 
     public long[] m4223s() {
-        C5322e eVar = new C5322e(this.f34266O.size());
+        C5322e eVar = new C5322e(this.f34269O.size());
         Iterator<C10609db> it = iterator();
         while (it.hasNext()) {
             long d = it.next().m4468d();
             if (d != 0) {
-                eVar.m23275a(d);
+                eVar.m23276a(d);
             }
         }
-        return eVar.m23269g();
+        return eVar.m23270g();
     }
 
     public long[] m4222t() {
-        HashSet<Long> hashSet = new HashSet(this.f34266O.size());
+        HashSet<Long> hashSet = new HashSet(this.f34269O.size());
         Iterator<C10609db> it = iterator();
         while (it.hasNext()) {
             long e = it.next().m4467e();
@@ -307,15 +307,15 @@ public class C10711hb implements Iterable<C10609db> {
     }
 
     public int m4221u() {
-        if (!C4868i.m24726c2().m24770W2()) {
-            return (!C7316a.m17051j(this.f34264M) || !C4868i.m24726c2().m24868I2()) ? 0 : 4;
+        if (!C4868i.m24727c2().m24771W2()) {
+            return (!C7316a.m17051j(this.f34267M) || !C4868i.m24727c2().m24869I2()) ? 0 : 4;
         }
-        switch (C7316a.m17057d(this.f34264M)) {
+        switch (C7316a.m17057d(this.f34267M)) {
             case TdApi.ChatTypeSupergroup.CONSTRUCTOR:
                 if (m4247D()) {
                     return 1;
                 }
-                return this.f34269a.m2736N6(this.f34264M) ? 3 : 2;
+                return this.f34272a.m2736N6(this.f34267M) ? 3 : 2;
             case TdApi.ChatTypeSecret.CONSTRUCTOR:
                 return 4;
             case TdApi.ChatTypeBasicGroup.CONSTRUCTOR:
@@ -323,16 +323,16 @@ public class C10711hb implements Iterable<C10609db> {
             case TdApi.ChatTypePrivate.CONSTRUCTOR:
                 return 1;
             default:
-                throw new IllegalStateException("Unknown chatId: " + this.f34264M);
+                throw new IllegalStateException("Unknown chatId: " + this.f34267M);
         }
     }
 
     public long m4220v() {
-        return this.f34264M;
+        return this.f34267M;
     }
 
     public int m4219w() {
-        return this.f34270b;
+        return this.f34273b;
     }
 
     public long m4218x() {
@@ -340,30 +340,30 @@ public class C10711hb implements Iterable<C10609db> {
     }
 
     public int m4217y() {
-        return this.f34265N;
+        return this.f34268N;
     }
 
     public final void m4216z(int i) {
-        if (this.f34267P < i) {
-            m4232S(i, this.f34268Q);
+        if (this.f34270P < i) {
+            m4232S(i, this.f34271Q);
         }
     }
 
     public C10711hb(C10930q6 q6Var, TdApi.UpdateNotificationGroup updateNotificationGroup) {
-        this.f34269a = q6Var;
-        this.f34270b = updateNotificationGroup.notificationGroupId;
-        this.f34271c = updateNotificationGroup.type;
-        this.f34264M = updateNotificationGroup.chatId;
-        this.f34265N = updateNotificationGroup.totalCount;
+        this.f34272a = q6Var;
+        this.f34273b = updateNotificationGroup.notificationGroupId;
+        this.f34274c = updateNotificationGroup.type;
+        this.f34267M = updateNotificationGroup.chatId;
+        this.f34268N = updateNotificationGroup.totalCount;
         TdApi.Notification[] notificationArr = updateNotificationGroup.addedNotifications;
         int length = notificationArr != null ? notificationArr.length : 0;
-        this.f34266O = new ArrayList<>(length);
+        this.f34269O = new ArrayList<>(length);
         if (length > 0) {
             for (TdApi.Notification notification : updateNotificationGroup.addedNotifications) {
-                this.f34266O.add(new C10609db(q6Var, notification, this));
+                this.f34269O.add(new C10609db(q6Var, notification, this));
             }
         }
-        Collections.sort(this.f34266O);
+        Collections.sort(this.f34269O);
         m4233R();
     }
 }

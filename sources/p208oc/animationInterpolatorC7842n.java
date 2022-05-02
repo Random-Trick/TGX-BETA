@@ -4,21 +4,21 @@ import android.graphics.PointF;
 import android.view.animation.Interpolator;
 
 public class animationInterpolatorC7842n implements Interpolator {
-    public static final animationInterpolatorC7842n f25238f = new animationInterpolatorC7842n(0.25d, 0.1d, 0.25d, 1.0d);
-    public static final animationInterpolatorC7842n f25239g = new animationInterpolatorC7842n(0.0d, 0.0d, 0.58d, 1.0d);
-    public static final animationInterpolatorC7842n f25240h = new animationInterpolatorC7842n(0.23d, 1.0d, 0.32d, 1.0d);
-    public static final animationInterpolatorC7842n f25241i = new animationInterpolatorC7842n(0.42d, 0.0d, 1.0d, 1.0d);
-    public static final animationInterpolatorC7842n f25242j = new animationInterpolatorC7842n(0.42d, 0.0d, 0.58d, 1.0d);
-    public PointF f25243a;
-    public PointF f25244b;
-    public PointF f25245c;
-    public PointF f25246d;
-    public PointF f25247e;
+    public static final animationInterpolatorC7842n f25241f = new animationInterpolatorC7842n(0.25d, 0.1d, 0.25d, 1.0d);
+    public static final animationInterpolatorC7842n f25242g = new animationInterpolatorC7842n(0.0d, 0.0d, 0.58d, 1.0d);
+    public static final animationInterpolatorC7842n f25243h = new animationInterpolatorC7842n(0.23d, 1.0d, 0.32d, 1.0d);
+    public static final animationInterpolatorC7842n f25244i = new animationInterpolatorC7842n(0.42d, 0.0d, 1.0d, 1.0d);
+    public static final animationInterpolatorC7842n f25245j = new animationInterpolatorC7842n(0.42d, 0.0d, 0.58d, 1.0d);
+    public PointF f25246a;
+    public PointF f25247b;
+    public PointF f25248c;
+    public PointF f25249d;
+    public PointF f25250e;
 
     public animationInterpolatorC7842n(PointF pointF, PointF pointF2) {
-        this.f25245c = new PointF();
-        this.f25246d = new PointF();
-        this.f25247e = new PointF();
+        this.f25248c = new PointF();
+        this.f25249d = new PointF();
+        this.f25250e = new PointF();
         float f = pointF.x;
         if (f < 0.0f || f > 1.0f) {
             throw new IllegalArgumentException("startX value must be in the range [0, 1]");
@@ -27,40 +27,40 @@ public class animationInterpolatorC7842n implements Interpolator {
         if (f2 < 0.0f || f2 > 1.0f) {
             throw new IllegalArgumentException("endX value must be in the range [0, 1]");
         }
-        this.f25243a = pointF;
-        this.f25244b = pointF2;
+        this.f25246a = pointF;
+        this.f25247b = pointF2;
     }
 
     public final float m14888a(float f) {
-        PointF pointF = this.f25247e;
-        PointF pointF2 = this.f25243a;
+        PointF pointF = this.f25250e;
+        PointF pointF2 = this.f25246a;
         float f2 = pointF2.x * 3.0f;
         pointF.x = f2;
-        PointF pointF3 = this.f25246d;
-        float f3 = ((this.f25244b.x - pointF2.x) * 3.0f) - f2;
+        PointF pointF3 = this.f25249d;
+        float f3 = ((this.f25247b.x - pointF2.x) * 3.0f) - f2;
         pointF3.x = f3;
-        PointF pointF4 = this.f25245c;
+        PointF pointF4 = this.f25248c;
         float f4 = (1.0f - pointF.x) - f3;
         pointF4.x = f4;
         return f * (pointF.x + ((pointF3.x + (f4 * f)) * f));
     }
 
     public float m14887b(float f) {
-        PointF pointF = this.f25247e;
-        PointF pointF2 = this.f25243a;
+        PointF pointF = this.f25250e;
+        PointF pointF2 = this.f25246a;
         float f2 = pointF2.y * 3.0f;
         pointF.y = f2;
-        PointF pointF3 = this.f25246d;
-        float f3 = ((this.f25244b.y - pointF2.y) * 3.0f) - f2;
+        PointF pointF3 = this.f25249d;
+        float f3 = ((this.f25247b.y - pointF2.y) * 3.0f) - f2;
         pointF3.y = f3;
-        PointF pointF4 = this.f25245c;
+        PointF pointF4 = this.f25248c;
         float f4 = (1.0f - pointF.y) - f3;
         pointF4.y = f4;
         return f * (pointF.y + ((pointF3.y + (f4 * f)) * f));
     }
 
     public final float m14886c(float f) {
-        return this.f25247e.x + (f * ((this.f25246d.x * 2.0f) + (this.f25245c.x * 3.0f * f)));
+        return this.f25250e.x + (f * ((this.f25249d.x * 2.0f) + (this.f25248c.x * 3.0f * f)));
     }
 
     public float m14885d(float f) {

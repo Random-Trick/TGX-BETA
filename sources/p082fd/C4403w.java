@@ -87,7 +87,7 @@ public class C4403w {
             this.f14590d = list;
         }
 
-        public static int m27797c(int i) {
+        public static int m27799c(int i) {
             switch (i) {
                 case 1:
                     return R.string.ToolsStringSectionMain;
@@ -110,7 +110,7 @@ public class C4403w {
             }
         }
 
-        public static int m27796d(TdApi.LanguagePackString languagePackString) {
+        public static int m27798d(TdApi.LanguagePackString languagePackString) {
             String str = languagePackString.key;
             if (str.startsWith("language_")) {
                 return 1;
@@ -135,10 +135,10 @@ public class C4403w {
             if (languagePackStringValue instanceof TdApi.LanguagePackStringValuePluralized) {
                 return 6;
             }
-            return (!(languagePackStringValue instanceof TdApi.LanguagePackStringValueOrdinary) || !C5070i.m24064f(((TdApi.LanguagePackStringValueOrdinary) languagePackStringValue).value)) ? 8 : 7;
+            return (!(languagePackStringValue instanceof TdApi.LanguagePackStringValueOrdinary) || !C5070i.m24065f(((TdApi.LanguagePackStringValueOrdinary) languagePackStringValue).value)) ? 8 : 7;
         }
 
-        public C4406c m27799a(C4406c cVar) {
+        public C4406c m27801a(C4406c cVar) {
             int indexOf = cVar != null ? this.f14590d.indexOf(cVar) : -1;
             int i = 0;
             if (indexOf == -1) {
@@ -172,14 +172,14 @@ public class C4403w {
             return null;
         }
 
-        public Pattern m27798b() {
+        public Pattern m27800b() {
             if (this.f14591e == null) {
                 this.f14591e = Pattern.compile("(%%|%\\d+\\$(?:\\d+)?\\w)");
             }
             return this.f14591e;
         }
 
-        public int m27795e() {
+        public int m27797e() {
             int i = 0;
             for (C4406c cVar : this.f14590d) {
                 if (!cVar.f14593b) {
@@ -189,11 +189,11 @@ public class C4403w {
             return i;
         }
 
-        public void m27794f(C4406c cVar, SpannableStringBuilder spannableStringBuilder, boolean z) {
+        public void m27796f(C4406c cVar, SpannableStringBuilder spannableStringBuilder, boolean z) {
             String str;
             int constructor = cVar.f14592a.value.getConstructor();
             if (constructor == -249256352) {
-                m27793g(((TdApi.LanguagePackStringValueOrdinary) cVar.f14592a.value).value, spannableStringBuilder, z, -1);
+                m27795g(((TdApi.LanguagePackStringValueOrdinary) cVar.f14592a.value).value, spannableStringBuilder, z, -1);
             } else if (constructor == 1906840261) {
                 TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized = (TdApi.LanguagePackStringValuePluralized) cVar.f14592a.value;
                 for (C4407d dVar : (cVar.f14593b ? this.f14588b : this.f14589c).f14598b) {
@@ -211,22 +211,22 @@ public class C4403w {
                     } else if (i == 5) {
                         str = languagePackStringValuePluralized.otherValue;
                     }
-                    if (!C5070i.m24061i(str)) {
+                    if (!C5070i.m24062i(str)) {
                         int[] iArr = dVar.f14596b;
                         if (iArr.length > 0) {
-                            m27793g(str, spannableStringBuilder, z, iArr[0]);
+                            m27795g(str, spannableStringBuilder, z, iArr[0]);
                         }
                     }
                 }
             }
         }
 
-        public void m27793g(String str, SpannableStringBuilder spannableStringBuilder, boolean z, int i) {
+        public void m27795g(String str, SpannableStringBuilder spannableStringBuilder, boolean z, int i) {
             int indexOf;
             int i2;
             int i3;
             int g;
-            if (!C5070i.m24061i(str)) {
+            if (!C5070i.m24062i(str)) {
                 String str2 = "\n";
                 int i4 = 0;
                 if (str.indexOf(str2) != -1) {
@@ -244,19 +244,19 @@ public class C4403w {
                 }
                 int length = spannableStringBuilder.length();
                 spannableStringBuilder.append((CharSequence) str);
-                Matcher matcher = m27798b().matcher(str);
+                Matcher matcher = m27800b().matcher(str);
                 while (matcher.find()) {
                     int start = matcher.start();
                     int end = matcher.end();
-                    spannableStringBuilder.setSpan(new C5132o(C1389o.m37260i(), R.id.theme_color_textNeutral).m23852j(new TdApi.TextEntityTypeBold()).m23851k(RunnableC5390g.m22981N0(str, start, end)), start + length, end + length, 33);
+                    spannableStringBuilder.setSpan(new C5132o(C1389o.m37263i(), R.id.theme_color_textNeutral).m23853j(new TdApi.TextEntityTypeBold()).m23852k(RunnableC5390g.m22982N0(str, start, end)), start + length, end + length, 33);
                 }
-                if (i >= 0 && (g = C5070i.m24063g(spannableStringBuilder, "%1$s", length)) != -1) {
+                if (i >= 0 && (g = C5070i.m24064g(spannableStringBuilder, "%1$s", length)) != -1) {
                     int i5 = g + 4;
                     Object[] objArr = (C5132o[]) spannableStringBuilder.getSpans(g, i5, C5132o.class);
                     if (objArr != null && objArr.length == 1) {
                         spannableStringBuilder.removeSpan(objArr[0]);
-                        String S = C4403w.m27939S(i);
-                        objArr[0].m23851k(RunnableC5390g.m22983M0(S));
+                        String S = C4403w.m27941S(i);
+                        objArr[0].m23852k(RunnableC5390g.m22984M0(S));
                         spannableStringBuilder.replace(g, i5, (CharSequence) S);
                         spannableStringBuilder.setSpan(objArr[0], g, S.length() + g, 33);
                     }
@@ -266,7 +266,7 @@ public class C4403w {
                     int i6 = 0;
                     while (true) {
                         i2 = length + i6;
-                        if (i2 >= length2 || !C1363c0.m37455S(spannableStringBuilder.charAt(i2))) {
+                        if (i2 >= length2 || !C1363c0.m37458S(spannableStringBuilder.charAt(i2))) {
                             break;
                         }
                         i6++;
@@ -274,7 +274,7 @@ public class C4403w {
                     while (true) {
                         i3 = length2 - i4;
                         int i7 = i3 - 1;
-                        if (i7 <= length || !C1363c0.m37455S(spannableStringBuilder.charAt(i7))) {
+                        if (i7 <= length || !C1363c0.m37458S(spannableStringBuilder.charAt(i7))) {
                             break;
                         }
                         i4++;
@@ -289,9 +289,9 @@ public class C4403w {
             }
         }
 
-        public void m27792h() {
+        public void m27794h() {
             for (C4406c cVar : this.f14590d) {
-                cVar.m27787e(this);
+                cVar.m27789e(this);
             }
         }
     }
@@ -306,59 +306,59 @@ public class C4403w {
             this.f14593b = z;
         }
 
-        public TdApi.LanguagePackStringValuePluralized m27791a(List<C4407d> list) {
+        public TdApi.LanguagePackStringValuePluralized m27793a(List<C4407d> list) {
             TdApi.LanguagePackStringValue languagePackStringValue = this.f14594c;
             if (languagePackStringValue != null) {
                 return (TdApi.LanguagePackStringValuePluralized) languagePackStringValue;
             }
-            TdApi.LanguagePackStringValuePluralized d0 = C4403w.m27891d0(m27789c(), list);
+            TdApi.LanguagePackStringValuePluralized d0 = C4403w.m27893d0(m27791c(), list);
             this.f14594c = d0;
             return d0;
         }
 
-        public TdApi.LanguagePackStringValueOrdinary m27790b() {
+        public TdApi.LanguagePackStringValueOrdinary m27792b() {
             TdApi.LanguagePackStringValue languagePackStringValue = this.f14594c;
             if (languagePackStringValue != null) {
                 return (TdApi.LanguagePackStringValueOrdinary) languagePackStringValue;
             }
-            TdApi.LanguagePackStringValueOrdinary e0 = C4403w.m27886e0(m27789c());
+            TdApi.LanguagePackStringValueOrdinary e0 = C4403w.m27888e0(m27791c());
             this.f14594c = e0;
             return e0;
         }
 
-        public String m27789c() {
+        public String m27791c() {
             return this.f14592a.key;
         }
 
-        public int m27788d() {
-            return C4405b.m27796d(this.f14592a);
+        public int m27790d() {
+            return C4405b.m27798d(this.f14592a);
         }
 
-        public void m27787e(C4405b bVar) {
+        public void m27789e(C4405b bVar) {
             int constructor = this.f14592a.value.getConstructor();
             boolean z = true;
             if (constructor == -249256352) {
                 TdApi.LanguagePackString languagePackString = this.f14592a;
                 TdApi.LanguagePackStringValueOrdinary languagePackStringValueOrdinary = (TdApi.LanguagePackStringValueOrdinary) languagePackString.value;
-                TdApi.LanguagePackStringValueOrdinary E2 = C4403w.m27992E2(languagePackString.key, bVar.f14587a.f25405id);
+                TdApi.LanguagePackStringValueOrdinary E2 = C4403w.m27994E2(languagePackString.key, bVar.f14587a.f25408id);
                 if (E2 == null) {
                     z = false;
                 }
                 this.f14593b = z;
                 if (!z) {
-                    E2 = m27790b();
+                    E2 = m27792b();
                 }
                 languagePackStringValueOrdinary.value = E2.value;
             } else if (constructor == 1906840261) {
                 TdApi.LanguagePackString languagePackString2 = this.f14592a;
                 TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized = (TdApi.LanguagePackStringValuePluralized) languagePackString2.value;
-                TdApi.LanguagePackStringValuePluralized D2 = C4403w.m27996D2(languagePackString2.key, bVar.f14587a.f25405id);
+                TdApi.LanguagePackStringValuePluralized D2 = C4403w.m27998D2(languagePackString2.key, bVar.f14587a.f25408id);
                 if (D2 == null) {
                     z = false;
                 }
                 this.f14593b = z;
                 if (D2 == null) {
-                    D2 = C4403w.m27891d0(this.f14592a.key, bVar.f14589c.f14598b);
+                    D2 = C4403w.m27893d0(this.f14592a.key, bVar.f14589c.f14598b);
                 }
                 languagePackStringValuePluralized.zeroValue = D2.zeroValue;
                 languagePackStringValuePluralized.oneValue = D2.oneValue;
@@ -379,7 +379,7 @@ public class C4403w {
             this.f14596b = iArr;
         }
 
-        public static String m27785b(TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized, int i) {
+        public static String m27787b(TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized, int i) {
             if (i == 0) {
                 return languagePackStringValuePluralized.zeroValue;
             }
@@ -401,8 +401,8 @@ public class C4403w {
             throw new IllegalArgumentException("form == " + i);
         }
 
-        public String m27786a(TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized) {
-            return m27785b(languagePackStringValuePluralized, this.f14595a);
+        public String m27788a(TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized) {
+            return m27787b(languagePackStringValuePluralized, this.f14595a);
         }
     }
 
@@ -414,7 +414,7 @@ public class C4403w {
             this.f14597a = i;
         }
 
-        public C4408e m27784a(int i, int... iArr) {
+        public C4408e m27786a(int i, int... iArr) {
             this.f14598b.add(new C4407d(i, iArr));
             return this;
         }
@@ -424,91 +424,91 @@ public class C4403w {
         Object mo379a(CharSequence charSequence, int i, int i2, int i3, boolean z);
     }
 
-    public static String m28011A(int i, int i2) {
+    public static String m28013A(int i, int i2) {
         if (i2 < 1000) {
             return String.valueOf(i2);
         }
-        return C1363c0.m37437f(i2);
+        return C1363c0.m37440f(i2);
     }
 
-    public static String[] m28010A0(int[] iArr) {
+    public static String[] m28012A0(int[] iArr) {
         String[] strArr = new String[iArr.length];
         int i = 0;
         for (int i2 : iArr) {
-            strArr[i] = m27885e1(i2);
+            strArr[i] = m27887e1(i2);
             i++;
         }
         return strArr;
     }
 
-    public static CharSequence m28009A1(AbstractC9323v4<?> v4Var, TdApi.ChatSource chatSource) {
+    public static CharSequence m28011A1(AbstractC9323v4<?> v4Var, TdApi.ChatSource chatSource) {
         int constructor = chatSource.getConstructor();
         if (constructor == -328571244) {
-            return m27930U0(v4Var, ((TdApi.ChatSourcePublicServiceAnnouncement) chatSource).type, true);
+            return m27932U0(v4Var, ((TdApi.ChatSourcePublicServiceAnnouncement) chatSource).type, true);
         }
         if (constructor == 394074115) {
-            return m27982H0(v4Var, R.string.ProxySponsorAlert, new Object[0]);
+            return m27984H0(v4Var, R.string.ProxySponsorAlert, new Object[0]);
         }
         throw new UnsupportedOperationException(chatSource.toString());
     }
 
-    public static boolean m28008A2(int i) {
+    public static boolean m28010A2(int i) {
         return (((i / 60) / 60) / 24) / 7 > 2 || i <= 0;
     }
 
-    public static String m28007B(String str, long j) {
+    public static String m28009B(String str, long j) {
         if (Build.VERSION.SDK_INT >= 24) {
             try {
-                return new SimpleDateFormat(str, m28003C()).format(C5067f.m24118b(j));
+                return new SimpleDateFormat(str, m28005C()).format(C5067f.m24119b(j));
             } catch (ExceptionInInitializerError e) {
                 Log.m14725e("Vendor i18n implementation bug in SimpleDateFormat", e, new Object[0]);
             }
         }
-        return new java.text.SimpleDateFormat(str, m28003C()).format(C5067f.m24118b(j));
+        return new java.text.SimpleDateFormat(str, m28005C()).format(C5067f.m24119b(j));
     }
 
-    public static int m28006B0() {
+    public static int m28008B0() {
         return 0;
     }
 
-    public static String m28005B1(int i, int i2) {
-        return i2 <= 1 ? m27844o2(R.string.xNewMessages, i) : m27865j1(R.string.format_newMessagesFromChats, m27844o2(R.string.xNewMessages, i), m27844o2(R.string.FromXChats, i2));
+    public static String m28007B1(int i, int i2) {
+        return i2 <= 1 ? m27846o2(R.string.xNewMessages, i) : m27867j1(R.string.format_newMessagesFromChats, m27846o2(R.string.xNewMessages, i), m27846o2(R.string.FromXChats, i2));
     }
 
-    public static void m28004B2(String str, TdApi.LanguagePackStringValue languagePackStringValue) {
+    public static void m28006B2(String str, TdApi.LanguagePackStringValue languagePackStringValue) {
         if (languagePackStringValue == null) {
-            languagePackStringValue = m27879g();
+            languagePackStringValue = m27881g();
         }
-        m27835r().put(str, languagePackStringValue);
+        m27837r().put(str, languagePackStringValue);
     }
 
-    public static Locale m28003C() {
+    public static Locale m28005C() {
         if (!f14580f) {
-            m27819v(false);
+            m27821v(false);
         }
         Locale locale = Locale.getDefault();
         Locale locale2 = f14583i;
         return (locale2 == null || locale2.getLanguage().equals(locale.getLanguage())) ? locale : f14583i;
     }
 
-    public static int m28002C0(String str) {
+    public static int m28004C0(String str) {
         return 0;
     }
 
-    public static String m28001C1(long j, TimeUnit timeUnit) {
-        if (C5067f.m24107m(j, timeUnit)) {
-            return m27932T2(j, timeUnit);
+    public static String m28003C1(long j, TimeUnit timeUnit) {
+        if (C5067f.m24108m(j, timeUnit)) {
+            return m27934T2(j, timeUnit);
         }
-        return C5067f.m24106n(j, timeUnit) ? m27865j1(R.string.format_tomorrow, m27932T2(j, timeUnit)) : C5067f.m24108l(j, timeUnit) ? m27865j1(R.string.format_dateTime, m27999D(j, timeUnit), m27932T2(j, timeUnit)) : m27865j1(R.string.format_dateTime, m27987G(j, timeUnit), m27932T2(j, timeUnit));
+        return C5067f.m24107n(j, timeUnit) ? m27867j1(R.string.format_tomorrow, m27934T2(j, timeUnit)) : C5067f.m24109l(j, timeUnit) ? m27867j1(R.string.format_dateTime, m28001D(j, timeUnit), m27934T2(j, timeUnit)) : m27867j1(R.string.format_dateTime, m27989G(j, timeUnit), m27934T2(j, timeUnit));
     }
 
-    public static void m28000C2(String str, TdApi.LanguagePackString[] languagePackStringArr) {
-        if (!m27835r().isEmpty()) {
+    public static void m28002C2(String str, TdApi.LanguagePackString[] languagePackStringArr) {
+        if (!m27837r().isEmpty()) {
             for (TdApi.LanguagePackString languagePackString : languagePackStringArr) {
-                String b2 = m27899b2(str, languagePackString.key);
+                String b2 = m27901b2(str, languagePackString.key);
                 if (f14585k.containsKey(b2)) {
                     if (languagePackString.value.getConstructor() == 1834792698) {
-                        f14585k.put(b2, m27879g());
+                        f14585k.put(b2, m27881g());
                     } else {
                         f14585k.put(b2, languagePackString.value);
                     }
@@ -517,61 +517,61 @@ public class C4403w {
         }
     }
 
-    public static String m27999D(long j, TimeUnit timeUnit) {
-        return m27940R2(timeUnit.toMillis(j), 1, "d MMMM");
+    public static String m28001D(long j, TimeUnit timeUnit) {
+        return m27942R2(timeUnit.toMillis(j), 1, "d MMMM");
     }
 
-    public static String m27998D0() {
-        String n = C5078d.m23998n(m27869i1(R.string.language_emoji));
-        return n != null ? n : m27911Z();
+    public static String m28000D0() {
+        String n = C5078d.m23999n(m27871i1(R.string.language_emoji));
+        return n != null ? n : m27913Z();
     }
 
-    public static String m27997D1(C10930q6 q6Var, TdApi.UserStatus userStatus, boolean z) {
+    public static String m27999D1(C10930q6 q6Var, TdApi.UserStatus userStatus, boolean z) {
         switch (userStatus.getConstructor()) {
             case TdApi.UserStatusOnline.CONSTRUCTOR:
-                return m27869i1(R.string.status_Online);
+                return m27871i1(R.string.status_Online);
             case TdApi.UserStatusOffline.CONSTRUCTOR:
                 int i = ((TdApi.UserStatusOffline) userStatus).wasOnline;
                 if (i > 0) {
-                    return m27990F0(q6Var, i, TimeUnit.SECONDS, z);
+                    return m27992F0(q6Var, i, TimeUnit.SECONDS, z);
                 }
-                return m27869i1(R.string.status_LastSeenUnknown);
+                return m27871i1(R.string.status_LastSeenUnknown);
             case TdApi.UserStatusRecently.CONSTRUCTOR:
-                return m27869i1(R.string.status_LastSeenRecently);
+                return m27871i1(R.string.status_LastSeenRecently);
             case TdApi.UserStatusLastWeek.CONSTRUCTOR:
-                return m27869i1(R.string.status_LastSeenWithinWeek);
+                return m27871i1(R.string.status_LastSeenWithinWeek);
             case TdApi.UserStatusEmpty.CONSTRUCTOR:
-                return m27869i1(R.string.status_LastSeenUnknown);
+                return m27871i1(R.string.status_LastSeenUnknown);
             case TdApi.UserStatusLastMonth.CONSTRUCTOR:
-                return m27869i1(R.string.status_LastSeenWithinMonth);
+                return m27871i1(R.string.status_LastSeenWithinMonth);
             default:
                 throw new IllegalArgumentException("status == " + userStatus);
         }
     }
 
-    public static TdApi.LanguagePackStringValuePluralized m27996D2(String str, String str2) {
+    public static TdApi.LanguagePackStringValuePluralized m27998D2(String str, String str2) {
         C10536ab o1 = C10536ab.m4667o1();
         if (str2 == null) {
-            str2 = m27860k2();
+            str2 = m27862k2();
         }
         return o1.m4772N0(str, str2);
     }
 
-    public static String m27995E(Calendar calendar) {
-        if (calendar.get(1) == C5067f.m24115e().get(1)) {
-            return m27991F(calendar);
+    public static String m27997E(Calendar calendar) {
+        if (calendar.get(1) == C5067f.m24116e().get(1)) {
+            return m27993F(calendar);
         }
-        return m27983H(calendar);
+        return m27985H(calendar);
     }
 
-    public static C4405b m27994E0(TdApi.LanguagePackInfo languagePackInfo) {
+    public static C4405b m27996E0(TdApi.LanguagePackInfo languagePackInfo) {
         String[] strArr;
         boolean z;
-        String[][] a = C4411y.m27783a();
+        String[][] a = C4411y.m27785a();
         ArrayList arrayList = new ArrayList();
-        C4408e S0 = m27938S0(m27904a2(m27837q1(null, R.string.language_code, false)));
-        TdApi.LanguagePackStringValueOrdinary E2 = m27992E2("language_code", languagePackInfo.f25405id);
-        C4408e S02 = E2 != null ? m27938S0(m27904a2(E2.value)) : S0;
+        C4408e S0 = m27940S0(m27906a2(m27839q1(null, R.string.language_code, false)));
+        TdApi.LanguagePackStringValueOrdinary E2 = m27994E2("language_code", languagePackInfo.f25408id);
+        C4408e S02 = E2 != null ? m27940S0(m27906a2(E2.value)) : S0;
         String[] strArr2 = a[0];
         int length = strArr2.length;
         int i = 0;
@@ -581,61 +581,61 @@ public class C4403w {
                 break;
             }
             String str = strArr2[i];
-            TdApi.LanguagePackStringValueOrdinary E22 = m27992E2(str, languagePackInfo.f25405id);
-            if (E22 == null && !C5070i.m24061i(languagePackInfo.baseLanguagePackId)) {
-                E22 = m27992E2(str, languagePackInfo.baseLanguagePackId);
+            TdApi.LanguagePackStringValueOrdinary E22 = m27994E2(str, languagePackInfo.f25408id);
+            if (E22 == null && !C5070i.m24062i(languagePackInfo.baseLanguagePackId)) {
+                E22 = m27994E2(str, languagePackInfo.baseLanguagePackId);
                 z2 = false;
             }
             if (E22 != null) {
                 arrayList.add(new C4406c(new TdApi.LanguagePackString(str, E22), z2));
             } else {
-                arrayList.add(new C4406c(new TdApi.LanguagePackString(str, m27886e0(str)), false));
+                arrayList.add(new C4406c(new TdApi.LanguagePackString(str, m27888e0(str)), false));
             }
             i++;
         }
         for (String str2 : a[1]) {
-            TdApi.LanguagePackStringValuePluralized D2 = m27996D2(str2, languagePackInfo.f25405id);
-            if (D2 != null || C5070i.m24061i(languagePackInfo.baseLanguagePackId)) {
+            TdApi.LanguagePackStringValuePluralized D2 = m27998D2(str2, languagePackInfo.f25408id);
+            if (D2 != null || C5070i.m24062i(languagePackInfo.baseLanguagePackId)) {
                 z = true;
             } else {
-                D2 = m27996D2(str2, languagePackInfo.baseLanguagePackId);
+                D2 = m27998D2(str2, languagePackInfo.baseLanguagePackId);
                 z = false;
             }
             if (D2 != null) {
                 arrayList.add(new C4406c(new TdApi.LanguagePackString(str2, D2), z));
             } else {
-                arrayList.add(new C4406c(new TdApi.LanguagePackString(str2, m27891d0(str2, S0.f14598b)), false));
+                arrayList.add(new C4406c(new TdApi.LanguagePackString(str2, m27893d0(str2, S0.f14598b)), false));
             }
         }
         Collections.sort(arrayList, C4402v.f14574a);
         return new C4405b(languagePackInfo, S02, S0, arrayList);
     }
 
-    public static String m27993E1(int i, int i2) {
-        return m27865j1(R.string.XofY, m28011A(R.string.XofY, i), m28011A(R.string.XofY, i2));
+    public static String m27995E1(int i, int i2) {
+        return m27867j1(R.string.XofY, m28013A(R.string.XofY, i), m28013A(R.string.XofY, i2));
     }
 
-    public static TdApi.LanguagePackStringValueOrdinary m27992E2(String str, String str2) {
+    public static TdApi.LanguagePackStringValueOrdinary m27994E2(String str, String str2) {
         C10536ab o1 = C10536ab.m4667o1();
         if (str2 == null) {
-            str2 = m27860k2();
+            str2 = m27862k2();
         }
         return o1.m4768O0(str, str2);
     }
 
-    public static String m27991F(Calendar calendar) {
-        return m27940R2(calendar.getTimeInMillis(), 2, "d MMM");
+    public static String m27993F(Calendar calendar) {
+        return m27942R2(calendar.getTimeInMillis(), 2, "d MMM");
     }
 
-    public static String m27990F0(C10930q6 q6Var, long j, TimeUnit timeUnit, boolean z) {
-        return m27918X0(j, timeUnit, q6Var.m2898D4(), TimeUnit.MILLISECONDS, z, 60, R.string.status_LastSeen, false);
+    public static String m27992F0(C10930q6 q6Var, long j, TimeUnit timeUnit, boolean z) {
+        return m27920X0(j, timeUnit, q6Var.m2898D4(), TimeUnit.MILLISECONDS, z, 60, R.string.status_LastSeen, false);
     }
 
-    public static int m27989F1() {
-        return m27984G2() ? 5 : 3;
+    public static int m27991F1() {
+        return m27986G2() ? 5 : 3;
     }
 
-    public static void m27988F2(AbstractC4404a aVar) {
+    public static void m27990F2(AbstractC4404a aVar) {
         if (f14584j == null) {
             synchronized (C4403w.class) {
                 if (f14584j == null) {
@@ -646,39 +646,39 @@ public class C4403w {
         f14584j.remove(aVar);
     }
 
-    public static String m27987G(long j, TimeUnit timeUnit) {
-        return m27952O2(timeUnit.toMillis(j), 1, "d MMMM yyyy");
+    public static String m27989G(long j, TimeUnit timeUnit) {
+        return m27954O2(timeUnit.toMillis(j), 1, "d MMMM yyyy");
     }
 
-    public static CharSequence m27986G0(AbstractC10664f9 f9Var, int i, AbstractC4409f fVar, Object... objArr) {
-        return C1363c0.m37425l(f9Var, m27873h1(i, fVar, objArr), null);
+    public static CharSequence m27988G0(AbstractC10664f9 f9Var, int i, AbstractC4409f fVar, Object... objArr) {
+        return C1363c0.m37428l(f9Var, m27875h1(i, fVar, objArr), null);
     }
 
-    public static int m27985G1(int i) {
-        return i | m27989F1();
+    public static int m27987G1(int i) {
+        return i | m27991F1();
     }
 
-    public static boolean m27984G2() {
+    public static boolean m27986G2() {
         if (!f14580f) {
-            m27819v(false);
+            m27821v(false);
         }
         return f14582h;
     }
 
-    public static String m27983H(Calendar calendar) {
-        return m27952O2(calendar.getTimeInMillis(), 2, "d MMM ''yy");
+    public static String m27985H(Calendar calendar) {
+        return m27954O2(calendar.getTimeInMillis(), 2, "d MMM ''yy");
     }
 
-    public static CharSequence m27982H0(AbstractC10664f9 f9Var, int i, Object... objArr) {
-        return C1363c0.m37425l(f9Var, m27865j1(i, objArr), null);
+    public static CharSequence m27984H0(AbstractC10664f9 f9Var, int i, Object... objArr) {
+        return C1363c0.m37428l(f9Var, m27867j1(i, objArr), null);
     }
 
-    public static boolean m27981H1(int i, int i2) {
+    public static boolean m27983H1(int i, int i2) {
         return (i == 0 && i2 == 1) || i == 1;
     }
 
-    public static void m27980H2(int i, int i2) {
-        AbstractC4761s4.m25778v8(i, i2);
+    public static void m27982H2(int i, int i2) {
+        AbstractC4761s4.m25779v8(i, i2);
         if (f14584j == null) {
             synchronized (C4403w.class) {
                 if (f14584j == null) {
@@ -692,15 +692,15 @@ public class C4403w {
         }
     }
 
-    public static String m27979I(long j, TimeUnit timeUnit) {
-        return m27948P2(timeUnit.toMillis(j), 2, 3, C1379j0.m37344X() ? "d MMM ''yy h:mm a" : "d MMM ''yy H:mm");
+    public static String m27981I(long j, TimeUnit timeUnit) {
+        return m27950P2(timeUnit.toMillis(j), 2, 3, C1379j0.m37347X() ? "d MMM ''yy h:mm a" : "d MMM ''yy H:mm");
     }
 
-    public static CharSequence m27978I0(AbstractC10664f9 f9Var, int i, Object... objArr) {
-        return C1363c0.m37425l(f9Var, m27821u1(i, objArr), null);
+    public static CharSequence m27980I0(AbstractC10664f9 f9Var, int i, Object... objArr) {
+        return C1363c0.m37428l(f9Var, m27823u1(i, objArr), null);
     }
 
-    public static boolean m27977I1() {
+    public static boolean m27979I1() {
         if (f14584j == null) {
             synchronized (C4403w.class) {
                 if (f14584j == null) {
@@ -711,28 +711,28 @@ public class C4403w {
         return !f14584j.isEmpty();
     }
 
-    public static void m27976I2(Locale locale, boolean z) {
+    public static void m27978I2(Locale locale, boolean z) {
         Locale locale2 = f14583i;
         if ((locale2 == null && locale != null) || ((locale2 != null && locale == null) || (locale != null && !locale.equals(locale2)))) {
             f14583i = locale;
             if (z) {
-                m27980H2(3, 0);
+                m27982H2(3, 0);
             }
         }
     }
 
-    public static void m27975J() {
+    public static void m27977J() {
         boolean z = f14582h;
-        m27811x();
-        m27819v(false);
-        m27980H2(0, f14582h != z ? 1 : 0);
+        m27813x();
+        m27821v(false);
+        m27982H2(0, f14582h != z ? 1 : 0);
     }
 
-    public static String m27974J0(long j, TimeUnit timeUnit) {
-        return m27910Z0(j, timeUnit);
+    public static String m27976J0(long j, TimeUnit timeUnit) {
+        return m27912Z0(j, timeUnit);
     }
 
-    public static boolean m27973J1(Object[] objArr) {
+    public static boolean m27975J1(Object[] objArr) {
         if (objArr != null) {
             for (Object obj : objArr) {
                 if (obj instanceof Spanned) {
@@ -743,59 +743,59 @@ public class C4403w {
         return false;
     }
 
-    public static void m27972J2(boolean z, boolean z2) {
+    public static void m27974J2(boolean z, boolean z2) {
         if (f14581g != z) {
             f14581g = z;
         }
     }
 
-    public static void m27971K(String str, TdApi.LanguagePackString[] languagePackStringArr, String str2) {
+    public static void m27973K(String str, TdApi.LanguagePackString[] languagePackStringArr, String str2) {
         if (str2 != null) {
             str = str2;
         }
-        m28000C2(str, languagePackStringArr);
-        m27819v(true);
-        if (m27977I1()) {
+        m28002C2(str, languagePackStringArr);
+        m27821v(true);
+        if (m27979I1()) {
             for (TdApi.LanguagePackString languagePackString : languagePackStringArr) {
-                int s1 = m27829s1(languagePackString.key);
+                int s1 = m27831s1(languagePackString.key);
                 if (s1 != 0) {
-                    m27980H2(2, s1);
+                    m27982H2(2, s1);
                 }
             }
             return;
         }
-        m27980H2(2, 0);
+        m27982H2(2, 0);
     }
 
-    public static String m27970K0(long j, TimeUnit timeUnit) {
-        return m27918X0(j, timeUnit, System.currentTimeMillis(), TimeUnit.MILLISECONDS, true, 30, R.string.modified, false);
+    public static String m27972K0(long j, TimeUnit timeUnit) {
+        return m27920X0(j, timeUnit, System.currentTimeMillis(), TimeUnit.MILLISECONDS, true, 30, R.string.modified, false);
     }
 
-    public static String m27969K1(long j, TimeUnit timeUnit) {
-        return m28007B(C1379j0.m37344X() ? "hh a" : "HH", timeUnit.toMillis(j));
+    public static String m27971K1(long j, TimeUnit timeUnit) {
+        return m28009B(C1379j0.m37347X() ? "hh a" : "HH", timeUnit.toMillis(j));
     }
 
-    public static void m27968K2(boolean z, boolean z2) {
+    public static void m27970K2(boolean z, boolean z2) {
         if (f14582h != z) {
             f14582h = z;
             if (z2) {
-                m27980H2(1, z ? 1 : 0);
+                m27982H2(1, z ? 1 : 0);
             }
         }
     }
 
-    public static AbstractC4409f m27967L(final TdApi.TextEntityType textEntityType) {
+    public static AbstractC4409f m27969L(final TdApi.TextEntityType textEntityType) {
         return new AbstractC4409f() {
             @Override
             public final Object mo379a(CharSequence charSequence, int i, int i2, int i3, boolean z) {
                 Object I5;
-                I5 = C4779t2.m25669I5(TdApi.TextEntityType.this);
+                I5 = C4779t2.m25670I5(TdApi.TextEntityType.this);
                 return I5;
             }
         };
     }
 
-    public static long m27966L0(long j, TimeUnit timeUnit, long j2, TimeUnit timeUnit2, boolean z, int i) {
+    public static long m27968L0(long j, TimeUnit timeUnit, long j2, TimeUnit timeUnit2, boolean z, int i) {
         long j3;
         long millis = timeUnit2.toMillis(j2);
         long millis2 = timeUnit.toMillis(j);
@@ -822,38 +822,38 @@ public class C4403w {
                 return (j3 * 60000) - j4;
             }
         }
-        Calendar a = C5067f.m24119a(millis2);
-        C5067f.m24103q(a);
+        Calendar a = C5067f.m24120a(millis2);
+        C5067f.m24104q(a);
         long timeInMillis = a.getTimeInMillis();
-        Calendar a2 = C5067f.m24119a(millis);
-        C5067f.m24103q(a2);
+        Calendar a2 = C5067f.m24120a(millis);
+        C5067f.m24104q(a2);
         int days = (int) TimeUnit.MILLISECONDS.toDays(a2.getTimeInMillis() - timeInMillis);
         if (days != 0 && days != 1) {
             return -1L;
         }
         a2.add(5, 1);
-        C5067f.m24103q(a2);
+        C5067f.m24104q(a2);
         return Math.max(-1L, a2.getTimeInMillis() - millis);
     }
 
-    public static boolean m27965L1(String str) {
-        return m27906a0().equals(str);
+    public static boolean m27967L1(String str) {
+        return m27908a0().equals(str);
     }
 
-    public static String m27964L2(float f) {
-        return m27960M2(f, R.string.location_Nearby, R.string.location_AwayMeters, R.string.location_AwayKilometers);
+    public static String m27966L2(float f) {
+        return m27962M2(f, R.string.location_Nearby, R.string.location_AwayMeters, R.string.location_AwayKilometers);
     }
 
-    public static int m27963M() {
-        String q1 = m27837q1(null, R.string.language_code, false);
+    public static int m27965M() {
+        String q1 = m27839q1(null, R.string.language_code, false);
         if (f14575a == 0 || !q1.equals(f14576b)) {
-            f14575a = m27904a2(q1);
+            f14575a = m27906a2(q1);
             f14576b = q1;
         }
         return f14575a;
     }
 
-    public static long m27962M0(long j, TimeUnit timeUnit, long j2, TimeUnit timeUnit2, boolean z, int i) {
+    public static long m27964M0(long j, TimeUnit timeUnit, long j2, TimeUnit timeUnit2, boolean z, int i) {
         long j3;
         long millis = timeUnit2.toMillis(j2);
         long millis2 = timeUnit.toMillis(j);
@@ -880,44 +880,44 @@ public class C4403w {
                 return (j3 * 60000) - j4;
             }
         }
-        Calendar a = C5067f.m24119a(millis2);
-        C5067f.m24103q(a);
+        Calendar a = C5067f.m24120a(millis2);
+        C5067f.m24104q(a);
         long timeInMillis = a.getTimeInMillis();
-        Calendar a2 = C5067f.m24119a(millis);
-        C5067f.m24103q(a2);
+        Calendar a2 = C5067f.m24120a(millis);
+        C5067f.m24104q(a2);
         int days = (int) TimeUnit.MILLISECONDS.toDays(timeInMillis - a2.getTimeInMillis());
         if (days != 0 && days != 1) {
             return -1L;
         }
         a2.add(5, 1);
-        C5067f.m24103q(a2);
+        C5067f.m24104q(a2);
         return Math.max(-1L, a2.getTimeInMillis() - millis);
     }
 
-    public static boolean m27961M1(char c) {
+    public static boolean m27963M1(char c) {
         return c == 'd' || c == 'D';
     }
 
-    public static String m27960M2(float f, int i, int i2, int i3) {
+    public static String m27962M2(float f, int i, int i2, int i3) {
         if (f < 10.0f) {
-            return m27869i1(i);
+            return m27871i1(i);
         }
         float round = Math.round(f);
         float f2 = round - (round % 10.0f);
         if (f2 < 1000.0f) {
-            return m27865j1(i2, String.valueOf((int) f2));
+            return m27867j1(i2, String.valueOf((int) f2));
         }
         int floor = (int) Math.floor(f2 / 1000.0f);
         int i4 = ((int) (f2 - (floor * 1000.0f))) / 100;
-        StringBuilder sb2 = new StringBuilder(C1363c0.m37437f(floor));
+        StringBuilder sb2 = new StringBuilder(C1363c0.m37440f(floor));
         if (i4 != 0 && floor < 1000) {
-            sb2.append(m27830s0());
+            sb2.append(m27832s0());
             sb2.append(i4);
         }
-        return m27865j1(i3, sb2.toString());
+        return m27867j1(i3, sb2.toString());
     }
 
-    public static boolean m27959N(String str, TdApi.LanguagePackInfo languagePackInfo) {
+    public static boolean m27961N(String str, TdApi.LanguagePackInfo languagePackInfo) {
         str.hashCode();
         char c = 65535;
         switch (str.hashCode()) {
@@ -2703,32 +2703,32 @@ public class C4403w {
         }
     }
 
-    public static String m27958N0(int i) {
+    public static String m27960N0(int i) {
         if (i == 1) {
-            return m27869i1(R.string.CategoryPrivate);
+            return m27871i1(R.string.CategoryPrivate);
         }
         if (i == 2) {
-            return m27869i1(R.string.CategoryGroup);
+            return m27871i1(R.string.CategoryGroup);
         }
         if (i == 3) {
-            return m27869i1(R.string.CategoryChannels);
+            return m27871i1(R.string.CategoryChannels);
         }
         if (i == 4) {
-            return m27869i1(R.string.CategorySecret);
+            return m27871i1(R.string.CategorySecret);
         }
         throw new IllegalArgumentException("category == " + i);
     }
 
-    public static boolean m27957N1() {
-        return m27824t2() == 25971;
+    public static boolean m27959N1() {
+        return m27826t2() == 25971;
     }
 
-    public static String m27956N2(float f) {
-        return m27960M2(f, R.string.location_personNearby, R.string.location_personAwayMeters, R.string.location_personAwayKilometers);
+    public static String m27958N2(float f) {
+        return m27962M2(f, R.string.location_personNearby, R.string.location_personAwayMeters, R.string.location_personAwayKilometers);
     }
 
-    public static String m27955O(String str) {
-        if (!m27957N1()) {
+    public static String m27957O(String str) {
+        if (!m27959N1()) {
             return str;
         }
         String replace = str.replace('.', ' ');
@@ -2738,7 +2738,7 @@ public class C4403w {
         int i3 = -1;
         for (int i4 = 0; i4 < length; i4++) {
             char charAt = replace.charAt(i4);
-            if (!C5070i.m24058l(charAt)) {
+            if (!C5070i.m24059l(charAt)) {
                 if (charAt != ' ' || (i2 = i2 + 1) > 1) {
                     break;
                 }
@@ -2753,88 +2753,88 @@ public class C4403w {
         return replace.substring(0, i3) + replace.substring(i3 + 1);
     }
 
-    public static CharSequence m27954O0(long j, String str, int i, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7) {
+    public static CharSequence m27956O0(long j, String str, int i, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7) {
         CharSequence charSequence;
         CharSequence k0;
         if (z4 && z5) {
-            k0 = m27862k0(R.string.format_notificationTitlePinned, str);
+            k0 = m27864k0(R.string.format_notificationTitlePinned, str);
         } else if (i > 1 || z4) {
             Object[] objArr = new Object[2];
             objArr[0] = str;
-            objArr[1] = m27844o2(z4 ? R.string.mentionCount : R.string.messagesCount, i);
-            k0 = m27862k0(R.string.format_notificationTitleShort, objArr);
-        } else if (C5070i.m24061i(str)) {
+            objArr[1] = m27846o2(z4 ? R.string.mentionCount : R.string.messagesCount, i);
+            k0 = m27864k0(R.string.format_notificationTitleShort, objArr);
+        } else if (C5070i.m24062i(str)) {
             k0 = C7316a.m17046o(j);
         } else {
             charSequence = str;
-            return m27877g1(charSequence, true, z, z2, z3, z6, z7);
+            return m27879g1(charSequence, true, z, z2, z3, z6, z7);
         }
         charSequence = k0;
-        return m27877g1(charSequence, true, z, z2, z3, z6, z7);
+        return m27879g1(charSequence, true, z, z2, z3, z6, z7);
     }
 
-    public static boolean m27953O1(char c) {
+    public static boolean m27955O1(char c) {
         return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
     }
 
-    public static String m27952O2(long j, int i, String str) {
+    public static String m27954O2(long j, int i, String str) {
         if (Build.VERSION.SDK_INT >= 24) {
             try {
-                return DateFormat.getDateInstance(m27912Y2(i, true), m28003C()).format(C5067f.m24118b(j));
+                return DateFormat.getDateInstance(m27914Y2(i, true), m28005C()).format(C5067f.m24119b(j));
             } catch (Throwable unused) {
             }
         }
         try {
-            return java.text.DateFormat.getDateInstance(m27912Y2(i, false), m28003C()).format(C5067f.m24118b(j));
+            return java.text.DateFormat.getDateInstance(m27914Y2(i, false), m28005C()).format(C5067f.m24119b(j));
         } catch (Throwable unused2) {
-            return m28007B(str, j);
+            return m28009B(str, j);
         }
     }
 
-    public static String m27951P(int i, int... iArr) {
+    public static String m27953P(int i, int... iArr) {
         if (iArr == null || iArr.length == 0) {
-            return m27869i1(i);
+            return m27871i1(i);
         }
         Object[] objArr = new Object[iArr.length];
         int i2 = 0;
         for (int i3 : iArr) {
             i2++;
-            objArr[i2] = m28011A(i, i3);
+            objArr[i2] = m28013A(i, i3);
         }
-        return m27865j1(i, objArr);
+        return m27867j1(i, objArr);
     }
 
-    public static String m27950P0() {
-        return m27869i1(R.string.OK);
+    public static String m27952P0() {
+        return m27871i1(R.string.OK);
     }
 
-    public static boolean m27949P1() {
-        return !m27860k2().startsWith("X");
+    public static boolean m27951P1() {
+        return !m27862k2().startsWith("X");
     }
 
-    public static String m27948P2(long j, int i, int i2, String str) {
+    public static String m27950P2(long j, int i, int i2, String str) {
         if (Build.VERSION.SDK_INT >= 24) {
             try {
-                return DateFormat.getDateTimeInstance(m27912Y2(i, true), m27912Y2(i2, true), m28003C()).format(C5067f.m24118b(j));
+                return DateFormat.getDateTimeInstance(m27914Y2(i, true), m27914Y2(i2, true), m28005C()).format(C5067f.m24119b(j));
             } catch (Throwable unused) {
             }
         }
         try {
-            return java.text.DateFormat.getDateTimeInstance(m27912Y2(i, false), m27912Y2(i2, false), m28003C()).format(C5067f.m24118b(j));
+            return java.text.DateFormat.getDateTimeInstance(m27914Y2(i, false), m27914Y2(i2, false), m28005C()).format(C5067f.m24119b(j));
         } catch (Throwable unused2) {
-            return m28007B(str, j);
+            return m28009B(str, j);
         }
     }
 
-    public static String m27947Q(double d) {
-        Locale C = C4868i.m24726c2().m24744a0() ? Locale.US : m28003C();
+    public static String m27949Q(double d) {
+        Locale C = C4868i.m24727c2().m24745a0() ? Locale.US : m28005C();
         synchronized (C4403w.class) {
             if (Build.VERSION.SDK_INT >= 24) {
                 DecimalFormat decimalFormat = (DecimalFormat) f14577c;
                 if (decimalFormat == null || f14578d != C) {
                     f14578d = C;
                     DecimalFormatSymbols decimalFormatSymbols = new DecimalFormatSymbols(C);
-                    if (m27957N1()) {
+                    if (m27959N1()) {
                         decimalFormatSymbols.setDecimalSeparator(',');
                         decimalFormatSymbols.setGroupingSeparator(' ');
                     }
@@ -2851,7 +2851,7 @@ public class C4403w {
             if (decimalFormat2 == null || f14578d != C) {
                 f14578d = C;
                 java.text.DecimalFormatSymbols decimalFormatSymbols2 = new java.text.DecimalFormatSymbols(C);
-                if (m27957N1()) {
+                if (m27959N1()) {
                     decimalFormatSymbols2.setDecimalSeparator(',');
                     decimalFormatSymbols2.setGroupingSeparator(' ');
                 }
@@ -2866,22 +2866,22 @@ public class C4403w {
         }
     }
 
-    public static String m27946Q0(C10930q6 q6Var, TdApi.MessageSender messageSender, TdApi.Message message, boolean z) {
+    public static String m27948Q0(C10930q6 q6Var, TdApi.MessageSender messageSender, TdApi.Message message, boolean z) {
         String yb = messageSender != null ? q6Var.m2151yb(messageSender) : null;
         if (message != null) {
-            String j2 = C4779t2.m25493j2(message);
+            String j2 = C4779t2.m25494j2(message);
             if (!z) {
-                if (C5070i.m24061i(j2)) {
-                    j2 = m27909Z1(C4779t2.m25717C(q6Var, message, true));
+                if (C5070i.m24062i(j2)) {
+                    j2 = m27911Z1(C4779t2.m25718C(q6Var, message, true));
                 }
-                return m27865j1(R.string.format_pinned, j2);
+                return m27867j1(R.string.format_pinned, j2);
             } else if (yb == null) {
-                if (C5070i.m24061i(j2)) {
-                    j2 = m27909Z1(C4779t2.m25717C(q6Var, message, true));
+                if (C5070i.m24062i(j2)) {
+                    j2 = m27911Z1(C4779t2.m25718C(q6Var, message, true));
                 }
-                return m27865j1(R.string.NewPinnedMessage, j2);
-            } else if (!C5070i.m24061i(j2)) {
-                return m27865j1(R.string.ActionPinnedText, yb, j2);
+                return m27867j1(R.string.NewPinnedMessage, j2);
+            } else if (!C5070i.m24062i(j2)) {
+                return m27867j1(R.string.ActionPinnedText, yb, j2);
             } else {
                 int i = R.string.ActionPinnedNoText;
                 switch (message.content.getConstructor()) {
@@ -2908,12 +2908,12 @@ public class C4403w {
                         i = R.string.ActionPinnedContact;
                         break;
                     case TdApi.MessageGame.CONSTRUCTOR:
-                        String w1 = C4779t2.m25403w1(((TdApi.MessageGame) message.content).game, true);
-                        if (C5070i.m24061i(w1)) {
+                        String w1 = C4779t2.m25404w1(((TdApi.MessageGame) message.content).game, true);
+                        if (C5070i.m24062i(w1)) {
                             i = R.string.ActionPinnedGameNoName;
                             break;
                         } else {
-                            return m27865j1(R.string.ActionPinnedGame, yb, w1);
+                            return m27867j1(R.string.ActionPinnedGame, yb, w1);
                         }
                     case TdApi.MessageAudio.CONSTRUCTOR:
                         i = R.string.ActionPinnedMusic;
@@ -2941,48 +2941,48 @@ public class C4403w {
                         i = R.string.ActionPinnedSticker;
                         break;
                 }
-                String i1 = m27869i1(i);
+                String i1 = m27871i1(i);
                 int indexOf = i1.indexOf("**");
                 int indexOf2 = indexOf != -1 ? i1.indexOf("**", indexOf + 2) : -1;
                 if (indexOf == -1 || indexOf2 == -1) {
-                    return m27865j1(i, yb);
+                    return m27867j1(i, yb);
                 }
                 String substring = i1.substring(indexOf + 2, indexOf2);
-                return m27935T(i1.substring(0, indexOf) + "%2$s" + i1.substring(indexOf2 + 2), null, yb, substring).toString();
+                return m27937T(i1.substring(0, indexOf) + "%2$s" + i1.substring(indexOf2 + 2), null, yb, substring).toString();
             }
         } else if (yb != null) {
-            return m27865j1(R.string.NotificationActionPinnedNoTextChannel, yb);
+            return m27867j1(R.string.NotificationActionPinnedNoTextChannel, yb);
         } else {
-            return m27869i1(R.string.PinnedMessageChanged);
+            return m27871i1(R.string.PinnedMessageChanged);
         }
     }
 
-    public static boolean m27945Q1(char c) {
+    public static boolean m27947Q1(char c) {
         return c == 'y' || c == 'Y';
     }
 
-    public static String m27944Q2(long j, int i, String str) {
+    public static String m27946Q2(long j, int i, String str) {
         if (Build.VERSION.SDK_INT >= 24) {
             try {
-                return m28007B(m27856l2(((SimpleDateFormat) DateFormat.getDateInstance(m27912Y2(i, true), m28003C())).toPattern()), j);
+                return m28009B(m27858l2(((SimpleDateFormat) DateFormat.getDateInstance(m27914Y2(i, true), m28005C())).toPattern()), j);
             } catch (Throwable unused) {
             }
         }
         try {
-            return m28007B(m27856l2(((java.text.SimpleDateFormat) java.text.DateFormat.getDateInstance(m27912Y2(i, false), m28003C())).toPattern()), j);
+            return m28009B(m27858l2(((java.text.SimpleDateFormat) java.text.DateFormat.getDateInstance(m27914Y2(i, false), m28005C())).toPattern()), j);
         } catch (Throwable unused2) {
-            return m28007B(str, j);
+            return m28009B(str, j);
         }
     }
 
-    public static String m27943R(double d) {
+    public static String m27945R(double d) {
         if (d % 1.0d == 0.0d) {
-            return m27939S((long) d);
+            return m27941S((long) d);
         }
-        return m27947Q(d);
+        return m27949Q(d);
     }
 
-    public static String m27942R0(TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized, int i) {
+    public static String m27944R0(TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized, int i) {
         if (i == 0) {
             return languagePackStringValuePluralized.zeroValue;
         }
@@ -3004,35 +3004,35 @@ public class C4403w {
         throw new UnsupportedOperationException("form == " + i);
     }
 
-    public static AbstractC4409f m27941R1() {
+    public static AbstractC4409f m27943R1() {
         return C4400t.f14571a;
     }
 
-    public static String m27940R2(long j, int i, String str) {
+    public static String m27942R2(long j, int i, String str) {
         if (Build.VERSION.SDK_INT >= 24) {
             try {
-                return m28007B(m27852m2(((SimpleDateFormat) DateFormat.getDateInstance(m27912Y2(i, true), m28003C())).toPattern()), j);
+                return m28009B(m27854m2(((SimpleDateFormat) DateFormat.getDateInstance(m27914Y2(i, true), m28005C())).toPattern()), j);
             } catch (Throwable unused) {
             }
         }
         try {
-            return m28007B(m27852m2(((java.text.SimpleDateFormat) java.text.DateFormat.getDateInstance(m27912Y2(i, false), m28003C())).toPattern()), j);
+            return m28009B(m27854m2(((java.text.SimpleDateFormat) java.text.DateFormat.getDateInstance(m27914Y2(i, false), m28005C())).toPattern()), j);
         } catch (Throwable unused2) {
-            return m28007B(str, j);
+            return m28009B(str, j);
         }
     }
 
-    public static String m27939S(long j) {
+    public static String m27941S(long j) {
         if (Build.VERSION.SDK_INT >= 24) {
             try {
-                return m27955O(NumberFormat.getInstance(m28003C()).format(j));
+                return m27957O(NumberFormat.getInstance(m28005C()).format(j));
             } catch (Throwable unused) {
             }
         }
-        return m27955O(java.text.NumberFormat.getInstance(m28003C()).format(j));
+        return m27957O(java.text.NumberFormat.getInstance(m28005C()).format(j));
     }
 
-    public static C4408e m27938S0(int i) {
+    public static C4408e m27940S0(int i) {
         switch (i) {
             case 24934:
             case 25191:
@@ -3132,7 +3132,7 @@ public class C4403w {
             case 7763310:
             case 7823717:
             case 7892839:
-                return new C4408e(i).m27784a(1, 1).m27784a(5, 0, 10, 100, 1000);
+                return new C4408e(i).m27786a(1, 1).m27786a(5, 0, 10, 100, 1000);
             case 24939:
             case 24941:
             case 25192:
@@ -3145,9 +3145,9 @@ public class C4403w {
             case 6711660:
             case 6780279:
             case 7238511:
-                return new C4408e(i).m27784a(1, 0, 1).m27784a(5, 2, 100, 1000);
+                return new C4408e(i).m27786a(1, 0, 1).m27786a(5, 2, 100, 1000);
             case 24946:
-                return new C4408e(i).m27784a(0, 0).m27784a(1, 1).m27784a(2, 2).m27784a(3, 3, 103, 1003).m27784a(4, 11, 111, 1011).m27784a(5, 100, 202, 1000);
+                return new C4408e(i).m27786a(0, 0).m27786a(1, 1).m27786a(2, 2).m27786a(3, 3, 103, 1003).m27786a(4, 11, 111, 1011).m27786a(5, 100, 202, 1000);
             case 25189:
             case 25203:
             case 26738:
@@ -3155,26 +3155,26 @@ public class C4403w {
             case 29544:
             case 29554:
             case 30059:
-                return new C4408e(i).m27784a(1, 1, 21, 101, 1001).m27784a(3, 2, 22, 102, 1002).m27784a(4, 0, 5, 100, 1000).m27784a(5, new int[0]);
+                return new C4408e(i).m27786a(1, 1, 21, 101, 1001).m27786a(3, 2, 22, 102, 1002).m27786a(4, 0, 5, 100, 1000).m27786a(5, new int[0]);
             case 25202:
-                return new C4408e(i).m27784a(4, 1000000).m27784a(1, 1, 21, 101, 1001).m27784a(2, 2, 22, 102, 1002).m27784a(3, 3, 24, 103, 1003).m27784a(5, 0, 10, 100, 1000);
+                return new C4408e(i).m27786a(4, 1000000).m27786a(1, 1, 21, 101, 1001).m27786a(2, 2, 22, 102, 1002).m27786a(3, 3, 24, 103, 1003).m27786a(5, 0, 10, 100, 1000);
             case 25459:
             case 29547:
-                return new C4408e(i).m27784a(1, 1).m27784a(3, 2, 3, 4).m27784a(5, 0, 10, 100);
+                return new C4408e(i).m27786a(1, 1).m27786a(3, 2, 3, 4).m27786a(5, 0, 10, 100);
             case 25465:
-                return new C4408e(i).m27784a(2, 2).m27784a(3, 3).m27784a(0, 0).m27784a(1, 1).m27784a(4, 6).m27784a(5, 10);
+                return new C4408e(i).m27786a(2, 2).m27786a(3, 3).m27786a(0, 0).m27786a(1, 1).m27786a(4, 6).m27786a(5, 10);
             case 26214:
             case 26226:
             case 7037282:
-                return new C4408e(i).m27784a(1, 0, 1).m27784a(5, 2, 17, 100, 1000);
+                return new C4408e(i).m27786a(1, 0, 1).m27786a(5, 2, 17, 100, 1000);
             case 26465:
-                return new C4408e(i).m27784a(1, 1).m27784a(2, 2).m27784a(3, 3, 6).m27784a(4, 7, 10).m27784a(5, 0, 11, 100, 1000);
+                return new C4408e(i).m27786a(1, 1).m27786a(2, 2).m27786a(3, 3, 6).m27786a(4, 7, 10).m27786a(5, 0, 11, 100, 1000);
             case 26468:
-                return new C4408e(i).m27784a(1, 1, 11).m27784a(2, 2, 12).m27784a(3, 3, 13, 19).m27784a(5, 0, 24, 100, 1000);
+                return new C4408e(i).m27786a(1, 1, 11).m27786a(2, 2, 12).m27786a(3, 3, 13, 19).m27786a(5, 0, 24, 100, 1000);
             case 26486:
-                return new C4408e(i).m27784a(1, 1, 11, 101, 1001).m27784a(5, 5, 55, 155);
+                return new C4408e(i).m27786a(1, 1, 11, 101, 1001).m27786a(5, 5, 55, 155);
             case 26725:
-                return new C4408e(i).m27784a(2, 2).m27784a(1, 1).m27784a(4, 20, 100, 1000).m27784a(5, 0, 17, 10001);
+                return new C4408e(i).m27786a(2, 2).m27786a(1, 1).m27786a(4, 20, 100, 1000).m27786a(5, 0, 17, 10001);
             case 26997:
             case 27511:
             case 29541:
@@ -3184,69 +3184,69 @@ public class C4403w {
             case 7564650:
             case 7564654:
             case 7564659:
-                return new C4408e(i).m27784a(1, 1).m27784a(2, 2).m27784a(5, 0, 3, 100, 1000);
+                return new C4408e(i).m27786a(1, 1).m27786a(2, 2).m27786a(5, 0, 3, 100, 1000);
             case 27764:
-                return new C4408e(i).m27784a(1, 1, 21, 101, 1001).m27784a(3, 2, 22, 102, 1002).m27784a(5, 0, 10, 100, 1000);
+                return new C4408e(i).m27786a(1, 1, 21, 101, 1001).m27786a(3, 2, 22, 102, 1002).m27786a(5, 0, 10, 100, 1000);
             case 27766:
-                return new C4408e(i).m27784a(0, 0, 20, 100, 1000).m27784a(1, 1, 21, 101, 1001).m27784a(5, 2, 22, 102, 1002);
+                return new C4408e(i).m27786a(0, 0, 20, 100, 1000).m27786a(1, 1, 21, 101, 1001).m27786a(5, 2, 22, 102, 1002);
             case 28011:
-                return new C4408e(i).m27784a(1, 1, 21, 31).m27784a(5, 11, 105, 1008);
+                return new C4408e(i).m27786a(1, 1, 21, 31).m27786a(5, 11, 105, 1008);
             case 28015:
             case 29295:
-                return new C4408e(i).m27784a(1, 1).m27784a(3, 0, 2, 16).m27784a(5, 20, 100, 1000);
+                return new C4408e(i).m27786a(1, 1).m27786a(3, 0, 2, 16).m27786a(5, 20, 100, 1000);
             case 28020:
-                return new C4408e(i).m27784a(1, 1).m27784a(3, 0, 10, 102, 1002).m27784a(4, 11, 111, 1011).m27784a(5, 20, 100, 1000);
+                return new C4408e(i).m27786a(1, 1).m27786a(3, 0, 10, 102, 1002).m27786a(4, 11, 111, 1011).m27786a(5, 20, 100, 1000);
             case 28780:
-                return new C4408e(i).m27784a(1, 1).m27784a(3, 2, 102, 1002).m27784a(4, 0, 5, 100, 1000).m27784a(5, new int[0]);
+                return new C4408e(i).m27786a(1, 1).m27786a(3, 2, 102, 1002).m27786a(4, 0, 5, 100, 1000).m27786a(5, new int[0]);
             case 29548:
-                return new C4408e(i).m27784a(1, 1, 101, 1001).m27784a(2, 2, 102, 1002).m27784a(3, 3, 103, 1003).m27784a(5, 0, 5, 100, 1000);
+                return new C4408e(i).m27786a(1, 1, 101, 1001).m27786a(2, 2, 102, 1002).m27786a(3, 3, 103, 1003).m27786a(5, 0, 5, 100, 1000);
             case 7041896:
-                return new C4408e(i).m27784a(0, 0).m27784a(1, 1).m27784a(5, 10, 100);
+                return new C4408e(i).m27786a(0, 0).m27786a(1, 1).m27786a(5, 10, 100);
             case 7102823:
-                return new C4408e(i).m27784a(0, 0).m27784a(1, 1).m27784a(5, 2, 17, 100, 1000);
+                return new C4408e(i).m27786a(0, 0).m27786a(1, 1).m27786a(5, 2, 17, 100, 1000);
             case 7563369:
-                return new C4408e(i).m27784a(3, 2, 10).m27784a(1, 0, 1).m27784a(5, 11, 100);
+                return new C4408e(i).m27786a(3, 2, 10).m27786a(1, 0, 1).m27786a(5, 11, 100);
             case 7633517:
-                return new C4408e(i).m27784a(1, 0, 1, 11).m27784a(5, 2, 24, 100);
+                return new C4408e(i).m27786a(1, 0, 1, 11).m27786a(5, 2, 24, 100);
             default:
-                return new C4408e(i).m27784a(5, 1, 5, 100);
+                return new C4408e(i).m27786a(5, 1, 5, 100);
         }
     }
 
-    public static String m27936S2(long j, int i, String str) {
+    public static String m27938S2(long j, int i, String str) {
         try {
-            String language = m28003C().getLanguage();
+            String language = m28005C().getLanguage();
             if (language.equals(Locale.getDefault().getLanguage())) {
-                return DateUtils.formatDateRange(C1379j0.m37315n(), new Formatter(new StringBuilder(50), m28003C()), j, j, 1).toString();
+                return DateUtils.formatDateRange(C1379j0.m37318n(), new Formatter(new StringBuilder(50), m28005C()), j, j, 1).toString();
             } else if (language.equals("en")) {
-                return m28007B(str, j);
+                return m28009B(str, j);
             } else {
                 if (Build.VERSION.SDK_INT >= 24) {
                     try {
-                        return DateFormat.getTimeInstance(m27912Y2(i, true), m28003C()).format(C5067f.m24118b(j));
+                        return DateFormat.getTimeInstance(m27914Y2(i, true), m28005C()).format(C5067f.m24119b(j));
                     } catch (Throwable unused) {
                     }
                 }
-                return java.text.DateFormat.getTimeInstance(m27912Y2(i, false), m28003C()).format(C5067f.m24118b(j));
+                return java.text.DateFormat.getTimeInstance(m27914Y2(i, false), m28005C()).format(C5067f.m24119b(j));
             }
         } catch (Throwable unused2) {
-            return m28007B(str, j);
+            return m28009B(str, j);
         }
     }
 
-    public static CharSequence m27935T(String str, AbstractC4409f fVar, Object... objArr) {
-        return m27931U(str, m27973J1(objArr), fVar, objArr);
+    public static CharSequence m27937T(String str, AbstractC4409f fVar, Object... objArr) {
+        return m27933U(str, m27975J1(objArr), fVar, objArr);
     }
 
-    public static CharSequence m27934T0(TdApi.ChatSourcePublicServiceAnnouncement chatSourcePublicServiceAnnouncement, String str) {
-        return m27813w1(R.string.PsaHideConfirm, chatSourcePublicServiceAnnouncement.type, str);
+    public static CharSequence m27936T0(TdApi.ChatSourcePublicServiceAnnouncement chatSourcePublicServiceAnnouncement, String str) {
+        return m27815w1(R.string.PsaHideConfirm, chatSourcePublicServiceAnnouncement.type, str);
     }
 
-    public static String m27932T2(long j, TimeUnit timeUnit) {
-        return m27936S2(timeUnit.toMillis(j), 3, C1379j0.m37344X() ? "h:mm a" : "H:mm");
+    public static String m27934T2(long j, TimeUnit timeUnit) {
+        return m27938S2(timeUnit.toMillis(j), 3, C1379j0.m37347X() ? "h:mm a" : "H:mm");
     }
 
-    public static CharSequence m27931U(String str, boolean z, AbstractC4409f fVar, Object... objArr) {
+    public static CharSequence m27933U(String str, boolean z, AbstractC4409f fVar, Object... objArr) {
         Object obj;
         int i;
         int i2;
@@ -3254,14 +3254,14 @@ public class C4403w {
         String str2;
         int i4;
         if (fVar == null && !z) {
-            return String.format(m27913Y1(), str, objArr);
+            return String.format(m27915Y1(), str, objArr);
         }
         SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(str);
         int i5 = 0;
         int i6 = 0;
         int i7 = 0;
         while (true) {
-            int g = C5070i.m24063g(spannableStringBuilder, "%", i5);
+            int g = C5070i.m24064g(spannableStringBuilder, "%", i5);
             if (g == -1) {
                 return i7 > 0 ? spannableStringBuilder : spannableStringBuilder.toString();
             }
@@ -3273,7 +3273,7 @@ public class C4403w {
                     if (charAt == 'd' || charAt == 'f' || charAt == 's') {
                         i = i6 + 1;
                         Object obj2 = objArr[i6];
-                        m27859l(charAt, obj2);
+                        m27861l(charAt, obj2);
                         String valueOf = String.valueOf(obj2);
                         spannableStringBuilder.replace(g, g + 2, (CharSequence) valueOf);
                         i2 = valueOf.length() + g;
@@ -3289,7 +3289,7 @@ public class C4403w {
                             }
                             int i11 = i9 + 1;
                             char charAt2 = spannableStringBuilder.charAt(i9);
-                            if (!C5070i.m24058l(charAt2)) {
+                            if (!C5070i.m24059l(charAt2)) {
                                 i9 = i11;
                                 charAt = charAt2;
                                 break;
@@ -3315,13 +3315,13 @@ public class C4403w {
                                 while (i14 < length) {
                                     i14++;
                                     charAt3 = spannableStringBuilder.charAt(i14);
-                                    if (!C5070i.m24058l(charAt3)) {
+                                    if (!C5070i.m24059l(charAt3)) {
                                         break;
                                     }
                                     i15++;
                                 }
                                 if (i15 != 0) {
-                                    m27859l(charAt3, obj3);
+                                    m27861l(charAt3, obj3);
                                     int parseInt2 = Integer.parseInt(spannableStringBuilder.subSequence(i12, i12 + i15).toString());
                                     int length2 = parseInt2 - valueOf2.length();
                                     if (length2 > 0) {
@@ -3339,7 +3339,7 @@ public class C4403w {
                                     throw new IllegalArgumentException();
                                 }
                             } else if (charAt3 == 'd' || charAt3 == 'f' || charAt3 == 's') {
-                                m27859l(charAt3, obj3);
+                                m27861l(charAt3, obj3);
                                 str2 = valueOf2;
                                 i4 = 1;
                             } else {
@@ -3356,7 +3356,7 @@ public class C4403w {
                     }
                     if (fVar != null) {
                         int length3 = g + str2.length();
-                        Object a = fVar.mo379a(spannableStringBuilder, g, length3, i3, RunnableC5390g.m22983M0(str2));
+                        Object a = fVar.mo379a(spannableStringBuilder, g, length3, i3, RunnableC5390g.m22984M0(str2));
                         if (a != null) {
                             spannableStringBuilder.setSpan(a, g, length3, 33);
                             i7++;
@@ -3386,133 +3386,133 @@ public class C4403w {
         }
     }
 
-    public static CharSequence m27930U0(AbstractC10664f9 f9Var, String str, boolean z) {
-        return C1363c0.m37425l(f9Var, m27813w1(z ? R.string.PsaChatInfo : R.string.PsaInfo, str, new Object[0]).toString(), null);
+    public static CharSequence m27932U0(AbstractC10664f9 f9Var, String str, boolean z) {
+        return C1363c0.m37428l(f9Var, m27815w1(z ? R.string.PsaChatInfo : R.string.PsaInfo, str, new Object[0]).toString(), null);
     }
 
-    public static String m27928U2(Calendar calendar) {
-        return m27932T2(calendar.getTimeInMillis(), TimeUnit.MILLISECONDS);
+    public static String m27930U2(Calendar calendar) {
+        return m27934T2(calendar.getTimeInMillis(), TimeUnit.MILLISECONDS);
     }
 
-    public static String m27927V(int i) {
-        return C1379j0.m37315n().getResources().getString(i);
+    public static String m27929V(int i) {
+        return C1379j0.m37318n().getResources().getString(i);
     }
 
-    public static CharSequence m27926V0(AbstractC10664f9 f9Var, String str) {
-        return C1363c0.m37425l(f9Var, m27813w1(R.string.PsaForward, str, new Object[0]).toString(), null);
+    public static CharSequence m27928V0(AbstractC10664f9 f9Var, String str) {
+        return C1363c0.m37428l(f9Var, m27815w1(R.string.PsaForward, str, new Object[0]).toString(), null);
     }
 
-    public static int m27925V1(C4406c cVar, C4406c cVar2) {
-        int d = C4405b.m27796d(cVar.f14592a);
-        int d2 = C4405b.m27796d(cVar2.f14592a);
+    public static int m27927V1(C4406c cVar, C4406c cVar2) {
+        int d = C4405b.m27798d(cVar.f14592a);
+        int d2 = C4405b.m27798d(cVar2.f14592a);
         if (d != d2) {
             return Integer.compare(d, d2);
         }
         return cVar.f14592a.key.compareTo(cVar2.f14592a.key);
     }
 
-    public static String m27924V2(long j, TimeUnit timeUnit) {
-        return m27920W2(C5067f.m24119a(timeUnit.toMillis(j)));
+    public static String m27926V2(long j, TimeUnit timeUnit) {
+        return m27922W2(C5067f.m24120a(timeUnit.toMillis(j)));
     }
 
-    public static String m27923W(int i, Object... objArr) {
-        return C1379j0.m37315n().getResources().getString(i, objArr);
+    public static String m27925W(int i, Object... objArr) {
+        return C1379j0.m37318n().getResources().getString(i, objArr);
     }
 
-    public static String m27922W0(TdApi.ChatSourcePublicServiceAnnouncement chatSourcePublicServiceAnnouncement) {
-        return m27813w1(R.string.PsaType, chatSourcePublicServiceAnnouncement.type, new Object[0]).toString();
+    public static String m27924W0(TdApi.ChatSourcePublicServiceAnnouncement chatSourcePublicServiceAnnouncement) {
+        return m27815w1(R.string.PsaType, chatSourcePublicServiceAnnouncement.type, new Object[0]).toString();
     }
 
-    public static String m27920W2(Calendar calendar) {
+    public static String m27922W2(Calendar calendar) {
         int i = calendar.get(6);
         int i2 = calendar.get(1);
-        Calendar e = C5067f.m24115e();
+        Calendar e = C5067f.m24116e();
         if (e.get(6) == i && e.get(1) == i2) {
-            return m27928U2(calendar);
+            return m27930U2(calendar);
         }
-        int days = (int) TimeUnit.MILLISECONDS.toDays(C5067f.m24114f(e) - C5067f.m24114f(calendar));
+        int days = (int) TimeUnit.MILLISECONDS.toDays(C5067f.m24115f(e) - C5067f.m24115f(calendar));
         if (days <= 0 || days > 7) {
-            return m27995E(calendar);
+            return m27997E(calendar);
         }
-        return m27893c3(calendar);
+        return m27895c3(calendar);
     }
 
-    public static String m27919X(C10930q6 q6Var) {
-        String j1 = m27865j1(R.string.AppNameAndVersion, "0.24.6.1506-arm64-v8a");
+    public static String m27921X(C10930q6 q6Var) {
+        String j1 = m27867j1(R.string.AppNameAndVersion, "0.24.6.1507-arm64-v8a");
         if (q6Var == null || !q6Var.m2628U6()) {
             return j1;
         }
         return j1 + " (emulator)";
     }
 
-    public static String m27918X0(long j, TimeUnit timeUnit, long j2, TimeUnit timeUnit2, boolean z, int i, int i2, boolean z2) {
+    public static String m27920X0(long j, TimeUnit timeUnit, long j2, TimeUnit timeUnit2, boolean z, int i, int i2, boolean z2) {
         String str;
         if (z) {
             long seconds = timeUnit2.toSeconds(j2) - timeUnit.toSeconds(j);
             if (seconds >= -300) {
                 if (seconds < i) {
-                    return m27869i1(C4411y.m27780d(i2, 0));
+                    return m27871i1(C4411y.m27782d(i2, 0));
                 }
                 if (seconds < 60) {
-                    return m27844o2(C4411y.m27780d(i2, 1), (int) seconds);
+                    return m27846o2(C4411y.m27782d(i2, 1), (int) seconds);
                 }
                 long j3 = seconds / 60;
                 if (j3 < 60) {
-                    return m27844o2(C4411y.m27780d(i2, 2), (int) j3);
+                    return m27846o2(C4411y.m27782d(i2, 2), (int) j3);
                 }
                 long j4 = j3 / 60;
                 if (j4 < 4) {
-                    return m27844o2(C4411y.m27780d(i2, 3), (int) j4);
+                    return m27846o2(C4411y.m27782d(i2, 3), (int) j4);
                 }
             }
         }
-        Calendar a = C5067f.m24119a(timeUnit2.toMillis(j2));
+        Calendar a = C5067f.m24120a(timeUnit2.toMillis(j2));
         int i3 = a.get(1);
         int i4 = a.get(2);
-        C5067f.m24103q(a);
+        C5067f.m24104q(a);
         long timeInMillis = a.getTimeInMillis();
-        Calendar a2 = C5067f.m24119a(timeUnit.toMillis(j));
+        Calendar a2 = C5067f.m24120a(timeUnit.toMillis(j));
         int i5 = a2.get(1);
         int i6 = a2.get(2);
-        long f = C5067f.m24114f(a2);
-        String T2 = m27932T2(j, timeUnit);
+        long f = C5067f.m24115f(a2);
+        String T2 = m27934T2(j, timeUnit);
         int days = (int) TimeUnit.MILLISECONDS.toDays(timeInMillis - f);
         if (days == 0) {
-            return m27865j1(C4411y.m27780d(i2, 4), T2);
+            return m27867j1(C4411y.m27782d(i2, 4), T2);
         }
         if (days == 1) {
-            return m27865j1(C4411y.m27780d(i2, 5), T2);
+            return m27867j1(C4411y.m27782d(i2, 5), T2);
         }
         if (z2) {
             if (days < 14) {
-                return m27844o2(C4411y.m27780d(i2, 21), days);
+                return m27846o2(C4411y.m27782d(i2, 21), days);
             }
             if (days < 30) {
-                return m27844o2(C4411y.m27780d(i2, 22), days / 7);
+                return m27846o2(C4411y.m27782d(i2, 22), days / 7);
             }
             int i7 = ((i3 - i5) * 12) + (i4 - i6);
             if (i7 < 12) {
-                return m27844o2(C4411y.m27780d(i2, 23), i7);
+                return m27846o2(C4411y.m27782d(i2, 23), i7);
             }
-            return m27844o2(C4411y.m27780d(i2, 24), i7 / 12);
+            return m27846o2(C4411y.m27782d(i2, 24), i7 / 12);
         } else if (days < 7) {
-            return m27865j1(C4411y.m27780d(i2, 10), m27893c3(a2), T2);
+            return m27867j1(C4411y.m27782d(i2, 10), m27895c3(a2), T2);
         } else {
             if (i3 == i5) {
-                str = m27991F(a2);
+                str = m27993F(a2);
             } else {
-                str = m27983H(a2);
+                str = m27985H(a2);
             }
-            return m27865j1(C4411y.m27780d(i2, 11), str, T2);
+            return m27867j1(C4411y.m27782d(i2, 11), str, T2);
         }
     }
 
-    public static boolean m27917X1(AbstractC10664f9 f9Var, long j, View view, C5132o oVar) {
+    public static boolean m27919X1(AbstractC10664f9 f9Var, long j, View view, C5132o oVar) {
         f9Var.mo4348c().m2485dd().m3429v7(f9Var, j, null);
         return true;
     }
 
-    public static AbstractC5411l0[] m27916X2(CharSequence charSequence) {
+    public static AbstractC5411l0[] m27918X2(CharSequence charSequence) {
         AbstractC5411l0[] l0VarArr;
         if (!(charSequence instanceof Spanned) || (l0VarArr = (AbstractC5411l0[]) ((Spanned) charSequence).getSpans(0, charSequence.length(), AbstractC5411l0.class)) == null || l0VarArr.length <= 0) {
             return null;
@@ -3520,41 +3520,41 @@ public class C4403w {
         return l0VarArr;
     }
 
-    public static TdApi.LanguagePackInfo m27915Y() {
-        String a0 = m27906a0();
-        return m27876g2(a0, null, m27815w(a0), m27901b0());
+    public static TdApi.LanguagePackInfo m27917Y() {
+        String a0 = m27908a0();
+        return m27878g2(a0, null, m27817w(a0), m27903b0());
     }
 
-    public static String m27914Y0(long j, TimeUnit timeUnit, boolean z) {
+    public static String m27916Y0(long j, TimeUnit timeUnit, boolean z) {
         int seconds = (int) timeUnit.toSeconds(j);
-        if (z && C5067f.m24112h(seconds)) {
-            return m27869i1(R.string.PastWeek);
+        if (z && C5067f.m24113h(seconds)) {
+            return m27871i1(R.string.PastWeek);
         }
-        if (C5067f.m24105o(seconds)) {
+        if (C5067f.m24106o(seconds)) {
             long j2 = seconds;
             TimeUnit timeUnit2 = TimeUnit.SECONDS;
-            if (C5067f.m24107m(j2, timeUnit2)) {
-                return m27869i1(R.string.Today);
+            if (C5067f.m24108m(j2, timeUnit2)) {
+                return m27871i1(R.string.Today);
             }
-            if (C5067f.m24104p(j2, timeUnit2)) {
-                return m27869i1(R.string.Yesterday);
+            if (C5067f.m24105p(j2, timeUnit2)) {
+                return m27871i1(R.string.Yesterday);
             }
-            return m27898b3(C5067f.m24119a(timeUnit2.toMillis(j2)));
+            return m27900b3(C5067f.m24120a(timeUnit2.toMillis(j2)));
         } else if (z) {
-            return m27894c2(j, timeUnit);
+            return m27896c2(j, timeUnit);
         } else {
-            if (C5067f.m24108l(j, timeUnit)) {
-                return m27999D(j, timeUnit);
+            if (C5067f.m24109l(j, timeUnit)) {
+                return m28001D(j, timeUnit);
             }
-            return m27987G(j, timeUnit);
+            return m27989G(j, timeUnit);
         }
     }
 
-    public static Locale m27913Y1() {
-        return C4868i.m24726c2().m24758Y0().f16677c;
+    public static Locale m27915Y1() {
+        return C4868i.m24727c2().m24759Y0().f16677c;
     }
 
-    public static int m27912Y2(int i, boolean z) {
+    public static int m27914Y2(int i, boolean z) {
         if (Build.VERSION.SDK_INT < 24 || !z) {
             if (i == 1) {
                 return 1;
@@ -3578,24 +3578,24 @@ public class C4403w {
         throw new IllegalArgumentException("style == " + i);
     }
 
-    public static String m27911Z() {
-        String n = C5078d.m23998n(m27896c0(R.string.language_emoji));
+    public static String m27913Z() {
+        String n = C5078d.m23999n(m27898c0(R.string.language_emoji));
         return n != null ? n : "🇧";
     }
 
-    public static String m27910Z0(long j, TimeUnit timeUnit) {
-        return m27900b1(j, timeUnit, false, 0);
+    public static String m27912Z0(long j, TimeUnit timeUnit) {
+        return m27902b1(j, timeUnit, false, 0);
     }
 
-    public static String m27909Z1(String str) {
-        return m27867j() ? str.toLowerCase() : str;
+    public static String m27911Z1(String str) {
+        return m27869j() ? str.toLowerCase() : str;
     }
 
-    public static void m27908Z2(TdApi.UpdateLanguagePackStrings updateLanguagePackStrings) {
+    public static void m27910Z2(TdApi.UpdateLanguagePackStrings updateLanguagePackStrings) {
         boolean z;
-        String k2 = m27860k2();
+        String k2 = m27862k2();
         boolean equals = updateLanguagePackStrings.languagePackId.equals(k2);
-        if (equals || !updateLanguagePackStrings.languagePackId.equals(m27855m())) {
+        if (equals || !updateLanguagePackStrings.languagePackId.equals(m27857m())) {
             z = false;
         } else {
             equals = true;
@@ -3608,27 +3608,27 @@ public class C4403w {
             Log.m14719i("received updateLanguagePack, stringCount:%d", objArr);
             TdApi.LanguagePackString[] languagePackStringArr2 = updateLanguagePackStrings.strings;
             if (languagePackStringArr2 == null || languagePackStringArr2.length == 0 || languagePackStringArr2.length > 25) {
-                m27975J();
+                m27977J();
                 return;
             }
             String str = updateLanguagePackStrings.languagePackId;
             if (!z) {
                 k2 = null;
             }
-            m27971K(str, languagePackStringArr2, k2);
+            m27973K(str, languagePackStringArr2, k2);
         }
     }
 
-    public static String m27906a0() {
-        return m27896c0(R.string.language_code);
+    public static String m27908a0() {
+        return m27898c0(R.string.language_code);
     }
 
-    public static String m27905a1(long j, TimeUnit timeUnit, long j2, TimeUnit timeUnit2, boolean z, int i) {
-        return m27918X0(j, timeUnit, j2, timeUnit2, z, i, R.string.timestamp, false);
+    public static String m27907a1(long j, TimeUnit timeUnit, long j2, TimeUnit timeUnit2, boolean z, int i) {
+        return m27920X0(j, timeUnit, j2, timeUnit2, z, i, R.string.timestamp, false);
     }
 
-    public static int m27904a2(String str) {
-        String w = m27815w(str);
+    public static int m27906a2(String str) {
+        String w = m27817w(str);
         int length = w.length();
         int i = 0;
         for (int i2 = 0; i2 < length; i2++) {
@@ -3637,7 +3637,7 @@ public class C4403w {
         return i;
     }
 
-    public static void m27903a3(boolean z, int i, int i2) {
+    public static void m27905a3(boolean z, int i, int i2) {
         String str = (z ? 1 : 0) + "_" + i + "_" + i2;
         Set<String> set = f14579e;
         if (set == null) {
@@ -3649,57 +3649,57 @@ public class C4403w {
         } else {
             return;
         }
-        Log.m14724e("Langpack fix required. languageCode: %s, entry: %s", Integer.toString(i, 16), m27885e1(i2));
+        Log.m14724e("Langpack fix required. languageCode: %s, entry: %s", Integer.toString(i, 16), m27887e1(i2));
     }
 
-    public static boolean m27901b0() {
-        return m28002C0(m27896c0(R.string.language_rtl)) == 1;
+    public static boolean m27903b0() {
+        return m28004C0(m27898c0(R.string.language_rtl)) == 1;
     }
 
-    public static String m27900b1(long j, TimeUnit timeUnit, boolean z, int i) {
-        return m27905a1(j, timeUnit, System.currentTimeMillis(), TimeUnit.MILLISECONDS, z, i);
+    public static String m27902b1(long j, TimeUnit timeUnit, boolean z, int i) {
+        return m27907a1(j, timeUnit, System.currentTimeMillis(), TimeUnit.MILLISECONDS, z, i);
     }
 
-    public static String m27899b2(String str, String str2) {
+    public static String m27901b2(String str, String str2) {
         return str + "|" + str2;
     }
 
-    public static String m27898b3(Calendar calendar) {
-        return C5070i.m24073E(m28007B("cccc", calendar.getTimeInMillis()), m28003C());
+    public static String m27900b3(Calendar calendar) {
+        return C5070i.m24074E(m28009B("cccc", calendar.getTimeInMillis()), m28005C());
     }
 
-    public static String m27896c0(int i) {
-        return m27837q1(null, i, false);
+    public static String m27898c0(int i) {
+        return m27839q1(null, i, false);
     }
 
-    public static String m27895c1(long j, TimeUnit timeUnit) {
-        return m27918X0(j, timeUnit, System.currentTimeMillis(), TimeUnit.MILLISECONDS, false, 0, R.string.timestampShort, false);
+    public static String m27897c1(long j, TimeUnit timeUnit) {
+        return m27920X0(j, timeUnit, System.currentTimeMillis(), TimeUnit.MILLISECONDS, false, 0, R.string.timestampShort, false);
     }
 
-    public static String m27894c2(long j, TimeUnit timeUnit) {
-        return C5070i.m24073E(m27944Q2(timeUnit.toMillis(j), 1, "LLLL yyyy"), m28003C());
+    public static String m27896c2(long j, TimeUnit timeUnit) {
+        return C5070i.m24074E(m27946Q2(timeUnit.toMillis(j), 1, "LLLL yyyy"), m28005C());
     }
 
-    public static String m27893c3(Calendar calendar) {
-        return m28007B("ccc", calendar.getTimeInMillis());
+    public static String m27895c3(Calendar calendar) {
+        return m28009B("ccc", calendar.getTimeInMillis());
     }
 
-    public static TdApi.LanguagePackStringValuePluralized m27891d0(String str, List<C4407d> list) {
+    public static TdApi.LanguagePackStringValuePluralized m27893d0(String str, List<C4407d> list) {
         TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized = new TdApi.LanguagePackStringValuePluralized("", "", "", "", "", "");
         for (C4407d dVar : list) {
             int i = dVar.f14595a;
             if (i == 0) {
-                languagePackStringValuePluralized.zeroValue = m27837q1(null, m27829s1(str + "_zero"), false);
+                languagePackStringValuePluralized.zeroValue = m27839q1(null, m27831s1(str + "_zero"), false);
             } else if (i == 1) {
-                languagePackStringValuePluralized.oneValue = m27837q1(null, m27829s1(str + "_one"), false);
+                languagePackStringValuePluralized.oneValue = m27839q1(null, m27831s1(str + "_one"), false);
             } else if (i == 2) {
-                languagePackStringValuePluralized.twoValue = m27837q1(null, m27829s1(str + "_two"), false);
+                languagePackStringValuePluralized.twoValue = m27839q1(null, m27831s1(str + "_two"), false);
             } else if (i == 3) {
-                languagePackStringValuePluralized.fewValue = m27837q1(null, m27829s1(str + "_few"), false);
+                languagePackStringValuePluralized.fewValue = m27839q1(null, m27831s1(str + "_few"), false);
             } else if (i == 4) {
-                languagePackStringValuePluralized.manyValue = m27837q1(null, m27829s1(str + "_many"), false);
+                languagePackStringValuePluralized.manyValue = m27839q1(null, m27831s1(str + "_many"), false);
             } else if (i == 5) {
-                languagePackStringValuePluralized.otherValue = m27837q1(null, m27829s1(str + "_other"), false);
+                languagePackStringValuePluralized.otherValue = m27839q1(null, m27831s1(str + "_other"), false);
             } else {
                 throw new IllegalArgumentException("form == " + dVar);
             }
@@ -3707,118 +3707,118 @@ public class C4403w {
         return languagePackStringValuePluralized;
     }
 
-    public static int[] m27890d1() {
+    public static int[] m27892d1() {
         return new int[]{R.string.language_code, R.string.language_emoji, R.string.language_name, R.string.language_nameInEnglish, R.string.language_dateFormatLocale, R.string.language_continueInLanguage, R.string.language_continueInLanguagePopupText};
     }
 
-    public static Object m27889d2(boolean z) {
-        return C4779t2.m25399w5(new TdApi.TextEntityTypeBold(), null, z);
+    public static Object m27891d2(boolean z) {
+        return C4779t2.m25400w5(new TdApi.TextEntityTypeBold(), null, z);
     }
 
-    public static CharSequence m27888d3(CharSequence charSequence, AbstractC4409f fVar) {
-        return fVar != null ? m27935T("%s", fVar, charSequence) : charSequence;
+    public static CharSequence m27890d3(CharSequence charSequence, AbstractC4409f fVar) {
+        return fVar != null ? m27937T("%s", fVar, charSequence) : charSequence;
     }
 
-    public static TdApi.LanguagePackStringValueOrdinary m27886e0(String str) {
-        return new TdApi.LanguagePackStringValueOrdinary(m27837q1(null, m27829s1(str), false));
+    public static TdApi.LanguagePackStringValueOrdinary m27888e0(String str) {
+        return new TdApi.LanguagePackStringValueOrdinary(m27839q1(null, m27831s1(str), false));
     }
 
-    public static String m27885e1(int i) {
+    public static String m27887e1(int i) {
         try {
-            return C1379j0.m37315n().getResources().getResourceEntryName(i);
+            return C1379j0.m37318n().getResources().getResourceEntryName(i);
         } catch (Throwable unused) {
             Log.m14724e("Unable to find resource entry name (shitty modified APK?)", new Object[0]);
             return "";
         }
     }
 
-    public static Object m27884e2(boolean z) {
-        return C4779t2.m25399w5(new TdApi.TextEntityTypeCode(), null, z);
+    public static Object m27886e2(boolean z) {
+        return C4779t2.m25400w5(new TdApi.TextEntityTypeCode(), null, z);
     }
 
-    public static TdApi.LanguagePackInfo m27882f0() {
-        String g0 = m27878g0();
-        if (C5070i.m24061i(g0) || g0.equals(m27906a0())) {
-            return m27915Y();
+    public static TdApi.LanguagePackInfo m27884f0() {
+        String g0 = m27880g0();
+        if (C5070i.m24062i(g0) || g0.equals(m27908a0())) {
+            return m27917Y();
         }
-        String c0 = m27896c0(R.string.suggested_language_code_base);
-        if (C5070i.m24061i(c0)) {
+        String c0 = m27898c0(R.string.suggested_language_code_base);
+        if (C5070i.m24062i(c0)) {
             c0 = null;
         }
-        String c02 = m27896c0(R.string.suggested_language_code_plural);
-        if (C5070i.m24061i(c02)) {
-            c02 = m27815w(g0);
+        String c02 = m27898c0(R.string.suggested_language_code_plural);
+        if (C5070i.m24062i(c02)) {
+            c02 = m27817w(g0);
         }
-        return m27876g2(g0, c0, c02, m27874h0());
+        return m27878g2(g0, c0, c02, m27876h0());
     }
 
-    public static CharSequence m27881f1(long j, TimeUnit timeUnit, long j2, TimeUnit timeUnit2, boolean z, int i, int i2, boolean z2) {
+    public static CharSequence m27883f1(long j, TimeUnit timeUnit, long j2, TimeUnit timeUnit2, boolean z, int i, int i2, boolean z2) {
         String str;
         if (z) {
             long seconds = timeUnit.toSeconds(j) - timeUnit2.toSeconds(j2);
             if (seconds >= -300) {
                 if (seconds < i) {
-                    return m27853m1(C4411y.m27780d(i2, 0), new Object[0]);
+                    return m27855m1(C4411y.m27782d(i2, 0), new Object[0]);
                 }
                 if (seconds < 60) {
-                    return m27836q2(C4411y.m27780d(i2, 1), (int) seconds);
+                    return m27838q2(C4411y.m27782d(i2, 1), (int) seconds);
                 }
                 long j3 = seconds / 60;
                 if (j3 < 60) {
-                    return m27836q2(C4411y.m27780d(i2, 2), (int) j3);
+                    return m27838q2(C4411y.m27782d(i2, 2), (int) j3);
                 }
                 long j4 = j3 / 60;
                 if (j4 < 4) {
-                    return m27836q2(C4411y.m27780d(i2, 3), (int) j4);
+                    return m27838q2(C4411y.m27782d(i2, 3), (int) j4);
                 }
             }
         }
-        Calendar a = C5067f.m24119a(timeUnit2.toMillis(j2));
+        Calendar a = C5067f.m24120a(timeUnit2.toMillis(j2));
         int i3 = a.get(1);
         int i4 = a.get(2);
-        C5067f.m24103q(a);
+        C5067f.m24104q(a);
         long timeInMillis = a.getTimeInMillis();
-        Calendar a2 = C5067f.m24119a(timeUnit.toMillis(j));
+        Calendar a2 = C5067f.m24120a(timeUnit.toMillis(j));
         int i5 = a2.get(1);
         int i6 = a2.get(2);
-        long f = C5067f.m24114f(a2);
-        String T2 = m27932T2(j, timeUnit);
+        long f = C5067f.m24115f(a2);
+        String T2 = m27934T2(j, timeUnit);
         int days = (int) TimeUnit.MILLISECONDS.toDays(f - timeInMillis);
         if (days == 0) {
-            return m27853m1(C4411y.m27780d(i2, 4), T2);
+            return m27855m1(C4411y.m27782d(i2, 4), T2);
         }
         if (days == 1) {
-            return m27853m1(C4411y.m27780d(i2, 6), T2);
+            return m27855m1(C4411y.m27782d(i2, 6), T2);
         }
         if (z2) {
             if (days < 14) {
-                return m27836q2(C4411y.m27780d(i2, 21), days);
+                return m27838q2(C4411y.m27782d(i2, 21), days);
             }
             if (days < 30) {
-                return m27836q2(C4411y.m27780d(i2, 22), days / 7);
+                return m27838q2(C4411y.m27782d(i2, 22), days / 7);
             }
             int i7 = ((i5 - i3) * 12) + (i6 - i4);
             if (i7 < 12) {
-                return m27836q2(C4411y.m27780d(i2, 23), i7);
+                return m27838q2(C4411y.m27782d(i2, 23), i7);
             }
-            return m27836q2(C4411y.m27780d(i2, 24), i7 / 12);
+            return m27838q2(C4411y.m27782d(i2, 24), i7 / 12);
         } else if (days < 7) {
-            return m27865j1(C4411y.m27780d(i2, 10), m27893c3(a2), T2);
+            return m27867j1(C4411y.m27782d(i2, 10), m27895c3(a2), T2);
         } else {
             if (i3 == i5) {
-                str = m27991F(a2);
+                str = m27993F(a2);
             } else {
-                str = m27983H(a2);
+                str = m27985H(a2);
             }
-            return m27853m1(C4411y.m27780d(i2, 11), str, T2);
+            return m27855m1(C4411y.m27782d(i2, 11), str, T2);
         }
     }
 
-    public static Object m27880f2(boolean z) {
-        return C4779t2.m25399w5(new TdApi.TextEntityTypeItalic(), null, z);
+    public static Object m27882f2(boolean z) {
+        return C4779t2.m25400w5(new TdApi.TextEntityTypeItalic(), null, z);
     }
 
-    public static TdApi.LanguagePackStringValueDeleted m27879g() {
+    public static TdApi.LanguagePackStringValueDeleted m27881g() {
         if (f14586l == null) {
             synchronized (C4403w.class) {
                 if (f14586l == null) {
@@ -3829,29 +3829,29 @@ public class C4403w {
         return f14586l;
     }
 
-    public static String m27878g0() {
-        String c0 = m27896c0(R.string.suggested_language_code);
-        return C5070i.m24061i(c0) ? m27906a0() : c0;
+    public static String m27880g0() {
+        String c0 = m27898c0(R.string.suggested_language_code);
+        return C5070i.m24062i(c0) ? m27908a0() : c0;
     }
 
-    public static CharSequence m27877g1(CharSequence charSequence, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6) {
+    public static CharSequence m27879g1(CharSequence charSequence, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6) {
         if (z2 && z) {
-            charSequence = m27869i1(R.string.Reminder);
+            charSequence = m27871i1(R.string.Reminder);
         }
         if (z5 && !z2) {
-            charSequence = m27862k0(z ? z4 ? R.string.format_notificationScheduledChannel : z3 ? R.string.format_notificationScheduledGroup : R.string.format_notificationScheduledPrivate : R.string.format_notificationScheduledText, charSequence);
+            charSequence = m27864k0(z ? z4 ? R.string.format_notificationScheduledChannel : z3 ? R.string.format_notificationScheduledGroup : R.string.format_notificationScheduledPrivate : R.string.format_notificationScheduledText, charSequence);
         }
         if (!z6) {
             return charSequence;
         }
-        return m27862k0(z ? R.string.format_notificationSilentTitle : R.string.format_notificationSilentText, charSequence);
+        return m27864k0(z ? R.string.format_notificationSilentTitle : R.string.format_notificationSilentText, charSequence);
     }
 
-    public static TdApi.LanguagePackInfo m27876g2(String str, String str2, String str3, boolean z) {
+    public static TdApi.LanguagePackInfo m27878g2(String str, String str2, String str3, boolean z) {
         return new TdApi.LanguagePackInfo(str, str2, null, null, str3, false, z, false, false, 0, 0, 0, null);
     }
 
-    public static void m27875h(AbstractC4404a aVar) {
+    public static void m27877h(AbstractC4404a aVar) {
         if (f14584j == null) {
             synchronized (C4403w.class) {
                 if (f14584j == null) {
@@ -3862,72 +3862,72 @@ public class C4403w {
         f14584j.add(aVar);
     }
 
-    public static boolean m27874h0() {
-        String c0 = m27896c0(R.string.suggested_language_rtl);
-        return C5070i.m24061i(c0) ? m27901b0() : m28002C0(c0) == 1;
+    public static boolean m27876h0() {
+        String c0 = m27898c0(R.string.suggested_language_rtl);
+        return C5070i.m24062i(c0) ? m27903b0() : m28004C0(c0) == 1;
     }
 
-    public static CharSequence m27873h1(int i, AbstractC4409f fVar, Object... objArr) {
-        return m27841p1(null, i, true, 0, fVar, objArr);
+    public static CharSequence m27875h1(int i, AbstractC4409f fVar, Object... objArr) {
+        return m27843p1(null, i, true, 0, fVar, objArr);
     }
 
-    public static C5132o m27872h2(final AbstractC10664f9 f9Var, final long j) {
-        return C4779t2.m25406v5(new TdApi.TextEntityTypeMentionName(j)).m23845q(new C5132o.AbstractC5133a() {
+    public static C5132o m27874h2(final AbstractC10664f9 f9Var, final long j) {
+        return C4779t2.m25407v5(new TdApi.TextEntityTypeMentionName(j)).m23846q(new C5132o.AbstractC5133a() {
             @Override
             public final boolean mo490a(View view, C5132o oVar) {
                 boolean X1;
-                X1 = C4403w.m27917X1(AbstractC10664f9.this, j, view, oVar);
+                X1 = C4403w.m27919X1(AbstractC10664f9.this, j, view, oVar);
                 return X1;
             }
         });
     }
 
-    public static int m27871i() {
-        return m27984G2() ? 11 : 9;
+    public static int m27873i() {
+        return m27986G2() ? 11 : 9;
     }
 
-    public static TdApi.LanguagePackStringValue m27870i0(String str) {
-        return m27835r().get(str);
+    public static TdApi.LanguagePackStringValue m27872i0(String str) {
+        return m27837r().get(str);
     }
 
-    public static String m27869i1(int i) {
-        return m27837q1(null, i, true);
+    public static String m27871i1(int i) {
+        return m27839q1(null, i, true);
     }
 
-    public static String m27868i2(String str) {
+    public static String m27870i2(String str) {
         if (str.startsWith("X")) {
             TdApi.LanguagePackStringValue M0 = C10536ab.m4776M0(C10536ab.m4812D0(), "language_code", str);
             if (M0 instanceof TdApi.LanguagePackStringValueOrdinary) {
                 str = ((TdApi.LanguagePackStringValueOrdinary) M0).value;
             }
         }
-        return m27815w(str);
+        return m27817w(str);
     }
 
-    public static boolean m27867j() {
+    public static boolean m27869j() {
         if (!f14580f) {
-            m27819v(false);
+            m27821v(false);
         }
         return f14581g;
     }
 
-    public static String m27866j0(int i) {
+    public static String m27868j0(int i) {
         if (i < 60) {
-            return m27844o2(R.string.xSec, i);
+            return m27846o2(R.string.xSec, i);
         }
         int i2 = i / 60;
         if (i2 >= 60) {
-            return C1363c0.m37433h(i);
+            return C1363c0.m37436h(i);
         }
         int i3 = i % 60;
-        return i3 == 0 ? m27844o2(R.string.xMin, i2) : m27865j1(R.string.format_minutesAndSeconds, m27844o2(R.string.xMin, i2), m27844o2(R.string.xSec, i3));
+        return i3 == 0 ? m27846o2(R.string.xMin, i2) : m27867j1(R.string.format_minutesAndSeconds, m27846o2(R.string.xMin, i2), m27846o2(R.string.xSec, i3));
     }
 
-    public static String m27865j1(int i, Object... objArr) {
-        return m27862k0(i, objArr).toString();
+    public static String m27867j1(int i, Object... objArr) {
+        return m27864k0(i, objArr).toString();
     }
 
-    public static int m27864j2(int i, long j) {
+    public static int m27866j2(int i, long j) {
         int i2;
         int i3;
         switch (i) {
@@ -4273,23 +4273,23 @@ public class C4403w {
         }
     }
 
-    public static String m27863k(String str, int i) {
-        return (i == 0 || (i & 1) == 0) ? str : m27909Z1(str);
+    public static String m27865k(String str, int i) {
+        return (i == 0 || (i & 1) == 0) ? str : m27911Z1(str);
     }
 
-    public static CharSequence m27862k0(int i, Object... objArr) {
-        return m27841p1(null, i, true, 0, null, objArr);
+    public static CharSequence m27864k0(int i, Object... objArr) {
+        return m27843p1(null, i, true, 0, null, objArr);
     }
 
-    public static String m27861k1(TdApi.LanguagePackInfo languagePackInfo, int i) {
-        return m27837q1(languagePackInfo, i, true);
+    public static String m27863k1(TdApi.LanguagePackInfo languagePackInfo, int i) {
+        return m27839q1(languagePackInfo, i, true);
     }
 
-    public static String m27860k2() {
-        return C4868i.m24726c2().m24751Z0().f25405id;
+    public static String m27862k2() {
+        return C4868i.m24727c2().m24752Z0().f25408id;
     }
 
-    public static void m27859l(char c, Object obj) {
+    public static void m27861l(char c, Object obj) {
         boolean z = false;
         if (c == 'd' ? (obj instanceof Integer) || (obj instanceof Long) : c == 'f' ? (obj instanceof Float) || (obj instanceof Double) : c == 's') {
             z = true;
@@ -4299,19 +4299,19 @@ public class C4403w {
         }
     }
 
-    public static String m27858l0(String str) {
-        TdApi.LanguagePackStringValueOrdinary v1 = m27817v1(str, C4868i.m24726c2().m24751Z0());
+    public static String m27860l0(String str) {
+        TdApi.LanguagePackStringValueOrdinary v1 = m27819v1(str, C4868i.m24727c2().m24752Z0());
         if (v1 != null) {
             return v1.value;
         }
         return null;
     }
 
-    public static String m27857l1(TdApi.LanguagePackInfo languagePackInfo, int i, Object... objArr) {
-        return m27841p1(languagePackInfo, i, true, 0, null, objArr).toString();
+    public static String m27859l1(TdApi.LanguagePackInfo languagePackInfo, int i, Object... objArr) {
+        return m27843p1(languagePackInfo, i, true, 0, null, objArr).toString();
     }
 
-    public static String m27856l2(String str) {
+    public static String m27858l2(String str) {
         StringBuilder sb2 = new StringBuilder(str);
         int length = str.length() - 1;
         boolean z = false;
@@ -4319,13 +4319,13 @@ public class C4403w {
             char charAt = str.charAt(length);
             if (charAt == '\'') {
                 z = !z;
-            } else if (!z && m27953O1(charAt) && m27961M1(charAt)) {
+            } else if (!z && m27955O1(charAt) && m27963M1(charAt)) {
                 int i = length + 1;
                 boolean z2 = false;
                 while (i < sb2.length()) {
                     char charAt2 = sb2.charAt(i);
                     if (charAt2 != '\'') {
-                        if (!z2 && m27953O1(charAt2) && !m27961M1(charAt2)) {
+                        if (!z2 && m27955O1(charAt2) && !m27963M1(charAt2)) {
                             break;
                         }
                     } else {
@@ -4356,19 +4356,19 @@ public class C4403w {
         return sb2.toString();
     }
 
-    public static String m27855m() {
-        return C4868i.m24726c2().m24751Z0().baseLanguagePackId;
+    public static String m27857m() {
+        return C4868i.m24727c2().m24752Z0().baseLanguagePackId;
     }
 
-    public static String m27854m0() {
-        return m27869i1(R.string.format_concatSeparator);
+    public static String m27856m0() {
+        return m27871i1(R.string.format_concatSeparator);
     }
 
-    public static CharSequence m27853m1(int i, Object... objArr) {
-        return m27841p1(null, i, true, 0, m27843p(), objArr);
+    public static CharSequence m27855m1(int i, Object... objArr) {
+        return m27843p1(null, i, true, 0, m27845p(), objArr);
     }
 
-    public static String m27852m2(String str) {
+    public static String m27854m2(String str) {
         StringBuilder sb2 = new StringBuilder(str);
         int length = str.length() - 1;
         boolean z = false;
@@ -4376,13 +4376,13 @@ public class C4403w {
             char charAt = str.charAt(length);
             if (charAt == '\'') {
                 z = !z;
-            } else if (!z && m27953O1(charAt) && m27945Q1(charAt)) {
+            } else if (!z && m27955O1(charAt) && m27947Q1(charAt)) {
                 int i = length + 1;
                 boolean z2 = false;
                 while (i < sb2.length()) {
                     char charAt2 = sb2.charAt(i);
                     if (charAt2 != '\'') {
-                        if (!z2 && m27953O1(charAt2) && !m27945Q1(charAt2)) {
+                        if (!z2 && m27955O1(charAt2) && !m27947Q1(charAt2)) {
                             break;
                         }
                     } else {
@@ -4395,7 +4395,7 @@ public class C4403w {
                 while (length > 0) {
                     char charAt3 = str.charAt(length - 1);
                     if (charAt3 != '\'') {
-                        if (!z3 && m27953O1(charAt3) && !m27945Q1(charAt3)) {
+                        if (!z3 && m27955O1(charAt3) && !m27947Q1(charAt3)) {
                             break;
                         }
                     } else {
@@ -4411,134 +4411,134 @@ public class C4403w {
         return sb2.toString();
     }
 
-    public static String m27851n(double d, double d2) {
-        return String.format(Locale.US, "%f, %f", Double.valueOf(C5069h.m24078o(d)), Double.valueOf(C5069h.m24078o(d2)));
+    public static String m27853n(double d, double d2) {
+        return String.format(Locale.US, "%f, %f", Double.valueOf(C5069h.m24079o(d)), Double.valueOf(C5069h.m24079o(d2)));
     }
 
-    public static String m27850n0(boolean z) {
-        return m27869i1(z ? R.string.format_concatSeparatorLastPerson : R.string.format_concatSeparatorLast);
+    public static String m27852n0(boolean z) {
+        return m27871i1(z ? R.string.format_concatSeparatorLastPerson : R.string.format_concatSeparatorLast);
     }
 
-    public static CharSequence m27849n1(int i, Object... objArr) {
-        return m27841p1(null, i, true, 1, m27843p(), objArr);
+    public static CharSequence m27851n1(int i, Object... objArr) {
+        return m27843p1(null, i, true, 1, m27845p(), objArr);
     }
 
-    public static CharSequence m27848n2(int i, long j, AbstractC4409f fVar, Object... objArr) {
+    public static CharSequence m27850n2(int i, long j, AbstractC4409f fVar, Object... objArr) {
         if (objArr == null || objArr.length <= 0) {
-            return m27816v2(i, j, 0, fVar, C1363c0.m37437f(j));
+            return m27818v2(i, j, 0, fVar, C1363c0.m37440f(j));
         }
         Object[] objArr2 = new Object[objArr.length + 1];
-        objArr2[0] = C1363c0.m37437f(j);
+        objArr2[0] = C1363c0.m37440f(j);
         System.arraycopy(objArr, 0, objArr2, 1, objArr.length);
-        return m27816v2(i, j, 0, fVar, objArr2);
+        return m27818v2(i, j, 0, fVar, objArr2);
     }
 
-    public static String m27847o(double d) {
+    public static String m27849o(double d) {
         long j = (long) d;
         return d == ((double) j) ? Long.toString(j) : String.format(Locale.US, "%.2f", Double.valueOf(d));
     }
 
-    public static String m27846o0(long j, TimeUnit timeUnit) {
-        if (C5067f.m24108l(j, timeUnit)) {
-            return m27999D(j, timeUnit);
+    public static String m27848o0(long j, TimeUnit timeUnit) {
+        if (C5067f.m24109l(j, timeUnit)) {
+            return m28001D(j, timeUnit);
         }
-        return m27987G(j, timeUnit);
+        return m27989G(j, timeUnit);
     }
 
-    public static String m27845o1(String str) {
+    public static String m27847o1(String str) {
         for (int i = 0; i < str.length(); i++) {
             char charAt = str.charAt(i);
             if ((charAt < 'a' || charAt > 'z') && ((charAt < 'A' || charAt > 'Z') && ((charAt < '0' || charAt > '9') && charAt != '_'))) {
                 return null;
             }
         }
-        int s1 = m27829s1(str);
-        if (s1 == 0 || C5062b.m24152t(C4411y.m27782b(), str) >= 0) {
+        int s1 = m27831s1(str);
+        if (s1 == 0 || C5062b.m24153t(C4411y.m27784b(), str) >= 0) {
             return null;
         }
-        return m27869i1(s1);
+        return m27871i1(s1);
     }
 
-    public static String m27844o2(int i, long j) {
-        return m27816v2(i, j, 0, null, C1363c0.m37437f(j)).toString();
+    public static String m27846o2(int i, long j) {
+        return m27818v2(i, j, 0, null, C1363c0.m37440f(j)).toString();
     }
 
-    public static AbstractC4409f m27843p() {
+    public static AbstractC4409f m27845p() {
         return C4399s.f14570a;
     }
 
-    public static String m27842p0(long j, long j2, TimeUnit timeUnit, boolean z) {
-        return DateUtils.formatDateRange(C1379j0.m37315n(), new Formatter(new StringBuilder(50), m27913Y1()), timeUnit.toMillis(j), timeUnit.toMillis(j2), z ? 524289 : Log.TAG_PLAYER).toString();
+    public static String m27844p0(long j, long j2, TimeUnit timeUnit, boolean z) {
+        return DateUtils.formatDateRange(C1379j0.m37318n(), new Formatter(new StringBuilder(50), m27915Y1()), timeUnit.toMillis(j), timeUnit.toMillis(j2), z ? 524289 : Log.TAG_PLAYER).toString();
     }
 
-    public static CharSequence m27841p1(TdApi.LanguagePackInfo languagePackInfo, int i, boolean z, int i2, AbstractC4409f fVar, Object... objArr) {
+    public static CharSequence m27843p1(TdApi.LanguagePackInfo languagePackInfo, int i, boolean z, int i2, AbstractC4409f fVar, Object... objArr) {
         if (i == 0) {
             throw new Resources.NotFoundException("resId == 0");
         } else if (objArr == null || objArr.length == 0) {
-            return m27837q1(null, i, z);
+            return m27839q1(null, i, z);
         } else {
-            boolean J1 = m27973J1(objArr);
+            boolean J1 = m27975J1(objArr);
             if (z) {
                 if (languagePackInfo == null) {
-                    languagePackInfo = C4868i.m24726c2().m24751Z0();
+                    languagePackInfo = C4868i.m24727c2().m24752Z0();
                 }
-                TdApi.LanguagePackStringValueOrdinary v1 = m27817v1(m27885e1(i), languagePackInfo);
+                TdApi.LanguagePackStringValueOrdinary v1 = m27819v1(m27887e1(i), languagePackInfo);
                 if (v1 != null) {
                     try {
-                        return m27931U(m27863k(v1.value, i2), J1, fVar, objArr);
+                        return m27933U(m27865k(v1.value, i2), J1, fVar, objArr);
                     } catch (Throwable unused) {
-                        m27903a3(true, m27824t2(), i);
+                        m27905a3(true, m27826t2(), i);
                     }
                 }
             }
             try {
                 if (fVar == null && i2 == 0 && !J1) {
-                    return m27923W(i, objArr);
+                    return m27925W(i, objArr);
                 }
-                return m27931U(m27863k(m27927V(i), i2), J1, fVar, objArr);
+                return m27933U(m27865k(m27929V(i), i2), J1, fVar, objArr);
             } catch (Resources.NotFoundException unused2) {
-                Log.m14724e("Resource not found (shitty modified lang pack?): %d %s", Integer.valueOf(i), m27885e1(i));
+                Log.m14724e("Resource not found (shitty modified lang pack?): %d %s", Integer.valueOf(i), m27887e1(i));
                 return "";
             } catch (Throwable th) {
-                String V = m27927V(i);
-                Log.m14725e("Resource format is broken (shitty modified lang pack?): %s, format: %s", th, m27885e1(i), V);
+                String V = m27929V(i);
+                Log.m14725e("Resource format is broken (shitty modified lang pack?): %s, format: %s", th, m27887e1(i), V);
                 return V;
             }
         }
     }
 
-    public static String m27840p2(int i, long j, Object... objArr) {
-        return m27848n2(i, j, null, objArr).toString();
+    public static String m27842p2(int i, long j, Object... objArr) {
+        return m27850n2(i, j, null, objArr).toString();
     }
 
-    public static CharSequence m27839q(CharSequence charSequence) {
-        return m27888d3(charSequence, m27843p());
+    public static CharSequence m27841q(CharSequence charSequence) {
+        return m27890d3(charSequence, m27845p());
     }
 
-    public static String m27838q0(long j, TimeUnit timeUnit) {
+    public static String m27840q0(long j, TimeUnit timeUnit) {
         long millis = timeUnit.toMillis(j);
-        if (!C4868i.m24726c2().m24744a0()) {
-            return m27952O2(millis, 3, "dd.MM.yyyy");
+        if (!C4868i.m24727c2().m24745a0()) {
+            return m27954O2(millis, 3, "dd.MM.yyyy");
         }
-        Calendar a = C5067f.m24119a(millis);
-        return m27865j1(R.string.format_datestamp, Integer.valueOf(a.get(5)), Integer.valueOf(a.get(2) + 1), Integer.valueOf(a.get(1) % 100));
+        Calendar a = C5067f.m24120a(millis);
+        return m27867j1(R.string.format_datestamp, Integer.valueOf(a.get(5)), Integer.valueOf(a.get(2) + 1), Integer.valueOf(a.get(1) % 100));
     }
 
-    public static String m27837q1(TdApi.LanguagePackInfo languagePackInfo, int i, boolean z) {
+    public static String m27839q1(TdApi.LanguagePackInfo languagePackInfo, int i, boolean z) {
         if (i != 0) {
             if (z) {
                 if (languagePackInfo == null) {
-                    languagePackInfo = C4868i.m24726c2().m24751Z0();
+                    languagePackInfo = C4868i.m24727c2().m24752Z0();
                 }
-                TdApi.LanguagePackStringValueOrdinary v1 = m27817v1(m27885e1(i), languagePackInfo);
+                TdApi.LanguagePackStringValueOrdinary v1 = m27819v1(m27887e1(i), languagePackInfo);
                 if (v1 != null) {
                     return v1.value;
                 }
             }
             try {
-                return m27927V(i);
+                return m27929V(i);
             } catch (Resources.NotFoundException unused) {
-                Log.m14724e("Resource not found (shitty modified lang pack?): %d %s", Integer.valueOf(i), m27885e1(i));
+                Log.m14724e("Resource not found (shitty modified lang pack?): %d %s", Integer.valueOf(i), m27887e1(i));
                 return "";
             }
         } else {
@@ -4546,11 +4546,11 @@ public class C4403w {
         }
     }
 
-    public static CharSequence m27836q2(int i, long j) {
-        return m27848n2(i, j, m27843p(), new Object[0]);
+    public static CharSequence m27838q2(int i, long j) {
+        return m27850n2(i, j, m27845p(), new Object[0]);
     }
 
-    public static Map<String, TdApi.LanguagePackStringValue> m27835r() {
+    public static Map<String, TdApi.LanguagePackStringValue> m27837r() {
         if (f14585k == null) {
             synchronized (C4403w.class) {
                 if (f14585k == null) {
@@ -4561,17 +4561,17 @@ public class C4403w {
         return f14585k;
     }
 
-    public static String m27834r0(String str, boolean z) {
+    public static String m27836r0(String str, boolean z) {
         if (!z) {
             return str;
         }
         return "[DEBUG] " + str;
     }
 
-    public static TdApi.LanguagePackStringValuePluralized m27833r1(String str, TdApi.LanguagePackInfo languagePackInfo) {
-        String b2 = m27860k2().equals(languagePackInfo.f25405id) ? m27899b2(languagePackInfo.f25405id, str) : null;
+    public static TdApi.LanguagePackStringValuePluralized m27835r1(String str, TdApi.LanguagePackInfo languagePackInfo) {
+        String b2 = m27862k2().equals(languagePackInfo.f25408id) ? m27901b2(languagePackInfo.f25408id, str) : null;
         if (b2 != null) {
-            TdApi.LanguagePackStringValue i0 = m27870i0(b2);
+            TdApi.LanguagePackStringValue i0 = m27872i0(b2);
             if (i0 instanceof TdApi.LanguagePackStringValuePluralized) {
                 return (TdApi.LanguagePackStringValuePluralized) i0;
             }
@@ -4579,22 +4579,22 @@ public class C4403w {
                 return null;
             }
         }
-        TdApi.LanguagePackStringValuePluralized D2 = m27996D2(str, languagePackInfo.f25405id);
-        if (D2 == null && !C5070i.m24061i(languagePackInfo.baseLanguagePackId)) {
-            D2 = m27996D2(str, languagePackInfo.baseLanguagePackId);
+        TdApi.LanguagePackStringValuePluralized D2 = m27998D2(str, languagePackInfo.f25408id);
+        if (D2 == null && !C5070i.m24062i(languagePackInfo.baseLanguagePackId)) {
+            D2 = m27998D2(str, languagePackInfo.baseLanguagePackId);
         }
         if (b2 != null) {
-            m28004B2(b2, D2);
+            m28006B2(b2, D2);
         }
         return D2;
     }
 
-    public static CharSequence m27832r2(int i, long j, Object... objArr) {
-        return m27848n2(i, j, m27843p(), objArr);
+    public static CharSequence m27834r2(int i, long j, Object... objArr) {
+        return m27850n2(i, j, m27845p(), objArr);
     }
 
-    public static void m27831s(TdApi.LanguagePackInfo languagePackInfo) {
-        C4868i.m24726c2().m24803R4(languagePackInfo);
+    public static void m27833s(TdApi.LanguagePackInfo languagePackInfo) {
+        C4868i.m24727c2().m24804R4(languagePackInfo);
         Iterator<C11131y6> it = C10536ab.m4667o1().iterator();
         boolean z = false;
         while (it.hasNext()) {
@@ -4607,29 +4607,29 @@ public class C4403w {
         if (!z) {
             C10536ab.m4667o1().m4684j0().m2533ac(languagePackInfo);
         }
-        m27975J();
+        m27977J();
     }
 
-    public static String m27830s0() {
-        return m27869i1(R.string.format_decimalSeparator);
+    public static String m27832s0() {
+        return m27871i1(R.string.format_decimalSeparator);
     }
 
-    public static int m27829s1(String str) {
+    public static int m27831s1(String str) {
         try {
-            Context n = C1379j0.m37315n();
+            Context n = C1379j0.m37318n();
             return n.getResources().getIdentifier(str, "string", n.getPackageName());
         } catch (Throwable unused) {
             return 0;
         }
     }
 
-    public static String m27828s2(List<String> list, int i) {
-        String join = TextUtils.join(m27854m0(), list);
-        return i == 0 ? join : m27865j1(R.string.format_chatTitlesAndOthers, join, m27844o2(R.string.xOtherChatTitles, i));
+    public static String m27830s2(List<String> list, int i) {
+        String join = TextUtils.join(m27856m0(), list);
+        return i == 0 ? join : m27867j1(R.string.format_chatTitlesAndOthers, join, m27846o2(R.string.xOtherChatTitles, i));
     }
 
-    public static void m27827t() {
-        TdApi.LanguagePackInfo Z0 = C4868i.m24726c2().m24751Z0();
+    public static void m27829t() {
+        TdApi.LanguagePackInfo Z0 = C4868i.m24727c2().m24752Z0();
         Iterator<C11131y6> it = C10536ab.m4667o1().iterator();
         boolean z = false;
         while (it.hasNext()) {
@@ -4639,47 +4639,47 @@ public class C4403w {
             }
         }
         if (z) {
-            m27975J();
+            m27977J();
         }
     }
 
-    public static String m27826t0(long j, long j2, boolean z) {
+    public static String m27828t0(long j, long j2, boolean z) {
         int i = j2 != 0 ? (int) ((j / j2) * 100.0d) : 0;
         int i2 = z ? R.string.Downloading : R.string.DownloadingOf;
-        return m27865j1(i2, i + "%", C1363c0.m37423m(j2));
+        return m27867j1(i2, i + "%", C1363c0.m37426m(j2));
     }
 
-    public static CharSequence m27825t1(int i, AbstractC4409f fVar, Object... objArr) {
-        if (m27949P1()) {
-            return m27873h1(i, fVar, objArr);
+    public static CharSequence m27827t1(int i, AbstractC4409f fVar, Object... objArr) {
+        if (m27951P1()) {
+            return m27875h1(i, fVar, objArr);
         }
-        return m27841p1(null, i, false, 0, fVar, objArr).toString();
+        return m27843p1(null, i, false, 0, fVar, objArr).toString();
     }
 
-    public static int m27824t2() {
-        return C4868i.m24726c2().m24743a1();
+    public static int m27826t2() {
+        return C4868i.m24727c2().m24744a1();
     }
 
-    public static void m27823u() {
-        m27819v(true);
+    public static void m27825u() {
+        m27821v(true);
     }
 
-    public static String m27822u0(TdApi.File file, int i, boolean z) {
-        if (file == null || (!z && C4779t2.m25598T2(file))) {
-            return m27869i1(i);
+    public static String m27824u0(TdApi.File file, int i, boolean z) {
+        if (file == null || (!z && C4779t2.m25599T2(file))) {
+            return m27871i1(i);
         }
         TdApi.LocalFile localFile = file.local;
-        return localFile.isDownloadingActive ? m27826t0(localFile.downloadedSize, file.size, true) : m27865j1(R.string.CloudDownload, C1363c0.m37423m(file.size));
+        return localFile.isDownloadingActive ? m27828t0(localFile.downloadedSize, file.size, true) : m27867j1(R.string.CloudDownload, C1363c0.m37426m(file.size));
     }
 
-    public static String m27821u1(int i, Object... objArr) {
-        if (m27949P1()) {
-            return m27865j1(i, objArr);
+    public static String m27823u1(int i, Object... objArr) {
+        if (m27951P1()) {
+            return m27867j1(i, objArr);
         }
-        return m27841p1(null, i, false, 0, null, objArr).toString();
+        return m27843p1(null, i, false, 0, null, objArr).toString();
     }
 
-    public static CharSequence m27820u2(long j, TimeUnit timeUnit, int i, int i2, int i3, int i4, int i5, int i6, Object... objArr) {
+    public static CharSequence m27822u2(long j, TimeUnit timeUnit, int i, int i2, int i3, int i4, int i5, int i6, Object... objArr) {
         long days = timeUnit.toDays(j);
         long j2 = days / 30;
         long j3 = days / 7;
@@ -4687,54 +4687,54 @@ public class C4403w {
         long minutes = timeUnit.toMinutes(j);
         long seconds = timeUnit.toSeconds(j);
         if (i6 != 0 && j2 > 0) {
-            return m27832r2(i6, j2, objArr);
+            return m27834r2(i6, j2, objArr);
         }
         if (i5 != 0 && j3 > 0) {
-            return m27832r2(i5, j3, objArr);
+            return m27834r2(i5, j3, objArr);
         }
         if (i4 != 0 && days > 0) {
-            return m27832r2(i4, days, objArr);
+            return m27834r2(i4, days, objArr);
         }
         if (i3 != 0 && hours > 0) {
-            return m27832r2(i3, hours, objArr);
+            return m27834r2(i3, hours, objArr);
         }
         if (i2 != 0 && minutes > 0) {
-            return m27832r2(i2, minutes, objArr);
+            return m27834r2(i2, minutes, objArr);
         }
         if (i != 0) {
-            return m27832r2(i, seconds, objArr);
+            return m27834r2(i, seconds, objArr);
         }
         throw new IllegalArgumentException();
     }
 
-    public static void m27819v(boolean z) {
-        m27972J2(!"1".equals(m27869i1(R.string.language_disable_lowercase)), z);
-        m27968K2(C4868i.m24726c2().m24812Q2(m27860k2(), m28006B0() == 1), z);
+    public static void m27821v(boolean z) {
+        m27974J2(!"1".equals(m27871i1(R.string.language_disable_lowercase)), z);
+        m27970K2(C4868i.m24727c2().m24813Q2(m27862k2(), m28008B0() == 1), z);
         Locale locale = null;
-        String i1 = m27869i1(R.string.language_dateFormatLocale);
-        if (!C5070i.m24061i(i1) && !"0".equals(i1)) {
+        String i1 = m27871i1(R.string.language_dateFormatLocale);
+        if (!C5070i.m24062i(i1) && !"0".equals(i1)) {
             try {
-                String w = m27815w(i1);
+                String w = m27817w(i1);
                 if (w.length() == i1.length()) {
                     locale = new Locale(w);
                 } else {
-                    locale = new Locale(w, m27815w(i1.substring(w.length() + 1)));
+                    locale = new Locale(w, m27817w(i1.substring(w.length() + 1)));
                 }
             } catch (Throwable unused) {
             }
         }
-        m27976I2(locale, z);
+        m27978I2(locale, z);
         f14580f = true;
     }
 
-    public static String m27818v0(int i) {
-        return m27814w0(i, 0, 0, false);
+    public static String m27820v0(int i) {
+        return m27816w0(i, 0, 0, false);
     }
 
-    public static TdApi.LanguagePackStringValueOrdinary m27817v1(String str, TdApi.LanguagePackInfo languagePackInfo) {
-        String b2 = m27860k2().equals(languagePackInfo.f25405id) ? m27899b2(languagePackInfo.f25405id, str) : null;
+    public static TdApi.LanguagePackStringValueOrdinary m27819v1(String str, TdApi.LanguagePackInfo languagePackInfo) {
+        String b2 = m27862k2().equals(languagePackInfo.f25408id) ? m27901b2(languagePackInfo.f25408id, str) : null;
         if (b2 != null) {
-            TdApi.LanguagePackStringValue i0 = m27870i0(b2);
+            TdApi.LanguagePackStringValue i0 = m27872i0(b2);
             if (i0 instanceof TdApi.LanguagePackStringValueOrdinary) {
                 return (TdApi.LanguagePackStringValueOrdinary) i0;
             }
@@ -4742,26 +4742,26 @@ public class C4403w {
                 return null;
             }
         }
-        TdApi.LanguagePackStringValueOrdinary E2 = m27992E2(str, languagePackInfo.f25405id);
-        if (E2 == null && !C5070i.m24061i(languagePackInfo.baseLanguagePackId)) {
-            E2 = m27992E2(str, languagePackInfo.baseLanguagePackId);
+        TdApi.LanguagePackStringValueOrdinary E2 = m27994E2(str, languagePackInfo.f25408id);
+        if (E2 == null && !C5070i.m24062i(languagePackInfo.baseLanguagePackId)) {
+            E2 = m27994E2(str, languagePackInfo.baseLanguagePackId);
         }
         if (b2 != null) {
-            m28004B2(b2, E2);
+            m28006B2(b2, E2);
         }
         return E2;
     }
 
-    public static CharSequence m27816v2(int i, long j, int i2, AbstractC4409f fVar, Object... objArr) {
+    public static CharSequence m27818v2(int i, long j, int i2, AbstractC4409f fVar, Object... objArr) {
         Object[] objArr2;
         AbstractC4409f fVar2;
         if (i != 0) {
-            TdApi.LanguagePackStringValuePluralized r1 = m27833r1(m27885e1(i), C4868i.m24726c2().m24751Z0());
+            TdApi.LanguagePackStringValuePluralized r1 = m27835r1(m27887e1(i), C4868i.m24727c2().m24752Z0());
             if (r1 != null) {
-                int t2 = m27824t2();
-                int j2 = m27864j2(t2, j);
-                String R0 = m27942R0(r1, j2);
-                if (!C5070i.m24061i(R0) || j2 == 5) {
+                int t2 = m27826t2();
+                int j2 = m27866j2(t2, j);
+                String R0 = m27944R0(r1, j2);
+                if (!C5070i.m24062i(R0) || j2 == 5) {
                     fVar2 = fVar;
                     objArr2 = objArr;
                 } else {
@@ -4771,29 +4771,29 @@ public class C4403w {
                     j2 = 5;
                 }
                 try {
-                    return m27935T(R0, fVar2, objArr2);
+                    return m27937T(R0, fVar2, objArr2);
                 } catch (Throwable unused) {
-                    m27903a3(true, t2, C4411y.m27781c(i, j2));
+                    m27905a3(true, t2, C4411y.m27783c(i, j2));
                 }
             }
-            int M = m27963M();
-            int z2 = m27800z2(M, i, j);
+            int M = m27965M();
+            int z2 = m27802z2(M, i, j);
             try {
-                return m27841p1(null, z2, false, i2, fVar, objArr);
+                return m27843p1(null, z2, false, i2, fVar, objArr);
             } catch (Throwable th) {
                 if (M != 25966) {
-                    m27903a3(false, M, z2);
-                    return m27841p1(null, m27800z2(25966, i, j), false, i2, fVar, objArr);
+                    m27905a3(false, M, z2);
+                    return m27843p1(null, m27802z2(25966, i, j), false, i2, fVar, objArr);
                 }
-                throw new IllegalStateException("Broken plural: " + m27885e1(i), th);
+                throw new IllegalStateException("Broken plural: " + m27887e1(i), th);
             }
         } else {
             throw new Resources.NotFoundException("resId == 0");
         }
     }
 
-    public static String m27815w(String str) {
-        if (C5070i.m24061i(str)) {
+    public static String m27817w(String str) {
+        if (C5070i.m24062i(str)) {
             return str;
         }
         if (str.charAt(0) == 'X') {
@@ -4810,160 +4810,160 @@ public class C4403w {
         return str.toLowerCase();
     }
 
-    public static String m27814w0(int i, int i2, int i3, boolean z) {
-        if (!m28008A2(i) || (i2 == 0 && i3 == 0)) {
+    public static String m27816w0(int i, int i2, int i3, boolean z) {
+        if (!m28010A2(i) || (i2 == 0 && i3 == 0)) {
             if (i < 60) {
-                return m27844o2(R.string.xSeconds, i);
+                return m27846o2(R.string.xSeconds, i);
             }
             int i4 = i / 60;
             if (i4 < 60) {
-                return m27844o2(R.string.xMinutes, i4);
+                return m27846o2(R.string.xMinutes, i4);
             }
             int i5 = i4 / 60;
             if (z) {
-                return C1363c0.m37433h(i);
+                return C1363c0.m37436h(i);
             }
             if (i5 < 24) {
-                return m27844o2(R.string.xHours, i5);
+                return m27846o2(R.string.xHours, i5);
             }
             int i6 = i5 / 24;
             if (i6 < 7) {
-                return m27844o2(R.string.xDays, i6);
+                return m27846o2(R.string.xDays, i6);
             }
             int i7 = i6 / 7;
             if (i7 < 4) {
-                return m27844o2(R.string.xWeeks, i7);
+                return m27846o2(R.string.xWeeks, i7);
             }
             int i8 = i6 / 30;
             if (i8 < 12) {
-                return m27844o2(R.string.xMonths, i8);
+                return m27846o2(R.string.xMonths, i8);
             }
-            return m27844o2(R.string.xYears, Math.max(1, i6 / 365));
+            return m27846o2(R.string.xYears, Math.max(1, i6 / 365));
         } else if (i3 != 0) {
-            return i2 != 0 ? m27865j1(i2, m27846o0(i3, TimeUnit.SECONDS)) : m27846o0(i3, TimeUnit.SECONDS);
+            return i2 != 0 ? m27867j1(i2, m27848o0(i3, TimeUnit.SECONDS)) : m27848o0(i3, TimeUnit.SECONDS);
         } else {
             if (i2 != 0) {
-                return m27869i1(i2);
+                return m27871i1(i2);
             }
             return null;
         }
     }
 
-    public static CharSequence m27813w1(int i, String str, Object... objArr) {
-        if (!C5070i.m24061i(str) && str.matches("^[A-Za-z0-9_]+$")) {
-            String str2 = m27885e1(i) + C5070i.m24073E(str.toLowerCase(), m28003C());
-            int s1 = m27829s1(str2);
+    public static CharSequence m27815w1(int i, String str, Object... objArr) {
+        if (!C5070i.m24062i(str) && str.matches("^[A-Za-z0-9_]+$")) {
+            String str2 = m27887e1(i) + C5070i.m24074E(str.toLowerCase(), m28005C());
+            int s1 = m27831s1(str2);
             if (s1 != 0) {
-                return m27853m1(s1, objArr);
+                return m27855m1(s1, objArr);
             }
-            String l0 = m27858l0(str2);
+            String l0 = m27860l0(str2);
             if (l0 != null) {
                 if (objArr == null || objArr.length <= 0) {
                     return l0;
                 }
                 try {
-                    return m27931U(l0, m27973J1(objArr), m27843p(), objArr);
+                    return m27933U(l0, m27975J1(objArr), m27845p(), objArr);
                 } catch (Throwable unused) {
-                    m27903a3(true, m27824t2(), i);
+                    m27905a3(true, m27826t2(), i);
                 }
             }
         }
         if (i != 0) {
-            return m27853m1(i, objArr);
+            return m27855m1(i, objArr);
         }
         return null;
     }
 
-    public static CharSequence m27812w2(int i, int i2, boolean z) {
+    public static CharSequence m27814w2(int i, int i2, boolean z) {
         int i3 = R.string.xSubscribers;
         if (i2 > 0) {
             if (!z) {
                 i3 = R.string.xMembers;
             }
-            return m27862k0(R.string.format_membersAndOnline, m27848n2(i3, i, m27843p(), new Object[0]), m27848n2(R.string.xOnline, i2, m27843p(), new Object[0]));
+            return m27864k0(R.string.format_membersAndOnline, m27850n2(i3, i, m27845p(), new Object[0]), m27850n2(R.string.xOnline, i2, m27845p(), new Object[0]));
         }
         if (!z) {
             i3 = R.string.xMembers;
         }
-        return m27848n2(i3, i, m27843p(), new Object[0]);
+        return m27850n2(i3, i, m27845p(), new Object[0]);
     }
 
-    public static void m27811x() {
-        m27835r().clear();
+    public static void m27813x() {
+        m27837r().clear();
     }
 
-    public static String m27810x0(int i) {
-        return m27814w0(i, 0, 0, true);
+    public static String m27812x0(int i) {
+        return m27816w0(i, 0, 0, true);
     }
 
-    public static String m27809x1() {
-        return m27869i1(R.string.format_thousandsSeparator);
+    public static String m27811x1() {
+        return m27871i1(R.string.format_thousandsSeparator);
     }
 
-    public static String m27808x2(List<String> list, int i) {
-        String join = TextUtils.join(m27854m0(), list);
-        return i == 0 ? join : m27865j1(R.string.format_peopleNamesAndOthers, join, m27844o2(R.string.xOtherPeopleNames, i));
+    public static String m27810x2(List<String> list, int i) {
+        String join = TextUtils.join(m27856m0(), list);
+        return i == 0 ? join : m27867j1(R.string.format_peopleNamesAndOthers, join, m27846o2(R.string.xOtherPeopleNames, i));
     }
 
-    public static AbstractC4409f m27807y() {
+    public static AbstractC4409f m27809y() {
         return C4398r.f14569a;
     }
 
-    public static String m27806y0(String str) {
+    public static String m27808y0(String str) {
         String str2 = "error_" + str;
-        int s1 = m27829s1(str2);
+        int s1 = m27831s1(str2);
         if (s1 != 0) {
-            return m27869i1(s1);
+            return m27871i1(s1);
         }
-        String l0 = m27858l0(str2);
+        String l0 = m27860l0(str2);
         if (l0 != null) {
             return l0;
         }
         return null;
     }
 
-    public static String m27805y1(long j, TimeUnit timeUnit) {
+    public static String m27807y1(long j, TimeUnit timeUnit) {
         long millis = timeUnit.toMillis(j);
-        if (!C4868i.m24726c2().m24744a0()) {
-            return m27948P2(millis, 3, 3, C1379j0.m37344X() ? "dd.MM.yyyy h:mm a" : "dd.MM.yyyy H:mm");
+        if (!C4868i.m24727c2().m24745a0()) {
+            return m27950P2(millis, 3, 3, C1379j0.m37347X() ? "dd.MM.yyyy h:mm a" : "dd.MM.yyyy H:mm");
         }
-        Calendar a = C5067f.m24119a(millis);
-        return m27865j1(R.string.format_timestamp, Integer.valueOf(a.get(5)), Integer.valueOf(a.get(2) + 1), Integer.valueOf(a.get(1) % 100), m27928U2(a));
+        Calendar a = C5067f.m24120a(millis);
+        return m27867j1(R.string.format_timestamp, Integer.valueOf(a.get(5)), Integer.valueOf(a.get(2) + 1), Integer.valueOf(a.get(1) % 100), m27930U2(a));
     }
 
-    public static CharSequence m27804y2(int i, int i2) {
+    public static CharSequence m27806y2(int i, int i2) {
         if (i > 0 && i2 > 0) {
-            return m27862k0(R.string.format_photosAndVideos, m27836q2(R.string.xPhotos, i), m27836q2(R.string.xVideos, i2));
+            return m27864k0(R.string.format_photosAndVideos, m27838q2(R.string.xPhotos, i), m27838q2(R.string.xVideos, i2));
         }
         if (i2 > 0) {
-            return m27836q2(R.string.xVideos, i2);
+            return m27838q2(R.string.xVideos, i2);
         }
         if (i > 0) {
-            return m27836q2(R.string.xPhotos, i);
+            return m27838q2(R.string.xPhotos, i);
         }
-        return m27869i1(R.string.NoMediaYet);
+        return m27871i1(R.string.NoMediaYet);
     }
 
-    public static CharSequence m27803z(CharSequence charSequence) {
-        return m27888d3(charSequence, m27807y());
+    public static CharSequence m27805z(CharSequence charSequence) {
+        return m27890d3(charSequence, m27809y());
     }
 
-    public static String m27802z0(long j, TimeUnit timeUnit, long j2) {
-        return j <= 0 ? C1363c0.m37423m(j2) : m27865j1(R.string.format_fileSizeAndModifiedDate, C1363c0.m37423m(j2), m27910Z0(j, timeUnit));
+    public static String m27804z0(long j, TimeUnit timeUnit, long j2) {
+        return j <= 0 ? C1363c0.m37426m(j2) : m27867j1(R.string.format_fileSizeAndModifiedDate, C1363c0.m37426m(j2), m27912Z0(j, timeUnit));
     }
 
-    public static String m27801z1(int i) {
+    public static String m27803z1(int i) {
         if (i < 120) {
-            return m27844o2(R.string.TryAgainSeconds, i);
+            return m27846o2(R.string.TryAgainSeconds, i);
         }
         int i2 = i / 60;
         if (i2 < 60) {
-            return m27844o2(R.string.TryAgainMinutes, i2);
+            return m27846o2(R.string.TryAgainMinutes, i2);
         }
-        return m27844o2(R.string.TryAgainHours, i2 / 60);
+        return m27846o2(R.string.TryAgainHours, i2 / 60);
     }
 
-    public static int m27800z2(int i, int i2, long j) {
-        return C4411y.m27781c(i2, m27864j2(i, j));
+    public static int m27802z2(int i, int i2, long j) {
+        return C4411y.m27783c(i2, m27866j2(i, j));
     }
 }

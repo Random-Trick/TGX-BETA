@@ -15,29 +15,29 @@ public class C4324d {
     public static C4324d f14393b = new C4324d();
 
     @RecentlyNonNull
-    public static C4324d m28272b() {
+    public static C4324d m28274b() {
         return f14393b;
     }
 
     @androidx.annotation.RecentlyNonNull
-    public p272t5.AbstractC8983b m28273a(@androidx.annotation.RecentlyNonNull p063e8.C4164a r4) {
-        throw new UnsupportedOperationException("Method not decompiled: p077f8.C4324d.m28273a(e8.a):t5.b");
+    public p272t5.AbstractC8983b m28275a(@androidx.annotation.RecentlyNonNull p063e8.C4164a r4) {
+        throw new UnsupportedOperationException("Method not decompiled: p077f8.C4324d.m28275a(e8.a):t5.b");
     }
 
     @TargetApi(19)
-    public int m28271c(@RecentlyNonNull C4164a aVar) {
-        if (aVar.m28641e() == -1) {
+    public int m28273c(@RecentlyNonNull C4164a aVar) {
+        if (aVar.m28643e() == -1) {
             if (Build.VERSION.SDK_INT >= 19) {
-                return ((Bitmap) C6378r.m20506k(aVar.m28643c())).getAllocationByteCount();
+                return ((Bitmap) C6378r.m20507k(aVar.m28645c())).getAllocationByteCount();
             }
-            return ((Bitmap) C6378r.m20506k(aVar.m28643c())).getByteCount();
-        } else if (aVar.m28641e() == 17 || aVar.m28641e() == 842094169) {
-            return ((ByteBuffer) C6378r.m20506k(aVar.m28642d())).limit();
+            return ((Bitmap) C6378r.m20507k(aVar.m28645c())).getByteCount();
+        } else if (aVar.m28643e() == 17 || aVar.m28643e() == 842094169) {
+            return ((ByteBuffer) C6378r.m20507k(aVar.m28644d())).limit();
         } else {
-            if (aVar.m28641e() != 35) {
+            if (aVar.m28643e() != 35) {
                 return 0;
             }
-            return (((Image.Plane[]) C6378r.m20506k(aVar.m28638h()))[0].getBuffer().limit() * 3) / 2;
+            return (((Image.Plane[]) C6378r.m20507k(aVar.m28640h()))[0].getBuffer().limit() * 3) / 2;
         }
     }
 }

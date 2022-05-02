@@ -10,14 +10,14 @@ import android.net.Uri;
 import android.os.Build;
 
 public final class C10149w {
-    public static final Uri f32848a = Uri.parse("http://play.google.com/store/apps/details");
-    public static final String[] f32849b = {"com.google.android.youtube", "com.google.android.youtube.tv", "com.google.android.youtube.googletv", "com.google.android.gms", null};
+    public static final Uri f32851a = Uri.parse("http://play.google.com/store/apps/details");
+    public static final String[] f32852b = {"com.google.android.youtube", "com.google.android.youtube.tv", "com.google.android.youtube.googletv", "com.google.android.gms", null};
 
     public static String m5896a(Context context) {
         ServiceInfo serviceInfo;
         String str;
         PackageManager packageManager = context.getPackageManager();
-        for (String str2 : f32849b) {
+        for (String str2 : f32852b) {
             ResolveInfo resolveService = packageManager.resolveService(new Intent("com.google.android.youtube.api.service.START").setPackage(str2), 0);
             if (!(resolveService == null || (serviceInfo = resolveService.serviceInfo) == null || (str = serviceInfo.packageName) == null)) {
                 return str;

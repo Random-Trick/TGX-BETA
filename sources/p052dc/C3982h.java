@@ -14,7 +14,7 @@ public final class C3982h {
         public C3983a() {
         }
 
-        public final C3982h m29425a() {
+        public final C3982h m29427a() {
             Method method;
             Method method2;
             Method method3 = null;
@@ -42,14 +42,14 @@ public final class C3982h {
         this.f13361c = method3;
     }
 
-    public final Object m29427a(String str) {
-        C8298k.m12934e(str, "closer");
+    public final Object m29429a(String str) {
+        C8298k.m12933e(str, "closer");
         Method method = this.f13359a;
         if (method != null) {
             try {
                 Object invoke = method.invoke(null, new Object[0]);
                 Method method2 = this.f13360b;
-                C8298k.m12936c(method2);
+                C8298k.m12935c(method2);
                 method2.invoke(invoke, str);
                 return invoke;
             } catch (Exception unused) {
@@ -58,13 +58,13 @@ public final class C3982h {
         return null;
     }
 
-    public final boolean m29426b(Object obj) {
+    public final boolean m29428b(Object obj) {
         if (obj == null) {
             return false;
         }
         try {
             Method method = this.f13361c;
-            C8298k.m12936c(method);
+            C8298k.m12935c(method);
             method.invoke(obj, new Object[0]);
             return true;
         } catch (Exception unused) {

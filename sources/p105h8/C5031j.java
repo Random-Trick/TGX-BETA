@@ -23,15 +23,15 @@ public final class C5031j {
         this.f16997i = f9;
     }
 
-    public static C5031j m24248b(float f, float f2, float f3, float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11, float f12, float f13, float f14, float f15, float f16) {
-        return m24246d(f9, f10, f11, f12, f13, f14, f15, f16).m24245e(m24247c(f, f2, f3, f4, f5, f6, f7, f8));
+    public static C5031j m24249b(float f, float f2, float f3, float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11, float f12, float f13, float f14, float f15, float f16) {
+        return m24247d(f9, f10, f11, f12, f13, f14, f15, f16).m24246e(m24248c(f, f2, f3, f4, f5, f6, f7, f8));
     }
 
-    public static C5031j m24247c(float f, float f2, float f3, float f4, float f5, float f6, float f7, float f8) {
-        return m24246d(f, f2, f3, f4, f5, f6, f7, f8).m24249a();
+    public static C5031j m24248c(float f, float f2, float f3, float f4, float f5, float f6, float f7, float f8) {
+        return m24247d(f, f2, f3, f4, f5, f6, f7, f8).m24250a();
     }
 
-    public static C5031j m24246d(float f, float f2, float f3, float f4, float f5, float f6, float f7, float f8) {
+    public static C5031j m24247d(float f, float f2, float f3, float f4, float f5, float f6, float f7, float f8) {
         float f9 = ((f - f3) + f5) - f7;
         float f10 = ((f2 - f4) + f6) - f8;
         if (f9 == 0.0f && f10 == 0.0f) {
@@ -47,7 +47,7 @@ public final class C5031j {
         return new C5031j((f16 * f3) + (f3 - f), (f17 * f7) + (f7 - f), f, (f4 - f2) + (f16 * f4), (f8 - f2) + (f17 * f8), f2, f16, f17, 1.0f);
     }
 
-    public C5031j m24249a() {
+    public C5031j m24250a() {
         float f = this.f16993e;
         float f2 = this.f16997i;
         float f3 = this.f16994f;
@@ -64,7 +64,7 @@ public final class C5031j {
         return new C5031j(f5, f8, f9, f12, (f2 * f13) - (f10 * f6), (f6 * f11) - (f4 * f13), (f11 * f3) - (f10 * f), (f10 * f7) - (f3 * f13), (f13 * f) - (f11 * f7));
     }
 
-    public C5031j m24245e(C5031j jVar) {
+    public C5031j m24246e(C5031j jVar) {
         float f = this.f16989a;
         float f2 = jVar.f16989a;
         float f3 = this.f16992d;
@@ -91,7 +91,7 @@ public final class C5031j {
         return new C5031j(f7, f11, f15, (f16 * f2) + (f17 * f4) + (f18 * f6), (f16 * f8) + (f17 * f9) + (f18 * f10), f19, (f6 * f23) + f22, (f8 * f20) + (f9 * f21) + (f10 * f23), (f20 * f12) + (f21 * f13) + (f23 * f14));
     }
 
-    public void m24244f(float[] fArr) {
+    public void m24245f(float[] fArr) {
         float f = this.f16989a;
         float f2 = this.f16990b;
         float f3 = this.f16991c;

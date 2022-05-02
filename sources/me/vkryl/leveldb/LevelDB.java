@@ -22,31 +22,31 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public final class LevelDB implements SharedPreferences, SharedPreferences.Editor {
-    public final String f22370a;
-    public long f22371b;
-    public final long f22372c;
-    public volatile boolean f22373d;
-    public boolean f22374e;
-    public final Object f22376g;
-    public final Semaphore f22377h;
-    public final ConditionVariable f22378i;
-    public AbstractC7053b f22379j;
-    public final AtomicBoolean f22375f = new AtomicBoolean(false);
-    public final List<C7052a> f22380k = new ArrayList();
+    public final String f22373a;
+    public long f22374b;
+    public final long f22375c;
+    public volatile boolean f22376d;
+    public boolean f22377e;
+    public final Object f22379g;
+    public final Semaphore f22380h;
+    public final ConditionVariable f22381i;
+    public AbstractC7053b f22382j;
+    public final AtomicBoolean f22378f = new AtomicBoolean(false);
+    public final List<C7052a> f22383k = new ArrayList();
 
     public final class C7052a {
-        public long f22381a;
-        public String f22382b;
+        public long f22384a;
+        public String f22385b;
 
         public C7052a(long j) {
-            synchronized (LevelDB.this.f22380k) {
-                this.f22381a = j;
-                LevelDB.this.f22380k.add(this);
+            synchronized (LevelDB.this.f22383k) {
+                this.f22384a = j;
+                LevelDB.this.f22383k.add(this);
             }
         }
 
         public boolean m17951d() {
-            long j = this.f22381a;
+            long j = this.f22384a;
             if (j != 0) {
                 return NativeBridge.dbAsBoolean(j);
             }
@@ -54,7 +54,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
 
         public byte[] m17950e() {
-            long j = this.f22381a;
+            long j = this.f22384a;
             if (j != 0) {
                 return NativeBridge.dbAsByteArray(j);
             }
@@ -62,7 +62,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
 
         public double m17949f() {
-            long j = this.f22381a;
+            long j = this.f22384a;
             if (j != 0) {
                 return NativeBridge.dbAsDouble(j);
             }
@@ -78,7 +78,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
 
         public float m17948g() {
-            long j = this.f22381a;
+            long j = this.f22384a;
             if (j != 0) {
                 return NativeBridge.dbAsFloat(j);
             }
@@ -86,7 +86,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
 
         public int m17947h() {
-            long j = this.f22381a;
+            long j = this.f22384a;
             if (j != 0) {
                 return NativeBridge.dbAsInt(j);
             }
@@ -94,7 +94,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
 
         public long m17946i() {
-            long j = this.f22381a;
+            long j = this.f22384a;
             if (j != 0) {
                 return NativeBridge.dbAsLong(j);
             }
@@ -102,7 +102,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
 
         public long[] m17945j() {
-            long j = this.f22381a;
+            long j = this.f22384a;
             if (j != 0) {
                 return NativeBridge.dbAsLongArray(j);
             }
@@ -110,7 +110,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
 
         public String m17944k() {
-            long j = this.f22381a;
+            long j = this.f22384a;
             if (j != 0) {
                 return NativeBridge.dbAsString(j);
             }
@@ -118,34 +118,34 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
 
         public String m17943l() {
-            long j = this.f22381a;
+            long j = this.f22384a;
             if (j != 0) {
-                String str = this.f22382b;
+                String str = this.f22385b;
                 if (str != null) {
                     return str;
                 }
                 String dbNextKey = NativeBridge.dbNextKey(j);
-                this.f22382b = dbNextKey;
+                this.f22385b = dbNextKey;
                 return dbNextKey;
             }
             throw new IllegalStateException();
         }
 
         public void m17942m() {
-            synchronized (LevelDB.this.f22380k) {
-                long j = this.f22381a;
+            synchronized (LevelDB.this.f22383k) {
+                long j = this.f22384a;
                 if (j != 0) {
                     NativeBridge.dbFindFinish(j);
-                    this.f22381a = 0L;
-                    LevelDB.this.f22380k.remove(this);
+                    this.f22384a = 0L;
+                    LevelDB.this.f22383k.remove(this);
                 }
             }
         }
 
         public final void m17941n(long j) {
-            if (this.f22381a == j) {
-                this.f22381a = j;
-                this.f22382b = null;
+            if (this.f22384a == j) {
+                this.f22384a = j;
+                this.f22385b = null;
                 return;
             }
             throw new AssertionError();
@@ -159,47 +159,47 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public final class C7054c implements Iterator<C7052a>, Iterable<C7052a> {
-        public final String f22385a;
-        public C7052a f22386b;
-        public boolean f22387c;
+        public final String f22388a;
+        public C7052a f22389b;
+        public boolean f22390c;
 
         public C7054c(String str) {
-            this.f22385a = str;
+            this.f22388a = str;
         }
 
         public C7052a next() {
-            return this.f22386b;
+            return this.f22389b;
         }
 
         @Override
         public boolean hasNext() {
-            if (this.f22387c) {
+            if (this.f22390c) {
                 return false;
             }
-            if (LevelDB.this.f22373d) {
-                C7052a aVar = this.f22386b;
+            if (LevelDB.this.f22376d) {
+                C7052a aVar = this.f22389b;
                 if (aVar != null) {
                     aVar.m17942m();
                 }
                 throw new AssertionError();
             }
-            C7052a aVar2 = this.f22386b;
+            C7052a aVar2 = this.f22389b;
             if (aVar2 == null) {
-                long dbFind = NativeBridge.dbFind(LevelDB.this.m18002B(), this.f22385a, 0L);
+                long dbFind = NativeBridge.dbFind(LevelDB.this.m18002B(), this.f22388a, 0L);
                 if (dbFind == 0) {
-                    this.f22387c = true;
+                    this.f22390c = true;
                     return false;
                 }
-                this.f22386b = new C7052a(dbFind);
+                this.f22389b = new C7052a(dbFind);
             } else {
-                long dbFind2 = aVar2.f22381a != 0 ? NativeBridge.dbFind(LevelDB.this.m18002B(), null, this.f22386b.f22381a) : 0L;
+                long dbFind2 = aVar2.f22384a != 0 ? NativeBridge.dbFind(LevelDB.this.m18002B(), null, this.f22389b.f22384a) : 0L;
                 if (dbFind2 == 0) {
-                    this.f22386b.f22381a = 0L;
-                    this.f22386b = null;
-                    this.f22387c = true;
+                    this.f22389b.f22384a = 0L;
+                    this.f22389b = null;
+                    this.f22390c = true;
                     return false;
                 }
-                this.f22386b.m17941n(dbFind2);
+                this.f22389b.m17941n(dbFind2);
             }
             return true;
         }
@@ -211,15 +211,15 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public LevelDB(String str, boolean z, AbstractC7053b bVar) {
-        this.f22370a = str;
-        this.f22379j = bVar;
+        this.f22373a = str;
+        this.f22382j = bVar;
         m18003A();
         long dbBatchCreate = NativeBridge.dbBatchCreate();
-        this.f22372c = dbBatchCreate;
+        this.f22375c = dbBatchCreate;
         if (dbBatchCreate != 0) {
-            this.f22376g = new Object();
-            this.f22378i = new ConditionVariable(true);
-            this.f22377h = z ? new Semaphore(1) : null;
+            this.f22379g = new Object();
+            this.f22381i = new ConditionVariable(true);
+            this.f22380h = z ? new Semaphore(1) : null;
             return;
         }
         throw new AssertionError("batchPtr == 0");
@@ -243,11 +243,11 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public final void m18003A() {
-        if (this.f22373d) {
+        if (this.f22376d) {
             throw new IllegalStateException();
-        } else if (this.f22371b == 0) {
-            long dbOpen = NativeBridge.dbOpen(this, this.f22370a);
-            this.f22371b = dbOpen;
+        } else if (this.f22374b == 0) {
+            long dbOpen = NativeBridge.dbOpen(this, this.f22373a);
+            this.f22374b = dbOpen;
             if (dbOpen == 0) {
                 throw new AssertionError("ptr == 0");
             }
@@ -257,17 +257,17 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public final long m18002B() {
-        ConditionVariable conditionVariable = this.f22378i;
+        ConditionVariable conditionVariable = this.f22381i;
         if (conditionVariable != null) {
             conditionVariable.block();
         }
-        return this.f22371b;
+        return this.f22374b;
     }
 
     public SharedPreferences.Editor m18001C(String str, byte b) {
-        synchronized (this.f22376g) {
-            if (this.f22374e) {
-                NativeBridge.dbPutByte(this.f22372c, true, str, b);
+        synchronized (this.f22379g) {
+            if (this.f22377e) {
+                NativeBridge.dbPutByte(this.f22375c, true, str, b);
                 return this;
             }
             NativeBridge.dbPutByte(m18002B(), false, str, b);
@@ -278,10 +278,10 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     public SharedPreferences.Editor m18000D(String str, byte[] bArr) {
         if (bArr == null) {
             throw new IllegalArgumentException();
-        } else if (!this.f22373d) {
-            synchronized (this.f22376g) {
-                if (this.f22374e) {
-                    NativeBridge.dbPutByteArray(this.f22372c, true, str, bArr);
+        } else if (!this.f22376d) {
+            synchronized (this.f22379g) {
+                if (this.f22377e) {
+                    NativeBridge.dbPutByteArray(this.f22375c, true, str, bArr);
                     return this;
                 }
                 NativeBridge.dbPutByteArray(m18002B(), false, str, bArr);
@@ -293,10 +293,10 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public SharedPreferences.Editor m17999E(String str, double d) {
-        if (!this.f22373d) {
-            synchronized (this.f22376g) {
-                if (this.f22374e) {
-                    NativeBridge.dbPutDouble(this.f22372c, true, str, d);
+        if (!this.f22376d) {
+            synchronized (this.f22379g) {
+                if (this.f22377e) {
+                    NativeBridge.dbPutDouble(this.f22375c, true, str, d);
                     return this;
                 }
                 NativeBridge.dbPutDouble(m18002B(), false, str, d);
@@ -309,14 +309,14 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     public SharedPreferences.Editor m17998F(String str, double[] dArr) {
         if (dArr == null) {
             throw new IllegalArgumentException();
-        } else if (!this.f22373d) {
-            synchronized (this.f22376g) {
-                boolean z = this.f22374e;
+        } else if (!this.f22376d) {
+            synchronized (this.f22379g) {
+                boolean z = this.f22377e;
                 if (z) {
-                    NativeBridge.dbPutDoubleArray(this.f22372c, z, str, dArr);
+                    NativeBridge.dbPutDoubleArray(this.f22375c, z, str, dArr);
                     return this;
                 }
-                NativeBridge.dbPutDoubleArray(m18002B(), this.f22374e, str, dArr);
+                NativeBridge.dbPutDoubleArray(m18002B(), this.f22377e, str, dArr);
                 return this;
             }
         } else {
@@ -327,10 +327,10 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     public SharedPreferences.Editor m17997G(String str, float[] fArr) {
         if (fArr == null) {
             throw new IllegalArgumentException();
-        } else if (!this.f22373d) {
-            synchronized (this.f22376g) {
-                if (this.f22374e) {
-                    NativeBridge.dbPutFloatArray(this.f22372c, true, str, fArr);
+        } else if (!this.f22376d) {
+            synchronized (this.f22379g) {
+                if (this.f22377e) {
+                    NativeBridge.dbPutFloatArray(this.f22375c, true, str, fArr);
                     return this;
                 }
                 NativeBridge.dbPutFloatArray(m18002B(), false, str, fArr);
@@ -344,10 +344,10 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     public SharedPreferences.Editor m17996H(String str, int[] iArr) {
         if (iArr == null) {
             throw new IllegalArgumentException();
-        } else if (!this.f22373d) {
-            synchronized (this.f22376g) {
-                if (this.f22374e) {
-                    NativeBridge.dbPutIntArray(this.f22372c, true, str, iArr);
+        } else if (!this.f22376d) {
+            synchronized (this.f22379g) {
+                if (this.f22377e) {
+                    NativeBridge.dbPutIntArray(this.f22375c, true, str, iArr);
                     return this;
                 }
                 NativeBridge.dbPutIntArray(m18002B(), false, str, iArr);
@@ -361,10 +361,10 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     public SharedPreferences.Editor m17995I(String str, long[] jArr) {
         if (jArr == null) {
             throw new IllegalArgumentException();
-        } else if (!this.f22373d) {
-            synchronized (this.f22376g) {
-                if (this.f22374e) {
-                    NativeBridge.dbPutLongArray(this.f22372c, true, str, jArr);
+        } else if (!this.f22376d) {
+            synchronized (this.f22379g) {
+                if (this.f22377e) {
+                    NativeBridge.dbPutLongArray(this.f22375c, true, str, jArr);
                     return this;
                 }
                 NativeBridge.dbPutLongArray(m18002B(), false, str, jArr);
@@ -378,10 +378,10 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     public SharedPreferences.Editor m17994J(String str, String[] strArr) {
         if (strArr == null) {
             throw new IllegalArgumentException();
-        } else if (!this.f22373d) {
-            synchronized (this.f22376g) {
-                if (this.f22374e) {
-                    NativeBridge.dbPutStringArray(this.f22372c, true, str, strArr);
+        } else if (!this.f22376d) {
+            synchronized (this.f22379g) {
+                if (this.f22377e) {
+                    NativeBridge.dbPutStringArray(this.f22375c, true, str, strArr);
                     return this;
                 }
                 NativeBridge.dbPutStringArray(m18002B(), false, str, strArr);
@@ -393,10 +393,10 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public SharedPreferences.Editor m17993K(String str) {
-        if (!this.f22373d) {
-            synchronized (this.f22376g) {
-                if (this.f22374e) {
-                    NativeBridge.dbPutVoid(this.f22372c, true, str);
+        if (!this.f22376d) {
+            synchronized (this.f22379g) {
+                if (this.f22377e) {
+                    NativeBridge.dbPutVoid(this.f22375c, true, str);
                     return this;
                 }
                 NativeBridge.dbPutVoid(m18002B(), false, str);
@@ -424,10 +424,10 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         } else if (strArr.length == 1) {
             return m17990N(strArr[0]);
         } else {
-            if (!this.f22373d) {
-                synchronized (this.f22376g) {
-                    if (this.f22374e) {
-                        return NativeBridge.dbRemoveByAnyPrefix(m18002B(), this.f22372c, strArr);
+            if (!this.f22376d) {
+                synchronized (this.f22379g) {
+                    if (this.f22377e) {
+                        return NativeBridge.dbRemoveByAnyPrefix(m18002B(), this.f22375c, strArr);
                     }
                     return NativeBridge.dbRemoveByAnyPrefix(m18002B(), 0L, strArr);
                 }
@@ -437,14 +437,14 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public int m17990N(String str) {
-        if (this.f22373d) {
+        if (this.f22376d) {
             throw new IllegalStateException();
         } else if (str == null || str.isEmpty()) {
             throw new IllegalArgumentException();
         } else {
-            synchronized (this.f22376g) {
-                if (this.f22374e) {
-                    return NativeBridge.dbRemoveByPrefix(m18002B(), this.f22372c, str);
+            synchronized (this.f22379g) {
+                if (this.f22377e) {
+                    return NativeBridge.dbRemoveByPrefix(m18002B(), this.f22375c, str);
                 }
                 return NativeBridge.dbRemoveByPrefix(m18002B(), 0L, str);
             }
@@ -459,20 +459,20 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         if (message == null || message.isEmpty()) {
             return false;
         }
-        if ((!message.contains("Corruption: not an sstable (bad magic number)") && !message.contains(".ldb: No such file or directory")) || this.f22375f.getAndSet(true)) {
+        if ((!message.contains("Corruption: not an sstable (bad magic number)") && !message.contains(".ldb: No such file or directory")) || this.f22378f.getAndSet(true)) {
             return false;
         }
-        if (!this.f22373d) {
-            this.f22378i.close();
+        if (!this.f22376d) {
+            this.f22381i.close();
             m17976e();
-            NativeBridge.dbClose(this.f22371b);
-            this.f22371b = 0L;
+            NativeBridge.dbClose(this.f22374b);
+            this.f22374b = 0L;
             long uptimeMillis = SystemClock.uptimeMillis();
             Locale locale = Locale.US;
-            m17956y(String.format(locale, "Repairing database, because of corruption, path: %s", this.f22370a), th);
-            NativeBridge.dbRepair(this, this.f22370a);
+            m17956y(String.format(locale, "Repairing database, because of corruption, path: %s", this.f22373a), th);
+            NativeBridge.dbRepair(this, this.f22373a);
             m18003A();
-            this.f22378i.open();
+            this.f22381i.open();
             m17956y(String.format(locale, "Repairing database finished successfully in %dms", Long.valueOf(SystemClock.uptimeMillis() - uptimeMillis)), null);
             return true;
         }
@@ -480,20 +480,20 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public final boolean m17988P() {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             Throwable th = null;
-            synchronized (this.f22376g) {
-                if (!this.f22374e) {
+            synchronized (this.f22379g) {
+                if (!this.f22377e) {
                     return true;
                 }
                 try {
-                    NativeBridge.dbBatchPerform(this.f22372c, m18002B());
-                    this.f22374e = false;
+                    NativeBridge.dbBatchPerform(this.f22375c, m18002B());
+                    this.f22377e = false;
                 } catch (Throwable th2) {
                     th = th2;
                 }
                 if (th == null) {
-                    Semaphore semaphore = this.f22377h;
+                    Semaphore semaphore = this.f22380h;
                     if (semaphore != null) {
                         semaphore.release();
                     }
@@ -511,7 +511,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public boolean m17987Q(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetBoolean(m18002B(), str, false, true);
             } catch (FileNotFoundException e) {
@@ -531,7 +531,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public byte m17986R(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetByte(m18002B(), str, (byte) 0, true);
             } catch (FileNotFoundException e) {
@@ -551,7 +551,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public double m17985S(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetDouble(m18002B(), str, 0.0d, true);
             } catch (FileNotFoundException e) {
@@ -571,7 +571,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public float m17984T(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetFloat(m18002B(), str, 0.0f, true);
             } catch (FileNotFoundException e) {
@@ -591,7 +591,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public int m17983U(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetInt(m18002B(), str, 0, true);
             } catch (FileNotFoundException e) {
@@ -611,7 +611,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public long m17982V(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetLong(m18002B(), str, 0L, true);
             } catch (FileNotFoundException e) {
@@ -631,7 +631,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public String m17981W(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetString(m18002B(), str, null, true);
             } catch (FileNotFoundException e) {
@@ -657,10 +657,10 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Override
     public SharedPreferences.Editor clear() {
-        if (!this.f22373d) {
-            synchronized (this.f22376g) {
-                if (this.f22374e) {
-                    NativeBridge.dbBatchClear(this.f22372c, m18002B());
+        if (!this.f22376d) {
+            synchronized (this.f22379g) {
+                if (this.f22377e) {
+                    NativeBridge.dbBatchClear(this.f22375c, m18002B());
                     return this;
                 }
                 NativeBridge.dbClear(m18002B());
@@ -677,15 +677,15 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Override
     public boolean contains(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             return NativeBridge.dbContains(m18002B(), str);
         }
         throw new IllegalStateException();
     }
 
     public void m17977d() {
-        if (!this.f22373d) {
-            long j = this.f22372c;
+        if (!this.f22376d) {
+            long j = this.f22375c;
             if (j != 0) {
                 NativeBridge.dbBatchDestroy(j);
             }
@@ -694,18 +694,18 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
             if (B != 0) {
                 NativeBridge.dbClose(B);
             }
-            this.f22373d = true;
+            this.f22376d = true;
         }
     }
 
     public final void m17976e() {
-        for (int size = this.f22380k.size() - 1; size >= 0; size--) {
-            this.f22380k.get(size).m17942m();
+        for (int size = this.f22383k.size() - 1; size >= 0; size--) {
+            this.f22383k.get(size).m17942m();
         }
     }
 
     public LevelDB edit() {
-        Semaphore semaphore = this.f22377h;
+        Semaphore semaphore = this.f22380h;
         if (semaphore != null) {
             try {
                 semaphore.acquire();
@@ -713,9 +713,9 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
                 throw new RuntimeException(e);
             }
         }
-        synchronized (this.f22376g) {
-            if (!this.f22374e) {
-                this.f22374e = true;
+        synchronized (this.f22379g) {
+            if (!this.f22377e) {
+                this.f22377e = true;
             } else {
                 throw new AssertionError();
             }
@@ -732,7 +732,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public Iterable<C7052a> m17974g(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             return new C7054c(str);
         }
         throw new IllegalStateException();
@@ -745,7 +745,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Override
     public boolean getBoolean(String str, boolean z) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetBoolean(m18002B(), str, z, false);
             } catch (FileNotFoundException unused) {
@@ -766,7 +766,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Override
     public float getFloat(String str, float f) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetFloat(m18002B(), str, f, false);
             } catch (FileNotFoundException unused) {
@@ -787,7 +787,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Override
     public int getInt(String str, int i) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetInt(m18002B(), str, i, false);
             } catch (FileNotFoundException unused) {
@@ -808,7 +808,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Override
     public long getLong(String str, long j) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetLong(m18002B(), str, j, false);
             } catch (FileNotFoundException unused) {
@@ -829,7 +829,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Override
     public String getString(String str, String str2) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetString(m18002B(), str, str2, false);
             } catch (FileNotFoundException unused) {
@@ -852,7 +852,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     public Set<String> getStringSet(String str, Set<String> set) {
         if (set != null) {
             throw new UnsupportedOperationException();
-        } else if (!this.f22373d) {
+        } else if (!this.f22376d) {
             String[] v = m17959v(str);
             if (v == null) {
                 return null;
@@ -874,14 +874,14 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public byte[][] m17973h(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             return NativeBridge.dbFindAll(m18002B(), str);
         }
         throw new IllegalStateException();
     }
 
     public String m17972i(String str, byte[] bArr) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             return NativeBridge.dbFindByValue(m18002B(), str, bArr);
         }
         throw new IllegalStateException();
@@ -899,20 +899,20 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public void m17970k() {
-        if (!this.f22373d) {
-            this.f22378i.close();
+        if (!this.f22376d) {
+            this.f22381i.close();
             m17976e();
-            NativeBridge.dbClose(this.f22371b);
-            this.f22371b = 0L;
+            NativeBridge.dbClose(this.f22374b);
+            this.f22374b = 0L;
             m18003A();
-            this.f22378i.open();
+            this.f22381i.open();
             return;
         }
         throw new IllegalStateException();
     }
 
     public byte m17969l(String str, byte b) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetByte(m18002B(), str, b, false);
             } catch (FileNotFoundException unused) {
@@ -932,7 +932,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public byte[] m17968m(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetByteArray(m18002B(), str);
             } catch (Throwable th) {
@@ -948,7 +948,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public double[] m17967n(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetDoubleArray(m18002B(), str);
             } catch (Throwable th) {
@@ -964,7 +964,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public float[] m17966o(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetFloatArray(m18002B(), str);
             } catch (Throwable th) {
@@ -985,7 +985,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public int[] m17965p(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetIntArray(m18002B(), str);
             } catch (IllegalStateException e) {
@@ -1005,10 +1005,10 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Override
     public SharedPreferences.Editor putBoolean(String str, boolean z) {
-        if (!this.f22373d) {
-            synchronized (this.f22376g) {
-                if (this.f22374e) {
-                    NativeBridge.dbPutBoolean(this.f22372c, true, str, z);
+        if (!this.f22376d) {
+            synchronized (this.f22379g) {
+                if (this.f22377e) {
+                    NativeBridge.dbPutBoolean(this.f22375c, true, str, z);
                     return this;
                 }
                 NativeBridge.dbPutBoolean(m18002B(), false, str, z);
@@ -1020,10 +1020,10 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Override
     public SharedPreferences.Editor putFloat(String str, float f) {
-        if (!this.f22373d) {
-            synchronized (this.f22376g) {
-                if (this.f22374e) {
-                    NativeBridge.dbPutFloat(this.f22372c, true, str, f);
+        if (!this.f22376d) {
+            synchronized (this.f22379g) {
+                if (this.f22377e) {
+                    NativeBridge.dbPutFloat(this.f22375c, true, str, f);
                     return this;
                 }
                 NativeBridge.dbPutFloat(m18002B(), false, str, f);
@@ -1035,10 +1035,10 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Override
     public SharedPreferences.Editor putInt(String str, int i) {
-        if (!this.f22373d) {
-            synchronized (this.f22376g) {
-                if (this.f22374e) {
-                    NativeBridge.dbPutInt(this.f22372c, true, str, i);
+        if (!this.f22376d) {
+            synchronized (this.f22379g) {
+                if (this.f22377e) {
+                    NativeBridge.dbPutInt(this.f22375c, true, str, i);
                     return this;
                 }
                 NativeBridge.dbPutInt(m18002B(), false, str, i);
@@ -1050,10 +1050,10 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Override
     public SharedPreferences.Editor putLong(String str, long j) {
-        if (!this.f22373d) {
-            synchronized (this.f22376g) {
-                if (this.f22374e) {
-                    NativeBridge.dbPutLong(this.f22372c, true, str, j);
+        if (!this.f22376d) {
+            synchronized (this.f22379g) {
+                if (this.f22377e) {
+                    NativeBridge.dbPutLong(this.f22375c, true, str, j);
                     return this;
                 }
                 NativeBridge.dbPutLong(m18002B(), false, str, j);
@@ -1067,10 +1067,10 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     public SharedPreferences.Editor putString(String str, String str2) {
         if (str2 == null) {
             throw new IllegalArgumentException();
-        } else if (!this.f22373d) {
-            synchronized (this.f22376g) {
-                if (this.f22374e) {
-                    NativeBridge.dbPutString(this.f22372c, true, str, str2);
+        } else if (!this.f22376d) {
+            synchronized (this.f22379g) {
+                if (this.f22377e) {
+                    NativeBridge.dbPutString(this.f22375c, true, str, str2);
                     return this;
                 }
                 NativeBridge.dbPutString(m18002B(), false, str, str2);
@@ -1089,7 +1089,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public long m17964q(String str, int i) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetIntOrLong(m18002B(), str, i, false);
             } catch (FileNotFoundException unused) {
@@ -1109,7 +1109,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public long[] m17963r(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetLongArray(m18002B(), str);
             } catch (Throwable th) {
@@ -1131,10 +1131,10 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Override
     public SharedPreferences.Editor remove(String str) {
-        if (!this.f22373d) {
-            synchronized (this.f22376g) {
-                if (this.f22374e) {
-                    NativeBridge.dbBatchRemove(this.f22372c, str);
+        if (!this.f22376d) {
+            synchronized (this.f22379g) {
+                if (this.f22377e) {
+                    NativeBridge.dbBatchRemove(this.f22375c, str);
                     return this;
                 }
                 NativeBridge.dbRemove(m18002B(), str);
@@ -1145,21 +1145,21 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public String m17962s(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             return NativeBridge.dbGetProperty(m18002B(), str);
         }
         throw new IllegalStateException();
     }
 
     public long m17961t() {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             return NativeBridge.dbGetSize(m18002B());
         }
         throw new IllegalStateException();
     }
 
     public long m17960u(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             return NativeBridge.dbGetSizeByPrefix(m18002B(), str);
         }
         throw new IllegalStateException();
@@ -1171,7 +1171,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public String[] m17959v(String str) {
-        if (!this.f22373d) {
+        if (!this.f22376d) {
             try {
                 return NativeBridge.dbGetStringArray(m18002B(), str);
             } catch (Throwable th) {
@@ -1188,11 +1188,11 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     public long m17957x() {
         m17970k();
-        return m17958w(new File(this.f22370a));
+        return m17958w(new File(this.f22373a));
     }
 
     public final void m17956y(String str, Throwable th) {
-        AbstractC7053b bVar = this.f22379j;
+        AbstractC7053b bVar = this.f22382j;
         if (bVar != null) {
             bVar.mo17939b(this, str, th);
         } else {
@@ -1201,7 +1201,7 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     public final void m17955z(Throwable th) {
-        AbstractC7053b bVar = this.f22379j;
+        AbstractC7053b bVar = this.f22382j;
         if (bVar != null && bVar.mo17940a(this, th)) {
             return;
         }

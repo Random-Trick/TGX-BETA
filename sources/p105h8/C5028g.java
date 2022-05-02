@@ -13,7 +13,7 @@ public class C5028g extends AbstractC4519b {
         super(gVar);
     }
 
-    public static int m24259c(int[] iArr) {
+    public static int m24260c(int[] iArr) {
         int length = iArr.length;
         int i = 0;
         int i2 = 0;
@@ -56,39 +56,39 @@ public class C5028g extends AbstractC4519b {
             }
             return i11 << 3;
         }
-        throw C4525h.m27496a();
+        throw C4525h.m27498a();
     }
 
     @Override
-    public C5022a mo24254a() {
-        AbstractC4524g b = m27502b();
-        int d = b.m27497d();
-        int a = b.m27498a();
+    public C5022a mo24255a() {
+        AbstractC4524g b = m27504b();
+        int d = b.m27499d();
+        int a = b.m27500a();
         C5022a aVar = new C5022a(d, a);
-        m24258d(d);
+        m24259d(d);
         int[] iArr = this.f16986c;
         for (int i = 1; i < 5; i++) {
-            byte[] c = b.mo27494c((a * i) / 5, this.f16985b);
+            byte[] c = b.mo27496c((a * i) / 5, this.f16985b);
             int i2 = (d << 2) / 5;
             for (int i3 = d / 5; i3 < i2; i3++) {
                 int i4 = (c[i3] & 255) >> 3;
                 iArr[i4] = iArr[i4] + 1;
             }
         }
-        int c2 = m24259c(iArr);
-        byte[] b2 = b.mo27495b();
+        int c2 = m24260c(iArr);
+        byte[] b2 = b.mo27497b();
         for (int i5 = 0; i5 < a; i5++) {
             int i6 = i5 * d;
             for (int i7 = 0; i7 < d; i7++) {
                 if ((b2[i6 + i7] & 255) < c2) {
-                    aVar.m24276i(i7, i5);
+                    aVar.m24277i(i7, i5);
                 }
             }
         }
         return aVar;
     }
 
-    public final void m24258d(int i) {
+    public final void m24259d(int i) {
         if (this.f16985b.length < i) {
             this.f16985b = new byte[i];
         }

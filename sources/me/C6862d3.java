@@ -22,7 +22,7 @@ public class C6862d3 extends View {
     public float f21572b;
     public float f21573c;
     public int f21567Q = R.id.theme_color_separator;
-    public int f21564N = Math.max(C1357a0.m37541i(0.5f), 1);
+    public int f21564N = Math.max(C1357a0.m37544i(0.5f), 1);
 
     public C6862d3(Context context) {
         super(context);
@@ -32,33 +32,33 @@ public class C6862d3 extends View {
         paint.setStyle(Paint.Style.FILL);
     }
 
-    public static C6862d3 m18733e(Context context, ViewGroup.LayoutParams layoutParams, boolean z) {
+    public static C6862d3 m18734e(Context context, ViewGroup.LayoutParams layoutParams, boolean z) {
         C6862d3 d3Var = new C6862d3(context);
-        d3Var.setSeparatorHeight(Math.max(1, C1357a0.m37541i(0.5f)));
+        d3Var.setSeparatorHeight(Math.max(1, C1357a0.m37544i(0.5f)));
         if (z) {
-            d3Var.m18736b();
-            d3Var.m18734d();
+            d3Var.m18737b();
+            d3Var.m18735d();
         }
         layoutParams.width = -1;
-        layoutParams.height = C1357a0.m37541i(1.0f);
+        layoutParams.height = C1357a0.m37544i(1.0f);
         d3Var.setLayoutParams(layoutParams);
         return d3Var;
     }
 
-    public void m18737a() {
+    public void m18738a() {
         this.f21570T = true;
     }
 
-    public void m18736b() {
+    public void m18737b() {
         this.f21568R = true;
     }
 
-    public void m18735c(float f, float f2) {
+    public void m18736c(float f, float f2) {
         this.f21572b = f;
         this.f21573c = f2;
     }
 
-    public void m18734d() {
+    public void m18735d() {
         this.f21569S = true;
     }
 
@@ -81,7 +81,7 @@ public class C6862d3 extends View {
         if (this.f21572b == 0.0f && this.f21573c == 0.0f) {
             float f = this.f21563M;
             canvas.drawRect(0.0f, f, measuredWidth, f + this.f21564N, this.f21571a);
-        } else if (C4403w.m27984G2()) {
+        } else if (C4403w.m27986G2()) {
             float f2 = this.f21573c;
             float f3 = this.f21563M;
             canvas.drawRect(f2, f3, measuredWidth - this.f21572b, f3 + this.f21564N, this.f21571a);

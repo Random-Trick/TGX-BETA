@@ -21,34 +21,34 @@ public class C4544d extends C4539b0 {
         public C4545a() {
         }
 
-        public final C4544d m27452c() {
+        public final C4544d m27454c() {
             C4544d dVar = C4544d.f14961k;
-            C8298k.m12936c(dVar);
+            C8298k.m12935c(dVar);
             C4544d dVar2 = dVar.f14964g;
             if (dVar2 == null) {
                 long nanoTime = System.nanoTime();
                 C4544d.class.wait(C4544d.f14959i);
                 C4544d dVar3 = C4544d.f14961k;
-                C8298k.m12936c(dVar3);
+                C8298k.m12935c(dVar3);
                 if (dVar3.f14964g != null || System.nanoTime() - nanoTime < C4544d.f14960j) {
                     return null;
                 }
                 return C4544d.f14961k;
             }
-            long u = dVar2.m27457u(System.nanoTime());
+            long u = dVar2.m27459u(System.nanoTime());
             if (u > 0) {
                 long j = u / 1000000;
                 C4544d.class.wait(j, (int) (u - (1000000 * j)));
                 return null;
             }
             C4544d dVar4 = C4544d.f14961k;
-            C8298k.m12936c(dVar4);
+            C8298k.m12935c(dVar4);
             dVar4.f14964g = dVar2.f14964g;
             dVar2.f14964g = null;
             return dVar2;
         }
 
-        public final boolean m27451d(C4544d dVar) {
+        public final boolean m27453d(C4544d dVar) {
             synchronized (C4544d.class) {
                 for (C4544d dVar2 = C4544d.f14961k; dVar2 != null; dVar2 = dVar2.f14964g) {
                     if (dVar2.f14964g == dVar) {
@@ -61,7 +61,7 @@ public class C4544d extends C4539b0 {
             }
         }
 
-        public final void m27450e(C4544d dVar, long j, boolean z) {
+        public final void m27452e(C4544d dVar, long j, boolean z) {
             synchronized (C4544d.class) {
                 if (C4544d.f14961k == null) {
                     C4544d.f14961k = new C4544d();
@@ -70,25 +70,25 @@ public class C4544d extends C4539b0 {
                 long nanoTime = System.nanoTime();
                 int i = (j > 0L ? 1 : (j == 0L ? 0 : -1));
                 if (i != 0 && z) {
-                    dVar.f14965h = Math.min(j, dVar.mo27393c() - nanoTime) + nanoTime;
+                    dVar.f14965h = Math.min(j, dVar.mo27395c() - nanoTime) + nanoTime;
                 } else if (i != 0) {
                     dVar.f14965h = j + nanoTime;
                 } else if (z) {
-                    dVar.f14965h = dVar.mo27393c();
+                    dVar.f14965h = dVar.mo27395c();
                 } else {
                     throw new AssertionError();
                 }
-                long u = dVar.m27457u(nanoTime);
+                long u = dVar.m27459u(nanoTime);
                 C4544d dVar2 = C4544d.f14961k;
-                C8298k.m12936c(dVar2);
+                C8298k.m12935c(dVar2);
                 while (dVar2.f14964g != null) {
                     C4544d dVar3 = dVar2.f14964g;
-                    C8298k.m12936c(dVar3);
-                    if (u < dVar3.m27457u(nanoTime)) {
+                    C8298k.m12935c(dVar3);
+                    if (u < dVar3.m27459u(nanoTime)) {
                         break;
                     }
                     dVar2 = dVar2.f14964g;
-                    C8298k.m12936c(dVar2);
+                    C8298k.m12935c(dVar2);
                 }
                 dVar.f14964g = dVar2.f14964g;
                 dVar2.f14964g = dVar;
@@ -116,7 +116,7 @@ public class C4544d extends C4539b0 {
             while (true) {
                 try {
                     synchronized (C4544d.class) {
-                        c = C4544d.f14962l.m27452c();
+                        c = C4544d.f14962l.m27454c();
                         if (c == C4544d.f14961k) {
                             C4544d.f14961k = null;
                             return;
@@ -142,50 +142,50 @@ public class C4544d extends C4539b0 {
         @Override
         public void close() {
             C4544d dVar = C4544d.this;
-            dVar.m27459r();
+            dVar.m27461r();
             try {
                 this.f14967b.close();
                 C5060q qVar = C5060q.f17066a;
-                if (dVar.m27458s()) {
-                    throw dVar.m27464m(null);
+                if (dVar.m27460s()) {
+                    throw dVar.m27466m(null);
                 }
             } catch (IOException e) {
-                if (dVar.m27458s()) {
-                    throw dVar.m27464m(e);
+                if (dVar.m27460s()) {
+                    throw dVar.m27466m(e);
                 }
             } finally {
-                dVar.m27458s();
+                dVar.m27460s();
             }
         }
 
         @Override
         public void flush() {
             C4544d dVar = C4544d.this;
-            dVar.m27459r();
+            dVar.m27461r();
             try {
                 this.f14967b.flush();
                 C5060q qVar = C5060q.f17066a;
-                if (dVar.m27458s()) {
-                    throw dVar.m27464m(null);
+                if (dVar.m27460s()) {
+                    throw dVar.m27466m(null);
                 }
             } catch (IOException e) {
-                if (dVar.m27458s()) {
-                    throw dVar.m27464m(e);
+                if (dVar.m27460s()) {
+                    throw dVar.m27466m(e);
                 }
             } finally {
-                dVar.m27458s();
+                dVar.m27460s();
             }
         }
 
         @Override
         public void mo5030h0(C4549e eVar, long j) {
-            C8298k.m12934e(eVar, "source");
-            C4542c.m27475b(eVar.size(), 0L, j);
+            C8298k.m12933e(eVar, "source");
+            C4542c.m27477b(eVar.size(), 0L, j);
             while (true) {
                 long j2 = 0;
                 if (j > 0) {
                     C4568v vVar = eVar.f14970a;
-                    C8298k.m12936c(vVar);
+                    C8298k.m12935c(vVar);
                     while (true) {
                         if (j2 >= ((long) Log.TAG_COMPRESS)) {
                             break;
@@ -196,26 +196,26 @@ public class C4544d extends C4539b0 {
                             break;
                         } else {
                             vVar = vVar.f15009f;
-                            C8298k.m12936c(vVar);
+                            C8298k.m12935c(vVar);
                         }
                     }
                     C4544d dVar = C4544d.this;
-                    dVar.m27459r();
+                    dVar.m27461r();
                     try {
                         this.f14967b.mo5030h0(eVar, j2);
                         C5060q qVar = C5060q.f17066a;
-                        if (!dVar.m27458s()) {
+                        if (!dVar.m27460s()) {
                             j -= j2;
                         } else {
-                            throw dVar.m27464m(null);
+                            throw dVar.m27466m(null);
                         }
                     } catch (IOException e) {
-                        if (dVar.m27458s()) {
-                            throw dVar.m27464m(e);
+                        if (dVar.m27460s()) {
+                            throw dVar.m27466m(e);
                         }
                         throw e;
                     } finally {
-                        dVar.m27458s();
+                        dVar.m27460s();
                     }
                 } else {
                     return;
@@ -223,7 +223,7 @@ public class C4544d extends C4539b0 {
             }
         }
 
-        public C4544d mo27301c() {
+        public C4544d mo27303c() {
             return C4544d.this;
         }
 
@@ -242,44 +242,44 @@ public class C4544d extends C4539b0 {
         @Override
         public void close() {
             C4544d dVar = C4544d.this;
-            dVar.m27459r();
+            dVar.m27461r();
             try {
                 this.f14969b.close();
                 C5060q qVar = C5060q.f17066a;
-                if (dVar.m27458s()) {
-                    throw dVar.m27464m(null);
+                if (dVar.m27460s()) {
+                    throw dVar.m27466m(null);
                 }
             } catch (IOException e) {
-                if (dVar.m27458s()) {
-                    throw dVar.m27464m(e);
+                if (dVar.m27460s()) {
+                    throw dVar.m27466m(e);
                 }
             } finally {
-                dVar.m27458s();
+                dVar.m27460s();
             }
         }
 
-        public C4544d mo27334c() {
+        public C4544d mo27336c() {
             return C4544d.this;
         }
 
         @Override
         public long mo5028s(C4549e eVar, long j) {
-            C8298k.m12934e(eVar, "sink");
+            C8298k.m12933e(eVar, "sink");
             C4544d dVar = C4544d.this;
-            dVar.m27459r();
+            dVar.m27461r();
             try {
                 long s = this.f14969b.mo5028s(eVar, j);
-                if (!dVar.m27458s()) {
+                if (!dVar.m27460s()) {
                     return s;
                 }
-                throw dVar.m27464m(null);
+                throw dVar.m27466m(null);
             } catch (IOException e) {
-                if (!dVar.m27458s()) {
+                if (!dVar.m27460s()) {
                     throw e;
                 }
-                throw dVar.m27464m(e);
+                throw dVar.m27466m(e);
             } finally {
-                dVar.m27458s();
+                dVar.m27460s();
             }
         }
 
@@ -294,17 +294,17 @@ public class C4544d extends C4539b0 {
         f14960j = TimeUnit.MILLISECONDS.toNanos(millis);
     }
 
-    public final IOException m27464m(IOException iOException) {
-        return mo27300t(iOException);
+    public final IOException m27466m(IOException iOException) {
+        return mo27302t(iOException);
     }
 
-    public final void m27459r() {
+    public final void m27461r() {
         if (!this.f14963f) {
-            long h = m27477h();
-            boolean e = mo27391e();
+            long h = m27479h();
+            boolean e = mo27393e();
             if (h != 0 || e) {
                 this.f14963f = true;
-                f14962l.m27450e(this, h, e);
+                f14962l.m27452e(this, h, e);
                 return;
             }
             return;
@@ -312,15 +312,15 @@ public class C4544d extends C4539b0 {
         throw new IllegalStateException("Unbalanced enter/exit".toString());
     }
 
-    public final boolean m27458s() {
+    public final boolean m27460s() {
         if (!this.f14963f) {
             return false;
         }
         this.f14963f = false;
-        return f14962l.m27451d(this);
+        return f14962l.m27453d(this);
     }
 
-    public IOException mo27300t(IOException iOException) {
+    public IOException mo27302t(IOException iOException) {
         InterruptedIOException interruptedIOException = new InterruptedIOException("timeout");
         if (iOException != null) {
             interruptedIOException.initCause(iOException);
@@ -328,17 +328,17 @@ public class C4544d extends C4539b0 {
         return interruptedIOException;
     }
 
-    public final long m27457u(long j) {
+    public final long m27459u(long j) {
         return this.f14965h - j;
     }
 
-    public final AbstractC4572y m27456v(AbstractC4572y yVar) {
-        C8298k.m12934e(yVar, "sink");
+    public final AbstractC4572y m27458v(AbstractC4572y yVar) {
+        C8298k.m12933e(yVar, "sink");
         return new C4547c(yVar);
     }
 
-    public final AbstractC4537a0 m27455w(AbstractC4537a0 a0Var) {
-        C8298k.m12934e(a0Var, "source");
+    public final AbstractC4537a0 m27457w(AbstractC4537a0 a0Var) {
+        C8298k.m12933e(a0Var, "source");
         return new C4548d(a0Var);
     }
 

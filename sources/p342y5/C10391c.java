@@ -14,37 +14,37 @@ import p092g7.C4510c;
 import p092g7.C4511d;
 
 public final class C10391c implements AbstractC4515f {
-    public static final C4511d f33442g;
-    public static final C4511d f33443h;
-    public OutputStream f33445a;
-    public final Map<Class<?>, AbstractC4514e<?>> f33446b;
-    public final Map<Class<?>, AbstractC4516g<?>> f33447c;
-    public final AbstractC4514e<Object> f33448d;
-    public final C10399g f33449e = new C10399g(this);
-    public static final Charset f33441f = Charset.forName("UTF-8");
-    public static final AbstractC4514e<Map.Entry<Object, Object>> f33444i = C10389b.f33438a;
+    public static final C4511d f33445g;
+    public static final C4511d f33446h;
+    public OutputStream f33448a;
+    public final Map<Class<?>, AbstractC4514e<?>> f33449b;
+    public final Map<Class<?>, AbstractC4516g<?>> f33450c;
+    public final AbstractC4514e<Object> f33451d;
+    public final C10399g f33452e = new C10399g(this);
+    public static final Charset f33444f = Charset.forName("UTF-8");
+    public static final AbstractC4514e<Map.Entry<Object, Object>> f33447i = C10389b.f33441a;
 
     static {
-        C4511d.C4513b a = C4511d.m27508a("key");
+        C4511d.C4513b a = C4511d.m27510a("key");
         C10390b0 b0Var = new C10390b0();
         b0Var.m5194a(1);
-        f33442g = a.m27503b(b0Var.m5193b()).m27504a();
-        C4511d.C4513b a2 = C4511d.m27508a("value");
+        f33445g = a.m27505b(b0Var.m5193b()).m27506a();
+        C4511d.C4513b a2 = C4511d.m27510a("value");
         C10390b0 b0Var2 = new C10390b0();
         b0Var2.m5194a(2);
-        f33443h = a2.m27503b(b0Var2.m5193b()).m27504a();
+        f33446h = a2.m27505b(b0Var2.m5193b()).m27506a();
     }
 
     public C10391c(OutputStream outputStream, Map<Class<?>, AbstractC4514e<?>> map, Map<Class<?>, AbstractC4516g<?>> map2, AbstractC4514e<Object> eVar) {
-        this.f33445a = outputStream;
-        this.f33446b = map;
-        this.f33447c = map2;
-        this.f33448d = eVar;
+        this.f33448a = outputStream;
+        this.f33449b = map;
+        this.f33450c = map2;
+        this.f33451d = eVar;
     }
 
     public static final void m5183j(Map.Entry entry, AbstractC4515f fVar) {
-        fVar.mo5192a(f33442g, entry.getKey());
-        fVar.mo5192a(f33443h, entry.getValue());
+        fVar.mo5192a(f33445g, entry.getKey());
+        fVar.mo5192a(f33446h, entry.getValue());
     }
 
     public static ByteBuffer m5179n(int i) {
@@ -52,7 +52,7 @@ public final class C10391c implements AbstractC4515f {
     }
 
     public static int m5178o(C4511d dVar) {
-        AbstractC10398f0 f0Var = (AbstractC10398f0) dVar.m27506c(AbstractC10398f0.class);
+        AbstractC10398f0 f0Var = (AbstractC10398f0) dVar.m27508c(AbstractC10398f0.class);
         if (f0Var != null) {
             return f0Var.zza();
         }
@@ -60,7 +60,7 @@ public final class C10391c implements AbstractC4515f {
     }
 
     public static AbstractC10398f0 m5177p(C4511d dVar) {
-        AbstractC10398f0 f0Var = (AbstractC10398f0) dVar.m27506c(AbstractC10398f0.class);
+        AbstractC10398f0 f0Var = (AbstractC10398f0) dVar.m27508c(AbstractC10398f0.class);
         if (f0Var != null) {
             return f0Var;
         }
@@ -95,9 +95,9 @@ public final class C10391c implements AbstractC4515f {
                 return this;
             }
             m5176q((m5178o(dVar) << 3) | 2);
-            byte[] bytes = charSequence.toString().getBytes(f33441f);
+            byte[] bytes = charSequence.toString().getBytes(f33444f);
             m5176q(bytes.length);
-            this.f33445a.write(bytes);
+            this.f33448a.write(bytes);
             return this;
         } else if (obj instanceof Collection) {
             for (Object obj2 : (Collection) obj) {
@@ -106,7 +106,7 @@ public final class C10391c implements AbstractC4515f {
             return this;
         } else if (obj instanceof Map) {
             for (Map.Entry entry : ((Map) obj).entrySet()) {
-                m5182k(f33444i, dVar, entry, false);
+                m5182k(f33447i, dVar, entry, false);
             }
             return this;
         } else if (obj instanceof Double) {
@@ -128,15 +128,15 @@ public final class C10391c implements AbstractC4515f {
             }
             m5176q((m5178o(dVar) << 3) | 2);
             m5176q(bArr.length);
-            this.f33445a.write(bArr);
+            this.f33448a.write(bArr);
             return this;
         } else {
-            AbstractC4514e<?> eVar = this.f33446b.get(obj.getClass());
+            AbstractC4514e<?> eVar = this.f33449b.get(obj.getClass());
             if (eVar != null) {
                 m5182k(eVar, dVar, obj, z);
                 return this;
             }
-            AbstractC4516g<?> gVar = this.f33447c.get(obj.getClass());
+            AbstractC4516g<?> gVar = this.f33450c.get(obj.getClass());
             if (gVar != null) {
                 m5180m(gVar, dVar, obj, z);
                 return this;
@@ -147,7 +147,7 @@ public final class C10391c implements AbstractC4515f {
                 m5186g(dVar, ((Enum) obj).ordinal(), true);
                 return this;
             } else {
-                m5182k(this.f33448d, dVar, obj, z);
+                m5182k(this.f33451d, dVar, obj, z);
                 return this;
             }
         }
@@ -158,7 +158,7 @@ public final class C10391c implements AbstractC4515f {
             return this;
         }
         m5176q((m5178o(dVar) << 3) | 1);
-        this.f33445a.write(m5179n(8).putDouble(d).array());
+        this.f33448a.write(m5179n(8).putDouble(d).array());
         return this;
     }
 
@@ -167,7 +167,7 @@ public final class C10391c implements AbstractC4515f {
             return this;
         }
         m5176q((m5178o(dVar) << 3) | 5);
-        this.f33445a.write(m5179n(4).putFloat(f).array());
+        this.f33448a.write(m5179n(4).putFloat(f).array());
         return this;
     }
 
@@ -186,7 +186,7 @@ public final class C10391c implements AbstractC4515f {
             m5176q((i + i) ^ (i >> 31));
         } else if (ordinal == 2) {
             m5176q((p.zza() << 3) | 5);
-            this.f33445a.write(m5179n(4).putInt(i).array());
+            this.f33448a.write(m5179n(4).putInt(i).array());
         }
         return this;
     }
@@ -206,7 +206,7 @@ public final class C10391c implements AbstractC4515f {
             m5175r((j >> 63) ^ (j + j));
         } else if (ordinal == 2) {
             m5176q((p.zza() << 3) | 1);
-            this.f33445a.write(m5179n(8).putLong(j).array());
+            this.f33448a.write(m5179n(8).putLong(j).array());
         }
         return this;
     }
@@ -215,7 +215,7 @@ public final class C10391c implements AbstractC4515f {
         if (obj == null) {
             return this;
         }
-        AbstractC4514e<?> eVar = this.f33446b.get(obj.getClass());
+        AbstractC4514e<?> eVar = this.f33449b.get(obj.getClass());
         if (eVar != null) {
             eVar.mo5165a(obj, this);
             return this;
@@ -241,10 +241,10 @@ public final class C10391c implements AbstractC4515f {
     public final <T> long m5181l(AbstractC4514e<T> eVar, T t) {
         C10392c0 c0Var = new C10392c0();
         try {
-            OutputStream outputStream = this.f33445a;
-            this.f33445a = c0Var;
+            OutputStream outputStream = this.f33448a;
+            this.f33448a = c0Var;
             eVar.mo5165a(t, this);
-            this.f33445a = outputStream;
+            this.f33448a = outputStream;
             long m = c0Var.m5174m();
             c0Var.close();
             return m;
@@ -259,24 +259,24 @@ public final class C10391c implements AbstractC4515f {
     }
 
     public final <T> C10391c m5180m(AbstractC4516g<T> gVar, C4511d dVar, T t, boolean z) {
-        this.f33449e.m5169a(dVar, z);
-        gVar.mo5165a(t, this.f33449e);
+        this.f33452e.m5169a(dVar, z);
+        gVar.mo5165a(t, this.f33452e);
         return this;
     }
 
     public final void m5176q(int i) {
         while ((i & (-128)) != 0) {
-            this.f33445a.write((i & 127) | Log.TAG_YOUTUBE);
+            this.f33448a.write((i & 127) | Log.TAG_YOUTUBE);
             i >>>= 7;
         }
-        this.f33445a.write(i & 127);
+        this.f33448a.write(i & 127);
     }
 
     public final void m5175r(long j) {
         while (((-128) & j) != 0) {
-            this.f33445a.write((((int) j) & 127) | Log.TAG_YOUTUBE);
+            this.f33448a.write((((int) j) & 127) | Log.TAG_YOUTUBE);
             j >>>= 7;
         }
-        this.f33445a.write(((int) j) & 127);
+        this.f33448a.write(((int) j) & 127);
     }
 }

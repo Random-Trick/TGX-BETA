@@ -11,14 +11,14 @@ public class C6387u {
     public final String f20035b;
 
     public C6387u(@RecentlyNonNull Context context) {
-        C6378r.m20506k(context);
+        C6378r.m20507k(context);
         Resources resources = context.getResources();
         this.f20034a = resources;
         this.f20035b = resources.getResourcePackageName(C5226j.a_res_0x7f0e11fe);
     }
 
     @RecentlyNullable
-    public String m20486a(@RecentlyNonNull String str) {
+    public String m20487a(@RecentlyNonNull String str) {
         int identifier = this.f20034a.getIdentifier(str, "string", this.f20035b);
         if (identifier == 0) {
             return null;

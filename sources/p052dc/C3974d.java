@@ -18,13 +18,13 @@ public final class C3974d extends Handler {
     @Override
     public void publish(LogRecord logRecord) {
         int b;
-        C8298k.m12934e(logRecord, "record");
+        C8298k.m12933e(logRecord, "record");
         C3973c cVar = C3973c.f13346c;
         String loggerName = logRecord.getLoggerName();
-        C8298k.m12935d(loggerName, "record.loggerName");
-        b = C3975e.m29435b(logRecord);
+        C8298k.m12934d(loggerName, "record.loggerName");
+        b = C3975e.m29437b(logRecord);
         String message = logRecord.getMessage();
-        C8298k.m12935d(message, "record.message");
-        cVar.m29440a(loggerName, b, message, logRecord.getThrown());
+        C8298k.m12934d(message, "record.message");
+        cVar.m29442a(loggerName, b, message, logRecord.getThrown());
     }
 }

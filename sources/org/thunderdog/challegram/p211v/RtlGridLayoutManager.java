@@ -6,20 +6,20 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import p082fd.C4403w;
 
 public class RtlGridLayoutManager extends GridLayoutManager {
-    public boolean f25766R;
+    public boolean f25769R;
 
     public RtlGridLayoutManager(Context context, AttributeSet attributeSet, int i, int i2) {
         super(context, attributeSet, i, i2);
     }
 
-    public RtlGridLayoutManager m14124g3(boolean z) {
-        this.f25766R = z;
+    public RtlGridLayoutManager m14123g3(boolean z) {
+        this.f25769R = z;
         return this;
     }
 
     @Override
-    public final boolean mo14123n2() {
-        return !this.f25766R && C4403w.m27984G2();
+    public final boolean mo14122n2() {
+        return !this.f25769R && C4403w.m27986G2();
     }
 
     public RtlGridLayoutManager(Context context, int i) {

@@ -12,9 +12,9 @@ import p308w1.C9940c;
 import p323x1.AbstractC10074f;
 
 public final class C7541i implements AbstractC7540h {
-    public final AbstractC9421e f24119a;
-    public final AbstractC9418b<C7539g> f24120b;
-    public final AbstractC9433k f24121c;
+    public final AbstractC9421e f24122a;
+    public final AbstractC9418b<C7539g> f24123b;
+    public final AbstractC9433k f24124c;
 
     public class C7542a extends AbstractC9418b<C7539g> {
         public C7542a(AbstractC9421e eVar) {
@@ -27,13 +27,13 @@ public final class C7541i implements AbstractC7540h {
         }
 
         public void mo8741g(AbstractC10074f fVar, C7539g gVar) {
-            String str = gVar.f24117a;
+            String str = gVar.f24120a;
             if (str == null) {
                 fVar.mo5374d0(1);
             } else {
                 fVar.mo5373q(1, str);
             }
-            fVar.mo5376J(2, gVar.f24118b);
+            fVar.mo5376J(2, gVar.f24121b);
         }
     }
 
@@ -49,16 +49,16 @@ public final class C7541i implements AbstractC7540h {
     }
 
     public C7541i(AbstractC9421e eVar) {
-        this.f24119a = eVar;
-        this.f24120b = new C7542a(eVar);
-        this.f24121c = new C7543b(eVar);
+        this.f24122a = eVar;
+        this.f24123b = new C7542a(eVar);
+        this.f24124c = new C7543b(eVar);
     }
 
     @Override
     public List<String> mo15713a() {
         C9430h y0 = C9430h.m8682y0("SELECT DISTINCT work_spec_id FROM SystemIdInfo", 0);
-        this.f24119a.m8732b();
-        Cursor b = C9940c.m6454b(this.f24119a, y0, false, null);
+        this.f24122a.m8732b();
+        Cursor b = C9940c.m6454b(this.f24122a, y0, false, null);
         try {
             ArrayList arrayList = new ArrayList(b.getCount());
             while (b.moveToNext()) {
@@ -73,13 +73,13 @@ public final class C7541i implements AbstractC7540h {
 
     @Override
     public void mo15712b(C7539g gVar) {
-        this.f24119a.m8732b();
-        this.f24119a.m8731c();
+        this.f24122a.m8732b();
+        this.f24122a.m8731c();
         try {
-            this.f24120b.m8740h(gVar);
-            this.f24119a.m8714t();
+            this.f24123b.m8740h(gVar);
+            this.f24122a.m8714t();
         } finally {
-            this.f24119a.m8727g();
+            this.f24122a.m8727g();
         }
     }
 
@@ -91,9 +91,9 @@ public final class C7541i implements AbstractC7540h {
         } else {
             y0.mo5373q(1, str);
         }
-        this.f24119a.m8732b();
+        this.f24122a.m8732b();
         C7539g gVar = null;
-        Cursor b = C9940c.m6454b(this.f24119a, y0, false, null);
+        Cursor b = C9940c.m6454b(this.f24122a, y0, false, null);
         try {
             int c = C9939b.m6456c(b, "work_spec_id");
             int c2 = C9939b.m6456c(b, "system_id");
@@ -109,20 +109,20 @@ public final class C7541i implements AbstractC7540h {
 
     @Override
     public void mo15710d(String str) {
-        this.f24119a.m8732b();
-        AbstractC10074f a = this.f24121c.m8677a();
+        this.f24122a.m8732b();
+        AbstractC10074f a = this.f24124c.m8677a();
         if (str == null) {
             a.mo5374d0(1);
         } else {
             a.mo5373q(1, str);
         }
-        this.f24119a.m8731c();
+        this.f24122a.m8731c();
         try {
             a.mo5371u();
-            this.f24119a.m8714t();
+            this.f24122a.m8714t();
         } finally {
-            this.f24119a.m8727g();
-            this.f24121c.m8672f(a);
+            this.f24122a.m8727g();
+            this.f24124c.m8672f(a);
         }
     }
 }

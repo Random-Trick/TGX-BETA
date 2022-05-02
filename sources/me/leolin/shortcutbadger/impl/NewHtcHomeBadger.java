@@ -26,13 +26,13 @@ public class NewHtcHomeBadger implements AbstractC0243a {
         intent2.putExtra("count", i);
         boolean z2 = false;
         try {
-            C1304a.m37782c(context, intent);
+            C1304a.m37785c(context, intent);
             z = true;
         } catch (C0244b unused) {
             z = false;
         }
         try {
-            C1304a.m37782c(context, intent2);
+            C1304a.m37785c(context, intent2);
             z2 = true;
         } catch (C0244b unused2) {
         }

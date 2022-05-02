@@ -55,41 +55,41 @@ import p350yd.C10536ab;
 import p350yd.C10827lb;
 
 public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
-    public static final AtomicBoolean f33768m0 = new AtomicBoolean(false);
-    public static C10536ab f33769n0;
-    public static Set<String> f33770o0;
-    public static Set<String> f33771p0;
-    public static Set<String> f33772q0;
-    public static Set<String> f33773r0;
-    public final C4868i.AbstractC4881m f33779R;
-    public final C4367e0 f33781T;
-    public final C9726c f33783V;
-    public final C9773p0 f33784W;
-    public boolean f33785X;
-    public boolean f33786Y;
-    public boolean f33787Z;
-    public TdApi.NetworkType f33789a0;
-    public C11131y6 f33792c;
-    public List<C11131y6> f33793c0;
-    public int f33794d0;
-    public int f33795e0;
-    public String f33797g0;
-    public String f33798h0;
-    public PowerManager.WakeLock f33801k0;
-    public int f33802l0;
-    public final ArrayList<C11131y6> f33788a = new ArrayList<>();
-    public int f33790b = -1;
-    public final C11071v9 f33774M = new C11071v9(this);
-    public final HandlerC10540d f33775N = new HandlerC10540d(this);
-    public final C10651f1 f33776O = new C10651f1(this);
-    public final C10827lb.C10828a f33777P = new C10827lb.C10828a("NotificationQueue", this);
-    public final C10552b0 f33778Q = new C10552b0(this);
-    public final Comparator<C11131y6> f33791b0 = C11167z9.f35798a;
-    public int f33796f0 = 0;
-    public final ArrayList<C11131y6> f33799i0 = new ArrayList<>();
-    public final Object f33800j0 = new Object();
-    public final String f33782U = m4812D0();
-    public C4868i.C4873e f33780S = C4868i.m24726c2().m24752Z();
+    public static final AtomicBoolean f33771m0 = new AtomicBoolean(false);
+    public static C10536ab f33772n0;
+    public static Set<String> f33773o0;
+    public static Set<String> f33774p0;
+    public static Set<String> f33775q0;
+    public static Set<String> f33776r0;
+    public final C4868i.AbstractC4881m f33782R;
+    public final C4367e0 f33784T;
+    public final C9726c f33786V;
+    public final C9773p0 f33787W;
+    public boolean f33788X;
+    public boolean f33789Y;
+    public boolean f33790Z;
+    public TdApi.NetworkType f33792a0;
+    public C11131y6 f33795c;
+    public List<C11131y6> f33796c0;
+    public int f33797d0;
+    public int f33798e0;
+    public String f33800g0;
+    public String f33801h0;
+    public PowerManager.WakeLock f33804k0;
+    public int f33805l0;
+    public final ArrayList<C11131y6> f33791a = new ArrayList<>();
+    public int f33793b = -1;
+    public final C11071v9 f33777M = new C11071v9(this);
+    public final HandlerC10540d f33778N = new HandlerC10540d(this);
+    public final C10651f1 f33779O = new C10651f1(this);
+    public final C10827lb.C10828a f33780P = new C10827lb.C10828a("NotificationQueue", this);
+    public final C10552b0 f33781Q = new C10552b0(this);
+    public final Comparator<C11131y6> f33794b0 = C11167z9.f35801a;
+    public int f33799f0 = 0;
+    public final ArrayList<C11131y6> f33802i0 = new ArrayList<>();
+    public final Object f33803j0 = new Object();
+    public final String f33785U = m4812D0();
+    public C4868i.C4873e f33783S = C4868i.m24727c2().m24753Z();
 
     public class C10537a implements C4868i.AbstractC4881m {
         public C10537a() {
@@ -108,7 +108,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
             if (z) {
                 Iterator<C11131y6> it = C10536ab.this.iterator();
                 while (it.hasNext()) {
-                    C10930q6 q6Var = it.next().f35695P;
+                    C10930q6 q6Var = it.next().f35698P;
                     if (q6Var != null) {
                         q6Var.m2390jc(i, str, i2, proxyType);
                     }
@@ -118,18 +118,18 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public class RunnableC10538b implements Runnable {
-        public final AbstractC10542f f33804M;
-        public final Runnable f33805N;
-        public final LinkedList f33807a;
-        public final AtomicInteger f33808b;
-        public final int f33809c;
+        public final AbstractC10542f f33807M;
+        public final Runnable f33808N;
+        public final LinkedList f33810a;
+        public final AtomicInteger f33811b;
+        public final int f33812c;
 
         public RunnableC10538b(LinkedList linkedList, AtomicInteger atomicInteger, int i, AbstractC10542f fVar, Runnable runnable) {
-            this.f33807a = linkedList;
-            this.f33808b = atomicInteger;
-            this.f33809c = i;
-            this.f33804M = fVar;
-            this.f33805N = runnable;
+            this.f33810a = linkedList;
+            this.f33811b = atomicInteger;
+            this.f33812c = i;
+            this.f33807M = fVar;
+            this.f33808N = runnable;
         }
 
         public void m4618c(boolean z, C11131y6 y6Var) {
@@ -154,21 +154,21 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
             ArrayList<Runnable> arrayList;
             boolean z;
             Runnable runnable;
-            synchronized (this.f33807a) {
-                this.f33808b.decrementAndGet();
+            synchronized (this.f33810a) {
+                this.f33811b.decrementAndGet();
                 arrayList = null;
                 while (true) {
                     z = true;
-                    if (this.f33807a.isEmpty() || this.f33808b.get() >= this.f33809c) {
+                    if (this.f33810a.isEmpty() || this.f33811b.get() >= this.f33812c) {
                         break;
                     }
-                    this.f33808b.incrementAndGet();
+                    this.f33811b.incrementAndGet();
                     if (arrayList == null) {
                         arrayList = new ArrayList();
                     }
-                    final C11131y6 y6Var = (C11131y6) this.f33807a.removeFirst();
+                    final C11131y6 y6Var = (C11131y6) this.f33810a.removeFirst();
                     final boolean B = y6Var.m1509B(true);
-                    final AbstractC10542f fVar = this.f33804M;
+                    final AbstractC10542f fVar = this.f33807M;
                     arrayList.add(new Runnable() {
                         @Override
                         public final void run() {
@@ -176,7 +176,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
                         }
                     });
                 }
-                if (this.f33808b.get() != 0 || !this.f33807a.isEmpty()) {
+                if (this.f33811b.get() != 0 || !this.f33810a.isEmpty()) {
                     z = false;
                 }
             }
@@ -185,35 +185,35 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
                     runnable2.run();
                 }
             }
-            if (z && (runnable = this.f33805N) != null) {
+            if (z && (runnable = this.f33808N) != null) {
                 runnable.run();
             }
         }
     }
 
     public static class C10539c {
-        public C11131y6 f33810a;
-        public List<C11131y6> f33811b;
-        public int f33812c;
+        public C11131y6 f33813a;
+        public List<C11131y6> f33814b;
+        public int f33815c;
 
         public C10539c(C11131y6 y6Var, List<C11131y6> list, int i) {
-            this.f33810a = y6Var;
-            this.f33811b = list;
-            this.f33812c = i;
+            this.f33813a = y6Var;
+            this.f33814b = list;
+            this.f33815c = i;
         }
     }
 
     public static class HandlerC10540d extends Handler {
-        public final C10536ab f33813a;
+        public final C10536ab f33816a;
 
         public HandlerC10540d(C10536ab abVar) {
             super(Looper.getMainLooper());
-            this.f33813a = abVar;
+            this.f33816a = abVar;
         }
 
         @Override
         public void handleMessage(Message message) {
-            this.f33813a.m4712c1(message);
+            this.f33816a.m4712c1(message);
         }
     }
 
@@ -227,26 +227,26 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
 
     public C10536ab(int i) {
         C10537a aVar = new C10537a();
-        this.f33779R = aVar;
+        this.f33782R = aVar;
         Client.m14781q(new Client.AbstractC7863e() {
             @Override
             public final void mo3307a(Client client, String str, boolean z) {
                 C10536ab.this.m4815C1(client, str, z);
             }
         });
-        C4868i.m24726c2().m24570w();
-        C4367e0 e0Var = new C4367e0(C1379j0.m37315n(), this);
-        this.f33781T = e0Var;
+        C4868i.m24727c2().m24571w();
+        C4367e0 e0Var = new C4367e0(C1379j0.m37318n(), this);
+        this.f33784T = e0Var;
         C9773p0 p0Var = new C9773p0(this);
-        this.f33784W = p0Var;
-        this.f33783V = new C9726c(this, p0Var);
+        this.f33787W = p0Var;
+        this.f33786V = new C9726c(this, p0Var);
         m4731X1(i);
-        C4868i.m24726c2().m24609r(aVar);
+        C4868i.m24727c2().m24610r(aVar);
         m4707d2().m3051i();
-        e0Var.m28125b();
-        e0Var.m28126a().m28138o();
-        C1379j0.m37335d(this);
-        mo1641h(C1379j0.m37364F());
+        e0Var.m28127b();
+        e0Var.m28128a().m28140o();
+        C1379j0.m37338d(this);
+        mo1641h(C1379j0.m37367F());
         m4697g0();
     }
 
@@ -255,7 +255,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public static Set<String> m4820B0(boolean z) {
-        Set<String> set = z ? f33772q0 : f33773r0;
+        Set<String> set = z ? f33775q0 : f33776r0;
         if (set != null) {
             return set;
         }
@@ -263,9 +263,9 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
         HashSet hashSet = new HashSet(S0.length);
         Collections.addAll(hashSet, S0);
         if (z) {
-            f33772q0 = hashSet;
+            f33775q0 = hashSet;
         } else {
-            f33773r0 = hashSet;
+            f33776r0 = hashSet;
         }
         return hashSet;
     }
@@ -277,7 +277,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
                 countDownLatch.countDown();
             }
         }
-        C7903b.C7904a.m14399a(j, i, "Finished sync in %dms", Long.valueOf(SystemClock.uptimeMillis() - j2));
+        C7903b.C7904a.m14398a(j, i, "Finished sync in %dms", Long.valueOf(SystemClock.uptimeMillis() - j2));
     }
 
     public static int m4818B2() {
@@ -300,7 +300,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public void m4815C1(Client client, String str, boolean z) {
-        C4868i.m24726c2().m24774V5(m4646u0(client), str, 4);
+        C4868i.m24727c2().m24775V5(m4646u0(client), str, 4);
         if (z) {
             Tracer.m14769k(str);
         }
@@ -326,7 +326,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public static String m4812D0() {
-        File file = new File(C1379j0.m37309q().getFilesDir(), "langpack");
+        File file = new File(C1379j0.m37312q().getFilesDir(), "langpack");
         if (file.exists() || file.mkdir()) {
             return new File(file, "main").getPath();
         }
@@ -345,8 +345,8 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public static boolean m4807E1(C11131y6 y6Var, C11131y6 y6Var2, C11131y6 y6Var3) {
-        int i = y6Var3.f35705b;
-        return i == y6Var.f35705b || (y6Var2 != null && i == y6Var2.f35705b);
+        int i = y6Var3.f35708b;
+        return i == y6Var.f35708b || (y6Var2 != null && i == y6Var2.f35708b);
     }
 
     public static String m4804F0(boolean z) {
@@ -370,7 +370,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public void m4799G1(int i, TdApi.AuthorizationState authorizationState, int i2) {
-        m4716b1().m1544k(this.f33788a.get(i), authorizationState, i2);
+        m4716b1().m1544k(this.f33791a.get(i), authorizationState, i2);
     }
 
     public static String m4796H0(boolean z) {
@@ -387,7 +387,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
         if (i == 0) {
             q6Var.m2440ga().m3062x1(fbVar);
         } else if (i == 1) {
-            q6Var.m2440ga().m3058y1(fbVar.f34135b);
+            q6Var.m2440ga().m3058y1(fbVar.f34138b);
         } else if (i == 2) {
             fbVar.m4339h(q6Var);
         } else if (i == 3) {
@@ -404,7 +404,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public static Set<String> m4788J0(boolean z) {
-        Set<String> set = z ? f33770o0 : f33771p0;
+        Set<String> set = z ? f33773o0 : f33774p0;
         if (set != null) {
             return set;
         }
@@ -412,16 +412,16 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
         HashSet hashSet = new HashSet(S0.length);
         Collections.addAll(hashSet, S0);
         if (z) {
-            f33770o0 = hashSet;
+            f33773o0 = hashSet;
         } else {
-            f33771p0 = hashSet;
+            f33774p0 = hashSet;
         }
         return hashSet;
     }
 
     public static void m4787J1(final Runnable runnable, final C10930q6 q6Var, final C10666fb fbVar, TdApi.Message message) {
         if (message == null) {
-            C1379j0.m37292y0(R.string.NotificationReplyFailed, 0);
+            C1379j0.m37295y0(R.string.NotificationReplyFailed, 0);
             if (runnable != null) {
                 runnable.run();
                 return;
@@ -438,10 +438,10 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
 
     public static void m4783K1(final C10666fb fbVar, CharSequence charSequence, final C10930q6 q6Var, final Runnable runnable) {
         long j;
-        long j2 = fbVar.f34136c;
-        long j3 = fbVar.f34137d;
-        if (fbVar.f34140g) {
-            long[] jArr = fbVar.f34142i;
+        long j2 = fbVar.f34139c;
+        long j3 = fbVar.f34140d;
+        if (fbVar.f34143g) {
+            long[] jArr = fbVar.f34145i;
             j = jArr[jArr.length - 1];
         } else {
             j = 0;
@@ -472,13 +472,13 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
 
     public static TdApi.LanguagePackStringValue m4776M0(String str, String str2, String str3) {
         TdApi.Object e;
-        if (C5070i.m24061i(str2) || (e = Client.m14793e(new TdApi.GetLanguagePackString(str, "android_x", str3, str2))) == null) {
+        if (C5070i.m24062i(str2) || (e = Client.m14793e(new TdApi.GetLanguagePackString(str, "android_x", str3, str2))) == null) {
             return null;
         }
         int constructor = e.getConstructor();
         if (constructor == -1679978726) {
             if (((TdApi.Error) e).code != 404) {
-                Log.m14724e("getString %s error:%s, languagePackId:%s", str2, C4779t2.m25378z5(e), str3);
+                Log.m14724e("getString %s error:%s, languagePackId:%s", str2, C4779t2.m25379z5(e), str3);
             }
             return null;
         } else if (constructor == -249256352 || constructor == 1906840261) {
@@ -516,7 +516,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
 
     public static String m4764P0() {
         try {
-            return C2060d.m35728a(C1379j0.m37311p());
+            return C2060d.m35731a(C1379j0.m37314p());
         } catch (Throwable unused) {
             return "en-US";
         }
@@ -540,7 +540,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public static String m4760Q0() {
-        return C2064f.m35725a() + " (" + Build.VERSION.SDK_INT + ")";
+        return C2064f.m35728a() + " (" + Build.VERSION.SDK_INT + ")";
     }
 
     public static void m4759Q1(AbstractC10542f fVar, C11131y6 y6Var, Runnable runnable) {
@@ -588,7 +588,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public static String m4744U0(int i, boolean z, boolean z2) {
-        File externalFilesDir = z ? C1379j0.m37315n().getExternalFilesDir(null) : null;
+        File externalFilesDir = z ? C1379j0.m37318n().getExternalFilesDir(null) : null;
         if (externalFilesDir != null) {
             if (i != 0) {
                 File file = new File(externalFilesDir, "x_account" + i);
@@ -602,11 +602,11 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
                 }
                 externalFilesDir = file;
             }
-            return C4779t2.m25642M4(externalFilesDir.getPath());
+            return C4779t2.m25643M4(externalFilesDir.getPath());
         } else if (z && !z2) {
             return null;
         } else {
-            File filesDir = C1379j0.m37309q().getFilesDir();
+            File filesDir = C1379j0.m37312q().getFilesDir();
             String str = "tdlib";
             if (i != 0) {
                 str = str + i;
@@ -620,7 +620,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
                     throw new IllegalStateException("Cannot create working directory: " + file2.getPath());
                 }
             }
-            return C4779t2.m25642M4(file2.getPath());
+            return C4779t2.m25643M4(file2.getPath());
         }
     }
 
@@ -639,7 +639,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public static File m4740V0() {
-        File file = new File(C1379j0.m37309q().getFilesDir(), "tgvoip");
+        File file = new File(C1379j0.m37312q().getFilesDir(), "tgvoip");
         if (file.exists() || file.mkdir()) {
             return file;
         }
@@ -647,14 +647,14 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public static AbstractC5912d<C11131y6> m4727Y1() {
-        return C10584ca.f33933a;
+        return C10584ca.f33936a;
     }
 
     public static boolean m4723Z1(Context context, final int i, int i2, long j, final boolean z, long j2) {
         boolean z2;
         final long uptimeMillis = SystemClock.uptimeMillis();
-        C1379j0.m37356L(context);
-        long b3 = j == 0 ? C4868i.m24726c2().m24733b3() : j;
+        C1379j0.m37359L(context);
+        long b3 = j == 0 ? C4868i.m24727c2().m24734b3() : j;
         CountDownLatch countDownLatch = null;
         AtomicBoolean atomicBoolean = z ? new AtomicBoolean(false) : null;
         if (z) {
@@ -662,9 +662,9 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
         }
         final CountDownLatch countDownLatch2 = countDownLatch;
         if (i == -1) {
-            C7903b.C7904a.m14399a(b3, i, "Performing sync for all accounts, cause: %d, synchronized: %b, timeout: %d, initialized in: %d", Integer.valueOf(i2), Boolean.valueOf(z), Long.valueOf(j2), Long.valueOf(SystemClock.uptimeMillis() - uptimeMillis));
+            C7903b.C7904a.m14398a(b3, i, "Performing sync for all accounts, cause: %d, synchronized: %b, timeout: %d, initialized in: %d", Integer.valueOf(i2), Boolean.valueOf(z), Long.valueOf(j2), Long.valueOf(SystemClock.uptimeMillis() - uptimeMillis));
         } else {
-            C7903b.C7904a.m14399a(b3, i, "Performing sync for account, cause: %d, synchronized: %b, timeout: %d, initialized in: %d", Integer.valueOf(i2), Boolean.valueOf(z), Long.valueOf(j2), Long.valueOf(SystemClock.uptimeMillis() - uptimeMillis));
+            C7903b.C7904a.m14398a(b3, i, "Performing sync for account, cause: %d, synchronized: %b, timeout: %d, initialized in: %d", Integer.valueOf(i2), Boolean.valueOf(z), Long.valueOf(j2), Long.valueOf(SystemClock.uptimeMillis() - uptimeMillis));
         }
         final AtomicBoolean atomicBoolean2 = atomicBoolean;
         final long j3 = b3;
@@ -685,7 +685,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
                 countDownLatch2.await();
             }
         } catch (InterruptedException unused) {
-            C7903b.C7904a.m14399a(j4, i, "Sync was interrupted, elapsed: %dms", Long.valueOf(SystemClock.uptimeMillis() - uptimeMillis));
+            C7903b.C7904a.m14398a(j4, i, "Sync was interrupted, elapsed: %dms", Long.valueOf(SystemClock.uptimeMillis() - uptimeMillis));
         }
         synchronized (atomicBoolean) {
             z2 = atomicBoolean.get();
@@ -704,12 +704,12 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public static int m4685i3(RandomAccessFile randomAccessFile, C10539c cVar) {
-        int size = cVar.f33811b.size();
+        int size = cVar.f33814b.size();
         randomAccessFile.setLength(m4717b0(size));
         randomAccessFile.writeInt(size);
-        randomAccessFile.writeInt(cVar.f33812c);
+        randomAccessFile.writeInt(cVar.f33815c);
         int i = 0;
-        for (C11131y6 y6Var : cVar.f33811b) {
+        for (C11131y6 y6Var : cVar.f33814b) {
             y6Var.m1493R(randomAccessFile);
             i++;
         }
@@ -784,30 +784,30 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
         } else {
             j = m4668o0(false);
         }
-        C4868i.m24726c2().m24570w();
+        C4868i.m24727c2().m24571w();
         return j;
     }
 
     public static C10536ab m4664p1(int i) {
-        if (f33769n0 == null) {
+        if (f33772n0 == null) {
             synchronized (C10536ab.class) {
-                if (f33769n0 == null) {
-                    if (!f33768m0.getAndSet(true)) {
-                        f33769n0 = new C10536ab(i);
+                if (f33772n0 == null) {
+                    if (!f33771m0.getAndSet(true)) {
+                        f33772n0 = new C10536ab(i);
                     } else {
                         throw new AssertionError();
                     }
                 }
             }
         }
-        return f33769n0;
+        return f33772n0;
     }
 
     public void m4657r1(int i, int i2, AbstractC5917i iVar) {
-        Log.m14721i((int) Log.TAG_ACCOUNTS, "Switching preferred account %d -> %d, reason:%d", Integer.valueOf(this.f33790b), Integer.valueOf(i), Integer.valueOf(i2));
-        int i3 = this.f33790b;
-        this.f33790b = i;
-        m4695g2(this.f33788a.get(i), i2, (i3 < 0 || i3 >= this.f33788a.size()) ? null : this.f33788a.get(i3));
+        Log.m14721i((int) Log.TAG_ACCOUNTS, "Switching preferred account %d -> %d, reason:%d", Integer.valueOf(this.f33793b), Integer.valueOf(i), Integer.valueOf(i2));
+        int i3 = this.f33793b;
+        this.f33793b = i;
+        m4695g2(this.f33791a.get(i), i2, (i3 < 0 || i3 >= this.f33791a.size()) ? null : this.f33791a.get(i3));
         m4766O2(i);
         if (iVar != null) {
             iVar.mo1322a(true);
@@ -816,7 +816,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
 
     public static void m4656r2(Context context, final int i, final C10666fb fbVar) {
         if (fbVar != null) {
-            int i2 = fbVar.f34134a;
+            int i2 = fbVar.f34137a;
             m4648t2(context, i2, "external:" + i, new AbstractC10541e() {
                 @Override
                 public final void mo3003a(C10930q6 q6Var, Runnable runnable) {
@@ -827,7 +827,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public void m4653s1(final int i, final AbstractC5917i iVar, final int i2) {
-        if (!this.f33788a.get(i).m1500K()) {
+        if (!this.f33791a.get(i).m1500K()) {
             m4798G2(new Runnable() {
                 @Override
                 public final void run() {
@@ -840,8 +840,8 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public static void m4652s2(Context context, final CharSequence charSequence, final C10666fb fbVar) {
-        if (fbVar != null && fbVar.f34142i != null && !C5070i.m24061i(charSequence)) {
-            m4648t2(context, fbVar.f34134a, "reply", new AbstractC10541e() {
+        if (fbVar != null && fbVar.f34145i != null && !C5070i.m24062i(charSequence)) {
+            m4648t2(context, fbVar.f34137a, "reply", new AbstractC10541e() {
                 @Override
                 public final void mo3003a(C10930q6 q6Var, Runnable runnable) {
                     C10536ab.m4783K1(C10666fb.this, charSequence, q6Var, runnable);
@@ -853,7 +853,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     public void m4649t1(Exception exc) {
         String str;
         Log.m14728e(4, "Failed to retrieve firebase token", exc, new Object[0]);
-        if (C5070i.m24061i(exc.getMessage())) {
+        if (C5070i.m24062i(exc.getMessage())) {
             str = Log.toString(exc);
         } else {
             str = exc.getClass().getSimpleName() + ": " + exc.getMessage();
@@ -863,7 +863,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
 
     public static void m4648t2(Context context, final int i, final String str, final AbstractC10541e eVar, final AbstractC5912d<C11131y6> dVar) {
         final long uptimeMillis = SystemClock.uptimeMillis();
-        C1379j0.m37356L(context);
+        C1379j0.m37359L(context);
         final C10536ab p1 = m4664p1(i);
         p1.m4794H2(new AbstractC5918j() {
             @Override
@@ -874,7 +874,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public void m4645u1(String str) {
-        C7903b.C7904a.m14398b("FirebaseMessaging.getInstance().getToken(): \"%s\"", str);
+        C7903b.C7904a.m14397b("FirebaseMessaging.getInstance().getToken(): \"%s\"", str);
         m4754R2(str);
     }
 
@@ -883,7 +883,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public static File m4638w0() {
-        return new File(C1379j0.m37315n().getFilesDir(), "tdlib_accounts.bin");
+        return new File(C1379j0.m37318n().getFilesDir(), "tdlib_accounts.bin");
     }
 
     public static boolean m4637w1(C11131y6 y6Var) {
@@ -895,7 +895,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public int m4633x1(C11131y6 y6Var, C11131y6 y6Var2) {
-        C11131y6 y6Var3 = this.f33792c;
+        C11131y6 y6Var3 = this.f33795c;
         boolean z = true;
         if ((y6Var == y6Var3) == (y6Var2 == y6Var3)) {
             return y6Var.compareTo(y6Var2);
@@ -912,7 +912,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public void m4625z1(C11131y6 y6Var) {
-        Iterator<C11131y6> it = this.f33788a.iterator();
+        Iterator<C11131y6> it = this.f33791a.iterator();
         while (it.hasNext()) {
             C11131y6 next = it.next();
             if (next != y6Var) {
@@ -935,7 +935,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
         ArrayList arrayList = new ArrayList(readInt);
         for (int i2 = 0; i2 < readInt; i2++) {
             C11131y6 y6Var2 = new C11131y6(abVar, i2, randomAccessFile, i);
-            if (!y6Var2.m1500K() && (i2 == readInt2 || y6Var == null || y6Var.f35705b < readInt2)) {
+            if (!y6Var2.m1500K() && (i2 == readInt2 || y6Var == null || y6Var.f35708b < readInt2)) {
                 y6Var = y6Var2;
             }
             arrayList.add(y6Var2);
@@ -945,13 +945,13 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public int m4824A0() {
-        return this.f33799i0.size();
+        return this.f33802i0.size();
     }
 
     public final void m4822A2() {
         C10539c cVar = null;
-        this.f33792c = null;
-        this.f33790b = 0;
+        this.f33795c = null;
+        this.f33793b = 0;
         File w0 = m4638w0();
         if (w0.exists()) {
             try {
@@ -971,40 +971,40 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
             }
         }
         if (cVar != null) {
-            this.f33790b = cVar.f33812c;
-            this.f33792c = cVar.f33810a;
-            this.f33788a.addAll(cVar.f33811b);
-            C11131y6 y6Var = this.f33792c;
+            this.f33793b = cVar.f33815c;
+            this.f33795c = cVar.f33813a;
+            this.f33791a.addAll(cVar.f33814b);
+            C11131y6 y6Var = this.f33795c;
             if (y6Var != null) {
                 y6Var.m1496O();
             }
-            for (C11131y6 y6Var2 : cVar.f33811b) {
+            for (C11131y6 y6Var2 : cVar.f33814b) {
                 m4701f0(y6Var2);
             }
         }
-        if (this.f33788a.isEmpty()) {
+        if (this.f33791a.isEmpty()) {
             C11131y6 y6Var3 = new C11131y6(this, 0, false);
-            this.f33788a.add(y6Var3);
+            this.f33791a.add(y6Var3);
             m4701f0(y6Var3);
         }
-        if (this.f33792c == null) {
-            if (this.f33790b >= this.f33788a.size() || this.f33790b < 0) {
-                Log.m14724e("preferredAccountId=%d is not in range 0..%d", Integer.valueOf(this.f33790b), Integer.valueOf(this.f33788a.size()));
-                this.f33790b = 0;
+        if (this.f33795c == null) {
+            if (this.f33793b >= this.f33791a.size() || this.f33793b < 0) {
+                Log.m14724e("preferredAccountId=%d is not in range 0..%d", Integer.valueOf(this.f33793b), Integer.valueOf(this.f33791a.size()));
+                this.f33793b = 0;
             }
-            C11131y6 y6Var4 = this.f33788a.get(this.f33790b);
-            this.f33792c = y6Var4;
+            C11131y6 y6Var4 = this.f33791a.get(this.f33793b);
+            this.f33795c = y6Var4;
             y6Var4.m1496O();
         }
     }
 
     public final boolean m4810D2() {
-        synchronized (this.f33800j0) {
-            if (this.f33802l0 > 0) {
-                PowerManager.WakeLock wakeLock = this.f33801k0;
+        synchronized (this.f33803j0) {
+            if (this.f33805l0 > 0) {
+                PowerManager.WakeLock wakeLock = this.f33804k0;
                 if (wakeLock != null) {
                     wakeLock.release();
-                    this.f33802l0--;
+                    this.f33805l0--;
                 } else {
                     throw new NullPointerException();
                 }
@@ -1016,13 +1016,13 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public void m4806E2(int i, int i2) {
-        Iterator<C11131y6> it = this.f33788a.iterator();
+        Iterator<C11131y6> it = this.f33791a.iterator();
         while (it.hasNext()) {
             C11131y6 next = it.next();
             if (next.m1509B(false)) {
                 next.mo1480c().m2294pc().m4120g0(i, i2);
             } else {
-                C10733ic.m4118h0(next.f35705b, i, i2);
+                C10733ic.m4118h0(next.f35708b, i, i2);
             }
         }
     }
@@ -1035,7 +1035,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public void m4798G2(Runnable runnable) {
-        C1379j0.m37334d0(runnable);
+        C1379j0.m37337d0(runnable);
     }
 
     public void m4794H2(final AbstractC5918j<CountDownLatch> jVar) {
@@ -1072,11 +1072,11 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public final void m4786J2(C11131y6 y6Var, int i) {
-        m4782K2(0, y6Var.f35705b);
+        m4782K2(0, y6Var.f35708b);
     }
 
     public C4868i.C4873e m4784K0() {
-        return this.f33780S;
+        return this.f33783S;
     }
 
     public final synchronized void m4782K2(int i, int i2) {
@@ -1126,11 +1126,11 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public final TdApi.LanguagePackStringValue m4780L0(String str, String str2) {
-        return m4776M0(this.f33782U, str, str2);
+        return m4776M0(this.f33785U, str, str2);
     }
 
     public final void m4778L2(C11131y6 y6Var) {
-        m4782K2(4, y6Var.f35705b);
+        m4782K2(4, y6Var.f35708b);
         y6Var.m1497N(false);
     }
 
@@ -1151,7 +1151,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public final void m4770N2(C11131y6 y6Var) {
-        m4782K2(1, y6Var.f35705b);
+        m4782K2(1, y6Var.f35708b);
     }
 
     public TdApi.LanguagePackStringValueOrdinary m4768O0(String str, String str2) {
@@ -1171,7 +1171,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public final void m4762P2() {
-        Iterator<C11131y6> it = this.f33799i0.iterator();
+        Iterator<C11131y6> it = this.f33802i0.iterator();
         int i = 0;
         while (it.hasNext()) {
             it.next().m1477d0(i);
@@ -1190,9 +1190,9 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public synchronized void m4754R2(String str) {
-        if (!C5070i.m24067c(this.f33798h0, str)) {
-            C4868i.m24726c2().m24572v4(str);
-            this.f33798h0 = str;
+        if (!C5070i.m24068c(this.f33801h0, str)) {
+            C4868i.m24727c2().m24573v4(str);
+            this.f33801h0 = str;
             m4714b3(3, null);
             m4658r0(str);
         }
@@ -1206,13 +1206,13 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public void m4746T2(boolean z) {
-        C4868i.m24726c2().m24852K4(z);
-        m4693h0(this.f33792c);
+        C4868i.m24727c2().m24853K4(z);
+        m4693h0(this.f33795c);
     }
 
     public C11131y6 m4745U(int i) {
         if (i != -1) {
-            return this.f33788a.get(i);
+            return this.f33791a.get(i);
         }
         throw new IllegalArgumentException();
     }
@@ -1229,7 +1229,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public String m4739V1() {
-        return this.f33782U;
+        return this.f33785U;
     }
 
     public void m4738V2(int i, boolean z) {
@@ -1242,7 +1242,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     public final LinkedList<C11131y6> m4737W(AbstractC5912d<C11131y6> dVar) {
         LinkedList<C11131y6> linkedList = new LinkedList<>();
         if (dVar != null) {
-            for (int size = this.f33788a.size() - 1; size >= 0; size--) {
+            for (int size = this.f33791a.size() - 1; size >= 0; size--) {
                 C11131y6 U = m4745U(size);
                 if (dVar.mo1511a(U)) {
                     linkedList.add(U);
@@ -1258,19 +1258,19 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public String m4736W0() {
-        return this.f33798h0;
+        return this.f33801h0;
     }
 
     public C10651f1 m4735W1() {
-        return this.f33776O;
+        return this.f33779O;
     }
 
     public void m4734W2(boolean z) {
-        if (this.f33786Y != z) {
-            this.f33786Y = z;
-            Iterator<C11131y6> it = this.f33788a.iterator();
+        if (this.f33789Y != z) {
+            this.f33789Y = z;
+            Iterator<C11131y6> it = this.f33791a.iterator();
             while (it.hasNext()) {
-                C10930q6 q6Var = it.next().f35695P;
+                C10930q6 q6Var = it.next().f35698P;
                 if (q6Var != null) {
                     q6Var.m2563Yb(z);
                 }
@@ -1279,32 +1279,32 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public final boolean m4733X() {
-        synchronized (this.f33800j0) {
-            if (this.f33801k0 == null) {
-                PowerManager powerManager = (PowerManager) C1379j0.m37315n().getSystemService("power");
+        synchronized (this.f33803j0) {
+            if (this.f33804k0 == null) {
+                PowerManager powerManager = (PowerManager) C1379j0.m37318n().getSystemService("power");
                 if (powerManager == null) {
                     return false;
                 }
                 PowerManager.WakeLock newWakeLock = powerManager.newWakeLock(1, "tgx:main");
-                this.f33801k0 = newWakeLock;
+                this.f33804k0 = newWakeLock;
                 if (newWakeLock == null) {
                     return false;
                 }
                 newWakeLock.setReferenceCounted(true);
             }
-            this.f33801k0.acquire();
-            this.f33802l0++;
+            this.f33804k0.acquire();
+            this.f33805l0++;
             return true;
         }
     }
 
     public String m4732X0() {
-        return this.f33797g0;
+        return this.f33800g0;
     }
 
     public final void m4731X1(int i) {
         m4822A2();
-        final C11131y6 y6Var = i != -1 ? this.f33788a.get(i) : this.f33792c;
+        final C11131y6 y6Var = i != -1 ? this.f33791a.get(i) : this.f33795c;
         if (y6Var.m1497N(i != -1)) {
             y6Var.mo1480c().m2573Y1(new Runnable() {
                 @Override
@@ -1314,7 +1314,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
             });
             return;
         }
-        Iterator<C11131y6> it = this.f33788a.iterator();
+        Iterator<C11131y6> it = this.f33791a.iterator();
         while (it.hasNext()) {
             C11131y6 next = it.next();
             if (next != y6Var) {
@@ -1331,11 +1331,11 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public C9726c m4729Y() {
-        return this.f33783V;
+        return this.f33786V;
     }
 
     public int m4728Y0() {
-        return this.f33796f0;
+        return this.f33799f0;
     }
 
     public void m4726Y2(int i, boolean z) {
@@ -1347,7 +1347,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
 
     public long[] m4725Z(boolean z) {
         TreeSet<Long> treeSet = new TreeSet();
-        Iterator<C11131y6> it = this.f33788a.iterator();
+        Iterator<C11131y6> it = this.f33791a.iterator();
         while (it.hasNext()) {
             C11131y6 next = it.next();
             if (!next.m1500K() && next.m1504G() == z) {
@@ -1374,29 +1374,29 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public void m4722Z2(TdApi.NetworkType networkType) {
-        this.f33789a0 = networkType;
-        Iterator<C11131y6> it = this.f33788a.iterator();
+        this.f33792a0 = networkType;
+        Iterator<C11131y6> it = this.f33791a.iterator();
         while (it.hasNext()) {
             C11131y6 next = it.next();
             if (next.m1509B(false)) {
-                next.f35695P.m2438gc(networkType);
+                next.f35698P.m2438gc(networkType);
             }
         }
     }
 
     public final int m4721a0() {
-        return m4717b0(this.f33788a.size());
+        return m4717b0(this.f33791a.size());
     }
 
     public C11164z6 m4720a1(int i) {
         C11164z6 z6Var = new C11164z6();
         if (i == -1) {
-            boolean F = C4868i.m24726c2().m24892F(8);
-            boolean F2 = C4868i.m24726c2().m24892F(16);
+            boolean F = C4868i.m24727c2().m24893F(8);
+            boolean F2 = C4868i.m24727c2().m24893F(16);
             Iterator<C11131y6> it = iterator();
             while (it.hasNext()) {
                 C11131y6 next = it.next();
-                if (!F || next.f35705b == this.f33790b) {
+                if (!F || next.f35708b == this.f33793b) {
                     if (!F2 || next.m1464l()) {
                         z6Var.m1329a(next.m1452x());
                     }
@@ -1406,7 +1406,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
             Iterator<C11131y6> it2 = iterator();
             while (it2.hasNext()) {
                 C11131y6 next2 = it2.next();
-                if (next2.f35705b != i) {
+                if (next2.f35708b != i) {
                     z6Var.m1329a(next2.m1452x());
                 }
             }
@@ -1415,33 +1415,33 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public void m4719a2(C10930q6 q6Var, Client client) {
-        if (this.f33786Y) {
+        if (this.f33789Y) {
             client.m14783o(new TdApi.SetOption("is_emulator", new TdApi.OptionValueBoolean(true)), q6Var.m2392ja());
         }
-        TdApi.NetworkType networkType = this.f33789a0;
+        TdApi.NetworkType networkType = this.f33792a0;
         if (networkType != null) {
             client.m14783o(new TdApi.SetNetworkType(networkType), q6Var.m2392ja());
-        } else if (C4868i.m24726c2().m24736b0()) {
+        } else if (C4868i.m24727c2().m24737b0()) {
             client.m14783o(new TdApi.SetNetworkType(new TdApi.NetworkTypeNone()), q6Var.m2392ja());
         }
     }
 
     public C11071v9 m4716b1() {
-        return this.f33774M;
+        return this.f33777M;
     }
 
     public void m4715b2(int i, int i2) {
         if (i != i2) {
-            C5062b.m24149w(this.f33799i0, i, i2);
+            C5062b.m24150w(this.f33802i0, i, i2);
             m4762P2();
-            m4716b1().m1548g(this.f33799i0.get(i), i, i2);
+            m4716b1().m1548g(this.f33802i0.get(i), i, i2);
         }
     }
 
     public final synchronized void m4714b3(int i, String str) {
-        if (this.f33796f0 != 3 || i == 3) {
-            this.f33796f0 = i;
-            this.f33797g0 = str;
+        if (this.f33799f0 != 3 || i == 3) {
+            this.f33799f0 = i;
+            this.f33800g0 = str;
             Iterator<C11131y6> it = m4737W(m4727Y1()).iterator();
             while (it.hasNext()) {
                 C11131y6 next = it.next();
@@ -1453,7 +1453,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public C10552b0 m4713c0() {
-        return this.f33778Q;
+        return this.f33781Q;
     }
 
     public final void m4712c1(Message message) {
@@ -1463,7 +1463,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
             C11071v9 b1 = m4716b1();
             C10930q6 q6Var = (C10930q6) message.obj;
             int i2 = message.arg2;
-            if (this.f33792c.f35705b == message.arg1) {
+            if (this.f33795c.f35708b == message.arg1) {
                 z = true;
             }
             b1.m1541n(q6Var, i2, z);
@@ -1478,7 +1478,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
         } else if (i == 4) {
             C11131y6 U = m4745U(message.arg1);
             TdApi.User user = (TdApi.User) message.obj;
-            boolean z2 = message.arg1 == this.f33792c.f35705b;
+            boolean z2 = message.arg1 == this.f33795c.f35708b;
             if (message.arg2 == 1) {
                 z = true;
             }
@@ -1486,7 +1486,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
         } else if (i == 5) {
             C11131y6 U2 = m4745U(message.arg1);
             boolean z3 = message.arg2 == 1;
-            if (message.arg1 == this.f33792c.f35705b) {
+            if (message.arg1 == this.f33795c.f35708b) {
                 z = true;
             }
             m4699f2(U2, z3, z);
@@ -1501,28 +1501,28 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public int m4711c2(boolean z) {
-        Iterator<C11131y6> it = this.f33788a.iterator();
+        Iterator<C11131y6> it = this.f33791a.iterator();
         while (it.hasNext()) {
             C11131y6 next = it.next();
-            if (next.f35705b != this.f33792c.f35705b && next.m1500K() && !next.m1502I()) {
+            if (next.f35708b != this.f33795c.f35708b && next.m1500K() && !next.m1502I()) {
                 if (next.m1485Z(z)) {
                     m4778L2(next);
                 }
-                return next.f35705b;
+                return next.f35708b;
             }
         }
-        if (this.f33788a.size() >= 65535) {
+        if (this.f33791a.size() >= 65535) {
             return -1;
         }
-        C11131y6 y6Var = new C11131y6(this, this.f33788a.size(), z);
-        this.f33788a.add(y6Var);
+        C11131y6 y6Var = new C11131y6(this, this.f33791a.size(), z);
+        this.f33791a.add(y6Var);
         y6Var.m1496O();
         y6Var.mo1480c();
         m4770N2(y6Var);
         if (m4701f0(y6Var)) {
             m4693h0(y6Var);
         }
-        return y6Var.f35705b;
+        return y6Var.f35708b;
     }
 
     public void m4710c3(final long j, int i, Runnable runnable, final boolean z, final boolean z2, int i2, final AbstractC5918j<C10930q6> jVar) {
@@ -1539,11 +1539,11 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public boolean m4708d1(int i) {
-        return i >= 0 && i < this.f33788a.size();
+        return i >= 0 && i < this.f33791a.size();
     }
 
     public C10827lb.C10828a m4707d2() {
-        return this.f33777P;
+        return this.f33780P;
     }
 
     public C10930q6 m4706d3(int i) {
@@ -1551,14 +1551,14 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public void m4705e0(final int i, final int i2, final AbstractC5917i iVar) {
-        if (this.f33790b == i) {
+        if (this.f33793b == i) {
             if (iVar != null) {
                 iVar.mo1322a(false);
             }
-        } else if (i < 0 || i >= this.f33788a.size()) {
+        } else if (i < 0 || i >= this.f33791a.size()) {
             throw new IllegalArgumentException("accountId == " + i);
-        } else if (!this.f33788a.get(i).m1500K()) {
-            this.f33788a.get(i).mo1480c().m2573Y1(new Runnable() {
+        } else if (!this.f33791a.get(i).m1500K()) {
+            this.f33791a.get(i).mo1480c().m2573Y1(new Runnable() {
                 @Override
                 public final void run() {
                     C10536ab.this.m4653s1(i, iVar, i2);
@@ -1570,10 +1570,10 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public int m4704e1(String str, int i) {
-        for (int size = this.f33788a.size() - 1; size >= 0; size--) {
-            C11131y6 y6Var = this.f33788a.get(size);
-            if (!(y6Var.f35705b == i || y6Var.m1500K() || !C5070i.m24067c(str, y6Var.m1459q()))) {
-                return y6Var.f35705b;
+        for (int size = this.f33791a.size() - 1; size >= 0; size--) {
+            C11131y6 y6Var = this.f33791a.get(size);
+            if (!(y6Var.f35708b == i || y6Var.m1500K() || !C5070i.m24068c(str, y6Var.m1459q()))) {
+                return y6Var.f35708b;
             }
         }
         return -1;
@@ -1592,11 +1592,11 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
         Iterator<C11131y6> it = iterator();
         while (it.hasNext()) {
             C11131y6 next = it.next();
-            if (next.m1504G() == z && next.f35705b != i) {
+            if (next.m1504G() == z && next.f35708b != i) {
                 long r = next.m1458r();
                 if (r == 0 || Arrays.binarySearch(jArr, r) < 0) {
-                    Log.m14721i(4, "Unregistered accountId:%d userId:%d", Integer.valueOf(next.f35705b), Long.valueOf(r));
-                    m4758Q2(next.f35705b, false);
+                    Log.m14721i(4, "Unregistered accountId:%d userId:%d", Integer.valueOf(next.f35708b), Long.valueOf(r));
+                    m4758Q2(next.f35708b, false);
                 }
             }
         }
@@ -1604,20 +1604,20 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
 
     public final boolean m4701f0(C11131y6 y6Var) {
         boolean z = !y6Var.m1500K() && y6Var.m1450z();
-        int indexOf = this.f33799i0.indexOf(y6Var);
+        int indexOf = this.f33802i0.indexOf(y6Var);
         if (indexOf == -1 && z) {
-            indexOf = Collections.binarySearch(this.f33799i0, y6Var);
+            indexOf = Collections.binarySearch(this.f33802i0, y6Var);
         }
         if (z) {
             if (indexOf >= 0) {
                 return false;
             }
             indexOf = (-indexOf) - 1;
-            this.f33799i0.add(indexOf, y6Var);
+            this.f33802i0.add(indexOf, y6Var);
         } else if (indexOf < 0) {
             return false;
         } else {
-            this.f33799i0.remove(indexOf);
+            this.f33802i0.remove(indexOf);
         }
         m4716b1().m1549f(y6Var, indexOf, z);
         m4802F2();
@@ -1626,10 +1626,10 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public int m4700f1(String str, String str2, int i) {
-        for (int size = this.f33788a.size() - 1; size >= 0; size--) {
-            C11131y6 y6Var = this.f33788a.get(size);
-            if (y6Var.f35705b != i && !y6Var.m1500K() && C5070i.m24067c(str, y6Var.m1459q()) && C5070i.m24067c(str2, y6Var.m1457s())) {
-                return y6Var.f35705b;
+        for (int size = this.f33791a.size() - 1; size >= 0; size--) {
+            C11131y6 y6Var = this.f33791a.get(size);
+            if (y6Var.f35708b != i && !y6Var.m1500K() && C5070i.m24068c(str, y6Var.m1459q()) && C5070i.m24068c(str2, y6Var.m1457s())) {
+                return y6Var.f35708b;
             }
         }
         return -1;
@@ -1643,18 +1643,18 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
 
     public final void m4698f3(boolean z, boolean z2) {
         try {
-            C0245c.m42022a(C1379j0.m37315n(), m4724Z0().m1328b());
-            this.f33787Z = false;
+            C0245c.m42025a(C1379j0.m37318n(), m4724Z0().m1328b());
+            this.f33790Z = false;
         } catch (Throwable th) {
-            if (!this.f33787Z) {
-                this.f33787Z = true;
+            if (!this.f33790Z) {
+                this.f33790Z = true;
                 Log.m14715v("Could not update app badge", th, new Object[0]);
             }
         }
     }
 
     public void finalize() {
-        this.f33781T.m28124c();
+        this.f33784T.m28126c();
         super.finalize();
     }
 
@@ -1667,38 +1667,38 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
             }
         };
         try {
-            C2021c.m35809n(C1379j0.m37315n());
-            FirebaseMessaging.m30227f().m30225h().mo19074g(new AbstractC6767h() {
+            C2021c.m35812n(C1379j0.m37318n());
+            FirebaseMessaging.m30229f().m30227h().mo19075g(new AbstractC6767h() {
                 @Override
                 public final void mo3951a(Object obj) {
                     C10536ab.this.m4645u1((String) obj);
                 }
-            }).mo19076e(iaVar);
+            }).mo19077e(iaVar);
         } catch (Exception e) {
             iaVar.mo4157c(e);
         }
     }
 
     public int m4696g1(String str, boolean z) {
-        Iterator<C11131y6> it = this.f33788a.iterator();
+        Iterator<C11131y6> it = this.f33791a.iterator();
         while (it.hasNext()) {
             C11131y6 next = it.next();
             if (next.m1504G() == z && next.m1472g(str) && !next.m1500K() && !next.m1502I()) {
-                return next.f35705b;
+                return next.f35708b;
             }
         }
         return -1;
     }
 
     public final void m4695g2(final C11131y6 y6Var, int i, final C11131y6 y6Var2) {
-        this.f33792c = y6Var;
+        this.f33795c = y6Var;
         if (y6Var2 != null) {
             y6Var2.m1496O();
         }
         y6Var.m1496O();
         m4716b1().m1545j(y6Var, y6Var.mo1480c().m2550Z9(), i, y6Var2);
         m4686i2(y6Var.mo1480c(), y6Var.mo1480c().m2142z4());
-        if (C4868i.m24726c2().m24892F(8)) {
+        if (C4868i.m24727c2().m24893F(8)) {
             m4663p2(null, new AbstractC5912d() {
                 @Override
                 public final boolean mo1511a(Object obj) {
@@ -1711,15 +1711,15 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public C4363d0 m4694g3() {
-        return this.f33781T.m28126a();
+        return this.f33784T.m28128a();
     }
 
     @Override
     public void mo1641h(int i) {
         boolean z = (i == 2 || i == -1) ? false : true;
-        if (this.f33785X != z) {
-            this.f33785X = z;
-            Iterator<C11131y6> it = this.f33788a.iterator();
+        if (this.f33788X != z) {
+            this.f33788X = z;
+            Iterator<C11131y6> it = this.f33791a.iterator();
             while (it.hasNext()) {
                 C11131y6 next = it.next();
                 if (next.m1509B(true)) {
@@ -1730,7 +1730,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public void m4693h0(C11131y6 y6Var) {
-        Iterator<C11131y6> it = this.f33788a.iterator();
+        Iterator<C11131y6> it = this.f33791a.iterator();
         while (it.hasNext()) {
             C11131y6 next = it.next();
             if (next != y6Var && next.m1509B(true)) {
@@ -1748,7 +1748,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
             final int w6 = q6Var.m2188w6();
             boolean z = true;
             boolean z2 = i == 1;
-            C11131y6 y6Var = this.f33788a.get(w6);
+            C11131y6 y6Var = this.f33791a.get(w6);
             if (y6Var.m1500K() == z2) {
                 z = false;
             }
@@ -1759,7 +1759,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
                 if (m4701f0(y6Var)) {
                     m4693h0(null);
                 }
-                if (z2 && w6 == this.f33790b) {
+                if (z2 && w6 == this.f33793b) {
                     m4798G2(new Runnable() {
                         @Override
                         public final void run() {
@@ -1778,29 +1778,29 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public final int m4690h3(RandomAccessFile randomAccessFile, int i, int i2) {
-        int size = this.f33788a.size();
+        int size = this.f33791a.size();
         int a0 = m4721a0();
         long length = randomAccessFile.length();
         boolean z = i == 0 ? !(i2 == -1 || length != ((long) a0)) : !(i == 1 ? i2 == -1 || 21 + length != ((long) a0) : length != ((long) a0));
-        Log.m14721i((int) Log.TAG_ACCOUNTS, "Writing account configuration, accountNum:%d, preferredAccountId:%d, mode:%d, canOptimize:%b, accountId:%d, binlogSize:%d, currentLen:%d", Integer.valueOf(size), Integer.valueOf(this.f33790b), Integer.valueOf(i), Boolean.valueOf(z), Integer.valueOf(i2), Integer.valueOf(a0), Long.valueOf(length));
+        Log.m14721i((int) Log.TAG_ACCOUNTS, "Writing account configuration, accountNum:%d, preferredAccountId:%d, mode:%d, canOptimize:%b, accountId:%d, binlogSize:%d, currentLen:%d", Integer.valueOf(size), Integer.valueOf(this.f33793b), Integer.valueOf(i), Boolean.valueOf(z), Integer.valueOf(i2), Integer.valueOf(a0), Long.valueOf(length));
         if (!z) {
-            return m4685i3(randomAccessFile, new C10539c(this.f33792c, this.f33788a, this.f33790b));
+            return m4685i3(randomAccessFile, new C10539c(this.f33795c, this.f33791a, this.f33793b));
         }
         int i3 = 8;
         if (i == 0) {
             randomAccessFile.seek((i2 * 21) + 8);
-            this.f33788a.get(i2).m1493R(randomAccessFile);
+            this.f33791a.get(i2).m1493R(randomAccessFile);
         } else if (i == 1) {
             randomAccessFile.setLength(a0);
             randomAccessFile.writeInt(size);
             randomAccessFile.seek(length);
-            this.f33788a.get(i2).m1493R(randomAccessFile);
+            this.f33791a.get(i2).m1493R(randomAccessFile);
         } else if (i == 2) {
             randomAccessFile.seek(4L);
             randomAccessFile.writeInt(i2);
             return 0;
         } else if (i == 3) {
-            Iterator<C11131y6> it = this.f33788a.iterator();
+            Iterator<C11131y6> it = this.f33791a.iterator();
             int i4 = 0;
             while (it.hasNext()) {
                 i3 = it.next().m1491T(randomAccessFile, i3);
@@ -1810,9 +1810,9 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
         } else if (i != 4) {
             throw new IllegalArgumentException("mode == ");
         } else if (i2 != -1) {
-            this.f33788a.get(i2).m1492S(randomAccessFile, (i2 * 21) + 8);
+            this.f33791a.get(i2).m1492S(randomAccessFile, (i2 * 21) + 8);
         } else {
-            Iterator<C11131y6> it2 = this.f33788a.iterator();
+            Iterator<C11131y6> it2 = this.f33791a.iterator();
             int i5 = 0;
             while (it2.hasNext()) {
                 i3 = it2.next().m1492S(randomAccessFile, i3);
@@ -1824,31 +1824,31 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public void m4688i0(int i, boolean z, int i2) {
-        Iterator<C11131y6> it = this.f33788a.iterator();
+        Iterator<C11131y6> it = this.f33791a.iterator();
         while (it.hasNext()) {
             C11131y6 next = it.next();
             if (next.m1509B(false)) {
                 next.mo1480c().m2294pc().m4101q(i, z, i2);
             } else {
-                C10733ic.m4103p(next.f35705b, i, z, i2);
+                C10733ic.m4103p(next.f35708b, i, z, i2);
             }
         }
     }
 
     public boolean m4687i1() {
-        return this.f33785X;
+        return this.f33788X;
     }
 
     public void m4686i2(C10930q6 q6Var, int i) {
         if (i != -1) {
-            HandlerC10540d dVar = this.f33775N;
+            HandlerC10540d dVar = this.f33778N;
             dVar.sendMessage(Message.obtain(dVar, 0, q6Var.m2188w6(), i));
         }
     }
 
     @Override
     public Iterator<C11131y6> iterator() {
-        ArrayList arrayList = new ArrayList(this.f33788a);
+        ArrayList arrayList = new ArrayList(this.f33791a);
         Collections.sort(arrayList, new Comparator() {
             @Override
             public final int compare(Object obj, Object obj2) {
@@ -1857,28 +1857,28 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
                 return x1;
             }
         });
-        return new C6813d(arrayList.iterator(), C10608da.f33998a);
+        return new C6813d(arrayList.iterator(), C10608da.f34001a);
     }
 
     public C10930q6 m4684j0() {
-        return this.f33792c.mo1480c();
+        return this.f33795c.mo1480c();
     }
 
     public void m4682j2(int i, int i2) {
-        HandlerC10540d dVar = this.f33775N;
+        HandlerC10540d dVar = this.f33778N;
         dVar.sendMessage(Message.obtain(dVar, 1, i, i2));
     }
 
     public C11131y6 m4681k0() {
-        return this.f33792c;
+        return this.f33795c;
     }
 
     public boolean m4680k1() {
-        return this.f33780S != null;
+        return this.f33783S != null;
     }
 
     public void m4679k2(int i, long j) {
-        C11131y6 y6Var = this.f33788a.get(i);
+        C11131y6 y6Var = this.f33791a.get(i);
         if (y6Var.m1481b0(j)) {
             m4786J2(y6Var, 1);
             if (j != 0) {
@@ -1888,20 +1888,20 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public C10930q6 m4678l0() {
-        return this.f33792c.m1467i0();
+        return this.f33795c.m1467i0();
     }
 
     public void m4676l2(boolean z) {
-        HandlerC10540d dVar = this.f33775N;
+        HandlerC10540d dVar = this.f33778N;
         dVar.sendMessage(Message.obtain(dVar, 2, z ? 1 : 0, 0));
     }
 
     public void m4673m1(C11131y6 y6Var) {
-        this.f33794d0++;
+        this.f33797d0++;
     }
 
     public void m4672m2(int i, TdApi.User user, boolean z) {
-        HandlerC10540d dVar = this.f33775N;
+        HandlerC10540d dVar = this.f33778N;
         dVar.sendMessage(Message.obtain(dVar, 4, i, z ? 1 : 0, user));
     }
 
@@ -1916,7 +1916,7 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public void m4669n2(int i, boolean z) {
-        HandlerC10540d dVar = this.f33775N;
+        HandlerC10540d dVar = this.f33778N;
         dVar.sendMessage(Message.obtain(dVar, 5, i, z ? 1 : 0));
     }
 
@@ -1937,19 +1937,19 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public void m4662q0(int i) {
-        Iterator<C11131y6> it = this.f33788a.iterator();
+        Iterator<C11131y6> it = this.f33791a.iterator();
         while (it.hasNext()) {
             C11131y6 next = it.next();
             if (next.m1509B(false)) {
                 next.mo1480c().m2294pc().m4111l(i);
             } else {
-                C10733ic.m4109m(next.f35705b, i);
+                C10733ic.m4109m(next.f35708b, i);
             }
         }
     }
 
     public boolean m4661q1() {
-        return this.f33799i0.size() > 1;
+        return this.f33802i0.size() > 1;
     }
 
     public void m4660q2() {
@@ -1970,15 +1970,15 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
                     if (jArr2 == null) {
                         jArr2 = m4725Z(true);
                     }
-                    jArr = C5062b.m24147y(jArr2, C5062b.m24153s(jArr2, r));
+                    jArr = C5062b.m24148y(jArr2, C5062b.m24154s(jArr2, r));
                 } else {
                     if (jArr3 == null) {
                         jArr3 = m4725Z(false);
                     }
-                    jArr = C5062b.m24147y(jArr3, C5062b.m24153s(jArr3, r));
+                    jArr = C5062b.m24148y(jArr3, C5062b.m24154s(jArr3, r));
                 }
-                if (!C10733ic.m4115j(next.f35705b, next.m1458r(), str, jArr, true)) {
-                    m4758Q2(next.f35705b, false);
+                if (!C10733ic.m4115j(next.f35708b, next.m1458r(), str, jArr, true)) {
+                    m4758Q2(next.f35708b, false);
                     z = true;
                 }
                 if (next.m1509B(true)) {
@@ -1987,22 +1987,22 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
             }
         }
         if (z) {
-            m4644u2(-1, C10974ra.f35245a, 5, C10563ba.f33880a, null);
+            m4644u2(-1, C10974ra.f35248a, 5, C10563ba.f33883a, null);
         }
     }
 
     public final void m4654s0(boolean z) {
-        HandlerC10540d dVar = this.f33775N;
+        HandlerC10540d dVar = this.f33778N;
         dVar.sendMessage(Message.obtain(dVar, z ? 7 : 6));
     }
 
     public boolean m4650t0() {
-        if (this.f33780S == null) {
+        if (this.f33783S == null) {
             return false;
         }
-        C4868i.m24726c2().m24598s2(this.f33780S);
-        this.f33780S = null;
-        Iterator<C11131y6> it = this.f33788a.iterator();
+        C4868i.m24727c2().m24599s2(this.f33783S);
+        this.f33783S = null;
+        Iterator<C11131y6> it = this.f33791a.iterator();
         while (it.hasNext()) {
             C11131y6 next = it.next();
             if (next.m1509B(true)) {
@@ -2016,11 +2016,11 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
         if (client == null) {
             return -1;
         }
-        Iterator<C11131y6> it = this.f33788a.iterator();
+        Iterator<C11131y6> it = this.f33791a.iterator();
         while (it.hasNext()) {
             C11131y6 next = it.next();
             if (next.m1495P(client)) {
-                return next.f35705b;
+                return next.f35708b;
             }
         }
         return -1;
@@ -2046,29 +2046,29 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public int m4642v0(int i) {
-        int binarySearch = Collections.binarySearch(this.f33799i0, m4745U(i));
+        int binarySearch = Collections.binarySearch(this.f33802i0, m4745U(i));
         int i2 = 0;
         if (binarySearch >= 0) {
             int i3 = binarySearch + 1;
-            if (this.f33799i0.size() > i3) {
-                return this.f33799i0.get(i3).f35705b;
+            if (this.f33802i0.size() > i3) {
+                return this.f33802i0.get(i3).f35708b;
             }
             if (binarySearch > 0) {
-                return this.f33799i0.get(0).f35705b;
+                return this.f33802i0.get(0).f35708b;
             }
             return -1;
         }
         int i4 = (-binarySearch) - 1;
-        if (i4 < this.f33799i0.size()) {
-            return this.f33799i0.get(i4).f35705b;
+        if (i4 < this.f33802i0.size()) {
+            return this.f33802i0.get(i4).f35708b;
         }
-        Iterator<C11131y6> it = this.f33799i0.iterator();
+        Iterator<C11131y6> it = this.f33802i0.iterator();
         int i5 = 0;
         int i6 = -1;
         while (it.hasNext()) {
             C11131y6 next = it.next();
             if (i6 == -1 || Math.abs(i2 - i4) <= i5) {
-                i6 = next.f35705b;
+                i6 = next.f35708b;
                 i5 = Math.abs(i2 - i4);
             }
             i2++;
@@ -2086,25 +2086,25 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public C9773p0 m4636w2() {
-        return this.f33784W;
+        return this.f33787W;
     }
 
     public int m4632x2() {
-        return this.f33790b;
+        return this.f33793b;
     }
 
     public synchronized int m4630y0(int i, long j) {
-        if (this.f33793c0 == null) {
-            this.f33793c0 = new ArrayList(this.f33799i0.size());
+        if (this.f33796c0 == null) {
+            this.f33796c0 = new ArrayList(this.f33802i0.size());
         }
-        if (!(this.f33793c0.size() == this.f33799i0.size() && this.f33795e0 == this.f33794d0)) {
-            this.f33793c0.clear();
-            this.f33793c0.addAll(this.f33799i0);
-            Collections.sort(this.f33793c0, this.f33791b0);
-            this.f33795e0 = this.f33794d0;
+        if (!(this.f33796c0.size() == this.f33802i0.size() && this.f33798e0 == this.f33797d0)) {
+            this.f33796c0.clear();
+            this.f33796c0.addAll(this.f33802i0);
+            Collections.sort(this.f33796c0, this.f33794b0);
+            this.f33798e0 = this.f33797d0;
         }
         C11131y6 U = m4745U(i);
-        int indexOf = this.f33793c0.indexOf(U);
+        int indexOf = this.f33796c0.indexOf(U);
         if (indexOf != -1) {
             long M = U.m1498M();
             long uptimeMillis = SystemClock.uptimeMillis();
@@ -2125,6 +2125,6 @@ public class C10536ab implements Iterable<C11131y6>, C1379j0.AbstractC1380a {
     }
 
     public ArrayList<C11131y6> m4626z0() {
-        return this.f33799i0;
+        return this.f33802i0;
     }
 }

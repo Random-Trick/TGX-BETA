@@ -11,7 +11,7 @@ public final class BinderC4496l extends AbstractBinderC5001h {
     }
 
     @Override
-    public final void mo24336h0(AbstractC4989b bVar) {
-        this.f14856a.mo11384S2(new C4481c(bVar));
+    public final void mo24337h0(AbstractC4989b bVar) {
+        this.f14856a.mo11383S2(new C4481c(bVar));
     }
 }

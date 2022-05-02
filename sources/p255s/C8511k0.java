@@ -14,61 +14,61 @@ import p266t.C8881c;
 public final class C8511k0 {
 
     public static final class C8512a extends CameraCaptureSession.CaptureCallback {
-        public final List<CameraCaptureSession.CaptureCallback> f27611a = new ArrayList();
+        public final List<CameraCaptureSession.CaptureCallback> f27614a = new ArrayList();
 
         public C8512a(List<CameraCaptureSession.CaptureCallback> list) {
             for (CameraCaptureSession.CaptureCallback captureCallback : list) {
                 if (!(captureCallback instanceof C8513b)) {
-                    this.f27611a.add(captureCallback);
+                    this.f27614a.add(captureCallback);
                 }
             }
         }
 
         @Override
         public void onCaptureBufferLost(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, Surface surface, long j) {
-            for (CameraCaptureSession.CaptureCallback captureCallback : this.f27611a) {
-                C8881c.m11030a(captureCallback, cameraCaptureSession, captureRequest, surface, j);
+            for (CameraCaptureSession.CaptureCallback captureCallback : this.f27614a) {
+                C8881c.m11029a(captureCallback, cameraCaptureSession, captureRequest, surface, j);
             }
         }
 
         @Override
         public void onCaptureCompleted(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, TotalCaptureResult totalCaptureResult) {
-            for (CameraCaptureSession.CaptureCallback captureCallback : this.f27611a) {
+            for (CameraCaptureSession.CaptureCallback captureCallback : this.f27614a) {
                 captureCallback.onCaptureCompleted(cameraCaptureSession, captureRequest, totalCaptureResult);
             }
         }
 
         @Override
         public void onCaptureFailed(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, CaptureFailure captureFailure) {
-            for (CameraCaptureSession.CaptureCallback captureCallback : this.f27611a) {
+            for (CameraCaptureSession.CaptureCallback captureCallback : this.f27614a) {
                 captureCallback.onCaptureFailed(cameraCaptureSession, captureRequest, captureFailure);
             }
         }
 
         @Override
         public void onCaptureProgressed(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, CaptureResult captureResult) {
-            for (CameraCaptureSession.CaptureCallback captureCallback : this.f27611a) {
+            for (CameraCaptureSession.CaptureCallback captureCallback : this.f27614a) {
                 captureCallback.onCaptureProgressed(cameraCaptureSession, captureRequest, captureResult);
             }
         }
 
         @Override
         public void onCaptureSequenceAborted(CameraCaptureSession cameraCaptureSession, int i) {
-            for (CameraCaptureSession.CaptureCallback captureCallback : this.f27611a) {
+            for (CameraCaptureSession.CaptureCallback captureCallback : this.f27614a) {
                 captureCallback.onCaptureSequenceAborted(cameraCaptureSession, i);
             }
         }
 
         @Override
         public void onCaptureSequenceCompleted(CameraCaptureSession cameraCaptureSession, int i, long j) {
-            for (CameraCaptureSession.CaptureCallback captureCallback : this.f27611a) {
+            for (CameraCaptureSession.CaptureCallback captureCallback : this.f27614a) {
                 captureCallback.onCaptureSequenceCompleted(cameraCaptureSession, i, j);
             }
         }
 
         @Override
         public void onCaptureStarted(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, long j, long j2) {
-            for (CameraCaptureSession.CaptureCallback captureCallback : this.f27611a) {
+            for (CameraCaptureSession.CaptureCallback captureCallback : this.f27614a) {
                 captureCallback.onCaptureStarted(cameraCaptureSession, captureRequest, j, j2);
             }
         }
@@ -104,15 +104,15 @@ public final class C8511k0 {
         }
     }
 
-    public static CameraCaptureSession.CaptureCallback m12248a(List<CameraCaptureSession.CaptureCallback> list) {
+    public static CameraCaptureSession.CaptureCallback m12247a(List<CameraCaptureSession.CaptureCallback> list) {
         return new C8512a(list);
     }
 
-    public static CameraCaptureSession.CaptureCallback m12247b(CameraCaptureSession.CaptureCallback... captureCallbackArr) {
-        return m12248a(Arrays.asList(captureCallbackArr));
+    public static CameraCaptureSession.CaptureCallback m12246b(CameraCaptureSession.CaptureCallback... captureCallbackArr) {
+        return m12247a(Arrays.asList(captureCallbackArr));
     }
 
-    public static CameraCaptureSession.CaptureCallback m12246c() {
+    public static CameraCaptureSession.CaptureCallback m12245c() {
         return new C8513b();
     }
 }

@@ -9,26 +9,26 @@ import javax.annotation.CheckForNull;
 public abstract class AbstractC1781j1<K, V> extends AbstractC1895r1<Map.Entry<K, V>> {
     @Override
     public final void clear() {
-        mo35861h().clear();
+        mo35864h().clear();
     }
 
     @Override
     public abstract boolean contains(@CheckForNull Object obj);
 
-    public abstract Map<K, V> mo35861h();
+    public abstract Map<K, V> mo35864h();
 
     @Override
     public final boolean isEmpty() {
-        return mo35861h().isEmpty();
+        return mo35864h().isEmpty();
     }
 
     @Override
     public final boolean removeAll(Collection<?> collection) {
         Objects.requireNonNull(collection);
         try {
-            return C1909s1.m35908a(this, collection);
+            return C1909s1.m35911a(this, collection);
         } catch (UnsupportedOperationException unused) {
-            return C1909s1.m35907b(this, collection.iterator());
+            return C1909s1.m35910b(this, collection.iterator());
         }
     }
 
@@ -56,12 +56,12 @@ public abstract class AbstractC1781j1<K, V> extends AbstractC1895r1<Map.Entry<K,
                     hashSet.add(((Map.Entry) obj).getKey());
                 }
             }
-            return ((C1977x) mo35861h()).f7062M.mo35967d().retainAll(hashSet);
+            return ((C1977x) mo35864h()).f7062M.mo35970d().retainAll(hashSet);
         }
     }
 
     @Override
     public final int size() {
-        return mo35861h().size();
+        return mo35864h().size();
     }
 }

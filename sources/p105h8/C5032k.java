@@ -15,7 +15,7 @@ public final class C5032k {
         f16999b = "SJIS".equalsIgnoreCase(name) || "EUC_JP".equalsIgnoreCase(name);
     }
 
-    public static String m24243a(byte[] bArr, Map<EnumC4522e, ?> map) {
+    public static String m24244a(byte[] bArr, Map<EnumC4522e, ?> map) {
         byte[] bArr2 = bArr;
         if (map != null) {
             EnumC4522e eVar = EnumC4522e.CHARACTER_SET;

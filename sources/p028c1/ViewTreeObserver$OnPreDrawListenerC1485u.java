@@ -15,7 +15,7 @@ public final class ViewTreeObserver$OnPreDrawListenerC1485u implements ViewTreeO
         this.f5354c = runnable;
     }
 
-    public static ViewTreeObserver$OnPreDrawListenerC1485u m36773a(View view, Runnable runnable) {
+    public static ViewTreeObserver$OnPreDrawListenerC1485u m36776a(View view, Runnable runnable) {
         Objects.requireNonNull(view, "view == null");
         Objects.requireNonNull(runnable, "runnable == null");
         ViewTreeObserver$OnPreDrawListenerC1485u uVar = new ViewTreeObserver$OnPreDrawListenerC1485u(view, runnable);
@@ -24,7 +24,7 @@ public final class ViewTreeObserver$OnPreDrawListenerC1485u implements ViewTreeO
         return uVar;
     }
 
-    public void m36772b() {
+    public void m36775b() {
         if (this.f5353b.isAlive()) {
             this.f5353b.removeOnPreDrawListener(this);
         } else {
@@ -35,7 +35,7 @@ public final class ViewTreeObserver$OnPreDrawListenerC1485u implements ViewTreeO
 
     @Override
     public boolean onPreDraw() {
-        m36772b();
+        m36775b();
         this.f5354c.run();
         return true;
     }
@@ -47,6 +47,6 @@ public final class ViewTreeObserver$OnPreDrawListenerC1485u implements ViewTreeO
 
     @Override
     public void onViewDetachedFromWindow(View view) {
-        m36772b();
+        m36775b();
     }
 }

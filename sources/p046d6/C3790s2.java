@@ -13,26 +13,26 @@ public final class C3790s2 implements AbstractC4514e<C3775q5> {
     public static final C4511d f12833f;
 
     static {
-        C4511d.C4513b a = C4511d.m27508a("detectorOptions");
+        C4511d.C4513b a = C4511d.m27510a("detectorOptions");
         C3663e8 e8Var = new C3663e8();
-        e8Var.m29841a(1);
-        f12829b = a.m27503b(e8Var.m29840b()).m27504a();
-        C4511d.C4513b a2 = C4511d.m27508a("errorCodes");
+        e8Var.m29843a(1);
+        f12829b = a.m27505b(e8Var.m29842b()).m27506a();
+        C4511d.C4513b a2 = C4511d.m27510a("errorCodes");
         C3663e8 e8Var2 = new C3663e8();
-        e8Var2.m29841a(2);
-        f12830c = a2.m27503b(e8Var2.m29840b()).m27504a();
-        C4511d.C4513b a3 = C4511d.m27508a("totalInitializationMs");
+        e8Var2.m29843a(2);
+        f12830c = a2.m27505b(e8Var2.m29842b()).m27506a();
+        C4511d.C4513b a3 = C4511d.m27510a("totalInitializationMs");
         C3663e8 e8Var3 = new C3663e8();
-        e8Var3.m29841a(3);
-        f12831d = a3.m27503b(e8Var3.m29840b()).m27504a();
-        C4511d.C4513b a4 = C4511d.m27508a("loggingInitializationMs");
+        e8Var3.m29843a(3);
+        f12831d = a3.m27505b(e8Var3.m29842b()).m27506a();
+        C4511d.C4513b a4 = C4511d.m27510a("loggingInitializationMs");
         C3663e8 e8Var4 = new C3663e8();
-        e8Var4.m29841a(4);
-        f12832e = a4.m27503b(e8Var4.m29840b()).m27504a();
-        C4511d.C4513b a5 = C4511d.m27508a("otherErrors");
+        e8Var4.m29843a(4);
+        f12832e = a4.m27505b(e8Var4.m29842b()).m27506a();
+        C4511d.C4513b a5 = C4511d.m27510a("otherErrors");
         C3663e8 e8Var5 = new C3663e8();
-        e8Var5.m29841a(5);
-        f12833f = a5.m27503b(e8Var5.m29840b()).m27504a();
+        e8Var5.m29843a(5);
+        f12833f = a5.m27505b(e8Var5.m29842b()).m27506a();
     }
 
     @Override

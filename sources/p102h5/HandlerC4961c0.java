@@ -14,6 +14,6 @@ public final class HandlerC4961c0 extends HandlerC9983e {
 
     @Override
     public final void handleMessage(Message message) {
-        this.f16880a.m24370g(message);
+        this.f16880a.m24371g(message);
     }
 }

@@ -6,18 +6,18 @@ import org.drinkless.p210td.libcore.telegram.TdApi;
 import p193nb.C7321e;
 
 public class C10851mb {
-    public final TdApi.File f34770a;
-    public final int f34771b;
-    public final boolean f34772c;
-    public final int f34773d;
-    public final int f34774e;
+    public final TdApi.File f34773a;
+    public final int f34774b;
+    public final boolean f34775c;
+    public final int f34776d;
+    public final int f34777e;
 
     public C10851mb(TdApi.File file, int i, boolean z, int i2, int i3) {
-        this.f34770a = file;
-        this.f34771b = i;
-        this.f34772c = z;
-        this.f34773d = i2;
-        this.f34774e = i3;
+        this.f34773a = file;
+        this.f34774b = i;
+        this.f34775c = z;
+        this.f34776d = i2;
+        this.f34777e = i3;
     }
 
     public static C10851mb m3001b(C10930q6 q6Var, TdApi.Chat chat, TdApi.NotificationType notificationType) {
@@ -51,8 +51,8 @@ public class C10851mb {
                 if (constructor2 == -1851395174) {
                     TdApi.MessagePhoto messagePhoto = (TdApi.MessagePhoto) message.content;
                     if (!messagePhoto.isSecret) {
-                        TdApi.PhotoSize n = C4630f0.m26734n(messagePhoto.photo);
-                        if (n == null || (!C4779t2.m25598T2(n.photo) && !q6Var.m2413i5().m3985k(n.photo, 1, chat.type))) {
+                        TdApi.PhotoSize n = C4630f0.m26735n(messagePhoto.photo);
+                        if (n == null || (!C4779t2.m25599T2(n.photo) && !q6Var.m2413i5().m3985k(n.photo, 1, chat.type))) {
                             file4 = null;
                             i8 = 0;
                             i7 = 0;
@@ -123,8 +123,8 @@ public class C10851mb {
             } else {
                 TdApi.PushMessageContentPhoto pushMessageContentPhoto = (TdApi.PushMessageContentPhoto) pushMessageContent;
                 if (!pushMessageContentPhoto.isSecret && (photo = pushMessageContentPhoto.photo) != null) {
-                    TdApi.PhotoSize n2 = C4630f0.m26734n(photo);
-                    if (n2 == null || (!C4779t2.m25598T2(n2.photo) && !q6Var.m2413i5().m3985k(n2.photo, 1, chat.type))) {
+                    TdApi.PhotoSize n2 = C4630f0.m26735n(photo);
+                    if (n2 == null || (!C4779t2.m25599T2(n2.photo) && !q6Var.m2413i5().m3985k(n2.photo, 1, chat.type))) {
                         file3 = null;
                         i4 = 0;
                         i6 = 0;
@@ -159,7 +159,7 @@ public class C10851mb {
     }
 
     public boolean m3002a() {
-        int i = this.f34771b;
+        int i = this.f34774b;
         return i == 1 || i == 2;
     }
 }

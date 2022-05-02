@@ -17,12 +17,12 @@ public class C1175d implements AbstractC8958f {
     public AbstractC1180i f4424b;
     public boolean f4425c;
 
-    public static AbstractC8958f[] m38225d() {
+    public static AbstractC8958f[] m38228d() {
         return new AbstractC8958f[]{new C1175d()};
     }
 
-    public static C1189b0 m38224g(C1189b0 b0Var) {
-        b0Var.m38144P(0);
+    public static C1189b0 m38227g(C1189b0 b0Var) {
+        b0Var.m38147P(0);
         return b0Var;
     }
 
@@ -34,27 +34,27 @@ public class C1175d implements AbstractC8958f {
     public void mo1152b(long j, long j2) {
         AbstractC1180i iVar = this.f4424b;
         if (iVar != null) {
-            iVar.m38202m(j, j2);
+            iVar.m38205m(j, j2);
         }
     }
 
     @Override
     public int mo1149e(AbstractC8959g gVar, C8971q qVar) {
-        C1186a.m38182h(this.f4423a);
+        C1186a.m38185h(this.f4423a);
         if (this.f4424b == null) {
-            if (m38223h(gVar)) {
-                gVar.mo10809m();
+            if (m38226h(gVar)) {
+                gVar.mo10808m();
             } else {
-                throw C6556a2.m20112a("Failed to determine bitstream type", null);
+                throw C6556a2.m20113a("Failed to determine bitstream type", null);
             }
         }
         if (!this.f4425c) {
             AbstractC8974t r = this.f4423a.mo6039r(0, 1);
             this.f4423a.mo6040m();
-            this.f4424b.m38207d(this.f4423a, r);
+            this.f4424b.m38210d(this.f4423a, r);
             this.f4425c = true;
         }
-        return this.f4424b.m38206g(gVar, qVar);
+        return this.f4424b.m38209g(gVar, qVar);
     }
 
     @Override
@@ -63,17 +63,17 @@ public class C1175d implements AbstractC8958f {
     }
 
     @EnsuresNonNullIf(expression = {"streamReader"}, result = true)
-    public final boolean m38223h(AbstractC8959g gVar) {
+    public final boolean m38226h(AbstractC8959g gVar) {
         C1177f fVar = new C1177f();
-        if (fVar.m38216a(gVar, true) && (fVar.f4432b & 2) == 2) {
+        if (fVar.m38219a(gVar, true) && (fVar.f4432b & 2) == 2) {
             int min = Math.min(fVar.f4439i, 8);
             C1189b0 b0Var = new C1189b0(min);
-            gVar.mo10806q(b0Var.m38139d(), 0, min);
-            if (C1172b.m38228p(m38224g(b0Var))) {
+            gVar.mo10805q(b0Var.m38142d(), 0, min);
+            if (C1172b.m38231p(m38227g(b0Var))) {
                 this.f4424b = new C1172b();
-            } else if (C1184j.m38190r(m38224g(b0Var))) {
+            } else if (C1184j.m38193r(m38227g(b0Var))) {
                 this.f4424b = new C1184j();
-            } else if (C1179h.m38211o(m38224g(b0Var))) {
+            } else if (C1179h.m38214o(m38227g(b0Var))) {
                 this.f4424b = new C1179h();
             }
             return true;
@@ -84,7 +84,7 @@ public class C1175d implements AbstractC8958f {
     @Override
     public boolean mo1144j(AbstractC8959g gVar) {
         try {
-            return m38223h(gVar);
+            return m38226h(gVar);
         } catch (C6556a2 unused) {
             return false;
         }

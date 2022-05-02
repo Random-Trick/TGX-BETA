@@ -17,31 +17,31 @@ public class C3886p {
             this.f13160a = dVar;
         }
 
-        public void m29649a(C3888b bVar) {
+        public void m29651a(C3888b bVar) {
             this.f13161b.add(bVar);
         }
 
-        public void m29648b(C3888b bVar) {
+        public void m29650b(C3888b bVar) {
             this.f13162c.add(bVar);
         }
 
-        public C3865d<?> m29647c() {
+        public C3865d<?> m29649c() {
             return this.f13160a;
         }
 
-        public Set<C3888b> m29646d() {
+        public Set<C3888b> m29648d() {
             return this.f13161b;
         }
 
-        public boolean m29645e() {
+        public boolean m29647e() {
             return this.f13161b.isEmpty();
         }
 
-        public boolean m29644f() {
+        public boolean m29646f() {
             return this.f13162c.isEmpty();
         }
 
-        public void m29643g(C3888b bVar) {
+        public void m29645g(C3888b bVar) {
             this.f13162c.remove(bVar);
         }
     }
@@ -68,17 +68,17 @@ public class C3886p {
         }
     }
 
-    public static void m29652a(List<C3865d<?>> list) {
-        Set<C3888b> c = m29650c(list);
-        Set<C3888b> b = m29651b(c);
+    public static void m29654a(List<C3865d<?>> list) {
+        Set<C3888b> c = m29652c(list);
+        Set<C3888b> b = m29653b(c);
         int i = 0;
         while (!b.isEmpty()) {
             C3888b next = b.iterator().next();
             b.remove(next);
             i++;
-            for (C3888b bVar : next.m29646d()) {
-                bVar.m29643g(next);
-                if (bVar.m29644f()) {
+            for (C3888b bVar : next.m29648d()) {
+                bVar.m29645g(next);
+                if (bVar.m29646f()) {
                     b.add(bVar);
                 }
             }
@@ -86,31 +86,31 @@ public class C3886p {
         if (i != list.size()) {
             ArrayList arrayList = new ArrayList();
             for (C3888b bVar2 : c) {
-                if (!bVar2.m29644f() && !bVar2.m29645e()) {
-                    arrayList.add(bVar2.m29647c());
+                if (!bVar2.m29646f() && !bVar2.m29647e()) {
+                    arrayList.add(bVar2.m29649c());
                 }
             }
             throw new C3891r(arrayList);
         }
     }
 
-    public static Set<C3888b> m29651b(Set<C3888b> set) {
+    public static Set<C3888b> m29653b(Set<C3888b> set) {
         HashSet hashSet = new HashSet();
         for (C3888b bVar : set) {
-            if (bVar.m29644f()) {
+            if (bVar.m29646f()) {
                 hashSet.add(bVar);
             }
         }
         return hashSet;
     }
 
-    public static Set<C3888b> m29650c(List<C3865d<?>> list) {
+    public static Set<C3888b> m29652c(List<C3865d<?>> list) {
         Set<C3888b> set;
         HashMap hashMap = new HashMap(list.size());
         for (C3865d<?> dVar : list) {
             C3888b bVar = new C3888b(dVar);
-            for (Class<? super Object> cls : dVar.m29703g()) {
-                C3889c cVar = new C3889c(cls, !dVar.m29697m());
+            for (Class<? super Object> cls : dVar.m29705g()) {
+                C3889c cVar = new C3889c(cls, !dVar.m29699m());
                 if (!hashMap.containsKey(cVar)) {
                     hashMap.put(cVar, new HashSet());
                 }
@@ -124,11 +124,11 @@ public class C3886p {
         }
         for (Set<C3888b> set3 : hashMap.values()) {
             for (C3888b bVar2 : set3) {
-                for (C3890q qVar : bVar2.m29647c().m29705e()) {
-                    if (qVar.m29638d() && (set = (Set) hashMap.get(new C3889c(qVar.m29640b(), qVar.m29636f()))) != null) {
+                for (C3890q qVar : bVar2.m29649c().m29707e()) {
+                    if (qVar.m29640d() && (set = (Set) hashMap.get(new C3889c(qVar.m29642b(), qVar.m29638f()))) != null) {
                         for (C3888b bVar3 : set) {
-                            bVar2.m29649a(bVar3);
-                            bVar3.m29648b(bVar2);
+                            bVar2.m29651a(bVar3);
+                            bVar3.m29650b(bVar2);
                         }
                     }
                 }

@@ -9,6 +9,6 @@ public final class C5597I0 implements AbstractC5525g {
     }
 
     @Override
-    public final void mo22150c(double d) {
+    public final void mo22151c(double d) {
     }
 }

@@ -27,28 +27,28 @@ import p356z4.C11272n;
 public interface AbstractC7126i1 {
 
     public static final class C7127a {
-        public final long f22652a;
-        public final AbstractC6604g3 f22653b;
-        public final int f22654c;
-        public final AbstractC7230t.C7231a f22655d;
-        public final long f22656e;
-        public final AbstractC6604g3 f22657f;
-        public final int f22658g;
-        public final AbstractC7230t.C7231a f22659h;
-        public final long f22660i;
-        public final long f22661j;
+        public final long f22655a;
+        public final AbstractC6604g3 f22656b;
+        public final int f22657c;
+        public final AbstractC7230t.C7231a f22658d;
+        public final long f22659e;
+        public final AbstractC6604g3 f22660f;
+        public final int f22661g;
+        public final AbstractC7230t.C7231a f22662h;
+        public final long f22663i;
+        public final long f22664j;
 
         public C7127a(long j, AbstractC6604g3 g3Var, int i, AbstractC7230t.C7231a aVar, long j2, AbstractC6604g3 g3Var2, int i2, AbstractC7230t.C7231a aVar2, long j3, long j4) {
-            this.f22652a = j;
-            this.f22653b = g3Var;
-            this.f22654c = i;
-            this.f22655d = aVar;
-            this.f22656e = j2;
-            this.f22657f = g3Var2;
-            this.f22658g = i2;
-            this.f22659h = aVar2;
-            this.f22660i = j3;
-            this.f22661j = j4;
+            this.f22655a = j;
+            this.f22656b = g3Var;
+            this.f22657c = i;
+            this.f22658d = aVar;
+            this.f22659e = j2;
+            this.f22660f = g3Var2;
+            this.f22661g = i2;
+            this.f22662h = aVar2;
+            this.f22663i = j3;
+            this.f22664j = j4;
         }
 
         public boolean equals(Object obj) {
@@ -59,26 +59,26 @@ public interface AbstractC7126i1 {
                 return false;
             }
             C7127a aVar = (C7127a) obj;
-            return this.f22652a == aVar.f22652a && this.f22654c == aVar.f22654c && this.f22656e == aVar.f22656e && this.f22658g == aVar.f22658g && this.f22660i == aVar.f22660i && this.f22661j == aVar.f22661j && C10432h.m5139a(this.f22653b, aVar.f22653b) && C10432h.m5139a(this.f22655d, aVar.f22655d) && C10432h.m5139a(this.f22657f, aVar.f22657f) && C10432h.m5139a(this.f22659h, aVar.f22659h);
+            return this.f22655a == aVar.f22655a && this.f22657c == aVar.f22657c && this.f22659e == aVar.f22659e && this.f22661g == aVar.f22661g && this.f22663i == aVar.f22663i && this.f22664j == aVar.f22664j && C10432h.m5139a(this.f22656b, aVar.f22656b) && C10432h.m5139a(this.f22658d, aVar.f22658d) && C10432h.m5139a(this.f22660f, aVar.f22660f) && C10432h.m5139a(this.f22662h, aVar.f22662h);
         }
 
         public int hashCode() {
-            return C10432h.m5138b(Long.valueOf(this.f22652a), this.f22653b, Integer.valueOf(this.f22654c), this.f22655d, Long.valueOf(this.f22656e), this.f22657f, Integer.valueOf(this.f22658g), this.f22659h, Long.valueOf(this.f22660i), Long.valueOf(this.f22661j));
+            return C10432h.m5138b(Long.valueOf(this.f22655a), this.f22656b, Integer.valueOf(this.f22657c), this.f22658d, Long.valueOf(this.f22659e), this.f22660f, Integer.valueOf(this.f22661g), this.f22662h, Long.valueOf(this.f22663i), Long.valueOf(this.f22664j));
         }
     }
 
     public static final class C7128b {
-        public final C1213l f22662a;
-        public final SparseArray<C7127a> f22663b;
+        public final C1213l f22665a;
+        public final SparseArray<C7127a> f22666b;
 
         public C7128b(C1213l lVar, SparseArray<C7127a> sparseArray) {
-            this.f22662a = lVar;
-            SparseArray<C7127a> sparseArray2 = new SparseArray<>(lVar.m38027b());
-            for (int i = 0; i < lVar.m38027b(); i++) {
-                int a = lVar.m38028a(i);
-                sparseArray2.append(a, (C7127a) C1186a.m38185e(sparseArray.get(a)));
+            this.f22665a = lVar;
+            SparseArray<C7127a> sparseArray2 = new SparseArray<>(lVar.m38030b());
+            for (int i = 0; i < lVar.m38030b(); i++) {
+                int a = lVar.m38031a(i);
+                sparseArray2.append(a, (C7127a) C1186a.m38188e(sparseArray.get(a)));
             }
-            this.f22663b = sparseArray2;
+            this.f22666b = sparseArray2;
         }
     }
 

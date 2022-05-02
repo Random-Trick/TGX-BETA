@@ -3,7 +3,7 @@ package p262s6;
 import java.io.File;
 
 public final class C8684t {
-    public static String m11739a(File file) {
+    public static String m11738a(File file) {
         if (file.getName().endsWith(".apk")) {
             String replaceFirst = file.getName().replaceFirst("(_\\d+)?\\.apk", "");
             if (replaceFirst.equals("base-master") || replaceFirst.equals("base-main")) {

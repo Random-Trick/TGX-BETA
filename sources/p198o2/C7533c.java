@@ -10,8 +10,8 @@ import p308w1.C9940c;
 import p323x1.AbstractC10074f;
 
 public final class C7533c implements AbstractC7532b {
-    public final AbstractC9421e f24109a;
-    public final AbstractC9418b<C7531a> f24110b;
+    public final AbstractC9421e f24112a;
+    public final AbstractC9418b<C7531a> f24113b;
 
     public class C7534a extends AbstractC9418b<C7531a> {
         public C7534a(AbstractC9421e eVar) {
@@ -24,13 +24,13 @@ public final class C7533c implements AbstractC7532b {
         }
 
         public void mo8741g(AbstractC10074f fVar, C7531a aVar) {
-            String str = aVar.f24107a;
+            String str = aVar.f24110a;
             if (str == null) {
                 fVar.mo5374d0(1);
             } else {
                 fVar.mo5373q(1, str);
             }
-            String str2 = aVar.f24108b;
+            String str2 = aVar.f24111b;
             if (str2 == null) {
                 fVar.mo5374d0(2);
             } else {
@@ -40,8 +40,8 @@ public final class C7533c implements AbstractC7532b {
     }
 
     public C7533c(AbstractC9421e eVar) {
-        this.f24109a = eVar;
-        this.f24110b = new C7534a(eVar);
+        this.f24112a = eVar;
+        this.f24113b = new C7534a(eVar);
     }
 
     @Override
@@ -52,8 +52,8 @@ public final class C7533c implements AbstractC7532b {
         } else {
             y0.mo5373q(1, str);
         }
-        this.f24109a.m8732b();
-        Cursor b = C9940c.m6454b(this.f24109a, y0, false, null);
+        this.f24112a.m8732b();
+        Cursor b = C9940c.m6454b(this.f24112a, y0, false, null);
         try {
             ArrayList arrayList = new ArrayList(b.getCount());
             while (b.moveToNext()) {
@@ -75,9 +75,9 @@ public final class C7533c implements AbstractC7532b {
         } else {
             y0.mo5373q(1, str);
         }
-        this.f24109a.m8732b();
+        this.f24112a.m8732b();
         boolean z2 = false;
-        Cursor b = C9940c.m6454b(this.f24109a, y0, false, null);
+        Cursor b = C9940c.m6454b(this.f24112a, y0, false, null);
         try {
             if (b.moveToFirst()) {
                 if (b.getInt(0) == 0) {
@@ -94,13 +94,13 @@ public final class C7533c implements AbstractC7532b {
 
     @Override
     public void mo15719c(C7531a aVar) {
-        this.f24109a.m8732b();
-        this.f24109a.m8731c();
+        this.f24112a.m8732b();
+        this.f24112a.m8731c();
         try {
-            this.f24110b.m8740h(aVar);
-            this.f24109a.m8714t();
+            this.f24113b.m8740h(aVar);
+            this.f24112a.m8714t();
         } finally {
-            this.f24109a.m8727g();
+            this.f24112a.m8727g();
         }
     }
 
@@ -113,9 +113,9 @@ public final class C7533c implements AbstractC7532b {
         } else {
             y0.mo5373q(1, str);
         }
-        this.f24109a.m8732b();
+        this.f24112a.m8732b();
         boolean z2 = false;
-        Cursor b = C9940c.m6454b(this.f24109a, y0, false, null);
+        Cursor b = C9940c.m6454b(this.f24112a, y0, false, null);
         try {
             if (b.moveToFirst()) {
                 if (b.getInt(0) == 0) {

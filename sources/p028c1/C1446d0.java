@@ -26,17 +26,17 @@ public final class C1446d0 {
 
         @Override
         public void onAnimationCancel(Animator animator) {
-            this.f5295a.mo11616a(this.f5296b);
+            this.f5295a.mo11615a(this.f5296b);
         }
 
         @Override
         public void onAnimationEnd(Animator animator) {
-            this.f5295a.mo11618b(this.f5296b);
+            this.f5295a.mo11617b(this.f5296b);
         }
 
         @Override
         public void onAnimationStart(Animator animator) {
-            this.f5295a.mo11617c(this.f5296b);
+            this.f5295a.mo11616c(this.f5296b);
         }
     }
 
@@ -51,7 +51,7 @@ public final class C1446d0 {
 
         @Override
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
-            this.f5298a.mo36880a(this.f5299b);
+            this.f5298a.mo36883a(this.f5299b);
         }
     }
 
@@ -64,17 +64,17 @@ public final class C1446d0 {
         }
 
         @Override
-        public void mo11616a(View view) {
+        public void mo11615a(View view) {
             Object tag = view.getTag(2113929216);
             AbstractC1451e0 e0Var = tag instanceof AbstractC1451e0 ? (AbstractC1451e0) tag : null;
             if (e0Var != null) {
-                e0Var.mo11616a(view);
+                e0Var.mo11615a(view);
             }
         }
 
         @Override
         @SuppressLint({"WrongConstant"})
-        public void mo11618b(View view) {
+        public void mo11617b(View view) {
             int i = this.f5301a.f5294d;
             AbstractC1451e0 e0Var = null;
             if (i > -1) {
@@ -93,14 +93,14 @@ public final class C1446d0 {
                     e0Var = (AbstractC1451e0) tag;
                 }
                 if (e0Var != null) {
-                    e0Var.mo11618b(view);
+                    e0Var.mo11617b(view);
                 }
                 this.f5302b = true;
             }
         }
 
         @Override
-        public void mo11617c(View view) {
+        public void mo11616c(View view) {
             this.f5302b = false;
             AbstractC1451e0 e0Var = null;
             if (this.f5301a.f5294d > -1) {
@@ -117,7 +117,7 @@ public final class C1446d0 {
                 e0Var = (AbstractC1451e0) tag;
             }
             if (e0Var != null) {
-                e0Var.mo11617c(view);
+                e0Var.mo11616c(view);
             }
         }
     }
@@ -126,7 +126,7 @@ public final class C1446d0 {
         this.f5291a = new WeakReference<>(view);
     }
 
-    public C1446d0 m36902a(float f) {
+    public C1446d0 m36905a(float f) {
         View view = this.f5291a.get();
         if (view != null) {
             view.animate().alpha(f);
@@ -134,14 +134,14 @@ public final class C1446d0 {
         return this;
     }
 
-    public void m36901b() {
+    public void m36904b() {
         View view = this.f5291a.get();
         if (view != null) {
             view.animate().cancel();
         }
     }
 
-    public long m36900c() {
+    public long m36903c() {
         View view = this.f5291a.get();
         if (view != null) {
             return view.animate().getDuration();
@@ -149,7 +149,7 @@ public final class C1446d0 {
         return 0L;
     }
 
-    public C1446d0 m36899d(long j) {
+    public C1446d0 m36902d(long j) {
         View view = this.f5291a.get();
         if (view != null) {
             view.animate().setDuration(j);
@@ -157,7 +157,7 @@ public final class C1446d0 {
         return this;
     }
 
-    public C1446d0 m36898e(Interpolator interpolator) {
+    public C1446d0 m36901e(Interpolator interpolator) {
         View view = this.f5291a.get();
         if (view != null) {
             view.animate().setInterpolator(interpolator);
@@ -165,20 +165,20 @@ public final class C1446d0 {
         return this;
     }
 
-    public C1446d0 m36897f(AbstractC1451e0 e0Var) {
+    public C1446d0 m36900f(AbstractC1451e0 e0Var) {
         View view = this.f5291a.get();
         if (view != null) {
             if (Build.VERSION.SDK_INT >= 16) {
-                m36896g(view, e0Var);
+                m36899g(view, e0Var);
             } else {
                 view.setTag(2113929216, e0Var);
-                m36896g(view, new C1449c(this));
+                m36899g(view, new C1449c(this));
             }
         }
         return this;
     }
 
-    public final void m36896g(View view, AbstractC1451e0 e0Var) {
+    public final void m36899g(View view, AbstractC1451e0 e0Var) {
         if (e0Var != null) {
             view.animate().setListener(new C1447a(e0Var, view));
         } else {
@@ -186,7 +186,7 @@ public final class C1446d0 {
         }
     }
 
-    public C1446d0 m36895h(long j) {
+    public C1446d0 m36898h(long j) {
         View view = this.f5291a.get();
         if (view != null) {
             view.animate().setStartDelay(j);
@@ -194,7 +194,7 @@ public final class C1446d0 {
         return this;
     }
 
-    public C1446d0 m36894i(AbstractC1456g0 g0Var) {
+    public C1446d0 m36897i(AbstractC1456g0 g0Var) {
         View view = this.f5291a.get();
         if (view != null && Build.VERSION.SDK_INT >= 19) {
             C1448b bVar = null;
@@ -206,14 +206,14 @@ public final class C1446d0 {
         return this;
     }
 
-    public void m36893j() {
+    public void m36896j() {
         View view = this.f5291a.get();
         if (view != null) {
             view.animate().start();
         }
     }
 
-    public C1446d0 m36892k(float f) {
+    public C1446d0 m36895k(float f) {
         View view = this.f5291a.get();
         if (view != null) {
             view.animate().translationX(f);
@@ -221,7 +221,7 @@ public final class C1446d0 {
         return this;
     }
 
-    public C1446d0 m36891l(float f) {
+    public C1446d0 m36894l(float f) {
         View view = this.f5291a.get();
         if (view != null) {
             view.animate().translationY(f);

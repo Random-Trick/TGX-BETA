@@ -32,7 +32,7 @@ public class C10189d {
                 }
                 i3 = i4;
             } else if (background instanceof C5130n) {
-                Iterator<Drawable> it = ((C5130n) background).m23862a().iterator();
+                Iterator<Drawable> it = ((C5130n) background).m23863a().iterator();
                 while (it.hasNext()) {
                     Drawable next = it.next();
                     if (next instanceof AbstractC5128m) {
@@ -62,7 +62,7 @@ public class C10189d {
                     }
                 }
             } else if (background instanceof C5130n) {
-                Iterator<Drawable> it = ((C5130n) background).m23862a().iterator();
+                Iterator<Drawable> it = ((C5130n) background).m23863a().iterator();
                 while (it.hasNext()) {
                     Drawable next = it.next();
                     if (next instanceof AbstractC5128m) {
@@ -79,11 +79,11 @@ public class C10189d {
     }
 
     public static void m5800d(View view, float f, float f2, int i, AbstractC9323v4<?> v4Var) {
-        C2065g.m35718d(view, C11524j.m164o(f, i));
-        if (AbstractC10190e.f32932O) {
-            view.setLayerType(1, C1399s0.m37156t());
+        C2065g.m35721d(view, C11524j.m164o(f, i));
+        if (AbstractC10190e.f32935O) {
+            view.setLayerType(1, C1399s0.m37159t());
         }
-        C1399s0.m37144z(view, f, f2);
+        C1399s0.m37147z(view, f, f2);
         if (v4Var != null) {
             v4Var.m9163t8(view);
         }
@@ -94,11 +94,11 @@ public class C10189d {
     }
 
     public static void m5798f(View view, float f, float f2, int i, AbstractC9323v4<?> v4Var) {
-        C2065g.m35718d(view, C11524j.m229M0(f, f2, i));
-        if (AbstractC10190e.f32932O) {
-            view.setLayerType(1, C1399s0.m37156t());
+        C2065g.m35721d(view, C11524j.m229M0(f, f2, i));
+        if (AbstractC10190e.f32935O) {
+            view.setLayerType(1, C1399s0.m37159t());
         }
-        C1399s0.m37220A(view, f, f2);
+        C1399s0.m37223A(view, f, f2);
         if (v4Var != null) {
             v4Var.m9163t8(view);
         }
@@ -109,21 +109,21 @@ public class C10189d {
     }
 
     public static void m5796h(View view, AbstractC9323v4<?> v4Var) {
-        C2065g.m35718d(view, C11524j.m144y());
+        C2065g.m35721d(view, C11524j.m144y());
         if (v4Var != null) {
             v4Var.m9163t8(view);
         }
     }
 
     public static void m5795i(View view) {
-        C2065g.m35718d(view, C11524j.m188e1());
+        C2065g.m35721d(view, C11524j.m188e1());
     }
 
     public static void m5794j(View view) {
-        C2065g.m35718d(view, C11524j.m182g1());
+        C2065g.m35721d(view, C11524j.m182g1());
     }
 
     public static void m5793k(View view) {
-        C2065g.m35718d(view, C11524j.m173j1());
+        C2065g.m35721d(view, C11524j.m173j1());
     }
 }

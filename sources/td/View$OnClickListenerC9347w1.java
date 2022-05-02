@@ -30,16 +30,16 @@ import p335xd.C10189d;
 import p364zd.C11524j;
 
 public class View$OnClickListenerC9347w1 extends FrameLayoutFix implements View.OnClickListener, C3950k.AbstractC3952b, AbstractC5911c {
-    public AbstractC9349b f30224M;
-    public C6851c0 f30225N;
-    public final C3950k f30226O = new C3950k(0, this, C2057b.f7280b, 200);
-    public boolean f30227P;
-    public boolean f30228Q;
-    public boolean f30229R;
-    public float f30230S;
-    public C3950k f30231T;
-    public boolean f30232U;
-    public float f30233V;
+    public AbstractC9349b f30227M;
+    public C6851c0 f30228N;
+    public final C3950k f30229O = new C3950k(0, this, C2057b.f7280b, 200);
+    public boolean f30230P;
+    public boolean f30231Q;
+    public boolean f30232R;
+    public float f30233S;
+    public C3950k f30234T;
+    public boolean f30235U;
+    public float f30236V;
 
     public class C9348a extends C6847b2 {
         public C9348a(Context context) {
@@ -57,15 +57,15 @@ public class View$OnClickListenerC9347w1 extends FrameLayoutFix implements View.
     }
 
     public static class C9350c extends Drawable {
-        public final View$OnClickListenerC9347w1 f30235a;
+        public final View$OnClickListenerC9347w1 f30238a;
 
         public C9350c(View$OnClickListenerC9347w1 w1Var) {
-            this.f30235a = w1Var;
+            this.f30238a = w1Var;
         }
 
         @Override
         public void draw(Canvas canvas) {
-            int G1 = this.f30235a.m9084G1();
+            int G1 = this.f30238a.m9084G1();
             if (G1 != 0) {
                 canvas.drawColor(G1);
             }
@@ -87,40 +87,40 @@ public class View$OnClickListenerC9347w1 extends FrameLayoutFix implements View.
 
     public View$OnClickListenerC9347w1(Context context) {
         super(context);
-        C2065g.m35718d(this, new C9350c(this));
+        C2065g.m35721d(this, new C9350c(this));
         setLayoutParams(FrameLayoutFix.m18008s1(-1, -1));
     }
 
     private void setChildrenLayerType(int i) {
         for (int i2 = 0; i2 < getChildCount() - 1; i2++) {
-            C1399s0.m37183f0(getChildAt(i2), i);
+            C1399s0.m37186f0(getChildAt(i2), i);
         }
     }
 
     private void setHideFactor(float f) {
-        float a = C1356a.m37555a(f);
-        if (this.f30230S != a) {
-            this.f30230S = a;
-            this.f30225N.setTranslationY(((C1357a0.m37541i(16.0f) * 2) + this.f30225N.getMeasuredHeight()) * a);
+        float a = C1356a.m37558a(f);
+        if (this.f30233S != a) {
+            this.f30233S = a;
+            this.f30228N.setTranslationY(((C1357a0.m37544i(16.0f) * 2) + this.f30228N.getMeasuredHeight()) * a);
         }
     }
 
     public final void m9087D1(AbstractC9323v4<?> v4Var, int i, int i2, int i3, int i4, int i5, int i6) {
-        int i7 = C1357a0.m37541i(4.0f);
+        int i7 = C1357a0.m37544i(4.0f);
         int i8 = i7 * 2;
         int i9 = 83;
-        FrameLayout.LayoutParams t1 = FrameLayoutFix.m18007t1(C1357a0.m37541i(40.0f) + i8, C1357a0.m37541i(40.0f) + i8, C4403w.m27984G2() ? 83 : 85);
-        t1.bottomMargin = (C1357a0.m37541i(96.0f) + (C1357a0.m37541i(56.0f) * i)) - i7;
-        int i10 = C1357a0.m37541i(24.0f) - i7;
+        FrameLayout.LayoutParams t1 = FrameLayoutFix.m18007t1(C1357a0.m37544i(40.0f) + i8, C1357a0.m37544i(40.0f) + i8, C4403w.m27986G2() ? 83 : 85);
+        t1.bottomMargin = (C1357a0.m37544i(96.0f) + (C1357a0.m37544i(56.0f) * i)) - i7;
+        int i10 = C1357a0.m37544i(24.0f) - i7;
         t1.leftMargin = i10;
         t1.rightMargin = i10;
         C6851c0 c0Var = new C6851c0(getContext());
-        c0Var.m18789d(i3, 40.0f, 4.0f, i4, i5);
+        c0Var.m18790d(i3, 40.0f, 4.0f, i4, i5);
         v4Var.m9163t8(c0Var);
         c0Var.setId(i2);
         c0Var.setOnClickListener(this);
         c0Var.setLayoutParams(t1);
-        if (this.f30233V == 0.0f) {
+        if (this.f30236V == 0.0f) {
             c0Var.setEnabled(false);
             c0Var.setScaleX(0.6f);
             c0Var.setScaleY(0.6f);
@@ -128,65 +128,65 @@ public class View$OnClickListenerC9347w1 extends FrameLayoutFix implements View.
         }
         int i11 = i * 2;
         addView(c0Var, i11);
-        int i12 = C1357a0.m37541i(26.0f) + i8;
-        if (!C4403w.m27984G2()) {
+        int i12 = C1357a0.m37544i(26.0f) + i8;
+        if (!C4403w.m27986G2()) {
             i9 = 85;
         }
         FrameLayout.LayoutParams t12 = FrameLayoutFix.m18007t1(-2, i12, i9);
-        t12.bottomMargin = (C1357a0.m37541i(103.0f) + (C1357a0.m37541i(56.0f) * i)) - i7;
-        if (C4403w.m27984G2()) {
-            t12.leftMargin = C1357a0.m37541i(90.0f) - i7;
-            t12.rightMargin = C1357a0.m37541i(26.0f) - i7;
+        t12.bottomMargin = (C1357a0.m37544i(103.0f) + (C1357a0.m37544i(56.0f) * i)) - i7;
+        if (C4403w.m27986G2()) {
+            t12.leftMargin = C1357a0.m37544i(90.0f) - i7;
+            t12.rightMargin = C1357a0.m37544i(26.0f) - i7;
         } else {
-            t12.rightMargin = C1357a0.m37541i(90.0f) - i7;
-            t12.leftMargin = C1357a0.m37541i(26.0f) - i7;
+            t12.rightMargin = C1357a0.m37544i(90.0f) - i7;
+            t12.leftMargin = C1357a0.m37544i(26.0f) - i7;
         }
         TextView S1 = m9076S1(v4Var);
         S1.setId(i2);
         S1.setOnClickListener(this);
-        S1.setText(C4403w.m27869i1(v4Var.m9368P8(i6, S1, false, false)));
+        S1.setText(C4403w.m27871i1(v4Var.m9368P8(i6, S1, false, false)));
         S1.setLayoutParams(t12);
-        if (this.f30233V == 0.0f) {
+        if (this.f30236V == 0.0f) {
             S1.setEnabled(false);
             S1.setScaleX(0.6f);
             S1.setScaleY(0.6f);
             S1.setAlpha(0.0f);
         }
         if (Build.VERSION.SDK_INT >= 21) {
-            S1.setTranslationZ(C1357a0.m37541i(2.0f));
+            S1.setTranslationZ(C1357a0.m37544i(2.0f));
         }
         addView(S1, i11 + 1);
     }
 
     public final void m9086E1(AbstractC9323v4<?> v4Var, int i, int i2, int i3, int i4, int i5, int i6) {
-        int i7 = C1357a0.m37541i(4.0f);
+        int i7 = C1357a0.m37544i(4.0f);
         int i8 = i7 * 2;
-        FrameLayout.LayoutParams t1 = FrameLayoutFix.m18007t1(C1357a0.m37541i(56.0f) + i8, C1357a0.m37541i(56.0f) + i8, C4403w.m27984G2() ? 83 : 85);
-        int i9 = C1357a0.m37541i(16.0f) - i7;
+        FrameLayout.LayoutParams t1 = FrameLayoutFix.m18007t1(C1357a0.m37544i(56.0f) + i8, C1357a0.m37544i(56.0f) + i8, C4403w.m27986G2() ? 83 : 85);
+        int i9 = C1357a0.m37544i(16.0f) - i7;
         t1.bottomMargin = i9;
         t1.leftMargin = i9;
         t1.rightMargin = i9;
         C6851c0 c0Var = new C6851c0(getContext());
-        c0Var.m18789d(i2, 56.0f, 4.0f, i3, i4);
-        c0Var.m18784i(i5, i6);
+        c0Var.m18790d(i2, 56.0f, 4.0f, i3, i4);
+        c0Var.m18785i(i5, i6);
         c0Var.setId(i);
         c0Var.setOnClickListener(this);
         c0Var.setLayoutParams(t1);
         v4Var.m9163t8(c0Var);
-        this.f30225N = c0Var;
+        this.f30228N = c0Var;
         addView(c0Var);
     }
 
     public final void m9085F1(float f) {
-        if (this.f30231T == null) {
-            this.f30231T = new C3950k(1, this, C2057b.f7279a, 440L, this.f30230S);
+        if (this.f30234T == null) {
+            this.f30234T = new C3950k(1, this, C2057b.f7279a, 440L, this.f30233S);
         }
-        this.f30231T.m29544i(f);
+        this.f30234T.m29546i(f);
     }
 
     public final int m9084G1() {
-        if (this.f30233V != 0.0f) {
-            int d = C5064d.m24128d(C5064d.m24130b(0, C11524j.m245E0()), C11524j.m245E0(), this.f30233V);
+        if (this.f30236V != 0.0f) {
+            int d = C5064d.m24129d(C5064d.m24131b(0, C11524j.m245E0()), C11524j.m245E0(), this.f30236V);
             if (Color.alpha(d) != 0) {
                 return d;
             }
@@ -195,30 +195,30 @@ public class View$OnClickListenerC9347w1 extends FrameLayoutFix implements View.
     }
 
     public void m9083I1() {
-        if (this.f30228Q) {
+        if (this.f30231Q) {
             m9072W1();
         }
     }
 
     public void m9082J1() {
-        if (this.f30225N == null || this.f30229R) {
-            this.f30232U = false;
+        if (this.f30228N == null || this.f30232R) {
+            this.f30235U = false;
             return;
         }
         m9081L1();
-        this.f30232U = true;
+        this.f30235U = true;
     }
 
     public void m9081L1() {
-        if (this.f30225N != null && !this.f30229R) {
+        if (this.f30228N != null && !this.f30232R) {
             m9080M1();
-            this.f30229R = true;
+            this.f30232R = true;
             m9085F1(1.0f);
         }
     }
 
     public void m9080M1() {
-        if (this.f30228Q) {
+        if (this.f30231Q) {
             m9072W1();
         }
     }
@@ -242,7 +242,7 @@ public class View$OnClickListenerC9347w1 extends FrameLayoutFix implements View.
     }
 
     public final void m9078O1(int i, View view) {
-        AbstractC9349b bVar = this.f30224M;
+        AbstractC9349b bVar = this.f30227M;
         if (bVar != null && bVar.mo9070f4(i, view)) {
             m9083I1();
         }
@@ -254,9 +254,9 @@ public class View$OnClickListenerC9347w1 extends FrameLayoutFix implements View.
             setHideFactor(f);
             return;
         }
-        this.f30233V = f;
-        this.f30225N.m18779n(C4403w.m27984G2(), this.f30233V);
-        View$OnClickListenerC9170d1 w = C1379j0.m37297w(getContext());
+        this.f30236V = f;
+        this.f30228N.m18780n(C4403w.m27986G2(), this.f30236V);
+        View$OnClickListenerC9170d1 w = C1379j0.m37300w(getContext());
         if (w != null) {
             w.setOverlayColor(m9084G1());
         }
@@ -269,7 +269,7 @@ public class View$OnClickListenerC9347w1 extends FrameLayoutFix implements View.
             View childAt = getChildAt(i2);
             childAt.setEnabled(f == 1.0f);
             if (i2 % 2 == 1) {
-                childAt.setPivotX(C4403w.m27984G2() ? 0.0f : childAt.getMeasuredWidth());
+                childAt.setPivotX(C4403w.m27986G2() ? 0.0f : childAt.getMeasuredWidth());
                 f4 += f3;
             }
             childAt.setPivotY(childAt.getMeasuredHeight());
@@ -282,57 +282,57 @@ public class View$OnClickListenerC9347w1 extends FrameLayoutFix implements View.
     }
 
     public boolean m9077Q1() {
-        return this.f30226O.m29531v() || this.f30226O.m29538o() != 0.0f;
+        return this.f30229O.m29533v() || this.f30229O.m29540o() != 0.0f;
     }
 
     public final TextView m9076S1(AbstractC9323v4<?> v4Var) {
-        int i = C1357a0.m37541i(4.0f);
+        int i = C1357a0.m37544i(4.0f);
         C9348a aVar = new C9348a(getContext());
         aVar.setTextColor(C11524j.m213U0());
         v4Var.m9480A8(aVar);
         C10189d.m5799e(aVar, 3.0f, 4.0f, R.id.theme_color_filling);
         v4Var.m9163t8(aVar);
         aVar.setTextSize(1, 15.0f);
-        aVar.setTypeface(C1389o.m37262g());
+        aVar.setTypeface(C1389o.m37265g());
         aVar.setSingleLine(true);
         aVar.setEllipsize(TextUtils.TruncateAt.END);
-        aVar.setPadding(C1357a0.m37541i(8.0f) + i, C1357a0.m37541i(2.5f) + i, C1357a0.m37541i(8.0f) + i, i);
+        aVar.setPadding(C1357a0.m37544i(8.0f) + i, C1357a0.m37544i(2.5f) + i, C1357a0.m37544i(8.0f) + i, i);
         aVar.setOnClickListener(this);
         return aVar;
     }
 
     public void m9075T1(int i, int i2) {
-        this.f30225N.setId(i);
-        this.f30225N.m18786g(i2);
+        this.f30228N.setId(i);
+        this.f30228N.m18787g(i2);
     }
 
     public void m9074U1() {
-        if (this.f30225N != null && this.f30229R && !this.f30232U) {
-            this.f30229R = false;
+        if (this.f30228N != null && this.f30232R && !this.f30235U) {
+            this.f30232R = false;
             m9085F1(0.0f);
         }
     }
 
     public void m9073V1() {
-        if (this.f30232U) {
-            this.f30232U = false;
+        if (this.f30235U) {
+            this.f30235U = false;
             m9074U1();
         }
     }
 
     public void m9072W1() {
-        if (this.f30228Q || (!this.f30229R && !this.f30232U && !C1379j0.m37307r(getContext()).m14424w1())) {
-            boolean z = !this.f30228Q;
-            this.f30228Q = z;
+        if (this.f30231Q || (!this.f30232R && !this.f30235U && !C1379j0.m37310r(getContext()).m14423w1())) {
+            boolean z = !this.f30231Q;
+            this.f30231Q = z;
             float f = 0.0f;
-            if (z && this.f30226O.m29538o() == 0.0f) {
+            if (z && this.f30229O.m29540o() == 0.0f) {
                 setChildrenLayerType(2);
             }
-            C3950k kVar = this.f30226O;
-            if (this.f30228Q) {
+            C3950k kVar = this.f30229O;
+            if (this.f30231Q) {
                 f = 1.0f;
             }
-            kVar.m29544i(f);
+            kVar.m29546i(f);
         }
     }
 
@@ -340,14 +340,14 @@ public class View$OnClickListenerC9347w1 extends FrameLayoutFix implements View.
         int i;
         int i2;
         boolean z;
-        int i3 = C4403w.m27984G2() ? 83 : 85;
-        int i4 = C1357a0.m37541i(4.0f);
-        if (C4403w.m27984G2()) {
-            i2 = C1357a0.m37541i(90.0f) - i4;
-            i = C1357a0.m37541i(26.0f) - i4;
+        int i3 = C4403w.m27986G2() ? 83 : 85;
+        int i4 = C1357a0.m37544i(4.0f);
+        if (C4403w.m27986G2()) {
+            i2 = C1357a0.m37544i(90.0f) - i4;
+            i = C1357a0.m37544i(26.0f) - i4;
         } else {
-            i = C1357a0.m37541i(90.0f) - i4;
-            i2 = C1357a0.m37541i(26.0f) - i4;
+            i = C1357a0.m37544i(90.0f) - i4;
+            i2 = C1357a0.m37544i(26.0f) - i4;
         }
         for (int i5 = 0; i5 < getChildCount(); i5++) {
             View childAt = getChildAt(i5);
@@ -382,7 +382,7 @@ public class View$OnClickListenerC9347w1 extends FrameLayoutFix implements View.
 
     @Override
     public void mo4501a3() {
-        this.f30227P = true;
+        this.f30230P = true;
         for (int i = 0; i < getChildCount(); i++) {
             View childAt = getChildAt(i);
             if (childAt instanceof AbstractC5911c) {
@@ -393,14 +393,14 @@ public class View$OnClickListenerC9347w1 extends FrameLayoutFix implements View.
 
     @Override
     public void onClick(View view) {
-        if (!this.f30229R) {
+        if (!this.f30232R) {
             m9078O1(view.getId(), view);
         }
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
-        return !C1399s0.m37218C(this) || super.onInterceptTouchEvent(motionEvent);
+        return !C1399s0.m37221C(this) || super.onInterceptTouchEvent(motionEvent);
     }
 
     @Override
@@ -408,10 +408,10 @@ public class View$OnClickListenerC9347w1 extends FrameLayoutFix implements View.
         if (motionEvent.getAction() == 0) {
             m9083I1();
         }
-        return C1399s0.m37218C(this) && (super.onTouchEvent(motionEvent) || this.f30226O.m29538o() != 0.0f);
+        return C1399s0.m37221C(this) && (super.onTouchEvent(motionEvent) || this.f30229O.m29540o() != 0.0f);
     }
 
     public void setCallback(AbstractC9349b bVar) {
-        this.f30224M = bVar;
+        this.f30227M = bVar;
     }
 }

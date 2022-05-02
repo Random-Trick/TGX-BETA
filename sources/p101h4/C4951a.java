@@ -16,8 +16,8 @@ public final class C4951a implements C4260a.AbstractC4262b {
     public final String f16868a;
     public final String f16869b;
     public final long f16870c;
-    public static final C6600g1 f16863P = new C6600g1.C6602b().m19858e0("application/id3").m19889E();
-    public static final C6600g1 f16864Q = new C6600g1.C6602b().m19858e0("application/x-scte35").m19889E();
+    public static final C6600g1 f16863P = new C6600g1.C6602b().m19859e0("application/id3").m19890E();
+    public static final C6600g1 f16864Q = new C6600g1.C6602b().m19859e0("application/x-scte35").m19890E();
     public static final Parcelable.Creator<C4951a> CREATOR = new C4952a();
 
     public class C4952a implements Parcelable.Creator<C4951a> {
@@ -51,7 +51,7 @@ public final class C4951a implements C4260a.AbstractC4262b {
             return false;
         }
         C4951a aVar = (C4951a) obj;
-        return this.f16870c == aVar.f16870c && this.f16865M == aVar.f16865M && C1216l0.m37982c(this.f16868a, aVar.f16868a) && C1216l0.m37982c(this.f16869b, aVar.f16869b) && Arrays.equals(this.f16866N, aVar.f16866N);
+        return this.f16870c == aVar.f16870c && this.f16865M == aVar.f16865M && C1216l0.m37985c(this.f16868a, aVar.f16868a) && C1216l0.m37985c(this.f16869b, aVar.f16869b) && Arrays.equals(this.f16866N, aVar.f16866N);
     }
 
     @Override
@@ -116,7 +116,7 @@ public final class C4951a implements C4260a.AbstractC4262b {
 
     @Override
     public void populateMediaMetadata(C6693s1.C6695b bVar) {
-        C4263b.m28322c(this, bVar);
+        C4263b.m28324c(this, bVar);
     }
 
     public String toString() {
@@ -146,10 +146,10 @@ public final class C4951a implements C4260a.AbstractC4262b {
     }
 
     public C4951a(Parcel parcel) {
-        this.f16868a = (String) C1216l0.m37968j(parcel.readString());
-        this.f16869b = (String) C1216l0.m37968j(parcel.readString());
+        this.f16868a = (String) C1216l0.m37971j(parcel.readString());
+        this.f16869b = (String) C1216l0.m37971j(parcel.readString());
         this.f16870c = parcel.readLong();
         this.f16865M = parcel.readLong();
-        this.f16866N = (byte[]) C1216l0.m37968j(parcel.createByteArray());
+        this.f16866N = (byte[]) C1216l0.m37971j(parcel.createByteArray());
     }
 }

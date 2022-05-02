@@ -9,11 +9,11 @@ public final class C4165b {
         this.f14067a = image;
     }
 
-    public final Image m28634a() {
+    public final Image m28636a() {
         return this.f14067a;
     }
 
-    public final Image.Plane[] m28633b() {
+    public final Image.Plane[] m28635b() {
         return this.f14067a.getPlanes();
     }
 }

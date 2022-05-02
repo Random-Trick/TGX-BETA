@@ -21,7 +21,7 @@ public abstract class AbstractC1735g0<K, V> extends AbstractC1765i0<K, V> implem
         throw new IllegalArgumentException();
     }
 
-    public static void m36036n(AbstractC1735g0 g0Var, Object obj) {
+    public static void m36039n(AbstractC1735g0 g0Var, Object obj) {
         Collection<V> collection;
         Map<K, Collection<V>> map = g0Var.f6290c;
         Objects.requireNonNull(map);
@@ -39,10 +39,10 @@ public abstract class AbstractC1735g0<K, V> extends AbstractC1765i0<K, V> implem
     }
 
     @Override
-    public final boolean mo35968b(K k, V v) {
+    public final boolean mo35971b(K k, V v) {
         Collection<V> collection = this.f6290c.get(k);
         if (collection == null) {
-            Collection<V> g = mo35991g();
+            Collection<V> g = mo35994g();
             if (g.add(v)) {
                 this.f6289M++;
                 this.f6290c.put(k, g);
@@ -58,35 +58,35 @@ public abstract class AbstractC1735g0<K, V> extends AbstractC1765i0<K, V> implem
     }
 
     @Override
-    public final Map<K, Collection<V>> mo35995e() {
+    public final Map<K, Collection<V>> mo35998e() {
         return new C1977x(this, this.f6290c);
     }
 
     @Override
-    public final Set<K> mo35994f() {
+    public final Set<K> mo35997f() {
         return new C2005z(this, this.f6290c);
     }
 
-    public abstract Collection<V> mo35991g();
+    public abstract Collection<V> mo35994g();
 
-    public abstract Collection<V> mo35885h(K k, Collection<V> collection);
+    public abstract Collection<V> mo35888h(K k, Collection<V> collection);
 
-    public final Collection<V> m36040j(K k) {
+    public final Collection<V> m36043j(K k) {
         Collection<V> collection = this.f6290c.get(k);
         if (collection == null) {
-            collection = mo35991g();
+            collection = mo35994g();
         }
-        return mo35885h(k, collection);
+        return mo35888h(k, collection);
     }
 
-    public final List<V> m36039k(K k, List<V> list, @CheckForNull C1690d0 d0Var) {
+    public final List<V> m36042k(K k, List<V> list, @CheckForNull C1690d0 d0Var) {
         if (list instanceof RandomAccess) {
             return new C1645a0(this, k, list, d0Var);
         }
         return new C1720f0(this, k, list, d0Var);
     }
 
-    public final void m36035o() {
+    public final void m36038o() {
         for (Collection<V> collection : this.f6290c.values()) {
             collection.clear();
         }

@@ -29,7 +29,7 @@ public class C4817v6 {
     public AbstractC4818a f16426m;
 
     public interface AbstractC4818a {
-        void mo25158B2(C4817v6 v6Var);
+        void mo25159B2(C4817v6 v6Var);
     }
 
     public C4817v6(C10930q6 q6Var, TdApi.Sticker[] stickerArr) {
@@ -43,22 +43,22 @@ public class C4817v6 {
         this.f16418e = 0;
     }
 
-    public void m25194A() {
+    public void m25195A() {
         TdApi.StickerSetInfo stickerSetInfo = this.f16415b;
         if (stickerSetInfo != null) {
             stickerSetInfo.isInstalled = false;
         }
     }
 
-    public void m25193B() {
+    public void m25194B() {
         this.f16421h |= 1;
     }
 
-    public void m25192C() {
+    public void m25193C() {
         this.f16421h |= 4;
     }
 
-    public void m25191D(int i) {
+    public void m25192D(int i) {
         TdApi.StickerSetInfo stickerSetInfo = this.f16415b;
         if (stickerSetInfo != null) {
             stickerSetInfo.size = i;
@@ -67,19 +67,19 @@ public class C4817v6 {
         }
     }
 
-    public void m25190E(int i) {
+    public void m25191E(int i) {
         this.f16423j = i;
     }
 
-    public void m25189F(TdApi.StickerSet stickerSet) {
+    public void m25190F(TdApi.StickerSet stickerSet) {
         this.f16424k = stickerSet;
     }
 
-    public void m25188G(AbstractC4818a aVar) {
+    public void m25189G(AbstractC4818a aVar) {
         this.f16426m = aVar;
     }
 
-    public void m25187H(AbstractC9323v4<?> v4Var) {
+    public void m25188H(AbstractC9323v4<?> v4Var) {
         View$OnClickListenerC2096i iVar;
         TdApi.StickerSet stickerSet = this.f16424k;
         if (stickerSet != null) {
@@ -88,17 +88,17 @@ public class C4817v6 {
             stickerSet.isArchived = stickerSetInfo.isArchived;
             stickerSet.isViewed = stickerSetInfo.isViewed;
             stickerSet.stickerType = stickerSetInfo.stickerType;
-            iVar = View$OnClickListenerC2096i.m35619W1(v4Var, stickerSet);
+            iVar = View$OnClickListenerC2096i.m35622W1(v4Var, stickerSet);
         } else {
             TdApi.StickerSetInfo stickerSetInfo2 = this.f16415b;
-            iVar = (stickerSetInfo2 == null || stickerSetInfo2.f25424id == 0) ? null : View$OnClickListenerC2096i.m35618X1(v4Var, stickerSetInfo2);
+            iVar = (stickerSetInfo2 == null || stickerSetInfo2.f25427id == 0) ? null : View$OnClickListenerC2096i.m35621X1(v4Var, stickerSetInfo2);
         }
-        if (iVar != null && m25166s()) {
-            iVar.m35620V1();
+        if (iVar != null && m25167s()) {
+            iVar.m35623V1();
         }
     }
 
-    public void m25186I(TdApi.StickerSetInfo stickerSetInfo) {
+    public void m25187I(TdApi.StickerSetInfo stickerSetInfo) {
         TdApi.StickerSetInfo stickerSetInfo2 = this.f16415b;
         stickerSetInfo2.isViewed = stickerSetInfo.isViewed;
         stickerSetInfo2.isArchived = stickerSetInfo.isArchived;
@@ -106,14 +106,14 @@ public class C4817v6 {
         stickerSetInfo2.covers = stickerSetInfo.covers;
     }
 
-    public void m25185J() {
+    public void m25186J() {
         AbstractC4818a aVar = this.f16426m;
         if (aVar != null) {
-            aVar.mo25158B2(this);
+            aVar.mo25159B2(this);
         }
     }
 
-    public int m25184a() {
+    public int m25185a() {
         TdApi.StickerSetInfo stickerSetInfo = this.f16415b;
         if (stickerSetInfo != null) {
             return stickerSetInfo.covers.length;
@@ -121,31 +121,31 @@ public class C4817v6 {
         return 0;
     }
 
-    public int m25183b() {
-        return this.f16423j + m25180e();
+    public int m25184b() {
+        return this.f16423j + m25181e();
     }
 
-    public long m25182c() {
+    public long m25183c() {
         TdApi.StickerSetInfo stickerSetInfo = this.f16415b;
         if (stickerSetInfo != null) {
-            return stickerSetInfo.f25424id;
+            return stickerSetInfo.f25427id;
         }
         return 0L;
     }
 
-    public TdApi.StickerSetInfo m25181d() {
+    public TdApi.StickerSetInfo m25182d() {
         return this.f16415b;
     }
 
-    public int m25180e() {
+    public int m25181e() {
         int i;
-        if (m25166s()) {
+        if (m25167s()) {
             return 5;
         }
         TdApi.StickerSetInfo stickerSetInfo = this.f16415b;
         if (stickerSetInfo != null) {
             i = stickerSetInfo.size;
-        } else if (m25171n()) {
+        } else if (m25172n()) {
             return this.f16422i;
         } else {
             i = this.f16422i;
@@ -163,10 +163,10 @@ public class C4817v6 {
             return false;
         }
         TdApi.StickerSetInfo stickerSetInfo2 = v6Var.f16415b;
-        return (stickerSetInfo2 == null && this.f16415b == null) || !(stickerSetInfo2 == null || (stickerSetInfo = this.f16415b) == null || stickerSetInfo2.f25424id != stickerSetInfo.f25424id);
+        return (stickerSetInfo2 == null && this.f16415b == null) || !(stickerSetInfo2 == null || (stickerSetInfo = this.f16415b) == null || stickerSetInfo2.f25427id != stickerSetInfo.f25427id);
     }
 
-    public String m25179f() {
+    public String m25180f() {
         TdApi.StickerSetInfo stickerSetInfo = this.f16415b;
         if (stickerSetInfo != null) {
             return stickerSetInfo.name;
@@ -174,11 +174,11 @@ public class C4817v6 {
         return null;
     }
 
-    public C6503j m25178g() {
+    public C6503j m25179g() {
         return this.f16420g;
     }
 
-    public Path m25177h(int i) {
+    public Path m25178h(int i) {
         int i2;
         int i3 = this.f16418e;
         if (i3 == 0 || (i2 = this.f16419f) == 0) {
@@ -188,25 +188,25 @@ public class C4817v6 {
         return C7321e.m16964b(this.f16417d, Math.min(f / i3, f / i2));
     }
 
-    public C6246h m25176i() {
+    public C6246h m25177i() {
         return this.f16416c;
     }
 
-    public int m25175j() {
+    public int m25176j() {
         TdApi.StickerSetInfo stickerSetInfo = this.f16415b;
         return stickerSetInfo != null ? stickerSetInfo.size : this.f16422i;
     }
 
-    public int m25174k() {
+    public int m25175k() {
         return this.f16423j;
     }
 
-    public String m25173l() {
-        if (m25171n()) {
+    public String m25174l() {
+        if (m25172n()) {
             return "";
         }
-        if (m25168q()) {
-            return C4403w.m27869i1(R.string.RecentStickers);
+        if (m25169q()) {
+            return C4403w.m27871i1(R.string.RecentStickers);
         }
         TdApi.StickerSetInfo stickerSetInfo = this.f16415b;
         if (stickerSetInfo != null) {
@@ -215,52 +215,52 @@ public class C4817v6 {
         return null;
     }
 
-    public boolean m25172m() {
+    public boolean m25173m() {
         TdApi.StickerSetInfo stickerSetInfo = this.f16415b;
         return stickerSetInfo != null && C7321e.m16976V0(stickerSetInfo.stickerType);
     }
 
-    public boolean m25171n() {
+    public boolean m25172n() {
         return (this.f16421h & 8) != 0;
     }
 
-    public boolean m25170o() {
+    public boolean m25171o() {
         TdApi.StickerSetInfo stickerSetInfo = this.f16415b;
         return stickerSetInfo != null && stickerSetInfo.isInstalled && !stickerSetInfo.isArchived;
     }
 
-    public boolean m25169p() {
+    public boolean m25170p() {
         TdApi.StickerSetInfo stickerSetInfo = this.f16415b;
         return stickerSetInfo != null && stickerSetInfo.stickerType.getConstructor() == -839756573;
     }
 
-    public boolean m25168q() {
+    public boolean m25169q() {
         return (this.f16421h & 1) != 0;
     }
 
-    public boolean m25167r() {
+    public boolean m25168r() {
         return (this.f16421h & 9) != 0;
     }
 
-    public boolean m25166s() {
+    public boolean m25167s() {
         return (this.f16421h & 4) != 0;
     }
 
-    public boolean m25165t() {
+    public boolean m25166t() {
         TdApi.StickerSetInfo stickerSetInfo = this.f16415b;
         return stickerSetInfo != null && stickerSetInfo.isViewed;
     }
 
-    public boolean m25164u() {
+    public boolean m25165u() {
         ArrayList<C4817v6> arrayList = this.f16425l;
-        return (arrayList == null || arrayList.isEmpty() || this.f16425l.get(0).m25182c() == m25182c()) ? false : true;
+        return (arrayList == null || arrayList.isEmpty() || this.f16425l.get(0).m25183c() == m25183c()) ? false : true;
     }
 
-    public void m25163v(ArrayList<C4817v6> arrayList) {
+    public void m25164v(ArrayList<C4817v6> arrayList) {
         this.f16425l = arrayList;
     }
 
-    public void m25162w() {
+    public void m25163w() {
         TdApi.StickerSetInfo stickerSetInfo = this.f16415b;
         if (stickerSetInfo != null) {
             stickerSetInfo.isInstalled = false;
@@ -268,11 +268,11 @@ public class C4817v6 {
         }
     }
 
-    public void m25161x() {
+    public void m25162x() {
         this.f16421h |= 8;
     }
 
-    public void m25160y() {
+    public void m25161y() {
         TdApi.StickerSetInfo stickerSetInfo = this.f16415b;
         if (stickerSetInfo != null) {
             stickerSetInfo.isInstalled = true;
@@ -280,7 +280,7 @@ public class C4817v6 {
         }
     }
 
-    public void m25159z() {
+    public void m25160z() {
         TdApi.StickerSetInfo stickerSetInfo = this.f16415b;
         if (stickerSetInfo != null) {
             stickerSetInfo.isArchived = false;
@@ -314,7 +314,7 @@ public class C4817v6 {
                 this.f16420g = new C6503j(q6Var, stickerSetInfo.thumbnail.file, i);
                 this.f16416c = null;
             } else {
-                this.f16416c = C4779t2.m25704D5(q6Var, stickerSetInfo.thumbnail);
+                this.f16416c = C4779t2.m25705D5(q6Var, stickerSetInfo.thumbnail);
                 this.f16420g = null;
             }
         } else {
@@ -334,11 +334,11 @@ public class C4817v6 {
                     TdApi.Sticker[] stickerArr2 = stickerSetInfo.covers;
                     C6503j jVar = new C6503j(q6Var, stickerArr2[0].sticker, stickerArr2[0].type);
                     this.f16420g = jVar;
-                    jVar.m20300F(true);
+                    jVar.m20301F(true);
                 } else {
                     TdApi.Sticker[] stickerArr3 = stickerSetInfo.covers;
                     if (stickerArr3[0].thumbnail != null) {
-                        this.f16416c = C4779t2.m25704D5(q6Var, stickerArr3[0].thumbnail);
+                        this.f16416c = C4779t2.m25705D5(q6Var, stickerArr3[0].thumbnail);
                         this.f16420g = null;
                     } else {
                         this.f16416c = null;
@@ -349,14 +349,14 @@ public class C4817v6 {
         }
         C6246h hVar = this.f16416c;
         if (hVar != null) {
-            hVar.mo20767t0(ViewTreeObserver$OnPreDrawListenerC7081z0.getHeaderSize());
-            this.f16416c.m20897s0(1);
-            this.f16416c.m20889x0();
+            hVar.mo20768t0(ViewTreeObserver$OnPreDrawListenerC7081z0.getHeaderSize());
+            this.f16416c.m20898s0(1);
+            this.f16416c.m20890x0();
         }
         C6503j jVar2 = this.f16420g;
         if (jVar2 != null) {
-            jVar2.m20300F(true);
-            this.f16420g.m20297I(1);
+            jVar2.m20301F(true);
+            this.f16420g.m20298I(1);
         }
     }
 

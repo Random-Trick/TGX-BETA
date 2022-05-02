@@ -52,7 +52,7 @@ public class C4053k0 extends C4056l0 implements C3950k.AbstractC3952b {
     public final Path f13648V = new Path();
     public final Path f13649W = new Path();
     public final Path f13650a0 = new Path();
-    public final int f13656g0 = C1357a0.m37541i(20.0f);
+    public final int f13656g0 = C1357a0.m37544i(20.0f);
     public float f13667r0 = 1.0f;
     public float f13668s0 = 0.0f;
 
@@ -64,11 +64,11 @@ public class C4053k0 extends C4056l0 implements C3950k.AbstractC3952b {
         public C4054a() {
         }
 
-        public void m29138a(C4054a aVar) {
-            m29137b(aVar.f13675a, aVar.f13676b, aVar.f13677c);
+        public void m29140a(C4054a aVar) {
+            m29139b(aVar.f13675a, aVar.f13676b, aVar.f13677c);
         }
 
-        public void m29137b(float f, float f2, float f3) {
+        public void m29139b(float f, float f2, float f3) {
             this.f13675a = f;
             this.f13676b = f2;
             this.f13677c = f3;
@@ -98,53 +98,53 @@ public class C4053k0 extends C4056l0 implements C3950k.AbstractC3952b {
         paint.setColor(2130706432);
         paint2.setColor(C11524j.m228N(R.id.theme_color_white));
         paint2.setStyle(Paint.Style.STROKE);
-        paint2.setStrokeWidth(C1357a0.m37541i(2.0f));
+        paint2.setStrokeWidth(C1357a0.m37544i(2.0f));
         paint2.setStrokeJoin(Paint.Join.ROUND);
         paint3.setColor(-65536);
         paint3.setStyle(Paint.Style.STROKE);
-        paint3.setStrokeWidth(C1357a0.m37541i(2.0f));
+        paint3.setStrokeWidth(C1357a0.m37544i(2.0f));
         paint3.setStrokeJoin(Paint.Join.ROUND);
     }
 
-    public static int m29142Q1() {
+    public static int m29144Q1() {
         return -65536;
     }
 
-    public static int m29141S1() {
+    public static int m29143S1() {
         return -1;
     }
 
     @Override
-    public void mo29117C1() {
+    public void mo29119C1() {
         this.f13670u0 = true;
-        this.f13660k0.m29575p(false, false);
-        this.f13661l0.m29575p(false, false);
-        this.f13663n0.m29575p(true, true);
+        this.f13660k0.m29577p(false, false);
+        this.f13661l0.m29577p(false, false);
+        this.f13663n0.m29577p(true, true);
         C4054a aVar = this.f13645S;
         C4054a aVar2 = this.f13643Q;
-        aVar.m29137b(aVar2.f13675a, aVar2.f13676b, aVar2.f13677c);
-        m29140T1();
+        aVar.m29139b(aVar2.f13675a, aVar2.f13676b, aVar2.f13677c);
+        m29142T1();
     }
 
     @Override
-    public void mo29116D1() {
-        this.f13662m0.m29575p(true, true);
+    public void mo29118D1() {
+        this.f13662m0.m29577p(true, true);
     }
 
     @Override
-    public void mo29115E1(float f) {
+    public void mo29117E1(float f) {
         this.f13668s0 = f;
         invalidate();
     }
 
     @Override
-    public void mo29113G1(RectF rectF, int i, int i2, int i3, boolean z) {
+    public void mo29115G1(RectF rectF, int i, int i2, int i3, boolean z) {
         float f;
         if (!this.f13670u0) {
-            this.f13662m0.m29575p(false, false);
-            this.f13662m0.m29579l(z ? 250L : 150L);
+            this.f13662m0.m29577p(false, false);
+            this.f13662m0.m29581l(z ? 250L : 150L);
             if (rectF == null) {
-                this.f13660k0.m29575p(true, false);
+                this.f13660k0.m29577p(true, false);
                 return;
             }
             float f2 = i2;
@@ -155,7 +155,7 @@ public class C4053k0 extends C4056l0 implements C3950k.AbstractC3952b {
             float width2 = (getWidth() / 2.0f) + (rectF.left - f4);
             float width3 = (getWidth() / 2.0f) + (rectF.right - f4);
             float height2 = (getHeight() / 2.0f) + (rectF.top - (f3 / 2.0f));
-            if (C4868i.m24726c2().m24616q0() == 3) {
+            if (C4868i.m24727c2().m24617q0() == 3) {
                 width = this.f13659j0 / f2;
                 RectF rectF2 = new RectF(rectF.left * width, rectF.top * height, rectF.right * width, rectF.bottom * height);
                 height2 = rectF2.top;
@@ -164,62 +164,62 @@ public class C4053k0 extends C4056l0 implements C3950k.AbstractC3952b {
                 f = width3 - width2;
             }
             if (this.f13673x0) {
-                this.f13666q0 = new RunnableC5390g.C5392b(C4403w.m27935T("camera = %s x %s, view = %s x %s, cameraView = %s x %s\naspect = %s, zxing = %s\nsx: %s, sy: %s\nX: %s, Y: %s, size: %s\nSource bounds: %s (width: %s)", null, Integer.valueOf(i), Integer.valueOf(i2), Integer.valueOf(getHeight()), Integer.valueOf(getWidth()), Integer.valueOf(this.f13658i0), Integer.valueOf(this.f13657h0), Integer.valueOf(C4868i.m24726c2().m24616q0()), Boolean.valueOf(z), Float.valueOf(width), Float.valueOf(height), Float.valueOf(width2), Float.valueOf(height2), Float.valueOf(f), rectF, Float.valueOf(rectF.width())).toString(), getWidth(), C1410y.m37083A0(14.0f), C4042i0.f13571a).m22884f();
+                this.f13666q0 = new RunnableC5390g.C5392b(C4403w.m27937T("camera = %s x %s, view = %s x %s, cameraView = %s x %s\naspect = %s, zxing = %s\nsx: %s, sy: %s\nX: %s, Y: %s, size: %s\nSource bounds: %s (width: %s)", null, Integer.valueOf(i), Integer.valueOf(i2), Integer.valueOf(getHeight()), Integer.valueOf(getWidth()), Integer.valueOf(this.f13658i0), Integer.valueOf(this.f13657h0), Integer.valueOf(C4868i.m24727c2().m24617q0()), Boolean.valueOf(z), Float.valueOf(width), Float.valueOf(height), Float.valueOf(width2), Float.valueOf(height2), Float.valueOf(f), rectF, Float.valueOf(rectF.width())).toString(), getWidth(), C1410y.m37086A0(14.0f), C4042i0.f13571a).m22885f();
                 this.f13654e0 = rectF;
                 this.f13655f0 = new RectF(rectF.left * width, rectF.top * height, rectF.right * width, rectF.bottom * height);
             }
-            m29144N1(width2, height2, f);
-            this.f13660k0.m29575p(true, true);
-            this.f13663n0.m29575p(false, true);
+            m29146N1(width2, height2, f);
+            this.f13660k0.m29577p(true, true);
+            this.f13663n0.m29577p(false, true);
         }
     }
 
     @Override
-    public void mo29112I1(boolean z, boolean z2) {
+    public void mo29114I1(boolean z, boolean z2) {
         this.f13669t0 = z;
-        this.f13673x0 = z2 || C4868i.m24726c2().m24777V2();
+        this.f13673x0 = z2 || C4868i.m24727c2().m24778V2();
         this.f13670u0 = false;
-        this.f13645S.m29137b(0.0f, 0.0f, 0.0f);
+        this.f13645S.m29139b(0.0f, 0.0f, 0.0f);
         invalidate();
     }
 
     @Override
-    public void mo29111J1(int i) {
+    public void mo29113J1(int i) {
         this.f13674y0 = i;
         RunnableC5390g gVar = this.f13664o0;
         if (gVar != null) {
-            m29139U1(gVar.m22936h0());
+            m29141U1(gVar.m22937h0());
         }
     }
 
-    public final void m29144N1(float f, float f2, float f3) {
-        this.f13644R.m29138a(this.f13645S);
+    public final void m29146N1(float f, float f2, float f3) {
+        this.f13644R.m29140a(this.f13645S);
         this.f13646T = new C4054a(f, f2, f3);
-        this.f13661l0.m29575p(false, false);
-        this.f13661l0.m29575p(true, true);
+        this.f13661l0.m29577p(false, false);
+        this.f13661l0.m29577p(true, true);
     }
 
-    public final int m29143O1() {
-        return this.f13678M.mo4347s().m14513a1();
+    public final int m29145O1() {
+        return this.f13678M.mo4347s().m14512a1();
     }
 
     @Override
     public void mo45P5(int i, float f, float f2, C3950k kVar) {
         if (i == 0) {
-            this.f13645S.f13675a = C5069h.m24084i(this.f13644R.f13675a, this.f13646T.f13675a, f);
-            this.f13645S.f13676b = C5069h.m24084i(this.f13644R.f13676b, this.f13646T.f13676b, f);
-            this.f13645S.f13677c = C5069h.m24084i(this.f13644R.f13677c, this.f13646T.f13677c, f);
-            m29140T1();
+            this.f13645S.f13675a = C5069h.m24085i(this.f13644R.f13675a, this.f13646T.f13675a, f);
+            this.f13645S.f13676b = C5069h.m24085i(this.f13644R.f13676b, this.f13646T.f13676b, f);
+            this.f13645S.f13677c = C5069h.m24085i(this.f13644R.f13677c, this.f13646T.f13677c, f);
+            m29142T1();
             invalidate();
         } else if (i == 3) {
-            this.f13667r0 = C5069h.m24089d(f);
+            this.f13667r0 = C5069h.m24090d(f);
             invalidate();
         } else if (i == 1 && f > 0.25f) {
-            this.f13663n0.m29582i();
+            this.f13663n0.m29584i();
         }
     }
 
-    public final void m29140T1() {
+    public final void m29142T1() {
         C4054a aVar = this.f13645S;
         float f = aVar.f13675a;
         float f2 = aVar.f13676b;
@@ -244,28 +244,28 @@ public class C4053k0 extends C4056l0 implements C3950k.AbstractC3952b {
         this.f13650a0.lineTo(f4 - this.f13656g0, f5);
     }
 
-    public final void m29139U1(int i) {
+    public final void m29141U1(int i) {
         C4044j0 j0Var = C4044j0.f13573a;
-        this.f13664o0 = new RunnableC5390g.C5392b(C4403w.m27869i1(R.string.ScanQRFullTitle), i, C1410y.m37083A0(31.0f), j0Var).m22888b().m22889a(2).m22868v().m22884f();
+        this.f13664o0 = new RunnableC5390g.C5392b(C4403w.m27871i1(R.string.ScanQRFullTitle), i, C1410y.m37086A0(31.0f), j0Var).m22889b().m22890a(2).m22869v().m22885f();
         int i2 = this.f13674y0;
         if (i2 == 0) {
             i2 = R.string.ScanQRFullSubtitle;
         }
-        this.f13665p0 = new RunnableC5390g.C5392b(C4403w.m27869i1(i2), i, C1410y.m37083A0(16.0f), j0Var).m22889a(2).m22874p(2).m22884f();
+        this.f13665p0 = new RunnableC5390g.C5392b(C4403w.m27871i1(i2), i, C1410y.m37086A0(16.0f), j0Var).m22890a(2).m22875p(2).m22885f();
     }
 
     @Override
     public void mo35Y0(int i, float f, C3950k kVar) {
         if (i == 1 && f == 1.0f) {
-            if (!C4868i.m24726c2().m24903D2()) {
-                ((View$OnClickListenerC4045k) this.f13678M).m29226Lf();
-                this.f13660k0.m29575p(false, false);
+            if (!C4868i.m24727c2().m24904D2()) {
+                ((View$OnClickListenerC4045k) this.f13678M).m29228Lf();
+                this.f13660k0.m29577p(false, false);
             }
         } else if (i == 2 && f == 1.0f) {
-            this.f13660k0.m29575p(false, false);
-            this.f13663n0.m29575p(true, true);
+            this.f13660k0.m29577p(false, false);
+            this.f13663n0.m29577p(true, true);
             C4054a aVar = this.f13643Q;
-            m29144N1(aVar.f13675a, aVar.f13676b, aVar.f13677c);
+            m29146N1(aVar.f13675a, aVar.f13676b, aVar.f13677c);
         }
     }
 

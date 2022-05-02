@@ -46,7 +46,7 @@ public final class C6055b extends AbstractC6069i {
     }
 
     public C6055b(Parcel parcel) {
-        super((String) C1216l0.m37968j(parcel.readString()));
-        this.f19264b = (byte[]) C1216l0.m37968j(parcel.createByteArray());
+        super((String) C1216l0.m37971j(parcel.readString()));
+        this.f19264b = (byte[]) C1216l0.m37971j(parcel.createByteArray());
     }
 }

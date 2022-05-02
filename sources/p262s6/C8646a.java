@@ -7,7 +7,7 @@ import java.util.IllegalFormatException;
 import java.util.Locale;
 
 public final class C8646a {
-    public final String f27975a;
+    public final String f27978a;
 
     public C8646a(String str) {
         int myUid = Process.myUid();
@@ -20,10 +20,10 @@ public final class C8646a {
         sb2.append("] ");
         String sb3 = sb2.toString();
         String valueOf = String.valueOf(str);
-        this.f27975a = valueOf.length() != 0 ? sb3.concat(valueOf) : new String(sb3);
+        this.f27978a = valueOf.length() != 0 ? sb3.concat(valueOf) : new String(sb3);
     }
 
-    public static String m11813f(String str, String str2, Object... objArr) {
+    public static String m11812f(String str, String str2, Object... objArr) {
         if (objArr.length > 0) {
             try {
                 str2 = String.format(Locale.US, str2, objArr);
@@ -46,37 +46,37 @@ public final class C8646a {
         return sb3.toString();
     }
 
-    public final int m11818a(String str, Object... objArr) {
+    public final int m11817a(String str, Object... objArr) {
         if (Log.isLoggable("PlayCore", 3)) {
-            return Log.d("PlayCore", m11813f(this.f27975a, str, objArr));
+            return Log.d("PlayCore", m11812f(this.f27978a, str, objArr));
         }
         return 0;
     }
 
-    public final int m11817b(String str, Object... objArr) {
+    public final int m11816b(String str, Object... objArr) {
         if (Log.isLoggable("PlayCore", 6)) {
-            return Log.e("PlayCore", m11813f(this.f27975a, str, objArr));
+            return Log.e("PlayCore", m11812f(this.f27978a, str, objArr));
         }
         return 0;
     }
 
-    public final int m11816c(Throwable th, String str, Object... objArr) {
+    public final int m11815c(Throwable th, String str, Object... objArr) {
         if (Log.isLoggable("PlayCore", 6)) {
-            return Log.e("PlayCore", m11813f(this.f27975a, str, objArr), th);
+            return Log.e("PlayCore", m11812f(this.f27978a, str, objArr), th);
         }
         return 0;
     }
 
-    public final int m11815d(String str, Object... objArr) {
+    public final int m11814d(String str, Object... objArr) {
         if (Log.isLoggable("PlayCore", 4)) {
-            return Log.i("PlayCore", m11813f(this.f27975a, str, objArr));
+            return Log.i("PlayCore", m11812f(this.f27978a, str, objArr));
         }
         return 0;
     }
 
-    public final int m11814e(String str, Object... objArr) {
+    public final int m11813e(String str, Object... objArr) {
         if (Log.isLoggable("PlayCore", 5)) {
-            return Log.w("PlayCore", m11813f(this.f27975a, str, objArr));
+            return Log.w("PlayCore", m11812f(this.f27978a, str, objArr));
         }
         return 0;
     }

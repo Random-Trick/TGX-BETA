@@ -10,7 +10,7 @@ public final class C2029f implements C9880h.AbstractC9881a {
     @Override
     public final String mo6696a(Object obj) {
         String f;
-        f = FirebaseCommonRegistrar.m30238f((Context) obj);
+        f = FirebaseCommonRegistrar.m30240f((Context) obj);
         return f;
     }
 }

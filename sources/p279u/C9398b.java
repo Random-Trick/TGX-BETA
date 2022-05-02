@@ -5,7 +5,7 @@ import android.os.Build;
 import android.view.Surface;
 
 public final class C9398b {
-    public final AbstractC9399a f30438a;
+    public final AbstractC9399a f30441a;
 
     public interface AbstractC9399a {
         String mo8790a();
@@ -20,13 +20,13 @@ public final class C9398b {
     public C9398b(Surface surface) {
         int i = Build.VERSION.SDK_INT;
         if (i >= 28) {
-            this.f30438a = new C9404e(surface);
+            this.f30441a = new C9404e(surface);
         } else if (i >= 26) {
-            this.f30438a = new C9402d(surface);
+            this.f30441a = new C9402d(surface);
         } else if (i >= 24) {
-            this.f30438a = new C9400c(surface);
+            this.f30441a = new C9400c(surface);
         } else {
-            this.f30438a = new C9405f(surface);
+            this.f30441a = new C9405f(surface);
         }
     }
 
@@ -52,33 +52,33 @@ public final class C9398b {
     }
 
     public String m8798a() {
-        return this.f30438a.mo8790a();
+        return this.f30441a.mo8790a();
     }
 
     public Surface m8797b() {
-        return this.f30438a.mo8789b();
+        return this.f30441a.mo8789b();
     }
 
     public void m8796c(String str) {
-        this.f30438a.mo8788c(str);
+        this.f30441a.mo8788c(str);
     }
 
     public Object m8795d() {
-        return this.f30438a.mo8787d();
+        return this.f30441a.mo8787d();
     }
 
     public boolean equals(Object obj) {
         if (!(obj instanceof C9398b)) {
             return false;
         }
-        return this.f30438a.equals(((C9398b) obj).f30438a);
+        return this.f30441a.equals(((C9398b) obj).f30441a);
     }
 
     public int hashCode() {
-        return this.f30438a.hashCode();
+        return this.f30441a.hashCode();
     }
 
     public C9398b(AbstractC9399a aVar) {
-        this.f30438a = aVar;
+        this.f30441a = aVar;
     }
 }

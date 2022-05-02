@@ -10,7 +10,7 @@ public abstract class AbstractC7870a extends RuntimeException {
 
     public static final class C7872b extends C7871a {
         public C7872b(String str) {
-            super(str + ", versionCode: 1506020");
+            super(str + ", versionCode: 1507020");
         }
     }
 

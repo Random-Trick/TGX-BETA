@@ -16,17 +16,17 @@ public abstract class AbstractC5595H3 extends AbstractC5605J3 implements Abstrac
     }
 
     @Override
-    public void m22378n(Object obj) {
+    public void m22379n(Object obj) {
         Objects.requireNonNull(obj);
         AbstractC5735l3 l3Var = null;
         while (true) {
-            int q = m22372q();
+            int q = m22373q();
             if (q == 1) {
                 return;
             }
             if (q == 2) {
                 if (l3Var == null) {
-                    l3Var = mo22376u(Log.TAG_YOUTUBE);
+                    l3Var = mo22377u(Log.TAG_YOUTUBE);
                 } else {
                     l3Var.f18426b = 0;
                 }
@@ -38,7 +38,7 @@ public abstract class AbstractC5595H3 extends AbstractC5605J3 implements Abstrac
                     }
                 }
                 if (j != 0) {
-                    l3Var.mo22217a(obj, m22374o(j));
+                    l3Var.mo22218a(obj, m22375o(j));
                 } else {
                     return;
                 }
@@ -56,27 +56,27 @@ public abstract class AbstractC5595H3 extends AbstractC5605J3 implements Abstrac
 
     @Override
     public long getExactSizeIfKnown() {
-        return AbstractC5485a.m22569h(this);
+        return AbstractC5485a.m22570h(this);
     }
 
     @Override
     public boolean hasCharacteristics(int i) {
-        return AbstractC5485a.m22568j(this, i);
+        return AbstractC5485a.m22569j(this, i);
     }
 
-    protected abstract void mo22377r(Object obj);
+    protected abstract void mo22378r(Object obj);
 
     @Override
-    public boolean m22380l(Object obj) {
+    public boolean m22381l(Object obj) {
         Objects.requireNonNull(obj);
-        while (m22372q() != 1 && ((AbstractC5466E) this.f18165a).tryAdvance(this)) {
-            if (m22374o(1L) == 1) {
-                mo22377r(obj);
+        while (m22373q() != 1 && ((AbstractC5466E) this.f18165a).tryAdvance(this)) {
+            if (m22375o(1L) == 1) {
+                mo22378r(obj);
                 return true;
             }
         }
         return false;
     }
 
-    protected abstract AbstractC5735l3 mo22376u(int i);
+    protected abstract AbstractC5735l3 mo22377u(int i);
 }

@@ -34,7 +34,7 @@ public abstract class AbstractC4443a extends BaseAdapter implements Filterable, 
 
         @Override
         public void onChange(boolean z) {
-            AbstractC4443a.this.m27648i();
+            AbstractC4443a.this.m27650i();
         }
     }
 
@@ -58,26 +58,26 @@ public abstract class AbstractC4443a extends BaseAdapter implements Filterable, 
     }
 
     public AbstractC4443a(Context context, Cursor cursor, boolean z) {
-        m27649f(context, cursor, z ? 1 : 2);
+        m27651f(context, cursor, z ? 1 : 2);
     }
 
-    public void mo27646a(Cursor cursor) {
-        Cursor j = m27647j(cursor);
+    public void mo27648a(Cursor cursor) {
+        Cursor j = m27649j(cursor);
         if (j != null) {
             j.close();
         }
     }
 
     @Override
-    public Cursor mo27645b() {
+    public Cursor mo27647b() {
         return this.f14708c;
     }
 
-    public abstract CharSequence mo27644c(Cursor cursor);
+    public abstract CharSequence mo27646c(Cursor cursor);
 
-    public abstract void mo27650e(View view, Context context, Cursor cursor);
+    public abstract void mo27652e(View view, Context context, Cursor cursor);
 
-    public void m27649f(Context context, Cursor cursor, int i) {
+    public void m27651f(Context context, Cursor cursor, int i) {
         boolean z = false;
         if ((i & 1) == 1) {
             i |= 2;
@@ -111,7 +111,7 @@ public abstract class AbstractC4443a extends BaseAdapter implements Filterable, 
         }
     }
 
-    public abstract View mo27642g(Context context, Cursor cursor, ViewGroup viewGroup);
+    public abstract View mo27644g(Context context, Cursor cursor, ViewGroup viewGroup);
 
     @Override
     public int getCount() {
@@ -129,9 +129,9 @@ public abstract class AbstractC4443a extends BaseAdapter implements Filterable, 
         }
         this.f14708c.moveToPosition(i);
         if (view == null) {
-            view = mo27642g(this.f14701M, this.f14708c, viewGroup);
+            view = mo27644g(this.f14701M, this.f14708c, viewGroup);
         }
-        mo27650e(view, this.f14701M, this.f14708c);
+        mo27652e(view, this.f14701M, this.f14708c);
         return view;
     }
 
@@ -168,25 +168,25 @@ public abstract class AbstractC4443a extends BaseAdapter implements Filterable, 
             throw new IllegalStateException("this should only be called when the cursor is valid");
         } else if (this.f14708c.moveToPosition(i)) {
             if (view == null) {
-                view = mo27641h(this.f14701M, this.f14708c, viewGroup);
+                view = mo27643h(this.f14701M, this.f14708c, viewGroup);
             }
-            mo27650e(view, this.f14701M, this.f14708c);
+            mo27652e(view, this.f14701M, this.f14708c);
             return view;
         } else {
             throw new IllegalStateException("couldn't move cursor to position " + i);
         }
     }
 
-    public abstract View mo27641h(Context context, Cursor cursor, ViewGroup viewGroup);
+    public abstract View mo27643h(Context context, Cursor cursor, ViewGroup viewGroup);
 
-    public void m27648i() {
+    public void m27650i() {
         Cursor cursor;
         if (this.f14707b && (cursor = this.f14708c) != null && !cursor.isClosed()) {
             this.f14706a = this.f14708c.requery();
         }
     }
 
-    public Cursor m27647j(Cursor cursor) {
+    public Cursor m27649j(Cursor cursor) {
         Cursor cursor2 = this.f14708c;
         if (cursor == cursor2) {
             return null;

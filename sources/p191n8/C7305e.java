@@ -35,17 +35,17 @@ import p345y8.C10447b;
 import p345y8.C10454h;
 
 public class C7305e extends AbstractC7300a {
-    public TrackBox f23189M;
-    public C8631d[] f23190N;
-    public List<AbstractC7306f> f23191O;
-    public SampleDescriptionBox f23192P;
-    public long[] f23193Q;
-    public long[] f23195S;
-    public String f23198V;
-    public SubSampleInformationBox f23199W;
-    public C7308h f23197U = new C7308h();
-    public List<CompositionTimeToSample.C3420a> f23194R = new ArrayList();
-    public List<SampleDependencyTypeBox.C3425a> f23196T = new ArrayList();
+    public TrackBox f23192M;
+    public C8631d[] f23193N;
+    public List<AbstractC7306f> f23194O;
+    public SampleDescriptionBox f23195P;
+    public long[] f23196Q;
+    public long[] f23198S;
+    public String f23201V;
+    public SubSampleInformationBox f23202W;
+    public C7308h f23200U = new C7308h();
+    public List<CompositionTimeToSample.C3420a> f23197R = new ArrayList();
+    public List<SampleDependencyTypeBox.C3425a> f23199T = new ArrayList();
 
     public C7305e(String str, TrackBox trackBox, C8631d... dVarArr) {
         super(str);
@@ -58,25 +58,25 @@ public class C7305e extends AbstractC7300a {
         C9436a aVar;
         int i;
         int i2 = 0;
-        this.f23195S = new long[0];
-        this.f23199W = null;
+        this.f23198S = new long[0];
+        this.f23202W = null;
         long trackId = trackBox.getTrackHeaderBox().getTrackId();
-        this.f23191O = new C9833a(trackBox, dVarArr);
+        this.f23194O = new C9833a(trackBox, dVarArr);
         SampleTableBox sampleTableBox = trackBox.getMediaBox().getMediaInformationBox().getSampleTableBox();
-        this.f23198V = trackBox.getMediaBox().getHandlerBox().getHandlerType();
+        this.f23201V = trackBox.getMediaBox().getHandlerBox().getHandlerType();
         ArrayList arrayList2 = new ArrayList();
         arrayList2.addAll(sampleTableBox.getTimeToSampleBox().getEntries());
         if (sampleTableBox.getCompositionTimeToSample() != null) {
-            this.f23194R.addAll(sampleTableBox.getCompositionTimeToSample().getEntries());
+            this.f23197R.addAll(sampleTableBox.getCompositionTimeToSample().getEntries());
         }
         if (sampleTableBox.getSampleDependencyTypeBox() != null) {
-            this.f23196T.addAll(sampleTableBox.getSampleDependencyTypeBox().getEntries());
+            this.f23199T.addAll(sampleTableBox.getSampleDependencyTypeBox().getEntries());
         }
         if (sampleTableBox.getSyncSampleBox() != null) {
-            this.f23195S = sampleTableBox.getSyncSampleBox().getSampleNumber();
+            this.f23198S = sampleTableBox.getSyncSampleBox().getSampleNumber();
         }
         String str2 = SubSampleInformationBox.TYPE;
-        this.f23199W = (SubSampleInformationBox) C10454h.m5090c(sampleTableBox, str2);
+        this.f23202W = (SubSampleInformationBox) C10454h.m5090c(sampleTableBox, str2);
         ArrayList<MovieFragmentBox> arrayList3 = new ArrayList();
         arrayList3.addAll(((AbstractC8950a) trackBox.getParent()).getParent().getBoxes(MovieFragmentBox.class));
         int length = dVarArr.length;
@@ -89,7 +89,7 @@ public class C7305e extends AbstractC7300a {
             arrayList3 = arrayList4;
             i2 = 0;
         }
-        this.f23192P = sampleTableBox.getSampleDescriptionBox();
+        this.f23195P = sampleTableBox.getSampleDescriptionBox();
         List boxes = trackBox.getParent().getBoxes(MovieExtendsBox.class);
         if (boxes.size() > 0) {
             Iterator it5 = boxes.iterator();
@@ -97,7 +97,7 @@ public class C7305e extends AbstractC7300a {
                 for (TrackExtendsBox trackExtendsBox : ((MovieExtendsBox) it5.next()).getBoxes(TrackExtendsBox.class)) {
                     if (trackExtendsBox.getTrackId() == trackId) {
                         if (C10454h.m5085h(((AbstractC8950a) trackBox.getParent()).getParent(), "/moof/traf/subs").size() > 0) {
-                            this.f23199W = new SubSampleInformationBox();
+                            this.f23202W = new SubSampleInformationBox();
                         }
                         LinkedList<Long> linkedList = new LinkedList();
                         Iterator it6 = arrayList3.iterator();
@@ -115,16 +115,16 @@ public class C7305e extends AbstractC7300a {
                                             SubSampleInformationBox.C3427a aVar3 = new SubSampleInformationBox.C3427a();
                                             it5 = it5;
                                             str2 = str2;
-                                            aVar3.m30608c().addAll(aVar2.m30608c());
+                                            aVar3.m30610c().addAll(aVar2.m30610c());
                                             long j4 = 0;
                                             if (j3 != 0) {
-                                                aVar3.m30607d(j3 + aVar2.m30610a());
+                                                aVar3.m30609d(j3 + aVar2.m30612a());
                                             } else {
                                                 j4 = j3;
-                                                aVar3.m30607d(aVar2.m30610a());
+                                                aVar3.m30609d(aVar2.m30612a());
                                             }
                                             j3 = j4;
-                                            this.f23199W.getEntries().add(aVar3);
+                                            this.f23202W.getEntries().add(aVar3);
                                         }
                                         it = it5;
                                     } else {
@@ -142,12 +142,12 @@ public class C7305e extends AbstractC7300a {
                                             if (trackRunBox.isSampleDurationPresent()) {
                                                 if (arrayList2.size() != 0) {
                                                     it4 = it8;
-                                                    if (((TimeToSampleBox.C3429a) arrayList2.get(arrayList2.size() - 1)).m30597b() == aVar4.m30573j()) {
+                                                    if (((TimeToSampleBox.C3429a) arrayList2.get(arrayList2.size() - 1)).m30599b() == aVar4.m30575j()) {
                                                         TimeToSampleBox.C3429a aVar5 = (TimeToSampleBox.C3429a) arrayList2.get(arrayList2.size() - i4);
                                                         arrayList = arrayList3;
                                                         it3 = it6;
                                                         it2 = it7;
-                                                        aVar5.m30596c(aVar5.m30598a() + 1);
+                                                        aVar5.m30598c(aVar5.m30600a() + 1);
                                                     }
                                                 } else {
                                                     it4 = it8;
@@ -155,7 +155,7 @@ public class C7305e extends AbstractC7300a {
                                                 arrayList = arrayList3;
                                                 it3 = it6;
                                                 it2 = it7;
-                                                arrayList2.add(new TimeToSampleBox.C3429a(1L, aVar4.m30573j()));
+                                                arrayList2.add(new TimeToSampleBox.C3429a(1L, aVar4.m30575j()));
                                             } else {
                                                 it4 = it8;
                                                 arrayList = arrayList3;
@@ -168,21 +168,21 @@ public class C7305e extends AbstractC7300a {
                                                 }
                                             }
                                             if (trackRunBox.isSampleCompositionTimeOffsetPresent()) {
-                                                if (this.f23194R.size() != 0) {
-                                                    List<CompositionTimeToSample.C3420a> list = this.f23194R;
+                                                if (this.f23197R.size() != 0) {
+                                                    List<CompositionTimeToSample.C3420a> list = this.f23197R;
                                                     i = 1;
-                                                    if (list.get(list.size() - 1).m30630b() == aVar4.m30574i()) {
-                                                        List<CompositionTimeToSample.C3420a> list2 = this.f23194R;
+                                                    if (list.get(list.size() - 1).m30632b() == aVar4.m30576i()) {
+                                                        List<CompositionTimeToSample.C3420a> list2 = this.f23197R;
                                                         CompositionTimeToSample.C3420a aVar6 = list2.get(list2.size() - 1);
-                                                        aVar6.m30629c(aVar6.m30631a() + 1);
+                                                        aVar6.m30631c(aVar6.m30633a() + 1);
                                                     }
                                                 } else {
                                                     i = 1;
                                                 }
-                                                this.f23194R.add(new CompositionTimeToSample.C3420a(i, C10447b.m5103a(aVar4.m30574i())));
+                                                this.f23197R.add(new CompositionTimeToSample.C3420a(i, C10447b.m5103a(aVar4.m30576i())));
                                             }
                                             if (trackRunBox.isSampleFlagsPresent()) {
-                                                aVar = aVar4.m30572k();
+                                                aVar = aVar4.m30574k();
                                             } else if (z && trackRunBox.isFirstSampleFlagsPresent()) {
                                                 aVar = trackRunBox.getFirstSampleFlags();
                                             } else if (trackFragmentHeaderBox.hasDefaultSampleFlags()) {
@@ -208,14 +208,14 @@ public class C7305e extends AbstractC7300a {
                                 }
                             }
                         }
-                        long[] jArr = this.f23195S;
+                        long[] jArr = this.f23198S;
                         long[] jArr2 = new long[jArr.length + linkedList.size()];
-                        this.f23195S = jArr2;
+                        this.f23198S = jArr2;
                         System.arraycopy(jArr, i2, jArr2, i2, jArr.length);
                         int length2 = jArr.length;
                         for (Long l : linkedList) {
                             length2++;
-                            this.f23195S[length2] = l.longValue();
+                            this.f23198S[length2] = l.longValue();
                         }
                     }
                 }
@@ -225,25 +225,25 @@ public class C7305e extends AbstractC7300a {
             for (MovieFragmentBox movieFragmentBox : arrayList3) {
                 for (TrackFragmentBox trackFragmentBox2 : movieFragmentBox.getBoxes(TrackFragmentBox.class)) {
                     if (trackFragmentBox2.getTrackFragmentHeaderBox().getTrackId() == trackId) {
-                        this.f23176c = m17092m(C10454h.m5085h(trackFragmentBox2, SampleGroupDescriptionBox.TYPE), C10454h.m5085h(trackFragmentBox2, SampleToGroupBox.TYPE), this.f23176c);
+                        this.f23179c = m17092m(C10454h.m5085h(trackFragmentBox2, SampleGroupDescriptionBox.TYPE), C10454h.m5085h(trackFragmentBox2, SampleToGroupBox.TYPE), this.f23179c);
                     }
                 }
             }
         } else {
-            this.f23176c = m17092m(sampleTableBox.getBoxes(SampleGroupDescriptionBox.class), sampleTableBox.getBoxes(SampleToGroupBox.class), this.f23176c);
+            this.f23179c = m17092m(sampleTableBox.getBoxes(SampleGroupDescriptionBox.class), sampleTableBox.getBoxes(SampleToGroupBox.class), this.f23179c);
         }
-        this.f23193Q = TimeToSampleBox.blowupTimeToSamples(arrayList2);
+        this.f23196Q = TimeToSampleBox.blowupTimeToSamples(arrayList2);
         MediaHeaderBox mediaHeaderBox = trackBox.getMediaBox().getMediaHeaderBox();
         TrackHeaderBox trackHeaderBox = trackBox.getTrackHeaderBox();
-        this.f23197U.m17070s(trackHeaderBox.getTrackId());
-        this.f23197U.m17077k(mediaHeaderBox.getCreationTime());
-        this.f23197U.m17075n(mediaHeaderBox.getLanguage());
-        this.f23197U.m17072q(mediaHeaderBox.getModificationTime());
-        this.f23197U.m17071r(mediaHeaderBox.getTimescale());
-        this.f23197U.m17076l(trackHeaderBox.getHeight());
-        this.f23197U.m17069u(trackHeaderBox.getWidth());
-        this.f23197U.m17074o(trackHeaderBox.getLayer());
-        this.f23197U.m17073p(trackHeaderBox.getMatrix());
+        this.f23200U.m17070s(trackHeaderBox.getTrackId());
+        this.f23200U.m17077k(mediaHeaderBox.getCreationTime());
+        this.f23200U.m17075n(mediaHeaderBox.getLanguage());
+        this.f23200U.m17072q(mediaHeaderBox.getModificationTime());
+        this.f23200U.m17071r(mediaHeaderBox.getTimescale());
+        this.f23200U.m17076l(trackHeaderBox.getHeight());
+        this.f23200U.m17069u(trackHeaderBox.getWidth());
+        this.f23200U.m17074o(trackHeaderBox.getLayer());
+        this.f23200U.m17073p(trackHeaderBox.getMatrix());
         EditListBox editListBox = (EditListBox) C10454h.m5090c(trackBox, "edts/elst");
         MovieHeaderBox movieHeaderBox = (MovieHeaderBox) C10454h.m5090c(trackBox, "../mvhd");
         if (editListBox != null) {
@@ -252,99 +252,99 @@ public class C7305e extends AbstractC7300a {
                 EditListBox.C3421a next = it9.next();
                 mediaHeaderBox = mediaHeaderBox;
                 it9 = it9;
-                this.f23175b.add(new C7303c(next.m30626c(), mediaHeaderBox.getTimescale(), next.m30627b(), next.m30625d() / movieHeaderBox.getTimescale()));
+                this.f23178b.add(new C7303c(next.m30628c(), mediaHeaderBox.getTimescale(), next.m30629b(), next.m30627d() / movieHeaderBox.getTimescale()));
             }
         }
     }
 
     @Override
-    public C7308h mo12961D() {
-        return this.f23197U;
+    public C7308h mo12960D() {
+        return this.f23200U;
     }
 
     @Override
-    public long[] mo12960G() {
-        if (this.f23195S.length == this.f23191O.size()) {
+    public long[] mo12959G() {
+        if (this.f23198S.length == this.f23194O.size()) {
             return null;
         }
-        return this.f23195S;
+        return this.f23198S;
     }
 
     @Override
-    public SubSampleInformationBox mo12959I() {
-        return this.f23199W;
+    public SubSampleInformationBox mo12958I() {
+        return this.f23202W;
     }
 
     @Override
-    public synchronized long[] mo12958R() {
-        return this.f23193Q;
+    public synchronized long[] mo12957R() {
+        return this.f23196Q;
     }
 
     @Override
-    public List<AbstractC7306f> mo12957Y() {
-        return this.f23191O;
+    public List<AbstractC7306f> mo12956Y() {
+        return this.f23194O;
     }
 
     @Override
     public void close() {
-        AbstractC8951b parent = this.f23189M.getParent();
+        AbstractC8951b parent = this.f23192M.getParent();
         if (parent instanceof BasicContainer) {
             ((BasicContainer) parent).close();
         }
-        for (C8631d dVar : this.f23190N) {
+        for (C8631d dVar : this.f23193N) {
             dVar.close();
         }
     }
 
     @Override
     public String getHandler() {
-        return this.f23198V;
+        return this.f23201V;
     }
 
     @Override
     public SampleDescriptionBox getSampleDescriptionBox() {
-        return this.f23192P;
+        return this.f23195P;
     }
 
     @Override
-    public List<CompositionTimeToSample.C3420a> mo12956l() {
-        return this.f23194R;
+    public List<CompositionTimeToSample.C3420a> mo12955l() {
+        return this.f23197R;
     }
 
     public final Map<AbstractC8693b, long[]> m17092m(List<SampleGroupDescriptionBox> list, List<SampleToGroupBox> list2, Map<AbstractC8693b, long[]> map) {
         for (SampleGroupDescriptionBox sampleGroupDescriptionBox : list) {
             boolean z = false;
             for (SampleToGroupBox sampleToGroupBox : list2) {
-                if (sampleToGroupBox.getGroupingType().equals(sampleGroupDescriptionBox.getGroupEntries().get(0).mo11722b())) {
+                if (sampleToGroupBox.getGroupingType().equals(sampleGroupDescriptionBox.getGroupEntries().get(0).mo11721b())) {
                     int i = 0;
                     for (SampleToGroupBox.C3547a aVar : sampleToGroupBox.getEntries()) {
-                        if (aVar.m30075a() > 0) {
-                            AbstractC8693b bVar = sampleGroupDescriptionBox.getGroupEntries().get(aVar.m30075a() - 1);
+                        if (aVar.m30077a() > 0) {
+                            AbstractC8693b bVar = sampleGroupDescriptionBox.getGroupEntries().get(aVar.m30077a() - 1);
                             long[] jArr = map.get(bVar);
                             if (jArr == null) {
                                 jArr = new long[0];
                             }
-                            long[] jArr2 = new long[C10447b.m5103a(aVar.m30074b()) + jArr.length];
+                            long[] jArr2 = new long[C10447b.m5103a(aVar.m30076b()) + jArr.length];
                             System.arraycopy(jArr, 0, jArr2, 0, jArr.length);
-                            for (int i2 = 0; i2 < aVar.m30074b(); i2++) {
+                            for (int i2 = 0; i2 < aVar.m30076b(); i2++) {
                                 jArr2[jArr.length + i2] = i + i2;
                             }
                             map.put(bVar, jArr2);
                         }
-                        i = (int) (i + aVar.m30074b());
+                        i = (int) (i + aVar.m30076b());
                     }
                     z = true;
                 }
             }
             if (!z) {
-                throw new RuntimeException("Could not find SampleToGroupBox for " + sampleGroupDescriptionBox.getGroupEntries().get(0).mo11722b() + ".");
+                throw new RuntimeException("Could not find SampleToGroupBox for " + sampleGroupDescriptionBox.getGroupEntries().get(0).mo11721b() + ".");
             }
         }
         return map;
     }
 
     @Override
-    public List<SampleDependencyTypeBox.C3425a> mo12954w0() {
-        return this.f23196T;
+    public List<SampleDependencyTypeBox.C3425a> mo12953w0() {
+        return this.f23199T;
     }
 }

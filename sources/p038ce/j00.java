@@ -8,6 +8,6 @@ public final class j00 implements AbstractC5918j {
 
     @Override
     public final void mo1330a(Object obj) {
-        x00.m30906ui((View) obj);
+        x00.m30908ui((View) obj);
     }
 }

@@ -6,11 +6,11 @@ import android.os.Looper;
 public interface AbstractC1192d {
     public static final AbstractC1192d f4481a = new C1197f0();
 
-    long mo38084a();
+    long mo38087a();
 
-    AbstractC1221n mo38083b(Looper looper, Handler.Callback callback);
+    AbstractC1221n mo38086b(Looper looper, Handler.Callback callback);
 
-    void mo38082c();
+    void mo38085c();
 
-    long mo38081d();
+    long mo38084d();
 }

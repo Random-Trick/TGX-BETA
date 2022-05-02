@@ -28,9 +28,9 @@ public class C4375i0 {
         @Override
         public void onCallStateChanged(int i, String str) {
             if (i == 0) {
-                C4375i0.this.m28113k(false);
+                C4375i0.this.m28115k(false);
             } else if (i == 1 || i == 2) {
-                C4375i0.this.m28113k(true);
+                C4375i0.this.m28115k(true);
             }
         }
     }
@@ -50,7 +50,7 @@ public class C4375i0 {
         @Override
         public void onChange(boolean z) {
             super.onChange(z);
-            this.f14493a.m28116h(this.f14494b, this.f14495c);
+            this.f14493a.m28118h(this.f14494b, this.f14495c);
         }
     }
 
@@ -64,62 +64,62 @@ public class C4375i0 {
         this.f14489e = aVar;
     }
 
-    public static void m28118f(boolean r10, p350yd.C10930q6 r11) {
-        throw new UnsupportedOperationException("Method not decompiled: p082fd.C4375i0.m28118f(boolean, yd.q6):void");
+    public static void m28120f(boolean r10, p350yd.C10930q6 r11) {
+        throw new UnsupportedOperationException("Method not decompiled: p082fd.C4375i0.m28120f(boolean, yd.q6):void");
     }
 
-    public static void m28117g() {
-        AbstractView$OnTouchListenerC7889a E = C1379j0.m37366E();
-        if (E != null && E.m14529V0().m6909c0()) {
-            E.m14529V0().m6926U(true);
+    public static void m28119g() {
+        AbstractView$OnTouchListenerC7889a E = C1379j0.m37369E();
+        if (E != null && E.m14528V0().m6909c0()) {
+            E.m14528V0().m6926U(true);
         }
     }
 
-    public static void m28114j(ContentResolver contentResolver, Uri uri, C4377b bVar) {
+    public static void m28116j(ContentResolver contentResolver, Uri uri, C4377b bVar) {
         try {
             contentResolver.registerContentObserver(uri, false, bVar);
         } catch (Throwable unused) {
         }
     }
 
-    public static void m28111m(ContentResolver contentResolver, C4377b bVar) {
+    public static void m28113m(ContentResolver contentResolver, C4377b bVar) {
         try {
             contentResolver.unregisterContentObserver(bVar);
         } catch (Throwable unused) {
         }
     }
 
-    public final void m28119e(final boolean z) {
+    public final void m28121e(final boolean z) {
         final C10930q6 j0 = C10536ab.m4667o1().m4684j0();
-        if (j0.m2316o6() && C1379j0.m37361G0(1000L)) {
-            C4356b0.m28201k().m28195q(new Runnable() {
+        if (j0.m2316o6() && C1379j0.m37364G0(1000L)) {
+            C4356b0.m28203k().m28197q(new Runnable() {
                 @Override
                 public final void run() {
-                    C4375i0.m28118f(z, j0);
+                    C4375i0.m28120f(z, j0);
                 }
             });
         }
     }
 
-    public final void m28116h(boolean z, boolean z2) {
+    public final void m28118h(boolean z, boolean z2) {
         synchronized (this) {
             if (z) {
-                if (C1379j0.m37364F() == 0) {
-                    m28119e(z2);
+                if (C1379j0.m37367F() == 0) {
+                    m28121e(z2);
                 }
             }
         }
     }
 
-    public void m28115i() {
+    public void m28117i() {
         if (!this.f14490f) {
             this.f14490f = true;
-            Context n = C1379j0.m37315n();
+            Context n = C1379j0.m37318n();
             ContentResolver contentResolver = n.getContentResolver();
-            m28114j(contentResolver, MediaStore.Images.Media.INTERNAL_CONTENT_URI, this.f14485a);
-            m28114j(contentResolver, MediaStore.Images.Media.EXTERNAL_CONTENT_URI, this.f14487c);
-            m28114j(contentResolver, MediaStore.Video.Media.INTERNAL_CONTENT_URI, this.f14486b);
-            m28114j(contentResolver, MediaStore.Video.Media.EXTERNAL_CONTENT_URI, this.f14488d);
+            m28116j(contentResolver, MediaStore.Images.Media.INTERNAL_CONTENT_URI, this.f14485a);
+            m28116j(contentResolver, MediaStore.Images.Media.EXTERNAL_CONTENT_URI, this.f14487c);
+            m28116j(contentResolver, MediaStore.Video.Media.INTERNAL_CONTENT_URI, this.f14486b);
+            m28116j(contentResolver, MediaStore.Video.Media.EXTERNAL_CONTENT_URI, this.f14488d);
             if (this.f14489e != null) {
                 try {
                     TelephonyManager telephonyManager = (TelephonyManager) n.getSystemService("phone");
@@ -132,25 +132,25 @@ public class C4375i0 {
         }
     }
 
-    public final void m28113k(boolean z) {
+    public final void m28115k(boolean z) {
         if (this.f14491g != z) {
             this.f14491g = z;
             C10536ab.m4667o1().m4636w2().m7075W0(2, z);
             if (z) {
-                C1379j0.m37334d0(RunnableC4373h0.f14483a);
+                C1379j0.m37337d0(RunnableC4373h0.f14483a);
             }
         }
     }
 
-    public void m28112l() {
+    public void m28114l() {
         if (this.f14490f) {
             this.f14490f = false;
-            Context n = C1379j0.m37315n();
+            Context n = C1379j0.m37318n();
             ContentResolver contentResolver = n.getContentResolver();
-            m28111m(contentResolver, this.f14485a);
-            m28111m(contentResolver, this.f14487c);
-            m28111m(contentResolver, this.f14486b);
-            m28111m(contentResolver, this.f14488d);
+            m28113m(contentResolver, this.f14485a);
+            m28113m(contentResolver, this.f14487c);
+            m28113m(contentResolver, this.f14486b);
+            m28113m(contentResolver, this.f14488d);
             if (this.f14489e != null) {
                 try {
                     TelephonyManager telephonyManager = (TelephonyManager) n.getSystemService("phone");

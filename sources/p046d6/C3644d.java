@@ -17,10 +17,10 @@ public final class C3644d {
         this.f12396c = eVar;
     }
 
-    public final byte[] m29845a(Object obj) {
+    public final byte[] m29847a(Object obj) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         try {
-            new C3723k8(byteArrayOutputStream, this.f12394a, this.f12395b, this.f12396c).m29817i(obj);
+            new C3723k8(byteArrayOutputStream, this.f12394a, this.f12395b, this.f12396c).m29819i(obj);
         } catch (IOException unused) {
         }
         return byteArrayOutputStream.toByteArray();

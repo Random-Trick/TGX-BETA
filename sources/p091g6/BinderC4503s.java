@@ -14,7 +14,7 @@ public final class BinderC4503s extends AbstractBinderC5005l {
     }
 
     @Override
-    public final void mo24334b1(AbstractC8983b bVar) {
-        this.f14874a.mo11366e5((Location) BinderC8986d.m10763t(bVar));
+    public final void mo24335b1(AbstractC8983b bVar) {
+        this.f14874a.mo11365e5((Location) BinderC8986d.m10762t(bVar));
     }
 }

@@ -65,18 +65,18 @@ public class C3183v6 extends AbstractC2420g6<C3185b> implements AbstractC9201h1,
             super.mo17892b0(y1Var, z);
             if (z) {
                 C3183v6.this.f10639A0 = y1Var;
-                C3183v6.this.m31327qf();
+                C3183v6.this.m31329qf();
             } else if (C3183v6.this.f10639A0 == y1Var) {
                 C3183v6.this.f10639A0 = null;
-                C3183v6.this.m31327qf();
+                C3183v6.this.m31329qf();
             }
         }
 
         @Override
-        public void mo30690v1(C2964ra raVar, ViewGroup viewGroup, View$OnFocusChangeListenerC7069y1 y1Var) {
-            String c = C3183v6.this.m9131x9().f10651c.m27789c();
+        public void mo30692v1(C2964ra raVar, ViewGroup viewGroup, View$OnFocusChangeListenerC7069y1 y1Var) {
+            String c = C3183v6.this.m9131x9().f10651c.m27791c();
             y1Var.getEditText().setInputType(c.equals("language_rtl") || c.equals("language_disable_lowercase") ? 2 : 16385);
-            C1399s0.m37161q0(y1Var.getEditText(), false);
+            C1399s0.m37164q0(y1Var.getEditText(), false);
         }
     }
 
@@ -94,14 +94,14 @@ public class C3183v6 extends AbstractC2420g6<C3185b> implements AbstractC9201h1,
     }
 
     public interface AbstractC3186c {
-        void mo31317G1(C4403w.C4405b bVar, C4403w.C4406c cVar);
+        void mo31319G1(C4403w.C4405b bVar, C4403w.C4406c cVar);
     }
 
     public C3183v6(Context context, C10930q6 q6Var) {
         super(context, q6Var);
     }
 
-    public static void m31326rf(TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized, TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized2) {
+    public static void m31328rf(TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized, TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized2) {
         languagePackStringValuePluralized.zeroValue = languagePackStringValuePluralized2.zeroValue;
         languagePackStringValuePluralized.oneValue = languagePackStringValuePluralized2.oneValue;
         languagePackStringValuePluralized.twoValue = languagePackStringValuePluralized2.twoValue;
@@ -110,7 +110,7 @@ public class C3183v6 extends AbstractC2420g6<C3185b> implements AbstractC9201h1,
         languagePackStringValuePluralized.otherValue = languagePackStringValuePluralized2.otherValue;
     }
 
-    public static int m31321wf(int i) {
+    public static int m31323wf(int i) {
         if (i == 0) {
             return R.id.pluralZero;
         }
@@ -132,7 +132,7 @@ public class C3183v6 extends AbstractC2420g6<C3185b> implements AbstractC9201h1,
         throw new IllegalArgumentException("form == " + i);
     }
 
-    public static CharSequence m31320xf(C4403w.C4407d dVar) {
+    public static CharSequence m31322xf(C4403w.C4407d dVar) {
         String str;
         int[] iArr;
         int i = dVar.f14595a;
@@ -166,38 +166,38 @@ public class C3183v6 extends AbstractC2420g6<C3185b> implements AbstractC9201h1,
             String valueOf = String.valueOf(i2);
             int length = spannableStringBuilder.length();
             spannableStringBuilder.append((CharSequence) valueOf);
-            spannableStringBuilder.setSpan(new C5132o(C1389o.m37260i(), R.id.theme_color_background_textLight), length, valueOf.length() + length, 33);
+            spannableStringBuilder.setSpan(new C5132o(C1389o.m37263i(), R.id.theme_color_background_textLight), length, valueOf.length() + length, 33);
         }
         return spannableStringBuilder;
     }
 
-    public boolean m31319yf(boolean z, View view, int i) {
-        if ((i != R.id.btn_discard && i != R.id.btn_save) || (i == R.id.btn_save && !m31334Cf())) {
+    public boolean m31321yf(boolean z, View view, int i) {
+        if ((i != R.id.btn_discard && i != R.id.btn_save) || (i == R.id.btn_save && !m31336Cf())) {
             return true;
         }
-        if (z || !m31335Bf()) {
+        if (z || !m31337Bf()) {
             m9298Zb();
         }
         return true;
     }
 
-    public void m31318zf(View view) {
+    public void m31320zf(View view) {
         View$OnFocusChangeListenerC7069y1 y1Var;
         String charSequence = ((TextView) view).getText().toString();
-        if (!C5070i.m24061i(charSequence) && (y1Var = this.f10639A0) != null) {
+        if (!C5070i.m24062i(charSequence) && (y1Var = this.f10639A0) != null) {
             y1Var.getEditText().getText().replace(this.f10639A0.getEditText().getSelectionStart(), this.f10639A0.getEditText().getSelectionEnd(), charSequence);
         }
     }
 
-    public final void m31336Af() {
+    public final void m31338Af() {
         C3185b bVar;
         C3185b x9 = m9131x9();
         List<C4403w.C4406c> list = x9.f10652d;
         int indexOf = list != null ? list.indexOf(x9.f10651c) : -1;
         if (indexOf == -1 || indexOf >= list.size() - 1) {
-            C4403w.C4406c a = x9.f10650b.m27799a(x9.f10651c);
+            C4403w.C4406c a = x9.f10650b.m27801a(x9.f10651c);
             if (a == null) {
-                C1379j0.m37290z0("No more untranslated strings found", 0);
+                C1379j0.m37293z0("No more untranslated strings found", 0);
                 return;
             }
             if (indexOf == -1) {
@@ -212,25 +212,25 @@ public class C3183v6 extends AbstractC2420g6<C3185b> implements AbstractC9201h1,
             bVar = new C3185b(x9.f10649a, x9.f10650b, x9.f10652d.get(indexOf + 1));
             bVar.f10652d = list;
         }
-        C3183v6 v6Var = new C3183v6(this.f30165a, this.f30167b);
+        C3183v6 v6Var = new C3183v6(this.f30168a, this.f30170b);
         v6Var.m9476Ad(bVar);
         m9291ac(v6Var);
     }
 
     @Override
-    public boolean mo23839B5(View view) {
-        if (!m31334Cf()) {
+    public boolean mo23840B5(View view) {
+        if (!m31336Cf()) {
             return true;
         }
         if (this.f10647z0) {
-            m34629cf();
+            m34632cf();
             return true;
         }
-        m31336Af();
+        m31338Af();
         return true;
     }
 
-    public final boolean m31335Bf() {
+    public final boolean m31337Bf() {
         C3185b x9 = m9131x9();
         List<C4403w.C4406c> list = x9.f10652d;
         if (list == null || list.isEmpty()) {
@@ -245,23 +245,23 @@ public class C3183v6 extends AbstractC2420g6<C3185b> implements AbstractC9201h1,
         }
         C3185b bVar = new C3185b(x9.f10649a, x9.f10650b, x9.f10652d.get(indexOf - 1));
         bVar.f10652d = list;
-        C3183v6 v6Var = new C3183v6(this.f30165a, this.f30167b);
+        C3183v6 v6Var = new C3183v6(this.f30168a, this.f30170b);
         v6Var.m9476Ad(bVar);
         m9291ac(v6Var);
         return true;
     }
 
-    public final boolean m31334Cf() {
+    public final boolean m31336Cf() {
         int N0;
         C3185b x9 = m9131x9();
         C4403w.C4406c cVar = x9.f10651c;
-        String c = cVar.m27789c();
+        String c = cVar.m27791c();
         int constructor = x9.f10651c.f14592a.value.getConstructor();
         if (constructor == -249256352) {
             String str = this.f10644w0.value;
-            if (C5070i.m24061i(str)) {
+            if (C5070i.m24062i(str)) {
                 cVar.f14593b = false;
-                ((TdApi.LanguagePackStringValueOrdinary) cVar.f14592a.value).value = cVar.m27790b().value;
+                ((TdApi.LanguagePackStringValueOrdinary) cVar.f14592a.value).value = cVar.m27792b().value;
             } else {
                 cVar.f14593b = true;
                 ((TdApi.LanguagePackStringValueOrdinary) cVar.f14592a.value).value = str;
@@ -274,17 +274,17 @@ public class C3183v6 extends AbstractC2420g6<C3185b> implements AbstractC9201h1,
         } else if (constructor == 1906840261) {
             int i = 0;
             for (C4403w.C4407d dVar : x9.f10650b.f14588b.f14598b) {
-                if (C5070i.m24061i(dVar.m27786a(this.f10645x0))) {
+                if (C5070i.m24062i(dVar.m27788a(this.f10645x0))) {
                     i++;
                 }
             }
             if (i == x9.f10650b.f14588b.f14598b.size()) {
                 cVar.f14593b = false;
-                m31326rf((TdApi.LanguagePackStringValuePluralized) cVar.f14592a.value, C4403w.m27891d0(cVar.m27789c(), x9.f10650b.f14589c.f14598b));
+                m31328rf((TdApi.LanguagePackStringValuePluralized) cVar.f14592a.value, C4403w.m27893d0(cVar.m27791c(), x9.f10650b.f14589c.f14598b));
             } else if (i > 0) {
                 for (C4403w.C4407d dVar2 : x9.f10650b.f14588b.f14598b) {
-                    if (C5070i.m24061i(dVar2.m27786a(this.f10645x0)) && (N0 = this.f10643v0.m34224N0(m31321wf(dVar2.f14595a))) != -1) {
-                        View C = this.f8298o0.getLayoutManager().mo39262C(N0);
+                    if (C5070i.m24062i(dVar2.m27788a(this.f10645x0)) && (N0 = this.f10643v0.m34227N0(m31323wf(dVar2.f14595a))) != -1) {
+                        View C = this.f8298o0.getLayoutManager().mo39265C(N0);
                         View childAt = C instanceof ViewGroup ? ((ViewGroup) C).getChildAt(0) : null;
                         if (childAt instanceof View$OnFocusChangeListenerC7069y1) {
                             ((View$OnFocusChangeListenerC7069y1) childAt).setInErrorState(true);
@@ -294,12 +294,12 @@ public class C3183v6 extends AbstractC2420g6<C3185b> implements AbstractC9201h1,
                 return false;
             } else {
                 cVar.f14593b = true;
-                m31326rf((TdApi.LanguagePackStringValuePluralized) cVar.f14592a.value, this.f10645x0);
+                m31328rf((TdApi.LanguagePackStringValuePluralized) cVar.f14592a.value, this.f10645x0);
             }
         } else {
             throw new IllegalArgumentException(x9.f10651c.f14592a.toString());
         }
-        x9.f10649a.mo31317G1(x9.f10650b, cVar);
+        x9.f10649a.mo31319G1(x9.f10650b, cVar);
         return true;
     }
 
@@ -313,50 +313,50 @@ public class C3183v6 extends AbstractC2420g6<C3185b> implements AbstractC9201h1,
         if (i == R.id.menu_btn_more) {
             C5320c cVar = new C5320c(3);
             C5146u0 u0Var = new C5146u0(3);
-            cVar.m23284a(R.id.btn_copyLink);
-            u0Var.m23816a(R.string.CopyLink);
+            cVar.m23285a(R.id.btn_copyLink);
+            u0Var.m23817a(R.string.CopyLink);
             if (m9131x9().f10651c.f14592a.value.getConstructor() == -249256352) {
-                cVar.m23284a(R.id.btn_copyText);
-                u0Var.m23816a(R.string.LocalizationCopy);
-                if (this.f10639A0 != null && C5070i.m24061i(this.f10644w0.value)) {
-                    cVar.m23284a(R.id.btn_pasteText);
-                    u0Var.m23816a(R.string.LocalizationPaste);
+                cVar.m23285a(R.id.btn_copyText);
+                u0Var.m23817a(R.string.LocalizationCopy);
+                if (this.f10639A0 != null && C5070i.m24062i(this.f10644w0.value)) {
+                    cVar.m23285a(R.id.btn_pasteText);
+                    u0Var.m23817a(R.string.LocalizationPaste);
                 }
             }
             if (!mo9134we()) {
-                cVar.m23284a(R.id.btn_close);
-                u0Var.m23816a(R.string.LocalizationExit);
+                cVar.m23285a(R.id.btn_close);
+                u0Var.m23817a(R.string.LocalizationExit);
             }
-            m9302Yd(cVar.m23280e(), u0Var.m23813d(), 0);
+            m9302Yd(cVar.m23281e(), u0Var.m23814d(), 0);
         } else if (i == R.id.menu_btn_view) {
-            String y1 = C4779t2.m25389y1(m9131x9().f10651c.m27789c());
-            if (!C1405v.m37099v(this.f30165a, Uri.parse(y1), true)) {
-                this.f30167b.m2485dd().m3858E7(this, y1, new HandlerC10770jj.C10788q().m3326e());
+            String y1 = C4779t2.m25390y1(m9131x9().f10651c.m27791c());
+            if (!C1405v.m37102v(this.f30168a, Uri.parse(y1), true)) {
+                this.f30170b.m2485dd().m3858E7(this, y1, new HandlerC10770jj.C10788q().m3326e());
             }
         }
     }
 
     @Override
-    public void mo30698K(int r2, p038ce.C2964ra r3, me.View$OnFocusChangeListenerC7069y1 r4, java.lang.String r5) {
-        throw new UnsupportedOperationException("Method not decompiled: p038ce.C3183v6.mo30698K(int, ce.ra, me.y1, java.lang.String):void");
+    public void mo30700K(int r2, p038ce.C2964ra r3, me.View$OnFocusChangeListenerC7069y1 r4, java.lang.String r5) {
+        throw new UnsupportedOperationException("Method not decompiled: p038ce.C3183v6.mo30700K(int, ce.ra, me.y1, java.lang.String):void");
     }
 
     @Override
     public void mo8864N0(int i) {
         switch (i) {
             case R.id.btn_close:
-                m31325sf(true);
+                m31327sf(true);
                 return;
             case R.id.btn_copyLink:
-                C1379j0.m37325i(C4779t2.m25389y1(m9131x9().f10651c.m27789c()), R.string.CopiedLink);
+                C1379j0.m37328i(C4779t2.m25390y1(m9131x9().f10651c.m27791c()), R.string.CopiedLink);
                 return;
             case R.id.btn_copyText:
-                C1379j0.m37325i(m31322vf(), R.string.CopiedText);
+                C1379j0.m37328i(m31324vf(), R.string.CopiedText);
                 return;
             case R.id.btn_pasteText:
                 if (this.f10639A0 != null) {
-                    String vf = m31322vf();
-                    if (!C5070i.m24061i(vf)) {
+                    String vf = m31324vf();
+                    if (!C5070i.m24062i(vf)) {
                         this.f10639A0.getEditText().getText().replace(this.f10639A0.getEditText().getSelectionStart(), this.f10639A0.getEditText().getSelectionEnd(), vf);
                         this.f10642D0 = true;
                         return;
@@ -380,56 +380,56 @@ public class C3183v6 extends AbstractC2420g6<C3185b> implements AbstractC9201h1,
     }
 
     @Override
-    public void mo30697Ze(Context context, FrameLayoutFix frameLayoutFix, RecyclerView recyclerView) {
+    public void mo30699Ze(Context context, FrameLayoutFix frameLayoutFix, RecyclerView recyclerView) {
         List<C4403w.C4406c> list;
         C3185b x9 = m9131x9();
         C4403w.C4405b bVar = x9.f10650b;
         C9289s sVar = new C9289s(context);
         this.f10646y0 = sVar;
         sVar.setThemedTextColor(this);
-        this.f10646y0.m9632D1(C1357a0.m37541i(49.0f), true);
+        this.f10646y0.m9631D1(C1357a0.m37544i(49.0f), true);
         this.f10646y0.setTitle(bVar.f14587a.nativeName);
-        this.f10647z0 = (x9.f10651c.f14593b || x9.f10650b.m27795e() == 1) && ((list = x9.f10652d) == null || list.indexOf(x9.f10651c) == -1);
+        this.f10647z0 = (x9.f10651c.f14593b || x9.f10650b.m27797e() == 1) && ((list = x9.f10652d) == null || list.indexOf(x9.f10651c) == -1);
         this.f10641C0 = x9.f10652d != null;
         C3184a aVar = new C3184a(this);
         this.f10643v0 = aVar;
-        aVar.m34250A2(this, true);
-        this.f10643v0.m34211S2(this);
+        aVar.m34253A2(this, true);
+        this.f10643v0.m34214S2(this);
         FrameLayout.LayoutParams t1 = FrameLayoutFix.m18007t1(-1, -2, 80);
-        t1.rightMargin = C1357a0.m37541i(72.0f);
+        t1.rightMargin = C1357a0.m37544i(72.0f);
         LinearLayout linearLayout = new LinearLayout(context);
         this.f10640B0 = linearLayout;
         linearLayout.setGravity(1);
         this.f10640B0.setOrientation(0);
         this.f10640B0.setLayoutParams(t1);
         frameLayoutFix.addView(this.f10640B0);
-        m31328pf();
+        m31330pf();
         recyclerView.setAdapter(this.f10643v0);
-        m34628df(this.f10647z0 ? R.drawable.baseline_check_24 : R.drawable.baseline_arrow_forward_24);
-        mo31397hf(true);
+        m34631df(this.f10647z0 ? R.drawable.baseline_check_24 : R.drawable.baseline_arrow_forward_24);
+        mo31399hf(true);
     }
 
     @Override
     public boolean mo404jc(boolean z) {
         if (!this.f10642D0) {
-            return m31335Bf() || super.mo404jc(z);
+            return m31337Bf() || super.mo404jc(z);
         }
-        m31325sf(false);
+        m31327sf(false);
         return true;
     }
 
     @Override
     public void mo414p0(int i, View$OnClickListenerC9170d1 d1Var, LinearLayout linearLayout) {
         if (i == R.id.menu_editLangPackString) {
-            d1Var.m10101O1(linearLayout, R.id.menu_btn_view, mo9375O9(), this, R.drawable.baseline_open_in_browser_24, C1357a0.m37541i(49.0f), R.drawable.bg_btn_header);
-            d1Var.m10065d2(linearLayout, this, mo9375O9());
+            d1Var.m10100O1(linearLayout, R.id.menu_btn_view, mo9375O9(), this, R.drawable.baseline_open_in_browser_24, C1357a0.m37544i(49.0f), R.drawable.bg_btn_header);
+            d1Var.m10064d2(linearLayout, this, mo9375O9());
         }
     }
 
-    public final void m31328pf() {
+    public final void m31330pf() {
         HashSet hashSet = new HashSet();
         C3185b x9 = m9131x9();
-        this.f10646y0.setSubtitle(x9.f10651c.m27789c());
+        this.f10646y0.setSubtitle(x9.f10651c.m27791c());
         ArrayList arrayList = new ArrayList();
         arrayList.add(new C2964ra(36));
         C4403w.C4406c cVar = x9.f10651c;
@@ -438,44 +438,44 @@ public class C3183v6 extends AbstractC2420g6<C3185b> implements AbstractC9201h1,
             TdApi.LanguagePackStringValueOrdinary languagePackStringValueOrdinary = (TdApi.LanguagePackStringValueOrdinary) cVar.f14592a.value;
             this.f10644w0 = cVar.f14593b ? new TdApi.LanguagePackStringValueOrdinary(languagePackStringValueOrdinary.value) : new TdApi.LanguagePackStringValueOrdinary();
             SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
-            String str = cVar.m27790b().value;
+            String str = cVar.m27792b().value;
             if (!cVar.f14593b) {
-                x9.f10650b.m27793g(languagePackStringValueOrdinary.value, spannableStringBuilder, true, -1);
+                x9.f10650b.m27795g(languagePackStringValueOrdinary.value, spannableStringBuilder, true, -1);
             } else {
-                x9.f10650b.m27793g(str, spannableStringBuilder, true, -1);
+                x9.f10650b.m27795g(str, spannableStringBuilder, true, -1);
             }
             arrayList.add(new C2964ra(9, (int) R.id.description, 0, (CharSequence) spannableStringBuilder, false));
             arrayList.add(new C2964ra(11));
-            arrayList.add(new C2964ra(31, (int) R.id.string, 0, (int) R.string.LocalizationTranslation, false).m32847b0(cVar.f14593b ? languagePackStringValueOrdinary.value : null));
-            m31323uf(hashSet, str);
+            arrayList.add(new C2964ra(31, (int) R.id.string, 0, (int) R.string.LocalizationTranslation, false).m32850b0(cVar.f14593b ? languagePackStringValueOrdinary.value : null));
+            m31325uf(hashSet, str);
         } else if (constructor == 1906840261) {
             TdApi.LanguagePackStringValuePluralized languagePackStringValuePluralized = (TdApi.LanguagePackStringValuePluralized) cVar.f14592a.value;
-            TdApi.LanguagePackStringValuePluralized d0 = C4403w.m27891d0(cVar.m27789c(), x9.f10650b.f14589c.f14598b);
-            m31323uf(hashSet, d0.zeroValue);
-            m31323uf(hashSet, d0.oneValue);
-            m31323uf(hashSet, d0.twoValue);
-            m31323uf(hashSet, d0.fewValue);
-            m31323uf(hashSet, d0.manyValue);
-            m31323uf(hashSet, d0.otherValue);
+            TdApi.LanguagePackStringValuePluralized d0 = C4403w.m27893d0(cVar.m27791c(), x9.f10650b.f14589c.f14598b);
+            m31325uf(hashSet, d0.zeroValue);
+            m31325uf(hashSet, d0.oneValue);
+            m31325uf(hashSet, d0.twoValue);
+            m31325uf(hashSet, d0.fewValue);
+            m31325uf(hashSet, d0.manyValue);
+            m31325uf(hashSet, d0.otherValue);
             this.f10645x0 = cVar.f14593b ? new TdApi.LanguagePackStringValuePluralized(languagePackStringValuePluralized.zeroValue, languagePackStringValuePluralized.oneValue, languagePackStringValuePluralized.twoValue, languagePackStringValuePluralized.fewValue, languagePackStringValuePluralized.manyValue, languagePackStringValuePluralized.otherValue) : new TdApi.LanguagePackStringValuePluralized();
             for (C4403w.C4407d dVar : x9.f10650b.f14589c.f14598b) {
-                String a = dVar.m27786a(d0);
+                String a = dVar.m27788a(d0);
                 SpannableStringBuilder spannableStringBuilder2 = new SpannableStringBuilder();
-                x9.f10650b.m27793g(a, spannableStringBuilder2, true, -1);
+                x9.f10650b.m27795g(a, spannableStringBuilder2, true, -1);
                 arrayList.add(new C2964ra(9, (int) R.id.description, 0, (CharSequence) spannableStringBuilder2, false));
             }
             arrayList.add(new C2964ra(11));
             for (C4403w.C4407d dVar2 : x9.f10650b.f14588b.f14598b) {
-                arrayList.add(new C2964ra(31, m31321wf(dVar2.f14595a), 0, m31320xf(dVar2), false).m32847b0(cVar.f14593b ? dVar2.m27786a(languagePackStringValuePluralized) : null));
+                arrayList.add(new C2964ra(31, m31323wf(dVar2.f14595a), 0, m31322xf(dVar2), false).m32850b0(cVar.f14593b ? dVar2.m27788a(languagePackStringValuePluralized) : null));
             }
         } else {
             throw new IllegalArgumentException(cVar.f14592a.toString());
         }
-        this.f10643v0.m34116x2(arrayList, false);
-        m31324tf(hashSet);
+        this.f10643v0.m34119x2(arrayList, false);
+        m31326tf(hashSet);
     }
 
-    public final void m31327qf() {
+    public final void m31329qf() {
         View$OnFocusChangeListenerC7069y1 y1Var = this.f10639A0;
         String charSequence = y1Var != null ? y1Var.getText().toString() : null;
         for (int i = 0; i < this.f10640B0.getChildCount(); i++) {
@@ -500,34 +500,34 @@ public class C3183v6 extends AbstractC2420g6<C3185b> implements AbstractC9201h1,
         m9273d9(mo407R9());
     }
 
-    public final void m31325sf(final boolean z) {
-        m9261ee(C4403w.m27853m1(R.string.LocalizationEditConfirmPrompt, m9131x9().f10651c.m27789c()), new int[]{R.id.btn_save, R.id.btn_discard, R.id.btn_cancel}, new String[]{C4403w.m27869i1(R.string.LocalizationEditConfirmSave), C4403w.m27869i1(R.string.LocalizationEditConfirmDiscard), C4403w.m27869i1(R.string.Cancel)}, new int[]{3, 2, 1}, new int[]{R.drawable.baseline_check_24, R.drawable.baseline_delete_forever_24, R.drawable.baseline_cancel_24}, new AbstractC5117h0() {
+    public final void m31327sf(final boolean z) {
+        m9261ee(C4403w.m27855m1(R.string.LocalizationEditConfirmPrompt, m9131x9().f10651c.m27791c()), new int[]{R.id.btn_save, R.id.btn_discard, R.id.btn_cancel}, new String[]{C4403w.m27871i1(R.string.LocalizationEditConfirmSave), C4403w.m27871i1(R.string.LocalizationEditConfirmDiscard), C4403w.m27871i1(R.string.Cancel)}, new int[]{3, 2, 1}, new int[]{R.drawable.baseline_check_24, R.drawable.baseline_delete_forever_24, R.drawable.baseline_cancel_24}, new AbstractC5117h0() {
             @Override
             public final boolean mo493A3(View view, int i) {
                 boolean yf;
-                yf = C3183v6.this.m31319yf(z, view, i);
+                yf = C3183v6.this.m31321yf(z, view, i);
                 return yf;
             }
 
             @Override
             public boolean mo492Q() {
-                return C5115g0.m23935a(this);
+                return C5115g0.m23936a(this);
             }
 
             @Override
             public Object mo491b2(int i) {
-                return C5115g0.m23934b(this, i);
+                return C5115g0.m23935b(this, i);
             }
         });
     }
 
-    public final void m31324tf(Set<String> set) {
+    public final void m31326tf(Set<String> set) {
         this.f10640B0.removeAllViews();
         if (!set.isEmpty()) {
             View.OnClickListener t6Var = new View.OnClickListener() {
                 @Override
                 public final void onClick(View view) {
-                    C3183v6.this.m31318zf(view);
+                    C3183v6.this.m31320zf(view);
                 }
             };
             int size = set.size();
@@ -536,31 +536,31 @@ public class C3183v6 extends AbstractC2420g6<C3185b> implements AbstractC9201h1,
             Arrays.sort(strArr);
             for (int i = 0; i < size; i++) {
                 String str = strArr[i];
-                C6847b2 b2Var = new C6847b2(this.f30165a);
-                b2Var.setTypeface(C1389o.m37260i());
+                C6847b2 b2Var = new C6847b2(this.f30168a);
+                b2Var.setTypeface(C1389o.m37263i());
                 b2Var.setTextColor(C11524j.m228N(R.id.theme_color_background_textLight));
                 b2Var.setText(str);
                 b2Var.setTextSize(1, 16.0f);
-                b2Var.setPadding(C1357a0.m37541i(12.0f), C1357a0.m37541i(30.0f), C1357a0.m37541i(12.0f), C1357a0.m37541i(30.0f));
+                b2Var.setPadding(C1357a0.m37544i(12.0f), C1357a0.m37544i(30.0f), C1357a0.m37544i(12.0f), C1357a0.m37544i(30.0f));
                 b2Var.setOnClickListener(t6Var);
                 C10189d.m5794j(b2Var);
-                C1399s0.m37193a0(b2Var);
+                C1399s0.m37196a0(b2Var);
                 m9119z8(b2Var, R.id.theme_color_background_textLight);
                 this.f10640B0.addView(b2Var);
             }
         }
     }
 
-    public final void m31323uf(Set<String> set, String str) {
-        Matcher matcher = m9131x9().f10650b.m27798b().matcher(str);
+    public final void m31325uf(Set<String> set, String str) {
+        Matcher matcher = m9131x9().f10650b.m27800b().matcher(str);
         while (matcher.find()) {
             set.add(matcher.group());
         }
     }
 
-    public final String m31322vf() {
+    public final String m31324vf() {
         if (m9131x9().f10651c.f14593b) {
-            return m9131x9().f10651c.m27790b().value;
+            return m9131x9().f10651c.m27792b().value;
         }
         return ((TdApi.LanguagePackStringValueOrdinary) m9131x9().f10651c.f14592a.value).value;
     }

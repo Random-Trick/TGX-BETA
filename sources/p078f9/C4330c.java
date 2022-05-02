@@ -25,7 +25,7 @@ public class C4330c extends AbstractC4328a {
 
     public C4330c() {
         float[] fArr = f14401h;
-        FloatBuffer b = C6429a.m20409b(fArr.length);
+        FloatBuffer b = C6429a.m20410b(fArr.length);
         b.put(fArr);
         b.clear();
         C5060q qVar = C5060q.f17066a;
@@ -33,14 +33,14 @@ public class C4330c extends AbstractC4328a {
     }
 
     @Override
-    public void mo28264a() {
-        C4172d.m28622b("glDrawArrays start");
-        GLES20.glDrawArrays(C5038f.m24208o(), 0, m28266f());
-        C4172d.m28622b("glDrawArrays end");
+    public void mo28266a() {
+        C4172d.m28624b("glDrawArrays start");
+        GLES20.glDrawArrays(C5038f.m24209o(), 0, m28268f());
+        C4172d.m28624b("glDrawArrays end");
     }
 
     @Override
-    public FloatBuffer mo28263d() {
+    public FloatBuffer mo28265d() {
         return this.f14403g;
     }
 }

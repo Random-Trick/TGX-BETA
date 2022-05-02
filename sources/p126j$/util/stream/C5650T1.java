@@ -12,57 +12,57 @@ class C5650T1 implements AbstractC5670Y1, AbstractC5749o2 {
         this.f18244c = jVar;
     }
 
-    public void mo22128k(Integer num) {
-        AbstractC5572D0.m22417k(this, num);
+    public void mo22129k(Integer num) {
+        AbstractC5572D0.m22418k(this, num);
     }
 
     @Override
-    public void mo22135c(double d) {
-        AbstractC5572D0.m22421i();
+    public void mo22136c(double d) {
+        AbstractC5572D0.m22422i();
         throw null;
     }
 
     @Override
-    public void mo22134d(int i) {
+    public void mo22135d(int i) {
         if (this.f18242a) {
             this.f18242a = false;
         } else {
-            i = this.f18244c.mo22223i(this.f18243b, i);
+            i = this.f18244c.mo22224i(this.f18243b, i);
         }
         this.f18243b = i;
     }
 
     @Override
-    public void mo22133e(long j) {
-        AbstractC5572D0.m22412n();
+    public void mo22134e(long j) {
+        AbstractC5572D0.m22413n();
         throw null;
     }
 
     @Override
     public Object get() {
-        return this.f18242a ? C5548l.m22469a() : C5548l.m22466d(this.f18243b);
+        return this.f18242a ? C5548l.m22470a() : C5548l.m22467d(this.f18243b);
     }
 
     @Override
-    public void mo22132h() {
+    public void mo22133h() {
     }
 
     @Override
-    public void mo22131j(long j) {
+    public void mo22132j(long j) {
         this.f18242a = true;
         this.f18243b = 0;
     }
 
     @Override
-    public void mo22346s(AbstractC5670Y1 y1) {
+    public void mo22347s(AbstractC5670Y1 y1) {
         C5650T1 t1 = (C5650T1) y1;
         if (!t1.f18242a) {
-            mo22134d(t1.f18243b);
+            mo22135d(t1.f18243b);
         }
     }
 
     @Override
-    public boolean mo22130t() {
+    public boolean mo22131t() {
         return false;
     }
 }

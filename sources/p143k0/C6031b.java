@@ -23,13 +23,13 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
         }
 
         @Override
-        public E mo21512a(int i) {
-            return (E) C6031b.this.m21519v(i);
+        public E mo21513a(int i) {
+            return (E) C6031b.this.m21520v(i);
         }
 
         @Override
-        public void mo21511b(int i) {
-            C6031b.this.m21520u(i);
+        public void mo21512b(int i) {
+            C6031b.this.m21521u(i);
         }
     }
 
@@ -37,7 +37,7 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
         this(0);
     }
 
-    public static void m21523r(int[] iArr, Object[] objArr, int i) {
+    public static void m21524r(int[] iArr, Object[] objArr, int i) {
         if (iArr.length == 8) {
             synchronized (f19186R) {
                 if (f19184P < 10) {
@@ -71,12 +71,12 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
         int i2;
         int i3 = this.f19189c;
         if (e == null) {
-            i2 = m21521t();
+            i2 = m21522t();
             i = 0;
         } else {
             int hashCode = e.hashCode();
             i = hashCode;
-            i2 = m21522s(e, hashCode);
+            i2 = m21523s(e, hashCode);
         }
         if (i2 >= 0) {
             return false;
@@ -91,14 +91,14 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
                 i5 = 8;
             }
             Object[] objArr = this.f19188b;
-            m21526h(i5);
+            m21527h(i5);
             if (i3 == this.f19189c) {
                 int[] iArr2 = this.f19187a;
                 if (iArr2.length > 0) {
                     System.arraycopy(iArr, 0, iArr2, 0, iArr.length);
                     System.arraycopy(objArr, 0, this.f19188b, 0, objArr.length);
                 }
-                m21523r(iArr, objArr, i3);
+                m21524r(iArr, objArr, i3);
             } else {
                 throw new ConcurrentModificationException();
             }
@@ -126,7 +126,7 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
 
     @Override
     public boolean addAll(Collection<? extends E> collection) {
-        m21524m(this.f19189c + collection.size());
+        m21525m(this.f19189c + collection.size());
         boolean z = false;
         for (E e : collection) {
             z |= add(e);
@@ -143,7 +143,7 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
             this.f19187a = C6033c.f19191a;
             this.f19188b = C6033c.f19193c;
             this.f19189c = 0;
-            m21523r(iArr, objArr, i);
+            m21524r(iArr, objArr, i);
         }
         if (this.f19189c != 0) {
             throw new ConcurrentModificationException();
@@ -178,7 +178,7 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
             }
             for (int i = 0; i < this.f19189c; i++) {
                 try {
-                    if (!set.contains(m21519v(i))) {
+                    if (!set.contains(m21520v(i))) {
                         return false;
                     }
                 } catch (ClassCastException | NullPointerException unused) {
@@ -189,7 +189,7 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
         return false;
     }
 
-    public final void m21526h(int i) {
+    public final void m21527h(int i) {
         if (i == 8) {
             synchronized (f19186R) {
                 Object[] objArr = f19183O;
@@ -250,16 +250,16 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
         return i2;
     }
 
-    public final int m21525i(int i) {
+    public final int m21526i(int i) {
         try {
-            return C6033c.m21518a(this.f19187a, this.f19189c, i);
+            return C6033c.m21519a(this.f19187a, this.f19189c, i);
         } catch (ArrayIndexOutOfBoundsException unused) {
             throw new ConcurrentModificationException();
         }
     }
 
     public int indexOf(Object obj) {
-        return obj == null ? m21521t() : m21522s(obj, obj.hashCode());
+        return obj == null ? m21522t() : m21523s(obj, obj.hashCode());
     }
 
     @Override
@@ -272,18 +272,18 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
         return new C6032a();
     }
 
-    public void m21524m(int i) {
+    public void m21525m(int i) {
         int i2 = this.f19189c;
         int[] iArr = this.f19187a;
         if (iArr.length < i) {
             Object[] objArr = this.f19188b;
-            m21526h(i);
+            m21527h(i);
             int i3 = this.f19189c;
             if (i3 > 0) {
                 System.arraycopy(iArr, 0, this.f19187a, 0, i3);
                 System.arraycopy(objArr, 0, this.f19188b, 0, this.f19189c);
             }
-            m21523r(iArr, objArr, this.f19189c);
+            m21524r(iArr, objArr, this.f19189c);
         }
         if (this.f19189c != i2) {
             throw new ConcurrentModificationException();
@@ -296,7 +296,7 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
         if (indexOf < 0) {
             return false;
         }
-        m21520u(indexOf);
+        m21521u(indexOf);
         return true;
     }
 
@@ -315,19 +315,19 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
         boolean z = false;
         for (int i = this.f19189c - 1; i >= 0; i--) {
             if (!collection.contains(this.f19188b[i])) {
-                m21520u(i);
+                m21521u(i);
                 z = true;
             }
         }
         return z;
     }
 
-    public final int m21522s(Object obj, int i) {
+    public final int m21523s(Object obj, int i) {
         int i2 = this.f19189c;
         if (i2 == 0) {
             return -1;
         }
-        int i3 = m21525i(i);
+        int i3 = m21526i(i);
         if (i3 < 0 || obj.equals(this.f19188b[i3])) {
             return i3;
         }
@@ -351,12 +351,12 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
         return this.f19189c;
     }
 
-    public final int m21521t() {
+    public final int m21522t() {
         int i = this.f19189c;
         if (i == 0) {
             return -1;
         }
-        int i2 = m21525i(0);
+        int i2 = m21526i(0);
         if (i2 < 0 || this.f19188b[i2] == null) {
             return i2;
         }
@@ -393,7 +393,7 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
             if (i > 0) {
                 sb2.append(", ");
             }
-            E v = m21519v(i);
+            E v = m21520v(i);
             if (v != this) {
                 sb2.append(v);
             } else {
@@ -404,7 +404,7 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
         return sb2.toString();
     }
 
-    public E m21520u(int i) {
+    public E m21521u(int i) {
         int i2 = this.f19189c;
         Object[] objArr = this.f19188b;
         E e = (E) objArr[i];
@@ -427,7 +427,7 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
                 if (i2 > 8) {
                     i4 = i2 + (i2 >> 1);
                 }
-                m21526h(i4);
+                m21527h(i4);
                 if (i > 0) {
                     System.arraycopy(iArr, 0, this.f19187a, 0, i);
                     System.arraycopy(objArr, 0, this.f19188b, 0, i);
@@ -448,7 +448,7 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
         return e;
     }
 
-    public E m21519v(int i) {
+    public E m21520v(int i) {
         return (E) this.f19188b[i];
     }
 
@@ -457,7 +457,7 @@ public final class C6031b<E> implements Collection<E>, Set<E> {
             this.f19187a = C6033c.f19191a;
             this.f19188b = C6033c.f19193c;
         } else {
-            m21526h(i);
+            m21527h(i);
         }
         this.f19189c = 0;
     }

@@ -5,23 +5,23 @@ import android.os.Build;
 import p213p0.C7956h;
 
 public class C10872nb {
-    public final int f34820a;
-    public final int f34821b;
-    public final int f34822c;
-    public final String f34823d;
+    public final int f34823a;
+    public final int f34824b;
+    public final int f34825c;
+    public final String f34826d;
 
     public C10872nb(C10930q6 q6Var, long j, C10711hb hbVar) {
         if (Build.VERSION.SDK_INT >= 26) {
-            this.f34822c = 0;
-            this.f34821b = 0;
-            this.f34820a = 0;
-            this.f34823d = null;
+            this.f34825c = 0;
+            this.f34824b = 0;
+            this.f34823a = 0;
+            this.f34826d = null;
             return;
         }
-        this.f34820a = q6Var.m2440ga().m3231D0(j);
-        this.f34823d = q6Var.m2440ga().m3235C0(j);
-        this.f34821b = q6Var.m2440ga().m3243A0(j);
-        this.f34822c = q6Var.m2440ga().m3239B0(j);
+        this.f34823a = q6Var.m2440ga().m3231D0(j);
+        this.f34826d = q6Var.m2440ga().m3235C0(j);
+        this.f34824b = q6Var.m2440ga().m3243A0(j);
+        this.f34825c = q6Var.m2440ga().m3239B0(j);
     }
 
     public static void m2967b(C7956h.C7965e eVar, C10930q6 q6Var, C10711hb hbVar, boolean z) {
@@ -32,33 +32,33 @@ public class C10872nb {
                 v = e;
             }
         }
-        eVar.m13974C(q6Var.m2440ga().m3239B0(v));
+        eVar.m13973C(q6Var.m2440ga().m3239B0(v));
     }
 
     public void m2968a(C7956h.C7965e eVar, boolean z) {
-        eVar.m13974C(this.f34822c);
+        eVar.m13973C(this.f34825c);
         if (Build.VERSION.SDK_INT < 26) {
             int i = 0;
-            int i2 = this.f34821b;
+            int i2 = this.f34824b;
             if (i2 != 0) {
-                eVar.m13938y(i2, 1000, 1000);
+                eVar.m13937y(i2, 1000, 1000);
             }
-            int i3 = this.f34820a;
+            int i3 = this.f34823a;
             if (i3 == 0) {
                 i = 2;
             } else if (i3 == 1) {
-                eVar.m13965L(C10827lb.f34663q0);
+                eVar.m13964L(C10827lb.f34666q0);
             } else if (i3 == 2) {
-                eVar.m13965L(C10827lb.f34664r0);
+                eVar.m13964L(C10827lb.f34667r0);
             }
-            String str = this.f34823d;
+            String str = this.f34826d;
             if (str == null) {
                 i |= 1;
             } else if (!str.isEmpty()) {
-                eVar.m13969H(Uri.parse(this.f34823d));
+                eVar.m13968H(Uri.parse(this.f34826d));
             }
             if (i != 0) {
-                eVar.m13945r(i);
+                eVar.m13944r(i);
             }
         }
     }

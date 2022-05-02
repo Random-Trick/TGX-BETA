@@ -10,15 +10,15 @@ final class C5720i3 extends AbstractC5735l3 implements AbstractC5525g {
     }
 
     @Override
-    public void mo22217a(Object obj, long j) {
+    public void mo22218a(Object obj, long j) {
         AbstractC5525g gVar = (AbstractC5525g) obj;
         for (int i = 0; i < j; i++) {
-            gVar.mo22150c(this.f18391c[i]);
+            gVar.mo22151c(this.f18391c[i]);
         }
     }
 
     @Override
-    public void mo22150c(double d) {
+    public void mo22151c(double d) {
         double[] dArr = this.f18391c;
         int i = this.f18426b;
         this.f18426b = i + 1;

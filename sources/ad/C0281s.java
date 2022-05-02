@@ -68,10 +68,10 @@ public class C0281s extends AbstractView$OnClickListenerC0259c implements C0274o
         @Override
         public void onAnimationEnd(Animator animator) {
             if (this.f911a != 0.0f) {
-                C0281s.this.mo41912G1(false);
+                C0281s.this.mo41915G1(false);
             } else {
-                C0281s.this.f895U.m41926E1();
-                C0281s.this.m41893f2();
+                C0281s.this.f895U.m41929E1();
+                C0281s.this.m41896f2();
             }
             C0281s.this.f904g0 = false;
         }
@@ -80,72 +80,72 @@ public class C0281s extends AbstractView$OnClickListenerC0259c implements C0274o
     public C0281s(Context context, AbstractC9323v4<?> v4Var) {
         super(context, v4Var);
         if (f891m0) {
-            C1379j0.m37324i0(this);
+            C1379j0.m37327i0(this);
         }
         this.f892R = new GestureDetector$OnGestureListenerC0256a(context, this);
-        this.f893S = C1357a0.m37541i(20.0f);
+        this.f893S = C1357a0.m37544i(20.0f);
     }
 
-    public void m41900Z1(float f, float f2, ValueAnimator valueAnimator) {
-        setCloseFactor(f + (f2 * C2057b.m35735a(valueAnimator)));
+    public void m41903Z1(float f, float f2, ValueAnimator valueAnimator) {
+        setCloseFactor(f + (f2 * C2057b.m35738a(valueAnimator)));
     }
 
-    public void m41898a2() {
+    public void m41901a2() {
         requestLayout();
     }
 
     @Override
-    public boolean mo41915E1() {
+    public boolean mo41918E1() {
         C4658i iVar = this.f782M;
         if (iVar.f15552e == 0 || iVar.f15553f == 0) {
             return false;
         }
-        mo41913F1(C1357a0.m37543g());
+        mo41916F1(C1357a0.m37546g());
         return true;
     }
 
     @Override
-    public void mo41914F0() {
+    public void mo41917F0() {
         C0277p pVar = this.f895U;
         if (pVar != null) {
-            pVar.m41926E1();
+            pVar.m41929E1();
         }
     }
 
     @Override
-    public int mo41913F1(int r12) {
-        throw new UnsupportedOperationException("Method not decompiled: ad.C0281s.mo41913F1(int):int");
+    public int mo41916F1(int r12) {
+        throw new UnsupportedOperationException("Method not decompiled: ad.C0281s.mo41916F1(int):int");
     }
 
     @Override
-    public void mo41912G1(boolean z) {
+    public void mo41915G1(boolean z) {
         if (!z || !this.f898a0) {
             this.f786Q.m18408y2(z);
             return;
         }
-        mo41895d1();
-        m41901Y1(1.0f, 0.0f);
+        mo41898d1();
+        m41904Y1(1.0f, 0.0f);
     }
 
     @Override
-    public void mo41911H() {
+    public void mo41914H() {
         C0277p pVar = this.f895U;
-        if (pVar != null && pVar.getPlayer() != null && this.f895U.m41925F1() && this.f896V != null) {
+        if (pVar != null && pVar.getPlayer() != null && this.f895U.m41928F1() && this.f896V != null) {
             AbstractView$OnTouchListenerC7889a aVar = (AbstractView$OnTouchListenerC7889a) getContext();
             if (this.f909l0) {
-                m41894d2();
+                m41897d2();
             }
-            aVar.m14469l2(this.f786Q);
+            aVar.m14468l2(this.f786Q);
             this.f786Q.setHideBackground(true);
             this.f786Q.setDisableCancelOnTouchDown(true);
             setFooterVisibility(8);
             C0274o oVar = this.f896V;
             this.f898a0 = true;
             oVar.setMinimized(true);
-            mo41913F1(getMeasuredWidth());
+            mo41916F1(getMeasuredWidth());
             if (Build.VERSION.SDK_INT >= 21) {
-                this.f895U.setElevation(C1357a0.m37541i(3.0f));
-                this.f895U.setTranslationZ(C1357a0.m37541i(1.0f));
+                this.f895U.setElevation(C1357a0.m37544i(3.0f));
+                this.f895U.setTranslationZ(C1357a0.m37544i(1.0f));
                 this.f895U.setOutlineProvider(new C0282a());
             }
             this.f895U.requestLayout();
@@ -153,29 +153,29 @@ public class C0281s extends AbstractView$OnClickListenerC0259c implements C0274o
     }
 
     @Override
-    public void mo41910J1() {
+    public void mo41913J1() {
         C0277p pVar = this.f901d0;
         if (pVar != null) {
-            pVar.m41923I1();
+            pVar.m41926I1();
             this.f901d0 = null;
         }
     }
 
     @Override
-    public boolean mo41909L1(String str) {
-        String d = C0264f.m41971d(str);
+    public boolean mo41912L1(String str) {
+        String d = C0264f.m41974d(str);
         if (d == null || !d.equals(this.f894T)) {
             return false;
         }
-        mo41890i();
+        mo41893i();
         return true;
     }
 
     @Override
-    public boolean mo41908M1(C4658i iVar) {
-        String d = C0264f.m41971d(iVar.f15549b);
+    public boolean mo41911M1(C4658i iVar) {
+        String d = C0264f.m41974d(iVar.f15549b);
         this.f894T = d;
-        if (!C5070i.m24061i(d)) {
+        if (!C5070i.m24062i(d)) {
             C10536ab.m4667o1().m4636w2().m7075W0(16, true);
             C0274o oVar = new C0274o(getContext());
             this.f896V = oVar;
@@ -187,7 +187,7 @@ public class C0281s extends AbstractView$OnClickListenerC0259c implements C0274o
             C0277p pVar = new C0277p(getContext());
             this.f895U = pVar;
             if (f891m0) {
-                C1379j0.m37324i0(pVar);
+                C1379j0.m37327i0(pVar);
             }
             this.f895U.setControls(this.f896V);
             this.f895U.setParentLayout(this);
@@ -195,28 +195,28 @@ public class C0281s extends AbstractView$OnClickListenerC0259c implements C0274o
             addView(this.f895U);
             this.f895U.addView(this.f896V);
         }
-        return super.mo41908M1(iVar);
+        return super.mo41911M1(iVar);
     }
 
     @Override
-    public void mo41907T(boolean z) {
-        AbstractView$OnTouchListenerC7889a r = C1379j0.m37307r(getContext());
+    public void mo41910T(boolean z) {
+        AbstractView$OnTouchListenerC7889a r = C1379j0.m37310r(getContext());
         if (this.f909l0 && r != null && Build.VERSION.SDK_INT >= 14) {
-            r.m14432u3(!z ? 1 : 0, false);
+            r.m14431u3(!z ? 1 : 0, false);
         }
     }
 
-    public final void m41901Y1(float f, float f2) {
+    public final void m41904Y1(float f, float f2) {
         if (!this.f904g0 && this.f905h0) {
             this.f904g0 = true;
             this.f905h0 = false;
             final float closeFactor = getCloseFactor();
             final float f3 = f - closeFactor;
-            ValueAnimator b = C2057b.m35734b();
+            ValueAnimator b = C2057b.m35737b();
             b.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                 @Override
                 public final void onAnimationUpdate(ValueAnimator valueAnimator) {
-                    C0281s.this.m41900Z1(closeFactor, f3, valueAnimator);
+                    C0281s.this.m41903Z1(closeFactor, f3, valueAnimator);
                 }
             });
             b.setDuration(f2 == 0.0f ? 200L : f == 1.0f ? 160L : 120L);
@@ -227,18 +227,18 @@ public class C0281s extends AbstractView$OnClickListenerC0259c implements C0274o
     }
 
     @Override
-    public void mo41899a() {
+    public void mo41902a() {
         C0277p pVar = this.f895U;
         if (pVar != null) {
-            pVar.m41919N1();
+            pVar.m41922N1();
         }
     }
 
     @Override
-    public void mo41897b0() {
+    public void mo41900b0() {
         try {
             C0277p pVar = this.f895U;
-            if (!(pVar == null || pVar.getPlayer() == null || !this.f895U.m41925F1())) {
+            if (!(pVar == null || pVar.getPlayer() == null || !this.f895U.m41928F1())) {
                 if (this.f895U.getPlayer().mo5937l()) {
                     this.f895U.getPlayer().mo5947b();
                 } else {
@@ -250,13 +250,13 @@ public class C0281s extends AbstractView$OnClickListenerC0259c implements C0274o
         }
     }
 
-    public final void m41896b2(boolean z) {
-        AbstractView$OnTouchListenerC7889a r = C1379j0.m37307r(getContext());
+    public final void m41899b2(boolean z) {
+        AbstractView$OnTouchListenerC7889a r = C1379j0.m37310r(getContext());
         if (z) {
             int i = Build.VERSION.SDK_INT;
             r.setRequestedOrientation(6);
             if (i >= 14) {
-                r.m14432u3(1, false);
+                r.m14431u3(1, false);
                 return;
             }
             return;
@@ -264,31 +264,31 @@ public class C0281s extends AbstractView$OnClickListenerC0259c implements C0274o
         int i2 = Build.VERSION.SDK_INT;
         r.setRequestedOrientation(-1);
         if (i2 >= 14) {
-            r.m14432u3(0, false);
+            r.m14431u3(0, false);
         }
     }
 
     @Override
-    public void mo41895d1() {
+    public void mo41898d1() {
         this.f905h0 = true;
         this.f906i0 = false;
-        m41891h2();
-        this.f895U.m41919N1();
+        m41894h2();
+        this.f895U.m41922N1();
     }
 
-    public final void m41894d2() {
-        m41896b2(false);
+    public final void m41897d2() {
+        m41899b2(false);
     }
 
     @Override
     public void mo18406f0(C6924j2 j2Var) {
         if (this.f894T != null) {
             C10536ab.m4667o1().m4636w2().m7075W0(16, true);
-            this.f895U.m41924G1(this.f894T);
+            this.f895U.m41927G1(this.f894T);
         }
     }
 
-    public final void m41893f2() {
+    public final void m41896f2() {
         if (this.f907j0) {
             this.f907j0 = false;
             C0277p pVar = this.f895U;
@@ -304,18 +304,18 @@ public class C0281s extends AbstractView$OnClickListenerC0259c implements C0274o
 
     @Override
     public int getPreviewHeight() {
-        return C1357a0.m37545e();
+        return C1357a0.m37548e();
     }
 
     @Override
-    public void mo41892h(int i) {
+    public void mo41895h(int i) {
         C0277p pVar = this.f895U;
         if (pVar != null) {
-            pVar.m41921L1(i);
+            pVar.m41924L1(i);
         }
     }
 
-    public final void m41891h2() {
+    public final void m41894h2() {
         C0277p pVar;
         if (!this.f907j0 && (pVar = this.f895U) != null && pVar.getPlayer() != null && this.f895U.getPlayer().mo5937l()) {
             this.f907j0 = true;
@@ -324,19 +324,19 @@ public class C0281s extends AbstractView$OnClickListenerC0259c implements C0274o
     }
 
     @Override
-    public void mo41890i() {
+    public void mo41893i() {
         if (this.f896V != null && !this.f904g0) {
-            C1379j0.m37307r(getContext()).m14566L1(this.f786Q);
+            C1379j0.m37310r(getContext()).m14566L1(this.f786Q);
             this.f786Q.setHideBackground(false);
             this.f786Q.setDisableCancelOnTouchDown(false);
             if (this.f909l0) {
-                m41896b2(true);
+                m41899b2(true);
             }
             setFooterVisibility(0);
             C0274o oVar = this.f896V;
             this.f898a0 = false;
             oVar.setMinimized(false);
-            mo41913F1(getMeasuredWidth());
+            mo41916F1(getMeasuredWidth());
             if (Build.VERSION.SDK_INT >= 21) {
                 this.f895U.setElevation(0.0f);
                 this.f895U.setTranslationZ(0.0f);
@@ -349,12 +349,12 @@ public class C0281s extends AbstractView$OnClickListenerC0259c implements C0274o
     @Override
     public void mo3000j2(C6924j2 j2Var) {
         if (this.f909l0) {
-            mo41889q1(false);
+            mo41892q1(false);
         }
         C10536ab.m4667o1().m4636w2().m7075W0(16, false);
         C0277p pVar = this.f895U;
         if (pVar != null) {
-            pVar.m41922J1();
+            pVar.m41925J1();
             this.f901d0 = this.f895U;
             this.f895U = null;
         }
@@ -370,13 +370,13 @@ public class C0281s extends AbstractView$OnClickListenerC0259c implements C0274o
             return false;
         }
         float f3 = 1.0f;
-        if (abs <= C1357a0.m37540j(350.0f, 1.0f)) {
+        if (abs <= C1357a0.m37543j(350.0f, 1.0f)) {
             return false;
         }
         if (f <= 0.0f) {
             f3 = -1.0f;
         }
-        m41901Y1(f3, abs);
+        m41904Y1(f3, abs);
         return true;
     }
 
@@ -385,7 +385,7 @@ public class C0281s extends AbstractView$OnClickListenerC0259c implements C0274o
         if (this.f905h0 || this.f904g0) {
             return true;
         }
-        this.f892R.m41994a(motionEvent);
+        this.f892R.m41997a(motionEvent);
         return false;
     }
 
@@ -395,11 +395,11 @@ public class C0281s extends AbstractView$OnClickListenerC0259c implements C0274o
             return super.onTouchEvent(motionEvent);
         }
         super.onTouchEvent(motionEvent);
-        this.f892R.m41994a(motionEvent);
+        this.f892R.m41997a(motionEvent);
         int action = motionEvent.getAction();
         if (action == 1) {
             float f = this.f902e0;
-            m41901Y1(f >= 0.5f ? 1.0f : f <= -0.5f ? -1.0f : 0.0f, 0.0f);
+            m41904Y1(f >= 0.5f ? 1.0f : f <= -0.5f ? -1.0f : 0.0f, 0.0f);
         } else if (action == 2) {
             float x = motionEvent.getX();
             if (!this.f906i0) {
@@ -408,25 +408,25 @@ public class C0281s extends AbstractView$OnClickListenerC0259c implements C0274o
             }
             setCloseFactor((x - this.f903f0) / this.f899b0);
         } else if (action == 3) {
-            m41901Y1(0.0f, 0.0f);
+            m41904Y1(0.0f, 0.0f);
         }
         return true;
     }
 
     @Override
-    public void mo41889q1(boolean z) {
+    public void mo41892q1(boolean z) {
         C0277p pVar = this.f895U;
-        if (pVar != null && pVar.getPlayer() != null && this.f895U.m41925F1()) {
+        if (pVar != null && pVar.getPlayer() != null && this.f895U.m41928F1()) {
             this.f896V.setFullscreen(z);
             this.f909l0 = z;
             if (!z) {
-                this.f908k0 = C4868i.m24726c2().m24763X2(4L);
+                this.f908k0 = C4868i.m24727c2().m24764X2(4L);
             }
-            m41896b2(z);
+            m41899b2(z);
             post(new Runnable() {
                 @Override
                 public final void run() {
-                    C0281s.this.m41898a2();
+                    C0281s.this.m41901a2();
                 }
             });
         }
@@ -444,7 +444,7 @@ public class C0281s extends AbstractView$OnClickListenerC0259c implements C0274o
     }
 
     @Override
-    public boolean mo41888x0() {
+    public boolean mo41891x0() {
         return this.f905h0 && this.f907j0;
     }
 }

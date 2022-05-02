@@ -5,7 +5,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 public interface AbstractC1475k {
-    boolean m36811a(MenuItem menuItem);
+    boolean m36814a(MenuItem menuItem);
 
-    void m36810b(Menu menu, MenuInflater menuInflater);
+    void m36813b(Menu menu, MenuInflater menuInflater);
 }

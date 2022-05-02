@@ -44,11 +44,11 @@ public class C6820b {
             String[] split;
             this.f21364b = new ArrayList<>();
             this.f21363a = attributes;
-            String m = C6820b.m18879m("style", attributes);
+            String m = C6820b.m18880m("style", attributes);
             if (m != null) {
                 this.f21364b.add(new C6825d(m));
             }
-            String m2 = C6820b.m18879m("class", attributes);
+            String m2 = C6820b.m18880m("class", attributes);
             if (m2 != null) {
                 for (String str : m2.split(" ")) {
                     if (hashMap.containsKey(str)) {
@@ -58,19 +58,19 @@ public class C6820b {
             }
         }
 
-        public String m18872a(String str) {
+        public String m18873a(String str) {
             String str2 = null;
-            for (int i = 0; i < this.f21364b.size() && (str2 = this.f21364b.get(i).m18862a(str)) == null; i++) {
+            for (int i = 0; i < this.f21364b.size() && (str2 = this.f21364b.get(i).m18863a(str)) == null; i++) {
             }
-            return str2 == null ? C6820b.m18879m(str, this.f21363a) : str2;
+            return str2 == null ? C6820b.m18880m(str, this.f21363a) : str2;
         }
 
-        public Float m18871b(String str) {
-            return m18870c(str, null);
+        public Float m18872b(String str) {
+            return m18871c(str, null);
         }
 
-        public Float m18870c(String str, Float f) {
-            String a = m18872a(str);
+        public Float m18871c(String str, Float f) {
+            String a = m18873a(str);
             if (a == null) {
                 return f;
             }
@@ -81,8 +81,8 @@ public class C6820b {
             }
         }
 
-        public Integer m18869d(String str) {
-            String a = m18872a(str);
+        public Integer m18870d(String str) {
+            String a = m18873a(str);
             if (a == null) {
                 return null;
             }
@@ -93,8 +93,8 @@ public class C6820b {
             }
         }
 
-        public String m18868e(String str) {
-            return m18872a(str);
+        public String m18869e(String str) {
+            return m18873a(str);
         }
     }
 
@@ -118,11 +118,11 @@ public class C6820b {
             this.f21374j = z;
         }
 
-        public final void m18867a(C6822b bVar, Integer num, boolean z) {
+        public final void m18868a(C6822b bVar, Integer num, boolean z) {
             this.f21371g.setColor((num.intValue() & 16777215) | (-16777216));
-            Float b = bVar.m18871b("opacity");
+            Float b = bVar.m18872b("opacity");
             if (b == null) {
-                b = bVar.m18871b(z ? "fill-opacity" : "stroke-opacity");
+                b = bVar.m18872b(z ? "fill-opacity" : "stroke-opacity");
             }
             if (b == null) {
                 this.f21371g.setAlpha(255);
@@ -131,20 +131,20 @@ public class C6820b {
             }
         }
 
-        public final boolean m18866b(C6822b bVar) {
-            if ("none".equals(bVar.m18868e("display"))) {
+        public final boolean m18867b(C6822b bVar) {
+            if ("none".equals(bVar.m18869e("display"))) {
                 return false;
             }
-            String e = bVar.m18868e("fill");
+            String e = bVar.m18869e("fill");
             if (e != null && (e.startsWith("url(#") || e.equals("none"))) {
                 return false;
             }
-            Integer d = bVar.m18869d("fill");
+            Integer d = bVar.m18870d("fill");
             if (d != null) {
-                m18867a(bVar, d, true);
+                m18868a(bVar, d, true);
                 this.f21371g.setStyle(Paint.Style.STROKE);
                 return true;
-            } else if (bVar.m18868e("fill") != null || bVar.m18868e("stroke") != null) {
+            } else if (bVar.m18869e("fill") != null || bVar.m18869e("stroke") != null) {
                 return false;
             } else {
                 this.f21371g.setStyle(Paint.Style.FILL);
@@ -153,17 +153,17 @@ public class C6820b {
             }
         }
 
-        public final boolean m18865c(C6822b bVar) {
+        public final boolean m18866c(C6822b bVar) {
             Integer d;
-            if ("none".equals(bVar.m18868e("display")) || (d = bVar.m18869d("stroke")) == null) {
+            if ("none".equals(bVar.m18869e("display")) || (d = bVar.m18870d("stroke")) == null) {
                 return false;
             }
-            m18867a(bVar, d, false);
-            Float b = bVar.m18871b("stroke-width");
+            m18868a(bVar, d, false);
+            Float b = bVar.m18872b("stroke-width");
             if (b != null) {
                 this.f21371g.setStrokeWidth(b.floatValue());
             }
-            String e = bVar.m18868e("stroke-linecap");
+            String e = bVar.m18869e("stroke-linecap");
             if ("round".equals(e)) {
                 this.f21371g.setStrokeCap(Paint.Cap.ROUND);
             } else if ("square".equals(e)) {
@@ -171,7 +171,7 @@ public class C6820b {
             } else if ("butt".equals(e)) {
                 this.f21371g.setStrokeCap(Paint.Cap.BUTT);
             }
-            String e2 = bVar.m18868e("stroke-linejoin");
+            String e2 = bVar.m18869e("stroke-linejoin");
             if ("miter".equals(e2)) {
                 this.f21371g.setStrokeJoin(Paint.Join.MITER);
             } else if ("round".equals(e2)) {
@@ -191,19 +191,19 @@ public class C6820b {
             }
         }
 
-        public final void m18864d() {
+        public final void m18865d() {
             if (this.f21369e) {
                 this.f21366b.restore();
             }
         }
 
-        public final void m18863e(Attributes attributes) {
-            String m = C6820b.m18879m("transform", attributes);
+        public final void m18864e(Attributes attributes) {
+            String m = C6820b.m18880m("transform", attributes);
             boolean z = m != null;
             this.f21369e = z;
             if (z) {
                 this.f21366b.save();
-                this.f21366b.concat(C6820b.m18876p(m));
+                this.f21366b.concat(C6820b.m18877p(m));
             }
         }
 
@@ -345,49 +345,49 @@ public class C6820b {
                 }
                 switch (c) {
                     case 0:
-                        Float k = C6820b.m18881k("cx", attributes);
-                        Float k2 = C6820b.m18881k("cy", attributes);
-                        Float k3 = C6820b.m18881k("rx", attributes);
-                        Float k4 = C6820b.m18881k("ry", attributes);
+                        Float k = C6820b.m18882k("cx", attributes);
+                        Float k2 = C6820b.m18882k("cy", attributes);
+                        Float k3 = C6820b.m18882k("rx", attributes);
+                        Float k4 = C6820b.m18882k("ry", attributes);
                         if (!(k == null || k2 == null || k3 == null || k4 == null)) {
-                            m18863e(attributes);
+                            m18864e(attributes);
                             C6822b bVar = new C6822b(attributes, this.f21370f);
                             this.f21372h.set(k.floatValue() - k3.floatValue(), k2.floatValue() - k4.floatValue(), k.floatValue() + k3.floatValue(), k2.floatValue() + k4.floatValue());
-                            if (m18866b(bVar)) {
+                            if (m18867b(bVar)) {
                                 this.f21366b.drawOval(this.f21372h, this.f21371g);
                             }
-                            if (m18865c(bVar)) {
+                            if (m18866c(bVar)) {
                                 this.f21366b.drawOval(this.f21372h, this.f21371g);
                             }
-                            m18864d();
+                            m18865d();
                             return;
                         }
                         return;
                     case 1:
-                        Float k5 = C6820b.m18881k("cx", attributes);
-                        Float k6 = C6820b.m18881k("cy", attributes);
-                        Float k7 = C6820b.m18881k("r", attributes);
+                        Float k5 = C6820b.m18882k("cx", attributes);
+                        Float k6 = C6820b.m18882k("cy", attributes);
+                        Float k7 = C6820b.m18882k("r", attributes);
                         if (!(k5 == null || k6 == null || k7 == null)) {
-                            m18863e(attributes);
+                            m18864e(attributes);
                             C6822b bVar2 = new C6822b(attributes, this.f21370f);
-                            if (m18866b(bVar2)) {
+                            if (m18867b(bVar2)) {
                                 this.f21366b.drawCircle(k5.floatValue(), k6.floatValue(), k7.floatValue(), this.f21371g);
                             }
-                            if (m18865c(bVar2)) {
+                            if (m18866c(bVar2)) {
                                 this.f21366b.drawCircle(k5.floatValue(), k6.floatValue(), k7.floatValue(), this.f21371g);
                             }
-                            m18864d();
+                            m18865d();
                             return;
                         }
                         return;
                     case 2:
                     case '\n':
-                        C6821a o = C6820b.m18877o(attributes.getValue("points"));
+                        C6821a o = C6820b.m18878o(attributes.getValue("points"));
                         if (o != null) {
                             Path path = new Path();
                             ArrayList arrayList = o.f21361a;
                             if (arrayList.size() > 1) {
-                                m18863e(attributes);
+                                m18864e(attributes);
                                 C6822b bVar3 = new C6822b(attributes, this.f21370f);
                                 path.moveTo(((Float) arrayList.get(0)).floatValue(), ((Float) arrayList.get(1)).floatValue());
                                 for (int i = 2; i < arrayList.size(); i += 2) {
@@ -396,27 +396,27 @@ public class C6820b {
                                 if (str2.equals("polygon")) {
                                     path.close();
                                 }
-                                if (m18866b(bVar3)) {
+                                if (m18867b(bVar3)) {
                                     this.f21366b.drawPath(path, this.f21371g);
                                 }
-                                if (m18865c(bVar3)) {
+                                if (m18866c(bVar3)) {
                                     this.f21366b.drawPath(path, this.f21371g);
                                 }
-                                m18864d();
+                                m18865d();
                                 return;
                             }
                             return;
                         }
                         return;
                     case 3:
-                        if ("bounds".equalsIgnoreCase(C6820b.m18879m("id", attributes))) {
+                        if ("bounds".equalsIgnoreCase(C6820b.m18880m("id", attributes))) {
                             this.f21368d = true;
                             return;
                         }
                         return;
                     case 4:
-                        String m = C6820b.m18879m("viewBox", attributes);
-                        if (!C5070i.m24061i(m)) {
+                        String m = C6820b.m18880m("viewBox", attributes);
+                        if (!C5070i.m24062i(m)) {
                             String[] split = m.split(" ");
                             if (split.length == 4) {
                                 float parseFloat = Float.parseFloat(split[2]);
@@ -455,44 +455,44 @@ public class C6820b {
                         this.f21368d = true;
                         return;
                     case 6:
-                        Float k8 = C6820b.m18881k("x1", attributes);
-                        Float k9 = C6820b.m18881k("x2", attributes);
-                        Float k10 = C6820b.m18881k("y1", attributes);
-                        Float k11 = C6820b.m18881k("y2", attributes);
-                        if (m18865c(new C6822b(attributes, this.f21370f))) {
-                            m18863e(attributes);
+                        Float k8 = C6820b.m18882k("x1", attributes);
+                        Float k9 = C6820b.m18882k("x2", attributes);
+                        Float k10 = C6820b.m18882k("y1", attributes);
+                        Float k11 = C6820b.m18882k("y2", attributes);
+                        if (m18866c(new C6822b(attributes, this.f21370f))) {
+                            m18864e(attributes);
                             this.f21366b.drawLine(k8.floatValue(), k10.floatValue(), k9.floatValue(), k11.floatValue(), this.f21371g);
-                            m18864d();
+                            m18865d();
                             return;
                         }
                         return;
                     case 7:
-                        Path h = C6820b.m18884h(C6820b.m18879m("d", attributes));
-                        m18863e(attributes);
+                        Path h = C6820b.m18885h(C6820b.m18880m("d", attributes));
+                        m18864e(attributes);
                         C6822b bVar4 = new C6822b(attributes, this.f21370f);
-                        if (m18866b(bVar4)) {
+                        if (m18867b(bVar4)) {
                             this.f21366b.drawPath(h, this.f21371g);
                         }
-                        if (m18865c(bVar4)) {
+                        if (m18866c(bVar4)) {
                             this.f21366b.drawPath(h, this.f21371g);
                         }
-                        m18864d();
+                        m18865d();
                         return;
                     case '\b':
-                        Float k12 = C6820b.m18881k("x", attributes);
+                        Float k12 = C6820b.m18882k("x", attributes);
                         if (k12 == null) {
                             k12 = Float.valueOf(0.0f);
                         }
-                        Float k13 = C6820b.m18881k("y", attributes);
+                        Float k13 = C6820b.m18882k("y", attributes);
                         if (k13 == null) {
                             k13 = Float.valueOf(0.0f);
                         }
-                        Float k14 = C6820b.m18881k("width", attributes);
-                        Float k15 = C6820b.m18881k("height", attributes);
-                        Float l = C6820b.m18880l("rx", attributes, null);
-                        m18863e(attributes);
+                        Float k14 = C6820b.m18882k("width", attributes);
+                        Float k15 = C6820b.m18882k("height", attributes);
+                        Float l = C6820b.m18881l("rx", attributes, null);
+                        m18864e(attributes);
                         C6822b bVar5 = new C6822b(attributes, this.f21370f);
-                        if (m18866b(bVar5)) {
+                        if (m18867b(bVar5)) {
                             if (l != null) {
                                 this.f21372h.set(k12.floatValue(), k13.floatValue(), k12.floatValue() + k14.floatValue(), k13.floatValue() + k15.floatValue());
                                 this.f21366b.drawRoundRect(this.f21372h, l.floatValue(), l.floatValue(), this.f21371g);
@@ -500,7 +500,7 @@ public class C6820b {
                                 this.f21366b.drawRect(k12.floatValue(), k13.floatValue(), k12.floatValue() + k14.floatValue(), k13.floatValue() + k15.floatValue(), this.f21371g);
                             }
                         }
-                        if (m18865c(bVar5)) {
+                        if (m18866c(bVar5)) {
                             if (l != null) {
                                 this.f21372h.set(k12.floatValue(), k13.floatValue(), k12.floatValue() + k14.floatValue(), k13.floatValue() + k15.floatValue());
                                 this.f21366b.drawRoundRect(this.f21372h, l.floatValue(), l.floatValue(), this.f21371g);
@@ -508,7 +508,7 @@ public class C6820b {
                                 this.f21366b.drawRect(k12.floatValue(), k13.floatValue(), k12.floatValue() + k14.floatValue(), k13.floatValue() + k15.floatValue(), this.f21371g);
                             }
                         }
-                        m18864d();
+                        m18865d();
                         return;
                     case '\t':
                         this.f21367c = new StringBuilder();
@@ -533,20 +533,20 @@ public class C6820b {
             }
         }
 
-        public String m18862a(String str) {
+        public String m18863a(String str) {
             return this.f21375a.get(str);
         }
     }
 
-    public static float m18885g(float f, float f2, float f3, float f4) {
+    public static float m18886g(float f, float f2, float f3, float f4) {
         return ((float) Math.toDegrees(Math.atan2(f, f2) - Math.atan2(f3, f4))) % 360.0f;
     }
 
-    public static android.graphics.Path m18884h(java.lang.String r23) {
-        throw new UnsupportedOperationException("Method not decompiled: md.C6820b.m18884h(java.lang.String):android.graphics.Path");
+    public static android.graphics.Path m18885h(java.lang.String r23) {
+        throw new UnsupportedOperationException("Method not decompiled: md.C6820b.m18885h(java.lang.String):android.graphics.Path");
     }
 
-    public static void m18883i(Path path, float f, float f2, float f3, float f4, float f5, float f6, float f7, int i, int i2) {
+    public static void m18884i(Path path, float f, float f2, float f3, float f4, float f5, float f6, float f7, int i, int i2) {
         if (f5 == 0.0f || f6 == 0.0f) {
             path.lineTo(f3, f4);
         } else if (f3 != f || f4 != f2) {
@@ -581,8 +581,8 @@ public class C6820b {
             float f23 = (sin * f20) + (cos * f21) + ((f2 + f4) / 2.0f);
             float f24 = (f10 - f20) / abs;
             float f25 = (f11 - f21) / abs2;
-            float g = m18885g(1.0f, 0.0f, f24, f25);
-            float g2 = m18885g(f24, f25, ((-f10) - f20) / abs, ((-f11) - f21) / abs2);
+            float g = m18886g(1.0f, 0.0f, f24, f25);
+            float g2 = m18886g(f24, f25, ((-f10) - f20) / abs, ((-f11) - f21) / abs2);
             if (i2 == 0 && g2 > 0.0f) {
                 g2 -= 360.0f;
             } else if (i2 != 0 && g2 < 0.0f) {
@@ -608,19 +608,19 @@ public class C6820b {
         }
     }
 
-    public static Bitmap m18882j(int i, boolean z, String str) {
-        return m18874r(i, z, C7389v0.m16652b1(str));
+    public static Bitmap m18883j(int i, boolean z, String str) {
+        return m18875r(i, z, C7389v0.m16652b1(str));
     }
 
-    public static Float m18881k(String str, Attributes attributes) {
-        return m18880l(str, attributes, null);
+    public static Float m18882k(String str, Attributes attributes) {
+        return m18881l(str, attributes, null);
     }
 
-    public static Float m18880l(String str, Attributes attributes, Float f) {
-        return m18878n(m18879m(str, attributes), f);
+    public static Float m18881l(String str, Attributes attributes, Float f) {
+        return m18879n(m18880m(str, attributes), f);
     }
 
-    public static String m18879m(String str, Attributes attributes) {
+    public static String m18880m(String str, Attributes attributes) {
         int length = attributes.getLength();
         for (int i = 0; i < length; i++) {
             if (attributes.getLocalName(i).equals(str)) {
@@ -630,7 +630,7 @@ public class C6820b {
         return null;
     }
 
-    public static Float m18878n(String str, Float f) {
+    public static Float m18879n(String str, Float f) {
         if (str == null) {
             return f;
         }
@@ -642,15 +642,15 @@ public class C6820b {
         return Float.valueOf(Float.parseFloat(str));
     }
 
-    public static md.C6820b.C6821a m18877o(java.lang.String r10) {
-        throw new UnsupportedOperationException("Method not decompiled: md.C6820b.m18877o(java.lang.String):md.b$a");
+    public static md.C6820b.C6821a m18878o(java.lang.String r10) {
+        throw new UnsupportedOperationException("Method not decompiled: md.C6820b.m18878o(java.lang.String):md.b$a");
     }
 
-    public static Matrix m18876p(String str) {
+    public static Matrix m18877p(String str) {
         int i;
         Matrix matrix = new Matrix();
         while (true) {
-            m18875q(str, matrix);
+            m18876q(str, matrix);
             int indexOf = str.indexOf(")");
             if (indexOf <= 0 || str.length() <= (i = indexOf + 1)) {
                 break;
@@ -660,18 +660,18 @@ public class C6820b {
         return matrix;
     }
 
-    public static Matrix m18875q(String str, Matrix matrix) {
+    public static Matrix m18876q(String str, Matrix matrix) {
         float f;
         float f2 = 0.0f;
         if (str.startsWith("matrix(")) {
-            C6821a o = m18877o(str.substring(7));
+            C6821a o = m18878o(str.substring(7));
             if (o.f21361a.size() == 6) {
                 Matrix matrix2 = new Matrix();
                 matrix2.setValues(new float[]{((Float) o.f21361a.get(0)).floatValue(), ((Float) o.f21361a.get(2)).floatValue(), ((Float) o.f21361a.get(4)).floatValue(), ((Float) o.f21361a.get(1)).floatValue(), ((Float) o.f21361a.get(3)).floatValue(), ((Float) o.f21361a.get(5)).floatValue(), 0.0f, 0.0f, 1.0f});
                 matrix.preConcat(matrix2);
             }
         } else if (str.startsWith("translate(")) {
-            C6821a o2 = m18877o(str.substring(10));
+            C6821a o2 = m18878o(str.substring(10));
             if (o2.f21361a.size() > 0) {
                 float floatValue = ((Float) o2.f21361a.get(0)).floatValue();
                 if (o2.f21361a.size() > 1) {
@@ -680,23 +680,23 @@ public class C6820b {
                 matrix.preTranslate(floatValue, f2);
             }
         } else if (str.startsWith("scale(")) {
-            C6821a o3 = m18877o(str.substring(6));
+            C6821a o3 = m18878o(str.substring(6));
             if (o3.f21361a.size() > 0) {
                 float floatValue2 = ((Float) o3.f21361a.get(0)).floatValue();
                 matrix.preScale(floatValue2, o3.f21361a.size() > 1 ? ((Float) o3.f21361a.get(1)).floatValue() : floatValue2);
             }
         } else if (str.startsWith("skewX(")) {
-            C6821a o4 = m18877o(str.substring(6));
+            C6821a o4 = m18878o(str.substring(6));
             if (o4.f21361a.size() > 0) {
                 matrix.preSkew((float) Math.tan(((Float) o4.f21361a.get(0)).floatValue()), 0.0f);
             }
         } else if (str.startsWith("skewY(")) {
-            C6821a o5 = m18877o(str.substring(6));
+            C6821a o5 = m18878o(str.substring(6));
             if (o5.f21361a.size() > 0) {
                 matrix.preSkew(0.0f, (float) Math.tan(((Float) o5.f21361a.get(0)).floatValue()));
             }
         } else if (str.startsWith("rotate(")) {
-            C6821a o6 = m18877o(str.substring(7));
+            C6821a o6 = m18878o(str.substring(7));
             if (o6.f21361a.size() > 0) {
                 float floatValue3 = ((Float) o6.f21361a.get(0)).floatValue();
                 if (o6.f21361a.size() > 2) {
@@ -715,7 +715,7 @@ public class C6820b {
         return matrix;
     }
 
-    public static Bitmap m18874r(int i, boolean z, String str) {
+    public static Bitmap m18875r(int i, boolean z, String str) {
         try {
             C6823c cVar = new C6823c(i, z);
             XMLReader xMLReader = SAXParserFactory.newInstance().newSAXParser().getXMLReader();

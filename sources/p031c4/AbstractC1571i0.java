@@ -42,9 +42,9 @@ public interface AbstractC1571i0 {
     }
 
     public interface AbstractC1574c {
-        SparseArray<AbstractC1571i0> mo36402a();
+        SparseArray<AbstractC1571i0> mo36405a();
 
-        AbstractC1571i0 mo36401b(int i, C1573b bVar);
+        AbstractC1571i0 mo36404b(int i, C1573b bVar);
     }
 
     public static final class C1575d {
@@ -58,7 +58,7 @@ public interface AbstractC1571i0 {
             this(Integer.MIN_VALUE, i, i2);
         }
 
-        public void m36406a() {
+        public void m36409a() {
             int i = this.f5658d;
             int i2 = i == Integer.MIN_VALUE ? this.f5656b : i + this.f5657c;
             this.f5658d = i2;
@@ -69,17 +69,17 @@ public interface AbstractC1571i0 {
             this.f5659e = sb2.toString();
         }
 
-        public String m36405b() {
-            m36403d();
+        public String m36408b() {
+            m36406d();
             return this.f5659e;
         }
 
-        public int m36404c() {
-            m36403d();
+        public int m36407c() {
+            m36406d();
             return this.f5658d;
         }
 
-        public final void m36403d() {
+        public final void m36406d() {
             if (this.f5658d == Integer.MIN_VALUE) {
                 throw new IllegalStateException("generateNewId() must be called before retrieving ids.");
             }
@@ -103,9 +103,9 @@ public interface AbstractC1571i0 {
         }
     }
 
-    void mo36318a(C1205i0 i0Var, AbstractC8960h hVar, C1575d dVar);
+    void mo36321a(C1205i0 i0Var, AbstractC8960h hVar, C1575d dVar);
 
-    void mo36317b(C1189b0 b0Var, int i);
+    void mo36320b(C1189b0 b0Var, int i);
 
-    void mo36316c();
+    void mo36319c();
 }

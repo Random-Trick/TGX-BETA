@@ -9,7 +9,7 @@ public final class C5200l implements C5174b0.AbstractC5176b {
     @Override
     public final Object apply(Object obj) {
         Long a1;
-        a1 = C5174b0.m23699a1((Cursor) obj);
+        a1 = C5174b0.m23700a1((Cursor) obj);
         return a1;
     }
 }

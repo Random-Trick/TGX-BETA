@@ -49,11 +49,11 @@ public final class C5897a {
         this.f18794d = new C5898b(this, new int[]{1});
     }
 
-    public static int m21890a(int i, int i2) {
+    public static int m21891a(int i, int i2) {
         return i ^ i2;
     }
 
-    public C5898b m21889b(int i, int i2) {
+    public C5898b m21890b(int i, int i2) {
         if (i < 0) {
             throw new IllegalArgumentException();
         } else if (i2 == 0) {
@@ -65,41 +65,41 @@ public final class C5897a {
         }
     }
 
-    public int m21888c(int i) {
+    public int m21889c(int i) {
         return this.f18791a[i];
     }
 
-    public int m21887d() {
+    public int m21888d() {
         return this.f18797g;
     }
 
-    public C5898b m21886e() {
+    public C5898b m21887e() {
         return this.f18794d;
     }
 
-    public int m21885f() {
+    public int m21886f() {
         return this.f18795e;
     }
 
-    public C5898b m21884g() {
+    public C5898b m21885g() {
         return this.f18793c;
     }
 
-    public int m21883h(int i) {
+    public int m21884h(int i) {
         if (i != 0) {
             return this.f18791a[(this.f18795e - this.f18792b[i]) - 1];
         }
         throw new ArithmeticException();
     }
 
-    public int m21882i(int i) {
+    public int m21883i(int i) {
         if (i != 0) {
             return this.f18792b[i];
         }
         throw new IllegalArgumentException();
     }
 
-    public int m21881j(int i, int i2) {
+    public int m21882j(int i, int i2) {
         if (i == 0 || i2 == 0) {
             return 0;
         }

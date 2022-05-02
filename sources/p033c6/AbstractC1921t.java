@@ -7,12 +7,12 @@ public abstract class AbstractC1921t<E> extends AbstractC1951v1<E> {
     public int f6915b;
 
     public AbstractC1921t(int i, int i2) {
-        C1893r.m35934b(i2, i, "index");
+        C1893r.m35937b(i2, i, "index");
         this.f6914a = i;
         this.f6915b = i2;
     }
 
-    public abstract E mo35906a(int i);
+    public abstract E mo35909a(int i);
 
     @Override
     public final boolean hasNext() {
@@ -29,7 +29,7 @@ public abstract class AbstractC1921t<E> extends AbstractC1951v1<E> {
         if (hasNext()) {
             int i = this.f6915b;
             this.f6915b = i + 1;
-            return mo35906a(i);
+            return mo35909a(i);
         }
         throw new NoSuchElementException();
     }
@@ -44,7 +44,7 @@ public abstract class AbstractC1921t<E> extends AbstractC1951v1<E> {
         if (hasPrevious()) {
             int i = this.f6915b - 1;
             this.f6915b = i;
-            return mo35906a(i);
+            return mo35909a(i);
         }
         throw new NoSuchElementException();
     }

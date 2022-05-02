@@ -7,10 +7,10 @@ import p293v.C9814i;
 import p293v.C9816k;
 
 public class C9926d {
-    public final String f32305a;
+    public final String f32308a;
 
     public C9926d(String str) {
-        this.f32305a = str;
+        this.f32308a = str;
     }
 
     public List<Size> m6474a(int i) {
@@ -18,6 +18,6 @@ public class C9926d {
         if (kVar == null) {
             return new ArrayList();
         }
-        return kVar.m6815a(this.f32305a, i);
+        return kVar.m6815a(this.f32308a, i);
     }
 }

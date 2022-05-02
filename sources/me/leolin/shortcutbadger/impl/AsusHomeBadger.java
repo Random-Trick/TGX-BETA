@@ -21,6 +21,6 @@ public class AsusHomeBadger implements AbstractC0243a {
         intent.putExtra("badge_count_package_name", componentName.getPackageName());
         intent.putExtra("badge_count_class_name", componentName.getClassName());
         intent.putExtra("badge_vip_count", 0);
-        C1304a.m37783b(context, intent);
+        C1304a.m37786b(context, intent);
     }
 }

@@ -12,16 +12,16 @@ class C5792x0 extends AbstractC5802z0 implements AbstractC5754p2 {
         this.f18506d = bVar;
     }
 
-    public void mo22128k(Long l) {
-        AbstractC5572D0.m22416l(this, l);
+    public void mo22129k(Long l) {
+        AbstractC5572D0.m22417l(this, l);
     }
 
     @Override
-    public void mo22133e(long j) {
+    public void mo22134e(long j) {
         boolean z;
         boolean z2;
         if (!this.f18522a) {
-            boolean E = this.f18506d.m22498E(j);
+            boolean E = this.f18506d.m22499E(j);
             z = this.f18505c.f18094a;
             if (E == z) {
                 this.f18522a = true;

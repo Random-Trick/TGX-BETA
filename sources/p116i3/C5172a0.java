@@ -10,7 +10,7 @@ public final class C5172a0 implements C5174b0.AbstractC5176b {
     @Override
     public final Object apply(Object obj) {
         List d1;
-        d1 = C5174b0.m23696d1((Cursor) obj);
+        d1 = C5174b0.m23697d1((Cursor) obj);
         return d1;
     }
 }

@@ -11,8 +11,8 @@ import be.C1399s0;
 import me.vkryl.android.widget.FrameLayoutFix;
 
 public class C6994p2 extends FrameLayoutFix {
-    public int f22182M;
-    public int f22183N;
+    public int f22185M;
+    public int f22186N;
 
     public class C6995a extends ViewOutlineProvider {
         public C6995a() {
@@ -21,7 +21,7 @@ public class C6994p2 extends FrameLayoutFix {
         @Override
         @TargetApi(21)
         public void getOutline(View view, Outline outline) {
-            outline.setRect(0, C6994p2.this.f22182M, view.getMeasuredWidth(), view.getMeasuredHeight() - C6994p2.this.f22183N);
+            outline.setRect(0, C6994p2.this.f22185M, view.getMeasuredWidth(), view.getMeasuredHeight() - C6994p2.this.f22186N);
         }
     }
 
@@ -40,9 +40,9 @@ public class C6994p2 extends FrameLayoutFix {
     }
 
     public void m18135F1(int i, int i2) {
-        if (this.f22182M != i || this.f22183N != i2) {
-            this.f22182M = i;
-            this.f22183N = i2;
+        if (this.f22185M != i || this.f22186N != i2) {
+            this.f22185M = i;
+            this.f22186N = i2;
             m18136E1();
         }
     }
@@ -53,10 +53,10 @@ public class C6994p2 extends FrameLayoutFix {
             super.dispatchDraw(canvas);
             return;
         }
-        int V = C1399s0.m37199V(canvas);
-        canvas.clipRect(0, this.f22182M, getMeasuredWidth(), getMeasuredHeight() - this.f22183N);
+        int V = C1399s0.m37202V(canvas);
+        canvas.clipRect(0, this.f22185M, getMeasuredWidth(), getMeasuredHeight() - this.f22186N);
         super.dispatchDraw(canvas);
-        C1399s0.m37201T(canvas, V);
+        C1399s0.m37204T(canvas, V);
     }
 
     @Override

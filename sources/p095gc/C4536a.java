@@ -9,13 +9,13 @@ public final class C4536a {
 
     static {
         C4552h.C4553a aVar = C4552h.f14973N;
-        f14952a = aVar.m27399c("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/").m27411e();
-        f14953b = aVar.m27399c("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_").m27411e();
+        f14952a = aVar.m27401c("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/").m27413e();
+        f14953b = aVar.m27401c("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_").m27413e();
     }
 
-    public static final String m27481a(byte[] bArr, byte[] bArr2) {
-        C8298k.m12934e(bArr, "$this$encodeBase64");
-        C8298k.m12934e(bArr2, "map");
+    public static final String m27483a(byte[] bArr, byte[] bArr2) {
+        C8298k.m12933e(bArr, "$this$encodeBase64");
+        C8298k.m12933e(bArr2, "map");
         byte[] bArr3 = new byte[((bArr.length + 2) / 3) * 4];
         int length = bArr.length - (bArr.length % 3);
         int i = 0;
@@ -57,13 +57,13 @@ public final class C4536a {
             bArr3[i12] = bArr2[(b7 & 15) << 2];
             bArr3[i12 + 1] = (byte) 61;
         }
-        return C4538b.m27478b(bArr3);
+        return C4538b.m27480b(bArr3);
     }
 
-    public static String m27480b(byte[] bArr, byte[] bArr2, int i, Object obj) {
+    public static String m27482b(byte[] bArr, byte[] bArr2, int i, Object obj) {
         if ((i & 1) != 0) {
             bArr2 = f14952a;
         }
-        return m27481a(bArr, bArr2);
+        return m27483a(bArr, bArr2);
     }
 }

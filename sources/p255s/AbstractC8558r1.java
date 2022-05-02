@@ -7,19 +7,19 @@ import p336y.C10200b2;
 import p336y.C10245j0;
 
 public interface AbstractC8558r1 {
-    void mo12164a();
+    void mo12163a();
 
-    void mo12163b(C10200b2 b2Var);
+    void mo12162b(C10200b2 b2Var);
 
-    AbstractFutureC1291a<Void> mo12162c(boolean z);
+    AbstractFutureC1291a<Void> mo12161c(boolean z);
 
     void close();
 
-    List<C10245j0> mo12161d();
+    List<C10245j0> mo12160d();
 
-    void mo12160e(List<C10245j0> list);
+    void mo12159e(List<C10245j0> list);
 
-    C10200b2 mo12159f();
+    C10200b2 mo12158f();
 
-    AbstractFutureC1291a<Void> mo12158g(C10200b2 b2Var, CameraDevice cameraDevice, C8576u2 u2Var);
+    AbstractFutureC1291a<Void> mo12157g(C10200b2 b2Var, CameraDevice cameraDevice, C8576u2 u2Var);
 }

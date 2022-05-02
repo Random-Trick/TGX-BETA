@@ -23,7 +23,7 @@ public class MenuC6021e extends AbstractC6013b implements Menu {
 
     @Override
     public MenuItem add(CharSequence charSequence) {
-        return m21569c(this.f19167d.add(charSequence));
+        return m21570c(this.f19167d.add(charSequence));
     }
 
     @Override
@@ -33,7 +33,7 @@ public class MenuC6021e extends AbstractC6013b implements Menu {
         if (menuItemArr2 != null) {
             int length = menuItemArr2.length;
             for (int i5 = 0; i5 < length; i5++) {
-                menuItemArr[i5] = m21569c(menuItemArr2[i5]);
+                menuItemArr[i5] = m21570c(menuItemArr2[i5]);
             }
         }
         return addIntentOptions;
@@ -41,12 +41,12 @@ public class MenuC6021e extends AbstractC6013b implements Menu {
 
     @Override
     public SubMenu addSubMenu(CharSequence charSequence) {
-        return m21568d(this.f19167d.addSubMenu(charSequence));
+        return m21569d(this.f19167d.addSubMenu(charSequence));
     }
 
     @Override
     public void clear() {
-        m21567e();
+        m21568e();
         this.f19167d.clear();
     }
 
@@ -57,12 +57,12 @@ public class MenuC6021e extends AbstractC6013b implements Menu {
 
     @Override
     public MenuItem findItem(int i) {
-        return m21569c(this.f19167d.findItem(i));
+        return m21570c(this.f19167d.findItem(i));
     }
 
     @Override
     public MenuItem getItem(int i) {
-        return m21569c(this.f19167d.getItem(i));
+        return m21570c(this.f19167d.getItem(i));
     }
 
     @Override
@@ -87,13 +87,13 @@ public class MenuC6021e extends AbstractC6013b implements Menu {
 
     @Override
     public void removeGroup(int i) {
-        m21566f(i);
+        m21567f(i);
         this.f19167d.removeGroup(i);
     }
 
     @Override
     public void removeItem(int i) {
-        m21565g(i);
+        m21566g(i);
         this.f19167d.removeItem(i);
     }
 
@@ -124,31 +124,31 @@ public class MenuC6021e extends AbstractC6013b implements Menu {
 
     @Override
     public MenuItem add(int i) {
-        return m21569c(this.f19167d.add(i));
+        return m21570c(this.f19167d.add(i));
     }
 
     @Override
     public SubMenu addSubMenu(int i) {
-        return m21568d(this.f19167d.addSubMenu(i));
+        return m21569d(this.f19167d.addSubMenu(i));
     }
 
     @Override
     public MenuItem add(int i, int i2, int i3, CharSequence charSequence) {
-        return m21569c(this.f19167d.add(i, i2, i3, charSequence));
+        return m21570c(this.f19167d.add(i, i2, i3, charSequence));
     }
 
     @Override
     public SubMenu addSubMenu(int i, int i2, int i3, CharSequence charSequence) {
-        return m21568d(this.f19167d.addSubMenu(i, i2, i3, charSequence));
+        return m21569d(this.f19167d.addSubMenu(i, i2, i3, charSequence));
     }
 
     @Override
     public MenuItem add(int i, int i2, int i3, int i4) {
-        return m21569c(this.f19167d.add(i, i2, i3, i4));
+        return m21570c(this.f19167d.add(i, i2, i3, i4));
     }
 
     @Override
     public SubMenu addSubMenu(int i, int i2, int i3, int i4) {
-        return m21568d(this.f19167d.addSubMenu(i, i2, i3, i4));
+        return m21569d(this.f19167d.addSubMenu(i, i2, i3, i4));
     }
 }

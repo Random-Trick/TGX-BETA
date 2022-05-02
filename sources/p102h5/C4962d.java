@@ -49,21 +49,21 @@ public class C4962d {
         this.f16887d = scheduledThreadPoolExecutor;
     }
 
-    public static final Bundle m24375b(AbstractC6775l lVar) {
-        if (lVar.mo19065p()) {
-            return (Bundle) lVar.mo19069l();
+    public static final Bundle m24376b(AbstractC6775l lVar) {
+        if (lVar.mo19066p()) {
+            return (Bundle) lVar.mo19070l();
         }
         if (Log.isLoggable("Rpc", 3)) {
-            String valueOf = String.valueOf(lVar.mo19070k());
+            String valueOf = String.valueOf(lVar.mo19071k());
             StringBuilder sb2 = new StringBuilder(valueOf.length() + 22);
             sb2.append("Error making request: ");
             sb2.append(valueOf);
             Log.d("Rpc", sb2.toString());
         }
-        throw new IOException("SERVICE_NOT_AVAILABLE", lVar.mo19070k());
+        throw new IOException("SERVICE_NOT_AVAILABLE", lVar.mo19071k());
     }
 
-    public static synchronized String m24374c() {
+    public static synchronized String m24375c() {
         String num;
         synchronized (C4962d.class) {
             int i = f16881h;
@@ -73,14 +73,14 @@ public class C4962d {
         return num;
     }
 
-    public static final AbstractC6775l m24373d(Bundle bundle) {
-        if (m24365l(bundle)) {
-            return C6781o.m19049f(null);
+    public static final AbstractC6775l m24374d(Bundle bundle) {
+        if (m24366l(bundle)) {
+            return C6781o.m19050f(null);
         }
-        return C6781o.m19049f(bundle);
+        return C6781o.m19050f(bundle);
     }
 
-    public static synchronized void m24371f(Context context, Intent intent) {
+    public static synchronized void m24372f(Context context, Intent intent) {
         synchronized (C4962d.class) {
             if (f16882i == null) {
                 Intent intent2 = new Intent();
@@ -91,28 +91,28 @@ public class C4962d {
         }
     }
 
-    public static final void m24366k(C6777m mVar) {
-        if (mVar.m19083d(new IOException("TIMEOUT"))) {
+    public static final void m24367k(C6777m mVar) {
+        if (mVar.m19084d(new IOException("TIMEOUT"))) {
             Log.w("Rpc", "No response");
         }
     }
 
-    public static boolean m24365l(Bundle bundle) {
+    public static boolean m24366l(Bundle bundle) {
         return bundle != null && bundle.containsKey("google.messenger");
     }
 
-    public AbstractC6775l<Bundle> m24376a(final Bundle bundle) {
+    public AbstractC6775l<Bundle> m24377a(final Bundle bundle) {
         boolean z = true;
-        if (this.f16886c.m24342c() >= 12000000) {
-            return C4969i.m24359c(this.f16885b).m24355g(1, bundle).mo19073h(f16883j, C4984x.f16928a);
+        if (this.f16886c.m24343c() >= 12000000) {
+            return C4969i.m24360c(this.f16885b).m24356g(1, bundle).mo19074h(f16883j, C4984x.f16928a);
         }
-        if (this.f16886c.m24344a() == 0) {
+        if (this.f16886c.m24345a() == 0) {
             z = false;
         }
         if (!z) {
-            return C6781o.m19050e(new IOException("MISSING_INSTANCEID_SERVICE"));
+            return C6781o.m19051e(new IOException("MISSING_INSTANCEID_SERVICE"));
         }
-        return m24364m(bundle).mo19071j(f16883j, new AbstractC6757c(this, bundle) {
+        return m24365m(bundle).mo19072j(f16883j, new AbstractC6757c(this, bundle) {
             public final C4962d f16930a;
             public final Bundle f16931b;
 
@@ -122,17 +122,17 @@ public class C4962d {
             }
 
             @Override
-            public final Object mo10598a(AbstractC6775l lVar) {
-                return this.f16930a.m24372e(this.f16931b, lVar);
+            public final Object mo10597a(AbstractC6775l lVar) {
+                return this.f16930a.m24373e(this.f16931b, lVar);
             }
         });
     }
 
-    public final AbstractC6775l m24372e(Bundle bundle, AbstractC6775l lVar) {
-        return (lVar.mo19065p() && m24365l((Bundle) lVar.mo19069l())) ? m24364m(bundle).mo19064q(f16883j, C4956a0.f16874a) : lVar;
+    public final AbstractC6775l m24373e(Bundle bundle, AbstractC6775l lVar) {
+        return (lVar.mo19066p() && m24366l((Bundle) lVar.mo19070l())) ? m24365m(bundle).mo19065q(f16883j, C4956a0.f16874a) : lVar;
     }
 
-    public final void m24370g(Message message) {
+    public final void m24371g(Message message) {
         if (message != null) {
             Object obj = message.obj;
             if (obj instanceof Intent) {
@@ -178,12 +178,12 @@ public class C4962d {
                             if (str2.startsWith(":")) {
                                 str2 = str2.substring(1);
                             }
-                            m24368i(str, intent2.putExtra("error", str2).getExtras());
+                            m24369i(str, intent2.putExtra("error", str2).getExtras());
                             return;
                         }
                         synchronized (this.f16884a) {
                             for (int i = 0; i < this.f16884a.size(); i++) {
-                                m24368i(this.f16884a.m21479i(i), intent2.getExtras());
+                                m24369i(this.f16884a.m21480i(i), intent2.getExtras());
                             }
                         }
                         return;
@@ -195,7 +195,7 @@ public class C4962d {
                         if (group != null) {
                             Bundle extras = intent2.getExtras();
                             extras.putString("registration_id", group2);
-                            m24368i(group, extras);
+                            m24369i(group, extras);
                             return;
                         }
                         return;
@@ -217,7 +217,7 @@ public class C4962d {
         Log.w("Rpc", "Dropping invalid message");
     }
 
-    public final void m24368i(String str, Bundle bundle) {
+    public final void m24369i(String str, Bundle bundle) {
         synchronized (this.f16884a) {
             C6777m<Bundle> remove = this.f16884a.remove(str);
             if (remove == null) {
@@ -225,32 +225,32 @@ public class C4962d {
                 Log.w("Rpc", valueOf.length() != 0 ? "Missing callback for ".concat(valueOf) : new String("Missing callback for "));
                 return;
             }
-            remove.m19084c(bundle);
+            remove.m19085c(bundle);
         }
     }
 
-    public final void m24367j(String str, ScheduledFuture scheduledFuture, AbstractC6775l lVar) {
+    public final void m24368j(String str, ScheduledFuture scheduledFuture, AbstractC6775l lVar) {
         synchronized (this.f16884a) {
             this.f16884a.remove(str);
         }
         scheduledFuture.cancel(false);
     }
 
-    public final AbstractC6775l<Bundle> m24364m(Bundle bundle) {
-        final String c = m24374c();
+    public final AbstractC6775l<Bundle> m24365m(Bundle bundle) {
+        final String c = m24375c();
         final C6777m<Bundle> mVar = new C6777m<>();
         synchronized (this.f16884a) {
             this.f16884a.put(c, mVar);
         }
         Intent intent = new Intent();
         intent.setPackage("com.google.android.gms");
-        if (this.f16886c.m24344a() == 2) {
+        if (this.f16886c.m24345a() == 2) {
             intent.setAction("com.google.iid.TOKEN_REQUEST");
         } else {
             intent.setAction("com.google.android.c2dm.intent.REGISTER");
         }
         intent.putExtras(bundle);
-        m24371f(this.f16885b, intent);
+        m24372f(this.f16885b, intent);
         StringBuilder sb2 = new StringBuilder(String.valueOf(c).length() + 5);
         sb2.append("|ID|");
         sb2.append(c);
@@ -272,7 +272,7 @@ public class C4962d {
                 if (messenger != null) {
                     messenger.send(obtain);
                 } else {
-                    this.f16890g.m24362b(obtain);
+                    this.f16890g.m24363b(obtain);
                 }
             } catch (RemoteException unused) {
                 if (Log.isLoggable("Rpc", 3)) {
@@ -288,10 +288,10 @@ public class C4962d {
 
                 @Override
                 public final void run() {
-                    C4962d.m24366k(this.f16929a);
+                    C4962d.m24367k(this.f16929a);
                 }
             }, 30L, TimeUnit.SECONDS);
-            mVar.m19086a().mo19079b(f16883j, new AbstractC6763f(this, c, schedule) {
+            mVar.m19087a().mo19080b(f16883j, new AbstractC6763f(this, c, schedule) {
                 public final C4962d f16876a;
                 public final String f16877b;
                 public final ScheduledFuture f16878c;
@@ -303,13 +303,13 @@ public class C4962d {
                 }
 
                 @Override
-                public final void mo10608a(AbstractC6775l lVar) {
-                    this.f16876a.m24367j(this.f16877b, this.f16878c, lVar);
+                public final void mo10607a(AbstractC6775l lVar) {
+                    this.f16876a.m24368j(this.f16877b, this.f16878c, lVar);
                 }
             });
-            return mVar.m19086a();
+            return mVar.m19087a();
         }
-        if (this.f16886c.m24344a() == 2) {
+        if (this.f16886c.m24345a() == 2) {
             this.f16885b.sendBroadcast(intent);
         } else {
             this.f16885b.startService(intent);
@@ -323,10 +323,10 @@ public class C4962d {
 
             @Override
             public final void run() {
-                C4962d.m24366k(this.f16929a);
+                C4962d.m24367k(this.f16929a);
             }
         }, 30L, TimeUnit.SECONDS);
-        mVar.m19086a().mo19079b(f16883j, new AbstractC6763f(this, c, schedule2) {
+        mVar.m19087a().mo19080b(f16883j, new AbstractC6763f(this, c, schedule2) {
             public final C4962d f16876a;
             public final String f16877b;
             public final ScheduledFuture f16878c;
@@ -338,10 +338,10 @@ public class C4962d {
             }
 
             @Override
-            public final void mo10608a(AbstractC6775l lVar) {
-                this.f16876a.m24367j(this.f16877b, this.f16878c, lVar);
+            public final void mo10607a(AbstractC6775l lVar) {
+                this.f16876a.m24368j(this.f16877b, this.f16878c, lVar);
             }
         });
-        return mVar.m19086a();
+        return mVar.m19087a();
     }
 }

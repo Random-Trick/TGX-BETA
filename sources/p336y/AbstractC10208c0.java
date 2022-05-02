@@ -16,14 +16,14 @@ public interface AbstractC10208c0 extends AbstractC0598k, AbstractC0688y2.Abstra
         RELEASING(true),
         RELEASED(false);
         
-        public final boolean f32972a;
+        public final boolean f32975a;
 
         EnumC10209a(boolean z) {
-            this.f32972a = z;
+            this.f32975a = z;
         }
 
         public boolean m5726a() {
-            return this.f32972a;
+            return this.f32975a;
         }
     }
 

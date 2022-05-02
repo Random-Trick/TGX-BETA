@@ -16,7 +16,7 @@ public class C4058m0 extends TextureView {
         super(context);
     }
 
-    public void m29110a(int i, int i2) {
+    public void m29112a(int i, int i2) {
         if (this.f13684b != i || this.f13685c != i2) {
             this.f13684b = i;
             this.f13685c = i2;
@@ -35,7 +35,7 @@ public class C4058m0 extends TextureView {
         int defaultSize = TextureView.getDefaultSize(getSuggestedMinimumWidth(), i);
         int defaultSize2 = TextureView.getDefaultSize(getSuggestedMinimumHeight(), i2);
         this.f13681N = true;
-        this.f13683a.mo28490x0(defaultSize, defaultSize2);
+        this.f13683a.mo28492x0(defaultSize, defaultSize2);
         this.f13681N = false;
         if (this.f13682O || (i3 = this.f13684b) <= 0 || (i4 = this.f13685c) <= 0) {
             setMeasuredDimension(defaultSize, defaultSize2);
@@ -57,7 +57,7 @@ public class C4058m0 extends TextureView {
             this.f13680M = i6;
             setMeasuredDimension(i6, i5);
         }
-        this.f13683a.m29090W(getMeasuredWidth(), getMeasuredHeight());
+        this.f13683a.m29092W(getMeasuredWidth(), getMeasuredHeight());
         Log.m14721i((int) Log.TAG_CAMERA, "CameraTextureView: onMeasure %d %d", Integer.valueOf(getMeasuredWidth()), Integer.valueOf(getMeasuredHeight()));
     }
 

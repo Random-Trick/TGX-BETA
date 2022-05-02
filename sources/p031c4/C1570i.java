@@ -45,81 +45,81 @@ public final class C1570i implements AbstractC1581m {
         this(z, null);
     }
 
-    public static boolean m36417m(int i) {
+    public static boolean m36420m(int i) {
         return (i & 65526) == 65520;
     }
 
     @EnsuresNonNull({"output", "currentOutput", "id3Output"})
-    public final void m36424a() {
-        C1186a.m38185e(this.f5632f);
-        C1216l0.m37968j(this.f5646t);
-        C1216l0.m37968j(this.f5633g);
+    public final void m36427a() {
+        C1186a.m38188e(this.f5632f);
+        C1216l0.m37971j(this.f5646t);
+        C1216l0.m37971j(this.f5633g);
     }
 
     @Override
-    public void mo36333b(C1189b0 b0Var) {
-        m36424a();
-        while (b0Var.m38142a() > 0) {
+    public void mo36336b(C1189b0 b0Var) {
+        m36427a();
+        while (b0Var.m38145a() > 0) {
             int i = this.f5634h;
             if (i == 0) {
-                m36420j(b0Var);
+                m36423j(b0Var);
             } else if (i == 1) {
-                m36423g(b0Var);
+                m36426g(b0Var);
             } else if (i != 2) {
                 if (i == 3) {
-                    if (m36421i(b0Var, this.f5628b.f4469a, this.f5637k ? 7 : 5)) {
-                        m36416n();
+                    if (m36424i(b0Var, this.f5628b.f4469a, this.f5637k ? 7 : 5)) {
+                        m36419n();
                     }
                 } else if (i == 4) {
-                    m36414p(b0Var);
+                    m36417p(b0Var);
                 } else {
                     throw new IllegalStateException();
                 }
-            } else if (m36421i(b0Var, this.f5629c.m38139d(), 10)) {
-                m36415o();
+            } else if (m36424i(b0Var, this.f5629c.m38142d(), 10)) {
+                m36418o();
             }
         }
     }
 
     @Override
-    public void mo36332c() {
+    public void mo36335c() {
         this.f5645s = -9223372036854775807L;
-        m36413q();
+        m36416q();
     }
 
     @Override
-    public void mo36331d() {
+    public void mo36334d() {
     }
 
     @Override
-    public void mo36330e(AbstractC8960h hVar, AbstractC1571i0.C1575d dVar) {
-        dVar.m36406a();
-        this.f5631e = dVar.m36405b();
-        AbstractC8974t r = hVar.mo6039r(dVar.m36404c(), 1);
+    public void mo36333e(AbstractC8960h hVar, AbstractC1571i0.C1575d dVar) {
+        dVar.m36409a();
+        this.f5631e = dVar.m36408b();
+        AbstractC8974t r = hVar.mo6039r(dVar.m36407c(), 1);
         this.f5632f = r;
         this.f5646t = r;
         if (this.f5627a) {
-            dVar.m36406a();
-            AbstractC8974t r2 = hVar.mo6039r(dVar.m36404c(), 5);
+            dVar.m36409a();
+            AbstractC8974t r2 = hVar.mo6039r(dVar.m36407c(), 5);
             this.f5633g = r2;
-            r2.mo10798a(new C6600g1.C6602b().m19875S(dVar.m36405b()).m19858e0("application/id3").m19889E());
+            r2.mo10797a(new C6600g1.C6602b().m19876S(dVar.m36408b()).m19859e0("application/id3").m19890E());
             return;
         }
         this.f5633g = new C8957e();
     }
 
     @Override
-    public void mo36329f(long j, int i) {
+    public void mo36332f(long j, int i) {
         if (j != -9223372036854775807L) {
             this.f5645s = j;
         }
     }
 
-    public final void m36423g(C1189b0 b0Var) {
-        if (b0Var.m38142a() != 0) {
-            this.f5628b.f4469a[0] = b0Var.m38139d()[b0Var.m38138e()];
-            this.f5628b.m38165p(2);
-            int h = this.f5628b.m38173h(4);
+    public final void m36426g(C1189b0 b0Var) {
+        if (b0Var.m38145a() != 0) {
+            this.f5628b.f4469a[0] = b0Var.m38142d()[b0Var.m38141e()];
+            this.f5628b.m38168p(2);
+            int h = this.f5628b.m38176h(4);
             int i = this.f5640n;
             if (i == -1 || h == i) {
                 if (!this.f5638l) {
@@ -127,44 +127,44 @@ public final class C1570i implements AbstractC1581m {
                     this.f5639m = this.f5641o;
                     this.f5640n = h;
                 }
-                m36410t();
+                m36413t();
                 return;
             }
-            m36413q();
+            m36416q();
         }
     }
 
-    public final boolean m36422h(C1189b0 b0Var, int i) {
-        b0Var.m38144P(i + 1);
-        if (!m36407w(b0Var, this.f5628b.f4469a, 1)) {
+    public final boolean m36425h(C1189b0 b0Var, int i) {
+        b0Var.m38147P(i + 1);
+        if (!m36410w(b0Var, this.f5628b.f4469a, 1)) {
             return false;
         }
-        this.f5628b.m38165p(4);
-        int h = this.f5628b.m38173h(1);
+        this.f5628b.m38168p(4);
+        int h = this.f5628b.m38176h(1);
         int i2 = this.f5639m;
         if (i2 != -1 && h != i2) {
             return false;
         }
         if (this.f5640n != -1) {
-            if (!m36407w(b0Var, this.f5628b.f4469a, 1)) {
+            if (!m36410w(b0Var, this.f5628b.f4469a, 1)) {
                 return true;
             }
-            this.f5628b.m38165p(2);
-            if (this.f5628b.m38173h(4) != this.f5640n) {
+            this.f5628b.m38168p(2);
+            if (this.f5628b.m38176h(4) != this.f5640n) {
                 return false;
             }
-            b0Var.m38144P(i + 2);
+            b0Var.m38147P(i + 2);
         }
-        if (!m36407w(b0Var, this.f5628b.f4469a, 4)) {
+        if (!m36410w(b0Var, this.f5628b.f4469a, 4)) {
             return true;
         }
-        this.f5628b.m38165p(14);
-        int h2 = this.f5628b.m38173h(13);
+        this.f5628b.m38168p(14);
+        int h2 = this.f5628b.m38176h(13);
         if (h2 < 7) {
             return false;
         }
-        byte[] d = b0Var.m38139d();
-        int f = b0Var.m38137f();
+        byte[] d = b0Var.m38142d();
+        int f = b0Var.m38140f();
         int i3 = i + h2;
         if (i3 >= f) {
             return true;
@@ -174,7 +174,7 @@ public final class C1570i implements AbstractC1581m {
             if (i4 == f) {
                 return true;
             }
-            return m36418l((byte) -1, d[i4]) && ((d[i4] & 8) >> 3) == h;
+            return m36421l((byte) -1, d[i4]) && ((d[i4] & 8) >> 3) == h;
         } else if (d[i3] != 73) {
             return false;
         } else {
@@ -190,22 +190,22 @@ public final class C1570i implements AbstractC1581m {
         }
     }
 
-    public final boolean m36421i(C1189b0 b0Var, byte[] bArr, int i) {
-        int min = Math.min(b0Var.m38142a(), i - this.f5635i);
-        b0Var.m38133j(bArr, this.f5635i, min);
+    public final boolean m36424i(C1189b0 b0Var, byte[] bArr, int i) {
+        int min = Math.min(b0Var.m38145a(), i - this.f5635i);
+        b0Var.m38136j(bArr, this.f5635i, min);
         int i2 = this.f5635i + min;
         this.f5635i = i2;
         return i2 == i;
     }
 
-    public final void m36420j(C1189b0 b0Var) {
-        byte[] d = b0Var.m38139d();
-        int e = b0Var.m38138e();
-        int f = b0Var.m38137f();
+    public final void m36423j(C1189b0 b0Var) {
+        byte[] d = b0Var.m38142d();
+        int e = b0Var.m38141e();
+        int f = b0Var.m38140f();
         while (e < f) {
             int i = e + 1;
             int i2 = d[e] & 255;
-            if (this.f5636j != 512 || !m36418l((byte) -1, (byte) i2) || (!this.f5638l && !m36422h(b0Var, i - 2))) {
+            if (this.f5636j != 512 || !m36421l((byte) -1, (byte) i2) || (!this.f5638l && !m36425h(b0Var, i - 2))) {
                 int i3 = this.f5636j;
                 int i4 = i2 | i3;
                 if (i4 == 329) {
@@ -215,8 +215,8 @@ public final class C1570i implements AbstractC1581m {
                 } else if (i4 == 836) {
                     this.f5636j = Log.TAG_CAMERA;
                 } else if (i4 == 1075) {
-                    m36409u();
-                    b0Var.m38144P(i);
+                    m36412u();
+                    b0Var.m38147P(i);
                     return;
                 } else if (i3 != 256) {
                     this.f5636j = Log.TAG_CRASH;
@@ -231,109 +231,109 @@ public final class C1570i implements AbstractC1581m {
                 }
                 this.f5637k = z;
                 if (!this.f5638l) {
-                    m36412r();
+                    m36415r();
                 } else {
-                    m36410t();
+                    m36413t();
                 }
-                b0Var.m38144P(i);
+                b0Var.m38147P(i);
                 return;
             }
         }
-        b0Var.m38144P(e);
+        b0Var.m38147P(e);
     }
 
-    public long m36419k() {
+    public long m36422k() {
         return this.f5643q;
     }
 
-    public final boolean m36418l(byte b, byte b2) {
-        return m36417m(((b & 255) << 8) | (b2 & 255));
+    public final boolean m36421l(byte b, byte b2) {
+        return m36420m(((b & 255) << 8) | (b2 & 255));
     }
 
     @RequiresNonNull({"output"})
-    public final void m36416n() {
-        this.f5628b.m38165p(0);
+    public final void m36419n() {
+        this.f5628b.m38168p(0);
         if (!this.f5642p) {
-            int h = this.f5628b.m38173h(2) + 1;
+            int h = this.f5628b.m38176h(2) + 1;
             if (h != 2) {
                 StringBuilder sb2 = new StringBuilder(61);
                 sb2.append("Detected audio object type: ");
                 sb2.append(h);
                 sb2.append(", but assuming AAC LC.");
-                C1230s.m37881i("AdtsReader", sb2.toString());
+                C1230s.m37884i("AdtsReader", sb2.toString());
                 h = 2;
             }
-            this.f5628b.m38163r(5);
-            byte[] a = C7576a.m15653a(h, this.f5640n, this.f5628b.m38173h(3));
+            this.f5628b.m38166r(5);
+            byte[] a = C7576a.m15653a(h, this.f5640n, this.f5628b.m38176h(3));
             C7576a.C7578b e = C7576a.m15649e(a);
-            C6600g1 E = new C6600g1.C6602b().m19875S(this.f5631e).m19858e0("audio/mp4a-latm").m19885I(e.f24200c).m19886H(e.f24199b).m19856f0(e.f24198a).m19874T(Collections.singletonList(a)).m19872V(this.f5630d).m19889E();
+            C6600g1 E = new C6600g1.C6602b().m19876S(this.f5631e).m19859e0("audio/mp4a-latm").m19886I(e.f24203c).m19887H(e.f24202b).m19857f0(e.f24201a).m19875T(Collections.singletonList(a)).m19873V(this.f5630d).m19890E();
             this.f5643q = 1024000000 / E.f20592i0;
-            this.f5632f.mo10798a(E);
+            this.f5632f.mo10797a(E);
             this.f5642p = true;
         } else {
-            this.f5628b.m38163r(10);
+            this.f5628b.m38166r(10);
         }
-        this.f5628b.m38163r(4);
-        int h2 = (this.f5628b.m38173h(13) - 2) - 5;
+        this.f5628b.m38166r(4);
+        int h2 = (this.f5628b.m38176h(13) - 2) - 5;
         if (this.f5637k) {
             h2 -= 2;
         }
-        m36408v(this.f5632f, this.f5643q, 0, h2);
+        m36411v(this.f5632f, this.f5643q, 0, h2);
     }
 
     @RequiresNonNull({"id3Output"})
-    public final void m36415o() {
-        this.f5633g.mo10796c(this.f5629c, 10);
-        this.f5629c.m38144P(6);
-        m36408v(this.f5633g, 0L, 10, this.f5629c.m38157C() + 10);
+    public final void m36418o() {
+        this.f5633g.mo10795c(this.f5629c, 10);
+        this.f5629c.m38147P(6);
+        m36411v(this.f5633g, 0L, 10, this.f5629c.m38160C() + 10);
     }
 
     @RequiresNonNull({"currentOutput"})
-    public final void m36414p(C1189b0 b0Var) {
-        int min = Math.min(b0Var.m38142a(), this.f5644r - this.f5635i);
-        this.f5646t.mo10796c(b0Var, min);
+    public final void m36417p(C1189b0 b0Var) {
+        int min = Math.min(b0Var.m38145a(), this.f5644r - this.f5635i);
+        this.f5646t.mo10795c(b0Var, min);
         int i = this.f5635i + min;
         this.f5635i = i;
         int i2 = this.f5644r;
         if (i == i2) {
             long j = this.f5645s;
             if (j != -9223372036854775807L) {
-                this.f5646t.mo10794e(j, 1, i2, 0, null);
+                this.f5646t.mo10793e(j, 1, i2, 0, null);
                 this.f5645s += this.f5647u;
             }
-            m36411s();
+            m36414s();
         }
     }
 
-    public final void m36413q() {
+    public final void m36416q() {
         this.f5638l = false;
-        m36411s();
+        m36414s();
     }
 
-    public final void m36412r() {
+    public final void m36415r() {
         this.f5634h = 1;
         this.f5635i = 0;
     }
 
-    public final void m36411s() {
+    public final void m36414s() {
         this.f5634h = 0;
         this.f5635i = 0;
         this.f5636j = Log.TAG_CRASH;
     }
 
-    public final void m36410t() {
+    public final void m36413t() {
         this.f5634h = 3;
         this.f5635i = 0;
     }
 
-    public final void m36409u() {
+    public final void m36412u() {
         this.f5634h = 2;
         this.f5635i = f5626v.length;
         this.f5644r = 0;
-        this.f5629c.m38144P(0);
+        this.f5629c.m38147P(0);
     }
 
-    public final void m36408v(AbstractC8974t tVar, long j, int i, int i2) {
+    public final void m36411v(AbstractC8974t tVar, long j, int i, int i2) {
         this.f5634h = 4;
         this.f5635i = i;
         this.f5646t = tVar;
@@ -341,18 +341,18 @@ public final class C1570i implements AbstractC1581m {
         this.f5644r = i2;
     }
 
-    public final boolean m36407w(C1189b0 b0Var, byte[] bArr, int i) {
-        if (b0Var.m38142a() < i) {
+    public final boolean m36410w(C1189b0 b0Var, byte[] bArr, int i) {
+        if (b0Var.m38145a() < i) {
             return false;
         }
-        b0Var.m38133j(bArr, 0, i);
+        b0Var.m38136j(bArr, 0, i);
         return true;
     }
 
     public C1570i(boolean z, String str) {
         this.f5628b = new C1187a0(new byte[7]);
         this.f5629c = new C1189b0(Arrays.copyOf(f5626v, 10));
-        m36411s();
+        m36414s();
         this.f5639m = -1;
         this.f5640n = -1;
         this.f5643q = -9223372036854775807L;

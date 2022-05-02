@@ -23,33 +23,33 @@ public final class C5746o implements AbstractC5542x, BiConsumer, AbstractC5541w,
     }
 
     @Override
-    public boolean mo22210n(Object obj) {
-        return ((C5549m) obj).m22463c();
+    public boolean mo22211n(Object obj) {
+        return ((C5549m) obj).m22464c();
     }
 
     @Override
-    public void mo22179p(Object obj, Object obj2) {
+    public void mo22180p(Object obj, Object obj2) {
         double[] dArr = (double[]) obj;
         double[] dArr2 = (double[]) obj2;
         int i = AbstractC5581F.f18136t;
-        AbstractC5736m.m22215b(dArr, dArr2[0]);
-        AbstractC5736m.m22215b(dArr, dArr2[1]);
+        AbstractC5736m.m22216b(dArr, dArr2[0]);
+        AbstractC5736m.m22216b(dArr, dArr2[1]);
         dArr[2] = dArr[2] + dArr2[2];
         dArr[3] = dArr[3] + dArr2[3];
     }
 
     @Override
-    public Object mo22172u(Object obj, Object obj2) {
+    public Object mo22173u(Object obj, Object obj2) {
         return new C5678a1((AbstractC5632P0) obj, (AbstractC5632P0) obj2);
     }
 
     @Override
-    public Object mo22178w(int i) {
+    public Object mo22179w(int i) {
         return Integer.valueOf(i);
     }
 
     @Override
-    public Object mo22209x(long j) {
-        return AbstractC5572D0.m22427c0(j);
+    public Object mo22210x(long j) {
+        return AbstractC5572D0.m22428c0(j);
     }
 }

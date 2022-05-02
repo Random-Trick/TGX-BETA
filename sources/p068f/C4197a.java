@@ -31,7 +31,7 @@ public final class C4197a {
         }
     }
 
-    public static void m28487a(Context context, int i, ColorStateList colorStateList) {
+    public static void m28489a(Context context, int i, ColorStateList colorStateList) {
         synchronized (f14192c) {
             WeakHashMap<Context, SparseArray<C4198a>> weakHashMap = f14191b;
             SparseArray<C4198a> sparseArray = weakHashMap.get(context);
@@ -43,7 +43,7 @@ public final class C4197a {
         }
     }
 
-    public static ColorStateList m28486b(Context context, int i) {
+    public static ColorStateList m28488b(Context context, int i) {
         C4198a aVar;
         synchronized (f14192c) {
             SparseArray<C4198a> sparseArray = f14191b.get(context);
@@ -57,27 +57,27 @@ public final class C4197a {
         }
     }
 
-    public static ColorStateList m28485c(Context context, int i) {
+    public static ColorStateList m28487c(Context context, int i) {
         if (Build.VERSION.SDK_INT >= 23) {
             return context.getColorStateList(i);
         }
-        ColorStateList b = m28486b(context, i);
+        ColorStateList b = m28488b(context, i);
         if (b != null) {
             return b;
         }
-        ColorStateList f = m28482f(context, i);
+        ColorStateList f = m28484f(context, i);
         if (f == null) {
-            return C8117a.m13439e(context, i);
+            return C8117a.m13438e(context, i);
         }
-        m28487a(context, i, f);
+        m28489a(context, i, f);
         return f;
     }
 
-    public static Drawable m28484d(Context context, int i) {
-        return C0487w.m41062h().m41060j(context, i);
+    public static Drawable m28486d(Context context, int i) {
+        return C0487w.m41065h().m41063j(context, i);
     }
 
-    public static TypedValue m28483e() {
+    public static TypedValue m28485e() {
         ThreadLocal<TypedValue> threadLocal = f14190a;
         TypedValue typedValue = threadLocal.get();
         if (typedValue != null) {
@@ -88,22 +88,22 @@ public final class C4197a {
         return typedValue2;
     }
 
-    public static ColorStateList m28482f(Context context, int i) {
-        if (m28481g(context, i)) {
+    public static ColorStateList m28484f(Context context, int i) {
+        if (m28483g(context, i)) {
             return null;
         }
         Resources resources = context.getResources();
         try {
-            return C8604c.m11968a(resources, resources.getXml(i), context.getTheme());
+            return C8604c.m11967a(resources, resources.getXml(i), context.getTheme());
         } catch (Exception e) {
             Log.e("AppCompatResources", "Failed to inflate ColorStateList, leaving it to the framework", e);
             return null;
         }
     }
 
-    public static boolean m28481g(Context context, int i) {
+    public static boolean m28483g(Context context, int i) {
         Resources resources = context.getResources();
-        TypedValue e = m28483e();
+        TypedValue e = m28485e();
         resources.getValue(i, e, true);
         int i2 = e.type;
         return i2 >= 28 && i2 <= 31;

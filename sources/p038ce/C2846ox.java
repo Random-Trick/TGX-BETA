@@ -8,6 +8,6 @@ public final class C2846ox implements AbstractC5918j {
 
     @Override
     public final void mo1330a(Object obj) {
-        View$OnClickListenerC2265cy.m35166lh((TdApi.Error) obj);
+        View$OnClickListenerC2265cy.m35169lh((TdApi.Error) obj);
     }
 }

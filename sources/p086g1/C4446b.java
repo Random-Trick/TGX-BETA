@@ -7,13 +7,13 @@ public class C4446b extends Filter {
     public AbstractC4447a f14711a;
 
     public interface AbstractC4447a {
-        void mo27646a(Cursor cursor);
+        void mo27648a(Cursor cursor);
 
-        Cursor mo27645b();
+        Cursor mo27647b();
 
-        CharSequence mo27644c(Cursor cursor);
+        CharSequence mo27646c(Cursor cursor);
 
-        Cursor mo27643d(CharSequence charSequence);
+        Cursor mo27645d(CharSequence charSequence);
     }
 
     public C4446b(AbstractC4447a aVar) {
@@ -22,12 +22,12 @@ public class C4446b extends Filter {
 
     @Override
     public CharSequence convertResultToString(Object obj) {
-        return this.f14711a.mo27644c((Cursor) obj);
+        return this.f14711a.mo27646c((Cursor) obj);
     }
 
     @Override
     public Filter.FilterResults performFiltering(CharSequence charSequence) {
-        Cursor d = this.f14711a.mo27643d(charSequence);
+        Cursor d = this.f14711a.mo27645d(charSequence);
         Filter.FilterResults filterResults = new Filter.FilterResults();
         if (d != null) {
             filterResults.count = d.getCount();
@@ -41,10 +41,10 @@ public class C4446b extends Filter {
 
     @Override
     public void publishResults(CharSequence charSequence, Filter.FilterResults filterResults) {
-        Cursor b = this.f14711a.mo27645b();
+        Cursor b = this.f14711a.mo27647b();
         Object obj = filterResults.values;
         if (obj != null && obj != b) {
-            this.f14711a.mo27646a((Cursor) obj);
+            this.f14711a.mo27648a((Cursor) obj);
         }
     }
 }

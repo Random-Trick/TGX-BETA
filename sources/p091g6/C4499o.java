@@ -11,7 +11,7 @@ import p176m5.C6750b;
 public final class C4499o implements Parcelable.Creator<StreetViewPanoramaOptions> {
     @Override
     public final StreetViewPanoramaOptions createFromParcel(Parcel parcel) {
-        int x = C6750b.m19127x(parcel);
+        int x = C6750b.m19128x(parcel);
         StreetViewPanoramaCamera streetViewPanoramaCamera = null;
         String str = null;
         LatLng latLng = null;
@@ -23,44 +23,44 @@ public final class C4499o implements Parcelable.Creator<StreetViewPanoramaOption
         byte b4 = 0;
         byte b5 = 0;
         while (parcel.dataPosition() < x) {
-            int q = C6750b.m19134q(parcel);
-            switch (C6750b.m19140k(q)) {
+            int q = C6750b.m19135q(parcel);
+            switch (C6750b.m19141k(q)) {
                 case 2:
-                    streetViewPanoramaCamera = (StreetViewPanoramaCamera) C6750b.m19147d(parcel, q, StreetViewPanoramaCamera.CREATOR);
+                    streetViewPanoramaCamera = (StreetViewPanoramaCamera) C6750b.m19148d(parcel, q, StreetViewPanoramaCamera.CREATOR);
                     break;
                 case 3:
-                    str = C6750b.m19146e(parcel, q);
+                    str = C6750b.m19147e(parcel, q);
                     break;
                 case 4:
-                    latLng = (LatLng) C6750b.m19147d(parcel, q, LatLng.CREATOR);
+                    latLng = (LatLng) C6750b.m19148d(parcel, q, LatLng.CREATOR);
                     break;
                 case 5:
-                    num = C6750b.m19131t(parcel, q);
+                    num = C6750b.m19132t(parcel, q);
                     break;
                 case 6:
-                    b = C6750b.m19138m(parcel, q);
+                    b = C6750b.m19139m(parcel, q);
                     break;
                 case 7:
-                    b2 = C6750b.m19138m(parcel, q);
+                    b2 = C6750b.m19139m(parcel, q);
                     break;
                 case 8:
-                    b3 = C6750b.m19138m(parcel, q);
+                    b3 = C6750b.m19139m(parcel, q);
                     break;
                 case 9:
-                    b4 = C6750b.m19138m(parcel, q);
+                    b4 = C6750b.m19139m(parcel, q);
                     break;
                 case 10:
-                    b5 = C6750b.m19138m(parcel, q);
+                    b5 = C6750b.m19139m(parcel, q);
                     break;
                 case 11:
-                    gVar = (C5246g) C6750b.m19147d(parcel, q, C5246g.CREATOR);
+                    gVar = (C5246g) C6750b.m19148d(parcel, q, C5246g.CREATOR);
                     break;
                 default:
-                    C6750b.m19128w(parcel, q);
+                    C6750b.m19129w(parcel, q);
                     break;
             }
         }
-        C6750b.m19141j(parcel, x);
+        C6750b.m19142j(parcel, x);
         return new StreetViewPanoramaOptions(streetViewPanoramaCamera, str, latLng, num, b, b2, b3, b4, b5, gVar);
     }
 

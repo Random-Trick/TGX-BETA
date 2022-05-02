@@ -31,14 +31,14 @@ import p364zd.C11524j;
 import p364zd.C11537v;
 
 public class C9319v1 extends LinearLayout implements AbstractC3937c {
-    public final C6973n0 f30146a;
-    public Runnable f30147b;
+    public final C6973n0 f30149a;
+    public Runnable f30150b;
 
     public class C9320a extends Drawable {
-        public final AbstractC11531p f30148a;
+        public final AbstractC11531p f30151a;
 
         public C9320a(AbstractC11531p pVar) {
-            this.f30148a = pVar;
+            this.f30151a = pVar;
         }
 
         @Override
@@ -52,8 +52,8 @@ public class C9319v1 extends LinearLayout implements AbstractC3937c {
                 float f = i;
                 float measuredWidth = C9319v1.this.getMeasuredWidth();
                 float measuredHeight = C9319v1.this.getMeasuredHeight();
-                AbstractC11531p pVar = this.f30148a;
-                canvas.drawRect(0.0f, f, measuredWidth, measuredHeight, C1410y.m37039g(pVar != null ? pVar.mo92e(R.id.theme_color_filling) : C11524j.m228N(R.id.theme_color_filling)));
+                AbstractC11531p pVar = this.f30151a;
+                canvas.drawRect(0.0f, f, measuredWidth, measuredHeight, C1410y.m37042g(pVar != null ? pVar.mo92e(R.id.theme_color_filling) : C11524j.m228N(R.id.theme_color_filling)));
             }
         }
 
@@ -75,12 +75,12 @@ public class C9319v1 extends LinearLayout implements AbstractC3937c {
         super(context);
         setOrientation(1);
         C6973n0 n0Var = new C6973n0(context, v4Var.mo4348c());
-        this.f30146a = n0Var;
-        n0Var.setPadding(C1357a0.m37541i(16.0f), C1357a0.m37541i(14.0f), C1357a0.m37541i(16.0f), C1357a0.m37541i(6.0f));
+        this.f30149a = n0Var;
+        n0Var.setPadding(C1357a0.m37544i(16.0f), C1357a0.m37544i(14.0f), C1357a0.m37544i(16.0f), C1357a0.m37544i(6.0f));
         n0Var.setTextColorId(R.id.theme_color_textLight);
         n0Var.setLayoutParams(new LinearLayout.LayoutParams(-1, -2));
         addView(n0Var);
-        C2065g.m35718d(this, new C9320a(pVar));
+        C2065g.m35721d(this, new C9320a(pVar));
         if (pVar != null) {
             n0Var.setForcedTheme(pVar);
             return;
@@ -93,7 +93,7 @@ public class C9319v1 extends LinearLayout implements AbstractC3937c {
         Drawable g;
         C6847b2 b2Var = new C6847b2(context);
         b2Var.setId(i);
-        b2Var.setTypeface(C1389o.m37258k());
+        b2Var.setTypeface(C1389o.m37261k());
         b2Var.setTextSize(1, 16.0f);
         int b = m9484b(i2);
         if (pVar != null) {
@@ -107,26 +107,26 @@ public class C9319v1 extends LinearLayout implements AbstractC3937c {
         b2Var.setOnClickListener(onClickListener);
         b2Var.setSingleLine(true);
         b2Var.setEllipsize(TextUtils.TruncateAt.END);
-        b2Var.setGravity(C4403w.m27984G2() ? 21 : 19);
-        b2Var.setPadding(C1357a0.m37541i(17.0f), C1357a0.m37541i(1.0f), C1357a0.m37541i(17.0f), 0);
-        b2Var.setCompoundDrawablePadding(C1357a0.m37541i(18.0f));
-        if (!(i3 == 0 || (g = C1362c.m37482g(context.getResources(), i3)) == null)) {
+        b2Var.setGravity(C4403w.m27986G2() ? 21 : 19);
+        b2Var.setPadding(C1357a0.m37544i(17.0f), C1357a0.m37544i(1.0f), C1357a0.m37544i(17.0f), 0);
+        b2Var.setCompoundDrawablePadding(C1357a0.m37544i(18.0f));
+        if (!(i3 == 0 || (g = C1362c.m37485g(context.getResources(), i3)) == null)) {
             if (i2 == 1) {
                 b = R.id.theme_color_icon;
             }
-            g.setColorFilter(C1410y.m37001z(pVar != null ? pVar.mo92e(b) : C11524j.m228N(b)));
+            g.setColorFilter(C1410y.m37004z(pVar != null ? pVar.mo92e(b) : C11524j.m228N(b)));
             if (vVar != null) {
                 vVar.m75e(g, b);
             }
-            C1362c.m37477l(i3);
-            if (C4403w.m27984G2()) {
+            C1362c.m37480l(i3);
+            if (C4403w.m27986G2()) {
                 b2Var.setCompoundDrawablesWithIntrinsicBounds((Drawable) null, (Drawable) null, g, (Drawable) null);
             } else {
                 b2Var.setCompoundDrawablesWithIntrinsicBounds(g, (Drawable) null, (Drawable) null, (Drawable) null);
             }
         }
-        C1399s0.m37193a0(b2Var);
-        b2Var.setText(C5078d.m23986z().m24024I(charSequence));
+        C1399s0.m37196a0(b2Var);
+        b2Var.setText(C5078d.m23987z().m24025I(charSequence));
         return b2Var;
     }
 
@@ -145,37 +145,37 @@ public class C9319v1 extends LinearLayout implements AbstractC3937c {
 
     @Override
     public void mo8061R(View view, Runnable runnable) {
-        this.f30147b = runnable;
+        this.f30150b = runnable;
     }
 
     public void m9483c(String str, AbstractC5411l0[] l0VarArr, boolean z) {
-        if (!C5070i.m24061i(str)) {
-            this.f30146a.setVisibility(0);
+        if (!C5070i.m24062i(str)) {
+            this.f30149a.setVisibility(0);
             if (z) {
-                this.f30146a.m18248v(str, l0VarArr, false);
-                this.f30146a.setTextSize(19.0f);
-                this.f30146a.setTextColorId(R.id.theme_color_text);
+                this.f30149a.m18248v(str, l0VarArr, false);
+                this.f30149a.setTextSize(19.0f);
+                this.f30149a.setTextColorId(R.id.theme_color_text);
                 return;
             }
-            this.f30146a.m18246y(str, l0VarArr, false);
-            this.f30146a.setTextSize(15.0f);
-            this.f30146a.setTextColorId(R.id.theme_color_textLight);
+            this.f30149a.m18246y(str, l0VarArr, false);
+            this.f30149a.setTextSize(15.0f);
+            this.f30149a.setTextColorId(R.id.theme_color_textLight);
             return;
         }
-        this.f30146a.setVisibility(8);
+        this.f30149a.setVisibility(8);
     }
 
     public void m9482d(AbstractC9323v4<?> v4Var, C10930q6 q6Var, CharSequence charSequence, boolean z) {
-        if (!C5070i.m24061i(charSequence)) {
-            m9483c(charSequence.toString(), C4779t2.m25571Y(v4Var, q6Var, charSequence, false, null), z);
+        if (!C5070i.m24062i(charSequence)) {
+            m9483c(charSequence.toString(), C4779t2.m25572Y(v4Var, q6Var, charSequence, false, null), z);
         } else {
-            this.f30146a.setVisibility(8);
+            this.f30149a.setVisibility(8);
         }
     }
 
     public int getTextHeight() {
-        if (this.f30146a.getVisibility() == 0) {
-            return this.f30146a.m18254n(C1379j0.m37307r(getContext()).m14567L0(this.f30146a));
+        if (this.f30149a.getVisibility() == 0) {
+            return this.f30149a.m18254n(C1379j0.m37310r(getContext()).m14567L0(this.f30149a));
         }
         return 0;
     }
@@ -183,10 +183,10 @@ public class C9319v1 extends LinearLayout implements AbstractC3937c {
     @Override
     public void onLayout(boolean z, int i, int i2, int i3, int i4) {
         super.onLayout(z, i, i2, i3, i4);
-        Runnable runnable = this.f30147b;
+        Runnable runnable = this.f30150b;
         if (runnable != null) {
             runnable.run();
-            this.f30147b = null;
+            this.f30150b = null;
         }
     }
 

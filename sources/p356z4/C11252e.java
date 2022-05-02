@@ -3,7 +3,7 @@ package p356z4;
 import java.util.Comparator;
 
 public final class C11252e implements Comparator {
-    public static final C11252e f36040a = new C11252e();
+    public static final C11252e f36043a = new C11252e();
 
     @Override
     public final int compare(Object obj, Object obj2) {

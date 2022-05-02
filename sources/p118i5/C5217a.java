@@ -31,7 +31,7 @@ public final class C5217a extends AbstractC6749a {
         this.f17354M = str;
     }
 
-    public static String m23610g(int i) {
+    public static String m23611g(int i) {
         if (i == 99) {
             return "UNFINISHED";
         }
@@ -101,21 +101,21 @@ public final class C5217a extends AbstractC6749a {
         }
     }
 
-    public int m23615b() {
+    public int m23616b() {
         return this.f17356b;
     }
 
     @RecentlyNullable
-    public String m23614c() {
+    public String m23615c() {
         return this.f17354M;
     }
 
     @RecentlyNullable
-    public PendingIntent m23613d() {
+    public PendingIntent m23614d() {
         return this.f17357c;
     }
 
-    public boolean m23612e() {
+    public boolean m23613e() {
         return (this.f17356b == 0 || this.f17357c == null) ? false : true;
     }
 
@@ -127,34 +127,34 @@ public final class C5217a extends AbstractC6749a {
             return false;
         }
         C5217a aVar = (C5217a) obj;
-        return this.f17356b == aVar.f17356b && C6374q.m20524a(this.f17357c, aVar.f17357c) && C6374q.m20524a(this.f17354M, aVar.f17354M);
+        return this.f17356b == aVar.f17356b && C6374q.m20525a(this.f17357c, aVar.f17357c) && C6374q.m20525a(this.f17354M, aVar.f17354M);
     }
 
-    public boolean m23611f() {
+    public boolean m23612f() {
         return this.f17356b == 0;
     }
 
     public int hashCode() {
-        return C6374q.m20523b(Integer.valueOf(this.f17356b), this.f17357c, this.f17354M);
+        return C6374q.m20524b(Integer.valueOf(this.f17356b), this.f17357c, this.f17354M);
     }
 
     @RecentlyNonNull
     public String toString() {
-        C6374q.C6375a c = C6374q.m20522c(this);
-        c.m20521a("statusCode", m23610g(this.f17356b));
-        c.m20521a("resolution", this.f17357c);
-        c.m20521a("message", this.f17354M);
+        C6374q.C6375a c = C6374q.m20523c(this);
+        c.m20522a("statusCode", m23611g(this.f17356b));
+        c.m20522a("resolution", this.f17357c);
+        c.m20522a("message", this.f17354M);
         return c.toString();
     }
 
     @Override
     public void writeToParcel(@RecentlyNonNull Parcel parcel, int i) {
-        int a = C6752c.m19124a(parcel);
-        C6752c.m19114k(parcel, 1, this.f17355a);
-        C6752c.m19114k(parcel, 2, m23615b());
-        C6752c.m19110o(parcel, 3, m23613d(), i, false);
-        C6752c.m19109p(parcel, 4, m23614c(), false);
-        C6752c.m19123b(parcel, a);
+        int a = C6752c.m19125a(parcel);
+        C6752c.m19115k(parcel, 1, this.f17355a);
+        C6752c.m19115k(parcel, 2, m23616b());
+        C6752c.m19111o(parcel, 3, m23614d(), i, false);
+        C6752c.m19110p(parcel, 4, m23615c(), false);
+        C6752c.m19124b(parcel, a);
     }
 
     public C5217a(int i, PendingIntent pendingIntent) {

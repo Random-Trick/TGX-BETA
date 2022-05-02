@@ -7,7 +7,7 @@ public class C3574d {
         this.f12215a = obj;
     }
 
-    public Object m29965a() {
+    public Object m29967a() {
         return this.f12215a;
     }
 }

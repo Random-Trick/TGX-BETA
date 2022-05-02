@@ -16,9 +16,9 @@ public abstract class AbstractC4981u<T> {
         this.f16924d = bundle;
     }
 
-    public abstract void mo24341a(Bundle bundle);
+    public abstract void mo24342a(Bundle bundle);
 
-    public final void m24346b(C4980t tVar) {
+    public final void m24347b(C4980t tVar) {
         if (Log.isLoggable("MessengerIpcClient", 3)) {
             String valueOf = String.valueOf(this);
             String valueOf2 = String.valueOf(tVar);
@@ -29,10 +29,10 @@ public abstract class AbstractC4981u<T> {
             sb2.append(valueOf2);
             Log.d("MessengerIpcClient", sb2.toString());
         }
-        this.f16922b.m19085b(tVar);
+        this.f16922b.m19086b(tVar);
     }
 
-    public final void m24345c(T t) {
+    public final void m24346c(T t) {
         if (Log.isLoggable("MessengerIpcClient", 3)) {
             String valueOf = String.valueOf(this);
             String valueOf2 = String.valueOf(t);
@@ -43,15 +43,15 @@ public abstract class AbstractC4981u<T> {
             sb2.append(valueOf2);
             Log.d("MessengerIpcClient", sb2.toString());
         }
-        this.f16922b.m19084c(t);
+        this.f16922b.m19085c(t);
     }
 
-    public abstract boolean mo24340d();
+    public abstract boolean mo24341d();
 
     public String toString() {
         int i = this.f16923c;
         int i2 = this.f16921a;
-        boolean d = mo24340d();
+        boolean d = mo24341d();
         StringBuilder sb2 = new StringBuilder(55);
         sb2.append("Request { what=");
         sb2.append(i);

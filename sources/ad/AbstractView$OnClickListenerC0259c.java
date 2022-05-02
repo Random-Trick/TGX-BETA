@@ -32,25 +32,25 @@ public abstract class AbstractView$OnClickListenerC0259c extends FrameLayoutFix 
         C11537v vVar = new C11537v();
         this.f785P = vVar;
         this.f784O = v4Var;
-        m41992D1(R.id.btn_share, R.string.Share, R.drawable.baseline_forward_24);
-        m41992D1(R.id.btn_openLink, R.string.OpenInExternalApp, R.drawable.baseline_open_in_browser_24);
+        m41995D1(R.id.btn_share, R.string.Share, R.drawable.baseline_forward_24);
+        m41995D1(R.id.btn_openLink, R.string.OpenInExternalApp, R.drawable.baseline_open_in_browser_24);
         setLayoutParams(FrameLayoutFix.m18007t1(-1, -2, 80));
-        C1379j0.m37307r(context).m14546R(vVar);
+        C1379j0.m37310r(context).m14545R(vVar);
     }
 
-    public static boolean m41991I1(AbstractC9323v4 v4Var, C4658i iVar, View view, int i) {
+    public static boolean m41994I1(AbstractC9323v4 v4Var, C4658i iVar, View view, int i) {
         if (i == R.id.btn_openLink) {
-            m41989O1(v4Var, iVar, false);
+            m41992O1(v4Var, iVar, false);
             return true;
         } else if (i != R.id.btn_useInAppBrowser) {
             return true;
         } else {
-            C1379j0.m37336c0(iVar.f15549b);
+            C1379j0.m37339c0(iVar.f15549b);
             return true;
         }
     }
 
-    private void m41990N1() {
+    private void m41993N1() {
         C6924j2 j2Var = new C6924j2(getContext());
         this.f786Q = j2Var;
         j2Var.setIgnoreBottom(true);
@@ -62,43 +62,43 @@ public abstract class AbstractView$OnClickListenerC0259c extends FrameLayoutFix 
         this.f786Q.m18430T2(this, getPreviewHeight());
     }
 
-    public static boolean m41989O1(final td.AbstractC9323v4<?> r13, final gd.C4658i r14, boolean r15) {
-        throw new UnsupportedOperationException("Method not decompiled: ad.AbstractView$OnClickListenerC0259c.m41989O1(td.v4, gd.i, boolean):boolean");
+    public static boolean m41992O1(final td.AbstractC9323v4<?> r13, final gd.C4658i r14, boolean r15) {
+        throw new UnsupportedOperationException("Method not decompiled: ad.AbstractView$OnClickListenerC0259c.m41992O1(td.v4, gd.i, boolean):boolean");
     }
 
-    public static boolean m41988Q1(AbstractC9323v4<?> v4Var, String str, boolean z) {
-        return m41989O1(v4Var, C4658i.m26602j(str), z);
+    public static boolean m41991Q1(AbstractC9323v4<?> v4Var, String str, boolean z) {
+        return m41992O1(v4Var, C4658i.m26603j(str), z);
     }
 
-    public static boolean m41987S1(AbstractC9323v4<?> v4Var, TdApi.WebPage webPage, boolean z) {
-        return m41989O1(v4Var, C4658i.m26603i(webPage), z);
+    public static boolean m41990S1(AbstractC9323v4<?> v4Var, TdApi.WebPage webPage, boolean z) {
+        return m41992O1(v4Var, C4658i.m26604i(webPage), z);
     }
 
-    public void m41992D1(int i, int i2, int i3) {
-        FrameLayout.LayoutParams t1 = FrameLayoutFix.m18007t1(-1, C1357a0.m37541i(54.0f), 80);
+    public void m41995D1(int i, int i2, int i3) {
+        FrameLayout.LayoutParams t1 = FrameLayoutFix.m18007t1(-1, C1357a0.m37544i(54.0f), 80);
         int i4 = this.f783N;
         t1.bottomMargin = i4;
         this.f783N = i4 + t1.height;
-        TextView a = C9319v1.m9485a(getContext(), i, C4403w.m27869i1(i2), 1, i3, this, this.f785P, null);
+        TextView a = C9319v1.m9485a(getContext(), i, C4403w.m27871i1(i2), 1, i3, this, this.f785P, null);
         C10189d.m5797g(a);
         this.f785P.m74f(a);
         a.setLayoutParams(t1);
         addView(a);
     }
 
-    public abstract boolean mo41915E1();
+    public abstract boolean mo41918E1();
 
-    public abstract int mo41913F1(int i);
+    public abstract int mo41916F1(int i);
 
-    public abstract void mo41912G1(boolean z);
+    public abstract void mo41915G1(boolean z);
 
-    public abstract void mo41910J1();
+    public abstract void mo41913J1();
 
-    public abstract boolean mo41909L1(String str);
+    public abstract boolean mo41912L1(String str);
 
-    public boolean mo41908M1(C4658i iVar) {
+    public boolean mo41911M1(C4658i iVar) {
         this.f782M = iVar;
-        return mo41915E1();
+        return mo41918E1();
     }
 
     public abstract int getPreviewHeight();
@@ -113,16 +113,16 @@ public abstract class AbstractView$OnClickListenerC0259c extends FrameLayoutFix 
         int id2 = view.getId();
         if (id2 == R.id.btn_openLink) {
             this.f786Q.m18408y2(true);
-            C1379j0.m37336c0(this.f782M.f15549b);
+            C1379j0.m37339c0(this.f782M.f15549b);
         } else if (id2 == R.id.btn_share) {
             this.f786Q.m18408y2(true);
-            C4779t2.m25490j5(this.f784O, this.f782M.f15549b);
+            C4779t2.m25491j5(this.f784O, this.f782M.f15549b);
         }
     }
 
     @Override
     public void onMeasure(int i, int i2) {
-        super.onMeasure(i, View.MeasureSpec.makeMeasureSpec(mo41913F1(View.MeasureSpec.getSize(i)), Log.TAG_TDLIB_OPTIONS));
+        super.onMeasure(i, View.MeasureSpec.makeMeasureSpec(mo41916F1(View.MeasureSpec.getSize(i)), Log.TAG_TDLIB_OPTIONS));
     }
 
     public void setFooterVisibility(int i) {
@@ -138,7 +138,7 @@ public abstract class AbstractView$OnClickListenerC0259c extends FrameLayoutFix 
 
     @Override
     public final void mo2999y4(C6924j2 j2Var) {
-        mo41910J1();
-        C1379j0.m37307r(getContext()).m14433u2(this.f785P);
+        mo41913J1();
+        C1379j0.m37310r(getContext()).m14432u2(this.f785P);
     }
 }

@@ -42,40 +42,40 @@ public final class C1702dc extends AbstractC6749a {
         this.f6228X = vbVar;
     }
 
-    public final int m36070b() {
+    public final int m36073b() {
         return this.f6229a;
     }
 
-    public final int m36069c() {
+    public final int m36072c() {
         return this.f6219O;
     }
 
-    public final String m36068d() {
+    public final String m36071d() {
         return this.f6231c;
     }
 
-    public final Point[] m36067e() {
+    public final Point[] m36070e() {
         return this.f6218N;
     }
 
     @Override
     public final void writeToParcel(Parcel parcel, int i) {
-        int a = C6752c.m19124a(parcel);
-        C6752c.m19114k(parcel, 1, this.f6229a);
-        C6752c.m19109p(parcel, 2, this.f6230b, false);
-        C6752c.m19109p(parcel, 3, this.f6231c, false);
-        C6752c.m19119f(parcel, 4, this.f6217M, false);
-        C6752c.m19106s(parcel, 5, this.f6218N, i, false);
-        C6752c.m19114k(parcel, 6, this.f6219O);
-        C6752c.m19110o(parcel, 7, this.f6220P, i, false);
-        C6752c.m19110o(parcel, 8, this.f6221Q, i, false);
-        C6752c.m19110o(parcel, 9, this.f6222R, i, false);
-        C6752c.m19110o(parcel, 10, this.f6223S, i, false);
-        C6752c.m19110o(parcel, 11, this.f6224T, i, false);
-        C6752c.m19110o(parcel, 12, this.f6225U, i, false);
-        C6752c.m19110o(parcel, 13, this.f6226V, i, false);
-        C6752c.m19110o(parcel, 14, this.f6227W, i, false);
-        C6752c.m19110o(parcel, 15, this.f6228X, i, false);
-        C6752c.m19123b(parcel, a);
+        int a = C6752c.m19125a(parcel);
+        C6752c.m19115k(parcel, 1, this.f6229a);
+        C6752c.m19110p(parcel, 2, this.f6230b, false);
+        C6752c.m19110p(parcel, 3, this.f6231c, false);
+        C6752c.m19120f(parcel, 4, this.f6217M, false);
+        C6752c.m19107s(parcel, 5, this.f6218N, i, false);
+        C6752c.m19115k(parcel, 6, this.f6219O);
+        C6752c.m19111o(parcel, 7, this.f6220P, i, false);
+        C6752c.m19111o(parcel, 8, this.f6221Q, i, false);
+        C6752c.m19111o(parcel, 9, this.f6222R, i, false);
+        C6752c.m19111o(parcel, 10, this.f6223S, i, false);
+        C6752c.m19111o(parcel, 11, this.f6224T, i, false);
+        C6752c.m19111o(parcel, 12, this.f6225U, i, false);
+        C6752c.m19111o(parcel, 13, this.f6226V, i, false);
+        C6752c.m19111o(parcel, 14, this.f6227W, i, false);
+        C6752c.m19111o(parcel, 15, this.f6228X, i, false);
+        C6752c.m19124b(parcel, a);
     }
 }

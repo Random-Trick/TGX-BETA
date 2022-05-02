@@ -19,53 +19,53 @@ class C5756q extends AbstractC5739m2 {
     }
 
     @Override
-    public void mo22132h() {
+    public void mo22133h() {
         switch (this.f18452b) {
             case 0:
                 this.f18453c = null;
-                this.f18428a.mo22132h();
+                this.f18428a.mo22133h();
                 return;
             default:
-                this.f18428a.mo22132h();
+                this.f18428a.mo22133h();
                 return;
         }
     }
 
     @Override
-    public void mo22131j(long j) {
+    public void mo22132j(long j) {
         switch (this.f18452b) {
             case 0:
                 this.f18453c = new HashSet();
-                this.f18428a.mo22131j(-1L);
+                this.f18428a.mo22132j(-1L);
                 return;
             case 1:
-                this.f18428a.mo22131j(-1L);
+                this.f18428a.mo22132j(-1L);
                 return;
             case 2:
-                this.f18428a.mo22131j(-1L);
+                this.f18428a.mo22132j(-1L);
                 return;
             default:
-                this.f18428a.mo22131j(-1L);
+                this.f18428a.mo22132j(-1L);
                 return;
         }
     }
 
     @Override
-    public void mo22128k(Object obj) {
+    public void mo22129k(Object obj) {
         AbstractC5732l0 l0Var;
         switch (this.f18452b) {
             case 0:
                 if (!((Set) this.f18453c).contains(obj)) {
                     ((Set) this.f18453c).add(obj);
-                    this.f18428a.mo22128k(obj);
+                    this.f18428a.mo22129k(obj);
                     return;
                 }
                 return;
             case 1:
-                AbstractC5777u0 u0Var = (AbstractC5777u0) ((Function) ((C5556A) this.f18454d).f18092v).mo22502a(obj);
+                AbstractC5777u0 u0Var = (AbstractC5777u0) ((Function) ((C5556A) this.f18454d).f18092v).mo22503a(obj);
                 if (u0Var != null) {
                     try {
-                        u0Var.sequential().mo22171b((AbstractC5535q) this.f18453c);
+                        u0Var.sequential().mo22172b((AbstractC5535q) this.f18453c);
                     } finally {
                         try {
                             ((AbstractC5686c) u0Var).close();
@@ -80,10 +80,10 @@ class C5756q extends AbstractC5739m2 {
                 }
                 return;
             case 2:
-                l0Var = (AbstractC5732l0) ((Function) ((C5801z) this.f18454d).f18521v).mo22502a(obj);
+                l0Var = (AbstractC5732l0) ((Function) ((C5801z) this.f18454d).f18521v).mo22503a(obj);
                 if (l0Var != null) {
                     try {
-                        l0Var.sequential().mo22221e((AbstractC5530l) this.f18453c);
+                        l0Var.sequential().mo22222e((AbstractC5530l) this.f18453c);
                     } catch (Throwable th2) {
                         throw th2;
                     }
@@ -94,10 +94,10 @@ class C5756q extends AbstractC5739m2 {
                 }
                 return;
             default:
-                l0Var = (AbstractC5591H) ((Function) ((C5791x) this.f18454d).f18504v).mo22502a(obj);
+                l0Var = (AbstractC5591H) ((Function) ((C5791x) this.f18454d).f18504v).mo22503a(obj);
                 if (l0Var != null) {
                     try {
-                        l0Var.sequential().mo22385d((AbstractC5525g) this.f18453c);
+                        l0Var.sequential().mo22386d((AbstractC5525g) this.f18453c);
                     } finally {
                         try {
                             ((AbstractC5686c) l0Var).close();

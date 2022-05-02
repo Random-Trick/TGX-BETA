@@ -29,7 +29,7 @@ public final class C1242z {
     }
 
     public interface AbstractC1245c {
-        void mo37826a(int i);
+        void mo37829a(int i);
     }
 
     public final class C1246d extends BroadcastReceiver {
@@ -38,11 +38,11 @@ public final class C1242z {
 
         @Override
         public void onReceive(Context context, Intent intent) {
-            int g = C1242z.m37832g(context);
+            int g = C1242z.m37835g(context);
             int i = C1216l0.f4526a;
             if (i >= 29 && !C1244b.f4609a && g == 5) {
                 try {
-                    TelephonyManager telephonyManager = (TelephonyManager) C1186a.m38185e((TelephonyManager) context.getSystemService("phone"));
+                    TelephonyManager telephonyManager = (TelephonyManager) C1186a.m38188e((TelephonyManager) context.getSystemService("phone"));
                     C1247e eVar = new C1247e();
                     if (i < 31) {
                         telephonyManager.listen(eVar, 1);
@@ -54,7 +54,7 @@ public final class C1242z {
                 } catch (RuntimeException unused) {
                 }
             }
-            C1242z.this.m37828k(g);
+            C1242z.this.m37831k(g);
         }
     }
 
@@ -65,13 +65,13 @@ public final class C1242z {
         @Override
         public void onDisplayInfoChanged(TelephonyDisplayInfo telephonyDisplayInfo) {
             int overrideNetworkType = telephonyDisplayInfo.getOverrideNetworkType();
-            C1242z.this.m37828k(overrideNetworkType == 3 || overrideNetworkType == 4 ? 10 : 5);
+            C1242z.this.m37831k(overrideNetworkType == 3 || overrideNetworkType == 4 ? 10 : 5);
         }
 
         @Override
         public void onServiceStateChanged(ServiceState serviceState) {
             String serviceState2 = serviceState == null ? "" : serviceState.toString();
-            C1242z.this.m37828k(serviceState2.contains("nrState=CONNECTED") || serviceState2.contains("nrState=NOT_RESTRICTED") ? 10 : 5);
+            C1242z.this.m37831k(serviceState2.contains("nrState=CONNECTED") || serviceState2.contains("nrState=NOT_RESTRICTED") ? 10 : 5);
         }
     }
 
@@ -81,7 +81,7 @@ public final class C1242z {
         context.registerReceiver(new C1246d(), intentFilter);
     }
 
-    public static synchronized C1242z m37835d(Context context) {
+    public static synchronized C1242z m37838d(Context context) {
         C1242z zVar;
         synchronized (C1242z.class) {
             if (f4604e == null) {
@@ -92,7 +92,7 @@ public final class C1242z {
         return zVar;
     }
 
-    public static int m37834e(NetworkInfo networkInfo) {
+    public static int m37837e(NetworkInfo networkInfo) {
         switch (networkInfo.getSubtype()) {
             case 1:
             case 2:
@@ -124,7 +124,7 @@ public final class C1242z {
         }
     }
 
-    public static int m37832g(Context context) {
+    public static int m37835g(Context context) {
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService("connectivity");
         int i = 0;
         if (connectivityManager == null) {
@@ -146,18 +146,18 @@ public final class C1242z {
                         return 5;
                     }
                 }
-                return m37834e(activeNetworkInfo);
+                return m37837e(activeNetworkInfo);
             }
         } catch (SecurityException unused) {
         }
         return i;
     }
 
-    public void m37831h(AbstractC1245c cVar) {
-        cVar.mo37826a(m37833f());
+    public void m37834h(AbstractC1245c cVar) {
+        cVar.mo37829a(m37836f());
     }
 
-    public int m37833f() {
+    public int m37836f() {
         int i;
         synchronized (this.f4607c) {
             i = this.f4608d;
@@ -165,18 +165,18 @@ public final class C1242z {
         return i;
     }
 
-    public void m37830i(final AbstractC1245c cVar) {
-        m37829j();
+    public void m37833i(final AbstractC1245c cVar) {
+        m37832j();
         this.f4606b.add(new WeakReference<>(cVar));
         this.f4605a.post(new Runnable() {
             @Override
             public final void run() {
-                C1242z.this.m37831h(cVar);
+                C1242z.this.m37834h(cVar);
             }
         });
     }
 
-    public final void m37829j() {
+    public final void m37832j() {
         Iterator<WeakReference<AbstractC1245c>> it = this.f4606b.iterator();
         while (it.hasNext()) {
             WeakReference<AbstractC1245c> next = it.next();
@@ -186,7 +186,7 @@ public final class C1242z {
         }
     }
 
-    public final void m37828k(int i) {
+    public final void m37831k(int i) {
         synchronized (this.f4607c) {
             if (this.f4608d != i) {
                 this.f4608d = i;
@@ -195,7 +195,7 @@ public final class C1242z {
                     WeakReference<AbstractC1245c> next = it.next();
                     AbstractC1245c cVar = next.get();
                     if (cVar != null) {
-                        cVar.mo37826a(i);
+                        cVar.mo37829a(i);
                     } else {
                         this.f4606b.remove(next);
                     }

@@ -10,13 +10,13 @@ public final class C7619i0 extends AbstractC7648y {
 
     @Override
     public AbstractC7611g.C7612a mo15304i(AbstractC7611g.C7612a aVar) {
-        int i = aVar.f24360c;
+        int i = aVar.f24363c;
         if (i != 3 && i != 2 && i != 268435456 && i != 536870912 && i != 805306368 && i != 4) {
             throw new AbstractC7611g.C7613b(aVar);
         } else if (i != 2) {
-            return new AbstractC7611g.C7612a(aVar.f24358a, aVar.f24359b, 2);
+            return new AbstractC7611g.C7612a(aVar.f24361a, aVar.f24362b, 2);
         } else {
-            return AbstractC7611g.C7612a.f24357e;
+            return AbstractC7611g.C7612a.f24360e;
         }
     }
 }

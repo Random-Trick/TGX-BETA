@@ -27,8 +27,8 @@ public class C5773t1 implements AbstractC5622N0 {
     }
 
     @Override
-    public void mo22176a(Consumer consumer) {
-        AbstractC5572D0.m22402u(this, consumer);
+    public void mo22177a(Consumer consumer) {
+        AbstractC5572D0.m22403u(this, consumer);
     }
 
     @Override
@@ -37,17 +37,17 @@ public class C5773t1 implements AbstractC5622N0 {
     }
 
     @Override
-    public AbstractC5627O0 mo22158f(int i) {
+    public AbstractC5627O0 mo22159f(int i) {
         throw new IndexOutOfBoundsException();
     }
 
     @Override
-    public void mo22157i(Object obj, int i) {
+    public void mo22158i(Object obj, int i) {
         System.arraycopy(this.f18475a, 0, (long[]) obj, i, this.f18476b);
     }
 
     @Override
-    public Object mo22156l() {
+    public Object mo22157l() {
         long[] jArr = this.f18475a;
         int length = jArr.length;
         int i = this.f18476b;
@@ -55,42 +55,42 @@ public class C5773t1 implements AbstractC5622N0 {
     }
 
     @Override
-    public void mo22155m(Object obj) {
+    public void mo22156m(Object obj) {
         AbstractC5535q qVar = (AbstractC5535q) obj;
         for (int i = 0; i < this.f18476b; i++) {
-            qVar.mo22127e(this.f18475a[i]);
+            qVar.mo22128e(this.f18475a[i]);
         }
     }
 
     @Override
-    public int mo22153o() {
+    public int mo22154o() {
         return 0;
     }
 
     @Override
-    public Object[] mo22152p(AbstractC5531m mVar) {
-        return AbstractC5572D0.m22410o(this, mVar);
+    public Object[] mo22153p(AbstractC5531m mVar) {
+        return AbstractC5572D0.m22411o(this, mVar);
     }
 
-    public void mo22154n(Long[] lArr, int i) {
-        AbstractC5572D0.m22405r(this, lArr, i);
+    public void mo22155n(Long[] lArr, int i) {
+        AbstractC5572D0.m22406r(this, lArr, i);
     }
 
     @Override
-    public AbstractC5466E mo42629spliterator() {
-        return AbstractC5482V.m22588l(this.f18475a, 0, this.f18476b, 1040);
+    public AbstractC5466E mo42632spliterator() {
+        return AbstractC5482V.m22589l(this.f18475a, 0, this.f18476b, 1040);
     }
 
     public String toString() {
         return String.format("LongArrayNode[%d][%s]", Integer.valueOf(this.f18475a.length - this.f18476b), Arrays.toString(this.f18475a));
     }
 
-    public AbstractC5622N0 mo22151q(long j, long j2, AbstractC5531m mVar) {
-        return AbstractC5572D0.m22399x(this, j, j2);
+    public AbstractC5622N0 mo22152q(long j, long j2, AbstractC5531m mVar) {
+        return AbstractC5572D0.m22400x(this, j, j2);
     }
 
     @Override
-    public AbstractC5468G mo42629spliterator() {
-        return AbstractC5482V.m22588l(this.f18475a, 0, this.f18476b, 1040);
+    public AbstractC5468G mo42632spliterator() {
+        return AbstractC5482V.m22589l(this.f18475a, 0, this.f18476b, 1040);
     }
 }

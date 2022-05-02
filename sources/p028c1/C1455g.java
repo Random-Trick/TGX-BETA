@@ -9,7 +9,7 @@ public final class C1455g {
     public static Field f5307a;
     public static boolean f5308b;
 
-    public static void m36882a(LayoutInflater layoutInflater, LayoutInflater.Factory2 factory2) {
+    public static void m36885a(LayoutInflater layoutInflater, LayoutInflater.Factory2 factory2) {
         if (!f5308b) {
             try {
                 Field declaredField = LayoutInflater.class.getDeclaredField("mFactory2");
@@ -30,14 +30,14 @@ public final class C1455g {
         }
     }
 
-    public static void m36881b(LayoutInflater layoutInflater, LayoutInflater.Factory2 factory2) {
+    public static void m36884b(LayoutInflater layoutInflater, LayoutInflater.Factory2 factory2) {
         layoutInflater.setFactory2(factory2);
         if (Build.VERSION.SDK_INT < 21) {
             LayoutInflater.Factory factory = layoutInflater.getFactory();
             if (factory instanceof LayoutInflater.Factory2) {
-                m36882a(layoutInflater, (LayoutInflater.Factory2) factory);
+                m36885a(layoutInflater, (LayoutInflater.Factory2) factory);
             } else {
-                m36882a(layoutInflater, factory2);
+                m36885a(layoutInflater, factory2);
             }
         }
     }

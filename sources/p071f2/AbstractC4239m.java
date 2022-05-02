@@ -17,7 +17,7 @@ public interface AbstractC4239m {
                 this.f14287a = th;
             }
 
-            public Throwable m28351a() {
+            public Throwable m28353a() {
                 return this.f14287a;
             }
 

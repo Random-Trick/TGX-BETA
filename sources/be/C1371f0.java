@@ -1,13 +1,13 @@
 package be;
 
 public class C1371f0 {
-    public static String m37391a(String str, boolean z) {
+    public static String m37394a(String str, boolean z) {
         int c;
         int length = str.length();
-        String b = m37390b(str, length);
-        if (!(b != null || (c = m37389c(str)) == -1 || length == c)) {
+        String b = m37393b(str, length);
+        if (!(b != null || (c = m37392c(str)) == -1 || length == c)) {
             if (length > c) {
-                b = m37390b(str, c);
+                b = m37393b(str, c);
                 if (b != null) {
                     return b + str.substring(c);
                 }
@@ -18,7 +18,7 @@ public class C1371f0 {
                 for (int i2 = 0; i2 < i; i2++) {
                     sb2.append('0');
                 }
-                String b2 = m37390b(sb2.toString(), c);
+                String b2 = m37393b(sb2.toString(), c);
                 if (b2 != null) {
                     int length2 = b2.length();
                     while (length2 > 0) {
@@ -44,7 +44,7 @@ public class C1371f0 {
         return b;
     }
 
-    public static String m37390b(String str, int i) {
+    public static String m37393b(String str, int i) {
         switch (i) {
             case 8:
                 if (!str.startsWith("290")) {
@@ -1621,7 +1621,7 @@ public class C1371f0 {
         }
     }
 
-    public static int m37389c(String str) {
+    public static int m37392c(String str) {
         if (str.startsWith("1649") || str.startsWith("1473") || str.startsWith("1664") || str.startsWith("1670") || str.startsWith("1671") || str.startsWith("1441") || str.startsWith("1345") || str.startsWith("1264") || str.startsWith("1242") || str.startsWith("1268") || str.startsWith("1284") || str.startsWith("1340") || str.startsWith("1684") || str.startsWith("1246") || str.startsWith("1721") || str.startsWith("1849") || str.startsWith("1869") || str.startsWith("1876") || str.startsWith("1939") || str.startsWith("1829") || str.startsWith("1868") || str.startsWith("1809") || str.startsWith("1758") || str.startsWith("1767") || str.startsWith("1784") || str.startsWith("1787") || str.startsWith("253") || str.startsWith("350") || str.startsWith("268") || str.startsWith("267") || str.startsWith("266") || str.startsWith("229") || str.startsWith("223") || str.startsWith("222") || str.startsWith("225") || str.startsWith("227") || str.startsWith("226") || str.startsWith("216") || str.startsWith("228") || str.startsWith("232") || str.startsWith("236") || str.startsWith("965") || str.startsWith("968") || str.startsWith("880") || str.startsWith("599") || str.startsWith("993") || str.startsWith("974") || str.startsWith("973") || str.startsWith("975") || str.startsWith("976") || str.startsWith("356") || str.startsWith("855") || str.startsWith("381") || str.startsWith("503") || str.startsWith("502") || str.startsWith("377") || str.startsWith("357") || str.startsWith("853") || str.startsWith("370") || str.startsWith("371") || str.startsWith("373") || str.startsWith("504") || str.startsWith("598") || str.startsWith("686") || str.startsWith("505") || str.startsWith("852") || str.startsWith("675") || str.startsWith("506") || str.startsWith("509") || str.startsWith("591") || str.startsWith("507") || str.startsWith("43") || str.startsWith("46") || str.startsWith("41") || str.startsWith("51") || str.startsWith("48") || str.startsWith("32") || str.startsWith("56") || str.startsWith("31") || str.startsWith("33") || str.startsWith("39") || str.startsWith("36") || str.startsWith("34") || str.startsWith("40") || str.startsWith("84") || str.startsWith("82") || str.startsWith("93") || str.startsWith("94") || str.startsWith("61") || str.startsWith("62") || str.startsWith("66") || str.startsWith("1") || str.startsWith("7")) {
             return 11;
         }

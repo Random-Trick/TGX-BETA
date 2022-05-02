@@ -10,27 +10,27 @@ import p139jb.AbstractC5911c;
 import p350yd.AbstractC10596d1;
 
 public abstract class AbstractC10596d1<T> implements AbstractC5911c, Iterable<T> {
-    public boolean f33964M;
-    public boolean f33965N;
-    public boolean f33966O;
-    public final int f33968Q;
-    public final int f33969R;
-    public boolean f33970S;
-    public final C10930q6 f33972a;
-    public final List<T> f33973b = new ArrayList();
-    public int f33974c = 0;
-    public int f33967P = -1;
-    public final List<AbstractC10598b<T>> f33971T = new ArrayList();
+    public boolean f33967M;
+    public boolean f33968N;
+    public boolean f33969O;
+    public final int f33971Q;
+    public final int f33972R;
+    public boolean f33973S;
+    public final C10930q6 f33975a;
+    public final List<T> f33976b = new ArrayList();
+    public int f33977c = 0;
+    public int f33970P = -1;
+    public final List<AbstractC10598b<T>> f33974T = new ArrayList();
 
     public class C10597a implements Client.AbstractC7865g {
-        public final int f33976a;
-        public final boolean f33977b;
-        public final Runnable f33978c;
+        public final int f33979a;
+        public final boolean f33980b;
+        public final Runnable f33981c;
 
         public C10597a(int i, boolean z, Runnable runnable) {
-            this.f33976a = i;
-            this.f33977b = z;
-            this.f33978c = runnable;
+            this.f33979a = i;
+            this.f33980b = z;
+            this.f33981c = runnable;
         }
 
         public void m4487b(C10599c cVar, boolean z, Runnable runnable) {
@@ -43,14 +43,14 @@ public abstract class AbstractC10596d1<T> implements AbstractC5911c, Iterable<T>
         @Override
         public void mo255t2(TdApi.Object object) {
             if (object.getConstructor() == -1679978726) {
-                C1379j0.m37302t0(object);
+                C1379j0.m37305t0(object);
                 return;
             }
-            final C10599c<T> U = AbstractC10596d1.this.mo1347U(object, this, this.f33976a, this.f33977b);
+            final C10599c<T> U = AbstractC10596d1.this.mo1347U(object, this, this.f33979a, this.f33980b);
             if (U != null) {
                 AbstractC10596d1 d1Var = AbstractC10596d1.this;
-                final boolean z = this.f33977b;
-                final Runnable runnable = this.f33978c;
+                final boolean z = this.f33980b;
+                final Runnable runnable = this.f33981c;
                 d1Var.m4504X(new Runnable() {
                     @Override
                     public final void run() {
@@ -82,20 +82,20 @@ public abstract class AbstractC10596d1<T> implements AbstractC5911c, Iterable<T>
     }
 
     public static class C10599c<T> {
-        public final List<T> f33979a;
-        public final int f33980b;
+        public final List<T> f33982a;
+        public final int f33983b;
 
         public C10599c(List<T> list, int i) {
-            this.f33979a = list;
-            this.f33980b = i;
+            this.f33982a = list;
+            this.f33983b = i;
         }
     }
 
     public AbstractC10596d1(C10930q6 q6Var, int i, int i2, boolean z, AbstractC10598b<T> bVar) {
-        this.f33972a = q6Var;
-        this.f33968Q = i;
-        this.f33969R = i2;
-        this.f33966O = !z;
+        this.f33975a = q6Var;
+        this.f33971Q = i;
+        this.f33972R = i2;
+        this.f33969O = !z;
         if (bVar != null) {
             m4497r(bVar);
         }
@@ -115,16 +115,16 @@ public abstract class AbstractC10596d1<T> implements AbstractC5911c, Iterable<T>
     }
 
     public final boolean m4524A() {
-        return this.f33970S;
+        return this.f33973S;
     }
 
     public final boolean m4523B() {
-        int i = this.f33974c;
+        int i = this.f33977c;
         return i == 1 || i == 2;
     }
 
     public final void m4520E(Runnable runnable) {
-        if (this.f33973b.isEmpty()) {
+        if (this.f33976b.isEmpty()) {
             m4518G(false, runnable);
         } else if (runnable != null) {
             runnable.run();
@@ -133,21 +133,21 @@ public abstract class AbstractC10596d1<T> implements AbstractC5911c, Iterable<T>
 
     public final void m4519F(int i, boolean z, Runnable runnable) {
         int i2;
-        if (!this.f33964M && (i2 = this.f33974c) != 2 && i2 != 3) {
+        if (!this.f33967M && (i2 = this.f33977c) != 2 && i2 != 3) {
             if (z) {
-                if (this.f33966O) {
+                if (this.f33969O) {
                     return;
                 }
-            } else if (this.f33965N) {
+            } else if (this.f33968N) {
                 return;
             }
-            this.f33964M = true;
-            this.f33972a.m2270r4().m14783o(mo4516J(z, this.f33973b.size(), i), new C10597a(i, z, runnable));
+            this.f33967M = true;
+            this.f33975a.m2270r4().m14783o(mo4516J(z, this.f33976b.size(), i), new C10597a(i, z, runnable));
         }
     }
 
     public final void m4518G(boolean z, Runnable runnable) {
-        m4519F(this.f33973b.isEmpty() ? this.f33968Q : this.f33969R, z, runnable);
+        m4519F(this.f33976b.isEmpty() ? this.f33971Q : this.f33972R, z, runnable);
     }
 
     public void mo4517I(Runnable runnable) {
@@ -156,27 +156,27 @@ public abstract class AbstractC10596d1<T> implements AbstractC5911c, Iterable<T>
     public abstract TdApi.Function mo4516J(boolean z, int i, int i2);
 
     public final void m4515K(boolean z) {
-        for (int size = this.f33971T.size() - 1; size >= 0; size--) {
-            this.f33971T.get(size).mo4486C3(this, z);
+        for (int size = this.f33974T.size() - 1; size >= 0; size--) {
+            this.f33974T.get(size).mo4486C3(this, z);
         }
     }
 
     public final void m4514L() {
-        for (int size = this.f33971T.size() - 1; size >= 0; size--) {
-            this.f33971T.get(size).mo4479t6(this);
+        for (int size = this.f33974T.size() - 1; size >= 0; size--) {
+            this.f33974T.get(size).mo4479t6(this);
         }
     }
 
     public final void m4513M(int i, int i2) {
-        T t = this.f33973b.get(i);
-        for (int size = this.f33971T.size() - 1; size >= 0; size--) {
-            this.f33971T.get(size).mo4480i7(this, t, i, i2);
+        T t = this.f33976b.get(i);
+        for (int size = this.f33974T.size() - 1; size >= 0; size--) {
+            this.f33974T.get(size).mo4480i7(this, t, i, i2);
         }
     }
 
     public final void m4512N(int i) {
-        for (int size = this.f33971T.size() - 1; size >= 0; size--) {
-            this.f33971T.get(size).mo4482J6(this, i);
+        for (int size = this.f33974T.size() - 1; size >= 0; size--) {
+            this.f33974T.get(size).mo4482J6(this, i);
         }
     }
 
@@ -184,62 +184,62 @@ public abstract class AbstractC10596d1<T> implements AbstractC5911c, Iterable<T>
     }
 
     public final void m4510P(T t, int i) {
-        for (int size = this.f33971T.size() - 1; size >= 0; size--) {
-            this.f33971T.get(size).mo4478x2(this, t, i);
+        for (int size = this.f33974T.size() - 1; size >= 0; size--) {
+            this.f33974T.get(size).mo4478x2(this, t, i);
         }
         m4495t();
     }
 
     public final void m4509Q(T t, int i, int i2) {
-        for (int size = this.f33971T.size() - 1; size >= 0; size--) {
-            this.f33971T.get(size).mo4483H6(this, t, i, i2);
+        for (int size = this.f33974T.size() - 1; size >= 0; size--) {
+            this.f33974T.get(size).mo4483H6(this, t, i, i2);
         }
     }
 
     public final void m4508R(T t, int i) {
         m4495t();
-        for (int size = this.f33971T.size() - 1; size >= 0; size--) {
-            this.f33971T.get(size).mo4481d4(this, t, i);
+        for (int size = this.f33974T.size() - 1; size >= 0; size--) {
+            this.f33974T.get(size).mo4481d4(this, t, i);
         }
     }
 
     public final void m4507S(List<T> list, int i, boolean z) {
-        for (int size = this.f33971T.size() - 1; size >= 0; size--) {
-            this.f33971T.get(size).mo4485C6(this, list, i, z);
+        for (int size = this.f33974T.size() - 1; size >= 0; size--) {
+            this.f33974T.get(size).mo4485C6(this, list, i, z);
         }
         m4495t();
     }
 
     public final void m4506T(C10599c<T> cVar, boolean z) {
         if (!m4490y()) {
-            this.f33964M = false;
+            this.f33967M = false;
             int i = 1;
-            boolean z2 = this.f33974c != 0;
-            if (cVar.f33979a.isEmpty()) {
+            boolean z2 = this.f33977c != 0;
+            if (cVar.f33982a.isEmpty()) {
                 if (z) {
-                    this.f33966O = true;
+                    this.f33969O = true;
                 } else {
-                    this.f33965N = true;
+                    this.f33968N = true;
                 }
-                if ((this.f33965N && this.f33966O) || this.f33973b.size() == cVar.f33980b) {
-                    this.f33974c = 2;
+                if ((this.f33968N && this.f33969O) || this.f33976b.size() == cVar.f33983b) {
+                    this.f33977c = 2;
                 }
                 m4511O(z);
             } else {
-                if (this.f33973b.size() + cVar.f33979a.size() == this.f33967P) {
+                if (this.f33976b.size() + cVar.f33982a.size() == this.f33970P) {
                     i = 2;
                 }
-                this.f33974c = i;
-                int size = this.f33973b.size();
+                this.f33977c = i;
+                int size = this.f33976b.size();
                 if (size == 0 || !z) {
-                    this.f33973b.addAll(cVar.f33979a);
-                    m4507S(cVar.f33979a, size, z2);
+                    this.f33976b.addAll(cVar.f33982a);
+                    m4507S(cVar.f33982a, size, z2);
                 } else {
-                    this.f33973b.addAll(0, cVar.f33979a);
-                    m4507S(cVar.f33979a, 0, z2);
+                    this.f33976b.addAll(0, cVar.f33982a);
+                    m4507S(cVar.f33982a, 0, z2);
                 }
             }
-            int i2 = cVar.f33980b;
+            int i2 = cVar.f33983b;
             if (i2 != -1) {
                 m4502Z(i2);
             }
@@ -252,11 +252,11 @@ public abstract class AbstractC10596d1<T> implements AbstractC5911c, Iterable<T>
     public abstract C10599c<T> mo1347U(TdApi.Object object, Client.AbstractC7865g gVar, int i, boolean z);
 
     public final void m4505W(AbstractC10598b<T> bVar) {
-        this.f33971T.remove(bVar);
+        this.f33974T.remove(bVar);
     }
 
     public final void m4504X(final Runnable runnable) {
-        this.f33972a.m2485dd().post(new Runnable() {
+        this.f33975a.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
                 AbstractC10596d1.this.m4522C(runnable);
@@ -265,7 +265,7 @@ public abstract class AbstractC10596d1<T> implements AbstractC5911c, Iterable<T>
     }
 
     public final void m4503Y(final Runnable runnable) {
-        this.f33972a.m2485dd().post(new Runnable() {
+        this.f33975a.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
                 AbstractC10596d1.this.m4521D(runnable);
@@ -274,12 +274,12 @@ public abstract class AbstractC10596d1<T> implements AbstractC5911c, Iterable<T>
     }
 
     public final boolean m4502Z(int i) {
-        if (this.f33967P == i) {
+        if (this.f33970P == i) {
             return false;
         }
-        this.f33967P = i;
-        if (i > this.f33973b.size() && this.f33974c == 2) {
-            this.f33974c = 1;
+        this.f33970P = i;
+        if (i > this.f33976b.size() && this.f33977c == 2) {
+            this.f33977c = 1;
         }
         m4512N(i);
         return m4495t();
@@ -289,9 +289,9 @@ public abstract class AbstractC10596d1<T> implements AbstractC5911c, Iterable<T>
 
     @Override
     public void mo4501a3() {
-        if (this.f33974c != 3) {
+        if (this.f33977c != 3) {
             mo1345b0();
-            this.f33974c = 3;
+            this.f33977c = 3;
         }
     }
 
@@ -299,60 +299,60 @@ public abstract class AbstractC10596d1<T> implements AbstractC5911c, Iterable<T>
 
     @Override
     public final Iterator<T> iterator() {
-        return this.f33973b.iterator();
+        return this.f33976b.iterator();
     }
 
     public final void m4497r(AbstractC10598b<T> bVar) {
-        this.f33971T.add(bVar);
+        this.f33974T.add(bVar);
     }
 
     public final boolean m4496s(int i) {
-        int i2 = this.f33967P;
+        int i2 = this.f33970P;
         if (i2 == -1 || i == 0) {
             return false;
         }
         if (i2 + i >= 0) {
             return m4502Z(i2 + i);
         }
-        boolean Z = m4502Z(this.f33973b.size());
+        boolean Z = m4502Z(this.f33976b.size());
         mo4517I(null);
         return Z;
     }
 
     public final boolean m4495t() {
         boolean z = true;
-        boolean z2 = !this.f33973b.isEmpty() || this.f33967P > 0;
-        if (this.f33970S == z2) {
+        boolean z2 = !this.f33976b.isEmpty() || this.f33970P > 0;
+        if (this.f33973S == z2) {
             z = false;
         }
         if (z) {
-            this.f33970S = z2;
+            this.f33973S = z2;
             m4515K(z2);
         }
-        if (this.f33973b.size() < this.f33968Q) {
+        if (this.f33976b.size() < this.f33971Q) {
             m4518G(false, null);
         }
         return z;
     }
 
     public final int m4494u() {
-        return this.f33973b.size();
+        return this.f33976b.size();
     }
 
     public final int m4493v() {
-        int i = this.f33967P;
+        int i = this.f33970P;
         if (i == -1) {
             return -1;
         }
-        if (!this.f33966O || !this.f33965N) {
-            return Math.max(i, this.f33973b.size());
+        if (!this.f33969O || !this.f33968N) {
+            return Math.max(i, this.f33976b.size());
         }
-        return this.f33973b.size();
+        return this.f33976b.size();
     }
 
     public final int m4492w(T t) {
         int i = 0;
-        for (T t2 : this.f33973b) {
+        for (T t2 : this.f33976b) {
             if (t2.equals(t)) {
                 return i;
             }
@@ -366,10 +366,10 @@ public abstract class AbstractC10596d1<T> implements AbstractC5911c, Iterable<T>
     }
 
     public final boolean m4490y() {
-        return this.f33974c == 3;
+        return this.f33977c == 3;
     }
 
     public final boolean m4489z() {
-        return this.f33974c == 2;
+        return this.f33977c == 2;
     }
 }

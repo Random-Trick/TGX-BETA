@@ -24,7 +24,7 @@ public class C5518f implements Map, Serializable, Map {
         this.f18056a = map;
     }
 
-    private Set m22503a(Set set, Object obj) {
+    private Set m22504a(Set set, Object obj) {
         Constructor constructor;
         Constructor constructor2;
         constructor = DesugarCollections.f17932f;
@@ -50,7 +50,7 @@ public class C5518f implements Map, Serializable, Map {
     public Object compute(Object obj, BiFunction biFunction) {
         Object t;
         synchronized (this.f18057b) {
-            t = AbstractC5485a.m22561t(this.f18056a, obj, biFunction);
+            t = AbstractC5485a.m22562t(this.f18056a, obj, biFunction);
         }
         return t;
     }
@@ -60,7 +60,7 @@ public class C5518f implements Map, Serializable, Map {
         Object t;
         BiFunction convert = BiFunction.VivifiedWrapper.convert(biFunction);
         synchronized (this.f18057b) {
-            t = AbstractC5485a.m22561t(this.f18056a, obj, convert);
+            t = AbstractC5485a.m22562t(this.f18056a, obj, convert);
         }
         return t;
     }
@@ -69,7 +69,7 @@ public class C5518f implements Map, Serializable, Map {
     public Object computeIfAbsent(Object obj, Function function) {
         Object u;
         synchronized (this.f18057b) {
-            u = AbstractC5485a.m22560u(this.f18056a, obj, function);
+            u = AbstractC5485a.m22561u(this.f18056a, obj, function);
         }
         return u;
     }
@@ -79,7 +79,7 @@ public class C5518f implements Map, Serializable, Map {
         Object u;
         Function convert = Function.VivifiedWrapper.convert(function);
         synchronized (this.f18057b) {
-            u = AbstractC5485a.m22560u(this.f18056a, obj, convert);
+            u = AbstractC5485a.m22561u(this.f18056a, obj, convert);
         }
         return u;
     }
@@ -88,7 +88,7 @@ public class C5518f implements Map, Serializable, Map {
     public Object computeIfPresent(Object obj, BiFunction biFunction) {
         Object v;
         synchronized (this.f18057b) {
-            v = AbstractC5485a.m22559v(this.f18056a, obj, biFunction);
+            v = AbstractC5485a.m22560v(this.f18056a, obj, biFunction);
         }
         return v;
     }
@@ -98,7 +98,7 @@ public class C5518f implements Map, Serializable, Map {
         Object v;
         BiFunction convert = BiFunction.VivifiedWrapper.convert(biFunction);
         synchronized (this.f18057b) {
-            v = AbstractC5485a.m22559v(this.f18056a, obj, convert);
+            v = AbstractC5485a.m22560v(this.f18056a, obj, convert);
         }
         return v;
     }
@@ -126,7 +126,7 @@ public class C5518f implements Map, Serializable, Map {
         Set set;
         synchronized (this.f18057b) {
             if (this.f18059d == null) {
-                this.f18059d = m22503a(this.f18056a.entrySet(), this.f18057b);
+                this.f18059d = m22504a(this.f18056a.entrySet(), this.f18057b);
             }
             set = this.f18059d;
         }
@@ -148,7 +148,7 @@ public class C5518f implements Map, Serializable, Map {
     @Override
     public void forEach(BiConsumer biConsumer) {
         synchronized (this.f18057b) {
-            AbstractC5485a.m22583C(this.f18056a, biConsumer);
+            AbstractC5485a.m22584C(this.f18056a, biConsumer);
         }
     }
 
@@ -156,7 +156,7 @@ public class C5518f implements Map, Serializable, Map {
     public void forEach(java.util.function.BiConsumer biConsumer) {
         BiConsumer convert = BiConsumer.VivifiedWrapper.convert(biConsumer);
         synchronized (this.f18057b) {
-            AbstractC5485a.m22583C(this.f18056a, convert);
+            AbstractC5485a.m22584C(this.f18056a, convert);
         }
     }
 
@@ -173,7 +173,7 @@ public class C5518f implements Map, Serializable, Map {
     public Object getOrDefault(Object obj, Object obj2) {
         Object D;
         synchronized (this.f18057b) {
-            D = AbstractC5485a.m22582D(this.f18056a, obj, obj2);
+            D = AbstractC5485a.m22583D(this.f18056a, obj, obj2);
         }
         return D;
     }
@@ -201,7 +201,7 @@ public class C5518f implements Map, Serializable, Map {
         Set set;
         synchronized (this.f18057b) {
             if (this.f18058c == null) {
-                this.f18058c = m22503a(this.f18056a.keySet(), this.f18057b);
+                this.f18058c = m22504a(this.f18056a.keySet(), this.f18057b);
             }
             set = this.f18058c;
         }
@@ -212,7 +212,7 @@ public class C5518f implements Map, Serializable, Map {
     public Object merge(Object obj, Object obj2, BiFunction biFunction) {
         Object E;
         synchronized (this.f18057b) {
-            E = AbstractC5485a.m22581E(this.f18056a, obj, obj2, biFunction);
+            E = AbstractC5485a.m22582E(this.f18056a, obj, obj2, biFunction);
         }
         return E;
     }
@@ -222,7 +222,7 @@ public class C5518f implements Map, Serializable, Map {
         Object E;
         BiFunction convert = BiFunction.VivifiedWrapper.convert(biFunction);
         synchronized (this.f18057b) {
-            E = AbstractC5485a.m22581E(this.f18056a, obj, obj2, convert);
+            E = AbstractC5485a.m22582E(this.f18056a, obj, obj2, convert);
         }
         return E;
     }
@@ -247,7 +247,7 @@ public class C5518f implements Map, Serializable, Map {
     public Object putIfAbsent(Object obj, Object obj2) {
         Object F;
         synchronized (this.f18057b) {
-            F = AbstractC5485a.m22580F(this.f18056a, obj, obj2);
+            F = AbstractC5485a.m22581F(this.f18056a, obj, obj2);
         }
         return F;
     }
@@ -265,7 +265,7 @@ public class C5518f implements Map, Serializable, Map {
     public boolean remove(Object obj, Object obj2) {
         boolean G;
         synchronized (this.f18057b) {
-            G = AbstractC5485a.m22579G(this.f18056a, obj, obj2);
+            G = AbstractC5485a.m22580G(this.f18056a, obj, obj2);
         }
         return G;
     }
@@ -274,7 +274,7 @@ public class C5518f implements Map, Serializable, Map {
     public Object replace(Object obj, Object obj2) {
         Object H;
         synchronized (this.f18057b) {
-            H = AbstractC5485a.m22578H(this.f18056a, obj, obj2);
+            H = AbstractC5485a.m22579H(this.f18056a, obj, obj2);
         }
         return H;
     }
@@ -283,7 +283,7 @@ public class C5518f implements Map, Serializable, Map {
     public boolean replace(Object obj, Object obj2, Object obj3) {
         boolean I;
         synchronized (this.f18057b) {
-            I = AbstractC5485a.m22577I(this.f18056a, obj, obj2, obj3);
+            I = AbstractC5485a.m22578I(this.f18056a, obj, obj2, obj3);
         }
         return I;
     }
@@ -291,7 +291,7 @@ public class C5518f implements Map, Serializable, Map {
     @Override
     public void replaceAll(BiFunction biFunction) {
         synchronized (this.f18057b) {
-            AbstractC5485a.m22576J(this.f18056a, biFunction);
+            AbstractC5485a.m22577J(this.f18056a, biFunction);
         }
     }
 
@@ -299,7 +299,7 @@ public class C5518f implements Map, Serializable, Map {
     public void replaceAll(java.util.function.BiFunction biFunction) {
         BiFunction convert = BiFunction.VivifiedWrapper.convert(biFunction);
         synchronized (this.f18057b) {
-            AbstractC5485a.m22576J(this.f18056a, convert);
+            AbstractC5485a.m22577J(this.f18056a, convert);
         }
     }
 

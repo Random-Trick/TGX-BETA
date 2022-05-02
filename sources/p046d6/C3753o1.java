@@ -13,26 +13,26 @@ public final class C3753o1 implements AbstractC4514e<C3679g4> {
     public static final C4511d f12727f;
 
     static {
-        C4511d.C4513b a = C4511d.m27508a("inferenceCommonLogEvent");
+        C4511d.C4513b a = C4511d.m27510a("inferenceCommonLogEvent");
         C3663e8 e8Var = new C3663e8();
-        e8Var.m29841a(1);
-        f12723b = a.m27503b(e8Var.m29840b()).m27504a();
-        C4511d.C4513b a2 = C4511d.m27508a("options");
+        e8Var.m29843a(1);
+        f12723b = a.m27505b(e8Var.m29842b()).m27506a();
+        C4511d.C4513b a2 = C4511d.m27510a("options");
         C3663e8 e8Var2 = new C3663e8();
-        e8Var2.m29841a(2);
-        f12724c = a2.m27503b(e8Var2.m29840b()).m27504a();
-        C4511d.C4513b a3 = C4511d.m27508a("inputsFormats");
+        e8Var2.m29843a(2);
+        f12724c = a2.m27505b(e8Var2.m29842b()).m27506a();
+        C4511d.C4513b a3 = C4511d.m27510a("inputsFormats");
         C3663e8 e8Var3 = new C3663e8();
-        e8Var3.m29841a(3);
-        f12725d = a3.m27503b(e8Var3.m29840b()).m27504a();
-        C4511d.C4513b a4 = C4511d.m27508a("outputFormats");
+        e8Var3.m29843a(3);
+        f12725d = a3.m27505b(e8Var3.m29842b()).m27506a();
+        C4511d.C4513b a4 = C4511d.m27510a("outputFormats");
         C3663e8 e8Var4 = new C3663e8();
-        e8Var4.m29841a(4);
-        f12726e = a4.m27503b(e8Var4.m29840b()).m27504a();
-        C4511d.C4513b a5 = C4511d.m27508a("modelInitializationMs");
+        e8Var4.m29843a(4);
+        f12726e = a4.m27505b(e8Var4.m29842b()).m27506a();
+        C4511d.C4513b a5 = C4511d.m27510a("modelInitializationMs");
         C3663e8 e8Var5 = new C3663e8();
-        e8Var5.m29841a(5);
-        f12727f = a5.m27503b(e8Var5.m29840b()).m27504a();
+        e8Var5.m29843a(5);
+        f12727f = a5.m27505b(e8Var5.m29842b()).m27506a();
     }
 
     @Override

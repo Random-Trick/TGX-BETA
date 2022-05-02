@@ -7,7 +7,7 @@ import android.os.Build;
 import android.widget.ImageView;
 
 public class C4211g {
-    public static ColorStateList m28432a(ImageView imageView) {
+    public static ColorStateList m28434a(ImageView imageView) {
         if (Build.VERSION.SDK_INT >= 21) {
             return imageView.getImageTintList();
         }
@@ -17,7 +17,7 @@ public class C4211g {
         return null;
     }
 
-    public static PorterDuff.Mode m28431b(ImageView imageView) {
+    public static PorterDuff.Mode m28433b(ImageView imageView) {
         if (Build.VERSION.SDK_INT >= 21) {
             return imageView.getImageTintMode();
         }
@@ -27,7 +27,7 @@ public class C4211g {
         return null;
     }
 
-    public static void m28430c(ImageView imageView, ColorStateList colorStateList) {
+    public static void m28432c(ImageView imageView, ColorStateList colorStateList) {
         Drawable drawable;
         int i = Build.VERSION.SDK_INT;
         if (i >= 21) {
@@ -43,7 +43,7 @@ public class C4211g {
         }
     }
 
-    public static void m28429d(ImageView imageView, PorterDuff.Mode mode) {
+    public static void m28431d(ImageView imageView, PorterDuff.Mode mode) {
         Drawable drawable;
         int i = Build.VERSION.SDK_INT;
         if (i >= 21) {

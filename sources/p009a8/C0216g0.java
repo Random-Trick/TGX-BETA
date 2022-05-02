@@ -11,7 +11,7 @@ public final class C0216g0 implements Closeable {
         AtomicReference atomicReference;
         this.f691a = oVar;
         atomicReference = oVar.f711d;
-        C6378r.m20504m(((Thread) atomicReference.getAndSet(Thread.currentThread())) == null);
+        C6378r.m20505m(((Thread) atomicReference.getAndSet(Thread.currentThread())) == null);
     }
 
     @Override
@@ -19,6 +19,6 @@ public final class C0216g0 implements Closeable {
         AtomicReference atomicReference;
         atomicReference = this.f691a.f711d;
         atomicReference.set(null);
-        this.f691a.m42059d();
+        this.f691a.m42062d();
     }
 }

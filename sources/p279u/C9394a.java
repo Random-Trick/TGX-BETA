@@ -5,33 +5,33 @@ import android.os.Build;
 import java.util.Objects;
 
 public final class C9394a {
-    public final AbstractC9397c f30436a;
+    public final AbstractC9397c f30439a;
 
     public static class C9395a implements AbstractC9397c {
-        public final InputConfiguration f30437a;
+        public final InputConfiguration f30440a;
 
         public C9395a(Object obj) {
-            this.f30437a = (InputConfiguration) obj;
+            this.f30440a = (InputConfiguration) obj;
         }
 
         @Override
         public Object mo8799a() {
-            return this.f30437a;
+            return this.f30440a;
         }
 
         public boolean equals(Object obj) {
             if (!(obj instanceof AbstractC9397c)) {
                 return false;
             }
-            return Objects.equals(this.f30437a, ((AbstractC9397c) obj).mo8799a());
+            return Objects.equals(this.f30440a, ((AbstractC9397c) obj).mo8799a());
         }
 
         public int hashCode() {
-            return this.f30437a.hashCode();
+            return this.f30440a.hashCode();
         }
 
         public String toString() {
-            return this.f30437a.toString();
+            return this.f30440a.toString();
         }
     }
 
@@ -46,7 +46,7 @@ public final class C9394a {
     }
 
     public C9394a(AbstractC9397c cVar) {
-        this.f30436a = cVar;
+        this.f30439a = cVar;
     }
 
     public static C9394a m8800b(Object obj) {
@@ -61,21 +61,21 @@ public final class C9394a {
     }
 
     public Object m8801a() {
-        return this.f30436a.mo8799a();
+        return this.f30439a.mo8799a();
     }
 
     public boolean equals(Object obj) {
         if (!(obj instanceof C9394a)) {
             return false;
         }
-        return this.f30436a.equals(((C9394a) obj).f30436a);
+        return this.f30439a.equals(((C9394a) obj).f30439a);
     }
 
     public int hashCode() {
-        return this.f30436a.hashCode();
+        return this.f30439a.hashCode();
     }
 
     public String toString() {
-        return this.f30436a.toString();
+        return this.f30439a.toString();
     }
 }

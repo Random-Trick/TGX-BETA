@@ -25,29 +25,29 @@ public class C6212d implements AbstractC6214f {
             @Override
             public final Object get() {
                 C6216g a;
-                a = C6216g.m21058a(context);
+                a = C6216g.m21059a(context);
                 return a;
             }
         }), set, new ThreadPoolExecutor(0, 1, 30L, TimeUnit.SECONDS, new LinkedBlockingQueue(), f19616d));
     }
 
-    public static C3865d<AbstractC6214f> m21064e() {
-        return C3865d.m29707c(AbstractC6214f.class).m29692b(C3890q.m29633i(Context.class)).m29692b(C3890q.m29631k(AbstractC6213e.class)).m29689e(C6209a.f19613a).m29690d();
+    public static C3865d<AbstractC6214f> m21065e() {
+        return C3865d.m29709c(AbstractC6214f.class).m29694b(C3890q.m29635i(Context.class)).m29694b(C3890q.m29633k(AbstractC6213e.class)).m29691e(C6209a.f19613a).m29692d();
     }
 
-    public static AbstractC6214f m21063f(AbstractC3870e eVar) {
-        return new C6212d((Context) eVar.mo29677a(Context.class), eVar.mo29674d(AbstractC6213e.class));
+    public static AbstractC6214f m21064f(AbstractC3870e eVar) {
+        return new C6212d((Context) eVar.mo29679a(Context.class), eVar.mo29676d(AbstractC6213e.class));
     }
 
-    public static Thread m21061h(Runnable runnable) {
+    public static Thread m21062h(Runnable runnable) {
         return new Thread(runnable, "heartbeat-information-executor");
     }
 
     @Override
-    public AbstractC6214f.EnumC6215a mo21060a(String str) {
+    public AbstractC6214f.EnumC6215a mo21061a(String str) {
         long currentTimeMillis = System.currentTimeMillis();
-        boolean d = this.f19617a.get().m21055d(str, currentTimeMillis);
-        boolean c = this.f19617a.get().m21056c(currentTimeMillis);
+        boolean d = this.f19617a.get().m21056d(str, currentTimeMillis);
+        boolean c = this.f19617a.get().m21057c(currentTimeMillis);
         if (d && c) {
             return AbstractC6214f.EnumC6215a.COMBINED;
         }

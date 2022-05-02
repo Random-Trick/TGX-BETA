@@ -20,6 +20,6 @@ public class ApexHomeBadger implements AbstractC0243a {
         intent.putExtra("package", componentName.getPackageName());
         intent.putExtra("count", i);
         intent.putExtra("class", componentName.getClassName());
-        C1304a.m37782c(context, intent);
+        C1304a.m37785c(context, intent);
     }
 }

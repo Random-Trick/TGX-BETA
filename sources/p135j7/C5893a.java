@@ -4,7 +4,7 @@ public class C5893a<T> {
     public final Class<T> f18781a;
     public final T f18782b;
 
-    public Class<T> m21892a() {
+    public Class<T> m21893a() {
         return this.f18781a;
     }
 

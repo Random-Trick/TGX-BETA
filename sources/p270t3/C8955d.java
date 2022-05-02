@@ -28,27 +28,27 @@ import p340y3.C10365e;
 import p355z3.C11241f;
 
 public final class C8955d implements AbstractC8965l {
-    public static final int[] f28831n = {5, 4, 12, 8, 3, 10, 9, 11, 6, 2, 0, 1, 7, 14};
-    public static final C8956a f28832o = new C8956a();
-    public boolean f28833b;
-    public boolean f28834c;
-    public int f28835d;
-    public int f28836e;
-    public int f28837f;
-    public int f28838g;
-    public int f28839h;
-    public int f28840i;
-    public int f28841j;
-    public int f28843l;
-    public int f28842k = 1;
-    public int f28844m = 112800;
+    public static final int[] f28834n = {5, 4, 12, 8, 3, 10, 9, 11, 6, 2, 0, 1, 7, 14};
+    public static final C8956a f28835o = new C8956a();
+    public boolean f28836b;
+    public boolean f28837c;
+    public int f28838d;
+    public int f28839e;
+    public int f28840f;
+    public int f28841g;
+    public int f28842h;
+    public int f28843i;
+    public int f28844j;
+    public int f28846l;
+    public int f28845k = 1;
+    public int f28847m = 112800;
 
     public static final class C8956a {
-        public final AtomicBoolean f28845a = new AtomicBoolean(false);
-        public Constructor<? extends AbstractC8958f> f28846b;
+        public final AtomicBoolean f28848a = new AtomicBoolean(false);
+        public Constructor<? extends AbstractC8958f> f28849b;
 
-        public AbstractC8958f m10834a(int i) {
-            Constructor<? extends AbstractC8958f> b = m10833b();
+        public AbstractC8958f m10833a(int i) {
+            Constructor<? extends AbstractC8958f> b = m10832b();
             if (b == null) {
                 return null;
             }
@@ -59,24 +59,24 @@ public final class C8955d implements AbstractC8965l {
             }
         }
 
-        public final Constructor<? extends AbstractC8958f> m10833b() {
-            synchronized (this.f28845a) {
-                if (this.f28845a.get()) {
-                    return this.f28846b;
+        public final Constructor<? extends AbstractC8958f> m10832b() {
+            synchronized (this.f28848a) {
+                if (this.f28848a.get()) {
+                    return this.f28849b;
                 }
                 try {
                     Boolean bool = Boolean.TRUE;
                     C1223o oVar = C3454i.f11408a;
                     if (bool.equals(C3454i.class.getMethod("isAvailable", new Class[0]).invoke(null, new Object[0]))) {
                         AbstractC8965l lVar = C3452h.f11395k;
-                        this.f28846b = C3452h.class.asSubclass(AbstractC8958f.class).getConstructor(Integer.TYPE);
+                        this.f28849b = C3452h.class.asSubclass(AbstractC8958f.class).getConstructor(Integer.TYPE);
                     }
                 } catch (ClassNotFoundException unused) {
                 } catch (Exception e) {
                     throw new RuntimeException("Error instantiating FLAC extension", e);
                 }
-                this.f28845a.set(true);
-                return this.f28846b;
+                this.f28848a.set(true);
+                return this.f28849b;
             }
         }
     }
@@ -91,23 +91,23 @@ public final class C8955d implements AbstractC8965l {
         ArrayList arrayList;
         int[] iArr;
         arrayList = new ArrayList(14);
-        int b = C1211k.m38030b(map);
+        int b = C1211k.m38033b(map);
         if (b != -1) {
-            m10836c(b, arrayList);
+            m10835c(b, arrayList);
         }
-        int c = C1211k.m38029c(uri);
+        int c = C1211k.m38032c(uri);
         if (!(c == -1 || c == b)) {
-            m10836c(c, arrayList);
+            m10835c(c, arrayList);
         }
-        for (int i : f28831n) {
+        for (int i : f28834n) {
             if (!(i == b || i == c)) {
-                m10836c(i, arrayList);
+                m10835c(i, arrayList);
             }
         }
         return (AbstractC8958f[]) arrayList.toArray(new AbstractC8958f[arrayList.size()]);
     }
 
-    public final void m10836c(int i, List<AbstractC8958f> list) {
+    public final void m10835c(int i, List<AbstractC8958f> list) {
         int i2 = 2;
         switch (i) {
             case 0:
@@ -117,44 +117,44 @@ public final class C8955d implements AbstractC8965l {
                 list.add(new C1559e());
                 return;
             case 2:
-                int i3 = this.f28835d | (this.f28833b ? 1 : 0);
-                if (!this.f28834c) {
+                int i3 = this.f28838d | (this.f28836b ? 1 : 0);
+                if (!this.f28837c) {
                     i2 = 0;
                 }
                 list.add(new C1566h(i2 | i3));
                 return;
             case 3:
-                int i4 = this.f28836e | (this.f28833b ? 1 : 0);
-                if (!this.f28834c) {
+                int i4 = this.f28839e | (this.f28836b ? 1 : 0);
+                if (!this.f28837c) {
                     i2 = 0;
                 }
                 list.add(new C9438b(i2 | i4));
                 return;
             case 4:
-                AbstractC8958f a = f28832o.m10834a(this.f28837f);
+                AbstractC8958f a = f28835o.m10833a(this.f28840f);
                 if (a != null) {
                     list.add(a);
                     return;
                 } else {
-                    list.add(new C9838c(this.f28837f));
+                    list.add(new C9838c(this.f28840f));
                     return;
                 }
             case 5:
                 list.add(new C9963c());
                 return;
             case 6:
-                list.add(new C10365e(this.f28838g));
+                list.add(new C10365e(this.f28841g));
                 return;
             case 7:
-                int i5 = this.f28841j | (this.f28833b ? 1 : 0);
-                if (!this.f28834c) {
+                int i5 = this.f28844j | (this.f28836b ? 1 : 0);
+                if (!this.f28837c) {
                     i2 = 0;
                 }
                 list.add(new C11241f(i2 | i5));
                 return;
             case 8:
-                list.add(new C0098g(this.f28840i));
-                list.add(new C0104k(this.f28839h));
+                list.add(new C0098g(this.f28843i));
+                list.add(new C0104k(this.f28842h));
                 return;
             case 9:
                 list.add(new C1175d());
@@ -163,7 +163,7 @@ public final class C8955d implements AbstractC8965l {
                 list.add(new C1551a0());
                 return;
             case 11:
-                list.add(new C1567h0(this.f28842k, this.f28843l, this.f28844m));
+                list.add(new C1567h0(this.f28845k, this.f28846l, this.f28847m));
                 return;
             case 12:
                 list.add(new C3593b());
@@ -177,8 +177,8 @@ public final class C8955d implements AbstractC8965l {
         }
     }
 
-    public synchronized C8955d m10835d(boolean z) {
-        this.f28833b = z;
+    public synchronized C8955d m10834d(boolean z) {
+        this.f28836b = z;
         return this;
     }
 }

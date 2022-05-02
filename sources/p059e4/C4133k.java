@@ -15,9 +15,9 @@ public final class C4133k {
         this.f13942e = iArr.length - 1;
     }
 
-    public void m28817a(int i) {
+    public void m28819a(int i) {
         if (this.f13940c == this.f13941d.length) {
-            m28815c();
+            m28817c();
         }
         int i2 = (this.f13939b + 1) & this.f13942e;
         this.f13939b = i2;
@@ -25,13 +25,13 @@ public final class C4133k {
         this.f13940c++;
     }
 
-    public void m28816b() {
+    public void m28818b() {
         this.f13938a = 0;
         this.f13939b = -1;
         this.f13940c = 0;
     }
 
-    public final void m28815c() {
+    public final void m28817c() {
         int[] iArr = this.f13941d;
         int length = iArr.length << 1;
         if (length >= 0) {
@@ -50,11 +50,11 @@ public final class C4133k {
         throw new IllegalStateException();
     }
 
-    public boolean m28814d() {
+    public boolean m28816d() {
         return this.f13940c == 0;
     }
 
-    public int m28813e() {
+    public int m28815e() {
         int i = this.f13940c;
         if (i != 0) {
             int[] iArr = this.f13941d;

@@ -4,8 +4,8 @@ import androidx.camera.core.C0664v;
 import p266t.C8887f;
 
 public final class C8507j1 {
-    public static C0664v m12249a(C8887f fVar) {
-        int d = fVar.m11023d();
+    public static C0664v m12248a(C8887f fVar) {
+        int d = fVar.m11022d();
         int i = 5;
         if (d == 1) {
             i = 1;

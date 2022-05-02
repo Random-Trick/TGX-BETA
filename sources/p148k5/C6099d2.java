@@ -14,7 +14,7 @@ public final class C6099d2 extends AbstractC6159r {
     }
 
     @Override
-    public final void mo21158b(C5850a.AbstractC5852b bVar, C6777m mVar) {
+    public final void mo21159b(C5850a.AbstractC5852b bVar, C6777m mVar) {
         AbstractC6147o oVar;
         oVar = this.f19347d.f19530a;
         oVar.mo17211a(bVar, mVar);

@@ -15,7 +15,7 @@ public final class C6783q implements AbstractC6784r {
     }
 
     @Override
-    public final void mo19039b() {
+    public final void mo19040b() {
         this.f21261a.countDown();
     }
 
@@ -24,11 +24,11 @@ public final class C6783q implements AbstractC6784r {
         this.f21261a.countDown();
     }
 
-    public final void m19046d() {
+    public final void m19047d() {
         this.f21261a.await();
     }
 
-    public final boolean m19045e(long j, TimeUnit timeUnit) {
+    public final boolean m19046e(long j, TimeUnit timeUnit) {
         return this.f21261a.await(j, timeUnit);
     }
 }

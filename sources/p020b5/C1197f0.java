@@ -6,21 +6,21 @@ import android.os.SystemClock;
 
 public class C1197f0 implements AbstractC1192d {
     @Override
-    public long mo38084a() {
+    public long mo38087a() {
         return SystemClock.uptimeMillis();
     }
 
     @Override
-    public AbstractC1221n mo38083b(Looper looper, Handler.Callback callback) {
+    public AbstractC1221n mo38086b(Looper looper, Handler.Callback callback) {
         return new C1199g0(new Handler(looper, callback));
     }
 
     @Override
-    public void mo38082c() {
+    public void mo38085c() {
     }
 
     @Override
-    public long mo38081d() {
+    public long mo38084d() {
         return SystemClock.elapsedRealtime();
     }
 }

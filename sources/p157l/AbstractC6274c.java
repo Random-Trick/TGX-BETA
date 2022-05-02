@@ -1,17 +1,17 @@
 package p157l;
 
 public abstract class AbstractC6274c {
-    public abstract void mo20745a(Runnable runnable);
+    public abstract void mo20746a(Runnable runnable);
 
-    public void m20744b(Runnable runnable) {
-        if (mo20743c()) {
+    public void m20745b(Runnable runnable) {
+        if (mo20744c()) {
             runnable.run();
         } else {
-            mo20742d(runnable);
+            mo20743d(runnable);
         }
     }
 
-    public abstract boolean mo20743c();
+    public abstract boolean mo20744c();
 
-    public abstract void mo20742d(Runnable runnable);
+    public abstract void mo20743d(Runnable runnable);
 }

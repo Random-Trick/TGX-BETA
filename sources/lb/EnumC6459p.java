@@ -30,8 +30,8 @@ public abstract class EnumC6459p extends Enum<EnumC6459p> {
         }
 
         @Override
-        public long mo20395b(double d) {
-            return (long) EnumC6459p.m20402a(d, EnumC6459p.f20159c0);
+        public long mo20396b(double d) {
+            return (long) EnumC6459p.m20403a(d, EnumC6459p.f20159c0);
         }
     }
 
@@ -41,8 +41,8 @@ public abstract class EnumC6459p extends Enum<EnumC6459p> {
         }
 
         @Override
-        public long mo20395b(double d) {
-            return (long) EnumC6459p.m20402a(d, EnumC6459p.f20160d0);
+        public long mo20396b(double d) {
+            return (long) EnumC6459p.m20403a(d, EnumC6459p.f20160d0);
         }
     }
 
@@ -52,7 +52,7 @@ public abstract class EnumC6459p extends Enum<EnumC6459p> {
         }
 
         @Override
-        public long mo20395b(double d) {
+        public long mo20396b(double d) {
             return (long) d;
         }
     }
@@ -63,8 +63,8 @@ public abstract class EnumC6459p extends Enum<EnumC6459p> {
         }
 
         @Override
-        public long mo20395b(double d) {
-            return (long) EnumC6459p.m20402a(d, EnumC6459p.f20148U);
+        public long mo20396b(double d) {
+            return (long) EnumC6459p.m20403a(d, EnumC6459p.f20148U);
         }
     }
 
@@ -74,8 +74,8 @@ public abstract class EnumC6459p extends Enum<EnumC6459p> {
         }
 
         @Override
-        public long mo20395b(double d) {
-            return (long) EnumC6459p.m20402a(d, EnumC6459p.f20149V);
+        public long mo20396b(double d) {
+            return (long) EnumC6459p.m20403a(d, EnumC6459p.f20149V);
         }
     }
 
@@ -85,8 +85,8 @@ public abstract class EnumC6459p extends Enum<EnumC6459p> {
         }
 
         @Override
-        public long mo20395b(double d) {
-            return (long) EnumC6459p.m20402a(d, EnumC6459p.f20150W);
+        public long mo20396b(double d) {
+            return (long) EnumC6459p.m20403a(d, EnumC6459p.f20150W);
         }
     }
 
@@ -96,8 +96,8 @@ public abstract class EnumC6459p extends Enum<EnumC6459p> {
         }
 
         @Override
-        public long mo20395b(double d) {
-            return (long) EnumC6459p.m20402a(d, EnumC6459p.f20151X);
+        public long mo20396b(double d) {
+            return (long) EnumC6459p.m20403a(d, EnumC6459p.f20151X);
         }
     }
 
@@ -107,8 +107,8 @@ public abstract class EnumC6459p extends Enum<EnumC6459p> {
         }
 
         @Override
-        public long mo20395b(double d) {
-            return (long) EnumC6459p.m20402a(d, EnumC6459p.f20152Y);
+        public long mo20396b(double d) {
+            return (long) EnumC6459p.m20403a(d, EnumC6459p.f20152Y);
         }
     }
 
@@ -118,8 +118,8 @@ public abstract class EnumC6459p extends Enum<EnumC6459p> {
         }
 
         @Override
-        public long mo20395b(double d) {
-            return (long) EnumC6459p.m20402a(d, EnumC6459p.f20153Z);
+        public long mo20396b(double d) {
+            return (long) EnumC6459p.m20403a(d, EnumC6459p.f20153Z);
         }
     }
 
@@ -129,8 +129,8 @@ public abstract class EnumC6459p extends Enum<EnumC6459p> {
         }
 
         @Override
-        public long mo20395b(double d) {
-            return (long) EnumC6459p.m20402a(d, EnumC6459p.f20155a0);
+        public long mo20396b(double d) {
+            return (long) EnumC6459p.m20403a(d, EnumC6459p.f20155a0);
         }
     }
 
@@ -140,8 +140,8 @@ public abstract class EnumC6459p extends Enum<EnumC6459p> {
         }
 
         @Override
-        public long mo20395b(double d) {
-            return (long) EnumC6459p.m20402a(d, EnumC6459p.f20157b0);
+        public long mo20396b(double d) {
+            return (long) EnumC6459p.m20403a(d, EnumC6459p.f20157b0);
         }
     }
 
@@ -174,7 +174,7 @@ public abstract class EnumC6459p extends Enum<EnumC6459p> {
     public EnumC6459p(String str, int i) {
     }
 
-    public static double m20402a(double d, double d2) {
+    public static double m20403a(double d, double d2) {
         double d3 = Double.MAX_VALUE / d2;
         if (d > d3) {
             return Double.MAX_VALUE;
@@ -193,29 +193,29 @@ public abstract class EnumC6459p extends Enum<EnumC6459p> {
         return (EnumC6459p[]) f20161e0.clone();
     }
 
-    public abstract long mo20395b(double d);
+    public abstract long mo20396b(double d);
 
-    public final double m20401c(double d) {
-        return mo20395b(d) / f20157b0;
+    public final double m20402c(double d) {
+        return mo20396b(d) / f20157b0;
     }
 
-    public final double m20400d(double d) {
-        return mo20395b(d) / f20150W;
+    public final double m20401d(double d) {
+        return mo20396b(d) / f20150W;
     }
 
-    public final double m20399e(double d) {
-        return mo20395b(d) / f20153Z;
+    public final double m20400e(double d) {
+        return mo20396b(d) / f20153Z;
     }
 
-    public final double m20398f(double d) {
-        return mo20395b(d) / f20148U;
+    public final double m20399f(double d) {
+        return mo20396b(d) / f20148U;
     }
 
-    public final double m20397g(double d) {
-        return mo20395b(d) / f20155a0;
+    public final double m20398g(double d) {
+        return mo20396b(d) / f20155a0;
     }
 
-    public final double m20396h(double d) {
-        return mo20395b(d) / f20149V;
+    public final double m20397h(double d) {
+        return mo20396b(d) / f20149V;
     }
 }

@@ -11,15 +11,15 @@ public final class C6802f {
         this.f21301c = dVarArr[2];
     }
 
-    public C6798d m18995a() {
+    public C6798d m18996a() {
         return this.f21299a;
     }
 
-    public C6798d m18994b() {
+    public C6798d m18995b() {
         return this.f21300b;
     }
 
-    public C6798d m18993c() {
+    public C6798d m18994c() {
         return this.f21301c;
     }
 }

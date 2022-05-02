@@ -17,7 +17,7 @@ public final class BinderC6598g extends Binder {
         f20563a = C1216l0.f4526a >= 30 ? IBinder.getSuggestedMaxIpcSizeBytes() : Log.TAG_COMPRESS;
     }
 
-    public static AbstractC11396q<Bundle> m19903a(IBinder iBinder) {
+    public static AbstractC11396q<Bundle> m19904a(IBinder iBinder) {
         int readInt;
         AbstractC11396q.C11397a x = AbstractC11396q.m760x();
         int i = 1;
@@ -32,7 +32,7 @@ public final class BinderC6598g extends Binder {
                     while (true) {
                         readInt = obtain2.readInt();
                         if (readInt == 1) {
-                            x.m757d((Bundle) C1186a.m38185e(obtain2.readBundle()));
+                            x.m757d((Bundle) C1186a.m38188e(obtain2.readBundle()));
                             i2++;
                         }
                     }

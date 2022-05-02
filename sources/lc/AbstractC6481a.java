@@ -12,16 +12,16 @@ public abstract class AbstractC6481a extends AbstractC6485d {
         this.f20164m = clsArr2;
     }
 
-    public Class[] m20394l() {
+    public Class[] m20395l() {
         if (this.f20164m == null) {
-            this.f20164m = m20374e(5);
+            this.f20164m = m20375e(5);
         }
         return this.f20164m;
     }
 
-    public Class[] m20393m() {
+    public Class[] m20394m() {
         if (this.f20162k == null) {
-            this.f20162k = m20374e(3);
+            this.f20162k = m20375e(3);
         }
         return this.f20162k;
     }

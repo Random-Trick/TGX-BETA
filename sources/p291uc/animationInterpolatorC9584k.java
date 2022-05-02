@@ -4,7 +4,7 @@ import android.view.animation.Interpolator;
 import p291uc.C9570j;
 
 public final class animationInterpolatorC9584k implements Interpolator {
-    public static final animationInterpolatorC9584k f31089a = new animationInterpolatorC9584k();
+    public static final animationInterpolatorC9584k f31092a = new animationInterpolatorC9584k();
 
     @Override
     public final float getInterpolation(float f) {

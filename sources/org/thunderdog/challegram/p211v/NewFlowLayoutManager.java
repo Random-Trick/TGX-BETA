@@ -6,22 +6,22 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import java.util.ArrayList;
 
 public class NewFlowLayoutManager extends GridLayoutManager {
-    public ArrayList<ArrayList<Integer>> f25760S;
-    public int f25762U;
-    public int f25763V;
-    public SparseIntArray f25759R = new SparseIntArray();
-    public SparseIntArray f25761T = new SparseIntArray();
+    public ArrayList<ArrayList<Integer>> f25763S;
+    public int f25765U;
+    public int f25766V;
+    public SparseIntArray f25762R = new SparseIntArray();
+    public SparseIntArray f25764T = new SparseIntArray();
 
     public static class C7927a {
-        public float f25764a;
-        public float f25765b;
+        public float f25767a;
+        public float f25768b;
 
         public C7927a() {
         }
 
         public C7927a(float f, float f2) {
-            this.f25764a = f;
-            this.f25765b = f2;
+            this.f25767a = f;
+            this.f25768b = f2;
         }
     }
 
@@ -30,22 +30,22 @@ public class NewFlowLayoutManager extends GridLayoutManager {
     }
 
     @Override
-    public boolean mo14136J1() {
+    public boolean mo14135J1() {
         return false;
     }
 
-    public final void m14135g3() {
-        if (this.f25759R.size() != m14134h3() || this.f25762U != m39187p0()) {
-            this.f25762U = m39187p0();
-            m14127p3(m39187p0());
+    public final void m14134g3() {
+        if (this.f25762R.size() != m14133h3() || this.f25765U != m39190p0()) {
+            this.f25765U = m39190p0();
+            m14126p3(m39190p0());
         }
     }
 
-    public int m14134h3() {
-        return m39226Y() - this.f25763V;
+    public int m14133h3() {
+        return m39229Y() - this.f25766V;
     }
 
-    public final ArrayList<ArrayList<Integer>> m14133i3(int[] iArr, int i) {
+    public final ArrayList<ArrayList<Integer>> m14132i3(int[] iArr, int i) {
         int length = iArr.length;
         if (i <= 0) {
             return new ArrayList<>();
@@ -59,7 +59,7 @@ public class NewFlowLayoutManager extends GridLayoutManager {
             }
             return arrayList;
         }
-        int[] j3 = m14132j3(iArr, i);
+        int[] j3 = m14131j3(iArr, i);
         int i3 = i - 1;
         int i4 = length - 1;
         ArrayList<ArrayList<Integer>> arrayList3 = new ArrayList<>();
@@ -86,7 +86,7 @@ public class NewFlowLayoutManager extends GridLayoutManager {
         return arrayList3;
     }
 
-    public final int[] m14132j3(int[] iArr, int i) {
+    public final int[] m14131j3(int[] iArr, int i) {
         int length = iArr.length;
         int[] iArr2 = new int[length * i];
         int i2 = i - 1;
@@ -118,12 +118,12 @@ public class NewFlowLayoutManager extends GridLayoutManager {
         return iArr3;
     }
 
-    public int m14131k3(int i) {
-        if (this.f25760S == null) {
-            m14127p3(i);
+    public int m14130k3(int i) {
+        if (this.f25763S == null) {
+            m14126p3(i);
         }
-        int i2 = this.f25763V;
-        ArrayList<ArrayList<Integer>> arrayList = this.f25760S;
+        int i2 = this.f25766V;
+        ArrayList<ArrayList<Integer>> arrayList = this.f25763S;
         return i2 + (arrayList != null ? arrayList.size() : 0);
     }
 
@@ -131,47 +131,47 @@ public class NewFlowLayoutManager extends GridLayoutManager {
         return new C7927a(100.0f, 100.0f);
     }
 
-    public int m14130m3(int i) {
-        m14135g3();
-        int i2 = this.f25763V;
-        return i < i2 ? m39594V2() : this.f25759R.get(i - i2);
+    public int m14129m3(int i) {
+        m14134g3();
+        int i2 = this.f25766V;
+        return i < i2 ? m39597V2() : this.f25762R.get(i - i2);
     }
 
-    public boolean m14129n3(int i) {
+    public boolean m14128n3(int i) {
         ArrayList<ArrayList<Integer>> arrayList;
-        m14135g3();
-        return i >= this.f25763V && (arrayList = this.f25760S) != null && !arrayList.isEmpty() && i - this.f25763V < this.f25760S.get(0).size();
+        m14134g3();
+        return i >= this.f25766V && (arrayList = this.f25763S) != null && !arrayList.isEmpty() && i - this.f25766V < this.f25763S.get(0).size();
     }
 
-    public boolean m14128o3(int i) {
-        m14135g3();
-        int i2 = this.f25763V;
-        return i < i2 || this.f25761T.get(i - i2, -1) != -1;
+    public boolean m14127o3(int i) {
+        m14134g3();
+        int i2 = this.f25766V;
+        return i < i2 || this.f25764T.get(i - i2, -1) != -1;
     }
 
-    public final void m14127p3(float r18) {
-        throw new UnsupportedOperationException("Method not decompiled: org.thunderdog.challegram.p211v.NewFlowLayoutManager.m14127p3(float):void");
+    public final void m14126p3(float r18) {
+        throw new UnsupportedOperationException("Method not decompiled: org.thunderdog.challegram.p211v.NewFlowLayoutManager.m14126p3(float):void");
     }
 
-    public void m14126q3(int i) {
-        this.f25763V = i;
+    public void m14125q3(int i) {
+        this.f25766V = i;
     }
 
-    public final C7927a m14125r3(int i) {
+    public final C7927a m14124r3(int i) {
         C7927a l3 = mo7529l3(i);
-        if (l3.f25764a == 0.0f) {
-            l3.f25764a = 100.0f;
+        if (l3.f25767a == 0.0f) {
+            l3.f25767a = 100.0f;
         }
-        if (l3.f25765b == 0.0f) {
-            l3.f25765b = 100.0f;
+        if (l3.f25768b == 0.0f) {
+            l3.f25768b = 100.0f;
         }
-        float f = l3.f25764a;
-        float f2 = l3.f25765b;
+        float f = l3.f25767a;
+        float f2 = l3.f25768b;
         float f3 = f / f2;
         if (f3 > 4.0f || f3 < 0.2f) {
             float max = Math.max(f, f2);
-            l3.f25764a = max;
-            l3.f25765b = max;
+            l3.f25767a = max;
+            l3.f25768b = max;
         }
         return l3;
     }

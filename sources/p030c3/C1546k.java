@@ -25,7 +25,7 @@ public class C1546k implements AbstractC1538e {
             this.f5504a = context;
         }
 
-        public static Bundle m36487d(Context context) {
+        public static Bundle m36490d(Context context) {
             try {
                 PackageManager packageManager = context.getPackageManager();
                 if (packageManager == null) {
@@ -44,8 +44,8 @@ public class C1546k implements AbstractC1538e {
             }
         }
 
-        public final Map<String, String> m36490a(Context context) {
-            Bundle d = m36487d(context);
+        public final Map<String, String> m36493a(Context context) {
+            Bundle d = m36490d(context);
             if (d == null) {
                 Log.w("BackendRegistry", "Could not retrieve metadata, returning empty list of transport backends.");
                 return Collections.emptyMap();
@@ -65,8 +65,8 @@ public class C1546k implements AbstractC1538e {
             return hashMap;
         }
 
-        public AbstractC1537d m36489b(String str) {
-            String str2 = m36488c().get(str);
+        public AbstractC1537d m36492b(String str) {
+            String str2 = m36491c().get(str);
             if (str2 == null) {
                 return null;
             }
@@ -90,9 +90,9 @@ public class C1546k implements AbstractC1538e {
             }
         }
 
-        public final Map<String, String> m36488c() {
+        public final Map<String, String> m36491c() {
             if (this.f5505b == null) {
-                this.f5505b = m36490a(this.f5504a);
+                this.f5505b = m36493a(this.f5504a);
             }
             return this.f5505b;
         }
@@ -103,15 +103,15 @@ public class C1546k implements AbstractC1538e {
     }
 
     @Override
-    public synchronized AbstractC1549m mo36491a(String str) {
+    public synchronized AbstractC1549m mo36494a(String str) {
         if (this.f5503c.containsKey(str)) {
             return this.f5503c.get(str);
         }
-        AbstractC1537d b = this.f5501a.m36489b(str);
+        AbstractC1537d b = this.f5501a.m36492b(str);
         if (b == null) {
             return null;
         }
-        AbstractC1549m create = b.create(this.f5502b.m36495a(str));
+        AbstractC1549m create = b.create(this.f5502b.m36498a(str));
         this.f5503c.put(str, create);
         return create;
     }

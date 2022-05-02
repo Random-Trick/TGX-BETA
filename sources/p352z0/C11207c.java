@@ -19,7 +19,7 @@ import p256s0.C8606e;
 import p352z0.C11216f;
 
 public class C11207c {
-    public static final Comparator<byte[]> f35899a = new C11208a();
+    public static final Comparator<byte[]> f35902a = new C11208a();
 
     public class C11208a implements Comparator<byte[]> {
         public int compare(byte[] bArr, byte[] bArr2) {
@@ -65,7 +65,7 @@ public class C11207c {
         if (dVar.m1222b() != null) {
             return dVar.m1222b();
         }
-        return C8606e.m11946c(resources, dVar.m1221c());
+        return C8606e.m11945c(resources, dVar.m1221c());
     }
 
     public static C11216f.C11217a m1227d(Context context, C11209d dVar, CancellationSignal cancellationSignal) {
@@ -83,11 +83,11 @@ public class C11207c {
             throw new PackageManager.NameNotFoundException("No package found for authority: " + e);
         } else if (resolveContentProvider.packageName.equals(dVar.m1218f())) {
             List<byte[]> a = m1230a(packageManager.getPackageInfo(resolveContentProvider.packageName, 64).signatures);
-            Collections.sort(a, f35899a);
+            Collections.sort(a, f35902a);
             List<List<byte[]>> c = m1228c(dVar, resources);
             for (int i = 0; i < c.size(); i++) {
                 ArrayList arrayList = new ArrayList(c.get(i));
-                Collections.sort(arrayList, f35899a);
+                Collections.sort(arrayList, f35902a);
                 if (m1229b(a, arrayList)) {
                     return resolveContentProvider;
                 }

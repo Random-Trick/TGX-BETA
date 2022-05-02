@@ -17,8 +17,8 @@ public final class C6791y<TResult> implements AbstractC6768h0<TResult> {
     }
 
     @Override
-    public final void mo19034d(AbstractC6775l<TResult> lVar) {
-        if (lVar.mo19067n()) {
+    public final void mo19035d(AbstractC6775l<TResult> lVar) {
+        if (lVar.mo19068n()) {
             synchronized (this.f21275b) {
                 if (this.f21276c != null) {
                     this.f21274a.execute(new RunnableC6790x(this));

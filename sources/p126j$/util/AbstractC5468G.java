@@ -4,7 +4,7 @@ import java.util.Comparator;
 import p126j$.util.function.Consumer;
 
 public interface AbstractC5468G {
-    boolean mo22124a(Consumer consumer);
+    boolean mo22125a(Consumer consumer);
 
     int characteristics();
 

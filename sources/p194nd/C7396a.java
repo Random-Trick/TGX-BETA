@@ -9,25 +9,25 @@ import p051db.C3950k;
 import p181mb.C6812c;
 
 public class C7396a extends C6847b2 implements C3950k.AbstractC3952b {
-    public static final C6812c f23350M = new C6812c(2013265919, -1);
-    public boolean f23351a;
-    public float f23352b;
-    public C3950k f23353c;
+    public static final C6812c f23353M = new C6812c(2013265919, -1);
+    public boolean f23354a;
+    public float f23355b;
+    public C3950k f23356c;
 
     public C7396a(Context context) {
         super(context);
-        C1399s0.m37193a0(this);
+        C1399s0.m37196a0(this);
         setGravity(17);
         setSingleLine(true);
-        setTypeface(C1389o.m37260i());
+        setTypeface(C1389o.m37263i());
         setTextSize(1, 14.0f);
-        setTextColor(f23350M.m18909a(0.0f));
+        setTextColor(f23353M.m18910a(0.0f));
     }
 
     private void setFactor(float f) {
-        if (this.f23352b != f) {
-            this.f23352b = f;
-            setTextColor(f23350M.m18909a(f));
+        if (this.f23355b != f) {
+            this.f23355b = f;
+            setTextColor(f23353M.m18910a(f));
         }
     }
 
@@ -41,28 +41,28 @@ public class C7396a extends C6847b2 implements C3950k.AbstractC3952b {
     }
 
     public final void m16552a(float f) {
-        if (this.f23353c == null) {
-            float f2 = this.f23352b;
+        if (this.f23356c == null) {
+            float f2 = this.f23355b;
             if (f2 != f) {
-                this.f23353c = new C3950k(0, this, C2057b.f7280b, 180L, f2);
+                this.f23356c = new C3950k(0, this, C2057b.f7280b, 180L, f2);
             } else {
                 return;
             }
         }
-        this.f23353c.m29544i(f);
+        this.f23356c.m29546i(f);
     }
 
     public final void m16551b(float f) {
-        C3950k kVar = this.f23353c;
+        C3950k kVar = this.f23356c;
         if (kVar != null) {
-            kVar.m29541l(f);
+            kVar.m29543l(f);
         }
         setFactor(f);
     }
 
     public void m16550c(boolean z, boolean z2) {
-        if (this.f23351a != z) {
-            this.f23351a = z;
+        if (this.f23354a != z) {
+            this.f23354a = z;
             float f = 1.0f;
             if (z2) {
                 if (!z) {

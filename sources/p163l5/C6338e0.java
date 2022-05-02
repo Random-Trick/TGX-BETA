@@ -15,7 +15,7 @@ public final class C6338e0 extends AbstractDialogInterface$OnClickListenerC6344g
     }
 
     @Override
-    public final void mo20586a() {
+    public final void mo20587a() {
         Intent intent = this.f19919a;
         if (intent != null) {
             this.f19920b.startActivityForResult(intent, this.f19921c);

@@ -6,7 +6,7 @@ import p293v.C9824s;
 import p336y.AbstractC10231g2;
 
 public class C9929g {
-    public final C9824s f32307a;
+    public final C9824s f32310a;
 
     public C9929g() {
         this((C9824s) C9814i.m6817a(C9824s.class));
@@ -14,7 +14,7 @@ public class C9929g {
 
     public Size m6471a(Size size) {
         Size c;
-        C9824s sVar = this.f32307a;
+        C9824s sVar = this.f32310a;
         if (sVar == null || (c = sVar.m6790c(AbstractC10231g2.EnumC10233b.PRIV)) == null) {
             return size;
         }
@@ -22,6 +22,6 @@ public class C9929g {
     }
 
     public C9929g(C9824s sVar) {
-        this.f32307a = sVar;
+        this.f32310a = sVar;
     }
 }

@@ -6,10 +6,10 @@ import android.os.Bundle;
 import org.thunderdog.challegram.Log;
 
 public final class C7766u3 {
-    public final Context f24866a;
+    public final Context f24869a;
 
     public C7766u3(Context context) {
-        this.f24866a = context;
+        this.f24869a = context;
     }
 
     public static String m15111b(Context context) {
@@ -25,6 +25,6 @@ public final class C7766u3 {
     }
 
     public final Context m15112a() {
-        return this.f24866a;
+        return this.f24869a;
     }
 }

@@ -30,8 +30,8 @@ public abstract class EnumC6435c extends Enum<EnumC6435c> {
         }
 
         @Override
-        public double mo20403b(double d) {
-            return EnumC6435c.m20405a(d, EnumC6435c.f20137c0);
+        public double mo20404b(double d) {
+            return EnumC6435c.m20406a(d, EnumC6435c.f20137c0);
         }
     }
 
@@ -41,8 +41,8 @@ public abstract class EnumC6435c extends Enum<EnumC6435c> {
         }
 
         @Override
-        public double mo20403b(double d) {
-            return EnumC6435c.m20405a(d, EnumC6435c.f20138d0);
+        public double mo20404b(double d) {
+            return EnumC6435c.m20406a(d, EnumC6435c.f20138d0);
         }
     }
 
@@ -52,7 +52,7 @@ public abstract class EnumC6435c extends Enum<EnumC6435c> {
         }
 
         @Override
-        public double mo20403b(double d) {
+        public double mo20404b(double d) {
             return d;
         }
     }
@@ -63,8 +63,8 @@ public abstract class EnumC6435c extends Enum<EnumC6435c> {
         }
 
         @Override
-        public double mo20403b(double d) {
-            return EnumC6435c.m20405a(d, EnumC6435c.f20126U);
+        public double mo20404b(double d) {
+            return EnumC6435c.m20406a(d, EnumC6435c.f20126U);
         }
     }
 
@@ -74,8 +74,8 @@ public abstract class EnumC6435c extends Enum<EnumC6435c> {
         }
 
         @Override
-        public double mo20403b(double d) {
-            return EnumC6435c.m20405a(d, EnumC6435c.f20127V);
+        public double mo20404b(double d) {
+            return EnumC6435c.m20406a(d, EnumC6435c.f20127V);
         }
     }
 
@@ -85,8 +85,8 @@ public abstract class EnumC6435c extends Enum<EnumC6435c> {
         }
 
         @Override
-        public double mo20403b(double d) {
-            return EnumC6435c.m20405a(d, EnumC6435c.f20128W);
+        public double mo20404b(double d) {
+            return EnumC6435c.m20406a(d, EnumC6435c.f20128W);
         }
     }
 
@@ -96,8 +96,8 @@ public abstract class EnumC6435c extends Enum<EnumC6435c> {
         }
 
         @Override
-        public double mo20403b(double d) {
-            return EnumC6435c.m20405a(d, EnumC6435c.f20129X);
+        public double mo20404b(double d) {
+            return EnumC6435c.m20406a(d, EnumC6435c.f20129X);
         }
     }
 
@@ -107,8 +107,8 @@ public abstract class EnumC6435c extends Enum<EnumC6435c> {
         }
 
         @Override
-        public double mo20403b(double d) {
-            return EnumC6435c.m20405a(d, EnumC6435c.f20130Y);
+        public double mo20404b(double d) {
+            return EnumC6435c.m20406a(d, EnumC6435c.f20130Y);
         }
     }
 
@@ -118,8 +118,8 @@ public abstract class EnumC6435c extends Enum<EnumC6435c> {
         }
 
         @Override
-        public double mo20403b(double d) {
-            return EnumC6435c.m20405a(d, EnumC6435c.f20131Z);
+        public double mo20404b(double d) {
+            return EnumC6435c.m20406a(d, EnumC6435c.f20131Z);
         }
     }
 
@@ -129,8 +129,8 @@ public abstract class EnumC6435c extends Enum<EnumC6435c> {
         }
 
         @Override
-        public double mo20403b(double d) {
-            return EnumC6435c.m20405a(d, EnumC6435c.f20133a0);
+        public double mo20404b(double d) {
+            return EnumC6435c.m20406a(d, EnumC6435c.f20133a0);
         }
     }
 
@@ -140,8 +140,8 @@ public abstract class EnumC6435c extends Enum<EnumC6435c> {
         }
 
         @Override
-        public double mo20403b(double d) {
-            return EnumC6435c.m20405a(d, EnumC6435c.f20135b0);
+        public double mo20404b(double d) {
+            return EnumC6435c.m20406a(d, EnumC6435c.f20135b0);
         }
     }
 
@@ -174,7 +174,7 @@ public abstract class EnumC6435c extends Enum<EnumC6435c> {
     public EnumC6435c(String str, int i) {
     }
 
-    public static final double m20405a(double d, double d2) {
+    public static final double m20406a(double d, double d2) {
         double d3 = Double.MAX_VALUE / d2;
         if (d > d3) {
             return Double.MAX_VALUE;
@@ -193,9 +193,9 @@ public abstract class EnumC6435c extends Enum<EnumC6435c> {
         return (EnumC6435c[]) f20139e0.clone();
     }
 
-    public abstract double mo20403b(double d);
+    public abstract double mo20404b(double d);
 
-    public final double m20404c(double d) {
-        return mo20403b(d) / f20131Z;
+    public final double m20405c(double d) {
+        return mo20404b(d) / f20131Z;
     }
 }

@@ -5,26 +5,26 @@ import java.nio.ByteOrder;
 import p020b5.C1216l0;
 
 public interface AbstractC7611g {
-    public static final ByteBuffer f24356a = ByteBuffer.allocateDirect(0).order(ByteOrder.nativeOrder());
+    public static final ByteBuffer f24359a = ByteBuffer.allocateDirect(0).order(ByteOrder.nativeOrder());
 
     public static final class C7612a {
-        public static final C7612a f24357e = new C7612a(-1, -1, -1);
-        public final int f24358a;
-        public final int f24359b;
-        public final int f24360c;
-        public final int f24361d;
+        public static final C7612a f24360e = new C7612a(-1, -1, -1);
+        public final int f24361a;
+        public final int f24362b;
+        public final int f24363c;
+        public final int f24364d;
 
         public C7612a(int i, int i2, int i3) {
-            this.f24358a = i;
-            this.f24359b = i2;
-            this.f24360c = i3;
-            this.f24361d = C1216l0.m37969i0(i3) ? C1216l0.m37990W(i3, i2) : -1;
+            this.f24361a = i;
+            this.f24362b = i2;
+            this.f24363c = i3;
+            this.f24364d = C1216l0.m37972i0(i3) ? C1216l0.m37993W(i3, i2) : -1;
         }
 
         public String toString() {
-            int i = this.f24358a;
-            int i2 = this.f24359b;
-            int i3 = this.f24360c;
+            int i = this.f24361a;
+            int i2 = this.f24362b;
+            int i3 = this.f24363c;
             StringBuilder sb2 = new StringBuilder(83);
             sb2.append("AudioFormat[sampleRate=");
             sb2.append(i);

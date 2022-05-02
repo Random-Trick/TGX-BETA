@@ -7,7 +7,7 @@ import java.util.Queue;
 import org.thunderdog.challegram.Log;
 
 public final class C10410r {
-    public static final OutputStream f33478a = new C10408p();
+    public static final OutputStream f33481a = new C10408p();
 
     public static byte[] m5160a(InputStream inputStream) {
         ArrayDeque arrayDeque = new ArrayDeque(20);

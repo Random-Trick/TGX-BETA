@@ -16,12 +16,12 @@ public class C1303h extends AbstractC1299d {
     }
 
     @Override
-    public void mo37786a(MediaExtractor mediaExtractor) {
+    public void mo37789a(MediaExtractor mediaExtractor) {
         mediaExtractor.setDataSource(this.f4703m, this.f4704n, (Map<String, String>) null);
     }
 
     @Override
-    public void mo37785b(MediaMetadataRetriever mediaMetadataRetriever) {
+    public void mo37788b(MediaMetadataRetriever mediaMetadataRetriever) {
         mediaMetadataRetriever.setDataSource(this.f4703m, this.f4704n);
     }
 }

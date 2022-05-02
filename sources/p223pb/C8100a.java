@@ -4,18 +4,18 @@ import p107ha.C5060q;
 import pa.AbstractC8077a;
 
 public final class C8100a extends AbstractC8101b {
-    public int f26305b;
-    public boolean f26306c;
+    public int f26308b;
+    public boolean f26309c;
 
     @Override
-    public void mo13605a(float f) {
-        if (!this.f26306c) {
+    public void mo13604a(float f) {
+        if (!this.f26309c) {
             int i = 1;
-            this.f26306c = true;
-            int i2 = this.f26305b;
+            this.f26309c = true;
+            int i2 = this.f26308b;
             if (1 <= i2) {
                 while (true) {
-                    AbstractC8077a<C5060q> b = m13604b();
+                    AbstractC8077a<C5060q> b = m13603b();
                     if (b != null) {
                         b.mo4925b();
                     }
@@ -30,20 +30,20 @@ public final class C8100a extends AbstractC8101b {
     }
 
     @Override
-    public boolean mo13603c() {
-        return this.f26306c;
+    public boolean mo13602c() {
+        return this.f26309c;
     }
 
-    public final AbstractC8101b m13607e(int i) {
-        m13606f(i);
-        this.f26306c = false;
+    public final AbstractC8101b m13606e(int i) {
+        m13605f(i);
+        this.f26309c = false;
         return this;
     }
 
-    public final void m13606f(int i) {
+    public final void m13605f(int i) {
         if (i > 1000) {
             i = 1000;
         }
-        this.f26305b = i;
+        this.f26308b = i;
     }
 }

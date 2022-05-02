@@ -6,34 +6,34 @@ import p174m3.C6600g1;
 import p187n4.C7227r0;
 
 public abstract class AbstractC11250c implements AbstractC11265j {
-    public final C7227r0 f36032a;
-    public final int f36033b;
-    public final int[] f36034c;
-    public final int f36035d;
-    public final C6600g1[] f36036e;
-    public final long[] f36037f;
-    public int f36038g;
+    public final C7227r0 f36035a;
+    public final int f36036b;
+    public final int[] f36037c;
+    public final int f36038d;
+    public final C6600g1[] f36039e;
+    public final long[] f36040f;
+    public int f36041g;
 
     public AbstractC11250c(C7227r0 r0Var, int[] iArr, int i) {
         int i2 = 0;
-        C1186a.m38184f(iArr.length > 0);
-        this.f36035d = i;
-        this.f36032a = (C7227r0) C1186a.m38185e(r0Var);
+        C1186a.m38187f(iArr.length > 0);
+        this.f36038d = i;
+        this.f36035a = (C7227r0) C1186a.m38188e(r0Var);
         int length = iArr.length;
-        this.f36033b = length;
-        this.f36036e = new C6600g1[length];
+        this.f36036b = length;
+        this.f36039e = new C6600g1[length];
         for (int i3 = 0; i3 < iArr.length; i3++) {
-            this.f36036e[i3] = r0Var.m17272b(iArr[i3]);
+            this.f36039e[i3] = r0Var.m17272b(iArr[i3]);
         }
-        Arrays.sort(this.f36036e, C11249b.f36031a);
-        this.f36034c = new int[this.f36033b];
+        Arrays.sort(this.f36039e, C11249b.f36034a);
+        this.f36037c = new int[this.f36036b];
         while (true) {
-            int i4 = this.f36033b;
+            int i4 = this.f36036b;
             if (i2 < i4) {
-                this.f36034c[i2] = r0Var.m17271c(this.f36036e[i2]);
+                this.f36037c[i2] = r0Var.m17271c(this.f36039e[i2]);
                 i2++;
             } else {
-                this.f36037f = new long[i4];
+                this.f36040f = new long[i4];
                 return;
             }
         }
@@ -45,7 +45,7 @@ public abstract class AbstractC11250c implements AbstractC11265j {
 
     @Override
     public final C7227r0 mo1010a() {
-        return this.f36032a;
+        return this.f36035a;
     }
 
     @Override
@@ -55,7 +55,7 @@ public abstract class AbstractC11250c implements AbstractC11265j {
 
     @Override
     public final C6600g1 mo1009d(int i) {
-        return this.f36036e[i];
+        return this.f36039e[i];
     }
 
     @Override
@@ -70,17 +70,17 @@ public abstract class AbstractC11250c implements AbstractC11265j {
             return false;
         }
         AbstractC11250c cVar = (AbstractC11250c) obj;
-        return this.f36032a == cVar.f36032a && Arrays.equals(this.f36034c, cVar.f36034c);
+        return this.f36035a == cVar.f36035a && Arrays.equals(this.f36037c, cVar.f36037c);
     }
 
     @Override
     public final int mo1008f(int i) {
-        return this.f36034c[i];
+        return this.f36037c[i];
     }
 
     @Override
     public final C6600g1 mo1027g() {
-        return this.f36036e[mo1021b()];
+        return this.f36039e[mo1021b()];
     }
 
     @Override
@@ -88,10 +88,10 @@ public abstract class AbstractC11250c implements AbstractC11265j {
     }
 
     public int hashCode() {
-        if (this.f36038g == 0) {
-            this.f36038g = (System.identityHashCode(this.f36032a) * 31) + Arrays.hashCode(this.f36034c);
+        if (this.f36041g == 0) {
+            this.f36041g = (System.identityHashCode(this.f36035a) * 31) + Arrays.hashCode(this.f36037c);
         }
-        return this.f36038g;
+        return this.f36041g;
     }
 
     @Override
@@ -110,8 +110,8 @@ public abstract class AbstractC11250c implements AbstractC11265j {
 
     @Override
     public final int mo1007l(int i) {
-        for (int i2 = 0; i2 < this.f36033b; i2++) {
-            if (this.f36034c[i2] == i) {
+        for (int i2 = 0; i2 < this.f36036b; i2++) {
+            if (this.f36037c[i2] == i) {
                 return i2;
             }
         }
@@ -120,6 +120,6 @@ public abstract class AbstractC11250c implements AbstractC11265j {
 
     @Override
     public final int length() {
-        return this.f36034c.length;
+        return this.f36037c.length;
     }
 }

@@ -17,46 +17,46 @@ public final class C6146n2<ResultT> extends AbstractC6153p1 {
         this.f19490c = mVar;
         this.f19489b = rVar;
         this.f19491d = qVar;
-        if (i == 2 && rVar.m21157c()) {
+        if (i == 2 && rVar.m21158c()) {
             throw new IllegalArgumentException("Best-effort write calls cannot pass methods that should auto-resolve missing features.");
         }
     }
 
     @Override
-    public final void mo21184a(Status status) {
-        this.f19490c.m19083d(this.f19491d.mo21179a(status));
+    public final void mo21185a(Status status) {
+        this.f19490c.m19084d(this.f19491d.mo21180a(status));
     }
 
     @Override
-    public final void mo21183b(Exception exc) {
-        this.f19490c.m19083d(exc);
+    public final void mo21184b(Exception exc) {
+        this.f19490c.m19084d(exc);
     }
 
     @Override
-    public final void mo21182c(C6172u uVar, boolean z) {
-        uVar.m21126b(this.f19490c, z);
+    public final void mo21183c(C6172u uVar, boolean z) {
+        uVar.m21127b(this.f19490c, z);
     }
 
     @Override
-    public final void mo21181d(C6093c1<?> c1Var) {
+    public final void mo21182d(C6093c1<?> c1Var) {
         try {
-            this.f19489b.mo21158b(c1Var.m21340v(), this.f19490c);
+            this.f19489b.mo21159b(c1Var.m21341v(), this.f19490c);
         } catch (DeadObjectException e) {
             throw e;
         } catch (RemoteException e2) {
-            mo21184a(AbstractC6154p2.m21180e(e2));
+            mo21185a(AbstractC6154p2.m21181e(e2));
         } catch (RuntimeException e3) {
-            this.f19490c.m19083d(e3);
+            this.f19490c.m19084d(e3);
         }
     }
 
     @Override
-    public final C5219c[] mo21186f(C6093c1<?> c1Var) {
-        return this.f19489b.m21156d();
+    public final C5219c[] mo21187f(C6093c1<?> c1Var) {
+        return this.f19489b.m21157d();
     }
 
     @Override
-    public final boolean mo21185g(C6093c1<?> c1Var) {
-        return this.f19489b.m21157c();
+    public final boolean mo21186g(C6093c1<?> c1Var) {
+        return this.f19489b.m21158c();
     }
 }

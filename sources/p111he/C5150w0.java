@@ -35,12 +35,12 @@ public class C5150w0 {
         }
     }
 
-    public void m23801a(Canvas canvas, int i, float f, RectF rectF, float f2, float f3) {
+    public void m23802a(Canvas canvas, int i, float f, RectF rectF, float f2, float f3) {
         C5151a aVar;
         int size = this.f17240b.size();
         for (int i2 = 0; i2 < size; i2++) {
             C5151a aVar2 = this.f17240b.get(i2);
-            canvas.drawPoint(aVar2.f17242a, aVar2.f17243b, C1410y.m37053Y(C5064d.m24131a(aVar2.f17247f * f3, i), f));
+            canvas.drawPoint(aVar2.f17242a, aVar2.f17243b, C1410y.m37056Y(C5064d.m24132a(aVar2.f17247f * f3, i), f));
         }
         double d = (f2 - 90.0f) * 0.017453292519943295d;
         double sin = Math.sin(d);
@@ -57,7 +57,7 @@ public class C5150w0 {
             }
             aVar.f17242a = centerX;
             aVar.f17243b = centerY;
-            double n = (C5069h.m24079n(0, 140) - 70) * 0.017453292519943295d;
+            double n = (C5069h.m24080n(0, 140) - 70) * 0.017453292519943295d;
             if (n < 0.0d) {
                 n += 6.283185307179586d;
             }
@@ -65,16 +65,16 @@ public class C5150w0 {
             aVar.f17245d = (float) ((Math.sin(n) * sin) + (Math.cos(n) * d2));
             aVar.f17247f = 1.0f;
             aVar.f17249h = 0.0f;
-            aVar.f17248g = C5069h.m24079n(0, 100) + 400;
+            aVar.f17248g = C5069h.m24080n(0, 100) + 400;
             aVar.f17246e = (((float) Math.random()) * 4.0f) + 20.0f;
             this.f17240b.add(aVar);
         }
         long elapsedRealtime = SystemClock.elapsedRealtime();
-        m23800b(Math.min(20L, elapsedRealtime - this.f17239a));
+        m23801b(Math.min(20L, elapsedRealtime - this.f17239a));
         this.f17239a = elapsedRealtime;
     }
 
-    public final void m23800b(long j) {
+    public final void m23801b(long j) {
         int size = this.f17240b.size();
         int i = 0;
         while (i < size) {

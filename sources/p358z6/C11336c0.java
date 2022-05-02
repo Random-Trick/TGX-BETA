@@ -11,11 +11,11 @@ import p343y6.C10433i;
 public final class C11336c0 {
 
     public static class C11337a<K, V> extends AbstractC11335c<K, V> {
-        public transient AbstractC10444n<? extends List<V>> f36264O;
+        public transient AbstractC10444n<? extends List<V>> f36267O;
 
         public C11337a(Map<K, Collection<V>> map, AbstractC10444n<? extends List<V>> nVar) {
             super(map);
-            this.f36264O = (AbstractC10444n) C10433i.m5129i(nVar);
+            this.f36267O = (AbstractC10444n) C10433i.m5129i(nVar);
         }
 
         @Override
@@ -29,7 +29,7 @@ public final class C11336c0 {
         }
 
         public List<V> mo874o() {
-            return this.f36264O.get();
+            return this.f36267O.get();
         }
     }
 

@@ -26,17 +26,17 @@ public final class C3955n<T> implements Iterable<C3958c<T>> {
 
         @Override
         public void mo45P5(int i, float f, float f2, C3950k kVar) {
-            C3955n.this.m29520i(f);
+            C3955n.this.m29522i(f);
         }
 
         @Override
         public void mo35Y0(int i, float f, C3950k kVar) {
-            C3955n.this.m29520i(f);
+            C3955n.this.m29522i(f);
         }
     }
 
     public interface AbstractC3957b {
-        void mo26892a(C3955n<?> nVar);
+        void mo26894a(C3955n<?> nVar);
     }
 
     public static class C3958c<T> implements Comparable<C3958c<T>> {
@@ -55,17 +55,17 @@ public final class C3955n<T> implements Iterable<C3958c<T>> {
             this.f13322c = new C3967s(i);
             this.f13317N = new C3968t();
             this.f13318O = new C3967s(0.0f);
-            m29496n(false);
+            m29498n(false);
         }
 
-        public final boolean m29498l(float f) {
+        public final boolean m29500l(float f) {
             boolean z = false;
-            boolean z2 = this.f13318O.m29458a(f) || (this.f13317N.mo26677c(f) || (this.f13316M.m29458a(f) || this.f13322c.m29458a(f)));
+            boolean z2 = this.f13318O.m29460a(f) || (this.f13317N.mo26678c(f) || (this.f13316M.m29460a(f) || this.f13322c.m29460a(f)));
             T t = this.f13320a;
             if (!(t instanceof AbstractC3936b)) {
                 return z2;
             }
-            if (((AbstractC3936b) t).mo26677c(f) || z2) {
+            if (((AbstractC3936b) t).mo26678c(f) || z2) {
                 z = true;
             }
             return z;
@@ -75,56 +75,56 @@ public final class C3955n<T> implements Iterable<C3958c<T>> {
             return Integer.compare(this.f13321b, cVar.f13321b);
         }
 
-        public final void m29496n(boolean z) {
-            this.f13322c.m29456c(z);
-            this.f13316M.m29456c(z);
-            this.f13317N.mo26678b(z);
-            this.f13318O.m29456c(z);
+        public final void m29498n(boolean z) {
+            this.f13322c.m29458c(z);
+            this.f13316M.m29458c(z);
+            this.f13317N.mo26679b(z);
+            this.f13318O.m29458c(z);
             T t = this.f13320a;
             if (t instanceof AbstractC3936b) {
-                ((AbstractC3936b) t).mo26678b(z);
+                ((AbstractC3936b) t).mo26679b(z);
             }
         }
 
-        public int m29495o() {
+        public int m29497o() {
             return this.f13321b;
         }
 
-        public float m29494p() {
-            return this.f13322c.m29455d();
+        public float m29496p() {
+            return this.f13322c.m29457d();
         }
 
-        public RectF m29493q() {
-            return this.f13317N.m29444m();
+        public RectF m29495q() {
+            return this.f13317N.m29446m();
         }
 
-        public float m29492r() {
-            return this.f13318O.m29455d();
+        public float m29494r() {
+            return this.f13318O.m29457d();
         }
 
-        public float m29491s() {
-            return C5069h.m24089d(this.f13316M.m29455d());
+        public float m29493s() {
+            return C5069h.m24090d(this.f13316M.m29457d());
         }
 
-        public boolean m29490t() {
+        public boolean m29492t() {
             return !this.f13319P;
         }
 
-        public boolean m29489u() {
-            return m29491s() == 0.0f && !m29490t();
+        public boolean m29491u() {
+            return m29493s() == 0.0f && !m29492t();
         }
 
-        public final void m29488v() {
-            this.f13316M.m29452g(1.0f);
+        public final void m29490v() {
+            this.f13316M.m29454g(1.0f);
             this.f13319P = false;
         }
 
-        public final void m29487w() {
-            this.f13316M.m29452g(0.0f);
+        public final void m29489w() {
+            this.f13316M.m29454g(0.0f);
             this.f13319P = true;
         }
 
-        public final void m29486x() {
+        public final void m29488x() {
             T t = this.f13320a;
             if (t instanceof AbstractC5911c) {
                 ((AbstractC5911c) t).mo4501a3();
@@ -159,101 +159,101 @@ public final class C3955n<T> implements Iterable<C3958c<T>> {
             this.f13328f = new C3967s(0.0f);
         }
 
-        public boolean m29480f(float f) {
-            return this.f13324b.m29458a(f) || (this.f13328f.m29458a(f) || (this.f13327e.m29458a(f) || (this.f13326d.m29458a(f) || (this.f13325c.m29458a(f) || this.f13323a.m29458a(f)))));
+        public boolean m29482f(float f) {
+            return this.f13324b.m29460a(f) || (this.f13328f.m29460a(f) || (this.f13327e.m29460a(f) || (this.f13326d.m29460a(f) || (this.f13325c.m29460a(f) || this.f13323a.m29460a(f)))));
         }
 
-        public void m29479g(boolean z) {
-            this.f13323a.m29456c(z);
-            this.f13325c.m29456c(z);
-            this.f13326d.m29456c(z);
-            this.f13327e.m29456c(z);
-            this.f13328f.m29456c(z);
-            this.f13324b.m29456c(z);
+        public void m29481g(boolean z) {
+            this.f13323a.m29458c(z);
+            this.f13325c.m29458c(z);
+            this.f13326d.m29458c(z);
+            this.f13327e.m29458c(z);
+            this.f13328f.m29458c(z);
+            this.f13324b.m29458c(z);
         }
 
-        public float m29478h() {
-            return this.f13325c.m29455d();
+        public float m29480h() {
+            return this.f13325c.m29457d();
         }
 
-        public float m29477i() {
-            return this.f13323a.m29455d();
+        public float m29479i() {
+            return this.f13323a.m29457d();
         }
 
-        public float m29476j() {
-            return this.f13328f.m29455d();
+        public float m29478j() {
+            return this.f13328f.m29457d();
         }
 
-        public float m29475k() {
-            return this.f13327e.m29455d();
+        public float m29477k() {
+            return this.f13327e.m29457d();
         }
 
-        public float m29474l() {
-            return this.f13324b.m29455d();
+        public float m29476l() {
+            return this.f13324b.m29457d();
         }
 
-        public final void m29473m(int i, boolean z) {
+        public final void m29475m(int i, boolean z) {
             float f = 1.0f;
             if (z) {
-                this.f13323a.m29452g(i);
+                this.f13323a.m29454g(i);
                 C3967s sVar = this.f13324b;
                 if (i <= 0) {
                     f = 0.0f;
                 }
-                sVar.m29452g(f);
+                sVar.m29454g(f);
                 return;
             }
-            this.f13323a.m29454e(i);
+            this.f13323a.m29456e(i);
             C3967s sVar2 = this.f13324b;
             if (i <= 0) {
                 f = 0.0f;
             }
-            sVar2.m29454e(f);
+            sVar2.m29456e(f);
         }
     }
 
     public interface AbstractC3961f<T> {
-        void mo29472a(T t);
+        void mo29474a(T t);
 
-        void mo29471b(T t, boolean z);
+        void mo29473b(T t, boolean z);
     }
 
     public C3955n(final AbstractC4345j jVar) {
         this(new AbstractC3957b() {
             @Override
-            public final void mo26892a(C3955n nVar) {
+            public final void mo26894a(C3955n nVar) {
                 AbstractC4345j.this.invalidate();
             }
         });
     }
 
-    public final void m29525A(boolean z) {
+    public final void m29527A(boolean z) {
         boolean z2 = false;
         for (int size = this.f13313b.size() - 1; size >= 0; size--) {
             C3958c<T> cVar = this.f13313b.get(size);
-            cVar.m29496n(z);
-            if (cVar.m29489u()) {
+            cVar.m29498n(z);
+            if (cVar.m29491u()) {
                 this.f13313b.remove(size);
-                cVar.m29486x();
+                cVar.m29488x();
                 z2 = true;
             }
         }
         if (z2) {
             this.f13313b.trimToSize();
         }
-        this.f13309M.m29479g(z);
+        this.f13309M.m29481g(z);
     }
 
-    public void m29524B(List<T> list, boolean z) {
-        m29523C(list, z, null);
+    public void m29526B(List<T> list, boolean z) {
+        m29525C(list, z, null);
     }
 
-    public void m29523C(List<T> list, boolean z, AbstractC3961f<T> fVar) {
+    public void m29525C(List<T> list, boolean z, AbstractC3961f<T> fVar) {
         boolean z2 = false;
         if (!z) {
-            m29522D(false);
+            m29524D(false);
             for (int size = this.f13313b.size() - 1; size >= 0; size--) {
-                this.f13313b.get(size).m29486x();
+                this.f13313b.get(size).m29488x();
             }
             this.f13313b.clear();
             this.f13310N.clear();
@@ -269,18 +269,18 @@ public final class C3955n<T> implements Iterable<C3958c<T>> {
                 this.f13313b.trimToSize();
                 this.f13310N.trimToSize();
             }
-            this.f13309M.m29473m(size2, false);
-            m29512x(false);
-            this.f13312a.mo26892a(this);
-        } else if (!m29518r(list)) {
-            m29510z();
+            this.f13309M.m29475m(size2, false);
+            m29514x(false);
+            this.f13312a.mo26894a(this);
+        } else if (!m29520r(list)) {
+            m29512z();
             if (list == null || list.isEmpty()) {
                 if (!this.f13311O) {
                     Iterator<C3958c<T>> it = this.f13313b.iterator();
                     while (true) {
                         if (it.hasNext()) {
-                            if (it.next().f13316M.m29457b(0.0f)) {
-                                m29510z();
+                            if (it.next().f13316M.m29459b(0.0f)) {
+                                m29512z();
                                 break;
                             }
                         } else {
@@ -292,13 +292,13 @@ public final class C3955n<T> implements Iterable<C3958c<T>> {
                     Iterator<C3958c<T>> it2 = this.f13313b.iterator();
                     while (it2.hasNext()) {
                         C3958c<T> next = it2.next();
-                        if (next.f13316M.m29457b(0.0f)) {
-                            m29510z();
-                            next.m29487w();
-                            C5062b.m24181A(this.f13310N, next);
-                            this.f13309M.m29473m(this.f13310N.size(), true);
+                        if (next.f13316M.m29459b(0.0f)) {
+                            m29512z();
+                            next.m29489w();
+                            C5062b.m24182A(this.f13310N, next);
+                            this.f13309M.m29475m(this.f13310N.size(), true);
                             if (fVar != null) {
-                                fVar.mo29472a(next.f13320a);
+                                fVar.mo29474a(next.f13320a);
                             }
                         }
                     }
@@ -313,33 +313,33 @@ public final class C3955n<T> implements Iterable<C3958c<T>> {
                     if (indexOf != -1) {
                         i++;
                         float f = indexOf;
-                        if (cVar2.f13322c.m29457b(f)) {
-                            m29510z();
-                            cVar2.f13322c.m29452g(f);
+                        if (cVar2.f13322c.m29459b(f)) {
+                            m29512z();
+                            cVar2.f13322c.m29454g(f);
                         }
                         if (cVar2.f13321b != indexOf) {
                             cVar2.f13321b = indexOf;
-                            z3 = z3 || cVar2.m29490t();
+                            z3 = z3 || cVar2.m29492t();
                             z4 = true;
                         }
-                        if (cVar2.f13316M.m29457b(1.0f)) {
-                            m29510z();
-                            cVar2.m29488v();
+                        if (cVar2.f13316M.m29459b(1.0f)) {
+                            m29512z();
+                            cVar2.m29490v();
                             this.f13310N.add(cVar2);
-                            this.f13309M.m29473m(this.f13310N.size(), true);
+                            this.f13309M.m29475m(this.f13310N.size(), true);
                             if (fVar != null) {
-                                fVar.mo29471b(cVar2.f13320a, true);
+                                fVar.mo29473b(cVar2.f13320a, true);
                             }
                             z3 = true;
                         }
-                    } else if (cVar2.f13316M.m29457b(0.0f)) {
-                        m29510z();
-                        cVar2.m29487w();
+                    } else if (cVar2.f13316M.m29459b(0.0f)) {
+                        m29512z();
+                        cVar2.m29489w();
                         ArrayList<C3958c<T>> arrayList = this.f13310N;
-                        if (z3 ? arrayList.remove(cVar2) : C5062b.m24181A(arrayList, cVar2)) {
-                            this.f13309M.m29473m(this.f13310N.size(), true);
+                        if (z3 ? arrayList.remove(cVar2) : C5062b.m24182A(arrayList, cVar2)) {
+                            this.f13309M.m29475m(this.f13310N.size(), true);
                             if (fVar != null) {
-                                fVar.mo29472a(cVar2.f13320a);
+                                fVar.mo29474a(cVar2.f13320a);
                             }
                         } else {
                             throw new IllegalArgumentException();
@@ -356,18 +356,18 @@ public final class C3955n<T> implements Iterable<C3958c<T>> {
                     arrayList2.ensureCapacity(arrayList2.size() + (list.size() - i));
                     int i3 = 0;
                     for (T t2 : list) {
-                        if (m29515u(t2) == -1) {
+                        if (m29517u(t2) == -1) {
                             if (i3 != this.f13313b.size()) {
                                 z4 = true;
                             }
-                            m29510z();
+                            m29512z();
                             C3958c<T> cVar3 = new C3958c<>(t2, i3, false);
-                            cVar3.m29488v();
+                            cVar3.m29490v();
                             this.f13313b.add(cVar3);
-                            C5062b.m24169c(this.f13310N, cVar3);
-                            this.f13309M.m29473m(this.f13310N.size(), true);
+                            C5062b.m24170c(this.f13310N, cVar3);
+                            this.f13309M.m29475m(this.f13310N.size(), true);
                             if (fVar != null) {
-                                fVar.mo29471b(cVar3.f13320a, false);
+                                fVar.mo29473b(cVar3.f13320a, false);
                             }
                         }
                         i3++;
@@ -378,32 +378,32 @@ public final class C3955n<T> implements Iterable<C3958c<T>> {
             if (z2) {
                 Collections.sort(this.f13313b);
             }
-            m29512x(true);
-            m29511y();
+            m29514x(true);
+            m29513y();
         }
     }
 
-    public void m29522D(boolean z) {
+    public void m29524D(boolean z) {
         C3950k kVar = this.f13314c;
         if (kVar != null) {
-            kVar.m29542k();
-            m29525A(z);
-            this.f13314c.m29541l(0.0f);
+            kVar.m29544k();
+            m29527A(z);
+            this.f13314c.m29543l(0.0f);
             return;
         }
-        m29525A(z);
+        m29527A(z);
     }
 
-    public void m29520i(float f) {
-        boolean f2 = this.f13309M.m29480f(f);
+    public void m29522i(float f) {
+        boolean f2 = this.f13309M.m29482f(f);
         Iterator<C3958c<T>> it = this.f13313b.iterator();
         while (it.hasNext()) {
-            f2 = it.next().m29498l(f) || f2;
+            f2 = it.next().m29500l(f) || f2;
         }
         if (f2) {
-            this.f13312a.mo26892a(this);
+            this.f13312a.mo26894a(this);
             if (f == 1.0f) {
-                m29525A(true);
+                m29527A(true);
             }
         }
     }
@@ -413,11 +413,11 @@ public final class C3955n<T> implements Iterable<C3958c<T>> {
         return this.f13313b.iterator();
     }
 
-    public void m29519m(boolean z) {
-        m29524B(null, z);
+    public void m29521m(boolean z) {
+        m29526B(null, z);
     }
 
-    public boolean m29518r(List<T> list) {
+    public boolean m29520r(List<T> list) {
         if (list == null || list.isEmpty()) {
             return this.f13310N.isEmpty();
         }
@@ -432,7 +432,7 @@ public final class C3955n<T> implements Iterable<C3958c<T>> {
         return true;
     }
 
-    public C3958c<T> m29517s(int i) {
+    public C3958c<T> m29519s(int i) {
         return this.f13313b.get(i);
     }
 
@@ -440,11 +440,11 @@ public final class C3955n<T> implements Iterable<C3958c<T>> {
         return this.f13313b.size();
     }
 
-    public C3960e m29516t() {
+    public C3960e m29518t() {
         return this.f13309M;
     }
 
-    public final int m29515u(T t) {
+    public final int m29517u(T t) {
         int i = 0;
         if (t == null) {
             Iterator<C3958c<T>> it = this.f13313b.iterator();
@@ -466,17 +466,17 @@ public final class C3955n<T> implements Iterable<C3958c<T>> {
         return -1;
     }
 
-    public void m29513w(boolean z) {
+    public void m29515w(boolean z) {
         if (!z) {
-            m29522D(true);
+            m29524D(true);
         }
-        m29512x(z);
+        m29514x(z);
         if (z) {
-            m29511y();
+            m29513y();
         }
     }
 
-    public void m29512x(boolean z) {
+    public void m29514x(boolean z) {
         Iterator<C3958c<T>> it = this.f13310N.iterator();
         int i = 0;
         int i2 = 0;
@@ -498,22 +498,22 @@ public final class C3955n<T> implements Iterable<C3958c<T>> {
                 int height = dVar.getHeight();
                 int i5 = g + width + d + i;
                 int i6 = g + height + d + i2;
-                if (!z || next.m29491s() <= 0.0f) {
-                    next.f13317N.m29446k(i, i2, i5, i6);
-                    next.f13318O.m29454e(g);
+                if (!z || next.m29493s() <= 0.0f) {
+                    next.f13317N.m29448k(i, i2, i5, i6);
+                    next.f13318O.m29456e(g);
                 } else {
                     float f = i;
                     float f2 = i2;
                     float f3 = i5;
                     float f4 = i6;
-                    if (next.f13317N.m29451d(f, f2, f3, f4)) {
-                        m29510z();
-                        next.f13317N.m29445l(f, f2, f3, f4);
+                    if (next.f13317N.m29453d(f, f2, f3, f4)) {
+                        m29512z();
+                        next.f13317N.m29447l(f, f2, f3, f4);
                     }
                     float f5 = g;
-                    if (next.f13318O.m29457b(f5)) {
-                        m29510z();
-                        next.f13318O.m29452g(f5);
+                    if (next.f13318O.m29459b(f5)) {
+                        m29512z();
+                        next.f13318O.m29454g(f5);
                     }
                 }
                 i3 = Math.max(i3, width);
@@ -528,64 +528,64 @@ public final class C3955n<T> implements Iterable<C3958c<T>> {
             if (t2 instanceof AbstractC3936b) {
                 AbstractC3936b bVar = (AbstractC3936b) t2;
                 if (!z) {
-                    bVar.mo26676e();
-                } else if (bVar.mo26679a()) {
-                    m29510z();
-                    bVar.mo26675f();
+                    bVar.mo26677e();
+                } else if (bVar.mo26680a()) {
+                    m29512z();
+                    bVar.mo26676f();
                 }
             }
         }
         if (z) {
             float f6 = i;
-            if (this.f13309M.f13327e.m29457b(f6)) {
-                m29510z();
-                this.f13309M.f13327e.m29452g(f6);
+            if (this.f13309M.f13327e.m29459b(f6)) {
+                m29512z();
+                this.f13309M.f13327e.m29454g(f6);
             }
             float f7 = i2;
-            if (this.f13309M.f13328f.m29457b(f7)) {
-                m29510z();
-                this.f13309M.f13328f.m29452g(f7);
+            if (this.f13309M.f13328f.m29459b(f7)) {
+                m29512z();
+                this.f13309M.f13328f.m29454g(f7);
             }
             float f8 = i3;
-            if (this.f13309M.f13325c.m29457b(f8)) {
-                m29510z();
-                this.f13309M.f13325c.m29452g(f8);
+            if (this.f13309M.f13325c.m29459b(f8)) {
+                m29512z();
+                this.f13309M.f13325c.m29454g(f8);
             }
             float f9 = i4;
-            if (this.f13309M.f13326d.m29457b(f9)) {
-                m29510z();
-                this.f13309M.f13326d.m29452g(f9);
+            if (this.f13309M.f13326d.m29459b(f9)) {
+                m29512z();
+                this.f13309M.f13326d.m29454g(f9);
                 return;
             }
             return;
         }
-        this.f13309M.f13327e.m29454e(i);
-        this.f13309M.f13328f.m29454e(i2);
-        this.f13309M.f13325c.m29454e(i3);
-        this.f13309M.f13326d.m29454e(i4);
+        this.f13309M.f13327e.m29456e(i);
+        this.f13309M.f13328f.m29456e(i2);
+        this.f13309M.f13325c.m29456e(i3);
+        this.f13309M.f13326d.m29456e(i4);
     }
 
-    public final void m29511y() {
+    public final void m29513y() {
         if (this.f13311O) {
             this.f13311O = false;
             C3950k kVar = this.f13314c;
             if (kVar != null) {
-                kVar.m29544i(1.0f);
+                kVar.m29546i(1.0f);
             }
         } else if (this.f13314c == null) {
             Iterator<C3958c<T>> it = this.f13313b.iterator();
             while (it.hasNext()) {
                 C3958c<T> next = it.next();
-                next.f13316M.m29453f(next.f13316M.m29455d());
-                next.f13322c.m29453f(next.f13322c.m29455d());
+                next.f13316M.m29455f(next.f13316M.m29457d());
+                next.f13322c.m29455f(next.f13322c.m29457d());
             }
         }
     }
 
-    public final void m29510z() {
+    public final void m29512z() {
         if (!this.f13311O) {
             this.f13311O = true;
-            m29522D(false);
+            m29524D(false);
         }
     }
 

@@ -84,10 +84,10 @@ public final class C1315f implements Closeable {
                 }
             }
             if (z) {
-                this.f4789f.m37729P0(null);
+                this.f4789f.m37732P0(null);
                 return -1L;
             }
-            this.f4789f.m37697t1(false, 1, 0);
+            this.f4789f.m37700t1(false, 1, 0);
             return this.f4790g;
         }
     }
@@ -104,87 +104,87 @@ public final class C1315f implements Closeable {
         public final C10180e f4799i;
 
         public C1317b(boolean z, C10180e eVar) {
-            C8298k.m12934e(eVar, "taskRunner");
+            C8298k.m12933e(eVar, "taskRunner");
             this.f4798h = z;
             this.f4799i = eVar;
         }
 
-        public final C1315f m37691a() {
+        public final C1315f m37694a() {
             return new C1315f(this);
         }
 
-        public final boolean m37690b() {
+        public final boolean m37693b() {
             return this.f4798h;
         }
 
-        public final String m37689c() {
+        public final String m37692c() {
             String str = this.f4792b;
             if (str == null) {
-                C8298k.m12925n("connectionName");
+                C8298k.m12924n("connectionName");
             }
             return str;
         }
 
-        public final AbstractC1319d m37688d() {
+        public final AbstractC1319d m37691d() {
             return this.f4795e;
         }
 
-        public final int m37687e() {
+        public final int m37690e() {
             return this.f4797g;
         }
 
-        public final AbstractC1349l m37686f() {
+        public final AbstractC1349l m37689f() {
             return this.f4796f;
         }
 
-        public final AbstractC4550f m37685g() {
+        public final AbstractC4550f m37688g() {
             AbstractC4550f fVar = this.f4794d;
             if (fVar == null) {
-                C8298k.m12925n("sink");
+                C8298k.m12924n("sink");
             }
             return fVar;
         }
 
-        public final Socket m37684h() {
+        public final Socket m37687h() {
             Socket socket = this.f4791a;
             if (socket == null) {
-                C8298k.m12925n("socket");
+                C8298k.m12924n("socket");
             }
             return socket;
         }
 
-        public final AbstractC4551g m37683i() {
+        public final AbstractC4551g m37686i() {
             AbstractC4551g gVar = this.f4793c;
             if (gVar == null) {
-                C8298k.m12925n("source");
+                C8298k.m12924n("source");
             }
             return gVar;
         }
 
-        public final C10180e m37682j() {
+        public final C10180e m37685j() {
             return this.f4799i;
         }
 
-        public final C1317b m37681k(AbstractC1319d dVar) {
-            C8298k.m12934e(dVar, "listener");
+        public final C1317b m37684k(AbstractC1319d dVar) {
+            C8298k.m12933e(dVar, "listener");
             this.f4795e = dVar;
             return this;
         }
 
-        public final C1317b m37680l(int i) {
+        public final C1317b m37683l(int i) {
             this.f4797g = i;
             return this;
         }
 
-        public final C1317b m37679m(Socket socket, String str, AbstractC4551g gVar, AbstractC4550f fVar) {
+        public final C1317b m37682m(Socket socket, String str, AbstractC4551g gVar, AbstractC4550f fVar) {
             String str2;
-            C8298k.m12934e(socket, "socket");
-            C8298k.m12934e(str, "peerName");
-            C8298k.m12934e(gVar, "source");
-            C8298k.m12934e(fVar, "sink");
+            C8298k.m12933e(socket, "socket");
+            C8298k.m12933e(str, "peerName");
+            C8298k.m12933e(gVar, "source");
+            C8298k.m12933e(fVar, "sink");
             this.f4791a = socket;
             if (this.f4798h) {
-                str2 = C9489b.f30727i + ' ' + str;
+                str2 = C9489b.f30730i + ' ' + str;
             } else {
                 str2 = "MockWebServer " + str;
             }
@@ -199,7 +199,7 @@ public final class C1315f implements Closeable {
         public C1318c() {
         }
 
-        public final C1352m m37678a() {
+        public final C1352m m37681a() {
             return C1315f.f4758l0;
         }
 
@@ -215,8 +215,8 @@ public final class C1315f implements Closeable {
         public static final class C1320a extends AbstractC1319d {
             @Override
             public void mo4975b(C1340i iVar) {
-                C8298k.m12934e(iVar, "stream");
-                iVar.m37630d(EnumC1307b.REFUSED_STREAM, null);
+                C8298k.m12933e(iVar, "stream");
+                iVar.m37633d(EnumC1307b.REFUSED_STREAM, null);
             }
         }
 
@@ -230,8 +230,8 @@ public final class C1315f implements Closeable {
         }
 
         public void mo4976a(C1315f fVar, C1352m mVar) {
-            C8298k.m12934e(fVar, "connection");
-            C8298k.m12934e(mVar, "settings");
+            C8298k.m12933e(fVar, "connection");
+            C8298k.m12933e(mVar, "settings");
         }
 
         public abstract void mo4975b(C1340i iVar);
@@ -265,7 +265,7 @@ public final class C1315f implements Closeable {
 
             @Override
             public long mo4943f() {
-                this.f4806g.f4803b.m37725T0().mo4976a(this.f4806g.f4803b, (C1352m) this.f4807h.f26788a);
+                this.f4806g.f4803b.m37728T0().mo4976a(this.f4806g.f4803b, (C1352m) this.f4807h.f26791a);
                 return -1L;
             }
         }
@@ -295,13 +295,13 @@ public final class C1315f implements Closeable {
             @Override
             public long mo4943f() {
                 try {
-                    this.f4815h.f4803b.m37725T0().mo4975b(this.f4814g);
+                    this.f4815h.f4803b.m37728T0().mo4975b(this.f4814g);
                     return -1L;
                 } catch (IOException e) {
-                    C2083h g = C2083h.f7326c.m35674g();
-                    g.m35686j("Http2Connection.Listener failure for " + this.f4815h.f4803b.m37727R0(), 4, e);
+                    C2083h g = C2083h.f7326c.m35677g();
+                    g.m35689j("Http2Connection.Listener failure for " + this.f4815h.f4803b.m37730R0(), 4, e);
                     try {
-                        this.f4814g.m37630d(EnumC1307b.PROTOCOL_ERROR, e);
+                        this.f4814g.m37633d(EnumC1307b.PROTOCOL_ERROR, e);
                         return -1L;
                     } catch (IOException unused) {
                         return -1L;
@@ -328,7 +328,7 @@ public final class C1315f implements Closeable {
 
             @Override
             public long mo4943f() {
-                this.f4822g.f4803b.m37697t1(true, this.f4823h, this.f4824i);
+                this.f4822g.f4803b.m37700t1(true, this.f4823h, this.f4824i);
                 return -1L;
             }
         }
@@ -351,46 +351,46 @@ public final class C1315f implements Closeable {
 
             @Override
             public long mo4943f() {
-                this.f4827g.m37677l(this.f4828h, this.f4829i);
+                this.f4827g.m37680l(this.f4828h, this.f4829i);
                 return -1L;
             }
         }
 
         public C1322e(C1315f fVar, C1336h hVar) {
-            C8298k.m12934e(hVar, "reader");
+            C8298k.m12933e(hVar, "reader");
             this.f4803b = fVar;
             this.f4802a = hVar;
         }
 
         @Override
-        public void mo37648a() {
+        public void mo37651a() {
         }
 
         @Override
         public C5060q mo4925b() {
-            m37676m();
+            m37679m();
             return C5060q.f17066a;
         }
 
         @Override
-        public void mo37647c(boolean z, int i, int i2, List<C1309c> list) {
-            C8298k.m12934e(list, "headerBlock");
-            if (this.f4803b.m37710i1(i)) {
-                this.f4803b.m37713f1(i, list, z);
+        public void mo37650c(boolean z, int i, int i2, List<C1309c> list) {
+            C8298k.m12933e(list, "headerBlock");
+            if (this.f4803b.m37713i1(i)) {
+                this.f4803b.m37716f1(i, list, z);
                 return;
             }
             synchronized (this.f4803b) {
-                C1340i X0 = this.f4803b.m37721X0(i);
+                C1340i X0 = this.f4803b.m37724X0(i);
                 if (X0 != null) {
                     C5060q qVar = C5060q.f17066a;
-                    X0.m37610x(C9489b.m8534K(list), z);
+                    X0.m37613x(C9489b.m8534K(list), z);
                 } else if (!this.f4803b.f4763P) {
-                    if (i > this.f4803b.m37726S0()) {
-                        if (i % 2 != this.f4803b.m37724U0() % 2) {
+                    if (i > this.f4803b.m37729S0()) {
+                        if (i % 2 != this.f4803b.m37727U0() % 2) {
                             C1340i iVar = new C1340i(i, this.f4803b, false, z, C9489b.m8534K(list));
-                            this.f4803b.m37707l1(i);
-                            this.f4803b.m37720Y0().put(Integer.valueOf(i), iVar);
-                            String str = this.f4803b.m37727R0() + '[' + i + "] onStream";
+                            this.f4803b.m37710l1(i);
+                            this.f4803b.m37723Y0().put(Integer.valueOf(i), iVar);
+                            String str = this.f4803b.m37730R0() + '[' + i + "] onStream";
                             this.f4803b.f4764Q.m5818i().m5832i(new C1324b(str, true, str, true, iVar, this, X0, i, list, z), 0L);
                         }
                     }
@@ -399,11 +399,11 @@ public final class C1315f implements Closeable {
         }
 
         @Override
-        public void mo37646d(int i, long j) {
+        public void mo37649d(int i, long j) {
             if (i == 0) {
                 synchronized (this.f4803b) {
                     C1315f fVar = this.f4803b;
-                    fVar.f4783g0 = fVar.m37719Z0() + j;
+                    fVar.f4783g0 = fVar.m37722Z0() + j;
                     C1315f fVar2 = this.f4803b;
                     if (fVar2 != null) {
                         fVar2.notifyAll();
@@ -414,24 +414,24 @@ public final class C1315f implements Closeable {
                 }
                 return;
             }
-            C1340i X0 = this.f4803b.m37721X0(i);
+            C1340i X0 = this.f4803b.m37724X0(i);
             if (X0 != null) {
                 synchronized (X0) {
-                    X0.m37633a(j);
+                    X0.m37636a(j);
                     C5060q qVar2 = C5060q.f17066a;
                 }
             }
         }
 
         @Override
-        public void mo37645e(int i, EnumC1307b bVar, C4552h hVar) {
+        public void mo37648e(int i, EnumC1307b bVar, C4552h hVar) {
             int i2;
             C1340i[] iVarArr;
-            C8298k.m12934e(bVar, "errorCode");
-            C8298k.m12934e(hVar, "debugData");
-            hVar.m27404r();
+            C8298k.m12933e(bVar, "errorCode");
+            C8298k.m12933e(hVar, "debugData");
+            hVar.m27406r();
             synchronized (this.f4803b) {
-                Object[] array = this.f4803b.m37720Y0().values().toArray(new C1340i[0]);
+                Object[] array = this.f4803b.m37723Y0().values().toArray(new C1340i[0]);
                 if (array != null) {
                     iVarArr = (C1340i[]) array;
                     this.f4803b.f4763P = true;
@@ -441,15 +441,15 @@ public final class C1315f implements Closeable {
                 }
             }
             for (C1340i iVar : iVarArr) {
-                if (iVar.m37624j() > i && iVar.m37614t()) {
-                    iVar.m37609y(EnumC1307b.REFUSED_STREAM);
-                    this.f4803b.m37709j1(iVar.m37624j());
+                if (iVar.m37627j() > i && iVar.m37617t()) {
+                    iVar.m37612y(EnumC1307b.REFUSED_STREAM);
+                    this.f4803b.m37712j1(iVar.m37627j());
                 }
             }
         }
 
         @Override
-        public void mo37644f(boolean z, int i, int i2) {
+        public void mo37647f(boolean z, int i, int i2) {
             if (z) {
                 synchronized (this.f4803b) {
                     if (i == 1) {
@@ -471,91 +471,91 @@ public final class C1315f implements Closeable {
                 }
                 return;
             }
-            String str = this.f4803b.m37727R0() + " ping";
+            String str = this.f4803b.m37730R0() + " ping";
             this.f4803b.f4765R.m5832i(new C1325c(str, true, str, true, this, i, i2), 0L);
         }
 
         @Override
-        public void mo37643g(int i, int i2, int i3, boolean z) {
+        public void mo37646g(int i, int i2, int i3, boolean z) {
         }
 
         @Override
-        public void mo37642h(int i, EnumC1307b bVar) {
-            C8298k.m12934e(bVar, "errorCode");
-            if (this.f4803b.m37710i1(i)) {
-                this.f4803b.m37711h1(i, bVar);
+        public void mo37645h(int i, EnumC1307b bVar) {
+            C8298k.m12933e(bVar, "errorCode");
+            if (this.f4803b.m37713i1(i)) {
+                this.f4803b.m37714h1(i, bVar);
                 return;
             }
-            C1340i j1 = this.f4803b.m37709j1(i);
+            C1340i j1 = this.f4803b.m37712j1(i);
             if (j1 != null) {
-                j1.m37609y(bVar);
+                j1.m37612y(bVar);
             }
         }
 
         @Override
-        public void mo37641i(boolean z, int i, AbstractC4551g gVar, int i2) {
-            C8298k.m12934e(gVar, "source");
-            if (this.f4803b.m37710i1(i)) {
-                this.f4803b.m37714e1(i, gVar, i2, z);
+        public void mo37644i(boolean z, int i, AbstractC4551g gVar, int i2) {
+            C8298k.m12933e(gVar, "source");
+            if (this.f4803b.m37713i1(i)) {
+                this.f4803b.m37717e1(i, gVar, i2, z);
                 return;
             }
-            C1340i X0 = this.f4803b.m37721X0(i);
+            C1340i X0 = this.f4803b.m37724X0(i);
             if (X0 == null) {
-                this.f4803b.m37695v1(i, EnumC1307b.PROTOCOL_ERROR);
+                this.f4803b.m37698v1(i, EnumC1307b.PROTOCOL_ERROR);
                 long j = i2;
-                this.f4803b.m37701q1(j);
-                gVar.mo27335a0(j);
+                this.f4803b.m37704q1(j);
+                gVar.mo27337a0(j);
                 return;
             }
-            X0.m37611w(gVar, i2);
+            X0.m37614w(gVar, i2);
             if (z) {
-                X0.m37610x(C9489b.f30720b, true);
+                X0.m37613x(C9489b.f30723b, true);
             }
         }
 
         @Override
-        public void mo37640j(int i, int i2, List<C1309c> list) {
-            C8298k.m12934e(list, "requestHeaders");
-            this.f4803b.m37712g1(i2, list);
+        public void mo37643j(int i, int i2, List<C1309c> list) {
+            C8298k.m12933e(list, "requestHeaders");
+            this.f4803b.m37715g1(i2, list);
         }
 
         @Override
-        public void mo37639k(boolean z, C1352m mVar) {
-            C8298k.m12934e(mVar, "settings");
-            String str = this.f4803b.m37727R0() + " applyAndAckSettings";
+        public void mo37642k(boolean z, C1352m mVar) {
+            C8298k.m12933e(mVar, "settings");
+            String str = this.f4803b.m37730R0() + " applyAndAckSettings";
             this.f4803b.f4765R.m5832i(new C1326d(str, true, str, true, this, z, mVar), 0L);
         }
 
-        public final void m37677l(boolean r22, p025bc.C1352m r23) {
-            throw new UnsupportedOperationException("Method not decompiled: p025bc.C1315f.C1322e.m37677l(boolean, bc.m):void");
+        public final void m37680l(boolean r22, p025bc.C1352m r23) {
+            throw new UnsupportedOperationException("Method not decompiled: p025bc.C1315f.C1322e.m37680l(boolean, bc.m):void");
         }
 
-        public void m37676m() {
+        public void m37679m() {
             Throwable th;
             EnumC1307b bVar;
             EnumC1307b bVar2 = EnumC1307b.INTERNAL_ERROR;
             IOException e = null;
             try {
                 try {
-                    this.f4802a.m37659y0(this);
-                    while (this.f4802a.m37660t(false, this)) {
+                    this.f4802a.m37662y0(this);
+                    while (this.f4802a.m37663t(false, this)) {
                     }
                     EnumC1307b bVar3 = EnumC1307b.NO_ERROR;
                     try {
-                        this.f4803b.m37730O0(bVar3, EnumC1307b.CANCEL, null);
+                        this.f4803b.m37733O0(bVar3, EnumC1307b.CANCEL, null);
                         bVar = bVar3;
                     } catch (IOException e2) {
                         e = e2;
                         EnumC1307b bVar4 = EnumC1307b.PROTOCOL_ERROR;
                         C1315f fVar = this.f4803b;
-                        fVar.m37730O0(bVar4, bVar4, e);
+                        fVar.m37733O0(bVar4, bVar4, e);
                         bVar = fVar;
                         bVar2 = this.f4802a;
                         C9489b.m8514j(bVar2);
                     }
                 } catch (Throwable th2) {
                     th = th2;
-                    this.f4803b.m37730O0(bVar, bVar2, e);
+                    this.f4803b.m37733O0(bVar, bVar2, e);
                     C9489b.m8514j(this.f4802a);
                     throw th;
                 }
@@ -564,7 +564,7 @@ public final class C1315f implements Closeable {
             } catch (Throwable th3) {
                 th = th3;
                 bVar = bVar2;
-                this.f4803b.m37730O0(bVar, bVar2, e);
+                this.f4803b.m37733O0(bVar, bVar2, e);
                 C9489b.m8514j(this.f4802a);
                 throw th;
             }
@@ -596,9 +596,9 @@ public final class C1315f implements Closeable {
         @Override
         public long mo4943f() {
             try {
-                boolean a = this.f4832g.f4768U.mo37576a(this.f4833h, this.f4834i, this.f4835j, this.f4836k);
+                boolean a = this.f4832g.f4768U.mo37579a(this.f4833h, this.f4834i, this.f4835j, this.f4836k);
                 if (a) {
-                    this.f4832g.m37718a1().m37591G0(this.f4833h, EnumC1307b.CANCEL);
+                    this.f4832g.m37721a1().m37594G0(this.f4833h, EnumC1307b.CANCEL);
                 }
                 if (!a && !this.f4836k) {
                     return -1L;
@@ -633,10 +633,10 @@ public final class C1315f implements Closeable {
 
         @Override
         public long mo4943f() {
-            boolean c = this.f4839g.f4768U.mo37574c(this.f4840h, this.f4841i, this.f4842j);
+            boolean c = this.f4839g.f4768U.mo37577c(this.f4840h, this.f4841i, this.f4842j);
             if (c) {
                 try {
-                    this.f4839g.m37718a1().m37591G0(this.f4840h, EnumC1307b.CANCEL);
+                    this.f4839g.m37721a1().m37594G0(this.f4840h, EnumC1307b.CANCEL);
                 } catch (IOException unused) {
                     return -1L;
                 }
@@ -669,11 +669,11 @@ public final class C1315f implements Closeable {
 
         @Override
         public long mo4943f() {
-            if (!this.f4845g.f4768U.mo37575b(this.f4846h, this.f4847i)) {
+            if (!this.f4845g.f4768U.mo37578b(this.f4846h, this.f4847i)) {
                 return -1L;
             }
             try {
-                this.f4845g.m37718a1().m37591G0(this.f4846h, EnumC1307b.CANCEL);
+                this.f4845g.m37721a1().m37594G0(this.f4846h, EnumC1307b.CANCEL);
                 synchronized (this.f4845g) {
                     this.f4845g.f4787k0.remove(Integer.valueOf(this.f4846h));
                 }
@@ -702,7 +702,7 @@ public final class C1315f implements Closeable {
 
         @Override
         public long mo4943f() {
-            this.f4850g.f4768U.mo37573d(this.f4851h, this.f4852i);
+            this.f4850g.f4768U.mo37576d(this.f4851h, this.f4852i);
             synchronized (this.f4850g) {
                 this.f4850g.f4787k0.remove(Integer.valueOf(this.f4851h));
                 C5060q qVar = C5060q.f17066a;
@@ -725,7 +725,7 @@ public final class C1315f implements Closeable {
 
         @Override
         public long mo4943f() {
-            this.f4855g.m37697t1(false, 2, 0);
+            this.f4855g.m37700t1(false, 2, 0);
             return -1L;
         }
     }
@@ -749,10 +749,10 @@ public final class C1315f implements Closeable {
         @Override
         public long mo4943f() {
             try {
-                this.f4858g.m37696u1(this.f4859h, this.f4860i);
+                this.f4858g.m37699u1(this.f4859h, this.f4860i);
                 return -1L;
             } catch (IOException e) {
-                this.f4858g.m37729P0(e);
+                this.f4858g.m37732P0(e);
                 return -1L;
             }
         }
@@ -777,10 +777,10 @@ public final class C1315f implements Closeable {
         @Override
         public long mo4943f() {
             try {
-                this.f4863g.m37718a1().m37589I0(this.f4864h, this.f4865i);
+                this.f4863g.m37721a1().m37592I0(this.f4864h, this.f4865i);
                 return -1L;
             } catch (IOException e) {
-                this.f4863g.m37729P0(e);
+                this.f4863g.m37732P0(e);
                 return -1L;
             }
         }
@@ -788,63 +788,63 @@ public final class C1315f implements Closeable {
 
     static {
         C1352m mVar = new C1352m();
-        mVar.m37565h(7, 65535);
-        mVar.m37565h(5, Log.TAG_VIDEO);
+        mVar.m37568h(7, 65535);
+        mVar.m37568h(5, Log.TAG_VIDEO);
         f4758l0 = mVar;
     }
 
     public C1315f(C1317b bVar) {
         C1352m mVar;
-        C8298k.m12934e(bVar, "builder");
-        boolean b = bVar.m37690b();
+        C8298k.m12933e(bVar, "builder");
+        boolean b = bVar.m37693b();
         this.f4774a = b;
-        this.f4776b = bVar.m37688d();
-        String c = bVar.m37689c();
+        this.f4776b = bVar.m37691d();
+        String c = bVar.m37692c();
         this.f4760M = c;
-        this.f4762O = bVar.m37690b() ? 3 : 2;
-        C10180e j = bVar.m37682j();
+        this.f4762O = bVar.m37693b() ? 3 : 2;
+        C10180e j = bVar.m37685j();
         this.f4764Q = j;
         C10179d i = j.m5818i();
         this.f4765R = i;
         this.f4766S = j.m5818i();
         this.f4767T = j.m5818i();
-        this.f4768U = bVar.m37686f();
+        this.f4768U = bVar.m37689f();
         C1352m mVar2 = new C1352m();
-        if (bVar.m37690b()) {
-            mVar2.m37565h(7, 16777216);
+        if (bVar.m37693b()) {
+            mVar2.m37568h(7, 16777216);
         }
         C5060q qVar = C5060q.f17066a;
         this.f4777b0 = mVar2;
         this.f4779c0 = f4758l0;
-        this.f4783g0 = mVar.m37570c();
-        this.f4784h0 = bVar.m37684h();
-        this.f4785i0 = new C1345j(bVar.m37685g(), b);
-        this.f4786j0 = new C1322e(this, new C1336h(bVar.m37683i(), b));
+        this.f4783g0 = mVar.m37573c();
+        this.f4784h0 = bVar.m37687h();
+        this.f4785i0 = new C1345j(bVar.m37688g(), b);
+        this.f4786j0 = new C1322e(this, new C1336h(bVar.m37686i(), b));
         this.f4787k0 = new LinkedHashSet();
-        if (bVar.m37687e() != 0) {
-            long nanos = TimeUnit.MILLISECONDS.toNanos(bVar.m37687e());
+        if (bVar.m37690e() != 0) {
+            long nanos = TimeUnit.MILLISECONDS.toNanos(bVar.m37690e());
             String str = c + " ping";
             i.m5832i(new C1316a(str, str, this, nanos), nanos);
         }
     }
 
-    public static void m37702p1(C1315f fVar, boolean z, C10180e eVar, int i, Object obj) {
+    public static void m37705p1(C1315f fVar, boolean z, C10180e eVar, int i, Object obj) {
         if ((i & 1) != 0) {
             z = true;
         }
         if ((i & 2) != 0) {
-            eVar = C10180e.f32907h;
+            eVar = C10180e.f32910h;
         }
-        fVar.m37703o1(z, eVar);
+        fVar.m37706o1(z, eVar);
     }
 
-    public final void m37730O0(EnumC1307b bVar, EnumC1307b bVar2, IOException iOException) {
+    public final void m37733O0(EnumC1307b bVar, EnumC1307b bVar2, IOException iOException) {
         int i;
-        C8298k.m12934e(bVar, "connectionCode");
-        C8298k.m12934e(bVar2, "streamCode");
-        if (!C9489b.f30726h || !Thread.holdsLock(this)) {
+        C8298k.m12933e(bVar, "connectionCode");
+        C8298k.m12933e(bVar2, "streamCode");
+        if (!C9489b.f30729h || !Thread.holdsLock(this)) {
             try {
-                m37704n1(bVar);
+                m37707n1(bVar);
             } catch (IOException unused) {
             }
             C1340i[] iVarArr = null;
@@ -863,7 +863,7 @@ public final class C1315f implements Closeable {
             if (iVarArr != null) {
                 for (C1340i iVar : iVarArr) {
                     try {
-                        iVar.m37630d(bVar2, iOException);
+                        iVar.m37633d(bVar2, iOException);
                     } catch (IOException unused2) {
                     }
                 }
@@ -884,63 +884,63 @@ public final class C1315f implements Closeable {
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Thread ");
         Thread currentThread = Thread.currentThread();
-        C8298k.m12935d(currentThread, "Thread.currentThread()");
+        C8298k.m12934d(currentThread, "Thread.currentThread()");
         sb2.append(currentThread.getName());
         sb2.append(" MUST NOT hold lock on ");
         sb2.append(this);
         throw new AssertionError(sb2.toString());
     }
 
-    public final void m37729P0(IOException iOException) {
+    public final void m37732P0(IOException iOException) {
         EnumC1307b bVar = EnumC1307b.PROTOCOL_ERROR;
-        m37730O0(bVar, bVar, iOException);
+        m37733O0(bVar, bVar, iOException);
     }
 
-    public final boolean m37728Q0() {
+    public final boolean m37731Q0() {
         return this.f4774a;
     }
 
-    public final String m37727R0() {
+    public final String m37730R0() {
         return this.f4760M;
     }
 
-    public final int m37726S0() {
+    public final int m37729S0() {
         return this.f4761N;
     }
 
-    public final AbstractC1319d m37725T0() {
+    public final AbstractC1319d m37728T0() {
         return this.f4776b;
     }
 
-    public final int m37724U0() {
+    public final int m37727U0() {
         return this.f4762O;
     }
 
-    public final C1352m m37723V0() {
+    public final C1352m m37726V0() {
         return this.f4777b0;
     }
 
-    public final C1352m m37722W0() {
+    public final C1352m m37725W0() {
         return this.f4779c0;
     }
 
-    public final synchronized C1340i m37721X0(int i) {
+    public final synchronized C1340i m37724X0(int i) {
         return this.f4778c.get(Integer.valueOf(i));
     }
 
-    public final Map<Integer, C1340i> m37720Y0() {
+    public final Map<Integer, C1340i> m37723Y0() {
         return this.f4778c;
     }
 
-    public final long m37719Z0() {
+    public final long m37722Z0() {
         return this.f4783g0;
     }
 
-    public final C1345j m37718a1() {
+    public final C1345j m37721a1() {
         return this.f4785i0;
     }
 
-    public final synchronized boolean m37717b1(long j) {
+    public final synchronized boolean m37720b1(long j) {
         if (this.f4763P) {
             return false;
         }
@@ -952,32 +952,32 @@ public final class C1315f implements Closeable {
         return true;
     }
 
-    public final p025bc.C1340i m37716c1(int r11, java.util.List<p025bc.C1309c> r12, boolean r13) {
-        throw new UnsupportedOperationException("Method not decompiled: p025bc.C1315f.m37716c1(int, java.util.List, boolean):bc.i");
+    public final p025bc.C1340i m37719c1(int r11, java.util.List<p025bc.C1309c> r12, boolean r13) {
+        throw new UnsupportedOperationException("Method not decompiled: p025bc.C1315f.m37719c1(int, java.util.List, boolean):bc.i");
     }
 
     @Override
     public void close() {
-        m37730O0(EnumC1307b.NO_ERROR, EnumC1307b.CANCEL, null);
+        m37733O0(EnumC1307b.NO_ERROR, EnumC1307b.CANCEL, null);
     }
 
-    public final C1340i m37715d1(List<C1309c> list, boolean z) {
-        C8298k.m12934e(list, "requestHeaders");
-        return m37716c1(0, list, z);
+    public final C1340i m37718d1(List<C1309c> list, boolean z) {
+        C8298k.m12933e(list, "requestHeaders");
+        return m37719c1(0, list, z);
     }
 
-    public final void m37714e1(int i, AbstractC4551g gVar, int i2, boolean z) {
-        C8298k.m12934e(gVar, "source");
+    public final void m37717e1(int i, AbstractC4551g gVar, int i2, boolean z) {
+        C8298k.m12933e(gVar, "source");
         C4549e eVar = new C4549e();
         long j = i2;
-        gVar.mo27329s0(j);
+        gVar.mo27331s0(j);
         gVar.mo5028s(eVar, j);
         String str = this.f4760M + '[' + i + "] onData";
         this.f4766S.m5832i(new C1327f(str, true, str, true, this, i, eVar, i2, z), 0L);
     }
 
-    public final void m37713f1(int i, List<C1309c> list, boolean z) {
-        C8298k.m12934e(list, "requestHeaders");
+    public final void m37716f1(int i, List<C1309c> list, boolean z) {
+        C8298k.m12933e(list, "requestHeaders");
         String str = this.f4760M + '[' + i + "] onHeaders";
         this.f4766S.m5832i(new C1328g(str, true, str, true, this, i, list, z), 0L);
     }
@@ -986,11 +986,11 @@ public final class C1315f implements Closeable {
         this.f4785i0.flush();
     }
 
-    public final void m37712g1(int i, List<C1309c> list) {
-        C8298k.m12934e(list, "requestHeaders");
+    public final void m37715g1(int i, List<C1309c> list) {
+        C8298k.m12933e(list, "requestHeaders");
         synchronized (this) {
             if (this.f4787k0.contains(Integer.valueOf(i))) {
-                m37695v1(i, EnumC1307b.PROTOCOL_ERROR);
+                m37698v1(i, EnumC1307b.PROTOCOL_ERROR);
                 return;
             }
             this.f4787k0.add(Integer.valueOf(i));
@@ -999,24 +999,24 @@ public final class C1315f implements Closeable {
         }
     }
 
-    public final void m37711h1(int i, EnumC1307b bVar) {
-        C8298k.m12934e(bVar, "errorCode");
+    public final void m37714h1(int i, EnumC1307b bVar) {
+        C8298k.m12933e(bVar, "errorCode");
         String str = this.f4760M + '[' + i + "] onReset";
         this.f4766S.m5832i(new C1330i(str, true, str, true, this, i, bVar), 0L);
     }
 
-    public final boolean m37710i1(int i) {
+    public final boolean m37713i1(int i) {
         return i != 0 && (i & 1) == 0;
     }
 
-    public final synchronized C1340i m37709j1(int i) {
+    public final synchronized C1340i m37712j1(int i) {
         C1340i remove;
         remove = this.f4778c.remove(Integer.valueOf(i));
         notifyAll();
         return remove;
     }
 
-    public final void m37708k1() {
+    public final void m37711k1() {
         synchronized (this) {
             long j = this.f4772Y;
             long j2 = this.f4771X;
@@ -1030,37 +1030,37 @@ public final class C1315f implements Closeable {
         }
     }
 
-    public final void m37707l1(int i) {
+    public final void m37710l1(int i) {
         this.f4761N = i;
     }
 
-    public final void m37705m1(C1352m mVar) {
-        C8298k.m12934e(mVar, "<set-?>");
+    public final void m37708m1(C1352m mVar) {
+        C8298k.m12933e(mVar, "<set-?>");
         this.f4779c0 = mVar;
     }
 
-    public final void m37704n1(EnumC1307b bVar) {
-        C8298k.m12934e(bVar, "statusCode");
+    public final void m37707n1(EnumC1307b bVar) {
+        C8298k.m12933e(bVar, "statusCode");
         synchronized (this.f4785i0) {
             synchronized (this) {
                 if (!this.f4763P) {
                     this.f4763P = true;
                     int i = this.f4761N;
                     C5060q qVar = C5060q.f17066a;
-                    this.f4785i0.m37596B0(i, bVar, C9489b.f30719a);
+                    this.f4785i0.m37599B0(i, bVar, C9489b.f30722a);
                 }
             }
         }
     }
 
-    public final void m37703o1(boolean z, C10180e eVar) {
-        C8298k.m12934e(eVar, "taskRunner");
+    public final void m37706o1(boolean z, C10180e eVar) {
+        C8298k.m12933e(eVar, "taskRunner");
         if (z) {
-            this.f4785i0.m37586t();
-            this.f4785i0.m37590H0(this.f4777b0);
-            int c = this.f4777b0.m37570c();
+            this.f4785i0.m37589t();
+            this.f4785i0.m37593H0(this.f4777b0);
+            int c = this.f4777b0.m37573c();
             if (c != 65535) {
-                this.f4785i0.m37589I0(0, c - 65535);
+                this.f4785i0.m37592I0(0, c - 65535);
             }
         }
         C10179d i = eVar.m5818i();
@@ -1068,45 +1068,45 @@ public final class C1315f implements Closeable {
         i.m5832i(new C10178c(this.f4786j0, str, true, str, true), 0L);
     }
 
-    public final synchronized void m37701q1(long j) {
+    public final synchronized void m37704q1(long j) {
         long j2 = this.f4780d0 + j;
         this.f4780d0 = j2;
         long j3 = j2 - this.f4781e0;
-        if (j3 >= this.f4777b0.m37570c() / 2) {
-            m37694w1(0, j3);
+        if (j3 >= this.f4777b0.m37573c() / 2) {
+            m37697w1(0, j3);
             this.f4781e0 += j3;
         }
     }
 
-    public final void m37700r1(int r9, boolean r10, p095gc.C4549e r11, long r12) {
-        throw new UnsupportedOperationException("Method not decompiled: p025bc.C1315f.m37700r1(int, boolean, gc.e, long):void");
+    public final void m37703r1(int r9, boolean r10, p095gc.C4549e r11, long r12) {
+        throw new UnsupportedOperationException("Method not decompiled: p025bc.C1315f.m37703r1(int, boolean, gc.e, long):void");
     }
 
-    public final void m37699s1(int i, boolean z, List<C1309c> list) {
-        C8298k.m12934e(list, "alternating");
-        this.f4785i0.m37595C0(z, i, list);
+    public final void m37702s1(int i, boolean z, List<C1309c> list) {
+        C8298k.m12933e(list, "alternating");
+        this.f4785i0.m37598C0(z, i, list);
     }
 
-    public final void m37697t1(boolean z, int i, int i2) {
+    public final void m37700t1(boolean z, int i, int i2) {
         try {
-            this.f4785i0.m37593E0(z, i, i2);
+            this.f4785i0.m37596E0(z, i, i2);
         } catch (IOException e) {
-            m37729P0(e);
+            m37732P0(e);
         }
     }
 
-    public final void m37696u1(int i, EnumC1307b bVar) {
-        C8298k.m12934e(bVar, "statusCode");
-        this.f4785i0.m37591G0(i, bVar);
+    public final void m37699u1(int i, EnumC1307b bVar) {
+        C8298k.m12933e(bVar, "statusCode");
+        this.f4785i0.m37594G0(i, bVar);
     }
 
-    public final void m37695v1(int i, EnumC1307b bVar) {
-        C8298k.m12934e(bVar, "errorCode");
+    public final void m37698v1(int i, EnumC1307b bVar) {
+        C8298k.m12933e(bVar, "errorCode");
         String str = this.f4760M + '[' + i + "] writeSynReset";
         this.f4765R.m5832i(new C1332k(str, true, str, true, this, i, bVar), 0L);
     }
 
-    public final void m37694w1(int i, long j) {
+    public final void m37697w1(int i, long j) {
         String str = this.f4760M + '[' + i + "] windowUpdate";
         this.f4765R.m5832i(new C1333l(str, true, str, true, this, i, j), 0L);
     }

@@ -30,14 +30,14 @@ public final class ExecutorC0016g implements Executor {
         public RunnableC0018b() {
         }
 
-        public final void m42597a() {
-            throw new UnsupportedOperationException("Method not decompiled: p001a0.ExecutorC0016g.RunnableC0018b.m42597a():void");
+        public final void m42600a() {
+            throw new UnsupportedOperationException("Method not decompiled: p001a0.ExecutorC0016g.RunnableC0018b.m42600a():void");
         }
 
         @Override
         public void run() {
             try {
-                m42597a();
+                m42600a();
             } catch (Error e) {
                 synchronized (ExecutorC0016g.this.f25a) {
                     ExecutorC0016g.this.f23M = EnumC0019c.IDLE;
@@ -55,13 +55,13 @@ public final class ExecutorC0016g implements Executor {
     }
 
     public ExecutorC0016g(Executor executor) {
-        this.f26b = (Executor) C1132h.m38322e(executor);
+        this.f26b = (Executor) C1132h.m38325e(executor);
     }
 
     @Override
     public void execute(Runnable runnable) {
         EnumC0019c cVar;
-        C1132h.m38322e(runnable);
+        C1132h.m38325e(runnable);
         synchronized (this.f25a) {
             EnumC0019c cVar2 = this.f23M;
             if (!(cVar2 == EnumC0019c.RUNNING || cVar2 == (cVar = EnumC0019c.QUEUED))) {

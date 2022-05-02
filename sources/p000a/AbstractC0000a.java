@@ -19,15 +19,15 @@ public interface AbstractC0000a extends IInterface {
             }
 
             @Override
-            public void mo42614G0(String str, int i, String str2) {
+            public void mo42617G0(String str, int i, String str2) {
                 Parcel obtain = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("android.support.v4.app.INotificationSideChannel");
                     obtain.writeString(str);
                     obtain.writeInt(i);
                     obtain.writeString(str2);
-                    if (!this.f1a.transact(2, obtain, null, 1) && AbstractBinderC0001a.m42615s() != null) {
-                        AbstractBinderC0001a.m42615s().mo42614G0(str, i, str2);
+                    if (!this.f1a.transact(2, obtain, null, 1) && AbstractBinderC0001a.m42618s() != null) {
+                        AbstractBinderC0001a.m42618s().mo42617G0(str, i, str2);
                     }
                 } finally {
                     obtain.recycle();
@@ -40,13 +40,13 @@ public interface AbstractC0000a extends IInterface {
             }
 
             @Override
-            public void mo42613b0(String str) {
+            public void mo42616b0(String str) {
                 Parcel obtain = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("android.support.v4.app.INotificationSideChannel");
                     obtain.writeString(str);
-                    if (!this.f1a.transact(3, obtain, null, 1) && AbstractBinderC0001a.m42615s() != null) {
-                        AbstractBinderC0001a.m42615s().mo42613b0(str);
+                    if (!this.f1a.transact(3, obtain, null, 1) && AbstractBinderC0001a.m42618s() != null) {
+                        AbstractBinderC0001a.m42618s().mo42616b0(str);
                     }
                 } finally {
                     obtain.recycle();
@@ -54,7 +54,7 @@ public interface AbstractC0000a extends IInterface {
             }
 
             @Override
-            public void mo42612s1(String str, int i, String str2, Notification notification) {
+            public void mo42615s1(String str, int i, String str2, Notification notification) {
                 Parcel obtain = Parcel.obtain();
                 try {
                     obtain.writeInterfaceToken("android.support.v4.app.INotificationSideChannel");
@@ -67,8 +67,8 @@ public interface AbstractC0000a extends IInterface {
                     } else {
                         obtain.writeInt(0);
                     }
-                    if (!this.f1a.transact(1, obtain, null, 1) && AbstractBinderC0001a.m42615s() != null) {
-                        AbstractBinderC0001a.m42615s().mo42612s1(str, i, str2, notification);
+                    if (!this.f1a.transact(1, obtain, null, 1) && AbstractBinderC0001a.m42618s() != null) {
+                        AbstractBinderC0001a.m42618s().mo42615s1(str, i, str2, notification);
                     }
                 } finally {
                     obtain.recycle();
@@ -76,7 +76,7 @@ public interface AbstractC0000a extends IInterface {
             }
         }
 
-        public static AbstractC0000a m42616q(IBinder iBinder) {
+        public static AbstractC0000a m42619q(IBinder iBinder) {
             if (iBinder == null) {
                 return null;
             }
@@ -87,14 +87,14 @@ public interface AbstractC0000a extends IInterface {
             return (AbstractC0000a) queryLocalInterface;
         }
 
-        public static AbstractC0000a m42615s() {
+        public static AbstractC0000a m42618s() {
             return C0002a.f0b;
         }
     }
 
-    void mo42614G0(String str, int i, String str2);
+    void mo42617G0(String str, int i, String str2);
 
-    void mo42613b0(String str);
+    void mo42616b0(String str);
 
-    void mo42612s1(String str, int i, String str2, Notification notification);
+    void mo42615s1(String str, int i, String str2, Notification notification);
 }

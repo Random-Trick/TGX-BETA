@@ -16,7 +16,7 @@ public class C6244g {
     public static C6244g f19684e;
     public final HashMap<String, AtomicInteger> f19685a = new HashMap<>();
     public final HashMap<String, Integer> f19686b = new HashMap<>();
-    public final C6245a f19688d = new C6245a(m20963h());
+    public final C6245a f19688d = new C6245a(m20964h());
     public final HashMap<String, WeakReference<Bitmap>> f19687c = new HashMap<>();
 
     public class C6245a extends LruCache<String, Bitmap> {
@@ -48,7 +48,7 @@ public class C6244g {
         }
     }
 
-    public static String m20965f(Bitmap bitmap) {
+    public static String m20966f(Bitmap bitmap) {
         if (bitmap == null) {
             return "null";
         }
@@ -58,18 +58,18 @@ public class C6244g {
         return bitmap.getWidth() + "x" + bitmap.getHeight();
     }
 
-    public static HashMap<String, AtomicInteger> m20962i() {
-        return m20960k().m20964g();
+    public static HashMap<String, AtomicInteger> m20963i() {
+        return m20961k().m20965g();
     }
 
-    public static C6244g m20960k() {
+    public static C6244g m20961k() {
         if (f19684e == null) {
             f19684e = new C6244g();
         }
         return f19684e;
     }
 
-    public void m20969b(C6246h hVar, Bitmap bitmap) {
+    public void m20970b(C6246h hVar, Bitmap bitmap) {
         if (hVar != null && bitmap != null) {
             synchronized (this.f19685a) {
                 String hVar2 = hVar.toString();
@@ -89,12 +89,12 @@ public class C6244g {
         } else if (Log.isEnabled(32)) {
             Object[] objArr = new Object[2];
             objArr[0] = hVar != null ? hVar.toString() : "null";
-            objArr[1] = m20965f(bitmap);
+            objArr[1] = m20966f(bitmap);
             Log.m14711w(32, "#%s: addReference failed bitmap: %s", objArr);
         }
     }
 
-    public void m20968c(boolean z) {
+    public void m20969c(boolean z) {
         synchronized (this.f19685a) {
             if (z) {
                 this.f19685a.clear();
@@ -105,7 +105,7 @@ public class C6244g {
         }
     }
 
-    public void m20967d(int i) {
+    public void m20968d(int i) {
         synchronized (this.f19685a) {
             String str = "account" + i + "_";
             for (String str2 : this.f19688d.snapshot().keySet()) {
@@ -116,12 +116,12 @@ public class C6244g {
         }
     }
 
-    public Bitmap m20966e(C6246h hVar) {
+    public Bitmap m20967e(C6246h hVar) {
         Integer num;
         String hVar2 = hVar.toString();
         Bitmap bitmap = this.f19688d.get(hVar2);
         if (!(bitmap == null || (num = this.f19686b.get(hVar2)) == null)) {
-            hVar.mo20874q0(num.intValue());
+            hVar.mo20875q0(num.intValue());
         }
         if (bitmap == null) {
             synchronized (this.f19685a) {
@@ -136,36 +136,36 @@ public class C6244g {
         return bitmap;
     }
 
-    public HashMap<String, AtomicInteger> m20964g() {
+    public HashMap<String, AtomicInteger> m20965g() {
         return this.f19685a;
     }
 
-    public final int m20963h() {
+    public final int m20964h() {
         long b;
         if (Build.VERSION.SDK_INT >= 11) {
-            b = EnumC6459p.f20158c.mo20395b(Math.min(15, ((ActivityManager) C1379j0.m37315n().getSystemService("activity")).getMemoryClass() / 7));
+            b = EnumC6459p.f20158c.mo20396b(Math.min(15, ((ActivityManager) C1379j0.m37318n().getSystemService("activity")).getMemoryClass() / 7));
         } else {
-            b = EnumC6459p.f20158c.mo20395b(3.0d);
+            b = EnumC6459p.f20158c.mo20396b(3.0d);
         }
         return (int) b;
     }
 
-    public final boolean m20961j(String str) {
+    public final boolean m20962j(String str) {
         return this.f19688d.get(str) != null;
     }
 
-    public void m20959l(C6246h hVar, Bitmap bitmap) {
+    public void m20960l(C6246h hVar, Bitmap bitmap) {
         String hVar2 = hVar.toString();
         this.f19688d.put(hVar2, bitmap);
-        if (hVar.mo20873x() != 0) {
-            this.f19686b.put(hVar2, Integer.valueOf(hVar.mo20873x()));
+        if (hVar.mo20874x() != 0) {
+            this.f19686b.put(hVar2, Integer.valueOf(hVar.mo20874x()));
         }
         synchronized (this.f19685a) {
             this.f19687c.put(hVar2, new WeakReference<>(bitmap));
         }
     }
 
-    public void m20958m(C6246h hVar, Bitmap bitmap) {
+    public void m20959m(C6246h hVar, Bitmap bitmap) {
         if (hVar != null && bitmap != null) {
             synchronized (this.f19685a) {
                 String hVar2 = hVar.toString();
@@ -178,7 +178,7 @@ public class C6244g {
                         }
                         if (decrementAndGet == 0) {
                             this.f19685a.remove(hVar2);
-                            if (!m20961j(hVar2)) {
+                            if (!m20962j(hVar2)) {
                                 if (Log.isEnabled(32)) {
                                     Log.m14716v(32, "#%s: recycling bitmap in removeReference", hVar2);
                                 }
@@ -192,7 +192,7 @@ public class C6244g {
                 }
             }
         } else if (hVar == null && Log.isEnabled(32)) {
-            Log.m14711w(32, "#null: removeReference failed, bitmap: %s", m20965f(bitmap));
+            Log.m14711w(32, "#null: removeReference failed, bitmap: %s", m20966f(bitmap));
         }
     }
 

@@ -25,14 +25,14 @@ import qa.C8298k;
 import za.C11452o;
 
 public final class PublicSuffixDatabase {
-    public final AtomicBoolean f25338a = new AtomicBoolean(false);
-    public final CountDownLatch f25339b = new CountDownLatch(1);
-    public byte[] f25340c;
-    public byte[] f25341d;
-    public static final C7858a f25337h = new C7858a(null);
-    public static final byte[] f25334e = {(byte) 42};
-    public static final List<String> f25335f = C5303m.m23370b("*");
-    public static final PublicSuffixDatabase f25336g = new PublicSuffixDatabase();
+    public final AtomicBoolean f25341a = new AtomicBoolean(false);
+    public final CountDownLatch f25342b = new CountDownLatch(1);
+    public byte[] f25343c;
+    public byte[] f25344d;
+    public static final C7858a f25340h = new C7858a(null);
+    public static final byte[] f25337e = {(byte) 42};
+    public static final List<String> f25338f = C5303m.m23371b("*");
+    public static final PublicSuffixDatabase f25339g = new PublicSuffixDatabase();
 
     public static final class C7858a {
         public C7858a() {
@@ -101,7 +101,7 @@ public final class PublicSuffixDatabase {
                         if (length2 >= i12) {
                             if (length2 <= i12) {
                                 Charset charset = StandardCharsets.UTF_8;
-                                C8298k.m12935d(charset, "UTF_8");
+                                C8298k.m12934d(charset, "UTF_8");
                                 return new String(bArr, i6, i8, charset);
                             }
                         }
@@ -114,7 +114,7 @@ public final class PublicSuffixDatabase {
         }
 
         public final PublicSuffixDatabase m14798c() {
-            return PublicSuffixDatabase.f25336g;
+            return PublicSuffixDatabase.f25339g;
         }
 
         public C7858a(C8294g gVar) {
@@ -128,25 +128,25 @@ public final class PublicSuffixDatabase {
         String str3;
         List<String> list2;
         List<String> list3;
-        if (this.f25338a.get() || !this.f25338a.compareAndSet(false, true)) {
+        if (this.f25341a.get() || !this.f25341a.compareAndSet(false, true)) {
             try {
-                this.f25339b.await();
+                this.f25342b.await();
             } catch (InterruptedException unused) {
                 Thread.currentThread().interrupt();
             }
         } else {
             m14802e();
         }
-        if (this.f25340c != null) {
+        if (this.f25343c != null) {
             int size = list.size();
             byte[][] bArr = new byte[size];
             for (int i = 0; i < size; i++) {
                 String str4 = list.get(i);
                 Charset charset = StandardCharsets.UTF_8;
-                C8298k.m12935d(charset, "UTF_8");
+                C8298k.m12934d(charset, "UTF_8");
                 Objects.requireNonNull(str4, "null cannot be cast to non-null type java.lang.String");
                 byte[] bytes = str4.getBytes(charset);
-                C8298k.m12935d(bytes, "(this as java.lang.String).getBytes(charset)");
+                C8298k.m12934d(bytes, "(this as java.lang.String).getBytes(charset)");
                 bArr[i] = bytes;
             }
             int i2 = 0;
@@ -156,10 +156,10 @@ public final class PublicSuffixDatabase {
                     str2 = null;
                     break;
                 }
-                C7858a aVar = f25337h;
-                byte[] bArr2 = this.f25340c;
+                C7858a aVar = f25340h;
+                byte[] bArr2 = this.f25343c;
                 if (bArr2 == null) {
-                    C8298k.m12925n("publicSuffixListBytes");
+                    C8298k.m12924n("publicSuffixListBytes");
                 }
                 str2 = aVar.m14799b(bArr2, bArr, i2);
                 if (str2 != null) {
@@ -171,11 +171,11 @@ public final class PublicSuffixDatabase {
                 byte[][] bArr3 = (byte[][]) bArr.clone();
                 int length = bArr3.length - 1;
                 for (int i3 = 0; i3 < length; i3++) {
-                    bArr3[i3] = f25334e;
-                    C7858a aVar2 = f25337h;
-                    byte[] bArr4 = this.f25340c;
+                    bArr3[i3] = f25337e;
+                    C7858a aVar2 = f25340h;
+                    byte[] bArr4 = this.f25343c;
                     if (bArr4 == null) {
-                        C8298k.m12925n("publicSuffixListBytes");
+                        C8298k.m12924n("publicSuffixListBytes");
                     }
                     String b = aVar2.m14799b(bArr4, bArr3, i3);
                     if (b != null) {
@@ -192,10 +192,10 @@ public final class PublicSuffixDatabase {
                     if (i5 >= i4) {
                         break;
                     }
-                    C7858a aVar3 = f25337h;
-                    byte[] bArr5 = this.f25341d;
+                    C7858a aVar3 = f25340h;
+                    byte[] bArr5 = this.f25344d;
                     if (bArr5 == null) {
-                        C8298k.m12925n("publicSuffixExceptionListBytes");
+                        C8298k.m12924n("publicSuffixExceptionListBytes");
                     }
                     String b2 = aVar3.m14799b(bArr5, bArr, i5);
                     if (b2 != null) {
@@ -208,13 +208,13 @@ public final class PublicSuffixDatabase {
             if (str != null) {
                 return C11452o.m587h0('!' + str, new char[]{'.'}, false, 0, 6, null);
             } else if (str2 == null && str3 == null) {
-                return f25335f;
+                return f25338f;
             } else {
                 if (str2 == null || (list2 = C11452o.m587h0(str2, new char[]{'.'}, false, 0, 6, null)) == null) {
-                    list2 = C5304n.m23366f();
+                    list2 = C5304n.m23367f();
                 }
                 if (str3 == null || (list3 = C11452o.m587h0(str3, new char[]{'.'}, false, 0, 6, null)) == null) {
-                    list3 = C5304n.m23366f();
+                    list3 = C5304n.m23367f();
                 }
                 return list2.size() > list3.size() ? list2 : list3;
             }
@@ -226,9 +226,9 @@ public final class PublicSuffixDatabase {
     public final String m14804c(String str) {
         int i;
         int i2;
-        C8298k.m12934e(str, "domain");
+        C8298k.m12933e(str, "domain");
         String unicode = IDN.toUnicode(str);
-        C8298k.m12935d(unicode, "unicodeDomain");
+        C8298k.m12934d(unicode, "unicodeDomain");
         List<String> f = m14801f(unicode);
         List<String> b = m14805b(f);
         if (f.size() == b.size() && b.get(0).charAt(0) != '!') {
@@ -241,25 +241,25 @@ public final class PublicSuffixDatabase {
             i2 = f.size();
             i = b.size() + 1;
         }
-        return C10471i.m5062h(C10471i.m5068b(C5312v.m23322y(m14801f(str)), i2 - i), ".", null, null, 0, null, null, 62, null);
+        return C10471i.m5062h(C10471i.m5068b(C5312v.m23323y(m14801f(str)), i2 - i), ".", null, null, 0, null, null, 62, null);
     }
 
     public final void m14803d() {
         InputStream resourceAsStream = PublicSuffixDatabase.class.getResourceAsStream("publicsuffixes.gz");
         if (resourceAsStream != null) {
-            AbstractC4551g b = C4560o.m27378b(new C4557l(C4560o.m27370j(resourceAsStream)));
+            AbstractC4551g b = C4560o.m27380b(new C4557l(C4560o.m27372j(resourceAsStream)));
             th = null;
             try {
-                byte[] g0 = b.mo27332g0(b.readInt());
-                byte[] g02 = b.mo27332g0(b.readInt());
+                byte[] g0 = b.mo27334g0(b.readInt());
+                byte[] g02 = b.mo27334g0(b.readInt());
                 C5060q qVar = C5060q.f17066a;
                 synchronized (this) {
-                    C8298k.m12936c(g0);
-                    this.f25340c = g0;
-                    C8298k.m12936c(g02);
-                    this.f25341d = g02;
+                    C8298k.m12935c(g0);
+                    this.f25343c = g0;
+                    C8298k.m12935c(g02);
+                    this.f25344d = g02;
                 }
-                this.f25339b.countDown();
+                this.f25342b.countDown();
             } finally {
                 try {
                     throw th;
@@ -280,7 +280,7 @@ public final class PublicSuffixDatabase {
                     Thread.interrupted();
                     z = true;
                 } catch (IOException e) {
-                    C2083h.f7326c.m35674g().m35686j("Failed to read public suffix list", 5, e);
+                    C2083h.f7326c.m35677g().m35689j("Failed to read public suffix list", 5, e);
                     if (z) {
                         Thread.currentThread().interrupt();
                         return;
@@ -301,6 +301,6 @@ public final class PublicSuffixDatabase {
 
     public final List<String> m14801f(String str) {
         List<String> h0 = C11452o.m587h0(str, new char[]{'.'}, false, 0, 6, null);
-        return C8298k.m12937b((String) C5312v.m23339I(h0), "") ? C5312v.m23347A(h0, 1) : h0;
+        return C8298k.m12936b((String) C5312v.m23340I(h0), "") ? C5312v.m23348A(h0, 1) : h0;
     }
 }

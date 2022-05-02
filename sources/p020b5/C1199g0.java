@@ -18,24 +18,24 @@ public final class C1199g0 implements AbstractC1221n {
         }
 
         @Override
-        public void mo37906a() {
-            ((Message) C1186a.m38185e(this.f4500a)).sendToTarget();
-            m38072b();
+        public void mo37909a() {
+            ((Message) C1186a.m38188e(this.f4500a)).sendToTarget();
+            m38075b();
         }
 
-        public final void m38072b() {
+        public final void m38075b() {
             this.f4500a = null;
             this.f4501b = null;
-            C1199g0.m38073n(this);
+            C1199g0.m38076n(this);
         }
 
-        public boolean m38071c(Handler handler) {
-            boolean sendMessageAtFrontOfQueue = handler.sendMessageAtFrontOfQueue((Message) C1186a.m38185e(this.f4500a));
-            m38072b();
+        public boolean m38074c(Handler handler) {
+            boolean sendMessageAtFrontOfQueue = handler.sendMessageAtFrontOfQueue((Message) C1186a.m38188e(this.f4500a));
+            m38075b();
             return sendMessageAtFrontOfQueue;
         }
 
-        public C1201b m38070d(Message message, C1199g0 g0Var) {
+        public C1201b m38073d(Message message, C1199g0 g0Var) {
             this.f4500a = message;
             this.f4501b = g0Var;
             return this;
@@ -46,7 +46,7 @@ public final class C1199g0 implements AbstractC1221n {
         this.f4499a = handler;
     }
 
-    public static C1201b m38074m() {
+    public static C1201b m38077m() {
         C1201b bVar;
         List<C1201b> list = f4498b;
         synchronized (list) {
@@ -59,7 +59,7 @@ public final class C1199g0 implements AbstractC1221n {
         return bVar;
     }
 
-    public static void m38073n(C1201b bVar) {
+    public static void m38076n(C1201b bVar) {
         List<C1201b> list = f4498b;
         synchronized (list) {
             if (list.size() < 50) {
@@ -69,57 +69,57 @@ public final class C1199g0 implements AbstractC1221n {
     }
 
     @Override
-    public AbstractC1221n.AbstractC1222a mo37917a(int i, int i2, int i3) {
-        return m38074m().m38070d(this.f4499a.obtainMessage(i, i2, i3), this);
+    public AbstractC1221n.AbstractC1222a mo37920a(int i, int i2, int i3) {
+        return m38077m().m38073d(this.f4499a.obtainMessage(i, i2, i3), this);
     }
 
     @Override
-    public boolean mo37916b(AbstractC1221n.AbstractC1222a aVar) {
-        return ((C1201b) aVar).m38071c(this.f4499a);
+    public boolean mo37919b(AbstractC1221n.AbstractC1222a aVar) {
+        return ((C1201b) aVar).m38074c(this.f4499a);
     }
 
     @Override
-    public boolean mo37915c(Runnable runnable) {
+    public boolean mo37918c(Runnable runnable) {
         return this.f4499a.post(runnable);
     }
 
     @Override
-    public AbstractC1221n.AbstractC1222a mo37914d(int i) {
-        return m38074m().m38070d(this.f4499a.obtainMessage(i), this);
+    public AbstractC1221n.AbstractC1222a mo37917d(int i) {
+        return m38077m().m38073d(this.f4499a.obtainMessage(i), this);
     }
 
     @Override
-    public boolean mo37913e(int i) {
+    public boolean mo37916e(int i) {
         return this.f4499a.hasMessages(i);
     }
 
     @Override
-    public boolean mo37912f(int i) {
+    public boolean mo37915f(int i) {
         return this.f4499a.sendEmptyMessage(i);
     }
 
     @Override
-    public AbstractC1221n.AbstractC1222a mo37911g(int i, int i2, int i3, Object obj) {
-        return m38074m().m38070d(this.f4499a.obtainMessage(i, i2, i3, obj), this);
+    public AbstractC1221n.AbstractC1222a mo37914g(int i, int i2, int i3, Object obj) {
+        return m38077m().m38073d(this.f4499a.obtainMessage(i, i2, i3, obj), this);
     }
 
     @Override
-    public boolean mo37910h(int i, long j) {
+    public boolean mo37913h(int i, long j) {
         return this.f4499a.sendEmptyMessageAtTime(i, j);
     }
 
     @Override
-    public void mo37909i(int i) {
+    public void mo37912i(int i) {
         this.f4499a.removeMessages(i);
     }
 
     @Override
-    public AbstractC1221n.AbstractC1222a mo37908j(int i, Object obj) {
-        return m38074m().m38070d(this.f4499a.obtainMessage(i, obj), this);
+    public AbstractC1221n.AbstractC1222a mo37911j(int i, Object obj) {
+        return m38077m().m38073d(this.f4499a.obtainMessage(i, obj), this);
     }
 
     @Override
-    public void mo37907k(Object obj) {
+    public void mo37910k(Object obj) {
         this.f4499a.removeCallbacksAndMessages(obj);
     }
 }

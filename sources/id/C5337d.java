@@ -5,7 +5,7 @@ public class C5337d extends AbstractC5333b {
         super(j, str, str2, str3, false);
     }
 
-    public static String m23202j(String str) {
+    public static String m23203j(String str) {
         return "avatar";
     }
 }

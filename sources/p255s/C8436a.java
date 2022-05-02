@@ -11,64 +11,64 @@ import p255s.C8453c3;
 import p266t.C8927z;
 
 public final class C8436a implements C8453c3.AbstractC8455b {
-    public final C8927z f27393a;
-    public final Range<Float> f27394b;
-    public C6287c.C6288a<Void> f27396d;
-    public float f27395c = 1.0f;
-    public float f27397e = 1.0f;
+    public final C8927z f27396a;
+    public final Range<Float> f27397b;
+    public C6287c.C6288a<Void> f27399d;
+    public float f27398c = 1.0f;
+    public float f27400e = 1.0f;
 
     public C8436a(C8927z zVar) {
-        this.f27393a = zVar;
-        this.f27394b = (Range) zVar.m10952a(CameraCharacteristics.CONTROL_ZOOM_RATIO_RANGE);
+        this.f27396a = zVar;
+        this.f27397b = (Range) zVar.m10951a(CameraCharacteristics.CONTROL_ZOOM_RATIO_RANGE);
     }
 
     @Override
-    public void mo12065a(TotalCaptureResult totalCaptureResult) {
-        if (this.f27396d != null) {
+    public void mo12064a(TotalCaptureResult totalCaptureResult) {
+        if (this.f27399d != null) {
             CaptureRequest request = totalCaptureResult.getRequest();
             Float f = request == null ? null : (Float) request.get(CaptureRequest.CONTROL_ZOOM_RATIO);
             if (f != null) {
-                if (this.f27397e == f.floatValue()) {
-                    this.f27396d.m20716c(null);
-                    this.f27396d = null;
+                if (this.f27400e == f.floatValue()) {
+                    this.f27399d.m20717c(null);
+                    this.f27399d = null;
                 }
             }
         }
     }
 
     @Override
-    public void mo12064b(C8333a.C8334a aVar) {
-        aVar.m12790e(CaptureRequest.CONTROL_ZOOM_RATIO, Float.valueOf(this.f27395c));
+    public void mo12063b(C8333a.C8334a aVar) {
+        aVar.m12789e(CaptureRequest.CONTROL_ZOOM_RATIO, Float.valueOf(this.f27398c));
     }
 
     @Override
-    public float mo12063c() {
-        return this.f27394b.getUpper().floatValue();
+    public float mo12062c() {
+        return this.f27397b.getUpper().floatValue();
     }
 
     @Override
-    public float mo12062d() {
-        return this.f27394b.getLower().floatValue();
+    public float mo12061d() {
+        return this.f27397b.getLower().floatValue();
     }
 
     @Override
-    public void mo12061e(float f, C6287c.C6288a<Void> aVar) {
-        this.f27395c = f;
-        C6287c.C6288a<Void> aVar2 = this.f27396d;
+    public void mo12060e(float f, C6287c.C6288a<Void> aVar) {
+        this.f27398c = f;
+        C6287c.C6288a<Void> aVar2 = this.f27399d;
         if (aVar2 != null) {
-            aVar2.m20713f(new AbstractC0615m.C0616a("There is a new zoomRatio being set"));
+            aVar2.m20714f(new AbstractC0615m.C0616a("There is a new zoomRatio being set"));
         }
-        this.f27397e = this.f27395c;
-        this.f27396d = aVar;
+        this.f27400e = this.f27398c;
+        this.f27399d = aVar;
     }
 
     @Override
-    public void mo12060f() {
-        this.f27395c = 1.0f;
-        C6287c.C6288a<Void> aVar = this.f27396d;
+    public void mo12059f() {
+        this.f27398c = 1.0f;
+        C6287c.C6288a<Void> aVar = this.f27399d;
         if (aVar != null) {
-            aVar.m20713f(new AbstractC0615m.C0616a("Camera is not active."));
-            this.f27396d = null;
+            aVar.m20714f(new AbstractC0615m.C0616a("Camera is not active."));
+            this.f27399d = null;
         }
     }
 }

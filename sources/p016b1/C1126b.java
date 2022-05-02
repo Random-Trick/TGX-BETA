@@ -1,7 +1,7 @@
 package p016b1;
 
 public class C1126b {
-    public static void m38335a(Object obj, StringBuilder sb2) {
+    public static void m38338a(Object obj, StringBuilder sb2) {
         int lastIndexOf;
         if (obj == null) {
             sb2.append("null");

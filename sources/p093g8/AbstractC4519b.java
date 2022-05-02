@@ -9,9 +9,9 @@ public abstract class AbstractC4519b {
         this.f14901a = gVar;
     }
 
-    public abstract C5022a mo24254a();
+    public abstract C5022a mo24255a();
 
-    public final AbstractC4524g m27502b() {
+    public final AbstractC4524g m27504b() {
         return this.f14901a;
     }
 }

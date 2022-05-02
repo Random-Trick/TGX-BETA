@@ -4,14 +4,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public final class C8053a {
-    public static final Map f26224a;
-    public static final Map f26225b;
+    public static final Map f26227a;
+    public static final Map f26228b;
 
     static {
         HashMap hashMap = new HashMap();
-        f26224a = hashMap;
+        f26227a = hashMap;
         HashMap hashMap2 = new HashMap();
-        f26225b = hashMap2;
+        f26228b = hashMap2;
         hashMap.put(-1, "The requesting app is unavailable (e.g. unpublished, nonexistent version code).");
         hashMap.put(-2, "The requested pack is not available.");
         hashMap.put(-3, "The request is invalid.");
@@ -38,14 +38,14 @@ public final class C8053a {
         hashMap2.put(-100, "INTERNAL_ERROR");
     }
 
-    public static String m13692a(int i) {
-        Map map = f26224a;
+    public static String m13691a(int i) {
+        Map map = f26227a;
         Integer valueOf = Integer.valueOf(i);
         if (!map.containsKey(valueOf)) {
             return "";
         }
         String str = (String) map.get(valueOf);
-        String str2 = (String) f26225b.get(valueOf);
+        String str2 = (String) f26228b.get(valueOf);
         StringBuilder sb2 = new StringBuilder(String.valueOf(str).length() + 113 + String.valueOf(str2).length());
         sb2.append(str);
         sb2.append(" (https://developer.android.com/reference/com/google/android/play/core/assetpacks/model/AssetPackErrorCode.html#");

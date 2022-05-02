@@ -8,6 +8,6 @@ public final class C2958r4 implements AbstractC5919k {
 
     @Override
     public final void mo3250a(int i) {
-        View$OnClickListenerC2805o4.C2810e.m33267b(i);
+        View$OnClickListenerC2805o4.C2810e.m33270b(i);
     }
 }

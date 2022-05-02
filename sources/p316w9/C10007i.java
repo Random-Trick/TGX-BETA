@@ -3,15 +3,15 @@ package p316w9;
 import android.util.Log;
 
 public class C10007i {
-    public static int f32614b;
-    public final String f32615a;
+    public static int f32617b;
+    public final String f32618a;
 
     public C10007i(String str) {
-        this.f32615a = str;
+        this.f32618a = str;
     }
 
     public static void m6264f(int i) {
-        f32614b = i;
+        f32617b = i;
     }
 
     public void m6269a(String str) {
@@ -33,19 +33,19 @@ public class C10007i {
     public final void m6265e(int i, String str, Throwable th) {
         if (m6263g(i)) {
             if (i == 0) {
-                Log.v(this.f32615a, str, th);
+                Log.v(this.f32618a, str, th);
             } else if (i == 1) {
-                Log.i(this.f32615a, str, th);
+                Log.i(this.f32618a, str, th);
             } else if (i == 2) {
-                Log.w(this.f32615a, str, th);
+                Log.w(this.f32618a, str, th);
             } else if (i == 3) {
-                Log.e(this.f32615a, str, th);
+                Log.e(this.f32618a, str, th);
             }
         }
     }
 
     public final boolean m6263g(int i) {
-        return f32614b <= i;
+        return f32617b <= i;
     }
 
     public void m6262h(String str) {

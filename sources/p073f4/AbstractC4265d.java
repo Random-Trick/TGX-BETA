@@ -12,13 +12,13 @@ public interface AbstractC4265d {
 
     public class C4266a implements AbstractC4265d {
         @Override
-        public boolean mo28321a(C6600g1 g1Var) {
+        public boolean mo28323a(C6600g1 g1Var) {
             String str = g1Var.f20575U;
             return "application/id3".equals(str) || "application/x-emsg".equals(str) || "application/x-scte35".equals(str) || "application/x-icy".equals(str) || "application/vnd.dvb.ait".equals(str);
         }
 
         @Override
-        public AbstractC4264c mo28320b(C6600g1 g1Var) {
+        public AbstractC4264c mo28322b(C6600g1 g1Var) {
             String str = g1Var.f20575U;
             if (str != null) {
                 char c = 65535;
@@ -72,7 +72,7 @@ public interface AbstractC4265d {
         }
     }
 
-    boolean mo28321a(C6600g1 g1Var);
+    boolean mo28323a(C6600g1 g1Var);
 
-    AbstractC4264c mo28320b(C6600g1 g1Var);
+    AbstractC4264c mo28322b(C6600g1 g1Var);
 }

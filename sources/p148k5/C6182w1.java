@@ -14,7 +14,7 @@ public final class C6182w1 extends AbstractC6168t {
     }
 
     @Override
-    public final void mo21098b(C5850a.AbstractC5852b bVar, C6777m<Boolean> mVar) {
+    public final void mo21099b(C5850a.AbstractC5852b bVar, C6777m<Boolean> mVar) {
         AbstractC6147o oVar;
         oVar = this.f19578b.f19478b;
         oVar.mo17211a(bVar, mVar);

@@ -11,23 +11,23 @@ public final class C6557a3 extends AbstractC6684q2 {
     public final float f20407c;
 
     public C6557a3(int i) {
-        C1186a.m38188b(i > 0, "maxStars must be a positive integer");
+        C1186a.m38191b(i > 0, "maxStars must be a positive integer");
         this.f20406b = i;
         this.f20407c = -1.0f;
     }
 
-    public static String m20109c(int i) {
+    public static String m20110c(int i) {
         return Integer.toString(i, 36);
     }
 
-    public static C6557a3 m20107e(Bundle bundle) {
+    public static C6557a3 m20108e(Bundle bundle) {
         boolean z = false;
-        if (bundle.getInt(m20109c(0), -1) == 2) {
+        if (bundle.getInt(m20110c(0), -1) == 2) {
             z = true;
         }
-        C1186a.m38189a(z);
-        int i = bundle.getInt(m20109c(1), 5);
-        float f = bundle.getFloat(m20109c(2), -1.0f);
+        C1186a.m38192a(z);
+        int i = bundle.getInt(m20110c(1), 5);
+        float f = bundle.getFloat(m20110c(2), -1.0f);
         if (f == -1.0f) {
             return new C6557a3(i);
         }
@@ -48,8 +48,8 @@ public final class C6557a3 extends AbstractC6684q2 {
 
     public C6557a3(int i, float f) {
         boolean z = true;
-        C1186a.m38188b(i > 0, "maxStars must be a positive integer");
-        C1186a.m38188b((f < 0.0f || f > ((float) i)) ? false : z, "starRating is out of range [0, maxStars]");
+        C1186a.m38191b(i > 0, "maxStars must be a positive integer");
+        C1186a.m38191b((f < 0.0f || f > ((float) i)) ? false : z, "starRating is out of range [0, maxStars]");
         this.f20406b = i;
         this.f20407c = f;
     }

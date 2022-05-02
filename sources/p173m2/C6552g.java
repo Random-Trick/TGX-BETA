@@ -18,7 +18,7 @@ public class C6552g {
         this.f20396d = new C6551f(applicationContext, aVar);
     }
 
-    public static synchronized C6552g m20120c(Context context, AbstractC8354a aVar) {
+    public static synchronized C6552g m20121c(Context context, AbstractC8354a aVar) {
         C6552g gVar;
         synchronized (C6552g.class) {
             if (f20392e == null) {
@@ -29,19 +29,19 @@ public class C6552g {
         return gVar;
     }
 
-    public C6542a m20122a() {
+    public C6542a m20123a() {
         return this.f20393a;
     }
 
-    public C6543b m20121b() {
+    public C6543b m20122b() {
         return this.f20394b;
     }
 
-    public C6548e m20119d() {
+    public C6548e m20120d() {
         return this.f20395c;
     }
 
-    public C6551f m20118e() {
+    public C6551f m20119e() {
         return this.f20396d;
     }
 }

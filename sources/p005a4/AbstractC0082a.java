@@ -18,15 +18,15 @@ public abstract class AbstractC0082a {
             this.f280b = j;
         }
 
-        public void m42416d(C0083a aVar) {
+        public void m42419d(C0083a aVar) {
             this.f282d.add(aVar);
         }
 
-        public void m42415e(C0084b bVar) {
+        public void m42418e(C0084b bVar) {
             this.f281c.add(bVar);
         }
 
-        public C0083a m42414f(int i) {
+        public C0083a m42417f(int i) {
             int size = this.f282d.size();
             for (int i2 = 0; i2 < size; i2++) {
                 C0083a aVar = this.f282d.get(i2);
@@ -37,7 +37,7 @@ public abstract class AbstractC0082a {
             return null;
         }
 
-        public C0084b m42413g(int i) {
+        public C0084b m42416g(int i) {
             int size = this.f281c.size();
             for (int i2 = 0; i2 < size; i2++) {
                 C0084b bVar = this.f281c.get(i2);
@@ -50,7 +50,7 @@ public abstract class AbstractC0082a {
 
         @Override
         public String toString() {
-            String a = AbstractC0082a.m42419a(this.f279a);
+            String a = AbstractC0082a.m42422a(this.f279a);
             String arrays = Arrays.toString(this.f281c.toArray());
             String arrays2 = Arrays.toString(this.f282d.toArray());
             StringBuilder sb2 = new StringBuilder(String.valueOf(a).length() + 22 + String.valueOf(arrays).length() + String.valueOf(arrays2).length());
@@ -76,7 +76,7 @@ public abstract class AbstractC0082a {
         this.f279a = i;
     }
 
-    public static String m42419a(int i) {
+    public static String m42422a(int i) {
         StringBuilder sb2 = new StringBuilder(4);
         sb2.append((char) ((i >> 24) & 255));
         sb2.append((char) ((i >> 16) & 255));
@@ -85,15 +85,15 @@ public abstract class AbstractC0082a {
         return sb2.toString();
     }
 
-    public static int m42418b(int i) {
+    public static int m42421b(int i) {
         return i & 16777215;
     }
 
-    public static int m42417c(int i) {
+    public static int m42420c(int i) {
         return (i >> 24) & 255;
     }
 
     public String toString() {
-        return m42419a(this.f279a);
+        return m42422a(this.f279a);
     }
 }

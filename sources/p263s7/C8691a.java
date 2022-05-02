@@ -11,39 +11,39 @@ import p135j7.AbstractC5895c;
 import p227q0.C8117a;
 
 public class C8691a {
-    public final Context f28013a;
-    public final SharedPreferences f28014b;
-    public final AbstractC5895c f28015c;
-    public boolean f28016d = m11728c();
+    public final Context f28016a;
+    public final SharedPreferences f28017b;
+    public final AbstractC5895c f28018c;
+    public boolean f28019d = m11727c();
 
     public C8691a(Context context, String str, AbstractC5895c cVar) {
-        Context a = m11730a(context);
-        this.f28013a = a;
-        this.f28014b = a.getSharedPreferences("com.google.firebase.common.prefs:" + str, 0);
-        this.f28015c = cVar;
+        Context a = m11729a(context);
+        this.f28016a = a;
+        this.f28017b = a.getSharedPreferences("com.google.firebase.common.prefs:" + str, 0);
+        this.f28018c = cVar;
     }
 
-    public static Context m11730a(Context context) {
-        return Build.VERSION.SDK_INT < 24 ? context : C8117a.m13442b(context);
+    public static Context m11729a(Context context) {
+        return Build.VERSION.SDK_INT < 24 ? context : C8117a.m13441b(context);
     }
 
-    public synchronized boolean m11729b() {
-        return this.f28016d;
+    public synchronized boolean m11728b() {
+        return this.f28019d;
     }
 
-    public final boolean m11728c() {
-        if (this.f28014b.contains("firebase_data_collection_default_enabled")) {
-            return this.f28014b.getBoolean("firebase_data_collection_default_enabled", true);
+    public final boolean m11727c() {
+        if (this.f28017b.contains("firebase_data_collection_default_enabled")) {
+            return this.f28017b.getBoolean("firebase_data_collection_default_enabled", true);
         }
-        return m11727d();
+        return m11726d();
     }
 
-    public final boolean m11727d() {
+    public final boolean m11726d() {
         ApplicationInfo applicationInfo;
         Bundle bundle;
         try {
-            PackageManager packageManager = this.f28013a.getPackageManager();
-            if (packageManager == null || (applicationInfo = packageManager.getApplicationInfo(this.f28013a.getPackageName(), Log.TAG_YOUTUBE)) == null || (bundle = applicationInfo.metaData) == null || !bundle.containsKey("firebase_data_collection_default_enabled")) {
+            PackageManager packageManager = this.f28016a.getPackageManager();
+            if (packageManager == null || (applicationInfo = packageManager.getApplicationInfo(this.f28016a.getPackageName(), Log.TAG_YOUTUBE)) == null || (bundle = applicationInfo.metaData) == null || !bundle.containsKey("firebase_data_collection_default_enabled")) {
                 return true;
             }
             return applicationInfo.metaData.getBoolean("firebase_data_collection_default_enabled");

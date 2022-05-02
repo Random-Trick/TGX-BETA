@@ -14,7 +14,7 @@ public final class C5812z implements Spliterator.OfInt {
         this.f18531a = a;
     }
 
-    public static Spliterator.OfInt m22121a(AbstractC5462A a) {
+    public static Spliterator.OfInt m22122a(AbstractC5462A a) {
         if (a == null) {
             return null;
         }
@@ -43,7 +43,7 @@ public final class C5812z implements Spliterator.OfInt {
 
     @Override
     public void forEachRemaining2(IntConsumer intConsumer) {
-        this.f18531a.mo22180n(C5529k.m22484a(intConsumer));
+        this.f18531a.mo22181n(C5529k.m22485a(intConsumer));
     }
 
     @Override
@@ -68,11 +68,11 @@ public final class C5812z implements Spliterator.OfInt {
 
     @Override
     public boolean tryAdvance(java.util.function.Consumer consumer) {
-        return this.f18531a.mo22124a(Consumer.VivifiedWrapper.convert(consumer));
+        return this.f18531a.mo22125a(Consumer.VivifiedWrapper.convert(consumer));
     }
 
     @Override
     public boolean tryAdvance2(IntConsumer intConsumer) {
-        return this.f18531a.mo22181i(C5529k.m22484a(intConsumer));
+        return this.f18531a.mo22182i(C5529k.m22485a(intConsumer));
     }
 }

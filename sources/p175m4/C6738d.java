@@ -44,11 +44,11 @@ public final class C6738d extends AbstractC6736b {
             this(i, j, j2);
         }
 
-        public static C6740b m19171a(Parcel parcel) {
+        public static C6740b m19172a(Parcel parcel) {
             return new C6740b(parcel.readInt(), parcel.readLong(), parcel.readLong());
         }
 
-        public void m19170b(Parcel parcel) {
+        public void m19171b(Parcel parcel) {
             parcel.writeInt(this.f21206a);
             parcel.writeLong(this.f21207b);
             parcel.writeLong(this.f21208c);
@@ -65,7 +65,7 @@ public final class C6738d extends AbstractC6736b {
         this(parcel);
     }
 
-    public static C6738d m19174a(C1189b0 b0Var, long j, C1205i0 i0Var) {
+    public static C6738d m19175a(C1189b0 b0Var, long j, C1205i0 i0Var) {
         boolean z;
         int i;
         int i2;
@@ -78,39 +78,39 @@ public final class C6738d extends AbstractC6736b {
         boolean z4;
         long j4;
         boolean z5;
-        long F = b0Var.m38154F();
-        boolean z6 = (b0Var.m38156D() & Log.TAG_YOUTUBE) != 0;
+        long F = b0Var.m38157F();
+        boolean z6 = (b0Var.m38159D() & Log.TAG_YOUTUBE) != 0;
         List emptyList = Collections.emptyList();
         if (!z6) {
-            int D = b0Var.m38156D();
+            int D = b0Var.m38159D();
             boolean z7 = (D & Log.TAG_YOUTUBE) != 0;
             boolean z8 = (D & 64) != 0;
             boolean z9 = (D & 32) != 0;
             boolean z10 = (D & 16) != 0;
-            long b = (!z8 || z10) ? -9223372036854775807L : C6747g.m19153b(b0Var, j);
+            long b = (!z8 || z10) ? -9223372036854775807L : C6747g.m19154b(b0Var, j);
             if (!z8) {
-                int D2 = b0Var.m38156D();
+                int D2 = b0Var.m38159D();
                 ArrayList arrayList = new ArrayList(D2);
                 for (int i4 = 0; i4 < D2; i4++) {
-                    int D3 = b0Var.m38156D();
-                    long b2 = !z10 ? C6747g.m19153b(b0Var, j) : -9223372036854775807L;
-                    arrayList.add(new C6740b(D3, b2, i0Var.m38052b(b2), null));
+                    int D3 = b0Var.m38159D();
+                    long b2 = !z10 ? C6747g.m19154b(b0Var, j) : -9223372036854775807L;
+                    arrayList.add(new C6740b(D3, b2, i0Var.m38055b(b2), null));
                 }
                 emptyList = arrayList;
             }
             if (z9) {
-                long D4 = b0Var.m38156D();
+                long D4 = b0Var.m38159D();
                 boolean z11 = (128 & D4) != 0;
-                j4 = ((((D4 & 1) << 32) | b0Var.m38154F()) * 1000) / 90;
+                j4 = ((((D4 & 1) << 32) | b0Var.m38157F()) * 1000) / 90;
                 z5 = z11;
             } else {
                 z5 = false;
                 j4 = -9223372036854775807L;
             }
-            i3 = b0Var.m38150J();
+            i3 = b0Var.m38153J();
             z = z8;
-            i2 = b0Var.m38156D();
-            i = b0Var.m38156D();
+            i2 = b0Var.m38159D();
+            i = b0Var.m38159D();
             list = emptyList;
             j3 = b;
             z2 = z5;
@@ -129,7 +129,7 @@ public final class C6738d extends AbstractC6736b {
             i = 0;
             z = false;
         }
-        return new C6738d(F, z6, z4, z, z3, j3, i0Var.m38052b(j3), list, z2, j2, i3, i2, i);
+        return new C6738d(F, z6, z4, z, z3, j3, i0Var.m38055b(j3), list, z2, j2, i3, i2, i);
     }
 
     @Override
@@ -144,7 +144,7 @@ public final class C6738d extends AbstractC6736b {
         int size = this.f21197Q.size();
         parcel.writeInt(size);
         for (int i2 = 0; i2 < size; i2++) {
-            this.f21197Q.get(i2).m19170b(parcel);
+            this.f21197Q.get(i2).m19171b(parcel);
         }
         parcel.writeByte(this.f21198R ? (byte) 1 : (byte) 0);
         parcel.writeLong(this.f21199S);
@@ -181,7 +181,7 @@ public final class C6738d extends AbstractC6736b {
         int readInt = parcel.readInt();
         ArrayList arrayList = new ArrayList(readInt);
         for (int i = 0; i < readInt; i++) {
-            arrayList.add(C6740b.m19171a(parcel));
+            arrayList.add(C6740b.m19172a(parcel));
         }
         this.f21197Q = Collections.unmodifiableList(arrayList);
         this.f21198R = parcel.readByte() == 1 ? true : z;

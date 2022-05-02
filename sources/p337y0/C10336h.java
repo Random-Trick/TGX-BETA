@@ -5,17 +5,17 @@ import java.util.HashSet;
 import java.util.Locale;
 
 public final class C10336h implements AbstractC10337i {
-    public static final Locale[] f33194c = new Locale[0];
-    public static final Locale f33195d = new Locale("en", "XA");
-    public static final Locale f33196e = new Locale("ar", "XB");
-    public static final Locale f33197f = C10335g.m5404b("en-Latn");
-    public final Locale[] f33198a;
-    public final String f33199b;
+    public static final Locale[] f33197c = new Locale[0];
+    public static final Locale f33198d = new Locale("en", "XA");
+    public static final Locale f33199e = new Locale("ar", "XB");
+    public static final Locale f33200f = C10335g.m5404b("en-Latn");
+    public final Locale[] f33201a;
+    public final String f33202b;
 
     public C10336h(Locale... localeArr) {
         if (localeArr.length == 0) {
-            this.f33198a = f33194c;
-            this.f33199b = "";
+            this.f33201a = f33197c;
+            this.f33202b = "";
             return;
         }
         ArrayList arrayList = new ArrayList();
@@ -37,8 +37,8 @@ public final class C10336h implements AbstractC10337i {
                 throw new NullPointerException("list[" + i + "] is null");
             }
         }
-        this.f33198a = (Locale[]) arrayList.toArray(new Locale[arrayList.size()]);
-        this.f33199b = sb2.toString();
+        this.f33201a = (Locale[]) arrayList.toArray(new Locale[arrayList.size()]);
+        this.f33202b = sb2.toString();
     }
 
     public static void m5400b(StringBuilder sb2, Locale locale) {
@@ -62,13 +62,13 @@ public final class C10336h implements AbstractC10337i {
         if (!(obj instanceof C10336h)) {
             return false;
         }
-        Locale[] localeArr = ((C10336h) obj).f33198a;
-        if (this.f33198a.length != localeArr.length) {
+        Locale[] localeArr = ((C10336h) obj).f33201a;
+        if (this.f33201a.length != localeArr.length) {
             return false;
         }
         int i = 0;
         while (true) {
-            Locale[] localeArr2 = this.f33198a;
+            Locale[] localeArr2 = this.f33201a;
             if (i >= localeArr2.length) {
                 return true;
             }
@@ -82,7 +82,7 @@ public final class C10336h implements AbstractC10337i {
     @Override
     public Locale get(int i) {
         if (i >= 0) {
-            Locale[] localeArr = this.f33198a;
+            Locale[] localeArr = this.f33201a;
             if (i < localeArr.length) {
                 return localeArr[i];
             }
@@ -94,7 +94,7 @@ public final class C10336h implements AbstractC10337i {
         int i = 1;
         int i2 = 0;
         while (true) {
-            Locale[] localeArr = this.f33198a;
+            Locale[] localeArr = this.f33201a;
             if (i2 >= localeArr.length) {
                 return i;
             }
@@ -105,7 +105,7 @@ public final class C10336h implements AbstractC10337i {
 
     @Override
     public int size() {
-        return this.f33198a.length;
+        return this.f33201a.length;
     }
 
     public String toString() {
@@ -113,10 +113,10 @@ public final class C10336h implements AbstractC10337i {
         sb2.append("[");
         int i = 0;
         while (true) {
-            Locale[] localeArr = this.f33198a;
+            Locale[] localeArr = this.f33201a;
             if (i < localeArr.length) {
                 sb2.append(localeArr[i]);
-                if (i < this.f33198a.length - 1) {
+                if (i < this.f33201a.length - 1) {
                     sb2.append(',');
                 }
                 i++;

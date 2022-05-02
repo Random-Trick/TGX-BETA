@@ -7,7 +7,7 @@ public final class C5806t implements AbstractC5535q {
     public final Consumer f18527a;
 
     @Override
-    public final void mo22127e(long j) {
-        this.f18527a.mo22128k(Long.valueOf(j));
+    public final void mo22128e(long j) {
+        this.f18527a.mo22129k(Long.valueOf(j));
     }
 }

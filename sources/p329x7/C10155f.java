@@ -6,10 +6,10 @@ import p047d7.AbstractC3870e;
 import p047d7.AbstractC3876h;
 
 public final class C10155f implements AbstractC3876h {
-    public static final C10155f f32855a = new C10155f();
+    public static final C10155f f32858a = new C10155f();
 
     @Override
     public final Object mo5891a(AbstractC3870e eVar) {
-        return new C0205b((C0202a) eVar.mo29677a(C0202a.class));
+        return new C0205b((C0202a) eVar.mo29679a(C0202a.class));
     }
 }

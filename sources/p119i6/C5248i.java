@@ -9,21 +9,21 @@ import p176m5.C6750b;
 public final class C5248i implements Parcelable.Creator<LatLngBounds> {
     @Override
     public final LatLngBounds createFromParcel(Parcel parcel) {
-        int x = C6750b.m19127x(parcel);
+        int x = C6750b.m19128x(parcel);
         LatLng latLng = null;
         LatLng latLng2 = null;
         while (parcel.dataPosition() < x) {
-            int q = C6750b.m19134q(parcel);
-            int k = C6750b.m19140k(q);
+            int q = C6750b.m19135q(parcel);
+            int k = C6750b.m19141k(q);
             if (k == 2) {
-                latLng = (LatLng) C6750b.m19147d(parcel, q, LatLng.CREATOR);
+                latLng = (LatLng) C6750b.m19148d(parcel, q, LatLng.CREATOR);
             } else if (k != 3) {
-                C6750b.m19128w(parcel, q);
+                C6750b.m19129w(parcel, q);
             } else {
-                latLng2 = (LatLng) C6750b.m19147d(parcel, q, LatLng.CREATOR);
+                latLng2 = (LatLng) C6750b.m19148d(parcel, q, LatLng.CREATOR);
             }
         }
-        C6750b.m19141j(parcel, x);
+        C6750b.m19142j(parcel, x);
         return new LatLngBounds(latLng, latLng2);
     }
 

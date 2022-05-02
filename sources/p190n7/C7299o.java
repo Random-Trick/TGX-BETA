@@ -8,28 +8,28 @@ import p248r7.AbstractC8375a;
 import p248r7.C8376b;
 
 public final class C7299o {
-    public static final long f23170b = TimeUnit.HOURS.toSeconds(1);
-    public static final Pattern f23171c = Pattern.compile("\\AA[\\w-]{38}\\z");
-    public static C7299o f23172d;
-    public final AbstractC8375a f23173a;
+    public static final long f23173b = TimeUnit.HOURS.toSeconds(1);
+    public static final Pattern f23174c = Pattern.compile("\\AA[\\w-]{38}\\z");
+    public static C7299o f23175d;
+    public final AbstractC8375a f23176a;
 
     public C7299o(AbstractC8375a aVar) {
-        this.f23173a = aVar;
+        this.f23176a = aVar;
     }
 
     public static C7299o m17117c() {
-        return m17116d(C8376b.m12652b());
+        return m17116d(C8376b.m12651b());
     }
 
     public static C7299o m17116d(AbstractC8375a aVar) {
-        if (f23172d == null) {
-            f23172d = new C7299o(aVar);
+        if (f23175d == null) {
+            f23175d = new C7299o(aVar);
         }
-        return f23172d;
+        return f23175d;
     }
 
     public static boolean m17113g(String str) {
-        return f23171c.matcher(str).matches();
+        return f23174c.matcher(str).matches();
     }
 
     public static boolean m17112h(String str) {
@@ -37,7 +37,7 @@ public final class C7299o {
     }
 
     public long m17119a() {
-        return this.f23173a.mo12653a();
+        return this.f23176a.mo12652a();
     }
 
     public long m17118b() {
@@ -49,6 +49,6 @@ public final class C7299o {
     }
 
     public boolean m17114f(AbstractC8061d dVar) {
-        return TextUtils.isEmpty(dVar.mo13676b()) || dVar.mo13670h() + dVar.mo13675c() < m17118b() + f23170b;
+        return TextUtils.isEmpty(dVar.mo13675b()) || dVar.mo13669h() + dVar.mo13674c() < m17118b() + f23173b;
     }
 }

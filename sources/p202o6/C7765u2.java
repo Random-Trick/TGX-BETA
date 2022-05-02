@@ -9,21 +9,21 @@ import p233q6.C8260d;
 import p262s6.C8646a;
 
 public final class C7765u2 {
-    public static final C8646a f24862d = new C8646a("PackMetadataManager");
-    public final C7688f0 f24863a;
-    public final C7775w2 f24864b;
-    public final C8260d f24865c;
+    public static final C8646a f24865d = new C8646a("PackMetadataManager");
+    public final C7688f0 f24866a;
+    public final C7775w2 f24867b;
+    public final C8260d f24868c;
 
     public C7765u2(C7688f0 f0Var, C7775w2 w2Var, C8260d dVar) {
-        this.f24863a = f0Var;
-        this.f24864b = w2Var;
-        this.f24865c = dVar;
+        this.f24866a = f0Var;
+        this.f24867b = w2Var;
+        this.f24868c = dVar;
     }
 
     public final String m15114a(String str) {
-        if (this.f24865c.m13018a("assetOnlyUpdates") && this.f24863a.m15246f(str)) {
-            int a = this.f24864b.m15109a();
-            C7688f0 f0Var = this.f24863a;
+        if (this.f24868c.m13017a("assetOnlyUpdates") && this.f24866a.m15246f(str)) {
+            int a = this.f24867b.m15109a();
+            C7688f0 f0Var = this.f24866a;
             File x = f0Var.m15228x(str, a, f0Var.m15234r(str));
             try {
                 if (!x.exists()) {
@@ -36,7 +36,7 @@ public final class C7765u2 {
                 String property = properties.getProperty("moduleVersionTag");
                 return property == null ? String.valueOf(a) : property;
             } catch (IOException unused) {
-                f24862d.m11817b("Failed to read pack version tag for pack %s", str);
+                f24865d.m11816b("Failed to read pack version tag for pack %s", str);
             }
         }
         return "";
@@ -48,7 +48,7 @@ public final class C7765u2 {
         }
         Properties properties = new Properties();
         properties.put("moduleVersionTag", str2);
-        File x = this.f24863a.m15228x(str, i, j);
+        File x = this.f24866a.m15228x(str, i, j);
         x.getParentFile().mkdirs();
         x.createNewFile();
         FileOutputStream fileOutputStream = new FileOutputStream(x);

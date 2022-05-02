@@ -8,16 +8,16 @@ import p323x1.AbstractC10067c;
 import p323x1.C10065a;
 
 public class C9427g extends AbstractC10067c.AbstractC10068a {
-    public C9417a f30526b;
-    public final AbstractC9428a f30527c;
-    public final String f30528d;
-    public final String f30529e;
+    public C9417a f30529b;
+    public final AbstractC9428a f30530c;
+    public final String f30531d;
+    public final String f30532e;
 
     public static abstract class AbstractC9428a {
-        public final int f30530a;
+        public final int f30533a;
 
         public AbstractC9428a(int i) {
-            this.f30530a = i;
+            this.f30533a = i;
         }
 
         public abstract void mo8691a(AbstractC10066b bVar);
@@ -36,21 +36,21 @@ public class C9427g extends AbstractC10067c.AbstractC10068a {
     }
 
     public static class C9429b {
-        public final boolean f30531a;
-        public final String f30532b;
+        public final boolean f30534a;
+        public final String f30535b;
 
         public C9429b(boolean z, String str) {
-            this.f30531a = z;
-            this.f30532b = str;
+            this.f30534a = z;
+            this.f30535b = str;
         }
     }
 
     public C9427g(C9417a aVar, AbstractC9428a aVar2, String str, String str2) {
-        super(aVar2.f30530a);
-        this.f30526b = aVar;
-        this.f30527c = aVar2;
-        this.f30528d = str;
-        this.f30529e = str2;
+        super(aVar2.f30533a);
+        this.f30529b = aVar;
+        this.f30530c = aVar2;
+        this.f30531d = str;
+        this.f30532e = str2;
     }
 
     public static boolean m8694j(AbstractC10066b bVar) {
@@ -91,15 +91,15 @@ public class C9427g extends AbstractC10067c.AbstractC10068a {
     @Override
     public void mo6080d(AbstractC10066b bVar) {
         boolean j = m8694j(bVar);
-        this.f30527c.mo8691a(bVar);
+        this.f30530c.mo8691a(bVar);
         if (!j) {
-            C9429b g = this.f30527c.mo8685g(bVar);
-            if (!g.f30531a) {
-                throw new IllegalStateException("Pre-packaged database has an invalid schema: " + g.f30532b);
+            C9429b g = this.f30530c.mo8685g(bVar);
+            if (!g.f30534a) {
+                throw new IllegalStateException("Pre-packaged database has an invalid schema: " + g.f30535b);
             }
         }
         m8692l(bVar);
-        this.f30527c.mo8689c(bVar);
+        this.f30530c.mo8689c(bVar);
     }
 
     @Override
@@ -111,38 +111,38 @@ public class C9427g extends AbstractC10067c.AbstractC10068a {
     public void mo6078f(AbstractC10066b bVar) {
         super.mo6078f(bVar);
         m8696h(bVar);
-        this.f30527c.mo8688d(bVar);
-        this.f30526b = null;
+        this.f30530c.mo8688d(bVar);
+        this.f30529b = null;
     }
 
     @Override
     public void mo6077g(AbstractC10066b bVar, int i, int i2) {
         boolean z;
         List<AbstractC9832a> c;
-        C9417a aVar = this.f30526b;
-        if (aVar == null || (c = aVar.f30479d.m8699c(i, i2)) == null) {
+        C9417a aVar = this.f30529b;
+        if (aVar == null || (c = aVar.f30482d.m8699c(i, i2)) == null) {
             z = false;
         } else {
-            this.f30527c.mo8686f(bVar);
+            this.f30530c.mo8686f(bVar);
             for (AbstractC9832a aVar2 : c) {
                 aVar2.mo6782a(bVar);
             }
-            C9429b g = this.f30527c.mo8685g(bVar);
-            if (g.f30531a) {
-                this.f30527c.mo8687e(bVar);
+            C9429b g = this.f30530c.mo8685g(bVar);
+            if (g.f30534a) {
+                this.f30530c.mo8687e(bVar);
                 m8692l(bVar);
                 z = true;
             } else {
-                throw new IllegalStateException("Migration didn't properly handle: " + g.f30532b);
+                throw new IllegalStateException("Migration didn't properly handle: " + g.f30535b);
             }
         }
         if (!z) {
-            C9417a aVar3 = this.f30526b;
+            C9417a aVar3 = this.f30529b;
             if (aVar3 == null || aVar3.m8742a(i, i2)) {
                 throw new IllegalStateException("A migration from " + i + " to " + i2 + " was required but not found. Please provide the necessary Migration path via RoomDatabase.Builder.addMigration(Migration ...) or allow for destructive migrations via one of the RoomDatabase.Builder.fallbackToDestructiveMigration* methods.");
             }
-            this.f30527c.mo8690b(bVar);
-            this.f30527c.mo8691a(bVar);
+            this.f30530c.mo8690b(bVar);
+            this.f30530c.mo8691a(bVar);
         }
     }
 
@@ -155,7 +155,7 @@ public class C9427g extends AbstractC10067c.AbstractC10068a {
                     str = p0.getString(0);
                 }
                 p0.close();
-                if (!this.f30528d.equals(str) && !this.f30529e.equals(str)) {
+                if (!this.f30531d.equals(str) && !this.f30532e.equals(str)) {
                     throw new IllegalStateException("Room cannot verify the data integrity. Looks like you've changed schema but forgot to update the version number. You can simply fix this by increasing the version number.");
                 }
             } catch (Throwable th) {
@@ -163,13 +163,13 @@ public class C9427g extends AbstractC10067c.AbstractC10068a {
                 throw th;
             }
         } else {
-            C9429b g = this.f30527c.mo8685g(bVar);
-            if (g.f30531a) {
-                this.f30527c.mo8687e(bVar);
+            C9429b g = this.f30530c.mo8685g(bVar);
+            if (g.f30534a) {
+                this.f30530c.mo8687e(bVar);
                 m8692l(bVar);
                 return;
             }
-            throw new IllegalStateException("Pre-packaged database has an invalid schema: " + g.f30532b);
+            throw new IllegalStateException("Pre-packaged database has an invalid schema: " + g.f30535b);
         }
     }
 
@@ -179,6 +179,6 @@ public class C9427g extends AbstractC10067c.AbstractC10068a {
 
     public final void m8692l(AbstractC10066b bVar) {
         m8695i(bVar);
-        bVar.mo5385p(C9426f.m8697a(this.f30528d));
+        bVar.mo5385p(C9426f.m8697a(this.f30531d));
     }
 }

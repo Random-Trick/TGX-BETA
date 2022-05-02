@@ -10,20 +10,20 @@ import p193nb.C7316a;
 import p193nb.C7321e;
 
 public class C10862n1 {
-    public final List<TdApi.UserPrivacySettingRule> f34794a;
-    public final int f34795b;
-    public final long[] f34796c;
-    public final long[] f34797d;
-    public final long[] f34798e;
-    public final long[] f34799f;
+    public final List<TdApi.UserPrivacySettingRule> f34797a;
+    public final int f34798b;
+    public final long[] f34799c;
+    public final long[] f34800d;
+    public final long[] f34801e;
+    public final long[] f34802f;
 
     public C10862n1(TdApi.UserPrivacySettingRules userPrivacySettingRules, int i, long[] jArr, long[] jArr2, long[] jArr3, long[] jArr4) {
-        this.f34794a = Arrays.asList(userPrivacySettingRules.rules);
-        this.f34795b = i;
-        this.f34796c = jArr;
-        this.f34797d = jArr2;
-        this.f34798e = jArr3;
-        this.f34799f = jArr4;
+        this.f34797a = Arrays.asList(userPrivacySettingRules.rules);
+        this.f34798b = i;
+        this.f34799c = jArr;
+        this.f34800d = jArr2;
+        this.f34801e = jArr3;
+        this.f34802f = jArr4;
     }
 
     public static TdApi.UserPrivacySettingRule m2989f(List<TdApi.UserPrivacySettingRule> list, long j, boolean z) {
@@ -31,7 +31,7 @@ public class C10862n1 {
         for (TdApi.UserPrivacySettingRule userPrivacySettingRule2 : list) {
             switch (userPrivacySettingRule2.getConstructor()) {
                 case TdApi.UserPrivacySettingRuleAllowChatMembers.CONSTRUCTOR:
-                    if (C5062b.m24153s(((TdApi.UserPrivacySettingRuleAllowChatMembers) userPrivacySettingRule2).chatIds, j) < 0) {
+                    if (C5062b.m24154s(((TdApi.UserPrivacySettingRuleAllowChatMembers) userPrivacySettingRule2).chatIds, j) < 0) {
                         break;
                     } else {
                         return userPrivacySettingRule2;
@@ -44,7 +44,7 @@ public class C10862n1 {
                     userPrivacySettingRule = userPrivacySettingRule2;
                     break;
                 case TdApi.UserPrivacySettingRuleRestrictChatMembers.CONSTRUCTOR:
-                    if (C5062b.m24153s(((TdApi.UserPrivacySettingRuleRestrictChatMembers) userPrivacySettingRule2).chatIds, j) < 0) {
+                    if (C5062b.m24154s(((TdApi.UserPrivacySettingRuleRestrictChatMembers) userPrivacySettingRule2).chatIds, j) < 0) {
                         break;
                     } else {
                         return userPrivacySettingRule2;
@@ -61,7 +61,7 @@ public class C10862n1 {
         for (TdApi.UserPrivacySettingRule userPrivacySettingRule : list) {
             switch (userPrivacySettingRule.getConstructor()) {
                 case TdApi.UserPrivacySettingRuleAllowChatMembers.CONSTRUCTOR:
-                    if (C5062b.m24156p(((TdApi.UserPrivacySettingRuleAllowChatMembers) userPrivacySettingRule).chatIds, jArr) == 0) {
+                    if (C5062b.m24157p(((TdApi.UserPrivacySettingRuleAllowChatMembers) userPrivacySettingRule).chatIds, jArr) == 0) {
                         break;
                     } else {
                         return userPrivacySettingRule;
@@ -77,19 +77,19 @@ public class C10862n1 {
                         return userPrivacySettingRule;
                     }
                 case TdApi.UserPrivacySettingRuleRestrictChatMembers.CONSTRUCTOR:
-                    if (C5062b.m24156p(((TdApi.UserPrivacySettingRuleRestrictChatMembers) userPrivacySettingRule).chatIds, jArr) == 0) {
+                    if (C5062b.m24157p(((TdApi.UserPrivacySettingRuleRestrictChatMembers) userPrivacySettingRule).chatIds, jArr) == 0) {
                         break;
                     } else {
                         return userPrivacySettingRule;
                     }
                 case TdApi.UserPrivacySettingRuleRestrictUsers.CONSTRUCTOR:
-                    if (C5062b.m24153s(((TdApi.UserPrivacySettingRuleRestrictUsers) userPrivacySettingRule).userIds, j) < 0) {
+                    if (C5062b.m24154s(((TdApi.UserPrivacySettingRuleRestrictUsers) userPrivacySettingRule).userIds, j) < 0) {
                         break;
                     } else {
                         return userPrivacySettingRule;
                     }
                 case TdApi.UserPrivacySettingRuleAllowUsers.CONSTRUCTOR:
-                    if (C5062b.m24153s(((TdApi.UserPrivacySettingRuleAllowUsers) userPrivacySettingRule).userIds, j) < 0) {
+                    if (C5062b.m24154s(((TdApi.UserPrivacySettingRuleAllowUsers) userPrivacySettingRule).userIds, j) < 0) {
                         break;
                     } else {
                         return userPrivacySettingRule;
@@ -149,13 +149,13 @@ public class C10862n1 {
     }
 
     public TdApi.UserPrivacySettingRules m2993b(long[] jArr, long[] jArr2) {
-        ArrayList arrayList = new ArrayList(this.f34794a);
+        ArrayList arrayList = new ArrayList(this.f34797a);
         for (int size = arrayList.size() - 1; size >= 0; size--) {
             TdApi.UserPrivacySettingRule userPrivacySettingRule = (TdApi.UserPrivacySettingRule) arrayList.get(size);
             switch (userPrivacySettingRule.getConstructor()) {
                 case TdApi.UserPrivacySettingRuleAllowChatMembers.CONSTRUCTOR:
                     TdApi.UserPrivacySettingRuleAllowChatMembers userPrivacySettingRuleAllowChatMembers = (TdApi.UserPrivacySettingRuleAllowChatMembers) userPrivacySettingRule;
-                    long[] x = C5062b.m24148x(userPrivacySettingRuleAllowChatMembers.chatIds, jArr2);
+                    long[] x = C5062b.m24149x(userPrivacySettingRuleAllowChatMembers.chatIds, jArr2);
                     userPrivacySettingRuleAllowChatMembers.chatIds = x;
                     if (x.length == 0) {
                         arrayList.remove(size);
@@ -169,7 +169,7 @@ public class C10862n1 {
                     break;
                 case TdApi.UserPrivacySettingRuleAllowUsers.CONSTRUCTOR:
                     TdApi.UserPrivacySettingRuleAllowUsers userPrivacySettingRuleAllowUsers = (TdApi.UserPrivacySettingRuleAllowUsers) userPrivacySettingRule;
-                    long[] x2 = C5062b.m24148x(userPrivacySettingRuleAllowUsers.userIds, jArr);
+                    long[] x2 = C5062b.m24149x(userPrivacySettingRuleAllowUsers.userIds, jArr);
                     userPrivacySettingRuleAllowUsers.userIds = x2;
                     if (x2.length == 0) {
                         arrayList.remove(size);
@@ -198,7 +198,7 @@ public class C10862n1 {
     }
 
     public TdApi.UserPrivacySettingRule m2992c(boolean z) {
-        for (TdApi.UserPrivacySettingRule userPrivacySettingRule : this.f34794a) {
+        for (TdApi.UserPrivacySettingRule userPrivacySettingRule : this.f34797a) {
             switch (userPrivacySettingRule.getConstructor()) {
                 case TdApi.UserPrivacySettingRuleAllowAll.CONSTRUCTOR:
                 case TdApi.UserPrivacySettingRuleRestrictAll.CONSTRUCTOR:
@@ -216,11 +216,11 @@ public class C10862n1 {
     }
 
     public TdApi.UserPrivacySettingRule m2991d(long j, boolean z) {
-        return m2989f(this.f34794a, j, z);
+        return m2989f(this.f34797a, j, z);
     }
 
     public TdApi.UserPrivacySettingRule m2990e(long j, boolean z, long[] jArr) {
-        return m2988g(this.f34794a, j, z, jArr);
+        return m2988g(this.f34797a, j, z, jArr);
     }
 
     public boolean equals(Object obj) {
@@ -231,11 +231,11 @@ public class C10862n1 {
             return false;
         }
         C10862n1 n1Var = (C10862n1) obj;
-        if (n1Var.f34794a.size() != this.f34794a.size()) {
+        if (n1Var.f34797a.size() != this.f34797a.size()) {
             return false;
         }
-        for (int i = 0; i < n1Var.f34794a.size(); i++) {
-            if (!C7321e.m16939j0(n1Var.f34794a.get(i), this.f34794a.get(i))) {
+        for (int i = 0; i < n1Var.f34797a.size(); i++) {
+            if (!C7321e.m16939j0(n1Var.f34797a.get(i), this.f34797a.get(i))) {
                 return false;
             }
         }
@@ -243,54 +243,54 @@ public class C10862n1 {
     }
 
     public long[] m2987h() {
-        long[] jArr = this.f34797d;
+        long[] jArr = this.f34800d;
         int length = jArr != null ? jArr.length : 0;
-        long[] jArr2 = this.f34799f;
+        long[] jArr2 = this.f34802f;
         C5322e eVar = new C5322e(length + (jArr2 != null ? jArr2.length : 0));
-        for (TdApi.UserPrivacySettingRule userPrivacySettingRule : this.f34794a) {
+        for (TdApi.UserPrivacySettingRule userPrivacySettingRule : this.f34797a) {
             int constructor = userPrivacySettingRule.getConstructor();
             if (constructor == 392530897) {
                 for (long j : ((TdApi.UserPrivacySettingRuleRestrictChatMembers) userPrivacySettingRule).chatIds) {
-                    eVar.m23275a(j);
+                    eVar.m23276a(j);
                 }
             } else if (constructor == 622796522) {
                 for (long j2 : ((TdApi.UserPrivacySettingRuleRestrictUsers) userPrivacySettingRule).userIds) {
-                    eVar.m23275a(C7316a.m17058c(j2));
+                    eVar.m23276a(C7316a.m17058c(j2));
                 }
             } else if (m2977r(userPrivacySettingRule, false)) {
                 break;
             }
         }
-        return eVar.m23269g();
+        return eVar.m23270g();
     }
 
     public long[] m2986i() {
-        long[] jArr = this.f34796c;
+        long[] jArr = this.f34799c;
         int length = jArr != null ? jArr.length : 0;
-        long[] jArr2 = this.f34798e;
+        long[] jArr2 = this.f34801e;
         C5322e eVar = new C5322e(length + (jArr2 != null ? jArr2.length : 0));
-        for (TdApi.UserPrivacySettingRule userPrivacySettingRule : this.f34794a) {
+        for (TdApi.UserPrivacySettingRule userPrivacySettingRule : this.f34797a) {
             switch (userPrivacySettingRule.getConstructor()) {
                 case TdApi.UserPrivacySettingRuleAllowChatMembers.CONSTRUCTOR:
                     for (long j : ((TdApi.UserPrivacySettingRuleAllowChatMembers) userPrivacySettingRule).chatIds) {
-                        eVar.m23275a(j);
+                        eVar.m23276a(j);
                     }
                     break;
                 case TdApi.UserPrivacySettingRuleAllowAll.CONSTRUCTOR:
                 case TdApi.UserPrivacySettingRuleRestrictAll.CONSTRUCTOR:
-                    return eVar.m23269g();
+                    return eVar.m23270g();
                 case TdApi.UserPrivacySettingRuleAllowUsers.CONSTRUCTOR:
                     for (long j2 : ((TdApi.UserPrivacySettingRuleAllowUsers) userPrivacySettingRule).userIds) {
-                        eVar.m23275a(C7316a.m17058c(j2));
+                        eVar.m23276a(C7316a.m17058c(j2));
                     }
                     break;
             }
         }
-        return eVar.m23269g();
+        return eVar.m23270g();
     }
 
     public int m2985j(C10930q6 q6Var) {
-        long[] jArr = this.f34799f;
+        long[] jArr = this.f34802f;
         if (jArr == null) {
             return 0;
         }
@@ -306,7 +306,7 @@ public class C10862n1 {
     }
 
     public int m2983l() {
-        long[] jArr = this.f34797d;
+        long[] jArr = this.f34800d;
         if (jArr != null) {
             return jArr.length;
         }
@@ -314,11 +314,11 @@ public class C10862n1 {
     }
 
     public int m2982m() {
-        return this.f34795b;
+        return this.f34798b;
     }
 
     public int m2981n(C10930q6 q6Var) {
-        long[] jArr = this.f34798e;
+        long[] jArr = this.f34801e;
         if (jArr == null) {
             return 0;
         }
@@ -334,7 +334,7 @@ public class C10862n1 {
     }
 
     public int m2979p() {
-        long[] jArr = this.f34796c;
+        long[] jArr = this.f34799c;
         if (jArr != null) {
             return jArr.length;
         }
@@ -342,10 +342,10 @@ public class C10862n1 {
     }
 
     public boolean m2976s() {
-        if (this.f34795b != 2) {
+        if (this.f34798b != 2) {
             return true;
         }
-        for (TdApi.UserPrivacySettingRule userPrivacySettingRule : this.f34794a) {
+        for (TdApi.UserPrivacySettingRule userPrivacySettingRule : this.f34797a) {
             if (m2977r(userPrivacySettingRule, false)) {
                 break;
             } else if (userPrivacySettingRule.getConstructor() == 392530897) {
@@ -356,17 +356,17 @@ public class C10862n1 {
     }
 
     public boolean m2975t() {
-        return this.f34795b != 0;
+        return this.f34798b != 0;
     }
 
     public TdApi.UserPrivacySettingRules m2974u() {
-        return new TdApi.UserPrivacySettingRules((TdApi.UserPrivacySettingRule[]) this.f34794a.toArray(new TdApi.UserPrivacySettingRule[0]));
+        return new TdApi.UserPrivacySettingRules((TdApi.UserPrivacySettingRule[]) this.f34797a.toArray(new TdApi.UserPrivacySettingRule[0]));
     }
 
     public TdApi.UserPrivacySettingRules m2973v(long j, boolean z, boolean z2) {
         int i;
         long[] jArr;
-        ArrayList arrayList = new ArrayList(this.f34794a);
+        ArrayList arrayList = new ArrayList(this.f34797a);
         while (true) {
             TdApi.UserPrivacySettingRule f = m2989f(arrayList, j, z);
             if (m2978q(f) == z2) {
@@ -382,7 +382,7 @@ public class C10862n1 {
                                 case TdApi.UserPrivacySettingRuleAllowChatMembers.CONSTRUCTOR:
                                     TdApi.UserPrivacySettingRuleAllowChatMembers userPrivacySettingRuleAllowChatMembers = (TdApi.UserPrivacySettingRuleAllowChatMembers) userPrivacySettingRule;
                                     if (z2) {
-                                        userPrivacySettingRuleAllowChatMembers.chatIds = C5062b.m24170b(userPrivacySettingRuleAllowChatMembers.chatIds, j);
+                                        userPrivacySettingRuleAllowChatMembers.chatIds = C5062b.m24171b(userPrivacySettingRuleAllowChatMembers.chatIds, j);
                                         break;
                                     } else {
                                         i++;
@@ -395,7 +395,7 @@ public class C10862n1 {
                                 case TdApi.UserPrivacySettingRuleRestrictChatMembers.CONSTRUCTOR:
                                     TdApi.UserPrivacySettingRuleRestrictChatMembers userPrivacySettingRuleRestrictChatMembers = (TdApi.UserPrivacySettingRuleRestrictChatMembers) userPrivacySettingRule;
                                     if (!z2) {
-                                        userPrivacySettingRuleRestrictChatMembers.chatIds = C5062b.m24170b(userPrivacySettingRuleRestrictChatMembers.chatIds, j);
+                                        userPrivacySettingRuleRestrictChatMembers.chatIds = C5062b.m24171b(userPrivacySettingRuleRestrictChatMembers.chatIds, j);
                                         break;
                                     }
                                     break;
@@ -423,11 +423,11 @@ public class C10862n1 {
                 } else {
                     throw new UnsupportedOperationException();
                 }
-                int s = C5062b.m24153s(jArr, j);
+                int s = C5062b.m24154s(jArr, j);
                 if (s == -1) {
                     throw new UnsupportedOperationException();
                 } else if (jArr.length > 1) {
-                    long[] y = C5062b.m24147y(jArr, s);
+                    long[] y = C5062b.m24148y(jArr, s);
                     int constructor2 = f.getConstructor();
                     if (constructor2 == -2048749863) {
                         ((TdApi.UserPrivacySettingRuleAllowChatMembers) f).chatIds = y;
@@ -457,7 +457,7 @@ public class C10862n1 {
     }
 
     public TdApi.UserPrivacySettingRules m2971x(boolean z, boolean z2) {
-        ArrayList arrayList = new ArrayList(this.f34794a);
+        ArrayList arrayList = new ArrayList(this.f34797a);
         int i = 0;
         while (i < arrayList.size()) {
             switch (((TdApi.UserPrivacySettingRule) arrayList.get(i)).getConstructor()) {

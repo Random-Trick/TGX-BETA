@@ -12,17 +12,17 @@ public final class C1283s extends AbstractC1285u {
     }
 
     @Override
-    public final int mo37794a() {
+    public final int mo37797a() {
         return this.f4644c;
     }
 
     @Override
-    public final String mo37793b() {
+    public final String mo37796b() {
         return this.f4642a;
     }
 
     @Override
-    public final boolean mo37792c() {
+    public final boolean mo37795c() {
         return this.f4643b;
     }
 
@@ -32,7 +32,7 @@ public final class C1283s extends AbstractC1285u {
         }
         if (obj instanceof AbstractC1285u) {
             AbstractC1285u uVar = (AbstractC1285u) obj;
-            if (this.f4642a.equals(uVar.mo37793b()) && this.f4643b == uVar.mo37792c() && this.f4644c == uVar.mo37794a()) {
+            if (this.f4642a.equals(uVar.mo37796b()) && this.f4643b == uVar.mo37795c() && this.f4644c == uVar.mo37797a()) {
                 return true;
             }
         }

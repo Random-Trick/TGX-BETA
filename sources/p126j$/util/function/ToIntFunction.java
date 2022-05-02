@@ -17,10 +17,10 @@ public interface ToIntFunction<T> {
         }
 
         @Override
-        public int mo22326f(Object obj) {
+        public int mo22327f(Object obj) {
             return this.f18066a.applyAsInt(obj);
         }
     }
 
-    int mo22326f(Object obj);
+    int mo22327f(Object obj);
 }

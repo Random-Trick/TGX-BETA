@@ -74,30 +74,30 @@ public final class C5375a implements C3950k.AbstractC3952b, C3944i.AbstractC3946
         public int f17701i = R.id.theme_color_badgeMutedText;
         public int f17702j = R.id.theme_color_badgeFailedText;
 
-        public C5377b m23022a(boolean z) {
-            this.f17694b = C5063c.m24138h(this.f17694b, 1, z);
+        public C5377b m23023a(boolean z) {
+            this.f17694b = C5063c.m24139h(this.f17694b, 1, z);
             return this;
         }
 
-        public C5375a m23021b() {
+        public C5375a m23022b() {
             return new C5375a(this.f17693a, this.f17695c, this.f17694b, this.f17700h, this.f17701i, this.f17702j, this.f17703k, this.f17696d, this.f17697e, this.f17698f, this.f17699g, this.f17704l);
         }
 
-        public C5377b m23020c(View view) {
-            return m23019d(view != null ? C5375a.m23029q(view) : null);
+        public C5377b m23021c(View view) {
+            return m23020d(view != null ? C5375a.m23030q(view) : null);
         }
 
-        public C5377b m23019d(AbstractC5378c cVar) {
+        public C5377b m23020d(AbstractC5378c cVar) {
             this.f17695c = cVar;
             return this;
         }
 
-        public C5377b m23018e(AbstractC5408k kVar) {
+        public C5377b m23019e(AbstractC5408k kVar) {
             this.f17704l = kVar;
             return this;
         }
 
-        public C5377b m23017f(int i, float f, float f2, int i2) {
+        public C5377b m23018f(int i, float f, float f2, int i2) {
             this.f17696d = i;
             this.f17697e = f;
             this.f17698f = f2;
@@ -105,22 +105,22 @@ public final class C5375a implements C3950k.AbstractC3952b, C3944i.AbstractC3946
             return this;
         }
 
-        public C5377b m23016g() {
-            this.f17694b = C5063c.m24138h(this.f17694b, 2, false);
+        public C5377b m23017g() {
+            this.f17694b = C5063c.m24139h(this.f17694b, 2, false);
             return this;
         }
 
-        public C5377b m23015h(int i) {
+        public C5377b m23016h(int i) {
             this.f17703k = i;
             return this;
         }
 
-        public C5377b m23014i(int i) {
+        public C5377b m23015i(int i) {
             this.f17700h = i;
             return this;
         }
 
-        public C5377b m23013j(float f) {
+        public C5377b m23014j(float f) {
             this.f17693a = f;
             return this;
         }
@@ -152,51 +152,51 @@ public final class C5375a implements C3950k.AbstractC3952b, C3944i.AbstractC3946
         this.f17687Y = kVar;
     }
 
-    public static AbstractC5378c m23029q(View view) {
+    public static AbstractC5378c m23030q(View view) {
         return new C5376a(view);
     }
 
     @Override
     public void mo45P5(int i, float f, float f2, C3950k kVar) {
-        m23031o(i == 0);
+        m23032o(i == 0);
     }
 
     @Override
     public int mo7858Q() {
-        return C5406j.m22807d(this);
+        return C5406j.m22808d(this);
     }
 
     @Override
     public long mo7857X0(boolean z) {
-        return C5406j.m22808c(this, z);
+        return C5406j.m22809c(this, z);
     }
 
     @Override
     public void mo35Y0(int i, float f, C3950k kVar) {
-        C3953l.m29526a(this, i, f, kVar);
+        C3953l.m29528a(this, i, f, kVar);
     }
 
     @Override
-    public void mo23040b(C3944i<?> iVar) {
-        float m = m23033m();
+    public void mo23041b(C3944i<?> iVar) {
+        float m = m23034m();
         boolean z = this.f17688Z != m;
         this.f17688Z = m;
-        m23031o(z);
+        m23032o(z);
     }
 
     @Override
     public int mo7856b1() {
-        return C5406j.m22805f(this);
+        return C5406j.m22806f(this);
     }
 
     @Override
     public int mo7855c() {
         AbstractC5408k kVar = this.f17687Y;
-        return kVar != null ? kVar.mo7855c() : m23037h(m23036i(), this.f17683U, this.f17684V, this.f17685W);
+        return kVar != null ? kVar.mo7855c() : m23038h(m23037i(), this.f17683U, this.f17684V, this.f17685W);
     }
 
-    public void m23039d(Canvas canvas, float f, float f2, int i, float f3) {
-        m23038f(canvas, f, f2, i, f3, null, 0);
+    public void m23040d(Canvas canvas, float f, float f2, int i, float f3) {
+        m23039f(canvas, f, f2, i, f3, null, 0);
     }
 
     @Override
@@ -204,10 +204,10 @@ public final class C5375a implements C3950k.AbstractC3952b, C3944i.AbstractC3946
         return 0;
     }
 
-    public void m23038f(Canvas canvas, float f, float f2, int i, float f3, AbstractC5143t tVar, int i2) {
-        if (m23034l() * f3 > 0.0f) {
+    public void m23039f(Canvas canvas, float f, float f2, int i, float f3, AbstractC5143t tVar, int i2) {
+        if (m23035l() * f3 > 0.0f) {
             int i3 = this.f17679Q;
-            C1359b.m37511h(canvas, f, f2, i, this.f17689a, this.f17678P, C5063c.m24144b(this.f17677O, 2), this, i3 != 0 ? tVar.mo14042X(i3, i2) : null, this.f17682T, i2, C1357a0.m37541i(this.f17681S), f3 * m23034l(), this.f17690b.m29572a());
+            C1359b.m37514h(canvas, f, f2, i, this.f17689a, this.f17678P, C5063c.m24145b(this.f17677O, 2), this, i3 != 0 ? tVar.mo14041X(i3, i2) : null, this.f17682T, i2, C1357a0.m37544i(this.f17681S), f3 * m23035l(), this.f17690b.m29574a());
         }
     }
 
@@ -216,31 +216,31 @@ public final class C5375a implements C3950k.AbstractC3952b, C3944i.AbstractC3946
         return 0;
     }
 
-    public final int m23037h(float f, int i, int i2, int i3) {
-        return C5064d.m24128d(C5064d.m24128d(C11524j.m228N(i), C11524j.m228N(i2), f), C11524j.m228N(i3), this.f17675M.m29584g());
+    public final int m23038h(float f, int i, int i2, int i3) {
+        return C5064d.m24129d(C5064d.m24129d(C11524j.m228N(i), C11524j.m228N(i2), f), C11524j.m228N(i3), this.f17675M.m29586g());
     }
 
-    public float m23036i() {
-        return this.f17691c.m29584g();
+    public float m23037i() {
+        return this.f17691c.m29586g();
     }
 
-    public float m23035j(int i) {
-        return (m23033m() + i) * m23034l();
+    public float m23036j(int i) {
+        return (m23034m() + i) * m23035l();
     }
 
-    public float m23034l() {
-        return C5069h.m24089d(this.f17690b.m29572a());
+    public float m23035l() {
+        return C5069h.m24090d(this.f17690b.m29574a());
     }
 
-    public final float m23033m() {
-        return C1359b.m37521C(this.f17678P, C5063c.m24144b(this.f17677O, 2), this.f17689a, this.f17679Q != 0 ? C1357a0.m37541i(this.f17680R) + C1357a0.m37541i(this.f17681S) : 0);
+    public final float m23034m() {
+        return C1359b.m37524C(this.f17678P, C5063c.m24145b(this.f17677O, 2), this.f17689a, this.f17679Q != 0 ? C1357a0.m37544i(this.f17680R) + C1357a0.m37544i(this.f17681S) : 0);
     }
 
-    public void m23032n(boolean z) {
-        m23026u(0, m23030p(), z);
+    public void m23033n(boolean z) {
+        m23027u(0, m23031p(), z);
     }
 
-    public void m23031o(boolean z) {
+    public void m23032o(boolean z) {
         AbstractC5378c cVar = this.f17676N;
         if (cVar != null) {
             cVar.mo8362j(this, z);
@@ -249,17 +249,17 @@ public final class C5375a implements C3950k.AbstractC3952b, C3944i.AbstractC3946
 
     @Override
     public int mo7852o0(boolean z) {
-        return C5406j.m22806e(this, z);
+        return C5406j.m22807e(this, z);
     }
 
-    public boolean m23030p() {
-        return this.f17691c.m29583h();
+    public boolean m23031p() {
+        return this.f17691c.m29585h();
     }
 
     @Override
     public int mo7851p0(boolean z) {
         AbstractC5408k kVar = this.f17687Y;
-        return kVar != null ? kVar.mo7851p0(z) : m23037h(m23036i(), R.id.theme_color_badge, R.id.theme_color_badgeMuted, R.id.theme_color_badgeFailed);
+        return kVar != null ? kVar.mo7851p0(z) : m23038h(m23037i(), R.id.theme_color_badge, R.id.theme_color_badgeMuted, R.id.theme_color_badgeFailed);
     }
 
     @Override
@@ -271,54 +271,54 @@ public final class C5375a implements C3950k.AbstractC3952b, C3944i.AbstractC3946
         return 0;
     }
 
-    public RunnableC5390g mo23041a(String str) {
-        return new RunnableC5390g.C5392b(str, Integer.MAX_VALUE, C1410y.m37083A0(this.f17678P), this).m22871s().m22887c(C5063c.m24144b(this.f17677O, 1)).m22884f();
+    public RunnableC5390g mo23042a(String str) {
+        return new RunnableC5390g.C5392b(str, Integer.MAX_VALUE, C1410y.m37086A0(this.f17678P), this).m22872s().m22888c(C5063c.m24145b(this.f17677O, 1)).m22885f();
     }
 
-    public void m23027t(int i, boolean z) {
-        m23026u(i, m23030p(), z);
+    public void m23028t(int i, boolean z) {
+        m23027u(i, m23031p(), z);
     }
 
-    public void m23026u(int i, boolean z, boolean z2) {
+    public void m23027u(int i, boolean z, boolean z2) {
         AbstractC5378c cVar;
         boolean z3 = false;
         if (z2 && ((cVar = this.f17676N) == null || !cVar.mo8363d(this))) {
             z2 = false;
         }
-        if (!z2 || C1379j0.m37357K()) {
-            boolean z4 = z2 && m23034l() > 0.0f;
-            this.f17691c.m29575p(z, z4);
-            this.f17675M.m29575p(i == C10930q6.f34957B2, z4);
-            if (i > 0 || i == C10930q6.f34956A2 || i == C10930q6.f34957B2) {
+        if (!z2 || C1379j0.m37360K()) {
+            boolean z4 = z2 && m23035l() > 0.0f;
+            this.f17691c.m29577p(z, z4);
+            this.f17675M.m29577p(i == C10930q6.f34960B2, z4);
+            if (i > 0 || i == C10930q6.f34959A2 || i == C10930q6.f34960B2) {
                 z3 = true;
             }
-            if (i == C10930q6.f34957B2 && this.f17679Q == 0) {
-                this.f17689a.m29566s(i, "!", z4);
+            if (i == C10930q6.f34960B2 && this.f17679Q == 0) {
+                this.f17689a.m29568s(i, "!", z4);
             } else if (i > 0) {
                 long j = i;
-                this.f17689a.m29566s(j, C1363c0.m37437f(j), z4);
+                this.f17689a.m29568s(j, C1363c0.m37440f(j), z4);
             } else {
-                this.f17689a.m29568m(z4);
+                this.f17689a.m29570m(z4);
             }
-            this.f17690b.m29571b(z3, z2);
+            this.f17690b.m29573b(z3, z2);
             return;
         }
         throw new AssertionError();
     }
 
-    public void m23025v(boolean z, boolean z2) {
-        this.f17691c.m29575p(z, z2);
+    public void m23026v(boolean z, boolean z2) {
+        this.f17691c.m29577p(z, z2);
     }
 
-    public void m23024x(boolean z) {
-        m23026u(C10930q6.f34956A2, m23030p(), z);
+    public void m23025x(boolean z) {
+        m23027u(C10930q6.f34959A2, m23031p(), z);
     }
 
-    public void m23023y(boolean z, boolean z2) {
+    public void m23024y(boolean z, boolean z2) {
         if (z) {
-            m23024x(z2);
+            m23025x(z2);
         } else {
-            m23032n(z2);
+            m23033n(z2);
         }
     }
 }

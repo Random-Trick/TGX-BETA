@@ -77,9 +77,9 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
         @Override
         public void run() {
             if (View$OnClickListenerC3209vr.this.m9339Ta()) {
-                View$OnClickListenerC3209vr.this.m31228ei(new File(C10536ab.m4796H0(false)).length(), false);
-                View$OnClickListenerC3209vr.this.m31228ei(new File(C10536ab.m4796H0(true)).length(), true);
-                C1379j0.m37332e0(this, 1500L);
+                View$OnClickListenerC3209vr.this.m31230ei(new File(C10536ab.m4796H0(false)).length(), false);
+                View$OnClickListenerC3209vr.this.m31230ei(new File(C10536ab.m4796H0(true)).length(), true);
+                C1379j0.m37335e0(this, 1500L);
             }
         }
     }
@@ -101,12 +101,12 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
             z2 = false;
             z2 = false;
             if (View$OnClickListenerC3209vr.this.f10713G0) {
-                int j = raVar.m32835j();
+                int j = raVar.m32838j();
                 cVar.setIconColorId(j != R.id.btn_eraseDatabase ? j != R.id.btn_launchApp ? 0 : R.id.theme_color_iconActive : R.id.theme_color_iconNegative);
             }
-            switch (raVar.m32835j()) {
+            switch (raVar.m32838j()) {
                 case R.id.btn_log_android:
-                    cVar.getToggler().m10186r(Log.checkSetting(1), false);
+                    cVar.getToggler().m10185r(Log.checkSetting(1), false);
                     return;
                 case R.id.btn_log_files:
                     if (!Log.isCapturing() && View$OnClickListenerC3209vr.this.f10718L0 && !View$OnClickListenerC3209vr.this.f10720N0 && View$OnClickListenerC3209vr.this.f10717K0 != null && !View$OnClickListenerC3209vr.this.f10717K0.m14707a()) {
@@ -121,28 +121,28 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
                         cVar.setData(R.string.LoadingInformation);
                         return;
                     } else if (View$OnClickListenerC3209vr.this.f10717K0 == null || View$OnClickListenerC3209vr.this.f10717K0.m14707a()) {
-                        cVar.setData(C4403w.m27844o2(R.string.xFiles, 0L));
+                        cVar.setData(C4403w.m27846o2(R.string.xFiles, 0L));
                         return;
                     } else {
                         StringBuilder sb2 = new StringBuilder();
-                        sb2.append(C1363c0.m37423m(View$OnClickListenerC3209vr.this.f10717K0.f25454d));
-                        if (View$OnClickListenerC3209vr.this.f10717K0.f25452b > 0) {
+                        sb2.append(C1363c0.m37426m(View$OnClickListenerC3209vr.this.f10717K0.f25457d));
+                        if (View$OnClickListenerC3209vr.this.f10717K0.f25455b > 0) {
                             if (sb2.length() > 0) {
                                 sb2.append(", ");
                             }
-                            sb2.append(View$OnClickListenerC3209vr.this.f10717K0.f25452b);
+                            sb2.append(View$OnClickListenerC3209vr.this.f10717K0.f25455b);
                             sb2.append(" log");
-                            if (View$OnClickListenerC3209vr.this.f10717K0.f25452b != 1) {
+                            if (View$OnClickListenerC3209vr.this.f10717K0.f25455b != 1) {
                                 sb2.append('s');
                             }
                         }
-                        if (View$OnClickListenerC3209vr.this.f10717K0.f25453c > 0) {
+                        if (View$OnClickListenerC3209vr.this.f10717K0.f25456c > 0) {
                             if (sb2.length() > 0) {
                                 sb2.append(", ");
                             }
-                            sb2.append(View$OnClickListenerC3209vr.this.f10717K0.f25453c);
+                            sb2.append(View$OnClickListenerC3209vr.this.f10717K0.f25456c);
                             sb2.append(" crash");
-                            if (View$OnClickListenerC3209vr.this.f10717K0.f25453c != 1) {
+                            if (View$OnClickListenerC3209vr.this.f10717K0.f25456c != 1) {
                                 sb2.append("es");
                             }
                         }
@@ -177,66 +177,66 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
                     } else {
                         cVar.setEnabled(!isCapturing2);
                     }
-                    cVar.setData(View$OnClickListenerC3209vr.m31197zh(isCapturing2 ? 5 : Log.getLogLevel()));
+                    cVar.setData(View$OnClickListenerC3209vr.m31199zh(isCapturing2 ? 5 : Log.getLogLevel()));
                     return;
                 case R.id.btn_secret_debugQrRegions:
-                    cVar.getToggler().m10186r(C4868i.m24726c2().m24777V2(), z);
+                    cVar.getToggler().m10185r(C4868i.m24727c2().m24778V2(), z);
                     return;
                 case R.id.btn_secret_disableNetwork:
-                    cVar.getToggler().m10186r(C4868i.m24726c2().m24736b0(), z);
+                    cVar.getToggler().m10185r(C4868i.m24727c2().m24737b0(), z);
                     return;
                 case R.id.btn_secret_disableQrProcess:
-                    cVar.getToggler().m10186r(C4868i.m24726c2().m24903D2(), z);
+                    cVar.getToggler().m10185r(C4868i.m24727c2().m24904D2(), z);
                     return;
                 case R.id.btn_secret_dontReadMessages:
-                    cVar.getToggler().m10186r(C4868i.m24726c2().m24780V(), z);
+                    cVar.getToggler().m10185r(C4868i.m24727c2().m24781V(), z);
                     return;
                 case R.id.btn_secret_forceQrZxing:
-                    cVar.getToggler().m10186r(C4868i.m24726c2().m24896E2(), z);
+                    cVar.getToggler().m10185r(C4868i.m24727c2().m24897E2(), z);
                     return;
                 case R.id.btn_secret_forceTcpInCalls:
-                    cVar.getToggler().m10186r(C4868i.m24726c2().m24728c0(), z);
+                    cVar.getToggler().m10185r(C4868i.m24727c2().m24729c0(), z);
                     return;
                 case R.id.btn_secret_forceTdlibRestarts:
-                    cVar.getToggler().m10186r(C4868i.m24726c2().m24720d0(), z);
+                    cVar.getToggler().m10185r(C4868i.m24727c2().m24721d0(), z);
                     return;
                 case R.id.btn_secret_replacePhoneNumber:
-                    cVar.getToggler().m10186r(C4868i.m24726c2().m24875H2(), z);
+                    cVar.getToggler().m10185r(C4868i.m24727c2().m24876H2(), z);
                     return;
                 case R.id.btn_switchRtl:
-                    cVar.getToggler().m10186r(C4403w.m27984G2(), z);
+                    cVar.getToggler().m10185r(C4403w.m27986G2(), z);
                     return;
                 case R.id.btn_tdlib_androidLogs:
-                    cVar.getToggler().m10186r(C4868i.m24726c2().m24719d1().m24502j(), z);
+                    cVar.getToggler().m10185r(C4868i.m24727c2().m24720d1().m24503j(), z);
                     return;
                 case R.id.btn_tdlib_logSize:
-                    cVar.setData(C1363c0.m37423m(C4868i.m24726c2().m24719d1().m24507e()));
+                    cVar.setData(C1363c0.m37426m(C4868i.m24727c2().m24720d1().m24508e()));
                     return;
                 case R.id.btn_tdlib_verbosity:
-                    String str = (String) raVar.m32844d();
-                    C4868i.C4887r d1 = C4868i.m24726c2().m24719d1();
-                    int h = d1.m24504h(str);
-                    if (str == null || h != d1.m24508d(str)) {
-                        cVar.setData(View$OnClickListenerC3209vr.m31197zh(h));
+                    String str = (String) raVar.m32847d();
+                    C4868i.C4887r d1 = C4868i.m24727c2().m24720d1();
+                    int h = d1.m24505h(str);
+                    if (str == null || h != d1.m24509d(str)) {
+                        cVar.setData(View$OnClickListenerC3209vr.m31199zh(h));
                         C9139d toggler = cVar.getToggler();
-                        if (str == null ? h > 0 : h <= d1.m24504h(null)) {
+                        if (str == null ? h > 0 : h <= d1.m24505h(null)) {
                             z4 = true;
                         }
-                        toggler.m10186r(z4, z);
+                        toggler.m10185r(z4, z);
                         return;
                     }
                     cVar.setData("Default");
                     C9139d toggler2 = cVar.getToggler();
-                    if (h <= d1.m24504h(null)) {
+                    if (h <= d1.m24505h(null)) {
                         z3 = true;
                     }
-                    toggler2.m10186r(z3, z);
+                    toggler2.m10185r(z3, z);
                     return;
                 case R.id.btn_tdlib_viewLogs:
-                    cVar.setData(C1363c0.m37423m(View$OnClickListenerC3209vr.this.f10715I0[0]));
+                    cVar.setData(C1363c0.m37426m(View$OnClickListenerC3209vr.this.f10715I0[0]));
                     return;
                 case R.id.btn_tdlib_viewLogsOld:
-                    cVar.setData(C1363c0.m37423m(View$OnClickListenerC3209vr.this.f10715I0[1]));
+                    cVar.setData(C1363c0.m37426m(View$OnClickListenerC3209vr.this.f10715I0[1]));
                     return;
                 default:
                     return;
@@ -246,10 +246,10 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
         @Override
         public void mo9531c2(C2964ra raVar, int i, C6981o oVar) {
             oVar.setEnabled(false);
-            C11131y6 y6Var = (C11131y6) raVar.m32844d();
+            C11131y6 y6Var = (C11131y6) raVar.m32847d();
             oVar.setTitle(y6Var.m1455u());
             oVar.m18194g1(y6Var.m1463m(false), y6Var.m1462n());
-            oVar.setSubtitle(C4403w.m27869i1(R.string.LaunchAppUserSubtitle));
+            oVar.setSubtitle(C4403w.m27871i1(R.string.LaunchAppUserSubtitle));
         }
     }
 
@@ -260,7 +260,7 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
         @Override
         public void mo3341a() {
             View$OnClickListenerC3209vr.this.f10723Q0 = false;
-            ((MainActivity) View$OnClickListenerC3209vr.this.f30165a).m14641l5();
+            ((MainActivity) View$OnClickListenerC3209vr.this.f30168a).m14640m5();
         }
 
         @Override
@@ -290,13 +290,13 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
             }
             View$OnClickListenerC3209vr.this.f10723Q0 = false;
             if (!View$OnClickListenerC3209vr.this.m9347Sa() && View$OnClickListenerC3209vr.this.m9284bc() != null) {
-                View$OnClickListenerC3209vr.this.m9284bc().m9749M().m9514B(false);
+                View$OnClickListenerC3209vr.this.m9284bc().m9748M().m9514B(false);
                 if (!this.f10727a.get()) {
-                    ((MainActivity) View$OnClickListenerC3209vr.this.f30165a).m14641l5();
-                    C1379j0.m37292y0(R.string.EraseDatabaseDone, 0);
+                    ((MainActivity) View$OnClickListenerC3209vr.this.f30168a).m14640m5();
+                    C1379j0.m37295y0(R.string.EraseDatabaseDone, 0);
                     return;
                 }
-                C1379j0.m37292y0(R.string.EraseDatabaseError, 0);
+                C1379j0.m37295y0(R.string.EraseDatabaseError, 0);
             }
         }
     }
@@ -308,13 +308,13 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
         @Override
         public boolean mo4197a(View$OnFocusChangeListenerC7069y1 y1Var, String str) {
             int s;
-            if (!C5070i.m24057m(str) || (s = C5070i.m24051s(str)) <= 0 || View$OnClickListenerC3209vr.this.m9347Sa()) {
+            if (!C5070i.m24058m(str) || (s = C5070i.m24052s(str)) <= 0 || View$OnClickListenerC3209vr.this.m9347Sa()) {
                 return false;
             }
-            if (View$OnClickListenerC3209vr.this.f30158T != null) {
-                View$OnClickListenerC3209vr.this.f30158T.m9749M().m9507f();
+            if (View$OnClickListenerC3209vr.this.f30161T != null) {
+                View$OnClickListenerC3209vr.this.f30161T.m9748M().m9507f();
             }
-            View$OnClickListenerC3209vr.this.f30167b.m2134zc(s);
+            View$OnClickListenerC3209vr.this.f30170b.m2134zc(s);
             return true;
         }
     }
@@ -323,66 +323,66 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
         super(context, q6Var);
     }
 
-    public void m31286Bh() {
+    public void m31288Bh() {
         if (!m9347Sa()) {
-            m31214li(this.f10717K0);
-            m31216ki(false);
+            m31216li(this.f10717K0);
+            m31218ki(false);
         }
     }
 
-    public void m31284Ch(Log.C7879b bVar) {
+    public void m31286Ch(Log.C7879b bVar) {
         if (!m9347Sa()) {
-            C1379j0.m37334d0(new Runnable() {
+            C1379j0.m37337d0(new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC3209vr.this.m31286Bh();
+                    View$OnClickListenerC3209vr.this.m31288Bh();
                 }
             });
         }
     }
 
-    public void m31282Dh(Log.C7879b bVar) {
+    public void m31284Dh(Log.C7879b bVar) {
         if (!m9347Sa()) {
-            m31214li(bVar);
+            m31216li(bVar);
         }
     }
 
-    public void m31280Eh(final Log.C7879b bVar) {
-        C1379j0.m37334d0(new Runnable() {
+    public void m31282Eh(final Log.C7879b bVar) {
+        C1379j0.m37337d0(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC3209vr.this.m31282Dh(bVar);
+                View$OnClickListenerC3209vr.this.m31284Dh(bVar);
             }
         });
     }
 
-    public void m31278Fh(List list, boolean z) {
+    public void m31280Fh(List list, boolean z) {
         if (z && !m9347Sa() && m9339Ta() && m9284bc() != null) {
-            C1379j0.m37292y0(R.string.EraseDatabaseProgress, 0);
-            m9284bc().m9749M().m9514B(true);
+            C1379j0.m37295y0(R.string.EraseDatabaseProgress, 0);
+            m9284bc().m9748M().m9514B(true);
             this.f10723Q0 = true;
             ((C11131y6) list.remove(list.size() - 1)).mo1480c().m2509c5(new C3213d(new AtomicBoolean(), list));
         }
     }
 
-    public void m31276Gh(final List list) {
-        m9172re(C4403w.m27982H0(this, R.string.EraseDatabaseWarn2, new Object[0]), new AbstractC5917i() {
+    public void m31278Gh(final List list) {
+        m9172re(C4403w.m27984H0(this, R.string.EraseDatabaseWarn2, new Object[0]), new AbstractC5917i() {
             @Override
             public final void mo1322a(boolean z) {
-                View$OnClickListenerC3209vr.this.m31278Fh(list, z);
+                View$OnClickListenerC3209vr.this.m31280Fh(list, z);
             }
         });
     }
 
-    public void m31272Ih(boolean z) {
+    public void m31274Ih(boolean z) {
         if (z) {
-            View$OnClickListenerC3209vr vrVar = new View$OnClickListenerC3209vr(this.f30165a, this.f30167b);
-            vrVar.m31218ji(new C3215f(1, this.f10712F0).m31194c(this.f10711E0));
+            View$OnClickListenerC3209vr vrVar = new View$OnClickListenerC3209vr(this.f30168a, this.f30170b);
+            vrVar.m31220ji(new C3215f(1, this.f10712F0).m31196c(this.f10711E0));
             m9291ac(vrVar);
         }
     }
 
-    public static void m31270Jh(TdApi.Object object) {
+    public static void m31272Jh(TdApi.Object object) {
         TdApi.LanguagePackInfo[] languagePackInfoArr;
         if (object instanceof TdApi.LocalizationTargetInfo) {
             StringBuilder sb2 = new StringBuilder();
@@ -392,138 +392,138 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
                         sb2.append(", ");
                     }
                     sb2.append("'");
-                    sb2.append(languagePackInfo.f25405id);
+                    sb2.append(languagePackInfo.f25408id);
                     sb2.append("'");
                 }
             }
-            C1379j0.m37325i(sb2.toString(), R.string.CopiedText);
+            C1379j0.m37328i(sb2.toString(), R.string.CopiedText);
         }
     }
 
-    public void m31268Kh() {
-        this.f30167b.m2946A4().m1370u0(mo4347s(), false, null);
+    public void m31270Kh() {
+        this.f30170b.m2946A4().m1370u0(mo4347s(), false, null);
     }
 
-    public void m31266Lh() {
-        C1379j0.m37290z0("Contacts reset done", 0);
-        this.f30167b.m2485dd().post(new Runnable() {
+    public void m31268Lh() {
+        C1379j0.m37293z0("Contacts reset done", 0);
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC3209vr.this.m31268Kh();
+                View$OnClickListenerC3209vr.this.m31270Kh();
             }
         });
     }
 
-    public void m31264Mh(TdApi.Object object) {
+    public void m31266Mh(TdApi.Object object) {
         if (!m9347Sa()) {
-            k30 k30Var = new k30(this.f30165a, this.f30167b);
-            k30Var.m9476Ad(k30.C2608a.m34034g("TDLib Database Stats", ((TdApi.DatabaseStatistics) object).statistics, "text/plain"));
+            k30 k30Var = new k30(this.f30168a, this.f30170b);
+            k30Var.m9476Ad(k30.C2608a.m34037g("TDLib Database Stats", ((TdApi.DatabaseStatistics) object).statistics, "text/plain"));
             m9291ac(k30Var);
         }
     }
 
-    public void m31262Nh(final TdApi.Object object) {
+    public void m31264Nh(final TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         } else if (constructor == -1123912880) {
-            this.f30167b.m2485dd().post(new Runnable() {
+            this.f30170b.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC3209vr.this.m31264Mh(object);
+                    View$OnClickListenerC3209vr.this.m31266Mh(object);
                 }
             });
         }
     }
 
-    public static void m31260Oh(int i, int i2) {
-        C1379j0.m37290z0(C4403w.m27844o2(R.string.ReadAllChatsDone, i + i2), 0);
+    public static void m31262Oh(int i, int i2) {
+        C1379j0.m37293z0(C4403w.m27846o2(R.string.ReadAllChatsDone, i + i2), 0);
     }
 
-    public void m31258Ph(final int i) {
-        this.f30167b.m2732Na(C7317b.f23225b, new AbstractC5919k() {
+    public void m31260Ph(final int i) {
+        this.f30170b.m2732Na(C7317b.f23228b, new AbstractC5919k() {
             @Override
             public final void mo3250a(int i2) {
-                View$OnClickListenerC3209vr.m31260Oh(i, i2);
+                View$OnClickListenerC3209vr.m31262Oh(i, i2);
             }
         });
     }
 
-    public void m31256Qh() {
-        this.f30167b.m2732Na(C7317b.f23224a, new AbstractC5919k() {
+    public void m31258Qh() {
+        this.f30170b.m2732Na(C7317b.f23227a, new AbstractC5919k() {
             @Override
             public final void mo3250a(int i) {
-                View$OnClickListenerC3209vr.this.m31258Ph(i);
+                View$OnClickListenerC3209vr.this.m31260Ph(i);
             }
         });
     }
 
-    public boolean m31254Rh(View$OnFocusChangeListenerC7069y1 y1Var, String str) {
-        if (!C5070i.m24057m(str)) {
+    public boolean m31256Rh(View$OnFocusChangeListenerC7069y1 y1Var, String str) {
+        if (!C5070i.m24058m(str)) {
             return false;
         }
-        long w = C5070i.m24047w(str);
-        if (w < EnumC6459p.f20156b.mo20395b(1.0d)) {
+        long w = C5070i.m24048w(str);
+        if (w < EnumC6459p.f20156b.mo20396b(1.0d)) {
             return false;
         }
-        C4868i.m24726c2().m24719d1().m24496p(w);
-        this.f10714H0.m34130s3(R.id.btn_tdlib_logSize);
+        C4868i.m24727c2().m24720d1().m24497p(w);
+        this.f10714H0.m34133s3(R.id.btn_tdlib_logSize);
         return true;
     }
 
-    public void m31252Sh(int i) {
+    public void m31254Sh(int i) {
         int N0;
-        if (!m9347Sa() && (N0 = this.f10714H0.m34224N0(R.id.btn_tdlib)) != -1) {
+        if (!m9347Sa() && (N0 = this.f10714H0.m34227N0(R.id.btn_tdlib)) != -1) {
             if (i > 0) {
                 int i2 = N0 + 1;
-                this.f10714H0.m34240F0().add(i2, new C2964ra(11));
+                this.f10714H0.m34243F0().add(i2, new C2964ra(11));
                 int i3 = N0 + 2;
-                this.f10714H0.m34240F0().add(i3, new C2964ra(4, (int) R.id.btn_testingUtils, 0, (int) R.string.TestMode, false));
-                this.f10714H0.m39308M(i2, 2);
+                this.f10714H0.m34243F0().add(i3, new C2964ra(4, (int) R.id.btn_testingUtils, 0, (int) R.string.TestMode, false));
+                this.f10714H0.m39311M(i2, 2);
                 if (i == 1) {
-                    this.f10714H0.m34129t0(i3 + 2, new C2964ra(9, 0, 0, C1363c0.m37425l(this, "To unlock more Testing Utilities you have to be a member of @tgandroidtests.", null), false));
+                    this.f10714H0.m34132t0(i3 + 2, new C2964ra(9, 0, 0, C1363c0.m37428l(this, "To unlock more Testing Utilities you have to be a member of @tgandroidtests.", null), false));
                     return;
                 }
                 return;
             }
-            this.f10714H0.m34129t0(N0 + 2, new C2964ra(9, 0, 0, C1363c0.m37425l(this, "To unlock Testing Utilities you have to be subscribed to @tgx_android or be a member of @tgandroidtests.", null), false));
+            this.f10714H0.m34132t0(N0 + 2, new C2964ra(9, 0, 0, C1363c0.m37428l(this, "To unlock Testing Utilities you have to be subscribed to @tgx_android or be a member of @tgandroidtests.", null), false));
         }
     }
 
-    public void m31250Th(final int i) {
+    public void m31252Th(final int i) {
         this.f10711E0 = i;
-        this.f30167b.m2469ed(new Runnable() {
+        this.f30170b.m2469ed(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC3209vr.this.m31252Sh(i);
+                View$OnClickListenerC3209vr.this.m31254Sh(i);
             }
         });
     }
 
-    public void m31248Uh() {
+    public void m31250Uh() {
         if (!m9347Sa()) {
-            m31198yh();
+            m31200yh();
         }
     }
 
-    public void m31246Vh() {
+    public void m31248Vh() {
         if (!m9347Sa()) {
-            m31198yh();
+            m31200yh();
         }
     }
 
-    public boolean m31244Wh(View view, int i) {
+    public boolean m31246Wh(View view, int i) {
         if (i != R.id.btn_deleteAll) {
             return true;
         }
-        m31202uh();
+        m31204uh();
         return true;
     }
 
-    public static void m31242Xh(Runnable runnable) {
+    public static void m31244Xh(Runnable runnable) {
         try {
-            C4897o.m24458o();
-            C1379j0.m37334d0(runnable);
+            C4897o.m24459o();
+            C1379j0.m37337d0(runnable);
         } catch (Error e) {
             throw e;
         } catch (RuntimeException e2) {
@@ -532,46 +532,46 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
         }
     }
 
-    public void m31240Yh(int i, boolean z) {
+    public void m31242Yh(int i, boolean z) {
         if (z) {
-            m31220ii(i, false);
+            m31222ii(i, false);
         }
     }
 
-    public void m31238Zh() {
+    public void m31240Zh() {
         if (!m9347Sa()) {
             m9387Md(false);
         }
-        C1379j0.m37290z0("Test completed successfully", 0);
+        C1379j0.m37293z0("Test completed successfully", 0);
     }
 
-    public void m31236ai(C4868i.C4887r rVar, String str, int i, SparseIntArray sparseIntArray) {
-        rVar.m24494r(str, sparseIntArray.get(R.id.btn_tdlib_verbosity, 1) - 1);
-        if (C5070i.m24061i(str)) {
-            this.f10714H0.m34186b3(R.id.btn_tdlib_verbosity);
+    public void m31238ai(C4868i.C4887r rVar, String str, int i, SparseIntArray sparseIntArray) {
+        rVar.m24495r(str, sparseIntArray.get(R.id.btn_tdlib_verbosity, 1) - 1);
+        if (C5070i.m24062i(str)) {
+            this.f10714H0.m34189b3(R.id.btn_tdlib_verbosity);
         } else {
-            this.f10714H0.m34133r3(str);
+            this.f10714H0.m34136r3(str);
         }
     }
 
-    public boolean m31234bi(String str, C4868i.C4887r rVar, View$OnFocusChangeListenerC7069y1 y1Var, String str2) {
+    public boolean m31236bi(String str, C4868i.C4887r rVar, View$OnFocusChangeListenerC7069y1 y1Var, String str2) {
         int t;
-        if (!C5070i.m24057m(str2) || (t = C5070i.m24050t(str2, -1)) < 0) {
+        if (!C5070i.m24058m(str2) || (t = C5070i.m24051t(str2, -1)) < 0) {
             return false;
         }
         if (str != null && t < 1) {
             return false;
         }
-        rVar.m24494r(str, t);
-        if (C5070i.m24061i(str)) {
-            this.f10714H0.m34130s3(R.id.btn_tdlib_verbosity);
+        rVar.m24495r(str, t);
+        if (C5070i.m24062i(str)) {
+            this.f10714H0.m34133s3(R.id.btn_tdlib_verbosity);
         } else {
-            this.f10714H0.m34133r3(str);
+            this.f10714H0.m34136r3(str);
         }
         return true;
     }
 
-    public void m31232ci(final String str, int i, final C4868i.C4887r rVar) {
+    public void m31234ci(final String str, int i, final C4868i.C4887r rVar) {
         String str2 = str != null ? str : "Verbosity Level";
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Integer ");
@@ -586,44 +586,44 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
             @Override
             public final boolean mo4197a(View$OnFocusChangeListenerC7069y1 y1Var, String str3) {
                 boolean bi;
-                bi = View$OnClickListenerC3209vr.this.m31234bi(str, rVar, y1Var, str3);
+                bi = View$OnClickListenerC3209vr.this.m31236bi(str, rVar, y1Var, str3);
                 return bi;
             }
         }, true);
     }
 
-    public void m31230di(C9180e2[] e2VarArr, final String str, final int i, final C4868i.C4887r rVar, View view, int i2, C2964ra raVar, TextView textView, C2546iq iqVar) {
-        if (raVar.m32835j() == 7 && e2VarArr[0] != null && e2VarArr[0].f29641e != null && !e2VarArr[0].f29641e.m18446A2()) {
-            e2VarArr[0].f29641e.m18408y2(true);
-            C1379j0.m37332e0(new Runnable() {
+    public void m31232di(C9180e2[] e2VarArr, final String str, final int i, final C4868i.C4887r rVar, View view, int i2, C2964ra raVar, TextView textView, C2546iq iqVar) {
+        if (raVar.m32838j() == 7 && e2VarArr[0] != null && e2VarArr[0].f29644e != null && !e2VarArr[0].f29644e.m18446A2()) {
+            e2VarArr[0].f29644e.m18408y2(true);
+            C1379j0.m37335e0(new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC3209vr.this.m31232ci(str, i, rVar);
+                    View$OnClickListenerC3209vr.this.m31234ci(str, i, rVar);
                 }
             }, 200L);
         }
     }
 
-    public boolean m31226fi(final boolean z, View view, View view2, int i) {
+    public boolean m31228fi(final boolean z, View view, View view2, int i) {
         switch (i) {
             case R.id.btn_saveFile:
-                C4779t2.m25525e5(new File(C10536ab.m4796H0(z)), "text/plain");
+                C4779t2.m25526e5(new File(C10536ab.m4796H0(z)), "text/plain");
                 break;
             case R.id.btn_tdlib_clearLogs:
                 HandlerC10770jj.m3793L2(z, new AbstractC5920l() {
                     @Override
                     public final void mo3050a(long j) {
-                        View$OnClickListenerC3209vr.this.m31228ei(z, j);
+                        View$OnClickListenerC3209vr.this.m31230ei(z, j);
                     }
                 });
                 break;
             case R.id.btn_tdlib_shareLogs:
                 boolean z2 = false;
-                if (C4868i.m24726c2().m24841M1().m24504h(null) != 0) {
-                    mo4347s().m14584H3().m8985g(view).m8969F(this, this.f30167b, R.drawable.baseline_warning_24, C4403w.m27982H0(this, R.string.DebugShareError, new Object[0]));
+                if (C4868i.m24727c2().m24842M1().m24505h(null) != 0) {
+                    mo4347s().m14584H3().m8985g(view).m8969F(this, this.f30170b, R.drawable.baseline_warning_24, C4403w.m27984H0(this, R.string.DebugShareError, new Object[0]));
                     break;
                 } else {
-                    C10930q6 q6Var = this.f30167b;
+                    C10930q6 q6Var = this.f30170b;
                     if (q6Var == null || q6Var.m2930B4().m4680k1()) {
                         z2 = true;
                     }
@@ -632,15 +632,15 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
                 }
                 break;
             case R.id.btn_tdlib_viewLogs:
-                k30 k30Var = new k30(this.f30165a, this.f30167b);
-                k30Var.m9476Ad(k30.C2608a.m34035f("TDLib Log", C10536ab.m4796H0(z), "text/plain"));
+                k30 k30Var = new k30(this.f30168a, this.f30170b);
+                k30Var.m9476Ad(k30.C2608a.m34038f("TDLib Log", C10536ab.m4796H0(z), "text/plain"));
                 m9291ac(k30Var);
                 break;
         }
         return true;
     }
 
-    public static String m31197zh(int i) {
+    public static String m31199zh(int i) {
         switch (i) {
             case -1:
                 return "-1";
@@ -669,25 +669,25 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
         return super.mo408A9();
     }
 
-    public final String m31288Ah(boolean z) {
-        C10930q6 q6Var = this.f30167b;
+    public final String m31290Ah(boolean z) {
+        C10930q6 q6Var = this.f30170b;
         String Vc = q6Var != null ? q6Var.m2607Vc() : null;
         StringBuilder sb2 = new StringBuilder();
         if (Vc == null) {
             Vc = "???";
         }
         sb2.append(Vc);
-        sb2.append(z ? ".1506" : "");
+        sb2.append(z ? ".1507" : "");
         return sb2.toString();
     }
 
     @Override
     public void mo14706G6(int i, int i2, String str, Throwable th) {
-        if (i2 <= 2 || m31224gi()) {
-            C1379j0.m37334d0(new Runnable() {
+        if (i2 <= 2 || m31226gi()) {
+            C1379j0.m37337d0(new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC3209vr.this.m31246Vh();
+                    View$OnClickListenerC3209vr.this.m31248Vh();
                 }
             });
         }
@@ -700,10 +700,10 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
 
     @Override
     public void mo14705Q6() {
-        C1379j0.m37334d0(new Runnable() {
+        C1379j0.m37337d0(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC3209vr.this.m31248Uh();
+                View$OnClickListenerC3209vr.this.m31250Uh();
             }
         });
     }
@@ -716,17 +716,17 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
     @Override
     public CharSequence mo9313X9() {
         if (this.f10713G0) {
-            return C4403w.m27869i1(R.string.LaunchTitle);
+            return C4403w.m27871i1(R.string.LaunchTitle);
         }
         int i = this.f10710D0;
         if (i == 0) {
-            return "0.24.6.1506-arm64-v8a";
+            return "0.24.6.1507-arm64-v8a";
         }
         if (i == 1) {
-            return C4403w.m27869i1(R.string.TestMode);
+            return C4403w.m27871i1(R.string.TestMode);
         }
         if (i == 2) {
-            return "TDLib " + m31288Ah(false);
+            return "TDLib " + m31290Ah(false);
         }
         throw new AssertionError(this.f10710D0);
     }
@@ -737,28 +737,28 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
         Log.removeOutputListener(this);
     }
 
-    public final boolean m31224gi() {
+    public final boolean m31226gi() {
         Log.C7879b bVar;
         return this.f10719M0 == 0 || (this.f10718L0 && ((bVar = this.f10717K0) == null || bVar.m14707a() || SystemClock.elapsedRealtime() - this.f10719M0 >= 1000));
     }
 
-    public final void m31222hi(final Runnable runnable) {
-        C1379j0.m37290z0("Running tests, please do nothing and wait...", 0);
-        C4383l.m28059a().m28058b(new Runnable() {
+    public final void m31224hi(final Runnable runnable) {
+        C1379j0.m37293z0("Running tests, please do nothing and wait...", 0);
+        C4383l.m28061a().m28060b(new Runnable() {
             @Override
             public final void run() {
-                View$OnClickListenerC3209vr.m31242Xh(runnable);
+                View$OnClickListenerC3209vr.m31244Xh(runnable);
             }
         });
     }
 
-    public final void m31220ii(final int i, boolean z) {
+    public final void m31222ii(final int i, boolean z) {
         if (this.f10722P0 == 0) {
             if (z) {
                 m9172re("Test may take some time. Don't be scared if it crashes.\n\nWarning: don't do anything in the app while test is running.", new AbstractC5917i() {
                     @Override
                     public final void mo1322a(boolean z2) {
-                        View$OnClickListenerC3209vr.this.m31240Yh(i, z2);
+                        View$OnClickListenerC3209vr.this.m31242Yh(i, z2);
                     }
                 });
                 return;
@@ -767,19 +767,19 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
             Runnable trVar = new Runnable() {
                 @Override
                 public final void run() {
-                    View$OnClickListenerC3209vr.this.m31238Zh();
+                    View$OnClickListenerC3209vr.this.m31240Zh();
                 }
             };
             this.f10722P0 = i;
             if (i != 1) {
                 this.f10722P0 = 0;
             } else {
-                m31222hi(trVar);
+                m31224hi(trVar);
             }
         }
     }
 
-    public void m31218ji(C3215f fVar) {
+    public void m31220ji(C3215f fVar) {
         super.m9476Ad(fVar);
         boolean z = false;
         this.f10710D0 = fVar != null ? fVar.f10731a : 0;
@@ -791,10 +791,10 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
         this.f10713G0 = z;
     }
 
-    public final void m31216ki(boolean z) {
+    public final void m31218ki(boolean z) {
         if (this.f10720N0 != z) {
             this.f10720N0 = z;
-            this.f10714H0.m34130s3(R.id.btn_log_files);
+            this.f10714H0.m34133s3(R.id.btn_log_files);
         }
     }
 
@@ -808,47 +808,47 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
                     j |= sparseIntArray.keyAt(i2);
                 }
                 Log.setEnabledTags(j);
-                this.f10714H0.m34130s3(R.id.btn_log_tags);
+                this.f10714H0.m34133s3(R.id.btn_log_tags);
                 return;
             case R.id.btn_log_verbosity:
                 Log.setLogLevel(sparseIntArray.get(R.id.btn_log_verbosity, 1) - 1);
-                this.f10714H0.m34130s3(R.id.btn_log_verbosity);
+                this.f10714H0.m34133s3(R.id.btn_log_verbosity);
                 return;
             default:
                 return;
         }
     }
 
-    public final void m31214li(Log.C7879b bVar) {
+    public final void m31216li(Log.C7879b bVar) {
         this.f10717K0 = bVar;
         this.f10718L0 = true;
-        this.f10714H0.m34130s3(R.id.btn_log_files);
+        this.f10714H0.m34133s3(R.id.btn_log_files);
     }
 
-    public final void m31228ei(long j, boolean z) {
+    public final void m31230ei(long j, boolean z) {
         long[] jArr = this.f10715I0;
         if (jArr[z ? 1 : 0] != j) {
             jArr[z] = j;
             C2546iq iqVar = this.f10714H0;
             if (iqVar != null) {
-                iqVar.m34130s3(z != 0 ? R.id.btn_tdlib_viewLogsOld : R.id.btn_tdlib_viewLogs);
+                iqVar.m34133s3(z != 0 ? R.id.btn_tdlib_viewLogsOld : R.id.btn_tdlib_viewLogs);
             }
         }
     }
 
     @SuppressLint({"ResourceType"})
-    public final void m31210ni(final String str) {
+    public final void m31212ni(final String str) {
         ArrayList arrayList = new ArrayList(7);
-        final C4868i.C4887r d1 = C4868i.m24726c2().m24719d1();
-        final int h = d1.m24504h(str);
-        int d = str != null ? d1.m24508d(str) : -1;
+        final C4868i.C4887r d1 = C4868i.m24727c2().m24720d1();
+        final int h = d1.m24505h(str);
+        int d = str != null ? d1.m24509d(str) : -1;
         if (str != null && (d <= 0 || d >= 6)) {
-            arrayList.add(new C2964ra(13, d + 1, 0, m31197zh(d) + " (Default)", (int) R.id.btn_tdlib_verbosity, d == h));
+            arrayList.add(new C2964ra(13, d + 1, 0, m31199zh(d) + " (Default)", (int) R.id.btn_tdlib_verbosity, d == h));
         }
         int i = str != null ? 1 : 0;
         while (i < 7) {
             boolean z = i == 6;
-            String zh = z ? "MORE" : m31197zh(i);
+            String zh = z ? "MORE" : m31199zh(i);
             if (str != null && i == d) {
                 zh = zh + " (Default)";
             }
@@ -859,64 +859,64 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
         }
         C2964ra[] raVarArr = new C2964ra[arrayList.size()];
         arrayList.toArray(raVarArr);
-        C9188f2 c = new C9188f2(R.id.btn_tdlib_verbosity).m9997p(raVarArr).m10003j(new AbstractC9323v4.AbstractC9343r() {
+        C9188f2 c = new C9188f2(R.id.btn_tdlib_verbosity).m9996p(raVarArr).m10002j(new AbstractC9323v4.AbstractC9343r() {
             @Override
             public final void mo1773l6(int i3, SparseIntArray sparseIntArray) {
-                View$OnClickListenerC3209vr.this.m31236ai(d1, str, i3, sparseIntArray);
+                View$OnClickListenerC3209vr.this.m31238ai(d1, str, i3, sparseIntArray);
             }
-        }).m10010c(false);
-        c.m9999n(new AbstractC9323v4.AbstractC9337n() {
+        }).m10009c(false);
+        c.m9998n(new AbstractC9323v4.AbstractC9337n() {
             @Override
             public final void mo3907a(View view, int i3, C2964ra raVar, TextView textView, C2546iq iqVar) {
-                View$OnClickListenerC3209vr.this.m31230di(r2, str, h, d1, view, i3, raVar, textView, iqVar);
+                View$OnClickListenerC3209vr.this.m31232di(r2, str, h, d1, view, i3, raVar, textView, iqVar);
             }
         });
         final C9180e2[] e2VarArr = {m9206me(c)};
     }
 
-    public final void m31208oi(final View view, final boolean z) {
-        m31203th(z);
+    public final void m31210oi(final View view, final boolean z) {
+        m31205th(z);
         if (this.f10715I0[z ? 1 : 0] == 0) {
-            C1379j0.m37290z0("Log is empty", 0);
+            C1379j0.m37293z0("Log is empty", 0);
             return;
         }
         C5320c cVar = new C5320c(4);
         C5320c cVar2 = new C5320c(4);
         C5320c cVar3 = new C5320c(4);
         C5146u0 u0Var = new C5146u0(4);
-        cVar.m23284a(R.id.btn_tdlib_viewLogs);
-        cVar2.m23284a(R.drawable.baseline_visibility_24);
-        cVar3.m23284a(1);
-        u0Var.m23816a(R.string.Open);
-        cVar.m23284a(R.id.btn_tdlib_shareLogs);
-        C10930q6 q6Var = this.f30167b;
-        cVar2.m23284a((q6Var == null || q6Var.m2930B4().m4680k1()) ? R.drawable.baseline_share_24 : R.drawable.baseline_forward_24);
-        cVar3.m23284a(1);
-        u0Var.m23816a(R.string.Share);
-        cVar.m23284a(R.id.btn_saveFile);
-        cVar2.m23284a(R.drawable.baseline_file_download_24);
-        cVar3.m23284a(1);
-        u0Var.m23816a(R.string.SaveToDownloads);
-        cVar.m23284a(R.id.btn_tdlib_clearLogs);
-        cVar2.m23284a(R.drawable.baseline_delete_24);
-        cVar3.m23284a(2);
-        u0Var.m23816a(R.string.Delete);
-        m9261ee(C7389v0.m16565x0(C10536ab.m4796H0(z)) + " (" + C1363c0.m37423m(this.f10715I0[z]) + ")", cVar.m23280e(), u0Var.m23813d(), cVar3.m23280e(), cVar2.m23280e(), new AbstractC5117h0() {
+        cVar.m23285a(R.id.btn_tdlib_viewLogs);
+        cVar2.m23285a(R.drawable.baseline_visibility_24);
+        cVar3.m23285a(1);
+        u0Var.m23817a(R.string.Open);
+        cVar.m23285a(R.id.btn_tdlib_shareLogs);
+        C10930q6 q6Var = this.f30170b;
+        cVar2.m23285a((q6Var == null || q6Var.m2930B4().m4680k1()) ? R.drawable.baseline_share_24 : R.drawable.baseline_forward_24);
+        cVar3.m23285a(1);
+        u0Var.m23817a(R.string.Share);
+        cVar.m23285a(R.id.btn_saveFile);
+        cVar2.m23285a(R.drawable.baseline_file_download_24);
+        cVar3.m23285a(1);
+        u0Var.m23817a(R.string.SaveToDownloads);
+        cVar.m23285a(R.id.btn_tdlib_clearLogs);
+        cVar2.m23285a(R.drawable.baseline_delete_24);
+        cVar3.m23285a(2);
+        u0Var.m23817a(R.string.Delete);
+        m9261ee(C7389v0.m16565x0(C10536ab.m4796H0(z)) + " (" + C1363c0.m37426m(this.f10715I0[z]) + ")", cVar.m23281e(), u0Var.m23814d(), cVar3.m23281e(), cVar2.m23281e(), new AbstractC5117h0() {
             @Override
             public final boolean mo493A3(View view2, int i) {
                 boolean fi;
-                fi = View$OnClickListenerC3209vr.this.m31226fi(z, view, view2, i);
+                fi = View$OnClickListenerC3209vr.this.m31228fi(z, view, view2, i);
                 return fi;
             }
 
             @Override
             public boolean mo492Q() {
-                return C5115g0.m23935a(this);
+                return C5115g0.m23936a(this);
             }
 
             @Override
             public Object mo491b2(int i) {
-                return C5115g0.m23934b(this, i);
+                return C5115g0.m23935b(this, i);
             }
         });
     }
@@ -926,53 +926,53 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
         int id2 = view.getId();
         switch (id2) {
             case R.id.btn_appLogs:
-                View$OnClickListenerC3209vr vrVar = new View$OnClickListenerC3209vr(this.f30165a, this.f30167b);
-                vrVar.m31218ji(new C3215f(0, this.f10712F0).m31194c(this.f10711E0));
+                View$OnClickListenerC3209vr vrVar = new View$OnClickListenerC3209vr(this.f30168a, this.f30170b);
+                vrVar.m31220ji(new C3215f(0, this.f10712F0).m31196c(this.f10711E0));
                 m9291ac(vrVar);
                 return;
             case R.id.btn_debugSwitchRtl:
-                this.f30165a.m14526W();
+                this.f30168a.m14525W();
                 return;
             case R.id.btn_eraseDatabase:
                 if (this.f10723Q0) {
                     return;
                 }
                 if (this.f10712F0.f16673f != -1) {
-                    this.f30167b.m2930B4().m4706d3(this.f10712F0.f16673f).m2485dd().m3713T2(this, false, new C3212c());
+                    this.f30170b.m2930B4().m4706d3(this.f10712F0.f16673f).m2485dd().m3713T2(this, false, new C3212c());
                     return;
                 } else {
-                    ((MainActivity) mo4347s()).m14644k4(C4403w.m27982H0(this, R.string.EraseDatabaseWarn, new Object[0]), C4403w.m27869i1(R.string.EraseConfirm), new AbstractC5918j() {
+                    ((MainActivity) mo4347s()).m14643l4(C4403w.m27984H0(this, R.string.EraseDatabaseWarn, new Object[0]), C4403w.m27871i1(R.string.EraseConfirm), new AbstractC5918j() {
                         @Override
                         public final void mo1330a(Object obj) {
-                            View$OnClickListenerC3209vr.this.m31276Gh((List) obj);
+                            View$OnClickListenerC3209vr.this.m31278Gh((List) obj);
                         }
                     });
                     return;
                 }
             case R.id.btn_launchApp:
-                ((MainActivity) this.f30165a).m14641l5();
+                ((MainActivity) this.f30168a).m14640m5();
                 return;
             case R.id.btn_shareError:
-                C1405v.m37128O(m31200wh() + "\n" + this.f10712F0.f16669b);
+                C1405v.m37131O(m31202wh() + "\n" + this.f10712F0.f16669b);
                 return;
             case R.id.btn_showError:
-                AbstractC9323v4<?> k30Var = new k30(this.f30165a, this.f30167b);
-                k30Var.m9476Ad(k30.C2608a.m34034g(m31200wh(), this.f10712F0.f16669b, "text/plain"));
+                AbstractC9323v4<?> k30Var = new k30(this.f30168a, this.f30170b);
+                k30Var.m9476Ad(k30.C2608a.m34037g(m31202wh(), this.f10712F0.f16669b, "text/plain"));
                 m9291ac(k30Var);
                 return;
             case R.id.btn_switchRtl:
-                C4868i.m24726c2().m24715d5(C4403w.m27860k2(), this.f10714H0.m34201W2(view));
+                C4868i.m24727c2().m24716d5(C4403w.m27862k2(), this.f10714H0.m34204W2(view));
                 return;
             case R.id.btn_update:
-                C1405v.m37139D();
+                C1405v.m37142D();
                 return;
             default:
                 switch (id2) {
                     case R.id.btn_log_android:
-                        Log.setSetting(1, ((C9137c) view).getToggler().m10184t(true));
+                        Log.setSetting(1, ((C9137c) view).getToggler().m10183t(true));
                         return;
                     case R.id.btn_log_files:
-                        AbstractC9323v4<?> jvVar = new View$OnClickListenerC2593jv(this.f30165a, this.f30167b);
+                        AbstractC9323v4<?> jvVar = new View$OnClickListenerC2593jv(this.f30168a, this.f30170b);
                         jvVar.m9476Ad(new View$OnClickListenerC2593jv.C2595b(this.f10717K0));
                         m9291ac(jvVar);
                         return;
@@ -991,7 +991,7 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
                         int i3 = 0;
                         while (i3 < 6) {
                             int i4 = i3 + 1;
-                            raVarArr2[i3] = new C2964ra(13, i4, 0, m31197zh(i3), (int) R.id.btn_log_verbosity, i3 == logLevel);
+                            raVarArr2[i3] = new C2964ra(13, i4, 0, m31199zh(i3), (int) R.id.btn_log_verbosity, i3 == logLevel);
                             i3 = i4;
                         }
                         m9192oe(R.id.btn_log_verbosity, raVarArr2, this, false);
@@ -999,101 +999,101 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
                     default:
                         switch (id2) {
                             case R.id.btn_secret_copyLanguageCodes:
-                                this.f30167b.m2270r4().m14783o(new TdApi.GetLocalizationTargetInfo(false), C2552ir.f8722a);
+                                this.f30170b.m2270r4().m14783o(new TdApi.GetLocalizationTargetInfo(false), C2552ir.f8722a);
                                 return;
                             case R.id.btn_secret_databaseStats:
-                                AbstractC9323v4<?> k30Var2 = new k30(this.f30165a, this.f30167b);
-                                k30Var2.m9476Ad(k30.C2608a.m34034g("App Database Stats", C4868i.m24726c2().m24637n3().m17962s("leveldb.stats") + "\n\nMemory usage: " + C4868i.m24726c2().m24637n3().m17962s("leveldb.approximate-memory-usage"), "text/plain"));
+                                AbstractC9323v4<?> k30Var2 = new k30(this.f30168a, this.f30170b);
+                                k30Var2.m9476Ad(k30.C2608a.m34037g("App Database Stats", C4868i.m24727c2().m24638n3().m17962s("leveldb.stats") + "\n\nMemory usage: " + C4868i.m24727c2().m24638n3().m17962s("leveldb.approximate-memory-usage"), "text/plain"));
                                 m9291ac(k30Var2);
                                 return;
                             case R.id.btn_secret_debugQrRegions:
-                                C4868i.m24726c2().m24879G5(this.f10714H0.m34201W2(view));
+                                C4868i.m24727c2().m24880G5(this.f10714H0.m34204W2(view));
                                 return;
                             case R.id.btn_secret_deleteContacts:
-                                this.f30167b.m2946A4().m1413Y(true, new Runnable() {
+                                this.f30170b.m2946A4().m1413Y(true, new Runnable() {
                                     @Override
                                     public final void run() {
-                                        View$OnClickListenerC3209vr.this.m31266Lh();
+                                        View$OnClickListenerC3209vr.this.m31268Lh();
                                     }
                                 });
                                 return;
                             case R.id.btn_secret_deleteProfilePhoto:
-                                TdApi.User Z9 = this.f30167b.m2550Z9();
+                                TdApi.User Z9 = this.f30170b.m2550Z9();
                                 if (!(Z9 == null || Z9.profilePhoto == null)) {
-                                    this.f30167b.m2270r4().m14783o(new TdApi.DeleteFile(Z9.profilePhoto.small.f25373id), this.f30167b.m2392ja());
-                                    this.f30167b.m2270r4().m14783o(new TdApi.DeleteFile(Z9.profilePhoto.big.f25373id), this.f30167b.m2392ja());
+                                    this.f30170b.m2270r4().m14783o(new TdApi.DeleteFile(Z9.profilePhoto.small.f25376id), this.f30170b.m2392ja());
+                                    this.f30170b.m2270r4().m14783o(new TdApi.DeleteFile(Z9.profilePhoto.big.f25376id), this.f30170b.m2392ja());
                                     return;
                                 }
                                 return;
                             case R.id.btn_secret_disableNetwork:
-                                C4868i.m24726c2().m24558x4(this.f10714H0.m34201W2(view));
-                                C10536ab.m4667o1().m4694g3().m28138o();
+                                C4868i.m24727c2().m24559x4(this.f10714H0.m34204W2(view));
+                                C10536ab.m4667o1().m4694g3().m28140o();
                                 return;
                             case R.id.btn_secret_disableQrProcess:
-                                C4868i.m24726c2().m24551y4(this.f10714H0.m34201W2(view));
+                                C4868i.m24727c2().m24552y4(this.f10714H0.m34204W2(view));
                                 return;
                             case R.id.btn_secret_dontReadMessages:
-                                if (this.f10714H0.m34224N0(R.id.btn_secret_dontReadMessages) != -1) {
-                                    boolean z = !C4868i.m24726c2().m24780V();
-                                    C4868i.m24726c2().m24544z4(z);
-                                    if (z != C4868i.m24726c2().m24780V()) {
-                                        C1379j0.m37290z0("You can't enable that", 0);
+                                if (this.f10714H0.m34227N0(R.id.btn_secret_dontReadMessages) != -1) {
+                                    boolean z = !C4868i.m24727c2().m24781V();
+                                    C4868i.m24727c2().m24545z4(z);
+                                    if (z != C4868i.m24727c2().m24781V()) {
+                                        C1379j0.m37293z0("You can't enable that", 0);
                                         return;
                                     } else {
-                                        this.f10714H0.m34130s3(R.id.btn_secret_dontReadMessages);
+                                        this.f10714H0.m34133s3(R.id.btn_secret_dontReadMessages);
                                         return;
                                     }
                                 } else {
                                     return;
                                 }
                             case R.id.btn_secret_dropHidden:
-                                this.f30167b.m2440ga().m3070v1(false);
+                                this.f30170b.m2440ga().m3070v1(false);
                                 return;
                             case R.id.btn_secret_dropSavedScrollPositions:
-                                C4868i.m24726c2().m24818P3(this.f30167b.mo1484a(), null);
+                                C4868i.m24727c2().m24819P3(this.f30170b.mo1484a(), null);
                                 return;
                             case R.id.btn_secret_forceQrZxing:
-                                C4868i.m24726c2().m24845L4(this.f10714H0.m34201W2(view));
+                                C4868i.m24727c2().m24846L4(this.f10714H0.m34204W2(view));
                                 return;
                             case R.id.btn_secret_forceTcpInCalls:
-                                C4868i.m24726c2().m24859J4(this.f10714H0.m34201W2(view));
+                                C4868i.m24727c2().m24860J4(this.f10714H0.m34204W2(view));
                                 return;
                             case R.id.btn_secret_forceTdlibRestarts:
-                                C10536ab.m4667o1().m4746T2(this.f10714H0.m34201W2(view));
+                                C10536ab.m4667o1().m4746T2(this.f10714H0.m34204W2(view));
                                 return;
                             case R.id.btn_secret_qrTest:
                                 m9380Nc(new AbstractC9323v4.C9334k().m9108c(true).m9106e(true).m9110a(false).m9105f(true).m9103h(true).m9107d(2).m9104g(C2940qq.f9782a));
                                 return;
                             case R.id.btn_secret_readAllChats:
-                                m9322Vd(C4403w.m27869i1(R.string.ReadAllChatsInfo), null, new Runnable() {
+                                m9322Vd(C4403w.m27871i1(R.string.ReadAllChatsInfo), null, new Runnable() {
                                     @Override
                                     public final void run() {
-                                        View$OnClickListenerC3209vr.this.m31256Qh();
+                                        View$OnClickListenerC3209vr.this.m31258Qh();
                                     }
                                 });
                                 return;
                             case R.id.btn_secret_replacePhoneNumber:
-                                C4868i.m24726c2().m24838M4(this.f10714H0.m34201W2(view));
+                                C4868i.m24727c2().m24839M4(this.f10714H0.m34204W2(view));
                                 return;
                             case R.id.btn_secret_resetLocalNotificationSettings:
-                                this.f30167b.m2440ga().m3128g2(true);
+                                this.f30170b.m2440ga().m3128g2(true);
                                 return;
                             case R.id.btn_secret_resetTutorials:
-                                C4868i.m24726c2().m24783U3();
-                                C1379j0.m37290z0("Hints reset completed", 0);
+                                C4868i.m24727c2().m24784U3();
+                                C1379j0.m37293z0("Hints reset completed", 0);
                                 return;
                             case R.id.btn_secret_sendAllChangeLogs:
-                                this.f30167b.m2398j4(false, true);
+                                this.f30170b.m2398j4(false, true);
                                 return;
                             case R.id.btn_secret_stressTest:
                                 m9364Pc("Stress test", "Restart count", R.string.Done, R.string.Cancel, "50", new C3214e(), true);
                                 return;
                             case R.id.btn_secret_tdlibDatabaseStats:
-                                C1379j0.m37290z0("Calculating. Please wait...", 0);
-                                this.f30167b.m2270r4().m14783o(new TdApi.GetDatabaseStatistics(), new Client.AbstractC7865g() {
+                                C1379j0.m37293z0("Calculating. Please wait...", 0);
+                                this.f30170b.m2270r4().m14783o(new TdApi.GetDatabaseStatistics(), new Client.AbstractC7865g() {
                                     @Override
                                     public final void mo255t2(TdApi.Object object) {
-                                        View$OnClickListenerC3209vr.this.m31262Nh(object);
+                                        View$OnClickListenerC3209vr.this.m31264Nh(object);
                                     }
                                 });
                                 return;
@@ -1103,78 +1103,78 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
                                         m9290ad(this.f10711E0, this.f10712F0);
                                         return;
                                     case R.id.btn_tdlib_androidLogs:
-                                        C4868i.m24726c2().m24719d1().m24495q(this.f10714H0.m34201W2(view));
+                                        C4868i.m24727c2().m24720d1().m24496q(this.f10714H0.m34204W2(view));
                                         return;
                                     default:
                                         switch (id2) {
                                             case R.id.btn_tdlib_logSize:
-                                                m9364Pc("Maximum Log Size", "Amount of bytes", R.string.Done, R.string.Cancel, String.valueOf(C4868i.m24726c2().m24719d1().m24507e()), new AbstractC9323v4.AbstractC9336m() {
+                                                m9364Pc("Maximum Log Size", "Amount of bytes", R.string.Done, R.string.Cancel, String.valueOf(C4868i.m24727c2().m24720d1().m24508e()), new AbstractC9323v4.AbstractC9336m() {
                                                     @Override
                                                     public final boolean mo4197a(View$OnFocusChangeListenerC7069y1 y1Var, String str) {
                                                         boolean Rh;
-                                                        Rh = View$OnClickListenerC3209vr.this.m31254Rh(y1Var, str);
+                                                        Rh = View$OnClickListenerC3209vr.this.m31256Rh(y1Var, str);
                                                         return Rh;
                                                     }
                                                 }, true);
                                                 return;
                                             case R.id.btn_tdlib_resetLogSettings:
-                                                C4868i.m24726c2().m24719d1().m24500l();
-                                                this.f10714H0.m34193Z2();
-                                                C1379j0.m37290z0("Done. Restart is required for some changes to apply.", 0);
+                                                C4868i.m24727c2().m24720d1().m24501l();
+                                                this.f10714H0.m34196Z2();
+                                                C1379j0.m37293z0("Done. Restart is required for some changes to apply.", 0);
                                                 return;
                                             default:
                                                 switch (id2) {
                                                     case R.id.btn_tdlib_verbosity:
-                                                        m31210ni((String) ((C2964ra) view.getTag()).m32844d());
+                                                        m31212ni((String) ((C2964ra) view.getTag()).m32847d());
                                                         return;
                                                     case R.id.btn_tdlib_viewLogs:
-                                                        m31208oi(view, false);
+                                                        m31210oi(view, false);
                                                         return;
                                                     case R.id.btn_tdlib_viewLogsOld:
-                                                        m31208oi(view, true);
+                                                        m31210oi(view, true);
                                                         return;
                                                     default:
                                                         switch (id2) {
                                                             case R.id.btn_test_crash1:
-                                                                Tracer.m14767m("[SUCCESS] INDIRECT " + C5069h.m24079n(0, 10000));
+                                                                Tracer.m14767m("[SUCCESS] INDIRECT " + C5069h.m24080n(0, 10000));
                                                                 return;
                                                             case R.id.btn_test_crash2:
-                                                                Tracer.m14766n("[SUCCESS] DIRECT " + (-C5069h.m24079n(0, 10000)));
+                                                                Tracer.m14766n("[SUCCESS] DIRECT " + (-C5069h.m24080n(0, 10000)));
                                                                 return;
                                                             case R.id.btn_test_crash3:
-                                                                Tracer.m14765o("[SUCCESS] INDIRECT NATIVE " + C5069h.m24079n(0, 10000));
+                                                                Tracer.m14765o("[SUCCESS] INDIRECT NATIVE " + C5069h.m24080n(0, 10000));
                                                                 return;
                                                             case R.id.btn_test_crash4:
-                                                                Tracer.m14764p("[SUCCESS] DIRECT NATIVE " + (-C5069h.m24079n(0, 10000)));
+                                                                Tracer.m14764p("[SUCCESS] DIRECT NATIVE " + (-C5069h.m24080n(0, 10000)));
                                                                 return;
                                                             case R.id.btn_test_crashDirect:
                                                                 throw new RuntimeException("This is a default test");
                                                             case R.id.btn_test_crashDirectNative:
-                                                                Tracer.m14763q("[SUCCESS] DIRECT THROW " + (-C5069h.m24079n(0, 10000)));
+                                                                Tracer.m14763q("[SUCCESS] DIRECT THROW " + (-C5069h.m24080n(0, 10000)));
                                                                 return;
                                                             case R.id.btn_test_database:
-                                                                m31220ii(1, true);
+                                                                m31222ii(1, true);
                                                                 return;
                                                             case R.id.btn_test_recovery_tdlib:
-                                                                String x = ((C2964ra) view.getTag()).m32821x();
-                                                                if (C5070i.m24061i(x)) {
+                                                                String x = ((C2964ra) view.getTag()).m32824x();
+                                                                if (C5070i.m24062i(x)) {
                                                                     x = "some tdlib bug";
                                                                 }
-                                                                C4868i.m24726c2().m24767W5(this.f30167b.m2188w6(), x);
+                                                                C4868i.m24727c2().m24768W5(this.f30170b.m2188w6(), x);
                                                                 System.exit(0);
                                                                 return;
                                                             case R.id.btn_testingUtils:
                                                                 AbstractC5917i wqVar = new AbstractC5917i() {
                                                                     @Override
                                                                     public final void mo1322a(boolean z2) {
-                                                                        View$OnClickListenerC3209vr.this.m31272Ih(z2);
+                                                                        View$OnClickListenerC3209vr.this.m31274Ih(z2);
                                                                     }
                                                                 };
                                                                 if (this.f10712F0 != null) {
                                                                     wqVar.mo1322a(true);
                                                                     return;
                                                                 } else {
-                                                                    m9172re(C4403w.m27982H0(this, R.string.TestModeWarn, new Object[0]), wqVar);
+                                                                    m9172re(C4403w.m27984H0(this, R.string.TestModeWarn, new Object[0]), wqVar);
                                                                     return;
                                                                 }
                                                             default:
@@ -1195,88 +1195,88 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
         }
         Log.C7879b bVar = this.f10717K0;
         if (bVar == null || bVar.m14707a()) {
-            m31214li(Log.getLogFiles());
+            m31216li(Log.getLogFiles());
         }
         Log.C7879b bVar2 = this.f10717K0;
         if (bVar2 == null || bVar2.m14707a()) {
             return false;
         }
-        m9261ee("Clear " + C1363c0.m37423m(this.f10717K0.f25454d) + "?", new int[]{R.id.btn_deleteAll, R.id.btn_cancel}, new String[]{"Delete all logs", "Cancel"}, new int[]{2, 1}, new int[]{R.drawable.baseline_delete_24, R.drawable.baseline_cancel_24}, new AbstractC5117h0() {
+        m9261ee("Clear " + C1363c0.m37426m(this.f10717K0.f25457d) + "?", new int[]{R.id.btn_deleteAll, R.id.btn_cancel}, new String[]{"Delete all logs", "Cancel"}, new int[]{2, 1}, new int[]{R.drawable.baseline_delete_24, R.drawable.baseline_cancel_24}, new AbstractC5117h0() {
             @Override
             public final boolean mo493A3(View view2, int i) {
                 boolean Wh;
-                Wh = View$OnClickListenerC3209vr.this.m31244Wh(view2, i);
+                Wh = View$OnClickListenerC3209vr.this.m31246Wh(view2, i);
                 return Wh;
             }
 
             @Override
             public boolean mo492Q() {
-                return C5115g0.m23935a(this);
+                return C5115g0.m23936a(this);
             }
 
             @Override
             public Object mo491b2(int i) {
-                return C5115g0.m23934b(this, i);
+                return C5115g0.m23935b(this, i);
             }
         });
         return true;
     }
 
     @Override
-    public boolean mo31074pg() {
+    public boolean mo31076pg() {
         return true;
     }
 
     @Override
-    public void mo30633rg(Context context, CustomRecyclerView customRecyclerView) {
-        m31203th(false);
+    public void mo30635rg(Context context, CustomRecyclerView customRecyclerView) {
+        m31205th(false);
         boolean z = true;
-        m31203th(true);
+        m31205th(true);
         if (this.f10713G0) {
             C9289s sVar = new C9289s(context);
             this.f10721O0 = sVar;
             sVar.setThemedTextColor(this);
-            this.f10721O0.m9632D1(C1357a0.m37541i(18.0f), true);
+            this.f10721O0.m9631D1(C1357a0.m37544i(18.0f), true);
             this.f10721O0.setTitle(mo9313X9());
-            this.f10721O0.setSubtitle(m31200wh());
+            this.f10721O0.setSubtitle(m31202wh());
         }
         C3211b bVar = new C3211b(this);
         this.f10714H0 = bVar;
-        bVar.m34238F2(this);
+        bVar.m34241F2(this);
         ArrayList arrayList = new ArrayList();
         if (this.f10713G0) {
             int i = this.f10712F0.f16673f;
             if (i != -1) {
                 C11131y6 U = C10536ab.m4664p1(i).m4745U(this.f10712F0.f16673f);
                 if (U.m1460p() != null) {
-                    arrayList.add(new C2964ra(57).m32870G(U));
+                    arrayList.add(new C2964ra(57).m32873G(U));
                     arrayList.add(new C2964ra(3));
                 }
             }
-            if (this.f10712F0.m24531c() == 1 && !C5070i.m24061i(this.f10712F0.f16669b)) {
+            if (this.f10712F0.m24532c() == 1 && !C5070i.m24062i(this.f10712F0.f16669b)) {
                 arrayList.add(new C2964ra(9, 0, 0, (CharSequence) this.f10712F0.f16669b, false));
             }
             if (!arrayList.isEmpty()) {
                 arrayList.add(new C2964ra(2));
             }
-            arrayList.add(new C2964ra(4, R.id.btn_launchApp, R.drawable.baseline_warning_24, R.string.LaunchApp).m32843d0(R.id.theme_color_textNeutral));
+            arrayList.add(new C2964ra(4, R.id.btn_launchApp, R.drawable.baseline_warning_24, R.string.LaunchApp).m32846d0(R.id.theme_color_textNeutral));
             arrayList.add(new C2964ra(11));
             arrayList.add(new C2964ra(4, R.id.btn_update, R.drawable.baseline_system_update_24, R.string.LaunchAppCheckUpdate));
             if (this.f10710D0 != 2) {
                 arrayList.add(new C2964ra(11));
-                if (this.f10712F0.m24531c() == 2) {
+                if (this.f10712F0.m24532c() == 2) {
                     arrayList.add(new C2964ra(4, R.id.btn_showError, R.drawable.baseline_info_24, R.string.LaunchAppViewError));
                 } else {
                     arrayList.add(new C2964ra(4, R.id.btn_shareError, R.drawable.baseline_share_24, R.string.LaunchAppShareError));
                 }
             }
-            int c = this.f10712F0.m24531c();
+            int c = this.f10712F0.m24532c();
             if (c == 1 || c == 4) {
                 arrayList.add(new C2964ra(11));
-                arrayList.add(new C2964ra(4, R.id.btn_eraseDatabase, R.drawable.baseline_delete_forever_24, R.string.LaunchAppEraseDatabase).m32843d0(R.id.theme_color_textNegative));
+                arrayList.add(new C2964ra(4, R.id.btn_eraseDatabase, R.drawable.baseline_delete_forever_24, R.string.LaunchAppEraseDatabase).m32846d0(R.id.theme_color_textNegative));
             }
             arrayList.add(new C2964ra(3));
-            arrayList.add(new C2964ra(9, 0, 0, m31201vh(), false));
+            arrayList.add(new C2964ra(9, 0, 0, m31203vh(), false));
         }
         int i2 = this.f10710D0;
         if (i2 == 0) {
@@ -1293,7 +1293,7 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
             arrayList.add(new C2964ra(11));
             arrayList.add(new C2964ra(7, (int) R.id.btn_log_android, 0, (int) R.string.DebugLogcat, false));
             arrayList.add(new C2964ra(3));
-            arrayList.add(new C2964ra(9, 0, 0, C4403w.m27978I0(this, R.string.DebugAppLogsInfo, new Object[0]), false));
+            arrayList.add(new C2964ra(9, 0, 0, C4403w.m27980I0(this, R.string.DebugAppLogsInfo, new Object[0]), false));
             if (this.f10712F0 == null) {
                 arrayList.add(new C2964ra(8, 0, 0, R.string.Other));
                 arrayList.add(new C2964ra(2));
@@ -1305,7 +1305,7 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
                 arrayList.add(new C2964ra(2));
             }
             int size = arrayList.size();
-            C10930q6 q6Var = this.f30167b;
+            C10930q6 q6Var = this.f30170b;
             if (q6Var != null && !q6Var.m2930B4().m4680k1()) {
                 arrayList.add(new C2964ra(4, (int) R.id.btn_secret_readAllChats, 0, (int) R.string.ReadAllChats, false));
                 arrayList.add(new C2964ra(11));
@@ -1316,13 +1316,13 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
                     arrayList.add(new C2964ra(11));
                     arrayList.add(new C2964ra(4, (int) R.id.btn_secret_stressTest, 0, (CharSequence) "Stress test TDLib restarts", false));
                 }
-                if (this.f10711E0 >= 3 || C4868i.m24726c2().m24720d0()) {
+                if (this.f10711E0 >= 3 || C4868i.m24727c2().m24721d0()) {
                     if (arrayList.size() > size) {
                         arrayList.add(new C2964ra(11));
                     }
-                    arrayList.add(new C2964ra(7, (int) R.id.btn_secret_forceTdlibRestarts, 0, "Force TDLib restarts", C4868i.m24726c2().m24720d0()));
+                    arrayList.add(new C2964ra(7, (int) R.id.btn_secret_forceTdlibRestarts, 0, "Force TDLib restarts", C4868i.m24727c2().m24721d0()));
                 }
-                if (this.f10711E0 >= 4 && this.f30167b.m2848G6()) {
+                if (this.f10711E0 >= 4 && this.f30170b.m2848G6()) {
                     arrayList.add(new C2964ra(11));
                     arrayList.add(new C2964ra(4, (int) R.id.btn_secret_sendAllChangeLogs, 0, (CharSequence) "Send all change logs", false));
                 }
@@ -1330,7 +1330,7 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
                     arrayList.add(new C2964ra(11));
                     arrayList.add(new C2964ra(4, (int) R.id.btn_secret_copyLanguageCodes, 0, (CharSequence) "Copy language codes list", false));
                 }
-                TdApi.User Z9 = this.f30167b.m2550Z9();
+                TdApi.User Z9 = this.f30170b.m2550Z9();
                 if (!(Z9 == null || Z9.profilePhoto == null)) {
                     arrayList.add(new C2964ra(11));
                     arrayList.add(new C2964ra(4, (int) R.id.btn_secret_deleteProfilePhoto, 0, (CharSequence) "Delete profile photo from cache", false));
@@ -1338,7 +1338,7 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
             }
             arrayList.add(new C2964ra(11));
             arrayList.add(new C2964ra(4, (int) R.id.btn_secret_dropSavedScrollPositions, 0, (CharSequence) "Drop saved scroll positions", false));
-            if (this.f10711E0 >= 5 || C4868i.m24726c2().m24780V()) {
+            if (this.f10711E0 >= 5 || C4868i.m24727c2().m24781V()) {
                 if (arrayList.size() > size) {
                     arrayList.add(new C2964ra(11));
                 }
@@ -1348,53 +1348,53 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
                 arrayList.add(new C2964ra(11));
             }
             arrayList.add(new C2964ra(4, (int) R.id.btn_secret_resetTutorials, 0, (CharSequence) "Reset tutorials", false));
-            if (this.f30167b != null) {
+            if (this.f30170b != null) {
                 if (arrayList.size() > size) {
                     arrayList.add(new C2964ra(11));
                 }
                 arrayList.add(new C2964ra(4, (int) R.id.btn_secret_resetLocalNotificationSettings, 0, (CharSequence) "Reset local notification settings", false));
             }
-            if (this.f30167b != null) {
+            if (this.f30170b != null) {
                 if (arrayList.size() > size) {
                     arrayList.add(new C2964ra(11));
                 }
                 arrayList.add(new C2964ra(4, (int) R.id.btn_secret_dropHidden, 0, (CharSequence) "Drop hidden notification identifiers", false));
             }
-            if (this.f10711E0 >= 1 || C4868i.m24726c2().m24875H2()) {
+            if (this.f10711E0 >= 1 || C4868i.m24727c2().m24876H2()) {
                 if (arrayList.size() > size) {
                     arrayList.add(new C2964ra(11));
                 }
-                arrayList.add(new C2964ra(7, (int) R.id.btn_secret_replacePhoneNumber, 0, "Hide phone number in drawer", C4868i.m24726c2().m24875H2()));
+                arrayList.add(new C2964ra(7, (int) R.id.btn_secret_replacePhoneNumber, 0, "Hide phone number in drawer", C4868i.m24727c2().m24876H2()));
             }
-            if (this.f10711E0 >= 1 || C4868i.m24726c2().m24728c0()) {
+            if (this.f10711E0 >= 1 || C4868i.m24727c2().m24729c0()) {
                 if (arrayList.size() > size) {
                     arrayList.add(new C2964ra(11));
                 }
-                arrayList.add(new C2964ra(7, (int) R.id.btn_secret_forceTcpInCalls, 0, "Force TCP in calls", C4868i.m24726c2().m24728c0()));
+                arrayList.add(new C2964ra(7, (int) R.id.btn_secret_forceTcpInCalls, 0, "Force TCP in calls", C4868i.m24727c2().m24729c0()));
             }
-            if (this.f10711E0 >= 3 || C4868i.m24726c2().m24736b0()) {
+            if (this.f10711E0 >= 3 || C4868i.m24727c2().m24737b0()) {
                 if (arrayList.size() > size) {
                     arrayList.add(new C2964ra(11));
                 }
-                arrayList.add(new C2964ra(7, (int) R.id.btn_secret_disableNetwork, 0, "Force disable network", C4868i.m24726c2().m24736b0()));
+                arrayList.add(new C2964ra(7, (int) R.id.btn_secret_disableNetwork, 0, "Force disable network", C4868i.m24727c2().m24737b0()));
             }
-            if (this.f10711E0 >= 3 || C4868i.m24726c2().m24903D2()) {
+            if (this.f10711E0 >= 3 || C4868i.m24727c2().m24904D2()) {
                 if (arrayList.size() > size) {
                     arrayList.add(new C2964ra(11));
                 }
-                arrayList.add(new C2964ra(7, (int) R.id.btn_secret_disableQrProcess, 0, "Disable QR processing", C4868i.m24726c2().m24903D2()));
+                arrayList.add(new C2964ra(7, (int) R.id.btn_secret_disableQrProcess, 0, "Disable QR processing", C4868i.m24727c2().m24904D2()));
             }
-            if (this.f10711E0 >= 3 || C4868i.m24726c2().m24896E2()) {
+            if (this.f10711E0 >= 3 || C4868i.m24727c2().m24897E2()) {
                 if (arrayList.size() > size) {
                     arrayList.add(new C2964ra(11));
                 }
-                arrayList.add(new C2964ra(7, (int) R.id.btn_secret_forceQrZxing, 0, "Force ZXing in QR scanner", C4868i.m24726c2().m24896E2()));
+                arrayList.add(new C2964ra(7, (int) R.id.btn_secret_forceQrZxing, 0, "Force ZXing in QR scanner", C4868i.m24727c2().m24897E2()));
             }
-            if (this.f10711E0 >= 3 || C4868i.m24726c2().m24777V2()) {
+            if (this.f10711E0 >= 3 || C4868i.m24727c2().m24778V2()) {
                 if (arrayList.size() > size) {
                     arrayList.add(new C2964ra(11));
                 }
-                arrayList.add(new C2964ra(7, (int) R.id.btn_secret_debugQrRegions, 0, "Show QR scanner UI regions", C4868i.m24726c2().m24896E2()));
+                arrayList.add(new C2964ra(7, (int) R.id.btn_secret_debugQrRegions, 0, "Show QR scanner UI regions", C4868i.m24727c2().m24897E2()));
             }
             if (this.f10711E0 >= 2) {
                 if (arrayList.size() > size) {
@@ -1410,11 +1410,11 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
                 arrayList.add(new C2964ra(11));
                 arrayList.add(new C2964ra(4, (int) R.id.btn_test_recovery_tdlib, 0, (CharSequence) "Crash & enter recovery mode (TDLib error)", false));
                 arrayList.add(new C2964ra(11));
-                arrayList.add(new C2964ra(4, (int) R.id.btn_test_recovery_tdlib, 0, (CharSequence) "Crash & enter recovery mode (disk full)", false).m32847b0("database or disk is full"));
+                arrayList.add(new C2964ra(4, (int) R.id.btn_test_recovery_tdlib, 0, (CharSequence) "Crash & enter recovery mode (disk full)", false).m32850b0("database or disk is full"));
                 arrayList.add(new C2964ra(11));
-                arrayList.add(new C2964ra(4, (int) R.id.btn_test_recovery_tdlib, 0, (CharSequence) "Crash & enter recovery mode (database broken)", false).m32847b0("Wrong key or database is corrupted"));
+                arrayList.add(new C2964ra(4, (int) R.id.btn_test_recovery_tdlib, 0, (CharSequence) "Crash & enter recovery mode (database broken)", false).m32850b0("Wrong key or database is corrupted"));
                 arrayList.add(new C2964ra(11));
-                arrayList.add(new C2964ra(4, (int) R.id.btn_test_recovery_tdlib, 0, (CharSequence) "Crash & enter recovery mode (other external error)", false).m32847b0("I/O error"));
+                arrayList.add(new C2964ra(4, (int) R.id.btn_test_recovery_tdlib, 0, (CharSequence) "Crash & enter recovery mode (other external error)", false).m32850b0("I/O error"));
                 arrayList.add(new C2964ra(11));
                 arrayList.add(new C2964ra(4, (int) R.id.btn_test_crash1, 0, (CharSequence) "Crash app (method 1, indirect)", false));
                 arrayList.add(new C2964ra(11));
@@ -1435,7 +1435,7 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
             }
             if (this.f10713G0) {
                 arrayList.add(new C2964ra(2));
-                arrayList.add(new C2964ra(4, R.id.btn_shareError, R.drawable.baseline_share_24, R.string.LaunchAppShareError).m32843d0(R.id.theme_color_textNegative));
+                arrayList.add(new C2964ra(4, R.id.btn_shareError, R.drawable.baseline_share_24, R.string.LaunchAppShareError).m32846d0(R.id.theme_color_textNegative));
                 arrayList.add(new C2964ra(3));
             }
             arrayList.add(new C2964ra(8, 0, 0, (int) R.string.TdlibLogs, false));
@@ -1447,15 +1447,15 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
             arrayList.add(new C2964ra(89, (int) R.id.btn_tdlib_viewLogs, 0, (CharSequence) C10536ab.m4800G0(false).getName(), false));
             arrayList.add(new C2964ra(11));
             arrayList.add(new C2964ra(89, (int) R.id.btn_tdlib_viewLogsOld, 0, (CharSequence) C10536ab.m4800G0(true).getName(), false));
-            C4868i.C4887r d1 = C4868i.m24726c2().m24719d1();
-            if (this.f10711E0 >= 4 || d1.m24502j()) {
+            C4868i.C4887r d1 = C4868i.m24727c2().m24720d1();
+            if (this.f10711E0 >= 4 || d1.m24503j()) {
                 arrayList.add(new C2964ra(11));
                 arrayList.add(new C2964ra(7, (int) R.id.btn_tdlib_androidLogs, 0, (int) R.string.DebugLogcatOnly, false));
             }
             arrayList.add(new C2964ra(11));
             arrayList.add(new C2964ra(4, (int) R.id.btn_tdlib_resetLogSettings, 0, (int) R.string.DebugReset, false));
             arrayList.add(new C2964ra(3));
-            List<String> f = d1.m24506f();
+            List<String> f = d1.m24507f();
             if (f != null && !f.isEmpty()) {
                 arrayList.add(new C2964ra(8, 0, 0, (int) R.string.DebugModules, false));
                 for (String str : f) {
@@ -1465,10 +1465,10 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
                     } else {
                         arrayList.add(new C2964ra(11));
                     }
-                    arrayList.add(new C2964ra(92, (int) R.id.btn_tdlib_verbosity, 0, (CharSequence) str, false).m32870G(str));
+                    arrayList.add(new C2964ra(92, (int) R.id.btn_tdlib_verbosity, 0, (CharSequence) str, false).m32873G(str));
                 }
                 arrayList.add(new C2964ra(3));
-                arrayList.add(new C2964ra(9, 0, 0, C4403w.m27978I0(this, R.string.DebugModulesInfo, new Object[0]), false));
+                arrayList.add(new C2964ra(9, 0, 0, C4403w.m27980I0(this, R.string.DebugModulesInfo, new Object[0]), false));
             }
             if (this.f10713G0) {
                 arrayList.add(new C2964ra(2));
@@ -1486,15 +1486,15 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
             arrayList.add(new C2964ra(4, (int) R.id.btn_testingUtils, 0, (int) R.string.TestMode, false));
             arrayList.add(new C2964ra(3));
         }
-        this.f10714H0.m34116x2(arrayList, false);
-        if (this.f10710D0 == 0 && this.f30167b != null) {
-            m31198yh();
+        this.f10714H0.m34119x2(arrayList, false);
+        if (this.f10710D0 == 0 && this.f30170b != null) {
+            m31200yh();
             Log.addOutputListener(this);
             if (this.f10712F0 == null) {
-                this.f30167b.m2476e6(new AbstractC5919k() {
+                this.f30170b.m2476e6(new AbstractC5919k() {
                     @Override
                     public final void mo3250a(int i3) {
-                        View$OnClickListenerC3209vr.this.m31250Th(i3);
+                        View$OnClickListenerC3209vr.this.m31252Th(i3);
                     }
                 });
             }
@@ -1509,39 +1509,39 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
             return;
         }
         if (m9339Ta()) {
-            C1379j0.m37332e0(new RunnableC3210a(), 1500L);
+            C1379j0.m37335e0(new RunnableC3210a(), 1500L);
             return;
         }
         Runnable runnable = this.f10716J0;
         if (runnable != null) {
-            C1379j0.m37330f0(runnable);
+            C1379j0.m37333f0(runnable);
             this.f10716J0 = null;
         }
     }
 
-    public final void m31203th(boolean z) {
+    public final void m31205th(boolean z) {
         try {
-            m31228ei(new File(C10536ab.m4796H0(z)).length(), z);
+            m31230ei(new File(C10536ab.m4796H0(z)).length(), z);
         } catch (Throwable unused) {
         }
     }
 
-    public final void m31202uh() {
+    public final void m31204uh() {
         Log.C7879b bVar;
         if (this.f10718L0 && (bVar = this.f10717K0) != null && !bVar.m14707a() && !this.f10720N0) {
-            m31216ki(true);
+            m31218ki(true);
             Log.deleteAll(this.f10717K0, new AbstractC5918j() {
                 @Override
                 public final void mo1330a(Object obj) {
-                    View$OnClickListenerC3209vr.this.m31284Ch((Log.C7879b) obj);
+                    View$OnClickListenerC3209vr.this.m31286Ch((Log.C7879b) obj);
                 }
             }, null);
         }
     }
 
-    public final CharSequence m31201vh() {
+    public final CharSequence m31203vh() {
         int i;
-        int c = this.f10712F0.m24531c();
+        int c = this.f10712F0.m24532c();
         if (c == 1) {
             i = R.string.LaunchAppGuideTdlibIssue;
         } else if (c == 2) {
@@ -1553,37 +1553,37 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
         } else {
             i = R.string.LaunchAppGuideDatabaseBroken;
         }
-        return C4403w.m27978I0(this, i, m31199xh(), C7389v0.m16721J0());
+        return C4403w.m27980I0(this, i, m31201xh(), C7389v0.m16721J0());
     }
 
-    public final String m31200wh() {
-        int c = this.f10712F0.m24531c();
+    public final String m31202wh() {
+        int c = this.f10712F0.m24532c();
         if (c == 1) {
-            return C4403w.m27865j1(R.string.LaunchSubtitleTdlibIssue, m31288Ah(true));
+            return C4403w.m27867j1(R.string.LaunchSubtitleTdlibIssue, m31290Ah(true));
         }
         if (c == 2) {
-            return C4403w.m27869i1(R.string.LaunchSubtitleDiskFull);
+            return C4403w.m27871i1(R.string.LaunchSubtitleDiskFull);
         }
         if (c == 3) {
-            return C4403w.m27869i1(R.string.LaunchSubtitleExternalError);
+            return C4403w.m27871i1(R.string.LaunchSubtitleExternalError);
         }
         if (c != 4) {
             return null;
         }
-        return C4403w.m27869i1(R.string.LaunchSubtitleDatabaseBroken);
+        return C4403w.m27871i1(R.string.LaunchSubtitleDatabaseBroken);
     }
 
-    public final String m31199xh() {
-        return C1363c0.m37423m(C7389v0.m16597p0());
+    public final String m31201xh() {
+        return C1363c0.m37426m(C7389v0.m16597p0());
     }
 
-    public final void m31198yh() {
-        if (m31224gi()) {
+    public final void m31200yh() {
+        if (m31226gi()) {
             this.f10719M0 = SystemClock.elapsedRealtime();
             Log.getLogFiles(new AbstractC5918j() {
                 @Override
                 public final void mo1330a(Object obj) {
-                    View$OnClickListenerC3209vr.this.m31280Eh((Log.C7879b) obj);
+                    View$OnClickListenerC3209vr.this.m31282Eh((Log.C7879b) obj);
                 }
             });
         }
@@ -1599,14 +1599,14 @@ public class View$OnClickListenerC3209vr extends AbstractC3204vo<C3215f> impleme
             this.f10733c = 0;
             this.f10732b = eVar;
             this.f10734d = true;
-            if (eVar.m24531c() == 1) {
+            if (eVar.m24532c() == 1) {
                 this.f10731a = 2;
             } else {
                 this.f10731a = 3;
             }
         }
 
-        public C3215f m31194c(int i) {
+        public C3215f m31196c(int i) {
             this.f10733c = i;
             return this;
         }

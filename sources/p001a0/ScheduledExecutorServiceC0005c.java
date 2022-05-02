@@ -24,7 +24,7 @@ public final class ScheduledExecutorServiceC0005c extends AbstractExecutorServic
     public class C0006a extends ThreadLocal<ScheduledExecutorService> {
         public ScheduledExecutorService initialValue() {
             if (Looper.myLooper() == Looper.getMainLooper()) {
-                return C0003a.m42608d();
+                return C0003a.m42611d();
             }
             if (Looper.myLooper() != null) {
                 return new ScheduledExecutorServiceC0005c(new Handler(Looper.myLooper()));
@@ -76,7 +76,7 @@ public final class ScheduledExecutorServiceC0005c extends AbstractExecutorServic
 
             @Override
             public Object mo5520a(C6287c.C6288a<V> aVar) {
-                aVar.m20718a(new RunnableC0010a(), C0003a.m42611a());
+                aVar.m20719a(new RunnableC0010a(), C0003a.m42614a());
                 RunnableScheduledFutureC0008c.this.f8a.set(aVar);
                 return "HandlerScheduledFuture-" + this.f12b.toString();
             }
@@ -85,7 +85,7 @@ public final class ScheduledExecutorServiceC0005c extends AbstractExecutorServic
         public RunnableScheduledFutureC0008c(Handler handler, long j, Callable<V> callable) {
             this.f9b = j;
             this.f10c = callable;
-            this.f7M = C6287c.m20719a(new C0009a(handler, callable));
+            this.f7M = C6287c.m20720a(new C0009a(handler, callable));
         }
 
         public int compareTo(Delayed delayed) {
@@ -128,9 +128,9 @@ public final class ScheduledExecutorServiceC0005c extends AbstractExecutorServic
             C6287c.C6288a<V> andSet = this.f8a.getAndSet(null);
             if (andSet != null) {
                 try {
-                    andSet.m20716c(this.f10c.call());
+                    andSet.m20717c(this.f10c.call());
                 } catch (Exception e) {
-                    andSet.m20713f(e);
+                    andSet.m20714f(e);
                 }
             }
         }
@@ -145,7 +145,7 @@ public final class ScheduledExecutorServiceC0005c extends AbstractExecutorServic
         this.f4a = handler;
     }
 
-    public final RejectedExecutionException m42604a() {
+    public final RejectedExecutionException m42607a() {
         return new RejectedExecutionException(this.f4a + " is shutting down");
     }
 
@@ -157,7 +157,7 @@ public final class ScheduledExecutorServiceC0005c extends AbstractExecutorServic
     @Override
     public void execute(Runnable runnable) {
         if (!this.f4a.post(runnable)) {
-            throw m42604a();
+            throw m42607a();
         }
     }
 
@@ -200,6 +200,6 @@ public final class ScheduledExecutorServiceC0005c extends AbstractExecutorServic
     public <V> ScheduledFuture<V> schedule(Callable<V> callable, long j, TimeUnit timeUnit) {
         long uptimeMillis = SystemClock.uptimeMillis() + TimeUnit.MILLISECONDS.convert(j, timeUnit);
         RunnableScheduledFutureC0008c cVar = new RunnableScheduledFutureC0008c(this.f4a, uptimeMillis, callable);
-        return this.f4a.postAtTime(cVar, uptimeMillis) ? cVar : C1111f.m38352g(m42604a());
+        return this.f4a.postAtTime(cVar, uptimeMillis) ? cVar : C1111f.m38355g(m42607a());
     }
 }

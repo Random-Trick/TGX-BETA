@@ -68,17 +68,17 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
         public void mo255t2(TdApi.Object object) {
             int constructor = object.getConstructor();
             if (constructor == -1679978726) {
-                Log.m14727e((int) Log.TAG_GIF_LOADER, "GetFileRemote failed: %s", C4779t2.m25378z5(object));
+                Log.m14727e((int) Log.TAG_GIF_LOADER, "GetFileRemote failed: %s", C4779t2.m25379z5(object));
             } else if (constructor == 766337656) {
                 TdApi.File file = (TdApi.File) object;
-                C7321e.m16907u(file, this.f20244a.m20287d());
+                C7321e.m16907u(file, this.f20244a.m20288d());
                 if (file.local.isDownloadingCompleted) {
-                    C6496e.this.m20320t();
+                    C6496e.this.m20321t();
                     return;
                 }
                 C6496e.this.f20232a |= 2;
                 if (!file.local.isDownloadingActive) {
-                    this.f20244a.m20292N().m2270r4().m14783o(new TdApi.DownloadFile(file.f25373id, 1, 0, 0, false), C6496e.this.f20226U);
+                    this.f20244a.m20293N().m2270r4().m14783o(new TdApi.DownloadFile(file.f25376id, 1, 0, 0, false), C6496e.this.f20226U);
                 }
             }
         }
@@ -86,56 +86,56 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
 
     public C6496e(final C6503j jVar, C6513p pVar) {
         boolean z = false;
-        this.f20228W = jVar.m20276o();
-        jVar.m20293M(0);
-        jVar.m20269w();
-        this.f20223R = jVar.m20283h() == 3 ? true : z;
+        this.f20228W = jVar.m20277o();
+        jVar.m20294M(0);
+        jVar.m20270w();
+        this.f20223R = jVar.m20284h() == 3 ? true : z;
         this.f20220O = new int[4];
         this.f20221P = new double[3];
         this.f20222Q = pVar;
         this.f20236c = jVar;
-        this.f20230Y = m20317w(jVar);
+        this.f20230Y = m20318w(jVar);
         this.f20225T = new C6497a(jVar);
         this.f20226U = new Client.AbstractC7865g() {
             @Override
             public final void mo255t2(TdApi.Object object) {
-                C6496e.this.m20353A(jVar, object);
+                C6496e.this.m20354A(jVar, object);
             }
         };
-        if (jVar.m20275p()) {
+        if (jVar.m20276p()) {
             this.f20229X = C10536ab.m4667o1().m4636w2().m7070Z();
             C10536ab.m4667o1().m4636w2().m7030p(this);
         }
-        m20327m(this);
+        m20328m(this);
     }
 
-    public void m20353A(C6503j jVar, TdApi.Object object) {
+    public void m20354A(C6503j jVar, TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            Log.m14727e((int) Log.TAG_GIF_LOADER, "DownloadFile failed: %s", C4779t2.m25378z5(object));
+            Log.m14727e((int) Log.TAG_GIF_LOADER, "DownloadFile failed: %s", C4779t2.m25379z5(object));
         } else if (constructor == 766337656) {
             TdApi.File file = (TdApi.File) object;
-            C7321e.m16907u(file, jVar.m20287d());
+            C7321e.m16907u(file, jVar.m20288d());
             TdApi.LocalFile localFile = file.local;
             if (localFile.isDownloadingCompleted) {
-                m20320t();
+                m20321t();
             } else if (!localFile.isDownloadingActive) {
                 Log.m14727e((int) Log.TAG_GIF_LOADER, "DownloadFile ignored: %s", file);
             }
         }
     }
 
-    public void m20352B(C6509o oVar, C6509o.C6511b bVar, long j) {
+    public void m20353B(C6509o oVar, C6509o.C6511b bVar, long j) {
         synchronized (this.f20235b0) {
             if (this.f20234b != 0) {
                 long j2 = this.f20234b;
                 String path = this.f20241g0.getPath();
-                Bitmap e = oVar.m20216e(false);
+                Bitmap e = oVar.m20217e(false);
                 Bitmap bitmap = bVar.f20308a;
-                this.f20236c.m20269w();
+                this.f20236c.m20270w();
                 int createLottieCache = C7888N.createLottieCache(j2, path, e, bitmap, true, true);
                 if (createLottieCache == 0) {
-                    long u = this.f20239e0 - m20319u();
+                    long u = this.f20239e0 - m20320u();
                     this.f20238d0 = u;
                     bVar.f20309b = u;
                     this.f20224S = 2;
@@ -152,18 +152,18 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
                             }
                         }
                     }
-                    oVar.m20220a(bVar);
-                    GifBridge.m14341f().m14338i(this);
+                    oVar.m20221a(bVar);
+                    GifBridge.m14340f().m14337i(this);
                     return;
                 }
-                oVar.m20219b(bVar);
+                oVar.m20220b(bVar);
             }
         }
     }
 
-    public boolean m20351C(C6509o.C6511b bVar) {
+    public boolean m20352C(C6509o.C6511b bVar) {
         if (this.f20223R) {
-            long j = (this.f20236c.m20270v() || this.f20236c.m20278m()) ? this.f20239e0 - 1 : 0L;
+            long j = (this.f20236c.m20271v() || this.f20236c.m20279m()) ? this.f20239e0 - 1 : 0L;
             synchronized (this.f20235b0) {
                 if (this.f20234b != 0) {
                     long j2 = this.f20234b;
@@ -184,7 +184,7 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
         return videoFrame == 1 && !C7888N.isVideoBroken(this.f20234b);
     }
 
-    public static void m20343K(C6496e eVar) {
+    public static void m20344K(C6496e eVar) {
         if (f20216k0 == null) {
             synchronized (C6496e.class) {
                 if (f20216k0 == null) {
@@ -195,8 +195,8 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
         f20216k0.remove(eVar);
     }
 
-    public static void m20342L(C6503j jVar) {
-        if (!jVar.m20274q() && !jVar.m20275p() && !jVar.m20277n()) {
+    public static void m20343L(C6503j jVar) {
+        if (!jVar.m20275q() && !jVar.m20276p() && !jVar.m20278n()) {
             if (f20216k0 == null) {
                 synchronized (C6496e.class) {
                     if (f20216k0 == null) {
@@ -209,13 +209,13 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
             while (it.hasNext()) {
                 C6496e next = it.next();
                 if (next.f20236c.toString().equals(jVar2)) {
-                    next.m20340N();
+                    next.m20341N();
                 }
             }
         }
     }
 
-    public static void m20327m(C6496e eVar) {
+    public static void m20328m(C6496e eVar) {
         if (f20216k0 == null) {
             synchronized (C6496e.class) {
                 if (f20216k0 == null) {
@@ -226,7 +226,7 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
         f20216k0.add(eVar);
     }
 
-    public static void m20326n(int i) {
+    public static void m20327n(int i) {
         synchronized (C6496e.class) {
             int i2 = f20215j0;
             boolean z = true;
@@ -237,12 +237,12 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
                 z = false;
             }
             if (z2 != z) {
-                m20322r();
+                m20323r();
             }
         }
     }
 
-    public static void m20325o(C6503j jVar, boolean z) {
+    public static void m20326o(C6503j jVar, boolean z) {
         boolean z2;
         synchronized (C6496e.class) {
             int i = 1;
@@ -250,7 +250,7 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
                 if (f20217l0 == null) {
                     f20217l0 = new ArrayList();
                 }
-                z2 = !m20315y(f20217l0, jVar);
+                z2 = !m20316y(f20217l0, jVar);
                 f20217l0.add(jVar);
             } else {
                 List<C6503j> list = f20217l0;
@@ -266,100 +266,100 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
                     i = -1;
                 }
                 f20215j0 = i2 + i;
-                m20322r();
+                m20323r();
             }
         }
     }
 
-    public static void m20322r() {
+    public static void m20323r() {
         C6227d<C6496e> dVar = f20216k0;
         if (dVar != null) {
             Iterator<C6496e> it = dVar.iterator();
             while (it.hasNext()) {
                 C6496e next = it.next();
-                next.m20339O(m20316x(next.f20236c));
+                next.m20340O(m20317x(next.f20236c));
             }
         }
     }
 
-    public static boolean m20317w(C6503j jVar) {
+    public static boolean m20318w(C6503j jVar) {
         boolean x;
         synchronized (C6496e.class) {
-            x = m20316x(jVar);
+            x = m20317x(jVar);
         }
         return x;
     }
 
-    public static boolean m20316x(C6503j jVar) {
-        return jVar.m20274q() || (f20215j0 != 0 && !m20315y(f20217l0, jVar));
+    public static boolean m20317x(C6503j jVar) {
+        return jVar.m20275q() || (f20215j0 != 0 && !m20316y(f20217l0, jVar));
     }
 
-    public static boolean m20315y(List<C6503j> list, C6503j jVar) {
+    public static boolean m20316y(List<C6503j> list, C6503j jVar) {
         if (list == null || list.isEmpty()) {
             return false;
         }
         return list.contains(jVar);
     }
 
-    public void m20314z() {
-        if (!m20318v()) {
-            m20347G(this.f20236c.m20287d());
+    public void m20315z() {
+        if (!m20319v()) {
+            m20348G(this.f20236c.m20288d());
         }
     }
 
-    public void m20350D() {
+    public void m20351D() {
         synchronized (this) {
             if ((this.f20232a & 4) != 0) {
                 this.f20232a &= -5;
-                m20346H(false);
+                m20347H(false);
             }
         }
     }
 
-    public void m20349E() {
-        m20321s();
+    public void m20350E() {
+        m20322s();
         C6503j jVar = this.f20236c;
-        if (jVar != null && jVar.m20275p()) {
+        if (jVar != null && jVar.m20276p()) {
             C10536ab.m4667o1().m4636w2().m7087Q0(this);
         }
         synchronized (this.f20218M) {
             C6509o oVar = this.f20219N;
             if (oVar != null) {
-                oVar.m20205p();
+                oVar.m20206p();
                 this.f20219N = null;
             }
         }
-        m20343K(this);
+        m20344K(this);
     }
 
-    public void m20348F(C6509o oVar) {
+    public void m20349F(C6509o oVar) {
         synchronized (this.f20218M) {
             this.f20219N = oVar;
         }
         if (!this.f20230Y) {
-            this.f20222Q.m20190j(this);
-            m20341M(false);
+            this.f20222Q.m20191j(this);
+            m20342M(false);
             return;
         }
-        GifBridge.m14341f().m14344c(this.f20236c, oVar);
+        GifBridge.m14340f().m14343c(this.f20236c, oVar);
     }
 
-    public void m20347G(TdApi.File file) {
+    public void m20348G(TdApi.File file) {
         synchronized (this) {
             this.f20232a &= -3;
         }
-        C7321e.m16907u(file, this.f20236c.m20287d());
+        C7321e.m16907u(file, this.f20236c.m20288d());
         if ((this.f20232a & 1) == 0) {
-            this.f20222Q.m20188l(this, file.local.path);
+            this.f20222Q.m20189l(this, file.local.path);
         }
     }
 
-    public void m20346H(boolean z) {
+    public void m20347H(boolean z) {
         C6509o oVar;
         synchronized (this) {
             if ((this.f20232a & 1) == 0 && (oVar = this.f20219N) != null) {
-                if (oVar.m20211j()) {
-                    GifBridge.m14341f().m14344c(this.f20236c, this.f20219N);
+                if (oVar.m20212j()) {
+                    GifBridge.m14340f().m14343c(this.f20236c, this.f20219N);
                 } else if (z) {
                     this.f20232a |= 4;
                 }
@@ -367,17 +367,17 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
         }
     }
 
-    public void m20345I() {
-        throw new UnsupportedOperationException("Method not decompiled: p168ld.C6496e.m20345I():void");
+    public void m20346I() {
+        throw new UnsupportedOperationException("Method not decompiled: p168ld.C6496e.m20346I():void");
     }
 
-    public void m20344J() {
+    public void m20345J() {
         if (this.f20219N != null && C7888N.seekVideoToStart(this.f20234b)) {
-            m20345I();
+            m20346I();
         }
     }
 
-    public final void m20341M(boolean z) {
+    public final void m20342M(boolean z) {
         int i;
         int i2;
         C6509o oVar;
@@ -397,22 +397,22 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
         }
         synchronized (this) {
             if ((this.f20232a & 1) == 0) {
-                GifBridge f = GifBridge.m14341f();
-                int e = this.f20236c.m20286e();
+                GifBridge f = GifBridge.m14340f();
+                int e = this.f20236c.m20287e();
                 if (!z) {
                     i3 = i2;
                 }
-                if (f.m14330q(this, e, i3, z) && ((oVar = this.f20219N) == null || !oVar.m20208m())) {
+                if (f.m14329q(this, e, i3, z) && ((oVar = this.f20219N) == null || !oVar.m20209m())) {
                     this.f20237c0 = i;
                 }
             }
         }
     }
 
-    public void m20340N() {
+    public void m20341N() {
         if (!this.f20231Z && this.f20237c0 != 0) {
             this.f20231Z = true;
-            mo20197c();
+            mo20198c();
         }
     }
 
@@ -421,16 +421,16 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
         C9781q0.m6970b(this, i);
     }
 
-    public final void m20339O(boolean z) {
+    public final void m20340O(boolean z) {
         if (this.f20230Y != z) {
             this.f20230Y = z;
             if (!z) {
-                mo20197c();
+                mo20198c();
             }
         }
     }
 
-    public void m20338P(String str) {
+    public void m20339P(String str) {
         int i;
         int i2;
         boolean z;
@@ -440,29 +440,29 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
         int i5;
         int i6;
         synchronized (this) {
-            if (!m20318v()) {
+            if (!m20319v()) {
                 if (this.f20223R) {
                     String b1 = C7389v0.m16652b1(str);
-                    if (!C5070i.m24061i(b1)) {
-                        this.f20234b = C7888N.createLottieDecoder(str, b1, this.f20221P, this.f20236c.m20284g());
+                    if (!C5070i.m24062i(b1)) {
+                        this.f20234b = C7888N.createLottieDecoder(str, b1, this.f20221P, this.f20236c.m20285g());
                         long j = (long) this.f20221P[0];
                         this.f20239e0 = j;
-                        this.f20236c.m20295K(j);
+                        this.f20236c.m20296K(j);
                         double[] dArr = this.f20221P;
                         this.f20240f0 = dArr[1];
                         double d = dArr[2];
-                        if (this.f20236c.m20269w()) {
-                            i6 = Math.max(C2746n9.m33693Xf(), y20.m30835bf());
+                        if (this.f20236c.m20270w()) {
+                            i6 = Math.max(C2746n9.m33696Xf(), y20.m30837bf());
                             i5 = 160;
                         } else {
-                            i6 = C1357a0.m37541i(190.0f);
+                            i6 = C1357a0.m37544i(190.0f);
                             i5 = 384;
                         }
                         i = Math.min(i6, i5);
                         long j2 = this.f20239e0;
                         boolean z3 = j2 <= 0 || this.f20240f0 <= 0.0d || d <= 0.0d;
                         if (j2 == 1) {
-                            this.f20236c.m20302D(true);
+                            this.f20236c.m20303D(true);
                         }
                         z = z3;
                         i2 = i;
@@ -478,7 +478,7 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
                     i = i7;
                 }
                 if (z) {
-                    m20321s();
+                    m20322s();
                 }
                 if (this.f20234b != 0) {
                     if (Build.VERSION.SDK_INT < 17 || this.f20223R) {
@@ -487,25 +487,25 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
                         MediaMetadataRetriever mediaMetadataRetriever = null;
                         try {
                             mediaMetadataRetriever = C7389v0.m16595p2(str);
-                            i3 = C5070i.m24051s(mediaMetadataRetriever.extractMetadata(24));
+                            i3 = C5070i.m24052s(mediaMetadataRetriever.extractMetadata(24));
                         } catch (Throwable unused) {
                             i3 = 0;
                         }
                         C7389v0.m16730H(mediaMetadataRetriever);
                     }
-                    if (this.f20236c.m20274q()) {
+                    if (this.f20236c.m20275q()) {
                         i4 = 1;
                     } else {
                         i4 = this.f20223R ? 2 : 3;
                     }
                     C6509o oVar = new C6509o(i2, i, i3, this, i4);
-                    oVar.m20202s(this.f20229X);
+                    oVar.m20203s(this.f20229X);
                     try {
-                        z2 = oVar.m20209l(new C6509o.AbstractC6512c() {
+                        z2 = oVar.m20210l(new C6509o.AbstractC6512c() {
                             @Override
-                            public final boolean mo20192a(C6509o.C6511b bVar) {
+                            public final boolean mo20193a(C6509o.C6511b bVar) {
                                 boolean C;
-                                C = C6496e.this.m20351C(bVar);
+                                C = C6496e.this.m20352C(bVar);
                                 return C;
                             }
                         }, 1, Bitmap.Config.ARGB_8888);
@@ -514,29 +514,29 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
                         z2 = false;
                     }
                     if (!z2) {
-                        oVar.m20205p();
-                        m20321s();
+                        oVar.m20206p();
+                        m20322s();
                         return;
                     }
                     if (this.f20229X) {
                         this.f20237c0 = 0;
                     }
-                    GifBridge.m14341f().m14335l(this.f20236c, oVar);
+                    GifBridge.m14340f().m14334l(this.f20236c, oVar);
                 }
             }
         }
     }
 
-    public void m20337Q(C6516s sVar) {
+    public void m20338Q(C6516s sVar) {
         if (this.f20233a0 == 0.0f || (this.f20232a & 2) == 0) {
             C6509o oVar = this.f20219N;
             if (oVar != null) {
-                sVar.m20178c(this.f20236c, oVar);
+                sVar.m20179c(this.f20236c, oVar);
                 return;
             }
             return;
         }
-        sVar.m20177d(this.f20236c, this.f20233a0);
+        sVar.m20178d(this.f20236c, this.f20233a0);
     }
 
     @Override
@@ -555,20 +555,20 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
                 if (!this.f20229X || this.f20237c0 != 0) {
                     z2 = false;
                 }
-                oVar.m20202s(z2);
+                oVar.m20203s(z2);
             }
-            mo20197c();
+            mo20198c();
         }
     }
 
     @Override
-    public void mo20199a(long r21) {
-        throw new UnsupportedOperationException("Method not decompiled: p168ld.C6496e.mo20199a(long):void");
+    public void mo20200a(long r21) {
+        throw new UnsupportedOperationException("Method not decompiled: p168ld.C6496e.mo20200a(long):void");
     }
 
     @Override
-    public boolean mo20198b() {
-        if (!this.f20243i0 || this.f20236c.m20278m()) {
+    public boolean mo20199b() {
+        if (!this.f20243i0 || this.f20236c.m20279m()) {
             return false;
         }
         this.f20243i0 = false;
@@ -576,7 +576,7 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
     }
 
     @Override
-    public void mo20197c() {
+    public void mo20198c() {
         synchronized (this) {
             if ((this.f20232a & 1) == 0) {
                 if (this.f20231Z && this.f20237c0 == 0) {
@@ -585,52 +585,52 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
                 if (this.f20230Y && !this.f20231Z) {
                     return;
                 }
-                if (this.f20228W && this.f20236c.m20278m()) {
+                if (this.f20228W && this.f20236c.m20279m()) {
                     this.f20243i0 = true;
                 } else if (this.f20229X) {
-                    if (C10536ab.m4667o1().m4636w2().m7072Y(this.f20236c.m20288c(), this.f20236c.m20282i())) {
-                        this.f20222Q.m20189k(this);
+                    if (C10536ab.m4667o1().m4636w2().m7072Y(this.f20236c.m20289c(), this.f20236c.m20283i())) {
+                        this.f20222Q.m20190k(this);
                         if (this.f20237c0 != 0) {
-                            m20341M(true);
+                            m20342M(true);
                         }
                     }
-                } else if (GifBridge.m14341f().m14345b(this, this.f20236c.m20286e())) {
-                    this.f20222Q.m20190j(this);
-                    m20341M(false);
+                } else if (GifBridge.m14340f().m14344b(this, this.f20236c.m20287e())) {
+                    this.f20222Q.m20191j(this);
+                    m20342M(false);
                 }
             }
         }
     }
 
-    public void m20328l() {
-        TdApi.File d = this.f20236c.m20287d();
-        if (C4779t2.m25586V2(d)) {
-            m20347G(d);
+    public void m20329l() {
+        TdApi.File d = this.f20236c.m20288d();
+        if (C4779t2.m25587V2(d)) {
+            m20348G(d);
             return;
         }
         this.f20232a |= 2;
-        this.f20236c.m20292N().m2270r4().m14783o(new TdApi.DownloadFile(d.f25373id, 1, 0, 0, false), this.f20226U);
+        this.f20236c.m20293N().m2270r4().m14783o(new TdApi.DownloadFile(d.f25376id, 1, 0, 0, false), this.f20226U);
     }
 
-    public void m20324p(float f) {
+    public void m20325p(float f) {
         if (f != 0.0f) {
             this.f20233a0 = f;
         }
     }
 
-    public void m20323q() {
+    public void m20324q() {
         synchronized (this) {
             this.f20232a |= 1;
             if ((this.f20232a & 2) != 0) {
-                this.f20236c.m20292N().m2270r4().m14783o(new TdApi.CancelDownloadFile(this.f20236c.m20286e(), false), this.f20226U);
+                this.f20236c.m20293N().m2270r4().m14783o(new TdApi.CancelDownloadFile(this.f20236c.m20287e(), false), this.f20226U);
                 this.f20232a &= -3;
             } else {
-                this.f20222Q.m20191i(this);
+                this.f20222Q.m20192i(this);
             }
         }
     }
 
-    public final void m20321s() {
+    public final void m20322s() {
         if (this.f20234b == 0) {
             return;
         }
@@ -641,9 +641,9 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
                 this.f20234b = 0L;
             }
             if (this.f20241g0 != null) {
-                C6522y n = C6522y.m20163n();
+                C6522y n = C6522y.m20164n();
                 C6503j jVar = this.f20236c;
-                n.m20171f(jVar, this.f20241g0, jVar.m20269w(), this.f20242h0, this.f20236c.m20284g());
+                n.m20172f(jVar, this.f20241g0, jVar.m20270w(), this.f20242h0, this.f20236c.m20285g());
                 return;
             }
             return;
@@ -652,20 +652,20 @@ public class C6496e implements C6509o.AbstractC6510a, C9773p0.AbstractC9777d {
         this.f20234b = 0L;
     }
 
-    public final void m20320t() {
-        GifBridge.m14341f().m14342e().m28052e(new Runnable() {
+    public final void m20321t() {
+        GifBridge.m14340f().m14341e().m28054e(new Runnable() {
             @Override
             public final void run() {
-                C6496e.this.m20314z();
+                C6496e.this.m20315z();
             }
         }, 0L);
     }
 
-    public final long m20319u() {
+    public final long m20320u() {
         return Math.max(1L, (long) (this.f20240f0 / this.f20227V));
     }
 
-    public final boolean m20318v() {
+    public final boolean m20319v() {
         return (this.f20232a & 1) != 0;
     }
 }

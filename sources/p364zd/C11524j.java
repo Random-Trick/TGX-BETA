@@ -31,15 +31,15 @@ import p335xd.C10192g;
 import td.AbstractC9323v4;
 
 public class C11524j {
-    public static float f36589a = 0.6f;
-    public static final boolean f36590b;
+    public static float f36591a = 0.6f;
+    public static final boolean f36592b;
 
     static {
-        f36590b = Build.VERSION.SDK_INT >= 19;
+        f36592b = Build.VERSION.SDK_INT >= 19;
     }
 
     public static Drawable m254A(int i) {
-        return C1362c.m37480i(new C7368l(i), new C7368l(R.id.theme_color_fillingPressed));
+        return C1362c.m37483i(new C7368l(i), new C7368l(R.id.theme_color_fillingPressed));
     }
 
     public static boolean m253A0(int i) {
@@ -55,7 +55,7 @@ public class C11524j {
     }
 
     public static Drawable m250C(int i, int i2, AbstractC9323v4<?> v4Var) {
-        Drawable d = C10192g.m5787d(C1379j0.m37315n(), i, new PorterDuffColorFilter(m228N(i2), PorterDuff.Mode.MULTIPLY));
+        Drawable d = C10192g.m5787d(C1379j0.m37318n(), i, new PorterDuffColorFilter(m228N(i2), PorterDuff.Mode.MULTIPLY));
         if (v4Var != null) {
             v4Var.m9132x8(d, i2);
         }
@@ -85,7 +85,7 @@ public class C11524j {
             }
             return null;
         } else if (background instanceof C5130n) {
-            Iterator<Drawable> it = ((C5130n) background).m23862a().iterator();
+            Iterator<Drawable> it = ((C5130n) background).m23863a().iterator();
             while (it.hasNext()) {
                 Drawable next = it.next();
                 if (next instanceof C7368l) {
@@ -104,7 +104,7 @@ public class C11524j {
     }
 
     public static RuntimeException m247D0(int i, String str) {
-        return new IllegalArgumentException(str + " == " + i + " / 0x" + Integer.toHexString(i) + " (" + C4403w.m27885e1(i) + ")");
+        return new IllegalArgumentException(str + " == " + i + " / 0x" + Integer.toHexString(i) + " (" + C4403w.m27887e1(i) + ")");
     }
 
     public static void m246E(View view, AbstractC11531p pVar) {
@@ -123,7 +123,7 @@ public class C11524j {
                     }
                 }
             } else if (background instanceof C5130n) {
-                Iterator<Drawable> it = ((C5130n) background).m23862a().iterator();
+                Iterator<Drawable> it = ((C5130n) background).m23863a().iterator();
                 while (it.hasNext()) {
                     Drawable next = it.next();
                     if (next instanceof C7368l) {
@@ -162,7 +162,7 @@ public class C11524j {
             }
             return 0;
         } else if (background instanceof C5130n) {
-            Iterator<Drawable> it = ((C5130n) background).m23862a().iterator();
+            Iterator<Drawable> it = ((C5130n) background).m23863a().iterator();
             while (it.hasNext()) {
                 Drawable next = it.next();
                 if (next instanceof C7368l) {
@@ -181,7 +181,7 @@ public class C11524j {
     }
 
     public static int m243F0() {
-        return C5064d.m24131a(m180h0(), m228N(R.id.theme_color_passcodeText));
+        return C5064d.m24132a(m180h0(), m228N(R.id.theme_color_passcodeText));
     }
 
     public static float m242G() {
@@ -193,7 +193,7 @@ public class C11524j {
     }
 
     public static float m240H() {
-        return m201a0(f36590b ? R.id.theme_property_bubbleCorner : R.id.theme_property_bubbleCornerLegacy);
+        return m201a0(f36592b ? R.id.theme_property_bubbleCorner : R.id.theme_property_bubbleCornerLegacy);
     }
 
     public static int m239H0() {
@@ -201,7 +201,7 @@ public class C11524j {
     }
 
     public static float m238I() {
-        return m201a0(f36590b ? R.id.theme_property_bubbleCornerMerged : R.id.theme_property_bubbleCornerLegacy);
+        return m201a0(f36592b ? R.id.theme_property_bubbleCornerMerged : R.id.theme_property_bubbleCornerLegacy);
     }
 
     public static int m237I0() {
@@ -274,7 +274,7 @@ public class C11524j {
     }
 
     public static Drawable m227N0(float f, float f2, int i) {
-        return C1362c.m37480i(new C10188c(i, f, f2, false), new C10188c(i, f, f2, true));
+        return C1362c.m37483i(new C10188c(i, f, f2, false), new C10188c(i, f, f2, true));
     }
 
     public static int m226O(int i, int i2) {
@@ -306,7 +306,7 @@ public class C11524j {
     }
 
     public static int m221Q0(int i) {
-        return C5064d.m24131a(m180h0(), i);
+        return C5064d.m24132a(m180h0(), i);
     }
 
     public static int m220R(int i) {
@@ -355,7 +355,7 @@ public class C11524j {
 
     public static int m210W(String str) {
         try {
-            Context n = C1379j0.m37315n();
+            Context n = C1379j0.m37318n();
             return n.getResources().getIdentifier(str, "id", n.getPackageName());
         } catch (Throwable unused) {
             return 0;
@@ -485,7 +485,7 @@ public class C11524j {
                     }
                 }
             } else if (background instanceof C5130n) {
-                Iterator<Drawable> it = ((C5130n) background).m23862a().iterator();
+                Iterator<Drawable> it = ((C5130n) background).m23863a().iterator();
                 while (it.hasNext()) {
                     Drawable next = it.next();
                     if (next instanceof C7368l) {
@@ -514,22 +514,22 @@ public class C11524j {
             Drawable background = view.getBackground();
             if (background instanceof RippleDrawable) {
                 if (z) {
-                    C2065g.m35718d(view, m254A(i));
+                    C2065g.m35721d(view, m254A(i));
                 }
             } else if ((background instanceof C5130n) && !z) {
-                C2065g.m35718d(view, m146x(i));
+                C2065g.m35721d(view, m146x(i));
             }
         }
     }
 
     public static Drawable m189e0(int i) {
         if (Build.VERSION.SDK_INT >= 21) {
-            return new RippleDrawable(new ColorStateList(new int[][]{StateSet.WILD_CARD}, new int[]{(i & 16777215) | 419430400}), null, m160q(C1357a0.m37541i(3.0f), -1));
+            return new RippleDrawable(new ColorStateList(new int[][]{StateSet.WILD_CARD}, new int[]{(i & 16777215) | 419430400}), null, m160q(C1357a0.m37544i(3.0f), -1));
         }
         StateListDrawable stateListDrawable = new StateListDrawable();
         int i2 = (i & 16777215) | 419430400;
-        stateListDrawable.addState(new int[]{16842919}, m160q(C1357a0.m37541i(3.0f), i2));
-        stateListDrawable.addState(new int[]{16842913}, m160q(C1357a0.m37541i(3.0f), i2));
+        stateListDrawable.addState(new int[]{16842919}, m160q(C1357a0.m37544i(3.0f), i2));
+        stateListDrawable.addState(new int[]{16842913}, m160q(C1357a0.m37544i(3.0f), i2));
         stateListDrawable.addState(StateSet.WILD_CARD, new ColorDrawable(0));
         return stateListDrawable;
     }
@@ -588,7 +588,7 @@ public class C11524j {
     }
 
     public static Drawable m176i1(int i) {
-        return C1362c.m37480i(null, new ColorDrawable(i));
+        return C1362c.m37483i(null, new ColorDrawable(i));
     }
 
     public static int m175j() {
@@ -650,7 +650,7 @@ public class C11524j {
     }
 
     public static Drawable m162p(float f, int i) {
-        return C1362c.m37480i(new C10186a(i, f, false), new C10186a(i, f, true));
+        return C1362c.m37483i(new C10186a(i, f, false), new C10186a(i, f, true));
     }
 
     public static int m161p0() {
@@ -709,7 +709,7 @@ public class C11524j {
     }
 
     public static Drawable m152u(Drawable drawable, Drawable drawable2) {
-        return C1362c.m37480i(drawable, drawable2);
+        return C1362c.m37483i(drawable, drawable2);
     }
 
     public static int m151u0() {
@@ -746,7 +746,7 @@ public class C11524j {
     }
 
     public static boolean m143y0(float f) {
-        return f36590b && f == ((float) C1357a0.m37541i(18.0f));
+        return f36592b && f == ((float) C1357a0.m37544i(18.0f));
     }
 
     public static Drawable m142z(int i) {

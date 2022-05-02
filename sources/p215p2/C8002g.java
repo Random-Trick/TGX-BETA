@@ -13,10 +13,10 @@ import java.util.List;
 import p071f2.AbstractC4234j;
 
 public class C8002g {
-    public static final String f26052a = AbstractC4234j.m28360f("ProcessUtils");
+    public static final String f26055a = AbstractC4234j.m28362f("ProcessUtils");
 
     @SuppressLint({"PrivateApi", "DiscouragedPrivateApi"})
-    public static String m13800a(Context context) {
+    public static String m13799a(Context context) {
         List<ActivityManager.RunningAppProcessInfo> runningAppProcesses;
         Object obj;
         int i = Build.VERSION.SDK_INT;
@@ -40,7 +40,7 @@ public class C8002g {
                 return (String) obj;
             }
         } catch (Throwable th) {
-            AbstractC4234j.m28362c().mo28359a(f26052a, "Unable to check ActivityThread for processName", th);
+            AbstractC4234j.m28364c().mo28361a(f26055a, "Unable to check ActivityThread for processName", th);
         }
         int myPid = Process.myPid();
         ActivityManager activityManager = (ActivityManager) context.getSystemService("activity");
@@ -54,10 +54,10 @@ public class C8002g {
         return null;
     }
 
-    public static boolean m13799b(Context context, C1066a aVar) {
-        String a = m13800a(context);
-        if (!TextUtils.isEmpty(aVar.m38493c())) {
-            return TextUtils.equals(a, aVar.m38493c());
+    public static boolean m13798b(Context context, C1066a aVar) {
+        String a = m13799a(context);
+        if (!TextUtils.isEmpty(aVar.m38496c())) {
+            return TextUtils.equals(a, aVar.m38496c());
         }
         return TextUtils.equals(a, context.getApplicationInfo().processName);
     }

@@ -6,41 +6,41 @@ import p020b5.C1216l0;
 import p174m3.AbstractC6609h;
 
 public final class C7602e implements AbstractC6609h {
-    public static final C7602e f24326O = new C7604b().m15532a();
-    public static final AbstractC6609h.AbstractC6610a<C7602e> f24327P = C7600d.f24322a;
-    public final int f24328M;
-    public AudioAttributes f24329N;
-    public final int f24330a;
-    public final int f24331b;
-    public final int f24332c;
+    public static final C7602e f24329O = new C7604b().m15532a();
+    public static final AbstractC6609h.AbstractC6610a<C7602e> f24330P = C7600d.f24325a;
+    public final int f24331M;
+    public AudioAttributes f24332N;
+    public final int f24333a;
+    public final int f24334b;
+    public final int f24335c;
 
     public static final class C7604b {
-        public int f24333a = 0;
-        public int f24334b = 0;
-        public int f24335c = 1;
-        public int f24336d = 1;
+        public int f24336a = 0;
+        public int f24337b = 0;
+        public int f24338c = 1;
+        public int f24339d = 1;
 
         public C7602e m15532a() {
-            return new C7602e(this.f24333a, this.f24334b, this.f24335c, this.f24336d);
+            return new C7602e(this.f24336a, this.f24337b, this.f24338c, this.f24339d);
         }
 
         public C7604b m15531b(int i) {
-            this.f24336d = i;
+            this.f24339d = i;
             return this;
         }
 
         public C7604b m15530c(int i) {
-            this.f24333a = i;
+            this.f24336a = i;
             return this;
         }
 
         public C7604b m15529d(int i) {
-            this.f24334b = i;
+            this.f24337b = i;
             return this;
         }
 
         public C7604b m15528e(int i) {
-            this.f24335c = i;
+            this.f24338c = i;
             return this;
         }
     }
@@ -67,14 +67,14 @@ public final class C7602e implements AbstractC6609h {
     }
 
     public AudioAttributes m15535b() {
-        if (this.f24329N == null) {
-            AudioAttributes.Builder usage = new AudioAttributes.Builder().setContentType(this.f24330a).setFlags(this.f24331b).setUsage(this.f24332c);
+        if (this.f24332N == null) {
+            AudioAttributes.Builder usage = new AudioAttributes.Builder().setContentType(this.f24333a).setFlags(this.f24334b).setUsage(this.f24335c);
             if (C1216l0.f4526a >= 29) {
-                usage.setAllowedCapturePolicy(this.f24328M);
+                usage.setAllowedCapturePolicy(this.f24331M);
             }
-            this.f24329N = usage.build();
+            this.f24332N = usage.build();
         }
-        return this.f24329N;
+        return this.f24332N;
     }
 
     public boolean equals(Object obj) {
@@ -85,17 +85,17 @@ public final class C7602e implements AbstractC6609h {
             return false;
         }
         C7602e eVar = (C7602e) obj;
-        return this.f24330a == eVar.f24330a && this.f24331b == eVar.f24331b && this.f24332c == eVar.f24332c && this.f24328M == eVar.f24328M;
+        return this.f24333a == eVar.f24333a && this.f24334b == eVar.f24334b && this.f24335c == eVar.f24335c && this.f24331M == eVar.f24331M;
     }
 
     public int hashCode() {
-        return ((((((527 + this.f24330a) * 31) + this.f24331b) * 31) + this.f24332c) * 31) + this.f24328M;
+        return ((((((527 + this.f24333a) * 31) + this.f24334b) * 31) + this.f24335c) * 31) + this.f24331M;
     }
 
     public C7602e(int i, int i2, int i3, int i4) {
-        this.f24330a = i;
-        this.f24331b = i2;
-        this.f24332c = i3;
-        this.f24328M = i4;
+        this.f24333a = i;
+        this.f24334b = i2;
+        this.f24335c = i3;
+        this.f24331M = i4;
     }
 }

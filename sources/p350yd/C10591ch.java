@@ -5,7 +5,7 @@ import p111he.AbstractC5117h0;
 import p111he.C5115g0;
 
 public final class C10591ch implements AbstractC5117h0 {
-    public static final C10591ch f33953a = new C10591ch();
+    public static final C10591ch f33956a = new C10591ch();
 
     @Override
     public final boolean mo493A3(View view, int i) {
@@ -16,11 +16,11 @@ public final class C10591ch implements AbstractC5117h0 {
 
     @Override
     public boolean mo492Q() {
-        return C5115g0.m23935a(this);
+        return C5115g0.m23936a(this);
     }
 
     @Override
     public Object mo491b2(int i) {
-        return C5115g0.m23934b(this, i);
+        return C5115g0.m23935b(this, i);
     }
 }

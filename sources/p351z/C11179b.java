@@ -10,8 +10,8 @@ public final class C11179b {
         } else {
             i3 = (i2 + i) % 360;
         }
-        if (C0662u1.m40648f("CameraOrientationUtil")) {
-            C0662u1.m40653a("CameraOrientationUtil", String.format("getRelativeImageRotation: destRotationDegrees=%s, sourceRotationDegrees=%s, isOppositeFacing=%s, result=%s", Integer.valueOf(i), Integer.valueOf(i2), Boolean.valueOf(z), Integer.valueOf(i3)));
+        if (C0662u1.m40651f("CameraOrientationUtil")) {
+            C0662u1.m40656a("CameraOrientationUtil", String.format("getRelativeImageRotation: destRotationDegrees=%s, sourceRotationDegrees=%s, isOppositeFacing=%s, result=%s", Integer.valueOf(i), Integer.valueOf(i2), Boolean.valueOf(z), Integer.valueOf(i3)));
         }
         return i3;
     }

@@ -35,11 +35,11 @@ public class C4367e0 {
         this.f14469c = new C4369f0(d0Var);
     }
 
-    public C4363d0 m28126a() {
+    public C4363d0 m28128a() {
         return this.f14468b;
     }
 
-    public void m28125b() {
+    public void m28127b() {
         if (!this.f14471e) {
             this.f14471e = true;
             try {
@@ -47,11 +47,11 @@ public class C4367e0 {
             } catch (Throwable th) {
                 Log.m14710w("Cannot register intent receiver", th, new Object[0]);
             }
-            this.f14470d.m28115i();
+            this.f14470d.m28117i();
         }
     }
 
-    public void m28124c() {
+    public void m28126c() {
         if (this.f14471e) {
             this.f14471e = false;
             try {
@@ -59,7 +59,7 @@ public class C4367e0 {
             } catch (Throwable th) {
                 Log.m14710w("Cannot unregister intent receiver", th, new Object[0]);
             }
-            this.f14470d.m28112l();
+            this.f14470d.m28114l();
         }
     }
 }

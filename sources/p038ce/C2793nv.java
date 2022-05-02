@@ -23,7 +23,7 @@ public class C2793nv extends AbstractC3204vo<C2795b> {
 
         @Override
         public void mo394V2(C2964ra raVar, C9137c cVar, boolean z) {
-            cVar.setData(raVar.m32821x());
+            cVar.setData(raVar.m32824x());
             cVar.setIgnoreEnabled(true);
             cVar.setEnabled(false);
         }
@@ -43,25 +43,25 @@ public class C2793nv extends AbstractC3204vo<C2795b> {
         super(context, q6Var);
     }
 
-    public void m33513Dg(TdApi.Object object, C2795b bVar, ArrayList arrayList, C2546iq iqVar) {
+    public void m33516Dg(TdApi.Object object, C2795b bVar, ArrayList arrayList, C2546iq iqVar) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
+            C1379j0.m37305t0(object);
         } else if (constructor == 1615554212) {
             C4686k6 k6Var = new C4686k6((TdApi.NetworkStatistics) object);
             m9476Ad(new C2795b(bVar.f9431a, k6Var));
-            k6Var.m26489d(arrayList, bVar.f9431a);
-            iqVar.m34116x2(arrayList, false);
-            m31294vg();
+            k6Var.m26490d(arrayList, bVar.f9431a);
+            iqVar.m34119x2(arrayList, false);
+            m31296vg();
         }
         m9204n9();
     }
 
-    public void m33512Eg(final C2795b bVar, final ArrayList arrayList, final C2546iq iqVar, final TdApi.Object object) {
+    public void m33515Eg(final C2795b bVar, final ArrayList arrayList, final C2546iq iqVar, final TdApi.Object object) {
         m9135wd(new Runnable() {
             @Override
             public final void run() {
-                C2793nv.this.m33513Dg(object, bVar, arrayList, iqVar);
+                C2793nv.this.m33516Dg(object, bVar, arrayList, iqVar);
             }
         });
     }
@@ -75,12 +75,12 @@ public class C2793nv extends AbstractC3204vo<C2795b> {
     public CharSequence mo9313X9() {
         int i = m9131x9().f9431a;
         if (i == 1) {
-            return C4403w.m27869i1(R.string.WiFiUsage);
+            return C4403w.m27871i1(R.string.WiFiUsage);
         }
         if (i != 2) {
-            return C4403w.m27869i1(R.string.MobileUsage);
+            return C4403w.m27871i1(R.string.MobileUsage);
         }
-        return C4403w.m27869i1(R.string.RoamingUsage);
+        return C4403w.m27871i1(R.string.RoamingUsage);
     }
 
     @Override
@@ -89,21 +89,21 @@ public class C2793nv extends AbstractC3204vo<C2795b> {
     }
 
     @Override
-    public void mo30633rg(Context context, CustomRecyclerView customRecyclerView) {
+    public void mo30635rg(Context context, CustomRecyclerView customRecyclerView) {
         final C2794a aVar = new C2794a(this);
         final ArrayList<C2964ra> arrayList = new ArrayList<>();
         final C2795b x9 = m9131x9();
         if (x9.f9432b != null) {
-            x9.f9432b.m26489d(arrayList, x9.f9431a);
+            x9.f9432b.m26490d(arrayList, x9.f9431a);
         } else {
-            this.f30167b.m2270r4().m14783o(new TdApi.GetNetworkStatistics(), new Client.AbstractC7865g() {
+            this.f30170b.m2270r4().m14783o(new TdApi.GetNetworkStatistics(), new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object) {
-                    C2793nv.this.m33512Eg(x9, arrayList, aVar, object);
+                    C2793nv.this.m33515Eg(x9, arrayList, aVar, object);
                 }
             });
         }
-        aVar.m34116x2(arrayList, false);
+        aVar.m34119x2(arrayList, false);
         customRecyclerView.setAdapter(aVar);
     }
 

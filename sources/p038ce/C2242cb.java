@@ -7,9 +7,9 @@ public final class C2242cb implements C9180e2.AbstractC9181a {
     public static final C2242cb f7815a = new C2242cb();
 
     @Override
-    public final boolean mo10016a(C9180e2 e2Var, View view, boolean z) {
+    public final boolean mo10015a(C9180e2 e2Var, View view, boolean z) {
         boolean Fh;
-        Fh = C2760nb.m33601Fh(e2Var, view, z);
+        Fh = C2760nb.m33604Fh(e2Var, view, z);
         return Fh;
     }
 }

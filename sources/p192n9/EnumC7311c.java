@@ -7,32 +7,32 @@ public enum EnumC7311c {
     COMPRESSING;
 
     public static class C7312a {
-        public static final int[] f23220a;
+        public static final int[] f23223a;
 
         static {
             int[] iArr = new int[EnumC7311c.values().length];
-            f23220a = iArr;
+            f23223a = iArr;
             try {
                 iArr[EnumC7311c.PASS_THROUGH.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f23220a[EnumC7311c.COMPRESSING.ordinal()] = 2;
+                f23223a[EnumC7311c.COMPRESSING.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f23220a[EnumC7311c.REMOVING.ordinal()] = 3;
+                f23223a[EnumC7311c.REMOVING.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f23220a[EnumC7311c.ABSENT.ordinal()] = 4;
+                f23223a[EnumC7311c.ABSENT.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
     }
 
     public boolean m17064a() {
-        int i = C7312a.f23220a[ordinal()];
+        int i = C7312a.f23223a[ordinal()];
         if (i == 1 || i == 2) {
             return true;
         }

@@ -13,10 +13,10 @@ public final class C6341f0 extends AbstractDialogInterface$OnClickListenerC6344g
     }
 
     @Override
-    public final void mo20586a() {
+    public final void mo20587a() {
         Intent intent = this.f19930a;
         if (intent != null) {
-            this.f19931b.m21271d(intent, 2);
+            this.f19931b.m21272d(intent, 2);
         }
     }
 }

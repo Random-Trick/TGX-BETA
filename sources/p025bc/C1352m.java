@@ -18,49 +18,49 @@ public final class C1352m {
         }
     }
 
-    public final int m37572a(int i) {
+    public final int m37575a(int i) {
         return this.f4934b[i];
     }
 
-    public final int m37571b() {
+    public final int m37574b() {
         if ((this.f4933a & 2) != 0) {
             return this.f4934b[1];
         }
         return -1;
     }
 
-    public final int m37570c() {
+    public final int m37573c() {
         if ((this.f4933a & Log.TAG_YOUTUBE) != 0) {
             return this.f4934b[7];
         }
         return 65535;
     }
 
-    public final int m37569d() {
+    public final int m37572d() {
         if ((this.f4933a & 16) != 0) {
             return this.f4934b[4];
         }
         return Integer.MAX_VALUE;
     }
 
-    public final int m37568e(int i) {
+    public final int m37571e(int i) {
         return (this.f4933a & 32) != 0 ? this.f4934b[5] : i;
     }
 
-    public final boolean m37567f(int i) {
+    public final boolean m37570f(int i) {
         return ((1 << i) & this.f4933a) != 0;
     }
 
-    public final void m37566g(C1352m mVar) {
-        C8298k.m12934e(mVar, "other");
+    public final void m37569g(C1352m mVar) {
+        C8298k.m12933e(mVar, "other");
         for (int i = 0; i < 10; i++) {
-            if (mVar.m37567f(i)) {
-                m37565h(i, mVar.m37572a(i));
+            if (mVar.m37570f(i)) {
+                m37568h(i, mVar.m37575a(i));
             }
         }
     }
 
-    public final C1352m m37565h(int i, int i2) {
+    public final C1352m m37568h(int i, int i2) {
         if (i >= 0) {
             int[] iArr = this.f4934b;
             if (i < iArr.length) {
@@ -71,7 +71,7 @@ public final class C1352m {
         return this;
     }
 
-    public final int m37564i() {
+    public final int m37567i() {
         return Integer.bitCount(this.f4933a);
     }
 }

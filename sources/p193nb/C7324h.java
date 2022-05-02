@@ -11,7 +11,7 @@ public final class C7324h {
         if (chat == null) {
             return null;
         }
-        long j = chat.f25367id;
+        long j = chat.f25370id;
         TdApi.ChatType chatType = chat.type;
         String str = chat.title;
         TdApi.ChatPhotoInfo chatPhotoInfo = chat.photo;
@@ -19,9 +19,9 @@ public final class C7324h {
         TdApi.Message message = chat.lastMessage;
         TdApi.ChatPosition[] chatPositionArr2 = chat.positions;
         if (chatPositionArr2 != null) {
-            C8298k.m12935d(chatPositionArr2, "this.positions");
+            C8298k.m12934d(chatPositionArr2, "this.positions");
             Object[] copyOf = Arrays.copyOf(chatPositionArr2, chatPositionArr2.length);
-            C8298k.m12935d(copyOf, "copyOf(this, size)");
+            C8298k.m12934d(copyOf, "copyOf(this, size)");
             chatPositionArr = (TdApi.ChatPosition[]) copyOf;
         }
         return new TdApi.Chat(j, chatType, str, chatPhotoInfo, chatPermissions, message, chatPositionArr, chat.messageSenderId, chat.hasProtectedContent, chat.isMarkedAsUnread, chat.isBlocked, chat.hasScheduledMessages, chat.canBeDeletedOnlyForSelf, chat.canBeDeletedForAllUsers, chat.canBeReported, chat.defaultDisableNotification, chat.unreadCount, chat.lastReadInboxMessageId, chat.lastReadOutboxMessageId, chat.unreadMentionCount, chat.unreadReactionCount, chat.notificationSettings, chat.availableReactions, chat.messageTtl, chat.themeName, chat.actionBar, chat.videoChat, chat.pendingJoinRequests, chat.replyMarkupMessageId, chat.draftMessage, chat.clientData);
@@ -53,8 +53,8 @@ public final class C7324h {
                 break;
             default:
                 String object = chatMemberStatus.toString();
-                C8298k.m12935d(object, "this.toString()");
-                throw new C5047g(C8298k.m12929j("An operation is not implemented: ", object));
+                C8298k.m12934d(object, "this.toString()");
+                throw new C5047g(C8298k.m12928j("An operation is not implemented: ", object));
         }
         return chatMemberStatus2;
     }
@@ -70,7 +70,7 @@ public final class C7324h {
         if (file == null) {
             return null;
         }
-        return new TdApi.File(file.f25373id, file.size, file.expectedSize, C7321e.m16928n(file.local), C7321e.m16922p(file.remote));
+        return new TdApi.File(file.f25376id, file.size, file.expectedSize, C7321e.m16928n(file.local), C7321e.m16922p(file.remote));
     }
 
     public static final TdApi.LocalFile m16884e(TdApi.LocalFile localFile) {
@@ -84,19 +84,19 @@ public final class C7324h {
         if (message == null) {
             return null;
         }
-        return new TdApi.Message(message.f25406id, message.senderId, message.chatId, message.sendingState, message.schedulingState, message.isOutgoing, message.isPinned, message.canBeEdited, message.canBeForwarded, message.canBeSaved, message.canBeDeletedOnlyForSelf, message.canBeDeletedForAllUsers, message.canGetAddedReactions, message.canGetStatistics, message.canGetMessageThread, message.canGetViewers, message.canGetMediaTimestampLinks, message.hasTimestampedMedia, message.isChannelPost, message.containsUnreadMention, message.date, message.editDate, message.forwardInfo, message.interactionInfo, message.unreadReactions, message.replyInChatId, message.replyToMessageId, message.messageThreadId, message.ttl, message.ttlExpiresIn, message.viaBotUserId, message.authorSignature, message.mediaAlbumId, message.restrictionReason, message.content, message.replyMarkup);
+        return new TdApi.Message(message.f25409id, message.senderId, message.chatId, message.sendingState, message.schedulingState, message.isOutgoing, message.isPinned, message.canBeEdited, message.canBeForwarded, message.canBeSaved, message.canBeDeletedOnlyForSelf, message.canBeDeletedForAllUsers, message.canGetAddedReactions, message.canGetStatistics, message.canGetMessageThread, message.canGetViewers, message.canGetMediaTimestampLinks, message.hasTimestampedMedia, message.isChannelPost, message.containsUnreadMention, message.date, message.editDate, message.forwardInfo, message.interactionInfo, message.unreadReactions, message.replyInChatId, message.replyToMessageId, message.messageThreadId, message.ttl, message.ttlExpiresIn, message.viaBotUserId, message.authorSignature, message.mediaAlbumId, message.restrictionReason, message.content, message.replyMarkup);
     }
 
     public static final TdApi.RemoteFile m16882g(TdApi.RemoteFile remoteFile) {
         if (remoteFile == null) {
             return null;
         }
-        return new TdApi.RemoteFile(remoteFile.f25417id, remoteFile.uniqueId, remoteFile.isUploadingActive, remoteFile.isUploadingCompleted, remoteFile.uploadedSize);
+        return new TdApi.RemoteFile(remoteFile.f25420id, remoteFile.uniqueId, remoteFile.isUploadingActive, remoteFile.isUploadingCompleted, remoteFile.uploadedSize);
     }
 
     public static final void m16881h(TdApi.ChatPermissions chatPermissions, TdApi.ChatPermissions chatPermissions2) {
-        C8298k.m12934e(chatPermissions, "<this>");
-        C8298k.m12934e(chatPermissions2, "dst");
+        C8298k.m12933e(chatPermissions, "<this>");
+        C8298k.m12933e(chatPermissions2, "dst");
         chatPermissions2.canSendMessages = chatPermissions.canSendMessages;
         chatPermissions2.canSendMediaMessages = chatPermissions.canSendMediaMessages;
         chatPermissions2.canSendOtherMessages = chatPermissions.canSendOtherMessages;
@@ -108,8 +108,8 @@ public final class C7324h {
     }
 
     public static final void m16880i(TdApi.ChatPosition chatPosition, TdApi.ChatPosition chatPosition2) {
-        C8298k.m12934e(chatPosition, "<this>");
-        C8298k.m12934e(chatPosition2, "dst");
+        C8298k.m12933e(chatPosition, "<this>");
+        C8298k.m12933e(chatPosition2, "dst");
         chatPosition2.list = chatPosition.list;
         chatPosition2.order = chatPosition.order;
         chatPosition2.isPinned = chatPosition.isPinned;
@@ -117,9 +117,9 @@ public final class C7324h {
     }
 
     public static final void m16879j(TdApi.Message message, TdApi.Message message2) {
-        C8298k.m12934e(message, "<this>");
-        C8298k.m12934e(message2, "dst");
-        message2.f25406id = message.f25406id;
+        C8298k.m12933e(message, "<this>");
+        C8298k.m12933e(message2, "dst");
+        message2.f25409id = message.f25409id;
         message2.senderId = message.senderId;
         message2.chatId = message.chatId;
         message2.sendingState = message.sendingState;
@@ -156,8 +156,8 @@ public final class C7324h {
     }
 
     public static final void m16878k(TdApi.User user, TdApi.User user2) {
-        C8298k.m12934e(user, "<this>");
-        C8298k.m12934e(user2, "dst");
+        C8298k.m12933e(user, "<this>");
+        C8298k.m12933e(user2, "dst");
         user2.firstName = user.firstName;
         user2.lastName = user.lastName;
         user2.username = user.username;
@@ -173,8 +173,8 @@ public final class C7324h {
     }
 
     public static final boolean m16877l(TdApi.File file, TdApi.File file2) {
-        C8298k.m12934e(file, "<this>");
-        C8298k.m12934e(file2, "dst");
+        C8298k.m12933e(file, "<this>");
+        C8298k.m12933e(file2, "dst");
         boolean z = !C7321e.m16997L(file, file2, false);
         TdApi.LocalFile localFile = file2.local;
         TdApi.LocalFile localFile2 = file.local;
@@ -192,7 +192,7 @@ public final class C7324h {
         remoteFile.isUploadingActive = remoteFile2.isUploadingActive;
         remoteFile.isUploadingCompleted = remoteFile2.isUploadingCompleted;
         remoteFile.uniqueId = remoteFile2.uniqueId;
-        remoteFile.f25417id = remoteFile2.f25417id;
+        remoteFile.f25420id = remoteFile2.f25420id;
         file2.expectedSize = file.expectedSize;
         file2.size = file.size;
         return z;

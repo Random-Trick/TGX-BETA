@@ -19,7 +19,7 @@ public final class C6307a {
         }
     }
 
-    public static int m20688a(EnumC10354d dVar) {
+    public static int m20689a(EnumC10354d dVar) {
         Integer num = f19843b.get(dVar);
         if (num != null) {
             return num.intValue();
@@ -27,7 +27,7 @@ public final class C6307a {
         throw new IllegalStateException("PriorityMapping is missing known Priority value " + dVar);
     }
 
-    public static EnumC10354d m20687b(int i) {
+    public static EnumC10354d m20688b(int i) {
         EnumC10354d dVar = f19842a.get(i);
         if (dVar != null) {
             return dVar;

@@ -10,7 +10,7 @@ public final class C5202n implements C5174b0.AbstractC5176b {
     @Override
     public final Object apply(Object obj) {
         List e1;
-        e1 = C5174b0.m23695e1((SQLiteDatabase) obj);
+        e1 = C5174b0.m23696e1((SQLiteDatabase) obj);
         return e1;
     }
 }

@@ -6,7 +6,7 @@ import android.view.View;
 import me.vkryl.android.widget.FrameLayoutFix;
 
 public class C9261p extends FrameLayoutFix {
-    public int f29911M;
+    public int f29914M;
 
     public C9261p(Context context) {
         super(context);
@@ -18,7 +18,7 @@ public class C9261p extends FrameLayoutFix {
     }
 
     public int getClipLeft() {
-        return this.f29911M;
+        return this.f29914M;
     }
 
     @Override
@@ -27,16 +27,16 @@ public class C9261p extends FrameLayoutFix {
     }
 
     public void setClipLeft(int i) {
-        int i2 = this.f29911M;
+        int i2 = this.f29914M;
         if (i2 == i) {
             return;
         }
         if (i < i2) {
-            this.f29911M = i;
+            this.f29914M = i;
             invalidate();
             return;
         }
-        this.f29911M = i;
+        this.f29914M = i;
     }
 
     @Override

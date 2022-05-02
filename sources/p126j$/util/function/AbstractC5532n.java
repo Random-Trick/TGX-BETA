@@ -1,5 +1,5 @@
 package p126j$.util.function;
 
 public interface AbstractC5532n {
-    long mo22327A(int i);
+    long mo22328A(int i);
 }

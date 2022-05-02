@@ -20,19 +20,19 @@ public final class C6717x2 {
 
     public C6717x2(long j, long j2) {
         boolean z = true;
-        C1186a.m38189a(j >= 0);
-        C1186a.m38189a(j2 < 0 ? false : z);
+        C1186a.m38192a(j >= 0);
+        C1186a.m38192a(j2 < 0 ? false : z);
         this.f21073a = j;
         this.f21074b = j2;
     }
 
-    public long m19394a(long j, long j2, long j3) {
+    public long m19395a(long j, long j2, long j3) {
         long j4 = this.f21073a;
         if (j4 == 0 && this.f21074b == 0) {
             return j;
         }
-        long C0 = C1216l0.m38016C0(j, j4, Long.MIN_VALUE);
-        long b = C1216l0.m37984b(j, this.f21074b, Long.MAX_VALUE);
+        long C0 = C1216l0.m38019C0(j, j4, Long.MIN_VALUE);
+        long b = C1216l0.m37987b(j, this.f21074b, Long.MAX_VALUE);
         boolean z = true;
         boolean z2 = C0 <= j2 && j2 <= b;
         if (C0 > j3 || j3 > b) {

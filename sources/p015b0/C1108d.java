@@ -17,29 +17,29 @@ public class C1108d<V> implements AbstractFutureC1291a<V> {
 
         @Override
         public Object mo5520a(C6287c.C6288a<V> aVar) {
-            C1132h.m38319h(C1108d.this.f4306b == null, "The result can only set once!");
+            C1132h.m38322h(C1108d.this.f4306b == null, "The result can only set once!");
             C1108d.this.f4306b = aVar;
             return "FutureChain[" + C1108d.this + "]";
         }
     }
 
     public C1108d(AbstractFutureC1291a<V> aVar) {
-        this.f4305a = (AbstractFutureC1291a) C1132h.m38322e(aVar);
+        this.f4305a = (AbstractFutureC1291a) C1132h.m38325e(aVar);
     }
 
-    public static <V> C1108d<V> m38363b(AbstractFutureC1291a<V> aVar) {
+    public static <V> C1108d<V> m38366b(AbstractFutureC1291a<V> aVar) {
         return aVar instanceof C1108d ? (C1108d) aVar : new C1108d<>(aVar);
     }
 
     @Override
-    public void mo13372a(Runnable runnable, Executor executor) {
-        this.f4305a.mo13372a(runnable, executor);
+    public void mo13371a(Runnable runnable, Executor executor) {
+        this.f4305a.mo13371a(runnable, executor);
     }
 
-    public boolean m38362c(V v) {
+    public boolean m38365c(V v) {
         C6287c.C6288a<V> aVar = this.f4306b;
         if (aVar != null) {
-            return aVar.m20716c(v);
+            return aVar.m20717c(v);
         }
         return false;
     }
@@ -49,20 +49,20 @@ public class C1108d<V> implements AbstractFutureC1291a<V> {
         return this.f4305a.cancel(z);
     }
 
-    public boolean m38361d(Throwable th) {
+    public boolean m38364d(Throwable th) {
         C6287c.C6288a<V> aVar = this.f4306b;
         if (aVar != null) {
-            return aVar.m20713f(th);
+            return aVar.m20714f(th);
         }
         return false;
     }
 
-    public final <T> C1108d<T> m38360e(AbstractC7094a<? super V, T> aVar, Executor executor) {
-        return (C1108d) C1111f.m38344o(this, aVar, executor);
+    public final <T> C1108d<T> m38363e(AbstractC7094a<? super V, T> aVar, Executor executor) {
+        return (C1108d) C1111f.m38347o(this, aVar, executor);
     }
 
-    public final <T> C1108d<T> m38359f(AbstractC1104a<? super V, T> aVar, Executor executor) {
-        return (C1108d) C1111f.m38343p(this, aVar, executor);
+    public final <T> C1108d<T> m38362f(AbstractC1104a<? super V, T> aVar, Executor executor) {
+        return (C1108d) C1111f.m38346p(this, aVar, executor);
     }
 
     @Override
@@ -86,6 +86,6 @@ public class C1108d<V> implements AbstractFutureC1291a<V> {
     }
 
     public C1108d() {
-        this.f4305a = C6287c.m20719a(new C1109a());
+        this.f4305a = C6287c.m20720a(new C1109a());
     }
 }

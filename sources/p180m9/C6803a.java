@@ -21,15 +21,15 @@ public class C6803a {
         }
     }
 
-    public static C6803a m18992a() {
+    public static C6803a m18993a() {
         return new C6803a();
     }
 
-    public static C6806c.C6808b m18991b(String str) {
+    public static C6806c.C6808b m18992b(String str) {
         return new C6806c.C6808b(str);
     }
 
-    public Future<Void> m18990c(C6806c cVar) {
+    public Future<Void> m18991c(C6806c cVar) {
         return C10010k.m6242a().submit(new CallableC6804a(cVar));
     }
 }

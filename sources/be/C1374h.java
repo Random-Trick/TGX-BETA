@@ -27,9 +27,9 @@ public class C1374h {
         for (char c : cArr) {
             this.f4997a.add(Character.valueOf(c));
         }
-        Set<String> b = C1376i.m37376b();
+        Set<String> b = C1376i.m37379b();
         this.f4999c = b;
-        Set<String> a = C1376i.m37377a();
+        Set<String> a = C1376i.m37380a();
         HashSet<String> hashSet = new HashSet(b.size() + a.size());
         this.f4998b = hashSet;
         hashSet.addAll(a);
@@ -60,7 +60,7 @@ public class C1374h {
         }
     }
 
-    public static int m37381h() {
+    public static int m37384h() {
         int i = 0;
         for (String[] strArr : f4995h) {
             i += strArr.length;
@@ -68,27 +68,27 @@ public class C1374h {
         return i;
     }
 
-    public static C1374h m37380i() {
+    public static C1374h m37383i() {
         if (f4992e == null) {
             f4992e = new C1374h();
         }
         return f4992e;
     }
 
-    public static boolean m37379j(final java.lang.CharSequence r8) {
-        throw new UnsupportedOperationException("Method not decompiled: be.C1374h.m37379j(java.lang.CharSequence):boolean");
+    public static boolean m37382j(final java.lang.CharSequence r8) {
+        throw new UnsupportedOperationException("Method not decompiled: be.C1374h.m37382j(java.lang.CharSequence):boolean");
     }
 
-    public static boolean m37378k(AtomicBoolean atomicBoolean, CharSequence charSequence, CharSequence charSequence2, CharSequence charSequence3, C5088i iVar, int i, int i2) {
+    public static boolean m37381k(AtomicBoolean atomicBoolean, CharSequence charSequence, CharSequence charSequence2, CharSequence charSequence3, C5088i iVar, int i, int i2) {
         atomicBoolean.set(i == 0 && i2 == charSequence.length());
         return true;
     }
 
-    public String m37387b(String str, String str2) {
-        if (C5070i.m24061i(str2)) {
+    public String m37390b(String str, String str2) {
+        if (C5070i.m24062i(str2)) {
             return str;
         }
-        String c = m37386c(str, str2, str2);
+        String c = m37389c(str, str2, str2);
         if (c != null) {
             return c;
         }
@@ -111,30 +111,30 @@ public class C1374h {
         return sb2.toString();
     }
 
-    public String m37386c(String str, String str2, String str3) {
-        return C1376i.m37375c(str, str2.charAt(1), str3.charAt(1));
+    public String m37389c(String str, String str2, String str3) {
+        return C1376i.m37378c(str, str2.charAt(1), str3.charAt(1));
     }
 
-    public String m37385d(String str, String str2, String[] strArr) {
-        if (C5070i.m24061i(str2)) {
+    public String m37388d(String str, String str2, String[] strArr) {
+        if (C5070i.m24062i(str2)) {
             return str;
         }
         if (strArr == null || strArr.length == 0) {
-            return m37387b(str, str2);
+            return m37390b(str, str2);
         }
-        String c = m37386c(str, str2, strArr[0]);
-        return c != null ? c : m37387b(str, str2);
+        String c = m37389c(str, str2, strArr[0]);
+        return c != null ? c : m37390b(str, str2);
     }
 
-    public boolean m37384e(Character ch) {
+    public boolean m37387e(Character ch) {
         return this.f4997a.contains(ch);
     }
 
-    public CharSequence m37383f(CharSequence charSequence) {
+    public CharSequence m37386f(CharSequence charSequence) {
         return this.f5000d.get(charSequence);
     }
 
-    public int m37382g(String str) {
+    public int m37385g(String str) {
         if (this.f4998b.contains(str)) {
             return this.f4999c.contains(str) ? 2 : 1;
         }

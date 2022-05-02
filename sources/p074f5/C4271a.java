@@ -25,8 +25,8 @@ public class C4271a {
     }
 
     @RecentlyNonNull
-    public static C4271a m28313a(@RecentlyNonNull Context context) {
-        C6378r.m20506k(context);
+    public static C4271a m28315a(@RecentlyNonNull Context context) {
+        C6378r.m20507k(context);
         Lock lock = f14326c;
         lock.lock();
         try {
@@ -42,7 +42,7 @@ public class C4271a {
         }
     }
 
-    public static final String m28310d(String str, String str2) {
+    public static final String m28312d(String str, String str2) {
         StringBuilder sb2 = new StringBuilder(str.length() + 1 + String.valueOf(str2).length());
         sb2.append(str);
         sb2.append(":");
@@ -51,21 +51,21 @@ public class C4271a {
     }
 
     @RecentlyNullable
-    public GoogleSignInAccount m28312b() {
+    public GoogleSignInAccount m28314b() {
         String c;
-        String c2 = m28311c("defaultGoogleSignInAccount");
-        if (TextUtils.isEmpty(c2) || (c = m28311c(m28310d("googleSignInAccount", c2))) == null) {
+        String c2 = m28313c("defaultGoogleSignInAccount");
+        if (TextUtils.isEmpty(c2) || (c = m28313c(m28312d("googleSignInAccount", c2))) == null) {
             return null;
         }
         try {
-            return GoogleSignInAccount.m30404l(c);
+            return GoogleSignInAccount.m30406l(c);
         } catch (JSONException unused) {
             return null;
         }
     }
 
     @RecentlyNullable
-    public final String m28311c(@RecentlyNonNull String str) {
+    public final String m28313c(@RecentlyNonNull String str) {
         this.f14328a.lock();
         try {
             return this.f14329b.getString(str, null);

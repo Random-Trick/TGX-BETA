@@ -9,37 +9,37 @@ import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 import p343y6.C10433i;
 
 public abstract class AbstractC11384o<E> extends AbstractCollection<E> implements Serializable {
-    public static final Object[] f36338a = new Object[0];
+    public static final Object[] f36341a = new Object[0];
 
     public static abstract class AbstractC11385a<E> extends AbstractC11386b<E> {
-        public Object[] f36339a;
-        public int f36340b = 0;
-        public boolean f36341c;
+        public Object[] f36342a;
+        public int f36343b = 0;
+        public boolean f36344c;
 
         public AbstractC11385a(int i) {
             C11363h.m819b(i, "initialCapacity");
-            this.f36339a = new Object[i];
+            this.f36342a = new Object[i];
         }
 
         @CanIgnoreReturnValue
         public AbstractC11385a<E> m785b(E e) {
             C10433i.m5129i(e);
-            m784c(this.f36340b + 1);
-            Object[] objArr = this.f36339a;
-            int i = this.f36340b;
-            this.f36340b = i + 1;
+            m784c(this.f36343b + 1);
+            Object[] objArr = this.f36342a;
+            int i = this.f36343b;
+            this.f36343b = i + 1;
             objArr[i] = e;
             return this;
         }
 
         public final void m784c(int i) {
-            Object[] objArr = this.f36339a;
+            Object[] objArr = this.f36342a;
             if (objArr.length < i) {
-                this.f36339a = Arrays.copyOf(objArr, AbstractC11386b.m783a(objArr.length, i));
-                this.f36341c = false;
-            } else if (this.f36341c) {
-                this.f36339a = (Object[]) objArr.clone();
-                this.f36341c = false;
+                this.f36342a = Arrays.copyOf(objArr, AbstractC11386b.m783a(objArr.length, i));
+                this.f36344c = false;
+            } else if (this.f36344c) {
+                this.f36342a = (Object[]) objArr.clone();
+                this.f36344c = false;
             }
         }
     }
@@ -134,7 +134,7 @@ public abstract class AbstractC11384o<E> extends AbstractCollection<E> implement
 
     @Override
     public final Object[] toArray() {
-        return toArray(f36338a);
+        return toArray(f36341a);
     }
 
     public abstract AbstractC11403r0<E> iterator();

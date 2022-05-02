@@ -8,42 +8,42 @@ import android.widget.TextView;
 import org.thunderdog.challegram.Log;
 
 public final class C10125l extends FrameLayout {
-    public final ProgressBar f32814a;
-    public final TextView f32815b;
+    public final ProgressBar f32817a;
+    public final TextView f32818b;
 
     public C10125l(Context context) {
         super(context, null, C10149w.m5893d(context));
         C10124k kVar = new C10124k(context);
         setBackgroundColor(-16777216);
         ProgressBar progressBar = new ProgressBar(context);
-        this.f32814a = progressBar;
+        this.f32817a = progressBar;
         progressBar.setVisibility(8);
         addView(progressBar, new FrameLayout.LayoutParams(-2, -2, 17));
         int i = (int) ((context.getResources().getDisplayMetrics().density * 10.0f) + 0.5f);
         TextView textView = new TextView(context);
-        this.f32815b = textView;
+        this.f32818b = textView;
         textView.setTextAppearance(context, 16973894);
         textView.setTextColor(-1);
         textView.setVisibility(8);
         textView.setPadding(i, i, i, i);
         textView.setGravity(17);
-        textView.setText(kVar.f32804a);
+        textView.setText(kVar.f32807a);
         addView(textView, new FrameLayout.LayoutParams(-2, -2, 17));
     }
 
     public final void m5979a() {
-        this.f32814a.setVisibility(8);
-        this.f32815b.setVisibility(8);
+        this.f32817a.setVisibility(8);
+        this.f32818b.setVisibility(8);
     }
 
     public final void m5978b() {
-        this.f32814a.setVisibility(0);
-        this.f32815b.setVisibility(8);
+        this.f32817a.setVisibility(0);
+        this.f32818b.setVisibility(8);
     }
 
     public final void m5977c() {
-        this.f32814a.setVisibility(8);
-        this.f32815b.setVisibility(0);
+        this.f32817a.setVisibility(8);
+        this.f32818b.setVisibility(0);
     }
 
     @Override

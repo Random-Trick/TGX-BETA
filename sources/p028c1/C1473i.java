@@ -17,17 +17,17 @@ public class C1473i {
         this.f5342a = runnable;
     }
 
-    public void m36820a(Menu menu, MenuInflater menuInflater) {
+    public void m36823a(Menu menu, MenuInflater menuInflater) {
         Iterator<AbstractC1475k> it = this.f5343b.iterator();
         while (it.hasNext()) {
-            it.next().m36810b(menu, menuInflater);
+            it.next().m36813b(menu, menuInflater);
         }
     }
 
-    public boolean m36819b(MenuItem menuItem) {
+    public boolean m36822b(MenuItem menuItem) {
         Iterator<AbstractC1475k> it = this.f5343b.iterator();
         while (it.hasNext()) {
-            if (it.next().m36811a(menuItem)) {
+            if (it.next().m36814a(menuItem)) {
                 return true;
             }
         }

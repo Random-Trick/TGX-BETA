@@ -12,37 +12,37 @@ public class C5146u0 {
         this.f17233a = new ArrayList(i);
     }
 
-    public static String[] m23814c(int... iArr) {
+    public static String[] m23815c(int... iArr) {
         String[] strArr = new String[iArr.length];
         int i = 0;
         for (int i2 : iArr) {
             i++;
-            strArr[i] = C4403w.m27869i1(i2);
+            strArr[i] = C4403w.m27871i1(i2);
         }
         return strArr;
     }
 
-    public void m23816a(int i) {
-        m23815b(C4403w.m27869i1(i));
+    public void m23817a(int i) {
+        m23816b(C4403w.m27871i1(i));
     }
 
-    public void m23815b(String str) {
+    public void m23816b(String str) {
         this.f17233a.add(str);
     }
 
-    public String[] m23813d() {
+    public String[] m23814d() {
         return (String[]) this.f17233a.toArray(new String[0]);
     }
 
-    public int m23812e(String str) {
+    public int m23813e(String str) {
         return this.f17233a.indexOf(str);
     }
 
-    public boolean m23811f() {
+    public boolean m23812f() {
         return this.f17233a.isEmpty();
     }
 
-    public String m23810g(String str, String str2) {
-        return C5070i.m24056n(str, str2, this.f17233a);
+    public String m23811g(String str, String str2) {
+        return C5070i.m24057n(str, str2, this.f17233a);
     }
 }

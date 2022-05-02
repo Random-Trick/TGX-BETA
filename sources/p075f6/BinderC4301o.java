@@ -18,11 +18,11 @@ public final class BinderC4301o extends AbstractBinderC11293f {
     public final void mo925J0(C11285b bVar) {
         Status a = bVar.mo952a();
         if (a == null) {
-            this.f14366a.m19083d(new C5861b(new Status(8, "Got null status from location service")));
-        } else if (a.m30396c() == 0) {
-            this.f14366a.m19084c(Boolean.TRUE);
+            this.f14366a.m19084d(new C5861b(new Status(8, "Got null status from location service")));
+        } else if (a.m30398c() == 0) {
+            this.f14366a.m19085c(Boolean.TRUE);
         } else {
-            this.f14366a.m19083d(C6322b.m20672a(a));
+            this.f14366a.m19084d(C6322b.m20673a(a));
         }
     }
 

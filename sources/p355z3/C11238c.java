@@ -7,14 +7,14 @@ import p147k4.C6072k;
 import p270t3.C8972r;
 
 public final class C11238c implements AbstractC11242g {
-    public final long[] f35970a;
-    public final long[] f35971b;
-    public final long f35972c;
+    public final long[] f35973a;
+    public final long[] f35974b;
+    public final long f35975c;
 
     public C11238c(long[] jArr, long[] jArr2, long j) {
-        this.f35970a = jArr;
-        this.f35971b = jArr2;
-        this.f35972c = j == -9223372036854775807L ? C1216l0.m37953q0(jArr2[jArr2.length - 1]) : j;
+        this.f35973a = jArr;
+        this.f35974b = jArr2;
+        this.f35975c = j == -9223372036854775807L ? C1216l0.m37956q0(jArr2[jArr2.length - 1]) : j;
     }
 
     public static C11238c m1158a(long j, C6072k kVar, long j2) {
@@ -36,7 +36,7 @@ public final class C11238c implements AbstractC11242g {
     }
 
     public static Pair<Long, Long> m1157b(long j, long[] jArr, long[] jArr2) {
-        int i = C1216l0.m37970i(jArr, j, true, true);
+        int i = C1216l0.m37973i(jArr, j, true, true);
         long j2 = jArr[i];
         long j3 = jArr2[i];
         int i2 = i + 1;
@@ -54,7 +54,7 @@ public final class C11238c implements AbstractC11242g {
 
     @Override
     public long mo1126d() {
-        return this.f35972c;
+        return this.f35975c;
     }
 
     @Override
@@ -64,12 +64,12 @@ public final class C11238c implements AbstractC11242g {
 
     @Override
     public long mo1124h(long j) {
-        return C1216l0.m37953q0(((Long) m1157b(j, this.f35970a, this.f35971b).second).longValue());
+        return C1216l0.m37956q0(((Long) m1157b(j, this.f35973a, this.f35974b).second).longValue());
     }
 
     @Override
     public AbstractC3470g.C3471a mo1123i(long j) {
-        Pair<Long, Long> b = m1157b(C1216l0.m38006H0(C1216l0.m37954q(j, 0L, this.f35972c)), this.f35971b, this.f35970a);
-        return new AbstractC3470g.C3471a(new C8972r(C1216l0.m37953q0(((Long) b.first).longValue()), ((Long) b.second).longValue()));
+        Pair<Long, Long> b = m1157b(C1216l0.m38009H0(C1216l0.m37957q(j, 0L, this.f35975c)), this.f35974b, this.f35973a);
+        return new AbstractC3470g.C3471a(new C8972r(C1216l0.m37956q0(((Long) b.first).longValue()), ((Long) b.second).longValue()));
     }
 }

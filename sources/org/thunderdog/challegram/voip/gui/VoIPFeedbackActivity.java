@@ -25,7 +25,7 @@ import p364zd.C11524j;
 
 public class VoIPFeedbackActivity extends Activity {
     private void finishDelayed() {
-        C1379j0.m37332e0(new Runnable() {
+        C1379j0.m37335e0(new Runnable() {
             @Override
             public final void run() {
                 VoIPFeedbackActivity.this.lambda$finishDelayed$4();
@@ -77,38 +77,38 @@ public class VoIPFeedbackActivity extends Activity {
         LinearLayout linearLayout = new LinearLayout(this);
         linearLayout.setOrientation(1);
         linearLayout.setGravity(1);
-        int i = C1357a0.m37541i(16.0f);
+        int i = C1357a0.m37544i(16.0f);
         linearLayout.setPadding(i, i, i, i);
         int S0 = C11524j.m217S0();
         C6847b2 b2Var = new C6847b2(this);
         b2Var.setTextSize(2, 16.0f);
         b2Var.setTextColor(S0);
         b2Var.setGravity(17);
-        b2Var.setText(C4403w.m27869i1(R.string.VoipRateCallAlert));
+        b2Var.setText(C4403w.m27871i1(R.string.VoipRateCallAlert));
         linearLayout.addView(b2Var);
         final BetterRatingView betterRatingView = new BetterRatingView(this);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-2, -2, 1.0f);
-        layoutParams.topMargin = C1357a0.m37541i(16.0f);
+        layoutParams.topMargin = C1357a0.m37544i(16.0f);
         linearLayout.addView(betterRatingView, layoutParams);
         final View$OnFocusChangeListenerC7069y1 y1Var = new View$OnFocusChangeListenerC7069y1(this);
         y1Var.setHint(R.string.VoipFeedbackCommentHint);
         y1Var.setVisibility(8);
         y1Var.getEditText().setInputType(147457);
         LinearLayout.LayoutParams layoutParams2 = new LinearLayout.LayoutParams(-1, -2, 1.0f);
-        layoutParams2.topMargin = C1357a0.m37541i(16.0f);
+        layoutParams2.topMargin = C1357a0.m37544i(16.0f);
         linearLayout.addView(y1Var, layoutParams2);
-        AlertDialog show = new AlertDialog.Builder(this, C11524j.m150v()).setTitle(C4403w.m27869i1(R.string.AppName)).setView(linearLayout).setPositiveButton(C4403w.m27950P0(), new DialogInterface.OnClickListener() {
+        AlertDialog show = new AlertDialog.Builder(this, C11524j.m150v()).setTitle(C4403w.m27871i1(R.string.AppName)).setView(linearLayout).setPositiveButton(C4403w.m27952P0(), new DialogInterface.OnClickListener() {
             @Override
             public final void onClick(DialogInterface dialogInterface, int i2) {
                 VoIPFeedbackActivity.this.lambda$onCreate$0(betterRatingView, y1Var, dialogInterface, i2);
             }
-        }).setNegativeButton(C4403w.m27869i1(R.string.Cancel), new DialogInterface.OnClickListener() {
+        }).setNegativeButton(C4403w.m27871i1(R.string.Cancel), new DialogInterface.OnClickListener() {
             @Override
             public final void onClick(DialogInterface dialogInterface, int i2) {
                 VoIPFeedbackActivity.this.lambda$onCreate$1(dialogInterface, i2);
             }
         }).show();
-        AbstractView$OnTouchListenerC7889a.m14556O1(this, show, null);
+        AbstractView$OnTouchListenerC7889a.m14555O1(this, show, null);
         show.setCanceledOnTouchOutside(true);
         show.setOnCancelListener(new DialogInterface.OnCancelListener() {
             @Override

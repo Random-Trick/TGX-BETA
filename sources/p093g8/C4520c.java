@@ -14,16 +14,16 @@ public final class C4520c {
         throw new IllegalArgumentException("Binarizer must be non-null.");
     }
 
-    public C5022a m27501a() {
+    public C5022a m27503a() {
         if (this.f14903b == null) {
-            this.f14903b = this.f14902a.mo24254a();
+            this.f14903b = this.f14902a.mo24255a();
         }
         return this.f14903b;
     }
 
     public String toString() {
         try {
-            return m27501a().toString();
+            return m27503a().toString();
         } catch (C4525h unused) {
             return "";
         }

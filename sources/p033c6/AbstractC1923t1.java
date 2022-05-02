@@ -13,7 +13,7 @@ public abstract class AbstractC1923t1<F, T> implements Iterator<T>, p126j$.util.
         this.f6917a = it;
     }
 
-    public abstract T mo35905a(F f);
+    public abstract T mo35908a(F f);
 
     @Override
     public void forEachRemaining(Consumer consumer) {
@@ -32,7 +32,7 @@ public abstract class AbstractC1923t1<F, T> implements Iterator<T>, p126j$.util.
 
     @Override
     public final T next() {
-        return mo35905a(this.f6917a.next());
+        return mo35908a(this.f6917a.next());
     }
 
     @Override

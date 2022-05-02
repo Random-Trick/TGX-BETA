@@ -23,14 +23,14 @@ public class C3940f implements C3950k.AbstractC3952b {
 
             @Override
             public void mo35Y0(int i, float f, C3950k kVar) {
-                C3953l.m29526a(this, i, f, kVar);
+                C3953l.m29528a(this, i, f, kVar);
             }
         }, interpolator, j, false);
     }
 
     @Override
     public void mo45P5(int i, float f, float f2, C3950k kVar) {
-        m29578m(f);
+        m29580m(f);
     }
 
     @Override
@@ -38,79 +38,79 @@ public class C3940f implements C3950k.AbstractC3952b {
         this.f13270b.mo35Y0(this.f13269a, f, null);
     }
 
-    public void m29588c() {
+    public void m29590c() {
         C3950k kVar = this.f13268Q;
         if (kVar != null) {
-            kVar.m29542k();
+            kVar.m29544k();
         }
     }
 
-    public void m29587d(float f) {
+    public void m29589d(float f) {
         this.f13266O = f;
     }
 
-    public void m29586e(boolean z) {
+    public void m29588e(boolean z) {
         this.f13267P = z;
     }
 
-    public void m29585f(boolean z, float f) {
+    public void m29587f(boolean z, float f) {
         this.f13267P = z;
         C3950k kVar = this.f13268Q;
         if (kVar != null) {
-            kVar.m29541l(f);
+            kVar.m29543l(f);
         }
-        m29578m(f);
+        m29580m(f);
     }
 
-    public float m29584g() {
+    public float m29586g() {
         return this.f13266O;
     }
 
-    public boolean m29583h() {
+    public boolean m29585h() {
         return this.f13267P;
     }
 
-    public boolean m29582i() {
+    public boolean m29584i() {
         C3950k kVar = this.f13268Q;
-        return kVar != null && kVar.m29531v();
+        return kVar != null && kVar.m29533v();
     }
 
-    public void m29579l(long j) {
+    public void m29581l(long j) {
         this.f13264M = j;
         C3950k kVar = this.f13268Q;
         if (kVar != null) {
-            kVar.m29528y(j);
+            kVar.m29530y(j);
         }
     }
 
-    public final void m29578m(float f) {
+    public final void m29580m(float f) {
         if (this.f13266O != f) {
             this.f13266O = f;
             this.f13270b.mo45P5(this.f13269a, f, -1.0f, null);
         }
     }
 
-    public void m29577n(Interpolator interpolator) {
+    public void m29579n(Interpolator interpolator) {
         this.f13271c = interpolator;
         C3950k kVar = this.f13268Q;
         if (kVar != null) {
-            kVar.m29557B(interpolator);
+            kVar.m29559B(interpolator);
         }
     }
 
-    public void m29576o(long j) {
+    public void m29578o(long j) {
         this.f13265N = j;
         C3950k kVar = this.f13268Q;
         if (kVar != null) {
-            kVar.m29553F(j);
+            kVar.m29555F(j);
         }
     }
 
-    public void m29575p(boolean z, boolean z2) {
-        m29574q(z, z2, null);
+    public void m29577p(boolean z, boolean z2) {
+        m29576q(z, z2, null);
     }
 
-    public void m29574q(boolean z, boolean z2, View view) {
+    public void m29576q(boolean z, boolean z2, View view) {
         if (this.f13267P != z || !z2) {
             this.f13267P = z;
             float f = z ? 1.0f : 0.0f;
@@ -120,25 +120,25 @@ public class C3940f implements C3950k.AbstractC3952b {
                     this.f13268Q = kVar;
                     long j = this.f13265N;
                     if (j != 0) {
-                        kVar.m29553F(j);
+                        kVar.m29555F(j);
                     }
                 }
-                this.f13268Q.m29543j(f, view);
+                this.f13268Q.m29545j(f, view);
                 return;
             }
             C3950k kVar2 = this.f13268Q;
             if (kVar2 != null) {
-                kVar2.m29541l(f);
+                kVar2.m29543l(f);
             }
             if (this.f13266O != f) {
-                m29578m(f);
+                m29580m(f);
                 this.f13270b.mo35Y0(this.f13269a, f, null);
             }
         }
     }
 
-    public boolean m29573r(boolean z) {
-        m29575p(!this.f13267P, z);
+    public boolean m29575r(boolean z) {
+        m29577p(!this.f13267P, z);
         return this.f13267P;
     }
 
@@ -151,7 +151,7 @@ public class C3940f implements C3950k.AbstractC3952b {
 
             @Override
             public void mo35Y0(int i, float f, C3950k kVar) {
-                C3953l.m29526a(this, i, f, kVar);
+                C3953l.m29528a(this, i, f, kVar);
             }
         }, interpolator, j, z);
     }

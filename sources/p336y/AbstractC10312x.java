@@ -8,17 +8,17 @@ import p015b0.C1111f;
 import p022b7.AbstractFutureC1291a;
 
 public interface AbstractC10312x extends AbstractC0615m {
-    public static final AbstractC10312x f33166a = new C10313a();
+    public static final AbstractC10312x f33169a = new C10313a();
 
     public class C10313a implements AbstractC10312x {
         @Override
         public AbstractFutureC1291a<List<Void>> mo5492a(List<C10245j0> list, int i, int i2) {
-            return C1111f.m38351h(Collections.emptyList());
+            return C1111f.m38354h(Collections.emptyList());
         }
 
         @Override
         public AbstractFutureC1291a<Void> mo5491b(float f) {
-            return C1111f.m38351h(null);
+            return C1111f.m38354h(null);
         }
 
         @Override
@@ -32,7 +32,7 @@ public interface AbstractC10312x extends AbstractC0615m {
 
         @Override
         public AbstractFutureC1291a<Void> mo5488e(boolean z) {
-            return C1111f.m38351h(null);
+            return C1111f.m38354h(null);
         }
 
         @Override
@@ -50,10 +50,10 @@ public interface AbstractC10312x extends AbstractC0615m {
     }
 
     public static final class C10314b extends Exception {
-        public C10243j f33167a;
+        public C10243j f33170a;
 
         public C10314b(C10243j jVar) {
-            this.f33167a = jVar;
+            this.f33170a = jVar;
         }
     }
 

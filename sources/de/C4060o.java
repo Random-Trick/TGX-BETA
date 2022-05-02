@@ -31,11 +31,11 @@ public class C4060o extends FrameLayoutFix {
     public void onMeasure(int i, int i2) {
         int defaultSize = FrameLayout.getDefaultSize(getSuggestedMinimumWidth(), i);
         int defaultSize2 = FrameLayout.getDefaultSize(getSuggestedMinimumHeight(), i2);
-        this.f13689M.m29165rf().m29076f0(defaultSize, defaultSize2);
+        this.f13689M.m29167rf().m29078f0(defaultSize, defaultSize2);
         if (!this.f13692P) {
-            float p0 = C4868i.m24726c2().m24624p0();
+            float p0 = C4868i.m24727c2().m24625p0();
             if (p0 != 0.0f) {
-                float a = C5069h.m24092a(defaultSize, defaultSize2);
+                float a = C5069h.m24093a(defaultSize, defaultSize2);
                 if (a != p0) {
                     if (defaultSize > defaultSize2) {
                         defaultSize = (int) ((defaultSize / a) * p0);
@@ -51,7 +51,7 @@ public class C4060o extends FrameLayoutFix {
         if (this.f13690N != measuredWidth || this.f13691O != measuredHeight) {
             this.f13690N = measuredWidth;
             this.f13691O = measuredHeight;
-            this.f13689M.m29181jf();
+            this.f13689M.m29183jf();
         }
     }
 

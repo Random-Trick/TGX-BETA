@@ -66,7 +66,7 @@ public final class C7325i {
                 return C7321e.m16962b1(((TdApi.RichTextStrikethrough) richText).text);
             case TdApi.RichTexts.CONSTRUCTOR:
                 TdApi.RichText[] richTextArr = ((TdApi.RichTexts) richText).texts;
-                C8298k.m12935d(richTextArr, "this as RichTexts).texts");
+                C8298k.m12934d(richTextArr, "this as RichTexts).texts");
                 int length = richTextArr.length;
                 int i = 0;
                 while (i < length) {
@@ -83,7 +83,7 @@ public final class C7325i {
                 return C7321e.m16962b1(((TdApi.RichTextItalic) richText).text);
             default:
                 String object = richText.toString();
-                C8298k.m12935d(object, "this.toString()");
+                C8298k.m12934d(object, "this.toString()");
                 throw new IllegalStateException(object.toString());
         }
         return false;

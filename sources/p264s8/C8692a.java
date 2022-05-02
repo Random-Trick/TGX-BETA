@@ -7,17 +7,17 @@ import p258s2.C8634g;
 import p345y8.C10455i;
 
 public class C8692a extends AbstractC8693b {
-    public boolean f28017a;
-    public byte f28018b;
-    public UUID f28019c;
+    public boolean f28020a;
+    public byte f28021b;
+    public UUID f28022c;
 
     @Override
-    public ByteBuffer mo11723a() {
+    public ByteBuffer mo11722a() {
         ByteBuffer allocate = ByteBuffer.allocate(20);
-        C8634g.m11855f(allocate, this.f28017a ? 1 : 0);
-        if (this.f28017a) {
-            C8634g.m11851j(allocate, this.f28018b);
-            allocate.put(C10455i.m5082b(this.f28019c));
+        C8634g.m11854f(allocate, this.f28020a ? 1 : 0);
+        if (this.f28020a) {
+            C8634g.m11850j(allocate, this.f28021b);
+            allocate.put(C10455i.m5082b(this.f28022c));
         } else {
             allocate.put(new byte[17]);
         }
@@ -26,21 +26,21 @@ public class C8692a extends AbstractC8693b {
     }
 
     @Override
-    public String mo11722b() {
+    public String mo11721b() {
         return "seig";
     }
 
     @Override
-    public void mo11721c(ByteBuffer byteBuffer) {
+    public void mo11720c(ByteBuffer byteBuffer) {
         boolean z = true;
-        if (C8632e.m11866j(byteBuffer) != 1) {
+        if (C8632e.m11865j(byteBuffer) != 1) {
             z = false;
         }
-        this.f28017a = z;
-        this.f28018b = (byte) C8632e.m11862n(byteBuffer);
+        this.f28020a = z;
+        this.f28021b = (byte) C8632e.m11861n(byteBuffer);
         byte[] bArr = new byte[16];
         byteBuffer.get(bArr);
-        this.f28019c = C10455i.m5083a(bArr);
+        this.f28022c = C10455i.m5083a(bArr);
     }
 
     public boolean equals(Object obj) {
@@ -51,21 +51,21 @@ public class C8692a extends AbstractC8693b {
             return false;
         }
         C8692a aVar = (C8692a) obj;
-        if (this.f28017a != aVar.f28017a || this.f28018b != aVar.f28018b) {
+        if (this.f28020a != aVar.f28020a || this.f28021b != aVar.f28021b) {
             return false;
         }
-        UUID uuid = this.f28019c;
-        UUID uuid2 = aVar.f28019c;
+        UUID uuid = this.f28022c;
+        UUID uuid2 = aVar.f28022c;
         return uuid == null ? uuid2 == null : uuid.equals(uuid2);
     }
 
     public int hashCode() {
-        int i = (((this.f28017a ? 7 : 19) * 31) + this.f28018b) * 31;
-        UUID uuid = this.f28019c;
+        int i = (((this.f28020a ? 7 : 19) * 31) + this.f28021b) * 31;
+        UUID uuid = this.f28022c;
         return i + (uuid != null ? uuid.hashCode() : 0);
     }
 
     public String toString() {
-        return "CencSampleEncryptionInformationGroupEntry{isEncrypted=" + this.f28017a + ", ivSize=" + ((int) this.f28018b) + ", kid=" + this.f28019c + '}';
+        return "CencSampleEncryptionInformationGroupEntry{isEncrypted=" + this.f28020a + ", ivSize=" + ((int) this.f28021b) + ", kid=" + this.f28022c + '}';
     }
 }

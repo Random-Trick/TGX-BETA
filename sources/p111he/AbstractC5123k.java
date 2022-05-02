@@ -6,13 +6,13 @@ import org.drinkless.p210td.libcore.telegram.TdApi;
 public abstract class AbstractC5123k implements Client.AbstractC7865g {
     public volatile boolean f17185a;
 
-    public final void m23882a() {
+    public final void m23883a() {
         synchronized (this) {
             this.f17185a = true;
         }
     }
 
-    public final boolean m23881b() {
+    public final boolean m23882b() {
         boolean z;
         synchronized (this) {
             z = this.f17185a;

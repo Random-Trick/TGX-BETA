@@ -19,12 +19,12 @@ public final class C6342f1 extends AbstractC6391v0 {
     }
 
     @Override
-    public final boolean mo20479f() {
+    public final boolean mo20480f() {
         AbstractC6325c.AbstractC6326a aVar;
         AbstractC6325c.AbstractC6326a aVar2;
         try {
             IBinder iBinder = this.f19932g;
-            C6378r.m20506k(iBinder);
+            C6378r.m20507k(iBinder);
             String interfaceDescriptor = iBinder.getInterfaceDescriptor();
             if (!this.f19933h.mo942H().equals(interfaceDescriptor)) {
                 String H = this.f19933h.mo942H();
@@ -37,17 +37,17 @@ public final class C6342f1 extends AbstractC6391v0 {
                 return false;
             }
             IInterface w = this.f19933h.mo938w(this.f19932g);
-            if (w == null || (!AbstractC6325c.m20639g0(this.f19933h, 2, 4, w) && !AbstractC6325c.m20639g0(this.f19933h, 3, 4, w))) {
+            if (w == null || (!AbstractC6325c.m20640g0(this.f19933h, 2, 4, w) && !AbstractC6325c.m20640g0(this.f19933h, 3, 4, w))) {
                 return false;
             }
             this.f19933h.f19889i0 = null;
-            Bundle A = this.f19933h.m20669A();
+            Bundle A = this.f19933h.m20670A();
             aVar = this.f19933h.f19884d0;
             if (aVar == null) {
                 return true;
             }
             aVar2 = this.f19933h.f19884d0;
-            aVar2.mo20577t(A);
+            aVar2.mo20578t(A);
             return true;
         } catch (RemoteException unused) {
             Log.w("GmsClient", "service probably died");
@@ -56,10 +56,10 @@ public final class C6342f1 extends AbstractC6391v0 {
     }
 
     @Override
-    public final void mo20478g(C5217a aVar) {
+    public final void mo20479g(C5217a aVar) {
         if (this.f19933h.f19885e0 != null) {
-            this.f19933h.f19885e0.mo20573s(aVar);
+            this.f19933h.f19885e0.mo20574s(aVar);
         }
-        this.f19933h.m20660O(aVar);
+        this.f19933h.m20661O(aVar);
     }
 }

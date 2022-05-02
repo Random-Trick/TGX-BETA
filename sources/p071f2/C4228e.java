@@ -13,15 +13,15 @@ public final class C4228e {
         this.f14272b = i2;
     }
 
-    public int m28371a() {
+    public int m28373a() {
         return this.f14272b;
     }
 
-    public Notification m28370b() {
+    public Notification m28372b() {
         return this.f14273c;
     }
 
-    public int m28369c() {
+    public int m28371c() {
         return this.f14271a;
     }
 

@@ -11,19 +11,19 @@ public final class C1133a {
     public static long f4335a;
     public static Method f4336b;
 
-    public static void m38317a(String str) {
+    public static void m38320a(String str) {
         if (Build.VERSION.SDK_INT >= 18) {
-            C1134b.m38312a(str);
+            C1134b.m38315a(str);
         }
     }
 
-    public static void m38316b() {
+    public static void m38319b() {
         if (Build.VERSION.SDK_INT >= 18) {
-            C1134b.m38311b();
+            C1134b.m38314b();
         }
     }
 
-    public static void m38315c(String str, Exception exc) {
+    public static void m38318c(String str, Exception exc) {
         if (exc instanceof InvocationTargetException) {
             Throwable cause = exc.getCause();
             if (cause instanceof RuntimeException) {
@@ -35,17 +35,17 @@ public final class C1133a {
     }
 
     @SuppressLint({"NewApi"})
-    public static boolean m38314d() {
+    public static boolean m38317d() {
         try {
             if (f4336b == null) {
                 return Trace.isEnabled();
             }
         } catch (NoClassDefFoundError | NoSuchMethodError unused) {
         }
-        return m38313e();
+        return m38316e();
     }
 
-    public static boolean m38313e() {
+    public static boolean m38316e() {
         if (Build.VERSION.SDK_INT >= 18) {
             try {
                 if (f4336b == null) {
@@ -54,7 +54,7 @@ public final class C1133a {
                 }
                 return ((Boolean) f4336b.invoke(null, Long.valueOf(f4335a))).booleanValue();
             } catch (Exception e) {
-                m38315c("isTagEnabled", e);
+                m38318c("isTagEnabled", e);
             }
         }
         return false;

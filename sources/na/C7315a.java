@@ -13,7 +13,7 @@ public final class C7315a {
             try {
                 closeable.close();
             } catch (Throwable th2) {
-                C5040a.m24201a(th, th2);
+                C5040a.m24202a(th, th2);
             }
         }
     }

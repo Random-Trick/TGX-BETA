@@ -27,14 +27,14 @@ public class C6503j {
     public String f20263o;
 
     public interface AbstractC6504a {
-        void mo20265a(C6503j jVar, long j, long j2);
+        void mo20266a(C6503j jVar, long j, long j2);
     }
 
     public C6503j(C10930q6 q6Var, TdApi.Animation animation) {
-        this(q6Var, animation.animation, "video/mp4".equals(animation.mimeType) ? 2 : "image/gif".equals(animation.mimeType) ? 1 : C4779t2.m25665J2(animation.mimeType) ? 3 : 0);
+        this(q6Var, animation.animation, "video/mp4".equals(animation.mimeType) ? 2 : "image/gif".equals(animation.mimeType) ? 1 : C4779t2.m25666J2(animation.mimeType) ? 3 : 0);
     }
 
-    public static int m20291O(TdApi.StickerType stickerType) {
+    public static int m20292O(TdApi.StickerType stickerType) {
         int constructor = stickerType.getConstructor();
         if (constructor == 522366836) {
             return 2;
@@ -45,7 +45,7 @@ public class C6503j {
         throw new IllegalArgumentException(stickerType.toString());
     }
 
-    public void m20272s() {
+    public void m20273s() {
         List<Runnable> list = this.f20262n;
         if (list != null) {
             for (Runnable runnable : list) {
@@ -55,25 +55,25 @@ public class C6503j {
         }
     }
 
-    public void m20305A(int i) {
+    public void m20306A(int i) {
         this.f20258j = i;
     }
 
-    public void m20304B(AbstractC6504a aVar) {
+    public void m20305B(AbstractC6504a aVar) {
         this.f20261m = aVar;
     }
 
-    public void m20303C(long j, long j2) {
+    public void m20304C(long j, long j2) {
         this.f20253e |= 1;
         this.f20254f = j;
         this.f20255g = j2;
     }
 
-    public void m20302D(boolean z) {
-        this.f20253e = C5063c.m24138h(this.f20253e, 2, z);
+    public void m20303D(boolean z) {
+        this.f20253e = C5063c.m24139h(this.f20253e, 2, z);
     }
 
-    public boolean m20301E(boolean z) {
+    public boolean m20302E(boolean z) {
         if (this.f20256h == z) {
             return false;
         }
@@ -82,38 +82,38 @@ public class C6503j {
             return true;
         }
         this.f20257i = 0;
-        m20267y();
+        m20268y();
         return true;
     }
 
-    public void m20300F(boolean z) {
-        this.f20253e = C5063c.m24138h(this.f20253e, 4, z);
+    public void m20301F(boolean z) {
+        this.f20253e = C5063c.m24139h(this.f20253e, 4, z);
     }
 
-    public void m20299G() {
-        m20298H(C4868i.m24726c2().m24663k1(8L));
+    public void m20300G() {
+        m20299H(C4868i.m24727c2().m24664k1(8L));
     }
 
-    public void m20298H(boolean z) {
-        this.f20253e = C5063c.m24138h(this.f20253e, 8, z);
+    public void m20299H(boolean z) {
+        this.f20253e = C5063c.m24139h(this.f20253e, 8, z);
     }
 
-    public void m20297I(int i) {
+    public void m20298I(int i) {
         this.f20252d = i;
     }
 
-    public void m20296J(int i) {
+    public void m20297J(int i) {
     }
 
-    public void m20295K(long j) {
+    public void m20296K(long j) {
         this.f20260l = j;
     }
 
-    public void m20294L(boolean z) {
-        this.f20253e = C5063c.m24138h(this.f20253e, 16, z);
+    public void m20295L(boolean z) {
+        this.f20253e = C5063c.m24139h(this.f20253e, 16, z);
     }
 
-    public boolean m20293M(int i) {
+    public boolean m20294M(int i) {
         if (this.f20257i == i) {
             return false;
         }
@@ -121,12 +121,12 @@ public class C6503j {
         return true;
     }
 
-    public C10930q6 m20292N() {
+    public C10930q6 m20293N() {
         return this.f20249a;
     }
 
-    public void m20289b(Runnable runnable) {
-        if (!m20278m() || !m20276o()) {
+    public void m20290b(Runnable runnable) {
+        if (!m20279m() || !m20277o()) {
             if (this.f20262n == null) {
                 this.f20262n = new ArrayList();
             }
@@ -136,19 +136,19 @@ public class C6503j {
         runnable.run();
     }
 
-    public long m20288c() {
+    public long m20289c() {
         return this.f20254f;
     }
 
-    public TdApi.File m20287d() {
+    public TdApi.File m20288d() {
         return this.f20250b;
     }
 
-    public int m20286e() {
-        return this.f20250b.f25373id;
+    public int m20287e() {
+        return this.f20250b.f25376id;
     }
 
-    public String m20285f() {
+    public String m20286f() {
         TdApi.LocalFile localFile = this.f20250b.local;
         if (localFile != null) {
             return localFile.path;
@@ -156,11 +156,11 @@ public class C6503j {
         return null;
     }
 
-    public int m20284g() {
+    public int m20285g() {
         return this.f20258j;
     }
 
-    public int m20283h() {
+    public int m20284h() {
         return this.f20251c;
     }
 
@@ -168,51 +168,51 @@ public class C6503j {
         return toString().hashCode();
     }
 
-    public long m20282i() {
+    public long m20283i() {
         return this.f20255g;
     }
 
-    public int m20281j() {
+    public int m20282j() {
         return this.f20252d;
     }
 
-    public int m20280k() {
+    public int m20281k() {
         return this.f20257i;
     }
 
-    public boolean m20279l(long j) {
+    public boolean m20280l(long j) {
         return j >= 0 && j < this.f20260l;
     }
 
-    public boolean m20278m() {
+    public boolean m20279m() {
         return this.f20256h;
     }
 
-    public boolean m20277n() {
+    public boolean m20278n() {
         return this.f20251c == 3;
     }
 
-    public boolean m20276o() {
-        return C5063c.m24144b(this.f20253e, 8);
+    public boolean m20277o() {
+        return C5063c.m24145b(this.f20253e, 8);
     }
 
-    public boolean m20275p() {
+    public boolean m20276p() {
         return (this.f20253e & 1) != 0;
     }
 
-    public boolean m20274q() {
+    public boolean m20275q() {
         return (this.f20253e & 2) != 0;
     }
 
-    public boolean m20273r() {
-        return C5063c.m24144b(this.f20253e, 16);
+    public boolean m20274r() {
+        return C5063c.m24145b(this.f20253e, 16);
     }
 
-    public final StringBuilder m20271t(StringBuilder sb2) {
+    public final StringBuilder m20272t(StringBuilder sb2) {
         C10930q6 q6Var = this.f20249a;
         sb2.append(q6Var != null ? q6Var.m2188w6() : -1);
         sb2.append('_');
-        sb2.append(m20286e());
+        sb2.append(m20287e());
         if (this.f20253e != 0) {
             sb2.append(',');
             sb2.append(this.f20253e);
@@ -221,7 +221,7 @@ public class C6503j {
             sb2.append(",f");
             sb2.append(this.f20258j);
         }
-        if (m20273r() || m20276o()) {
+        if (m20274r() || m20277o()) {
             sb2.append(',');
             sb2.append(this.f20259k);
         }
@@ -233,43 +233,43 @@ public class C6503j {
         if (str != null) {
             return str;
         }
-        String u = mo20264u();
+        String u = mo20265u();
         this.f20263o = u;
         return u;
     }
 
-    public String mo20264u() {
-        return m20271t(new StringBuilder()).toString();
+    public String mo20265u() {
+        return m20272t(new StringBuilder()).toString();
     }
 
-    public boolean m20270v() {
-        return C5063c.m24144b(this.f20253e, 32);
+    public boolean m20271v() {
+        return C5063c.m24145b(this.f20253e, 32);
     }
 
-    public boolean m20269w() {
-        return C5063c.m24144b(this.f20253e, 4);
+    public boolean m20270w() {
+        return C5063c.m24145b(this.f20253e, 4);
     }
 
-    public void m20268x(long j, long j2) {
+    public void m20269x(long j, long j2) {
         AbstractC6504a aVar = this.f20261m;
         if (aVar != null) {
-            aVar.mo20265a(this, j, j2);
+            aVar.mo20266a(this, j, j2);
         }
     }
 
-    public void m20267y() {
+    public void m20268y() {
         if (this.f20262n != null) {
             this.f20249a.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    C6503j.this.m20272s();
+                    C6503j.this.m20273s();
                 }
             });
         }
     }
 
-    public void m20266z(boolean z) {
-        this.f20253e = C5063c.m24138h(this.f20253e, 32, z);
+    public void m20267z(boolean z) {
+        this.f20253e = C5063c.m24139h(this.f20253e, 32, z);
     }
 
     public C6503j(C10930q6 q6Var, TdApi.File file, int i) {
@@ -285,6 +285,6 @@ public class C6503j {
     }
 
     public C6503j(C10930q6 q6Var, TdApi.File file, TdApi.StickerType stickerType) {
-        this(q6Var, file, m20291O(stickerType));
+        this(q6Var, file, m20292O(stickerType));
     }
 }

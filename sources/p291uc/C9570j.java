@@ -25,33 +25,33 @@ import p037cb.C2057b;
 import p291uc.C9570j;
 
 public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.AbstractC0907q {
-    public long f31027A;
-    public float f31031d;
-    public float f31032e;
-    public float f31033f;
-    public float f31034g;
-    public float f31035h;
-    public float f31036i;
-    public AbstractC9575e f31038k;
-    public int f31040m;
-    public int f31042o;
-    public RecyclerView f31043p;
-    public VelocityTracker f31045r;
-    public List<RecyclerView.AbstractC0886d0> f31046s;
-    public List<Integer> f31047t;
-    public C1441d f31051x;
-    public Rect f31053z;
-    public final List<View> f31028a = new ArrayList();
-    public final float[] f31029b = new float[2];
-    public RecyclerView.AbstractC0886d0 f31030c = null;
-    public int f31037j = -1;
-    public int f31039l = 0;
-    public List<C9577g> f31041n = new ArrayList();
-    public final Runnable f31044q = new RunnableC9571a();
-    public RecyclerView.AbstractC0894k f31048u = null;
-    public View f31049v = null;
-    public int f31050w = -1;
-    public final RecyclerView.AbstractC0909s f31052y = new C9572b();
+    public long f31030A;
+    public float f31034d;
+    public float f31035e;
+    public float f31036f;
+    public float f31037g;
+    public float f31038h;
+    public float f31039i;
+    public AbstractC9575e f31041k;
+    public int f31043m;
+    public int f31045o;
+    public RecyclerView f31046p;
+    public VelocityTracker f31048r;
+    public List<RecyclerView.AbstractC0886d0> f31049s;
+    public List<Integer> f31050t;
+    public C1441d f31054x;
+    public Rect f31056z;
+    public final List<View> f31031a = new ArrayList();
+    public final float[] f31032b = new float[2];
+    public RecyclerView.AbstractC0886d0 f31033c = null;
+    public int f31040j = -1;
+    public int f31042l = 0;
+    public List<C9577g> f31044n = new ArrayList();
+    public final Runnable f31047q = new RunnableC9571a();
+    public RecyclerView.AbstractC0894k f31051u = null;
+    public View f31052v = null;
+    public int f31053w = -1;
+    public final RecyclerView.AbstractC0909s f31055y = new C9572b();
 
     public class RunnableC9571a implements Runnable {
         public RunnableC9571a() {
@@ -60,14 +60,14 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
         @Override
         public void run() {
             C9570j jVar = C9570j.this;
-            if (jVar.f31030c != null && jVar.m8199Z()) {
+            if (jVar.f31033c != null && jVar.m8199Z()) {
                 C9570j jVar2 = C9570j.this;
-                RecyclerView.AbstractC0886d0 d0Var = jVar2.f31030c;
+                RecyclerView.AbstractC0886d0 d0Var = jVar2.f31033c;
                 if (d0Var != null) {
                     jVar2.m8204U(d0Var);
                 }
-                C9570j.this.f31043p.removeCallbacks(C9570j.this.f31044q);
-                C1489y.m36749U(C9570j.this.f31043p, this);
+                C9570j.this.f31046p.removeCallbacks(C9570j.this.f31047q);
+                C1489y.m36752U(C9570j.this.f31046p, this);
             }
         }
     }
@@ -78,37 +78,37 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
 
         @Override
         public void mo8175a(RecyclerView recyclerView, MotionEvent motionEvent) {
-            C9570j.this.f31051x.m36910a(motionEvent);
-            if (C9570j.this.f31045r != null) {
-                C9570j.this.f31045r.addMovement(motionEvent);
+            C9570j.this.f31054x.m36913a(motionEvent);
+            if (C9570j.this.f31048r != null) {
+                C9570j.this.f31048r.addMovement(motionEvent);
             }
-            if (C9570j.this.f31037j != -1) {
-                int c = C1476l.m36807c(motionEvent);
-                int a = C1476l.m36809a(motionEvent, C9570j.this.f31037j);
+            if (C9570j.this.f31040j != -1) {
+                int c = C1476l.m36810c(motionEvent);
+                int a = C1476l.m36812a(motionEvent, C9570j.this.f31040j);
                 if (a >= 0) {
                     C9570j.this.m8218G(c, motionEvent, a);
                 }
                 C9570j jVar = C9570j.this;
-                RecyclerView.AbstractC0886d0 d0Var = jVar.f31030c;
+                RecyclerView.AbstractC0886d0 d0Var = jVar.f31033c;
                 if (d0Var != null) {
                     int i = 0;
                     if (c != 1) {
                         if (c != 2) {
                             if (c != 3) {
                                 if (c == 6) {
-                                    int b = C1476l.m36808b(motionEvent);
-                                    int d = C1476l.m36806d(motionEvent, b);
+                                    int b = C1476l.m36811b(motionEvent);
+                                    int d = C1476l.m36809d(motionEvent, b);
                                     C9570j jVar2 = C9570j.this;
-                                    if (d == jVar2.f31037j) {
-                                        if (jVar2.f31045r != null) {
-                                            C9570j.this.f31045r.computeCurrentVelocity(1000, C9570j.this.f31043p.getMaxFlingVelocity());
+                                    if (d == jVar2.f31040j) {
+                                        if (jVar2.f31048r != null) {
+                                            C9570j.this.f31048r.computeCurrentVelocity(1000, C9570j.this.f31046p.getMaxFlingVelocity());
                                         }
                                         if (b == 0) {
                                             i = 1;
                                         }
-                                        C9570j.this.f31037j = C1476l.m36806d(motionEvent, i);
+                                        C9570j.this.f31040j = C1476l.m36809d(motionEvent, i);
                                         C9570j jVar3 = C9570j.this;
-                                        jVar3.m8192e0(motionEvent, jVar3.f31040m, b);
+                                        jVar3.m8192e0(motionEvent, jVar3.f31043m, b);
                                         return;
                                     }
                                     return;
@@ -116,21 +116,21 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
                                 return;
                             }
                         } else if (a >= 0) {
-                            jVar.m8192e0(motionEvent, jVar.f31040m, a);
+                            jVar.m8192e0(motionEvent, jVar.f31043m, a);
                             C9570j.this.m8204U(d0Var);
-                            C9570j.this.f31043p.removeCallbacks(C9570j.this.f31044q);
-                            C9570j.this.f31044q.run();
-                            C9570j.this.f31043p.invalidate();
+                            C9570j.this.f31046p.removeCallbacks(C9570j.this.f31047q);
+                            C9570j.this.f31047q.run();
+                            C9570j.this.f31046p.invalidate();
                             return;
                         } else {
                             return;
                         }
                     }
-                    if (jVar.f31045r != null) {
-                        C9570j.this.f31045r.computeCurrentVelocity(1000, C9570j.this.f31043p.getMaxFlingVelocity());
+                    if (jVar.f31048r != null) {
+                        C9570j.this.f31048r.computeCurrentVelocity(1000, C9570j.this.f31046p.getMaxFlingVelocity());
                     }
                     C9570j.this.m8198a0(null, 0);
-                    C9570j.this.f31037j = -1;
+                    C9570j.this.f31040j = -1;
                 }
             }
         }
@@ -139,41 +139,41 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
         public boolean mo8174c(RecyclerView recyclerView, MotionEvent motionEvent) {
             int a;
             C9577g K;
-            C9570j.this.f31051x.m36910a(motionEvent);
-            int c = C1476l.m36807c(motionEvent);
+            C9570j.this.f31054x.m36913a(motionEvent);
+            int c = C1476l.m36810c(motionEvent);
             if (c == 0) {
-                C9570j.this.f31037j = C1476l.m36806d(motionEvent, 0);
-                C9570j.this.f31031d = motionEvent.getX();
-                C9570j.this.f31032e = motionEvent.getY();
+                C9570j.this.f31040j = C1476l.m36809d(motionEvent, 0);
+                C9570j.this.f31034d = motionEvent.getX();
+                C9570j.this.f31035e = motionEvent.getY();
                 C9570j.this.m8203V();
                 C9570j jVar = C9570j.this;
-                if (jVar.f31030c == null && (K = jVar.m8214K(motionEvent)) != null) {
+                if (jVar.f31033c == null && (K = jVar.m8214K(motionEvent)) != null) {
                     C9570j jVar2 = C9570j.this;
-                    jVar2.f31031d -= K.f31075j;
-                    jVar2.f31032e -= K.f31076k;
-                    jVar2.m8215J(K.f31070e, true);
-                    if (C9570j.this.f31028a.remove(K.f31070e.f3479a)) {
+                    jVar2.f31034d -= K.f31078j;
+                    jVar2.f31035e -= K.f31079k;
+                    jVar2.m8215J(K.f31073e, true);
+                    if (C9570j.this.f31031a.remove(K.f31073e.f3479a)) {
                         C9570j jVar3 = C9570j.this;
-                        jVar3.f31038k.m8154i(jVar3.f31043p, K.f31070e);
+                        jVar3.f31041k.m8154i(jVar3.f31046p, K.f31073e);
                     }
-                    C9570j.this.m8198a0(K.f31070e, K.f31071f);
+                    C9570j.this.m8198a0(K.f31073e, K.f31074f);
                     C9570j jVar4 = C9570j.this;
-                    jVar4.m8192e0(motionEvent, jVar4.f31040m, 0);
+                    jVar4.m8192e0(motionEvent, jVar4.f31043m, 0);
                 }
             } else if (c == 3 || c == 1) {
                 C9570j jVar5 = C9570j.this;
-                jVar5.f31037j = -1;
+                jVar5.f31040j = -1;
                 jVar5.m8198a0(null, 0);
             } else {
-                int i = C9570j.this.f31037j;
-                if (i != -1 && (a = C1476l.m36809a(motionEvent, i)) >= 0) {
+                int i = C9570j.this.f31040j;
+                if (i != -1 && (a = C1476l.m36812a(motionEvent, i)) >= 0) {
                     C9570j.this.m8218G(c, motionEvent, a);
                 }
             }
-            if (C9570j.this.f31045r != null) {
-                C9570j.this.f31045r.addMovement(motionEvent);
+            if (C9570j.this.f31048r != null) {
+                C9570j.this.f31048r.addMovement(motionEvent);
             }
-            return C9570j.this.f31030c != null;
+            return C9570j.this.f31033c != null;
         }
 
         @Override
@@ -185,32 +185,32 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
     }
 
     public class C9573c extends C9577g {
-        public final int f31056p;
-        public final RecyclerView.AbstractC0886d0 f31057q;
+        public final int f31059p;
+        public final RecyclerView.AbstractC0886d0 f31060q;
 
         public C9573c(RecyclerView.AbstractC0886d0 d0Var, int i, int i2, float f, float f2, float f3, float f4, int i3, RecyclerView.AbstractC0886d0 d0Var2) {
             super(d0Var, i, i2, f, f2, f3, f4);
-            this.f31056p = i3;
-            this.f31057q = d0Var2;
+            this.f31059p = i3;
+            this.f31060q = d0Var2;
         }
 
         @Override
         public void onAnimationEnd(Animator animator) {
             super.onAnimationEnd(animator);
-            if (!this.f31077l) {
-                if (this.f31056p <= 0) {
+            if (!this.f31080l) {
+                if (this.f31059p <= 0) {
                     C9570j jVar = C9570j.this;
-                    jVar.f31038k.m8154i(jVar.f31043p, this.f31057q);
+                    jVar.f31041k.m8154i(jVar.f31046p, this.f31060q);
                 } else {
-                    C9570j.this.f31028a.add(this.f31057q.f3479a);
-                    this.f31074i = true;
-                    int i = this.f31056p;
+                    C9570j.this.f31031a.add(this.f31060q.f3479a);
+                    this.f31077i = true;
+                    int i = this.f31059p;
                     if (i > 0) {
                         C9570j.this.m8202W(this, i);
                     }
                 }
-                View view = C9570j.this.f31049v;
-                View view2 = this.f31057q.f3479a;
+                View view = C9570j.this.f31052v;
+                View view2 = this.f31060q.f3479a;
                 if (view == view2) {
                     C9570j.this.m8200Y(view2);
                 }
@@ -219,24 +219,24 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
     }
 
     public class RunnableC9574d implements Runnable {
-        public final C9577g f31059a;
-        public final int f31060b;
+        public final C9577g f31062a;
+        public final int f31063b;
 
         public RunnableC9574d(C9577g gVar, int i) {
-            this.f31059a = gVar;
-            this.f31060b = i;
+            this.f31062a = gVar;
+            this.f31063b = i;
         }
 
         @Override
         public void run() {
-            if (C9570j.this.f31043p != null && C9570j.this.f31043p.isAttachedToWindow()) {
-                C9577g gVar = this.f31059a;
-                if (!gVar.f31077l && gVar.f31070e.m39335k() != -1) {
-                    RecyclerView.AbstractC0896m itemAnimator = C9570j.this.f31043p.getItemAnimator();
-                    if ((itemAnimator == null || !itemAnimator.m39284q(null)) && !C9570j.this.m8209P()) {
-                        C9570j.this.f31038k.mo8163J(this.f31059a.f31070e, this.f31060b);
+            if (C9570j.this.f31046p != null && C9570j.this.f31046p.isAttachedToWindow()) {
+                C9577g gVar = this.f31062a;
+                if (!gVar.f31080l && gVar.f31073e.m39338k() != -1) {
+                    RecyclerView.AbstractC0896m itemAnimator = C9570j.this.f31046p.getItemAnimator();
+                    if ((itemAnimator == null || !itemAnimator.m39287q(null)) && !C9570j.this.m8209P()) {
+                        C9570j.this.f31041k.mo8163J(this.f31062a.f31073e, this.f31063b);
                     } else {
-                        C9570j.this.f31043p.post(this);
+                        C9570j.this.f31046p.post(this);
                     }
                 }
             }
@@ -244,9 +244,9 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
     }
 
     public static abstract class AbstractC9575e {
-        public static final Interpolator f31062b = animationInterpolatorC9595l.f31114a;
-        public static final Interpolator f31063c = animationInterpolatorC9584k.f31089a;
-        public int f31064a = -1;
+        public static final Interpolator f31065b = animationInterpolatorC9595l.f31117a;
+        public static final Interpolator f31066c = animationInterpolatorC9584k.f31092a;
+        public int f31067a = -1;
 
         public static int m8172A(int i, int i2) {
             int z = m8137z(0, i2 | i);
@@ -296,7 +296,7 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
                 C9577g gVar = list.get(i2);
                 gVar.m8128i();
                 int save = canvas.save();
-                mo8170C(canvas, recyclerView, gVar.f31070e, gVar.f31075j, gVar.f31076k, gVar.f31071f, false);
+                mo8170C(canvas, recyclerView, gVar.f31073e, gVar.f31078j, gVar.f31079k, gVar.f31074f, false);
                 canvas.restoreToCount(save);
             }
             if (d0Var != null) {
@@ -312,7 +312,7 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
             for (int i2 = 0; i2 < size; i2++) {
                 C9577g gVar = list.get(i2);
                 int save = canvas.save();
-                m8169D(canvas, recyclerView, gVar.f31070e, gVar.f31075j, gVar.f31076k, gVar.f31071f, false);
+                m8169D(canvas, recyclerView, gVar.f31073e, gVar.f31078j, gVar.f31079k, gVar.f31074f, false);
                 canvas.restoreToCount(save);
             }
             if (d0Var != null) {
@@ -322,9 +322,9 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
             }
             for (int i3 = size - 1; i3 >= 0; i3--) {
                 C9577g gVar2 = list.get(i3);
-                if (gVar2.f31078m && !gVar2.f31074i) {
+                if (gVar2.f31081m && !gVar2.f31077i) {
                     list.remove(i3);
-                } else if (!gVar2.f31078m) {
+                } else if (!gVar2.f31081m) {
                     z = true;
                 }
             }
@@ -341,20 +341,20 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
                 ((AbstractC9578h) layoutManager).m8127a(d0Var.f3479a, d0Var2.f3479a, i3, i4);
                 return;
             }
-            if (layoutManager.mo39043k()) {
-                if (layoutManager.m39237Q(d0Var2.f3479a) <= recyclerView.getPaddingLeft()) {
-                    recyclerView.m39401r1(i2);
+            if (layoutManager.mo39046k()) {
+                if (layoutManager.m39240Q(d0Var2.f3479a) <= recyclerView.getPaddingLeft()) {
+                    recyclerView.m39404r1(i2);
                 }
-                if (layoutManager.m39232T(d0Var2.f3479a) >= recyclerView.getWidth() - recyclerView.getPaddingRight()) {
-                    recyclerView.m39401r1(i2);
+                if (layoutManager.m39235T(d0Var2.f3479a) >= recyclerView.getWidth() - recyclerView.getPaddingRight()) {
+                    recyclerView.m39404r1(i2);
                 }
             }
-            if (layoutManager.mo39041l()) {
-                if (layoutManager.m39231U(d0Var2.f3479a) <= recyclerView.getPaddingTop()) {
-                    recyclerView.m39401r1(i2);
+            if (layoutManager.mo39044l()) {
+                if (layoutManager.m39234U(d0Var2.f3479a) <= recyclerView.getPaddingTop()) {
+                    recyclerView.m39404r1(i2);
                 }
-                if (layoutManager.m39241O(d0Var2.f3479a) >= recyclerView.getHeight() - recyclerView.getPaddingBottom()) {
-                    recyclerView.m39401r1(i2);
+                if (layoutManager.m39244O(d0Var2.f3479a) >= recyclerView.getHeight() - recyclerView.getPaddingBottom()) {
+                    recyclerView.m39404r1(i2);
                 }
             }
         }
@@ -430,7 +430,7 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
         }
 
         public final int m8151l(RecyclerView recyclerView, RecyclerView.AbstractC0886d0 d0Var) {
-            return m8153j(mo8146q(recyclerView, d0Var), C1489y.m36705v(recyclerView));
+            return m8153j(mo8146q(recyclerView, d0Var), C1489y.m36708v(recyclerView));
         }
 
         public long m8150m(RecyclerView recyclerView, int i, float f, float f2) {
@@ -439,9 +439,9 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
                 return i == 8 ? 200L : 120L;
             }
             if (i == 8) {
-                return itemAnimator.m39286n();
+                return itemAnimator.m39289n();
             }
-            return itemAnimator.m39285o();
+            return itemAnimator.m39288o();
         }
 
         public int m8149n() {
@@ -450,16 +450,16 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
 
         @SuppressLint({"PrivateResource"})
         public final int m8148o(RecyclerView recyclerView) {
-            if (this.f31064a == -1) {
+            if (this.f31067a == -1) {
                 try {
                     int dimensionPixelSize = recyclerView.getResources().getDimensionPixelSize(R.dimen.d_res_0x7f050064);
-                    this.f31064a = dimensionPixelSize;
+                    this.f31067a = dimensionPixelSize;
                     Log.m14714v("mCachedMaxScrollSpeed = %d", Integer.valueOf(dimensionPixelSize));
                 } catch (Throwable th) {
                     Log.m14710w("Cannot resolve maxScrollSpeed", th, new Object[0]);
                 }
             }
-            return this.f31064a;
+            return this.f31067a;
         }
 
         public float m8147p(RecyclerView.AbstractC0886d0 d0Var) {
@@ -480,11 +480,11 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
 
         public int m8142u(RecyclerView recyclerView, int i, int i2, int i3, long j) {
             float f = 1.0f;
-            int signum = (int) (((int) Math.signum(i2)) * m8148o(recyclerView) * f31063c.getInterpolation(Math.min(1.0f, (Math.abs(i2) * 1.0f) / i)));
+            int signum = (int) (((int) Math.signum(i2)) * m8148o(recyclerView) * f31066c.getInterpolation(Math.min(1.0f, (Math.abs(i2) * 1.0f) / i)));
             if (j <= 2000) {
                 f = ((float) j) / 2000.0f;
             }
-            int interpolation = (int) (signum * f31062b.getInterpolation(f));
+            int interpolation = (int) (signum * f31065b.getInterpolation(f));
             return interpolation == 0 ? i2 > 0 ? 1 : -1 : interpolation;
         }
 
@@ -506,21 +506,21 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
         public void onLongPress(MotionEvent motionEvent) {
             RecyclerView.AbstractC0886d0 l0;
             View L = C9570j.this.m8213L(motionEvent);
-            if (L != null && (l0 = C9570j.this.f31043p.m39418l0(L)) != null) {
+            if (L != null && (l0 = C9570j.this.f31046p.m39421l0(L)) != null) {
                 C9570j jVar = C9570j.this;
-                if (jVar.f31038k.m8144s(jVar.f31043p, l0)) {
-                    int d = C1476l.m36806d(motionEvent, 0);
-                    int i = C9570j.this.f31037j;
+                if (jVar.f31041k.m8144s(jVar.f31046p, l0)) {
+                    int d = C1476l.m36809d(motionEvent, 0);
+                    int i = C9570j.this.f31040j;
                     if (d == i) {
-                        int a = C1476l.m36809a(motionEvent, i);
-                        float e = C1476l.m36805e(motionEvent, a);
-                        float f = C1476l.m36804f(motionEvent, a);
+                        int a = C1476l.m36812a(motionEvent, i);
+                        float e = C1476l.m36808e(motionEvent, a);
+                        float f = C1476l.m36807f(motionEvent, a);
                         C9570j jVar2 = C9570j.this;
-                        jVar2.f31031d = e;
-                        jVar2.f31032e = f;
-                        jVar2.f31034g = 0.0f;
-                        jVar2.f31033f = 0.0f;
-                        if (jVar2.f31038k.mo8140w()) {
+                        jVar2.f31034d = e;
+                        jVar2.f31035e = f;
+                        jVar2.f31037g = 0.0f;
+                        jVar2.f31036f = 0.0f;
+                        if (jVar2.f31041k.mo8140w()) {
                             C9570j.this.m8198a0(l0, 2);
                         }
                     }
@@ -530,31 +530,31 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
     }
 
     public class C9577g implements Animator.AnimatorListener {
-        public final float f31066a;
-        public final float f31067b;
-        public final float f31068c;
-        public final float f31069d;
-        public final RecyclerView.AbstractC0886d0 f31070e;
-        public final int f31071f;
-        public final ValueAnimator f31072g;
-        public final int f31073h;
-        public boolean f31074i;
-        public float f31075j;
-        public float f31076k;
-        public boolean f31077l = false;
-        public boolean f31078m = false;
-        public float f31079n;
+        public final float f31069a;
+        public final float f31070b;
+        public final float f31071c;
+        public final float f31072d;
+        public final RecyclerView.AbstractC0886d0 f31073e;
+        public final int f31074f;
+        public final ValueAnimator f31075g;
+        public final int f31076h;
+        public boolean f31077i;
+        public float f31078j;
+        public float f31079k;
+        public boolean f31080l = false;
+        public boolean f31081m = false;
+        public float f31082n;
 
         public C9577g(RecyclerView.AbstractC0886d0 d0Var, int i, int i2, float f, float f2, float f3, float f4) {
-            this.f31071f = i2;
-            this.f31073h = i;
-            this.f31070e = d0Var;
-            this.f31066a = f;
-            this.f31067b = f2;
-            this.f31068c = f3;
-            this.f31069d = f4;
+            this.f31074f = i2;
+            this.f31076h = i;
+            this.f31073e = d0Var;
+            this.f31069a = f;
+            this.f31070b = f2;
+            this.f31071c = f3;
+            this.f31072d = f4;
             ValueAnimator ofFloat = ValueAnimator.ofFloat(0.0f, 1.0f);
-            this.f31072g = ofFloat;
+            this.f31075g = ofFloat;
             ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                 @Override
                 public final void onAnimationUpdate(ValueAnimator valueAnimator) {
@@ -567,40 +567,40 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
         }
 
         public void m8132e(ValueAnimator valueAnimator) {
-            m8130g(C2057b.m35735a(valueAnimator));
+            m8130g(C2057b.m35738a(valueAnimator));
         }
 
         public void m8133d() {
-            this.f31072g.cancel();
+            this.f31075g.cancel();
         }
 
         public void m8131f(long j) {
-            this.f31072g.setDuration(j);
+            this.f31075g.setDuration(j);
         }
 
         public void m8130g(float f) {
-            this.f31079n = f;
+            this.f31082n = f;
         }
 
         public void m8129h() {
-            this.f31070e.m39351I(false);
-            this.f31072g.start();
+            this.f31073e.m39354I(false);
+            this.f31075g.start();
         }
 
         public void m8128i() {
-            float f = this.f31066a;
-            float f2 = this.f31068c;
+            float f = this.f31069a;
+            float f2 = this.f31071c;
             if (f == f2) {
-                this.f31075j = C1489y.m36767C(this.f31070e.f3479a);
+                this.f31078j = C1489y.m36770C(this.f31073e.f3479a);
             } else {
-                this.f31075j = f + (this.f31079n * (f2 - f));
+                this.f31078j = f + (this.f31082n * (f2 - f));
             }
-            float f3 = this.f31067b;
-            float f4 = this.f31069d;
+            float f3 = this.f31070b;
+            float f4 = this.f31072d;
             if (f3 == f4) {
-                this.f31076k = C1489y.m36766D(this.f31070e.f3479a);
+                this.f31079k = C1489y.m36769D(this.f31073e.f3479a);
             } else {
-                this.f31076k = f3 + (this.f31079n * (f4 - f3));
+                this.f31079k = f3 + (this.f31082n * (f4 - f3));
             }
         }
 
@@ -611,10 +611,10 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
 
         @Override
         public void onAnimationEnd(Animator animator) {
-            if (!this.f31078m) {
-                this.f31070e.m39351I(true);
+            if (!this.f31081m) {
+                this.f31073e.m39354I(true);
             }
-            this.f31078m = true;
+            this.f31081m = true;
         }
 
         @Override
@@ -631,7 +631,7 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
     }
 
     public C9570j(AbstractC9575e eVar) {
-        this.f31038k = eVar;
+        this.f31041k = eVar;
     }
 
     public static boolean m8208Q(View view, float f, float f2, float f3, float f4) {
@@ -639,22 +639,22 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
     }
 
     public int m8205T(int i, int i2) {
-        View view = this.f31049v;
+        View view = this.f31052v;
         if (view == null) {
             return i2;
         }
-        int i3 = this.f31050w;
+        int i3 = this.f31053w;
         if (i3 == -1) {
-            i3 = this.f31043p.indexOfChild(view);
-            this.f31050w = i3;
+            i3 = this.f31046p.indexOfChild(view);
+            this.f31053w = i3;
         }
         return i2 == i + (-1) ? i3 : i2 < i3 ? i2 : i2 + 1;
     }
 
     public final void m8221D() {
         if (Build.VERSION.SDK_INT < 21) {
-            if (this.f31048u == null) {
-                this.f31048u = new RecyclerView.AbstractC0894k() {
+            if (this.f31051u == null) {
+                this.f31051u = new RecyclerView.AbstractC0894k() {
                     @Override
                     public final int mo8318a(int i, int i2) {
                         int T;
@@ -663,17 +663,17 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
                     }
                 };
             }
-            this.f31043p.setChildDrawingOrderCallback(this.f31048u);
+            this.f31046p.setChildDrawingOrderCallback(this.f31051u);
         }
     }
 
     public void m8220E(RecyclerView recyclerView) {
-        RecyclerView recyclerView2 = this.f31043p;
+        RecyclerView recyclerView2 = this.f31046p;
         if (recyclerView2 != recyclerView) {
             if (recyclerView2 != null) {
                 m8216I();
             }
-            this.f31043p = recyclerView;
+            this.f31046p = recyclerView;
             if (recyclerView != null) {
                 m8196b0();
             }
@@ -684,22 +684,22 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
         int i2;
         if ((i & 12) != 0) {
             int i3 = 8;
-            int i4 = this.f31033f > 0.0f ? 8 : 4;
-            VelocityTracker velocityTracker = this.f31045r;
-            if (velocityTracker != null && (i2 = this.f31037j) > -1) {
-                float a = C1487w.m36771a(velocityTracker, i2);
+            int i4 = this.f31036f > 0.0f ? 8 : 4;
+            VelocityTracker velocityTracker = this.f31048r;
+            if (velocityTracker != null && (i2 = this.f31040j) > -1) {
+                float a = C1487w.m36774a(velocityTracker, i2);
                 if (a <= 0.0f) {
                     i3 = 4;
                 }
-                if ((i3 & i) != 0 && i4 == i3 && Math.abs(a) >= this.f31043p.getMinFlingVelocity()) {
-                    if (this.f31038k.mo8171B(d0Var, i3)) {
+                if ((i3 & i) != 0 && i4 == i3 && Math.abs(a) >= this.f31046p.getMinFlingVelocity()) {
+                    if (this.f31041k.mo8171B(d0Var, i3)) {
                         return 0;
                     }
                     return i3;
                 }
             }
-            float width = this.f31043p.getWidth() * this.f31038k.mo8145r(d0Var);
-            if ((i & i4) != 0 && Math.abs(this.f31033f) > width && !this.f31038k.mo8171B(d0Var, i4)) {
+            float width = this.f31046p.getWidth() * this.f31041k.mo8145r(d0Var);
+            if ((i & i4) != 0 && Math.abs(this.f31036f) > width && !this.f31041k.mo8171B(d0Var, i4)) {
                 return i4;
             }
         }
@@ -709,16 +709,16 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
     public final boolean m8218G(int i, MotionEvent motionEvent, int i2) {
         RecyclerView.AbstractC0886d0 N;
         int l;
-        if (this.f31030c != null || i != 2 || this.f31039l == 2 || !this.f31038k.mo8141v() || this.f31043p.getScrollState() == 1 || (N = m8211N(motionEvent)) == null || (l = (this.f31038k.m8151l(this.f31043p, N) & 65280) >> 8) == 0) {
+        if (this.f31033c != null || i != 2 || this.f31042l == 2 || !this.f31041k.mo8141v() || this.f31046p.getScrollState() == 1 || (N = m8211N(motionEvent)) == null || (l = (this.f31041k.m8151l(this.f31046p, N) & 65280) >> 8) == 0) {
             return false;
         }
-        float e = C1476l.m36805e(motionEvent, i2);
-        float f = C1476l.m36804f(motionEvent, i2);
-        float f2 = e - this.f31031d;
-        float f3 = f - this.f31032e;
+        float e = C1476l.m36808e(motionEvent, i2);
+        float f = C1476l.m36807f(motionEvent, i2);
+        float f2 = e - this.f31034d;
+        float f3 = f - this.f31035e;
         float abs = Math.abs(f2);
         float abs2 = Math.abs(f3);
-        int i3 = this.f31042o;
+        int i3 = this.f31045o;
         if (abs < i3 && abs2 < i3) {
             return false;
         }
@@ -736,9 +736,9 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
                 return false;
             }
         }
-        this.f31034g = 0.0f;
-        this.f31033f = 0.0f;
-        this.f31037j = C1476l.m36806d(motionEvent, 0);
+        this.f31037g = 0.0f;
+        this.f31036f = 0.0f;
+        this.f31040j = C1476l.m36809d(motionEvent, 0);
         m8198a0(N, 1);
         return true;
     }
@@ -747,22 +747,22 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
         int i2;
         if ((i & 3) != 0) {
             int i3 = 2;
-            int i4 = this.f31034g > 0.0f ? 2 : 1;
-            VelocityTracker velocityTracker = this.f31045r;
-            if (velocityTracker != null && (i2 = this.f31037j) > -1) {
-                float b = C1487w.m36770b(velocityTracker, i2);
+            int i4 = this.f31037g > 0.0f ? 2 : 1;
+            VelocityTracker velocityTracker = this.f31048r;
+            if (velocityTracker != null && (i2 = this.f31040j) > -1) {
+                float b = C1487w.m36773b(velocityTracker, i2);
                 if (b <= 0.0f) {
                     i3 = 1;
                 }
-                if ((i3 & i) != 0 && i3 == i4 && Math.abs(b) >= this.f31043p.getMinFlingVelocity()) {
-                    if (this.f31038k.mo8171B(d0Var, i3)) {
+                if ((i3 & i) != 0 && i3 == i4 && Math.abs(b) >= this.f31046p.getMinFlingVelocity()) {
+                    if (this.f31041k.mo8171B(d0Var, i3)) {
                         return 0;
                     }
                     return i3;
                 }
             }
-            float height = this.f31043p.getHeight() * this.f31038k.mo8145r(d0Var);
-            if ((i & i4) != 0 && Math.abs(this.f31034g) > height && !this.f31038k.mo8171B(d0Var, i4)) {
+            float height = this.f31046p.getHeight() * this.f31041k.mo8145r(d0Var);
+            if ((i & i4) != 0 && Math.abs(this.f31037g) > height && !this.f31041k.mo8171B(d0Var, i4)) {
                 return i4;
             }
         }
@@ -770,41 +770,41 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
     }
 
     public final void m8216I() {
-        this.f31043p.m39435f1(this);
-        this.f31043p.m39429h1(this.f31052y);
-        this.f31043p.m39432g1(this);
-        for (int size = this.f31041n.size() - 1; size >= 0; size--) {
-            this.f31038k.m8154i(this.f31043p, this.f31041n.get(0).f31070e);
+        this.f31046p.m39438f1(this);
+        this.f31046p.m39432h1(this.f31055y);
+        this.f31046p.m39435g1(this);
+        for (int size = this.f31044n.size() - 1; size >= 0; size--) {
+            this.f31041k.m8154i(this.f31046p, this.f31044n.get(0).f31073e);
         }
-        this.f31041n.clear();
-        this.f31049v = null;
-        this.f31050w = -1;
+        this.f31044n.clear();
+        this.f31052v = null;
+        this.f31053w = -1;
         m8201X();
     }
 
     public final int m8215J(RecyclerView.AbstractC0886d0 d0Var, boolean z) {
-        for (int size = this.f31041n.size() - 1; size >= 0; size--) {
-            C9577g gVar = this.f31041n.get(size);
-            if (gVar.f31070e == d0Var) {
-                gVar.f31077l |= z;
-                if (!gVar.f31078m) {
+        for (int size = this.f31044n.size() - 1; size >= 0; size--) {
+            C9577g gVar = this.f31044n.get(size);
+            if (gVar.f31073e == d0Var) {
+                gVar.f31080l |= z;
+                if (!gVar.f31081m) {
                     gVar.m8133d();
                 }
-                this.f31041n.remove(size);
-                return gVar.f31073h;
+                this.f31044n.remove(size);
+                return gVar.f31076h;
             }
         }
         return 0;
     }
 
     public final C9577g m8214K(MotionEvent motionEvent) {
-        if (this.f31041n.isEmpty()) {
+        if (this.f31044n.isEmpty()) {
             return null;
         }
         View L = m8213L(motionEvent);
-        for (int size = this.f31041n.size() - 1; size >= 0; size--) {
-            C9577g gVar = this.f31041n.get(size);
-            if (gVar.f31070e.f3479a == L) {
+        for (int size = this.f31044n.size() - 1; size >= 0; size--) {
+            C9577g gVar = this.f31044n.get(size);
+            if (gVar.f31073e.f3479a == L) {
                 return gVar;
             }
         }
@@ -814,107 +814,107 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
     public final View m8213L(MotionEvent motionEvent) {
         float x = motionEvent.getX();
         float y = motionEvent.getY();
-        RecyclerView.AbstractC0886d0 d0Var = this.f31030c;
+        RecyclerView.AbstractC0886d0 d0Var = this.f31033c;
         if (d0Var != null) {
             View view = d0Var.f3479a;
-            if (m8208Q(view, x, y, this.f31035h + this.f31033f, this.f31036i + this.f31034g)) {
+            if (m8208Q(view, x, y, this.f31038h + this.f31036f, this.f31039i + this.f31037g)) {
                 return view;
             }
         }
-        for (int size = this.f31041n.size() - 1; size >= 0; size--) {
-            C9577g gVar = this.f31041n.get(size);
-            View view2 = gVar.f31070e.f3479a;
-            if (m8208Q(view2, x, y, gVar.f31075j, gVar.f31076k)) {
+        for (int size = this.f31044n.size() - 1; size >= 0; size--) {
+            C9577g gVar = this.f31044n.get(size);
+            View view2 = gVar.f31073e.f3479a;
+            if (m8208Q(view2, x, y, gVar.f31078j, gVar.f31079k)) {
                 return view2;
             }
         }
-        return this.f31043p.m39457X(x, y);
+        return this.f31046p.m39460X(x, y);
     }
 
     public final List<RecyclerView.AbstractC0886d0> m8212M(RecyclerView.AbstractC0886d0 d0Var) {
         RecyclerView.AbstractC0886d0 d0Var2 = d0Var;
-        List<RecyclerView.AbstractC0886d0> list = this.f31046s;
+        List<RecyclerView.AbstractC0886d0> list = this.f31049s;
         if (list == null) {
-            this.f31046s = new ArrayList();
-            this.f31047t = new ArrayList();
+            this.f31049s = new ArrayList();
+            this.f31050t = new ArrayList();
         } else {
             list.clear();
-            this.f31047t.clear();
+            this.f31050t.clear();
         }
-        int n = this.f31038k.m8149n();
-        int round = Math.round(this.f31035h + this.f31033f) - n;
-        int round2 = Math.round(this.f31036i + this.f31034g) - n;
+        int n = this.f31041k.m8149n();
+        int round = Math.round(this.f31038h + this.f31036f) - n;
+        int round2 = Math.round(this.f31039i + this.f31037g) - n;
         int i = n * 2;
         int width = d0Var2.f3479a.getWidth() + round + i;
         int height = d0Var2.f3479a.getHeight() + round2 + i;
         int i2 = (round + width) / 2;
         int i3 = (round2 + height) / 2;
-        RecyclerView.AbstractC0902p layoutManager = this.f31043p.getLayoutManager();
-        int J = layoutManager.m39248J();
+        RecyclerView.AbstractC0902p layoutManager = this.f31046p.getLayoutManager();
+        int J = layoutManager.m39251J();
         int i4 = 0;
         while (i4 < J) {
-            View I = layoutManager.m39251I(i4);
+            View I = layoutManager.m39254I(i4);
             if (I != d0Var2.f3479a && I.getBottom() >= round2 && I.getTop() <= height && I.getRight() >= round && I.getLeft() <= width) {
-                RecyclerView.AbstractC0886d0 l0 = this.f31043p.m39418l0(I);
-                if (this.f31038k.m8156g(this.f31043p, this.f31030c, l0)) {
+                RecyclerView.AbstractC0886d0 l0 = this.f31046p.m39421l0(I);
+                if (this.f31041k.m8156g(this.f31046p, this.f31033c, l0)) {
                     int abs = Math.abs(i2 - ((I.getLeft() + I.getRight()) / 2));
                     int abs2 = Math.abs(i3 - ((I.getTop() + I.getBottom()) / 2));
                     int i5 = (abs * abs) + (abs2 * abs2);
-                    int size = this.f31046s.size();
+                    int size = this.f31049s.size();
                     int i6 = 0;
-                    for (int i7 = 0; i7 < size && i5 > this.f31047t.get(i7).intValue(); i7++) {
+                    for (int i7 = 0; i7 < size && i5 > this.f31050t.get(i7).intValue(); i7++) {
                         i6++;
                     }
-                    this.f31046s.add(i6, l0);
-                    this.f31047t.add(i6, Integer.valueOf(i5));
+                    this.f31049s.add(i6, l0);
+                    this.f31050t.add(i6, Integer.valueOf(i5));
                 }
             }
             i4++;
             d0Var2 = d0Var;
         }
-        return this.f31046s;
+        return this.f31049s;
     }
 
     public final RecyclerView.AbstractC0886d0 m8211N(MotionEvent motionEvent) {
         View L;
-        RecyclerView.AbstractC0902p layoutManager = this.f31043p.getLayoutManager();
-        int i = this.f31037j;
+        RecyclerView.AbstractC0902p layoutManager = this.f31046p.getLayoutManager();
+        int i = this.f31040j;
         if (i == -1) {
             return null;
         }
-        int a = C1476l.m36809a(motionEvent, i);
-        float abs = Math.abs(C1476l.m36805e(motionEvent, a) - this.f31031d);
-        float abs2 = Math.abs(C1476l.m36804f(motionEvent, a) - this.f31032e);
-        int i2 = this.f31042o;
+        int a = C1476l.m36812a(motionEvent, i);
+        float abs = Math.abs(C1476l.m36808e(motionEvent, a) - this.f31034d);
+        float abs2 = Math.abs(C1476l.m36807f(motionEvent, a) - this.f31035e);
+        int i2 = this.f31045o;
         if (abs < i2 && abs2 < i2) {
             return null;
         }
-        if (abs > abs2 && layoutManager.mo39043k()) {
+        if (abs > abs2 && layoutManager.mo39046k()) {
             return null;
         }
-        if ((abs2 <= abs || !layoutManager.mo39041l()) && (L = m8213L(motionEvent)) != null) {
-            return this.f31043p.m39418l0(L);
+        if ((abs2 <= abs || !layoutManager.mo39044l()) && (L = m8213L(motionEvent)) != null) {
+            return this.f31046p.m39421l0(L);
         }
         return null;
     }
 
     public final void m8210O(float[] fArr) {
-        if ((this.f31040m & 12) != 0) {
-            fArr[0] = (this.f31035h + this.f31033f) - this.f31030c.f3479a.getLeft();
+        if ((this.f31043m & 12) != 0) {
+            fArr[0] = (this.f31038h + this.f31036f) - this.f31033c.f3479a.getLeft();
         } else {
-            fArr[0] = C1489y.m36767C(this.f31030c.f3479a);
+            fArr[0] = C1489y.m36770C(this.f31033c.f3479a);
         }
-        if ((this.f31040m & 3) != 0) {
-            fArr[1] = (this.f31036i + this.f31034g) - this.f31030c.f3479a.getTop();
+        if ((this.f31043m & 3) != 0) {
+            fArr[1] = (this.f31039i + this.f31037g) - this.f31033c.f3479a.getTop();
         } else {
-            fArr[1] = C1489y.m36766D(this.f31030c.f3479a);
+            fArr[1] = C1489y.m36769D(this.f31033c.f3479a);
         }
     }
 
     public final boolean m8209P() {
-        int size = this.f31041n.size();
+        int size = this.f31044n.size();
         for (int i = 0; i < size; i++) {
-            if (!this.f31041n.get(i).f31078m) {
+            if (!this.f31044n.get(i).f31081m) {
                 return true;
             }
         }
@@ -923,36 +923,36 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
 
     public void m8207R(RecyclerView.AbstractC0886d0 d0Var, int i) {
         m8215J(d0Var, false);
-        if (this.f31028a.remove(d0Var.f3479a)) {
-            this.f31038k.m8154i(this.f31043p, d0Var);
+        if (this.f31031a.remove(d0Var.f3479a)) {
+            this.f31041k.m8154i(this.f31046p, d0Var);
         }
         m8198a0(null, 0);
     }
 
     public final void m8206S() {
-        if (this.f31051x == null) {
-            this.f31051x = new C1441d(this.f31043p.getContext(), new C9576f());
+        if (this.f31054x == null) {
+            this.f31054x = new C1441d(this.f31046p.getContext(), new C9576f());
         }
     }
 
     public final void m8204U(RecyclerView.AbstractC0886d0 d0Var) {
-        if (!this.f31043p.isLayoutRequested() && this.f31039l == 2) {
-            float p = this.f31038k.m8147p(d0Var);
-            int i = (int) (this.f31035h + this.f31033f);
-            int i2 = (int) (this.f31036i + this.f31034g);
+        if (!this.f31046p.isLayoutRequested() && this.f31042l == 2) {
+            float p = this.f31041k.m8147p(d0Var);
+            int i = (int) (this.f31038h + this.f31036f);
+            int i2 = (int) (this.f31039i + this.f31037g);
             if (Math.abs(i2 - d0Var.f3479a.getTop()) >= d0Var.f3479a.getHeight() * p || Math.abs(i - d0Var.f3479a.getLeft()) >= d0Var.f3479a.getWidth() * p) {
                 List<RecyclerView.AbstractC0886d0> M = m8212M(d0Var);
                 if (M.size() != 0) {
-                    RecyclerView.AbstractC0886d0 h = this.f31038k.m8155h(d0Var, M, i, i2);
+                    RecyclerView.AbstractC0886d0 h = this.f31041k.m8155h(d0Var, M, i, i2);
                     if (h == null) {
-                        this.f31046s.clear();
-                        this.f31047t.clear();
+                        this.f31049s.clear();
+                        this.f31050t.clear();
                         return;
                     }
-                    int k = h.m39335k();
-                    int k2 = d0Var.m39335k();
-                    if (this.f31038k.mo8166G(this.f31043p, d0Var, h)) {
-                        this.f31038k.m8165H(this.f31043p, d0Var, k2, h, k, i, i2);
+                    int k = h.m39338k();
+                    int k2 = d0Var.m39338k();
+                    if (this.f31041k.mo8166G(this.f31046p, d0Var, h)) {
+                        this.f31041k.m8165H(this.f31046p, d0Var, k2, h, k, i, i2);
                     }
                 }
             }
@@ -960,30 +960,30 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
     }
 
     public final void m8203V() {
-        VelocityTracker velocityTracker = this.f31045r;
+        VelocityTracker velocityTracker = this.f31048r;
         if (velocityTracker != null) {
             velocityTracker.recycle();
         }
-        this.f31045r = VelocityTracker.obtain();
+        this.f31048r = VelocityTracker.obtain();
     }
 
     public final void m8202W(C9577g gVar, int i) {
-        this.f31043p.post(new RunnableC9574d(gVar, i));
+        this.f31046p.post(new RunnableC9574d(gVar, i));
     }
 
     public final void m8201X() {
-        VelocityTracker velocityTracker = this.f31045r;
+        VelocityTracker velocityTracker = this.f31048r;
         if (velocityTracker != null) {
             velocityTracker.recycle();
-            this.f31045r = null;
+            this.f31048r = null;
         }
     }
 
     public final void m8200Y(View view) {
-        if (view == this.f31049v) {
-            this.f31049v = null;
-            if (this.f31048u != null) {
-                this.f31043p.setChildDrawingOrderCallback(null);
+        if (view == this.f31052v) {
+            this.f31052v = null;
+            if (this.f31051u != null) {
+                this.f31046p.setChildDrawingOrderCallback(null);
             }
         }
     }
@@ -999,13 +999,13 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
     @Override
     public void mo8197b(View view) {
         m8200Y(view);
-        RecyclerView.AbstractC0886d0 l0 = this.f31043p.m39418l0(view);
+        RecyclerView.AbstractC0886d0 l0 = this.f31046p.m39421l0(view);
         if (l0 != null) {
-            RecyclerView.AbstractC0886d0 d0Var = this.f31030c;
+            RecyclerView.AbstractC0886d0 d0Var = this.f31033c;
             if (d0Var == null || l0 != d0Var) {
                 m8215J(l0, false);
-                if (this.f31028a.remove(l0.f3479a)) {
-                    this.f31038k.m8154i(this.f31043p, l0);
+                if (this.f31031a.remove(l0.f3479a)) {
+                    this.f31041k.m8154i(this.f31046p, l0);
                     return;
                 }
                 return;
@@ -1015,22 +1015,22 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
     }
 
     public final void m8196b0() {
-        this.f31042o = ViewConfiguration.get(this.f31043p.getContext()).getScaledTouchSlop();
-        this.f31043p.m39434g(this);
-        this.f31043p.m39425j(this.f31052y);
-        this.f31043p.m39428i(this);
+        this.f31045o = ViewConfiguration.get(this.f31046p.getContext()).getScaledTouchSlop();
+        this.f31046p.m39437g(this);
+        this.f31046p.m39428j(this.f31055y);
+        this.f31046p.m39431i(this);
         m8206S();
     }
 
     public void m8195c0(RecyclerView.AbstractC0886d0 d0Var) {
-        if (this.f31038k.m8143t(this.f31043p, d0Var)) {
-            if (d0Var.f3479a.getParent() != this.f31043p) {
+        if (this.f31041k.m8143t(this.f31046p, d0Var)) {
+            if (d0Var.f3479a.getParent() != this.f31046p) {
                 Log.m14724e("Start swipe has been called with a view holder which is not a child of the RecyclerView controlled by this ItemTouchHelper.", new Object[0]);
                 return;
             }
             m8203V();
-            this.f31034g = 0.0f;
-            this.f31033f = 0.0f;
+            this.f31037g = 0.0f;
+            this.f31036f = 0.0f;
             m8198a0(d0Var, 1);
         }
     }
@@ -1040,19 +1040,19 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
     }
 
     public final int m8193d0(RecyclerView.AbstractC0886d0 d0Var) {
-        if (this.f31039l == 2) {
+        if (this.f31042l == 2) {
             return 0;
         }
-        int q = this.f31038k.mo8146q(this.f31043p, d0Var);
-        int j = (this.f31038k.m8153j(q, C1489y.m36705v(this.f31043p)) & 65280) >> 8;
+        int q = this.f31041k.mo8146q(this.f31046p, d0Var);
+        int j = (this.f31041k.m8153j(q, C1489y.m36708v(this.f31046p)) & 65280) >> 8;
         if (j == 0) {
             return 0;
         }
         int i = (q & 65280) >> 8;
-        if (Math.abs(this.f31033f) > Math.abs(this.f31034g)) {
+        if (Math.abs(this.f31036f) > Math.abs(this.f31037g)) {
             int F = m8219F(d0Var, j);
             if (F > 0) {
-                return (i & F) == 0 ? AbstractC9575e.m8152k(F, C1489y.m36705v(this.f31043p)) : F;
+                return (i & F) == 0 ? AbstractC9575e.m8152k(F, C1489y.m36708v(this.f31046p)) : F;
             }
             int H = m8217H(d0Var, j);
             if (H > 0) {
@@ -1065,29 +1065,29 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
             }
             int F2 = m8219F(d0Var, j);
             if (F2 > 0) {
-                return (i & F2) == 0 ? AbstractC9575e.m8152k(F2, C1489y.m36705v(this.f31043p)) : F2;
+                return (i & F2) == 0 ? AbstractC9575e.m8152k(F2, C1489y.m36708v(this.f31046p)) : F2;
             }
         }
         return 0;
     }
 
     public final void m8192e0(MotionEvent motionEvent, int i, int i2) {
-        float e = C1476l.m36805e(motionEvent, i2);
-        float f = C1476l.m36804f(motionEvent, i2);
-        float f2 = e - this.f31031d;
-        this.f31033f = f2;
-        this.f31034g = f - this.f31032e;
+        float e = C1476l.m36808e(motionEvent, i2);
+        float f = C1476l.m36807f(motionEvent, i2);
+        float f2 = e - this.f31034d;
+        this.f31036f = f2;
+        this.f31037g = f - this.f31035e;
         if ((i & 4) == 0) {
-            this.f31033f = Math.max(0.0f, f2);
+            this.f31036f = Math.max(0.0f, f2);
         }
         if ((i & 8) == 0) {
-            this.f31033f = Math.min(0.0f, this.f31033f);
+            this.f31036f = Math.min(0.0f, this.f31036f);
         }
         if ((i & 1) == 0) {
-            this.f31034g = Math.max(0.0f, this.f31034g);
+            this.f31037g = Math.max(0.0f, this.f31037g);
         }
         if ((i & 2) == 0) {
-            this.f31034g = Math.min(0.0f, this.f31034g);
+            this.f31037g = Math.min(0.0f, this.f31037g);
         }
     }
 
@@ -1100,32 +1100,32 @@ public class C9570j extends RecyclerView.AbstractC0901o implements RecyclerView.
     public void mo8191i(Canvas canvas, RecyclerView recyclerView, RecyclerView.C0880a0 a0Var) {
         float f;
         float f2;
-        this.f31050w = -1;
-        if (this.f31030c != null) {
-            m8210O(this.f31029b);
-            float[] fArr = this.f31029b;
+        this.f31053w = -1;
+        if (this.f31033c != null) {
+            m8210O(this.f31032b);
+            float[] fArr = this.f31032b;
             f2 = fArr[0];
             f = fArr[1];
         } else {
             f2 = 0.0f;
             f = 0.0f;
         }
-        this.f31038k.m8168E(canvas, recyclerView, this.f31030c, this.f31041n, this.f31039l, f2, f);
+        this.f31041k.m8168E(canvas, recyclerView, this.f31033c, this.f31044n, this.f31042l, f2, f);
     }
 
     @Override
     public void mo8031k(Canvas canvas, RecyclerView recyclerView, RecyclerView.C0880a0 a0Var) {
         float f;
         float f2;
-        if (this.f31030c != null) {
-            m8210O(this.f31029b);
-            float[] fArr = this.f31029b;
+        if (this.f31033c != null) {
+            m8210O(this.f31032b);
+            float[] fArr = this.f31032b;
             f2 = fArr[0];
             f = fArr[1];
         } else {
             f2 = 0.0f;
             f = 0.0f;
         }
-        this.f31038k.m8167F(canvas, recyclerView, this.f31030c, this.f31041n, this.f31039l, f2, f);
+        this.f31041k.m8167F(canvas, recyclerView, this.f31033c, this.f31044n, this.f31042l, f2, f);
     }
 }

@@ -8,25 +8,25 @@ import android.util.Size;
 public class C4919t {
     public static final RectF f16781a = new RectF(-1.0f, -1.0f, 1.0f, 1.0f);
 
-    public static Matrix m24454a(Rect rect) {
-        return m24453b(new RectF(rect));
+    public static Matrix m24455a(Rect rect) {
+        return m24454b(new RectF(rect));
     }
 
-    public static Matrix m24453b(RectF rectF) {
+    public static Matrix m24454b(RectF rectF) {
         Matrix matrix = new Matrix();
         matrix.setRectToRect(f16781a, rectF, Matrix.ScaleToFit.FILL);
         return matrix;
     }
 
-    public static Matrix m24452c(RectF rectF, RectF rectF2, int i) {
+    public static Matrix m24453c(RectF rectF, RectF rectF2, int i) {
         Matrix matrix = new Matrix();
         matrix.setRectToRect(rectF, f16781a, Matrix.ScaleToFit.FILL);
         matrix.postRotate(i);
-        matrix.postConcat(m24453b(rectF2));
+        matrix.postConcat(m24454b(rectF2));
         return matrix;
     }
 
-    public static boolean m24451d(int i) {
+    public static boolean m24452d(int i) {
         if (i == 90 || i == 270) {
             return true;
         }
@@ -36,7 +36,7 @@ public class C4919t {
         throw new IllegalArgumentException("Invalid rotation degrees: " + i);
     }
 
-    public static boolean m24450e(Size size, boolean z, Size size2, boolean z2) {
+    public static boolean m24451e(Size size, boolean z, Size size2, boolean z2) {
         float f;
         float f2;
         float f3;
@@ -58,7 +58,7 @@ public class C4919t {
         return f >= f3 && f4 >= f2;
     }
 
-    public static int m24449f(int i) {
+    public static int m24450f(int i) {
         if (i == 0) {
             return 0;
         }

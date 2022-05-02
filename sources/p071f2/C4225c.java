@@ -16,11 +16,11 @@ public final class C4225c {
             this.f14265b = z;
         }
 
-        public Uri m28373a() {
+        public Uri m28375a() {
             return this.f14264a;
         }
 
-        public boolean m28372b() {
+        public boolean m28374b() {
             return this.f14265b;
         }
 
@@ -40,15 +40,15 @@ public final class C4225c {
         }
     }
 
-    public void m28376a(Uri uri, boolean z) {
+    public void m28378a(Uri uri, boolean z) {
         this.f14263a.add(new C4226a(uri, z));
     }
 
-    public Set<C4226a> m28375b() {
+    public Set<C4226a> m28377b() {
         return this.f14263a;
     }
 
-    public int m28374c() {
+    public int m28376c() {
         return this.f14263a.size();
     }
 

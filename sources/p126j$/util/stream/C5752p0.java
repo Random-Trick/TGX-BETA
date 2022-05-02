@@ -11,47 +11,47 @@ public class C5752p0 extends AbstractC5767s0 {
     }
 
     @Override
-    final boolean mo22199D0() {
+    final boolean mo22200D0() {
         throw new UnsupportedOperationException();
     }
 
     @Override
-    public final AbstractC5759q2 mo22136E0(int i, AbstractC5759q2 q2Var) {
+    public final AbstractC5759q2 mo22137E0(int i, AbstractC5759q2 q2Var) {
         throw new UnsupportedOperationException();
     }
 
     @Override
-    public void mo22171b(AbstractC5535q qVar) {
+    public void mo22172b(AbstractC5535q qVar) {
         AbstractC5464C L0;
         if (!isParallel()) {
-            L0 = AbstractC5767s0.m22195L0(m22307I0());
-            L0.mo22166f(qVar);
+            L0 = AbstractC5767s0.m22196L0(m22308I0());
+            L0.mo22167f(qVar);
             return;
         }
-        super.mo22171b(qVar);
+        super.mo22172b(qVar);
     }
 
     @Override
-    public void mo22170f(AbstractC5535q qVar) {
+    public void mo22171f(AbstractC5535q qVar) {
         AbstractC5464C L0;
         if (!isParallel()) {
-            L0 = AbstractC5767s0.m22195L0(m22307I0());
-            L0.mo22166f(qVar);
+            L0 = AbstractC5767s0.m22196L0(m22308I0());
+            L0.mo22167f(qVar);
             return;
         }
         Objects.requireNonNull(qVar);
-        m22297t0(new C5660W(qVar, true));
+        m22298t0(new C5660W(qVar, true));
     }
 
     @Override
     public AbstractC5777u0 parallel() {
-        m22310F0();
+        m22311F0();
         return this;
     }
 
     @Override
     public AbstractC5777u0 sequential() {
-        m22309G0();
+        m22310G0();
         return this;
     }
 }

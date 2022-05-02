@@ -25,7 +25,7 @@ public final class C4979s {
         }
     }
 
-    public final void m24347a(Message message) {
+    public final void m24348a(Message message) {
         Messenger messenger = this.f16918a;
         if (messenger != null) {
             messenger.send(message);
@@ -33,7 +33,7 @@ public final class C4979s {
         }
         C4964e eVar = this.f16919b;
         if (eVar != null) {
-            eVar.m24362b(message);
+            eVar.m24363b(message);
             return;
         }
         throw new IllegalStateException("Both messengers are null");

@@ -14,7 +14,7 @@ public final class C5055m implements Comparable<C5055m> {
         }
     }
 
-    public static int m24187a(int i) {
+    public static int m24188a(int i) {
         return i;
     }
 }

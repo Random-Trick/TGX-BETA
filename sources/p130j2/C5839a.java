@@ -16,7 +16,7 @@ import p198o2.C7554p;
 import p337y0.C10326a;
 
 public class C5839a {
-    public static final String f18701b = AbstractC4234j.m28360f("SystemJobInfoConverter");
+    public static final String f18701b = AbstractC4234j.m28362f("SystemJobInfoConverter");
     public final ComponentName f18702a;
 
     public static class C5840a {
@@ -52,11 +52,11 @@ public class C5839a {
         this.f18702a = new ComponentName(context.getApplicationContext(), SystemJobService.class);
     }
 
-    public static JobInfo.TriggerContentUri m21958b(C4225c.C4226a aVar) {
-        return new JobInfo.TriggerContentUri(aVar.m28373a(), aVar.m28372b() ? 1 : 0);
+    public static JobInfo.TriggerContentUri m21959b(C4225c.C4226a aVar) {
+        return new JobInfo.TriggerContentUri(aVar.m28375a(), aVar.m28374b() ? 1 : 0);
     }
 
-    public static int m21957c(EnumC4236k kVar) {
+    public static int m21958c(EnumC4236k kVar) {
         int i = C5840a.f18703a[kVar.ordinal()];
         if (i == 1) {
             return 0;
@@ -74,28 +74,28 @@ public class C5839a {
         } else if (Build.VERSION.SDK_INT >= 24) {
             return 3;
         }
-        AbstractC4234j.m28362c().mo28359a(f18701b, String.format("API version too low. Cannot convert network type value %s", kVar), new Throwable[0]);
+        AbstractC4234j.m28364c().mo28361a(f18701b, String.format("API version too low. Cannot convert network type value %s", kVar), new Throwable[0]);
         return 1;
     }
 
-    public static void m21956d(JobInfo.Builder builder, EnumC4236k kVar) {
+    public static void m21957d(JobInfo.Builder builder, EnumC4236k kVar) {
         if (Build.VERSION.SDK_INT < 30 || kVar != EnumC4236k.TEMPORARILY_UNMETERED) {
-            builder.setRequiredNetworkType(m21957c(kVar));
+            builder.setRequiredNetworkType(m21958c(kVar));
         } else {
             builder.setRequiredNetwork(new NetworkRequest.Builder().addCapability(25).build());
         }
     }
 
-    public JobInfo m21959a(C7554p pVar, int i) {
-        C4223b bVar = pVar.f24149j;
+    public JobInfo m21960a(C7554p pVar, int i) {
+        C4223b bVar = pVar.f24152j;
         PersistableBundle persistableBundle = new PersistableBundle();
-        persistableBundle.putString("EXTRA_WORK_SPEC_ID", pVar.f24140a);
+        persistableBundle.putString("EXTRA_WORK_SPEC_ID", pVar.f24143a);
         persistableBundle.putBoolean("EXTRA_IS_PERIODIC", pVar.m15699d());
-        JobInfo.Builder extras = new JobInfo.Builder(i, this.f18702a).setRequiresCharging(bVar.m28389g()).setRequiresDeviceIdle(bVar.m28388h()).setExtras(persistableBundle);
-        m21956d(extras, bVar.m28394b());
+        JobInfo.Builder extras = new JobInfo.Builder(i, this.f18702a).setRequiresCharging(bVar.m28391g()).setRequiresDeviceIdle(bVar.m28390h()).setExtras(persistableBundle);
+        m21957d(extras, bVar.m28396b());
         boolean z = false;
-        if (!bVar.m28388h()) {
-            extras.setBackoffCriteria(pVar.f24152m, pVar.f24151l == EnumC4222a.LINEAR ? 0 : 1);
+        if (!bVar.m28390h()) {
+            extras.setBackoffCriteria(pVar.f24155m, pVar.f24154l == EnumC4222a.LINEAR ? 0 : 1);
         }
         long max = Math.max(pVar.m15702a() - System.currentTimeMillis(), 0L);
         int i2 = Build.VERSION.SDK_INT;
@@ -103,26 +103,26 @@ public class C5839a {
             extras.setMinimumLatency(max);
         } else if (max > 0) {
             extras.setMinimumLatency(max);
-        } else if (!pVar.f24156q) {
+        } else if (!pVar.f24159q) {
             extras.setImportantWhileForeground(true);
         }
-        if (i2 >= 24 && bVar.m28391e()) {
-            for (C4225c.C4226a aVar : bVar.m28395a().m28375b()) {
-                extras.addTriggerContentUri(m21958b(aVar));
+        if (i2 >= 24 && bVar.m28393e()) {
+            for (C4225c.C4226a aVar : bVar.m28397a().m28377b()) {
+                extras.addTriggerContentUri(m21959b(aVar));
             }
-            extras.setTriggerContentUpdateDelay(bVar.m28393c());
-            extras.setTriggerContentMaxDelay(bVar.m28392d());
+            extras.setTriggerContentUpdateDelay(bVar.m28395c());
+            extras.setTriggerContentMaxDelay(bVar.m28394d());
         }
         extras.setPersisted(false);
         if (Build.VERSION.SDK_INT >= 26) {
-            extras.setRequiresBatteryNotLow(bVar.m28390f());
-            extras.setRequiresStorageNotLow(bVar.m28387i());
+            extras.setRequiresBatteryNotLow(bVar.m28392f());
+            extras.setRequiresStorageNotLow(bVar.m28389i());
         }
-        boolean z2 = pVar.f24150k > 0;
+        boolean z2 = pVar.f24153k > 0;
         if (max > 0) {
             z = true;
         }
-        if (C10326a.m5418c() && pVar.f24156q && !z2 && !z) {
+        if (C10326a.m5418c() && pVar.f24159q && !z2 && !z) {
             extras.setExpedited(true);
         }
         return extras.build();

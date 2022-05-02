@@ -53,9 +53,9 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
     public boolean f10196x0;
 
     public interface AbstractC3035a {
-        boolean mo31464a();
+        boolean mo31466a();
 
-        boolean mo31463b(C3034s5 s5Var, TdApi.Chat chat);
+        boolean mo31465b(C3034s5 s5Var, TdApi.Chat chat);
     }
 
     public static class C3036b extends RecyclerView.AbstractC0886d0 {
@@ -63,15 +63,15 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
             super(view);
         }
 
-        public void m31997O() {
-            if (m39332n() == 0) {
-                ((C4022o) this.f3479a).m29285B0();
+        public void m32000O() {
+            if (m39335n() == 0) {
+                ((C4022o) this.f3479a).m29287B0();
             }
         }
 
-        public void m31996P() {
-            if (m39332n() == 0) {
-                ((C4022o) this.f3479a).m29283F0();
+        public void m31999P() {
+            if (m39335n() == 0) {
+                ((C4022o) this.f3479a).m29285F0();
             }
         }
     }
@@ -103,19 +103,19 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
         }
 
         public void mo6146Q(C3036b bVar, int i) {
-            int n = bVar.m39332n();
+            int n = bVar.m39335n();
             if (n == 0) {
                 ((C4022o) bVar.f3479a).setUser((C4618d7) this.f10198N.f10186n0.get(i - 1));
             } else if (n == 1) {
-                ((C7030t1) bVar.f3479a).m18058E1(C4403w.m27836q2(R.string.xMembers, this.f10198N.f10186n0.size()));
+                ((C7030t1) bVar.f3479a).m18058E1(C4403w.m27838q2(R.string.xMembers, this.f10198N.f10186n0.size()));
             }
         }
 
         public C3036b mo6145S(ViewGroup viewGroup, int i) {
             if (i == 0) {
-                C4022o oVar = new C4022o(this.f10197M, this.f10198N.f30167b);
-                oVar.setOffsetLeft(C1357a0.m37541i(22.0f));
-                C1399s0.m37193a0(oVar);
+                C4022o oVar = new C4022o(this.f10197M, this.f10198N.f30170b);
+                oVar.setOffsetLeft(C1357a0.m37544i(22.0f));
+                C1399s0.m37196a0(oVar);
                 C10189d.m5797g(oVar);
                 oVar.setOnClickListener(this);
                 return new C3036b(oVar);
@@ -126,23 +126,23 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
                     return null;
                 }
                 View view = new View(this.f10197M);
-                view.setLayoutParams(new RecyclerView.LayoutParams(-1, C1357a0.m37541i(11.0f)));
+                view.setLayoutParams(new RecyclerView.LayoutParams(-1, C1357a0.m37544i(11.0f)));
                 return new C3036b(view);
             }
         }
 
         public void mo6144V(C3036b bVar) {
-            bVar.m31997O();
+            bVar.m32000O();
         }
 
         public void mo6143W(C3036b bVar) {
-            bVar.m31996P();
+            bVar.m31999P();
         }
 
         @Override
         public void onClick(View view) {
             if (view != null && (view instanceof C4022o)) {
-                this.f10198N.m32005df(((C4022o) view).getUser());
+                this.f10198N.m32008df(((C4022o) view).getUser());
             }
         }
     }
@@ -151,29 +151,29 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
         super(context, q6Var);
     }
 
-    public void m32009Ze(TdApi.Object object, TdApi.Object object2) {
-        this.f30167b.m2392ja().mo255t2(object2);
+    public void m32012Ze(TdApi.Object object, TdApi.Object object2) {
+        this.f30170b.m2392ja().mo255t2(object2);
         mo255t2(object);
     }
 
-    public void m32008af(final TdApi.Object object) {
+    public void m32011af(final TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
             mo255t2(object);
         } else if (constructor == -1601123095) {
-            this.f30167b.m2270r4().m14783o(new TdApi.AddChatMembers(((TdApi.Chat) object).f25367id, this.f10193u0), new Client.AbstractC7865g() {
+            this.f30170b.m2270r4().m14783o(new TdApi.AddChatMembers(((TdApi.Chat) object).f25370id, this.f10193u0), new Client.AbstractC7865g() {
                 @Override
                 public final void mo255t2(TdApi.Object object2) {
-                    C3034s5.this.m32009Ze(object, object2);
+                    C3034s5.this.m32012Ze(object, object2);
                 }
             });
         }
     }
 
-    public void m32007bf(TdApi.Object object, long j) {
+    public void m32010bf(TdApi.Object object, long j) {
         AbstractC3035a aVar = this.f10195w0;
-        if (aVar == null || !aVar.mo31463b(this, (TdApi.Chat) object)) {
-            this.f30167b.m2485dd().m3569h7(this, j, null);
+        if (aVar == null || !aVar.mo31465b(this, (TdApi.Chat) object)) {
+            this.f30170b.m2485dd().m3569h7(this, j, null);
         }
     }
 
@@ -182,19 +182,19 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
         long s;
         int Ye;
         if (i != R.id.btn_deleteMember) {
-            this.f30167b.m2485dd().m3463s3(this.f30165a, i, null, this.f10187o0);
+            this.f30170b.m2485dd().m3463s3(this.f30168a, i, null, this.f10187o0);
         } else {
             C4618d7 d7Var = this.f10190r0;
-            if (!(d7Var == null || (Ye = m32010Ye((s = d7Var.m26869s()))) == -1)) {
-                this.f30167b.m2480e2().m1595s2(s, this);
+            if (!(d7Var == null || (Ye = m32013Ye((s = d7Var.m26871s()))) == -1)) {
+                this.f30170b.m2480e2().m1595s2(s, this);
                 this.f10186n0.remove(Ye);
                 if (this.f10186n0.isEmpty()) {
-                    this.f10188p0.m39307N(0, 3);
-                    C1408x.m37088c(this.f10187o0.getInputView());
+                    this.f10188p0.m39310N(0, 3);
+                    C1408x.m37091c(this.f10187o0.getInputView());
                     m9298Zb();
                 } else {
-                    this.f10188p0.m39306O(Ye + 1);
-                    this.f10188p0.m39312I(this.f10186n0.size() + 1);
+                    this.f10188p0.m39309O(Ye + 1);
+                    this.f10188p0.m39315I(this.f10186n0.size() + 1);
                 }
             }
         }
@@ -212,7 +212,7 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
     }
 
     @Override
-    public void mo9774E0(boolean z) {
+    public void mo9773E0(boolean z) {
         this.f10196x0 = z;
     }
 
@@ -226,13 +226,13 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
         super.mo8867Ia();
         View$OnClickListenerC3037c cVar = this.f10188p0;
         if (cVar != null) {
-            cVar.m39313H();
+            cVar.m39316H();
         }
     }
 
     @Override
     public void mo1349J3(long j, TdApi.UserStatus userStatus, boolean z) {
-        m31998kf(j, userStatus);
+        m32001kf(j, userStatus);
     }
 
     @Override
@@ -242,28 +242,28 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
 
     @Override
     public int mo8865M9() {
-        return C4896n.m24481b(false);
+        return C4896n.m24482b(false);
     }
 
     @Override
-    public void mo23795O4() {
+    public void mo23796O4() {
         this.f10191s0 = false;
         this.f10187o0.setInputEnabled(true);
     }
 
     @Override
     public void mo1348P1(final TdApi.User user) {
-        this.f30167b.m2485dd().post(new Runnable() {
+        this.f30170b.m2485dd().post(new Runnable() {
             @Override
             public final void run() {
-                C3034s5.this.m32006cf(user);
+                C3034s5.this.m32009cf(user);
             }
         });
     }
 
     @Override
     public boolean mo492Q() {
-        return C5115g0.m23935a(this);
+        return C5115g0.m23936a(this);
     }
 
     @Override
@@ -271,11 +271,11 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
         return R.id.controller_newGroup;
     }
 
-    public void m32012We() {
+    public void m32015We() {
         if (!this.f10191s0) {
             boolean z = false;
             if (!this.f10196x0) {
-                C1379j0.m37292y0(R.string.GroupEnterValidName, 0);
+                C1379j0.m37295y0(R.string.GroupEnterValidName, 0);
                 return;
             }
             this.f10187o0.setInputEnabled(false);
@@ -287,31 +287,31 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
             int i = 0;
             while (it.hasNext()) {
                 i++;
-                this.f10193u0[i] = it.next().m26869s();
+                this.f10193u0[i] = it.next().m26871s();
             }
-            if (this.f10193u0.length > this.f30167b.m2512c2()) {
+            if (this.f10193u0.length > this.f30170b.m2512c2()) {
                 z = true;
             }
             this.f10194v0 = z;
             if (z) {
-                this.f30167b.m2270r4().m14783o(new TdApi.CreateNewSupergroupChat(input, false, null, null, false), this);
+                this.f30170b.m2270r4().m14783o(new TdApi.CreateNewSupergroupChat(input, false, null, null, false), this);
                 return;
             }
             AbstractC3035a aVar = this.f10195w0;
-            if (aVar == null || !aVar.mo31464a()) {
-                this.f30167b.m2270r4().m14783o(new TdApi.CreateNewBasicGroupChat(this.f10193u0, input), this);
+            if (aVar == null || !aVar.mo31466a()) {
+                this.f30170b.m2270r4().m14783o(new TdApi.CreateNewBasicGroupChat(this.f10193u0, input), this);
             } else {
-                this.f30167b.m2270r4().m14783o(new TdApi.CreateNewSupergroupChat(input, false, null, null, false), new Client.AbstractC7865g() {
+                this.f30170b.m2270r4().m14783o(new TdApi.CreateNewSupergroupChat(input, false, null, null, false), new Client.AbstractC7865g() {
                     @Override
                     public final void mo255t2(TdApi.Object object) {
-                        C3034s5.this.m32008af(object);
+                        C3034s5.this.m32011af(object);
                     }
                 });
             }
         }
     }
 
-    public final long[] m32011Xe() {
+    public final long[] m32014Xe() {
         ArrayList<C4618d7> arrayList = this.f10186n0;
         if (arrayList == null || arrayList.isEmpty()) {
             return C5062b.f17069b;
@@ -321,18 +321,18 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
         Iterator<C4618d7> it = this.f10186n0.iterator();
         while (it.hasNext()) {
             i++;
-            jArr[i] = it.next().m26869s();
+            jArr[i] = it.next().m26871s();
         }
         return jArr;
     }
 
-    public final int m32010Ye(long j) {
+    public final int m32013Ye(long j) {
         ArrayList<C4618d7> arrayList = this.f10186n0;
         if (arrayList != null && !arrayList.isEmpty()) {
             int i = 0;
             Iterator<C4618d7> it = this.f10186n0.iterator();
             while (it.hasNext()) {
-                if (it.next().m26869s() == j) {
+                if (it.next().m26871s() == j) {
                     return i;
                 }
                 i++;
@@ -344,63 +344,63 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
     @Override
     public void mo417Z8() {
         super.mo417Z8();
-        C1399s0.m37162q(this.f10189q0);
-        m32001hf();
+        C1399s0.m37165q(this.f10189q0);
+        m32004hf();
     }
 
     @Override
     public Object mo491b2(int i) {
-        return C5115g0.m23934b(this, i);
+        return C5115g0.m23935b(this, i);
     }
 
-    public final void m32005df(C4618d7 d7Var) {
+    public final void m32008df(C4618d7 d7Var) {
         this.f10190r0 = d7Var;
-        m9268de(null, new int[]{R.id.btn_deleteMember, R.id.btn_cancel}, new String[]{C4403w.m27869i1(R.string.GroupDontAdd), C4403w.m27869i1(R.string.Cancel)}, new int[]{2, 1}, new int[]{R.drawable.baseline_remove_circle_24, R.drawable.baseline_cancel_24});
+        m9268de(null, new int[]{R.id.btn_deleteMember, R.id.btn_cancel}, new String[]{C4403w.m27871i1(R.string.GroupDontAdd), C4403w.m27871i1(R.string.Cancel)}, new int[]{2, 1}, new int[]{R.drawable.baseline_remove_circle_24, R.drawable.baseline_cancel_24});
     }
 
-    public void m32004ef(AbstractC3035a aVar) {
+    public void m32007ef(AbstractC3035a aVar) {
         this.f10195w0 = aVar;
     }
 
-    public void m32003ff(ArrayList<C4618d7> arrayList) {
+    public void m32006ff(ArrayList<C4618d7> arrayList) {
         this.f10186n0 = arrayList;
     }
 
-    public final void m32002gf() {
-        this.f30167b.m2480e2().m1642g2(m32011Xe(), this);
+    public final void m32005gf() {
+        this.f30170b.m2480e2().m1642g2(m32014Xe(), this);
     }
 
-    public final void m32001hf() {
-        this.f30167b.m2480e2().m1591t2(m32011Xe(), this);
+    public final void m32004hf() {
+        this.f30170b.m2480e2().m1591t2(m32014Xe(), this);
     }
 
-    public final void m32006cf(TdApi.User user) {
-        int Ye = m32010Ye(user.f25439id);
+    public final void m32009cf(TdApi.User user) {
+        int Ye = m32013Ye(user.f25442id);
         if (Ye != 0) {
-            this.f10186n0.get(Ye).m26889C(user, 0);
-            m31999jf(Ye + 1, false);
+            this.f10186n0.get(Ye).m26891C(user, 0);
+            m32002jf(Ye + 1, false);
         }
     }
 
-    public final void m31999jf(int i, boolean z) {
-        View C = this.f10189q0.getLayoutManager().mo39262C(i);
+    public final void m32002jf(int i, boolean z) {
+        View C = this.f10189q0.getLayoutManager().mo39265C(i);
         if (C instanceof C4022o) {
             if (z) {
-                ((C4022o) C).m29276c1();
+                ((C4022o) C).m29278c1();
             } else {
-                ((C4022o) C).m29279Q0();
+                ((C4022o) C).m29281Q0();
             }
             C.invalidate();
             return;
         }
-        this.f10188p0.m39312I(i);
+        this.f10188p0.m39315I(i);
     }
 
-    public final void m31998kf(long j, TdApi.UserStatus userStatus) {
-        int Ye = m32010Ye(j);
+    public final void m32001kf(long j, TdApi.UserStatus userStatus) {
+        int Ye = m32013Ye(j);
         if (Ye != 0) {
-            this.f10186n0.get(Ye).m26890B(userStatus);
-            m31999jf(Ye + 1, true);
+            this.f10186n0.get(Ye).m26892B(userStatus);
+            m32002jf(Ye + 1, true);
         }
     }
 
@@ -408,7 +408,7 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
     public View mo403oc(Context context) {
         C9262p0 p0Var = new C9262p0(context, this);
         this.f10187o0 = p0Var;
-        p0Var.m9776G1(R.string.GroupName, Log.TAG_LUX);
+        p0Var.m9775G1(R.string.GroupName, Log.TAG_LUX);
         this.f10187o0.setImeOptions(6);
         this.f10187o0.setReadyCallback(this);
         m9446Ed(this.f10187o0.getInputView());
@@ -416,7 +416,7 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
         C10192g.m5782i(frameLayoutFix, R.id.theme_color_filling, this);
         frameLayoutFix.setLayoutParams(FrameLayoutFix.m18008s1(-1, -1));
         FrameLayout.LayoutParams s1 = FrameLayoutFix.m18008s1(-1, -1);
-        s1.topMargin = C4896n.m24477f(false);
+        s1.topMargin = C4896n.m24478f(false);
         RecyclerView recyclerView = new RecyclerView(context);
         this.f10189q0 = recyclerView;
         recyclerView.setLayoutManager(new LinearLayoutManager(context, 1, false));
@@ -426,13 +426,13 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
         recyclerView2.setAdapter(cVar);
         this.f10189q0.setLayoutParams(s1);
         frameLayoutFix.addView(this.f10189q0);
-        m32002gf();
+        m32005gf();
         return frameLayoutFix;
     }
 
     @Override
     public void mo9174rc() {
-        m32012We();
+        m32015We();
     }
 
     @Override
@@ -441,14 +441,14 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
         if (!(longArray == null || longArray.length == 0)) {
             ArrayList<C4618d7> arrayList = null;
             for (long j : longArray) {
-                TdApi.User v2 = this.f30167b.m2480e2().m1583v2(j);
+                TdApi.User v2 = this.f30170b.m2480e2().m1583v2(j);
                 if (v2 == null) {
                     return false;
                 }
                 if (arrayList == null) {
                     arrayList = new ArrayList<>(longArray.length);
                 }
-                arrayList.add(new C4618d7(this.f30167b, v2));
+                arrayList.add(new C4618d7(this.f30170b, v2));
             }
             if (arrayList != null) {
                 super.mo9165sd(bundle, str);
@@ -460,9 +460,9 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
     }
 
     @Override
-    public void mo10182t(int i, int i2, Intent intent) {
+    public void mo10181t(int i, int i2, Intent intent) {
         if (i2 == -1) {
-            this.f30167b.m2485dd().m3483q3(i, intent, this.f10187o0);
+            this.f30170b.m2485dd().m3483q3(i, intent, this.f10187o0);
         }
     }
 
@@ -470,25 +470,25 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
     public void mo255t2(final TdApi.Object object) {
         int constructor = object.getConstructor();
         if (constructor == -1679978726) {
-            C1379j0.m37302t0(object);
-            C1379j0.m37365E0(this);
+            C1379j0.m37305t0(object);
+            C1379j0.m37368E0(this);
         } else if (constructor == -1601123095) {
-            final long P0 = C4779t2.m25625P0(object);
+            final long P0 = C4779t2.m25626P0(object);
             if (this.f10194v0) {
-                this.f30167b.m2270r4().m14783o(new TdApi.AddChatMembers(P0, this.f10193u0), this);
+                this.f30170b.m2270r4().m14783o(new TdApi.AddChatMembers(P0, this.f10193u0), this);
             }
             if (this.f10192t0 != null) {
-                Client r4 = this.f30167b.m2270r4();
+                Client r4 = this.f30170b.m2270r4();
                 String str = this.f10192t0;
-                r4.m14783o(new TdApi.SetChatPhoto(P0, new TdApi.InputChatPhotoStatic(new TdApi.InputFileGenerated(str, C5337d.m23202j(str), 0))), this);
+                r4.m14783o(new TdApi.SetChatPhoto(P0, new TdApi.InputChatPhotoStatic(new TdApi.InputFileGenerated(str, C5337d.m23203j(str), 0))), this);
             }
-            this.f30167b.m2485dd().post(new Runnable() {
+            this.f30170b.m2485dd().post(new Runnable() {
                 @Override
                 public final void run() {
-                    C3034s5.this.m32007bf(object, P0);
+                    C3034s5.this.m32010bf(object, P0);
                 }
             });
-            C1379j0.m37365E0(this);
+            C1379j0.m37368E0(this);
         }
     }
 
@@ -499,7 +499,7 @@ public class C3034s5 extends AbstractC9323v4<Void> implements C9262p0.AbstractC9
 
     @Override
     public boolean mo9122yd(Bundle bundle, String str) {
-        long[] Xe = m32011Xe();
+        long[] Xe = m32014Xe();
         if (Xe == null || Xe.length <= 0) {
             return false;
         }

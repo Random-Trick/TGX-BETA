@@ -9,9 +9,9 @@ public final class C1261g0 extends AbstractC0211e<AbstractC1285u, C1290z> {
     }
 
     @Override
-    public final C1290z mo29613a(AbstractC1285u uVar) {
+    public final C1290z mo29615a(AbstractC1285u uVar) {
         AbstractC1285u uVar2 = uVar;
-        C0218i c = C0218i.m42077c();
-        return new C1290z(c.m42078b(), (C0223n) c.m42079a(C0223n.class), new C1286v(C0218i.m42077c().m42078b(), uVar2), uVar2.mo37793b());
+        C0218i c = C0218i.m42080c();
+        return new C1290z(c.m42081b(), (C0223n) c.m42082a(C0223n.class), new C1286v(C0218i.m42080c().m42081b(), uVar2), uVar2.mo37796b());
     }
 }

@@ -14,5 +14,5 @@ public interface AbstractC2034b extends Closeable, AbstractC0845f {
     @AbstractC0857p(AbstractC0840d.EnumC0842b.ON_DESTROY)
     void close();
 
-    AbstractC6775l<List<C2033a>> mo30125n0(@RecentlyNonNull C4164a aVar);
+    AbstractC6775l<List<C2033a>> mo30127n0(@RecentlyNonNull C4164a aVar);
 }

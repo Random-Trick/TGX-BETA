@@ -38,7 +38,7 @@ public final class C6063f extends AbstractC6069i {
             return false;
         }
         C6063f fVar = (C6063f) obj;
-        return C1216l0.m37982c(this.f19281b, fVar.f19281b) && C1216l0.m37982c(this.f19282c, fVar.f19282c) && C1216l0.m37982c(this.f19279M, fVar.f19279M) && Arrays.equals(this.f19280N, fVar.f19280N);
+        return C1216l0.m37985c(this.f19281b, fVar.f19281b) && C1216l0.m37985c(this.f19282c, fVar.f19282c) && C1216l0.m37985c(this.f19279M, fVar.f19279M) && Arrays.equals(this.f19280N, fVar.f19280N);
     }
 
     public int hashCode() {
@@ -81,9 +81,9 @@ public final class C6063f extends AbstractC6069i {
 
     public C6063f(Parcel parcel) {
         super("GEOB");
-        this.f19281b = (String) C1216l0.m37968j(parcel.readString());
-        this.f19282c = (String) C1216l0.m37968j(parcel.readString());
-        this.f19279M = (String) C1216l0.m37968j(parcel.readString());
-        this.f19280N = (byte[]) C1216l0.m37968j(parcel.createByteArray());
+        this.f19281b = (String) C1216l0.m37971j(parcel.readString());
+        this.f19282c = (String) C1216l0.m37971j(parcel.readString());
+        this.f19279M = (String) C1216l0.m37971j(parcel.readString());
+        this.f19280N = (byte[]) C1216l0.m37971j(parcel.createByteArray());
     }
 }

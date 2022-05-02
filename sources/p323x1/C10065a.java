@@ -1,12 +1,12 @@
 package p323x1;
 
 public final class C10065a implements AbstractC10073e {
-    public final String f32731a;
-    public final Object[] f32732b;
+    public final String f32734a;
+    public final Object[] f32735b;
 
     public C10065a(String str, Object[] objArr) {
-        this.f32731a = str;
-        this.f32732b = objArr;
+        this.f32734a = str;
+        this.f32735b = objArr;
     }
 
     public static void m6085a(AbstractC10072d dVar, int i, Object obj) {
@@ -49,12 +49,12 @@ public final class C10065a implements AbstractC10073e {
 
     @Override
     public void mo6071m(AbstractC10072d dVar) {
-        m6084b(dVar, this.f32732b);
+        m6084b(dVar, this.f32735b);
     }
 
     @Override
     public String mo6070t() {
-        return this.f32731a;
+        return this.f32734a;
     }
 
     public C10065a(String str) {

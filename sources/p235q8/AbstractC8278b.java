@@ -5,7 +5,7 @@ import p049d9.C3915a;
 import p191n8.AbstractC7307g;
 
 public interface AbstractC8278b extends AbstractC7307g {
-    List<C3915a> mo12963c0();
+    List<C3915a> mo12962c0();
 
-    boolean mo12962q0();
+    boolean mo12961q0();
 }

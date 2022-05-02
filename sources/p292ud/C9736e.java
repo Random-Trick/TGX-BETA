@@ -22,23 +22,23 @@ import p174m3.AbstractC6689s;
 import p199o3.C7602e;
 
 public class C9736e implements C4868i.AbstractC4882n, SensorEventListener, C1379j0.AbstractC1380a {
-    public boolean f31673M;
-    public boolean f31675O;
-    public boolean f31676P;
-    public boolean f31677Q;
-    public Sensor f31678R;
-    public PowerManager.WakeLock f31679S;
-    public boolean f31680T;
-    public boolean f31682V;
-    public boolean f31683W;
-    public boolean f31684X;
-    public boolean f31685Y;
-    public boolean f31686Z;
-    public final C9773p0 f31687a;
-    public final AbstractC9738b f31688b;
-    public TdApi.Message f31689c;
-    public int f31674N = 0;
-    public BroadcastReceiver f31681U = new C9737a();
+    public boolean f31676M;
+    public boolean f31678O;
+    public boolean f31679P;
+    public boolean f31680Q;
+    public Sensor f31681R;
+    public PowerManager.WakeLock f31682S;
+    public boolean f31683T;
+    public boolean f31685V;
+    public boolean f31686W;
+    public boolean f31687X;
+    public boolean f31688Y;
+    public boolean f31689Z;
+    public final C9773p0 f31690a;
+    public final AbstractC9738b f31691b;
+    public TdApi.Message f31692c;
+    public int f31677N = 0;
+    public BroadcastReceiver f31684U = new C9737a();
 
     public class C9737a extends BroadcastReceiver {
         public C9737a() {
@@ -55,22 +55,22 @@ public class C9736e implements C4868i.AbstractC4882n, SensorEventListener, C1379
     }
 
     public C9736e(C9773p0 p0Var, AbstractC9738b bVar) {
-        this.f31687a = p0Var;
-        this.f31688b = bVar;
+        this.f31690a = p0Var;
+        this.f31691b = bVar;
     }
 
     @Override
     public void mo7316a(boolean z, int i) {
-        if (this.f31673M == z) {
+        if (this.f31676M == z) {
             m7306l(i);
         }
     }
 
     public final void m7314c() {
-        boolean z = this.f31689c != null && (this.f31682V || this.f31683W);
-        if (this.f31685Y != z) {
-            this.f31685Y = z;
-            AudioManager audioManager = (AudioManager) C1379j0.m37315n().getSystemService("audio");
+        boolean z = this.f31692c != null && (this.f31685V || this.f31686W);
+        if (this.f31688Y != z) {
+            this.f31688Y = z;
+            AudioManager audioManager = (AudioManager) C1379j0.m37318n().getSystemService("audio");
             if (audioManager != null) {
                 if (z) {
                     audioManager.setSpeakerphoneOn(false);
@@ -79,13 +79,13 @@ public class C9736e implements C4868i.AbstractC4882n, SensorEventListener, C1379
                     audioManager.setMode(0);
                 }
             }
-            this.f31688b.mo7060e();
+            this.f31691b.mo7060e();
         }
     }
 
     public final void m7313d() {
-        boolean z = this.f31675O && (!this.f31677Q || this.f31684X) && !this.f31680T;
-        if (this.f31676P != z) {
+        boolean z = this.f31678O && (!this.f31680Q || this.f31687X) && !this.f31683T;
+        if (this.f31679P != z) {
             if (z) {
                 if (!m7307k()) {
                     return;
@@ -93,24 +93,24 @@ public class C9736e implements C4868i.AbstractC4882n, SensorEventListener, C1379
             } else if (!m7303o()) {
                 return;
             }
-            this.f31676P = z;
+            this.f31679P = z;
         }
     }
 
     public final void m7312e() {
-        boolean z = this.f31689c != null && this.f31683W && !this.f31680T;
-        if (this.f31684X != z) {
-            this.f31684X = z;
-            AbstractView$OnTouchListenerC7889a E = C1379j0.m37366E();
+        boolean z = this.f31692c != null && this.f31686W && !this.f31683T;
+        if (this.f31687X != z) {
+            this.f31687X = z;
+            AbstractView$OnTouchListenerC7889a E = C1379j0.m37369E();
             if (E != null) {
-                E.m14464m3(Log.TAG_YOUTUBE, z);
+                E.m14463m3(Log.TAG_YOUTUBE, z);
             }
             if (z) {
                 m7314c();
-                this.f31687a.m7117B0(this.f31689c);
+                this.f31690a.m7117B0(this.f31692c);
             } else {
-                this.f31687a.m7119A0(Log.TAG_GIF_LOADER);
-                if (!m7306l(C4868i.m24726c2().m24891F0(this.f31673M))) {
+                this.f31690a.m7119A0(Log.TAG_GIF_LOADER);
+                if (!m7306l(C4868i.m24727c2().m24892F0(this.f31676M))) {
                     m7314c();
                 }
             }
@@ -119,65 +119,65 @@ public class C9736e implements C4868i.AbstractC4882n, SensorEventListener, C1379
     }
 
     public final void m7311f() {
-        AudioManager audioManager = (AudioManager) C1379j0.m37309q().getSystemService("audio");
+        AudioManager audioManager = (AudioManager) C1379j0.m37312q().getSystemService("audio");
         boolean z = audioManager != null && C7389v0.m16752B1(audioManager);
-        if (this.f31680T != z) {
-            this.f31680T = z;
+        if (this.f31683T != z) {
+            this.f31683T = z;
             m7312e();
             m7313d();
         }
     }
 
     public final boolean m7310g() {
-        TdApi.Message message = this.f31689c;
+        TdApi.Message message = this.f31692c;
         return message != null && message.content.getConstructor() == 963323014;
     }
 
     @Override
     public void mo1641h(int i) {
         boolean z = i != 0;
-        if (this.f31677Q != z) {
-            this.f31677Q = z;
+        if (this.f31680Q != z) {
+            this.f31680Q = z;
             m7313d();
         }
     }
 
     public void m7309i(AbstractC6689s sVar, int i) {
         if (m7308j()) {
-            sVar.mo19391B(new C7602e.C7604b().m15530c(1).m15528e(2).m15532a(), false);
+            sVar.mo19392B(new C7602e.C7604b().m15530c(1).m15528e(2).m15532a(), false);
         } else {
-            sVar.mo19391B(new C7602e.C7604b().m15530c(i).m15528e(1).m15532a(), false);
+            sVar.mo19392B(new C7602e.C7604b().m15530c(i).m15528e(1).m15532a(), false);
         }
     }
 
     public boolean m7308j() {
-        return this.f31685Y;
+        return this.f31688Y;
     }
 
     public final boolean m7307k() {
         PowerManager powerManager;
-        SensorManager sensorManager = (SensorManager) C1379j0.m37309q().getSystemService("sensor");
+        SensorManager sensorManager = (SensorManager) C1379j0.m37312q().getSystemService("sensor");
         if (sensorManager == null) {
             return false;
         }
-        if (this.f31678R == null) {
-            this.f31678R = sensorManager.getDefaultSensor(8);
+        if (this.f31681R == null) {
+            this.f31681R = sensorManager.getDefaultSensor(8);
         }
-        if (this.f31678R == null) {
+        if (this.f31681R == null) {
             return false;
         }
-        if (this.f31679S == null && (powerManager = (PowerManager) C1379j0.m37309q().getSystemService("power")) != null) {
+        if (this.f31682S == null && (powerManager = (PowerManager) C1379j0.m37312q().getSystemService("power")) != null) {
             try {
-                this.f31679S = powerManager.newWakeLock(32, "tgx:proximity");
+                this.f31682S = powerManager.newWakeLock(32, "tgx:proximity");
             } catch (Throwable th) {
                 Log.m14725e("Unable to create proximity wake lock", th, new Object[0]);
             }
         }
         try {
-            sensorManager.registerListener(this, this.f31678R, 3);
-            AudioManager audioManager = (AudioManager) C1379j0.m37309q().getSystemService("audio");
+            sensorManager.registerListener(this, this.f31681R, 3);
+            AudioManager audioManager = (AudioManager) C1379j0.m37312q().getSystemService("audio");
             if (audioManager != null) {
-                this.f31680T = C7389v0.m16752B1(audioManager);
+                this.f31683T = C7389v0.m16752B1(audioManager);
                 BluetoothAdapter defaultAdapter = audioManager.isBluetoothScoAvailableOffCall() ? BluetoothAdapter.getDefaultAdapter() : null;
                 IntentFilter intentFilter = new IntentFilter();
                 intentFilter.addAction("android.net.conn.CONNECTIVITY_CHANGE");
@@ -191,14 +191,14 @@ public class C9736e implements C4868i.AbstractC4882n, SensorEventListener, C1379
                     intentFilter.addAction("android.media.ACTION_SCO_AUDIO_STATE_UPDATED");
                 }
                 try {
-                    C1379j0.m37315n().registerReceiver(this.f31681U, intentFilter);
+                    C1379j0.m37318n().registerReceiver(this.f31684U, intentFilter);
                     return true;
                 } catch (Throwable th2) {
                     Log.m14725e("Unable to register headset broadcast receiver", th2, new Object[0]);
                     return true;
                 }
             } else {
-                this.f31680T = false;
+                this.f31683T = false;
                 return true;
             }
         } catch (Throwable th3) {
@@ -210,10 +210,10 @@ public class C9736e implements C4868i.AbstractC4882n, SensorEventListener, C1379
     public final boolean m7306l(int i) {
         boolean z;
         boolean z2 = false;
-        if (this.f31674N == i) {
+        if (this.f31677N == i) {
             return false;
         }
-        this.f31674N = i;
+        this.f31677N = i;
         if (i == 1) {
             z = true;
         } else if (i != 2) {
@@ -222,46 +222,46 @@ public class C9736e implements C4868i.AbstractC4882n, SensorEventListener, C1379
             z = true;
             z2 = true;
         }
-        this.f31682V = z2;
+        this.f31685V = z2;
         m7314c();
-        this.f31675O = z;
+        this.f31678O = z;
         m7313d();
         return true;
     }
 
     public void m7305m(TdApi.Message message) {
         boolean z = true;
-        boolean z2 = this.f31689c != null;
+        boolean z2 = this.f31692c != null;
         boolean z3 = message != null;
-        this.f31689c = message;
+        this.f31692c = message;
         if (z2 != z3) {
             if (z3) {
-                C4868i.m24726c2().m24601s(this);
-                if (C1379j0.m37364F() == 0) {
+                C4868i.m24727c2().m24602s(this);
+                if (C1379j0.m37367F() == 0) {
                     z = false;
                 }
-                this.f31677Q = z;
-                C1379j0.m37335d(this);
-                this.f31673M = m7310g();
-                m7306l(C4868i.m24726c2().m24891F0(this.f31673M));
+                this.f31680Q = z;
+                C1379j0.m37338d(this);
+                this.f31676M = m7310g();
+                m7306l(C4868i.m24727c2().m24892F0(this.f31676M));
             } else {
-                C4868i.m24726c2().m24825O3(this);
-                C1379j0.m37328g0(this);
+                C4868i.m24727c2().m24826O3(this);
+                C1379j0.m37331g0(this);
                 m7306l(0);
             }
             m7312e();
         } else if (z3) {
-            this.f31673M = m7310g();
-            int F0 = C4868i.m24726c2().m24891F0(this.f31673M);
-            if (!this.f31684X || F0 != 0) {
+            this.f31676M = m7310g();
+            int F0 = C4868i.m24727c2().m24892F0(this.f31676M);
+            if (!this.f31687X || F0 != 0) {
                 m7306l(F0);
             }
         }
     }
 
     public final void m7304n(boolean z) {
-        PowerManager.WakeLock wakeLock = this.f31679S;
-        if (wakeLock != null && this.f31686Z != z) {
+        PowerManager.WakeLock wakeLock = this.f31682S;
+        if (wakeLock != null && this.f31689Z != z) {
             boolean z2 = true;
             try {
                 if (z) {
@@ -274,21 +274,21 @@ public class C9736e implements C4868i.AbstractC4882n, SensorEventListener, C1379
                 z2 = false;
             }
             if (z2) {
-                this.f31686Z = z;
+                this.f31689Z = z;
             }
         }
     }
 
     public final boolean m7303o() {
-        SensorManager sensorManager = (SensorManager) C1379j0.m37309q().getSystemService("sensor");
-        if (sensorManager == null || this.f31678R == null) {
+        SensorManager sensorManager = (SensorManager) C1379j0.m37312q().getSystemService("sensor");
+        if (sensorManager == null || this.f31681R == null) {
             return false;
         }
         m7304n(false);
         try {
-            sensorManager.unregisterListener(this, this.f31678R);
+            sensorManager.unregisterListener(this, this.f31681R);
             try {
-                C1379j0.m37315n().unregisterReceiver(this.f31681U);
+                C1379j0.m37318n().unregisterReceiver(this.f31684U);
                 return true;
             } catch (Throwable unused) {
                 Log.m14724e("Unable to unregister receiver", new Object[0]);
@@ -308,14 +308,14 @@ public class C9736e implements C4868i.AbstractC4882n, SensorEventListener, C1379
     public void onSensorChanged(SensorEvent sensorEvent) {
         Sensor sensor;
         Sensor sensor2 = sensorEvent.sensor;
-        if (sensor2 != null && sensor2 == (sensor = this.f31678R)) {
+        if (sensor2 != null && sensor2 == (sensor = this.f31681R)) {
             boolean z = false;
             float f = sensorEvent.values[0];
-            if (this.f31689c != null && f < 5.0f && f < sensor.getMaximumRange()) {
+            if (this.f31692c != null && f < 5.0f && f < sensor.getMaximumRange()) {
                 z = true;
             }
-            if (this.f31683W != z) {
-                this.f31683W = z;
+            if (this.f31686W != z) {
+                this.f31686W = z;
                 m7312e();
             }
         }

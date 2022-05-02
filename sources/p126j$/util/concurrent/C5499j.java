@@ -20,15 +20,15 @@ public class C5499j extends AbstractC5492c implements Set, AbstractC5486b {
     }
 
     @Override
-    public void mo22509a(Consumer consumer) {
+    public void mo22510a(Consumer consumer) {
         Objects.requireNonNull(consumer);
         C5502m[] mVarArr = this.f18010a.f17995a;
         if (mVarArr != null) {
             C5506q qVar = new C5506q(mVarArr, mVarArr.length, 0, mVarArr.length);
             while (true) {
-                C5502m b = qVar.m22521b();
+                C5502m b = qVar.m22522b();
                 if (b != null) {
-                    consumer.mo22128k(b.f18021b);
+                    consumer.mo22129k(b.f18021b);
                 } else {
                     return;
                 }
@@ -47,8 +47,8 @@ public class C5499j extends AbstractC5492c implements Set, AbstractC5486b {
     }
 
     @Override
-    public boolean mo22508b(AbstractC5541w wVar) {
-        return AbstractC5485a.m22566o(this, wVar);
+    public boolean mo22509b(AbstractC5541w wVar) {
+        return AbstractC5485a.m22567o(this, wVar);
     }
 
     @Override
@@ -64,7 +64,7 @@ public class C5499j extends AbstractC5492c implements Set, AbstractC5486b {
 
     @Override
     public void forEach(java.util.function.Consumer consumer) {
-        mo22509a(Consumer.VivifiedWrapper.convert(consumer));
+        mo22510a(Consumer.VivifiedWrapper.convert(consumer));
     }
 
     @Override
@@ -87,7 +87,7 @@ public class C5499j extends AbstractC5492c implements Set, AbstractC5486b {
 
     @Override
     public Stream parallelStream() {
-        return C5685b3.m22312i(AbstractC5485a.m22567k(this));
+        return C5685b3.m22313i(AbstractC5485a.m22568k(this));
     }
 
     @Override
@@ -97,13 +97,13 @@ public class C5499j extends AbstractC5492c implements Set, AbstractC5486b {
 
     @Override
     public boolean removeIf(Predicate predicate) {
-        return AbstractC5485a.m22566o(this, C5520b.m22486v(predicate));
+        return AbstractC5485a.m22567o(this, C5520b.m22487v(predicate));
     }
 
     @Override
     public AbstractC5468G spliterator() {
         ConcurrentHashMap concurrentHashMap = this.f18010a;
-        long m = concurrentHashMap.m22540m();
+        long m = concurrentHashMap.m22541m();
         C5502m[] mVarArr = concurrentHashMap.f17995a;
         int length = mVarArr == null ? 0 : mVarArr.length;
         long j = 0;

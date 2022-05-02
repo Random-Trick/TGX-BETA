@@ -8,9 +8,9 @@ import p306w.C9925c;
 import p336y.AbstractC10227g;
 
 public class C8456d implements AbstractC10227g {
-    public final boolean f27437a;
-    public final int f27438b;
-    public final C9925c f27439c;
+    public final boolean f27440a;
+    public final int f27441b;
+    public final C9925c f27442c;
 
     public C8456d(String str, C8927z zVar) {
         boolean z;
@@ -19,12 +19,12 @@ public class C8456d implements AbstractC10227g {
             i = Integer.parseInt(str);
             z = true;
         } catch (NumberFormatException unused) {
-            C0662u1.m40643k("Camera2CamcorderProfileProvider", "Camera id is not an integer: " + str + ", unable to create CamcorderProfileProvider");
+            C0662u1.m40646k("Camera2CamcorderProfileProvider", "Camera id is not an integer: " + str + ", unable to create CamcorderProfileProvider");
             z = false;
             i = -1;
         }
-        this.f27437a = z;
-        this.f27438b = i;
-        this.f27439c = new C9925c((C9810e) C9812g.m6819a(str, zVar).m5479b(C9810e.class));
+        this.f27440a = z;
+        this.f27441b = i;
+        this.f27442c = new C9925c((C9810e) C9812g.m6819a(str, zVar).m5479b(C9810e.class));
     }
 }

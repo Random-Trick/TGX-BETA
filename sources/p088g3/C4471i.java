@@ -22,15 +22,15 @@ public final class C4471i implements AbstractC3589b<AbstractC4950s> {
         this.f14816d = aVar4;
     }
 
-    public static C4471i m27548a(AbstractC4533a<Context> aVar, AbstractC4533a<AbstractC5179c> aVar2, AbstractC4533a<AbstractC4934g> aVar3, AbstractC4533a<AbstractC6045a> aVar4) {
+    public static C4471i m27550a(AbstractC4533a<Context> aVar, AbstractC4533a<AbstractC5179c> aVar2, AbstractC4533a<AbstractC4934g> aVar3, AbstractC4533a<AbstractC6045a> aVar4) {
         return new C4471i(aVar, aVar2, aVar3, aVar4);
     }
 
-    public static AbstractC4950s m27546c(Context context, AbstractC5179c cVar, AbstractC4934g gVar, AbstractC6045a aVar) {
-        return (AbstractC4950s) C3591d.m29915c(AbstractC4470h.m27549a(context, cVar, gVar, aVar), "Cannot return null from a non-@Nullable @Provides method");
+    public static AbstractC4950s m27548c(Context context, AbstractC5179c cVar, AbstractC4934g gVar, AbstractC6045a aVar) {
+        return (AbstractC4950s) C3591d.m29917c(AbstractC4470h.m27551a(context, cVar, gVar, aVar), "Cannot return null from a non-@Nullable @Provides method");
     }
 
     public AbstractC4950s get() {
-        return m27546c(this.f14813a.get(), this.f14814b.get(), this.f14815c.get(), this.f14816d.get());
+        return m27548c(this.f14813a.get(), this.f14814b.get(), this.f14815c.get(), this.f14816d.get());
     }
 }

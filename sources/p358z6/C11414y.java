@@ -29,9 +29,9 @@ public final class C11414y {
     }
 
     public static abstract class EnumC11416b extends Enum<EnumC11416b> implements AbstractC10430f<Map.Entry<?, ?>, Object> {
-        public static final EnumC11416b f36371a;
-        public static final EnumC11416b f36372b;
-        public static final EnumC11416b[] f36373c;
+        public static final EnumC11416b f36374a;
+        public static final EnumC11416b f36375b;
+        public static final EnumC11416b[] f36376c;
 
         public static class C11417a extends EnumC11416b {
             public C11417a(String str, int i) {
@@ -57,10 +57,10 @@ public final class C11414y {
 
         static {
             C11417a aVar = new C11417a("KEY", 0);
-            f36371a = aVar;
+            f36374a = aVar;
             C11418b bVar = new C11418b("VALUE", 1);
-            f36372b = bVar;
-            f36373c = new EnumC11416b[]{aVar, bVar};
+            f36375b = bVar;
+            f36376c = new EnumC11416b[]{aVar, bVar};
         }
 
         public EnumC11416b(String str, int i) {
@@ -71,7 +71,7 @@ public final class C11414y {
         }
 
         public static EnumC11416b[] values() {
-            return (EnumC11416b[]) f36373c.clone();
+            return (EnumC11416b[]) f36376c.clone();
         }
 
         public EnumC11416b(String str, int i, C11413x xVar) {
@@ -127,10 +127,10 @@ public final class C11414y {
 
     public static class C11420d<K, V> extends C11387o0.AbstractC11392d<K> {
         @Weak
-        public final Map<K, V> f36374a;
+        public final Map<K, V> f36377a;
 
         public C11420d(Map<K, V> map) {
-            this.f36374a = (Map) C10433i.m5129i(map);
+            this.f36377a = (Map) C10433i.m5129i(map);
         }
 
         @Override
@@ -139,7 +139,7 @@ public final class C11414y {
         }
 
         public Map<K, V> m673h() {
-            return this.f36374a;
+            return this.f36377a;
         }
 
         @Override
@@ -155,10 +155,10 @@ public final class C11414y {
 
     public static class C11421e<K, V> extends AbstractCollection<V> {
         @Weak
-        public final Map<K, V> f36375a;
+        public final Map<K, V> f36378a;
 
         public C11421e(Map<K, V> map) {
-            this.f36375a = (Map) C10433i.m5129i(map);
+            this.f36378a = (Map) C10433i.m5129i(map);
         }
 
         @Override
@@ -172,7 +172,7 @@ public final class C11414y {
         }
 
         public final Map<K, V> m672h() {
-            return this.f36375a;
+            return this.f36378a;
         }
 
         @Override
@@ -238,9 +238,9 @@ public final class C11414y {
 
     public static abstract class AbstractC11422f<K, V> extends AbstractMap<K, V> {
         @MonotonicNonNullDecl
-        public transient Set<Map.Entry<K, V>> f36376a;
+        public transient Set<Map.Entry<K, V>> f36379a;
         @MonotonicNonNullDecl
-        public transient Collection<V> f36377b;
+        public transient Collection<V> f36380b;
 
         public abstract Set<Map.Entry<K, V>> mo671a();
 
@@ -250,23 +250,23 @@ public final class C11414y {
 
         @Override
         public Set<Map.Entry<K, V>> entrySet() {
-            Set<Map.Entry<K, V>> set = this.f36376a;
+            Set<Map.Entry<K, V>> set = this.f36379a;
             if (set != null) {
                 return set;
             }
             Set<Map.Entry<K, V>> a = mo671a();
-            this.f36376a = a;
+            this.f36379a = a;
             return a;
         }
 
         @Override
         public Collection<V> values() {
-            Collection<V> collection = this.f36377b;
+            Collection<V> collection = this.f36380b;
             if (collection != null) {
                 return collection;
             }
             Collection<V> b = m670b();
-            this.f36377b = b;
+            this.f36380b = b;
             return b;
         }
     }
@@ -349,7 +349,7 @@ public final class C11414y {
     }
 
     public static <V> AbstractC10430f<Map.Entry<?, V>, V> m680j() {
-        return EnumC11416b.f36372b;
+        return EnumC11416b.f36375b;
     }
 
     public static <K, V> Iterator<V> m679k(Iterator<Map.Entry<K, V>> it) {

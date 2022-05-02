@@ -5,11 +5,11 @@ import android.os.LocaleList;
 import java.util.Locale;
 
 public final class C10335g {
-    public static final C10335g f33192b = m5405a(new Locale[0]);
-    public AbstractC10337i f33193a;
+    public static final C10335g f33195b = m5405a(new Locale[0]);
+    public AbstractC10337i f33196a;
 
     public C10335g(AbstractC10337i iVar) {
-        this.f33193a = iVar;
+        this.f33196a = iVar;
     }
 
     public static C10335g m5405a(Locale... localeArr) {
@@ -53,22 +53,22 @@ public final class C10335g {
     }
 
     public Locale m5403c(int i) {
-        return this.f33193a.get(i);
+        return this.f33196a.get(i);
     }
 
     public int m5402d() {
-        return this.f33193a.size();
+        return this.f33196a.size();
     }
 
     public boolean equals(Object obj) {
-        return (obj instanceof C10335g) && this.f33193a.equals(((C10335g) obj).f33193a);
+        return (obj instanceof C10335g) && this.f33196a.equals(((C10335g) obj).f33196a);
     }
 
     public int hashCode() {
-        return this.f33193a.hashCode();
+        return this.f33196a.hashCode();
     }
 
     public String toString() {
-        return this.f33193a.toString();
+        return this.f33196a.toString();
     }
 }

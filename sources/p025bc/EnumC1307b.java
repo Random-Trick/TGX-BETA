@@ -25,10 +25,10 @@ public enum EnumC1307b {
         public C1308a() {
         }
 
-        public final EnumC1307b m37779a(int i) {
+        public final EnumC1307b m37782a(int i) {
             EnumC1307b[] values;
             for (EnumC1307b bVar : EnumC1307b.values()) {
-                if (bVar.m37780a() == i) {
+                if (bVar.m37783a() == i) {
                     return bVar;
                 }
             }
@@ -44,7 +44,7 @@ public enum EnumC1307b {
         this.f4721a = i;
     }
 
-    public final int m37780a() {
+    public final int m37783a() {
         return this.f4721a;
     }
 }

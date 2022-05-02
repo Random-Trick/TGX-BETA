@@ -16,17 +16,17 @@ import p352z0.C11216f;
 
 public class C8941j {
     @SuppressLint({"BanConcurrentHashMap"})
-    public ConcurrentHashMap<Long, C8606e.C8608b> f28815a = new ConcurrentHashMap<>();
+    public ConcurrentHashMap<Long, C8606e.C8608b> f28818a = new ConcurrentHashMap<>();
 
     public class C8942a implements AbstractC8944c<C11216f.C11218b> {
         public C8942a() {
         }
 
-        public int mo10867a(C11216f.C11218b bVar) {
+        public int mo10866a(C11216f.C11218b bVar) {
             return bVar.m1197e();
         }
 
-        public boolean mo10866b(C11216f.C11218b bVar) {
+        public boolean mo10865b(C11216f.C11218b bVar) {
             return bVar.m1196f();
         }
     }
@@ -35,28 +35,28 @@ public class C8941j {
         public C8943b() {
         }
 
-        public int mo10867a(C8606e.C8609c cVar) {
-            return cVar.m11935e();
+        public int mo10866a(C8606e.C8609c cVar) {
+            return cVar.m11934e();
         }
 
-        public boolean mo10866b(C8606e.C8609c cVar) {
-            return cVar.m11934f();
+        public boolean mo10865b(C8606e.C8609c cVar) {
+            return cVar.m11933f();
         }
     }
 
     public interface AbstractC8944c<T> {
-        int mo10867a(T t);
+        int mo10866a(T t);
 
-        boolean mo10866b(T t);
+        boolean mo10865b(T t);
     }
 
-    public static <T> T m10875g(T[] tArr, int i, AbstractC8944c<T> cVar) {
+    public static <T> T m10874g(T[] tArr, int i, AbstractC8944c<T> cVar) {
         int i2 = (i & 1) == 0 ? 400 : 700;
         boolean z = (i & 2) != 0;
         T t = null;
         int i3 = Integer.MAX_VALUE;
         for (T t2 : tArr) {
-            int abs = (Math.abs(cVar.mo10867a(t2) - i2) * 2) + (cVar.mo10866b(t2) == z ? 0 : 1);
+            int abs = (Math.abs(cVar.mo10866a(t2) - i2) * 2) + (cVar.mo10865b(t2) == z ? 0 : 1);
             if (t == null || i3 > abs) {
                 t = t2;
                 i3 = abs;
@@ -65,7 +65,7 @@ public class C8941j {
         return t;
     }
 
-    public static long m10872j(Typeface typeface) {
+    public static long m10871j(Typeface typeface) {
         if (typeface == null) {
             return 0L;
         }
@@ -82,24 +82,24 @@ public class C8941j {
         }
     }
 
-    public final void m10881a(Typeface typeface, C8606e.C8608b bVar) {
-        long j = m10872j(typeface);
+    public final void m10880a(Typeface typeface, C8606e.C8608b bVar) {
+        long j = m10871j(typeface);
         if (j != 0) {
-            this.f28815a.put(Long.valueOf(j), bVar);
+            this.f28818a.put(Long.valueOf(j), bVar);
         }
     }
 
-    public Typeface mo10880b(Context context, C8606e.C8608b bVar, Resources resources, int i) {
-        C8606e.C8609c f = m10876f(bVar, i);
+    public Typeface mo10879b(Context context, C8606e.C8608b bVar, Resources resources, int i) {
+        C8606e.C8609c f = m10875f(bVar, i);
         if (f == null) {
             return null;
         }
-        Typeface d = C8934d.m10909d(context, resources, f.m11938b(), f.m11939a(), i);
-        m10881a(d, bVar);
+        Typeface d = C8934d.m10908d(context, resources, f.m11937b(), f.m11938a(), i);
+        m10880a(d, bVar);
         return d;
     }
 
-    public Typeface mo10879c(Context context, CancellationSignal cancellationSignal, C11216f.C11218b[] bVarArr, int i) {
+    public Typeface mo10878c(Context context, CancellationSignal cancellationSignal, C11216f.C11218b[] bVarArr, int i) {
         InputStream inputStream;
         Throwable th;
         InputStream inputStream2 = null;
@@ -107,34 +107,34 @@ public class C8941j {
             return null;
         }
         try {
-            inputStream = context.getContentResolver().openInputStream(mo10874h(bVarArr, i).m1198d());
+            inputStream = context.getContentResolver().openInputStream(mo10873h(bVarArr, i).m1198d());
         } catch (IOException unused) {
             inputStream = null;
         } catch (Throwable th2) {
             th = th2;
         }
         try {
-            Typeface d = mo10878d(context, inputStream);
-            C8945k.m10865a(inputStream);
+            Typeface d = mo10877d(context, inputStream);
+            C8945k.m10864a(inputStream);
             return d;
         } catch (IOException unused2) {
-            C8945k.m10865a(inputStream);
+            C8945k.m10864a(inputStream);
             return null;
         } catch (Throwable th3) {
             th = th3;
             inputStream2 = inputStream;
-            C8945k.m10865a(inputStream2);
+            C8945k.m10864a(inputStream2);
             throw th;
         }
     }
 
-    public Typeface mo10878d(Context context, InputStream inputStream) {
-        File e = C8945k.m10861e(context);
+    public Typeface mo10877d(Context context, InputStream inputStream) {
+        File e = C8945k.m10860e(context);
         if (e == null) {
             return null;
         }
         try {
-            if (!C8945k.m10862d(e, inputStream)) {
+            if (!C8945k.m10861d(e, inputStream)) {
                 return null;
             }
             return Typeface.createFromFile(e.getPath());
@@ -145,13 +145,13 @@ public class C8941j {
         }
     }
 
-    public Typeface mo10877e(Context context, Resources resources, int i, String str, int i2) {
-        File e = C8945k.m10861e(context);
+    public Typeface mo10876e(Context context, Resources resources, int i, String str, int i2) {
+        File e = C8945k.m10860e(context);
         if (e == null) {
             return null;
         }
         try {
-            if (!C8945k.m10863c(e, resources, i)) {
+            if (!C8945k.m10862c(e, resources, i)) {
                 return null;
             }
             return Typeface.createFromFile(e.getPath());
@@ -162,19 +162,19 @@ public class C8941j {
         }
     }
 
-    public final C8606e.C8609c m10876f(C8606e.C8608b bVar, int i) {
-        return (C8606e.C8609c) m10875g(bVar.m11940a(), i, new C8943b());
+    public final C8606e.C8609c m10875f(C8606e.C8608b bVar, int i) {
+        return (C8606e.C8609c) m10874g(bVar.m11939a(), i, new C8943b());
     }
 
-    public C11216f.C11218b mo10874h(C11216f.C11218b[] bVarArr, int i) {
-        return (C11216f.C11218b) m10875g(bVarArr, i, new C8942a());
+    public C11216f.C11218b mo10873h(C11216f.C11218b[] bVarArr, int i) {
+        return (C11216f.C11218b) m10874g(bVarArr, i, new C8942a());
     }
 
-    public C8606e.C8608b m10873i(Typeface typeface) {
-        long j = m10872j(typeface);
+    public C8606e.C8608b m10872i(Typeface typeface) {
+        long j = m10871j(typeface);
         if (j == 0) {
             return null;
         }
-        return this.f28815a.get(Long.valueOf(j));
+        return this.f28818a.get(Long.valueOf(j));
     }
 }

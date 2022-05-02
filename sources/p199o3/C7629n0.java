@@ -12,6 +12,6 @@ public final class C7629n0 {
                 return 0;
             }
         }
-        return C1216l0.m37992U(i2);
+        return C1216l0.m37995U(i2);
     }
 }

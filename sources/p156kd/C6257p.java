@@ -69,13 +69,13 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
     public float f19769k0 = 1.0f;
 
     public interface AbstractC6258a {
-        void m20789a(C6257p pVar, C6246h hVar);
+        void m20790a(C6257p pVar, C6246h hVar);
     }
 
     public C6257p(View view, int i) {
         if (f19741t0 == null) {
             f19741t0 = new HandlerC6254m();
-            f19740s0 = C1379j0.m37372B().getDisplayMetrics().density >= 2.0f;
+            f19740s0 = C1379j0.m37375B().getDisplayMetrics().density >= 2.0f;
         }
         this.f19757a0 = new Paint(7);
         this.f19742M = view;
@@ -83,13 +83,13 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
         this.f19754Y = new Rect();
         this.f19755Z = new Rect();
         if (i != 0) {
-            mo20259D0(i);
+            mo20260D0(i);
         }
     }
 
-    public static boolean m20818H(C6246h hVar, C6246h hVar2) {
+    public static boolean m20819H(C6246h hVar, C6246h hVar2) {
         if (hVar != hVar2) {
-            if ((hVar != null ? hVar.mo20777C() : (byte) 0) != (hVar2 != null ? hVar2.mo20777C() : (byte) 0)) {
+            if ((hVar != null ? hVar.mo20778C() : (byte) 0) != (hVar2 != null ? hVar2.mo20778C() : (byte) 0)) {
                 return false;
             }
             String str = null;
@@ -97,31 +97,31 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
             if (hVar2 != null) {
                 str = hVar2.toString();
             }
-            if (!C5070i.m24067c(hVar3, str)) {
+            if (!C5070i.m24068c(hVar3, str)) {
                 return false;
             }
         }
         return true;
     }
 
-    public static boolean m20810d(C6246h hVar, C6246h hVar2) {
+    public static boolean m20811d(C6246h hVar, C6246h hVar2) {
         if (hVar == null || hVar2 == null) {
             return false;
         }
         if (hVar == hVar2) {
             return true;
         }
-        byte C = hVar.mo20777C();
-        byte C2 = hVar2.mo20777C();
+        byte C = hVar.mo20778C();
+        byte C2 = hVar2.mo20778C();
         String str = null;
-        String w = hVar instanceof C6251j ? hVar.m20891w() : null;
+        String w = hVar instanceof C6251j ? hVar.m20892w() : null;
         if (hVar2 instanceof C6251j) {
-            str = hVar2.m20891w();
+            str = hVar2.m20892w();
         }
-        return C == C2 && (w == null ? hVar.mo20825s() : 0) == (str == null ? hVar2.mo20825s() : 0) && C5070i.m24067c(w, str);
+        return C == C2 && (w == null ? hVar.mo20826s() : 0) == (str == null ? hVar2.mo20826s() : 0) && C5070i.m24068c(w, str);
     }
 
-    public static void m20807h(Canvas canvas, Bitmap bitmap, float f, float f2, Paint paint) {
+    public static void m20808h(Canvas canvas, Bitmap bitmap, float f, float f2, Paint paint) {
         try {
             canvas.drawBitmap(bitmap, f, f2, paint);
         } catch (Throwable th) {
@@ -130,7 +130,7 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
         }
     }
 
-    public static void m20806i(Canvas canvas, Bitmap bitmap, Rect rect, Rect rect2, Paint paint) {
+    public static void m20807i(Canvas canvas, Bitmap bitmap, Rect rect, Rect rect2, Paint paint) {
         try {
             canvas.drawBitmap(bitmap, rect, rect2, paint);
         } catch (Throwable th) {
@@ -139,7 +139,7 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
         }
     }
 
-    public static void m20805j(Canvas canvas, RectF rectF, float f, float f2, Paint paint) {
+    public static void m20806j(Canvas canvas, RectF rectF, float f, float f2, Paint paint) {
         try {
             canvas.drawRoundRect(rectF, f, f2, paint);
         } catch (Throwable th) {
@@ -148,11 +148,11 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
         }
     }
 
-    public final void m20824A() {
-        throw new UnsupportedOperationException("Method not decompiled: p156kd.C6257p.m20824A():void");
+    public final void m20825A() {
+        throw new UnsupportedOperationException("Method not decompiled: p156kd.C6257p.m20825A():void");
     }
 
-    public final void m20823B() {
+    public final void m20824B() {
         float f;
         this.f19754Y.set(this.f19750U, this.f19751V, this.f19752W, this.f19753X);
         if (C7389v0.m16756A1(this.f19743N)) {
@@ -163,7 +163,7 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
             rectF.set(rect.left, rect.top, rect.right, rect.bottom);
             C6246h hVar = this.f19756a;
             if (hVar != null) {
-                int y = hVar.m20888y();
+                int y = hVar.m20889y();
                 if (y != 1) {
                     f = y != 2 ? -1.0f : Math.max(this.f19764f0.width() / this.f19755Z.width(), this.f19764f0.height() / this.f19755Z.height());
                 } else {
@@ -186,16 +186,16 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
         }
     }
 
-    public void m20822C() {
+    public void m20823C() {
         if (!f19740s0 || this.f19748S) {
-            f19741t0.m20827c(this);
+            f19741t0.m20828c(this);
         } else {
-            f19741t0.m20829a(this);
+            f19741t0.m20830a(this);
         }
     }
 
     @Override
-    public void mo20260D() {
+    public void mo20261D() {
         if (this.f19772n0) {
             this.f19772n0 = false;
             this.f19757a0.setColorFilter(null);
@@ -208,7 +208,7 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
     }
 
     @Override
-    public void mo20259D0(int i) {
+    public void mo20260D0(int i) {
         if (this.f19749T != i) {
             this.f19749T = i;
             if (this.f19761c0 == null) {
@@ -230,61 +230,61 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
                     Shader.TileMode tileMode = Shader.TileMode.CLAMP;
                     this.f19763e0 = new BitmapShader(bitmap, tileMode, tileMode);
                 }
-                m20823B();
+                m20824B();
                 if (z) {
                     this.f19761c0.setShader(this.f19763e0);
                     return;
                 }
                 return;
             }
-            m20824A();
+            m20825A();
         }
     }
 
-    public void m20821E() {
-        f19741t0.m20827c(this);
+    public void m20822E() {
+        f19741t0.m20828c(this);
     }
 
     @Override
-    public void mo20258E0(Canvas canvas, Path path, float f) {
-        C6263u.m20758c(this, canvas, path, f);
+    public void mo20259E0(Canvas canvas, Path path, float f) {
+        C6263u.m20759c(this, canvas, path, f);
     }
 
-    public void m20820F() {
+    public void m20821F() {
         if (this.f19767i0 == null) {
             this.f19767i0 = new C7856c();
             this.f19768j0 = new Rect();
         }
     }
 
-    public void m20819G(C6246h hVar) {
+    public void m20820G(C6246h hVar) {
         Bitmap bitmap;
         if (this.f19746Q) {
             this.f19758b = hVar;
-        } else if (!m20818H(this.f19756a, hVar) || ((bitmap = this.f19743N) != null && bitmap.isRecycled())) {
+        } else if (!m20819H(this.f19756a, hVar) || ((bitmap = this.f19743N) != null && bitmap.isRecycled())) {
             if (this.f19756a != null) {
-                ImageLoader.m14392e().m14386k(this.f19760c);
+                ImageLoader.m14391e().m14385k(this.f19760c);
             }
             Bitmap bitmap2 = null;
             if (hVar != null) {
-                Bitmap b = C6259q.m20786c().m20787b(hVar);
+                Bitmap b = C6259q.m20787c().m20788b(hVar);
                 if (!C7389v0.m16756A1(b)) {
-                    b = C6244g.m20960k().m20966e(hVar);
+                    b = C6244g.m20961k().m20967e(hVar);
                 }
                 boolean z = false;
                 if (!C7389v0.m16756A1(b)) {
                     if (this.f19744O != 0.0f) {
                         z = true;
                     }
-                    m20804k(0.0f);
-                    if (hVar.m20954A0() && C7389v0.m16756A1(this.f19743N)) {
+                    m20805k(0.0f);
+                    if (hVar.m20955A0() && C7389v0.m16756A1(this.f19743N)) {
                         bitmap2 = this.f19743N;
                     }
-                    if (!m20816J(hVar, bitmap2, true) && z) {
+                    if (!m20817J(hVar, bitmap2, true) && z) {
                         invalidate();
                     }
-                    if (!hVar.m20949F()) {
-                        ImageLoader.m14392e().m14385l(hVar, this.f19760c);
+                    if (!hVar.m20950F()) {
+                        ImageLoader.m14391e().m14384l(hVar, this.f19760c);
                         return;
                     }
                     return;
@@ -292,28 +292,28 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
                 if (this.f19744O != 1.0f) {
                     z = true;
                 }
-                m20804k(1.0f);
-                if (!m20816J(hVar, b, true) && z) {
+                m20805k(1.0f);
+                if (!m20817J(hVar, b, true) && z) {
                     invalidate();
                 }
-                m20808g();
+                m20809g();
                 return;
             }
-            m20816J(null, null, true);
+            m20817J(null, null, true);
         } else if (this.f19756a != hVar) {
-            m20816J(hVar, this.f19743N, true);
+            m20817J(hVar, this.f19743N, true);
             if (C7389v0.m16756A1(this.f19743N)) {
                 if (this.f19749T > 0) {
-                    m20823B();
+                    m20824B();
                 } else {
-                    m20824A();
+                    m20825A();
                 }
                 invalidate();
             }
         }
     }
 
-    public final void m20817I(Bitmap bitmap) {
+    public final void m20818I(Bitmap bitmap) {
         if (this.f19743N != bitmap) {
             this.f19743N = bitmap;
             if (this.f19763e0 != null) {
@@ -336,24 +336,24 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
     }
 
     @Override
-    public int mo20257I0() {
+    public int mo20258I0() {
         return (int) ((this.f19750U + this.f19752W) * 0.5f);
     }
 
-    public boolean m20816J(p156kd.C6246h r10, android.graphics.Bitmap r11, boolean r12) {
-        throw new UnsupportedOperationException("Method not decompiled: p156kd.C6257p.m20816J(kd.h, android.graphics.Bitmap, boolean):boolean");
+    public boolean m20817J(p156kd.C6246h r10, android.graphics.Bitmap r11, boolean r12) {
+        throw new UnsupportedOperationException("Method not decompiled: p156kd.C6257p.m20817J(kd.h, android.graphics.Bitmap, boolean):boolean");
     }
 
-    public void m20815K(C6246h hVar, Bitmap bitmap) {
+    public void m20816K(C6246h hVar, Bitmap bitmap) {
         C6246h hVar2 = this.f19756a;
-        if (m20810d(hVar2, hVar)) {
-            m20808g();
-            m20816J(hVar2, bitmap, true);
+        if (m20811d(hVar2, hVar)) {
+            m20809g();
+            m20817J(hVar2, bitmap, true);
         }
     }
 
     @Override
-    public boolean mo20256K0(int i, int i2, int i3, int i4) {
+    public boolean mo20257K0(int i, int i2, int i3, int i4) {
         if (this.f19750U == i && this.f19751V == i2 && this.f19752W == i3 && this.f19753X == i4) {
             return false;
         }
@@ -362,22 +362,22 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
         this.f19752W = i3;
         this.f19753X = i4;
         if (this.f19749T > 0) {
-            m20823B();
+            m20824B();
             return true;
         }
-        m20824A();
+        m20825A();
         return true;
     }
 
-    public void m20814L(float f) {
+    public void m20815L(float f) {
         if (this.f19769k0 != f) {
             this.f19769k0 = f;
-            mo20238l();
+            mo20239l();
             invalidate();
         }
     }
 
-    public void m20813M(float f) {
+    public void m20814M(float f) {
         if (this.f19745P != f) {
             this.f19745P = f;
             invalidate();
@@ -385,17 +385,17 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
     }
 
     @Override
-    public void mo20255N(Canvas canvas) {
-        mo20228u0(canvas, this.f19749T);
+    public void mo20256N(Canvas canvas) {
+        mo20229u0(canvas, this.f19749T);
     }
 
     @Override
-    public void mo20254O(Canvas canvas, Path path) {
-        C6263u.m20759b(this, canvas, path);
+    public void mo20255O(Canvas canvas, Path path) {
+        C6263u.m20760b(this, canvas, path);
     }
 
     @Override
-    public void mo20253P() {
+    public void mo20254P() {
         Paint paint = this.f19762d0;
         if (paint != null) {
             paint.setAlpha(Color.red(this.f19776r0));
@@ -409,7 +409,7 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
     }
 
     @Override
-    public float mo20252R0() {
+    public float mo20253R0() {
         Paint paint = this.f19762d0;
         if (paint == null && (paint = this.f19761c0) == null) {
             paint = this.f19757a0;
@@ -418,7 +418,7 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
     }
 
     @Override
-    public void mo20251S0(boolean z) {
+    public void mo20252S0(boolean z) {
         if (f19740s0 && this.f19748S != z) {
             this.f19748S = z;
             if (z) {
@@ -444,7 +444,7 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
     }
 
     @Override
-    public void mo20250U(float f) {
+    public void mo20251U(float f) {
         Paint paint = this.f19762d0;
         int i = 0;
         int alpha = paint != null ? paint.getAlpha() : 0;
@@ -453,7 +453,7 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
             i = paint2.getAlpha();
         }
         this.f19776r0 = Color.rgb(alpha, i, this.f19757a0.getAlpha());
-        int d = (int) (C5069h.m24089d(f) * 255.0f);
+        int d = (int) (C5069h.m24090d(f) * 255.0f);
         Paint paint3 = this.f19761c0;
         if (paint3 != null) {
             paint3.setAlpha(d);
@@ -466,43 +466,43 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
     }
 
     @Override
-    public void mo20249Z() {
+    public void mo20250Z() {
         clear();
     }
 
     @Override
-    public void mo20812a(C6246h hVar, C7856c cVar) {
+    public void mo20813a(C6246h hVar, C7856c cVar) {
         if (!this.f19767i0.m14829a(cVar)) {
             this.f19767i0.m14814p(cVar);
-            mo20238l();
-            m20794v();
+            mo20239l();
+            m20795v();
         }
     }
 
     @Override
-    public void mo20248a1(Rect rect) {
-        C6263u.m20752i(this, rect);
+    public void mo20249a1(Rect rect) {
+        C6263u.m20753i(this, rect);
     }
 
     @Override
-    public void mo20247b() {
+    public void mo20248b() {
         if (!this.f19746Q) {
             this.f19746Q = true;
             C6246h hVar = this.f19756a;
             if (hVar != null) {
                 this.f19758b = hVar;
                 this.f19746Q = false;
-                m20819G(null);
+                m20820G(null);
                 this.f19746Q = true;
             }
         }
     }
 
-    public void m20811c() {
+    public void m20812c() {
         if (f19740s0 && !this.f19748S) {
             C6241d dVar = this.f19774p0;
             if (dVar != null) {
-                dVar.m20976a();
+                dVar.m20977a();
             }
             ValueAnimator valueAnimator = this.f19775q0;
             if (valueAnimator != null) {
@@ -518,12 +518,12 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
                         this.f19774p0 = new C6241d(this);
                     }
                 }
-                this.f19774p0.m20974c();
+                this.f19774p0.m20975c();
                 return;
             }
             ValueAnimator valueAnimator2 = this.f19775q0;
             if (valueAnimator2 == null) {
-                ValueAnimator b = C2057b.m35734b();
+                ValueAnimator b = C2057b.m35737b();
                 this.f19775q0 = b;
                 b.addUpdateListener(this);
                 this.f19775q0.setDuration(120L);
@@ -536,13 +536,13 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
     }
 
     @Override
-    public boolean mo20246c0() {
-        return !m20792x() || (this.f19744O != 1.0f && f19740s0 && !this.f19748S);
+    public boolean mo20247c0() {
+        return !m20793x() || (this.f19744O != 1.0f && f19740s0 && !this.f19748S);
     }
 
     @Override
     public void clear() {
-        m20819G(null);
+        m20820G(null);
     }
 
     @Override
@@ -551,7 +551,7 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
         int i;
         int i2;
         if (C7389v0.m16756A1(this.f19743N)) {
-            int u = m20795u();
+            int u = m20796u();
             if (this.f19749T != 0) {
                 if (u != 0) {
                     canvas.save();
@@ -559,17 +559,17 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
                 }
                 RectF rectF = this.f19764f0;
                 int i3 = this.f19749T;
-                m20805j(canvas, rectF, i3, i3, this.f19761c0);
+                m20806j(canvas, rectF, i3, i3, this.f19761c0);
                 if (u != 0) {
                     canvas.restore();
                 }
-            } else if (this.f19756a.m20888y() == 3) {
+            } else if (this.f19756a.m20889y() == 3) {
                 canvas.save();
                 canvas.drawRect(this.f19750U, this.f19751V, this.f19752W, this.f19753X, this.f19762d0);
                 canvas.restore();
             } else {
-                C8431f t = this.f19756a.m20896t();
-                float y = this.f19756a.m20888y();
+                C8431f t = this.f19756a.m20897t();
+                float y = this.f19756a.m20889y();
                 if (y == 2.0f || y == 1.0f) {
                     C7856c cVar = this.f19767i0;
                     boolean z = true;
@@ -594,7 +594,7 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
                     }
                     if (z2) {
                         canvas.concat(this.f19759b0);
-                        Rect Z = C1410y.m37052Z();
+                        Rect Z = C1410y.m37055Z();
                         if (!(this.f19769k0 >= 1.0f && f == 0.0f && t == null)) {
                             Rect rect = this.f19768j0;
                             int i5 = rect.left;
@@ -617,51 +617,51 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
                             float f3 = height / 2.0f;
                             canvas.rotate(f, f2, f3);
                             canvas.scale(max, max, f2, f3);
-                            m20807h(canvas, this.f19743N, 0.0f, 0.0f, this.f19757a0);
+                            m20808h(canvas, this.f19743N, 0.0f, 0.0f, this.f19757a0);
                             if (t != null) {
-                                t.m12496g(canvas, 0, 0, this.f19743N.getWidth(), this.f19743N.getHeight());
+                                t.m12495g(canvas, 0, 0, this.f19743N.getWidth(), this.f19743N.getHeight());
                             }
                         } else {
-                            m20806i(canvas, this.f19743N, this.f19755Z, Z, this.f19757a0);
+                            m20807i(canvas, this.f19743N, this.f19755Z, Z, this.f19757a0);
                             if (t != null) {
                                 canvas.clipRect(Z);
-                                C1359b.m37500s(canvas, this.f19743N, this.f19755Z, Z, t);
+                                C1359b.m37503s(canvas, this.f19743N, this.f19755Z, Z, t);
                             }
                         }
                     } else {
                         canvas.concat(this.f19759b0);
-                        m20807h(canvas, this.f19743N, 0.0f, 0.0f, this.f19757a0);
+                        m20808h(canvas, this.f19743N, 0.0f, 0.0f, this.f19757a0);
                         if (t != null) {
                             canvas.clipRect(0, 0, this.f19743N.getWidth(), this.f19743N.getHeight());
-                            t.m12496g(canvas, 0, 0, this.f19743N.getWidth(), this.f19743N.getHeight());
+                            t.m12495g(canvas, 0, 0, this.f19743N.getWidth(), this.f19743N.getHeight());
                         }
                     }
                     canvas.restore();
                     return;
                 }
-                m20806i(canvas, this.f19743N, this.f19755Z, this.f19754Y, this.f19757a0);
+                m20807i(canvas, this.f19743N, this.f19755Z, this.f19754Y, this.f19757a0);
                 if (t != null) {
                     canvas.save();
                     canvas.clipRect(this.f19754Y);
-                    C1359b.m37500s(canvas, this.f19743N, this.f19755Z, this.f19754Y, t);
+                    C1359b.m37503s(canvas, this.f19743N, this.f19755Z, this.f19754Y, t);
                     canvas.restore();
                 }
             }
         }
     }
 
-    public void m20809e(C6257p pVar) {
-        mo20256K0(pVar.f19750U, pVar.f19751V, pVar.f19752W, pVar.f19753X);
-        mo20259D0(pVar.f19749T);
+    public void m20810e(C6257p pVar) {
+        mo20257K0(pVar.f19750U, pVar.f19751V, pVar.f19752W, pVar.f19753X);
+        mo20260D0(pVar.f19749T);
     }
 
     @Override
-    public void mo20245f() {
+    public void mo20246f() {
         if (this.f19746Q) {
             this.f19746Q = false;
             C6246h hVar = this.f19758b;
             if (hVar != null) {
-                m20819G(hVar);
+                m20820G(hVar);
                 this.f19758b = null;
             }
         }
@@ -669,13 +669,13 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
 
     @Override
     public void mo8098f1(View view, Rect rect) {
-        C6263u.m20755f(this, view, rect);
+        C6263u.m20756f(this, view, rect);
     }
 
-    public final void m20808g() {
+    public final void m20809g() {
         AbstractC6258a aVar = this.f19770l0;
         if (aVar != null) {
-            aVar.m20789a(this, this.f19756a);
+            aVar.m20790a(this, this.f19756a);
         }
     }
 
@@ -730,14 +730,14 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
 
     @Override
     public boolean isEmpty() {
-        return m20798r() == null;
+        return m20799r() == null;
     }
 
-    public void m20804k(float f) {
+    public void m20805k(float f) {
         if (f19740s0 && !this.f19748S) {
             C6241d dVar = this.f19774p0;
             if (dVar != null) {
-                dVar.m20976a();
+                dVar.m20977a();
             }
             this.f19744O = f;
             Paint paint = this.f19761c0;
@@ -753,20 +753,20 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
     }
 
     @Override
-    public void mo14384k0(C6246h hVar, boolean z, Bitmap bitmap) {
+    public void mo14383k0(C6246h hVar, boolean z, Bitmap bitmap) {
         C6246h hVar2 = this.f19756a;
-        if (!m20810d(hVar2, hVar)) {
+        if (!m20811d(hVar2, hVar)) {
             return;
         }
         if (z) {
-            f19741t0.m20828b(this, hVar2, bitmap);
+            f19741t0.m20829b(this, hVar2, bitmap);
         } else {
-            m20816J(hVar2, null, false);
+            m20817J(hVar2, null, false);
         }
     }
 
     @Override
-    public boolean mo20239k1(float f, float f2, int i, int i2) {
+    public boolean mo20240k1(float f, float f2, int i, int i2) {
         float f3;
         float min;
         C6246h hVar = this.f19756a;
@@ -777,18 +777,18 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
                     if (!(hVar2 instanceof C6253l)) {
                         return false;
                     }
-                    i = m20800p(((C6253l) hVar2).m20849Y0());
-                    i2 = m20801o(((C6253l) this.f19756a).m20862L0());
-                } else if (m20791y()) {
-                    i = m20800p(this.f19755Z.height());
-                    i2 = m20801o(this.f19755Z.width());
+                    i = m20801p(((C6253l) hVar2).m20850Y0());
+                    i2 = m20802o(((C6253l) this.f19756a).m20863L0());
+                } else if (m20792y()) {
+                    i = m20801p(this.f19755Z.height());
+                    i2 = m20802o(this.f19755Z.width());
                 } else {
-                    i = m20800p(this.f19755Z.width());
-                    i2 = m20801o(this.f19755Z.height());
+                    i = m20801p(this.f19755Z.width());
+                    i2 = m20802o(this.f19755Z.height());
                 }
             }
             C6246h hVar3 = this.f19756a;
-            if ((hVar3 != null ? hVar3.m20888y() : 1) == 1) {
+            if ((hVar3 != null ? hVar3.m20889y() : 1) == 1) {
                 float f4 = i2;
                 int min2 = (int) (f4 * Math.min((this.f19752W - this.f19750U) / i, (this.f19753X - this.f19751V) / f4));
                 int i3 = (this.f19751V + this.f19753X) / 2;
@@ -806,58 +806,58 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
     }
 
     @Override
-    public void mo20238l() {
+    public void mo20239l() {
         if (this.f19749T > 0) {
-            m20823B();
+            m20824B();
         } else {
-            m20824A();
+            m20825A();
         }
     }
 
-    public int m20803m() {
+    public int m20804m() {
         return (this.f19750U + this.f19752W) / 2;
     }
 
     @Override
-    public void mo20236m1(Canvas canvas, int i, int i2) {
-        C6263u.m20756e(this, canvas, i, i2);
+    public void mo20237m1(Canvas canvas, int i, int i2) {
+        C6263u.m20757e(this, canvas, i, i2);
     }
 
-    public int m20802n() {
+    public int m20803n() {
         return (this.f19751V + this.f19753X) / 2;
     }
 
-    public final int m20801o(int i) {
+    public final int m20802o(int i) {
         return i;
     }
 
     @Override
     public void onAnimationUpdate(ValueAnimator valueAnimator) {
-        setAlpha(C2057b.m35735a(valueAnimator));
+        setAlpha(C2057b.m35738a(valueAnimator));
     }
 
-    public final int m20800p(int i) {
+    public final int m20801p(int i) {
         return i;
     }
 
-    public Bitmap m20799q() {
+    public Bitmap m20800q() {
         return this.f19743N;
     }
 
     @Override
-    public void mo14383q5(C6246h hVar, float f) {
+    public void mo14382q5(C6246h hVar, float f) {
         C6246h hVar2 = this.f19756a;
-        if (this.f19747R && m20810d(hVar2, hVar)) {
-            m20813M(f);
+        if (this.f19747R && m20811d(hVar2, hVar)) {
+            m20814M(f);
         }
     }
 
-    public C6246h m20798r() {
+    public C6246h m20799r() {
         return this.f19746Q ? this.f19758b : this.f19756a;
     }
 
-    public float m20797s() {
-        if (m20792x()) {
+    public float m20798s() {
+        if (m20793x()) {
             return getAlpha();
         }
         return 0.0f;
@@ -902,49 +902,49 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
         this.f19771m0 = obj;
     }
 
-    public int m20796t() {
+    public int m20797t() {
         return this.f19749T;
     }
 
-    public final int m20795u() {
+    public final int m20796u() {
         C6246h hVar = this.f19756a;
         int i = 0;
         if (hVar == null) {
             return 0;
         }
-        if (Build.VERSION.SDK_INT < 29 || !(hVar instanceof C6253l) || !((C6253l) hVar).m20842f1()) {
-            i = this.f19756a.mo20872D();
+        if (Build.VERSION.SDK_INT < 29 || !(hVar instanceof C6253l) || !((C6253l) hVar).m20843f1()) {
+            i = this.f19756a.mo20873D();
         }
         C7856c cVar = this.f19767i0;
-        return cVar != null ? C5069h.m24081l(i + cVar.m14822h(), 360) : i;
+        return cVar != null ? C5069h.m24082l(i + cVar.m14822h(), 360) : i;
     }
 
     @Override
-    public void mo20228u0(Canvas canvas, int i) {
-        C6263u.m20757d(this, canvas, i);
+    public void mo20229u0(Canvas canvas, int i) {
+        C6263u.m20758d(this, canvas, i);
     }
 
-    public void m20794v() {
+    public void m20795v() {
         View view = this.f19742M;
         if (view != null) {
             view.invalidate();
         }
     }
 
-    public boolean m20793w(float f, float f2) {
-        return C6263u.m20754g(this, f, f2);
+    public boolean m20794w(float f, float f2) {
+        return C6263u.m20755g(this, f, f2);
     }
 
-    public boolean m20792x() {
+    public boolean m20793x() {
         return C7389v0.m16756A1(this.f19743N);
     }
 
-    public final boolean m20791y() {
+    public final boolean m20792y() {
         C6246h hVar = this.f19756a;
         if (hVar == null) {
             return false;
         }
-        int x = hVar.mo20873x();
+        int x = hVar.mo20874x();
         C7856c cVar = this.f19767i0;
         if (cVar != null) {
             x += cVar.m14822h();
@@ -953,11 +953,11 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
     }
 
     @Override
-    public int mo20227y0() {
+    public int mo20228y0() {
         return (int) ((this.f19753X + this.f19751V) * 0.5f);
     }
 
-    public final boolean m20790z(Matrix matrix) {
+    public final boolean m20791z(Matrix matrix) {
         int i;
         int i2;
         int i3;
@@ -967,10 +967,10 @@ public class C6257p implements AbstractC6266x, ValueAnimator.AnimatorUpdateListe
         if (this.f19756a == null || !C7389v0.m16756A1(this.f19743N)) {
             return false;
         }
-        int y = this.f19756a.m20888y();
+        int y = this.f19756a.m20889y();
         if (y == 1) {
             matrix.reset();
-            boolean x1 = C7389v0.m16564x1(m20795u());
+            boolean x1 = C7389v0.m16564x1(m20796u());
             if (x1) {
                 i2 = this.f19755Z.height();
                 i = this.f19755Z.width();

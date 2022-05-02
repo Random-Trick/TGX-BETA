@@ -57,13 +57,13 @@ public final class C0132d0 extends AbstractC0139f {
                 throw new C0133a(null, e, 2000);
             }
         }
-        int read = ((InputStream) C1216l0.m37968j(this.f498i)).read(bArr, i, i2);
+        int read = ((InputStream) C1216l0.m37971j(this.f498i)).read(bArr, i, i2);
         if (read != -1) {
             long j2 = this.f499j;
             if (j2 != -1) {
                 this.f499j = j2 - read;
             }
-            m42225s(read);
+            m42228s(read);
             return read;
         } else if (this.f499j == -1) {
             return -1;
@@ -77,14 +77,14 @@ public final class C0132d0 extends AbstractC0139f {
         int parseInt;
         Uri uri = oVar.f553a;
         this.f496g = uri;
-        if (TextUtils.equals("rawresource", uri.getScheme()) || (TextUtils.equals("android.resource", uri.getScheme()) && uri.getPathSegments().size() == 1 && ((String) C1186a.m38185e(uri.getLastPathSegment())).matches("\\d+"))) {
+        if (TextUtils.equals("rawresource", uri.getScheme()) || (TextUtils.equals("android.resource", uri.getScheme()) && uri.getPathSegments().size() == 1 && ((String) C1186a.m38188e(uri.getLastPathSegment())).matches("\\d+"))) {
             try {
-                parseInt = Integer.parseInt((String) C1186a.m38185e(uri.getLastPathSegment()));
+                parseInt = Integer.parseInt((String) C1186a.m38188e(uri.getLastPathSegment()));
             } catch (NumberFormatException unused) {
                 throw new C0133a("Resource identifier must be an integer.", null, 1004);
             }
         } else if (TextUtils.equals("android.resource", uri.getScheme())) {
-            String str = (String) C1186a.m38185e(uri.getPath());
+            String str = (String) C1186a.m38188e(uri.getPath());
             if (str.startsWith("/")) {
                 str = str.substring(1);
             }
@@ -98,7 +98,7 @@ public final class C0132d0 extends AbstractC0139f {
         } else {
             throw new C0133a("URI must either use scheme rawresource or android.resource", null, 1004);
         }
-        m42223u(oVar);
+        m42226u(oVar);
         try {
             AssetFileDescriptor openRawResourceFd = this.f494e.openRawResourceFd(parseInt);
             this.f497h = openRawResourceFd;
@@ -148,7 +148,7 @@ public final class C0132d0 extends AbstractC0139f {
                         this.f499j = j2;
                     }
                     this.f500k = true;
-                    m42222v(oVar);
+                    m42225v(oVar);
                     long j4 = oVar.f560h;
                     return j4 != -1 ? j4 : this.f499j;
                 }
@@ -185,7 +185,7 @@ public final class C0132d0 extends AbstractC0139f {
                         this.f497h = null;
                         if (this.f500k) {
                             this.f500k = false;
-                            m42224t();
+                            m42227t();
                         }
                     }
                 } catch (IOException e) {
@@ -205,7 +205,7 @@ public final class C0132d0 extends AbstractC0139f {
                     this.f497h = null;
                     if (this.f500k) {
                         this.f500k = false;
-                        m42224t();
+                        m42227t();
                     }
                     throw th;
                 } catch (IOException e3) {
@@ -215,7 +215,7 @@ public final class C0132d0 extends AbstractC0139f {
                 this.f497h = null;
                 if (this.f500k) {
                     this.f500k = false;
-                    m42224t();
+                    m42227t();
                 }
             }
         }

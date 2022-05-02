@@ -19,37 +19,37 @@ import td.AbstractC9323v4;
 public class HeaderEditText extends EditTextBase implements ActionMode.Callback, AbstractC9165c2 {
     public HeaderEditText(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        m14152C();
+        m14151C();
     }
 
-    public static HeaderEditText m14154A(ViewGroup viewGroup) {
-        HeaderEditText headerEditText = (HeaderEditText) C1399s0.m37146y(viewGroup.getContext(), R.layout.input_header_grey, viewGroup);
+    public static HeaderEditText m14153A(ViewGroup viewGroup) {
+        HeaderEditText headerEditText = (HeaderEditText) C1399s0.m37149y(viewGroup.getContext(), R.layout.input_header_grey, viewGroup);
         headerEditText.setImeOptions(6);
-        C1399s0.m37191b0(headerEditText, R.drawable.cursor_grey);
+        C1399s0.m37194b0(headerEditText, R.drawable.cursor_grey);
         return headerEditText;
     }
 
-    public static HeaderEditText m14153B(ViewGroup viewGroup, boolean z) {
-        HeaderEditText headerEditText = (HeaderEditText) C1399s0.m37146y(viewGroup.getContext(), z ? R.layout.input_header_light : R.layout.input_header, viewGroup);
+    public static HeaderEditText m14152B(ViewGroup viewGroup, boolean z) {
+        HeaderEditText headerEditText = (HeaderEditText) C1399s0.m37149y(viewGroup.getContext(), z ? R.layout.input_header_light : R.layout.input_header, viewGroup);
         headerEditText.setImeOptions(6);
-        C1399s0.m37191b0(headerEditText, R.drawable.cursor_white);
+        C1399s0.m37194b0(headerEditText, R.drawable.cursor_white);
         return headerEditText;
     }
 
-    public static HeaderEditText m14151z(ViewGroup viewGroup, boolean z, AbstractC9323v4<?> v4Var) {
-        HeaderEditText headerEditText = (HeaderEditText) C1399s0.m37146y(viewGroup.getContext(), z ? R.layout.input_header_light : R.layout.input_header, viewGroup);
+    public static HeaderEditText m14150z(ViewGroup viewGroup, boolean z, AbstractC9323v4<?> v4Var) {
+        HeaderEditText headerEditText = (HeaderEditText) C1399s0.m37149y(viewGroup.getContext(), z ? R.layout.input_header_light : R.layout.input_header, viewGroup);
         headerEditText.setTextColor(C11524j.m228N(R.id.theme_color_headerText));
-        headerEditText.setHintTextColor(C5064d.m24131a(C11524j.f36589a, C11524j.m228N(R.id.theme_color_headerText)));
+        headerEditText.setHintTextColor(C5064d.m24132a(C11524j.f36591a, C11524j.m228N(R.id.theme_color_headerText)));
         headerEditText.mo8255s();
         if (v4Var != null) {
             v4Var.m9119z8(headerEditText, R.id.theme_color_headerText);
-            v4Var.m9170s8(headerEditText, R.id.theme_color_headerText).m85e(C11524j.f36589a);
+            v4Var.m9170s8(headerEditText, R.id.theme_color_headerText).m85e(C11524j.f36591a);
         }
         return headerEditText;
     }
 
-    public final void m14152C() {
-        setTypeface(C1389o.m37258k());
+    public final void m14151C() {
+        setTypeface(C1389o.m37261k());
         setInputType(106496);
         setHighlightColor(C11524j.m252B());
         if (Build.VERSION.SDK_INT < 23) {
@@ -78,11 +78,11 @@ public class HeaderEditText extends EditTextBase implements ActionMode.Callback,
 
     @Override
     public void mo8255s() {
-        C1399s0.m37157s0(this, C4403w.m27989F1() | 16);
+        C1399s0.m37160s0(this, C4403w.m27991F1() | 16);
     }
 
     public HeaderEditText(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
-        m14152C();
+        m14151C();
     }
 }

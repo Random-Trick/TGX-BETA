@@ -16,7 +16,7 @@ public class C6216g {
         this.f19629b = context.getSharedPreferences("FirebaseAppHeartBeatStorage", 0);
     }
 
-    public static synchronized C6216g m21058a(Context context) {
+    public static synchronized C6216g m21059a(Context context) {
         C6216g gVar;
         synchronized (C6216g.class) {
             if (f19626c == null) {
@@ -27,22 +27,22 @@ public class C6216g {
         return gVar;
     }
 
-    public static boolean m21057b(long j, long j2) {
+    public static boolean m21058b(long j, long j2) {
         Date date = new Date(j);
         Date date2 = new Date(j2);
         SimpleDateFormat simpleDateFormat = f19627d;
         return !simpleDateFormat.format(date).equals(simpleDateFormat.format(date2));
     }
 
-    public synchronized boolean m21056c(long j) {
-        return m21055d("fire-global", j);
+    public synchronized boolean m21057c(long j) {
+        return m21056d("fire-global", j);
     }
 
-    public synchronized boolean m21055d(String str, long j) {
+    public synchronized boolean m21056d(String str, long j) {
         if (!this.f19628a.contains(str)) {
             this.f19628a.edit().putLong(str, j).apply();
             return true;
-        } else if (!m21057b(this.f19628a.getLong(str, -1L), j)) {
+        } else if (!m21058b(this.f19628a.getLong(str, -1L), j)) {
             return false;
         } else {
             this.f19628a.edit().putLong(str, j).apply();

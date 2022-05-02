@@ -18,17 +18,17 @@ public final class C5173b extends AbstractC5196i {
     }
 
     @Override
-    public AbstractC1150h mo23624b() {
+    public AbstractC1150h mo23625b() {
         return this.f17296c;
     }
 
     @Override
-    public long mo23623c() {
+    public long mo23624c() {
         return this.f17294a;
     }
 
     @Override
-    public AbstractC1159m mo23622d() {
+    public AbstractC1159m mo23623d() {
         return this.f17295b;
     }
 
@@ -40,7 +40,7 @@ public final class C5173b extends AbstractC5196i {
             return false;
         }
         AbstractC5196i iVar = (AbstractC5196i) obj;
-        return this.f17294a == iVar.mo23623c() && this.f17295b.equals(iVar.mo23622d()) && this.f17296c.equals(iVar.mo23624b());
+        return this.f17294a == iVar.mo23624c() && this.f17295b.equals(iVar.mo23623d()) && this.f17296c.equals(iVar.mo23625b());
     }
 
     public int hashCode() {

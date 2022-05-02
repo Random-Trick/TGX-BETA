@@ -10,17 +10,17 @@ import p176m5.C6750b;
 public final class C4281e0 implements Parcelable.Creator<LocationResult> {
     @Override
     public final LocationResult createFromParcel(Parcel parcel) {
-        int x = C6750b.m19127x(parcel);
+        int x = C6750b.m19128x(parcel);
         List<Location> list = LocationResult.f11635b;
         while (parcel.dataPosition() < x) {
-            int q = C6750b.m19134q(parcel);
-            if (C6750b.m19140k(q) != 1) {
-                C6750b.m19128w(parcel, q);
+            int q = C6750b.m19135q(parcel);
+            if (C6750b.m19141k(q) != 1) {
+                C6750b.m19129w(parcel, q);
             } else {
-                list = C6750b.m19142i(parcel, q, Location.CREATOR);
+                list = C6750b.m19143i(parcel, q, Location.CREATOR);
             }
         }
-        C6750b.m19141j(parcel, x);
+        C6750b.m19142j(parcel, x);
         return new LocationResult(list);
     }
 

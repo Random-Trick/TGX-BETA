@@ -9,7 +9,7 @@ public final class C1383l implements AbstractC5913e {
     @Override
     public final Object get() {
         Typeface q;
-        q = C1389o.m37252q();
+        q = C1389o.m37255q();
         return q;
     }
 }

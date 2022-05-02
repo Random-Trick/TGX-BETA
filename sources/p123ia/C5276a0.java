@@ -11,11 +11,11 @@ public final class C5276a0<T> {
         this.f17468b = t;
     }
 
-    public final int m23467a() {
+    public final int m23468a() {
         return this.f17467a;
     }
 
-    public final T m23466b() {
+    public final T m23467b() {
         return this.f17468b;
     }
 
@@ -27,7 +27,7 @@ public final class C5276a0<T> {
             return false;
         }
         C5276a0 a0Var = (C5276a0) obj;
-        return this.f17467a == a0Var.f17467a && C8298k.m12937b(this.f17468b, a0Var.f17468b);
+        return this.f17467a == a0Var.f17467a && C8298k.m12936b(this.f17468b, a0Var.f17468b);
     }
 
     public int hashCode() {

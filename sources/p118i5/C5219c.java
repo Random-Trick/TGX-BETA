@@ -28,11 +28,11 @@ public class C5219c extends AbstractC6749a {
     }
 
     @RecentlyNonNull
-    public String m23608b() {
+    public String m23609b() {
         return this.f17361a;
     }
 
-    public long m23607c() {
+    public long m23608c() {
         long j = this.f17363c;
         return j == -1 ? this.f17362b : j;
     }
@@ -40,7 +40,7 @@ public class C5219c extends AbstractC6749a {
     public final boolean equals(Object obj) {
         if (obj instanceof C5219c) {
             C5219c cVar = (C5219c) obj;
-            if (((m23608b() != null && m23608b().equals(cVar.m23608b())) || (m23608b() == null && cVar.m23608b() == null)) && m23607c() == cVar.m23607c()) {
+            if (((m23609b() != null && m23609b().equals(cVar.m23609b())) || (m23609b() == null && cVar.m23609b() == null)) && m23608c() == cVar.m23608c()) {
                 return true;
             }
         }
@@ -48,23 +48,23 @@ public class C5219c extends AbstractC6749a {
     }
 
     public final int hashCode() {
-        return C6374q.m20523b(m23608b(), Long.valueOf(m23607c()));
+        return C6374q.m20524b(m23609b(), Long.valueOf(m23608c()));
     }
 
     @RecentlyNonNull
     public final String toString() {
-        C6374q.C6375a c = C6374q.m20522c(this);
-        c.m20521a("name", m23608b());
-        c.m20521a("version", Long.valueOf(m23607c()));
+        C6374q.C6375a c = C6374q.m20523c(this);
+        c.m20522a("name", m23609b());
+        c.m20522a("version", Long.valueOf(m23608c()));
         return c.toString();
     }
 
     @Override
     public final void writeToParcel(@RecentlyNonNull Parcel parcel, int i) {
-        int a = C6752c.m19124a(parcel);
-        C6752c.m19109p(parcel, 1, m23608b(), false);
-        C6752c.m19114k(parcel, 2, this.f17362b);
-        C6752c.m19111n(parcel, 3, m23607c());
-        C6752c.m19123b(parcel, a);
+        int a = C6752c.m19125a(parcel);
+        C6752c.m19110p(parcel, 1, m23609b(), false);
+        C6752c.m19115k(parcel, 2, this.f17362b);
+        C6752c.m19112n(parcel, 3, m23608c());
+        C6752c.m19124b(parcel, a);
     }
 }

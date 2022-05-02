@@ -26,10 +26,10 @@ public class C1406w implements Handler.Callback, C6227d.AbstractC6228a, Abstract
 
     public C1406w(AbstractView$OnTouchListenerC7889a aVar) {
         this.f5105a = aVar;
-        aVar.m14554P(this);
+        aVar.m14553P(this);
     }
 
-    public static long m37092e() {
+    public static long m37095e() {
         return Math.max(ValueAnimator.getFrameDelay(), 15L);
     }
 
@@ -39,7 +39,7 @@ public class C1406w implements Handler.Callback, C6227d.AbstractC6228a, Abstract
 
     @Override
     public void mo6929S4() {
-        m37093d();
+        m37096d();
     }
 
     @Override
@@ -67,11 +67,11 @@ public class C1406w implements Handler.Callback, C6227d.AbstractC6228a, Abstract
     public void mo4374b(C6227d<?> dVar, boolean z) {
         if (this.f5104O != z) {
             this.f5104O = z;
-            m37093d();
+            m37096d();
         }
     }
 
-    public void m37094c(AbstractC1407a aVar) {
+    public void m37097c(AbstractC1407a aVar) {
         boolean z;
         AbstractC9323v4<?> a = aVar.mo3268a(this);
         if (a != null) {
@@ -89,13 +89,13 @@ public class C1406w implements Handler.Callback, C6227d.AbstractC6228a, Abstract
         this.f5106b.add(aVar);
     }
 
-    public final void m37093d() {
+    public final void m37096d() {
         boolean z = this.f5104O && this.f5105a.m14582I0() == 0;
         if (this.f5103N != z) {
             this.f5103N = z;
             if (z) {
                 Handler handler = this.f5102M;
-                handler.sendMessageDelayed(Message.obtain(handler, 0), m37092e());
+                handler.sendMessageDelayed(Message.obtain(handler, 0), m37095e());
                 return;
             }
             this.f5102M.removeMessages(0);
@@ -104,10 +104,10 @@ public class C1406w implements Handler.Callback, C6227d.AbstractC6228a, Abstract
 
     @Override
     public void mo6904d6() {
-        m37093d();
+        m37096d();
     }
 
-    public void m37091f(AbstractC1407a aVar) {
+    public void m37094f(AbstractC1407a aVar) {
         AbstractC9323v4<?> a = aVar.mo3268a(this);
         if (a == null || a.m9118z9()) {
             this.f5106b.remove(aVar);
@@ -130,12 +130,12 @@ public class C1406w implements Handler.Callback, C6227d.AbstractC6228a, Abstract
             return true;
         }
         Handler handler = this.f5102M;
-        handler.sendMessageDelayed(Message.obtain(handler, 0), Math.max(m37092e(), j));
+        handler.sendMessageDelayed(Message.obtain(handler, 0), Math.max(m37095e(), j));
         return true;
     }
 
     @Override
     public void mo6871o6() {
-        m37093d();
+        m37096d();
     }
 }

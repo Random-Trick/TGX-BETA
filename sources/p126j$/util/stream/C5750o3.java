@@ -24,15 +24,15 @@ final class C5750o3 implements AbstractC5468G, Consumer {
     }
 
     @Override
-    public boolean mo22124a(Consumer consumer) {
-        while (this.f18445a.mo22124a(this)) {
+    public boolean mo22125a(Consumer consumer) {
+        while (this.f18445a.mo22125a(this)) {
             ConcurrentHashMap concurrentHashMap = this.f18446b;
             Object obj = this.f18447c;
             if (obj == null) {
                 obj = f18444d;
             }
             if (concurrentHashMap.putIfAbsent(obj, Boolean.TRUE) == null) {
-                consumer.mo22128k(this.f18447c);
+                consumer.mo22129k(this.f18447c);
                 this.f18447c = null;
                 return true;
             }
@@ -62,22 +62,22 @@ final class C5750o3 implements AbstractC5468G, Consumer {
 
     @Override
     public long getExactSizeIfKnown() {
-        return AbstractC5485a.m22569h(this);
+        return AbstractC5485a.m22570h(this);
     }
 
     @Override
     public boolean hasCharacteristics(int i) {
-        return AbstractC5485a.m22568j(this, i);
+        return AbstractC5485a.m22569j(this, i);
     }
 
     @Override
-    public void mo22128k(Object obj) {
+    public void mo22129k(Object obj) {
         this.f18447c = obj;
     }
 
-    public void m22208o(Consumer consumer, Object obj) {
+    public void m22209o(Consumer consumer, Object obj) {
         if (this.f18446b.putIfAbsent(obj != null ? obj : f18444d, Boolean.TRUE) == null) {
-            consumer.mo22128k(obj);
+            consumer.mo22129k(obj);
         }
     }
 

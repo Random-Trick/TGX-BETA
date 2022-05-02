@@ -14,26 +14,26 @@ import java.io.OutputStream;
 public class C5836b {
 
     public static class C5837a {
-        public static void m21963a(FileDescriptor fileDescriptor) {
+        public static void m21964a(FileDescriptor fileDescriptor) {
             Os.close(fileDescriptor);
         }
 
-        public static FileDescriptor m21962b(FileDescriptor fileDescriptor) {
+        public static FileDescriptor m21963b(FileDescriptor fileDescriptor) {
             return Os.dup(fileDescriptor);
         }
 
-        public static long m21961c(FileDescriptor fileDescriptor, long j, int i) {
+        public static long m21962c(FileDescriptor fileDescriptor, long j, int i) {
             return Os.lseek(fileDescriptor, j, i);
         }
     }
 
     public static class C5838b {
-        public static void m21960a(MediaMetadataRetriever mediaMetadataRetriever, MediaDataSource mediaDataSource) {
+        public static void m21961a(MediaMetadataRetriever mediaMetadataRetriever, MediaDataSource mediaDataSource) {
             mediaMetadataRetriever.setDataSource(mediaDataSource);
         }
     }
 
-    public static String m21970a(byte[] bArr) {
+    public static String m21971a(byte[] bArr) {
         StringBuilder sb2 = new StringBuilder(bArr.length * 2);
         for (int i = 0; i < bArr.length; i++) {
             sb2.append(String.format("%02x", Byte.valueOf(bArr[i])));
@@ -41,10 +41,10 @@ public class C5836b {
         return sb2.toString();
     }
 
-    public static void m21969b(FileDescriptor fileDescriptor) {
+    public static void m21970b(FileDescriptor fileDescriptor) {
         if (Build.VERSION.SDK_INT >= 21) {
             try {
-                C5837a.m21963a(fileDescriptor);
+                C5837a.m21964a(fileDescriptor);
             } catch (Exception unused) {
                 Log.e("ExifInterfaceUtils", "Error closing fd.");
             }
@@ -53,7 +53,7 @@ public class C5836b {
         }
     }
 
-    public static void m21968c(Closeable closeable) {
+    public static void m21969c(Closeable closeable) {
         if (closeable != null) {
             try {
                 closeable.close();
@@ -64,7 +64,7 @@ public class C5836b {
         }
     }
 
-    public static long[] m21967d(Object obj) {
+    public static long[] m21968d(Object obj) {
         if (obj instanceof int[]) {
             int[] iArr = (int[]) obj;
             long[] jArr = new long[iArr.length];
@@ -79,7 +79,7 @@ public class C5836b {
         }
     }
 
-    public static int m21966e(InputStream inputStream, OutputStream outputStream) {
+    public static int m21967e(InputStream inputStream, OutputStream outputStream) {
         byte[] bArr = new byte[org.thunderdog.challegram.Log.TAG_LUX];
         int i = 0;
         while (true) {
@@ -92,7 +92,7 @@ public class C5836b {
         }
     }
 
-    public static void m21965f(InputStream inputStream, OutputStream outputStream, int i) {
+    public static void m21966f(InputStream inputStream, OutputStream outputStream, int i) {
         byte[] bArr = new byte[org.thunderdog.challegram.Log.TAG_LUX];
         while (i > 0) {
             int min = Math.min(i, (int) org.thunderdog.challegram.Log.TAG_LUX);
@@ -106,7 +106,7 @@ public class C5836b {
         }
     }
 
-    public static boolean m21964g(byte[] bArr, byte[] bArr2) {
+    public static boolean m21965g(byte[] bArr, byte[] bArr2) {
         if (bArr == null || bArr2 == null || bArr.length < bArr2.length) {
             return false;
         }

@@ -13,34 +13,34 @@ public final class C1187a0 {
         this.f4469a = C1216l0.f4531f;
     }
 
-    public final void m38180a() {
+    public final void m38183a() {
         int i;
         int i2 = this.f4470b;
-        C1186a.m38184f(i2 >= 0 && (i2 < (i = this.f4472d) || (i2 == i && this.f4471c == 0)));
+        C1186a.m38187f(i2 >= 0 && (i2 < (i = this.f4472d) || (i2 == i && this.f4471c == 0)));
     }
 
-    public int m38179b() {
+    public int m38182b() {
         return ((this.f4472d - this.f4470b) * 8) - this.f4471c;
     }
 
-    public void m38178c() {
+    public void m38181c() {
         if (this.f4471c != 0) {
             this.f4471c = 0;
             this.f4470b++;
-            m38180a();
+            m38183a();
         }
     }
 
-    public int m38177d() {
-        C1186a.m38184f(this.f4471c == 0);
+    public int m38180d() {
+        C1186a.m38187f(this.f4471c == 0);
         return this.f4470b;
     }
 
-    public int m38176e() {
+    public int m38179e() {
         return (this.f4470b * 8) + this.f4471c;
     }
 
-    public void m38175f(int i, int i2) {
+    public void m38178f(int i, int i2) {
         if (i2 < 32) {
             i &= (1 << i2) - 1;
         }
@@ -62,17 +62,17 @@ public final class C1187a0 {
         byte[] bArr2 = this.f4469a;
         bArr2[i7] = (byte) (bArr2[i7] & ((1 << i8) - 1));
         bArr2[i7] = (byte) (((i & ((1 << i6) - 1)) << i8) | bArr2[i7]);
-        m38163r(i2);
-        m38180a();
+        m38166r(i2);
+        m38183a();
     }
 
-    public boolean m38174g() {
+    public boolean m38177g() {
         boolean z = (this.f4469a[this.f4470b] & (Log.TAG_YOUTUBE >> this.f4471c)) != 0;
-        m38164q();
+        m38167q();
         return z;
     }
 
-    public int m38173h(int i) {
+    public int m38176h(int i) {
         int i2;
         if (i == 0) {
             return 0;
@@ -98,11 +98,11 @@ public final class C1187a0 {
             this.f4471c = 0;
             this.f4470b = i6 + 1;
         }
-        m38180a();
+        m38183a();
         return i7;
     }
 
-    public void m38172i(byte[] bArr, int i, int i2) {
+    public void m38175i(byte[] bArr, int i, int i2) {
         int i3 = (i2 >> 3) + i;
         while (i < i3) {
             byte[] bArr2 = this.f4469a;
@@ -136,61 +136,61 @@ public final class C1187a0 {
                 this.f4471c = 0;
                 this.f4470b = i12 + 1;
             }
-            m38180a();
+            m38183a();
         }
     }
 
-    public long m38171j(int i) {
-        return i <= 32 ? C1216l0.m38010F0(m38173h(i)) : C1216l0.m38012E0(m38173h(i - 32), m38173h(32));
+    public long m38174j(int i) {
+        return i <= 32 ? C1216l0.m38013F0(m38176h(i)) : C1216l0.m38015E0(m38176h(i - 32), m38176h(32));
     }
 
-    public void m38170k(byte[] bArr, int i, int i2) {
-        C1186a.m38184f(this.f4471c == 0);
+    public void m38173k(byte[] bArr, int i, int i2) {
+        C1186a.m38187f(this.f4471c == 0);
         System.arraycopy(this.f4469a, this.f4470b, bArr, i, i2);
         this.f4470b += i2;
-        m38180a();
+        m38183a();
     }
 
-    public String m38169l(int i, Charset charset) {
+    public String m38172l(int i, Charset charset) {
         byte[] bArr = new byte[i];
-        m38170k(bArr, 0, i);
+        m38173k(bArr, 0, i);
         return new String(bArr, charset);
     }
 
-    public void m38168m(C1189b0 b0Var) {
-        m38166o(b0Var.m38139d(), b0Var.m38137f());
-        m38165p(b0Var.m38138e() * 8);
+    public void m38171m(C1189b0 b0Var) {
+        m38169o(b0Var.m38142d(), b0Var.m38140f());
+        m38168p(b0Var.m38141e() * 8);
     }
 
-    public void m38167n(byte[] bArr) {
-        m38166o(bArr, bArr.length);
+    public void m38170n(byte[] bArr) {
+        m38169o(bArr, bArr.length);
     }
 
-    public void m38166o(byte[] bArr, int i) {
+    public void m38169o(byte[] bArr, int i) {
         this.f4469a = bArr;
         this.f4470b = 0;
         this.f4471c = 0;
         this.f4472d = i;
     }
 
-    public void m38165p(int i) {
+    public void m38168p(int i) {
         int i2 = i / 8;
         this.f4470b = i2;
         this.f4471c = i - (i2 * 8);
-        m38180a();
+        m38183a();
     }
 
-    public void m38164q() {
+    public void m38167q() {
         int i = this.f4471c + 1;
         this.f4471c = i;
         if (i == 8) {
             this.f4471c = 0;
             this.f4470b++;
         }
-        m38180a();
+        m38183a();
     }
 
-    public void m38163r(int i) {
+    public void m38166r(int i) {
         int i2 = i / 8;
         int i3 = this.f4470b + i2;
         this.f4470b = i3;
@@ -200,13 +200,13 @@ public final class C1187a0 {
             this.f4470b = i3 + 1;
             this.f4471c = i4 - 8;
         }
-        m38180a();
+        m38183a();
     }
 
-    public void m38162s(int i) {
-        C1186a.m38184f(this.f4471c == 0);
+    public void m38165s(int i) {
+        C1186a.m38187f(this.f4471c == 0);
         this.f4470b += i;
-        m38180a();
+        m38183a();
     }
 
     public C1187a0(byte[] bArr) {

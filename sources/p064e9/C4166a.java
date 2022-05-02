@@ -21,10 +21,10 @@ public final class C4166a extends C4170c {
     }
 
     public final void finalize() {
-        m28632g();
+        m28634g();
     }
 
-    public void m28632g() {
-        super.m28627c();
+    public void m28634g() {
+        super.m28629c();
     }
 }

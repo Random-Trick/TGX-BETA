@@ -11,11 +11,11 @@ public class C1298c implements AbstractC1296b {
         this.f4679a = bVar;
     }
 
-    public AbstractC1296b m37788a() {
+    public AbstractC1296b m37791a() {
         return this.f4679a;
     }
 
-    public void m37787b(AbstractC1296b bVar) {
+    public void m37790b(AbstractC1296b bVar) {
         this.f4679a = bVar;
     }
 

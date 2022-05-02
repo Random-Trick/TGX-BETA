@@ -24,60 +24,60 @@ import p345y8.C10447b;
 import p345y8.C10454h;
 
 public class C8065b extends AbstractList<AbstractC7306f> {
-    public TrackExtendsBox f26265M;
-    public SoftReference<AbstractC7306f>[] f26266N;
-    public List<TrackFragmentBox> f26267O;
-    public int[] f26269Q;
-    public AbstractC8951b f26271a;
-    public C8631d[] f26272b;
-    public TrackBox f26273c;
-    public Map<TrackRunBox, SoftReference<ByteBuffer>> f26268P = new HashMap();
-    public int f26270R = -1;
+    public TrackExtendsBox f26268M;
+    public SoftReference<AbstractC7306f>[] f26269N;
+    public List<TrackFragmentBox> f26270O;
+    public int[] f26272Q;
+    public AbstractC8951b f26274a;
+    public C8631d[] f26275b;
+    public TrackBox f26276c;
+    public Map<TrackRunBox, SoftReference<ByteBuffer>> f26271P = new HashMap();
+    public int f26273R = -1;
 
     public class C8066a implements AbstractC7306f {
-        public final long f26275b;
-        public final ByteBuffer f26276c;
-        public final int f26277d;
+        public final long f26278b;
+        public final ByteBuffer f26279c;
+        public final int f26280d;
 
         public C8066a(long j, ByteBuffer byteBuffer, int i) {
-            this.f26275b = j;
-            this.f26276c = byteBuffer;
-            this.f26277d = i;
+            this.f26278b = j;
+            this.f26279c = byteBuffer;
+            this.f26280d = i;
         }
 
         @Override
-        public void mo13643a(WritableByteChannel writableByteChannel) {
-            writableByteChannel.write(m13642b());
+        public void mo13642a(WritableByteChannel writableByteChannel) {
+            writableByteChannel.write(m13641b());
         }
 
-        public ByteBuffer m13642b() {
-            return (ByteBuffer) ((ByteBuffer) this.f26276c.position(this.f26277d)).slice().limit(C10447b.m5103a(this.f26275b));
+        public ByteBuffer m13641b() {
+            return (ByteBuffer) ((ByteBuffer) this.f26279c.position(this.f26280d)).slice().limit(C10447b.m5103a(this.f26278b));
         }
 
         @Override
         public long getSize() {
-            return this.f26275b;
+            return this.f26278b;
         }
     }
 
     public C8065b(long j, AbstractC8951b bVar, C8631d... dVarArr) {
-        this.f26273c = null;
-        this.f26265M = null;
-        this.f26271a = bVar;
-        this.f26272b = dVarArr;
+        this.f26276c = null;
+        this.f26268M = null;
+        this.f26274a = bVar;
+        this.f26275b = dVarArr;
         for (TrackBox trackBox : C10454h.m5085h(bVar, "moov[0]/trak")) {
             if (trackBox.getTrackHeaderBox().getTrackId() == j) {
-                this.f26273c = trackBox;
+                this.f26276c = trackBox;
             }
         }
-        if (this.f26273c != null) {
+        if (this.f26276c != null) {
             for (TrackExtendsBox trackExtendsBox : C10454h.m5085h(bVar, "moov[0]/mvex[0]/trex")) {
-                if (trackExtendsBox.getTrackId() == this.f26273c.getTrackHeaderBox().getTrackId()) {
-                    this.f26265M = trackExtendsBox;
+                if (trackExtendsBox.getTrackId() == this.f26276c.getTrackHeaderBox().getTrackId()) {
+                    this.f26268M = trackExtendsBox;
                 }
             }
-            this.f26266N = (SoftReference[]) Array.newInstance(SoftReference.class, size());
-            m13644m();
+            this.f26269N = (SoftReference[]) Array.newInstance(SoftReference.class, size());
+            m13643m();
             return;
         }
         throw new RuntimeException("This MP4 does not contain track " + j);
@@ -88,20 +88,20 @@ public class C8065b extends AbstractList<AbstractC7306f> {
         ByteBuffer byteBuffer;
         long defaultSampleSize;
         AbstractC7306f fVar;
-        SoftReference<AbstractC7306f>[] softReferenceArr = this.f26266N;
+        SoftReference<AbstractC7306f>[] softReferenceArr = this.f26269N;
         if (!(softReferenceArr[i] == null || (fVar = softReferenceArr[i].get()) == null)) {
             return fVar;
         }
         int i2 = i + 1;
-        int length = this.f26269Q.length;
+        int length = this.f26272Q.length;
         while (true) {
             length--;
-            if (i2 - this.f26269Q[length] >= 0) {
+            if (i2 - this.f26272Q[length] >= 0) {
                 break;
             }
         }
-        TrackFragmentBox trackFragmentBox = this.f26267O.get(length);
-        int i3 = i2 - this.f26269Q[length];
+        TrackFragmentBox trackFragmentBox = this.f26270O.get(length);
+        int i3 = i2 - this.f26272Q[length];
         MovieFragmentBox movieFragmentBox = (MovieFragmentBox) trackFragmentBox.getParent();
         int i4 = 0;
         for (AbstractC8950a aVar : trackFragmentBox.getBoxes()) {
@@ -120,7 +120,7 @@ public class C8065b extends AbstractList<AbstractC7306f> {
                         if (hasDefaultSampleSize) {
                             defaultSampleSize = trackFragmentHeaderBox.getDefaultSampleSize();
                         } else {
-                            TrackExtendsBox trackExtendsBox = this.f26265M;
+                            TrackExtendsBox trackExtendsBox = this.f26268M;
                             if (trackExtendsBox != null) {
                                 defaultSampleSize = trackExtendsBox.getDefaultSampleSize();
                             } else {
@@ -131,7 +131,7 @@ public class C8065b extends AbstractList<AbstractC7306f> {
                     } else {
                         j = 0;
                     }
-                    SoftReference<ByteBuffer> softReference = this.f26268P.get(trackRunBox);
+                    SoftReference<ByteBuffer> softReference = this.f26271P.get(trackRunBox);
                     ByteBuffer byteBuffer2 = softReference != null ? softReference.get() : null;
                     if (byteBuffer2 == null) {
                         AbstractC8951b bVar = movieFragmentBox;
@@ -144,11 +144,11 @@ public class C8065b extends AbstractList<AbstractC7306f> {
                         }
                         int i6 = 0;
                         for (TrackRunBox.C3432a aVar2 : entries) {
-                            i6 = isSampleSizePresent ? (int) (i6 + aVar2.m30571l()) : (int) (i6 + j);
+                            i6 = isSampleSizePresent ? (int) (i6 + aVar2.m30573l()) : (int) (i6 + j);
                         }
                         try {
                             ByteBuffer byteBuffer3 = bVar.getByteBuffer(j2, i6);
-                            this.f26268P.put(trackRunBox, new SoftReference<>(byteBuffer3));
+                            this.f26271P.put(trackRunBox, new SoftReference<>(byteBuffer3));
                             byteBuffer = byteBuffer3;
                         } catch (IOException e) {
                             throw new RuntimeException(e);
@@ -158,10 +158,10 @@ public class C8065b extends AbstractList<AbstractC7306f> {
                     }
                     int i7 = 0;
                     for (int i8 = 0; i8 < i5; i8++) {
-                        i7 = (int) (isSampleSizePresent ? i7 + entries.get(i8).m30571l() : i7 + j);
+                        i7 = (int) (isSampleSizePresent ? i7 + entries.get(i8).m30573l() : i7 + j);
                     }
-                    C8066a aVar3 = new C8066a(isSampleSizePresent ? entries.get(i5).m30571l() : j, byteBuffer, i7);
-                    this.f26266N[i] = new SoftReference<>(aVar3);
+                    C8066a aVar3 = new C8066a(isSampleSizePresent ? entries.get(i5).m30573l() : j, byteBuffer, i7);
+                    this.f26269N[i] = new SoftReference<>(aVar3);
                     return aVar3;
                 }
             }
@@ -169,7 +169,7 @@ public class C8065b extends AbstractList<AbstractC7306f> {
         throw new RuntimeException("Couldn't find sample in the traf I was looking");
     }
 
-    public final int m13645i(TrackFragmentBox trackFragmentBox) {
+    public final int m13644i(TrackFragmentBox trackFragmentBox) {
         List<AbstractC8950a> boxes = trackFragmentBox.getBoxes();
         int i = 0;
         for (int i2 = 0; i2 < boxes.size(); i2++) {
@@ -181,65 +181,65 @@ public class C8065b extends AbstractList<AbstractC7306f> {
         return i;
     }
 
-    public final List<TrackFragmentBox> m13644m() {
-        List<TrackFragmentBox> list = this.f26267O;
+    public final List<TrackFragmentBox> m13643m() {
+        List<TrackFragmentBox> list = this.f26270O;
         if (list != null) {
             return list;
         }
         ArrayList arrayList = new ArrayList();
-        for (MovieFragmentBox movieFragmentBox : this.f26271a.getBoxes(MovieFragmentBox.class)) {
+        for (MovieFragmentBox movieFragmentBox : this.f26274a.getBoxes(MovieFragmentBox.class)) {
             for (TrackFragmentBox trackFragmentBox : movieFragmentBox.getBoxes(TrackFragmentBox.class)) {
-                if (trackFragmentBox.getTrackFragmentHeaderBox().getTrackId() == this.f26273c.getTrackHeaderBox().getTrackId()) {
+                if (trackFragmentBox.getTrackFragmentHeaderBox().getTrackId() == this.f26276c.getTrackHeaderBox().getTrackId()) {
                     arrayList.add(trackFragmentBox);
                 }
             }
         }
-        C8631d[] dVarArr = this.f26272b;
+        C8631d[] dVarArr = this.f26275b;
         if (dVarArr != null) {
             for (C8631d dVar : dVarArr) {
                 for (MovieFragmentBox movieFragmentBox2 : dVar.getBoxes(MovieFragmentBox.class)) {
                     for (TrackFragmentBox trackFragmentBox2 : movieFragmentBox2.getBoxes(TrackFragmentBox.class)) {
-                        if (trackFragmentBox2.getTrackFragmentHeaderBox().getTrackId() == this.f26273c.getTrackHeaderBox().getTrackId()) {
+                        if (trackFragmentBox2.getTrackFragmentHeaderBox().getTrackId() == this.f26276c.getTrackHeaderBox().getTrackId()) {
                             arrayList.add(trackFragmentBox2);
                         }
                     }
                 }
             }
         }
-        this.f26267O = arrayList;
-        this.f26269Q = new int[arrayList.size()];
+        this.f26270O = arrayList;
+        this.f26272Q = new int[arrayList.size()];
         int i = 1;
-        for (int i2 = 0; i2 < this.f26267O.size(); i2++) {
-            this.f26269Q[i2] = i;
-            i += m13645i(this.f26267O.get(i2));
+        for (int i2 = 0; i2 < this.f26270O.size(); i2++) {
+            this.f26272Q[i2] = i;
+            i += m13644i(this.f26270O.get(i2));
         }
         return arrayList;
     }
 
     @Override
     public int size() {
-        int i = this.f26270R;
+        int i = this.f26273R;
         if (i != -1) {
             return i;
         }
         int i2 = 0;
-        for (MovieFragmentBox movieFragmentBox : this.f26271a.getBoxes(MovieFragmentBox.class)) {
+        for (MovieFragmentBox movieFragmentBox : this.f26274a.getBoxes(MovieFragmentBox.class)) {
             for (TrackFragmentBox trackFragmentBox : movieFragmentBox.getBoxes(TrackFragmentBox.class)) {
-                if (trackFragmentBox.getTrackFragmentHeaderBox().getTrackId() == this.f26273c.getTrackHeaderBox().getTrackId()) {
+                if (trackFragmentBox.getTrackFragmentHeaderBox().getTrackId() == this.f26276c.getTrackHeaderBox().getTrackId()) {
                     i2 = (int) (i2 + ((TrackRunBox) trackFragmentBox.getBoxes(TrackRunBox.class).get(0)).getSampleCount());
                 }
             }
         }
-        for (C8631d dVar : this.f26272b) {
+        for (C8631d dVar : this.f26275b) {
             for (MovieFragmentBox movieFragmentBox2 : dVar.getBoxes(MovieFragmentBox.class)) {
                 for (TrackFragmentBox trackFragmentBox2 : movieFragmentBox2.getBoxes(TrackFragmentBox.class)) {
-                    if (trackFragmentBox2.getTrackFragmentHeaderBox().getTrackId() == this.f26273c.getTrackHeaderBox().getTrackId()) {
+                    if (trackFragmentBox2.getTrackFragmentHeaderBox().getTrackId() == this.f26276c.getTrackHeaderBox().getTrackId()) {
                         i2 = (int) (i2 + ((TrackRunBox) trackFragmentBox2.getBoxes(TrackRunBox.class).get(0)).getSampleCount());
                     }
                 }
             }
         }
-        this.f26270R = i2;
+        this.f26273R = i2;
         return i2;
     }
 }

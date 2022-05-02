@@ -6,14 +6,14 @@ import p258s2.C8630c;
 
 @AbstractC8385g(tags = {5})
 public class C8384f extends AbstractC8380b {
-    public byte[] f27233d;
+    public byte[] f27236d;
 
     @Override
-    public void mo12590e(ByteBuffer byteBuffer) {
-        int i = this.f27214b;
+    public void mo12589e(ByteBuffer byteBuffer) {
+        int i = this.f27217b;
         if (i > 0) {
             byte[] bArr = new byte[i];
-            this.f27233d = bArr;
+            this.f27236d = bArr;
             byteBuffer.get(bArr);
         }
     }
@@ -22,11 +22,11 @@ public class C8384f extends AbstractC8380b {
         if (this == obj) {
             return true;
         }
-        return obj != null && getClass() == obj.getClass() && Arrays.equals(this.f27233d, ((C8384f) obj).f27233d);
+        return obj != null && getClass() == obj.getClass() && Arrays.equals(this.f27236d, ((C8384f) obj).f27236d);
     }
 
     public int hashCode() {
-        byte[] bArr = this.f27233d;
+        byte[] bArr = this.f27236d;
         if (bArr != null) {
             return Arrays.hashCode(bArr);
         }
@@ -38,8 +38,8 @@ public class C8384f extends AbstractC8380b {
         StringBuilder sb2 = new StringBuilder();
         sb2.append("DecoderSpecificInfo");
         sb2.append("{bytes=");
-        byte[] bArr = this.f27233d;
-        sb2.append(bArr == null ? "null" : C8630c.m11880b(bArr));
+        byte[] bArr = this.f27236d;
+        sb2.append(bArr == null ? "null" : C8630c.m11879b(bArr));
         sb2.append('}');
         return sb2.toString();
     }

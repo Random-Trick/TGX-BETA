@@ -24,7 +24,7 @@ public class C6799e {
         }
 
         public int compare(C6798d dVar, C6798d dVar2) {
-            return Float.compare(dVar.m19012i(), dVar2.m19012i());
+            return Float.compare(dVar.m19013i(), dVar2.m19013i());
         }
     }
 
@@ -33,15 +33,15 @@ public class C6799e {
         this.f21298e = nVar;
     }
 
-    public static float m19011a(int[] iArr, int i) {
+    public static float m19012a(int[] iArr, int i) {
         return ((i - iArr[4]) - iArr[3]) - (iArr[2] / 2.0f);
     }
 
-    public static void m19007e(int[] iArr) {
+    public static void m19008e(int[] iArr) {
         Arrays.fill(iArr, 0);
     }
 
-    public static void m19006f(int[] iArr) {
+    public static void m19007f(int[] iArr) {
         iArr[0] = iArr[2];
         iArr[1] = iArr[3];
         iArr[2] = iArr[4];
@@ -49,7 +49,7 @@ public class C6799e {
         iArr[4] = 0;
     }
 
-    public static boolean m19003i(int[] iArr) {
+    public static boolean m19004i(int[] iArr) {
         int i = 0;
         for (int i2 = 0; i2 < 5; i2++) {
             int i3 = iArr[i2];
@@ -66,7 +66,7 @@ public class C6799e {
         return Math.abs(f - ((float) iArr[0])) < f2 && Math.abs(f - ((float) iArr[1])) < f2 && Math.abs((f * 3.0f) - ((float) iArr[2])) < 3.0f * f2 && Math.abs(f - ((float) iArr[3])) < f2 && Math.abs(f - ((float) iArr[4])) < f2;
     }
 
-    public static boolean m19002j(int[] iArr) {
+    public static boolean m19003j(int[] iArr) {
         int i = 0;
         for (int i2 = 0; i2 < 5; i2++) {
             int i3 = iArr[i2];
@@ -83,45 +83,45 @@ public class C6799e {
         return Math.abs(f - ((float) iArr[0])) < f2 && Math.abs(f - ((float) iArr[1])) < f2 && Math.abs((f * 3.0f) - ((float) iArr[2])) < 3.0f * f2 && Math.abs(f - ((float) iArr[3])) < f2 && Math.abs(f - ((float) iArr[4])) < f2;
     }
 
-    public static double m18997o(C6798d dVar, C6798d dVar2) {
-        double c = dVar.m27487c() - dVar2.m27487c();
-        double d = dVar.m27486d() - dVar2.m27486d();
+    public static double m18998o(C6798d dVar, C6798d dVar2) {
+        double c = dVar.m27489c() - dVar2.m27489c();
+        double d = dVar.m27488d() - dVar2.m27488d();
         return (c * c) + (d * d);
     }
 
-    public final boolean m19010b(int i, int i2) {
+    public final boolean m19011b(int i, int i2) {
         int i3;
         int i4;
         int i5;
-        int[] k = m19001k();
+        int[] k = m19002k();
         int i6 = 0;
-        while (i >= i6 && i2 >= i6 && this.f21294a.m24281d(i2 - i6, i - i6)) {
+        while (i >= i6 && i2 >= i6 && this.f21294a.m24282d(i2 - i6, i - i6)) {
             k[2] = k[2] + 1;
             i6++;
         }
         if (k[2] == 0) {
             return false;
         }
-        while (i >= i6 && i2 >= i6 && !this.f21294a.m24281d(i2 - i6, i - i6)) {
+        while (i >= i6 && i2 >= i6 && !this.f21294a.m24282d(i2 - i6, i - i6)) {
             k[1] = k[1] + 1;
             i6++;
         }
         if (k[1] == 0) {
             return false;
         }
-        while (i >= i6 && i2 >= i6 && this.f21294a.m24281d(i2 - i6, i - i6)) {
+        while (i >= i6 && i2 >= i6 && this.f21294a.m24282d(i2 - i6, i - i6)) {
             k[0] = k[0] + 1;
             i6++;
         }
         if (k[0] == 0) {
             return false;
         }
-        int f = this.f21294a.m24279f();
-        int h = this.f21294a.m24277h();
+        int f = this.f21294a.m24280f();
+        int h = this.f21294a.m24278h();
         int i7 = 1;
         while (true) {
             int i8 = i + i7;
-            if (i8 >= f || (i5 = i2 + i7) >= h || !this.f21294a.m24281d(i5, i8)) {
+            if (i8 >= f || (i5 = i2 + i7) >= h || !this.f21294a.m24282d(i5, i8)) {
                 break;
             }
             k[2] = k[2] + 1;
@@ -129,7 +129,7 @@ public class C6799e {
         }
         while (true) {
             int i9 = i + i7;
-            if (i9 >= f || (i4 = i2 + i7) >= h || this.f21294a.m24281d(i4, i9)) {
+            if (i9 >= f || (i4 = i2 + i7) >= h || this.f21294a.m24282d(i4, i9)) {
                 break;
             }
             k[3] = k[3] + 1;
@@ -140,7 +140,7 @@ public class C6799e {
         }
         while (true) {
             int i10 = i + i7;
-            if (i10 >= f || (i3 = i2 + i7) >= h || !this.f21294a.m24281d(i3, i10)) {
+            if (i10 >= f || (i3 = i2 + i7) >= h || !this.f21294a.m24282d(i3, i10)) {
                 break;
             }
             k[4] = k[4] + 1;
@@ -149,21 +149,21 @@ public class C6799e {
         if (k[4] == 0) {
             return false;
         }
-        return m19002j(k);
+        return m19003j(k);
     }
 
-    public final float m19009c(int r11, int r12, int r13, int r14) {
-        throw new UnsupportedOperationException("Method not decompiled: p179m8.C6799e.m19009c(int, int, int, int):float");
+    public final float m19010c(int r11, int r12, int r13, int r14) {
+        throw new UnsupportedOperationException("Method not decompiled: p179m8.C6799e.m19010c(int, int, int, int):float");
     }
 
-    public final float m19008d(int r11, int r12, int r13, int r14) {
-        throw new UnsupportedOperationException("Method not decompiled: p179m8.C6799e.m19008d(int, int, int, int):float");
+    public final float m19009d(int r11, int r12, int r13, int r14) {
+        throw new UnsupportedOperationException("Method not decompiled: p179m8.C6799e.m19009d(int, int, int, int):float");
     }
 
-    public final C6802f m19005g(Map<EnumC4522e, ?> map) {
+    public final C6802f m19006g(Map<EnumC4522e, ?> map) {
         boolean z = map != null && map.containsKey(EnumC4522e.TRY_HARDER);
-        int f = this.f21294a.m24279f();
-        int h = this.f21294a.m24277h();
+        int f = this.f21294a.m24280f();
+        int h = this.f21294a.m24278h();
         int i = (f * 3) / 388;
         if (i < 3 || z) {
             i = 3;
@@ -172,11 +172,11 @@ public class C6799e {
         int i2 = i - 1;
         boolean z2 = false;
         while (i2 < f && !z2) {
-            m19007e(iArr);
+            m19008e(iArr);
             int i3 = 0;
             int i4 = 0;
             while (i3 < h) {
-                if (this.f21294a.m24281d(i3, i2)) {
+                if (this.f21294a.m24282d(i3, i2)) {
                     if ((i4 & 1) == 1) {
                         i4++;
                     }
@@ -184,23 +184,23 @@ public class C6799e {
                 } else if ((i4 & 1) != 0) {
                     iArr[i4] = iArr[i4] + 1;
                 } else if (i4 == 4) {
-                    if (!m19003i(iArr)) {
-                        m19006f(iArr);
-                    } else if (m19000l(iArr, i2, i3)) {
+                    if (!m19004i(iArr)) {
+                        m19007f(iArr);
+                    } else if (m19001l(iArr, i2, i3)) {
                         if (this.f21296c) {
-                            z2 = m18999m();
+                            z2 = m19000m();
                         } else {
-                            int h2 = m19004h();
+                            int h2 = m19005h();
                             if (h2 > iArr[2]) {
                                 i2 += (h2 - iArr[2]) - 2;
                                 i3 = h - 1;
                             }
                         }
-                        m19007e(iArr);
+                        m19008e(iArr);
                         i = 2;
                         i4 = 0;
                     } else {
-                        m19006f(iArr);
+                        m19007f(iArr);
                     }
                     i4 = 3;
                 } else {
@@ -209,51 +209,51 @@ public class C6799e {
                 }
                 i3++;
             }
-            if (m19003i(iArr) && m19000l(iArr, i2, h)) {
+            if (m19004i(iArr) && m19001l(iArr, i2, h)) {
                 i = iArr[0];
                 if (this.f21296c) {
-                    z2 = m18999m();
+                    z2 = m19000m();
                 }
             }
             i2 += i;
         }
-        C6798d[] n = m18998n();
-        C4530m.m27485e(n);
+        C6798d[] n = m18999n();
+        C4530m.m27487e(n);
         return new C6802f(n);
     }
 
-    public final int m19004h() {
+    public final int m19005h() {
         if (this.f21295b.size() <= 1) {
             return 0;
         }
         C6798d dVar = null;
         for (C6798d dVar2 : this.f21295b) {
-            if (dVar2.m19013h() >= 2) {
+            if (dVar2.m19014h() >= 2) {
                 if (dVar == null) {
                     dVar = dVar2;
                 } else {
                     this.f21296c = true;
-                    return ((int) (Math.abs(dVar.m27487c() - dVar2.m27487c()) - Math.abs(dVar.m27486d() - dVar2.m27486d()))) / 2;
+                    return ((int) (Math.abs(dVar.m27489c() - dVar2.m27489c()) - Math.abs(dVar.m27488d() - dVar2.m27488d()))) / 2;
                 }
             }
         }
         return 0;
     }
 
-    public final int[] m19001k() {
-        m19007e(this.f21297d);
+    public final int[] m19002k() {
+        m19008e(this.f21297d);
         return this.f21297d;
     }
 
-    public final boolean m19000l(int[] iArr, int i, int i2) {
+    public final boolean m19001l(int[] iArr, int i, int i2) {
         boolean z = false;
         int i3 = iArr[0] + iArr[1] + iArr[2] + iArr[3] + iArr[4];
-        int a = (int) m19011a(iArr, i2);
-        float d = m19008d(i, a, iArr[2], i3);
+        int a = (int) m19012a(iArr, i2);
+        float d = m19009d(i, a, iArr[2], i3);
         if (!Float.isNaN(d)) {
             int i4 = (int) d;
-            float c = m19009c(a, i4, iArr[2], i3);
-            if (!Float.isNaN(c) && m19010b(i4, (int) c)) {
+            float c = m19010c(a, i4, iArr[2], i3);
+            if (!Float.isNaN(c) && m19011b(i4, (int) c)) {
                 float f = i3 / 7.0f;
                 int i5 = 0;
                 while (true) {
@@ -261,8 +261,8 @@ public class C6799e {
                         break;
                     }
                     C6798d dVar = this.f21295b.get(i5);
-                    if (dVar.m19015f(f, d, c)) {
-                        this.f21295b.set(i5, dVar.m19014g(d, c, f));
+                    if (dVar.m19016f(f, d, c)) {
+                        this.f21295b.set(i5, dVar.m19015g(d, c, f));
                         z = true;
                         break;
                     }
@@ -273,7 +273,7 @@ public class C6799e {
                     this.f21295b.add(dVar2);
                     AbstractC4531n nVar = this.f21298e;
                     if (nVar != null) {
-                        nVar.m27484a(dVar2);
+                        nVar.m27486a(dVar2);
                     }
                 }
                 return true;
@@ -282,15 +282,15 @@ public class C6799e {
         return false;
     }
 
-    public final boolean m18999m() {
+    public final boolean m19000m() {
         int size = this.f21295b.size();
         float f = 0.0f;
         int i = 0;
         float f2 = 0.0f;
         for (C6798d dVar : this.f21295b) {
-            if (dVar.m19013h() >= 2) {
+            if (dVar.m19014h() >= 2) {
                 i++;
-                f2 += dVar.m19012i();
+                f2 += dVar.m19013i();
             }
         }
         if (i < 3) {
@@ -298,12 +298,12 @@ public class C6799e {
         }
         float f3 = f2 / size;
         for (C6798d dVar2 : this.f21295b) {
-            f += Math.abs(dVar2.m19012i() - f3);
+            f += Math.abs(dVar2.m19013i() - f3);
         }
         return f <= f2 * 0.05f;
     }
 
-    public final p179m8.C6798d[] m18998n() {
-        throw new UnsupportedOperationException("Method not decompiled: p179m8.C6799e.m18998n():m8.d[]");
+    public final p179m8.C6798d[] m18999n() {
+        throw new UnsupportedOperationException("Method not decompiled: p179m8.C6799e.m18999n():m8.d[]");
     }
 }

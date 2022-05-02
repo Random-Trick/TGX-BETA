@@ -8,6 +8,6 @@ public final class C2127ad implements Client.AbstractC7865g {
 
     @Override
     public final void mo255t2(TdApi.Object object) {
-        View$OnClickListenerC2971rh.m32629On(object);
+        View$OnClickListenerC2971rh.m32632On(object);
     }
 }

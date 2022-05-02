@@ -23,7 +23,7 @@ import org.thunderdog.challegram.Log;
 import p352z0.C11216f;
 
 public class C8945k {
-    public static void m10865a(Closeable closeable) {
+    public static void m10864a(Closeable closeable) {
         if (closeable != null) {
             try {
                 closeable.close();
@@ -32,33 +32,33 @@ public class C8945k {
         }
     }
 
-    public static ByteBuffer m10864b(Context context, Resources resources, int i) {
-        File e = m10861e(context);
+    public static ByteBuffer m10863b(Context context, Resources resources, int i) {
+        File e = m10860e(context);
         if (e == null) {
             return null;
         }
         try {
-            if (!m10863c(e, resources, i)) {
+            if (!m10862c(e, resources, i)) {
                 return null;
             }
-            return m10859g(e);
+            return m10858g(e);
         } finally {
             e.delete();
         }
     }
 
-    public static boolean m10863c(File file, Resources resources, int i) {
+    public static boolean m10862c(File file, Resources resources, int i) {
         InputStream inputStream;
         Throwable th;
         try {
             inputStream = resources.openRawResource(i);
             try {
-                boolean d = m10862d(file, inputStream);
-                m10865a(inputStream);
+                boolean d = m10861d(file, inputStream);
+                m10864a(inputStream);
                 return d;
             } catch (Throwable th2) {
                 th = th2;
-                m10865a(inputStream);
+                m10864a(inputStream);
                 throw th;
             }
         } catch (Throwable th3) {
@@ -67,7 +67,7 @@ public class C8945k {
         }
     }
 
-    public static boolean m10862d(File file, InputStream inputStream) {
+    public static boolean m10861d(File file, InputStream inputStream) {
         Throwable th;
         IOException e;
         FileOutputStream fileOutputStream;
@@ -89,7 +89,7 @@ public class C8945k {
                 if (read != -1) {
                     fileOutputStream.write(bArr, 0, read);
                 } else {
-                    m10865a(fileOutputStream);
+                    m10864a(fileOutputStream);
                     StrictMode.setThreadPolicy(allowThreadDiskWrites);
                     return true;
                 }
@@ -98,19 +98,19 @@ public class C8945k {
             e = e3;
             fileOutputStream2 = fileOutputStream;
             android.util.Log.e("TypefaceCompatUtil", "Error copying resource contents to temp file: " + e.getMessage());
-            m10865a(fileOutputStream2);
+            m10864a(fileOutputStream2);
             StrictMode.setThreadPolicy(allowThreadDiskWrites);
             return false;
         } catch (Throwable th3) {
             th = th3;
             fileOutputStream2 = fileOutputStream;
-            m10865a(fileOutputStream2);
+            m10864a(fileOutputStream2);
             StrictMode.setThreadPolicy(allowThreadDiskWrites);
             throw th;
         }
     }
 
-    public static File m10861e(Context context) {
+    public static File m10860e(Context context) {
         File cacheDir = context.getCacheDir();
         if (cacheDir == null) {
             return null;
@@ -125,7 +125,7 @@ public class C8945k {
         return null;
     }
 
-    public static ByteBuffer m10860f(Context context, CancellationSignal cancellationSignal, Uri uri) {
+    public static ByteBuffer m10859f(Context context, CancellationSignal cancellationSignal, Uri uri) {
         try {
             ParcelFileDescriptor openFileDescriptor = context.getContentResolver().openFileDescriptor(uri, "r", cancellationSignal);
             if (openFileDescriptor == null) {
@@ -154,7 +154,7 @@ public class C8945k {
         }
     }
 
-    public static ByteBuffer m10859g(File file) {
+    public static ByteBuffer m10858g(File file) {
         try {
             FileInputStream fileInputStream = new FileInputStream(file);
             FileChannel channel = fileInputStream.getChannel();
@@ -166,13 +166,13 @@ public class C8945k {
         }
     }
 
-    public static Map<Uri, ByteBuffer> m10858h(Context context, C11216f.C11218b[] bVarArr, CancellationSignal cancellationSignal) {
+    public static Map<Uri, ByteBuffer> m10857h(Context context, C11216f.C11218b[] bVarArr, CancellationSignal cancellationSignal) {
         HashMap hashMap = new HashMap();
         for (C11216f.C11218b bVar : bVarArr) {
             if (bVar.m1200b() == 0) {
                 Uri d = bVar.m1198d();
                 if (!hashMap.containsKey(d)) {
-                    hashMap.put(d, m10860f(context, cancellationSignal, d));
+                    hashMap.put(d, m10859f(context, cancellationSignal, d));
                 }
             }
         }

@@ -1,20 +1,20 @@
 package p317wa;
 
 public final class C10016b implements AbstractC10017c<Float> {
-    public final float f32621a;
-    public final float f32622b;
+    public final float f32624a;
+    public final float f32625b;
 
     public C10016b(float f, float f2) {
-        this.f32621a = f;
-        this.f32622b = f2;
+        this.f32624a = f;
+        this.f32625b = f2;
     }
 
     public Float mo6212m() {
-        return Float.valueOf(this.f32622b);
+        return Float.valueOf(this.f32625b);
     }
 
     public Float mo6213i() {
-        return Float.valueOf(this.f32621a);
+        return Float.valueOf(this.f32624a);
     }
 
     public boolean m6215c(float f, float f2) {
@@ -27,8 +27,8 @@ public final class C10016b implements AbstractC10017c<Float> {
                 return true;
             }
             C10016b bVar = (C10016b) obj;
-            if (this.f32621a == bVar.f32621a) {
-                if (this.f32622b == bVar.f32622b) {
+            if (this.f32624a == bVar.f32624a) {
+                if (this.f32625b == bVar.f32625b) {
                     return true;
                 }
             }
@@ -45,15 +45,15 @@ public final class C10016b implements AbstractC10017c<Float> {
         if (isEmpty()) {
             return -1;
         }
-        return (Float.valueOf(this.f32621a).hashCode() * 31) + Float.valueOf(this.f32622b).hashCode();
+        return (Float.valueOf(this.f32624a).hashCode() * 31) + Float.valueOf(this.f32625b).hashCode();
     }
 
     @Override
     public boolean isEmpty() {
-        return this.f32621a > this.f32622b;
+        return this.f32624a > this.f32625b;
     }
 
     public String toString() {
-        return this.f32621a + ".." + this.f32622b;
+        return this.f32624a + ".." + this.f32625b;
     }
 }

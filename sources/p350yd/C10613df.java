@@ -4,7 +4,7 @@ import org.drinkless.p210td.libcore.telegram.Client;
 import org.drinkless.p210td.libcore.telegram.TdApi;
 
 public final class C10613df implements Client.AbstractC7865g {
-    public static final C10613df f34013a = new C10613df();
+    public static final C10613df f34016a = new C10613df();
 
     @Override
     public final void mo255t2(TdApi.Object object) {

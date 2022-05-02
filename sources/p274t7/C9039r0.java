@@ -8,48 +8,48 @@ import javax.annotation.concurrent.GuardedBy;
 import p164l6.C6402a;
 
 public final class C9039r0 {
-    public static final long f29006a = TimeUnit.MINUTES.toMillis(1);
-    public static final Object f29007b = new Object();
+    public static final long f29009a = TimeUnit.MINUTES.toMillis(1);
+    public static final Object f29010b = new Object();
     @GuardedBy("WakeLockHolder.syncObject")
-    public static C6402a f29008c;
+    public static C6402a f29011c;
 
     @GuardedBy("WakeLockHolder.syncObject")
-    public static void m10617a(Context context) {
-        if (f29008c == null) {
+    public static void m10616a(Context context) {
+        if (f29011c == null) {
             C6402a aVar = new C6402a(context, 1, "wake:com.google.firebase.iid.WakeLockHolder");
-            f29008c = aVar;
-            aVar.m20464c(true);
+            f29011c = aVar;
+            aVar.m20465c(true);
         }
     }
 
-    public static void m10616b(Intent intent) {
-        synchronized (f29007b) {
-            if (f29008c != null && m10615c(intent)) {
-                m10614d(intent, false);
-                f29008c.m20465b();
+    public static void m10615b(Intent intent) {
+        synchronized (f29010b) {
+            if (f29011c != null && m10614c(intent)) {
+                m10613d(intent, false);
+                f29011c.m20466b();
             }
         }
     }
 
-    public static boolean m10615c(Intent intent) {
+    public static boolean m10614c(Intent intent) {
         return intent.getBooleanExtra("com.google.firebase.iid.WakeLockHolder.wakefulintent", false);
     }
 
-    public static void m10614d(Intent intent, boolean z) {
+    public static void m10613d(Intent intent, boolean z) {
         intent.putExtra("com.google.firebase.iid.WakeLockHolder.wakefulintent", z);
     }
 
-    public static ComponentName m10613e(Context context, Intent intent) {
-        synchronized (f29007b) {
-            m10617a(context);
-            boolean c = m10615c(intent);
-            m10614d(intent, true);
+    public static ComponentName m10612e(Context context, Intent intent) {
+        synchronized (f29010b) {
+            m10616a(context);
+            boolean c = m10614c(intent);
+            m10613d(intent, true);
             ComponentName startService = context.startService(intent);
             if (startService == null) {
                 return null;
             }
             if (!c) {
-                f29008c.m20466a(f29006a);
+                f29011c.m20467a(f29009a);
             }
             return startService;
         }

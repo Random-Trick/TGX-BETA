@@ -9,7 +9,7 @@ public final class C2362ex implements Comparator {
     @Override
     public final int compare(Object obj, Object obj2) {
         int nh;
-        nh = View$OnLongClickListenerC2502hx.m34426nh((C4868i.C4880l) obj, (C4868i.C4880l) obj2);
+        nh = View$OnLongClickListenerC2502hx.m34429nh((C4868i.C4880l) obj, (C4868i.C4880l) obj2);
         return nh;
     }
 }

@@ -24,13 +24,13 @@ public class C4168b {
         }
     }
 
-    public final C5033a m28631a(C5035c cVar, int i, boolean z) {
-        C8298k.m12934e(cVar, "display");
+    public final C5033a m28633a(C5035c cVar, int i, boolean z) {
+        C8298k.m12933e(cVar, "display");
         C5033a[] aVarArr = new C5033a[1];
         EGLConfig[] eGLConfigArr = new EGLConfig[1];
-        boolean eglChooseConfig = EGL14.eglChooseConfig(cVar.m24240a(), m28630b(i, z), 0, eGLConfigArr, 0, 1, new int[1], 0);
+        boolean eglChooseConfig = EGL14.eglChooseConfig(cVar.m24241a(), m28632b(i, z), 0, eGLConfigArr, 0, 1, new int[1], 0);
         if (eglChooseConfig) {
-            Iterator<Integer> it = C5296i.m23389r(aVarArr).iterator();
+            Iterator<Integer> it = C5296i.m23390r(aVarArr).iterator();
             while (it.hasNext()) {
                 int e = ((AbstractC5286d0) it).mo6206e();
                 EGLConfig eGLConfig = eGLConfigArr[e];
@@ -44,29 +44,29 @@ public class C4168b {
         return null;
     }
 
-    public final int[] m28630b(int i, boolean z) {
+    public final int[] m28632b(int i, boolean z) {
         int i2;
         if (i >= 3) {
-            i2 = C5036d.m24231i() | C5036d.m24230j();
+            i2 = C5036d.m24232i() | C5036d.m24231j();
         } else {
-            i2 = C5036d.m24231i();
+            i2 = C5036d.m24232i();
         }
         int[] iArr = new int[15];
-        iArr[0] = C5036d.m24228l();
+        iArr[0] = C5036d.m24229l();
         iArr[1] = 8;
-        iArr[2] = C5036d.m24236d();
+        iArr[2] = C5036d.m24237d();
         iArr[3] = 8;
-        iArr[4] = C5036d.m24238b();
+        iArr[4] = C5036d.m24239b();
         iArr[5] = 8;
-        iArr[6] = C5036d.m24239a();
+        iArr[6] = C5036d.m24240a();
         iArr[7] = 8;
-        iArr[8] = C5036d.m24225o();
-        iArr[9] = C5036d.m24224p() | C5036d.m24229k();
-        iArr[10] = C5036d.m24227m();
+        iArr[8] = C5036d.m24226o();
+        iArr[9] = C5036d.m24225p() | C5036d.m24230k();
+        iArr[10] = C5036d.m24228m();
         iArr[11] = i2;
-        iArr[12] = z ? 12610 : C5036d.m24235e();
+        iArr[12] = z ? 12610 : C5036d.m24236e();
         iArr[13] = z ? 1 : 0;
-        iArr[14] = C5036d.m24235e();
+        iArr[14] = C5036d.m24236e();
         return iArr;
     }
 }

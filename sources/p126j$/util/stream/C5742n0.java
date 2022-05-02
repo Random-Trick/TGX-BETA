@@ -12,13 +12,13 @@ public final class C5742n0 implements AbstractC5535q {
     }
 
     @Override
-    public final void mo22127e(long j) {
+    public final void mo22128e(long j) {
         switch (this.f18433a) {
             case 0:
-                ((AbstractC5759q2) this.f18434b).mo22133e(j);
+                ((AbstractC5759q2) this.f18434b).mo22134e(j);
                 return;
             default:
-                ((C5747o0) this.f18434b).f18425a.mo22133e(j);
+                ((C5747o0) this.f18434b).f18425a.mo22134e(j);
                 return;
         }
     }

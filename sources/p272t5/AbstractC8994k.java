@@ -1,7 +1,7 @@
 package p272t5;
 
 public interface AbstractC8994k {
-    void mo10759a(AbstractC8985c cVar);
+    void mo10758a(AbstractC8985c cVar);
 
-    int mo10758d();
+    int mo10757d();
 }

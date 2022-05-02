@@ -10,8 +10,8 @@ public final class BinderC7727n extends BinderC7717l {
     }
 
     @Override
-    public final void mo11751z(Bundle bundle, Bundle bundle2) {
-        super.mo11751z(bundle, bundle2);
-        this.f24741a.m6731e((ParcelFileDescriptor) bundle.getParcelable("chunk_file_descriptor"));
+    public final void mo11750z(Bundle bundle, Bundle bundle2) {
+        super.mo11750z(bundle, bundle2);
+        this.f24744a.m6731e((ParcelFileDescriptor) bundle.getParcelable("chunk_file_descriptor"));
     }
 }

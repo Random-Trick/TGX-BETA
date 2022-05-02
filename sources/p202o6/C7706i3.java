@@ -7,12 +7,12 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 public final class C7706i3 {
-    public static final Pattern f24704a = Pattern.compile("[0-9]+-(NAM|LFH)\\.dat");
+    public static final Pattern f24707a = Pattern.compile("[0-9]+-(NAM|LFH)\\.dat");
 
     public static List m15201a(File file, File file2) {
         File[] fileArr;
         ArrayList arrayList = new ArrayList();
-        File[] listFiles = file2.listFiles(C7701h3.f24681a);
+        File[] listFiles = file2.listFiles(C7701h3.f24684a);
         if (listFiles == null) {
             fileArr = new File[0];
         } else {

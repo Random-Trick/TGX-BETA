@@ -29,7 +29,7 @@ public final class C5846b implements C4260a.AbstractC4262b {
     }
 
     public C5846b(int i, String str, String str2, String str3, boolean z, int i2) {
-        C1186a.m38189a(i2 == -1 || i2 > 0);
+        C1186a.m38192a(i2 == -1 || i2 > 0);
         this.f18715a = i;
         this.f18716b = str;
         this.f18717c = str2;
@@ -38,8 +38,8 @@ public final class C5846b implements C4260a.AbstractC4262b {
         this.f18714O = i2;
     }
 
-    public static p132j4.C5846b m21942a(java.util.Map<java.lang.String, java.util.List<java.lang.String>> r13) {
-        throw new UnsupportedOperationException("Method not decompiled: p132j4.C5846b.m21942a(java.util.Map):j4.b");
+    public static p132j4.C5846b m21943a(java.util.Map<java.lang.String, java.util.List<java.lang.String>> r13) {
+        throw new UnsupportedOperationException("Method not decompiled: p132j4.C5846b.m21943a(java.util.Map):j4.b");
     }
 
     @Override
@@ -55,17 +55,17 @@ public final class C5846b implements C4260a.AbstractC4262b {
             return false;
         }
         C5846b bVar = (C5846b) obj;
-        return this.f18715a == bVar.f18715a && C1216l0.m37982c(this.f18716b, bVar.f18716b) && C1216l0.m37982c(this.f18717c, bVar.f18717c) && C1216l0.m37982c(this.f18712M, bVar.f18712M) && this.f18713N == bVar.f18713N && this.f18714O == bVar.f18714O;
+        return this.f18715a == bVar.f18715a && C1216l0.m37985c(this.f18716b, bVar.f18716b) && C1216l0.m37985c(this.f18717c, bVar.f18717c) && C1216l0.m37985c(this.f18712M, bVar.f18712M) && this.f18713N == bVar.f18713N && this.f18714O == bVar.f18714O;
     }
 
     @Override
     public byte[] getWrappedMetadataBytes() {
-        return C4263b.m28324a(this);
+        return C4263b.m28326a(this);
     }
 
     @Override
     public C6600g1 getWrappedMetadataFormat() {
-        return C4263b.m28323b(this);
+        return C4263b.m28325b(this);
     }
 
     public int hashCode() {
@@ -86,11 +86,11 @@ public final class C5846b implements C4260a.AbstractC4262b {
     public void populateMediaMetadata(C6693s1.C6695b bVar) {
         String str = this.f18717c;
         if (str != null) {
-            bVar.m19506i0(str);
+            bVar.m19507i0(str);
         }
         String str2 = this.f18716b;
         if (str2 != null) {
-            bVar.m19525Y(str2);
+            bVar.m19526Y(str2);
         }
     }
 
@@ -117,7 +117,7 @@ public final class C5846b implements C4260a.AbstractC4262b {
         parcel.writeString(this.f18716b);
         parcel.writeString(this.f18717c);
         parcel.writeString(this.f18712M);
-        C1216l0.m38004I0(parcel, this.f18713N);
+        C1216l0.m38007I0(parcel, this.f18713N);
         parcel.writeInt(this.f18714O);
     }
 
@@ -126,7 +126,7 @@ public final class C5846b implements C4260a.AbstractC4262b {
         this.f18716b = parcel.readString();
         this.f18717c = parcel.readString();
         this.f18712M = parcel.readString();
-        this.f18713N = C1216l0.m37939x0(parcel);
+        this.f18713N = C1216l0.m37942x0(parcel);
         this.f18714O = parcel.readInt();
     }
 }

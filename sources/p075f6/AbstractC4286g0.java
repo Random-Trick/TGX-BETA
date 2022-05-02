@@ -11,7 +11,7 @@ public abstract class AbstractC4286g0<R extends AbstractC5876k> extends Abstract
     }
 
     @Override
-    public final void mo21335a(Object obj) {
-        super.m30386i((AbstractC5876k) obj);
+    public final void mo21336a(Object obj) {
+        super.m30388i((AbstractC5876k) obj);
     }
 }

@@ -16,20 +16,20 @@ import td.AbstractC9201h1;
 import td.View$OnClickListenerC9170d1;
 
 public class View$OnClickListenerC11497r extends AbstractC8809o<Void> implements View.OnClickListener, AbstractC9201h1 {
-    public boolean f36505I0;
-    public final TdApi.ChatJoinRequestsInfo f36506J0;
-    public final C11493p f36507K0;
-    public int f36508L0;
+    public boolean f36507I0;
+    public final TdApi.ChatJoinRequestsInfo f36508J0;
+    public final C11493p f36509K0;
+    public int f36510L0;
 
     public View$OnClickListenerC11497r(View$OnClickListenerC8851y1 y1Var, long j, TdApi.ChatJoinRequestsInfo chatJoinRequestsInfo) {
-        super(y1Var, C4403w.m27844o2(R.string.xJoinRequests, chatJoinRequestsInfo.totalCount));
-        this.f36507K0 = new C11493p(this, j, null);
-        this.f36506J0 = chatJoinRequestsInfo;
-        this.f36508L0 = chatJoinRequestsInfo.totalCount;
+        super(y1Var, C4403w.m27846o2(R.string.xJoinRequests, chatJoinRequestsInfo.totalCount));
+        this.f36509K0 = new C11493p(this, j, null);
+        this.f36508J0 = chatJoinRequestsInfo;
+        this.f36510L0 = chatJoinRequestsInfo.totalCount;
     }
 
     public void m411ug() {
-        m11287kg(C4403w.m27844o2(R.string.xJoinRequests, this.f36508L0));
+        m11286kg(C4403w.m27846o2(R.string.xJoinRequests, this.f36510L0));
     }
 
     @Override
@@ -39,7 +39,7 @@ public class View$OnClickListenerC11497r extends AbstractC8809o<Void> implements
 
     @Override
     public void mo420Cc(String str) {
-        this.f36507K0.m460b0(C1363c0.m37417p(str.trim()));
+        this.f36509K0.m460b0(C1363c0.m37420p(str.trim()));
     }
 
     @Override
@@ -47,8 +47,8 @@ public class View$OnClickListenerC11497r extends AbstractC8809o<Void> implements
         if (i == R.id.menu_btn_clear) {
             m9341T8();
         } else if (i == R.id.menu_btn_search) {
-            this.f28440n0.getHeaderView().m10019z3();
-            this.f30156R = this.f28440n0.getHeaderView();
+            this.f28443n0.getHeaderView().m10018z3();
+            this.f30159R = this.f28443n0.getHeaderView();
         }
     }
 
@@ -65,12 +65,12 @@ public class View$OnClickListenerC11497r extends AbstractC8809o<Void> implements
     @Override
     public void mo417Z8() {
         super.mo417Z8();
-        this.f36507K0.m485E();
+        this.f36509K0.m485E();
     }
 
     @Override
     public boolean mo406cf() {
-        return this.f36505I0;
+        return this.f36507I0;
     }
 
     @Override
@@ -85,14 +85,14 @@ public class View$OnClickListenerC11497r extends AbstractC8809o<Void> implements
 
     @Override
     public ViewGroup mo405hf() {
-        return new FrameLayout(this.f30165a);
+        return new FrameLayout(this.f30168a);
     }
 
     @Override
     public boolean mo404jc(boolean z) {
-        if (this.f28440n0.getHeaderView().m10052j3()) {
-            this.f28440n0.getHeaderView().m10030t2(true, null);
-            this.f30156R = this.f28440n0.getHeaderView();
+        if (this.f28443n0.getHeaderView().m10051j3()) {
+            this.f28443n0.getHeaderView().m10029t2(true, null);
+            this.f30159R = this.f28443n0.getHeaderView();
             return true;
         }
         m412tg();
@@ -107,61 +107,61 @@ public class View$OnClickListenerC11497r extends AbstractC8809o<Void> implements
     @Override
     public View mo403oc(Context context) {
         boolean z = false;
-        m11301bf(false);
-        this.f36507K0.m467W(context, this.f28450x0);
-        C10192g.m5781j(this.f28450x0, R.id.theme_color_background);
-        m11327Jf();
+        m11300bf(false);
+        this.f36509K0.m467W(context, this.f28453x0);
+        C10192g.m5781j(this.f28453x0, R.id.theme_color_background);
+        m11326Jf();
         if (mo401tf() == super.mo401tf()) {
             z = true;
         }
-        this.f36505I0 = z;
+        this.f36507I0 = z;
         if (!z) {
-            FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) this.f28450x0.getLayoutParams();
+            FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) this.f28453x0.getLayoutParams();
             layoutParams.height = mo401tf();
-            this.f28450x0.setLayoutParams(layoutParams);
+            this.f28453x0.setLayoutParams(layoutParams);
         }
-        return this.f28448v0;
+        return this.f28451v0;
     }
 
     @Override
     public void onClick(View view) {
-        this.f36507K0.m468V(view);
+        this.f36509K0.m468V(view);
     }
 
     @Override
     public void mo414p0(int i, View$OnClickListenerC9170d1 d1Var, LinearLayout linearLayout) {
         if (i == R.id.menu_clear) {
-            d1Var.m10091S1(linearLayout, this);
+            d1Var.m10090S1(linearLayout, this);
         } else if (i == R.id.menu_search) {
-            d1Var.m10054i2(linearLayout, this);
+            d1Var.m10053i2(linearLayout, this);
         }
     }
 
     @Override
     public int mo401tf() {
-        TdApi.ChatJoinRequestsInfo chatJoinRequestsInfo = this.f36506J0;
+        TdApi.ChatJoinRequestsInfo chatJoinRequestsInfo = this.f36508J0;
         if (chatJoinRequestsInfo == null || chatJoinRequestsInfo.totalCount <= 0) {
             return super.mo401tf();
         }
-        return Math.min(super.mo401tf(), this.f36507K0.m484F(this.f36506J0.totalCount));
+        return Math.min(super.mo401tf(), this.f36509K0.m484F(this.f36508J0.totalCount));
     }
 
     public void m412tg() {
-        this.f28440n0.m11112u2(false);
+        this.f28443n0.m11111u2(false);
     }
 
     public void m410vg() {
-        this.f36508L0--;
-        if (!this.f28440n0.getHeaderView().m10052j3()) {
-            m11287kg(C4403w.m27844o2(R.string.xJoinRequests, this.f36508L0));
+        this.f36510L0--;
+        if (!this.f28443n0.getHeaderView().m10051j3()) {
+            m11286kg(C4403w.m27846o2(R.string.xJoinRequests, this.f36510L0));
         }
-        if (this.f36508L0 == 0) {
+        if (this.f36510L0 == 0) {
             m412tg();
         }
     }
 
     @Override
     public void mo409xc() {
-        this.f36507K0.m460b0(null);
+        this.f36509K0.m460b0(null);
     }
 }

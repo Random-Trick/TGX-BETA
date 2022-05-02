@@ -5,7 +5,7 @@ import java.util.concurrent.Executor;
 public final class ExecutorC0004b implements Executor {
     public static volatile ExecutorC0004b f2a;
 
-    public static Executor m42605a() {
+    public static Executor m42608a() {
         if (f2a != null) {
             return f2a;
         }

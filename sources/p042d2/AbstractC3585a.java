@@ -16,44 +16,44 @@ public abstract class AbstractC3585a {
         this.f12219c = aVar3;
     }
 
-    public abstract void mo29936A(byte[] bArr);
+    public abstract void mo29938A(byte[] bArr);
 
-    public void m29960B(byte[] bArr, int i) {
-        mo29922w(i);
-        mo29936A(bArr);
+    public void m29962B(byte[] bArr, int i) {
+        mo29924w(i);
+        mo29938A(bArr);
     }
 
-    public abstract void mo29935C(CharSequence charSequence);
+    public abstract void mo29937C(CharSequence charSequence);
 
-    public void m29959D(CharSequence charSequence, int i) {
-        mo29922w(i);
-        mo29935C(charSequence);
+    public void m29961D(CharSequence charSequence, int i) {
+        mo29924w(i);
+        mo29937C(charSequence);
     }
 
-    public abstract void mo29934E(int i);
+    public abstract void mo29936E(int i);
 
-    public void m29958F(int i, int i2) {
-        mo29922w(i2);
-        mo29934E(i);
+    public void m29960F(int i, int i2) {
+        mo29924w(i2);
+        mo29936E(i);
     }
 
-    public abstract void mo29933G(Parcelable parcelable);
+    public abstract void mo29935G(Parcelable parcelable);
 
-    public void m29957H(Parcelable parcelable, int i) {
-        mo29922w(i);
-        mo29933G(parcelable);
+    public void m29959H(Parcelable parcelable, int i) {
+        mo29924w(i);
+        mo29935G(parcelable);
     }
 
-    public abstract void mo29932I(String str);
+    public abstract void mo29934I(String str);
 
-    public void m29956J(String str, int i) {
-        mo29922w(i);
-        mo29932I(str);
+    public void m29958J(String str, int i) {
+        mo29924w(i);
+        mo29934I(str);
     }
 
-    public <T extends AbstractC3587c> void m29955K(T t, AbstractC3585a aVar) {
+    public <T extends AbstractC3587c> void m29957K(T t, AbstractC3585a aVar) {
         try {
-            m29949e(t.getClass()).invoke(null, t, aVar);
+            m29951e(t.getClass()).invoke(null, t, aVar);
         } catch (ClassNotFoundException e) {
             throw new RuntimeException("VersionedParcel encountered ClassNotFoundException", e);
         } catch (IllegalAccessException e2) {
@@ -68,35 +68,35 @@ public abstract class AbstractC3585a {
         }
     }
 
-    public void m29954L(AbstractC3587c cVar) {
+    public void m29956L(AbstractC3587c cVar) {
         if (cVar == null) {
-            mo29932I(null);
+            mo29934I(null);
             return;
         }
-        m29952N(cVar);
-        AbstractC3585a b = mo29930b();
-        m29955K(cVar, b);
-        b.mo29931a();
+        m29954N(cVar);
+        AbstractC3585a b = mo29932b();
+        m29957K(cVar, b);
+        b.mo29933a();
     }
 
-    public void m29953M(AbstractC3587c cVar, int i) {
-        mo29922w(i);
-        m29954L(cVar);
+    public void m29955M(AbstractC3587c cVar, int i) {
+        mo29924w(i);
+        m29956L(cVar);
     }
 
-    public final void m29952N(AbstractC3587c cVar) {
+    public final void m29954N(AbstractC3587c cVar) {
         try {
-            mo29932I(m29951c(cVar.getClass()).getName());
+            mo29934I(m29953c(cVar.getClass()).getName());
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(cVar.getClass().getSimpleName() + " does not have a Parcelizer", e);
         }
     }
 
-    public abstract void mo29931a();
+    public abstract void mo29933a();
 
-    public abstract AbstractC3585a mo29930b();
+    public abstract AbstractC3585a mo29932b();
 
-    public final Class m29951c(Class<? extends AbstractC3587c> cls) {
+    public final Class m29953c(Class<? extends AbstractC3587c> cls) {
         Class cls2 = this.f12219c.get(cls.getName());
         if (cls2 != null) {
             return cls2;
@@ -106,7 +106,7 @@ public abstract class AbstractC3585a {
         return cls3;
     }
 
-    public final Method m29950d(String str) {
+    public final Method m29952d(String str) {
         Method method = this.f12217a.get(str);
         if (method != null) {
             return method;
@@ -117,45 +117,45 @@ public abstract class AbstractC3585a {
         return declaredMethod;
     }
 
-    public final Method m29949e(Class cls) {
+    public final Method m29951e(Class cls) {
         Method method = this.f12218b.get(cls.getName());
         if (method != null) {
             return method;
         }
-        Class c = m29951c(cls);
+        Class c = m29953c(cls);
         System.currentTimeMillis();
         Method declaredMethod = c.getDeclaredMethod("write", cls, AbstractC3585a.class);
         this.f12218b.put(cls.getName(), declaredMethod);
         return declaredMethod;
     }
 
-    public boolean m29948f() {
+    public boolean m29950f() {
         return false;
     }
 
-    public abstract boolean mo29929g();
+    public abstract boolean mo29931g();
 
-    public boolean m29947h(boolean z, int i) {
-        return !mo29926m(i) ? z : mo29929g();
+    public boolean m29949h(boolean z, int i) {
+        return !mo29928m(i) ? z : mo29931g();
     }
 
-    public abstract byte[] mo29928i();
+    public abstract byte[] mo29930i();
 
-    public byte[] m29946j(byte[] bArr, int i) {
-        return !mo29926m(i) ? bArr : mo29928i();
+    public byte[] m29948j(byte[] bArr, int i) {
+        return !mo29928m(i) ? bArr : mo29930i();
     }
 
-    public abstract CharSequence mo29927k();
+    public abstract CharSequence mo29929k();
 
-    public CharSequence m29945l(CharSequence charSequence, int i) {
-        return !mo29926m(i) ? charSequence : mo29927k();
+    public CharSequence m29947l(CharSequence charSequence, int i) {
+        return !mo29928m(i) ? charSequence : mo29929k();
     }
 
-    public abstract boolean mo29926m(int i);
+    public abstract boolean mo29928m(int i);
 
-    public <T extends AbstractC3587c> T m29944n(String str, AbstractC3585a aVar) {
+    public <T extends AbstractC3587c> T m29946n(String str, AbstractC3585a aVar) {
         try {
-            return (T) m29950d(str).invoke(null, aVar);
+            return (T) m29952d(str).invoke(null, aVar);
         } catch (ClassNotFoundException e) {
             throw new RuntimeException("VersionedParcel encountered ClassNotFoundException", e);
         } catch (IllegalAccessException e2) {
@@ -170,45 +170,45 @@ public abstract class AbstractC3585a {
         }
     }
 
-    public abstract int mo29925o();
+    public abstract int mo29927o();
 
-    public int m29943p(int i, int i2) {
-        return !mo29926m(i2) ? i : mo29925o();
+    public int m29945p(int i, int i2) {
+        return !mo29928m(i2) ? i : mo29927o();
     }
 
-    public abstract <T extends Parcelable> T mo29924q();
+    public abstract <T extends Parcelable> T mo29926q();
 
-    public <T extends Parcelable> T m29942r(T t, int i) {
-        return !mo29926m(i) ? t : (T) mo29924q();
+    public <T extends Parcelable> T m29944r(T t, int i) {
+        return !mo29928m(i) ? t : (T) mo29926q();
     }
 
-    public abstract String mo29923s();
+    public abstract String mo29925s();
 
-    public String m29941t(String str, int i) {
-        return !mo29926m(i) ? str : mo29923s();
+    public String m29943t(String str, int i) {
+        return !mo29928m(i) ? str : mo29925s();
     }
 
-    public <T extends AbstractC3587c> T m29940u() {
-        String s = mo29923s();
+    public <T extends AbstractC3587c> T m29942u() {
+        String s = mo29925s();
         if (s == null) {
             return null;
         }
-        return (T) m29944n(s, mo29930b());
+        return (T) m29946n(s, mo29932b());
     }
 
-    public <T extends AbstractC3587c> T m29939v(T t, int i) {
-        return !mo29926m(i) ? t : (T) m29940u();
+    public <T extends AbstractC3587c> T m29941v(T t, int i) {
+        return !mo29928m(i) ? t : (T) m29942u();
     }
 
-    public abstract void mo29922w(int i);
+    public abstract void mo29924w(int i);
 
-    public void m29938x(boolean z, boolean z2) {
+    public void m29940x(boolean z, boolean z2) {
     }
 
-    public abstract void mo29921y(boolean z);
+    public abstract void mo29923y(boolean z);
 
-    public void m29937z(boolean z, int i) {
-        mo29922w(i);
-        mo29921y(z);
+    public void m29939z(boolean z, int i) {
+        mo29924w(i);
+        mo29923y(z);
     }
 }

@@ -18,7 +18,7 @@ public class ExecutorC1155k implements Executor {
             try {
                 this.f4382a.run();
             } catch (Exception e) {
-                C4118a.m28882c("Executor", "Background execution failure.", e);
+                C4118a.m28884c("Executor", "Background execution failure.", e);
             }
         }
     }

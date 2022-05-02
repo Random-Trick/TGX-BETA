@@ -24,7 +24,7 @@ public class Window$CallbackC5826i implements Window.Callback {
         throw new IllegalArgumentException("Window callback may not be null");
     }
 
-    public final Window.Callback m22062a() {
+    public final Window.Callback m22063a() {
         return this.f18603a;
     }
 
