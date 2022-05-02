@@ -1,0 +1,10 @@
+package p071f2;
+
+public enum EnumC4236k {
+    NOT_REQUIRED,
+    CONNECTED,
+    UNMETERED,
+    NOT_ROAMING,
+    METERED,
+    TEMPORARILY_UNMETERED
+}

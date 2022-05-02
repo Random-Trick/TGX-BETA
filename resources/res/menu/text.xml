@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/baseline_format_bold_24" android:id="@+id/btn_bold" android:menuCategory="secondary" android:title="@string/TextFormatBold" android:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/baseline_format_italic_24" android:id="@+id/btn_italic" android:menuCategory="secondary" android:title="@string/TextFormatItalic" android:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/baseline_format_underlined_24" android:id="@+id/btn_underline" android:menuCategory="secondary" android:title="@string/TextFormatUnderline" android:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/baseline_strikethrough_s_24" android:id="@+id/btn_strikethrough" android:menuCategory="secondary" android:title="@string/TextFormatStrikethrough" android:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/baseline_code_24" android:id="@+id/btn_monospace" android:menuCategory="secondary" android:title="@string/TextFormatMonospace" android:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/baseline_eye_off_24" android:id="@+id/btn_spoiler" android:menuCategory="secondary" android:title="@string/TextFormatStrikethrough" android:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/baseline_link_24" android:id="@+id/btn_link" android:menuCategory="secondary" android:title="@string/TextFormatLink" android:showAsAction="ifRoom"/>
+</menu>
