@@ -8,70 +8,70 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.SyncResult;
 import android.os.Bundle;
-import ge.C4868i;
+import he.i;
 import org.thunderdog.challegram.Log;
-import p350yd.C10536ab;
-import p350yd.C10930q6;
+import zd.o6;
+import zd.ya;
 
 public class SyncAdapter extends AbstractThreadedSyncAdapter {
-    public SyncAdapter(Context context, boolean z) {
-        super(context, z);
+    public SyncAdapter(Context context, boolean z10) {
+        super(context, z10);
     }
 
-    public static Account m14207a(Context context) {
+    public static Account a(Context context) {
         Account account = new Account("Telegram", "org.thunderdog.challegram.sync.account");
         ((AccountManager) context.getSystemService("account")).addAccountExplicitly(account, null, null);
         return account;
     }
 
-    public static boolean m14206b(Context context) {
+    public static boolean b(Context context) {
         try {
-            return ContentResolver.getSyncAutomatically(m14207a(context), "org.thunderdog.challegram.sync.provider");
-        } catch (SecurityException e) {
-            Log.m14723e(e);
+            return ContentResolver.getSyncAutomatically(a(context), "org.thunderdog.challegram.sync.provider");
+        } catch (SecurityException e10) {
+            Log.e(e10);
             return true;
         }
     }
 
-    public static boolean m14205c() {
+    public static boolean c() {
         try {
             return ContentResolver.getMasterSyncAutomatically();
-        } catch (SecurityException e) {
-            Log.m14723e(e);
+        } catch (SecurityException e10) {
+            Log.e(e10);
             return true;
         }
     }
 
-    public static void m14204d(Context context) {
+    public static void d(Context context) {
         try {
-            Account a = m14207a(context);
-            ContentResolver.setIsSyncable(a, "org.thunderdog.challegram.sync.provider", 1);
-            ContentResolver.setSyncAutomatically(a, "org.thunderdog.challegram.sync.provider", true);
-            ContentResolver.addPeriodicSync(a, "org.thunderdog.challegram.sync.provider", Bundle.EMPTY, C4868i.m24726c2().m24583u1());
-        } catch (SecurityException e) {
-            Log.m14725e("Cannot register stub account", e, new Object[0]);
+            Account a10 = a(context);
+            ContentResolver.setIsSyncable(a10, "org.thunderdog.challegram.sync.provider", 1);
+            ContentResolver.setSyncAutomatically(a10, "org.thunderdog.challegram.sync.provider", true);
+            ContentResolver.addPeriodicSync(a10, "org.thunderdog.challegram.sync.provider", Bundle.EMPTY, i.c2().u1());
+        } catch (SecurityException e10) {
+            Log.e("Cannot register stub account", e10, new Object[0]);
         }
     }
 
-    public static void m14203e(Context context, C10930q6 q6Var, boolean z) {
-        if (z) {
+    public static void e(Context context, o6 o6Var, boolean z10) {
+        if (z10) {
             try {
                 ContentResolver.setMasterSyncAutomatically(true);
             } catch (Throwable th) {
-                Log.m14723e(th);
+                Log.e(th);
                 return;
             }
         }
-        m14204d(context);
-        q6Var.m2781K9().m1964D2();
+        d(context);
+        o6Var.O9().D2();
     }
 
     @Override
     public void onPerformSync(Account account, Bundle bundle, String str, ContentProviderClient contentProviderClient, SyncResult syncResult) {
         try {
-            C10536ab.m4723Z1(getContext(), bundle != null ? bundle.getInt("account_id", -1) : -1, 2, 0L, !C10536ab.m4677l1(), 0L);
+            ya.Z1(getContext(), bundle != null ? bundle.getInt("account_id", -1) : -1, 2, 0L, !ya.l1(), 0L);
         } catch (Throwable th) {
-            Log.m14725e("Failed to perform sync", th, new Object[0]);
+            Log.e("Failed to perform sync", th, new Object[0]);
         }
     }
 }

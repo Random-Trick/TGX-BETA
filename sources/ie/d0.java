@@ -1,0 +1,7 @@
+package ie;
+
+import android.view.View;
+
+public interface d0 {
+    void a(View view, int i10);
+}

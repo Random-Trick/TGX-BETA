@@ -3,24 +3,23 @@ package me.leolin.shortcutbadger.impl;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import bb.C1304a;
+import bb.a;
 import java.util.Arrays;
 import java.util.List;
-import p012ab.AbstractC0243a;
 
 @Deprecated
-public class LGHomeBadger implements AbstractC0243a {
+public class LGHomeBadger implements a {
     @Override
-    public List<String> mo18371a() {
+    public List<String> a() {
         return Arrays.asList("com.lge.launcher", "com.lge.launcher2");
     }
 
     @Override
-    public void mo18370b(Context context, ComponentName componentName, int i) {
+    public void b(Context context, ComponentName componentName, int i10) {
         Intent intent = new Intent("android.intent.action.BADGE_COUNT_UPDATE");
-        intent.putExtra("badge_count", i);
+        intent.putExtra("badge_count", i10);
         intent.putExtra("badge_count_package_name", componentName.getPackageName());
         intent.putExtra("badge_count_class_name", componentName.getClassName());
-        C1304a.m37786b(context, intent);
+        cb.a.b(context, intent);
     }
 }

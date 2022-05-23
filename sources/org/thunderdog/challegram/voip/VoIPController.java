@@ -1,6 +1,9 @@
 package org.thunderdog.challegram.voip;
 
+import android.media.audiofx.AcousticEchoCanceler;
+import android.media.audiofx.NoiseSuppressor;
 import android.os.SystemClock;
+import ib.i;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,10 +11,10 @@ import java.util.Calendar;
 import java.util.Iterator;
 import java.util.Locale;
 import java.util.Objects;
-import org.drinkless.p210td.libcore.telegram.TdApi;
+import oc.v0;
+import org.drinkless.td.libcore.telegram.TdApi;
 import org.thunderdog.challegram.Log;
-import p108hb.C5070i;
-import p350yd.C10536ab;
+import zd.ya;
 
 public class VoIPController {
     public static final int DATA_SAVING_ALWAYS = 2;
@@ -53,13 +56,13 @@ public class VoIPController {
     public interface ConnectionStateListener {
         void onCallUpgradeRequestReceived();
 
-        void onConnectionStateChanged(int i);
+        void onConnectionStateChanged(int i10);
 
         void onGroupCallKeyReceived(byte[] bArr);
 
         void onGroupCallKeySent();
 
-        void onSignalBarCountChanged(int i);
+        void onSignalBarCountChanged(int i10);
     }
 
     public static class Stats {
@@ -118,7 +121,7 @@ public class VoIPController {
     }
 
     private static File getVoipConfigFile() {
-        return new File(C10536ab.m4740V0(), "voip_persistent_state.json");
+        return new File(ya.V0(), "voip_persistent_state.json");
     }
 
     public static long getVoipConfigFileSize() {
@@ -139,73 +142,73 @@ public class VoIPController {
         }
     }
 
-    private void handleSignalBarsChange(int i) {
+    private void handleSignalBarsChange(int i10) {
         ConnectionStateListener connectionStateListener = this.listener;
         if (connectionStateListener != null) {
-            connectionStateListener.onSignalBarCountChanged(i);
+            connectionStateListener.onSignalBarCountChanged(i10);
         }
     }
 
-    private void handleStateChange(int i) {
-        if (i == 3 && this.callStartTime == 0) {
+    private void handleStateChange(int i10) {
+        if (i10 == 3 && this.callStartTime == 0) {
             this.callStartTime = SystemClock.elapsedRealtime();
         }
         ConnectionStateListener connectionStateListener = this.listener;
         if (connectionStateListener != null) {
-            connectionStateListener.onConnectionStateChanged(i);
+            connectionStateListener.onConnectionStateChanged(i10);
         }
     }
 
-    private native void nativeConnect(long j);
+    private native void nativeConnect(long j10);
 
-    private native void nativeDebugCtl(long j, int i, int i2);
+    private native void nativeDebugCtl(long j10, int i10, int i11);
 
-    private native String nativeGetDebugLog(long j);
+    private native String nativeGetDebugLog(long j10);
 
-    private native String nativeGetDebugString(long j);
+    private native String nativeGetDebugString(long j10);
 
-    private native int nativeGetLastError(long j);
+    private native int nativeGetLastError(long j10);
 
-    private native int nativeGetPeerCapabilities(long j);
+    private native int nativeGetPeerCapabilities(long j10);
 
-    private native long nativeGetPreferredRelayID(long j);
+    private native long nativeGetPreferredRelayID(long j10);
 
-    private native void nativeGetStats(long j, Stats stats);
+    private native void nativeGetStats(long j10, Stats stats);
 
     private static native String nativeGetVersion();
 
     private native long nativeInit(String str);
 
-    private static native boolean nativeNeedRate(long j);
+    private static native boolean nativeNeedRate(long j10);
 
-    private native void nativeRelease(long j);
+    private native void nativeRelease(long j10);
 
-    private native void nativeRequestCallUpgrade(long j);
+    private native void nativeRequestCallUpgrade(long j10);
 
-    private native void nativeSendGroupCallKey(long j, byte[] bArr);
+    private native void nativeSendGroupCallKey(long j10, byte[] bArr);
 
-    private native void nativeSetAudioOutputGainControlEnabled(long j, boolean z);
+    private native void nativeSetAudioOutputGainControlEnabled(long j10, boolean z10);
 
-    private native void nativeSetConfig(long j, double d, double d2, int i, boolean z, boolean z2, boolean z3, String str, String str2, boolean z4);
+    private native void nativeSetConfig(long j10, double d10, double d11, int i10, boolean z10, boolean z11, boolean z12, String str, String str2, boolean z13);
 
-    private native void nativeSetEchoCancellationStrength(long j, int i);
+    private native void nativeSetEchoCancellationStrength(long j10, int i10);
 
-    private native void nativeSetEncryptionKey(long j, byte[] bArr, boolean z);
+    private native void nativeSetEncryptionKey(long j10, byte[] bArr, boolean z10);
 
-    private native void nativeSetMicMute(long j, boolean z);
+    private native void nativeSetMicMute(long j10, boolean z10);
 
-    private static native void nativeSetNativeBufferSize(int i);
+    private static native void nativeSetNativeBufferSize(int i10);
 
-    private native void nativeSetNetworkType(long j, int i);
+    private native void nativeSetNetworkType(long j10, int i10);
 
-    private native void nativeSetProxy(long j, String str, int i, String str2, String str3);
+    private native void nativeSetProxy(long j10, String str, int i10, String str2, String str3);
 
-    private native void nativeSetRemoteEndpoints(long j, TdApi.CallServer[] callServerArr, boolean z, boolean z2, int i);
+    private native void nativeSetRemoteEndpoints(long j10, TdApi.CallServer[] callServerArr, boolean z10, boolean z11, int i10);
 
-    private native void nativeStart(long j);
+    private native void nativeStart(long j10);
 
-    public static void setNativeBufferSize(int i) {
-        nativeSetNativeBufferSize(i);
+    public static void setNativeBufferSize(int i10) {
+        nativeSetNativeBufferSize(i10);
     }
 
     public void connect() {
@@ -213,9 +216,9 @@ public class VoIPController {
         nativeConnect(this.nativeInst);
     }
 
-    public void debugCtl(int i, int i2) {
+    public void debugCtl(int i10, int i11) {
         ensureNativeInstance();
-        nativeDebugCtl(this.nativeInst, i, i2);
+        nativeDebugCtl(this.nativeInst, i10, i11);
     }
 
     public void ensureNativeInstance() {
@@ -292,67 +295,93 @@ public class VoIPController {
         throw new IllegalArgumentException("key must be 256 bytes long, got " + bArr.length);
     }
 
-    public void setAudioOutputGainControlEnabled(boolean z) {
+    public void setAudioOutputGainControlEnabled(boolean z10) {
         ensureNativeInstance();
-        nativeSetAudioOutputGainControlEnabled(this.nativeInst, z);
+        nativeSetAudioOutputGainControlEnabled(this.nativeInst, z10);
     }
 
-    public void setConfig(double r18, double r20, int r22, long r23) {
-        throw new UnsupportedOperationException("Method not decompiled: org.thunderdog.challegram.voip.VoIPController.setConfig(double, double, int, long):void");
+    public void setConfig(double d10, double d11, int i10, long j10) {
+        boolean z10;
+        boolean z11;
+        ensureNativeInstance();
+        try {
+            z10 = AcousticEchoCanceler.isAvailable();
+        } catch (Throwable unused) {
+            z10 = false;
+        }
+        try {
+            z11 = NoiseSuppressor.isAvailable();
+        } catch (Throwable unused2) {
+            z11 = false;
+        }
+        nativeSetConfig(this.nativeInst, d10, d11, i10 == 3 ? v0.v1() ? 1 : 0 : i10, !z10 || !VoIPServerConfig.getBoolean("use_system_aec", true), !z11 || !VoIPServerConfig.getBoolean("use_system_ns", true), true, getLogFilePath(), null, false);
     }
 
     public void setConnectionStateListener(ConnectionStateListener connectionStateListener) {
         this.listener = connectionStateListener;
     }
 
-    public void setEchoCancellationStrength(int i) {
+    public void setEchoCancellationStrength(int i10) {
         ensureNativeInstance();
-        nativeSetEchoCancellationStrength(this.nativeInst, i);
+        nativeSetEchoCancellationStrength(this.nativeInst, i10);
     }
 
-    public void setEncryptionKey(byte[] bArr, boolean z) {
+    public void setEncryptionKey(byte[] bArr, boolean z10) {
         if (bArr.length == 256) {
             ensureNativeInstance();
-            nativeSetEncryptionKey(this.nativeInst, bArr, z);
+            nativeSetEncryptionKey(this.nativeInst, bArr, z10);
             return;
         }
         throw new IllegalArgumentException("key length must be exactly 256 bytes but is " + bArr.length);
     }
 
-    public void setMicMute(boolean z) {
+    public void setMicMute(boolean z10) {
         ensureNativeInstance();
-        nativeSetMicMute(this.nativeInst, z);
+        nativeSetMicMute(this.nativeInst, z10);
     }
 
-    public void setNetworkType(int i) {
+    public void setNetworkType(int i10) {
         ensureNativeInstance();
-        long j = this.nativeInst;
-        this.netType = i;
-        nativeSetNetworkType(j, i);
+        long j10 = this.nativeInst;
+        this.netType = i10;
+        nativeSetNetworkType(j10, i10);
     }
 
-    public void setProxy(String str, int i, String str2, String str3) {
+    public void setProxy(String str, int i10, String str2, String str3) {
         ensureNativeInstance();
         Objects.requireNonNull(str, "address can't be null");
-        nativeSetProxy(this.nativeInst, str, i, str2, str3);
+        nativeSetProxy(this.nativeInst, str, i10, str2, str3);
     }
 
-    public void setRemoteEndpoints(TdApi.CallServer[] callServerArr, boolean z, boolean z2, int i) {
+    public void setRemoteEndpoints(TdApi.CallServer[] callServerArr, boolean z10, boolean z11, int i10) {
         if (callServerArr.length != 0) {
+            boolean z12 = false;
             for (TdApi.CallServer callServer : callServerArr) {
                 if (callServer.type.getConstructor() != -1507850700) {
-                    throw new IllegalArgumentException();
-                } else if (!C5070i.m24062i(callServer.ipAddress) || !C5070i.m24062i(callServer.ipv6Address)) {
+                    z12 = true;
+                } else if (!i.i(callServer.ipAddress) || !i.i(callServer.ipv6Address)) {
                     byte[] bArr = ((TdApi.CallServerTypeTelegramReflector) callServer.type).peerTag;
-                    if (bArr != null && bArr.length != 16) {
+                    if (!(bArr == null || bArr.length == 16)) {
                         throw new IllegalArgumentException("endpoint " + callServer + " has peer_tag of wrong length");
                     }
                 } else {
                     throw new IllegalArgumentException("endpoint " + callServer + " has empty/null ipv4");
                 }
             }
+            if (z12) {
+                ArrayList arrayList = new ArrayList();
+                for (TdApi.CallServer callServer2 : callServerArr) {
+                    if (callServer2.type.getConstructor() == -1507850700) {
+                        arrayList.add(callServer2);
+                    }
+                }
+                callServerArr = (TdApi.CallServer[]) arrayList.toArray(new TdApi.CallServer[0]);
+                if (callServerArr.length == 0) {
+                    throw new IllegalArgumentException("no CallServerTypeTelegramReflector found");
+                }
+            }
             ensureNativeInstance();
-            nativeSetRemoteEndpoints(this.nativeInst, callServerArr, z, z2, i);
+            nativeSetRemoteEndpoints(this.nativeInst, callServerArr, z10, z11, i10);
             return;
         }
         throw new IllegalArgumentException("endpoints size is 0");

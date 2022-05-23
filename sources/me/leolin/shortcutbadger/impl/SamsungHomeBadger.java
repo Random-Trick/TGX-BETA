@@ -6,64 +6,57 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
-import android.os.Build;
-import bb.C1305b;
+import bb.a;
+import cb.b;
 import java.util.Arrays;
 import java.util.List;
-import p012ab.AbstractC0243a;
 
-public class SamsungHomeBadger implements AbstractC0243a {
-    public static final String[] f21957b = {"_id", "class"};
-    public DefaultBadger f21958a;
-
-    public SamsungHomeBadger() {
-        if (Build.VERSION.SDK_INT >= 21) {
-            this.f21958a = new DefaultBadger();
-        }
-    }
+public class SamsungHomeBadger implements a {
+    public static final String[] f17498b = {"_id", "class"};
+    public DefaultBadger f17499a = new DefaultBadger();
 
     @Override
-    public List<String> mo18371a() {
+    public List<String> a() {
         return Arrays.asList("com.sec.android.app.launcher", "com.sec.android.app.twlauncher");
     }
 
     @Override
-    public void mo18370b(Context context, ComponentName componentName, int i) {
-        DefaultBadger defaultBadger = this.f21958a;
-        if (defaultBadger == null || !defaultBadger.m18382c(context)) {
+    public void b(Context context, ComponentName componentName, int i10) {
+        DefaultBadger defaultBadger = this.f17499a;
+        if (defaultBadger == null || !defaultBadger.c(context)) {
             Uri parse = Uri.parse("content://com.sec.badge/apps?notify=true");
             ContentResolver contentResolver = context.getContentResolver();
             Cursor cursor = null;
             try {
-                cursor = contentResolver.query(parse, f21957b, "package=?", new String[]{componentName.getPackageName()}, null);
+                cursor = contentResolver.query(parse, f17498b, "package=?", new String[]{componentName.getPackageName()}, null);
                 if (cursor != null) {
                     String className = componentName.getClassName();
-                    boolean z = false;
+                    boolean z10 = false;
                     while (cursor.moveToNext()) {
-                        contentResolver.update(parse, m18379c(componentName, i, false), "_id=?", new String[]{String.valueOf(cursor.getInt(0))});
+                        contentResolver.update(parse, c(componentName, i10, false), "_id=?", new String[]{String.valueOf(cursor.getInt(0))});
                         if (className.equals(cursor.getString(cursor.getColumnIndex("class")))) {
-                            z = true;
+                            z10 = true;
                         }
                     }
-                    if (!z) {
-                        contentResolver.insert(parse, m18379c(componentName, i, true));
+                    if (!z10) {
+                        contentResolver.insert(parse, c(componentName, i10, true));
                     }
                 }
             } finally {
-                C1305b.m37784a(cursor);
+                b.a(cursor);
             }
         } else {
-            this.f21958a.mo18370b(context, componentName, i);
+            this.f17499a.b(context, componentName, i10);
         }
     }
 
-    public final ContentValues m18379c(ComponentName componentName, int i, boolean z) {
+    public final ContentValues c(ComponentName componentName, int i10, boolean z10) {
         ContentValues contentValues = new ContentValues();
-        if (z) {
+        if (z10) {
             contentValues.put("package", componentName.getPackageName());
             contentValues.put("class", componentName.getClassName());
         }
-        contentValues.put("badgecount", Integer.valueOf(i));
+        contentValues.put("badgecount", Integer.valueOf(i10));
         return contentValues;
     }
 }

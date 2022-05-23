@@ -4,70 +4,70 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
-import me.AbstractC6828a;
+import kb.c;
 import me.vkryl.android.widget.FrameLayoutFix;
-import p139jb.AbstractC5911c;
+import ne.a;
 
-public class ScoutFrameLayout extends FrameLayoutFix implements AbstractC6828a, AbstractC5911c {
+public class ScoutFrameLayout extends FrameLayoutFix implements a, c {
     public ScoutFrameLayout(Context context) {
         super(context);
     }
 
-    public static void m14043C1(View view, boolean z) {
+    public static void A1(View view) {
         if (view != null) {
-            if (view instanceof AbstractC6828a) {
-                if (z) {
-                    ((AbstractC6828a) view).mo8225f();
+            if (view instanceof c) {
+                ((c) view).Q2();
+            }
+            if (view instanceof ViewGroup) {
+                ViewGroup viewGroup = (ViewGroup) view;
+                int childCount = viewGroup.getChildCount();
+                for (int i10 = 0; i10 < childCount; i10++) {
+                    A1(viewGroup.getChildAt(i10));
+                }
+            }
+        }
+    }
+
+    public static void z1(View view, boolean z10) {
+        if (view != null) {
+            if (view instanceof a) {
+                if (z10) {
+                    ((a) view).e();
                 } else {
-                    ((AbstractC6828a) view).mo8229b();
+                    ((a) view).b();
                 }
             }
             if (view instanceof ViewGroup) {
                 ViewGroup viewGroup = (ViewGroup) view;
                 int childCount = viewGroup.getChildCount();
-                for (int i = 0; i < childCount; i++) {
-                    m14043C1(viewGroup.getChildAt(i), z);
-                }
-            }
-        }
-    }
-
-    public static void m14042D1(View view) {
-        if (view != null) {
-            if (view instanceof AbstractC5911c) {
-                ((AbstractC5911c) view).mo4501a3();
-            }
-            if (view instanceof ViewGroup) {
-                ViewGroup viewGroup = (ViewGroup) view;
-                int childCount = viewGroup.getChildCount();
-                for (int i = 0; i < childCount; i++) {
-                    m14042D1(viewGroup.getChildAt(i));
+                for (int i10 = 0; i10 < childCount; i10++) {
+                    z1(viewGroup.getChildAt(i10), z10);
                 }
             }
         }
     }
 
     @Override
-    public void mo4501a3() {
+    public void Q2() {
         int childCount = getChildCount();
-        for (int i = 0; i < childCount; i++) {
-            m14042D1(getChildAt(i));
+        for (int i10 = 0; i10 < childCount; i10++) {
+            A1(getChildAt(i10));
         }
     }
 
     @Override
-    public void mo8229b() {
+    public void b() {
         int childCount = getChildCount();
-        for (int i = 0; i < childCount; i++) {
-            m14043C1(getChildAt(i), false);
+        for (int i10 = 0; i10 < childCount; i10++) {
+            z1(getChildAt(i10), false);
         }
     }
 
     @Override
-    public void mo8225f() {
+    public void e() {
         int childCount = getChildCount();
-        for (int i = 0; i < childCount; i++) {
-            m14043C1(getChildAt(i), true);
+        for (int i10 = 0; i10 < childCount; i10++) {
+            z1(getChildAt(i10), true);
         }
     }
 
@@ -75,7 +75,7 @@ public class ScoutFrameLayout extends FrameLayoutFix implements AbstractC6828a, 
         super(context, attributeSet);
     }
 
-    public ScoutFrameLayout(Context context, AttributeSet attributeSet, int i) {
-        super(context, attributeSet, i);
+    public ScoutFrameLayout(Context context, AttributeSet attributeSet, int i10) {
+        super(context, attributeSet, i10);
     }
 }

@@ -24,7 +24,6 @@ import com.coremedia.iso.boxes.TrackBox;
 import com.coremedia.iso.boxes.TrackHeaderBox;
 import com.coremedia.iso.boxes.mdat.MediaDataBox;
 import com.coremedia.iso.boxes.sampleentry.VisualSampleEntry;
-import com.googlecode.mp4parser.AbstractC3539a;
 import java.io.FileOutputStream;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
@@ -34,38 +33,35 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
-import ke.AbstractC6268a;
-import p258s2.AbstractC8629b;
-import p258s2.C8631d;
-import p258s2.C8634g;
-import p269t2.AbstractC8950a;
-import p269t2.AbstractC8951b;
-import p345y8.C10453g;
+import le.a;
+import s2.d;
+import s2.g;
+import t2.b;
 
 @TargetApi(16)
-public class Mp4OutputImpl extends AbstractC6268a {
-    public InterleaveChunkMdat f25770a = null;
-    public C7928a f25771b = null;
-    public FileOutputStream f25772c = null;
-    public FileChannel f25773d = null;
-    public long f25774e = 0;
-    public long f25775f = 0;
-    public boolean f25776g = true;
-    public HashMap<C7932e, long[]> f25777h = new HashMap<>();
-    public ByteBuffer f25778i = null;
+public class Mp4OutputImpl extends a {
+    public InterleaveChunkMdat f20176a = null;
+    public a f20177b = null;
+    public FileOutputStream f20178c = null;
+    public FileChannel f20179d = null;
+    public long f20180e = 0;
+    public long f20181f = 0;
+    public boolean f20182g = true;
+    public HashMap<e, long[]> f20183h = new HashMap<>();
+    public ByteBuffer f20184i = null;
 
-    public class InterleaveChunkMdat implements AbstractC8950a {
+    public class InterleaveChunkMdat implements t2.a {
         private long contentSize;
         private long dataOffset;
-        private AbstractC8951b parent;
+        private b parent;
 
         private InterleaveChunkMdat() {
             this.contentSize = 1073741824L;
             this.dataOffset = 0L;
         }
 
-        private boolean isSmallBox(long j) {
-            return j + 8 < 4294967296L;
+        private boolean isSmallBox(long j10) {
+            return j10 + 8 < 4294967296L;
         }
 
         @Override
@@ -73,15 +69,15 @@ public class Mp4OutputImpl extends AbstractC6268a {
             ByteBuffer allocate = ByteBuffer.allocate(16);
             long size = getSize();
             if (isSmallBox(size)) {
-                C8634g.m11853g(allocate, size);
+                g.g(allocate, size);
             } else {
-                C8634g.m11853g(allocate, 1L);
+                g.g(allocate, 1L);
             }
-            allocate.put(C8631d.m11876t(MediaDataBox.TYPE));
+            allocate.put(d.s(MediaDataBox.TYPE));
             if (isSmallBox(size)) {
                 allocate.put(new byte[8]);
             } else {
-                C8634g.m11851i(allocate, size);
+                g.i(allocate, size);
             }
             allocate.rewind();
             writableByteChannel.write(allocate);
@@ -96,7 +92,7 @@ public class Mp4OutputImpl extends AbstractC6268a {
         }
 
         @Override
-        public AbstractC8951b getParent() {
+        public b getParent() {
             return this.parent;
         }
 
@@ -111,104 +107,104 @@ public class Mp4OutputImpl extends AbstractC6268a {
         }
 
         @Override
-        public void parse(AbstractC3539a aVar, ByteBuffer byteBuffer, long j, AbstractC8629b bVar) {
+        public void parse(com.googlecode.mp4parser.a aVar, ByteBuffer byteBuffer, long j10, s2.b bVar) {
         }
 
-        public void setContentSize(long j) {
-            this.contentSize = j;
+        public void setContentSize(long j10) {
+            this.contentSize = j10;
         }
 
-        public void setDataOffset(long j) {
-            this.dataOffset = j;
+        public void setDataOffset(long j10) {
+            this.dataOffset = j10;
         }
 
         @Override
-        public void setParent(AbstractC8951b bVar) {
+        public void setParent(b bVar) {
             this.parent = bVar;
         }
     }
 
-    public static long m14105q(long j, long j2) {
-        return j2 == 0 ? j : m14105q(j2, j % j2);
+    public static long q(long j10, long j11) {
+        return j11 == 0 ? j10 : q(j11, j10 % j11);
     }
 
     @Override
-    public int mo14121a(MediaFormat mediaFormat, boolean z) {
-        return this.f25771b.m14102b(mediaFormat, z);
+    public int a(MediaFormat mediaFormat, boolean z10) {
+        return this.f20177b.b(mediaFormat, z10);
     }
 
     @Override
-    public void mo14120b() {
-        if (this.f25770a.getContentSize() != 0) {
-            m14106p();
+    public void b() {
+        if (this.f20176a.getContentSize() != 0) {
+            p();
         }
-        Iterator<C7932e> it = this.f25771b.m14099e().iterator();
+        Iterator<e> it = this.f20177b.e().iterator();
         while (it.hasNext()) {
-            C7932e next = it.next();
-            ArrayList<C7930c> k = next.m14083k();
-            int size = k.size();
+            e next = it.next();
+            ArrayList<c> k10 = next.k();
+            int size = k10.size();
             long[] jArr = new long[size];
-            for (int i = 0; i < size; i++) {
-                jArr[i] = k.get(i).m14094b();
+            for (int i10 = 0; i10 < size; i10++) {
+                jArr[i10] = k10.get(i10).b();
             }
-            this.f25777h.put(next, jArr);
+            this.f20183h.put(next, jArr);
         }
-        m14115g(this.f25771b).getBox(this.f25773d);
-        this.f25772c.flush();
-        this.f25773d.close();
-        this.f25772c.close();
+        g(this.f20177b).getBox(this.f20179d);
+        this.f20178c.flush();
+        this.f20179d.close();
+        this.f20178c.close();
     }
 
     @Override
-    public boolean mo14119c(int i, ByteBuffer byteBuffer, MediaCodec.BufferInfo bufferInfo, boolean z) {
-        if (this.f25776g) {
-            this.f25770a.setContentSize(0L);
-            this.f25770a.getBox(this.f25773d);
-            this.f25770a.setDataOffset(this.f25774e);
-            this.f25774e += 16;
-            this.f25775f += 16;
-            this.f25776g = false;
+    public boolean c(int i10, ByteBuffer byteBuffer, MediaCodec.BufferInfo bufferInfo, boolean z10) {
+        if (this.f20182g) {
+            this.f20176a.setContentSize(0L);
+            this.f20176a.getBox(this.f20179d);
+            this.f20176a.setDataOffset(this.f20180e);
+            this.f20180e += 16;
+            this.f20181f += 16;
+            this.f20182g = false;
         }
-        InterleaveChunkMdat interleaveChunkMdat = this.f25770a;
+        InterleaveChunkMdat interleaveChunkMdat = this.f20176a;
         interleaveChunkMdat.setContentSize(interleaveChunkMdat.getContentSize() + bufferInfo.size);
-        long j = this.f25775f + bufferInfo.size;
-        this.f25775f = j;
-        boolean z2 = true;
-        if (j >= 32768) {
-            m14106p();
-            this.f25776g = true;
-            this.f25775f -= 32768;
+        long j10 = this.f20181f + bufferInfo.size;
+        this.f20181f = j10;
+        boolean z11 = true;
+        if (j10 >= 32768) {
+            p();
+            this.f20182g = true;
+            this.f20181f -= 32768;
         } else {
-            z2 = false;
+            z11 = false;
         }
-        this.f25771b.m14103a(i, this.f25774e, bufferInfo);
-        byteBuffer.position(bufferInfo.offset + (!z ? 0 : 4));
+        this.f20177b.a(i10, this.f20180e, bufferInfo);
+        byteBuffer.position(bufferInfo.offset + (!z10 ? 0 : 4));
         byteBuffer.limit(bufferInfo.offset + bufferInfo.size);
-        if (z) {
-            this.f25778i.position(0);
-            this.f25778i.putInt(bufferInfo.size - 4);
-            this.f25778i.position(0);
-            this.f25773d.write(this.f25778i);
+        if (z10) {
+            this.f20184i.position(0);
+            this.f20184i.putInt(bufferInfo.size - 4);
+            this.f20184i.position(0);
+            this.f20179d.write(this.f20184i);
         }
-        this.f25773d.write(byteBuffer);
-        this.f25774e += bufferInfo.size;
-        if (z2) {
-            this.f25772c.flush();
+        this.f20179d.write(byteBuffer);
+        this.f20180e += bufferInfo.size;
+        if (z11) {
+            this.f20178c.flush();
         }
-        return z2;
+        return z11;
     }
 
-    public void m14118d(C7932e eVar, SampleTableBox sampleTableBox) {
-        int[] h = eVar.m14086h();
-        if (h != null) {
-            CompositionTimeToSample.C3420a aVar = null;
+    public void d(e eVar, SampleTableBox sampleTableBox) {
+        int[] h10 = eVar.h();
+        if (h10 != null) {
+            CompositionTimeToSample.a aVar = null;
             ArrayList arrayList = new ArrayList();
-            for (int i : h) {
-                if (aVar == null || aVar.m30632b() != i) {
-                    aVar = new CompositionTimeToSample.C3420a(1, i);
+            for (int i10 : h10) {
+                if (aVar == null || aVar.b() != i10) {
+                    aVar = new CompositionTimeToSample.a(1, i10);
                     arrayList.add(aVar);
                 } else {
-                    aVar.m30631c(aVar.m30633a() + 1);
+                    aVar.c(aVar.a() + 1);
                 }
             }
             CompositionTimeToSample compositionTimeToSample = new CompositionTimeToSample();
@@ -217,7 +213,7 @@ public class Mp4OutputImpl extends AbstractC6268a {
         }
     }
 
-    public FileTypeBox m14117e() {
+    public FileTypeBox e() {
         LinkedList linkedList = new LinkedList();
         linkedList.add("isom");
         linkedList.add("iso2");
@@ -226,138 +222,138 @@ public class Mp4OutputImpl extends AbstractC6268a {
         return new FileTypeBox("isom", 512L, linkedList);
     }
 
-    public Mp4OutputImpl m14116f(C7928a aVar) {
-        this.f25771b = aVar;
-        FileOutputStream fileOutputStream = new FileOutputStream(aVar.m14101c());
-        this.f25772c = fileOutputStream;
-        this.f25773d = fileOutputStream.getChannel();
-        FileTypeBox e = m14117e();
-        e.getBox(this.f25773d);
-        long size = this.f25774e + e.getSize();
-        this.f25774e = size;
-        this.f25775f += size;
-        this.f25770a = new InterleaveChunkMdat();
-        this.f25778i = ByteBuffer.allocateDirect(4);
+    public Mp4OutputImpl f(a aVar) {
+        this.f20177b = aVar;
+        FileOutputStream fileOutputStream = new FileOutputStream(aVar.c());
+        this.f20178c = fileOutputStream;
+        this.f20179d = fileOutputStream.getChannel();
+        FileTypeBox e10 = e();
+        e10.getBox(this.f20179d);
+        long size = this.f20180e + e10.getSize();
+        this.f20180e = size;
+        this.f20181f += size;
+        this.f20176a = new InterleaveChunkMdat();
+        this.f20184i = ByteBuffer.allocateDirect(4);
         return this;
     }
 
-    public MovieBox m14115g(C7928a aVar) {
+    public MovieBox g(a aVar) {
         MovieBox movieBox = new MovieBox();
         MovieHeaderBox movieHeaderBox = new MovieHeaderBox();
         movieHeaderBox.setCreationTime(new Date());
         movieHeaderBox.setModificationTime(new Date());
-        movieHeaderBox.setMatrix(C10453g.f33526j);
-        long r = m14104r(aVar);
-        Iterator<C7932e> it = aVar.m14099e().iterator();
-        long j = 0;
+        movieHeaderBox.setMatrix(z8.g.f27034j);
+        long r10 = r(aVar);
+        Iterator<e> it = aVar.e().iterator();
+        long j10 = 0;
         while (it.hasNext()) {
-            C7932e next = it.next();
-            next.m14075s();
-            long d = (next.m14090d() * r) / next.m14081m();
-            if (d > j) {
-                j = d;
+            e next = it.next();
+            next.s();
+            long d10 = (next.d() * r10) / next.m();
+            if (d10 > j10) {
+                j10 = d10;
             }
         }
-        movieHeaderBox.setDuration(j);
-        movieHeaderBox.setTimescale(r);
-        movieHeaderBox.setNextTrackId(aVar.m14099e().size() + 1);
+        movieHeaderBox.setDuration(j10);
+        movieHeaderBox.setTimescale(r10);
+        movieHeaderBox.setNextTrackId(aVar.e().size() + 1);
         movieBox.addBox(movieHeaderBox);
-        Iterator<C7932e> it2 = aVar.m14099e().iterator();
+        Iterator<e> it2 = aVar.e().iterator();
         while (it2.hasNext()) {
-            movieBox.addBox(m14107o(it2.next(), aVar));
+            movieBox.addBox(o(it2.next(), aVar));
         }
         return movieBox;
     }
 
-    public AbstractC8950a m14114h(C7932e eVar) {
+    public t2.a h(e eVar) {
         SampleTableBox sampleTableBox = new SampleTableBox();
-        m14111k(eVar, sampleTableBox);
-        m14108n(eVar, sampleTableBox);
-        m14118d(eVar, sampleTableBox);
-        m14110l(eVar, sampleTableBox);
-        m14112j(eVar, sampleTableBox);
-        m14109m(eVar, sampleTableBox);
-        m14113i(eVar, sampleTableBox);
+        k(eVar, sampleTableBox);
+        n(eVar, sampleTableBox);
+        d(eVar, sampleTableBox);
+        l(eVar, sampleTableBox);
+        j(eVar, sampleTableBox);
+        m(eVar, sampleTableBox);
+        i(eVar, sampleTableBox);
         return sampleTableBox;
     }
 
-    public void m14113i(C7932e eVar, SampleTableBox sampleTableBox) {
+    public void i(e eVar, SampleTableBox sampleTableBox) {
         ArrayList arrayList = new ArrayList();
-        Iterator<C7930c> it = eVar.m14083k().iterator();
-        long j = -1;
+        Iterator<c> it = eVar.k().iterator();
+        long j10 = -1;
         while (it.hasNext()) {
-            C7930c next = it.next();
-            long a = next.m14095a();
-            if (!(j == -1 || j == a)) {
-                j = -1;
+            c next = it.next();
+            long a10 = next.a();
+            if (!(j10 == -1 || j10 == a10)) {
+                j10 = -1;
             }
-            if (j == -1) {
-                arrayList.add(Long.valueOf(a));
+            if (j10 == -1) {
+                arrayList.add(Long.valueOf(a10));
             }
-            j = next.m14094b() + a;
+            j10 = next.b() + a10;
         }
         long[] jArr = new long[arrayList.size()];
-        for (int i = 0; i < arrayList.size(); i++) {
-            jArr[i] = ((Long) arrayList.get(i)).longValue();
+        for (int i10 = 0; i10 < arrayList.size(); i10++) {
+            jArr[i10] = ((Long) arrayList.get(i10)).longValue();
         }
         StaticChunkOffsetBox staticChunkOffsetBox = new StaticChunkOffsetBox();
         staticChunkOffsetBox.setChunkOffsets(jArr);
         sampleTableBox.addBox(staticChunkOffsetBox);
     }
 
-    public void m14112j(C7932e eVar, SampleTableBox sampleTableBox) {
+    public void j(e eVar, SampleTableBox sampleTableBox) {
         SampleToChunkBox sampleToChunkBox = new SampleToChunkBox();
         sampleToChunkBox.setEntries(new LinkedList());
-        int size = eVar.m14083k().size();
-        int i = -1;
-        int i2 = 0;
-        int i3 = 0;
-        int i4 = 1;
-        while (i2 < size) {
-            C7930c cVar = eVar.m14083k().get(i2);
-            i3++;
-            if (i2 == size + (-1) || cVar.m14095a() + cVar.m14094b() != eVar.m14083k().get(i2 + 1).m14095a()) {
-                if (i != i3) {
-                    sampleToChunkBox.getEntries().add(new SampleToChunkBox.C3426a(i4, i3, 1L));
-                    i = i3;
+        int size = eVar.k().size();
+        int i10 = -1;
+        int i11 = 0;
+        int i12 = 0;
+        int i13 = 1;
+        while (i11 < size) {
+            c cVar = eVar.k().get(i11);
+            i12++;
+            if (i11 == size + (-1) || cVar.a() + cVar.b() != eVar.k().get(i11 + 1).a()) {
+                if (i10 != i12) {
+                    sampleToChunkBox.getEntries().add(new SampleToChunkBox.a(i13, i12, 1L));
+                    i10 = i12;
                 }
-                i4++;
-                i3 = 0;
+                i13++;
+                i12 = 0;
             }
-            i2++;
+            i11++;
         }
         sampleTableBox.addBox(sampleToChunkBox);
     }
 
-    public void m14111k(C7932e eVar, SampleTableBox sampleTableBox) {
-        sampleTableBox.addBox(eVar.m14085i());
+    public void k(e eVar, SampleTableBox sampleTableBox) {
+        sampleTableBox.addBox(eVar.i());
     }
 
-    public void m14110l(C7932e eVar, SampleTableBox sampleTableBox) {
-        long[] l = eVar.m14082l();
-        if (l != null && l.length > 0) {
+    public void l(e eVar, SampleTableBox sampleTableBox) {
+        long[] l10 = eVar.l();
+        if (l10 != null && l10.length > 0) {
             SyncSampleBox syncSampleBox = new SyncSampleBox();
-            syncSampleBox.setSampleNumber(l);
+            syncSampleBox.setSampleNumber(l10);
             sampleTableBox.addBox(syncSampleBox);
         }
     }
 
-    public void m14109m(C7932e eVar, SampleTableBox sampleTableBox) {
+    public void m(e eVar, SampleTableBox sampleTableBox) {
         SampleSizeBox sampleSizeBox = new SampleSizeBox();
-        sampleSizeBox.setSampleSizes(this.f25777h.get(eVar));
+        sampleSizeBox.setSampleSizes(this.f20183h.get(eVar));
         sampleTableBox.addBox(sampleSizeBox);
     }
 
-    public void m14108n(C7932e eVar, SampleTableBox sampleTableBox) {
-        long[] j;
+    public void n(e eVar, SampleTableBox sampleTableBox) {
+        long[] j10;
         ArrayList arrayList = new ArrayList();
-        TimeToSampleBox.C3429a aVar = null;
-        for (long j2 : eVar.m14084j()) {
-            if (aVar == null || aVar.m30599b() != j2) {
-                aVar = new TimeToSampleBox.C3429a(1L, j2);
+        TimeToSampleBox.a aVar = null;
+        for (long j11 : eVar.j()) {
+            if (aVar == null || aVar.b() != j11) {
+                aVar = new TimeToSampleBox.a(1L, j11);
                 arrayList.add(aVar);
             } else {
-                aVar.m30598c(aVar.m30600a() + 1);
+                aVar.c(aVar.a() + 1);
             }
         }
         TimeToSampleBox timeToSampleBox = new TimeToSampleBox();
@@ -365,41 +361,41 @@ public class Mp4OutputImpl extends AbstractC6268a {
         sampleTableBox.addBox(timeToSampleBox);
     }
 
-    public TrackBox m14107o(C7932e eVar, C7928a aVar) {
+    public TrackBox o(e eVar, a aVar) {
         TrackBox trackBox = new TrackBox();
         TrackHeaderBox trackHeaderBox = new TrackHeaderBox();
         trackHeaderBox.setEnabled(true);
         trackHeaderBox.setInMovie(true);
         trackHeaderBox.setInPreview(true);
-        if (eVar.m14077q()) {
-            trackHeaderBox.setMatrix(C10453g.f33526j);
+        if (eVar.q()) {
+            trackHeaderBox.setMatrix(z8.g.f27034j);
         } else {
-            trackHeaderBox.setMatrix(aVar.m14100d());
+            trackHeaderBox.setMatrix(aVar.d());
         }
         trackHeaderBox.setAlternateGroup(0);
-        trackHeaderBox.setCreationTime(eVar.m14091c());
-        trackHeaderBox.setDuration((eVar.m14090d() * m14104r(aVar)) / eVar.m14081m());
-        trackHeaderBox.setHeight(eVar.m14088f());
-        trackHeaderBox.setWidth(eVar.m14078p());
+        trackHeaderBox.setCreationTime(eVar.c());
+        trackHeaderBox.setDuration((eVar.d() * r(aVar)) / eVar.m());
+        trackHeaderBox.setHeight(eVar.f());
+        trackHeaderBox.setWidth(eVar.p());
         trackHeaderBox.setLayer(0);
         trackHeaderBox.setModificationTime(new Date());
-        trackHeaderBox.setTrackId(eVar.m14080n() + 1);
-        trackHeaderBox.setVolume(eVar.m14079o());
+        trackHeaderBox.setTrackId(eVar.n() + 1);
+        trackHeaderBox.setVolume(eVar.o());
         trackBox.addBox(trackHeaderBox);
         MediaBox mediaBox = new MediaBox();
         trackBox.addBox(mediaBox);
         MediaHeaderBox mediaHeaderBox = new MediaHeaderBox();
-        mediaHeaderBox.setCreationTime(eVar.m14091c());
-        mediaHeaderBox.setDuration(eVar.m14090d());
-        mediaHeaderBox.setTimescale(eVar.m14081m());
+        mediaHeaderBox.setCreationTime(eVar.c());
+        mediaHeaderBox.setDuration(eVar.d());
+        mediaHeaderBox.setTimescale(eVar.m());
         mediaHeaderBox.setLanguage("eng");
         mediaBox.addBox(mediaHeaderBox);
         HandlerBox handlerBox = new HandlerBox();
-        handlerBox.setName(eVar.m14077q() ? "SoundHandle" : "VideoHandle");
-        handlerBox.setHandlerType(eVar.m14089e());
+        handlerBox.setName(eVar.q() ? "SoundHandle" : "VideoHandle");
+        handlerBox.setHandlerType(eVar.e());
         mediaBox.addBox(handlerBox);
         MediaInformationBox mediaInformationBox = new MediaInformationBox();
-        mediaInformationBox.addBox(eVar.m14087g());
+        mediaInformationBox.addBox(eVar.g());
         DataInformationBox dataInformationBox = new DataInformationBox();
         DataReferenceBox dataReferenceBox = new DataReferenceBox();
         dataInformationBox.addBox(dataReferenceBox);
@@ -407,27 +403,27 @@ public class Mp4OutputImpl extends AbstractC6268a {
         dataEntryUrlBox.setFlags(1);
         dataReferenceBox.addBox(dataEntryUrlBox);
         mediaInformationBox.addBox(dataInformationBox);
-        mediaInformationBox.addBox(m14114h(eVar));
+        mediaInformationBox.addBox(h(eVar));
         mediaBox.addBox(mediaInformationBox);
         return trackBox;
     }
 
-    public final void m14106p() {
-        long position = this.f25773d.position();
-        this.f25773d.position(this.f25770a.getOffset());
-        this.f25770a.getBox(this.f25773d);
-        this.f25773d.position(position);
-        this.f25770a.setDataOffset(0L);
-        this.f25770a.setContentSize(0L);
-        this.f25772c.flush();
+    public final void p() {
+        long position = this.f20179d.position();
+        this.f20179d.position(this.f20176a.getOffset());
+        this.f20176a.getBox(this.f20179d);
+        this.f20179d.position(position);
+        this.f20176a.setDataOffset(0L);
+        this.f20176a.setContentSize(0L);
+        this.f20178c.flush();
     }
 
-    public long m14104r(C7928a aVar) {
-        long m = !aVar.m14099e().isEmpty() ? aVar.m14099e().iterator().next().m14081m() : 0L;
-        Iterator<C7932e> it = aVar.m14099e().iterator();
+    public long r(a aVar) {
+        long m10 = !aVar.e().isEmpty() ? aVar.e().iterator().next().m() : 0L;
+        Iterator<e> it = aVar.e().iterator();
         while (it.hasNext()) {
-            m = m14105q(it.next().m14081m(), m);
+            m10 = q(it.next().m(), m10);
         }
-        return m;
+        return m10;
     }
 }

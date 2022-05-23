@@ -7,69 +7,69 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Looper;
+import bb.a;
 import java.util.Arrays;
 import java.util.List;
-import p012ab.AbstractC0243a;
 
-public class SonyHomeBadger implements AbstractC0243a {
-    public final Uri f21959a = Uri.parse("content://com.sonymobile.home.resourceprovider/badge");
-    public AsyncQueryHandler f21960b;
+public class SonyHomeBadger implements a {
+    public final Uri f17500a = Uri.parse("content://com.sonymobile.home.resourceprovider/badge");
+    public AsyncQueryHandler f17501b;
 
-    public static void m18377d(Context context, ComponentName componentName, int i) {
+    public static void d(Context context, ComponentName componentName, int i10) {
         Intent intent = new Intent("com.sonyericsson.home.action.UPDATE_BADGE");
         intent.putExtra("com.sonyericsson.home.intent.extra.badge.PACKAGE_NAME", componentName.getPackageName());
         intent.putExtra("com.sonyericsson.home.intent.extra.badge.ACTIVITY_NAME", componentName.getClassName());
-        intent.putExtra("com.sonyericsson.home.intent.extra.badge.MESSAGE", String.valueOf(i));
-        intent.putExtra("com.sonyericsson.home.intent.extra.badge.SHOW_MESSAGE", i > 0);
+        intent.putExtra("com.sonyericsson.home.intent.extra.badge.MESSAGE", String.valueOf(i10));
+        intent.putExtra("com.sonyericsson.home.intent.extra.badge.SHOW_MESSAGE", i10 > 0);
         context.sendBroadcast(intent);
     }
 
-    public static boolean m18373h(Context context) {
+    public static boolean h(Context context) {
         return context.getPackageManager().resolveContentProvider("com.sonymobile.home.resourceprovider", 0) != null;
     }
 
     @Override
-    public List<String> mo18371a() {
+    public List<String> a() {
         return Arrays.asList("com.sonyericsson.home", "com.sonymobile.home");
     }
 
     @Override
-    public void mo18370b(Context context, ComponentName componentName, int i) {
-        if (m18373h(context)) {
-            m18376e(context, componentName, i);
+    public void b(Context context, ComponentName componentName, int i10) {
+        if (h(context)) {
+            e(context, componentName, i10);
         } else {
-            m18377d(context, componentName, i);
+            d(context, componentName, i10);
         }
     }
 
-    public final ContentValues m18378c(int i, ComponentName componentName) {
+    public final ContentValues c(int i10, ComponentName componentName) {
         ContentValues contentValues = new ContentValues();
-        contentValues.put("badge_count", Integer.valueOf(i));
+        contentValues.put("badge_count", Integer.valueOf(i10));
         contentValues.put("package_name", componentName.getPackageName());
         contentValues.put("activity_name", componentName.getClassName());
         return contentValues;
     }
 
-    public final void m18376e(Context context, ComponentName componentName, int i) {
-        if (i >= 0) {
-            ContentValues c = m18378c(i, componentName);
+    public final void e(Context context, ComponentName componentName, int i10) {
+        if (i10 >= 0) {
+            ContentValues c10 = c(i10, componentName);
             if (Looper.myLooper() == Looper.getMainLooper()) {
-                if (this.f21960b == null) {
-                    this.f21960b = new AsyncQueryHandler(context.getApplicationContext().getContentResolver()) {
+                if (this.f17501b == null) {
+                    this.f17501b = new AsyncQueryHandler(context.getApplicationContext().getContentResolver()) {
                     };
                 }
-                m18375f(c);
+                f(c10);
                 return;
             }
-            m18374g(context, c);
+            g(context, c10);
         }
     }
 
-    public final void m18375f(ContentValues contentValues) {
-        this.f21960b.startInsert(0, null, this.f21959a, contentValues);
+    public final void f(ContentValues contentValues) {
+        this.f17501b.startInsert(0, null, this.f17500a, contentValues);
     }
 
-    public final void m18374g(Context context, ContentValues contentValues) {
-        context.getApplicationContext().getContentResolver().insert(this.f21959a, contentValues);
+    public final void g(Context context, ContentValues contentValues) {
+        context.getApplicationContext().getContentResolver().insert(this.f17500a, contentValues);
     }
 }

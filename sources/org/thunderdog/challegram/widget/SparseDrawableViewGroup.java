@@ -5,22 +5,22 @@ import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
-import p111he.AbstractC5143t;
-import p111he.C5141s;
-import p143k0.C6038h;
+import ie.s;
+import ie.t;
+import k0.h;
 
-public abstract class SparseDrawableViewGroup extends ViewGroup implements AbstractC5143t {
+public abstract class SparseDrawableViewGroup extends ViewGroup implements t {
     public SparseDrawableViewGroup(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
     }
 
     @Override
-    public Drawable mo14041X(int i, int i2) {
-        return C5141s.m23834a(this, i, i2);
+    public Drawable Z(int i10, int i11) {
+        return s.a(this, i10, i11);
     }
 
     @Override
-    public C6038h<Drawable> getSparseDrawableHolder() {
+    public h<Drawable> getSparseDrawableHolder() {
         return null;
     }
 
@@ -29,7 +29,7 @@ public abstract class SparseDrawableViewGroup extends ViewGroup implements Abstr
         return null;
     }
 
-    public SparseDrawableViewGroup(Context context, AttributeSet attributeSet, int i) {
-        super(context, attributeSet, i);
+    public SparseDrawableViewGroup(Context context, AttributeSet attributeSet, int i10) {
+        super(context, attributeSet, i10);
     }
 }

@@ -12,12 +12,12 @@ public class AudioTrackJNI {
     private boolean running;
     private Thread thread;
 
-    public AudioTrackJNI(long j) {
-        this.nativeInst = j;
+    public AudioTrackJNI(long j10) {
+        this.nativeInst = j10;
     }
 
-    private int getBufferSize(int i, int i2) {
-        return Math.max(AudioTrack.getMinBufferSize(i2, 4, 2), i);
+    private int getBufferSize(int i10, int i11) {
+        return Math.max(AudioTrack.getMinBufferSize(i11, 4, 2), i10);
     }
 
     public native void nativeCallback(byte[] bArr);
@@ -51,8 +51,8 @@ public class AudioTrackJNI {
                                     audioTrackJNI2.nativeCallback(audioTrackJNI2.buffer);
                                     AudioTrackJNI.this.audioTrack.write(AudioTrackJNI.this.buffer, 0, 1920);
                                 }
-                            } catch (Exception e) {
-                                VLog.m14057e(e);
+                            } catch (Exception e10) {
+                                VLog.e(e10);
                             }
                             if (!AudioTrackJNI.this.running) {
                                 AudioTrackJNI.this.audioTrack.stop();
@@ -60,9 +60,9 @@ public class AudioTrackJNI {
                             }
                             continue;
                         }
-                        VLog.m14056i("audiotrack thread exits");
-                    } catch (Exception e2) {
-                        VLog.m14058e("error starting AudioTrack", e2);
+                        VLog.i("audiotrack thread exits");
+                    } catch (Exception e11) {
+                        VLog.e("error starting AudioTrack", e11);
                     }
                 }
             });
@@ -73,21 +73,21 @@ public class AudioTrackJNI {
         throw new IllegalStateException("thread already started");
     }
 
-    public void init(int i, int i2, int i3, int i4) {
+    public void init(int i10, int i11, int i12, int i13) {
         if (this.audioTrack == null) {
-            int bufferSize = getBufferSize(i4, 48000);
-            this.bufferSize = i4;
-            AudioTrack audioTrack = new AudioTrack(0, 48000, i3 == 1 ? 4 : 12, 2, bufferSize, 1);
+            int bufferSize = getBufferSize(i13, 48000);
+            this.bufferSize = i13;
+            AudioTrack audioTrack = new AudioTrack(0, 48000, i12 == 1 ? 4 : 12, 2, bufferSize, 1);
             this.audioTrack = audioTrack;
             if (audioTrack.getState() != 1) {
-                VLog.m14054w("Error initializing AudioTrack with 48k, trying 44.1k with resampling");
+                VLog.w("Error initializing AudioTrack with 48k, trying 44.1k with resampling");
                 try {
                     this.audioTrack.release();
                 } catch (Throwable unused) {
                 }
-                int bufferSize2 = getBufferSize(i4 * 6, 44100);
-                VLog.m14060d("buffer size: " + bufferSize2);
-                this.audioTrack = new AudioTrack(0, 44100, i3 == 1 ? 4 : 12, 2, bufferSize2, 1);
+                int bufferSize2 = getBufferSize(i13 * 6, 44100);
+                VLog.d("buffer size: " + bufferSize2);
+                this.audioTrack = new AudioTrack(0, 44100, i12 == 1 ? 4 : 12, 2, bufferSize2, 1);
                 this.needResampling = true;
                 return;
             }
@@ -102,8 +102,8 @@ public class AudioTrackJNI {
         if (thread != null) {
             try {
                 thread.join();
-            } catch (InterruptedException e) {
-                VLog.m14057e(e);
+            } catch (InterruptedException e10) {
+                VLog.e(e10);
             }
             this.thread = null;
         }

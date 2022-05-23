@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1507020" android:versionName="0.24.6.1507-arm64-v8a" android:installLocation="auto" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="org.thunderdog.challegram" platformBuildVersionCode="31" platformBuildVersionName="12">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1519020" android:versionName="0.24.8.1519-arm64-v8a" android:installLocation="auto" android:compileSdkVersion="31" android:compileSdkVersionCodename="12" package="org.thunderdog.challegram" platformBuildVersionCode="31" platformBuildVersionName="12">
     <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30"/>
     <uses-feature android:glEsVersion="0x20000" android:required="true"/>
     <uses-feature android:name="android.hardware.microphone" android:required="false"/>
@@ -147,8 +147,8 @@
                 <action android:name="org.thunderdog.challegram.ACTION_STOP_LOCATION"/>
             </intent-filter>
         </receiver>
-        <activity android:label="@string/AppName" android:name="org.thunderdog.challegram.ManageSpaceActivity" android:launchMode="singleTask" android:configChanges="layoutDirection|screenSize|uiMode|orientation|keyboardHidden|keyboard|locale" android:windowSoftInputMode="adjustPan"/>
-        <activity android:label="@string/AppName" android:name="org.thunderdog.challegram.MainActivity" android:launchMode="singleTask" android:configChanges="layoutDirection|screenSize|uiMode|orientation|keyboardHidden|keyboard|locale" android:windowSoftInputMode="adjustPan|stateHidden">
+        <activity android:name="org.thunderdog.challegram.ManageSpaceActivity" android:launchMode="singleTask" android:configChanges="layoutDirection|screenSize|uiMode|orientation|keyboardHidden|keyboard|locale" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="org.thunderdog.challegram.MainActivity" android:launchMode="singleTask" android:configChanges="layoutDirection|screenSize|uiMode|orientation|keyboardHidden|keyboard|locale" android:windowSoftInputMode="adjustPan|stateHidden">
             <intent-filter android:label="@string/AppName">
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

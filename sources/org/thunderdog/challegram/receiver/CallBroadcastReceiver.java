@@ -8,9 +8,9 @@ import org.thunderdog.challegram.service.TGCallService;
 public class CallBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        TGCallService w = TGCallService.m14210w();
-        if (w != null) {
-            w.m14248M(context, intent);
+        TGCallService w10 = TGCallService.w();
+        if (w10 != null) {
+            w10.M(context, intent);
         }
     }
 }

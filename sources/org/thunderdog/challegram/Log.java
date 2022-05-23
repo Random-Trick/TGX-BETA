@@ -4,9 +4,11 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Message;
-import be.C1357a0;
-import be.C1379j0;
-import ge.C4868i;
+import ce.a0;
+import ce.j0;
+import db.f;
+import gd.m;
+import ib.i;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -16,17 +18,9 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
-import nc.C7370m;
-import nc.C7389v0;
-import org.drinkless.p210td.libcore.telegram.TdApi;
-import p037cb.C2064f;
-import p082fd.C4384m;
-import p108hb.C5063c;
-import p108hb.C5070i;
-import p139jb.AbstractC5918j;
-import p154kb.C6227d;
-import p181mb.C6810a;
-import p316w9.C10007i;
+import kb.j;
+import oc.v0;
+import org.drinkless.td.libcore.telegram.TdApi;
 
 public class Log {
     private static final int ACTION_DELETE_ALL = 3;
@@ -59,8 +53,8 @@ public class Log {
     private static boolean isCapturing;
     private static int level;
     private static boolean loaded;
-    private static C6227d<AbstractC7880c> outputListeners;
-    private static C4384m pool;
+    private static lb.d<c> outputListeners;
+    private static m pool;
     private static int runtimeFlags;
     private static int settings;
     private static long tags;
@@ -82,24 +76,24 @@ public class Log {
     public static final int TAG_TDLIB_OPTIONS = 1073741824;
     public static final int[] TAGS = {4, TAG_ACCOUNTS, TAG_PLAYER, TAG_NDK, TAG_CONTACT, TAG_VIDEO, TAG_LUX, TAG_COMPRESS, TAG_PAINT, TAG_VOICE, TAG_ROUND, 16, 1, 2, 8, TAG_GIF_LOADER, 32, 64, TAG_YOUTUBE, TAG_CAMERA, TAG_EMOJI, TAG_TDLIB_FILES, TAG_TDLIB_OPTIONS};
 
-    public class C7878a extends C4384m {
-        public C7878a(String str) {
+    public class a extends m {
+        public a(String str) {
             super(str);
         }
 
         @Override
-        public void mo3052f(Message message) {
+        public void f(Message message) {
             synchronized (Log.class) {
-                int i = message.what;
-                if (i == 0) {
+                int i10 = message.what;
+                if (i10 == 0) {
                     Log.logToFileImpl(message.arg1, message.arg2, (String) message.obj);
-                } else if (i == 1) {
+                } else if (i10 == 1) {
                     Log.closeLogImpl();
-                } else if (i == 2) {
-                    ((AbstractC5918j) message.obj).mo1330a(Log.getLogFilesImpl());
-                } else if (i == 3) {
+                } else if (i10 == 2) {
+                    ((j) message.obj).a(Log.getLogFilesImpl());
+                } else if (i10 == 3) {
                     Object[] objArr = (Object[]) message.obj;
-                    Log.deleteAllImpl((C7879b) objArr[0], (AbstractC5918j) objArr[1], (AbstractC5918j) objArr[2]);
+                    Log.deleteAllImpl((b) objArr[0], (j) objArr[1], (j) objArr[2]);
                     objArr[0] = null;
                     objArr[1] = null;
                     objArr[2] = null;
@@ -108,89 +102,89 @@ public class Log {
         }
     }
 
-    public static class C7879b {
-        public final List<File> f25454a;
-        public long f25455b;
-        public long f25456c;
-        public long f25457d;
+    public static class b {
+        public final List<File> f19990a;
+        public long f19991b;
+        public long f19992c;
+        public long f19993d;
 
-        public C7879b(List<File> list, long j, long j2, long j3) {
-            this.f25454a = list;
-            this.f25455b = j;
-            this.f25456c = j2;
-            this.f25457d = j3;
+        public b(List<File> list, long j10, long j11, long j12) {
+            this.f19990a = list;
+            this.f19991b = j10;
+            this.f19992c = j11;
+            this.f19993d = j12;
         }
 
-        public boolean m14707a() {
-            return this.f25454a.isEmpty();
+        public boolean a() {
+            return this.f19990a.isEmpty();
         }
     }
 
-    public interface AbstractC7880c {
-        void mo14706G6(int i, int i2, String str, Throwable th);
+    public interface c {
+        void D6(int i10, int i11, String str, Throwable th);
 
-        void mo14705Q6();
+        void Q6();
     }
 
-    public static class C7881d {
-        public final String f25458a;
-        public final String f25459b;
-        public final String f25460c;
-        public final StackTraceElement[] f25461d;
-        public final C7881d f25462e;
+    public static class d {
+        public final String f19994a;
+        public final String f19995b;
+        public final String f19996c;
+        public final StackTraceElement[] f19997d;
+        public final d f19998e;
 
-        public C7881d(String str, String str2, String str3, StackTraceElement[] stackTraceElementArr, C7881d dVar) {
-            this.f25458a = str;
-            this.f25459b = str2;
-            this.f25460c = str3;
-            this.f25461d = stackTraceElementArr;
-            this.f25462e = dVar;
+        public d(String str, String str2, String str3, StackTraceElement[] stackTraceElementArr, d dVar) {
+            this.f19994a = str;
+            this.f19995b = str2;
+            this.f19996c = str3;
+            this.f19997d = stackTraceElementArr;
+            this.f19998e = dVar;
         }
 
-        public static void m14704a(StringBuilder sb2, C7881d dVar, int i) {
-            if (i > 0) {
+        public static void a(StringBuilder sb2, d dVar, int i10) {
+            if (i10 > 0) {
                 sb2.append("\n\n=== Cause #");
-                sb2.append(i);
+                sb2.append(i10);
                 sb2.append("===\n");
             }
-            sb2.append(dVar.f25458a);
-            if (!C5070i.m24062i(dVar.f25459b) || !C5070i.m24062i(dVar.f25460c)) {
+            sb2.append(dVar.f19994a);
+            if (!i.i(dVar.f19995b) || !i.i(dVar.f19996c)) {
                 sb2.append(": ");
-                if (!C5070i.m24062i(dVar.f25459b)) {
-                    sb2.append(dVar.f25459b);
-                    if (!C5070i.m24062i(dVar.f25460c)) {
+                if (!i.i(dVar.f19995b)) {
+                    sb2.append(dVar.f19995b);
+                    if (!i.i(dVar.f19996c)) {
                         sb2.append(" | ");
-                        sb2.append(dVar.f25460c);
+                        sb2.append(dVar.f19996c);
                     }
-                } else if (!C5070i.m24062i(dVar.f25460c)) {
-                    sb2.append(dVar.f25460c);
+                } else if (!i.i(dVar.f19996c)) {
+                    sb2.append(dVar.f19996c);
                 }
             }
             sb2.append("\nStack trace:\n");
             RuntimeException runtimeException = new RuntimeException();
-            runtimeException.setStackTrace(dVar.f25461d);
+            runtimeException.setStackTrace(dVar.f19997d);
             sb2.append(Log.getStackTrace(runtimeException));
-            C7881d dVar2 = dVar.f25462e;
+            d dVar2 = dVar.f19998e;
             if (dVar2 != null) {
-                m14704a(sb2, dVar2, i + 1);
+                a(sb2, dVar2, i10 + 1);
             }
         }
 
         public boolean equals(Object obj) {
-            C7881d dVar;
+            d dVar;
             if (obj == this) {
                 return true;
             }
-            if (!(obj instanceof C7881d)) {
+            if (!(obj instanceof d)) {
                 return false;
             }
-            C7881d dVar2 = (C7881d) obj;
-            if (C5070i.m24068c(this.f25458a, dVar2.f25458a) && C5070i.m24068c(this.f25459b, dVar2.f25459b) && C5070i.m24068c(this.f25460c, dVar2.f25460c) && Arrays.equals(this.f25461d, dVar2.f25461d)) {
-                C7881d dVar3 = this.f25462e;
-                if (dVar3 == null && dVar2.f25462e == null) {
+            d dVar2 = (d) obj;
+            if (i.c(this.f19994a, dVar2.f19994a) && i.c(this.f19995b, dVar2.f19995b) && i.c(this.f19996c, dVar2.f19996c) && Arrays.equals(this.f19997d, dVar2.f19997d)) {
+                d dVar3 = this.f19998e;
+                if (dVar3 == null && dVar2.f19998e == null) {
                     return true;
                 }
-                if (dVar3 != null && (dVar = dVar2.f25462e) != null && dVar3.equals(dVar)) {
+                if (dVar3 != null && (dVar = dVar2.f19998e) != null && dVar3.equals(dVar)) {
                     return true;
                 }
             }
@@ -199,20 +193,20 @@ public class Log {
 
         public String toString() {
             StringBuilder sb2 = new StringBuilder();
-            m14704a(sb2, this, 0);
+            a(sb2, this, 0);
             return sb2.toString();
         }
     }
 
-    public static void m14740a(int i, String str, Object... objArr) {
-        log(i, 0, str, objArr);
+    public static void a(int i10, String str, Object... objArr) {
+        log(i10, 0, str, objArr);
     }
 
-    public static void addOutputListener(AbstractC7880c cVar) {
+    public static void addOutputListener(c cVar) {
         if (outputListeners == null) {
             synchronized (Log.class) {
                 if (outputListeners == null) {
-                    outputListeners = new C6227d<>(true);
+                    outputListeners = new lb.d<>(true);
                 }
             }
         }
@@ -224,21 +218,21 @@ public class Log {
     }
 
     public static void bug(String str, Object... objArr) {
-        m14725e(str, generateException(3), objArr);
+        e(str, generateException(3), objArr);
     }
 
-    public static boolean checkLogLevel(int i) {
-        return i <= getLogLevel();
+    public static boolean checkLogLevel(int i10) {
+        return i10 <= getLogLevel();
     }
 
-    private static boolean checkPermission(int i, long j) {
+    private static boolean checkPermission(int i10, long j10) {
         if (!loaded) {
             load();
         }
-        if (isCapturing || level >= j) {
-            if (i != 0) {
-                long j2 = i;
-                if ((tags & j2) == j2 || j <= 2) {
+        if (isCapturing || level >= j10) {
+            if (i10 != 0) {
+                long j11 = i10;
+                if ((tags & j11) == j11 || j10 <= 2) {
                 }
             }
             return true;
@@ -246,28 +240,28 @@ public class Log {
         return false;
     }
 
-    public static boolean checkSetting(int i) {
+    public static boolean checkSetting(int i10) {
         if (!loaded) {
             load();
         }
-        return (settings & i) == i;
+        return (settings & i10) == i10;
     }
 
     public static void close() {
-        boolean z;
-        C4384m mVar;
+        boolean z10;
+        m mVar;
         synchronized (Log.class) {
-            z = true;
+            z10 = true;
             if (!isCapturing) {
                 if ((runtimeFlags & 1) != 0 || (mVar = pool) == null) {
                     closeLogImpl();
                 } else {
-                    mVar.m28052h(Message.obtain(mVar.m28055d(), 1), 0L);
+                    mVar.h(Message.obtain(mVar.d(), 1), 0L);
                 }
-                z = false;
+                z10 = false;
             }
         }
-        if (z) {
+        if (z10) {
             endCapture();
         }
     }
@@ -278,42 +272,42 @@ public class Log {
         log(0, 1, str, objArr);
     }
 
-    public static void m14733d(int i, String str, Object... objArr) {
-        log(i, 4, str, objArr);
+    public static void d(int i10, String str, Object... objArr) {
+        log(i10, 4, str, objArr);
     }
 
-    public static void deleteAll(C7879b bVar, AbstractC5918j<C7879b> jVar, AbstractC5918j<C7879b> jVar2) {
-        C4384m mVar;
+    public static void deleteAll(b bVar, j<b> jVar, j<b> jVar2) {
+        m mVar;
         close();
         synchronized (Log.class) {
             if ((runtimeFlags & 1) != 0 || preparePool() == null || (mVar = pool) == null) {
                 deleteAllImpl(bVar, jVar, jVar2);
             } else {
-                mVar.m28052h(Message.obtain(mVar.m28055d(), 3, new Object[]{bVar, jVar, jVar2}), 0L);
+                mVar.h(Message.obtain(mVar.d(), 3, new Object[]{bVar, jVar, jVar2}), 0L);
             }
         }
     }
 
-    public static void deleteAllImpl(C7879b bVar, AbstractC5918j<C7879b> jVar, AbstractC5918j<C7879b> jVar2) {
-        for (int size = bVar.f25454a.size() - 1; size >= 0; size--) {
-            File file = bVar.f25454a.get(size);
+    public static void deleteAllImpl(b bVar, j<b> jVar, j<b> jVar2) {
+        for (int size = bVar.f19990a.size() - 1; size >= 0; size--) {
+            File file = bVar.f19990a.get(size);
             long length = file.length();
             boolean startsWith = file.getName().startsWith(CRASH_PREFIX);
             if (file.delete()) {
                 if (startsWith) {
-                    bVar.f25456c--;
+                    bVar.f19992c--;
                 } else {
-                    bVar.f25455b--;
+                    bVar.f19991b--;
                 }
-                bVar.f25457d -= length;
-                bVar.f25454a.remove(size);
+                bVar.f19993d -= length;
+                bVar.f19990a.remove(size);
                 if (jVar2 != null) {
-                    jVar2.mo1330a(bVar);
+                    jVar2.a(bVar);
                 }
             }
         }
         if (jVar != null) {
-            jVar.mo1330a(getLogFilesImpl());
+            jVar.a(getLogFilesImpl());
         }
     }
 
@@ -332,8 +326,8 @@ public class Log {
         return delete;
     }
 
-    public static void m14727e(int i, String str, Object... objArr) {
-        log(i, 1, str, objArr);
+    public static void e(int i10, String str, Object... objArr) {
+        log(i10, 1, str, objArr);
     }
 
     public static String endCapture() {
@@ -366,26 +360,26 @@ public class Log {
         return generateException(1);
     }
 
-    private static int getAndroidPriority(int i) {
-        if (i == 0) {
+    private static int getAndroidPriority(int i10) {
+        if (i10 == 0) {
             return 7;
         }
-        if (i == 1) {
+        if (i10 == 1) {
             return 6;
         }
-        if (i == 2) {
+        if (i10 == 2) {
             return 5;
         }
-        if (i == 3) {
+        if (i10 == 3) {
             return 4;
         }
-        if (i == 4) {
+        if (i10 == 4) {
             return 3;
         }
-        if (i == 5) {
+        if (i10 == 5) {
             return 2;
         }
-        throw new AssertionError(i);
+        throw new AssertionError(i10);
     }
 
     public static long getCapturedErrors() {
@@ -399,11 +393,11 @@ public class Log {
     private static native String getDeviceInformation();
 
     public static String getDeviceInformationString() {
-        return String.format(Locale.US, "App: %s\nSDK: %d (%s)\nManufacturer: %s\nModel: %s\nBrand: %s\nDisplay: %s\nProduct: %s\nFingerprint: %s\nScreen: %dx%d (%f)\n", "0.24.6.1507-arm64-v8a", Integer.valueOf(Build.VERSION.SDK_INT), C2064f.m35728a(), Build.MANUFACTURER, Build.MODEL, Build.BRAND, Build.DISPLAY, Build.PRODUCT, Build.FINGERPRINT, Integer.valueOf(C1357a0.m37554D()), Integer.valueOf(C1357a0.m37556B()), Float.valueOf(C1357a0.m37545h()));
+        return String.format(Locale.US, "App: %s\nSDK: %d (%s)\nManufacturer: %s\nModel: %s\nBrand: %s\nDisplay: %s\nProduct: %s\nFingerprint: %s\nScreen: %dx%d (%f)\n", "0.24.8.1519-arm64-v8a", Integer.valueOf(Build.VERSION.SDK_INT), f.a(), Build.MANUFACTURER, Build.MODEL, Build.BRAND, Build.DISPLAY, Build.PRODUCT, Build.FINGERPRINT, Integer.valueOf(a0.D()), Integer.valueOf(a0.B()), Float.valueOf(a0.h()));
     }
 
     public static File getLogDir() {
-        File file = new File(C1379j0.m37318n().getFilesDir(), "logs");
+        File file = new File(j0.n().getFilesDir(), "logs");
         if (file.exists() || file.mkdir()) {
             return file;
         }
@@ -411,36 +405,36 @@ public class Log {
         return null;
     }
 
-    public static C7879b getLogFiles() {
-        C7879b logFilesImpl;
+    public static b getLogFiles() {
+        b logFilesImpl;
         synchronized (Log.class) {
             logFilesImpl = getLogFilesImpl();
         }
         return logFilesImpl;
     }
 
-    public static C7879b getLogFilesImpl() {
+    public static b getLogFilesImpl() {
         File[] listFiles;
         File logDir = getLogDir();
         if (logDir == null || (listFiles = logDir.listFiles()) == null) {
             return null;
         }
-        Arrays.sort(listFiles, C7370m.f23299a);
+        Arrays.sort(listFiles, oc.m.f19408a);
         ArrayList arrayList = new ArrayList(listFiles.length);
-        long j = 0;
-        long j2 = 0;
+        long j10 = 0;
+        long j11 = 0;
         for (File file : listFiles) {
             String name = file.getName();
             if (!name.startsWith("tdlib_log.txt")) {
                 arrayList.add(file);
                 if (name.startsWith(CRASH_PREFIX)) {
-                    j2++;
+                    j11++;
                 } else {
-                    j++;
+                    j10++;
                 }
             }
         }
-        return new C7879b(arrayList, j, j2, C7389v0.m16669W0(arrayList));
+        return new b(arrayList, j10, j11, v0.W0(arrayList));
     }
 
     public static int getLogLevel() {
@@ -450,9 +444,9 @@ public class Log {
         return level;
     }
 
-    public static native String getLogTag(int i);
+    public static native String getLogTag(int i10);
 
-    public static native String getLogTagDescription(int i);
+    public static native String getLogTagDescription(int i10);
 
     public static String getStackTrace(Throwable th) {
         try {
@@ -477,58 +471,58 @@ public class Log {
         }
     }
 
-    public static void m14721i(int i, String str, Object... objArr) {
-        log(i, 3, str, objArr);
+    public static void i(int i10, String str, Object... objArr) {
+        log(i10, 3, str, objArr);
     }
 
     public static void initLibraries(Context context) {
     }
 
     public static boolean isCapturing() {
-        boolean z;
+        boolean z10;
         synchronized (Log.class) {
-            z = isCapturing;
+            z10 = isCapturing;
         }
-        return z;
+        return z10;
     }
 
-    public static boolean isEnabled(int i) {
+    public static boolean isEnabled(int i10) {
         if (!loaded) {
             load();
         }
-        long j = i;
-        return (tags & j) == j;
+        long j10 = i10;
+        return (tags & j10) == j10;
     }
 
     public static int lambda$getLogFilesImpl$0(File file, File file2) {
-        int i = (file.lastModified() > file2.lastModified() ? 1 : (file.lastModified() == file2.lastModified() ? 0 : -1));
-        if (i == 0) {
+        int i10 = (file.lastModified() > file2.lastModified() ? 1 : (file.lastModified() == file2.lastModified() ? 0 : -1));
+        if (i10 == 0) {
             return 0;
         }
-        return i < 0 ? 1 : -1;
+        return i10 < 0 ? 1 : -1;
     }
 
     private static void load() {
         if (!loaded) {
-            C7888N.init();
-            load(C4868i.m24727c2().m24638n3());
+            N.init();
+            load(he.i.c2().n3());
         }
     }
 
-    public static void log(int i, int i2, String str, Throwable th, Object... objArr) {
+    public static void log(int i10, int i11, String str, Throwable th, Object... objArr) {
         String str2;
         String str3;
         if (!loaded) {
             load();
         }
-        boolean checkPermission = checkPermission(i, i2);
+        boolean checkPermission = checkPermission(i10, i11);
         if (checkPermission) {
             if (objArr.length != 0) {
                 str = String.format(Locale.US, str, objArr);
             }
             if ((settings & 1) != 0) {
-                int androidPriority = getAndroidPriority(i2);
-                String logTag = i != 0 ? getLogTag(i) : null;
+                int androidPriority = getAndroidPriority(i11);
+                String logTag = i10 != 0 ? getLogTag(i10) : null;
                 if (logTag != null) {
                     str3 = "[" + logTag + "] " + str;
                 } else {
@@ -570,17 +564,17 @@ public class Log {
                 } else {
                     str2 = str;
                 }
-                logToFile(i, i2, str2, (runtimeFlags & 1) == 0);
+                logToFile(i10, i11, str2, (runtimeFlags & 1) == 0);
                 if (isCapturing) {
-                    if (i2 == 1) {
+                    if (i11 == 1) {
                         capturedErrors++;
-                    } else if (i2 == 2) {
+                    } else if (i11 == 2) {
                         capturedWarnings++;
                     }
                 }
             }
-            notifyOutputListeners(i, i2, str, th);
-            if (i2 == 0 && !isCapturing) {
+            notifyOutputListeners(i10, i11, str, th);
+            if (i11 == 0 && !isCapturing) {
                 throw new AssertionError(str);
             }
         }
@@ -589,22 +583,22 @@ public class Log {
     public static void logExternally(String str, Throwable th) {
     }
 
-    private static void logToFile(int i, int i2, String str, boolean z) {
+    private static void logToFile(int i10, int i11, String str, boolean z10) {
         preparePool();
-        C4384m mVar = pool;
-        if (mVar == null || !z) {
+        m mVar = pool;
+        if (mVar == null || !z10) {
             synchronized (Log.class) {
-                logToFileImpl(i, i2, str);
+                logToFileImpl(i10, i11, str);
             }
             return;
         }
-        mVar.m28052h(Message.obtain(mVar.m28055d(), 0, i, i2, str), 0L);
+        mVar.h(Message.obtain(mVar.d(), 0, i10, i11, str), 0L);
     }
 
-    public static native void logToFileImpl(int i, int i2, String str);
+    public static native void logToFileImpl(int i10, int i11, String str);
 
-    public static boolean needLog(int i, int i2) {
-        return isEnabled(i) && checkLogLevel(i2);
+    public static boolean needLog(int i10, int i11) {
+        return isEnabled(i10) && checkLogLevel(i11);
     }
 
     public static boolean needMeasureLaunchSpeed() {
@@ -613,40 +607,40 @@ public class Log {
 
     private static void notifyLogFilesAltered() {
         if (hasListeners()) {
-            Iterator<AbstractC7880c> it = outputListeners.iterator();
+            Iterator<c> it = outputListeners.iterator();
             while (it.hasNext()) {
-                it.next().mo14705Q6();
+                it.next().Q6();
             }
         }
     }
 
-    private static void notifyOutputListeners(int i, int i2, String str, Throwable th) {
+    private static void notifyOutputListeners(int i10, int i11, String str, Throwable th) {
         if (hasListeners()) {
-            Iterator<AbstractC7880c> it = outputListeners.iterator();
+            Iterator<c> it = outputListeners.iterator();
             while (it.hasNext()) {
-                it.next().mo14706G6(i, i2, str, th);
+                it.next().D6(i10, i11, str, th);
             }
         }
     }
 
-    private static C4384m preparePool() {
+    private static m preparePool() {
         File logDir;
         if (pool == null) {
             synchronized (Log.class) {
                 if (pool == null && (logDir = getLogDir()) != null) {
-                    pool = new C7878a("Log");
+                    pool = new a("Log");
                     String property = System.getProperty("os.arch");
                     if (property == null) {
                         property = "";
                     }
-                    setInternalValues(logDir.getAbsolutePath(), property, "0.24.6.1507-arm64-v8a", 1507, Build.VERSION.SDK_INT, C2064f.m35728a(), Build.MODEL, Build.BRAND, Build.DISPLAY, Build.PRODUCT, Build.MANUFACTURER, Build.FINGERPRINT, C1357a0.m37554D(), C1357a0.m37556B(), C1357a0.m37545h());
+                    setInternalValues(logDir.getAbsolutePath(), property, "0.24.8.1519-arm64-v8a", 1519, Build.VERSION.SDK_INT, f.a(), Build.MODEL, Build.BRAND, Build.DISPLAY, Build.PRODUCT, Build.MANUFACTURER, Build.FINGERPRINT, a0.D(), a0.B(), a0.h());
                 }
             }
         }
         return pool;
     }
 
-    public static void removeOutputListener(AbstractC7880c cVar) {
+    public static void removeOutputListener(c cVar) {
         if (hasListeners()) {
             outputListeners.remove(cVar);
         }
@@ -657,93 +651,93 @@ public class Log {
         capturedWarnings = 0L;
     }
 
-    public static void setEnabled(int i, boolean z) {
-        setEnabledTags(C5063c.m24138i(tags, i, z));
+    public static void setEnabled(int i10, boolean z10) {
+        setEnabledTags(ib.c.i(tags, i10, z10));
     }
 
-    public static void setEnabledTags(long j) {
-        if (tags != j) {
-            tags = j;
-            setLogTagsImpl(j);
-            C4868i.m24727c2().m24567w3("log_tags", j);
+    public static void setEnabledTags(long j10) {
+        if (tags != j10) {
+            tags = j10;
+            setLogTagsImpl(j10);
+            he.i.c2().w3("log_tags", j10);
         }
     }
 
-    private static native void setInternalValues(String str, String str2, String str3, int i, int i2, String str4, String str5, String str6, String str7, String str8, String str9, String str10, int i3, int i4, float f);
+    private static native void setInternalValues(String str, String str2, String str3, int i10, int i11, String str4, String str5, String str6, String str7, String str8, String str9, String str10, int i12, int i13, float f10);
 
-    public static void setLogLevel(int i) {
-        if (getLogLevel() != i) {
-            level = i;
-            setLogLevelImpl(i);
-            setThirdPartyLogLevels(i);
-            C4868i.m24727c2().m24582u3("log_level", i);
+    public static void setLogLevel(int i10) {
+        if (getLogLevel() != i10) {
+            level = i10;
+            setLogLevelImpl(i10);
+            setThirdPartyLogLevels(i10);
+            he.i.c2().u3("log_level", i10);
         }
     }
 
-    private static native void setLogLevelImpl(int i);
+    private static native void setLogLevelImpl(int i10);
 
-    private static native void setLogTagsImpl(long j);
+    private static native void setLogTagsImpl(long j10);
 
-    public static void setRuntimeFlag(int i, boolean z) {
+    public static void setRuntimeFlag(int i10, boolean z10) {
         synchronized (Log.class) {
-            int i2 = runtimeFlags;
-            if (z != ((i2 & i) == i)) {
-                runtimeFlags = C5063c.m24139h(i2, i, z);
+            int i11 = runtimeFlags;
+            if (z10 != ((i11 & i10) == i10)) {
+                runtimeFlags = ib.c.h(i11, i10, z10);
             }
         }
     }
 
-    public static void setSetting(int i, boolean z) {
-        if (z != checkSetting(i)) {
-            settings = C5063c.m24139h(settings, i, z);
-            C4868i.m24727c2().m24582u3("log_settings", i);
+    public static void setSetting(int i10, boolean z10) {
+        if (z10 != checkSetting(i10)) {
+            settings = ib.c.h(settings, i10, z10);
+            he.i.c2().u3("log_settings", i10);
         }
     }
 
-    private static void setThirdPartyLogLevels(int i) {
-        if (i == 2) {
-            C10007i.m6264f(2);
-        } else if (i == 3 || i == 4) {
-            C10007i.m6264f(1);
-        } else if (i != 5) {
-            C10007i.m6264f(3);
+    private static void setThirdPartyLogLevels(int i10) {
+        if (i10 == 2) {
+            x9.i.f(2);
+        } else if (i10 == 3 || i10 == 4) {
+            x9.i.f(1);
+        } else if (i10 != 5) {
+            x9.i.f(3);
         } else {
-            C10007i.m6264f(0);
+            x9.i.f(0);
         }
     }
 
     public static boolean startCapture() {
-        boolean z;
+        boolean z10;
         synchronized (Log.class) {
             if (!isCapturing) {
                 isCapturing = startCaptureImpl();
             }
-            z = isCapturing;
+            z10 = isCapturing;
         }
-        return z;
+        return z10;
     }
 
     private static native boolean startCaptureImpl();
 
-    public static C7881d throwableFromBlob(C6810a aVar) {
-        String q = aVar.m18923q();
-        String q2 = aVar.m18936d() ? aVar.m18923q() : null;
-        String q3 = aVar.m18936d() ? aVar.m18923q() : null;
-        int m = aVar.m18927m();
-        StackTraceElement[] stackTraceElementArr = new StackTraceElement[m];
-        for (int i = 0; i < m; i++) {
+    public static d throwableFromBlob(nb.a aVar) {
+        String q10 = aVar.q();
+        String q11 = aVar.d() ? aVar.q() : null;
+        String q12 = aVar.d() ? aVar.q() : null;
+        int m10 = aVar.m();
+        StackTraceElement[] stackTraceElementArr = new StackTraceElement[m10];
+        for (int i10 = 0; i10 < m10; i10++) {
             String str = "";
-            String q4 = aVar.m18936d() ? aVar.m18923q() : str;
-            String q5 = aVar.m18936d() ? aVar.m18923q() : str;
-            if (aVar.m18936d()) {
-                str = aVar.m18923q();
+            String q13 = aVar.d() ? aVar.q() : str;
+            String q14 = aVar.d() ? aVar.q() : str;
+            if (aVar.d()) {
+                str = aVar.q();
             }
-            stackTraceElementArr[i] = new StackTraceElement(q4, q5, str, aVar.m18927m());
+            stackTraceElementArr[i10] = new StackTraceElement(q13, q14, str, aVar.m());
         }
-        return new C7881d(q, q2, q3, stackTraceElementArr, aVar.m18936d() ? throwableFromBlob(aVar) : null);
+        return new d(q10, q11, q12, stackTraceElementArr, aVar.d() ? throwableFromBlob(aVar) : null);
     }
 
-    public static void toBlob(Throwable th, C6810a aVar) {
+    public static void toBlob(Throwable th, nb.a aVar) {
         toBlob(th, aVar, true);
     }
 
@@ -764,10 +758,10 @@ public class Log {
             sb2.append(cls.getName());
         }
         sb2.append(". Expected: ");
-        boolean z = true;
+        boolean z10 = true;
         for (Class<?> cls2 : clsArr) {
-            if (z) {
-                z = false;
+            if (z10) {
+                z10 = false;
             } else {
                 sb2.append(", ");
             }
@@ -780,209 +774,209 @@ public class Log {
         }
         sb2.append(obj);
         String sb3 = sb2.toString();
-        C1379j0.m37293z0(sb3, 1);
-        m14738a("%s", sb3);
+        j0.z0(sb3, 1);
+        a("%s", sb3);
     }
 
-    public static void m14716v(int i, String str, Object... objArr) {
-        log(i, 5, str, objArr);
+    public static void v(int i10, String str, Object... objArr) {
+        log(i10, 5, str, objArr);
     }
 
-    public static void m14711w(int i, String str, Object... objArr) {
-        log(i, 2, str, objArr);
+    public static void w(int i10, String str, Object... objArr) {
+        log(i10, 2, str, objArr);
     }
 
-    public static void m14741a(int i, String str, Throwable th, Object... objArr) {
-        log(i, 0, str, th, objArr);
+    public static void a(int i10, String str, Throwable th, Object... objArr) {
+        log(i10, 0, str, th, objArr);
     }
 
-    private static int blobSize(Throwable th, boolean z) {
+    private static int blobSize(Throwable th, boolean z10) {
         StackTraceElement[] stackTrace;
-        int x = C6810a.m18916x(th.getClass().getName(), true) + 1 + C6810a.m18916x(th.getMessage(), false) + 1 + C6810a.m18916x(C5070i.m24068c(th.getMessage(), th.getLocalizedMessage()) ? null : th.getLocalizedMessage(), false) + 4;
+        int x10 = nb.a.x(th.getClass().getName(), true) + 1 + nb.a.x(th.getMessage(), false) + 1 + nb.a.x(i.c(th.getMessage(), th.getLocalizedMessage()) ? null : th.getLocalizedMessage(), false) + 4;
         for (StackTraceElement stackTraceElement : th.getStackTrace()) {
-            x += C6810a.m18916x(stackTraceElement.getClassName(), false) + 1 + 1 + C6810a.m18916x(stackTraceElement.getMethodName(), false) + 1 + C6810a.m18916x(stackTraceElement.getFileName(), false) + 4;
+            x10 += nb.a.x(stackTraceElement.getClassName(), false) + 1 + 1 + nb.a.x(stackTraceElement.getMethodName(), false) + 1 + nb.a.x(stackTraceElement.getFileName(), false) + 4;
         }
-        if (z) {
-            int i = 5;
+        if (z10) {
+            int i10 = 5;
             do {
                 Throwable cause = th.getCause();
                 if (cause == th) {
                     cause = null;
                 }
-                if (cause != null && i - 1 == 0) {
+                if (cause != null && i10 - 1 == 0) {
                     while (cause.getCause() != null && cause.getCause() != cause) {
                         cause = cause.getCause();
                     }
                 }
                 th = cause;
-                x++;
+                x10++;
                 if (th == null) {
                     break;
                 }
-                x += blobSize(th, false);
-            } while (i > 0);
+                x10 += blobSize(th, false);
+            } while (i10 > 0);
         }
-        return x;
+        return x10;
     }
 
-    public static void critical(int i, String str, Object... objArr) {
-        log(i, 1, str, objArr);
+    public static void critical(int i10, String str, Object... objArr) {
+        log(i10, 1, str, objArr);
     }
 
-    public static void m14734d(int i, String str, Throwable th, Object... objArr) {
-        log(i, 4, str, th, objArr);
+    public static void d(int i10, String str, Throwable th, Object... objArr) {
+        log(i10, 4, str, th, objArr);
     }
 
-    public static void m14728e(int i, String str, Throwable th, Object... objArr) {
-        log(i, 1, str, th, objArr);
+    public static void e(int i10, String str, Throwable th, Object... objArr) {
+        log(i10, 1, str, th, objArr);
     }
 
-    public static RuntimeException generateException(int i) {
+    public static RuntimeException generateException(int i10) {
         try {
             throw new RuntimeException();
-        } catch (RuntimeException e) {
-            StackTraceElement[] stackTrace = e.getStackTrace();
-            int length = stackTrace.length - i;
+        } catch (RuntimeException e10) {
+            StackTraceElement[] stackTrace = e10.getStackTrace();
+            int length = stackTrace.length - i10;
             StackTraceElement[] stackTraceElementArr = new StackTraceElement[length];
             System.arraycopy(stackTrace, 0, stackTraceElementArr, 0, length);
-            e.setStackTrace(stackTraceElementArr);
-            return e;
+            e10.setStackTrace(stackTraceElementArr);
+            return e10;
         }
     }
 
-    public static RuntimeException generateSingleLineException(int i) {
+    public static RuntimeException generateSingleLineException(int i10) {
         try {
             throw new RuntimeException();
-        } catch (RuntimeException e) {
-            e.setStackTrace(new StackTraceElement[]{e.getStackTrace()[i]});
-            return e;
+        } catch (RuntimeException e10) {
+            e10.setStackTrace(new StackTraceElement[]{e10.getStackTrace()[i10]});
+            return e10;
         }
     }
 
-    public static void m14722i(int i, String str, Throwable th, Object... objArr) {
-        log(i, 3, str, th, objArr);
+    public static void i(int i10, String str, Throwable th, Object... objArr) {
+        log(i10, 3, str, th, objArr);
     }
 
-    private static void toBlob(Throwable th, C6810a aVar, boolean z) {
-        aVar.m18942L(th.getClass().getName());
+    private static void toBlob(Throwable th, nb.a aVar, boolean z10) {
+        aVar.L(th.getClass().getName());
         String message = th.getMessage();
-        boolean z2 = !C5070i.m24062i(message);
-        aVar.m18953A(z2);
-        if (z2) {
-            aVar.m18942L(message);
+        boolean z11 = !i.i(message);
+        aVar.A(z11);
+        if (z11) {
+            aVar.L(message);
         }
         String localizedMessage = th.getLocalizedMessage();
-        boolean z3 = !C5070i.m24062i(localizedMessage) && !localizedMessage.equals(message);
-        aVar.m18953A(z3);
-        if (z3) {
-            aVar.m18942L(localizedMessage);
+        boolean z12 = !i.i(localizedMessage) && !localizedMessage.equals(message);
+        aVar.A(z12);
+        if (z12) {
+            aVar.L(localizedMessage);
         }
         StackTraceElement[] stackTrace = th.getStackTrace();
-        aVar.m18946H(stackTrace.length);
+        aVar.H(stackTrace.length);
         if (stackTrace.length > 0) {
             for (StackTraceElement stackTraceElement : stackTrace) {
                 String className = stackTraceElement.getClassName();
-                boolean z4 = !C5070i.m24062i(className);
+                boolean z13 = !i.i(className);
                 String methodName = stackTraceElement.getMethodName();
-                boolean z5 = !C5070i.m24062i(methodName);
+                boolean z14 = !i.i(methodName);
                 String fileName = stackTraceElement.getFileName();
-                boolean z6 = !C5070i.m24062i(fileName);
+                boolean z15 = !i.i(fileName);
                 int lineNumber = stackTraceElement.getLineNumber();
-                aVar.m18953A(z4);
-                if (z4) {
-                    aVar.m18942L(className);
+                aVar.A(z13);
+                if (z13) {
+                    aVar.L(className);
                 }
-                aVar.m18953A(z5);
-                if (z5) {
-                    aVar.m18942L(methodName);
+                aVar.A(z14);
+                if (z14) {
+                    aVar.L(methodName);
                 }
-                aVar.m18953A(z6);
-                if (z6) {
-                    aVar.m18942L(fileName);
+                aVar.A(z15);
+                if (z15) {
+                    aVar.L(fileName);
                 }
-                aVar.m18946H(lineNumber);
+                aVar.H(lineNumber);
             }
         }
-        if (z) {
-            int i = 5;
+        if (z10) {
+            int i10 = 5;
             do {
                 Throwable cause = th.getCause();
                 if (cause == th) {
                     cause = null;
                 }
-                if (cause != null && i - 1 == 0) {
+                if (cause != null && i10 - 1 == 0) {
                     while (cause.getCause() != null && cause.getCause() != cause) {
                         cause = cause.getCause();
                     }
                 }
                 th = cause;
-                aVar.m18953A(th != null);
+                aVar.A(th != null);
                 if (th != null) {
                     toBlob(th, aVar, false);
                 } else {
                     return;
                 }
-            } while (i > 0);
+            } while (i10 > 0);
         }
     }
 
-    private static void toStringBuilder(Throwable th, StringBuilder sb2, int i) {
-        if (i != 0) {
+    private static void toStringBuilder(Throwable th, StringBuilder sb2, int i10) {
+        if (i10 != 0) {
             sb2.append('\n');
         }
         sb2.append("=== ");
-        if (i != 0) {
+        if (i10 != 0) {
             sb2.append("Cause #");
-            sb2.append(i);
+            sb2.append(i10);
         } else {
             sb2.append("Stack Trace Dump");
         }
         sb2.append(" ===\n");
         String message = th.getMessage();
-        if (!C5070i.m24062i(message)) {
+        if (!i.i(message)) {
             sb2.append(message);
             sb2.append('\n');
         }
         sb2.append(getStackTrace(th));
         Throwable cause = th.getCause();
         if (cause != null && sb2.length() > 0) {
-            toStringBuilder(cause, sb2, i + 1);
+            toStringBuilder(cause, sb2, i10 + 1);
         }
     }
 
-    public static void m14717v(int i, String str, Throwable th, Object... objArr) {
-        log(i, 5, str, th, objArr);
+    public static void v(int i10, String str, Throwable th, Object... objArr) {
+        log(i10, 5, str, th, objArr);
     }
 
-    public static void m14712w(int i, String str, Throwable th, Object... objArr) {
-        log(i, 2, str, th, objArr);
+    public static void w(int i10, String str, Throwable th, Object... objArr) {
+        log(i10, 2, str, th, objArr);
     }
 
-    public static void m14738a(String str, Object... objArr) {
+    public static void a(String str, Object... objArr) {
         log(0, 0, str, objArr);
     }
 
-    public static void critical(int i, String str, Throwable th, Object... objArr) {
-        log(i, 1, str, th, objArr);
+    public static void critical(int i10, String str, Throwable th, Object... objArr) {
+        log(i10, 1, str, th, objArr);
     }
 
-    public static void m14731d(String str, Object... objArr) {
+    public static void d(String str, Object... objArr) {
         log(0, 4, str, objArr);
     }
 
-    public static void m14725e(String str, Throwable th, Object... objArr) {
+    public static void e(String str, Throwable th, Object... objArr) {
         log(0, 1, str, th, objArr);
     }
 
-    public static void m14719i(String str, Object... objArr) {
+    public static void i(String str, Object... objArr) {
         log(0, 3, str, objArr);
     }
 
-    public static void m14714v(String str, Object... objArr) {
+    public static void v(String str, Object... objArr) {
         log(0, 5, str, objArr);
     }
 
-    public static void m14709w(String str, Object... objArr) {
+    public static void w(String str, Object... objArr) {
         log(0, 2, str, objArr);
     }
 
@@ -990,33 +984,33 @@ public class Log {
         log(0, 1, str, th, objArr);
     }
 
-    public static void m14732d(String str, Throwable th, Object... objArr) {
+    public static void d(String str, Throwable th, Object... objArr) {
         log(0, 4, str, th, objArr);
     }
 
-    public static void m14723e(Throwable th) {
+    public static void e(Throwable th) {
         log(0, 1, "", th, new Object[0]);
     }
 
-    public static void getLogFiles(AbstractC5918j<C7879b> jVar) {
+    public static void getLogFiles(j<b> jVar) {
         preparePool();
-        C4384m mVar = pool;
+        m mVar = pool;
         if (mVar != null) {
-            mVar.m28052h(Message.obtain(mVar.m28055d(), 2, jVar), 0L);
+            mVar.h(Message.obtain(mVar.d(), 2, jVar), 0L);
             return;
         }
         synchronized (Log.class) {
-            jVar.mo1330a(getLogFilesImpl());
+            jVar.a(getLogFilesImpl());
         }
     }
 
-    public static void m14720i(String str, Throwable th, Object... objArr) {
+    public static void i(String str, Throwable th, Object... objArr) {
         log(0, 3, str, th, objArr);
     }
 
     public static void load(SharedPreferences sharedPreferences) {
         if (!loaded) {
-            C7888N.init();
+            N.init();
             if (sharedPreferences == null) {
                 settings = 1;
                 level = 5;
@@ -1033,11 +1027,11 @@ public class Log {
         }
     }
 
-    public static void m14715v(String str, Throwable th, Object... objArr) {
+    public static void v(String str, Throwable th, Object... objArr) {
         log(0, 5, str, th, objArr);
     }
 
-    public static void m14710w(String str, Throwable th, Object... objArr) {
+    public static void w(String str, Throwable th, Object... objArr) {
         log(0, 2, str, th, objArr);
     }
 
@@ -1045,35 +1039,35 @@ public class Log {
         log(0, 1, "", th, new Object[0]);
     }
 
-    public static void m14730d(Throwable th) {
+    public static void d(Throwable th) {
         log(0, 4, "", th, new Object[0]);
     }
 
-    public static void m14726e(int i, Throwable th) {
-        log(i, 1, "", th, new Object[0]);
+    public static void e(int i10, Throwable th) {
+        log(i10, 1, "", th, new Object[0]);
     }
 
-    public static void m14718i(Throwable th) {
+    public static void i(Throwable th) {
         log(0, 3, "", th, new Object[0]);
     }
 
-    public static void m14713v(Throwable th) {
+    public static void v(Throwable th) {
         log(0, 5, "", th, new Object[0]);
     }
 
-    public static void m14708w(Throwable th) {
+    public static void w(Throwable th) {
         log(0, 2, "", th, new Object[0]);
     }
 
-    public static void m14724e(String str, Object... objArr) {
+    public static void e(String str, Object... objArr) {
         log(0, 1, str, objArr);
     }
 
-    public static void log(int i, int i2, String str, Object... objArr) {
-        log(i, i2, str, null, objArr);
+    public static void log(int i10, int i11, String str, Object... objArr) {
+        log(i10, i11, str, null, objArr);
     }
 
-    public static void log(int i, String str, Object... objArr) {
-        log(0, i, str, objArr);
+    public static void log(int i10, String str, Object... objArr) {
+        log(0, i10, str, objArr);
     }
 }

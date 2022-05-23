@@ -3,7 +3,7 @@ package org.thunderdog.challegram.service;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-import be.C1379j0;
+import ce.j0;
 
 public class NetworkListenerService extends Service {
     @Override
@@ -12,8 +12,8 @@ public class NetworkListenerService extends Service {
     }
 
     @Override
-    public int onStartCommand(Intent intent, int i, int i2) {
-        C1379j0.m37359L(getApplicationContext());
+    public int onStartCommand(Intent intent, int i10, int i11) {
+        j0.L(getApplicationContext());
         return 1;
     }
 }

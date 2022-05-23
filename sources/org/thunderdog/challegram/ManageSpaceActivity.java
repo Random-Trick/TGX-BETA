@@ -1,18 +1,18 @@
 package org.thunderdog.challegram;
 
 import android.os.Bundle;
-import p038ce.View$OnClickListenerC2942qs;
-import p350yd.C10536ab;
+import de.qs;
+import zd.ya;
 
-public class ManageSpaceActivity extends AbstractView$OnTouchListenerC7889a {
+public class ManageSpaceActivity extends a {
     @Override
-    public boolean mo14547Q1() {
+    public boolean R1() {
         return false;
     }
 
     @Override
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        this.f25526X.m9743Q(new View$OnClickListenerC2942qs(this, C10536ab.m4667o1().m4684j0()));
+        this.X.Q(new qs(this, ya.o1().j0()));
     }
 }

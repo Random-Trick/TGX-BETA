@@ -1,27 +1,27 @@
 package org.thunderdog.challegram.voip.gui;
 
+import ae.j;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
 import android.view.MotionEvent;
 import android.view.View;
-import be.C1357a0;
-import be.C1362c;
-import be.C1410y;
+import ce.a0;
+import ce.c;
+import ce.y;
 import org.thunderdog.challegram.R;
-import p364zd.C11524j;
 
 public class BetterRatingView extends View {
     private OnRatingChangeListener listener;
     private Paint paint = new Paint();
     private int numStars = 5;
     private int selectedRating = 0;
-    private Drawable filledStar = C1362c.m37486f(R.drawable.baseline_star_24);
-    private Drawable hollowStar = C1362c.m37486f(R.drawable.baseline_star_border_24);
+    private Drawable filledStar = c.f(R.drawable.baseline_star_24);
+    private Drawable hollowStar = c.f(R.drawable.baseline_star_border_24);
 
     public interface OnRatingChangeListener {
-        void onRatingChanged(int i);
+        void onRatingChanged(int i10);
     }
 
     public BetterRatingView(Context context) {
@@ -34,31 +34,31 @@ public class BetterRatingView extends View {
 
     @Override
     public void onDraw(Canvas canvas) {
-        int i = 0;
-        while (i < this.numStars) {
-            this.paint.setColor(C11524j.m159q0());
-            C1362c.m37490b(canvas, i < this.selectedRating ? this.filledStar : this.hollowStar, C1357a0.m37544i(48.0f) * i, 0.0f, C1410y.m37071J());
-            i++;
+        int i10 = 0;
+        while (i10 < this.numStars) {
+            this.paint.setColor(j.o0());
+            c.b(canvas, i10 < this.selectedRating ? this.filledStar : this.hollowStar, a0.i(48.0f) * i10, 0.0f, y.J());
+            i10++;
         }
     }
 
     @Override
-    public void onMeasure(int i, int i2) {
-        setMeasuredDimension((this.numStars * C1357a0.m37544i(32.0f)) + ((this.numStars - 1) * C1357a0.m37544i(16.0f)), C1357a0.m37544i(32.0f));
+    public void onMeasure(int i10, int i11) {
+        setMeasuredDimension((this.numStars * a0.i(32.0f)) + ((this.numStars - 1) * a0.i(16.0f)), a0.i(32.0f));
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent motionEvent) {
-        int i;
-        float i2 = C1357a0.m37544i(-8.0f);
-        for (int i3 = 0; i3 < this.numStars; i3++) {
-            if (motionEvent.getX() <= i2 || motionEvent.getX() >= C1357a0.m37544i(48.0f) + i2 || this.selectedRating == (i = i3 + 1)) {
-                i2 += C1357a0.m37544i(48.0f);
+        int i10;
+        float i11 = a0.i(-8.0f);
+        for (int i12 = 0; i12 < this.numStars; i12++) {
+            if (motionEvent.getX() <= i11 || motionEvent.getX() >= a0.i(48.0f) + i11 || this.selectedRating == (i10 = i12 + 1)) {
+                i11 += a0.i(48.0f);
             } else {
-                this.selectedRating = i;
+                this.selectedRating = i10;
                 OnRatingChangeListener onRatingChangeListener = this.listener;
                 if (onRatingChangeListener != null) {
-                    onRatingChangeListener.onRatingChanged(i);
+                    onRatingChangeListener.onRatingChanged(i10);
                 }
                 invalidate();
                 return true;

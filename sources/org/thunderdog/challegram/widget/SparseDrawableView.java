@@ -5,30 +5,30 @@ import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
-import p111he.AbstractC5143t;
-import p111he.C5141s;
-import p143k0.C6038h;
+import ie.s;
+import ie.t;
+import k0.h;
 
-public class SparseDrawableView extends View implements AbstractC5143t {
-    public C6038h<Drawable> f25813a;
+public class SparseDrawableView extends View implements t {
+    public h<Drawable> f20218a;
 
     public SparseDrawableView(Context context) {
         super(context);
     }
 
     @Override
-    public Drawable mo14041X(int i, int i2) {
-        return C5141s.m23834a(this, i, i2);
+    public Drawable Z(int i10, int i11) {
+        return s.a(this, i10, i11);
     }
 
     @Override
-    public final C6038h<Drawable> getSparseDrawableHolder() {
-        C6038h<Drawable> hVar = this.f25813a;
+    public final h<Drawable> getSparseDrawableHolder() {
+        h<Drawable> hVar = this.f20218a;
         if (hVar != null) {
             return hVar;
         }
-        C6038h<Drawable> hVar2 = new C6038h<>();
-        this.f25813a = hVar2;
+        h<Drawable> hVar2 = new h<>();
+        this.f20218a = hVar2;
         return hVar2;
     }
 
@@ -41,7 +41,7 @@ public class SparseDrawableView extends View implements AbstractC5143t {
         super(context, attributeSet);
     }
 
-    public SparseDrawableView(Context context, AttributeSet attributeSet, int i) {
-        super(context, attributeSet, i);
+    public SparseDrawableView(Context context, AttributeSet attributeSet, int i10) {
+        super(context, attributeSet, i10);
     }
 }

@@ -9,10 +9,37 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import be.C1357a0;
-import be.C1379j0;
-import be.C1399s0;
-import ge.C4868i;
+import ce.a0;
+import ce.j0;
+import ce.p0;
+import de.a7;
+import de.ax;
+import de.b;
+import de.bl;
+import de.cu;
+import de.fk;
+import de.fw;
+import de.fz;
+import de.ga;
+import de.i5;
+import de.ii;
+import de.iq;
+import de.lj;
+import de.lk;
+import de.nb;
+import de.ov;
+import de.qs;
+import de.ra;
+import de.rh;
+import de.s5;
+import de.so;
+import de.vr;
+import de.wt;
+import de.ww;
+import eb.k;
+import gd.l;
+import gd.w;
+import he.i;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -20,191 +47,156 @@ import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
-import me.C6847b2;
-import me.C6924j2;
-import me.C6941k2;
-import me.C6984o1;
-import me.RunnableC7091z1;
-import org.drinkless.p210td.libcore.telegram.TdApi;
-import org.thunderdog.challegram.AbstractView$OnTouchListenerC7889a;
-import org.thunderdog.challegram.C7903b;
+import k0.h;
+import kb.j;
+import kd.t0;
+import md.y;
+import ne.b2;
+import ne.j2;
+import ne.k2;
+import ne.o1;
+import ne.z1;
+import org.drinkless.td.libcore.telegram.TdApi;
 import org.thunderdog.challegram.MainActivity;
-import p037cb.C2057b;
-import p037cb.C2059c;
-import p038ce.C2523i5;
-import p038ce.C2536ii;
-import p038ce.C2546iq;
-import p038ce.C2760nb;
-import p038ce.C2793nv;
-import p038ce.C2964ra;
-import p038ce.C3034s5;
-import p038ce.RunnableC2425ga;
-import p038ce.View$OnClickListenerC2118a7;
-import p038ce.View$OnClickListenerC2162b;
-import p038ce.View$OnClickListenerC2192bl;
-import p038ce.View$OnClickListenerC2204bu;
-import p038ce.View$OnClickListenerC2359ew;
-import p038ce.View$OnClickListenerC2364ez;
-import p038ce.View$OnClickListenerC2393fk;
-import p038ce.View$OnClickListenerC2665lj;
-import p038ce.View$OnClickListenerC2667lk;
-import p038ce.View$OnClickListenerC2942qs;
-import p038ce.View$OnClickListenerC2971rh;
-import p038ce.View$OnClickListenerC3062so;
-import p038ce.View$OnClickListenerC3209vr;
-import p038ce.View$OnClickListenerC3217vt;
-import p038ce.View$OnClickListenerC3222vw;
-import p038ce.View$OnClickListenerC3415zw;
-import p051db.C3940f;
-import p051db.C3950k;
-import p082fd.C4383l;
-import p082fd.C4403w;
-import p108hb.C5062b;
-import p108hb.C5070i;
-import p139jb.AbstractC5912d;
-import p139jb.AbstractC5918j;
-import p141jd.C5974t0;
-import p143k0.C6038h;
-import p168ld.C6522y;
-import p193nb.C7319d;
-import p335xd.C10192g;
-import p350yd.AbstractC11030u0;
-import p350yd.C10534a9;
-import p350yd.C10536ab;
-import p350yd.C10651f1;
-import p350yd.C10930q6;
-import p350yd.C11008t0;
-import p350yd.C11131y6;
-import p350yd.HandlerC10770jj;
-import p364zd.C11524j;
-import td.AbstractC9323v4;
-import td.C9180e2;
-import td.C9188f2;
-import td.C9270q1;
-import td.C9312u1;
+import org.thunderdog.challegram.a;
+import org.thunderdog.challegram.b;
+import ud.e2;
+import ud.f2;
+import ud.q1;
+import ud.u1;
+import ud.v4;
+import yd.g;
+import zd.d1;
+import zd.hj;
+import zd.o6;
+import zd.r0;
+import zd.s0;
+import zd.w6;
+import zd.y8;
+import zd.ya;
 
-public class MainActivity extends AbstractView$OnTouchListenerC7889a implements AbstractC11030u0 {
-    public Bundle f25463Q1;
-    public C11131y6 f25464R1;
-    public Handler f25465S1;
-    public C3940f f25466T1;
-    public ViewGroup f25467U1;
-    public final C6038h<View$OnClickListenerC2971rh> f25468V1 = new C6038h<>();
-    public boolean f25469W1;
+public class MainActivity extends org.thunderdog.challegram.a implements s0 {
+    public Bundle Q1;
+    public w6 R1;
+    public Handler S1;
+    public eb.f T1;
+    public ViewGroup U1;
+    public final h<rh> V1 = new h<>();
+    public boolean W1;
 
-    public class C7882a implements C3950k.AbstractC3952b {
-        public C7882a() {
+    public class a implements k.b {
+        public a() {
         }
 
         @Override
-        public void mo45P5(int i, float f, float f2, C3950k kVar) {
-            if (MainActivity.this.f25467U1 != null) {
-                boolean z = false;
-                C6984o1 o1Var = (C6984o1) MainActivity.this.f25467U1.getChildAt(0);
-                if (f > 0.0f) {
-                    z = true;
+        public void n4(int i10, float f10, float f11, k kVar) {
+            if (MainActivity.this.U1 != null) {
+                boolean z10 = false;
+                o1 o1Var = (o1) MainActivity.this.U1.getChildAt(0);
+                if (f10 > 0.0f) {
+                    z10 = true;
                 }
-                o1Var.setLooping(z);
-                MainActivity.this.f25467U1.setAlpha(f);
+                o1Var.setLooping(z10);
+                MainActivity.this.U1.setAlpha(f10);
             }
         }
 
         @Override
-        public void mo35Y0(int i, float f, C3950k kVar) {
-            if (f == 0.0f && MainActivity.this.f25467U1 != null) {
-                ((C6984o1) MainActivity.this.f25467U1.getChildAt(0)).setLooping(false);
+        public void o4(int i10, float f10, k kVar) {
+            if (f10 == 0.0f && MainActivity.this.U1 != null) {
+                ((o1) MainActivity.this.U1.getChildAt(0)).setLooping(false);
                 MainActivity mainActivity = MainActivity.this;
-                mainActivity.f25522V.removeView(mainActivity.f25467U1);
-                MainActivity.this.f25467U1 = null;
+                mainActivity.V.removeView(mainActivity.U1);
+                MainActivity.this.U1 = null;
             }
         }
     }
 
-    public class C7883b implements AbstractView$OnTouchListenerC7889a.AbstractC7900k {
-        public final String f25471a;
-        public final Intent f25472b;
+    public class b implements a.k {
+        public final String f20000a;
+        public final Intent f20001b;
 
-        public C7883b(String str, Intent intent) {
-            this.f25471a = str;
-            this.f25472b = intent;
+        public b(String str, Intent intent) {
+            this.f20000a = str;
+            this.f20001b = intent;
         }
 
         @Override
-        public void mo7703f(AbstractView$OnTouchListenerC7889a aVar, boolean z) {
-            if (!z) {
-                MainActivity.this.m14626w4(this.f25471a, this.f25472b, false);
-                MainActivity.this.m14412y2(this);
+        public void e(org.thunderdog.challegram.a aVar, boolean z10) {
+            if (!z10) {
+                MainActivity.this.x4(this.f20000a, this.f20001b, false);
+                MainActivity.this.z2(this);
             }
         }
     }
 
-    public class C7884c implements AbstractView$OnTouchListenerC7889a.AbstractC7900k {
-        public final String f25474a;
-        public final Intent f25475b;
+    public class c implements a.k {
+        public final String f20003a;
+        public final Intent f20004b;
 
-        public C7884c(String str, Intent intent) {
-            this.f25474a = str;
-            this.f25475b = intent;
+        public c(String str, Intent intent) {
+            this.f20003a = str;
+            this.f20004b = intent;
         }
 
         @Override
-        public void mo7703f(AbstractView$OnTouchListenerC7889a aVar, boolean z) {
-            if (!z) {
-                MainActivity.this.m14626w4(this.f25474a, this.f25475b, false);
-                MainActivity.this.m14412y2(this);
+        public void e(org.thunderdog.challegram.a aVar, boolean z10) {
+            if (!z10) {
+                MainActivity.this.x4(this.f20003a, this.f20004b, false);
+                MainActivity.this.z2(this);
             }
         }
     }
 
-    public class C7885d implements AbstractC9323v4.AbstractC9337n {
-        public C7885d() {
+    public class d implements v4.n {
+        public d() {
         }
 
         @Override
-        public void mo3907a(View view, int i, C2964ra raVar, TextView textView, C2546iq iqVar) {
-            int A = raVar.m32879A();
+        public void a(View view, int i10, ra raVar, TextView textView, iq iqVar) {
+            int A = raVar.A();
             if (A == 12 || A == 69) {
-                boolean D = raVar.m32876D();
-                List<C2964ra> F0 = iqVar.m34243F0();
-                int i2 = 0;
-                if (raVar.m32838j() == R.id.btn_selectAll) {
-                    for (C2964ra raVar2 : F0) {
-                        if (raVar2.m32879A() == 69 && raVar2.m32876D() != D) {
-                            raVar2.m32861S(D);
-                            iqVar.m34127u3(i2);
+                boolean D = raVar.D();
+                List<ra> D0 = iqVar.D0();
+                int i11 = 0;
+                if (raVar.j() == R.id.btn_selectAll) {
+                    for (ra raVar2 : D0) {
+                        if (raVar2.A() == 69 && raVar2.D() != D) {
+                            raVar2.S(D);
+                            iqVar.r3(i11);
                         }
-                        i2++;
+                        i11++;
                     }
                 } else if (D) {
-                    Iterator<C2964ra> it = F0.iterator();
-                    int i3 = 0;
-                    int i4 = -1;
+                    Iterator<ra> it = D0.iterator();
+                    int i12 = 0;
+                    int i13 = -1;
                     while (true) {
                         if (!it.hasNext()) {
-                            i2 = 1;
+                            i11 = 1;
                             break;
                         }
-                        C2964ra next = it.next();
-                        if (next.m32838j() == R.id.btn_selectAll) {
-                            i4 = i3;
+                        ra next = it.next();
+                        if (next.j() == R.id.btn_selectAll) {
+                            i13 = i12;
                         }
-                        if (next.m32879A() == 69 && !next.m32876D()) {
+                        if (next.A() == 69 && !next.D()) {
                             break;
                         }
-                        i3++;
+                        i12++;
                     }
-                    if (!(i2 == 0 || i4 == -1 || F0.get(i4).m32876D())) {
-                        F0.get(i4).m32861S(true);
-                        iqVar.m34127u3(i4);
+                    if (!(i11 == 0 || i13 == -1 || D0.get(i13).D())) {
+                        D0.get(i13).S(true);
+                        iqVar.r3(i13);
                     }
                 } else {
-                    int i5 = 0;
-                    for (C2964ra raVar3 : F0) {
-                        if (raVar3.m32838j() != R.id.btn_selectAll) {
-                            i5++;
-                        } else if (raVar3.m32876D()) {
-                            raVar3.m32861S(false);
-                            iqVar.m34127u3(i5);
+                    int i14 = 0;
+                    for (ra raVar3 : D0) {
+                        if (raVar3.j() != R.id.btn_selectAll) {
+                            i14++;
+                        } else if (raVar3.D()) {
+                            raVar3.S(false);
+                            iqVar.r3(i14);
                             return;
                         } else {
                             return;
@@ -215,271 +207,271 @@ public class MainActivity extends AbstractView$OnTouchListenerC7889a implements 
         }
     }
 
-    public class C7886e implements AbstractC11030u0 {
-        public final C9180e2 f25478a;
+    public class e implements s0 {
+        public final e2 f20007a;
 
-        public C7886e(C9180e2 e2Var) {
-            this.f25478a = e2Var;
+        public e(e2 e2Var) {
+            this.f20007a = e2Var;
         }
 
         @Override
-        public void mo61C4(C11131y6 y6Var, int i, int i2) {
-            C11008t0.m1997e(this, y6Var, i, i2);
+        public void D4(w6 w6Var, boolean z10, boolean z11) {
+            r0.b(this, w6Var, z10, z11);
         }
 
         @Override
-        public void mo56G2(C11131y6 y6Var, TdApi.AuthorizationState authorizationState, int i) {
-            C11008t0.m1995g(this, y6Var, authorizationState, i);
+        public void N6(w6 w6Var, int i10) {
+            r0.f(this, w6Var, i10);
         }
 
         @Override
-        public void mo48O(C11131y6 y6Var, boolean z, boolean z2) {
-            C11008t0.m2000b(this, y6Var, z, z2);
+        public void S(w6 w6Var, int i10) {
+            r0.d(this, w6Var, i10);
         }
 
         @Override
-        public void mo47O6(C10930q6 q6Var, boolean z) {
-            C11008t0.m1994h(this, q6Var, z);
+        public void V1(w6 w6Var, TdApi.User user, int i10, w6 w6Var2) {
+            r0.c(this, w6Var, user, i10, w6Var2);
         }
 
         @Override
-        public void mo29b1(C11131y6 y6Var, int i) {
-            C11008t0.m1996f(this, y6Var, i);
+        public void l(w6 w6Var, TdApi.AuthorizationState authorizationState, int i10) {
+            r0.g(this, w6Var, authorizationState, i10);
         }
 
         @Override
-        public void mo12p4(C11131y6 y6Var, TdApi.User user, boolean z, boolean z2) {
-            int L0;
-            C2546iq iqVar = this.f25478a.f29640a;
-            if (iqVar != null && (L0 = iqVar.m34231L0(y6Var)) != -1) {
-                this.f25478a.f29640a.m39315I(L0);
+        public void v0(w6 w6Var, TdApi.User user, boolean z10, boolean z11) {
+            int J0;
+            iq iqVar = this.f20007a.f24134a;
+            if (iqVar != null && (J0 = iqVar.J0(w6Var)) != -1) {
+                this.f20007a.f24134a.I(J0);
             }
         }
 
         @Override
-        public void mo11p6(C11131y6 y6Var, int i) {
-            C11008t0.m1998d(this, y6Var, i);
+        public void z(o6 o6Var, boolean z10) {
+            r0.h(this, o6Var, z10);
         }
 
         @Override
-        public void mo4v4(C11131y6 y6Var, TdApi.User user, int i, C11131y6 y6Var2) {
-            C11008t0.m1999c(this, y6Var, user, i, y6Var2);
+        public void z5(w6 w6Var, int i10, int i11) {
+            r0.e(this, w6Var, i10, i11);
         }
     }
 
-    public class C7887f implements C9312u1.AbstractC9313a {
-        public final int f25480a;
-        public final int f25481b;
-        public final Intent f25482c;
+    public class f implements u1.a {
+        public final int f20009a;
+        public final int f20010b;
+        public final Intent f20011c;
 
-        public C7887f(int i, int i2, Intent intent) {
-            this.f25480a = i;
-            this.f25481b = i2;
-            this.f25482c = intent;
+        public f(int i10, int i11, Intent intent) {
+            this.f20009a = i10;
+            this.f20010b = i11;
+            this.f20011c = intent;
         }
 
         @Override
-        public void mo9486a(C9312u1 u1Var) {
-            if (!u1Var.m9496q()) {
-                u1Var.m9490w(this);
-                MainActivity.super.onActivityResult(this.f25480a, this.f25481b, this.f25482c);
+        public void a(u1 u1Var) {
+            if (!u1Var.q()) {
+                u1Var.w(this);
+                MainActivity.super.onActivityResult(this.f20009a, this.f20010b, this.f20011c);
             }
         }
     }
 
-    public static <T extends AbstractC9323v4<?>> boolean m14699F4(T t) {
-        return t.mo9271db();
+    public static <T extends v4<?>> boolean H4(T t10) {
+        return t10.db();
     }
 
-    public void m14698G4(final String str, final C11131y6 y6Var) {
-        if (this.f25526X.m9762F() != null) {
-            y6Var.mo1480c().m2573Y1(new Runnable() {
+    public void I4(final String str, final w6 w6Var) {
+        if (this.X.F() != null) {
+            w6Var.c().Y1(new Runnable() {
                 @Override
                 public final void run() {
-                    MainActivity.this.m14694L4(y6Var, str);
+                    MainActivity.this.M4(w6Var, str);
                 }
             });
         }
     }
 
-    public void m14697H4(C10930q6 q6Var) {
-        m14652g5(q6Var.m2188w6());
-        q6Var.m2818I4();
+    public void J4(o6 o6Var) {
+        i5(o6Var.A6());
+        o6Var.M4();
     }
 
-    public void m14696I4(final C10930q6 q6Var) {
-        q6Var.m2880E6();
-        this.f25465S1.post(new Runnable() {
+    public void K4(final o6 o6Var) {
+        o6Var.I6();
+        this.S1.post(new Runnable() {
             @Override
             public final void run() {
-                MainActivity.this.m14697H4(q6Var);
+                MainActivity.this.J4(o6Var);
             }
         });
     }
 
-    public void m14694L4(C11131y6 y6Var, String str) {
-        y6Var.mo1480c().m2485dd().m3868D7(new C10534a9(this, this.f25552k0), str, null, null);
+    public void M4(w6 w6Var, String str) {
+        w6Var.c().hd().D7(new y8(this, this.f20033k0), str, null, null);
     }
 
-    public static void m14692M4(AtomicBoolean atomicBoolean, C10930q6 q6Var) {
-        if (q6Var.m2398j4(atomicBoolean.get(), false)) {
+    public static void N4(AtomicBoolean atomicBoolean, o6 o6Var) {
+        if (o6Var.n4(atomicBoolean.get(), false)) {
             atomicBoolean.set(true);
         }
-        C6522y.m20164n().m20169i();
+        y.n().i();
     }
 
-    public static void m14690N4(C10930q6 q6Var) {
-        long b3 = C4868i.m24727c2().m24734b3();
-        C7903b.C7904a.m14398a(b3, q6Var.m2188w6(), "Syncing other accounts, since user launched the app.", new Object[0]);
-        final AtomicBoolean atomicBoolean = new AtomicBoolean(q6Var.m2398j4(false, false));
-        C10536ab.m4667o1().m4710c3(b3, -1, null, false, false, 3, new AbstractC5918j() {
+    public static void O4(o6 o6Var) {
+        long b32 = i.c2().b3();
+        b.a.a(b32, o6Var.A6(), "Syncing other accounts, since user launched the app.", new Object[0]);
+        final AtomicBoolean atomicBoolean = new AtomicBoolean(o6Var.n4(false, false));
+        ya.o1().c3(b32, -1, null, false, false, 3, new j() {
             @Override
-            public final void mo1330a(Object obj) {
-                MainActivity.m14692M4(atomicBoolean, (C10930q6) obj);
+            public final void a(Object obj) {
+                MainActivity.N4(atomicBoolean, (o6) obj);
             }
         });
     }
 
-    public void m14688O4() {
-        if (C2059c.m35734a(this)) {
-            C4868i.m24727c2().m24607r2();
+    public void P4() {
+        if (db.c.a(this)) {
+            i.c2().r2();
         }
     }
 
-    public void m14686P4(C10930q6 q6Var) {
-        if (m14409z0() == q6Var && !q6Var.m2538a7()) {
-            m14630s5(false);
+    public void Q4(o6 o6Var) {
+        if (C0() == o6Var && !o6Var.e7()) {
+            u5(false);
         }
     }
 
-    public void m14684Q4(final C10930q6 q6Var) {
-        this.f25465S1.post(new Runnable() {
+    public void R4(final o6 o6Var) {
+        this.S1.post(new Runnable() {
             @Override
             public final void run() {
-                MainActivity.this.m14686P4(q6Var);
+                MainActivity.this.Q4(o6Var);
             }
         });
     }
 
-    public void m14682R4(final C10930q6 q6Var, boolean z) {
-        if (m14409z0() != q6Var) {
+    public void S4(final o6 o6Var, boolean z10) {
+        if (C0() != o6Var) {
             return;
         }
-        if (z) {
-            m14630s5(true);
+        if (z10) {
+            u5(true);
         } else {
-            q6Var.m2573Y1(new Runnable() {
+            o6Var.Y1(new Runnable() {
                 @Override
                 public final void run() {
-                    MainActivity.this.m14684Q4(q6Var);
+                    MainActivity.this.R4(o6Var);
                 }
             });
         }
     }
 
-    public void m14680S4(C11131y6 y6Var) {
-        new C5974t0(this, y6Var.mo1480c(), 0L, 0L, null, false, null).m21734v().m21766Q(true).m21740o();
+    public void T4(w6 w6Var) {
+        new t0(this, w6Var.c(), 0L, 0L, null, false, null).v().Q(true).p();
     }
 
-    public void m14678T4(final C11131y6 y6Var) {
-        this.f25465S1.post(new Runnable() {
+    public void U4(final w6 w6Var) {
+        this.S1.post(new Runnable() {
             @Override
             public final void run() {
-                MainActivity.this.m14680S4(y6Var);
+                MainActivity.this.T4(w6Var);
             }
         });
     }
 
-    public void m14676U4(final C11131y6 y6Var) {
-        y6Var.mo1480c().m2573Y1(new Runnable() {
+    public void V4(final w6 w6Var) {
+        w6Var.c().Y1(new Runnable() {
             @Override
             public final void run() {
-                MainActivity.this.m14678T4(y6Var);
+                MainActivity.this.U4(w6Var);
             }
         });
     }
 
-    public void m14674V4(final C10930q6 q6Var, long j, long j2) {
-        C10534a9 a9Var = new C10534a9(this, q6Var);
-        HandlerC10770jj.C10780j jVar = new HandlerC10770jj.C10780j();
-        Objects.requireNonNull(q6Var);
-        HandlerC10770jj.C10780j j3 = jVar.m3366j(new Runnable() {
+    public void W4(final o6 o6Var, long j10, long j11) {
+        y8 y8Var = new y8(this, o6Var);
+        hj.j jVar = new hj.j();
+        Objects.requireNonNull(o6Var);
+        hj.j j12 = jVar.j(new Runnable() {
             @Override
             public final void run() {
-                C10930q6.this.m2818I4();
+                o6.this.M4();
             }
         });
-        if (j != 0) {
-            j3.m3371e(new C7319d(j2, j));
+        if (j10 != 0) {
+            j12.e(new ob.d(j11, j10));
         }
-        q6Var.m2485dd().m3569h7(a9Var, j2, j3);
+        o6Var.hd().h7(y8Var, j11, j12);
     }
 
-    public void m14672W4(final C10930q6 q6Var, final long j, final long j2) {
-        q6Var.m2880E6();
-        this.f25465S1.post(new Runnable() {
+    public void X4(final o6 o6Var, final long j10, final long j11) {
+        o6Var.I6();
+        this.S1.post(new Runnable() {
             @Override
             public final void run() {
-                MainActivity.this.m14674V4(q6Var, j, j2);
+                MainActivity.this.W4(o6Var, j10, j11);
             }
         });
     }
 
-    public static void m14670X4(AbstractC5918j jVar, List list) {
+    public static void Y4(j jVar, List list) {
         Iterator it = list.iterator();
         while (it.hasNext()) {
-            jVar.mo1330a((C11131y6) it.next());
+            jVar.a((w6) it.next());
         }
     }
 
-    public static boolean m14668Y4(SparseIntArray sparseIntArray, C11131y6 y6Var) {
-        return sparseIntArray.get(y6Var.f35708b + 1) == y6Var.f35708b + 1;
+    public static boolean Z4(SparseIntArray sparseIntArray, w6 w6Var) {
+        return sparseIntArray.get(w6Var.f28608b + 1) == w6Var.f28608b + 1;
     }
 
-    public static boolean m14666Z4(int i, C11131y6 y6Var) {
-        return y6Var.f35708b == i;
+    public static boolean a5(int i10, w6 w6Var) {
+        return w6Var.f28608b == i10;
     }
 
-    public static void m14664a5(boolean z, List list, AbstractC5918j jVar, int i, final SparseIntArray sparseIntArray) {
+    public static void b5(boolean z10, List list, j jVar, int i10, final SparseIntArray sparseIntArray) {
         List list2;
-        if (z) {
-            list2 = C5062b.m24158o(list, new AbstractC5912d() {
+        if (z10) {
+            list2 = ib.b.o(list, new kb.d() {
                 @Override
-                public final boolean mo1511a(Object obj) {
-                    boolean Y4;
-                    Y4 = MainActivity.m14668Y4(sparseIntArray, (C11131y6) obj);
-                    return Y4;
+                public final boolean a(Object obj) {
+                    boolean Z4;
+                    Z4 = MainActivity.Z4(sparseIntArray, (w6) obj);
+                    return Z4;
                 }
             });
         } else {
-            final int i2 = sparseIntArray.get(R.id.account) - 1;
-            list2 = C5062b.m24158o(list, new AbstractC5912d() {
+            final int i11 = sparseIntArray.get(R.id.account) - 1;
+            list2 = ib.b.o(list, new kb.d() {
                 @Override
-                public final boolean mo1511a(Object obj) {
-                    boolean Z4;
-                    Z4 = MainActivity.m14666Z4(i2, (C11131y6) obj);
-                    return Z4;
+                public final boolean a(Object obj) {
+                    boolean a52;
+                    a52 = MainActivity.a5(i11, (w6) obj);
+                    return a52;
                 }
             });
         }
         if (!list2.isEmpty()) {
-            jVar.mo1330a(list2);
+            jVar.a(list2);
         }
     }
 
-    public static void m14662b5(AtomicReference atomicReference, AtomicBoolean atomicBoolean, C6924j2 j2Var) {
+    public static void c5(AtomicReference atomicReference, AtomicBoolean atomicBoolean, j2 j2Var) {
         if (atomicReference.get() != null) {
-            C10536ab.m4667o1().m4716b1().m1531x((AbstractC11030u0) atomicReference.get());
+            ya.o1().b1().x((s0) atomicReference.get());
             atomicBoolean.set(false);
         }
     }
 
-    public static String m14660c5(int i) {
-        return "nav_item_" + i;
+    public static String d5(int i10) {
+        return "nav_item_" + i10;
     }
 
-    public static boolean m14641m4(int i, AbstractC9323v4<?> v4Var) {
-        switch (i) {
+    public static boolean q4(int i10, v4<?> v4Var) {
+        switch (i10) {
             case R.id.controller_fontSize:
             case R.id.controller_settings:
             case R.id.controller_storageSettings:
@@ -490,447 +482,397 @@ public class MainActivity extends AbstractView$OnTouchListenerC7889a implements 
         }
     }
 
-    public static AbstractC9323v4<?> m14634q5(AbstractView$OnTouchListenerC7889a aVar, C10930q6 q6Var, int i, Bundle bundle, String str) {
-        AbstractC9323v4<?> v4Var;
-        switch (i) {
+    public static v4<?> s5(org.thunderdog.challegram.a aVar, o6 o6Var, int i10, Bundle bundle, String str) {
+        v4<?> v4Var;
+        switch (i10) {
             case R.id.controller_chatSettings:
-                v4Var = new View$OnClickListenerC2204bu(aVar, q6Var);
+                v4Var = new cu(aVar, o6Var);
                 break;
             case R.id.controller_fontSize:
             case R.id.controller_wallpaper:
-                View$OnClickListenerC2971rh rhVar = new View$OnClickListenerC2971rh(aVar, q6Var);
-                rhVar.m32667Lp(new View$OnClickListenerC2971rh.C2977c0(i == R.id.controller_fontSize ? 2 : 1, null, null));
+                rh rhVar = new rh(aVar, o6Var);
+                rhVar.Lp(new rh.c0(i10 == R.id.controller_fontSize ? 2 : 1, null, null));
                 return rhVar;
             case R.id.controller_messages:
-                v4Var = new View$OnClickListenerC2971rh(aVar, q6Var);
+                v4Var = new rh(aVar, o6Var);
                 break;
             case R.id.controller_networkStats:
-                v4Var = new C2793nv(aVar, q6Var);
+                v4Var = new ov(aVar, o6Var);
                 break;
             case R.id.controller_newChannel:
-                v4Var = new C2523i5(aVar, q6Var);
+                v4Var = new i5(aVar, o6Var);
                 break;
             case R.id.controller_newGroup:
-                v4Var = new C3034s5(aVar, q6Var);
+                v4Var = new s5(aVar, o6Var);
                 break;
             case R.id.controller_notificationSettings:
-                v4Var = new View$OnClickListenerC2359ew(aVar, q6Var);
+                v4Var = new fw(aVar, o6Var);
                 break;
             case R.id.controller_passcode:
-                v4Var = new C2536ii(aVar, q6Var);
+                v4Var = new ii(aVar, o6Var);
                 break;
             case R.id.controller_privacyException:
-                v4Var = new View$OnClickListenerC2192bl(aVar, q6Var);
+                v4Var = new bl(aVar, o6Var);
                 break;
             case R.id.controller_privacyKey:
-                v4Var = new View$OnClickListenerC3415zw(aVar, q6Var);
+                v4Var = new ax(aVar, o6Var);
                 break;
             case R.id.controller_privacySettings:
-                v4Var = new View$OnClickListenerC3222vw(aVar, q6Var);
+                v4Var = new ww(aVar, o6Var);
                 break;
             case R.id.controller_profile:
-                v4Var = new View$OnClickListenerC3062so(aVar, q6Var);
+                v4Var = new so(aVar, o6Var);
                 break;
             case R.id.controller_settings:
-                return new View$OnClickListenerC3217vt(aVar, q6Var);
+                return new wt(aVar, o6Var);
             case R.id.controller_storageSettings:
-                return new View$OnClickListenerC2942qs(aVar, q6Var);
+                return new qs(aVar, o6Var);
             case R.id.controller_themeSettings:
-                v4Var = new View$OnClickListenerC2364ez(aVar, q6Var);
+                v4Var = new fz(aVar, o6Var);
                 break;
             default:
                 return null;
         }
-        if (!v4Var.mo9165sd(bundle, str)) {
+        if (!v4Var.sd(bundle, str)) {
             return null;
         }
-        if ((v4Var instanceof C2536ii) || v4Var.mo9464C9() == 0 || !q6Var.m2300p6(v4Var.mo9464C9())) {
+        if ((v4Var instanceof ii) || v4Var.C9() == 0 || !o6Var.t6(v4Var.C9())) {
             return v4Var;
         }
-        if (!(v4Var instanceof View$OnClickListenerC2971rh)) {
+        if (!(v4Var instanceof rh)) {
             return null;
         }
-        C2536ii iiVar = new C2536ii(aVar, q6Var);
-        TdApi.Chat L3 = q6Var.m2771L3(v4Var.mo9464C9());
-        iiVar.m34316Ef(new C2536ii.C2538b(L3, q6Var.m2175x3(L3), null));
+        ii iiVar = new ii(aVar, o6Var);
+        TdApi.Chat P3 = o6Var.P3(v4Var.C9());
+        iiVar.Ef(new ii.b(P3, o6Var.A3(P3), null));
         return iiVar;
     }
 
-    public final void m14703A4(C10930q6 q6Var, String str, Intent intent) {
-        C2760nb nbVar = new C2760nb(this, this.f25464R1.mo1480c());
-        if (intent != null) {
-            nbVar.m33580Rh(q6Var, str, intent);
-        }
-        m14701D4(nbVar);
-    }
-
-    public final void m14702B4() {
-        AbstractC9323v4<?> t4 = m14629t4(this.f25464R1.mo1480c());
-        if (t4 != null) {
-            this.f25526X.m9743Q(t4);
-            this.f25526X.m9742R(new View$OnClickListenerC2393fk(this, this.f25464R1.mo1480c()), 0);
-        } else if (RunnableC2425ga.m34620Df()) {
-            this.f25526X.m9743Q(new View$OnClickListenerC2393fk(this, this.f25464R1.mo1480c()));
-        } else {
-            this.f25526X.m9743Q(new RunnableC2425ga(this));
-        }
-    }
-
-    @Override
-    public void mo61C4(C11131y6 y6Var, int i, int i2) {
-        C11008t0.m1997e(this, y6Var, i, i2);
-    }
-
-    public final void m14701D4(C2760nb nbVar) {
-        this.f25526X.m9743Q(nbVar);
-    }
-
-    public final void m14700E4() {
-        C2760nb nbVar = new C2760nb(this, this.f25464R1.mo1480c());
-        nbVar.get();
-        this.f25526X.m9742R(nbVar, 0);
-    }
-
-    @Override
-    public void mo56G2(C11131y6 y6Var, TdApi.AuthorizationState authorizationState, int i) {
-        m14638n5(y6Var, authorizationState, i);
-    }
-
-    @Override
-    public void mo48O(C11131y6 y6Var, boolean z, boolean z2) {
-        C11008t0.m2000b(this, y6Var, z, z2);
-    }
-
-    @Override
-    public void mo47O6(final C10930q6 q6Var, final boolean z) {
-        this.f25465S1.post(new Runnable() {
-            @Override
-            public final void run() {
-                MainActivity.this.m14682R4(q6Var, z);
+    public void A4(int i10, boolean z10) {
+        if (this.X.X()) {
+            nb nbVar = new nb(this, ya.o1().U(i10).c());
+            if (z10) {
+                F4(nbVar);
+            } else {
+                this.X.Q(nbVar);
             }
-        });
+        }
+    }
+
+    public final void B4(o6 o6Var, String str, Intent intent) {
+        nb nbVar = new nb(this, this.R1.c());
+        if (intent != null) {
+            nbVar.Rh(o6Var, str, intent);
+        }
+        F4(nbVar);
     }
 
     @Override
-    public boolean mo14547Q1() {
+    public void D4(w6 w6Var, boolean z10, boolean z11) {
+        r0.b(this, w6Var, z10, z11);
+    }
+
+    public final void E4() {
+        v4<?> v42 = v4(this.R1.c());
+        if (v42 != null) {
+            this.X.Q(v42);
+            this.X.R(new fk(this, this.R1.c()), 0);
+        } else if (ga.Df()) {
+            this.X.Q(new fk(this, this.R1.c()));
+        } else {
+            this.X.Q(new ga(this));
+        }
+    }
+
+    public final void F4(nb nbVar) {
+        this.X.Q(nbVar);
+    }
+
+    public final void G4() {
+        nb nbVar = new nb(this, this.R1.c());
+        nbVar.get();
+        this.X.R(nbVar, 0);
+    }
+
+    @Override
+    public void N6(w6 w6Var, int i10) {
+        r0.f(this, w6Var, i10);
+    }
+
+    @Override
+    public boolean R1() {
         return true;
     }
 
     @Override
-    public void mo14511a2() {
-        m14630s5(m14409z0().m2538a7());
+    public void S(w6 w6Var, int i10) {
+        r0.d(this, w6Var, i10);
     }
 
     @Override
-    public void mo29b1(C11131y6 y6Var, int i) {
-        C11008t0.m1996f(this, y6Var, i);
-    }
-
-    public void m14658d5(AbstractC9323v4<?> v4Var) {
-        if (m14450q1()) {
-            v4Var.get();
-            v4Var.mo417Z8();
-        } else if (this.f25526X.m9736X()) {
-            this.f25526X.m9743Q(v4Var);
-            m14700E4();
-        } else {
-            m14465m1();
-            this.f25526X.m9718h0(v4Var);
+    public void V1(w6 w6Var, TdApi.User user, int i10, w6 w6Var2) {
+        if (this.R1.f28608b != w6Var.f28608b) {
+            this.R1 = w6Var;
+            u3(w6Var.c());
+            if (i10 != 3 && i10 != 4) {
+                t4(w6Var.f28608b);
+                v4<?> F = this.X.F();
+                if (F == null || F.c() == null || F.c().A6() != w6Var.f28608b) {
+                    nb nbVar = new nb(this, w6Var.c());
+                    if (this.X.X()) {
+                        this.X.D0(nbVar);
+                    } else {
+                        this.X.E0(nbVar, false, false);
+                    }
+                }
+            }
         }
     }
 
-    public final void m14656e5() {
-        TdApi.Call L = C10536ab.m4667o1().m4713c0().m4601L();
-        C10930q6 N = C10536ab.m4667o1().m4713c0().m4599N();
-        if (L == null) {
-            if (this.f25526X.m9736X()) {
-                m14623z4(m14409z0().m2188w6(), false);
+    @Override
+    public void b2() {
+        u5(C0().e7());
+    }
+
+    public void f5(v4<?> v4Var) {
+        if (r1()) {
+            v4Var.get();
+            v4Var.Z8();
+        } else if (this.X.X()) {
+            this.X.Q(v4Var);
+            G4();
+        } else {
+            n1();
+            this.X.h0(v4Var);
+        }
+    }
+
+    public final void g5() {
+        TdApi.Call J = ya.o1().c0().J();
+        o6 L = ya.o1().c0().L();
+        if (J == null) {
+            if (this.X.X()) {
+                A4(C0().A6(), false);
             }
-            C1379j0.m37295y0(R.string.CallNoLongerActive, 0);
+            j0.y0(R.string.CallNoLongerActive, 0);
             return;
         }
-        AbstractC9323v4<?> F = this.f25526X.m9762F();
-        if (F != null && F.m9128xe() == N.m2188w6() && (F instanceof View$OnClickListenerC2162b)) {
-            View$OnClickListenerC2162b bVar = (View$OnClickListenerC2162b) F;
-            if (bVar.m35469Ye(L.userId)) {
-                bVar.m35467af(L);
+        v4<?> F = this.X.F();
+        if (F != null && F.xe() == L.A6() && (F instanceof de.b)) {
+            de.b bVar = (de.b) F;
+            if (bVar.Ye(J.userId)) {
+                bVar.af(J);
                 return;
             }
         }
-        View$OnClickListenerC2162b bVar2 = new View$OnClickListenerC2162b(this, N);
-        bVar2.m35466bf(new View$OnClickListenerC2162b.C2168e(L));
-        m14658d5(bVar2);
+        de.b bVar2 = new de.b(this, L);
+        bVar2.bf(new b.e(J));
+        f5(bVar2);
     }
 
-    public void m14654f5() {
-        if (this.f25526X.m9736X()) {
-            m14623z4(m14409z0().m2188w6(), false);
+    public void h5() {
+        if (this.X.X()) {
+            A4(C0().A6(), false);
         }
         LinkedList linkedList = new LinkedList();
-        Iterator<C11131y6> it = C10536ab.m4667o1().iterator();
+        Iterator<w6> it = ya.o1().iterator();
         while (it.hasNext()) {
-            C11131y6 next = it.next();
-            if (next.m1509B(true) && next.mo1480c().m2480e2().m1628k0()) {
+            w6 next = it.next();
+            if (next.B(true) && next.c().e2().k0()) {
                 linkedList.add(next);
             }
         }
         if (!linkedList.isEmpty()) {
             if (linkedList.size() == 1) {
-                new C5974t0(this, ((C11131y6) linkedList.get(0)).mo1480c(), 0L, 0L, null, false, null).m21734v().m21766Q(false).m21740o();
+                new t0(this, ((w6) linkedList.get(0)).c(), 0L, 0L, null, false, null).v().Q(false).p();
             } else {
-                m14644k5(linkedList, null, null, new AbstractC5918j() {
+                m5(linkedList, null, null, new j() {
                     @Override
-                    public final void mo1330a(Object obj) {
-                        MainActivity.this.m14676U4((C11131y6) obj);
+                    public final void a(Object obj) {
+                        MainActivity.this.V4((w6) obj);
                     }
                 });
             }
         }
     }
 
-    public final void m14652g5(int i) {
-        if (this.f25526X.m9736X()) {
-            m14623z4(i, true);
+    public final void i5(int i10) {
+        if (this.X.X()) {
+            A4(i10, true);
             return;
         }
-        m14465m1();
-        int N = this.f25526X.m9747N();
-        if (!this.f25526X.m9748M().m9495r()) {
-            for (int i2 = N - 2; i2 >= 1; i2--) {
-                this.f25526X.m9748M().m9510c(i2);
+        n1();
+        int N = this.X.N();
+        if (!this.X.M().r()) {
+            for (int i11 = N - 2; i11 >= 1; i11--) {
+                this.X.M().c(i11);
             }
-            AbstractC9323v4<?> j = this.f25526X.m9748M().m9503j(0);
-            C2760nb nbVar = null;
-            if (!(j.mo407R9() == R.id.controller_main && j.m9128xe() == i)) {
-                nbVar = new C2760nb(this, C10536ab.m4756R0(i));
+            v4<?> j10 = this.X.M().j(0);
+            nb nbVar = null;
+            if (!(j10.R9() == R.id.controller_main && j10.xe() == i10)) {
+                nbVar = new nb(this, ya.R0(i10));
             }
             if (N > 1) {
                 if (nbVar != null) {
-                    this.f25526X.m9748M().m9488y(0, nbVar);
+                    this.X.M().y(0, nbVar);
                 }
-                this.f25526X.m9720g0();
+                this.X.g0();
             } else if (nbVar != null) {
-                this.f25526X.m9763E0(nbVar, false, false);
+                this.X.E0(nbVar, false, false);
             }
         }
     }
 
-    public final void m14650h5(int i, final long j, final long j2) {
-        final C10930q6 c = C10536ab.m4664p1(i).m4745U(i).mo1480c();
-        c.m2573Y1(new Runnable() {
+    public final void j5(int i10, final long j10, final long j11) {
+        final o6 c10 = ya.p1(i10).U(i10).c();
+        c10.Y1(new Runnable() {
             @Override
             public final void run() {
-                MainActivity.this.m14672W4(c, j2, j);
+                MainActivity.this.X4(c10, j11, j10);
             }
         });
     }
 
-    public final void m14648i5(int i) {
-        if (i != -1) {
-            View$OnClickListenerC2667lk lkVar = new View$OnClickListenerC2667lk(this, C10536ab.m4664p1(i).m4745U(i).mo1480c());
-            if (lkVar.m33894Vf() == -1) {
-                if (this.f25526X.m9736X()) {
-                    m14623z4(this.f25552k0.m2188w6(), false);
+    public final void k5(int i10) {
+        if (i10 != -1) {
+            lk lkVar = new lk(this, ya.p1(i10).U(i10).c());
+            if (lkVar.Vf() == -1) {
+                if (this.X.X()) {
+                    A4(this.f20033k0.A6(), false);
                 }
-            } else if (!(this.f25526X.m9762F() instanceof View$OnClickListenerC2667lk)) {
-                m14658d5(lkVar);
+            } else if (!(this.X.F() instanceof lk)) {
+                f5(lkVar);
             }
         }
-    }
-
-    public void m14646j5(CharSequence charSequence, String str, AbstractC5918j<C11131y6> jVar) {
-        m14644k5(C10536ab.m4667o1().m4741V(), charSequence, str, jVar);
-    }
-
-    public final void m14644k5(List<C11131y6> list, CharSequence charSequence, String str, final AbstractC5918j<C11131y6> jVar) {
-        m14642l5(list, charSequence, str, false, new AbstractC5918j() {
-            @Override
-            public final void mo1330a(Object obj) {
-                MainActivity.m14670X4(AbstractC5918j.this, (List) obj);
-            }
-        });
-    }
-
-    public void m14643l4(CharSequence charSequence, String str, AbstractC5918j<List<C11131y6>> jVar) {
-        m14642l5(C10536ab.m4667o1().m4741V(), charSequence, str, true, jVar);
-    }
-
-    public final void m14642l5(final List<C11131y6> list, CharSequence charSequence, String str, final boolean z, final AbstractC5918j<List<C11131y6>> jVar) {
-        C9180e2 me2;
-        if (list.size() <= 1) {
-            jVar.mo1330a(C5062b.m24166g(m14409z0().m2949A1()));
-            return;
-        }
-        boolean k1 = m14409z0().m2930B4().m4680k1();
-        int w6 = m14409z0().m2188w6();
-        ArrayList arrayList = new ArrayList(list.size() + 2 + (z ? 1 : 0));
-        arrayList.add(new C2964ra(35).m32870J(C1357a0.m37544i(12.0f)).m32875E(true));
-        if (z) {
-            arrayList.add(new C2964ra(12, (int) R.id.btn_selectAll, 0, (int) R.string.SelectAll, (int) R.id.btn_selectAll, k1));
-        }
-        boolean z2 = false;
-        for (C11131y6 y6Var : list) {
-            String t = y6Var.m1456t();
-            int i = y6Var.f35708b;
-            boolean z3 = w6 == i;
-            if (z3) {
-                z2 = true;
-            }
-            int i2 = z ? 69 : 85;
-            int i3 = i + 1;
-            if (z3) {
-                t = C4403w.m27867j1(k1 ? R.string.LastUsedAccount : R.string.CurrentAccount, t);
-            }
-            arrayList.add(new C2964ra(i2, i3, 0, t, z ? y6Var.f35708b + 1 : R.id.account, z3 || (k1 && z)).m32873G(y6Var).m32865O(y6Var.m1458r()));
-        }
-        arrayList.add(new C2964ra(35).m32870J(C1357a0.m37544i(12.0f)).m32875E(true));
-        if (!z2 && !z) {
-            ((C2964ra) arrayList.get(1)).m32861S(true);
-        }
-        CharSequence i1 = C5070i.m24062i(charSequence) ? C4403w.m27871i1(R.string.PerformAs) : charSequence;
-        String i12 = C5070i.m24062i(str) ? C4403w.m27871i1(R.string.Proceed) : str;
-        final AtomicBoolean atomicBoolean = new AtomicBoolean(true);
-        final AtomicReference atomicReference = new AtomicReference();
-        C9188f2 g = new C9188f2(R.id.account).m10010b(i1).m9997o(arrayList).m9993s(i12).m10000l(false).m9998n(z ? new C7885d() : null).m10002j(new AbstractC9323v4.AbstractC9343r() {
-            @Override
-            public final void mo1773l6(int i4, SparseIntArray sparseIntArray) {
-                MainActivity.m14664a5(z, list, jVar, i4, sparseIntArray);
-            }
-        }).m10005g(new C6924j2.AbstractC6930f() {
-            @Override
-            public void mo3000j2(C6924j2 j2Var) {
-                C6941k2.m18400a(this, j2Var);
-            }
-
-            @Override
-            public final void mo2999y4(C6924j2 j2Var) {
-                MainActivity.m14662b5(atomicReference, atomicBoolean, j2Var);
-            }
-        });
-        AbstractC9323v4<?> F = this.f25526X.m9762F();
-        if (!(F == null || (me2 = F.m9206me(g)) == null || me2.f29640a == null)) {
-            C7886e eVar = new C7886e(me2);
-            if (atomicBoolean.get()) {
-                atomicReference.set(eVar);
-                C10536ab.m4667o1().m4716b1().m1554a(eVar);
-            }
-        }
-    }
-
-    public void m14640m5() {
-        if (C10536ab.m4667o1().m4650t0()) {
-            this.f25526X.m9767C0();
-            m14624y4(this.f25464R1.mo1480c(), this.f25464R1.mo1480c().m2648T1());
-        }
-    }
-
-    public final View$OnClickListenerC2971rh m14639n4(C10930q6 q6Var) {
-        View$OnClickListenerC2971rh rhVar = new View$OnClickListenerC2971rh(this, q6Var);
-        rhVar.m32407fq(true);
-        rhVar.get();
-        this.f25468V1.m21467j(q6Var.m2188w6(), rhVar);
-        return rhVar;
-    }
-
-    public final void m14638n5(C11131y6 y6Var, TdApi.AuthorizationState authorizationState, int i) {
-        int v0;
-        if (this.f25464R1.f35708b != y6Var.f35708b && (this.f25526X.m9736X() || !this.f25526X.m9762F().m9305Ya(y6Var))) {
-            return;
-        }
-        if (this.f25526X.m9736X()) {
-            m14624y4(this.f25464R1.mo1480c(), this.f25464R1.mo1480c().m2648T1());
-            return;
-        }
-        AbstractC9323v4<?> l = this.f25526X.m9748M().m9501l();
-        boolean z = true;
-        if (i == 2) {
-            AbstractC9323v4<?> j = this.f25526X.m9748M().m9503j(0);
-            if (this.f25464R1.f35708b == y6Var.f35708b || !m14699F4(l) || m14699F4(j) || j.m9128xe() == y6Var.f35708b || l.m9128xe() != y6Var.f35708b) {
-                z = false;
-            }
-            if (m14699F4(j) || !j.m9305Ya(y6Var)) {
-                C2760nb nbVar = new C2760nb(this, y6Var.mo1480c());
-                if (z) {
-                    y6Var.mo1480c().m2294pc().m4122f0(this.f25464R1.mo1480c().m2294pc());
-                }
-                this.f25526X.m9763E0(nbVar, false, false);
-            }
-        } else if (i == 1 && this.f25464R1.f35708b == y6Var.f35708b && (v0 = this.f25552k0.m2930B4().m4642v0(this.f25464R1.f35708b)) != -1) {
-            this.f25552k0.m2930B4().m4709d0(v0, 0);
-        } else {
-            AbstractC9323v4<?> t4 = m14629t4(y6Var.mo1480c());
-            if (t4 == null) {
-                if (C1379j0.m37361J() && authorizationState.getConstructor() == 306402531 && (l instanceof View$OnClickListenerC2393fk)) {
-                    ((View$OnClickListenerC2393fk) l).m34673ng();
-                }
-                AbstractC9323v4<?> j2 = this.f25526X.m9748M().m9503j(0);
-                if (!m14699F4(j2) && j2.m9305Ya(y6Var)) {
-                    if (this.f25526X.m9741S()) {
-                        AbstractC9323v4<?> K = this.f25526X.m9752K();
-                        if (K == null || !K.m9305Ya(y6Var) || !K.mo9271db()) {
-                            AbstractC9323v4<?> l2 = this.f25526X.m9748M().m9501l();
-                            if (l2 != null && l2.m9305Ya(y6Var) && l2.mo9271db() && (l2 instanceof View$OnClickListenerC2393fk) && !((View$OnClickListenerC2393fk) l2).m34694Wf()) {
-                                return;
-                            }
-                        } else {
-                            return;
-                        }
-                    }
-                    this.f25526X.m9763E0(new View$OnClickListenerC2393fk(this, y6Var.mo1480c()), true, false);
-                }
-            } else if (l == null || l.mo407R9() != t4.mo407R9()) {
-                this.f25526X.m9718h0(t4);
-            }
-        }
-    }
-
-    public final void m14637o5() {
-        C11131y6 k0 = C10536ab.m4667o1().m4681k0();
-        this.f25464R1 = k0;
-        k0.mo1480c().m2728Ne();
-        m14436t3(this.f25464R1.mo1480c());
     }
 
     @Override
-    public void onActivityResult(int i, int i2, Intent intent) {
-        if (this.f25526X.m9736X()) {
-            this.f25526X.m9748M().m9512a(new C7887f(i, i2, intent));
+    public void l(w6 w6Var, TdApi.AuthorizationState authorizationState, int i10) {
+        p5(w6Var, authorizationState, i10);
+    }
+
+    public void l5(CharSequence charSequence, String str, j<w6> jVar) {
+        m5(ya.o1().V(), charSequence, str, jVar);
+    }
+
+    public final void m5(List<w6> list, CharSequence charSequence, String str, final j<w6> jVar) {
+        n5(list, charSequence, str, false, new j() {
+            @Override
+            public final void a(Object obj) {
+                MainActivity.Y4(j.this, (List) obj);
+            }
+        });
+    }
+
+    public final void n5(final List<w6> list, CharSequence charSequence, String str, final boolean z10, final j<List<w6>> jVar) {
+        e2 me2;
+        if (list.size() <= 1) {
+            jVar.a(ib.b.g(C0().A1()));
+            return;
+        }
+        boolean k12 = C0().F4().k1();
+        int A6 = C0().A6();
+        ArrayList arrayList = new ArrayList(list.size() + 2 + (z10 ? 1 : 0));
+        arrayList.add(new ra(35).J(a0.i(12.0f)).E(true));
+        if (z10) {
+            arrayList.add(new ra(12, (int) R.id.btn_selectAll, 0, (int) R.string.SelectAll, (int) R.id.btn_selectAll, k12));
+        }
+        boolean z11 = false;
+        for (w6 w6Var : list) {
+            String t10 = w6Var.t();
+            int i10 = w6Var.f28608b;
+            boolean z12 = A6 == i10;
+            if (z12) {
+                z11 = true;
+            }
+            int i11 = z10 ? 69 : 85;
+            int i12 = i10 + 1;
+            if (z12) {
+                t10 = w.j1(k12 ? R.string.LastUsedAccount : R.string.CurrentAccount, t10);
+            }
+            arrayList.add(new ra(i11, i12, 0, t10, z10 ? w6Var.f28608b + 1 : R.id.account, z12 || (k12 && z10)).G(w6Var).O(w6Var.r()));
+        }
+        arrayList.add(new ra(35).J(a0.i(12.0f)).E(true));
+        if (!z11 && !z10) {
+            ((ra) arrayList.get(1)).S(true);
+        }
+        CharSequence i13 = ib.i.i(charSequence) ? w.i1(R.string.PerformAs) : charSequence;
+        String i14 = ib.i.i(str) ? w.i1(R.string.Proceed) : str;
+        final AtomicBoolean atomicBoolean = new AtomicBoolean(true);
+        final AtomicReference atomicReference = new AtomicReference();
+        f2 g10 = new f2(R.id.account).b(i13).o(arrayList).s(i14).l(false).n(z10 ? new d() : null).j(new v4.r() {
+            @Override
+            public final void l6(int i15, SparseIntArray sparseIntArray) {
+                MainActivity.b5(z10, list, jVar, i15, sparseIntArray);
+            }
+        }).g(new j2.f() {
+            @Override
+            public final void h3(j2 j2Var) {
+                MainActivity.c5(atomicReference, atomicBoolean, j2Var);
+            }
+
+            @Override
+            public void w(j2 j2Var) {
+                k2.a(this, j2Var);
+            }
+        });
+        v4<?> F = this.X.F();
+        if (!(F == null || (me2 = F.me(g10)) == null || me2.f24134a == null)) {
+            e eVar = new e(me2);
+            if (atomicBoolean.get()) {
+                atomicReference.set(eVar);
+                ya.o1().b1().a(eVar);
+            }
+        }
+    }
+
+    public void o5() {
+        if (ya.o1().t0()) {
+            this.X.C0();
+            z4(this.R1.c(), this.R1.c().T1());
+        }
+    }
+
+    @Override
+    public void onActivityResult(int i10, int i11, Intent intent) {
+        if (this.X.X()) {
+            this.X.M().a(new f(i10, i11, intent));
         } else {
-            super.onActivityResult(i, i2, intent);
+            super.onActivityResult(i10, i11, intent);
         }
     }
 
     @Override
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        Log.m14719i("MainActivity.onCreate", new Object[0]);
-        this.f25465S1 = new Handler();
-        C10536ab.m4667o1().m4716b1().m1554a(this);
-        m14637o5();
-        m14639n4(this.f25552k0).get();
-        this.f25463Q1 = bundle;
-        C4868i.C4873e K0 = C10536ab.m4667o1().m4784K0();
+        Log.i("MainActivity.onCreate", new Object[0]);
+        this.S1 = new Handler();
+        ya.o1().b1().a(this);
+        q5();
+        r4(this.f20033k0).get();
+        this.Q1 = bundle;
+        i.e K0 = ya.o1().K0();
         if (K0 != null) {
-            View$OnClickListenerC3209vr vrVar = new View$OnClickListenerC3209vr(this, this.f25552k0);
-            vrVar.m31220ji(new View$OnClickListenerC3209vr.C3215f(K0));
-            this.f25526X.m9743Q(vrVar);
+            vr vrVar = new vr(this, this.f20033k0);
+            vrVar.ji(new vr.f(K0));
+            this.X.Q(vrVar);
         } else {
-            m14624y4(this.f25464R1.mo1480c(), this.f25464R1.mo1480c().m2648T1());
+            z4(this.R1.c(), this.R1.c().T1());
         }
-        final C10930q6 j0 = C10536ab.m4667o1().m4684j0();
-        j0.m2588X1(new Runnable() {
+        final o6 j02 = ya.o1().j0();
+        j02.X1(new Runnable() {
             @Override
             public final void run() {
-                MainActivity.m14690N4(C10930q6.this);
+                MainActivity.O4(o6.this);
             }
         });
     }
 
     @Override
     public void onDestroy() {
-        C10536ab.m4667o1().m4716b1().m1531x(this);
-        m14635q4();
-        Log.m14719i("MainActivity.onDestroy", new Object[0]);
+        ya.o1().b1().x(this);
+        s4();
+        Log.i("MainActivity.onDestroy", new Object[0]);
         Log.close();
         super.onDestroy();
     }
@@ -939,29 +881,29 @@ public class MainActivity extends AbstractView$OnTouchListenerC7889a implements 
     public void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         String action = intent != null ? intent.getAction() : null;
-        if (!C5070i.m24062i(action)) {
-            m14626w4(action, intent, false);
+        if (!ib.i.i(action)) {
+            x4(action, intent, false);
         }
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        Log.m14719i("MainActivity.onPause", new Object[0]);
+        Log.i("MainActivity.onPause", new Object[0]);
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        Log.m14719i("MainActivity.onResume", new Object[0]);
-        this.f25552k0.m2946A4().m1400f0(this);
-        C1379j0.m37372C0();
-        if (!this.f25469W1 && !C4868i.m24727c2().m24711e2()) {
-            this.f25469W1 = true;
-            C4383l.m28061a().m28060b(new Runnable() {
+        Log.i("MainActivity.onResume", new Object[0]);
+        this.f20033k0.E4().f0(this);
+        j0.C0();
+        if (!this.W1 && !i.c2().e2()) {
+            this.W1 = true;
+            l.a().b(new Runnable() {
                 @Override
                 public final void run() {
-                    MainActivity.this.m14688O4();
+                    MainActivity.this.P4();
                 }
             });
         }
@@ -969,271 +911,321 @@ public class MainActivity extends AbstractView$OnTouchListenerC7889a implements 
 
     @Override
     public void onSaveInstanceState(Bundle bundle) {
-        AbstractC9323v4<?> v4Var = null;
+        v4<?> v4Var = null;
         if (bundle == null) {
             super.onSaveInstanceState(null);
             return;
         }
-        C9270q1 q1Var = this.f25526X;
-        int N = q1Var != null ? q1Var.m9747N() : 0;
+        q1 q1Var = this.X;
+        int N = q1Var != null ? q1Var.N() : 0;
         if (N > 1) {
             while (true) {
-                AbstractC9323v4<?> j = this.f25526X.m9748M().m9503j(N - 1);
-                if (j == null || j.mo4348c() == this.f25464R1.mo1480c()) {
+                v4<?> j10 = this.X.M().j(N - 1);
+                if (j10 == null || j10.c() == this.R1.c()) {
                     break;
                 }
                 N--;
             }
         }
         if (N > 1) {
-            v4Var = this.f25526X.m9748M().m9503j(N - 1);
+            v4Var = this.X.M().j(N - 1);
         }
         if (N <= 1 || v4Var == null) {
             bundle.putInt("nav_stack_type", 0);
             super.onSaveInstanceState(bundle);
             return;
         }
-        bundle.putInt("nav_account_id", this.f25464R1.f35708b);
-        int i = 0;
-        for (int i2 = N - 1; i2 >= 0; i2--) {
-            AbstractC9323v4<?> j2 = this.f25526X.m9748M().m9503j(i2);
-            if (j2 != null) {
-                String c5 = m14660c5(i);
-                int R9 = j2.mo407R9();
-                if (!m14641m4(R9, j2)) {
-                    if (!j2.mo9122yd(bundle, c5 + "_")) {
+        bundle.putInt("nav_account_id", this.R1.f28608b);
+        int i10 = 0;
+        for (int i11 = N - 1; i11 >= 0; i11--) {
+            v4<?> j11 = this.X.M().j(i11);
+            if (j11 != null) {
+                String d52 = d5(i10);
+                int R9 = j11.R9();
+                if (!q4(R9, j11)) {
+                    if (!j11.yd(bundle, d52 + "_")) {
                     }
                 }
-                bundle.putInt(c5, R9);
-                i++;
+                bundle.putInt(d52, R9);
+                i10++;
             }
         }
-        if (i > 0) {
+        if (i10 > 0) {
             bundle.putInt("nav_stack_type", 2);
-            bundle.putInt("nav_item_count", i);
+            bundle.putInt("nav_item_count", i10);
         } else {
             bundle.putInt("nav_stack_type", 0);
         }
         super.onSaveInstanceState(bundle);
     }
 
-    @Override
-    public void mo12p4(C11131y6 y6Var, TdApi.User user, boolean z, boolean z2) {
+    public void p4(CharSequence charSequence, String str, j<List<w6>> jVar) {
+        n5(ya.o1().V(), charSequence, str, true, jVar);
     }
 
-    public final void m14636p5(boolean z) {
-        C10651f1 W1 = this.f25552k0.m2930B4().m4735W1();
-        if (W1.m4364m()) {
-            W1.m4354v(this);
+    public final void p5(w6 w6Var, TdApi.AuthorizationState authorizationState, int i10) {
+        int v02;
+        if (this.R1.f28608b != w6Var.f28608b && (this.X.X() || !this.X.F().Ya(w6Var))) {
+            return;
         }
-    }
-
-    @Override
-    public void mo11p6(C11131y6 y6Var, int i) {
-        C11008t0.m1998d(this, y6Var, i);
-    }
-
-    public void m14635q4() {
-        for (int n = this.f25468V1.m21464n() - 1; n >= 0; n--) {
-            View$OnClickListenerC2971rh o = this.f25468V1.m21463o(n);
-            o.m32617Pp();
-            o.mo417Z8();
-            this.f25468V1.m21465l(n);
+        if (this.X.X()) {
+            z4(this.R1.c(), this.R1.c().T1());
+            return;
         }
-    }
-
-    public void m14633r4(int i) {
-        for (int n = this.f25468V1.m21464n() - 1; n >= 0; n--) {
-            if (this.f25468V1.m21468i(n) != i) {
-                View$OnClickListenerC2971rh o = this.f25468V1.m21463o(n);
-                o.m32617Pp();
-                o.mo417Z8();
-                this.f25468V1.m21465l(n);
+        v4<?> l10 = this.X.M().l();
+        boolean z10 = true;
+        if (i10 == 2) {
+            v4<?> j10 = this.X.M().j(0);
+            if (this.R1.f28608b == w6Var.f28608b || !H4(l10) || H4(j10) || j10.xe() == w6Var.f28608b || l10.xe() != w6Var.f28608b) {
+                z10 = false;
             }
-        }
-    }
-
-    public final int m14632r5(Bundle bundle) {
-        int i;
-        int i2;
-        if (bundle == null || (i = bundle.getInt("nav_stack_type", 0)) == 0) {
-            return 0;
-        }
-        if (!(this.f25464R1.f35708b == bundle.getInt("nav_account_id", 0) && i == 2 && (i2 = bundle.getInt("nav_item_count")) > 0)) {
-            return 0;
-        }
-        int i3 = 0;
-        for (int i4 = 0; i4 < i2; i4++) {
-            String c5 = m14660c5(i4);
-            int i5 = bundle.getInt(c5);
-            C10930q6 c = this.f25464R1.mo1480c();
-            AbstractC9323v4<?> q5 = m14634q5(this, c, i5, bundle, c5 + "_");
-            if (q5 != null) {
-                q5.get();
-                if (i3 == 0) {
-                    this.f25526X.m9743Q(q5);
-                } else {
-                    this.f25526X.m9742R(q5, 0);
+            if (H4(j10) || !j10.Ya(w6Var)) {
+                nb nbVar = new nb(this, w6Var.c());
+                if (z10) {
+                    w6Var.c().tc().f0(this.R1.c().tc());
                 }
-                i3++;
+                this.X.E0(nbVar, false, false);
+            }
+        } else if (i10 == 1 && this.R1.f28608b == w6Var.f28608b && (v02 = this.f20033k0.F4().v0(this.R1.f28608b)) != -1) {
+            this.f20033k0.F4().d0(v02, 0);
+        } else {
+            v4<?> v42 = v4(w6Var.c());
+            if (v42 == null) {
+                if (j0.J() && authorizationState.getConstructor() == 306402531 && (l10 instanceof fk)) {
+                    ((fk) l10).ng();
+                }
+                v4<?> j11 = this.X.M().j(0);
+                if (!H4(j11) && j11.Ya(w6Var)) {
+                    if (this.X.S()) {
+                        v4<?> K = this.X.K();
+                        if (K == null || !K.Ya(w6Var) || !K.db()) {
+                            v4<?> l11 = this.X.M().l();
+                            if (l11 != null && l11.Ya(w6Var) && l11.db() && (l11 instanceof fk) && !((fk) l11).Wf()) {
+                                return;
+                            }
+                        } else {
+                            return;
+                        }
+                    }
+                    this.X.E0(new fk(this, w6Var.c()), true, false);
+                }
+            } else if (l10 == null || l10.R9() != v42.R9()) {
+                this.X.h0(v42);
             }
         }
-        return i3 > 0 ? 2 : 0;
     }
 
-    public void m14631s4(boolean z) {
-        C11131y6 U = C10536ab.m4667o1().m4745U(this.f25552k0.m2930B4().m4711c2(z));
-        this.f25464R1 = U;
-        U.mo1480c().m2728Ne();
-        m14436t3(this.f25464R1.mo1480c());
+    public final void q5() {
+        w6 k02 = ya.o1().k0();
+        this.R1 = k02;
+        k02.c().Te();
+        u3(this.R1.c());
     }
 
-    public final void m14630s5(boolean z) {
-        if (z || this.f25466T1 != null) {
-            if (this.f25467U1 == null) {
+    public final rh r4(o6 o6Var) {
+        rh rhVar = new rh(this, o6Var);
+        rhVar.fq(true);
+        rhVar.get();
+        this.V1.j(o6Var.A6(), rhVar);
+        return rhVar;
+    }
+
+    public final void r5(boolean z10) {
+        d1 W1 = this.f20033k0.F4().W1();
+        if (W1.m()) {
+            W1.v(this);
+        }
+    }
+
+    public void s4() {
+        for (int n10 = this.V1.n() - 1; n10 >= 0; n10--) {
+            rh o10 = this.V1.o(n10);
+            o10.Pp();
+            o10.Z8();
+            this.V1.l(n10);
+        }
+    }
+
+    public void t4(int i10) {
+        for (int n10 = this.V1.n() - 1; n10 >= 0; n10--) {
+            if (this.V1.i(n10) != i10) {
+                rh o10 = this.V1.o(n10);
+                o10.Pp();
+                o10.Z8();
+                this.V1.l(n10);
+            }
+        }
+    }
+
+    public final int t5(Bundle bundle) {
+        int i10;
+        int i11;
+        if (bundle == null || (i10 = bundle.getInt("nav_stack_type", 0)) == 0) {
+            return 0;
+        }
+        if (!(this.R1.f28608b == bundle.getInt("nav_account_id", 0) && i10 == 2 && (i11 = bundle.getInt("nav_item_count")) > 0)) {
+            return 0;
+        }
+        int i12 = 0;
+        for (int i13 = 0; i13 < i11; i13++) {
+            String d52 = d5(i13);
+            int i14 = bundle.getInt(d52);
+            o6 c10 = this.R1.c();
+            v4<?> s52 = s5(this, c10, i14, bundle, d52 + "_");
+            if (s52 != null) {
+                s52.get();
+                if (i12 == 0) {
+                    this.X.Q(s52);
+                } else {
+                    this.X.R(s52, 0);
+                }
+                i12++;
+            }
+        }
+        return i12 > 0 ? 2 : 0;
+    }
+
+    public void u4(boolean z10) {
+        w6 U = ya.o1().U(this.f20033k0.F4().c2(z10));
+        this.R1 = U;
+        U.c().Te();
+        u3(this.R1.c());
+    }
+
+    public final void u5(boolean z10) {
+        if (z10 || this.T1 != null) {
+            if (this.U1 == null) {
                 LinearLayout linearLayout = new LinearLayout(this);
                 linearLayout.setOrientation(1);
                 linearLayout.setGravity(17);
-                int i = -1;
+                int i10 = -1;
                 linearLayout.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
-                C10192g.m5781j(linearLayout, R.id.theme_color_filling);
-                linearLayout.addView(new C6984o1(this));
-                C6847b2 b2Var = new C6847b2(this);
+                g.j(linearLayout, R.id.theme_color_filling);
+                linearLayout.addView(new o1(this));
+                b2 b2Var = new b2(this);
                 b2Var.setTextSize(2, 22.0f);
-                b2Var.setPadding(C1357a0.m37544i(12.0f), C1357a0.m37544i(14.0f), C1357a0.m37544i(12.0f), C1357a0.m37544i(14.0f));
-                b2Var.setTextColor(C11524j.m217S0());
+                b2Var.setPadding(a0.i(12.0f), a0.i(14.0f), a0.i(12.0f), a0.i(14.0f));
+                b2Var.setTextColor(ae.j.P0());
                 b2Var.setGravity(17);
-                C1399s0.m37178j0(b2Var, C4403w.m27871i1(R.string.Optimizing));
+                p0.c0(b2Var, w.i1(R.string.Optimizing));
                 linearLayout.addView(b2Var);
-                C6847b2 b2Var2 = new C6847b2(this);
+                b2 b2Var2 = new b2(this);
                 b2Var2.setTextSize(2, 15.0f);
                 b2Var2.setGravity(17);
-                b2Var2.setPadding(C1357a0.m37544i(24.0f), 0, C1357a0.m37544i(24.0f), 0);
-                b2Var2.setTextColor(C11524j.m217S0());
-                b2Var2.setText(C4403w.m27871i1(R.string.OptimizingInfo));
+                b2Var2.setPadding(a0.i(24.0f), 0, a0.i(24.0f), 0);
+                b2Var2.setTextColor(ae.j.P0());
+                b2Var2.setText(w.i1(R.string.OptimizingInfo));
                 linearLayout.addView(b2Var2);
-                RunnableC7091z1 z1Var = this.f25562p0;
+                z1 z1Var = this.f20043p0;
                 if (z1Var != null) {
-                    i = this.f25522V.indexOfChild(z1Var);
+                    i10 = this.V.indexOfChild(z1Var);
                 }
-                this.f25522V.addView(linearLayout, i);
-                this.f25467U1 = linearLayout;
+                this.V.addView(linearLayout, i10);
+                this.U1 = linearLayout;
                 linearLayout.setAlpha(0.0f);
             }
-            if (this.f25466T1 == null) {
-                this.f25466T1 = new C3940f(0, new C7882a(), C2057b.f7280b, 220L);
+            if (this.T1 == null) {
+                this.T1 = new eb.f(0, new a(), db.b.f7287b, 220L);
             }
-            this.f25466T1.m29578o(z ? 0L : 180L);
-            this.f25466T1.m29577p(z, true);
+            this.T1.o(z10 ? 0L : 180L);
+            this.T1.p(z10, true);
         }
     }
 
-    public final AbstractC9323v4<?> m14629t4(C10930q6 q6Var) {
-        TdApi.AuthorizationState S1 = q6Var.m2663S1();
+    @Override
+    public void v0(w6 w6Var, TdApi.User user, boolean z10, boolean z11) {
+    }
+
+    public final v4<?> v4(o6 o6Var) {
+        TdApi.AuthorizationState S1 = o6Var.S1();
         int constructor = S1.getConstructor();
         if (constructor == 52643073) {
-            View$OnClickListenerC2665lj ljVar = new View$OnClickListenerC2665lj(this, q6Var);
-            ljVar.m33966bg(new View$OnClickListenerC2665lj.C2666a(7, (TdApi.AuthorizationStateWaitCode) S1, q6Var.m2678R1()));
+            lj ljVar = new lj(this, o6Var);
+            ljVar.bg(new lj.a(7, (TdApi.AuthorizationStateWaitCode) S1, o6Var.R1()));
             return ljVar;
         } else if (constructor == 187548796) {
-            View$OnClickListenerC2665lj ljVar2 = new View$OnClickListenerC2665lj(this, q6Var);
-            ljVar2.m33966bg(new View$OnClickListenerC2665lj.C2666a(5, (TdApi.AuthorizationStateWaitPassword) S1));
+            lj ljVar2 = new lj(this, o6Var);
+            ljVar2.bg(new lj.a(5, (TdApi.AuthorizationStateWaitPassword) S1));
             return ljVar2;
         } else if (constructor != 550350511) {
             return null;
         } else {
-            View$OnClickListenerC2118a7 a7Var = new View$OnClickListenerC2118a7(this, q6Var);
-            a7Var.m35523sf(new View$OnClickListenerC2118a7.C2120b(0, (TdApi.AuthorizationStateWaitRegistration) S1, q6Var.m2678R1()));
+            a7 a7Var = new a7(this, o6Var);
+            a7Var.sf(new a7.b(0, (TdApi.AuthorizationStateWaitRegistration) S1, o6Var.R1()));
             return a7Var;
         }
     }
 
-    public final void m14695K4(C11131y6 y6Var, String str, Intent intent) {
-        if (this.f25526X.m9736X()) {
-            m14703A4(y6Var.mo1480c(), str, intent);
+    public final void L4(w6 w6Var, String str, Intent intent) {
+        if (this.X.X()) {
+            B4(w6Var.c(), str, intent);
             return;
         }
-        AbstractC9323v4<?> j = this.f25526X.m9748M().m9503j(0);
-        if (j instanceof C2760nb) {
-            ((C2760nb) j).m33580Rh(y6Var.mo1480c(), str, intent);
+        v4<?> j10 = this.X.M().j(0);
+        if (j10 instanceof nb) {
+            ((nb) j10).Rh(w6Var.c(), str, intent);
         }
     }
 
-    public View$OnClickListenerC2971rh m14627u4(C10930q6 q6Var, boolean z) {
-        View$OnClickListenerC2971rh e = this.f25468V1.m21472e(q6Var.m2188w6());
-        if (e != null) {
-            return e;
+    public rh w4(o6 o6Var, boolean z10) {
+        rh e10 = this.V1.e(o6Var.A6());
+        if (e10 != null) {
+            return e10;
         }
-        if (z) {
-            return m14639n4(q6Var);
+        if (z10) {
+            return r4(o6Var);
         }
         return null;
     }
 
-    @Override
-    public void mo4v4(C11131y6 y6Var, TdApi.User user, int i, C11131y6 y6Var2) {
-        if (this.f25464R1.f35708b != y6Var.f35708b) {
-            this.f25464R1 = y6Var;
-            m14436t3(y6Var.mo1480c());
-            if (i != 3 && i != 4) {
-                m14633r4(y6Var.f35708b);
-                AbstractC9323v4<?> F = this.f25526X.m9762F();
-                if (F == null || F.mo4348c() == null || F.mo4348c().m2188w6() != y6Var.f35708b) {
-                    C2760nb nbVar = new C2760nb(this, y6Var.mo1480c());
-                    if (this.f25526X.m9736X()) {
-                        this.f25526X.m9765D0(nbVar);
-                    } else {
-                        this.f25526X.m9763E0(nbVar, false, false);
-                    }
-                }
-            }
-        }
+    public final boolean x4(java.lang.String r17, final android.content.Intent r18, boolean r19) {
+        throw new UnsupportedOperationException("Method not decompiled: org.thunderdog.challegram.MainActivity.x4(java.lang.String, android.content.Intent, boolean):boolean");
     }
 
-    public final boolean m14626w4(java.lang.String r17, final android.content.Intent r18, boolean r19) {
-        throw new UnsupportedOperationException("Method not decompiled: org.thunderdog.challegram.MainActivity.m14626w4(java.lang.String, android.content.Intent, boolean):boolean");
-    }
-
-    public final void m14625x4() {
+    public final void y4() {
         Intent intent = getIntent();
         String action = intent != null ? intent.getAction() : null;
-        if (C5070i.m24062i(action) || !m14626w4(action, intent, true)) {
-            Bundle bundle = this.f25463Q1;
+        if (ib.i.i(action) || !x4(action, intent, true)) {
+            Bundle bundle = this.Q1;
             if (bundle != null) {
-                int r5 = m14632r5(bundle);
-                this.f25463Q1 = null;
-                if (r5 == 2) {
-                    m14700E4();
+                int t52 = t5(bundle);
+                this.Q1 = null;
+                if (t52 == 2) {
+                    G4();
                 }
-                if (r5 != 0) {
+                if (t52 != 0) {
                     return;
                 }
             }
-            m14703A4(null, null, null);
+            B4(null, null, null);
         }
     }
 
-    public final void m14624y4(C10930q6 q6Var, int i) {
-        if (i == 1) {
-            int v0 = q6Var.m2930B4().m4642v0(q6Var.m2188w6());
-            if (v0 == -1) {
-                m14702B4();
-            } else {
-                q6Var.m2930B4().m4709d0(v0, 1);
+    @Override
+    public void z(final o6 o6Var, final boolean z10) {
+        this.S1.post(new Runnable() {
+            @Override
+            public final void run() {
+                MainActivity.this.S4(o6Var, z10);
             }
-        } else if (i == 2) {
-            m14625x4();
+        });
+    }
+
+    public final void z4(o6 o6Var, int i10) {
+        if (i10 == 1) {
+            int v02 = o6Var.F4().v0(o6Var.A6());
+            if (v02 == -1) {
+                E4();
+            } else {
+                o6Var.F4().d0(v02, 1);
+            }
+        } else if (i10 == 2) {
+            y4();
         }
     }
 
-    public void m14623z4(int i, boolean z) {
-        if (this.f25526X.m9736X()) {
-            C2760nb nbVar = new C2760nb(this, C10536ab.m4667o1().m4745U(i).mo1480c());
-            if (z) {
-                m14701D4(nbVar);
-            } else {
-                this.f25526X.m9743Q(nbVar);
-            }
-        }
+    @Override
+    public void z5(w6 w6Var, int i10, int i11) {
+        r0.e(this, w6Var, i10, i11);
     }
 }

@@ -1,6 +1,12 @@
 package okhttp3.internal.publicsuffix;
 
-import cc.C2083h;
+import ab.o;
+import dc.h;
+import hc.l;
+import ia.q;
+import ja.m;
+import ja.n;
+import ja.v;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InterruptedIOException;
@@ -11,210 +17,202 @@ import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicBoolean;
-import p095gc.AbstractC4551g;
-import p095gc.C4557l;
-import p095gc.C4560o;
-import p107ha.C5060q;
-import p123ia.C5303m;
-import p123ia.C5304n;
-import p123ia.C5312v;
-import p290ub.C9489b;
-import p347ya.C10471i;
-import qa.C8294g;
-import qa.C8298k;
-import za.C11452o;
+import ra.g;
+import ra.k;
+import vb.b;
+import za.i;
 
 public final class PublicSuffixDatabase {
-    public final AtomicBoolean f25341a = new AtomicBoolean(false);
-    public final CountDownLatch f25342b = new CountDownLatch(1);
-    public byte[] f25343c;
-    public byte[] f25344d;
-    public static final C7858a f25340h = new C7858a(null);
-    public static final byte[] f25337e = {(byte) 42};
-    public static final List<String> f25338f = C5303m.m23371b("*");
-    public static final PublicSuffixDatabase f25339g = new PublicSuffixDatabase();
+    public final AtomicBoolean f19891a = new AtomicBoolean(false);
+    public final CountDownLatch f19892b = new CountDownLatch(1);
+    public byte[] f19893c;
+    public byte[] f19894d;
+    public static final a f19890h = new a(null);
+    public static final byte[] f19887e = {(byte) 42};
+    public static final List<String> f19888f = m.b("*");
+    public static final PublicSuffixDatabase f19889g = new PublicSuffixDatabase();
 
-    public static final class C7858a {
-        public C7858a() {
+    public static final class a {
+        public a() {
         }
 
-        public final String m14799b(byte[] bArr, byte[][] bArr2, int i) {
-            int i2;
-            boolean z;
-            int i3;
-            int b;
+        public a(g gVar) {
+            this();
+        }
+
+        public final String b(byte[] bArr, byte[][] bArr2, int i10) {
+            int i11;
+            boolean z10;
+            int i12;
+            int b10;
             int length = bArr.length;
-            int i4 = 0;
-            while (i4 < length) {
-                int i5 = (i4 + length) / 2;
-                while (i5 > -1 && bArr[i5] != ((byte) 10)) {
-                    i5--;
+            int i13 = 0;
+            while (i13 < length) {
+                int i14 = (i13 + length) / 2;
+                while (i14 > -1 && bArr[i14] != ((byte) 10)) {
+                    i14--;
                 }
-                int i6 = i5 + 1;
-                int i7 = 1;
+                int i15 = i14 + 1;
+                int i16 = 1;
                 while (true) {
-                    i2 = i6 + i7;
-                    if (bArr[i2] == ((byte) 10)) {
+                    i11 = i15 + i16;
+                    if (bArr[i11] == ((byte) 10)) {
                         break;
                     }
-                    i7++;
+                    i16++;
                 }
-                int i8 = i2 - i6;
-                int i9 = i;
-                boolean z2 = false;
-                int i10 = 0;
-                int i11 = 0;
+                int i17 = i11 - i15;
+                int i18 = i10;
+                boolean z11 = false;
+                int i19 = 0;
+                int i20 = 0;
                 while (true) {
-                    if (z2) {
-                        i3 = 46;
-                        z = false;
+                    if (z11) {
+                        i12 = 46;
+                        z10 = false;
                     } else {
-                        i3 = C9489b.m8522b(bArr2[i9][i10], 255);
-                        z = z2;
+                        i12 = b.b(bArr2[i18][i19], 255);
+                        z10 = z11;
                     }
-                    b = i3 - C9489b.m8522b(bArr[i6 + i11], 255);
-                    if (b != 0) {
+                    b10 = i12 - b.b(bArr[i15 + i20], 255);
+                    if (b10 != 0) {
                         break;
                     }
-                    i11++;
-                    i10++;
-                    if (i11 == i8) {
+                    i20++;
+                    i19++;
+                    if (i20 == i17) {
                         break;
-                    } else if (bArr2[i9].length != i10) {
-                        z2 = z;
-                    } else if (i9 == bArr2.length - 1) {
+                    } else if (bArr2[i18].length != i19) {
+                        z11 = z10;
+                    } else if (i18 == bArr2.length - 1) {
                         break;
                     } else {
-                        i9++;
-                        z2 = true;
-                        i10 = -1;
+                        i18++;
+                        z11 = true;
+                        i19 = -1;
                     }
                 }
-                if (b >= 0) {
-                    if (b <= 0) {
-                        int i12 = i8 - i11;
-                        int length2 = bArr2[i9].length - i10;
+                if (b10 >= 0) {
+                    if (b10 <= 0) {
+                        int i21 = i17 - i20;
+                        int length2 = bArr2[i18].length - i19;
                         int length3 = bArr2.length;
-                        for (int i13 = i9 + 1; i13 < length3; i13++) {
-                            length2 += bArr2[i13].length;
+                        for (int i22 = i18 + 1; i22 < length3; i22++) {
+                            length2 += bArr2[i22].length;
                         }
-                        if (length2 >= i12) {
-                            if (length2 <= i12) {
+                        if (length2 >= i21) {
+                            if (length2 <= i21) {
                                 Charset charset = StandardCharsets.UTF_8;
-                                C8298k.m12934d(charset, "UTF_8");
-                                return new String(bArr, i6, i8, charset);
+                                k.d(charset, "UTF_8");
+                                return new String(bArr, i15, i17, charset);
                             }
                         }
                     }
-                    i4 = i2 + 1;
+                    i13 = i11 + 1;
                 }
-                length = i6 - 1;
+                length = i15 - 1;
             }
             return null;
         }
 
-        public final PublicSuffixDatabase m14798c() {
-            return PublicSuffixDatabase.f25339g;
-        }
-
-        public C7858a(C8294g gVar) {
-            this();
+        public final PublicSuffixDatabase c() {
+            return PublicSuffixDatabase.f19889g;
         }
     }
 
-    public final List<String> m14805b(List<String> list) {
+    public final List<String> b(List<String> list) {
         String str;
         String str2;
         String str3;
         List<String> list2;
         List<String> list3;
-        if (this.f25341a.get() || !this.f25341a.compareAndSet(false, true)) {
+        if (this.f19891a.get() || !this.f19891a.compareAndSet(false, true)) {
             try {
-                this.f25342b.await();
+                this.f19892b.await();
             } catch (InterruptedException unused) {
                 Thread.currentThread().interrupt();
             }
         } else {
-            m14802e();
+            e();
         }
-        if (this.f25343c != null) {
+        if (this.f19893c != null) {
             int size = list.size();
             byte[][] bArr = new byte[size];
-            for (int i = 0; i < size; i++) {
-                String str4 = list.get(i);
+            for (int i10 = 0; i10 < size; i10++) {
+                String str4 = list.get(i10);
                 Charset charset = StandardCharsets.UTF_8;
-                C8298k.m12934d(charset, "UTF_8");
+                k.d(charset, "UTF_8");
                 Objects.requireNonNull(str4, "null cannot be cast to non-null type java.lang.String");
                 byte[] bytes = str4.getBytes(charset);
-                C8298k.m12934d(bytes, "(this as java.lang.String).getBytes(charset)");
-                bArr[i] = bytes;
+                k.d(bytes, "(this as java.lang.String).getBytes(charset)");
+                bArr[i10] = bytes;
             }
-            int i2 = 0;
+            int i11 = 0;
             while (true) {
                 str = null;
-                if (i2 >= size) {
+                if (i11 >= size) {
                     str2 = null;
                     break;
                 }
-                C7858a aVar = f25340h;
-                byte[] bArr2 = this.f25343c;
+                a aVar = f19890h;
+                byte[] bArr2 = this.f19893c;
                 if (bArr2 == null) {
-                    C8298k.m12924n("publicSuffixListBytes");
+                    k.n("publicSuffixListBytes");
                 }
-                str2 = aVar.m14799b(bArr2, bArr, i2);
+                str2 = aVar.b(bArr2, bArr, i11);
                 if (str2 != null) {
                     break;
                 }
-                i2++;
+                i11++;
             }
             if (size > 1) {
                 byte[][] bArr3 = (byte[][]) bArr.clone();
                 int length = bArr3.length - 1;
-                for (int i3 = 0; i3 < length; i3++) {
-                    bArr3[i3] = f25337e;
-                    C7858a aVar2 = f25340h;
-                    byte[] bArr4 = this.f25343c;
+                for (int i12 = 0; i12 < length; i12++) {
+                    bArr3[i12] = f19887e;
+                    a aVar2 = f19890h;
+                    byte[] bArr4 = this.f19893c;
                     if (bArr4 == null) {
-                        C8298k.m12924n("publicSuffixListBytes");
+                        k.n("publicSuffixListBytes");
                     }
-                    String b = aVar2.m14799b(bArr4, bArr3, i3);
-                    if (b != null) {
-                        str3 = b;
+                    String b10 = aVar2.b(bArr4, bArr3, i12);
+                    if (b10 != null) {
+                        str3 = b10;
                         break;
                     }
                 }
             }
             str3 = null;
             if (str3 != null) {
-                int i4 = size - 1;
-                int i5 = 0;
+                int i13 = size - 1;
+                int i14 = 0;
                 while (true) {
-                    if (i5 >= i4) {
+                    if (i14 >= i13) {
                         break;
                     }
-                    C7858a aVar3 = f25340h;
-                    byte[] bArr5 = this.f25344d;
+                    a aVar3 = f19890h;
+                    byte[] bArr5 = this.f19894d;
                     if (bArr5 == null) {
-                        C8298k.m12924n("publicSuffixExceptionListBytes");
+                        k.n("publicSuffixExceptionListBytes");
                     }
-                    String b2 = aVar3.m14799b(bArr5, bArr, i5);
-                    if (b2 != null) {
-                        str = b2;
+                    String b11 = aVar3.b(bArr5, bArr, i14);
+                    if (b11 != null) {
+                        str = b11;
                         break;
                     }
-                    i5++;
+                    i14++;
                 }
             }
             if (str != null) {
-                return C11452o.m587h0('!' + str, new char[]{'.'}, false, 0, 6, null);
+                return o.h0('!' + str, new char[]{'.'}, false, 0, 6, null);
             } else if (str2 == null && str3 == null) {
-                return f25338f;
+                return f19888f;
             } else {
-                if (str2 == null || (list2 = C11452o.m587h0(str2, new char[]{'.'}, false, 0, 6, null)) == null) {
-                    list2 = C5304n.m23367f();
+                if (str2 == null || (list2 = o.h0(str2, new char[]{'.'}, false, 0, 6, null)) == null) {
+                    list2 = n.f();
                 }
-                if (str3 == null || (list3 = C11452o.m587h0(str3, new char[]{'.'}, false, 0, 6, null)) == null) {
-                    list3 = C5304n.m23367f();
+                if (str3 == null || (list3 = o.h0(str3, new char[]{'.'}, false, 0, 6, null)) == null) {
+                    list3 = n.f();
                 }
                 return list2.size() > list3.size() ? list2 : list3;
             }
@@ -223,43 +221,43 @@ public final class PublicSuffixDatabase {
         }
     }
 
-    public final String m14804c(String str) {
-        int i;
-        int i2;
-        C8298k.m12933e(str, "domain");
+    public final String c(String str) {
+        int i10;
+        int i11;
+        k.e(str, "domain");
         String unicode = IDN.toUnicode(str);
-        C8298k.m12934d(unicode, "unicodeDomain");
-        List<String> f = m14801f(unicode);
-        List<String> b = m14805b(f);
-        if (f.size() == b.size() && b.get(0).charAt(0) != '!') {
+        k.d(unicode, "unicodeDomain");
+        List<String> f10 = f(unicode);
+        List<String> b10 = b(f10);
+        if (f10.size() == b10.size() && b10.get(0).charAt(0) != '!') {
             return null;
         }
-        if (b.get(0).charAt(0) == '!') {
-            i2 = f.size();
-            i = b.size();
+        if (b10.get(0).charAt(0) == '!') {
+            i11 = f10.size();
+            i10 = b10.size();
         } else {
-            i2 = f.size();
-            i = b.size() + 1;
+            i11 = f10.size();
+            i10 = b10.size() + 1;
         }
-        return C10471i.m5062h(C10471i.m5068b(C5312v.m23323y(m14801f(str)), i2 - i), ".", null, null, 0, null, null, 62, null);
+        return i.h(i.b(v.y(f(str)), i11 - i10), ".", null, null, 0, null, null, 62, null);
     }
 
-    public final void m14803d() {
+    public final void d() {
         InputStream resourceAsStream = PublicSuffixDatabase.class.getResourceAsStream("publicsuffixes.gz");
         if (resourceAsStream != null) {
-            AbstractC4551g b = C4560o.m27380b(new C4557l(C4560o.m27372j(resourceAsStream)));
+            hc.g b10 = hc.o.b(new l(hc.o.j(resourceAsStream)));
             th = null;
             try {
-                byte[] g0 = b.mo27334g0(b.readInt());
-                byte[] g02 = b.mo27334g0(b.readInt());
-                C5060q qVar = C5060q.f17066a;
+                byte[] i02 = b10.i0(b10.readInt());
+                byte[] i03 = b10.i0(b10.readInt());
+                q qVar = q.f14159a;
                 synchronized (this) {
-                    C8298k.m12935c(g0);
-                    this.f25343c = g0;
-                    C8298k.m12935c(g02);
-                    this.f25344d = g02;
+                    k.c(i02);
+                    this.f19893c = i02;
+                    k.c(i03);
+                    this.f19894d = i03;
                 }
-                this.f25342b.countDown();
+                this.f19892b.countDown();
             } finally {
                 try {
                     throw th;
@@ -269,38 +267,38 @@ public final class PublicSuffixDatabase {
         }
     }
 
-    public final void m14802e() {
-        boolean z = false;
+    public final void e() {
+        boolean z10 = false;
         while (true) {
             try {
                 try {
-                    m14803d();
+                    d();
                     break;
                 } catch (InterruptedIOException unused) {
                     Thread.interrupted();
-                    z = true;
-                } catch (IOException e) {
-                    C2083h.f7326c.m35677g().m35689j("Failed to read public suffix list", 5, e);
-                    if (z) {
+                    z10 = true;
+                } catch (IOException e10) {
+                    h.f7333c.g().j("Failed to read public suffix list", 5, e10);
+                    if (z10) {
                         Thread.currentThread().interrupt();
                         return;
                     }
                     return;
                 }
             } catch (Throwable th) {
-                if (z) {
+                if (z10) {
                     Thread.currentThread().interrupt();
                 }
                 throw th;
             }
         }
-        if (z) {
+        if (z10) {
             Thread.currentThread().interrupt();
         }
     }
 
-    public final List<String> m14801f(String str) {
-        List<String> h0 = C11452o.m587h0(str, new char[]{'.'}, false, 0, 6, null);
-        return C8298k.m12936b((String) C5312v.m23340I(h0), "") ? C5312v.m23348A(h0, 1) : h0;
+    public final List<String> f(String str) {
+        List<String> h02 = o.h0(str, new char[]{'.'}, false, 0, 6, null);
+        return k.b((String) v.I(h02), "") ? v.A(h02, 1) : h02;
     }
 }

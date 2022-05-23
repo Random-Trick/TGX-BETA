@@ -1027,7 +1027,7 @@
         <item name="android:layout_alignParentStart">true</item>
     </style>
     <style name="RtlOverlay.Widget.AppCompat.Search.DropDown.Icon2" parent="@android:style/Widget">
-        <item name="android:layout_toStartOf">@id/s_res_0x7f0703d1</item>
+        <item name="android:layout_toStartOf">@id/s_res_0x7f0703d3</item>
     </style>
     <style name="RtlOverlay.Widget.AppCompat.Search.DropDown.Query" parent="@android:style/Widget">
         <item name="android:layout_alignParentEnd">true</item>

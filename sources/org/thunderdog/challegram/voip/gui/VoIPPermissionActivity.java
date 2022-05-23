@@ -5,7 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import p350yd.C10536ab;
+import zd.ya;
 
 public class VoIPPermissionActivity extends Activity {
     private int accountId;
@@ -32,18 +32,18 @@ public class VoIPPermissionActivity extends Activity {
 
     @Override
     @TargetApi(23)
-    public void onRequestPermissionsResult(int i, String[] strArr, int[] iArr) {
-        if (i != 101) {
+    public void onRequestPermissionsResult(int i10, String[] strArr, int[] iArr) {
+        if (i10 != 101) {
             return;
         }
         if (iArr.length <= 0 || iArr[0] != 0) {
             if (!shouldShowRequestPermissionRationale("android.permission.RECORD_AUDIO")) {
-                C10536ab.m4756R0(this.accountId).m2930B4().m4713c0().m4606G(C10536ab.m4756R0(this.accountId), this.callId, this.isVideo);
+                ya.R0(this.accountId).F4().c0().E(ya.R0(this.accountId), this.callId, this.isVideo);
             }
             finish();
             return;
         }
-        C10536ab.m4756R0(this.accountId).m2930B4().m4713c0().m4613B(C10536ab.m4756R0(this.accountId), this.callId);
+        ya.R0(this.accountId).F4().c0().z(ya.R0(this.accountId), this.callId);
         finish();
     }
 }

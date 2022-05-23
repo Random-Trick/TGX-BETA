@@ -1,16 +1,16 @@
 package org.thunderdog.challegram.voip.gui;
 
 import android.view.View;
-import gd.C4779t2;
-import org.drinkless.p210td.libcore.telegram.TdApi;
+import gd.w;
+import hd.t2;
+import ie.g0;
+import ie.h0;
+import org.drinkless.td.libcore.telegram.TdApi;
 import org.thunderdog.challegram.R;
 import org.thunderdog.challegram.service.TGCallService;
 import org.thunderdog.challegram.voip.gui.CallSettings;
-import p082fd.C4403w;
-import p111he.AbstractC5117h0;
-import p111he.C5115g0;
-import p350yd.C10930q6;
-import td.AbstractC9323v4;
+import ud.v4;
+import zd.o6;
 
 public class CallSettings {
     public static final int SPEAKER_MODE_BLUETOOTH = 2;
@@ -20,20 +20,20 @@ public class CallSettings {
     private final int callId;
     private boolean micMuted;
     private int speakerMode;
-    private final C10930q6 tdlib;
+    private final o6 tdlib;
 
-    public CallSettings(C10930q6 q6Var, int i) {
-        this.tdlib = q6Var;
-        this.callId = i;
+    public CallSettings(o6 o6Var, int i10) {
+        this.tdlib = o6Var;
+        this.callId = i10;
     }
 
     private boolean isCallActive() {
-        TdApi.Call g0 = this.tdlib.m2480e2().m1644g0(this.callId);
-        return g0 != null && !C4779t2.m25563Z2(g0);
+        TdApi.Call g02 = this.tdlib.e2().g0(this.callId);
+        return g02 != null && !t2.Z2(g02);
     }
 
-    public boolean lambda$toggleSpeakerMode$0(View view, int i) {
-        switch (i) {
+    public boolean lambda$toggleSpeakerMode$0(View view, int i10) {
+        switch (i10) {
             case R.id.btn_routingBluetooth:
                 setSpeakerMode(2);
                 return true;
@@ -64,42 +64,42 @@ public class CallSettings {
         return this.speakerMode != 0;
     }
 
-    public void setMicMuted(boolean z) {
-        if (this.micMuted != z) {
-            this.micMuted = z;
-            this.tdlib.m2480e2().m1624l1(this.callId, this);
+    public void setMicMuted(boolean z10) {
+        if (this.micMuted != z10) {
+            this.micMuted = z10;
+            this.tdlib.e2().j1(this.callId, this);
         }
     }
 
-    public void setSpeakerMode(int i) {
-        if (this.speakerMode != i && isCallActive()) {
-            this.speakerMode = i;
-            this.tdlib.m2480e2().m1624l1(this.callId, this);
+    public void setSpeakerMode(int i10) {
+        if (this.speakerMode != i10 && isCallActive()) {
+            this.speakerMode = i10;
+            this.tdlib.e2().j1(this.callId, this);
         }
     }
 
-    public void toggleSpeakerMode(AbstractC9323v4<?> v4Var) {
-        TGCallService w = TGCallService.m14210w();
-        if (w != null) {
-            if (!w.m14254G() || !w.m14256E()) {
+    public void toggleSpeakerMode(v4<?> v4Var) {
+        TGCallService w10 = TGCallService.w();
+        if (w10 != null) {
+            if (!w10.G() || !w10.E()) {
                 setSpeakerMode(!isSpeakerModeEnabled());
             } else {
-                v4Var.m9261ee(null, new int[]{R.id.btn_routingBluetooth, R.id.btn_routingEarpiece, R.id.btn_routingSpeaker}, new String[]{C4403w.m27871i1(R.string.VoipAudioRoutingBluetooth), C4403w.m27871i1(R.string.VoipAudioRoutingEarpiece), C4403w.m27871i1(R.string.VoipAudioRoutingSpeaker)}, null, new int[]{R.drawable.baseline_bluetooth_24, R.drawable.baseline_phone_in_talk_24, R.drawable.baseline_volume_up_24}, new AbstractC5117h0() {
+                v4Var.ee(null, new int[]{R.id.btn_routingBluetooth, R.id.btn_routingEarpiece, R.id.btn_routingSpeaker}, new String[]{w.i1(R.string.VoipAudioRoutingBluetooth), w.i1(R.string.VoipAudioRoutingEarpiece), w.i1(R.string.VoipAudioRoutingSpeaker)}, null, new int[]{R.drawable.baseline_bluetooth_24, R.drawable.baseline_phone_in_talk_24, R.drawable.baseline_volume_up_24}, new h0() {
                     @Override
-                    public final boolean mo493A3(View view, int i) {
+                    public boolean P() {
+                        return g0.a(this);
+                    }
+
+                    @Override
+                    public Object a2(int i10) {
+                        return g0.b(this, i10);
+                    }
+
+                    @Override
+                    public final boolean r3(View view, int i10) {
                         boolean lambda$toggleSpeakerMode$0;
-                        lambda$toggleSpeakerMode$0 = CallSettings.this.lambda$toggleSpeakerMode$0(view, i);
+                        lambda$toggleSpeakerMode$0 = CallSettings.this.lambda$toggleSpeakerMode$0(view, i10);
                         return lambda$toggleSpeakerMode$0;
-                    }
-
-                    @Override
-                    public boolean mo492Q() {
-                        return C5115g0.m23936a(this);
-                    }
-
-                    @Override
-                    public Object mo491b2(int i) {
-                        return C5115g0.m23935b(this, i);
                     }
                 });
             }

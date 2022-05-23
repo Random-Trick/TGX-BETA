@@ -22,211 +22,211 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public final class LevelDB implements SharedPreferences, SharedPreferences.Editor {
-    public final String f22373a;
-    public long f22374b;
-    public final long f22375c;
-    public volatile boolean f22376d;
-    public boolean f22377e;
-    public final Object f22379g;
-    public final Semaphore f22380h;
-    public final ConditionVariable f22381i;
-    public AbstractC7053b f22382j;
-    public final AtomicBoolean f22378f = new AtomicBoolean(false);
-    public final List<C7052a> f22383k = new ArrayList();
+    public final String f17508a;
+    public long f17509b;
+    public final long f17510c;
+    public volatile boolean f17511d;
+    public boolean f17512e;
+    public final Object f17514g;
+    public final Semaphore f17515h;
+    public final ConditionVariable f17516i;
+    public b f17517j;
+    public final AtomicBoolean f17513f = new AtomicBoolean(false);
+    public final List<a> f17518k = new ArrayList();
 
-    public final class C7052a {
-        public long f22384a;
-        public String f22385b;
+    public final class a {
+        public long f17519a;
+        public String f17520b;
 
-        public C7052a(long j) {
-            synchronized (LevelDB.this.f22383k) {
-                this.f22384a = j;
-                LevelDB.this.f22383k.add(this);
+        public a(long j10) {
+            synchronized (LevelDB.this.f17518k) {
+                this.f17519a = j10;
+                LevelDB.this.f17518k.add(this);
             }
         }
 
-        public boolean m17951d() {
-            long j = this.f22384a;
-            if (j != 0) {
-                return NativeBridge.dbAsBoolean(j);
-            }
-            throw new IllegalStateException();
-        }
-
-        public byte[] m17950e() {
-            long j = this.f22384a;
-            if (j != 0) {
-                return NativeBridge.dbAsByteArray(j);
+        public boolean d() {
+            long j10 = this.f17519a;
+            if (j10 != 0) {
+                return NativeBridge.dbAsBoolean(j10);
             }
             throw new IllegalStateException();
         }
 
-        public double m17949f() {
-            long j = this.f22384a;
-            if (j != 0) {
-                return NativeBridge.dbAsDouble(j);
+        public byte[] e() {
+            long j10 = this.f17519a;
+            if (j10 != 0) {
+                return NativeBridge.dbAsByteArray(j10);
+            }
+            throw new IllegalStateException();
+        }
+
+        public double f() {
+            long j10 = this.f17519a;
+            if (j10 != 0) {
+                return NativeBridge.dbAsDouble(j10);
             }
             throw new IllegalStateException();
         }
 
         public void finalize() {
             try {
-                m17942m();
+                m();
             } finally {
                 super.finalize();
             }
         }
 
-        public float m17948g() {
-            long j = this.f22384a;
-            if (j != 0) {
-                return NativeBridge.dbAsFloat(j);
+        public float g() {
+            long j10 = this.f17519a;
+            if (j10 != 0) {
+                return NativeBridge.dbAsFloat(j10);
             }
             throw new IllegalStateException();
         }
 
-        public int m17947h() {
-            long j = this.f22384a;
-            if (j != 0) {
-                return NativeBridge.dbAsInt(j);
+        public int h() {
+            long j10 = this.f17519a;
+            if (j10 != 0) {
+                return NativeBridge.dbAsInt(j10);
             }
             throw new IllegalStateException();
         }
 
-        public long m17946i() {
-            long j = this.f22384a;
-            if (j != 0) {
-                return NativeBridge.dbAsLong(j);
+        public long i() {
+            long j10 = this.f17519a;
+            if (j10 != 0) {
+                return NativeBridge.dbAsLong(j10);
             }
             throw new IllegalStateException();
         }
 
-        public long[] m17945j() {
-            long j = this.f22384a;
-            if (j != 0) {
-                return NativeBridge.dbAsLongArray(j);
+        public long[] j() {
+            long j10 = this.f17519a;
+            if (j10 != 0) {
+                return NativeBridge.dbAsLongArray(j10);
             }
             throw new IllegalStateException();
         }
 
-        public String m17944k() {
-            long j = this.f22384a;
-            if (j != 0) {
-                return NativeBridge.dbAsString(j);
+        public String k() {
+            long j10 = this.f17519a;
+            if (j10 != 0) {
+                return NativeBridge.dbAsString(j10);
             }
             throw new IllegalStateException();
         }
 
-        public String m17943l() {
-            long j = this.f22384a;
-            if (j != 0) {
-                String str = this.f22385b;
+        public String l() {
+            long j10 = this.f17519a;
+            if (j10 != 0) {
+                String str = this.f17520b;
                 if (str != null) {
                     return str;
                 }
-                String dbNextKey = NativeBridge.dbNextKey(j);
-                this.f22385b = dbNextKey;
+                String dbNextKey = NativeBridge.dbNextKey(j10);
+                this.f17520b = dbNextKey;
                 return dbNextKey;
             }
             throw new IllegalStateException();
         }
 
-        public void m17942m() {
-            synchronized (LevelDB.this.f22383k) {
-                long j = this.f22384a;
-                if (j != 0) {
-                    NativeBridge.dbFindFinish(j);
-                    this.f22384a = 0L;
-                    LevelDB.this.f22383k.remove(this);
+        public void m() {
+            synchronized (LevelDB.this.f17518k) {
+                long j10 = this.f17519a;
+                if (j10 != 0) {
+                    NativeBridge.dbFindFinish(j10);
+                    this.f17519a = 0L;
+                    LevelDB.this.f17518k.remove(this);
                 }
             }
         }
 
-        public final void m17941n(long j) {
-            if (this.f22384a == j) {
-                this.f22384a = j;
-                this.f22385b = null;
+        public final void n(long j10) {
+            if (this.f17519a == j10) {
+                this.f17519a = j10;
+                this.f17520b = null;
                 return;
             }
             throw new AssertionError();
         }
     }
 
-    public interface AbstractC7053b {
-        boolean mo17940a(LevelDB levelDB, Throwable th);
+    public interface b {
+        boolean a(LevelDB levelDB, Throwable th);
 
-        void mo17939b(LevelDB levelDB, String str, Throwable th);
+        void b(LevelDB levelDB, String str, Throwable th);
     }
 
-    public final class C7054c implements Iterator<C7052a>, Iterable<C7052a> {
-        public final String f22388a;
-        public C7052a f22389b;
-        public boolean f22390c;
+    public final class c implements Iterator<a>, Iterable<a> {
+        public final String f17522a;
+        public a f17523b;
+        public boolean f17524c;
 
-        public C7054c(String str) {
-            this.f22388a = str;
+        public c(String str) {
+            this.f17522a = str;
         }
 
-        public C7052a next() {
-            return this.f22389b;
+        public a next() {
+            return this.f17523b;
         }
 
         @Override
         public boolean hasNext() {
-            if (this.f22390c) {
+            if (this.f17524c) {
                 return false;
             }
-            if (LevelDB.this.f22376d) {
-                C7052a aVar = this.f22389b;
+            if (LevelDB.this.f17511d) {
+                a aVar = this.f17523b;
                 if (aVar != null) {
-                    aVar.m17942m();
+                    aVar.m();
                 }
                 throw new AssertionError();
             }
-            C7052a aVar2 = this.f22389b;
+            a aVar2 = this.f17523b;
             if (aVar2 == null) {
-                long dbFind = NativeBridge.dbFind(LevelDB.this.m18002B(), this.f22388a, 0L);
+                long dbFind = NativeBridge.dbFind(LevelDB.this.B(), this.f17522a, 0L);
                 if (dbFind == 0) {
-                    this.f22390c = true;
+                    this.f17524c = true;
                     return false;
                 }
-                this.f22389b = new C7052a(dbFind);
+                this.f17523b = new a(dbFind);
             } else {
-                long dbFind2 = aVar2.f22384a != 0 ? NativeBridge.dbFind(LevelDB.this.m18002B(), null, this.f22389b.f22384a) : 0L;
+                long dbFind2 = aVar2.f17519a != 0 ? NativeBridge.dbFind(LevelDB.this.B(), null, this.f17523b.f17519a) : 0L;
                 if (dbFind2 == 0) {
-                    this.f22389b.f22384a = 0L;
-                    this.f22389b = null;
-                    this.f22390c = true;
+                    this.f17523b.f17519a = 0L;
+                    this.f17523b = null;
+                    this.f17524c = true;
                     return false;
                 }
-                this.f22389b.m17941n(dbFind2);
+                this.f17523b.n(dbFind2);
             }
             return true;
         }
 
         @Override
-        public Iterator<C7052a> iterator() {
+        public Iterator<a> iterator() {
             return this;
         }
     }
 
-    public LevelDB(String str, boolean z, AbstractC7053b bVar) {
-        this.f22373a = str;
-        this.f22382j = bVar;
-        m18003A();
+    public LevelDB(String str, boolean z10, b bVar) {
+        this.f17508a = str;
+        this.f17517j = bVar;
+        A();
         long dbBatchCreate = NativeBridge.dbBatchCreate();
-        this.f22375c = dbBatchCreate;
+        this.f17510c = dbBatchCreate;
         if (dbBatchCreate != 0) {
-            this.f22379g = new Object();
-            this.f22381i = new ConditionVariable(true);
-            this.f22380h = z ? new Semaphore(1) : null;
+            this.f17514g = new Object();
+            this.f17516i = new ConditionVariable(true);
+            this.f17515h = z10 ? new Semaphore(1) : null;
             return;
         }
         throw new AssertionError("batchPtr == 0");
     }
 
-    public static long m17958w(File file) {
-        long j = 0;
+    public static long w(File file) {
+        long j10 = 0;
         if (!file.exists()) {
             return 0L;
         }
@@ -236,18 +236,18 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         File[] listFiles = file.listFiles();
         if (listFiles != null) {
             for (File file2 : listFiles) {
-                j += m17958w(file2);
+                j10 += w(file2);
             }
         }
-        return j;
+        return j10;
     }
 
-    public final void m18003A() {
-        if (this.f22376d) {
+    public final void A() {
+        if (this.f17511d) {
             throw new IllegalStateException();
-        } else if (this.f22374b == 0) {
-            long dbOpen = NativeBridge.dbOpen(this, this.f22373a);
-            this.f22374b = dbOpen;
+        } else if (this.f17509b == 0) {
+            long dbOpen = NativeBridge.dbOpen(this, this.f17508a);
+            this.f17509b = dbOpen;
             if (dbOpen == 0) {
                 throw new AssertionError("ptr == 0");
             }
@@ -256,35 +256,35 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public final long m18002B() {
-        ConditionVariable conditionVariable = this.f22381i;
+    public final long B() {
+        ConditionVariable conditionVariable = this.f17516i;
         if (conditionVariable != null) {
             conditionVariable.block();
         }
-        return this.f22374b;
+        return this.f17509b;
     }
 
-    public SharedPreferences.Editor m18001C(String str, byte b) {
-        synchronized (this.f22379g) {
-            if (this.f22377e) {
-                NativeBridge.dbPutByte(this.f22375c, true, str, b);
+    public SharedPreferences.Editor C(String str, byte b10) {
+        synchronized (this.f17514g) {
+            if (this.f17512e) {
+                NativeBridge.dbPutByte(this.f17510c, true, str, b10);
                 return this;
             }
-            NativeBridge.dbPutByte(m18002B(), false, str, b);
+            NativeBridge.dbPutByte(B(), false, str, b10);
             return this;
         }
     }
 
-    public SharedPreferences.Editor m18000D(String str, byte[] bArr) {
+    public SharedPreferences.Editor D(String str, byte[] bArr) {
         if (bArr == null) {
             throw new IllegalArgumentException();
-        } else if (!this.f22376d) {
-            synchronized (this.f22379g) {
-                if (this.f22377e) {
-                    NativeBridge.dbPutByteArray(this.f22375c, true, str, bArr);
+        } else if (!this.f17511d) {
+            synchronized (this.f17514g) {
+                if (this.f17512e) {
+                    NativeBridge.dbPutByteArray(this.f17510c, true, str, bArr);
                     return this;
                 }
-                NativeBridge.dbPutByteArray(m18002B(), false, str, bArr);
+                NativeBridge.dbPutByteArray(B(), false, str, bArr);
                 return this;
             }
         } else {
@@ -292,31 +292,31 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public SharedPreferences.Editor m17999E(String str, double d) {
-        if (!this.f22376d) {
-            synchronized (this.f22379g) {
-                if (this.f22377e) {
-                    NativeBridge.dbPutDouble(this.f22375c, true, str, d);
+    public SharedPreferences.Editor E(String str, double d10) {
+        if (!this.f17511d) {
+            synchronized (this.f17514g) {
+                if (this.f17512e) {
+                    NativeBridge.dbPutDouble(this.f17510c, true, str, d10);
                     return this;
                 }
-                NativeBridge.dbPutDouble(m18002B(), false, str, d);
+                NativeBridge.dbPutDouble(B(), false, str, d10);
                 return this;
             }
         }
         throw new IllegalStateException();
     }
 
-    public SharedPreferences.Editor m17998F(String str, double[] dArr) {
+    public SharedPreferences.Editor F(String str, double[] dArr) {
         if (dArr == null) {
             throw new IllegalArgumentException();
-        } else if (!this.f22376d) {
-            synchronized (this.f22379g) {
-                boolean z = this.f22377e;
-                if (z) {
-                    NativeBridge.dbPutDoubleArray(this.f22375c, z, str, dArr);
+        } else if (!this.f17511d) {
+            synchronized (this.f17514g) {
+                boolean z10 = this.f17512e;
+                if (z10) {
+                    NativeBridge.dbPutDoubleArray(this.f17510c, z10, str, dArr);
                     return this;
                 }
-                NativeBridge.dbPutDoubleArray(m18002B(), this.f22377e, str, dArr);
+                NativeBridge.dbPutDoubleArray(B(), this.f17512e, str, dArr);
                 return this;
             }
         } else {
@@ -324,16 +324,16 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public SharedPreferences.Editor m17997G(String str, float[] fArr) {
+    public SharedPreferences.Editor G(String str, float[] fArr) {
         if (fArr == null) {
             throw new IllegalArgumentException();
-        } else if (!this.f22376d) {
-            synchronized (this.f22379g) {
-                if (this.f22377e) {
-                    NativeBridge.dbPutFloatArray(this.f22375c, true, str, fArr);
+        } else if (!this.f17511d) {
+            synchronized (this.f17514g) {
+                if (this.f17512e) {
+                    NativeBridge.dbPutFloatArray(this.f17510c, true, str, fArr);
                     return this;
                 }
-                NativeBridge.dbPutFloatArray(m18002B(), false, str, fArr);
+                NativeBridge.dbPutFloatArray(B(), false, str, fArr);
                 return this;
             }
         } else {
@@ -341,16 +341,16 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public SharedPreferences.Editor m17996H(String str, int[] iArr) {
+    public SharedPreferences.Editor H(String str, int[] iArr) {
         if (iArr == null) {
             throw new IllegalArgumentException();
-        } else if (!this.f22376d) {
-            synchronized (this.f22379g) {
-                if (this.f22377e) {
-                    NativeBridge.dbPutIntArray(this.f22375c, true, str, iArr);
+        } else if (!this.f17511d) {
+            synchronized (this.f17514g) {
+                if (this.f17512e) {
+                    NativeBridge.dbPutIntArray(this.f17510c, true, str, iArr);
                     return this;
                 }
-                NativeBridge.dbPutIntArray(m18002B(), false, str, iArr);
+                NativeBridge.dbPutIntArray(B(), false, str, iArr);
                 return this;
             }
         } else {
@@ -358,16 +358,16 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public SharedPreferences.Editor m17995I(String str, long[] jArr) {
+    public SharedPreferences.Editor I(String str, long[] jArr) {
         if (jArr == null) {
             throw new IllegalArgumentException();
-        } else if (!this.f22376d) {
-            synchronized (this.f22379g) {
-                if (this.f22377e) {
-                    NativeBridge.dbPutLongArray(this.f22375c, true, str, jArr);
+        } else if (!this.f17511d) {
+            synchronized (this.f17514g) {
+                if (this.f17512e) {
+                    NativeBridge.dbPutLongArray(this.f17510c, true, str, jArr);
                     return this;
                 }
-                NativeBridge.dbPutLongArray(m18002B(), false, str, jArr);
+                NativeBridge.dbPutLongArray(B(), false, str, jArr);
                 return this;
             }
         } else {
@@ -375,16 +375,16 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public SharedPreferences.Editor m17994J(String str, String[] strArr) {
+    public SharedPreferences.Editor J(String str, String[] strArr) {
         if (strArr == null) {
             throw new IllegalArgumentException();
-        } else if (!this.f22376d) {
-            synchronized (this.f22379g) {
-                if (this.f22377e) {
-                    NativeBridge.dbPutStringArray(this.f22375c, true, str, strArr);
+        } else if (!this.f17511d) {
+            synchronized (this.f17514g) {
+                if (this.f17512e) {
+                    NativeBridge.dbPutStringArray(this.f17510c, true, str, strArr);
                     return this;
                 }
-                NativeBridge.dbPutStringArray(m18002B(), false, str, strArr);
+                NativeBridge.dbPutStringArray(B(), false, str, strArr);
                 return this;
             }
         } else {
@@ -392,66 +392,66 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public SharedPreferences.Editor m17993K(String str) {
-        if (!this.f22376d) {
-            synchronized (this.f22379g) {
-                if (this.f22377e) {
-                    NativeBridge.dbPutVoid(this.f22375c, true, str);
+    public SharedPreferences.Editor K(String str) {
+        if (!this.f17511d) {
+            synchronized (this.f17514g) {
+                if (this.f17512e) {
+                    NativeBridge.dbPutVoid(this.f17510c, true, str);
                     return this;
                 }
-                NativeBridge.dbPutVoid(m18002B(), false, str);
+                NativeBridge.dbPutVoid(B(), false, str);
                 return this;
             }
         }
         throw new IllegalStateException();
     }
 
-    public int m17992L(List<String> list) {
+    public int L(List<String> list) {
         if (list == null || list.isEmpty()) {
             throw new IllegalArgumentException();
         } else if (list.size() == 1) {
-            return m17990N(list.get(0));
+            return N(list.get(0));
         } else {
             String[] strArr = new String[list.size()];
             list.toArray(strArr);
-            return m17991M(strArr);
+            return M(strArr);
         }
     }
 
-    public int m17991M(String... strArr) {
+    public int M(String... strArr) {
         if (strArr == null || strArr.length == 0) {
             throw new IllegalArgumentException();
         } else if (strArr.length == 1) {
-            return m17990N(strArr[0]);
+            return N(strArr[0]);
         } else {
-            if (!this.f22376d) {
-                synchronized (this.f22379g) {
-                    if (this.f22377e) {
-                        return NativeBridge.dbRemoveByAnyPrefix(m18002B(), this.f22375c, strArr);
+            if (!this.f17511d) {
+                synchronized (this.f17514g) {
+                    if (this.f17512e) {
+                        return NativeBridge.dbRemoveByAnyPrefix(B(), this.f17510c, strArr);
                     }
-                    return NativeBridge.dbRemoveByAnyPrefix(m18002B(), 0L, strArr);
+                    return NativeBridge.dbRemoveByAnyPrefix(B(), 0L, strArr);
                 }
             }
             throw new IllegalStateException();
         }
     }
 
-    public int m17990N(String str) {
-        if (this.f22376d) {
+    public int N(String str) {
+        if (this.f17511d) {
             throw new IllegalStateException();
         } else if (str == null || str.isEmpty()) {
             throw new IllegalArgumentException();
         } else {
-            synchronized (this.f22379g) {
-                if (this.f22377e) {
-                    return NativeBridge.dbRemoveByPrefix(m18002B(), this.f22375c, str);
+            synchronized (this.f17514g) {
+                if (this.f17512e) {
+                    return NativeBridge.dbRemoveByPrefix(B(), this.f17510c, str);
                 }
-                return NativeBridge.dbRemoveByPrefix(m18002B(), 0L, str);
+                return NativeBridge.dbRemoveByPrefix(B(), 0L, str);
             }
         }
     }
 
-    public boolean m17989O(Throwable th) {
+    public boolean O(Throwable th) {
         if (th == null || (th instanceof FileNotFoundException) || !(th instanceof AssertionError)) {
             throw new IllegalArgumentException(th);
         }
@@ -459,49 +459,49 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         if (message == null || message.isEmpty()) {
             return false;
         }
-        if ((!message.contains("Corruption: not an sstable (bad magic number)") && !message.contains(".ldb: No such file or directory")) || this.f22378f.getAndSet(true)) {
+        if ((!message.contains("Corruption: not an sstable (bad magic number)") && !message.contains(".ldb: No such file or directory")) || this.f17513f.getAndSet(true)) {
             return false;
         }
-        if (!this.f22376d) {
-            this.f22381i.close();
-            m17976e();
-            NativeBridge.dbClose(this.f22374b);
-            this.f22374b = 0L;
+        if (!this.f17511d) {
+            this.f17516i.close();
+            e();
+            NativeBridge.dbClose(this.f17509b);
+            this.f17509b = 0L;
             long uptimeMillis = SystemClock.uptimeMillis();
             Locale locale = Locale.US;
-            m17956y(String.format(locale, "Repairing database, because of corruption, path: %s", this.f22373a), th);
-            NativeBridge.dbRepair(this, this.f22373a);
-            m18003A();
-            this.f22381i.open();
-            m17956y(String.format(locale, "Repairing database finished successfully in %dms", Long.valueOf(SystemClock.uptimeMillis() - uptimeMillis)), null);
+            y(String.format(locale, "Repairing database, because of corruption, path: %s", this.f17508a), th);
+            NativeBridge.dbRepair(this, this.f17508a);
+            A();
+            this.f17516i.open();
+            y(String.format(locale, "Repairing database finished successfully in %dms", Long.valueOf(SystemClock.uptimeMillis() - uptimeMillis)), null);
             return true;
         }
         throw new IllegalStateException();
     }
 
-    public final boolean m17988P() {
-        if (!this.f22376d) {
+    public final boolean P() {
+        if (!this.f17511d) {
             Throwable th = null;
-            synchronized (this.f22379g) {
-                if (!this.f22377e) {
+            synchronized (this.f17514g) {
+                if (!this.f17512e) {
                     return true;
                 }
                 try {
-                    NativeBridge.dbBatchPerform(this.f22375c, m18002B());
-                    this.f22377e = false;
+                    NativeBridge.dbBatchPerform(this.f17510c, B());
+                    this.f17512e = false;
                 } catch (Throwable th2) {
                     th = th2;
                 }
                 if (th == null) {
-                    Semaphore semaphore = this.f22380h;
+                    Semaphore semaphore = this.f17515h;
                     if (semaphore != null) {
                         semaphore.release();
                     }
                     return true;
-                } else if (m17989O(th)) {
-                    return m17988P();
+                } else if (O(th)) {
+                    return P();
                 } else {
-                    m17955z(th);
+                    z(th);
                     return false;
                 }
             }
@@ -510,19 +510,19 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public boolean m17987Q(String str) {
-        if (!this.f22376d) {
+    public boolean Q(String str) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetBoolean(m18002B(), str, false, true);
-            } catch (FileNotFoundException e) {
-                throw e;
-            } catch (IllegalStateException e2) {
-                throw e2;
+                return NativeBridge.dbGetBoolean(B(), str, false, true);
+            } catch (FileNotFoundException e10) {
+                throw e10;
+            } catch (IllegalStateException e11) {
+                throw e11;
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return m17987Q(str);
+                if (O(th)) {
+                    return Q(str);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -530,19 +530,19 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public byte m17986R(String str) {
-        if (!this.f22376d) {
+    public byte R(String str) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetByte(m18002B(), str, (byte) 0, true);
-            } catch (FileNotFoundException e) {
-                throw e;
-            } catch (IllegalStateException e2) {
-                throw e2;
+                return NativeBridge.dbGetByte(B(), str, (byte) 0, true);
+            } catch (FileNotFoundException e10) {
+                throw e10;
+            } catch (IllegalStateException e11) {
+                throw e11;
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return m17986R(str);
+                if (O(th)) {
+                    return R(str);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -550,19 +550,19 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public double m17985S(String str) {
-        if (!this.f22376d) {
+    public double S(String str) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetDouble(m18002B(), str, 0.0d, true);
-            } catch (FileNotFoundException e) {
-                throw e;
-            } catch (IllegalStateException e2) {
-                throw e2;
+                return NativeBridge.dbGetDouble(B(), str, 0.0d, true);
+            } catch (FileNotFoundException e10) {
+                throw e10;
+            } catch (IllegalStateException e11) {
+                throw e11;
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return m17985S(str);
+                if (O(th)) {
+                    return S(str);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -570,19 +570,19 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public float m17984T(String str) {
-        if (!this.f22376d) {
+    public float T(String str) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetFloat(m18002B(), str, 0.0f, true);
-            } catch (FileNotFoundException e) {
-                throw e;
-            } catch (IllegalStateException e2) {
-                throw e2;
+                return NativeBridge.dbGetFloat(B(), str, 0.0f, true);
+            } catch (FileNotFoundException e10) {
+                throw e10;
+            } catch (IllegalStateException e11) {
+                throw e11;
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return m17984T(str);
+                if (O(th)) {
+                    return T(str);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -590,19 +590,19 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public int m17983U(String str) {
-        if (!this.f22376d) {
+    public int U(String str) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetInt(m18002B(), str, 0, true);
-            } catch (FileNotFoundException e) {
-                throw e;
-            } catch (IllegalStateException e2) {
-                throw e2;
+                return NativeBridge.dbGetInt(B(), str, 0, true);
+            } catch (FileNotFoundException e10) {
+                throw e10;
+            } catch (IllegalStateException e11) {
+                throw e11;
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return m17983U(str);
+                if (O(th)) {
+                    return U(str);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -610,19 +610,19 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public long m17982V(String str) {
-        if (!this.f22376d) {
+    public long V(String str) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetLong(m18002B(), str, 0L, true);
-            } catch (FileNotFoundException e) {
-                throw e;
-            } catch (IllegalStateException e2) {
-                throw e2;
+                return NativeBridge.dbGetLong(B(), str, 0L, true);
+            } catch (FileNotFoundException e10) {
+                throw e10;
+            } catch (IllegalStateException e11) {
+                throw e11;
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return m17982V(str);
+                if (O(th)) {
+                    return V(str);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -630,19 +630,19 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public String m17981W(String str) {
-        if (!this.f22376d) {
+    public String W(String str) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetString(m18002B(), str, null, true);
-            } catch (FileNotFoundException e) {
-                throw e;
-            } catch (IllegalStateException e2) {
-                throw e2;
+                return NativeBridge.dbGetString(B(), str, null, true);
+            } catch (FileNotFoundException e10) {
+                throw e10;
+            } catch (IllegalStateException e11) {
+                throw e11;
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return m17981W(str);
+                if (O(th)) {
+                    return W(str);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -652,18 +652,18 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Override
     public void apply() {
-        m17988P();
+        P();
     }
 
     @Override
     public SharedPreferences.Editor clear() {
-        if (!this.f22376d) {
-            synchronized (this.f22379g) {
-                if (this.f22377e) {
-                    NativeBridge.dbBatchClear(this.f22375c, m18002B());
+        if (!this.f17511d) {
+            synchronized (this.f17514g) {
+                if (this.f17512e) {
+                    NativeBridge.dbBatchClear(this.f17510c, B());
                     return this;
                 }
-                NativeBridge.dbClear(m18002B());
+                NativeBridge.dbClear(B());
                 return this;
             }
         }
@@ -672,50 +672,50 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Override
     public boolean commit() {
-        return m17988P();
+        return P();
     }
 
     @Override
     public boolean contains(String str) {
-        if (!this.f22376d) {
-            return NativeBridge.dbContains(m18002B(), str);
+        if (!this.f17511d) {
+            return NativeBridge.dbContains(B(), str);
         }
         throw new IllegalStateException();
     }
 
-    public void m17977d() {
-        if (!this.f22376d) {
-            long j = this.f22375c;
-            if (j != 0) {
-                NativeBridge.dbBatchDestroy(j);
+    public void d() {
+        if (!this.f17511d) {
+            long j10 = this.f17510c;
+            if (j10 != 0) {
+                NativeBridge.dbBatchDestroy(j10);
             }
-            m17976e();
-            long B = m18002B();
+            e();
+            long B = B();
             if (B != 0) {
                 NativeBridge.dbClose(B);
             }
-            this.f22376d = true;
+            this.f17511d = true;
         }
     }
 
-    public final void m17976e() {
-        for (int size = this.f22383k.size() - 1; size >= 0; size--) {
-            this.f22383k.get(size).m17942m();
+    public final void e() {
+        for (int size = this.f17518k.size() - 1; size >= 0; size--) {
+            this.f17518k.get(size).m();
         }
     }
 
     public LevelDB edit() {
-        Semaphore semaphore = this.f22380h;
+        Semaphore semaphore = this.f17515h;
         if (semaphore != null) {
             try {
                 semaphore.acquire();
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+            } catch (InterruptedException e10) {
+                throw new RuntimeException(e10);
             }
         }
-        synchronized (this.f22379g) {
-            if (!this.f22377e) {
-                this.f22377e = true;
+        synchronized (this.f17514g) {
+            if (!this.f17512e) {
+                this.f17512e = true;
             } else {
                 throw new AssertionError();
             }
@@ -725,15 +725,15 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     public void finalize() {
         try {
-            m17977d();
+            d();
         } finally {
             super.finalize();
         }
     }
 
-    public Iterable<C7052a> m17974g(String str) {
-        if (!this.f22376d) {
-            return new C7054c(str);
+    public Iterable<a> g(String str) {
+        if (!this.f17511d) {
+            return new c(str);
         }
         throw new IllegalStateException();
     }
@@ -744,19 +744,19 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     @Override
-    public boolean getBoolean(String str, boolean z) {
-        if (!this.f22376d) {
+    public boolean getBoolean(String str, boolean z10) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetBoolean(m18002B(), str, z, false);
+                return NativeBridge.dbGetBoolean(B(), str, z10, false);
             } catch (FileNotFoundException unused) {
-                return z;
-            } catch (IllegalStateException e) {
-                throw e;
+                return z10;
+            } catch (IllegalStateException e10) {
+                throw e10;
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return getBoolean(str, z);
+                if (O(th)) {
+                    return getBoolean(str, z10);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -765,19 +765,19 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     @Override
-    public float getFloat(String str, float f) {
-        if (!this.f22376d) {
+    public float getFloat(String str, float f10) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetFloat(m18002B(), str, f, false);
+                return NativeBridge.dbGetFloat(B(), str, f10, false);
             } catch (FileNotFoundException unused) {
-                return f;
-            } catch (IllegalStateException e) {
-                throw e;
+                return f10;
+            } catch (IllegalStateException e10) {
+                throw e10;
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return getFloat(str, f);
+                if (O(th)) {
+                    return getFloat(str, f10);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -786,19 +786,19 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     @Override
-    public int getInt(String str, int i) {
-        if (!this.f22376d) {
+    public int getInt(String str, int i10) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetInt(m18002B(), str, i, false);
+                return NativeBridge.dbGetInt(B(), str, i10, false);
             } catch (FileNotFoundException unused) {
-                return i;
-            } catch (IllegalStateException e) {
-                throw e;
+                return i10;
+            } catch (IllegalStateException e10) {
+                throw e10;
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return getInt(str, i);
+                if (O(th)) {
+                    return getInt(str, i10);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -807,19 +807,19 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     @Override
-    public long getLong(String str, long j) {
-        if (!this.f22376d) {
+    public long getLong(String str, long j10) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetLong(m18002B(), str, j, false);
+                return NativeBridge.dbGetLong(B(), str, j10, false);
             } catch (FileNotFoundException unused) {
-                return j;
-            } catch (IllegalStateException e) {
-                throw e;
+                return j10;
+            } catch (IllegalStateException e10) {
+                throw e10;
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return getLong(str, j);
+                if (O(th)) {
+                    return getLong(str, j10);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -829,18 +829,18 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Override
     public String getString(String str, String str2) {
-        if (!this.f22376d) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetString(m18002B(), str, str2, false);
+                return NativeBridge.dbGetString(B(), str, str2, false);
             } catch (FileNotFoundException unused) {
                 return str2;
-            } catch (IllegalStateException e) {
-                throw e;
+            } catch (IllegalStateException e10) {
+                throw e10;
             } catch (Throwable th) {
-                if (m17989O(th)) {
+                if (O(th)) {
                     return getString(str, str2);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -852,78 +852,78 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     public Set<String> getStringSet(String str, Set<String> set) {
         if (set != null) {
             throw new UnsupportedOperationException();
-        } else if (!this.f22376d) {
-            String[] v = m17959v(str);
-            if (v == null) {
+        } else if (!this.f17511d) {
+            String[] v10 = v(str);
+            if (v10 == null) {
                 return null;
             }
             if (Build.VERSION.SDK_INT >= 23) {
-                ArraySet arraySet = new ArraySet(v.length);
-                if (v.length > 0) {
-                    Collections.addAll(arraySet, v);
+                ArraySet arraySet = new ArraySet(v10.length);
+                if (v10.length > 0) {
+                    Collections.addAll(arraySet, v10);
                 }
                 return arraySet;
-            } else if (v.length == 0) {
+            } else if (v10.length == 0) {
                 return new HashSet(0);
             } else {
-                return new HashSet(Arrays.asList(v));
+                return new HashSet(Arrays.asList(v10));
             }
         } else {
             throw new IllegalStateException();
         }
     }
 
-    public byte[][] m17973h(String str) {
-        if (!this.f22376d) {
-            return NativeBridge.dbFindAll(m18002B(), str);
+    public byte[][] h(String str) {
+        if (!this.f17511d) {
+            return NativeBridge.dbFindAll(B(), str);
         }
         throw new IllegalStateException();
     }
 
-    public String m17972i(String str, byte[] bArr) {
-        if (!this.f22376d) {
-            return NativeBridge.dbFindByValue(m18002B(), str, bArr);
+    public String i(String str, byte[] bArr) {
+        if (!this.f17511d) {
+            return NativeBridge.dbFindByValue(B(), str, bArr);
         }
         throw new IllegalStateException();
     }
 
-    public String m17971j(String str) {
-        Iterator<C7052a> it = m17974g(str).iterator();
+    public String j(String str) {
+        Iterator<a> it = g(str).iterator();
         if (!it.hasNext()) {
             return null;
         }
-        C7052a next = it.next();
-        String l = next.m17943l();
-        next.m17942m();
-        return l;
+        a next = it.next();
+        String l10 = next.l();
+        next.m();
+        return l10;
     }
 
-    public void m17970k() {
-        if (!this.f22376d) {
-            this.f22381i.close();
-            m17976e();
-            NativeBridge.dbClose(this.f22374b);
-            this.f22374b = 0L;
-            m18003A();
-            this.f22381i.open();
+    public void k() {
+        if (!this.f17511d) {
+            this.f17516i.close();
+            e();
+            NativeBridge.dbClose(this.f17509b);
+            this.f17509b = 0L;
+            A();
+            this.f17516i.open();
             return;
         }
         throw new IllegalStateException();
     }
 
-    public byte m17969l(String str, byte b) {
-        if (!this.f22376d) {
+    public byte l(String str, byte b10) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetByte(m18002B(), str, b, false);
+                return NativeBridge.dbGetByte(B(), str, b10, false);
             } catch (FileNotFoundException unused) {
-                return b;
-            } catch (IllegalStateException e) {
-                throw e;
+                return b10;
+            } catch (IllegalStateException e10) {
+                throw e10;
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return m17969l(str, b);
+                if (O(th)) {
+                    return l(str, b10);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -931,15 +931,15 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public byte[] m17968m(String str) {
-        if (!this.f22376d) {
+    public byte[] m(String str) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetByteArray(m18002B(), str);
+                return NativeBridge.dbGetByteArray(B(), str);
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return m17968m(str);
+                if (O(th)) {
+                    return m(str);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -947,15 +947,15 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public double[] m17967n(String str) {
-        if (!this.f22376d) {
+    public double[] n(String str) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetDoubleArray(m18002B(), str);
+                return NativeBridge.dbGetDoubleArray(B(), str);
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return m17967n(str);
+                if (O(th)) {
+                    return n(str);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -963,15 +963,15 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public float[] m17966o(String str) {
-        if (!this.f22376d) {
+    public float[] o(String str) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetFloatArray(m18002B(), str);
+                return NativeBridge.dbGetFloatArray(B(), str);
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return m17966o(str);
+                if (O(th)) {
+                    return o(str);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -981,21 +981,21 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Keep
     public void onFatalError(String str) {
-        m17955z(new RuntimeException(str));
+        z(new RuntimeException(str));
     }
 
-    public int[] m17965p(String str) {
-        if (!this.f22376d) {
+    public int[] p(String str) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetIntArray(m18002B(), str);
-            } catch (IllegalStateException e) {
-                Log.e("LevelDB", "Unexpected value format", e);
-                throw e;
+                return NativeBridge.dbGetIntArray(B(), str);
+            } catch (IllegalStateException e10) {
+                Log.e("LevelDB", "Unexpected value format", e10);
+                throw e10;
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return m17965p(str);
+                if (O(th)) {
+                    return p(str);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -1004,14 +1004,14 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     @Override
-    public SharedPreferences.Editor putBoolean(String str, boolean z) {
-        if (!this.f22376d) {
-            synchronized (this.f22379g) {
-                if (this.f22377e) {
-                    NativeBridge.dbPutBoolean(this.f22375c, true, str, z);
+    public SharedPreferences.Editor putBoolean(String str, boolean z10) {
+        if (!this.f17511d) {
+            synchronized (this.f17514g) {
+                if (this.f17512e) {
+                    NativeBridge.dbPutBoolean(this.f17510c, true, str, z10);
                     return this;
                 }
-                NativeBridge.dbPutBoolean(m18002B(), false, str, z);
+                NativeBridge.dbPutBoolean(B(), false, str, z10);
                 return this;
             }
         }
@@ -1019,14 +1019,14 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     @Override
-    public SharedPreferences.Editor putFloat(String str, float f) {
-        if (!this.f22376d) {
-            synchronized (this.f22379g) {
-                if (this.f22377e) {
-                    NativeBridge.dbPutFloat(this.f22375c, true, str, f);
+    public SharedPreferences.Editor putFloat(String str, float f10) {
+        if (!this.f17511d) {
+            synchronized (this.f17514g) {
+                if (this.f17512e) {
+                    NativeBridge.dbPutFloat(this.f17510c, true, str, f10);
                     return this;
                 }
-                NativeBridge.dbPutFloat(m18002B(), false, str, f);
+                NativeBridge.dbPutFloat(B(), false, str, f10);
                 return this;
             }
         }
@@ -1034,14 +1034,14 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     @Override
-    public SharedPreferences.Editor putInt(String str, int i) {
-        if (!this.f22376d) {
-            synchronized (this.f22379g) {
-                if (this.f22377e) {
-                    NativeBridge.dbPutInt(this.f22375c, true, str, i);
+    public SharedPreferences.Editor putInt(String str, int i10) {
+        if (!this.f17511d) {
+            synchronized (this.f17514g) {
+                if (this.f17512e) {
+                    NativeBridge.dbPutInt(this.f17510c, true, str, i10);
                     return this;
                 }
-                NativeBridge.dbPutInt(m18002B(), false, str, i);
+                NativeBridge.dbPutInt(B(), false, str, i10);
                 return this;
             }
         }
@@ -1049,14 +1049,14 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     }
 
     @Override
-    public SharedPreferences.Editor putLong(String str, long j) {
-        if (!this.f22376d) {
-            synchronized (this.f22379g) {
-                if (this.f22377e) {
-                    NativeBridge.dbPutLong(this.f22375c, true, str, j);
+    public SharedPreferences.Editor putLong(String str, long j10) {
+        if (!this.f17511d) {
+            synchronized (this.f17514g) {
+                if (this.f17512e) {
+                    NativeBridge.dbPutLong(this.f17510c, true, str, j10);
                     return this;
                 }
-                NativeBridge.dbPutLong(m18002B(), false, str, j);
+                NativeBridge.dbPutLong(B(), false, str, j10);
                 return this;
             }
         }
@@ -1067,13 +1067,13 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     public SharedPreferences.Editor putString(String str, String str2) {
         if (str2 == null) {
             throw new IllegalArgumentException();
-        } else if (!this.f22376d) {
-            synchronized (this.f22379g) {
-                if (this.f22377e) {
-                    NativeBridge.dbPutString(this.f22375c, true, str, str2);
+        } else if (!this.f17511d) {
+            synchronized (this.f17514g) {
+                if (this.f17512e) {
+                    NativeBridge.dbPutString(this.f17510c, true, str, str2);
                     return this;
                 }
-                NativeBridge.dbPutString(m18002B(), false, str, str2);
+                NativeBridge.dbPutString(B(), false, str, str2);
                 return this;
             }
         } else {
@@ -1085,22 +1085,22 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
     public SharedPreferences.Editor putStringSet(String str, Set<String> set) {
         String[] strArr = new String[set.size()];
         set.toArray(strArr);
-        return m17994J(str, strArr);
+        return J(str, strArr);
     }
 
-    public long m17964q(String str, int i) {
-        if (!this.f22376d) {
+    public long q(String str, int i10) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetIntOrLong(m18002B(), str, i, false);
+                return NativeBridge.dbGetIntOrLong(B(), str, i10, false);
             } catch (FileNotFoundException unused) {
-                return i;
-            } catch (IllegalStateException e) {
-                throw e;
+                return i10;
+            } catch (IllegalStateException e10) {
+                throw e10;
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return m17964q(str, i);
+                if (O(th)) {
+                    return q(str, i10);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -1108,15 +1108,15 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public long[] m17963r(String str) {
-        if (!this.f22376d) {
+    public long[] r(String str) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetLongArray(m18002B(), str);
+                return NativeBridge.dbGetLongArray(B(), str);
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return m17963r(str);
+                if (O(th)) {
+                    return r(str);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -1131,36 +1131,36 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
 
     @Override
     public SharedPreferences.Editor remove(String str) {
-        if (!this.f22376d) {
-            synchronized (this.f22379g) {
-                if (this.f22377e) {
-                    NativeBridge.dbBatchRemove(this.f22375c, str);
+        if (!this.f17511d) {
+            synchronized (this.f17514g) {
+                if (this.f17512e) {
+                    NativeBridge.dbBatchRemove(this.f17510c, str);
                     return this;
                 }
-                NativeBridge.dbRemove(m18002B(), str);
+                NativeBridge.dbRemove(B(), str);
                 return this;
             }
         }
         throw new IllegalStateException();
     }
 
-    public String m17962s(String str) {
-        if (!this.f22376d) {
-            return NativeBridge.dbGetProperty(m18002B(), str);
+    public String s(String str) {
+        if (!this.f17511d) {
+            return NativeBridge.dbGetProperty(B(), str);
         }
         throw new IllegalStateException();
     }
 
-    public long m17961t() {
-        if (!this.f22376d) {
-            return NativeBridge.dbGetSize(m18002B());
+    public long t() {
+        if (!this.f17511d) {
+            return NativeBridge.dbGetSize(B());
         }
         throw new IllegalStateException();
     }
 
-    public long m17960u(String str) {
-        if (!this.f22376d) {
-            return NativeBridge.dbGetSizeByPrefix(m18002B(), str);
+    public long u(String str) {
+        if (!this.f17511d) {
+            return NativeBridge.dbGetSizeByPrefix(B(), str);
         }
         throw new IllegalStateException();
     }
@@ -1170,15 +1170,15 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         throw new UnsupportedOperationException();
     }
 
-    public String[] m17959v(String str) {
-        if (!this.f22376d) {
+    public String[] v(String str) {
+        if (!this.f17511d) {
             try {
-                return NativeBridge.dbGetStringArray(m18002B(), str);
+                return NativeBridge.dbGetStringArray(B(), str);
             } catch (Throwable th) {
-                if (m17989O(th)) {
-                    return m17959v(str);
+                if (O(th)) {
+                    return v(str);
                 }
-                m17955z(th);
+                z(th);
                 throw th;
             }
         } else {
@@ -1186,23 +1186,23 @@ public final class LevelDB implements SharedPreferences, SharedPreferences.Edito
         }
     }
 
-    public long m17957x() {
-        m17970k();
-        return m17958w(new File(this.f22373a));
+    public long x() {
+        k();
+        return w(new File(this.f17508a));
     }
 
-    public final void m17956y(String str, Throwable th) {
-        AbstractC7053b bVar = this.f22382j;
+    public final void y(String str, Throwable th) {
+        b bVar = this.f17517j;
         if (bVar != null) {
-            bVar.mo17939b(this, str, th);
+            bVar.b(this, str, th);
         } else {
             Log.e("LevelDB", str, th);
         }
     }
 
-    public final void m17955z(Throwable th) {
-        AbstractC7053b bVar = this.f22382j;
-        if (bVar != null && bVar.mo17940a(this, th)) {
+    public final void z(Throwable th) {
+        b bVar = this.f17517j;
+        if (bVar != null && bVar.a(this, th)) {
             return;
         }
         if (!(th instanceof RuntimeException)) {

@@ -7,7 +7,7 @@ import android.view.MotionEvent;
 import android.widget.ImageView;
 
 public class CustomImageView extends ImageView {
-    public boolean f25809a;
+    public boolean f20214a;
 
     public CustomImageView(Context context) {
         super(context);
@@ -20,23 +20,23 @@ public class CustomImageView extends ImageView {
 
     @Override
     public void requestLayout() {
-        if (!this.f25809a) {
+        if (!this.f20214a) {
             super.requestLayout();
         }
     }
 
     @Override
     public void setImageBitmap(Bitmap bitmap) {
-        this.f25809a = true;
+        this.f20214a = true;
         super.setImageBitmap(bitmap);
-        this.f25809a = false;
+        this.f20214a = false;
     }
 
     public CustomImageView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
     }
 
-    public CustomImageView(Context context, AttributeSet attributeSet, int i) {
-        super(context, attributeSet, i);
+    public CustomImageView(Context context, AttributeSet attributeSet, int i10) {
+        super(context, attributeSet, i10);
     }
 }

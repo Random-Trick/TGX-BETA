@@ -5,19 +5,19 @@ import android.content.Intent;
 import android.os.IBinder;
 
 public class SyncService extends Service {
-    public static SyncAdapter f25707a;
-    public static final Object f25708b = new Object();
+    public static SyncAdapter f20146a;
+    public static final Object f20147b = new Object();
 
     @Override
     public IBinder onBind(Intent intent) {
-        return f25707a.getSyncAdapterBinder();
+        return f20146a.getSyncAdapterBinder();
     }
 
     @Override
     public void onCreate() {
-        synchronized (f25708b) {
-            if (f25707a == null) {
-                f25707a = new SyncAdapter(getApplicationContext(), true);
+        synchronized (f20147b) {
+            if (f20146a == null) {
+                f20146a = new SyncAdapter(getApplicationContext(), true);
             }
         }
     }
